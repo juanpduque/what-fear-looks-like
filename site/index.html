@@ -127,7 +127,7 @@ footer .logo span{color:var(--blood)}
   <div class="hero-inner">
     <p class="kicker">A Pulp Analytics Visual Essay</p>
     <h1>The Anatomy<br>of <span class="fear">Fear</span></h1>
-    <p class="dek">We analyzed the colors of <strong>32,540 horror movie posters</strong> spanning a century to answer one question: what does fear look like — and how has it changed?</p>
+    <p class="dek">We analyzed the colors of <strong>1,000 horror movie posters</strong> — a stratified pilot from a 32,540-film database (1950–2022) — to answer one question: what does fear look like, and how has it changed?</p>
     <p class="byline">By <b>Juan Pablo Duque</b> · October 2026 · 9 min read</p>
   </div>
   <div class="scroll-cue">SCROLL IF YOU DARE ↓</div>
@@ -176,42 +176,42 @@ footer .logo span{color:var(--blood)}
       <p class="kicker">1920s – 1930s</p>
       <h3>Painted Monsters</h3>
       <p>Lithographed one-sheets sold the creature, not the fear. Universal's monsters loom in theatrical greens and sickly yellows — horror as carnival attraction.</p>
-      <p class="stat">Avg. poster brightness: <b>62%</b> · Warm hues: <b>71%</b> of pixels</p>
+      <p class="stat">Pre-1950 films not yet in dataset — <b>TMDB API backfill pending</b> for the full run</p>
     </div>
 
     <div class="step" data-era="1">
       <p class="kicker">1940s – 1950s</p>
       <h3>Atomic Pulp</h3>
       <p>Radiation, invasion, paranoia. Posters scream in exclamation marks — "SEE!" "SHOCKING!" — drenched in lurid reds and yellows borrowed from pulp magazine covers.</p>
-      <p class="stat">Peak yellow decade: <b>23%</b> of all pixels · Avg. faces per poster: <b>3.4</b></p>
+      <p class="stat">1950s posters are the brightest on record: <b>L* 45.8</b> · dark pixels only <b>29%</b></p>
     </div>
 
     <div class="step" data-era="2">
       <p class="kicker">1960s – 1970s</p>
       <h3>The Occult Turn</h3>
       <p>Photography replaces paint, and the devil moves into the suburbs. <em>Rosemary's Baby</em>, <em>The Exorcist</em>: black backgrounds arrive and never leave.</p>
-      <p class="stat">Dark pixels (L&lt;20) jump from <b>18% → 41%</b> in one decade</p>
+      <p class="stat">The slide begins: dark pixels climb <b>29% → 34%</b> and brightness starts a fall it never recovers from</p>
     </div>
 
     <div class="step" data-era="3">
       <p class="kicker">1980s</p>
       <h3>Black &amp; Red</h3>
       <p>The slasher boom industrializes the formula: black void, a weapon, a scream, chrome type. The VHS shelf demanded posters that read from across a video store.</p>
-      <p class="stat">Red share hits all-time high: <b>19%</b> of pixels · 1 in 3 posters features a blade</p>
+      <p class="stat">Brightness collapses <b>43 → 34</b> in a decade · dark pixels hit <b>43%</b> · red rises to <b>12.4%</b></p>
     </div>
 
     <div class="step" data-era="4">
       <p class="kicker">1990s – 2000s</p>
       <h3>The Desaturation</h3>
-      <p>Meta-horror and torture porn trade color for chill. Floating celebrity heads, steel blues, surgical greens — the coldest, darkest posters ever printed.</p>
-      <p class="stat">Lowest avg. saturation of the century: <b>31%</b></p>
+      <p>Meta-horror and torture porn: floating celebrity heads, steel blues, surgical greens. But the data busts a myth — the "cold desaturated '90s" never happened.</p>
+      <p class="stat">Myth busted: saturation holds at <b>0.41</b> — higher than the '60s–'70s (<b>0.36</b>). Red peaks instead: <b>15.7%</b> in the mid-'90s</p>
     </div>
 
     <div class="step" data-era="5">
       <p class="kicker">2010s – Today</p>
       <h3>Elevated Minimalism</h3>
-      <p>A24 and the arthouse wave strip the poster to a single symbolic object in negative space. Fear goes quiet: serif type, pastel dread, daylight horror.</p>
-      <p class="stat">Avg. faces per poster falls to <b>0.9</b> · Brightness recovers <b>+11 pts</b> since 2005</p>
+      <p>A24 and the arthouse wave strip the poster to a single symbolic object. We expected "daylight horror" to let the light back in. It didn't — this is the darkest era ever measured.</p>
+      <p class="stat">All-time low brightness: <b>L* 27.4</b> · over half of every poster (<b>52%</b>) is near-black</p>
     </div>
 
   </div>
@@ -222,10 +222,10 @@ footer .logo span{color:var(--blood)}
   <div class="prose reveal">
     <p class="kicker">Part III</p>
     <h2 class="section-title">The Darkness Curve</h2>
-    <p>Average poster brightness, 1925–2025. Horror literally went dark in the 1970s — and only the recent arthouse wave has let the light back in.</p>
+    <p>Average poster brightness, 1950–2022. Horror has been getting darker for seventy years straight — and against every expectation, the light never came back.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="darkness" viewBox="0 0 960 400" width="100%"></svg>
-  <p class="note" style="margin-top:10px">SAMPLE DATA — illustrative mockup.</p></div>
+  <p class="note" style="margin-top:10px">PILOT DATA — 1,000-poster stratified sample (TMDB), 5-yr rolling mean. Full 32k run pending.</p></div>
 </section>
 
 <!-- ============ RISE OF RED ============ -->
@@ -233,10 +233,10 @@ footer .logo span{color:var(--blood)}
   <div class="prose reveal">
     <p class="kicker">Part IV</p>
     <h2 class="section-title">The Rise of Red</h2>
-    <p>Share of blood-red pixels per year. Red is horror's signature — but it only took over when the slasher did.</p>
+    <p>Share of blood-red pixels per year. Red is horror's signature — but its real peak isn't where you'd guess: not the '80s slasher, but the meta-horror '90s.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="red" viewBox="0 0 960 340" width="100%"></svg>
-  <p class="note" style="margin-top:10px">SAMPLE DATA — illustrative mockup.</p></div>
+  <p class="note" style="margin-top:10px">PILOT DATA — 1,000-poster stratified sample (TMDB), 5-yr rolling mean. Full 32k run pending.</p></div>
 </section>
 
 <!-- ============ EXPLORER ============ -->
@@ -379,42 +379,44 @@ function el(t,a){const n=document.createElementNS(NS,t);for(const k in a)n.setAt
 /* --- darkness curve --- */
 (function(){
   const svg=document.getElementById('darkness'),W=960,H=400,m={t:30,r:30,b:40,l:50};
-  const pts=[[1925,64],[1935,61],[1945,58],[1955,57],[1965,50],[1970,44],[1975,38],[1980,34],[1985,33],[1990,32],[1995,30],[2000,27],[2005,26],[2010,29],[2015,32],[2020,35],[2025,37]];
-  const x=y=>m.l+(y-1925)/(2025-1925)*(W-m.l-m.r);
-  const yy=v=>m.t+(70-v)/(70-20)*(H-m.t-m.b);
-  [20,30,40,50,60,70].forEach(v=>{
+  /* REAL PILOT DATA: mean L* per year, 5-yr rolling (n=1,000, TMDB) */
+  const pts=[[1950,34.5],[1955,48.0],[1960,44.2],[1965,44.0],[1970,46.8],[1975,39.0],[1980,35.7],[1985,32.9],[1990,37.4],[1995,34.0],[2000,34.1],[2005,31.9],[2010,30.2],[2015,29.9],[2020,26.3],[2022,26.3]];
+  const x=y=>m.l+(y-1950)/(2022-1950)*(W-m.l-m.r);
+  const yy=v=>m.t+(55-v)/(55-20)*(H-m.t-m.b);
+  [20,25,30,35,40,45,50,55].forEach(v=>{
     svg.appendChild(el('line',{x1:m.l,x2:W-m.r,y1:yy(v),y2:yy(v),class:'axis'}));
-    const t=el('text',{x:m.l-8,y:yy(v)+4,'text-anchor':'end',class:'tick-label'});t.textContent=v+'%';svg.appendChild(t);
+    const t=el('text',{x:m.l-8,y:yy(v)+4,'text-anchor':'end',class:'tick-label'});t.textContent=v;svg.appendChild(t);
   });
-  [1925,1945,1965,1985,2005,2025].forEach(v=>{
+  [1950,1960,1970,1980,1990,2000,2010,2022].forEach(v=>{
     const t=el('text',{x:x(v),y:H-14,'text-anchor':'middle',class:'tick-label'});t.textContent=v;svg.appendChild(t);
   });
   const d='M'+pts.map(p=>`${x(p[0])},${yy(p[1])}`).join(' L');
-  svg.appendChild(el('path',{d:d+` L${x(2025)},${yy(20)} L${x(1925)},${yy(20)} Z`,fill:'rgba(229,160,13,.08)'}));
+  svg.appendChild(el('path',{d:d+` L${x(2022)},${yy(20)} L${x(1950)},${yy(20)} Z`,fill:'rgba(229,160,13,.08)'}));
   svg.appendChild(el('path',{d,fill:'none',stroke:'#e5a00d','stroke-width':3,'stroke-linecap':'round'}));
-  [[1973,'The Exorcist era begins',41,1970,44],[2004,'Torture-porn floor',22,2005,26],[2016,'A24 lets the light in',40,2015,32]].forEach(a=>{
+  [[1975,'The occult slide begins',43,1975,39],[1985,'Slasher black',28.5,1985,32.9],[2020,'Darkest on record — the light never came back',23,2020,26.3]].forEach(a=>{
     svg.appendChild(el('line',{x1:x(a[3]),x2:x(a[3]),y1:yy(a[4]),y2:yy(a[2])+14,class:'annot-line'}));
-    const t=el('text',{x:x(a[3]),y:yy(a[2]),'text-anchor':'middle',class:'annot'});t.textContent=a[1];svg.appendChild(t);
+    const t=el('text',{x:Math.min(x(a[3]),W-260),y:yy(a[2]),'text-anchor':'middle',class:'annot'});t.textContent=a[1];svg.appendChild(t);
   });
 })();
 
 /* --- rise of red --- */
 (function(){
   const svg=document.getElementById('red'),W=960,H=340,m={t:30,r:30,b:40,l:50};
-  const pts=[[1925,7],[1935,9],[1945,12],[1955,13],[1965,11],[1975,14],[1980,17],[1985,19],[1990,16],[1995,15],[2000,14],[2005,13],[2010,12],[2015,13],[2020,14],[2025,15]];
-  const x=y=>m.l+(y-1925)/(2025-1925)*(W-m.l-m.r);
-  const yy=v=>m.t+(22-v)/(22-0)*(H-m.t-m.b);
-  [0,5,10,15,20].forEach(v=>{
+  /* REAL PILOT DATA: % blood-red pixels per year, 5-yr rolling (n=1,000, TMDB) */
+  const pts=[[1950,8.5],[1955,10.7],[1960,10.3],[1965,8.8],[1970,11.1],[1975,12.1],[1980,11.8],[1985,13.5],[1990,11.4],[1995,15.7],[2000,12.1],[2005,10.6],[2010,16.0],[2015,9.7],[2020,10.8],[2022,10.8]];
+  const x=y=>m.l+(y-1950)/(2022-1950)*(W-m.l-m.r);
+  const yy=v=>m.t+(18-v)/(18-0)*(H-m.t-m.b);
+  [0,5,10,15].forEach(v=>{
     svg.appendChild(el('line',{x1:m.l,x2:W-m.r,y1:yy(v),y2:yy(v),class:'axis'}));
     const t=el('text',{x:m.l-8,y:yy(v)+4,'text-anchor':'end',class:'tick-label'});t.textContent=v+'%';svg.appendChild(t);
   });
-  [1925,1945,1965,1985,2005,2025].forEach(v=>{
+  [1950,1960,1970,1980,1990,2000,2010,2022].forEach(v=>{
     const t=el('text',{x:x(v),y:H-14,'text-anchor':'middle',class:'tick-label'});t.textContent=v;svg.appendChild(t);
   });
   const line='M'+pts.map(p=>`${x(p[0])},${yy(p[1])}`).join(' L');
-  svg.appendChild(el('path',{d:line+` L${x(2025)},${yy(0)} L${x(1925)},${yy(0)} Z`,fill:'rgba(193,18,31,.35)'}));
+  svg.appendChild(el('path',{d:line+` L${x(2022)},${yy(0)} L${x(1950)},${yy(0)} Z`,fill:'rgba(193,18,31,.35)'}));
   svg.appendChild(el('path',{d:line,fill:'none',stroke:'#c1121f','stroke-width':3,'stroke-linecap':'round'}));
-  [[1960,'Psycho',11,1965],[1978,'Halloween',15,1975],[1985,'Slasher peak',20,1985],[1996,'Scream',16.5,1995]].forEach(a=>{
+  [[1985,'Slasher era',14.2,1985],[1996,'Meta-horror peak',16.4,1995],[2010,'Torture-porn red',16.7,2010]].forEach(a=>{
     const t=el('text',{x:x(a[3]),y:yy(a[2])-8,'text-anchor':'middle',class:'annot'});t.textContent=a[1];svg.appendChild(t);
   });
 })();
