@@ -6,6 +6,9 @@ data/posters/
 __pycache__/
 .DS_Store
 
+# pretrained model weights (auto-downloaded by open_clip; too large for git)
+pipeline/models/*.pt
+
 # keep the small outputs
 !pipeline/data/yearly.json
 !pipeline/data/posters.csv

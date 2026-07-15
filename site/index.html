@@ -4,6 +4,20 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>The Anatomy of Fear — Pulp Analytics</title>
+<meta name="description" content="We analyzed the colors of 28,065 horror movie posters (1950–2022). Horror has been getting darker for seventy years — and the light never came back.">
+<meta name="theme-color" content="#0a0a0c">
+<link rel="icon" type="image/png" href="assets/pa-mark.png">
+<link rel="apple-touch-icon" href="assets/pa-mark.png">
+<!-- Open Graph / Twitter — set og:image to assets/og-card.jpg (1200x630) before launch -->
+<meta property="og:type" content="article">
+<meta property="og:site_name" content="Pulp Analytics">
+<meta property="og:title" content="The Anatomy of Fear: what 28,065 horror posters reveal">
+<meta property="og:description" content="Seventy years of horror poster data: the Darkness Curve, the myth of the desaturated '90s, and the floating-head era. A visual essay.">
+<meta property="og:image" content="assets/og-card.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="The Anatomy of Fear: what 28,065 horror posters reveal">
+<meta name="twitter:description" content="Horror posters have gotten darker every decade for seventy years. We searched for the rebound. There isn't one.">
+<meta name="twitter:image" content="assets/og-card.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
@@ -16,7 +30,7 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:19px;line-height:1.65;overflow-x:hidden}
+body{background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:19px;line-height:1.65;overflow-x:hidden;transition:background .4s linear}
 ::selection{background:var(--blood);color:#fff}
 
 /* ---------- generic ---------- */
@@ -27,6 +41,23 @@ h2.section-title{font-family:var(--display);font-size:clamp(38px,6vw,72px);line-
 .note{font-family:var(--mono);font-size:12px;color:var(--ink-dim)}
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
 .reveal.on{opacity:1;transform:none}
+.typo-strip{margin-top:26px}
+.ts-row{display:grid;grid-template-columns:104px repeat(6,1fr);gap:12px;align-items:start;margin-bottom:12px}
+.ts-head{margin-bottom:4px}
+.ts-tag{display:flex;align-items:center;gap:7px;font-family:var(--display,sans-serif);
+  text-transform:uppercase;letter-spacing:.07em;font-size:11px;color:#b9b2a4;line-height:1.3;align-self:center}
+.ts-tag-blank{min-height:1px}
+.ts-dot{width:9px;height:9px;border-radius:2px;display:inline-block;flex:0 0 auto}
+.ts-era{font-family:var(--display,sans-serif);text-transform:uppercase;letter-spacing:.06em;
+  font-size:10px;color:#7c766b;text-align:center;align-self:end}
+.ts-card{display:flex;flex-direction:column;min-width:0}
+.ts-card img{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:4px;display:block;
+  background:#141416;box-shadow:0 3px 10px rgba(0,0,0,.5);transition:transform .3s ease}
+.ts-card:hover img{transform:translateY(-4px) scale(1.03)}
+.ts-cap{margin-top:6px;font-size:10px;line-height:1.25;color:#8f8a80;min-height:26px}
+.ts-cap b{color:#c8c2b6;font-weight:600}
+@media(max-width:640px){.ts-row{grid-template-columns:repeat(6,1fr);gap:6px}
+  .ts-tag{grid-column:1/-1;align-self:start}.ts-tag-blank,.ts-era{display:none}.ts-cap{display:none}}
 .big-num{font-family:var(--display);font-size:clamp(46px,7vw,90px);color:var(--amber);line-height:1}
 section{position:relative}
 
@@ -35,6 +66,10 @@ section{position:relative}
 .mosaic{position:absolute;inset:-5%;display:grid;grid-template-columns:repeat(14,1fr);gap:6px;opacity:.35;filter:saturate(.9)}
 .mosaic div{aspect-ratio:2/3;border-radius:2px}
 .hero-inner{position:relative;z-index:2;padding:24px;background:radial-gradient(ellipse at center,rgba(10,10,12,.92) 30%,rgba(10,10,12,.55) 65%,transparent 100%)}
+.hero-brand{display:block;text-align:center;margin:0 auto 6px}
+.hero-brand img{display:block;margin:0 auto;width:clamp(170px,28vw,290px);height:auto;
+  filter:drop-shadow(0 4px 18px rgba(193,18,31,.35))}
+.footer-logo{display:block;width:clamp(160px,26vw,240px);height:auto;margin:0 auto}
 .hero h1{font-family:var(--display);font-size:clamp(56px,11vw,150px);text-transform:uppercase;line-height:.92;letter-spacing:.01em}
 .hero h1 .fear{color:var(--blood);animation:flicker 4s infinite}
 @keyframes flicker{0%,93%,100%{opacity:1}94%{opacity:.4}95%{opacity:1}97%{opacity:.6}98%{opacity:1}}
@@ -48,6 +83,23 @@ section{position:relative}
 .intro{padding:120px 0 80px}
 .drop::first-letter{font-family:var(--display);font-size:3.4em;float:left;line-height:.8;padding:6px 12px 0 0;color:var(--blood)}
 
+/* ---------- exhibit A: poster dissection ---------- */
+.an-ov{position:absolute;inset:0;pointer-events:none;opacity:0;transition:opacity .6s}
+.an-ov.on{opacity:1}
+.an-box{position:absolute;border:2px dashed var(--blood);border-radius:3px}
+.an-box.amber{border-color:var(--amber)}
+.an-lab{position:absolute;font-family:var(--mono);font-size:10px;letter-spacing:.08em;
+  background:rgba(10,10,12,.88);border:1px solid var(--line);padding:3px 7px;color:var(--ink);border-radius:2px}
+.an-scrim{position:absolute;left:0;right:0;bottom:0;height:0;background:rgba(0,0,0,.82);
+  border-top:2px dashed var(--blood);transition:height 1.1s ease}
+.an-ov.on .an-scrim{height:72%}
+.an-verdict{position:absolute;top:44%;left:50%;transform:translateX(-50%);white-space:nowrap;
+  font-family:var(--mono);font-size:12px;color:var(--blood);background:rgba(10,10,12,.9);
+  border:1px solid var(--blood);padding:5px 10px;border-radius:2px}
+.an-scan{position:absolute;left:0;right:0;height:2px;
+  background:linear-gradient(90deg,transparent,var(--amber),transparent);animation:scan 2.6s linear infinite}
+@keyframes scan{0%{top:0}100%{top:100%}}
+
 /* ---------- charts ---------- */
 .chart-block{padding:90px 0}
 .chart-wrap{max-width:960px;margin:36px auto 0;padding:0 24px}
@@ -56,6 +108,10 @@ svg text{font-family:var(--mono)}
 .tick-label{fill:var(--ink-dim);font-size:11px}
 .annot{fill:var(--ink);font-size:12px}
 .annot-line{stroke:var(--ink-dim);stroke-dasharray:3 3}
+.tip{position:fixed;background:rgba(17,17,20,.97);border:1px solid var(--line);border-left:3px solid var(--blood);
+  padding:7px 11px;font-family:var(--mono);font-size:12px;color:var(--ink);pointer-events:none;
+  opacity:0;z-index:20;border-radius:3px;transition:opacity .15s;max-width:240px}
+.line-label{font-family:var(--mono);font-size:11px}
 
 /* ---------- era chapters ---------- */
 .era{display:grid;grid-template-columns:minmax(0,44%) minmax(0,56%);max-width:1150px;margin:0 auto;padding:0 24px}
@@ -75,6 +131,47 @@ svg text{font-family:var(--mono)}
 .step p{font-size:17px;color:var(--ink)}
 .step .stat{font-family:var(--mono);font-size:13px;color:var(--ink-dim);border-top:1px solid var(--line);margin-top:16px;padding-top:12px}
 .step .stat b{color:var(--blood);font-size:15px}
+
+/* ---------- century strip: vertical scroll -> horizontal film strip ---------- */
+.strip-wrap{height:660vh;position:relative}
+.strip-sticky{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;align-items:center}
+.strip-decade{position:absolute;top:7vh;left:0;right:0;text-align:center;
+  font-family:var(--display);font-size:clamp(70px,15vw,170px);line-height:1;
+  color:rgba(232,228,218,.06);pointer-events:none;user-select:none}
+.strip{display:flex;gap:9vw;align-items:center;padding:0 45vw;will-change:transform}
+.strip-card{flex:0 0 auto;width:min(300px,58vw);text-align:center}
+.sc-poster{position:relative;aspect-ratio:2/3;border-radius:4px;overflow:hidden;
+  background:#141216 center/cover no-repeat;
+  box-shadow:0 30px 80px rgba(0,0,0,.75),0 0 0 1px rgba(255,255,255,.06);
+  filter:grayscale(.5) brightness(.55);transform:scale(.9);
+  transition:filter .6s ease,transform .6s ease}
+.strip-card.active .sc-poster{filter:none;transform:scale(1)}
+.sc-poster .an-scan{display:none}
+.strip-card.active .sc-poster .an-scan{display:block}
+/* disección por fases: ph1 elemento -> ph2 oscuridad -> ph3 paleta */
+.sc-box{position:absolute;border:2px dashed var(--amber);border-radius:3px;
+  opacity:0;transition:opacity .5s}
+.sc-lab{position:absolute;font-family:var(--mono);font-size:10px;letter-spacing:.08em;
+  background:rgba(10,10,12,.9);border:1px solid var(--line);padding:3px 7px;
+  color:var(--ink);border-radius:2px;opacity:0;transition:opacity .5s .15s;white-space:nowrap}
+.strip-card.ph1 .sc-box,.strip-card.ph1 .sc-lab{opacity:1}
+.sc-scrim{position:absolute;left:0;right:0;bottom:0;height:0;background:rgba(0,0,0,.82);
+  border-top:2px dashed var(--blood);transition:height 1s ease,opacity .3s;opacity:0}
+.strip-card.ph2 .sc-scrim{height:var(--dark);opacity:1}
+.sc-scrim span{position:absolute;top:-22px;right:4%;font-family:var(--mono);font-size:10px;
+  color:var(--blood);background:rgba(10,10,12,.9);padding:2px 6px;border-radius:2px;
+  opacity:0;transition:opacity .4s .5s}
+.strip-card.ph2 .sc-scrim span{opacity:1}
+.sc-pal{display:flex;gap:4px;justify-content:center;margin-top:10px;opacity:0;transition:opacity .5s}
+.sc-pal span{width:22px;height:22px;border-radius:50%;border:1px solid rgba(255,255,255,.15)}
+.strip-card.ph3 .sc-pal{opacity:1}
+.sc-metrics{font-family:var(--mono);font-size:10px;color:var(--ink-dim);margin-top:6px;
+  opacity:0;transition:opacity .5s .2s}
+.strip-card.ph3 .sc-metrics{opacity:1}
+.sc-cap{margin-top:12px;font-family:var(--mono);font-size:11px;color:var(--ink-dim);
+  opacity:0;transition:opacity .5s .3s}
+.strip-card.active .sc-cap{opacity:1}
+.sc-cap b{color:var(--ink);display:block;font-size:13px;margin-bottom:2px}
 
 /* ---------- explorer ---------- */
 .explorer{padding:100px 0;background:var(--bg2)}
@@ -125,9 +222,10 @@ footer .logo span{color:var(--blood)}
 <section class="hero">
   <div class="mosaic" id="mosaic"></div>
   <div class="hero-inner">
-    <p class="kicker">A Pulp Analytics Visual Essay</p>
+    <a class="hero-brand" href="https://medium.com/pulp-analytics" aria-label="Pulp Analytics"><img src="assets/pulp-analytics-red.png" alt="Pulp Analytics"></a>
+    <p class="kicker">A Visual Essay</p>
     <h1>The Anatomy<br>of <span class="fear">Fear</span></h1>
-    <p class="dek">We analyzed the colors of <strong>1,000 horror movie posters</strong> — a stratified pilot from a 32,540-film database (1950–2022) — to answer one question: what does fear look like, and how has it changed?</p>
+    <p class="dek">We analyzed the colors of <strong>28,698 horror movie posters</strong> spanning a century (1920–2022) to answer one question: what does fear look like — and how has it changed?</p>
     <p class="byline">By <b>Juan Pablo Duque</b> · October 2026 · 9 min read</p>
   </div>
   <div class="scroll-cue">SCROLL IF YOU DARE ↓</div>
@@ -137,20 +235,108 @@ footer .logo span{color:var(--blood)}
 <section class="intro">
   <div class="prose">
     <p class="drop reveal">A horror poster has one job: scare you into a seat. But <em>how</em> it scares you is a fingerprint of its era. The painted monsters of the 1930s, the occult photography of the '70s, the black-and-red formula of the slasher boom, today's minimalist dread — each is a fossil of what its decade feared.</p>
-    <p class="reveal">Fossils can be measured. For every poster in a 32,540-film database, we extracted its dominant palette, brightness, saturation, and how much of it is the color of blood.</p>
+    <p class="reveal">Fossils can be measured. From a database of 33,000 films we analyzed every poster with usable artwork — 28,698 of them, from 1920 to 2022 — extracting each one's dominant palette, brightness, saturation, and how much of it is the color of blood.</p>
     <p class="reveal">This is a century of fear, one pixel at a time.</p>
   </div>
 </section>
+
+<!-- ============ EXHIBIT A: ANATOMY OF ONE NIGHTMARE ============ -->
+<section class="chart-block" style="padding-bottom:0">
+  <div class="prose reveal">
+    <p class="kicker">Exhibit A</p>
+    <h2 class="section-title">Anatomy of One Nightmare</h2>
+    <p>Before we measure a century, let's dissect a single specimen — arguably the most imitated horror one-sheet ever printed.</p>
+  </div>
+</section>
+
+<div class="era">
+  <div class="era-sticky">
+    <div>
+      <div class="poster" id="ana-poster" style="background:linear-gradient(165deg,#070403 0%,#1a0d06 55%,#64291d 78%,#ad3c1b 100%)">
+        <div class="an-ov" id="ana-ov0"><div class="an-scan"></div></div>
+        <div class="an-ov" id="ana-ov2"><div class="an-scrim"></div>
+          <div class="an-lab" style="bottom:74%;right:4%">72% near-black</div></div>
+        <div class="an-ov" id="ana-ov3">
+          <div class="an-box amber" style="left:8%;top:9%;width:74%;height:44%"></div>
+          <div class="an-box amber" style="left:30%;top:55%;width:36%;height:37%"></div>
+          <div class="an-lab" style="bottom:3%;left:4%">the only warmth: 11.4%</div></div>
+        <div class="an-ov" id="ana-ov4">
+          <div class="an-scan"></div>
+          <div class="an-verdict" style="top:70%">0 HUMAN FACES DETECTED</div>
+          <div class="an-box amber" style="left:45%;top:36%;width:38%;height:22%"></div>
+          <div class="an-lab" style="top:60%;right:4%">the only face: not human</div></div>
+        <div class="an-ov" id="ana-ov5">
+          <div class="an-box" style="left:4%;top:3%;width:92%;height:12%"></div>
+          <div class="an-lab" style="top:17%;left:4%">the shout: title-as-billboard</div></div>
+        <div class="an-ov" id="ana-ov6">
+          <div class="an-box amber" style="left:30%;top:16%;width:52%;height:40%"></div>
+          <div class="an-lab" style="top:58%;left:26%">model reads: <b style="color:var(--amber)">skeleton</b> (0.63)</div></div>
+      </div>
+      <div class="swatches" id="ana-sw"></div>
+      <p class="poster-caption" id="ana-cap">Halloween (1978) · "The Night He Came Home!"</p>
+    </div>
+  </div>
+  <div class="era-steps">
+    <div class="step" data-ana="0">
+      <p class="kicker">The Specimen</p>
+      <h3>Halloween, 1978</h3>
+      <p>Black void. A hand, a kitchen knife, a jack-o'-lantern. No monster, no victim, no star. We ran it through the same pipeline as every other poster in this story.</p>
+      <p class="stat">TMDB #948 · analyzed at 96×144 px, CIELAB color space</p>
+    </div>
+    <div class="step" data-ana="1">
+      <p class="kicker">Measurement 1</p>
+      <h3>The Palette</h3>
+      <p>Five dominant colors, extracted by k-means clustering. Near-total black — then nothing but pumpkin light: rust, amber, bone.</p>
+      <p class="stat"><b>#070403</b> · #ad3c1b · #64291d · #d3c7b2 · #e49b3d</p>
+    </div>
+    <div class="step" data-ana="2">
+      <p class="kicker">Measurement 2</p>
+      <h3>The Darkness</h3>
+      <p>72% of this poster is near-black. Its mean brightness is L* 16.9 — <em>less than half</em> the average of its own year. Carpenter's one-sheet was a decade ahead of the curve the rest of the genre would follow.</p>
+      <p class="stat">L* <b>16.9</b> vs 38.7 (1978 average) · dark pixels <b>72%</b></p>
+    </div>
+    <div class="step" data-ana="3">
+      <p class="kicker">Measurement 3</p>
+      <h3>The Blood</h3>
+      <p>Only 11.4% of the pixels are warm — and they're all in two places: the blade and the pumpkin. All of the poster's heat, concentrated in one knife.</p>
+      <p class="stat">blood-red share: <b>11.4%</b></p>
+    </div>
+    <div class="step" data-ana="4">
+      <p class="kicker">Measurement 4</p>
+      <h3>The Face</h3>
+      <p>Zero <em>human</em> faces detected. Two of every three posters of its era showed you one — this poster's only face is carved into a pumpkin. No victim, no killer: Michael Myers is the absence the artwork sells.</p>
+      <p class="stat">human faces: <b>0</b> · 1970s average: 64% · the only face on the sheet belongs to the jack-o'-lantern</p>
+    </div>
+    <div class="step" data-ana="5">
+      <p class="kicker">Measurement 5</p>
+      <h3>The Shout</h3>
+      <p>The title is a billboard: one word, top of the sheet, wider than the artwork itself. Our detector flags 22% of this poster as text-like — an upper bound, and a confession: to the algorithm, a carved pumpkin's ridges read like lettering. Every measurement in this story carries that kind of noise; the trends survive it.</p>
+      <p class="stat">text-like coverage: <b>22%</b> (upper bound) · the century-long trend: shouting → whisper</p>
+    </div>
+    <div class="step" data-ana="6">
+      <p class="kicker">Measurement 6</p>
+      <h3>The Monster</h3>
+      <p>We asked a vision model what creature lives on this poster. Its answer: <em>a skeleton</em> — it reads the jack-o'-lantern's carved grin as a skull. Wrong species, right instinct: that pumpkin was designed to read as a death's-head. When the model is unsure, it says so — and we only trust it in aggregate.</p>
+      <p class="stat">CLIP census: <b>skeleton</b> (confidence 0.63) · per-poster reads are noisy; decade trends are the signal</p>
+    </div>
+    <div class="step" data-ana="7">
+      <p class="kicker">Now</p>
+      <h3>× 28,065</h3>
+      <p>One poster, six measurements. We did exactly this to every horror poster of the last seventy years. Here is what a century of fear looks like.</p>
+      <p class="stat">scroll on ↓</p>
+    </div>
+  </div>
+</div>
 
 <!-- ============ COLOR RIVER ============ -->
 <section class="chart-block">
   <div class="prose reveal">
     <p class="kicker">Part I</p>
     <h2 class="section-title">The Color River</h2>
-    <p>Share of poster pixels by hue family, per decade. Watch the warm pulp palette of the studio era drain into darkness — then bleed red.</p>
+    <p>Share of poster pixels by hue family, per decade. The warm pulp palette of the '50s never recovers — and the black rises like floodwater, from 44% to 60% of every poster. Watch the blue flare in the neon '80s.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="river" viewBox="0 0 960 380" width="100%"></svg>
-  <p class="note" style="margin-top:10px">SAMPLE DATA — illustrative mockup. Final figures come from the TMDB poster pipeline.</p></div>
+  <p class="note" style="margin-top:10px">FULL CENTURY — n = 28,698 posters (TMDB), mean share per decade.</p></div>
 </section>
 
 <!-- ============ ERAS ============ -->
@@ -158,7 +344,7 @@ footer .logo span{color:var(--blood)}
   <div class="prose reveal">
     <p class="kicker">Part II</p>
     <h2 class="section-title">Six Eras of Terror</h2>
-    <p>Scroll through the century. The poster on the left morphs with each era; the numbers tell you why.</p>
+    <p>Scroll through the century. For each era, the data chose a specimen — not the poster you remember, but the <em>statistically most typical</em> famous poster of its time, dissected like Exhibit A. This is what average fear looked like.</p>
   </div>
 </section>
 
@@ -175,43 +361,43 @@ footer .logo span{color:var(--blood)}
     <div class="step" data-era="0">
       <p class="kicker">1920s – 1930s</p>
       <h3>Painted Monsters</h3>
-      <p>Lithographed one-sheets sold the creature, not the fear. Universal's monsters loom in theatrical greens and sickly yellows — horror as carnival attraction.</p>
-      <p class="stat">Pre-1950 films not yet in dataset — <b>TMDB API backfill pending</b> for the full run</p>
+      <p>Lithographed one-sheets sold the creature, not the fear — but in expressionist shadow. The surprise of the backfill: the earliest posters were <em>darker</em> than the atomic age that followed. The century's brightness is a mountain, and this is its first slope.</p>
+      <p class="stat">n = 632 posters (1920–49) · L* <b>43.7</b> — darker than the 1950s peak · red barely exists: <b>6.6%</b></p>
     </div>
 
     <div class="step" data-era="1">
       <p class="kicker">1940s – 1950s</p>
       <h3>Atomic Pulp</h3>
       <p>Radiation, invasion, paranoia. Posters scream in exclamation marks — "SEE!" "SHOCKING!" — drenched in lurid reds and yellows borrowed from pulp magazine covers.</p>
-      <p class="stat">1950s posters are the brightest on record: <b>L* 45.8</b> · dark pixels only <b>29%</b></p>
+      <p class="stat">1950s posters are the brightest on record: <b>L* 46.7</b> · dark pixels only <b>27%</b> · reigning monsters: <b>the giant creature & the alien</b> (7.8% combined — the alien's all-time peak)</p>
     </div>
 
     <div class="step" data-era="2">
       <p class="kicker">1960s – 1970s</p>
       <h3>The Occult Turn</h3>
       <p>Photography replaces paint, and the devil moves into the suburbs. <em>Rosemary's Baby</em>, <em>The Exorcist</em>: black backgrounds arrive and never leave.</p>
-      <p class="stat">The slide begins: dark pixels climb <b>29% → 34%</b> and brightness starts a fall it never recovers from</p>
+      <p class="stat">The slide begins: dark pixels climb <b>27% → 34%</b> · least saturated era of the century (<b>0.35</b>) · reigning monster: <b>the witch</b> — 7.1% in the '70s, her all-time peak</p>
     </div>
 
     <div class="step" data-era="3">
       <p class="kicker">1980s</p>
       <h3>Black &amp; Red</h3>
       <p>The slasher boom industrializes the formula: black void, a weapon, a scream, chrome type. The VHS shelf demanded posters that read from across a video store.</p>
-      <p class="stat">Brightness collapses <b>43 → 34</b> in a decade · dark pixels hit <b>43%</b> · red rises to <b>12.4%</b></p>
+      <p class="stat">Brightness collapses <b>43 → 36.5</b> — the steepest drop on record · reigning monster: <b>the masked killer</b>, at his all-time peak (6.8%)</p>
     </div>
 
     <div class="step" data-era="4">
       <p class="kicker">1990s – 2000s</p>
       <h3>The Desaturation</h3>
       <p>Meta-horror and torture porn: floating celebrity heads, steel blues, surgical greens. But the data busts a myth — the "cold desaturated '90s" never happened.</p>
-      <p class="stat">Myth busted: saturation holds at <b>0.41</b> — higher than the '60s–'70s (<b>0.36</b>). Red peaks instead: <b>15.7%</b> in the mid-'90s</p>
+      <p class="stat">Myth busted: saturation holds at <b>0.41</b>. 1997–99 is peak marketing horror: red at its all-time high (<b>13.7%</b>), the celebrity close-up (face size peaks at <b>9%</b>) · the dynasty changes hands: <b>killer → zombie</b> (2% → 6% in one decade)</p>
     </div>
 
     <div class="step" data-era="5">
       <p class="kicker">2010s – Today</p>
       <h3>Elevated Minimalism</h3>
-      <p>A24 and the arthouse wave strip the poster to a single symbolic object. We expected "daylight horror" to let the light back in. It didn't — this is the darkest era ever measured.</p>
-      <p class="stat">All-time low brightness: <b>L* 27.4</b> · over half of every poster (<b>52%</b>) is near-black</p>
+      <p>A24 and the arthouse wave strip the poster to a single symbolic object — but look at the specimen: the era's most <em>typical</em> poster is a busy franchise ensemble. The elevated-horror look you remember is the exception. The average is darker, and it never let the light back in.</p>
+      <p class="stat">All-time low brightness: <b>L* 29.8</b> · half of every poster (<b>50%</b>) near-black · faces on fewer than half (<b>48%</b>) · reigning monster: <b>the ghost</b>, 8.1% — the largest share any creature has ever held</p>
     </div>
 
   </div>
@@ -222,10 +408,10 @@ footer .logo span{color:var(--blood)}
   <div class="prose reveal">
     <p class="kicker">Part III</p>
     <h2 class="section-title">The Darkness Curve</h2>
-    <p>Average poster brightness, 1950–2022. Horror has been getting darker for seventy years straight — and against every expectation, the light never came back.</p>
+    <p>Average poster brightness across the full century. It isn't a slide — it's a mountain: expressionist shadow climbs to the atomic daylight peak of the 1950s, and then horror descends for seventy years. The light never came back.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="darkness" viewBox="0 0 960 400" width="100%"></svg>
-  <p class="note" style="margin-top:10px">PILOT DATA — 1,000-poster stratified sample (TMDB), 5-yr rolling mean. Full 32k run pending.</p></div>
+  <p class="note" style="margin-top:10px">FULL CENTURY — n = 28,698 posters (TMDB), 5-yr rolling mean.</p></div>
 </section>
 
 <!-- ============ RISE OF RED ============ -->
@@ -236,44 +422,119 @@ footer .logo span{color:var(--blood)}
     <p>Share of blood-red pixels per year. Red is horror's signature — but its real peak isn't where you'd guess: not the '80s slasher, but the meta-horror '90s.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="red" viewBox="0 0 960 340" width="100%"></svg>
-  <p class="note" style="margin-top:10px">PILOT DATA — 1,000-poster stratified sample (TMDB), 5-yr rolling mean. Full 32k run pending.</p></div>
+  <p class="note" style="margin-top:10px">FULL CENTURY — n = 28,698 posters (TMDB), 5-yr rolling mean.</p></div>
 </section>
+
+<!-- ============ FLOATING HEAD ============ -->
+<section class="chart-block" style="padding-top:0">
+  <div class="prose reveal">
+    <p class="kicker">Part V</p>
+    <h2 class="section-title">The Vanishing Face</h2>
+    <p>In the 1940s, showing a face was nearly mandatory: 85% of posters had one — the century's peak. Today, fewer than half do. And hiding inside the long retreat, one twist: the late '90s didn't add faces, it <em>zoomed in</em> on them. Average face size peaks in 1997 — the celebrity close-up era — at nearly twice its historic share of the sheet.</p>
+  </div>
+  <div class="chart-wrap reveal"><svg id="faces" viewBox="0 0 960 340" width="100%"></svg>
+  <p class="note" style="margin-top:10px">FULL RUN — n = 28,065 posters (TMDB), YuNet face detection (validated against hand-checked artwork), 5-yr rolling mean. Counts are floors: small profile/tilted faces can escape the detector.</p></div>
+</section>
+
+<!-- ============ THE GREAT QUIETING ============ -->
+<section class="chart-block" style="padding-top:0">
+  <div class="prose reveal">
+    <p class="kicker">Part VI</p>
+    <h2 class="section-title">The Great Quieting</h2>
+    <p>Two quieter revolutions, measured across every poster. First: the shout is a mountain. The quiet silent-era sheets climb to the "SEE! SHOCKING!" peak of the mid-'50s — and then horror spends seventy years lowering its voice, down to today's near-silent artwork.</p>
+  </div>
+  <div class="chart-wrap reveal"><svg id="quiet" viewBox="0 0 960 340" width="100%"></svg>
+  <p class="note" style="margin-top:10px">FULL RUN — n = 28,065 posters (TMDB), MSER text-region proxy, 5-yr rolling mean. Trend-comparable across eras; absolute level is an upper bound.</p></div>
+  <div class="prose reveal" style="margin-top:70px">
+    <p>And second: posters became obsessively symmetric. Mirror-balance climbs relentlessly and then leaps after 2010 — the measurable fingerprint of elevated horror's centered, ritual compositions.</p>
+  </div>
+  <div class="chart-wrap reveal"><svg id="symmetry" viewBox="0 0 960 340" width="100%"></svg>
+  <p class="note" style="margin-top:10px">FULL RUN — horizontal mirror similarity (0–1), 5-yr rolling mean.</p></div>
+</section>
+
+<!-- ============ THE MONSTER CENSUS ============ -->
+<section class="chart-block" style="padding-top:0">
+  <div class="prose reveal">
+    <p class="kicker">Part VII</p>
+    <h2 class="section-title">The Monster Census</h2>
+    <p>We asked a vision model one question about every poster: <em>what creature is on it?</em> The answer is a dynastic succession — atomic monster, occult witch, masked killer, zombie — with one astonishing frame around it: <strong>the century begins and ends with the ghost.</strong> The spiritualist 1920s put spectres on 12% of posters; a hundred years of monsters later, the ghost has simply returned to the throne. Hover each line to follow one monster's fortunes.</p>
+  </div>
+  <div class="chart-wrap reveal"><svg id="census" viewBox="0 0 960 420" width="100%"></svg>
+  <p class="note" style="margin-top:10px">FULL CENTURY — n = 28,698 posters, CLIP zero-shot vs 18-creature taxonomy (validated 10/10 on hand-checked artwork; labels below 0.5 confidence excluded). Shares are conservative floors; pre-1950 decades carry smaller samples (632 posters total).</p></div>
+</section>
+
+<!-- ============ THE LETTERING OF FEAR ============ -->
+<section class="chart-block" style="padding-top:0">
+  <div class="prose reveal">
+    <p class="kicker">Part VIII</p>
+    <h2 class="section-title">The Lettering of Fear</h2>
+    <p>Color wasn't the only language on the sheet — so was the title. We placed every poster on a single axis: from <em>ornate</em> hand-drawn display lettering — the painted, dimensional, illustrated logos of the pulp era — to <em>minimal</em> type, the thin, quiet words of elevated horror. The century tells one long story: fear stopped shouting its own name. In the 1940s, <strong>63%</strong> of posters wore ornate display lettering and barely 4% were minimal. By the 2020s that has inverted — ornate down to 13%, minimal up to <strong>31%</strong> and now the single largest register.</p>
+  </div>
+  <div class="chart-wrap reveal"><svg id="typo" viewBox="0 0 960 380" width="100%"></svg>
+  <p class="note" style="margin-top:10px">FULL CENTURY — n = 28,698 posters (TMDB). Registers are quintiles of an ornate↔minimal typographic axis (CLIP zero-shot on the whole poster: similarity to "ornate hand-drawn display lettering" minus "clean minimal type"). Validated against hand-ranked specimens (corr 0.81); decade trend r = −0.93. This measures the <em>decorative character</em> of the title treatment, not a specific typeface — a proxy, honest about its limits: reading the exact letterforms of stylized horror titles defeats OCR and font-ID models alike.</p>
+  <div class="typo-strip reveal">
+    <div class="ts-row ts-head" id="ts-eras"><div class="ts-tag ts-tag-blank"></div></div>
+    <div class="ts-row" id="ts-ornate"><div class="ts-tag"><span class="ts-dot" style="background:#c99a3a"></span>Most ornate</div></div>
+    <div class="ts-row" id="ts-minimal"><div class="ts-tag"><span class="ts-dot" style="background:#cdc6b6"></span>Cleanest / minimal</div></div>
+    <p class="note" style="margin-top:8px">The most- and least-ornate title treatment the model found in each era. Fear's lettering thins from painted, dimensional logos to a single quiet word.</p>
+  </div>
+  </div>
+</section>
+
+<!-- ============ THE CENTURY STRIP ============ -->
+<section class="chart-block" style="padding-bottom:20px">
+  <div class="prose reveal">
+    <p class="kicker">Coda</p>
+    <h2 class="section-title">The Century Strip</h2>
+    <p>Eleven decades, eleven specimens — each the statistically most typical famous poster of its ten years. Keep scrolling: the strip moves sideways through the century, and each poster is dissected as it reaches the center.</p>
+  </div>
+</section>
+<div class="strip-wrap" id="strip-wrap">
+  <div class="strip-sticky">
+    <div class="strip-decade" id="strip-decade">1920s</div>
+    <div class="strip" id="strip"></div>
+  </div>
+</div>
 
 <!-- ============ EXPLORER ============ -->
 <section class="explorer">
   <div class="prose reveal">
     <p class="kicker">Explore</p>
-    <h2 class="section-title">32,540 Nightmares</h2>
-    <p>Every poster in the dataset, sorted by dominant color. Drag the handles to travel through time and watch the palette shift — hover any tile to inspect. (Prototype: tiles are placeholders for real TMDB posters.)</p>
+    <h2 class="section-title">28,698 Nightmares</h2>
+    <p>Every poster we analyzed, in chronological order. Each tile is a poster's dominant color — hover to reveal the artwork and its measurements (brightness, faces, creature), click to open it full-size. Drag the handles to travel through the century and watch the palette go dark.</p>
   </div>
   <div class="slider-block reveal">
-    <div class="year-readout"><b id="yr-min">1920</b><span>—</span><b id="yr-max">2025</b></div>
+    <div class="year-readout"><b id="yr-min">1920</b><span>—</span><b id="yr-max">2022</b></div>
     <div class="range-wrap">
       <div class="range-track"></div>
       <div class="range-fill" id="range-fill"></div>
-      <input type="range" id="r-min" min="1920" max="2025" value="1920" step="1" aria-label="From year">
-      <input type="range" id="r-max" min="1920" max="2025" value="2025" step="1" aria-label="To year">
+      <input type="range" id="r-min" min="1920" max="2022" value="1920" step="1" aria-label="From year">
+      <input type="range" id="r-max" min="1920" max="2022" value="2022" step="1" aria-label="To year">
     </div>
-    <p class="slider-hint">DRAG TO FILTER BY YEAR</p>
+    <p class="slider-hint">DRAG TO FILTER BY YEAR · HOVER A TILE FOR ITS MEASUREMENTS</p>
   </div>
-  <div class="exp-grid reveal" id="expgrid"></div>
+  <div class="exp-grid" id="expgrid"></div>
+  <div class="tip" id="exp-tip"></div>
 </section>
 
 <!-- ============ METHODOLOGY ============ -->
 <section class="metho">
   <div class="prose">
     <p class="kicker">Methodology</p>
-    <p style="margin-top:14px">Film list and poster images from <a href="https://www.themoviedb.org/">The Movie Database (TMDB)</a> — 32,540 features tagged Horror, 1920–2025. For each poster we extracted a 5-color dominant palette (k-means in LAB space, saturation-weighted), mean brightness (L*), mean saturation, share of near-black pixels, and share of red-hue pixels. Face counts via OpenCV. This product uses the TMDB API but is not endorsed or certified by TMDB. Full code and data on GitHub. Industry context: Stephen Follows' <a href="https://stephenfollows.com/p/the-horror-movie-report">Horror Movie Report</a>.</p>
+    <p style="margin-top:14px">Film list and poster images from <a href="https://www.themoviedb.org/">The Movie Database (TMDB)</a>: 32,540 features tagged Horror, of which 28,065 (1950–2022) had usable artwork and were analyzed. For each poster we extracted a 5-color dominant palette (k-means in CIELAB, saturation-weighted), mean brightness (L*), mean saturation, share of near-black pixels, share of blood-red pixels, and hue-family distribution. Base dataset by Tanya Shapiro (TidyTuesday 2022). Face counts: population statistics use YuNet detection at analysis resolution (floors — small, tilted or heavily stylized faces can escape); the counts shown on individually displayed specimens are hand-verified against the artwork. This product uses the TMDB API but is not endorsed or certified by TMDB. Full code and data on GitHub. Industry context: Stephen Follows' <a href="https://stephenfollows.com/p/the-horror-movie-report">Horror Movie Report</a>.</p>
   </div>
 </section>
 
 <footer>
-  <p class="logo">Pulp <span>Analytics</span></p>
+  <img class="footer-logo" src="assets/pulp-analytics-red.png" alt="Pulp Analytics">
   <p style="margin-top:8px">Data stories with teeth · medium.com/pulp-analytics</p>
 </footer>
 
+<script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.2.0/scrollama.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="data/explorer.js"></script>
 <script>
-/* ================= sample data & palettes ================= */
+/* ================= data & palettes ================= */
 const ERAS=[
  {name:"1920s–30s",title:"THE MONSTER",tag:"A Universal Terror",bg:"linear-gradient(160deg,#3b4a2f 0%,#6b7a3d 35%,#c9a53f 70%,#7a4a1e 100%)",ink:"#f2e6c9",pal:["#3b4a2f","#6b7a3d","#c9a53f","#7a4a1e","#1e2418"]},
  {name:"1940s–50s",title:"ATOMIC BEAST!",tag:"SEE! the thing from beyond",bg:"radial-gradient(circle at 30% 25%,#f2d13c 0%,#e07b1f 40%,#b52a1c 75%,#4a0d0d 100%)",ink:"#160a05",pal:["#f2d13c","#e07b1f","#b52a1c","#4a0d0d","#f7ecc5"]},
@@ -286,13 +547,47 @@ const HUEBANDS=[
  {name:"Reds",c:"#c1121f"},{name:"Oranges/Yellows",c:"#e5a00d"},{name:"Greens",c:"#5a7a3d"},
  {name:"Blues",c:"#2e5158"},{name:"Purples",c:"#3d2f4f"},{name:"Black/Grey",c:"#26262c"}
 ];
-/* decade shares per band (sample) */
-const RIVER=[ /* 1920s..2020s : 11 decades */
- [8,34,22,10,6,20],[9,36,20,9,6,20],[12,38,16,8,5,21],[13,33,15,9,6,24],
- [12,26,14,10,9,29],[14,18,12,11,9,36],[19,14,9,10,7,41],[16,12,9,15,7,41],
- [14,10,8,17,6,45],[13,12,9,13,7,46],[14,16,10,11,6,43]
+/* FULL CENTURY: mean hue-family share per decade, n=28,698 posters (TMDB) */
+const RIVER=[ /* 1920s..2020s — [red, warm, green, blue, purple, dark/grey] % */
+ [ 4.1,20.9,4.8, 5.5,1.3,63.6],
+ [ 6.9,22.7,6.0, 7.5,1.6,55.4],
+ [10.0,26.4,6.5, 9.6,1.5,46.0],
+ [12.4,25.0,4.6, 9.0,2.2,46.8],
+ [13.4,17.4,3.5, 7.7,2.5,55.5],
+ [12.8,18.0,3.2, 8.2,3.1,54.7],
+ [13.0,16.4,2.9,12.9,3.7,51.2],
+ [14.3,16.8,3.3,11.2,4.4,50.0],
+ [12.1,17.8,3.3, 8.3,1.7,56.9],
+ [10.1,13.9,2.8, 9.4,2.1,61.7],
+ [10.4,12.4,3.0, 9.7,2.9,61.6]
 ];
 const DECADES=["1920s","1930s","1940s","1950s","1960s","1970s","1980s","1990s","2000s","2010s","2020s"];
+
+/* THE LETTERING OF FEAR: share of 5 title-typography registers per decade,
+   n=28,698. Register = quintile of an ornate<->minimal axis measured as
+   CLIP(poster, "ornate hand-drawn display lettering") - CLIP(poster, "clean
+   minimal type"). Validated: corr 0.81 vs hand-ranked specimens, decade
+   trend r=-0.93. Rows 1920s..2020s, cols [ornate,decorative,standard,clean,minimal]. */
+const TYPOREGS=[
+ {key:"ornate",     name:"Ornate display", c:"#c99a3a"},
+ {key:"decorative", name:"Decorative",     c:"#b5622f"},
+ {key:"standard",   name:"Standard",       c:"#8a6a63"},
+ {key:"clean",      name:"Clean",          c:"#6f8792"},
+ {key:"minimal",    name:"Minimal",        c:"#cdc6b6"}
+];
+const TYPO=[
+ [0.4315,0.2877,0.1644,0.0685,0.0479], // 1920s
+ [0.5328,0.2227,0.1266,0.0961,0.0218], // 1930s
+ [0.6265,0.1790,0.1128,0.0428,0.0389], // 1940s
+ [0.5772,0.2282,0.0872,0.0772,0.0302], // 1950s
+ [0.4238,0.2413,0.1538,0.1041,0.0769], // 1960s
+ [0.2932,0.2711,0.1791,0.1480,0.1086], // 1970s
+ [0.3439,0.2384,0.1820,0.1508,0.0848], // 1980s
+ [0.2742,0.2452,0.1976,0.1625,0.1205], // 1990s
+ [0.1880,0.2308,0.2351,0.2013,0.1449], // 2000s
+ [0.1419,0.1810,0.2084,0.2293,0.2393], // 2010s
+ [0.1296,0.1508,0.1857,0.2201,0.3138]  // 2020s
+];
 
 /* ================= hero mosaic + explorer tiles ================= */
 function tileColor(dec){ // fake era-plausible poster colors
@@ -302,41 +597,108 @@ function tileColor(dec){ // fake era-plausible poster colors
 }
 const mosaic=document.getElementById('mosaic');
 for(let i=0;i<98;i++){const d=document.createElement('div');
-  const dec=Math.floor(Math.random()*106)+20;
-  d.style.background=`linear-gradient(${Math.random()*360}deg,${tileColor(dec)},${tileColor(dec)}dd, #0a0a0c)`;
+  if(typeof POSTERS!=='undefined'){ /* real dominant colors */
+    const p=POSTERS[Math.floor(Math.random()*POSTERS.length)];
+    d.style.background=`linear-gradient(${Math.random()*360}deg,${p[1]},#0a0a0c)`;
+  }else{
+    const dec=Math.floor(Math.random()*106)+20;
+    d.style.background=`linear-gradient(${Math.random()*360}deg,${tileColor(dec)},${tileColor(dec)}dd, #0a0a0c)`;
+  }
   mosaic.appendChild(d);}
 
 function eraOfYear(y){return y<1940?0: y<1960?1: y<1980?2: y<1990?3: y<2010?4:5;}
+/* ============ explorer: real posters (data/explorer.js) ============ */
 const grid=document.getElementById('expgrid');
-const tiles=[];
-for(let i=0;i<96;i++){const d=document.createElement('div');
-  const year=1920+Math.floor(Math.random()*106);
-  const p=ERAS[eraOfYear(year)].pal;
-  d.style.background=`linear-gradient(${160+Math.random()*40}deg,${p[Math.floor(Math.random()*5)]},${p[Math.floor(Math.random()*5)]})`;
-  d.dataset.year=year;d.title=`Sample poster · ${year}`;
-  grid.appendChild(d);tiles.push(d);}
-tiles.sort((a,b)=>a.dataset.year-b.dataset.year).forEach(t=>grid.appendChild(t));
-
+const IMG_S='https://image.tmdb.org/t/p/w92', IMG_L='https://image.tmdb.org/t/p/w780';
+const HAS_DATA=(typeof POSTERS!=='undefined');
+const MAX_TILES=384;
+const expTip=document.getElementById('exp-tip');
+const CREATURE_ES={giant_monster:'giant monster',masked_killer:'masked killer',wolf_dog:'wolf/dog'};
+function posterSrc(p,size){ /* pre-1950: imagen local cacheada (prototipo) */
+  return p[2] ? (size==='s'?IMG_S:IMG_L)+p[2] : '../pipeline/data/posters/'+p[7]+'.jpg';
+}
+function renderRange(lo,hi){
+  grid.innerHTML='';
+  if(HAS_DATA){
+    const pool=POSTERS.filter(p=>p[0]>=lo&&p[0]<=hi);
+    const step=Math.max(1,Math.floor(pool.length/MAX_TILES));
+    pool.filter((_,i)=>i%step===0).slice(0,MAX_TILES).forEach(p=>{
+      const d=document.createElement('div');
+      d.style.background=p[1];
+      d.addEventListener('mouseenter',()=>{
+        d.style.backgroundImage=`url(${posterSrc(p,'s')})`;
+        d.style.backgroundSize='cover';d.style.backgroundPosition='center';
+      });
+      d.addEventListener('mousemove',ev=>{
+        const bits=[`L* ${p[4]}`, p[5]>0?`${p[5]} face${p[5]>1?'s':''}`:'no faces'];
+        if(p[6]) bits.push(CREATURE_ES[p[6]]||p[6]);
+        expTip.innerHTML=`<b>${p[3]}</b> (${p[0]})<br>${bits.join(' · ')}`;
+        expTip.style.opacity=1;
+        expTip.style.left=Math.min(ev.clientX+14,innerWidth-260)+'px';
+        expTip.style.top=(ev.clientY-14)+'px';
+      });
+      d.addEventListener('mouseleave',()=>{expTip.style.opacity=0;});
+      d.addEventListener('click',()=>window.open(posterSrc(p,'l'),'_blank'));
+      grid.appendChild(d);
+    });
+  }else{ /* offline fallback: synthetic era-colored tiles */
+    for(let i=0;i<MAX_TILES/4;i++){
+      const year=lo+Math.floor(Math.random()*(hi-lo+1));
+      const p=ERAS[eraOfYear(year)].pal, d=document.createElement('div');
+      d.style.background=`linear-gradient(170deg,${p[Math.floor(Math.random()*5)]},${p[Math.floor(Math.random()*5)]})`;
+      d.title=`Sample poster · ${year}`;grid.appendChild(d);
+    }
+  }
+}
 /* dual-handle year slider (production: noUiSlider) */
 const rMin=document.getElementById('r-min'),rMax=document.getElementById('r-max'),
       yMin=document.getElementById('yr-min'),yMax=document.getElementById('yr-max'),
       fill=document.getElementById('range-fill');
+const Y0=1920,Y1=2022;
+let renderTimer=null;
 function applyRange(){
   let lo=+rMin.value,hi=+rMax.value;
   if(lo>hi){[lo,hi]=[hi,lo];}
   yMin.textContent=lo;yMax.textContent=hi;
-  const span=2025-1920;
-  fill.style.left=((lo-1920)/span*100)+'%';
-  fill.style.right=(100-(hi-1920)/span*100)+'%';
-  tiles.forEach(t=>{const y=+t.dataset.year;t.style.opacity=(y>=lo&&y<=hi)?1:.06;});
+  const span=Y1-Y0;
+  fill.style.left=((lo-Y0)/span*100)+'%';
+  fill.style.right=(100-(hi-Y0)/span*100)+'%';
+  clearTimeout(renderTimer);
+  renderTimer=setTimeout(()=>renderRange(lo,hi),120);
 }
 rMin.addEventListener('input',applyRange);
 rMax.addEventListener('input',applyRange);
 applyRange();
 
 /* ================= sticky poster morph ================= */
+/* THE SPECIMENS: for each era, the data chose the statistically most typical
+   famous poster (min z-distance to era means on brightness/dark/red/saturation,
+   among films with 300+ votes). Real measurements per poster. */
+const ERA_POSTERS={
+ /* era 0 usa la imagen local cacheada; cambiar a poster_path TMDB cuando
+    backfill_meta.py haya persistido la metadata pre-1950 */
+ 0:{t:"King Kong",y:1933,p:null,src:"../pipeline/data/posters/244.jpg",
+    pal:["#160b10","#f4d839","#985929","#f15e0e","#6880ba"],
+    stats:[["L*","44.2"],["dark","34%"],["red","8%"],["faces","6 painted"],["text","41%"]]},
+ 1:{t:"The Incredible Shrinking Man",y:1957,p:"/1Tl2aeOhvUmEHSGHGH5SfmN19vQ.jpg",
+    pal:["#8f7d1b","#140707","#99876b","#59372a","#e2e1d8"],
+    stats:[["L*","48.7"],["dark","23%"],["red","5%"],["faces","1 human"],["text","36%"]]},
+ 2:{t:"The Fearless Vampire Killers",y:1967,p:"/iH8Ohx97F2eIagrJGzCEraO93MN.jpg",
+    pal:["#191715","#8b4e17","#a58e67","#f1efee","#b23124"],
+    stats:[["L*","50.8"],["dark","28%"],["red","10%"],["faces","2"],["text","37%"]]},
+ 3:{t:"A Nightmare on Elm Street",y:1984,p:"/wGTpGGRMZmyFCcrY2YoxVTIBlli.jpg",
+    pal:["#1e1e18","#3a505d","#5f3828","#b95242","#91a8ac"],
+    stats:[["L*","27.6"],["dark","42%"],["red","14%"],["faces","2"],["text","33%"]]},
+ 4:{t:"Cemetery Man",y:1994,p:"/cI5AV3jCuxmoQp0N7Z16SI2b7Xk.jpg",
+    pal:["#130b0b","#dbc4ad","#72694b","#af0f1b","#4f4481"],
+    stats:[["L*","34.4"],["dark","46%"],["red","9%"],["faces","3"],["text","37%"]]},
+ 5:{t:"Resident Evil: Raccoon City",y:2021,p:"/7uRbWOXxpWDMtnsd2PF3clu65jc.jpg",
+    pal:["#18100e","#533529","#93735b","#9fb9a4","#ac5b3f"],
+    stats:[["L*","30.4"],["dark","44%"],["red","9%"],["faces","5"],["text","41%"]]}
+};
 const poster=document.getElementById('poster'),sw=document.getElementById('swatches'),cap=document.getElementById('poster-cap');
-function setEra(i){
+let cycleTimer=null;
+function cssEra(i){
   const e=ERAS[i];
   poster.style.background=e.bg;
   poster.innerHTML=`<div class="p-title" style="top:${i===5?'70%':'8%'};color:${e.ink};font-size:${i===5?'22px':'30px'};letter-spacing:${i===5?'.3em':'.02em'}">${e.title}</div>
@@ -344,9 +706,163 @@ function setEra(i){
   sw.innerHTML=e.pal.map(c=>`<span style="background:${c}"></span>`).join('');
   cap.textContent=`${e.name} · era palette — sample reconstruction`;
 }
+function setEra(i){
+  clearInterval(cycleTimer);
+  const it=ERA_POSTERS[i];
+  if(it){
+    const im=new Image();
+    im.onload=()=>{
+      poster.style.background=`url(${im.src}) center/cover no-repeat`;
+      poster.style.cursor='pointer';
+      /* specimen dissection: scan line + staggered measurement tags */
+      poster.innerHTML=`<div class="an-scan"></div>`+
+        it.stats.map(([k,v],j)=>
+          `<div class="an-lab era-tag" style="right:3%;top:${8+j*13}%;opacity:0;transition:opacity .5s ${j*0.35+0.4}s">${k} <b style="color:var(--blood)">${v}</b></div>`
+        ).join('');
+      requestAnimationFrame(()=>requestAnimationFrame(()=>
+        poster.querySelectorAll('.era-tag').forEach(t=>t.style.opacity=1)));
+      setTimeout(()=>{const s=poster.querySelector('.an-scan');if(s)s.remove();},2700);
+      sw.innerHTML=it.pal.map(c=>`<span style="background:${c}"></span>`).join('');
+      cap.textContent=`${it.t} (${it.y}) · the era's statistical archetype`;
+    };
+    im.onerror=()=>cssEra(i);
+    im.src=it.p ? 'https://image.tmdb.org/t/p/w342'+it.p : it.src;
+    poster.onclick=()=>window.open(it.p ? 'https://image.tmdb.org/t/p/w780'+it.p : it.src,'_blank');
+  }else{
+    poster.onclick=null;poster.style.cursor='default';
+    cssEra(i);
+  }
+}
 setEra(0);
-const stepObs=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting)setEra(+en.target.dataset.era);})},{threshold:.6});
-document.querySelectorAll('.step').forEach(s=>stepObs.observe(s));
+
+/* ============ exhibit A: dissection of Halloween (1978) ============ */
+const ANA={path:'/qVpCaBcnjRzGL3nOPHi6Suy0sB6.jpg',
+  pal:['#070403','#ad3c1b','#64291d','#d3c7b2','#e49b3d']};
+const anaPoster=document.getElementById('ana-poster'),anaSw=document.getElementById('ana-sw');
+(function(){ /* real artwork over the CSS fallback */
+  const im=new Image();
+  im.onload=()=>{anaPoster.style.background=`url(${im.src}) center/cover no-repeat`;};
+  im.src='https://image.tmdb.org/t/p/w342'+ANA.path;
+})();
+function setAna(k){
+  for(let i=0;i<=7;i++){const o=document.getElementById('ana-ov'+i);if(o)o.classList.toggle('on',i===k);}
+  anaSw.innerHTML = k>=1 ? ANA.pal.map(c=>`<span style="background:${c}"></span>`).join('') : '';
+}
+setAna(0);
+
+/* scrollytelling: Scrollama in production, IntersectionObserver fallback offline */
+if(typeof scrollama!=='undefined'){
+  const eraScroller=scrollama();
+  eraScroller.setup({step:'.step[data-era]',offset:0.6})
+          .onStepEnter(r=>setEra(+r.element.dataset.era));
+  const anaScroller=scrollama();
+  anaScroller.setup({step:'.step[data-ana]',offset:0.6})
+          .onStepEnter(r=>setAna(+r.element.dataset.ana));
+  window.addEventListener('resize',()=>{eraScroller.resize();anaScroller.resize();});
+}else{
+  const eraObs=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting)setEra(+en.target.dataset.era);})},{threshold:.6});
+  document.querySelectorAll('.step[data-era]').forEach(s=>eraObs.observe(s));
+  const anaObs=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting)setAna(+en.target.dataset.ana);})},{threshold:.6});
+  document.querySelectorAll('.step[data-ana]').forEach(s=>anaObs.observe(s));
+}
+
+/* ============ century strip: scroll vertical -> horizontal ============ */
+/* box = elemento definitorio, colocado a mano mirando cada artwork */
+const STRIP=[
+ {dec:"1920s",t:"Häxan",y:1922,p:null,id:57283,L:"38.1",dark:46,red:"3.8%",
+  pal:["#19171f","#2e2e77","#c8c298","#f4ed5d","#c36232"],
+  box:{l:55,t:6,w:40,h:26,lab:"the devil in the tree"}},
+ {dec:"1930s",t:"King Kong",y:1933,p:null,id:244,L:"44.2",dark:34,red:"8.2%",
+  pal:["#160b10","#f4d839","#985929","#f15e0e","#6880ba"],
+  box:{l:4,t:1,w:78,h:38,lab:"the beast above the crowd"}},
+ {dec:"1940s",t:"The Body Snatcher",y:1945,p:null,id:30346,L:"45.5",dark:23,red:"3.3%",
+  pal:["#212525","#739471","#445a50","#c9d59b","#8e3e3c"],
+  box:{l:20,t:2,w:62,h:42,lab:"Karloff's stare"}},
+ {dec:"1950s",t:"The Incredible Shrinking Man",y:1957,p:"/1Tl2aeOhvUmEHSGHGH5SfmN19vQ.jpg",L:"48.7",dark:23,red:"5.1%",
+  pal:["#8f7d1b","#140707","#99876b","#59372a","#e2e1d8"],
+  box:{l:20,t:10,w:66,h:38,lab:"the giant housecat"}},
+ {dec:"1960s",t:"The Fearless Vampire Killers",y:1967,p:"/iH8Ohx97F2eIagrJGzCEraO93MN.jpg",L:"50.8",dark:28,red:"10%",
+  pal:["#191715","#8b4e17","#a58e67","#f1efee","#b23124"],
+  box:{l:52,t:4,w:44,h:26,lab:"the fangs at the throat"}},
+ {dec:"1970s",t:"Halloween",y:1978,p:"/qVpCaBcnjRzGL3nOPHi6Suy0sB6.jpg",L:"16.9",dark:72,red:"11.4%",
+  pal:["#070403","#ad3c1b","#64291d","#d3c7b2","#e49b3d"],
+  box:{l:45,t:36,w:38,h:22,lab:"the jack-o'-lantern"}},
+ {dec:"1980s",t:"A Nightmare on Elm Street",y:1984,p:"/wGTpGGRMZmyFCcrY2YoxVTIBlli.jpg",L:"27.6",dark:42,red:"14.5%",
+  pal:["#1e1e18","#3a505d","#5f3828","#b95242","#91a8ac"],
+  box:{l:22,t:2,w:60,h:20,lab:"Freddy above the bed"}},
+ {dec:"1990s",t:"Cemetery Man",y:1994,p:"/cI5AV3jCuxmoQp0N7Z16SI2b7Xk.jpg",L:"34.4",dark:46,red:"9.2%",
+  pal:["#130b0b","#dbc4ad","#72694b","#af0f1b","#4f4481"],
+  box:{l:12,t:6,w:65,h:32,lab:"the returner"}},
+ {dec:"2000s",t:"Funny Games",y:2008,p:"/2RGiR5yNmxXS8c4Qypmbqn0b63w.jpg",L:"27.5",dark:45,red:"3.1%",
+  pal:["#0f0403","#2d1d17","#54413a","#7f6a68","#9f8e91"],
+  box:{l:10,t:52,w:48,h:30,lab:"a tear, not a monster"}},
+ {dec:"2010s",t:"The Rite",y:2011,p:"/gRTxM95huMwIDfZBJWjuifMTfpx.jpg",L:"32.7",dark:43,red:"11.5%",
+  pal:["#0a060a","#bdae9a","#4d1815","#895a3d","#4c5457"],
+  box:{l:28,t:8,w:44,h:60,lab:"a face inside a cross"}},
+ {dec:"2020s",t:"Resident Evil: Raccoon City",y:2021,p:"/7uRbWOXxpWDMtnsd2PF3clu65jc.jpg",L:"30.4",dark:44,red:"9.4%",
+  pal:["#18100e","#533529","#93735b","#9fb9a4","#ac5b3f"],
+  box:{l:6,t:2,w:64,h:24,lab:"the logo hidden in the sky"}}
+];
+const stripEl=document.getElementById('strip'),stripDec=document.getElementById('strip-decade'),
+      stripWrap=document.getElementById('strip-wrap');
+STRIP.forEach((s,i)=>{
+  const src = s.p ? 'https://image.tmdb.org/t/p/w342'+s.p : '../pipeline/data/posters/'+s.id+'.jpg';
+  const b=s.box, labTop=(b.t+b.h+3), labSide=b.l>40?'right:3%':'left:3%';
+  const card=document.createElement('div');card.className='strip-card';card.dataset.i=i;
+  card.innerHTML=`<div class="sc-poster" style="background-image:url(${src});--dark:${s.dark}%">
+      <div class="an-scan"></div>
+      <div class="sc-box" style="left:${b.l}%;top:${b.t}%;width:${b.w}%;height:${b.h}%"></div>
+      <div class="sc-lab" style="top:${labTop}%;${labSide}">${b.lab}</div>
+      <div class="sc-scrim"><span>dark ${s.dark}%</span></div>
+    </div>
+    <div class="sc-pal">${s.pal.map(c=>`<span style="background:${c}"></span>`).join('')}</div>
+    <p class="sc-metrics">L* <b style="color:var(--blood)">${s.L}</b> · red <b style="color:var(--blood)">${s.red}</b></p>
+    <p class="sc-cap"><b>${s.t} (${s.y})</b>the decade's statistical archetype</p>`;
+  stripEl.appendChild(card);
+});
+let stripActive=-1;
+function stripScroll(){
+  const rect=stripWrap.getBoundingClientRect();
+  const total=stripWrap.offsetHeight-innerHeight;
+  const prog=Math.min(1,Math.max(0,-rect.top/total));
+  const maxX=stripEl.scrollWidth-innerWidth;
+  stripEl.style.transform=`translateX(${-prog*maxX}px)`;
+  /* carta más cercana al centro */
+  let best=0,bd=1e9;
+  stripEl.querySelectorAll('.strip-card').forEach((c,i)=>{
+    const r=c.getBoundingClientRect();
+    const d=Math.abs(r.left+r.width/2-innerWidth/2);
+    if(d<bd){bd=d;best=i;}
+  });
+  if(best!==stripActive){
+    stripActive=best;
+    stripEl.querySelectorAll('.strip-card').forEach((c,i)=>{
+      c.classList.toggle('active',i===best);
+      if(i!==best) c.classList.remove('ph1','ph2','ph3');
+    });
+    stripDec.textContent=STRIP[best].dec;
+  }
+  /* fases de disección dentro del segmento de la carta activa */
+  const sub=Math.min(1,Math.max(0,prog*STRIP.length-best));
+  const card=stripEl.children[best];
+  card.classList.toggle('ph1',sub>=0.22);
+  card.classList.toggle('ph2',sub>=0.48);
+  card.classList.toggle('ph3',sub>=0.72);
+}
+addEventListener('scroll',()=>requestAnimationFrame(stripScroll),{passive:true});
+stripScroll();
+
+/* ================= the page darkens as you scroll ================= */
+/* you don't just read the Darkness Curve — you feel it */
+const lerp=(a,b,t)=>Math.round(a+(b-a)*t);
+function shade(){
+  const max=document.body.scrollHeight-innerHeight;
+  const t=max>0?Math.min(1,Math.max(0,scrollY/max)):0;
+  document.documentElement.style.setProperty('--bg',
+    `rgb(${lerp(24,4,t)},${lerp(22,4,t)},${lerp(28,6,t)})`);
+}
+addEventListener('scroll',()=>requestAnimationFrame(shade),{passive:true});
+shade();
 
 /* ================= reveal on scroll ================= */
 const rev=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('on');rev.unobserve(en.target);}})},{threshold:.15});
@@ -356,6 +872,321 @@ document.querySelectorAll('.reveal').forEach(el=>rev.observe(el));
 const NS="http://www.w3.org/2000/svg";
 function el(t,a){const n=document.createElementNS(NS,t);for(const k in a)n.setAttribute(k,a[k]);return n;}
 
+/* ============ D3 charts (online) — one personality per chart ============ */
+function d3Charts(){
+  const tip=d3.select('body').append('div').attr('class','tip');
+  const showTip=(html,ev)=>tip.style('opacity',1).html(html)
+      .style('left',Math.min(ev.clientX+14,innerWidth-260)+'px').style('top',(ev.clientY-14)+'px');
+  const hideTip=()=>tip.style('opacity',0);
+  const onEnter=(id,fn)=>{const n=document.getElementById(id);
+    const o=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){fn();o.disconnect();}}),{threshold:.35});
+    o.observe(n);};
+  const drawIn=(path,dur)=>{const L=path.node().getTotalLength();
+    path.attr('stroke-dasharray',L+' '+L).attr('stroke-dashoffset',L)
+        .transition().duration(dur||1600).ease(d3.easeCubicOut).attr('stroke-dashoffset',0)
+        .on('end',()=>path.attr('stroke-dasharray',null));};
+  const MAIN_DEC=[[1950,42.6],[1960,44.1],[1970,37.2],[1980,29.7],[1990,27.0],[2000,30.8],[2010,32.9],[2020,28.2]];
+  const DARK_PTS=[[1925,42.7],[1930,39.6],[1935,44.3],[1940,45.2],[1945,46.5],[1950,40.5],[1955,47.6],[1960,47.1],[1965,47.4],[1970,44.8],[1975,41.8],[1980,37.6],[1985,36.2],[1990,36.6],[1995,35.7],[2000,33.3],[2005,32.2],[2010,31.9],[2015,30.7],[2020,28.9],[2022,28.8]];
+  const RED_PTS=[[1925,5.4],[1930,3.9],[1935,7.1],[1940,7.4],[1945,9.2],[1950,7.1],[1955,10.7],[1960,11.8],[1965,11.7],[1970,12.6],[1975,11.5],[1980,11.2],[1985,11.6],[1990,12.2],[1995,13.2],[2000,13.3],[2005,12.7],[2010,10.3],[2015,10.4],[2020,10.9],[2022,10.8]];
+  /* YuNet full century: % posters with >=1 face, 5-yr rolling */
+  const FACE_PTS=[[1920,67.4],[1925,54.0],[1930,62.4],[1935,67.8],[1940,76.9],[1945,84.7],[1950,76.1],[1955,77.0],[1960,74.0],[1965,66.5],[1970,65.1],[1975,64.5],[1980,62.1],[1985,65.9],[1990,68.5],[1995,66.7],[2000,65.5],[2005,56.5],[2010,57.4],[2015,54.1],[2020,49.7],[2022,48.2]];
+  const grid=(svg,x,y,yt,fmt,xt)=>{
+    yt.forEach(v=>{svg.append('line').attr('class','axis').attr('x1',x.range()[0]).attr('x2',x.range()[1]).attr('y1',y(v)).attr('y2',y(v));
+      svg.append('text').attr('class','tick-label').attr('x',x.range()[0]-8).attr('y',y(v)+4).attr('text-anchor','end').text(fmt(v));});
+    xt.forEach(v=>svg.append('text').attr('class','tick-label').attr('x',x(v)).attr('y',y.range()[0]+26).attr('text-anchor','middle').text(v));
+  };
+
+  /* --- I. COLOR RIVER: organic streamgraph, unfolds on entry --- */
+  {
+    const svg=d3.select('#river'),W=960,H=380,m={t:24,r:20,b:44,l:20};
+    const data=RIVER.map(r=>Object.fromEntries(r.map((v,j)=>[j,v])));
+    const series=d3.stack().keys(d3.range(6)).offset(d3.stackOffsetWiggle).order(d3.stackOrderInsideOut)(data);
+    const x=d3.scaleLinear().domain([0,RIVER.length-1]).range([m.l,W-m.r]);
+    const y=d3.scaleLinear().range([H-m.b,m.t])
+      .domain([d3.min(series,s=>d3.min(s,d=>d[0])),d3.max(series,s=>d3.max(s,d=>d[1]))]);
+    const mid=(y.domain()[0]+y.domain()[1])/2;
+    const area=d3.area().x((d,i)=>x(i)).y0(d=>y(d[0])).y1(d=>y(d[1])).curve(d3.curveBasis);
+    const flat=d3.area().x((d,i)=>x(i)).y0(y(mid)).y1(y(mid)).curve(d3.curveBasis);
+    const paths=svg.selectAll('.stream').data(series).join('path')
+      .attr('class','stream').attr('d',flat).attr('fill',(d,i)=>HUEBANDS[d.key].c).attr('opacity',.92)
+      .on('mousemove',function(ev,d){
+        paths.attr('opacity',.22);d3.select(this).attr('opacity',1);
+        const di=Math.max(0,Math.min(RIVER.length-1,Math.round(x.invert(d3.pointer(ev,this)[0]))));
+        showTip(`<b>${HUEBANDS[d.key].name}</b><br>${RIVER[di][d.key]}% of pixels · ${DECADES[di]}`,ev);})
+      .on('mouseleave',()=>{paths.attr('opacity',.92);hideTip();});
+    DECADES.forEach((dec,i)=>svg.append('text').attr('class','tick-label')
+      .attr('x',x(i)).attr('y',H-10).attr('text-anchor','middle').text(dec));
+    HUEBANDS.forEach((b,j)=>{const lx=m.l+j*150;
+      svg.append('rect').attr('x',lx).attr('y',6).attr('width',10).attr('height',10).attr('rx',2).attr('fill',b.c);
+      svg.append('text').attr('class','tick-label').attr('x',lx+15).attr('y',15).text(b.name);});
+    onEnter('river',()=>paths.transition().duration(1400).delay((d,i)=>i*90).ease(d3.easeCubicOut).attr('d',area));
+  }
+
+  /* --- VIII. THE LETTERING OF FEAR: ornate->minimal registers migrate --- */
+  {
+    const svg=d3.select('#typo'),W=960,H=380,m={t:34,r:20,b:44,l:20};
+    const data=TYPO.map(r=>Object.fromEntries(r.map((v,j)=>[j,v])));
+    // fixed ordinal order (ornate on top -> minimal at bottom); shares already sum to 1
+    const series=d3.stack().keys(d3.range(5)).order(d3.stackOrderNone).offset(d3.stackOffsetNone)(data);
+    const x=d3.scaleLinear().domain([0,TYPO.length-1]).range([m.l,W-m.r]);
+    const y=d3.scaleLinear().domain([0,1]).range([H-m.b,m.t]);
+    const area=d3.area().x((d,i)=>x(i)).y0(d=>y(d[0])).y1(d=>y(d[1])).curve(d3.curveBasis);
+    const flat=d3.area().x((d,i)=>x(i)).y0(y(0)).y1(y(0)).curve(d3.curveBasis);
+    const paths=svg.selectAll('.stream').data(series).join('path')
+      .attr('class','stream').attr('d',flat).attr('fill',(d,i)=>TYPOREGS[d.key].c).attr('opacity',.92)
+      .on('mousemove',function(ev,d){
+        paths.attr('opacity',.22);d3.select(this).attr('opacity',1);
+        const di=Math.max(0,Math.min(TYPO.length-1,Math.round(x.invert(d3.pointer(ev,this)[0]))));
+        showTip(`<b>${TYPOREGS[d.key].name}</b><br>${(TYPO[di][d.key]*100).toFixed(1)}% of titles · ${DECADES[di]}`,ev);})
+      .on('mouseleave',()=>{paths.attr('opacity',.92);hideTip();});
+    DECADES.forEach((dec,i)=>svg.append('text').attr('class','tick-label')
+      .attr('x',x(i)).attr('y',H-10).attr('text-anchor','middle').text(dec));
+    // ornate <-> minimal axis endpoints as edge labels
+    svg.append('text').attr('class','annot').attr('x',m.l).attr('y',22).attr('fill',TYPOREGS[0].c).text('◄ more ornate');
+    svg.append('text').attr('class','annot').attr('text-anchor','end').attr('x',W-m.r).attr('y',22).attr('fill',TYPOREGS[4].c).text('more minimal ►');
+    TYPOREGS.forEach((b,j)=>{const lx=m.l+j*182;
+      svg.append('rect').attr('x',lx).attr('y',H-36).attr('width',10).attr('height',10).attr('rx',2).attr('fill',b.c);
+      svg.append('text').attr('class','tick-label').attr('x',lx+15).attr('y',H-27).text(b.name);});
+    onEnter('typo',()=>paths.transition().duration(1400).delay((d,i)=>i*90).ease(d3.easeCubicOut).attr('d',area));
+
+    /* specimen strip: the most / least ornate title treatment per era (hand-verified) */
+    const TS_ORNATE=[
+      [15849,"The Mummy","1932"],[85498,"The Maze","1953"],[24452,"Little Shop of Horrors","1960"],
+      [16281,"Creepshow","1982"],[439917,"Devil Medusa","1995"],[535412,"Arte Factum","2017"]];
+    const TS_MINIMAL=[
+      [84713,"The Last Performance","1929"],[495447,"Whistle and I'll Come to You","1956"],[39995,"Long Weekend","1979"],
+      [46767,"In a Glass Cage","1987"],[16028,"They","2002"],[875138,"Alone","2021"]];
+    const TS_ERAS=["1930s","1950s","1960s","1980s","1990s","2010s"];
+    const tsCard=([id,t,y])=>{
+      const c=document.createElement('div');c.className='ts-card';
+      const im=document.createElement('img');im.loading='lazy';im.alt=t+' ('+y+')';
+      im.src='../pipeline/data/posters/'+id+'.jpg';
+      im.onerror=()=>{im.style.visibility='hidden';};
+      const cap=document.createElement('div');cap.className='ts-cap';
+      cap.innerHTML='<b>'+t+'</b><br>'+y;
+      c.append(im,cap);
+      c.style.cursor='pointer';c.onclick=()=>window.open(im.src,'_blank');
+      return c;};
+    const go=(sel,arr)=>{const box=document.getElementById(sel);if(box)arr.forEach(d=>box.appendChild(tsCard(d)));};
+    go('ts-ornate',TS_ORNATE); go('ts-minimal',TS_MINIMAL);
+    const eraBox=document.getElementById('ts-eras');
+    if(eraBox)TS_ERAS.forEach(e=>{const s=document.createElement('div');s.className='ts-era';s.textContent=e;eraBox.appendChild(s);});
+  }
+
+  /* --- II. DARKNESS: two lines converge in the dark, gradient dies out --- */
+  {
+    const svg=d3.select('#darkness'),W=960,H=400,m={t:30,r:170,b:40,l:50};
+    const x=d3.scaleLinear().domain([1925,2022]).range([m.l,W-m.r]);
+    const y=d3.scaleLinear().domain([24,52]).range([H-m.b,m.t]);
+    grid(svg,x,y,[25,30,35,40,45,50],v=>v,[1925,1940,1955,1970,1985,2000,2015]);
+    const gr=svg.append('defs').append('linearGradient').attr('id','dgrad')
+      .attr('x1',0).attr('y1',0).attr('x2',0).attr('y2',1);
+    gr.append('stop').attr('offset','0%').attr('stop-color','#e5a00d').attr('stop-opacity',.38);
+    gr.append('stop').attr('offset','100%').attr('stop-color','#000').attr('stop-opacity',0);
+    const line=d3.line().x(d=>x(d[0])).y(d=>y(d[1])).curve(d3.curveMonotoneX);
+    const areaP=svg.append('path').datum(DARK_PTS)
+      .attr('d',d3.area().x(d=>x(d[0])).y0(y(24)).y1(d=>y(d[1])).curve(d3.curveMonotoneX))
+      .attr('fill','url(#dgrad)').attr('opacity',0);
+    const p1=svg.append('path').datum(DARK_PTS).attr('d',line)
+      .attr('fill','none').attr('stroke','#e5a00d').attr('stroke-width',3).attr('stroke-linecap','round');
+    const p2=svg.append('path').datum(MAIN_DEC).attr('d',line)
+      .attr('fill','none').attr('stroke','#9a958a').attr('stroke-width',2)
+      .attr('stroke-dasharray','6 5').attr('opacity',0);
+    svg.append('text').attr('class','line-label').attr('fill','#e5a00d')
+      .attr('x',x(2022)+8).attr('y',y(28.8)).text('All horror (28,698)');
+    svg.append('text').attr('class','line-label').attr('fill','#9a958a')
+      .attr('x',x(2020)+8).attr('y',y(28.2)+16).text('Mainstream (100+ votes)');
+    [[1931,'Expressionist shadow',37.8],[1958,'The atomic daylight peak',49.5],[1975,'The occult slide begins',45.5],[2020,'The light never came back',25.5]].forEach(a=>{
+      svg.append('text').attr('class','annot').attr('text-anchor','middle')
+         .attr('x',Math.min(x(a[0]),W-m.r-60)).attr('y',y(a[2])).text(a[1]);});
+    const bis=d3.bisector(d=>d[0]).center;
+    const focus=svg.append('circle').attr('r',5).attr('fill','#e5a00d').attr('opacity',0);
+    svg.append('rect').attr('x',m.l).attr('y',m.t).attr('width',W-m.l-m.r).attr('height',H-m.t-m.b)
+      .attr('fill','transparent')
+      .on('mousemove',function(ev){
+        const year=x.invert(d3.pointer(ev,this)[0]);
+        const d=DARK_PTS[bis(DARK_PTS,year)];
+        focus.attr('cx',x(d[0])).attr('cy',y(d[1])).attr('opacity',1);
+        const md=MAIN_DEC[bis(MAIN_DEC,year)];
+        showTip(`<b>${d[0]}</b><br>All horror: L* ${d[1]}<br>Mainstream (${md[0]}s): L* ${md[1]}`,ev);})
+      .on('mouseleave',()=>{focus.attr('opacity',0);hideTip();});
+    onEnter('darkness',()=>{drawIn(p1,1800);
+      areaP.transition().delay(700).duration(1200).attr('opacity',1);
+      p2.transition().delay(1400).duration(900).attr('opacity',1);});
+  }
+
+  /* --- III. RED: blood-gradient area --- */
+  {
+    const svg=d3.select('#red'),W=960,H=340,m={t:30,r:30,b:40,l:50};
+    const x=d3.scaleLinear().domain([1925,2022]).range([m.l,W-m.r]);
+    const y=d3.scaleLinear().domain([0,15]).range([H-m.b,m.t]);
+    grid(svg,x,y,[0,5,10,15],v=>v+'%',[1925,1940,1955,1970,1985,2000,2015]);
+    const gr=svg.append('defs').append('linearGradient').attr('id','rgrad')
+      .attr('x1',0).attr('y1',0).attr('x2',0).attr('y2',1);
+    gr.append('stop').attr('offset','0%').attr('stop-color','#ff2634').attr('stop-opacity',.75);
+    gr.append('stop').attr('offset','100%').attr('stop-color','#40060b').attr('stop-opacity',.25);
+    const line=d3.line().x(d=>x(d[0])).y(d=>y(d[1])).curve(d3.curveMonotoneX);
+    const areaP=svg.append('path').datum(RED_PTS)
+      .attr('d',d3.area().x(d=>x(d[0])).y0(y(0)).y1(d=>y(d[1])).curve(d3.curveMonotoneX))
+      .attr('fill','url(#rgrad)').attr('opacity',0);
+    const p=svg.append('path').datum(RED_PTS).attr('d',line)
+      .attr('fill','none').attr('stroke','#ff2634').attr('stroke-width',3).attr('stroke-linecap','round');
+    [[1930,'Before blood: 4%',5.8],[1970,'Occult red',13.6],[1985,'The slasher never led',10.2],[1999,'All-time peak: meta-horror',14.3]].forEach(a=>
+      svg.append('text').attr('class','annot').attr('text-anchor','middle').attr('x',x(a[0])).attr('y',y(a[2])).text(a[1]));
+    const bis=d3.bisector(d=>d[0]).center;
+    svg.append('rect').attr('x',m.l).attr('y',m.t).attr('width',W-m.l-m.r).attr('height',H-m.t-m.b).attr('fill','transparent')
+      .on('mousemove',function(ev){const d=RED_PTS[bis(RED_PTS,x.invert(d3.pointer(ev,this)[0]))];
+        showTip(`<b>${d[0]}</b><br>Blood-red pixels: ${d[1]}%`,ev);})
+      .on('mouseleave',hideTip);
+    onEnter('red',()=>{drawIn(p,1600);areaP.transition().delay(600).duration(1200).attr('opacity',1);});
+  }
+
+  /* --- V. FACES: seventy-year retreat, with the close-up twist --- */
+  {
+    const svg=d3.select('#faces'),W=960,H=340,m={t:30,r:30,b:40,l:50};
+    const x=d3.scaleLinear().domain([1920,2022]).range([m.l,W-m.r]);
+    const y=d3.scaleLinear().domain([40,90]).range([H-m.b,m.t]);
+    grid(svg,x,y,[40,50,60,70,80,90],v=>v+'%',[1920,1940,1960,1980,2000,2022]);
+    const line=d3.line().x(d=>x(d[0])).y(d=>y(d[1])).curve(d3.curveMonotoneX);
+    const p=svg.append('path').datum(FACE_PTS).attr('d',line)
+      .attr('fill','none').attr('stroke','#e8e4da').attr('stroke-width',3).attr('stroke-linecap','round');
+    const peak=svg.append('circle').attr('cx',x(1997)).attr('cy',y(66.9)).attr('r',0).attr('fill','none')
+      .attr('stroke','#c1121f').attr('stroke-width',2);
+    const dot=svg.append('circle').attr('cx',x(1997)).attr('cy',y(66.9)).attr('r',0).attr('fill','#c1121f');
+    svg.append('text').attr('class','annot').attr('text-anchor','middle')
+      .attr('x',x(1945)).attr('y',y(88)).text('1940s peak: 85% — the face era');
+    svg.append('text').attr('class','annot').attr('text-anchor','middle')
+      .attr('x',x(1997)).attr('y',y(66.9)-24).text('1997: fewer faces, BIGGER faces — avg face size peaks (9% of the sheet)');
+    svg.append('text').attr('class','annot').attr('text-anchor','end')
+      .attr('x',x(2021)).attr('y',y(45)).text('fewer than half');
+    const bis=d3.bisector(d=>d[0]).center;
+    svg.append('rect').attr('x',m.l).attr('y',m.t).attr('width',W-m.l-m.r).attr('height',H-m.t-m.b).attr('fill','transparent')
+      .on('mousemove',function(ev){const d=FACE_PTS[bis(FACE_PTS,x.invert(d3.pointer(ev,this)[0]))];
+        showTip(`<b>${d[0]}</b><br>Posters with a face: ${d[1]}%`,ev);})
+      .on('mouseleave',hideTip);
+    const pulse=()=>peak.attr('r',5).attr('opacity',.9).transition().duration(1800).ease(d3.easeCubicOut)
+      .attr('r',22).attr('opacity',0).on('end',pulse);
+    onEnter('faces',()=>{drawIn(p,1600);dot.transition().delay(1200).attr('r',5);
+      setTimeout(pulse,1400);});
+  }
+
+  /* --- VI-a. THE QUIETING: text coverage fades like a dying shout --- */
+  {
+    const TEXT_PTS=[[1920,26.9],[1925,27.2],[1930,28.7],[1935,31.2],[1940,32.5],[1945,32.8],[1950,31.2],[1955,36.1],[1960,34.7],[1965,31.8],[1970,29.4],[1975,29.1],[1980,28.5],[1985,28.6],[1990,28.2],[1995,26.7],[2000,25.4],[2005,25.8],[2010,24.9],[2015,22.6],[2020,18.8],[2022,18.5]];
+    const svg=d3.select('#quiet'),W=960,H=340,m={t:30,r:30,b:40,l:50};
+    const x=d3.scaleLinear().domain([1920,2022]).range([m.l,W-m.r]);
+    const y=d3.scaleLinear().domain([15,40]).range([H-m.b,m.t]);
+    grid(svg,x,y,[15,20,25,30,35,40],v=>v+'%',[1920,1940,1960,1980,2000,2022]);
+    const gr=svg.append('defs').append('linearGradient').attr('id','qgrad')
+      .attr('x1',0).attr('y1',0).attr('x2',1).attr('y2',0);
+    gr.append('stop').attr('offset','0%').attr('stop-color','#e5a00d').attr('stop-opacity',.4);
+    gr.append('stop').attr('offset','100%').attr('stop-color','#e5a00d').attr('stop-opacity',.04);
+    const line=d3.line().x(d=>x(d[0])).y(d=>y(d[1])).curve(d3.curveMonotoneX);
+    const areaP=svg.append('path').datum(TEXT_PTS)
+      .attr('d',d3.area().x(d=>x(d[0])).y0(y(15)).y1(d=>y(d[1])).curve(d3.curveMonotoneX))
+      .attr('fill','url(#qgrad)').attr('opacity',0);
+    const p=svg.append('path').datum(TEXT_PTS).attr('d',line)
+      .attr('fill','none').attr('stroke','#e5a00d').attr('stroke-width',3).attr('stroke-linecap','round');
+    svg.append('text').attr('class','annot').attr('text-anchor','middle')
+      .attr('x',x(1956)).attr('y',y(36.1)-12).attr('font-weight','bold').text('SEE! SHOCKING! — 36%');
+    svg.append('text').attr('class','annot').attr('text-anchor','end')
+      .attr('x',x(2020)).attr('y',y(18.8)-12).attr('opacity',.6).text('the whisper — 19%');
+    const bis=d3.bisector(d=>d[0]).center;
+    svg.append('rect').attr('x',m.l).attr('y',m.t).attr('width',W-m.l-m.r).attr('height',H-m.t-m.b).attr('fill','transparent')
+      .on('mousemove',function(ev){const d=TEXT_PTS[bis(TEXT_PTS,x.invert(d3.pointer(ev,this)[0]))];
+        showTip(`<b>${d[0]}</b><br>Text-like coverage: ${d[1]}%`,ev);})
+      .on('mouseleave',hideTip);
+    onEnter('quiet',()=>{drawIn(p,1600);areaP.transition().delay(600).duration(1200).attr('opacity',1);});
+  }
+
+  /* --- VI-b. SYMMETRY: the line carries its own mirror reflection --- */
+  {
+    const SYM_PTS=[[1920,0.795],[1925,0.805],[1930,0.81],[1935,0.789],[1940,0.779],[1945,0.748],[1950,0.786],[1955,0.764],[1960,0.769],[1965,0.783],[1970,0.801],[1975,0.812],[1980,0.817],[1985,0.816],[1990,0.814],[1995,0.813],[2000,0.821],[2005,0.82],[2010,0.826],[2015,0.849],[2020,0.869],[2022,0.87]];
+    const svg=d3.select('#symmetry'),W=960,H=340,m={t:30,r:30,b:40,l:50};
+    const x=d3.scaleLinear().domain([1920,2022]).range([m.l,W-m.r]);
+    const y=d3.scaleLinear().domain([0.73,0.89]).range([H-m.b,m.t]);
+    grid(svg,x,y,[0.74,0.78,0.82,0.86],v=>v.toFixed(2),[1920,1940,1960,1980,2000,2022]);
+    const line=d3.line().x(d=>x(d[0])).y(d=>y(d[1])).curve(d3.curveMonotoneX);
+    /* mirrored ghost: same curve reflected around its final value — the medium is the message */
+    const mirror=d3.line().x(d=>x(d[0])).y(d=>y(2*0.87-d[1])).curve(d3.curveMonotoneX);
+    const ghost=svg.append('path').datum(SYM_PTS).attr('d',mirror)
+      .attr('fill','none').attr('stroke','#e8e4da').attr('stroke-width',1.5).attr('opacity',0);
+    const p=svg.append('path').datum(SYM_PTS).attr('d',line)
+      .attr('fill','none').attr('stroke','#e8e4da').attr('stroke-width',3).attr('stroke-linecap','round');
+    svg.append('line').attr('x1',x(1950)).attr('x2',x(2022)).attr('y1',y(0.87)).attr('y2',y(0.87))
+      .attr('class','annot-line').attr('opacity',.5);
+    svg.append('text').attr('class','annot').attr('text-anchor','end')
+      .attr('x',x(2021)).attr('y',y(0.875)-8).text('2021: most symmetric year on record (0.87)');
+    svg.append('text').attr('class','annot').attr('text-anchor','middle')
+      .attr('x',x(2013)).attr('y',y(0.842)+24).text('the elevated leap');
+    const bis=d3.bisector(d=>d[0]).center;
+    svg.append('rect').attr('x',m.l).attr('y',m.t).attr('width',W-m.l-m.r).attr('height',H-m.t-m.b).attr('fill','transparent')
+      .on('mousemove',function(ev){const d=SYM_PTS[bis(SYM_PTS,x.invert(d3.pointer(ev,this)[0]))];
+        showTip(`<b>${d[0]}</b><br>Mirror symmetry: ${d[1]}`,ev);})
+      .on('mouseleave',hideTip);
+    onEnter('symmetry',()=>{drawIn(p,1600);
+      ghost.transition().delay(1500).duration(1200).attr('opacity',.18);});
+  }
+
+  /* --- VII. MONSTER CENSUS: dynastic succession of fear --- */
+  {
+    const CENSUS={
+      "giant monster":{c:"#e5a00d",pts:[[1920,0.7],[1930,0.4],[1940,0.0],[1950,4.4],[1960,1.5],[1970,0.2],[1980,1.4],[1990,0.9],[2000,0.9],[2010,0.6],[2020,0.7]]},
+      "vampire":{c:"#8a2333",pts:[[1920,2.7],[1930,1.7],[1940,1.6],[1950,3.0],[1960,2.7],[1970,3.5],[1980,1.7],[1990,2.7],[2000,1.8],[2010,0.7],[2020,0.6]]},
+      "witch":{c:"#7b5ea7",pts:[[1920,2.1],[1930,0.4],[1940,1.9],[1950,1.7],[1960,3.6],[1970,7.1],[1980,3.8],[1990,3.3],[2000,1.9],[2010,1.4],[2020,2.4]]},
+      "masked killer":{c:"#c1121f",pts:[[1920,1.4],[1930,2.6],[1940,3.1],[1950,5.0],[1960,4.5],[1970,5.6],[1980,6.8],[1990,6.0],[2000,4.1],[2010,3.3],[2020,3.5]]},
+      "zombie":{c:"#5a7a3d",pts:[[1920,0.0],[1930,0.0],[1940,2.3],[1950,1.7],[1960,2.1],[1970,1.5],[1980,1.8],[1990,2.0],[2000,6.0],[2010,5.1],[2020,2.9]]},
+      "ghost":{c:"#e8e4da",pts:[[1920,12.3],[1930,3.9],[1940,9.7],[1950,1.7],[1960,2.9],[1970,2.2],[1980,2.9],[1990,4.3],[2000,6.0],[2010,6.1],[2020,8.1]]}
+    };
+    const svg=d3.select('#census'),W=960,H=420,m={t:30,r:150,b:40,l:50};
+    const x=d3.scaleLinear().domain([1920,2020]).range([m.l,W-m.r]);
+    const y=d3.scaleLinear().domain([0,13]).range([H-m.b,m.t]);
+    grid(svg,x,y,[0,3,6,9,12],v=>v+'%',[1920,1940,1960,1980,2000,2020]);
+    const line=d3.line().x(d=>x(d[0])).y(d=>y(d[1])).curve(d3.curveMonotoneX);
+    const names=Object.keys(CENSUS);
+    const paths={}, labels={};
+    names.forEach((n,i)=>{
+      const e=CENSUS[n];
+      paths[n]=svg.append('path').datum(e.pts).attr('d',line)
+        .attr('fill','none').attr('stroke',e.c)
+        .attr('stroke-width',n==='ghost'?3.5:2.2).attr('stroke-linecap','round')
+        .attr('opacity',n==='ghost'?1:.75).style('cursor','pointer');
+      const last=e.pts[e.pts.length-1];
+      labels[n]=svg.append('text').attr('class','line-label').attr('fill',e.c)
+        .attr('x',x(2020)+8).attr('y',y(last[1])+4).text(n);
+    });
+    /* de-overlap end labels: sort by y, enforce 15px min gap */
+    {
+      const order=[...names].sort((a,b)=>+labels[a].attr('y')-+labels[b].attr('y'));
+      let prev=-1e9;
+      order.forEach(n=>{
+        const yv=Math.max(+labels[n].attr('y'), prev+15);
+        labels[n].attr('y',yv); prev=yv;
+      });
+    }
+    const focus=(n)=>{
+      names.forEach(k=>{paths[k].attr('opacity',k===n?1:.12);labels[k].attr('opacity',k===n?1:.25);});
+    };
+    const unfocus=()=>{names.forEach(k=>{paths[k].attr('opacity',k==='ghost'?1:.75);labels[k].attr('opacity',1);});};
+    names.forEach(n=>{
+      paths[n].on('mousemove',ev=>{focus(n);
+        const yr=Math.round(x.invert(d3.pointer(ev,svg.node())[0])/10)*10;
+        const pt=CENSUS[n].pts.find(p=>p[0]===Math.min(2020,Math.max(1950,yr)));
+        showTip(`<b>${n}</b><br>${pt?pt[1]+'% of posters · '+pt[0]+'s':''}`,ev);})
+        .on('mouseleave',()=>{unfocus();hideTip();});
+    });
+    [["the spiritualist 1920s: ghosts, 12%",1922,12.4,'#e8e4da','start'],['1954: the atomic age',1955,5.4,'#e5a00d','middle'],
+     ['the occult turn',1970,7.8,'#7b5ea7','middle'],['the slasher',1984,7.4,'#c1121f','middle'],
+     ['the zombie boom',2003,6.7,'#5a7a3d','middle'],
+     ['…and the ghost returns to the throne',2005,9.6,'#e8e4da','middle']].forEach(a=>{
+      svg.append('text').attr('class','annot').attr('fill',a[3]).attr('text-anchor',a[4])
+        .attr('x',x(a[1])).attr('y',y(a[2])).text(a[0]);});
+    onEnter('census',()=>names.forEach((n,i)=>setTimeout(()=>drawIn(paths[n],1400),i*220)));
+  }
+}
+
+/* ============ legacy fallback charts (offline, no D3) ============ */
+function legacyCharts(){
 /* --- color river: stacked bars per decade --- */
 (function(){
   const svg=document.getElementById('river'),W=960,H=380,m={t:20,r:20,b:40,l:20};
@@ -379,47 +1210,109 @@ function el(t,a){const n=document.createElementNS(NS,t);for(const k in a)n.setAt
 /* --- darkness curve --- */
 (function(){
   const svg=document.getElementById('darkness'),W=960,H=400,m={t:30,r:30,b:40,l:50};
-  /* REAL PILOT DATA: mean L* per year, 5-yr rolling (n=1,000, TMDB) */
-  const pts=[[1950,34.5],[1955,48.0],[1960,44.2],[1965,44.0],[1970,46.8],[1975,39.0],[1980,35.7],[1985,32.9],[1990,37.4],[1995,34.0],[2000,34.1],[2005,31.9],[2010,30.2],[2015,29.9],[2020,26.3],[2022,26.3]];
-  const x=y=>m.l+(y-1950)/(2022-1950)*(W-m.l-m.r);
-  const yy=v=>m.t+(55-v)/(55-20)*(H-m.t-m.b);
-  [20,25,30,35,40,45,50,55].forEach(v=>{
+  /* FULL CENTURY: mean L* per year, 5-yr rolling (n=28,698, TMDB) */
+  const pts=[[1925,42.7],[1930,39.6],[1935,44.3],[1940,45.2],[1945,46.5],[1950,40.5],[1955,47.6],[1960,47.1],[1965,47.4],[1970,44.8],[1975,41.8],[1980,37.6],[1985,36.2],[1990,36.6],[1995,35.7],[2000,33.3],[2005,32.2],[2010,31.9],[2015,30.7],[2020,28.9],[2022,28.8]];
+  const x=y=>m.l+(y-1925)/(2022-1925)*(W-m.l-m.r);
+  const yy=v=>m.t+(52-v)/(52-25)*(H-m.t-m.b);
+  [25,30,35,40,45,50].forEach(v=>{
     svg.appendChild(el('line',{x1:m.l,x2:W-m.r,y1:yy(v),y2:yy(v),class:'axis'}));
     const t=el('text',{x:m.l-8,y:yy(v)+4,'text-anchor':'end',class:'tick-label'});t.textContent=v;svg.appendChild(t);
   });
-  [1950,1960,1970,1980,1990,2000,2010,2022].forEach(v=>{
+  [1925,1940,1955,1970,1985,2000,2015,2022].forEach(v=>{
     const t=el('text',{x:x(v),y:H-14,'text-anchor':'middle',class:'tick-label'});t.textContent=v;svg.appendChild(t);
   });
   const d='M'+pts.map(p=>`${x(p[0])},${yy(p[1])}`).join(' L');
-  svg.appendChild(el('path',{d:d+` L${x(2022)},${yy(20)} L${x(1950)},${yy(20)} Z`,fill:'rgba(229,160,13,.08)'}));
+  svg.appendChild(el('path',{d:d+` L${x(2022)},${yy(25)} L${x(1925)},${yy(25)} Z`,fill:'rgba(229,160,13,.08)'}));
   svg.appendChild(el('path',{d,fill:'none',stroke:'#e5a00d','stroke-width':3,'stroke-linecap':'round'}));
-  [[1975,'The occult slide begins',43,1975,39],[1985,'Slasher black',28.5,1985,32.9],[2020,'Darkest on record — the light never came back',23,2020,26.3]].forEach(a=>{
+  [[1930,'Expressionist shadow',37.5,1930,39.6],[1975,'The occult slide begins',45.8,1975,41.8],[1982,'Slasher black: steepest fall',31,1982,37],[2020,'Darkest on record — the light never came back',26.5,2020,28.9]].forEach(a=>{
     svg.appendChild(el('line',{x1:x(a[3]),x2:x(a[3]),y1:yy(a[4]),y2:yy(a[2])+14,class:'annot-line'}));
-    const t=el('text',{x:Math.min(x(a[3]),W-260),y:yy(a[2]),'text-anchor':'middle',class:'annot'});t.textContent=a[1];svg.appendChild(t);
+    const t=el('text',{x:Math.min(x(a[3]),W-280),y:yy(a[2]),'text-anchor':'middle',class:'annot'});t.textContent=a[1];svg.appendChild(t);
   });
 })();
 
 /* --- rise of red --- */
 (function(){
   const svg=document.getElementById('red'),W=960,H=340,m={t:30,r:30,b:40,l:50};
-  /* REAL PILOT DATA: % blood-red pixels per year, 5-yr rolling (n=1,000, TMDB) */
-  const pts=[[1950,8.5],[1955,10.7],[1960,10.3],[1965,8.8],[1970,11.1],[1975,12.1],[1980,11.8],[1985,13.5],[1990,11.4],[1995,15.7],[2000,12.1],[2005,10.6],[2010,16.0],[2015,9.7],[2020,10.8],[2022,10.8]];
-  const x=y=>m.l+(y-1950)/(2022-1950)*(W-m.l-m.r);
-  const yy=v=>m.t+(18-v)/(18-0)*(H-m.t-m.b);
+  /* FULL CENTURY: % blood-red pixels per year, 5-yr rolling (n=28,698, TMDB) */
+  const pts=[[1925,5.4],[1930,3.9],[1935,7.1],[1940,7.4],[1945,9.2],[1950,7.1],[1955,10.7],[1960,11.8],[1965,11.7],[1970,12.6],[1975,11.5],[1980,11.2],[1985,11.6],[1990,12.2],[1995,13.2],[2000,13.3],[2005,12.7],[2010,10.3],[2015,10.4],[2020,10.9],[2022,10.8]];
+  const x=y=>m.l+(y-1925)/(2022-1925)*(W-m.l-m.r);
+  const yy=v=>m.t+(15-v)/(15-0)*(H-m.t-m.b);
   [0,5,10,15].forEach(v=>{
     svg.appendChild(el('line',{x1:m.l,x2:W-m.r,y1:yy(v),y2:yy(v),class:'axis'}));
     const t=el('text',{x:m.l-8,y:yy(v)+4,'text-anchor':'end',class:'tick-label'});t.textContent=v+'%';svg.appendChild(t);
   });
-  [1950,1960,1970,1980,1990,2000,2010,2022].forEach(v=>{
+  [1925,1940,1955,1970,1985,2000,2015].forEach(v=>{
     const t=el('text',{x:x(v),y:H-14,'text-anchor':'middle',class:'tick-label'});t.textContent=v;svg.appendChild(t);
   });
   const line='M'+pts.map(p=>`${x(p[0])},${yy(p[1])}`).join(' L');
-  svg.appendChild(el('path',{d:line+` L${x(2022)},${yy(0)} L${x(1950)},${yy(0)} Z`,fill:'rgba(193,18,31,.35)'}));
+  svg.appendChild(el('path',{d:line+` L${x(2022)},${yy(0)} L${x(1925)},${yy(0)} Z`,fill:'rgba(193,18,31,.35)'}));
   svg.appendChild(el('path',{d:line,fill:'none',stroke:'#c1121f','stroke-width':3,'stroke-linecap':'round'}));
-  [[1985,'Slasher era',14.2,1985],[1996,'Meta-horror peak',16.4,1995],[2010,'Torture-porn red',16.7,2010]].forEach(a=>{
+  [[1932,'Before blood: 4%',5.8,1932],[1970,'Occult red',13.4,1970],[1985,'The slasher never led',10.4,1985],[1999,'All-time peak: meta-horror',14.1,1999]].forEach(a=>{
     const t=el('text',{x:x(a[3]),y:yy(a[2])-8,'text-anchor':'middle',class:'annot'});t.textContent=a[1];svg.appendChild(t);
   });
 })();
+
+/* --- the floating head: % posters with a detectable face --- */
+(function(){
+  const svg=document.getElementById('faces'),W=960,H=340,m={t:30,r:30,b:40,l:50};
+  /* FULL CENTURY: % posters with >=1 face, 5-yr rolling (n=28,698, YuNet) */
+  const pts=[[1920,67.4],[1925,54.0],[1930,62.4],[1935,67.8],[1940,76.9],[1945,84.7],[1950,76.1],[1955,77.0],[1960,74.0],[1965,66.5],[1970,65.1],[1975,64.5],[1980,62.1],[1985,65.9],[1990,68.5],[1995,66.7],[2000,65.5],[2005,56.5],[2010,57.4],[2015,54.1],[2020,49.7],[2022,48.2]];
+  const x=y=>m.l+(y-1920)/(2022-1920)*(W-m.l-m.r);
+  const yy=v=>m.t+(90-v)/(90-40)*(H-m.t-m.b);
+  [40,50,60,70,80,90].forEach(v=>{
+    svg.appendChild(el('line',{x1:m.l,x2:W-m.r,y1:yy(v),y2:yy(v),class:'axis'}));
+    const t=el('text',{x:m.l-8,y:yy(v)+4,'text-anchor':'end',class:'tick-label'});t.textContent=v+'%';svg.appendChild(t);
+  });
+  [1920,1940,1960,1980,2000,2022].forEach(v=>{
+    const t=el('text',{x:x(v),y:H-14,'text-anchor':'middle',class:'tick-label'});t.textContent=v;svg.appendChild(t);
+  });
+  const line='M'+pts.map(p=>`${x(p[0])},${yy(p[1])}`).join(' L');
+  svg.appendChild(el('path',{d:line+` L${x(2022)},${yy(40)} L${x(1920)},${yy(40)} Z`,fill:'rgba(232,228,218,.06)'}));
+  svg.appendChild(el('path',{d:line,fill:'none',stroke:'#e8e4da','stroke-width':3,'stroke-linecap':'round'}));
+  [[1997,'1997: fewer faces, bigger faces',70.5,1997],[2018,'fewer than half',46,2018]].forEach(a=>{
+    const t=el('text',{x:x(a[3]),y:yy(a[2])-8,'text-anchor':'middle',class:'annot'});t.textContent=a[1];svg.appendChild(t);
+  });
+})();
+
+/* --- legacy: the quieting + symmetry (static) --- */
+(function(){
+  const mk=(id,pts,dom,fmt,color)=>{
+    const svg=document.getElementById(id),W=960,H=340,m={t:30,r:30,b:40,l:50};
+    const x=v=>m.l+(v-1920)/(2022-1920)*(W-m.l-m.r);
+    const yy=v=>m.t+(dom[1]-v)/(dom[1]-dom[0])*(H-m.t-m.b);
+    [1920,1940,1960,1980,2000,2022].forEach(v=>{
+      const t=el('text',{x:x(v),y:H-14,'text-anchor':'middle',class:'tick-label'});t.textContent=v;svg.appendChild(t);});
+    const steps=4,st=(dom[1]-dom[0])/steps;
+    for(let i=0;i<=steps;i++){const v=dom[0]+i*st;
+      svg.appendChild(el('line',{x1:m.l,x2:W-m.r,y1:yy(v),y2:yy(v),class:'axis'}));
+      const t=el('text',{x:m.l-8,y:yy(v)+4,'text-anchor':'end',class:'tick-label'});t.textContent=fmt(v);svg.appendChild(t);}
+    const d='M'+pts.map(p=>`${x(p[0])},${yy(p[1])}`).join(' L');
+    svg.appendChild(el('path',{d,fill:'none',stroke:color,'stroke-width':3,'stroke-linecap':'round'}));
+  };
+  mk('quiet',[[1920,26.9],[1925,27.2],[1930,28.7],[1935,31.2],[1940,32.5],[1945,32.8],[1950,31.2],[1955,36.1],[1960,34.7],[1965,31.8],[1970,29.4],[1975,29.1],[1980,28.5],[1985,28.6],[1990,28.2],[1995,26.7],[2000,25.4],[2005,25.8],[2010,24.9],[2015,22.6],[2020,18.8],[2022,18.5]],[15,40],v=>Math.round(v)+'%','#e5a00d');
+  mk('symmetry',[[1920,0.795],[1925,0.805],[1930,0.81],[1935,0.789],[1940,0.779],[1945,0.748],[1950,0.786],[1955,0.764],[1960,0.769],[1965,0.783],[1970,0.801],[1975,0.812],[1980,0.817],[1985,0.816],[1990,0.814],[1995,0.813],[2000,0.821],[2005,0.82],[2010,0.826],[2015,0.849],[2020,0.869],[2022,0.87]],[0.73,0.89],v=>v.toFixed(2),'#e8e4da');
+})();
+
+/* --- legacy: monster census (static multi-line) --- */
+(function(){
+  const svg=document.getElementById('census'),W=960,H=420,m={t:30,r:150,b:40,l:50};
+  const S={"witch":["#7b5ea7",[[1920,2.1],[1930,0.4],[1940,1.9],[1950,1.7],[1960,3.6],[1970,7.1],[1980,3.8],[1990,3.3],[2000,1.9],[2010,1.4],[2020,2.4]]],
+    "masked killer":["#c1121f",[[1920,1.4],[1930,2.6],[1940,3.1],[1950,5.0],[1960,4.5],[1970,5.6],[1980,6.8],[1990,6.0],[2000,4.1],[2010,3.3],[2020,3.5]]],
+    "zombie":["#5a7a3d",[[1920,0.0],[1930,0.0],[1940,2.3],[1950,1.7],[1960,2.1],[1970,1.5],[1980,1.8],[1990,2.0],[2000,6.0],[2010,5.1],[2020,2.9]]],
+    "ghost":["#e8e4da",[[1920,12.3],[1930,3.9],[1940,9.7],[1950,1.7],[1960,2.9],[1970,2.2],[1980,2.9],[1990,4.3],[2000,6.0],[2010,6.1],[2020,8.1]]]};
+  const x=v=>m.l+(v-1920)/(2020-1920)*(W-m.l-m.r);
+  const yy=v=>m.t+(13-v)/13*(H-m.t-m.b);
+  [0,3,6,9,12].forEach(v=>{svg.appendChild(el('line',{x1:m.l,x2:W-m.r,y1:yy(v),y2:yy(v),class:'axis'}));
+    const t=el('text',{x:m.l-8,y:yy(v)+4,'text-anchor':'end',class:'tick-label'});t.textContent=v+'%';svg.appendChild(t);});
+  [1920,1940,1960,1980,2000,2020].forEach(v=>{const t=el('text',{x:x(v),y:H-14,'text-anchor':'middle',class:'tick-label'});t.textContent=v;svg.appendChild(t);});
+  for(const n in S){const [c,pts]=S[n];
+    svg.appendChild(el('path',{d:'M'+pts.map(p=>`${x(p[0])},${yy(p[1])}`).join(' L'),fill:'none',stroke:c,'stroke-width':2.5}));
+    const t=el('text',{x:x(2020)+8,y:yy(pts[pts.length-1][1])+4,class:'line-label',fill:c});t.textContent=n;svg.appendChild(t);}
+})();
+}
+
+/* D3 charts online, hand-rolled SVG offline */
+if(window.d3){d3Charts();}else{legacyCharts();}
 </script>
 </body>
 </html>
