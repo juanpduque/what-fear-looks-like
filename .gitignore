@@ -9,6 +9,9 @@ __pycache__/
 # pretrained model weights (auto-downloaded by open_clip; too large for git)
 pipeline/models/*.pt
 
+# resumable-run checkpoints (not final outputs)
+pipeline/data/*_partial.csv
+
 # keep the small outputs
 !pipeline/data/yearly.json
 !pipeline/data/posters.csv
