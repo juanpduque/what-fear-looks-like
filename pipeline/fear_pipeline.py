@@ -22,9 +22,14 @@ Usage:
   python fear_pipeline.py --n 200         # smaller/faster
   python fear_pipeline.py --all           # full dataset (~30k posters, ~1GB)
 
-TMDB API key (optional, only to refresh the film list beyond 2022):
-  python fear_pipeline.py --refresh --api-key YOUR_KEY
+TMDB API key (optional):
+  python fear_pipeline.py --refresh  --api-key YOUR_KEY   # films after 2022
+  python fear_pipeline.py --backfill --api-key YOUR_KEY   # films 1920-1949
+  (both flags can be combined with --all)
 Attribution: this product uses the TMDB API but is not endorsed by TMDB.
+
+Outputs: data/posters.csv, data/yearly.json, data/hue_river.json (Color River),
+data/darkness_curve.png, and a Continue/Pivot verdict in the console.
 """
 import argparse, io, json, math, os, sys, time
 from concurrent.futures import ThreadPoolExecutor, as_completed
@@ -102,6 +107,17 @@ def analyze_poster(img_bytes, rng):
     red = ((h >= 345) | (h <= 15)) & (s > 0.4) & (v > 0.15)    # blood red
     red_share = float(red.mean())
 
+    # hue-family shares (feeds the Color River chart)
+    dark_or_grey = (v < 0.12) | (lab[:, 0] < 15) | (s < 0.15)
+    chrom = ~dark_or_grey
+    def band(lo, hi):
+        m = ((h >= lo) | (h < hi)) if lo > hi else ((h >= lo) & (h < hi))
+        return round(float((m & chrom).mean()), 4)
+    bands = dict(band_red=band(345, 15), band_warm=band(15, 70),
+                 band_green=band(70, 170), band_blue=band(170, 260),
+                 band_purple=band(260, 345),
+                 band_dark=round(float(dark_or_grey.mean()), 4))
+
     # saturation-weighted k-means palette (ACM "Colour of Horror" method)
     w = 0.25 + s                                # keep some weight on neutrals
     idx = rng.choice(len(px), size=min(4000, len(px)), p=w / w.sum())
@@ -113,7 +129,7 @@ def analyze_poster(img_bytes, rng):
 
     return dict(brightness=round(brightness, 2), dark_share=round(dark_share, 4),
                 saturation=round(saturation, 4), red_share=round(red_share, 4),
-                palette=palette, palette_share=pal_share)
+                palette=palette, palette_share=pal_share, **bands)
 
 # ---------------------------- dataset ----------------------------------------
 def load_dataset():
@@ -149,22 +165,38 @@ def stratified_sample(df, n):
              .apply(lambda g: g.sample(min(len(g), per), random_state=42)))
     return out
 
-def refresh_from_api(api_key, pages=50):
-    """Optional: pull recent horror films from TMDB discover API."""
-    rows = []
-    for page in range(1, pages + 1):
+def discover(api_key, date_gte=None, date_lte=None, max_pages=500):
+    """Pull horror films from TMDB discover API, optionally within a date range."""
+    rows, page, total = [], 1, 1
+    while page <= min(total, max_pages):
+        params = dict(api_key=api_key, with_genres=27, page=page,
+                      sort_by="primary_release_date.asc")
+        if date_gte: params["primary_release_date.gte"] = date_gte
+        if date_lte: params["primary_release_date.lte"] = date_lte
         r = requests.get("https://api.themoviedb.org/3/discover/movie",
-                         params=dict(api_key=api_key, with_genres=27,
-                                     sort_by="primary_release_date.desc", page=page),
-                         headers=HEADERS, timeout=30)
+                         params=params, headers=HEADERS, timeout=30)
         r.raise_for_status()
-        for m in r.json().get("results", []):
+        j = r.json()
+        total = j.get("total_pages", 1)
+        for m in j.get("results", []):
             rows.append(dict(id=m["id"], title=m["title"],
                              release_date=m.get("release_date"),
                              poster_path=m.get("poster_path"),
                              vote_average=m.get("vote_average")))
+        page += 1
         time.sleep(0.05)
-    return pd.DataFrame(rows).dropna(subset=["poster_path", "release_date"])
+    df = pd.DataFrame(rows)
+    return df.dropna(subset=["poster_path", "release_date"]) if len(df) else df
+
+def refresh_from_api(api_key):
+    """Films released after the base dataset's cutoff (2022-09 onward)."""
+    print("API refresh: pulling post-2022 horror films...")
+    return discover(api_key, date_gte="2022-09-01")
+
+def backfill_from_api(api_key):
+    """Films 1920-1949, missing from the base dataset."""
+    print("API backfill: pulling 1920-1949 horror films...")
+    return discover(api_key, date_gte="1920-01-01", date_lte="1949-12-31")
 
 # ---------------------------- download + run ---------------------------------
 def fetch_poster(row):
@@ -186,21 +218,28 @@ def main():
     ap.add_argument("--n", type=int, default=1000, help="sample size (stratified by decade)")
     ap.add_argument("--all", action="store_true", help="run the full dataset")
     ap.add_argument("--workers", type=int, default=12)
-    ap.add_argument("--refresh", action="store_true", help="also pull recent films from TMDB API")
+    ap.add_argument("--refresh", action="store_true", help="pull post-2022 films from TMDB API")
+    ap.add_argument("--backfill", action="store_true", help="pull 1920-1949 films from TMDB API")
     ap.add_argument("--api-key", default=os.environ.get("TMDB_API_KEY"))
     args = ap.parse_args()
 
     POSTERS.mkdir(parents=True, exist_ok=True)
     df = load_dataset()
-    if args.refresh:
+    extras = []
+    if args.refresh or args.backfill:
         if not args.api_key:
-            sys.exit("--refresh requires --api-key or TMDB_API_KEY env var")
-        extra = refresh_from_api(args.api_key)
+            sys.exit("--refresh/--backfill require --api-key or TMDB_API_KEY env var")
+        if args.refresh:  extras.append(refresh_from_api(args.api_key))
+        if args.backfill: extras.append(backfill_from_api(args.api_key))
+    for extra in extras:
+        if extra.empty: continue
         extra["year"] = pd.to_datetime(extra.release_date, errors="coerce").dt.year
         extra = extra.dropna(subset=["year"]); extra["year"] = extra.year.astype(int)
+        extra = extra[(extra.year >= 1920) & (extra.year <= 2026)]
         extra["decade"] = (extra.year // 10) * 10
         df = pd.concat([df, extra]).drop_duplicates("id")
-        print(f"After API refresh: {len(df):,} films")
+    if extras:
+        print(f"After API refresh/backfill: {len(df):,} films")
 
     sample = df if args.all else stratified_sample(df, args.n)
     print(f"Analyzing {len(sample):,} posters...")
@@ -244,6 +283,15 @@ def main():
                       red_share=("red_share", "mean"))
                  .round(4).reset_index())
     yearly.to_json(OUT / "yearly.json", orient="records")
+
+    # Color River: mean hue-family share per decade
+    res["decade"] = (res.year // 10) * 10
+    band_cols = ["band_red", "band_warm", "band_green", "band_blue",
+                 "band_purple", "band_dark"]
+    river = res.groupby("decade")[band_cols].mean().round(4)
+    river["n"] = res.groupby("decade").size()
+    river.reset_index().to_json(OUT / "hue_river.json", orient="records")
+    print(f"Color River data: {OUT/'hue_river.json'}")
 
     # ---- Continue / Pivot checkpoint ----
     dec = res.copy(); dec["decade"] = (dec.year // 10) * 10
