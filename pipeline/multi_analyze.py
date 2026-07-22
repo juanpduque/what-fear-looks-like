@@ -48,7 +48,12 @@ def metric(name, cols):
 def _mser_text_boxes(gray):
     """Filtered MSER glyph candidates: small-to-medium, wider than tall or
     roughly square. Heuristic, not OCR: trend-comparable across eras, not
-    absolute truth. Shared by typography() and grid_alignment()."""
+    absolute truth. Shared by typography() and grid_alignment().
+
+    Title *overlays* are NOT derived here — see title_boxes.py (EasyOCR +
+    TMDB title match). Billboard glyphs often exceed these caps; mid-sheet
+    texture fools MSER into false title boxes.
+    """
     mser = cv2.MSER_create(delta=5, min_area=15, max_area=2000)
     regions, _ = mser.detectRegions(gray)
     H, W = gray.shape
@@ -81,16 +86,22 @@ def composition(bgr, gray):
 
 @metric("typography", cols=["text_area", "text_y", "text_regions"])
 def typography(bgr, gray):
-    """Text coverage and placement via MSER text-region detection."""
+    """Text coverage via MSER — decade trends only.
+
+    Per-poster title boxes (text_x/top/w/h) come from title_boxes.py
+    (EasyOCR). Re-running this metric must not overwrite those columns.
+    """
     H, W = gray.shape
     boxes = _mser_text_boxes(gray)
     mask = np.zeros((H, W), np.uint8)
     for x, y, w, h in boxes:
-        mask[y:y+h, x:x+w] = 1
+        mask[y:y + h, x:x + w] = 1
     area = float(mask.mean())
     ys = np.where(mask.any(axis=1))[0]
     ty = float(ys.mean() / H) if len(ys) else -1.0   # 0=top, 1=bottom
-    return dict(text_area=round(area, 4), text_y=round(ty, 4), text_regions=len(boxes))
+    return dict(
+        text_area=round(area, 4), text_y=round(ty, 4), text_regions=len(boxes),
+    )
 
 @metric("grid", cols=["align_score", "thirds_dist", "n_blocks"])
 def grid_alignment(bgr, gray):
@@ -207,6 +218,61 @@ def aesthetic(bgr, gray):
 
     return dict(balance=balance, harmony=harmony)
 
+@metric("diagonal", cols=["diagonal_score", "pyramid_shift"])
+def diagonal_pyramid(bgr, gray):
+    """Diagonal composition and triangular/pyramid weight-shift.
+
+    diagonal_score: share of detected line-segment length (Hough transform
+    on Canny edges) that runs at a diagonal angle (25-65 deg from
+    horizontal) rather than near-horizontal/near-vertical. Higher = more
+    of the poster's linework reads as diagonal (a blade, a body pose, a
+    slanted logo). Validated by eye against hand-inspected artwork
+    (Creature from the Black Lagoon, Halloween's knife) -- see README; a
+    real share of what it catches is stylized title lettering, not just
+    figure composition, so treat it as "diagonal linework" broadly, not
+    strictly "diagonal figure pose".
+
+    pyramid_shift: energy-weighted horizontal spread of the bottom third of
+    the poster minus the top third. Positive = wider "base" at the bottom,
+    narrower "apex" at top -- the classic pyramid arrangement (King Kong's
+    fanned crowd below, Kong's head above). Negative = the opposite, an
+    inverted-pyramid/funnel shape (Halloween's black void swallowing the
+    bottom two-thirds while all the activity crowds the top). This is a
+    coarse proxy, not literal triangle-fitting -- a wide title-text block
+    can shift it on its own, independent of the illustrated figure.
+    """
+    H, W = gray.shape
+
+    edges = cv2.Canny(gray, 60, 140)
+    min_len = int(min(H, W) * 0.12)
+    lines = cv2.HoughLinesP(edges, 1, np.pi / 180, threshold=25,
+                             minLineLength=min_len, maxLineGap=6)
+    diag_len = total_len = 0.0
+    if lines is not None:
+        for x1, y1, x2, y2 in lines[:, 0]:
+            length = float(np.hypot(x2 - x1, y2 - y1))
+            ang = abs(np.degrees(np.arctan2(y2 - y1, x2 - x1))) % 180
+            ang = min(ang, 180 - ang)  # 0=horizontal, 90=vertical
+            total_len += length
+            if 25 <= ang <= 65:
+                diag_len += length
+    diagonal_score = round(diag_len / total_len, 4) if total_len > 0 else 0.0
+
+    gx = cv2.Sobel(gray, cv2.CV_32F, 1, 0); gy = cv2.Sobel(gray, cv2.CV_32F, 0, 1)
+    mag = np.clip(np.hypot(gx, gy) - 15, 0, None)  # suppress low-level texture noise
+    xs = np.arange(W)
+    def band_spread(y0, y1):
+        band = mag[y0:y1].sum(axis=0)
+        tot = band.sum()
+        if tot < 1e-6:
+            return 0.0
+        cx = (xs * band).sum() / tot
+        var = ((xs - cx) ** 2 * band).sum() / tot
+        return 2 * np.sqrt(var) / W
+    pyramid_shift = round(band_spread(2 * H // 3, H) - band_spread(0, H // 3), 4)
+
+    return dict(diagonal_score=diagonal_score, pyramid_shift=pyramid_shift)
+
 # ============================ HARNESS ======================================
 
 def main():
@@ -226,6 +292,13 @@ def main():
     if args.sample:
         meta = meta.groupby(meta.year // 10 * 10, group_keys=False).apply(
             lambda g: g.sample(min(len(g), max(1, args.sample // 8)), random_state=42))
+
+    # Seed the resumable checkpoint from the published attributes.csv when
+    # missing, so a single-metric re-run merges into existing columns instead
+    # of replacing the whole file with only that metric's outputs.
+    final_path = DATA / "attributes.csv"
+    if not CHECKPOINT.exists() and final_path.exists():
+        pd.read_csv(final_path).to_csv(CHECKPOINT, index=False)
 
     done = set()
     if CHECKPOINT.exists():
@@ -273,10 +346,32 @@ def main():
 
     if total >= len(meta) or (args.sample and total >= len(meta)):
         d = pd.read_csv(CHECKPOINT).drop_duplicates("id")
-        d.to_csv(DATA / "attributes.csv", index=False)
+        # Merge into the published table so --metrics typography (etc.) never
+        # wipes composition/grid/aesthetic/diagonal columns that already exist.
+        if final_path.exists():
+            prev = pd.read_csv(final_path).set_index("id")
+            d_idx = d.set_index("id")
+            for c in d_idx.columns:
+                if c not in prev.columns:
+                    prev[c] = np.nan
+            prev.update(d_idx)
+            new_ids = d_idx.loc[~d_idx.index.isin(prev.index)]
+            if len(new_ids):
+                prev = pd.concat([prev, new_ids])
+            d = prev.reset_index()
+        d.to_csv(final_path, index=False)
         d["decade"] = (d.year // 10) * 10
         cols = [c for c in d.columns if c not in ("id", "year", "decade")]
-        agg = d[d[cols].min(axis=1) >= 0].groupby("decade")[cols].mean().round(4)
+        # -1.0 is a per-column "computation failed" sentinel for a subset of
+        # metrics (e.g. harmony on near-monochrome posters) -- mask only
+        # those columns to NaN before averaging. Metrics that are legitimately
+        # signed (pyramid_shift) or non-negative-by-construction (n_blocks,
+        # diagonal_score) must NOT be blanket-filtered on "value >= 0".
+        SENTINEL_COLS = {"align_score", "thirds_dist", "balance", "harmony"}
+        masked = d[cols].copy()
+        for c in SENTINEL_COLS & set(cols):
+            masked[c] = masked[c].where(masked[c] >= 0)
+        agg = masked.groupby(d["decade"])[cols].mean().round(4)
         agg["n"] = d.groupby("decade").size()
         agg.reset_index().to_json(DATA / "attributes_decade.json", orient="records")
         print("\n=== BY DECADE ===")
