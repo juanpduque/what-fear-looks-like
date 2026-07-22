@@ -1,11 +1,14 @@
 #!/usr/bin/env python3
-"""Build a painted-vs-photo label QA page for Custom Labels prep.
+"""Build a medium-label QA page (painted / photo / composite).
 
 Samples ~300 posters: uncertain mid-scores + confident extremes, stratified
 by decade. Writes site/label-qa-painted.html (self-contained + localStorage).
 
+CLIP still proposes a binary painted/photo score for sampling context; the
+human label set is three classes + doubtful.
+
   python3 build_label_qa_painted.py
-  open ../site/label-qa-painted.html   # or any static server
+  open ../site/label-qa-painted.html   # or GitHub Pages
 """
 from __future__ import annotations
 
@@ -60,7 +63,6 @@ def main():
             if isinstance(p, str) and p.startswith("/"):
                 paths[int(r.id)] = p
 
-    # medium already has year; prefer posters title
     df = med.drop(columns=["year"], errors="ignore").merge(post, on="id", how="inner")
     df = df.dropna(subset=["p_painted", "year", "title"])
     df["year"] = df["year"].astype(int)
@@ -114,17 +116,18 @@ HTML_TEMPLATE = r"""<!doctype html>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta name="robots" content="noindex,nofollow">
-<title>Label QA — painted vs photo (__N__)</title>
+<title>Label QA — medium (painted / photo / composite) (__N__)</title>
 <style>
 :root{--bg:#0a0a0c;--bg2:#141416;--ink:#e8e4da;--dim:#9a958a;--line:#2a2a30;
-  --blood:#c1121f;--amber:#e5a00d;--ok:#3d9a6a;--bad:#c1121f;--doubt:#c4a35a}
+  --blood:#c1121f;--amber:#e5a00d;--ok:#3d9a6a;--bad:#c1121f;--doubt:#c4a35a;
+  --comp:#9b7bb8}
 *{box-sizing:border-box}
 body{margin:0;background:var(--bg);color:var(--ink);
   font-family:"Source Serif 4",Georgia,serif;min-height:100vh}
 .wrap{max-width:980px;margin:0 auto;padding:20px 20px 80px}
 .top{display:flex;flex-wrap:wrap;gap:12px 20px;align-items:baseline;
   border-bottom:1px solid var(--line);padding-bottom:14px;margin-bottom:18px}
-h1{font-family:"Anton",Impact,sans-serif;font-size:28px;letter-spacing:.02em;
+h1{font-family:"Anton",Impact,sans-serif;font-size:26px;letter-spacing:.02em;
   text-transform:uppercase;margin:0;font-weight:400}
 .meta{font-family:ui-monospace,Menlo,monospace;font-size:12px;color:var(--dim)}
 .progress{flex:1;min-width:160px;height:6px;background:#1a1a1e;border-radius:3px;overflow:hidden}
@@ -141,23 +144,27 @@ h1{font-family:"Anton",Impact,sans-serif;font-size:28px;letter-spacing:.02em;
   border:1px solid var(--line);margin-right:8px;margin-bottom:8px}
 .badge.painted{color:#f0d9a8;border-color:#6a5630;background:#1a1610}
 .badge.photo{color:#a8c4f0;border-color:#30466a;background:#10141a}
+.badge.composite{color:#d4b8ea;border-color:#5a406e;background:#161018}
 .badge.mid{color:var(--doubt)}
 .badge.painted_hi,.badge.photo_hi{color:var(--dim)}
 .score{font-size:42px;font-family:"Anton",Impact,sans-serif;color:var(--amber);margin:8px 0 4px}
-.hint{color:var(--dim);font-size:14px;line-height:1.45;max-width:36em;margin:0 0 22px}
+.hint{color:var(--dim);font-size:14px;line-height:1.45;max-width:38em;margin:0 0 22px}
+.hint b{color:var(--ink);font-weight:600}
 .actions{display:flex;flex-wrap:wrap;gap:10px;margin:18px 0}
 .actions button{font-family:ui-monospace,Menlo,monospace;font-size:13px;letter-spacing:.04em;
   border:1px solid var(--line);background:var(--bg2);color:var(--ink);padding:12px 16px;
   border-radius:4px;cursor:pointer}
 .actions button:hover{border-color:#555}
-.actions button.ok{border-color:#2d6a4a;color:#8fd4ad}
-.actions button.bad{border-color:#7a1a22;color:#f0a0a8}
+.actions button.painted{border-color:#6a5630;color:#f0d9a8}
+.actions button.photo{border-color:#30466a;color:#a8c4f0}
+.actions button.composite{border-color:#5a406e;color:#d4b8ea}
 .actions button.doubt{border-color:#6a5630;color:#e5c97a}
 .actions button.nav{opacity:.85}
 .keys{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--dim);line-height:1.6}
 kbd{background:#1a1a1e;border:1px solid #333;border-radius:3px;padding:1px 5px;color:var(--ink)}
 .verdict{font-family:ui-monospace,Menlo,monospace;font-size:13px;margin-top:14px;min-height:1.2em}
-.verdict.correct{color:var(--ok)}.verdict.incorrect{color:var(--bad)}.verdict.doubtful{color:var(--doubt)}
+.verdict.painted{color:#f0d9a8}.verdict.photo{color:#a8c4f0}
+.verdict.composite{color:#d4b8ea}.verdict.doubtful{color:var(--doubt)}
 .toolbar{display:flex;flex-wrap:wrap;gap:10px;margin-top:28px;padding-top:16px;border-top:1px solid var(--line)}
 .toolbar button{font-family:ui-monospace,Menlo,monospace;font-size:12px;background:#1a1a1e;
   color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:8px 12px;cursor:pointer}
@@ -173,17 +180,21 @@ kbd{background:#1a1a1e;border:1px solid #333;border-radius:3px;padding:1px 5px;c
 <body>
 <div class="wrap">
   <div class="top">
-    <h1>Painted vs photo</h1>
+    <h1>Medium · 3 clases</h1>
     <span class="meta" id="counter">0 / __N__</span>
     <div class="progress" aria-hidden="true"><i id="bar"></i></div>
   </div>
   <div class="filter" id="filters">
     <button type="button" data-f="all" class="on">all</button>
-    <button type="button" data-f="mid">uncertain mid</button>
-    <button type="button" data-f="painted_hi">confident painted</button>
-    <button type="button" data-f="photo_hi">confident photo</button>
+    <button type="button" data-f="mid">CLIP mid</button>
+    <button type="button" data-f="painted_hi">CLIP painted hi</button>
+    <button type="button" data-f="photo_hi">CLIP photo hi</button>
     <button type="button" data-f="todo">unreviewed</button>
     <button type="button" data-f="done">reviewed</button>
+    <button type="button" data-f="lab_painted">→ painted</button>
+    <button type="button" data-f="lab_photo">→ photo</button>
+    <button type="button" data-f="lab_composite">→ composite</button>
+    <button type="button" data-f="lab_doubtful">→ doubtful</button>
   </div>
   <div class="stage">
     <img class="poster" id="poster" alt="">
@@ -195,31 +206,36 @@ kbd{background:#1a1a1e;border:1px solid #333;border-radius:3px;padding:1px 5px;c
         <span class="badge" id="bandBadge">—</span>
       </div>
       <div class="score" id="score">—</div>
-      <p class="hint">¿La etiqueta propuesta describe el <em>medio</em> del arte (ilustración/pintura vs fotografía)?
-        No juzgues el género ni la calidad — solo painted vs photo. Casos mixtos → doubtful.
-        El progreso se guarda en este navegador; exportá el CSV al terminar.</p>
+      <p class="hint">Elegí el <b>medio del arte</b> (no el género ni la calidad):
+        <b>painted</b> = ilustración/pintura/dibujo como arte principal;
+        <b>photo</b> = fotografía predominante, edición liviana (crop, color, tipo);
+        <b>composite</b> = foto recognoscible <em>y</em> intervención fuerte (collage, paint-over, morph, digital mezclado).
+        Regla: si quitás la foto, ¿sigue siendo el mismo póster? Si no → composite.
+        <b>doubtful</b> solo si es ilegible. El progreso es local a este navegador; exportá el CSV al terminar.</p>
       <div class="actions">
-        <button type="button" class="ok" id="btnOk" title="1">1 · Correcta</button>
-        <button type="button" class="bad" id="btnBad" title="2">2 · Incorrecta (flip)</button>
-        <button type="button" class="doubt" id="btnDoubt" title="3">3 · Dudosa</button>
+        <button type="button" class="painted" id="btnPainted" title="1">1 · painted</button>
+        <button type="button" class="photo" id="btnPhoto" title="2">2 · photo</button>
+        <button type="button" class="composite" id="btnComposite" title="3">3 · composite</button>
+        <button type="button" class="doubt" id="btnDoubt" title="4">4 · doubtful</button>
         <button type="button" class="nav" id="btnPrev" title="←">← Prev</button>
         <button type="button" class="nav" id="btnNext" title="→">Next →</button>
       </div>
       <div class="verdict" id="verdict"></div>
-      <p class="keys">Atajos: <kbd>1</kbd> correcta · <kbd>2</kbd> incorrecta · <kbd>3</kbd> dudosa ·
+      <p class="keys">Atajos: <kbd>1</kbd> painted · <kbd>2</kbd> photo · <kbd>3</kbd> composite · <kbd>4</kbd> doubtful ·
         <kbd>←</kbd><kbd>→</kbd> navegar · <kbd>U</kbd> deshacer</p>
     </div>
   </div>
   <div class="toolbar">
-    <button type="button" id="btnExport">Exportar CSV (veredictos)</button>
-    <button type="button" id="btnGold">Exportar gold set (solo correctas)</button>
+    <button type="button" id="btnExport">Exportar CSV (todos)</button>
+    <button type="button" id="btnGold">Exportar gold (sin doubtful)</button>
     <button type="button" id="btnClear">Borrar progreso local</button>
     <span class="status" id="status"></span>
   </div>
 </div>
 <script>
 const DATA = __DATA__;
-const STORE = "aof-label-qa-painted-v1";
+const STORE = "aof-label-qa-medium-v2";
+const LABELS = ["painted","photo","composite","doubtful"];
 let filter = "all";
 let idx = 0;
 let verdicts = {};
@@ -235,6 +251,10 @@ function filtered(){
     if(filter==="photo_hi") return d.band==="photo_hi";
     if(filter==="todo") return !v;
     if(filter==="done") return !!v;
+    if(filter==="lab_painted") return v && v.final==="painted";
+    if(filter==="lab_photo") return v && v.final==="photo";
+    if(filter==="lab_composite") return v && v.final==="composite";
+    if(filter==="lab_doubtful") return v && v.final==="doubtful";
     return true;
   });
 }
@@ -249,6 +269,7 @@ function show(){
   if(!list.length){
     document.getElementById("title").textContent = "No hay posters en este filtro";
     document.getElementById("poster").removeAttribute("src");
+    document.getElementById("verdict").textContent = "";
     return;
   }
   if(idx >= list.length) idx = list.length - 1;
@@ -260,19 +281,20 @@ function show(){
   document.getElementById("title").textContent = d.title;
   document.getElementById("year").textContent = d.year + " · id " + d.id;
   const pb = document.getElementById("propBadge");
-  pb.textContent = "proposed: " + d.proposed;
+  pb.textContent = "CLIP binary: " + d.proposed;
   pb.className = "badge " + d.proposed;
   const bb = document.getElementById("bandBadge");
-  bb.textContent = d.band.replace("_"," ");
+  bb.textContent = "band " + d.band.replace("_"," ");
   bb.className = "badge " + d.band;
   document.getElementById("score").textContent = "p_painted " + d.p.toFixed(3);
   const v = verdicts[d.id];
   const verd = document.getElementById("verdict");
   if(!v){ verd.textContent = "Sin revisar"; verd.className = "verdict"; }
   else {
-    const flip = v.verdict==="incorrect" ? (" → " + (d.proposed==="painted"?"photo":"painted")) : "";
-    verd.textContent = v.verdict + flip + (v.final ? " · final=" + v.final : "");
-    verd.className = "verdict " + v.verdict;
+    const agree = (v.final===d.proposed) ? " · coincide CLIP" :
+      (v.final==="composite" || v.final==="doubtful") ? "" : " · ≠ CLIP";
+    verd.textContent = "label: " + v.final + agree;
+    verd.className = "verdict " + v.final;
   }
   document.getElementById("counter").textContent = (idx+1) + " / " + list.length + "  (set " + DATA.length + ")";
   const done = DATA.filter(x => verdicts[x.id]).length;
@@ -280,20 +302,17 @@ function show(){
   updateStatus();
 }
 
-function setVerdict(kind){
+function setLabel(final){
   const list = filtered();
   if(!list.length) return;
+  if(!LABELS.includes(final)) return;
   const d = list[idx];
-  let final = d.proposed;
-  if(kind==="incorrect") final = d.proposed==="painted" ? "photo" : "painted";
-  if(kind==="doubtful") final = "";
   verdicts[d.id] = {
     id: d.id, title: d.title, year: d.year, p: d.p,
     proposed: d.proposed, band: d.band,
-    verdict: kind, final: final, ts: Date.now()
+    final: final, ts: Date.now()
   };
   save();
-  // advance
   if(idx < list.length - 1) idx++;
   show();
 }
@@ -309,19 +328,22 @@ function undo(){
 function updateStatus(){
   const n = DATA.length;
   const done = DATA.filter(d => verdicts[d.id]).length;
-  const ok = DATA.filter(d => verdicts[d.id]?.verdict==="correct").length;
-  const bad = DATA.filter(d => verdicts[d.id]?.verdict==="incorrect").length;
-  const doubt = DATA.filter(d => verdicts[d.id]?.verdict==="doubtful").length;
+  const counts = Object.fromEntries(LABELS.map(l => [l, 0]));
+  Object.values(verdicts).forEach(v => { if(counts[v.final]!=null) counts[v.final]++; });
   document.getElementById("status").textContent =
-    done + "/" + n + " · ok " + ok + " · flip " + bad + " · doubt " + doubt;
+    done + "/" + n +
+    " · painted " + counts.painted +
+    " · photo " + counts.photo +
+    " · composite " + counts.composite +
+    " · doubt " + counts.doubtful;
 }
 
 function toCSV(rows){
-  const cols = ["id","title","year","p_painted","proposed","band","verdict","final_label"];
+  const cols = ["id","title","year","p_painted","clip_proposed","band","final_label"];
   const esc = s => '"' + String(s).replace(/"/g,'""') + '"';
   const lines = [cols.join(",")];
   rows.forEach(r => {
-    lines.push([r.id, esc(r.title), r.year, r.p, r.proposed, r.band, r.verdict, r.final||""].join(","));
+    lines.push([r.id, esc(r.title), r.year, r.p, r.proposed, r.band, r.final||""].join(","));
   });
   return lines.join("\n");
 }
@@ -334,20 +356,21 @@ function download(name, text){
   URL.revokeObjectURL(a.href);
 }
 
-document.getElementById("btnOk").onclick = () => setVerdict("correct");
-document.getElementById("btnBad").onclick = () => setVerdict("incorrect");
-document.getElementById("btnDoubt").onclick = () => setVerdict("doubtful");
+document.getElementById("btnPainted").onclick = () => setLabel("painted");
+document.getElementById("btnPhoto").onclick = () => setLabel("photo");
+document.getElementById("btnComposite").onclick = () => setLabel("composite");
+document.getElementById("btnDoubt").onclick = () => setLabel("doubtful");
 document.getElementById("btnPrev").onclick = () => { idx--; show(); };
 document.getElementById("btnNext").onclick = () => { idx++; show(); };
 document.getElementById("btnExport").onclick = () => {
   const rows = Object.values(verdicts);
-  if(!rows.length){ alert("Aún no hay veredictos"); return; }
-  download("label_qa_painted.csv", toCSV(rows));
+  if(!rows.length){ alert("Aún no hay labels"); return; }
+  download("label_qa_medium.csv", toCSV(rows));
 };
 document.getElementById("btnGold").onclick = () => {
-  const rows = Object.values(verdicts).filter(v => v.verdict==="correct" && v.final);
-  if(!rows.length){ alert("No hay correctas aún"); return; }
-  download("label_qa_painted_gold.csv", toCSV(rows));
+  const rows = Object.values(verdicts).filter(v => v.final && v.final!=="doubtful");
+  if(!rows.length){ alert("No hay gold aún (painted/photo/composite)"); return; }
+  download("label_qa_medium_gold.csv", toCSV(rows));
 };
 document.getElementById("btnClear").onclick = () => {
   if(confirm("¿Borrar todo el progreso guardado en este navegador?")){
@@ -363,9 +386,10 @@ document.getElementById("filters").onclick = (e) => {
 };
 document.addEventListener("keydown", (e) => {
   if(e.target.matches("input,textarea")) return;
-  if(e.key==="1") setVerdict("correct");
-  else if(e.key==="2") setVerdict("incorrect");
-  else if(e.key==="3") setVerdict("doubtful");
+  if(e.key==="1") setLabel("painted");
+  else if(e.key==="2") setLabel("photo");
+  else if(e.key==="3") setLabel("composite");
+  else if(e.key==="4") setLabel("doubtful");
   else if(e.key==="ArrowRight"){ idx++; show(); }
   else if(e.key==="ArrowLeft"){ idx--; show(); }
   else if(e.key==="u" || e.key==="U") undo();
