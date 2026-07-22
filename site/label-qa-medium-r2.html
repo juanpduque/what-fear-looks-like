@@ -53,6 +53,14 @@ h1{font-family:"Anton",Impact,sans-serif;font-size:26px;letter-spacing:.02em;
 .actions button.composite{border-color:#5a406e;color:#d4b8ea}
 .actions button.doubt{border-color:#6a5630;color:#e5c97a}
 .actions button.nav{opacity:.85}
+.actions button.is-selected{outline:2px solid var(--amber);outline-offset:2px;
+  box-shadow:0 0 0 1px var(--amber);font-weight:700;transform:translateY(-1px)}
+.actions button.confirm.is-selected{background:#1a3a28;color:#b8f0cf}
+.mine-box{margin:10px 0 0;padding:12px 14px;border:1px solid rgba(229,160,13,.45);
+  border-radius:4px;background:rgba(229,160,13,.08);font-family:ui-monospace,Menlo,monospace;font-size:14px}
+.mine-box b{color:var(--amber);font-size:16px;letter-spacing:.04em;text-transform:uppercase}
+.mine-box.empty{border-color:var(--line);background:transparent;color:var(--dim);font-size:13px}
+.mine-box.empty b{color:var(--dim);font-size:inherit;letter-spacing:0;text-transform:none}
 .keys{font-family:ui-monospace,Menlo,monospace;font-size:11px;color:var(--dim);line-height:1.6}
 kbd{background:#1a1a1e;border:1px solid #333;border-radius:3px;padding:1px 5px;color:var(--ink)}
 .verdict{font-family:ui-monospace,Menlo,monospace;font-size:13px;margin-top:14px;min-height:1.2em}
@@ -107,13 +115,14 @@ kbd{background:#1a1a1e;border:1px solid #333;border-radius:3px;padding:1px 5px;c
         <b>composite</b> = foto + intervención fuerte. Progreso local; exportá al terminar.</p>
       <div class="actions">
         <button type="button" class="confirm" id="btnConfirm" title="Enter">↵ · Confirmar pass1</button>
-        <button type="button" class="painted" id="btnPainted" title="1">1 · painted</button>
-        <button type="button" class="photo" id="btnPhoto" title="2">2 · photo</button>
-        <button type="button" class="composite" id="btnComposite" title="3">3 · composite</button>
-        <button type="button" class="doubt" id="btnDoubt" title="4">4 · doubtful</button>
+        <button type="button" class="painted" id="btnPainted" data-pick="painted" title="1">1 · painted</button>
+        <button type="button" class="photo" id="btnPhoto" data-pick="photo" title="2">2 · photo</button>
+        <button type="button" class="composite" id="btnComposite" data-pick="composite" title="3">3 · composite</button>
+        <button type="button" class="doubt" id="btnDoubt" data-pick="doubtful" title="4">4 · doubtful</button>
         <button type="button" class="nav" id="btnPrev" title="←">← Prev</button>
         <button type="button" class="nav" id="btnNext" title="→">Next →</button>
       </div>
+      <div class="mine-box empty" id="mineBox">Tu selección r2: <b>—</b></div>
       <div class="verdict" id="verdict"></div>
       <p class="keys">Atajos: <kbd>Enter</kbd>/<kbd>Space</kbd> confirmar pass1 ·
         <kbd>1</kbd>–<kbd>4</kbd> cambiar · <kbd>←</kbd><kbd>→</kbd> navegar · <kbd>U</kbd> deshacer</p>
@@ -190,13 +199,29 @@ function show(){
   document.getElementById("score").textContent = "p_painted " + d.p.toFixed(3);
   const v = verdicts[d.id];
   const verd = document.getElementById("verdict");
-  if(!v){ verd.textContent = "Sin revisión r2"; verd.className = "verdict"; }
-  else if(v.pass2===d.pass1){
-    verd.textContent = "r2: confirmada → " + v.pass2;
-    verd.className = "verdict ok";
+  const mine = document.getElementById("mineBox");
+  // highlight the button that matches the saved r2 choice
+  document.querySelectorAll(".actions button[data-pick], #btnConfirm").forEach(b => b.classList.remove("is-selected"));
+  if(!v){
+    verd.textContent = "Sin revisión r2 — elegí confirmar o cambiar";
+    verd.className = "verdict";
+    mine.className = "mine-box empty";
+    mine.innerHTML = "Tu selección r2: <b>todavía no marcada</b>";
   } else {
-    verd.textContent = "r2: cambiada " + d.pass1 + " → " + v.pass2;
-    verd.className = "verdict " + v.pass2;
+    const same = v.pass2===d.pass1;
+    mine.className = "mine-box";
+    mine.innerHTML = "Tu selección r2: <b>" + v.pass2 + "</b>" +
+      (same ? " · confirmaste pass1" : " · cambiaste desde <b>" + d.pass1 + "</b>");
+    if(same){
+      verd.textContent = "Guardado: confirmada → " + v.pass2;
+      verd.className = "verdict ok";
+      document.getElementById("btnConfirm").classList.add("is-selected");
+    } else {
+      verd.textContent = "Guardado: cambiada " + d.pass1 + " → " + v.pass2;
+      verd.className = "verdict " + v.pass2;
+    }
+    const pick = document.querySelector('.actions button[data-pick="'+v.pass2+'"]');
+    if(pick) pick.classList.add("is-selected");
   }
   document.getElementById("counter").textContent = (idx+1) + " / " + list.length + "  (set " + DATA.length + ")";
   const done = DATA.filter(x => verdicts[x.id]).length;
