@@ -2,10 +2,11 @@
 """Build a second-pass medium QA page from pass-1 labels.
 
 Reads pipeline/data/label_qa_medium_pass1.csv (from the first labeling run),
-attaches TMDB poster paths, and writes site/label-qa-medium-r2.html.
+attaches TMDB poster paths, and writes pipeline/qa/label-qa-medium-r2.html
+(local-only; not deployed to GitHub Pages).
 
   python3 build_label_qa_medium_r2.py
-  open ../site/label-qa-medium-r2.html
+  open qa/label-qa-medium-r2.html
 """
 from __future__ import annotations
 
@@ -17,7 +18,7 @@ import pandas as pd
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
 PASS1 = DATA / "label_qa_medium_pass1.csv"
-OUT = ROOT.parent / "site" / "label-qa-medium-r2.html"
+OUT = ROOT / "qa" / "label-qa-medium-r2.html"
 
 
 def main():
@@ -226,7 +227,7 @@ function filtered(){
 
 function posterSrc(d){
   if(d && d.path) return "https://image.tmdb.org/t/p/w500" + d.path;
-  return "../pipeline/data/posters/" + d.id + ".jpg";
+  return "../data/posters/" + d.id + ".jpg";
 }
 
 function show(){
