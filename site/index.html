@@ -507,42 +507,67 @@ footer .logo span{color:var(--blood)}
   .step{margin:0 auto 55vh;max-width:88%;background:rgba(17,17,20,.96);
     backdrop-filter:blur(4px);box-shadow:0 12px 40px rgba(0,0,0,.6)}
 }
+
+/* ---------- language toggle ---------- */
+.lang-switch{position:fixed;top:14px;right:14px;z-index:90;display:flex;gap:0;
+  font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+  border:1px solid rgba(232,228,218,.28);border-radius:2px;overflow:hidden;
+  background:rgba(10,10,12,.72);backdrop-filter:blur(8px)}
+.lang-switch button{appearance:none;border:0;background:transparent;color:var(--ink-dim);
+  padding:8px 11px;cursor:pointer;font:inherit;letter-spacing:inherit;text-transform:inherit}
+.lang-switch button.is-active{background:var(--blood);color:#fff}
+.lang-switch button:hover{color:var(--ink)}
+@media(max-width:520px){.lang-switch{top:10px;right:10px;font-size:10px}
+  .lang-switch button{padding:7px 9px}}
 </style>
+<script>
+(function(){
+  var q=new URLSearchParams(location.search).get('lang');
+  var s=localStorage.getItem('aof-lang');
+  var nav=(navigator.language||'en').toLowerCase();
+  var lang=(q==='es'||q==='en')?q:(s==='es'||s==='en')?s:(nav.indexOf('es')===0?'es':'en');
+  document.documentElement.lang=lang;
+})();
+</script>
 </head>
 <body>
 
-<a class="skip-link" href="#main">Skip to content</a>
+<a class="skip-link" href="#main" data-i18n="skip_link">Skip to content</a>
+<nav class="lang-switch" aria-label="Language">
+  <button type="button" data-lang-btn="en" aria-pressed="true">EN</button>
+  <button type="button" data-lang-btn="es" aria-pressed="false">ES</button>
+</nav>
 
 <!-- ============ HERO ============ -->
-<section class="hero" aria-label="Title">
+<section class="hero" data-i18n-aria="aria_hero_title" aria-label="Title">
   <div class="mosaic" id="mosaic"></div>
   <div class="hero-inner">
     <a class="hero-brand" href="https://medium.com/pulp-analytics" aria-label="Pulp Analytics"><img src="assets/pulp-analytics-red.png" alt="Pulp Analytics"></a>
-    <p class="kicker">A Poster Analysis</p>
-    <h1>What <span class="fear">Fear</span><br>Looks Like</h1>
-    <p class="dek">We measured color, darkness, faces, and creatures across <strong>18,716 horror movie posters</strong> from 1920 to 2022 — how the genre sells dread on a single sheet, and how that look has changed.</p>
-    <p class="byline">By <b>Juan Pablo Duque</b> · October 2026 · 9 min read</p>
-    <a class="scroll-cue" href="#main" aria-label="Skip hero and begin reading">SCROLL IF YOU DARE <span class="sc-arrow" aria-hidden="true">↓</span></a>
+    <p class="kicker" data-i18n="hero_kicker">A Poster Analysis</p>
+    <h1 data-i18n="hero_title">What <span class="fear">Fear</span><br>Looks Like</h1>
+    <p class="dek" data-i18n="hero_dek">We measured color, darkness, faces, and creatures across <strong>18,716 horror movie posters</strong> from 1920 to 2022 — how the genre sells dread on a single sheet, and how that look has changed.</p>
+    <p class="byline" data-i18n="hero_byline">By <b>Juan Pablo Duque</b> · October 2026 · 9 min read</p>
+    <a class="scroll-cue" href="#main" aria-label="Skip hero and begin reading" data-i18n="scroll_cue">SCROLL IF YOU DARE <span class="sc-arrow" aria-hidden="true">↓</span></a>
   </div>
 </section>
 
 <main id="main">
 
 <!-- ============ INTRO ============ -->
-<section class="intro" id="intro" aria-label="Introduction">
+<section class="intro" id="intro" data-i18n-aria="aria_intro" aria-label="Introduction">
   <div class="prose">
-    <p class="drop reveal">A horror poster has one job: scare you into a seat. But <em>how</em> it scares you is a fingerprint of its era. The painted monsters of the 1930s, the occult photography of the '70s, the black-and-red formula of the slasher boom, today's minimalist dread — each is a fossil of what its decade feared.</p>
-    <p class="reveal">Fossils can be measured. From a database of 33,000 films we analyzed every poster with usable artwork — 18,716 of them, from 1920 to 2022 — extracting each one's dominant palette, brightness, saturation, and how much of it is the color of blood.</p>
-    <p class="reveal">This is a century of fear, one pixel at a time.</p>
+    <p class="drop reveal" data-i18n="intro_drop">A horror poster has one job: scare you into a seat. But <em>how</em> it scares you is a fingerprint of its era. The painted monsters of the 1930s, the occult photography of the '70s, the black-and-red formula of the slasher boom, today's minimalist dread — each is a fossil of what its decade feared.</p>
+    <p class="reveal" data-i18n="intro_fossils">Fossils can be measured. From a database of 33,000 films we analyzed every poster with usable artwork — 18,716 of them, from 1920 to 2022 — extracting each one's dominant palette, brightness, saturation, and how much of it is the color of blood.</p>
+    <p class="reveal" data-i18n="intro_century">This is a century of fear, one pixel at a time.</p>
   </div>
 </section>
 
 <!-- ============ EXHIBIT A: ANATOMY OF ONE NIGHTMARE ============ -->
 <section class="chart-block" style="padding-bottom:0">
   <div class="prose reveal">
-    <p class="kicker">Exhibit A · The Specimen</p>
-    <h2 class="section-title">One Nightmare,<br>Six Measurements</h2>
-    <p>Before we measure a century, let's dissect a single specimen — arguably the most imitated horror one-sheet ever printed — with the same full pipeline we run on every poster in this story.</p>
+    <p class="kicker" data-i18n="exhibit_a_kicker">Exhibit A · The Specimen</p>
+    <h2 class="section-title" data-i18n="exhibit_a_title">One Nightmare,<br>Six Measurements</h2>
+    <p data-i18n="exhibit_a_lede">Before we measure a century, let's dissect a single specimen — arguably the most imitated horror one-sheet ever printed — with the same full pipeline we run on every poster in this story.</p>
   </div>
 </section>
 
@@ -552,78 +577,78 @@ footer .logo span{color:var(--blood)}
       <div class="poster" id="ana-poster" style="background:linear-gradient(165deg,#060303 0%,#1a0d06 55%,#61281c 78%,#af3d1b 100%)">
         <div class="an-ov" id="ana-ov0"><div class="an-scan"></div></div>
         <div class="an-ov" id="ana-ov2"><div class="an-scrim"></div>
-          <div class="an-lab" style="bottom:74%;right:4%">72% near-black</div></div>
+          <div class="an-lab" style="bottom:74%;right:4%" data-i18n="ana_lab_dark">72% near-black</div></div>
         <div class="an-ov" id="ana-ov3">
           <div class="an-box amber" style="left:8%;top:9%;width:74%;height:44%"></div>
           <div class="an-box amber" style="left:30%;top:55%;width:36%;height:37%"></div>
-          <div class="an-lab" style="bottom:3%;left:4%">pixel blood-red: 11.4%</div></div>
+          <div class="an-lab" style="bottom:3%;left:4%" data-i18n="ana_lab_blood">pixel blood-red: 11.4%</div></div>
         <div class="an-ov" id="ana-ov4">
           <div class="an-box amber" style="left:45%;top:36%;width:38%;height:22%"></div>
-          <div class="an-lab" style="top:60%;right:4%">0 faces · CLIP: <b style="color:var(--amber)">skeleton</b> 0.63</div></div>
+          <div class="an-lab" style="top:60%;right:4%" data-i18n="ana_lab_faces">0 faces · CLIP: <b style="color:var(--amber)">skeleton</b> 0.63</div></div>
         <div class="an-ov" id="ana-ov5">
           <div class="an-box" style="left:4%;top:3%;width:92%;height:12%"></div>
-          <div class="an-lab" style="top:17%;left:4%">lettering: decorative · text ~23%</div></div>
+          <div class="an-lab" style="top:17%;left:4%" data-i18n="ana_lab_lettering">lettering: decorative · text ~23%</div></div>
         <div class="an-ov" id="ana-ov6">
           <div class="thirds-lines"><i class="v" style="left:33.3%"></i><i class="v" style="left:66.7%"></i><i class="h" style="top:33.3%"></i><i class="h" style="top:66.7%"></i></div>
           <div class="cg-dot thirds" style="left:66.7%;top:66.7%"></div>
           <div class="cg-dot center" style="left:50%;top:50%"></div>
           <div class="cg-dot balance" style="left:52.8%;top:25.1%"></div>
-          <div class="an-lab" style="bottom:4%;left:4%">thirds 0.14 · balance 25% · symmetry 84%</div>
+          <div class="an-lab" style="bottom:4%;left:4%" data-i18n="ana_lab_comp">thirds 0.14 · balance 25% · symmetry 84%</div>
         </div>
       </div>
       <div class="swatches" id="ana-sw"></div>
-      <p class="poster-caption" id="ana-cap">Halloween (1978) · "The Night He Came Home!"</p>
+      <p class="poster-caption" id="ana-cap" data-i18n="ana_caption">Halloween (1978) · "The Night He Came Home!"</p>
     </div>
   </div>
   <div class="era-steps">
     <div class="step" data-ana="0">
-      <p class="kicker">The Specimen</p>
-      <h3>Halloween, 1978</h3>
-      <p>Black void. A hand, a kitchen knife, a jack-o'-lantern. No monster, no victim, no star. We ran it through the same pipeline as every other poster: color, faces &amp; creatures, lettering, medium, and composition.</p>
-      <p class="stat">TMDB #948 · analyzed at 96×144 px, CIELAB color space</p>
+      <p class="kicker" data-i18n="specimen_kicker">The Specimen</p>
+      <h3 data-i18n="specimen_h3">Halloween, 1978</h3>
+      <p data-i18n="specimen_body">Black void. A hand, a kitchen knife, a jack-o'-lantern. No monster, no victim, no star. We ran it through the same pipeline as every other poster: color, faces &amp; creatures, lettering, medium, and composition.</p>
+      <p class="stat" data-i18n="specimen_stat">TMDB #948 · analyzed at 96×144 px, CIELAB color space</p>
     </div>
     <div class="step" data-ana="1">
-      <p class="kicker">Measurement 1</p>
-      <h3>The Palette</h3>
-      <p>Five dominant colors, extracted by k-means clustering in CIELAB. Near-total black — then nothing but pumpkin light: rust, amber, bone. The sheet is desaturated overall (sat 26%) — heat is local, not atmospheric.</p>
-      <p class="stat"><b>#060303</b> · #af3d1b · #61281c · #e4a048 · #d8cfbd</p>
+      <p class="kicker" data-i18n="m1_kicker">Measurement 1</p>
+      <h3 data-i18n="m1_h3">The Palette</h3>
+      <p data-i18n="m1_body">Five dominant colors, extracted by k-means clustering in CIELAB. Near-total black — then nothing but pumpkin light: rust, amber, bone. The sheet is desaturated overall (sat 26%) — heat is local, not atmospheric.</p>
+      <p class="stat" data-i18n="m1_stat"><b>#060303</b> · #af3d1b · #61281c · #e4a048 · #d8cfbd</p>
     </div>
     <div class="step" data-ana="2">
-      <p class="kicker">Measurement 2</p>
-      <h3>The Darkness</h3>
-      <p>72% of this poster is near-black. Its mean brightness is L* 16.9 — <em>less than half</em> the average of its own year. Carpenter's one-sheet was a decade ahead of the curve the rest of the genre would follow.</p>
-      <p class="stat">L* <b>16.9</b> vs 35.9 (1978 average) · dark pixels <b>72%</b></p>
+      <p class="kicker" data-i18n="m2_kicker">Measurement 2</p>
+      <h3 data-i18n="m2_h3">The Darkness</h3>
+      <p data-i18n="m2_body">72% of this poster is near-black. Its mean brightness is L* 16.9 — <em>less than half</em> the average of its own year. Carpenter's one-sheet was a decade ahead of the curve the rest of the genre would follow.</p>
+      <p class="stat" data-i18n="m2_stat">L* <b>16.9</b> vs 35.9 (1978 average) · dark pixels <b>72%</b></p>
     </div>
     <div class="step" data-ana="3">
-      <p class="kicker">Measurement 3</p>
-      <h3>The Blood</h3>
-      <p>Only 11.4% of the pixels land in our blood-red band — concentrated in two places: the blade and the pumpkin. All of the poster's heat, on one knife and one grin.</p>
-      <p>We also measure blood a second way later in this piece: a vision model asked, patch by patch, whether the sheet <em>looks like blood</em> — not merely red. That semantic score exists only for a stratified sample of ~1,721 posters. Halloween wasn't drawn into that sample, so here we report the pixel measure alone; the two methods meet in Part VII.</p>
-      <p class="stat">blood-red share: <b>11.4%</b> · CLIP semantic blood: <b>n/a</b> (outside stratified sample)</p>
+      <p class="kicker" data-i18n="m3_kicker">Measurement 3</p>
+      <h3 data-i18n="m3_h3">The Blood</h3>
+      <p data-i18n="m3_body">Only 11.4% of the pixels land in our blood-red band — concentrated in two places: the blade and the pumpkin. All of the poster's heat, on one knife and one grin.</p>
+      <p data-i18n="m3_body2">We also measure blood a second way later in this piece: a vision model asked, patch by patch, whether the sheet <em>looks like blood</em> — not merely red. That semantic score exists only for a stratified sample of ~1,721 posters. Halloween wasn't drawn into that sample, so here we report the pixel measure alone; the two methods meet in Part VII.</p>
+      <p class="stat" data-i18n="m3_stat">blood-red share: <b>11.4%</b> · CLIP semantic blood: <b>n/a</b> (outside stratified sample)</p>
     </div>
     <div class="step" data-ana="4">
-      <p class="kicker">Measurement 4</p>
-      <h3>Faces &amp; Monsters</h3>
-      <p>Same question as Part IV: <em>who looks back?</em> YuNet finds zero <em>human</em> faces — most posters of its decade (~58%) showed you one. The only face on the sheet is carved into a pumpkin. When we ask CLIP what creature lives here, it answers <em>skeleton</em> (0.63): it reads that grin as a skull. Wrong species, right instinct — a death's-head where Michael Myers is the absence the artwork sells. Medium score says mostly photographic (~13% painted), not pulp illustration.</p>
-      <p class="stat">human faces: <b>0</b> · 1970s avg: 58% · CLIP: <b>skeleton</b> (0.63) · painted: <b>13%</b></p>
+      <p class="kicker" data-i18n="m4_kicker">Measurement 4</p>
+      <h3 data-i18n="m4_h3">Faces &amp; Monsters</h3>
+      <p data-i18n="m4_body">Same question as Part IV: <em>who looks back?</em> YuNet finds zero <em>human</em> faces — most posters of its decade (~58%) showed you one. The only face on the sheet is carved into a pumpkin. When we ask CLIP what creature lives here, it answers <em>skeleton</em> (0.63): it reads that grin as a skull. Wrong species, right instinct — a death's-head where Michael Myers is the absence the artwork sells. Medium score says mostly photographic (~13% painted), not pulp illustration.</p>
+      <p class="stat" data-i18n="m4_stat">human faces: <b>0</b> · 1970s avg: 58% · CLIP: <b>skeleton</b> (0.63) · painted: <b>13%</b></p>
     </div>
     <div class="step" data-ana="5">
-      <p class="kicker">Measurement 5</p>
-      <h3>The Lettering</h3>
-      <p>The title is a billboard: one word, top of the sheet. Our MSER text detector flags ~23% of the area as text-like — an upper bound (pumpkin ridges can fool it). Separately, a CLIP ornate↔minimal axis places the treatment in the <em>decorative</em> register: still a shout, not yet the whisper of elevated horror.</p>
-      <p class="stat">text-like area: <b>23%</b> · typography register: <b>decorative</b> · ornate↔minimal axis: <b>+0.02</b></p>
+      <p class="kicker" data-i18n="m5_kicker">Measurement 5</p>
+      <h3 data-i18n="m5_h3">The Lettering</h3>
+      <p data-i18n="m5_body">The title is a billboard: one word, top of the sheet. Our MSER text detector flags ~23% of the area as text-like — an upper bound (pumpkin ridges can fool it). Separately, a CLIP ornate↔minimal axis places the treatment in the <em>decorative</em> register: still a shout, not yet the whisper of elevated horror.</p>
+      <p class="stat" data-i18n="m5_stat">text-like area: <b>23%</b> · typography register: <b>decorative</b> · ornate↔minimal axis: <b>+0.02</b></p>
     </div>
     <div class="step" data-ana="6">
-      <p class="kicker">Measurement 6</p>
-      <h3>The Composition</h3>
-      <p>Symmetry is high (84%) — the knife and pumpkin sit as a centered emblem — but visual <em>balance</em> is only 25%: the black void empties the lower frame on purpose. Rule-of-thirds distance is tight (0.14); diagonal energy is moderate (51%); the pyramid shift (−0.38) reads top-heavy: a funnel of dread over empty night.</p>
-      <p class="stat">symmetry <b>84%</b> · balance <b>25%</b> · thirds dist. <b>0.14</b> · diagonal <b>51%</b> · pyramid <b>−0.38</b></p>
+      <p class="kicker" data-i18n="m6_kicker">Measurement 6</p>
+      <h3 data-i18n="m6_h3">The Composition</h3>
+      <p data-i18n="m6_body">Symmetry is high (84%) — the knife and pumpkin sit as a centered emblem — but visual <em>balance</em> is only 25%: the black void empties the lower frame on purpose. Rule-of-thirds distance is tight (0.14); diagonal energy is moderate (51%); the pyramid shift (−0.38) reads top-heavy: a funnel of dread over empty night.</p>
+      <p class="stat" data-i18n="m6_stat">symmetry <b>84%</b> · balance <b>25%</b> · thirds dist. <b>0.14</b> · diagonal <b>51%</b> · pyramid <b>−0.38</b></p>
     </div>
     <div class="step" data-ana="7">
-      <p class="kicker">Now</p>
-      <h3>× 18,716</h3>
-      <p>One poster, the full measurement stack. We did exactly this to every horror poster with usable artwork from 1920 to 2022. Here is what a century of fear looks like.</p>
-      <p class="stat">scroll on ↓</p>
+      <p class="kicker" data-i18n="now_kicker">Now</p>
+      <h3 data-i18n="now_h3">× 18,716</h3>
+      <p data-i18n="now_body">One poster, the full measurement stack. We did exactly this to every horror poster with usable artwork from 1920 to 2022. Here is what a century of fear looks like.</p>
+      <p class="stat" data-i18n="now_stat">scroll on ↓</p>
     </div>
   </div>
 </div>
@@ -631,24 +656,24 @@ footer .logo span{color:var(--blood)}
 <!-- ============ COLOR RIVER ============ -->
 <section class="chart-block">
   <div class="prose reveal">
-    <p class="kicker">Part I · Color River</p>
-    <h2 class="section-title">Black Took the Sheet</h2>
-    <p>Share of poster pixels by hue family, per decade — stacked so each band is a real percentage of the sheet. The warm pulp palette of the '50s never recovers — and black/grey rises like floodwater. Watch the blue flare in the neon '80s.</p>
+    <p class="kicker" data-i18n="p1_kicker">Part I · Color River</p>
+    <h2 class="section-title" data-i18n="p1_title">Black Took the Sheet</h2>
+    <p data-i18n="p1_body">Share of poster pixels by hue family, per decade — stacked so each band is a real percentage of the sheet. The warm pulp palette of the '50s never recovers — and black/grey rises like floodwater. Watch the blue flare in the neon '80s.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="river" viewBox="0 0 960 380" width="100%"></svg>
-  <p class="note" style="margin-top:10px">FULL CENTURY — n = 18,716 posters (TMDB), mean share per decade.</p></div>
+  <p class="note" style="margin-top:10px" data-i18n="p1_note_n">FULL CENTURY — n = 18,716 posters (TMDB), mean share per decade.</p></div>
   <div class="typo-strip typo-strip-compact reveal" id="cr-strip">
-    <p class="note" style="margin-bottom:10px">One real poster per hue family the chart measures — the sheet where that band actually dominates, per era.</p>
-    <p class="ts-more-hint">On phones: swipe each row across the six eras. Showing Reds &amp; Dark first — the two bands that drive the story.</p>
-    <button type="button" class="ts-more" id="cr-more" aria-expanded="false" aria-controls="cr-warm cr-green cr-blue cr-purple">Show all 6 hue families</button>
+    <p class="note" style="margin-bottom:10px" data-i18n="p1_note_strip">One real poster per hue family the chart measures — the sheet where that band actually dominates, per era.</p>
+    <p class="ts-more-hint" data-i18n="p1_phone_hint">On phones: swipe each row across the six eras. Showing Reds &amp; Dark first — the two bands that drive the story.</p>
+    <button type="button" class="ts-more" id="cr-more" aria-expanded="false" aria-controls="cr-warm cr-green cr-blue cr-purple" data-i18n="p1_show_all">Show all 6 hue families</button>
     <div class="ts-row ts-head" id="cr-eras"><div class="ts-tag ts-tag-blank"></div></div>
-    <div class="ts-row" id="cr-red"><div class="ts-tag"><span class="ts-dot" style="background:#e02430"></span>Reds</div></div>
-    <div class="ts-row" id="cr-black"><div class="ts-tag"><span class="ts-dot" style="background:#9a958a"></span>Dark</div></div>
-    <div class="ts-row ts-row-soft" id="cr-warm"><div class="ts-tag"><span class="ts-dot" style="background:#e5a00d"></span>Warm</div></div>
-    <div class="ts-row ts-row-soft" id="cr-green"><div class="ts-tag"><span class="ts-dot" style="background:#8fb05a"></span>Greens</div></div>
-    <div class="ts-row ts-row-soft" id="cr-blue"><div class="ts-tag"><span class="ts-dot" style="background:#5a9eb0"></span>Blues</div></div>
-    <div class="ts-row ts-row-soft" id="cr-purple"><div class="ts-tag"><span class="ts-dot" style="background:#b08ad4"></span>Purples</div></div>
-    <p class="note" style="margin-top:8px">Selected by dominant hue-band pixel share (same six families as the river), favoring recognizable illustrated sheets over blank title cards.</p>
+    <div class="ts-row" id="cr-red"><div class="ts-tag"><span class="ts-dot" style="background:#e02430"></span><span data-i18n="band_reds">Reds</span></div></div>
+    <div class="ts-row" id="cr-black"><div class="ts-tag"><span class="ts-dot" style="background:#9a958a"></span><span data-i18n="band_dark">Dark</span></div></div>
+    <div class="ts-row ts-row-soft" id="cr-warm"><div class="ts-tag"><span class="ts-dot" style="background:#e5a00d"></span><span data-i18n="band_warm">Warm</span></div></div>
+    <div class="ts-row ts-row-soft" id="cr-green"><div class="ts-tag"><span class="ts-dot" style="background:#8fb05a"></span><span data-i18n="band_greens">Greens</span></div></div>
+    <div class="ts-row ts-row-soft" id="cr-blue"><div class="ts-tag"><span class="ts-dot" style="background:#5a9eb0"></span><span data-i18n="band_blues">Blues</span></div></div>
+    <div class="ts-row ts-row-soft" id="cr-purple"><div class="ts-tag"><span class="ts-dot" style="background:#b08ad4"></span><span data-i18n="band_purples">Purples</span></div></div>
+    <p class="note" style="margin-top:8px" data-i18n="p1_note_select">Selected by dominant hue-band pixel share (same six families as the river), favoring recognizable illustrated sheets over blank title cards.</p>
   </div>
 </section>
 
@@ -656,176 +681,176 @@ footer .logo span{color:var(--blood)}
      Markup kept hidden so we can restore or relocate as a coda later. -->
 <section class="chart-block" id="six-eras" hidden aria-hidden="true" style="display:none;padding-bottom:0">
   <div class="prose reveal">
-    <p class="kicker">Part II</p>
-    <h2 class="section-title">Six Eras of Terror</h2>
-    <p>Six frames on the century, each built the same way: not the poster you remember, but the <em>statistically most typical</em> famous poster of its time. Brightness turns out to be a mountain, not a slope — the earliest posters were darker than the atomic-age peak that follows them. The "cold, desaturated '90s" is a myth the data busts outright. And the monster keeps changing costume: giant creature, witch, masked killer, zombie — and, in the end, right back to a ghost.</p>
+    <p class="kicker" data-i18n="six_eras_kicker">Part II</p>
+    <h2 class="section-title" data-i18n="six_eras_title">Six Eras of Terror</h2>
+    <p data-i18n="six_eras_body">Six frames on the century, each built the same way: not the poster you remember, but the <em>statistically most typical</em> famous poster of its time. Brightness turns out to be a mountain, not a slope — the earliest posters were darker than the atomic-age peak that follows them. The "cold, desaturated '90s" is a myth the data busts outright. And the monster keeps changing costume: giant creature, witch, masked killer, zombie — and, in the end, right back to a ghost.</p>
   </div>
   <div class="typo-strip reveal">
     <div class="ts-row ts-head" id="era-eras"><div class="ts-tag ts-tag-blank"></div></div>
-    <div class="ts-row" id="era-specimen"><div class="ts-tag"><span class="ts-dot" style="background:var(--amber)"></span>The era's statistical archetype</div></div>
-    <p class="note" style="margin-top:8px">Selected by minimum z-distance to each era's own means on brightness, dark-pixel share, red share and saturation, among titles with 300+ votes — the same method used to pick the specimen dissected in Exhibit A. Full per-era findings (monster dynasties, the brightness mountain, the '90s saturation myth) live in the site's methodology notes.</p>
+    <div class="ts-row" id="era-specimen"><div class="ts-tag"><span class="ts-dot" style="background:var(--amber)"></span><span data-i18n="six_eras_tag">The era's statistical archetype</span></div></div>
+    <p class="note" style="margin-top:8px" data-i18n="six_eras_note">Selected by minimum z-distance to each era's own means on brightness, dark-pixel share, red share and saturation, among titles with 300+ votes — the same method used to pick the specimen dissected in Exhibit A. Full per-era findings (monster dynasties, the brightness mountain, the '90s saturation myth) live in the site's methodology notes.</p>
   </div>
 </section>
 
 <!-- ============ DARKNESS CURVE ============ -->
 <section class="chart-block">
   <div class="prose reveal">
-    <p class="kicker">Part II · Darkness</p>
-    <h2 class="section-title">The Light Never Came Back</h2>
-    <p>Average poster brightness across the full century. It isn't a slide — it's a mountain: expressionist shadow climbs to the atomic daylight peak around 1960, and then horror descends for sixty years.</p>
+    <p class="kicker" data-i18n="p2_kicker">Part II · Darkness</p>
+    <h2 class="section-title" data-i18n="p2_title">The Light Never Came Back</h2>
+    <p data-i18n="p2_body">Average poster brightness across the full century. It isn't a slide — it's a mountain: expressionist shadow climbs to the atomic daylight peak around 1960, and then horror descends for sixty years.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="darkness" viewBox="0 0 960 400" width="100%"></svg>
-  <p class="note" style="margin-top:10px">FULL CENTURY — n = 18,716 posters (TMDB), 5-yr rolling mean.</p></div>
+  <p class="note" style="margin-top:10px" data-i18n="p2_note_n">FULL CENTURY — n = 18,716 posters (TMDB), 5-yr rolling mean.</p></div>
   <div class="typo-strip reveal">
-    <p class="note" style="margin-bottom:10px">The brightest and the darkest poster the pipeline measured in each era — the two ends of the mountain.</p>
+    <p class="note" style="margin-bottom:10px" data-i18n="p2_note_strip">The brightest and the darkest poster the pipeline measured in each era — the two ends of the mountain.</p>
     <div class="ts-row ts-head" id="dk-eras"><div class="ts-tag ts-tag-blank"></div></div>
-    <div class="ts-row" id="dk-bright"><div class="ts-tag"><span class="ts-dot" style="background:#f0e6c0"></span>Brightest of the era</div></div>
-    <div class="ts-row" id="dk-dark"><div class="ts-tag"><span class="ts-dot" style="background:#1c1a17"></span>Darkest of the era</div></div>
-    <p class="note" style="margin-top:8px">Selected by mean L* brightness, one extreme specimen per row per era.</p>
+    <div class="ts-row" id="dk-bright"><div class="ts-tag"><span class="ts-dot" style="background:#f0e6c0"></span><span data-i18n="p2_tag_bright">Brightest of the era</span></div></div>
+    <div class="ts-row" id="dk-dark"><div class="ts-tag"><span class="ts-dot" style="background:#1c1a17"></span><span data-i18n="p2_tag_dark">Darkest of the era</span></div></div>
+    <p class="note" style="margin-top:8px" data-i18n="p2_note_select">Selected by mean L* brightness, one extreme specimen per row per era.</p>
   </div>
 </section>
 
 <!-- ============ RISE OF RED ============ -->
 <section class="chart-block" style="padding-top:0">
   <div class="prose reveal">
-    <p class="kicker">Part III · Rise of Red</p>
-    <h2 class="section-title">Red Peaked After the Slashers</h2>
-    <p>Share of blood-red pixels per year. Red is horror's signature — but its real peak isn't where you'd guess: not the '80s slasher, but the meta-horror turn of the millennium.</p>
+    <p class="kicker" data-i18n="p3_kicker">Part III · Rise of Red</p>
+    <h2 class="section-title" data-i18n="p3_title">Red Peaked After the Slashers</h2>
+    <p data-i18n="p3_body">Share of blood-red pixels per year. Red is horror's signature — but its real peak isn't where you'd guess: not the '80s slasher, but the meta-horror turn of the millennium.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="red" viewBox="0 0 960 340" width="100%"></svg>
-  <p class="note" style="margin-top:10px">FULL CENTURY — n = 18,716 posters (TMDB), 5-yr rolling mean.</p></div>
+  <p class="note" style="margin-top:10px" data-i18n="p3_note_n">FULL CENTURY — n = 18,716 posters (TMDB), 5-yr rolling mean.</p></div>
   <div class="typo-strip reveal">
-    <p class="note" style="margin-bottom:10px">What the reddest poster in each era actually looked like — and, just as telling, what a horror poster with essentially no red looks like in the same years.</p>
+    <p class="note" style="margin-bottom:10px" data-i18n="p3_note_strip">What the reddest poster in each era actually looked like — and, just as telling, what a horror poster with essentially no red looks like in the same years.</p>
     <div class="ts-row ts-head" id="rr-eras"><div class="ts-tag ts-tag-blank"></div></div>
-    <div class="ts-row" id="rr-red"><div class="ts-tag"><span class="ts-dot" style="background:var(--blood)"></span>Reddest of the era</div></div>
-    <div class="ts-row" id="rr-none"><div class="ts-tag"><span class="ts-dot" style="background:#4c5a66"></span>Near-zero red</div></div>
-    <p class="note" style="margin-top:8px">Selected by red-pixel share (HSV red-hue mask), extremes per era.</p>
+    <div class="ts-row" id="rr-red"><div class="ts-tag"><span class="ts-dot" style="background:var(--blood)"></span><span data-i18n="p3_tag_red">Reddest of the era</span></div></div>
+    <div class="ts-row" id="rr-none"><div class="ts-tag"><span class="ts-dot" style="background:#4c5a66"></span><span data-i18n="p3_tag_none">Near-zero red</span></div></div>
+    <p class="note" style="margin-top:8px" data-i18n="p3_note_select">Selected by red-pixel share (HSV red-hue mask), extremes per era.</p>
   </div>
 </section>
 
 <!-- ============ FACES & MONSTERS ============ -->
 <section class="chart-block" style="padding-top:0">
   <div class="prose reveal">
-    <p class="kicker">Part IV · Faces &amp; Monsters</p>
-    <h2 class="section-title">The Face Retreats.<br>The Ghost Returns.</h2>
-    <p>Two measurements of the same question: <em>who looks back from the sheet?</em> First, the human face — YuNet counts how often a readable visage fills the frame. Then the creature — CLIP names what kind of monster, if any, claims the poster. Together they tell one story: the century learned to sell dread without a star close-up, while the throne of the monster kept changing hands — and the ghost bookends both ends of the timeline.</p>
+    <p class="kicker" data-i18n="p4_kicker">Part IV · Faces &amp; Monsters</p>
+    <h2 class="section-title" data-i18n="p4_title">The Face Retreats.<br>The Ghost Returns.</h2>
+    <p data-i18n="p4_lede">Two measurements of the same question: <em>who looks back from the sheet?</em> First, the human face — YuNet counts how often a readable visage fills the frame. Then the creature — CLIP names what kind of monster, if any, claims the poster. Together they tell one story: the century learned to sell dread without a star close-up, while the throne of the monster kept changing hands — and the ghost bookends both ends of the timeline.</p>
   </div>
 
   <div class="prose reveal" style="margin-top:36px">
-    <p><strong>The vanishing face.</strong> In the 1940s, showing a face was nearly mandatory: 83% of posters had one — the century's peak. Today, fewer than half do. And hiding inside the long retreat, one twist: the late '90s didn't add faces, it <em>zoomed in</em> on them. Average face size peaks in 1998 — the celebrity close-up era — at nearly twice its historic share of the sheet.</p>
+    <p data-i18n="p4_vanishing"><strong>The vanishing face.</strong> In the 1940s, showing a face was nearly mandatory: 83% of posters had one — the century's peak. Today, fewer than half do. And hiding inside the long retreat, one twist: the late '90s didn't add faces, it <em>zoomed in</em> on them. Average face size peaks in 1998 — the celebrity close-up era — at nearly twice its historic share of the sheet.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="faces" viewBox="0 0 960 340" width="100%"></svg>
-  <p class="note" style="margin-top:10px">FULL RUN — n = 18,716 posters (TMDB), YuNet face detection (validated against hand-checked artwork), 5-yr rolling mean. Counts are floors: small, profile, tilted, or heavily painted/illustrated faces can escape the detector.</p></div>
+  <p class="note" style="margin-top:10px" data-i18n="p4_faces_note_n">FULL RUN — n = 18,716 posters (TMDB), YuNet face detection (validated against hand-checked artwork), 5-yr rolling mean. Counts are floors: small, profile, tilted, or heavily painted/illustrated faces can escape the detector.</p></div>
   <div class="typo-strip reveal">
-    <p class="note" style="margin-bottom:10px">The two faces this chart is actually made of: the extreme close-up, and the poster with no detectable face at all.</p>
+    <p class="note" style="margin-bottom:10px" data-i18n="p4_faces_note_strip">The two faces this chart is actually made of: the extreme close-up, and the poster with no detectable face at all.</p>
     <div class="ts-row ts-head" id="vf-eras"><div class="ts-tag ts-tag-blank"></div></div>
-    <div class="ts-row" id="vf-face"><div class="ts-tag"><span class="ts-dot" style="background:#e5a00d"></span>The extreme close-up</div></div>
-    <div class="ts-row" id="vf-noface"><div class="ts-tag"><span class="ts-dot" style="background:#6b6258"></span>Zero faces detected</div></div>
-    <p class="note" style="margin-top:8px">Selected by YuNet face-detection output (n_faces, face bounding-box area) — the close-ups shown fill roughly half to all of the sheet. Zero-face row: hand-checked so the sheet really has no readable human face (silhouette, creature-from-behind, egg, light-for-a-head) — not detector misses on painted or tilted faces, which YuNet also produces.</p>
+    <div class="ts-row" id="vf-face"><div class="ts-tag"><span class="ts-dot" style="background:#e5a00d"></span><span data-i18n="p4_tag_closeup">The extreme close-up</span></div></div>
+    <div class="ts-row" id="vf-noface"><div class="ts-tag"><span class="ts-dot" style="background:#6b6258"></span><span data-i18n="p4_tag_zeroface">Zero faces detected</span></div></div>
+    <p class="note" style="margin-top:8px" data-i18n="p4_faces_note_select">Selected by YuNet face-detection output (n_faces, face bounding-box area) — the close-ups shown fill roughly half to all of the sheet. Zero-face row: hand-checked so the sheet really has no readable human face (silhouette, creature-from-behind, egg, light-for-a-head) — not detector misses on painted or tilted faces, which YuNet also produces.</p>
   </div>
 
   <div class="prose reveal" style="margin-top:70px">
-    <p><strong>The monster census.</strong> When the human face retreats, something else often fills the stare. We asked a vision model one question about every poster: <em>what creature is on it?</em> The answer is a dynastic succession — with one frame around it: <strong>the century begins and ends with the ghost.</strong> The chart keeps the ghost and the masked killer lit; the other thrones stay dim until you tap or hover a line.</p>
+    <p data-i18n="p4_census_body"><strong>The monster census.</strong> When the human face retreats, something else often fills the stare. We asked a vision model one question about every poster: <em>what creature is on it?</em> The answer is a dynastic succession — with one frame around it: <strong>the century begins and ends with the ghost.</strong> The chart keeps the ghost and the masked killer lit; the other thrones stay dim until you tap or hover a line.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="census" viewBox="0 0 960 420" width="100%"></svg>
-  <p class="note" style="margin-top:10px">FULL CENTURY — n = 18,716 posters, CLIP zero-shot vs 18-creature taxonomy (validated 10/10 on hand-checked artwork; labels below 0.5 confidence excluded). Shares are conservative floors; pre-1950 decades carry smaller samples.</p></div>
+  <p class="note" style="margin-top:10px" data-i18n="p4_census_note_n">FULL CENTURY — n = 18,716 posters, CLIP zero-shot vs 18-creature taxonomy (validated 10/10 on hand-checked artwork; labels below 0.5 confidence excluded). Shares are conservative floors; pre-1950 decades carry smaller samples.</p></div>
   <div class="typo-strip reveal">
-    <p class="note" style="margin-bottom:10px">Two real posters per era for whichever creature actually held the throne, per the chart above.</p>
+    <p class="note" style="margin-bottom:10px" data-i18n="p4_census_note_strip">Two real posters per era for whichever creature actually held the throne, per the chart above.</p>
     <div class="ts-row ts-head" id="mc-eras"><div class="ts-tag ts-tag-blank"></div></div>
-    <div class="ts-row" id="mc-1"><div class="ts-tag"><span class="ts-dot" style="background:#8a5a3a"></span>The era's reigning monster</div></div>
+    <div class="ts-row" id="mc-1"><div class="ts-tag"><span class="ts-dot" style="background:#8a5a3a"></span><span data-i18n="p4_tag_monster">The era's reigning monster</span></div></div>
     <div class="ts-row" id="mc-2"><div class="ts-tag ts-tag-blank"></div></div>
-    <p class="note" style="margin-top:8px">Selected by top CLIP-classified confidence within each era's reigning label(s) named in the chart's own copy above — where two creatures co-reign or hand off mid-era, one specimen of each.</p>
+    <p class="note" style="margin-top:8px" data-i18n="p4_census_note_select">Selected by top CLIP-classified confidence within each era's reigning label(s) named in the chart's own copy above — where two creatures co-reign or hand off mid-era, one specimen of each.</p>
   </div>
 </section>
 
 <!-- ============ THE GREAT QUIETING ============ -->
 <section class="chart-block" style="padding-top:0">
   <div class="prose reveal">
-    <p class="kicker">Part V · The Quieting</p>
-    <h2 class="section-title">Horror Lowered Its Voice</h2>
-    <p>Three quieter revolutions, measured across every poster. First: the shout is a mountain. The quiet silent-era sheets climb to the "SEE! SHOCKING!" peak of the mid-'50s — and then horror spends seventy years lowering its voice, down to today's near-silent artwork.</p>
+    <p class="kicker" data-i18n="p5_kicker">Part V · The Quieting</p>
+    <h2 class="section-title" data-i18n="p5_title">Horror Lowered Its Voice</h2>
+    <p data-i18n="p5_body">Three quieter revolutions, measured across every poster. First: the shout is a mountain. The quiet silent-era sheets climb to the "SEE! SHOCKING!" peak of the mid-'50s — and then horror spends seventy years lowering its voice, down to today's near-silent artwork.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="quiet" viewBox="0 0 960 340" width="100%"></svg>
-  <p class="note" style="margin-top:10px">FULL RUN — n = 18,716 posters (TMDB), MSER text-region proxy, 5-yr rolling mean. Trend-comparable across eras; absolute level is an upper bound.</p></div>
+  <p class="note" style="margin-top:10px" data-i18n="p5_quiet_note_n">FULL RUN — n = 18,716 posters (TMDB), MSER text-region proxy, 5-yr rolling mean. Trend-comparable across eras; absolute level is an upper bound.</p></div>
 
   <div class="prose reveal" style="margin-top:70px">
-    <p>What "text-like coverage" actually flags, poster by poster: five specimens spanning the shout-to-whisper arc, from the atomic-pulp peak down to a single quiet word. The amber boxes below are the real output of the same MSER pass charted above — not illustrative, detected, photographic texture and false positives included.</p>
+    <p data-i18n="p5_textlike_intro">What "text-like coverage" actually flags, poster by poster: five specimens spanning the shout-to-whisper arc, from the atomic-pulp peak down to a single quiet word. The amber boxes below are the real output of the same MSER pass charted above — not illustrative, detected, photographic texture and false positives included.</p>
   </div>
   <div class="quiet-grid">
     <div class="compare-card reveal">
       <div class="compare-poster" id="tx-crab"><img class="tx-mask" src="assets/posters/textmask_26946.png" alt=""></div>
-      <p class="compare-cap"><b>Attack of the Crab Monsters (1957)</b>The title alone eats the top third of the sheet — then the detector keeps firing on every glint, shadow and film-grain fleck in the pin-up art below it. This is the "upper bound" caveat made visible: real lettering and pure texture trip the same wire.</p>
-      <p class="compare-stat">text-like coverage <b>61%</b> (dataset high)</p>
+      <p class="compare-cap" data-i18n="cap_crab"><b>Attack of the Crab Monsters (1957)</b>The title alone eats the top third of the sheet — then the detector keeps firing on every glint, shadow and film-grain fleck in the pin-up art below it. This is the "upper bound" caveat made visible: real lettering and pure texture trip the same wire.</p>
+      <p class="compare-stat" data-i18n="stat_crab">text-like coverage <b>61%</b> (dataset high)</p>
     </div>
     <div class="compare-card reveal">
       <div class="compare-poster" id="tx-notld"><img class="tx-mask" src="assets/posters/textmask_10331.png" alt=""></div>
-      <p class="compare-cap"><b>Night of the Living Dead (1968)</b>Still a shout — three stacked words command the top third, boxed almost as tightly as real lettering gets. But most of the density below comes from grain and contrast in the collaged faces, not ink.</p>
-      <p class="compare-stat">text-like coverage <b>45%</b></p>
+      <p class="compare-cap" data-i18n="cap_notld"><b>Night of the Living Dead (1968)</b>Still a shout — three stacked words command the top third, boxed almost as tightly as real lettering gets. But most of the density below comes from grain and contrast in the collaged faces, not ink.</p>
+      <p class="compare-stat" data-i18n="stat_notld">text-like coverage <b>45%</b></p>
     </div>
     <div class="compare-card reveal">
       <div class="compare-poster" id="tx-phantasm"><img class="tx-mask" src="assets/posters/textmask_9638.png" alt=""></div>
-      <p class="compare-cap"><b>Phantasm (1979)</b>Halfway down the mountain: the logo is a fraction of the '50s peak's size, and it's nearly the only place the detector fires with any real density — the painted illustration itself stays mostly unboxed.</p>
-      <p class="compare-stat">text-like coverage <b>31%</b></p>
+      <p class="compare-cap" data-i18n="cap_phantasm"><b>Phantasm (1979)</b>Halfway down the mountain: the logo is a fraction of the '50s peak's size, and it's nearly the only place the detector fires with any real density — the painted illustration itself stays mostly unboxed.</p>
+      <p class="compare-stat" data-i18n="stat_phantasm">text-like coverage <b>31%</b></p>
     </div>
     <div class="compare-card reveal">
       <div class="compare-poster" id="tx-scream"><img class="tx-mask" src="assets/posters/textmask_4232.png" alt=""></div>
-      <p class="compare-cap"><b>Scream (1996)</b>One word, bottom-anchored, clean sans-serif — the detector boxes it tightly and finds almost nothing else on the sheet. The '90s "meta" look was already most of the way to today's whisper.</p>
-      <p class="compare-stat">text-like coverage <b>19%</b></p>
+      <p class="compare-cap" data-i18n="cap_scream"><b>Scream (1996)</b>One word, bottom-anchored, clean sans-serif — the detector boxes it tightly and finds almost nothing else on the sheet. The '90s "meta" look was already most of the way to today's whisper.</p>
+      <p class="compare-stat" data-i18n="stat_scream">text-like coverage <b>19%</b></p>
     </div>
     <div class="compare-card reveal">
       <div class="compare-poster" id="tx-midsommar"><img class="tx-mask" src="assets/posters/textmask_530385.png" alt=""></div>
-      <p class="compare-cap"><b>Midsommar (2019)</b>A few stray boxes on the flowers below are nearly the whole reading — the thin serif logo barely registers as text at all. This is what the whisper looks like, pixel by pixel.</p>
-      <p class="compare-stat">text-like coverage <b>9%</b></p>
+      <p class="compare-cap" data-i18n="cap_midsommar"><b>Midsommar (2019)</b>A few stray boxes on the flowers below are nearly the whole reading — the thin serif logo barely registers as text at all. This is what the whisper looks like, pixel by pixel.</p>
+      <p class="compare-stat" data-i18n="stat_midsommar">text-like coverage <b>9%</b></p>
     </div>
   </div>
-  <p class="note reveal" style="max-width:960px;margin:14px auto 0;padding:0 24px">Boxes shown are the actual MSER glyph-candidate regions (delta=5, 15–2,000px² area, 0.1–12 aspect ratio) detected at the same 180px analysis width used across the full run — not merged or cleaned up. The scatter across photographic texture above is the method's honest failure mode: trend-comparable across a century, not a precise per-poster reading.</p>
+  <p class="note reveal" style="max-width:960px;margin:14px auto 0;padding:0 24px" data-i18n="p5_mser_note">Boxes shown are the actual MSER glyph-candidate regions (delta=5, 15–2,000px² area, 0.1–12 aspect ratio) detected at the same 180px analysis width used across the full run — not merged or cleaned up. The scatter across photographic texture above is the method's honest failure mode: trend-comparable across a century, not a precise per-poster reading.</p>
 
   <div class="prose reveal" style="margin-top:70px">
-    <p>Second: posters became obsessively symmetric. Mirror-balance climbs relentlessly and then leaps after 2010 — the measurable fingerprint of elevated horror's centered, ritual compositions.</p>
+    <p data-i18n="p5_symmetry_body">Second: posters became obsessively symmetric. Mirror-balance climbs relentlessly and then leaps after 2010 — the measurable fingerprint of elevated horror's centered, ritual compositions.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="symmetry" viewBox="0 0 960 340" width="100%"></svg>
-  <p class="note" style="margin-top:10px">FULL RUN — horizontal mirror similarity (0–1), 5-yr rolling mean.</p></div>
+  <p class="note" style="margin-top:10px" data-i18n="p5_sym_note_n">FULL RUN — horizontal mirror similarity (0–1), 5-yr rolling mean.</p></div>
 
   <div class="prose reveal" style="margin-top:70px">
-    <p>What mirror similarity actually catches, poster by poster: fold each sheet on the white center line below and ask, pixel by pixel, how far the left half is from the right half's reflection. High scores mean the two halves nearly match; low scores mean they don't. We dropped the live difference heatmap — on asymmetric sheets it just looked like a second, flipped poster — so what you see is the fold the score uses, plus the number.</p>
+    <p data-i18n="p5_sym_intro">What mirror similarity actually catches, poster by poster: fold each sheet on the white center line below and ask, pixel by pixel, how far the left half is from the right half's reflection. High scores mean the two halves nearly match; low scores mean they don't. We dropped the live difference heatmap — on asymmetric sheets it just looked like a second, flipped poster — so what you see is the fold the score uses, plus the number.</p>
   </div>
   <div class="symmetry-grid">
     <div class="compare-card reveal">
-      <div class="compare-poster" id="sy-braid"><img class="sym-base" src="assets/posters/510284.jpg" alt="Braid"><div class="sym-center"></div><div class="sym-tag">fold line</div></div>
-      <p class="compare-cap"><b>Braid (2019)</b>A kaleidoscope collage built to be mirrored — skulls, faces and antlers folded around dead center. About as close to a true reflection as an illustrated poster gets.</p>
-      <p class="compare-stat">mirror similarity <b>0.98</b></p>
+      <div class="compare-poster" id="sy-braid"><img class="sym-base" src="assets/posters/510284.jpg" alt="Braid"><div class="sym-center"></div><div class="sym-tag" data-i18n="fold_1">fold line</div></div>
+      <p class="compare-cap" data-i18n="cap_braid"><b>Braid (2019)</b>A kaleidoscope collage built to be mirrored — skulls, faces and antlers folded around dead center. About as close to a true reflection as an illustrated poster gets.</p>
+      <p class="compare-stat" data-i18n="stat_braid">mirror similarity <b>0.98</b></p>
     </div>
     <div class="compare-card reveal">
-      <div class="compare-poster" id="sy-occult"><img class="sym-base" src="assets/posters/649294.jpg" alt="History of the Occult"><div class="sym-center"></div><div class="sym-tag">fold line</div></div>
-      <p class="compare-cap"><b>History of the Occult (2020)</b>A face framed dead-center, hands mirrored on both temples — exactly the "centered, ritual" composition the chart above says elevated horror fell for after 2010.</p>
-      <p class="compare-stat">mirror similarity <b>0.98</b></p>
+      <div class="compare-poster" id="sy-occult"><img class="sym-base" src="assets/posters/649294.jpg" alt="History of the Occult"><div class="sym-center"></div><div class="sym-tag" data-i18n="fold_2">fold line</div></div>
+      <p class="compare-cap" data-i18n="cap_occult"><b>History of the Occult (2020)</b>A face framed dead-center, hands mirrored on both temples — exactly the "centered, ritual" composition the chart above says elevated horror fell for after 2010.</p>
+      <p class="compare-stat" data-i18n="stat_occult">mirror similarity <b>0.98</b></p>
     </div>
     <div class="compare-card reveal">
-      <div class="compare-poster" id="sy-getout"><img class="sym-base" src="assets/posters/419430.jpg" alt="Get Out"><div class="sym-center"></div><div class="sym-tag">fold line</div></div>
-      <p class="compare-cap"><b>Get Out (2017)</b>The figure is dead-center — but the background is split black-left, white-right. To a person this reads as a balanced, deliberate composition. To a pixel-mirror test it's a near-total mismatch: a real gap between "centered" and "symmetric."</p>
-      <p class="compare-stat">mirror similarity <b>0.45</b></p>
+      <div class="compare-poster" id="sy-getout"><img class="sym-base" src="assets/posters/419430.jpg" alt="Get Out"><div class="sym-center"></div><div class="sym-tag" data-i18n="fold_3">fold line</div></div>
+      <p class="compare-cap" data-i18n="cap_getout"><b>Get Out (2017)</b>The figure is dead-center — but the background is split black-left, white-right. To a person this reads as a balanced, deliberate composition. To a pixel-mirror test it's a near-total mismatch: a real gap between "centered" and "symmetric."</p>
+      <p class="compare-stat" data-i18n="stat_getout">mirror similarity <b>0.45</b></p>
     </div>
     <div class="compare-card reveal">
-      <div class="compare-poster" id="sy-hitcher"><img class="sym-base" src="assets/posters/8398.jpg" alt="The Hitcher"><div class="sym-center"></div><div class="sym-tag">fold line</div></div>
-      <p class="compare-cap"><b>The Hitcher (2007)</b>A single figure planted hard on one side of the sheet, empty road on the other — fold the poster on the white line and the two halves don't match.</p>
-      <p class="compare-stat">mirror similarity <b>0.59</b></p>
+      <div class="compare-poster" id="sy-hitcher"><img class="sym-base" src="assets/posters/8398.jpg" alt="The Hitcher"><div class="sym-center"></div><div class="sym-tag" data-i18n="fold_4">fold line</div></div>
+      <p class="compare-cap" data-i18n="cap_hitcher"><b>The Hitcher (2007)</b>A single figure planted hard on one side of the sheet, empty road on the other — fold the poster on the white line and the two halves don't match.</p>
+      <p class="compare-stat" data-i18n="stat_hitcher">mirror similarity <b>0.59</b></p>
     </div>
     <div class="compare-card reveal">
-      <div class="compare-poster" id="sy-ghostestate"><img class="sym-base" src="assets/posters/802887.jpg" alt="Ghost Estate"><div class="sym-center"></div><div class="sym-tag">fold line</div></div>
-      <p class="compare-cap"><b>Ghost Estate (2019)</b>The single lowest mirror-similarity score in the entire 18,716-poster dataset — on a poster that is, thematically, <em>about</em> a black/white split down the middle. The design quotes symmetry; the pixels don't deliver it.</p>
-      <p class="compare-stat">mirror similarity <b>0.10</b> (dataset minimum)</p>
+      <div class="compare-poster" id="sy-ghostestate"><img class="sym-base" src="assets/posters/802887.jpg" alt="Ghost Estate"><div class="sym-center"></div><div class="sym-tag" data-i18n="fold_5">fold line</div></div>
+      <p class="compare-cap" data-i18n="cap_ghostestate"><b>Ghost Estate (2019)</b>The single lowest mirror-similarity score in the entire 18,716-poster dataset — on a poster that is, thematically, <em>about</em> a black/white split down the middle. The design quotes symmetry; the pixels don't deliver it.</p>
+      <p class="compare-stat" data-i18n="stat_ghostestate">mirror similarity <b>0.10</b> (dataset minimum)</p>
     </div>
   </div>
-  <p class="note reveal" style="max-width:960px;margin:20px auto 0;padding:0 24px">White line = the fold the score uses. The pipeline measures per-pixel |gray − mirrored gray| at 64×96 across that midline — high scores mean the two halves nearly match; low scores mean they don't. Caveat: this is pixel-value mirror-match, not human-perceived balance — a centered subject on a split-tone background can score as "asymmetric" even when it reads as balanced. n = 18,716 (TMDB), full run.</p>
+  <p class="note reveal" style="max-width:960px;margin:20px auto 0;padding:0 24px" data-i18n="p5_sym_method_note">White line = the fold the score uses. The pipeline measures per-pixel |gray − mirrored gray| at 64×96 across that midline — high scores mean the two halves nearly match; low scores mean they don't. Caveat: this is pixel-value mirror-match, not human-perceived balance — a centered subject on a split-tone background can score as "asymmetric" even when it reads as balanced. n = 18,716 (TMDB), full run.</p>
 
   <div class="prose reveal" style="margin-top:70px">
-    <p>And third: the compositions themselves stopped leaning. We measured how much of each poster's linework — a blade, a slashed logo, a body thrown off-axis — runs on a diagonal rather than sitting flat and upright. It peaks in the atomic-pulp '40s and '50s, then falls for seventy straight years: today's horror poster stands up straight.</p>
+    <p data-i18n="p5_diag_body">And third: the compositions themselves stopped leaning. We measured how much of each poster's linework — a blade, a slashed logo, a body thrown off-axis — runs on a diagonal rather than sitting flat and upright. It peaks in the atomic-pulp '40s and '50s, then falls for seventy straight years: today's horror poster stands up straight.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="diagonal" viewBox="0 0 960 340" width="100%"></svg>
-  <p class="note" style="margin-top:10px">FULL RUN — n = 18,716 posters, share of Hough-detected line length at a 25–65° angle, 5-yr mean. A real share of this is stylized diagonal title lettering, not only figure pose — see methodology.</p></div>
+  <p class="note" style="margin-top:10px" data-i18n="p5_diag_note_n">FULL RUN — n = 18,716 posters, share of Hough-detected line length at a 25–65° angle, 5-yr mean. A real share of this is stylized diagonal title lettering, not only figure pose — see methodology.</p></div>
 
   <div class="prose reveal" style="margin-top:70px">
-    <p>What does a high diagonal_score actually look like on the sheet? Five specimens the algorithm flagged, spanning five decades, none of them repeats from Exhibit A or B. The red dashed lines below are the real output of the same Hough-transform pass charted above — not illustrative, detected. Watch each sheet dim so the lines can take the stage.</p>
+    <p data-i18n="p5_diag_intro">What does a high diagonal_score actually look like on the sheet? Five specimens the algorithm flagged, spanning five decades, none of them repeats from Exhibit A or B. The red dashed lines below are the real output of the same Hough-transform pass charted above — not illustrative, detected. Watch each sheet dim so the lines can take the stage.</p>
   </div>
   <div class="diagonal-grid">
     <div class="compare-card reveal">
@@ -835,8 +860,8 @@ footer .logo span{color:var(--blood)}
           <line x1="53.3" y1="106.65" x2="83.9" y2="49.5"></line>
         </svg>
       </div>
-      <p class="compare-cap"><b>Doctor X (1932)</b>The title lettering isn't near a diagonal — it <em>is</em> one. A giant yellow "X" slashes corner to corner, doing triple duty as logo, warning sign, and composition.</p>
-      <p class="compare-stat">diagonal score <b>0.65</b></p>
+      <p class="compare-cap" data-i18n="cap_doctorx"><b>Doctor X (1932)</b>The title lettering isn't near a diagonal — it <em>is</em> one. A giant yellow "X" slashes corner to corner, doing triple duty as logo, warning sign, and composition.</p>
+      <p class="compare-stat" data-i18n="stat_doctorx">diagonal score <b>0.65</b></p>
     </div>
     <div class="compare-card reveal">
       <div class="compare-poster" id="dg-space" style="--dgd:-.7s">
@@ -845,8 +870,8 @@ footer .logo span{color:var(--blood)}
           <line x1="2.8" y1="118.95" x2="61.7" y2="76.05"></line>
         </svg>
       </div>
-      <p class="compare-cap"><b>It Came from Outer Space (1953)</b>The fleeing cast is arranged on one long sightline toward the saucer's glow, and the stacked title climbs the same angle up the right edge.</p>
-      <p class="compare-stat">diagonal score <b>0.58</b></p>
+      <p class="compare-cap" data-i18n="cap_outerspace"><b>It Came from Outer Space (1953)</b>The fleeing cast is arranged on one long sightline toward the saucer's glow, and the stacked title climbs the same angle up the right edge.</p>
+      <p class="compare-stat" data-i18n="stat_outerspace">diagonal score <b>0.58</b></p>
     </div>
     <div class="compare-card reveal">
       <div class="compare-poster" id="dg-howling" style="--dgd:-1.4s">
@@ -855,8 +880,8 @@ footer .logo span{color:var(--blood)}
           <line x1="51.1" y1="56.7" x2="81.1" y2="6.15"></line>
         </svg>
       </div>
-      <p class="compare-cap"><b>The Howling (1981)</b>Four claw-rips tear across the frame on a consistent diagonal, dragging the eye from the screaming mouth up to empty space — violence rendered as pure geometry.</p>
-      <p class="compare-stat">diagonal score <b>0.64</b></p>
+      <p class="compare-cap" data-i18n="cap_howling"><b>The Howling (1981)</b>Four claw-rips tear across the frame on a consistent diagonal, dragging the eye from the screaming mouth up to empty space — violence rendered as pure geometry.</p>
+      <p class="compare-stat" data-i18n="stat_howling">diagonal score <b>0.64</b></p>
     </div>
     <div class="compare-card reveal">
       <div class="compare-poster" id="dg-spawn" style="--dgd:-2.1s">
@@ -865,8 +890,8 @@ footer .logo span{color:var(--blood)}
           <line x1="44.4" y1="65.55" x2="72.2" y2="101.1"></line>
         </svg>
       </div>
-      <p class="compare-cap"><b>Spawn (1997)</b>One uninterrupted cape edge runs the full length of the sheet, corner to corner — the whole silhouette built as a single diagonal blade.</p>
-      <p class="compare-stat">diagonal score <b>0.76</b></p>
+      <p class="compare-cap" data-i18n="cap_spawn"><b>Spawn (1997)</b>One uninterrupted cape edge runs the full length of the sheet, corner to corner — the whole silhouette built as a single diagonal blade.</p>
+      <p class="compare-stat" data-i18n="stat_spawn">diagonal score <b>0.76</b></p>
     </div>
     <div class="compare-card reveal">
       <div class="compare-poster" id="dg-avp" style="--dgd:-2.8s">
@@ -875,27 +900,27 @@ footer .logo span{color:var(--blood)}
           <line x1="47.8" y1="77.85" x2="73.9" y2="120.0"></line>
         </svg>
       </div>
-      <p class="compare-cap"><b>AVP: Alien vs. Predator (2004)</b>Two creature heads, two studios' worth of IP, arranged along one diagonal seam — Alien upper-left, Predator lower-right, the rivalry staged as a fault line.</p>
-      <p class="compare-stat">diagonal score <b>0.69</b></p>
+      <p class="compare-cap" data-i18n="cap_avp"><b>AVP: Alien vs. Predator (2004)</b>Two creature heads, two studios' worth of IP, arranged along one diagonal seam — Alien upper-left, Predator lower-right, the rivalry staged as a fault line.</p>
+      <p class="compare-stat" data-i18n="stat_avp">diagonal score <b>0.69</b></p>
     </div>
   </div>
-  <p class="note reveal" style="max-width:960px;margin:14px auto 0;padding:0 24px">Lines shown are the actual longest Hough segments (of ≥25 total per poster on average) that fell in the 25–65° diagonal band for that specimen, at the same 180px analysis width used across the full run. Animation dims the artwork so the detected segments can be read; hover any poster to pause.</p>
+  <p class="note reveal" style="max-width:960px;margin:14px auto 0;padding:0 24px" data-i18n="p5_hough_note">Lines shown are the actual longest Hough segments (of ≥25 total per poster on average) that fell in the 25–65° diagonal band for that specimen, at the same 180px analysis width used across the full run. Animation dims the artwork so the detected segments can be read; hover any poster to pause.</p>
 </section>
 
 <!-- ============ THE LETTERING OF FEAR ============ -->
 <section class="chart-block" style="padding-top:0">
   <div class="prose reveal">
-    <p class="kicker">Part VI · Lettering</p>
-    <h2 class="section-title">Fear Stopped Shouting Its Name</h2>
-    <p>Color wasn't the only language on the sheet — so was the title. We placed every poster on a single axis: from <em>ornate</em> hand-drawn display lettering — the painted, dimensional, illustrated logos of the pulp era — to <em>minimal</em> type, the thin, quiet words of elevated horror. In the 1940s, <strong>63%</strong> of posters wore ornate display lettering and barely 4% were minimal. By the 2020s that has inverted — ornate down to 12%, minimal up to <strong>32%</strong> and now the single largest register.</p>
+    <p class="kicker" data-i18n="p6_kicker">Part VI · Lettering</p>
+    <h2 class="section-title" data-i18n="p6_title">Fear Stopped Shouting Its Name</h2>
+    <p data-i18n="p6_body">Color wasn't the only language on the sheet — so was the title. We placed every poster on a single axis: from <em>ornate</em> hand-drawn display lettering — the painted, dimensional, illustrated logos of the pulp era — to <em>minimal</em> type, the thin, quiet words of elevated horror. In the 1940s, <strong>63%</strong> of posters wore ornate display lettering and barely 4% were minimal. By the 2020s that has inverted — ornate down to 12%, minimal up to <strong>32%</strong> and now the single largest register.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="typo" viewBox="0 0 960 380" width="100%"></svg>
-  <p class="note" style="margin-top:10px">FULL CENTURY — n = 18,716 posters (TMDB). Registers are quintiles of an ornate↔minimal typographic axis (CLIP zero-shot on the whole poster: similarity to "ornate hand-drawn display lettering" minus "clean minimal type"). Validated against hand-ranked specimens (corr 0.81); decade trend r = −0.93. This measures the <em>decorative character</em> of the title treatment, not a specific typeface — a proxy, honest about its limits: reading the exact letterforms of stylized horror titles defeats OCR and font-ID models alike.</p>
+  <p class="note" style="margin-top:10px" data-i18n="p6_note_n">FULL CENTURY — n = 18,716 posters (TMDB). Registers are quintiles of an ornate↔minimal typographic axis (CLIP zero-shot on the whole poster: similarity to "ornate hand-drawn display lettering" minus "clean minimal type"). Validated against hand-ranked specimens (corr 0.81); decade trend r = −0.93. This measures the <em>decorative character</em> of the title treatment, not a specific typeface — a proxy, honest about its limits: reading the exact letterforms of stylized horror titles defeats OCR and font-ID models alike.</p>
   <div class="typo-strip reveal">
     <div class="ts-row ts-head" id="ts-eras"><div class="ts-tag ts-tag-blank"></div></div>
-    <div class="ts-row" id="ts-ornate"><div class="ts-tag"><span class="ts-dot" style="background:#c99a3a"></span>Most ornate</div></div>
-    <div class="ts-row" id="ts-minimal"><div class="ts-tag"><span class="ts-dot" style="background:#cdc6b6"></span>Cleanest / minimal</div></div>
-    <p class="note" style="margin-top:8px">The most- and least-ornate title treatment the model found in each era. Fear's lettering thins from painted, dimensional logos to a single quiet word.</p>
+    <div class="ts-row" id="ts-ornate"><div class="ts-tag"><span class="ts-dot" style="background:#c99a3a"></span><span data-i18n="p6_tag_ornate">Most ornate</span></div></div>
+    <div class="ts-row" id="ts-minimal"><div class="ts-tag"><span class="ts-dot" style="background:#cdc6b6"></span><span data-i18n="p6_tag_minimal">Cleanest / minimal</span></div></div>
+    <p class="note" style="margin-top:8px" data-i18n="p6_note_strip">The most- and least-ornate title treatment the model found in each era. Fear's lettering thins from painted, dimensional logos to a single quiet word.</p>
   </div>
   </div>
 </section>
@@ -903,40 +928,40 @@ footer .logo span{color:var(--blood)}
 <!-- ============ TWO KINDS OF BLOOD ============ -->
 <section class="chart-block" style="padding-top:0">
   <div class="prose reveal">
-    <p class="kicker">Part VII · Two Kinds of Blood</p>
-    <h2 class="section-title">Blood Left the Color Behind</h2>
-    <p>The red chart measured a <em>color</em>. This measures a <em>concept</em>: we showed a vision-language model patches of every poster and asked one question — <em>does this look like blood</em>, regardless of exact hue? For fifty years the two measures agree almost exactly. Then, with the slasher boom, they split — the color of blood stopped rising, but its recognizable presence on the sheet kept climbing for another thirty years.</p>
+    <p class="kicker" data-i18n="p7_kicker">Part VII · Two Kinds of Blood</p>
+    <h2 class="section-title" data-i18n="p7_title">Blood Left the Color Behind</h2>
+    <p data-i18n="p7_body">The red chart measured a <em>color</em>. This measures a <em>concept</em>: we showed a vision-language model patches of every poster and asked one question — <em>does this look like blood</em>, regardless of exact hue? For fifty years the two measures agree almost exactly. Then, with the slasher boom, they split — the color of blood stopped rising, but its recognizable presence on the sheet kept climbing for another thirty years.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="blood2" viewBox="0 0 960 380" width="100%"></svg>
-  <p class="note" style="margin-top:10px">Pixel-red: FULL CENTURY, n=18,716 (TMDB). Model-detected blood: a stratified sample covering all 11 decades, n=1,721, CLIP zero-shot per 2×2 poster patch — validated against hand-inspected artwork (Jaws, Friday the 13th, Blair Witch) before trusting it. Decade means.</p>
+  <p class="note" style="margin-top:10px" data-i18n="p7_note_n">Pixel-red: FULL CENTURY, n=18,716 (TMDB). Model-detected blood: a stratified sample covering all 11 decades, n=1,721, CLIP zero-shot per 2×2 poster patch — validated against hand-inspected artwork (Jaws, Friday the 13th, Blair Witch) before trusting it. Decade means.</p>
   </div>
   <div class="typo-strip reveal">
-    <p class="note" style="margin-bottom:10px">Where the two measures in the chart above actually disagree, poster by poster: high pixel-red with zero semantic blood detected, and the reverse.</p>
+    <p class="note" style="margin-bottom:10px" data-i18n="p7_note_strip">Where the two measures in the chart above actually disagree, poster by poster: high pixel-red with zero semantic blood detected, and the reverse.</p>
     <div class="ts-row ts-head" id="tb-eras"><div class="ts-tag ts-tag-blank"></div></div>
-    <div class="ts-row" id="tb-pixel"><div class="ts-tag"><span class="ts-dot" style="background:var(--blood)"></span>Looks red, isn't "blood"</div></div>
-    <div class="ts-row" id="tb-semantic"><div class="ts-tag"><span class="ts-dot" style="background:#c99a3a"></span>Reads as blood, isn't red</div></div>
-    <p class="note" style="margin-top:8px">Both rows drawn from the same validated 1,721-poster stratified sample as the chart above; "blood" = clip_blood zero-shot score. Bottom-row specimens hand-checked for literal blood — early high scores often fire on red cloth or type instead; the first cell is the earliest verified case in the sample (1959).</p>
+    <div class="ts-row" id="tb-pixel"><div class="ts-tag"><span class="ts-dot" style="background:var(--blood)"></span><span data-i18n="p7_tag_pixel">Looks red, isn't "blood"</span></div></div>
+    <div class="ts-row" id="tb-semantic"><div class="ts-tag"><span class="ts-dot" style="background:#c99a3a"></span><span data-i18n="p7_tag_semantic">Reads as blood, isn't red</span></div></div>
+    <p class="note" style="margin-top:8px" data-i18n="p7_note_select">Both rows drawn from the same validated 1,721-poster stratified sample as the chart above; "blood" = clip_blood zero-shot score. Bottom-row specimens hand-checked for literal blood — early high scores often fire on red cloth or type instead; the first cell is the earliest verified case in the sample (1959).</p>
   </div>
 </section>
 
 <!-- ============ EXHIBIT B: THE GRID BENEATH ============ -->
 <section class="chart-block" style="padding-top:0">
   <div class="prose reveal">
-    <p class="kicker">Exhibit B · Composition</p>
-    <h2 class="section-title">Thirds Perfect,<br>Still Off Balance</h2>
-    <p>Every poster is a design decision, not just a color choice. We measured three things per sheet — rule-of-thirds placement, saliency balance, and shared alignment lines between design blocks — with plain OpenCV geometry. The three specimens below are not the same overlay: <em>Jaws</em> and <em>Halloween</em> show thirds + balance; <em>The Exorcist</em> shows the third measure, alignment, which only reads when separate credit/title blocks share a line.</p>
+    <p class="kicker" data-i18n="exb_kicker">Exhibit B · Composition</p>
+    <h2 class="section-title" data-i18n="exb_title">Thirds Perfect,<br>Still Off Balance</h2>
+    <p data-i18n="exb_lede">Every poster is a design decision, not just a color choice. We measured three things per sheet — rule-of-thirds placement, saliency balance, and shared alignment lines between design blocks — with plain OpenCV geometry. The three specimens below are not the same overlay: <em>Jaws</em> and <em>Halloween</em> show thirds + balance; <em>The Exorcist</em> shows the third measure, alignment, which only reads when separate credit/title blocks share a line.</p>
   </div>
-  <div class="cg-legend reveal note" aria-label="Overlay legend">
-    <span class="cg-leg"><i class="cg-dot thirds"></i> nearest rule-of-thirds intersection</span>
-    <span class="cg-leg"><i class="cg-dot centroid"></i> mass centroid (main visual)</span>
-    <span class="cg-leg"><i class="cg-dot balance"></i> saliency “visual weight”</span>
-    <span class="cg-leg"><i class="cg-dot center"></i> geometric center</span>
-    <span class="cg-leg"><i class="cg-swatch box"></i> mass / aligned blocks</span>
-    <span class="cg-leg"><i class="cg-swatch lines"></i> thirds grid · shared alignment</span>
+  <div class="cg-legend reveal note" data-i18n-aria="aria_overlay_legend" aria-label="Overlay legend">
+    <span class="cg-leg"><i class="cg-dot thirds"></i> <span data-i18n="leg_thirds">nearest rule-of-thirds intersection</span></span>
+    <span class="cg-leg"><i class="cg-dot centroid"></i> <span data-i18n="leg_centroid">mass centroid (main visual)</span></span>
+    <span class="cg-leg"><i class="cg-dot balance"></i> <span data-i18n="leg_saliency">saliency “visual weight”</span></span>
+    <span class="cg-leg"><i class="cg-dot center"></i> <span data-i18n="leg_center">geometric center</span></span>
+    <span class="cg-leg"><i class="cg-swatch box"></i> <span data-i18n="leg_mass">mass / aligned blocks</span></span>
+    <span class="cg-leg"><i class="cg-swatch lines"></i> <span data-i18n="leg_grid">thirds grid · shared alignment</span></span>
   </div>
   <div class="compare-grid">
     <div class="compare-card reveal">
-      <p class="compare-tag">thirds + balance</p>
+      <p class="compare-tag" data-i18n="tag_thirds2">thirds + balance</p>
       <div class="compare-poster" id="cg-jaws">
         <div class="thirds-lines"><i class="v" style="left:33.3%"></i><i class="v" style="left:66.7%"></i><i class="h" style="top:33.3%"></i><i class="h" style="top:66.7%"></i></div>
         <div class="cg-box" style="left:12.8%;top:47.8%;width:82.2%;height:52.2%"></div>
@@ -944,13 +969,13 @@ footer .logo span{color:var(--blood)}
         <div class="cg-dot centroid" style="left:53.9%;top:73.9%"></div>
         <div class="cg-dot center" style="left:50%;top:50%"></div>
         <div class="cg-dot balance" style="left:50.9%;top:45.7%"></div>
-        <div class="cg-lab" style="left:4%;bottom:4%">mass centroid → thirds pt: 0.15</div>
+        <div class="cg-lab" style="left:4%;bottom:4%" data-i18n="lab_jaws">mass centroid → thirds pt: 0.15</div>
       </div>
-      <p class="compare-cap"><b>Jaws (1975)</b>The shark-and-swimmer mass (amber box) centers almost exactly on a thirds intersection (amber dot vs. white centroid dot) — and the saliency-weighted "visual weight" (red dot) lands almost dead on true center (hollow ring). Two independent measures agree: this is a textbook-balanced shot.</p>
-      <p class="compare-stat">thirds distance <b>0.15</b> · balance offset <b>0.04</b> — both near-best among the classics we spot-checked</p>
+      <p class="compare-cap" data-i18n="cap_jaws"><b>Jaws (1975)</b>The shark-and-swimmer mass (amber box) centers almost exactly on a thirds intersection (amber dot vs. white centroid dot) — and the saliency-weighted "visual weight" (red dot) lands almost dead on true center (hollow ring). Two independent measures agree: this is a textbook-balanced shot.</p>
+      <p class="compare-stat" data-i18n="stat_jaws">thirds distance <b>0.15</b> · balance offset <b>0.04</b> — both near-best among the classics we spot-checked</p>
     </div>
     <div class="compare-card reveal">
-      <p class="compare-tag">thirds + balance</p>
+      <p class="compare-tag" data-i18n="tag_thirds2">thirds + balance</p>
       <div class="compare-poster" id="cg-halloween">
         <div class="thirds-lines"><i class="v" style="left:33.3%"></i><i class="v" style="left:66.7%"></i><i class="h" style="top:33.3%"></i><i class="h" style="top:66.7%"></i></div>
         <div class="cg-box" style="left:18.3%;top:17.4%;width:75.0%;height:81.1%"></div>
@@ -958,64 +983,64 @@ footer .logo span{color:var(--blood)}
         <div class="cg-dot centroid" style="left:55.8%;top:58.0%"></div>
         <div class="cg-dot center" style="left:50%;top:50%"></div>
         <div class="cg-dot balance" style="left:52.8%;top:25.1%"></div>
-        <div class="cg-lab" style="left:4%;bottom:4%">thirds: 0.14 (best) · balance: 0.25 (worst)</div>
+        <div class="cg-lab" style="left:4%;bottom:4%" data-i18n="lab_halloween">thirds: 0.14 (best) · balance: 0.25 (worst)</div>
       </div>
-      <p class="compare-cap"><b>Halloween (1978)</b>By rule-of-thirds this is the <em>best</em>-placed shot we checked — the knife-and-pumpkin mass sits right on an intersection. But its visual weight (red dot) is nowhere near center: the black void below empties two-thirds of the frame on purpose. Thirds-perfect and off-balance can both be true on the same poster — and here, that imbalance is the point.</p>
-      <p class="compare-stat">thirds distance <b>0.14</b> · balance offset <b>0.25</b> — deliberately, not accidentally</p>
+      <p class="compare-cap" data-i18n="cap_halloween_cg"><b>Halloween (1978)</b>By rule-of-thirds this is the <em>best</em>-placed shot we checked — the knife-and-pumpkin mass sits right on an intersection. But its visual weight (red dot) is nowhere near center: the black void below empties two-thirds of the frame on purpose. Thirds-perfect and off-balance can both be true on the same poster — and here, that imbalance is the point.</p>
+      <p class="compare-stat" data-i18n="stat_halloween_cg">thirds distance <b>0.14</b> · balance offset <b>0.25</b> — deliberately, not accidentally</p>
     </div>
     <div class="compare-card reveal">
-      <p class="compare-tag">alignment lines</p>
+      <p class="compare-tag" data-i18n="tag_align">alignment lines</p>
       <div class="compare-poster" id="cg-exorcist">
         <div class="cg-box red" style="left:26.1%;top:47.4%;width:13.3%;height:4.8%"></div>
         <div class="cg-box red" style="left:70.0%;top:47.8%;width:11.1%;height:3.7%"></div>
         <div class="cg-line" style="left:32.75%;top:49.8%;width:44.3%"></div>
-        <div class="cg-lab" style="left:34%;top:38%">same line, opposite sides</div>
+        <div class="cg-lab" style="left:34%;top:38%" data-i18n="lab_exorcist">same line, opposite sides</div>
       </div>
-      <p class="compare-cap"><b>The Exorcist (1973)</b>Different overlay on purpose: alignment, not thirds. Nine separate design elements — tagline, credit blocks, the silhouette. The algorithm found shared lines: these two credit blocks, on opposite sides of the sheet, sit on the exact same horizontal (highlighted). A second, unmarked match: the tagline’s left edge lines up with the illustration’s edge.</p>
-      <p class="compare-stat">alignment score <b>0.056</b> (lower = tighter grid) · 9 elements, 2+ confirmed shared lines</p>
+      <p class="compare-cap" data-i18n="cap_exorcist"><b>The Exorcist (1973)</b>Different overlay on purpose: alignment, not thirds. Nine separate design elements — tagline, credit blocks, the silhouette. The algorithm found shared lines: these two credit blocks, on opposite sides of the sheet, sit on the exact same horizontal (highlighted). A second, unmarked match: the tagline’s left edge lines up with the illustration’s edge.</p>
+      <p class="compare-stat" data-i18n="stat_exorcist">alignment score <b>0.056</b> (lower = tighter grid) · 9 elements, 2+ confirmed shared lines</p>
     </div>
   </div>
-  <p class="note reveal" style="max-width:1120px;margin:20px auto 0;padding:0 24px">Grid & alignment via connected-component clustering of MSER text regions + gradient-magnitude contours (no LayoutParser/Detectron2 — see methodology). Balance via saliency-map centroid (OpenCV StaticSaliencySpectralResidual). Caveat: for full-bleed painted posters without one isolated figure, the "main visual mass" box can span nearly the whole sheet — thirds-distance then measures the whole composition's center of gravity, not one subject's placement. n = 18,716 (TMDB), full run.</p>
+  <p class="note reveal" style="max-width:1120px;margin:20px auto 0;padding:0 24px" data-i18n="exb_method_note">Grid & alignment via connected-component clustering of MSER text regions + gradient-magnitude contours (no LayoutParser/Detectron2 — see methodology). Balance via saliency-map centroid (OpenCV StaticSaliencySpectralResidual). Caveat: for full-bleed painted posters without one isolated figure, the "main visual mass" box can span nearly the whole sheet — thirds-distance then measures the whole composition's center of gravity, not one subject's placement. n = 18,716 (TMDB), full run.</p>
 
   <div class="prose reveal" style="margin-top:70px">
-    <p>One more shape, measured a different way — not the angle of a line, but the <em>width</em> of the composition itself. Picture slicing a poster into 8 horizontal strips and asking, strip by strip: how much of this row is visually "busy" — edges, contrast, detail — versus empty space? Below, the amber/red bands <em>are</em> that busy width, one per strip. A wide band low on the poster and a thin or missing one up top reads as a pyramid; the reverse reads as an inverted funnel. Five real specimens — none repeated from elsewhere in this piece.</p>
+    <p data-i18n="pyramid_intro">One more shape, measured a different way — not the angle of a line, but the <em>width</em> of the composition itself. Picture slicing a poster into 8 horizontal strips and asking, strip by strip: how much of this row is visually "busy" — edges, contrast, detail — versus empty space? Below, the amber/red bands <em>are</em> that busy width, one per strip. A wide band low on the poster and a thin or missing one up top reads as a pyramid; the reverse reads as an inverted funnel. Five real specimens — none repeated from elsewhere in this piece.</p>
   </div>
   <div class="pyramid-grid">
     <div class="compare-card reveal">
       <div class="compare-poster" id="pg-webdeception"></div>
-      <p class="compare-cap"><b>Web of Deception (1994)</b>Four faces lined up shoulder to shoulder across the full width of the bottom third — above them, almost nothing but blank space. About as literal a pyramid base as the dataset has to offer.</p>
-      <p class="compare-stat">pyramid shift <b>+0.56</b> (wide base)</p>
+      <p class="compare-cap" data-i18n="cap_web"><b>Web of Deception (1994)</b>Four faces lined up shoulder to shoulder across the full width of the bottom third — above them, almost nothing but blank space. About as literal a pyramid base as the dataset has to offer.</p>
+      <p class="compare-stat" data-i18n="stat_web">pyramid shift <b>+0.56</b> (wide base)</p>
     </div>
     <div class="compare-card reveal">
       <div class="compare-poster" id="pg-chameleon"></div>
-      <p class="compare-cap"><b>The Chameleon Killer (2003)</b>The killer's robe narrows toward the head; the row of tombstone silhouettes along the bottom edge is the widest, busiest strip on the whole sheet.</p>
-      <p class="compare-stat">pyramid shift <b>+0.50</b> (wide base)</p>
+      <p class="compare-cap" data-i18n="cap_chameleon"><b>The Chameleon Killer (2003)</b>The killer's robe narrows toward the head; the row of tombstone silhouettes along the bottom edge is the widest, busiest strip on the whole sheet.</p>
+      <p class="compare-stat" data-i18n="stat_chameleon">pyramid shift <b>+0.50</b> (wide base)</p>
     </div>
     <div class="compare-card reveal">
       <div class="compare-poster" id="pg-vampirebats"></div>
-      <p class="compare-cap"><b>Vampire Bats (2005)</b>The inverse: a swarm spans nearly the full width across the top third, fangs bared dead-center — then the entire bottom half of the sheet is flat, empty black. Nothing for the bands to measure down there at all.</p>
-      <p class="compare-stat">pyramid shift <b>-0.56</b> (wide top)</p>
+      <p class="compare-cap" data-i18n="cap_vampirebats"><b>Vampire Bats (2005)</b>The inverse: a swarm spans nearly the full width across the top third, fangs bared dead-center — then the entire bottom half of the sheet is flat, empty black. Nothing for the bands to measure down there at all.</p>
+      <p class="compare-stat" data-i18n="stat_vampirebats">pyramid shift <b>-0.56</b> (wide top)</p>
     </div>
     <div class="compare-card reveal">
       <div class="compare-poster" id="pg-returning"></div>
-      <p class="compare-cap"><b>The Returning (1983)</b>The top third is pure flat black — zero measurable detail. All of this poster's visual "weight" sits low: a wide wash of color and the title block, spanning most of the sheet's width.</p>
-      <p class="compare-stat">pyramid shift <b>+0.56</b> (wide base)</p>
+      <p class="compare-cap" data-i18n="cap_returning"><b>The Returning (1983)</b>The top third is pure flat black — zero measurable detail. All of this poster's visual "weight" sits low: a wide wash of color and the title block, spanning most of the sheet's width.</p>
+      <p class="compare-stat" data-i18n="stat_returning">pyramid shift <b>+0.56</b> (wide base)</p>
     </div>
     <div class="compare-card reveal">
       <div class="compare-poster" id="pg-nothing"></div>
-      <p class="compare-cap"><b>The Nothing (2011)</b>Barn doors thrown open, five figures inside — busy, wide, and consistent across the upper five-eighths of the sheet. Below the doorframe: nothing, literally, all black.</p>
-      <p class="compare-stat">pyramid shift <b>-0.55</b> (wide top)</p>
+      <p class="compare-cap" data-i18n="cap_nothing"><b>The Nothing (2011)</b>Barn doors thrown open, five figures inside — busy, wide, and consistent across the upper five-eighths of the sheet. Below the doorframe: nothing, literally, all black.</p>
+      <p class="compare-stat" data-i18n="stat_nothing">pyramid shift <b>-0.55</b> (wide top)</p>
     </div>
   </div>
-  <p class="note reveal" style="max-width:1120px;margin:20px auto 0;padding:0 24px">Bands: energy-weighted horizontal spread of gradient magnitude per 8 vertical bins, drawn at their real measured width and position. Picked for a clean, unambiguous signal — filtered out logo-only title cards and letterboxed video-still posters, which can fake the same number without a real compositional pyramid behind it. Across the full 18,716-poster dataset this measure averages out to roughly zero by decade — top-heavy and bottom-heavy compositions largely cancel out. It's a real per-poster signature, not a century-level trend (unlike diagonal composition — see Part V).</p>
+  <p class="note reveal" style="max-width:1120px;margin:20px auto 0;padding:0 24px" data-i18n="pyramid_note">Bands: energy-weighted horizontal spread of gradient magnitude per 8 vertical bins, drawn at their real measured width and position. Picked for a clean, unambiguous signal — filtered out logo-only title cards and letterboxed video-still posters, which can fake the same number without a real compositional pyramid behind it. Across the full 18,716-poster dataset this measure averages out to roughly zero by decade — top-heavy and bottom-heavy compositions largely cancel out. It's a real per-poster signature, not a century-level trend (unlike diagonal composition — see Part V).</p>
 </section>
 
 <!-- ============ THE CENTURY STRIP (retired; markup kept for restore) ============ -->
 <section class="chart-block" style="padding-bottom:20px;display:none" aria-hidden="true">
   <div class="prose reveal">
-    <p class="kicker">Coda</p>
-    <h2 class="section-title">The Century Strip</h2>
-    <p>Eleven decades, eleven specimens — each the statistically most typical famous poster of its ten years. Keep scrolling: the strip moves sideways through the century, and each poster is dissected as it reaches the center.</p>
+    <p class="kicker" data-i18n="coda_kicker">Coda</p>
+    <h2 class="section-title" data-i18n="coda_title">The Century Strip</h2>
+    <p data-i18n="coda_body">Eleven decades, eleven specimens — each the statistically most typical famous poster of its ten years. Keep scrolling: the strip moves sideways through the century, and each poster is dissected as it reaches the center.</p>
   </div>
 </section>
 <div class="strip-wrap" id="strip-wrap" style="display:none" aria-hidden="true">
@@ -1028,12 +1053,14 @@ footer .logo span{color:var(--blood)}
 <!-- ============ LOOK UP A POSTER ============ -->
 <section class="lookup" id="lookup">
   <div class="prose reveal">
-    <p class="kicker">Look up</p>
-    <h2 class="section-title">Dissect any poster</h2>
-    <p>Type any title from the corpus. The panel below pulls every measurement we have for that sheet — color, faces, creature, lettering, composition, and (when the poster was in the stratified sample) semantic CLIP tags like blood or weapon.</p>
+    <p class="kicker" data-i18n="lookup_kicker">Look up</p>
+    <h2 class="section-title" data-i18n="lookup_title">Dissect any poster</h2>
+    <p data-i18n="lookup_body">Type any title from the corpus. The panel below pulls every measurement we have for that sheet — color, faces, creature, lettering, composition, and (when the poster was in the stratified sample) semantic CLIP tags like blood or weapon.</p>
   </div>
   <div class="lk-search reveal">
     <input id="lk-q" type="search" autocomplete="off" spellcheck="false"
+      data-i18n-placeholder="lookup_placeholder"
+      data-i18n-aria="aria_search_title"
       placeholder="Search a title — Halloween, Nosferatu, The Thing…" aria-label="Search poster by title">
     <ul class="lk-suggest" id="lk-suggest" role="listbox"></ul>
   </div>
@@ -1045,19 +1072,19 @@ footer .logo span{color:var(--blood)}
      Markup kept hidden so we can restore without rewriting the tile/slider JS. -->
 <section class="explorer" id="explorer" hidden aria-hidden="true" style="display:none">
   <div class="prose reveal">
-    <p class="kicker">Explore</p>
-    <h2 class="section-title">18,716 Nightmares</h2>
-    <p>Every poster we analyzed, in chronological order. Each tile is a poster's dominant color — hover to reveal the artwork and its measurements (brightness, faces, creature), click a tile to open its full analysis above. Drag the handles to travel through the century and watch the palette go dark.</p>
+    <p class="kicker" data-i18n="explore_kicker">Explore</p>
+    <h2 class="section-title" data-i18n="explore_title">18,716 Nightmares</h2>
+    <p data-i18n="explore_body">Every poster we analyzed, in chronological order. Each tile is a poster's dominant color — hover to reveal the artwork and its measurements (brightness, faces, creature), click a tile to open its full analysis above. Drag the handles to travel through the century and watch the palette go dark.</p>
   </div>
   <div class="slider-block reveal">
     <div class="year-readout"><b id="yr-min">1920</b><span>—</span><b id="yr-max">2022</b></div>
     <div class="range-wrap">
       <div class="range-track"></div>
       <div class="range-fill" id="range-fill"></div>
-      <input type="range" id="r-min" min="1920" max="2022" value="1920" step="1" aria-label="From year">
-      <input type="range" id="r-max" min="1920" max="2022" value="2022" step="1" aria-label="To year">
+      <input type="range" id="r-min" min="1920" max="2022" value="1920" step="1" data-i18n-aria="aria_from_year" aria-label="From year">
+      <input type="range" id="r-max" min="1920" max="2022" value="2022" step="1" data-i18n-aria="aria_to_year" aria-label="To year">
     </div>
-    <p class="slider-hint">DRAG TO FILTER BY YEAR · HOVER A TILE FOR ITS MEASUREMENTS</p>
+    <p class="slider-hint" data-i18n="explore_hint">DRAG TO FILTER BY YEAR · HOVER A TILE FOR ITS MEASUREMENTS</p>
   </div>
   <div class="exp-grid" id="expgrid"></div>
   <div class="tip" id="exp-tip"></div>
@@ -1066,8 +1093,8 @@ footer .logo span{color:var(--blood)}
 <!-- ============ METHODOLOGY ============ -->
 <section class="metho">
   <div class="prose">
-    <p class="kicker">Methodology</p>
-    <p style="margin-top:14px">Film list and poster images from <a href="https://www.themoviedb.org/">The Movie Database (TMDB)</a>: 32,540 features tagged Horror, of which 18,716 (1920–2022) had usable artwork and were analyzed. Excluded after review: titles genre-tagged "Animation" and "Music", plus films whose TMDB <code>original_language</code> is not English (~8,907) — non-English lettering skewed typography/OCR metrics. Lists in <code>pipeline/data/excluded_*.csv</code>. Kept 629 early titles missing language metadata (mostly silent-era). TMDB "TV Movie" telefilms are kept on purpose — single films made for television, not episodic series. For each poster we extracted a 5-color dominant palette (k-means in CIELAB, saturation-weighted), mean brightness (L*), mean saturation, share of near-black pixels, share of blood-red pixels, and hue-family distribution. Base dataset by Tanya Shapiro (TidyTuesday 2022). Face counts: population statistics use YuNet detection at analysis resolution (floors — small, tilted or heavily stylized faces can escape); the counts shown on individually displayed specimens are hand-verified against the artwork. This product uses the TMDB API but is not endorsed or certified by TMDB. Full code and data on GitHub. Industry context: Stephen Follows' <a href="https://stephenfollows.com/p/the-horror-movie-report">Horror Movie Report</a>.</p>
+    <p class="kicker" data-i18n="metho_kicker">Methodology</p>
+    <p style="margin-top:14px" data-i18n="metho_body">Film list and poster images from <a href="https://www.themoviedb.org/">The Movie Database (TMDB)</a>: 32,540 features tagged Horror, of which 18,716 (1920–2022) had usable artwork and were analyzed. Excluded after review: titles genre-tagged "Animation" and "Music", plus films whose TMDB <code>original_language</code> is not English (~8,907) — non-English lettering skewed typography/OCR metrics. Lists in <code>pipeline/data/excluded_*.csv</code>. Kept 629 early titles missing language metadata (mostly silent-era). TMDB "TV Movie" telefilms are kept on purpose — single films made for television, not episodic series. For each poster we extracted a 5-color dominant palette (k-means in CIELAB, saturation-weighted), mean brightness (L*), mean saturation, share of near-black pixels, share of blood-red pixels, and hue-family distribution. Base dataset by Tanya Shapiro (TidyTuesday 2022). Face counts: population statistics use YuNet detection at analysis resolution (floors — small, tilted or heavily stylized faces can escape); the counts shown on individually displayed specimens are hand-verified against the artwork. This product uses the TMDB API but is not endorsed or certified by TMDB. Full code and data on GitHub. Industry context: Stephen Follows' <a href="https://stephenfollows.com/p/the-horror-movie-report">Horror Movie Report</a>.</p>
   </div>
 </section>
 
@@ -1075,13 +1102,17 @@ footer .logo span{color:var(--blood)}
 
 <footer>
   <img class="footer-logo" src="assets/pulp-analytics-red.png" alt="Pulp Analytics">
-  <p style="margin-top:8px">Data stories with teeth · medium.com/pulp-analytics</p>
+  <p style="margin-top:8px" data-i18n="footer_tagline">Data stories with teeth · medium.com/pulp-analytics</p>
 </footer>
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.2.0/scrollama.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
 <script src="data/explorer.js"></script>
 <script src="data/series.js"></script>
+<script src="i18n/content.js"></script>
+<script src="i18n/ui.js"></script>
+<script src="js/i18n.js"></script>
+
 <script>
 /* ================= data & palettes ================= */
 const ERAS=[
@@ -1095,17 +1126,17 @@ const ERAS=[
 /* Hue families — tuned for contrast on near-black bg (avoid #26262c / deep purple washout).
    `short` = end-of-band chart label; `name` = readout / data table. */
 const HUEBANDS=[
- {name:"Reds",short:"Reds",c:"#e02430"},{name:"Oranges/Yellows",short:"Warm",c:"#e5a00d"},{name:"Greens",short:"Greens",c:"#8fb05a"},
- {name:"Blues",short:"Blues",c:"#5a9eb0"},{name:"Purples",short:"Purples",c:"#b08ad4"},{name:"Black/Grey",short:"Dark",c:"#9a958a"}
+ {name:t('hue_reds'),short:t('hue_reds'),c:"#e02430"},{name:t('hue_oranges_yellows'),short:t('hue_warm_short'),c:"#e5a00d"},{name:t('hue_greens'),short:t('hue_greens'),c:"#8fb05a"},
+ {name:t('hue_blues'),short:t('hue_blues'),c:"#5a9eb0"},{name:t('hue_purples'),short:t('hue_purples'),c:"#b08ad4"},{name:t('hue_black_grey'),short:t('hue_dark_short'),c:"#9a958a"}
 ];
 /* Chart series (RIVER, TYPO, DARK_PTS, CENSUS_SERIES, …) load from data/series.js
    — generated by pipeline/export_site_series.py / apply_exclusions.py. */
 const TYPOREGS=[
- {key:"ornate",     name:"Ornate display", short:"Ornate",     c:"#c99a3a"},
- {key:"decorative", name:"Decorative",     short:"Decorative", c:"#b5622f"},
- {key:"standard",   name:"Standard",       short:"Standard",   c:"#8a6a63"},
- {key:"clean",      name:"Clean",          short:"Clean",      c:"#6f8792"},
- {key:"minimal",    name:"Minimal",        short:"Minimal",    c:"#cdc6b6"}
+ {key:"ornate",     name:t('typo_ornate_display'), short:t('typo_ornate_short'),     c:"#c99a3a"},
+ {key:"decorative", name:t('typo_decorative'),     short:t('typo_decorative'), c:"#b5622f"},
+ {key:"standard",   name:t('typo_standard'),       short:t('typo_standard'),   c:"#8a6a63"},
+ {key:"clean",      name:t('typo_clean'),          short:t('typo_clean'),      c:"#6f8792"},
+ {key:"minimal",    name:t('typo_minimal'),        short:t('typo_minimal'),    c:"#cdc6b6"}
 ];
 
 /* Accessible chart labels + collapsible data tables (WCAG: don't rely on SVG alone) */
@@ -1136,7 +1167,7 @@ function wireChartAccessibility(){
     const det=document.createElement('details');
     det.className='chart-data';
     const sum=document.createElement('summary');
-    sum.textContent='View data table';
+    sum.textContent=t('view_data_table');
     const body=document.createElement('div');
     body.className='chart-data-body';
     let html=`<table><caption>${esc(caption)}</caption><thead><tr>`;
@@ -1154,71 +1185,61 @@ function wireChartAccessibility(){
     anchor.after(det);
   };
 
-  annotate('river','Hue-family share of poster pixels by decade',
-    'Stacked chart of six hue bands from the 1920s to the 2020s. Black and grey rise over time while warm pulp colors shrink.');
-  table('river','Mean pixel share by hue family, per decade (n=18,716)',
-    ['Decade',...HUEBANDS.map(b=>b.name)],
+  annotate('river',t('aria_river_label'),t('aria_river_desc'));
+  table('river',t('table_river_caption'),
+    [t('col_decade'),...HUEBANDS.map(b=>b.name)],
     RIVER.map((r,i)=>[DECADES[i],...r.map(v=>v.toFixed(1)+'%')]));
 
-  annotate('darkness','Average poster brightness over the century',
-    'Line chart of mean L* brightness from 1925 to 2022. Brightness peaks around 1960 then falls for about sixty years.');
-  table('darkness','Mean poster brightness (L*), 5-year rolling points',
-    ['Year','All horror L*'],
+  annotate('darkness',t('aria_darkness_label'),t('aria_darkness_desc'));
+  table('darkness',t('table_darkness_caption'),
+    [t('col_year'),t('col_all_horror_l')],
     DARK_PTS.map(([y,v])=>[y,v.toFixed(1)]));
 
-  annotate('red','Share of blood-red pixels over time',
-    'Line chart of blood-red pixel share from 1925 to 2022. The peak is in the late 1990s, after the slasher era.');
-  table('red','Blood-red pixel share (%), 5-year rolling points',
-    ['Year','Red %'],
+  annotate('red',t('aria_red_label'),t('aria_red_desc'));
+  table('red',t('table_red_caption'),
+    [t('col_year'),t('col_red_pct')],
     RED_PTS.map(([y,v])=>[y,v.toFixed(1)+'%']));
 
-  annotate('faces','Share of posters with a detectable face',
-    'Line chart of the percentage of posters with at least one YuNet-detected face. Peaks in the 1940s near 83%, then declines toward about half of posters.');
-  table('faces','Posters with ≥1 detected face (%), 5-year rolling points',
-    ['Year','With face %'],
+  annotate('faces',t('aria_faces_label'),t('aria_faces_desc'));
+  table('faces',t('table_faces_caption'),
+    [t('col_year'),t('col_with_face_pct')],
     FACE_PTS.map(([y,v])=>[y,v.toFixed(1)+'%']));
 
-  annotate('census','Creature share of posters over time',
-    'Multi-line chart of CLIP creature labels. Ghosts bookend the century; masked killers peak in the 1980s.');
+  annotate('census',t('aria_census_label'),t('aria_census_desc'));
   {
     const years=[1920,1930,1940,1950,1960,1970,1980,1990,2000,2010,2020];
     const names=Object.keys(CENSUS_SERIES);
-    table('census','Creature share of posters (%), by decade',
-      ['Year',...names],
+    table('census',t('table_census_caption'),
+      [t('col_year'),...names],
       years.map(y=>[y,...names.map(n=>{
         const pt=CENSUS_SERIES[n].find(p=>p[0]===y);
         return pt?pt[1].toFixed(1)+'%':'—';
       })]));
   }
 
-  annotate('quiet','Text-like coverage of posters over time',
-    'Line chart of MSER text-region coverage. Peaks in the 1950s shout era, then falls toward quieter contemporary sheets.');
-  table('quiet','Text-like coverage (%), 5-year rolling points',
-    ['Year','Text-like %'],
+  annotate('quiet',t('aria_quiet_label'),t('aria_quiet_desc'));
+  table('quiet',t('table_quiet_caption'),
+    [t('col_year'),t('col_textlike_pct')],
     TEXT_PTS.map(([y,v])=>[y,v.toFixed(1)+'%']));
 
-  annotate('symmetry','Mirror symmetry of posters over time',
-    'Line chart of left-right mirror similarity. Climbs after 2010 with elevated, centered compositions.');
-  table('symmetry','Mirror symmetry score, 5-year rolling points',
-    ['Year','Symmetry'],
+  annotate('symmetry',t('aria_symmetry_label'),t('aria_symmetry_desc'));
+  table('symmetry',t('table_symmetry_caption'),
+    [t('col_year'),t('col_symmetry')],
     SYM_PTS.map(([y,v])=>[y,v.toFixed(3)]));
 
-  annotate('diagonal','Diagonal linework share over time',
-    'Line chart of diagonal composition energy. Peaks in mid-century pulp, then declines as posters stand upright.');
-  table('diagonal','Diagonal linework share (%), 5-year rolling points',
-    ['Year','Diagonal %'],
+  annotate('diagonal',t('aria_diagonal_label'),t('aria_diagonal_desc'));
+  table('diagonal',t('table_diagonal_caption'),
+    [t('col_year'),t('col_diagonal_pct')],
     DIAG_PTS.map(([y,v])=>[y,v.toFixed(1)+'%']));
 
-  annotate('typo','Title lettering registers from ornate to minimal',
-    'Stacked chart of five typography registers by decade. Ornate display falls; minimal type becomes the largest register by the 2020s.');
-  table('typo','Share of title lettering registers by decade',
-    ['Decade',...TYPOREGS.map(t=>t.name)],
+  annotate('typo',t('aria_typo_label'),t('aria_typo_desc'));
+  table('typo',t('table_typo_caption'),
+    [t('col_decade'),...TYPOREGS.map(r=>r.name)],
     TYPO.map((r,i)=>[DECADES[i],...r.map(v=>(v*100).toFixed(1)+'%')]));
 
-  annotate('blood2','Pixel-red versus model-detected blood by decade',
-    'Two-line chart comparing blood-red pixel share with CLIP semantic blood. The measures split after the slasher boom.');
-  table('blood2','Pixel-red vs model-detected blood by decade',
-    ['Decade','Pixel-red %','Model blood %'],
+  annotate('blood2',t('aria_blood2_label'),t('aria_blood2_desc'));
+  table('blood2',t('table_blood2_caption'),
+    [t('col_decade'),t('col_pixel_red_pct'),t('col_model_blood_pct')],
     DECADES.map((d,i)=>[d,BLOOD_PIXEL[i].toFixed(1)+'%',BLOOD_SEMANTIC[i].toFixed(1)+'%']));
 }
 
@@ -1243,7 +1264,7 @@ function eraOfYear(y){return y<1940?0: y<1960?1: y<1980?2: y<1990?3: y<2010?4:5;
 /* ============ lookup: search any poster + full analysis ============ */
 const IMG_S='https://image.tmdb.org/t/p/w92', IMG_L='https://image.tmdb.org/t/p/w780', IMG_M='https://image.tmdb.org/t/p/w500';
 const HAS_DATA=(typeof POSTERS!=='undefined');
-const CREATURE_ES={giant_monster:'giant monster',masked_killer:'masked killer',wolf_dog:'wolf/dog'};
+const CREATURE_ES={giant_monster:t('creature_giant_monster'),masked_killer:t('creature_masked_killer'),wolf_dog:t('creature_wolf_dog')};
 function posterSrc(p,size){
   const base=size==='s'?IMG_S:size==='m'?IMG_M:IMG_L;
   return p[2] ? base+p[2] : '';
@@ -1255,12 +1276,12 @@ function ensureLookup(){
   if(typeof LOOKUP!=='undefined') return Promise.resolve(LOOKUP);
   if(LOOKUP_P) return LOOKUP_P;
   const st=document.getElementById('lk-status');
-  if(st) st.textContent='Loading analysis index…';
+  if(st) st.textContent=t('lookup_loading');
   LOOKUP_P=new Promise((resolve,reject)=>{
     const s=document.createElement('script');
     s.src='data/lookup.js';
     s.onload=()=>{if(st) st.textContent='';resolve(LOOKUP);};
-    s.onerror=()=>{if(st) st.textContent='Could not load analysis index (run pipeline/build_lookup.py).';reject();};
+    s.onerror=()=>{if(st) st.textContent=t('lookup_load_error');reject();};
     document.head.appendChild(s);
   });
   return LOOKUP_P;
@@ -1293,7 +1314,7 @@ function openPoster(p){
   lkQ.value=p[3];
   lkSug.classList.remove('open');
   document.getElementById('lookup').scrollIntoView({behavior:'smooth',block:'start'});
-  lkStatus.textContent='Loading…';
+  lkStatus.textContent=t('lookup_loading_short');
   ensureLookup().then(L=>{
     const a=L[String(p[7])]||{};
     renderAnalysis(p,a);
@@ -1303,7 +1324,7 @@ function openPoster(p){
 const LK_EYE=`<svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" aria-hidden="true"><path d="M2 12s3.5-6 10-6 10 6 10 6-3.5 6-10 6S2 12 2 12z"/><circle cx="12" cy="12" r="2.5"/></svg>`;
 let lkView=null, lkCur=null;
 function stat(k,v,view){
-  const eye=view?`<button type="button" class="lk-eye" data-view="${view}" aria-label="Preview ${k} on poster" title="Preview on poster">${LK_EYE}</button>`:'';
+  const eye=view?`<button type="button" class="lk-eye" data-view="${view}" aria-label="${t('lookup_preview_metric',{k})}" title="${t('lookup_preview_on_poster')}">${LK_EYE}</button>`:'';
   return `<div class="lk-stat">${eye}<div class="lk-stat-body"><div class="k">${k}</div><div class="v">${v}</div></div></div>`;
 }
 function lkClearView(){
@@ -1345,19 +1366,18 @@ function lkShowView(view){
 function renderAnalysis(p,a){
   lkCur={p,a}; lkView=null;
   const bandCols=HUEBANDS.map(b=>b.c);
-  const bandNames=['red','warm','green','blue','purple','dark'];
+  const bandNames=HUEBANDS.map(b=>b.short||b.name);
   const bands=a.bands||[];
   const bandBar=bands.map((v,i)=>`<i style="width:${(v||0)*100}%;background:${bandCols[i]}" title="${bandNames[i]} ${pct(v)}"></i>`).join('');
   const palArr=(a.pal&&a.pal.length)?a.pal:[p[1]];
   const pal=palArr.map(c=>`<span style="background:${c}" title="${c}"></span>`).join('');
   const creature=a.creature||p[6];
-  const cLabel=creature?(CREATURE_ES[creature]||creature.replace(/_/g,' ')):'none detected';
+  const cLabel=creature?(CREATURE_ES[creature]||creature.replace(/_/g,' ')):t('none_detected');
   const cScore=a.cscore!=null?` <b>${pct(a.cscore)}</b>`:'';
   const comp=a.comp||{};
   const sem=a.sem||null;
   const faces=a.faces??p[5];
   const darkPct=Math.round((a.dark||0)*100);
-  /* text box = title-cue band (text_x/top/w/h). Never invent a default rectangle. */
   const hasBox=comp.tt!=null && comp.tt>=0 && comp.tw>0 && comp.th>0
     && comp.tx!=null && comp.tx>=0;
   const tLeft=hasBox?Math.max(0,comp.tx*100):0;
@@ -1368,105 +1388,113 @@ function renderAnalysis(p,a){
   const textBandStyle=hasBox
     ?`left:${tLeft.toFixed(1)}%;top:${tTop.toFixed(1)}%;width:${tW.toFixed(1)}%;height:${tH.toFixed(1)}%;right:auto`
     :'display:none';
+  const faceLab=faces===1
+    ? t('lab_faces_area',{n:faces,a:pct(a.farea)})
+    : t('lab_faces_area_pl',{n:faces,a:pct(a.farea)});
+  const mediumLab=a.painted==null?t('lab_medium_na')
+    :(a.painted>=.5?t('lookup_painted')+' ':t('lookup_photo_mixed')+' ')+pct(a.painted);
+  const textLab=hasBox
+    ? t('lab_title_box_text',{v:pct(comp.txt)})
+    : t('lab_textlike_pending',{v:pct(comp.txt)});
   let html=`<div class="lk-stage"><div class="lk-frame">
       <img class="lk-art" alt="" src="${posterSrc(p,'m')}">
       <div class="lk-ov" id="lk-ov">
         <div class="lk-layer" data-layer="palette"><div class="lk-palfloat">${pal}</div>
-          <div class="lk-lab amber" style="top:6%;left:4%">5-color palette</div></div>
+          <div class="lk-lab amber" style="top:6%;left:4%">${t('lab_5_color_palette')}</div></div>
         <div class="lk-layer" data-layer="L"><div class="lk-lab" style="top:6%;left:4%">L* ${a.L??p[4]}</div></div>
         <div class="lk-layer" data-layer="dark"><div class="lk-scrim" style="--h:${darkPct}%"></div>
-          <div class="lk-lab blood" style="top:6%;right:4%">${darkPct}% near-black</div></div>
+          <div class="lk-lab blood" style="top:6%;right:4%">${t('lab_near_black_pct',{n:darkPct})}</div></div>
         <div class="lk-layer" data-layer="sat"><div class="lk-satwash"></div>
-          <div class="lk-lab" style="top:6%;left:4%">saturation ${pct(a.sat)}</div></div>
+          <div class="lk-lab" style="top:6%;left:4%">${t('lab_saturation',{v:pct(a.sat)})}</div></div>
         <div class="lk-layer" data-layer="red"><div class="lk-wash"></div>
-          <div class="lk-lab blood" style="bottom:8%;left:4%">blood-red ${pct(a.red)}</div></div>
+          <div class="lk-lab blood" style="bottom:8%;left:4%">${t('lab_blood_red',{v:pct(a.red)})}</div></div>
         <div class="lk-layer" data-layer="bands"><div class="lk-bandsov">${bandBar}</div>
-          <div class="lk-lab" style="top:6%;left:4%">hue families</div></div>
+          <div class="lk-lab" style="top:6%;left:4%">${t('lab_hue_families')}</div></div>
         <div class="lk-layer" data-layer="faces">${faces>0?'<div class="lk-facebox"></div>':''}
-          <div class="lk-lab amber" style="top:8%;left:50%;transform:translateX(-50%)">${faces} face${faces===1?'':'s'} · area ${pct(a.farea)}</div></div>
+          <div class="lk-lab amber" style="top:8%;left:50%;transform:translateX(-50%)">${faceLab}</div></div>
         <div class="lk-layer" data-layer="creature">
-          <div class="lk-lab amber" style="top:45%;left:50%;transform:translate(-50%,-50%)">creature: ${cLabel}${a.cscore!=null?' · '+pct(a.cscore):''}</div></div>
+          <div class="lk-lab amber" style="top:45%;left:50%;transform:translate(-50%,-50%)">${t('lab_creature',{c:cLabel})}${a.cscore!=null?' · '+pct(a.cscore):''}</div></div>
         <div class="lk-layer" data-layer="medium">
-          <div class="lk-lab" style="top:8%;left:4%">${a.painted==null?'medium n/a':(a.painted>=.5?'painted ':'photo / mixed ')+pct(a.painted)}</div></div>
+          <div class="lk-lab" style="top:8%;left:4%">${mediumLab}</div></div>
         <div class="lk-layer" data-layer="text"><div class="lk-textband" style="${textBandStyle}"></div>
-          <div class="lk-lab blood" style="top:${tLabTop.toFixed(1)}%;left:${Math.max(2,tLeft).toFixed(1)}%">${hasBox?'title box · ':''}text-like ${pct(comp.txt)}${hasBox?'':' · title pending'}</div></div>
+          <div class="lk-lab blood" style="top:${tLabTop.toFixed(1)}%;left:${Math.max(2,tLeft).toFixed(1)}%">${textLab}</div></div>
         <div class="lk-layer" data-layer="sym"><div class="lk-fold"></div>
-          <div class="lk-lab amber" style="top:6%;left:4%">symmetry ${pct(comp.sym)}</div></div>
+          <div class="lk-lab amber" style="top:6%;left:4%">${t('lab_symmetry',{v:pct(comp.sym)})}</div></div>
         <div class="lk-layer" data-layer="neg">
-          <div class="lk-lab" style="top:6%;left:4%">negative space ${pct(comp.neg)}</div></div>
+          <div class="lk-lab" style="top:6%;left:4%">${t('lab_negative_space',{v:pct(comp.neg)})}</div></div>
         <div class="lk-layer" data-layer="cx">
-          <div class="lk-lab" style="top:6%;left:4%">complexity ${num(comp.cx,2)}</div></div>
+          <div class="lk-lab" style="top:6%;left:4%">${t('lab_complexity',{v:num(comp.cx,2)})}</div></div>
         <div class="lk-layer" data-layer="bal"><div class="lk-mass" style="left:${((comp.mx??.5)*100)}%;top:${((comp.my??.5)*100)}%"></div>
-          <div class="lk-lab amber" style="top:6%;left:4%">balance ${pct(comp.bal)}</div></div>
+          <div class="lk-lab amber" style="top:6%;left:4%">${t('lab_balance',{v:pct(comp.bal)})}</div></div>
         <div class="lk-layer" data-layer="harm">
-          <div class="lk-lab" style="top:6%;left:4%">harmony ${pct(comp.harm)}</div></div>
+          <div class="lk-lab" style="top:6%;left:4%">${t('lab_harmony',{v:pct(comp.harm)})}</div></div>
         <div class="lk-layer" data-layer="align">
-          <div class="lk-lab" style="top:6%;left:4%">alignment ${pct(comp.align)}</div></div>
+          <div class="lk-lab" style="top:6%;left:4%">${t('lab_alignment',{v:pct(comp.align)})}</div></div>
         <div class="lk-layer" data-layer="thirds"><div class="lk-thirds"></div>
-          <div class="lk-lab amber" style="bottom:8%;left:4%">thirds dist. ${num(comp.thirds,2)}</div></div>
+          <div class="lk-lab amber" style="bottom:8%;left:4%">${t('lab_thirds_dist',{v:num(comp.thirds,2)})}</div></div>
         <div class="lk-layer" data-layer="diag"><div class="lk-diag"></div>
-          <div class="lk-lab blood" style="top:6%;left:4%">diagonal ${pct(comp.diag)}</div></div>
+          <div class="lk-lab blood" style="top:6%;left:4%">${t('lab_diagonal',{v:pct(comp.diag)})}</div></div>
         <div class="lk-layer" data-layer="pyr">
-          <div class="lk-lab amber" style="top:6%;left:4%">pyramid ${num(comp.pyr,2)}</div></div>
+          <div class="lk-lab amber" style="top:6%;left:4%">${t('lab_pyramid',{v:num(comp.pyr,2)})}</div></div>
         <div class="lk-layer" data-layer="mass"><div class="lk-mass" style="left:${((comp.mx??.5)*100)}%;top:${((comp.my??.5)*100)}%"></div>
-          <div class="lk-lab blood" style="top:6%;left:4%">mass center</div></div>
+          <div class="lk-lab blood" style="top:6%;left:4%">${t('lab_mass_center')}</div></div>
         <div class="lk-layer" data-layer="sem">
-          <div class="lk-lab blood" style="top:40%;left:50%;transform:translate(-50%,-50%)">semantic sample tags</div></div>
+          <div class="lk-lab blood" style="top:40%;left:50%;transform:translate(-50%,-50%)">${t('lab_semantic_tags')}</div></div>
       </div>
     </div></div>
     <div class="lk-meta">
       <h3>${p[3]}</h3>
-      <div class="lk-year">${p[0]} · id ${p[7]} · eye = animated preview on the poster</div>
+      <div class="lk-year">${p[0]} · id ${p[7]} · ${t('lookup_eye_hint')}</div>
       <div class="lk-swatches">${pal}</div>
       <div class="lk-grid">
-        <div class="lk-section">Color</div>
-        ${stat('Brightness (L*)',`<b>${a.L??p[4]}</b>`,'L')}
-        ${stat('Near-black share',`<b>${pct(a.dark)}</b>`,'dark')}
-        ${stat('Saturation',`<b>${pct(a.sat)}</b>`,'sat')}
-        ${stat('Blood-red share',`<b>${pct(a.red)}</b>`,'red')}
-        <div class="lk-section">Hue families <button type="button" class="lk-eye" data-view="bands" aria-label="Preview hue bands" title="Preview on poster" style="display:inline-flex;vertical-align:middle;margin-left:8px">${LK_EYE}</button></div>
+        <div class="lk-section">${t('sec_color')}</div>
+        ${stat(t('stat_brightness'),`<b>${a.L??p[4]}</b>`,'L')}
+        ${stat(t('stat_near_black'),`<b>${pct(a.dark)}</b>`,'dark')}
+        ${stat(t('stat_saturation'),`<b>${pct(a.sat)}</b>`,'sat')}
+        ${stat(t('stat_blood_red'),`<b>${pct(a.red)}</b>`,'red')}
+        <div class="lk-section">${t('sec_hue_families')} <button type="button" class="lk-eye" data-view="bands" aria-label="${t('lookup_preview_bands')}" title="${t('lookup_preview_on_poster')}" style="display:inline-flex;vertical-align:middle;margin-left:8px">${LK_EYE}</button></div>
         <div class="lk-bands">${bandBar}</div>
         <p class="note lk-note">${bandNames.map((n,i)=>`${n} ${pct(bands[i])}`).join(' · ')}</p>
-        ${stat('Palette',`<b>5 swatches</b>`,'palette')}
-        <div class="lk-section">Faces &amp; creature</div>
-        ${stat('Faces detected',`<b>${faces}</b>`,faces>0?'faces':null)}
-        ${stat('Face area',`<b>${pct(a.farea)}</b>`)}
-        ${stat('Creature (CLIP)',`<b>${cLabel}</b>${cScore}`)}
-        ${stat('Medium',a.painted==null?'—':(a.painted>=0.5?`<b>painted</b> (${pct(a.painted)})`:`<b>photo / mixed</b> (${pct(a.painted)})`))}
-        <div class="lk-section">Lettering</div>
-        ${stat('Typography register',`<b>${a.typo||'—'}</b>`)}
-        ${stat('Ornate ↔ minimal axis',a.taxis==null?'—':`<b>${num(a.taxis,2)}</b>`)}
-        ${stat('Text area',`<b>${pct(comp.txt)}</b>`,'text')}
-        <div class="lk-section">Composition</div>
-        ${stat('Symmetry',`<b>${pct(comp.sym)}</b>`,'sym')}
-        ${stat('Negative space',`<b>${pct(comp.neg)}</b>`,'neg')}
-        ${stat('Complexity',`<b>${num(comp.cx,2)}</b>`)}
-        ${stat('Visual balance',`<b>${pct(comp.bal)}</b>`)}
-        ${stat('Color harmony',`<b>${pct(comp.harm)}</b>`)}
-        ${stat('Alignment score',`<b>${pct(comp.align)}</b>`)}
-        ${stat('Rule-of-thirds dist.',`<b>${num(comp.thirds,2)}</b>`,'thirds')}
-        ${stat('Diagonal score',`<b>${pct(comp.diag)}</b>`,'diag')}
-        ${stat('Pyramid shift',`<b>${num(comp.pyr,2)}</b>`)}
-        ${stat('Mass center',comp.mx==null?'—':`<b>x ${num(comp.mx,2)} · y ${num(comp.my,2)}</b>`,'mass')}`;
+        ${stat(t('stat_palette'),`<b>${t('lookup_5_swatches')}</b>`,'palette')}
+        <div class="lk-section">${t('sec_faces_creature')}</div>
+        ${stat(t('stat_faces_detected'),`<b>${faces}</b>`,faces>0?'faces':null)}
+        ${stat(t('stat_face_area'),`<b>${pct(a.farea)}</b>`)}
+        ${stat(t('stat_creature_clip'),`<b>${cLabel}</b>${cScore}`)}
+        ${stat(t('stat_medium'),a.painted==null?'—':(a.painted>=0.5?`<b>${t('lookup_painted')}</b> (${pct(a.painted)})`:`<b>${t('lookup_photo_mixed')}</b> (${pct(a.painted)})`))}
+        <div class="lk-section">${t('sec_lettering')}</div>
+        ${stat(t('stat_typography_register'),`<b>${a.typo||'—'}</b>`)}
+        ${stat(t('stat_ornate_minimal_axis'),a.taxis==null?'—':`<b>${num(a.taxis,2)}</b>`)}
+        ${stat(t('stat_text_area'),`<b>${pct(comp.txt)}</b>`,'text')}
+        <div class="lk-section">${t('sec_composition')}</div>
+        ${stat(t('stat_symmetry'),`<b>${pct(comp.sym)}</b>`,'sym')}
+        ${stat(t('stat_negative_space'),`<b>${pct(comp.neg)}</b>`,'neg')}
+        ${stat(t('stat_complexity'),`<b>${num(comp.cx,2)}</b>`)}
+        ${stat(t('stat_visual_balance'),`<b>${pct(comp.bal)}</b>`)}
+        ${stat(t('stat_color_harmony'),`<b>${pct(comp.harm)}</b>`)}
+        ${stat(t('stat_alignment_score'),`<b>${pct(comp.align)}</b>`)}
+        ${stat(t('stat_rule_of_thirds'),`<b>${num(comp.thirds,2)}</b>`,'thirds')}
+        ${stat(t('stat_diagonal_score'),`<b>${pct(comp.diag)}</b>`,'diag')}
+        ${stat(t('stat_pyramid_shift'),`<b>${num(comp.pyr,2)}</b>`)}
+        ${stat(t('stat_mass_center'),comp.mx==null?'—':`<b>x ${num(comp.mx,2)} · y ${num(comp.my,2)}</b>`,'mass')}`;
   if(sem){
-    html+=`<div class="lk-section">Semantics (sample)</div>`;
+    html+=`<div class="lk-section">${t('sec_semantics')}</div>`;
     Object.keys(sem).sort((x,y)=>sem[y]-sem[x]).forEach(k=>{
       html+=stat(k.replace(/_/g,' '),`<b>${pct(sem[k])}</b>`);
     });
-    html+=`<p class="note lk-note">Semantic tags only exist for the stratified segmentation sample (~1,721 posters).</p>`;
+    html+=`<p class="note lk-note">${t('lookup_note_semantic_sample')}</p>`;
   }else{
-    html+=`<p class="note lk-note">No CLIP semantic segmentation for this poster (outside the ~1,721 stratified sample).</p>`;
+    html+=`<p class="note lk-note">${t('lookup_note_no_clip')}</p>`;
   }
   const rek=a.rek||null;
   if(rek){
-    const flagStr=(rek.flags&&rek.flags.length)?rek.flags.join(' · '):'none';
-    html+=`<div class="lk-section">AWS Rekognition</div>`;
-    html+=stat('Top label', rek.top?`<b>${rek.top}</b>${rek.topc!=null?' · '+pct(rek.topc):''}`:'—');
-    html+=stat('Scene flags',`<b>${flagStr}</b>`);
-    html+=stat('Violence',`<b>${pct(rek.viol)}</b>`);
-    html+=stat('Gore / disturbing',`<b>${pct(rek.gore)}</b>`);
-    html+=stat('Rekognition faces',`<b>${rek.faces||0}</b>${rek.emo?' · '+rek.emo:''}`);
-    html+=`<p class="note lk-note">Rekognition complements CLIP/YuNet: photo labels &amp; moderation. Painted sheets often return 0 faces.</p>`;
+    const flagStr=(rek.flags&&rek.flags.length)?rek.flags.join(' · '):t('lookup_none');
+    html+=`<div class="lk-section">${t('sec_rekognition')}</div>`;
+    html+=stat(t('stat_top_label'), rek.top?`<b>${rek.top}</b>${rek.topc!=null?' · '+pct(rek.topc):''}`:'—');
+    html+=stat(t('stat_scene_flags'),`<b>${flagStr}</b>`);
+    html+=stat(t('stat_violence'),`<b>${pct(rek.viol)}</b>`);
+    html+=stat(t('stat_gore'),`<b>${pct(rek.gore)}</b>`);
+    html+=stat(t('stat_rekognition_faces'),`<b>${rek.faces||0}</b>${rek.emo?' · '+rek.emo:''}`);
+    html+=`<p class="note lk-note">${t('lookup_note_rekognition')}</p>`;
   }
   html+=`</div></div>`;
   lkPanel.innerHTML=html;
@@ -1769,7 +1797,7 @@ function d3Charts(){
       ro.setAttribute('aria-live','polite');
       svgEl.insertAdjacentElement('afterend',ro);
     }
-    const base=hint||'Tap or drag across the chart';
+    const base=hint||t('hint_tap_or_drag');
     const idle=base.includes('←')?base:base+KB;
     ro.innerHTML=idle;
     return {
@@ -1849,13 +1877,13 @@ function d3Charts(){
     });
     const area=d3.area().x((d,i)=>x(i)).y0(d=>y(d[0])).y1(d=>y(d[1])).curve(d3.curveBasis);
     const flat=d3.area().x((d,i)=>x(i)).y0(y(0)).y1(y(0)).curve(d3.curveBasis);
-    const ro=mkReadout('river','Tap a band · drag decade · ↑↓ band');
+    const ro=mkReadout('river',t('hint_river'));
     let bandKey=5; /* default: Dark — the story band */
     let scrub;
     const showRiver=di=>{
       paths.attr('opacity',.28);
       paths.filter(d=>d.key===bandKey).attr('opacity',1);
-      report(ro,`<b>${HUEBANDS[bandKey].name}</b> · ${RIVER[di][bandKey]}% of pixels · ${DECADES[di]}`,null);
+      report(ro,`<b>${HUEBANDS[bandKey].name}</b> · ${RIVER[di][bandKey]}% ${t('readout_of_pixels')} · ${DECADES[di]}`,null);
     };
     const paths=svg.selectAll('.stream').data(series).join('path')
       .attr('class','stream').attr('d',flat).attr('fill',d=>HUEBANDS[d.key].c)
@@ -1867,7 +1895,7 @@ function d3Charts(){
         const di=Math.max(0,Math.min(RIVER.length-1,Math.round(x.invert(d3.pointer(ev,this)[0]))));
         scrub.set(di);
         paths.attr('opacity',.28);d3.select(this).attr('opacity',1);
-        report(ro,`<b>${HUEBANDS[d.key].name}</b> · ${RIVER[di][d.key]}% of pixels · ${DECADES[di]}`,ev);})
+        report(ro,`<b>${HUEBANDS[d.key].name}</b> · ${RIVER[di][d.key]}% ${t('readout_of_pixels')} · ${DECADES[di]}`,ev);})
       .on('pointerleave',()=>{paths.attr('opacity',.95);hideTip();});
     scrub=wireScrub('river',{n:RIVER.length, start:RIVER.length-1, show:showRiver,
       onVert:dir=>{ bandKey=(bandKey+dir+6)%6; showRiver(scrub.get()); }});
@@ -1891,13 +1919,13 @@ function d3Charts(){
     const y=d3.scaleLinear().domain([0,1]).range([H-m.b,m.t]);
     const area=d3.area().x((d,i)=>x(i)).y0(d=>y(d[0])).y1(d=>y(d[1])).curve(d3.curveBasis);
     const flat=d3.area().x((d,i)=>x(i)).y0(y(0)).y1(y(0)).curve(d3.curveBasis);
-    const ro=mkReadout('typo','Tap a register · drag decade · ↑↓ register');
+    const ro=mkReadout('typo',t('hint_typo'));
     let regKey=4; /* minimal — the story end of the axis */
     let scrub;
     const showTypo=di=>{
       paths.attr('opacity',.22);
       paths.filter(d=>d.key===regKey).attr('opacity',1);
-      report(ro,`<b>${TYPOREGS[regKey].name}</b> · ${(TYPO[di][regKey]*100).toFixed(1)}% of titles · ${DECADES[di]}`,null);
+      report(ro,`<b>${TYPOREGS[regKey].name}</b> · ${(TYPO[di][regKey]*100).toFixed(1)}% ${t('readout_of_titles')} · ${DECADES[di]}`,null);
     };
     const paths=svg.selectAll('.stream').data(series).join('path')
       .attr('class','stream').attr('d',flat).attr('fill',(d,i)=>TYPOREGS[d.key].c).attr('opacity',.92)
@@ -1908,15 +1936,15 @@ function d3Charts(){
         const di=Math.max(0,Math.min(TYPO.length-1,Math.round(x.invert(d3.pointer(ev,this)[0]))));
         scrub.set(di);
         paths.attr('opacity',.22);d3.select(this).attr('opacity',1);
-        report(ro,`<b>${TYPOREGS[d.key].name}</b> · ${(TYPO[di][d.key]*100).toFixed(1)}% of titles · ${DECADES[di]}`,ev);})
+        report(ro,`<b>${TYPOREGS[d.key].name}</b> · ${(TYPO[di][d.key]*100).toFixed(1)}% ${t('readout_of_titles')} · ${DECADES[di]}`,ev);})
       .on('pointerleave',()=>{paths.attr('opacity',.92);hideTip();});
     scrub=wireScrub('typo',{n:TYPO.length, start:TYPO.length-1, show:showTypo,
       onVert:dir=>{ regKey=(regKey+dir+5)%5; showTypo(scrub.get()); }});
     DECADES.forEach((dec,i)=>svg.append('text').attr('class','tick-label')
       .attr('x',x(i)).attr('y',H-10).attr('text-anchor','middle').text(dec));
     // axis orientation (not a series legend)
-    svg.append('text').attr('class','annot').attr('x',m.l).attr('y',18).attr('fill',TYPOREGS[0].c).text('◄ ornate');
-    svg.append('text').attr('class','annot').attr('text-anchor','end').attr('x',W-m.r).attr('y',18).attr('fill',TYPOREGS[4].c).text('minimal ►');
+    svg.append('text').attr('class','annot').attr('x',m.l).attr('y',18).attr('fill',TYPOREGS[0].c).text(t('annot_ornate'));
+    svg.append('text').attr('class','annot').attr('text-anchor','end').attr('x',W-m.r).attr('y',18).attr('fill',TYPOREGS[4].c).text(t('annot_minimal'));
     const lastT=TYPO.length-1;
     placeEndLabels(svg, series.map(s=>{
       const d=s[lastT];
@@ -2069,19 +2097,19 @@ function d3Charts(){
       .attr('fill','none').attr('stroke','#9a958a').attr('stroke-width',2)
       .attr('stroke-dasharray','6 5').attr('opacity',0);
     svg.append('text').attr('class','line-label').attr('fill','#e5a00d')
-      .attr('x',x(2022)+8).attr('y',y(29.1)).text('All horror (18,716)');
+      .attr('x',x(2022)+8).attr('y',y(29.1)).text(t('all_horror'));
     svg.append('text').attr('class','line-label').attr('fill','#9a958a')
-      .attr('x',x(2020)+8).attr('y',y(27.5)+16).text('Mainstream (100+ votes)');
-    [[1931,'Expressionist shadow',40.2],[1960,'Atomic daylight peak',48.8],[1975,'Occult slide begins',42.6],[2020,'Never came back',29.4]].forEach(a=>{
+      .attr('x',x(2020)+8).attr('y',y(27.5)+16).text(t('mainstream'));
+    [[1931,t('annot_expressionist_shadow'),40.2],[1960,t('annot_atomic_daylight'),48.8],[1975,t('annot_occult_slide'),42.6],[2020,t('annot_never_came_back'),29.4]].forEach(a=>{
       svg.append('text').attr('class','annot').attr('text-anchor','middle')
          .attr('x',Math.min(x(a[0]),W-m.r-60)).attr('y',y(a[2])).text(a[1]);});
-    const ro=mkReadout('darkness','Tap, drag, or ←→ across the century');
+    const ro=mkReadout('darkness',t('hint_tap_drag_century'));
     const bis=d3.bisector(d=>d[0]).center;
     const focus=svg.append('circle').attr('r',5).attr('fill','#e5a00d').attr('opacity',0);
     const showDark=i=>{
       const d=DARK_PTS[i], md=MAIN_DEC[bis(MAIN_DEC,d[0])];
       focus.attr('cx',x(d[0])).attr('cy',y(d[1])).attr('opacity',1);
-      report(ro,`<b>${d[0]}</b> · All horror L* ${d[1]} · Mainstream (${md[0]}s) L* ${md[1]}`,null);
+      report(ro,`<b>${d[0]}</b> · ${t('readout_all_horror_l')} ${d[1]} · ${t('readout_mainstream_l')} (${md[0]}s) L* ${md[1]}`,null);
     };
     const scrub=wireScrub('darkness',{n:DARK_PTS.length, start:DARK_PTS.length-1, show:showDark});
     const hitDark=function(ev){
@@ -2091,7 +2119,7 @@ function d3Charts(){
       const d=DARK_PTS[i];
       focus.attr('cx',x(d[0])).attr('cy',y(d[1])).attr('opacity',1);
       const md=MAIN_DEC[bis(MAIN_DEC,year)];
-      report(ro,`<b>${d[0]}</b> · All horror L* ${d[1]} · Mainstream (${md[0]}s) L* ${md[1]}`,ev);
+      report(ro,`<b>${d[0]}</b> · ${t('readout_all_horror_l')} ${d[1]} · ${t('readout_mainstream_l')} (${md[0]}s) L* ${md[1]}`,ev);
     };
     svg.append('rect').attr('x',m.l).attr('y',m.t).attr('width',W-m.l-m.r).attr('height',H-m.t-m.b)
       .attr('fill','transparent').style('touch-action','none')
@@ -2118,12 +2146,12 @@ function d3Charts(){
       .attr('fill','url(#rgrad)').attr('opacity',0);
     const p=svg.append('path').datum(RED_PTS).attr('d',line)
       .attr('fill','none').attr('stroke','#ff2634').attr('stroke-width',3).attr('stroke-linecap','round');
-    [[1930,'Before blood: 4%',5.8],[1970,'Occult red',13.4],[1985,'Slashers never led',12.8],[2005,'Peak: meta-horror',15.2]].forEach(a=>
+    [[1930,t('annot_before_blood'),5.8],[1970,t('annot_occult_red'),13.4],[1985,t('annot_slashers_never_led'),12.8],[2005,t('annot_peak_meta_horror'),15.2]].forEach(a=>
       svg.append('text').attr('class','annot').attr('text-anchor','middle').attr('x',x(a[0])).attr('y',y(a[2])).text(a[1]));
-    const ro=mkReadout('red','Tap, drag, or ←→ across the century');
+    const ro=mkReadout('red',t('hint_tap_drag_century'));
     const bis=d3.bisector(d=>d[0]).center;
     const scrub=wireScrub('red',{n:RED_PTS.length, start:RED_PTS.length-1, show:i=>{
-      const d=RED_PTS[i]; report(ro,`<b>${d[0]}</b> · Blood-red pixels: ${d[1]}%`,null);
+      const d=RED_PTS[i]; report(ro,`<b>${d[0]}</b> · ${t('readout_blood_red_pixels')}: ${d[1]}%`,null);
     }});
     svg.append('rect').attr('x',m.l).attr('y',m.t).attr('width',W-m.l-m.r).attr('height',H-m.t-m.b).attr('fill','transparent')
       .style('touch-action','none')
@@ -2132,7 +2160,7 @@ function d3Charts(){
         const i=bis(RED_PTS,x.invert(d3.pointer(ev,this)[0]));
         scrub.set(i);
         const d=RED_PTS[i];
-        report(ro,`<b>${d[0]}</b> · Blood-red pixels: ${d[1]}%`,ev);})
+        report(ro,`<b>${d[0]}</b> · ${t('readout_blood_red_pixels')}: ${d[1]}%`,ev);})
       .on('pointerleave',hideTip);
     onEnter('red',()=>{drawIn(p,1600);areaP.transition().delay(ms(600)).duration(ms(1200)).attr('opacity',1);});
   }
@@ -2150,15 +2178,15 @@ function d3Charts(){
       .attr('stroke','#c1121f').attr('stroke-width',2);
     const dot=svg.append('circle').attr('cx',x(1998)).attr('cy',y(66.9)).attr('r',0).attr('fill','#c1121f');
     svg.append('text').attr('class','annot').attr('text-anchor','middle')
-      .attr('x',x(1945)).attr('y',y(88)).text('1940s peak: 83%');
+      .attr('x',x(1945)).attr('y',y(88)).text(t('peak_1940s_faces'));
     svg.append('text').attr('class','annot').attr('text-anchor','middle')
-      .attr('x',x(1998)).attr('y',y(66.9)-24).text('1998: bigger faces');
+      .attr('x',x(1998)).attr('y',y(66.9)-24).text(t('faces_1998_bigger'));
     svg.append('text').attr('class','annot').attr('text-anchor','end')
-      .attr('x',x(2021)).attr('y',y(45)).text('under half');
-    const ro=mkReadout('faces','Tap, drag, or ←→ across the century');
+      .attr('x',x(2021)).attr('y',y(45)).text(t('faces_under_half'));
+    const ro=mkReadout('faces',t('hint_tap_drag_century'));
     const bis=d3.bisector(d=>d[0]).center;
     const scrub=wireScrub('faces',{n:FACE_PTS.length, start:FACE_PTS.length-1, show:i=>{
-      const d=FACE_PTS[i]; report(ro,`<b>${d[0]}</b> · Posters with a face: ${d[1]}%`,null);
+      const d=FACE_PTS[i]; report(ro,`<b>${d[0]}</b> · ${t('readout_posters_with_face')}: ${d[1]}%`,null);
     }});
     svg.append('rect').attr('x',m.l).attr('y',m.t).attr('width',W-m.l-m.r).attr('height',H-m.t-m.b).attr('fill','transparent')
       .style('touch-action','none')
@@ -2167,7 +2195,7 @@ function d3Charts(){
         const i=bis(FACE_PTS,x.invert(d3.pointer(ev,this)[0]));
         scrub.set(i);
         const d=FACE_PTS[i];
-        report(ro,`<b>${d[0]}</b> · Posters with a face: ${d[1]}%`,ev);})
+        report(ro,`<b>${d[0]}</b> · ${t('readout_posters_with_face')}: ${d[1]}%`,ev);})
       .on('pointerleave',hideTip);
     const pulse=()=>peak.attr('r',5).attr('opacity',.9).transition().duration(1800).ease(d3.easeCubicOut)
       .attr('r',22).attr('opacity',0).on('end',pulse);
@@ -2193,13 +2221,13 @@ function d3Charts(){
     const p=svg.append('path').datum(TEXT_PTS).attr('d',line)
       .attr('fill','none').attr('stroke','#e5a00d').attr('stroke-width',3).attr('stroke-linecap','round');
     svg.append('text').attr('class','annot').attr('text-anchor','middle')
-      .attr('x',x(1956)).attr('y',y(36.1)-12).attr('font-weight','bold').text('SEE! SHOCKING! — 38%');
+      .attr('x',x(1956)).attr('y',y(36.1)-12).attr('font-weight','bold').text(t('see_shocking'));
     svg.append('text').attr('class','annot').attr('text-anchor','end')
-      .attr('x',x(2020)).attr('y',y(18.9)-12).attr('opacity',.6).text('whisper — 19%');
-    const ro=mkReadout('quiet','Tap, drag, or ←→ across the century');
+      .attr('x',x(2020)).attr('y',y(18.9)-12).attr('opacity',.6).text(t('whisper'));
+    const ro=mkReadout('quiet',t('hint_tap_drag_century'));
     const bis=d3.bisector(d=>d[0]).center;
     const scrub=wireScrub('quiet',{n:TEXT_PTS.length, start:TEXT_PTS.length-1, show:i=>{
-      const d=TEXT_PTS[i]; report(ro,`<b>${d[0]}</b> · Text-like coverage: ${d[1]}%`,null);
+      const d=TEXT_PTS[i]; report(ro,`<b>${d[0]}</b> · ${t('readout_textlike_coverage')}: ${d[1]}%`,null);
     }});
     svg.append('rect').attr('x',m.l).attr('y',m.t).attr('width',W-m.l-m.r).attr('height',H-m.t-m.b).attr('fill','transparent')
       .style('touch-action','none')
@@ -2208,7 +2236,7 @@ function d3Charts(){
         const i=bis(TEXT_PTS,x.invert(d3.pointer(ev,this)[0]));
         scrub.set(i);
         const d=TEXT_PTS[i];
-        report(ro,`<b>${d[0]}</b> · Text-like coverage: ${d[1]}%`,ev);})
+        report(ro,`<b>${d[0]}</b> · ${t('readout_textlike_coverage')}: ${d[1]}%`,ev);})
       .on('pointerleave',hideTip);
     onEnter('quiet',()=>{drawIn(p,1600);areaP.transition().delay(ms(600)).duration(ms(1200)).attr('opacity',1);});
   }
@@ -2229,13 +2257,13 @@ function d3Charts(){
     svg.append('line').attr('x1',x(1950)).attr('x2',x(2022)).attr('y1',y(0.87)).attr('y2',y(0.87))
       .attr('class','annot-line').attr('opacity',.5);
     svg.append('text').attr('class','annot').attr('text-anchor','end')
-      .attr('x',x(2022)).attr('y',y(0.868)-8).text('2022 peak: 0.87');
+      .attr('x',x(2022)).attr('y',y(0.868)-8).text(t('peak_2022_symmetry'));
     svg.append('text').attr('class','annot').attr('text-anchor','middle')
-      .attr('x',x(2013)).attr('y',y(0.842)+24).text('elevated leap');
-    const ro=mkReadout('symmetry','Tap, drag, or ←→ across the century');
+      .attr('x',x(2013)).attr('y',y(0.842)+24).text(t('elevated_leap'));
+    const ro=mkReadout('symmetry',t('hint_tap_drag_century'));
     const bis=d3.bisector(d=>d[0]).center;
     const scrub=wireScrub('symmetry',{n:SYM_PTS.length, start:SYM_PTS.length-1, show:i=>{
-      const d=SYM_PTS[i]; report(ro,`<b>${d[0]}</b> · Mirror symmetry: ${d[1]}`,null);
+      const d=SYM_PTS[i]; report(ro,`<b>${d[0]}</b> · ${t('readout_mirror_symmetry')}: ${d[1]}`,null);
     }});
     svg.append('rect').attr('x',m.l).attr('y',m.t).attr('width',W-m.l-m.r).attr('height',H-m.t-m.b).attr('fill','transparent')
       .style('touch-action','none')
@@ -2244,7 +2272,7 @@ function d3Charts(){
         const i=bis(SYM_PTS,x.invert(d3.pointer(ev,this)[0]));
         scrub.set(i);
         const d=SYM_PTS[i];
-        report(ro,`<b>${d[0]}</b> · Mirror symmetry: ${d[1]}`,ev);})
+        report(ro,`<b>${d[0]}</b> · ${t('readout_mirror_symmetry')}: ${d[1]}`,ev);})
       .on('pointerleave',hideTip);
     onEnter('symmetry',()=>{drawIn(p,1600);
       ghost.transition().delay(ms(1500)).duration(ms(1200)).attr('opacity',.18);});
@@ -2267,13 +2295,13 @@ function d3Charts(){
     const p=svg.append('path').datum(DIAG_PTS).attr('d',line)
       .attr('fill','none').attr('stroke','#d9772e').attr('stroke-width',3).attr('stroke-linecap','round');
     svg.append('text').attr('class','annot').attr('text-anchor','middle')
-      .attr('x',x(1955)).attr('y',y(37.6)-12).text('atomic-pulp peak — 38%');
+      .attr('x',x(1955)).attr('y',y(37.6)-12).text(t('atomic_pulp_peak'));
     svg.append('text').attr('class','annot').attr('text-anchor','end')
-      .attr('x',x(2020)).attr('y',y(23.1)-12).text('today — 23%');
-    const ro=mkReadout('diagonal','Tap, drag, or ←→ across the century');
+      .attr('x',x(2020)).attr('y',y(23.1)-12).text(t('today_diagonal'));
+    const ro=mkReadout('diagonal',t('hint_tap_drag_century'));
     const bis=d3.bisector(d=>d[0]).center;
     const scrub=wireScrub('diagonal',{n:DIAG_PTS.length, start:DIAG_PTS.length-1, show:i=>{
-      const d=DIAG_PTS[i]; report(ro,`<b>${d[0]}</b> · Diagonal linework: ${d[1]}%`,null);
+      const d=DIAG_PTS[i]; report(ro,`<b>${d[0]}</b> · ${t('readout_diagonal_linework')}: ${d[1]}%`,null);
     }});
     svg.append('rect').attr('x',m.l).attr('y',m.t).attr('width',W-m.l-m.r).attr('height',H-m.t-m.b).attr('fill','transparent')
       .style('touch-action','none')
@@ -2282,7 +2310,7 @@ function d3Charts(){
         const i=bis(DIAG_PTS,x.invert(d3.pointer(ev,this)[0]));
         scrub.set(i);
         const d=DIAG_PTS[i];
-        report(ro,`<b>${d[0]}</b> · Diagonal linework: ${d[1]}%`,ev);})
+        report(ro,`<b>${d[0]}</b> · ${t('readout_diagonal_linework')}: ${d[1]}%`,ev);})
       .on('pointerleave',hideTip);
     onEnter('diagonal',()=>{drawIn(p,1600);areaP.transition().delay(ms(600)).duration(ms(1200)).attr('opacity',1);});
   }
@@ -2308,7 +2336,7 @@ function d3Charts(){
       if(d==null) sel.attr('stroke-dasharray',null);
       else sel.attr('stroke-dasharray',d);
     };
-    const ro=mkReadout('census','Tap a line · ←→ decade · ↑↓ creature');
+    const ro=mkReadout('census',t('hint_census'));
     const svg=d3.select('#census'),W=960,H=420,m={t:30,r:150,b:40,l:50};
     const x=d3.scaleLinear().domain([1920,2020]).range([m.l,W-m.r]);
     const y=d3.scaleLinear().domain([0,13]).range([H-m.b,m.t]);
@@ -2359,7 +2387,7 @@ function d3Charts(){
       const n=names[si];
       const pt=CENSUS[n].pts[di];
       focus(n);
-      report(ro,`<b>${n}</b> · ${pt[1]}% of posters · ${pt[0]}s`,null);
+      report(ro,`<b>${n}</b> · ${pt[1]}% ${t('readout_of_posters')} · ${pt[0]}s`,null);
     };
     const hitCensus=(n,ev)=>{
       focus(n);
@@ -2370,7 +2398,7 @@ function d3Charts(){
       const di=decades.indexOf(nearest);
       scrub.set(di);
       const pt=CENSUS[n].pts[di];
-      report(ro,`<b>${n}</b> · ${pt?pt[1]+'% of posters · '+pt[0]+'s':''}`,ev);
+      report(ro,`<b>${n}</b> · ${pt?pt[1]+'% '+t('readout_of_posters')+' · '+pt[0]+'s':''}`,ev);
     };
     names.forEach(n=>{
       paths[n].style('touch-action','none')
@@ -2383,9 +2411,9 @@ function d3Charts(){
     scrub=wireScrub('census',{n:CENSUS[names[0]].pts.length, start:CENSUS[names[0]].pts.length-1, show:showCensus,
       onVert:dir=>{ si=(si+dir+names.length)%names.length; showCensus(scrub.get()); }});
     /* three annotations = the bookend story + one dynasty beat */
-    [["ghosts open — 12%",1922,11.7,'#e8e4da','start'],
-     ['killer peaks',1984,8.2,'#e02430','middle'],
-     ['ghost returns',2012,6.8,'#e8e4da','end']].forEach(a=>{
+    [[t('census_ghosts_open'),1922,11.7,'#e8e4da','start'],
+     [t('census_killer_peaks'),1984,8.2,'#e02430','middle'],
+     [t('census_ghost_returns'),2012,6.8,'#e8e4da','end']].forEach(a=>{
       svg.append('text').attr('class','annot').attr('fill',a[3]).attr('text-anchor',a[4])
         .attr('x',x(a[1])).attr('y',y(a[2])).text(a[0]);});
     onEnter('census',()=>{
@@ -2415,16 +2443,16 @@ function d3Charts(){
     const pSem=svg.append('path').datum(BLOOD_SEMANTIC).attr('d',line)
       .attr('fill','none').attr('stroke','#c1121f').attr('stroke-width',3).attr('stroke-linecap','round');
     svg.append('text').attr('class','line-label').attr('fill','#c1121f')
-      .attr('x',x(10)+8).attr('y',y(BLOOD_SEMANTIC[10])+4).text('Model: "this looks like blood"');
+      .attr('x',x(10)+8).attr('y',y(BLOOD_SEMANTIC[10])+4).text(t('model_looks_like_blood'));
     svg.append('text').attr('class','line-label').attr('fill','#9a958a')
-      .attr('x',x(10)+8).attr('y',y(BLOOD_PIXEL[10])+18).text('Pixel-red share');
+      .attr('x',x(10)+8).attr('y',y(BLOOD_PIXEL[10])+18).text(t('pixel_red_share'));
     svg.append('text').attr('class','annot').attr('text-anchor','middle')
-      .attr('x',x(5.5)).attr('y',y(24)).text('slasher boom: the split');
+      .attr('x',x(5.5)).attr('y',y(24)).text(t('slasher_boom_split'));
     svg.append('line').attr('x1',x(5)).attr('x2',x(5)).attr('y1',y(0)).attr('y2',y(21.9))
       .attr('class','annot-line').attr('opacity',.5);
-    const ro=mkReadout('blood2','Tap, drag, or ←→ across the decades');
+    const ro=mkReadout('blood2',t('hint_tap_drag_decades'));
     const scrub=wireScrub('blood2',{n:DECADES.length, start:DECADES.length-1, show:di=>{
-      report(ro,`<b>${DECADES[di]}</b> · Model blood ${BLOOD_SEMANTIC[di]}% · Pixel-red ${BLOOD_PIXEL[di]}%`,null);
+      report(ro,`<b>${DECADES[di]}</b> · ${t('readout_model_blood')} ${BLOOD_SEMANTIC[di]}% · ${t('readout_pixel_red')} ${BLOOD_PIXEL[di]}%`,null);
     }});
     svg.append('rect').attr('x',m.l).attr('y',m.t).attr('width',W-m.l-m.r).attr('height',H-m.t-m.b)
       .attr('fill','transparent').style('touch-action','none')
@@ -2432,7 +2460,7 @@ function d3Charts(){
         ev.preventDefault();
         const di=Math.max(0,Math.min(10,Math.round(x.invert(d3.pointer(ev,this)[0]))));
         scrub.set(di);
-        report(ro,`<b>${DECADES[di]}</b> · Model blood ${BLOOD_SEMANTIC[di]}% · Pixel-red ${BLOOD_PIXEL[di]}%`,ev);})
+        report(ro,`<b>${DECADES[di]}</b> · ${t('readout_model_blood')} ${BLOOD_SEMANTIC[di]}% · ${t('readout_pixel_red')} ${BLOOD_PIXEL[di]}%`,ev);})
       .on('pointerleave',hideTip);
     onEnter('blood2',()=>{drawIn(pSem,1600);
       pPixel.transition().delay(ms(1400)).duration(ms(900)).attr('opacity',1);
@@ -2486,7 +2514,7 @@ function legacyCharts(){
   const d='M'+pts.map(p=>`${x(p[0])},${yy(p[1])}`).join(' L');
   svg.appendChild(el('path',{d:d+` L${x(2022)},${yy(25)} L${x(1925)},${yy(25)} Z`,fill:'rgba(229,160,13,.08)'}));
   svg.appendChild(el('path',{d,fill:'none',stroke:'#e5a00d','stroke-width':3,'stroke-linecap':'round'}));
-  [[1930,'Expressionist shadow',37.5,1930,39.6],[1975,'Occult slide begins',45.8,1975,41.8],[1982,'Slasher black',31,1982,37],[2020,'Never came back',26.5,2020,28.9]].forEach(a=>{
+  [[1930,t('annot_expressionist_shadow'),37.5,1930,39.6],[1975,t('annot_occult_slide'),45.8,1975,41.8],[1982,t('annot_slasher_black'),31,1982,37],[2020,t('annot_never_came_back'),26.5,2020,28.9]].forEach(a=>{
     svg.appendChild(el('line',{x1:x(a[3]),x2:x(a[3]),y1:yy(a[4]),y2:yy(a[2])+14,class:'annot-line'}));
     const t=el('text',{x:Math.min(x(a[3]),W-280),y:yy(a[2]),'text-anchor':'middle',class:'annot'});t.textContent=a[1];svg.appendChild(t);
   });
@@ -2594,9 +2622,9 @@ function legacyCharts(){
   svg.appendChild(el('path',{d:dSem+` L${x(10)},${yy(0)} L${x(0)},${yy(0)} Z`,fill:'rgba(193,18,31,.18)'}));
   svg.appendChild(el('path',{d:dPixel,fill:'none',stroke:'#9a958a','stroke-width':2.5,'stroke-dasharray':'6 5','stroke-linecap':'round'}));
   svg.appendChild(el('path',{d:dSem,fill:'none',stroke:'#c1121f','stroke-width':3,'stroke-linecap':'round'}));
-  const lbl1=el('text',{x:x(10)+8,y:yy(BLOOD_SEMANTIC[10])+4,class:'line-label',fill:'#c1121f'});lbl1.textContent='Model: "this looks like blood"';svg.appendChild(lbl1);
-  const lbl2=el('text',{x:x(10)+8,y:yy(BLOOD_PIXEL[10])+18,class:'line-label',fill:'#9a958a'});lbl2.textContent='Pixel-red share';svg.appendChild(lbl2);
-  const ann=el('text',{x:x(5.5),y:yy(24),'text-anchor':'middle',class:'annot'});ann.textContent='slasher boom: the split';svg.appendChild(ann);
+  const lbl1=el('text',{x:x(10)+8,y:yy(BLOOD_SEMANTIC[10])+4,class:'line-label',fill:'#c1121f'});lbl1.textContent=t('model_looks_like_blood');svg.appendChild(lbl1);
+  const lbl2=el('text',{x:x(10)+8,y:yy(BLOOD_PIXEL[10])+18,class:'line-label',fill:'#9a958a'});lbl2.textContent=t('pixel_red_share');svg.appendChild(lbl2);
+  const ann=el('text',{x:x(5.5),y:yy(24),'text-anchor':'middle',class:'annot'});ann.textContent=t('slasher_boom_split');svg.appendChild(ann);
 })();
 }
 

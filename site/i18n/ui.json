@@ -1,0 +1,782 @@
+{
+  "all_horror": {
+    "en": "All horror (18,716)",
+    "es": "Todo el terror (18,716)"
+  },
+  "mainstream": {
+    "en": "Mainstream (100+ votes)",
+    "es": "Mainstream (100+ votos)"
+  },
+  "peak_1940s_faces": {
+    "en": "1940s peak: 83%",
+    "es": "Pico años 40: 83%"
+  },
+  "faces_1998_bigger": {
+    "en": "1998: bigger faces",
+    "es": "1998: rostros más grandes"
+  },
+  "faces_under_half": {
+    "en": "under half",
+    "es": "menos de la mitad"
+  },
+  "see_shocking": {
+    "en": "SEE! SHOCKING! — 38%",
+    "es": "¡SEE! ¡SHOCKING! — 38%"
+  },
+  "whisper": {
+    "en": "whisper — 19%",
+    "es": "susurro — 19%"
+  },
+  "peak_2022_symmetry": {
+    "en": "2022 peak: 0.87",
+    "es": "Pico 2022: 0.87"
+  },
+  "elevated_leap": {
+    "en": "elevated leap",
+    "es": "salto elevated"
+  },
+  "atomic_pulp_peak": {
+    "en": "atomic-pulp peak — 38%",
+    "es": "pico atomic-pulp — 38%"
+  },
+  "today_diagonal": {
+    "en": "today — 23%",
+    "es": "hoy — 23%"
+  },
+  "pixel_red_share": {
+    "en": "Pixel-red share",
+    "es": "Cuota rojo-píxel"
+  },
+  "model_looks_like_blood": {
+    "en": "Model: \"this looks like blood\"",
+    "es": "Modelo: \"esto parece sangre\""
+  },
+  "slasher_boom_split": {
+    "en": "slasher boom: the split",
+    "es": "boom slasher: la separación"
+  },
+  "view_data_table": {
+    "en": "View data table",
+    "es": "Ver tabla de datos"
+  },
+  "none_detected": {
+    "en": "none detected",
+    "es": "ninguno detectado"
+  },
+  "hint_tap_drag_century": {
+    "en": "Tap, drag, or ←→ across the century",
+    "es": "Toca, arrastra o ←→ a lo largo del siglo"
+  },
+  "hint_tap_drag_decades": {
+    "en": "Tap, drag, or ←→ across the decades",
+    "es": "Toca, arrastra o ←→ a lo largo de las décadas"
+  },
+  "hint_tap_or_drag": {
+    "en": "Tap or drag across the chart",
+    "es": "Toca o arrastra por el gráfico"
+  },
+  "hint_river": {
+    "en": "Tap a band · drag decade · ↑↓ band",
+    "es": "Toca una banda · arrastra década · ↑↓ banda"
+  },
+  "hint_typo": {
+    "en": "Tap a register · drag decade · ↑↓ register",
+    "es": "Toca un registro · arrastra década · ↑↓ registro"
+  },
+  "hint_census": {
+    "en": "Tap a line · ←→ decade · ↑↓ creature",
+    "es": "Toca una línea · ←→ década · ↑↓ criatura"
+  },
+  "annot_ornate": {
+    "en": "◄ ornate",
+    "es": "◄ ornate"
+  },
+  "annot_minimal": {
+    "en": "minimal ►",
+    "es": "minimal ►"
+  },
+  "census_ghosts_open": {
+    "en": "ghosts open — 12%",
+    "es": "fantasmas abren — 12%"
+  },
+  "census_killer_peaks": {
+    "en": "killer peaks",
+    "es": "pico del asesino"
+  },
+  "census_ghost_returns": {
+    "en": "ghost returns",
+    "es": "el fantasma regresa"
+  },
+  "annot_expressionist_shadow": {
+    "en": "Expressionist shadow",
+    "es": "Sombra expresionista"
+  },
+  "annot_atomic_daylight": {
+    "en": "Atomic daylight peak",
+    "es": "Pico de luz diurna atómica"
+  },
+  "annot_occult_slide": {
+    "en": "Occult slide begins",
+    "es": "Empieza el descenso ocultista"
+  },
+  "annot_never_came_back": {
+    "en": "Never came back",
+    "es": "Nunca volvió"
+  },
+  "annot_before_blood": {
+    "en": "Before blood: 4%",
+    "es": "Antes de la sangre: 4%"
+  },
+  "annot_occult_red": {
+    "en": "Occult red",
+    "es": "Rojo ocultista"
+  },
+  "annot_slashers_never_led": {
+    "en": "Slashers never led",
+    "es": "Los slashers nunca lideraron"
+  },
+  "annot_peak_meta_horror": {
+    "en": "Peak: meta-horror",
+    "es": "Pico: meta-horror"
+  },
+  "annot_slasher_black": {
+    "en": "Slasher black",
+    "es": "Negro slasher"
+  },
+  "hue_reds": {
+    "en": "Reds",
+    "es": "Rojos"
+  },
+  "hue_oranges_yellows": {
+    "en": "Oranges/Yellows",
+    "es": "Naranjas/Amarillos"
+  },
+  "hue_warm_short": {
+    "en": "Warm",
+    "es": "Cálidos"
+  },
+  "hue_greens": {
+    "en": "Greens",
+    "es": "Verdes"
+  },
+  "hue_blues": {
+    "en": "Blues",
+    "es": "Azules"
+  },
+  "hue_purples": {
+    "en": "Purples",
+    "es": "Púrpuras"
+  },
+  "hue_black_grey": {
+    "en": "Black/Grey",
+    "es": "Negro/Gris"
+  },
+  "hue_dark_short": {
+    "en": "Dark",
+    "es": "Oscuro"
+  },
+  "typo_ornate_display": {
+    "en": "Ornate display",
+    "es": "Display ornate"
+  },
+  "typo_ornate_short": {
+    "en": "Ornate",
+    "es": "Ornate"
+  },
+  "typo_decorative": {
+    "en": "Decorative",
+    "es": "Decorative"
+  },
+  "typo_standard": {
+    "en": "Standard",
+    "es": "Standard"
+  },
+  "typo_clean": {
+    "en": "Clean",
+    "es": "Clean"
+  },
+  "typo_minimal": {
+    "en": "Minimal",
+    "es": "Minimal"
+  },
+  "creature_giant_monster": {
+    "en": "giant monster",
+    "es": "monstruo gigante"
+  },
+  "creature_masked_killer": {
+    "en": "masked killer",
+    "es": "asesino enmascarado"
+  },
+  "creature_wolf_dog": {
+    "en": "wolf/dog",
+    "es": "lobo/perro"
+  },
+  "aria_river_label": {
+    "en": "Hue-family share of poster pixels by decade",
+    "es": "Cuota de píxeles del póster por familia de matiz, por década"
+  },
+  "aria_river_desc": {
+    "en": "Stacked chart of six hue bands from the 1920s to the 2020s. Black and grey rise over time while warm pulp colors shrink.",
+    "es": "Gráfico apilado de seis bandas de matiz de los años 20 a los 2020. El negro y el gris suben con el tiempo mientras los colores pulp cálidos se contraen."
+  },
+  "table_river_caption": {
+    "en": "Mean pixel share by hue family, per decade (n=18,716)",
+    "es": "Cuota media de píxeles por familia de matiz, por década (n=18,716)"
+  },
+  "aria_darkness_label": {
+    "en": "Average poster brightness over the century",
+    "es": "Brillo medio del póster a lo largo del siglo"
+  },
+  "aria_darkness_desc": {
+    "en": "Line chart of mean L* brightness from 1925 to 2022. Brightness peaks around 1960 then falls for about sixty years.",
+    "es": "Gráfico de líneas del brillo medio L* de 1925 a 2022. El brillo llega a su pico alrededor de 1960 y luego cae unos sesenta años."
+  },
+  "table_darkness_caption": {
+    "en": "Mean poster brightness (L*), 5-year rolling points",
+    "es": "Brillo medio del póster (L*), puntos de media móvil de 5 años"
+  },
+  "col_year": {
+    "en": "Year",
+    "es": "Año"
+  },
+  "col_decade": {
+    "en": "Decade",
+    "es": "Década"
+  },
+  "col_all_horror_l": {
+    "en": "All horror L*",
+    "es": "Todo el terror L*"
+  },
+  "aria_red_label": {
+    "en": "Share of blood-red pixels over time",
+    "es": "Cuota de píxeles rojo sangre a lo largo del tiempo"
+  },
+  "aria_red_desc": {
+    "en": "Line chart of blood-red pixel share from 1925 to 2022. The peak is in the late 1990s, after the slasher era.",
+    "es": "Gráfico de líneas de la cuota de píxeles rojo sangre de 1925 a 2022. El pico está a finales de los 90, después de la era slasher."
+  },
+  "table_red_caption": {
+    "en": "Blood-red pixel share (%), 5-year rolling points",
+    "es": "Cuota de píxeles rojo sangre (%), puntos de media móvil de 5 años"
+  },
+  "col_red_pct": {
+    "en": "Red %",
+    "es": "Rojo %"
+  },
+  "aria_faces_label": {
+    "en": "Share of posters with a detectable face",
+    "es": "Cuota de pósters con un rostro detectable"
+  },
+  "aria_faces_desc": {
+    "en": "Line chart of the percentage of posters with at least one YuNet-detected face. Peaks in the 1940s near 83%, then declines toward about half of posters.",
+    "es": "Gráfico de líneas del porcentaje de pósters con al menos un rostro detectado por YuNet. Pico en los años 40 cerca del 83%, luego baja hacia cerca de la mitad de los pósters."
+  },
+  "table_faces_caption": {
+    "en": "Posters with ≥1 detected face (%), 5-year rolling points",
+    "es": "Pósters con ≥1 rostro detectado (%), puntos de media móvil de 5 años"
+  },
+  "col_with_face_pct": {
+    "en": "With face %",
+    "es": "Con rostro %"
+  },
+  "aria_census_label": {
+    "en": "Creature share of posters over time",
+    "es": "Cuota de criaturas en pósters a lo largo del tiempo"
+  },
+  "aria_census_desc": {
+    "en": "Multi-line chart of CLIP creature labels. Ghosts bookend the century; masked killers peak in the 1980s.",
+    "es": "Gráfico multilínea de etiquetas de criatura CLIP. Los fantasmas enmarcan el siglo; los asesinos enmascarados llegan a su pico en los 80."
+  },
+  "table_census_caption": {
+    "en": "Creature share of posters (%), by decade",
+    "es": "Cuota de criaturas en pósters (%), por década"
+  },
+  "aria_quiet_label": {
+    "en": "Text-like coverage of posters over time",
+    "es": "Cobertura similar a texto de los pósters a lo largo del tiempo"
+  },
+  "aria_quiet_desc": {
+    "en": "Line chart of MSER text-region coverage. Peaks in the 1950s shout era, then falls toward quieter contemporary sheets.",
+    "es": "Gráfico de líneas de la cobertura de regiones de texto MSER. Pico en la era del grito de los 50, luego cae hacia hojas contemporáneas más quietas."
+  },
+  "table_quiet_caption": {
+    "en": "Text-like coverage (%), 5-year rolling points",
+    "es": "Cobertura similar a texto (%), puntos de media móvil de 5 años"
+  },
+  "col_textlike_pct": {
+    "en": "Text-like %",
+    "es": "Similar a texto %"
+  },
+  "aria_symmetry_label": {
+    "en": "Mirror symmetry of posters over time",
+    "es": "Simetría espejo de los pósters a lo largo del tiempo"
+  },
+  "aria_symmetry_desc": {
+    "en": "Line chart of left-right mirror similarity. Climbs after 2010 with elevated, centered compositions.",
+    "es": "Gráfico de líneas de similitud espejo izquierda-derecha. Sube después de 2010 con composiciones elevated y centradas."
+  },
+  "table_symmetry_caption": {
+    "en": "Mirror symmetry score, 5-year rolling points",
+    "es": "Score de simetría espejo, puntos de media móvil de 5 años"
+  },
+  "col_symmetry": {
+    "en": "Symmetry",
+    "es": "Simetría"
+  },
+  "aria_diagonal_label": {
+    "en": "Diagonal linework share over time",
+    "es": "Cuota de linework diagonal a lo largo del tiempo"
+  },
+  "aria_diagonal_desc": {
+    "en": "Line chart of diagonal composition energy. Peaks in mid-century pulp, then declines as posters stand upright.",
+    "es": "Gráfico de líneas de la energía composicional diagonal. Pico en el pulp de mediados de siglo, luego baja a medida que los pósters se ponen derechos."
+  },
+  "table_diagonal_caption": {
+    "en": "Diagonal linework share (%), 5-year rolling points",
+    "es": "Cuota de linework diagonal (%), puntos de media móvil de 5 años"
+  },
+  "col_diagonal_pct": {
+    "en": "Diagonal %",
+    "es": "Diagonal %"
+  },
+  "aria_typo_label": {
+    "en": "Title lettering registers from ornate to minimal",
+    "es": "Registros tipográficos del título de ornate a minimal"
+  },
+  "aria_typo_desc": {
+    "en": "Stacked chart of five typography registers by decade. Ornate display falls; minimal type becomes the largest register by the 2020s.",
+    "es": "Gráfico apilado de cinco registros tipográficos por década. El display ornate cae; el tipo minimal se vuelve el registro más grande en los 2020s."
+  },
+  "table_typo_caption": {
+    "en": "Share of title lettering registers by decade",
+    "es": "Cuota de registros tipográficos del título por década"
+  },
+  "aria_blood2_label": {
+    "en": "Pixel-red versus model-detected blood by decade",
+    "es": "Rojo-píxel frente a sangre detectada por modelo, por década"
+  },
+  "aria_blood2_desc": {
+    "en": "Two-line chart comparing blood-red pixel share with CLIP semantic blood. The measures split after the slasher boom.",
+    "es": "Gráfico de dos líneas que compara la cuota de píxeles rojo sangre con la sangre semántica CLIP. Las medidas se separan tras el boom slasher."
+  },
+  "table_blood2_caption": {
+    "en": "Pixel-red vs model-detected blood by decade",
+    "es": "Rojo-píxel vs sangre detectada por modelo, por década"
+  },
+  "col_pixel_red_pct": {
+    "en": "Pixel-red %",
+    "es": "Rojo-píxel %"
+  },
+  "col_model_blood_pct": {
+    "en": "Model blood %",
+    "es": "Sangre modelo %"
+  },
+  "readout_all_horror_l": {
+    "en": "All horror L*",
+    "es": "Todo el terror L*"
+  },
+  "readout_mainstream_l": {
+    "en": "Mainstream",
+    "es": "Cine general"
+  },
+  "readout_blood_red_pixels": {
+    "en": "Blood-red pixels",
+    "es": "Píxeles rojo sangre"
+  },
+  "readout_posters_with_face": {
+    "en": "Posters with a face",
+    "es": "Pósters con un rostro"
+  },
+  "readout_textlike_coverage": {
+    "en": "Text-like coverage",
+    "es": "Cobertura similar a texto"
+  },
+  "readout_mirror_symmetry": {
+    "en": "Mirror symmetry",
+    "es": "Simetría espejo"
+  },
+  "readout_diagonal_linework": {
+    "en": "Diagonal linework",
+    "es": "Linework diagonal"
+  },
+  "readout_of_pixels": {
+    "en": "of pixels",
+    "es": "de los píxeles"
+  },
+  "readout_of_titles": {
+    "en": "of titles",
+    "es": "de los títulos"
+  },
+  "readout_of_posters": {
+    "en": "of posters",
+    "es": "de los pósters"
+  },
+  "readout_model_blood": {
+    "en": "Model blood",
+    "es": "Sangre modelo"
+  },
+  "readout_pixel_red": {
+    "en": "Pixel-red",
+    "es": "Rojo-píxel"
+  },
+  "readout_arrow_decade": {
+    "en": "←→ for a decade",
+    "es": "←→ para una década"
+  },
+  "stat_brightness": {
+    "en": "Brightness (L*)",
+    "es": "Brillo (L*)"
+  },
+  "stat_saturation": {
+    "en": "Saturation",
+    "es": "Saturación"
+  },
+  "stat_near_black": {
+    "en": "Near-black share",
+    "es": "Cuota casi negro"
+  },
+  "stat_blood_red": {
+    "en": "Blood-red share",
+    "es": "Cuota rojo sangre"
+  },
+  "stat_faces_detected": {
+    "en": "Faces detected",
+    "es": "Rostros detectados"
+  },
+  "stat_face_area": {
+    "en": "Face area",
+    "es": "Área de rostro"
+  },
+  "stat_creature_clip": {
+    "en": "Creature (CLIP)",
+    "es": "Criatura (CLIP)"
+  },
+  "stat_text_area": {
+    "en": "Text area",
+    "es": "Área de texto"
+  },
+  "stat_typography_register": {
+    "en": "Typography register",
+    "es": "Registro tipográfico"
+  },
+  "stat_ornate_minimal_axis": {
+    "en": "Ornate ↔ minimal axis",
+    "es": "Eje ornate ↔ minimal"
+  },
+  "stat_symmetry": {
+    "en": "Symmetry",
+    "es": "Simetría"
+  },
+  "stat_visual_balance": {
+    "en": "Visual balance",
+    "es": "Balance visual"
+  },
+  "stat_rule_of_thirds": {
+    "en": "Rule-of-thirds dist.",
+    "es": "Dist. regla de tercios"
+  },
+  "stat_diagonal_score": {
+    "en": "Diagonal score",
+    "es": "Score diagonal"
+  },
+  "stat_pyramid_shift": {
+    "en": "Pyramid shift",
+    "es": "Desplazamiento piramidal"
+  },
+  "stat_alignment_score": {
+    "en": "Alignment score",
+    "es": "Score de alineación"
+  },
+  "stat_medium": {
+    "en": "Medium",
+    "es": "Medio"
+  },
+  "stat_palette": {
+    "en": "Palette",
+    "es": "Paleta"
+  },
+  "stat_color_harmony": {
+    "en": "Color harmony",
+    "es": "Armonía de color"
+  },
+  "stat_complexity": {
+    "en": "Complexity",
+    "es": "Complejidad"
+  },
+  "stat_negative_space": {
+    "en": "Negative space",
+    "es": "Espacio negativo"
+  },
+  "stat_mass_center": {
+    "en": "Mass center",
+    "es": "Centro de masa"
+  },
+  "stat_rekognition_faces": {
+    "en": "Rekognition faces",
+    "es": "Rostros Rekognition"
+  },
+  "stat_top_label": {
+    "en": "Top label",
+    "es": "Etiqueta principal"
+  },
+  "stat_scene_flags": {
+    "en": "Scene flags",
+    "es": "Banderas de escena"
+  },
+  "stat_gore": {
+    "en": "Gore / disturbing",
+    "es": "Gore / perturbador"
+  },
+  "stat_violence": {
+    "en": "Violence",
+    "es": "Violencia"
+  },
+  "lookup_loading": {
+    "en": "Loading analysis index…",
+    "es": "Cargando índice de análisis…"
+  },
+  "lookup_load_error": {
+    "en": "Could not load analysis index (run pipeline/build_lookup.py).",
+    "es": "No se pudo cargar el índice de análisis (ejecuta pipeline/build_lookup.py)."
+  },
+  "lookup_loading_short": {
+    "en": "Loading…",
+    "es": "Cargando…"
+  },
+  "lookup_note_semantic_sample": {
+    "en": "Semantic tags only exist for the stratified segmentation sample (~1,721 posters).",
+    "es": "Las etiquetas semánticas solo existen para la muestra estratificada de segmentación (~1,721 pósters)."
+  },
+  "lookup_note_no_clip": {
+    "en": "No CLIP semantic segmentation for this poster (outside the ~1,721 stratified sample).",
+    "es": "Sin segmentación semántica CLIP para este póster (fuera de la muestra estratificada de ~1,721)."
+  },
+  "lookup_note_rekognition": {
+    "en": "Rekognition complements CLIP/YuNet: photo labels & moderation. Painted sheets often return 0 faces.",
+    "es": "Rekognition complementa CLIP/YuNet: etiquetas fotográficas y moderación. Las hojas pintadas a menudo devuelven 0 rostros."
+  },
+  "aria_search_title": {
+    "en": "Search poster by title",
+    "es": "Buscar póster por título"
+  },
+  "aria_from_year": {
+    "en": "From year",
+    "es": "Desde el año"
+  },
+  "aria_to_year": {
+    "en": "To year",
+    "es": "Hasta el año"
+  },
+  "aria_skip_hero": {
+    "en": "Skip hero and begin reading",
+    "es": "Saltar el hero y empezar a leer"
+  },
+  "era_1920s_title": {
+    "en": "THE MONSTER",
+    "es": "THE MONSTER"
+  },
+  "era_1920s_tag": {
+    "en": "A Universal Terror",
+    "es": "A Universal Terror"
+  },
+  "era_1940s_title": {
+    "en": "ATOMIC BEAST!",
+    "es": "ATOMIC BEAST!"
+  },
+  "era_1940s_tag": {
+    "en": "SEE! the thing from beyond",
+    "es": "SEE! the thing from beyond"
+  },
+  "era_1960s_title": {
+    "en": "The Dwelling",
+    "es": "The Dwelling"
+  },
+  "era_1960s_tag": {
+    "en": "pray it isn't true",
+    "es": "pray it isn't true"
+  },
+  "era_1980s_title": {
+    "en": "SLAY RIDE",
+    "es": "SLAY RIDE"
+  },
+  "era_1980s_tag": {
+    "en": "he knows when you're alone",
+    "es": "he knows when you're alone"
+  },
+  "era_1990s_title": {
+    "en": "CAPTIVE",
+    "es": "CAPTIVE"
+  },
+  "era_1990s_tag": {
+    "en": "how much can you take?",
+    "es": "how much can you take?"
+  },
+  "era_2010s_title": {
+    "en": "the orchard",
+    "es": "the orchard"
+  },
+  "era_2010s_tag": {
+    "en": "a quiet kind of ruin",
+    "es": "a quiet kind of ruin"
+  },
+  "sec_color": {
+    "en": "Color",
+    "es": "Color"
+  },
+  "sec_hue_families": {
+    "en": "Hue families",
+    "es": "Familias de matiz"
+  },
+  "sec_faces_creature": {
+    "en": "Faces & creature",
+    "es": "Rostros y criatura"
+  },
+  "sec_lettering": {
+    "en": "Lettering",
+    "es": "Letraje"
+  },
+  "sec_composition": {
+    "en": "Composition",
+    "es": "Composición"
+  },
+  "sec_semantics": {
+    "en": "Semantics (sample)",
+    "es": "Semántica (muestra)"
+  },
+  "sec_rekognition": {
+    "en": "AWS Rekognition",
+    "es": "AWS Rekognition"
+  },
+  "lookup_eye_hint": {
+    "en": "eye = animated preview on the poster",
+    "es": "ojo = vista previa animada en el póster"
+  },
+  "lookup_preview_on_poster": {
+    "en": "Preview on poster",
+    "es": "Vista previa en el póster"
+  },
+  "lookup_preview_metric": {
+    "en": "Preview {k} on poster",
+    "es": "Vista previa de {k} en el póster"
+  },
+  "lookup_preview_bands": {
+    "en": "Preview hue bands",
+    "es": "Vista previa de bandas de matiz"
+  },
+  "lookup_5_swatches": {
+    "en": "5 swatches",
+    "es": "5 muestras"
+  },
+  "lookup_painted": {
+    "en": "painted",
+    "es": "pintado"
+  },
+  "lookup_photo_mixed": {
+    "en": "photo / mixed",
+    "es": "foto / mixto"
+  },
+  "lookup_none": {
+    "en": "none",
+    "es": "ninguna"
+  },
+  "aria_overlay_legend": {
+    "en": "Overlay legend",
+    "es": "Leyenda del overlay"
+  },
+  "aria_hero_title": {
+    "en": "Title",
+    "es": "Título"
+  },
+  "aria_intro": {
+    "en": "Introduction",
+    "es": "Introducción"
+  },
+  "lab_5_color_palette": {
+    "en": "5-color palette",
+    "es": "paleta de 5 colores"
+  },
+  "lab_near_black_pct": {
+    "en": "{n}% near-black",
+    "es": "{n}% casi negro"
+  },
+  "lab_saturation": {
+    "en": "saturation {v}",
+    "es": "saturación {v}"
+  },
+  "lab_blood_red": {
+    "en": "blood-red {v}",
+    "es": "rojo sangre {v}"
+  },
+  "lab_hue_families": {
+    "en": "hue families",
+    "es": "familias de matiz"
+  },
+  "lab_faces_area": {
+    "en": "{n} face · area {a}",
+    "es": "{n} rostro · área {a}"
+  },
+  "lab_faces_area_pl": {
+    "en": "{n} faces · area {a}",
+    "es": "{n} rostros · área {a}"
+  },
+  "lab_creature": {
+    "en": "creature: {c}",
+    "es": "criatura: {c}"
+  },
+  "lab_medium_na": {
+    "en": "medium n/a",
+    "es": "medio n/d"
+  },
+  "lab_title_box_text": {
+    "en": "title box · text-like {v}",
+    "es": "caja de título · similar a texto {v}"
+  },
+  "lab_textlike_pending": {
+    "en": "text-like {v} · title pending",
+    "es": "similar a texto {v} · título pendiente"
+  },
+  "lab_symmetry": {
+    "en": "symmetry {v}",
+    "es": "simetría {v}"
+  },
+  "lab_negative_space": {
+    "en": "negative space {v}",
+    "es": "espacio negativo {v}"
+  },
+  "lab_complexity": {
+    "en": "complexity {v}",
+    "es": "complejidad {v}"
+  },
+  "lab_balance": {
+    "en": "balance {v}",
+    "es": "balance {v}"
+  },
+  "lab_harmony": {
+    "en": "harmony {v}",
+    "es": "armonía {v}"
+  },
+  "lab_alignment": {
+    "en": "alignment {v}",
+    "es": "alineación {v}"
+  },
+  "lab_thirds_dist": {
+    "en": "thirds dist. {v}",
+    "es": "dist. tercios {v}"
+  },
+  "lab_diagonal": {
+    "en": "diagonal {v}",
+    "es": "diagonal {v}"
+  },
+  "lab_pyramid": {
+    "en": "pyramid {v}",
+    "es": "pirámide {v}"
+  },
+  "lab_mass_center": {
+    "en": "mass center",
+    "es": "centro de masa"
+  },
+  "lab_semantic_tags": {
+    "en": "semantic sample tags",
+    "es": "etiquetas semánticas de muestra"
+  }
+}
