@@ -33,8 +33,8 @@ html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:19px;line-height:1.65;overflow-x:hidden;transition:background .4s linear}
 ::selection{background:var(--blood);color:#fff}
 
-/* Poster stock texture — toggle via html[data-bg="paper"|"flat"]
-   (strength tuned so Paper vs Flat is obvious on near-black) */
+/* Background modes — toggle via html[data-bg]
+   paper | grain | crt | flat  (trial: pick one textured mode later) */
 html[data-bg="paper"]{
   --bg:#14110e; --bg2:#1a1713;
 }
@@ -59,6 +59,49 @@ html[data-bg="paper"] body::before{
   background-size:160px 160px;
   mix-blend-mode:overlay;
 }
+
+/* Film grain — coarser projection noise + soft vignette (no pulp fibers) */
+html[data-bg="grain"]{
+  --bg:#0c0c0e; --bg2:#141418;
+}
+html[data-bg="grain"] body{
+  background-color:var(--bg);
+  background-image:
+    radial-gradient(ellipse 120% 100% at 50% 40%, #16161a 0%, #0c0c0e 55%, #050506 100%);
+}
+html[data-bg="grain"] body::before{
+  content:""; position:fixed; inset:0; pointer-events:none; z-index:0;
+  opacity:.34;
+  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.75' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)' opacity='0.7'/%3E%3C/svg%3E");
+  background-size:220px 220px;
+  mix-blend-mode:soft-light;
+}
+
+/* CRT / scanlines — subtle VHS read (kept quiet for long scroll) */
+html[data-bg="crt"]{
+  --bg:#08090c; --bg2:#101218;
+}
+html[data-bg="crt"] body{
+  background-color:var(--bg);
+  background-image:
+    repeating-linear-gradient(
+      0deg,
+      transparent 0 2px,
+      rgba(0,0,0,.22) 2px 3px
+    ),
+    radial-gradient(ellipse 100% 85% at 50% 45%, #12151c 0%, #08090c 60%, #040508 100%);
+  background-size:auto, auto;
+}
+html[data-bg="crt"] body::before{
+  content:""; position:fixed; inset:0; pointer-events:none; z-index:0;
+  opacity:.12;
+  background:
+    linear-gradient(90deg, rgba(193,18,31,.06), transparent 18%, transparent 82%, rgba(60,120,180,.05)),
+    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.1' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.4'/%3E%3C/svg%3E");
+  background-size:auto, 140px 140px;
+  mix-blend-mode:overlay;
+}
+
 html[data-bg="flat"]{
   --bg:#0a0a0c; --bg2:#111114;
 }
@@ -67,10 +110,18 @@ html[data-bg="flat"] body{
   background-image:none;
 }
 html[data-bg="flat"] body::before{content:none;display:none}
+
 /* Keep essay content above the fixed texture layer (leave chrome fixed) */
-html[data-bg="paper"] body > *:not(.site-chrome):not(.skip-link){position:relative;z-index:1}
+html[data-bg="paper"] body > *:not(.site-chrome):not(.skip-link),
+html[data-bg="grain"] body > *:not(.site-chrome):not(.skip-link),
+html[data-bg="crt"] body > *:not(.site-chrome):not(.skip-link){position:relative;z-index:1}
 @media (prefers-reduced-transparency: reduce){
-  html[data-bg="paper"] body::before{opacity:.1}
+  html[data-bg="paper"] body::before,
+  html[data-bg="grain"] body::before,
+  html[data-bg="crt"] body::before{opacity:.08}
+}
+@media (prefers-reduced-motion: reduce){
+  html[data-bg="crt"] body{background-image:radial-gradient(ellipse 100% 85% at 50% 45%, #12151c 0%, #08090c 60%, #040508 100%)}
 }
 
 /* Skip link — visible on keyboard focus only */
@@ -559,9 +610,9 @@ footer .logo span{color:var(--blood)}
   padding:8px 11px;cursor:pointer;font:inherit;letter-spacing:inherit;text-transform:inherit}
 .lang-switch button.is-active,.bg-switch button.is-active{background:var(--blood);color:#fff}
 .lang-switch button:hover,.bg-switch button:hover{color:var(--ink)}
-@media(max-width:520px){.site-chrome{top:10px;right:10px}
+@media(max-width:520px){.site-chrome{top:10px;right:10px;gap:6px;flex-wrap:wrap;justify-content:flex-end;max-width:calc(100vw - 20px)}
   .lang-switch,.bg-switch{font-size:10px}
-  .lang-switch button,.bg-switch button{padding:7px 9px}}
+  .lang-switch button,.bg-switch button{padding:6px 7px}}
 </style>
 <script>
 (function(){
@@ -571,10 +622,11 @@ footer .logo span{color:var(--blood)}
   var nav=(navigator.language||'en').toLowerCase();
   var lang=(langQ==='es'||langQ==='en')?langQ:(s==='es'||s==='en')?s:(nav.indexOf('es')===0?'es':'en');
   document.documentElement.lang=lang;
-  /* bg: paper (trial default) | flat (original). ?bg= overrides localStorage */
+  /* bg: paper | grain | crt | flat. ?bg= overrides localStorage */
   var bgQ=q.get('bg');
   var bgS=localStorage.getItem('aof-bg');
-  var bg=(bgQ==='paper'||bgQ==='flat')?bgQ:(bgS==='paper'||bgS==='flat')?bgS:'paper';
+  var ok={paper:1,grain:1,crt:1,flat:1};
+  var bg=ok[bgQ]?bgQ:(ok[bgS]?bgS:'paper');
   document.documentElement.setAttribute('data-bg', bg);
 })();
 </script>
@@ -589,6 +641,8 @@ footer .logo span{color:var(--blood)}
   </nav>
   <nav class="bg-switch" aria-label="Background">
     <button type="button" data-bg-btn="paper" aria-pressed="true">Paper</button>
+    <button type="button" data-bg-btn="grain" aria-pressed="false">Grain</button>
+    <button type="button" data-bg-btn="crt" aria-pressed="false">CRT</button>
     <button type="button" data-bg-btn="flat" aria-pressed="false">Flat</button>
   </nav>
 </div>
@@ -718,6 +772,7 @@ footer .logo span{color:var(--blood)}
     <p class="kicker" data-i18n="p1_kicker">Part I · Color River</p>
     <h2 class="section-title" data-i18n="p1_title">Black Took the Sheet</h2>
     <p data-i18n="p1_body">Look at the colors. In the 1950s, horror posters were warm — red, orange, pulp heat. Then slowly, everything turned black. The '80s get a quick flash of blue (neon fear). It doesn't last. Black wins. Black keeps winning. The warm colors never really come back.</p>
+    <p data-i18n="p1_why">The warm '50s aren't random. That was the atomic age — bright reds and radioactive greens sold "COLOSSAL TERROR!" at drive-in theaters. The blue flare in the '80s? That's VHS neon, the video-store era. And the black flood that never recedes? That's horror learning to be scary without color at all.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="river" viewBox="0 0 960 380" width="100%"></svg>
   <p class="note" style="margin-top:10px" data-i18n="p1_note_n">FULL CENTURY — n = 18,716 posters (TMDB), mean share per decade.</p></div>
@@ -758,6 +813,7 @@ footer .logo span{color:var(--blood)}
     <h2 class="section-title" data-i18n="p2_title">The Light Never Came Back</h2>
     <p data-i18n="p2_hook">I expected brightness to go up and down, like a normal trend. But this wasn't normal. Horror posters got darker every single year for 60 years. Then… nothing. The light never came back.</p>
     <p data-i18n="p2_body">It isn't a slide — it's a mountain. Shadow climbs to a daylight peak around 1960, then horror descends for sixty years straight. No rebound.</p>
+    <p data-i18n="p2_why">The 1960 peak isn't a coincidence. That was the atomic age — bright posters promised "SEE! SHOCKING!" alien invasions and mutant monsters, radiating Cold War panic in reds and yellows. Then Vietnam happened. Watergate happened. Horror stopped being about fantasy monsters and became about the real world. The lights dimmed. And they never came back.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="darkness" viewBox="0 0 960 400" width="100%"></svg>
   <p class="note" style="margin-top:10px" data-i18n="p2_note_n">FULL CENTURY — n = 18,716 posters (TMDB), 5-yr rolling mean.</p></div>
@@ -776,6 +832,7 @@ footer .logo span{color:var(--blood)}
     <p class="kicker" data-i18n="p3_kicker">Part III · Rise of Red</p>
     <h2 class="section-title" data-i18n="p3_title">Red Peaked After the Slashers</h2>
     <p data-i18n="p3_body">You'd think the '80s slashers owned the color red. They didn't. Red is horror's signature — but its real peak isn't where you'd guess. Not the slashers. The meta-horror turn of the millennium.</p>
+    <p data-i18n="p3_why">Why the delayed peak? The '80s slasher era was born from VHS. Over 1,700 horror films came out in that decade — posters had to scream red from a video store shelf just to compete. But by the 2000s, red had become a language. Meta-horror (<em>Scream</em>, <em>Saw</em>, <em>Final Destination</em>) used blood as an aesthetic — not a threat.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="red" viewBox="0 0 960 340" width="100%"></svg>
   <p class="note" style="margin-top:10px" data-i18n="p3_note_n">FULL CENTURY — n = 18,716 posters (TMDB), 5-yr rolling mean.</p></div>
@@ -794,7 +851,8 @@ footer .logo span{color:var(--blood)}
   <div class="prose reveal">
     <p class="kicker" data-i18n="p7_kicker">Part III · Two Kinds of Blood</p>
     <h2 class="section-title" data-i18n="p7_title">Blood Left the Color Behind</h2>
-    <p data-i18n="p7_body">Here's the weird part. Red and blood aren't the same thing. The chart above measured a <em>color</em>. This one measures a <em>concept</em>: does this look like blood, even if it isn't red? For fifty years the two measures move together. Then, with the slashers, they split — the color stops rising, but blood on the sheet keeps climbing for another thirty years.</em>. This measures a <em>concept</em>: we showed a vision-language model patches of every poster and asked one question — <em>does this look like blood</em>, regardless of exact hue? For fifty years the two measures agree almost exactly. Then, with the slasher boom, they split — the color of blood stopped rising, but its recognizable presence on the sheet kept climbing for another thirty years.</p>
+    <p data-i18n="p7_body">Here's the weird part. Red and blood aren't the same thing. The chart above measured a <em>color</em>. This one measures a <em>concept</em>: does this look like blood, even if it isn't red? For fifty years the two measures move together. Then, with the slashers, they split — the color stops rising, but blood on the sheet keeps climbing for another thirty years.</p>
+    <p data-i18n="p7_why">The split makes sense: after the '80s slasher explosion, blood became a symbol — not just a color. It could be black, brown, dark red, or even implied. Meta-horror posters (<em>Scream</em>, <em>Saw</em>) treated blood as a language everyone already understood. You didn't need to paint it red anymore. The audience knew.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="blood2" viewBox="0 0 960 380" width="100%"></svg>
   <p class="note" style="margin-top:10px" data-i18n="p7_note_n">Pixel-red: FULL CENTURY, n=18,716 (TMDB). Model-detected blood: a stratified sample covering all 11 decades, n=1,721, CLIP zero-shot per 2×2 poster patch — validated against hand-inspected artwork (Jaws, Friday the 13th, Blair Witch) before trusting it. Decade means.</p>
@@ -813,11 +871,12 @@ footer .logo span{color:var(--blood)}
   <div class="prose reveal">
     <p class="kicker" data-i18n="p4_kicker">Part IV · Faces &amp; Monsters</p>
     <h2 class="section-title" data-i18n="p4_title">The Face Retreats.<br>The Ghost Returns.</h2>
-    <p data-i18n="p4_lede">There's something primal about a face staring back at you from a poster. It tells you what to fear. So I asked a simple question across the whole century: <em>who looks back from the sheet?</em> First the human face. Then the creature. Together they tell one story: horror learned to sell dread without a star close-up — while the throne of the monster kept changing hands. And the ghost bookends both ends of the timeline.</em> First, the human face — YuNet counts how often a readable visage fills the frame. Then the creature — CLIP names what kind of monster, if any, claims the poster. Together they tell one story: the century learned to sell dread without a star close-up, while the throne of the monster kept changing hands — and the ghost bookends both ends of the timeline.</p>
+    <p data-i18n="p4_lede">There's something primal about a face staring back at you from a poster. It tells you what to fear. So I asked a simple question across the whole century: <em>who looks back from the sheet?</em> First the human face. Then the creature. Together they tell one story: horror learned to sell dread without a star close-up — while the throne of the monster kept changing hands. And the ghost bookends both ends of the timeline.</p>
   </div>
 
   <div class="prose reveal" style="margin-top:36px">
     <p data-i18n="p4_vanishing"><strong>The vanishing face.</strong> There's something primal about a face staring back from a poster: it tells you what to fear. In the 1940s that stare was nearly mandatory — 83% of sheets had one, the century's peak. Today, fewer than half do. Horror learned to be scarier by showing you less. What's scarier than a monster? Absence. And hiding inside the long retreat, one twist: the late '90s didn't add faces, it <em>zoomed in</em> on them. Average face size peaks in 1998 — the celebrity close-up era — at nearly twice its historic share of the sheet.</p>
+    <p data-i18n="p4_why">The 1940s face peak makes sense: Universal built the horror genre on painted portraits of Dracula, Frankenstein, the Mummy. The monster <em>was</em> the movie. But by the 2010s, elevated horror (A24, <em>Hereditary</em>, <em>Midsommar</em>) taught us the opposite: what you don't see is scarier. The face vanished because our fear turned inward — we stopped fearing monsters and started fearing our own minds.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="faces" viewBox="0 0 960 340" width="100%"></svg>
   <p class="note" style="margin-top:10px" data-i18n="p4_faces_note_n">FULL RUN — n = 18,716 posters (TMDB), YuNet face detection (validated against hand-checked artwork), 5-yr rolling mean. Counts are floors: small, profile, tilted, or heavily painted/illustrated faces can escape the detector.</p></div>
@@ -849,6 +908,7 @@ footer .logo span{color:var(--blood)}
     <p class="kicker" data-i18n="p5_kicker">Part V · The Quieting</p>
     <h2 class="section-title" data-i18n="p5_title">Horror Lowered Its Voice</h2>
     <p data-i18n="p5_body">Picture a 1950s shelf: painted, dimensional letters SHOUTING at you. Now lean into a 2020 lobby card — one thin word on black. You have to get closer to read it. That whisper is scarier than the shout. Three quieter revolutions, measured across every poster. First: the silent-era sheets climb to the "SEE! SHOCKING!" peak of the mid-'50s — then horror spends seventy years lowering its voice, down to today's near-silent artwork.</p>
+    <p data-i18n="p5_why">The 1950s shout wasn't random — drive-in theaters were exploding. Posters had to grab you from your car window at 50 feet. By 2020, posters became thumbnails on Netflix. You browse them at arm's length, on your couch. The volume dropped because the distance did. Fear doesn't need to shout anymore. It just needs to be seen.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="quiet" viewBox="0 0 960 340" width="100%"></svg>
   <p class="note" style="margin-top:10px" data-i18n="p5_quiet_note_n">FULL RUN — n = 18,716 posters (TMDB), MSER text-region proxy, 5-yr rolling mean. Trend-comparable across eras; absolute level is an upper bound.</p></div>
@@ -992,7 +1052,8 @@ footer .logo span{color:var(--blood)}
   <div class="prose reveal">
     <p class="kicker" data-i18n="p6_kicker">Part VI · Lettering</p>
     <h2 class="section-title" data-i18n="p6_title">Fear Stopped Shouting Its Name</h2>
-    <p data-i18n="p6_body">Color wasn't the only language on the sheet — so was the title. And titles got quieter too. In the 1940s, <strong>63%</strong> of posters wore ornate display lettering. Barely 4% were minimal. By the 2020s that flipped — ornate down to 12%, minimal up to <strong>32%</strong>, now the single largest register. Fear stopped shouting its own name.</em> hand-drawn display lettering — the painted, dimensional, illustrated logos of the pulp era — to <em>minimal</em> type, the thin, quiet words of elevated horror. In the 1940s, <strong>63%</strong> of posters wore ornate display lettering and barely 4% were minimal. By the 2020s that has inverted — ornate down to 12%, minimal up to <strong>32%</strong> and now the single largest register.</p>
+    <p data-i18n="p6_body">Color wasn't the only language on the sheet — so was the title. And titles got quieter too. In the 1940s, <strong>63%</strong> of posters wore ornate display lettering. Barely 4% were minimal. By the 2020s that flipped — ornate down to 12%, minimal up to <strong>32%</strong>, now the single largest register. Fear stopped shouting its own name.</p>
+    <p data-i18n="p6_why">The 1940s lettering was hand-painted by Universal artists like Karoly Grosz — it was craft. But by the 2010s, A24 turned typography into prestige. A single thin word on black doesn't just look modern — it says: this movie is art, not a monster movie. Ornate became "cheap." Minimal became "elevated." The letters changed because the marketing did.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="typo" viewBox="0 0 960 380" width="100%"></svg>
   <p class="note" style="margin-top:10px" data-i18n="p6_note_n">FULL CENTURY — n = 18,716 posters (TMDB). Registers are quintiles of an ornate↔minimal typographic axis (CLIP zero-shot on the whole poster: similarity to "ornate hand-drawn display lettering" minus "clean minimal type"). Validated against hand-ranked specimens (corr 0.81); decade trend r = −0.93. This measures the <em>decorative character</em> of the title treatment, not a specific typeface — a proxy, honest about its limits: reading the exact letterforms of stylized horror titles defeats OCR and font-ID models alike.</p>
