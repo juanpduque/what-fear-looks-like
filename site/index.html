@@ -79,18 +79,30 @@ html[data-bg="grain"] body::before{
   mix-blend-mode:overlay;
 }
 
-/* CRT / scanlines — VHS read OVER the page */
+/* CRT — page stays clean for charts/images; scanlines only on section titles */
 html[data-bg="crt"]{
   --bg:#07080b; --bg2:#101218;
 }
 html[data-bg="crt"] body{
   background-color:var(--bg);
   background-image:
-    radial-gradient(ellipse 100% 85% at 50% 45%, #141820 0%, #07080b 60%, #030408 100%);
+    radial-gradient(ellipse 100% 85% at 50% 45%, #12161e 0%, #07080b 60%, #030408 100%);
 }
-html[data-bg="crt"] body::before{
-  content:""; position:fixed; inset:0; pointer-events:none; z-index:40;
-  opacity:.7;
+html[data-bg="crt"] body::before{content:none;display:none}
+/* Local CRT over display titles only (not posters, SVGs, or specimen grids) */
+html[data-bg="crt"] .section-title,
+html[data-bg="crt"] .hero h1{
+  position:relative;
+  isolation:isolate;
+}
+html[data-bg="crt"] .section-title::after,
+html[data-bg="crt"] .hero h1::after{
+  content:"";
+  position:absolute;
+  inset:-0.08em -0.05em;
+  pointer-events:none;
+  z-index:1;
+  opacity:.85;
   background-image:
     repeating-linear-gradient(
       0deg,
@@ -99,10 +111,11 @@ html[data-bg="crt"] body::before{
       rgba(0,0,0,.55) 2px,
       rgba(0,0,0,.55) 3px
     ),
-    linear-gradient(90deg, rgba(193,18,31,.07), transparent 20%, transparent 80%, rgba(70,140,200,.06)),
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='1.2' numOctaves='2' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
-  background-size:auto, auto, 120px 120px;
+    linear-gradient(90deg, rgba(193,18,31,.1), transparent 30%, transparent 70%, rgba(70,140,200,.08));
   mix-blend-mode:multiply;
+}
+html[data-bg="crt"] .kicker{
+  text-shadow:0 0 10px rgba(193,18,31,.25);
 }
 
 html[data-bg="flat"]{
@@ -114,20 +127,19 @@ html[data-bg="flat"] body{
 }
 html[data-bg="flat"] body::before{content:none;display:none}
 
-/* Paper noise stays behind content; grain/crt overlays sit above section paints */
+/* Paper / grain: paper stays behind content; grain overlays the page */
 html[data-bg="paper"] body > *:not(.site-chrome):not(.skip-link){position:relative;z-index:1}
-html[data-bg="grain"] .site-chrome,
-html[data-bg="crt"] .site-chrome{z-index:90}
+html[data-bg="grain"] .site-chrome{z-index:90}
 @media (prefers-reduced-transparency: reduce){
   html[data-bg="paper"] body::before{opacity:.1}
   html[data-bg="grain"] body::before{opacity:.2}
-  html[data-bg="crt"] body::before{opacity:.25}
+  html[data-bg="crt"] .section-title::after,
+  html[data-bg="crt"] .hero h1::after{opacity:.35}
 }
 @media (prefers-reduced-motion: reduce){
-  html[data-bg="crt"] body::before{
-    background-image:
-      repeating-linear-gradient(0deg, rgba(0,0,0,0) 0 2px, rgba(0,0,0,.45) 2px 3px),
-      radial-gradient(ellipse 90% 80% at 50% 50%, transparent 45%, rgba(0,0,0,.4) 100%);
+  html[data-bg="crt"] .section-title::after,
+  html[data-bg="crt"] .hero h1::after{
+    background-image:repeating-linear-gradient(0deg, rgba(0,0,0,0) 0 2px, rgba(0,0,0,.4) 2px 3px);
   }
 }
 
