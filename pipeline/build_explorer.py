@@ -35,9 +35,10 @@ def dominant_hex(palette) -> str:
 
 def main():
     paths: dict[int, str] = {}
-    hm = DATA / "horror_movies.csv"
-    if hm.exists():
-        with hm.open(newline="") as f:
+    for src in (DATA / "horror_movies.csv", DATA / "poster_paths_backfill.csv"):
+        if not src.exists():
+            continue
+        with src.open(newline="") as f:
             for r in csv.DictReader(f):
                 try:
                     pid = int(r["id"])
