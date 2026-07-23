@@ -612,9 +612,12 @@ footer .logo span{color:var(--blood)}
 <section class="intro" id="intro" data-i18n-aria="aria_intro" aria-label="Introduction">
   <div class="prose">
     <p class="drop reveal" data-i18n="intro_drop">I was scrolling Netflix one day looking for a horror movie. And something hit me.</p>
-    <p class="reveal" data-i18n="intro_vhs">The posters looked different from what I remembered. Back when I rented horror on VHS, the boxes screamed at you. Bright colors. Big faces. Blood red. You had two seconds to decide. The poster <em>was</em> the whole pitch. But now? The new sheets look quiet. Dark. Sometimes just black with one word. No faces. No colors. Nothing jumping out.</p>
-    <p class="reveal" data-i18n="intro_fossils">I love horror films. I've watched them my whole life. I also love data — finding patterns in things. So I started wondering: when did horror stop shouting? Did the posters actually change, or is it just me?</p>
-    <p class="reveal" data-i18n="intro_century">I decided to find out. I pulled <strong>18,716 horror posters</strong> — from 1920 all the way to 2022 — and I measured them. Colors. How dark they are. What's on them. Everything. What I found is weird. Really weird.</p>
+    <p class="reveal" data-i18n="intro_diff">The posters looked different from what I remembered.</p>
+    <p class="reveal" data-i18n="intro_vhs">Back when I rented horror on VHS, the boxes screamed at you. Bright colors. Big faces. Blood red. You had two seconds to decide. The poster <em>was</em> the whole pitch.</p>
+    <p class="reveal" data-i18n="intro_now">But now? The new sheets look quiet. Dark. Sometimes just black with one word. No faces. No colors. Nothing jumping out.</p>
+    <p class="reveal" data-i18n="intro_fossils">I love horror films. I've watched them my whole life. I also love data — finding patterns in things.</p>
+    <p class="reveal" data-i18n="intro_wonder">So I started wondering: when did horror stop shouting? Did the posters actually change, or is it just me? Because if they did, that meant something. It meant fear looked different now.</p>
+    <p class="reveal" data-i18n="intro_century">I decided to find out. I pulled <strong>18,716 horror posters</strong> — from 1920 all the way to 2022 — and I measured them. Colors. How dark they are. What's on them. Everything. What I found is weird. And it's going to change how you watch horror posters forever.</p>
   </div>
 </section>
 
@@ -679,8 +682,8 @@ footer .logo span{color:var(--blood)}
       <p class="kicker" data-i18n="m3_kicker">Measurement 3</p>
       <h3 data-i18n="m3_h3">The Blood</h3>
       <p data-i18n="m3_body">Only about one-tenth of the poster is blood-red — and it lives in two places: the blade and the pumpkin. All the heat. One knife. One grin.</p>
-      <p data-i18n="m3_body2">Later we also ask a vision model, patch by patch: does this <em>look like blood</em>? That check only covers a sample of ~1,700 posters. Halloween wasn't in that sample, so here we stick to the simple red count. Both methods meet in Part VII.</em> — not merely red. That semantic score exists only for a stratified sample of ~1,721 posters. Halloween wasn't drawn into that sample, so here we report the pixel measure alone; the two methods meet in Part VII.</p>
-      <p class="stat" data-i18n="m3_stat"><b>11%</b> blood-red · all of it on the knife and the grin</b> · CLIP semantic blood: <b>n/a</b> (outside stratified sample)</p>
+      <p data-i18n="m3_body2">Later we also ask a vision model, patch by patch: does this <em>look like blood</em>? That check only covers a sample of ~1,700 posters. Halloween wasn't in that sample, so here we stick to the simple red count. Both methods meet just below, in Part III.</p>
+      <p class="stat" data-i18n="m3_stat"><b>11%</b> blood-red · all of it on the knife and the grin</p>
     </div>
     <div class="step" data-ana="4">
       <p class="kicker" data-i18n="m4_kicker">Measurement 4</p>
@@ -753,7 +756,8 @@ footer .logo span{color:var(--blood)}
   <div class="prose reveal">
     <p class="kicker" data-i18n="p2_kicker">Part II · Darkness</p>
     <h2 class="section-title" data-i18n="p2_title">The Light Never Came Back</h2>
-    <p data-i18n="p2_body">You'd expect a pendulum: brightness climbs, falls, recovers. That's how trends work. This wasn't a pendulum — it was a cliff. Expressionist shadow rises to an atomic daylight peak around 1960, then horror descends for <em>sixty years straight</em>. No rebound. I thought the pipeline had to be wrong, so I spot-checked by hand. It wasn't. The light never came back.</p>
+    <p data-i18n="p2_hook">I expected brightness to go up and down, like a normal trend. But this wasn't normal. Horror posters got darker every single year for 60 years. Then… nothing. The light never came back.</p>
+    <p data-i18n="p2_body">It isn't a slide — it's a mountain. Shadow climbs to a daylight peak around 1960, then horror descends for sixty years straight. No rebound.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="darkness" viewBox="0 0 960 400" width="100%"></svg>
   <p class="note" style="margin-top:10px" data-i18n="p2_note_n">FULL CENTURY — n = 18,716 posters (TMDB), 5-yr rolling mean.</p></div>
@@ -771,7 +775,7 @@ footer .logo span{color:var(--blood)}
   <div class="prose reveal">
     <p class="kicker" data-i18n="p3_kicker">Part III · Rise of Red</p>
     <h2 class="section-title" data-i18n="p3_title">Red Peaked After the Slashers</h2>
-    <p data-i18n="p3_body">Share of blood-red pixels per year. Red is horror's signature — but its real peak isn't where you'd guess: not the '80s slasher, but the meta-horror turn of the millennium.</p>
+    <p data-i18n="p3_body">You'd think the '80s slashers owned the color red. They didn't. Red is horror's signature — but its real peak isn't where you'd guess. Not the slashers. The meta-horror turn of the millennium.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="red" viewBox="0 0 960 340" width="100%"></svg>
   <p class="note" style="margin-top:10px" data-i18n="p3_note_n">FULL CENTURY — n = 18,716 posters (TMDB), 5-yr rolling mean.</p></div>
@@ -784,12 +788,32 @@ footer .logo span{color:var(--blood)}
   </div>
 </section>
 
+
+<!-- ============ TWO KINDS OF BLOOD ============ -->
+<section class="chart-block" style="padding-top:0">
+  <div class="prose reveal">
+    <p class="kicker" data-i18n="p7_kicker">Part III · Two Kinds of Blood</p>
+    <h2 class="section-title" data-i18n="p7_title">Blood Left the Color Behind</h2>
+    <p data-i18n="p7_body">Here's the weird part. Red and blood aren't the same thing. The chart above measured a <em>color</em>. This one measures a <em>concept</em>: does this look like blood, even if it isn't red? For fifty years the two measures move together. Then, with the slashers, they split — the color stops rising, but blood on the sheet keeps climbing for another thirty years.</em>. This measures a <em>concept</em>: we showed a vision-language model patches of every poster and asked one question — <em>does this look like blood</em>, regardless of exact hue? For fifty years the two measures agree almost exactly. Then, with the slasher boom, they split — the color of blood stopped rising, but its recognizable presence on the sheet kept climbing for another thirty years.</p>
+  </div>
+  <div class="chart-wrap reveal"><svg id="blood2" viewBox="0 0 960 380" width="100%"></svg>
+  <p class="note" style="margin-top:10px" data-i18n="p7_note_n">Pixel-red: FULL CENTURY, n=18,716 (TMDB). Model-detected blood: a stratified sample covering all 11 decades, n=1,721, CLIP zero-shot per 2×2 poster patch — validated against hand-inspected artwork (Jaws, Friday the 13th, Blair Witch) before trusting it. Decade means.</p>
+  </div>
+  <div class="typo-strip reveal">
+    <p class="note" style="margin-bottom:10px" data-i18n="p7_note_strip">Where the two measures in the chart above actually disagree, poster by poster: high pixel-red with zero semantic blood detected, and the reverse.</p>
+    <div class="ts-row ts-head" id="tb-eras"><div class="ts-tag ts-tag-blank"></div></div>
+    <div class="ts-row" id="tb-pixel"><div class="ts-tag"><span class="ts-dot" style="background:var(--blood)"></span><span data-i18n="p7_tag_pixel">Looks red, isn't "blood"</span></div></div>
+    <div class="ts-row" id="tb-semantic"><div class="ts-tag"><span class="ts-dot" style="background:#c99a3a"></span><span data-i18n="p7_tag_semantic">Reads as blood, isn't red</span></div></div>
+    <p class="note" style="margin-top:8px" data-i18n="p7_note_select">Both rows drawn from the same validated 1,721-poster stratified sample as the chart above; "blood" = clip_blood zero-shot score. Bottom-row specimens hand-checked for literal blood — early high scores often fire on red cloth or type instead; the first cell is the earliest verified case in the sample (1959).</p>
+  </div>
+</section>
+
 <!-- ============ FACES & MONSTERS ============ -->
 <section class="chart-block" style="padding-top:0">
   <div class="prose reveal">
     <p class="kicker" data-i18n="p4_kicker">Part IV · Faces &amp; Monsters</p>
     <h2 class="section-title" data-i18n="p4_title">The Face Retreats.<br>The Ghost Returns.</h2>
-    <p data-i18n="p4_lede">Two measurements of the same question: <em>who looks back from the sheet?</em> First, the human face — YuNet counts how often a readable visage fills the frame. Then the creature — CLIP names what kind of monster, if any, claims the poster. Together they tell one story: the century learned to sell dread without a star close-up, while the throne of the monster kept changing hands — and the ghost bookends both ends of the timeline.</p>
+    <p data-i18n="p4_lede">There's something primal about a face staring back at you from a poster. It tells you what to fear. So I asked a simple question across the whole century: <em>who looks back from the sheet?</em> First the human face. Then the creature. Together they tell one story: horror learned to sell dread without a star close-up — while the throne of the monster kept changing hands. And the ghost bookends both ends of the timeline.</em> First, the human face — YuNet counts how often a readable visage fills the frame. Then the creature — CLIP names what kind of monster, if any, claims the poster. Together they tell one story: the century learned to sell dread without a star close-up, while the throne of the monster kept changing hands — and the ghost bookends both ends of the timeline.</p>
   </div>
 
   <div class="prose reveal" style="margin-top:36px">
@@ -968,7 +992,7 @@ footer .logo span{color:var(--blood)}
   <div class="prose reveal">
     <p class="kicker" data-i18n="p6_kicker">Part VI · Lettering</p>
     <h2 class="section-title" data-i18n="p6_title">Fear Stopped Shouting Its Name</h2>
-    <p data-i18n="p6_body">Color wasn't the only language on the sheet — so was the title. We placed every poster on a single axis: from <em>ornate</em> hand-drawn display lettering — the painted, dimensional, illustrated logos of the pulp era — to <em>minimal</em> type, the thin, quiet words of elevated horror. In the 1940s, <strong>63%</strong> of posters wore ornate display lettering and barely 4% were minimal. By the 2020s that has inverted — ornate down to 12%, minimal up to <strong>32%</strong> and now the single largest register.</p>
+    <p data-i18n="p6_body">Color wasn't the only language on the sheet — so was the title. And titles got quieter too. In the 1940s, <strong>63%</strong> of posters wore ornate display lettering. Barely 4% were minimal. By the 2020s that flipped — ornate down to 12%, minimal up to <strong>32%</strong>, now the single largest register. Fear stopped shouting its own name.</em> hand-drawn display lettering — the painted, dimensional, illustrated logos of the pulp era — to <em>minimal</em> type, the thin, quiet words of elevated horror. In the 1940s, <strong>63%</strong> of posters wore ornate display lettering and barely 4% were minimal. By the 2020s that has inverted — ornate down to 12%, minimal up to <strong>32%</strong> and now the single largest register.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="typo" viewBox="0 0 960 380" width="100%"></svg>
   <p class="note" style="margin-top:10px" data-i18n="p6_note_n">FULL CENTURY — n = 18,716 posters (TMDB). Registers are quintiles of an ornate↔minimal typographic axis (CLIP zero-shot on the whole poster: similarity to "ornate hand-drawn display lettering" minus "clean minimal type"). Validated against hand-ranked specimens (corr 0.81); decade trend r = −0.93. This measures the <em>decorative character</em> of the title treatment, not a specific typeface — a proxy, honest about its limits: reading the exact letterforms of stylized horror titles defeats OCR and font-ID models alike.</p>
@@ -978,25 +1002,6 @@ footer .logo span{color:var(--blood)}
     <div class="ts-row" id="ts-minimal"><div class="ts-tag"><span class="ts-dot" style="background:#cdc6b6"></span><span data-i18n="p6_tag_minimal">Cleanest / minimal</span></div></div>
     <p class="note" style="margin-top:8px" data-i18n="p6_note_strip">The most- and least-ornate title treatment the model found in each era. Fear's lettering thins from painted, dimensional logos to a single quiet word.</p>
   </div>
-  </div>
-</section>
-
-<!-- ============ TWO KINDS OF BLOOD ============ -->
-<section class="chart-block" style="padding-top:0">
-  <div class="prose reveal">
-    <p class="kicker" data-i18n="p7_kicker">Part VII · Two Kinds of Blood</p>
-    <h2 class="section-title" data-i18n="p7_title">Blood Left the Color Behind</h2>
-    <p data-i18n="p7_body">The red chart measured a <em>color</em>. This measures a <em>concept</em>: we showed a vision-language model patches of every poster and asked one question — <em>does this look like blood</em>, regardless of exact hue? For fifty years the two measures agree almost exactly. Then, with the slasher boom, they split — the color of blood stopped rising, but its recognizable presence on the sheet kept climbing for another thirty years.</p>
-  </div>
-  <div class="chart-wrap reveal"><svg id="blood2" viewBox="0 0 960 380" width="100%"></svg>
-  <p class="note" style="margin-top:10px" data-i18n="p7_note_n">Pixel-red: FULL CENTURY, n=18,716 (TMDB). Model-detected blood: a stratified sample covering all 11 decades, n=1,721, CLIP zero-shot per 2×2 poster patch — validated against hand-inspected artwork (Jaws, Friday the 13th, Blair Witch) before trusting it. Decade means.</p>
-  </div>
-  <div class="typo-strip reveal">
-    <p class="note" style="margin-bottom:10px" data-i18n="p7_note_strip">Where the two measures in the chart above actually disagree, poster by poster: high pixel-red with zero semantic blood detected, and the reverse.</p>
-    <div class="ts-row ts-head" id="tb-eras"><div class="ts-tag ts-tag-blank"></div></div>
-    <div class="ts-row" id="tb-pixel"><div class="ts-tag"><span class="ts-dot" style="background:var(--blood)"></span><span data-i18n="p7_tag_pixel">Looks red, isn't "blood"</span></div></div>
-    <div class="ts-row" id="tb-semantic"><div class="ts-tag"><span class="ts-dot" style="background:#c99a3a"></span><span data-i18n="p7_tag_semantic">Reads as blood, isn't red</span></div></div>
-    <p class="note" style="margin-top:8px" data-i18n="p7_note_select">Both rows drawn from the same validated 1,721-poster stratified sample as the chart above; "blood" = clip_blood zero-shot score. Bottom-row specimens hand-checked for literal blood — early high scores often fire on red cloth or type instead; the first cell is the earliest verified case in the sample (1959).</p>
   </div>
 </section>
 
@@ -1106,16 +1111,6 @@ footer .logo span{color:var(--blood)}
   </div>
 </div>
 
-<!-- ============ BRIDGE / CODA ============ -->
-<section class="chart-block" id="bridge" style="padding-bottom:20px">
-  <div class="prose reveal">
-    <p class="kicker" data-i18n="bridge_kicker">Coda</p>
-    <h2 class="section-title" data-i18n="bridge_title">Fear Has a Language</h2>
-    <p data-i18n="bridge_lede">If you love horror films <em>and</em> finding patterns in data, this is for you. What the sheets show isn't trivia about design — it's proof that fear has a language. And that language evolves.</p>
-    <p data-i18n="bridge_body">The monsters of the 1930s don't work anymore. Not because we got braver, but because what we're actually afraid of changed. The studios didn't plan a sixty-year darkening. Filmmakers didn't sit down and vote to erase faces. It happened organically, decade by decade, as culture shifted its fears.</p>
-    <p data-i18n="bridge_close">When you see horror descending into darkness for sixty straight years, faces disappearing, the ghost returning at both ends of the century — you're looking past design trends. You're looking at what each era was actually afraid of, frozen on paper. The posters are honest. They can't lie. And if you know how to read them, they tell you what scared us, when, and why.</p>
-  </div>
-</section>
 
 <!-- ============ LOOK UP A POSTER ============ -->
 <section class="lookup" id="lookup">
@@ -1164,6 +1159,18 @@ footer .logo span{color:var(--blood)}
     <p style="margin-top:14px" data-i18n="metho_body">Film list and poster images from <a href="https://www.themoviedb.org/">The Movie Database (TMDB)</a>: 32,540 features tagged Horror, of which 18,716 (1920–2022) had usable artwork and were analyzed. Excluded after review: titles genre-tagged "Animation" and "Music", plus films whose TMDB <code>original_language</code> is not English (~8,907) — non-English lettering skewed typography/OCR metrics. Lists in <code>pipeline/data/excluded_*.csv</code>. Kept 629 early titles missing language metadata (mostly silent-era). TMDB "TV Movie" telefilms are kept on purpose — single films made for television, not episodic series. For each poster we extracted a 5-color dominant palette (k-means in CIELAB, saturation-weighted), mean brightness (L*), mean saturation, share of near-black pixels, share of blood-red pixels, and hue-family distribution. Base dataset by Tanya Shapiro (TidyTuesday 2022). Face counts: population statistics use YuNet detection at analysis resolution (floors — small, tilted or heavily stylized faces can escape); the counts shown on individually displayed specimens are hand-verified against the artwork. This product uses the TMDB API but is not endorsed or certified by TMDB. Full code and data on GitHub. Industry context: Stephen Follows' <a href="https://stephenfollows.com/p/the-horror-movie-report">Horror Movie Report</a>.</p>
   </div>
 </section>
+
+
+<!-- ============ BRIDGE / CODA ============ -->
+<section class="chart-block" id="bridge" style="padding-bottom:40px">
+  <div class="prose reveal">
+    <p class="kicker" data-i18n="bridge_kicker">Coda</p>
+    <h2 class="section-title" data-i18n="bridge_title">Fear Has a Century-Long Face</h2>
+    <p data-i18n="bridge_lede">If you love horror films <em>and</em> love finding patterns in data, this is what I found: fear has a century-long face. And it's been getting quieter ever since we learned to listen to the dark.</p>
+    <p data-i18n="bridge_close">The posters don't lie. They tell you everything about what scared us, when, and why. All you have to do is know how to read them.</p>
+  </div>
+</section>
+
 
 </main>
 

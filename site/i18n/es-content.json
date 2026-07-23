@@ -37,19 +37,34 @@
     "es": "Un día estaba pasando Netflix buscando una película de terror. Y algo me pegó."
   },
   {
+    "id": "intro_diff",
+    "en": "The posters looked different from what I remembered.",
+    "es": "Los pósters se veían distintos a lo que recordaba."
+  },
+  {
     "id": "intro_vhs",
-    "en": "The posters looked different from what I remembered. Back when I rented horror on VHS, the boxes screamed at you. Bright colors. Big faces. Blood red. You had two seconds to decide. The poster <em>was</em> the whole pitch. But now? The new sheets look quiet. Dark. Sometimes just black with one word. No faces. No colors. Nothing jumping out.",
-    "es": "Los pósters se veían distintos a lo que recordaba. Cuando alquilaba terror en VHS, las cajas te gritaban. Colores vivos. Caras grandes. Rojo sangre. Tenías dos segundos para decidir. El póster <em>era</em> todo el pitch. ¿Y ahora? Las hojas nuevas se ven quietas. Oscuras. A veces solo negro con una palabra. Sin caras. Sin color. Nada que salte."
+    "en": "Back when I rented horror on VHS, the boxes screamed at you. Bright colors. Big faces. Blood red. You had two seconds to decide. The poster <em>was</em> the whole pitch.",
+    "es": "Cuando alquilaba terror en VHS, las cajas te gritaban. Colores vivos. Caras grandes. Rojo sangre. Tenías dos segundos para decidir. El póster <em>era</em> todo el pitch."
+  },
+  {
+    "id": "intro_now",
+    "en": "But now? The new sheets look quiet. Dark. Sometimes just black with one word. No faces. No colors. Nothing jumping out.",
+    "es": "¿Y ahora? Las hojas nuevas se ven quietas. Oscuras. A veces solo negro con una palabra. Sin caras. Sin color. Nada que salte."
   },
   {
     "id": "intro_fossils",
-    "en": "I love horror films. I've watched them my whole life. I also love data — finding patterns in things. So I started wondering: when did horror stop shouting? Did the posters actually change, or is it just me?",
-    "es": "Amo el cine de terror. Lo he visto toda la vida. También amo los datos — encontrar patrones. Así que empecé a preguntarme: ¿cuándo dejó el terror de gritar? ¿Cambió de verdad el póster, o soy yo?"
+    "en": "I love horror films. I've watched them my whole life. I also love data — finding patterns in things.",
+    "es": "Amo el cine de terror. Lo he visto toda la vida. También amo los datos — encontrar patrones."
+  },
+  {
+    "id": "intro_wonder",
+    "en": "So I started wondering: when did horror stop shouting? Did the posters actually change, or is it just me? Because if they did, that meant something. It meant fear looked different now.",
+    "es": "Así que empecé a preguntarme: ¿cuándo dejó el terror de gritar? ¿Cambió de verdad el póster, o soy yo? Porque si cambió, significaba algo. Significaba que el miedo se veía distinto ahora."
   },
   {
     "id": "intro_century",
-    "en": "I decided to find out. I pulled <strong>18,716 horror posters</strong> — from 1920 all the way to 2022 — and I measured them. Colors. How dark they are. What's on them. Everything. What I found is weird. Really weird.",
-    "es": "Decidí averiguarlo. Reuní <strong>18,716 pósters de terror</strong> — de 1920 hasta 2022 — y los medí. Colores. Qué tan oscuros son. Qué hay en ellos. Todo. Lo que encontré es raro. Muy raro."
+    "en": "I decided to find out. I pulled <strong>18,716 horror posters</strong> — from 1920 all the way to 2022 — and I measured them. Colors. How dark they are. What's on them. Everything. What I found is weird. And it's going to change how you watch horror posters forever.",
+    "es": "Decidí averiguarlo. Reuní <strong>18,716 pósters de terror</strong> — de 1920 hasta 2022 — y los medí. Colores. Qué tan oscuros son. Qué hay en ellos. Todo. Lo que encontré es raro. Y va a cambiar para siempre cómo miras los pósters de terror."
   },
   {
     "id": "exhibit_a_kicker",
@@ -173,8 +188,8 @@
   },
   {
     "id": "m3_body2",
-    "en": "Later we also ask a vision model, patch by patch: does this <em>look like blood</em>? That check only covers a sample of ~1,700 posters. Halloween wasn't in that sample, so here we stick to the simple red count. Both methods meet in Part VII.",
-    "es": "Más adelante también le preguntamos a un modelo de visión, parche a parche: ¿esto <em>parece sangre</em>? Esa revisión solo cubre una muestra de ~1,700 pósters. Halloween no estaba en esa muestra, así que aquí nos quedamos con el conteo simple de rojo. Los dos métodos se encuentran en la Parte VII."
+    "en": "Later we also ask a vision model, patch by patch: does this <em>look like blood</em>? That check only covers a sample of ~1,700 posters. Halloween wasn't in that sample, so here we stick to the simple red count. Both methods meet just below, in Part III.",
+    "es": "Más adelante también le preguntamos a un modelo de visión, parche a parche: ¿esto <em>parece sangre</em>? Esa revisión solo cubre una muestra de ~1,700 pósters. Halloween no estaba en esa muestra, así que aquí nos quedamos con el conteo simple de rojo. Los dos métodos se encuentran justo abajo, en la Parte III."
   },
   {
     "id": "m3_stat",
@@ -367,9 +382,14 @@
     "es": "La luz nunca regresó"
   },
   {
+    "id": "p2_hook",
+    "en": "I expected brightness to go up and down, like a normal trend. But this wasn't normal. Horror posters got darker every single year for 60 years. Then… nothing. The light never came back.",
+    "es": "Esperaba que el brillo subiera y bajara, como una tendencia normal. Pero esto no era normal. Los pósters de terror se oscurecieron año tras año durante 60 años. Y luego… nada. La luz nunca regresó."
+  },
+  {
     "id": "p2_body",
-    "en": "You'd expect a pendulum: brightness climbs, falls, recovers. That's how trends work. This wasn't a pendulum — it was a cliff. Expressionist shadow rises to an atomic daylight peak around 1960, then horror descends for <em>sixty years straight</em>. No rebound. I thought the pipeline had to be wrong, so I spot-checked by hand. It wasn't. The light never came back.",
-    "es": "Esperarías un péndulo: el brillo sube, baja, se recupera. Así funcionan las tendencias. Esto no fue un péndulo — fue un acantilado. La sombra expresionista sube hasta un pico de luz diurna atómica alrededor de 1960, y luego el terror desciende <em>sesenta años seguidos</em>. Sin rebote. Pensé que el pipeline tenía que estar mal, así que revisé a mano. No lo estaba. La luz nunca regresó."
+    "en": "It isn't a slide — it's a mountain. Shadow climbs to a daylight peak around 1960, then horror descends for sixty years straight. No rebound.",
+    "es": "No es una bajada — es una montaña. La sombra sube hasta un pico de luz alrededor de 1960, y luego el terror desciende sesenta años seguidos. Sin rebote."
   },
   {
     "id": "p2_note_n",
@@ -408,8 +428,8 @@
   },
   {
     "id": "p3_body",
-    "en": "Share of blood-red pixels per year. Red is horror's signature — but its real peak isn't where you'd guess: not the '80s slasher, but the meta-horror turn of the millennium.",
-    "es": "Cuota de píxeles rojo sangre por año. El rojo es la firma del terror — pero su pico real no está donde imaginarías: no en el slasher de los 80, sino en el giro meta-horror del milenio."
+    "en": "You'd think the '80s slashers owned the color red. They didn't. Red is horror's signature — but its real peak isn't where you'd guess. Not the slashers. The meta-horror turn of the millennium.",
+    "es": "Pensarías que los slashers de los 80 eran dueños del rojo. No lo eran. El rojo es la firma del terror — pero su pico real no está donde imaginarías. No en los slashers. En el giro meta-horror del milenio."
   },
   {
     "id": "p3_note_n",
@@ -448,8 +468,8 @@
   },
   {
     "id": "p4_lede",
-    "en": "Two measurements of the same question: <em>who looks back from the sheet?</em> First, the human face — YuNet counts how often a readable visage fills the frame. Then the creature — CLIP names what kind of monster, if any, claims the poster. Together they tell one story: the century learned to sell dread without a star close-up, while the throne of the monster kept changing hands — and the ghost bookends both ends of the timeline.",
-    "es": "Dos mediciones de la misma pregunta: <em>¿quién te mira desde la hoja?</em> Primero, el rostro humano — YuNet cuenta con qué frecuencia un semblante legible llena el encuadre. Luego la criatura — CLIP nombra qué tipo de monstruo, si lo hay, reclama el póster. Juntas cuentan una historia: el siglo aprendió a vender pavor sin un close-up de estrella, mientras el trono del monstruo cambiaba de manos — y el fantasma enmarca ambos extremos de la línea de tiempo."
+    "en": "There's something primal about a face staring back at you from a poster. It tells you what to fear. So I asked a simple question across the whole century: <em>who looks back from the sheet?</em> First the human face. Then the creature. Together they tell one story: horror learned to sell dread without a star close-up — while the throne of the monster kept changing hands. And the ghost bookends both ends of the timeline.",
+    "es": "Hay algo primitivo en un rostro que te mira desde un póster. Te dice de qué tener miedo. Así que hice una pregunta simple a lo largo de todo el siglo: <em>¿quién te mira desde la hoja?</em> Primero el rostro humano. Luego la criatura. Juntas cuentan una historia: el terror aprendió a vender pavor sin un close-up de estrella — mientras el trono del monstruo cambiaba de manos. Y el fantasma enmarca ambos extremos de la línea de tiempo."
   },
   {
     "id": "p4_vanishing",
@@ -763,8 +783,8 @@
   },
   {
     "id": "p6_body",
-    "en": "Color wasn't the only language on the sheet — so was the title. We placed every poster on a single axis: from <em>ornate</em> hand-drawn display lettering — the painted, dimensional, illustrated logos of the pulp era — to <em>minimal</em> type, the thin, quiet words of elevated horror. In the 1940s, <strong>63%</strong> of posters wore ornate display lettering and barely 4% were minimal. By the 2020s that has inverted — ornate down to 12%, minimal up to <strong>32%</strong> and now the single largest register.",
-    "es": "El color no era el único lenguaje de la hoja — también lo era el título. Situamos cada póster en un solo eje: desde el letraje display <em>ornate</em> dibujado a mano — los logos pintados, dimensionales e ilustrados de la era pulp — hasta el tipo <em>minimal</em>, las palabras finas y quietas del elevated horror. En los años 40, el <strong>63%</strong> de los pósters llevaba letraje display ornate y apenas el 4% era minimal. En los 2020s eso se invirtió — ornate bajó al 12%, minimal subió al <strong>32%</strong> y ahora es el registro más grande."
+    "en": "Color wasn't the only language on the sheet — so was the title. And titles got quieter too. In the 1940s, <strong>63%</strong> of posters wore ornate display lettering. Barely 4% were minimal. By the 2020s that flipped — ornate down to 12%, minimal up to <strong>32%</strong>, now the single largest register. Fear stopped shouting its own name.",
+    "es": "El color no era el único lenguaje de la hoja — también lo era el título. Y los títulos también se volvieron más quietos. En los años 40, el <strong>63%</strong> de los pósters llevaba letraje ornate. Apenas el 4% era minimal. En los 2020s eso se dio la vuelta — ornate bajó al 12%, minimal subió al <strong>32%</strong>, ahora el registro más grande. El miedo dejó de gritar su propio nombre."
   },
   {
     "id": "p6_note_n",
@@ -788,8 +808,8 @@
   },
   {
     "id": "p7_kicker",
-    "en": "Part VII · Two Kinds of Blood",
-    "es": "Parte VII · Dos clases de sangre"
+    "en": "Part III · Two Kinds of Blood",
+    "es": "Parte III · Dos clases de sangre"
   },
   {
     "id": "p7_title",
@@ -798,8 +818,8 @@
   },
   {
     "id": "p7_body",
-    "en": "The red chart measured a <em>color</em>. This measures a <em>concept</em>: we showed a vision-language model patches of every poster and asked one question — <em>does this look like blood</em>, regardless of exact hue? For fifty years the two measures agree almost exactly. Then, with the slasher boom, they split — the color of blood stopped rising, but its recognizable presence on the sheet kept climbing for another thirty years.",
-    "es": "El gráfico del rojo midió un <em>color</em>. Este mide un <em>concepto</em>: le mostramos a un modelo visión-lenguaje parches de cada póster y le hicimos una pregunta — <em>¿esto parece sangre</em>, sin importar el matiz exacto? Durante cincuenta años las dos medidas coinciden casi exactas. Luego, con el boom slasher, se separan — el color de la sangre dejó de subir, pero su presencia reconocible en la hoja siguió trepando otros treinta años."
+    "en": "Here's the weird part. Red and blood aren't the same thing. The chart above measured a <em>color</em>. This one measures a <em>concept</em>: does this look like blood, even if it isn't red? For fifty years the two measures move together. Then, with the slashers, they split — the color stops rising, but blood on the sheet keeps climbing for another thirty years.",
+    "es": "Acá está lo raro. Rojo y sangre no son lo mismo. El gráfico de arriba midió un <em>color</em>. Este mide un <em>concepto</em>: ¿esto parece sangre, aunque no sea rojo? Durante cincuenta años las dos medidas van juntas. Luego, con los slashers, se separan — el color deja de subir, pero la sangre en la hoja sigue trepando otros treinta años."
   },
   {
     "id": "p7_note_n",
@@ -1018,23 +1038,18 @@
   },
   {
     "id": "bridge_title",
-    "en": "Fear Has a Language",
-    "es": "El miedo tiene un lenguaje"
+    "en": "Fear Has a Century-Long Face",
+    "es": "El miedo tiene un rostro de un siglo"
   },
   {
     "id": "bridge_lede",
-    "en": "If you love horror films <em>and</em> finding patterns in data, this is for you. What the sheets show isn't trivia about design — it's proof that fear has a language. And that language evolves.",
-    "es": "Si amas el cine de terror <em>y</em> encontrar patrones en los datos, esto es para ti. Lo que muestran las hojas no es trivia de diseño — es prueba de que el miedo tiene un lenguaje. Y ese lenguaje evoluciona."
-  },
-  {
-    "id": "bridge_body",
-    "en": "The monsters of the 1930s don't work anymore. Not because we got braver, but because what we're actually afraid of changed. The studios didn't plan a sixty-year darkening. Filmmakers didn't sit down and vote to erase faces. It happened organically, decade by decade, as culture shifted its fears.",
-    "es": "Los monstruos de los años 30 ya no funcionan. No porque nos volviéramos más valientes, sino porque cambió aquello de lo que de verdad tenemos miedo. Los estudios no planearon sesenta años de oscurecimiento. Los cineastas no se sentaron a votar borrar rostros. Pasó de forma orgánica, década a década, mientras la cultura movía sus miedos."
+    "en": "If you love horror films <em>and</em> love finding patterns in data, this is what I found: fear has a century-long face. And it's been getting quieter ever since we learned to listen to the dark.",
+    "es": "Si amas el cine de terror <em>y</em> encontrar patrones en los datos, esto es lo que encontré: el miedo tiene un rostro de un siglo. Y se ha vuelto más quieto desde que aprendimos a escuchar la oscuridad."
   },
   {
     "id": "bridge_close",
-    "en": "When you see horror descending into darkness for sixty straight years, faces disappearing, the ghost returning at both ends of the century — you're looking past design trends. You're looking at what each era was actually afraid of, frozen on paper. The posters are honest. They can't lie. And if you know how to read them, they tell you what scared us, when, and why.",
-    "es": "Cuando ves al terror descender a la oscuridad durante sesenta años seguidos, a los rostros desaparecer, al fantasma regresar en ambos extremos del siglo — estás mirando más allá de tendencias de diseño. Estás mirando de qué tenía miedo de verdad cada era, congelado en papel. Los pósters son honestos. No pueden mentir. Y si sabes leerlos, te dicen qué nos asustó, cuándo y por qué."
+    "en": "The posters don't lie. They tell you everything about what scared us, when, and why. All you have to do is know how to read them.",
+    "es": "Los pósters no mienten. Te dicen todo sobre qué nos asustó, cuándo y por qué. Solo tienes que saber leerlos."
   },
   {
     "id": "lookup_kicker",
