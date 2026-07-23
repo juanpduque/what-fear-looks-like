@@ -85,6 +85,27 @@
   const early=initialLang();
   document.documentElement.lang=early;
 
+  const BG_STORAGE='aof-bg';
+  function syncBgButtons(){
+    const bg=document.documentElement.getAttribute('data-bg')||'paper';
+    document.querySelectorAll('[data-bg-btn]').forEach(btn=>{
+      const on=btn.getAttribute('data-bg-btn')===bg;
+      btn.setAttribute('aria-pressed', on?'true':'false');
+      btn.classList.toggle('is-active', on);
+    });
+  }
+  window.AOF_setBg=function(bg, {persist=true, updateUrl=true}={}){
+    if(bg!=='paper'&&bg!=='flat') bg='paper';
+    document.documentElement.setAttribute('data-bg', bg);
+    if(persist) localStorage.setItem(BG_STORAGE, bg);
+    if(updateUrl){
+      const u=new URL(location.href);
+      u.searchParams.set('bg', bg);
+      history.replaceState(null,'',u);
+    }
+    syncBgButtons();
+  };
+
   function bindToggle(){
     document.querySelectorAll('[data-lang-btn]').forEach(btn=>{
       btn.addEventListener('click',()=>{
@@ -95,6 +116,22 @@
         location.href=u.toString();
       });
     });
+    document.querySelectorAll('[data-bg-btn]').forEach(btn=>{
+      btn.addEventListener('click',()=>{
+        AOF_setBg(btn.getAttribute('data-bg-btn'));
+      });
+    });
+    // bilingual chrome labels for bg toggle
+    const lang=document.documentElement.lang||'en';
+    document.querySelectorAll('[data-bg-btn="paper"]').forEach(b=>{
+      b.textContent=lang==='es'?'Papel':'Paper';
+    });
+    document.querySelectorAll('[data-bg-btn="flat"]').forEach(b=>{
+      b.textContent=lang==='es'?'Plano':'Flat';
+    });
+    const nav=document.querySelector('.bg-switch');
+    if(nav) nav.setAttribute('aria-label', lang==='es'?'Fondo':'Background');
+    syncBgButtons();
   }
 
   if(document.readyState==='loading'){
