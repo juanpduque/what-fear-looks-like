@@ -469,7 +469,7 @@ svg text{font-family:var(--mono)}
 .lk-diag{position:absolute;inset:0;background:
   linear-gradient(to top right,transparent calc(50% - 1px),rgba(193,18,31,.8) 50%,transparent calc(50% + 1px)),
   linear-gradient(to top left,transparent calc(50% - 1px),rgba(229,160,13,.7) 50%,transparent calc(50% + 1px))}
-.lk-facebox{position:absolute;left:28%;top:22%;width:44%;height:32%;border:2px dashed var(--amber);border-radius:2px}
+.lk-facebox{position:absolute;border:2px dashed var(--amber);border-radius:2px;box-sizing:border-box;pointer-events:none}
 .lk-palfloat{position:absolute;left:50%;bottom:8%;transform:translateX(-50%);display:flex;gap:5px}
 .lk-palfloat span{width:22px;height:22px;border-radius:50%;border:1px solid rgba(255,255,255,.35);
   box-shadow:0 2px 8px rgba(0,0,0,.5)}
@@ -1456,6 +1456,19 @@ function renderAnalysis(p,a){
   const faceLab=faces===1
     ? t('lab_faces_area',{n:faces,a:pct(a.farea)})
     : t('lab_faces_area_pl',{n:faces,a:pct(a.farea)});
+  const fboxes=Array.isArray(a.fboxes)?a.fboxes:[];
+  const faceBoxesHtml=fboxes.map(([x,y,w,h])=>{
+    const L=Math.max(0,x*100), T=Math.max(0,y*100);
+    const W=Math.min(100-L,Math.max(1,w*100)), H=Math.min(100-T,Math.max(1,h*100));
+    return `<div class="lk-facebox" style="left:${L.toFixed(1)}%;top:${T.toFixed(1)}%;width:${W.toFixed(1)}%;height:${H.toFixed(1)}%"></div>`;
+  }).join('');
+  let faceLabStyle='top:8%;left:50%;transform:translateX(-50%)';
+  if(fboxes.length){
+    const [fx,fy,fw,fh]=fboxes[0];
+    const labTop=Math.min(92, Math.max(2, (fy+fh)*100 + 1.5));
+    const labLeft=Math.max(2, Math.min(70, fx*100));
+    faceLabStyle=`top:${labTop.toFixed(1)}%;left:${labLeft.toFixed(1)}%`;
+  }
   const mediumLab=a.painted==null?t('lab_medium_na')
     :(a.painted>=.5?t('lookup_painted')+' ':t('lookup_photo_mixed')+' ')+pct(a.painted);
   const textLab=hasBox
@@ -1475,8 +1488,8 @@ function renderAnalysis(p,a){
           <div class="lk-lab blood" style="bottom:8%;left:4%">${t('lab_blood_red',{v:pct(a.red)})}</div></div>
         <div class="lk-layer" data-layer="bands"><div class="lk-bandsov">${bandBar}</div>
           <div class="lk-lab" style="top:6%;left:4%">${t('lab_hue_families')}</div></div>
-        <div class="lk-layer" data-layer="faces">${faces>0?'<div class="lk-facebox"></div>':''}
-          <div class="lk-lab amber" style="top:8%;left:50%;transform:translateX(-50%)">${faceLab}</div></div>
+        <div class="lk-layer" data-layer="faces">${faceBoxesHtml}
+          <div class="lk-lab amber" style="${faceLabStyle}">${faceLab}</div></div>
         <div class="lk-layer" data-layer="creature">
           <div class="lk-lab amber" style="top:45%;left:50%;transform:translate(-50%,-50%)">${t('lab_creature',{c:cLabel})}${a.cscore!=null?' · '+pct(a.cscore):''}</div></div>
         <div class="lk-layer" data-layer="medium">

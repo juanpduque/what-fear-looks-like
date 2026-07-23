@@ -85,6 +85,18 @@ def main():
             "faces": int(f.n_faces) if f is not None else 0,
             "farea": r(f.face_area) if f is not None else 0,
         }
+        if f is not None and getattr(f, "face_boxes", None) and str(f.face_boxes) not in ("", "nan"):
+            fboxes = []
+            for part in str(f.face_boxes).split("|"):
+                bits = part.split(",")
+                if len(bits) != 4:
+                    continue
+                try:
+                    fboxes.append([float(bits[0]), float(bits[1]), float(bits[2]), float(bits[3])])
+                except ValueError:
+                    continue
+            if fboxes:
+                rec["fboxes"] = fboxes
         if c is not None and pd.notna(c.label) and str(c.label):
             rec["creature"] = str(c.label)
             rec["cscore"] = r(c.score, 2)
