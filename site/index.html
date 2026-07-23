@@ -760,7 +760,7 @@ footer .logo span{color:var(--blood)}
   <div class="typo-strip reveal">
     <div class="ts-row ts-head" id="era-eras"><div class="ts-tag ts-tag-blank"></div></div>
     <div class="ts-row" id="era-specimen"><div class="ts-tag"><span class="ts-dot" style="background:var(--amber)"></span><span data-i18n="six_eras_tag">The era's statistical archetype</span></div></div>
-    <p class="note" style="margin-top:8px" data-i18n="six_eras_note">Selected by minimum z-distance to each era's own means on brightness, dark-pixel share, red share and saturation, among titles with 300+ votes — the same method used to pick the specimen dissected in Exhibit A. Full per-era findings (monster dynasties, the brightness mountain, the '90s saturation myth) live in the site's methodology notes.</p>
+    <p class="note" style="margin-top:8px" data-i18n="six_eras_note">Selected by minimum z-distance to each era's own means on brightness, dark-pixel share, red share and saturation, among titles with 300+ votes — the same method used to pick the specimen dissected in Exhibit A. Full per-era findings (monster dynasties, the brightness mountain, the '90s saturation myth) live in Sources & methods at the end.</p>
   </div>
 </section>
 
@@ -945,7 +945,7 @@ footer .logo span{color:var(--blood)}
     <p data-i18n="p5_diag_body">And third: the compositions themselves stopped leaning. We measured how much of each poster's linework — a blade, a slashed logo, a body thrown off-axis — runs on a diagonal rather than sitting flat and upright. It peaks in the atomic-pulp '40s and '50s, then falls for seventy straight years: today's horror poster stands up straight.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="diagonal" viewBox="0 0 960 340" width="100%"></svg>
-  <p class="note" style="margin-top:10px" data-i18n="p5_diag_note_n">FULL RUN — n = 18,716 posters, share of Hough-detected line length at a 25–65° angle, 5-yr mean. A real share of this is stylized diagonal title lettering, not only figure pose — see methodology.</p></div>
+  <p class="note" style="margin-top:10px" data-i18n="p5_diag_note_n">FULL RUN — n = 18,716 posters, share of Hough-detected line length at a 25–65° angle, 5-yr mean. A real share of this is stylized diagonal title lettering, not only figure pose — see Sources.</p></div>
 
   <div class="prose reveal" style="margin-top:70px">
     <p data-i18n="p5_diag_intro">What does a high diagonal_score actually look like on the sheet? Five specimens the algorithm flagged, spanning five decades, none of them repeats from Exhibit A or B. The red dashed lines below are the real output of the same Hough-transform pass charted above — not illustrative, detected. Watch each sheet dim so the lines can take the stage.</p>
@@ -1080,7 +1080,7 @@ footer .logo span{color:var(--blood)}
       <p class="compare-stat" data-i18n="stat_exorcist">alignment score <b>0.056</b> (lower = tighter grid) · 9 elements, 2+ confirmed shared lines</p>
     </div>
   </div>
-  <p class="note reveal" style="max-width:1120px;margin:20px auto 0;padding:0 24px" data-i18n="exb_method_note">Grid & alignment via connected-component clustering of MSER text regions + gradient-magnitude contours (no LayoutParser/Detectron2 — see methodology). Balance via saliency-map centroid (OpenCV StaticSaliencySpectralResidual). Caveat: for full-bleed painted posters without one isolated figure, the "main visual mass" box can span nearly the whole sheet — thirds-distance then measures the whole composition's center of gravity, not one subject's placement. n = 18,716 (TMDB), full run.</p>
+  <p class="note reveal" style="max-width:1120px;margin:20px auto 0;padding:0 24px" data-i18n="exb_method_note">Grid & alignment via connected-component clustering of MSER text regions + gradient-magnitude contours (no LayoutParser/Detectron2 — see Sources). Balance via saliency-map centroid (OpenCV StaticSaliencySpectralResidual). Caveat: for full-bleed painted posters without one isolated figure, the "main visual mass" box can span nearly the whole sheet — thirds-distance then measures the whole composition's center of gravity, not one subject's placement. n = 18,716 (TMDB), full run.</p>
 
   <div class="prose reveal" style="margin-top:70px">
     <p data-i18n="pyramid_intro">One more shape, measured a different way — not the angle of a line, but the <em>width</em> of the composition itself. Picture slicing a poster into 8 horizontal strips and asking, strip by strip: how much of this row is visually "busy" — edges, contrast, detail — versus empty space? Below, the amber/red bands <em>are</em> that busy width, one per strip. A wide band low on the poster and a thin or missing one up top reads as a pyramid; the reverse reads as an inverted funnel. Five real specimens — none repeated from elsewhere in this piece.</p>
