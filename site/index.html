@@ -6,6 +6,7 @@
 <title>What Fear Looks Like — Pulp Analytics</title>
 <meta name="description" content="Horror didn't get scarier. It got quieter. A data analysis of 18,716 horror movie posters (1920–2022): color, darkness, faces, creatures.">
 <meta name="theme-color" content="#0a0a0c">
+<meta name="aof-build" content="20260723c">
 <link rel="icon" type="image/png" href="assets/pa-mark.png">
 <link rel="apple-touch-icon" href="assets/pa-mark.png">
 <!-- Open Graph / Twitter — set og:image to assets/og-card.jpg (1200x630) before launch -->
@@ -1143,11 +1144,11 @@ footer .logo span{color:var(--blood)}
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.2.0/scrollama.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
-<script src="data/explorer.js"></script>
-<script src="data/series.js"></script>
-<script src="i18n/content.js"></script>
-<script src="i18n/ui.js"></script>
-<script src="js/i18n.js"></script>
+<script src="data/explorer.js?v=20260723c"></script>
+<script src="data/series.js?v=20260723c"></script>
+<script src="i18n/content.js?v=20260723c"></script>
+<script src="i18n/ui.js?v=20260723c"></script>
+<script src="js/i18n.js?v=20260723c"></script>
 
 <script>
 /* ================= data & palettes ================= */
@@ -1725,94 +1726,6 @@ if(typeof scrollama!=='undefined'){
   const anaObs=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting)setAna(+en.target.dataset.ana);})},{threshold:.6});
   document.querySelectorAll('.step[data-ana]').forEach(s=>anaObs.observe(s));
 }
-
-/* ============ century strip (retired; markup kept hidden for restore) ============ */
-(function(){
-  const stripWrap=document.getElementById('strip-wrap');
-  const stripEl=document.getElementById('strip');
-  const stripDec=document.getElementById('strip-decade');
-  if(!stripWrap||!stripEl||stripWrap.getAttribute('aria-hidden')==='true'||stripWrap.style.display==='none') return;
-  /* box = elemento definitorio, colocado a mano mirando cada artwork */
-  const STRIP=[
-   {dec:"1920s",t:"Häxan",y:1922,p:null,id:57283,L:"38.1",dark:46,red:"3.8%",
-    pal:["#19171f","#2e2e77","#c8c298","#f4ed5d","#c36232"],
-    box:{l:55,t:6,w:40,h:26,lab:"the devil in the tree"}},
-   {dec:"1930s",t:"King Kong",y:1933,p:null,id:244,L:"44.2",dark:34,red:"8.2%",
-    pal:["#160b10","#f4d839","#985929","#f15e0e","#6880ba"],
-    box:{l:4,t:1,w:78,h:38,lab:"the beast above the crowd"}},
-   {dec:"1940s",t:"The Body Snatcher",y:1945,p:null,id:30346,L:"45.5",dark:23,red:"3.3%",
-    pal:["#212525","#739471","#445a50","#c9d59b","#8e3e3c"],
-    box:{l:20,t:2,w:62,h:42,lab:"Karloff's stare"}},
-   {dec:"1950s",t:"The Incredible Shrinking Man",y:1957,p:"/1Tl2aeOhvUmEHSGHGH5SfmN19vQ.jpg",L:"48.7",dark:23,red:"5.1%",
-    pal:["#8f7d1b","#140707","#99876b","#59372a","#e2e1d8"],
-    box:{l:20,t:10,w:66,h:38,lab:"the giant housecat"}},
-   {dec:"1960s",t:"The Fearless Vampire Killers",y:1967,p:"/iH8Ohx97F2eIagrJGzCEraO93MN.jpg",L:"50.8",dark:28,red:"10%",
-    pal:["#191715","#8b4e17","#a58e67","#f1efee","#b23124"],
-    box:{l:52,t:4,w:44,h:26,lab:"the fangs at the throat"}},
-   {dec:"1970s",t:"Halloween",y:1978,p:"/qVpCaBcnjRzGL3nOPHi6Suy0sB6.jpg",L:"16.9",dark:72,red:"11.4%",
-    pal:["#070403","#ad3c1b","#64291d","#d3c7b2","#e49b3d"],
-    box:{l:45,t:36,w:38,h:22,lab:"the jack-o'-lantern"}},
-   {dec:"1980s",t:"A Nightmare on Elm Street",y:1984,p:"/wGTpGGRMZmyFCcrY2YoxVTIBlli.jpg",L:"27.6",dark:42,red:"14.5%",
-    pal:["#1e1e18","#3a505d","#5f3828","#b95242","#91a8ac"],
-    box:{l:22,t:2,w:60,h:20,lab:"Freddy above the bed"}},
-   {dec:"1990s",t:"Cemetery Man",y:1994,p:"/cI5AV3jCuxmoQp0N7Z16SI2b7Xk.jpg",L:"34.4",dark:46,red:"9.2%",
-    pal:["#130b0b","#dbc4ad","#72694b","#af0f1b","#4f4481"],
-    box:{l:12,t:6,w:65,h:32,lab:"the returner"}},
-   {dec:"2000s",t:"Funny Games",y:2008,p:"/2RGiR5yNmxXS8c4Qypmbqn0b63w.jpg",L:"27.5",dark:45,red:"3.1%",
-    pal:["#0f0403","#2d1d17","#54413a","#7f6a68","#9f8e91"],
-    box:{l:10,t:52,w:48,h:30,lab:"a tear, not a monster"}},
-   {dec:"2010s",t:"The Rite",y:2011,p:"/gRTxM95huMwIDfZBJWjuifMTfpx.jpg",L:"32.7",dark:43,red:"11.5%",
-    pal:["#0a060a","#bdae9a","#4d1815","#895a3d","#4c5457"],
-    box:{l:28,t:8,w:44,h:60,lab:"a face inside a cross"}},
-   {dec:"2020s",t:"Resident Evil: Raccoon City",y:2021,p:"/7uRbWOXxpWDMtnsd2PF3clu65jc.jpg",L:"30.4",dark:44,red:"9.4%",
-    pal:["#18100e","#533529","#93735b","#9fb9a4","#ac5b3f"],
-    box:{l:6,t:2,w:64,h:24,lab:"the logo hidden in the sky"}}
-  ];
-  STRIP.forEach((s,i)=>{
-    const src = s.p ? 'https://image.tmdb.org/t/p/w342'+s.p : posterSrcById(s.id,'m');
-    const b=s.box, labTop=(b.t+b.h+3), labSide=b.l>40?'right:3%':'left:3%';
-    const card=document.createElement('div');card.className='strip-card';card.dataset.i=i;
-    card.innerHTML=`<div class="sc-poster" style="background-image:url(${src});--dark:${s.dark}%">
-        <div class="an-scan"></div>
-        <div class="sc-box" style="left:${b.l}%;top:${b.t}%;width:${b.w}%;height:${b.h}%"></div>
-        <div class="sc-lab" style="top:${labTop}%;${labSide}">${b.lab}</div>
-        <div class="sc-scrim"><span>dark ${s.dark}%</span></div>
-      </div>
-      <div class="sc-pal">${s.pal.map(c=>`<span style="background:${c}"></span>`).join('')}</div>
-      <p class="sc-metrics">L* <b style="color:var(--blood)">${s.L}</b> · red <b style="color:var(--blood)">${s.red}</b></p>
-      <p class="sc-cap"><b>${s.t} (${s.y})</b>the decade's statistical archetype</p>`;
-    stripEl.appendChild(card);
-  });
-  let stripActive=-1;
-  function stripScroll(){
-    const rect=stripWrap.getBoundingClientRect();
-    const total=stripWrap.offsetHeight-innerHeight;
-    const prog=Math.min(1,Math.max(0,-rect.top/total));
-    const maxX=stripEl.scrollWidth-innerWidth;
-    stripEl.style.transform=`translateX(${-prog*maxX}px)`;
-    let best=0,bd=1e9;
-    stripEl.querySelectorAll('.strip-card').forEach((c,i)=>{
-      const r=c.getBoundingClientRect();
-      const d=Math.abs(r.left+r.width/2-innerWidth/2);
-      if(d<bd){bd=d;best=i;}
-    });
-    if(best!==stripActive){
-      stripActive=best;
-      stripEl.querySelectorAll('.strip-card').forEach((c,i)=>{
-        c.classList.toggle('active',i===best);
-        if(i!==best) c.classList.remove('ph1','ph2','ph3');
-      });
-      stripDec.textContent=STRIP[best].dec;
-    }
-    const sub=Math.min(1,Math.max(0,prog*STRIP.length-best));
-    const card=stripEl.children[best];
-    card.classList.toggle('ph1',sub>=0.22);
-    card.classList.toggle('ph2',sub>=0.48);
-    card.classList.toggle('ph3',sub>=0.72);
-  }
-  addEventListener('scroll',()=>requestAnimationFrame(stripScroll),{passive:true});
-  stripScroll();
-})();
 
 /* ================= the page darkens as you scroll ================= */
 /* you don't just read the Darkness Curve — you feel it */
