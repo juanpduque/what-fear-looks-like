@@ -381,47 +381,6 @@ svg text{font-family:var(--mono)}
 .step .stat{font-family:var(--mono);font-size:13px;color:var(--ink-dim);border-top:1px solid var(--line);margin-top:16px;padding-top:12px}
 .step .stat b{color:var(--blood);font-size:15px}
 
-/* ---------- century strip: vertical scroll -> horizontal film strip ---------- */
-.strip-wrap{height:660vh;position:relative}
-.strip-sticky{position:sticky;top:0;height:100vh;overflow:hidden;display:flex;align-items:center}
-.strip-decade{position:absolute;top:7vh;left:0;right:0;text-align:center;
-  font-family:var(--display);font-size:clamp(70px,15vw,170px);line-height:1;
-  color:rgba(232,228,218,.06);pointer-events:none;user-select:none}
-.strip{display:flex;gap:9vw;align-items:center;padding:0 45vw;will-change:transform}
-.strip-card{flex:0 0 auto;width:min(300px,58vw);text-align:center}
-.sc-poster{position:relative;aspect-ratio:2/3;border-radius:4px;overflow:hidden;
-  background:#141216 center/cover no-repeat;
-  box-shadow:0 30px 80px rgba(0,0,0,.75),0 0 0 1px rgba(255,255,255,.06);
-  filter:grayscale(.5) brightness(.55);transform:scale(.9);
-  transition:filter .6s ease,transform .6s ease}
-.strip-card.active .sc-poster{filter:none;transform:scale(1)}
-.sc-poster .an-scan{display:none}
-.strip-card.active .sc-poster .an-scan{display:block}
-/* disección por fases: ph1 elemento -> ph2 oscuridad -> ph3 paleta */
-.sc-box{position:absolute;border:2px dashed var(--amber);border-radius:3px;
-  opacity:0;transition:opacity .5s}
-.sc-lab{position:absolute;font-family:var(--mono);font-size:10px;letter-spacing:.08em;
-  background:rgba(10,10,12,.9);border:1px solid var(--line);padding:3px 7px;
-  color:var(--ink);border-radius:2px;opacity:0;transition:opacity .5s .15s;white-space:nowrap}
-.strip-card.ph1 .sc-box,.strip-card.ph1 .sc-lab{opacity:1}
-.sc-scrim{position:absolute;left:0;right:0;bottom:0;height:0;background:rgba(0,0,0,.82);
-  border-top:2px dashed var(--blood);transition:height 1s ease,opacity .3s;opacity:0}
-.strip-card.ph2 .sc-scrim{height:var(--dark);opacity:1}
-.sc-scrim span{position:absolute;top:-22px;right:4%;font-family:var(--mono);font-size:10px;
-  color:var(--blood);background:rgba(10,10,12,.9);padding:2px 6px;border-radius:2px;
-  opacity:0;transition:opacity .4s .5s}
-.strip-card.ph2 .sc-scrim span{opacity:1}
-.sc-pal{display:flex;gap:4px;justify-content:center;margin-top:10px;opacity:0;transition:opacity .5s}
-.sc-pal span{width:22px;height:22px;border-radius:50%;border:1px solid rgba(255,255,255,.15)}
-.strip-card.ph3 .sc-pal{opacity:1}
-.sc-metrics{font-family:var(--mono);font-size:10px;color:var(--ink-dim);margin-top:6px;
-  opacity:0;transition:opacity .5s .2s}
-.strip-card.ph3 .sc-metrics{opacity:1}
-.sc-cap{margin-top:12px;font-family:var(--mono);font-size:11px;color:var(--ink-dim);
-  opacity:0;transition:opacity .5s .3s}
-.strip-card.active .sc-cap{opacity:1}
-.sc-cap b{color:var(--ink);display:block;font-size:13px;margin-bottom:2px}
-
 /* ---------- lookup (search any poster) ---------- */
 .lookup{padding:100px 0 40px;background:var(--bg)}
 .lk-search{max-width:640px;margin:28px auto 0;padding:0 24px;position:relative}
@@ -655,7 +614,7 @@ footer .logo span{color:var(--blood)}
           <div class="an-lab" style="bottom:3%;left:4%" data-i18n="ana_lab_blood">blood red: 11%</div></div>
         <div class="an-ov" id="ana-ov4">
           <div class="an-box amber" style="left:45%;top:36%;width:38%;height:22%"></div>
-          <div class="an-lab" style="top:60%;right:4%" data-i18n="ana_lab_faces">0 human faces · pumpkin reads as <b style="color:var(--amber)">skull</b></b> 0.63</div></div>
+          <div class="an-lab" style="top:60%;right:4%" data-i18n="ana_lab_faces">0 human faces · pumpkin reads as <b style="color:var(--amber)">skull</b> 0.63</div></div>
         <div class="an-ov" id="ana-ov5">
           <div class="an-box" style="left:4%;top:3%;width:92%;height:12%"></div>
           <div class="an-lab" style="top:17%;left:4%" data-i18n="ana_lab_lettering">one big word on top</div></div>
@@ -682,13 +641,13 @@ footer .logo span{color:var(--blood)}
       <p class="kicker" data-i18n="m1_kicker">Measurement 1</p>
       <h3 data-i18n="m1_h3">The Palette</h3>
       <p data-i18n="m1_body">Almost all black — then a little pumpkin light: rust, amber, bone. The heat isn't everywhere. It's local. One knife. One grin. The rest of the sheet stays cold.</p>
-      <p class="stat" data-i18n="m1_stat">black · rust · amber · bone</b> · #af3d1b · #61281c · #e4a048 · #d8cfbd</p>
+      <p class="stat" data-i18n="m1_stat">black · rust · amber · bone</p>
     </div>
     <div class="step" data-ana="2">
       <p class="kicker" data-i18n="m2_kicker">Measurement 2</p>
       <h3 data-i18n="m2_h3">The Darkness</h3>
-      <p data-i18n="m2_body">Halloween poster: <strong>72% black</strong>. That's almost three-quarters of the whole sheet. Just… black. One knife. One pumpkin. That's it. It was also less than half as bright as the average horror poster of 1978 — years ahead of where the genre was heading.</em> the average of its own year. Carpenter's one-sheet was a decade ahead of the curve the rest of the genre would follow.</p>
-      <p class="stat" data-i18n="m2_stat"><b>72% black</b> · darker than most of its year</b> vs 35.9 (1978 average) · dark pixels <b>72%</b></p>
+      <p data-i18n="m2_body">Halloween poster: <strong>72% black</strong>. That's almost three-quarters of the whole sheet. Just… black. One knife. One pumpkin. That's it. It was also less than half as bright as the average horror poster of 1978 — years ahead of where the genre was heading.</p>
+      <p class="stat" data-i18n="m2_stat"><b>72% black</b> · darker than most of its year</p>
     </div>
     <div class="step" data-ana="3">
       <p class="kicker" data-i18n="m3_kicker">Measurement 3</p>
@@ -700,20 +659,20 @@ footer .logo span{color:var(--blood)}
     <div class="step" data-ana="4">
       <p class="kicker" data-i18n="m4_kicker">Measurement 4</p>
       <h3 data-i18n="m4_h3">Faces &amp; Monsters</h3>
-      <p data-i18n="m4_body">Who looks back? Zero human faces. Most 1970s horror posters showed you one. The only face here is carved into a pumpkin — and the model reads that grin like a skull. Wrong species, right instinct. Michael Myers is the absence. The sheet sells dread by showing you almost no one.</em> YuNet finds zero <em>human</em> faces — most posters of its decade (~58%) showed you one. The only face on the sheet is carved into a pumpkin. When we ask CLIP what creature lives here, it answers <em>skeleton</em> (0.63): it reads that grin as a skull. Wrong species, right instinct — a death's-head where Michael Myers is the absence the artwork sells. Medium score says mostly photographic (~13% painted), not pulp illustration.</p>
-      <p class="stat" data-i18n="m4_stat"><b>0</b> human faces · most posters that decade had one</b> · 1970s avg: 58% · CLIP: <b>skeleton</b> (0.63) · painted: <b>13%</b></p>
+      <p data-i18n="m4_body">Who looks back? Zero human faces. Most 1970s horror posters showed you one. The only face here is carved into a pumpkin — and the model reads that grin like a skull. Wrong species, right instinct. Michael Myers is the absence. The sheet sells dread by showing you almost no one.</p>
+      <p class="stat" data-i18n="m4_stat"><b>0</b> human faces · most posters that decade had one</p>
     </div>
     <div class="step" data-ana="5">
       <p class="kicker" data-i18n="m5_kicker">Measurement 5</p>
       <h3 data-i18n="m5_h3">The Lettering</h3>
-      <p data-i18n="m5_body">One word up top: <em>HALLOWEEN</em>. Still a shout — big, bold, hard to miss. Not yet the tiny whisper of today's elevated horror. The detector also picks up some pumpkin ridges as "text," so the coverage number is a little high. The point stands: this title wants to be seen.</em> register: still a shout, not yet the whisper of elevated horror.</p>
-      <p class="stat" data-i18n="m5_stat">one big title · still shouting, not whispering</b> · typography register: <b>decorative</b> · ornate↔minimal axis: <b>+0.02</b></p>
+      <p data-i18n="m5_body">One word up top: <em>HALLOWEEN</em>. Still a shout — big, bold, hard to miss. Not yet the tiny whisper of today's elevated horror. The detector also picks up some pumpkin ridges as "text," so the coverage number is a little high. The point stands: this title wants to be seen.</p>
+      <p class="stat" data-i18n="m5_stat">one big title · still shouting, not whispering</p>
     </div>
     <div class="step" data-ana="6">
       <p class="kicker" data-i18n="m6_kicker">Measurement 6</p>
       <h3 data-i18n="m6_h3">The Composition</h3>
-      <p data-i18n="m6_body">Knife and pumpkin sit dead center — a neat little emblem. Below them: empty night on purpose. The sheet looks balanced as a logo, but the weight is all up top. A funnel of dread over nothing.</em> is only 25%: the black void empties the lower frame on purpose. Rule-of-thirds distance is tight (0.14); diagonal energy is moderate (51%); the pyramid shift (−0.38) reads top-heavy: a funnel of dread over empty night.</p>
-      <p class="stat" data-i18n="m6_stat">centered emblem · empty night below</b> · balance <b>25%</b> · thirds dist. <b>0.14</b> · diagonal <b>51%</b> · pyramid <b>−0.38</b></p>
+      <p data-i18n="m6_body">Knife and pumpkin sit dead center — a neat little emblem. Below them: empty night on purpose. The sheet looks balanced as a logo, but the weight is all up top. A funnel of dread over nothing.</p>
+      <p class="stat" data-i18n="m6_stat">centered emblem · empty night below</p>
     </div>
     <div class="step" data-ana="7">
       <p class="kicker" data-i18n="now_kicker">Now</p>
@@ -784,10 +743,10 @@ footer .logo span{color:var(--blood)}
   </div>
 </section>
 
-<!-- ============ RISE OF RED ============ -->
-<section class="chart-block" style="padding-top:0">
+<!-- ============ PART III · RED & BLOOD ============ -->
+<section class="chart-block" style="padding-top:0" id="part-blood">
   <div class="prose reveal">
-    <p class="kicker" data-i18n="p3_kicker">Part III · Rise of Red</p>
+    <p class="kicker" data-i18n="p3_kicker">Part III · Red &amp; Blood</p>
     <h2 class="section-title" data-i18n="p3_title">Red Peaked After the Slashers</h2>
     <p data-i18n="p3_body">You'd think the '80s slashers owned the color red. They didn't. Red is horror's signature — but its real peak isn't where you'd guess. Not the slashers. The meta-horror turn of the millennium.</p>
     <p data-i18n="p3_why">Why the delayed peak? The '80s slasher era was born from VHS. Over 1,700 horror films came out in that decade — posters had to scream red from a video store shelf just to compete. But by the 2000s, red had become a language. Meta-horror (<em>Scream</em>, <em>Saw</em>, <em>Final Destination</em>) used blood as an aesthetic — not a threat.</p>
@@ -801,13 +760,9 @@ footer .logo span{color:var(--blood)}
     <div class="ts-row" id="rr-none"><div class="ts-tag"><span class="ts-dot" style="background:#4c5a66"></span><span data-i18n="p3_tag_none">Near-zero red</span></div></div>
     <p class="note" style="margin-top:8px" data-i18n="p3_note_select">Selected by red-pixel share (HSV red-hue mask), extremes per era.</p>
   </div>
-</section>
 
-
-<!-- ============ TWO KINDS OF BLOOD ============ -->
-<section class="chart-block" style="padding-top:0">
-  <div class="prose reveal">
-    <p class="kicker" data-i18n="p7_kicker">Part III · Two Kinds of Blood</p>
+  <div class="prose reveal" style="margin-top:70px">
+    <p class="kicker" data-i18n="p7_kicker">Two Kinds of Blood</p>
     <h2 class="section-title" data-i18n="p7_title">Blood Left the Color Behind</h2>
     <p data-i18n="p7_body">Here's the weird part. Red and blood aren't the same thing. The chart above measured a <em>color</em>. This one measures a <em>concept</em>: does this look like blood, even if it isn't red? For fifty years the two measures move together. Then, with the slashers, they split — the color stops rising, but blood on the sheet keeps climbing for another thirty years.</p>
     <p data-i18n="p7_why">The split makes sense: after the '80s slasher explosion, blood became a symbol — not just a color. It could be black, brown, dark red, or even implied. Meta-horror posters (<em>Scream</em>, <em>Saw</em>) treated blood as a language everyone already understood. You didn't need to paint it red anymore. The audience knew.</p>
@@ -1114,22 +1069,6 @@ footer .logo span{color:var(--blood)}
   </div>
   <p class="note reveal" style="max-width:1120px;margin:20px auto 0;padding:0 24px" data-i18n="pyramid_note">Bands: energy-weighted horizontal spread of gradient magnitude per 8 vertical bins, drawn at their real measured width and position. Picked for a clean, unambiguous signal — filtered out logo-only title cards and letterboxed video-still posters, which can fake the same number without a real compositional pyramid behind it. Across the full 18,716-poster dataset this measure averages out to roughly zero by decade — top-heavy and bottom-heavy compositions largely cancel out. It's a real per-poster signature, not a century-level trend (unlike diagonal composition — see Part V).</p>
 </section>
-
-<!-- ============ THE CENTURY STRIP (retired; markup kept for restore) ============ -->
-<section class="chart-block" style="padding-bottom:20px;display:none" aria-hidden="true">
-  <div class="prose reveal">
-    <p class="kicker" data-i18n="coda_kicker">Coda</p>
-    <h2 class="section-title" data-i18n="coda_title">The Century Strip</h2>
-    <p data-i18n="coda_body">Eleven decades, eleven specimens — each the statistically most typical famous poster of its ten years. Keep scrolling: the strip moves sideways through the century, and each poster is dissected as it reaches the center.</p>
-  </div>
-</section>
-<div class="strip-wrap" id="strip-wrap" style="display:none" aria-hidden="true">
-  <div class="strip-sticky">
-    <div class="strip-decade" id="strip-decade">1920s</div>
-    <div class="strip" id="strip"></div>
-  </div>
-</div>
-
 
 <!-- ============ LOOK UP A POSTER ============ -->
 <section class="lookup" id="lookup">
