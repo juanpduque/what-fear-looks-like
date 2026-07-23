@@ -523,10 +523,22 @@ svg text{font-family:var(--mono)}
 .range-wrap input[type=range]::-moz-range-thumb{pointer-events:auto;width:16px;height:16px;border-radius:50%;background:var(--ink);border:3px solid var(--blood);cursor:grab}
 .slider-hint{text-align:center;font-family:var(--mono);font-size:11px;color:var(--ink-dim);margin-top:6px;letter-spacing:.15em}
 
-/* ---------- methodology ---------- */
-.metho{padding:100px 0 60px;border-top:1px solid var(--line)}
-.metho .prose{font-size:15px;color:var(--ink-dim)}
-.metho a{color:var(--amber)}
+/* ---------- sources (collapsed appendix) ---------- */
+.metho,.sources{padding:60px 0 80px;border-top:1px solid var(--line)}
+.metho .prose,.sources .prose{font-size:15px;color:var(--ink-dim)}
+.metho a,.sources a{color:var(--amber)}
+.about-data{padding:0 0 40px}
+.about-data .prose{font-size:18px}
+.sources-details{margin-top:8px;border:1px solid var(--line);border-radius:2px;background:rgba(255,255,255,.02)}
+.sources-details>summary{cursor:pointer;list-style:none;font-family:var(--mono);font-size:12px;letter-spacing:.14em;
+  text-transform:uppercase;color:var(--ink-dim);padding:14px 16px}
+.sources-details>summary::-webkit-details-marker{display:none}
+.sources-details>summary::before{content:'▸ ';color:var(--amber)}
+.sources-details[open]>summary::before{content:'▾ '}
+.sources-details>summary:hover{color:var(--ink)}
+.sources-details .sources-body{padding:0 16px 18px;font-size:14px;line-height:1.65;color:var(--ink-dim)}
+.sources-details .sources-body p{margin:0 0 1em}
+.sources-details .sources-body p:last-child{margin-bottom:0}
 footer{padding:40px 24px 60px;text-align:center;font-family:var(--mono);font-size:12px;color:var(--ink-dim)}
 footer .logo{font-family:var(--display);font-size:22px;color:var(--ink);text-transform:uppercase}
 footer .logo span{color:var(--blood)}
@@ -610,6 +622,14 @@ footer .logo span{color:var(--blood)}
     <p class="reveal" data-i18n="intro_fossils">I love horror films. I've watched them my whole life. I also love data — finding patterns in things.</p>
     <p class="reveal" data-i18n="intro_wonder">So I started wondering: when did horror stop shouting? Did the posters actually change, or is it just me? Because if they did, that meant something. It meant fear looked different now.</p>
     <p class="reveal" data-i18n="intro_century">I decided to find out. I pulled <strong>18,716 horror posters</strong> — from 1920 all the way to 2022 — and I measured them. Colors. How dark they are. What's on them. Everything. What I found is weird. And it's going to change how you watch horror posters forever.</p>
+  </div>
+</section>
+
+<!-- ============ ABOUT THE DATA ============ -->
+<section class="about-data" id="about-data" data-i18n-aria="aria_about_data" aria-label="About the data">
+  <div class="prose">
+    <p class="kicker reveal" data-i18n="about_kicker">About the data</p>
+    <p class="reveal" data-i18n="about_body">From TMDB's ~33,000 Horror titles I kept <strong>18,716</strong> English-language posters with usable art — 1920 to 2022. After review I cut Animation and Music: they weren't selling the same kind of fear. Then I measured every sheet the same way. The fine print is at the end, if you want it.</p>
   </div>
 </section>
 
@@ -1151,17 +1171,8 @@ footer .logo span{color:var(--blood)}
   <div class="tip" id="exp-tip"></div>
 </section>
 
-<!-- ============ METHODOLOGY ============ -->
-<section class="metho">
-  <div class="prose">
-    <p class="kicker" data-i18n="metho_kicker">Methodology</p>
-    <p style="margin-top:14px" data-i18n="metho_body">Film list and poster images from <a href="https://www.themoviedb.org/">The Movie Database (TMDB)</a>: 32,540 features tagged Horror, of which 18,716 (1920–2022) had usable artwork and were analyzed. Excluded after review: titles genre-tagged "Animation" and "Music", plus films whose TMDB <code>original_language</code> is not English (~8,907) — non-English lettering skewed typography/OCR metrics. Lists in <code>pipeline/data/excluded_*.csv</code>. Kept 629 early titles missing language metadata (mostly silent-era). TMDB "TV Movie" telefilms are kept on purpose — single films made for television, not episodic series. For each poster we extracted a 5-color dominant palette (k-means in CIELAB, saturation-weighted), mean brightness (L*), mean saturation, share of near-black pixels, share of blood-red pixels, and hue-family distribution. Base dataset by Tanya Shapiro (TidyTuesday 2022). Face counts: population statistics use YuNet detection at analysis resolution (floors — small, tilted or heavily stylized faces can escape); the counts shown on individually displayed specimens are hand-verified against the artwork. This product uses the TMDB API but is not endorsed or certified by TMDB. Full code and data on GitHub. Industry context: Stephen Follows' <a href="https://stephenfollows.com/p/the-horror-movie-report">Horror Movie Report</a>.</p>
-  </div>
-</section>
-
-
 <!-- ============ BRIDGE / CODA ============ -->
-<section class="chart-block" id="bridge" style="padding-bottom:40px">
+<section class="chart-block" id="bridge" style="padding-bottom:20px">
   <div class="prose reveal">
     <p class="kicker" data-i18n="bridge_kicker">Coda</p>
     <h2 class="section-title" data-i18n="bridge_title">Fear Has a Century-Long Face</h2>
@@ -1170,6 +1181,19 @@ footer .logo span{color:var(--blood)}
   </div>
 </section>
 
+<!-- ============ SOURCES (collapsed) ============ -->
+<section class="sources" id="sources">
+  <div class="prose">
+    <details class="sources-details reveal">
+      <summary data-i18n="sources_summary">Sources &amp; methods</summary>
+      <div class="sources-body">
+        <p data-i18n="sources_corpus">Film list and poster images from <a href="https://www.themoviedb.org/">The Movie Database (TMDB)</a>: 32,540 features tagged Horror, of which 18,716 (1920–2022) had usable artwork and were analyzed. Excluded after review: titles genre-tagged "Animation" and "Music", plus films whose TMDB <code>original_language</code> is not English (~8,907) — non-English lettering skewed typography/OCR metrics. Lists in <code>pipeline/data/excluded_*.csv</code>. Kept 629 early titles missing language metadata (mostly silent-era). TMDB "TV Movie" telefilms are kept on purpose — single films made for television, not episodic series.</p>
+        <p data-i18n="sources_measures">For each poster we extracted a 5-color dominant palette (k-means in CIELAB, saturation-weighted), mean brightness (L*), mean saturation, share of near-black pixels, share of blood-red pixels, and hue-family distribution. Face counts: population statistics use YuNet detection at analysis resolution (floors — small, tilted or heavily stylized faces can escape); the counts shown on individually displayed specimens are hand-verified against the artwork. Chart notes spell out each measure where it appears.</p>
+        <p data-i18n="sources_credits">Base dataset by Tanya Shapiro (TidyTuesday 2022). This product uses the TMDB API but is not endorsed or certified by TMDB. Full code and data on <a href="https://github.com/juanpduque/anatomy-of-fear">GitHub</a>. Industry context: Stephen Follows' <a href="https://stephenfollows.com/p/the-horror-movie-report">Horror Movie Report</a>.</p>
+      </div>
+    </details>
+  </div>
+</section>
 
 </main>
 

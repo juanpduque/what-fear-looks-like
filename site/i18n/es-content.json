@@ -373,8 +373,8 @@
   },
   {
     "id": "six_eras_note",
-    "en": "Selected by minimum z-distance to each era's own means on brightness, dark-pixel share, red share and saturation, among titles with 300+ votes — the same method used to pick the specimen dissected in Exhibit A. Full per-era findings (monster dynasties, the brightness mountain, the '90s saturation myth) live in the site's methodology notes.",
-    "es": "Seleccionados por distancia-z mínima a las medias de cada era en brillo, cuota de píxeles oscuros, cuota de rojo y saturación, entre títulos con 300+ votos — el mismo método usado para elegir el espécimen diseccionado en la Exhibición A. Los hallazgos por era (dinastías de monstruos, la montaña de brillo, el mito de saturación de los 90) viven en las notas metodológicas del sitio."
+    "en": "Selected by minimum z-distance to each era's own means on brightness, dark-pixel share, red share and saturation, among titles with 300+ votes — the same method used to pick the specimen dissected in Exhibit A. Full per-era findings (monster dynasties, the brightness mountain, the '90s saturation myth) live in Sources & methods at the end.",
+    "es": "Seleccionados por distancia-z mínima a las medias de cada era en brillo, cuota de píxeles oscuros, cuota de rojo y saturación, entre títulos con 300+ votos — el mismo método usado para elegir el espécimen diseccionado en la Exhibición A. Los hallazgos por era (dinastías de monstruos, la montaña de brillo, el mito de saturación de los 90) viven en Fuentes y métodos al final."
   },
   {
     "id": "p2_kicker",
@@ -733,8 +733,8 @@
   },
   {
     "id": "p5_diag_note_n",
-    "en": "FULL RUN — n = 18,716 posters, share of Hough-detected line length at a 25–65° angle, 5-yr mean. A real share of this is stylized diagonal title lettering, not only figure pose — see methodology.",
-    "es": "RECORRIDO COMPLETO — n = 18,716 pósters, cuota de longitud de líneas detectadas por Hough a un ángulo de 25–65°, media de 5 años. Una parte real de esto es letraje de título estilizado en diagonal, no solo la pose de la figura — ver metodología."
+    "en": "FULL RUN — n = 18,716 posters, share of Hough-detected line length at a 25–65° angle, 5-yr mean. A real share of this is stylized diagonal title lettering, not only figure pose — see Sources.",
+    "es": "RECORRIDO COMPLETO — n = 18,716 pósters, cuota de longitud de líneas detectadas por Hough a un ángulo de 25–65°, media de 5 años. Una parte real de esto es letraje de título estilizado en diagonal, no solo la pose de la figura — ver Fuentes."
   },
   {
     "id": "p5_diag_intro",
@@ -988,8 +988,8 @@
   },
   {
     "id": "exb_method_note",
-    "en": "Grid & alignment via connected-component clustering of MSER text regions + gradient-magnitude contours (no LayoutParser/Detectron2 — see methodology). Balance via saliency-map centroid (OpenCV StaticSaliencySpectralResidual). Caveat: for full-bleed painted posters without one isolated figure, the \"main visual mass\" box can span nearly the whole sheet — thirds-distance then measures the whole composition's center of gravity, not one subject's placement. n = 18,716 (TMDB), full run.",
-    "es": "Rejilla y alineación vía clustering de componentes conectados de regiones de texto MSER + contornos de magnitud de gradiente (sin LayoutParser/Detectron2 — ver metodología). Balance vía centroide del mapa de saliencia (OpenCV StaticSaliencySpectralResidual). Caveat: en pósters pintados a sangre completa sin una figura aislada, la caja de “masa visual principal” puede abarcar casi toda la hoja — la distancia a tercios mide entonces el centro de gravedad de toda la composición, no la colocación de un sujeto. n = 18,716 (TMDB), recorrido completo."
+    "en": "Grid & alignment via connected-component clustering of MSER text regions + gradient-magnitude contours (no LayoutParser/Detectron2 — see Sources). Balance via saliency-map centroid (OpenCV StaticSaliencySpectralResidual). Caveat: for full-bleed painted posters without one isolated figure, the \"main visual mass\" box can span nearly the whole sheet — thirds-distance then measures the whole composition's center of gravity, not one subject's placement. n = 18,716 (TMDB), full run.",
+    "es": "Rejilla y alineación vía clustering de componentes conectados de regiones de texto MSER + contornos de magnitud de gradiente (sin LayoutParser/Detectron2 — ver Fuentes). Balance vía centroide del mapa de saliencia (OpenCV StaticSaliencySpectralResidual). Caveat: en pósters pintados a sangre completa sin una figura aislada, la caja de “masa visual principal” puede abarcar casi toda la hoja — la distancia a tercios mide entonces el centro de gravedad de toda la composición, no la colocación de un sujeto. n = 18,716 (TMDB), recorrido completo."
   },
   {
     "id": "pyramid_intro",
@@ -1127,14 +1127,41 @@
     "es": "ARRASTRA PARA FILTRAR POR AÑO · PASA EL CURSOR POR UNA BALDOSA PARA VER SUS MEDICIONES"
   },
   {
-    "id": "metho_kicker",
-    "en": "Methodology",
-    "es": "Metodología"
+    "id": "about_kicker",
+    "en": "About the data",
+    "es": "Sobre los datos"
   },
   {
-    "id": "metho_body",
-    "en": "Film list and poster images from <a href=\"https://www.themoviedb.org/\">The Movie Database (TMDB)</a>: 32,540 features tagged Horror, of which 18,716 (1920–2022) had usable artwork and were analyzed. Excluded after review: titles genre-tagged \"Animation\" and \"Music\", plus films whose TMDB <code>original_language</code> is not English (~8,907) — non-English lettering skewed typography/OCR metrics. Lists in <code>pipeline/data/excluded_*.csv</code>. Kept 629 early titles missing language metadata (mostly silent-era). TMDB \"TV Movie\" telefilms are kept on purpose — single films made for television, not episodic series. For each poster we extracted a 5-color dominant palette (k-means in CIELAB, saturation-weighted), mean brightness (L*), mean saturation, share of near-black pixels, share of blood-red pixels, and hue-family distribution. Base dataset by Tanya Shapiro (TidyTuesday 2022). Face counts: population statistics use YuNet detection at analysis resolution (floors — small, tilted or heavily stylized faces can escape); the counts shown on individually displayed specimens are hand-verified against the artwork. This product uses the TMDB API but is not endorsed or certified by TMDB. Full code and data on GitHub. Industry context: Stephen Follows' <a href=\"https://stephenfollows.com/p/the-horror-movie-report\">Horror Movie Report</a>.",
-    "es": "Lista de películas e imágenes de pósters de <a href=\"https://www.themoviedb.org/\">The Movie Database (TMDB)</a>: 32,540 largometrajes etiquetados Horror, de los cuales 18,716 (1920–2022) tenían arte usable y fueron analizados. Excluidos tras revisión: títulos con etiqueta de género \"Animation\" y \"Music\", más películas cuyo <code>original_language</code> de TMDB no es inglés (~8,907) — el letraje no inglés sesgaba las métricas de tipografía/OCR. Listas en <code>pipeline/data/excluded_*.csv</code>. Se conservaron 629 títulos tempranos sin metadatos de idioma (sobre todo era muda). Los telefilmes \"TV Movie\" de TMDB se conservan a propósito — películas sueltas hechas para televisión, no series episodicas. Por cada póster extrajimos una paleta dominante de 5 colores (k-means en CIELAB, ponderada por saturación), brillo medio (L*), saturación media, cuota de píxeles casi negros, cuota de píxeles rojo sangre y distribución por familia de matiz. Dataset base de Tanya Shapiro (TidyTuesday 2022). Conteos de rostros: las estadísticas poblacionales usan detección YuNet a la resolución de análisis (suelos — rostros pequeños, inclinados o muy estilizados pueden escapar); los conteos mostrados en especímenes individuales están verificados a mano contra el arte. Este producto usa la API de TMDB pero no está respaldado ni certificado por TMDB. Código y datos completos en GitHub. Contexto de industria: el <a href=\"https://stephenfollows.com/p/the-horror-movie-report\">Horror Movie Report</a> de Stephen Follows."
+    "id": "about_body",
+    "en": "From TMDB's ~33,000 Horror titles I kept <strong>18,716</strong> English-language posters with usable art — 1920 to 2022. After review I cut Animation and Music: they weren't selling the same kind of fear. Then I measured every sheet the same way. The fine print is at the end, if you want it.",
+    "es": "De los ~33,000 títulos Horror de TMDB me quedé con <strong>18,716</strong> pósters en inglés con arte usable — 1920 a 2022. Tras revisar, corté Animation y Music: no vendían el mismo tipo de miedo. Luego medí cada hoja igual. La letra chica está al final, si la quieres."
+  },
+  {
+    "id": "sources_summary",
+    "en": "Sources &amp; methods",
+    "es": "Fuentes y métodos"
+  },
+  {
+    "id": "sources_corpus",
+    "en": "Film list and poster images from <a href=\"https://www.themoviedb.org/\">The Movie Database (TMDB)</a>: 32,540 features tagged Horror, of which 18,716 (1920–2022) had usable artwork and were analyzed. Excluded after review: titles genre-tagged \"Animation\" and \"Music\", plus films whose TMDB <code>original_language</code> is not English (~8,907) — non-English lettering skewed typography/OCR metrics. Lists in <code>pipeline/data/excluded_*.csv</code>. Kept 629 early titles missing language metadata (mostly silent-era). TMDB \"TV Movie\" telefilms are kept on purpose — single films made for television, not episodic series.",
+    "es": "Lista de películas e imágenes de pósters de <a href=\"https://www.themoviedb.org/\">The Movie Database (TMDB)</a>: 32,540 largometrajes etiquetados Horror, de los cuales 18,716 (1920–2022) tenían arte usable y fueron analizados. Excluidos tras revisión: títulos con etiqueta de género \"Animation\" y \"Music\", más películas cuyo <code>original_language</code> de TMDB no es inglés (~8,907) — el letraje no inglés sesgaba tipografía/OCR. Listas en <code>pipeline/data/excluded_*.csv</code>. Se conservaron 629 títulos tempranos sin metadatos de idioma (sobre todo era muda). Los telefilmes \"TV Movie\" de TMDB se conservan a propósito — películas sueltas hechas para televisión, no series episodicas."
+  },
+  {
+    "id": "sources_measures",
+    "en": "For each poster we extracted a 5-color dominant palette (k-means in CIELAB, saturation-weighted), mean brightness (L*), mean saturation, share of near-black pixels, share of blood-red pixels, and hue-family distribution. Face counts: population statistics use YuNet detection at analysis resolution (floors — small, tilted or heavily stylized faces can escape); the counts shown on individually displayed specimens are hand-verified against the artwork. Chart notes spell out each measure where it appears.",
+    "es": "Por cada póster extrajimos una paleta dominante de 5 colores (k-means en CIELAB, ponderada por saturación), brillo medio (L*), saturación media, cuota de píxeles casi negros, cuota de píxeles rojo sangre y distribución por familia de matiz. Conteos de rostros: las estadísticas poblacionales usan detección YuNet a la resolución de análisis (suelos — rostros pequeños, inclinados o muy estilizados pueden escapar); los conteos en especímenes individuales están verificados a mano contra el arte. Las notas de cada gráfico detallan la medida donde aparece."
+  },
+  {
+    "id": "sources_credits",
+    "en": "Base dataset by Tanya Shapiro (TidyTuesday 2022). This product uses the TMDB API but is not endorsed or certified by TMDB. Full code and data on <a href=\"https://github.com/juanpduque/anatomy-of-fear\">GitHub</a>. Industry context: Stephen Follows' <a href=\"https://stephenfollows.com/p/the-horror-movie-report\">Horror Movie Report</a>.",
+    "es": "Dataset base de Tanya Shapiro (TidyTuesday 2022). Este producto usa la API de TMDB pero no está respaldado ni certificado por TMDB. Código y datos completos en <a href=\"https://github.com/juanpduque/anatomy-of-fear\">GitHub</a>. Contexto de industria: el <a href=\"https://stephenfollows.com/p/the-horror-movie-report\">Horror Movie Report</a> de Stephen Follows."
+  },
+  {
+    "id": "aria_about_data",
+    "aria_en": "About the data",
+    "aria_es": "Sobre los datos",
+    "en": "About the data",
+    "es": "Sobre los datos"
   },
   {
     "id": "footer_tagline",
