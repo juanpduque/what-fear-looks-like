@@ -22,7 +22,7 @@
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --bg:#0a0a0c; --bg2:#111114; --ink:#e8e4da; --ink-dim:#9a958a;
+  --bg:#07080b; --bg2:#101218; --ink:#e8e4da; --ink-dim:#9a958a;
   --blood:#c1121f; --amber:#e5a00d; --line:#2a2a30;
   --serif:'Source Serif 4',Georgia,serif;
   --display:'Anton','Arial Narrow',Impact,sans-serif;
@@ -30,73 +30,21 @@
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth}
-body{background:var(--bg);color:var(--ink);font-family:var(--serif);font-size:19px;line-height:1.65;overflow-x:hidden;transition:background .4s linear}
+body{
+  background-color:var(--bg);
+  background-image:radial-gradient(ellipse 100% 85% at 50% 45%, #12161e 0%, #07080b 60%, #030408 100%);
+  color:var(--ink);font-family:var(--serif);font-size:19px;line-height:1.65;overflow-x:hidden;
+}
 ::selection{background:var(--blood);color:#fff}
 
-/* Background modes — toggle via html[data-bg]
-   paper | grain | crt | flat  (trial: pick one textured mode later) */
-html[data-bg="paper"]{
-  --bg:#14110e; --bg2:#1a1713;
-}
-html[data-bg="paper"] body{
-  background-color:var(--bg);
-  background-image:
-    /* speckled grain */
-    radial-gradient(rgba(255,248,230,.14) .6px, transparent .7px),
-    radial-gradient(rgba(0,0,0,.45) .7px, transparent .8px),
-    /* pulp fiber / halftone lines */
-    repeating-linear-gradient(0deg, transparent 0 2px, rgba(232,228,218,.055) 2px 3px),
-    repeating-linear-gradient(90deg, transparent 0 3px, rgba(193,18,31,.04) 3px 4px),
-    /* warm stock wash + edge falloff */
-    radial-gradient(ellipse 110% 90% at 50% 35%, #1c1814 0%, #100e0c 55%, #080706 100%);
-  background-size:3px 3px, 5px 5px, auto, auto, auto;
-  background-position:0 0, 1.5px 2px, 0 0, 0 0, 0 0;
-}
-html[data-bg="paper"] body::before{
-  content:""; position:fixed; inset:0; pointer-events:none; z-index:0;
-  opacity:.22;
-  background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 200 200' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.9' numOctaves='3' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.55'/%3E%3C/svg%3E");
-  background-size:160px 160px;
-  mix-blend-mode:overlay;
-}
-
-/* Film grain — coarse projection noise OVER the page (sections are opaque) */
-html[data-bg="grain"]{
-  --bg:#0b0b0d; --bg2:#141418;
-}
-html[data-bg="grain"] body{
-  background-color:var(--bg);
-  background-image:
-    radial-gradient(ellipse 120% 100% at 50% 40%, #18181c 0%, #0b0b0d 55%, #040405 100%);
-}
-html[data-bg="grain"] body::before{
-  content:""; position:fixed; inset:0; pointer-events:none; z-index:40;
-  opacity:.55;
-  background-image:
-    url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='g'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23g)'/%3E%3C/svg%3E"),
-    radial-gradient(ellipse 90% 80% at 50% 50%, transparent 40%, rgba(0,0,0,.55) 100%);
-  background-size:180px 180px, auto;
-  mix-blend-mode:overlay;
-}
-
-/* CRT — page stays clean for charts/images; scanlines only on section titles */
-html[data-bg="crt"]{
-  --bg:#07080b; --bg2:#101218;
-}
-html[data-bg="crt"] body{
-  background-color:var(--bg);
-  background-image:
-    radial-gradient(ellipse 100% 85% at 50% 45%, #12161e 0%, #07080b 60%, #030408 100%);
-}
-html[data-bg="crt"] body::before{content:none;display:none}
-/* Local CRT over display titles only (not posters, SVGs, or specimen grids) */
-html[data-bg="crt"] .section-title,
-html[data-bg="crt"] .hero h1{
+/* CRT scanlines on display titles only — charts/posters stay clean */
+.section-title,
+.hero h1{
   position:relative;
   isolation:isolate;
 }
-html[data-bg="crt"] .section-title::after,
-html[data-bg="crt"] .hero h1::after{
+.section-title::after,
+.hero h1::after{
   content:"";
   position:absolute;
   inset:-0.08em -0.05em;
@@ -114,31 +62,14 @@ html[data-bg="crt"] .hero h1::after{
     linear-gradient(90deg, rgba(193,18,31,.1), transparent 30%, transparent 70%, rgba(70,140,200,.08));
   mix-blend-mode:multiply;
 }
-html[data-bg="crt"] .kicker{
-  text-shadow:0 0 10px rgba(193,18,31,.25);
-}
-
-html[data-bg="flat"]{
-  --bg:#0a0a0c; --bg2:#111114;
-}
-html[data-bg="flat"] body{
-  background-color:var(--bg);
-  background-image:none;
-}
-html[data-bg="flat"] body::before{content:none;display:none}
-
-/* Paper / grain: paper stays behind content; grain overlays the page */
-html[data-bg="paper"] body > *:not(.site-chrome):not(.skip-link){position:relative;z-index:1}
-html[data-bg="grain"] .site-chrome{z-index:90}
+.kicker{text-shadow:0 0 10px rgba(193,18,31,.25)}
 @media (prefers-reduced-transparency: reduce){
-  html[data-bg="paper"] body::before{opacity:.1}
-  html[data-bg="grain"] body::before{opacity:.2}
-  html[data-bg="crt"] .section-title::after,
-  html[data-bg="crt"] .hero h1::after{opacity:.35}
+  .section-title::after,
+  .hero h1::after{opacity:.35}
 }
 @media (prefers-reduced-motion: reduce){
-  html[data-bg="crt"] .section-title::after,
-  html[data-bg="crt"] .hero h1::after{
+  .section-title::after,
+  .hero h1::after{
     background-image:repeating-linear-gradient(0deg, rgba(0,0,0,0) 0 2px, rgba(0,0,0,.4) 2px 3px);
   }
 }
@@ -158,7 +89,8 @@ html[data-bg="grain"] .site-chrome{z-index:90}
 /* ---------- generic ---------- */
 .prose{max-width:640px;margin:0 auto;padding:0 24px}
 .prose p{margin:0 0 1.4em}
-.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.25em;text-transform:uppercase;color:var(--blood)}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.25em;text-transform:uppercase;color:var(--blood);
+  text-shadow:0 0 10px rgba(193,18,31,.25)}
 h2.section-title{font-family:var(--display);font-size:clamp(38px,6vw,72px);line-height:.95;text-transform:uppercase;letter-spacing:.01em;margin:.4em 0 .6em}
 .note{font-family:var(--mono);font-size:12px;color:var(--ink-dim)}
 .reveal{opacity:0;transform:translateY(26px);transition:opacity .8s ease,transform .8s ease}
@@ -618,20 +550,20 @@ footer .logo span{color:var(--blood)}
     backdrop-filter:blur(4px);box-shadow:0 12px 40px rgba(0,0,0,.6)}
 }
 
-/* ---------- site chrome (lang + background) ---------- */
+/* ---------- site chrome (language) ---------- */
 .site-chrome{position:fixed;top:14px;right:14px;z-index:90;display:flex;flex-direction:column;
   gap:8px;align-items:flex-end}
-.lang-switch,.bg-switch{display:flex;gap:0;
+.lang-switch{display:flex;gap:0;
   font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;
   border:1px solid rgba(232,228,218,.28);border-radius:2px;overflow:hidden;
   background:rgba(10,10,12,.72);backdrop-filter:blur(8px)}
-.lang-switch button,.bg-switch button{appearance:none;border:0;background:transparent;color:var(--ink-dim);
+.lang-switch button{appearance:none;border:0;background:transparent;color:var(--ink-dim);
   padding:8px 11px;cursor:pointer;font:inherit;letter-spacing:inherit;text-transform:inherit}
-.lang-switch button.is-active,.bg-switch button.is-active{background:var(--blood);color:#fff}
-.lang-switch button:hover,.bg-switch button:hover{color:var(--ink)}
-@media(max-width:520px){.site-chrome{top:10px;right:10px;gap:6px;flex-wrap:wrap;justify-content:flex-end;max-width:calc(100vw - 20px)}
-  .lang-switch,.bg-switch{font-size:10px}
-  .lang-switch button,.bg-switch button{padding:6px 7px}}
+.lang-switch button.is-active{background:var(--blood);color:#fff}
+.lang-switch button:hover{color:var(--ink)}
+@media(max-width:520px){.site-chrome{top:10px;right:10px}
+  .lang-switch{font-size:10px}
+  .lang-switch button{padding:7px 9px}}
 </style>
 <script>
 (function(){
@@ -641,12 +573,6 @@ footer .logo span{color:var(--blood)}
   var nav=(navigator.language||'en').toLowerCase();
   var lang=(langQ==='es'||langQ==='en')?langQ:(s==='es'||s==='en')?s:(nav.indexOf('es')===0?'es':'en');
   document.documentElement.lang=lang;
-  /* bg: paper | grain | crt | flat. ?bg= overrides localStorage */
-  var bgQ=q.get('bg');
-  var bgS=localStorage.getItem('aof-bg');
-  var ok={paper:1,grain:1,crt:1,flat:1};
-  var bg=ok[bgQ]?bgQ:(ok[bgS]?bgS:'paper');
-  document.documentElement.setAttribute('data-bg', bg);
 })();
 </script>
 </head>
@@ -657,12 +583,6 @@ footer .logo span{color:var(--blood)}
   <nav class="lang-switch" aria-label="Language">
     <button type="button" data-lang-btn="en" aria-pressed="true">EN</button>
     <button type="button" data-lang-btn="es" aria-pressed="false">ES</button>
-  </nav>
-  <nav class="bg-switch" aria-label="Background">
-    <button type="button" data-bg-btn="paper" aria-pressed="true">Paper</button>
-    <button type="button" data-bg-btn="grain" aria-pressed="false">Grain</button>
-    <button type="button" data-bg-btn="crt" aria-pressed="false">CRT</button>
-    <button type="button" data-bg-btn="flat" aria-pressed="false">Flat</button>
   </nav>
 </div>
 

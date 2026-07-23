@@ -85,32 +85,6 @@
   const early=initialLang();
   document.documentElement.lang=early;
 
-  const BG_STORAGE='aof-bg';
-  const BG_OK={paper:1,grain:1,crt:1,flat:1};
-  const BG_LABEL={
-    en:{paper:'Paper',grain:'Grain',crt:'CRT',flat:'Flat'},
-    es:{paper:'Papel',grain:'Grain',crt:'CRT',flat:'Plano'}
-  };
-  function syncBgButtons(){
-    const bg=document.documentElement.getAttribute('data-bg')||'paper';
-    document.querySelectorAll('[data-bg-btn]').forEach(btn=>{
-      const on=btn.getAttribute('data-bg-btn')===bg;
-      btn.setAttribute('aria-pressed', on?'true':'false');
-      btn.classList.toggle('is-active', on);
-    });
-  }
-  window.AOF_setBg=function(bg, {persist=true, updateUrl=true}={}){
-    if(!BG_OK[bg]) bg='paper';
-    document.documentElement.setAttribute('data-bg', bg);
-    if(persist) localStorage.setItem(BG_STORAGE, bg);
-    if(updateUrl){
-      const u=new URL(location.href);
-      u.searchParams.set('bg', bg);
-      history.replaceState(null,'',u);
-    }
-    syncBgButtons();
-  };
-
   function bindToggle(){
     document.querySelectorAll('[data-lang-btn]').forEach(btn=>{
       btn.addEventListener('click',()=>{
@@ -121,20 +95,6 @@
         location.href=u.toString();
       });
     });
-    document.querySelectorAll('[data-bg-btn]').forEach(btn=>{
-      btn.addEventListener('click',()=>{
-        AOF_setBg(btn.getAttribute('data-bg-btn'));
-      });
-    });
-    const lang=document.documentElement.lang||'en';
-    const labels=BG_LABEL[lang]||BG_LABEL.en;
-    document.querySelectorAll('[data-bg-btn]').forEach(b=>{
-      const key=b.getAttribute('data-bg-btn');
-      if(labels[key]) b.textContent=labels[key];
-    });
-    const nav=document.querySelector('.bg-switch');
-    if(nav) nav.setAttribute('aria-label', lang==='es'?'Fondo':'Background');
-    syncBgButtons();
   }
 
   if(document.readyState==='loading'){
