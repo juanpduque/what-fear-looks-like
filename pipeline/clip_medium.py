@@ -64,6 +64,13 @@ def main():
         t_painted /= t_painted.norm(); t_photo /= t_photo.norm()
 
     meta = pd.read_csv(DATA / "posters.csv", usecols=["id", "year", "title"])
+    prev = pd.DataFrame()
+    med_path = DATA / "medium.csv"
+    if med_path.exists() and not args.n:
+        prev = pd.read_csv(med_path)
+        done = set(prev["id"].astype(int))
+        meta = meta[~meta.id.isin(done)].copy()
+        print(f"resumiendo medium: {len(done):,} done, {len(meta):,} pending")
     if args.n:
         meta = meta.groupby(meta.year // 10 * 10, group_keys=False).apply(
             lambda g: g.sample(min(len(g), args.n // 8), random_state=42))
@@ -98,11 +105,20 @@ def main():
     flush()
 
     d = pd.DataFrame(rows)
-    d["painted"] = (d.p_painted > 0.5).astype(int)
-    d.to_csv(DATA / "medium.csv", index=False)
+    if len(d):
+        d["painted"] = (d.p_painted > 0.5).astype(int)
+        if len(prev):
+            d = pd.concat([prev, d], ignore_index=True).drop_duplicates("id", keep="last")
+        d.to_csv(DATA / "medium.csv", index=False)
+    elif len(prev):
+        d = prev
+        print("nothing new for medium")
+    else:
+        raise SystemExit("no medium rows")
 
-    yearly = d.groupby("year").agg(n=("id", "count"),
-                                   pct_painted=("painted", "mean")).round(4)
+    yearly = (d[(d.year >= 1897) & (d.year <= 2030)]
+                .groupby("year").agg(n=("id", "count"),
+                                   pct_painted=("painted", "mean")).round(4))
     yearly.reset_index().to_json(DATA / "medium_yearly.json", orient="records")
 
     roll = yearly.pct_painted.rolling(5, min_periods=3, center=True).mean()

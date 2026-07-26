@@ -164,7 +164,7 @@ def main():
     payload = json.dumps(lookup, ensure_ascii=False, separators=(",", ":"))
     OUT.write_text(
         f"/* Per-poster analysis lookup n={len(lookup)} - pipeline/build_lookup.py */\n"
-        f"const LOOKUP={payload};\n",
+        f"window.LOOKUP={payload};\n",
         encoding="utf-8",
     )
     print(f"Wrote {OUT} ({len(lookup)} posters, {OUT.stat().st_size/1e6:.1f} MB)")

@@ -1,0 +1,114 @@
+{
+  "n": 5000,
+  "hits": 4075,
+  "hit_rate": 0.815,
+  "mean_match": 0.8919,
+  "any_ocr_text": 4814,
+  "errors": 0,
+  "cost_usd_est": 6.0,
+  "by_decade": [
+    {
+      "decade": 1890,
+      "n": 7,
+      "hit_rate": 0.571,
+      "mean_match": 0.417,
+      "mean_tokens": 3.429
+    },
+    {
+      "decade": 1900,
+      "n": 10,
+      "hit_rate": 0.9,
+      "mean_match": 0.807,
+      "mean_tokens": 6.5
+    },
+    {
+      "decade": 1910,
+      "n": 54,
+      "hit_rate": 0.796,
+      "mean_match": 0.747,
+      "mean_tokens": 27.333
+    },
+    {
+      "decade": 1920,
+      "n": 145,
+      "hit_rate": 0.71,
+      "mean_match": 0.783,
+      "mean_tokens": 19.414
+    },
+    {
+      "decade": 1930,
+      "n": 225,
+      "hit_rate": 0.698,
+      "mean_match": 0.794,
+      "mean_tokens": 17.996
+    },
+    {
+      "decade": 1940,
+      "n": 252,
+      "hit_rate": 0.663,
+      "mean_match": 0.781,
+      "mean_tokens": 14.524
+    },
+    {
+      "decade": 1950,
+      "n": 240,
+      "hit_rate": 0.767,
+      "mean_match": 0.932,
+      "mean_tokens": 12.042
+    },
+    {
+      "decade": 1960,
+      "n": 355,
+      "hit_rate": 0.803,
+      "mean_match": 0.906,
+      "mean_tokens": 13.983
+    },
+    {
+      "decade": 1970,
+      "n": 356,
+      "hit_rate": 0.801,
+      "mean_match": 0.904,
+      "mean_tokens": 10.202
+    },
+    {
+      "decade": 1980,
+      "n": 355,
+      "hit_rate": 0.752,
+      "mean_match": 0.893,
+      "mean_tokens": 11.397
+    },
+    {
+      "decade": 1990,
+      "n": 368,
+      "hit_rate": 0.823,
+      "mean_match": 0.913,
+      "mean_tokens": 14.601
+    },
+    {
+      "decade": 2000,
+      "n": 433,
+      "hit_rate": 0.848,
+      "mean_match": 0.912,
+      "mean_tokens": 17.626
+    },
+    {
+      "decade": 2010,
+      "n": 840,
+      "hit_rate": 0.857,
+      "mean_match": 0.902,
+      "mean_tokens": 18.346
+    },
+    {
+      "decade": 2020,
+      "n": 1360,
+      "hit_rate": 0.868,
+      "mean_match": 0.916,
+      "mean_tokens": 16.577
+    }
+  ],
+  "overlap_existing_attr_boxes": 437,
+  "vision_hit_attr_miss": 3638,
+  "attr_hit_vision_miss": 128,
+  "project": "playground-ia-502703",
+  "output": "title_boxes_vision_pilot.csv"
+}

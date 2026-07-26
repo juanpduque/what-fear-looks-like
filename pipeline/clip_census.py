@@ -137,8 +137,9 @@ def main():
         return
 
     df.to_csv(DATA / "census.csv", index=False)
-    df["decade"] = (df.year // 10) * 10
-    shares = (df.groupby(["decade", "label"]).size()
+    d_dec = df[(df.year >= 1897) & (df.year <= 2030)].copy()
+    d_dec["decade"] = (d_dec.year // 10) * 10
+    shares = (d_dec.groupby(["decade", "label"]).size()
                 .unstack(fill_value=0)
                 .pipe(lambda x: x.div(x.sum(1), axis=0)).round(4))
     shares.reset_index().to_json(DATA / "census_decade.json", orient="records")
@@ -147,7 +148,7 @@ def main():
         top3 = row.nlargest(3)
         print(f"{dec}: " + " · ".join(f"{l} {v*100:.1f}%" for l, v in top3.items()))
     print("\n=== % con criatura / % con animal ===")
-    agg = df.groupby("decade").agg(creature=("is_creature", "mean"),
+    agg = d_dec.groupby("decade").agg(creature=("is_creature", "mean"),
                                    animal=("is_animal", "mean")).round(3)
     print(agg.to_string())
 

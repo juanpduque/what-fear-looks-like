@@ -9,13 +9,16 @@ Usage:
   TMDB_API_KEY=... python3 enrich_imdb_ids.py
   python3 enrich_imdb_ids.py --api-key YOUR_KEY
   python3 enrich_imdb_ids.py --corpus-only   # only ids in posters.csv
+  python3 enrich_imdb_ids.py --corpus-only --workers 12 --recheck-empty
 """
 from __future__ import annotations
 
 import argparse
 import csv
 import os
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 import pandas as pd
@@ -65,7 +68,11 @@ def fetch_imdb_id(session: requests.Session, api_key: str, pid: int) -> str | No
     url = EXT_URL.format(pid=pid)
     kwargs = auth_kwargs(api_key)
     for attempt in range(6):
-        r = session.get(url, timeout=30, **kwargs)
+        try:
+            r = session.get(url, timeout=30, **kwargs)
+        except requests.RequestException:
+            time.sleep(1 + attempt)
+            continue
         if r.status_code == 429:
             time.sleep(2 + attempt * 2)
             continue
@@ -77,27 +84,59 @@ def fetch_imdb_id(session: requests.Session, api_key: str, pid: int) -> str | No
                 "(v3 api_key or v4 Bearer token)."
             )
         if not r.ok:
-            raise SystemExit(f"TMDB HTTP {r.status_code} for movie/{pid}/external_ids")
+            time.sleep(1 + attempt)
+            continue
         imdb = (r.json().get("imdb_id") or "").strip()
         return imdb
     return None
 
 
+def load_ids(path: Path) -> list[int]:
+    out, seen = [], set()
+    with path.open(encoding="utf-8", errors="replace") as f:
+        for r in csv.DictReader(f):
+            try:
+                pid = int(r["id"])
+            except (KeyError, ValueError, TypeError):
+                continue
+            if pid not in seen:
+                seen.add(pid)
+                out.append(pid)
+    return out
+
+
 def merge_into_horror_movies(mapping: dict[int, str]) -> None:
+    """Rewrite HM with a refreshed imdb_id column.
+
+    Streamed with the csv module: HM holds free-text fields that break pandas'
+    C parser, and a row-wise round-trip preserves them untouched.
+    """
     if not HM.exists():
         raise SystemExit(f"missing {HM}")
-    df = pd.read_csv(HM, low_memory=False)
-    df["id"] = df["id"].astype(int)
-    df["imdb_id"] = df["id"].map(lambda x: mapping.get(int(x), ""))
-    # keep imdb_id near id
-    cols = list(df.columns)
-    cols.remove("imdb_id")
-    id_i = cols.index("id")
-    cols.insert(id_i + 1, "imdb_id")
-    df = df[cols]
-    df.to_csv(HM, index=False)
-    with_id = int((df["imdb_id"].astype(str).str.startswith("tt")).sum())
-    print(f"horror_movies.csv → {len(df):,} rows, {with_id:,} with imdb_id")
+    with HM.open(encoding="utf-8", errors="replace", newline="") as f:
+        reader = csv.DictReader(f)
+        fields = list(reader.fieldnames or [])
+        if "id" not in fields:
+            raise SystemExit(f"{HM} has no id column")
+        if "imdb_id" not in fields:
+            fields.insert(fields.index("id") + 1, "imdb_id")
+        tmp = HM.with_suffix(".csv.tmp")
+        rows = with_id = 0
+        with tmp.open("w", encoding="utf-8", newline="") as out:
+            w = csv.DictWriter(out, fieldnames=fields, extrasaction="ignore")
+            w.writeheader()
+            for r in reader:
+                try:
+                    pid = int(r["id"])
+                except (TypeError, ValueError):
+                    continue
+                imdb = mapping.get(pid, "") or (r.get("imdb_id") or "")
+                r["imdb_id"] = imdb
+                w.writerow(r)
+                rows += 1
+                with_id += imdb.startswith("tt")
+    tmp.replace(HM)
+    print(f"horror_movies.csv → {rows:,} rows, {with_id:,} with imdb_id")
 
 
 def main() -> None:
@@ -105,10 +144,17 @@ def main() -> None:
     ap.add_argument("--api-key", default=os.environ.get("TMDB_API_KEY"))
     ap.add_argument("--delay", type=float, default=0.04)
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument("--workers", type=int, default=1)
     ap.add_argument(
         "--corpus-only",
         action="store_true",
-        help="only enrich ids present in posters.csv",
+        help="only enrich ids present in posters.csv (the analyzed corpus)",
+    )
+    ap.add_argument("--ids", default="", help="CSV with an id column; overrides source")
+    ap.add_argument(
+        "--recheck-empty",
+        action="store_true",
+        help="re-probe ids the sidecar already recorded as having no IMDb id",
     )
     ap.add_argument(
         "--merge-only",
@@ -133,24 +179,36 @@ def main() -> None:
     if not HM.exists():
         raise SystemExit(f"missing {HM}")
 
-    ids = [int(r["id"]) for r in csv.DictReader(HM.open(encoding="utf-8"))]
-    if args.corpus_only:
+    if args.ids:
+        ids = load_ids(Path(args.ids))
+        print(f"ids from {args.ids}: {len(ids):,}")
+    elif args.corpus_only:
+        # posters.csv is the analyzed corpus; horror_movies.csv only covers part of it
         if not POSTERS.exists():
             raise SystemExit(f"missing {POSTERS}")
-        corpus = {int(r["id"]) for r in csv.DictReader(POSTERS.open())}
-        ids = [i for i in ids if i in corpus]
+        ids = load_ids(POSTERS)
         print(f"corpus-only: {len(ids):,} ids")
+    else:
+        ids = load_ids(HM)
 
     mapping = load_sidecar()
     # also treat existing HM imdb_id hits as done
     hm_cols = pd.read_csv(HM, nrows=0).columns.tolist()
     if "imdb_id" in hm_cols:
-        for r in csv.DictReader(HM.open(encoding="utf-8")):
-            imdb = (r.get("imdb_id") or "").strip()
-            if imdb.startswith("tt"):
-                mapping[int(r["id"])] = imdb
+        with HM.open(encoding="utf-8", errors="replace") as f:
+            for r in csv.DictReader(f):
+                imdb = (r.get("imdb_id") or "").strip()
+                if not imdb.startswith("tt"):
+                    continue
+                try:
+                    mapping[int(r["id"])] = imdb
+                except (TypeError, ValueError):
+                    continue
 
-    todo = [i for i in ids if i not in mapping]
+    if args.recheck_empty:
+        todo = [i for i in ids if not str(mapping.get(i, "")).startswith("tt")]
+    else:
+        todo = [i for i in ids if i not in mapping]
     if args.limit:
         todo = todo[: args.limit]
     print(f"already have: {len(mapping):,}  to fetch: {len(todo):,}")
@@ -160,25 +218,39 @@ def main() -> None:
         merge_into_horror_movies(mapping)
         return
 
+    workers = max(1, args.workers)
     session = requests.Session()
+    adapter = requests.adapters.HTTPAdapter(
+        pool_connections=workers, pool_maxsize=workers
+    )
+    session.mount("https://", adapter)
     t0 = time.time()
     fetched = 0
     with_tt = sum(1 for v in mapping.values() if str(v).startswith("tt"))
+    lock = threading.Lock()
 
-    for i, pid in enumerate(todo, 1):
+    def work(pid: int) -> tuple[int, str]:
         imdb = fetch_imdb_id(session, args.api_key, pid)
-        mapping[pid] = imdb or ""
-        fetched += 1
-        if mapping[pid].startswith("tt"):
-            with_tt += 1
-        if fetched % 100 == 0 or i == len(todo):
-            rate = fetched / max(time.time() - t0, 1e-6)
-            print(
-                f"{i}/{len(todo)} fetched={fetched} with_tt={with_tt} {rate:.1f}/s",
-                flush=True,
-            )
-            write_sidecar(mapping)
-        time.sleep(args.delay)
+        if args.delay:
+            time.sleep(args.delay)
+        return pid, imdb or ""
+
+    with ThreadPoolExecutor(max_workers=workers) as ex:
+        futs = [ex.submit(work, pid) for pid in todo]
+        for fut in as_completed(futs):
+            pid, imdb = fut.result()
+            with lock:
+                mapping[pid] = imdb
+                fetched += 1
+                if imdb.startswith("tt"):
+                    with_tt += 1
+                if fetched % 200 == 0 or fetched == len(todo):
+                    rate = fetched / max(time.time() - t0, 1e-6)
+                    print(
+                        f"{fetched}/{len(todo)} with_tt={with_tt} {rate:.1f}/s",
+                        flush=True,
+                    )
+                    write_sidecar(mapping)
 
     write_sidecar(mapping)
     # if --limit, still merge whatever we have for those rows
