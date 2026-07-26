@@ -45,9 +45,14 @@ def main():
     if PARTIAL.exists():
         z = np.load(PARTIAL)
         ids_done, vecs = list(z["ids"]), list(z["vecs"])
-        print(f"resumiendo: {len(ids_done):,} ya embebidos")
-    done = set(ids_done)
+        print(f"resumiendo partial: {len(ids_done):,} ya embebidos")
+    elif OUT.exists():
+        z = np.load(OUT)
+        ids_done, vecs = list(z["ids"]), list(z["vecs"])
+        print(f"sembrando desde {OUT.name}: {len(ids_done):,} ya embebidos")
+    done = set(int(x) for x in ids_done)
     todo = meta[~meta.id.isin(done)]
+    print(f"pending embed: {len(todo):,}")
 
     t0, imgs, batch_ids, n0 = time.time(), [], [], len(ids_done)
     def flush():

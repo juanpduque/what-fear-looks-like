@@ -83,8 +83,10 @@ def detect(det, path):
 def finalize(d: pd.DataFrame):
     d = d.drop_duplicates("id")
     d.to_csv(DATA / "faces_v2.csv", index=False)
-    d["decade"] = (d.year // 10) * 10
-    agg = d.groupby("decade").agg(
+    y = d.year.astype(int)
+    d_dec = d[(y >= 1897) & (y <= 2030)].copy()
+    d_dec["decade"] = (d_dec.year // 10) * 10
+    agg = d_dec.groupby("decade").agg(
         n=("id", "count"),
         mean_faces=("n_faces", "mean"),
         pct_with_face=("n_faces", lambda s: (s > 0).mean()),

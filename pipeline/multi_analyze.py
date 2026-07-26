@@ -289,6 +289,8 @@ def main():
     needed_cols = sorted({c for k in fns for c in METRIC_COLS[k]})
 
     meta = pd.read_csv(DATA / "posters.csv", usecols=["id", "year"])
+    meta["id"] = meta["id"].astype(int)
+    meta["year"] = meta["year"].astype(int)
     if args.sample:
         meta = meta.groupby(meta.year // 10 * 10, group_keys=False).apply(
             lambda g: g.sample(min(len(g), max(1, args.sample // 8)), random_state=42))
@@ -303,53 +305,98 @@ def main():
     done = set()
     if CHECKPOINT.exists():
         existing = pd.read_csv(CHECKPOINT)
+        existing["id"] = existing["id"].astype(int)
         if all(c in existing.columns for c in needed_cols):
-            done = set(existing.loc[existing[needed_cols].notna().all(axis=1), "id"])
+            done = set(existing.loc[existing[needed_cols].notna().all(axis=1), "id"].astype(int))
     todo = meta[~meta.id.isin(done)]
-    print(f"pending: {len(todo):,} / {len(meta):,}")
+    print(f"pending: {len(todo):,} / {len(meta):,}", flush=True)
 
-    t0, rows = time.time(), []
-    for pid, yr in zip(todo.id, todo.year):
-        if args.budget and time.time() - t0 > args.budget:
+    t_start = time.time()
+    t_batch, rows = t_start, []
+    n_miss = n_fail = 0
+    fail_examples = []
+    for pid, yr in zip(todo.id.tolist(), todo.year.tolist()):
+        if args.budget and time.time() - t_start > args.budget:
             break
+        pid = int(pid)
+        yr = int(yr)
         f = DATA / "posters" / f"{pid}.jpg"
         if not f.exists():
+            n_miss += 1
             continue
         try:
             bgr = cv2.imread(str(f))
+            if bgr is None:
+                raise RuntimeError("cv2.imread returned None")
             h, w = bgr.shape[:2]
             s = ANALYSIS_WIDTH / w
             bgr = cv2.resize(bgr, (ANALYSIS_WIDTH, int(h * s)))
             gray = cv2.cvtColor(bgr, cv2.COLOR_BGR2GRAY)
-            row = dict(id=pid, year=int(yr))
+            row = dict(id=pid, year=yr)
             for fn in fns.values():
                 row.update(fn(bgr, gray))
             rows.append(row)
-        except Exception:
+        except Exception as e:
+            n_fail += 1
+            if len(fail_examples) < 8:
+                fail_examples.append(f"{pid}: {type(e).__name__}: {e}")
             continue
+        # periodic checkpoint so a long run is resumable
+        if len(rows) >= 250:
+            new_df = pd.DataFrame(rows).set_index("id")
+            if CHECKPOINT.exists():
+                merged = pd.read_csv(CHECKPOINT)
+                merged["id"] = merged["id"].astype(int)
+                merged = merged.set_index("id")
+                for c in new_df.columns:
+                    if c not in merged.columns:
+                        merged[c] = np.nan
+                merged.update(new_df)
+                new_ids = new_df.loc[~new_df.index.isin(merged.index)]
+                merged = pd.concat([merged, new_ids]) if len(new_ids) else merged
+            else:
+                merged = new_df
+            merged.reset_index().to_csv(CHECKPOINT, index=False)
+            done |= set(new_df.index.astype(int))
+            rate = len(rows) / max(time.time() - t_batch, 1e-9)
+            print(f"  checkpoint +{len(rows):,} ({len(done):,}/{len(meta):,}) {rate:.0f}/s",
+                  flush=True)
+            rows = []
+            t_batch = time.time()
     if rows:
         new_df = pd.DataFrame(rows).set_index("id")
         if CHECKPOINT.exists():
-            merged = pd.read_csv(CHECKPOINT).set_index("id")
+            merged = pd.read_csv(CHECKPOINT)
+            merged["id"] = merged["id"].astype(int)
+            merged = merged.set_index("id")
             for c in new_df.columns:
                 if c not in merged.columns:
                     merged[c] = np.nan
-            merged.update(new_df)  # overwrite/add columns for overlapping ids
+            merged.update(new_df)
             new_ids = new_df.loc[~new_df.index.isin(merged.index)]
             merged = pd.concat([merged, new_ids]) if len(new_ids) else merged
         else:
             merged = new_df
         merged.reset_index().to_csv(CHECKPOINT, index=False)
-    total = len(done) + len(rows)
-    rate = len(rows) / max(time.time() - t0, 1e-9)
-    print(f"batch: {len(rows):,} | total: {total:,}/{len(meta):,} | {rate:.0f}/s")
+        done |= set(new_df.index.astype(int))
+    if n_miss or n_fail:
+        print(f"skipped miss={n_miss} fail={n_fail}", flush=True)
+        for line in fail_examples:
+            print(f"  {line}", flush=True)
+    covered = 0
+    if CHECKPOINT.exists():
+        covered = pd.read_csv(CHECKPOINT)["id"].nunique()
+    print(f"checkpoint covers {covered:,}/{len(meta):,}", flush=True)
 
-    if total >= len(meta) or (args.sample and total >= len(meta)):
+    if covered >= len(meta) or (args.sample and covered >= len(meta)):
         d = pd.read_csv(CHECKPOINT).drop_duplicates("id")
+        d["id"] = d["id"].astype(int)
         # Merge into the published table so --metrics typography (etc.) never
         # wipes composition/grid/aesthetic/diagonal columns that already exist.
         if final_path.exists():
-            prev = pd.read_csv(final_path).set_index("id")
+            prev = pd.read_csv(final_path)
+            prev["id"] = prev["id"].astype(int)
+            prev = prev.set_index("id")
             d_idx = d.set_index("id")
             for c in d_idx.columns:
                 if c not in prev.columns:
@@ -360,22 +407,27 @@ def main():
                 prev = pd.concat([prev, new_ids])
             d = prev.reset_index()
         d.to_csv(final_path, index=False)
-        d["decade"] = (d.year // 10) * 10
-        cols = [c for c in d.columns if c not in ("id", "year", "decade")]
+        # year=9999 = undated (kept in per-poster table; excluded from decade trends)
+        y = d.year.astype(int)
+        d_dec = d[(y >= 1897) & (y <= 2030)].copy()
+        d_dec["decade"] = (d_dec.year // 10) * 10
+        cols = [c for c in d_dec.columns if c not in ("id", "year", "decade")]
         # -1.0 is a per-column "computation failed" sentinel for a subset of
         # metrics (e.g. harmony on near-monochrome posters) -- mask only
         # those columns to NaN before averaging. Metrics that are legitimately
         # signed (pyramid_shift) or non-negative-by-construction (n_blocks,
         # diagonal_score) must NOT be blanket-filtered on "value >= 0".
         SENTINEL_COLS = {"align_score", "thirds_dist", "balance", "harmony"}
-        masked = d[cols].copy()
+        masked = d_dec[cols].copy()
         for c in SENTINEL_COLS & set(cols):
             masked[c] = masked[c].where(masked[c] >= 0)
-        agg = masked.groupby(d["decade"])[cols].mean().round(4)
-        agg["n"] = d.groupby("decade").size()
+        agg = masked.groupby(d_dec["decade"])[cols].mean().round(4)
+        agg["n"] = d_dec.groupby("decade").size()
         agg.reset_index().to_json(DATA / "attributes_decade.json", orient="records")
         print("\n=== BY DECADE ===")
         print(agg.to_string())
-
+        print(f"wrote {final_path} ({len(d)} rows)", flush=True)
+    else:
+        print(f"not finalizing yet — need {len(meta) - covered} more", flush=True)
 if __name__ == "__main__":
     main()

@@ -25,8 +25,8 @@ DECADES = [
     "1920s", "1930s", "1940s", "1950s", "1960s", "1970s",
     "1980s", "1990s", "2000s", "2010s", "2020s",
 ]
-ROLL_YEARS = list(range(1925, 2021, 5)) + [2022]
-DIAG_YEARS = list(range(1925, 2021, 5))  # historico del chart: sin 2022
+ROLL_YEARS = list(range(1925, 2021, 5)) + [2022, 2025, 2026]
+DIAG_YEARS = list(range(1925, 2021, 5)) + [2025, 2026]
 CENSUS_KEYS = {
     "giant monster": "giant_monster",
     "vampire": "vampire",
@@ -47,7 +47,10 @@ def _load_json(name: str):
 def _yearly_mean(rows, year_key, val_fn):
     buckets: dict[int, list[float]] = defaultdict(list)
     for r in rows:
-        buckets[int(float(r[year_key]))].append(val_fn(r))
+        y = int(float(r[year_key]))
+        if y < 1897 or y > 2030:  # skip undated sentinel (9999)
+            continue
+        buckets[y].append(val_fn(r))
     return {y: sum(v) / len(v) for y, v in buckets.items()}
 
 

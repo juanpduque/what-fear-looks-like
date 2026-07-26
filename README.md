@@ -3,7 +3,7 @@
 **100 years of horror movie posters, one pixel at a time.**
 A data-driven visual essay by [Pulp Analytics](https://medium.com/pulp-analytics), in the style of [The Pudding](https://pudding.cool).
 
-We analyze **18,716** horror movie posters (1920–2022) to measure how the way we sell fear has changed: color (the Darkness Curve, the Rise of Red, the Color River), faces, monsters, medium (painted vs. photographic), typography, composition/layout, aesthetics, and material/scene makeup. From the full TMDB horror corpus we exclude titles genre-tagged `Animation` and `Music`, and films whose TMDB `original_language` is not English (~8,907) — non-English poster lettering skewed typography/OCR. **TV Movies (telefilms) are kept** — they are single films made for television, not series, and still sell fear on a one-sheet. Lists in `pipeline/data/excluded_*.csv`, applied via `python3 apply_exclusions.py`.
+We analyze **37,009** horror movie posters (1897–2028) to measure how the way we sell fear has changed: color (the Darkness Curve, the Rise of Red, the Color River), faces, monsters, medium (painted vs. photographic), typography, composition/layout, aesthetics, and material/scene makeup. From the full TMDB horror corpus we exclude titles genre-tagged `Animation` and `Music`, and films whose TMDB `original_language` is not English (~8,907) — non-English poster lettering skewed typography/OCR. **TV Movies (telefilms) are kept** — they are single films made for television, not series, and still sell fear on a one-sheet. Lists in `pipeline/data/excluded_*.csv`, applied via `python3 apply_exclusions.py`.
 
 ## Structure
 
@@ -30,7 +30,7 @@ python3 fear_pipeline.py                    # 1,000-poster validation sample
 python3 fear_pipeline.py --all              # full dataset (~28.7k before exclusions, ~1GB)
 # after a full run (or any metric recompute), drop Animation + Music + non-EN
 # and rebuild aggregates + site chart series:
-python3 apply_exclusions.py                 # uses data/excluded_*.csv → 18,716
+python3 apply_exclusions.py                 # uses data/excluded_*.csv → 37,009
 #                                     also writes ../site/data/series.js
 python3 fear_pipeline.py --refresh --api-key YOUR_TMDB_KEY   # add post-2022 films
 python3 fear_pipeline.py --backfill         # fill in 1920-1949 metadata

@@ -11,6 +11,33 @@ pipeline/models/*.pt
 
 # resumable-run checkpoints (not final outputs)
 pipeline/data/*_partial.csv
+pipeline/data/*_partial.npz
+pipeline/data/*_partial.json
+
+# staging / backups / transfer tarballs (local only)
+pipeline/data/_bak_*/
+pipeline/data/_*_stage/
+pipeline/data/_aws_pull/
+pipeline/data/posters_multi/
+pipeline/data/creature_detect_preview/
+pipeline/data/*.tar
+pipeline/data/*.tar.gz
+pipeline/data/*.bak
+pipeline/data/*_DONE
+pipeline/data/*.log
+pipeline/data/*.pid
+pipeline/data/*.iid
+pipeline/data/*.ip
+pipeline/data/_owl_instance_*.txt
+pipeline/data/_seg_miss_ids.txt
+pipeline/data/multi_poster_embeddings.npz
+pipeline/data/*_progress.csv
+pipeline/data/gap_*.csv
+pipeline/data/new_*_ids.csv
+pipeline/data/dryrun_*.csv
+pipeline/data/creature_detect_*
+pipeline/data/label_qa_*.csv
+pipeline/data/tv_movie_review.csv
 
 # keep the small outputs
 !pipeline/data/yearly.json

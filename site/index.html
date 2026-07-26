@@ -4,19 +4,19 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>What Fear Looks Like — Pulp Analytics</title>
-<meta name="description" content="Horror didn't get scarier. It got quieter. A data analysis of 18,716 horror movie posters (1920–2022): color, darkness, faces, creatures.">
+<meta name="description" content="Horror didn't get scarier. It got quieter. A data analysis of 37,216 horror movie posters (1897–2028): color, darkness, faces, creatures.">
 <meta name="theme-color" content="#0a0a0c">
-<meta name="aof-build" content="20260723c">
+<meta name="aof-build" content="20260724b">
 <link rel="icon" type="image/png" href="assets/pa-mark.png">
 <link rel="apple-touch-icon" href="assets/pa-mark.png">
 <!-- Open Graph / Twitter — set og:image to assets/og-card.jpg (1200x630) before launch -->
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Pulp Analytics">
-<meta property="og:title" content="What Fear Looks Like: 18,716 horror posters, measured">
+<meta property="og:title" content="What Fear Looks Like: 37,216 horror posters, measured">
 <meta property="og:description" content="Horror didn't get scarier. It got quieter. A century of poster data from Pulp Analytics — darkness, faces, blood, and the shout that became a whisper.">
 <meta property="og:image" content="assets/og-card.jpg">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="What Fear Looks Like: 18,716 horror posters, measured">
+<meta name="twitter:title" content="What Fear Looks Like: 37,216 horror posters, measured">
 <meta name="twitter:description" content="Horror didn't get scarier. It got quieter. A century of poster data from Pulp Analytics — darkness, faces, blood, and the shout that became a whisper.">
 <meta name="twitter:image" content="assets/og-card.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -186,6 +186,7 @@ section{position:relative}
 .hero h1{font-family:var(--display);font-size:clamp(44px,12.5svh,120px);
   text-transform:uppercase;line-height:.92;letter-spacing:.01em;margin:0.8svh 0 0}
 .hero h1 .fear{color:var(--blood);animation:flicker 4s infinite}
+.section-title .fear{color:inherit;animation:flicker 4s infinite;animation-delay:var(--flicker-delay,0s)}
 @keyframes flicker{0%,93%,100%{opacity:1}94%{opacity:.4}95%{opacity:1}97%{opacity:.6}98%{opacity:1}}
 .hero .dek{max-width:560px;margin:2.4svh auto 0;font-size:clamp(15px,2.35svh,20px);
   line-height:1.45;color:var(--ink)}
@@ -313,7 +314,7 @@ section{position:relative}
   .reveal,.reveal.on{opacity:1;transform:none;transition:none}
   body{transition:none}
   .skip-link{transition:none}
-  .hero h1 .fear,.scroll-cue,.an-scan{animation:none}
+  .hero h1 .fear,.section-title .fear,.scroll-cue,.an-scan{animation:none}
   .an-scan{opacity:.7;top:42%}
   .diagonal-grid .compare-poster::after{animation:none;opacity:.55}
   .cg-svg line{animation:none;opacity:.95;stroke-width:2.2}
@@ -431,6 +432,12 @@ svg text{font-family:var(--mono)}
   linear-gradient(to top right,transparent calc(50% - 1px),rgba(193,18,31,.8) 50%,transparent calc(50% + 1px)),
   linear-gradient(to top left,transparent calc(50% - 1px),rgba(229,160,13,.7) 50%,transparent calc(50% + 1px))}
 .lk-facebox{position:absolute;border:2px dashed var(--amber);border-radius:2px;box-sizing:border-box;pointer-events:none}
+.lk-cbox{position:absolute;border:2px solid var(--blood);border-radius:2px;box-sizing:border-box;pointer-events:none;
+  box-shadow:0 0 0 1px rgba(0,0,0,.45)}
+.lk-cbox-lab{position:absolute;left:0;top:0;transform:translateY(calc(-100% - 2px));
+  font-family:var(--mono);font-size:10px;letter-spacing:.04em;white-space:nowrap;
+  background:rgba(10,10,12,.92);border:1px solid var(--blood);color:var(--blood);padding:2px 6px;border-radius:2px}
+.lk-cbox-lab.topish{transform:translateY(4px)}
 .lk-palfloat{position:absolute;left:50%;bottom:8%;transform:translateX(-50%);display:flex;gap:5px}
 .lk-palfloat span{width:22px;height:22px;border-radius:50%;border:1px solid rgba(255,255,255,.35);
   box-shadow:0 2px 8px rgba(0,0,0,.5)}
@@ -564,7 +571,7 @@ footer .logo span{color:var(--blood)}
     <a class="hero-brand" href="https://medium.com/pulp-analytics" aria-label="Pulp Analytics"><img src="assets/pulp-analytics-red.png" alt="Pulp Analytics"></a>
     <p class="kicker" data-i18n="hero_kicker">A Poster Analysis</p>
     <h1 data-i18n="hero_title">What <span class="fear">Fear</span><br>Looks Like</h1>
-    <p class="dek" data-i18n="hero_dek">Horror got quieter. We measured color, darkness, faces, and creatures across <strong>18,716 posters</strong> from 1920 to 2022.</p>
+    <p class="dek" data-i18n="hero_dek">Horror got quieter. We measured color, darkness, faces, and creatures across <strong>37,216 posters</strong> from 1897 to 2028.</p>
     <p class="byline" data-i18n="hero_byline">By <b>Juan Pablo Duque</b> · October 2026 · 9 min read</p>
     <a class="scroll-cue" href="#main" aria-label="Skip hero and begin reading" data-i18n="scroll_cue">SCROLL IF YOU DARE <span class="sc-arrow" aria-hidden="true">↓</span></a>
   </div>
@@ -581,7 +588,7 @@ footer .logo span{color:var(--blood)}
     <p class="reveal" data-i18n="intro_now">But now? The new sheets look quiet. Dark. Sometimes just black with one word. No faces. No colors. Nothing jumping out.</p>
     <p class="reveal" data-i18n="intro_fossils">I love horror films. I've watched them my whole life. I also love data — finding patterns in things.</p>
     <p class="reveal" data-i18n="intro_wonder">So I started wondering: when did horror stop shouting? Did the posters actually change, or is it just me? Because if they did, that meant something. It meant fear looked different now.</p>
-    <p class="reveal" data-i18n="intro_century">I decided to find out. I pulled <strong>18,716 horror posters</strong> — from 1920 all the way to 2022 — and I measured them. Colors. How dark they are. What's on them. Everything. What I found is weird. And it's going to change how you watch horror posters forever.</p>
+    <p class="reveal" data-i18n="intro_century">I decided to find out. I pulled <strong>37,216 horror posters</strong> — from 1897 all the way to 2028 — and I measured them. Colors. How dark they are. What's on them. Everything. What I found is weird. And it's going to change how you watch horror posters forever.</p>
   </div>
 </section>
 
@@ -589,14 +596,13 @@ footer .logo span{color:var(--blood)}
 <section class="about-data" id="about-data" data-i18n-aria="aria_about_data" aria-label="About the data">
   <div class="prose">
     <p class="kicker reveal" data-i18n="about_kicker">About the data</p>
-    <p class="reveal" data-i18n="about_body">From TMDB's ~33,000 Horror titles I kept <strong>18,716</strong> English-language posters with usable art — 1920 to 2022. After review I cut Animation and Music: they weren't selling the same kind of fear. Then I measured every sheet the same way. The fine print is at the end, if you want it.</p>
+    <p class="reveal" data-i18n="about_body">From TMDB's ~72,000 Horror titles I kept <strong>37,216</strong> English-language posters with usable art — 1897 to 2028. Filters: English only, no Animation, no Music. No date cut. Then I measured every sheet the same way. The fine print is at the end, if you want it.</p>
   </div>
 </section>
 
 <!-- ============ EXHIBIT A: ANATOMY OF ONE NIGHTMARE ============ -->
 <section class="chart-block" style="padding-bottom:0">
   <div class="prose reveal">
-    <p class="kicker" data-i18n="exhibit_a_kicker">Exhibit A · The Specimen</p>
     <h2 class="section-title" data-i18n="exhibit_a_title">One Nightmare,<br>Six Measurements</h2>
     <p data-i18n="exhibit_a_lede">Before we look at a whole century, let's take apart one poster — maybe the most copied horror one-sheet ever printed — with the same checks we run on every sheet in this story.</p>
   </div>
@@ -677,8 +683,8 @@ footer .logo span{color:var(--blood)}
     </div>
     <div class="step" data-ana="7">
       <p class="kicker" data-i18n="now_kicker">Now</p>
-      <h3 data-i18n="now_h3">× 18,716</h3>
-      <p data-i18n="now_body">One poster. Six looks. We did this for every usable horror poster from 1920 to 2022. Here's what a century of fear looks like.</p>
+      <h3 data-i18n="now_h3">× 37,216</h3>
+      <p data-i18n="now_body">One poster. Six looks. We did this for every usable horror poster from 1897 to 2028. Here's what a century of fear looks like.</p>
       <p class="stat" data-i18n="now_stat">scroll on ↓</p>
     </div>
   </div>
@@ -693,7 +699,7 @@ footer .logo span{color:var(--blood)}
     <p data-i18n="p1_why">The warm '50s aren't random. That was the atomic age — bright reds and radioactive greens sold "COLOSSAL TERROR!" at drive-in theaters. The blue flare in the '80s? That's VHS neon, the video-store era. And the black flood that never recedes? That's horror learning to be scary without color at all.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="river" viewBox="0 0 960 380" width="100%"></svg>
-  <p class="note" style="margin-top:10px" data-i18n="p1_note_n">FULL CENTURY — n = 18,716 posters (TMDB), mean share per decade.</p></div>
+  <p class="note" style="margin-top:10px" data-i18n="p1_note_n">FULL CENTURY — n = 37,216 posters (TMDB), mean share per decade.</p></div>
   <div class="typo-strip typo-strip-compact reveal" id="cr-strip">
     <p class="note" style="margin-bottom:10px" data-i18n="p1_note_strip">One real poster per hue family the chart measures — the sheet where that band actually dominates, per era.</p>
     <p class="ts-more-hint" data-i18n="p1_phone_hint">On phones: swipe each row across the six eras. Showing Reds &amp; Dark first — the two bands that drive the story.</p>
@@ -734,7 +740,7 @@ footer .logo span{color:var(--blood)}
     <p data-i18n="p2_why">The 1960 peak isn't a coincidence. That was the atomic age — bright posters promised "SEE! SHOCKING!" alien invasions and mutant monsters, radiating Cold War panic in reds and yellows. Then Vietnam happened. Watergate happened. Horror stopped being about fantasy monsters and became about the real world. The lights dimmed. And they never came back.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="darkness" viewBox="0 0 960 400" width="100%"></svg>
-  <p class="note" style="margin-top:10px" data-i18n="p2_note_n">FULL CENTURY — n = 18,716 posters (TMDB), 5-yr rolling mean.</p></div>
+  <p class="note" style="margin-top:10px" data-i18n="p2_note_n">FULL CENTURY — n = 37,216 posters (TMDB), 5-yr rolling mean.</p></div>
   <div class="typo-strip reveal">
     <p class="note" style="margin-bottom:10px" data-i18n="p2_note_strip">The brightest and the darkest poster the pipeline measured in each era — the two ends of the mountain.</p>
     <div class="ts-row ts-head" id="dk-eras"><div class="ts-tag ts-tag-blank"></div></div>
@@ -753,7 +759,7 @@ footer .logo span{color:var(--blood)}
     <p data-i18n="p3_why">Why the delayed peak? The '80s slasher era was born from VHS. Over 1,700 horror films came out in that decade — posters had to scream red from a video store shelf just to compete. But by the 2000s, red had become a language. Meta-horror (<em>Scream</em>, <em>Saw</em>, <em>Final Destination</em>) used blood as an aesthetic — not a threat.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="red" viewBox="0 0 960 340" width="100%"></svg>
-  <p class="note" style="margin-top:10px" data-i18n="p3_note_n">FULL CENTURY — n = 18,716 posters (TMDB), 5-yr rolling mean.</p></div>
+  <p class="note" style="margin-top:10px" data-i18n="p3_note_n">FULL CENTURY — n = 37,216 posters (TMDB), 5-yr rolling mean.</p></div>
   <div class="typo-strip reveal">
     <p class="note" style="margin-bottom:10px" data-i18n="p3_note_strip">What the reddest poster in each era actually looked like — and, just as telling, what a horror poster with essentially no red looks like in the same years.</p>
     <div class="ts-row ts-head" id="rr-eras"><div class="ts-tag ts-tag-blank"></div></div>
@@ -769,7 +775,7 @@ footer .logo span{color:var(--blood)}
     <p data-i18n="p7_why">The split makes sense: after the '80s slasher explosion, blood became a symbol — not just a color. It could be black, brown, dark red, or even implied. Meta-horror posters (<em>Scream</em>, <em>Saw</em>) treated blood as a language everyone already understood. You didn't need to paint it red anymore. The audience knew.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="blood2" viewBox="0 0 960 380" width="100%"></svg>
-  <p class="note" style="margin-top:10px" data-i18n="p7_note_n">Pixel-red: FULL CENTURY, n=18,716 (TMDB). Model-detected blood: a stratified sample covering all 11 decades, n=1,721, CLIP zero-shot per 2×2 poster patch — validated against hand-inspected artwork (Jaws, Friday the 13th, Blair Witch) before trusting it. Decade means.</p>
+  <p class="note" style="margin-top:10px" data-i18n="p7_note_n">Pixel-red: FULL CENTURY, n=37,216 (TMDB). Model-detected blood: a stratified sample covering all 11 decades, n=1,721, CLIP zero-shot per 2×2 poster patch — validated against hand-inspected artwork (Jaws, Friday the 13th, Blair Witch) before trusting it. Decade means.</p>
   </div>
   <div class="typo-strip reveal">
     <p class="note" style="margin-bottom:10px" data-i18n="p7_note_strip">Where the two measures in the chart above actually disagree, poster by poster: high pixel-red with zero semantic blood detected, and the reverse.</p>
@@ -793,7 +799,7 @@ footer .logo span{color:var(--blood)}
     <p data-i18n="p4_why">The 1940s face peak makes sense: Universal built the horror genre on painted portraits of Dracula, Frankenstein, the Mummy. The monster <em>was</em> the movie. But by the 2010s, elevated horror (A24, <em>Hereditary</em>, <em>Midsommar</em>) taught us the opposite: what you don't see is scarier. The face vanished because our fear turned inward — we stopped fearing monsters and started fearing our own minds.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="faces" viewBox="0 0 960 340" width="100%"></svg>
-  <p class="note" style="margin-top:10px" data-i18n="p4_faces_note_n">FULL RUN — n = 18,716 posters (TMDB), YuNet face detection (validated against hand-checked artwork), 5-yr rolling mean. Counts are floors: small, profile, tilted, or heavily painted/illustrated faces can escape the detector.</p></div>
+  <p class="note" style="margin-top:10px" data-i18n="p4_faces_note_n">FULL RUN — n = 37,216 posters (TMDB), YuNet face detection (validated against hand-checked artwork), 5-yr rolling mean. Counts are floors: small, profile, tilted, or heavily painted/illustrated faces can escape the detector.</p></div>
   <div class="typo-strip reveal">
     <p class="note" style="margin-bottom:10px" data-i18n="p4_faces_note_strip">The two faces this chart is actually made of: the extreme close-up, and the poster with no detectable face at all.</p>
     <div class="ts-row ts-head" id="vf-eras"><div class="ts-tag ts-tag-blank"></div></div>
@@ -806,7 +812,7 @@ footer .logo span{color:var(--blood)}
     <p data-i18n="p4_census_body"><strong>The monster census.</strong> When the human face retreats, something else often fills the stare. We asked a vision model one question about every poster: <em>what creature is on it?</em> The answer is a dynastic succession — with one frame around it: <strong>the century begins and ends with the ghost.</strong> The chart keeps the ghost and the masked killer lit; the other thrones stay dim until you tap or hover a line.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="census" viewBox="0 0 960 420" width="100%"></svg>
-  <p class="note" style="margin-top:10px" data-i18n="p4_census_note_n">FULL CENTURY — n = 18,716 posters, CLIP zero-shot vs 18-creature taxonomy (validated 10/10 on hand-checked artwork; labels below 0.5 confidence excluded). Shares are conservative floors; pre-1950 decades carry smaller samples.</p></div>
+  <p class="note" style="margin-top:10px" data-i18n="p4_census_note_n">FULL CENTURY — n = 37,216 posters, CLIP zero-shot vs 18-creature taxonomy (validated 10/10 on hand-checked artwork; labels below 0.5 confidence excluded). Shares are conservative floors; pre-1950 decades carry smaller samples.</p></div>
   <div class="typo-strip reveal">
     <p class="note" style="margin-bottom:10px" data-i18n="p4_census_note_strip">Two real posters per era for whichever creature actually held the throne, per the chart above.</p>
     <div class="ts-row ts-head" id="mc-eras"><div class="ts-tag ts-tag-blank"></div></div>
@@ -825,7 +831,7 @@ footer .logo span{color:var(--blood)}
     <p data-i18n="p5_why">The 1950s shout wasn't random — drive-in theaters were exploding. Posters had to grab you from your car window at 50 feet. By 2020, posters became thumbnails on Netflix. You browse them at arm's length, on your couch. The volume dropped because the distance did. Fear doesn't need to shout anymore. It just needs to be seen.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="quiet" viewBox="0 0 960 340" width="100%"></svg>
-  <p class="note" style="margin-top:10px" data-i18n="p5_quiet_note_n">FULL RUN — n = 18,716 posters (TMDB), MSER text-region proxy, 5-yr rolling mean. Trend-comparable across eras; absolute level is an upper bound.</p></div>
+  <p class="note" style="margin-top:10px" data-i18n="p5_quiet_note_n">FULL RUN — n = 37,216 posters (TMDB), MSER text-region proxy, 5-yr rolling mean. Trend-comparable across eras; absolute level is an upper bound.</p></div>
 
   <div class="prose reveal" style="margin-top:70px">
     <p data-i18n="p5_textlike_intro">What "text-like coverage" actually flags, poster by poster: five specimens spanning the shout-to-whisper arc, from the atomic-pulp peak down to a single quiet word. The amber boxes below are the real output of the same MSER pass charted above — not illustrative, detected, photographic texture and false positives included.</p>
@@ -891,17 +897,17 @@ footer .logo span{color:var(--blood)}
     </div>
     <div class="compare-card reveal">
       <div class="compare-poster" id="sy-ghostestate"><img class="sym-base" src="assets/posters/802887.jpg" alt="Ghost Estate"><div class="sym-center"></div><div class="sym-tag" data-i18n="fold_5">fold line</div></div>
-      <p class="compare-cap" data-i18n="cap_ghostestate"><b>Ghost Estate (2019)</b>The single lowest mirror-similarity score in the entire 18,716-poster dataset — on a poster that is, thematically, <em>about</em> a black/white split down the middle. The design quotes symmetry; the pixels don't deliver it.</p>
+      <p class="compare-cap" data-i18n="cap_ghostestate"><b>Ghost Estate (2019)</b>The single lowest mirror-similarity score in the entire 37,216-poster dataset — on a poster that is, thematically, <em>about</em> a black/white split down the middle. The design quotes symmetry; the pixels don't deliver it.</p>
       <p class="compare-stat" data-i18n="stat_ghostestate">mirror similarity <b>0.10</b> (dataset minimum)</p>
     </div>
   </div>
-  <p class="note reveal" style="max-width:960px;margin:20px auto 0;padding:0 24px" data-i18n="p5_sym_method_note">White line = the fold the score uses. The pipeline measures per-pixel |gray − mirrored gray| at 64×96 across that midline — high scores mean the two halves nearly match; low scores mean they don't. Caveat: this is pixel-value mirror-match, not human-perceived balance — a centered subject on a split-tone background can score as "asymmetric" even when it reads as balanced. n = 18,716 (TMDB), full run.</p>
+  <p class="note reveal" style="max-width:960px;margin:20px auto 0;padding:0 24px" data-i18n="p5_sym_method_note">White line = the fold the score uses. The pipeline measures per-pixel |gray − mirrored gray| at 64×96 across that midline — high scores mean the two halves nearly match; low scores mean they don't. Caveat: this is pixel-value mirror-match, not human-perceived balance — a centered subject on a split-tone background can score as "asymmetric" even when it reads as balanced. n = 37,216 (TMDB), full run.</p>
 
   <div class="prose reveal" style="margin-top:70px">
     <p data-i18n="p5_diag_body">And third: the compositions themselves stopped leaning. We measured how much of each poster's linework — a blade, a slashed logo, a body thrown off-axis — runs on a diagonal rather than sitting flat and upright. It peaks in the atomic-pulp '40s and '50s, then falls for seventy straight years: today's horror poster stands up straight.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="diagonal" viewBox="0 0 960 340" width="100%"></svg>
-  <p class="note" style="margin-top:10px" data-i18n="p5_diag_note_n">FULL RUN — n = 18,716 posters, share of Hough-detected line length at a 25–65° angle, 5-yr mean. A real share of this is stylized diagonal title lettering, not only figure pose — see Sources.</p></div>
+  <p class="note" style="margin-top:10px" data-i18n="p5_diag_note_n">FULL RUN — n = 37,216 posters, share of Hough-detected line length at a 25–65° angle, 5-yr mean. A real share of this is stylized diagonal title lettering, not only figure pose — see Sources.</p></div>
 
   <div class="prose reveal" style="margin-top:70px">
     <p data-i18n="p5_diag_intro">What does a high diagonal_score actually look like on the sheet? Five specimens the algorithm flagged, spanning five decades, none of them repeats from Exhibit A or B. The red dashed lines below are the real output of the same Hough-transform pass charted above — not illustrative, detected. Watch each sheet dim so the lines can take the stage.</p>
@@ -970,7 +976,7 @@ footer .logo span{color:var(--blood)}
     <p data-i18n="p6_why">The 1940s lettering was hand-painted by Universal artists like Karoly Grosz — it was craft. But by the 2010s, A24 turned typography into prestige. A single thin word on black doesn't just look modern — it says: this movie is art, not a monster movie. Ornate became "cheap." Minimal became "elevated." The letters changed because the marketing did.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="typo" viewBox="0 0 960 380" width="100%"></svg>
-  <p class="note" style="margin-top:10px" data-i18n="p6_note_n">FULL CENTURY — n = 18,716 posters (TMDB). Registers are quintiles of an ornate↔minimal typographic axis (CLIP zero-shot on the whole poster: similarity to "ornate hand-drawn display lettering" minus "clean minimal type"). Validated against hand-ranked specimens (corr 0.81); decade trend r = −0.93. This measures the <em>decorative character</em> of the title treatment, not a specific typeface — a proxy, honest about its limits: reading the exact letterforms of stylized horror titles defeats OCR and font-ID models alike.</p>
+  <p class="note" style="margin-top:10px" data-i18n="p6_note_n">FULL CENTURY — n = 37,216 posters (TMDB). Registers are quintiles of an ornate↔minimal typographic axis (CLIP zero-shot on the whole poster: similarity to "ornate hand-drawn display lettering" minus "clean minimal type"). Validated against hand-ranked specimens (corr 0.81); decade trend r = −0.93. This measures the <em>decorative character</em> of the title treatment, not a specific typeface — a proxy, honest about its limits: reading the exact letterforms of stylized horror titles defeats OCR and font-ID models alike.</p>
   <div class="typo-strip reveal">
     <div class="ts-row ts-head" id="ts-eras"><div class="ts-tag ts-tag-blank"></div></div>
     <div class="ts-row" id="ts-ornate"><div class="ts-tag"><span class="ts-dot" style="background:#c99a3a"></span><span data-i18n="p6_tag_ornate">Most ornate</span></div></div>
@@ -983,7 +989,6 @@ footer .logo span{color:var(--blood)}
 <!-- ============ EXHIBIT B: THE GRID BENEATH ============ -->
 <section class="chart-block" style="padding-top:0">
   <div class="prose reveal">
-    <p class="kicker" data-i18n="exb_kicker">Exhibit B · Composition</p>
     <h2 class="section-title" data-i18n="exb_title">Thirds Perfect,<br>Still Off Balance</h2>
     <p data-i18n="exb_lede">Every poster is a design decision, not just a color choice. We measured three things per sheet — rule-of-thirds placement, saliency balance, and shared alignment lines between design blocks — with plain OpenCV geometry. The three specimens below are not the same overlay: <em>Jaws</em> and <em>Halloween</em> show thirds + balance; <em>The Exorcist</em> shows the third measure, alignment, which only reads when separate credit/title blocks share a line.</p>
   </div>
@@ -1036,7 +1041,7 @@ footer .logo span{color:var(--blood)}
       <p class="compare-stat" data-i18n="stat_exorcist">alignment score <b>0.056</b> (lower = tighter grid) · 9 elements, 2+ confirmed shared lines</p>
     </div>
   </div>
-  <p class="note reveal" style="max-width:1120px;margin:20px auto 0;padding:0 24px" data-i18n="exb_method_note">Grid & alignment via connected-component clustering of MSER text regions + gradient-magnitude contours (no LayoutParser/Detectron2 — see Sources). Balance via saliency-map centroid (OpenCV StaticSaliencySpectralResidual). Caveat: for full-bleed painted posters without one isolated figure, the "main visual mass" box can span nearly the whole sheet — thirds-distance then measures the whole composition's center of gravity, not one subject's placement. n = 18,716 (TMDB), full run.</p>
+  <p class="note reveal" style="max-width:1120px;margin:20px auto 0;padding:0 24px" data-i18n="exb_method_note">Grid & alignment via connected-component clustering of MSER text regions + gradient-magnitude contours (no LayoutParser/Detectron2 — see Sources). Balance via saliency-map centroid (OpenCV StaticSaliencySpectralResidual). Caveat: for full-bleed painted posters without one isolated figure, the "main visual mass" box can span nearly the whole sheet — thirds-distance then measures the whole composition's center of gravity, not one subject's placement. n = 37,216 (TMDB), full run.</p>
 
   <div class="prose reveal" style="margin-top:70px">
     <p data-i18n="pyramid_intro">One more shape, measured a different way — not the angle of a line, but the <em>width</em> of the composition itself. Picture slicing a poster into 8 horizontal strips and asking, strip by strip: how much of this row is visually "busy" — edges, contrast, detail — versus empty space? Below, the amber/red bands <em>are</em> that busy width, one per strip. A wide band low on the poster and a thin or missing one up top reads as a pyramid; the reverse reads as an inverted funnel. Five real specimens — none repeated from elsewhere in this piece.</p>
@@ -1068,13 +1073,12 @@ footer .logo span{color:var(--blood)}
       <p class="compare-stat" data-i18n="stat_nothing">pyramid shift <b>-0.55</b> (wide top)</p>
     </div>
   </div>
-  <p class="note reveal" style="max-width:1120px;margin:20px auto 0;padding:0 24px" data-i18n="pyramid_note">Bands: energy-weighted horizontal spread of gradient magnitude per 8 vertical bins, drawn at their real measured width and position. Picked for a clean, unambiguous signal — filtered out logo-only title cards and letterboxed video-still posters, which can fake the same number without a real compositional pyramid behind it. Across the full 18,716-poster dataset this measure averages out to roughly zero by decade — top-heavy and bottom-heavy compositions largely cancel out. It's a real per-poster signature, not a century-level trend (unlike diagonal composition — see Part V).</p>
+  <p class="note reveal" style="max-width:1120px;margin:20px auto 0;padding:0 24px" data-i18n="pyramid_note">Bands: energy-weighted horizontal spread of gradient magnitude per 8 vertical bins, drawn at their real measured width and position. Picked for a clean, unambiguous signal — filtered out logo-only title cards and letterboxed video-still posters, which can fake the same number without a real compositional pyramid behind it. Across the full 37,216-poster dataset this measure averages out to roughly zero by decade — top-heavy and bottom-heavy compositions largely cancel out. It's a real per-poster signature, not a century-level trend (unlike diagonal composition — see Part V).</p>
 </section>
 
 <!-- ============ LOOK UP A POSTER ============ -->
 <section class="lookup" id="lookup">
   <div class="prose reveal">
-    <p class="kicker" data-i18n="lookup_kicker">Look up</p>
     <h2 class="section-title" data-i18n="lookup_title">Dissect any poster</h2>
     <p data-i18n="lookup_body">Type any title from the corpus. The panel below pulls every measurement we have for that sheet — color, faces, creature, lettering, composition, and (when the poster was in the stratified sample) semantic CLIP tags like blood or weapon.</p>
   </div>
@@ -1094,16 +1098,16 @@ footer .logo span{color:var(--blood)}
 <section class="explorer" id="explorer" hidden aria-hidden="true" style="display:none">
   <div class="prose reveal">
     <p class="kicker" data-i18n="explore_kicker">Explore</p>
-    <h2 class="section-title" data-i18n="explore_title">18,716 Nightmares</h2>
+    <h2 class="section-title" data-i18n="explore_title">37,216 Nightmares</h2>
     <p data-i18n="explore_body">Every poster we analyzed, in chronological order. Each tile is a poster's dominant color — hover to reveal the artwork and its measurements (brightness, faces, creature), click a tile to open its full analysis above. Drag the handles to travel through the century and watch the palette go dark.</p>
   </div>
   <div class="slider-block reveal">
-    <div class="year-readout"><b id="yr-min">1920</b><span>—</span><b id="yr-max">2022</b></div>
+    <div class="year-readout"><b id="yr-min">1897</b><span>—</span><b id="yr-max">2028</b></div>
     <div class="range-wrap">
       <div class="range-track"></div>
       <div class="range-fill" id="range-fill"></div>
-      <input type="range" id="r-min" min="1920" max="2022" value="1920" step="1" data-i18n-aria="aria_from_year" aria-label="From year">
-      <input type="range" id="r-max" min="1920" max="2022" value="2022" step="1" data-i18n-aria="aria_to_year" aria-label="To year">
+      <input type="range" id="r-min" min="1897" max="2028" value="1897" step="1" data-i18n-aria="aria_from_year" aria-label="From year">
+      <input type="range" id="r-max" min="1897" max="2028" value="2028" step="1" data-i18n-aria="aria_to_year" aria-label="To year">
     </div>
     <p class="slider-hint" data-i18n="explore_hint">DRAG TO FILTER BY YEAR · HOVER A TILE FOR ITS MEASUREMENTS</p>
   </div>
@@ -1114,7 +1118,6 @@ footer .logo span{color:var(--blood)}
 <!-- ============ BRIDGE / CODA ============ -->
 <section class="chart-block" id="bridge" style="padding-bottom:20px">
   <div class="prose reveal">
-    <p class="kicker" data-i18n="bridge_kicker">Coda</p>
     <h2 class="section-title" data-i18n="bridge_title">Fear Has a Century-Long Face</h2>
     <p data-i18n="bridge_lede">If you love horror films <em>and</em> love finding patterns in data, this is what I found: fear has a century-long face. And it's been getting quieter ever since we learned to listen to the dark.</p>
     <p data-i18n="bridge_close">The posters don't lie. They tell you everything about what scared us, when, and why. All you have to do is know how to read them.</p>
@@ -1127,7 +1130,7 @@ footer .logo span{color:var(--blood)}
     <details class="sources-details reveal">
       <summary data-i18n="sources_summary">Sources &amp; methods</summary>
       <div class="sources-body">
-        <p data-i18n="sources_corpus">Film list and poster images from <a href="https://www.themoviedb.org/">The Movie Database (TMDB)</a>: 32,540 features tagged Horror, of which 18,716 (1920–2022) had usable artwork and were analyzed. Excluded after review: titles genre-tagged "Animation" and "Music", plus films whose TMDB <code>original_language</code> is not English (~8,907) — non-English lettering skewed typography/OCR metrics. Lists in <code>pipeline/data/excluded_*.csv</code>. Kept 629 early titles missing language metadata (mostly silent-era). TMDB "TV Movie" telefilms are kept on purpose — single films made for television, not episodic series.</p>
+        <p data-i18n="sources_corpus">Film list and poster images from <a href="https://www.themoviedb.org/">The Movie Database (TMDB)</a>: Horror-tagged features, of which <strong>37,216</strong> (1897–2028) English-language posters with usable artwork were analyzed — no release-year cutoff. Excluded after review: titles genre-tagged "Animation" and "Music", plus films whose TMDB <code>original_language</code> is not English (~8,907) — non-English lettering skewed typography/OCR metrics. Lists in <code>pipeline/data/excluded_*.csv</code>. Kept 629 early titles missing language metadata (mostly silent-era). TMDB "TV Movie" telefilms are kept on purpose — single films made for television, not episodic series.</p>
         <p data-i18n="sources_measures">For each poster we extracted a 5-color dominant palette (k-means in CIELAB, saturation-weighted), mean brightness (L*), mean saturation, share of near-black pixels, share of blood-red pixels, and hue-family distribution. Face counts: population statistics use YuNet detection at analysis resolution (floors — small, tilted or heavily stylized faces can escape); the counts shown on individually displayed specimens are hand-verified against the artwork. Chart notes spell out each measure where it appears.</p>
         <p data-i18n="sources_credits">Base dataset by Tanya Shapiro (TidyTuesday 2022). This product uses the TMDB API but is not endorsed or certified by TMDB. Full code and data on <a href="https://github.com/juanpduque/anatomy-of-fear">GitHub</a>. Industry context: Stephen Follows' <a href="https://stephenfollows.com/p/the-horror-movie-report">Horror Movie Report</a>.</p>
       </div>
@@ -1144,11 +1147,78 @@ footer .logo span{color:var(--blood)}
 
 <script src="https://cdnjs.cloudflare.com/ajax/libs/scrollama/3.2.0/scrollama.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
-<script src="data/explorer.js?v=20260723c"></script>
-<script src="data/series.js?v=20260723c"></script>
-<script src="i18n/content.js?v=20260723c"></script>
-<script src="i18n/ui.js?v=20260723c"></script>
-<script src="js/i18n.js?v=20260723c"></script>
+<script src="data/explorer.js?v=20260724d"></script>
+<script src="data/series.js?v=20260724d"></script>
+<script src="data/creature_boxes.js?v=20260724d"></script>
+<script src="i18n/content.js?v=20260724d"></script>
+<script src="i18n/ui.js?v=20260724d"></script>
+<script src="js/i18n.js?v=20260724d"></script>
+<script>
+/* Flickering white letters on section titles (same pulse as hero "Fear", staggered). */
+(function(){
+  function unwrapFear(el){
+    el.querySelectorAll('span.fear').forEach(s=>{
+      s.replaceWith(document.createTextNode(s.textContent));
+    });
+    el.normalize();
+  }
+  function wrapFlickerLetters(el, titleIndex){
+    unwrapFear(el);
+    const walker = document.createTreeWalker(el, NodeFilter.SHOW_TEXT);
+    const letters = [];
+    let node;
+    while ((node = walker.nextNode())) {
+      const text = node.textContent;
+      for (let i = 0; i < text.length; i++) {
+        if (/\p{L}/u.test(text[i])) letters.push({node, i});
+      }
+    }
+    if (letters.length < 2) return;
+    // 2–3 bulbs along the title (scale with length), spaced ~evenly.
+    const count = Math.min(3, Math.max(2, Math.round(letters.length / 10)));
+    const picks = [];
+    for (let k = 0; k < count; k++) {
+      const t = (k + 1) / (count + 1);
+      const idx = Math.min(letters.length - 1, Math.round(t * (letters.length - 1)));
+      if (picks.length && Math.abs(idx - picks[picks.length - 1]) < 2) continue;
+      picks.push(idx);
+    }
+    if (!picks.length) picks.push(Math.floor(letters.length * 0.42));
+
+    const byNode = new Map();
+    picks.forEach((li, pi) => {
+      const {node: n, i} = letters[li];
+      if (!byNode.has(n)) byNode.set(n, []);
+      byNode.get(n).push({i, pi});
+    });
+    byNode.forEach((spots, n) => {
+      spots.sort((a, b) => a.i - b.i);
+      const text = n.textContent;
+      const frag = document.createDocumentFragment();
+      let cursor = 0;
+      spots.forEach(({i, pi}) => {
+        if (i > cursor) frag.appendChild(document.createTextNode(text.slice(cursor, i)));
+        const span = document.createElement('span');
+        span.className = 'fear';
+        span.textContent = text.slice(i, i + 1);
+        const delay = ((titleIndex * 0.37 + pi * 1.15) % 3.2).toFixed(2);
+        span.style.setProperty('--flicker-delay', delay + 's');
+        frag.appendChild(span);
+        cursor = i + 1;
+      });
+      if (cursor < text.length) frag.appendChild(document.createTextNode(text.slice(cursor)));
+      n.replaceWith(frag);
+    });
+  }
+  function apply(){
+    document.querySelectorAll('h2.section-title').forEach(wrapFlickerLetters);
+  }
+  document.addEventListener('aof:lang', apply);
+  if (document.readyState !== 'loading') apply();
+})();
+</script>
+<!-- 15MB analysis map — load before page scripts so Look up is ready -->
+<script src="data/lookup.js?v=20260724d"></script>
 
 <script>
 /* ================= data & palettes ================= */
@@ -1303,7 +1373,7 @@ const IMG_S='https://image.tmdb.org/t/p/w92', IMG_L='https://image.tmdb.org/t/p/
 const HAS_DATA=(typeof POSTERS!=='undefined');
 const CREATURE_ES={giant_monster:t('creature_giant_monster'),masked_killer:t('creature_masked_killer'),wolf_dog:t('creature_wolf_dog')};
 const POSTER_BY_ID=HAS_DATA?Object.fromEntries(POSTERS.map(p=>[p[7],p])):{};
-const SPECIMEN_PATHS={170:"/sQckQRt17VaWbo39GIu0TMOiszq.jpg",348:"/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg",377:"/wGTpGGRMZmyFCcrY2YoxVTIBlli.jpg",565:"/e2t5CKMox7tjv3iD3Ko7NdFa5lJ.jpg",571:"/z0iYrJ6GsAMP3abOha7uGMuc5kZ.jpg",578:"/lxM6kqilAdpdhqUl2biYp5frUxE.jpg",694:"/nRj5511mZdTl4saWEPoj9QroTIu.jpg",805:"/s8pdaHjxNPLXIA1WjSTWm00RJTz.jpg",831:"/2viRDpHmhzQoreZok2auLjkVbSE.jpg",948:"/qVpCaBcnjRzGL3nOPHi6Suy0sB6.jpg",1091:"/tzGY49kseSE9QAKk47uuDGwnSCu.jpg",1678:"/ixfHV61iRM4Jkgw0uI5ICtNwfmX.jpg",1946:"/kETKF0JhdTPn1knci8CAdYL0d79.jpg",3053:"/iH8Ohx97F2eIagrJGzCEraO93MN.jpg",4283:"/5ou56J8FIxbIFusR9zIA9GW7zwt.jpg",4488:"/HzrPn1gEHWixfMOvOehOTlHROo.jpg",4970:"/frSGNQcWx1ek8dCduFYCux1ho7n.jpg",9841:"/1qAQWKjfAgxQN4atIMWnssBWHOf.jpg",9980:"/cFrKCumtZMHCWwWNxgGRyaxhYu2.jpg",10065:"/4D246dpe7yy2GvHI2IbpeqkUXry.jpg",10493:"/hXpav86ZX5N1YIfVfVtzuZLNrjW.jpg",10676:"/4qDtn4RNIEY4OgitIxi3P1CtthO.jpg",10973:"/aGM3tYt0r2NO4Uc8dNEbAMhXeEk.jpg",11470:"/jrObEGWVW1XlutjYXqyyGxtTeov.jpg",11549:"/wVXt7h98sTKhLjq1TdvdGwdyJo8.jpg",11586:"/g9i3LTMYLRHvCYSKimZEfd1Vqy7.jpg",11815:"/kXdBcDh2EbgSIf4Oo1dxKapZM2f.jpg",11868:"/1L45hwUu1P4NRhbRRrE5d9oHamm.jpg",15360:"/dij60cVBL39B5t1SdGQr33APksC.jpg",16028:"/nHG0VOW6o99tP5EACtKTMADqxJQ.jpg",16281:"/4SoyTCEpsgLjX6yAyMsx3AsAyRQ.jpg",18498:"/yV8z6deULhH4oJAUj2YdhITPwfc.jpg",18983:"/19RDmhX6LtzMxv0KXXAU1IBIvvA.jpg",21588:"/cI5AV3jCuxmoQp0N7Z16SI2b7Xk.jpg",23439:"/jEzZOrGSWpl0jKOIXoY3OnEabLQ.jpg",24198:"/46whh6JCDqRFxHfKssePScUvD8D.jpg",28532:"/A17gEQk617FsLhtPyalRN885KM3.jpg",28659:"/uecOR4c3IrZ2AusokpyifrtJks9.jpg",28774:"/5WsMyE6wwY2QbM3fpAePOX3e7pZ.jpg",29077:"/a5cCwJEnVSPtTqHgIE9UxHIoWFl.jpg",29748:"/3xMrdNnyvYrdJaKq9dWJKkTHGvP.jpg",31682:"/1Tl2aeOhvUmEHSGHGH5SfmN19vQ.jpg",35911:"/ypQ7rC8lUgt9g7yAMmmfq5vx0Fo.jpg",37169:"/2tP5jkSJ8Nu3OsIQLaCEktepOLp.jpg",39995:"/p9S9UuYA4uHdoH9FecB3sU9zpfm.jpg",43115:"/4uns8WSxu9LSFv0FkJP8uv6Q5kQ.jpg",45878:"/glZ0Wz5u2Vr7TzM6Kj1f4e6EliU.jpg",46767:"/64rlKmchkFyLDh6XP2XqPHw9nPd.jpg",48885:"/eHzJBkfEV4fUVxAfspt1jOxBIc.jpg",49183:"/njSWFPeTaZYoKKeuyf1Ga6OYAuh.jpg",50606:"/mPH3YLnyU5qT7FUMd1U1wWD41Ep.jpg",52199:"/yZHinX5xzbkhXvX5t4lxKuDQEHQ.jpg",54653:"/bjVqT8XIVMTCWpSreMpH0W6Rjxi.jpg",59189:"/zeM6HitVufjH9nvWvg4MraucwzU.jpg",60086:"/7DQlbb4ax5L5NZvMjr54KOsXGyF.jpg",70772:"/zVK76DDtIKdIiRRraAVrsyek04t.jpg",72153:"/bLYZAd3yukk9HFamT16XHFrmKtw.jpg",73336:"/ztg12ZJK2Vi8tHl9vsNxFJ1hc4A.jpg",74915:"/2CafSu1hxvxLRYTiFuhA3sH0xNP.jpg",85498:"/xlfJKdjwUZNfT2QUEUv0RozVuEs.jpg",88353:"/f7IxkjIQWDiVgrUmkfA3HYljuJF.jpg",93929:"/vjpqjUYOS9Nv2nEkNuo2UoNdtPv.jpg",117429:"/fQ4xCUh2sL3B5EqTXoLHn9uAnGN.jpg",127642:"/4tSMIUeLYGQFeBnHgS7TVuYiAi0.jpg",141442:"/2oBgGXtsh2GvnBesUAqlHvf5Q7P.jpg",145850:"/2nPPxIb8Rlbwvs4HsjOmZsa2QlE.jpg",156068:"/qObcGnlli4zlCc99DpTQv95GBZy.jpg",212005:"/dRKpOGEJLLnD0QYFn8ku4DBYwGz.jpg",226630:"/y3j0wddj5U6W9ZBL8NxPQOxLgJo.jpg",279690:"/vzqwe4uuINJhbPqvlbVShBnCvHv.jpg",310131:"/zap5hpFCWSvdWSuPGAQyjUv2wAC.jpg",329237:"/6YcIEhXzMSuNdrooBUsO3mZK8rT.jpg",332567:"/42HlPJmiE6rQdtT2lYzPPMQYvqG.jpg",345940:"/xqECHNvzbDL5I3iiOVUkVPJMSbc.jpg",416753:"/gVBUEYI8eIaFZZv5BR6DPVuJZsS.jpg",419479:"/86a7GRVRCwfl7wdI4QadyvKa6Zu.jpg",425972:"/cdPSUck4tBRvRu6DFk6XciDrssn.jpg",439917:"/soP8q3FtbTseRVcJavkXDuhVFac.jpg",460458:"/7uRbWOXxpWDMtnsd2PF3clu65jc.jpg",476299:"/tt9YSQlArAj6849SQQJ5ryNgcJs.jpg",495447:"/stTZqv11cqWOZbTySSpf6ciDnr2.jpg",519418:"/pNrdzyE39G6brgCF1YmrW73aecy.jpg",535412:"/sPEh50GkEO3mTMdwn3Dz1LjEp9h.jpg",564446:"/1c9os1zQi5X0hey7J9PKGBGFYHm.jpg",575869:"/gkDW017O3DLK9vBMEcAMSunnuo9.jpg",591275:"/rmEPtz3Ufzol2VWUAZYzOFaBio3.jpg",751423:"/gTOl98Sqie5pDxomspvWLXN66BJ.jpg",875138:"/6MPBRoFpEWpohhKZqT19q62U8If.jpg",882598:"/hiaeZKzwsk4y4atFhmncO5KRxeT.jpg",883891:"/gpXdkzoens2K8VtVaMORem9f95.jpg"};
+const SPECIMEN_PATHS={170:"/sQckQRt17VaWbo39GIu0TMOiszq.jpg",348:"/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg",377:"/wGTpGGRMZmyFCcrY2YoxVTIBlli.jpg",565:"/e2t5CKMox7tjv3iD3Ko7NdFa5lJ.jpg",571:"/z0iYrJ6GsAMP3abOha7uGMuc5kZ.jpg",578:"/lxM6kqilAdpdhqUl2biYp5frUxE.jpg",694:"/nRj5511mZdTl4saWEPoj9QroTIu.jpg",805:"/s8pdaHjxNPLXIA1WjSTWm00RJTz.jpg",831:"/2viRDpHmhzQoreZok2auLjkVbSE.jpg",948:"/qVpCaBcnjRzGL3nOPHi6Suy0sB6.jpg",1091:"/tzGY49kseSE9QAKk47uuDGwnSCu.jpg",1678:"/ixfHV61iRM4Jkgw0uI5ICtNwfmX.jpg",1946:"/kETKF0JhdTPn1knci8CAdYL0d79.jpg",3053:"/iH8Ohx97F2eIagrJGzCEraO93MN.jpg",4283:"/5ou56J8FIxbIFusR9zIA9GW7zwt.jpg",4488:"/HzrPn1gEHWixfMOvOehOTlHROo.jpg",4970:"/frSGNQcWx1ek8dCduFYCux1ho7n.jpg",9841:"/1qAQWKjfAgxQN4atIMWnssBWHOf.jpg",9980:"/cFrKCumtZMHCWwWNxgGRyaxhYu2.jpg",10065:"/4D246dpe7yy2GvHI2IbpeqkUXry.jpg",10493:"/hXpav86ZX5N1YIfVfVtzuZLNrjW.jpg",10676:"/4qDtn4RNIEY4OgitIxi3P1CtthO.jpg",10973:"/aGM3tYt0r2NO4Uc8dNEbAMhXeEk.jpg",11470:"/jrObEGWVW1XlutjYXqyyGxtTeov.jpg",11549:"/wVXt7h98sTKhLjq1TdvdGwdyJo8.jpg",11586:"/g9i3LTMYLRHvCYSKimZEfd1Vqy7.jpg",11815:"/kXdBcDh2EbgSIf4Oo1dxKapZM2f.jpg",11868:"/1L45hwUu1P4NRhbRRrE5d9oHamm.jpg",15360:"/dij60cVBL39B5t1SdGQr33APksC.jpg",16028:"/nHG0VOW6o99tP5EACtKTMADqxJQ.jpg",16281:"/4SoyTCEpsgLjX6yAyMsx3AsAyRQ.jpg",18498:"/yV8z6deULhH4oJAUj2YdhITPwfc.jpg",18983:"/19RDmhX6LtzMxv0KXXAU1IBIvvA.jpg",21588:"/cI5AV3jCuxmoQp0N7Z16SI2b7Xk.jpg",23439:"/jEzZOrGSWpl0jKOIXoY3OnEabLQ.jpg",24198:"/46whh6JCDqRFxHfKssePScUvD8D.jpg",28532:"/A17gEQk617FsLhtPyalRN885KM3.jpg",28659:"/uecOR4c3IrZ2AusokpyifrtJks9.jpg",28774:"/5WsMyE6wwY2QbM3fpAePOX3e7pZ.jpg",29077:"/a5cCwJEnVSPtTqHgIE9UxHIoWFl.jpg",29748:"/3xMrdNnyvYrdJaKq9dWJKkTHGvP.jpg",31682:"/1Tl2aeOhvUmEHSGHGH5SfmN19vQ.jpg",35911:"/ypQ7rC8lUgt9g7yAMmmfq5vx0Fo.jpg",37216:"/2tP5jkSJ8Nu3OsIQLaCEktepOLp.jpg",39995:"/p9S9UuYA4uHdoH9FecB3sU9zpfm.jpg",43115:"/4uns8WSxu9LSFv0FkJP8uv6Q5kQ.jpg",45878:"/glZ0Wz5u2Vr7TzM6Kj1f4e6EliU.jpg",46767:"/64rlKmchkFyLDh6XP2XqPHw9nPd.jpg",48885:"/eHzJBkfEV4fUVxAfspt1jOxBIc.jpg",49183:"/njSWFPeTaZYoKKeuyf1Ga6OYAuh.jpg",50606:"/mPH3YLnyU5qT7FUMd1U1wWD41Ep.jpg",52199:"/yZHinX5xzbkhXvX5t4lxKuDQEHQ.jpg",54653:"/bjVqT8XIVMTCWpSreMpH0W6Rjxi.jpg",59189:"/zeM6HitVufjH9nvWvg4MraucwzU.jpg",60086:"/7DQlbb4ax5L5NZvMjr54KOsXGyF.jpg",70772:"/zVK76DDtIKdIiRRraAVrsyek04t.jpg",72153:"/bLYZAd3yukk9HFamT16XHFrmKtw.jpg",73336:"/ztg12ZJK2Vi8tHl9vsNxFJ1hc4A.jpg",74915:"/2CafSu1hxvxLRYTiFuhA3sH0xNP.jpg",85498:"/xlfJKdjwUZNfT2QUEUv0RozVuEs.jpg",88353:"/f7IxkjIQWDiVgrUmkfA3HYljuJF.jpg",93929:"/vjpqjUYOS9Nv2nEkNuo2UoNdtPv.jpg",117429:"/fQ4xCUh2sL3B5EqTXoLHn9uAnGN.jpg",127642:"/4tSMIUeLYGQFeBnHgS7TVuYiAi0.jpg",141442:"/2oBgGXtsh2GvnBesUAqlHvf5Q7P.jpg",145850:"/2nPPxIb8Rlbwvs4HsjOmZsa2QlE.jpg",156068:"/qObcGnlli4zlCc99DpTQv95GBZy.jpg",212005:"/dRKpOGEJLLnD0QYFn8ku4DBYwGz.jpg",226630:"/y3j0wddj5U6W9ZBL8NxPQOxLgJo.jpg",279690:"/vzqwe4uuINJhbPqvlbVShBnCvHv.jpg",310131:"/zap5hpFCWSvdWSuPGAQyjUv2wAC.jpg",329237:"/6YcIEhXzMSuNdrooBUsO3mZK8rT.jpg",332567:"/42HlPJmiE6rQdtT2lYzPPMQYvqG.jpg",345940:"/xqECHNvzbDL5I3iiOVUkVPJMSbc.jpg",416753:"/gVBUEYI8eIaFZZv5BR6DPVuJZsS.jpg",419479:"/86a7GRVRCwfl7wdI4QadyvKa6Zu.jpg",425972:"/cdPSUck4tBRvRu6DFk6XciDrssn.jpg",439917:"/soP8q3FtbTseRVcJavkXDuhVFac.jpg",460458:"/7uRbWOXxpWDMtnsd2PF3clu65jc.jpg",476299:"/tt9YSQlArAj6849SQQJ5ryNgcJs.jpg",495447:"/stTZqv11cqWOZbTySSpf6ciDnr2.jpg",519418:"/pNrdzyE39G6brgCF1YmrW73aecy.jpg",535412:"/sPEh50GkEO3mTMdwn3Dz1LjEp9h.jpg",564446:"/1c9os1zQi5X0hey7J9PKGBGFYHm.jpg",575869:"/gkDW017O3DLK9vBMEcAMSunnuo9.jpg",591275:"/rmEPtz3Ufzol2VWUAZYzOFaBio3.jpg",751423:"/gTOl98Sqie5pDxomspvWLXN66BJ.jpg",875138:"/6MPBRoFpEWpohhKZqT19q62U8If.jpg",882598:"/hiaeZKzwsk4y4atFhmncO5KRxeT.jpg",883891:"/gpXdkzoens2K8VtVaMORem9f95.jpg"};
 function posterSrc(p,size){
   const base=size==='s'?IMG_S:size==='m'?IMG_M:IMG_L;
   if(p&&p[2]) return base+p[2];
@@ -1322,15 +1392,29 @@ function pct(x){return x==null?'—':(Math.round(x*100)+'%');}
 function num(x,d=2){return x==null||x===''?'—':(+x).toFixed(d).replace(/\.?0+$/,'');}
 let LOOKUP_P=null;
 function ensureLookup(){
-  if(typeof LOOKUP!=='undefined') return Promise.resolve(LOOKUP);
+  if(window.LOOKUP) return Promise.resolve(window.LOOKUP);
   if(LOOKUP_P) return LOOKUP_P;
   const st=document.getElementById('lk-status');
   if(st) st.textContent=t('lookup_loading');
   LOOKUP_P=new Promise((resolve,reject)=>{
     const s=document.createElement('script');
-    s.src='data/lookup.js';
-    s.onload=()=>{if(st) st.textContent='';resolve(LOOKUP);};
-    s.onerror=()=>{if(st) st.textContent=t('lookup_load_error');reject();};
+    s.src='data/lookup.js?v=20260724d';
+    s.onload=()=>{
+      const L=window.LOOKUP;
+      if(!L){
+        if(st) st.textContent=t('lookup_load_error');
+        LOOKUP_P=null;
+        reject(new Error('LOOKUP missing after load'));
+        return;
+      }
+      if(st) st.textContent='';
+      resolve(L);
+    };
+    s.onerror=()=>{
+      if(st) st.textContent=t('lookup_load_error');
+      LOOKUP_P=null;
+      reject(new Error('lookup.js failed to load'));
+    };
     document.head.appendChild(s);
   });
   return LOOKUP_P;
@@ -1453,6 +1537,27 @@ function renderAnalysis(p,a){
     const labLeft=Math.max(2, Math.min(70, fx*100));
     faceLabStyle=`top:${labTop.toFixed(1)}%;left:${labLeft.toFixed(1)}%`;
   }
+  const cboxSrc=(window.CREATURE_BOXES&&window.CREATURE_BOXES[String(p[7])])||a.cboxes||[];
+  const cboxes=Array.isArray(cboxSrc)?cboxSrc:[];
+  // Prefer OWL boxes that match the CLIP census label when present
+  const cboxesPref=(()=>{
+    if(!cboxes.length||!creature) return cboxes;
+    const hit=cboxes.filter(b=>(b.label||'')===creature);
+    return hit.length?hit:cboxes;
+  })();
+  const creatureBoxesHtml=cboxesPref.slice(0,3).map(b=>{
+    const box=b.box||b;
+    const [x,y,w,h]=Array.isArray(box)?box:[0,0,0,0];
+    const L=Math.max(0,x*100), T=Math.max(0,y*100);
+    const W=Math.min(100-L,Math.max(1,w*100)), H=Math.min(100-T,Math.max(1,h*100));
+    const lab=CREATURE_ES[b.label]||(b.label||'').replace(/_/g,' ');
+    const sc=b.score!=null?` ${pct(b.score)}`:'';
+    const labClass=T<8?' topish':'';
+    return `<div class="lk-cbox" style="left:${L.toFixed(1)}%;top:${T.toFixed(1)}%;width:${W.toFixed(1)}%;height:${H.toFixed(1)}%"><span class="lk-cbox-lab${labClass}">${lab}${sc}</span></div>`;
+  }).join('');
+  const creatureLabHtml=cboxesPref.length
+    ? `<div class="lk-lab blood" style="top:6%;right:4%">${t('lab_creature',{c:cLabel})}${a.cscore!=null?' · '+pct(a.cscore):''} · OWL</div>`
+    : `<div class="lk-lab amber" style="top:45%;left:50%;transform:translate(-50%,-50%)">${t('lab_creature',{c:cLabel})}${a.cscore!=null?' · '+pct(a.cscore):''}</div>`;
   const mediumLab=a.painted==null?t('lab_medium_na')
     :(a.painted>=.5?t('lookup_painted')+' ':t('lookup_photo_mixed')+' ')+pct(a.painted);
   const textLab=hasBox
@@ -1461,8 +1566,6 @@ function renderAnalysis(p,a){
   let html=`<div class="lk-stage"><div class="lk-frame">
       <img class="lk-art" alt="" src="${posterSrc(p,'m')}">
       <div class="lk-ov" id="lk-ov">
-        <div class="lk-layer" data-layer="palette"><div class="lk-palfloat">${pal}</div>
-          <div class="lk-lab amber" style="top:6%;left:4%">${t('lab_5_color_palette')}</div></div>
         <div class="lk-layer" data-layer="L"><div class="lk-lab" style="top:6%;left:4%">L* ${a.L??p[4]}</div></div>
         <div class="lk-layer" data-layer="dark"><div class="lk-scrim" style="--h:${darkPct}%"></div>
           <div class="lk-lab blood" style="top:6%;right:4%">${t('lab_near_black_pct',{n:darkPct})}</div></div>
@@ -1474,8 +1577,7 @@ function renderAnalysis(p,a){
           <div class="lk-lab" style="top:6%;left:4%">${t('lab_hue_families')}</div></div>
         <div class="lk-layer" data-layer="faces">${faceBoxesHtml}
           <div class="lk-lab amber" style="${faceLabStyle}">${faceLab}</div></div>
-        <div class="lk-layer" data-layer="creature">
-          <div class="lk-lab amber" style="top:45%;left:50%;transform:translate(-50%,-50%)">${t('lab_creature',{c:cLabel})}${a.cscore!=null?' · '+pct(a.cscore):''}</div></div>
+        <div class="lk-layer" data-layer="creature">${creatureBoxesHtml}${creatureLabHtml}</div>
         <div class="lk-layer" data-layer="medium">
           <div class="lk-lab" style="top:8%;left:4%">${mediumLab}</div></div>
         <div class="lk-layer" data-layer="text"><div class="lk-textband" style="${textBandStyle}"></div>
@@ -1517,11 +1619,11 @@ function renderAnalysis(p,a){
         <div class="lk-section">${t('sec_hue_families')} <button type="button" class="lk-eye" data-view="bands" aria-label="${t('lookup_preview_bands')}" title="${t('lookup_preview_on_poster')}" style="display:inline-flex;vertical-align:middle;margin-left:8px">${LK_EYE}</button></div>
         <div class="lk-bands">${bandBar}</div>
         <p class="note lk-note">${bandNames.map((n,i)=>`${n} ${pct(bands[i])}`).join(' · ')}</p>
-        ${stat(t('stat_palette'),`<b>${t('lookup_5_swatches')}</b>`,'palette')}
+        ${stat(t('stat_palette'),`<b>${t('lookup_5_swatches')}</b>`)}
         <div class="lk-section">${t('sec_faces_creature')}</div>
         ${stat(t('stat_faces_detected'),`<b>${faces}</b>`,faces>0?'faces':null)}
         ${stat(t('stat_face_area'),`<b>${pct(a.farea)}</b>`)}
-        ${stat(t('stat_creature_clip'),`<b>${cLabel}</b>${cScore}`)}
+        ${stat(t('stat_creature_clip'),`<b>${cLabel}</b>${cScore}${cboxesPref.length?` · <span style="color:var(--ink-dim);font-size:13px">${cboxesPref.length} OWL</span>`:''}`,'creature')}
         ${stat(t('stat_medium'),a.painted==null?'—':(a.painted>=0.5?`<b>${t('lookup_painted')}</b> (${pct(a.painted)})`:`<b>${t('lookup_photo_mixed')}</b> (${pct(a.painted)})`))}
         <div class="lk-section">${t('sec_lettering')}</div>
         ${stat(t('stat_typography_register'),`<b>${a.typo||'—'}</b>`)}
@@ -1635,7 +1737,7 @@ function renderRange(lo,hi){
 const rMin=document.getElementById('r-min'),rMax=document.getElementById('r-max'),
       yMin=document.getElementById('yr-min'),yMax=document.getElementById('yr-max'),
       fill=document.getElementById('range-fill');
-const Y0=1920,Y1=2022;
+const Y0=1897,Y1=2028;
 let renderTimer=null;
 function applyRange(){
   let lo=+rMin.value,hi=+rMax.value;
@@ -1972,7 +2074,7 @@ function d3Charts(){
       [1946,"eXistenZ","1999","73%"],[425972,"Cargo","2017","95%"]];
     const CR_GREEN=[[28046,"The Ghoul","1933","88%"],[10973,"Creature from the Black Lagoon","1954","37%"],
       [805,"Rosemary's Baby","1968","50%"],[18498,"Ghoulies","1985","48%"],
-      [37169,"The Human Centipede (First Sequence)","2009","67%"],[591275,"Fear Street: 1666","2021","45%"]];
+      [37216,"The Human Centipede (First Sequence)","2009","67%"],[591275,"Fear Street: 1666","2021","45%"]];
     const CR_BLUE=[[84712,"The Last Warning","1928","83%"],[35911,"Cult of the Cobra","1955","66%"],
       [578,"Jaws","1975","61%"],[1091,"The Thing","1982","77%"],
       [4970,"Gothika","2003","61%"],[332567,"The Shallows","2016","85%"]];
@@ -2054,7 +2156,7 @@ function d3Charts(){
   /* --- II. DARKNESS: two lines converge in the dark, gradient dies out --- */
   {
     const svg=d3.select('#darkness'),W=960,H=400,m={t:30,r:170,b:40,l:50};
-    const x=d3.scaleLinear().domain([1925,2022]).range([m.l,W-m.r]);
+    const x=d3.scaleLinear().domain([1925,2026]).range([m.l,W-m.r]);
     const y=d3.scaleLinear().domain([24,52]).range([H-m.b,m.t]);
     grid(svg,x,y,[25,30,35,40,45,50],v=>v,[1925,1940,1955,1970,1985,2000,2015]);
     const gr=svg.append('defs').append('linearGradient').attr('id','dgrad')
@@ -2071,7 +2173,7 @@ function d3Charts(){
       .attr('fill','none').attr('stroke','#9a958a').attr('stroke-width',2)
       .attr('stroke-dasharray','6 5').attr('opacity',0);
     svg.append('text').attr('class','line-label').attr('fill','#e5a00d')
-      .attr('x',x(2022)+8).attr('y',y(29.1)).text(t('all_horror'));
+      .attr('x',x(2026)+8).attr('y',y(28.5)).text(t('all_horror'));
     svg.append('text').attr('class','line-label').attr('fill','#9a958a')
       .attr('x',x(2020)+8).attr('y',y(27.5)+16).text(t('mainstream'));
     [[1931,t('annot_expressionist_shadow'),40.2],[1960,t('annot_atomic_daylight'),48.8],[1975,t('annot_occult_slide'),42.6],[2020,t('annot_never_came_back'),29.4]].forEach(a=>{
@@ -2107,7 +2209,7 @@ function d3Charts(){
   /* --- III. RED: blood-gradient area --- */
   {
     const svg=d3.select('#red'),W=960,H=340,m={t:30,r:30,b:40,l:50};
-    const x=d3.scaleLinear().domain([1925,2022]).range([m.l,W-m.r]);
+    const x=d3.scaleLinear().domain([1925,2026]).range([m.l,W-m.r]);
     const y=d3.scaleLinear().domain([0,15]).range([H-m.b,m.t]);
     grid(svg,x,y,[0,5,10,15],v=>v+'%',[1925,1940,1955,1970,1985,2000,2015]);
     const gr=svg.append('defs').append('linearGradient').attr('id','rgrad')
@@ -2142,9 +2244,9 @@ function d3Charts(){
   /* --- V. FACES: seventy-year retreat, with the close-up twist --- */
   {
     const svg=d3.select('#faces'),W=960,H=340,m={t:30,r:30,b:40,l:50};
-    const x=d3.scaleLinear().domain([1920,2022]).range([m.l,W-m.r]);
+    const x=d3.scaleLinear().domain([1897,2028]).range([m.l,W-m.r]);
     const y=d3.scaleLinear().domain([40,90]).range([H-m.b,m.t]);
-    grid(svg,x,y,[40,50,60,70,80,90],v=>v+'%',[1920,1940,1960,1980,2000,2022]);
+    grid(svg,x,y,[40,50,60,70,80,90],v=>v+'%',[1900,1920,1940,1960,1980,2000,2028]);
     const line=d3.line().x(d=>x(d[0])).y(d=>y(d[1])).curve(d3.curveMonotoneX);
     const p=svg.append('path').datum(FACE_PTS).attr('d',line)
       .attr('fill','none').attr('stroke','#e8e4da').attr('stroke-width',3).attr('stroke-linecap','round');
@@ -2181,9 +2283,9 @@ function d3Charts(){
   /* --- VI-a. THE QUIETING: text coverage fades like a dying shout --- */
   {
     const svg=d3.select('#quiet'),W=960,H=340,m={t:30,r:30,b:40,l:50};
-    const x=d3.scaleLinear().domain([1920,2022]).range([m.l,W-m.r]);
+    const x=d3.scaleLinear().domain([1897,2028]).range([m.l,W-m.r]);
     const y=d3.scaleLinear().domain([15,40]).range([H-m.b,m.t]);
-    grid(svg,x,y,[15,20,25,30,35,40],v=>v+'%',[1920,1940,1960,1980,2000,2022]);
+    grid(svg,x,y,[15,20,25,30,35,40],v=>v+'%',[1900,1920,1940,1960,1980,2000,2028]);
     const gr=svg.append('defs').append('linearGradient').attr('id','qgrad')
       .attr('x1',0).attr('y1',0).attr('x2',1).attr('y2',0);
     gr.append('stop').attr('offset','0%').attr('stop-color','#e5a00d').attr('stop-opacity',.4);
@@ -2197,7 +2299,7 @@ function d3Charts(){
     svg.append('text').attr('class','annot').attr('text-anchor','middle')
       .attr('x',x(1956)).attr('y',y(36.1)-12).attr('font-weight','bold').text(t('see_shocking'));
     svg.append('text').attr('class','annot').attr('text-anchor','end')
-      .attr('x',x(2020)).attr('y',y(18.9)-12).attr('opacity',.6).text(t('whisper'));
+      .attr('x',x(2026)).attr('y',y(18.0)-12).attr('opacity',.6).text(t('whisper'));
     const ro=mkReadout('quiet',t('hint_tap_drag_century'));
     const bis=d3.bisector(d=>d[0]).center;
     const scrub=wireScrub('quiet',{n:TEXT_PTS.length, start:TEXT_PTS.length-1, show:i=>{
@@ -2218,20 +2320,20 @@ function d3Charts(){
   /* --- VI-b. SYMMETRY: the line carries its own mirror reflection --- */
   {
     const svg=d3.select('#symmetry'),W=960,H=340,m={t:30,r:30,b:40,l:50};
-    const x=d3.scaleLinear().domain([1920,2022]).range([m.l,W-m.r]);
+    const x=d3.scaleLinear().domain([1897,2028]).range([m.l,W-m.r]);
     const y=d3.scaleLinear().domain([0.73,0.89]).range([H-m.b,m.t]);
-    grid(svg,x,y,[0.74,0.78,0.82,0.86],v=>v.toFixed(2),[1920,1940,1960,1980,2000,2022]);
+    grid(svg,x,y,[0.74,0.78,0.82,0.86],v=>v.toFixed(2),[1900,1920,1940,1960,1980,2000,2028]);
     const line=d3.line().x(d=>x(d[0])).y(d=>y(d[1])).curve(d3.curveMonotoneX);
     /* mirrored ghost: same curve reflected around its final value — the medium is the message */
-    const mirror=d3.line().x(d=>x(d[0])).y(d=>y(2*0.87-d[1])).curve(d3.curveMonotoneX);
+    const mirror=d3.line().x(d=>x(d[0])).y(d=>y(2*0.873-d[1])).curve(d3.curveMonotoneX);
     const ghost=svg.append('path').datum(SYM_PTS).attr('d',mirror)
       .attr('fill','none').attr('stroke','#e8e4da').attr('stroke-width',1.5).attr('opacity',0);
     const p=svg.append('path').datum(SYM_PTS).attr('d',line)
       .attr('fill','none').attr('stroke','#e8e4da').attr('stroke-width',3).attr('stroke-linecap','round');
-    svg.append('line').attr('x1',x(1950)).attr('x2',x(2022)).attr('y1',y(0.87)).attr('y2',y(0.87))
+    svg.append('line').attr('x1',x(1950)).attr('x2',x(2026)).attr('y1',y(0.873)).attr('y2',y(0.873))
       .attr('class','annot-line').attr('opacity',.5);
     svg.append('text').attr('class','annot').attr('text-anchor','end')
-      .attr('x',x(2022)).attr('y',y(0.868)-8).text(t('peak_2022_symmetry'));
+      .attr('x',x(2026)).attr('y',y(0.873)-8).text(t('peak_2022_symmetry'));
     svg.append('text').attr('class','annot').attr('text-anchor','middle')
       .attr('x',x(2013)).attr('y',y(0.842)+24).text(t('elevated_leap'));
     const ro=mkReadout('symmetry',t('hint_tap_drag_century'));
@@ -2255,7 +2357,7 @@ function d3Charts(){
   /* --- VI-c. DIAGONAL: the poster stops leaning --- */
   {
     const svg=d3.select('#diagonal'),W=960,H=340,m={t:30,r:30,b:40,l:50};
-    const x=d3.scaleLinear().domain([1920,2022]).range([m.l,W-m.r]);
+    const x=d3.scaleLinear().domain([1897,2028]).range([m.l,W-m.r]);
     const y=d3.scaleLinear().domain([20,40]).range([H-m.b,m.t]);
     grid(svg,x,y,[20,25,30,35,40],v=>v+'%',[1920,1940,1960,1980,2000,2020]);
     const gr=svg.append('defs').append('linearGradient').attr('id','xgrad')
@@ -2271,7 +2373,7 @@ function d3Charts(){
     svg.append('text').attr('class','annot').attr('text-anchor','middle')
       .attr('x',x(1955)).attr('y',y(37.6)-12).text(t('atomic_pulp_peak'));
     svg.append('text').attr('class','annot').attr('text-anchor','end')
-      .attr('x',x(2020)).attr('y',y(23.1)-12).text(t('today_diagonal'));
+      .attr('x',x(2026)).attr('y',y(22.2)-12).text(t('today_diagonal'));
     const ro=mkReadout('diagonal',t('hint_tap_drag_century'));
     const bis=d3.bisector(d=>d[0]).center;
     const scrub=wireScrub('diagonal',{n:DIAG_PTS.length, start:DIAG_PTS.length-1, show:i=>{
@@ -2474,19 +2576,19 @@ function legacyCharts(){
 /* --- darkness curve --- */
 (function(){
   const svg=document.getElementById('darkness'),W=960,H=400,m={t:30,r:30,b:40,l:50};
-  /* FULL CENTURY: mean L* per year, 5-yr rolling (n=18,716, TMDB) */
+  /* FULL CENTURY: mean L* per year, 5-yr rolling (n=37,216, TMDB) */
   const pts=DARK_PTS;
-  const x=y=>m.l+(y-1925)/(2022-1925)*(W-m.l-m.r);
+  const x=y=>m.l+(y-1925)/(2026-1925)*(W-m.l-m.r);
   const yy=v=>m.t+(52-v)/(52-25)*(H-m.t-m.b);
   [25,30,35,40,45,50].forEach(v=>{
     svg.appendChild(el('line',{x1:m.l,x2:W-m.r,y1:yy(v),y2:yy(v),class:'axis'}));
     const t=el('text',{x:m.l-8,y:yy(v)+4,'text-anchor':'end',class:'tick-label'});t.textContent=v;svg.appendChild(t);
   });
-  [1925,1940,1955,1970,1985,2000,2015,2022].forEach(v=>{
+  [1925,1940,1955,1970,1985,2000,2015,2026].forEach(v=>{
     const t=el('text',{x:x(v),y:H-14,'text-anchor':'middle',class:'tick-label'});t.textContent=v;svg.appendChild(t);
   });
   const d='M'+pts.map(p=>`${x(p[0])},${yy(p[1])}`).join(' L');
-  svg.appendChild(el('path',{d:d+` L${x(2022)},${yy(25)} L${x(1925)},${yy(25)} Z`,fill:'rgba(229,160,13,.08)'}));
+  svg.appendChild(el('path',{d:d+` L${x(2026)},${yy(25)} L${x(1925)},${yy(25)} Z`,fill:'rgba(229,160,13,.08)'}));
   svg.appendChild(el('path',{d,fill:'none',stroke:'#e5a00d','stroke-width':3,'stroke-linecap':'round'}));
   [[1930,t('annot_expressionist_shadow'),37.5,1930,39.6],[1975,t('annot_occult_slide'),45.8,1975,41.8],[1982,t('annot_slasher_black'),31,1982,37],[2020,t('annot_never_came_back'),26.5,2020,28.9]].forEach(a=>{
     svg.appendChild(el('line',{x1:x(a[3]),x2:x(a[3]),y1:yy(a[4]),y2:yy(a[2])+14,class:'annot-line'}));
@@ -2497,9 +2599,9 @@ function legacyCharts(){
 /* --- rise of red --- */
 (function(){
   const svg=document.getElementById('red'),W=960,H=340,m={t:30,r:30,b:40,l:50};
-  /* FULL CENTURY: % blood-red pixels per year, 5-yr rolling (n=18,716, TMDB) */
+  /* FULL CENTURY: % blood-red pixels per year, 5-yr rolling (n=37,216, TMDB) */
   const pts=RED_PTS;
-  const x=y=>m.l+(y-1925)/(2022-1925)*(W-m.l-m.r);
+  const x=y=>m.l+(y-1925)/(2026-1925)*(W-m.l-m.r);
   const yy=v=>m.t+(15-v)/(15-0)*(H-m.t-m.b);
   [0,5,10,15].forEach(v=>{
     svg.appendChild(el('line',{x1:m.l,x2:W-m.r,y1:yy(v),y2:yy(v),class:'axis'}));
@@ -2509,7 +2611,7 @@ function legacyCharts(){
     const t=el('text',{x:x(v),y:H-14,'text-anchor':'middle',class:'tick-label'});t.textContent=v;svg.appendChild(t);
   });
   const line='M'+pts.map(p=>`${x(p[0])},${yy(p[1])}`).join(' L');
-  svg.appendChild(el('path',{d:line+` L${x(2022)},${yy(0)} L${x(1925)},${yy(0)} Z`,fill:'rgba(193,18,31,.35)'}));
+  svg.appendChild(el('path',{d:line+` L${x(2026)},${yy(0)} L${x(1925)},${yy(0)} Z`,fill:'rgba(193,18,31,.35)'}));
   svg.appendChild(el('path',{d:line,fill:'none',stroke:'#c1121f','stroke-width':3,'stroke-linecap':'round'}));
   [[1932,'Before blood: 4%',5.8,1932],[1970,'Occult red',13.4,1970],[1985,'Slashers never led',12.8,1985],[2005,'Peak: meta-horror',15.2,2005]].forEach(a=>{
     const t=el('text',{x:x(a[3]),y:yy(a[2])-8,'text-anchor':'middle',class:'annot'});t.textContent=a[1];svg.appendChild(t);
@@ -2519,19 +2621,19 @@ function legacyCharts(){
 /* --- the floating head: % posters with a detectable face --- */
 (function(){
   const svg=document.getElementById('faces'),W=960,H=340,m={t:30,r:30,b:40,l:50};
-  /* FULL CENTURY: % posters with >=1 face, 5-yr rolling (n=18,716, YuNet) */
+  /* FULL CENTURY: % posters with >=1 face, 5-yr rolling (n=37,216, YuNet) */
   const pts=FACE_PTS;
-  const x=y=>m.l+(y-1920)/(2022-1920)*(W-m.l-m.r);
+  const x=y=>m.l+(y-1897)/(2028-1897)*(W-m.l-m.r);
   const yy=v=>m.t+(90-v)/(90-40)*(H-m.t-m.b);
   [40,50,60,70,80,90].forEach(v=>{
     svg.appendChild(el('line',{x1:m.l,x2:W-m.r,y1:yy(v),y2:yy(v),class:'axis'}));
     const t=el('text',{x:m.l-8,y:yy(v)+4,'text-anchor':'end',class:'tick-label'});t.textContent=v+'%';svg.appendChild(t);
   });
-  [1920,1940,1960,1980,2000,2022].forEach(v=>{
+  [1900,1920,1940,1960,1980,2000,2028].forEach(v=>{
     const t=el('text',{x:x(v),y:H-14,'text-anchor':'middle',class:'tick-label'});t.textContent=v;svg.appendChild(t);
   });
   const line='M'+pts.map(p=>`${x(p[0])},${yy(p[1])}`).join(' L');
-  svg.appendChild(el('path',{d:line+` L${x(2022)},${yy(40)} L${x(1920)},${yy(40)} Z`,fill:'rgba(232,228,218,.06)'}));
+  svg.appendChild(el('path',{d:line+` L${x(2026)},${yy(40)} L${x(1920)},${yy(40)} Z`,fill:'rgba(232,228,218,.06)'}));
   svg.appendChild(el('path',{d:line,fill:'none',stroke:'#e8e4da','stroke-width':3,'stroke-linecap':'round'}));
   [[1998,'1998: bigger faces',70.5,1998],[2018,'under half',46,2018]].forEach(a=>{
     const t=el('text',{x:x(a[3]),y:yy(a[2])-8,'text-anchor':'middle',class:'annot'});t.textContent=a[1];svg.appendChild(t);
@@ -2542,9 +2644,9 @@ function legacyCharts(){
 (function(){
   const mk=(id,pts,dom,fmt,color)=>{
     const svg=document.getElementById(id),W=960,H=340,m={t:30,r:30,b:40,l:50};
-    const x=v=>m.l+(v-1920)/(2022-1920)*(W-m.l-m.r);
+    const x=v=>m.l+(v-1897)/(2028-1897)*(W-m.l-m.r);
     const yy=v=>m.t+(dom[1]-v)/(dom[1]-dom[0])*(H-m.t-m.b);
-    [1920,1940,1960,1980,2000,2022].forEach(v=>{
+    [1900,1920,1940,1960,1980,2000,2028].forEach(v=>{
       const t=el('text',{x:x(v),y:H-14,'text-anchor':'middle',class:'tick-label'});t.textContent=v;svg.appendChild(t);});
     const steps=4,st=(dom[1]-dom[0])/steps;
     for(let i=0;i<=steps;i++){const v=dom[0]+i*st;

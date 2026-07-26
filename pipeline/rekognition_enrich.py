@@ -237,8 +237,11 @@ def main():
                 json.dumps(decade_summary(df), indent=2), encoding="utf-8"
             )
             if args.live_lookup:
-                import build_lookup
-                build_lookup.main()
+                try:
+                    import build_lookup
+                    build_lookup.main()
+                except Exception as e:
+                    print(f"live-lookup rebuild skipped: {e}", flush=True)
 
     df = pd.DataFrame(rows.values())
     df.to_csv(OUT, index=False)
@@ -247,8 +250,11 @@ def main():
     )
     print(f"wrote {OUT} ({len(df)} rows, {n_new} new, {time.time()-t0:.1f}s)")
     if args.merge_lookup or args.live_lookup:
-        import build_lookup
-        build_lookup.main()
+        try:
+            import build_lookup
+            build_lookup.main()
+        except Exception as e:
+            print(f"lookup rebuild failed: {e}", flush=True)
 
 
 if __name__ == "__main__":

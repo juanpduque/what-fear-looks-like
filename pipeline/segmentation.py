@@ -216,11 +216,21 @@ def main():
         meta = meta.groupby(meta.year // 10 * 10, group_keys=False).apply(
             lambda g: g.sample(min(len(g), max(1, args.sample // n_decades)), random_state=42))
 
-    done = set(pd.read_csv(CHECKPOINT).id) if CHECKPOINT.exists() else set()
+    # Seed resumable checkpoint from the published table when missing.
+    final_path = DATA / "segmentation.csv"
+    if not CHECKPOINT.exists() and final_path.exists():
+        pd.read_csv(final_path).to_csv(CHECKPOINT, index=False)
+
+    done = set()
+    if CHECKPOINT.exists():
+        done = set(pd.read_csv(CHECKPOINT)["id"].astype(int))
+    meta = meta.copy()
+    meta["id"] = meta["id"].astype(int)
+    meta["year"] = meta["year"].astype(int)
     todo = meta[~meta.id.isin(done)]
-    print(f"pending: {len(todo):,} / {len(meta):,}")
+    print(f"pending: {len(todo):,} / {len(meta):,}", flush=True)
     if len(todo):
-        print("loading models (SegFormer-b0, Minc-Materials-23, CLIP ViT-B-32)...")
+        print("loading models (SegFormer-b0, Minc-Materials-23, CLIP ViT-B-32)...", flush=True)
         models = load_models(device)
         protos = clip_prototypes(models, device)
 
@@ -230,12 +240,14 @@ def main():
         # would be a bad trade for saving a few CSV writes.
         FLUSH_EVERY = 5
         t0, rows, n_done_total = time.time(), [], 0
-        ids, years = list(todo.id), list(todo.year)
+        ids, years = list(todo.id.astype(int)), list(todo.year.astype(int))
         for ci, i in enumerate(range(0, len(ids), CHUNK)):
             if args.budget and time.time() - t0 > args.budget:
                 break
             batch_ids, batch_yrs, imgs = [], [], []
             for pid, yr in zip(ids[i:i + CHUNK], years[i:i + CHUNK]):
+                pid = int(pid)
+                yr = int(yr)
                 f = DATA / "posters" / f"{pid}.jpg"
                 if not f.exists():
                     continue
@@ -250,13 +262,14 @@ def main():
             try:
                 batch_rows = analyze_chunk(imgs, models, protos, device)
             except Exception as e:
-                print(f"  chunk failed ({e}), skipping {len(imgs)} posters")
+                print(f"  chunk failed ({e}), skipping {len(imgs)} posters", flush=True)
                 continue
             for pid, yr, row in zip(batch_ids, batch_yrs, batch_rows):
-                row.update(id=pid, year=int(yr))
+                row.update(id=int(pid), year=int(yr))
                 rows.append(row)
             rate = (n_done_total + len(rows)) / max(time.time() - t0, 1e-9)
-            print(f"  {n_done_total + len(rows):,}/{len(todo):,} | {rate:.2f}/s", end="\r")
+            print(f"  {n_done_total + len(rows):,}/{len(todo):,} | {rate:.2f}/s",
+                  flush=True)
 
             if rows and (ci + 1) % FLUSH_EVERY == 0:
                 pd.DataFrame(rows).to_csv(CHECKPOINT, mode="a",
@@ -270,7 +283,8 @@ def main():
             n_done_total += len(rows)
         total = len(done) + n_done_total
         rate = n_done_total / max(time.time() - t0, 1e-9)
-        print(f"\nbatch: {n_done_total:,} | total: {total:,}/{len(meta):,} | {rate:.2f}/s")
+        print(f"\nbatch: {n_done_total:,} | total: {total:,}/{len(meta):,} | {rate:.2f}/s",
+              flush=True)
 
     # Regenerate the aggregates from whatever the checkpoint has so far —
     # runs take hours, so callers can inspect progress after any --budget
@@ -278,10 +292,12 @@ def main():
     if CHECKPOINT.exists():
         d = pd.read_csv(CHECKPOINT).drop_duplicates("id")
         d.to_csv(DATA / "segmentation.csv", index=False)
-        d["decade"] = (d.year // 10) * 10
-        cols = [c for c in d.columns if c not in ("id", "year", "decade")]
-        agg = d.groupby("decade")[cols].mean().round(4)
-        agg["n"] = d.groupby("decade").size()
+        y = d.year.astype(int)
+        d_dec = d[(y >= 1897) & (y <= 2030)].copy()
+        d_dec["decade"] = (d_dec.year // 10) * 10
+        cols = [c for c in d_dec.columns if c not in ("id", "year", "decade")]
+        agg = d_dec.groupby("decade")[cols].mean().round(4)
+        agg["n"] = d_dec.groupby("decade").size()
         agg.reset_index().to_json(DATA / "segmentation_decade.json", orient="records")
         print("\n=== TOP 5 CLASES POR DECADA (de lo procesado hasta ahora) ===")
         for dec, r in agg.drop(columns="n").iterrows():
