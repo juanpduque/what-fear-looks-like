@@ -1,7 +1,7 @@
 {
   "all_horror": {
-    "en": "All horror (37,009)",
-    "es": "Todo el terror (37,009)"
+    "en": "All horror (38,299)",
+    "es": "Todo el terror (38,299)"
   },
   "mainstream": {
     "en": "Mainstream (100+ votes)",
@@ -220,8 +220,8 @@
     "es": "Gráfico apilado de seis bandas de matiz de los años 20 a los 2020. El negro y el gris suben con el tiempo mientras los colores pulp cálidos se contraen."
   },
   "table_river_caption": {
-    "en": "Mean pixel share by hue family, per decade (n=37,009)",
-    "es": "Cuota media de píxeles por familia de matiz, por década (n=37,009)"
+    "en": "Mean pixel share by hue family, per decade (n=38,299)",
+    "es": "Cuota media de píxeles por familia de matiz, por década (n=38,299)"
   },
   "aria_darkness_label": {
     "en": "Average poster brightness over the century",
@@ -544,12 +544,12 @@
     "es": "Cargando…"
   },
   "lookup_note_semantic_sample": {
-    "en": "Semantic tags only exist for the stratified segmentation sample (~1,721 posters).",
-    "es": "Las etiquetas semánticas solo existen para la muestra estratificada de segmentación (~1,721 pósters)."
+    "en": "Semantic tags come from the full-run CLIP segmentation (n=38,299).",
+    "es": "Las etiquetas semánticas vienen de la segmentación CLIP a recorrido completo (n=38,299)."
   },
   "lookup_note_no_clip": {
-    "en": "No CLIP semantic segmentation for this poster (outside the ~1,721 stratified sample).",
-    "es": "Sin segmentación semántica CLIP para este póster (fuera de la muestra estratificada de ~1,721)."
+    "en": "No CLIP semantic segmentation for this poster.",
+    "es": "Sin segmentación semántica CLIP para este póster."
   },
   "lookup_note_rekognition": {
     "en": "Rekognition complements CLIP/YuNet: photo labels & moderation. Painted sheets often return 0 faces.",
@@ -776,7 +776,7 @@
     "es": "centro de masa"
   },
   "lab_semantic_tags": {
-    "en": "semantic sample tags",
-    "es": "etiquetas semánticas de muestra"
+    "en": "semantic tags",
+    "es": "etiquetas semánticas"
   }
 }

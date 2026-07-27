@@ -22,6 +22,7 @@ GAP = DATA / "gap_en_remaining_no_poster.csv"
 SIDECAR = DATA / "imdb_ids.csv"
 HITS = DATA / "gap_en_no_poster_omdb_hits.csv"
 MISS = DATA / "gap_en_no_poster_omdb_miss.csv"
+DEAD = DATA / "gap_en_omdb_amazon_dead.csv"
 POSTER_DIR = DATA / "posters"
 OMDB_URL = "http://www.omdbapi.com/"
 
@@ -70,6 +71,20 @@ def load_miss() -> set[int]:
     return out
 
 
+def load_dead() -> set[int]:
+    """Amazon poster URLs that keep 404-ing — skip on --refresh-stale."""
+    out: set[int] = set()
+    if not DEAD.exists():
+        return out
+    with DEAD.open(encoding="utf-8", errors="replace") as f:
+        for r in csv.DictReader(f):
+            try:
+                out.add(int(r["id"]))
+            except (KeyError, TypeError, ValueError):
+                continue
+    return out
+
+
 def write_csv(path: Path, rows: list[dict], fields: list[str]) -> None:
     with path.open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=fields, extrasaction="ignore")
@@ -100,6 +115,7 @@ def main() -> None:
     imdb = load_imdb()
     hits = load_hits()
     miss = load_miss()
+    dead = load_dead()
 
     gap_rows = list(csv.DictReader(GAP.open(encoding="utf-8", errors="replace")))
     candidates: list[dict] = []
@@ -117,8 +133,10 @@ def main() -> None:
             continue
         if pid in miss and not args.recheck_miss and pid not in hits:
             continue
-        # refresh-stale: only prior hits without local file
+        # refresh-stale: only prior hits without local file (skip known Amazon dead)
         if args.refresh_stale and pid in hits and not has_local(pid):
+            if pid in dead:
+                continue
             candidates.append({**r, "id": pid, "imdb_id": tt})
             continue
         if pid not in hits and (pid not in miss or args.recheck_miss):
