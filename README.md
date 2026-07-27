@@ -3,7 +3,7 @@
 **100 years of horror movie posters, one pixel at a time.**
 A data-driven visual essay by [Pulp Analytics](https://medium.com/pulp-analytics), in the style of [The Pudding](https://pudding.cool).
 
-We analyze **37,009** horror movie posters (1897–2028) to measure how the way we sell fear has changed: color (the Darkness Curve, the Rise of Red, the Color River), faces, monsters, medium (painted vs. photographic), typography, composition/layout, aesthetics, and material/scene makeup. From the full TMDB horror corpus we exclude titles genre-tagged `Animation` and `Music`, and films whose TMDB `original_language` is not English (~8,907) — non-English poster lettering skewed typography/OCR. **TV Movies (telefilms) are kept** — they are single films made for television, not series, and still sell fear on a one-sheet. Lists in `pipeline/data/excluded_*.csv`, applied via `python3 apply_exclusions.py`.
+We analyze **38,299** horror movie posters (1897–2028) to measure how the way we sell fear has changed: color (the Darkness Curve, the Rise of Red, the Color River), faces, monsters, medium (painted vs. photographic), typography, composition/layout, aesthetics, and material/scene makeup. From the full TMDB horror corpus we exclude titles genre-tagged `Animation` and `Music`, and films whose TMDB `original_language` is not English (~8,907) — non-English poster lettering skewed typography/OCR. **TV Movies (telefilms) are kept** — they are single films made for television, not series, and still sell fear on a one-sheet. Lists in `pipeline/data/excluded_*.csv`, applied via `python3 apply_exclusions.py`.
 
 ## Structure
 
@@ -27,10 +27,10 @@ Every script is resumable and writes into `pipeline/data/`.
 cd pipeline
 pip3 install pandas numpy pillow scikit-learn matplotlib requests
 python3 fear_pipeline.py                    # 1,000-poster validation sample
-python3 fear_pipeline.py --all              # full dataset (~28.7k before exclusions, ~1GB)
+python3 fear_pipeline.py --all              # full color pass on local posters
 # after a full run (or any metric recompute), drop Animation + Music + non-EN
 # and rebuild aggregates + site chart series:
-python3 apply_exclusions.py                 # uses data/excluded_*.csv → 37,009
+python3 apply_exclusions.py                 # uses data/excluded_*.csv → 38,299
 #                                     also writes ../site/data/series.js
 python3 fear_pipeline.py --refresh --api-key YOUR_TMDB_KEY   # add post-2022 films
 python3 fear_pipeline.py --backfill         # fill in 1920-1949 metadata
@@ -48,6 +48,30 @@ python3 export_site_series.py               # → ../site/data/series.js
 
 `backfill_meta.py` persists 1920–1949 film metadata from TMDB Discover to CSV
 (the in-pipeline backfill above only holds it in memory).
+
+### Poster gap enrichment (TMDB → OMDb → IMDb)
+
+English titles with no TMDB `poster_path` are recovered in order:
+
+1. **IMDb id** — `enrich_imdb_ids.py`, then `enrich_imdb_wikidata.py`
+2. **OMDb** — `probe_omdb_posters.py` → `pull_omdb_posters.py`  
+   Stale Amazon CDN hashes → 404s listed in `gap_en_omdb_amazon_dead.csv`
+3. **Live IMDb art** — `pull_imdb_posters.py`  
+   Default: IMDb suggestion API (`v2.sg.media-imdb.com`) with desktop Chrome
+   headers — same host the site search uses, returns a fresh Amazon hash.  
+   Optional `--browser`: **Playwright** (Python’s Puppeteer) for a real page
+   render when you need it.
+
+```bash
+pip3 install requests
+# optional browser fallback:
+pip3 install playwright && playwright install chromium
+
+python3 pull_imdb_posters.py --min-votes 2 --limit 25
+python3 pull_imdb_posters.py --include-omdb-miss
+python3 pull_imdb_posters.py --browser --channel chrome --headed
+python3 analyze_color_ids.py --ids-file data/imdb_poster_ids.csv
+```
 
 ### 2. Semantic chapters (CLIP + face detection)
 
@@ -114,8 +138,8 @@ open vocabulary (blood, smoke, bone) that neither of the above covers.
 Outputs: `segmentation.csv` (per-poster), `segmentation_decade.json` (a
 "material palette" by decade, same shape as `hue_river.json`).
 
-Ran a stratified sample across all 11 decades; after exclusions the site
-uses **n = 1,721** posters. Validated `--validate` against 5 posters with
+Ran the **full corpus** after exclusions; the site uses **n = 38,299**
+posters for segmentation. Validated `--validate` against 5 posters with
 manually-checked artwork (Jaws, Friday the 13th, The Blair Witch Project,
 The Evil Dead, The Thing) before trusting any of it. Real, useful signal:
 `clip_blood` enters the top classes starting in the 1970s and stays there
@@ -135,8 +159,8 @@ trustworthy part of this dataset.
 No Detectron2 here either — all three models install via
 `pip install transformers` with official arm64 wheels. Minc-Materials-23 is
 the slowest of the three on CPU (~1s/poster even at a coarse 2×2 grid), so a
-full run is a multi-hour unattended job; the stratified `--sample` is enough
-to see decade-level trends without committing to that.
+full run is a multi-hour unattended job; `--sample` remains useful for
+smoke-testing decade-level trends before committing to that.
 
 ## View the site
 
