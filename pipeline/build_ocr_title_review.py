@@ -232,6 +232,8 @@ h1{font-family:"Anton",Impact,sans-serif;font-size:24px;letter-spacing:.02em;
 .actions button.notitle{border-color:#6a5630;color:#e5c97a}
 .actions button.otherlang{border-color:#30466a;color:#a8c4f0}
 .actions button.unsure{border-color:#555;color:var(--dim)}
+.actions button.exadult{border-color:#6a3060;color:#e8a0d4}
+.actions button.exquality{border-color:#4a4a30;color:#c8c090}
 .actions button.nav{opacity:.85}
 .actions button.is-selected{outline:2px solid var(--amber);outline-offset:2px;font-weight:700}
 .mine{margin-top:8px;padding:12px 14px;border:1px solid var(--line);border-radius:4px;
@@ -274,6 +276,8 @@ kbd{background:#1a1a1e;border:1px solid #333;border-radius:3px;padding:1px 5px;c
     <button type="button" data-f="no_title">no_title</button>
     <button type="button" data-f="other_lang">other_lang</button>
     <button type="button" data-f="unsure">unsure</button>
+    <button type="button" data-f="exclude_adult">excl. adulto</button>
+    <button type="button" data-f="exclude_quality">excl. calidad</button>
     <button type="button" data-f="low">score&lt;0.3</button>
   </div>
   <div class="stage">
@@ -291,7 +295,9 @@ kbd{background:#1a1a1e;border:1px solid #333;border-radius:3px;padding:1px 5px;c
         <b>wrong</b> = el OCR <b>no</b> coincide (basura / distinto) ·
         <b>no_title</b> = sin título legible en el arte ·
         <b>other_lang</b> = texto en otro idioma ·
-        <b>unsure</b> = dudoso.
+        <b>unsure</b> = dudoso ·
+        <b>excl. adulto</b> = sacar del corpus por contenido adulto ·
+        <b>excl. calidad</b> = sacar por calidad de imagen/arte.
         Ej.: portada correcta + OCR basura → <b>match + wrong</b>.</p>
       <div class="actions">
         <button type="button" class="match" data-pick="match" title="1">1 · match</button>
@@ -299,17 +305,21 @@ kbd{background:#1a1a1e;border:1px solid #333;border-radius:3px;padding:1px 5px;c
         <button type="button" class="notitle" data-pick="no_title" title="3">3 · no_title</button>
         <button type="button" class="otherlang" data-pick="other_lang" title="4">4 · other_lang</button>
         <button type="button" class="unsure" data-pick="unsure" title="5">5 · unsure</button>
+        <button type="button" class="exadult" data-pick="exclude_adult" title="6">6 · excl. adulto</button>
+        <button type="button" class="exquality" data-pick="exclude_quality" title="7">7 · excl. calidad</button>
         <button type="button" class="nav" id="btnPrev" title="←">← Prev</button>
         <button type="button" class="nav" id="btnNext" title="→ / Enter">Next →</button>
       </div>
       <div class="mine" id="mine">Tu veredicto: <b>—</b></div>
-      <p class="keys">Atajos: <kbd>1</kbd>–<kbd>5</kbd> toggle · <kbd>←</kbd><kbd>→</kbd>/<kbd>Enter</kbd> navegar · <kbd>U</kbd> limpiar marcas</p>
+      <p class="keys">Atajos: <kbd>1</kbd>–<kbd>7</kbd> toggle · <kbd>←</kbd><kbd>→</kbd>/<kbd>Enter</kbd> navegar · <kbd>U</kbd> limpiar marcas</p>
     </div>
   </div>
   <div class="toolbar">
     <button type="button" id="btnExport">Exportar CSV (backup)</button>
     <button type="button" id="btnWrong">Exportar solo wrong</button>
     <button type="button" id="btnOtherLang">Exportar other_lang</button>
+    <button type="button" id="btnExAdult">Exportar excl. adulto</button>
+    <button type="button" id="btnExQuality">Exportar excl. calidad</button>
     <button type="button" id="btnClear">Borrar progreso local</button>
     <span class="status" id="status"></span>
   </div>
@@ -340,7 +350,7 @@ const TOKEN_STORE = "aof-ocr-title-review-gh-token";
 const GH_REPO = "juanpduque/what-fear-looks-like";
 const GH_PATH = "pipeline/data/qa/ocr_title_review_labels.json";
 const GH_BRANCH = "main";
-const LABELS = ["match","wrong","no_title","other_lang","unsure"];
+const LABELS = ["match","wrong","no_title","other_lang","unsure","exclude_adult","exclude_quality"];
 let filter = "all";
 let idx = 0;
 let verdicts = {};
@@ -502,7 +512,7 @@ function undo(){
 }
 
 function updateStatus(){
-  const counts = {match:0,wrong:0,no_title:0,other_lang:0,unsure:0};
+  const counts = {match:0,wrong:0,no_title:0,other_lang:0,unsure:0,exclude_adult:0,exclude_quality:0};
   let done = 0;
   DATA.forEach(d => {
     const labs = getLabels(verdicts[d.id]);
@@ -516,7 +526,9 @@ function updateStatus(){
     " · wrong(OCR) " + counts.wrong +
     " · no_title " + counts.no_title +
     " · other_lang " + counts.other_lang +
-    " · unsure " + counts.unsure;
+    " · unsure " + counts.unsure +
+    " · excl.adulto " + counts.exclude_adult +
+    " · excl.calidad " + counts.exclude_quality;
 }
 
 function download(name, text){
@@ -528,7 +540,7 @@ function download(name, text){
 }
 
 function toCSV(rows){
-  const cols = ["id","title","year","score","labels","match","wrong","no_title","other_lang","unsure","ocr"];
+  const cols = ["id","title","year","score","labels","match","wrong","no_title","other_lang","unsure","exclude_adult","exclude_quality","ocr"];
   const esc = v => {
     const s = String(v==null?"":v);
     return /[",\n]/.test(s) ? '"' + s.replace(/"/g,'""') + '"' : s;
@@ -543,6 +555,8 @@ function toCSV(rows){
       no_title: labs.includes("no_title") ? 1 : 0,
       other_lang: labs.includes("other_lang") ? 1 : 0,
       unsure: labs.includes("unsure") ? 1 : 0,
+      exclude_adult: labs.includes("exclude_adult") ? 1 : 0,
+      exclude_quality: labs.includes("exclude_quality") ? 1 : 0,
       ocr: r.ocr
     };
     return cols.map(c => esc(row[c])).join(",");
@@ -709,6 +723,14 @@ document.getElementById("btnOtherLang").onclick = () => {
   const rows = DATA.map(d => verdicts[d.id]).filter(v => hasLabel(v, "other_lang"));
   download("ocr_title_review_other_lang.csv", toCSV(rows));
 };
+document.getElementById("btnExAdult").onclick = () => {
+  const rows = DATA.map(d => verdicts[d.id]).filter(v => hasLabel(v, "exclude_adult"));
+  download("ocr_title_review_exclude_adult.csv", toCSV(rows));
+};
+document.getElementById("btnExQuality").onclick = () => {
+  const rows = DATA.map(d => verdicts[d.id]).filter(v => hasLabel(v, "exclude_quality"));
+  download("ocr_title_review_exclude_quality.csv", toCSV(rows));
+};
 document.getElementById("btnClear").onclick = () => {
   if(!confirm("¿Borrar todo el progreso local de esta QA?")) return;
   verdicts = {};
@@ -736,6 +758,8 @@ document.addEventListener("keydown", e => {
   else if(e.key==="3") toggleLabel("no_title");
   else if(e.key==="4") toggleLabel("other_lang");
   else if(e.key==="5") toggleLabel("unsure");
+  else if(e.key==="6") toggleLabel("exclude_adult");
+  else if(e.key==="7") toggleLabel("exclude_quality");
   else if(e.key==="ArrowLeft"){ idx--; show(); }
   else if(e.key==="ArrowRight" || e.key==="Enter"){ idx++; show(); }
   else if(e.key==="u" || e.key==="U") undo();
