@@ -230,6 +230,7 @@ h1{font-family:"Anton",Impact,sans-serif;font-size:24px;letter-spacing:.02em;
 .actions button.ok{border-color:#2d6a4a;color:#8fd4ad}
 .actions button.wrong{border-color:#7a1a22;color:#f0a0a8}
 .actions button.notitle{border-color:#6a5630;color:#e5c97a}
+.actions button.otherlang{border-color:#30466a;color:#a8c4f0}
 .actions button.unsure{border-color:#555;color:var(--dim)}
 .actions button.nav{opacity:.85}
 .actions button.is-selected{outline:2px solid var(--amber);outline-offset:2px;font-weight:700}
@@ -260,6 +261,7 @@ kbd{background:#1a1a1e;border:1px solid #333;border-radius:3px;padding:1px 5px;c
     <button type="button" data-f="ok">ok</button>
     <button type="button" data-f="wrong">wrong</button>
     <button type="button" data-f="no_title">no_title</button>
+    <button type="button" data-f="other_lang">other_lang</button>
     <button type="button" data-f="unsure">unsure</button>
     <button type="button" data-f="low">score&lt;0.3</button>
   </div>
@@ -278,22 +280,25 @@ kbd{background:#1a1a1e;border:1px solid #333;border-radius:3px;padding:1px 5px;c
         <b>ok</b> = sí es la peli (OCR falló o tipografía rara) ·
         <b>wrong</b> = portada equivocada ·
         <b>no_title</b> = es la peli pero el título no está / no se lee ·
+        <b>other_lang</b> = portada en otro idioma (no inglés) ·
         <b>unsure</b> = dudoso.</p>
       <div class="actions">
         <button type="button" class="ok" data-pick="ok" title="1">1 · ok</button>
         <button type="button" class="wrong" data-pick="wrong" title="2">2 · wrong</button>
         <button type="button" class="notitle" data-pick="no_title" title="3">3 · no_title</button>
-        <button type="button" class="unsure" data-pick="unsure" title="4">4 · unsure</button>
+        <button type="button" class="otherlang" data-pick="other_lang" title="4">4 · other_lang</button>
+        <button type="button" class="unsure" data-pick="unsure" title="5">5 · unsure</button>
         <button type="button" class="nav" id="btnPrev" title="←">← Prev</button>
         <button type="button" class="nav" id="btnNext" title="→">Next →</button>
       </div>
       <div class="mine" id="mine">Tu veredicto: <b>—</b></div>
-      <p class="keys">Atajos: <kbd>1</kbd>–<kbd>4</kbd> etiquetar · <kbd>←</kbd><kbd>→</kbd> navegar · <kbd>U</kbd> deshacer</p>
+      <p class="keys">Atajos: <kbd>1</kbd>–<kbd>5</kbd> etiquetar · <kbd>←</kbd><kbd>→</kbd> navegar · <kbd>U</kbd> deshacer</p>
     </div>
   </div>
   <div class="toolbar">
     <button type="button" id="btnExport">Exportar CSV</button>
     <button type="button" id="btnWrong">Exportar solo wrong</button>
+    <button type="button" id="btnOtherLang">Exportar other_lang</button>
     <button type="button" id="btnClear">Borrar progreso local</button>
     <span class="status" id="status"></span>
   </div>
@@ -301,7 +306,7 @@ kbd{background:#1a1a1e;border:1px solid #333;border-radius:3px;padding:1px 5px;c
 <script>
 const DATA = __DATA__;
 const STORE = "aof-ocr-title-review-v1";
-const LABELS = ["ok","wrong","no_title","unsure"];
+const LABELS = ["ok","wrong","no_title","other_lang","unsure"];
 let filter = "all";
 let idx = 0;
 let verdicts = {};
@@ -314,7 +319,7 @@ function filtered(){
     const v = verdicts[d.id];
     if(filter==="todo") return !v;
     if(filter==="done") return !!v;
-    if(filter==="ok" || filter==="wrong" || filter==="no_title" || filter==="unsure")
+    if(LABELS.includes(filter))
       return v && v.label===filter;
     if(filter==="low") return d.score < 0.3;
     return true;
@@ -414,7 +419,7 @@ function undo(){
 }
 
 function updateStatus(){
-  const counts = {ok:0,wrong:0,no_title:0,unsure:0};
+  const counts = {ok:0,wrong:0,no_title:0,other_lang:0,unsure:0};
   let done = 0;
   DATA.forEach(d => {
     const v = verdicts[d.id];
@@ -427,6 +432,7 @@ function updateStatus(){
     " · ok " + counts.ok +
     " · wrong " + counts.wrong +
     " · no_title " + counts.no_title +
+    " · other_lang " + counts.other_lang +
     " · unsure " + counts.unsure;
 }
 
@@ -468,6 +474,10 @@ document.getElementById("btnWrong").onclick = () => {
   const rows = DATA.map(d => verdicts[d.id]).filter(v => v && v.label==="wrong");
   download("ocr_title_review_wrong.csv", toCSV(rows));
 };
+document.getElementById("btnOtherLang").onclick = () => {
+  const rows = DATA.map(d => verdicts[d.id]).filter(v => v && v.label==="other_lang");
+  download("ocr_title_review_other_lang.csv", toCSV(rows));
+};
 document.getElementById("btnClear").onclick = () => {
   if(!confirm("¿Borrar todo el progreso local de esta QA?")) return;
   verdicts = {};
@@ -480,7 +490,8 @@ document.addEventListener("keydown", e => {
   if(e.key==="1") setLabel("ok");
   else if(e.key==="2") setLabel("wrong");
   else if(e.key==="3") setLabel("no_title");
-  else if(e.key==="4") setLabel("unsure");
+  else if(e.key==="4") setLabel("other_lang");
+  else if(e.key==="5") setLabel("unsure");
   else if(e.key==="ArrowLeft"){ idx--; show(); }
   else if(e.key==="ArrowRight"){ idx++; show(); }
   else if(e.key==="u" || e.key==="U") undo();
