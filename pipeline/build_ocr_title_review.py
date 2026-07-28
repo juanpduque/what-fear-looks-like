@@ -286,23 +286,24 @@ kbd{background:#1a1a1e;border:1px solid #333;border-radius:3px;padding:1px 5px;c
       <div class="year" id="year">—</div>
       <div class="score" id="score">—</div>
       <div class="ocr-box"><b>OCR full-text</b><span id="ocr">—</span></div>
-      <p class="hint">Mirando el <b>póster</b> (no el OCR): ¿coincide con el título TMDB de arriba?
-        <b>match</b> = portada correcta (aunque el OCR sea basura) ·
-        <b>wrong</b> = portada de otra peli ·
-        <b>no_title</b> = es la peli pero sin título legible ·
-        <b>other_lang</b> = portada en otro idioma ·
-        <b>unsure</b> = dudoso.</p>
+      <p class="hint">Podés marcar <b>varias</b> a la vez (toggle):
+        <b>match</b> = la portada coincide con el título de la base ·
+        <b>wrong</b> = el OCR <b>no</b> coincide (basura / distinto) ·
+        <b>no_title</b> = sin título legible en el arte ·
+        <b>other_lang</b> = texto en otro idioma ·
+        <b>unsure</b> = dudoso.
+        Ej.: portada correcta + OCR basura → <b>match + wrong</b>.</p>
       <div class="actions">
         <button type="button" class="match" data-pick="match" title="1">1 · match</button>
-        <button type="button" class="wrong" data-pick="wrong" title="2">2 · wrong</button>
+        <button type="button" class="wrong" data-pick="wrong" title="2">2 · wrong (OCR)</button>
         <button type="button" class="notitle" data-pick="no_title" title="3">3 · no_title</button>
         <button type="button" class="otherlang" data-pick="other_lang" title="4">4 · other_lang</button>
         <button type="button" class="unsure" data-pick="unsure" title="5">5 · unsure</button>
         <button type="button" class="nav" id="btnPrev" title="←">← Prev</button>
-        <button type="button" class="nav" id="btnNext" title="→">Next →</button>
+        <button type="button" class="nav" id="btnNext" title="→ / Enter">Next →</button>
       </div>
       <div class="mine" id="mine">Tu veredicto: <b>—</b></div>
-      <p class="keys">Atajos: <kbd>1</kbd>–<kbd>5</kbd> etiquetar · <kbd>←</kbd><kbd>→</kbd> navegar · <kbd>U</kbd> deshacer</p>
+      <p class="keys">Atajos: <kbd>1</kbd>–<kbd>5</kbd> toggle · <kbd>←</kbd><kbd>→</kbd>/<kbd>Enter</kbd> navegar · <kbd>U</kbd> limpiar marcas</p>
     </div>
   </div>
   <div class="toolbar">
@@ -333,7 +334,8 @@ kbd{background:#1a1a1e;border:1px solid #333;border-radius:3px;padding:1px 5px;c
 </div>
 <script>
 const DATA = __DATA__;
-const STORE = "aof-ocr-title-review-v1";
+const STORE = "aof-ocr-title-review-v2";
+const STORE_LEGACY = "aof-ocr-title-review-v1";
 const TOKEN_STORE = "aof-ocr-title-review-gh-token";
 const GH_REPO = "juanpduque/what-fear-looks-like";
 const GH_PATH = "pipeline/data/qa/ocr_title_review_labels.json";
@@ -342,11 +344,39 @@ const LABELS = ["match","wrong","no_title","other_lang","unsure"];
 let filter = "all";
 let idx = 0;
 let verdicts = {};
-try { verdicts = JSON.parse(localStorage.getItem(STORE) || "{}") || {}; } catch(e){ verdicts = {}; }
-// migrate legacy "ok" → "match"
-Object.keys(verdicts).forEach(id => {
-  if(verdicts[id] && verdicts[id].label === "ok") verdicts[id].label = "match";
-});
+
+function normalizeEntry(v){
+  if(!v || typeof v !== "object") return null;
+  let labels = Array.isArray(v.labels) ? v.labels.slice() : null;
+  if(!labels){
+    const one = v.label === "ok" ? "match" : v.label;
+    labels = one ? [one] : [];
+  }
+  labels = labels.map(x => x === "ok" ? "match" : x).filter(x => LABELS.includes(x));
+  // unique
+  labels = LABELS.filter(x => labels.includes(x));
+  return {
+    id: v.id, title: v.title, year: v.year, score: v.score, ocr: v.ocr,
+    labels: labels,
+    label: labels.join("+") || "", // legacy/export convenience
+    ts: v.ts || Date.now()
+  };
+}
+
+function loadVerdicts(){
+  let raw = {};
+  try { raw = JSON.parse(localStorage.getItem(STORE) || "{}") || {}; } catch(e){ raw = {}; }
+  if(!Object.keys(raw).length){
+    try { raw = JSON.parse(localStorage.getItem(STORE_LEGACY) || "{}") || {}; } catch(e){ raw = {}; }
+  }
+  const out = {};
+  Object.keys(raw).forEach(id => {
+    const n = normalizeEntry(raw[id]);
+    if(n && n.labels.length) out[id] = n;
+  });
+  return out;
+}
+verdicts = loadVerdicts();
 try { localStorage.setItem(STORE, JSON.stringify(verdicts)); } catch(e){}
 try {
   const t = localStorage.getItem(TOKEN_STORE) || "";
@@ -355,20 +385,28 @@ try {
 
 function save(){ localStorage.setItem(STORE, JSON.stringify(verdicts)); updateStatus(); }
 
+function getLabels(v){
+  if(!v) return [];
+  return normalizeEntry(v).labels;
+}
+
+function hasLabel(v, lab){
+  return getLabels(v).includes(lab);
+}
+
 function filtered(){
   return DATA.filter(d => {
     const v = verdicts[d.id];
-    if(filter==="todo") return !v;
-    if(filter==="done") return !!v;
+    if(filter==="todo") return !v || !getLabels(v).length;
+    if(filter==="done") return v && getLabels(v).length;
     if(LABELS.includes(filter))
-      return v && v.label===filter;
+      return hasLabel(v, filter);
     if(filter==="low") return d.score < 0.3;
     return true;
   });
 }
 
 function posterSrc(d){
-  // Prefer absolute CDN URL baked at build time
   if(d && d.img) return d.img;
   if(d && d.path) return "https://image.tmdb.org/t/p/w500" + d.path;
   return "";
@@ -414,40 +452,44 @@ function show(){
   document.getElementById("ocr").textContent = d.ocr || "(vacío)";
   document.querySelectorAll(".actions button[data-pick]").forEach(b => b.classList.remove("is-selected"));
   const v = verdicts[d.id];
+  const labs = getLabels(v);
   const mine = document.getElementById("mine");
-  if(!v){
+  if(!labs.length){
     mine.className = "mine";
     mine.innerHTML = "Tu veredicto: <b>sin marcar</b>";
   } else {
     mine.className = "mine marked";
-    mine.innerHTML = "Tu veredicto: <b>" + v.label + "</b>";
-    const pick = document.querySelector('.actions button[data-pick="'+v.label+'"]');
-    if(pick) pick.classList.add("is-selected");
+    mine.innerHTML = "Tu veredicto: <b>" + labs.join(" + ") + "</b>";
+    labs.forEach(lab => {
+      const pick = document.querySelector('.actions button[data-pick="'+lab+'"]');
+      if(pick) pick.classList.add("is-selected");
+    });
   }
   document.getElementById("counter").textContent =
     (idx+1) + " / " + list.length + "  (set " + DATA.length + ")";
-  const done = DATA.filter(x => verdicts[x.id]).length;
+  const done = DATA.filter(x => getLabels(verdicts[x.id]).length).length;
   document.getElementById("bar").style.width = (100 * done / DATA.length) + "%";
   updateStatus();
 }
 
-function setLabel(label){
+function toggleLabel(label){
   const list = filtered();
   if(!list.length || !LABELS.includes(label)) return;
   const d = list[idx];
-  verdicts[d.id] = {
-    id: d.id, title: d.title, year: d.year, score: d.score,
-    label: label, ocr: d.ocr, ts: Date.now()
-  };
-  save();
-  // stay in list; advance within current filter
-  const nextList = filtered();
-  if(filter==="todo"){
-    // item left the todo list; keep same idx
-    if(idx >= nextList.length) idx = Math.max(0, nextList.length - 1);
-  } else if(idx < list.length - 1) {
-    idx++;
+  const prev = getLabels(verdicts[d.id]);
+  let next = prev.slice();
+  if(next.includes(label)) next = next.filter(x => x !== label);
+  else next.push(label);
+  next = LABELS.filter(x => next.includes(x));
+  if(!next.length){
+    delete verdicts[d.id];
+  } else {
+    verdicts[d.id] = {
+      id: d.id, title: d.title, year: d.year, score: d.score,
+      labels: next, label: next.join("+"), ocr: d.ocr, ts: Date.now()
+    };
   }
+  save();
   show();
 }
 
@@ -463,15 +505,15 @@ function updateStatus(){
   const counts = {match:0,wrong:0,no_title:0,other_lang:0,unsure:0};
   let done = 0;
   DATA.forEach(d => {
-    const v = verdicts[d.id];
-    if(!v) return;
+    const labs = getLabels(verdicts[d.id]);
+    if(!labs.length) return;
     done++;
-    if(counts[v.label]!=null) counts[v.label]++;
+    labs.forEach(lab => { if(counts[lab]!=null) counts[lab]++; });
   });
   document.getElementById("status").textContent =
     "marcados " + done + "/" + DATA.length +
     " · match " + counts.match +
-    " · wrong " + counts.wrong +
+    " · wrong(OCR) " + counts.wrong +
     " · no_title " + counts.no_title +
     " · other_lang " + counts.other_lang +
     " · unsure " + counts.unsure;
@@ -486,12 +528,25 @@ function download(name, text){
 }
 
 function toCSV(rows){
-  const cols = ["id","title","year","score","label","ocr"];
+  const cols = ["id","title","year","score","labels","match","wrong","no_title","other_lang","unsure","ocr"];
   const esc = v => {
     const s = String(v==null?"":v);
     return /[",\n]/.test(s) ? '"' + s.replace(/"/g,'""') + '"' : s;
   };
-  return cols.join(",") + "\n" + rows.map(r => cols.map(c => esc(r[c])).join(",")).join("\n");
+  return cols.join(",") + "\n" + rows.map(r => {
+    const labs = getLabels(r);
+    const row = {
+      id: r.id, title: r.title, year: r.year, score: r.score,
+      labels: labs.join("|"),
+      match: labs.includes("match") ? 1 : 0,
+      wrong: labs.includes("wrong") ? 1 : 0,
+      no_title: labs.includes("no_title") ? 1 : 0,
+      other_lang: labs.includes("other_lang") ? 1 : 0,
+      unsure: labs.includes("unsure") ? 1 : 0,
+      ocr: r.ocr
+    };
+    return cols.map(c => esc(row[c])).join(",");
+  }).join("\n");
 }
 
 function ghMsg(text, ok){
@@ -512,15 +567,29 @@ function b64ToUtf8(str){
 }
 
 function mergeVerdicts(remote, local){
-  const out = Object.assign({}, remote || {});
-  Object.keys(local || {}).forEach(id => {
-    const a = out[id], b = local[id];
-    if(!a) out[id] = b;
-    else if((b.ts||0) >= (a.ts||0)) out[id] = b;
-  });
-  // normalize legacy ok → match
-  Object.keys(out).forEach(id => {
-    if(out[id] && out[id].label === "ok") out[id].label = "match";
+  const out = {};
+  const ids = new Set([
+    ...Object.keys(remote || {}),
+    ...Object.keys(local || {})
+  ]);
+  ids.forEach(id => {
+    const a = normalizeEntry((remote || {})[id]);
+    const b = normalizeEntry((local || {})[id]);
+    if(!a && !b) return;
+    if(!a){ out[id] = b; return; }
+    if(!b){ out[id] = a; return; }
+    // later timestamp wins for conflicts; union labels if close in time? prefer newer whole entry
+    out[id] = ((b.ts||0) >= (a.ts||0)) ? b : a;
+    // also union labels so multi-PC partial marks combine
+    const labs = LABELS.filter(x =>
+      getLabels(a).includes(x) || getLabels(b).includes(x)
+    );
+    const base = ((b.ts||0) >= (a.ts||0)) ? b : a;
+    out[id] = Object.assign({}, base, {
+      labels: labs,
+      label: labs.join("+"),
+      ts: Math.max(a.ts||0, b.ts||0)
+    });
   });
   return out;
 }
@@ -624,20 +693,20 @@ document.getElementById("filters").addEventListener("click", e => {
   show();
 });
 document.querySelectorAll(".actions button[data-pick]").forEach(b => {
-  b.addEventListener("click", () => setLabel(b.getAttribute("data-pick")));
+  b.addEventListener("click", () => toggleLabel(b.getAttribute("data-pick")));
 });
 document.getElementById("btnPrev").onclick = () => { idx--; show(); };
 document.getElementById("btnNext").onclick = () => { idx++; show(); };
 document.getElementById("btnExport").onclick = () => {
-  const rows = DATA.map(d => verdicts[d.id]).filter(Boolean);
+  const rows = DATA.map(d => verdicts[d.id]).filter(v => getLabels(v).length);
   download("ocr_title_review.csv", toCSV(rows));
 };
 document.getElementById("btnWrong").onclick = () => {
-  const rows = DATA.map(d => verdicts[d.id]).filter(v => v && v.label==="wrong");
+  const rows = DATA.map(d => verdicts[d.id]).filter(v => hasLabel(v, "wrong"));
   download("ocr_title_review_wrong.csv", toCSV(rows));
 };
 document.getElementById("btnOtherLang").onclick = () => {
-  const rows = DATA.map(d => verdicts[d.id]).filter(v => v && v.label==="other_lang");
+  const rows = DATA.map(d => verdicts[d.id]).filter(v => hasLabel(v, "other_lang"));
   download("ocr_title_review_other_lang.csv", toCSV(rows));
 };
 document.getElementById("btnClear").onclick = () => {
@@ -662,13 +731,13 @@ document.getElementById("btnPushGh").onclick = () => pushToGitHub();
 document.getElementById("btnPullGh").onclick = () => pullFromGitHub();
 document.addEventListener("keydown", e => {
   if(e.target && /input|textarea/i.test(e.target.tagName)) return;
-  if(e.key==="1") setLabel("match");
-  else if(e.key==="2") setLabel("wrong");
-  else if(e.key==="3") setLabel("no_title");
-  else if(e.key==="4") setLabel("other_lang");
-  else if(e.key==="5") setLabel("unsure");
+  if(e.key==="1") toggleLabel("match");
+  else if(e.key==="2") toggleLabel("wrong");
+  else if(e.key==="3") toggleLabel("no_title");
+  else if(e.key==="4") toggleLabel("other_lang");
+  else if(e.key==="5") toggleLabel("unsure");
   else if(e.key==="ArrowLeft"){ idx--; show(); }
-  else if(e.key==="ArrowRight"){ idx++; show(); }
+  else if(e.key==="ArrowRight" || e.key==="Enter"){ idx++; show(); }
   else if(e.key==="u" || e.key==="U") undo();
 });
 
