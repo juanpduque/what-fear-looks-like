@@ -227,7 +227,7 @@ h1{font-family:"Anton",Impact,sans-serif;font-size:24px;letter-spacing:.02em;
   border:1px solid var(--line);background:var(--bg2);color:var(--ink);padding:12px 14px;
   border-radius:4px;cursor:pointer}
 .actions button:hover{border-color:#555}
-.actions button.ok{border-color:#2d6a4a;color:#8fd4ad}
+.actions button.match{border-color:#2d6a4a;color:#8fd4ad}
 .actions button.wrong{border-color:#7a1a22;color:#f0a0a8}
 .actions button.notitle{border-color:#6a5630;color:#e5c97a}
 .actions button.otherlang{border-color:#30466a;color:#a8c4f0}
@@ -269,7 +269,7 @@ kbd{background:#1a1a1e;border:1px solid #333;border-radius:3px;padding:1px 5px;c
     <button type="button" data-f="all" class="on">all</button>
     <button type="button" data-f="todo">sin marcar</button>
     <button type="button" data-f="done">marcados</button>
-    <button type="button" data-f="ok">ok</button>
+    <button type="button" data-f="match">match</button>
     <button type="button" data-f="wrong">wrong</button>
     <button type="button" data-f="no_title">no_title</button>
     <button type="button" data-f="other_lang">other_lang</button>
@@ -286,15 +286,14 @@ kbd{background:#1a1a1e;border:1px solid #333;border-radius:3px;padding:1px 5px;c
       <div class="year" id="year">—</div>
       <div class="score" id="score">—</div>
       <div class="ocr-box"><b>OCR full-text</b><span id="ocr">—</span></div>
-      <p class="hint">Casos donde el OCR <b>no</b> encaja bien con el título TMDB (score&lt;0.65).
-        Validá si la <b>portada es de esa película</b>.
-        <b>ok</b> = sí es la peli (OCR falló o tipografía rara) ·
-        <b>wrong</b> = portada equivocada ·
-        <b>no_title</b> = es la peli pero el título no está / no se lee ·
-        <b>other_lang</b> = portada en otro idioma (no inglés) ·
+      <p class="hint">Mirando el <b>póster</b> (no el OCR): ¿coincide con el título TMDB de arriba?
+        <b>match</b> = portada correcta (aunque el OCR sea basura) ·
+        <b>wrong</b> = portada de otra peli ·
+        <b>no_title</b> = es la peli pero sin título legible ·
+        <b>other_lang</b> = portada en otro idioma ·
         <b>unsure</b> = dudoso.</p>
       <div class="actions">
-        <button type="button" class="ok" data-pick="ok" title="1">1 · ok</button>
+        <button type="button" class="match" data-pick="match" title="1">1 · match</button>
         <button type="button" class="wrong" data-pick="wrong" title="2">2 · wrong</button>
         <button type="button" class="notitle" data-pick="no_title" title="3">3 · no_title</button>
         <button type="button" class="otherlang" data-pick="other_lang" title="4">4 · other_lang</button>
@@ -339,14 +338,18 @@ const TOKEN_STORE = "aof-ocr-title-review-gh-token";
 const GH_REPO = "juanpduque/what-fear-looks-like";
 const GH_PATH = "pipeline/data/qa/ocr_title_review_labels.json";
 const GH_BRANCH = "main";
-const LABELS = ["ok","wrong","no_title","other_lang","unsure"];
+const LABELS = ["match","wrong","no_title","other_lang","unsure"];
 let filter = "all";
 let idx = 0;
 let verdicts = {};
 try { verdicts = JSON.parse(localStorage.getItem(STORE) || "{}") || {}; } catch(e){ verdicts = {}; }
+// migrate legacy "ok" → "match"
+Object.keys(verdicts).forEach(id => {
+  if(verdicts[id] && verdicts[id].label === "ok") verdicts[id].label = "match";
+});
+try { localStorage.setItem(STORE, JSON.stringify(verdicts)); } catch(e){}
 try {
   const t = localStorage.getItem(TOKEN_STORE) || "";
-  // filled after DOM; see boot()
   window.__ghTokenInit = t;
 } catch(e){}
 
@@ -457,7 +460,7 @@ function undo(){
 }
 
 function updateStatus(){
-  const counts = {ok:0,wrong:0,no_title:0,other_lang:0,unsure:0};
+  const counts = {match:0,wrong:0,no_title:0,other_lang:0,unsure:0};
   let done = 0;
   DATA.forEach(d => {
     const v = verdicts[d.id];
@@ -467,7 +470,7 @@ function updateStatus(){
   });
   document.getElementById("status").textContent =
     "marcados " + done + "/" + DATA.length +
-    " · ok " + counts.ok +
+    " · match " + counts.match +
     " · wrong " + counts.wrong +
     " · no_title " + counts.no_title +
     " · other_lang " + counts.other_lang +
@@ -514,6 +517,10 @@ function mergeVerdicts(remote, local){
     const a = out[id], b = local[id];
     if(!a) out[id] = b;
     else if((b.ts||0) >= (a.ts||0)) out[id] = b;
+  });
+  // normalize legacy ok → match
+  Object.keys(out).forEach(id => {
+    if(out[id] && out[id].label === "ok") out[id].label = "match";
   });
   return out;
 }
@@ -655,7 +662,7 @@ document.getElementById("btnPushGh").onclick = () => pushToGitHub();
 document.getElementById("btnPullGh").onclick = () => pullFromGitHub();
 document.addEventListener("keydown", e => {
   if(e.target && /input|textarea/i.test(e.target.tagName)) return;
-  if(e.key==="1") setLabel("ok");
+  if(e.key==="1") setLabel("match");
   else if(e.key==="2") setLabel("wrong");
   else if(e.key==="3") setLabel("no_title");
   else if(e.key==="4") setLabel("other_lang");
