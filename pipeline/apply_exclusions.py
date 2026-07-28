@@ -7,6 +7,13 @@ Listas actuales:
   - excluded_animation.csv — genero oficial TMDB "Animation"
   - excluded_music.csv     — genero oficial TMDB "Music"
   - excluded_non_english.csv — original_language != "en" (tipografia/OCR)
+  - excluded_landscape.csv — JPG local landscape/square (no one-sheet)
+  - excluded_tmdb_404.csv  — id TMDB ya no existe (/movie/{id} → 404)
+  - excluded_tmdb_remap_dup.csv — 404 remap cuyo new_id ya esta en corpus
+  - excluded_tmdb_remap_tv.csv — 404 remap a TMDB tv (no movie)
+
+Tras filtrar, regenera series/explorer y alinea el n del texto front
+(README + site/i18n + index) via sync_front_n.py.
 
 No se excluyen "TV Movie" (telefilms): son peliculas unitarias para TV,
 no series; se quedan en el corpus a proposito.
@@ -228,6 +235,23 @@ def main():
         build_explorer()
     except Exception as e:
         print(f"aviso: no se pudo regenerar explorer.js ({e})")
+
+    print("\nalineando n del texto front...")
+    try:
+        from sync_front_n import sync_front_n, check_front_n, corpus_n
+        n = corpus_n()
+        rep = sync_front_n(n)
+        if rep.get("changed"):
+            print(f"  sync_front_n: {rep['stale']:,} → {n:,} ({len(rep['files'])} archivos)")
+        left = check_front_n(n)
+        if left:
+            print("  aviso: texto front aun desalineado:")
+            for i in left:
+                print(f"    - {i}")
+        else:
+            print(f"  texto front n={n:,} OK")
+    except Exception as e:
+        print(f"aviso: sync_front_n fallo ({e})")
     print("\nLISTO.")
 
 

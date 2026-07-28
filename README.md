@@ -3,7 +3,7 @@
 **100 years of horror movie posters, one pixel at a time.**
 A data-driven visual essay by [Pulp Analytics](https://medium.com/pulp-analytics), in the style of [The Pudding](https://pudding.cool).
 
-We analyze **38,299** horror movie posters (1897–2028) to measure how the way we sell fear has changed: color (the Darkness Curve, the Rise of Red, the Color River), faces, monsters, medium (painted vs. photographic), typography, composition/layout, aesthetics, and material/scene makeup. From the full TMDB horror corpus we exclude titles genre-tagged `Animation` and `Music`, and films whose TMDB `original_language` is not English (~8,907) — non-English poster lettering skewed typography/OCR. **TV Movies (telefilms) are kept** — they are single films made for television, not series, and still sell fear on a one-sheet. Lists in `pipeline/data/excluded_*.csv`, applied via `python3 apply_exclusions.py`.
+We analyze **37,829** horror movie posters (1897–2028) to measure how the way we sell fear has changed: color (the Darkness Curve, the Rise of Red, the Color River), faces, monsters, medium (painted vs. photographic), typography, composition/layout, aesthetics, and material/scene makeup. From the full TMDB horror corpus we exclude titles genre-tagged `Animation` and `Music`, films whose TMDB `original_language` is not English (~8,907; non-English lettering skewed typography/OCR), non-portrait local artwork (landscape/square stills or banners, 401), and titles whose TMDB movie id now returns 404 (48), plus 404 remaps that duplicate an id already in the corpus (49) or resolve only to TMDB TV (8). **TV Movies (telefilms) are kept** — they are single films made for television, not series, and still sell fear on a one-sheet. Lists in `pipeline/data/excluded_*.csv`, applied via `python3 apply_exclusions.py`.
 
 ## Structure
 
@@ -30,7 +30,9 @@ python3 fear_pipeline.py                    # 1,000-poster validation sample
 python3 fear_pipeline.py --all              # full color pass on local posters
 # after a full run (or any metric recompute), drop Animation + Music + non-EN
 # and rebuild aggregates + site chart series:
-python3 apply_exclusions.py                 # uses data/excluded_*.csv → 38,299
+python3 apply_exclusions.py                 # uses data/excluded_*.csv → 37,829 (+ sync front n)
+python3 validate_corpus.py --fix-front     # capa 1; alinea texto front/README si el n está stale
+python3 sync_front_n.py --fix              # solo reemplazar n publicado en site/i18n + index + README
 #                                     also writes ../site/data/series.js
 python3 fear_pipeline.py --refresh --api-key YOUR_TMDB_KEY   # add post-2022 films
 python3 fear_pipeline.py --backfill         # fill in 1920-1949 metadata
@@ -138,7 +140,7 @@ open vocabulary (blood, smoke, bone) that neither of the above covers.
 Outputs: `segmentation.csv` (per-poster), `segmentation_decade.json` (a
 "material palette" by decade, same shape as `hue_river.json`).
 
-Ran the **full corpus** after exclusions; the site uses **n = 38,299**
+Ran the **full corpus** after exclusions; the site uses **n = 37,829**
 posters for segmentation. Validated `--validate` against 5 posters with
 manually-checked artwork (Jaws, Friday the 13th, The Blair Witch Project,
 The Evil Dead, The Thing) before trusting any of it. Real, useful signal:
@@ -164,7 +166,7 @@ smoke-testing decade-level trends before committing to that.
 
 ## View the site
 
-Live essay (GitHub Pages): **https://juanpduque.github.io/anatomy-of-fear/**
+Live essay (GitHub Pages): **https://juanpduque.github.io/what-fear-looks-like/**
 
 Deploy: pushes to `main` that touch `site/` run `.github/workflows/pages.yml`.
 Or trigger **Actions → Deploy GitHub Pages → Run workflow**.
