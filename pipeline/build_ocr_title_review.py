@@ -6,18 +6,27 @@ and writes site/ocr-title-review.html — local labeling with localStorage + CSV
 
   python3 build_ocr_title_review.py
   open ../site/ocr-title-review.html
+
+Images use absolute TMDB CDN URLs (required for GitHub Pages). Missing paths
+are backfilled via TMDB_API_KEY when available.
 """
 from __future__ import annotations
 
 import json
+import os
+import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 import pandas as pd
+import requests
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
 SRC = DATA / "qa" / "poster_ocr_title_mismatch.csv"
 OUT = ROOT.parent / "site" / "ocr-title-review.html"
+IMG = "https://image.tmdb.org/t/p/w500"
+TMDB_MOVIE = "https://api.themoviedb.org/3/movie/{pid}"
 
 
 def load_paths() -> dict[int, str]:
@@ -45,18 +54,76 @@ def load_paths() -> dict[int, str]:
     return paths
 
 
+def auth_kwargs(api_key: str) -> dict:
+    key = (api_key or "").strip()
+    if key.startswith("eyJ"):
+        return {"headers": {"Authorization": f"Bearer {key}"}}
+    return {"params": {"api_key": key}}
+
+
+def fetch_poster_path(session: requests.Session, api_key: str, pid: int) -> str | None:
+    url = TMDB_MOVIE.format(pid=pid)
+    kwargs = auth_kwargs(api_key)
+    for attempt in range(4):
+        try:
+            r = session.get(url, timeout=25, **kwargs)
+        except requests.RequestException:
+            time.sleep(0.4 * (attempt + 1))
+            continue
+        if r.status_code == 429:
+            time.sleep(1.5 * (attempt + 1))
+            continue
+        if r.status_code == 404:
+            return None
+        if r.status_code != 200:
+            time.sleep(0.3)
+            continue
+        p = (r.json() or {}).get("poster_path") or ""
+        return p if isinstance(p, str) and p.startswith("/") else None
+    return None
+
+
+def backfill_paths(need: list[int], paths: dict[int, str]) -> int:
+    api_key = (os.environ.get("TMDB_API_KEY") or "").strip()
+    if not api_key or not need:
+        return 0
+    print(f"TMDB backfill for {len(need):,} missing poster_path…")
+    filled = 0
+    with requests.Session() as session:
+        with ThreadPoolExecutor(max_workers=8) as pool:
+            futs = {
+                pool.submit(fetch_poster_path, session, api_key, pid): pid for pid in need
+            }
+            for i, fut in enumerate(as_completed(futs), 1):
+                pid = futs[fut]
+                try:
+                    p = fut.result()
+                except Exception:
+                    p = None
+                if p:
+                    paths[pid] = p
+                    filled += 1
+                if i % 50 == 0 or i == len(need):
+                    print(f"  {i}/{len(need)} filled={filled}", flush=True)
+    return filled
+
+
 def main() -> None:
     if not SRC.exists():
         raise SystemExit(
             f"falta {SRC} — regenerá el mismatch CSV desde poster_ocr.csv primero"
         )
     df = pd.read_csv(SRC)
-    need = {"id", "title", "year", "score", "full_ocr"}
-    missing = need - set(df.columns)
+    need_cols = {"id", "title", "year", "score", "full_ocr"}
+    missing = need_cols - set(df.columns)
     if missing:
         raise SystemExit(f"CSV sin columnas: {sorted(missing)}")
 
     paths = load_paths()
+    ids = [int(x) for x in df["id"].tolist()]
+    need = sorted({pid for pid in ids if pid not in paths})
+    filled = backfill_paths(need, paths)
+
     rows = []
     miss_path = 0
     for r in df.itertuples(index=False):
@@ -89,18 +156,22 @@ def main() -> None:
                 "n_lines": n_lines,
                 "mean_conf": conf,
                 "ocr": ocr,
-                "path": path,
+                # Absolute CDN URL only — relative local JPGs break on GitHub Pages
+                "img": (IMG + path) if path else "",
             }
         )
 
-    # worst score first — more likely wrong covers
-    rows.sort(key=lambda x: (x["score"], x["year"], x["id"]))
-    payload = json.dumps(rows, ensure_ascii=False, separators=(",", ":"))
+    # Prefer rows with images; within that, worst score first
+    rows.sort(key=lambda x: (0 if x["img"] else 1, x["score"], x["year"], x["id"]))
+    # Escape < so OCR never breaks </script> embedding
+    payload = json.dumps(rows, ensure_ascii=False, separators=(",", ":")).replace(
+        "<", "\\u003c"
+    )
     html = HTML.replace("__N__", str(len(rows))).replace("__DATA__", payload)
     OUT.write_text(html, encoding="utf-8")
     print(
-        f"Wrote {OUT} ({len(rows):,} cases, {len(rows) - miss_path:,} with TMDB path, "
-        f"{miss_path:,} local-jpg fallback)"
+        f"Wrote {OUT} ({len(rows):,} cases, with_img={len(rows) - miss_path:,}, "
+        f"no_img={miss_path:,}, tmdb_filled={filled:,})"
     )
 
 
@@ -131,8 +202,14 @@ h1{font-family:"Anton",Impact,sans-serif;font-size:24px;letter-spacing:.02em;
 .filter button.on{color:var(--amber);border-color:var(--amber)}
 .stage{display:grid;grid-template-columns:minmax(0,340px) 1fr;gap:28px;align-items:start}
 @media(max-width:760px){.stage{grid-template-columns:1fr}}
+.poster-wrap{position:relative;width:100%}
 .poster{width:100%;aspect-ratio:2/3;object-fit:cover;border-radius:4px;
   box-shadow:0 20px 50px rgba(0,0,0,.6);background:#1a1a1e;display:block}
+.poster.missing{opacity:0}
+.poster-fallback{display:none;position:absolute;inset:0;align-items:center;justify-content:center;
+  text-align:center;padding:20px;border-radius:4px;background:#1a1a1e;border:1px dashed #333;
+  font-family:ui-monospace,Menlo,monospace;font-size:12px;color:var(--dim);line-height:1.5}
+.poster-wrap.noimg .poster-fallback{display:flex}
 .panel h2{font-family:"Anton",Impact,sans-serif;font-size:32px;line-height:1.05;
   text-transform:uppercase;margin:0 0 8px;font-weight:400}
 .year{font-family:ui-monospace,Menlo,monospace;color:var(--amber);font-size:13px;margin-bottom:10px}
@@ -187,7 +264,10 @@ kbd{background:#1a1a1e;border:1px solid #333;border-radius:3px;padding:1px 5px;c
     <button type="button" data-f="low">score&lt;0.3</button>
   </div>
   <div class="stage">
-    <img class="poster" id="poster" alt="">
+    <div class="poster-wrap" id="posterWrap">
+      <img class="poster" id="poster" alt="" referrerpolicy="no-referrer">
+      <div class="poster-fallback" id="posterFallback">Sin imagen TMDB<br>para este id</div>
+    </div>
     <div class="panel">
       <h2 id="title">—</h2>
       <div class="year" id="year">—</div>
@@ -242,16 +322,20 @@ function filtered(){
 }
 
 function posterSrc(d){
+  // Prefer absolute CDN URL baked at build time
+  if(d && d.img) return d.img;
   if(d && d.path) return "https://image.tmdb.org/t/p/w500" + d.path;
-  return "../pipeline/data/posters/" + d.id + ".jpg";
+  return "";
 }
 
 function show(){
   const list = filtered();
   const img = document.getElementById("poster");
+  const wrap = document.getElementById("posterWrap");
   if(!list.length){
     document.getElementById("title").textContent = "No hay casos en este filtro";
     img.removeAttribute("src");
+    wrap.classList.add("noimg");
     document.getElementById("ocr").textContent = "—";
     document.getElementById("mine").innerHTML = "Tu veredicto: <b>—</b>";
     document.getElementById("mine").className = "mine";
@@ -260,7 +344,18 @@ function show(){
   if(idx >= list.length) idx = list.length - 1;
   if(idx < 0) idx = 0;
   const d = list[idx];
-  img.src = posterSrc(d);
+  const src = posterSrc(d);
+  img.onload = () => { wrap.classList.remove("noimg"); img.classList.remove("missing"); };
+  img.onerror = () => { wrap.classList.add("noimg"); img.classList.add("missing"); };
+  if(src){
+    wrap.classList.remove("noimg");
+    img.classList.remove("missing");
+    img.src = src;
+  } else {
+    img.removeAttribute("src");
+    wrap.classList.add("noimg");
+    img.classList.add("missing");
+  }
   img.alt = d.title;
   document.getElementById("title").textContent = d.title;
   const y = d.year===9999 ? "sin año" : d.year;
