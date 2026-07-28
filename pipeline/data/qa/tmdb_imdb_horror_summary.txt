@@ -1,0 +1,27 @@
+set=posters  include_shorts=False
+basics=/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/imdb_datasets/title.basics.tsv.gz
+TMDB n=38,337
+IMDb Horror n=49,128
+matched=16,223 (42.3% TMDB)
+tmdb_no_tt=7,720
+tmdb_tt_not_imdb_horror=14,394
+imdb_only=32,944
+
+tmdb_tt_not_imdb_horror by titleType:
+  short: 8,551
+  video: 2,512
+  movie: 2,488
+  tvEpisode: 369
+  tvMovie: 288
+  tvSeries: 49
+  (missing): 44
+  tvShort: 31
+  tvSpecial: 29
+  tvMiniSeries: 25
+  videoGame: 8
+tmdb_tt_not_imdb_horror horror flag:
+  horror: 9,500
+  not_horror: 4,850
+  missing: 44
+
+outputs → /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/

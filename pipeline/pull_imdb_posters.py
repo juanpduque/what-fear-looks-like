@@ -181,6 +181,64 @@ def prefer_large(url: str) -> str:
     return u
 
 
+def _year4(raw: str) -> str:
+    s = (raw or "").strip()
+    if len(s) >= 4 and s[:4].isdigit():
+        return s[:4]
+    return ""
+
+
+def collect_from_ids_file(
+    path: Path,
+    *,
+    min_votes: int,
+    force: bool,
+) -> list[dict]:
+    """Load candidates from a CSV with id + imdb_id (gap_en_has_imdb_no_poster style)."""
+    meta = gap_meta()
+    sidecar = load_imdb_sidecar()
+    done_hits = load_csv_map(HITS)
+    done_miss = load_csv_map(MISS)
+    rows: list[dict] = []
+    seen: set[int] = set()
+    with path.open(encoding="utf-8", errors="replace") as f:
+        for r in csv.DictReader(f):
+            try:
+                pid = int(r["id"])
+            except (KeyError, TypeError, ValueError):
+                continue
+            if pid in seen:
+                continue
+            if has_local(pid) and not force:
+                continue
+            if not force and (pid in done_hits or pid in done_miss):
+                continue
+            tt = (r.get("imdb_id") or sidecar.get(pid) or "").strip()
+            if not tt.startswith("tt"):
+                continue
+            g = meta.get(pid, {})
+            try:
+                votes = int(float(g.get("vote_count") or r.get("vote_count") or 0))
+            except (TypeError, ValueError):
+                votes = 0
+            if votes < min_votes:
+                continue
+            year = _year4(r.get("year") or g.get("year") or "")
+            rows.append(
+                {
+                    "id": pid,
+                    "imdb_id": tt,
+                    "title": r.get("title") or g.get("title") or "",
+                    "year": year,
+                    "votes": votes,
+                    "bucket": "ids_file",
+                }
+            )
+            seen.add(pid)
+    rows.sort(key=lambda x: (-x["votes"], x["id"]))
+    return rows
+
+
 def collect_candidates(*, include_omdb_miss: bool, min_votes: int) -> list[dict]:
     meta = gap_meta()
     sidecar = load_imdb_sidecar()
@@ -221,7 +279,7 @@ def collect_candidates(*, include_omdb_miss: bool, min_votes: int) -> list[dict]
                         "id": pid,
                         "imdb_id": tt,
                         "title": r.get("title") or g.get("title") or "",
-                        "year": (r.get("year") or g.get("year") or "")[:4],
+                        "year": _year4(r.get("year") or g.get("year") or ""),
                         "votes": votes,
                         "bucket": src,
                     }
@@ -491,6 +549,16 @@ def main() -> None:
     )
     ap.add_argument("--timeout", type=int, default=30000)
     ap.add_argument("--download-only", action="store_true")
+    ap.add_argument(
+        "--ids-file",
+        default="",
+        help="CSV with id,imdb_id[,title,year] (e.g. gap_en_has_imdb_no_poster.csv)",
+    )
+    ap.add_argument(
+        "--force",
+        action="store_true",
+        help="with --ids-file, retry ids even if already in hits/miss or local jpg exists",
+    )
     args = ap.parse_args()
 
     if args.download_only:
@@ -501,16 +569,27 @@ def main() -> None:
         print(f"ids ready for color: {write_ids_out(hits)} → {IDS_OUT.name}")
         return
 
-    candidates = collect_candidates(
-        include_omdb_miss=args.include_omdb_miss,
-        min_votes=args.min_votes,
-    )
+    if args.ids_file:
+        ids_path = Path(args.ids_file)
+        if not ids_path.is_absolute():
+            ids_path = Path(__file__).resolve().parent / ids_path
+        if not ids_path.exists():
+            raise SystemExit(f"ids-file not found: {ids_path}")
+        candidates = collect_from_ids_file(
+            ids_path, min_votes=args.min_votes, force=args.force
+        )
+    else:
+        candidates = collect_candidates(
+            include_omdb_miss=args.include_omdb_miss,
+            min_votes=args.min_votes,
+        )
     if args.limit:
         candidates = candidates[: args.limit]
     mode = "browser/Playwright" if args.browser else "suggest API"
+    src = args.ids_file or f"dead+omdb_miss={args.include_omdb_miss}"
     print(
         f"candidates={len(candidates):,} mode={mode} "
-        f"(min_votes={args.min_votes}, include_omdb_miss={args.include_omdb_miss})",
+        f"(min_votes={args.min_votes}, src={src}, force={args.force})",
         flush=True,
     )
     if not candidates:
