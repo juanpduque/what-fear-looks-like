@@ -244,6 +244,17 @@ kbd{background:#1a1a1e;border:1px solid #333;border-radius:3px;padding:1px 5px;c
 .toolbar button{font-family:ui-monospace,Menlo,monospace;font-size:12px;background:#1a1a1e;
   color:var(--ink);border:1px solid var(--line);border-radius:4px;padding:8px 12px;cursor:pointer}
 .status{font-family:ui-monospace,Menlo,monospace;font-size:12px;color:var(--dim);margin-left:auto}
+.cloud{margin-top:18px;padding:14px;border:1px solid var(--line);border-radius:4px;background:var(--bg2)}
+.cloud h3{font-family:ui-monospace,Menlo,monospace;font-size:12px;letter-spacing:.06em;
+  text-transform:uppercase;color:var(--amber);margin:0 0 10px;font-weight:600}
+.cloud .row{display:flex;flex-wrap:wrap;gap:8px;align-items:center;margin-bottom:8px}
+.cloud input[type=password],.cloud input[type=text]{
+  flex:1;min-width:220px;background:#0a0a0c;border:1px solid var(--line);border-radius:3px;
+  color:var(--ink);padding:8px 10px;font-family:ui-monospace,Menlo,monospace;font-size:12px}
+.cloud .hint2{font-size:12px;color:var(--dim);line-height:1.45;margin:0}
+.cloud .hint2 a{color:var(--amber)}
+.cloud .msg{font-family:ui-monospace,Menlo,monospace;font-size:12px;margin-top:8px;min-height:1.2em}
+.cloud .msg.ok{color:#8fd4ad}.cloud .msg.err{color:#f0a0a8}
 </style>
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Source+Serif+4:opsz,wght@8..60,400;8..60,600&display=swap" rel="stylesheet">
 </head>
@@ -296,21 +307,48 @@ kbd{background:#1a1a1e;border:1px solid #333;border-radius:3px;padding:1px 5px;c
     </div>
   </div>
   <div class="toolbar">
-    <button type="button" id="btnExport">Exportar CSV</button>
+    <button type="button" id="btnExport">Exportar CSV (backup)</button>
     <button type="button" id="btnWrong">Exportar solo wrong</button>
     <button type="button" id="btnOtherLang">Exportar other_lang</button>
     <button type="button" id="btnClear">Borrar progreso local</button>
     <span class="status" id="status"></span>
   </div>
+  <div class="cloud">
+    <h3>Guardar en el repo (GitHub)</h3>
+    <p class="hint2">Pages es estático: para no descargar CSV, pegá un
+      <a href="https://github.com/settings/tokens?type=beta" target="_blank" rel="noopener">PAT fine-grained</a>
+      con permiso <b>Contents: Read and write</b> en
+      <code>juanpduque/what-fear-looks-like</code>. El token queda solo en este navegador.
+      Archivo: <code>pipeline/data/qa/ocr_title_review_labels.json</code></p>
+    <div class="row">
+      <input type="password" id="ghToken" placeholder="GitHub PAT (solo local)" autocomplete="off">
+      <button type="button" id="btnSaveToken">Recordar token</button>
+      <button type="button" id="btnClearToken">Olvidar token</button>
+    </div>
+    <div class="row">
+      <button type="button" id="btnPushGh">⬆ Guardar en GitHub</button>
+      <button type="button" id="btnPullGh">⬇ Cargar desde GitHub</button>
+    </div>
+    <div class="msg" id="ghMsg"></div>
+  </div>
 </div>
 <script>
 const DATA = __DATA__;
 const STORE = "aof-ocr-title-review-v1";
+const TOKEN_STORE = "aof-ocr-title-review-gh-token";
+const GH_REPO = "juanpduque/what-fear-looks-like";
+const GH_PATH = "pipeline/data/qa/ocr_title_review_labels.json";
+const GH_BRANCH = "main";
 const LABELS = ["ok","wrong","no_title","other_lang","unsure"];
 let filter = "all";
 let idx = 0;
 let verdicts = {};
 try { verdicts = JSON.parse(localStorage.getItem(STORE) || "{}") || {}; } catch(e){ verdicts = {}; }
+try {
+  const t = localStorage.getItem(TOKEN_STORE) || "";
+  // filled after DOM; see boot()
+  window.__ghTokenInit = t;
+} catch(e){}
 
 function save(){ localStorage.setItem(STORE, JSON.stringify(verdicts)); updateStatus(); }
 
@@ -453,6 +491,123 @@ function toCSV(rows){
   return cols.join(",") + "\n" + rows.map(r => cols.map(c => esc(r[c])).join(",")).join("\n");
 }
 
+function ghMsg(text, ok){
+  const el = document.getElementById("ghMsg");
+  el.textContent = text || "";
+  el.className = "msg " + (ok===true ? "ok" : ok===false ? "err" : "");
+}
+
+function getToken(){
+  return (document.getElementById("ghToken").value || "").trim();
+}
+
+function utf8ToB64(str){
+  return btoa(unescape(encodeURIComponent(str)));
+}
+function b64ToUtf8(str){
+  return decodeURIComponent(escape(atob(str)));
+}
+
+function mergeVerdicts(remote, local){
+  const out = Object.assign({}, remote || {});
+  Object.keys(local || {}).forEach(id => {
+    const a = out[id], b = local[id];
+    if(!a) out[id] = b;
+    else if((b.ts||0) >= (a.ts||0)) out[id] = b;
+  });
+  return out;
+}
+
+async function ghGetFile(token){
+  const url = "https://api.github.com/repos/" + GH_REPO + "/contents/" + GH_PATH + "?ref=" + GH_BRANCH;
+  const r = await fetch(url, {
+    headers: {
+      "Accept": "application/vnd.github+json",
+      "Authorization": "Bearer " + token,
+      "X-GitHub-Api-Version": "2022-11-28"
+    }
+  });
+  if(r.status === 404) return { exists:false, sha:null, verdicts:{} };
+  if(!r.ok){
+    const t = await r.text();
+    throw new Error("GET " + r.status + " " + t.slice(0,180));
+  }
+  const j = await r.json();
+  let parsed = {};
+  try {
+    const raw = b64ToUtf8(j.content.replace(/\n/g,""));
+    const data = JSON.parse(raw);
+    parsed = data.verdicts || data || {};
+  } catch(e){
+    parsed = {};
+  }
+  return { exists:true, sha:j.sha, verdicts:parsed };
+}
+
+async function pushToGitHub(){
+  const token = getToken();
+  if(!token){ ghMsg("Pegá un PAT primero.", false); return; }
+  ghMsg("Guardando…");
+  try {
+    const remote = await ghGetFile(token);
+    const merged = mergeVerdicts(remote.verdicts, verdicts);
+    const n = Object.keys(merged).length;
+    const bodyObj = {
+      updated_at: new Date().toISOString(),
+      n_labels: n,
+      verdicts: merged
+    };
+    const payload = {
+      message: "chore(qa): update OCR title review labels (" + n + ")",
+      content: utf8ToB64(JSON.stringify(bodyObj, null, 2) + "\n"),
+      branch: GH_BRANCH
+    };
+    if(remote.sha) payload.sha = remote.sha;
+    const url = "https://api.github.com/repos/" + GH_REPO + "/contents/" + GH_PATH;
+    const r = await fetch(url, {
+      method: "PUT",
+      headers: {
+        "Accept": "application/vnd.github+json",
+        "Authorization": "Bearer " + token,
+        "X-GitHub-Api-Version": "2022-11-28",
+        "Content-Type": "application/json"
+      },
+      body: JSON.stringify(payload)
+    });
+    if(!r.ok){
+      const t = await r.text();
+      throw new Error("PUT " + r.status + " " + t.slice(0,220));
+    }
+    verdicts = merged;
+    save();
+    show();
+    ghMsg("Guardado en GitHub · " + n + " labels → " + GH_PATH, true);
+  } catch(e){
+    ghMsg(String(e.message || e), false);
+  }
+}
+
+async function pullFromGitHub(){
+  const token = getToken();
+  if(!token){ ghMsg("Pegá un PAT primero.", false); return; }
+  ghMsg("Cargando…");
+  try {
+    const remote = await ghGetFile(token);
+    if(!remote.exists){
+      ghMsg("Aún no hay archivo en el repo. Guardá primero.", false);
+      return;
+    }
+    const before = Object.keys(verdicts).length;
+    verdicts = mergeVerdicts(verdicts, remote.verdicts);
+    save();
+    show();
+    const after = Object.keys(verdicts).length;
+    ghMsg("Cargado desde GitHub · local " + before + " → " + after + " (merge por timestamp)", true);
+  } catch(e){
+    ghMsg(String(e.message || e), false);
+  }
+}
+
 document.getElementById("filters").addEventListener("click", e => {
   const b = e.target.closest("button[data-f]");
   if(!b) return;
@@ -485,6 +640,19 @@ document.getElementById("btnClear").onclick = () => {
   idx = 0;
   show();
 };
+document.getElementById("btnSaveToken").onclick = () => {
+  const t = getToken();
+  if(!t){ ghMsg("Token vacío.", false); return; }
+  localStorage.setItem(TOKEN_STORE, t);
+  ghMsg("Token guardado en este navegador.", true);
+};
+document.getElementById("btnClearToken").onclick = () => {
+  localStorage.removeItem(TOKEN_STORE);
+  document.getElementById("ghToken").value = "";
+  ghMsg("Token olvidado.", true);
+};
+document.getElementById("btnPushGh").onclick = () => pushToGitHub();
+document.getElementById("btnPullGh").onclick = () => pullFromGitHub();
 document.addEventListener("keydown", e => {
   if(e.target && /input|textarea/i.test(e.target.tagName)) return;
   if(e.key==="1") setLabel("ok");
@@ -497,6 +665,7 @@ document.addEventListener("keydown", e => {
   else if(e.key==="u" || e.key==="U") undo();
 });
 
+if(window.__ghTokenInit) document.getElementById("ghToken").value = window.__ghTokenInit;
 show();
 </script>
 </body>
