@@ -1,7 +1,8 @@
 #!/usr/bin/env python3
 """Build QA UI to mark corpus-filter exclusions on the ~20.6k set.
 
-Set = EN + adult=false + runtime≥40 + has IMDb − IMDb isAdult − OCR other_lang.
+Set = EN + adult=false + runtime≥40 + has IMDb − IMDb isAdult − OCR other_lang
+     − exact poster MD5 dups (keep one per group).
 
 Labels (toggle, multi): other_lang | exclude_adult | exclude_quality
 
@@ -23,6 +24,7 @@ IMG = "https://image.tmdb.org/t/p/w500"
 PAIRS = QA / "tmdb_en_horror_ge40_imdb_pairs.csv"
 ADULT = QA / "ge40_imdb_isAdult.csv"
 OCR_LABELS = QA / "ocr_title_review_labels.json"
+MD5_DUP = DATA / "excluded_poster_md5_dup.csv"
 SET_OUT = QA / "corpus_filter_qa_ids.csv"
 
 
@@ -103,20 +105,27 @@ def ocr_other_lang_ids() -> set[int]:
     return out
 
 
+def load_id_set(path: Path, col: str = "id") -> set[int]:
+    out: set[int] = set()
+    if not path.exists():
+        return out
+    with path.open(encoding="utf-8", errors="replace") as f:
+        for r in csv.DictReader(f):
+            try:
+                out.add(int(r[col]))
+            except (KeyError, TypeError, ValueError):
+                continue
+    return out
+
+
 def build_ids() -> list[dict]:
     if not PAIRS.exists():
         raise SystemExit(f"falta {PAIRS} — regenerá el set ge40+imdb primero")
 
-    adult: set[int] = set()
-    if ADULT.exists():
-        with ADULT.open(encoding="utf-8", errors="replace") as f:
-            for r in csv.DictReader(f):
-                try:
-                    adult.add(int(r["id"]))
-                except (KeyError, TypeError, ValueError):
-                    continue
-
+    adult = load_id_set(ADULT)
     skip_lang = ocr_other_lang_ids()
+    skip_md5 = load_id_set(MD5_DUP)
+    skip = adult | skip_lang | skip_md5
     pairs: list[tuple[int, str]] = []
     with PAIRS.open(encoding="utf-8", errors="replace") as f:
         for r in csv.DictReader(f):
@@ -125,7 +134,7 @@ def build_ids() -> list[dict]:
                 iid = (r.get("imdb_id") or "").strip()
             except (KeyError, TypeError, ValueError):
                 continue
-            if pid in adult or pid in skip_lang:
+            if pid in skip:
                 continue
             if not iid.startswith("tt"):
                 continue
