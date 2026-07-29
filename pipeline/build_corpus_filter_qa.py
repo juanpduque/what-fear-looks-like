@@ -3,7 +3,8 @@
 
 Set = EN + adult=false + runtime≥40 + has IMDb − IMDb isAdult − OCR other_lang
      − exact poster MD5 dups (keep one per group)
-     − TMDB genres Comedy / Music / Animation.
+     − TMDB genres Comedy / Music / Animation
+     − titles without a remote TMDB poster_path (listed in corpus_filter_no_poster.csv).
 
 Labels (toggle, multi): other_lang | exclude_adult | exclude_quality
 
@@ -189,7 +190,29 @@ def build_ids() -> list[dict]:
 
     # Low visibility first (donde más ruido), luego año, id
     rows.sort(key=lambda x: (x["vote_count"], x["year"], x["id"]))
-    return rows
+
+    # GitHub Pages solo puede mostrar CDN remoto — sin poster_path no hay QA útil
+    with_img = [r for r in rows if r["img"]]
+    no_img = [r for r in rows if not r["img"]]
+    no_out = QA / "corpus_filter_no_poster.csv"
+    no_out.parent.mkdir(parents=True, exist_ok=True)
+    with no_out.open("w", newline="", encoding="utf-8") as f:
+        w = csv.DictWriter(f, fieldnames=["id", "title", "year", "vote_count", "imdb_id"])
+        w.writeheader()
+        for r in no_img:
+            w.writerow(
+                {
+                    "id": r["id"],
+                    "title": r["title"],
+                    "year": r["year"] if r["year"] != 9999 else "",
+                    "vote_count": r["vote_count"],
+                    "imdb_id": r["imdb_id"],
+                }
+            )
+    print(
+        f"poster gate: with_img={len(with_img):,} no_img={len(no_img):,} → {no_out.name}"
+    )
+    return with_img
 
 
 def main() -> None:
