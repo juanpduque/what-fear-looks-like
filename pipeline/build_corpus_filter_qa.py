@@ -3,7 +3,7 @@
 
 Set = EN + adult=false + runtime≥40 + has IMDb − IMDb isAdult − OCR other_lang
      − exact poster MD5 dups (keep one per group)
-     − TMDB genres Comedy / Music.
+     − TMDB genres Comedy / Music / Animation.
 
 Labels (toggle, multi): other_lang | exclude_adult | exclude_quality
 
@@ -28,6 +28,7 @@ OCR_LABELS = QA / "ocr_title_review_labels.json"
 MD5_DUP = DATA / "excluded_poster_md5_dup.csv"
 EX_COMEDY = QA / "corpus_filter_excluded_comedy.csv"
 EX_MUSIC = QA / "corpus_filter_excluded_music.csv"
+EX_ANIM = QA / "corpus_filter_excluded_animation.csv"
 SET_OUT = QA / "corpus_filter_qa_ids.csv"
 
 
@@ -130,7 +131,8 @@ def build_ids() -> list[dict]:
     skip_md5 = load_id_set(MD5_DUP)
     skip_comedy = load_id_set(EX_COMEDY)
     skip_music = load_id_set(EX_MUSIC)
-    skip = adult | skip_lang | skip_md5 | skip_comedy | skip_music
+    skip_anim = load_id_set(EX_ANIM)
+    skip = adult | skip_lang | skip_md5 | skip_comedy | skip_music | skip_anim
     pairs: list[tuple[int, str]] = []
     with PAIRS.open(encoding="utf-8", errors="replace") as f:
         for r in csv.DictReader(f):
@@ -162,7 +164,7 @@ def build_ids() -> list[dict]:
                     for x in (r.get("genre_names") or "").split(",")
                     if x.strip()
                 }
-                if "Comedy" in parts or "Music" in parts:
+                if parts & {"Comedy", "Music", "Animation"}:
                     genre_skip.add(pid)
     pairs = [(pid, iid) for pid, iid in pairs if pid not in genre_skip]
     paths = load_paths()
