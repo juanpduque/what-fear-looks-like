@@ -4,7 +4,8 @@
 Set = EN + adult=false + runtime≥40 + has IMDb − IMDb isAdult − OCR other_lang
      − exact poster MD5 dups (keep one per group)
      − TMDB genres Comedy / Music / Animation
-     − titles without a remote TMDB poster_path (listed in corpus_filter_no_poster.csv).
+     − titles without a remote TMDB poster_path (listed in corpus_filter_no_poster.csv)
+     − align to current TMDB primary poster (override drift; drop null primary).
 
 Labels (toggle, multi): other_lang | exclude_adult | exclude_quality
 
@@ -30,6 +31,8 @@ MD5_DUP = DATA / "excluded_poster_md5_dup.csv"
 EX_COMEDY = QA / "corpus_filter_excluded_comedy.csv"
 EX_MUSIC = QA / "corpus_filter_excluded_music.csv"
 EX_ANIM = QA / "corpus_filter_excluded_animation.csv"
+PRIMARY_OVR = QA / "corpus_filter_poster_primary_override.csv"
+DROP_NO_PRIMARY = QA / "corpus_filter_drop_no_primary_poster.csv"
 SET_OUT = QA / "corpus_filter_qa_ids.csv"
 
 
@@ -57,6 +60,17 @@ def load_paths() -> dict[int, str]:
                 if pid in paths:
                     continue
                 p = (r.get("poster_path") or "").strip()
+                if p.startswith("/"):
+                    paths[pid] = p
+    # Force current TMDB primary when we detected drift
+    if PRIMARY_OVR.exists():
+        with PRIMARY_OVR.open(encoding="utf-8", errors="replace") as f:
+            for r in csv.DictReader(f):
+                try:
+                    pid = int(r["id"])
+                except (KeyError, TypeError, ValueError):
+                    continue
+                p = (r.get("primary_path") or "").strip()
                 if p.startswith("/"):
                     paths[pid] = p
     return paths
@@ -133,7 +147,16 @@ def build_ids() -> list[dict]:
     skip_comedy = load_id_set(EX_COMEDY)
     skip_music = load_id_set(EX_MUSIC)
     skip_anim = load_id_set(EX_ANIM)
-    skip = adult | skip_lang | skip_md5 | skip_comedy | skip_music | skip_anim
+    skip_no_primary = load_id_set(DROP_NO_PRIMARY)
+    skip = (
+        adult
+        | skip_lang
+        | skip_md5
+        | skip_comedy
+        | skip_music
+        | skip_anim
+        | skip_no_primary
+    )
     pairs: list[tuple[int, str]] = []
     with PAIRS.open(encoding="utf-8", errors="replace") as f:
         for r in csv.DictReader(f):
