@@ -2,7 +2,8 @@
 """Build QA UI to mark corpus-filter exclusions on the ~20.6k set.
 
 Set = EN + adult=false + runtime≥40 + has IMDb − IMDb isAdult − OCR other_lang
-     − exact poster MD5 dups (keep one per group).
+     − exact poster MD5 dups (keep one per group)
+     − TMDB genres Comedy / Music.
 
 Labels (toggle, multi): other_lang | exclude_adult | exclude_quality
 
@@ -25,6 +26,8 @@ PAIRS = QA / "tmdb_en_horror_ge40_imdb_pairs.csv"
 ADULT = QA / "ge40_imdb_isAdult.csv"
 OCR_LABELS = QA / "ocr_title_review_labels.json"
 MD5_DUP = DATA / "excluded_poster_md5_dup.csv"
+EX_COMEDY = QA / "corpus_filter_excluded_comedy.csv"
+EX_MUSIC = QA / "corpus_filter_excluded_music.csv"
 SET_OUT = QA / "corpus_filter_qa_ids.csv"
 
 
@@ -125,7 +128,9 @@ def build_ids() -> list[dict]:
     adult = load_id_set(ADULT)
     skip_lang = ocr_other_lang_ids()
     skip_md5 = load_id_set(MD5_DUP)
-    skip = adult | skip_lang | skip_md5
+    skip_comedy = load_id_set(EX_COMEDY)
+    skip_music = load_id_set(EX_MUSIC)
+    skip = adult | skip_lang | skip_md5 | skip_comedy | skip_music
     pairs: list[tuple[int, str]] = []
     with PAIRS.open(encoding="utf-8", errors="replace") as f:
         for r in csv.DictReader(f):
@@ -138,9 +143,28 @@ def build_ids() -> list[dict]:
                 continue
             if not iid.startswith("tt"):
                 continue
+            # Also drop by live genre tags if CSV lists stale
             pairs.append((pid, iid))
 
     meta = load_meta()
+    # Genre gate from horror_movies (Comedy / Music) even if CSV not regenerated
+    genre_skip: set[int] = set()
+    hm = DATA / "horror_movies.csv"
+    if hm.exists():
+        with hm.open(encoding="utf-8", errors="replace") as f:
+            for r in csv.DictReader(f):
+                try:
+                    pid = int(r["id"])
+                except (KeyError, TypeError, ValueError):
+                    continue
+                parts = {
+                    x.strip()
+                    for x in (r.get("genre_names") or "").split(",")
+                    if x.strip()
+                }
+                if "Comedy" in parts or "Music" in parts:
+                    genre_skip.add(pid)
+    pairs = [(pid, iid) for pid, iid in pairs if pid not in genre_skip]
     paths = load_paths()
     rows = []
     for pid, iid in pairs:
