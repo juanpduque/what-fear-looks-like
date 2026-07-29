@@ -4,6 +4,7 @@
 Set = EN + adult=false + runtime≥40 + has IMDb − IMDb isAdult − OCR other_lang
      − exact poster MD5 dups (keep one per group)
      − TMDB genres Comedy / Music / Animation
+     − TV horror (TMDB TV Movie ∪ IMDb tvMovie/tvEpisode/…)
      − titles without a remote TMDB poster_path (listed in corpus_filter_no_poster.csv)
      − align to current TMDB primary poster (override drift; drop null primary).
 
@@ -31,6 +32,7 @@ MD5_DUP = DATA / "excluded_poster_md5_dup.csv"
 EX_COMEDY = QA / "corpus_filter_excluded_comedy.csv"
 EX_MUSIC = QA / "corpus_filter_excluded_music.csv"
 EX_ANIM = QA / "corpus_filter_excluded_animation.csv"
+EX_TV = QA / "corpus_filter_excluded_tv.csv"
 PRIMARY_OVR = QA / "corpus_filter_poster_primary_override.csv"
 DROP_NO_PRIMARY = QA / "corpus_filter_drop_no_primary_poster.csv"
 SET_OUT = QA / "corpus_filter_qa_ids.csv"
@@ -147,6 +149,7 @@ def build_ids() -> list[dict]:
     skip_comedy = load_id_set(EX_COMEDY)
     skip_music = load_id_set(EX_MUSIC)
     skip_anim = load_id_set(EX_ANIM)
+    skip_tv = load_id_set(EX_TV)
     skip_no_primary = load_id_set(DROP_NO_PRIMARY)
     skip = (
         adult
@@ -155,6 +158,7 @@ def build_ids() -> list[dict]:
         | skip_comedy
         | skip_music
         | skip_anim
+        | skip_tv
         | skip_no_primary
     )
     pairs: list[tuple[int, str]] = []
