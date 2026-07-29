@@ -295,10 +295,12 @@ h1{font-family:"Anton",Impact,sans-serif;font-size:24px;letter-spacing:.02em;
 .meta{font-family:ui-monospace,Menlo,monospace;font-size:12px;color:var(--dim)}
 .progress{flex:1;min-width:160px;height:6px;background:#1a1a1e;border-radius:3px;overflow:hidden}
 .progress i{display:block;height:100%;background:var(--amber);width:0%}
-.filter{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:16px}
+.filter{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:8px}
 .filter button{font-family:ui-monospace,Menlo,monospace;font-size:11px;background:transparent;
   color:var(--dim);border:1px solid var(--line);border-radius:3px;padding:5px 8px;cursor:pointer}
 .filter button.on{color:var(--amber);border-color:var(--amber)}
+.filter-label{font-family:ui-monospace,Menlo,monospace;font-size:10px;color:var(--dim);
+  letter-spacing:.06em;text-transform:uppercase;align-self:center;margin-right:2px}
 .stage{display:grid;grid-template-columns:minmax(0,340px) 1fr;gap:28px;align-items:start}
 @media(max-width:760px){.stage{grid-template-columns:1fr}}
 .poster-wrap{position:relative;width:100%}
@@ -358,12 +360,22 @@ kbd{background:#1a1a1e;border:1px solid #333;border-radius:3px;padding:1px 5px;c
     <div class="progress" aria-hidden="true"><i id="bar"></i></div>
   </div>
   <div class="filter" id="filters">
+    <span class="filter-label">estado</span>
     <button type="button" data-f="all" class="on">all</button>
     <button type="button" data-f="todo">sin marcar</button>
     <button type="button" data-f="done">marcados</button>
     <button type="button" data-f="other_lang">otro idioma</button>
     <button type="button" data-f="exclude_adult">adulto</button>
     <button type="button" data-f="exclude_quality">calidad</button>
+  </div>
+  <div class="filter" id="filtersVotes" style="margin-bottom:16px">
+    <span class="filter-label">votos</span>
+    <button type="button" data-v="all" class="on">all</button>
+    <button type="button" data-v="v0">0</button>
+    <button type="button" data-v="v1_9">1–9</button>
+    <button type="button" data-v="v10p">≥10</button>
+    <button type="button" data-v="v50p">≥50</button>
+    <button type="button" data-v="v100p">≥100</button>
   </div>
   <div class="stage">
     <div class="poster-wrap" id="posterWrap">
@@ -423,6 +435,7 @@ const GH_PATH = "pipeline/data/qa/corpus_filter_qa_labels.json";
 const GH_BRANCH = "main";
 const LABELS = ["other_lang","exclude_adult","exclude_quality"];
 let filter = "all";
+let voteFilter = "all";
 let idx = 0;
 let verdicts = {};
 
@@ -458,8 +471,19 @@ function save(){ localStorage.setItem(STORE, JSON.stringify(verdicts)); updateSt
 function getLabels(v){ return v ? normalizeEntry(v).labels : []; }
 function hasLabel(v, lab){ return getLabels(v).includes(lab); }
 
+function voteOk(d){
+  const v = Number(d.vote_count) || 0;
+  if(voteFilter==="v0") return v === 0;
+  if(voteFilter==="v1_9") return v >= 1 && v <= 9;
+  if(voteFilter==="v10p") return v >= 10;
+  if(voteFilter==="v50p") return v >= 50;
+  if(voteFilter==="v100p") return v >= 100;
+  return true;
+}
+
 function filtered(){
   return DATA.filter(d => {
+    if(!voteOk(d)) return false;
     const v = verdicts[d.id];
     if(filter==="todo") return !getLabels(v).length;
     if(filter==="done") return getLabels(v).length;
@@ -697,6 +721,14 @@ document.getElementById("filters").addEventListener("click", e => {
   if(!b) return;
   filter = b.getAttribute("data-f");
   document.querySelectorAll("#filters button").forEach(x => x.classList.toggle("on", x===b));
+  idx = 0;
+  show();
+});
+document.getElementById("filtersVotes").addEventListener("click", e => {
+  const b = e.target.closest("button[data-v]");
+  if(!b) return;
+  voteFilter = b.getAttribute("data-v");
+  document.querySelectorAll("#filtersVotes button").forEach(x => x.classList.toggle("on", x===b));
   idx = 0;
   show();
 });
