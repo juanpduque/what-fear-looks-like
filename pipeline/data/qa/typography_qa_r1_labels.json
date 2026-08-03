@@ -1,6 +1,2496 @@
 {
-  "updated_at": null,
-  "n_labels": 0,
-  "verdicts": {},
-  "note": "typography QA r1 \u2014 image_led / title_led / text_heavy"
+  "updated_at": "2026-08-03T21:26:06.201Z",
+  "n_labels": 249,
+  "verdicts": {
+    "136": {
+      "id": 136,
+      "title": "Freaks",
+      "year": 1932,
+      "label": "text_heavy",
+      "proxy": "image_led",
+      "ocr_chars": 6,
+      "n_lines": 1,
+      "ts": 1785789960041
+    },
+    "377": {
+      "id": 377,
+      "title": "A Nightmare on Elm Street",
+      "year": 1984,
+      "label": "image_led",
+      "proxy": "title_led",
+      "ocr_chars": 23,
+      "n_lines": 3,
+      "ts": 1785790471930
+    },
+    "539": {
+      "id": 539,
+      "title": "Psycho",
+      "year": 1960,
+      "label": "image_led",
+      "proxy": "image_led",
+      "ocr_chars": 6,
+      "n_lines": 1,
+      "ts": 1785789438701
+    },
+    "779": {
+      "id": 779,
+      "title": "Vampyr",
+      "year": 1932,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 6,
+      "n_lines": 1,
+      "ts": 1785790051212
+    },
+    "831": {
+      "id": 831,
+      "title": "This Island Earth",
+      "year": 1955,
+      "label": "image_led",
+      "proxy": "title_led",
+      "ocr_chars": 17,
+      "n_lines": 3,
+      "ts": 1785790615270
+    },
+    "2929": {
+      "id": 2929,
+      "title": "Frankenstein",
+      "year": 1910,
+      "label": "text_heavy",
+      "proxy": "title_led",
+      "ocr_chars": 44,
+      "n_lines": 5,
+      "ts": 1785790412498
+    },
+    "2969": {
+      "id": 2969,
+      "title": "A Daughter Of Destiny",
+      "year": 1928,
+      "label": "text_heavy",
+      "proxy": "image_led",
+      "ocr_chars": 4,
+      "n_lines": 1,
+      "ts": 1785790174389
+    },
+    "2970": {
+      "id": 2970,
+      "title": "Alraune",
+      "year": 1930,
+      "label": "image_led",
+      "proxy": "image_led",
+      "ocr_chars": 6,
+      "n_lines": 1,
+      "ts": 1785789428712
+    },
+    "3006": {
+      "id": 3006,
+      "title": "Dr. Jekyll and Mr. Hyde",
+      "year": 1908,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 0,
+      "n_lines": 0,
+      "ts": 1785790533074
+    },
+    "3017": {
+      "id": 3017,
+      "title": "Dr. Jekyll and Mr. Hyde",
+      "year": 1920,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 140,
+      "n_lines": 11,
+      "ts": 1785790876247
+    },
+    "3125": {
+      "id": 3125,
+      "title": "Dracula vs. Frankenstein",
+      "year": 1971,
+      "label": "image_led",
+      "proxy": "title_led",
+      "ocr_chars": 22,
+      "n_lines": 2,
+      "ts": 1785789297805
+    },
+    "6123": {
+      "id": 6123,
+      "title": "Desire: The Tragedy of a Dancer",
+      "year": 1921,
+      "label": "text_heavy",
+      "proxy": "image_led",
+      "ocr_chars": 7,
+      "n_lines": 1,
+      "ts": 1785789716006
+    },
+    "10728": {
+      "id": 10728,
+      "title": "Faust",
+      "year": 1926,
+      "label": "text_heavy",
+      "proxy": "image_led",
+      "ocr_chars": 5,
+      "n_lines": 1,
+      "ts": 1785790355075
+    },
+    "10900": {
+      "id": 10900,
+      "title": "Surveillance",
+      "year": 2008,
+      "label": "image_led",
+      "proxy": "title_led",
+      "ocr_chars": 11,
+      "n_lines": 1,
+      "ts": 1785790288105
+    },
+    "13784": {
+      "id": 13784,
+      "title": "Black Friday",
+      "year": 1940,
+      "label": "text_heavy",
+      "proxy": "title_led",
+      "ocr_chars": 12,
+      "n_lines": 2,
+      "ts": 1785790575433
+    },
+    "18177": {
+      "id": 18177,
+      "title": "Automaton Transfusion",
+      "year": 2006,
+      "label": "image_led",
+      "proxy": "title_led",
+      "ocr_chars": 21,
+      "n_lines": 2,
+      "ts": 1785789452133
+    },
+    "20121": {
+      "id": 20121,
+      "title": "Killdozer",
+      "year": 1974,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 5,
+      "n_lines": 1,
+      "ts": 1785790023257
+    },
+    "20650": {
+      "id": 20650,
+      "title": "The Sealed Room",
+      "year": 1909,
+      "label": "text_heavy",
+      "proxy": "title_led",
+      "ocr_chars": 15,
+      "n_lines": 2,
+      "ts": 1785789479393
+    },
+    "20695": {
+      "id": 20695,
+      "title": "Blessed",
+      "year": 2004,
+      "label": "image_led",
+      "proxy": "image_led",
+      "ocr_chars": 7,
+      "n_lines": 1,
+      "ts": 1785789640865
+    },
+    "22543": {
+      "id": 22543,
+      "title": "Dead Ringer",
+      "year": 1964,
+      "label": "text_heavy",
+      "proxy": "title_led",
+      "ocr_chars": 11,
+      "n_lines": 2,
+      "ts": 1785790339483
+    },
+    "24580": {
+      "id": 24580,
+      "title": "The Quatermass Xperiment",
+      "year": 1955,
+      "label": "image_led",
+      "proxy": "text_heavy",
+      "ocr_chars": 54,
+      "n_lines": 6,
+      "ts": 1785789752129
+    },
+    "25508": {
+      "id": 25508,
+      "title": "Cat People",
+      "year": 1942,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 197,
+      "n_lines": 26,
+      "ts": 1785790365560
+    },
+    "26946": {
+      "id": 26946,
+      "title": "Attack of the Crab Monsters",
+      "year": 1957,
+      "label": "image_led",
+      "proxy": "title_led",
+      "ocr_chars": 27,
+      "n_lines": 4,
+      "ts": 1785789269162
+    },
+    "27519": {
+      "id": 27519,
+      "title": "The Student of Prague",
+      "year": 1926,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 23,
+      "n_lines": 2,
+      "ts": 1785789435226
+    },
+    "28142": {
+      "id": 28142,
+      "title": "Glass Trap",
+      "year": 2005,
+      "label": "image_led",
+      "proxy": "title_led",
+      "ocr_chars": 39,
+      "n_lines": 5,
+      "ts": 1785789914400
+    },
+    "28191": {
+      "id": 28191,
+      "title": "One Exciting Night",
+      "year": 1922,
+      "label": "text_heavy",
+      "proxy": "title_led",
+      "ocr_chars": 18,
+      "n_lines": 3,
+      "ts": 1785789759510
+    },
+    "28196": {
+      "id": 28196,
+      "title": "The Avenging Conscience",
+      "year": 1914,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 22,
+      "n_lines": 3,
+      "ts": 1785790599857
+    },
+    "28261": {
+      "id": 28261,
+      "title": "Mad Love",
+      "year": 1935,
+      "label": "text_heavy",
+      "proxy": "image_led",
+      "ocr_chars": 3,
+      "n_lines": 1,
+      "ts": 1785789745187
+    },
+    "28852": {
+      "id": 28852,
+      "title": "Don't Wake the Dead",
+      "year": 2008,
+      "label": "image_led",
+      "proxy": "text_heavy",
+      "ocr_chars": 76,
+      "n_lines": 6,
+      "ts": 1785790361421
+    },
+    "28910": {
+      "id": 28910,
+      "title": "Mark of the Vampire",
+      "year": 1935,
+      "label": "image_led",
+      "proxy": "title_led",
+      "ocr_chars": 19,
+      "n_lines": 3,
+      "ts": 1785789310315
+    },
+    "29052": {
+      "id": 29052,
+      "title": "The Reptile",
+      "year": 1966,
+      "label": "text_heavy",
+      "proxy": "image_led",
+      "ocr_chars": 6,
+      "n_lines": 1,
+      "ts": 1785789741644
+    },
+    "29214": {
+      "id": 29214,
+      "title": "Echoes",
+      "year": 1982,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 96,
+      "n_lines": 6,
+      "ts": 1785790177922
+    },
+    "29347": {
+      "id": 29347,
+      "title": "Fiend Without a Face",
+      "year": 1958,
+      "label": "text_heavy",
+      "proxy": "title_led",
+      "ocr_chars": 17,
+      "n_lines": 3,
+      "ts": 1785790525615
+    },
+    "29368": {
+      "id": 29368,
+      "title": "A Place of One's Own",
+      "year": 1945,
+      "label": "text_heavy",
+      "proxy": "title_led",
+      "ocr_chars": 20,
+      "n_lines": 5,
+      "ts": 1785789917212
+    },
+    "29423": {
+      "id": 29423,
+      "title": "Die Sister, Die!",
+      "year": 1978,
+      "label": "image_led",
+      "proxy": "title_led",
+      "ocr_chars": 8,
+      "n_lines": 2,
+      "ts": 1785790740109
+    },
+    "29476": {
+      "id": 29476,
+      "title": "Return of the Ape Man",
+      "year": 1944,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 93,
+      "n_lines": 10,
+      "ts": 1785790693332
+    },
+    "29547": {
+      "id": 29547,
+      "title": "Massage Parlor Murders",
+      "year": 1973,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 41,
+      "n_lines": 6,
+      "ts": 1785790733710
+    },
+    "32623": {
+      "id": 32623,
+      "title": "Night of the Ghouls",
+      "year": 1959,
+      "label": "image_led",
+      "proxy": "image_led",
+      "ocr_chars": 6,
+      "n_lines": 1,
+      "ts": 1785789626555
+    },
+    "32858": {
+      "id": 32858,
+      "title": "The Return of the Vampire",
+      "year": 1943,
+      "label": "text_heavy",
+      "proxy": "title_led",
+      "ocr_chars": 19,
+      "n_lines": 3,
+      "ts": 1785790176630
+    },
+    "33607": {
+      "id": 33607,
+      "title": "I Killed My Lesbian Wife, Hung Her on a Meat Hook, and Now I Have a Three-Picture Deal at Disney",
+      "year": 1993,
+      "label": "doubtful",
+      "proxy": "text_heavy",
+      "ocr_chars": 92,
+      "n_lines": 4,
+      "ts": 1785790587425
+    },
+    "33754": {
+      "id": 33754,
+      "title": "Scared Stiff",
+      "year": 1953,
+      "label": "text_heavy",
+      "proxy": "title_led",
+      "ocr_chars": 12,
+      "n_lines": 1,
+      "ts": 1785789946721
+    },
+    "34791": {
+      "id": 34791,
+      "title": "Mindstorm",
+      "year": 2001,
+      "label": "doubtful",
+      "proxy": "text_heavy",
+      "ocr_chars": 71,
+      "n_lines": 11,
+      "ts": 1785790516335
+    },
+    "37409": {
+      "id": 37409,
+      "title": "Violated",
+      "year": 1953,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 5,
+      "n_lines": 1,
+      "ts": 1785789237797
+    },
+    "40000": {
+      "id": 40000,
+      "title": "Mom",
+      "year": 1991,
+      "label": "image_led",
+      "proxy": "image_led",
+      "ocr_chars": 3,
+      "n_lines": 1,
+      "ts": 1785790395969
+    },
+    "40449": {
+      "id": 40449,
+      "title": "The Long Island Cannibal Massacre",
+      "year": 1980,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 28,
+      "n_lines": 3,
+      "ts": 1785790432813
+    },
+    "40549": {
+      "id": 40549,
+      "title": "The Unnamable",
+      "year": 1988,
+      "label": "image_led",
+      "proxy": "title_led",
+      "ocr_chars": 8,
+      "n_lines": 1,
+      "ts": 1785790698259
+    },
+    "41118": {
+      "id": 41118,
+      "title": "Scrooge",
+      "year": 1935,
+      "label": "text_heavy",
+      "proxy": "image_led",
+      "ocr_chars": 5,
+      "n_lines": 1,
+      "ts": 1785789714722
+    },
+    "41215": {
+      "id": 41215,
+      "title": "Black Death",
+      "year": 2010,
+      "label": "text_heavy",
+      "proxy": "title_led",
+      "ocr_chars": 11,
+      "n_lines": 1,
+      "ts": 1785789783471
+    },
+    "43148": {
+      "id": 43148,
+      "title": "The Vampire Bat",
+      "year": 1933,
+      "label": "image_led",
+      "proxy": "title_led",
+      "ocr_chars": 16,
+      "n_lines": 3,
+      "ts": 1785789601424
+    },
+    "44041": {
+      "id": 44041,
+      "title": "The Dark Mirror",
+      "year": 1946,
+      "label": "text_heavy",
+      "proxy": "title_led",
+      "ocr_chars": 15,
+      "n_lines": 3,
+      "ts": 1785790320268
+    },
+    "48374": {
+      "id": 48374,
+      "title": "Piranha",
+      "year": 1995,
+      "label": "text_heavy",
+      "proxy": "image_led",
+      "ocr_chars": 7,
+      "n_lines": 1,
+      "ts": 1785790060887
+    },
+    "48675": {
+      "id": 48675,
+      "title": "Small Town Folk",
+      "year": 2007,
+      "label": "image_led",
+      "proxy": "text_heavy",
+      "ocr_chars": 44,
+      "n_lines": 6,
+      "ts": 1785789208659
+    },
+    "48950": {
+      "id": 48950,
+      "title": "It Came from Somewhere Else",
+      "year": 1988,
+      "label": "doubtful",
+      "proxy": "text_heavy",
+      "ocr_chars": 73,
+      "n_lines": 11,
+      "ts": 1785790706202
+    },
+    "56145": {
+      "id": 56145,
+      "title": "Geek Maggot Bingo or The Freak from Suckweasel Mountain",
+      "year": 1983,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 63,
+      "n_lines": 9,
+      "ts": 1785790767866
+    },
+    "63091": {
+      "id": 63091,
+      "title": "Man Beast",
+      "year": 1956,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 328,
+      "n_lines": 37,
+      "ts": 1785790390828
+    },
+    "70345": {
+      "id": 70345,
+      "title": "Sssssss",
+      "year": 1973,
+      "label": "image_led",
+      "proxy": "image_led",
+      "ocr_chars": 6,
+      "n_lines": 1,
+      "ts": 1785790700770
+    },
+    "74072": {
+      "id": 74072,
+      "title": "Simon, King of the Witches",
+      "year": 1971,
+      "label": "text_heavy",
+      "proxy": "title_led",
+      "ocr_chars": 16,
+      "n_lines": 3,
+      "ts": 1785790545957
+    },
+    "74110": {
+      "id": 74110,
+      "title": "Nicole",
+      "year": 1976,
+      "label": "doubtful",
+      "proxy": "text_heavy",
+      "ocr_chars": 97,
+      "n_lines": 10,
+      "ts": 1785790032019
+    },
+    "75419": {
+      "id": 75419,
+      "title": "Fangs",
+      "year": 2002,
+      "label": "image_led",
+      "proxy": "text_heavy",
+      "ocr_chars": 65,
+      "n_lines": 8,
+      "ts": 1785789374802
+    },
+    "76450": {
+      "id": 76450,
+      "title": "Skinner",
+      "year": 1993,
+      "label": "image_led",
+      "proxy": "image_led",
+      "ocr_chars": 6,
+      "n_lines": 1,
+      "ts": 1785790291831
+    },
+    "83155": {
+      "id": 83155,
+      "title": "Truth or Dare?: A Critical Madness",
+      "year": 1986,
+      "label": "title_led",
+      "proxy": "text_heavy",
+      "ocr_chars": 43,
+      "n_lines": 7,
+      "ts": 1785790866808
+    },
+    "83413": {
+      "id": 83413,
+      "title": "Blood Freak",
+      "year": 1972,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 10,
+      "n_lines": 2,
+      "ts": 1785790388567
+    },
+    "84233": {
+      "id": 84233,
+      "title": "Don't Hang Up",
+      "year": 1974,
+      "label": "doubtful",
+      "proxy": "text_heavy",
+      "ocr_chars": 129,
+      "n_lines": 10,
+      "ts": 1785789630258
+    },
+    "84720": {
+      "id": 84720,
+      "title": "The Brute Man",
+      "year": 1946,
+      "label": "text_heavy",
+      "proxy": "title_led",
+      "ocr_chars": 12,
+      "n_lines": 3,
+      "ts": 1785790543019
+    },
+    "84956": {
+      "id": 84956,
+      "title": "Warning Shadows",
+      "year": 1923,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 29,
+      "n_lines": 1,
+      "ts": 1785790745780
+    },
+    "85188": {
+      "id": 85188,
+      "title": "The Demon",
+      "year": 1979,
+      "label": "image_led",
+      "proxy": "image_led",
+      "ocr_chars": 7,
+      "n_lines": 1,
+      "ts": 1785789633294
+    },
+    "85198": {
+      "id": 85198,
+      "title": "Frightmare",
+      "year": 1981,
+      "label": "image_led",
+      "proxy": "image_led",
+      "ocr_chars": 7,
+      "n_lines": 1,
+      "ts": 1785790715744
+    },
+    "85498": {
+      "id": 85498,
+      "title": "The Maze",
+      "year": 1953,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 192,
+      "n_lines": 24,
+      "ts": 1785790015943
+    },
+    "86979": {
+      "id": 86979,
+      "title": "The Road Builder",
+      "year": 1971,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 14,
+      "n_lines": 1,
+      "ts": 1785790591620
+    },
+    "87719": {
+      "id": 87719,
+      "title": "Savage Abduction",
+      "year": 1973,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 275,
+      "n_lines": 18,
+      "ts": 1785790366845
+    },
+    "88361": {
+      "id": 88361,
+      "title": "Seeds",
+      "year": 1968,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 279,
+      "n_lines": 21,
+      "ts": 1785789304341
+    },
+    "89654": {
+      "id": 89654,
+      "title": "Confessions of a Psycho Cat",
+      "year": 1968,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 18,
+      "n_lines": 3,
+      "ts": 1785790592499
+    },
+    "89741": {
+      "id": 89741,
+      "title": "Terror Aboard",
+      "year": 1933,
+      "label": "image_led",
+      "proxy": "text_heavy",
+      "ocr_chars": 106,
+      "n_lines": 10,
+      "ts": 1785790882468
+    },
+    "90030": {
+      "id": 90030,
+      "title": "The Monster of Piedras Blancas",
+      "year": 1959,
+      "label": "text_heavy",
+      "proxy": "title_led",
+      "ocr_chars": 29,
+      "n_lines": 4,
+      "ts": 1785790324477
+    },
+    "92320": {
+      "id": 92320,
+      "title": "Garden of the Dead",
+      "year": 1972,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 80,
+      "n_lines": 14,
+      "ts": 1785790404283
+    },
+    "97206": {
+      "id": 97206,
+      "title": "Taboo",
+      "year": 2002,
+      "label": "image_led",
+      "proxy": "title_led",
+      "ocr_chars": 9,
+      "n_lines": 1,
+      "ts": 1785790430856
+    },
+    "97974": {
+      "id": 97974,
+      "title": "The Loch Ness Horror",
+      "year": 1981,
+      "label": "text_heavy",
+      "proxy": "title_led",
+      "ocr_chars": 29,
+      "n_lines": 5,
+      "ts": 1785789906054
+    },
+    "100770": {
+      "id": 100770,
+      "title": "The Black Torment",
+      "year": 1964,
+      "label": "text_heavy",
+      "proxy": "image_led",
+      "ocr_chars": 4,
+      "n_lines": 1,
+      "ts": 1785790731425
+    },
+    "105166": {
+      "id": 105166,
+      "title": "The X-Ray Fiend",
+      "year": 1897,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 45,
+      "n_lines": 5,
+      "ts": 1785790707407
+    },
+    "110175": {
+      "id": 110175,
+      "title": "Twisted",
+      "year": 1986,
+      "label": "text_heavy",
+      "proxy": "image_led",
+      "ocr_chars": 5,
+      "n_lines": 1,
+      "ts": 1785789902734
+    },
+    "111461": {
+      "id": 111461,
+      "title": "Ghost Chasers",
+      "year": 1951,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 141,
+      "n_lines": 16,
+      "ts": 1785790024752
+    },
+    "117017": {
+      "id": 117017,
+      "title": "Fright",
+      "year": 1956,
+      "label": "image_led",
+      "proxy": "image_led",
+      "ocr_chars": 6,
+      "n_lines": 1,
+      "ts": 1785790711084
+    },
+    "117026": {
+      "id": 117026,
+      "title": "Daughter of Dr. Jekyll",
+      "year": 1957,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 114,
+      "n_lines": 16,
+      "ts": 1785789746741
+    },
+    "120226": {
+      "id": 120226,
+      "title": "Mondo Keyhole",
+      "year": 1966,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 246,
+      "n_lines": 18,
+      "ts": 1785790186170
+    },
+    "124124": {
+      "id": 124124,
+      "title": "Grave Secrets",
+      "year": 1989,
+      "label": "text_heavy",
+      "proxy": "image_led",
+      "ocr_chars": 6,
+      "n_lines": 1,
+      "ts": 1785790528709
+    },
+    "130523": {
+      "id": 130523,
+      "title": "Dr. Jekyll and Mr. Hyde",
+      "year": 1912,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 39,
+      "n_lines": 5,
+      "ts": 1785790054812
+    },
+    "132064": {
+      "id": 132064,
+      "title": "Vile",
+      "year": 2011,
+      "label": "image_led",
+      "proxy": "image_led",
+      "ocr_chars": 4,
+      "n_lines": 1,
+      "ts": 1785789373282
+    },
+    "132916": {
+      "id": 132916,
+      "title": "Sorority Girls and the Creature From Hell",
+      "year": 1990,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 32,
+      "n_lines": 4,
+      "ts": 1785790419471
+    },
+    "136611": {
+      "id": 136611,
+      "title": "Penda's Fen",
+      "year": 1974,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 10,
+      "n_lines": 1,
+      "ts": 1785789274056
+    },
+    "140680": {
+      "id": 140680,
+      "title": "The Fall of the House of Usher",
+      "year": 1950,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 55,
+      "n_lines": 4,
+      "ts": 1785790421113
+    },
+    "145850": {
+      "id": 145850,
+      "title": "Dance Or Die",
+      "year": 1987,
+      "label": "image_led",
+      "proxy": "image_led",
+      "ocr_chars": 6,
+      "n_lines": 1,
+      "ts": 1785789425831
+    },
+    "147087": {
+      "id": 147087,
+      "title": "The Cobweb Hotel",
+      "year": 1936,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 106,
+      "n_lines": 14,
+      "ts": 1785790202661
+    },
+    "148112": {
+      "id": 148112,
+      "title": "The Terror",
+      "year": 1928,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 24,
+      "n_lines": 4,
+      "ts": 1785789454282
+    },
+    "152031": {
+      "id": 152031,
+      "title": "How It Feels to Be Run Over",
+      "year": 1900,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 50,
+      "n_lines": 3,
+      "ts": 1785789465635
+    },
+    "172115": {
+      "id": 172115,
+      "title": "The Haunted Curiosity Shop",
+      "year": 1901,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 26,
+      "n_lines": 2,
+      "ts": 1785790856166
+    },
+    "183841": {
+      "id": 183841,
+      "title": "Return to Glennascaul: A Story That Is Told in Dublin",
+      "year": 1953,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 44,
+      "n_lines": 6,
+      "ts": 1785790083590
+    },
+    "184940": {
+      "id": 184940,
+      "title": "The Phantom of the Monastery",
+      "year": 1934,
+      "label": "text_heavy",
+      "proxy": "title_led",
+      "ocr_chars": 28,
+      "n_lines": 4,
+      "ts": 1785790573372
+    },
+    "192089": {
+      "id": 192089,
+      "title": "Uncle Josh in a Spooky Hotel",
+      "year": 1900,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 48,
+      "n_lines": 5,
+      "ts": 1785790469434
+    },
+    "197389": {
+      "id": 197389,
+      "title": "Bride Of Killer Nerd",
+      "year": 1992,
+      "label": "image_led",
+      "proxy": "title_led",
+      "ocr_chars": 12,
+      "n_lines": 2,
+      "ts": 1785790725767
+    },
+    "212391": {
+      "id": 212391,
+      "title": "The Damnation of Faust",
+      "year": 1898,
+      "label": "text_heavy",
+      "proxy": "title_led",
+      "ocr_chars": 22,
+      "n_lines": 5,
+      "ts": 1785789770873
+    },
+    "225437": {
+      "id": 225437,
+      "title": "Hangman",
+      "year": 1986,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 7,
+      "n_lines": 1,
+      "ts": 1785789457366
+    },
+    "226640": {
+      "id": 226640,
+      "title": "Black Noon",
+      "year": 1971,
+      "label": "image_led",
+      "proxy": "image_led",
+      "ocr_chars": 4,
+      "n_lines": 1,
+      "ts": 1785790686075
+    },
+    "226884": {
+      "id": 226884,
+      "title": "The Pit and the Pendulum",
+      "year": 1913,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 39,
+      "n_lines": 4,
+      "ts": 1785789918810
+    },
+    "245087": {
+      "id": 245087,
+      "title": "Pontianak Gua Musang",
+      "year": 1964,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 18,
+      "n_lines": 2,
+      "ts": 1785789958378
+    },
+    "246223": {
+      "id": 246223,
+      "title": "Hot Wax Zombies on Wheels",
+      "year": 1999,
+      "label": "image_led",
+      "proxy": "title_led",
+      "ocr_chars": 23,
+      "n_lines": 3,
+      "ts": 1785789655355
+    },
+    "248039": {
+      "id": 248039,
+      "title": "The Macabre Trunk",
+      "year": 1936,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 34,
+      "n_lines": 4,
+      "ts": 1785790557725
+    },
+    "249849": {
+      "id": 249849,
+      "title": "Gergasi",
+      "year": 1958,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 7,
+      "n_lines": 1,
+      "ts": 1785790593645
+    },
+    "251168": {
+      "id": 251168,
+      "title": "The Stone Rider",
+      "year": 1923,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 37,
+      "n_lines": 2,
+      "ts": 1785790295148
+    },
+    "257391": {
+      "id": 257391,
+      "title": "Mahal",
+      "year": 1949,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 3,
+      "n_lines": 1,
+      "ts": 1785790400762
+    },
+    "264246": {
+      "id": 264246,
+      "title": "The Night of the Beast",
+      "year": 1988,
+      "label": "text_heavy",
+      "proxy": "title_led",
+      "ocr_chars": 17,
+      "n_lines": 3,
+      "ts": 1785790039670
+    },
+    "272423": {
+      "id": 272423,
+      "title": "The Mistletoe Bough",
+      "year": 1904,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 35,
+      "n_lines": 4,
+      "ts": 1785790736016
+    },
+    "284125": {
+      "id": 284125,
+      "title": "Ghostbreakers",
+      "year": 1967,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 13,
+      "n_lines": 1,
+      "ts": 1785789611378
+    },
+    "284262": {
+      "id": 284262,
+      "title": "Liberty",
+      "year": 9999,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 20,
+      "n_lines": 5,
+      "ts": 1785789636434
+    },
+    "295774": {
+      "id": 295774,
+      "title": "Once Upon a Midnight Scary",
+      "year": 1979,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 111,
+      "n_lines": 10,
+      "ts": 1785789941593
+    },
+    "298347": {
+      "id": 298347,
+      "title": "Monkey Boy",
+      "year": 1992,
+      "label": "text_heavy",
+      "proxy": "title_led",
+      "ocr_chars": 9,
+      "n_lines": 1,
+      "ts": 1785789973991
+    },
+    "299423": {
+      "id": 299423,
+      "title": "The Ghost Cat and the Mysterious Shamisen",
+      "year": 1938,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 30,
+      "n_lines": 7,
+      "ts": 1785790066040
+    },
+    "300143": {
+      "id": 300143,
+      "title": "The Rainbow Man",
+      "year": 1949,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 4,
+      "n_lines": 1,
+      "ts": 1785789753681
+    },
+    "302184": {
+      "id": 302184,
+      "title": "Scream",
+      "year": 1949,
+      "label": "image_led",
+      "proxy": "image_led",
+      "ocr_chars": 6,
+      "n_lines": 1,
+      "ts": 1785790374482
+    },
+    "305511": {
+      "id": 305511,
+      "title": "The Craving",
+      "year": 1918,
+      "label": "doubtful",
+      "proxy": "text_heavy",
+      "ocr_chars": 99,
+      "n_lines": 8,
+      "ts": 1785790021647
+    },
+    "320380": {
+      "id": 320380,
+      "title": "The Phantom Foe",
+      "year": 1920,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 61,
+      "n_lines": 6,
+      "ts": 1785789288175
+    },
+    "321665": {
+      "id": 321665,
+      "title": "Wingrave",
+      "year": 2007,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 87,
+      "n_lines": 7,
+      "ts": 1785790380388
+    },
+    "330169": {
+      "id": 330169,
+      "title": "The Gorilla",
+      "year": 1927,
+      "label": "text_heavy",
+      "proxy": "title_led",
+      "ocr_chars": 10,
+      "n_lines": 2,
+      "ts": 1785790897038
+    },
+    "337288": {
+      "id": 337288,
+      "title": "The Animal",
+      "year": 1968,
+      "label": "text_heavy",
+      "proxy": "image_led",
+      "ocr_chars": 7,
+      "n_lines": 1,
+      "ts": 1785790868484
+    },
+    "337387": {
+      "id": 337387,
+      "title": "The Crimson Stain Mystery",
+      "year": 1916,
+      "label": "doubtful",
+      "proxy": "text_heavy",
+      "ocr_chars": 143,
+      "n_lines": 10,
+      "ts": 1785790343589
+    },
+    "338067": {
+      "id": 338067,
+      "title": "The Werewolf",
+      "year": 1913,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 14,
+      "n_lines": 1,
+      "ts": 1785789306782
+    },
+    "341671": {
+      "id": 341671,
+      "title": "Model Hunger",
+      "year": 2015,
+      "label": "image_led",
+      "proxy": "image_led",
+      "ocr_chars": 4,
+      "n_lines": 1,
+      "ts": 1785790853646
+    },
+    "344161": {
+      "id": 344161,
+      "title": "Frankenstein",
+      "year": 1940,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 3,
+      "n_lines": 1,
+      "ts": 1785790747996
+    },
+    "361945": {
+      "id": 361945,
+      "title": "Sleepy Hollow",
+      "year": 1911,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 0,
+      "n_lines": 0,
+      "ts": 1785790064543
+    },
+    "363164": {
+      "id": 363164,
+      "title": "The Mummy",
+      "year": 1911,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 0,
+      "n_lines": 0,
+      "ts": 1785790556857
+    },
+    "370204": {
+      "id": 370204,
+      "title": "Katawan",
+      "year": 1999,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 7,
+      "n_lines": 1,
+      "ts": 1785790070742
+    },
+    "384627": {
+      "id": 384627,
+      "title": "The Monkey's Paw",
+      "year": 1933,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 55,
+      "n_lines": 8,
+      "ts": 1785790756501
+    },
+    "393320": {
+      "id": 393320,
+      "title": "The Chinese Room",
+      "year": 1968,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 211,
+      "n_lines": 22,
+      "ts": 1785789503041
+    },
+    "418805": {
+      "id": 418805,
+      "title": "The Black Stork",
+      "year": 1917,
+      "label": "doubtful",
+      "proxy": "text_heavy",
+      "ocr_chars": 222,
+      "n_lines": 25,
+      "ts": 1785790033292
+    },
+    "419862": {
+      "id": 419862,
+      "title": "Tengkorak Hidoep",
+      "year": 1941,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 49,
+      "n_lines": 5,
+      "ts": 1785789628422
+    },
+    "422340": {
+      "id": 422340,
+      "title": "Jungle of Death",
+      "year": 1985,
+      "label": "doubtful",
+      "proxy": "text_heavy",
+      "ocr_chars": 68,
+      "n_lines": 7,
+      "ts": 1785789971314
+    },
+    "445494": {
+      "id": 445494,
+      "title": "Black Waters",
+      "year": 1929,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 108,
+      "n_lines": 13,
+      "ts": 1785790049255
+    },
+    "447215": {
+      "id": 447215,
+      "title": "The Monster",
+      "year": 9999,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 11,
+      "n_lines": 2,
+      "ts": 1785789747876
+    },
+    "447385": {
+      "id": 447385,
+      "title": "The Dream Woman",
+      "year": 1914,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 0,
+      "n_lines": 0,
+      "ts": 1785789613135
+    },
+    "448144": {
+      "id": 448144,
+      "title": "Madness",
+      "year": 2006,
+      "label": "image_led",
+      "proxy": "image_led",
+      "ocr_chars": 7,
+      "n_lines": 1,
+      "ts": 1785790720096
+    },
+    "454439": {
+      "id": 454439,
+      "title": "Flora",
+      "year": 2017,
+      "label": "image_led",
+      "proxy": "image_led",
+      "ocr_chars": 5,
+      "n_lines": 1,
+      "ts": 1785790298365
+    },
+    "458832": {
+      "id": 458832,
+      "title": "Long Night in a Dead City",
+      "year": 2017,
+      "label": "image_led",
+      "proxy": "title_led",
+      "ocr_chars": 24,
+      "n_lines": 5,
+      "ts": 1785789460728
+    },
+    "482322": {
+      "id": 482322,
+      "title": "Blood Stars",
+      "year": 2014,
+      "label": "doubtful",
+      "proxy": "text_heavy",
+      "ocr_chars": 138,
+      "n_lines": 13,
+      "ts": 1785790583891
+    },
+    "482646": {
+      "id": 482646,
+      "title": "The Cavalier's Dream",
+      "year": 1898,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 40,
+      "n_lines": 5,
+      "ts": 1785789432074
+    },
+    "484219": {
+      "id": 484219,
+      "title": "A Visit to the Spiritualist",
+      "year": 1899,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 1,
+      "n_lines": 1,
+      "ts": 1785789505178
+    },
+    "486773": {
+      "id": 486773,
+      "title": "The Vengeance of Egypt",
+      "year": 1912,
+      "label": "doubtful",
+      "proxy": "text_heavy",
+      "ocr_chars": 197,
+      "n_lines": 20,
+      "ts": 1785790376315
+    },
+    "521485": {
+      "id": 521485,
+      "title": "Madman 2",
+      "year": 2008,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 6,
+      "n_lines": 1,
+      "ts": 1785789293068
+    },
+    "525148": {
+      "id": 525148,
+      "title": "The Gallows Man",
+      "year": 1945,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 97,
+      "n_lines": 9,
+      "ts": 1785790531591
+    },
+    "529649": {
+      "id": 529649,
+      "title": "The Row",
+      "year": 2018,
+      "label": "image_led",
+      "proxy": "image_led",
+      "ocr_chars": 7,
+      "n_lines": 1,
+      "ts": 1785790336783
+    },
+    "545308": {
+      "id": 545308,
+      "title": "Far from the Apple Tree",
+      "year": 2019,
+      "label": "text_heavy",
+      "proxy": "title_led",
+      "ocr_chars": 23,
+      "n_lines": 2,
+      "ts": 1785790859856
+    },
+    "552843": {
+      "id": 552843,
+      "title": "Beware the Inside",
+      "year": 2018,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 0,
+      "n_lines": 0,
+      "ts": 1785790541356
+    },
+    "565440": {
+      "id": 565440,
+      "title": "Frankenstein Meets Dracula",
+      "year": 1957,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 1,
+      "n_lines": 1,
+      "ts": 1785790042550
+    },
+    "570025": {
+      "id": 570025,
+      "title": "Don’t Come Back Without Presents",
+      "year": 2018,
+      "label": "title_led",
+      "proxy": "title_led",
+      "ocr_chars": 31,
+      "n_lines": 4,
+      "ts": 1785790013547
+    },
+    "573966": {
+      "id": 573966,
+      "title": "The Mysterious Uncle Silas",
+      "year": 1947,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 71,
+      "n_lines": 10,
+      "ts": 1785790680901
+    },
+    "579959": {
+      "id": 579959,
+      "title": "Noctambulist",
+      "year": 2019,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 177,
+      "n_lines": 11,
+      "ts": 1785790434726
+    },
+    "609080": {
+      "id": 609080,
+      "title": "The Phantom Violin",
+      "year": 1914,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 1,
+      "n_lines": 1,
+      "ts": 1785790735114
+    },
+    "627840": {
+      "id": 627840,
+      "title": "Mortmain",
+      "year": 1915,
+      "label": "text_heavy",
+      "proxy": "image_led",
+      "ocr_chars": 4,
+      "n_lines": 1,
+      "ts": 1785789757697
+    },
+    "630560": {
+      "id": 630560,
+      "title": "The Hunchback and the Dancer",
+      "year": 1920,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 0,
+      "n_lines": 0,
+      "ts": 1785789359197
+    },
+    "631697": {
+      "id": 631697,
+      "title": "Sam Body",
+      "year": 2018,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 231,
+      "n_lines": 19,
+      "ts": 1785789767957
+    },
+    "639895": {
+      "id": 639895,
+      "title": "Raat Ke Andhere Mein",
+      "year": 1987,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 27,
+      "n_lines": 4,
+      "ts": 1785790327108
+    },
+    "648291": {
+      "id": 648291,
+      "title": "Herzog Ferrantes Ende",
+      "year": 1922,
+      "label": "doubtful",
+      "proxy": "text_heavy",
+      "ocr_chars": 82,
+      "n_lines": 7,
+      "ts": 1785790043845
+    },
+    "664862": {
+      "id": 664862,
+      "title": "The Dream Cheater",
+      "year": 1920,
+      "label": "doubtful",
+      "proxy": "text_heavy",
+      "ocr_chars": 165,
+      "n_lines": 12,
+      "ts": 1785789805386
+    },
+    "672043": {
+      "id": 672043,
+      "title": "Masque of the Red Death",
+      "year": 1959,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 1,
+      "n_lines": 1,
+      "ts": 1785789957139
+    },
+    "681680": {
+      "id": 681680,
+      "title": "Repent Now",
+      "year": 2017,
+      "label": "text_heavy",
+      "proxy": "title_led",
+      "ocr_chars": 24,
+      "n_lines": 4,
+      "ts": 1785789964498
+    },
+    "694951": {
+      "id": 694951,
+      "title": "And All Through the House",
+      "year": 1971,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 0,
+      "n_lines": 0,
+      "ts": 1785789634902
+    },
+    "695270": {
+      "id": 695270,
+      "title": "Obeah",
+      "year": 1935,
+      "label": "doubtful",
+      "proxy": "text_heavy",
+      "ocr_chars": 130,
+      "n_lines": 11,
+      "ts": 1785789378648
+    },
+    "700205": {
+      "id": 700205,
+      "title": "The Slip-Back: A Weird Story in Two Parts",
+      "year": 1934,
+      "label": "title_led",
+      "proxy": "title_led",
+      "ocr_chars": 67,
+      "n_lines": 5,
+      "ts": 1785789320755
+    },
+    "727488": {
+      "id": 727488,
+      "title": "Ten Days",
+      "year": 1925,
+      "label": "doubtful",
+      "proxy": "text_heavy",
+      "ocr_chars": 251,
+      "n_lines": 24,
+      "ts": 1785790055849
+    },
+    "732231": {
+      "id": 732231,
+      "title": "Castle Ghosts of England",
+      "year": 1995,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 112,
+      "n_lines": 10,
+      "ts": 1785789955161
+    },
+    "741112": {
+      "id": 741112,
+      "title": "Marineland Carnival: The Munsters Visit Marineland",
+      "year": 1965,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 127,
+      "n_lines": 7,
+      "ts": 1785790427245
+    },
+    "741635": {
+      "id": 741635,
+      "title": "Stuck",
+      "year": 2020,
+      "label": "text_heavy",
+      "proxy": "image_led",
+      "ocr_chars": 4,
+      "n_lines": 1,
+      "ts": 1785790629274
+    },
+    "752795": {
+      "id": 752795,
+      "title": "Araf 3: Cinler Kitabi",
+      "year": 2019,
+      "label": "image_led",
+      "proxy": "text_heavy",
+      "ocr_chars": 58,
+      "n_lines": 9,
+      "ts": 1785790036632
+    },
+    "783963": {
+      "id": 783963,
+      "title": "The Lost Shadow",
+      "year": 1921,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 0,
+      "n_lines": 0,
+      "ts": 1785790377172
+    },
+    "784115": {
+      "id": 784115,
+      "title": "The Curious Adventure of Doctor Works",
+      "year": 1921,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 0,
+      "n_lines": 0,
+      "ts": 1785789656851
+    },
+    "810896": {
+      "id": 810896,
+      "title": "Waiting Room",
+      "year": 1981,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 3,
+      "n_lines": 1,
+      "ts": 1785789506045
+    },
+    "812307": {
+      "id": 812307,
+      "title": "Luna",
+      "year": 9999,
+      "label": "image_led",
+      "proxy": "image_led",
+      "ocr_chars": 3,
+      "n_lines": 1,
+      "ts": 1785789414817
+    },
+    "817686": {
+      "id": 817686,
+      "title": "Killer Rose",
+      "year": 2021,
+      "label": "text_heavy",
+      "proxy": "title_led",
+      "ocr_chars": 27,
+      "n_lines": 5,
+      "ts": 1785790293753
+    },
+    "827064": {
+      "id": 827064,
+      "title": "Swine",
+      "year": 9999,
+      "label": "text_heavy",
+      "proxy": "title_led",
+      "ocr_chars": 30,
+      "n_lines": 2,
+      "ts": 1785790527361
+    },
+    "844380": {
+      "id": 844380,
+      "title": "Nix",
+      "year": 2022,
+      "label": "image_led",
+      "proxy": "image_led",
+      "ocr_chars": 3,
+      "n_lines": 1,
+      "ts": 1785789599397
+    },
+    "852783": {
+      "id": 852783,
+      "title": "Protege Moi",
+      "year": 2023,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 3,
+      "n_lines": 1,
+      "ts": 1785790582509
+    },
+    "857334": {
+      "id": 857334,
+      "title": "Shadows in the Old House",
+      "year": 1948,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 70,
+      "n_lines": 15,
+      "ts": 1785789202179
+    },
+    "862404": {
+      "id": 862404,
+      "title": "Thrill Kill Video Club",
+      "year": 1991,
+      "label": "doubtful",
+      "proxy": "text_heavy",
+      "ocr_chars": 41,
+      "n_lines": 7,
+      "ts": 1785789416403
+    },
+    "862531": {
+      "id": 862531,
+      "title": "The Miser's Doom",
+      "year": 1899,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 16,
+      "n_lines": 3,
+      "ts": 1785790420350
+    },
+    "863672": {
+      "id": 863672,
+      "title": "Delicious",
+      "year": 2020,
+      "label": "doubtful",
+      "proxy": "text_heavy",
+      "ocr_chars": 59,
+      "n_lines": 9,
+      "ts": 1785790467588
+    },
+    "864142": {
+      "id": 864142,
+      "title": "The Ghost Breaker",
+      "year": 1914,
+      "label": "doubtful",
+      "proxy": "text_heavy",
+      "ocr_chars": 53,
+      "n_lines": 7,
+      "ts": 1785790770734
+    },
+    "869071": {
+      "id": 869071,
+      "title": "Pappy's Graveyard",
+      "year": 2021,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 73,
+      "n_lines": 7,
+      "ts": 1785789796218
+    },
+    "875875": {
+      "id": 875875,
+      "title": "Flesh",
+      "year": 9999,
+      "label": "image_led",
+      "proxy": "image_led",
+      "ocr_chars": 6,
+      "n_lines": 1,
+      "ts": 1785790553999
+    },
+    "875893": {
+      "id": 875893,
+      "title": "Video Psycho",
+      "year": 1997,
+      "label": "image_led",
+      "proxy": "image_led",
+      "ocr_chars": 5,
+      "n_lines": 1,
+      "ts": 1785790521892
+    },
+    "878720": {
+      "id": 878720,
+      "title": "A Life Hereafter",
+      "year": 2017,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 0,
+      "n_lines": 0,
+      "ts": 1785790688202
+    },
+    "891936": {
+      "id": 891936,
+      "title": "Days Before Christmas",
+      "year": 1992,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 22,
+      "n_lines": 1,
+      "ts": 1785789664479
+    },
+    "897268": {
+      "id": 897268,
+      "title": "Buried Friend",
+      "year": 2020,
+      "label": "title_led",
+      "proxy": "title_led",
+      "ocr_chars": 43,
+      "n_lines": 3,
+      "ts": 1785790742585
+    },
+    "934630": {
+      "id": 934630,
+      "title": "A Midnight Episode",
+      "year": 1899,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 0,
+      "n_lines": 0,
+      "ts": 1785790576972
+    },
+    "936602": {
+      "id": 936602,
+      "title": "Hellion",
+      "year": 9999,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 92,
+      "n_lines": 7,
+      "ts": 1785789597766
+    },
+    "940165": {
+      "id": 940165,
+      "title": "The Avenging Hand",
+      "year": 1915,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 38,
+      "n_lines": 5,
+      "ts": 1785789637569
+    },
+    "942364": {
+      "id": 942364,
+      "title": "The Haunting Fear",
+      "year": 1915,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 2,
+      "n_lines": 1,
+      "ts": 1785790377891
+    },
+    "951980": {
+      "id": 951980,
+      "title": "Glyphs II",
+      "year": 1977,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 1,
+      "n_lines": 1,
+      "ts": 1785790540544
+    },
+    "952280": {
+      "id": 952280,
+      "title": "Kalo Chhaya",
+      "year": 1948,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 2,
+      "n_lines": 1,
+      "ts": 1785790902527
+    },
+    "956572": {
+      "id": 956572,
+      "title": "The Crystal Lake Massacres Revisited - Part IV",
+      "year": 2009,
+      "label": "text_heavy",
+      "proxy": "image_led",
+      "ocr_chars": 6,
+      "n_lines": 1,
+      "ts": 1785789661408
+    },
+    "959508": {
+      "id": 959508,
+      "title": "Demon Man",
+      "year": 1937,
+      "label": "doubtful",
+      "proxy": "text_heavy",
+      "ocr_chars": 147,
+      "n_lines": 14,
+      "ts": 1785790436042
+    },
+    "1008246": {
+      "id": 1008246,
+      "title": "The Freak Barber",
+      "year": 1905,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 9,
+      "n_lines": 2,
+      "ts": 1785790328178
+    },
+    "1010673": {
+      "id": 1010673,
+      "title": "The Silent Mystery",
+      "year": 1918,
+      "label": "doubtful",
+      "proxy": "text_heavy",
+      "ocr_chars": 164,
+      "n_lines": 14,
+      "ts": 1785790318367
+    },
+    "1012298": {
+      "id": 1012298,
+      "title": "The Turn of the Screw",
+      "year": 1959,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 118,
+      "n_lines": 4,
+      "ts": 1785789606788
+    },
+    "1022634": {
+      "id": 1022634,
+      "title": "The Calling",
+      "year": 2021,
+      "label": "image_led",
+      "proxy": "title_led",
+      "ocr_chars": 10,
+      "n_lines": 2,
+      "ts": 1785790753734
+    },
+    "1032710": {
+      "id": 1032710,
+      "title": "As Darkness Sets In",
+      "year": 1984,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 80,
+      "n_lines": 7,
+      "ts": 1785789935584
+    },
+    "1036432": {
+      "id": 1036432,
+      "title": "Hurry Hurry Faster Faster",
+      "year": 1965,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 25,
+      "n_lines": 2,
+      "ts": 1785789942919
+    },
+    "1048700": {
+      "id": 1048700,
+      "title": "Videozone: The Making of \"Puppet Master 5\"",
+      "year": 1994,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 42,
+      "n_lines": 7,
+      "ts": 1785790874989
+    },
+    "1077097": {
+      "id": 1077097,
+      "title": "Faust and Mephistopheles",
+      "year": 1898,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 0,
+      "n_lines": 0,
+      "ts": 1785790758740
+    },
+    "1117995": {
+      "id": 1117995,
+      "title": "Goose Egg",
+      "year": 2023,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 136,
+      "n_lines": 13,
+      "ts": 1785790861567
+    },
+    "1162418": {
+      "id": 1162418,
+      "title": "Lilith",
+      "year": 9999,
+      "label": "image_led",
+      "proxy": "title_led",
+      "ocr_chars": 24,
+      "n_lines": 3,
+      "ts": 1785790346987
+    },
+    "1167767": {
+      "id": 1167767,
+      "title": "Voyeur",
+      "year": 9999,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 95,
+      "n_lines": 6,
+      "ts": 1785790283112
+    },
+    "1182330": {
+      "id": 1182330,
+      "title": "Fake",
+      "year": 2023,
+      "label": "image_led",
+      "proxy": "title_led",
+      "ocr_chars": 19,
+      "n_lines": 3,
+      "ts": 1785790609687
+    },
+    "1187548": {
+      "id": 1187548,
+      "title": "Breathing Hole",
+      "year": 2021,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 95,
+      "n_lines": 12,
+      "ts": 1785789786465
+    },
+    "1193314": {
+      "id": 1193314,
+      "title": "Zombie Plane",
+      "year": 9999,
+      "label": "image_led",
+      "proxy": "text_heavy",
+      "ocr_chars": 45,
+      "n_lines": 7,
+      "ts": 1785790566274
+    },
+    "1237401": {
+      "id": 1237401,
+      "title": "Lizzie Lazarus",
+      "year": 2024,
+      "label": "text_heavy",
+      "proxy": "title_led",
+      "ocr_chars": 14,
+      "n_lines": 2,
+      "ts": 1785790631446
+    },
+    "1261579": {
+      "id": 1261579,
+      "title": "The Guyra Ghost Mystery",
+      "year": 1921,
+      "label": "doubtful",
+      "proxy": "text_heavy",
+      "ocr_chars": 89,
+      "n_lines": 11,
+      "ts": 1785789240138
+    },
+    "1263634": {
+      "id": 1263634,
+      "title": "Don't Trust the Doll",
+      "year": 2022,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 0,
+      "n_lines": 0,
+      "ts": 1785790034235
+    },
+    "1265637": {
+      "id": 1265637,
+      "title": "The Strange Fetishes",
+      "year": 1967,
+      "label": "doubtful",
+      "proxy": "text_heavy",
+      "ocr_chars": 105,
+      "n_lines": 8,
+      "ts": 1785789974970
+    },
+    "1267304": {
+      "id": 1267304,
+      "title": "The Black Night",
+      "year": 1916,
+      "label": "doubtful",
+      "proxy": "text_heavy",
+      "ocr_chars": 27,
+      "n_lines": 6,
+      "ts": 1785790748898
+    },
+    "1267797": {
+      "id": 1267797,
+      "title": "House of Mystery",
+      "year": 1949,
+      "label": "doubtful",
+      "proxy": "text_heavy",
+      "ocr_chars": 68,
+      "n_lines": 8,
+      "ts": 1785789464542
+    },
+    "1269479": {
+      "id": 1269479,
+      "title": "Crimson Kisses",
+      "year": 2000,
+      "label": "text_heavy",
+      "proxy": "image_led",
+      "ocr_chars": 7,
+      "n_lines": 1,
+      "ts": 1785790555676
+    },
+    "1276468": {
+      "id": 1276468,
+      "title": "The Quatermass Experiment",
+      "year": 1967,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 30,
+      "n_lines": 2,
+      "ts": 1785790166728
+    },
+    "1280081": {
+      "id": 1280081,
+      "title": "The Vivisectionist",
+      "year": 1915,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 3,
+      "n_lines": 1,
+      "ts": 1785790053554
+    },
+    "1285471": {
+      "id": 1285471,
+      "title": "Lesions",
+      "year": 2026,
+      "label": "image_led",
+      "proxy": "text_heavy",
+      "ocr_chars": 31,
+      "n_lines": 6,
+      "ts": 1785790538868
+    },
+    "1287025": {
+      "id": 1287025,
+      "title": "The Last Lonely Man",
+      "year": 1969,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 0,
+      "n_lines": 0,
+      "ts": 1785789743623
+    },
+    "1287381": {
+      "id": 1287381,
+      "title": "Imperfect",
+      "year": 1941,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 0,
+      "n_lines": 0,
+      "ts": 1785789312070
+    },
+    "1293715": {
+      "id": 1293715,
+      "title": "Witches Brew",
+      "year": 1960,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 59,
+      "n_lines": 7,
+      "ts": 1785789761601
+    },
+    "1318433": {
+      "id": 1318433,
+      "title": "Shower Sharks",
+      "year": 2018,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 90,
+      "n_lines": 6,
+      "ts": 1785789908392
+    },
+    "1320610": {
+      "id": 1320610,
+      "title": "Zombies",
+      "year": 2002,
+      "label": "doubtful",
+      "proxy": "text_heavy",
+      "ocr_chars": 90,
+      "n_lines": 8,
+      "ts": 1785789642541
+    },
+    "1325821": {
+      "id": 1325821,
+      "title": "Forlorn",
+      "year": 2002,
+      "label": "title_led",
+      "proxy": "image_led",
+      "ocr_chars": 7,
+      "n_lines": 1,
+      "ts": 1785790080023
+    },
+    "1351825": {
+      "id": 1351825,
+      "title": "Immediate Possession",
+      "year": 1931,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 1,
+      "n_lines": 1,
+      "ts": 1785790769292
+    },
+    "1363027": {
+      "id": 1363027,
+      "title": "A Mother's Love",
+      "year": 2025,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 0,
+      "n_lines": 0,
+      "ts": 1785790067603
+    },
+    "1371491": {
+      "id": 1371491,
+      "title": "Zingaro",
+      "year": 1935,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 83,
+      "n_lines": 12,
+      "ts": 1785790762351
+    },
+    "1373725": {
+      "id": 1373725,
+      "title": "Devil in Human Being",
+      "year": 1949,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 41,
+      "n_lines": 9,
+      "ts": 1785789764832
+    },
+    "1376369": {
+      "id": 1376369,
+      "title": "Dr. Jekyll and Mr. Hyde",
+      "year": 1937,
+      "label": "doubtful",
+      "proxy": "title_led",
+      "ocr_chars": 38,
+      "n_lines": 5,
+      "ts": 1785790749785
+    },
+    "1381446": {
+      "id": 1381446,
+      "title": "Son of Pumpkinman",
+      "year": 1993,
+      "label": "doubtful",
+      "proxy": "text_heavy",
+      "ocr_chars": 127,
+      "n_lines": 14,
+      "ts": 1785789412917
+    },
+    "1435836": {
+      "id": 1435836,
+      "title": "Ripple",
+      "year": 2017,
+      "label": "image_led",
+      "proxy": "text_heavy",
+      "ocr_chars": 275,
+      "n_lines": 18,
+      "ts": 1785789450853
+    },
+    "1494164": {
+      "id": 1494164,
+      "title": "Unknown Treasures",
+      "year": 1926,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 0,
+      "n_lines": 0,
+      "ts": 1785789772874
+    },
+    "1523565": {
+      "id": 1523565,
+      "title": "Devils, Dragons, and Vampires",
+      "year": 1999,
+      "label": "doubtful",
+      "proxy": "text_heavy",
+      "ocr_chars": 113,
+      "n_lines": 6,
+      "ts": 1785790898995
+    },
+    "1563145": {
+      "id": 1563145,
+      "title": "Freak Shack",
+      "year": 1994,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 1,
+      "n_lines": 1,
+      "ts": 1785790617495
+    },
+    "1586823": {
+      "id": 1586823,
+      "title": "The All-Nighter",
+      "year": 9999,
+      "label": "title_led",
+      "proxy": "image_led",
+      "ocr_chars": 7,
+      "n_lines": 1,
+      "ts": 1785790170463
+    },
+    "1598241": {
+      "id": 1598241,
+      "title": "PandaMonium: Incorporated",
+      "year": 9999,
+      "label": "image_led",
+      "proxy": "text_heavy",
+      "ocr_chars": 86,
+      "n_lines": 4,
+      "ts": 1785789487459
+    },
+    "1607698": {
+      "id": 1607698,
+      "title": "Babybacks",
+      "year": 9999,
+      "label": "image_led",
+      "proxy": "title_led",
+      "ocr_chars": 9,
+      "n_lines": 1,
+      "ts": 1785790006651
+    },
+    "1649704": {
+      "id": 1649704,
+      "title": "Something in the Cellar",
+      "year": 1969,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 1,
+      "n_lines": 1,
+      "ts": 1785790747075
+    },
+    "1685907": {
+      "id": 1685907,
+      "title": "Dissociation",
+      "year": 2026,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 95,
+      "n_lines": 7,
+      "ts": 1785789912106
+    },
+    "1704210": {
+      "id": 1704210,
+      "title": "Wrath",
+      "year": 2024,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 4,
+      "n_lines": 1,
+      "ts": 1785789495593
+    },
+    "1704216": {
+      "id": 1704216,
+      "title": "Bloodline",
+      "year": 9999,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 5,
+      "n_lines": 1,
+      "ts": 1785789616239
+    },
+    "1705685": {
+      "id": 1705685,
+      "title": "Red Lips",
+      "year": 9999,
+      "label": "title_led",
+      "proxy": "image_led",
+      "ocr_chars": 4,
+      "n_lines": 1,
+      "ts": 1785789646940
+    },
+    "1710225": {
+      "id": 1710225,
+      "title": "TAU file_001",
+      "year": 9999,
+      "label": "doubtful",
+      "proxy": "text_heavy",
+      "ocr_chars": 54,
+      "n_lines": 8,
+      "ts": 1785789617151
+    },
+    "1719153": {
+      "id": 1719153,
+      "title": "Stain",
+      "year": 9999,
+      "label": "doubtful",
+      "proxy": "image_led",
+      "ocr_chars": 0,
+      "n_lines": 0,
+      "ts": 1785790069821
+    },
+    "1729941": {
+      "id": 1729941,
+      "title": "The gears",
+      "year": 9999,
+      "label": "text_heavy",
+      "proxy": "text_heavy",
+      "ocr_chars": 325,
+      "n_lines": 16,
+      "ts": 1785789667562
+    }
+  }
 }
