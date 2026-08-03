@@ -1,6 +1,2256 @@
 {
-  "updated_at": null,
-  "n_labels": 0,
-  "verdicts": {},
-  "note": "medium QA r3"
+  "updated_at": "2026-08-03T21:26:44.450Z",
+  "n_labels": 250,
+  "verdicts": {
+    "9102": {
+      "id": 9102,
+      "title": "Screamers",
+      "year": 1995,
+      "label": "composite",
+      "pred": "composite",
+      "conf": 0.4176,
+      "ts": 1785791990630
+    },
+    "9825": {
+      "id": 9825,
+      "title": "Lake Placid",
+      "year": 1999,
+      "label": "composite",
+      "pred": "photo",
+      "conf": 0.3986,
+      "ts": 1785792228782
+    },
+    "10063": {
+      "id": 10063,
+      "title": "The Breed",
+      "year": 2006,
+      "label": "composite",
+      "pred": "photo",
+      "conf": 0.3594,
+      "ts": 1785792253374
+    },
+    "11428": {
+      "id": 11428,
+      "title": "Sleepwalkers",
+      "year": 1992,
+      "label": "painted",
+      "pred": "painted",
+      "conf": 0.3951,
+      "ts": 1785791928955
+    },
+    "13557": {
+      "id": 13557,
+      "title": "The Gravedancers",
+      "year": 2006,
+      "label": "composite",
+      "pred": "composite",
+      "conf": 0.3878,
+      "ts": 1785792264265
+    },
+    "14605": {
+      "id": 14605,
+      "title": "The Ghost Breakers",
+      "year": 1940,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.4078,
+      "ts": 1785791921136
+    },
+    "14745": {
+      "id": 14745,
+      "title": "The Haunting of Molly Hartley",
+      "year": 2008,
+      "label": "composite",
+      "pred": "composite",
+      "conf": 0.4219,
+      "ts": 1785791466348
+    },
+    "16077": {
+      "id": 16077,
+      "title": "My Little Eye",
+      "year": 2002,
+      "label": "photo",
+      "pred": "painted",
+      "conf": 0.3927,
+      "ts": 1785791544772
+    },
+    "17168": {
+      "id": 17168,
+      "title": "The Temp",
+      "year": 1993,
+      "label": "composite",
+      "pred": "photo",
+      "conf": 0.4147,
+      "ts": 1785791237296
+    },
+    "18781": {
+      "id": 18781,
+      "title": "The Haunting in Connecticut",
+      "year": 2009,
+      "label": "composite",
+      "pred": "painted",
+      "conf": 0.3924,
+      "ts": 1785792112568
+    },
+    "24836": {
+      "id": 24836,
+      "title": "August Underground",
+      "year": 2001,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.3611,
+      "ts": 1785792276619
+    },
+    "28352": {
+      "id": 28352,
+      "title": "Hellroller",
+      "year": 1992,
+      "label": "composite",
+      "pred": "painted",
+      "conf": 0.3694,
+      "ts": 1785791261227
+    },
+    "30236": {
+      "id": 30236,
+      "title": "The Fear Chamber",
+      "year": 2009,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.3592,
+      "ts": 1785792198947
+    },
+    "30510": {
+      "id": 30510,
+      "title": "As Night Falls",
+      "year": 2010,
+      "label": "composite",
+      "pred": "composite",
+      "conf": 0.3792,
+      "ts": 1785791986826
+    },
+    "33347": {
+      "id": 33347,
+      "title": "Paranoid",
+      "year": 2000,
+      "label": "photo",
+      "pred": "composite",
+      "conf": 0.4114,
+      "ts": 1785791211614
+    },
+    "42606": {
+      "id": 42606,
+      "title": "Invocation of My Demon Brother",
+      "year": 1969,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.3805,
+      "ts": 1785792082733
+    },
+    "45862": {
+      "id": 45862,
+      "title": "Hangman's Curse",
+      "year": 2003,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.4114,
+      "ts": 1785792286281
+    },
+    "50471": {
+      "id": 50471,
+      "title": "The Erotic Rites of Countess Dracula",
+      "year": 2001,
+      "label": "photo",
+      "pred": "painted",
+      "conf": 0.3775,
+      "ts": 1785791062392
+    },
+    "52742": {
+      "id": 52742,
+      "title": "Experiment in Torture",
+      "year": 2007,
+      "label": "painted",
+      "pred": "painted",
+      "conf": 0.3807,
+      "ts": 1785791241548
+    },
+    "55328": {
+      "id": 55328,
+      "title": "When Good Ghouls Go Bad",
+      "year": 2001,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.3549,
+      "ts": 1785791522677
+    },
+    "59726": {
+      "id": 59726,
+      "title": "Wake Wood",
+      "year": 2011,
+      "label": "composite",
+      "pred": "painted",
+      "conf": 0.3645,
+      "ts": 1785792033064
+    },
+    "68878": {
+      "id": 68878,
+      "title": "The Zombie Diaries 2",
+      "year": 2011,
+      "label": "composite",
+      "pred": "painted",
+      "conf": 0.39,
+      "ts": 1785791645484
+    },
+    "69869": {
+      "id": 69869,
+      "title": "The House on Tombstone Hill",
+      "year": 1989,
+      "label": "composite",
+      "pred": "painted",
+      "conf": 0.3981,
+      "ts": 1785792130906
+    },
+    "73519": {
+      "id": 73519,
+      "title": "I'll Bury You Tomorrow",
+      "year": 2002,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.3919,
+      "ts": 1785791947385
+    },
+    "77361": {
+      "id": 77361,
+      "title": "Death Warmed Up",
+      "year": 1985,
+      "label": "painted",
+      "pred": "painted",
+      "conf": 0.3819,
+      "ts": 1785791852297
+    },
+    "80570": {
+      "id": 80570,
+      "title": "Family Demons",
+      "year": 2009,
+      "label": "photo",
+      "pred": "composite",
+      "conf": 0.4052,
+      "ts": 1785792055350
+    },
+    "81489": {
+      "id": 81489,
+      "title": "Carnivorous",
+      "year": 2007,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.4135,
+      "ts": 1785791637945
+    },
+    "86681": {
+      "id": 86681,
+      "title": "To Die For",
+      "year": 1988,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.3988,
+      "ts": 1785791983012
+    },
+    "91409": {
+      "id": 91409,
+      "title": "Dismal",
+      "year": 2009,
+      "label": "composite",
+      "pred": "painted",
+      "conf": 0.3569,
+      "ts": 1785792102096
+    },
+    "91908": {
+      "id": 91908,
+      "title": "Rings",
+      "year": 2005,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.4068,
+      "ts": 1785790990370
+    },
+    "98090": {
+      "id": 98090,
+      "title": "The Lemon Grove Kids Meet the Monsters",
+      "year": 1968,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.3803,
+      "ts": 1785791378125
+    },
+    "100314": {
+      "id": 100314,
+      "title": "Nightmare",
+      "year": 2007,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.389,
+      "ts": 1785791361587
+    },
+    "101720": {
+      "id": 101720,
+      "title": "Zipperface",
+      "year": 1992,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.379,
+      "ts": 1785791612970
+    },
+    "103607": {
+      "id": 103607,
+      "title": "Lone Wolf",
+      "year": 1988,
+      "label": "composite",
+      "pred": "composite",
+      "conf": 0.4238,
+      "ts": 1785791532341
+    },
+    "108647": {
+      "id": 108647,
+      "title": "Bordello Death Tales",
+      "year": 2009,
+      "label": "photo",
+      "pred": "composite",
+      "conf": 0.3752,
+      "ts": 1785791325723
+    },
+    "114684": {
+      "id": 114684,
+      "title": "Talisman",
+      "year": 1998,
+      "label": "composite",
+      "pred": "photo",
+      "conf": 0.3546,
+      "ts": 1785791246690
+    },
+    "116583": {
+      "id": 116583,
+      "title": "Vampiro",
+      "year": 2009,
+      "label": "photo",
+      "pred": "photo",
+      "conf": 0.4037,
+      "ts": 1785792072000
+    },
+    "124553": {
+      "id": 124553,
+      "title": "Interface",
+      "year": 1985,
+      "label": "photo",
+      "pred": "painted",
+      "conf": 0.3683,
+      "ts": 1785791301219
+    },
+    "127628": {
+      "id": 127628,
+      "title": "The Greed of William Hart",
+      "year": 1948,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.3888,
+      "ts": 1785791327432
+    },
+    "128484": {
+      "id": 128484,
+      "title": "Boogeyman",
+      "year": 2012,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.4014,
+      "ts": 1785792006828
+    },
+    "131914": {
+      "id": 131914,
+      "title": "The Uninvited",
+      "year": 1996,
+      "label": "composite",
+      "pred": "composite",
+      "conf": 0.3966,
+      "ts": 1785791632669
+    },
+    "134136": {
+      "id": 134136,
+      "title": "Totem",
+      "year": 1999,
+      "label": "composite",
+      "pred": "photo",
+      "conf": 0.3844,
+      "ts": 1785791618539
+    },
+    "137528": {
+      "id": 137528,
+      "title": "You Can't Kill Stephen King",
+      "year": 2012,
+      "label": "painted",
+      "pred": "composite",
+      "conf": 0.382,
+      "ts": 1785791140771
+    },
+    "140394": {
+      "id": 140394,
+      "title": "Apprentice to Murder",
+      "year": 1988,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.4005,
+      "ts": 1785792173028
+    },
+    "153060": {
+      "id": 153060,
+      "title": "Reel Evil",
+      "year": 2012,
+      "label": "photo",
+      "pred": "photo",
+      "conf": 0.3903,
+      "ts": 1785791375526
+    },
+    "156597": {
+      "id": 156597,
+      "title": "Stage Fright",
+      "year": 2014,
+      "label": "photo",
+      "pred": "photo",
+      "conf": 0.3778,
+      "ts": 1785790949925
+    },
+    "157433": {
+      "id": 157433,
+      "title": "Pet Sematary",
+      "year": 2019,
+      "label": "painted",
+      "pred": "composite",
+      "conf": 0.3696,
+      "ts": 1785792246816
+    },
+    "159031": {
+      "id": 159031,
+      "title": "The Ladies Club",
+      "year": 1986,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.3923,
+      "ts": 1785791918078
+    },
+    "189755": {
+      "id": 189755,
+      "title": "The Happy House",
+      "year": 2013,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.35,
+      "ts": 1785791496567
+    },
+    "194421": {
+      "id": 194421,
+      "title": "Mirror of Death",
+      "year": 1988,
+      "label": "composite",
+      "pred": "photo",
+      "conf": 0.3824,
+      "ts": 1785791902036
+    },
+    "200462": {
+      "id": 200462,
+      "title": "Hansel & Gretel",
+      "year": 2013,
+      "label": "composite",
+      "pred": "composite",
+      "conf": 0.419,
+      "ts": 1785792291580
+    },
+    "204772": {
+      "id": 204772,
+      "title": "Cyberstalker",
+      "year": 1996,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.3712,
+      "ts": 1785792018844
+    },
+    "206183": {
+      "id": 206183,
+      "title": "Bad Karma",
+      "year": 2002,
+      "label": "composite",
+      "pred": "painted",
+      "conf": 0.3914,
+      "ts": 1785791539822
+    },
+    "212494": {
+      "id": 212494,
+      "title": "Don't Go to the Reunion",
+      "year": 2013,
+      "label": "photo",
+      "pred": "painted",
+      "conf": 0.3623,
+      "ts": 1785792297419
+    },
+    "221002": {
+      "id": 221002,
+      "title": "The Chelsea Murders",
+      "year": 1981,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.4297,
+      "ts": 1785791316598
+    },
+    "224815": {
+      "id": 224815,
+      "title": "Skinwalker Ranch",
+      "year": 2013,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.392,
+      "ts": 1785792226172
+    },
+    "225454": {
+      "id": 225454,
+      "title": "Confidential",
+      "year": 1986,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.3677,
+      "ts": 1785792299162
+    },
+    "237293": {
+      "id": 237293,
+      "title": "Haunting Melissa",
+      "year": 2013,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.404,
+      "ts": 1785791396305
+    },
+    "239380": {
+      "id": 239380,
+      "title": "Sinister Visions",
+      "year": 2013,
+      "label": "composite",
+      "pred": "painted",
+      "conf": 0.3906,
+      "ts": 1785791399185
+    },
+    "250352": {
+      "id": 250352,
+      "title": "Dream Stalker",
+      "year": 1991,
+      "label": "composite",
+      "pred": "photo",
+      "conf": 0.3726,
+      "ts": 1785792099541
+    },
+    "257117": {
+      "id": 257117,
+      "title": "Blood Punch",
+      "year": 2014,
+      "label": "composite",
+      "pred": "painted",
+      "conf": 0.4017,
+      "ts": 1785791258570
+    },
+    "269870": {
+      "id": 269870,
+      "title": "Laura Panic",
+      "year": 2008,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.3729,
+      "ts": 1785791501515
+    },
+    "270439": {
+      "id": 270439,
+      "title": "Church of the Damned",
+      "year": 1985,
+      "label": "painted",
+      "pred": "painted",
+      "conf": 0.3952,
+      "ts": 1785792169021
+    },
+    "283323": {
+      "id": 283323,
+      "title": "The Ridge",
+      "year": 2005,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.429,
+      "ts": 1785792084152
+    },
+    "288250": {
+      "id": 288250,
+      "title": "Sinister",
+      "year": 2011,
+      "label": "photo",
+      "pred": "composite",
+      "conf": 0.4295,
+      "ts": 1785790942724
+    },
+    "290537": {
+      "id": 290537,
+      "title": "The Asylum",
+      "year": 2000,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.3691,
+      "ts": 1785792025976
+    },
+    "290637": {
+      "id": 290637,
+      "title": "Pay the Ghost",
+      "year": 2015,
+      "label": "photo",
+      "pred": "composite",
+      "conf": 0.3637,
+      "ts": 1785791346568
+    },
+    "290725": {
+      "id": 290725,
+      "title": "Lazarus: Apocalypse",
+      "year": 2014,
+      "label": "composite",
+      "pred": "photo",
+      "conf": 0.3495,
+      "ts": 1785791884011
+    },
+    "293625": {
+      "id": 293625,
+      "title": "The Ritual",
+      "year": 2009,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.4255,
+      "ts": 1785792134923
+    },
+    "295933": {
+      "id": 295933,
+      "title": "Sexsquatch: The Legend of Blood Stool Creek",
+      "year": 2013,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.3927,
+      "ts": 1785792121749
+    },
+    "298009": {
+      "id": 298009,
+      "title": "Iron Wolf",
+      "year": 2014,
+      "label": "composite",
+      "pred": "photo",
+      "conf": 0.3914,
+      "ts": 1785791774750
+    },
+    "309732": {
+      "id": 309732,
+      "title": "Legend of the Sandsquatch",
+      "year": 2006,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.3923,
+      "ts": 1785791647216
+    },
+    "323371": {
+      "id": 323371,
+      "title": "Ninja Zombie",
+      "year": 1992,
+      "label": "painted",
+      "pred": "composite",
+      "conf": 0.3998,
+      "ts": 1785791877779
+    },
+    "332280": {
+      "id": 332280,
+      "title": "Shark Killer",
+      "year": 2015,
+      "label": "composite",
+      "pred": "composite",
+      "conf": 0.3966,
+      "ts": 1785791493395
+    },
+    "338598": {
+      "id": 338598,
+      "title": "Slay Belles",
+      "year": 2018,
+      "label": "painted",
+      "pred": "photo",
+      "conf": 0.412,
+      "ts": 1785791956464
+    },
+    "346960": {
+      "id": 346960,
+      "title": "Peggy and Fred in Hell: The Complete Cycle",
+      "year": 2002,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.4076,
+      "ts": 1785791254576
+    },
+    "347199": {
+      "id": 347199,
+      "title": "Help",
+      "year": 2014,
+      "label": "composite",
+      "pred": "photo",
+      "conf": 0.412,
+      "ts": 1785792041141
+    },
+    "347847": {
+      "id": 347847,
+      "title": "The Sand",
+      "year": 2015,
+      "label": "composite",
+      "pred": "painted",
+      "conf": 0.3646,
+      "ts": 1785792042875
+    },
+    "347855": {
+      "id": 347855,
+      "title": "Curtain",
+      "year": 2015,
+      "label": "composite",
+      "pred": "composite",
+      "conf": 0.4219,
+      "ts": 1785791761937
+    },
+    "354108": {
+      "id": 354108,
+      "title": "Girl Explores Girl: The Alien Encounter",
+      "year": 1998,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.392,
+      "ts": 1785791855393
+    },
+    "364767": {
+      "id": 364767,
+      "title": "Follow That Skirt",
+      "year": 1965,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.3611,
+      "ts": 1785790981334
+    },
+    "366150": {
+      "id": 366150,
+      "title": "Far Out",
+      "year": 2007,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.391,
+      "ts": 1785791216438
+    },
+    "370167": {
+      "id": 370167,
+      "title": "Máquina",
+      "year": 2006,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.401,
+      "ts": 1785791630813
+    },
+    "379889": {
+      "id": 379889,
+      "title": "The Boneyard Collection",
+      "year": 2008,
+      "label": "painted",
+      "pred": "photo",
+      "conf": 0.3538,
+      "ts": 1785791146048
+    },
+    "384687": {
+      "id": 384687,
+      "title": "The Channel",
+      "year": 2016,
+      "label": "photo",
+      "pred": "painted",
+      "conf": 0.3764,
+      "ts": 1785792181959
+    },
+    "410465": {
+      "id": 410465,
+      "title": "Dry Blood",
+      "year": 2017,
+      "label": "composite",
+      "pred": "painted",
+      "conf": 0.374,
+      "ts": 1785792022061
+    },
+    "420674": {
+      "id": 420674,
+      "title": "BoF",
+      "year": 2016,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.3801,
+      "ts": 1785791775931
+    },
+    "427472": {
+      "id": 427472,
+      "title": "Sheep Skin",
+      "year": 2013,
+      "label": "painted",
+      "pred": "composite",
+      "conf": 0.4243,
+      "ts": 1785791943783
+    },
+    "429724": {
+      "id": 429724,
+      "title": "Browse",
+      "year": 2020,
+      "label": "composite",
+      "pred": "photo",
+      "conf": 0.3728,
+      "ts": 1785791974901
+    },
+    "451331": {
+      "id": 451331,
+      "title": "Dive into Doom",
+      "year": 2013,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.4206,
+      "ts": 1785792077942
+    },
+    "452895": {
+      "id": 452895,
+      "title": "7 Witches",
+      "year": 2017,
+      "label": "composite",
+      "pred": "composite",
+      "conf": 0.4092,
+      "ts": 1785792196055
+    },
+    "455595": {
+      "id": 455595,
+      "title": "Residue",
+      "year": 2017,
+      "label": "composite",
+      "pred": "painted",
+      "conf": 0.3786,
+      "ts": 1785791440236
+    },
+    "461062": {
+      "id": 461062,
+      "title": "Wekufe: The Origin of Evil",
+      "year": 2016,
+      "label": "composite",
+      "pred": "photo",
+      "conf": 0.3622,
+      "ts": 1785791790660
+    },
+    "462263": {
+      "id": 462263,
+      "title": "Dawning of the Dead",
+      "year": 2017,
+      "label": "photo",
+      "pred": "composite",
+      "conf": 0.4054,
+      "ts": 1785792223280
+    },
+    "472338": {
+      "id": 472338,
+      "title": "Victor Crowley",
+      "year": 2017,
+      "label": "photo",
+      "pred": "painted",
+      "conf": 0.3999,
+      "ts": 1785791209554
+    },
+    "477704": {
+      "id": 477704,
+      "title": "Crustacean",
+      "year": 2009,
+      "label": "composite",
+      "pred": "composite",
+      "conf": 0.4223,
+      "ts": 1785791265657
+    },
+    "486457": {
+      "id": 486457,
+      "title": "Launder Man",
+      "year": 2017,
+      "label": "photo",
+      "pred": "composite",
+      "conf": 0.4111,
+      "ts": 1785791367527
+    },
+    "507540": {
+      "id": 507540,
+      "title": "Beast Mode",
+      "year": 2020,
+      "label": "composite",
+      "pred": "painted",
+      "conf": 0.4009,
+      "ts": 1785791977994
+    },
+    "507938": {
+      "id": 507938,
+      "title": "Reawakened",
+      "year": 2020,
+      "label": "painted",
+      "pred": "composite",
+      "conf": 0.4004,
+      "ts": 1785792157164
+    },
+    "508592": {
+      "id": 508592,
+      "title": "Kropemann",
+      "year": 2016,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.3745,
+      "ts": 1785792175254
+    },
+    "509901": {
+      "id": 509901,
+      "title": "Deadly Reunion",
+      "year": 2019,
+      "label": "photo",
+      "pred": "composite",
+      "conf": 0.4266,
+      "ts": 1785791060636
+    },
+    "511068": {
+      "id": 511068,
+      "title": "Starling",
+      "year": 2017,
+      "label": "composite",
+      "pred": "photo",
+      "conf": 0.3767,
+      "ts": 1785791338873
+    },
+    "516027": {
+      "id": 516027,
+      "title": "Hippopotamus",
+      "year": 2017,
+      "label": "composite",
+      "pred": "composite",
+      "conf": 0.4077,
+      "ts": 1785791997120
+    },
+    "532153": {
+      "id": 532153,
+      "title": "Amazon Hot Box",
+      "year": 2018,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.3682,
+      "ts": 1785791639387
+    },
+    "537668": {
+      "id": 537668,
+      "title": "Peeping Tom",
+      "year": 1990,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.3852,
+      "ts": 1785791343048
+    },
+    "555631": {
+      "id": 555631,
+      "title": "Moon Cake",
+      "year": 2012,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.423,
+      "ts": 1785791925591
+    },
+    "587041": {
+      "id": 587041,
+      "title": "Black Eyed Child (BEC)",
+      "year": 2018,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.3778,
+      "ts": 1785791536413
+    },
+    "594228": {
+      "id": 594228,
+      "title": "The 27 Club",
+      "year": 2019,
+      "label": "composite",
+      "pred": "composite",
+      "conf": 0.4243,
+      "ts": 1785791468734
+    },
+    "594568": {
+      "id": 594568,
+      "title": "My Mouth Lies Screaming",
+      "year": 2009,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.3812,
+      "ts": 1785792160314
+    },
+    "596767": {
+      "id": 596767,
+      "title": "Recovery",
+      "year": 2019,
+      "label": "photo",
+      "pred": "photo",
+      "conf": 0.3786,
+      "ts": 1785790947921
+    },
+    "599735": {
+      "id": 599735,
+      "title": "Parva",
+      "year": 2017,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.3961,
+      "ts": 1785792085523
+    },
+    "603565": {
+      "id": 603565,
+      "title": "Muerte: Tales of Horror",
+      "year": 2018,
+      "label": "composite",
+      "pred": "composite",
+      "conf": 0.4148,
+      "ts": 1785791252045
+    },
+    "618620": {
+      "id": 618620,
+      "title": "Wicked Witches",
+      "year": 2019,
+      "label": "painted",
+      "pred": "painted",
+      "conf": 0.3553,
+      "ts": 1785790945176
+    },
+    "622420": {
+      "id": 622420,
+      "title": "The Jack in the Box",
+      "year": 2019,
+      "label": "composite",
+      "pred": "painted",
+      "conf": 0.3552,
+      "ts": 1785792215563
+    },
+    "630288": {
+      "id": 630288,
+      "title": "The Final Scream",
+      "year": 2020,
+      "label": "photo",
+      "pred": "painted",
+      "conf": 0.3957,
+      "ts": 1785791319118
+    },
+    "632262": {
+      "id": 632262,
+      "title": "Changeling",
+      "year": 2019,
+      "label": "photo",
+      "pred": "composite",
+      "conf": 0.4257,
+      "ts": 1785792164679
+    },
+    "642694": {
+      "id": 642694,
+      "title": "The Demented",
+      "year": 2021,
+      "label": "painted",
+      "pred": "composite",
+      "conf": 0.4269,
+      "ts": 1785792119082
+    },
+    "642697": {
+      "id": 642697,
+      "title": "Woods",
+      "year": 2015,
+      "label": "painted",
+      "pred": "composite",
+      "conf": 0.4125,
+      "ts": 1785791862085
+    },
+    "643468": {
+      "id": 643468,
+      "title": "Split Decision",
+      "year": 2018,
+      "label": "composite",
+      "pred": "composite",
+      "conf": 0.4139,
+      "ts": 1785791489197
+    },
+    "652694": {
+      "id": 652694,
+      "title": "The Man in the Trunk",
+      "year": 2019,
+      "label": "composite",
+      "pred": "composite",
+      "conf": 0.4148,
+      "ts": 1785791845154
+    },
+    "670490": {
+      "id": 670490,
+      "title": "Possum",
+      "year": 1997,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.3946,
+      "ts": 1785791213727
+    },
+    "676547": {
+      "id": 676547,
+      "title": "Prey for the Devil",
+      "year": 2022,
+      "label": "photo",
+      "pred": "painted",
+      "conf": 0.3984,
+      "ts": 1785791353318
+    },
+    "677600": {
+      "id": 677600,
+      "title": "Nomina Domini",
+      "year": 2000,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.3895,
+      "ts": 1785791763860
+    },
+    "688436": {
+      "id": 688436,
+      "title": "Frigid",
+      "year": 2016,
+      "label": "photo",
+      "pred": "photo",
+      "conf": 0.4119,
+      "ts": 1785791499300
+    },
+    "700650": {
+      "id": 700650,
+      "title": "Horrorbabe.com 1",
+      "year": 2008,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.394,
+      "ts": 1785791308070
+    },
+    "707851": {
+      "id": 707851,
+      "title": "Pursuit",
+      "year": 2020,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.3932,
+      "ts": 1785792270139
+    },
+    "708699": {
+      "id": 708699,
+      "title": "Amunet",
+      "year": 2019,
+      "label": "composite",
+      "pred": "photo",
+      "conf": 0.3874,
+      "ts": 1785791636305
+    },
+    "714270": {
+      "id": 714270,
+      "title": "Chrono",
+      "year": 2020,
+      "label": "composite",
+      "pred": "painted",
+      "conf": 0.4029,
+      "ts": 1785791421764
+    },
+    "714669": {
+      "id": 714669,
+      "title": "Run Rabbit Run",
+      "year": 2024,
+      "label": "composite",
+      "pred": "composite",
+      "conf": 0.3777,
+      "ts": 1785791935953
+    },
+    "720009": {
+      "id": 720009,
+      "title": "The Haunting of Pottersfield",
+      "year": 2019,
+      "label": "photo",
+      "pred": "painted",
+      "conf": 0.3959,
+      "ts": 1785791485709
+    },
+    "723377": {
+      "id": 723377,
+      "title": "The Scary of Sixty-First",
+      "year": 2021,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.4011,
+      "ts": 1785792271937
+    },
+    "729613": {
+      "id": 729613,
+      "title": "Morbid Tales",
+      "year": 2020,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.399,
+      "ts": 1785792278170
+    },
+    "739403": {
+      "id": 739403,
+      "title": "Death by 1000 Cuts",
+      "year": 2019,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.3931,
+      "ts": 1785792274513
+    },
+    "746157": {
+      "id": 746157,
+      "title": "Chop Chop",
+      "year": 2020,
+      "label": "photo",
+      "pred": "composite",
+      "conf": 0.4243,
+      "ts": 1785791065530
+    },
+    "747578": {
+      "id": 747578,
+      "title": "Truly Dreadful Tales",
+      "year": 2012,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.3653,
+      "ts": 1785791363265
+    },
+    "760204": {
+      "id": 760204,
+      "title": "The Lair",
+      "year": 2022,
+      "label": "composite",
+      "pred": "painted",
+      "conf": 0.3663,
+      "ts": 1785792136891
+    },
+    "763053": {
+      "id": 763053,
+      "title": "Brides of Satan",
+      "year": 2020,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.3791,
+      "ts": 1785792045236
+    },
+    "766579": {
+      "id": 766579,
+      "title": "Alpine Lake",
+      "year": 2020,
+      "label": "composite",
+      "pred": "composite",
+      "conf": 0.4232,
+      "ts": 1785791313707
+    },
+    "769319": {
+      "id": 769319,
+      "title": "Country of Hotels",
+      "year": 2019,
+      "label": "composite",
+      "pred": "composite",
+      "conf": 0.397,
+      "ts": 1785791534817
+    },
+    "774131": {
+      "id": 774131,
+      "title": "Outtake Reel",
+      "year": 2011,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.3967,
+      "ts": 1785792031410
+    },
+    "796581": {
+      "id": 796581,
+      "title": "Strix",
+      "year": 2021,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.4289,
+      "ts": 1785792005536
+    },
+    "800156": {
+      "id": 800156,
+      "title": "The Thing That Ate the Birds",
+      "year": 2021,
+      "label": "composite",
+      "pred": "photo",
+      "conf": 0.4066,
+      "ts": 1785792314148
+    },
+    "805429": {
+      "id": 805429,
+      "title": "The Missing",
+      "year": 2022,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.4013,
+      "ts": 1785792226916
+    },
+    "812612": {
+      "id": 812612,
+      "title": "Popsy",
+      "year": 2019,
+      "label": "composite",
+      "pred": "photo",
+      "conf": 0.3894,
+      "ts": 1785791370767
+    },
+    "823040": {
+      "id": 823040,
+      "title": "Dark Night of the Pumpkinman",
+      "year": 2011,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.4259,
+      "ts": 1785792115088
+    },
+    "835243": {
+      "id": 835243,
+      "title": "The Slayer Chronicles - Volume 1",
+      "year": 2021,
+      "label": "composite",
+      "pred": "photo",
+      "conf": 0.404,
+      "ts": 1785791411673
+    },
+    "874594": {
+      "id": 874594,
+      "title": "Nail Gun",
+      "year": 2021,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.4107,
+      "ts": 1785792233644
+    },
+    "876210": {
+      "id": 876210,
+      "title": "Return of the Beast from Outer Space",
+      "year": 2021,
+      "label": "composite",
+      "pred": "composite",
+      "conf": 0.3928,
+      "ts": 1785792029588
+    },
+    "883034": {
+      "id": 883034,
+      "title": "Vore Gore",
+      "year": 2021,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.3998,
+      "ts": 1785791503430
+    },
+    "927854": {
+      "id": 927854,
+      "title": "Sleepyhead",
+      "year": 2021,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.3829,
+      "ts": 1785791607695
+    },
+    "929089": {
+      "id": 929089,
+      "title": "Experimenting on Roux: Prisoner 068",
+      "year": 2021,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.4048,
+      "ts": 1785792076827
+    },
+    "934781": {
+      "id": 934781,
+      "title": "Queen of Phoenix: Against Destiny",
+      "year": 1990,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.3893,
+      "ts": 1785791859531
+    },
+    "942905": {
+      "id": 942905,
+      "title": "Ouch",
+      "year": 1990,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.3879,
+      "ts": 1785791843668
+    },
+    "949569": {
+      "id": 949569,
+      "title": "The Leprechaun's Curse",
+      "year": 2021,
+      "label": "composite",
+      "pred": "photo",
+      "conf": 0.4092,
+      "ts": 1785791976702
+    },
+    "991924": {
+      "id": 991924,
+      "title": "The Woodsman",
+      "year": 2022,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.4015,
+      "ts": 1785791330469
+    },
+    "1008026": {
+      "id": 1008026,
+      "title": "Creep Box",
+      "year": 2022,
+      "label": "painted",
+      "pred": "photo",
+      "conf": 0.3698,
+      "ts": 1785792190824
+    },
+    "1008412": {
+      "id": 1008412,
+      "title": "Loon Lake",
+      "year": 2022,
+      "label": "photo",
+      "pred": "composite",
+      "conf": 0.4203,
+      "ts": 1785791223504
+    },
+    "1008980": {
+      "id": 1008980,
+      "title": "Haunted Indiana",
+      "year": 1981,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.3972,
+      "ts": 1785791773366
+    },
+    "1021035": {
+      "id": 1021035,
+      "title": "Don't Panic It's Organic",
+      "year": 2013,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.4193,
+      "ts": 1785792183545
+    },
+    "1026057": {
+      "id": 1026057,
+      "title": "The Visitor",
+      "year": 2022,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.3906,
+      "ts": 1785792268045
+    },
+    "1032876": {
+      "id": 1032876,
+      "title": "Cryptid",
+      "year": 2022,
+      "label": "photo",
+      "pred": "photo",
+      "conf": 0.3668,
+      "ts": 1785791333867
+    },
+    "1039442": {
+      "id": 1039442,
+      "title": "The Sparkle Spell: Ghosting Made Fun!",
+      "year": 2022,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.3769,
+      "ts": 1785791295090
+    },
+    "1046205": {
+      "id": 1046205,
+      "title": "File VL-624",
+      "year": 2023,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.396,
+      "ts": 1785791418582
+    },
+    "1047810": {
+      "id": 1047810,
+      "title": "Tap Man",
+      "year": 2022,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.3532,
+      "ts": 1785791924795
+    },
+    "1052633": {
+      "id": 1052633,
+      "title": "Last Burial",
+      "year": 2000,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.4269,
+      "ts": 1785792003082
+    },
+    "1059593": {
+      "id": 1059593,
+      "title": "Do Not Watch",
+      "year": 2023,
+      "label": "photo",
+      "pred": "painted",
+      "conf": 0.3373,
+      "ts": 1785791933455
+    },
+    "1061213": {
+      "id": 1061213,
+      "title": "We, the Children of Caterpillars",
+      "year": 2023,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.3898,
+      "ts": 1785792088900
+    },
+    "1078203": {
+      "id": 1078203,
+      "title": "De Profundis: Out of the Depths",
+      "year": 2010,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.3851,
+      "ts": 1785792229895
+    },
+    "1083818": {
+      "id": 1083818,
+      "title": "The Boy in the Tiny House and the Monster Who Lived Next Door",
+      "year": 2022,
+      "label": "photo",
+      "pred": "composite",
+      "conf": 0.4162,
+      "ts": 1785792110318
+    },
+    "1084439": {
+      "id": 1084439,
+      "title": "SLEIGH!",
+      "year": 2021,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.3959,
+      "ts": 1785792255029
+    },
+    "1109739": {
+      "id": 1109739,
+      "title": "Synchronicity",
+      "year": 2008,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.3581,
+      "ts": 1785791177401
+    },
+    "1113517": {
+      "id": 1113517,
+      "title": "HIMS",
+      "year": 2023,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.3766,
+      "ts": 1785792106482
+    },
+    "1125551": {
+      "id": 1125551,
+      "title": "A Beautiful Shadow",
+      "year": 2023,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.4105,
+      "ts": 1785790955200
+    },
+    "1130784": {
+      "id": 1130784,
+      "title": "WOKE",
+      "year": 2023,
+      "label": "painted",
+      "pred": "composite",
+      "conf": 0.4204,
+      "ts": 1785791359820
+    },
+    "1132147": {
+      "id": 1132147,
+      "title": "Dracula",
+      "year": 1968,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.3948,
+      "ts": 1785792186933
+    },
+    "1144577": {
+      "id": 1144577,
+      "title": "Scissors",
+      "year": 2025,
+      "label": "composite",
+      "pred": "painted",
+      "conf": 0.3393,
+      "ts": 1785790969983
+    },
+    "1152657": {
+      "id": 1152657,
+      "title": "Ribcage",
+      "year": 2022,
+      "label": "composite",
+      "pred": "painted",
+      "conf": 0.373,
+      "ts": 1785791390005
+    },
+    "1164387": {
+      "id": 1164387,
+      "title": "For a Moment",
+      "year": 2017,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.3582,
+      "ts": 1785791417173
+    },
+    "1166592": {
+      "id": 1166592,
+      "title": "Neethraa",
+      "year": 2020,
+      "label": "composite",
+      "pred": "photo",
+      "conf": 0.4004,
+      "ts": 1785791477294
+    },
+    "1172466": {
+      "id": 1172466,
+      "title": "Horror Anthology Volume 1",
+      "year": 2022,
+      "label": "photo",
+      "pred": "photo",
+      "conf": 0.3707,
+      "ts": 1785791068130
+    },
+    "1175194": {
+      "id": 1175194,
+      "title": "They're Real",
+      "year": 2023,
+      "label": "composite",
+      "pred": "composite",
+      "conf": 0.4018,
+      "ts": 1785791981448
+    },
+    "1188626": {
+      "id": 1188626,
+      "title": "Operation Storm Cloud",
+      "year": 2005,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.3525,
+      "ts": 1785791854098
+    },
+    "1199610": {
+      "id": 1199610,
+      "title": "In My Bones",
+      "year": 2022,
+      "label": "composite",
+      "pred": "composite",
+      "conf": 0.4044,
+      "ts": 1785791434332
+    },
+    "1211157": {
+      "id": 1211157,
+      "title": "The Girl with the Haunted Vagina",
+      "year": 2023,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.3897,
+      "ts": 1785791979963
+    },
+    "1217624": {
+      "id": 1217624,
+      "title": "The Evolution of Horror Cinema Worldwide",
+      "year": 2025,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.4277,
+      "ts": 1785792069347
+    },
+    "1218933": {
+      "id": 1218933,
+      "title": "Palaisipan",
+      "year": 2022,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.3787,
+      "ts": 1785791922736
+    },
+    "1222609": {
+      "id": 1222609,
+      "title": "The Ray Bradbury Theater: A Sound of Thunder",
+      "year": 1989,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.3699,
+      "ts": 1785792248391
+    },
+    "1225377": {
+      "id": 1225377,
+      "title": "The Mouse Trap",
+      "year": 2024,
+      "label": "painted",
+      "pred": "composite",
+      "conf": 0.3721,
+      "ts": 1785790958519
+    },
+    "1233231": {
+      "id": 1233231,
+      "title": "Overtime",
+      "year": 2024,
+      "label": "painted",
+      "pred": "painted",
+      "conf": 0.3633,
+      "ts": 1785791880031
+    },
+    "1233512": {
+      "id": 1233512,
+      "title": "Murdaritaville",
+      "year": 2024,
+      "label": "painted",
+      "pred": "composite",
+      "conf": 0.4027,
+      "ts": 1785791226169
+    },
+    "1234317": {
+      "id": 1234317,
+      "title": "The Chant of July",
+      "year": 2023,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.3785,
+      "ts": 1785791765291
+    },
+    "1239683": {
+      "id": 1239683,
+      "title": "Cry Baby Blue",
+      "year": 2018,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.388,
+      "ts": 1785792244253
+    },
+    "1242193": {
+      "id": 1242193,
+      "title": "Deprivation",
+      "year": 2024,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.3606,
+      "ts": 1785791835602
+    },
+    "1243988": {
+      "id": 1243988,
+      "title": "Magnum Opus",
+      "year": 2022,
+      "label": "photo",
+      "pred": "painted",
+      "conf": 0.3765,
+      "ts": 1785791849485
+    },
+    "1273189": {
+      "id": 1273189,
+      "title": "Every Dream is a Child with Teeth",
+      "year": 2017,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.3955,
+      "ts": 1785791383074
+    },
+    "1288715": {
+      "id": 1288715,
+      "title": "Best Kept Shut",
+      "year": 2024,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.4098,
+      "ts": 1785792280275
+    },
+    "1292267": {
+      "id": 1292267,
+      "title": "House Hardy Halloween",
+      "year": 2018,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.3848,
+      "ts": 1785791945538
+    },
+    "1293320": {
+      "id": 1293320,
+      "title": "Into the Depths",
+      "year": 2011,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.3659,
+      "ts": 1785792176099
+    },
+    "1293977": {
+      "id": 1293977,
+      "title": "The Open Window",
+      "year": 1972,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.3648,
+      "ts": 1785791869611
+    },
+    "1295131": {
+      "id": 1295131,
+      "title": "Echo",
+      "year": 2024,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.3936,
+      "ts": 1785792128386
+    },
+    "1300805": {
+      "id": 1300805,
+      "title": "Ek Hi Bhool",
+      "year": 1940,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.3431,
+      "ts": 1785791495148
+    },
+    "1307282": {
+      "id": 1307282,
+      "title": "Secrets",
+      "year": 2024,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.4106,
+      "ts": 1785792036069
+    },
+    "1314441": {
+      "id": 1314441,
+      "title": "For Sale By Exorcist",
+      "year": 2024,
+      "label": "photo",
+      "pred": "photo",
+      "conf": 0.3687,
+      "ts": 1785790975621
+    },
+    "1316071": {
+      "id": 1316071,
+      "title": "Janus",
+      "year": 2024,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.4058,
+      "ts": 1785792008437
+    },
+    "1323570": {
+      "id": 1323570,
+      "title": "Shadow Dancing in the West",
+      "year": 2026,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.3995,
+      "ts": 1785791403079
+    },
+    "1328956": {
+      "id": 1328956,
+      "title": "Alma & the Wolf",
+      "year": 2025,
+      "label": "painted",
+      "pred": "composite",
+      "conf": 0.3496,
+      "ts": 1785792179653
+    },
+    "1341032": {
+      "id": 1341032,
+      "title": "The Prophet",
+      "year": 2024,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.4088,
+      "ts": 1785792240279
+    },
+    "1354087": {
+      "id": 1354087,
+      "title": "Mirror",
+      "year": 2024,
+      "label": "painted",
+      "pred": "composite",
+      "conf": 0.4179,
+      "ts": 1785791951939
+    },
+    "1354762": {
+      "id": 1354762,
+      "title": "Stereo-Vision",
+      "year": 2024,
+      "label": "photo",
+      "pred": "composite",
+      "conf": 0.429,
+      "ts": 1785791248614
+    },
+    "1355159": {
+      "id": 1355159,
+      "title": "DV5: Cord Cutter Hell",
+      "year": 2021,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.3761,
+      "ts": 1785791546887
+    },
+    "1357161": {
+      "id": 1357161,
+      "title": "My Child",
+      "year": 2024,
+      "label": "composite",
+      "pred": "painted",
+      "conf": 0.3971,
+      "ts": 1785791771949
+    },
+    "1367761": {
+      "id": 1367761,
+      "title": "Victim of Circumstance",
+      "year": 2024,
+      "label": "composite",
+      "pred": "composite",
+      "conf": 0.4025,
+      "ts": 1785790936234
+    },
+    "1375238": {
+      "id": 1375238,
+      "title": "Alvin and the Killmunks",
+      "year": 2017,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.38,
+      "ts": 1785791328435
+    },
+    "1376011": {
+      "id": 1376011,
+      "title": "To Kill A Monster",
+      "year": 2024,
+      "label": "composite",
+      "pred": "painted",
+      "conf": 0.3923,
+      "ts": 1785791833836
+    },
+    "1376788": {
+      "id": 1376788,
+      "title": "Fur Fatale",
+      "year": 2007,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.3967,
+      "ts": 1785791341989
+    },
+    "1406584": {
+      "id": 1406584,
+      "title": "Safebox",
+      "year": 2024,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.3912,
+      "ts": 1785791331607
+    },
+    "1415990": {
+      "id": 1415990,
+      "title": "Reunion",
+      "year": 2025,
+      "label": "composite",
+      "pred": "painted",
+      "conf": 0.3995,
+      "ts": 1785791868565
+    },
+    "1427153": {
+      "id": 1427153,
+      "title": "Ghost of the Night",
+      "year": 2018,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.4229,
+      "ts": 1785791269944
+    },
+    "1433889": {
+      "id": 1433889,
+      "title": "Spider",
+      "year": 2024,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.4125,
+      "ts": 1785791451250
+    },
+    "1446692": {
+      "id": 1446692,
+      "title": "Picture Box",
+      "year": 2023,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.3557,
+      "ts": 1785791400782
+    },
+    "1457700": {
+      "id": 1457700,
+      "title": "Stillness Spreads",
+      "year": 2025,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.3782,
+      "ts": 1785790992674
+    },
+    "1466829": {
+      "id": 1466829,
+      "title": "Daisy",
+      "year": 2025,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.3965,
+      "ts": 1785792209006
+    },
+    "1472467": {
+      "id": 1472467,
+      "title": "Rohan's Alien Encounter",
+      "year": 2016,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.3945,
+      "ts": 1785791379521
+    },
+    "1481331": {
+      "id": 1481331,
+      "title": "Nahual",
+      "year": 2025,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.4287,
+      "ts": 1785792007922
+    },
+    "1483743": {
+      "id": 1483743,
+      "title": "up here, disappear",
+      "year": 2025,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.3933,
+      "ts": 1785792138837
+    },
+    "1495071": {
+      "id": 1495071,
+      "title": "SCARECROW",
+      "year": 2025,
+      "label": "composite",
+      "pred": "composite",
+      "conf": 0.4046,
+      "ts": 1785791641422
+    },
+    "1505054": {
+      "id": 1505054,
+      "title": "Heirlooms",
+      "year": 2025,
+      "label": "composite",
+      "pred": "painted",
+      "conf": 0.3727,
+      "ts": 1785791415544
+    },
+    "1526847": {
+      "id": 1526847,
+      "title": "The Piano Killer",
+      "year": 2025,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.3483,
+      "ts": 1785792209915
+    },
+    "1528082": {
+      "id": 1528082,
+      "title": "Try Your Luck",
+      "year": 2025,
+      "label": "composite",
+      "pred": "photo",
+      "conf": 0.3487,
+      "ts": 1785791515815
+    },
+    "1536756": {
+      "id": 1536756,
+      "title": "Blood & Rust",
+      "year": 2026,
+      "label": "composite",
+      "pred": "photo",
+      "conf": 0.3943,
+      "ts": 1785791305730
+    },
+    "1539251": {
+      "id": 1539251,
+      "title": "Mirror Mirror",
+      "year": 1969,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.371,
+      "ts": 1785791180563
+    },
+    "1541621": {
+      "id": 1541621,
+      "title": "Dragged to Nowhere",
+      "year": 2025,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.4054,
+      "ts": 1785791923904
+    },
+    "1546216": {
+      "id": 1546216,
+      "title": "The Collision",
+      "year": 2025,
+      "label": "composite",
+      "pred": "photo",
+      "conf": 0.394,
+      "ts": 1785791777765
+    },
+    "1571171": {
+      "id": 1571171,
+      "title": "Donut Do It!",
+      "year": 2025,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.3568,
+      "ts": 1785791914196
+    },
+    "1572497": {
+      "id": 1572497,
+      "title": "Viral",
+      "year": 2025,
+      "label": "composite",
+      "pred": "photo",
+      "conf": 0.3615,
+      "ts": 1785791857697
+    },
+    "1576549": {
+      "id": 1576549,
+      "title": "Contamination",
+      "year": 2025,
+      "label": "composite",
+      "pred": "photo",
+      "conf": 0.3917,
+      "ts": 1785792081484
+    },
+    "1581397": {
+      "id": 1581397,
+      "title": "Tingling",
+      "year": 2025,
+      "label": "photo",
+      "pred": "composite",
+      "conf": 0.4075,
+      "ts": 1785791351925
+    },
+    "1583174": {
+      "id": 1583174,
+      "title": "For the Commune",
+      "year": 2024,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.4206,
+      "ts": 1785792034787
+    },
+    "1632818": {
+      "id": 1632818,
+      "title": "Dark Distortion",
+      "year": 2026,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.3927,
+      "ts": 1785792066218
+    },
+    "1646894": {
+      "id": 1646894,
+      "title": "Bucharest Horror Show",
+      "year": 9999,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.3809,
+      "ts": 1785791215484
+    },
+    "1647838": {
+      "id": 1647838,
+      "title": "Red Velvet Cake",
+      "year": 2026,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.4,
+      "ts": 1785791471939
+    },
+    "1654743": {
+      "id": 1654743,
+      "title": "Rat",
+      "year": 2026,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.4291,
+      "ts": 1785792123685
+    },
+    "1656311": {
+      "id": 1656311,
+      "title": "Smush!",
+      "year": 2012,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.3944,
+      "ts": 1785792301932
+    },
+    "1661127": {
+      "id": 1661127,
+      "title": "She Fell Asleep and Dreamt of a Library",
+      "year": 2026,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.3714,
+      "ts": 1785791483123
+    },
+    "1661225": {
+      "id": 1661225,
+      "title": "Unsettled Woods: The Sequel",
+      "year": 2025,
+      "label": "doubtful",
+      "pred": "composite",
+      "conf": 0.3774,
+      "ts": 1785791481569
+    },
+    "1668859": {
+      "id": 1668859,
+      "title": "It’s a Wonderful Night of the Living Dead",
+      "year": 2026,
+      "label": "photo",
+      "pred": "painted",
+      "conf": 0.3686,
+      "ts": 1785790971974
+    },
+    "1682620": {
+      "id": 1682620,
+      "title": "Visitor",
+      "year": 2026,
+      "label": "painted",
+      "pred": "painted",
+      "conf": 0.3403,
+      "ts": 1785791841542
+    },
+    "1686807": {
+      "id": 1686807,
+      "title": "Mold",
+      "year": 2026,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.4144,
+      "ts": 1785792273300
+    },
+    "1690141": {
+      "id": 1690141,
+      "title": "UGLY",
+      "year": 2025,
+      "label": "doubtful",
+      "pred": "photo",
+      "conf": 0.4105,
+      "ts": 1785792210772
+    },
+    "1725879": {
+      "id": 1725879,
+      "title": "inside.vbs",
+      "year": 2026,
+      "label": "doubtful",
+      "pred": "painted",
+      "conf": 0.3464,
+      "ts": 1785792170439
+    }
+  }
 }
