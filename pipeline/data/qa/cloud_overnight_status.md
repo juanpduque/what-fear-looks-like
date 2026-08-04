@@ -344,3 +344,17 @@ Cuenta STS: `567596065542` · Rol: `WSParticipantRole/Participant`
 
 **Acción OWL:** progress stale con EC2 running — revisar consola; no relaunch GPU; resume CPU desde deltas S3 si muerto.
 
+
+
+---
+
+## 2026-08-04T12:33:07Z — Community Relabels DONE
+
+| Campo | Valor |
+|---|---|
+| Marker | `DONE_RELABELS_20260804T123217Z` |
+| Resultado | ok=**5726** err=**1** (solo InvalidImageFormat) · AccessDenied=**0** |
+| CSV | 15642 filas totales en `rekognition_community_72k.csv` |
+| EC2 | `i-09996bd1418703e11` **terminated** |
+| Rate | ~7.18/s |
+
