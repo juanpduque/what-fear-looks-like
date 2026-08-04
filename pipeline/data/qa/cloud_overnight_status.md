@@ -299,3 +299,18 @@ Cuenta STS: `567596065542` · Rol: `WSParticipantRole/Participant`
 | OWL CPU backfill | RUNNING | 8900/19263 (46.2%) device=cpu | ts=2026-08-04T07:33:54Z · EC2 `i-0b9777ca835a6d5ab` running c5.2xlarge · ETA~8.6h · sano |
 | Custom Labels v202608040132 | TRAINING_COMPLETED | F1=0.6454153060913086 | The model is ready to run. · compare_f1.json already present |
 
+
+---
+
+## 2026-08-04T11:45:55Z — tick
+
+### AWS: **OK** (`arn:aws:sts::567596065542:assumed-role/WSParticipantRole/Participant`)
+
+| Job | Status | Progress | Detail |
+|---|---|---|---|
+| Community 72k | DONE | 100% | EC2=unknown · `{   "phase": "all",   "status": "done",   "n_ids": 68011,   "ts": "2026-08-04T01:42:49Z",   "bucket": "sagemaker-studio-` |
+| OWL CPU backfill | STALE? | 12325/19263 (64.0%) device=cpu | ts=2026-08-04T10:29:27Z · EC2 `i-0b9777ca835a6d5ab` running c5.2xlarge · ETA~5.8h · ⚠️ progress stale >12min |
+| Custom Labels v202608040132 | TRAINING_COMPLETED | F1=0.6454153060913086 | The model is ready to run. · compare_f1.json already present |
+
+**Acción OWL:** progress stale con EC2 running — revisar consola; no relaunch GPU; resume CPU desde deltas S3 si muerto.
+
