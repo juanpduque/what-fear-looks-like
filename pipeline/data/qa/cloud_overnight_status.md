@@ -414,3 +414,21 @@ Cuenta STS: `567596065542` · Rol: `WSParticipantRole/Participant`
 | Relaunch | ver `owlv2_backfill_relaunch.json` · **c5.4xlarge** CPU · resume deltas S3 |
 | Restante | ~6938 ids · ETA ~5.8h @ 3s/img |
 
+
+
+---
+
+## 2026-08-04T13:54:41Z — Nova Lite enrich: BLOQUEADO
+
+### AWS verify
+- `aws sts get-caller-identity` → **ExpiredToken** (ASIA session caducada)
+- Sin credenciales válidas no se puede stage/kickoff Lambda ni monitorear OWL/S3
+
+### Scripts Nova en repo
+- **No existen** en `main` ni en esta rama: no hay `stage_nova_enrich_posters.sh`, `kickoff_nova_enrich_cloud.sh`, `pull_nova_enrich_cloud.sh`, ni referencias Bedrock/Nova/Lambda enrich bajo `pipeline/aws/`
+
+### Next (usuario)
+1. Renovar secretos AWS en Cloud Agents / Environment vinculado (o nuevo run con creds frescas)
+2. Asegurar que los scripts Nova Lambda estén en el repo (o indicar branch/path)
+3. Relanzar: stage solo ~11.7k gap → kickoff Lambda us-west-2 → monitor; pull después con `pull_nova_enrich_cloud.sh`
+
