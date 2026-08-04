@@ -314,3 +314,18 @@ Cuenta STS: `567596065542` · Rol: `WSParticipantRole/Participant`
 
 **Acción OWL:** progress stale con EC2 running — revisar consola; no relaunch GPU; resume CPU desde deltas S3 si muerto.
 
+
+
+---
+
+## 2026-08-04T11:56:43Z — Community Relabels launched
+
+| Campo | Valor |
+|---|---|
+| Motivo | Re-Labels ~5726 AccessDenied (+1 InvalidImageFormat); IAM `WflikeRekognitionDetect` OK |
+| Instance | `i-09996bd1418703e11` c5.xlarge · profile `wflike-ec2-train` |
+| Checkpoint | CSV limpio 9915 ok; backup `rekognition_community_72k_pre_relabels.csv` |
+| Phase | `--phase labels` only (sin download / DetectText) |
+| DONE previo | archivado → `DONE_PRE_RELABELS` |
+| OWL | sin tocar (sigue CPU) |
+

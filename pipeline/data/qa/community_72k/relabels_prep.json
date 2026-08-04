@@ -1,0 +1,10 @@
+{
+  "prepared_at": "2026-08-04T11:55:23Z",
+  "kept_ok": 9915,
+  "removed": {
+    "AccessDenied": 5726,
+    "InvalidImageFormat": 1
+  },
+  "todo_expected": 5727,
+  "note": "Stripped AccessDenied(+InvalidImageFormat) rows so labels resume retries them. Full CSV left as results backup on S3."
+}
