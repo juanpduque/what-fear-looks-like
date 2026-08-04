@@ -82,3 +82,32 @@ Fuente live sin credenciales: dashboard público `amaleli-website/wflike-jobs-da
 **OWL check:** creature=125 weapon=125 last_ts=2026-08-04T00:44:45Z state=running — leave running unless instance dead.
 **Community:** state=done phase=all (no relaunch; DONE expected).
 **Local pending:** SigLIP embeds + dashboard 127.0.0.1:8765 mueren si Mac duerme.
+
+---
+
+## 2026-08-04T01:53:34Z — AWS secrets verify (follow-up)
+
+### Resultado
+- `aws sts get-caller-identity` → **NoCredentials** (FAIL)
+- `AWS_ACCESS_KEY_ID` / `AWS_SECRET_ACCESS_KEY` / `AWS_DEFAULT_REGION`: **ausentes** en este pod
+- Environment Cursor vinculado: **null** (sin environment.json / build)
+- Socket `/run/cursor/api.sock` solo expone `POST /v1/tokens/oidc` (OIDC), no lista secretos estáticos
+- Conclusión: las secretos del dashboard **aún no inyectan en este run ya arrancado** (probablemente requieren **nuevo Cloud Agent** o Environment linkeado + rebuild)
+
+### Dashboard público (fallback)
+- updated: `2026-08-04T01:52:37Z`
+- summary: `{'running': 2, 'done': 4, 'alerts': 1, 'ec2_running': 1}`
+| Job | Status | Progress | Detail |
+|---|---|---|---|
+| Community 72k | done | 100.0% | status=done done_batch=None rate=None/s total_rows=None |
+| OWL CPU/GPU backfill | running | 0.6% | creature=125/19263 weapon=125 device=cuda |
+| IMDb posters | done | 100.0% | IMDB_SELENIUM_DONE_20260804T003334Z | hits=1239 miss=609 |
+| IMDb features | done | 100.0% | wflike-imdb-features-residual: IMDB_SELENIUM_DONE_20260803T235149Z |
+| Local rekognition enrich | done | 100.0% | LISTO ok=0 err=3 elapsed=0.6m (0.00/s) main=49556 → data/qa/rekognition_community_enrich.csv |
+| SigLIP / medium compare | running | 100.0% | pid=14846 vitl 311/311 |
+| Overlap guard | alert | None% | PAUSE_LABELS cleared after local enrich DONE; fresh skip uploaded; worker resumed labels | ALERT: Ac |
+- ec2: `[{"instance_id": "i-0b9777ca835a6d5ab", "name": "wflike-owlv2-backfill", "state": "running", "type": "c5.2xlarge", "ip": "54.152.164.51", "profile": "sandbox"}]`
+
+### Next
+1. Relanzar Cloud Agent (o linkear Environment con las 3 vars) para que herede secretos.
+2. Mientras: loop público sigue; no matar jobs; sin AWS no hay Custom Labels compare ni S3 privado.
