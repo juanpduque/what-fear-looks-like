@@ -117,3 +117,16 @@ Cuenta STS: `567596065542` · Rol: `WSParticipantRole/Participant`
 | OWL CPU backfill | RUNNING | 3075/19263 (16.0%) device=cpu | ts=2026-08-04T02:38:26Z · EC2 `i-0b9777ca835a6d5ab` running c5.2xlarge · ETA~13.5h · sano |
 | Custom Labels v202608040132 | TRAINING_COMPLETED | F1=0.6454153060913086 | The model is ready to run. · compare_f1.json already present |
 
+
+---
+
+## 2026-08-04T03:14:22Z — tick
+
+### AWS: **OK** (`arn:aws:sts::567596065542:assumed-role/WSParticipantRole/Participant`)
+
+| Job | Status | Progress | Detail |
+|---|---|---|---|
+| Community 72k | DONE | 100% | EC2=unknown · `{   "phase": "all",   "status": "done",   "n_ids": 68011,   "ts": "2026-08-04T01:42:49Z",   "bucket": "sagemaker-studio-` |
+| OWL CPU backfill | RUNNING | 3775/19263 (19.6%) device=cpu | ts=2026-08-04T03:12:17Z · EC2 `i-0b9777ca835a6d5ab` running c5.2xlarge · ETA~12.9h · sano |
+| Custom Labels v202608040132 | TRAINING_COMPLETED | F1=0.6454153060913086 | The model is ready to run. · compare_f1.json already present |
+
