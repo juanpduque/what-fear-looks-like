@@ -358,3 +358,16 @@ Cuenta STS: `567596065542` · Rol: `WSParticipantRole/Participant`
 | EC2 | `i-09996bd1418703e11` **terminated** |
 | Rate | ~7.18/s |
 
+
+
+---
+
+## 2026-08-04T12:35:02Z — Merge Community 72k desde S3
+
+| Campo | Valor |
+|---|---|
+| Labels merged | +15641 → `rekognition.csv` (52608 total) |
+| Labels skipped err | 1 |
+| DetectText | 15644 ok → `data/detecttext_community_72k.csv` |
+| Overlap main | 0 |
+

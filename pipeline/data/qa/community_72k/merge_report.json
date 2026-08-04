@@ -1,0 +1,19 @@
+{
+  "merged_at": "2026-08-04T12:35:01Z",
+  "bucket": "sagemaker-studio-a5572760",
+  "prefix": "wflike-community-72k",
+  "labels": {
+    "community_ok": 15641,
+    "community_err_skipped": 1,
+    "overlap_replaced": 0,
+    "rekognition_before": 36967,
+    "rekognition_after": 52608,
+    "added": 15641
+  },
+  "detecttext": {
+    "detecttext_rows": 15645,
+    "detecttext_ok": 15644,
+    "detecttext_err": 1,
+    "path": "data/detecttext_community_72k.csv"
+  }
+}
