@@ -885,7 +885,6 @@ def main() -> int:
             status["public_status_url"] = PUBLIC_STATUS_URL
             write_status(status, prev)
             status["events_tail"] = events_tail()
-            status["public_status_url"] = PUBLIC_STATUS_URL
             _atomic_write_json(STATUS_PATH, status)
 
             remote = sync_remote(skip_sync=args.no_sync)
