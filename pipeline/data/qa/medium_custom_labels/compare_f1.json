@@ -1,0 +1,22 @@
+{
+  "written_at": "2026-08-04T01:59:53Z",
+  "project": "wflike-medium-clf",
+  "version": "v202608040132",
+  "project_version_arn": "arn:aws:rekognition:<region>:567596065542:project/wflike-medium-clf/version/v202608040132/1785807179332",
+  "status": "TRAINING_COMPLETED",
+  "custom_labels_f1": 0.6454153060913086,
+  "logreg_f1": 0.5135,
+  "delta_f1": 0.131915,
+  "beats_logreg": true,
+  "evaluation_result": {
+    "F1Score": 0.6454153060913086,
+    "Summary": {
+      "S3Object": {
+        "Bucket": "sagemaker-studio-a5572760",
+        "Name": "wflike-custom-labels/medium/output/EvaluationResultSummary-wflike-medium-clf-v202608040132.json"
+      }
+    }
+  },
+  "billable_training_seconds": 3322,
+  "notes": "LogReg baseline F1 fixed at 0.5135 per overnight brief (local_baseline/metrics.json macro_f1_test was 0.4852)."
+}
