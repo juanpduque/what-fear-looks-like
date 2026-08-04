@@ -401,3 +401,16 @@ Cuenta STS: `567596065542` · Rol: `WSParticipantRole/Participant`
 
 **Acción OWL:** progress stale con EC2 running — revisar consola; no relaunch GPU; resume CPU desde deltas S3 si muerto.
 
+
+
+---
+
+## 2026-08-04T13:37:43Z — OWL OOM + CPU relaunch
+
+| Campo | Valor |
+|---|---|
+| Fallo | `FAIL_137` OOM @ 12325/19263 (~10:29Z) en c5.2xlarge |
+| Idle | `i-0b9777ca835a6d5ab` terminada (shutdown falló; idle billing) |
+| Relaunch | ver `owlv2_backfill_relaunch.json` · **c5.4xlarge** CPU · resume deltas S3 |
+| Restante | ~6938 ids · ETA ~5.8h @ 3s/img |
+

@@ -1,0 +1,9 @@
+{
+  "launched_at": "2026-08-04T13:37:26Z",
+  "instance_id": "i-04357f0b44277fa9f",
+  "instance_type": "c5.4xlarge",
+  "reason": "OOM rc=137 on c5.2xlarge at 12325/19263; resume CPU from S3 deltas",
+  "resume_from": 12325,
+  "target": 19263,
+  "device": "cpu"
+}
