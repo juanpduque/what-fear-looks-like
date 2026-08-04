@@ -386,3 +386,18 @@ Cuenta STS: `567596065542` · Rol: `WSParticipantRole/Participant`
 
 **Acción OWL:** progress stale con EC2 running — revisar consola; no relaunch GPU; resume CPU desde deltas S3 si muerto.
 
+
+---
+
+## 2026-08-04T13:19:43Z — tick
+
+### AWS: **OK** (`arn:aws:sts::567596065542:assumed-role/WSParticipantRole/Participant`)
+
+| Job | Status | Progress | Detail |
+|---|---|---|---|
+| Community 72k | DONE | 100% | EC2=unknown · `{   "phase": "labels",   "status": "done",   "ok": 5726,   "err": 1,   "total_rows": 15642,   "ts": "2026-08-04T12:31:31` |
+| OWL CPU backfill | STALE? | 12325/19263 (64.0%) device=cpu | ts=2026-08-04T10:29:27Z · EC2 `i-0b9777ca835a6d5ab` running c5.2xlarge · ETA~5.8h · ⚠️ progress stale >12min |
+| Custom Labels v202608040132 | TRAINING_COMPLETED | F1=0.6454153060913086 | The model is ready to run. · compare_f1.json already present |
+
+**Acción OWL:** progress stale con EC2 running — revisar consola; no relaunch GPU; resume CPU desde deltas S3 si muerto.
+
