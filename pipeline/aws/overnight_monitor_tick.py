@@ -219,9 +219,16 @@ def git_checkpoint(msg: str) -> None:
     print("git commit:", out or err, flush=True)
     if rc != 0:
         return
+    # refresh GH HTTPS credentials (tokens expire mid-overnight)
+    run(["gh", "auth", "setup-git"], timeout=60)
     rc, out, err = run(
         ["git", "push", "-u", "origin", "HEAD"], timeout=180
     )
+    if rc != 0:
+        run(["gh", "auth", "setup-git"], timeout=60)
+        rc, out, err = run(
+            ["git", "push", "-u", "origin", "HEAD"], timeout=180
+        )
     print("git push:", out or err, "rc=", rc, flush=True)
 
 
