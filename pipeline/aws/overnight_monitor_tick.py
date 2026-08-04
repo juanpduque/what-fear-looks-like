@@ -220,6 +220,17 @@ def git_checkpoint(msg: str) -> None:
     if rc != 0:
         return
     # refresh GH HTTPS credentials (tokens expire mid-overnight)
+    # Drop any embedded expired token in origin URL.
+    run(
+        [
+            "git",
+            "remote",
+            "set-url",
+            "origin",
+            "https://github.com/juanpduque/what-fear-looks-like.git",
+        ],
+        timeout=30,
+    )
     run(["gh", "auth", "setup-git"], timeout=60)
     rc, out, err = run(
         ["git", "push", "-u", "origin", "HEAD"], timeout=180
