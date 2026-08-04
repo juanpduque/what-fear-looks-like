@@ -1,0 +1,11 @@
+{
+  "launched_at": "2026-08-04T11:56:11Z",
+  "instance_id": "i-09996bd1418703e11",
+  "instance_type": "c5.xlarge",
+  "ami": "ami-052355af2a014bd2c",
+  "profile": "wflike-ec2-train",
+  "job": "community-72k-relabels",
+  "todo_expected": 5727,
+  "phase": "labels",
+  "note": "Retry AccessDenied Labels after IAM WflikeRekognitionDetect"
+}
