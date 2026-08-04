@@ -193,6 +193,38 @@ def maybe_write_compare(cl: dict) -> str | None:
     return f"wrote {COMPARE_JSON.relative_to(ROOT)}"
 
 
+
+def git_checkpoint(msg: str) -> None:
+    """Stage status/compare artifacts and push (best-effort)."""
+    files = [
+        "pipeline/data/qa/cloud_overnight_status.md",
+        "pipeline/data/qa/medium_custom_labels/compare_f1.json",
+        "pipeline/aws/overnight_monitor_tick.py",
+    ]
+    # scrub region literal before commit
+    needle = REGION
+    for rel in files:
+        path = ROOT / rel
+        if not path.exists():
+            continue
+        txt = path.read_text(encoding="utf-8")
+        if needle and needle in txt:
+            path.write_text(txt.replace(needle, "<region>"), encoding="utf-8")
+    run(["git", "add", *files])
+    rc, staged, _ = run(["git", "diff", "--cached", "--name-only"])
+    if not staged.strip():
+        print("git: nothing to commit", flush=True)
+        return
+    rc, out, err = run(["git", "commit", "-m", msg])
+    print("git commit:", out or err, flush=True)
+    if rc != 0:
+        return
+    rc, out, err = run(
+        ["git", "push", "-u", "origin", "HEAD"], timeout=180
+    )
+    print("git push:", out or err, "rc=", rc, flush=True)
+
+
 def tick() -> str:
     now = utc_now()
     sts, sts_err = aws_json(["sts", "get-caller-identity"])
@@ -300,6 +332,7 @@ def main():
         print(f"=== loop tick {i+1}/{max_ticks} ===", flush=True)
         try:
             tick()
+            git_checkpoint(f"chore(qa): overnight status tick {utc_now()}")
         except Exception as e:
             msg = f"\n---\n\n## {utc_now()} — tick ERROR\n\n`{e}`\n"
             with STATUS.open("a", encoding="utf-8") as f:
