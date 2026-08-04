@@ -432,3 +432,16 @@ Cuenta STS: `567596065542` · Rol: `WSParticipantRole/Participant`
 2. Asegurar que los scripts Nova Lambda estén en el repo (o indicar branch/path)
 3. Relanzar: stage solo ~11.7k gap → kickoff Lambda us-west-2 → monitor; pull después con `pull_nova_enrich_cloud.sh`
 
+
+---
+
+## 2026-08-04T13:55:03Z — tick
+
+### AWS: **FAIL** (aws: [ERROR]: An error occurred (ExpiredToken) when calling the GetCallerIdentity operation: The security token included in the request is expired)
+
+| Job | Status | Progress | Detail |
+|---|---|---|---|
+| Community 72k | UNKNOWN | ? | EC2=unknown · `` |
+| OWL CPU backfill | unknown | None/19263 (None%) device=None | ts=None · EC2 `i-0b9777ca835a6d5ab` unknown None · ETA~Noneh · sano |
+| Custom Labels v202608040132 | aws: [ERROR]: An error occurred (ExpiredTokenException) when calling the DescribeProjectVersions operation: The security token included in the request is expired | F1=None |  · await COMPLETED |
+
