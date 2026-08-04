@@ -1,3 +1,11 @@
+# local secrets (never commit)
+.env
+.env.*
+!.env.example
+pipeline/.env
+pipeline/.env.*
+!pipeline/.env.example
+
 # pipeline artifacts
 pipeline/data/posters/
 pipeline/data/horror_movies.csv
@@ -17,6 +25,14 @@ pipeline/data/*_partial.json
 # staging / backups / transfer tarballs (local only)
 pipeline/data/_bak_*/
 pipeline/data/_*_stage/
+pipeline/data/qa/_*_stage/
+pipeline/data/qa/tmdb_api_key
+
+# jobs dashboard runtime (poller writes; live data lives on S3)
+pipeline/data/qa/jobs_dashboard/
+site/jobs-dashboard/status.json
+site/jobs-dashboard/events.log
+site/jobs-dashboard/*.log
 pipeline/data/_aws_pull/
 pipeline/data/posters_multi/
 pipeline/data/creature_detect_preview/
