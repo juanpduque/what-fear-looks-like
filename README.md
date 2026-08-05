@@ -14,8 +14,22 @@ pipeline/         Python pipeline: dataset -> posters -> metrics -> CSV/JSON
   models/         Face-detection ONNX model; CLIP weights are gitignored (auto-downloaded)
   legacy/         Superseded scripts, kept for reference
 site/             The scrollytelling page (static HTML/CSS/JS, no backend)
+site/demos/       Experiments (e.g. poster-decompose VHS box — Fase A)
 docs/             Strategy, essay draft & poster shortlist (Spanish/English)
 ```
+
+### Demo: poster decompose (Fase A)
+
+VHS slipcase scrollytelling for *Halloween* — geometry, edge wear, analysis layers.
+
+```bash
+python3 -m http.server 8080 --directory site
+# http://localhost:8080/demos/poster-decompose/
+```
+
+Optional: drop Media Home Entertainment box art at
+`site/demos/poster-decompose/vhs_reference.png` (see that folder’s README).
+Do not confuse with AWS vision jobs — this demo is browser-only.
 
 ## Run the pipeline
 
