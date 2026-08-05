@@ -1,6 +1,7 @@
 /**
- * VHS Decompose — Halloween (948) · contest pass
- * Clamshell hinged lid · Media box art · 4-act scroll · anchored overlays
+ * VHS Decompose — Halloween (948) · teachable cloud pass
+ * Cover = poster.jpg (flat corpus art). Never map VHS box photos as albedo.
+ * 4 scroll beats: Hero → Read (OCR) → Measure (peel) → Archive (soft lid).
  */
 import * as THREE from 'three';
 
@@ -9,13 +10,12 @@ const isMobile =
   window.matchMedia('(max-width: 720px)').matches ||
   (navigator.maxTouchPoints > 0 && window.innerWidth < 900);
 
-/** Large rental clamshell — cover plane matches Media art aspect (616×1024). */
-const MEDIA_ASPECT = 616 / 1024; // ~0.6016 — printed sleeve, not stretched
-const BOX_H = 3.32;
-const BEZEL = 0.055; // thin frame — Media art is nearly full-bleed
-const COVER_H = BOX_H - BEZEL * 2;
-const COVER_W = COVER_H * MEDIA_ASPECT;
-const BOX_W = COVER_W + BEZEL * 2;
+/** Box geometry — COVER aspect comes from loaded poster.jpg (not hardcoded). */
+let BOX_H = 3.32;
+let BEZEL = 0.055;
+let COVER_H = BOX_H - BEZEL * 2;
+let COVER_W = COVER_H * (2 / 3);
+let BOX_W = COVER_W + BEZEL * 2;
 const BOX_D = 0.54;
 const WALL = 0.052;
 
@@ -36,7 +36,7 @@ const el = {
 let metricsData = null;
 let beatEls = [];
 let activeBeat = -1;
-let usingMediaCover = false;
+let posterAspect = 2 / 3;
 
 let renderer, scene, camera, clock;
 let vhsGroup, baseShell, lidPivot, lidContent, interiorGroup, layerGroup;
@@ -49,7 +49,7 @@ let scrollProgress = 0;
 let targetProgress = 0;
 let plasticNoiseMap = null;
 let audioCtl = null;
-let coverAnchor = null; // Object3D at cover center for projection
+let coverAnchor = null;
 let overlayNodes = {};
 
 function lerp(a, b, t) {
@@ -64,6 +64,15 @@ function smoothstep(e0, e1, x) {
 }
 function remap(p, a, b) {
   return smoothstep(a, b, p);
+}
+
+function setCoverAspect(aspect) {
+  posterAspect = aspect;
+  BOX_H = 3.32;
+  BEZEL = 0.055;
+  COVER_H = BOX_H - BEZEL * 2;
+  COVER_W = COVER_H * posterAspect;
+  BOX_W = COVER_W + BEZEL * 2;
 }
 
 async function boot() {
@@ -99,6 +108,9 @@ function buildScrollBeats(data) {
     section.dataset.act = String(beat.act || 1);
     section.dataset.index = String(i);
     section.setAttribute('aria-label', `${beat.kicker}: ${beat.title}`);
+    // Longer holds: hero/read/measure/archive get tall viewports
+    const hold = beat.id === 'hero' ? 1.35 : beat.id === 'archive' ? 1.45 : 1.4;
+    section.style.minHeight = `${hold * 100}vh`;
     const swatches = beat.swatches
       ? `<div class="beat-swatches">${beat.swatches
           .map((c) => `<i style="background:${c}" title="${c}"></i>`)
@@ -108,10 +120,7 @@ function buildScrollBeats(data) {
       beat.id === 'hero'
         ? `<p class="scroll-cue">${escapeHtml(beat.cue || 'SCROLL')} <span aria-hidden="true">↓</span></p>`
         : '';
-    const actTag =
-      beat.act === 1 || beat.act === 2 || beat.act === 4
-        ? `<div class="beat-act">Acto ${['', 'I', 'II', 'III', 'IV'][beat.act]}</div>`
-        : '';
+    const actTag = `<div class="beat-act">Acto ${['', 'I', 'II', 'III', 'IV'][beat.act] || beat.act}</div>`;
     section.innerHTML = `
       <div class="beat-inner">
         ${actTag}
@@ -137,20 +146,12 @@ function buildOverlayDom(data) {
     node.className = `ov ov-${beat.overlay.type}`;
     node.dataset.beat = beat.id;
     node.setAttribute('aria-hidden', 'true');
-    if (beat.overlay.type === 'bbox' || beat.overlay.type === 'faces') {
+    if (beat.overlay.type === 'bbox') {
       node.innerHTML = `<span class="ov-box"></span><span class="ov-label">${escapeHtml(beat.overlay.label || '')}</span>`;
     } else if (beat.overlay.type === 'symmetry') {
       node.innerHTML = `<span class="ov-axis"></span><span class="ov-label">${escapeHtml(beat.overlay.label || '')}</span>`;
-    } else if (beat.overlay.type === 'palette') {
-      const sw = (beat.swatches || []).map((c) => `<i style="background:${c}"></i>`).join('');
-      node.innerHTML = `<span class="ov-label">${escapeHtml(beat.overlay.label || '')}</span><div class="ov-swatches">${sw}</div>`;
-    } else if (beat.overlay.type === 'heatmap') {
-      node.innerHTML = `<span class="ov-label">${escapeHtml(beat.overlay.label || '')}</span>`;
-    } else if (beat.overlay.type === 'tags') {
-      const tags = (beat.overlay.tags || [])
-        .map((t) => `<em>${escapeHtml(t)}</em>`)
-        .join('');
-      node.innerHTML = `<div class="ov-tags">${tags}</div>`;
+    } else if (beat.overlay.type === 'chip') {
+      node.innerHTML = `<span class="ov-chip">${escapeHtml(beat.overlay.label || '')}</span>`;
     }
     el.overlays.appendChild(node);
     overlayNodes[beat.id] = { el: node, def: beat.overlay };
@@ -167,15 +168,9 @@ function loadImage(url) {
   });
 }
 
+/** Always poster.jpg — vhs_reference*.png are mood board only. */
 async function resolveCoverImage() {
-  try {
-    const img = await loadImage('./vhs_reference.png');
-    usingMediaCover = true;
-    return img;
-  } catch {
-    usingMediaCover = false;
-    return loadImage('./poster.jpg');
-  }
+  return loadImage('./poster.jpg');
 }
 
 function makeCanvasTexture(draw, w = 512, h = 768) {
@@ -215,7 +210,6 @@ function makeNoiseMap(size = isMobile ? 128 : 256) {
   return tex;
 }
 
-/** Soft studio cubemap → PMREM for clearcoat plastic. */
 function buildEnvMap() {
   const pmrem = new THREE.PMREMGenerator(renderer);
   const envScene = new THREE.Scene();
@@ -230,13 +224,11 @@ function buildEnvMap() {
   g.addColorStop(1, '#060504');
   ctx.fillStyle = g;
   ctx.fillRect(0, 0, 512, 256);
-  // Warm key lobe
   const key = ctx.createRadialGradient(360, 70, 10, 360, 70, 160);
   key.addColorStop(0, 'rgba(255,180,100,0.55)');
   key.addColorStop(1, 'rgba(255,180,100,0)');
   ctx.fillStyle = key;
   ctx.fillRect(0, 0, 512, 256);
-  // Blood rim lobe
   const rim = ctx.createRadialGradient(80, 120, 8, 80, 120, 120);
   rim.addColorStop(0, 'rgba(160,30,20,0.35)');
   rim.addColorStop(1, 'rgba(160,30,20,0)');
@@ -251,103 +243,23 @@ function buildEnvMap() {
   return rt.texture;
 }
 
-function applyWearOverlay(ctx, w, h, opts = {}) {
-  const {
-    yellow = 0.06,
-    scuff = true,
-    crease = false,
-    sticker = false,
-    edgeDark = 0.2,
-    cardboard = true,
-  } = opts;
-
+/** Subtle shell wear only — never on the artwork face. */
+function applyShellWear(ctx, w, h, opts = {}) {
+  const { yellow = 0.04, edgeDark = 0.14 } = opts;
   if (yellow > 0) {
     ctx.fillStyle = `rgba(170,130,55,${yellow})`;
     ctx.fillRect(0, 0, w, h);
   }
-
-  if (scuff) {
-    const eg = ctx.createLinearGradient(0, 0, w * 0.1, 0);
-    eg.addColorStop(0, `rgba(0,0,0,${edgeDark})`);
-    eg.addColorStop(1, 'rgba(0,0,0,0)');
-    ctx.fillStyle = eg;
-    ctx.fillRect(0, 0, w * 0.12, h);
-
-    const eg2 = ctx.createLinearGradient(w, 0, w * 0.9, 0);
-    eg2.addColorStop(0, `rgba(0,0,0,${edgeDark * 0.65})`);
-    eg2.addColorStop(1, 'rgba(0,0,0,0)');
-    ctx.fillStyle = eg2;
-    ctx.fillRect(w * 0.88, 0, w * 0.12, h);
-
-    const top = ctx.createLinearGradient(0, 0, 0, h * 0.07);
-    top.addColorStop(0, 'rgba(255,255,255,0.07)');
-    top.addColorStop(1, 'rgba(0,0,0,0)');
-    ctx.fillStyle = top;
-    ctx.fillRect(0, 0, w, h * 0.09);
-
-    ctx.strokeStyle = 'rgba(220,200,170,0.1)';
-    ctx.lineWidth = 1.4;
-    for (let i = 0; i < 16; i++) {
-      const x = Math.random() * w;
-      const y = Math.random() * h;
-      ctx.beginPath();
-      ctx.moveTo(x, y);
-      ctx.lineTo(x + 10 + Math.random() * 36, y + (Math.random() - 0.5) * 5);
-      ctx.stroke();
-    }
-  }
-
-  // Media-style cardboard blowouts on edges
-  if (cardboard) {
-    ctx.fillStyle = 'rgba(246,237,216,0.55)';
-    for (let i = 0; i < 28; i++) {
-      const side = Math.random() < 0.55 ? 0 : 1;
-      const x = side ? w - Math.random() * 14 : Math.random() * 14;
-      const y = Math.random() * h;
-      ctx.globalAlpha = 0.35 + Math.random() * 0.45;
-      ctx.beginPath();
-      ctx.ellipse(x, y, 2 + Math.random() * 8, 3 + Math.random() * 14, 0, 0, Math.PI * 2);
-      ctx.fill();
-    }
-    ctx.globalAlpha = 0.75;
-    ctx.beginPath();
-    ctx.moveTo(0, h);
-    ctx.lineTo(0, h - 48);
-    ctx.quadraticCurveTo(18, h - 8, 62, h);
-    ctx.closePath();
-    ctx.fill();
-    ctx.globalAlpha = 1;
-  }
-
-  if (crease) {
-    const cg = ctx.createLinearGradient(w * 0.42, 0, w * 0.58, 0);
-    cg.addColorStop(0, 'rgba(0,0,0,0)');
-    cg.addColorStop(0.45, 'rgba(0,0,0,0.26)');
-    cg.addColorStop(0.55, 'rgba(255,255,255,0.05)');
-    cg.addColorStop(1, 'rgba(0,0,0,0)');
-    ctx.fillStyle = cg;
-    ctx.fillRect(w * 0.4, 0, w * 0.2, h);
-  }
-
-  if (sticker) {
-    const sx = w * 0.64;
-    const sy = h * 0.1;
-    const sw = w * 0.26;
-    const sh = h * 0.08;
-    ctx.fillStyle = 'rgba(232,220,200,0.2)';
-    ctx.fillRect(sx, sy, sw, sh);
-    ctx.strokeStyle = 'rgba(183,28,28,0.4)';
-    ctx.lineWidth = 2;
-    ctx.strokeRect(sx + 3, sy + 3, sw - 6, sh - 6);
-    ctx.fillStyle = 'rgba(183,28,28,0.5)';
-    ctx.font = `600 ${Math.max(10, sh * 0.3)}px "IBM Plex Mono", monospace`;
-    ctx.textAlign = 'center';
-    ctx.fillText('RENTAL', sx + sw / 2, sy + sh * 0.48);
-    ctx.fillStyle = 'rgba(20,16,12,0.45)';
-    ctx.font = `${Math.max(8, sh * 0.22)}px "IBM Plex Mono", monospace`;
-    ctx.fillText('948 · DUE', sx + sw / 2, sy + sh * 0.78);
-    ctx.textAlign = 'left';
-  }
+  const eg = ctx.createLinearGradient(0, 0, w * 0.08, 0);
+  eg.addColorStop(0, `rgba(0,0,0,${edgeDark})`);
+  eg.addColorStop(1, 'rgba(0,0,0,0)');
+  ctx.fillStyle = eg;
+  ctx.fillRect(0, 0, w * 0.1, h);
+  const eg2 = ctx.createLinearGradient(w, 0, w * 0.92, 0);
+  eg2.addColorStop(0, `rgba(0,0,0,${edgeDark * 0.55})`);
+  eg2.addColorStop(1, 'rgba(0,0,0,0)');
+  ctx.fillStyle = eg2;
+  ctx.fillRect(w * 0.9, 0, w * 0.1, h);
 }
 
 function drawSpine(ctx, w, h, title, year) {
@@ -373,7 +285,7 @@ function drawSpine(ctx, w, h, title, year) {
   ctx.fillText(title.toUpperCase(), 0, 36);
   ctx.fillStyle = 'rgba(138,127,110,0.9)';
   ctx.font = '13px "IBM Plex Mono", monospace';
-  ctx.fillText('MEDIA HOME ENTERTAINMENT', 0, 72);
+  ctx.fillText('SP · HI-FI · RENTAL', 0, 72);
   ctx.restore();
 
   ctx.fillStyle = '#e8dcc8';
@@ -387,7 +299,39 @@ function drawSpine(ctx, w, h, title, year) {
   ctx.strokeStyle = 'rgba(201,162,39,.35)';
   ctx.lineWidth = 2;
   ctx.strokeRect(6, 6, w - 12, h - 12);
-  applyWearOverlay(ctx, w, h, { yellow: 0.05, scuff: true, crease: true, cardboard: true, edgeDark: 0.28 });
+  applyShellWear(ctx, w, h, { yellow: 0.035, edgeDark: 0.2 });
+}
+
+function wrapText(ctx, text, x, y, maxW, lineH) {
+  const words = String(text).split(' ');
+  let line = '';
+  let yy = y;
+  for (const word of words) {
+    const test = line ? `${line} ${word}` : word;
+    if (ctx.measureText(test).width > maxW && line) {
+      ctx.fillText(line, x, yy);
+      line = word;
+      yy += lineH;
+    } else {
+      line = test;
+    }
+  }
+  if (line) ctx.fillText(line, x, yy);
+}
+
+function drawBarcode(ctx, x, y, w, h) {
+  ctx.fillStyle = '#e8dcc8';
+  ctx.fillRect(x, y, w, h);
+  let px = x + 5;
+  const end = x + w - 5;
+  while (px < end) {
+    const bw = 1 + Math.floor(Math.random() * 3);
+    if (Math.random() > 0.35) {
+      ctx.fillStyle = '#0a0806';
+      ctx.fillRect(px, y + 3, bw, h - 6);
+    }
+    px += bw + 1;
+  }
 }
 
 function drawBack(ctx, w, h, data) {
@@ -427,7 +371,7 @@ function drawBack(ctx, w, h, data) {
   ctx.font = '12px "IBM Plex Mono", monospace';
   [
     'On Halloween night in Haddonfield, the shape returns.',
-    'This sleeve is the sales pitch the corpus measured:',
+    'Flat sleeve art from the corpus — measured, not photographed.',
   ].forEach((line, i) => ctx.fillText(line, 48, 170 + i * 18));
 
   ctx.fillStyle = '#8a7f6e';
@@ -471,41 +415,9 @@ function drawBack(ctx, w, h, data) {
 
   ctx.fillStyle = '#6b8f71';
   ctx.font = '12px "IBM Plex Mono", monospace';
-  ctx.fillText('VHS · NTSC · MEDIA RENTAL SLEEVE', 48, h - 56);
+  ctx.fillText('VHS · NTSC · CORPUS SLEEVE', 48, h - 56);
 
-  applyWearOverlay(ctx, w, h, { yellow: 0.055, scuff: true, sticker: true, cardboard: true });
-}
-
-function wrapText(ctx, text, x, y, maxW, lineH) {
-  const words = String(text).split(' ');
-  let line = '';
-  let yy = y;
-  for (const word of words) {
-    const test = line ? `${line} ${word}` : word;
-    if (ctx.measureText(test).width > maxW && line) {
-      ctx.fillText(line, x, yy);
-      line = word;
-      yy += lineH;
-    } else {
-      line = test;
-    }
-  }
-  if (line) ctx.fillText(line, x, yy);
-}
-
-function drawBarcode(ctx, x, y, w, h) {
-  ctx.fillStyle = '#e8dcc8';
-  ctx.fillRect(x, y, w, h);
-  let px = x + 5;
-  const end = x + w - 5;
-  while (px < end) {
-    const bw = 1 + Math.floor(Math.random() * 3);
-    if (Math.random() > 0.35) {
-      ctx.fillStyle = '#0a0806';
-      ctx.fillRect(px, y + 3, bw, h - 6);
-    }
-    px += bw + 1;
-  }
+  applyShellWear(ctx, w, h, { yellow: 0.04, edgeDark: 0.16 });
 }
 
 function drawTopEdge(ctx, w, h) {
@@ -522,17 +434,16 @@ function drawTopEdge(ctx, w, h) {
   ctx.fillStyle = '#8a7f6e';
   ctx.font = '13px "IBM Plex Mono", monospace';
   ctx.fillText('SP · HI-FI', w * 0.7, h * 0.62);
-  applyWearOverlay(ctx, w, h, { yellow: 0.04, scuff: true, cardboard: false, edgeDark: 0.12 });
+  applyShellWear(ctx, w, h, { yellow: 0.03, edgeDark: 0.1 });
 }
 
 /**
- * Cover texture at native aspect — never stretch Media art into a wider plane.
- * Mild contrast lift only (no yellow wash / sheen that muddies oranges).
+ * Cover = flat poster art only. No cardboard blowouts / wear on the artwork.
+ * Mild contrast lift so oranges read under product lighting.
  */
-function drawCoverWear(img) {
+function drawCoverClean(img) {
   const srcW = img.naturalWidth || img.width;
   const srcH = img.naturalHeight || img.height;
-  // Keep native pixels; max edge 1024 for GPU
   const scale = Math.min(1, 1024 / Math.max(srcW, srcH));
   const w = Math.round(srcW * scale);
   const h = Math.round(srcH * scale);
@@ -544,39 +455,20 @@ function drawCoverWear(img) {
   ctx.imageSmoothingQuality = 'high';
   ctx.drawImage(img, 0, 0, w, h);
 
-  if (usingMediaCover) {
-    // Gentle punch: lift mids slightly so pumpkin orange + title whites pop
-    const id = ctx.getImageData(0, 0, w, h);
-    const d = id.data;
-    for (let i = 0; i < d.length; i += 4) {
-      let r = d[i];
-      let g = d[i + 1];
-      let b = d[i + 2];
-      // Soft contrast around midtones
-      r = clamp((r - 128) * 1.08 + 128 + 6, 0, 255);
-      g = clamp((g - 128) * 1.06 + 128 + 4, 0, 255);
-      b = clamp((b - 128) * 1.04 + 128 + 2, 0, 255);
-      // Warm orange bias on saturated warm pixels (pumpkin)
-      const warm = Math.max(0, r - b) * Math.max(0, g - b * 0.5);
-      if (warm > 20) {
-        const t = clamp(warm / 180, 0, 1) * 0.12;
-        r = Math.min(255, r + t * 28);
-        g = Math.min(255, g + t * 10);
-      }
-      d[i] = r;
-      d[i + 1] = g;
-      d[i + 2] = b;
-    }
-    ctx.putImageData(id, 0, 0);
-  } else {
-    applyWearOverlay(ctx, w, h, {
-      yellow: 0.04,
-      scuff: true,
-      sticker: true,
-      cardboard: true,
-      edgeDark: 0.14,
-    });
+  const id = ctx.getImageData(0, 0, w, h);
+  const d = id.data;
+  for (let i = 0; i < d.length; i += 4) {
+    let r = d[i];
+    let g = d[i + 1];
+    let b = d[i + 2];
+    r = clamp((r - 128) * 1.06 + 128 + 4, 0, 255);
+    g = clamp((g - 128) * 1.04 + 128 + 3, 0, 255);
+    b = clamp((b - 128) * 1.02 + 128 + 1, 0, 255);
+    d[i] = r;
+    d[i + 1] = g;
+    d[i + 2] = b;
   }
+  ctx.putImageData(id, 0, 0);
 
   const tex = new THREE.CanvasTexture(c);
   tex.colorSpace = THREE.SRGBColorSpace;
@@ -592,10 +484,16 @@ function rawNum(key, fallback = 0) {
   return r[key] != null ? r[key] : fallback;
 }
 
+/**
+ * Analysis layers: visual tint only — numbers live in DOM overlays / counter,
+ * not baked as huge glyphs on the canvas.
+ */
 function posterToLayerTexture(img, mode) {
-  // Same aspect as cover plane (Media 616∶1024) — no UV stretch vs printed face
-  const w = usingMediaCover ? 616 : 512;
-  const h = usingMediaCover ? 1024 : 768;
+  const srcW = img.naturalWidth || img.width;
+  const srcH = img.naturalHeight || img.height;
+  const scale = Math.min(1, 768 / Math.max(srcW, srcH));
+  const w = Math.round(srcW * scale);
+  const h = Math.round(srcH * scale);
   const c = document.createElement('canvas');
   c.width = w;
   c.height = h;
@@ -603,34 +501,19 @@ function posterToLayerTexture(img, mode) {
   ctx.drawImage(img, 0, 0, w, h);
   const imageData = ctx.getImageData(0, 0, w, h);
   const d = imageData.data;
-  const dark = rawNum('dark_share', 0.87);
-  const sym = rawNum('symmetry', 0.93);
-  const blood = rawNum('nova_blood', 0.85);
-  const knife = rawNum('nova_knife', 0.95);
-  const ocr = rawNum('ocr_conf', 0.98);
-  const faces = rawNum('faces', 0);
 
   if (mode === 'ocr') {
     for (let i = 0; i < d.length; i += 4) {
       const y = Math.floor(i / 4 / w);
-      // Media title band is TOP; poster.jpg title was bottom — prefer Media
-      const inTitle = usingMediaCover
-        ? y > h * 0.03 && y < h * 0.15
-        : y > h * 0.78 && y < h * 0.96;
-      const f = inTitle ? 1.15 : 0.18;
+      // Theatrical poster title sits near bottom
+      const inTitle = y > h * 0.78 && y < h * 0.96;
+      const f = inTitle ? 1.12 : 0.22;
       d[i] *= f;
       d[i + 1] *= f;
       d[i + 2] *= f;
-      d[i + 3] = inTitle ? 235 : 90;
+      d[i + 3] = inTitle ? 230 : 85;
     }
     ctx.putImageData(imageData, 0, 0);
-    const bx = usingMediaCover ? [0.08, 0.03, 0.84, 0.12] : [0.08, 0.8, 0.84, 0.14];
-    ctx.strokeStyle = 'rgba(107,143,113,.95)';
-    ctx.lineWidth = 3;
-    ctx.strokeRect(w * bx[0], h * bx[1], w * bx[2], h * bx[3]);
-    ctx.fillStyle = 'rgba(107,143,113,.95)';
-    ctx.font = '700 20px "IBM Plex Mono", monospace';
-    ctx.fillText(`OCR ${ocr.toFixed(2)} · HALLOWEEN`, w * bx[0] + 6, h * bx[1] - 10);
   } else if (mode === 'faces') {
     for (let i = 0; i < d.length; i += 4) {
       const r = d[i];
@@ -641,50 +524,17 @@ function posterToLayerTexture(img, mode) {
       d[i] = edge ? 35 : lum * 0.1;
       d[i + 1] = edge ? 190 : lum * 0.16;
       d[i + 2] = edge ? 145 : lum * 0.2;
-      d[i + 3] = edge ? 220 : 65;
+      d[i + 3] = edge ? 200 : 55;
     }
     ctx.putImageData(imageData, 0, 0);
-    ctx.strokeStyle = 'rgba(107,200,170,.28)';
-    ctx.lineWidth = 1;
-    for (let gx = 0; gx < w; gx += 40) {
-      ctx.beginPath();
-      ctx.moveTo(gx, 0);
-      ctx.lineTo(gx, h);
-      ctx.stroke();
-    }
-    for (let gy = 0; gy < h; gy += 40) {
-      ctx.beginPath();
-      ctx.moveTo(0, gy);
-      ctx.lineTo(w, gy);
-      ctx.stroke();
-    }
-    // Scan region over artwork (no face found)
-    ctx.strokeStyle = 'rgba(107,200,170,.9)';
-    ctx.lineWidth = 3;
-    ctx.setLineDash([8, 6]);
-    ctx.strokeRect(w * 0.22, h * 0.22, w * 0.56, h * 0.42);
-    ctx.setLineDash([]);
-    ctx.fillStyle = 'rgba(107,200,170,.95)';
-    ctx.font = '700 24px "IBM Plex Mono", monospace';
-    ctx.fillText(`YuNet · ${faces} FACES`, w * 0.22, h * 0.2);
   } else if (mode === 'colors') {
     for (let i = 0; i < d.length; i += 4) {
-      d[i] = Math.min(255, d[i] * 1.3);
-      d[i + 1] = d[i + 1] * 0.75;
-      d[i + 2] = d[i + 2] * 0.58;
-      d[i + 3] = 210;
+      d[i] = Math.min(255, d[i] * 1.25);
+      d[i + 1] = d[i + 1] * 0.72;
+      d[i + 2] = d[i + 2] * 0.55;
+      d[i + 3] = 200;
     }
     ctx.putImageData(imageData, 0, 0);
-    const sw = ['#070101', '#370f0e', '#711910', '#c53c0d', '#d5bda2'];
-    sw.forEach((hex, i) => {
-      ctx.fillStyle = hex;
-      ctx.fillRect(20 + i * 48, h - 72, 40, 40);
-      ctx.strokeStyle = 'rgba(232,220,200,.3)';
-      ctx.strokeRect(20 + i * 48, h - 72, 40, 40);
-    });
-    ctx.fillStyle = 'rgba(232,220,200,.92)';
-    ctx.font = '700 20px "IBM Plex Mono", monospace';
-    ctx.fillText(`${(dark * 100).toFixed(0)}% DARK · bri ${rawNum('brightness', 8.1).toFixed(1)}`, 20, h - 84);
   } else if (mode === 'symmetry') {
     const copy = new Uint8ClampedArray(d);
     for (let y = 0; y < h; y++) {
@@ -696,22 +546,13 @@ function posterToLayerTexture(img, mode) {
           d[i] = Math.min(255, copy[mi] * 0.42 + 95);
           d[i + 1] = Math.min(255, copy[mi + 1] * 0.42 + 65);
           d[i + 2] = Math.min(255, copy[mi + 2] * 0.32 + 28);
-          d[i + 3] = 185;
+          d[i + 3] = 175;
         } else {
-          d[i + 3] = 215;
+          d[i + 3] = 205;
         }
       }
     }
     ctx.putImageData(imageData, 0, 0);
-    ctx.strokeStyle = 'rgba(201,162,39,.95)';
-    ctx.lineWidth = 3;
-    ctx.beginPath();
-    ctx.moveTo(w / 2, 0);
-    ctx.lineTo(w / 2, h);
-    ctx.stroke();
-    ctx.fillStyle = 'rgba(201,162,39,.95)';
-    ctx.font = '700 22px "IBM Plex Mono", monospace';
-    ctx.fillText(`SYMMETRY ${sym.toFixed(2)}`, w * 0.52 + 10, 36);
   } else if (mode === 'blood') {
     for (let i = 0; i < d.length; i += 4) {
       const r = d[i];
@@ -723,28 +564,9 @@ function posterToLayerTexture(img, mode) {
       d[i] = Math.min(255, r * 0.28 + heat * 255);
       d[i + 1] = g * 0.1 + heat * 40;
       d[i + 2] = b * 0.06;
-      d[i + 3] = 45 + heat * 210;
+      d[i + 3] = 40 + heat * 200;
     }
     ctx.putImageData(imageData, 0, 0);
-    ctx.fillStyle = 'rgba(183,28,28,.95)';
-    ctx.font = '700 22px "IBM Plex Mono", monospace';
-    ctx.fillText(`NOVA BLOOD ${blood.toFixed(2)}`, 18, 34);
-    ctx.fillText(`KNIFE ${knife.toFixed(2)}`, 18, 62);
-  } else if (mode === 'medium') {
-    for (let i = 0; i < d.length; i += 4) {
-      const lum = 0.2126 * d[i] + 0.7152 * d[i + 1] + 0.0722 * d[i + 2];
-      d[i] = lum;
-      d[i + 1] = lum * 0.94;
-      d[i + 2] = lum * 0.78;
-      d[i + 3] = lum > 85 ? 210 : 30;
-    }
-    ctx.putImageData(imageData, 0, 0);
-    ctx.fillStyle = 'rgba(232,220,200,.92)';
-    ctx.font = '700 20px "IBM Plex Mono", monospace';
-    ctx.fillText('PHOTOGRAPHIC · DECORATIVE', 16, 32);
-    ctx.fillStyle = 'rgba(183,28,28,.85)';
-    ctx.font = '16px "IBM Plex Mono", monospace';
-    ctx.fillText('dread · suspense · terror', 16, 58);
   } else {
     ctx.putImageData(imageData, 0, 0);
   }
@@ -769,7 +591,6 @@ function makePlasticMat(color = 0x1a1714, opts = {}) {
 }
 
 function makeCoverMat(map) {
-  // Unlit + no tone-map crush → Media oranges/whites match the reference file
   return new THREE.MeshBasicMaterial({
     map,
     color: 0xffffff,
@@ -792,7 +613,6 @@ function makePrintMat(map) {
   });
 }
 
-/** Base shell: back, walls, tray cavity — no front (lid owns front). */
 function buildBaseShell(spineTex, backTex, topTex) {
   const g = new THREE.Group();
   g.name = 'baseShell';
@@ -846,7 +666,6 @@ function buildBaseShell(spineTex, backTex, topTex) {
   bottom.receiveShadow = true;
   g.add(bottom);
 
-  // Inner cavity lining (reads as hollow when lid opens)
   const liner = new THREE.Mesh(
     new THREE.BoxGeometry(BOX_W - WALL * 2.2, BOX_H - WALL * 2.2, 0.02),
     makePlasticMat(0x080705, { roughness: 0.95, envMapIntensity: 0.2 }),
@@ -854,7 +673,6 @@ function buildBaseShell(spineTex, backTex, topTex) {
   liner.position.z = -BOX_D / 2 + WALL + 0.03;
   g.add(liner);
 
-  // Hinge ridge detail on spine edge
   const hinge = new THREE.Mesh(
     new THREE.BoxGeometry(0.03, BOX_H * 0.92, 0.04),
     makePlasticMat(0x0c0a08, { roughness: 0.7, metalness: 0.15 }),
@@ -865,11 +683,9 @@ function buildBaseShell(spineTex, backTex, topTex) {
   return g;
 }
 
-/** Front lid: bezel frame — cover sits flush with front face (no deep recess parallax). */
 function buildLidFrame() {
   const g = new THREE.Group();
   g.name = 'lidFrame';
-  // Flat frame coplanar with cover — thin Z so edges don't create false trapezoid
   const bezelDepth = 0.028;
   const bezelZ = BOX_D / 2 - bezelDepth / 2;
   const bezelMat = makePlasticMat(0x161210, { roughness: 0.72, envMapIntensity: 0.7 });
@@ -902,6 +718,7 @@ function buildInterior() {
   tray.receiveShadow = true;
   g.add(tray);
 
+  // Cassette INSIDE the shell — revealed when lid opens
   const casW = (BOX_W - WALL * 2.5) * 0.86;
   const casH = casW * 0.62;
   const casD = 0.11;
@@ -934,7 +751,7 @@ function buildInterior() {
 
   const winW = casW * 0.52;
   const winH = casH * 0.36;
-  const window = new THREE.Mesh(
+  const windowMesh = new THREE.Mesh(
     new THREE.BoxGeometry(winW, winH, 0.018),
     new THREE.MeshPhysicalMaterial({
       color: 0x1e2830,
@@ -947,8 +764,8 @@ function buildInterior() {
       depthWrite: false,
     }),
   );
-  window.position.set(0, -casH * 0.12, casD / 2 + 0.002);
-  cassette.add(window);
+  windowMesh.position.set(0, -casH * 0.12, casD / 2 + 0.002);
+  cassette.add(windowMesh);
 
   const reelMat = makePlasticMat(0x2a2622, { roughness: 0.6 });
   const hubMat = makePlasticMat(0x0c0a08);
@@ -975,7 +792,7 @@ function buildInterior() {
   band.position.set(0, -casH * 0.12, casD / 2 + 0.016);
   cassette.add(band);
 
-  // Archive card stub behind cassette (visible when open)
+  // File-card layers (archive) — sits behind cassette, slides forward on open
   const cardTex = makeCanvasTexture((ctx, cw, ch) => {
     ctx.fillStyle = '#1a1612';
     ctx.fillRect(0, 0, cw, ch);
@@ -991,6 +808,7 @@ function buildInterior() {
       `dark ${(rawNum('dark_share') * 100).toFixed(1)}%`,
       `faces ${rawNum('faces')} · blood ${rawNum('nova_blood')}`,
       `knife ${rawNum('nova_knife')} · OCR ${rawNum('ocr_conf').toFixed(2)}`,
+      `mood dread · suspense · terror`,
       `creature ${metricsData.raw.creature} ${rawNum('creature_score').toFixed(2)}`,
     ];
     lines.forEach((t, i) => ctx.fillText(t, 28, 120 + i * 36));
@@ -1085,6 +903,9 @@ function initAudioStub() {
 
 async function initThree() {
   const img = await resolveCoverImage();
+  const srcW = img.naturalWidth || img.width;
+  const srcH = img.naturalHeight || img.height;
+  setCoverAspect(srcW / srcH);
   plasticNoiseMap = makeNoiseMap();
 
   renderer = new THREE.WebGLRenderer({
@@ -1092,13 +913,12 @@ async function initThree() {
     alpha: true,
     powerPreference: 'high-performance',
   });
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, isMobile ? 1.4 : 2));
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, isMobile ? 1.25 : 2));
   renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.setClearColor(0x000000, 0);
   renderer.outputColorSpace = THREE.SRGBColorSpace;
-  // Neutral preserves orange/white better than ACES (less crush)
   renderer.toneMapping = THREE.NeutralToneMapping;
-  renderer.toneMappingExposure = 1.65;
+  renderer.toneMappingExposure = 1.55;
   renderer.shadowMap.enabled = !isMobile;
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
   el.stage.appendChild(renderer.domElement);
@@ -1107,17 +927,13 @@ async function initThree() {
   scene.fog = new THREE.FogExp2(0x0a0806, 0.012);
   scene.environment = buildEnvMap();
 
-  // Longer lens → less foreshortening on the printed face
   camera = new THREE.PerspectiveCamera(26, window.innerWidth / window.innerHeight, 0.1, 80);
   camera.position.set(0.12, 0.06, 7.8);
 
-  const amb = new THREE.AmbientLight(0x5a4a40, 1.05);
-  scene.add(amb);
+  scene.add(new THREE.AmbientLight(0x5a4a40, 1.0));
+  scene.add(new THREE.HemisphereLight(0xfff2e0, 0x1a120e, 0.8));
 
-  const hemi = new THREE.HemisphereLight(0xfff2e0, 0x1a120e, 0.85);
-  scene.add(hemi);
-
-  keyLight = new THREE.DirectionalLight(0xfff5ea, 2.8);
+  keyLight = new THREE.DirectionalLight(0xfff5ea, 2.6);
   keyLight.position.set(2.2, 3.6, 6.2);
   keyLight.castShadow = !isMobile;
   if (keyLight.castShadow) {
@@ -1132,37 +948,50 @@ async function initThree() {
   }
   scene.add(keyLight);
 
-  // Strong front fill — cover plane gets even illumination in ¾
-  const frontFill = new THREE.DirectionalLight(0xffffff, 1.35);
+  const frontFill = new THREE.DirectionalLight(0xffffff, 1.25);
   frontFill.position.set(0.2, 1.0, 7.0);
   scene.add(frontFill);
 
-  rimLight = new THREE.PointLight(0xe03828, 48, 20, 2);
+  rimLight = new THREE.PointLight(0xe03828, 42, 20, 2);
   rimLight.position.set(-4.0, 1.8, 3.0);
   scene.add(rimLight);
 
-  const fill = new THREE.PointLight(0xffd090, 20, 18, 2);
+  const fill = new THREE.PointLight(0xffd090, 18, 18, 2);
   fill.position.set(3.2, -0.8, 4.0);
   scene.add(fill);
 
-  const bounce = new THREE.DirectionalLight(0x6a5848, 0.7);
+  const bounce = new THREE.DirectionalLight(0x6a5848, 0.65);
   bounce.position.set(-1.2, -3.2, 1.2);
   scene.add(bounce);
 
-  // Soft floor for real shadows
   floor = new THREE.Mesh(
     new THREE.PlaneGeometry(18, 18),
-    new THREE.ShadowMaterial({ opacity: 0.35 }),
+    new THREE.ShadowMaterial({ opacity: 0.38 }),
   );
   floor.rotation.x = -Math.PI / 2;
   floor.position.y = -BOX_H / 2 - 0.04;
   floor.receiveShadow = true;
   scene.add(floor);
 
+  // Dark floor disk (atmosphere under product)
+  const darkFloor = new THREE.Mesh(
+    new THREE.CircleGeometry(4.2, 48),
+    new THREE.MeshStandardMaterial({
+      color: 0x060504,
+      roughness: 0.95,
+      metalness: 0.02,
+      transparent: true,
+      opacity: 0.85,
+    }),
+  );
+  darkFloor.rotation.x = -Math.PI / 2;
+  darkFloor.position.y = -BOX_H / 2 - 0.038;
+  darkFloor.receiveShadow = true;
+  scene.add(darkFloor);
+
   vhsGroup = new THREE.Group();
   vhsGroup.name = 'vhs';
 
-  // Hinged lid: pivot at left (spine) edge
   lidPivot = new THREE.Group();
   lidPivot.name = 'lidPivot';
   lidPivot.position.set(-BOX_W / 2, 0, 0);
@@ -1195,18 +1024,16 @@ async function initThree() {
   contactShadow = buildContactShadow();
   vhsGroup.add(contactShadow);
 
-  const coverTex = drawCoverWear(img);
-  // Cover flush with bezel front face — same Z family, tiny epsilon in front of frame back
+  const coverTex = drawCoverClean(img);
   const frontZ = BOX_D / 2 - 0.001;
 
   const layerDefs = [
     { key: 'cover', mode: 'poster', z: frontZ, opacity: 1 },
-    { key: 'ocr', mode: 'ocr', z: frontZ + 0.01, opacity: 0 },
-    { key: 'faces', mode: 'faces', z: frontZ + 0.02, opacity: 0 },
-    { key: 'colors', mode: 'colors', z: frontZ + 0.03, opacity: 0 },
-    { key: 'symmetry', mode: 'symmetry', z: frontZ + 0.04, opacity: 0 },
-    { key: 'blood', mode: 'blood', z: frontZ + 0.05, opacity: 0 },
-    { key: 'medium', mode: 'medium', z: frontZ + 0.06, opacity: 0 },
+    { key: 'ocr', mode: 'ocr', z: frontZ + 0.008, opacity: 0 },
+    { key: 'faces', mode: 'faces', z: frontZ + 0.016, opacity: 0 },
+    { key: 'colors', mode: 'colors', z: frontZ + 0.024, opacity: 0 },
+    { key: 'symmetry', mode: 'symmetry', z: frontZ + 0.032, opacity: 0 },
+    { key: 'blood', mode: 'blood', z: frontZ + 0.04, opacity: 0 },
   ];
 
   for (const def of layerDefs) {
@@ -1218,10 +1045,10 @@ async function initThree() {
             map: tex,
             transparent: true,
             opacity: def.opacity,
-            roughness: 0.4,
+            roughness: 0.45,
             metalness: 0.03,
             depthWrite: false,
-            envMapIntensity: 0.25,
+            envMapIntensity: 0.2,
           });
     const mesh = new THREE.Mesh(new THREE.PlaneGeometry(COVER_W, COVER_H), mat);
     mesh.position.z = def.z;
@@ -1233,7 +1060,6 @@ async function initThree() {
   }
   lidContent.add(layerGroup);
 
-  // Anchor for screen-space overlays (cover center)
   coverAnchor = new THREE.Object3D();
   coverAnchor.position.set(0, 0, frontZ);
   lidContent.add(coverAnchor);
@@ -1241,19 +1067,18 @@ async function initThree() {
   dust = buildDust();
   scene.add(dust);
 
-  // Hero ¾ — spine readable, cover plane nearly upright (minimal roll)
+  // Hero ¾ — readable as VHS: spine + face
   vhsGroup.rotation.set(-0.1, -0.52, 0.015);
-  vhsGroup.position.set(isMobile ? 0 : 0.5, 0.04, 0);
-  vhsGroup.scale.setScalar(isMobile ? 0.9 : 1.06);
+  vhsGroup.position.set(isMobile ? 0 : 0.48, 0.04, 0);
+  vhsGroup.scale.setScalar(isMobile ? 0.88 : 1.04);
 
   if (el.tapeStamp) {
-    const cov = usingMediaCover ? 'Media box art' : 'poster.jpg';
-    el.tapeStamp.textContent = `${metricsData.title} · ${metricsData.year} · ${cov}`;
+    el.tapeStamp.textContent = `${metricsData.title} · ${metricsData.year} · poster.jpg`;
   }
 }
 
 function buildDust() {
-  const n = isMobile ? 48 : 140;
+  const n = isMobile ? 36 : 100;
   const pos = new Float32Array(n * 3);
   for (let i = 0; i < n; i++) {
     pos[i * 3] = (Math.random() - 0.5) * 12;
@@ -1264,9 +1089,9 @@ function buildDust() {
   geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
   const mat = new THREE.PointsMaterial({
     color: 0xd4550a,
-    size: 0.026,
+    size: 0.024,
     transparent: true,
-    opacity: 0.22,
+    opacity: 0.18,
     depthWrite: false,
     blending: THREE.AdditiveBlending,
   });
@@ -1289,20 +1114,6 @@ function setLayerOpacity(key, opacity) {
   mesh.visible = mesh.material.opacity > 0.02;
 }
 
-function setGroupOpacity(group, opacity) {
-  group.traverse((obj) => {
-    if (obj.isMesh && obj.material) {
-      const mats = Array.isArray(obj.material) ? obj.material : [obj.material];
-      for (const m of mats) {
-        if (m && 'opacity' in m) {
-          m.transparent = true;
-          m.opacity = opacity;
-        }
-      }
-    }
-  });
-}
-
 function worldToScreen(v3) {
   const v = v3.clone().project(camera);
   return {
@@ -1319,16 +1130,17 @@ function updateOverlays(p, beatId) {
 
   Object.keys(overlayNodes).forEach((id) => {
     const { el: node, def } = overlayNodes[id];
-    const active = id === beatId;
-    const opacity = active ? 1 : 0;
-    node.style.opacity = String(opacity);
+    let active = id === beatId;
+    // Symmetry overlay only during last third of measure beat
+    if (id === 'measure' && beatId === 'measure') {
+      active = p >= 0.63;
+    }
+    node.style.opacity = active ? '1' : '0';
     node.classList.toggle('on', active);
     if (!active) return;
 
-    // Position relative to cover corners
-    const lidWorld = new THREE.Matrix4();
     lidContent.updateWorldMatrix(true, false);
-    lidWorld.copy(lidContent.matrixWorld);
+    const lidWorld = lidContent.matrixWorld;
 
     const toWorld = (u, v, target) => {
       const x = (u - 0.5) * COVER_W;
@@ -1338,7 +1150,7 @@ function updateOverlays(p, beatId) {
       return target;
     };
 
-    if (def.type === 'bbox' || def.type === 'faces') {
+    if (def.type === 'bbox') {
       const uv = def.uv || [0.1, 0.1, 0.3, 0.2];
       toWorld(uv[0], uv[1], tmpA);
       toWorld(uv[0] + uv[2], uv[1] + uv[3], tmpB);
@@ -1346,12 +1158,10 @@ function updateOverlays(p, beatId) {
       const b = worldToScreen(tmpB);
       const left = Math.min(a.x, b.x);
       const top = Math.min(a.y, b.y);
-      const width = Math.abs(b.x - a.x);
-      const height = Math.abs(b.y - a.y);
       node.style.left = `${left}px`;
       node.style.top = `${top}px`;
-      node.style.width = `${width}px`;
-      node.style.height = `${height}px`;
+      node.style.width = `${Math.abs(b.x - a.x)}px`;
+      node.style.height = `${Math.abs(b.y - a.y)}px`;
     } else if (def.type === 'symmetry') {
       const axis = def.axis != null ? def.axis : 0.5;
       toWorld(axis, 0.05, tmpA);
@@ -1362,36 +1172,28 @@ function updateOverlays(p, beatId) {
       node.style.top = `${Math.min(a.y, b.y)}px`;
       node.style.width = '2px';
       node.style.height = `${Math.abs(b.y - a.y)}px`;
-    } else {
-      // Floating label near right edge of cover
-      toWorld(0.92, 0.18, tmpA);
+    } else if (def.type === 'chip') {
+      toWorld(0.88, 0.12, tmpA);
       const a = worldToScreen(tmpA);
-      node.style.left = `${a.x + 12}px`;
+      node.style.left = `${a.x + 8}px`;
       node.style.top = `${a.y}px`;
       node.style.width = 'auto';
       node.style.height = 'auto';
     }
   });
 
-  // Metric counter HUD
   if (el.counter && metricsData) {
     const beat = metricsData.beats.find((b) => b.id === beatId);
     const raw = metricsData.raw;
     let html = '';
     if (beat && beat.metricKey === 'ocr') {
       html = `<b>OCR</b> ${(raw.ocr_conf * 100).toFixed(1)}%`;
-    } else if (beat && beat.metricKey === 'faces') {
-      html = `<b>FACES</b> ${raw.faces}`;
-    } else if (beat && beat.metricKey === 'colors') {
-      html = `<b>DARK</b> ${(raw.dark_share * 100).toFixed(0)}%`;
-    } else if (beat && beat.metricKey === 'symmetry') {
-      html = `<b>SYM</b> ${raw.symmetry.toFixed(3)}`;
-    } else if (beat && beat.metricKey === 'blood') {
+    } else if (beat && beat.metricKey === 'measure') {
+      if (p < 0.54) html = `<b>FACES</b> ${raw.faces}`;
+      else if (p < 0.63) html = `<b>DARK</b> ${(raw.dark_share * 100).toFixed(0)}%`;
+      else html = `<b>SYM</b> ${raw.symmetry.toFixed(2)}`;
+    } else if (beat && beat.metricKey === 'archive') {
       html = `<b>KNIFE</b> ${raw.nova_knife.toFixed(2)}`;
-    } else if (beat && beat.metricKey === 'medium') {
-      html = `<b>PAINT</b> ${raw.p_painted.toFixed(2)}`;
-    } else if (beat && beat.metricKey === 'census') {
-      html = `<b>CREATURE</b> ${raw.creature_score.toFixed(2)}`;
     }
     el.counter.innerHTML = html;
     el.counter.style.opacity = html ? '1' : '0';
@@ -1399,106 +1201,113 @@ function updateOverlays(p, beatId) {
 }
 
 /**
- * 4-act choreography:
- * I  hero ¾  (0–0.12)
- * II face-on (0.12–0.22)
- * III peel one layer/beat (0.22–0.82)
- * IV apertura / archivo (0.82–1) — hinged open, not explode
+ * 4 beats only:
+ * 1 Hero ¾ closed  (0–0.22)
+ * 2 Read face-on + OCR (0.22–0.45)
+ * 3 Measure peel one-at-a-time (0.45–0.72)
+ * 4 Archive soft lid open (0.72–1) — no explode
  */
 function updateScene(p) {
   const t = clock.elapsedTime;
-  const breathe = reducedMotion ? 0 : Math.sin(t * 0.65) * 0.014;
+  const breathe = reducedMotion ? 0 : Math.sin(t * 0.55) * 0.012;
 
-  const faceOn = remap(p, 0.1, 0.2);
-  const peelZone = remap(p, 0.22, 0.8);
-  const open = remap(p, 0.8, 0.96);
+  const faceOn = remap(p, 0.18, 0.38);
+  const measureZone = remap(p, 0.45, 0.7);
+  const open = remap(p, 0.72, 0.94);
 
-  const rotY = lerp(-0.52, -0.015, faceOn) + peelZone * 0.03 + open * -0.1;
-  const rotX = lerp(-0.1, -0.008, faceOn) + peelZone * -0.02 + open * -0.05;
-  const rotZ = lerp(0.015, 0.0, faceOn) + open * 0.02;
+  const rotY = lerp(-0.52, -0.012, faceOn) + measureZone * 0.02 + open * -0.08;
+  const rotX = lerp(-0.1, -0.006, faceOn) + measureZone * -0.015 + open * -0.04;
+  const rotZ = lerp(0.015, 0.0, faceOn) + open * 0.015;
 
-  vhsGroup.rotation.set(rotX + breathe, rotY, rotZ + breathe * 0.25);
+  vhsGroup.rotation.set(rotX + breathe, rotY, rotZ + breathe * 0.2);
 
   const posX =
-    lerp(isMobile ? 0 : 0.5, isMobile ? 0 : -0.02, faceOn) +
-    peelZone * (isMobile ? 0 : -0.16) +
-    open * (isMobile ? 0 : 0.12);
-  const posY = lerp(0.04, 0.02, faceOn) + open * 0.06;
-  const posZ = lerp(0, 0.32, faceOn) - peelZone * 0.1 - open * 0.28;
+    lerp(isMobile ? 0 : 0.48, isMobile ? 0 : -0.02, faceOn) +
+    measureZone * (isMobile ? 0 : -0.1) +
+    open * (isMobile ? 0 : 0.1);
+  const posY = lerp(0.04, 0.02, faceOn) + open * 0.05;
+  const posZ = lerp(0, 0.28, faceOn) - measureZone * 0.06 - open * 0.22;
   vhsGroup.position.set(posX, posY + breathe, posZ);
 
-  const baseScale = isMobile ? 0.9 : 1.06;
-  const scale = baseScale * lerp(1, 1.05, faceOn) * lerp(1, 0.94, open);
+  const baseScale = isMobile ? 0.88 : 1.04;
+  const scale = baseScale * lerp(1, 1.04, faceOn) * lerp(1, 0.96, open);
   vhsGroup.scale.setScalar(scale);
 
-  // --- Lid apertura (hinged) ---
-  const openAngle = open * (isMobile ? -1.05 : -1.25); // radians ~72–72°
+  // Soft hinged lid — no chaotic explode
+  const openAngle = open * (isMobile ? -1.0 : -1.2);
   lidPivot.rotation.y = openAngle;
 
-  // Interior / archive card emphasis on open
   const card = interiorGroup.getObjectByName('archiveCard');
   if (card) {
-    card.material.opacity = lerp(0.15, 0.95, open);
-    card.position.x = lerp(0.08, 0.35, open);
-    card.position.z = lerp(-BOX_D / 2 + WALL + 0.08, 0.15, open);
-    card.rotation.y = open * -0.15;
+    card.material.opacity = lerp(0.12, 0.95, open);
+    card.position.x = lerp(0.08, 0.28, open);
+    card.position.z = lerp(-BOX_D / 2 + WALL + 0.08, 0.12, open);
+    card.rotation.y = open * -0.12;
   }
 
   if (contactShadow) {
-    contactShadow.material.opacity = lerp(0.9, 0.45, open);
-    contactShadow.scale.set(lerp(1, 1.25, open), 1, lerp(1, 1.1, open));
+    contactShadow.material.opacity = lerp(0.9, 0.5, open);
+    contactShadow.scale.set(lerp(1, 1.2, open), 1, lerp(1, 1.08, open));
   }
 
-  // --- Layer peel: one beat at a time, gentle lift (not chaos) ---
-  const layerKeys = ['ocr', 'faces', 'colors', 'symmetry', 'blood', 'medium'];
-  const windows = {
-    ocr: [0.22, 0.32],
-    faces: [0.32, 0.42],
-    colors: [0.42, 0.52],
-    symmetry: [0.52, 0.62],
-    blood: [0.62, 0.72],
-    medium: [0.72, 0.82],
-  };
+  // --- Layer choreography ---
+  setLayerOpacity('cover', lerp(1, 0.7, measureZone) * lerp(1, 0.45, open));
 
-  setLayerOpacity('cover', lerp(1, 0.55, peelZone) * lerp(1, 0.35, open));
+  // Read beat: OCR tint
+  const ocrOn = smoothstep(0.24, 0.3, p) * (1 - smoothstep(0.42, 0.48, p));
+  setLayerOpacity('ocr', ocrOn * (1 - open));
 
-  layerKeys.forEach((key, idx) => {
-    const [a, b] = windows[key];
-    const mid = (a + b) / 2;
-    const on = smoothstep(a, a + 0.025, p) * (1 - smoothstep(b - 0.02, b + 0.01, p));
-    // Soft residual after each beat during peel
-    const residual = smoothstep(a, mid, p) * (1 - open) * 0.08;
-    setLayerOpacity(key, Math.max(on, residual) * (1 - open * 0.85));
-
+  // Measure: one dominant layer at a time
+  const peelWindows = [
+    { key: 'faces', a: 0.45, b: 0.54 },
+    { key: 'colors', a: 0.54, b: 0.63 },
+    { key: 'symmetry', a: 0.63, b: 0.72 },
+  ];
+  peelWindows.forEach(({ key, a, b }) => {
+    const on = smoothstep(a, a + 0.02, p) * (1 - smoothstep(b - 0.015, b + 0.01, p));
+    setLayerOpacity(key, on * (1 - open * 0.9));
     const mesh = layers[key];
     if (!mesh) return;
-    const lift = on * 0.55;
-    // Gentle peel toward camera + slight offset per layer — orderly, not explode
-    const side = idx % 2 === 0 ? -1 : 1;
-    mesh.position.x = side * lift * 0.12 + open * (0.55 + idx * 0.28);
-    mesh.position.y = lift * 0.08 + open * (0.35 - idx * 0.12);
-    mesh.position.z = mesh.userData.baseZ + lift * 0.35 + open * (0.4 + idx * 0.08);
-    mesh.rotation.z = side * lift * 0.04 + open * side * 0.06;
-    mesh.rotation.y = open * side * 0.12;
+    // Gentle lift toward camera — orderly peel, not explode
+    const lift = on * 0.28;
+    mesh.position.x = 0;
+    mesh.position.y = lift * 0.04;
+    mesh.position.z = mesh.userData.baseZ + lift;
+    mesh.rotation.z = 0;
+    mesh.rotation.y = 0;
   });
 
-  // Cover settles into archivo fan
-  if (layers.cover) {
-    layers.cover.position.x = open * 0.25;
-    layers.cover.position.y = open * 0.2;
-    layers.cover.position.z = layers.cover.userData.baseZ + open * 0.25;
-    layers.cover.rotation.y = open * 0.08;
+  // Archive: soft blood tint while lid opens; layers settle as file card (not fan)
+  const bloodOn = smoothstep(0.74, 0.82, p) * (1 - smoothstep(0.96, 1.0, p) * 0.3);
+  setLayerOpacity('blood', bloodOn * 0.55 + open * 0.25);
+  if (layers.blood) {
+    layers.blood.position.x = 0;
+    layers.blood.position.y = open * 0.02;
+    layers.blood.position.z = layers.blood.userData.baseZ + open * 0.06;
+    layers.blood.rotation.set(0, 0, 0);
   }
 
-  const camZ = lerp(7.8, 6.5, faceOn) - peelZone * 0.12 + open * 0.45;
-  const camX =
-    lerp(0.12, -0.02, faceOn) + (reducedMotion ? 0 : Math.sin(t * 0.1) * 0.025) + open * 0.2;
-  const camY = 0.05 + (reducedMotion ? 0 : Math.cos(t * 0.09) * 0.02) + open * 0.07;
-  camera.position.set(camX, camY, camZ);
-  camera.lookAt(vhsGroup.position.x * 0.2, vhsGroup.position.y * 0.1, open * 0.12);
+  // Keep cover / analysis layers on the lid — no fly-away
+  ['cover', 'ocr', 'faces', 'colors', 'symmetry'].forEach((key) => {
+    const mesh = layers[key];
+    if (!mesh) return;
+    if (key === 'cover') {
+      mesh.position.x = 0;
+      mesh.position.y = 0;
+      mesh.position.z = mesh.userData.baseZ;
+      mesh.rotation.set(0, 0, 0);
+    }
+  });
 
-  if (keyLight) keyLight.intensity = lerp(2.8, 2.2, open);
-  if (rimLight) rimLight.intensity = lerp(48, 30, faceOn) + open * 12;
+  const camZ = lerp(7.8, 6.6, faceOn) - measureZone * 0.08 + open * 0.35;
+  const camX =
+    lerp(0.12, -0.02, faceOn) + (reducedMotion ? 0 : Math.sin(t * 0.08) * 0.02) + open * 0.15;
+  const camY = 0.05 + (reducedMotion ? 0 : Math.cos(t * 0.07) * 0.015) + open * 0.05;
+  camera.position.set(camX, camY, camZ);
+  camera.lookAt(vhsGroup.position.x * 0.2, vhsGroup.position.y * 0.1, open * 0.1);
+
+  if (keyLight) keyLight.intensity = lerp(2.6, 2.1, open);
+  if (rimLight) rimLight.intensity = lerp(42, 28, faceOn) + open * 10;
 
   el.bar.style.width = `${(p * 100).toFixed(1)}%`;
   updateActiveBeat(p);
@@ -1516,15 +1325,12 @@ function updateActiveBeat(p) {
     activeBeat = idx;
     beatEls.forEach((sec, i) => sec.classList.toggle('active', i === idx));
     const beat = metricsData.beats[idx];
-    const actMeta = (metricsData.acts || []).find((a) => a.id === ['hero', 'face', 'peel', 'archivo'][beat.act - 1]) ||
-      (metricsData.acts || []).find((a) => p >= a.range[0] && p < a.range[1]);
     el.beatLabel.textContent = `TRACK ${String(idx + 1).padStart(2, '0')} · ${beat.kicker}`;
     if (el.actLabel) {
       const act = metricsData.acts && metricsData.acts[beat.act - 1];
       el.actLabel.textContent = act ? act.label : `Acto ${beat.act}`;
     }
-    const cov = usingMediaCover ? 'Media' : 'poster';
-    el.tapeStamp.textContent = `${metricsData.title} · ${metricsData.year} · id ${metricsData.id} · ${cov}`;
+    el.tapeStamp.textContent = `${metricsData.title} · ${metricsData.year} · id ${metricsData.id} · poster.jpg`;
   }
   const beat = metricsData.beats[activeBeat];
   updateOverlays(p, beat ? beat.id : null);
@@ -1532,10 +1338,10 @@ function updateActiveBeat(p) {
 
 function tick() {
   const dt = Math.min(clock.getDelta(), 0.05);
-  const lag = reducedMotion ? 1 : isMobile ? 0.2 : 0.11;
+  const lag = reducedMotion ? 1 : isMobile ? 0.22 : 0.1;
   scrollProgress = lerp(scrollProgress, targetProgress, 1 - Math.pow(1 - lag, dt * 60));
   updateScene(scrollProgress);
-  if (dust) dust.rotation.y = clock.elapsedTime * 0.028;
+  if (dust) dust.rotation.y = clock.elapsedTime * 0.022;
   renderer.render(scene, camera);
 }
 
@@ -1544,7 +1350,7 @@ function onResize() {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, isMobile ? 1.4 : 2));
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, isMobile ? 1.25 : 2));
   const max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
   targetProgress = clamp(window.scrollY / max, 0, 1);
   scrollProgress = targetProgress;

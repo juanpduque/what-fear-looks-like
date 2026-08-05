@@ -107,19 +107,19 @@ body{
 .ov-symmetry .ov-label{
   left:8px;top:0;color:var(--amber);
 }
-.ov-palette, .ov-heatmap, .ov-tags{
+.ov-chip{
   transform:translateY(-50%);
 }
-.ov-swatches{display:flex;gap:5px;margin-top:8px}
-.ov-swatches i{
-  width:18px;height:18px;border:1px solid rgba(255,255,255,.2);
-}
-.ov-tags{display:flex;flex-direction:column;gap:6px}
-.ov-tags em{
-  font-style:normal;font-family:var(--mono);font-size:10px;letter-spacing:.14em;
-  text-transform:uppercase;color:var(--ink);
-  border-left:2px solid var(--blood);padding:4px 8px;
-  background:rgba(10,8,6,.55);
+.ov-chip span.ov-chip,
+span.ov-chip{
+  display:inline-block;
+  font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;
+  color:var(--ink);
+  border-left:2px solid var(--blood);
+  padding:6px 10px;
+  background:rgba(10,8,6,.72);
+  text-shadow:0 1px 2px #000;
+  white-space:nowrap;
 }
 
 #metric-counter{
@@ -201,7 +201,7 @@ body{
 
 #scroll-track{position:relative;z-index:2;pointer-events:none}
 .beat{
-  min-height:100vh;
+  min-height:135vh;
   display:flex;align-items:flex-end;
   padding:clamp(18px,4vw,48px);
   padding-bottom:clamp(96px,15vh,150px);
@@ -301,7 +301,7 @@ body{
 </head>
 <body>
 <div id="loader" aria-live="polite">
-  <p><span class="pulse">●</span> insertando cinta · Halloween 1978<br>Media box art · métricas del corpus</p>
+  <p><span class="pulse">●</span> insertando cinta · Halloween 1978<br>poster.jpg · métricas del corpus</p>
 </div>
 
 <div id="stage" aria-hidden="true"></div>

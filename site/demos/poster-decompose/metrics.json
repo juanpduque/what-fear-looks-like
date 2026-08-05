@@ -4,200 +4,87 @@
   "year": 1978,
   "imdb_id": "tt0077651",
   "tagline": "The Night He Came Home!",
-  "cover": "vhs_reference.png",
-  "cover_label": "Media Home Entertainment · vhs_reference",
+  "cover": "poster.jpg",
+  "cover_label": "poster.jpg · flat corpus art (no VHS photo albedo)",
   "acts": [
     {
       "id": "hero",
-      "label": "I · Objeto",
-      "range": [
-        0,
-        0.12
-      ]
+      "label": "I · Hero",
+      "range": [0, 0.22]
     },
     {
-      "id": "face",
-      "label": "II · Frente",
-      "range": [
-        0.12,
-        0.22
-      ]
+      "id": "read",
+      "label": "II · Read",
+      "range": [0.22, 0.45]
     },
     {
-      "id": "peel",
-      "label": "III · Capas",
-      "range": [
-        0.22,
-        0.82
-      ]
+      "id": "measure",
+      "label": "III · Measure",
+      "range": [0.45, 0.72]
     },
     {
-      "id": "archivo",
-      "label": "IV · Archivo",
-      "range": [
-        0.82,
-        1.0
-      ]
+      "id": "archive",
+      "label": "IV · Archive",
+      "range": [0.72, 1.0]
     }
   ],
   "beats": [
     {
       "id": "hero",
       "act": 1,
-      "progress": [
-        0,
-        0.12
-      ],
+      "progress": [0, 0.22],
       "kicker": "What Fear Looks Like",
       "title": "Halloween",
-      "body": "Clamshell Media Home Entertainment · 1978. El packaging que midió el corpus. Desplazá para abrirlo.",
-      "cue": "SCROLL"
-    },
-    {
-      "id": "face",
-      "act": 2,
-      "progress": [
-        0.12,
-        0.22
-      ],
-      "kicker": "Acto II · Frente",
-      "title": "El sleeve",
-      "body": "Vista de frente. La mano-calabaza, el cuchillo, el vacío negro — el packaging era el trailer.",
+      "body": "Clamshell estilizada · 1978. El sleeve es arte plano del corpus (poster.jpg), no una foto de caja VHS. Desplazá para leerlo.",
+      "cue": "SCROLL",
       "metricKey": null
     },
     {
-      "id": "ocr",
-      "act": 3,
-      "progress": [
-        0.22,
-        0.32
-      ],
+      "id": "read",
+      "act": 2,
+      "progress": [0.22, 0.45],
       "kicker": "OCR · título",
       "title": "HALLOWEEN",
-      "body": "Rekognition DetectText · conf 0.98 · título HALLOWEEN anclado arriba en el Media sleeve.",
+      "body": "Vista de frente. Rekognition DetectText · conf 0.98 · el título anclado en el sleeve.",
       "metricKey": "ocr",
       "overlay": {
         "type": "bbox",
-        "uv": [
-          0.08,
-          0.03,
-          0.84,
-          0.12
-        ],
-        "label": "OCR 0.98"
+        "uv": [0.08, 0.78, 0.84, 0.16],
+        "label": "OCR 0.98 · HALLOWEEN"
       }
     },
     {
-      "id": "faces",
+      "id": "measure",
       "act": 3,
-      "progress": [
-        0.32,
-        0.42
-      ],
-      "kicker": "Faces · YuNet",
-      "title": "0 rostros",
-      "body": "Sin cara humana. El miedo lo vende la silueta — y el filo. faces_v2 = 0.",
-      "metricKey": "faces",
-      "overlay": {
-        "type": "faces",
-        "uv": [
-          0.22,
-          0.22,
-          0.56,
-          0.42
-        ],
-        "label": "YuNet · 0"
-      }
-    },
-    {
-      "id": "colors",
-      "act": 3,
-      "progress": [
-        0.42,
-        0.52
-      ],
-      "kicker": "Color · pixels",
-      "title": "87% oscuridad",
-      "body": "brightness 8.1 · red_share 0.16 · sat alta en el filo naranja. El negro es el monstruo.",
-      "metricKey": "colors",
-      "swatches": [
-        "#070101",
-        "#370f0e",
-        "#711910",
-        "#c53c0d",
-        "#d5bda2"
-      ],
-      "overlay": {
-        "type": "palette",
-        "label": "87% dark"
-      }
-    },
-    {
-      "id": "symmetry",
-      "act": 3,
-      "progress": [
-        0.52,
-        0.62
-      ],
-      "kicker": "Composition",
-      "title": "0.93 espejo",
-      "body": "attributes.symmetry 0.9347 · neg_space 0.66 · harmony 0.91 · el eje parte el cuchillo.",
-      "metricKey": "symmetry",
+      "progress": [0.45, 0.72],
+      "kicker": "Measure · capas",
+      "title": "0 · 87% · 0.93",
+      "body": "Una capa a la vez: faces 0 → 87% dark → symmetry 0.93. El eje parte el cuchillo.",
+      "metricKey": "measure",
+      "swatches": ["#070101", "#370f0e", "#711910", "#c53c0d", "#d5bda2"],
       "overlay": {
         "type": "symmetry",
         "axis": 0.5,
-        "label": "0.9347"
-      }
+        "label": "SYM 0.93"
+      },
+      "peel": [
+        { "key": "faces", "from": 0.45, "to": 0.54, "label": "FACES 0" },
+        { "key": "colors", "from": 0.54, "to": 0.63, "label": "DARK 87%" },
+        { "key": "symmetry", "from": 0.63, "to": 0.72, "label": "SYM 0.93" }
+      ]
     },
     {
-      "id": "blood",
-      "act": 3,
-      "progress": [
-        0.62,
-        0.72
-      ],
-      "kicker": "Blood · fear",
-      "title": "knife 0.95",
-      "body": "Nova blood 0.85 · blood_gore 0.8 · violence 0.9 · pixel red 15.6%. El calor está en la hoja.",
-      "metricKey": "blood",
-      "overlay": {
-        "type": "heatmap",
-        "label": "blood 0.85"
-      }
-    },
-    {
-      "id": "medium",
-      "act": 3,
-      "progress": [
-        0.72,
-        0.82
-      ],
-      "kicker": "Medium · mood",
-      "title": "Photographic",
-      "body": "p_painted 0.31 · typography decorative · text_area 14% · mood: dread · suspense · terror.",
-      "metricKey": "medium",
-      "overlay": {
-        "type": "tags",
-        "tags": [
-          "photographic",
-          "decorative",
-          "dread",
-          "suspense"
-        ]
-      }
-    },
-    {
-      "id": "archivo",
+      "id": "archive",
       "act": 4,
-      "progress": [
-        0.82,
-        1.0
-      ],
-      "kicker": "Acto IV · Archivo",
-      "title": "Apertura",
-      "body": "La tapa abre. Dentro: cassette + capas como ficha. Creature uncertain 0.35 · Blade 0.76 · Person 0.92.",
-      "metricKey": "census",
-      "cue": null
+      "progress": [0.72, 1.0],
+      "kicker": "Archive · apertura",
+      "title": "knife 0.95",
+      "body": "La tapa abre suave. Dentro: cassette + ficha. Nova knife 0.95 · blood 0.85 · mood: dread · suspense · terror.",
+      "metricKey": "archive",
+      "overlay": {
+        "type": "chip",
+        "label": "KNIFE 0.95"
+      }
     }
   ],
   "metrics": [
@@ -205,78 +92,37 @@
       "key": "ocr",
       "label": "OCR / Title",
       "value": "HALLOWEEN",
-      "detail": "Rekognition mean conf 0.98 · 1 line · Comprehend NEUTRAL 0.98",
-      "stage": 0
+      "detail": "Rekognition mean conf 0.98 · 1 line · Comprehend NEUTRAL 0.98"
     },
     {
       "key": "faces",
       "label": "Faces",
       "value": "0 detected",
-      "detail": "YuNet faces_v2 · Rekognition faces 0 · silhouette sells the fear",
-      "stage": 1
+      "detail": "YuNet faces_v2 · Rekognition faces 0 · silhouette sells the fear"
     },
     {
       "key": "colors",
       "label": "Colors",
       "value": "87% dark",
-      "detail": "brightness 8.1 · red_share 0.16 · #070101 #370f0e #c53c0d",
-      "stage": 2,
-      "swatches": [
-        "#070101",
-        "#370f0e",
-        "#711910",
-        "#c53c0d",
-        "#d5bda2"
-      ]
+      "detail": "brightness 8.1 · red_share 0.16 · #070101 #370f0e #c53c0d"
     },
     {
       "key": "symmetry",
       "label": "Symmetry",
       "value": "0.93",
-      "detail": "attributes.symmetry 0.9347 · neg_space 0.66 · harmony 0.91",
-      "stage": 3
+      "detail": "attributes.symmetry 0.9347 · neg_space 0.66 · harmony 0.91"
     },
     {
       "key": "blood",
       "label": "Blood / fear",
       "value": "knife 0.95 · blood 0.85",
-      "detail": "Nova blood_gore 0.8 · violence 0.9 · weapon 1.0 · pixel red 15.6%",
-      "stage": 4
+      "detail": "Nova blood_gore 0.8 · violence 0.9 · weapon 1.0 · pixel red 15.6%"
     },
     {
-      "key": "medium",
-      "label": "Medium",
-      "value": "Photographic",
-      "detail": "p_painted 0.31 · CLIP painted=0",
-      "stage": 5
-    },
-    {
-      "key": "typography",
-      "label": "Typography",
-      "value": "decorative",
-      "detail": "CLIP axis 0.01 · text_area 14%",
-      "stage": 5
-    },
-    {
-      "key": "census",
-      "label": "Creature census",
-      "value": "uncertain",
-      "detail": "CLIP score 0.35 · knife reads louder than monster",
-      "stage": 6
-    },
-    {
-      "key": "nova_mood",
+      "key": "mood",
       "label": "Nova mood",
       "value": "dread · suspense · terror",
-      "detail": "Amazon Nova Lite enrich",
-      "stage": 6
-    },
-    {
-      "key": "rekognition",
-      "label": "Rekognition",
-      "value": "Blade · Dagger · Person",
-      "detail": "weapon 0.76 · person 0.92 · top: Advertisement 0.98 · gore flag 0.0 (semantic blood via Nova)",
-      "stage": 6
+      "detail": "Amazon Nova Lite enrich"
     }
   ],
   "raw": {
@@ -311,5 +157,9 @@
     "pipeline/data/rekognition.csv",
     "pipeline/data/poster_ocr_rek_text.csv",
     "pipeline/data/qa/nova_enrich/nova_enrich.csv"
-  ]
+  ],
+  "notes": {
+    "cover_rule": "Cover albedo MUST be poster.jpg (flat). vhs_reference*.png are mood board only — never mapped to the cover mesh.",
+    "mood_board": ["vhs_reference.png", "vhs_reference_anniversary.png"]
+  }
 }
