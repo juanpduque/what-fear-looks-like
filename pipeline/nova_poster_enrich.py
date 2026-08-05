@@ -563,6 +563,16 @@ def main() -> int:
     ap.add_argument("--workers", type=int, default=4)
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--ids", default="", help="comma-separated ids subset")
+    ap.add_argument(
+        "--ids-file",
+        default="",
+        help="JSON list of ids, or newline/CSV text file (covers ids missing from posters.csv)",
+    )
+    ap.add_argument(
+        "--meta-json",
+        default="",
+        help="optional posters_meta.json with by_id for title/year when not in posters.csv",
+    )
     ap.add_argument("--lambda-name", default=DEFAULT_LAMBDA)
     ap.add_argument("--region", default=DEFAULT_REGION)
     ap.add_argument("--model-id", default=DEFAULT_MODEL)
@@ -598,9 +608,43 @@ def main() -> int:
 
     posters = pd.read_csv(POSTERS_CSV, usecols=["id", "title", "year"])
     posters["id"] = posters["id"].astype(int)
-    if args.ids:
+    by_csv = {
+        int(r.id): (str(r.title or ""), r.year)
+        for r in posters.itertuples(index=False)
+    }
+
+    meta_by: dict[str, dict] = {}
+    if args.meta_json:
+        meta_path = Path(args.meta_json)
+        if meta_path.exists():
+            raw_meta = json.loads(meta_path.read_text(encoding="utf-8"))
+            meta_by = raw_meta.get("by_id") or raw_meta
+
+    want: set[int] | None = None
+    if args.ids_file:
+        raw = Path(args.ids_file).read_text(encoding="utf-8").strip()
+        if raw.startswith("["):
+            want = {int(x) for x in json.loads(raw)}
+        else:
+            want = {
+                int(x)
+                for x in re.split(r"[\s,]+", raw)
+                if x.strip() and re.fullmatch(r"-?\d+", x.strip())
+            }
+    elif args.ids:
         want = {int(x) for x in args.ids.split(",") if x.strip()}
-        posters = posters[posters["id"].isin(want)].copy()
+
+    if want is not None:
+        rows = []
+        for pid in sorted(want):
+            if pid in by_csv:
+                title, year = by_csv[pid]
+            else:
+                m = meta_by.get(str(pid)) or meta_by.get(pid) or {}
+                title = str(m.get("title") or "")
+                year = m.get("year") or ""
+            rows.append({"id": pid, "title": title, "year": year})
+        posters = pd.DataFrame(rows)
     posters = posters.sort_values("id").reset_index(drop=True)
 
     done = set() if args.no_skip_done else load_done(OUT_CSV)

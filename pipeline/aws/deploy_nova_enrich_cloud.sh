@@ -7,7 +7,7 @@ export AWS_DEFAULT_REGION="${AWS_DEFAULT_REGION:-us-west-2}"
 export AWS_EC2_METADATA_DISABLED=true
 unset HTTP_PROXY HTTPS_PROXY ALL_PROXY http_proxy https_proxy all_proxy || true
 
-BUCKET="${NOVA_ENRICH_S3_BUCKET:-strands-travelagents3sessionsbucket-sn8rc9ezuma6}"
+BUCKET="${NOVA_ENRICH_S3_BUCKET:-sagemaker-studio-a5572760}"
 PREFIX="${NOVA_ENRICH_S3_PREFIX:-wflike-nova-enrich/cloud}"
 ROLE_ARN="${NOVA_LAMBDA_ROLE_ARN:-}"
 PIPE="$(cd "$(dirname "$0")/.." && pwd)"

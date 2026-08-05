@@ -10,7 +10,7 @@ export AWS_DEFAULT_REGION="${AWS_DEFAULT_REGION:-us-west-2}"
 export AWS_EC2_METADATA_DISABLED=true
 unset HTTP_PROXY HTTPS_PROXY ALL_PROXY http_proxy https_proxy all_proxy || true
 
-BUCKET="${NOVA_ENRICH_S3_BUCKET:-strands-travelagents3sessionsbucket-sn8rc9ezuma6}"
+BUCKET="${NOVA_ENRICH_S3_BUCKET:-sagemaker-studio-a5572760}"
 PREFIX="${NOVA_ENRICH_S3_PREFIX:-wflike-nova-enrich/cloud}"
 PIPE="$(cd "$(dirname "$0")/.." && pwd)"
 LOCAL_ENRICH="$PIPE/data/qa/nova_enrich"
@@ -44,25 +44,33 @@ if enrich_csv.exists():
                     pass
 
 meta = {}
-todo = []
-missing = []
-with posters_csv.open(encoding="utf-8", errors="replace") as f:
-    for r in csv.DictReader(f):
-        try:
-            pid = int(r["id"])
-        except (TypeError, ValueError):
-            continue
-        rec = {"id": pid, "title": r.get("title") or "", "year": r.get("year") or ""}
-        meta[str(pid)] = rec
-        if pid in done:
-            continue
-        jpg = posters_dir / f"{pid}.jpg"
-        png = posters_dir / f"{pid}.png"
-        if jpg.exists() or png.exists():
-            todo.append(pid)
-        else:
-            missing.append(pid)
+if posters_csv.exists():
+    with posters_csv.open(encoding="utf-8", errors="replace") as f:
+        for r in csv.DictReader(f):
+            try:
+                pid = int(r["id"])
+            except (TypeError, ValueError):
+                continue
+            meta[str(pid)] = {
+                "id": pid,
+                "title": r.get("title") or "",
+                "year": r.get("year") or "",
+            }
 
+# Full local JPG set (essay + community), not only posters.csv
+todo = []
+for p in sorted(posters_dir.glob("*.jpg")) + sorted(posters_dir.glob("*.png")):
+    try:
+        pid = int(p.stem)
+    except ValueError:
+        continue
+    if pid in done:
+        continue
+    todo.append(pid)
+    if str(pid) not in meta:
+        meta[str(pid)] = {"id": pid, "title": "", "year": ""}
+
+todo = sorted(set(todo))
 (stage / "todo_ids.json").write_text(json.dumps(todo), encoding="utf-8")
 (stage / "posters_meta.json").write_text(
     json.dumps({"by_id": meta}, ensure_ascii=False), encoding="utf-8"
@@ -70,7 +78,7 @@ with posters_csv.open(encoding="utf-8", errors="replace") as f:
 (stage / "manifest.txt").write_text(
     "\n".join(str(i) for i in todo) + ("\n" if todo else ""), encoding="utf-8"
 )
-print(f"done_ok={len(done)} todo={len(todo)} missing_files={len(missing)}")
+print(f"done_ok={len(done)} todo={len(todo)} local_jpg_png={len(list(posters_dir.glob('*.jpg')))+len(list(posters_dir.glob('*.png')))}")
 print(f"wrote {stage/'todo_ids.json'}")
 PY
 

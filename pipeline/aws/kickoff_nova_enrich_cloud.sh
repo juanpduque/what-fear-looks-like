@@ -9,7 +9,7 @@ export AWS_PROFILE="${AWS_PROFILE:-sandbox}"
 export AWS_DEFAULT_REGION="${AWS_DEFAULT_REGION:-us-west-2}"
 export AWS_EC2_METADATA_DISABLED=true
 
-BUCKET="${NOVA_ENRICH_S3_BUCKET:-strands-travelagents3sessionsbucket-sn8rc9ezuma6}"
+BUCKET="${NOVA_ENRICH_S3_BUCKET:-sagemaker-studio-a5572760}"
 PREFIX="${NOVA_ENRICH_S3_PREFIX:-wflike-nova-enrich/cloud}"
 MODE="${1:-}"
 

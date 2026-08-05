@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Poster Decompose — Fase A · Pulp Analytics</title>
+<meta name="description" content="Demo: caja VHS de Halloween descompuesta en capas de análisis de póster.">
+<meta name="theme-color" content="#07080b">
+<link rel="icon" type="image/png" href="../../assets/pa-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<a class="skip-link" href="#story">Saltar al análisis</a>
+
+<header class="topbar">
+  <a class="brand" href="../../index.html">Pulp Analytics</a>
+  <span class="phase" id="texLabel">Fase A · poster.jpg</span>
+</header>
+
+<div id="stage" aria-hidden="true">
+  <canvas id="c" hidden></canvas>
+  <div class="vignette"></div>
+</div>
+
+<main id="story">
+  <section class="beat" data-beat="0">
+    <div class="card">
+      <p class="kicker">Demo · poster decompose</p>
+      <h1>La caja que gritaba</h1>
+      <p>En el videoclub, el póster <em>era</em> la venta. Esta demo descompone una caja VHS de <strong>Halloween</strong> (1978) en las mismas señales que medimos en 37 829 afiches.</p>
+      <p class="hint">Scroll ↓</p>
+    </div>
+  </section>
+
+  <section class="beat" data-beat="1">
+    <div class="card">
+      <p class="kicker">Caja · geometría</p>
+      <h2>Slipcase, no collage</h2>
+      <p>Front + spine + back. Sin packaging duplicado: si hay cover Media real (<code>vhs_reference.png</code>), el footer/créditos procedurales se apagan.</p>
+    </div>
+  </section>
+
+  <section class="beat" data-beat="2">
+    <div class="card">
+      <p class="kicker">Wear · material</p>
+      <h2>Cartón blanco bajo la tinta</h2>
+      <p>El borde de una Media real se descascara: el negro/azul se va y asoma el cartón. Echo ese wear en los cantos de la caja.</p>
+    </div>
+  </section>
+
+  <section class="beat" data-beat="3">
+    <div class="card layer-card" data-layer="dark">
+      <p class="kicker">Señal · oscuridad</p>
+      <h2>L* 8.1 · 87% near-black</h2>
+      <p>Halloween es uno de los afiches más oscuros del corpus clásico: el vacío negro <em>es</em> el monstruo.</p>
+      <div class="meter"><span style="--v:87%"></span><label>dark 87%</label></div>
+    </div>
+  </section>
+
+  <section class="beat" data-beat="4">
+    <div class="card layer-card" data-layer="red">
+      <p class="kicker">Señal · rojo</p>
+      <h2>16% rojo · naranja calabaza</h2>
+      <p>El pico de rojo no es sangre tipográfica: es el jack-o’-lantern y el mango del cuchillo contra el negro.</p>
+      <div class="swatches" id="swatches"></div>
+    </div>
+  </section>
+
+  <section class="beat" data-beat="5">
+    <div class="card layer-card" data-layer="comp">
+      <p class="kicker">Señal · composición</p>
+      <h2>66% espacio negativo</h2>
+      <p>Simetría alta (0.93), pirámide casi plana, diagonal baja. La hoja de la navaja corta el vacío — no un collage pulp.</p>
+      <ul class="stats">
+        <li><b>0.93</b> simetría</li>
+        <li><b>0.66</b> neg. space</li>
+        <li><b>0</b> caras</li>
+        <li><b>0.20</b> diagonal</li>
+      </ul>
+    </div>
+  </section>
+
+  <section class="beat" data-beat="6">
+    <div class="card">
+      <p class="kicker">Cierre Fase A</p>
+      <h2>Listo para Media box art</h2>
+      <p>Suelta <code>vhs_reference.png</code> (caja Media Home Entertainment) en esta carpeta y recarga. Phase B (apertura física / peel) queda fuera de esta rama.</p>
+      <p class="meta" id="bootMeta"></p>
+    </div>
+  </section>
+</main>
+
+<script src="app.js" defer></script>
+</body>
+</html>
