@@ -20,12 +20,12 @@
     {
       "id": "measure",
       "label": "III · Measure",
-      "range": [0.45, 0.72]
+      "range": [0.45, 0.70]
     },
     {
       "id": "archive",
       "label": "IV · Archive",
-      "range": [0.72, 1.0]
+      "range": [0.70, 1.0]
     }
   ],
   "beats": [
@@ -56,7 +56,7 @@
     {
       "id": "measure",
       "act": 3,
-      "progress": [0.45, 0.72],
+      "progress": [0.45, 0.70],
       "kicker": "Measure · capas",
       "title": "0 · 87% · 0.93",
       "body": "Una capa a la vez: faces 0 → 87% dark → symmetry 0.93. El eje parte el cuchillo.",
@@ -70,13 +70,13 @@
       "peel": [
         { "key": "faces", "from": 0.45, "to": 0.54, "label": "FACES 0" },
         { "key": "colors", "from": 0.54, "to": 0.63, "label": "DARK 87%" },
-        { "key": "symmetry", "from": 0.63, "to": 0.72, "label": "SYM 0.93" }
+        { "key": "symmetry", "from": 0.63, "to": 0.70, "label": "SYM 0.93" }
       ]
     },
     {
       "id": "archive",
       "act": 4,
-      "progress": [0.72, 1.0],
+      "progress": [0.70, 1.0],
       "kicker": "Archive · apertura",
       "title": "knife 0.95",
       "body": "La tapa abre suave. Dentro: cassette + ficha. Nova knife 0.95 · blood 0.85 · mood: dread · suspense · terror.",

@@ -1068,8 +1068,8 @@ async function initThree() {
   scene.add(dust);
 
   // Hero ¾ — readable as VHS: spine + face
-  vhsGroup.rotation.set(-0.1, -0.52, 0.015);
-  vhsGroup.position.set(isMobile ? 0 : 0.48, 0.04, 0);
+  vhsGroup.rotation.set(-0.08, -0.58, 0.02);
+  vhsGroup.position.set(isMobile ? 0 : 0.52, 0.04, 0);
   vhsGroup.scale.setScalar(isMobile ? 0.88 : 1.04);
 
   if (el.tapeStamp) {
@@ -1213,59 +1213,65 @@ function updateScene(p) {
 
   const faceOn = remap(p, 0.18, 0.38);
   const measureZone = remap(p, 0.45, 0.7);
-  const open = remap(p, 0.72, 0.94);
+  const open = remap(p, 0.70, 0.90);
 
-  const rotY = lerp(-0.52, -0.012, faceOn) + measureZone * 0.02 + open * -0.08;
-  const rotX = lerp(-0.1, -0.006, faceOn) + measureZone * -0.015 + open * -0.04;
-  const rotZ = lerp(0.015, 0.0, faceOn) + open * 0.015;
+  const rotY = lerp(-0.58, -0.012, faceOn) + measureZone * 0.02 + open * -0.18;
+  const rotX = lerp(-0.08, -0.006, faceOn) + measureZone * -0.015 + open * -0.06;
+  const rotZ = lerp(0.02, 0.0, faceOn) + open * 0.02;
 
   vhsGroup.rotation.set(rotX + breathe, rotY, rotZ + breathe * 0.2);
 
   const posX =
     lerp(isMobile ? 0 : 0.48, isMobile ? 0 : -0.02, faceOn) +
     measureZone * (isMobile ? 0 : -0.1) +
-    open * (isMobile ? 0 : 0.1);
-  const posY = lerp(0.04, 0.02, faceOn) + open * 0.05;
-  const posZ = lerp(0, 0.28, faceOn) - measureZone * 0.06 - open * 0.22;
+    open * (isMobile ? 0.05 : 0.22);
+  const posY = lerp(0.04, 0.02, faceOn) + open * 0.04;
+  const posZ = lerp(0, 0.28, faceOn) - measureZone * 0.06 - open * 0.15;
   vhsGroup.position.set(posX, posY + breathe, posZ);
 
   const baseScale = isMobile ? 0.88 : 1.04;
-  const scale = baseScale * lerp(1, 1.04, faceOn) * lerp(1, 0.96, open);
+  const scale = baseScale * lerp(1, 1.04, faceOn) * lerp(1, 0.98, open);
   vhsGroup.scale.setScalar(scale);
 
-  // Soft hinged lid — no chaotic explode
-  const openAngle = open * (isMobile ? -1.0 : -1.2);
+  // Soft hinged lid — swings open to reveal cassette inside (no explode)
+  const openAngle = open * (isMobile ? -1.15 : -1.45);
   lidPivot.rotation.y = openAngle;
 
   const card = interiorGroup.getObjectByName('archiveCard');
   if (card) {
-    card.material.opacity = lerp(0.12, 0.95, open);
-    card.position.x = lerp(0.08, 0.28, open);
-    card.position.z = lerp(-BOX_D / 2 + WALL + 0.08, 0.12, open);
-    card.rotation.y = open * -0.12;
+    card.material.opacity = lerp(0.2, 1, open);
+    card.position.x = lerp(0.08, 0.22, open);
+    card.position.z = lerp(-BOX_D / 2 + WALL + 0.08, 0.18, open);
+    card.rotation.y = open * -0.08;
+  }
+
+  const cassette = interiorGroup.getObjectByName('cassette');
+  if (cassette) {
+    cassette.position.z = lerp(-BOX_D / 2 + WALL + 0.11, -BOX_D / 2 + WALL + 0.14, open);
   }
 
   if (contactShadow) {
-    contactShadow.material.opacity = lerp(0.9, 0.5, open);
-    contactShadow.scale.set(lerp(1, 1.2, open), 1, lerp(1, 1.08, open));
+    contactShadow.material.opacity = lerp(0.9, 0.55, open);
+    contactShadow.scale.set(lerp(1, 1.25, open), 1, lerp(1, 1.1, open));
   }
 
   // --- Layer choreography ---
-  setLayerOpacity('cover', lerp(1, 0.7, measureZone) * lerp(1, 0.45, open));
+  // Cover stays opaque on the swinging lid (flat art, no see-through wash)
+  setLayerOpacity('cover', lerp(1, 0.82, measureZone));
 
   // Read beat: OCR tint
   const ocrOn = smoothstep(0.24, 0.3, p) * (1 - smoothstep(0.42, 0.48, p));
-  setLayerOpacity('ocr', ocrOn * (1 - open));
+  setLayerOpacity('ocr', ocrOn);
 
   // Measure: one dominant layer at a time
   const peelWindows = [
     { key: 'faces', a: 0.45, b: 0.54 },
     { key: 'colors', a: 0.54, b: 0.63 },
-    { key: 'symmetry', a: 0.63, b: 0.72 },
+    { key: 'symmetry', a: 0.63, b: 0.70 },
   ];
   peelWindows.forEach(({ key, a, b }) => {
-    const on = smoothstep(a, a + 0.02, p) * (1 - smoothstep(b - 0.015, b + 0.01, p));
-    setLayerOpacity(key, on * (1 - open * 0.9));
+    const on = smoothstep(a, a + 0.02, p) * (1 - smoothstep(b - 0.015, b + 0.005, p));
+    setLayerOpacity(key, on * (1 - open));
     const mesh = layers[key];
     if (!mesh) return;
     // Gentle lift toward camera — orderly peel, not explode
@@ -1277,34 +1283,26 @@ function updateScene(p) {
     mesh.rotation.y = 0;
   });
 
-  // Archive: soft blood tint while lid opens; layers settle as file card (not fan)
-  const bloodOn = smoothstep(0.74, 0.82, p) * (1 - smoothstep(0.96, 1.0, p) * 0.3);
-  setLayerOpacity('blood', bloodOn * 0.55 + open * 0.25);
+  // Archive: soft blood tint rides the lid; file card carries the numbers
+  const bloodOn = smoothstep(0.72, 0.8, p) * (1 - open * 0.35);
+  setLayerOpacity('blood', bloodOn * 0.4);
   if (layers.blood) {
-    layers.blood.position.x = 0;
-    layers.blood.position.y = open * 0.02;
-    layers.blood.position.z = layers.blood.userData.baseZ + open * 0.06;
+    layers.blood.position.set(0, 0, layers.blood.userData.baseZ + 0.01);
     layers.blood.rotation.set(0, 0, 0);
   }
 
-  // Keep cover / analysis layers on the lid — no fly-away
-  ['cover', 'ocr', 'faces', 'colors', 'symmetry'].forEach((key) => {
-    const mesh = layers[key];
-    if (!mesh) return;
-    if (key === 'cover') {
-      mesh.position.x = 0;
-      mesh.position.y = 0;
-      mesh.position.z = mesh.userData.baseZ;
-      mesh.rotation.set(0, 0, 0);
-    }
-  });
+  // Keep cover on the lid — no fly-away / no fan
+  if (layers.cover) {
+    layers.cover.position.set(0, 0, layers.cover.userData.baseZ);
+    layers.cover.rotation.set(0, 0, 0);
+  }
 
-  const camZ = lerp(7.8, 6.6, faceOn) - measureZone * 0.08 + open * 0.35;
+  const camZ = lerp(7.8, 6.6, faceOn) - measureZone * 0.08 + open * 0.55;
   const camX =
-    lerp(0.12, -0.02, faceOn) + (reducedMotion ? 0 : Math.sin(t * 0.08) * 0.02) + open * 0.15;
-  const camY = 0.05 + (reducedMotion ? 0 : Math.cos(t * 0.07) * 0.015) + open * 0.05;
+    lerp(0.12, -0.02, faceOn) + (reducedMotion ? 0 : Math.sin(t * 0.08) * 0.02) + open * 0.35;
+  const camY = 0.05 + (reducedMotion ? 0 : Math.cos(t * 0.07) * 0.015) + open * 0.08;
   camera.position.set(camX, camY, camZ);
-  camera.lookAt(vhsGroup.position.x * 0.2, vhsGroup.position.y * 0.1, open * 0.1);
+  camera.lookAt(vhsGroup.position.x * 0.15, vhsGroup.position.y * 0.1, open * 0.05);
 
   if (keyLight) keyLight.intensity = lerp(2.6, 2.1, open);
   if (rimLight) rimLight.intensity = lerp(42, 28, faceOn) + open * 10;
