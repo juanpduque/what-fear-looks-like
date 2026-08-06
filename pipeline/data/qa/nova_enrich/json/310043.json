@@ -1,0 +1,40 @@
+{
+  "title_text": "Last Word",
+  "credits_text": "Johnny Frank Garrett",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.2,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatter and intense imagery.",
+  "description": "A poster features a close-up of a distressed face with long hair, blood splatter, and a small figure running in the distance under a muted sky."
+}

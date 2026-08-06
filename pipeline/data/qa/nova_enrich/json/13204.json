@@ -1,0 +1,46 @@
+{
+  "title_text": "HELLBOY ANIMATED: BLOOD & IRON",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "action",
+    "dark",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    },
+    {
+      "name": "blood",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and dark themes suitable for mature audiences.",
+  "description": "Poster features Hellboy with a fierce expression alongside other characters in a gothic setting, hinting at action and supernatural elements."
+}

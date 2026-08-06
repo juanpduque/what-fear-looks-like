@@ -1,0 +1,46 @@
+{
+  "title_text": "The Satanic Rites of Dracula",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "occult",
+    "erotic",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "occult",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.2,
+  "blood_gore": 0.1,
+  "violence": 0.4,
+  "sexual_content": 0.5,
+  "sensitive": [
+    "occult",
+    "sexual"
+  ],
+  "moderation_notes": "Contains occult themes and partial nudity.",
+  "description": "A poster shows a man in dark attire holding a woman near a cross, with a dark, eerie background and gothic elements."
+}

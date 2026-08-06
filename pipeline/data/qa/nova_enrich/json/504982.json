@@ -1,0 +1,40 @@
+{
+  "title_text": "THE JURASSIC GAMES",
+  "credits_text": "\"THE HUNGER GAMES WITH DINOSAURS!\" \"PREHISTORIC THRILLS\" \"MAN VS DINOSAUR\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"INCREDIBLE! NON STOP DINO-ACTION FROM THE FIRST MINUTE!\"",
+  "mood": [
+    "action",
+    "thrilling",
+    "dramatic",
+    "adventurous"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "danger",
+      "conf": 0.9
+    },
+    {
+      "name": "action",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 1.0,
+  "person": 0.8,
+  "animal": 1.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and potential violence involving dinosaurs.",
+  "description": "A woman stands between two large dinosaurs in a prehistoric landscape, with dramatic mountains and a waterfall in the background."
+}

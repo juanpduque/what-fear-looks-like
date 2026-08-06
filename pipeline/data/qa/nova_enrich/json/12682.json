@@ -1,0 +1,44 @@
+{
+  "title_text": "BROTHERHOOD OF BLOOD",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "action",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "gun",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and horror elements.",
+  "description": "A poster featuring a woman holding a gun, flanked by two menacing figures with fangs, surrounded by skulls and dark, fiery backgrounds."
+}

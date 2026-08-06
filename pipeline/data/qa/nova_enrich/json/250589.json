@@ -1,0 +1,39 @@
+{
+  "title_text": "DOLL FROM HELL",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Deep in the dark woods lay an old master. He is very angry.",
+  "mood": [
+    "gothic",
+    "eerie",
+    "psychological",
+    "supernatural",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.4,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.1,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A woman with red hair holds a photograph, with dramatic lighting and dark woods in the background."
+}

@@ -1,0 +1,43 @@
+{
+  "title_text": "DAČRA",
+  "credits_text": "\"VISUALLY RICH AND MOODILY ATMOSPHERIC...BUBBLES WITH GORE INTRIGUE AND BLOODY THRILLS\" - SARAH HANS SCREEN DAILY",
+  "languages": [
+    "en",
+    "ar"
+  ],
+  "other_text": "A ZAYAT FAMILY AFFAIR BASED ON TRUE EVENTS",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "thriller",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and gore references.",
+  "description": "A dark poster features a large shadowy figure with three smaller figures in front, set against a muted background with Arabic and English text."
+}

@@ -1,0 +1,49 @@
+{
+  "title_text": "HALLOW'S END",
+  "credits_text": "WHERE SHADOWS COME ALIVE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "haunting",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "cemetery",
+      "conf": 0.95
+    },
+    {
+      "name": "lightning",
+      "conf": 0.85
+    },
+    {
+      "name": "tree",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and ghostly imagery.",
+  "description": "A eerie poster shows a haunted cemetery under stormy skies with lightning, tombstones, and a ghostly silhouette."
+}

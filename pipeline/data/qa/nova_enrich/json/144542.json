@@ -1,0 +1,43 @@
+{
+  "title_text": "JOHNNY SUNSHINE",
+  "credits_text": "MAXIMUM VIOLENCE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "violent",
+    "erotic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.9,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "A woman in revealing attire holds a weapon, with intense faces and violent imagery in the background."
+}

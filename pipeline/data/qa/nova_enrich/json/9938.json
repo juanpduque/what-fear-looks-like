@@ -1,0 +1,41 @@
+{
+  "title_text": "RAPTOR",
+  "credits_text": "Eric Roberts Corbin Bensen",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FEAR WILL NEVER BE EXTINCT",
+  "mood": [
+    "intense",
+    "action",
+    "thriller",
+    "sci-fi",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "text",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and horror elements, including a menacing dinosaur and fiery background.",
+  "description": "The poster features a large dinosaur with an intense gaze and fiery background, with bold title text and credits at the top."
+}

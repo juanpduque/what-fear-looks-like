@@ -1,0 +1,40 @@
+{
+  "title_text": "鬼筆",
+  "credits_text": "7月17日 全國上映",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "鬼筆殺人事件",
+  "mood": [
+    "gothic",
+    "mystery",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "hand",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood imagery.",
+  "description": "A poster featuring a stylized hand holding a brush against a dark background with bold red Chinese characters and a tagline."
+}

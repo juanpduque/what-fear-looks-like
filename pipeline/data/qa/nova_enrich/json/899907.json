@@ -1,0 +1,47 @@
+{
+  "title_text": "THE DARKNESS OF THE ROAD",
+  "credits_text": "LEAH LAUREN NAJARRA TOWNSEND JOHNNY WHITWORTH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOU CAN'T LOCK OUT FEAR",
+  "mood": [
+    "dread",
+    "suspense",
+    "horror",
+    "thriller",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.95
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A woman drives a car through a dark forest with a monstrous creature visible beside her, suggesting a horror theme."
+}

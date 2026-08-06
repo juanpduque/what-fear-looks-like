@@ -1,0 +1,41 @@
+{
+  "title_text": "FRIGHT NIGHT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "suspense",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man stands holding an axe in front of a large face, with a suburban neighborhood at sunset in the background."
+}

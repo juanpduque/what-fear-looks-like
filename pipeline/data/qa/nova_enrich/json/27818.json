@@ -1,0 +1,46 @@
+{
+  "title_text": "SKELETON KEY",
+  "credits_text": "JOHN JOHNSON'S The Wackiest MIND SCREW YET! BRAIN DAMAGE FILMS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DVD VIDEO",
+  "mood": [
+    "horror",
+    "psychological",
+    "thriller",
+    "disturbing",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.3,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains disturbing imagery and psychological horror themes.",
+  "description": "The poster features a menacing face with a skeletal theme, accompanied by bold title text and tagline."
+}

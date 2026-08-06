@@ -1,0 +1,37 @@
+{
+  "title_text": "THE CHANGED",
+  "credits_text": "CLARE FOLEY JASON ALAN SMITH AND TONY TODD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THEY'RE COMING FOR YOU",
+  "mood": [
+    "thriller",
+    "horror",
+    "suspense",
+    "dread",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the presence of a weapon and a menacing figure.",
+  "description": "A man with large, clawed hands holds a woman who looks alarmed, with a rifle visible, suggesting a horror or thriller theme."
+}

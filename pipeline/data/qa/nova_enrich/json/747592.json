@@ -1,0 +1,43 @@
+{
+  "title_text": "FRANKENSTRÖM",
+  "credits_text": "MARKUS STAFFIN ELOKUVA AKI HÄRTÖ NIKLAS ÖSTERHOLM USA UUSIMAA REIJA HANKOSAA MARKO PERÄLA THE BOMB VERTA... PORNOA... PROPAGANDA... VERTA... LISAA VERTA",
+  "languages": [
+    "en",
+    "fi"
+  ],
+  "other_text": "VERTA... PORNOA... PROPAGANDA... VERTA... LISAA VERTA EN ME STA TENHÄ RIIA KORMA MISSA VITUUSA SE ON?",
+  "mood": [
+    "gothic",
+    "erotic",
+    "surreal",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains suggestive imagery and occult themes.",
+  "description": "A poster featuring a stylized face with glasses, dramatic red lighting, and text elements including titles and credits."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "AN AMERICAN TERROR",
+  "credits_text": "THE NIGHTMARE HAS BEGUN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "violent",
+    "dystopian",
+    "terror"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "mask",
+      "conf": 0.8
+    },
+    {
+      "name": "prison",
+      "conf": 0.7
+    },
+    {
+      "name": "terror",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains violent imagery and implied threat.",
+  "description": "A muscular man wearing a plague doctor mask and holding a large sword stands in a dark, prison-like setting."
+}

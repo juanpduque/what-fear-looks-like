@@ -1,0 +1,41 @@
+{
+  "title_text": "TERROR VORTEX",
+  "credits_text": "A CHRISTIAN ACKERMAN FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "thriller",
+    "suspense",
+    "dark",
+    "gritty"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the presence of a gun and intense imagery.",
+  "description": "A black-and-white poster features a man holding a gun and a woman's face, with bold red text reading 'TERROR VORTEX' and a credit line for director Christian Ackerman."
+}

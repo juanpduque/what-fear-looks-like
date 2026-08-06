@@ -1,0 +1,39 @@
+{
+  "title_text": "The Music of Erich Zann",
+  "credits_text": "H.P. Lovecraft's",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Fairfield University",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "eerie",
+    "haunting",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "haunting",
+      "conf": 0.8
+    },
+    {
+      "name": "gothic",
+      "conf": 0.7
+    },
+    {
+      "name": "mystery",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, eerie poster featuring a torn red curtain with text overlay for H.P. Lovecraft's 'The Music of Erich Zann' from Fairfield University."
+}

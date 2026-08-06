@@ -1,0 +1,35 @@
+{
+  "title_text": "ZOCK",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and mild violent imagery.",
+  "description": "A group of people confront danger amidst flames, with weapons drawn, suggesting a high-stakes action thriller."
+}

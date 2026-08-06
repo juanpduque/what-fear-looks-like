@@ -1,0 +1,43 @@
+{
+  "title_text": "THE NIGHT GIVES NO MERCY",
+  "credits_text": "A FILM BY JUHO FOSSI & RIKU LEINO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FOSSI FILMS LTD PRESENTS",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and dark themes.",
+  "description": "A poster shows a shadowy figure holding a weapon against a dark forest backdrop with a van in the distance."
+}

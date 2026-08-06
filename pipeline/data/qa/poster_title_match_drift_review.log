@@ -1,0 +1,21 @@
+DRIFT_REVIEW_START Mon Aug  3 14:08:32 -05 2026
+suspects_pool min_chars>=20: 5660
+start sample=400 todo=400 done=0 model=nova-lite workers=6
+[25/400] ok=25 err=0 rate=3.21/s id=551220 verdict=match
+[50/400] ok=50 err=0 rate=3.28/s id=1255486 verdict=match
+[75/400] ok=75 err=0 rate=3.54/s id=369732 verdict=match
+[100/400] ok=100 err=0 rate=3.57/s id=493446 verdict=match
+[125/400] ok=125 err=0 rate=3.61/s id=968013 verdict=match
+[150/400] ok=150 err=0 rate=3.68/s id=696978 verdict=match
+[175/400] ok=175 err=0 rate=3.71/s id=809379 verdict=mismatch
+[200/400] ok=200 err=0 rate=3.74/s id=188633 verdict=match
+[225/400] ok=225 err=0 rate=3.75/s id=654718 verdict=match
+[250/400] ok=250 err=0 rate=3.75/s id=495569 verdict=match
+[275/400] ok=275 err=0 rate=3.77/s id=477266 verdict=match
+[300/400] ok=300 err=0 rate=3.78/s id=990471 verdict=match
+[325/400] ok=325 err=0 rate=3.75/s id=554772 verdict=match
+[350/400] ok=350 err=0 rate=3.71/s id=1353560 verdict=match
+[375/400] ok=375 err=0 rate=3.71/s id=437200 verdict=match
+[400/400] ok=400 err=0 rate=3.72/s id=58982 verdict=match
+LISTO n_ok=400 err=0 verdicts={'match': 372, 'uncertain': 4, 'mismatch': 24} elapsed=1.8m → /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/poster_title_match_drift_review.csv
+DRIFT_REVIEW_END exit=0 Mon Aug  3 14:10:21 -05 2026

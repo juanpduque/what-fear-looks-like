@@ -1,0 +1,46 @@
+{
+  "title_text": "ÇİZEMLİ MESAJ",
+  "credits_text": "YÖNETMEN: TAYFUN CAN DEMİRTAS ÖYUNCULAR: AYSÉĞUL KAŞİZİ | İZEMİR BİYİK | İYAPRAK TÖTER | CAN ÇAY | İSMAİL ÖNÜĞ | ÇİĞDEM GÜŞEL ÇAŞİN | CAN TEZYÖREK | MİHAT EREN KESKİN | YUNUS BERKE ÖNÜĞ | ÇAŞİN ÖZGÖR SAYAR | CEMALİ YİLDİZİ | ALTAYFUN CAN DEMİRTASİ | HAYALET FILM - SKYPIÇ FILM",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "MASKELER ASLINDA BİR \"SİR\" PERDESİDİR!",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "supernatural",
+    "terrifying"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster featuring a woman with long black hair and a pale, blood-streaked face, set against a dark forest background."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "THINGS THAT GO BUMP N THE NIGHT",
+  "credits_text": "LISA WOLF AND MISSY POISON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MALUK REGAN PRODUCTIONS PRESENTS",
+  "mood": [
+    "horror",
+    "gothic",
+    "creepy",
+    "supernatural",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and implied violence.",
+  "description": "A poster featuring a frightened, greenish face with wide eyes and a scream, set against a dark background, promoting a horror film."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "El Yonbre de la Bolsa",
+  "credits_text": "",
+  "languages": [
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.1,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains disturbing imagery suggestive of occult themes and implied violence.",
+  "description": "A dark, eerie poster features a monstrous, shadowy face with the title 'El Yonbre de la Bolsa' in stylized text above."
+}

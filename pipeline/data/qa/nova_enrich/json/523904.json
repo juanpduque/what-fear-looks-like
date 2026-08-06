@@ -1,0 +1,39 @@
+{
+  "title_text": "หนังหมาค้า จันลัง",
+  "credits_text": "",
+  "languages": [
+    "th"
+  ],
+  "other_text": "สวังได้กำระเจอง",
+  "mood": [
+    "action",
+    "thriller",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and partial nudity.",
+  "description": "Movie poster features a man holding a gun, surrounded by various characters including a woman and a masked figure, set against a dramatic night scene."
+}

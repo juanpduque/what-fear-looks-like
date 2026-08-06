@@ -1,0 +1,37 @@
+{
+  "title_text": "OMR",
+  "credits_text": "SPEECH IS SILVER. SILENCE IS DEATH. MARIS KRUFEN CHARLES RETTINGER RONALD NITSCHE JASMIN LORD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"This film will have you on the edge of your seat.\" \"...the niftiest thriller.\" \"...the creepiest German psychological examination of Hannibal Lecter and Jigsaw.\" COMING SOON",
+  "mood": [
+    "psychological thriller",
+    "suspense",
+    "dark",
+    "intense",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild suggestions of violence; no explicit content shown.",
+  "description": "Movie poster features a man and woman in tense poses with dramatic lighting; taglines and credits are displayed prominently."
+}

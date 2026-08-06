@@ -1,0 +1,46 @@
+{
+  "title_text": "DUNGEON OF DEATH",
+  "credits_text": "TWO BEAUTIFUL WOMEN FACE THE SADISTIC TORTURES OF THE DUNGEON OF DEATH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WHAT HIDEOUS FATE AWAITS THEM IN THE CHAMBER BELOW?",
+  "mood": [
+    "dread",
+    "gothic",
+    "camp",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "torture",
+      "conf": 0.85
+    },
+    {
+      "name": "dungeon",
+      "conf": 0.8
+    },
+    {
+      "name": "horror",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.95,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "A poster shows distressed women with bloodstains, one bound and another kneeling, with dramatic text about a dungeon's tortures."
+}

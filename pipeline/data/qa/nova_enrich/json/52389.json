@@ -1,0 +1,37 @@
+{
+  "title_text": "第二规则 RULE #1",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "suspenseful",
+    "dark",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a firearm.",
+  "description": "A dark, moody poster features a man holding a gun, with a shadowy figure in the background and bold red text reading '第二规则 RULE #1.'"
+}

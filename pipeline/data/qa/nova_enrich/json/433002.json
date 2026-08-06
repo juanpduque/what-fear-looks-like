@@ -1,0 +1,46 @@
+{
+  "title_text": "THE AMITYVILLE EXORCISM",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IT CAN HAPPEN ANYWHERE",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "terrifying",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "cross",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult themes and mild violent imagery.",
+  "description": "A poster featuring a distressed young woman with a cross on her face, evoking horror and supernatural themes."
+}

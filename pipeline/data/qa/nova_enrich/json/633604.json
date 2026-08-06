@@ -1,0 +1,47 @@
+{
+  "title_text": "YUMMY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Plastic Surgery\nFACELIFTS,\nBOOB JOBS\nAND ZOMBIES",
+  "mood": [
+    "horror",
+    "grotesque",
+    "dark",
+    "disturbing",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "zombie",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "hospital",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, gore, and suggestive themes.",
+  "description": "A horror movie poster shows a bloodied woman in a hospital setting with the title \"YUMMY\" prominently displayed."
+}

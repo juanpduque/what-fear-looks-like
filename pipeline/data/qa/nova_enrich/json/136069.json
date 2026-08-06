@@ -1,0 +1,46 @@
+{
+  "title_text": "YOKAI MONSTERS",
+  "credits_text": "spook warfare",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE MOST BIZARRE MONSTERS THE WORLD HAS EVER SEEN!",
+  "mood": [
+    "fantasy",
+    "horror",
+    "camp",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.1,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A vibrant poster features a large green monster with many smaller creatures, bold yellow text reading 'YOKAI MONSTERS,' and a tagline 'spook warfare.'"
+}

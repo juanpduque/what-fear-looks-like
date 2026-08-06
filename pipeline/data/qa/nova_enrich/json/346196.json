@@ -1,0 +1,47 @@
+{
+  "title_text": "スパーケートショートシャツ",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "スパーケートショートシャツです。スパーケートショートシャツです。スパーケートショートシャツです。",
+  "mood": [
+    "violent",
+    "horror",
+    "gothic",
+    "erotic",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "A poster shows two individuals in a tense, violent confrontation amidst a chaotic, gory scene with weapons and injured figures."
+}

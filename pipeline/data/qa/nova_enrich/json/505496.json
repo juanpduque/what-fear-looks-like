@@ -1,0 +1,40 @@
+{
+  "title_text": "BLACK CREEK",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "forest",
+    "silhouette",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster implies potential violence due to the axe and ominous setting.",
+  "description": "A silhouette of a person holding an axe stands in a red-hued forest with a small shack in the background."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "BEYOND THE BLEED LIMIT",
+  "credits_text": "DORFMAN BROTHERS FILMS PRESENTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THIS HALLOWEEN TERROR GETS TURBOCHARGED\nSPECIAL EVENT DBFF DORFMAN BROTHERS FILMS",
+  "mood": [
+    "gothic",
+    "horror",
+    "thriller",
+    "spooky",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.6,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror themes and occult imagery.",
+  "description": "Poster features a classic car with two skull-faced drivers, a gothic castle, and Halloween-themed text promoting a horror film."
+}

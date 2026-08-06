@@ -1,0 +1,46 @@
+{
+  "title_text": "PET SEMATARY",
+  "credits_text": "BLOODLINES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "grief",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "cemetery",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains intense themes of death and the supernatural, with implied violence and occult imagery.",
+  "description": "A dramatic poster features a person with a skull-like mask against a dark red background, with the title 'Pet Sematary: Bloodlines' prominently displayed."
+}

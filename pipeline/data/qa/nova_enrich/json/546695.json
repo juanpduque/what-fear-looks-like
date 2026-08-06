@@ -1,0 +1,40 @@
+{
+  "title_text": "ESPELHO MEU",
+  "credits_text": "UM FILME DE HUGO PINTO\nPRODUÇÃO FUTE SIMES, CÂTIA RIBEIRO, CLAUDIO PINTO, ANDRÉ ANDREZ, ALEIXE MORREIRA | HUGO PINTO\nDIRECTOR DE FOTOGRAFIA ASSUNÇÃO: CLAUDIO PINTO\nSOUND DESIGN: MIGUEL SARANA | BANDA SONORA: GONÇALO MONTAGEM: CARLOS MARTINS\nREALIZAÇÃO: HUGO PINTO",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "other_text": "CLAUDIA SEMEDO | RODRIGO SOARES | CATARINA LIMA",
+  "mood": [
+    "intense",
+    "thriller",
+    "psychological",
+    "suspenseful",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.8
+    },
+    {
+      "name": "axe",
+      "conf": 0.7
+    },
+    {
+      "name": "hammer",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A red poster features bold white text and silhouettes of a gun, axe, and hammer, indicating a thriller or psychological drama."
+}

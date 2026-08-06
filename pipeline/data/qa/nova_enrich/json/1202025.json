@@ -1,0 +1,38 @@
+{
+  "title_text": "面のピサーゴイ",
+  "credits_text": "一結号権により洗された結織の面形事",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "顔べんとだけん!",
+  "mood": [
+    "mysterious",
+    "haunting",
+    "eerie",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a shadowy figure in a crowded, dimly lit setting with Japanese text overlay, evoking a mysterious and intense atmosphere."
+}

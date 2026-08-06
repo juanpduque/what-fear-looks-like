@@ -1,0 +1,42 @@
+{
+  "title_text": "BLOODY MUSCLE BODY BUILDER IN HELL",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "action",
+    "violent",
+    "gory",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.9,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore.",
+  "description": "A muscular man battles monstrous creatures amidst intense bloodshed in a chaotic, horror-filled scene."
+}

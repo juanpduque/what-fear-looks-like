@@ -1,0 +1,46 @@
+{
+  "title_text": "RECORDED",
+  "credits_text": "DIRECTED BY MIROSLAV PETKOV",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ENIGMA MOVIE PRODUCTIONS PRESENTS\nA FOUND FOOTAGE TERROR\nSIPKE RASE I MIRESKA SIMEON",
+  "mood": [
+    "terror",
+    "found footage",
+    "intense",
+    "disturbing",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A poster featuring a red, torn background with a silhouette holding a weapon, promoting a found footage terror film directed by Miroslav Petkov."
+}

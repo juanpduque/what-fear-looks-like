@@ -1,0 +1,41 @@
+{
+  "title_text": "SHARK NIGHT 3D",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "horror",
+    "suspense",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "shark",
+      "conf": 0.95
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    {
+      "name": "danger",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.95,
+  "blood_gore": 0.1,
+  "violence": 0.7,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "Contains mild sexual suggestion due to the woman's attire and intense threat scenario.",
+  "description": "A woman in a bikini swims near a large, open-mouthed shark underwater, with the title 'SHARK NIGHT 3D' displayed prominently."
+}

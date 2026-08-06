@@ -1,0 +1,41 @@
+{
+  "title_text": "VENGEANCE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "fantasy",
+    "adventure",
+    "mythical",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts action and potential violence, but no explicit gore or sexual content.",
+  "description": "A group of people confront a large dragon in a dense forest, ready for battle with weapons drawn."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "HEAD CRUSHER",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gritty",
+    "intense",
+    "dystopian",
+    "survival",
+    "post-apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "gas_mask",
+      "conf": 0.8
+    },
+    {
+      "name": "industrial",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts graphic violence and a threatening scenario.",
+  "description": "A man in military gear and a gas mask holds a large knife in a dark, industrial setting."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "DEAD CREATURES",
+  "credits_text": "SHE'S NOT JUST THE GIRL NEXT DOOR... BEVERLY WILSON AND ANTONIA BEAUMONT WITH BRENDAN GREGORY, ANNA SWIFT, BART RUSPOLI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AN ANDREW PARKINSON FILM",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "gritty",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster for the film 'Dead Creatures' shows a woman with blood on her shirt, standing against a concrete wall with a distressed expression."
+}

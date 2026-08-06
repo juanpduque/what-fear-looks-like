@@ -1,0 +1,47 @@
+{
+  "title_text": "KNIFE EDGE",
+  "credits_text": "NATALIE PRESS HUGH BONNEVILLE MATTHIEU BOUIENAH JOAN PLOWRIGHT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A HOUSE OF DREAMS... A PLACE OF HORROR",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery",
+    "suspense",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "storm",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A woman with pale skin stands against a stormy backdrop featuring a dark, old house and leafless trees."
+}

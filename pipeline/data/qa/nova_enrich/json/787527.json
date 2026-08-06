@@ -1,0 +1,46 @@
+{
+  "title_text": "THE MOON THE BAT THE MONSTER",
+  "credits_text": "JAMES ALCAZAR PRODUCTIONS PRESENTS \"THE MOON THE BAT THE MONSTER\" A ROBBIE DIAS FILM EMILY SCHERTZER, CARTER BRASS, JAMES ESPENILLA, CHELSEA ALEXANDROV \"YOU'RE GONNA DIE IN THE DARK\" ROBBIE DIAS \"DUMB ARABIAN HOBBY\" BONGO STRAINS J.J. JUANES ALCAZAR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A Robbie Dias Film WINNER HOLLYWOOD INDIE FESTIVAL 2020 AUSTRALIA AFTER DARK FESTIVAL 2020 10 YEARS OF ROBBIE DIAS FESTIVAL",
+  "mood": [
+    "horror",
+    "camp",
+    "surreal",
+    "dark",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and implied violence.",
+  "description": "Poster features a dark, moonlit scene with a central figure screaming, surrounded by eerie characters against a dramatic sky backdrop."
+}

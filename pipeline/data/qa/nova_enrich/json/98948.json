@@ -1,0 +1,50 @@
+{
+  "title_text": "Abraham Lincoln VS. ZOMBIES",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "horror",
+    "historical",
+    "fantasy",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "zombie",
+      "conf": 0.95
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "historical",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "crowd",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains violent and gory imagery with zombies and weapons.",
+  "description": "A man stands with a scythe and gun amidst zombies, with the U.S. Capitol and American flag in the background."
+}

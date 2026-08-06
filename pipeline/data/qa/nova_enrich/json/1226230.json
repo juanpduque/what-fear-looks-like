@@ -1,0 +1,47 @@
+{
+  "title_text": "BUNKER HEIGHTS",
+  "credits_text": "FEATURING VIOLET V-ANNIE GONSHOROWSKI | DAVE R. ELLISON | REW FORTIER | HANNAH FERMAN | CHANCE MORROW | EVIL J. TAYLOR | FLYDE EWING JR. | DOUGLAS ESPER | JAMES J. EDWARDS | L.C. HOLT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CRIME. COMEDY. CREATURES.",
+  "mood": [
+    "thriller",
+    "horror",
+    "urban",
+    "supernatural",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "city",
+      "conf": 0.75
+    },
+    {
+      "name": "storm",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a monstrous face with glowing eyes above a stormy cityscape, with the title 'Bunker Heights' and cast credits listed."
+}

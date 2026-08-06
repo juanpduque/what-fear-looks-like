@@ -1,0 +1,39 @@
+{
+  "title_text": "SNAPPED",
+  "credits_text": "PICTURE YOURSELF DEAD.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "noose",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and disturbing imagery.",
+  "description": "A horror movie poster featuring a noose, a screaming face, and a skull, with the title 'Snapped' and the tagline 'Picture Yourself Dead.'"
+}

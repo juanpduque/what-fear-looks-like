@@ -1,0 +1,46 @@
+{
+  "title_text": "DOCTOR SPINE",
+  "credits_text": "First he\"ll crack you, then he\"ll whack you! LARRY THOMAS, JOE ESTETIEZ, REGGIE BANNISTER, TIFFANY SHERIS, JUDY TENUTA, KATHY CARRIER, LISA LORING, XANGO HENRY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SPINE COMICS GROUP, DO X HARM, $1.50, 141, JULY, 15¢, MICHAEL WEAKER, LARRY THOMAS, JOE ESTETIEZ, REGIE BANNISTER, TIFFANY SHERIS, JUDY TENUTA, KATHY CARRIER, LISA LORING, XANGO HENRY, BROADSTONE FILMS, JOE WEISEL, ABBOT, MICHAEL WEAKER, LARRY THOMAS, JOE WEISEL, REGIE BANNISTER, JUDY TENUTA, KATHY CARRIER, LISA LORING, XANGO HENRY, ALAN J. KIRK, JOE WEISEL, ABBOT",
+  "mood": [
+    "horror",
+    "camp",
+    "gothic",
+    "violent",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster for \"Doctor Spine\" featuring a bald man with glasses and blood on his shirt, surrounded by character portraits and bold text."
+}

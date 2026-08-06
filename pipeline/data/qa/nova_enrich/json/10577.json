@@ -1,0 +1,42 @@
+{
+  "title_text": "DRACULA 2000",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "mysterious",
+    "dark",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains dark and intense imagery, suggesting potential occult themes and mild violence.",
+  "description": "Movie poster for 'Dracula 2000' features a fiery background with silhouetted characters, including a central figure facing forward."
+}

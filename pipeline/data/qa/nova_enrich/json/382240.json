@@ -1,0 +1,41 @@
+{
+  "title_text": "KILL SYNDROME",
+  "credits_text": "Wendell Smith Leah Jenn BRACEY CARROLL MULLINS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A DWAYNE KING & SCOTT I COLLINS FILM Murder... It runs in the family!",
+  "mood": [
+    "dread",
+    "horror",
+    "gothic",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A poster shows an aged man holding a chainsaw with a fierce expression, surrounded by dark, gritty textures and bold red text."
+}

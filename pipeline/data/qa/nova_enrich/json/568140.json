@@ -1,0 +1,42 @@
+{
+  "title_text": "A Woman's Gun",
+  "credits_text": "Yvette McClendon in A Woman's Gun Directed by Vincent Blatario",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Don't Watch it alone - Scream TV",
+  "mood": [
+    "thriller",
+    "suspense",
+    "dramatic",
+    "intense",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and a knife; suitable for mature audiences.",
+  "description": "Poster features a woman with a knife, a man holding a gun, and a warning tagline, suggesting a thriller or suspense theme."
+}

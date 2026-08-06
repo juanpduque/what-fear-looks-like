@@ -1,0 +1,41 @@
+{
+  "title_text": "ANACONDA 3: OFFSPRING",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "adventure",
+    "thriller",
+    "jungle",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts potential violence and a large snake, which may be unsettling to some viewers.",
+  "description": "The poster shows a group of people in a jungle setting with a large green anaconda in the foreground and a rifle held by one character."
+}

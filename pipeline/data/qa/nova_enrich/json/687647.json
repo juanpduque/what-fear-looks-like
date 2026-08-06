@@ -1,0 +1,49 @@
+{
+  "title_text": "THE DOOR IN THE WOODS",
+  "credits_text": "GRIPTO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "surreal",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "forest",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense horror imagery and implied threat, suitable for mature audiences.",
+  "description": "A poster shows four children facing a monstrous creature with sharp teeth emerging from dark woods, evoking a sense of dread and mystery."
+}

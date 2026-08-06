@@ -1,0 +1,42 @@
+{
+  "title_text": "Our Tell-Tale Heart",
+  "credits_text": "a film by Miguel Ferreira\nbased on the story by Edgar Allan Poe",
+  "languages": [
+    "en"
+  ],
+  "other_text": "OFFICIAL SELECTION BIFF SWEDEN 2023\nOFFICIAL SELECTION MOTELX 2023",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "haunting",
+    "dark",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "blood"
+  ],
+  "moderation_notes": "Contains mild blood-like markings and a dark, eerie atmosphere.",
+  "description": "A close-up of a person with a candle beside them, featuring a dark, gothic aesthetic and faint blood-like markings."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "THE PUPPET MONSTER MASSACRE",
+  "credits_text": "\"Fans of MEET THE FEEBLES and TEAM AMERICA WORLD POLICE will want to line up for this one\" - Ain't It Cool News",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "camp",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.1,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests violent themes through its title and imagery.",
+  "description": "Poster features puppet characters in a horror setting with a monstrous face and fiery background, suggesting a violent, surreal atmosphere."
+}

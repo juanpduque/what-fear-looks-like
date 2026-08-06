@@ -1,0 +1,45 @@
+{
+  "title_text": "IL GIOCO DELL'EBBRE",
+  "credits_text": "",
+  "languages": [
+    "it"
+  ],
+  "other_text": "Un gioco mortale che ti costringere a scegliere",
+  "mood": [
+    "mysterious",
+    "psychological",
+    "thriller",
+    "disturbing",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "shadow",
+      "conf": 0.8
+    },
+    {
+      "name": "occult",
+      "conf": 0.7
+    },
+    {
+      "name": "psychological",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and psychological themes.",
+  "description": "A hooded figure with an eye symbol stands behind a triangular structure, with a small figure entering a doorway at its base."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "诡异",
+  "credits_text": "DOOMED DISASTER",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood-like imagery.",
+  "description": "A woman lies in an open coffin with a ghostly, eerie atmosphere and red text reading \"诡异\" (Doomed Disaster)."
+}

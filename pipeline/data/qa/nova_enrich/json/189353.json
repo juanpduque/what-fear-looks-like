@@ -1,0 +1,39 @@
+{
+  "title_text": "Rapege 2",
+  "credits_text": "LETTER FROM WITHIN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.6,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and disturbing imagery.",
+  "description": "A dark, eerie poster features a central terrified woman surrounded by shadowy figures and a large red blade, evoking horror and suspense."
+}

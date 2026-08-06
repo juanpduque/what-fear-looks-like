@@ -1,0 +1,39 @@
+{
+  "title_text": "SIREN",
+  "credits_text": "DALIT HOLZMAN ERIN MORGAN ERTKA ALANNA MADISON ISOLINA FROM THE WRITER/DIRECTOR OF \"SOCKET\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOUR MIND IS UNDER ARREST CINELATION",
+  "mood": [
+    "gothic",
+    "surreal",
+    "eerie",
+    "psychological",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark poster features two silhouetted faces against a black background with dramatic red lighting, accompanied by the title 'SIREN' and credits."
+}

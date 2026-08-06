@@ -1,0 +1,50 @@
+{
+  "title_text": "THE CRADLE OF SHADOWS",
+  "credits_text": "'A TENSION-PACKED CHILLER' BILLY CHAINSAW",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE HUNT THROUGH THE DARKNESS NOW BEGINS...",
+  "mood": [
+    "dread",
+    "gothic",
+    "tense",
+    "haunting",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "tunnel",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "haunting",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and horror elements.",
+  "description": "A woman with long black hair stands in a dimly lit tunnel, wearing a tattered dress with visible blood stains."
+}

@@ -1,0 +1,43 @@
+{
+  "title_text": "NYRA II",
+  "credits_text": "the story of evil\nwritten and directed by Muhammad Yaseen",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BINTERPLOT PRESENTS",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "mysterious",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "haunted_house",
+      "conf": 0.7
+    },
+    {
+      "name": "text_heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A weathered book titled 'Nyra II: The Story of Evil' shows a woman with fiery hair in a dimly lit, haunted setting."
+}

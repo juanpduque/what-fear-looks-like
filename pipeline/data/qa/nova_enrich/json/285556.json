@@ -1,0 +1,50 @@
+{
+  "title_text": "STILL LIFE",
+  "credits_text": "A GABRIEL GRIEGO FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FOR THOUSANDS OF YEARS MAN ABUSED ANIMALS, USING THEM FOR FOOD, CLOTHING, SCIENCE EXPERIMENTS, TILL TODAY, ANIMAL REVENGE HAS BEGUN.",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "violent",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 1.0,
+  "blood_gore": 0.7,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore, with disturbing imagery of animal abuse and revenge.",
+  "description": "A shirtless man stands over a pile of dead animals, holding a large knife, with a dark, ominous background."
+}

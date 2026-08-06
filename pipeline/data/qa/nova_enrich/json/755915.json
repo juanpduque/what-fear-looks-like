@@ -1,0 +1,46 @@
+{
+  "title_text": "DEAL WITH THE DEVIL",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "ominous",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "noose",
+      "conf": 0.8
+    },
+    {
+      "name": "axe",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "A shadowy figure stands in a dimly lit corridor holding an axe, with a noose above, suggesting a dark, supernatural theme."
+}

@@ -1,0 +1,44 @@
+{
+  "title_text": "FLESH CONTAGIUM",
+  "credits_text": "a film by LORENZO LEPORI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BODY MUTATION. MIND DESTRUCTION! EMPRE VIDEO DICTOVILME presenta FLESH CONTAGIUM con PAOLO BRANTI, SHARI LINDER, LORENZO LEPOI, BRUCIA VANNELLU, ROBERTO MARANTINI, DANIELE MARANTINI, DANIELE MARANTINI, LUCA MARANTINI, ALBERTO ARIZZI, ALBERTO ARIZZI, LORENZO MARANTINI, PIERLUIGI CARLINI",
+  "mood": [
+    "dread",
+    "apocalyptic",
+    "sci-fi",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "gas_mask",
+      "conf": 0.95
+    },
+    {
+      "name": "contagion",
+      "conf": 0.8
+    },
+    {
+      "name": "mutation",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts a post-apocalyptic scenario with implied violence and contamination themes.",
+  "description": "Poster shows two figures in hazmat suits and gas masks holding guns, with bold orange and blue colors and dramatic text."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "THE FOREVER DEAD",
+  "credits_text": "A CHRISTINE PARKER FILM\nWHEN GOOD PEOPLE GO ROTTEN\nBILL MULLIGAN LIBBY LYNN JESSIE WALLEY PATRICK LOREE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Best Feature at Ave Gardner Film Festival",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "gritty",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and horror elements.",
+  "description": "A woman with blood-streaked arms stands in front of a dilapidated house, with the title 'The Forever Dead' prominently displayed."
+}

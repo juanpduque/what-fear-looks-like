@@ -1,0 +1,35 @@
+{
+  "title_text": "THE PREY: LEGEND OF KARNOCTUS",
+  "credits_text": "DANNY TREJO, KEVIN GREVIOUX, NICK CHINLUND, A FILM BY HENSAMAN PRODUCTIONS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "adventure"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts action and potential violence, but no explicit gore or sexual content.",
+  "description": "The poster features three men holding guns, with a menacing monster in the background. The title and credits are prominently displayed."
+}

@@ -1,0 +1,44 @@
+{
+  "title_text": "SAU SAALBAAD",
+  "credits_text": "Mohan Bhakri Yogesh Chhabra Shyam Kandoi Inderjeet Walia",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Aarti Pictures साउसालबाड।",
+  "mood": [
+    "horror",
+    "camp",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.5,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "Contains mild violence and sexual content.",
+  "description": "Movie poster features multiple characters, including a monstrous figure, with intense expressions and dramatic poses."
+}

@@ -1,0 +1,49 @@
+{
+  "title_text": "DAWN OF THE MUMMY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    },
+    {
+      "name": "fire",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and implied violence.",
+  "description": "A mummy rises from the tomb with an outstretched arm, surrounded by shadowy figures under a full moon near ancient pyramids."
+}

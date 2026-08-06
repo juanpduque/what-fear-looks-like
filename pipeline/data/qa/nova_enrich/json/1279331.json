@@ -1,0 +1,39 @@
+{
+  "title_text": "Liûuru",
+  "credits_text": "答事木田事",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "テレビジョンストリーム・アニメーション・リライブル・48答事木田事",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and intense facial expression; no explicit violence or gore.",
+  "description": "A poster features a dark, intense face with green, smoky textures and bold Japanese text, suggesting a horror or supernatural theme."
+}

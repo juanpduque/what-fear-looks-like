@@ -1,0 +1,42 @@
+{
+  "title_text": "ST. CHRISTOPHORUS ROADKILL",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"Phenomenal! The best student film I've ever seen.\" - David Chen\n\"Incredible! Let me wanting a lot more.\" - Grimme\n\"Donnetter, Mann kommt kaum zu Atem!\" - Ultrarealist\n\"My favorite!\" - Chuchen\n\"The worst goddamn nightmare ever!\" - Fancist Boy\n\"Intensiv!\" \n\"A fun black comic romp, which will haunt your scenes in recent memory.\" - Horror Movie Blog",
+  "mood": [
+    "dark",
+    "humorous",
+    "disturbing",
+    "satirical",
+    "macabre"
+  ],
+  "fear_labels": [
+    {
+      "name": "animal",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of animal violence and blood.",
+  "description": "Poster features a red warning sign with a deer graphic and text praising and criticizing the film, titled \"St. Christophorus Roadkill\"."
+}

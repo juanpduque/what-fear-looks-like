@@ -1,0 +1,50 @@
+{
+  "title_text": "TURNO DE NOCHE \"EL LUGAR EQUIVOCADO\"",
+  "credits_text": "TRATARRA PRESENTA \"TURNO DE NOCHE: EL LUGAR EQUIVOCADO\" EN COSTA DE JUANJO AVI, JOSÉ CASAS, ÁNGEL LAMSON, SAKAO Y ÁNGEL SÁNCHEZ CON JOSÉ CASAS, MARÍA TERUEL, CRISTINA MÁLERO, SANTI RODRÍGUEZ, PRODUCCIÓN EXECUTIVA JUANJO AVI, DIEGO ESCUDERO, RUBEN SCHOLZ, MARÍA TERUEL, CRISTINA MÁLERO Y SANTI RODRÍGUEZ, PLANO Y ANÍ LÁMSON, ÁNGEL SÁNCHEZ, MAGULLER Y ÁNGEL LAMSON, EDICIÓN JUANJO AVI, ANÍ FRANZO, DIRECCIÓN DE ARTE ÁNGEL LAMSON, DIRECTOR DE FOTOGRAFÍA JUANJO AVI, ROTE, DIRECCIÓN FRANZO, ESCRITO POR JOSÉ CASAS, DIRECCIÓN JUANJO AVI",
+  "languages": [
+    "es"
+  ],
+  "other_text": "R",
+  "mood": [
+    "intense",
+    "gritty",
+    "violent",
+    "dystopian",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A man stands in a desolate junkyard surrounded by barbed wire, with large knives and flames in the background."
+}

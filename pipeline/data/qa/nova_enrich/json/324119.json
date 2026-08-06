@@ -1,0 +1,47 @@
+{
+  "title_text": "PSICOFUNIAS 1.0",
+  "credits_text": "ANGÉLICA LADRÓN DE GUERRA, ALBERTO DE LA TORRE, ANA VEGA, NATALIA CASAS, BEATRIZ BIEDRSE, JUAN G. ANDERSON, ALDA LOZANO, NÉVIL GARCÍA, MOJÚLLAR ALMUDENA LUNA, ESTEBAN DE MARCO, MARÍA LÉON, ÁLEX RECIO ENCARNACIÓN, MAN ANDERSON, AYRA JIMÉNEZ, ANTONIO GARCÍA, PRODUCCIÓN DE JOSÉ ANTONIO GARCÍA, IVÁN G. ANDERSON, PRODUCCIÓN EXECUTIVA DE ENCARNACIÓN MARTÍNEZ, CONSEJO ANTONIO, CARMEN PRADOS",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "eurocine films presenta",
+  "mood": [
+    "horrific",
+    "psychological",
+    "disturbing",
+    "surreal",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "psychological",
+      "conf": 0.8
+    },
+    {
+      "name": "disturbing",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and disturbing themes.",
+  "description": "A poster featuring a close-up of a terrified face with a tree and a castle in the background, overlaid with jagged lines and red lighting."
+}

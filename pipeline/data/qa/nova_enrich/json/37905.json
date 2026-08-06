@@ -1,0 +1,46 @@
+{
+  "title_text": "THE HORDE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "horror",
+    "thriller",
+    "intense",
+    "chaotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.1,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains intense action and implied violence with a large crowd.",
+  "description": "Three characters stand atop a crowd, holding guns against a fiery backdrop with the title 'THE HORDE' prominently displayed."
+}

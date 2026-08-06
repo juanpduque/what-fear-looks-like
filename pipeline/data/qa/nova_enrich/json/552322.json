@@ -1,0 +1,41 @@
+{
+  "title_text": "THE HUNTRESS",
+  "credits_text": "RUNE OF THE DEAD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dark",
+    "mysterious",
+    "action",
+    "fantasy",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and action themes.",
+  "description": "A woman with a bow stands prominently in a dark forest setting, surrounded by other characters and a fiery background."
+}

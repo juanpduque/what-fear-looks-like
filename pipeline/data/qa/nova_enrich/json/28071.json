@@ -1,0 +1,44 @@
+{
+  "title_text": "NIGHT OF THE SEAGULLS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "crow",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "occult",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.7,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and a ghostly figure, but no explicit violence or sexual content.",
+  "description": "A ghostly figure carries a woman near a coastal castle with crows flying overhead and a group of people in the background."
+}

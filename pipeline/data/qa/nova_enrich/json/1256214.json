@@ -1,0 +1,42 @@
+{
+  "title_text": "OBSERVER",
+  "credits_text": "A FILM BY STEPHEN SANDER\nJENNIFER CHALAMOV AMY TARFE A.J. POPOFF KENZIE RIGEL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOU'RE BEING WATCHED",
+  "mood": [
+    "dread",
+    "suspense",
+    "psychological",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Mild suggestions of violence and gore through the skull imagery.",
+  "description": "The poster features a menacing skull with glowing eyes and the title 'OBSERVER' in bold red letters, with the tagline 'YOU'RE BEING WATCHED.'"
+}

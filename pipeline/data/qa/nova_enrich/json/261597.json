@@ -1,0 +1,42 @@
+{
+  "title_text": "SPACE PROBE TAURUS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "sci-fi",
+    "action",
+    "thriller",
+    "dystopia"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a split image of an astronaut and a large, menacing creature under a moonlit sky, with the title 'SPACE PROBE TAURUS' prominently displayed."
+}

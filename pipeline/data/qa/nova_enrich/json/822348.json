@@ -1,0 +1,50 @@
+{
+  "title_text": "ATROFIA",
+  "credits_text": "",
+  "languages": [
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "apocalyptic",
+    "desolate",
+    "survival",
+    "post-apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "zombie",
+      "conf": 0.7
+    },
+    {
+      "name": "desert",
+      "conf": 0.9
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.85
+    },
+    {
+      "name": "survival",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.2,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, depicting a post-apocalyptic horror scenario.",
+  "description": "A poster for a horror film featuring three characters in a desolate desert landscape, with one holding a weapon and blood visible on their clothing."
+}

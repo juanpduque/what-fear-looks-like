@@ -1,0 +1,49 @@
+{
+  "title_text": "The Paloni Show!",
+  "credits_text": "Halloween Special!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "spooky",
+    "humorous",
+    "gothic",
+    "cartoonish"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.95
+    },
+    {
+      "name": "crowd",
+      "conf": 0.85
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.65
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.95,
+  "animal": 0.1,
+  "blood_gore": 0.4,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild cartoonish violence and gory elements suitable for mature audiences.",
+  "description": "A cartoon poster shows a haunted house surrounded by monsters and ghouls for a Halloween special episode."
+}

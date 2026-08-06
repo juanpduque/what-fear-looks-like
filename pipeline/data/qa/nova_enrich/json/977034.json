@@ -1,0 +1,46 @@
+{
+  "title_text": "Night's Vampires",
+  "credits_text": "Everybody has a dark side!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HORROR presents C.L.B.",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "intense",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains intense horror themes and implied violence.",
+  "description": "A poster features a woman with a vampiric creature superimposed over her face, set against a fiery red background with bold title text."
+}

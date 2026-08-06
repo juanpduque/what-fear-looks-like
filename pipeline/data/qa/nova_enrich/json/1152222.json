@@ -1,0 +1,41 @@
+{
+  "title_text": "GAME OF DEATH",
+  "credits_text": "THE SIX DOORS TO HELL\nDAVID RUESSEL\nCARLOS NINDULAI CAMPAGNA YANG LONG LI ANNELIE HARNER IRENE MIRACLE as VICTORIA\nMARTINA \"HOLIDAY\" SCHMIDT as HAMMER-FIST SHEIZAD BULUT as SPIDERMAN-CHIC MICHAEL KOSTER as FAIRMEAD\nMAJA TRALJAVAC KURT MEINICKE KONSTANTIN KORVILAS and introducing CERENA RUESSEL\nDAVISION ROBERT LOGAN MARK KING LUK KING CHRIS GORINA KERAN MITSUDAKE BRUCE HOPKINS JOE REY DEAN SAMUELSON HOWARD JAMIE TORO LYNNE KOVFAN SULLIVAN EUGENE SHEPPARD JAE ZASI REESE ANNGIE ALEXIS PAPPAS FORTUNE JEAN EVIL SCOTT MILLER LINA ROBERT SCOTT FIELD BRIAN TREMBLAY-SMITH BRUCE DONALD KING ZVIRKOVSKY HASSELBLOFF and RICHARD NORTON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A TIMO ROSS FILM",
+  "mood": [
+    "intense",
+    "thriller",
+    "suspense",
+    "action",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence through imagery and text.",
+  "description": "A dramatic poster featuring intense red lighting, a masked face, and silhouettes of people, with bold title and cast credits."
+}

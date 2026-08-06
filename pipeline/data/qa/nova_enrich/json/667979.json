@@ -1,0 +1,50 @@
+{
+  "title_text": "The Texas Chainsaw Massacre",
+  "credits_text": "A David Weisz/Sherry Springer Production STARRING JANICE WEBB, CHELSEA DUVALL, RYAN SPARKS AND JED YATES STARRING MARTHA JANE BURNS AND JED WEBB WRITTEN, PRODUCED AND DIRECTED BY TERRANCE HARRIS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"Just when you thought it was safe to get your NAILS did!\" \"Screamy\" -Detroit Sun Times Weekly \"More Actiony!\" -L.A. World Global New Periodical \"Chock Full O' Culture\" -Some Other Paper \"A movie so horrible, you'll crap someone else's pants\" -JA Crazy Guy Out The Theatre",
+  "mood": [
+    "horror",
+    "gruesome",
+    "intense",
+    "disturbing",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "chainsaw",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and disturbing imagery.",
+  "description": "Poster shows a disfigured figure holding a chainsaw in a salon setting with red nail polish and horror quotes."
+}

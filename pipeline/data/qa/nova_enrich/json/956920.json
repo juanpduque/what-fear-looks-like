@@ -1,0 +1,50 @@
+{
+  "title_text": "THERE'S SOMETHING IN THE BARN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "supernatural",
+    "holiday",
+    "horror",
+    "family",
+    "creepy"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    },
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.5
+    },
+    {
+      "name": "ghost",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.1,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror elements and occult themes.",
+  "description": "A group of people stands in front of a barn under a starry sky, with eerie figures and skulls in the background, suggesting a supernatural holiday horror theme."
+}

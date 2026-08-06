@@ -1,0 +1,35 @@
+{
+  "title_text": "KILLING Sofia",
+  "credits_text": "un film di ALESSIO CAPUTO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "suspense",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "knife",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a weapon.",
+  "description": "A shadowy figure holding a knife walks down a dimly lit hallway, suggesting a thriller or horror theme."
+}

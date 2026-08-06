@@ -1,0 +1,41 @@
+{
+  "title_text": "ARDITURRI",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "intense",
+    "terrifying",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "horror",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A shirtless man with a terrified expression and wide eyes is shown in a dark setting, evoking a sense of horror and dread."
+}

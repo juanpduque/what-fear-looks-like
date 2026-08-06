@@ -1,0 +1,50 @@
+{
+  "title_text": "HAYRIDE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "survival",
+    "post-apocalyptic",
+    "gritty",
+    "desolate"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "field",
+      "conf": 0.8
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suggesting a horror theme.",
+  "description": "A man with a chainsaw stands in a desolate cornfield under a stormy sky, suggesting a post-apocalyptic horror setting."
+}

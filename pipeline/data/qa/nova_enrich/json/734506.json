@@ -1,0 +1,42 @@
+{
+  "title_text": "The Haunted House",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DVD 02 DIGITAL SOUND",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man stands near a haunted house at night, with eerie imagery and a close-up of a face, suggesting supernatural themes."
+}

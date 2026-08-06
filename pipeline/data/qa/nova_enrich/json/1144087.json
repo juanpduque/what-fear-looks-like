@@ -1,0 +1,38 @@
+{
+  "title_text": "THE WOODS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "2023",
+  "mood": [
+    "mysterious",
+    "eerie",
+    "suspenseful",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "night",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, moody poster shows two silhouetted figures in a moonlit forest, with a beam of light cutting through the trees."
+}

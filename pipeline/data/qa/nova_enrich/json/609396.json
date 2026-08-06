@@ -1,0 +1,45 @@
+{
+  "title_text": "KUNTILANAK KESURUPAN",
+  "credits_text": "A FILM BY NAYATO\nBUKAN CUMA MANUSIA YANG BISA KESURUPAN\nSPECIAL APPEARANCE: JULIA PEREZ\nAZIZ GAGAP, IRISH BELLA, FERDI VALANDOUV, GUNTUR TRIYOGA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "RAPI FILMI presents",
+  "mood": [
+    "supernatural",
+    "horror",
+    "gothic",
+    "dread",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild horror elements and supernatural themes.",
+  "description": "Poster shows a group of people facing a large, eerie figure in a dark setting, suggesting a supernatural horror theme."
+}

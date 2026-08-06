@@ -1,0 +1,41 @@
+{
+  "title_text": "THAM MỸ VIỆN ÂM PHỦ",
+  "credits_text": "NGỌC TRÌNH, DAO DIỆN, NGUYỄN HỮ HOÀNG",
+  "languages": [
+    "vi"
+  ],
+  "other_text": "NHAN SẮC NÀY CHỈNH LÀ TỰ VẬT, DỰ KIẾN KHỞI CHIẾU 08.05.2026",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, depicting a surgical scene with a distressed individual.",
+  "description": "A poster shows a distressed woman undergoing a surgical procedure with a gloved hand holding a scalpel above her face, blood visible, and dramatic lighting."
+}

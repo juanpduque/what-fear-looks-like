@@ -1,0 +1,47 @@
+{
+  "title_text": "POE THE BLACK CAT",
+  "credits_text": "CHRIS MILEWSKI DOMIZIO FILIPPO BRACE BELTEMPO CHIARA PAVONI STEFANO SALA ERIC BOWER SELENE FELTRIN GIORGIO AGRI CLEVERSON RODRIGUES KAREN WIDDOSS GIORGIA MASCARI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE ENCHANTED ARCHITECT and VESTRA PICTURES presents",
+  "mood": [
+    "gothic",
+    "horror",
+    "surreal",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.9,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic blood and horror themes, suitable for mature audiences.",
+  "description": "A poster features a black cat with glowing eyes, a woman with blood on her face, and a man with a sinister expression, evoking a gothic horror atmosphere."
+}

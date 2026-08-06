@@ -1,0 +1,48 @@
+{
+  "title_text": "NIGHT HARVEST",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    },
+    {
+      "name": "forest",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.2,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains violent and horror elements, suitable for mature audiences.",
+  "description": "A masked figure wields a large weapon amidst flames and crows, with a house in the background."
+}

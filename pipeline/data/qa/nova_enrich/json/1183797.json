@@ -1,0 +1,40 @@
+{
+  "title_text": "カニバリズム",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "violent",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "weapon",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.7,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.95,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A stylized face with sharp teeth and wide eyes, accompanied by a red blood splatter and a weapon, set against a black background."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "REBONE",
+  "credits_text": "結影声像画 16",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "結影声像画 16",
+  "mood": [
+    "surreal",
+    "disturbing",
+    "gothic",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of a dismembered body and blood, likely disturbing to some viewers.",
+  "description": "A poster shows a dismembered body inside a glass container with blood and internal organs visible, accompanied by Japanese and English text."
+}

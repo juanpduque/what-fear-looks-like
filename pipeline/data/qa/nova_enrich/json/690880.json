@@ -1,0 +1,49 @@
+{
+  "title_text": "Zombie Island",
+  "credits_text": "黄安守魔中",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "survival",
+    "post-apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    },
+    {
+      "name": "island",
+      "conf": 0.9
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A group of survivors, including adults and children, are stranded on a remote island overrun by zombies, with visible injuries and a tense atmosphere."
+}

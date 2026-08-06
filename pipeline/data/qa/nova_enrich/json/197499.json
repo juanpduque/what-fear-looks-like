@@ -1,0 +1,47 @@
+{
+  "title_text": "HARVEST OF FEAR",
+  "credits_text": "KILLING IS IN THE AIR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.95
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.95,
+  "monster": 0.85,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains violent imagery with a knife and monstrous face.",
+  "description": "A poster features a large knife and a stitched, monstrous face with red eyes against a dark, fiery background."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "RETURN TO THE THEATRE OF TERROR",
+  "credits_text": "A FILM BY TOM RYAN\nA THEATRE OF TERROR PRODUCTION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gothic",
+    "surreal",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and monstrous imagery.",
+  "description": "A poster shows a boy facing a red door with a monstrous hand reaching out, and a ghostly figure holding a cross, under a marquee reading 'Return to the Theatre of Terror.'"
+}

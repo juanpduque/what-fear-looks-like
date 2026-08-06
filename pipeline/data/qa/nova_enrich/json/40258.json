@@ -1,0 +1,45 @@
+{
+  "title_text": "BABY BLOOD",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gothic",
+    "surreal",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and violent themes.",
+  "description": "A dark poster features a central figure surrounded by eerie faces, with bold text reading 'BABY BLOOD,' suggesting a horror theme."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "SUBURBAN COVEN",
+  "credits_text": "KELLY CROWDER TIFFANY GRIFFIN JAMES BURLESON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THEY LIVE RIGHT NEXT DOOR",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "haunting",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and supernatural horror elements.",
+  "description": "A poster shows a haunted house with a spectral figure and four shadowy figures approaching, suggesting supernatural horror."
+}

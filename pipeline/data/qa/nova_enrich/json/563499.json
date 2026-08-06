@@ -1,0 +1,39 @@
+{
+  "title_text": "LAS REGLAS DE LA RUINA",
+  "credits_text": "VICTOR OSUNA\nFANDEL PARDO\nVICTOR KOTSIFAKIS\nTEDO ALEXANDER\nALVARO FLORES\nRODRIGO R. ALACIOS",
+  "languages": [
+    "es"
+  ],
+  "other_text": "UNA PEQUEÑA LUZ ENTRE DOS GRANDES OSCURIDADES",
+  "mood": [
+    "gothic",
+    "dread",
+    "mysterious",
+    "haunting",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A woman stands in a dark, smoky environment with a serious expression, featured on a movie poster with Spanish text."
+}

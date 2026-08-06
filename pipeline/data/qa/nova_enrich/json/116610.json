@@ -1,0 +1,39 @@
+{
+  "title_text": "THE HOUSE THAT JACK BUILT",
+  "credits_text": "YOU'RE INVITED TO A HOUSEWARMING PARTY FROM HELL!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horrific",
+    "disturbing",
+    "psychological",
+    "disturbing",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring multiple faces and the title \"The House That Jack Built\" with a tagline inviting to a hellish housewarming party."
+}

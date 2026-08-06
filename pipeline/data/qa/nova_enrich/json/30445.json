@@ -1,0 +1,41 @@
+{
+  "title_text": "A CHRISTMAS NIGHTMARE",
+  "credits_text": "CHARLIE FINELLI TIFFANY BAKER HUGO ARMSTRONG",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NOT EVEN DEATH WILL STOP HIM...",
+  "mood": [
+    "dread",
+    "gothic",
+    "holiday horror",
+    "surreal",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "holiday",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild violent imagery suggested by axe and silhouette.",
+  "description": "DVD cover features a red ornament with a bow, a shadowy figure holding an axe, and holiday-themed text."
+}

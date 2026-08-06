@@ -1,0 +1,42 @@
+{
+  "title_text": "DETACHED",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Written and Directed by Elise Blanchard",
+  "mood": [
+    "disturbing",
+    "psychological",
+    "haunting",
+    "distorted",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and disturbing imagery.",
+  "description": "A young person stands in a hallway with bloodstains on their clothing, suggesting a disturbing or violent scenario."
+}

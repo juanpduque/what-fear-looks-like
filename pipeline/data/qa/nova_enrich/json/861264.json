@@ -1,0 +1,39 @@
+{
+  "title_text": "TRIAPHLIA",
+  "credits_text": "THERE'S A REASON BAD THINGS COME IN THREES.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.6,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A horror movie poster featuring a knife, a distressed woman, and a creepy child with the title 'TRIAPHLIA' and a tagline."
+}

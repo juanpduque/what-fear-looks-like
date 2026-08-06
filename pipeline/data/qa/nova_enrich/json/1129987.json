@@ -1,0 +1,45 @@
+{
+  "title_text": "INTO THE NIGHT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "mysterious",
+    "haunting",
+    "suspenseful",
+    "dark",
+    "lonely"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "night",
+      "conf": 0.95
+    },
+    {
+      "name": "road",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.2,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A lone figure rides a bicycle down a dark, empty road surrounded by dense forest under a gloomy night sky."
+}

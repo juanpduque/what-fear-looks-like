@@ -1,0 +1,45 @@
+{
+  "title_text": "DOWNHILL",
+  "credits_text": "BRYCE DRAPER NATALIE BURN I UKE MASSY IGNACIA ALLAMAND MATIAS LOPEZ ARIEL LEVY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOU CAN RUN BUT YOU CAN'T HIDE",
+  "mood": [
+    "dread",
+    "gothic",
+    "occult",
+    "forest",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "occult",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.2,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult symbolism and a tense, eerie atmosphere.",
+  "description": "A group of young adults is shown in a dark forest with a pentagram, suggesting a horror or thriller theme."
+}

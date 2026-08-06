@@ -1,0 +1,37 @@
+{
+  "title_text": "THE SLASHTRONAUT",
+  "credits_text": "A VETRONE BROTHERS FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "sci-fi",
+    "action",
+    "dystopian",
+    "post-apocalyptic",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "sci-fi",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts a violent sci-fi theme with a weapon.",
+  "description": "A person in a spacesuit holds a chainsaw in a dark setting, with bold red text reading 'THE SLASHTRONAUT' and 'A VETRONE BROTHERS FILM.'"
+}

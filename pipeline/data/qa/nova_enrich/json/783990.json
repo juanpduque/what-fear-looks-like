@@ -1,0 +1,45 @@
+{
+  "title_text": "PURGATORIUM",
+  "credits_text": "\"A MOODY THRILLER THAT WILL MAKE YOUR SKIN CRAWL.\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "eerie",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and implied horror elements.",
+  "description": "A poster shows two women in a dark setting with candles; one covers her mouth in fear, the other stands expressionless. The background features an old building."
+}

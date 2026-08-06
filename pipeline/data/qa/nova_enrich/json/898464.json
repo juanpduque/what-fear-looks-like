@@ -1,0 +1,39 @@
+{
+  "title_text": "地气小人",
+  "credits_text": "张。上中东北",
+  "languages": [
+    "zh"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "sci-fi",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains action violence and a monstrous creature.",
+  "description": "A poster shows two characters fleeing from a large, menacing creature in a high-tech environment with explosions and fire."
+}

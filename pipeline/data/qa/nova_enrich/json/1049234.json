@@ -1,0 +1,50 @@
+{
+  "title_text": "SANGRE SANGRIENTA",
+  "credits_text": "CHARLIE CANCAR",
+  "languages": [
+    "es"
+  ],
+  "other_text": "UN CORTO DE",
+  "mood": [
+    "horror",
+    "violent",
+    "gothic",
+    "camp",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "Poster features three masked characters holding weapons against a red brick wall with bold, dripping text."
+}

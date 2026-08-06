@@ -1,0 +1,41 @@
+{
+  "title_text": "NIGHT FANGS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IF YOU THINK YOU'VE SEEN HORROR... THINK AGAIN!",
+  "mood": [
+    "horror",
+    "dread",
+    "gothic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster features intense horror themes and mild suggestions of violence and gore.",
+  "description": "A dark poster shows a terrified man with fangs, accompanied by bold red text reading 'NIGHT FANGS' and a dramatic tagline."
+}

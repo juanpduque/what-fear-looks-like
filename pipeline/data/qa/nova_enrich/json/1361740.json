@@ -1,0 +1,41 @@
+{
+  "title_text": "REPLICATOR",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horrific",
+    "surreal",
+    "dystopic",
+    "body-horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic, monstrous imagery and implied violence.",
+  "description": "A silhouette of a woman stands before a vibrant, grotesque mass of organic, pulsating forms with tendrils and bulbs in red and green hues."
+}

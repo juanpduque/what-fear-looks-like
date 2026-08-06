@@ -1,0 +1,47 @@
+{
+  "title_text": "美魔 MONSTERS",
+  "credits_text": "美魔安安安安安",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "2015.6.5 影子精度員血出帖",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "dark",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster featuring a menacing, monstrous creature with sharp teeth and glowing eyes, set against a dark background. The title \"美魔 MONSTERS\" is prominently displayed."
+}

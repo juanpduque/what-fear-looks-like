@@ -1,0 +1,40 @@
+{
+  "title_text": "STINGER",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "action",
+    "thriller",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts a dramatic scene with a large creature attacking a ship, suggesting potential violence.",
+  "description": "A dramatic poster shows a giant creature emerging from the ocean attacking a ship during a stormy sunset."
+}

@@ -1,0 +1,33 @@
+{
+  "title_text": "THE SHAPE",
+  "credits_text": "From The Makers Of Mr. Ice Cream Man",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HOR\nSCREENER COPY\nNOT FOR RETAIL SALE\n18+\nREQUIRES\nADDITIONAL\nADVERTISING",
+  "mood": [
+    "horror",
+    "thriller",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A red silhouette of a person holding a weapon is shown against a dark background with bold yellow and white text."
+}

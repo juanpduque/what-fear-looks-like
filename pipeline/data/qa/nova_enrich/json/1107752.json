@@ -1,0 +1,37 @@
+{
+  "title_text": "THE DEVIL COMES TO KANSAS CITY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "intense",
+    "dramatic",
+    "gritty"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts a man with a gun in a fiery, intense setting, suggesting potential violence.",
+  "description": "A man stands with his back to the viewer, holding a gun, against a fiery red background with a large crescent shape."
+}

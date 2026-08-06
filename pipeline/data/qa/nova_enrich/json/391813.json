@@ -1,0 +1,43 @@
+{
+  "title_text": "PRIMAL SHIFT",
+  "credits_text": "UN FILM DI SCOTT MATTHEWS\nRED BAND EDITION",
+  "languages": [
+    "en",
+    "it"
+  ],
+  "other_text": "CHIEDERE UN PASSAGGIO PUÒ COSTARE LA VITA",
+  "mood": [
+    "dread",
+    "psychological",
+    "thriller",
+    "disturbing",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and implied violence.",
+  "description": "A poster shows a young woman with blood on her face, standing on a desolate road with a truck in the background."
+}

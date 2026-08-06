@@ -1,0 +1,101 @@
+{
+  "ts_utc": "2026-08-04T00:05:00Z",
+  "job": "imdb-selenium-posters",
+  "diagnosis_es": {
+    "root_cause": "Playwright headed Chrome en EC2 recibía HTTP 202 (challenge/bloqueo IMDb) en el 100% de títulos; el proceso seguía vivo (~17s/título) pero sin posters. S3 results/ vacío porque imdb_selenium_chain.sh solo sube al FINAL. No era crash ni Chrome/Xvfb roto.",
+    "evidence": [
+      "i-0d70c936e1e39759b running, status checks ok, SSM offline",
+      "get-console-output: 1/218…151+/218 todos MISS no-poster status=202; ~17s entre filas",
+      "s3://sagemaker-studio-a5572760/wflike-imdb-selenium/ sin results/ (solo code/input/ENV)",
+      "Suggest API local: 0/218 con imageUrl (i:null) — cohort browser-retry genuino",
+      "MODE=features residual i-0f04b405308589396: Selenium SÍ cargó IMDb desde AWS (33 hits, DONE en S3) — no mismo fallo"
+    ],
+    "not_root_cause": [
+      "userdata aws CLI (ya arreglado; chain arrancó)",
+      "proceso muerto/zombie",
+      "Xvfb/Chrome install fallido"
+    ],
+    "fix_applied": [
+      "pull_imdb_posters.py: --engine selenium (default) alineado con enrich_imdb_selenium_features.py",
+      "challenge wait/retry + --max-consecutive-blocks=12 aborta rachas 202",
+      "chain MODE=posters: sync incremental S3 cada ~90s (PROGRESS + CSVs + jpgs)",
+      "terminada i-0d70c936e1e39759b (Playwright inútil); relaunch limpio i-0ebdf098a8293640a"
+    ],
+    "next_monitor": [
+      "AWS_PROFILE=sandbox aws s3 ls s3://sagemaker-studio-a5572760/wflike-imdb-selenium/results/",
+      "AWS_PROFILE=sandbox aws s3 cp s3://sagemaker-studio-a5572760/wflike-imdb-selenium/results/PROGRESS -",
+      "aws ec2 get-console-output --instance-id i-0ebdf098a8293640a --latest --query Output --output text | grep -E 'OK |MISS |ABORT|Selenium|candidates'"
+    ]
+  },
+  "instances": {
+    "posters_failed_playwright": {
+      "instance_id": "i-0d70c936e1e39759b",
+      "public_ip": "18.206.125.253",
+      "state_at_debug": "running→terminated",
+      "prefix": "wflike-imdb-selenium",
+      "mode": "posters",
+      "engine": "playwright",
+      "progress_when_debugged": "≥151/218 MISS status=202",
+      "s3_results": "empty (upload-at-end only)",
+      "action": "terminated"
+    },
+    "posters_race_relaunched_too_early": {
+      "instance_id": "i-00bbaab197dd951d5",
+      "note": "Launched before pull_imdb_posters.py selenium staging finished; terminated",
+      "action": "terminated"
+    },
+    "posters_relaunched_selenium": {
+      "instance_id": "i-0ebdf098a8293640a",
+      "public_ip": "3.83.50.177",
+      "name_tag": "wflike-imdb-posters",
+      "prefix": "wflike-imdb-selenium",
+      "bucket": "sagemaker-studio-a5572760",
+      "mode": "posters",
+      "engine": "selenium",
+      "instance_type": "t3.large",
+      "region": "us-east-1",
+      "todo_ids": 218,
+      "delay": 1.2,
+      "challenge_wait": 8,
+      "max_consecutive_blocks": 12,
+      "progress_sync_secs": 90,
+      "early_health": {
+        "console": "candidates=218 mode=browser/selenium; 1 TimeoutException then 2–13 OK via og:image",
+        "s3_results_partial": true,
+        "objects_seen": ["PROGRESS", "imdb_poster_hits.csv", "imdb_poster_miss.csv", "imdb_poster_browser_run.log", "posters/"]
+      }
+    },
+    "features_residual": {
+      "instance_id": "i-0f04b405308589396",
+      "prefix": "wflike-imdb-features-residual",
+      "same_failure_mode": false,
+      "outcome": "SUCCESS — completed and self-terminated",
+      "state_at_debug": "terminated",
+      "s3_done": "s3://sagemaker-studio-a5572760/wflike-imdb-features-residual/results/IMDB_SELENIUM_DONE",
+      "hits": 33,
+      "misses": 240,
+      "miss_top_reasons": {
+        "no_tmdb_director": 69,
+        "year_mismatch": 77,
+        "director_mismatch": 46,
+        "no_suggest_candidates": 30,
+        "no_directors_on_page": 17
+      },
+      "note": "Selenium headed Chrome on AWS worked for title pages; contrast proves posters Playwright 202 was engine/fingerprint specific, not generic AWS IP hard-fail for all IMDb."
+    }
+  },
+  "code_when_uploads": {
+    "before": "imdb_selenium_chain.sh uploads results only after python exits (end of chain)",
+    "after": "MODE=posters background loop uploads hits/miss/log/PROGRESS every PROGRESS_SYNC_SECS (default 90) plus final upload"
+  },
+  "suggest_probe": {
+    "todo_file": "pipeline/data/qa/_poster_funnel_audit/B_imdb_scrap_browser_retry.csv",
+    "n": 218,
+    "with_imageUrl": 0,
+    "implication": "Suggest-only cannot recover this cohort; browser scrape required"
+  },
+  "files_changed": [
+    "pipeline/pull_imdb_posters.py",
+    "pipeline/aws/imdb_selenium_chain.sh"
+  ]
+}

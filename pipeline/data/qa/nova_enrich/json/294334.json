@@ -1,0 +1,46 @@
+{
+  "title_text": "HOUSE OF THE WITCHDOCTOR",
+  "credits_text": "A FILM BY DEVON NIKOLAS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "supernatural",
+    "tense",
+    "gothic",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.5,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "A distressed woman kneels before a hooded figure holding a weapon, with an eerie house in the background under a stormy sky."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "SACI",
+  "credits_text": "UMA FILME DE JOSÉ MOJICA MARINS",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "horror",
+    "mythic",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features a monstrous creature and a stern-looking man, suggesting themes of horror and the supernatural.",
+  "description": "A black-and-white poster shows a bald man with glasses and a fierce expression, with a monstrous creature emerging from behind him."
+}

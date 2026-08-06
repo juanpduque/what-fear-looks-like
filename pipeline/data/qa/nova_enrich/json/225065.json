@@ -1,0 +1,46 @@
+{
+  "title_text": "SILENT BLOODNIGHT",
+  "credits_text": "ROBERT CLEANER, DANIELA VIE, MIKE VEGA, CHRISTINE DUNE, ELMAR WEISSHAHN AND STEFAN PFEIFFER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "The Terror is Everywhere! UNRATED!",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "suspense",
+    "terrifying"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and implied violence.",
+  "description": "A horror movie poster featuring a terrified woman against a dark, moonlit background with a boat and ominous text."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "What's Wrong, Wendy?",
+  "credits_text": "ALEXANDRA BOULAS SPIKEY MADISON TOVA WEINBERGER ANTHONY DAIN JACE CARSON ELIAH PAYNE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COMING SOON",
+  "mood": [
+    "horror",
+    "thriller",
+    "supernatural",
+    "dark humor",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.5,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild violent imagery suggested by poster design.",
+  "description": "Poster features a group of young adults with a central character holding a box, set against a dark, eerie background with ghostly hands reaching upward."
+}

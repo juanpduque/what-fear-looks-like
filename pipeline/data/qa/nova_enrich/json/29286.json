@@ -1,0 +1,38 @@
+{
+  "title_text": "THE BLACK CAT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "noir",
+    "mystery",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "cat",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Movie poster features three characters with a large cat eye above, suggesting a gothic noir atmosphere."
+}

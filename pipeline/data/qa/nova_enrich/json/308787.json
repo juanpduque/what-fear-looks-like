@@ -1,0 +1,42 @@
+{
+  "title_text": "THE SCARE GAME",
+  "credits_text": "INSANITY IS THE GAME! DEATH IS THE WINNER!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DIRECTOR'S CUT SPECIAL COLLECTOR'S EDITION",
+  "mood": [
+    "intense",
+    "thriller",
+    "psychological",
+    "suspenseful",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A man holds a bloody knife with a determined expression, set against a dark background with intense text overlays."
+}

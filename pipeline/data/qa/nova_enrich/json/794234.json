@@ -1,0 +1,38 @@
+{
+  "title_text": "THE BUNKER GAME",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "claustrophobic",
+    "suspenseful",
+    "dystopian"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "confinement",
+      "conf": 0.9
+    },
+    {
+      "name": "eyeball",
+      "conf": 1.0
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A close-up of a red eye frames a group of people in a dimly lit bunker, creating a tense and claustrophobic atmosphere."
+}

@@ -1,0 +1,35 @@
+{
+  "title_text": "SEVENTY5IVE",
+  "credits_text": "'EEN FILM IN DE LIJN VAN SCREAM EN I KNOW WHAT YOU DID LAST SUMMER'",
+  "languages": [
+    "en"
+  ],
+  "other_text": "RUTGER HAUER PLAY THE GAME. OBEY THE RULES. PRAY FOR MERCY",
+  "mood": [
+    "dread",
+    "suspense",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violent themes and weapon imagery.",
+  "description": "A dark poster features a shadowy figure holding an axe, with dramatic lighting and ominous text, suggesting a horror thriller."
+}

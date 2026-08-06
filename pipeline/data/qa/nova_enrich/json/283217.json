@@ -1,0 +1,46 @@
+{
+  "title_text": "MIDNIGHT SHOW",
+  "credits_text": "MOVIES THEY DO NOT WANT YOU TO SEE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NEW WORLD FILMS in Association With UNDERDALLY PRODUCTIONS Present COMING SOON",
+  "mood": [
+    "camp",
+    "surreal",
+    "erotic",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.4,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "sexual",
+    "violence"
+  ],
+  "moderation_notes": "Contains mild sexual and violent imagery, suitable for mature audiences.",
+  "description": "A vibrant poster features a screaming woman, monsters, and various characters, promoting a midnight movie show with bold, retro design elements."
+}

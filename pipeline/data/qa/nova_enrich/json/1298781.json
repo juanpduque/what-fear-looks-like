@@ -1,0 +1,50 @@
+{
+  "title_text": "The BOYS NIGHT OUT",
+  "credits_text": "YOU'RE NOT MOWING MY LAWN...",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "humorous",
+    "zombie",
+    "camp",
+    "grotesque",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild violence and gore with zombie imagery.",
+  "description": "A poster shows three zombie-like characters in a forest, one holding a weapon, with a scared child nearby. The title is prominently displayed at the top."
+}

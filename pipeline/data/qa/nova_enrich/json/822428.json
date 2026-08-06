@@ -1,0 +1,40 @@
+{
+  "title_text": "CUT ME IF YOU CAN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "If you're BLACK, you'll never make the CUT!",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatter and violent themes.",
+  "description": "A poster features a masked figure with blood splatters and bold text, creating a dark, threatening atmosphere."
+}

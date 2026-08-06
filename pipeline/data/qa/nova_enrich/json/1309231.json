@@ -1,0 +1,47 @@
+{
+  "title_text": "GRAY MATTER",
+  "credits_text": "LARRY FESSENDEN, AARON CHRISTENSEN, SCOTT LINDGREN, STEVE HERSON, KENNETH MARTIN\nBASED ON A STORY BY STEPHEN KING",
+  "languages": [
+    "en"
+  ],
+  "other_text": "RED CLARK PRESENTS",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "haunting",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a ghostly figure looming over a house in a snowy forest, with three people walking toward it under a dark, eerie sky."
+}

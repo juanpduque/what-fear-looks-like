@@ -1,0 +1,42 @@
+{
+  "title_text": "SHADOW TRACKER",
+  "credits_text": "Vampire Hunter",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Only one man could find them... Only one man could destroy them...",
+  "mood": [
+    "horror",
+    "action",
+    "thriller",
+    "camp",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "The poster features a group of characters, including a man in a leather jacket and another in a white outfit, with intense expressions and dramatic poses, suggesting a horror or action theme."
+}

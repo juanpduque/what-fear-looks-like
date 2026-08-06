@@ -1,0 +1,50 @@
+{
+  "title_text": "GINGERDEADMAN 3",
+  "credits_text": "ROLLER BOOGIEMAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "camp",
+    "grotesque",
+    "violent",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.75
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A grotesque, monstrous figure in a tuxedo holds a bloody knife amidst fiery, disco-themed background with sparkling balls."
+}

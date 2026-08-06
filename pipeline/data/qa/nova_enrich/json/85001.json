@@ -1,0 +1,51 @@
+{
+  "title_text": "BLOOD TRACKS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "psychological",
+    "disturbing",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    },
+    {
+      "name": "forest",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "A man walks through a snowy forest with a trail of blood behind him, while a monstrous creature and a woman appear in the background."
+}

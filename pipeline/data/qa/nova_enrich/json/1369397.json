@@ -1,0 +1,39 @@
+{
+  "title_text": "El proyecto de la bruja de la calle",
+  "credits_text": "RAQUEL WALMANDA, FERNANDA MÁNDEZ, MARÍA LÓPEZ, BERNARDO SENS",
+  "languages": [
+    "es"
+  ],
+  "other_text": "FESTIVAL INTERNACIONAL DE CINE DE SANTIAGO, LJE, CAMERTO",
+  "mood": [
+    "gothic",
+    "surreal",
+    "eerie",
+    "haunting",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A green poster features a blurred face within a vine-like frame, with names of cast members and a film festival logo."
+}

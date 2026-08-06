@@ -1,0 +1,49 @@
+{
+  "title_text": "LAZUZU",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COMING SOON\nitn distribution\nFRENCHIE FLICKS",
+  "mood": [
+    "horror",
+    "supernatural",
+    "intense",
+    "foreboding",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense horror elements and implied violence.",
+  "description": "A poster featuring a menacing creature with glowing eyes, a person in distress, and bold red text reading 'LAZUZU,' indicating an upcoming horror film."
+}

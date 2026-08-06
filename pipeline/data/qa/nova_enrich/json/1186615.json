@@ -1,0 +1,39 @@
+{
+  "title_text": "NEVERMORE",
+  "credits_text": "TERROR MOLINS | MAGGIE FAIR FILM FESTIVAL | BRITISH HORROR FILM FESTIVAL | OFFICIAL SELECTION | BEST ACTRESS | BEST STUDENT FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "OFFICIAL SELECTION BRITISH HORROR FILM FESTIVAL 2022 | OFFICIAL SELECTION MACGABEE FAIR FILM FESTIVAL 2022 | OFFICIAL SELECTION INDEPENDENT FILM AWARDS 2022 | OFFICIAL SELECTION INDEPENDENT FILM AWARDS 2022",
+  "mood": [
+    "gothic",
+    "psychological",
+    "haunting",
+    "mystery",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.2,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A woman lies in bed holding a stuffed animal, with a dark, eerie background and festival award text overlay."
+}

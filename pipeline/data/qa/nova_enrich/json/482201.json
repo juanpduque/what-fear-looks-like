@@ -1,0 +1,47 @@
+{
+  "title_text": "NEIGHBOURS",
+  "credits_text": "They are Vampires\nProduced & Directed by SHYAM RAMSAY\nAssociate Director SASHA RAMSAY\nAssociate Producer MADHU DAWAR Cinematographer GANGU RAMSAY",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "other_text": "RAMSAY HORROR IS BACK\nRAMSAY ENTERTAINMENT\nHow will you run from evil if it lives next door?",
+  "mood": [
+    "horror",
+    "thriller",
+    "supernatural",
+    "suspense",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "vampire",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and suggestive imagery.",
+  "description": "A poster featuring intense faces, fiery explosions, and bold text promoting a horror film about vampiric neighbors."
+}

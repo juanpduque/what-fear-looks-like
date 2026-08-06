@@ -1,0 +1,42 @@
+{
+  "title_text": "INFERNO",
+  "credits_text": "FACE YOUR FEARS.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "surreal",
+    "gothic",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.5
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A close-up of a face dominates the foreground, with a desolate landscape and distant gas station in the background under an orange sky."
+}

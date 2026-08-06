@@ -1,0 +1,39 @@
+{
+  "title_text": "WHO'S THERE?",
+  "credits_text": "A FILM BY MIKE PECCI WRITTEN BY WILL SHUMONS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "mysterious",
+    "surreal",
+    "sci-fi",
+    "psychological",
+    "atmospheric"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "structure",
+      "conf": 0.8
+    },
+    {
+      "name": "neon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A lone figure stands before a glowing, triangular doorway in a neon-lit, mysterious setting, evoking a surreal and psychological atmosphere."
+}

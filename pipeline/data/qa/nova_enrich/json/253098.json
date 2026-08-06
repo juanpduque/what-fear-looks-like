@@ -1,0 +1,44 @@
+{
+  "title_text": "Midget Zombie Takeover",
+  "credits_text": "Fight the takeover",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "apocalyptic",
+    "chaotic",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery suggesting a zombie attack scenario.",
+  "description": "A collage poster shows various individuals in distressed poses with a zombie theme, featuring the title 'Midget Zombie Takeover' and the tagline 'Fight the takeover.'"
+}

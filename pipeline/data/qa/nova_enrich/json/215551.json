@@ -1,0 +1,42 @@
+{
+  "title_text": "The Mutilation Man",
+  "credits_text": "From Andy Copk, Starring Terek Meek & Jim VanScobber",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Written & directed by Andy Copk has crafted a brutal, shocking experimental film... Hollywood is screaming hard to watch but it's impossible to look away.",
+  "mood": [
+    "dread",
+    "gritty",
+    "violent",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.8,
+  "blood_gore": 0.9,
+  "violence": 0.95,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, potentially disturbing imagery.",
+  "description": "A man with sunglasses holds a severed chicken leg above a bloody scene, suggesting a violent and disturbing narrative."
+}

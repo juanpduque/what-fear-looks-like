@@ -1,0 +1,45 @@
+{
+  "title_text": "CURSE OF CROM 2",
+  "credits_text": "CROM'S FURY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "LAST HALLOWEEN HE CAME ALONE. HE BROUGHT FRIENDS! COMING SOON",
+  "mood": [
+    "horror",
+    "fantasy",
+    "action",
+    "supernatural",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and monstrous creatures.",
+  "description": "Poster shows three people facing a large, monstrous green creature with multiple arms, surrounded by smaller creatures."
+}

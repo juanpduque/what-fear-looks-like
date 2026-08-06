@@ -1,0 +1,45 @@
+{
+  "title_text": "The Babysitter",
+  "credits_text": "STARRING BELLA HEBERT, JOHANNA ROSS, LEIGH HUNTER; DIRECTOR OF PHOTOGRAPHY: MIKE O'CONNELL; ORIGINAL SCREENPLAY BY: SCOTT AMFELD; PRODUCED BY: MARIE SCARLETT; WRITTEN AND DIRECTED BY: DAVID LYNCH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THERE'S SOMETHING IN YOUR HOUSE TONIGHT...",
+  "mood": [
+    "dread",
+    "suspense",
+    "horror",
+    "gothic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A woman faces a masked figure holding a knife, with dramatic red lighting and intense expressions, suggesting a horror theme."
+}

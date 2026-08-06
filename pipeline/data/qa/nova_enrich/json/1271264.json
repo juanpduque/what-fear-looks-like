@@ -1,0 +1,50 @@
+{
+  "title_text": "SCREAMS OF THE DEAD",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FROM THE PRODUCERS OF WATCH IF YOU DARE\nFEAR NEVER DIES",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "intense",
+    "terrifying"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "hands",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and a skull, suggesting intense horror themes.",
+  "description": "A poster featuring a skull with blood and multiple hands reaching towards it, with bold red and black text."
+}

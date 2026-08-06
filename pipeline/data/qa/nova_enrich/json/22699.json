@@ -1,0 +1,45 @@
+{
+  "title_text": "ATOM AGE VAMPIRE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "camp",
+    "horror",
+    "erotic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "Contains mild violence and suggestive content.",
+  "description": "A vintage horror poster features a screaming woman chained, a monstrous figure with fangs, and large bat wings against a fiery background."
+}

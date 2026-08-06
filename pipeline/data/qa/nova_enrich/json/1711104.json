@@ -1,0 +1,43 @@
+{
+  "title_text": "AGATHA",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "2026",
+  "mood": [
+    "gothic",
+    "dread",
+    "mysterious",
+    "haunting",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "forest",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man stands in front of a dark, eerie forest with a ghostly silhouette looming behind him. The title 'AGATHA' is prominently displayed."
+}

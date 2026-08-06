@@ -1,0 +1,39 @@
+{
+  "title_text": "RESURRECTION COUNTY",
+  "credits_text": "ADAM HUSS KATHRYN MICHELLE ROBERT MIANO DAYTON KNOLL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "In this town there are no second warnings",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "chains",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and disturbing imagery.",
+  "description": "A distressed woman stands bound in chains in a dark, industrial setting with ominous text and a threatening atmosphere."
+}

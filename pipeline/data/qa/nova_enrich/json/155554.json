@@ -1,0 +1,44 @@
+{
+  "title_text": "DEVON'S GHOST",
+  "credits_text": "Legend of the Bloody Boy",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Only his victims know why...",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A man with a chainsaw stands in front of a house, with a dark, eerie atmosphere and text hinting at a ghostly legend."
+}

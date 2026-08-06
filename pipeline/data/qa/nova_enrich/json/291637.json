@@ -1,0 +1,43 @@
+{
+  "title_text": "NINJA",
+  "credits_text": "CRAZY SUICIDE GIRL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dark",
+    "intense",
+    "violent",
+    "gothic",
+    "edgy"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore",
+    "self-harm"
+  ],
+  "moderation_notes": "Contains graphic violence and themes of self-harm.",
+  "description": "A dramatic poster featuring a woman with intense eyes and dark makeup, overlaid with bold red text and splattered blood effects."
+}

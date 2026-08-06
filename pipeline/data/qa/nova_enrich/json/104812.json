@@ -1,0 +1,36 @@
+{
+  "title_text": "GREAT WHITE DEATH",
+  "credits_text": "JAWS MADE FOR KILLING",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "horror",
+    "action",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "shark",
+      "conf": 1.0
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.8,
+  "animal": 1.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a threatening shark.",
+  "description": "A poster shows a large great white shark attacking a person underwater, with bold red text reading 'GREAT WHITE DEATH' and the tagline 'JAWS MADE FOR KILLING.'"
+}

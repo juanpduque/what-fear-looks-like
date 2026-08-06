@@ -1,0 +1,44 @@
+{
+  "title_text": "KRABAT",
+  "credits_text": "David Kross, Daniel Bruhl, Christian Redl, Robert Stadlober, Paula Kalenberg\nEin Film von Marco Kreuzpaintner",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "other_text": "Alles auf dieser Welt hat seinen Preis.",
+  "mood": [
+    "mysterious",
+    "gothic",
+    "dark",
+    "foreboding",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "crows",
+      "conf": 0.9
+    },
+    {
+      "name": "haunting",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.8,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring three intense characters against a stormy backdrop with crows flying overhead, suggesting a dark, mystical atmosphere."
+}

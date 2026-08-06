@@ -1,0 +1,38 @@
+{
+  "title_text": "THE MONSTERS HUNT AT NIGHT",
+  "credits_text": "A FILM BY JOSEPH PIEKEN BASED ON THE GIANT POPULAR BY STEPHEN KING",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "mysterious",
+    "suspenseful",
+    "dark",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "night",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A silhouette of a person holding an umbrella stands against a dramatic sunset sky with bold title text overlay."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "CAPTIVE OF A DEATH MASK",
+  "credits_text": "KILLER. HERO. VICTIM.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SLASHPROOF PRODUCTIONS.COM",
+  "mood": [
+    "dread",
+    "thriller",
+    "psychological",
+    "suspense",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "mask",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A masked figure with blood splatters holds a large knife, suggesting a thriller or horror theme."
+}

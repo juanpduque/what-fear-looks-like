@@ -1,0 +1,38 @@
+{
+  "title_text": "The Boy Who Cried Werewolf",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "fantasy",
+    "camp",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.9,
+  "animal": 0.1,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic poster features a large, menacing werewolf with wide eyes and an open mouth, with several people in the foreground appearing terrified."
+}

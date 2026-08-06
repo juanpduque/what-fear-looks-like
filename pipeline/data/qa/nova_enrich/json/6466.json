@@ -1,0 +1,43 @@
+{
+  "title_text": "FRIDAY THE 13TH XI",
+  "credits_text": "FREDDY VS JASON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains violent imagery and horror themes.",
+  "description": "A poster featuring two menacing faces with sharp blades, promoting a horror crossover film."
+}

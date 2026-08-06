@@ -1,0 +1,50 @@
+{
+  "title_text": "TALES FROM THE GRAVEYARD",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "spooky",
+    "erotic",
+    "supernatural",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "halloween",
+      "conf": 0.95
+    },
+    {
+      "name": "grave",
+      "conf": 0.85
+    },
+    {
+      "name": "witch",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "occult",
+    "sexual"
+  ],
+  "moderation_notes": "Contains mild sexual suggestiveness and occult themes.",
+  "description": "A woman in a witch hat holds a carved pumpkin with a knife, standing near a grave with a raven and tombstones in a spooky setting."
+}

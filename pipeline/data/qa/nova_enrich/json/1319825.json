@@ -1,0 +1,43 @@
+{
+  "title_text": "MASK of SARNATH",
+  "credits_text": "Music by THROBING GRISTLE\nWritten and Directed by NEIL RUTTENBERG",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EVIL LIVES\nSTUDENT ACADEMY AWARD NOMINEE\nInternationally Acclaimed\n\"required viewing for anyone interested in the occult, sex and violence... an essay on evil, you have been warned!\" - Jeff Whittington, Daily Texan\nA TOW TRUCK PRODUCTION",
+  "mood": [
+    "gothic",
+    "surreal",
+    "occult",
+    "dread",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "occult",
+    "sexual",
+    "violence"
+  ],
+  "moderation_notes": "Contains themes of occult, sexual content, and implied violence.",
+  "description": "A dark poster features bold white text on a black background with a stylized mask and occult themes."
+}

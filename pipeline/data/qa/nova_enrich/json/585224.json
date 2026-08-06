@@ -1,0 +1,39 @@
+{
+  "title_text": "NORDACH MONSTER TERROR",
+  "credits_text": "REC CUT! PRESENTS A FERRY KAUFISCH PRODUCTION STARRING: STEFAN PETROVIC, STEFFEN ROLLE, ALEXANDER ZUPA, MARCEL MARSTERS, FERRY KAUFISCH, STEFANIE ROLLE, JANINA FISCHER, FERRY KAUFISCH, DOMINIK STARCK, FERDY KAUFISCH, COSTEL AGERSAND WRITTEN BY FERRY KAUFISCH, INSPIRED BY THE NORDACH MONSTER LEGEND DIRECTED BY FERRY KAUFISCH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WARNING U.S. Air Force Installation",
+  "mood": [
+    "dread",
+    "suspense",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "terror",
+      "conf": 0.8
+    },
+    {
+      "name": "warning",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied horror and terror themes.",
+  "description": "A dark poster features a blurred figure with text warning of a U.S. Air Force installation and the title 'NORDACH MONSTER TERROR' in bold yellow letters."
+}

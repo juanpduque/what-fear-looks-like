@@ -1,0 +1,41 @@
+{
+  "title_text": "THE PURGATION",
+  "credits_text": "TIFFANY KIEU KATIJOHNSTON KATE DAUPHIN TOM WALSH AN ELAINE CHU FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THERE'S NO PLACE LIKE HELL",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "A woman stands over a bathtub with hands reaching out, in a dark, eerie setting with graffiti and smoke."
+}

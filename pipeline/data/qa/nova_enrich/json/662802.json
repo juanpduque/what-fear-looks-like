@@ -1,0 +1,46 @@
+{
+  "title_text": "BLEED 4 ME",
+  "credits_text": "THIS HALLOWEEN, THE WORLD WILL BLEED STARRING BRINKE STEVENS TIFFANY SHEPIS AND TONYA L HARRIS A JOSTON R. THENEY FILM KILLING TIME ENTERTAINMENT PRESENTS A SINEMA ARTE FILMS/WORKS PRODUCTION STARRING TONYA L HARRIS, BRINKE STEVENS TIFFANY SHEPIS, CORINNE EVANS, PAUL HOWARD MARIANNA NEWELL AND SUSAN HARE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gothic",
+    "violent",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intended for mature audiences.",
+  "description": "A horror movie poster features a woman holding a large knife with blood splatters, set against a dark, eerie background."
+}

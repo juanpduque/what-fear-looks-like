@@ -1,0 +1,40 @@
+{
+  "title_text": "COMMANDO FURY",
+  "credits_text": "JULIET CHAN BERNARD TSUI CELLA KONG YVONNE WANG CATHERINE LAU CHESTER WANG COLOR SCOPE FAMOUS INTERNATIONAL FILMS KANTNER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE GIRLS ARE BRAVE ENOUGH TO FACE RAW VIOLENCE AND HOT RAGE.",
+  "mood": [
+    "action",
+    "intense",
+    "violent",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.95,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action sequences and mild sexual suggestiveness.",
+  "description": "Movie poster shows a group of people in a chaotic battle scene with fire, weapons, and dramatic poses."
+}

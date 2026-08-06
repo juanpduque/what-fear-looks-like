@@ -1,0 +1,46 @@
+{
+  "title_text": "ফিরাগ",
+  "credits_text": "মোযারের কারিয় অনিরুত আহমদ আবানাল সিদ্দিকে যাহানিট",
+  "languages": [
+    "en",
+    "bn"
+  ],
+  "other_text": "A Binge ORIGINAL ভুত্টরম রতু হরিত্র দেয়ালবন্দ",
+  "mood": [
+    "eerie",
+    "haunting",
+    "mysterious",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "blood"
+  ],
+  "moderation_notes": "Contains implied blood and ghostly imagery; suitable for mature audiences.",
+  "description": "A dark, eerie poster features a ghostly hand reaching upward with a foggy background and floating silhouettes, suggesting a supernatural horror theme."
+}

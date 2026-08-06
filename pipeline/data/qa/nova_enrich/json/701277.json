@@ -1,0 +1,41 @@
+{
+  "title_text": "EVIL LITTLE THINGS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TIME TO PLAY",
+  "mood": [
+    "dread",
+    "horror",
+    "suspense",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and horror elements.",
+  "description": "A creepy child peeks through a door with blood on their hand, accompanied by the title 'Evil Little Things' and the tagline 'Time to Play.'"
+}

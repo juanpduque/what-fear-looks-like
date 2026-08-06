@@ -1,0 +1,39 @@
+{
+  "title_text": "GATEWAY",
+  "credits_text": "A FILM BY NIALL OWENS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "occult",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult symbols and a potentially threatening atmosphere.",
+  "description": "A man stands in a dimly lit hallway with red lighting, facing the viewer. The poster features occult symbols and a title 'GATEWAY' at the top."
+}

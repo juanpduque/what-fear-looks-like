@@ -1,0 +1,35 @@
+{
+  "title_text": "THE DEMON RAT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "sci-fi"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains violent imagery with gun violence.",
+  "description": "A poster shows two characters holding guns, facing a large, menacing creature. The title 'THE DEMON RAT' is prominently displayed."
+}

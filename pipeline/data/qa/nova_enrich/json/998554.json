@@ -1,0 +1,46 @@
+{
+  "title_text": "SNOW MONSTER 2",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "大版小子 2 (Dà jià guài 2) \"Bigfoot 2\"",
+  "mood": [
+    "action",
+    "horror",
+    "adventure",
+    "thriller",
+    "fantasy"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.85
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains intense action sequences and mild gore.",
+  "description": "A poster shows a large, hairy monster attacking two people in a jungle, with other creatures and fire in the background."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "THE RISE OF JENGO",
+  "credits_text": "Directed by Joe Wheeler",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"Watch out! Here comes Jengo!\"",
+  "mood": [
+    "dread",
+    "horror",
+    "gothic",
+    "intense",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and violent themes.",
+  "description": "A horror poster featuring a monstrous, demonic figure emerging from a broken wall, with intense and foreboding visuals."
+}

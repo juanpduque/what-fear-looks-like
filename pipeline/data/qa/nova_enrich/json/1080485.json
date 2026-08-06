@@ -1,0 +1,43 @@
+{
+  "title_text": "AMERICAN CANNIBALS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gothic",
+    "erotic",
+    "camp",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "sexual",
+    "nudity"
+  ],
+  "moderation_notes": "Contains implied violence and sexual content, with partial nudity visible.",
+  "description": "A man and woman with red eyes and dark makeup pose together; the woman holds a small doll and has blood near her mouth."
+}

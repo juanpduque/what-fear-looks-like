@@ -1,0 +1,38 @@
+{
+  "title_text": "THE GRAY MAN",
+  "credits_text": "a real life hannibal lecter.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "psychological",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man and a child walk toward an old, abandoned house in a desolate landscape, evoking a sense of mystery and foreboding."
+}

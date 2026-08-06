@@ -1,0 +1,39 @@
+{
+  "title_text": "The Philosophy of Horror: A Symphony of Film Theory",
+  "credits_text": "A film by Péter Lichter and Bori Máté\nmusic: Ádám Márton Horváth / producer: Dóra Nedeczky",
+  "languages": [
+    "en"
+  ],
+  "other_text": "minutwax",
+  "mood": [
+    "dark",
+    "introspective",
+    "theoretical",
+    "haunting",
+    "philosophical"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, moody poster featuring a shadowy figure with a faint face, overlaid with bold white text introducing a film theory work."
+}

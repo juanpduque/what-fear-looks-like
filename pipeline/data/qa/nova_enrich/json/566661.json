@@ -1,0 +1,43 @@
+{
+  "title_text": "PRUDENCE DRIVE",
+  "credits_text": "OPEN SIGN FILMS PRESENTS A TWO TWISTED FILMS PRODUCTION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HILLS JUNGE WOOD BRAKE VARNER VARNER SCHWEITZER ALIE",
+  "mood": [
+    "horror",
+    "thriller",
+    "gothic",
+    "erotic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and suggestive content.",
+  "description": "Movie poster features a woman and a monstrous, smiling man with blood on his face against a dark background with a water tower."
+}

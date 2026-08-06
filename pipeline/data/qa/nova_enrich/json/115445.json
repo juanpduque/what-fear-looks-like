@@ -1,0 +1,42 @@
+{
+  "title_text": "GOATSUCKER",
+  "credits_text": "A FILM BY STEVE HUDGINS\nTHEY WENT FOR A LEGEND... FOUND THEM A NIGHTMARE!\nKIR WEISH, RANDY HARDESY, EMILY FILTZMURICE, NEIL VOWELS, MARSHA CASH, BRANDON SCHAEFER\nPRODUCED & EDITED BY STEVE HUDGINS & R.J. WOODSIDE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BIG BITING PIG PRODUCTIONS",
+  "mood": [
+    "camp",
+    "surreal",
+    "horror",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.5,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A stylized poster features a large skull with faces inside, promoting a horror film titled 'GoatSucker' by Steve Hudgins."
+}

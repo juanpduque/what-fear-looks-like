@@ -1,0 +1,43 @@
+{
+  "title_text": "Scream A Little Dream 3-D",
+  "credits_text": "A FILM BY T.J. MOORE\nMEGAN WACEE • JULIE MENAMARA • WEACHAN BLOOM FLUITT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AWARDS: BEST HORROR FILM, BEST DIRECTOR, BEST ACTRESS, BEST CINEMATOGRAPHY, BEST SCREENPLAY, BEST COSTUME DESIGN, BEST MAKEUP, BEST EDITING, BEST SOUND DESIGN, BEST VISUAL EFFECTS, BEST ORIGINAL SCORE, BEST PRODUCTION DESIGN",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "psychological",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster features three women standing before a large, menacing mask with red accents. The title \"Scream A Little Dream 3-D\" is displayed prominently at the bottom."
+}

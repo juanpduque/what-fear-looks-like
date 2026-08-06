@@ -1,0 +1,47 @@
+{
+  "title_text": "让子鬼",
+  "credits_text": "LET IT GHOST",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "10月27日",
+  "mood": [
+    "supernatural",
+    "thriller",
+    "gothic",
+    "psychological",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild violent imagery and occult themes.",
+  "description": "A group of people confronts a ghostly figure in a dark, eerie setting, with intense expressions and dramatic lighting."
+}

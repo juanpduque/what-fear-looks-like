@@ -1,0 +1,51 @@
+{
+  "title_text": "SATANIC MEAT CLEAVER MASSACRE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "violent",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    },
+    {
+      "name": "occult",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic violence and occult themes.",
+  "description": "A zombie-like figure holds a cleaver, covered in blood, against a dark, eerie background."
+}

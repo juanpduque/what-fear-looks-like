@@ -1,0 +1,46 @@
+{
+  "title_text": "THE ASWANG CHRONICLES",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "action",
+    "supernatural",
+    "intense",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and horror elements.",
+  "description": "A man battles a monstrous creature in a dark, smoky environment. The poster features intense action and horror themes."
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "GRIM REAPER 3",
+  "credits_text": "GEORGE STOVER, TARA BIXLER, JED BRIAN, MEL HEFLIN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MOONLIGHT FILMS Presents: A JAMAICAN MAIR Film. Music by VIRCH FRANKLIN. Lead Effect and Makeup Artist DERON MORGAN. Associate Producers: TARA BIXLER, PATTI DANNER, DERON MORGAN. Co-Produced by JAMES STEVENSON. Written, Produced and Directed by JAMESIAN MAIR.",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "camp",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery including blood and monstrous elements.",
+  "description": "Poster features a woman and a masked figure with a skull design, promoting the horror film 'Grim Reaper 3.'"
+}

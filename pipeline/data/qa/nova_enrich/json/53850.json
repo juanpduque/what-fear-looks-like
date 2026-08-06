@@ -1,0 +1,45 @@
+{
+  "title_text": "BASILISK: The Serpent King",
+  "credits_text": "YANCY BUTLER JEREMY LONDON CLEAVANT DERRICKS STEPHEN FURST",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AN ECLIPSE AWAKENS AN ANCIENT MONSTER WHOSE GAZE TURNS FLESH TO STONE. NO ONE KNOWS HOW TO STOP IT ... BUT ONE WOMAN KNOWS HOW TO CONTROL IT.",
+  "mood": [
+    "dread",
+    "gothic",
+    "fantasy",
+    "horror",
+    "mythic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 1.0,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and monstrous imagery.",
+  "description": "Movie poster features a man and woman with a dragon-like creature. Tagline warns of an ancient monster whose gaze turns flesh to stone."
+}

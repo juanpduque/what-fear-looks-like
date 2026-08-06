@@ -1,0 +1,46 @@
+{
+  "title_text": "ASYLUM of the DAMNED",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FROM THE SPECIAL EFFECTS CREATORS OF \"JEEPERS CREEPERS\" \nEveryone pays for their sin.",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "supernatural",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "occult",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and implied violence.",
+  "description": "A poster features a menacing demon with horns and fiery wings, looming over a sacrificial altar with flames below."
+}

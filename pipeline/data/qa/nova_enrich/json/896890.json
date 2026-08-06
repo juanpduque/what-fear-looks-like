@@ -1,0 +1,49 @@
+{
+  "title_text": "BELLA AND THE SLASHER",
+  "credits_text": "CHEROKEE ROSE CASTRO MATTHEW MATTHEWS SPENCER KLEE CHANDLER MATT PATTERSON DREW SUNNY VAN DYCKE ALEXIS CHANDLER ANTONIO M MARCH JUSTIN R REICH MATT PATTERSON MATTHEW M BLAKE SHADWELL IRONIC IRONIC JUSTIN R REICH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "supernatural",
+    "gothic",
+    "suspense",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "ghost",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "Poster features three characters facing a large, monstrous figure under a full moon, with a haunted house in the background."
+}

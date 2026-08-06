@@ -1,0 +1,46 @@
+{
+  "title_text": "DEAD OF FRIGHT",
+  "credits_text": "FEATURING SAM COOPER KYLE WILLIAMS CHARLETON BAZLEY LAURA CROUCH LUKE SUTTON AND THE ZOMBIES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THINK YOU'VE EVER HAD A CRAZY NIGHT OUT?",
+  "mood": [
+    "camp",
+    "horror",
+    "comedy",
+    "surreal",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and implied violence.",
+  "description": "The poster features five characters with exaggerated expressions, promoting a comedic horror film titled 'Dead of Fright.'"
+}

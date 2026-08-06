@@ -1,0 +1,50 @@
+{
+  "title_text": "AWARE OF THE WOLF",
+  "credits_text": "LAS PRODUCTIONS PRESENTS \"AWARE OF THE WOLF\" TONY MURPHY SUZANNE JOHNSON KATIE RAISON JENN NOBLE JEFF CLARK JR. JULIA ASHLEY LASEFF KRISTAL DE LEON YAMSHI KRISHNA ACHUTHA KELLY FINE WRITTEN & DIRECTED BY JOSHUA NELSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "psychological",
+    "supernatural",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.75
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 1.0,
+  "animal": 0.9,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including blood and monstrous imagery.",
+  "description": "Poster features a man with a wolf-like creature merging with his face, blood splatters, and intense red lighting, suggesting a horror theme."
+}

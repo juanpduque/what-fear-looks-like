@@ -1,0 +1,45 @@
+{
+  "title_text": "DEADWOOD PVRK",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE WOOD PARK",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood, suitable for mature audiences.",
+  "description": "A poster features a man with a distressed expression, overlaid with a bloody face and a rustic house, set against a dark, eerie background with a sign reading 'The Wood Park.'"
+}

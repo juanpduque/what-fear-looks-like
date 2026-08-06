@@ -1,0 +1,49 @@
+{
+  "title_text": "MADHOUSE",
+  "credits_text": "From the inner depths of a psychotic mind comes three new tales of terror!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ALL NEW! edgar allan poe's",
+  "mood": [
+    "gothic",
+    "terror",
+    "psychotic",
+    "supernatural",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild horror elements and psychic themes.",
+  "description": "A poster featuring a ghostly face emerging from smoke with a bat-winged figure below, promoting new horror tales by Edgar Allan Poe."
+}

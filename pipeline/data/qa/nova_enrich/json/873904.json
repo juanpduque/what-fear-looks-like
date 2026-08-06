@@ -1,0 +1,37 @@
+{
+  "title_text": "MONSTERS OF WAR",
+  "credits_text": "THERE'S NOWHERE TO HIDE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "action",
+    "sci-fi",
+    "thriller",
+    "post-apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 1.0
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 1.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and implied violence.",
+  "description": "A family faces a giant spider monster in a post-apocalyptic setting, with smoke and fire in the background."
+}

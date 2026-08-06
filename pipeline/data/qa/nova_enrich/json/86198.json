@@ -1,0 +1,38 @@
+{
+  "title_text": "OH! MY ZOMBIE MERMAID",
+  "credits_text": "The legendary Japanese wrestler goes to the Zombie Castle",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A MIXTURE OF ACTION, HORROR, THRILLER, DRAMA, AND... WRESTLING!!",
+  "mood": [
+    "camp",
+    "erotic",
+    "surreal",
+    "action",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.1,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "sexual",
+    "violence"
+  ],
+  "moderation_notes": "Contains partial nudity and suggestive imagery.",
+  "description": "Movie poster features a mermaid, a wrestler, and various characters with bold text and vibrant colors, suggesting a mix of action, horror, and drama."
+}

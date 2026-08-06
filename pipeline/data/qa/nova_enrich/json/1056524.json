@@ -1,0 +1,50 @@
+{
+  "title_text": "鬼心 18",
+  "credits_text": "実録！見られた恐怖映像集",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "「霊的体験を信じない人でも恐ろしく感じられる恐怖映像集」",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "supernatural",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and disturbing themes.",
+  "description": "A poster shows a dark alley with a shadowy figure and disturbing faces, promoting a horror anthology film."
+}

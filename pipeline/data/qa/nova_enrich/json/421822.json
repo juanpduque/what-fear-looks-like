@@ -1,0 +1,47 @@
+{
+  "title_text": "HORROR HOTEL",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE MOVIE",
+  "mood": [
+    "eerie",
+    "mysterious",
+    "haunting",
+    "gothic",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "hotel",
+      "conf": 0.9
+    },
+    {
+      "name": "night",
+      "conf": 0.8
+    },
+    {
+      "name": "sign",
+      "conf": 0.95
+    },
+    {
+      "name": "neon",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A neon sign reading 'HORROR HOTEL' points downward against a dark night sky, with the words 'THE MOVIE' below."
+}

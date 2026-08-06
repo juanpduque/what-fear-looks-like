@@ -1,0 +1,42 @@
+{
+  "title_text": "RANDOM ACTS OF VIOLENCE",
+  "credits_text": "AN ASHLEY CAHILL PICTURE. WITH REBECCA DAYAN, JENNIFER MURRAY, JAKE HOFFMAN, KIRSTEN DUNST",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "thriller",
+    "psychological",
+    "disturbing",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.95,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; may be disturbing to some viewers.",
+  "description": "A man with blood on his face is shown against a cityscape backdrop, with the title and cast listed."
+}

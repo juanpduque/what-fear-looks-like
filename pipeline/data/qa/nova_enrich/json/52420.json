@@ -1,0 +1,46 @@
+{
+  "title_text": "Hidden Floor",
+  "credits_text": "KIM SOO-HYUNG KIM YE-RIN \"HIDDEN FLOOR\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FOUR HORROR TALES\nPeople are still living in there!\nDREADFUL, SAD, AND TERRIFYING",
+  "mood": [
+    "dread",
+    "terrifying",
+    "haunting",
+    "gothic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild suggestions of violence and blood, suitable for mature audiences.",
+  "description": "A poster shows a close-up of an eye with blood, a shadowy figure in a dark room, and the title \"Hidden Floor\" with a tagline about living in a place."
+}

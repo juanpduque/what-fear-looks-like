@@ -1,0 +1,39 @@
+{
+  "title_text": "ABDUCTION",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and implied violence.",
+  "description": "A man holds a large gun with planes and fire in the background, suggesting a high-stakes action scenario."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "DEATH DUMMY",
+  "credits_text": "There's a new Reaper in town. You can't escape...",
+  "languages": [
+    "en"
+  ],
+  "other_text": "VHS NFB BRANO 88+ Horror",
+  "mood": [
+    "horror",
+    "thriller",
+    "suspense",
+    "dread",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and violent themes.",
+  "description": "A VHS tape cover featuring a dark, eerie figure with bold red text and a warning tagline, suggesting a horror theme."
+}

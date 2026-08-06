@@ -1,0 +1,37 @@
+{
+  "title_text": "The Green Monster",
+  "credits_text": "if the food don't kill ya... the green monster will!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "KEEP",
+  "mood": [
+    "dread",
+    "gritty",
+    "survival",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "Poster features a man and woman with a green dumpster labeled 'KEEP,' and a fallen person, suggesting a horror theme."
+}

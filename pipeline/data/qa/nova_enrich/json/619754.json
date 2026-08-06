@@ -1,0 +1,50 @@
+{
+  "title_text": "WITHIN the WOODS of UNDEAD COUNTY",
+  "credits_text": "GABRIELLA HARRY, MICHAEL MOTYL, CORY HANDELONG, ANGELA MCCORMICK\nCLEAR MOTION PRODUCTIONS\n\"PONTASTIC!\" LAUREN FOX LAURIE V. GRIFFIN, NICOLAS PAUL PONTOSKI\n\"HARRY MICHAEL, CORY HANDELONG, AND ANGELA MCCORMICK, WITHIN THE WOODS OF UNDEAD COUNTY\"\n\"CHRIS HARRY, MICHAEL MOTYL, CARY REYNOLDS, LISA MCCORMICK A GROUP\"\n\"NICOLAS PAUL PONTOSKI, JENNIFER NICHOLAS, PAUL AUSTIN STEPHENS\"\n\"JESSICA SHELBY, LARK VON ZURMUHLE, RACHEL RENTZEL, JORDAN PONTOSKI, GABRIELLA HARRY\"\n\"JAMES HARPER, JORDAN PONTOSKI, AUSTIN STEPHENS, NICHOLAS PAUL PONTOSKI\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"YOU'VE STEPPED INTO THE PERSON WHOLE TIME THOUGHT IT WAS SAFE. THEY'RE NOT GOING TO LET YOU GO.\"",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "forest",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "monster",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.5,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including blood and implied violence.",
+  "description": "A horror movie poster featuring a fiery, monstrous face emerging from dark woods, with cast and production credits listed below."
+}

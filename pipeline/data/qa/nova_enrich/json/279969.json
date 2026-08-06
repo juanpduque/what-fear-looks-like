@@ -1,0 +1,42 @@
+{
+  "title_text": "ZOMBiO2",
+  "credits_text": "UM FILME DE PETTER BAIESTORF",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "other_text": "QUANDO O CÉU E A TERRA FAREM CRISE OS MORTOS VERRÃO SOBA A TERRA E OS VIVOS FARÃO ORÇÃ DE VINGANÇA COM LAMBRINHAS CELADAS! CARLOS REITENBACH MELHOR FILME DE HORROR DE 2013! DENO DE VERGONHA PARA OS AMANTES DE HORROR EM AMÉRICA!",
+  "mood": [
+    "horror",
+    "apocalyptic",
+    "zombie",
+    "dystopia"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore, suitable for mature audiences.",
+  "description": "Poster features two zombie-like figures with decayed faces and green skin, set against a dark background with bold red and green text."
+}

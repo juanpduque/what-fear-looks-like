@@ -1,0 +1,37 @@
+{
+  "title_text": "THE DEMOLISHER",
+  "credits_text": "WHEN HE FINDS YOU... RUN.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "action",
+    "thriller",
+    "dystopian",
+    "gritty"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster implies potential violence through the tagline and visual cues.",
+  "description": "A silhouette of a armored figure stands against a blue background with a cityscape, accompanied by bold text and a dramatic tagline."
+}

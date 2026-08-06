@@ -1,0 +1,45 @@
+{
+  "title_text": "TOMBS OF THE BLIND DEAD",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "JANG",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains horror themes and occult imagery.",
+  "description": "A woman screams as she is confronted by skeletal, blind monsters in a dark, eerie setting."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "DEAD ANT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "S Q N C G R",
+  "mood": [
+    "horror",
+    "gritty",
+    "violent",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.2,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and violent imagery.",
+  "description": "Poster features four intense faces with blood splatters and the title 'DEAD ANT' prominently displayed."
+}

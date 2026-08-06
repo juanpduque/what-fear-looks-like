@@ -1,0 +1,47 @@
+{
+  "title_text": "BRAM STOKER'S BURIAL OF THE RATS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "erotic",
+    "horror",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.7,
+  "animal": 0.9,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.7,
+  "sensitive": [
+    "nudity",
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains partial nudity and suggestive imagery.",
+  "description": "A poster shows a large, menacing rat with a skull-like face, a woman in revealing clothing, and a graveyard backdrop with lightning."
+}

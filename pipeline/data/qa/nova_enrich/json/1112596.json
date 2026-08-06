@@ -1,0 +1,47 @@
+{
+  "title_text": "顔物聲影",
+  "credits_text": "宝験！僷くれた攻撃像影物",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "顔物聲影もできる！家庭顔物できない家庭影物像画",
+  "mood": [
+    "gothic",
+    "horror",
+    "psychological",
+    "supernatural",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic blood and disturbing imagery.",
+  "description": "A poster features a haunted house backdrop with a bloody face and eerie text, suggesting psychological horror themes."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "DEMON HAUNT",
+  "credits_text": "TED V. MIKELS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "OMENS · EXORCISM · SATAN'S LEGIONS ATTACK!",
+  "mood": [
+    "horror",
+    "supernatural",
+    "dread",
+    "intense",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.4,
+  "blood_gore": 0.1,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult themes and implied violence.",
+  "description": "A man and woman face a monstrous demon amidst flames and dark birds, with bold title and tagline text overlay."
+}

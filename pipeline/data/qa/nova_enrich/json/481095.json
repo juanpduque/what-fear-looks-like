@@ -1,0 +1,41 @@
+{
+  "title_text": "NIGHT VISIT",
+  "credits_text": "a film by Kenneth J. Hall\nstarring Lynn Lowry, Chuck Williams and David Lee Brown\nDirector of Photography: Michael Su\nEditors: Aaron Cohen, Kenneth J. Hall\nMusic: Michael G. Burton\nExecutive Producer: David Hall\nWritten and Directed by: Kenneth J. Hall",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FEEL THE FEAR\nLynn Lowry in",
+  "mood": [
+    "horror",
+    "suspense",
+    "psychological",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "Movie poster features a distressed woman with long hair screaming, with a shadowy figure in the background. Title and credits are displayed prominently."
+}

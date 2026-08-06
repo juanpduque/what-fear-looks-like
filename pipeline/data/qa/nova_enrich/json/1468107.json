@@ -1,0 +1,37 @@
+{
+  "title_text": "Body(s)",
+  "credits_text": "Face Your Inner Demon",
+  "languages": [
+    "en"
+  ],
+  "other_text": "David Steiger, Leah Karpel",
+  "mood": [
+    "dread",
+    "psychological",
+    "disturbing",
+    "introspective"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and a disturbing facial expression indicating psychological horror.",
+  "description": "A man lies on the ground with a distressed expression and blood on his face, suggesting inner turmoil and psychological horror."
+}

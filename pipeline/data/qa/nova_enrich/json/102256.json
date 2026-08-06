@@ -1,0 +1,46 @@
+{
+  "title_text": "MARIANNE",
+  "credits_text": "JINTIN ANDERZON, THOMAS HEDENGRAN, PETER STORMARE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "En nordisk psykologisk thriller, ARETS BÄSTA DEBUTFILM, EN AV 2011 ARS BÄSTA FILMER",
+  "mood": [
+    "gothic",
+    "psychological",
+    "thriller",
+    "dread",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood, suitable for mature audiences.",
+  "description": "Movie poster features a skull, four people, and a house with the title 'Marianne' prominently displayed."
+}

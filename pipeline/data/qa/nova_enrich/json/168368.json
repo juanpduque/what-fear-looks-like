@@ -1,0 +1,40 @@
+{
+  "title_text": "THE DOORWAY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "dread",
+    "surreal",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and intense horror imagery.",
+  "description": "A woman peers through an open doorway into a fiery, ghostly face, suggesting a horror theme."
+}

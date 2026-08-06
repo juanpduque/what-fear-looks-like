@@ -1,0 +1,46 @@
+{
+  "title_text": "HAZMAT",
+  "credits_text": "REVENGE HAS A NEW FACE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gritty",
+    "post-apocalyptic",
+    "survival",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "biohazard",
+      "conf": 0.9
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.8
+    },
+    {
+      "name": "hazard",
+      "conf": 0.85
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and biohazard themes.",
+  "description": "A hazmat-suited figure holds an axe in a dark, industrial setting with chains and a biohazard symbol."
+}

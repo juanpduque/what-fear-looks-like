@@ -1,0 +1,50 @@
+{
+  "title_text": "Saint Dracula 3D",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A FALLEN ANGEL IS WHOM YOU NAME A SAINT. I HAD THE TOUGHEST FALL.",
+  "mood": [
+    "gothic",
+    "dramatic",
+    "haunting",
+    "mysterious",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains themes of violence and occult imagery.",
+  "description": "A dark, gritty poster features a shadowy figure with a crown, set against a wooden background with dramatic text overlay."
+}

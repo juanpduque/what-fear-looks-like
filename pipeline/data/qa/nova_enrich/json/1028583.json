@@ -1,0 +1,49 @@
+{
+  "title_text": "ISLEEN PINES",
+  "credits_text": "Halloween Will Never Be The Same!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "spooky",
+    "fantasy",
+    "humorous",
+    "gothic",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    },
+    {
+      "name": "house",
+      "conf": 0.5
+    },
+    {
+      "name": "forest",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A colorful comic-style poster features a group of quirky characters, including ghosts and monsters, in a spooky Halloween setting with vibrant artwork."
+}

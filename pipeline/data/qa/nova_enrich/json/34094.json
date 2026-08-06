@@ -1,0 +1,40 @@
+{
+  "title_text": "HIDE AND CREEP",
+  "credits_text": "Looks like it's going to be one of those days.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Secret agent. Flying saucer. Bloodthirsty zombies.",
+  "mood": [
+    "horror",
+    "camp",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including blood and implied violence.",
+  "description": "A poster features a person wearing a distressed t-shirt with bold text, set against a dark background with horror-themed taglines."
+}

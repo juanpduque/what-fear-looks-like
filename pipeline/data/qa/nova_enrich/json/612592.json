@@ -1,0 +1,50 @@
+{
+  "title_text": "DOLLS",
+  "credits_text": "WHEN YOU LOOK AWAY THEY PLAY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "creepy",
+    "haunting",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "doll",
+      "conf": 0.95
+    },
+    {
+      "name": "haunting",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "house",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild violent imagery and occult themes.",
+  "description": "A poster shows a creepy doll with other eerie figures in a dark, haunted house setting."
+}

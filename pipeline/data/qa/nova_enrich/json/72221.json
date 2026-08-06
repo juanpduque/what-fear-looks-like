@@ -1,0 +1,40 @@
+{
+  "title_text": "Lost Hearts",
+  "credits_text": "Directed by Lawrence Gordon Clark",
+  "languages": [
+    "en"
+  ],
+  "other_text": "M.R. James'",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "haunting",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "occult",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes which may be sensitive to some audiences.",
+  "description": "A foggy road scene with a horse-drawn carriage, evoking a gothic and mysterious atmosphere."
+}

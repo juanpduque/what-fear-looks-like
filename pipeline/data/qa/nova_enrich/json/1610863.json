@@ -1,0 +1,43 @@
+{
+  "title_text": "ONE FOR THE ROAD",
+  "credits_text": "A Film By Jason Figueiredo",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WHATEVER YOU DO, DON'T GO UP THE ROAD TO JERUSALEM LOT. ESPECIALLY NOT AFTER DARK.\nCOMING SOON",
+  "mood": [
+    "dread",
+    "gothic",
+    "mysterious",
+    "foreboding",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A black-and-white poster features a hooded figure with glowing eyes, a Jeep, and three silhouetted people in a snowy landscape."
+}

@@ -1,0 +1,59 @@
+{
+  "launched_at": "2026-08-05T13:42:26Z",
+  "instance_id": "i-0b9c0b1f39d7c1f1c",
+  "public_ip": "44.211.77.5",
+  "instance_type": "c5.9xlarge",
+  "ami": "ami-052355af2a014bd2c",
+  "name_tag": "wflike-vision-gap",
+  "bucket": "sagemaker-studio-a5572760",
+  "prefix": "wflike-vision-gap",
+  "region": "us-east-1",
+  "iam_profile": "wflike-ec2-train",
+  "n_todo": 27359,
+  "gap": {
+    "U": 68011,
+    "local_posters": 49559,
+    "s3_manifest_ok_exists": 61435,
+    "have_poster": 65201,
+    "U_with_poster": 63362,
+    "U_without_poster": 4649,
+    "masters_n": 37842,
+    "gap_per_layer": {
+      "faces_v2": 27359,
+      "census": 27359,
+      "attributes": 27359,
+      "segmentation": 27359,
+      "typography": 27359,
+      "medium": 27359,
+      "clip_embeddings": 27359
+    },
+    "union_todo": 27359,
+    "local_todo": 11717,
+    "s3_only_todo": 15642,
+    "note": "All 7 layers currently coextensive at essay 37842; same gap set."
+  },
+  "pipelines": [
+    "faces_v2",
+    "attributes",
+    "clip_embeddings",
+    "census",
+    "typography",
+    "medium",
+    "segmentation"
+  ],
+  "medium_path": "clip_medium.py (canonical medium.csv p_painted); Custom Labels not used (StartProjectVersion + different schema)",
+  "gpu_note": "Sandbox G/VT On-Demand vCPU=0; CPU c5.9xlarge. Seg ~8-12h ETA for ~27k; clip_embed ~1h; faces+attrs ~2-4h.",
+  "monitor": {
+    "progress": "aws s3 cp s3://sagemaker-studio-a5572760/wflike-vision-gap/results/PROGRESS.json -",
+    "log": "aws s3 cp s3://sagemaker-studio-a5572760/wflike-vision-gap/results/vision_gap_aws.log -",
+    "ls": "aws s3 ls s3://sagemaker-studio-a5572760/wflike-vision-gap/results/"
+  },
+  "pull": "AWS_PROFILE=sandbox bash pipeline/aws/pull_vision_gap.sh",
+  "protect_names": [
+    "wflike-imdb-posters",
+    "wflike-imdb-selenium",
+    "wflike-owlv2-backfill",
+    "wflike-community-72k",
+    "wflike-nova-enrich"
+  ]
+}

@@ -1,0 +1,43 @@
+{
+  "title_text": "THE DOOR",
+  "credits_text": "EVGENY SEREBRENIKOV SCENARIO & FILM \"THE DOOR\" RACHEL CRUZ JOSHUA HUNTRESS REAL SPAGHETTI MIKE MORRISO KILE MORRISO KYLE MORRISO RACHEL CRUZ BENJAMIN KAZAKOV RACHEL CRUZ KYLE MORRISO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EVGENYCINEREMONY.COM @EVGENYCINEREMONY",
+  "mood": [
+    "mysterious",
+    "haunting",
+    "psychological",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "door",
+      "conf": 0.95
+    },
+    {
+      "name": "shadow",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.1,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A stark black and white poster features bold text \"THE DOOR\" with a shadowy figure standing in an open doorway against a dark background."
+}

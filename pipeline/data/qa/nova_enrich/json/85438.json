@@ -1,0 +1,44 @@
+{
+  "title_text": "PARANORMAL EXPERIENCE",
+  "credits_text": "FROM THE PRODUCERS OF THE ORPHANGE AND JULIA'S EYES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ENTER THE DARKNESS... EXPERIENCE THE FEAR",
+  "mood": [
+    "dread",
+    "terror",
+    "suspense",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains horror elements and implied violence.",
+  "description": "A poster shows a monstrous face and a hand gripping a weapon, with chains and hooks in the background, promoting a horror film."
+}

@@ -1,0 +1,38 @@
+{
+  "title_text": "THE PUPPET ASYLUM",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dramatic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "puppet",
+      "conf": 0.85
+    },
+    {
+      "name": "dramatic",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic poster features a man with horns and a puppet, set against a dark, intense background with bold red text reading 'THE PUPPET ASYLUM.'"
+}

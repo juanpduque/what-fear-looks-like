@@ -1,0 +1,38 @@
+{
+  "title_text": "HAPPY MEAT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Saving the world, one bite at a time. This film contains: Violence, Nudity, Adult Themes, Strong Language, Horror, Profanity",
+  "mood": [
+    "surreal",
+    "dark humor",
+    "provocative",
+    "controversial"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.8,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "nudity",
+    "adult themes"
+  ],
+  "moderation_notes": "Contains themes of violence and nudity; may not be suitable for all audiences.",
+  "description": "Poster features a man with a cow, with bold green text reading 'HAPPY MEAT' and a tagline about saving the world."
+}

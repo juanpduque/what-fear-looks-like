@@ -1,0 +1,50 @@
+{
+  "title_text": "CELL COUNT",
+  "credits_text": "JODEE ARON ROBERT WOODS MICHAEL FRANK PRODUCTIONS POLITICIZED PICTURES ERIC FREEMAN CHRISTOPHER HOYNE BOBBY HALLER BALDWIN ERIC LIN MARC RAIMONDE VANCE VOSSER BLAZENA BLACK JOE FREEMAN ANTHONY SOLOFRA JESSICA ROSE JOHN BALDWIN SCOTT CASSIDY JOSH KELLY JIMMY LEE JOHAN GUYEN-DUVAL LYNDA LAHTI \"THE SAGE\" LENA FRANKEN \"LADY\" COOD \"TOOBIE\" J. FELTMAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IT'S WHAT'S ON THE INSIDE THAT COUNTS...",
+  "mood": [
+    "dread",
+    "survival",
+    "confinement",
+    "horror",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    },
+    {
+      "name": "confinement",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A group of people confront a grotesque, monstrous creature in a confined, industrial setting, with weapons and intense expressions."
+}

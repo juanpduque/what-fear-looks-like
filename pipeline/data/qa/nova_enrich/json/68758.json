@@ -1,0 +1,38 @@
+{
+  "title_text": "HAUNTED",
+  "credits_text": "A VIKRAM BHATT FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BVF Films and DAB Motion Pictures Present",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "haunted_house",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A shadowy hand looms over a lone figure standing at the end of a dimly lit staircase, evoking a sense of impending horror."
+}

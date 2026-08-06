@@ -1,0 +1,49 @@
+{
+  "title_text": "AMITYVILLE SCARECROW",
+  "credits_text": "EVIL STILL REIGNS IN AMITYVILLE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "haunting",
+    "eerie",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.6
+    },
+    {
+      "name": "crows",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.6,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and supernatural horror imagery.",
+  "description": "A haunted house at night with crows and a shadowy figure, under a full moon, evoking a spooky atmosphere."
+}

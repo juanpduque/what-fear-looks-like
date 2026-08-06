@@ -1,0 +1,46 @@
+{
+  "title_text": "YET!",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "dread",
+    "thriller",
+    "intense",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A poster shows a monstrous creature with sharp teeth and a terrified person amidst a rainy, stormy scene with blood splatters."
+}

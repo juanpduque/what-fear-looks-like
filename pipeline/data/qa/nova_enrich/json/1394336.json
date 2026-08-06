@@ -1,0 +1,49 @@
+{
+  "title_text": "",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.65
+    }
+  ],
+  "weapon": 0.1,
+  "monster": 0.95,
+  "person": 0.3,
+  "animal": 0.2,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains intense horror imagery with monstrous creatures and unsettling themes.",
+  "description": "A collage of eerie, gothic imagery featuring monstrous creatures, shadowy figures, and haunting faces in a dark, surreal setting."
+}

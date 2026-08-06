@@ -1,0 +1,51 @@
+{
+  "title_text": "バンディング フェイズ 4",
+  "credits_text": "",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "other_text": "自刑な動画に消ちた家庭を表現したならば、実的にある家庭影間を引き出します！",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "haunting",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.95
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "torii_gate",
+      "conf": 0.95
+    },
+    {
+      "name": "crow",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.3,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains supernatural horror themes and implied violence.",
+  "description": "A dark poster shows a weathered torii gate over water with ghostly hands reaching upward and crows flying above."
+}

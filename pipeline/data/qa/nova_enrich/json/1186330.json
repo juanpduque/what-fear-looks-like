@@ -1,0 +1,46 @@
+{
+  "title_text": "POSSESSED INTERNAL",
+  "credits_text": "UN FILME DE RAFAEL CIPRIANI \"POSSESSED INTERNAL\" PRODUÇÃO POR RENAN CIPRIANI RAFAEL CIPRIANI E MELINE CAMILLO ESTRELANDO RENAN CIPRIANI ALESSANDRA BARILI JENIFER POLETTO GUILLERMO REICH SABRINA FRABOJO ARTUR HABER CAMP MELINE CAMILLO E EDUARDO GAYAGUA TRILHA SONORA ORIGINAL COMPOSTA POR CIPRIANI BROTHERS MÚSICA DE ABERTURA \"TERASE HUMAN RAGE\" COMPOSTA E TOCADA POR VALIUM ESCRITO E DIREGI DO POR RAFAEL CIPRIANI.",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "SANTIAGO HORROR SELECCIÓN OFICIAL OFFICIAL SELECTION FILMÓPICO INTERNATIONAL ART VISUAL AND FILM FESTIVAL 2021",
+  "mood": [
+    "horror",
+    "psychological",
+    "disturbing",
+    "intense",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and disturbing imagery.",
+  "description": "A dark poster features a group of terrified individuals with a large chainsaw, suggesting a horror film. The title \"Possessed Internal\" looms above in bold red letters."
+}

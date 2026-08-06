@@ -1,0 +1,43 @@
+{
+  "title_text": "黄黄起起 Z",
+  "credits_text": "2013-1-26 不当而建",
+  "languages": [
+    "zh"
+  ],
+  "other_text": "打打啦去你的火哥！",
+  "mood": [
+    "horror",
+    "action",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "vehicle",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and supernatural elements.",
+  "description": "A woman stands in front of a truck with a monstrous hand gripping it, set against a stormy backdrop with flames and ruins."
+}

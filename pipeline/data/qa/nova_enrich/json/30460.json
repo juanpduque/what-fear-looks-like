@@ -1,0 +1,44 @@
+{
+  "title_text": "THE LIVING CORPSE",
+  "credits_text": "Dracula in Pakistan!",
+  "languages": [
+    "en",
+    "ur"
+  ],
+  "other_text": "تزوار",
+  "mood": [
+    "horror",
+    "camp",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.4,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild horror themes, no explicit violence or gore depicted.",
+  "description": "A poster shows a man in a suit holding a weapon, with a monstrous face above and bats in the background, titled 'The Living Corpse: Dracula in Pakistan!'"
+}

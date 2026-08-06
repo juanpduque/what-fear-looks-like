@@ -1,0 +1,5 @@
+validate_corpus — layers=[1, 3]  data=/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data
+
+=== CAPA 1 (fail hard) ===
+
+[FAIL] capa 1: 2 ids de excluded_* siguen en posters.csv (ej. [640402, 681429]). Corre: python3 apply_exclusions.py

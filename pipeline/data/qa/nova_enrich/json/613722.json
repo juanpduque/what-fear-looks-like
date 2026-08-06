@@ -1,0 +1,40 @@
+{
+  "title_text": "BULLETS OF JUSTICE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "post-apocalyptic",
+    "violent",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.1,
+  "person": 0.9,
+  "animal": 0.2,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and violent imagery.",
+  "description": "A group of characters, including a man with a gun, face off against a zombie-like figure amidst explosions and flames."
+}

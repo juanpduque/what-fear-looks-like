@@ -1,0 +1,38 @@
+{
+  "title_text": "THE PHANTOM CARRIAGE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "melancholy",
+    "mysterious",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.8,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A silhouette of a horse-drawn carriage with a hooded figure against a dark, moody background, accompanied by a streetlamp."
+}

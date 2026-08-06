@@ -1,0 +1,42 @@
+{
+  "title_text": "DEATHMETAL",
+  "credits_text": "IT WILL RIFF YOU TO SHREDS.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "aggressive",
+    "intense",
+    "dark",
+    "metal",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "text",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains violent imagery and occult symbolism.",
+  "description": "A muscular figure stands on skulls, holding a guitar, with flames and lightning in the background. The poster advertises a metal album with bold typography."
+}

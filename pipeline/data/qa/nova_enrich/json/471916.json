@@ -1,0 +1,38 @@
+{
+  "title_text": "Jaws of the Shark",
+  "credits_text": "Directed by Gustav Ljungdahl\nKell Eriksson\nElsa Storgards\nPaul Willers",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "camp",
+    "horror",
+    "comedy",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows four characters in a forest setting with a large shark creature. The title \"Jaws of the Shark\" is prominently displayed."
+}

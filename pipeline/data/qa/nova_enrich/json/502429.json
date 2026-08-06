@@ -1,0 +1,41 @@
+{
+  "title_text": "THE STREETS RUN RED",
+  "credits_text": "UNGOVERNABLE FILMS PRESENT'S",
+  "languages": [
+    "en"
+  ],
+  "other_text": "UNGOVERNABLE FILMS",
+  "mood": [
+    "dread",
+    "gritty",
+    "violent",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic depictions of violence and blood.",
+  "description": "A poster showing a road with a skeleton erupting from the ground, blood splattered, and bold red text reading \"The Streets Run Red.\""
+}

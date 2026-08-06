@@ -1,0 +1,46 @@
+{
+  "title_text": "BLOOD WOODS",
+  "credits_text": "THERE'S SOMETHING EVIL HIDING IN BLOOD WOODS\nDIRECTED BY JOHN REIGN\nFROM AWARD-WINNING SCREENWRITER\nGENO MCRAHEE\nPOLICE STATION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "forest",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and themes of horror and violence.",
+  "description": "A poster featuring a terrified face with an open mouth set against a dark, eerie forest backdrop with a fiery glow in the distance."
+}

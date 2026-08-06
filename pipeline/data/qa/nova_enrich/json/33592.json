@@ -1,0 +1,42 @@
+{
+  "title_text": "WHITE OF THE EYE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "psychological",
+    "suspense",
+    "mystery",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "nudity"
+  ],
+  "moderation_notes": "Contains mild suggestive imagery and implied violence.",
+  "description": "A man stands on a road holding a weapon, with a woman's face looming large in the background and another woman lying nearby."
+}

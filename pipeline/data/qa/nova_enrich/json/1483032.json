@@ -1,0 +1,35 @@
+{
+  "title_text": "Entity Removal (for Dummies)",
+  "credits_text": "SM FILMS PRESENTS\nDirected By Simone Massis",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Sometimes that voice in your head is right.\nSometimes it's not your voice at all...",
+  "mood": [
+    "psychological",
+    "thriller",
+    "mystery",
+    "disturbing",
+    "philosophical"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A black and white poster features a central face with red-hued background elements and text about internal voices and identity."
+}

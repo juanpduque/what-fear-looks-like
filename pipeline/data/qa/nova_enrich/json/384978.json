@@ -1,0 +1,50 @@
+{
+  "title_text": "PUPPET MASTER AXIS TERMINATION",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "action",
+    "thriller",
+    "sci-fi",
+    "dystopia"
+  ],
+  "fear_labels": [
+    {
+      "name": "puppet",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "skull",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "Movie poster features various puppets and characters in a fiery, war-torn setting with intense, dramatic visuals."
+}

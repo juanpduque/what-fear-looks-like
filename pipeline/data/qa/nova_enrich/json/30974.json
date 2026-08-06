@@ -1,0 +1,41 @@
+{
+  "title_text": "HIGH LANE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "suspenseful",
+    "dangerous",
+    "thrilling"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "climbing",
+      "conf": 0.8
+    },
+    {
+      "name": "danger",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and suggests physical danger.",
+  "description": "A man clings to a cliff with blood on his hands while others watch from below, set against a rugged mountain landscape."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "VAMPIRE CONTROLLER",
+  "credits_text": "produced by TONY LEUNG directed by TONY LEUNG starring LA KA LEUNG JOEY MENG KATHY CHAU KING YUEN",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "www.UJ333.com",
+  "mood": [
+    "gothic",
+    "horror",
+    "surreal",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains horror themes and mild violent imagery.",
+  "description": "A poster for a horror film featuring a monstrous creature with sharp teeth and a dark, eerie atmosphere, with credits and title displayed prominently."
+}

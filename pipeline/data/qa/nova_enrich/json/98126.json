@@ -1,0 +1,45 @@
+{
+  "title_text": "युती दार्री",
+  "credits_text": "Produced by GANGU RAMSAY & SHYAM RAMSAY\nDirected by TULSI RAMSAY",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "other_text": "फ्रेंड्स",
+  "mood": [
+    "gothic",
+    "horror",
+    "camp",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.2,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and horror imagery.",
+  "description": "The poster features a menacing face, bats, and a trident, with cast members and production credits displayed prominently."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "Hansel & Gretel",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of fire and blood, suggesting horror themes.",
+  "description": "A poster shows two hands reaching through flames toward a large, locked metal door with the title 'Hansel & Gretel' above."
+}

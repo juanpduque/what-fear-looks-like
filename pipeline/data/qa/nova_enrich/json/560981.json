@@ -1,0 +1,37 @@
+{
+  "title_text": "THE AMUSEMENT PARK",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "surreal",
+    "disturbing",
+    "psychological",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.5,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and disturbing facial expressions.",
+  "description": "A surreal poster featuring an elderly man's face merging with a carousel, with blood dripping from the eyes."
+}

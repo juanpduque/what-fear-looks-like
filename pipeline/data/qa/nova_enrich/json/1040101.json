@@ -1,0 +1,47 @@
+{
+  "title_text": "WICKED LOCK",
+  "credits_text": "ETHEREAL PILGRIM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "mysterious",
+    "haunting",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "occult",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains occult imagery and implied violence with blood splatters.",
+  "description": "A dark poster features three figures against a red splattered background with the title 'Wicked Lock' and tagline 'Ethereal Pilgrim.'"
+}

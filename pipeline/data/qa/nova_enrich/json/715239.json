@@ -1,0 +1,45 @@
+{
+  "title_text": "TRIGGERED",
+  "credits_text": "FRIENDS WITH SOME TIME TO KILL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "action",
+    "survival",
+    "thriller",
+    "post-apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "group",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and intense action themes.",
+  "description": "A group of seven individuals stands together against a fiery background, with weapons and a determined stance, suggesting a survival or action theme."
+}

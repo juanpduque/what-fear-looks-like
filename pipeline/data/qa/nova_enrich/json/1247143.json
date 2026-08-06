@@ -1,0 +1,40 @@
+{
+  "title_text": "BITZEMANN",
+  "credits_text": "A FILM BY JULE JESSENBERGER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DON'T SING ITS SONG!",
+  "mood": [
+    "dread",
+    "surreal",
+    "gothic",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.1,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and monstrous imagery.",
+  "description": "A poster shows a creature with sharp claws gripping a person, with bold red text and a dramatic tagline."
+}

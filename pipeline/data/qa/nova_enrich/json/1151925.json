@@ -1,0 +1,45 @@
+{
+  "title_text": "İCİMDEKTİ VARLIK",
+  "credits_text": "YÖNETMEN MUSTAFA ÖZER 4.2K FILM YAPIM BURCU GENÇ METİN KIRMIZI FUNDA YILDIZ OZAN ALİ DOĞU ARAT HAKAN DEMİR EMRE SUSARLIOĞLU GAMZE ÇİVEK HATICE GÜR VE... SEVKİ ÖZCAN",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "HAZİNE SAHİBİNDEN BAŞKASINA HARAMDIR YAKINDA SİNEMALARDA",
+  "mood": [
+    "dread",
+    "terror",
+    "gothic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A horror movie poster featuring a gruesome face and several injured individuals, set against a dark, eerie background."
+}

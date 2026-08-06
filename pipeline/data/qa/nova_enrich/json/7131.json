@@ -1,0 +1,49 @@
+{
+  "title_text": "VAN HELSTING",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "fantasy",
+    "horror",
+    "dark",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "ghost",
+      "conf": 0.5
+    },
+    {
+      "name": "creature",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.6,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and dark fantasy elements.",
+  "description": "A man and a woman stand on rocky terrain with weapons, surrounded by dark creatures and a gothic castle under a full moon."
+}

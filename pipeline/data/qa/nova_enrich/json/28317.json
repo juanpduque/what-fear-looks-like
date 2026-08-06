@@ -1,0 +1,51 @@
+{
+  "title_text": "BLOOD LEGEND",
+  "credits_text": "From the Creators of \"DARK PLACES\" & \"CURSE OF PIRATE DEATH\" TOLES MALONE DEVIL JACOBSEN SYNN HEATHER Kandy Nelson film",
+  "languages": [
+    "en"
+  ],
+  "other_text": "INNOCENCE never tasted so sweet! BRAIN DAMAGE FILMS",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "supernatural",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and themes of violence and occult.",
+  "description": "Poster features three individuals with a menacing monster in the background, fiery torch, and dark, eerie setting."
+}

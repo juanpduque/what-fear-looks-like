@@ -1,0 +1,36 @@
+{
+  "title_text": "SHARK HUNTER",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "adventure"
+  ],
+  "fear_labels": [
+    {
+      "name": "shark",
+      "conf": 0.95
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.95,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains intense action and potential gore from shark attack scenes.",
+  "description": "A dramatic poster shows a shark attacking with a diver nearby and a helicopter overhead, emphasizing high-stakes adventure."
+}

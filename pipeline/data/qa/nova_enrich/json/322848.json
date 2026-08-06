@@ -1,0 +1,45 @@
+{
+  "title_text": "O LOBYSOMEM O TERROR DA METANOITE",
+  "credits_text": "SUSANA DE ALMEIDA WILSON GREY PAULO MULLACA JACK DE CASTRO",
+  "languages": [
+    "pt"
+  ],
+  "other_text": "ELYSEO VISCONTI PRODUÇÕES CINEMATOGRÁFICAS APRESENTA",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A black-and-white poster features a monstrous creature with sharp teeth and claws, standing over a fallen figure amidst a dark, eerie forest setting."
+}

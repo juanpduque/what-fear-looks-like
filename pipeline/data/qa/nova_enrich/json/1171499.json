@@ -1,0 +1,46 @@
+{
+  "title_text": "DIRTY JERSEY",
+  "credits_text": "AMANDA FRAASS CASEY DONNELLY SEAN BARNES KATHLEEN SIMARD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DINNERTINE. 2023.",
+  "mood": [
+    "horror",
+    "thriller",
+    "supernatural",
+    "dread",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood, suitable for mature audiences.",
+  "description": "Poster features a monstrous blue creature looming over three individuals in a dark, eerie setting with bold red title text."
+}

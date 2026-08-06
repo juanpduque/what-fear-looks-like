@@ -1,0 +1,42 @@
+{
+  "title_text": "ZONA MUTANTE",
+  "credits_text": "PLAGA ZOMBIE",
+  "languages": [
+    "es"
+  ],
+  "other_text": "PERDIERON UNA BATALLA. PERO LA GUERRA CONTINUA.",
+  "mood": [
+    "post-apocalyptic",
+    "action",
+    "survival",
+    "gritty",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and post-apocalyptic themes.",
+  "description": "Three characters stand on a rocky terrain with a cityscape in the background, one holding a large weapon, suggesting a zombie survival scenario."
+}

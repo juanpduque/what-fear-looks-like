@@ -1,0 +1,44 @@
+{
+  "title_text": "തരന്നി",
+  "credits_text": "",
+  "languages": [
+    "ml"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "dread",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.4,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and ghostly imagery.",
+  "description": "A woman with long hair stands against a red background with a full moon. A man holds a torch in a dark, eerie forest setting."
+}

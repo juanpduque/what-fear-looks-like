@@ -1,0 +1,42 @@
+{
+  "title_text": "MEAT LOVERS",
+  "credits_text": "\"MEAT LOVERS\" IS THE NEW ALBUM FROM THE LEGENDARY \"MEAT LOVERS\" FEATURING THE TALENTED \"JESSE SCHNEIDER\" AND \"ALEX MACINTOSH\" ALONG WITH \"RUSS STRAHAN\" \"ALEX MARTIN\" AND \"JESSE SCHNEIDER\" \"ALEX MACINTOSH\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WHAT A WASTE",
+  "mood": [
+    "horror",
+    "gothic",
+    "violent",
+    "dark",
+    "gritty"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    },
+    {
+      "name": "monster",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster featuring a gory, zombie-like figure holding a weapon, with bold red text and a dark, gritty aesthetic."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "RINGWORMS",
+  "credits_text": "Sooner or later it will come out\nA FILM BY WILL LEE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "psychological",
+    "disturbing",
+    "surreal",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains disturbing imagery and psychological horror elements.",
+  "description": "A horror film poster featuring multiple characters with a central monstrous creature emerging from a wall, with a tagline about an inevitable revelation."
+}

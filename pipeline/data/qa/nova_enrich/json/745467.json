@@ -1,0 +1,43 @@
+{
+  "title_text": "SHARK ENCOUNTERS OF THE THIRD KIND",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "sci-fi",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "water",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violent action involving sharks and space rays.",
+  "description": "A poster shows a giant shark attacking a spaceship with fiery energy, surrounded by smaller sharks in a cosmic setting."
+}

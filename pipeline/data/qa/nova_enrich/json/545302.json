@@ -1,0 +1,46 @@
+{
+  "title_text": "BUNDY",
+  "credits_text": "AND THE GREEN RIVER KILLER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller",
+    "mystery",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "text",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and disturbing imagery.",
+  "description": "A man stands over a body in a dark forest, with another body submerged in water below, evoking a chilling and suspenseful atmosphere."
+}

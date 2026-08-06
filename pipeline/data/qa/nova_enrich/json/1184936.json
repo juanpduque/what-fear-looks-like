@@ -1,0 +1,47 @@
+{
+  "title_text": "MARIANGULA",
+  "credits_text": "DIRIGIDA POR JORGE BASTIDAS ZEA\nEFECTOS ESPECIALES PAULO GUZMÁN\nPRODUCCIÓN EJECUTIVA MÓNICA TORRES\nPRODUCCIÓN SOFÍA SANTI\nPROTAGONIZADA POR KATY RAMÍREZ, PATTY MORA, KARINA GAIBOR, KATTIE NAVARRO, VALERIA YEPEZ, CAROLINA MÁRQUEZ, FABRICIO RUBIO, EDGAR ECHEVERRIA, PAMELA LÓPEZ Y MAYRA BONILLA\nBANDA SONORA GRUPO LAMENTO - FERNANDO ISAIAS, ANDY FABARA",
+  "languages": [
+    "es"
+  ],
+  "other_text": "NO IMPORTA A DONDE VAYAS ELLA TE ENCONTRARÁ",
+  "mood": [
+    "gothic",
+    "eerie",
+    "haunting",
+    "mysterious",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    },
+    {
+      "name": "cemetery",
+      "conf": 0.8
+    },
+    {
+      "name": "cross",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult",
+    "blood"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes with blood-like stains.",
+  "description": "A woman in a white dress stands in a cemetery holding a red object, with a cross and tombstones in the background."
+}

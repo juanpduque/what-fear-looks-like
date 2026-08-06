@@ -1,0 +1,39 @@
+{
+  "title_text": "THE WATER WILL REGRET YOU",
+  "credits_text": "A short film by Marco Bentivoglio",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NO MATTER HOW DEEP YOU EMERGE A SECRET IT WILL ALWAYS RETURN TO THE SURFACE",
+  "mood": [
+    "mysterious",
+    "haunting",
+    "foreboding",
+    "melancholic",
+    "atmospheric"
+  ],
+  "fear_labels": [
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, moody poster features a shadowy figure in a boat above an ominous underwater scene with a haunting tagline."
+}

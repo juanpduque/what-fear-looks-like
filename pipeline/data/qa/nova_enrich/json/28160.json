@@ -1,0 +1,42 @@
+{
+  "title_text": "GRAVE OF THE VAMPIRE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "camp",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "occult",
+    "erotic"
+  ],
+  "moderation_notes": "Contains mild erotic undertones and occult themes.",
+  "description": "A poster shows a terrified face with a hand tearing at a white cloth, titled 'Grave of the Vampire.' The image evokes horror and gothic themes."
+}

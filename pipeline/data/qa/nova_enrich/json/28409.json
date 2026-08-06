@@ -1,0 +1,46 @@
+{
+  "title_text": "HUNCHBACK OF THE MORGUE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.7,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains graphic horror imagery, nudity, and violent themes.",
+  "description": "A man stands over a nude woman on a slab surrounded by rats, with a title displayed below."
+}

@@ -1,0 +1,49 @@
+{
+  "title_text": "THE GRIM REAPER",
+  "credits_text": "DEMONS DO EXIST - DR. R.G. LEE\nHEAR: DR.JERRY FALLWELL, DR. JACK VAN IMPE, DR. BOB GRAY\nSEE: BEE, BOB, KING SALAD, THE BLACK COAT SQUAD, SAMUEL ROYER\nWRITTEN, PRODUCED AND DIRECTED BY RON ORMOND\nPRODUCED BY THE ORMOND ORGANIZATION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ARE YOU NEXT?\nPLUS MANY MORE ACTUAL BIBLE VERSES\nTHE SATANIC CHURCH OF EUROPE\nTHE FREE BIBLE AND SILAS",
+  "mood": [
+    "gothic",
+    "dread",
+    "occult",
+    "camp",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.95
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.85,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and implied violence.",
+  "description": "A poster features a skeletal figure holding a scythe, with bold text and additional cast and production details."
+}

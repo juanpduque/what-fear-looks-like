@@ -1,0 +1,50 @@
+{
+  "title_text": "CHRISTMAS SLASHER",
+  "credits_text": "He's coming to town...for Revenge",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "festive",
+    "violent",
+    "dark",
+    "macabre"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.8,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster shows Santa Claus walking through a snowy landscape with a monstrous creature and a reindeer, with a house in the background and festive lights."
+}

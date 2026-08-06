@@ -1,0 +1,46 @@
+{
+  "title_text": "Camp Blood",
+  "credits_text": "STERING FIRST SLUGHTER MARK POLONA \"CAMP BLOOD FIRST SLUGHTER\" KELLY LEWIS ASHLEY LASH LISA SHEFFIELD STEVE OSASARA JEFF KIRKENDALL JAMES CAROLIO MARK POLONA MARK POLONA JEFF GROSS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "R",
+  "mood": [
+    "horror",
+    "terror",
+    "gothic",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and violent themes.",
+  "description": "A poster features a monstrous figure with a grotesque face, surrounded by terrified people and scenes of violence and bloodshed under a full moon."
+}

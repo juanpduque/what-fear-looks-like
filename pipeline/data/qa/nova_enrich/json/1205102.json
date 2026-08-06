@@ -1,0 +1,46 @@
+{
+  "title_text": "魔だれ止影",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "放こ日えの本中元だれに回った構み立権つちの魔い謝やい影・イバーの長屋やし。",
+  "mood": [
+    "dread",
+    "gothic",
+    "haunting",
+    "eerie",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes; suitable for mature audiences.",
+  "description": "A poster features a dark, eerie woman with long hair against a shadowy background, overlaid with Japanese text and a red '10' graphic."
+}

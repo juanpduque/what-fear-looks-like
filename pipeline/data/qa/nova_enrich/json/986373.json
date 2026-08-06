@@ -1,0 +1,50 @@
+{
+  "title_text": "Sleepy Hollow",
+  "credits_text": "JOHNNY DEPP CHRISTINA RICCI CHRISTOPHER WALKEN CYNTHIA NIXON MARCUS WILKINS RORY COCHRAN MICHAEL CLARY IAN HOBBES IAN McKELEN IAN RICHARDSON IAN RICHARDSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WATCH YOUR HEAD.",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "dark",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A dark, dramatic poster features a shadowy figure with a large, bloodied blade protruding from their chest, set against a black background with the title 'Sleepy Hollow' prominently displayed."
+}

@@ -1,0 +1,44 @@
+{
+  "title_text": "",
+  "credits_text": "",
+  "languages": [],
+  "other_text": "",
+  "mood": [
+    "terrifying",
+    "horror",
+    "menacing",
+    "intense",
+    "dreadful"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of a monstrous creature with blood and violent appearance.",
+  "description": "A menacing red monster with sharp teeth and glowing eyes, surrounded by lightning bolts against a black background."
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "DON'T BLINK",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MOUNTAINBROOK CABIN RETREAT\nGAS, FOOD, AND LODGING 300 M.",
+  "mood": [
+    "suspense",
+    "horror",
+    "thriller",
+    "mystery",
+    "paranormal"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "blood",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood, suggesting horror themes.",
+  "description": "A man and woman stare intensely over a cabin in a forested area, with a sign indicating a remote retreat and hints of blood."
+}

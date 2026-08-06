@@ -1,0 +1,39 @@
+{
+  "title_text": "THE SHUNNED",
+  "credits_text": "T HANOVER ADAM GAITAN DEB KEEF",
+  "languages": [
+    "en"
+  ],
+  "other_text": "There was a time when a serial killer always got away...",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains violent imagery and a menacing skull face.",
+  "description": "A poster featuring a menacing skull-faced figure with long hair, holding a weapon, against a dark, fiery background."
+}

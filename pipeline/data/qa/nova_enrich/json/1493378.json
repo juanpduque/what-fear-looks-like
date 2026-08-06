@@ -1,0 +1,45 @@
+{
+  "title_text": "ĐIKUS",
+  "credits_text": "Režija JELENA STOJKOVIC MARKO JOVICIC Scenario JELENA STOJKOVIC Produkcja BOSS TEAM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Ivan Perković, Svetozar Babić, Petar Božović, Miodrag Miki Krstović, Zoran Cvijanović, Ljubomir Bandović, Gorica Popović, Nikola Rakocević, Nebojša Dugalić, Snežana Savić, Boris Milivojević, Jelena Cvijanović - Stojković, Marko Jovićić, Sara Stojković, Sofija Ignjatović, Nina Stojković",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.1,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A dark, misty forest setting with a traditional house, a large knife dripping blood, and a shadowy figure in the doorway."
+}

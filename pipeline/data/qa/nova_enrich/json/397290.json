@@ -1,0 +1,47 @@
+{
+  "title_text": "SADOMASTER LOCURA GENERAL",
+  "credits_text": "",
+  "languages": [
+    "es"
+  ],
+  "other_text": "EN EL FUTURO EL ASESINATO Y LA VIOLACION SON DEPORTE NACIONAL. WWW.GOREVISION.COM.AR",
+  "mood": [
+    "violent",
+    "surreal",
+    "dark",
+    "anarchic",
+    "grotesque"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.9,
+  "sexual_content": 0.5,
+  "sensitive": [
+    "violence",
+    "sexual",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence, sexual themes, and gory imagery.",
+  "description": "A chaotic poster features multiple characters, weapons, and intense expressions, with bold red text and a fiery background."
+}

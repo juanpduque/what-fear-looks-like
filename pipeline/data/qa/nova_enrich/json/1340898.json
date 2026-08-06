@@ -1,0 +1,45 @@
+{
+  "title_text": "MARIARA",
+  "credits_text": "Based on urban legend A FILM BY VELDY REYNOLD GORAN O PICTURES PRESENTS PERJAMUAN MAUT 27 NOVEMBER 2024 DI BIOSKOP",
+  "languages": [
+    "en"
+  ],
+  "other_text": "LEON ALEXANDRE SERVIE ERIC MERCY YASHINTA KAMAGI ALVAN DJAJA LATEKA TELELEPITA",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A dark, hooded figure looms over a wounded child in a horror-themed poster for the film Mariara."
+}

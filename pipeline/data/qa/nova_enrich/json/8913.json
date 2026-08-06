@@ -1,0 +1,50 @@
+{
+  "title_text": "stephen king's PET SEMATARY",
+  "credits_text": "Sometimes dead is better.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "eerie",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.8,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains mild horror elements and occult themes.",
+  "description": "A poster features a eerie face, a cat, and a graveyard with tombstones, promoting Stephen King's Pet Sematary."
+}

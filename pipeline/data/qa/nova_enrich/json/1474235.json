@@ -1,0 +1,51 @@
+{
+  "title_text": "处刑官",
+  "credits_text": "陈奕迅 刘亦菲",
+  "languages": [
+    "zh"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "psychological",
+    "violent",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "axe",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "A woman holds an axe with blood on her chest, standing in a forest with two shadowy figures in the background."
+}

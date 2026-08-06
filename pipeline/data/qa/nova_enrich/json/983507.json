@@ -1,0 +1,41 @@
+{
+  "title_text": "GOOD BOY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "menacing",
+    "dark",
+    "aggressive"
+  ],
+  "fear_labels": [
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of a creature with blood and aggressive features.",
+  "description": "A stylized illustration of a fierce, anthropomorphic creature with sharp teeth and intense eyes, accompanied by the bold text 'GOOD BOY' in red."
+}

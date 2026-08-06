@@ -1,0 +1,48 @@
+{
+  "title_text": "BANGLOW NO 666",
+  "credits_text": "DIRECTION P. CHANDRA KUMAR MUSIC ANU MALIK",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "other_text": "www.moodvogue.com",
+  "mood": [
+    "gothic",
+    "horror",
+    "camp",
+    "erotic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "house",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "blood",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and occult themes.",
+  "description": "A vintage horror poster features a terrified woman and a monstrous face with blood, set against a dark castle backdrop."
+}

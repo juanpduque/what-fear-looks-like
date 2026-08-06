@@ -1,0 +1,49 @@
+{
+  "title_text": "TOXIC LULLABY",
+  "credits_text": "RALF KEMPER'S\n28 DAYS LATER meets CRAZIES\nSAMANTHA RICHTER EVA BALKENHOL NOAH HUNTER ANDREAS PAPE YO RENE SCHAARF",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"A HIGH QUALITY PRODUCTION... A FIND FOR ZOMBIE FANS.\" - ZOMBIE FANS",
+  "mood": [
+    "dread",
+    "apocalyptic",
+    "survival",
+    "post-apocalyptic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "gas_mask",
+      "conf": 0.95
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and post-apocalyptic themes.",
+  "description": "Poster features gas-masked individuals in a forest setting with a distressed woman, promoting a zombie horror film."
+}

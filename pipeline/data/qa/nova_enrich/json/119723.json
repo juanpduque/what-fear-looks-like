@@ -1,0 +1,42 @@
+{
+  "title_text": "ZOMBIFIED",
+  "credits_text": "They love me for my brains, right?",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"Gallardo resets the zombie bar, and it's sky-high.\" — Nancy Holder",
+  "mood": [
+    "dread",
+    "apocalyptic",
+    "gritty",
+    "dark",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A gritty poster features a man with zombie-like injuries and blood, promoting the novel 'Zombified' by Adam Gallardo."
+}

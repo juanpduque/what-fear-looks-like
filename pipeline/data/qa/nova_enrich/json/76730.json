@@ -1,0 +1,49 @@
+{
+  "title_text": "A VAMPIRE'S TALE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "mysterious",
+    "noir",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "vampire",
+      "conf": 0.9
+    },
+    {
+      "name": "gun",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "moon",
+      "conf": 0.6
+    },
+    {
+      "name": "rain",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery with a firearm and a vampire character.",
+  "description": "A man in a trench coat and hat holds a gun under a full moon, with a stormy background and distant figures on horseback."
+}

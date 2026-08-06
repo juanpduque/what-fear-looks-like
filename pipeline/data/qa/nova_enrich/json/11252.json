@@ -1,0 +1,39 @@
+{
+  "title_text": "PSYCHO",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "psychological",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a ghostly silhouette.",
+  "description": "A red-tinted poster shows a ghostly hand reaching through a foggy glass with the title 'PSYCHO' at the bottom."
+}

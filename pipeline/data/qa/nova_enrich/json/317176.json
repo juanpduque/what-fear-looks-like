@@ -1,0 +1,42 @@
+{
+  "title_text": "魔鬼再來 DEVIL RETURNS",
+  "credits_text": "王祖賢 陳小春 林心如",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "新年快樂給你一個... 及時提醒：新年快樂給你一個及時提醒",
+  "mood": [
+    "horror",
+    "thriller",
+    "psychological",
+    "suspense",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.7,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a threatening knife; no explicit gore or nudity.",
+  "description": "A poster features a man holding a large knife with a terrified woman nearby, accompanied by additional characters and dramatic text."
+}

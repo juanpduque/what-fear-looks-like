@@ -1,0 +1,41 @@
+{
+  "title_text": "A HAUNTED HOUSE 2",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "REC ON 4:20:02 AM",
+  "mood": [
+    "horror",
+    "comedy",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A group of people react with shock and fear in a haunted house setting, with a timestamp overlay indicating a recording."
+}

@@ -1,0 +1,37 @@
+{
+  "title_text": "AFTER DARK",
+  "credits_text": "JEFF JOHNSON JOEL ERICKSON AND GARY OLSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Evil Awakens",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring three men with intense expressions and a group of shadowy figures in a dark setting, titled 'After Dark' with the tagline 'Evil Awakens.'"
+}

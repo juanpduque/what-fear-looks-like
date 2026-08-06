@@ -1,0 +1,39 @@
+{
+  "title_text": "DOGS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "aggressive",
+    "intense",
+    "threatening"
+  ],
+  "fear_labels": [
+    {
+      "name": "animal",
+      "conf": 1.0
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 1.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features a menacing dog with exposed teeth, suggesting potential violence.",
+  "description": "A fierce black dog with sharp teeth and an open mouth roars aggressively against a black background, with bold red text reading 'DOGS' below."
+}

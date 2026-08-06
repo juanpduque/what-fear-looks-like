@@ -1,0 +1,39 @@
+{
+  "title_text": "Seek & Hide",
+  "credits_text": "\"SEEK & HIDE IS JUST... YOU NEVER KNOW WHAT YOU'RE SEEING.\" - GRAZIA \"UNSETTLING... REMINDS ME OF ABRAHAM ZUICKY & ALFIE ALLIE'S THE BABY OF FLANNERY O'CONNOR.\" - VULTURE \"A MASTERCLASS IN SUSPENSE...\" - THE HOLLYWOOD REPORTER \"A TRIUMPH.\" - VARIETY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "LAOWA mondays: ECLECTIC",
+  "mood": [
+    "suspense",
+    "mystery",
+    "psychological",
+    "disturbing",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "shadow",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a shadowy figure looming over a child, creating a suspenseful and eerie atmosphere."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "ATTACK ON TITAN",
+  "credits_text": "THE MOVIE PART I",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gritty",
+    "apocalyptic",
+    "intense",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.5,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense and violent imagery, including a monstrous creature and a soldier in a post-apocalyptic setting.",
+  "description": "A soldier stands before a towering, monstrous face in a gritty, post-apocalyptic setting, with bold title text overlay."
+}

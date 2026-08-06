@@ -1,0 +1,41 @@
+{
+  "title_text": "VOODOO",
+  "credits_text": "COREY FELDMAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "LIFE IS FULL OF SACRIFICES",
+  "mood": [
+    "supernatural",
+    "gothic",
+    "dread",
+    "occult",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and intense imagery.",
+  "description": "A poster featuring a large skull with a screaming face inside, overlaid on a cityscape, with bold orange text reading 'VOODOO' and the author's name at the top."
+}

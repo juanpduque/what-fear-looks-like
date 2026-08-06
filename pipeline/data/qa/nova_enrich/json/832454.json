@@ -1,0 +1,42 @@
+{
+  "title_text": "BLOODY BIRTHDAY",
+  "credits_text": "Written and Directed by: DEETER PRIMIG, PAUL WOLF\nA GOODASDAETER PRODUCTION\nDirector of Special Effects: GREGOR STEPHANI\nArt Director: BASTI CORNELIUS\nKey Lighting by: FLORIAN FINK\nProperty Master: RUBEN KULIK\nOriginal Score: JULIAN GRAUEL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "LUCAS FEDERHEN, JOE WIESENBURGER",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "psychological",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "gothic",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "The poster features two menacing faces with blood splatters and bold red text reading \"BLOODY BIRTHDAY\" against a dark background."
+}

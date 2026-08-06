@@ -1,0 +1,42 @@
+{
+  "title_text": "THE VAMPIRE'S CURSE",
+  "credits_text": "Tina Krause • Dawn Murphy • Laura Giglio\nAlso starring:\nMichelle Caporetti • Kassie Kerr\nDean Paul • GW Barbara • Debbie D\nand - introducing Lawrence Joyce",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ALWAYS BE CAREFUL OF WHAT YOU MIGHT BECOME...",
+  "mood": [
+    "gothic",
+    "erotic",
+    "horror",
+    "dramatic",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild sexual content and occult themes.",
+  "description": "Movie poster features a woman in lingerie and a dramatic close-up of a person with an open mouth, with bold red and black typography."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "BE MINE",
+  "credits_text": "A VR VALENTINE'S SLASHER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CRYPT, ELI ROTH'S, PETITION LIST",
+  "mood": [
+    "horror",
+    "romantic",
+    "gothic",
+    "disturbing",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "horror",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A horror movie poster featuring a disturbing child with blood and weapons, promoting a Valentine's Day slasher film."
+}

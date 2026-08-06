@@ -1,0 +1,49 @@
+{
+  "title_text": "PERFECT CREATURE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "haunting",
+    "supernatural",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "tower",
+      "conf": 0.7
+    },
+    {
+      "name": "moon",
+      "conf": 0.6
+    },
+    {
+      "name": "occult",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "The poster features occult themes and a mysterious, gothic atmosphere.",
+  "description": "A man stands atop a tower under a full moon, with dark, swirling designs framing the title 'Perfect Creature.'"
+}

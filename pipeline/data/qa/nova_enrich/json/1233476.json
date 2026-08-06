@@ -1,0 +1,40 @@
+{
+  "title_text": "VAS VAA",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SERIES",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and implied violence.",
+  "description": "A poster featuring a central skull face with a crowd of people in the background, overlaid with stylized text and a dark red background."
+}

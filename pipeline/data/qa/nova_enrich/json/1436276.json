@@ -1,0 +1,42 @@
+{
+  "title_text": "BLOOD GUTS & SUNSHINE 2",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "VIDEO STORE",
+  "mood": [
+    "violent",
+    "dark",
+    "gritty",
+    "horror",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.2,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster for \"Blood Guts & Sunshine 2\" features a graphic design with blood splatters and a stylized hand holding a weapon, displayed in a video store."
+}

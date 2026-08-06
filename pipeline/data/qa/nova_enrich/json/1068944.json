@@ -1,0 +1,36 @@
+{
+  "title_text": "Terror am Strand",
+  "credits_text": "Ein Film von Weismann / Peczet",
+  "languages": [
+    "de"
+  ],
+  "other_text": "50 Morde und mehr",
+  "mood": [
+    "horror",
+    "camp",
+    "satirical"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatter and violent imagery.",
+  "description": "A woman in military attire holds a fire extinguisher over a body covered in red liquid resembling blood in a bathroom setting."
+}

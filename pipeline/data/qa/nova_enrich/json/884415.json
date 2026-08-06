@@ -1,0 +1,40 @@
+{
+  "title_text": "KEEPSAKE",
+  "credits_text": "TIFFANY LASKEY BOB VRESILOVIC a NATHAN HINE film",
+  "languages": [
+    "en"
+  ],
+  "other_text": "LIMITED EDITION",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore.",
+  "description": "A horror movie poster featuring a gruesome, decayed face with visible blood, set against a dark background with a vehicle in the background."
+}

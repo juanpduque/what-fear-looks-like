@@ -1,0 +1,41 @@
+{
+  "title_text": "X-ORCISM",
+  "credits_text": "REECE HOLMES KEATON PRICKETT ANDY SLATTER TRISTAN SIEPKA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WRITTEN AND DIRECTED FRAZER KEANE",
+  "mood": [
+    "dark",
+    "intense",
+    "mysterious",
+    "gothic",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and dark themes.",
+  "description": "A man with horns stands against a red-lit background with bold text reading 'X-ORCISM' and credits listed below."
+}

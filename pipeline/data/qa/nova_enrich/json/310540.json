@@ -1,0 +1,41 @@
+{
+  "title_text": "EXTREMITY",
+  "credits_text": "BLEEDING MOUNTAIN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "12/21先看一个答案 电影首日大片连场 八仙降座节庆大片",
+  "mood": [
+    "dread",
+    "intense",
+    "suspenseful",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; suitable for mature audiences.",
+  "description": "A woman lies in snow with bloodied hands, facing a menacing creature holding a large axe in a snowy, harsh environment."
+}

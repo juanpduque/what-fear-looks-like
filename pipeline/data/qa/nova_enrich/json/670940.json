@@ -1,0 +1,40 @@
+{
+  "title_text": "EL CHAPO AND THE CURSE OF THE ZOMBIE PIRATES",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "The world's most powerful force has just been unleashed... And also, there are zombies. COMING SOON",
+  "mood": [
+    "action",
+    "horror",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and horror elements.",
+  "description": "A dramatic poster features a man holding crossed swords with a zombie pirate in the background, promoting an upcoming action-horror film."
+}

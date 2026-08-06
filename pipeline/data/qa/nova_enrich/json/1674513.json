@@ -1,0 +1,45 @@
+{
+  "title_text": "BLOOD IN THE WOODS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "forest",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster suggests potential violence and gore due to the title and visual hints.",
+  "description": "A close-up of a person's face partially obscured by shadows, with the title 'BLOOD IN THE WOODS' prominently displayed over a dark, forested background."
+}

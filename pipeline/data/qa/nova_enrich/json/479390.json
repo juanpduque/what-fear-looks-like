@@ -1,0 +1,47 @@
+{
+  "title_text": "ELDRITCH CODE",
+  "credits_text": "\"IVAN RADOVIC\" BASED ON A NOVEL BY GLEN CADRIGAN AND CHEE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WHEN THE STARS ARE RIGHT, IT WILL CALL AGAIN",
+  "mood": [
+    "gothic",
+    "dread",
+    "occult",
+    "psychological",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatters and occult themes.",
+  "description": "A dark poster features a central face with red splatters resembling blood against a black background, with bold white and red text."
+}

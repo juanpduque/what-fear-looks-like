@@ -1,0 +1,51 @@
+{
+  "title_text": "THE CORPSE GRINDERS 3",
+  "credits_text": "TED V. MIKELS PRESENTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "camp",
+    "horror",
+    "grotesque",
+    "surreal",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "crowd",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.4,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "A colorful, chaotic poster features multiple characters, including a man holding a knife, amidst a bloody, surreal horror scene."
+}

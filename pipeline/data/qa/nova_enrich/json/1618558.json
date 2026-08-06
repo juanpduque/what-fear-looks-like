@@ -1,0 +1,35 @@
+{
+  "title_text": "SLENDERMAN",
+  "credits_text": "A Film by Tyler Cairns",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "psychological",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster implies horror themes related to the Slenderman mythos.",
+  "description": "A dark silhouette against a black background with the title 'SLENDERMAN' and director's name overlaid."
+}

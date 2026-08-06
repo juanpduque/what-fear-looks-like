@@ -1,0 +1,50 @@
+{
+  "title_text": "EPADUNK",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BJÖRKHOLM GÜBER",
+  "mood": [
+    "dread",
+    "terror",
+    "survival",
+    "forest",
+    "night"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; suitable for mature audiences.",
+  "description": "A terrified woman holds a weapon as a monstrous figure looms behind her in a stormy forest, with a man sitting on a car nearby."
+}

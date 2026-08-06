@@ -1,0 +1,50 @@
+{
+  "title_text": "THE SUNDAY NIGHT SLAUGHTER",
+  "credits_text": "COREY FELDMAN MARIA OLSEN FELISIA ROSE CHAD ADDISON WILL GREEN STEPHEN WU ARIELLE DRACEFIELD BRAD POTTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NR",
+  "mood": [
+    "horror",
+    "supernatural",
+    "gothic",
+    "violent",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and horror elements.",
+  "description": "Poster features a monstrous green creature with fiery aura, surrounded by terrified people in a dark, eerie setting."
+}

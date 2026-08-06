@@ -1,0 +1,38 @@
+{
+  "title_text": "VOCES DEL BOSQUE",
+  "credits_text": "DIRIGIDO POR AMÉLIE SALVATIERA",
+  "languages": [
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "haunting",
+    "eerie",
+    "mysterious",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "hands",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A stark silhouette stands amidst a chaotic forest of hands, evoking an eerie and mysterious atmosphere."
+}

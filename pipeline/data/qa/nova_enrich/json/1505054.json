@@ -1,0 +1,46 @@
+{
+  "title_text": "HEIRLOOMS",
+  "credits_text": "AUTUMN MARZANA, THE KENTUCKIANS, VICTORIA LAGE, ERIC LORENZ, RISA RICE, DANIEL CRUZ, MARIE MCCORMICK, KAIA ABRAHAMSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SOME DOORS SHOULD STAY CLOSED",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery",
+    "haunting",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "haunting",
+      "conf": 0.9
+    },
+    {
+      "name": "gothic",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild violence and occult themes.",
+  "description": "A poster shows an open antique wardrobe with a person lying on the floor in front, suggesting a haunting or occult theme."
+}

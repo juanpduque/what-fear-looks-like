@@ -1,0 +1,47 @@
+{
+  "title_text": "麻害心 電外音線",
+  "credits_text": "成結！おかれた残間働主引",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "当時の当場でも、安安としている害心の地届を消す。",
+  "mood": [
+    "gothic",
+    "horror",
+    "psychological",
+    "supernatural",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.6,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic blood and violent imagery, suitable for mature audiences.",
+  "description": "A poster shows a pair of legs covered in blood and tattoos, with Japanese text overlay indicating a horror theme."
+}

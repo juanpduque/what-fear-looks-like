@@ -1,0 +1,39 @@
+{
+  "title_text": "The Antarctic Octopus",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "action",
+    "thriller",
+    "adventure"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.8
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.95,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A large octopus looms over a red vehicle in a snowy landscape, with several people on board, suggesting an adventurous or action-packed scenario."
+}

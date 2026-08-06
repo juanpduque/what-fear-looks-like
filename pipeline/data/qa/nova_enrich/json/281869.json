@@ -1,0 +1,46 @@
+{
+  "title_text": "BUNNYMAN MASSACRE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "violent",
+    "disturbing",
+    "thriller",
+    "gruesome"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.95,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences only.",
+  "description": "A poster shows a menacing rabbit holding a chainsaw with blood on it against a dark, stormy background."
+}

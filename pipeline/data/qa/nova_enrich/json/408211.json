@@ -1,0 +1,43 @@
+{
+  "title_text": "IBIZA UNDEAD",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "party",
+    "apocalypse",
+    "zombie",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "zombie",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "party",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "sexual",
+    "zombie"
+  ],
+  "moderation_notes": "Contains mild sexual content and zombie imagery.",
+  "description": "A woman in a bikini spins music in front of a zombie crowd on a tropical beach at sunset."
+}

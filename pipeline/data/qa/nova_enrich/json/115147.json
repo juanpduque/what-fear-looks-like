@@ -1,0 +1,38 @@
+{
+  "title_text": "ART OF HORROR",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Documentation des phantastischen Films",
+  "mood": [
+    "surreal",
+    "gothic",
+    "dread",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a black cat with glowing eyes above a screaming man in a computer screen, set against a colorful, surreal background with a moon."
+}

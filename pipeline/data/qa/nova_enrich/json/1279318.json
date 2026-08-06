@@ -1,0 +1,45 @@
+{
+  "title_text": "心霊探偵 13 41",
+  "credits_text": "[Iru]",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "TVアニメ「心霊探偵アサギ」より",
+  "mood": [
+    "supernatural",
+    "haunting",
+    "mysterious",
+    "dark",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and ghostly imagery.",
+  "description": "A poster featuring a distressed figure with a ghostly aura, overlaid with Japanese text and a stylized logo."
+}

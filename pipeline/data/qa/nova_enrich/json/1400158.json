@@ -1,0 +1,42 @@
+{
+  "title_text": "KARA2NEME",
+  "credits_text": "YÖNETMEN KEMAL DANACI\nML YAPIM SUNAR \"KARA NEME 2\" FILMI\nÖYUNCULAR\nEROL SERTEL - BETÜL BAKTARHAN - EMIR HIZIR - AYKAN SAĞ - MURAT YILMAZ - VAHIDE DEMIRYÖREK - YEŞIM GEDIK\nFATMA SEYDA DANACI - TALHA EREN AYDIN - KADIR CAN BAŞOREN - CEMAL DANACI\nYARDIMCI YÖNETMEN EROL SERTEL - SANAT YÖNETMEN ATAKAN ÇIŞEK - SES TEKNŞYEN UMİT YÜRÜK - PRODUKSYON AMİR DÜHAN ÇETİN\nKAMERA ASISTANI MEHMET ALI DANACI - REJİ ASISTANI ERDEM TAŞCI - ÖLT. HALIL IBRAHIM DANACI - DRONE OPERATÖRÜ YİĞITCAN USLU\nSES TASARIMI MIKSALI CEM BATU ALTINTAŞ - GÖRÜNTÜ YÖNETMEN ALI ASLAN - KURUŞI ONUR ÖZCAN - SENARYO KEMAL DANACI",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "REC\nKORKU GERÇEK OLDU!\nHD 4K 25FPS\nMENU",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "violent",
+    "gory"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A poster for the horror film \"Kara2Neme\" featuring a gruesome, bloodied face with intense eyes and a torn mouth, set against a dark, fiery background."
+}

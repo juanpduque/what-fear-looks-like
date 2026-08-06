@@ -1,0 +1,46 @@
+{
+  "title_text": "ZOMBIE PIRATES",
+  "credits_text": "RISING OUT OF THE SEA TO EAT YOU ALIVE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "camp",
+    "adventure",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "water",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.1,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a group of zombie pirates with a terrified woman, a ship in the background, and a tagline about rising from the sea."
+}

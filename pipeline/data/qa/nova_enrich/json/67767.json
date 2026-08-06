@@ -1,0 +1,41 @@
+{
+  "title_text": "Das Spukhaus im Spiegel",
+  "credits_text": "",
+  "languages": [
+    "de"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "haunted",
+    "camp",
+    "whimsical"
+  ],
+  "fear_labels": [
+    {
+      "name": "haunted_house",
+      "conf": 0.9
+    },
+    {
+      "name": "spooky",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.2,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A woman holds a large axe in a gothic setting surrounded by eerie figures, suggesting a haunted house theme."
+}

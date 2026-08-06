@@ -1,0 +1,43 @@
+{
+  "title_text": "SURVIVAL ZOMBIE",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "www.survivalzombie.es",
+  "mood": [
+    "horror",
+    "apocalyptic",
+    "survival",
+    "dread",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore, suitable for mature audiences.",
+  "description": "A poster featuring a zombie with decayed features and blood, promoting the third installment of the Survival Zombie series."
+}

@@ -1,0 +1,38 @@
+{
+  "title_text": "",
+  "credits_text": "",
+  "languages": [],
+  "other_text": "",
+  "mood": [
+    "surreal",
+    "disturbing",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and disturbing imagery.",
+  "description": "A surreal, distorted creature with a human-like face emerges from shadows in a dark, fiery setting."
+}

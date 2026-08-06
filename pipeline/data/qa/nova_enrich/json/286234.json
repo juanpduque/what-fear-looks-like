@@ -1,0 +1,46 @@
+{
+  "title_text": "the BIGHEAD",
+  "credits_text": "Edward Lee's",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COMING SOON",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "dystopian"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains implied violence and partial nudity.",
+  "description": "A muscular, alien-like creature stands in a dark, industrial setting with a shadowy figure in the background."
+}

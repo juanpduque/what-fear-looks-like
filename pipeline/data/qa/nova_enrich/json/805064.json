@@ -1,0 +1,41 @@
+{
+  "title_text": "RATS!",
+  "credits_text": "DAVID CANNON PRESENTS RATS STARRING JENNIFER DONNELL ADAM CLARK LUFENICE EDMONDS SANDRA LEE SCOTT JENNIFER SCOTT JIMMY LEE DICK SANDRA LEE SCOTT JIMMY LEE DICK CREATED BY DAVID SIMON WRITTEN BY DAVID BUTLER PRODUCED BY STEVEN SPARK",
+  "languages": [
+    "en"
+  ],
+  "other_text": "GLASS CANNON FILM",
+  "mood": [
+    "horror",
+    "thriller",
+    "sci-fi",
+    "suspense",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "weapon",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.4,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A poster shows a person facing a large, monstrous rat in a dimly lit room, with smaller rats scattered around."
+}

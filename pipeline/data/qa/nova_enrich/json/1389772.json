@@ -1,0 +1,42 @@
+{
+  "title_text": "RUN FOR YOUR LIFE!",
+  "credits_text": "The creators of THE RIVER and TAKE A LOOK present \"OUR BLOODIEST FILM TO DATE!\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "VIEWER DISCRETION IS ADVISED",
+  "mood": [
+    "dread",
+    "terror",
+    "survival",
+    "horror",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; viewer discretion advised.",
+  "description": "A man with a distressed expression and blood-streaked face stands against a dark background, with bold red text advertising a horror film."
+}

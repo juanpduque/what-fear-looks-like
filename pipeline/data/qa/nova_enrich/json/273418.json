@@ -1,0 +1,50 @@
+{
+  "title_text": "NON-VEGETARIAN ZOMBIES FROM OUTER SPACE",
+  "credits_text": "They're Here, They're Hungry, And They Don't Eat Tofu",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "sci-fi",
+    "camp",
+    "apocalyptic",
+    "dystopian"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "skull",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and implied violence.",
+  "description": "A poster shows zombies in a desolate landscape with a menacing alien face above, featuring fiery skies and shadowy figures."
+}

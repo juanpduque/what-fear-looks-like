@@ -1,0 +1,49 @@
+{
+  "title_text": "THE CRYPT",
+  "credits_text": "HORROR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DO NOT DISTURB THE DEAD, OTHERWISE THEY WILL TAKE REVENGE",
+  "mood": [
+    "gothic",
+    "dread",
+    "eerie",
+    "haunting",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.95
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "lightning",
+      "conf": 0.75
+    },
+    {
+      "name": "cross",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and eerie imagery, but no explicit violence or gore.",
+  "description": "A gothic-style crypt with lightning striking its tower, surrounded by a dark, eerie atmosphere and ominous text."
+}

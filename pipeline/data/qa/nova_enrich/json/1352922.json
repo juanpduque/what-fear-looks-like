@@ -1,0 +1,39 @@
+{
+  "title_text": "SOUL",
+  "credits_text": "CONTRA LOS ZOMBIES\nCAMILA VACCARINI\nPEDRO ONTIVEROS\nMELIN FURGUELLA\nCHRISTIAN CATTAIN",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "TOMAS RIOS, ALEXANDER J. BARABAR, IRINA PEREIRA, MAXIMILIANO OLMEDO, MANUEL TERCEROS, SABRINA COTO, GUILLERMO TWACH, JULIAN BENITEZ, FRANCO ALVAISTA, SIMON CARRAUD, CELINA RIOS, DIS, CÁTEDRA SZMUKLER, UNIVERSIDAD DE MADRID",
+  "mood": [
+    "horror",
+    "thriller",
+    "apocalyptic",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "zombie",
+      "conf": 0.9
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a close-up of a person's legs and hand against a red background, with bold white text reading \"SOUL\" and \"CONTRA LOS ZOMBIES\"."
+}

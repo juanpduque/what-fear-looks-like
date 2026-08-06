@@ -1,0 +1,45 @@
+{
+  "title_text": "ARACHNADO",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "horror",
+    "sci-fi",
+    "thriller",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.95
+    },
+    {
+      "name": "danger",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.8,
+  "animal": 1.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and horror elements with giant spiders and destruction.",
+  "description": "A poster shows giant spiders attacking a city with people fleeing amidst explosions and chaos."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "BEDBOUND",
+  "credits_text": "WRITTEN & DIRECTED BY LUKAS ERNST STARRING MIKAYLA DENNIS AVA GRIMSHAWHALL HALL PRODUCED BY JESSICA DI RECTOR OF PHOTOGRAPHY FRANCESCI HEALY WOOD PRODUCTION DESIGN BY JACK STOBART SOUND DESIGN BY OIAN BENNETT EDITED BY LUKAS ERNST MUSIC BY MIKE BEALE PRODUCED IN ASSOCIATION WITH VCA THE UNIVERSITY OF MELBOURNE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOU CAN'T RUN YOU CAN'T HIDE YOU CAN'T SCREAM",
+  "mood": [
+    "dread",
+    "suspense",
+    "psychological",
+    "thriller",
+    "claustrophobic"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "claustrophobia",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A black-and-white poster features three faces partially obscured by shadows, with bold red and white text overlay."
+}

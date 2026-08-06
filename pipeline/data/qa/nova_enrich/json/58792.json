@@ -1,0 +1,39 @@
+{
+  "title_text": "BREAD CRUMBS",
+  "credits_text": "WE ALL LIVE IN A HOUSE OF CANDY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SOME FAIRY TALES ARE TRUE",
+  "mood": [
+    "mysterious",
+    "eerie",
+    "forest",
+    "haunting",
+    "fantasy"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A woman kneels in a dark forest with a shadowy figure behind her. The poster features a mystical, eerie atmosphere with the title 'Bread Crumbs' and a tagline."
+}

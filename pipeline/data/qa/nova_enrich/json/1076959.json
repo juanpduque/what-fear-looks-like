@@ -1,0 +1,37 @@
+{
+  "title_text": "SECURITY CAMERA",
+  "credits_text": "A film by Thorkell August Ottarsson",
+  "languages": [
+    "en"
+  ],
+  "other_text": "one house an intruder a family of four six security cameras all running at the same time and no cuts",
+  "mood": [
+    "suspense",
+    "thriller",
+    "tension"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "security_camera",
+      "conf": 0.95
+    },
+    {
+      "name": "intruder",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster features a security camera lens overlay on a blurred indoor scene, with bold red title and tagline text."
+}

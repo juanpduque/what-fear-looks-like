@@ -1,0 +1,45 @@
+{
+  "title_text": "THE HUMAN BEEING",
+  "credits_text": "\"It will BLEED you white with stark, naked TERROR!\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"The Human Beeing\" - WT FORUM NEWS",
+  "mood": [
+    "camp",
+    "horror",
+    "sci-fi",
+    "thriller",
+    "grotesque"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.1,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and grotesque imagery.",
+  "description": "A poster shows a monstrous bee-like creature attacking a woman, with a man in distress nearby and a crowd in the background."
+}

@@ -1,0 +1,43 @@
+{
+  "title_text": "NOSFERATU",
+  "credits_text": "SOUNDTRACK TO RADIOHEAD'S ANIMATED BY JOHN FRANK DIRECTED AND PRODUCED BY F.W. MURNAU",
+  "languages": [
+    "en"
+  ],
+  "other_text": "RADIOHEAD'S ANIMATED BY JOHN FRANK DIRECTED AND PRODUCED BY F.W. MURNAU",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "haunting",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A stylized poster featuring a monstrous figure against a fiery background, with filmstrip borders and text referencing Nosferatu and Radiohead's soundtrack."
+}

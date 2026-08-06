@@ -1,0 +1,39 @@
+{
+  "title_text": "THE DEVIL'S HARVEST",
+  "credits_text": "A FILM BY ROBERT DEE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "I HAVE COME FOR WHAT IS OWED",
+  "mood": [
+    "dread",
+    "gothic",
+    "ominous",
+    "haunting",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A stark red poster features two shadowy figures in a forest, with bold white text reading 'THE DEVIL'S HARVEST' and a tagline above."
+}

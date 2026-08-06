@@ -1,0 +1,45 @@
+{
+  "title_text": "INDIE HORROR DOUBLE FEATURE",
+  "credits_text": "R.I.P. VAN WINKLE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DEVIL'S TRAIL",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.6,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and violent imagery.",
+  "description": "A poster featuring two horror films with a woman covered in blood and a dark forest scene, suggesting themes of horror and the supernatural."
+}

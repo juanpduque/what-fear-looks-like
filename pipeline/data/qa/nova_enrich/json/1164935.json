@@ -1,0 +1,47 @@
+{
+  "title_text": "DEPRATIVITY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "supernatural",
+    "psychological",
+    "suspense",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    },
+    {
+      "name": "house",
+      "conf": 0.55
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A group of people stands under a full moon with eerie masks above them, suggesting a horror theme with a mysterious and unsettling atmosphere."
+}

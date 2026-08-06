@@ -1,0 +1,41 @@
+{
+  "title_text": "METAL SHARK ATTACK",
+  "credits_text": "KAJU GLAM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "action-packed",
+    "fantasy",
+    "violent",
+    "dystopian"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains violent imagery with a monstrous shark and destructive cityscape.",
+  "description": "A poster features a giant shark playing a guitar amidst a burning city, with bold red and black text reading 'Metal Shark Attack.'"
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "LOS VAMPIROS DE COYUCAN",
+  "credits_text": "GERMAN ROBLES, SASHA MONTENEGRO, SUPERMAN CARLOS LOPEZ MOCTEZUMA, MARIO CID, ARTURO MARTINEZ",
+  "languages": [
+    "es"
+  ],
+  "other_text": "PRODUCCIONES FILMES AGUERO, S.A. PRESENTA EASTMANCOLOR",
+  "mood": [
+    "gothic",
+    "camp",
+    "horror",
+    "surreal",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.8,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A colorful poster features a group of characters including a man in a mask, a woman in dark makeup, and a wrestler, with bats and dramatic text."
+}

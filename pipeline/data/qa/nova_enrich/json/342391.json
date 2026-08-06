@@ -1,0 +1,50 @@
+{
+  "title_text": "SICKNESS HOUSE",
+  "credits_text": "Alex Ross RITZEMA Susan YANG Patrick HIGGINS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Very cozy and highly contagious. DVD VIDEO BRAIN DAMAGE FILMS",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "creepy",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    },
+    {
+      "name": "skull",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and disturbing visuals.",
+  "description": "A horror movie poster featuring a creepy house and a monstrous, bloodied face with clawed hands."
+}

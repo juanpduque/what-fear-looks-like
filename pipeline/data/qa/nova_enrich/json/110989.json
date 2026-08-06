@@ -1,0 +1,49 @@
+{
+  "title_text": "Spooky House",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "spooky",
+    "halloween",
+    "gothic",
+    "mysterious",
+    "child-friendly"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "bat",
+      "conf": 0.8
+    },
+    {
+      "name": "pumpkin",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A poster shows two children in front of a spooky house with bats and pumpkins, evoking a Halloween theme."
+}

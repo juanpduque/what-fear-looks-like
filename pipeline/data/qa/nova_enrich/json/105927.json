@@ -1,0 +1,45 @@
+{
+  "title_text": "ROBOWAR",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "sci-fi",
+    "intense",
+    "futuristic",
+    "war"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "robot",
+      "conf": 0.95
+    },
+    {
+      "name": "helicopter",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.1,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts action and potential violence with futuristic weapons and combat scenes.",
+  "description": "A poster for 'ROBOWAR' shows a futuristic robot holding a large weapon, with soldiers in the background and a helicopter in a fiery setting."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "Cinco",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "suspense",
+    "psychological",
+    "intense",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    },
+    {
+      "name": "crowd",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "sexual"
+  ],
+  "moderation_notes": "The poster includes partial nudity and suggestive poses, indicating mild sexual content.",
+  "description": "The poster for 'Cinco' features multiple scenes with people in various dramatic poses, suggesting a thriller or suspenseful narrative."
+}

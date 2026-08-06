@@ -1,0 +1,37 @@
+{
+  "title_text": "Dr. Hackenstein",
+  "credits_text": "Featuring Anne Ramsey",
+  "languages": [
+    "en"
+  ],
+  "other_text": "His experiments will leave you in stitches.",
+  "mood": [
+    "camp",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "experiment",
+      "conf": 0.9
+    },
+    {
+      "name": "mad_scientist",
+      "conf": 0.85
+    },
+    {
+      "name": "text_heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster for the film Dr. Hackenstein features a scientist holding a vial with a startled expression, alongside a woman's face and laboratory setting."
+}

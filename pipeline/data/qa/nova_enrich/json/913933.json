@@ -1,0 +1,46 @@
+{
+  "title_text": "黄黄美美",
+  "credits_text": "THE INCUBUS STUDIO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "9月9日 物画进店 子港:美美",
+  "mood": [
+    "gothic",
+    "eerie",
+    "haunting",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "portrait",
+      "conf": 0.95
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "occult",
+    "violence",
+    "blood"
+  ],
+  "moderation_notes": "Contains occult imagery and mild violence/blood",
+  "description": "A woman in a red dress stands before a framed portrait of a man with bloodstains, set against a dark, eerie background."
+}

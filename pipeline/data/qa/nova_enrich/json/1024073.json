@@ -1,0 +1,44 @@
+{
+  "title_text": "3 PSYCHOPATHES",
+  "credits_text": "Un film de Jean-Clément Gunter",
+  "languages": [
+    "fr"
+  ],
+  "other_text": "Le mal existait bien avant DECADE et LA FORET DES DEMONS",
+  "mood": [
+    "surreal",
+    "disturbing",
+    "psychological",
+    "horrific"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.6,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains disturbing imagery and occult themes.",
+  "description": "A vibrant yellow poster features a grotesque face with two ghostly figures in the eyes and bold text reading '3 PSYCHOPATHES.'"
+}

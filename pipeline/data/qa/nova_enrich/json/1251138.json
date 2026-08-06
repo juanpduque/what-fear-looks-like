@@ -1,0 +1,45 @@
+{
+  "title_text": "THE LEGEND OF LAKE HOLLOW",
+  "credits_text": "TRUST NO ONE JAMES WEST KYLE BALD GERMAN ATWATER AMES BARLOW AUSTIN COPPS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery",
+    "supernatural",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild hints of violence; no explicit gore or sexual content visible.",
+  "description": "A dark, eerie poster features a large, menacing hand and a group of people facing an unseen threat in a foggy, forested setting."
+}

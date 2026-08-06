@@ -1,0 +1,37 @@
+{
+  "title_text": "THE MEG",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thrilling",
+    "action",
+    "adventure",
+    "sci-fi",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and implied threat from a large shark.",
+  "description": "A poster shows a massive shark's open mouth with a person on an inflatable ring in front, titled 'THE MEG.'"
+}

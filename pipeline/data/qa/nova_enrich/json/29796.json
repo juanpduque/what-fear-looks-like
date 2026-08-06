@@ -1,0 +1,35 @@
+{
+  "title_text": "LETHAL TARGET",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.8,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and action themes.",
+  "description": "A poster shows a close-up of a large, menacing reptilian eye and a woman holding a gun, suggesting an action thriller."
+}

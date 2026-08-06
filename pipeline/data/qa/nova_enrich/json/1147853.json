@@ -1,0 +1,42 @@
+{
+  "title_text": "关以事件中 看你这一面",
+  "credits_text": "SEE YOU TONIGHT",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.3,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatters and dark themes suggesting violence.",
+  "description": "A poster features two individuals in front of a gothic cemetery with blood splatters, suggesting a horror or thriller theme."
+}

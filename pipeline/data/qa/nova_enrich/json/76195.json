@@ -1,0 +1,37 @@
+{
+  "title_text": "CENTIPEDE!",
+  "credits_text": "SHOCKLING ENTERTAINMENT PRESENTS A UNICORN FILMS INTERNATIONAL CO-PRODUCTION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror elements and occult imagery.",
+  "description": "A woman kneels over a skull with a centipede on it, set against a dark, eerie background."
+}

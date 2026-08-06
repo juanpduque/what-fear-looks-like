@@ -1,0 +1,10 @@
+ablation,model,baseline,n,mean,baseline_mean,delta_mean,win,tie,loss,verdict
+homolog_letterbox_1000x1500,qwen-homolog,qwen-v2-w342,35,0.881,0.8581,0.0229,2,32,1,leve; mediana ya en techo
+qwen7b_vs_qwen2b_hard,qwen7b-hard,qwen2b-hard,9,0.5787,0.3982,0.1806,3,6,0,7B ayuda en duros
+kimi_vs_qwen7b_hard,kimi-vl-hard,qwen7b-hard,9,0.6389,0.5787,0.0602,1,6,2,mejor OSS hard
+ppocrv6_vs_qwen7b_hard,ppocrv6-medium,qwen7b-hard,9,0.5231,0.5787,-0.0556,1,6,2,no supera 7B
+crop_vs_full_qwen7b,qwen7b-crop,qwen7b-hard,8,0.5104,0.651,-0.1406,0,5,3,crop empeora
+crop_vs_full_qwen2b,qwen2b-crop,qwen2b-hard,9,0.3241,0.3982,-0.0741,0,8,1,crop empeora
+pixtral_vs_kimi_hard,pixtral,kimi-vl-hard,9,0.8009,0.6389,0.162,3,6,0,cloud gana en hard
+gpt4o_vs_kimi_hard,gpt4o,kimi-vl-hard,9,0.6343,0.6389,-0.0046,2,6,1,cloud competitivo
+gemini_vs_kimi_hard,gemini-flash,kimi-vl-hard,9,0.6157,0.6389,-0.0232,1,7,1,cloud competitivo

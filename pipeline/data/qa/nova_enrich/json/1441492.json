@@ -1,0 +1,42 @@
+{
+  "title_text": "MEGA BLOOD MOON: THE FREELANCER",
+  "credits_text": "LIAM SANTA CRUZ, BEN FLOSS, ALICA CROOK",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SOME JOBS ARE PURE LUNACY",
+  "mood": [
+    "horror",
+    "thriller",
+    "action",
+    "dark",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "moon",
+      "conf": 0.95
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains intense horror elements and graphic violence.",
+  "description": "A man stands in front of a large red moon holding a weapon, with bold red and black text overlay."
+}

@@ -1,0 +1,247 @@
+=== ocr_pilot_chain start Wed Jul 29 13:59:20 UTC 2026 ===
+using python from /opt/pytorch/bin
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+mlflow 3.14.0 requires pandas<3, but you have pandas 3.0.5 which is incompatible.
+sagemaker-core 2.17.0 requires protobuf<7.0.0,>=3.12, but you have protobuf 7.35.1 which is incompatible.
+numba 0.66.0 requires numpy<2.5,>=1.22, but you have numpy 2.5.1 which is incompatible.
+databricks-sdk 0.122.0 requires protobuf!=5.26.*,!=5.27.*,!=5.28.*,!=5.29.0,!=5.29.1,!=5.29.2,!=5.29.3,!=5.29.4,!=6.30.0,!=6.30.1,!=6.31.0,<7.0,>=4.25.8, but you have protobuf 7.35.1 which is incompatible.
+Completed 9 Bytes/9 Bytes (149 Bytes/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot/MODELS to ../../../../tmp/ocr_pilot_MODELS_early
+pinning transformers==4.46.3 for DeepSeek-OCR (official HF requirement)
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+torch 2.13.0+cu130 cuda True
+gpu Tesla T4 vram_gb 15.6
+Completed 145 Bytes/145 Bytes (2.2 KiB/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot/sample_ids.txt to data/qa/ocr_pilot/sample_ids.txt
+Completed 3.8 KiB/3.8 KiB (58.4 KiB/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot/posters.csv to data/posters.csv
+Completed 5.9 KiB/1005.4 KiB (18.8 KiB/s) with 20 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot/posters/1020266.jpg to data/posters/1020266.jpg
+Completed 5.9 KiB/1005.4 KiB (18.8 KiB/s) with 19 file(s) remainingCompleted 70.9 KiB/1005.4 KiB (197.0 KiB/s) with 19 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot/posters/1280376.jpg to data/posters/1280376.jpg
+Completed 70.9 KiB/1005.4 KiB (197.0 KiB/s) with 18 file(s) remainingCompleted 161.8 KiB/1005.4 KiB (440.0 KiB/s) with 18 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot/posters/337558.jpg to data/posters/337558.jpg
+Completed 161.8 KiB/1005.4 KiB (440.0 KiB/s) with 17 file(s) remainingCompleted 173.2 KiB/1005.4 KiB (467.6 KiB/s) with 17 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot/posters/484627.jpg to data/posters/484627.jpg
+Completed 173.2 KiB/1005.4 KiB (467.6 KiB/s) with 16 file(s) remainingCompleted 201.5 KiB/1005.4 KiB (529.0 KiB/s) with 16 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot/posters/1046326.jpg to data/posters/1046326.jpg
+Completed 201.5 KiB/1005.4 KiB (529.0 KiB/s) with 15 file(s) remainingCompleted 253.3 KiB/1005.4 KiB (654.1 KiB/s) with 15 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot/posters/1586019.jpg to data/posters/1586019.jpg
+Completed 253.3 KiB/1005.4 KiB (654.1 KiB/s) with 14 file(s) remainingCompleted 294.8 KiB/1005.4 KiB (757.0 KiB/s) with 14 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot/posters/609245.jpg to data/posters/609245.jpg
+Completed 294.8 KiB/1005.4 KiB (757.0 KiB/s) with 13 file(s) remainingCompleted 374.2 KiB/1005.4 KiB (947.9 KiB/s) with 13 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot/posters/565608.jpg to data/posters/565608.jpg
+Completed 374.2 KiB/1005.4 KiB (947.9 KiB/s) with 12 file(s) remainingCompleted 439.2 KiB/1005.4 KiB (1.1 MiB/s) with 12 file(s) remaining  download: s3://aof-owlv2-102516364259/ocr_pilot/posters/440085.jpg to data/posters/440085.jpg
+Completed 439.2 KiB/1005.4 KiB (1.1 MiB/s) with 11 file(s) remainingCompleted 456.6 KiB/1005.4 KiB (1.1 MiB/s) with 11 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot/posters/484394.jpg to data/posters/484394.jpg
+Completed 456.6 KiB/1005.4 KiB (1.1 MiB/s) with 10 file(s) remainingCompleted 475.0 KiB/1005.4 KiB (1.1 MiB/s) with 10 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot/posters/522987.jpg to data/posters/522987.jpg
+Completed 475.0 KiB/1005.4 KiB (1.1 MiB/s) with 9 file(s) remainingCompleted 502.4 KiB/1005.4 KiB (1.2 MiB/s) with 9 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot/posters/770632.jpg to data/posters/770632.jpg
+Completed 502.4 KiB/1005.4 KiB (1.2 MiB/s) with 8 file(s) remainingCompleted 518.2 KiB/1005.4 KiB (1.2 MiB/s) with 8 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot/posters/818442.jpg to data/posters/818442.jpg
+Completed 518.2 KiB/1005.4 KiB (1.2 MiB/s) with 7 file(s) remainingCompleted 530.0 KiB/1005.4 KiB (1.2 MiB/s) with 7 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot/posters/873668.jpg to data/posters/873668.jpg
+Completed 530.0 KiB/1005.4 KiB (1.2 MiB/s) with 6 file(s) remainingCompleted 638.4 KiB/1005.4 KiB (1.4 MiB/s) with 6 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot/posters/621486.jpg to data/posters/621486.jpg
+Completed 638.4 KiB/1005.4 KiB (1.4 MiB/s) with 5 file(s) remainingCompleted 733.8 KiB/1005.4 KiB (1.6 MiB/s) with 5 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot/posters/1247719.jpg to data/posters/1247719.jpg
+Completed 733.8 KiB/1005.4 KiB (1.6 MiB/s) with 4 file(s) remainingCompleted 753.0 KiB/1005.4 KiB (1.6 MiB/s) with 4 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot/posters/993921.jpg to data/posters/993921.jpg
+Completed 753.0 KiB/1005.4 KiB (1.6 MiB/s) with 3 file(s) remainingCompleted 805.4 KiB/1005.4 KiB (1.7 MiB/s) with 3 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot/posters/763975.jpg to data/posters/763975.jpg
+Completed 805.4 KiB/1005.4 KiB (1.7 MiB/s) with 2 file(s) remainingCompleted 911.0 KiB/1005.4 KiB (1.9 MiB/s) with 2 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot/posters/779247.jpg to data/posters/779247.jpg
+Completed 911.0 KiB/1005.4 KiB (1.9 MiB/s) with 1 file(s) remainingCompleted 1005.4 KiB/1005.4 KiB (2.1 MiB/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot/posters/832310.jpg to data/posters/832310.jpg
+Completed 534 Bytes/534 Bytes (7.6 KiB/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot/sample_meta.csv to data/qa/ocr_pilot/sample_meta.csv
+local posters: 20
+--- verify S3 write ---
+Completed 29 Bytes/29 Bytes (439 Bytes/s) with 1 file(s) remainingupload: data/qa/ocr_pilot/OCR_PILOT_S3_PROBE to s3://aof-owlv2-102516364259/ocr_pilot/results/OCR_PILOT_S3_PROBE
+S3 write OK
+Completed 9 Bytes/9 Bytes (138 Bytes/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot/MODELS to ../../../../tmp/ocr_pilot_MODELS
+MODELS from S3: deepseek
+MODELS=deepseek N=20
+Completed 9.9 KiB/9.9 KiB (127.1 KiB/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot/results/results.csv to data/qa/ocr_pilot/results.csv
+--- run model=deepseek Wed Jul 29 14:01:02 UTC 2026 ---
+sample n=20 → /home/ubuntu/aof/pipeline/data/qa/ocr_pilot/sample_ids.txt
+     id                         title  year
+1586019                      The Cure  2013
+1247719            Fries on the Grass  2024
+ 337558 Witchdoctor of the Livingdead  1986
+ 779247                          Hell  2018
+1280376              The Spider's Web  1912
+ 440085                 KL24: Zombies  2017
+ 763975            Mark of the Damned  2006
+ 621486                       Bite Me  2010
+ 565608       Attack of the Tromaggot  2010
+ 832310                      Verrückt  2021
+ 770632                         Alone  2020
+ 609245      Luminous Void: Docudrama  2019
+ 873668                Are You Ready?  2021
+ 993921                     Let Me Go  2021
+ 484627                  He Will Call  2017
+ 484394                    Door Light  2017
+1020266                           III  2021
+ 522987                   Inside Evil  2017
+ 818442                 The Immigrant  1986
+1046326                     Searchers  2023
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+device=cuda
+append-results: kept 80 rows for models outside ['deepseek']
+
+=== model=deepseek device=cuda n=20 ===
+/opt/pytorch/lib/python3.13/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+A new version of the following files was downloaded from https://huggingface.co/deepseek-ai/DeepSeek-OCR:
+- conversation.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+A new version of the following files was downloaded from https://huggingface.co/deepseek-ai/DeepSeek-OCR:
+- configuration_deepseek_v2.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+A new version of the following files was downloaded from https://huggingface.co/deepseek-ai/DeepSeek-OCR:
+- modeling_deepseekv2.py
+- configuration_deepseek_v2.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+A new version of the following files was downloaded from https://huggingface.co/deepseek-ai/DeepSeek-OCR:
+- deepencoder.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+A new version of the following files was downloaded from https://huggingface.co/deepseek-ai/DeepSeek-OCR:
+- modeling_deepseekocr.py
+- conversation.py
+- modeling_deepseekv2.py
+- deepencoder.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+You are using a model of type deepseek_vl_v2 to instantiate a model of type DeepseekOCR. This is not supported for all configurations of models and can yield errors.
+A new version of the following files was downloaded from https://huggingface.co/deepseek-ai/DeepSeek-OCR:
+- modeling_deepseekocr.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+Downloading shards:   0%|          | 0/1 [00:00<?, ?it/s]Downloading shards: 100%|██████████| 1/1 [00:57<00:00, 57.17s/it]Downloading shards: 100%|██████████| 1/1 [00:57<00:00, 57.17s/it]
+A new version of the following files was downloaded from https://huggingface.co/deepseek-ai/DeepSeek-OCR:
+- modeling_deepseekocr.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+Downloading shards:   0%|          | 0/1 [00:00<?, ?it/s]Downloading shards: 100%|██████████| 1/1 [00:00<00:00, 6374.32it/s]
+Some weights of DeepseekOCRForCausalLM were not initialized from the model checkpoint at deepseek-ai/DeepSeek-OCR and are newly initialized: ['model.vision_model.embeddings.position_ids']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  deepseek loaded: deepseek-ai/DeepSeek-OCR
+/opt/pytorch/lib/python3.13/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+The `seen_tokens` attribute is deprecated and will be removed in v4.41. Use the `cache_position` model input instead.
+`get_max_cache()` is deprecated for all Cache classes. Use `get_max_cache_shape()` instead. Calling `get_max_cache()` will raise error from v4.48
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+The attention layers in this model are transitioning from computing the RoPE embeddings internally through `position_ids` (2D tensor with the indexes of the tokens), to using externally computed `position_embeddings` (Tuple of tensors, containing cos and sin). In v4.46 `position_ids` will be removed and `position_embeddings` will be mandatory.
+  id=1586019 status=ok chars=36 overlap=1.0 7.175s
+/opt/pytorch/lib/python3.13/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1247719 status=ok chars=84 overlap=1.0 2.128s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=337558 status=ok chars=299 overlap=0.5 4.321s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=779247 status=ok chars=37 overlap=0.0 1.327s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1280376 status=ok chars=182 overlap=0.6667 2.626s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=440085 status=ok chars=282 overlap=1.0 4.488s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=763975 status=ok chars=474 overlap=1.0 6.677s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+PATCHES:  torch.Size([2, 100, 1280])
+=====================
+  id=621486 status=ok chars=46 overlap=0.0 2.056s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=565608 status=ok chars=152 overlap=0.25 2.684s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=832310 status=ok chars=10 overlap=1.0 1.094s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=770632 status=ok chars=14 overlap=0.0 1.144s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=609245 status=ok chars=830 overlap=0.0 6.672s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=873668 status=ok chars=1075 overlap=0.3333 8.311s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=993921 status=ok chars=124 overlap=0.0 2.003s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=484627 status=ok chars=4171 overlap=0.0 39.904s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=484394 status=ok chars=122 overlap=0.0 1.869s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1020266 status=ok chars=3 overlap=0.0 0.955s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=522987 status=ok chars=13 overlap=0.0 1.095s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=818442 status=ok chars=5897 overlap=0.0 49.459s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1046326 status=ok chars=9 overlap=1.0 0.982s
+
+LISTO → /home/ubuntu/aof/pipeline/data/qa/ocr_pilot/results.csv (100 rows)
+model=deepseek exit=0
+uploaded s3://aof-owlv2-102516364259/ocr_pilot/results/results.csv (24204 bytes)
+uploaded s3://aof-owlv2-102516364259/ocr_pilot/results/ocr_pilot_aws.log (15831 bytes)
+uploaded_count=2
+Completed 9 Bytes/~5.1 KiB (271 Bytes/s) with ~10 file(s) remaining (calculating...)upload: data/qa/ocr_pilot/deepseek/1046326.txt to s3://aof-owlv2-102516364259/ocr_pilot/results/deepseek/1046326.txt
+Completed 9 Bytes/~5.2 KiB (271 Bytes/s) with ~10 file(s) remaining (calculating...)Completed 308 Bytes/29.9 KiB (4.3 KiB/s) with 22 file(s) remaining                  upload: data/qa/ocr_pilot/deepseek/337558.txt to s3://aof-owlv2-102516364259/ocr_pilot/results/deepseek/337558.txt
+Completed 308 Bytes/29.9 KiB (4.3 KiB/s) with 21 file(s) remainingCompleted 1.1 KiB/29.9 KiB (10.4 KiB/s) with 21 file(s) remaining upload: data/qa/ocr_pilot/deepseek/609245.txt to s3://aof-owlv2-102516364259/ocr_pilot/results/deepseek/609245.txt
+Completed 1.1 KiB/29.9 KiB (10.4 KiB/s) with 20 file(s) remainingCompleted 1.2 KiB/29.9 KiB (8.7 KiB/s) with 20 file(s) remaining upload: data/qa/ocr_pilot/deepseek/621486.txt to s3://aof-owlv2-102516364259/ocr_pilot/results/deepseek/621486.txt
+Completed 1.2 KiB/29.9 KiB (8.7 KiB/s) with 19 file(s) remainingCompleted 1.6 KiB/29.9 KiB (9.1 KiB/s) with 19 file(s) remainingupload: data/qa/ocr_pilot/deepseek/763975.txt to s3://aof-owlv2-102516364259/ocr_pilot/results/deepseek/763975.txt
+Completed 1.6 KiB/29.9 KiB (9.1 KiB/s) with 18 file(s) remainingCompleted 1.6 KiB/29.9 KiB (7.9 KiB/s) with 18 file(s) remainingupload: data/qa/ocr_pilot/deepseek/770632.txt to s3://aof-owlv2-102516364259/ocr_pilot/results/deepseek/770632.txt
+Completed 1.6 KiB/29.9 KiB (7.9 KiB/s) with 17 file(s) remainingCompleted 1.7 KiB/29.9 KiB (7.2 KiB/s) with 17 file(s) remainingupload: data/qa/ocr_pilot/deepseek/779247.txt to s3://aof-owlv2-102516364259/ocr_pilot/results/deepseek/779247.txt
+Completed 1.7 KiB/29.9 KiB (7.2 KiB/s) with 16 file(s) remainingCompleted 1.8 KiB/29.9 KiB (7.4 KiB/s) with 16 file(s) remainingupload: data/qa/ocr_pilot/deepseek/1247719.txt to s3://aof-owlv2-102516364259/ocr_pilot/results/deepseek/1247719.txt
+Completed 1.8 KiB/29.9 KiB (7.4 KiB/s) with 15 file(s) remainingCompleted 1.9 KiB/29.9 KiB (7.4 KiB/s) with 15 file(s) remainingupload: data/qa/ocr_pilot/deepseek/993921.txt to s3://aof-owlv2-102516364259/ocr_pilot/results/deepseek/993921.txt
+Completed 1.9 KiB/29.9 KiB (7.4 KiB/s) with 14 file(s) remainingCompleted 2.0 KiB/29.9 KiB (7.7 KiB/s) with 14 file(s) remainingupload: data/qa/ocr_pilot/sample_ids.txt to s3://aof-owlv2-102516364259/ocr_pilot/results/sample_ids.txt
+Completed 2.0 KiB/29.9 KiB (7.7 KiB/s) with 13 file(s) remainingCompleted 7.8 KiB/29.9 KiB (26.8 KiB/s) with 13 file(s) remainingupload: data/qa/ocr_pilot/deepseek/818442.txt to s3://aof-owlv2-102516364259/ocr_pilot/results/deepseek/818442.txt
+Completed 7.8 KiB/29.9 KiB (26.8 KiB/s) with 12 file(s) remainingCompleted 8.3 KiB/29.9 KiB (27.0 KiB/s) with 12 file(s) remainingupload: data/qa/ocr_pilot/sample_meta.csv to s3://aof-owlv2-102516364259/ocr_pilot/results/sample_meta.csv
+Completed 8.3 KiB/29.9 KiB (27.0 KiB/s) with 11 file(s) remainingCompleted 23.9 KiB/29.9 KiB (73.4 KiB/s) with 11 file(s) remainingupload: data/qa/ocr_pilot/ocr_pilot_aws.log to s3://aof-owlv2-102516364259/ocr_pilot/results/ocr_pilot_aws.log
+Completed 23.9 KiB/29.9 KiB (73.4 KiB/s) with 10 file(s) remainingCompleted 23.9 KiB/29.9 KiB (72.3 KiB/s) with 10 file(s) remainingupload: data/qa/ocr_pilot/deepseek/832310.txt to s3://aof-owlv2-102516364259/ocr_pilot/results/deepseek/832310.txt
+Completed 23.9 KiB/29.9 KiB (72.3 KiB/s) with 9 file(s) remainingCompleted 28.0 KiB/29.9 KiB (84.3 KiB/s) with 9 file(s) remainingupload: data/qa/ocr_pilot/deepseek/484627.txt to s3://aof-owlv2-102516364259/ocr_pilot/results/deepseek/484627.txt
+Completed 28.0 KiB/29.9 KiB (84.3 KiB/s) with 8 file(s) remainingCompleted 28.0 KiB/29.9 KiB (84.2 KiB/s) with 8 file(s) remainingupload: data/qa/ocr_pilot/deepseek/522987.txt to s3://aof-owlv2-102516364259/ocr_pilot/results/deepseek/522987.txt
+Completed 28.0 KiB/29.9 KiB (84.2 KiB/s) with 7 file(s) remainingCompleted 28.2 KiB/29.9 KiB (84.5 KiB/s) with 7 file(s) remainingupload: data/qa/ocr_pilot/deepseek/565608.txt to s3://aof-owlv2-102516364259/ocr_pilot/results/deepseek/565608.txt
+Completed 28.2 KiB/29.9 KiB (84.5 KiB/s) with 6 file(s) remainingCompleted 28.2 KiB/29.9 KiB (84.1 KiB/s) with 6 file(s) remainingupload: data/qa/ocr_pilot/deepseek/1586019.txt to s3://aof-owlv2-102516364259/ocr_pilot/results/deepseek/1586019.txt
+Completed 28.2 KiB/29.9 KiB (84.1 KiB/s) with 5 file(s) remainingCompleted 28.2 KiB/29.9 KiB (83.9 KiB/s) with 5 file(s) remainingupload: data/qa/ocr_pilot/deepseek/1020266.txt to s3://aof-owlv2-102516364259/ocr_pilot/results/deepseek/1020266.txt
+Completed 28.2 KiB/29.9 KiB (83.9 KiB/s) with 4 file(s) remainingCompleted 28.5 KiB/29.9 KiB (83.5 KiB/s) with 4 file(s) remainingupload: data/qa/ocr_pilot/deepseek/440085.txt to s3://aof-owlv2-102516364259/ocr_pilot/results/deepseek/440085.txt
+Completed 28.5 KiB/29.9 KiB (83.5 KiB/s) with 3 file(s) remainingCompleted 28.6 KiB/29.9 KiB (83.5 KiB/s) with 3 file(s) remainingupload: data/qa/ocr_pilot/deepseek/484394.txt to s3://aof-owlv2-102516364259/ocr_pilot/results/deepseek/484394.txt
+Completed 28.6 KiB/29.9 KiB (83.5 KiB/s) with 2 file(s) remainingCompleted 28.8 KiB/29.9 KiB (83.9 KiB/s) with 2 file(s) remainingupload: data/qa/ocr_pilot/deepseek/1280376.txt to s3://aof-owlv2-102516364259/ocr_pilot/results/deepseek/1280376.txt
+Completed 28.8 KiB/29.9 KiB (83.9 KiB/s) with 1 file(s) remainingCompleted 29.9 KiB/29.9 KiB (81.8 KiB/s) with 1 file(s) remainingupload: data/qa/ocr_pilot/deepseek/873668.txt to s3://aof-owlv2-102516364259/ocr_pilot/results/deepseek/873668.txt
+[checkpoint] synced after deepseek
+Completed 32 Bytes/32 Bytes (462 Bytes/s) with 1 file(s) remainingupload: data/qa/ocr_pilot/DONE to s3://aof-owlv2-102516364259/ocr_pilot/results/DONE
+uploaded s3://aof-owlv2-102516364259/ocr_pilot/results/results.csv (24204 bytes)
+uploaded s3://aof-owlv2-102516364259/ocr_pilot/results/ocr_pilot_aws.log (21855 bytes)
+uploaded_count=2

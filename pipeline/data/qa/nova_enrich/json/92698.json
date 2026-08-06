@@ -1,0 +1,41 @@
+{
+  "title_text": "PROJECT: METALBEAST",
+  "credits_text": "KIM DELANEY BARRY BOSTWICK MUSETTA VANDER AND KANE HODDER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "RESTRICTED\nTHEY WANTED A SOLDIER\nAS HARD AS STEEL\nTHEY CREATED A CREATURE\nTHAT COULD NOT BE DESTROYED",
+  "mood": [
+    "action",
+    "sci-fi",
+    "horror",
+    "intense",
+    "dystopian"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.1,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and horror elements, including a menacing creature.",
+  "description": "The poster features a fierce, metallic creature with sharp teeth and glowing eyes, set against a dark, industrial background with bold red and white text."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "Cheeky Cheeky",
+  "credits_text": "A Howard-Sawt Film",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "surreal",
+    "eerie",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and disturbing visuals.",
+  "description": "The poster features a dark, eerie scene with a prominent face and the title 'Cheeky Cheeky' in red text."
+}

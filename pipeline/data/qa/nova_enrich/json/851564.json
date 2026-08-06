@@ -1,0 +1,38 @@
+{
+  "title_text": "閉院のホスピタル",
+  "credits_text": "一病死にも負けず生き残った医師の物語",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "",
+  "mood": [
+    "haunting",
+    "desolate",
+    "eerie",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "abandoned",
+      "conf": 0.9
+    },
+    {
+      "name": "hospital",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A desolate hospital scene with an abandoned bed and a shadowy figure, evoking a haunting and eerie atmosphere."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "THE MONKEY",
+  "credits_text": "\"The Monkey\" based upon the story by STEPHEN KING and written and directed by SPENCER SHERRY produced by JOE GLEEN, LAUREN LEEDY, SPENCER SHERRY, STEVEN COCHRAN, JOSHUA SHERBY, NATHANIEL WOODS, and SPENCER SHERRY Cinematography by CONNOR GROCKE Music by RAY ROSENBERG Editing by NATHALIE SZLAK and COLE PRATT Sound Design by THOMAS W. HANNA and JON BRESSNER Lauren WOODS and COULIN FRAT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "based upon the story by STEPHEN KING",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "water",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.1,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, stormy poster features a solitary figure on a dock overlooking a lake, with ominous clouds and a red handprint on the title."
+}

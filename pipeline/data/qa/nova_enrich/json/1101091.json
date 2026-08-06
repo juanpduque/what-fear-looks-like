@@ -1,0 +1,46 @@
+{
+  "title_text": "武害消屋面2_本当にあった",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "影像の内を少してのべる、影像の内にあることを少してのべる",
+  "mood": [
+    "dread",
+    "gothic",
+    "haunting",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains intense horror themes and disturbing imagery.",
+  "description": "A poster shows a long-haired figure with a mask, gripping a door in a dilapidated room, evoking horror and suspense."
+}

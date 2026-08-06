@@ -1,0 +1,42 @@
+{
+  "title_text": "MISTERI PAMULANG",
+  "credits_text": "KARYA 4ZZ4V| MUSIK OLEH MUSISI ASAL KEDOYA CEMARA WEDA LUQMAN SKI ALDIANSYAH AZURA TANIA TOMATOPOI",
+  "languages": [
+    "id"
+  ],
+  "other_text": "100% SHOOTING DI PAMULANG! KOLONG SINEMA MEMPERSEBAHKAN PERHATIAN!!! WANITA HAMIL DAN BERPENYAKIT JANTUNG DILARANG NONTON!!!",
+  "mood": [
+    "horror",
+    "thriller",
+    "gothic",
+    "dread",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatters and intense horror imagery.",
+  "description": "A horror movie poster featuring a central figure with blood splatters and dramatic red drips, accompanied by bold text and credits."
+}

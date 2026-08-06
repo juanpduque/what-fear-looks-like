@@ -1,0 +1,40 @@
+{
+  "title_text": "Clown Footage",
+  "credits_text": "from the director of Slasher Night & Election Night\n\na Manny Velazquez film",
+  "languages": [
+    "en"
+  ],
+  "other_text": "OREC",
+  "mood": [
+    "horror",
+    "disturbing",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests horror themes with potential violence.",
+  "description": "The poster features a distorted clown face with eerie red lighting and the title 'Clown Footage' prominently displayed."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "INSIDIOUS CHAPTER 2",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "terrifying",
+    "suspenseful",
+    "haunting",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains themes of horror and occult, with potential for mild violence.",
+  "description": "Poster shows a frightened woman and children with a ghostly figure in the background, set in a dimly lit room with red lighting."
+}

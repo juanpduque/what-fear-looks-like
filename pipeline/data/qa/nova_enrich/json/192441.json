@@ -1,0 +1,45 @@
+{
+  "title_text": "The Devil's Gravestone",
+  "credits_text": "ELLE LeMONT JOE NEMMERS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A Gritty City Film From The Blood Of This City God's Shadow Will Be Born",
+  "mood": [
+    "gothic",
+    "dread",
+    "gritty",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains violent imagery and occult themes.",
+  "description": "Poster features a woman holding a gun in a desolate graveyard, with a fiery background and a menacing face above."
+}

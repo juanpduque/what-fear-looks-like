@@ -1,0 +1,50 @@
+{
+  "title_text": "精然等 VS 哈子美丽",
+  "credits_text": "結影年版 演底山",
+  "languages": [
+    "zh"
+  ],
+  "other_text": "11月开开届 影主影主 影主影主 影主影主 影主影主",
+  "mood": [
+    "horror",
+    "thriller",
+    "supernatural",
+    "suspense",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.1,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains horror elements including monstrous figures and implied violence.",
+  "description": "A poster features a large, menacing pumpkin face with glowing eyes and jagged teeth, surrounded by shadowy figures and eerie Halloween-themed imagery."
+}

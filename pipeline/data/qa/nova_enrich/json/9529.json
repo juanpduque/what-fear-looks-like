@@ -1,0 +1,39 @@
+{
+  "title_text": "CANDYMAN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "surreal",
+    "eerie",
+    "psychological",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "eye",
+      "conf": 0.95
+    },
+    {
+      "name": "bee",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.7,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A close-up of an eye with a bee on the iris, a shadowy figure in the background, and the title 'CANDYMAN' prominently displayed."
+}

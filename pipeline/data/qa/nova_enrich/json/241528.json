@@ -1,0 +1,50 @@
+{
+  "title_text": "INFINITE SANTA 8000",
+  "credits_text": "DIRECTOR'S CUT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Synapse Films",
+  "mood": [
+    "surreal",
+    "dark",
+    "festive",
+    "chaotic",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.1,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A surreal poster features a monstrous Santa Claus amidst chaotic, grotesque creatures and mechanical elements, with a dark, festive atmosphere."
+}

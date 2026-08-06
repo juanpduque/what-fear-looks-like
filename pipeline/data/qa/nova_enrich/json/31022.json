@@ -1,0 +1,43 @@
+{
+  "title_text": "AFTERMATH SPECIAL EDITION",
+  "credits_text": "UN FILM DE NACHO CERDA",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "NUEVA VERSION REMASTERIZADA EN HI-FI STEREO. SECUENCIA DE 25 MIN. TRAILERS DE PROMOCION. \"THE AWAKENING\" FILM DE CERDA RODADO EN USA. ENTREVISTAS CON SUS CRACOS, EDITOR FX, JORG BUTTENBREY Y NACHITO CERDA",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    },
+    {
+      "name": "gore",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.9,
+  "sexual_content": 0.7,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, gore, and sexual content.",
+  "description": "Poster shows a mutilated body on a table with blood, titled 'Aftermath Special Edition' by Nacho Cerda."
+}

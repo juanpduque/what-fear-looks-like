@@ -1,0 +1,43 @@
+{
+  "title_text": "TROUBLE EVERY DAY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horrific",
+    "gothic",
+    "erotic",
+    "surreal",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 1.0,
+  "violence": 1.0,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, with potential sexual undertones.",
+  "description": "A collage of a woman's face with blood splatters, accompanied by the title 'TROUBLE EVERY DAY' in bold white letters."
+}

@@ -1,0 +1,35 @@
+{
+  "title_text": "HEADLESS HORSEMAN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features a violent and eerie theme with a headless rider on horseback.",
+  "description": "A dark, moody poster shows a headless rider on a horse, with dramatic red lettering for the title."
+}

@@ -1,0 +1,37 @@
+{
+  "title_text": "CUPCAKE",
+  "credits_text": "WRITTEN AND DIRECTED BY REBECCA THOMSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A ZOMBIE LESBIAN MUSICAL",
+  "mood": [
+    "camp",
+    "horror",
+    "musical",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "zombie",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and zombie imagery.",
+  "description": "Poster shows two costumed individuals covered in fake blood, with bold red and blue text reading 'CUPCAKE: A ZOMBIE LESBIAN MUSICAL.'"
+}

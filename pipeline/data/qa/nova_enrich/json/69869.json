@@ -1,0 +1,40 @@
+{
+  "title_text": "THE HOUSE ON TOMBSTONE HILL",
+  "credits_text": "A FILM BY JAMES RIFFEL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.95
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence through the knife and tense atmosphere.",
+  "description": "A poster shows a large knife held by two hands against a dark, eerie background with a house and tombstones."
+}

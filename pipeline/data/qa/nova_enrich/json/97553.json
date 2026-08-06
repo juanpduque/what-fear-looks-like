@@ -1,0 +1,46 @@
+{
+  "title_text": "CORPSE EATERS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gothic",
+    "camp",
+    "eerie",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.5,
+  "sensitive": [
+    "sexual",
+    "violence"
+  ],
+  "moderation_notes": "Contains suggestive imagery and mild violent hints.",
+  "description": "A poster shows a man and woman in a tense scene before a mansion with fire nearby. The title 'CORPSE EATERS' is prominently displayed."
+}

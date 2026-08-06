@@ -1,0 +1,45 @@
+{
+  "title_text": "CHRISTMAS SLAY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "dark",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A poster shows an aged Santa Claus with a stern expression holding a large axe, with a woman in the background in a dark forest setting."
+}

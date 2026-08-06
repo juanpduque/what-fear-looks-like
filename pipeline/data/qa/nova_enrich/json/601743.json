@@ -1,0 +1,46 @@
+{
+  "title_text": "VHS VIOLENCE",
+  "credits_text": "FROM THE DIRECTORS OF HEMESIS 5 AND GRINDSPLOITATION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "UNRATED",
+  "mood": [
+    "dread",
+    "gritty",
+    "violent",
+    "retro",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intended for mature audiences.",
+  "description": "A masked figure holds an axe in front of a vintage TV, with a gritty, blood-splattered background and bold title text."
+}

@@ -1,0 +1,51 @@
+{
+  "title_text": "STRANGE RITUALS",
+  "credits_text": "LARA JEAN LUMMER MAURA VARNER JEREMY KOEGNER PAUL SPADARO SKIPPER ELLEVACH \"STRANGE RITUALS\" MIKE ONSORE JUSTIN NOSE WILK BURNS \"MIKE\" MICHAEL FREDIANELLI \"MIKE\" MICHAEL FREDIANELLI \"WE\" STEPHANIE HANCOCK",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A WILD DOGS PRODUCTION",
+  "mood": [
+    "surreal",
+    "occult",
+    "gothic",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.5,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "occult",
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains occult imagery and mild violence.",
+  "description": "Poster features a central shirtless man with snakes, surrounded by a group of people in a dark, eerie setting."
+}

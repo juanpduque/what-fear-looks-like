@@ -1,0 +1,46 @@
+{
+  "title_text": "EDMUND KEMPER'S LA MORT SEVIL",
+  "credits_text": "A film by MICHAEL BRISSET produced by KORE BRISSET",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TOXIC PRODUCTIONS",
+  "mood": [
+    "gruesome",
+    "violent",
+    "horror",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.2,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.95,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore.",
+  "description": "A poster shows a central figure covered in blood with severed body parts around, featuring bold red text and disturbing imagery."
+}

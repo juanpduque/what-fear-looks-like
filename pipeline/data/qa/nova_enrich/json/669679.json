@@ -1,0 +1,41 @@
+{
+  "title_text": "SCHATTEN AUS DER ZEIT",
+  "credits_text": "H.P. LOVECRAFT: DIE PHANTASTISCHEN ERLEBNISSE EINES PROFESSORS - ANTON DIFFRING, INGRID RESCH",
+  "languages": [
+    "de"
+  ],
+  "other_text": "PIDAX FILM-KLASSIKER 2DF FSK ab 16 freigegeben",
+  "mood": [
+    "gothic",
+    "surreal",
+    "mystery",
+    "sci-fi",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and eerie imagery.",
+  "description": "A poster for the film 'Shadows from Time' featuring a man and a woman with glowing eyes, evoking a gothic and surreal atmosphere."
+}

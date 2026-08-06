@@ -1,0 +1,46 @@
+{
+  "title_text": "NIGHT FRIGHT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "horror",
+    "intense",
+    "terrifying",
+    "chaotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains intense horror imagery with implied violence and gore.",
+  "description": "The poster features a menacing monster face with sharp teeth against a fiery background, with a town scene in the distance."
+}

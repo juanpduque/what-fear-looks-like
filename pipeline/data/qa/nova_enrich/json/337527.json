@@ -1,0 +1,35 @@
+{
+  "title_text": "The Diary of Alice Applebee",
+  "credits_text": "CHRIS JEHAN, KATIE FLYNN, MAX TACHON, A STORY BY ROSSELLE DUBEC, A JACK LA MARE PRODUCTION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A JACK LA MARE PRODUCTION",
+  "mood": [
+    "melancholy",
+    "mystery",
+    "introspective",
+    "haunting",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dimly lit poster features a solitary figure silhouetted against a bright light, with the title 'The Diary of Alice Applebee' and cast credits displayed."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "MR. WATERMELON-HEAD",
+  "credits_text": "\"COME TAKE A BITE.\" A FILM BY SCOTTIE HUTCHENS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WatermelonHead Productions",
+  "mood": [
+    "camp",
+    "horror",
+    "quirky",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood imagery.",
+  "description": "A poster features a bold red watermelon slice with a shadowy figure and dripping red liquid, promoting a film titled 'Mr. Watermelon-Head.'"
+}

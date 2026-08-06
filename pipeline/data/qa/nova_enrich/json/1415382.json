@@ -1,0 +1,42 @@
+{
+  "title_text": "BLOOD PAY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "cyberpunk",
+    "sci-fi",
+    "thriller",
+    "dark",
+    "futuristic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and gore through the skull imagery and dark aesthetic.",
+  "description": "A split screen shows a human face on one side and a robotic skull on the other, framed by neon lights with the title 'BLOOD PAY' below."
+}

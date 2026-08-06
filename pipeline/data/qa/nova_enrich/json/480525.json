@@ -1,0 +1,47 @@
+{
+  "title_text": "DRIVE-IN SPLATTER HOUSE",
+  "credits_text": "Adam & Eve Pictures Old Mill Entertainment",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DRIVE-IN, CARRIED OUT.",
+  "mood": [
+    "camp",
+    "horror",
+    "erotic",
+    "violent",
+    "satirical"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.2,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "Movie poster features a group of people in a horror-themed setting with weapons and blood, suggesting a violent, campy horror film."
+}

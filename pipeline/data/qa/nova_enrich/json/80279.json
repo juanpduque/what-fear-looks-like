@@ -1,0 +1,43 @@
+{
+  "title_text": "BLIND ALLEY",
+  "credits_text": "A threat in the shadows\nA night to survive\nA film by Antonio Trashorras",
+  "languages": [
+    "en"
+  ],
+  "other_text": "From the writer of DEVIL'S BACKBONE and the producers of JULIA'S EYES",
+  "mood": [
+    "tense",
+    "suspenseful",
+    "dark",
+    "mysterious",
+    "anxious"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "shadows",
+      "conf": 0.7
+    },
+    {
+      "name": "night",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic poster features a woman reaching out with a tense expression against a dark, shadowy alley background."
+}

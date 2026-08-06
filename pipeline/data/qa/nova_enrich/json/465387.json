@@ -1,0 +1,40 @@
+{
+  "title_text": "தமிழ் திகில் முக்கிலக்கு",
+  "credits_text": "BEWARE OF GHOST",
+  "languages": [
+    "en",
+    "ta"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "supernatural",
+    "suspense",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A group of people with eerie expressions are featured on a dark blue background, with the title \"BEWARE OF GHOST\" prominently displayed above them."
+}

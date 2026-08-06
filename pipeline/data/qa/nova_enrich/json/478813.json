@@ -1,0 +1,42 @@
+{
+  "title_text": "BLOOD BOY",
+  "credits_text": "FROM THE DIRECTOR OF ALIEN BEASTS CARL J. SUKENICK'S",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "violent",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and a monstrous face.",
+  "description": "The poster features a grotesque, bloodied face with sharp teeth and a menacing expression against a dark background."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "SALLY",
+  "credits_text": "Never again. A Region Pictures Production of a Chad Ferrin Film. Stars: Mackenzie Wyn, Lee Bradshaw, David Browning, Brian Gunter",
+  "languages": [
+    "en"
+  ],
+  "other_text": "She escaped one nightmare, only to end up in another...",
+  "mood": [
+    "dread",
+    "horror",
+    "psychological",
+    "disturbing",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A poster shows a distressed woman covered in blood holding a weapon, with a car in the background and dramatic text."
+}

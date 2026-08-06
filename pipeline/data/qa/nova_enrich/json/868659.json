@@ -1,0 +1,44 @@
+{
+  "title_text": "EL DEMONIO EN LA SANGRE",
+  "credits_text": "ROSITA QUINTANA, ARTURO GARCIA BUHR, URALDO-MARTINEZ PINKY, ERNESTO BIANCO, LIDIA LAMASU, WOLF RAVISKY, GRACIELA DUFFAU, NIDA MAYOR, MIGUEL SEGOVIA",
+  "languages": [
+    "es"
+  ],
+  "other_text": "RENE MUSKA, 1968, AGUSTO ROD BASIOS-TOMAS ELOY MARTINEZ, RODOLFO ARIZAGA, COLUMBIA PICTURES",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "The poster suggests themes of occult horror and potential violence.",
+  "description": "A vintage movie poster features dramatic faces and dark imagery, with bold title text and cast names listed prominently."
+}

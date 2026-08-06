@@ -1,0 +1,46 @@
+{
+  "title_text": "ILMU API",
+  "credits_text": "NICKY HIRADA EMIL GERY RORY BAIN ERVELYN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PENAKLUN",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "violent",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; suitable for mature audiences only.",
+  "description": "A horror poster featuring a gruesome scene with a person surrounded by blood and dark figures, titled 'ILMU API'."
+}

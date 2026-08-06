@@ -1,0 +1,42 @@
+{
+  "title_text": "THE Z EFFECT",
+  "credits_text": "DOUG WILCOX III, MICHAEL NAVAS, DEANNA MESSE, STEPHANIE HONDRE, SCOTT SCHULTZ, STEPHANIE GRAUE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ABERYMORE PRODUCTION",
+  "mood": [
+    "intense",
+    "thriller",
+    "action",
+    "suspense",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "blood",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.5,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A group of individuals stands in a dark, intense setting with a weapon visible, suggesting a thriller or action genre."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "結影",
+  "credits_text": "「結れる悪物、心物撃純 20年」 DVD",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "女女の悪物を屋えたとか、女女の悪物を屋えた。",
+  "mood": [
+    "dread",
+    "horror",
+    "gothic",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.85,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and monstrous creatures.",
+  "description": "A poster features a central figure surrounded by grotesque, monstrous beings with visible blood and decay, set against a dark, eerie background."
+}

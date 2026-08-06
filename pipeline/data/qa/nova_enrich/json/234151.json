@@ -1,0 +1,46 @@
+{
+  "title_text": "ATTACK of the VEGAN ZOMBIES",
+  "credits_text": "A JIM TOWNSEND FILM\nCHRISTINE EGAN\nJIM TOWNSEND\nH. LYNN SMITH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"A VERY UNIQUE ZOMBIE FILM THAT WILL NO DOUBT BECOME A CULT FAVORITE\"\n\"THIS IS THE MOVIE YOU WATCH WITH AN EYE TO THE FUTURE\"\n\"ZERO TRANS FATS HAS NEVER BEEN SO DEADLY!\"",
+  "mood": [
+    "camp",
+    "horror",
+    "satirical",
+    "dark humor",
+    "zombie"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore typical of zombie genre.",
+  "description": "Poster features a group of people, including zombies, in a vineyard setting with a sword-wielding character and dramatic text overlays."
+}

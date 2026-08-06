@@ -1,0 +1,45 @@
+{
+  "title_text": "OUTPOST II",
+  "credits_text": "BLACK SUN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "war",
+    "gritty",
+    "historical",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "soldier",
+      "conf": 0.9
+    },
+    {
+      "name": "helmet",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts military themes and potential violence, but no explicit gore or nudity is visible.",
+  "description": "A poster for 'Outpost II: Black Sun' features a stern soldier in the foreground with soldiers in the background, set against a dark, war-torn landscape."
+}

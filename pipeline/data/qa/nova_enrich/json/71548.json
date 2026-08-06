@@ -1,0 +1,45 @@
+{
+  "title_text": "THE DEAD AND THE DAMNED",
+  "credits_text": "THE LEGEND OF THE LIVING DEAD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "zombie",
+    "western",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "zombie",
+      "conf": 0.9
+    },
+    {
+      "name": "gun",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "horse",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.6,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery typical of horror genre.",
+  "description": "Poster features two zombie-like figures in western attire, one holding a gun, set against a dark, eerie background with skeletal trees."
+}

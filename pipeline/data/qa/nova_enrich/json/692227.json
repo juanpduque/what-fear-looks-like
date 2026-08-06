@@ -1,0 +1,40 @@
+{
+  "title_text": "MAGICK",
+  "credits_text": "Christopher Zeischegg",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE",
+  "mood": [
+    "mysterious",
+    "haunting",
+    "gothic",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and a mysterious, possibly supernatural atmosphere.",
+  "description": "A black-and-white poster features a shadowy figure lying on the ground with the title 'MAGICK' prominently displayed above."
+}

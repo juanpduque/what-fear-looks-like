@@ -1,0 +1,35 @@
+{
+  "title_text": "ALIEN SHARK",
+  "credits_text": "ALFENBACH SELVA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A PREDATOR FROM BEYOND THE STARS",
+  "mood": [
+    "action",
+    "horror",
+    "sci-fi",
+    "thriller",
+    "adventure"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.1,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A woman faces a giant alien shark in a dramatic ocean scene, with stormy waves and a futuristic ship in the background."
+}

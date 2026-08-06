@@ -1,0 +1,46 @@
+{
+  "title_text": "KİTANI",
+  "credits_text": "A SERIES BY SYAFI HALIM\nSAFARAY, WAJIZ ZAMRI, ZAINAL BOSTAMAN, HAZIQ ZUHAIRAN, TIPPI KONG, AMIR HIE, RIFAD HALIM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WHAT WOULD YOU SACRIFICE FOR HUMANITY\nA PROGRESS MEDIA ORGANISATION",
+  "mood": [
+    "tense",
+    "survival",
+    "forest",
+    "action",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A group of people in a forest, one holding a bow and arrow, with a tense and survivalist atmosphere."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "NINJA VS SHARK",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "ニンジャ VS シャーク",
+  "mood": [
+    "action",
+    "fantasy",
+    "camp",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "water",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a monstrous creature.",
+  "description": "A ninja battles a giant shark on a rocky outcrop, with dramatic lighting and a stormy background."
+}

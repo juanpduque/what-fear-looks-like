@@ -1,0 +1,46 @@
+{
+  "title_text": "JUAN OF THE DEAD",
+  "credits_text": "He's Havana Killer Day.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "comedy",
+    "zombie",
+    "action",
+    "satirical"
+  ],
+  "fear_labels": [
+    {
+      "name": "zombie",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild violent and gory imagery typical of zombie genre.",
+  "description": "A man stands defiantly in front of a Cuban flag, surrounded by zombie hands, holding a weapon with a determined expression."
+}

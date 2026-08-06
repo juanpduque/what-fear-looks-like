@@ -1,0 +1,46 @@
+{
+  "title_text": "CURAS ZOMBIS EN AZUL",
+  "credits_text": "ESTANISLAO PEDRERA CAROLINA COSTAS SEBASTIAN IENCO Y ARIEL SUAREZ CON LA PARTICIPACION ESPECIAL DE MOSQUITO SANCINETO. LOS CATACLISMOS Y THE FUZZY GIRLS",
+  "languages": [
+    "es"
+  ],
+  "other_text": "SUDAX PRESENTA LA PRIMER ZOMBILLYMEDIA",
+  "mood": [
+    "horror",
+    "zombie",
+    "gothic",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster features a zombie priest with bloodied hands and a cross, promoting a horror film titled 'Curas Zombies en Azul'."
+}

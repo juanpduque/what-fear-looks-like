@@ -1,0 +1,48 @@
+{
+  "title_text": "CHILLS DOWN YOUR SPINE",
+  "credits_text": "DEAD LANTERN PRESENTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gothic",
+    "camp",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "crowd",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "nudity"
+  ],
+  "moderation_notes": "Mild nudity visible on one character.",
+  "description": "A colorful poster features a group of diverse characters, including a bald man, a blonde woman, and a masked figure, set against a dark, eerie background with a haunted house and lightning."
+}

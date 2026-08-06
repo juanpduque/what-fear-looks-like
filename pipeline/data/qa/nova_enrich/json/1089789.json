@@ -1,0 +1,39 @@
+{
+  "title_text": "SMOTHER",
+  "credits_text": "A FILM BY ACHMED ABDEL-SALAM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FEAR RUNS IN THE FAMILY",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "family",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "family",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, moody poster features a woman and a child with a shadowy figure behind them, suggesting a psychological horror theme."
+}

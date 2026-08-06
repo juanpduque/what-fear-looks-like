@@ -1,0 +1,40 @@
+{
+  "title_text": "SANA: LET ME HEAR",
+  "credits_text": "NOVEMBER 13",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "SOMEONE IN THIS CLASSROOM SHOULD NOT BE HERE\nIF SHE FINDS YOU, YOU'LL BE KILLED",
+  "mood": [
+    "dread",
+    "suspense",
+    "psychological horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "classroom",
+      "conf": 0.8
+    },
+    {
+      "name": "threatening",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied threat of violence; no explicit graphic content shown.",
+  "description": "A classroom scene with students and a central figure pointing forward; ominous warning text overlays the image."
+}

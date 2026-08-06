@@ -1,0 +1,43 @@
+{
+  "title_text": "ATAUD+BLANCO",
+  "credits_text": "EL JUEGO DIABOLICO",
+  "languages": [
+    "es"
+  ],
+  "other_text": "HAY JUEGOS QUE ES MEJOR NO JUGAR",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery",
+    "supernatural",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "occult",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.3,
+  "person": 0.4,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and occult themes.",
+  "description": "A dark poster features a shattered mirror with a hand and blood, framed in ornate design, promoting a horror film titled 'ATAUD+BLANCO'."
+}

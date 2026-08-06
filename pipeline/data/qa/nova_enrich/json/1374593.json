@@ -1,0 +1,40 @@
+{
+  "title_text": "ШЕНЕ ДУХДЫИ ЯРИЯ",
+  "credits_text": "ИЛУУ АЙМШИЙТТАЙ ИЛУУ ИНЭЭДЬЬМТЕИ УРАН САЙХНЫ КИНО",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ЕРОНИХИЙ НЕЗВЫ КИНО МОНГОЛ ФОТО ОЧИР ФИЛМС БОРН ФИЛМ СТУДИО",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A dark, shadowy figure with bloodied hands is central in a red-tinted forest setting, suggesting horror themes."
+}

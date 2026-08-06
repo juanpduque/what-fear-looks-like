@@ -1,0 +1,46 @@
+{
+  "title_text": "КЫЗЬЯ КОЧИНОК",
+  "credits_text": "РЕЖИССЕР ВЛАДИМИР ТУРБИН / ПРОДАЮЩИЙ НУСУТАТ КУСАМАН УУЛА / ТАЙБЕЗОК ЭРМЕК СЦЕНАРИСТ ВЕКТОР УСЕНОВ / ОПЕРАТОР ПОСТАНОВКИ КАРЛИ СИПАРОВ РЕЖИССЕР ВООБЩЕ КЛИМ ВУТА / УСТАНОВЩИК ЗВУКОВОЙ КАРЫ НАЗАРБАЕВ ДАУЛЕТ / ЗБУЛАТ МУХАМЕДЬЯРОВ / МОНТАЖЕР АЗИЯ АБРАХАМОВ ХУДОЖНИК ПО ГРИМУ МУКБАЕ АБИЛЯ / МОНТАЖЕР АЗИЯ АБРАХАМОВ",
+  "languages": [
+    "ru"
+  ],
+  "other_text": "51КВАРТАЛ СААМАТ КАМБЕК УУЛА МААЛЫК АБИЛЯ АЖАКОВА АРЖАНА СААМСОВА FREEDOM TICKETON МЕГАФОН FODEL ПАРТНЕР ETNOMEDIA FinMar HTC УТРК 7",
+  "mood": [
+    "gothic",
+    "dread",
+    "horror",
+    "dark",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including blood and a monstrous creature.",
+  "description": "Movie poster features a dark, intense image of a monstrous figure with long hair and a fierce expression, set against a shadowy forest background."
+}

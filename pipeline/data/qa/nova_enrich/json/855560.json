@@ -1,0 +1,54 @@
+{
+  "title_text": "FANGS VS. SPURS",
+  "credits_text": "BILLARD PRODUCTIONS IN ASSOCIATION WITH BOONSTICK FILMS AND FATHER ENTERTAINMENT GROUP PRESENTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COMMIT... WHEN THE FULL MOON IS HIGH... THE CREATURES OF THE NIGHT ARE COLLEC TO SEEK VENGEANCE... BUT WHO PAYS A VISIT TO THE BLOOD THIRSTY HOARD?",
+  "mood": [
+    "gothic",
+    "horror",
+    "camp",
+    "supernatural",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror elements and occult themes.",
+  "description": "A poster featuring a man in a cloak holding a torch, surrounded by various faces and creatures, promoting a horror film titled 'Fangs vs. Spurs.'"
+}

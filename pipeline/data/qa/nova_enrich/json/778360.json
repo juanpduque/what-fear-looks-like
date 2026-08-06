@@ -1,0 +1,41 @@
+{
+  "title_text": "喰う KAN-YU 喰う",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "死に至る病に犯された女は？",
+  "mood": [
+    "eerie",
+    "psychological",
+    "disturbing",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains partial nudity and suggestive imagery.",
+  "description": "A woman in lingerie is shown with a menacing figure behind her, suggesting a psychological horror theme."
+}

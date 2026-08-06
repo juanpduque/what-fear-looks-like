@@ -1,0 +1,46 @@
+{
+  "title_text": "MANIAC KILLER",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "thriller",
+    "violent",
+    "dramatic",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "gun",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.9,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "nudity"
+  ],
+  "moderation_notes": "Contains graphic violence and partial nudity.",
+  "description": "A dramatic poster features a man holding a knife and another with a gun amidst flames, with intense expressions and action-packed imagery."
+}

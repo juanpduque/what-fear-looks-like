@@ -1,0 +1,41 @@
+{
+  "title_text": "TOOMIE",
+  "credits_text": "A James Balsamo Film",
+  "languages": [
+    "en"
+  ],
+  "other_text": "The Hungry Tumor",
+  "mood": [
+    "camp",
+    "erotic",
+    "surreal",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.95,
+  "animal": 0.1,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.7,
+  "sensitive": [
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains partial nudity and suggestive imagery.",
+  "description": "Vibrant comic-style poster features a group of characters surrounding a large, open-mouthed monster with flames, one character partially nude."
+}

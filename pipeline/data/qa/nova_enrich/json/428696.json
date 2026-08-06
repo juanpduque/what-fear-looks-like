@@ -1,0 +1,41 @@
+{
+  "title_text": "JURASSIC MONSTER",
+  "credits_text": "ROBIN DANIEL EGAN MARK JUSTICE LIT CHARLOTTE TARAH McDANIEL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HOCHTOURIGER CREATURE-ACTIONER MIT HOHEM SPASSFAKTOR",
+  "mood": [
+    "action",
+    "thriller",
+    "adventure",
+    "sci-fi",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "danger",
+      "conf": 0.85
+    },
+    {
+      "name": "action",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.95,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild action violence and a large dinosaur threat.",
+  "description": "A poster shows a giant dinosaur roaring over a beach with people running away, featuring action-packed scenes and a title 'Jurassic Monster.'"
+}

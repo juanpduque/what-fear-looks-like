@@ -1,0 +1,54 @@
+{
+  "title_text": "WHY HORROR?",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FAMILIEN",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.85,
+  "person": 0.95,
+  "animal": 0.1,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic horror imagery including skulls, blood, and occult themes.",
+  "description": "A man with a shocked expression stands in front of a surreal horror scene with ghosts, skulls, and a full moon."
+}

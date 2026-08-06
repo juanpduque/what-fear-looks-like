@@ -1,0 +1,39 @@
+{
+  "title_text": "PUMPKIN PATCH",
+  "credits_text": "WRITTEN & DIGITALLY DIRECTED BY BRIAN JAMES GAGE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NO FUCKS GIVEN. The Magic Garage",
+  "mood": [
+    "edgy",
+    "humorous",
+    "sci-fi",
+    "fantasy",
+    "urban"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a pumpkin-headed figure holding a glowing blade, standing in an urban setting with neon signs and a ghostly figure in the background."
+}

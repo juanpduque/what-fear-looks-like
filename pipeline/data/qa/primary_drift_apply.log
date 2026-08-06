@@ -1,0 +1,33 @@
+mismatches to apply: 4,655
+  apply 200/4655 (68.5/s)
+  apply 400/4655 (87.0/s)
+  apply 600/4655 (94.1/s)
+  apply 800/4655 (87.2/s)
+  apply 1000/4655 (88.8/s)
+  apply 1200/4655 (90.1/s)
+  apply 1400/4655 (90.2/s)
+  apply 1600/4655 (90.8/s)
+  apply 1800/4655 (92.2/s)
+  apply 2000/4655 (90.5/s)
+  apply 2200/4655 (85.8/s)
+  apply 2400/4655 (78.2/s)
+  apply 2600/4655 (73.0/s)
+  apply 2800/4655 (69.7/s)
+  apply 3000/4655 (67.7/s)
+  apply 3200/4655 (66.6/s)
+  apply 3400/4655 (65.9/s)
+  apply 3600/4655 (66.1/s)
+  apply 3800/4655 (65.8/s)
+  apply 4000/4655 (65.8/s)
+  apply 4200/4655 (65.7/s)
+  apply 4400/4655 (65.7/s)
+  apply 4600/4655 (65.7/s)
+  apply 4655/4655 (56.3/s)
+wrote /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/primary_drift_applied.csv
+ok=4,655 dry_run=0 download_fail=0 archived=2
+horror_movies.csv: updated poster_path for 4,655 rows
+poster_paths_backfill.csv: 15,329 rows (upserted 4,655)
+multi_poster_catalog.csv: realigned is_primary for 4,655 ids
+multi_poster_canonical.csv: set canonical=primary for 4,655
+reanalyze list → /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/primary_drift_reanalyze_ids.csv (4,655 ids)
+next: python3 reanalyze_poster_ids.py --ids-file data/qa/primary_drift_reanalyze_ids.csv

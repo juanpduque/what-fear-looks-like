@@ -1,0 +1,39 @@
+{
+  "title_text": "ORCA",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "drama"
+  ],
+  "fear_labels": [
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "animal",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.1,
+  "animal": 0.95,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and action elements.",
+  "description": "A dramatic poster featuring an orca leaping from water with fiery explosions in the background, suggesting an action-packed thriller."
+}

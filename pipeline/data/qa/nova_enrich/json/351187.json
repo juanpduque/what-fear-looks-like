@@ -1,0 +1,37 @@
+{
+  "title_text": "KNIFEPOINT!",
+  "credits_text": "KATHERINE BANNON KRISTA RAUN ROBIN MEAD CAM JAMES SPENCER ROBERT SHEFFER GARY KENT MATTHEWS JACKIE MCCENTEE SCOTT BLEED... MICHAEL BLAKE DONALD PAUL MELNICK FRANK DEAN CSA USA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THERE'S NO ONE LEFT TO HEAR YOU SCREAM",
+  "mood": [
+    "thriller",
+    "horror",
+    "suspense",
+    "psychological",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the title and imagery, but no explicit gore or nudity is visible.",
+  "description": "A poster shows a woman standing over three bound individuals in a room filled with Christmas gifts, with the title 'KNIFEPOINT!' prominently displayed."
+}

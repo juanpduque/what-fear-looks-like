@@ -1,0 +1,40 @@
+{
+  "title_text": "ANIMUS",
+  "credits_text": "A QUIN DAVIS FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WHAT'S YOUR DEEPEST FEAR?",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A dark, eerie poster features a central female figure with long black hair and a haunting expression, flanked by two other figures in a grim setting."
+}

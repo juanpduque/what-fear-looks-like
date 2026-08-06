@@ -1,0 +1,36 @@
+{
+  "title_text": "THE NEW YORK BUTCHER",
+  "credits_text": "Erin Brown\nSean Weathers",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Prepare for a bloody good time!",
+  "mood": [
+    "thriller",
+    "action",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "gun",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood",
+  "description": "A man holds a gun to a woman who holds a bloody knife, set against a New York City night skyline."
+}

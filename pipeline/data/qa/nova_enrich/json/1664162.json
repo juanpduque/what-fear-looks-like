@@ -1,0 +1,41 @@
+{
+  "title_text": "U/S/B",
+  "credits_text": "\"THE ANALOGUE HORROR PHENOMENON AT ITS PEAK\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FROM THE CREATORS OF D/V/D/REDACTED",
+  "mood": [
+    "dread",
+    "surreal",
+    "gothic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.6,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery including blood and a monstrous face.",
+  "description": "A dark, eerie poster features a monstrous face emerging from a screen, with blood splatters and dramatic red lighting."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "封印映像 30",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "「この国で起きた最悪の事件を記録した映像が存在する!! 30連発!!」",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "supernatural",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.5,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intended for mature audiences.",
+  "description": "A poster featuring a horrified face, a suited man, and a woman in a dark forest, promoting a horror anthology film."
+}

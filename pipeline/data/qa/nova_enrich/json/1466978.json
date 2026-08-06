@@ -1,0 +1,43 @@
+{
+  "title_text": "M4ZEL",
+  "credits_text": "SEBUAH FILM ZAHIR OMAR ACT 2 PICTURES SDN. BHD. GOLDEN SCREEN CINEMAS SDN. BHD. ASTRO SHAW SDN. BHD. KATALYST CONNECTIONS SDN. BHD. STRONGSONG ENTERTAINMENT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PEMBURU DUA ALAM DI PAWAGAM 2 APRIL 2026",
+  "mood": [
+    "action",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and horror elements.",
+  "description": "Movie poster features a group of characters facing a hooded figure with red eyes, holding weapons, in a dramatic, action-packed scene."
+}

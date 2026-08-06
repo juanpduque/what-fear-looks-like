@@ -1,0 +1,49 @@
+{
+  "title_text": "K.I.L. COMMAND",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SAR MED-ON",
+  "mood": [
+    "action",
+    "sci-fi",
+    "dystopia",
+    "intense",
+    "futuristic"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "robot",
+      "conf": 0.95
+    },
+    {
+      "name": "drone",
+      "conf": 0.7
+    },
+    {
+      "name": "cityscape",
+      "conf": 0.8
+    },
+    {
+      "name": "tech",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.1,
+  "person": 0.2,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts action-oriented violence with futuristic weapons and robots.",
+  "description": "A futuristic robot stands prominently in a dystopian cityscape, holding weapons, with drones and other robots in the background."
+}

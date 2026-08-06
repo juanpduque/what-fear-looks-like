@@ -1,0 +1,46 @@
+{
+  "title_text": "PUPPET SHOW",
+  "credits_text": "\"PUPPET SHOW IS FAST-PACED GRISLY FUN, AND A HORRIFIC USE OF SCARY PUPPETS\" - ROSEMARY STEVENS, LARRY SCENE QUEENS\n\nERIKA SLIDER NINA TEPEES TOM WOOLER ANDREW ROSE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MIDNIGHT RELEASING\n\nONCE UPON A TIME THERE WAS A SHOW CALLED CIRCUS TOWN, AND IT WAS KILLER...",
+  "mood": [
+    "horror",
+    "gritty",
+    "macabre",
+    "intense",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    },
+    {
+      "name": "puppet",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including blood and violent themes.",
+  "description": "Poster features a grotesque clown face with a large red nose and blood splatters, promoting a horror film titled 'Puppet Show.'"
+}

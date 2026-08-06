@@ -1,0 +1,41 @@
+{
+  "title_text": "nailed",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "violent",
+    "disturbing",
+    "gory",
+    "horrific"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.95
+    },
+    {
+      "name": "gore",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.95,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, may be disturbing to some viewers.",
+  "description": "A hand with nails piercing through it lies on the ground near a fence, with visible blood and a damaged object nearby."
+}

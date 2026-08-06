@@ -1,0 +1,42 @@
+{
+  "title_text": "the TORTURER",
+  "credits_text": "GRAHAM GREEN'S",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HOW FAR WILL YOU GO TO UNCOVER THE TRUTH? a new kind of terror",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "disturbing",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains disturbing imagery and themes of violence.",
+  "description": "A dark, intense poster featuring a distressed figure with the title 'The Torturer' and a tagline questioning truth."
+}

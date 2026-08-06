@@ -1,0 +1,43 @@
+{
+  "title_text": "RAISED BY WOLVES",
+  "credits_text": "A FILM BY THE WACHOWSKI BROTHERS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dystopian",
+    "sci-fi",
+    "survival",
+    "mystery",
+    "tense"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "tunnel",
+      "conf": 0.8
+    },
+    {
+      "name": "red lighting",
+      "conf": 0.7
+    },
+    {
+      "name": "apocalyptic",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A group of silhouetted figures walk through a red-lit tunnel in a dystopian setting, suggesting a sci-fi survival theme."
+}

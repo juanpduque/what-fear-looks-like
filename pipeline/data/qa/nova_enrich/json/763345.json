@@ -1,0 +1,50 @@
+{
+  "title_text": "TERROR AT BIGFOOT POND",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "KEEP OUT",
+  "mood": [
+    "horror",
+    "mystery",
+    "suspense",
+    "forest",
+    "night"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "water",
+      "conf": 0.7
+    },
+    {
+      "name": "night",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.1,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied horror elements and mild gore suggestions.",
+  "description": "A poster shows a large, clawed creature against a moonlit forest backdrop with a 'KEEP OUT' sign near a pond."
+}

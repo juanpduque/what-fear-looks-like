@@ -1,0 +1,40 @@
+{
+  "title_text": "FRANKENSTEIN CREATED BIKERS",
+  "credits_text": "BIG WORLD PICTURES PRESENTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HELL SOUND",
+  "mood": [
+    "camp",
+    "action",
+    "horror",
+    "rebel"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and horror themes.",
+  "description": "A poster shows a group of bikers with a skull design, featuring a central figure holding a gun amidst flames and chaos."
+}

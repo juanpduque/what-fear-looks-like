@@ -1,0 +1,41 @@
+{
+  "title_text": "ARMED",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "S.L.P. SOUN",
+  "mood": [
+    "action",
+    "intense",
+    "war",
+    "drama",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "explosion",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and violent imagery.",
+  "description": "A soldier stands on a rooftop holding a rifle amidst a fiery explosion with an American flag in the background."
+}

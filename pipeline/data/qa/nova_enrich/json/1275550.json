@@ -1,0 +1,46 @@
+{
+  "title_text": "COVEN OF THE BLACK CUBE",
+  "credits_text": "a film by BRENCELONGO\nMORRIGAN MILAM\nZOE AIJA\nJOSH ANGELINA SCHAEFER\nANNIE JOE MITCHELL\nKASPER CHRIS MELTEDHAIR\nELLA DAVID K\nHEALY LONG KRAIS\nSWANBERG SEVER\nTHE LUCKY NELSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BLOOD SICK PRODUCTIONS",
+  "mood": [
+    "gothic",
+    "occult",
+    "surreal",
+    "camp",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "occult",
+    "sexual"
+  ],
+  "moderation_notes": "Contains occult imagery and mild sexual undertones.",
+  "description": "The poster features a dark, gothic design with two central figures and occult symbols, including a black cube and a coffin."
+}

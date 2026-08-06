@@ -1,0 +1,45 @@
+{
+  "title_text": "BELABAN HIDUP INFERSI ZOMBIE",
+  "credits_text": "AKAN DATANG",
+  "languages": [
+    "en",
+    "id"
+  ],
+  "other_text": "HERNILL WINNER @RancancasHidup",
+  "mood": [
+    "horror",
+    "thriller",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and horror elements.",
+  "description": "Poster features a central zombie-like figure with traditional attire, surrounded by other characters in a jungle setting, promoting an upcoming zombie film."
+}

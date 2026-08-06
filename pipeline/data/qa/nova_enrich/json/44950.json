@@ -1,0 +1,40 @@
+{
+  "title_text": "A HORRIBLE WAY TO DIE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TIFF OFFICIAL SELECTION 2020",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A poster features a distressed figure against a dark background with bold, fragmented text reading 'A HORRIBLE WAY TO DIE.'"
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "DEVILDOLLS",
+  "credits_text": "CHARLES BAND PRESENTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DEADLY. DEVOUS. DEMONIC.",
+  "mood": [
+    "dread",
+    "surreal",
+    "gothic",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.75
+    },
+    {
+      "name": "creature",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic imagery and occult themes.",
+  "description": "Poster features a central monstrous figure with multiple faces and limbs, surrounded by eerie, distorted imagery and bold red text."
+}

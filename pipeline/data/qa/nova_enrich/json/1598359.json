@@ -1,0 +1,35 @@
+{
+  "title_text": "",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Info St",
+  "mood": [
+    "dread",
+    "suspense",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The image depicts a person holding a weapon in a tense, possibly violent scenario.",
+  "description": "A person stands in a dimly lit hallway holding a weapon, with a serious expression, suggesting a tense or threatening situation."
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "BLOODMANIA",
+  "credits_text": "HERSCHELL GORDON LEWIS'",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "camp",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "crowd",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "A horror poster featuring a central figure with bloodied hands surrounded by terrified people in a dark, eerie forest setting."
+}

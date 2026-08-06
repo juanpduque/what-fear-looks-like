@@ -1,0 +1,46 @@
+{
+  "title_text": "ZEFR-I CİN",
+  "credits_text": "BUYÜden daha Korkuncu var...",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "HAYAN KARACA DAĞ FILMI\nİZLEİMEK İSTEDİĞĞN İZLEŞİM LARDİİN\n12 EYLÜL'DE SINEMALARDA",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "supernatural",
+    "gory"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and a monstrous creature.",
+  "description": "A horror movie poster featuring a monstrous, blood-smeared face with intense eyes and a chilling expression."
+}

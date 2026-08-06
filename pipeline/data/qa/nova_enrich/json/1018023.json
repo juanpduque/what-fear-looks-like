@@ -1,0 +1,35 @@
+{
+  "title_text": "O CASO COUTINHO",
+  "credits_text": "LA FILMES APRESENTA: VÍTOR NORTE EM \"O CASO COUTINHO\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ASSISTENTE DE FOTOGRAFIA ANTÓNIO GOMES, ASSISTENTE DE REALIZAÇÃO RUI ALVES DE SOUSA, MONTAGEM LUÍS ALVES, SONOPLASTIA JOSÉ PEDRO ALFAIATE, DIREÇÃO DE FOTOGRAFIA NUNO MARTINI, HISTÓRIA LUÍS ALVES E RODRIGO SOUSA, ARGUMENTO PRODUÇÃO E REALIZAÇÃO LUÍS ALVES",
+  "mood": [
+    "dread",
+    "suspense",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts a violent scene with a weapon, suggesting potential graphic content.",
+  "description": "A black-and-white poster shows a shadowy figure holding a weapon in a confined space, with bold red text for the title and credits."
+}

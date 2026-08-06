@@ -1,0 +1,46 @@
+{
+  "title_text": "X63",
+  "credits_text": "A FILM BY ARTHUR ANDONAN & YUJE ZAJ",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "eerie",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.6,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and disturbing themes.",
+  "description": "A dark, close-up poster featuring a menacing face with visible blood, suggesting horror and suspense themes."
+}

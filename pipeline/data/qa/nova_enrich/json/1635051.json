@@ -1,0 +1,35 @@
+{
+  "title_text": "SONAR",
+  "credits_text": "LUIS ALVAREZ MARIOA CHASOR LILY FOUCHÉ",
+  "languages": [
+    "en"
+  ],
+  "other_text": "R",
+  "mood": [
+    "intense",
+    "suspenseful",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A dark poster features two individuals in a dimly lit setting, with bold text reading 'SONAR' and credits below."
+}

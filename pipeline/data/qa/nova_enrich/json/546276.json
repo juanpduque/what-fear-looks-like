@@ -1,0 +1,46 @@
+{
+  "title_text": "ZOMBIES ATE MY PROM DATE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THIS PROM NIGHT, SEX IS THE LAST THING ON THEIR MINDS",
+  "mood": [
+    "camp",
+    "horror",
+    "fun",
+    "teen",
+    "zombie"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic zombie imagery and mild blood, suitable for mature audiences.",
+  "description": "Vibrant poster features a group of teens and zombies at prom with flames and stars in the background."
+}

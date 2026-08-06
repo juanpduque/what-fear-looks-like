@@ -1,0 +1,42 @@
+{
+  "title_text": "GLITCH",
+  "credits_text": "SHAKE RATTLE ROLL EXTREME\nDIRECTED BY RICHARD V. SOMES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "REGAL Entertainment, Inc.",
+  "mood": [
+    "intense",
+    "supernatural",
+    "dramatic",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic blood and occult imagery.",
+  "description": "A poster featuring a central figure with prominent horns and bloodstains, flanked by two others, with bold title and director credits."
+}

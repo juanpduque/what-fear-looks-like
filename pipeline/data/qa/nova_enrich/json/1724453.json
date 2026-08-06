@@ -1,0 +1,42 @@
+{
+  "title_text": "Perfect shoT",
+  "credits_text": "A Film by Philip Maker",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Ryan Dalton Zoibheann Plunkett Hamilton",
+  "mood": [
+    "dread",
+    "thriller",
+    "psychological",
+    "disturbing",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.95,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, may be disturbing.",
+  "description": "A poster shows a bloody knife with a man's face reflected on it, overlaid with the title and director's name."
+}

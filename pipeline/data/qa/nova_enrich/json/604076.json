@@ -1,0 +1,42 @@
+{
+  "title_text": "RED RABBIT LODGE",
+  "credits_text": "A STUDIO MAGNETICA FILM\nFeaturing an all original soundtrack",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SANGUE, TETTE & POMPIN!",
+  "mood": [
+    "gothic",
+    "erotic",
+    "surreal",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic violence and sexual themes.",
+  "description": "Movie poster features three women in dramatic poses with a chainsaw, intense expressions, and bold red background."
+}

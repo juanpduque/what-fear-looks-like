@@ -1,0 +1,43 @@
+{
+  "title_text": "ANA",
+  "credits_text": "PREPARE TO MAKE NEW FRIENDS a Film by FREDERICK MAHEUX",
+  "languages": [
+    "en"
+  ],
+  "other_text": "www.anamadim.com",
+  "mood": [
+    "gothic",
+    "surreal",
+    "eerie",
+    "dark",
+    "macabre"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.4,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic blood, suggestive imagery, and themes of horror.",
+  "description": "A colorful poster features a distorted face in a mirror surrounded by sewing tools, candy, and blood splatters, with bold text reading 'ANA' and a film credit below."
+}

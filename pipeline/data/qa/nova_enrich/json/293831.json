@@ -1,0 +1,47 @@
+{
+  "title_text": "O Estripador da Rua Augusta",
+  "credits_text": "Monica Mattos em\nUm curta-metragem de Felipe N. Guerra e Geisia Fernandes",
+  "languages": [
+    "pt"
+  ],
+  "other_text": "Ele era um monstro sedento de sangue que atacava na rua Augusta. Ela também!",
+  "mood": [
+    "gothic",
+    "erotic",
+    "thriller",
+    "dread",
+    "noir"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and sexual themes, suitable for mature audiences.",
+  "description": "A poster features a woman in a black corset with bold red text and a shadowy figure holding a knife in the background."
+}

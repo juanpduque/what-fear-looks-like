@@ -1,0 +1,43 @@
+{
+  "title_text": "Don't Hide",
+  "credits_text": "a short film by Dillon V'Boart\n\nJULIA SCHWEITZER, DILLON V'BOART, \"DON'T HIDE\"\nASHLEY TERENCE, CAITLIN COOK, MATT KOLER\nSELENA WEISS, MARY DUFFY, EMILY KASLER\nDILLON V'BOART, JANE BREESLES, DILLON V'BOART",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Don't run. Don't scream.",
+  "mood": [
+    "dread",
+    "suspense",
+    "horror",
+    "claustrophobic",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "claustrophobia",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.1,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark hallway leads to a red-lit room where a shadowy figure stands, with text warning viewers not to run or scream."
+}

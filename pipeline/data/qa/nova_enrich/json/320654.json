@@ -1,0 +1,44 @@
+{
+  "title_text": "১াইয়ারায়",
+  "credits_text": "পারিজাতা যবাইদ চাবুনি",
+  "languages": [
+    "bn"
+  ],
+  "other_text": "রোসাবালি চালিট়ে রোসাবালিয়ের পরিয়ের পরীবাদের পরীবাদের পরীবাদে রোসাবালি চালিট়ে রোসাবালিয়ের পরিয়ের পরিবাদের পরিবাদে",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "dread",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and ghostly imagery.",
+  "description": "A poster features a ghostly figure with a skeletal hand, a young boy holding a bow, and a man in a yellow"
+}

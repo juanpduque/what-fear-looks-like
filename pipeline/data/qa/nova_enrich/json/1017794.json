@@ -1,0 +1,41 @@
+{
+  "title_text": "DEEP SEA MUTANT SNAKE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "horror",
+    "sci-fi",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 1.0,
+  "animal": 0.9,
+  "blood_gore": 0.1,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and potential violence involving a mutant snake creature.",
+  "description": "A woman struggles against a large, menacing mutant snake in an underwater setting, depicted in a dramatic and intense scene."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "Löwenzahn",
+  "credits_text": "HE WAS HIS OWN WORST ENEMY\n\nBEST HORROR FILM 2009\n\nEIN FILM VON ALEXANDER JEFFINEK",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "other_text": "ALEXANDER JEFFINEK",
+  "mood": [
+    "dread",
+    "psychological horror",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and disturbing imagery.",
+  "description": "A poster shows a distressed person with bloodied hands reaching out, overlaid with bold red text and a tagline."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "GaRe THEATRE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "monster",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic blood, violent imagery, and suggestive content.",
+  "description": "A stylized poster features a monstrous figure with long hair standing on a skull, surrounded by blood and dramatic red curtains."
+}

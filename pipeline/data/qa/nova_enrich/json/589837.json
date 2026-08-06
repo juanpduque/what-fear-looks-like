@@ -1,0 +1,49 @@
+{
+  "title_text": "Pemimpasan Alian Sesat",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "supernatural",
+    "intense",
+    "mysterious",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.85
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.5
+    },
+    {
+      "name": "house",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains intense horror themes and occult imagery.",
+  "description": "The poster features a fiery skull with three smaller images of people in eerie settings, suggesting a supernatural horror theme."
+}

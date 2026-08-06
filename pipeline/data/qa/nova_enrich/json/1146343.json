@@ -1,0 +1,46 @@
+{
+  "title_text": "MATAR CARLOS",
+  "credits_text": "UM FILME DE EDGAR SOARES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ÁREA SEM GUARDA-VIDAS",
+  "mood": [
+    "surreal",
+    "dark humor",
+    "absurd",
+    "violent",
+    "grotesque"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "axe",
+      "conf": 0.5
+    },
+    {
+      "name": "ghost",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.5,
+  "monster": 0.3,
+  "person": 1.0,
+  "animal": 0.3,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "nudity"
+  ],
+  "moderation_notes": "Contains implied violence and partial nudity.",
+  "description": "A stylized poster features a central figure in a hood, surrounded by surreal elements including a skull, flames, and chaotic symbols."
+}

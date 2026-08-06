@@ -1,0 +1,46 @@
+{
+  "title_text": "the Devil's Plaything",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "erotic",
+    "dramatic",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.9
+    },
+    {
+      "name": "gothic",
+      "conf": 0.85
+    },
+    {
+      "name": "erotic",
+      "conf": 0.7
+    },
+    {
+      "name": "castle",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "occult",
+    "erotic"
+  ],
+  "moderation_notes": "Contains suggestive imagery and occult themes.",
+  "description": "A dramatic poster features a central figure in an orange robe with others in the background, set against a gothic castle backdrop under a dark sky."
+}

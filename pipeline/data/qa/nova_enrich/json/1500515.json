@@ -1,0 +1,42 @@
+{
+  "title_text": "JURASSIC CRACKS",
+  "credits_text": "LUANA ULLOA / SONIA MARTELL / LUMA RAJEH / DIONISIO MARTINEZ / MARTIN BERMEJO / MARCO MATILLA / JOAN FABREGAS / REBECA CHAPA / ALEXIS ALEMANY / DAVID MINUESA / DOMINGO ORTEGA / SILVIA PEIRO / SERGIO SERRANO / AURELI DEL POZO. JUANLOVESANABEL FANTASTIC FILMS UN SCI-FI - HORROR - THRILLER DIRIGIDO POR JUAN BODÍ GUION JUAN BODÍ / ANABEL IÑÁÑEZ",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "sci-fi",
+    "horror",
+    "thriller",
+    "adventure"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains action violence and dinosaur threats.",
+  "description": "A poster shows characters battling dinosaurs with guns amidst flying helicopters in a prehistoric landscape."
+}

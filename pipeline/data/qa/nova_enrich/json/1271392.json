@@ -1,0 +1,46 @@
+{
+  "title_text": "心霊 VS 人間",
+  "credits_text": "",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "other_text": "北海道横路幽霊結果表示録 心霊探偵の恐怖を暴く!! 死される大地への旅... DEAD or ALIVE",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains themes of horror and occult, with implied violence.",
+  "description": "A poster featuring four individuals against a dark background, with Japanese text and a ghostly figure, suggesting a supernatural horror theme."
+}

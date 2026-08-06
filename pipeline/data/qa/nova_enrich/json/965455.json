@@ -1,0 +1,38 @@
+{
+  "title_text": "MEDIUM",
+  "credits_text": "DIRETTO DA MASSIMO PAOLUCCI\nTONY SPERANDEO BRUNO BIOTTA HAL YAMAMOUCH BARBARA BACCI EMILIO FRANCHONI\nMARTINA ANGELI DARIO BARBARA FERDINANDO CICCARELLI FRANCESCO MARIA D'AMATO MARTINA MARGHETA",
+  "languages": [
+    "en",
+    "it"
+  ],
+  "other_text": "DAL 14 OTTOBRE AL CINEMA",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatters and a dark, intense atmosphere.",
+  "description": "A dark silhouette stands against a red splattered background with bold red title text and cast credits."
+}

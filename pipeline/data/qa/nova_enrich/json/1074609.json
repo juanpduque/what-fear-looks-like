@@ -1,0 +1,50 @@
+{
+  "title_text": "DEMONS AT DAWN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "supernatural",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    },
+    {
+      "name": "fire",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult imagery and implied violence.",
+  "description": "A group of people stands before a large, ominous figure with a cross and axe, set against a fiery background with a small house visible."
+}

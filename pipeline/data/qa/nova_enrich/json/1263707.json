@@ -1,0 +1,42 @@
+{
+  "title_text": "Family Home Evening",
+  "credits_text": "A FILM BY HARRY COLLINS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AVAILABLE ON MEGAFLIX",
+  "mood": [
+    "thriller",
+    "horror",
+    "intense",
+    "disturbing",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and disturbing imagery.",
+  "description": "A masked figure holds a gun, suggesting a tense and violent scenario in a desolate setting."
+}

@@ -1,0 +1,38 @@
+{
+  "title_text": "Masque of the Red Death",
+  "credits_text": "ROGER CORMAN PRESENTS EDGAR ALLAN POE'S",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "macabre"
+  ],
+  "fear_labels": [
+    {
+      "name": "mask",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A stylized poster features a masked figure holding a dagger over a fallen mask, evoking a gothic and macabre atmosphere."
+}

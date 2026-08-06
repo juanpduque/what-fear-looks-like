@@ -1,0 +1,45 @@
+{
+  "title_text": "URITORCO II",
+  "credits_text": "una pelicula de Carlos de la Fuente",
+  "languages": [
+    "es"
+  ],
+  "other_text": "la casa de la montana\nAltaris Video\nFIE FESTIVAL DE CINE INDEPENDIENTE",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror elements and occult imagery.",
+  "description": "A poster for a horror film featuring a haunted mansion under a stormy sky with a ghostly face and dramatic text."
+}

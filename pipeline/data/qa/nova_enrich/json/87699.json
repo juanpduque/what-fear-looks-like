@@ -1,0 +1,44 @@
+{
+  "title_text": "BLOOD SALVAGE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "camp",
+    "horror",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A man smiles holding a green, eye-like object, with vehicles in the background and bold red and green title text."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "NIGHT OF THE SEA MONKEY",
+  "credits_text": "A DISTURBING TALE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MICHAEL S. RODRIGUEZ'S\nINSTANT TERROR... JUST ADD WATER",
+  "mood": [
+    "horror",
+    "camp",
+    "surreal",
+    "disturbing",
+    "grotesque"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and disturbing themes.",
+  "description": "Poster features a monstrous green creature with sharp teeth, surrounded by terrified people, with dripping red paint resembling blood."
+}

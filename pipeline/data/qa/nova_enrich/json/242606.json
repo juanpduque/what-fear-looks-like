@@ -1,0 +1,37 @@
+{
+  "title_text": "KEEP WATCHING",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WE'RE WATCHING YOU",
+  "mood": [
+    "tense",
+    "ominous",
+    "suspenseful",
+    "threatening"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood-like stains on balloons and a threatening message.",
+  "description": "A bouquet of red and white balloons with blood-like stains is tied to a camera, with a note reading 'WE'RE WATCHING YOU' against a gritty background."
+}

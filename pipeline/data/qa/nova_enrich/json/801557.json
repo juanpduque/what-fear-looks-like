@@ -1,0 +1,50 @@
+{
+  "title_text": "CANNIBAL TROLL",
+  "credits_text": "PREPARE TO PAY THE ULTIMATE TOLL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "dread",
+    "gothic",
+    "survival",
+    "terror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including blood and a monstrous creature.",
+  "description": "A woman faces a terrifying monster in a dark, eerie landscape with a rustic cabin nearby."
+}

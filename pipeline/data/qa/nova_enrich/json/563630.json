@@ -1,0 +1,38 @@
+{
+  "title_text": "SLEDGEHAMMER",
+  "credits_text": "ONE BAD DAY. ONE BIG HAMMER!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "violent",
+    "intense",
+    "gruesome",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.95,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A poster featuring a hand gripping a hammer against a splattered red background with bold white text reading 'SLEDGEHAMMER' and a tagline."
+}

@@ -1,0 +1,38 @@
+{
+  "title_text": "ウルトラQ ザムビー",
+  "credits_text": "原作・脚本・監督：中野昭慶",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "「ウルトラQ」より、未公開の怪獣・ザムビーの物語。怪獣が人間を脅かす恐怖と奇妙な存在感を描く。",
+  "mood": [
+    "surreal",
+    "eerie",
+    "fantasy",
+    "sci-fi"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster features a humanoid figure seated on a large, serpentine creature with a moonlit background, blending sci-fi and horror elements."
+}

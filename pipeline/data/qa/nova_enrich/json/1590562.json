@@ -1,0 +1,42 @@
+{
+  "title_text": "THE PUPPET",
+  "credits_text": "Is there someone controlling you?\nWRITTEN & DIRECTED BY ISABELLE HILL\nwith Bella Quilliot, Jana Wondl, Lexi Hill, Brian Schmid, Harley Eynessin, Ada Bogue",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BIANCA MARIANI SYDNEY BERENSON",
+  "mood": [
+    "psychological",
+    "thriller",
+    "suspense",
+    "disturbing",
+    "uncanny"
+  ],
+  "fear_labels": [
+    {
+      "name": "puppet",
+      "conf": 0.9
+    },
+    {
+      "name": "hands",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild blood imagery and psychological tension.",
+  "description": "A poster shows a puppet with a distressed expression, controlled by two hands with visible blood, suggesting psychological horror."
+}

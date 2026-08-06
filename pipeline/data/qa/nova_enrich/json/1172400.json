@@ -1,0 +1,46 @@
+{
+  "title_text": "GUMMY",
+  "credits_text": "MILK, I NEED MORE MILK\nWRITTEN BY AND DIRECTED BY SHANA ABRAMSON\nSTARRING DIRK HUNTER AS VICTOR\nTEGAN BRAITHWAITE AS SHUANICE\nLOLA BOND AS IVY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gothic",
+    "surreal",
+    "camp",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and blood.",
+  "description": "A poster features a close-up of a monstrous, red-faced figure with sharp teeth, accompanied by cast and crew credits."
+}

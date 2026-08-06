@@ -1,0 +1,49 @@
+{
+  "title_text": "THE FOREST",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "terror",
+    "forest",
+    "nightmare",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a menacing monster face.",
+  "description": "A poster shows a large, terrifying face above two people near a campfire in a dark forest, with a knife prominently displayed."
+}

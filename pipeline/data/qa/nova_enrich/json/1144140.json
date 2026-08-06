@@ -1,0 +1,45 @@
+{
+  "title_text": "SE UPP FÖR ZOMBIES!",
+  "credits_text": "EN FILM AV EMIL BROO RASMUS DAHLENLUND FELICIA SÖBERG NEHLIN \"SE UPP FÖR ZOMBIES\" LUDVIG KARLMA THOMAS HEDENGRAN SUSANNE STAKE MIKAEL ALMQVIST YNGVE DAHLBERG MARCUS PETERSON",
+  "languages": [
+    "en",
+    "sv"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "action",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "zombie",
+      "conf": 0.95
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and zombie imagery.",
+  "description": "A poster shows two characters fighting zombies atop a building, with outstretched hands and a flag in the background."
+}

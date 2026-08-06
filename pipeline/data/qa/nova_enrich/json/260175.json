@@ -1,0 +1,41 @@
+{
+  "title_text": "東京復興戦争 TOKYO RESTORATION WAR",
+  "credits_text": "XXXD-03 60min. (+19min.)",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "other_text": "R-16",
+  "mood": [
+    "action",
+    "sci-fi",
+    "post-apocalyptic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "action",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.4,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains action violence and post-apocalyptic themes.",
+  "description": "A vibrant poster features a central female character in a futuristic setting with action poses, explosions, and other characters in a chaotic urban environment."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "FRIDAY THE 13TH",
+  "credits_text": "...DEATH CURSE...",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CAMP CRYSTAL LAKE",
+  "mood": [
+    "dread",
+    "terror",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and a monstrous face.",
+  "description": "A poster featuring a menacing, masked face with blood and the title 'Friday the 13th' against a dark, prison-like background."
+}

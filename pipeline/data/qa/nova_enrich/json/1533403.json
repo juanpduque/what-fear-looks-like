@@ -1,0 +1,40 @@
+{
+  "title_text": "DEADLY SILENCE",
+  "credits_text": "un film de NOAH SIMON\nNATHAN LALLEMAND\nNOAH SIMON\nFLAVIE PERRY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "thriller",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.3
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and a firearm.",
+  "description": "A young man stands in a forest holding a gun, with a title 'DEADLY SILENCE' above him."
+}

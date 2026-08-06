@@ -1,0 +1,46 @@
+{
+  "title_text": "THE DEAD OF NIGHT",
+  "credits_text": "THE DARKEST STORIES ARE FOUND IN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COMING SOON",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "eerie",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains themes of horror and occult imagery.",
+  "description": "A dark poster features a large red skull with ghostly faces and a shadowy figure, evoking a gothic and eerie atmosphere."
+}

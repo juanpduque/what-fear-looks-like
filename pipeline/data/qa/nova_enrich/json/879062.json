@@ -1,0 +1,49 @@
+{
+  "title_text": "GRAVE INTENTIONS",
+  "credits_text": "WITH JOY VANDERVOORT-COBB BETH GRANT SHARON LAWRENCE ROBERT FORSTER LUKAS HASSEL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "7 DIRECTORS, 5 TALES OF TERROR, 1 GRAVE LESSON",
+  "mood": [
+    "gothic",
+    "terrifying",
+    "mysterious",
+    "haunting",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "fire",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "",
+  "description": "A dark, eerie poster features multiple faces and a monstrous creature, with a central figure holding a candle, suggesting a horror anthology."
+}

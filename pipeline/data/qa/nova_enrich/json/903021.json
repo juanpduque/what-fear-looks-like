@@ -1,0 +1,39 @@
+{
+  "title_text": "DELIRIUM",
+  "credits_text": "TANNHAUSER FILM TANK PRESENTA. TONY ARDETIAN, RODRIGO PALACIOS, ALEX GARCIA, EDUARDO CUEVARA, JUAN YERA, MARCELO HERNANDEZ",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "surreal",
+    "dread",
+    "gothic",
+    "psychological",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.5,
+  "animal": 0.8,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark red poster features a large, menacing creature with tusks and a shadowy figure, evoking a surreal and horror atmosphere."
+}

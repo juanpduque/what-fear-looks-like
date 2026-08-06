@@ -1,0 +1,39 @@
+{
+  "title_text": "TECOLOTE",
+  "credits_text": "JOSÉ MANUEL GALLEGOS AGUSTÍN IGLESIAS",
+  "languages": [
+    "es"
+  ],
+  "other_text": "¡QUE DIOS ME AMPARE!",
+  "mood": [
+    "gothic",
+    "surreal",
+    "mysterious",
+    "dark",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man faces a large, owl-like creature in a desert setting, with dramatic lighting and a haunting atmosphere."
+}

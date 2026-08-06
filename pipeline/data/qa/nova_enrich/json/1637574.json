@@ -1,0 +1,45 @@
+{
+  "title_text": "DARK PLACES",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "occult",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "knife",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult imagery and implied violence.",
+  "description": "A poster shows a demonic figure with horns and a knife, standing before flames, accompanied by shadowy figures."
+}

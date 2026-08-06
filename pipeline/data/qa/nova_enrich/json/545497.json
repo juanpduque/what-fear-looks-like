@@ -1,0 +1,47 @@
+{
+  "title_text": "GRINDSPLOITATION THE MOVIE 2",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Still Hungry? Time for a SECOND SERVING!! www.BodyBagFilms.com",
+  "mood": [
+    "horror",
+    "camp",
+    "grotesque",
+    "satirical",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and suggestive imagery.",
+  "description": "A poster features a central grotesque skull with multiple hands and surrounding zombie-like figures, with bold red and green text."
+}

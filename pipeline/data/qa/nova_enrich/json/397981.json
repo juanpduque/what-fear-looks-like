@@ -1,0 +1,49 @@
+{
+  "title_text": "Beyond the Gates",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "mysterious",
+    "haunting",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "haunted",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.1,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and ghostly imagery, but no explicit violence or sexual content.",
+  "description": "A poster shows three people walking through a gate towards a ghostly figure, with skulls and a dark, eerie atmosphere."
+}

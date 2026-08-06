@@ -1,0 +1,44 @@
+{
+  "title_text": "THE LATENT IMAGE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "psychological",
+    "thriller",
+    "surreal",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features a knife and intense imagery, suggesting potential violence.",
+  "description": "A man holds a knife in front of a shadowy, muscular figure with a fiery background. The title 'THE LATENT IMAGE' is prominently displayed."
+}

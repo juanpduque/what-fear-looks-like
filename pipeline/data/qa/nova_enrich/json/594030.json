@@ -1,0 +1,46 @@
+{
+  "title_text": "MYSTIC DEMON KILLER",
+  "credits_text": "A David Henry Fussell Production ©2018 Fussell Films All Rights Reserved",
+  "languages": [
+    "en"
+  ],
+  "other_text": "One bite will kill Once clawed you're infected",
+  "mood": [
+    "horror",
+    "gothic",
+    "supernatural",
+    "intense",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains intense horror themes and occult imagery.",
+  "description": "The poster features a central female figure with multiple faces, holding weapons, surrounded by eerie, supernatural imagery and bold red text."
+}

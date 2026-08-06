@@ -1,0 +1,39 @@
+{
+  "title_text": "KROKODYLE",
+  "credits_text": "un film di STEFANO BESSONI",
+  "languages": [
+    "en",
+    "it"
+  ],
+  "other_text": "KROKODYL und SKRZYDLACZE",
+  "mood": [
+    "surreal",
+    "dark",
+    "fantasy",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.1,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "The poster features a stylized illustration of a creature with sharp teeth and claws against a textured background, with the title 'KROKODYLE' prominently displayed."
+}

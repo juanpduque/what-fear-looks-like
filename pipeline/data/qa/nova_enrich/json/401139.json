@@ -1,0 +1,40 @@
+{
+  "title_text": "THE KILLER IN THE HOUSE",
+  "credits_text": "A NICHOLAS MOLNAR FILM STARRING ALYSSA ACERO CHARLIE ANDERSEN CHRISTINA CAPPELL CARYL O'NUFFO FELICIA DEL MARA NICHOLAS MOLNAR ALEXANDRA KOLAND EMILY REID TEREZIA D'ALESSANDRO MARIA MARAZZI AND RAJESH KUMAR DIRECTED BY NICHOLAS MOLNAR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Fright Fest",
+  "mood": [
+    "dread",
+    "gothic",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood splatters.",
+  "description": "A shadowy figure stands in front of an old house at night, with a fiery sky in the background and faint blood splatters on the ground."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "FATAL CHOICE",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "您想一选 都这不要 影应学学 于2月2日 下午上海",
+  "mood": [
+    "gothic",
+    "dread",
+    "psychological",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild horror elements and psychological tension.",
+  "description": "A poster shows a ghostly figure crawling down a staircase in a dark, eerie setting with bold red and green text."
+}

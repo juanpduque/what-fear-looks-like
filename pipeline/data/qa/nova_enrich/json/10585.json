@@ -1,0 +1,45 @@
+{
+  "title_text": "CHILD'S PLAY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes, with some blood-like imagery.",
+  "description": "A poster shows a close-up of an intense eye with lightning striking a tall, gothic building where a person appears to be falling."
+}

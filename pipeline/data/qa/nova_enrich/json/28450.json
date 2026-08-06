@@ -1,0 +1,50 @@
+{
+  "title_text": "THE RIFT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "sci-fi",
+    "action",
+    "horror",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "water",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    },
+    {
+      "name": "skull",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "monster"
+  ],
+  "moderation_notes": "Contains intense action and horror elements, including weapons and monstrous creatures.",
+  "description": "A dramatic poster shows soldiers in futuristic gear facing a monstrous creature emerging from dark, bubbling water."
+}

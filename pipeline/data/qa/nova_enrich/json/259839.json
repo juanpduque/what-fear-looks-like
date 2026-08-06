@@ -1,0 +1,46 @@
+{
+  "title_text": "BILL ZEBUB'S DOLLA MORTE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DEMENTED. DISGUSTING. DOLLS. ABSOLUTELY NOT FOR CHILDREN",
+  "mood": [
+    "grotesque",
+    "surreal",
+    "dark humor",
+    "shock",
+    "satirical"
+  ],
+  "fear_labels": [
+    {
+      "name": "doll",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains suggestive imagery and dark humor; not suitable for children.",
+  "description": "A man holds a doll amidst chaotic figures, with bold text and vivid colors, labeled 'Absolutely Not for Children.'"
+}

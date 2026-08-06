@@ -1,0 +1,39 @@
+{
+  "title_text": "Attack of the Killer Monster",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "horror",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 1.0,
+  "animal": 0.9,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a monstrous creature.",
+  "description": "A man struggles in water against a large, menacing sea monster in a dramatic scene."
+}

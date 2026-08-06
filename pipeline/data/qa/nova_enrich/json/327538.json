@@ -1,0 +1,42 @@
+{
+  "title_text": "DOLL BOY",
+  "credits_text": "A LIL' BLOODY-FUL FILM ZED RUSSIN, BRUCE BLACK, MONICA LYNNE, KEVIN HANGEL, PAUL GONZALEZ, ALEC GORDON, JED RUSSELL, RICKY MONROE, STEVEN RAMIREZ, FRANK GARCIA, KELLY PALMER, JANE CARTER, JIMMY CARTER, TAYLOR VAN DER MERWE, LIL' BLOODY FILMS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HE HAS THE HEART OF A CHILD... IN A JAR NEXT TO HIS BED.",
+  "mood": [
+    "disturbing",
+    "psychological",
+    "horror",
+    "disturbing",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains disturbing imagery and implied violence.",
+  "description": "A poster shows a disfigured person holding a large axe, with text about a child’s heart in a jar."
+}

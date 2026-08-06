@@ -1,0 +1,39 @@
+{
+  "title_text": "CO-CKOO",
+  "credits_text": "AMMA PRODUCTION\nDIRECTOR EVGENY NIKOLAEV\nIVAN SHAMAEV\nVITALINA SAVINOVA\nNIKOLAY SOLDATOV",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "haunting",
+    "dark",
+    "ethereal"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "mysterious",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a shadowy figure with long hair and a weapon, set against a dark, misty background, evoking a gothic and haunting atmosphere."
+}

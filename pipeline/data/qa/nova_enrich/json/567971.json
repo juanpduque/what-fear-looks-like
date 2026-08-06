@@ -1,0 +1,45 @@
+{
+  "title_text": "VAMPIRES VS. THE BRONX",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "horror",
+    "fantasy",
+    "urban",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "cross",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild violent imagery present in the poster.",
+  "description": "A colorful poster features a group of teens facing off against vampires in an urban setting, with bold text reading 'VAMPIRES VS. THE BRONX.'"
+}

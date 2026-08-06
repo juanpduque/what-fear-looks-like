@@ -1,0 +1,41 @@
+{
+  "title_text": "NOT ANOTHER ZOMBIE MOVIE",
+  "credits_text": "DIESEL WORLD PRODUCTION IN ASSOCIATION WITH JAY DAVIS FILMS PRESENTS\n\nSTARRING: RICK JACKSON, JOHN WILLIAMS, NICKI LYNCH, HAROLD DENNIS, JAMES BARBER, BRANDON PERRY, BREANNA MCNICKEL, SMITH, CALVIN\n\nWRITTEN AND PRODUCED BY JAY DAVIS\nDIRECTED BY DENISE DIESEL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COMING 2015",
+  "mood": [
+    "action",
+    "horror",
+    "comedy",
+    "apocalyptic",
+    "post-apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "zombie",
+      "conf": 0.9
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.8
+    },
+    {
+      "name": "action",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery typical of zombie genre.",
+  "description": "Poster features a group of diverse characters in a post-apocalyptic setting with a central zombie theme, set for release in 2015."
+}

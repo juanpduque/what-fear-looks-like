@@ -1,0 +1,44 @@
+{
+  "title_text": "DEEP FEAR",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "horror",
+    "action",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "shark",
+      "conf": 0.95
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    {
+      "name": "danger",
+      "conf": 0.85
+    },
+    {
+      "name": "fear",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.95,
+  "blood_gore": 0.1,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense imagery of a shark attack which may be disturbing to some viewers.",
+  "description": "A diver faces a massive shark in deep water, with the title 'DEEP FEAR' prominently displayed."
+}

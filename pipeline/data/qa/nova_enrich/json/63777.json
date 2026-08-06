@@ -1,0 +1,39 @@
+{
+  "title_text": "HELLBOUND",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "intense",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "gun",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts intense action with a firearm and fiery background, suggesting potential violence.",
+  "description": "A man holds a gun against a fiery background with silhouettes in the foreground. The title 'HELLBOUND' is prominently displayed at the top."
+}

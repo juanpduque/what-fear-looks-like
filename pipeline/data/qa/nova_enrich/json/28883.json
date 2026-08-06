@@ -1,0 +1,49 @@
+{
+  "title_text": "EL GENIO DE LAS TINIEBLAS",
+  "credits_text": "",
+  "languages": [
+    "es"
+  ],
+  "other_text": "R.I.P. EL EPISODIO",
+  "mood": [
+    "gothic",
+    "horror",
+    "dramatic",
+    "mysterious",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "cross",
+      "conf": 0.6
+    },
+    {
+      "name": "bat",
+      "conf": 0.5
+    },
+    {
+      "name": "grave",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and dark themes.",
+  "description": "A poster featuring a cloaked figure holding a cross, with bats and graves in the background, titled 'El Genio de las Tinieblas.'"
+}

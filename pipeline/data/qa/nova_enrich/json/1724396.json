@@ -1,0 +1,45 @@
+{
+  "title_text": "HUSK",
+  "credits_text": "KinoVision Productions Presents",
+  "languages": [
+    "en"
+  ],
+  "other_text": "2026",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "dark",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "eye",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.5,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests themes of psychological horror and dread, with possible violent undertones.",
+  "description": "A dark, circular design featuring an eye and silhouettes against a wooden background, with the title 'HUSK' prominently displayed above."
+}

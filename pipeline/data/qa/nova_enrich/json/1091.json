@@ -1,0 +1,45 @@
+{
+  "title_text": "THE THING",
+  "credits_text": "MAN IS THE WARMEST PLACE TO HIDE. The ULTIMATE in ALIEN TERROR! JOHN CARPENTER presents with KURT RUSSELL KEITH DAVID WILFRED BRIMMLEY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "suspense",
+    "alien",
+    "horror",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense horror elements and implied violence.",
+  "description": "A dramatic poster features a monstrous alien creature looming over a terrified person amidst flames, with bold title text and credits."
+}

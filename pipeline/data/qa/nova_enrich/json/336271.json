@@ -1,0 +1,46 @@
+{
+  "title_text": "THE DARK STRANGER",
+  "credits_text": "LEAH'S NEW GRAPHIC NOVEL IS GOING TO BE KILLER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "KATIE FINDLAY ENRICO COLATONI STEPHEN McHATTIE",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.4,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A poster featuring a woman with a dark, intense expression, overlaid with a torn, gritty design and bold red text reading 'THE DARK STRANGER.'"
+}

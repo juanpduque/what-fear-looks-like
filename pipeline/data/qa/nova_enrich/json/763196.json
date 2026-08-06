@@ -1,0 +1,45 @@
+{
+  "title_text": "TOGETHER",
+  "credits_text": "Directed and produced by MAX BALTER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COVID-19 QUARANTINE HORROR TO get her",
+  "mood": [
+    "dread",
+    "suspense",
+    "psychological",
+    "confinement",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    },
+    {
+      "name": "quarantine",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild suggestion of potential violence due to knife and tense atmosphere.",
+  "description": "A woman stands in a dimly lit room holding a knife, with a shadowy figure behind a door, suggesting confinement and impending danger."
+}

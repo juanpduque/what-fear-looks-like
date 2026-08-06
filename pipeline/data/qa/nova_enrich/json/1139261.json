@@ -1,0 +1,46 @@
+{
+  "title_text": "My (Best Friend's) Head Exploded",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "surreal",
+    "dark",
+    "violent",
+    "grotesque"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.85,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic violence, grotesque imagery, and occult symbolism.",
+  "description": "A surreal collage of distorted, monstrous figures with exaggerated features and violent expressions against a red background."
+}

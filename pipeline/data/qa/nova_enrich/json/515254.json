@@ -1,0 +1,39 @@
+{
+  "title_text": "THEN THE NIGHT COMES",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TRUE HORROR HAS MANY DIFFERENT FACES BUT THE NIGHT HAS ONLY ONE",
+  "mood": [
+    "dread",
+    "gothic",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "knife",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence with a knife and a menacing figure.",
+  "description": "A poster shows a woman holding a large knife next to a hooded figure with a skull face, with dramatic text overlay."
+}

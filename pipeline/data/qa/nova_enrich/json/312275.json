@@ -1,0 +1,43 @@
+{
+  "title_text": "THROWBACK",
+  "credits_text": "Shann Brack, Anthony Ring, Melanie Serafin, and Vernon Wells",
+  "languages": [
+    "en"
+  ],
+  "other_text": "They went in search but found another.",
+  "mood": [
+    "adventure",
+    "horror",
+    "mystery",
+    "thriller",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.6,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster for the film 'Throwback' features a group of people in a jungle setting with a large shadowy figure looming above them."
+}

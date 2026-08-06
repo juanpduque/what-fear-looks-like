@@ -1,0 +1,38 @@
+{
+  "title_text": "LAS SIETE VIDAS DEL GATO",
+  "credits_text": "DE ENRIQUE JARDIEL PONCELA\nCON LA COLABORACIÓN EXTRAORDINARIA DE JOSE LUIS COLL\nPATTY SHEPARD\nROSSANA YANNY\nMARI CARMEN PRENDES\nVALERIANO ANDRES\nMARIA LUISA PONTE\nCARLOS MUNOZ\nDIRECTOR: PEDRO LAZAGA",
+  "languages": [
+    "es"
+  ],
+  "other_text": "ESPERANZA ROY\nJUANJO MENENDEZ\nANTONIO OZORES\nEASTMANCOLOR\nIMAGINA DE ANTON C. ABRELL.",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "dramatic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "cat",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A colorful poster features a large cat with glowing eyes, surrounded by dramatic figures and a sword, promoting the film \"Las Siete Vidas del Gato.\""
+}

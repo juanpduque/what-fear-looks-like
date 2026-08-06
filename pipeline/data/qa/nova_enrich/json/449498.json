@@ -1,0 +1,46 @@
+{
+  "title_text": "TRENCH 11",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "gritty",
+    "post-apocalyptic",
+    "survival",
+    "war"
+  ],
+  "fear_labels": [
+    {
+      "name": "gas_mask",
+      "conf": 0.9
+    },
+    {
+      "name": "tunnel",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "war",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A soldier in a gas mask stands over a group in a war-torn landscape, with a bloody tunnel below."
+}

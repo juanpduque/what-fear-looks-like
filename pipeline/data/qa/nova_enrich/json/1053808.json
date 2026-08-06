@@ -1,0 +1,40 @@
+{
+  "title_text": "MY CAT LUCY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "fantasy",
+    "horror",
+    "supernatural",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and a menacing monster figure.",
+  "description": "A poster shows a young girl holding a small black cat in front of a large, menacing cat face with sharp teeth and fiery background."
+}

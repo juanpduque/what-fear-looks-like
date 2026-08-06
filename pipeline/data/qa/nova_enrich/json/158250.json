@@ -1,0 +1,43 @@
+{
+  "title_text": "ZOMBIE DEAD",
+  "credits_text": "SURVIVAL ACTOR HORROR \"ZOMBIE DEAD\" STARRING AI KANAKA",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "ZEN ZNX-11 51min(+25min.) 3.50yeantw/taxi",
+  "mood": [
+    "action",
+    "horror",
+    "zombie",
+    "survival",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "zombie",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A woman aims a gun in a zombie-infested setting, surrounded by zombies and other characters in a dark, intense atmosphere."
+}

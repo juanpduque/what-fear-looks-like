@@ -1,0 +1,42 @@
+{
+  "title_text": "SEYTAN",
+  "credits_text": "YÖNETMEN ÖZLEM YİĞIT\nSAKİN GÖZ GÖZE GELME YOKSA ÖLÜRSÜN...",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "FATIH TAŞİZCU, EİLİNE SİYLEŞ, MAŞIK DAİMEŞ, CAŞLA KAŞİKÇA, TAŞKİN PELIN ÇELİK ÇAŞLAR... 26 OCAKTA SINEMALARDA",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "horror",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and disturbing themes.",
+  "description": "A poster features a woman with a cracked face and red, clawed hands against a dark background, evoking horror and psychological dread."
+}

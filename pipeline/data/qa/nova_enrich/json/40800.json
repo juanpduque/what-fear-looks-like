@@ -1,0 +1,44 @@
+{
+  "title_text": "ALLIGATOR II",
+  "credits_text": "THE MUTATION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "horror",
+    "sci-fi",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "cityscape",
+      "conf": 0.8
+    },
+    {
+      "name": "danger",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.95,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a monstrous creature.",
+  "description": "A poster shows two characters facing a large alligator-like monster in a cityscape at night, with dramatic lighting and an intense atmosphere."
+}

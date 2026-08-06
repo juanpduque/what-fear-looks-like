@@ -1,0 +1,40 @@
+{
+  "title_text": "NEEDLE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "LE VÂDOU MORT",
+  "mood": [
+    "dread",
+    "surreal",
+    "gothic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence through imagery of needles piercing a skull.",
+  "description": "A poster shows a skull with needles piercing it, set against a dark, textured background with mechanical gears and the title 'NEEDLE' at the top."
+}

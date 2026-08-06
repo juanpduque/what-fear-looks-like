@@ -1,0 +1,42 @@
+{
+  "title_text": "WAR OF THE WORLDS THE TRUE STORY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE TRUTH IS REVEALED THERE WAS A WAR BETWEEN EARTH AND MARS IN THE YEAR 1900",
+  "mood": [
+    "sci-fi",
+    "dramatic",
+    "intense",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "robot",
+      "conf": 0.95
+    },
+    {
+      "name": "war",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.1,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a large mechanical robot with weaponry against a desolate landscape, with bold red and black text overlay."
+}

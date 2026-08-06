@@ -1,0 +1,43 @@
+{
+  "title_text": "A COFFIN OF STARS",
+  "credits_text": "A FILM BY MATTHEW EWALD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "surreal",
+    "mysterious",
+    "cosmic",
+    "haunting",
+    "sci-fi"
+  ],
+  "fear_labels": [
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "cosmic",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man and an alien creature loom over a house under a starry sky, evoking a surreal and cosmic atmosphere."
+}

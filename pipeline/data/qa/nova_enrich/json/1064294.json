@@ -1,0 +1,40 @@
+{
+  "title_text": "黄子吃魔",
+  "credits_text": "ZOMBIE CHOCKADEE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "mystical",
+    "supernatural",
+    "action",
+    "historical"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "occult",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.2,
+  "blood_gore": 0.1,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and supernatural themes.",
+  "description": "A man in traditional Chinese attire performs a ritual with mystical objects, surrounded by ghostly figures and eerie symbols."
+}

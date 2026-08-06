@@ -1,0 +1,44 @@
+{
+  "title_text": "THE PIPER",
+  "credits_text": "THIS IS WHAT DEATH SOUNDS LIKE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.8,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and skulls, suggesting violent themes.",
+  "description": "A man with a clown face and a rat on his shoulder stands amidst skulls, holding a cigarette, with a dark, eerie background."
+}

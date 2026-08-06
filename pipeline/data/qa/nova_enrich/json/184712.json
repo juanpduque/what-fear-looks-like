@@ -1,0 +1,45 @@
+{
+  "title_text": "BATTLED OG",
+  "credits_text": "CRAIG SHEFFER DENNIS HAYSBERT ERNIE HUDSON BILL DUKE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE POPULATION OF MANHATTAN UNDER QUARANTINE... FOR NOW. QUARANTINE DO NOT ENTER",
+  "mood": [
+    "dread",
+    "horror",
+    "apocalyptic",
+    "intense",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "danger",
+      "conf": 0.9
+    },
+    {
+      "name": "cityscape",
+      "conf": 0.85
+    },
+    {
+      "name": "threat",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.1,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense horror imagery and implied violence.",
+  "description": "A poster shows a menacing creature with glowing eyes and sharp teeth looming over a city skyline under a full moon, with quarantine warnings."
+}

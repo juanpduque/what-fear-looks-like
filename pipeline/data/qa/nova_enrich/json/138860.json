@@ -1,0 +1,51 @@
+{
+  "title_text": "RED TEARS",
+  "credits_text": "\"BLOODY, OVER-THE-TOP VAMPIRE ACTION\" JapanCinema.net\nNATSUKI KATO YUMA ISHIGAKI YASUAKI KURATA",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "レッドティアーズ",
+  "mood": [
+    "gothic",
+    "horror",
+    "dramatic",
+    "intense",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains intense horror elements including blood and violent imagery.",
+  "description": "A dramatic poster featuring a fiery, monstrous figure against a cityscape backdrop with bold red and black colors."
+}

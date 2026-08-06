@@ -1,0 +1,41 @@
+{
+  "title_text": "SOV DRIVE IN DOUBLE FEATURE",
+  "credits_text": "MONSTER IN THE GARAGE / ZOMBIE LOVE SLAVE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "OLD MK AGILE KEEP COLD",
+  "mood": [
+    "camp",
+    "horror",
+    "grotesque",
+    "satirical"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "sexual",
+    "violence"
+  ],
+  "moderation_notes": "Contains suggestive imagery and mild violent themes.",
+  "description": "A vintage-style poster features two horror movie titles with graphic, monstrous characters and bold red text against a dark background."
+}

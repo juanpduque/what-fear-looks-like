@@ -1,0 +1,43 @@
+{
+  "title_text": "VIRGINIA CREEPS",
+  "credits_text": "MR. LARRY KIRBY, DR. GUISENE, STEPHEN SCHULTZ, GENE ZUCCHINI, IRIS HOFFMAN, MARY LEE, HALEY MITCHELL, SHANE BIZZARD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE OLD HOUSE OF THE VIRGINIA CREEPS! COMES TO THE BIG SCREEN! NOT FOR THE WEAK OF HEART! HORROR PRODUCTIONS PRESENTS",
+  "mood": [
+    "gothic",
+    "camp",
+    "horror",
+    "creepy",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A vintage-style poster for \"Virginia Creeps\" features multiple eerie faces and dramatic text, evoking classic horror themes."
+}

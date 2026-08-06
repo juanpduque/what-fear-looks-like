@@ -1,0 +1,46 @@
+{
+  "title_text": "THE BLACK ROOM",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "erotic",
+    "surreal",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.5,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.4,
+  "sexual_content": 0.7,
+  "sensitive": [
+    "nudity",
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains partial nudity and suggestive imagery.",
+  "description": "A poster features a central female figure with exposed chest, surrounded by ghostly faces and a spectral hand holding a blade."
+}

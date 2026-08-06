@@ -1,0 +1,44 @@
+{
+  "title_text": "ครูซิน ครูซิน",
+  "credits_text": "ชยาลีลา, มนต์จันทร์ มหานันท์, มาริษา วัฒนพานิช",
+  "languages": [
+    "th"
+  ],
+  "other_text": "ภาพยนตร์ไทย...",
+  "mood": [
+    "horror",
+    "fantasy",
+    "mythic",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.8,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and a large monster.",
+  "description": "A Thai horror poster features a menacing face, a crocodile-like monster, and characters in dramatic poses amidst turbulent water and fire."
+}

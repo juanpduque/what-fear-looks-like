@@ -1,0 +1,41 @@
+{
+  "title_text": "THE DEVIL IN WHITE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains a stylized skull with a creature-like form and subtle blood imagery, suggesting occult themes.",
+  "description": "A stylized skull with a blue, serpentine form emerging from it, set against a dark background with the title 'THE DEVIL IN WHITE' prominently displayed."
+}

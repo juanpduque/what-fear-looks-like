@@ -1,0 +1,42 @@
+{
+  "title_text": "APE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "adventure",
+    "fantasy",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.8
+    },
+    {
+      "name": "water",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.9,
+  "person": 0.3,
+  "animal": 0.8,
+  "blood_gore": 0.1,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A gorilla holds a shark while standing on a boat, with a snake and helicopter nearby, set against a cityscape."
+}

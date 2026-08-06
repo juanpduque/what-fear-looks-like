@@ -1,0 +1,46 @@
+{
+  "title_text": "DIRECT TO VIDEO",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "horror",
+    "fantasy",
+    "gritty",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "nudity"
+  ],
+  "moderation_notes": "Contains partial nudity and intense horror imagery.",
+  "description": "A muscular woman stands confidently amidst monstrous creatures, with bold text overlay indicating a direct-to-video release."
+}

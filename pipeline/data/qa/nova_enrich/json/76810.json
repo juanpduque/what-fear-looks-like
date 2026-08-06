@@ -1,0 +1,42 @@
+{
+  "title_text": "BLEAK FUTURE",
+  "credits_text": "MUTANTS. DAMN.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"THIS MOVIE IS AWESOME.\" - Ain't Cool News\nTHE END IS NEAR HERE\nCINEMA EPOCH\nDVD",
+  "mood": [
+    "dystopian",
+    "post-apocalyptic",
+    "horror",
+    "sci-fi",
+    "gritty"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and violent themes.",
+  "description": "Poster features intense faces of mutants with bold text, promoting a dystopian sci-fi horror film titled \"Bleak Future\"."
+}

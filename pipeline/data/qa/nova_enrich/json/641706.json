@@ -1,0 +1,46 @@
+{
+  "title_text": "THE OBSESSED",
+  "credits_text": "A FILM BY BAD TRIP BROS.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "supernatural",
+    "gothic",
+    "dread",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 1.0,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and horror imagery.",
+  "description": "Poster features three monstrous figures with a central zombie-like creature holding a sign stained with blood."
+}

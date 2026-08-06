@@ -1,0 +1,49 @@
+{
+  "title_text": "Return to Nuke 'Em High Volume 2",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "RETURN TO...",
+  "mood": [
+    "camp",
+    "horror",
+    "sci-fi",
+    "action",
+    "comedy"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.1,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and monstrous creatures.",
+  "description": "Poster features a group of people facing giant green monsters in a cityscape, with explosions and chaotic scenes."
+}

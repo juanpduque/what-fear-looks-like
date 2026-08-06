@@ -1,0 +1,38 @@
+{
+  "title_text": "STRANGE THING",
+  "credits_text": "ALBIN BURSELL'S",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WWW.STRANGETHINGMOVIE.COM",
+  "mood": [
+    "mysterious",
+    "eerie",
+    "suspenseful",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "door",
+      "conf": 0.8
+    },
+    {
+      "name": "shadow",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A woman in a purple robe stands in a doorway, facing away from the viewer, with dim lighting creating a mysterious atmosphere."
+}

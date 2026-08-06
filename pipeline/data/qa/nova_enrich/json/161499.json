@@ -1,0 +1,45 @@
+{
+  "title_text": "THE EXPERIMENT",
+  "credits_text": "A JOHN SYMES FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WHO'S WATCHING YOU? \"WARPED, PSYCHOLOGICAL HUMAN SICKNESS\" - ON KILL",
+  "mood": [
+    "dread",
+    "psychological",
+    "suspense",
+    "disturbing",
+    "claustrophobic"
+  ],
+  "fear_labels": [
+    {
+      "name": "psychological",
+      "conf": 0.9
+    },
+    {
+      "name": "surveillance",
+      "conf": 0.8
+    },
+    {
+      "name": "confinement",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster implies psychological horror and themes of confinement, but does not depict explicit violence or gore.",
+  "description": "A poster for a psychological horror film featuring a gloved hand holding a device with multiple screens showing disturbing imagery, set against a dark, industrial background."
+}

@@ -1,0 +1,43 @@
+{
+  "title_text": "INFESTED",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "sci-fi",
+    "thriller",
+    "action",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "insect",
+      "conf": 0.95
+    },
+    {
+      "name": "text",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A close-up of a bee with a large green, segmented creature attached to it, and another bee in the background. The word INFESTED is prominently displayed at the bottom."
+}

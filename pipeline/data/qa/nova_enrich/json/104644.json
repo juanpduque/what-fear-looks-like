@@ -1,0 +1,39 @@
+{
+  "title_text": "A REFLECTION OF FEAR",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "psychological",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence through imagery of a weapon and aggressive posture.",
+  "description": "A close-up of a screaming face dominates the poster, with a shadowy figure holding a weapon and another figure in motion, set against a stark yellow background."
+}

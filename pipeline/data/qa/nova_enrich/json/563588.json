@@ -1,0 +1,50 @@
+{
+  "title_text": "THE MAKING OF NIGHT OF THE DEMONS",
+  "credits_text": "YOU'RE INVITED",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gothic",
+    "camp",
+    "supernatural",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.55
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.6,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains horror themes, mild violence, and occult imagery.",
+  "description": "A poster featuring multiple ghoulish figures and fiery backgrounds, promoting a documentary about a horror film."
+}

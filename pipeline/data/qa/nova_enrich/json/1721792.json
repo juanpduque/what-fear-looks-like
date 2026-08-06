@@ -1,0 +1,46 @@
+{
+  "title_text": "BIRDCALL",
+  "credits_text": "Written by BENJAMIN KNEZEVIC Directed by CAMERON PACE Produced by JANE RAE RUFF Starring NOAH MOORE, EMMA SPENCER, LENA KOVAC, JASON LISTER, LUCAS PIERCE, NINA SUNDQVIST, JENNA NORELLI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "mysterious",
+    "eerie",
+    "suspenseful",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "night",
+      "conf": 0.95
+    },
+    {
+      "name": "bird",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.7,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark silhouette stands in a lit doorway of a house at night, with a full moon and a bird visible in the background, surrounded by tall trees."
+}

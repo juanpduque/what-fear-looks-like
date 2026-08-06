@@ -1,0 +1,50 @@
+{
+  "title_text": "MOON OF THE BLOOD BEAST",
+  "credits_text": "WHEN THE MOON IS RED YOU'RE DEAD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "intense",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "skull",
+      "conf": 0.85
+    },
+    {
+      "name": "forest",
+      "conf": 0.75
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.65
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and violent themes.",
+  "description": "A menacing creature with horns and fangs stands against a red moon backdrop, with bold red and black typography for the title and tagline."
+}

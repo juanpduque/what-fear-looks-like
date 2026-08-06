@@ -1,0 +1,68 @@
+[
+  {
+    "tag": "nova-lite",
+    "model_id": "us.amazon.nova-lite-v1:0",
+    "kind": "amazon-first-party",
+    "ok": true,
+    "error": "",
+    "error_code": "",
+    "latency_s": 1.498,
+    "preview": "Bray Productions presents Dinky Doodle in JUST SPOOKS Written and directed by WALTER LANTZ Assisted by Clyde Geronimi",
+    "chars": 117
+  },
+  {
+    "tag": "nova-pro",
+    "model_id": "us.amazon.nova-pro-v1:0",
+    "kind": "amazon-first-party",
+    "ok": true,
+    "error": "",
+    "error_code": "",
+    "latency_s": 1.018,
+    "preview": "Bray Productions presents Dinky Doodle in JUST SPOOKS Written and directed by WALTER LANTZ Assisted by Clyde Geronimi",
+    "chars": 117
+  },
+  {
+    "tag": "nova-2-lite",
+    "model_id": "us.amazon.nova-2-lite-v1:0",
+    "kind": "amazon-first-party",
+    "ok": true,
+    "error": "",
+    "error_code": "",
+    "latency_s": 1.839,
+    "preview": "Bray Productions | presents | Dinky Doodle | in | JUST SPOOKS | Written and directed by | WALTER LANTZ | Assisted by Clyde Geromini",
+    "chars": 117
+  },
+  {
+    "tag": "pixtral",
+    "model_id": "us.mistral.pixtral-large-2502-v1:0",
+    "kind": "marketplace",
+    "ok": true,
+    "error": "",
+    "error_code": "",
+    "latency_s": 1.22,
+    "preview": "Bray Productions | presents | Dinky Doodle | in | JUST SPOOKS |  | Written and directed by | WALTER LANTZ | Assisted by Clyde Geronimi",
+    "chars": 118
+  },
+  {
+    "tag": "llama4-scout",
+    "model_id": "us.meta.llama4-scout-17b-instruct-v1:0",
+    "kind": "marketplace",
+    "ok": true,
+    "error": "",
+    "error_code": "",
+    "latency_s": 0.905,
+    "preview": "Bray Productions presents | Dinky Doodle | in | JUST SPOOKS | Written and directed by | WALTER LANTZ | Assisted by Clyde Geronimi",
+    "chars": 117
+  },
+  {
+    "tag": "gemma3",
+    "model_id": "google.gemma-3-4b-it",
+    "kind": "marketplace-or-direct",
+    "ok": true,
+    "error": "",
+    "error_code": "",
+    "latency_s": 0.84,
+    "preview": "Bray Productions | presents |  | Dinky Doodle | in |  | JUST SPOOKS |  | Written and directed by | WALTER LANTS | Assisted by Clyde Geronimi",
+    "chars": 120
+  }
+]

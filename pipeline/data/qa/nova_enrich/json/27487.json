@@ -1,0 +1,37 @@
+{
+  "title_text": "FORT BOOM",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOUR PAST HAS PLANS FOR YOU.",
+  "mood": [
+    "dark",
+    "tense",
+    "mysterious",
+    "western",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "text",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.2,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and a skull, suggesting potential for dark themes.",
+  "description": "A man in a cowboy hat stands in front of a rustic sign reading 'FORT BOOM' with a skull in the background, under a stormy sky."
+}

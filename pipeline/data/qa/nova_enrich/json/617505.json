@@ -1,0 +1,45 @@
+{
+  "title_text": "HUBIE HALLOWEEN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "humorous",
+    "spooky",
+    "nostalgic",
+    "community",
+    "satirical"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.3
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    },
+    {
+      "name": "fire",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.2,
+  "person": 1.0,
+  "animal": 0.1,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A colorful poster features a man surrounded by a lively crowd under a full moon with bats, suggesting a humorous Halloween theme."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "第一小年",
+  "credits_text": "",
+  "languages": [
+    "zh"
+  ],
+  "other_text": "国国第一小年",
+  "mood": [
+    "gothic",
+    "eerie",
+    "mysterious",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains stylized blood and skulls, suggesting horror themes.",
+  "description": "A person in elaborate traditional attire with red pom-poms and skulls, holding a circular object, set against a dark, eerie background."
+}

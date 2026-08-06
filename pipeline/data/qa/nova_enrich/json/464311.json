@@ -1,0 +1,44 @@
+{
+  "title_text": "PARANORMAL BAD TRIP 3D",
+  "credits_text": "a film by FRÉDÉRIC GROUSSET",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE FIRST FOUND FOOTAGE MOVIE SHOT IN 3D",
+  "mood": [
+    "camp",
+    "horror",
+    "surreal",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.5
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild violence suggested by imagery; no explicit gore or nudity visible.",
+  "description": "Vibrant poster features a group of diverse characters, including a zombie and a man with a distressed expression, set against a red background with bold typography."
+}

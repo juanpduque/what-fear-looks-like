@@ -1,0 +1,42 @@
+{
+  "title_text": "ZOMBIES OF MASS DESTRUCTION",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "I'M WITH H",
+  "mood": [
+    "horror",
+    "comedy",
+    "action",
+    "apocalyptic",
+    "zombie"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.95,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore with zombie imagery.",
+  "description": "A group of survivors stands amidst zombies, one holding a large axe, with a mix of fear and determination on their faces."
+}

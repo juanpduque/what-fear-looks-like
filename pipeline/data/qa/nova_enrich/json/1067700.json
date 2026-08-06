@@ -1,0 +1,46 @@
+{
+  "title_text": "4 NIGHTMARES",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "horror",
+    "violent",
+    "chaotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "violence",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "A chaotic horror poster shows multiple terrified individuals surrounded by monstrous figures and blood, with a central figure holding a chainsaw."
+}

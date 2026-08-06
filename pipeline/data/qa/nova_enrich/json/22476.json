@@ -1,0 +1,45 @@
+{
+  "title_text": "INFESTATION",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "horror",
+    "apocalyptic",
+    "thriller",
+    "sci-fi"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "crowd",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the presence of monsters and weapons.",
+  "description": "A man and woman stand close together in a cityscape overrun with giant insects, with a rifle in hand and a chaotic battle scene in the background."
+}

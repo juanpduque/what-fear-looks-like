@@ -1,0 +1,47 @@
+{
+  "title_text": "CONTAGIO",
+  "credits_text": "A STEVE SESSIONS FILM\nISABELLE STEPHEN LIEU LUCIEN TANNER TIM EISENACH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PREPARE TO TAKE YOUR LAST BREATH",
+  "mood": [
+    "dread",
+    "anxiety",
+    "suspense",
+    "thriller",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "gas_mask",
+      "conf": 0.95
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.85
+    },
+    {
+      "name": "disease",
+      "conf": 0.8
+    },
+    {
+      "name": "panic",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "The poster features a skull wearing a gas mask with a red lens, set against a dark background, with the title 'CONTAGIO' prominently displayed."
+}

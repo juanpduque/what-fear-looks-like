@@ -1,0 +1,39 @@
+{
+  "title_text": "SOLACE",
+  "credits_text": "A FILM BY VINCENZO BONANNI\nKAM SMITH\nCOLE REYNOLDS\nBEN NICKOLS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "melancholic",
+    "mysterious",
+    "haunting",
+    "intimate",
+    "atmospheric"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "water",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, moody poster features a solitary figure illuminated by a faint red glow against a vast, shadowy landscape under a stormy sky."
+}

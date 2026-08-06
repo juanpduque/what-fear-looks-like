@@ -1,0 +1,38 @@
+{
+  "title_text": "THE ZOMPOPALYPSE Therapy Sessions",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "humorous",
+    "satirical",
+    "zombie",
+    "therapy",
+    "comedy"
+  ],
+  "fear_labels": [
+    {
+      "name": "zombie",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild violence and gore, suitable for mature audiences.",
+  "description": "A group of people, some holding weapons, stand around a pink couch in a zombie-themed setting, suggesting a comedic therapy session during a zombie apocalypse."
+}

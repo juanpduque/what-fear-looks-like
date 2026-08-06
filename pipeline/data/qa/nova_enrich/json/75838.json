@@ -1,0 +1,41 @@
+{
+  "title_text": "THE NINE DEMONS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "fantasy",
+    "martial arts",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "demon",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild violent imagery and occult themes.",
+  "description": "Vibrant poster features martial artists battling demons with skulls and supernatural elements in a dynamic, action-packed scene."
+}

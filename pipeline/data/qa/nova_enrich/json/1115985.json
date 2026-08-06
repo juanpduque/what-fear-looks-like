@@ -1,0 +1,38 @@
+{
+  "title_text": "I'll Play Mother",
+  "credits_text": "SUSANNE WUEST SHUBHAM SARAF JO MARTIN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE CHILDREN WILL SETTLE",
+  "mood": [
+    "disturbing",
+    "psychological",
+    "gothic",
+    "haunting",
+    "melancholic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.3
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild suggestion of blood and psychological distress.",
+  "description": "A poster features a cracked, pale doll-like face with a hint of red, set against a muted blue background, with the title and credits overlaid."
+}

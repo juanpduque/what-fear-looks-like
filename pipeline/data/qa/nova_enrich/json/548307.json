@@ -1,0 +1,52 @@
+{
+  "title_text": "HISTORIAS del DIABLO",
+  "credits_text": "BRAD PICHE ANDREA RODMAN",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "¡EN EL MUNDO EXISTEN COSAS MUCHO MÁS TERRIBLES, QUE EL MISMO DIABLO!",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "supernatural",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic violence and occult imagery.",
+  "description": "A dramatic poster features a demonic face pierced by a sword with flames, blood dripping, and bold red and black typography."
+}

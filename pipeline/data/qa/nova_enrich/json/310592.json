@@ -1,0 +1,47 @@
+{
+  "title_text": "ALIEN ZOMBIE INVASION",
+  "credits_text": "Prepare for the real apocalypse",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "apocalyptic",
+    "sci-fi",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "alien",
+      "conf": 0.9
+    },
+    {
+      "name": "zombie",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "house",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A poster shows a UFO attacking a house with zombies and silhouettes fleeing in a forested area under a dark sky."
+}

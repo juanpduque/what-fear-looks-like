@@ -1,0 +1,43 @@
+{
+  "title_text": "MEGA SHARK VERSUS CROCOSAURUS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "disaster"
+  ],
+  "fear_labels": [
+    {
+      "name": "shark",
+      "conf": 0.95
+    },
+    {
+      "name": "crocodile",
+      "conf": 0.95
+    },
+    {
+      "name": "explosion",
+      "conf": 0.85
+    },
+    {
+      "name": "cityscape",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.1,
+  "animal": 1.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and implied violence.",
+  "description": "A poster shows a massive shark battling a giant crocodile over a destroyed city with explosions and debris."
+}

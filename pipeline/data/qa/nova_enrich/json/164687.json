@@ -1,0 +1,42 @@
+{
+  "title_text": "DANTE'S INFERNO",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dramatic",
+    "intense",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    },
+    {
+      "name": "dramatic",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic poster shows a woman and man reaching out amidst fiery chaos, with a monstrous green creature above them against a cityscape backdrop."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "DINOSAUR HOSTEL",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "horror",
+    "sci-fi",
+    "adventure"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.3,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and implied violence with a dinosaur attack.",
+  "description": "A large dinosaur roars aggressively over a burning vehicle with birds flying nearby in a dramatic, action-packed scene."
+}

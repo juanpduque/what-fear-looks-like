@@ -1,0 +1,45 @@
+{
+  "title_text": "MOST LIKELY TO DIE",
+  "credits_text": "ONE KILLER REUNION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "horror",
+    "mystery",
+    "suspense",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains violent imagery and horror themes.",
+  "description": "A group of people stands in front of a hooded figure holding a knife, with a graduation cap and the title 'Most Likely to Die' displayed above."
+}

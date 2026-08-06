@@ -1,0 +1,37 @@
+{
+  "title_text": "THE HUNT",
+  "credits_text": "CLARA VALLET JELAU MOUNA THOMAS VIZECZEVANSEKI",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "other_text": "L'HOMME EST UN LOUP POUR L'HOMME",
+  "mood": [
+    "tense",
+    "survival",
+    "forest",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the hunting theme and weapon.",
+  "description": "A man in camouflage aims a crossbow in a dense forest, with dramatic lighting and the title 'The Hunt' prominently displayed."
+}

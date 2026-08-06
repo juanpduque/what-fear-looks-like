@@ -1,0 +1,45 @@
+{
+  "title_text": "LEGION OF THE NIGHT",
+  "credits_text": "SPECIAL EFFECTS BY MATT NERBERLY WRITTEN AND DIRECTED BY MATT NISSLE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE ULTIMATE KILLING MACHINES THEY MAKE NO SUL THEY SHOW NO MERCY",
+  "mood": [
+    "dread",
+    "sci-fi",
+    "horror",
+    "action",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "weapon",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.5,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violent action with space rays and monsters.",
+  "description": "A poster shows shadowy figures with glowing eyes battling under a full moon, with a man holding a flashlight in the foreground."
+}

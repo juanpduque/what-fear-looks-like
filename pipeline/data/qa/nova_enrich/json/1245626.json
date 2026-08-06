@@ -1,0 +1,39 @@
+{
+  "title_text": "キリラ",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "怪奇大作戦・雪男・怪獣・恐怖の怪物・恐怖の雪男・雪男の恐怖・雪男の怪物・雪男の恐怖・雪男の怪物・雪男の恐怖",
+  "mood": [
+    "horror",
+    "fantasy",
+    "mystery",
+    "suspense",
+    "classic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.1,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.1,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A vintage Japanese horror poster featuring a large, hairy creature and dramatic scenes, with bold Japanese text overlay."
+}

@@ -1,0 +1,37 @@
+{
+  "title_text": "PUPPET MASTER 3",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TOULON'S REVENGE",
+  "mood": [
+    "action",
+    "horror",
+    "camp",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "Contains mild sexual suggestiveness and implied violence.",
+  "description": "A poster shows a man with multiple guns surrounded by puppets in a dramatic setting with flames in the background."
+}

@@ -1,0 +1,44 @@
+{
+  "title_text": "DRIVE-IN HORRORSHOW",
+  "credits_text": "LUIS NEGRON JENNA MORASA ETHAN ZOHN JIMMY FLYNN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"DELIVERS A VISUAL FEAST OF BLOOD SPLATTER AND CLEVER STORYTELLING\" \"A CREATIVE SPIN ON THE THROWBACK ANTHOLOGY HORROR\"",
+  "mood": [
+    "dread",
+    "camp",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and blood.",
+  "description": "Poster features a man and woman with blood on their clothes, a car with handprints, and horror-themed text."
+}

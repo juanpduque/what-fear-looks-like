@@ -1,0 +1,50 @@
+{
+  "title_text": "DON'T LOOK",
+  "credits_text": "A WRONG TURN TO HELL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "terror",
+    "horror",
+    "gothic",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and implied violence.",
+  "description": "A masked figure holds a chainsaw in front of a dark house in a forested area, with a tagline below."
+}

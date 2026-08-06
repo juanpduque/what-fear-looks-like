@@ -1,0 +1,41 @@
+{
+  "title_text": "THE NEST",
+  "credits_text": "DON'T LET THE BED BUGS BITE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "dread",
+    "anxiety",
+    "terror",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "creature",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "text",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.95,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense imagery of insects and a distressed human face, which may be unsettling.",
+  "description": "A poster shows a terrified child surrounded by swarming bed bugs with the title 'The Nest' and the tagline 'Don't Let the Bed Bugs Bite.'"
+}

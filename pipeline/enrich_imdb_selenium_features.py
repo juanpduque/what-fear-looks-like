@@ -90,6 +90,17 @@ def build_driver(*, headless: bool = False):
         chrome = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
         if Path(chrome).exists():
             opts.binary_location = chrome
+    else:
+        for chrome in (
+            os.environ.get("CHROME_BIN") or "",
+            "/usr/bin/google-chrome-stable",
+            "/usr/bin/google-chrome",
+            "/usr/bin/chromium-browser",
+            "/usr/bin/chromium",
+        ):
+            if chrome and Path(chrome).exists():
+                opts.binary_location = chrome
+                break
     if headless:
         opts.add_argument("--headless=new")
         opts.add_argument("--disable-gpu")

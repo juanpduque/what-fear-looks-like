@@ -1,0 +1,50 @@
+{
+  "title_text": "The Patron Saint of the Roadkill",
+  "credits_text": "starring RON SPENCE, KYLE EVER ET AL., LUCI U., JOSEPH KOSLAR, MARKER GREE, FOREE AND AMELIA SPENCE; director of photography: MIKE GLASSER; edited by: RIN SPENCE AND KEERIN POLLA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "surreal",
+    "dark",
+    "macabre",
+    "fantasy",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "blood",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic and disturbing imagery, including a monstrous creature and implied violence.",
+  "description": "A poster features a surreal scene with a monstrous winged creature above a person in a dark forest, evoking a macabre and fantastical atmosphere."
+}

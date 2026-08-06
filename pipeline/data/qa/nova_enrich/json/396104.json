@@ -1,0 +1,50 @@
+{
+  "title_text": "THE HOSPI+A2",
+  "credits_text": "BETSY RUE (as BLOODY VALENTINE) DEBBIE ROCHO (TROMEO AND JULIET)",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOUR ROOM IS READY \"DEBASEMENT IN ITS PUREST FORM\" DREAD CENTRAL",
+  "mood": [
+    "horror",
+    "thriller",
+    "gothic",
+    "dread",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    },
+    {
+      "name": "monster",
+      "conf": 0.5
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.5,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "Poster shows a horror-themed hospital scene with two characters, one holding a weapon and blood visible, suggesting a violent and disturbing atmosphere."
+}

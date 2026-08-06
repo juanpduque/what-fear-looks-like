@@ -1,0 +1,50 @@
+{
+  "title_text": "GREMILIN",
+  "credits_text": "BIG THINGS COME IN SMALL PACKAGES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "horror",
+    "sci-fi",
+    "chaotic",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.85
+    },
+    {
+      "name": "weapon",
+      "conf": 0.75
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.65
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.95,
+  "person": 0.6,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains intense action sequences, fire, and implied violence.",
+  "description": "A large, monstrous creature looms over a burning house as military vehicles and soldiers confront the threat in a chaotic battle scene."
+}

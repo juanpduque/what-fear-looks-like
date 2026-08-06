@@ -1,0 +1,44 @@
+{
+  "title_text": "BELL WITCH the movie",
+  "credits_text": "Every Legend Has A Beginning Based on True Events",
+  "languages": [
+    "en"
+  ],
+  "other_text": "In the early 1800's John Bell moved to Tennessee to start a new life, but as fate would have it all would be lost to terror. In 1820 he became the first person to be murdered by a spirit, calling herself Kate. In 1826 she promised to return in 107 years. She is way overdue.",
+  "mood": [
+    "gothic",
+    "haunting",
+    "mysterious",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "haunted_house",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains themes of supernatural horror and occult elements.",
+  "description": "Movie poster for 'Bell Witch' featuring a dark house with glowing lights, eerie atmosphere, and tagline about true events."
+}

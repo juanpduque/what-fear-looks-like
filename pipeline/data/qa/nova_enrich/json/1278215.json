@@ -1,0 +1,38 @@
+{
+  "title_text": "ROAD KILL",
+  "credits_text": "A SHORT FILM BY STEVE RAMSDEN\nSTARRING GUY HENRY AS TOM\nPHOTOGRAPHY BY STEVE RAMSDEN\nEDITED BY STEVE RAMSDEN\nMUSIC BY ALEX HENRY\nPRODUCED BY STEVE RAMSDEN\nWRITTEN AND DIRECTED BY STEVE RAMSDEN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IT COULD HAPPEN TO ANY OF US\" SHOCKFEST\n\"WINNER\" SHOCKFEST\n\"WINNER\" SHOCKFEST\n\"WINNER\" SHOCKFEST\n\"WINNER\" SHOCKFEST",
+  "mood": [
+    "tense",
+    "suspenseful",
+    "gothic",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man stands over a dark figure on the ground in a dimly lit setting, with text indicating awards and a tagline."
+}

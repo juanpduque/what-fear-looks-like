@@ -1,0 +1,45 @@
+{
+  "title_text": "SEIZURE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "chains",
+      "conf": 0.9
+    },
+    {
+      "name": "suspended_object",
+      "conf": 0.8
+    },
+    {
+      "name": "occult",
+      "conf": 0.7
+    },
+    {
+      "name": "text_heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult imagery.",
+  "description": "A person lies bound and chained against a dark background with a large, ominous title above."
+}

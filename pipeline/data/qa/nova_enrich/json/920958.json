@@ -1,0 +1,43 @@
+{
+  "title_text": "ALIEN",
+  "credits_text": "TOM SKRETT SIGOURNEY WEAVER VERONICA CARTWRIGHT HARRY DEAN STANTON JOHN HURT YAPHET KOTERIAN BOLTON TRACY LADD JANET AGUIRRE IAN HOLM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "In space no one can hear you scream.",
+  "mood": [
+    "dread",
+    "sci-fi",
+    "suspense",
+    "claustrophobic",
+    "cosmic horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark poster features a glowing alien creature emerging from a moon-like surface with the tagline 'In space no one can hear you scream.'"
+}

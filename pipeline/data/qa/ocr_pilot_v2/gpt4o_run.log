@@ -1,0 +1,121 @@
+sample n=100 from /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/ocr_pilot_v2/sample_ids.txt
+model=gpt4o api=gpt-4o detail=high temperature=0
+OPENAI_API_KEY=set (value not logged)
+
+=== model=gpt4o api=gpt-4o detail=high n=100 ===
+  skip 1 already-ok ids
+  [1/99] id=1261561 status=ok chars=255 overlap=1.0 1.852s tok=333
+  [2/99] id=362776 status=ok chars=56 overlap=1.0 1.119s tok=298
+  [3/99] id=26921 status=ok chars=31 overlap=1.0 1.219s tok=456
+  [4/99] id=212973 status=ok chars=251 overlap=1.0 1.985s tok=509
+sample n=100 from /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/ocr_pilot_v2/sample_ids.txt
+model=gpt4o api=gpt-4o detail=high temperature=0
+OPENAI_API_KEY=set (value not logged)
+
+=== model=gpt4o api=gpt-4o detail=high n=100 ===
+  skip 5 already-ok ids
+  [1/95] id=48800 status=ok chars=153 overlap=1.0 2.536s tok=500
+  [2/95] id=35073 status=ok chars=31 overlap=1.0 1.406s tok=460
+  [3/95] id=836924 status=ok chars=39 overlap=1.0 1.034s tok=463
+  [4/95] id=3104 status=ok chars=26 overlap=1.0 1.635s tok=457
+  [5/95] id=64524 status=ok chars=9 overlap=1.0 1.016s tok=453
+  [6/95] id=77399 status=ok chars=13 overlap=0.0 1.281s tok=455
+  [7/95] id=30833 status=ok chars=17 overlap=1.0 0.817s tok=455
+  [8/95] id=399172 status=ok chars=18 overlap=1.0 0.95s tok=453
+  [9/95] id=1015482 status=ok chars=46 overlap=0.0 0.908s tok=462
+  [10/95] id=10283 status=ok chars=43 overlap=0.875 1.602s tok=465
+  [11/95] id=88410 status=ok chars=11 overlap=1.0 0.784s tok=454
+  [12/95] id=86687 status=ok chars=59 overlap=1.0 1.107s tok=467
+  [13/95] id=336254 status=ok chars=8 overlap=1.0 1.865s tok=453
+  [14/95] id=36992 status=ok chars=7 overlap=1.0 1.27s tok=453
+  [15/95] id=43274 status=ok chars=15 overlap=1.0 1.307s tok=454
+  [16/95] id=15056 status=ok chars=30 overlap=1.0 0.894s tok=460
+  [17/95] id=23532 status=ok chars=25 overlap=1.0 0.944s tok=457
+  [18/95] id=31012 status=ok chars=8 overlap=1.0 1.649s tok=452
+  [19/95] id=45551 status=ok chars=35 overlap=1.0 2.393s tok=465
+  [20/95] id=156252 status=ok chars=6 overlap=1.0 0.823s tok=452
+  [21/95] id=743757 status=ok chars=93 overlap=1.0 1.21s tok=307
+  [22/95] id=11908 status=ok chars=7 overlap=1.0 1.086s tok=452
+  [23/95] id=28265 status=ok chars=19 overlap=0.3333 0.865s tok=456
+  [24/95] id=28419 status=ok chars=452 overlap=1.0 2.086s tok=605
+  [25/95] id=53553 status=ok chars=8 overlap=1.0 1.221s tok=452
+  [26/95] id=77050 status=ok chars=81 overlap=1.0 0.986s tok=311
+  [27/95] id=278267 status=ok chars=168 overlap=1.0 1.294s tok=317
+  [28/95] id=165078 status=ok chars=228 overlap=1.0 1.351s tok=359
+  [29/95] id=225048 status=ok chars=44 overlap=1.0 1.291s tok=294
+  [30/95] id=233194 status=ok chars=260 overlap=1.0 2.662s tok=386
+  [31/95] id=286452 status=ok chars=13 overlap=0.5 1.343s tok=454
+  [32/95] id=300156 status=ok chars=78 overlap=1.0 0.914s tok=479
+  [33/95] id=302019 status=ok chars=12 overlap=1.0 0.857s tok=453
+  [34/95] id=387034 status=ok chars=387 overlap=1.0 3.534s tok=1287
+  [35/95] id=491649 status=ok chars=5 overlap=1.0 0.963s tok=450
+  [36/95] id=505063 status=ok chars=26 overlap=1.0 1.471s tok=456
+  [37/95] id=547055 status=ok chars=9 overlap=1.0 1.272s tok=452
+  [38/95] id=636515 status=ok chars=36 overlap=1.0 1.521s tok=462
+  [39/95] id=653537 status=ok chars=49 overlap=0.0 1.158s tok=459
+  [40/95] id=772603 status=ok chars=190 overlap=1.0 1.463s tok=526
+  [41/95] id=974046 status=ok chars=130 overlap=1.0 1.175s tok=488
+  [42/95] id=976209 status=ok chars=100 overlap=1.0 1.863s tok=491
+  [43/95] id=77677 status=ok chars=7 overlap=1.0 0.977s tok=452
+  [44/95] id=94910 status=ok chars=10 overlap=1.0 0.91s tok=453
+  [45/95] id=207475 status=ok chars=53 overlap=1.0 0.899s tok=467
+  [46/95] id=259675 status=ok chars=228 overlap=1.0 3.326s tok=377
+  [47/95] id=343674 status=ok chars=13 overlap=1.0 1.211s tok=454
+  [48/95] id=356486 status=ok chars=14 overlap=1.0 0.946s tok=455
+  [49/95] id=384756 status=ok chars=60 overlap=1.0 1.284s tok=466
+  [50/95] id=472015 status=ok chars=104 overlap=1.0 1.224s tok=322
+  [51/95] id=487439 status=ok chars=403 overlap=1.0 1.931s tok=605
+  [52/95] id=682809 status=ok chars=523 overlap=1.0 3.489s tok=644
+  [53/95] id=748251 status=ok chars=15 overlap=1.0 0.98s tok=454
+  [54/95] id=861413 status=ok chars=137 overlap=1.0 0.996s tok=326
+  [55/95] id=940187 status=ok chars=51 overlap=0.0 0.987s tok=469
+  [56/95] id=972244 status=ok chars=469 overlap=1.0 2.278s tok=601
+  [57/95] id=748589 status=ok chars=428 overlap=1.0 2.285s tok=591
+  [58/95] id=796250 status=ok chars=328 overlap=1.0 1.593s tok=559
+  [59/95] id=802851 status=ok chars=48 overlap=1.0 1.042s tok=468
+  [60/95] id=854417 status=ok chars=31 overlap=1.0 1.433s tok=458
+  [61/95] id=863406 status=ok chars=13 overlap=1.0 1.648s tok=453
+  [62/95] id=918096 status=ok chars=38 overlap=1.0 0.882s tok=460
+  [63/95] id=931049 status=ok chars=131 overlap=1.0 1.331s tok=320
+  [64/95] id=1022479 status=ok chars=36 overlap=1.0 1.862s tok=464
+  [65/95] id=1083119 status=ok chars=23 overlap=1.0 1.043s tok=457
+  [66/95] id=1125186 status=ok chars=75 overlap=1.0 1.639s tok=475
+  [67/95] id=1193824 status=ok chars=11 overlap=1.0 0.823s tok=451
+  [68/95] id=1289969 status=ok chars=252 overlap=1.0 1.98s tok=367
+  [69/95] id=1298819 status=ok chars=22 overlap=1.0 1.302s tok=456
+  [70/95] id=1307154 status=ok chars=16 overlap=1.0 1.939s tok=454
+  [71/95] id=1375109 status=ok chars=515 overlap=1.0 3.093s tok=599
+  [72/95] id=1397562 status=ok chars=6 overlap=1.0 1.023s tok=451
+  [73/95] id=1441287 status=ok chars=58 overlap=1.0 0.96s tok=470
+  [74/95] id=1443966 status=ok chars=127 overlap=1.0 2.429s tok=491
+  [75/95] id=1475231 status=ok chars=164 overlap=1.0 1.505s tok=499
+  [76/95] id=1718150 status=ok chars=737 overlap=1.0 2.757s tok=645
+  [77/95] id=652004 status=ok chars=23 overlap=1.0 1.017s tok=454
+  [78/95] id=931940 status=ok chars=7 overlap=1.0 0.797s tok=451
+  [79/95] id=949486 status=ok chars=307 overlap=1.0 1.79s tok=550
+  [80/95] id=988142 status=ok chars=25 overlap=1.0 1.489s tok=457
+  [81/95] id=1085262 status=ok chars=43 overlap=1.0 1.084s tok=465
+  [82/95] id=1148920 status=ok chars=450 overlap=1.0 3.019s tok=421
+  [83/95] id=1229586 status=ok chars=7 overlap=1.0 1.349s tok=282
+  [84/95] id=1273536 status=ok chars=31 overlap=1.0 1.127s tok=455
+  [85/95] id=1294319 status=ok chars=13 overlap=1.0 0.872s tok=453
+  [86/95] id=1346645 status=ok chars=4 overlap=1.0 1.779s tok=451
+  [87/95] id=1351896 status=ok chars=203 overlap=1.0 1.53s tok=330
+  [88/95] id=1363776 status=ok chars=9 overlap=1.0 0.869s tok=282
+  [89/95] id=1379480 status=ok chars=17 overlap=1.0 0.843s tok=452
+  [90/95] id=1405670 status=ok chars=22 overlap=0.0 0.742s tok=454
+  [91/95] id=1463113 status=ok chars=4 overlap=1.0 1.499s tok=281
+  [92/95] id=1483020 status=ok chars=12 overlap=1.0 0.865s tok=453
+  [93/95] id=1483743 status=ok chars=110 overlap=1.0 2.183s tok=315
+  [94/95] id=1541944 status=ok chars=13 overlap=1.0 1.855s tok=452
+  [95/95] id=1578643 status=ok chars=36 overlap=1.0 0.835s tok=464
+final sidecar merge → 100 gpt4o rows into /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/ocr_pilot_v2/results.csv
+usage tokens in=42350 out=3370 approx_usd=$0.1396 (list $2.5/1M in + $10.0/1M out)
+this_run ok=95 err=0 tok=43641
+  gpt4o: 100/100 ok
+
+LISTO → /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/ocr_pilot_v2/results.csv (1265 rows)
+sidecar → /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/ocr_pilot_v2/gpt4o_sidecar.csv
+usage → /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/ocr_pilot_v2/gpt4o_usage.csv
+EXIT:0
+DONE

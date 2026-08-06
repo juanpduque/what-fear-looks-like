@@ -1,0 +1,46 @@
+{
+  "title_text": "SLEEP. WALK. KILL.",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NO OUTLE",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "tense",
+    "ominous"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "tree",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.5,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood splatter near title text.",
+  "description": "A dark, eerie street scene with a shadowy figure and a bare tree, featuring the bold red title 'SLEEP. WALK. KILL.' above."
+}

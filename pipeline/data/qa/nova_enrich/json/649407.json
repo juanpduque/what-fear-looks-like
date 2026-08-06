@@ -1,0 +1,46 @@
+{
+  "title_text": "KILLBILLIES",
+  "credits_text": "A TORY JONES FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CONCERT MEDICINE SERIES",
+  "mood": [
+    "gothic",
+    "violent",
+    "surreal",
+    "dark",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "The poster features a close-up of a grotesque eye with blood and decay, titled 'KILLBILLIES' by Tory Jones."
+}

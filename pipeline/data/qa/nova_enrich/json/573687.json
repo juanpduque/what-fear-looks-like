@@ -1,0 +1,46 @@
+{
+  "title_text": "MONSTER LAND 2",
+  "credits_text": "PETER OLDRING DAMIEN MAFEI KRISTI RAY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THEY'RE COMING FOR DINNER. YOU'RE THE MAIN COURSE.",
+  "mood": [
+    "dread",
+    "horror",
+    "forest",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.9,
+  "person": 0.5,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains horror elements and implied violence.",
+  "description": "A woman stands in a dark forest above a monstrous maw. The poster features bold neon text and a tagline about dinner and being the main course."
+}

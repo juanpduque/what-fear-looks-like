@@ -1,0 +1,47 @@
+{
+  "title_text": "Not Found",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "洗間動画 スタップによるバスド・セレンシン 7",
+  "mood": [
+    "horror",
+    "dread",
+    "psychological",
+    "disturbing",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and disturbing facial expressions.",
+  "description": "A collage of terrified faces with Japanese and English text, suggesting a horror anthology film."
+}

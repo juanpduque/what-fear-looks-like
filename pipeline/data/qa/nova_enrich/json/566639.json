@@ -1,0 +1,43 @@
+{
+  "title_text": "Suicide by Sunlight",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dramatic",
+    "intense",
+    "somber",
+    "haunting",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "self-harm",
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster contains graphic imagery of blood and suggests themes of self-harm.",
+  "description": "A silhouette of a person behind bars with a mask, surrounded by red blood-like splatters against a sunset backdrop."
+}

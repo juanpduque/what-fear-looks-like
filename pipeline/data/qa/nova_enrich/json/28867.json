@@ -1,0 +1,38 @@
+{
+  "title_text": "What Waits Below",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "suspense",
+    "horror",
+    "adventure",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "cave",
+      "conf": 0.8
+    },
+    {
+      "name": "danger",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man and woman cling to a rope above a dark cave, with a large, menacing creature below. The poster has a suspenseful, horror-themed atmosphere."
+}

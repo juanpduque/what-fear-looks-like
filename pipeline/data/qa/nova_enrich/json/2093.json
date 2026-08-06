@@ -1,0 +1,39 @@
+{
+  "title_text": "AMSTERDAMNED",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "gritty",
+    "urban",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man stands defiantly in front of a burning boat with a large helmeted figure looming behind him in a neon-lit cityscape."
+}

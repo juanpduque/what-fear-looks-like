@@ -1,0 +1,48 @@
+{
+  "title_text": "LAGUNAS",
+  "credits_text": "LA GUARIDA DEL DIABLO\nUNA PELICULA DE\nMARC CARRETÉ",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "JOAN FRANK CHARANSONNET\nPATRICIA BARGALÓ",
+  "mood": [
+    "gothic",
+    "horror",
+    "supernatural",
+    "dread",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "cross",
+      "conf": 0.7
+    },
+    {
+      "name": "volcano",
+      "conf": 0.85
+    },
+    {
+      "name": "moon",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark poster features a volcanic landscape with a cross and a house, titled 'LAGUNAS' and 'LA GUARIDA DEL DIABLO' by Marc Carreté."
+}

@@ -1,0 +1,199 @@
+=== ocr_qwen_homolog_chain start Thu Jul 30 12:44:45 UTC 2026 ===
+using python from /opt/pytorch/bin
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+mlflow 3.14.0 requires pandas<3, but you have pandas 3.0.5 which is incompatible.
+sagemaker-core 2.17.0 requires protobuf<7.0.0,>=3.12, but you have protobuf 7.35.1 which is incompatible.
+numba 0.66.0 requires numpy<2.5,>=1.22, but you have numpy 2.5.1 which is incompatible.
+databricks-sdk 0.122.0 requires protobuf!=5.26.*,!=5.27.*,!=5.28.*,!=5.29.0,!=5.29.1,!=5.29.2,!=5.29.3,!=5.29.4,!=6.30.0,!=6.30.1,!=6.31.0,<7.0,>=4.25.8, but you have protobuf 7.35.1 which is incompatible.
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+torch 2.13.0+cu130 cuda True
+gpu Tesla T4 vram_gb 15.6
+Completed 238 Bytes/238 Bytes (3.7 KiB/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/sample_ids.txt to data/qa/ocr_qwen_homolog/sample_ids.txt
+Completed 6.8 KiB/6.8 KiB (63.4 KiB/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters.csv to data/posters.csv
+Completed 256.0 KiB/12.4 MiB (704.4 KiB/s) with 35 file(s) remainingCompleted 453.1 KiB/12.4 MiB (1.2 MiB/s) with 35 file(s) remaining  download: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/212973.jpg to data/posters_homolog/212973.jpg
+Completed 453.1 KiB/12.4 MiB (1.2 MiB/s) with 34 file(s) remainingCompleted 709.1 KiB/12.4 MiB (1.9 MiB/s) with 34 file(s) remainingCompleted 781.2 KiB/12.4 MiB (2.0 MiB/s) with 34 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/1083119.jpg to data/posters_homolog/1083119.jpg
+Completed 781.2 KiB/12.4 MiB (2.0 MiB/s) with 33 file(s) remainingCompleted 1.0 MiB/12.4 MiB (2.7 MiB/s) with 33 file(s) remaining  Completed 1.3 MiB/12.4 MiB (3.3 MiB/s) with 33 file(s) remaining  Completed 1.4 MiB/12.4 MiB (3.5 MiB/s) with 33 file(s) remaining  Completed 1.4 MiB/12.4 MiB (3.6 MiB/s) with 33 file(s) remaining  download: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/1261561.jpg to data/posters_homolog/1261561.jpg
+Completed 1.4 MiB/12.4 MiB (3.6 MiB/s) with 32 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/1193824.jpg to data/posters_homolog/1193824.jpg
+Completed 1.4 MiB/12.4 MiB (3.6 MiB/s) with 31 file(s) remainingCompleted 1.6 MiB/12.4 MiB (4.2 MiB/s) with 31 file(s) remainingCompleted 1.8 MiB/12.4 MiB (4.5 MiB/s) with 31 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/1229586.jpg to data/posters_homolog/1229586.jpg
+Completed 1.8 MiB/12.4 MiB (4.5 MiB/s) with 30 file(s) remainingCompleted 2.0 MiB/12.4 MiB (5.0 MiB/s) with 30 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/225048.jpg to data/posters_homolog/225048.jpg
+Completed 2.0 MiB/12.4 MiB (5.0 MiB/s) with 29 file(s) remainingCompleted 2.2 MiB/12.4 MiB (5.5 MiB/s) with 29 file(s) remainingCompleted 2.4 MiB/12.4 MiB (5.8 MiB/s) with 29 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/1015482.jpg to data/posters_homolog/1015482.jpg
+Completed 2.4 MiB/12.4 MiB (5.8 MiB/s) with 28 file(s) remainingCompleted 2.5 MiB/12.4 MiB (6.2 MiB/s) with 28 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/156252.jpg to data/posters_homolog/156252.jpg
+Completed 2.5 MiB/12.4 MiB (6.2 MiB/s) with 27 file(s) remainingCompleted 2.8 MiB/12.4 MiB (6.6 MiB/s) with 27 file(s) remainingCompleted 3.0 MiB/12.4 MiB (7.0 MiB/s) with 27 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/165078.jpg to data/posters_homolog/165078.jpg
+Completed 3.0 MiB/12.4 MiB (7.0 MiB/s) with 26 file(s) remainingCompleted 3.2 MiB/12.4 MiB (7.4 MiB/s) with 26 file(s) remainingCompleted 3.3 MiB/12.4 MiB (7.7 MiB/s) with 26 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/1125186.jpg to data/posters_homolog/1125186.jpg
+Completed 3.3 MiB/12.4 MiB (7.7 MiB/s) with 25 file(s) remainingCompleted 3.6 MiB/12.4 MiB (8.0 MiB/s) with 25 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/28265.jpg to data/posters_homolog/28265.jpg
+Completed 3.6 MiB/12.4 MiB (8.0 MiB/s) with 24 file(s) remainingCompleted 3.8 MiB/12.4 MiB (8.2 MiB/s) with 24 file(s) remainingCompleted 3.9 MiB/12.4 MiB (8.5 MiB/s) with 24 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/36992.jpg to data/posters_homolog/36992.jpg
+Completed 3.9 MiB/12.4 MiB (8.5 MiB/s) with 23 file(s) remainingCompleted 4.2 MiB/12.4 MiB (8.9 MiB/s) with 23 file(s) remainingCompleted 4.4 MiB/12.4 MiB (9.4 MiB/s) with 23 file(s) remainingCompleted 4.5 MiB/12.4 MiB (9.5 MiB/s) with 23 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/28419.jpg to data/posters_homolog/28419.jpg
+Completed 4.5 MiB/12.4 MiB (9.5 MiB/s) with 22 file(s) remainingCompleted 4.7 MiB/12.4 MiB (9.9 MiB/s) with 22 file(s) remainingCompleted 5.0 MiB/12.4 MiB (10.4 MiB/s) with 22 file(s) remainingCompleted 5.0 MiB/12.4 MiB (10.5 MiB/s) with 22 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/30833.jpg to data/posters_homolog/30833.jpg
+Completed 5.0 MiB/12.4 MiB (10.5 MiB/s) with 21 file(s) remainingCompleted 5.1 MiB/12.4 MiB (10.6 MiB/s) with 21 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/336254.jpg to data/posters_homolog/336254.jpg
+Completed 5.1 MiB/12.4 MiB (10.6 MiB/s) with 20 file(s) remainingCompleted 5.3 MiB/12.4 MiB (11.0 MiB/s) with 20 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/300156.jpg to data/posters_homolog/300156.jpg
+Completed 5.3 MiB/12.4 MiB (11.0 MiB/s) with 19 file(s) remainingCompleted 5.6 MiB/12.4 MiB (11.5 MiB/s) with 19 file(s) remainingCompleted 5.7 MiB/12.4 MiB (11.7 MiB/s) with 19 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/26921.jpg to data/posters_homolog/26921.jpg
+Completed 5.7 MiB/12.4 MiB (11.7 MiB/s) with 18 file(s) remainingCompleted 5.9 MiB/12.4 MiB (11.9 MiB/s) with 18 file(s) remainingCompleted 6.1 MiB/12.4 MiB (12.2 MiB/s) with 18 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/286452.jpg to data/posters_homolog/286452.jpg
+Completed 6.1 MiB/12.4 MiB (12.2 MiB/s) with 17 file(s) remainingCompleted 6.3 MiB/12.4 MiB (12.5 MiB/s) with 17 file(s) remainingCompleted 6.6 MiB/12.4 MiB (13.0 MiB/s) with 17 file(s) remainingCompleted 6.8 MiB/12.4 MiB (13.3 MiB/s) with 17 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/472015.jpg to data/posters_homolog/472015.jpg
+Completed 6.8 MiB/12.4 MiB (13.3 MiB/s) with 16 file(s) remainingCompleted 6.9 MiB/12.4 MiB (13.3 MiB/s) with 16 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/278267.jpg to data/posters_homolog/278267.jpg
+Completed 6.9 MiB/12.4 MiB (13.3 MiB/s) with 15 file(s) remainingCompleted 7.2 MiB/12.4 MiB (13.5 MiB/s) with 15 file(s) remainingCompleted 7.4 MiB/12.4 MiB (13.9 MiB/s) with 15 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/3104.jpg to data/posters_homolog/3104.jpg
+Completed 7.4 MiB/12.4 MiB (13.9 MiB/s) with 14 file(s) remainingCompleted 7.6 MiB/12.4 MiB (14.0 MiB/s) with 14 file(s) remainingCompleted 7.9 MiB/12.4 MiB (14.4 MiB/s) with 14 file(s) remainingCompleted 8.1 MiB/12.4 MiB (14.6 MiB/s) with 14 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/399172.jpg to data/posters_homolog/399172.jpg
+Completed 8.1 MiB/12.4 MiB (14.6 MiB/s) with 13 file(s) remainingCompleted 8.3 MiB/12.4 MiB (14.8 MiB/s) with 13 file(s) remainingCompleted 8.4 MiB/12.4 MiB (14.9 MiB/s) with 13 file(s) remainingCompleted 8.6 MiB/12.4 MiB (15.3 MiB/s) with 13 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/748251.jpg to data/posters_homolog/748251.jpg
+Completed 8.6 MiB/12.4 MiB (15.3 MiB/s) with 12 file(s) remainingCompleted 8.8 MiB/12.4 MiB (15.6 MiB/s) with 12 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/64524.jpg to data/posters_homolog/64524.jpg
+Completed 8.8 MiB/12.4 MiB (15.6 MiB/s) with 11 file(s) remainingCompleted 9.0 MiB/12.4 MiB (15.6 MiB/s) with 11 file(s) remainingCompleted 9.3 MiB/12.4 MiB (16.0 MiB/s) with 11 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/547055.jpg to data/posters_homolog/547055.jpg
+Completed 9.3 MiB/12.4 MiB (16.0 MiB/s) with 10 file(s) remainingCompleted 9.5 MiB/12.4 MiB (16.3 MiB/s) with 10 file(s) remainingCompleted 9.6 MiB/12.4 MiB (16.4 MiB/s) with 10 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/931940.jpg to data/posters_homolog/931940.jpg
+Completed 9.6 MiB/12.4 MiB (16.4 MiB/s) with 9 file(s) remainingCompleted 9.9 MiB/12.4 MiB (16.7 MiB/s) with 9 file(s) remainingCompleted 10.1 MiB/12.4 MiB (17.1 MiB/s) with 9 file(s) remainingCompleted 10.4 MiB/12.4 MiB (17.5 MiB/s) with 9 file(s) remainingCompleted 10.4 MiB/12.4 MiB (17.6 MiB/s) with 9 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/45551.jpg to data/posters_homolog/45551.jpg
+Completed 10.4 MiB/12.4 MiB (17.6 MiB/s) with 8 file(s) remainingCompleted 10.7 MiB/12.4 MiB (17.8 MiB/s) with 8 file(s) remainingCompleted 10.8 MiB/12.4 MiB (18.0 MiB/s) with 8 file(s) remainingCompleted 11.1 MiB/12.4 MiB (18.4 MiB/s) with 8 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/653537.jpg to data/posters_homolog/653537.jpg
+Completed 11.1 MiB/12.4 MiB (18.4 MiB/s) with 7 file(s) remainingCompleted 11.1 MiB/12.4 MiB (18.5 MiB/s) with 7 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/48800.jpg to data/posters_homolog/48800.jpg
+Completed 11.1 MiB/12.4 MiB (18.5 MiB/s) with 6 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/77677.jpg to data/posters_homolog/77677.jpg
+Completed 11.1 MiB/12.4 MiB (18.5 MiB/s) with 5 file(s) remainingCompleted 11.4 MiB/12.4 MiB (18.7 MiB/s) with 5 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/863406.jpg to data/posters_homolog/863406.jpg
+Completed 11.4 MiB/12.4 MiB (18.7 MiB/s) with 4 file(s) remainingCompleted 11.6 MiB/12.4 MiB (18.5 MiB/s) with 4 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/974046.jpg to data/posters_homolog/974046.jpg
+Completed 11.6 MiB/12.4 MiB (18.5 MiB/s) with 3 file(s) remainingCompleted 11.9 MiB/12.4 MiB (18.7 MiB/s) with 3 file(s) remainingCompleted 11.9 MiB/12.4 MiB (18.7 MiB/s) with 3 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/77399.jpg to data/posters_homolog/77399.jpg
+Completed 11.9 MiB/12.4 MiB (18.7 MiB/s) with 2 file(s) remainingCompleted 12.1 MiB/12.4 MiB (18.9 MiB/s) with 2 file(s) remainingCompleted 12.1 MiB/12.4 MiB (18.9 MiB/s) with 2 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/931049.jpg to data/posters_homolog/931049.jpg
+Completed 12.1 MiB/12.4 MiB (18.9 MiB/s) with 1 file(s) remainingCompleted 12.4 MiB/12.4 MiB (18.7 MiB/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/posters/88410.jpg to data/posters_homolog/88410.jpg
+Completed 2.5 KiB/2.5 KiB (39.9 KiB/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/sample_meta.csv to data/qa/ocr_qwen_homolog/sample_meta.csv
+local homolog posters: 35
+--- verify S3 write ---
+Completed 29 Bytes/29 Bytes (423 Bytes/s) with 1 file(s) remainingupload: data/qa/ocr_qwen_homolog/OCR_PILOT_S3_PROBE to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/OCR_PILOT_S3_PROBE
+S3 write OK (SYNC_SECS=120)
+Completed 5 Bytes/5 Bytes (80 Bytes/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_homolog/MODELS to ../../../../tmp/ocr_qwen_homolog_MODELS
+MODELS from S3: qwen
+MODELS=qwen RESULT_MODEL=qwen-homolog N=35
+periodic sync pid=1926 every 120s
+--- run model=qwen result=qwen-homolog Thu Jul 30 12:46:46 UTC 2026 ---
+sample n=35 → data/qa/ocr_qwen_homolog/sample_ids.txt
+posters_dir=data/posters_homolog
+result_model alias: qwen → qwen-homolog
+     id                              title  year
+1261561                   The Monkey's Paw  1923
+  26921    The Mystery of the Mary Celeste  1935
+ 212973               Gildersleeve's Ghost  1944
+  48800                        The Unknown  1946
+   3104         Frankenstein Created Woman  1967
+  64524                          Nightmare  1964
+  77399             Incense for the Damned  1971
+  30833                  Drive-In Massacre  1976
+ 399172                 Lipstick and Blood  1984
+1015482                Kiss of the Serpent  1988
+  88410                        Beyond Evil  1980
+ 336254                           Downtime  1995
+  36992                             Shakma  1990
+  45551                       Surveillance  2006
+ 156252                             Phobic  2002
+  28265                Lovesick: Sick Love  2004
+  28419                        Hellbreeder  2004
+ 278267                      The Dead Walk  2008
+ 165078                     Legend of Hell  2012
+ 225048                         Evangeline  2013
+ 286452                      Varsity Blood  2014
+ 300156 The Interrogation of Cheryl Cooper  2014
+ 547055                          Threshold  2016
+ 653537                           Whispers  2019
+ 974046             House of White Spiders  2010
+  77677                            Escapee  2011
+ 472015                Hunting for Shadows  2016
+ 748251                    Vamp Bikers Dos  2015
+ 863406                      The Blue Rose  2024
+ 931049                   Beware the Woods  2022
+1083119                The Lost Chronicles  2023
+1125186                     Home Education  2023
+1193824                        Rabbit Trap  2025
+ 931940                            The Fix  2024
+1229586                            Stutter  2024
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+device=cuda
+
+=== model=qwen result_model=qwen-homolog device=cuda n=35 posters=data/posters_homolog ===
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files:  50%|█████     | 1/2 [00:09<00:09,  9.07s/it]Fetching 2 files: 100%|██████████| 2/2 [00:40<00:00, 22.34s/it]Fetching 2 files: 100%|██████████| 2/2 [00:40<00:00, 20.35s/it]
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   5%|▌         | 39/729 [00:00<00:01, 374.64it/s]Loading weights:  13%|█▎        | 95/729 [00:00<00:01, 481.82it/s]Loading weights:  20%|██        | 149/729 [00:00<00:01, 497.61it/s]Loading weights:  29%|██▊       | 208/729 [00:00<00:00, 532.50it/s]Loading weights:  36%|███▋      | 266/729 [00:00<00:00, 546.76it/s]Loading weights:  44%|████▍     | 322/729 [00:00<00:00, 550.54it/s]Loading weights:  59%|█████▉    | 430/729 [00:00<00:00, 715.95it/s]Loading weights:  75%|███████▌  | 550/729 [00:00<00:00, 861.31it/s]Loading weights:  92%|█████████▏| 670/729 [00:00<00:00, 964.47it/s]Loading weights: 100%|██████████| 729/729 [00:00<00:00, 747.95it/s]
+  id=1261561 status=ok chars=115 overlap=1.0 24.543s
+  id=26921 status=ok chars=31 overlap=1.0 14.08s
+  id=212973 status=ok chars=233 overlap=1.0 17.01s
+[periodic-sync 12:48:46] → s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/
+Completed 16.0 KiB/18.2 KiB (488.6 KiB/s) with 7 file(s) remainingupload: data/qa/ocr_qwen_homolog/ocr_qwen_homolog_aws.log to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/ocr_qwen_homolog_aws.log
+Completed 16.0 KiB/18.2 KiB (488.6 KiB/s) with 6 file(s) remainingCompleted 16.7 KiB/18.2 KiB (70.8 KiB/s) with 6 file(s) remaining upload: data/qa/ocr_qwen_homolog/results.csv to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/results.csv
+Completed 16.7 KiB/18.2 KiB (70.8 KiB/s) with 5 file(s) remainingCompleted 16.7 KiB/18.2 KiB (70.3 KiB/s) with 5 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/26921.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/26921.txt
+Completed 16.7 KiB/18.2 KiB (70.3 KiB/s) with 4 file(s) remainingCompleted 16.8 KiB/18.2 KiB (70.6 KiB/s) with 4 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/1261561.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/1261561.txt
+Completed 16.8 KiB/18.2 KiB (70.6 KiB/s) with 3 file(s) remainingCompleted 17.1 KiB/18.2 KiB (69.3 KiB/s) with 3 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/212973.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/212973.txt
+Completed 17.1 KiB/18.2 KiB (69.3 KiB/s) with 2 file(s) remainingCompleted 18.0 KiB/18.2 KiB (70.8 KiB/s) with 2 file(s) remainingupload: data/qa/ocr_qwen_homolog/sample_meta.csv to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/sample_meta.csv
+Completed 18.0 KiB/18.2 KiB (70.8 KiB/s) with 1 file(s) remainingCompleted 18.2 KiB/18.2 KiB (62.5 KiB/s) with 1 file(s) remainingupload: data/qa/ocr_qwen_homolog/sample_ids.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/sample_ids.txt
+  id=48800 status=ok chars=143 overlap=1.0 15.203s
+  id=3104 status=ok chars=26 overlap=1.0 13.992s
+  id=64524 status=ok chars=9 overlap=1.0 13.969s
+  id=77399 status=ok chars=13 overlap=0.0 14.009s
+  id=30833 status=ok chars=17 overlap=1.0 14.153s
+  id=399172 status=ok chars=18 overlap=1.0 14.059s
+  id=1015482 status=ok chars=22 overlap=0.0 14.274s
+  id=88410 status=ok chars=11 overlap=1.0 14.103s
+[periodic-sync 12:50:47] → s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/
+Completed 18.2 KiB/19.9 KiB (617.5 KiB/s) with 10 file(s) remainingupload: data/qa/ocr_qwen_homolog/ocr_qwen_homolog_aws.log to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/ocr_qwen_homolog_aws.log
+Completed 18.2 KiB/19.9 KiB (617.5 KiB/s) with 9 file(s) remainingCompleted 19.6 KiB/19.9 KiB (334.2 KiB/s) with 9 file(s) remainingupload: data/qa/ocr_qwen_homolog/results.csv to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/results.csv
+Completed 19.6 KiB/19.9 KiB (334.2 KiB/s) with 8 file(s) remainingCompleted 19.6 KiB/19.9 KiB (61.9 KiB/s) with 8 file(s) remaining upload: data/qa/ocr_qwen_homolog/qwen-homolog/399172.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/399172.txt
+Completed 19.6 KiB/19.9 KiB (61.9 KiB/s) with 7 file(s) remainingCompleted 19.7 KiB/19.9 KiB (61.8 KiB/s) with 7 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/30833.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/30833.txt
+Completed 19.7 KiB/19.9 KiB (61.8 KiB/s) with 6 file(s) remainingCompleted 19.7 KiB/19.9 KiB (61.7 KiB/s) with 6 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/3104.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/3104.txt
+Completed 19.7 KiB/19.9 KiB (61.7 KiB/s) with 5 file(s) remainingCompleted 19.7 KiB/19.9 KiB (61.5 KiB/s) with 5 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/77399.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/77399.txt
+Completed 19.7 KiB/19.9 KiB (61.5 KiB/s) with 4 file(s) remainingCompleted 19.7 KiB/19.9 KiB (61.2 KiB/s) with 4 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/64524.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/64524.txt
+Completed 19.7 KiB/19.9 KiB (61.2 KiB/s) with 3 file(s) remainingCompleted 19.7 KiB/19.9 KiB (60.1 KiB/s) with 3 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/88410.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/88410.txt
+Completed 19.7 KiB/19.9 KiB (60.1 KiB/s) with 2 file(s) remainingCompleted 19.9 KiB/19.9 KiB (59.6 KiB/s) with 2 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/48800.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/48800.txt
+Completed 19.9 KiB/19.9 KiB (59.6 KiB/s) with 1 file(s) remainingCompleted 19.9 KiB/19.9 KiB (56.5 KiB/s) with 1 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/1015482.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/1015482.txt
+  id=336254 status=ok chars=8 overlap=1.0 14.045s
+  id=36992 status=ok chars=7 overlap=1.0 14.046s
+  id=45551 status=ok chars=12 overlap=1.0 14.058s
+  id=156252 status=ok chars=6 overlap=1.0 14.021s
+  id=28265 status=ok chars=19 overlap=0.6667 14.355s
+  id=28419 status=ok chars=596 overlap=1.0 21.27s
+  id=278267 status=ok chars=571 overlap=1.0 19.752s
+  id=165078 status=ok chars=213 overlap=0.6667 17.159s
+[periodic-sync 12:52:48] → s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/
+Completed 21.2 KiB/25.9 KiB (535.0 KiB/s) with 10 file(s) remainingupload: data/qa/ocr_qwen_homolog/ocr_qwen_homolog_aws.log to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/ocr_qwen_homolog_aws.log
+Completed 21.2 KiB/25.9 KiB (535.0 KiB/s) with 9 file(s) remainingCompleted 21.2 KiB/25.9 KiB (61.5 KiB/s) with 9 file(s) remaining upload: data/qa/ocr_qwen_homolog/qwen-homolog/156252.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/156252.txt
+Completed 21.2 KiB/25.9 KiB (61.5 KiB/s) with 8 file(s) remainingCompleted 21.2 KiB/25.9 KiB (60.8 KiB/s) with 8 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/36992.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/36992.txt
+Completed 21.2 KiB/25.9 KiB (60.8 KiB/s) with 7 file(s) remainingCompleted 21.8 KiB/25.9 KiB (62.2 KiB/s) with 7 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/278267.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/278267.txt
+Completed 21.8 KiB/25.9 KiB (62.2 KiB/s) with 6 file(s) remainingCompleted 21.8 KiB/25.9 KiB (62.2 KiB/s) with 6 file(s) remainingCompleted 21.8 KiB/25.9 KiB (61.7 KiB/s) with 6 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/45551.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/45551.txt
+Completed 21.8 KiB/25.9 KiB (61.7 KiB/s) with 5 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/336254.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/336254.txt
+Completed 21.8 KiB/25.9 KiB (61.7 KiB/s) with 4 file(s) remainingCompleted 25.1 KiB/25.9 KiB (70.8 KiB/s) with 4 file(s) remainingupload: data/qa/ocr_qwen_homolog/results.csv to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/results.csv
+Completed 25.1 KiB/25.9 KiB (70.8 KiB/s) with 3 file(s) remainingCompleted 25.3 KiB/25.9 KiB (71.2 KiB/s) with 3 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/165078.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/165078.txt
+Completed 25.3 KiB/25.9 KiB (71.2 KiB/s) with 2 file(s) remainingCompleted 25.9 KiB/25.9 KiB (72.8 KiB/s) with 2 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/28419.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/28419.txt
+Completed 25.9 KiB/25.9 KiB (72.8 KiB/s) with 1 file(s) remainingCompleted 25.9 KiB/25.9 KiB (69.3 KiB/s) with 1 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/28265.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/28265.txt
+  id=225048 status=ok chars=42 overlap=1.0 14.637s
+  id=286452 status=ok chars=12 overlap=0.5 14.133s
+  id=300156 status=ok chars=75 overlap=1.0 15.366s
+  id=547055 status=ok chars=9 overlap=1.0 13.975s
+  id=653537 status=ok chars=6 overlap=0.0 14.057s
+  id=974046 status=ok chars=104 overlap=1.0 15.197s
+  id=77677 status=ok chars=7 overlap=1.0 14.032s
+  id=472015 status=ok chars=101 overlap=1.0 15.795s
+[periodic-sync 12:54:49] → s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/
+Completed 24.2 KiB/28.7 KiB (728.5 KiB/s) with 10 file(s) remainingupload: data/qa/ocr_qwen_homolog/ocr_qwen_homolog_aws.log to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/ocr_qwen_homolog_aws.log
+Completed 24.2 KiB/28.7 KiB (728.5 KiB/s) with 9 file(s) remainingCompleted 24.3 KiB/28.7 KiB (75.9 KiB/s) with 9 file(s) remaining upload: data/qa/ocr_qwen_homolog/qwen-homolog/286452.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/286452.txt
+Completed 24.3 KiB/28.7 KiB (75.9 KiB/s) with 8 file(s) remainingCompleted 24.4 KiB/28.7 KiB (76.0 KiB/s) with 8 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/472015.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/472015.txt
+Completed 24.4 KiB/28.7 KiB (76.0 KiB/s) with 7 file(s) remainingCompleted 24.4 KiB/28.7 KiB (75.8 KiB/s) with 7 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/547055.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/547055.txt
+Completed 24.4 KiB/28.7 KiB (75.8 KiB/s) with 6 file(s) remainingCompleted 24.4 KiB/28.7 KiB (75.7 KiB/s) with 6 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/653537.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/653537.txt
+Completed 24.4 KiB/28.7 KiB (75.7 KiB/s) with 5 file(s) remainingCompleted 24.4 KiB/28.7 KiB (75.7 KiB/s) with 5 file(s) remainingCompleted 24.5 KiB/28.7 KiB (75.7 KiB/s) with 5 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/300156.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/300156.txt
+Completed 24.5 KiB/28.7 KiB (75.7 KiB/s) with 4 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/225048.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/225048.txt
+Completed 24.5 KiB/28.7 KiB (75.7 KiB/s) with 3 file(s) remainingCompleted 24.5 KiB/28.7 KiB (75.6 KiB/s) with 3 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/77677.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/77677.txt
+Completed 24.5 KiB/28.7 KiB (75.6 KiB/s) with 2 file(s) remainingCompleted 24.6 KiB/28.7 KiB (74.5 KiB/s) with 2 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/974046.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/974046.txt
+Completed 24.6 KiB/28.7 KiB (74.5 KiB/s) with 1 file(s) remainingCompleted 28.7 KiB/28.7 KiB (86.9 KiB/s) with 1 file(s) remainingupload: data/qa/ocr_qwen_homolog/results.csv to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/results.csv
+  id=748251 status=ok chars=15 overlap=1.0 14.187s
+  id=863406 status=ok chars=13 overlap=1.0 14.187s
+  id=931049 status=ok chars=143 overlap=1.0 15.643s
+  id=1083119 status=ok chars=19 overlap=1.0 14.263s
+  id=1125186 status=ok chars=33 overlap=1.0 14.434s
+  id=1193824 status=ok chars=11 overlap=1.0 14.113s
+  id=931940 status=ok chars=7 overlap=1.0 14.042s
+  id=1229586 status=ok chars=7 overlap=1.0 13.991s
+
+LISTO → data/qa/ocr_qwen_homolog/results.csv (35 rows)
+model=qwen exit=0
+Completed 27.3 KiB/32.4 KiB (813.8 KiB/s) with 10 file(s) remainingupload: data/qa/ocr_qwen_homolog/ocr_qwen_homolog_aws.log to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/ocr_qwen_homolog_aws.log
+Completed 27.3 KiB/32.4 KiB (813.8 KiB/s) with 9 file(s) remainingCompleted 27.3 KiB/32.4 KiB (94.7 KiB/s) with 9 file(s) remaining upload: data/qa/ocr_qwen_homolog/qwen-homolog/863406.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/863406.txt
+Completed 27.3 KiB/32.4 KiB (94.7 KiB/s) with 8 file(s) remainingCompleted 27.4 KiB/32.4 KiB (93.6 KiB/s) with 8 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/931049.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/931049.txt
+Completed 27.4 KiB/32.4 KiB (93.6 KiB/s) with 7 file(s) remainingCompleted 27.4 KiB/32.4 KiB (93.4 KiB/s) with 7 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/931940.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/931940.txt
+Completed 27.4 KiB/32.4 KiB (93.4 KiB/s) with 6 file(s) remainingCompleted 27.4 KiB/32.4 KiB (92.9 KiB/s) with 6 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/1193824.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/1193824.txt
+Completed 27.4 KiB/32.4 KiB (92.9 KiB/s) with 5 file(s) remainingCompleted 27.4 KiB/32.4 KiB (92.6 KiB/s) with 5 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/748251.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/748251.txt
+Completed 27.4 KiB/32.4 KiB (92.6 KiB/s) with 4 file(s) remainingCompleted 27.5 KiB/32.4 KiB (91.7 KiB/s) with 4 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/1229586.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/1229586.txt
+Completed 27.5 KiB/32.4 KiB (91.7 KiB/s) with 3 file(s) remainingCompleted 27.5 KiB/32.4 KiB (91.5 KiB/s) with 3 file(s) remainingupload: data/qa/ocr_qwen_homolog/qwen-homolog/1083119.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/1083119.txt
+Completed 27.5 KiB/32.4 KiB (91.5 KiB/s) with 2 file(s) remainingCompleted 32.3 KiB/32.4 KiB (101.3 KiB/s) with 2 file(s) remainingupload: data/qa/ocr_qwen_homolog/results.csv to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/results.csv
+Completed 32.3 KiB/32.4 KiB (101.3 KiB/s) with 1 file(s) remainingCompleted 32.4 KiB/32.4 KiB (99.2 KiB/s) with 1 file(s) remaining upload: data/qa/ocr_qwen_homolog/qwen-homolog/1125186.txt to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/qwen-homolog/1125186.txt
+[checkpoint] synced after qwen
+Completed 39 Bytes/39 Bytes (572 Bytes/s) with 1 file(s) remainingupload: data/qa/ocr_qwen_homolog/DONE to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/DONE
+Completed 30.0 KiB/30.0 KiB (914.4 KiB/s) with 1 file(s) remainingupload: data/qa/ocr_qwen_homolog/ocr_qwen_homolog_aws.log to s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/ocr_qwen_homolog_aws.log
+=== ocr_qwen_homolog_chain done Thu Jul 30 12:56:40 UTC 2026 ===
+[periodic-sync 12:56:50] → s3://aof-owlv2-102516364259/ocr_qwen_homolog/results/

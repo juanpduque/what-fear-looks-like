@@ -1,0 +1,44 @@
+{
+  "title_text": "SOUTH WILL RISE AGAIN",
+  "credits_text": "A TERRIFYING TALE OF THE UNDEAD IN THE CC TRADITION!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Charles E. Cullen's ZOMBIES! NO.11 OCT. WHEN THE FLAG WENT DOWN... THE DEAD CAME UP! DVD",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "Poster features a group of zombie-like figures with skulls, promoting a horror film titled 'South Will Rise Again.'"
+}

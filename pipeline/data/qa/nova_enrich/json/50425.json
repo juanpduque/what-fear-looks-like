@@ -1,0 +1,43 @@
+{
+  "title_text": "MURDER OBSESSION",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "horror",
+    "psychological",
+    "suspense",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.95,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.8,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "blood",
+    "erotic"
+  ],
+  "moderation_notes": "Contains graphic violence and suggestive imagery.",
+  "description": "A poster features three people with a large knife dripping blood, suggesting a thriller or horror theme."
+}

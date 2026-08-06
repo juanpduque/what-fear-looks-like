@@ -1,0 +1,39 @@
+{
+  "title_text": "THE DEAD AMONG THE TREES",
+  "credits_text": "FROM THE MAKERS OF IN A STRANGER'S HOUSE AND BRING OUT THE FEAR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "They were searching for the truth... Now they need to survive it...",
+  "mood": [
+    "dread",
+    "suspense",
+    "mystery",
+    "forest",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A red-tinted poster features a forest scene with silhouettes and text about survival and truth."
+}

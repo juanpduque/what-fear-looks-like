@@ -1,0 +1,41 @@
+{
+  "title_text": "LUNICIDAL",
+  "credits_text": "...A SERIAL KILLER WITH A HEART OF GOLD!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WINNER OF 2 TERROR FILM FESTIVAL AWARDS! GOTHIC HORROR WILL BATTLE...",
+  "mood": [
+    "gothic",
+    "horror",
+    "camp",
+    "dark",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains graphic violence and horror themes.",
+  "description": "Poster features a man holding large scissors with a rainbow and group of people below, against a dark background with a full moon and silhouette."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "ROUGH CUT",
+  "credits_text": "WRITTEN & DIRECTED BY MITCHELL SLAN KAYLA CROMER DIEGO MAUBERTA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PURPLE MARKET",
+  "mood": [
+    "horror",
+    "thriller",
+    "psychological",
+    "suspense",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features horror elements and a menacing figure, but no explicit violence or gore is depicted.",
+  "description": "A horror movie poster shows a masked figure holding a flashlight over a young girl wearing headphones, with bold red and black colors."
+}

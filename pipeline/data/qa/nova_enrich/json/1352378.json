@@ -1,0 +1,40 @@
+{
+  "title_text": "VISIONS",
+  "credits_text": "BLOOD WILL STAIN THE LAND",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FROM BLUMHOUSE THE PRODUCER OF INSIDIOUS AND PARANORMAL ACTIVITY",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "A dark, moody poster shows a shadowy figure and a plant with blood dripping from a leaf, suggesting horror and occult themes."
+}

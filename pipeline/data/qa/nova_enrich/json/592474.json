@@ -1,0 +1,50 @@
+{
+  "title_text": "THE BLACK GATE",
+  "credits_text": "JEANNE DESSART, NICOLAS COUCHET, JONATHAN RAFFIN, FABRICE MARTIN et GUILLAUME BAYLARD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "S.C.I.S.E.L, RÉALISÉ PAR, MÎC ANTONY CINTURINO, BENJAMIN COMBETTES, MARCUS, LES BLACKCATZ, ANTOINE DUPUY D'UBY, MICHEL COSTE PATRICK SAGE, CARL LAFORET, JULIEN ZANDOS, PATIE FLECHER et CHRISTIAN BARBIER, CAMÉRAMAN: PAT BAKER, DIRECTEUR DE LA PHOTO: NIMA RAFIGHI, DIRECTOR EFFETS VISUELS: VALENTIN AUDIBERT, PYROTECHNIE: LÉO LEROYER, MAKE-UP EX: DAVID SCHEER et ENGUERRAN FRIEU, MUSIQUES: DOUBLEDRAGON CLAUDE MOYNIER SANDY BLANCO et F.O.A.D.",
+  "mood": [
+    "gothic",
+    "fantasy",
+    "action",
+    "mystery",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "gun",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    },
+    {
+      "name": "occult",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult imagery and implied violence.",
+  "description": "Movie poster features three characters in a dark setting with glowing green eyes and shadowy figures, suggesting a gothic horror theme."
+}

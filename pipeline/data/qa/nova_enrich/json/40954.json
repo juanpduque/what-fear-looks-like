@@ -1,0 +1,50 @@
+{
+  "title_text": "BEAST FROM HAUNTED CAVE",
+  "credits_text": "MICHAEL FOREST - SHEILA CAROL - FRANK WOLF\nProduced by GENE DORMAN - Directed by MONTE HELLMAN - Written by CHARLES GRIFFITH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SCREAMING YOUNG GIRLS SUCKED INTO A LABYRINTH OF HORROR BY A BLOOD-STARVED GHOUL FROM HELL",
+  "mood": [
+    "horror",
+    "gothic",
+    "camp",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "fire",
+      "conf": 0.5
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.7,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes; mild sexual suggestion.",
+  "description": "A poster shows a woman in a blue dress being grabbed by a green, tentacled monster emerging from a cave, with fiery background and dramatic text."
+}

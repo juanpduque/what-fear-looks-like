@@ -1,0 +1,45 @@
+{
+  "title_text": "押切",
+  "credits_text": "\\u7d50\\u5b50\\u5b50 \\u5f53\\u7530\\u7f8e\\u5b50 \\u6728\\u6728\\u6c34 \\u30b7\\u30e5\\u30a6\\u30a3\\u30f3\\u30d7\\u30eb \\u56fd\\u4e2d\\u30e4\\u30c9\\u30a2 \\天\\u6c17\\u5f71\\u5e83",
+  "other_text": "高平グラジマキの結纏頂ニが転る新たな悪撃世界！",
+  "moderation_notes": "Contains graphic violence and disturbing imagery.",
+  "description": "A poster features a close-up of a masked face with a spiral design, accompanied by Japanese text and credits, suggesting a psychological horror theme.",
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "languages": [
+    "ja"
+  ],
+  "mood": [
+    "dread",
+    "surreal",
+    "psychological",
+    "disturbing"
+  ],
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "title_text": "THE STATIONARY BIKE",
+  "credits_text": "TAKE A RIDE INTO MADNESS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts implied violence through the chaotic crowd and fiery background.",
+  "description": "A hooded figure rides a stationary bike over a crowd of hands reaching up, set against a dark forest backdrop with fiery flames."
+}

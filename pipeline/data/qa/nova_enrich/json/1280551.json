@@ -1,0 +1,47 @@
+{
+  "title_text": "QIMALAQ",
+  "credits_text": "ТАГАД ЖАНЬБЕКОВТИН, ФИЛЬМИ",
+  "languages": [
+    "en",
+    "ru",
+    "kk"
+  ],
+  "other_text": "КИНОДА 9 МАМЫРДАН В КИНО С 9 МАЯ ТУГАН КУНИДЕ САГАН НЕ БОЛЬЗИ МУМКИН? А ЧТО МОЖЕТ СЛУЧИТЬСЯ С ТОБОЙ В ДЕНЬ ТВОЕГО РОДИЛЕНИЯ?",
+  "mood": [
+    "dread",
+    "psychological",
+    "suspense",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "A poster shows a young woman facing a ghostly figure with long hair and a menacing expression, set against a dark, eerie background."
+}

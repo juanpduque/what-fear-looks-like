@@ -1,0 +1,37 @@
+{
+  "title_text": "AROMA-VISION",
+  "credits_text": "LIONAL VISION FILMS AND MAX WASSERMAN'S MOTION PICTURES PRESENT ADAM MICHAEL MAX VAN LAMSSEN AND ANNA CASTELLANO ORIGINAL SCORE BY STEAN SMITH MUSICAL SCORE BY CARLO RIGUZZI RENE RIGUZZI KELLY BROWNELL ORIGINAL SCREENPLAY BY CARLO RIGUZZI GREG RIGUZZI BEN POWELL AND ADAM SMITH PRODUCED BY ADAM SMITH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "LIONAL VISION FILMS",
+  "mood": [
+    "surreal",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A black and white poster shows a person reaching out from a television screen with smoke effects, accompanied by the title 'AROMA-VISION' and production credits."
+}

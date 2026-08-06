@@ -1,0 +1,49 @@
+{
+  "title_text": "ALL HALLOWS' EVE",
+  "credits_text": "INFERNO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "spooky",
+    "gothic",
+    "dread",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "knife",
+      "conf": 0.6
+    },
+    {
+      "name": "pumpkin",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery with a knife and monstrous character.",
+  "description": "A monstrous figure stands among carved pumpkins under a menacing moonlit sky, holding a knife, evoking a spooky Halloween atmosphere."
+}

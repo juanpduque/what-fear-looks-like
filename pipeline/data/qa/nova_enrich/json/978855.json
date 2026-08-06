@@ -1,0 +1,42 @@
+{
+  "title_text": "KARA NEME",
+  "credits_text": "GELİN DERESİ",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "YİNELEME: KEMAL DİNÇİCİ LEAFILM \"KARA NEME GELİN DERESİ\" ÖNERİMİZDEİR... [additional Turkish credits]",
+  "mood": [
+    "horror",
+    "gothic",
+    "psychological",
+    "disturbing",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery including skulls and implied violence.",
+  "description": "A poster featuring two distorted faces with skeletal features, overlaid with digital glitch effects and Turkish text."
+}

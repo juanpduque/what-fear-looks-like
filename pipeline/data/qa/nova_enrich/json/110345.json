@@ -1,0 +1,41 @@
+{
+  "title_text": "DEAD SUSHI",
+  "credits_text": "The Sushi Bites Back!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A FILM BY NOBORU IGUCHI",
+  "mood": [
+    "camp",
+    "horror",
+    "action",
+    "comedy"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore.",
+  "description": "Poster features two characters in martial arts attire holding a large weapon, with a monstrous creature and sushi in the background."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "OZARK SHARKS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "horror",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "shark",
+      "conf": 0.95
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    {
+      "name": "danger",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.95,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and dangerous wildlife.",
+  "description": "A poster shows a person on a dock attacked by a large shark in a lake, with dramatic lighting and intense atmosphere."
+}

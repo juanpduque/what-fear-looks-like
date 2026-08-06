@@ -1,0 +1,46 @@
+{
+  "title_text": "BEAST OF THE ALAMO",
+  "credits_text": "BLOOD. THIRSTY. BEAST",
+  "languages": [
+    "en"
+  ],
+  "other_text": "15",
+  "mood": [
+    "intense",
+    "terrifying",
+    "gothic",
+    "violent",
+    "mythic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A poster featuring a menacing, snarling creature with glowing red eyes and sharp teeth, titled 'Beast of the Alamo' with a tagline 'Blood. Thirsty. Beast.'"
+}

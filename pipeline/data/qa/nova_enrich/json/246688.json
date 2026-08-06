@@ -1,0 +1,45 @@
+{
+  "title_text": "TIKA",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THIS AIN'T NO GOOD LUCK CHARM!",
+  "mood": [
+    "intense",
+    "threatening",
+    "supernatural",
+    "violent",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features violent imagery and a menacing monster-like figure.",
+  "description": "A poster shows a menacing wooden figure with glowing eyes holding a large knife, set against a fiery background with bold red text reading 'TIKA'."
+}

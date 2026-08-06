@@ -1,0 +1,46 @@
+{
+  "title_text": "MARILYN",
+  "credits_text": "STARRING ANNELIESE ROSE STARRING RICHARD KRUGER DIRECTED BY RICHARD KRUGER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "violent",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; may be disturbing to some viewers.",
+  "description": "A woman in a white dress covered in blood holds an axe in a forest setting, suggesting a horror theme."
+}

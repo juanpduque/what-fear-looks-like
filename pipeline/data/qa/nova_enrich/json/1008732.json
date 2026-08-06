@@ -1,0 +1,46 @@
+{
+  "title_text": "CLEAN",
+  "credits_text": "GRAZIELLA FISCHETTI, JOSHUA PETERS, WILLIAM COLBY, ZOE DEAN, MICHAEL MCGEE, JANE LORENZ, MARIE ROBERTS, JANE COLLIER, AND DOUGLAS ZIMMERMAN EXECUTIVE PRODUCER JOSHUA PETERS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "This sucks.",
+  "mood": [
+    "horror",
+    "thriller",
+    "disturbing",
+    "psychological",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "gore",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and gore imagery.",
+  "description": "A poster shows a room with red splatters resembling blood and a circular object on the floor, with bold red text reading 'CLEAN' and a tagline 'This sucks.'"
+}

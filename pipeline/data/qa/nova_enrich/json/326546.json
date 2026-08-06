@@ -1,0 +1,43 @@
+{
+  "title_text": "CheeseBalls",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "surreal",
+    "grotesque",
+    "humorous",
+    "absurd",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.8,
+  "violence": 0.6,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains graphic imagery of a monstrous face and partial nudity.",
+  "description": "A surreal poster shows a monstrous creature holding a pizza box with a grotesque pizza inside, alongside a dolphin and a nude figure."
+}

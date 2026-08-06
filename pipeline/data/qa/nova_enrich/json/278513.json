@@ -1,0 +1,47 @@
+{
+  "title_text": "BLOODMARSH KRACKOON",
+  "credits_text": "AMUCK DUCK FILMS AND SOUTH BRONX EFX WORKS PRESENTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "No One Dumps on The Bronx...and Lives",
+  "mood": [
+    "camp",
+    "horror",
+    "action",
+    "grotesque",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "A woman in a bikini battles a monstrous creature amidst skeletons and blood in a swampy setting."
+}

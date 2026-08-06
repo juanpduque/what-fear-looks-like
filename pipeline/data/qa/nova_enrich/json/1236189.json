@@ -1,0 +1,46 @@
+{
+  "title_text": "RENT-A-GHOST",
+  "credits_text": "YOU DARE TO COME. BE READY TO FACE WHAT'S COMING FOR YOU! STORY/SCREENPLAY: NGECUY BUNRATH DIRECTOR: KOU DARACHAN DOP: SUK DARA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "25.JANUARY.2024",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "haunting",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild violent imagery and occult themes.",
+  "description": "A dark poster features two ghostly figures in a haunted setting, with bold red text and a dramatic tagline."
+}

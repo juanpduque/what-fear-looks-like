@@ -1,0 +1,41 @@
+{
+  "title_text": "HOUSE ON THE HILL",
+  "credits_text": "STEPHEN BENJAMIN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE TERRIBLE CHARLOTTE WHO LIVES HERE",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and suggests violence.",
+  "description": "A dark poster features a stylized, blood-smeared face with the title 'House on the Hill' and a tagline below."
+}

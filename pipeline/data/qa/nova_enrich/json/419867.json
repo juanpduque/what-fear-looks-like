@@ -1,0 +1,41 @@
+{
+  "title_text": "CIN CIN BERDARAH",
+  "credits_text": "(the BLOODY RAGE) \ndibintang oleh: MUNY CADER NOERTJE SUPANDI MENZANO GRACE SIMON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Empat Gajah Film\n\nRATMIB-29 SLAMETH HARTO KWARTET BKAK PAK BISU TIAR MUSLIM AMIR SANUSI\n\nWIRATMADUJA NGADWAN S.A.KARIM A.K.I.N JACKYL ANWARY P.T.EMPAT GAJAH FILM",
+  "mood": [
+    "horror",
+    "gothic",
+    "violent",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A vintage horror poster featuring a central monstrous figure with grotesque faces surrounding it, set against a dark, dramatic background."
+}

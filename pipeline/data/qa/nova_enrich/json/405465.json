@@ -1,0 +1,47 @@
+{
+  "title_text": "CARCINOMA",
+  "credits_text": "DORIAN PIQUART THOMAS GOERSCH CARINA PALMER",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "other_text": "ES GESCHAH MITTEN UNTER UNS... Ein Film von A.D.ORAN",
+  "mood": [
+    "disturbing",
+    "gothic",
+    "surreal",
+    "psychological",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "gore",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic medical imagery and disturbing themes.",
+  "description": "A poster featuring a surreal, graphic medical visualization with a human face and text indicating a film title and credits."
+}

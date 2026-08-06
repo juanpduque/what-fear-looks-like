@@ -1,0 +1,45 @@
+{
+  "title_text": "FEAR WISH",
+  "credits_text": "NATHAN SUTTON • AMY McROBERTS • SCOTT WHYTE DIRECTOR OF PHOTOGRAPHY DAVE JACOBSON • SPECIAL EFFECTS ARTIST ARBY KLEEN • MUSIC BY GEOFF BLACK • EDITED BY ZAK WHITE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "To wish for something you need, you have to wish for something you fear.",
+  "mood": [
+    "supernatural",
+    "psychological",
+    "disturbing",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and a disturbing creature, may be unsettling.",
+  "description": "A dark poster features a glowing, monstrous face emerging from a lantern, with bold text reading 'FEAR WISH' and a tagline above."
+}

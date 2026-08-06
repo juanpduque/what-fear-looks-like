@@ -1,0 +1,42 @@
+{
+  "title_text": "环境危机",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "adventure",
+    "thriller",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Four individuals face a massive, menacing creature in a dense jungle, with one holding a rifle and another a camera."
+}

@@ -1,0 +1,33 @@
+Nova enrich — cloud run (Lambda + S3)
+Actualizado: 2026-08-03T04:54:00
+
+Local OK previos: 6581
+Cloud todo: 31248 posters staged
+
+S3:
+  s3://strands-travelagents3sessionsbucket-sn8rc9ezuma6/wflike-nova-enrich/cloud/
+  - posters/{id}.jpg
+  - todo_ids.json, posters_meta.json
+  - json/{id}.json, rows/{id}.csv
+  - progress_cloud.json
+
+Lambdas:
+  - poster-ocr-bedrock (S3 or image_b64)
+  - nova-enrich-orchestrator (batch + self-chain)
+
+Kickoff (ya corrido):
+  export AWS_PROFILE=sandbox AWS_DEFAULT_REGION=us-west-2
+  export NOVA_ENRICH_S3_BUCKET=strands-travelagents3sessionsbucket-sn8rc9ezuma6
+  bash pipeline/aws/kickoff_nova_enrich_cloud.sh
+
+Monitor:
+  aws s3 cp s3://$NOVA_ENRICH_S3_BUCKET/wflike-nova-enrich/cloud/progress_cloud.json -
+
+Al volver (merge a local):
+  bash pipeline/aws/pull_nova_enrich_cloud.sh
+
+Scripts:
+  pipeline/aws/stage_nova_enrich_posters.sh
+  pipeline/aws/deploy_nova_enrich_cloud.sh
+  pipeline/aws/kickoff_nova_enrich_cloud.sh
+  pipeline/aws/pull_nova_enrich_cloud.sh

@@ -1,0 +1,44 @@
+{
+  "title_text": "Angel of DEATH",
+  "credits_text": "The Final Cut",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "other_text": "DER ERSTE DEUTSCHE EXPLOITATION-HORROR-MOVIE",
+  "mood": [
+    "erotic",
+    "horror",
+    "thriller",
+    "intense",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "violence",
+      "conf": 0.7
+    },
+    {
+      "name": "erotic",
+      "conf": 0.9
+    },
+    {
+      "name": "horror",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.9,
+  "sensitive": [
+    "nudity",
+    "sexual",
+    "violence"
+  ],
+  "moderation_notes": "Contains explicit nudity and suggestive content.",
+  "description": "Movie poster features three individuals in dramatic poses, with bold red and black typography and a tagline indicating horror and exploitation themes."
+}

@@ -1,0 +1,47 @@
+{
+  "title_text": "SURVIVAL",
+  "credits_text": "Frank Raffel, Selco Futumata, Mila Feller, Vlastis Feintich, Oliver Boes, Yoko Yamashita",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "other_text": "ÜBERLEBE... ...WENN DU KANNST! FSK ab 18",
+  "mood": [
+    "dread",
+    "apocalyptic",
+    "tense",
+    "survival",
+    "dystopian"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.8
+    },
+    {
+      "name": "gas_mask",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and violent imagery, suitable for mature audiences.",
+  "description": "A post-apocalyptic scene with a gas mask, smoke, and a shadowy figure against a stormy sky."
+}

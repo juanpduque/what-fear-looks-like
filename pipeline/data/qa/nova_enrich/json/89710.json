@@ -1,0 +1,46 @@
+{
+  "title_text": "DOGS OF HELL",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "intense",
+    "violent",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "violence",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.0,
+  "animal": 0.95,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster featuring a fierce dog with bared teeth and blood dripping from its mouth, with bold red text reading 'DOGS OF HELL' above."
+}

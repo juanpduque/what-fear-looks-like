@@ -1,0 +1,40 @@
+{
+  "title_text": "MYSTERY SOLVED",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "mysterious",
+    "intense",
+    "dark",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features a masked figure with a knife, suggesting potential violence.",
+  "description": "A masked figure holds a knife against a red splattered background with bold text reading 'MYSTERY SOLVED.'"
+}

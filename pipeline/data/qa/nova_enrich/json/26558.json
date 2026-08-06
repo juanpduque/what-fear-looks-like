@@ -1,0 +1,40 @@
+{
+  "title_text": "COMBAT SHOCK",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "action-packed",
+    "gritty",
+    "war-torn"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "explosion",
+      "conf": 0.8
+    },
+    {
+      "name": "war",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and violent imagery.",
+  "description": "A soldier holds a rifle amidst explosions and chaos, with another character in the foreground. The background shows war-torn scenes with helicopters and smoke."
+}

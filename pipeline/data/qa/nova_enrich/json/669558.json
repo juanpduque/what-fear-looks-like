@@ -1,0 +1,41 @@
+{
+  "title_text": "EL CANIBAL DE LA GUERRERO Parte 2",
+  "credits_text": "Guillermo Quintanilla, Raúl González, Carlos Pedreira, Verónica Alvarez, Fernando Castellón, Martín Casanova",
+  "languages": [
+    "es"
+  ],
+  "other_text": "Básada en el escalofriante caso de la vida real ¡EL TERROR HA REGRESADO!",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A poster featuring a man with a skull-like face, dark background, and text indicating a horror film based on a real-life case."
+}

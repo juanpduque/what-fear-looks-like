@@ -1,0 +1,45 @@
+{
+  "title_text": "MUMMY REBORN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "horror",
+    "adventure",
+    "fantasy",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.3,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and horror elements, including a menacing monster and weapon use.",
+  "description": "A poster shows a group of characters facing a large, terrifying skull-like monster in front of pyramids, with vehicles and action elements."
+}

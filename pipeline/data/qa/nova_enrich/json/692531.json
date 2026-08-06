@@ -1,0 +1,42 @@
+{
+  "title_text": "WHEN THEY RUN",
+  "credits_text": "STARRING BAILEY STANLEY NICOLE MASIE MUNEZ TRANS NEAL ROSARIO CORSO WRITTEN & DIRECTED BY DEVON DOUGLAS HAMPER CHERNICK PRODUCED BY TRANS NEAL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "POSTER BY TONY HOLMAN",
+  "mood": [
+    "thriller",
+    "horror",
+    "gritty",
+    "intense",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.3,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A poster features a man holding a baseball bat with a zombie-like figure in the background, set against a dark, moonlit sky."
+}

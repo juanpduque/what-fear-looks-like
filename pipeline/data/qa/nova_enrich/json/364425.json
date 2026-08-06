@@ -1,0 +1,46 @@
+{
+  "title_text": "MURDEROUS INTENT",
+  "credits_text": "AN ANIMALS PREY... VICTIMS OF A RITUAL KILLING... CAN ANYONE ESCAPE THIS NIGHTMARE?",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "eerie",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "ritual",
+      "conf": 0.9
+    },
+    {
+      "name": "nightmare",
+      "conf": 0.85
+    },
+    {
+      "name": "eye",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "A dramatic poster features a large eye, a distressed woman, and two intense faces, evoking a nightmarish, ritualistic horror theme."
+}

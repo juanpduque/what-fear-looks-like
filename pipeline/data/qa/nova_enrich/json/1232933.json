@@ -1,0 +1,42 @@
+{
+  "title_text": "FEAR BELOW",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "thrilling",
+    "dangerous",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "shark",
+      "conf": 0.95
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    {
+      "name": "diver",
+      "conf": 0.8
+    },
+    {
+      "name": "danger",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.95,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A diver swims above a massive shark with open jaws in deep water, evoking tension and danger."
+}

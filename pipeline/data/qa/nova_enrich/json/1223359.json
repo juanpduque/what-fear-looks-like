@@ -1,0 +1,40 @@
+{
+  "title_text": "Coke Head The SodaSasher",
+  "credits_text": "He'll Kill You, efore Diabetes will\n\"IT'S LIKE FRIDAY THE 13TH, BUT WITH SODA POP\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A GEORGE CYPLICK Production",
+  "mood": [
+    "horror",
+    "camp",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and violent themes.",
+  "description": "A horror movie poster featuring a close-up of a person with blood dripping, accompanied by bold red text and a tagline."
+}

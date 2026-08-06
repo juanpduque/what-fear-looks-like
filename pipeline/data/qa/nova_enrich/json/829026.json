@@ -1,0 +1,40 @@
+{
+  "title_text": "THE GAME IS OVER",
+  "credits_text": "Alex Bianchi, Diego Pinto, Claudia Martin, Vigo Blasco, Elena Joa, Jose Maria Torro, Fotografa Maria Joa, Tutor Asistente de Produccion Alex Bianchi, Productor Ejecutivo Eduardo Pastón, Director Angel Ramos",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "THE GAME IS OVER",
+  "mood": [
+    "dread",
+    "surreal",
+    "psychological",
+    "thriller",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    "monster",
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster features a disturbing clown face with exaggerated features and blood-like text, suggesting potential violence and horror themes.",
+  "description": "A poster showing a disturbing clown face with exaggerated features and blood-like text, with the title 'THE GAME IS OVER' prominently displayed."
+}

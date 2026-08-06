@@ -1,0 +1,45 @@
+{
+  "title_text": "Stillbotn",
+  "credits_text": "PLAYTIME'S OVER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COMING SOON",
+  "mood": [
+    "disturbing",
+    "gothic",
+    "surreal",
+    "psychological",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests psychological horror and disturbing imagery.",
+  "description": "A man stands behind a child in a wheelchair, both illuminated by blue light in a dimly lit room."
+}

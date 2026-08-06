@@ -1,0 +1,49 @@
+{
+  "title_text": "DEAD TRIGGER",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "intense",
+    "gritty",
+    "survival",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 1.0
+    },
+    {
+      "name": "weapon",
+      "conf": 1.0
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and violent imagery.",
+  "description": "A man holds a gun in a war-torn city with soldiers and explosions in the background."
+}

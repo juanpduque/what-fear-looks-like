@@ -1,0 +1,49 @@
+{
+  "title_text": "DARK HARVEST 2 THE MAIZE",
+  "credits_text": "BILL COWELL KELLIEH RUPERT ENTERTAINMENT DOUGLAS BUZKAN LINDAY BRICE LAUREN RENTON JILL COWELL ELENA PIZZINO NICK R. ANDERSON PETER RENTICOS BILL RENTICOS GARY LIPPS PATTI STANELLI BILL COWELL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NEW MOON. MORE VICTIMS.",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "supernatural",
+    "tense"
+  ],
+  "fear_labels": [
+    {
+      "name": "scythe",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A poster shows a masked figure holding a large scythe against a dark, eerie forest backdrop with text indicating a horror theme."
+}

@@ -1,0 +1,37 @@
+{
+  "title_text": "Sherlock Holmes: The Baskerville Curse",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Sir Arthur Conan Doyle's * The Baskerville Curse * The Whodunnit Edition",
+  "mood": [
+    "gothic",
+    "mystery",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "The poster features Sherlock Holmes and a menacing white wolf in a dark, eerie forest setting."
+}

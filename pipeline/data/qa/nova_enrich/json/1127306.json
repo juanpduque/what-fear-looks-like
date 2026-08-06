@@ -1,0 +1,40 @@
+{
+  "title_text": "网络小春就",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "horror",
+    "sci-fi",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and horror elements with potential for violence.",
+  "description": "A group of five individuals face a large, menacing creature in a dramatic, stormy setting, each holding weapons ready for combat."
+}

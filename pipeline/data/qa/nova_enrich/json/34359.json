@@ -1,0 +1,35 @@
+{
+  "title_text": "BLUE DEMON",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "horror",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 1.0,
+  "animal": 1.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied threat of violence from a shark-like creature.",
+  "description": "A person floats in turbulent ocean waters with a large shark-like creature emerging behind them, suggesting impending danger."
+}

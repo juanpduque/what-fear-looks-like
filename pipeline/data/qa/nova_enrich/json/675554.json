@@ -1,0 +1,40 @@
+{
+  "title_text": "AMITYVILLE ISLAND",
+  "credits_text": "FOR GOD'S SAKE GET OUT OF THE WATER!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "horror",
+    "action",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "shark",
+      "conf": 0.95
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    {
+      "name": "danger",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.95,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and danger themes with a large shark.",
+  "description": "A diver swims near a massive, open-mouthed shark underwater with a fiery explosion in the background."
+}

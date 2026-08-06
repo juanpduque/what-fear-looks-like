@@ -1,0 +1,40 @@
+{
+  "title_text": "slave dolls",
+  "credits_text": "DAVID STORMN JACOB & GREEN BRADY H",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A NEW FILM ORDER PRODUCTION",
+  "mood": [
+    "surreal",
+    "disturbing",
+    "psychological",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and psychological themes.",
+  "description": "A poster shows a man holding a doll in front of a computer screen with two young girls nearby, featuring dark, surreal artwork."
+}

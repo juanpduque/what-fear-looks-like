@@ -1,0 +1,47 @@
+{
+  "title_text": "THE CRYING DEAD",
+  "credits_text": "THE PAST CAN KILL YOU",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "eerie",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows three ghostly girls in a dilapidated room with a skeleton on a stretcher, evoking a haunting and eerie atmosphere."
+}

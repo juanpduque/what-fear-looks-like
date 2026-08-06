@@ -1,0 +1,39 @@
+{
+  "title_text": "WAVE OF TERROR",
+  "credits_text": "HADLEY'S HELLHOLE ROAD KILL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "W.A.Y.E. PRODUCTIONS",
+  "mood": [
+    "horror",
+    "thriller",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and weapon imagery.",
+  "description": "Poster features four scenes including a woman, a man in a hard hat, a person with a weapon, and a car, promoting a horror film titled 'Wave of Terror'."
+}

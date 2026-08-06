@@ -1,0 +1,45 @@
+{
+  "title_text": "BUTCHERS BLUFF",
+  "credits_text": "THERE AIN'T NOTHING IN THEM WOODS EXCEPT DEATH!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "survival",
+    "forest",
+    "mythic",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains horror themes and implied violence.",
+  "description": "A woman runs through a dark forest with a large, monstrous creature looming behind her under a full moon."
+}

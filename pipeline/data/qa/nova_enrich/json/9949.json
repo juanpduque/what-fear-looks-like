@@ -1,0 +1,42 @@
+{
+  "title_text": "HAUNTED HIGHWAY",
+  "credits_text": "PREPARE TO BE DRIVEN INSANE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "terror",
+    "suspense",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A horror movie poster shows a ghostly figure emerging from a car on a dark highway, with the title 'Haunted Highway' prominently displayed."
+}

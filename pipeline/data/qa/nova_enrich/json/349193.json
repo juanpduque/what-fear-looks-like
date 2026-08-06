@@ -1,0 +1,38 @@
+{
+  "title_text": "CRUEL",
+  "credits_text": "Un film de ÉRIC CHERRIÈRE",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "other_text": "POLAR GRAND PRIX POLAR BEAUNE ROGAN FunInso",
+  "mood": [
+    "dark",
+    "intense",
+    "psychological",
+    "disturbing",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "nudity"
+  ],
+  "moderation_notes": "The poster features partial nudity and a dark, intense atmosphere.",
+  "description": "The poster shows a dark silhouette of a person with partial nudity against a black background, accompanied by the title 'CRUEL' and credits."
+}

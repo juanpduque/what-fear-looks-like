@@ -1,0 +1,46 @@
+{
+  "title_text": "HIGH PLAINS INVADERS",
+  "credits_text": "JAMES MARSTERS CINDY SAMPSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NO ONE INVITED THEM. NOTHING CAN STOP THEM.",
+  "mood": [
+    "horror",
+    "action",
+    "post-apocalyptic",
+    "intense",
+    "gritty"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A man in a cowboy hat lies injured with a monster nearby. The poster advertises a horror film titled 'High Plains Invaders.'"
+}

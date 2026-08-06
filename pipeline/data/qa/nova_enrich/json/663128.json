@@ -1,0 +1,40 @@
+{
+  "title_text": "THE PRODIGAL SON",
+  "credits_text": "CHRIS W. MITCHELL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE NEITHER HORROR COLLECTION",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore.",
+  "description": "A dark, eerie poster features a grotesque creature with long tendrils, a skull-like object, and scattered body parts against a shadowy background."
+}

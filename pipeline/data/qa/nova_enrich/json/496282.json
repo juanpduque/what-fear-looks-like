@@ -1,0 +1,50 @@
+{
+  "title_text": "THE NIGHT SITTER",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "supernatural",
+    "gothic",
+    "dread",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "knife",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains horror elements including weapons and occult imagery.",
+  "description": "Poster features four eerie figures surrounding a glowing chest with a skull design, set against a dark background."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "Vampire in Union City",
+  "credits_text": "A LUIS FERRANDEZ FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "OPENING SEPTEMBER 2010",
+  "mood": [
+    "gothic",
+    "dread",
+    "mysterious",
+    "noir",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark poster features a shadowy figure holding a weapon against a cityscape with a full moon, promoting the film 'Vampire in Union City' opening in September 2010."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "ALIEN FROM THE DEEP",
+  "credits_text": "STARRING DANIEL BECCI, MARIA GIULIA CANALE, ROBERT MARTINS, LUCIANO PIECZAK, CHARLES NAPIER. WRITTEN BY ROBERT B. RACHLAND AND ANGELA ROBBIA. DIRECTED BY ANTONIO MASERETTI.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "sci-fi",
+    "thriller",
+    "horror",
+    "intense",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.2,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the intense and dramatic imagery.",
+  "description": "The poster features a dark, fragmented design with a central figure in a spacesuit, set against a cosmic backdrop, hinting at a sci-fi horror theme."
+}

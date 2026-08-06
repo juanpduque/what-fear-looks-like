@@ -1,0 +1,46 @@
+{
+  "title_text": "CALL GHOST",
+  "credits_text": "DEAD END FILM HOUSE PRESENTS THE END OF YOUR MEANINGLESS LIFE IS JUST ONE CALL AWAY! CLAYTON HILSBERRY KAYLEE SNARSKY G SKYLER TAYLOR AS \"GHOST\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "camp",
+    "horror",
+    "satirical",
+    "dark humor",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and implied violence.",
+  "description": "A man holds a bloody cleaver while smiling, with a ghostly figure and others in the background. The poster advertises a horror film titled 'Call Ghost.'"
+}

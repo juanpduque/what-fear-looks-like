@@ -1,0 +1,49 @@
+{
+  "title_text": "FEAR HOUSE",
+  "credits_text": "A DISTURBING NEW TWIST ON THE HAUNTED HOUSE FILM! 'FEAR HOUSE' DELIVERS!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WHAT ARE YOU AFRAID OF?",
+  "mood": [
+    "dread",
+    "gothic",
+    "suspense",
+    "haunting",
+    "terror"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.95
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A poster shows a terrified person in front of a haunted house with a noose, dark clouds, and dramatic text."
+}

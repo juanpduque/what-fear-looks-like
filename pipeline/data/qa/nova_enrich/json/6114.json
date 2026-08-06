@@ -1,0 +1,38 @@
+{
+  "title_text": "BRAM STOKER'S DRACULA",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "eerie",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, shadowy figure with elongated fingers covers their face, evoking a gothic horror theme. The title 'Bram Stoker's Dracula' is prominently displayed."
+}

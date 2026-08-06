@@ -1,0 +1,45 @@
+{
+  "title_text": "VOODOO",
+  "credits_text": "SAMANTHA STEWART AUTUMN REYNOLDS DOMINIC MATTEUCCI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOU ARE GOING TO HELL",
+  "mood": [
+    "dread",
+    "supernatural",
+    "gothic",
+    "horror",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "occult",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and a monstrous creature.",
+  "description": "A poster features a monstrous creature with a doll, set against a fiery background, with bold red title 'VOODOO' and tagline 'YOU ARE GOING TO HELL.'"
+}

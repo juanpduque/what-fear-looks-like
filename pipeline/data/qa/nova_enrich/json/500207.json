@@ -1,0 +1,42 @@
+{
+  "title_text": "GHOST",
+  "credits_text": "A FILM BY FINDO PURWONO HIW\nSTEFANI GABRIELLA DIVEN RHENA INGRID RUY DINI ZAMORA QUINEY PUTRA IPRA WIDANARKO WOW CHO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SCREAM FILM GOLDWIND ENTERTAINMENT PRESENTS SALSHABILLA ADRIANI",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "intense",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.3
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild blood splatters and intense facial expression suggesting horror themes.",
+  "description": "A dark poster features a woman with long black hair and an intense stare, with the title 'GHOST' prominently displayed."
+}

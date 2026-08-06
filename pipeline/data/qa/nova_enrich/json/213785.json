@@ -1,0 +1,45 @@
+{
+  "title_text": "JUNKFOOD HORRORFEST",
+  "credits_text": "CALICO COOPER CARA MOODY WERNER AS THE PERVO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CHEMICAL BURN ENTERTAINMENT PRESENTS\nScarle Fry's",
+  "mood": [
+    "horror",
+    "camp",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and gore.",
+  "description": "Poster features a group of zombies in front of a neon sign for 'Junkfood Horrorfest,' with blood and horror themes."
+}

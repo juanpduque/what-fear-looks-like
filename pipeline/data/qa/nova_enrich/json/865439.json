@@ -1,0 +1,41 @@
+{
+  "title_text": "JURASSIC SHARK 2: AQUAPOCALYPSE",
+  "credits_text": "THE SECOND TIME'S THE CHUM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thrilling",
+    "action",
+    "horror",
+    "camp",
+    "sci-fi"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.95,
+  "blood_gore": 0.1,
+  "violence": 0.6,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery with a shark and implied danger.",
+  "description": "A poster shows a woman perched on a large shark's nose with its mouth open wide, titled 'Jurassic Shark 2: Aquapocalypse.'"
+}

@@ -1,0 +1,35 @@
+{
+  "title_text": "CREEPIN'",
+  "credits_text": "A MADCAP HIP HOP HAUNT THROUGH THE HOOD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "I Know Who You did last Summer",
+  "mood": [
+    "thriller",
+    "mystery",
+    "suspense",
+    "urban",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster features five individuals with a torn paper note reading 'I Know Who You did last Summer' and a knife partially visible."
+}

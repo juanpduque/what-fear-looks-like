@@ -1,0 +1,38 @@
+{
+  "title_text": "WITCH'S HEART",
+  "credits_text": "WRITTEN AND DIRECTED BY MARCO BARONI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "RUN FOR YOUR LIFE AND DON'T TURN AROUND OR ELSE IT IS HELL FOR WHICH YOU ARE BOUND",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A solitary figure stands in a dark, eerie forest under a red-lit sky, evoking a sense of dread and mystery."
+}

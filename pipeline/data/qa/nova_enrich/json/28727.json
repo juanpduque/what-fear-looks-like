@@ -1,0 +1,41 @@
+{
+  "title_text": "DUNGEON GIRL",
+  "credits_text": "FROM THE DIRECTOR OF THE BOOGEYMAN\nA shocking story of captivity and survival",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Girl Held Captive\nDungeon Girl Escapes After 6 Years",
+  "mood": [
+    "dread",
+    "intense",
+    "disturbing",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "captivity",
+      "conf": 0.9
+    },
+    {
+      "name": "survival",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "The poster hints at themes of captivity and survival, potentially involving sensitive content.",
+  "description": "A dramatic poster featuring a close-up of a distressed person with text about captivity and survival."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "ESCALATION",
+  "credits_text": "KANG'XPLOITATION STUDIOS PRESENTS A CHRISTIAN BACHINI FILM \"ESCALATION\" STARRING JOHN BUTLER, LUCY LU, CHARLES R. COOPER, MIKE DEREK, BLAKE BACHINI, CHARLES P. COOPER, CHEN WEI, GAFFER LU XUAN SHANGHAI, DIRECTOR OF PHOTOGRAPHY LU XUAN SHANGHAI, COSTUME DESIGNER LUCY LU, CHEN WEI, SPECIAL MAKE-UP BY ALI STUDIO, ORIGINAL MUSICAL SCORE BY JOHN BUTLER, LUI JI, CHARLES R. COOPER, DUTANGS AND ANTONIO VANICCI BOOTH, CAMERA OPERATORS BACHINI CHARLES P. COOPER, CHEN WEI, MAKE-UP ARTIST DESIREE LU CHUN YAN, GIULIA SERAFINI, WRITTEN, PRODUCED & DIRECTED BY CHRISTIAN BACHINI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NO. 18 APR-MAY 15c TERROR THEY SAY A GUILTY CONSCIENCE CAN EAT YOU ALIVE! A KANG'XPLOITATION STUDIOS PRODUCTION",
+  "mood": [
+    "horror",
+    "gothic",
+    "camp",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.6,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and violent themes.",
+  "description": "Vivid horror comic cover featuring a screaming man restrained by a masked figure, with bold red splatters and intense expressions."
+}

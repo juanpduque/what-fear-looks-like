@@ -1,0 +1,49 @@
+{
+  "title_text": "ZOMBIE DOOMSDAY",
+  "credits_text": "JOHNNY ALONSO RON BUSH GARY UGARK",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A LIVE ACTION ZOMBIE MOVIE",
+  "mood": [
+    "apocalyptic",
+    "horror",
+    "dread",
+    "survival",
+    "chaotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    },
+    {
+      "name": "explosion",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A poster shows a fiery explosion behind a food truck with silhouetted figures, promoting a live-action zombie movie."
+}

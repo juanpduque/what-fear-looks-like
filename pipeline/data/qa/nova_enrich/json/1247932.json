@@ -1,0 +1,46 @@
+{
+  "title_text": "怪談7",
+  "credits_text": "13人の叫びれた恐怖映像",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "psychological",
+    "supernatural",
+    "disturbing",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.7,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and disturbing imagery.",
+  "description": "A poster featuring a distressed woman with a knife, suggesting horror themes and psychological tension."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "CORPSE",
+  "credits_text": "BASED ON THE KING IN YELLOW BY ROBERT W. CHAMBERS\nA FILM BY ERNST & DARMON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BRIGHT RECTANGLE FILMS PRESENTS",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "castle",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.6,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and a skull, suggesting horror themes.",
+  "description": "The poster features a colorful, stylized figure with bat-like wings and a crown, set against a castle backdrop, with bold, vibrant text."
+}

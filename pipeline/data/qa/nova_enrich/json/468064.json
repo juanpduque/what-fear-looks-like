@@ -1,0 +1,46 @@
+{
+  "title_text": "KNOCHEN2WALD FLEISCHERITE",
+  "credits_text": "STARRING: HERRIE VINCKLE, STEFAN KASTNER, DENNIS JURONSKI, DOMINIK KRAGELJUND, STEN LÖCKEN, SIRKIA LYYTIÄ, JIROP LARSEN, MIKA BRUCE, PATRICK THOMAS, MARKUS BRAHNT; MUSIC BY: Y & Z; FOR: STABSFILM TOYSEN DISCO; WRITTEN AND DIRECTED BY: NEUMANN THOISSON",
+  "languages": [
+    "de"
+  ],
+  "other_text": "Das Säss ist wieder da... und hat diesmal lintersetzung infiziert! Ein kleiner Schritt für die Menschheit über ein grösser für deinen Schnerd",
+  "mood": [
+    "horror",
+    "dark",
+    "violent",
+    "grotesque",
+    "satirical"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "zombie",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore, suitable for mature audiences only.",
+  "description": "Poster features two characters, one in a green jacket holding an axe and the other a zombie, with blood splatters and a dark, horror-themed design."
+}

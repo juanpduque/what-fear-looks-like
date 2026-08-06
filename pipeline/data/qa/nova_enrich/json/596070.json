@@ -1,0 +1,44 @@
+{
+  "title_text": "Kettensägen Zombies",
+  "credits_text": "SOI Brothers präsentieren: Ein Film von Andreas Pape & Oliver Keilisch",
+  "languages": [
+    "de"
+  ],
+  "other_text": "SOI Brothers präsentieren: Open United Maniacs Film von Andreas Pape & Oliver Keilisch - Kettensägen Zombies - Christian Engelmann, Boris Fuhrmann, Andreas Pape, Oliver Keilisch, Nils Keilisch, André Goize, Martin Lange u.a. Kamerario, Oliver Keilisch; Spezielle Effekte, Andreas Pape & Oliver Keilisch; Schnitt, Timo Rose; Pape & Keilisch Buch & Regie, Pape & Keilisch",
+  "mood": [
+    "horror",
+    "camp",
+    "gruesome"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore.",
+  "description": "A man holds a chainsaw in a grassy field, with a zombie-like face and red stains on his shirt."
+}

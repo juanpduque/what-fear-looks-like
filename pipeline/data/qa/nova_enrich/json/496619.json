@@ -1,0 +1,51 @@
+{
+  "title_text": "Blood Red Sandman",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HORRORPIELFILM IN DOLBY DIGITAL 5.1",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "dark",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic imagery and themes of horror and violence.",
+  "description": "A dark, intense poster features a monstrous figure with a skull-like face holding a smaller figure amidst flames and shadows."
+}

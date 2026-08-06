@@ -1,0 +1,42 @@
+{
+  "title_text": "THE IRONBOUND VAMPIRE",
+  "credits_text": "A Film By Karl Petry",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Ironbound. An old town with a new taste... for blood.",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "dark",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult imagery and implied violence.",
+  "description": "Poster features a screaming woman with chains and occult symbols, promoting a horror film titled 'The Ironbound Vampire.'"
+}

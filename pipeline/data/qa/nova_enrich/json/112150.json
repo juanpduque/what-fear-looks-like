@@ -1,0 +1,38 @@
+{
+  "title_text": "Juan con miedo",
+  "credits_text": "Iván Massagué, Sonia Lorenzo, Ricardo Gómez, Óscar Vivancos",
+  "languages": [
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "dark",
+    "intense",
+    "mysterious",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A boy in a red hood stands against a dark background with red birds flying above his head."
+}

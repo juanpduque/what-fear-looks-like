@@ -1,0 +1,43 @@
+{
+  "title_text": "シャーンシューツ4",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "シャーンシューツ4",
+  "mood": [
+    "disturbing",
+    "psychological",
+    "horror",
+    "trauma",
+    "distress"
+  ],
+  "fear_labels": [
+    {
+      "name": "trauma",
+      "conf": 0.9
+    },
+    {
+      "name": "distress",
+      "conf": 0.85
+    },
+    {
+      "name": "confinement",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "sexual",
+    "violence",
+    "nudity"
+  ],
+  "moderation_notes": "Contains partial nudity and implied violence, suggesting mature themes.",
+  "description": "A distressed young woman in a school uniform is shown behind bars, with faint figures in the background, suggesting confinement and psychological horror."
+}

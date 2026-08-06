@@ -1,0 +1,50 @@
+{
+  "title_text": "BLOOD MOUNTAIN MASSACRE",
+  "credits_text": "KATHERINE BLANFORD KO O'HAIR MATT MAHER JENNA AUGUST",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DRINKS WILL FLOW AND BLOOD WILL SPILL",
+  "mood": [
+    "dread",
+    "horror",
+    "gritty",
+    "violent",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.95,
+  "blood_gore": 0.85,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; suitable for mature audiences only.",
+  "description": "A poster features a monstrous pig with a chainsaw, a tagline, and a dark, eerie rural setting with a car approaching."
+}

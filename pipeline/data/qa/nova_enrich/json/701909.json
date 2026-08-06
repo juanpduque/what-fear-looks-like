@@ -1,0 +1,42 @@
+{
+  "title_text": "VAMPIRE BURT'S Serenade",
+  "credits_text": "A RAUNCHY VAMPIRE/ZOMBIE MUSICAL! Starring Richard O'Brien, Zeta Jones, and Bedecked. Directed by Stacy Hawkins. Produced by Harry Novak. Written and Directed by Stacy Hawkins.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"Taste of Shocks presents\"",
+  "mood": [
+    "gothic",
+    "camp",
+    "horror",
+    "musical",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.4,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild blood and horror elements, suitable for mature audiences.",
+  "description": "Poster features a man in a floral shirt with blood splatters, promoting a vampire/zombie musical titled 'Vampire Burt's Serenade.'"
+}

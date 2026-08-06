@@ -1,0 +1,42 @@
+{
+  "title_text": "鬼話神談 仙家寺 A GHOST STORY",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "鬼話神談",
+  "mood": [
+    "mysterious",
+    "gothic",
+    "supernatural",
+    "intense",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "temple",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains supernatural themes and mild weapon imagery.",
+  "description": "A man in traditional attire holds a weapon in front of a temple with a ghostly atmosphere."
+}

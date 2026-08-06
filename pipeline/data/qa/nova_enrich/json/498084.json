@@ -1,0 +1,47 @@
+{
+  "title_text": "SLAUGHTERHOUSE",
+  "credits_text": "HM&M FILMS PRESENTS House of Whores 2.5 STARRING TOM KOMISAR DANIEL MURPHY HARRY MCCANE LINDSAY MCINTYRE AMBER BURNS STAN TRAYLOR TRISHA CLARK COURTNEY CLARK CAMERON SCOTT AC MCCRAY TONY WALTERS RILEY NURSE SAM HORRIS JAKE CHESTER & GREY HATCHETT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gothic",
+    "camp",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and suggestive themes.",
+  "description": "Poster features two stylized masked faces with vibrant colors and text for a horror film titled 'Slaughterhouse: House of Whores 2.5.'"
+}

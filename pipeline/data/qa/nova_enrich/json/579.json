@@ -1,0 +1,37 @@
+{
+  "title_text": "JAWS 2",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "horror",
+    "suspense",
+    "drama",
+    "adventure"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.8,
+  "animal": 1.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features a dramatic scene with a shark and a person, implying potential violence.",
+  "description": "A woman in a yellow bikini stands on a surfboard near a large, open-mouthed shark emerging from the water. The title 'JAWS 2' is prominently displayed at the top."
+}

@@ -1,0 +1,38 @@
+{
+  "title_text": "DEATH WORLD",
+  "credits_text": "WHERE EVERYONE CAN HEAR YOU SCREAM\nCONSUME THE SLUDGE ONLY IN THEATRES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "surreal",
+    "gritty",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Poster implies graphic violence and disturbing imagery.",
+  "description": "A collage of intense faces with the title 'Death World' and tagline 'Where Everyone Can Hear You Scream' prominently displayed."
+}

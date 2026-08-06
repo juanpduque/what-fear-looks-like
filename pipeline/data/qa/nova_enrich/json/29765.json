@@ -1,0 +1,41 @@
+{
+  "title_text": "DEAD THINGS",
+  "credits_text": "Pat Staken, Rico Love, Jerry Nooks, Jennifer Gale, Nick Stadden, Joseph Rubenstein",
+  "languages": [
+    "en"
+  ],
+  "other_text": "And You Thought The City Was Bad... A Heapin' Helpin' Of Hellbent Hillbilly Hospitality",
+  "mood": [
+    "horror",
+    "camp",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains horror themes and occult imagery.",
+  "description": "A poster featuring a monstrous skull-faced figure with a hat and coat, surrounded by dark, eerie text and skeletal imagery."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "CONVENTION OF THE DEAD",
+  "credits_text": "JAY OLIVER ANDY PIECE CHRISTOPHER ROTHAN \"A CONVENTION TO DISMEMBER\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COME SEE ME SOON",
+  "mood": [
+    "gothic",
+    "horror",
+    "camp",
+    "thriller",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.5,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes, suitable for mature audiences.",
+  "description": "Poster features a group of people in a dark, intense setting with bold red and black colors, suggesting a horror theme."
+}

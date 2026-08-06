@@ -1,0 +1,45 @@
+{
+  "title_text": "BLOODY ISLAND",
+  "credits_text": "A SHADOW IN THE DARK PRODUCTIONS in association with RAUNT NAIL PRODUCTIONS presents CHRISTOPHER WOODS HANNAH MARIE JONES KELLY ROBERT WICHMAN JENNIFER GINA \"BLOODY ISLAND\" written by JOSEPH P. KELLY directed by JOSEPH P. KELLY produced by ROBERT WICHMAN WILLIAM J. HUNT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "thriller",
+    "horror",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "Poster features a group of people in orange jumpsuits standing in front of a large, menacing figure holding a weapon, with an American flag and industrial background."
+}

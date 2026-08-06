@@ -1,0 +1,46 @@
+{
+  "title_text": "VHS LIVES",
+  "credits_text": "A SCHLOCKUMENTARY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SPLATTER UNIVERSITY EVILSPEAK ZOMB",
+  "mood": [
+    "horror",
+    "retro",
+    "gritty",
+    "paranormal",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and blood.",
+  "description": "A retro VHS cover featuring a zombie on a screen with tapes labeled 'EvilSpeak' and 'Zombie.' The design has a gritty, horror-themed aesthetic."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "HUNTING GROUNDS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE LEGEND IS REAL... AND HUNGRY",
+  "mood": [
+    "dread",
+    "survival",
+    "horror",
+    "forest",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.95,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of a monstrous creature and skulls, suggesting potential violence and gore.",
+  "description": "A person walks through a dark forest towards a large, menacing gorilla with sharp teeth, with skulls scattered on the ground."
+}

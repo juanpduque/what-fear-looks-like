@@ -1,0 +1,50 @@
+{
+  "title_text": "SIMISTER VISIONS",
+  "credits_text": "NERVE SHATTERING HORROR STORIES THAT WILL MAKE YOUR BONES FREEZE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"SURE TO BE A CULT CLASSIC\" \"A MIND-BLOWING COLLECTION OF RADICAL FILMS\"",
+  "mood": [
+    "dread",
+    "gothic",
+    "terror",
+    "disturbing",
+    "macabre"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    },
+    {
+      "name": "skull",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore.",
+  "description": "A horror anthology poster featuring a gruesome, bloodied child holding a knife, surrounded by eerie, ghoulish figures."
+}

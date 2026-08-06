@@ -1,0 +1,42 @@
+{
+  "title_text": "SCARECROW 2",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THIS HALLOWEEN WITNESS THE END",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A scarecrow stands amidst flames with a menacing expression, accompanied by smaller figures in a dark, fiery setting."
+}

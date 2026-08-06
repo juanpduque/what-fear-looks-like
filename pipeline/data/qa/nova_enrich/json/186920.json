@@ -1,0 +1,40 @@
+{
+  "title_text": "黄空",
+  "credits_text": "結牙",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "HELL HAS NO BOUNDARY",
+  "mood": [
+    "intense",
+    "mysterious",
+    "dark",
+    "psychological",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic poster features a central weapon with two faces, bold green Chinese characters, and the English tagline \"HELL HAS NO BOUNDARY\"."
+}

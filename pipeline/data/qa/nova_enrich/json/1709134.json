@@ -1,0 +1,45 @@
+{
+  "title_text": "HORRORCANE",
+  "credits_text": "THERE'S A STORM COMING...",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "horror",
+    "apocalyptic",
+    "intense",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "storm",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense horror themes and implied violence.",
+  "description": "A group of people face a monstrous creature amid a stormy backdrop, with dramatic lighting and a dark, foreboding atmosphere."
+}

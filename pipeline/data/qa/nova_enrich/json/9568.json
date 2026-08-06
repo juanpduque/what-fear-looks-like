@@ -1,0 +1,40 @@
+{
+  "title_text": "the Dentist",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "psychological horror",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "tool",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.5,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster depicts graphic dental procedures and implied violence.",
+  "description": "A woman lies in a dental chair with a dentist's hand holding a tool near her open mouth, set against a dark red background."
+}

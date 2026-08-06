@@ -1,0 +1,45 @@
+{
+  "title_text": "BLACK MAMBA",
+  "credits_text": "Directed by GEORGE ROWE\nJOHN ASHLEY-MARLENE CLARK-PILAR PILAPIL-EDDIE GARCIA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "camp",
+    "supernatural",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.7,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and mild horror elements.",
+  "description": "The poster features a skull, a screaming face, a black cat, and a man with a beard, evoking a gothic horror atmosphere."
+}

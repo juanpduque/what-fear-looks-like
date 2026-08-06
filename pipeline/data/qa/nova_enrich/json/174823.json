@@ -1,0 +1,37 @@
+{
+  "title_text": "THE INVASION",
+  "credits_text": "SHAKE RATTLE AND ROLL FOURTEEN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "sci-fi",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.2,
+  "blood_gore": 0.0,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A group of people stand in front of a glowing orb with a cityscape and crows in the background, suggesting a sci-fi or action theme."
+}

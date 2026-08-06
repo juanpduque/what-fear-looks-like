@@ -1,0 +1,42 @@
+{
+  "title_text": "the mitt",
+  "credits_text": "Let the screaming begin.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Eight kids will enter. None will leave.",
+  "mood": [
+    "dread",
+    "gothic",
+    "terror",
+    "haunting",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and implied violence.",
+  "description": "A dark, eerie poster features a looming building with a screaming face and ominous text, suggesting a horror theme."
+}

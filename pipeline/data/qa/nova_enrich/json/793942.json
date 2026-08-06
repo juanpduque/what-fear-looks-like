@@ -1,0 +1,45 @@
+{
+  "title_text": "THE LEGEND OF FALL CREEK",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "20 YEARS LATER HE'S COME HOME",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "mysterious",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.85
+    },
+    {
+      "name": "knife",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains violent and horror themes with implied danger.",
+  "description": "A poster shows a hooded figure with a skull face holding a knife in front of a haunted house under a full moon."
+}

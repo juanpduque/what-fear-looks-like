@@ -1,0 +1,47 @@
+{
+  "title_text": "BLUTSCHREI DER VERDAMMNTEN",
+  "credits_text": "BLUTSCHREI DER VERDAMMNTEN: MICHAEL VOIGT, JOHANN KÄCHEN UND JÄCKEN TAUBERT",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "other_text": "RED EDITION REGARD",
+  "mood": [
+    "gothic",
+    "horror",
+    "violent",
+    "dark",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; suitable for mature audiences.",
+  "description": "A dramatic poster features a masked figure holding a sword over a bound person, with bold red text and a dark, gothic aesthetic."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "SiESTA",
+  "credits_text": "MIRYAM DIEGO MARTA PONS EDUARDO BATANER FEDE HERNÁNDEZ",
+  "languages": [
+    "es"
+  ],
+  "other_text": "CRU DE MAY",
+  "mood": [
+    "gothic",
+    "haunting",
+    "mysterious",
+    "dark",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "haunted_house",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A stylized poster features a shadowy figure in a ruined urban setting with a cross and eerie architecture."
+}

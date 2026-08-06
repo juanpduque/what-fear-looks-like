@@ -1,0 +1,44 @@
+{
+  "title_text": "PHOBIAS",
+  "credits_text": "Your fears are not irrational",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "terror",
+    "psychological horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "axe",
+      "conf": 1.0
+    },
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A poster shows a hand gripping a bloody axe with a shadowy figure in the background, and the title 'PHOBIAS' prominently displayed."
+}

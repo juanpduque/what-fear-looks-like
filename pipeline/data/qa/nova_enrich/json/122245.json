@@ -1,0 +1,49 @@
+{
+  "title_text": "SERPENT WARRIORS",
+  "credits_text": "ONE MILLION TERRIFYING SNAKES AS THEY STRIKE, HISS AND CRUSH THE 'SERPENT WARRIORS' CREDITS: CLINT EASTWOOD, GENE LOCHMAN, GREGORY HUNTER, CHARLES MITCHUM, DR. JIM MUFFETT, TAYLOR TRAMBLEE, ANN LUCE, PRESENTS AN EASTERN MEDIA PRODUCTION 'SERPENT WARRIORS' MARTIN FRANKLIN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IF YOU HAVE EVER FELT WEAK-KNEES ON A CHICKEN HEART, YOU MAY NOT BE ABLE TO STAND THE SHOCK!",
+  "mood": [
+    "action",
+    "horror",
+    "thriller",
+    "adventure",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "danger",
+      "conf": 0.9
+    },
+    {
+      "name": "survival",
+      "conf": 0.85
+    },
+    {
+      "name": "threat",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.95,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and threat from large snakes.",
+  "description": "A man holds a rifle while standing on a giant snake, with others in the background. The poster advertises a horror film titled 'Serpent Warriors.'"
+}

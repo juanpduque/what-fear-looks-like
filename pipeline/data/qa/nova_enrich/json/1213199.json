@@ -1,0 +1,47 @@
+{
+  "title_text": "BAKEMONO",
+  "credits_text": "A LOST FOREVER PRODUCTION OF A DOUG ROOS FILM \"BAKEMONO\" STARRING TAKASHI IRIE, MARILYN KAWAKAMI, DOMINIC EARLY, MIKI NOMURA, VANESSA MERTENBACHER, YURIKA NATSUME, HINAKO SUGIYAMA, MAI MIZUSAWA, CONOR LYNE, YOO SHIN K., SCOTT ANTHONY, YUKINA TAKASE, KEI URAJI WRITTEN BY DOUG ROOS EXECUTIVE PRODUCERS JAMES HUTCHINSON AND SHANNON GREGORY PRODUCED BY DOUG ROOS MUSIC BY WILL HANLON CO-PRODUCED BY JASON KNIGHT AND JAMES SEGARS PHOTOGRAPHY BY DOUG ROOS SPECIAL EFFECTS BY GORE GALORE FX DIRECTED BY DOUG ROOS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IT FEEDS ON MORE THAN JUST YOUR FEARS. WELCOME TO TOKYO.",
+  "mood": [
+    "horrific",
+    "eerie",
+    "gothic",
+    "surreal",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "skull",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "nudity",
+    "sexual",
+    "violence"
+  ],
+  "moderation_notes": "Contains partial nudity and violent imagery.",
+  "description": "A horror poster features a monstrous creature with multiple tentacles and a skull-like face looming over a reclining woman in a cityscape background."
+}

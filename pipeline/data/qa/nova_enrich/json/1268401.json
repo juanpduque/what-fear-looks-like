@@ -1,0 +1,49 @@
+{
+  "title_text": "心霊プアイント",
+  "credits_text": "見てはならない結織対象",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "haunting",
+    "mystery",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "forest",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains intense supernatural imagery and psychological horror themes.",
+  "description": "A poster features a ghostly face and a young woman in a forest, with Japanese text emphasizing a chilling supernatural encounter."
+}

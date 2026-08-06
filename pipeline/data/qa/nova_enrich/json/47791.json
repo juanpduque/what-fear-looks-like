@@ -1,0 +1,46 @@
+{
+  "title_text": "SEMUM",
+  "credits_text": "Çehennem pusuda...",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "Döbbe'nin Yönetmeninden\nSUBAT 2008",
+  "mood": [
+    "horror",
+    "gothic",
+    "supernatural",
+    "dread",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and intense facial expressions suggesting violence and gore.",
+  "description": "The poster features three intense, monstrous faces with a central, grotesque figure. Bold red and black typography highlights the title \"SEMUM\" and release date."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "CANNIBAL MERCENARY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "adventure",
+    "intense",
+    "gritty",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.95,
+  "monster": 0.0,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts intense action and potential violence, including firearms and combat scenes.",
+  "description": "The poster features a group of mercenaries in a jungle setting, holding guns and surrounded by action elements like smoke and explosions."
+}

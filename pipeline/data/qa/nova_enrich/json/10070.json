@@ -1,0 +1,49 @@
+{
+  "title_text": "F.E.A.S.T.",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horrific",
+    "gothic",
+    "surreal",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.1,
+  "blood_gore": 0.75,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including monstrous creatures and blood.",
+  "description": "A dark, fiery poster features a monstrous creature emerging from shadows with sharp teeth and claws, set against a dramatic, infernal background."
+}

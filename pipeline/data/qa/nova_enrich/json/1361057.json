@@ -1,0 +1,38 @@
+{
+  "title_text": "la metamorfosis",
+  "credits_text": "una película de Ángel Hurtado",
+  "languages": [
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "surreal",
+    "disturbing",
+    "psychological",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    "monster",
+    {
+      "name": "transformation",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains partial nudity and suggestive imagery.",
+  "description": "A shirtless man lies in bed with a surreal, distorted face near him; the title and director's name are displayed."
+}

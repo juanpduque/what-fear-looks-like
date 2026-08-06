@@ -1,0 +1,41 @@
+{
+  "title_text": "KNOCK 'EM DEAD",
+  "credits_text": "Even if you hated their last movie... that's still no reason to kill them... Rae Dawn Chong Anne-Marie Johnson Deirdre Johnson Jaleel Harris Jereka Harris Christopher Judge Graham Rouse Betsy Russell Candice Berk Preston Gaye Daniel Bernhardt Barry Anthony Thomas Johnny Whitaker",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COMING TO THEATERS AND VOD THIS NOVEMBER!",
+  "mood": [
+    "gothic",
+    "thriller",
+    "horror",
+    "dramatic",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence and horror themes.",
+  "description": "A group of actors stands in front of a haunted castle with a large skull above them. The poster advertises a horror film coming to theaters and VOD in November."
+}

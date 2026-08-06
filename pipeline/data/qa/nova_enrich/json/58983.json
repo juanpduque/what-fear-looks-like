@@ -1,0 +1,42 @@
+{
+  "title_text": "DEATH ROW DINER",
+  "credits_text": "Otis is back & he's hungry possessed and disfigured...Only now 40 years later his hunger pains are for vicious retribution!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CAMP MOTION PICTURES",
+  "mood": [
+    "horror",
+    "thriller",
+    "revenge",
+    "gritty",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore imagery.",
+  "description": "A poster features a disfigured face with a menacing expression, accompanied by bold red text and a dark, eerie background."
+}

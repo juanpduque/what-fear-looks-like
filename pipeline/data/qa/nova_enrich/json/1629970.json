@@ -1,0 +1,42 @@
+{
+  "title_text": "DEFILED",
+  "credits_text": "A SHORT FILM BY JAKE VALENTINE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "gothic",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and suggestive themes.",
+  "description": "A dark, red-tinted poster features an abstract, skeletal silhouette with bold title text and director credit."
+}

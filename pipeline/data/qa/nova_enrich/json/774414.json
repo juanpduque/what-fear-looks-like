@@ -1,0 +1,42 @@
+{
+  "title_text": "BLOODY SUMMER",
+  "credits_text": "VICTORIA RIBERO AND DANIEL JASER A THIANNY LORETTE FILM GI SUSANA LORENZO MARAZA AND CARLA JULIA FEDRA AND SUSAN AGUERO DANIEL OLIVERA MARCELO DIAZ PAULO VIÑAS THIANNY LORETTE GABRIEL GARCIA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WINNER 2020",
+  "mood": [
+    "thriller",
+    "horror",
+    "dark",
+    "intense",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A poster features a masked figure holding a weapon with blood splattered nearby, suggesting a thriller or horror theme."
+}

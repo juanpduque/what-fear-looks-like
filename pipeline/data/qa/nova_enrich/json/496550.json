@@ -1,0 +1,46 @@
+{
+  "title_text": "BHAYANAK BHUTANI",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "ur"
+  ],
+  "other_text": "بھایناک بھوتانی",
+  "mood": [
+    "horror",
+    "supernatural",
+    "gothic",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains mild occult themes and horror imagery.",
+  "description": "A poster features a frightened man facing a ghostly figure with fiery hair, alongside a child and a woman in distress, set against a dramatic, fiery background."
+}

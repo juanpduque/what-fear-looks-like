@@ -1,0 +1,45 @@
+{
+  "title_text": "AXEGRINDER3",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "terror",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.95,
+  "monster": 0.0,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences only.",
+  "description": "A poster shows a person walking down a dark forest path with a large, bloody axe held by an unseen figure behind them."
+}

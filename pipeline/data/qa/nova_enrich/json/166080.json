@@ -1,0 +1,45 @@
+{
+  "title_text": "BLOOD PREDATOR",
+  "credits_text": "A PAUL GAGNEY FILM\nMERCY SIMKINS DILL DEVLIN DAVIE ASPERGREN JACKIE FREED MARK IRVINGSTON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WIDESCREEN\nTHEY SURVIVED THE CRASH... BUT WILL THEY SURVIVE THE NIGHT?",
+  "mood": [
+    "dread",
+    "suspense",
+    "horror",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.5,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and horror elements.",
+  "description": "A dark, eerie poster featuring a forest scene with a house and silhouettes, promoting the film 'Blood Predator.'"
+}

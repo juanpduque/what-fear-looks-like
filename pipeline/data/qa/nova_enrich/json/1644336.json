@@ -1,0 +1,46 @@
+{
+  "title_text": "ZOMBIE DEATH HORDE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"Nervenzereetzende Spannung!\" FILM TOTAL MAGAZIN, \"Internalisch\" SPLATSICK TERROR MAGAZINE, FSK ab 16 freigegeben, DIE NACHT DER ZOMBIES..., DVD VIDEO",
+  "mood": [
+    "horror",
+    "apocalyptic",
+    "survival",
+    "tense",
+    "chaotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "crowd",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore typical of zombie horror genre.",
+  "description": "A man and woman stand back-to-back with weapons amidst a horde of zombies, with fiery explosions in the background."
+}

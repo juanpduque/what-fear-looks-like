@@ -1,0 +1,39 @@
+{
+  "title_text": "午夜微博",
+  "credits_text": "MIDNIGHT MICROBLOG",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "一天一小时 13Π3Π8Π19",
+  "mood": [
+    "mystery",
+    "suspense",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring a grid of intense facial expressions with the title \"午午微博\" and additional text in English and Chinese."
+}

@@ -1,0 +1,38 @@
+{
+  "title_text": "KOREATOWN GHOST STORY",
+  "credits_text": "MARGARET CHO LYRICA OKANO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WELCOME TO THE FAMILY",
+  "mood": [
+    "gothic",
+    "haunting",
+    "mysterious",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.3
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows two figures in traditional Korean attire framed within a dark, ornate border, with a dripping red stain resembling blood."
+}

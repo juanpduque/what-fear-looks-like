@@ -1,0 +1,40 @@
+{
+  "title_text": "AMITYVILLE",
+  "credits_text": "A NEW GENERATION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "supernatural",
+    "haunting",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.95
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "occult",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and supernatural themes.",
+  "description": "A poster shows a haunted house with a glowing, eerie portal in the foreground and the title 'Amityville: A New Generation' prominently displayed."
+}

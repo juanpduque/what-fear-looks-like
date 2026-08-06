@@ -1,0 +1,43 @@
+{
+  "title_text": "BLOODRAPE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dark",
+    "disturbing",
+    "violent",
+    "gothic",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.7,
+  "sensitive": [
+    "violence",
+    "sexual",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic sexual and violent imagery.",
+  "description": "A black and white poster featuring a distressed woman with long hair and the bold, dripping text 'BLOODRAPE' above her."
+}

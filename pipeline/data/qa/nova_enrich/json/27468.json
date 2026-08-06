@@ -1,0 +1,46 @@
+{
+  "title_text": "Chris Watson's ZOMBIE GEDDON",
+  "credits_text": "Featuring: Ron Jeremy, LL Cool J, Writer: Linnea Quigley, Lilith Steans, Julie Strain and Lloyd Kaufman. Starring: Brinke Stevens, Tom Savini, Robert Z'Dar, William Smith, Felissa Rose, Joe Estevez, Conrad Brooks, Edwin Neal.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Loyd Kaufman and Michael Herz Present a TROMAT TEAM Release. 32 YEARS OF TRASH! The Troma Team.",
+  "mood": [
+    "horror",
+    "camp",
+    "action",
+    "apocalypse",
+    "zombie"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "explosion",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild violence and gore, typical for horror genre.",
+  "description": "Poster features a chaotic crowd with zombies and explosions, highlighting actors and promotional text for a horror film."
+}

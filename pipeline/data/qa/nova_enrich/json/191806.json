@@ -1,0 +1,46 @@
+{
+  "title_text": "Allando Terror",
+  "credits_text": "HUGO STIGLITZ ROBERTO BALLESTEROS CARLOS EAST SERGIO JIMENEZ EDNA BOLKAN RAUL REX",
+  "languages": [
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "adventure",
+    "horror",
+    "fantasy",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.1,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "sexual",
+    "violence"
+  ],
+  "moderation_notes": "Contains mild sexual suggestiveness and implied violence.",
+  "description": "Vibrant poster features a muscular man and a woman amidst jungle scenery with monstrous creatures and fiery elements."
+}

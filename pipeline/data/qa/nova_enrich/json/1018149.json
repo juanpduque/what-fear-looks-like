@@ -1,0 +1,39 @@
+{
+  "title_text": "DRACULA in the Movies",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE CINEMA'S GREATEST BLOOD SUCKERS... A HALF-CENTURY OF HORROR HIGHLIGHTS FROM ALL YOUR FAVORITE VAMPIRE FILMS TRAPPED FANTASTIC",
+  "mood": [
+    "gothic",
+    "dread",
+    "camp",
+    "classic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster features classic vampire imagery with four men and a coffin, promoting a compilation of Dracula films."
+}

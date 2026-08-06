@@ -1,0 +1,46 @@
+{
+  "title_text": "RESIDENT EVIL: APOCALYPSE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "horror",
+    "apocalyptic",
+    "intense",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.6,
+  "blood_gore": 0.5,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains intense action and horror elements, including violent scenes and monstrous creatures.",
+  "description": "A woman in tactical gear stands ready with weapons amidst a zombie apocalypse, with a menacing skull and cityscape in the background."
+}

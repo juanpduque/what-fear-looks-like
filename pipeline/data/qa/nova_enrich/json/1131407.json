@@ -1,0 +1,38 @@
+{
+  "title_text": "",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE BUREAU OF NORMALCY HAS ISSUED AN EMERGENCY STAY AT HOME ORDER FOLLOWING REPORTS OF A LEVEL FOUR ANOMALY IN YOUR AREA. PLEASE REMAIN CALM AS YOU FIND A SAFE SPACE WITHIN YOUR HOME THAT IS NOT VISIBLE FROM ANY WINDOWS. IN THE BASEMENT STAY SAFE. IGNORE THE SCREAMS REFRAIN FROM EXITING YOUR HOME OR OFFERING AID TO ANYONE OUTSIDE OF YOUR DOMICILE AS THEY MAY BE AN ASPECT OF THE ANOMALY AT LARGE. A RESPONSE TEAM HAS BEEN DISPATCHED TO CONTAIN THE ABERRATION. YOU WILL BE NOTIFIED ONCE THE SITUATION HAS BEEN RESOLVED.",
+  "mood": [
+    "anxious",
+    "paranoid",
+    "suspenseful",
+    "dystopian"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 1.0
+    },
+    {
+      "name": "anxiety",
+      "conf": 0.9
+    },
+    {
+      "name": "danger",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A text-based poster detailing an emergency stay-at-home order due to a level four anomaly, urging calm and safety within the home."
+}

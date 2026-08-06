@@ -1,0 +1,41 @@
+{
+  "title_text": "NUMERUS DUO",
+  "credits_text": "SOMETHING UNHOLY IS BREWING.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "haunting",
+    "dark",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.6,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and suggestive weapon design.",
+  "description": "A dark poster features a large ornate dagger in a shadowy setting with red lighting and the tagline 'Something Unholy is Brewing.'"
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "IN SEARCH OF DARKNESS II",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Reeves",
+  "mood": [
+    "horror",
+    "gothic",
+    "supernatural",
+    "dread",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains horror elements and occult imagery.",
+  "description": "A poster featuring a skull-faced figure reaching out, surrounded by eerie, supernatural imagery and text overlays."
+}

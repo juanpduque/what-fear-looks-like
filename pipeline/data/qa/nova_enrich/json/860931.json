@@ -1,0 +1,46 @@
+{
+  "title_text": "CHOP CHOP... YOU'RE DEAD",
+  "credits_text": "Starring Mary Kate & Ashley, Robert Niko, Billy Bob Thornton, Kate Hudson, Directed by Brian Clement",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SHE'S AN UNSTOPPABLE HOMICIDAL, MURDER-MACHINE ON A BLOOD-SOAKED, KILL-CRAZY RAMPAGE! SHE KILLS! SHE DISMEMBER(S)! Mary-Kate & Ashley IS THE HATCHER IN...",
+  "mood": [
+    "horror",
+    "camp",
+    "violent",
+    "thriller",
+    "slasher"
+  ],
+  "fear_labels": [
+    {
+      "name": "axe",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.95,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intended for mature audiences.",
+  "description": "A poster features a screaming woman holding an axe with text describing a violent rampage and cast details."
+}

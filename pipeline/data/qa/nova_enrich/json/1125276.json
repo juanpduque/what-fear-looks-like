@@ -1,0 +1,38 @@
+{
+  "title_text": "パンチャック 16",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "このフィルムは、人さんの心に、とかなれるけど、とかなれないけど。",
+  "mood": [
+    "eerie",
+    "haunting",
+    "mysterious",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster shows two shadowy figures sitting against a tiled wall with Japanese text overlay, evoking a haunting and eerie atmosphere."
+}

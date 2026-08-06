@@ -1,0 +1,38 @@
+{
+  "title_text": "COMPULSION",
+  "credits_text": "FROM THE DIRECTOR OF THE DESCENT\nA FILM BY NEIL MARSHALL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DESIRE IS A DANGEROUS GAME",
+  "mood": [
+    "erotic",
+    "psychological",
+    "thriller",
+    "intimate",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "knife",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.7,
+  "sensitive": [
+    "sexual",
+    "violence"
+  ],
+  "moderation_notes": "Contains implied sexual content and mild violence.",
+  "description": "Poster features two women kissing with a knife between them, and a silhouette of a woman holding a weapon in the background."
+}

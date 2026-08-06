@@ -1,0 +1,46 @@
+{
+  "title_text": "VAMPERIFICA",
+  "credits_text": "MARTIN YURKOVIC DREAMA WALKER JEFF WARD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE VAMPIRE KING HAS RETURNED",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "surreal",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A man with fangs and sunglasses stands over a battlefield of corpses, with a tagline about a vampire king returning."
+}

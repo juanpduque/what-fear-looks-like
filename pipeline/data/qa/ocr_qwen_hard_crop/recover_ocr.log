@@ -1,0 +1,243 @@
+--- OCR qwen -> qwen2b-crop ---
+sample n=12 → data/qa/ocr_qwen_hard_crop/sample_ids.txt
+posters_dir=data/qa/ocr_qwen_hard_crop/crops
+result_model alias: qwen → qwen2b-crop
+     id                                            title  year
+  10283 Friday the 13th Part VIII: Jason Takes Manhattan  1989
+  26921                  The Mystery of the Mary Celeste  1935
+  28265                              Lovesick: Sick Love  2004
+  77399                           Incense for the Damned  1971
+ 233194                                    8 Butterflies  2010
+ 286452                                    Varsity Blood  2014
+ 653537                                         Whispers  2019
+ 940187                                   THE INQUISTION  2019
+1015482                              Kiss of the Serpent  1988
+1405670                                          xOxExFx  2024
+1483743                               up here, disappear  2025
+1578643                                        Cymophane  2024
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+device=cuda
+
+=== model=qwen result_model=qwen2b-crop device=cuda n=12 posters=data/qa/ocr_qwen_hard_crop/crops ===
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files:  50%|█████     | 1/2 [00:04<00:04,  4.41s/it]Fetching 2 files: 100%|██████████| 2/2 [00:35<00:00, 19.97s/it]Fetching 2 files: 100%|██████████| 2/2 [00:35<00:00, 17.63s/it]
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   5%|▌         | 40/729 [00:00<00:01, 360.91it/s]Loading weights:  14%|█▎        | 100/729 [00:00<00:01, 492.55it/s]Loading weights:  22%|██▏       | 158/729 [00:00<00:01, 512.80it/s]Loading weights:  30%|██▉       | 218/729 [00:00<00:00, 542.29it/s]Loading weights:  38%|███▊      | 277/729 [00:00<00:00, 547.70it/s]Loading weights:  46%|████▌     | 332/729 [00:00<00:00, 542.92it/s]Loading weights:  60%|██████    | 440/729 [00:00<00:00, 712.86it/s]Loading weights:  74%|███████▍  | 542/729 [00:00<00:00, 795.00it/s]Loading weights:  88%|████████▊ | 644/729 [00:00<00:00, 861.45it/s]Loading weights: 100%|██████████| 729/729 [00:01<00:00, 715.20it/s]
+  qwen loaded: Qwen/Qwen2-VL-2B-Instruct mode=bf16
+  id=10283 status=ok chars=37 overlap=0.75 3.786s
+  id=26921 status=ok chars=31 overlap=1.0 1.569s
+  id=28265 status=ok chars=19 overlap=0.6667 1.759s
+  id=77399 status=ok chars=13 overlap=0.0 3.899s
+  id=233194 status=ok chars=25 overlap=0.0 0.701s
+  id=286452 status=ok chars=12 overlap=0.5 1.743s
+  id=653537 status=ok chars=6 overlap=0.0 13.671s
+  id=940187 status=ok chars=53 overlap=0.0 1.009s
+  id=1015482 status=ok chars=22 overlap=0.0 2.169s
+  id=1405670 status=ok chars=22 overlap=0.0 0.401s
+  id=1483743 status=ok chars=18 overlap=0.0 0.926s
+  id=1578643 status=ok chars=24 overlap=0.0 1.156s
+
+LISTO → data/qa/ocr_qwen_hard_crop/results.csv (12 rows)
+exit=0
+Completed 43.3 KiB/48.5 KiB (1.0 MiB/s) with 17 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/ocr_qwen_hard_crop_aws.log to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/ocr_qwen_hard_crop_aws.log
+Completed 43.3 KiB/48.5 KiB (1.0 MiB/s) with 16 file(s) remainingCompleted 43.4 KiB/48.5 KiB (664.6 KiB/s) with 16 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen2b-crop/653537.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen2b-crop/653537.txt
+Completed 43.4 KiB/48.5 KiB (664.6 KiB/s) with 15 file(s) remainingCompleted 43.4 KiB/48.5 KiB (470.3 KiB/s) with 15 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen2b-crop/77399.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen2b-crop/77399.txt
+Completed 43.4 KiB/48.5 KiB (470.3 KiB/s) with 14 file(s) remainingCompleted 43.4 KiB/48.5 KiB (369.7 KiB/s) with 14 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen2b-crop/940187.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen2b-crop/940187.txt
+Completed 43.4 KiB/48.5 KiB (369.7 KiB/s) with 13 file(s) remainingCompleted 46.8 KiB/48.5 KiB (324.8 KiB/s) with 13 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/recover_ocr.log to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/recover_ocr.log
+Completed 46.8 KiB/48.5 KiB (324.8 KiB/s) with 12 file(s) remainingCompleted 47.9 KiB/48.5 KiB (277.5 KiB/s) with 12 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/results.csv to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/results.csv
+Completed 47.9 KiB/48.5 KiB (277.5 KiB/s) with 11 file(s) remainingCompleted 47.9 KiB/48.5 KiB (246.6 KiB/s) with 11 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/sample_ids.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/sample_ids.txt
+Completed 47.9 KiB/48.5 KiB (246.6 KiB/s) with 10 file(s) remainingCompleted 48.3 KiB/48.5 KiB (219.6 KiB/s) with 10 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/sample_meta.csv to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/sample_meta.csv
+Completed 48.3 KiB/48.5 KiB (219.6 KiB/s) with 9 file(s) remainingCompleted 48.3 KiB/48.5 KiB (167.6 KiB/s) with 9 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen2b-crop/233194.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen2b-crop/233194.txt
+Completed 48.3 KiB/48.5 KiB (167.6 KiB/s) with 8 file(s) remainingCompleted 48.4 KiB/48.5 KiB (160.9 KiB/s) with 8 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen2b-crop/1483743.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen2b-crop/1483743.txt
+Completed 48.4 KiB/48.5 KiB (160.9 KiB/s) with 7 file(s) remainingCompleted 48.4 KiB/48.5 KiB (160.0 KiB/s) with 7 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen2b-crop/28265.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen2b-crop/28265.txt
+Completed 48.4 KiB/48.5 KiB (160.0 KiB/s) with 6 file(s) remainingCompleted 48.4 KiB/48.5 KiB (159.8 KiB/s) with 6 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen2b-crop/1578643.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen2b-crop/1578643.txt
+Completed 48.4 KiB/48.5 KiB (159.8 KiB/s) with 5 file(s) remainingCompleted 48.4 KiB/48.5 KiB (157.5 KiB/s) with 5 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen2b-crop/286452.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen2b-crop/286452.txt
+Completed 48.4 KiB/48.5 KiB (157.5 KiB/s) with 4 file(s) remainingCompleted 48.4 KiB/48.5 KiB (157.4 KiB/s) with 4 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen2b-crop/26921.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen2b-crop/26921.txt
+Completed 48.4 KiB/48.5 KiB (157.4 KiB/s) with 3 file(s) remainingCompleted 48.5 KiB/48.5 KiB (156.8 KiB/s) with 3 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen2b-crop/1405670.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen2b-crop/1405670.txt
+Completed 48.5 KiB/48.5 KiB (156.8 KiB/s) with 2 file(s) remainingCompleted 48.5 KiB/48.5 KiB (155.4 KiB/s) with 2 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen2b-crop/10283.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen2b-crop/10283.txt
+Completed 48.5 KiB/48.5 KiB (155.4 KiB/s) with 1 file(s) remainingCompleted 48.5 KiB/48.5 KiB (155.2 KiB/s) with 1 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen2b-crop/1015482.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen2b-crop/1015482.txt
+--- clear HF cache before 7B ---
+--- OCR qwen7 -> qwen7b-crop ---
+sample n=12 → data/qa/ocr_qwen_hard_crop/sample_ids.txt
+posters_dir=data/qa/ocr_qwen_hard_crop/crops
+result_model alias: qwen7 → qwen7b-crop
+     id                                            title  year
+  10283 Friday the 13th Part VIII: Jason Takes Manhattan  1989
+  26921                  The Mystery of the Mary Celeste  1935
+  28265                              Lovesick: Sick Love  2004
+  77399                           Incense for the Damned  1971
+ 233194                                    8 Butterflies  2010
+ 286452                                    Varsity Blood  2014
+ 653537                                         Whispers  2019
+ 940187                                   THE INQUISTION  2019
+1015482                              Kiss of the Serpent  1988
+1405670                                          xOxExFx  2024
+1483743                               up here, disappear  2025
+1578643                                        Cymophane  2024
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+device=cuda
+append-results: kept 12 rows for models outside ['qwen7b-crop']
+
+=== model=qwen7 result_model=qwen7b-crop device=cuda n=12 posters=data/qa/ocr_qwen_hard_crop/crops ===
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files:  20%|██        | 1/5 [00:20<01:20, 20.03s/it]Completed 9.5 KiB/10.0 KiB (348.6 KiB/s) with 3 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/recover_ocr.log to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/recover_ocr.log
+Completed 9.5 KiB/10.0 KiB (348.6 KiB/s) with 2 file(s) remainingCompleted 9.6 KiB/10.0 KiB (49.9 KiB/s) with 2 file(s) remaining upload: data/qa/ocr_qwen_hard_crop/sample_ids.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/sample_ids.txt
+Completed 9.6 KiB/10.0 KiB (49.9 KiB/s) with 1 file(s) remainingCompleted 10.0 KiB/10.0 KiB (49.9 KiB/s) with 1 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/sample_meta.csv to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/sample_meta.csv
+Fetching 5 files:  40%|████      | 2/5 [01:58<03:17, 65.95s/it]Fetching 5 files:  60%|██████    | 3/5 [02:01<01:14, 37.18s/it]Fetching 5 files:  80%|████████  | 4/5 [02:07<00:25, 25.21s/it]Fetching 5 files: 100%|██████████| 5/5 [02:08<00:00, 16.29s/it]Fetching 5 files: 100%|██████████| 5/5 [02:08<00:00, 25.68s/it]
+Loading weights:   0%|          | 0/730 [00:00<?, ?it/s]Loading weights:   0%|          | 1/730 [00:07<1:33:57,  7.73s/it]Loading weights:   0%|          | 2/730 [00:15<1:36:25,  7.95s/it]Loading weights:   1%|          | 4/730 [00:16<37:23,  3.09s/it]  Loading weights:   1%|▏         | 10/730 [00:16<10:13,  1.17it/s]Loading weights:   2%|▏         | 16/730 [00:16<05:04,  2.34it/s]Loading weights:   3%|▎         | 20/730 [00:18<05:16,  2.24it/s]Loading weights:   3%|▎         | 23/730 [00:18<04:06,  2.86it/s]Loading weights:   4%|▎         | 26/730 [00:18<03:13,  3.64it/s]Loading weights:   4%|▍         | 28/730 [00:19<03:47,  3.08it/s]Loading weights:   4%|▍         | 30/730 [00:21<05:38,  2.07it/s]Loading weights:   5%|▍         | 34/730 [00:22<03:39,  3.18it/s]Loading weights:   5%|▍         | 36/730 [00:22<03:03,  3.78it/s]Loading weights:   6%|▌         | 42/730 [00:22<01:41,  6.78it/s]Loading weights:   6%|▋         | 46/730 [00:22<01:15,  9.05it/s]Loading weights:   7%|▋         | 49/730 [00:22<01:07, 10.02it/s]Loading weights:   7%|▋         | 52/730 [00:23<01:55,  5.88it/s]Completed 11.7 KiB/11.7 KiB (376.8 KiB/s) with 1 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/recover_ocr.log to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/recover_ocr.log
+Loading weights:   7%|▋         | 54/730 [00:25<03:55,  2.88it/s]Loading weights:   8%|▊         | 58/730 [00:26<02:41,  4.15it/s]Loading weights:   8%|▊         | 60/730 [00:26<02:21,  4.73it/s]Loading weights:   9%|▉         | 64/730 [00:27<02:34,  4.32it/s]Loading weights:   9%|▉         | 65/730 [00:28<03:32,  3.12it/s]Loading weights:   9%|▉         | 66/730 [00:29<04:28,  2.47it/s]Loading weights:  10%|▉         | 70/730 [00:29<02:43,  4.05it/s]Loading weights:  10%|▉         | 72/730 [00:29<02:18,  4.74it/s]Loading weights:  10%|█         | 76/730 [00:30<02:21,  4.61it/s]Loading weights:  11%|█         | 77/730 [00:31<03:27,  3.14it/s]Loading weights:  11%|█         | 78/730 [00:32<04:39,  2.33it/s]Loading weights:  11%|█         | 82/730 [00:32<02:44,  3.94it/s]Loading weights:  12%|█▏        | 84/730 [00:33<02:18,  4.66it/s]Loading weights:  12%|█▏        | 88/730 [00:34<02:31,  4.23it/s]Loading weights:  12%|█▏        | 89/730 [00:35<03:35,  2.97it/s]Loading weights:  12%|█▏        | 90/730 [00:36<04:45,  2.24it/s]Loading weights:  13%|█▎        | 94/730 [00:36<02:46,  3.83it/s]Loading weights:  13%|█▎        | 96/730 [00:36<02:18,  4.57it/s]Loading weights:  14%|█▎        | 100/730 [00:37<02:30,  4.19it/s]Loading weights:  14%|█▍        | 101/730 [00:38<03:35,  2.92it/s]Loading weights:  14%|█▍        | 102/730 [00:39<04:38,  2.26it/s]Loading weights:  15%|█▍        | 106/730 [00:39<02:42,  3.85it/s]Loading weights:  15%|█▍        | 108/730 [00:40<02:16,  4.57it/s]Loading weights:  15%|█▌        | 112/730 [00:41<02:26,  4.22it/s]Loading weights:  15%|█▌        | 113/730 [00:42<03:29,  2.94it/s]Loading weights:  16%|█▌        | 114/730 [00:43<04:36,  2.23it/s]Loading weights:  16%|█▌        | 118/730 [00:43<02:33,  3.98it/s]Loading weights:  16%|█▋        | 120/730 [00:43<02:08,  4.75it/s]Loading weights:  17%|█▋        | 124/730 [00:44<02:21,  4.28it/s]Loading weights:  17%|█▋        | 125/730 [00:45<03:24,  2.96it/s]Loading weights:  17%|█▋        | 126/730 [00:46<04:30,  2.24it/s]Loading weights:  18%|█▊        | 130/730 [00:46<02:36,  3.83it/s]Loading weights:  18%|█▊        | 132/730 [00:47<02:11,  4.55it/s]Loading weights:  19%|█▊        | 136/730 [00:48<02:22,  4.17it/s]Loading weights:  19%|█▉        | 137/730 [00:49<03:23,  2.92it/s]Loading weights:  19%|█▉        | 138/730 [00:50<04:27,  2.22it/s]Loading weights:  20%|█▉        | 144/730 [00:50<01:58,  4.93it/s]Loading weights:  20%|██        | 148/730 [00:51<02:09,  4.49it/s]Loading weights:  21%|██        | 150/730 [00:52<02:45,  3.51it/s]Loading weights:  22%|██▏       | 161/730 [00:53<01:35,  5.96it/s]Loading weights:  22%|██▏       | 163/730 [00:54<02:02,  4.63it/s]Loading weights:  23%|██▎       | 166/730 [00:54<01:43,  5.45it/s]Loading weights:  23%|██▎       | 168/730 [00:54<01:34,  5.94it/s]Loading weights:  24%|██▎       | 172/730 [00:55<01:52,  4.97it/s]Loading weights:  24%|██▎       | 173/730 [00:57<02:41,  3.44it/s]Loading weights:  24%|██▍       | 174/730 [00:58<03:36,  2.57it/s]Loading weights:  24%|██▍       | 178/730 [00:58<02:15,  4.08it/s]Loading weights:  25%|██▍       | 180/730 [00:58<01:55,  4.75it/s]Loading weights:  25%|██▌       | 184/730 [00:59<02:07,  4.29it/s]Loading weights:  25%|██▌       | 185/730 [01:00<03:01,  3.00it/s]Loading weights:  25%|██▌       | 186/730 [01:01<03:59,  2.27it/s]Loading weights:  26%|██▌       | 190/730 [01:01<02:21,  3.83it/s]Loading weights:  26%|██▋       | 192/730 [01:02<01:58,  4.53it/s]Loading weights:  27%|██▋       | 196/730 [01:03<02:07,  4.18it/s]Loading weights:  27%|██▋       | 197/730 [01:04<03:02,  2.92it/s]Loading weights:  27%|██▋       | 198/730 [01:05<04:00,  2.22it/s]Loading weights:  28%|██▊       | 202/730 [01:05<02:19,  3.78it/s]Loading weights:  28%|██▊       | 204/730 [01:05<01:57,  4.49it/s]Loading weights:  28%|██▊       | 208/730 [01:06<02:05,  4.15it/s]Loading weights:  29%|██▊       | 209/730 [01:07<02:59,  2.91it/s]Loading weights:  29%|██▉       | 210/730 [01:08<03:55,  2.21it/s]Loading weights:  29%|██▉       | 214/730 [01:08<02:16,  3.78it/s]Loading weights:  30%|██▉       | 216/730 [01:09<01:54,  4.49it/s]Loading weights:  30%|███       | 220/730 [01:10<02:02,  4.15it/s]Loading weights:  30%|███       | 221/730 [01:11<02:55,  2.91it/s]Loading weights:  30%|███       | 222/730 [01:12<03:49,  2.21it/s]Loading weights:  31%|███       | 226/730 [01:12<02:13,  3.78it/s]Loading weights:  31%|███       | 228/730 [01:12<01:51,  4.49it/s]Loading weights:  32%|███▏      | 232/730 [01:13<02:00,  4.15it/s]Loading weights:  32%|███▏      | 233/730 [01:14<02:51,  2.90it/s]Loading weights:  32%|███▏      | 234/730 [01:15<03:44,  2.21it/s]Loading weights:  33%|███▎      | 238/730 [01:16<02:10,  3.77it/s]Loading weights:  33%|███▎      | 240/730 [01:16<01:49,  4.49it/s]Loading weights:  33%|███▎      | 244/730 [01:17<01:56,  4.16it/s]Loading weights:  34%|███▎      | 245/730 [01:18<02:46,  2.91it/s]Loading weights:  34%|███▎      | 246/730 [01:19<03:38,  2.21it/s]Loading weights:  34%|███▍      | 250/730 [01:19<02:07,  3.78it/s]Loading weights:  35%|███▍      | 252/730 [01:19<01:46,  4.49it/s]Loading weights:  35%|███▌      | 256/730 [01:20<01:54,  4.15it/s]Loading weights:  35%|███▌      | 257/730 [01:21<02:42,  2.90it/s]Loading weights:  35%|███▌      | 258/730 [01:22<03:33,  2.21it/s]Loading weights:  36%|███▌      | 262/730 [01:23<02:03,  3.78it/s]Loading weights:  36%|███▌      | 264/730 [01:23<01:43,  4.49it/s]Loading weights:  37%|███▋      | 268/730 [01:24<01:51,  4.15it/s]Loading weights:  37%|███▋      | 269/730 [01:25<02:38,  2.91it/s]Loading weights:  37%|███▋      | 270/730 [01:26<03:28,  2.21it/s]Loading weights:  38%|███▊      | 274/730 [01:26<02:00,  3.78it/s]Loading weights:  38%|███▊      | 276/730 [01:26<01:41,  4.49it/s]Loading weights:  38%|███▊      | 280/730 [01:27<01:48,  4.15it/s]Loading weights:  38%|███▊      | 281/730 [01:28<02:34,  2.91it/s]Loading weights:  39%|███▊      | 282/730 [01:30<03:22,  2.21it/s]Loading weights:  39%|███▉      | 286/730 [01:30<01:57,  3.78it/s]Loading weights:  39%|███▉      | 288/730 [01:30<01:38,  4.49it/s]Loading weights:  40%|████      | 292/730 [01:31<01:45,  4.15it/s]Loading weights:  40%|████      | 293/730 [01:32<02:30,  2.91it/s]Loading weights:  40%|████      | 294/730 [01:33<03:17,  2.21it/s]Loading weights:  41%|████      | 298/730 [01:33<01:54,  3.78it/s]Loading weights:  41%|████      | 300/730 [01:33<01:35,  4.49it/s]Loading weights:  42%|████▏     | 304/730 [01:35<01:42,  4.15it/s]Loading weights:  42%|████▏     | 305/730 [01:36<02:27,  2.89it/s]Loading weights:  42%|████▏     | 306/730 [01:37<03:12,  2.20it/s]Loading weights:  42%|████▏     | 310/730 [01:37<01:51,  3.76it/s]Loading weights:  43%|████▎     | 312/730 [01:37<01:33,  4.48it/s]Loading weights:  43%|████▎     | 316/730 [01:38<01:39,  4.15it/s]Loading weights:  43%|████▎     | 317/730 [01:39<02:22,  2.90it/s]Loading weights:  44%|████▎     | 318/730 [01:40<03:06,  2.21it/s]Loading weights:  44%|████▍     | 322/730 [01:40<01:48,  3.77it/s]Loading weights:  44%|████▍     | 324/730 [01:41<01:30,  4.49it/s]Loading weights:  45%|████▍     | 328/730 [01:42<01:36,  4.15it/s]Loading weights:  45%|████▌     | 329/730 [01:43<02:18,  2.91it/s]Loading weights:  45%|████▌     | 330/730 [01:44<03:00,  2.21it/s]Loading weights:  46%|████▌     | 334/730 [01:44<01:44,  3.78it/s]Loading weights:  46%|████▌     | 336/730 [01:44<01:27,  4.49it/s]Loading weights:  47%|████▋     | 343/730 [01:44<00:42,  9.20it/s]Loading weights:  47%|████▋     | 346/730 [01:44<00:34, 11.17it/s]Loading weights:  48%|████▊     | 349/730 [01:44<00:28, 13.42it/s]Loading weights:  49%|████▉     | 357/730 [01:45<00:18, 20.19it/s]Loading weights:  49%|████▉     | 361/730 [01:45<00:15, 23.23it/s]Loading weights:  50%|█████     | 367/730 [01:45<00:12, 29.62it/s]Loading weights:  51%|█████     | 372/730 [01:45<00:12, 28.06it/s]Loading weights:  52%|█████▏    | 379/730 [01:45<00:09, 35.96it/s]Loading weights:  53%|█████▎    | 384/730 [01:45<00:10, 32.07it/s]Loading weights:  54%|█████▎    | 391/730 [01:45<00:08, 39.51it/s]Loading weights:  54%|█████▍    | 396/730 [01:46<00:09, 34.19it/s]Loading weights:  55%|█████▌    | 403/730 [01:46<00:07, 41.50it/s]Loading weights:  56%|█████▌    | 408/730 [01:46<00:09, 35.37it/s]Loading weights:  57%|█████▋    | 417/730 [01:46<00:08, 38.73it/s]Loading weights:  58%|█████▊    | 422/730 [01:46<00:07, 40.94it/s]Loading weights:  59%|█████▉    | 429/730 [01:46<00:07, 38.84it/s]Loading weights:  59%|█████▉    | 434/730 [01:47<00:07, 41.12it/s]Loading weights:  60%|██████    | 441/730 [01:47<00:07, 38.93it/s]Loading weights:  61%|██████    | 446/730 [01:47<00:06, 41.19it/s]Loading weights:  62%|██████▏   | 453/730 [01:47<00:07, 38.95it/s]Loading weights:  63%|██████▎   | 458/730 [01:47<00:06, 41.25it/s]Loading weights:  64%|██████▎   | 465/730 [01:47<00:06, 38.97it/s]Loading weights:  64%|██████▍   | 470/730 [01:47<00:06, 41.29it/s]Loading weights:  65%|██████▌   | 477/730 [01:48<00:06, 38.95it/s]Loading weights:  66%|██████▌   | 482/730 [01:48<00:06, 41.13it/s]Loading weights:  67%|██████▋   | 489/730 [01:48<00:06, 38.88it/s]Loading weights:  68%|██████▊   | 494/730 [01:48<00:05, 41.20it/s]Loading weights:  68%|██████▊   | 499/730 [01:48<00:05, 43.22it/s]Loading weights:  69%|██████▉   | 504/730 [01:48<00:06, 35.95it/s]Loading weights:  70%|███████   | 513/730 [01:49<00:05, 39.29it/s]Loading weights:  71%|███████   | 518/730 [01:49<00:05, 41.46it/s]Loading weights:  72%|███████▏  | 525/730 [01:49<00:05, 39.11it/s]Loading weights:  73%|███████▎  | 530/730 [01:49<00:04, 41.38it/s]Loading weights:  74%|███████▎  | 537/730 [01:49<00:04, 39.03it/s]Loading weights:  74%|███████▍  | 542/730 [01:49<00:04, 41.30it/s]Loading weights:  75%|███████▌  | 549/730 [01:49<00:04, 39.00it/s]Loading weights:  76%|███████▌  | 554/730 [01:50<00:04, 41.30it/s]Loading weights:  77%|███████▋  | 561/730 [01:50<00:04, 38.93it/s]Loading weights:  78%|███████▊  | 567/730 [01:50<00:03, 43.39it/s]Loading weights:  78%|███████▊  | 572/730 [01:50<00:03, 44.92it/s]Loading weights:  79%|███████▉  | 577/730 [01:50<00:04, 37.18it/s]Loading weights:  80%|████████  | 585/730 [01:50<00:03, 38.29it/s]Loading weights:  81%|████████  | 590/730 [01:50<00:03, 40.69it/s]Loading weights:  82%|████████▏ | 597/730 [01:51<00:03, 38.49it/s]Loading weights:  82%|████████▏ | 602/730 [01:51<00:03, 40.84it/s]Loading weights:  83%|████████▎ | 609/730 [01:51<00:03, 38.75it/s]Loading weights:  84%|████████▍ | 614/730 [01:51<00:02, 41.10it/s]Loading weights:  85%|████████▌ | 621/730 [01:51<00:02, 38.87it/s]Loading weights:  86%|████████▌ | 626/730 [01:51<00:02, 41.20it/s]Loading weights:  87%|████████▋ | 633/730 [01:52<00:02, 38.91it/s]Loading weights:  87%|████████▋ | 638/730 [01:52<00:02, 41.25it/s]Loading weights:  88%|████████▊ | 645/730 [01:52<00:02, 38.95it/s]Loading weights:  89%|████████▉ | 650/730 [01:52<00:01, 41.27it/s]Loading weights:  90%|████████▉ | 656/730 [01:52<00:01, 45.56it/s]Loading weights:  91%|█████████ | 661/730 [01:52<00:01, 37.31it/s]Loading weights:  92%|█████████▏| 669/730 [01:52<00:01, 38.31it/s]Loading weights:  92%|█████████▏| 674/730 [01:53<00:01, 40.71it/s]Loading weights:  93%|█████████▎| 681/730 [01:53<00:01, 38.63it/s]Loading weights:  94%|█████████▍| 686/730 [01:53<00:01, 41.01it/s]Loading weights:  95%|█████████▍| 693/730 [01:53<00:00, 38.79it/s]Loading weights:  96%|█████████▌| 701/730 [01:53<00:00, 45.47it/s]Loading weights:  97%|█████████▋| 706/730 [01:53<00:00, 39.83it/s]Loading weights:  98%|█████████▊| 712/730 [01:53<00:00, 44.17it/s]Loading weights:  98%|█████████▊| 717/730 [01:54<00:00, 36.95it/s]Loading weights: 100%|█████████▉| 727/730 [01:54<00:00, 27.27it/s]Loading weights: 100%|██████████| 730/730 [01:54<00:00,  6.35it/s]
+  qwen7 loaded: Qwen/Qwen2-VL-7B-Instruct mode=4bit
+  id=10283 status=ok chars=37 overlap=0.75 7.565s
+  id=26921 status=ok chars=31 overlap=1.0 3.168s
+  id=28265 status=ok chars=17 overlap=0.3333 3.539s
+  id=77399 status=ok chars=13 overlap=0.0 7.418s
+  id=233194 status=ok chars=25 overlap=0.0 1.674s
+  id=286452 status=ok chars=13 overlap=1.0 3.898s
+[W731 02:26:06.697195068 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 3871342592 bytes (free: 3437035520, total: 15637086208).
+[W731 02:26:06.803947049 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 968884224 bytes (free: 943521792, total: 15637086208).
+[W731 02:26:06.804077983 CUDACachingAllocator.cpp:3933] memory allocation failed with OOM on device 0 while trying to allocate 968884224 bytes (free: 943521792, total: 15637086208).
+  id=653537 FAIL error: CUDA out of memory. Tried to allocate 924.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 899.81 MiB is free. Process 4615 has 278.00 MiB memory in use. Including non-PyTorch memory, this process has 13.41 GiB memory in use. Of the allocated memory 13.09 GiB is allocated by PyTorch, and 195.44 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentati
+Traceback (most recent call last):
+  File "/home/ubuntu/aof/pipeline/pilot_ocr_models.py", line 944, in run_model_on_sample
+    text = runner.run(img) or ""
+           ~~~~~~~~~~^^^^^
+  File "/home/ubuntu/aof/pipeline/pilot_ocr_models.py", line 862, in run
+    out = self.model.generate(**inputs, max_new_tokens=1024, do_sample=False)
+  File "/opt/pytorch/lib/python3.13/site-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+    return func(*args, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/generation/utils.py", line 2681, in generate
+    result = decoding_method(
+        self,
+    ...<5 lines>...
+        **model_kwargs,
+    )
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/generation/utils.py", line 2881, in _sample
+    outputs = self._prefill(
+        input_ids,
+    ...<2 lines>...
+        is_first_iteration=not generation_config.is_assistant,
+    )
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/generation/utils.py", line 3961, in _prefill
+    return self(**model_inputs, return_dict=True)
+  File "/opt/pytorch/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/pytorch/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/utils/deprecation.py", line 171, in wrapped_func
+    return func(*args, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/utils/generic.py", line 911, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/models/qwen2_vl/modeling_qwen2_vl.py", line 1346, in forward
+    outputs: Qwen2VLModelOutputWithPast = self.model(
+                                          ~~~~~~~~~~^
+        input_ids=input_ids,
+        ^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/opt/pytorch/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/pytorch/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/utils/deprecation.py", line 171, in wrapped_func
+    return func(*args, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/utils/generic.py", line 911, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/models/qwen2_vl/modeling_qwen2_vl.py", line 1195, in forward
+    image_embeds = self.get_image_features(pixel_values, image_grid_thw, **kwargs).pooler_output
+                   ~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/utils/generic.py", line 965, in wrapper
+    return func(*args, **translated)
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/utils/generic.py", line 911, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/models/qwen2_vl/modeling_qwen2_vl.py", line 1069, in get_image_features
+    vision_outputs = self.visual(pixel_values, grid_thw=image_grid_thw, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/pytorch/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/utils/generic.py", line 1040, in wrapper
+    output = func(self, *args, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/utils/output_capturing.py", line 262, in wrapper
+    outputs = func(self, *args, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/models/qwen2_vl/modeling_qwen2_vl.py", line 729, in forward
+    hidden_states = blk(
+        hidden_states,
+    ...<2 lines>...
+        **kwargs,
+    )
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/modeling_layers.py", line 110, in __call__
+    return super().__call__(*args, **kwargs)
+           ~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/pytorch/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/pytorch/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/utils/deprecation.py", line 171, in wrapped_func
+    return func(*args, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/models/qwen2_vl/modeling_qwen2_vl.py", line 455, in forward
+    hidden_states = hidden_states + self.attn(
+                                    ~~~~~~~~~^
+        self.norm1(hidden_states),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )
+    ^
+  File "/opt/pytorch/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1778, in _wrapped_call_impl
+    return self._call_impl(*args, **kwargs)
+           ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/pytorch/lib/python3.13/site-packages/torch/nn/modules/module.py", line 1789, in _call_impl
+    return forward_call(*args, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/utils/deprecation.py", line 171, in wrapped_func
+    return func(*args, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/models/qwen2_vl/modeling_qwen2_vl.py", line 417, in forward
+    attention_interface(
+    ~~~~~~~~~~~~~~~~~~~^
+        self,
+        ^^^^^
+    ...<7 lines>...
+        **kwargs,
+        ^^^^^^^^^
+    )[0]
+    ^
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/integrations/sdpa_attention.py", line 154, in sdpa_attention_forward
+    attn_output = torch.nn.functional.scaled_dot_product_attention(
+        query,
+    ...<6 lines>...
+        **sdpa_kwargs,
+    )
+torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 924.00 MiB. GPU 0 has a total capacity of 14.56 GiB of which 899.81 MiB is free. Process 4615 has 278.00 MiB memory in use. Including non-PyTorch memory, this process has 13.41 GiB memory in use. Of the allocated memory 13.09 GiB is allocated by PyTorch, and 195.44 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+  id=653537 status=error: CUDA out of memory. Tried to allo chars=0 overlap=0.0 1.483s
+Completed 25 Bytes/35.9 KiB (834 Bytes/s) with 8 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen7b-crop/233194.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen7b-crop/233194.txt
+Completed 25 Bytes/35.9 KiB (834 Bytes/s) with 7 file(s) remainingCompleted 38 Bytes/35.9 KiB (145 Bytes/s) with 7 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen7b-crop/286452.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen7b-crop/286452.txt
+Completed 38 Bytes/35.9 KiB (145 Bytes/s) with 6 file(s) remainingCompleted 51 Bytes/35.9 KiB (192 Bytes/s) with 6 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen7b-crop/77399.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen7b-crop/77399.txt
+Completed 51 Bytes/35.9 KiB (192 Bytes/s) with 5 file(s) remainingCompleted 68 Bytes/35.9 KiB (255 Bytes/s) with 5 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen7b-crop/28265.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen7b-crop/28265.txt
+Completed 68 Bytes/35.9 KiB (255 Bytes/s) with 4 file(s) remainingCompleted 105 Bytes/35.9 KiB (388 Bytes/s) with 4 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen7b-crop/10283.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen7b-crop/10283.txt
+Completed 105 Bytes/35.9 KiB (388 Bytes/s) with 3 file(s) remainingCompleted 33.8 KiB/35.9 KiB (122.7 KiB/s) with 3 file(s) remaining upload: data/qa/ocr_qwen_hard_crop/recover_ocr.log to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/recover_ocr.log
+Completed 33.8 KiB/35.9 KiB (122.7 KiB/s) with 2 file(s) remainingCompleted 35.9 KiB/35.9 KiB (121.2 KiB/s) with 2 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/results.csv to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/results.csv
+Completed 35.9 KiB/35.9 KiB (121.2 KiB/s) with 1 file(s) remainingCompleted 35.9 KiB/35.9 KiB (114.9 KiB/s) with 1 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen7b-crop/26921.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen7b-crop/26921.txt
+  id=940187 status=ok chars=55 overlap=0.0 2.104s
+  id=1015482 status=ok chars=22 overlap=0.0 4.525s
+  id=1405670 status=ok chars=22 overlap=0.0 1.008s
+  id=1483743 status=ok chars=1855 overlap=0.0 91.628s
+  id=1578643 status=ok chars=34 overlap=1.0 3.085s
+
+LISTO → data/qa/ocr_qwen_hard_crop/results.csv (24 rows)
+exit=0
+Completed 22 Bytes/42.7 KiB (712 Bytes/s) with 7 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen7b-crop/1015482.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen7b-crop/1015482.txt
+Completed 22 Bytes/42.7 KiB (712 Bytes/s) with 6 file(s) remainingCompleted 56 Bytes/42.7 KiB (266 Bytes/s) with 6 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen7b-crop/1578643.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen7b-crop/1578643.txt
+Completed 56 Bytes/42.7 KiB (266 Bytes/s) with 5 file(s) remainingCompleted 78 Bytes/42.7 KiB (361 Bytes/s) with 5 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen7b-crop/1405670.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen7b-crop/1405670.txt
+Completed 78 Bytes/42.7 KiB (361 Bytes/s) with 4 file(s) remainingCompleted 1.9 KiB/42.7 KiB (8.7 KiB/s) with 4 file(s) remaining   upload: data/qa/ocr_qwen_hard_crop/qwen7b-crop/1483743.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen7b-crop/1483743.txt
+Completed 1.9 KiB/42.7 KiB (8.7 KiB/s) with 3 file(s) remainingCompleted 6.6 KiB/42.7 KiB (30.1 KiB/s) with 3 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/results.csv to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/results.csv
+Completed 6.6 KiB/42.7 KiB (30.1 KiB/s) with 2 file(s) remainingCompleted 6.7 KiB/42.7 KiB (30.1 KiB/s) with 2 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen7b-crop/940187.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen7b-crop/940187.txt
+Completed 6.7 KiB/42.7 KiB (30.1 KiB/s) with 1 file(s) remainingCompleted 42.7 KiB/42.7 KiB (191.2 KiB/s) with 1 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/recover_ocr.log to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/recover_ocr.log
+Completed 41 Bytes/41 Bytes (598 Bytes/s) with 1 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/DONE to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/DONE

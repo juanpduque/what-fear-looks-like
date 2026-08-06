@@ -1,0 +1,38 @@
+{
+  "title_text": "CADAVER",
+  "credits_text": "A FILM BY VOLKAN ÖZĞÜMÜŞ",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SOMETIMES THERE'S WORSE THAN DEATH",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "nudity",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.7,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains graphic violence and nudity.",
+  "description": "A poster shows a nude person lying on a surface with blood splatters and the title 'CADAVER' prominently displayed."
+}

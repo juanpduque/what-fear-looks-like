@@ -1,0 +1,46 @@
+{
+  "title_text": "HEADLESS EYES",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "surreal",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "eye",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "cityscape",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains graphic violence and partial nudity.",
+  "description": "A poster shows a large, detached eye with blood and wires, a woman lying unconscious, and a dark cityscape under a full moon."
+}

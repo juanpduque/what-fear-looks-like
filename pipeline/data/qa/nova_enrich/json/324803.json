@@ -1,0 +1,43 @@
+{
+  "title_text": "HANGMAN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "noose",
+      "conf": 0.95
+    },
+    {
+      "name": "knife",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a noose, suggesting themes of threat and danger.",
+  "description": "A shadowy figure stands in front of a suburban neighborhood with a noose and knife, evoking a tense and ominous atmosphere."
+}

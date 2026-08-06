@@ -1,0 +1,45 @@
+{
+  "title_text": "XXX6",
+  "credits_text": "クリムゾン・ホーク",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "「死を呼ぶ魔の書よさよ！！」",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "occult",
+    "dark",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.9
+    },
+    {
+      "name": "book",
+      "conf": 0.8
+    },
+    {
+      "name": "smoke",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and dark imagery.",
+  "description": "A poster shows an open ancient book emitting blue smoke, with Japanese text and a dramatic title."
+}

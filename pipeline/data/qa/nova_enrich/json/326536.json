@@ -1,0 +1,49 @@
+{
+  "title_text": "THE COVEN",
+  "credits_text": "PLAYTIME IS OVER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Based upon true events",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "dread",
+    "mystery",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "occult",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and potentially unsettling imagery.",
+  "description": "Poster shows four girls in dark clothing standing in a forest with a bright light above them, suggesting a supernatural or occult theme."
+}

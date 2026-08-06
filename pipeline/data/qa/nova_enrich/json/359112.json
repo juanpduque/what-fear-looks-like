@@ -1,0 +1,42 @@
+{
+  "title_text": "BELAS & CORROMPIDAS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "erotic",
+    "dramatic",
+    "mysterious",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains partial nudity and suggestive imagery.",
+  "description": "A dramatic poster features a central female figure with ornate attire, surrounded by dark, ornate elements and a skull, evoking a gothic and erotic atmosphere."
+}

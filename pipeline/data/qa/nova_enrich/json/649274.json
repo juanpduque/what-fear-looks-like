@@ -1,0 +1,39 @@
+{
+  "title_text": "王家卫的",
+  "credits_text": "",
+  "languages": [
+    "zh"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "adventure",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.95,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action sequences and depictions of large monsters.",
+  "description": "A woman in tactical gear holds a gun, facing a massive, menacing crocodile in a jungle setting with explosions and helicopters overhead."
+}

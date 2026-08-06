@@ -1,0 +1,44 @@
+{
+  "title_text": "DIE ZOMBIEJÄGER",
+  "credits_text": "",
+  "languages": [
+    "de"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "action",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "gun",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including zombies and weapons.",
+  "description": "A poster featuring a group of characters confronting a large zombie with a skull face, set against a dark background with tombstones."
+}

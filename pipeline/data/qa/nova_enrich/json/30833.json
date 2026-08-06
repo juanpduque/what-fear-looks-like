@@ -1,0 +1,41 @@
+{
+  "title_text": "DRIVE-IN MASSACRE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "violent",
+    "horror",
+    "thriller",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 1.0,
+  "violence": 1.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; may be disturbing to some viewers.",
+  "description": "A person lies on the ground covered in blood with a dramatic title overlay reading 'DRIVE-IN MASSACRE.' The scene conveys intense horror and violence."
+}

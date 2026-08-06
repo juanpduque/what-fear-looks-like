@@ -1,0 +1,41 @@
+{
+  "title_text": "OUJIA",
+  "credits_text": "A FILM BY BLAKE HERRICK",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HOPE TAYLOR",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "haunting",
+    "psychological",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "The poster features occult themes and a close-up of an eye, suggesting psychological horror.",
+  "description": "The poster shows a close-up of an eye through a circular frame, with the title 'OUJIA' and director's name below, evoking a gothic and supernatural atmosphere."
+}

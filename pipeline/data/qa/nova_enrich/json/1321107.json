@@ -1,0 +1,46 @@
+{
+  "title_text": "HISTÓRIAS ESTRANHAS",
+  "credits_text": "Demónios e Possessões",
+  "languages": [
+    "pt"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic depictions of violence and blood, suitable for mature audiences.",
+  "description": "A dark, eerie poster features multiple ghostly, monstrous figures with bloodied faces, suggesting themes of demons and possession."
+}

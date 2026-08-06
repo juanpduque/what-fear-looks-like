@@ -1,0 +1,42 @@
+{
+  "title_text": "O CREDO",
+  "credits_text": "UM FILME DE WALLYSON NASCIMENTO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A FÉ TEM SEU PREÇO",
+  "mood": [
+    "gothic",
+    "dread",
+    "intense",
+    "dark",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "cross",
+      "conf": 0.8
+    },
+    {
+      "name": "hand",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic depictions of blood and potential violence.",
+  "description": "A close-up of a blood-stained hand clutching a rosary with a crucifix, set against a dark, dimly lit background."
+}

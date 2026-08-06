@@ -1,0 +1,126 @@
+todo=38 skip_has_tt=0 skip_resume=0 headless=False
+Starting headed Chrome…
+  Chrome profile=/var/folders/f6/rpjgfk6d6rq7txczn_p3lvmc0000gn/T/aof-imdb-chrome-dpwwovvi
+  Installing/locating chromedriver…
+  Launching Chrome…
+  Chrome ready
+  1/38 MISS 1403029 'Yaksha' (2025) year_mismatch page=2010
+  2/38 MISS 1412171 'The Bombay Halloween Special' (2024) director_mismatch page=Hal Sutherland
+  3/38 MISS 1417569 'The man in the window' (2024) year_mismatch page=2026
+  4/38 MISS 1431516 'The Haunting at St. Madeline' (2024) director_mismatch page=Stephen Staley;Natasha Tosini
+  5/38 MISS 1436932 'Satellite' (2023) no_directors_on_page
+  6/38 MISS 1441969 'Alienated' (2023) no_directors_on_page
+  7/38 MISS 1452523 'Ghost Stories' (2025) year_mismatch page=2017
+  8/38 MISS 1453109 'Hotel Attack' (2025) director_mismatch page=Ryota Aikei;Yūichirō Hayashi;Tokio Igarashi
+  9/38 MISS 1457700 'Stillness Spreads' (2025) year_mismatch page=2017
+  10/38 MISS 1459933 'Unlike You' (2025) no_directors_on_page
+  11/38 MISS 1463644 'Viper Visionz' (2024) director_mismatch page=Damon Jamal
+  12/38 MISS 1468801 'A Very Blood Sick Christmas Special' (2024) director_mismatch page=Nigel Butler
+  13/38 OK 1473792 tt33083538 'Dollar Store Killers' ← Cleve E. Braddy
+  14/38 MISS 1478501 'A Visitor in the Night' (2025) year_mismatch page=1971
+  15/38 MISS 1514584 'Blood Weekend' (2025) year_mismatch page=1984
+Traceback (most recent call last):
+  File "/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/enrich_imdb_selenium_features.py", line 608, in <module>
+    main()
+  File "/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/enrich_imdb_selenium_features.py", line 574, in main
+    write_csv(HITS_OUT, hits, HIT_FIELDS)
+  File "/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/enrich_imdb_selenium_features.py", line 305, in write_csv
+    with path.open("w", newline="", encoding="utf-8") as f:
+  File "/Users/juanpabloduque/miniforge3/lib/python3.10/pathlib.py", line 1119, in open
+    return self._accessor.open(self, mode, buffering, encoding, errors,
+OSError: [Errno 28] No space left on device: '/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/imdb_selenium_features_hits.csv'
+
+==== BATCHED RESUME 20260805T230712Z ====
+todo=5 skip_has_tt=0 skip_resume=0 headless=False
+Starting headed Chrome…
+  Chrome profile=/var/folders/f6/rpjgfk6d6rq7txczn_p3lvmc0000gn/T/aof-imdb-chrome-stz5pnsn
+  Installing/locating chromedriver…
+  Launching Chrome…
+  Chrome ready
+  1/5 MISS 1463644 'Viper Visionz' (2024) director_mismatch page=Damon Jamal
+  2/5 MISS 1468801 'A Very Blood Sick Christmas Special' (2024) director_mismatch page=Nigel Butler
+  3/5 MISS 1478501 'A Visitor in the Night' (2025) year_mismatch page=1971
+  4/5 MISS 1514584 'Blood Weekend' (2025) year_mismatch page=1984
+  5/5 MISS 1519253 'Ape' (2025) year_mismatch page=1976
+
+=== SELENIUM FEATURES ===
+session_todo=5 hits_total=20 miss_total=403
+reasons={"no_year": 7, "year_mismatch": 120, "no_suggest_candidates": 89, "director_mismatch": 68, "no_tmdb_director": 93, "no_directors_on_page": 26}
+→ imdb_selenium_features_hits.csv / imdb_selenium_features_miss.csv
+todo=5 skip_has_tt=0 skip_resume=0 headless=False
+Starting headed Chrome…
+  Chrome profile=/var/folders/f6/rpjgfk6d6rq7txczn_p3lvmc0000gn/T/aof-imdb-chrome-8iipuhga
+  Installing/locating chromedriver…
+  Launching Chrome…
+  Chrome ready
+  1/5 MISS 1526741 'An Evening with Rodney Ascher' (2025) year_mismatch page=2017
+  2/5 OK 1536383 tt31322095 'The Veiled Abyss' ← Hayley Paultyn
+  3/5 MISS 1542655 'Death Cult' (2025) year_mismatch page=1975
+  4/5 OK 1555576 tt36484338 'Spite' ← Carolynn Cecilia
+  5/5 MISS 1558271 'Amityville: Bed & Breakfast' (2025) director_mismatch page=Ruud Schuurman
+
+=== SELENIUM FEATURES ===
+session_todo=5 hits_total=22 miss_total=406
+reasons={"no_year": 7, "year_mismatch": 122, "no_suggest_candidates": 89, "director_mismatch": 69, "no_tmdb_director": 93, "no_directors_on_page": 26}
+→ imdb_selenium_features_hits.csv / imdb_selenium_features_miss.csv
+todo=5 skip_has_tt=0 skip_resume=0 headless=False
+Starting headed Chrome…
+  Chrome profile=/var/folders/f6/rpjgfk6d6rq7txczn_p3lvmc0000gn/T/aof-imdb-chrome-yrbnfgxn
+  Installing/locating chromedriver…
+  Launching Chrome…
+  Chrome ready
+  1/5 MISS 1565447 'Lock Your Doors' (2025) no_directors_on_page
+  2/5 MISS 1565756 'Do Not Watch This Film' (2025) director_mismatch page=Tom Adjibi
+  3/5 MISS 1571931 'Midwest Angelica' (2025) no_directors_on_page
+  4/5 MISS 1658267 'Pinwydd' (2025) director_mismatch page=Martin Enlen
+  5/5 MISS 1664530 'Theater in Quarantine: The Phantom of the Opera' (2025) no_directors_on_page
+
+=== SELENIUM FEATURES ===
+session_todo=5 hits_total=22 miss_total=411
+reasons={"no_year": 7, "year_mismatch": 122, "no_suggest_candidates": 89, "director_mismatch": 71, "no_tmdb_director": 93, "no_directors_on_page": 29}
+→ imdb_selenium_features_hits.csv / imdb_selenium_features_miss.csv
+todo=5 skip_has_tt=0 skip_resume=0 headless=False
+Starting headed Chrome…
+  Chrome profile=/var/folders/f6/rpjgfk6d6rq7txczn_p3lvmc0000gn/T/aof-imdb-chrome-wczlguq9
+  Installing/locating chromedriver…
+  Launching Chrome…
+  Chrome ready
+  1/5 MISS 1707748 'Late At Night' (2023) year_mismatch page=1946
+  2/5 MISS 1727787 'Found Footage #1' (2024) director_mismatch page=Max Tzannes
+  3/5 MISS 1471251 'Intrusion' (2026) year_mismatch page=2012
+  4/5 MISS 1606871 'Knock, Knock, Knock' (2026) director_mismatch page=Joseph Mazzaferro
+  5/5 MISS 1607468 'Into the Spiral' (2026) director_mismatch page=Levin Garbisch
+
+=== SELENIUM FEATURES ===
+session_todo=5 hits_total=22 miss_total=416
+reasons={"no_year": 7, "year_mismatch": 124, "no_suggest_candidates": 89, "director_mismatch": 74, "no_tmdb_director": 93, "no_directors_on_page": 29}
+→ imdb_selenium_features_hits.csv / imdb_selenium_features_miss.csv
+todo=5 skip_has_tt=0 skip_resume=0 headless=False
+Starting headed Chrome…
+  Chrome profile=/var/folders/f6/rpjgfk6d6rq7txczn_p3lvmc0000gn/T/aof-imdb-chrome-dnfe9eli
+  Installing/locating chromedriver…
+  Launching Chrome…
+  Chrome ready
+  1/5 MISS 1615290 'The Nursing Home' (2026) director_mismatch page=Susie Singer Carter
+  2/5 MISS 1637971 'The Colored Experiment (Film Edition)' (2026) director_mismatch page=Evan Williamson
+  3/5 MISS 1638528 'The Coohatch' (2026) director_mismatch page=Nick Davis
+  4/5 MISS 1640477 'G2.22' (2026) year_mismatch page=1986
+  5/5 MISS 1688495 "The Shadowman's Nightmare" (2026) director_mismatch page=Ismael Diarra
+
+=== SELENIUM FEATURES ===
+session_todo=5 hits_total=22 miss_total=421
+reasons={"no_year": 7, "year_mismatch": 125, "no_suggest_candidates": 89, "director_mismatch": 78, "no_tmdb_director": 93, "no_directors_on_page": 29}
+→ imdb_selenium_features_hits.csv / imdb_selenium_features_miss.csv
+todo=2 skip_has_tt=0 skip_resume=0 headless=False
+Starting headed Chrome…
+  Chrome profile=/var/folders/f6/rpjgfk6d6rq7txczn_p3lvmc0000gn/T/aof-imdb-chrome-axrglu7u
+  Installing/locating chromedriver…
+  Launching Chrome…
+  Chrome ready
+  1/2 OK 1691931 tt43645326 'LAKESVILLE MOVIE' ← William Haylor
+  2/2 MISS 1697835 'WE WHO HUNGER' (2026) director_mismatch page=Gennadiy Ivanov
+
+=== SELENIUM FEATURES ===
+session_todo=2 hits_total=23 miss_total=422
+reasons={"no_year": 7, "year_mismatch": 125, "no_suggest_candidates": 89, "director_mismatch": 79, "no_tmdb_director": 93, "no_directors_on_page": 29}
+→ imdb_selenium_features_hits.csv / imdb_selenium_features_miss.csv

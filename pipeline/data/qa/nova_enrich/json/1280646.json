@@ -1,0 +1,43 @@
+{
+  "title_text": "Sweeney Todd",
+  "credits_text": "Música y líbretos Stephen Sondheim\nLibreto Hugh Wheeler\nVicky Peña, Joan Crosas, Teresa Vallrosa, Xavier Ribera-Vall, Pedro Pomares, Ruth González, Esteve Ferrer, María del Mar Maestu, Pedro de los Ríos\nDirección Musical Manuel Gas\nDirección Mario Gas",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "El barbero diabólico de la calle Fleet\nUn Thriller Musical",
+  "mood": [
+    "gothic",
+    "thriller",
+    "dramatic",
+    "dark",
+    "musical"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "Poster features two characters holding cleavers with intense expressions, set against a dark background with dramatic red text for the title."
+}

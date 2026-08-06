@@ -1,0 +1,37 @@
+{
+  "title_text": "THE FACELESS",
+  "credits_text": "Director's Cut\nNERD DUCK PRODUCTIONS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "mysterious",
+    "anxious",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A hooded figure with a concealed face stands in a forested area, viewed through a doorway, with text indicating the title and production company."
+}

@@ -1,0 +1,27 @@
+{
+  "custom_labels_f1": 0.645,
+  "logreg_macro_f1": 0.5135,
+  "siglip_base_macro_f1": 0.59,
+  "status": "TRAINING_COMPLETED",
+  "source": "cloud_agent_report_2026-08-04",
+  "project": "wflike-medium-clf",
+  "ranking_medium": [
+    {
+      "model": "custom_labels",
+      "macro_f1": 0.645
+    },
+    {
+      "model": "siglip_base",
+      "macro_f1": 0.59
+    },
+    {
+      "model": "logreg",
+      "macro_f1": 0.5135
+    }
+  ],
+  "winner": "custom_labels",
+  "lift_vs_siglip": 0.055,
+  "lift_vs_logreg": 0.1315,
+  "siglip_source": "medium_backbone_compare/compare_f1.json (winner_macro_f1 rounded)",
+  "updated_at": "2026-08-04T11:54:00Z"
+}

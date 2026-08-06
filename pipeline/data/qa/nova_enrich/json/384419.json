@@ -1,0 +1,46 @@
+{
+  "title_text": "HOME DELIVERY",
+  "credits_text": "GUILLERMO DEL TORO PRESENTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SUSPENSE! TERROR! VIOLENCE! SEX! ZOMBIES! LOBSTERS!!",
+  "mood": [
+    "suspense",
+    "terror",
+    "violent",
+    "zombie",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "zombie",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    },
+    {
+      "name": "forest",
+      "conf": 0.5
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "zombies"
+  ],
+  "moderation_notes": "Contains violent and zombie-related imagery.",
+  "description": "A man cradles a child against a dark, eerie backdrop with zombies and a lighthouse in the distance."
+}

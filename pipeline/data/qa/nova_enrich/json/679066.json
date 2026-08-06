@@ -1,0 +1,49 @@
+{
+  "title_text": "VALLEY OF THE WITCH",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "mysterious",
+    "gothic",
+    "haunting",
+    "supernatural",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "occult",
+      "conf": 0.85
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and a mysterious, potentially supernatural setting.",
+  "description": "A hooded figure stands in a forest path surrounded by bats and fire, with a rustic house in the background under a cloudy sky."
+}

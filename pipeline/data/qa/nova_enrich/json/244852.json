@@ -1,0 +1,44 @@
+{
+  "title_text": "POSEIDON REX",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "action",
+    "thriller",
+    "disaster"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 1.0
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and implied violence.",
+  "description": "A large dinosaur emerges from stormy waters, roaring aggressively as a small boat flees nearby."
+}

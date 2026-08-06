@@ -1,0 +1,37 @@
+{
+  "title_text": "SAFE",
+  "credits_text": "CAY PICTURES PRESENTS TIM CARPEAUX'S SAFE STARRING NAKU NAGAMATSU JI-E JOE D'ANNA AUDI REEVE BARCELLONA LORIE REYNOLDS MENIK CARPEN MATT RENING TIM CARPEAUX MATT REYNOLDS NAKU NAGAMATSU",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ARE YOU SAFE?",
+  "mood": [
+    "thriller",
+    "suspense",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text",
+      "conf": 0.8
+    },
+    {
+      "name": "mask",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster features three masked figures with a central TV screen displaying 'SAFE' against a dark background, with bold text 'ARE YOU SAFE?' at the top."
+}

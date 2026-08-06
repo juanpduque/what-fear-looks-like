@@ -1,0 +1,42 @@
+{
+  "title_text": "Los Archivos Del Parque Pereyra",
+  "credits_text": "CHURIS PRODUCTIONS",
+  "languages": [
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "mysterious",
+    "eerie",
+    "haunting",
+    "nocturnal"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.3,
+  "person": 0.4,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, eerie poster shows a large tree at night with a mysterious figure and a shadowy silhouette in the background."
+}

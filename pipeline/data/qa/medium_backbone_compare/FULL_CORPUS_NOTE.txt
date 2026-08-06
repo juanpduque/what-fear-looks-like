@@ -1,0 +1,10 @@
+Clear win: SigLIP-base LogReg macro-F1=0.5905 vs CLIP-B=0.5135 (lift=+0.077).
+
+To re-embed full corpus (do NOT auto-overwrite medium_pred.csv):
+  1) MEDIUM_DEVICE=cpu python3 pipeline/embed_medium_backbone.py --backbone siglip-base
+     but pass all poster ids (extend script) OR batch over posters.csv ids
+  2) Fit LogReg on gold train embeddings (same recipe C=2 balanced)
+  3) Predict full corpus -> data/medium_pred_siglip.csv (new file first)
+
+Caches: pipeline/data/qa/medium_siglip/
+Compare: pipeline/data/qa/medium_backbone_compare/compare_f1.json

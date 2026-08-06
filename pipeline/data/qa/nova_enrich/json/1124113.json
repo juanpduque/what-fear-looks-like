@@ -1,0 +1,43 @@
+{
+  "title_text": "Not Found",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "スタップにもる ベスト・セリンジョン 5",
+  "mood": [
+    "horror",
+    "psychological",
+    "disturbing",
+    "intense",
+    "chaotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains disturbing imagery and implied violence.",
+  "description": "A collage of terrified faces with Japanese and English text, suggesting a horror theme."
+}

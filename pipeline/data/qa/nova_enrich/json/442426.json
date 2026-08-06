@@ -1,0 +1,46 @@
+{
+  "title_text": "FAIM DE MORT TRILOGY",
+  "credits_text": "FRANCOIS YAGOPIAN'S",
+  "languages": [
+    "en"
+  ],
+  "other_text": "UNEARTHED FILMS",
+  "mood": [
+    "gothic",
+    "horrific",
+    "surreal",
+    "dread",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "occult",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult imagery and implied violence.",
+  "description": "A man stands in front of grotesque, multi-eyed figures and skulls, with occult symbols above, suggesting a dark, gothic horror theme."
+}

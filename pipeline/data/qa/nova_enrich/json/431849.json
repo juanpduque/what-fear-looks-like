@@ -1,0 +1,42 @@
+{
+  "title_text": "TRICLOPS",
+  "credits_text": "A SCI-FI THRILLER BY BRETT PIPER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HIDEOUS MUTANT GIANT RULES A LOST WORLD!",
+  "mood": [
+    "camp",
+    "sci-fi",
+    "thriller",
+    "action",
+    "fantasy"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild violent imagery and creature horror elements.",
+  "description": "Movie poster features a monstrous alien creature with three eyes and fiery hair, alongside human characters in a dramatic pose against a volcanic backdrop."
+}

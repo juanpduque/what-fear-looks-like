@@ -1,0 +1,43 @@
+{
+  "title_text": "精空屋 THE LABYRINT",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "action",
+    "thriller",
+    "post-apocalyptic",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A poster shows three characters facing a large, menacing creature in a ruined environment, with intense and action-packed visuals."
+}

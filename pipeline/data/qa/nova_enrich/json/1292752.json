@@ -1,0 +1,42 @@
+{
+  "title_text": "THE BETRAYAL AND THE REVENGE",
+  "credits_text": "BETRAYAL DOESNT COME WITHOUT REVENGE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dark",
+    "mysterious",
+    "foreboding",
+    "revenge",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood splatters.",
+  "description": "A dark forest scene with a shadowy figure holding a weapon, overlaid with dramatic text about betrayal and revenge."
+}

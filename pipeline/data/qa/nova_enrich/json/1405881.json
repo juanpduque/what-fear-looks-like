@@ -1,0 +1,39 @@
+{
+  "title_text": "BLOODY AXE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "camp",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "axe",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "text",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features a horror theme with implied violence through the axe and monstrous figure.",
+  "description": "A person with a monkey-like mask holds an axe, with bold red text reading 'BLOODY AXE' above a black background."
+}

@@ -1,0 +1,47 @@
+{
+  "title_text": "RAINY SEASON",
+  "credits_text": "NACHD EINER GESCHICHTE VON STEPHEN KING EIN PATRICK HAISCHBERGER FILM MIT THOMAS STIPSITS SABRINA REITER INGE MAUX WOLFGANG HÜBSCH & FRITZ KARL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HAISCHBERGER/MAYERHOFER PRÄSENTIEREN RAINY SEASON EIN PATRICK HAISCHBERGER FILM MUSIK MICHAEL FRANKENBERGER KOSTÜME ANNA ZEITLÜBER MONTAGE PAUL ECKHART AUSSTATTUNG VERONIKA TUPE MASKE ANA JAKSIC TON MATTHIAS KASSMANNHUBER SEX ANIMATRONIC SEX SCHWERTHEIM ZIEHREUND & TANJA FENNINGER KAMERA ANDRE MAYERHOFER BUCH STEPHEN KING DREHBUCH & REGIE PATRICK HAISCHBERGER",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "dread",
+    "mystery",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "storm",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.2,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, stormy poster features characters in front of a haunted house and church, with ghostly figures and a dramatic sky."
+}

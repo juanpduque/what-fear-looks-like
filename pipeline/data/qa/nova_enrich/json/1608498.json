@@ -1,0 +1,39 @@
+{
+  "title_text": "NOTTURNO 21",
+  "credits_text": "Di Giampiero Vaiano",
+  "languages": [
+    "it"
+  ],
+  "other_text": "TRATTO DAL RACCONTO \"DER SANDMANN\" DI E.T.A. HOFFMANN",
+  "mood": [
+    "gothic",
+    "eerie",
+    "haunting",
+    "noir",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A person holds a camera in front of a wall adorned with eerie drawings and the title \"NOTTURNO 21\" in red dripping text."
+}

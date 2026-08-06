@@ -1,0 +1,37 @@
+{
+  "title_text": "THE DEVIL IS IN THE WOODS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "suspense",
+    "forest",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 1.0
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild blood and suggests violence.",
+  "description": "A young man with a scratch stands in a forest, with bold text overlay reading 'THE DEVIL IS IN THE WOODS.'"
+}

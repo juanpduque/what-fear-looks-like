@@ -1,0 +1,37 @@
+{
+  "title_text": "REDCON-1",
+  "credits_text": "FROM THE PRODUCERS OF 'EL MARIACHI,' 'DESPERADO' AND 'ONCE UPON A TIME IN MEXICO' AND THE CO-PRODUCER OF 'TEENAGE MUTANT NINJA TURTLES' A CHEE KEONG CHEUNG FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MILLIONS INFECTED A NATION DIVIDED AN ENEMY WITH NO SOUL WAR HAS JUST EVOLVED",
+  "mood": [
+    "tense",
+    "dystopian",
+    "action",
+    "survival",
+    "gritty"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts soldiers in a post-apocalyptic setting, suggesting potential violence.",
+  "description": "A group of soldiers stand in a ruined city with helicopters overhead, promoting the film 'REDCON-1'."
+}

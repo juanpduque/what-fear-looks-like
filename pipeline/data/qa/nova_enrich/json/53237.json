@@ -1,0 +1,41 @@
+{
+  "title_text": "THE LAST LOVECRAFT",
+  "credits_text": "RELIC OF CTHULHU",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "fantasy",
+    "adventure",
+    "cosmic dread",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.4,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and monstrous imagery.",
+  "description": "A comic book cover featuring two characters facing a large red tentacle monster, with the title 'The Last Lovecraft: Relic of Cthulhu' prominently displayed."
+}

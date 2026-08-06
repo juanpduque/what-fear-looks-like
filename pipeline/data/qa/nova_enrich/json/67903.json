@@ -1,0 +1,40 @@
+{
+  "title_text": "UBALDO TERZANI HORROR SHOW",
+  "credits_text": "GABRIELE ALBANESI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "knife",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatters and violent imagery.",
+  "description": "A dark silhouette holds a bloody knife against a newspaper background, with bold red and white text for the title."
+}

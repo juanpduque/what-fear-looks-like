@@ -1,0 +1,42 @@
+{
+  "title_text": "IN SEARCH OF ALL AMERICAN MASSACRE",
+  "credits_text": "THE LOST TEXAS CHAINSAW FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "retro",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and disturbing imagery.",
+  "description": "A poster featuring a group of people with a central figure holding photographs, set against a dark, eerie background with bold red and green text."
+}

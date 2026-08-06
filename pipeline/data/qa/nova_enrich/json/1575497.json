@@ -1,0 +1,49 @@
+{
+  "title_text": "FRENZY MOON",
+  "credits_text": "BE WARNED. BEWARE.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "supernatural",
+    "tense",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "house",
+      "conf": 0.85
+    },
+    {
+      "name": "fire",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "moon",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.95,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense horror elements and implied violence.",
+  "description": "A poster shows a menacing werewolf against a full moon, with a person facing a wooden house illuminated by firelight."
+}

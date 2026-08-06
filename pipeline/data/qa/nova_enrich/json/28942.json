@@ -1,0 +1,50 @@
+{
+  "title_text": "THE BROOD",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horrific",
+    "psychological",
+    "disturbing",
+    "intense",
+    "paranormal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "psychological",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "psychological"
+  ],
+  "moderation_notes": "Contains disturbing imagery and psychological horror elements.",
+  "description": "A dark, intense poster featuring a shadowy figure with glowing hands and fiery accents, evoking horror and psychological tension."
+}

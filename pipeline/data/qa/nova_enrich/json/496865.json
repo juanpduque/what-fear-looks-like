@@ -1,0 +1,46 @@
+{
+  "title_text": "RE-ANIMATOR OF THE LIVING DEAD",
+  "credits_text": "Donald Holt - Oliver Peters - Joseph Browning\nJames \"Zero\" Smith - Shelby Offiner - Patrick Fox The Impersonator - Marty Coplen - Brooks Peters Michael Rivera - Dacylln Sharp And Many More...",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Crawford Tillinghast Herbert West",
+  "mood": [
+    "horror",
+    "gothic",
+    "camp",
+    "dark humor",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery including blood and skulls.",
+  "description": "A poster features a man in a lab coat holding a device, surrounded by horror elements like skulls and blood, with cast and credits listed."
+}

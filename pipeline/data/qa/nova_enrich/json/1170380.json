@@ -1,0 +1,46 @@
+{
+  "title_text": "MURDER ROOM, INC.",
+  "credits_text": "NICH WITHAM JILL CRENSHAW GEORIN AQUILA CODY PATTERSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Let the clean up begin",
+  "mood": [
+    "dread",
+    "thriller",
+    "psychological",
+    "disturbing",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A poster shows a person holding a hammer in a red-lit room with the title 'Murder Room, Inc.' and cast names listed."
+}

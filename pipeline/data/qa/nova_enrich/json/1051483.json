@@ -1,0 +1,39 @@
+{
+  "title_text": "THE HOUSE ACROSS THE BRIDGE",
+  "credits_text": "A Film by Kohl V. Bladen",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"People don't just go missing...\"",
+  "mood": [
+    "dread",
+    "mystery",
+    "suspense",
+    "gothic",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A collage of eerie scenes from a horror film titled 'The House Across the Bridge,' featuring dimly lit rooms, shadowy figures, and unsettling imagery."
+}

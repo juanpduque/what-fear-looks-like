@@ -1,0 +1,38 @@
+{
+  "title_text": "THE ENEMY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gritty",
+    "war",
+    "somber",
+    "tense",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.3
+    },
+    {
+      "name": "blood",
+      "conf": 0.2
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood, suggesting war themes.",
+  "description": "A dramatic poster shows soldiers carrying a body across a field under stormy skies, with bold red and white text reading 'THE ENEMY.'"
+}

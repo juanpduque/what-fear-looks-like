@@ -1,0 +1,45 @@
+{
+  "title_text": "DEVIL'S ACID",
+  "credits_text": "ALWAYS A BAD TRIP WHEN THE DEVIL SHOWS UP",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "surreal",
+    "eerie",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "sexual"
+  ],
+  "moderation_notes": "Contains suggestive imagery and implied horror themes.",
+  "description": "A poster shows a close-up of a person with an exaggerated tongue and a demonic hand, set against a foggy forest background."
+}

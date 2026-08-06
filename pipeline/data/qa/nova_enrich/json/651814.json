@@ -1,0 +1,46 @@
+{
+  "title_text": "SANGUE MISTO",
+  "credits_text": "un film ideato da DAVIDE SCONZO",
+  "languages": [
+    "it"
+  ],
+  "other_text": "'Il primo Horror-Kai del Cinema Italiano' Renata Vagnini Repubblica 'Horror' Davide Sconzo 'Assetti Insoliti' Roger Ebert",
+  "mood": [
+    "gothic",
+    "horror",
+    "surreal",
+    "dread",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and blood.",
+  "description": "A horror film poster featuring a central female figure surrounded by monstrous faces and eerie silhouettes against a gothic backdrop."
+}

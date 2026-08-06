@@ -1,0 +1,42 @@
+{
+  "title_text": "WEREWOLF HUNT",
+  "credits_text": "THE MOON IS FULL\nTHE BEAST IS LOOSE\nTHE HUNT IS ON\nTHE HUNT BEGINS 2024\nSHOGUN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MAN IS NO LONGER TOP OF THE FOOD CHAIN",
+  "mood": [
+    "mysterious",
+    "tense",
+    "foreboding",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.1,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a shadowy werewolf silhouette against a moonlit forest backdrop with bold title text and taglines."
+}

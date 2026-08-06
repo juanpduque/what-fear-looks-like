@@ -1,0 +1,41 @@
+{
+  "title_text": "STAND ALONE",
+  "credits_text": "THE MAKING OF HALLOWEEN III SEASON OF THE WITCH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "haunting",
+    "dark",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "occult",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and eerie imagery.",
+  "description": "A poster shows three silhouetted figures against a dark, fiery sky with a menacing face above them. The title and subtitle are prominently displayed at the bottom."
+}

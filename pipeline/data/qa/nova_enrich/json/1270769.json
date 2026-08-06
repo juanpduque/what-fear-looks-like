@@ -1,0 +1,40 @@
+{
+  "title_text": "GALA",
+  "credits_text": "A FILM BY OH TSENG SPIRIT POSSESSION PRODUCER STEVEN LIU TIM CHIU SCRIPTWRITER TAI YU CHIANG",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MAVIS EN-YOU-LI CHU-XU YU-YI-MO HSU-HAO-HSIANG WENG-NINI ON-TIONG-LI LEE-MING-CHE LA-WEN-CHUN LIN-JING-XUAN WANG-EN-YUNG",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.75,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic imagery and themes of spirit possession.",
+  "description": "A close-up of a grotesque, decayed face with the title \"GALA\" in bold green letters, suggesting a horror or thriller theme."
+}

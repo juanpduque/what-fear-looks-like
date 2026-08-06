@@ -1,0 +1,47 @@
+{
+  "title_text": "THE ZOMBIE MAYHEM",
+  "credits_text": "Starring JEREMIAS NILSSON, LINA FISCHER, LINUS CEDERBLOM, PER-CHRISTIAN JOHANSSON. Music by JAN HERRN & MAGNA FORSSLIND. GÄSTER, JAN HERREN & DEREKED NILS LINA FISCH. Produced by Daniel Maynes Harnekvist, Nils Johan Bredberg. Producer UNA STENSKA.",
+  "languages": [
+    "en",
+    "sv"
+  ],
+  "other_text": "THE MOST GRUESOME ZOMBIE HORROR EVER MADE",
+  "mood": [
+    "horror",
+    "gruesome",
+    "chaotic",
+    "violent",
+    "zombie"
+  ],
+  "fear_labels": [
+    {
+      "name": "zombie",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "Poster shows a group of people amidst flames with a central figure holding a weapon, surrounded by zombies and blood splatters."
+}

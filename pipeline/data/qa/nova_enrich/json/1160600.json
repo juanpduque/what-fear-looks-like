@@ -1,0 +1,45 @@
+{
+  "title_text": "雑心離山關",
+  "credits_text": "待定結材",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "雑心離山關、待定結材、雑心離山關、待定結材、雑心離山關、待定結材",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "eerie",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and implied psychological horror.",
+  "description": "A poster features a shadowy figure with horns and a mask, set against a dark, textured background with Japanese text overlay."
+}

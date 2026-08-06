@@ -1,0 +1,49 @@
+{
+  "title_text": "Book of Creatures",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "fantasy",
+    "mysterious",
+    "occult",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "fire",
+      "conf": 0.75
+    },
+    {
+      "name": "text",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and a monstrous creature, but no explicit violence or sexual content.",
+  "description": "A poster shows an open book with a menacing golden creature above it, featuring sharp teeth and horns, set against a dark, fiery background."
+}

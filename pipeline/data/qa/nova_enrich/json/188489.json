@@ -1,0 +1,40 @@
+{
+  "title_text": "BIRDEMIC 2 THE RESURRECTION",
+  "credits_text": "HOLLY WOOD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "apocalyptic",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "bird",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.95,
+  "animal": 0.95,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and action elements.",
+  "description": "A group of people confront a bird attack amidst flames and smoke, with weapons drawn, in a dramatic, action-packed scene."
+}

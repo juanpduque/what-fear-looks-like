@@ -1,0 +1,44 @@
+{
+  "title_text": "陰陽師",
+  "credits_text": "Your Contract Cannot Be Enforced",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "日本電影 陰陽師之鬼子母神 2卷套裝！ ... 97年日本最受歡迎的電影！",
+  "mood": [
+    "eerie",
+    "supernatural",
+    "gothic",
+    "psychological",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and sexual themes, suitable for mature audiences.",
+  "description": "Poster features intense close-ups of two individuals with a knife between them, hinting at supernatural horror themes."
+}

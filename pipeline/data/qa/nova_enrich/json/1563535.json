@@ -1,0 +1,48 @@
+{
+  "title_text": "PYASI ATMA",
+  "credits_text": "GOVINDA BAJAJ· A.K. MISHRA· TRINA CHAKRABARTY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SAKHEEL MOVIES PRESENTS",
+  "mood": [
+    "gothic",
+    "horror",
+    "erotic",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.5,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic horror elements, partial nudity, and occult themes.",
+  "description": "A vintage horror poster featuring a ghostly figure, a distressed woman, and a man in front of a haunted mansion with eerie scenery."
+}

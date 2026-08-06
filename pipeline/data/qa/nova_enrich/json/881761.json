@@ -1,0 +1,43 @@
+{
+  "title_text": "TERRIBLE THINGS",
+  "credits_text": "BEAR GRYLLS PRESENTS \"TERRIBLE THINGS\" STARRING TATE LYNN, JORDAN MCGEE, AND JOSHUA HARRIS. DIRECTED BY NATHANIEL CHASTAIN.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "mysterious",
+    "haunting",
+    "eerie",
+    "suspenseful",
+    "isolated"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "ghost",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a shadowy, towering figure in a misty forest with a small person in the foreground. The title 'TERRIBLE THINGS' is displayed at the bottom."
+}

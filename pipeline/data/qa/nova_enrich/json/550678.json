@@ -1,0 +1,54 @@
+{
+  "title_text": "I AM FEAR",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "chaotic",
+    "desperate",
+    "war-torn",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "war",
+      "conf": 0.85
+    },
+    {
+      "name": "violence",
+      "conf": 0.75
+    },
+    {
+      "name": "soldier",
+      "conf": 0.95
+    },
+    {
+      "name": "helicopter",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, depicting a war-torn scenario.",
+  "description": "A soldier stands with his back to the viewer amidst a battlefield with fires, explosions, and helicopters overhead."
+}

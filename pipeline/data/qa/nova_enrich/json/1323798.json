@@ -1,0 +1,45 @@
+{
+  "title_text": "LEPRECHAUN",
+  "credits_text": "THE BEGINNING",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "supernatural",
+    "horror",
+    "gothic",
+    "dread",
+    "mythic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and monstrous creature.",
+  "description": "A green, monstrous creature holds a skull filled with coins, with glowing red eyes and sharp claws, evoking a supernatural horror theme."
+}

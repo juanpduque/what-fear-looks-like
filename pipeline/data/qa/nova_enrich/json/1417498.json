@@ -1,0 +1,46 @@
+{
+  "title_text": "ATTACK OF THE SLIMY ZOMBIES",
+  "credits_text": "with GEORGE EASTMAN DIANE THORNE FRED WILLIAMSON TOM SAVINI Screenplay by GORE GORE DAVE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "They will rip your freaking head off Running time: 96 minutes approx. Colour WARNING X RATED This film should not be sold or rented to minors",
+  "mood": [
+    "horror",
+    "camp",
+    "grotesque",
+    "zombie",
+    "gory"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including gory imagery and violent themes.",
+  "description": "Poster features a zombie in a suit with exposed flesh and blood, with bold title text and cast credits."
+}

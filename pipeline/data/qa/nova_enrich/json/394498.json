@@ -1,0 +1,49 @@
+{
+  "title_text": "WOLF MOTHER HUNTED",
+  "credits_text": "THE WOLF MOTHER IS THE LAST OF HER KIND. SHE MUST SAVE HER DAUGHTER BEFORE THE HUNTERS COME FOR HER.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "dark",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.1,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent themes and supernatural horror elements.",
+  "description": "A poster features a man and a monstrous female figure with long hair against a dark, moonlit background, with bold white text reading 'WOLF MOTHER HUNTED.'"
+}

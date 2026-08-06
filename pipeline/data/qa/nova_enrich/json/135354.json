@@ -1,0 +1,50 @@
+{
+  "title_text": "PORKCHOP 3D",
+  "credits_text": "KAYLEE WILLIAMS SAM QUALIANA DANNY HICKS BRIAN GUNNOE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FEATURING: MATT SHAFER, SAM PRUDENCE, AMBER HAGEMANN, \"PORKCHOP\" JIM BOUSTE, MOLLY VANCE, VINCE VONETTO, JEFF ARNIA, PICCHETTI, MATT REYNOLDS, JOSH HARTMAN, AND LANCE EUBANK. WRITTEN AND DIRECTED BY ANDREW MERRITT. PRODUCED BY MATT SHAFER, AMBER HAGEMANN, \"PORKCHOP\" JIM BOUSTE, MOLLY VANCE, VINCE VONETTO, JEFF ARNIA, PICCHETTI, MATT REYNOLDS, JOSH HARTMAN, AND LANCE EUBANK. EXECUTIVE PRODUCERS: JOSH HARTMAN, MATT SHAFER, AMBER HAGEMANN, \"PORKCHOP\" JIM BOUSTE, MOLLY VANCE, VINCE VONETTO, JEFF ARNIA, PICCHETTI, MATT REYNOLDS, AND LANCE EUBANK.",
+  "mood": [
+    "gruesome",
+    "violent",
+    "horror",
+    "thriller",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "crowd",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gory imagery.",
+  "description": "A poster shows a monstrous creature wielding a large axe, with a crowd of terrified people in the background. The title \"PORKCHOP 3D\" is prominently displayed."
+}

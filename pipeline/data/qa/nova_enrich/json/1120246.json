@@ -1,0 +1,41 @@
+{
+  "title_text": "Bury Me Twice",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "noir",
+    "thriller",
+    "gritty",
+    "crime",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.8
+    },
+    {
+      "name": "axe",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts violent themes with weapons and action poses.",
+  "description": "A gritty noir-style poster features a group of characters in a dark urban setting, with one holding a gun and another an axe, suggesting a crime thriller."
+}

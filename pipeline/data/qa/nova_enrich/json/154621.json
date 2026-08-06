@@ -1,0 +1,42 @@
+{
+  "title_text": "DEAD BODY MAN CHRONICLES",
+  "credits_text": "THE MEAT HAS RETURNED",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SRS Video",
+  "mood": [
+    "horror",
+    "violent",
+    "gory",
+    "dark",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.95
+    },
+    {
+      "name": "violence",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster shows a person covered in blood holding knives, with bold red text reading 'Dead Body Man Chronicles' and a tagline 'The Meat Has Returned.'"
+}

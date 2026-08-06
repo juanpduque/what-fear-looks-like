@@ -1,0 +1,58 @@
+{
+  "title_text": "SCARIEST NIGHT OF YOUR LIFE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HAUNT WILL YOU SURVIVE?",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "terrifying",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.75
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.65
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.75,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery including blood and monstrous figures.",
+  "description": "A haunted house poster featuring a zombie-like figure in front of a dark, eerie mansion under a red sky with silhouettes of other figures."
+}

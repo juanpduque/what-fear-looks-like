@@ -1,0 +1,44 @@
+{
+  "title_text": "GORE INVASIÓN",
+  "credits_text": "SÁNCRE Y CACHONDE ESTA PARA ESTA PROXIMA TERCERA DE ARGENTINA",
+  "languages": [
+    "es"
+  ],
+  "other_text": "YO SOY FAN DE RE-ANIMATOR GOREVISION FILMS PRESENTAN TROMA 100% GORE BIZARRO",
+  "mood": [
+    "camp",
+    "erotic",
+    "violent",
+    "horror",
+    "satirical"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.6,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.7,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, gore, and partial nudity.",
+  "description": "Poster features multiple characters in a violent, gory scene with blood splatters and partial nudity, promoting a horror-comedy film."
+}

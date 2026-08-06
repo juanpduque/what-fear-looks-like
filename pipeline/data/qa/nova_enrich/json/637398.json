@@ -1,0 +1,50 @@
+{
+  "title_text": "CAMP BLOOD KILLS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HORROR",
+  "mood": [
+    "horror",
+    "terror",
+    "violent",
+    "gory",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "fire",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A horror DVD cover featuring a monstrous clown amidst flames and blood, with bold red and green colors."
+}

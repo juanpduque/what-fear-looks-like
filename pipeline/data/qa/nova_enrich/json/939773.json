@@ -1,0 +1,40 @@
+{
+  "title_text": "KUBURAN BERJALAN",
+  "credits_text": "Amer Bersaudara",
+  "languages": [
+    "en"
+  ],
+  "other_text": "kumparan+PLUS",
+  "mood": [
+    "horror",
+    "thriller",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and supernatural horror elements.",
+  "description": "A horror comic cover shows a woman in distress over a corpse, with a ghostly figure looming behind her in a dimly lit room."
+}

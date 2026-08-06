@@ -1,0 +1,39 @@
+{
+  "title_text": "DARK TOMORROW",
+  "credits_text": "BEST THRILLER New York Times Bestseller 2012",
+  "languages": [
+    "en"
+  ],
+  "other_text": "On March 27, 1999 John Wesley Walker stabbed 33 times with a brute knife On March 27, 1999 he was alive... he was dead During a mental blackout even secrets are silent",
+  "mood": [
+    "dread",
+    "gothic",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and references to stabbing.",
+  "description": "A dark poster features a shadowy figure against a night backdrop with text about a brutal stabbing and mental blackout."
+}

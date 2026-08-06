@@ -1,0 +1,40 @@
+{
+  "title_text": "女気魔はー雑の側に",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "雑見の死を起くナ！",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and violent themes.",
+  "description": "A poster features a female ghost with long hair and a menacing expression, dressed in traditional Japanese attire stained with blood."
+}

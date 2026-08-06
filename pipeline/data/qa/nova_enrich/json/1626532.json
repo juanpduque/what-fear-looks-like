@@ -1,0 +1,51 @@
+{
+  "title_text": "CARNE nel COSMO",
+  "credits_text": "",
+  "languages": [
+    "it"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "sci-fi",
+    "gothic",
+    "surreal",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 1.0
+    },
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "demon",
+      "conf": 0.8
+    },
+    {
+      "name": "alien",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.8,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic violence and occult imagery.",
+  "description": "A poster shows a hand holding a knife over a bowl of blood, with a demon face and people in a cosmic background."
+}

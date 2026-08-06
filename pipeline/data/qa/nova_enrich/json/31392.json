@@ -1,0 +1,39 @@
+{
+  "title_text": "HORRORS OF SPIDER ISLAND",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BLOOD-CURLING! HAIR-RAISING! SPINE-CHILLING! One bite from a giant spider turned him into the world's most hideous monster... with a biabolical lust to KILL! He strangles his victims with his mammoth claws! SO TERRIFYING SHOCKING SUSPENSE YOU'LL BE AFRAID TO GO TO SLEEP!",
+  "mood": [
+    "camp",
+    "horror",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.9,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and horror themes.",
+  "description": "Vintage horror poster featuring a man and woman with a giant spider; bold red and black text highlights the terrifying plot."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "THE THINGY",
+  "credits_text": "LOYD KAUFMAN AND MICHAEL HEITZ PRESENT A TROMA TEAM RELEASE A BIOETHICAL HORROR SHOW FOR THE WHOLE FAMILY... THE MANSON FAMILY! A MOVIE BY JOEL RABINS AND YVES SONDERMEIER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "40 YEARS OF DIRTY MOVIE MEDIA",
+  "mood": [
+    "camp",
+    "surreal",
+    "erotic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, gore, and suggestive content.",
+  "description": "Poster features a woman with blonde hair holding a red object amidst a pile of red, fleshy matter, with bold title and credits overlaid."
+}

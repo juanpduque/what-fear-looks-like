@@ -1,0 +1,41 @@
+{
+  "title_text": "THE HEXED",
+  "credits_text": "THEY'RE HEXED. YOU'RE NEXT.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "APRIL 3RD",
+  "mood": [
+    "gothic",
+    "occult",
+    "mysterious",
+    "dark",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult symbolism and dark themes.",
+  "description": "A poster shows a woman kneeling in a ritual circle with candles and books, with bold purple text reading 'THE HEXED' and the tagline 'THEY'RE HEXED. YOU'RE NEXT.'"
+}

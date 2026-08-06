@@ -1,0 +1,45 @@
+{
+  "title_text": "THE SIXTH GUN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "6",
+  "mood": [
+    "western",
+    "fantasy",
+    "mystery",
+    "supernatural",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.3,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and supernatural themes.",
+  "description": "Poster features three characters with a ghostly figure and a large number '6', suggesting a western fantasy theme with supernatural elements."
+}

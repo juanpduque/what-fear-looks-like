@@ -1,0 +1,48 @@
+{
+  "title_text": "ANOTHER SOUL",
+  "credits_text": "SHE IS MINE.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gothic",
+    "supernatural",
+    "dread",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult",
+    "blood",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and occult imagery.",
+  "description": "A woman in a torn dress is bound with red ropes on a wooden background, surrounded by occult symbols and dim lighting."
+}

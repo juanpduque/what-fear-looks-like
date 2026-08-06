@@ -1,0 +1,41 @@
+{
+  "title_text": "TO YOUR LAST DEATH",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PARA",
+  "mood": [
+    "gothic",
+    "erotic",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.5,
+  "violence": 0.7,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "Contains implied violence and partial nudity.",
+  "description": "A woman in a red bodysuit stands over a kneeling, injured figure in a dimly lit room with framed portraits on the wall."
+}

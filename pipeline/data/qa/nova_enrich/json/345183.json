@@ -1,0 +1,38 @@
+{
+  "title_text": "WOMAN HUNTING",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "女性測罪人",
+  "mood": [
+    "action",
+    "thriller",
+    "intense",
+    "dramatic",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "Contains mild sexual suggestiveness and implied violence.",
+  "description": "A poster features four women in action poses amidst a fiery background, with one holding a sword and another a gun, suggesting an intense action thriller."
+}

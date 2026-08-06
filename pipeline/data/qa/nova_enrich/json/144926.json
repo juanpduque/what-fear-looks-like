@@ -1,0 +1,45 @@
+{
+  "title_text": "GAME",
+  "credits_text": "JESSE STENSON JOSH STENSON MICHAEL GILLINGS NICK MERCER SCOTT McGILLIVRAY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HUNTING SEASON IS COMING SOON",
+  "mood": [
+    "thriller",
+    "horror",
+    "suspense",
+    "forest",
+    "night"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild implied violence from weapon and forest setting.",
+  "description": "A poster shows three silhouetted figures walking through a dark forest with a large, eerie face in the background and a chainsaw above."
+}

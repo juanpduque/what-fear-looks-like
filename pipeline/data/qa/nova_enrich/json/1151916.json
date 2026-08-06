@@ -1,0 +1,44 @@
+{
+  "title_text": "KİTAB-İCİN",
+  "credits_text": "Rasul KULIEV Derya ACAR Sarıhan SHKHIYEV Elif SAHIN Halil KUMOVA Mete SOYDAN Murat BÖLÜCEK Birol ÖZKAL Yucel TOK RÜhi ZARIÇ Tanşın ÖZKAN Eyup AYDIN Erkan HANCER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TÜRKİYE'NİN İLK FANTASTİK KORKU FİLMİ HZ. SÜLEYMAN'İN SİRRİ",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains intense horror imagery with monstrous creatures and occult themes.",
+  "description": "A dark, fiery poster features a monstrous face with skeletal elements and eerie text, promoting a Turkish horror film."
+}

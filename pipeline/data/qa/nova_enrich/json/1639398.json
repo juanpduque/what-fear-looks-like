@@ -1,0 +1,46 @@
+{
+  "title_text": "PSICÓPATA EL ASESINO DEL CONEJO BLANCO",
+  "credits_text": "",
+  "languages": [
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "psychological horror",
+    "disturbing",
+    "violent",
+    "distorted"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "psychological horror",
+      "conf": 0.95
+    },
+    {
+      "name": "distorted imagery",
+      "conf": 0.85
+    },
+    {
+      "name": "violent",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.9,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A disturbing poster shows a bloody origami cone with photographs of victims, evoking psychological horror and violence."
+}

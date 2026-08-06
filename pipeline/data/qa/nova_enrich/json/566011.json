@@ -1,0 +1,44 @@
+{
+  "title_text": "THE CURSE OF THE BLIND DEAD",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains violent and gory imagery, suitable for mature audiences.",
+  "description": "A hooded figure stands over a skeletal hand amidst a burning cityscape, wielding a sword in a post-apocalyptic setting."
+}

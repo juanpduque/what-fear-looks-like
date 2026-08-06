@@ -1,0 +1,44 @@
+{
+  "title_text": "PETER RABID",
+  "credits_text": "HE CAME. HE SAW. HE CONQUERED.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"THE MOST HARE-EATING HORROR OF THE YEAR! THE HOLLYWOOD NEWS\"",
+  "mood": [
+    "dread",
+    "surreal",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "mask",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "Poster features two masked figures with rabbit ears holding a chainsaw and knife in a dark forest setting."
+}

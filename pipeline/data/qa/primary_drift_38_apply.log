@@ -1,0 +1,12 @@
+mismatches to apply: 38
+  live refresh 38/38
+live: 38 → 38 still mismatched vs stored
+  apply 38/38 (19.9/s)
+wrote /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/primary_drift_applied.csv
+ok=38 dry_run=0 download_fail=0 archived=31
+horror_movies.csv: updated poster_path for 27 rows
+poster_paths_backfill.csv: 15,343 rows (upserted 38)
+multi_poster_catalog.csv: realigned is_primary for 38 ids
+multi_poster_canonical.csv: set canonical=primary for 38
+reanalyze list → /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/primary_drift_reanalyze_ids.csv (38 ids)
+next: python3 reanalyze_poster_ids.py --ids-file data/qa/primary_drift_reanalyze_ids.csv

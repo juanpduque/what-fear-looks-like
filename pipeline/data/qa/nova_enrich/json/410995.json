@@ -1,0 +1,43 @@
+{
+  "title_text": "CHANOC",
+  "credits_text": "VERSUS EL TIGRE Y EL VAMPRO",
+  "languages": [
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "fantasy",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.7,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and monstrous imagery.",
+  "description": "A fiery poster features bold text and a fierce creature battling a vampire in a jungle setting."
+}

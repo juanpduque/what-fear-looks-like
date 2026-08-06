@@ -1,0 +1,40 @@
+{
+  "title_text": "THESIGNAL",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "apocalyptic",
+    "suspenseful",
+    "chaotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts intense action and possible violence.",
+  "description": "A dramatic poster shows three individuals in a stormy setting with a fiery explosion in the background, suggesting an action-packed, suspenseful scenario."
+}

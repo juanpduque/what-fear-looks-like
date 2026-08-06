@@ -1,0 +1,45 @@
+{
+  "title_text": "Tasty Encounters",
+  "credits_text": "More than you can stomach\nEINE FEISCHWOIE PRODUKTION\nDIRECTOR LUKE ROBER PRODUCER ELIAS FLEISCHER WRITERS JONAS NUSSBAUM, LUKE ROBER STORY JONAS NUSSBAUM, LUKE ROBER, THOMAS BLATT CINEMATOGRAPHY ROBERT PUTEANU LIGHTING ROBERT PUTEANU PRODUCTION DESIGN ELIAS FLEISCHER EDITORS LUKE ROBER, THOMAS BLATT SPECIAL EFFECTS ELIAS FLEISCHER, JONAS NUSSBAUM COMPOSER JENNY FLEISCHER SOUND ISOBEL COPE-LADSTÄTTER FINLAY MONAT ART DIRECTION ELIAS FLEISCHER VISUAL EFFECTS JONAS NUSSBAUM, PAUL LECHMANN COSTUME DESIGN ELIAS FLEISCHER MAKEUP ELIAS FLEISCHER, FANNY ROTTENSTEINER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Thomas Blatt Grindig",
+  "mood": [
+    "grotesque",
+    "surreal",
+    "disturbing",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and disturbing imagery.",
+  "description": "A poster features a grotesque, monstrous face with exaggerated features and a disturbing expression, set against a dark background with red and green accents."
+}

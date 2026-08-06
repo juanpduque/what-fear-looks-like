@@ -1,0 +1,43 @@
+{
+  "title_text": "NECRO ROMANCE",
+  "credits_text": "ALEXA VERA / FERNANDA HORTA LUIS ANTONIO CHAVARRIA / BLANCA LARA UN CORTOMETRAJE DE VÍCTOR FAVRE",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "EL AMOR SABE A SANGRE Una producción de La Academia de las Artes y las Ciencias Cinematográficas de Hidalgo, en conjunto con Quimera Producciones y Satan & Friends Film Crew.",
+  "mood": [
+    "gothic",
+    "erotic",
+    "surreal",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.6,
+  "sexual_content": 0.5,
+  "sensitive": [
+    "violence",
+    "sexual",
+    "blood"
+  ],
+  "moderation_notes": "Contains suggestive and violent imagery, with blood-like effects and partial nudity.",
+  "description": "A dark, red-lit poster features a solitary figure against a shadowy background, with bold typography for the title and credits."
+}

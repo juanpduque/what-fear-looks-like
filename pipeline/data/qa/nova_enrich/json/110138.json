@@ -1,0 +1,45 @@
+{
+  "title_text": "NIGHT WARS",
+  "credits_text": "Where dreams turn to deadly nightmares...",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "action",
+    "dystopia",
+    "urban"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild violence suggested by the dramatic imagery and tagline.",
+  "description": "Movie poster features a split face with intense expressions, a cityscape background, and several characters in action poses."
+}

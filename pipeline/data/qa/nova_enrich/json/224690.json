@@ -1,0 +1,50 @@
+{
+  "title_text": "SAVAGE VOWS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "supernatural",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains horror themes and mild blood imagery.",
+  "description": "A poster features a woman with fiery hair and a ghostly figure, both with green slime, set against a dark background with bold orange text reading 'SAVAGE VOWS.'"
+}

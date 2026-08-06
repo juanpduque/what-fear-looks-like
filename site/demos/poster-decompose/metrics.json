@@ -10,29 +10,29 @@
     {
       "id": "hero",
       "label": "I · Hero",
-      "range": [0, 0.22]
+      "range": [0, 0.12]
     },
     {
       "id": "read",
       "label": "II · Read",
-      "range": [0.22, 0.45]
+      "range": [0.12, 0.26]
     },
     {
       "id": "measure",
       "label": "III · Measure",
-      "range": [0.45, 0.70]
+      "range": [0.26, 0.90]
     },
     {
       "id": "archive",
       "label": "IV · Archive",
-      "range": [0.70, 1.0]
+      "range": [0.90, 1.0]
     }
   ],
   "beats": [
     {
       "id": "hero",
       "act": 1,
-      "progress": [0, 0.22],
+      "progress": [0, 0.12],
       "kicker": "What Fear Looks Like",
       "title": "Halloween",
       "body": "Clamshell estilizada · 1978. El sleeve es arte plano del corpus (poster.jpg), no una foto de caja VHS. Desplazá para leerlo.",
@@ -42,49 +42,119 @@
     {
       "id": "read",
       "act": 2,
-      "progress": [0.22, 0.45],
+      "progress": [0.12, 0.26],
       "kicker": "OCR · título",
       "title": "HALLOWEEN",
       "body": "Vista de frente. Rekognition DetectText · conf 0.98 · el título anclado en el sleeve.",
       "metricKey": "ocr",
       "overlay": {
         "type": "bbox",
-        "uv": [0.08, 0.78, 0.84, 0.16],
+        "uv": [0.06, 0.72, 0.88, 0.2],
         "label": "OCR 0.98 · HALLOWEEN"
       }
     },
     {
-      "id": "measure",
+      "id": "faces",
       "act": 3,
-      "progress": [0.45, 0.70],
-      "kicker": "Measure · capas",
-      "title": "0 · 87% · 0.93",
-      "body": "Una capa a la vez: faces 0 → 87% dark → symmetry 0.93. El eje parte el cuchillo.",
-      "metricKey": "measure",
-      "swatches": ["#070101", "#370f0e", "#711910", "#c53c0d", "#d5bda2"],
+      "progress": [0.26, 0.38],
+      "kicker": "Detect · rostros",
+      "title": "0 faces",
+      "body": "YuNet faces_v2 · 0 rostros. Creature uncertain 0.35 · is_creature false. El miedo es silueta, no cara.",
+      "metricKey": "faces",
+      "overlay": {
+        "type": "faces",
+        "uv": [0.18, 0.22, 0.64, 0.48],
+        "label": "FACES 0 · CREATURE 0.35"
+      }
+    },
+    {
+      "id": "palette",
+      "act": 3,
+      "progress": [0.38, 0.52],
+      "kicker": "Measure · paleta",
+      "title": "87% dark",
+      "body": "Cinco muestras del sleeve. Handles marcan cielo, sombra, calabaza y filo. Brightness 8.1 · red_share 0.16.",
+      "metricKey": "colors",
+      "overlay": {
+        "type": "palette",
+        "label": "PALETTE · DARK 87%",
+        "cue": "HANDLES · SAMPLE COLORS",
+        "samples": [
+          { "n": 1, "hex": "#070101", "role": "sky", "uv": [0.22, 0.1] },
+          { "n": 2, "hex": "#370f0e", "role": "shadow", "uv": [0.78, 0.28] },
+          { "n": 3, "hex": "#711910", "role": "pumpkin deep", "uv": [0.32, 0.48] },
+          { "n": 4, "hex": "#c53c0d", "role": "pumpkin", "uv": [0.58, 0.5] },
+          { "n": 5, "hex": "#d5bda2", "role": "blade", "uv": [0.48, 0.36] }
+        ]
+      }
+    },
+    {
+      "id": "symmetry",
+      "act": 3,
+      "progress": [0.52, 0.64],
+      "kicker": "Measure · simetría",
+      "title": "0.93",
+      "body": "attributes.symmetry 0.9347 · el eje parte el cuchillo. Neg_space 0.66 · harmony 0.91.",
+      "metricKey": "symmetry",
       "overlay": {
         "type": "symmetry",
         "axis": 0.5,
         "label": "SYM 0.93"
-      },
-      "peel": [
-        { "key": "faces", "from": 0.45, "to": 0.54, "label": "FACES 0" },
-        { "key": "colors", "from": 0.54, "to": 0.63, "label": "DARK 87%" },
-        { "key": "symmetry", "from": 0.63, "to": 0.70, "label": "SYM 0.93" }
-      ]
+      }
+    },
+    {
+      "id": "diagonals",
+      "act": 3,
+      "progress": [0.64, 0.74],
+      "kicker": "Measure · diagonales",
+      "title": "0.20",
+      "body": "diagonal_score 0.1978 · composición poco diagonal: la masa es central (cuchillo + calabaza), no en X.",
+      "metricKey": "diagonals",
+      "overlay": {
+        "type": "diagonals",
+        "label": "DIAG 0.20",
+        "lines": [
+          { "from": [0.08, 0.08], "to": [0.92, 0.92] },
+          { "from": [0.92, 0.08], "to": [0.08, 0.92] }
+        ]
+      }
+    },
+    {
+      "id": "blood",
+      "act": 3,
+      "progress": [0.74, 0.82],
+      "kicker": "Measure · sangre",
+      "title": "blood 0.85",
+      "body": "Nova blood 0.85 · blood_gore 0.8 · pixel red 15.6%. El naranja del filo empuja el heat map.",
+      "metricKey": "blood",
+      "overlay": {
+        "type": "bbox",
+        "uv": [0.28, 0.18, 0.44, 0.55],
+        "label": "BLOOD 0.85 · RED 16%"
+      }
+    },
+    {
+      "id": "knife",
+      "act": 3,
+      "progress": [0.82, 0.90],
+      "kicker": "Measure · cuchillo",
+      "title": "knife 0.95",
+      "body": "Nova knife 0.95 · el filo anclado en el sleeve. Portada cerrada, de frente — misma lectura que el resto de medidas.",
+      "metricKey": "knife",
+      "overlay": {
+        "type": "chip",
+        "uv": [0.58, 0.36],
+        "label": "KNIFE 0.95"
+      }
     },
     {
       "id": "archive",
       "act": 4,
-      "progress": [0.70, 1.0],
+      "progress": [0.90, 1.0],
       "kicker": "Archive · apertura",
-      "title": "knife 0.95",
-      "body": "La tapa abre suave. Dentro: cassette + ficha. Nova knife 0.95 · blood 0.85 · mood: dread · suspense · terror.",
-      "metricKey": "archive",
-      "overlay": {
-        "type": "chip",
-        "label": "KNIFE 0.95"
-      }
+      "title": "Cinta 948",
+      "body": "La tapa abre. Dentro: la cinta VHS — plástico mate, ventana con bobinas y etiqueta HALLOWEEN 1978. Mood: dread · suspense · terror.",
+      "metricKey": "archive"
     }
   ],
   "metrics": [
@@ -96,15 +166,15 @@
     },
     {
       "key": "faces",
-      "label": "Faces",
-      "value": "0 detected",
-      "detail": "YuNet faces_v2 · Rekognition faces 0 · silhouette sells the fear"
+      "label": "Faces / creature",
+      "value": "0 faces · creature 0.35",
+      "detail": "YuNet faces_v2 0 · Rekognition faces 0 · creature uncertain 0.354 · is_creature false"
     },
     {
       "key": "colors",
-      "label": "Colors",
+      "label": "Palette",
       "value": "87% dark",
-      "detail": "brightness 8.1 · red_share 0.16 · #070101 #370f0e #c53c0d"
+      "detail": "brightness 8.1 · red_share 0.16 · #070101 #370f0e #711910 #c53c0d #d5bda2"
     },
     {
       "key": "symmetry",
@@ -113,10 +183,28 @@
       "detail": "attributes.symmetry 0.9347 · neg_space 0.66 · harmony 0.91"
     },
     {
+      "key": "diagonals",
+      "label": "Diagonals",
+      "value": "0.20",
+      "detail": "attributes.diagonal_score 0.1978 · balance 0.17 · mass central"
+    },
+    {
       "key": "blood",
       "label": "Blood / fear",
-      "value": "knife 0.95 · blood 0.85",
-      "detail": "Nova blood_gore 0.8 · violence 0.9 · weapon 1.0 · pixel red 15.6%"
+      "value": "blood 0.85",
+      "detail": "Nova blood_gore 0.8 · violence 0.9 · pixel red 15.6%"
+    },
+    {
+      "key": "knife",
+      "label": "Knife",
+      "value": "knife 0.95",
+      "detail": "Nova knife 0.95 · Rekognition weapon 0.76"
+    },
+    {
+      "key": "archive",
+      "label": "Archive / cinta",
+      "value": "VHS 948",
+      "detail": "cassette tape render · mood dread · suspense · terror"
     },
     {
       "key": "mood",
@@ -130,6 +218,7 @@
     "neg_space": 0.6598,
     "harmony": 0.9074,
     "balance": 0.1677,
+    "diagonal_score": 0.1978,
     "dark_share": 0.8698,
     "red_share": 0.1555,
     "brightness": 8.14,
@@ -138,6 +227,7 @@
     "typography": "decorative",
     "creature": "uncertain",
     "creature_score": 0.354,
+    "is_creature": false,
     "nova_blood": 0.85,
     "nova_blood_gore": 0.8,
     "nova_knife": 0.95,
@@ -160,6 +250,8 @@
   ],
   "notes": {
     "cover_rule": "Cover albedo MUST be poster.jpg (flat). vhs_reference*.png are mood board only — never mapped to the cover mesh.",
-    "mood_board": ["vhs_reference.png", "vhs_reference_anniversary.png"]
+    "cover_opacity": "Cover stays fully opaque (no measureZone translucency). Cassette tape visible only after Archive lid open — otherwise the HALLOWEEN/1978 label bleeds through the poster.",
+    "mood_board": ["vhs_reference.png", "vhs_reference_anniversary.png"],
+    "beat_order": "hero → OCR → faces/creature → palette → symmetry → diagonals → blood → knife (cover closed) → archive (lid + cassette tape)"
   }
 }

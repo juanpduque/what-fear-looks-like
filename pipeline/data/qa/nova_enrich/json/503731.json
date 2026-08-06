@@ -1,0 +1,41 @@
+{
+  "title_text": "ZOMBIE BOY",
+  "credits_text": "THE BEST BUDDY YOU COULD EVER HAVE.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"I LOVE THIS MOVIE, HAVEN'T LAUGHED THAT HARD IN YEARS!\" - ERNEST THOMPSON, CREATOR OF ON GOLDEN POND",
+  "mood": [
+    "humorous",
+    "camp",
+    "action",
+    "zombie",
+    "buddy"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild action/violence themes but no explicit gore or nudity.",
+  "description": "Movie poster features a man with a shocked expression and three individuals holding guns, promoting a humorous zombie-themed buddy film."
+}

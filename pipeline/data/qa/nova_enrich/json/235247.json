@@ -1,0 +1,40 @@
+{
+  "title_text": "BLOODBOUND",
+  "credits_text": "INGO WENDLAND TORSTEN KNIPPERTZ PETER NOTTMEIER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FSK 18 WENDECOVER DVD epiX",
+  "mood": [
+    "intense",
+    "action",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "The poster features a fierce, snarling face with a man holding guns, indicating an intense action thriller."
+}

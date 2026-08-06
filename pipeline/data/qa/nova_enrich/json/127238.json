@@ -1,0 +1,45 @@
+{
+  "title_text": "Zabok Setan",
+  "credits_text": "a film by Allo Geathary\nKamu percaya Tuhan? Kalau tidak, sekarang saatnya\nRinggo Agus Rahman Indri Satya Jill Gladys\nAlex Komang Marini Burhan Eddie Karsito Mieke Amalia Gading Marten",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE PRODUCTION PRESENTS A MISTI ZONA PRODUCTION",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror elements and occult themes.",
+  "description": "Poster features a group of people in dark clothing with a central figure in red, set against a red background with ghostly silhouettes."
+}

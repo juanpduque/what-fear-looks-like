@@ -1,0 +1,38 @@
+{
+  "title_text": "어쩌다 발견한 나의 살인",
+  "credits_text": "미스 테러리 소설 각색",
+  "languages": [
+    "ko"
+  ],
+  "other_text": "오인규작",
+  "mood": [
+    "mystery",
+    "thriller",
+    "dark",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A solitary figure stands in a dimly lit urban setting with a car in the background, suggesting a mysterious or thriller atmosphere."
+}

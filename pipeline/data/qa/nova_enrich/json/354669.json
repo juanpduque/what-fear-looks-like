@@ -1,0 +1,37 @@
+{
+  "title_text": "RIPPER MAN",
+  "credits_text": "MIKE NORRIS TIMOTHY BOTTOMS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EVIL NEVER DIES",
+  "mood": [
+    "thriller",
+    "horror",
+    "mystery",
+    "suspense",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts a man holding a gun and a victim, suggesting violent themes.",
+  "description": "A man holds a gun with a determined expression, while a victim lies on the ground. The poster features bold red text and dramatic lighting."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "FACE",
+  "credits_text": "A FRAT PARTY MASSACRE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FROM THE PRODUCER OF \"V/H/S\" \n\"I can guarantee the finale is going to beat the living shit out of you.\" - Bloody Disgusting \nOFFICIAL SELECTION ANOTHER ROTH IN THE HEAD FILM FESTIVAL \nTONIGHT, YOU ARE INVITED TO THE ULTIMATE FRAT PARTY.",
+  "mood": [
+    "horror",
+    "violent",
+    "gory",
+    "thriller",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore.",
+  "description": "A poster featuring a distorted, gory face with bold text reading \"FACE: A Frat Party Massacre\" and promotional quotes."
+}

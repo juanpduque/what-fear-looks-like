@@ -1,0 +1,50 @@
+{
+  "title_text": "LEGEND OF HELL",
+  "credits_text": "a film by OLAF ITTENBACH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ONCE IT WAS PARADISE\nOFFICIAL SELECTION WEEKEND OF FEAR FILM FESTIVAL\nOFFICIAL SELECTION MOVIE DAYS FILM FESTIVAL\nOFFICIAL SELECTION CINETRANCE FILM FESTIVAL",
+  "mood": [
+    "gothic",
+    "dread",
+    "dark",
+    "violent",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "ghost",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A man in medieval armor wields a large cross in a dark, stormy setting with bats and ruins."
+}

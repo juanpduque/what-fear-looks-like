@@ -1,0 +1,46 @@
+{
+  "title_text": "ZOMBIUM URBAN DECAY",
+  "credits_text": "TERROR In The STREETS!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BLOOD EDITION",
+  "mood": [
+    "dread",
+    "apocalyptic",
+    "gritty",
+    "survival",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "decay",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore, suitable for mature audiences.",
+  "description": "A poster featuring a decayed zombie in an urban setting with graffiti-covered buildings and a tagline 'TERROR In The STREETS!'"
+}

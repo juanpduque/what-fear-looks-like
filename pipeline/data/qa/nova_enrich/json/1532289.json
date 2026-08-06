@@ -1,0 +1,42 @@
+{
+  "title_text": "¡MONSTRUOS!",
+  "credits_text": "PATRICIO CHÁVEZ PRESENTA\nANTONIO BALDOVINO\nSARA ANZÚA\nTOMÁS IRGUEGAS\nFERNANDO VEGA\nDIRIGIDO POR PATRICIO CHÁVEZ\nPRODUCCION DE ESCALERA FILMS\nPRODUCCION DE ERIK S. LÓPEZ\nDIRECCIÓN DE FOTOGRAFÍA MARCUS MORALES\nMÚSICA DE PABLO ALANIS\nVESTUARIO/MAQUILLAJE ROMÁN MEDINA\nDISEÑO DE ARTE HAIDÉE ZAPATA",
+  "languages": [
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gothic",
+    "camp",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "wolf",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.4,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.7,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A horror movie poster features a screaming woman surrounded by monsters, a werewolf, and a mummy, with a dark, stormy background."
+}

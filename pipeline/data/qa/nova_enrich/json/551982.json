@@ -1,0 +1,46 @@
+{
+  "title_text": "EYES OF THE DEAD",
+  "credits_text": "KILL OR BE KILLED",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A SAMUELS BROTHERS FILM",
+  "mood": [
+    "dread",
+    "survival",
+    "apocalyptic",
+    "horror",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "zombie",
+      "conf": 0.85
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.85,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and zombie imagery.",
+  "description": "A poster for a horror film featuring a man and woman holding guns amidst a zombie apocalypse with flames in the background."
+}

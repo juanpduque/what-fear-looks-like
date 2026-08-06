@@ -1,0 +1,47 @@
+{
+  "title_text": "Little Red Devil",
+  "credits_text": "FROM THE MAKERS OF \"THE JUNGLE'S THEY MUST EAT\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "supernatural",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and occult themes.",
+  "description": "A poster features a demonic red face with horns and fangs, dripping blood, and bold red text reading 'Little Red Devil.'"
+}

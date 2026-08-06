@@ -1,0 +1,49 @@
+{
+  "title_text": "HANTU KAK LIMAH BALIK RUMAH",
+  "credits_text": "AWIE UMMI NAZEERA JOHAN RAJA LAWAK DELIMATU SOFI JIKAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SENGAT FILM MATAT KHALID",
+  "mood": [
+    "horror",
+    "thriller",
+    "supernatural",
+    "suspense",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild horror elements and supernatural themes.",
+  "description": "A group of people ride a motorcycle through a dark forest, surrounded by ghostly figures and eerie scenery."
+}

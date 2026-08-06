@@ -1,0 +1,41 @@
+{
+  "title_text": "DARKPLACE",
+  "credits_text": "A BOOTH BROTHERS FILM\nMATTHEW MCGRORY TIMOTHY JOE DEPREST\nMUSIC BY SAINT BOOTH\nEXECUTIVE PRODUCER CHRISTOPHER SAINT BOOTH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "face your demons\nSAINT PRODUCED AT DARKPLACE.COM",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "The poster features a dark, eerie image with a shadowy figure and a menacing face, promoting the film 'Darkplace'."
+}

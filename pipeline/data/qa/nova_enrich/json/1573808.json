@@ -1,0 +1,41 @@
+{
+  "title_text": "Magai-gami",
+  "credits_text": "Ion Obata, Nagisa Toriumi, Written & Directed by Norihiro Niwatatsukino \"Suffering of Niko\" ('16)",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "Don't look away, or you die.",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and implied violence.",
+  "description": "A poster shows a close-up eye and a person surrounded by reaching hands in a dark forest setting."
+}

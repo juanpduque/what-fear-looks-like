@@ -1,0 +1,46 @@
+{
+  "title_text": "ZOMBIE LOVER",
+  "credits_text": "THEIR JOURNEY INTO HELL HAS JUST BEGUN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"ZOMBIE LOVER IS ONE TRULY APOCALYPTIC LOVE STORY!\"",
+  "mood": [
+    "dread",
+    "apocalyptic",
+    "romantic",
+    "horror",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A man and a zombie woman stand together against a dark, stormy background, with the woman showing visible wounds and blood."
+}

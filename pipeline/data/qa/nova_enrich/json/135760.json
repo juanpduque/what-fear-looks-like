@@ -1,0 +1,46 @@
+{
+  "title_text": "SAVAGE ISLAND",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "bayview DVD VIDEO",
+  "mood": [
+    "dread",
+    "survival",
+    "horror",
+    "isolated",
+    "tense"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.8
+    },
+    {
+      "name": "island",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic skull imagery and implied violence.",
+  "description": "A poster shows a large, ominous skull with the title 'SAVAGE ISLAND' over a stormy island scene, suggesting a survival horror theme."
+}

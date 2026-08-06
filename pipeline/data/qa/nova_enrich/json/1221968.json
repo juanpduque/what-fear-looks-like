@@ -1,0 +1,40 @@
+{
+  "title_text": "TOY TUMOR",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "surreal",
+    "grotesque"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.75,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic gore and a disturbing monstrous face.",
+  "description": "A poster featuring a grotesque, skull-like face with blood and a red hat, topped with bold 'TOY TUMOR' text."
+}

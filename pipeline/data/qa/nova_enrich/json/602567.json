@@ -1,0 +1,46 @@
+{
+  "title_text": "THE CORPSE GRINDERS",
+  "credits_text": "THE LOTUS CAT FOOD COMPANY HAS FOUND A NEW SECRET INGREDIENT. YOU!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gritty",
+    "industrial",
+    "horror",
+    "dystopian"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "industrial",
+      "conf": 0.8
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and industrial horror themes.",
+  "description": "A poster shows a masked figure holding a chainsaw in a dark, industrial setting with chains and eerie lighting."
+}

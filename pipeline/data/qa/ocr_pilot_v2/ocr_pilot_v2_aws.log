@@ -1,0 +1,2030 @@
+=== ocr_pilot_v2_chain start Wed Jul 29 15:59:25 UTC 2026 ===
+using python from /opt/pytorch/bin
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+mlflow 3.14.0 requires pandas<3, but you have pandas 3.0.5 which is incompatible.
+sagemaker-core 2.17.0 requires protobuf<7.0.0,>=3.12, but you have protobuf 7.35.1 which is incompatible.
+numba 0.66.0 requires numpy<2.5,>=1.22, but you have numpy 2.5.1 which is incompatible.
+databricks-sdk 0.122.0 requires protobuf!=5.26.*,!=5.27.*,!=5.28.*,!=5.29.0,!=5.29.1,!=5.29.2,!=5.29.3,!=5.29.4,!=6.30.0,!=6.30.1,!=6.31.0,<7.0,>=4.25.8, but you have protobuf 7.35.1 which is incompatible.
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+torch 2.13.0+cu130 cuda True
+gpu Tesla T4 vram_gb 15.6
+Completed 706 Bytes/706 Bytes (10.8 KiB/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/sample_ids.txt to data/qa/ocr_pilot_v2/sample_ids.txt
+Completed 19.3 KiB/19.3 KiB (234.5 KiB/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters.csv to data/posters.csv
+Completed 16.4 KiB/4.9 MiB (49.1 KiB/s) with 100 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1148920.jpg to data/posters/1148920.jpg
+Completed 16.4 KiB/4.9 MiB (49.1 KiB/s) with 99 file(s) remainingCompleted 38.3 KiB/4.9 MiB (109.6 KiB/s) with 99 file(s) remainingCompleted 81.9 KiB/4.9 MiB (234.3 KiB/s) with 99 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1229586.jpg to data/posters/1229586.jpg
+Completed 81.9 KiB/4.9 MiB (234.3 KiB/s) with 98 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/11908.jpg to data/posters/11908.jpg
+Completed 81.9 KiB/4.9 MiB (234.3 KiB/s) with 97 file(s) remainingCompleted 123.1 KiB/4.9 MiB (343.9 KiB/s) with 97 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1261561.jpg to data/posters/1261561.jpg
+Completed 123.1 KiB/4.9 MiB (343.9 KiB/s) with 96 file(s) remainingCompleted 176.5 KiB/4.9 MiB (480.7 KiB/s) with 96 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1083119.jpg to data/posters/1083119.jpg
+Completed 176.5 KiB/4.9 MiB (480.7 KiB/s) with 95 file(s) remainingCompleted 246.1 KiB/4.9 MiB (660.9 KiB/s) with 95 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1015482.jpg to data/posters/1015482.jpg
+Completed 246.1 KiB/4.9 MiB (660.9 KiB/s) with 94 file(s) remainingCompleted 374.6 KiB/4.9 MiB (992.0 KiB/s) with 94 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1022479.jpg to data/posters/1022479.jpg
+Completed 374.6 KiB/4.9 MiB (992.0 KiB/s) with 93 file(s) remainingCompleted 408.5 KiB/4.9 MiB (1.0 MiB/s) with 93 file(s) remaining  download: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1294319.jpg to data/posters/1294319.jpg
+Completed 408.5 KiB/4.9 MiB (1.0 MiB/s) with 92 file(s) remainingCompleted 431.4 KiB/4.9 MiB (1.1 MiB/s) with 92 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1193824.jpg to data/posters/1193824.jpg
+Completed 431.4 KiB/4.9 MiB (1.1 MiB/s) with 91 file(s) remainingCompleted 498.8 KiB/4.9 MiB (1.3 MiB/s) with 91 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1125186.jpg to data/posters/1125186.jpg
+Completed 498.8 KiB/4.9 MiB (1.3 MiB/s) with 90 file(s) remainingCompleted 523.5 KiB/4.9 MiB (1.3 MiB/s) with 90 file(s) remainingCompleted 539.0 KiB/4.9 MiB (1.3 MiB/s) with 90 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1363776.jpg to data/posters/1363776.jpg
+Completed 539.0 KiB/4.9 MiB (1.3 MiB/s) with 89 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1085262.jpg to data/posters/1085262.jpg
+Completed 539.0 KiB/4.9 MiB (1.3 MiB/s) with 88 file(s) remainingCompleted 546.8 KiB/4.9 MiB (1.3 MiB/s) with 88 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1273536.jpg to data/posters/1273536.jpg
+Completed 546.8 KiB/4.9 MiB (1.3 MiB/s) with 87 file(s) remainingCompleted 631.3 KiB/4.9 MiB (1.5 MiB/s) with 87 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/10283.jpg to data/posters/10283.jpg
+Completed 631.3 KiB/4.9 MiB (1.5 MiB/s) with 86 file(s) remainingCompleted 643.7 KiB/4.9 MiB (1.5 MiB/s) with 86 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1405670.jpg to data/posters/1405670.jpg
+Completed 643.7 KiB/4.9 MiB (1.5 MiB/s) with 85 file(s) remainingCompleted 670.7 KiB/4.9 MiB (1.5 MiB/s) with 85 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1443966.jpg to data/posters/1443966.jpg
+Completed 670.7 KiB/4.9 MiB (1.5 MiB/s) with 84 file(s) remainingCompleted 709.4 KiB/4.9 MiB (1.6 MiB/s) with 84 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1346645.jpg to data/posters/1346645.jpg
+Completed 709.4 KiB/4.9 MiB (1.6 MiB/s) with 83 file(s) remainingCompleted 734.2 KiB/4.9 MiB (1.6 MiB/s) with 83 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1397562.jpg to data/posters/1397562.jpg
+Completed 734.2 KiB/4.9 MiB (1.6 MiB/s) with 82 file(s) remainingCompleted 790.7 KiB/4.9 MiB (1.7 MiB/s) with 82 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1351896.jpg to data/posters/1351896.jpg
+Completed 790.7 KiB/4.9 MiB (1.7 MiB/s) with 81 file(s) remainingCompleted 846.9 KiB/4.9 MiB (1.8 MiB/s) with 81 file(s) remainingCompleted 910.4 KiB/4.9 MiB (2.0 MiB/s) with 81 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1307154.jpg to data/posters/1307154.jpg
+Completed 910.4 KiB/4.9 MiB (2.0 MiB/s) with 80 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1289969.jpg to data/posters/1289969.jpg
+Completed 910.4 KiB/4.9 MiB (2.0 MiB/s) with 79 file(s) remainingCompleted 959.6 KiB/4.9 MiB (2.0 MiB/s) with 79 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1483743.jpg to data/posters/1483743.jpg
+Completed 959.6 KiB/4.9 MiB (2.0 MiB/s) with 78 file(s) remainingCompleted 1000.1 KiB/4.9 MiB (2.1 MiB/s) with 78 file(s) remainingCompleted 1020.9 KiB/4.9 MiB (2.1 MiB/s) with 78 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1375109.jpg to data/posters/1375109.jpg
+Completed 1020.9 KiB/4.9 MiB (2.1 MiB/s) with 77 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1379480.jpg to data/posters/1379480.jpg
+Completed 1020.9 KiB/4.9 MiB (2.1 MiB/s) with 76 file(s) remainingCompleted 1.0 MiB/4.9 MiB (2.1 MiB/s) with 76 file(s) remaining   download: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1463113.jpg to data/posters/1463113.jpg
+Completed 1.0 MiB/4.9 MiB (2.1 MiB/s) with 75 file(s) remainingCompleted 1.1 MiB/4.9 MiB (2.2 MiB/s) with 75 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/15056.jpg to data/posters/15056.jpg
+Completed 1.1 MiB/4.9 MiB (2.2 MiB/s) with 74 file(s) remainingCompleted 1.1 MiB/4.9 MiB (2.3 MiB/s) with 74 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1475231.jpg to data/posters/1475231.jpg
+Completed 1.1 MiB/4.9 MiB (2.3 MiB/s) with 73 file(s) remainingCompleted 1.2 MiB/4.9 MiB (2.3 MiB/s) with 73 file(s) remainingCompleted 1.2 MiB/4.9 MiB (2.4 MiB/s) with 73 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1483020.jpg to data/posters/1483020.jpg
+Completed 1.2 MiB/4.9 MiB (2.4 MiB/s) with 72 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/156252.jpg to data/posters/156252.jpg
+Completed 1.2 MiB/4.9 MiB (2.4 MiB/s) with 71 file(s) remainingCompleted 1.3 MiB/4.9 MiB (2.5 MiB/s) with 71 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1298819.jpg to data/posters/1298819.jpg
+Completed 1.3 MiB/4.9 MiB (2.5 MiB/s) with 70 file(s) remainingCompleted 1.3 MiB/4.9 MiB (2.5 MiB/s) with 70 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1541944.jpg to data/posters/1541944.jpg
+Completed 1.3 MiB/4.9 MiB (2.5 MiB/s) with 69 file(s) remainingCompleted 1.3 MiB/4.9 MiB (2.6 MiB/s) with 69 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/225048.jpg to data/posters/225048.jpg
+Completed 1.3 MiB/4.9 MiB (2.6 MiB/s) with 68 file(s) remainingCompleted 1.4 MiB/4.9 MiB (2.6 MiB/s) with 68 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1578643.jpg to data/posters/1578643.jpg
+Completed 1.4 MiB/4.9 MiB (2.6 MiB/s) with 67 file(s) remainingCompleted 1.4 MiB/4.9 MiB (2.7 MiB/s) with 67 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/212973.jpg to data/posters/212973.jpg
+Completed 1.4 MiB/4.9 MiB (2.7 MiB/s) with 66 file(s) remainingCompleted 1.5 MiB/4.9 MiB (2.8 MiB/s) with 66 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1441287.jpg to data/posters/1441287.jpg
+Completed 1.5 MiB/4.9 MiB (2.8 MiB/s) with 65 file(s) remainingCompleted 1.6 MiB/4.9 MiB (2.9 MiB/s) with 65 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/278267.jpg to data/posters/278267.jpg
+Completed 1.6 MiB/4.9 MiB (2.9 MiB/s) with 64 file(s) remainingCompleted 1.6 MiB/4.9 MiB (2.9 MiB/s) with 64 file(s) remainingCompleted 1.7 MiB/4.9 MiB (3.0 MiB/s) with 64 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/207475.jpg to data/posters/207475.jpg
+Completed 1.7 MiB/4.9 MiB (3.0 MiB/s) with 63 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/28419.jpg to data/posters/28419.jpg
+Completed 1.7 MiB/4.9 MiB (3.0 MiB/s) with 62 file(s) remainingCompleted 1.8 MiB/4.9 MiB (3.1 MiB/s) with 62 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/26921.jpg to data/posters/26921.jpg
+Completed 1.8 MiB/4.9 MiB (3.1 MiB/s) with 61 file(s) remainingCompleted 1.8 MiB/4.9 MiB (3.2 MiB/s) with 61 file(s) remainingCompleted 1.9 MiB/4.9 MiB (3.3 MiB/s) with 61 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/28265.jpg to data/posters/28265.jpg
+Completed 1.9 MiB/4.9 MiB (3.3 MiB/s) with 60 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/165078.jpg to data/posters/165078.jpg
+Completed 1.9 MiB/4.9 MiB (3.3 MiB/s) with 59 file(s) remainingCompleted 2.0 MiB/4.9 MiB (3.4 MiB/s) with 59 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/23532.jpg to data/posters/23532.jpg
+Completed 2.0 MiB/4.9 MiB (3.4 MiB/s) with 58 file(s) remainingCompleted 2.0 MiB/4.9 MiB (3.5 MiB/s) with 58 file(s) remainingCompleted 2.1 MiB/4.9 MiB (3.6 MiB/s) with 58 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/31012.jpg to data/posters/31012.jpg
+Completed 2.1 MiB/4.9 MiB (3.6 MiB/s) with 57 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/300156.jpg to data/posters/300156.jpg
+Completed 2.1 MiB/4.9 MiB (3.6 MiB/s) with 56 file(s) remainingCompleted 2.1 MiB/4.9 MiB (3.5 MiB/s) with 56 file(s) remainingCompleted 2.1 MiB/4.9 MiB (3.6 MiB/s) with 56 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/356486.jpg to data/posters/356486.jpg
+Completed 2.1 MiB/4.9 MiB (3.6 MiB/s) with 55 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/259675.jpg to data/posters/259675.jpg
+Completed 2.1 MiB/4.9 MiB (3.6 MiB/s) with 54 file(s) remainingCompleted 2.2 MiB/4.9 MiB (3.6 MiB/s) with 54 file(s) remainingCompleted 2.2 MiB/4.9 MiB (3.7 MiB/s) with 54 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/1718150.jpg to data/posters/1718150.jpg
+Completed 2.2 MiB/4.9 MiB (3.7 MiB/s) with 53 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/35073.jpg to data/posters/35073.jpg
+Completed 2.2 MiB/4.9 MiB (3.7 MiB/s) with 52 file(s) remainingCompleted 2.3 MiB/4.9 MiB (3.7 MiB/s) with 52 file(s) remainingCompleted 2.3 MiB/4.9 MiB (3.8 MiB/s) with 52 file(s) remainingCompleted 2.4 MiB/4.9 MiB (3.9 MiB/s) with 52 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/343674.jpg to data/posters/343674.jpg
+Completed 2.4 MiB/4.9 MiB (3.9 MiB/s) with 51 file(s) remainingCompleted 2.4 MiB/4.9 MiB (3.9 MiB/s) with 51 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/36992.jpg to data/posters/36992.jpg
+Completed 2.4 MiB/4.9 MiB (3.9 MiB/s) with 50 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/233194.jpg to data/posters/233194.jpg
+Completed 2.4 MiB/4.9 MiB (3.9 MiB/s) with 49 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/30833.jpg to data/posters/30833.jpg
+Completed 2.4 MiB/4.9 MiB (3.9 MiB/s) with 48 file(s) remainingCompleted 2.5 MiB/4.9 MiB (3.9 MiB/s) with 48 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/286452.jpg to data/posters/286452.jpg
+Completed 2.5 MiB/4.9 MiB (3.9 MiB/s) with 47 file(s) remainingCompleted 2.5 MiB/4.9 MiB (4.0 MiB/s) with 47 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/43274.jpg to data/posters/43274.jpg
+Completed 2.5 MiB/4.9 MiB (4.0 MiB/s) with 46 file(s) remainingCompleted 2.6 MiB/4.9 MiB (4.1 MiB/s) with 46 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/336254.jpg to data/posters/336254.jpg
+Completed 2.6 MiB/4.9 MiB (4.1 MiB/s) with 45 file(s) remainingCompleted 2.7 MiB/4.9 MiB (4.1 MiB/s) with 45 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/472015.jpg to data/posters/472015.jpg
+Completed 2.7 MiB/4.9 MiB (4.1 MiB/s) with 44 file(s) remainingCompleted 2.7 MiB/4.9 MiB (4.1 MiB/s) with 44 file(s) remainingCompleted 2.8 MiB/4.9 MiB (4.2 MiB/s) with 44 file(s) remainingCompleted 2.8 MiB/4.9 MiB (4.3 MiB/s) with 44 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/399172.jpg to data/posters/399172.jpg
+Completed 2.8 MiB/4.9 MiB (4.3 MiB/s) with 43 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/487439.jpg to data/posters/487439.jpg
+Completed 2.8 MiB/4.9 MiB (4.3 MiB/s) with 42 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/484509.jpg to data/posters/484509.jpg
+Completed 2.8 MiB/4.9 MiB (4.3 MiB/s) with 41 file(s) remainingCompleted 3.0 MiB/4.9 MiB (4.5 MiB/s) with 41 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/387034.jpg to data/posters/387034.jpg
+Completed 3.0 MiB/4.9 MiB (4.5 MiB/s) with 40 file(s) remainingCompleted 3.1 MiB/4.9 MiB (4.5 MiB/s) with 40 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/53553.jpg to data/posters/53553.jpg
+Completed 3.1 MiB/4.9 MiB (4.5 MiB/s) with 39 file(s) remainingCompleted 3.1 MiB/4.9 MiB (4.5 MiB/s) with 39 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/64524.jpg to data/posters/64524.jpg
+Completed 3.1 MiB/4.9 MiB (4.5 MiB/s) with 38 file(s) remainingCompleted 3.3 MiB/4.9 MiB (4.7 MiB/s) with 38 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/45551.jpg to data/posters/45551.jpg
+Completed 3.3 MiB/4.9 MiB (4.7 MiB/s) with 37 file(s) remainingCompleted 3.3 MiB/4.9 MiB (4.8 MiB/s) with 37 file(s) remainingCompleted 3.4 MiB/4.9 MiB (4.8 MiB/s) with 37 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/505063.jpg to data/posters/505063.jpg
+Completed 3.4 MiB/4.9 MiB (4.8 MiB/s) with 36 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/48800.jpg to data/posters/48800.jpg
+Completed 3.4 MiB/4.9 MiB (4.8 MiB/s) with 35 file(s) remainingCompleted 3.4 MiB/4.9 MiB (4.9 MiB/s) with 35 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/491649.jpg to data/posters/491649.jpg
+Completed 3.4 MiB/4.9 MiB (4.9 MiB/s) with 34 file(s) remainingCompleted 3.5 MiB/4.9 MiB (4.9 MiB/s) with 34 file(s) remainingCompleted 3.5 MiB/4.9 MiB (5.0 MiB/s) with 34 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/653537.jpg to data/posters/653537.jpg
+Completed 3.5 MiB/4.9 MiB (5.0 MiB/s) with 33 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/547055.jpg to data/posters/547055.jpg
+Completed 3.5 MiB/4.9 MiB (5.0 MiB/s) with 32 file(s) remainingCompleted 3.5 MiB/4.9 MiB (5.0 MiB/s) with 32 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/748251.jpg to data/posters/748251.jpg
+Completed 3.5 MiB/4.9 MiB (5.0 MiB/s) with 31 file(s) remainingCompleted 3.6 MiB/4.9 MiB (5.0 MiB/s) with 31 file(s) remainingCompleted 3.7 MiB/4.9 MiB (5.1 MiB/s) with 31 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/302019.jpg to data/posters/302019.jpg
+Completed 3.7 MiB/4.9 MiB (5.1 MiB/s) with 30 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/636515.jpg to data/posters/636515.jpg
+Completed 3.7 MiB/4.9 MiB (5.1 MiB/s) with 29 file(s) remainingCompleted 3.7 MiB/4.9 MiB (5.1 MiB/s) with 29 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/652004.jpg to data/posters/652004.jpg
+Completed 3.7 MiB/4.9 MiB (5.1 MiB/s) with 28 file(s) remainingCompleted 3.7 MiB/4.9 MiB (5.1 MiB/s) with 28 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/77399.jpg to data/posters/77399.jpg
+Completed 3.7 MiB/4.9 MiB (5.1 MiB/s) with 27 file(s) remainingCompleted 3.8 MiB/4.9 MiB (5.0 MiB/s) with 27 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/77677.jpg to data/posters/77677.jpg
+Completed 3.8 MiB/4.9 MiB (5.0 MiB/s) with 26 file(s) remainingCompleted 3.8 MiB/4.9 MiB (5.1 MiB/s) with 26 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/836924.jpg to data/posters/836924.jpg
+Completed 3.8 MiB/4.9 MiB (5.1 MiB/s) with 25 file(s) remainingCompleted 3.9 MiB/4.9 MiB (5.1 MiB/s) with 25 file(s) remainingCompleted 3.9 MiB/4.9 MiB (5.2 MiB/s) with 25 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/854417.jpg to data/posters/854417.jpg
+Completed 3.9 MiB/4.9 MiB (5.2 MiB/s) with 24 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/796250.jpg to data/posters/796250.jpg
+Completed 3.9 MiB/4.9 MiB (5.2 MiB/s) with 23 file(s) remainingCompleted 4.0 MiB/4.9 MiB (5.2 MiB/s) with 23 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/384756.jpg to data/posters/384756.jpg
+Completed 4.0 MiB/4.9 MiB (5.2 MiB/s) with 22 file(s) remainingCompleted 4.0 MiB/4.9 MiB (5.2 MiB/s) with 22 file(s) remainingCompleted 4.1 MiB/4.9 MiB (5.3 MiB/s) with 22 file(s) remainingCompleted 4.2 MiB/4.9 MiB (5.4 MiB/s) with 22 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/772603.jpg to data/posters/772603.jpg
+Completed 4.2 MiB/4.9 MiB (5.4 MiB/s) with 21 file(s) remainingCompleted 4.2 MiB/4.9 MiB (5.4 MiB/s) with 21 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/682809.jpg to data/posters/682809.jpg
+Completed 4.2 MiB/4.9 MiB (5.4 MiB/s) with 20 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/743757.jpg to data/posters/743757.jpg
+Completed 4.2 MiB/4.9 MiB (5.4 MiB/s) with 19 file(s) remainingCompleted 4.3 MiB/4.9 MiB (5.4 MiB/s) with 19 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/86687.jpg to data/posters/86687.jpg
+Completed 4.3 MiB/4.9 MiB (5.4 MiB/s) with 18 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/861413.jpg to data/posters/861413.jpg
+Completed 4.3 MiB/4.9 MiB (5.4 MiB/s) with 17 file(s) remainingCompleted 4.3 MiB/4.9 MiB (5.4 MiB/s) with 17 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/88410.jpg to data/posters/88410.jpg
+Completed 4.3 MiB/4.9 MiB (5.4 MiB/s) with 16 file(s) remainingCompleted 4.4 MiB/4.9 MiB (5.5 MiB/s) with 16 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/931049.jpg to data/posters/931049.jpg
+Completed 4.4 MiB/4.9 MiB (5.5 MiB/s) with 15 file(s) remainingCompleted 4.4 MiB/4.9 MiB (5.5 MiB/s) with 15 file(s) remainingCompleted 4.4 MiB/4.9 MiB (5.5 MiB/s) with 15 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/918096.jpg to data/posters/918096.jpg
+Completed 4.4 MiB/4.9 MiB (5.5 MiB/s) with 14 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/362776.jpg to data/posters/362776.jpg
+Completed 4.4 MiB/4.9 MiB (5.5 MiB/s) with 13 file(s) remainingCompleted 4.5 MiB/4.9 MiB (5.5 MiB/s) with 13 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/802851.jpg to data/posters/802851.jpg
+Completed 4.5 MiB/4.9 MiB (5.5 MiB/s) with 12 file(s) remainingCompleted 4.5 MiB/4.9 MiB (5.5 MiB/s) with 12 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/949486.jpg to data/posters/949486.jpg
+Completed 4.5 MiB/4.9 MiB (5.5 MiB/s) with 11 file(s) remainingCompleted 4.6 MiB/4.9 MiB (5.6 MiB/s) with 11 file(s) remainingCompleted 4.6 MiB/4.9 MiB (5.6 MiB/s) with 11 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/3104.jpg to data/posters/3104.jpg
+Completed 4.6 MiB/4.9 MiB (5.6 MiB/s) with 10 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/931940.jpg to data/posters/931940.jpg
+Completed 4.6 MiB/4.9 MiB (5.6 MiB/s) with 9 file(s) remainingCompleted 4.6 MiB/4.9 MiB (5.6 MiB/s) with 9 file(s) remainingCompleted 4.7 MiB/4.9 MiB (5.6 MiB/s) with 9 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/94910.jpg to data/posters/94910.jpg
+Completed 4.7 MiB/4.9 MiB (5.6 MiB/s) with 8 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/976209.jpg to data/posters/976209.jpg
+Completed 4.7 MiB/4.9 MiB (5.6 MiB/s) with 7 file(s) remainingCompleted 4.7 MiB/4.9 MiB (5.6 MiB/s) with 7 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/940187.jpg to data/posters/940187.jpg
+Completed 4.7 MiB/4.9 MiB (5.6 MiB/s) with 6 file(s) remainingCompleted 4.8 MiB/4.9 MiB (5.7 MiB/s) with 6 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/988142.jpg to data/posters/988142.jpg
+Completed 4.8 MiB/4.9 MiB (5.7 MiB/s) with 5 file(s) remainingCompleted 4.8 MiB/4.9 MiB (5.6 MiB/s) with 5 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/77050.jpg to data/posters/77050.jpg
+Completed 4.8 MiB/4.9 MiB (5.6 MiB/s) with 4 file(s) remainingCompleted 4.8 MiB/4.9 MiB (5.6 MiB/s) with 4 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/748589.jpg to data/posters/748589.jpg
+Completed 4.8 MiB/4.9 MiB (5.6 MiB/s) with 3 file(s) remainingCompleted 4.9 MiB/4.9 MiB (5.7 MiB/s) with 3 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/863406.jpg to data/posters/863406.jpg
+Completed 4.9 MiB/4.9 MiB (5.7 MiB/s) with 2 file(s) remainingCompleted 4.9 MiB/4.9 MiB (5.6 MiB/s) with 2 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/974046.jpg to data/posters/974046.jpg
+Completed 4.9 MiB/4.9 MiB (5.6 MiB/s) with 1 file(s) remainingCompleted 4.9 MiB/4.9 MiB (5.6 MiB/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/posters/972244.jpg to data/posters/972244.jpg
+Completed 7.0 KiB/7.0 KiB (95.1 KiB/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/sample_meta.csv to data/qa/ocr_pilot_v2/sample_meta.csv
+local posters: 100
+--- verify S3 write ---
+Completed 29 Bytes/29 Bytes (306 Bytes/s) with 1 file(s) remainingupload: data/qa/ocr_pilot_v2/OCR_PILOT_S3_PROBE to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/OCR_PILOT_S3_PROBE
+S3 write OK
+Completed 33 Bytes/33 Bytes (557 Bytes/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/MODELS to ../../../../tmp/ocr_pilot_v2_MODELS
+MODELS from S3: qwen,deepseek,paddle,qianfan,got
+MODELS=qwen,deepseek,paddle,qianfan,got N=100
+Completed 40.8 KiB/40.8 KiB (351.3 KiB/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_pilot_v2/results/results.csv to data/qa/ocr_pilot_v2/results.csv
+--- run model=qwen Wed Jul 29 16:01:38 UTC 2026 ---
+sample n=100 → data/qa/ocr_pilot_v2/sample_ids.txt
+     id                                               title  year
+ 484509                                         Just Spooks  1925
+1261561                                    The Monkey's Paw  1923
+ 362776                                  Ghost Town Frolics  1938
+  26921                     The Mystery of the Mary Celeste  1935
+ 212973                                Gildersleeve's Ghost  1944
+  48800                                         The Unknown  1946
+  35073                       The Beast from 20,000 Fathoms  1953
+ 836924                                         Roh Membela  1955
+   3104                          Frankenstein Created Woman  1967
+  64524                                           Nightmare  1964
+  77399                              Incense for the Damned  1971
+  30833                                   Drive-In Massacre  1976
+ 399172                                  Lipstick and Blood  1984
+1015482                                 Kiss of the Serpent  1988
+  10283    Friday the 13th Part VIII: Jason Takes Manhattan  1989
+  88410                                         Beyond Evil  1980
+  86687                                        Severed Ties  1992
+ 336254                                            Downtime  1995
+  36992                                              Shakma  1990
+  43274                                     Tower of Terror  1997
+  15056                        The Curse of King Tut's Tomb  2006
+  23532                           How to Be a Serial Killer  2009
+  31012                                            Cerberus  2005
+  45551                                        Surveillance  2006
+ 156252                                              Phobic  2002
+ 743757                            Blood Orgy of the Damned  2007
+  11908                                             Hatchet  2006
+  28265                                 Lovesick: Sick Love  2004
+  28419                                         Hellbreeder  2004
+  53553                                            The Glow  2002
+  77050                                            Theodore  2009
+ 278267                                       The Dead Walk  2008
+ 165078                                      Legend of Hell  2012
+ 225048                                          Evangeline  2013
+ 233194                                       8 Butterflies  2010
+ 286452                                       Varsity Blood  2014
+ 300156                  The Interrogation of Cheryl Cooper  2014
+ 302019                                           Crow Hand  2014
+ 387034                                         Nasty Nancy  2010
+ 491649                                               Larry  2017
+ 505063                          Await Further Instructions  2018
+ 547055                                           Threshold  2016
+ 636515                                       Hidden Mother  2019
+ 653537                                            Whispers  2019
+ 772603                                               Money  2017
+ 974046                              House of White Spiders  2010
+ 976209                                     Midnight Thirst  2016
+  77677                                             Escapee  2011
+  94910                                          Magnificat  2011
+ 207475                                The Ouija Experiment  2011
+ 259675                                   Belly of the Wolf  2013
+ 343674                                       Gerald's Game  2017
+ 356486                                      Lumberjack Man  2015
+ 384756                                               Rabid  2019
+ 472015                                 Hunting for Shadows  2016
+ 487439                                                Itch  2017
+ 682809                                     Under the Table  2011
+ 748251                                     Vamp Bikers Dos  2015
+ 861413                                          A Dream...  2012
+ 940187                                      THE INQUISTION  2019
+ 972244                                     Darkness of Day  2010
+ 748589 Housesitter: The Night They Saved Siegfried's Brain  2020
+ 796250                                         Confinement  2022
+ 802851                                             Charles  2022
+ 854417                                              Bearry  2021
+ 863406                                       The Blue Rose  2024
+ 918096              Hemet, or the Landlady Don't Drink Tea  2024
+ 931049                                    Beware the Woods  2022
+1022479                                     You're Melting!  2022
+1083119                                 The Lost Chronicles  2023
+1125186                                      Home Education  2023
+1193824                                         Rabbit Trap  2025
+1289969                          The Battle of Grovers Mill  2024
+1298819                               Clickbait: Unfollowed  2024
+1307154                                    Sinister Surgeon  2024
+1375109                                    Darby After Dark  2024
+1397562                                              Coreys  2024
+1441287                                         House Rules  2024
+1443966                               How Was Your Weekend?  2025
+1475231                                            Bonehead  2025
+1718150                                              Curfew  2025
+ 652004                             The Wolf of Snow Hollow  2020
+ 931940                                             The Fix  2024
+ 949486                                               Doors  2020
+ 988142                           The Five Fingers of a Dog  2022
+1085262                                           Our House  2023
+1148920                                            Trial 22  2023
+1229586                                             Stutter  2024
+1273536                      Theoretical: The Invisible Man  2024
+1294319                                       Shades of Red  2024
+1346645                                                Lupo  2024
+1351896                                               Sally  2024
+1363776                                           Paralysis  2024
+1379480                                   Oliver's Basement  2024
+1405670                                             xOxExFx  2024
+1463113                                                Bone  2023
+1483020                                        Camp Baloney  2025
+1483743                                  up here, disappear  2025
+1541944                                       A Hollow Tree  2023
+1578643                                           Cymophane  2024
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+device=cuda
+append-results: kept 300 rows for models outside ['qwen']
+
+=== model=qwen device=cuda n=100 ===
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files:  50%|█████     | 1/2 [00:09<00:09,  9.63s/it]Fetching 2 files: 100%|██████████| 2/2 [00:39<00:00, 21.43s/it]Fetching 2 files: 100%|██████████| 2/2 [00:39<00:00, 19.66s/it]
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   5%|▍         | 35/729 [00:00<00:01, 349.05it/s]Loading weights:  12%|█▏        | 89/729 [00:00<00:01, 446.11it/s]Loading weights:  20%|██        | 148/729 [00:00<00:01, 493.54it/s]Loading weights:  29%|██▊       | 208/729 [00:00<00:00, 529.16it/s]Loading weights:  37%|███▋      | 267/729 [00:00<00:00, 536.68it/s]Loading weights:  45%|████▍     | 327/729 [00:00<00:00, 554.07it/s]Loading weights:  60%|█████▉    | 436/729 [00:00<00:00, 723.39it/s]Loading weights:  75%|███████▌  | 550/729 [00:00<00:00, 852.30it/s]Loading weights:  92%|█████████▏| 669/729 [00:00<00:00, 950.21it/s]Loading weights: 100%|██████████| 729/729 [00:00<00:00, 738.76it/s]
+  id=484509 status=ok chars=117 overlap=1.0 18.772s
+  id=1261561 status=ok chars=40 overlap=1.0 1.307s
+  id=362776 status=ok chars=20 overlap=1.0 1.159s
+  id=26921 status=ok chars=22 overlap=0.2 1.712s
+  id=212973 status=ok chars=1758 overlap=1.0 41.811s
+  id=48800 status=ok chars=114 overlap=1.0 2.17s
+  id=35073 status=ok chars=31 overlap=1.0 1.444s
+  id=836924 status=ok chars=35 overlap=1.0 1.326s
+  id=3104 status=ok chars=26 overlap=1.0 1.045s
+  id=64524 status=ok chars=9 overlap=1.0 0.923s
+  id=77399 status=ok chars=13 overlap=0.0 1.039s
+  id=30833 status=ok chars=17 overlap=1.0 1.158s
+  id=399172 status=ok chars=18 overlap=1.0 1.075s
+  id=1015482 status=ok chars=22 overlap=0.0 1.159s
+  id=10283 status=ok chars=37 overlap=0.75 2.799s
+  id=88410 status=ok chars=11 overlap=1.0 1.077s
+  id=86687 status=ok chars=58 overlap=1.0 1.694s
+  id=336254 status=ok chars=8 overlap=1.0 2.229s
+  id=36992 status=ok chars=7 overlap=1.0 1.006s
+  id=43274 status=ok chars=15 overlap=1.0 0.963s
+  id=15056 status=ok chars=28 overlap=1.0 1.323s
+  id=23532 status=ok chars=25 overlap=1.0 2.505s
+  id=31012 status=ok chars=8 overlap=1.0 2.238s
+  id=45551 status=ok chars=12 overlap=1.0 2.225s
+  id=156252 status=ok chars=6 overlap=1.0 0.961s
+  id=743757 status=ok chars=24 overlap=1.0 1.321s
+  id=11908 status=ok chars=7 overlap=1.0 2.187s
+  id=28265 status=ok chars=17 overlap=0.3333 1.123s
+  id=28419 status=ok chars=250 overlap=1.0 5.168s
+  id=53553 status=ok chars=8 overlap=1.0 1.004s
+  id=77050 status=ok chars=73 overlap=1.0 1.948s
+  id=278267 status=ok chars=13 overlap=1.0 1.042s
+  id=165078 status=ok chars=60 overlap=1.0 1.482s
+  id=225048 status=ok chars=41 overlap=1.0 1.328s
+  id=233194 status=ok chars=12 overlap=0.0 1.048s
+  id=286452 status=ok chars=12 overlap=0.5 1.043s
+  id=300156 status=ok chars=34 overlap=1.0 1.124s
+  id=302019 status=ok chars=12 overlap=1.0 1.007s
+  id=387034 status=ok chars=372 overlap=1.0 19.31s
+  id=491649 status=ok chars=5 overlap=1.0 0.886s
+  id=505063 status=ok chars=26 overlap=1.0 0.967s
+  id=547055 status=ok chars=9 overlap=1.0 0.882s
+  id=636515 status=ok chars=32 overlap=1.0 1.209s
+  id=653537 status=ok chars=7 overlap=0.0 1.047s
+  id=772603 status=ok chars=139 overlap=1.0 3.351s
+  id=974046 status=ok chars=22 overlap=1.0 1.04s
+  id=976209 status=ok chars=15 overlap=1.0 1.005s
+  id=77677 status=ok chars=7 overlap=1.0 0.926s
+  id=94910 status=ok chars=10 overlap=1.0 1.048s
+  id=207475 status=ok chars=54 overlap=1.0 1.451s
+  id=259675 status=ok chars=17 overlap=1.0 0.944s
+  id=343674 status=ok chars=13 overlap=1.0 1.006s
+  id=356486 status=ok chars=14 overlap=1.0 1.085s
+  id=384756 status=ok chars=56 overlap=1.0 2.732s
+  id=472015 status=ok chars=101 overlap=1.0 2.573s
+  id=487439 status=ok chars=159 overlap=1.0 3.292s
+  id=682809 status=ok chars=234 overlap=1.0 3.411s
+  id=748251 status=ok chars=15 overlap=1.0 1.127s
+  id=861413 status=ok chars=113 overlap=1.0 2.615s
+  id=940187 status=ok chars=11 overlap=0.0 1.008s
+  id=972244 status=ok chars=44 overlap=1.0 1.365s
+  id=748589 status=ok chars=120 overlap=1.0 2.253s
+  id=796250 status=ok chars=11 overlap=1.0 2.196s
+  id=802851 status=ok chars=43 overlap=1.0 1.646s
+  id=854417 status=ok chars=29 overlap=1.0 1.208s
+  id=863406 status=ok chars=13 overlap=1.0 1.01s
+  id=918096 status=ok chars=38 overlap=1.0 1.619s
+  id=931049 status=ok chars=16 overlap=1.0 0.97s
+  id=1022479 status=ok chars=14 overlap=1.0 2.285s
+  id=1083119 status=ok chars=19 overlap=1.0 1.173s
+  id=1125186 status=ok chars=33 overlap=1.0 1.294s
+  id=1193824 status=ok chars=11 overlap=1.0 1.01s
+  id=1289969 status=ok chars=26 overlap=1.0 1.136s
+  id=1298819 status=ok chars=20 overlap=1.0 1.131s
+  id=1307154 status=ok chars=16 overlap=1.0 1.131s
+  id=1375109 status=ok chars=227 overlap=1.0 3.562s
+  id=1397562 status=ok chars=6 overlap=1.0 0.927s
+  id=1441287 status=ok chars=34 overlap=1.0 1.291s
+  id=1443966 status=ok chars=92 overlap=1.0 2.286s
+  id=1475231 status=ok chars=8 overlap=1.0 0.926s
+  id=1718150 status=ok chars=212 overlap=1.0 4.423s
+  id=652004 status=ok chars=23 overlap=1.0 1.05s
+  id=931940 status=ok chars=7 overlap=1.0 0.93s
+  id=949486 status=ok chars=52 overlap=1.0 1.29s
+  id=988142 status=ok chars=25 overlap=1.0 2.247s
+  id=1085262 status=ok chars=39 overlap=1.0 1.577s
+  id=1148920 status=ok chars=8 overlap=1.0 0.919s
+  id=1229586 status=ok chars=7 overlap=1.0 0.895s
+  id=1273536 status=ok chars=29 overlap=1.0 1.091s
+  id=1294319 status=ok chars=13 overlap=1.0 0.965s
+  id=1346645 status=ok chars=4 overlap=1.0 0.927s
+  id=1351896 status=ok chars=190 overlap=1.0 2.958s
+  id=1363776 status=ok chars=9 overlap=1.0 0.935s
+  id=1379480 status=ok chars=17 overlap=1.0 1.003s
+  id=1405670 status=ok chars=22 overlap=0.0 1.079s
+  id=1463113 status=ok chars=4 overlap=1.0 0.887s
+  id=1483020 status=ok chars=12 overlap=1.0 1.008s
+  id=1483743 status=ok chars=3071 overlap=0.6667 41.997s
+  id=1541944 status=ok chars=13 overlap=1.0 0.963s
+  id=1578643 status=ok chars=24 overlap=0.0 1.208s
+
+LISTO → data/qa/ocr_pilot_v2/results.csv (400 rows)
+model=qwen exit=0
+Completed 37.5 KiB/~44.1 KiB (776.2 KiB/s) with ~57 file(s) remaining (calculating...)upload: data/qa/ocr_pilot_v2/ocr_pilot_v2_aws.log to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/ocr_pilot_v2_aws.log
+Completed 37.5 KiB/~44.1 KiB (776.2 KiB/s) with ~56 file(s) remaining (calculating...)Completed 37.5 KiB/105.3 KiB (469.1 KiB/s) with 103 file(s) remaining                 upload: data/qa/ocr_pilot_v2/qwen/1193824.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1193824.txt
+Completed 37.5 KiB/105.3 KiB (469.1 KiB/s) with 102 file(s) remainingCompleted 37.6 KiB/105.3 KiB (349.9 KiB/s) with 102 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1261561.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1261561.txt
+Completed 37.6 KiB/105.3 KiB (349.9 KiB/s) with 101 file(s) remainingCompleted 37.6 KiB/105.3 KiB (289.1 KiB/s) with 101 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1273536.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1273536.txt
+Completed 37.6 KiB/105.3 KiB (289.1 KiB/s) with 100 file(s) remainingCompleted 37.6 KiB/105.3 KiB (244.3 KiB/s) with 100 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1346645.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1346645.txt
+Completed 37.6 KiB/105.3 KiB (244.3 KiB/s) with 99 file(s) remainingCompleted 37.6 KiB/105.3 KiB (210.1 KiB/s) with 99 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1298819.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1298819.txt
+Completed 37.6 KiB/105.3 KiB (210.1 KiB/s) with 98 file(s) remainingCompleted 37.6 KiB/105.3 KiB (187.0 KiB/s) with 98 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1307154.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1307154.txt
+Completed 37.6 KiB/105.3 KiB (187.0 KiB/s) with 97 file(s) remainingCompleted 37.6 KiB/105.3 KiB (165.2 KiB/s) with 97 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1294319.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1294319.txt
+Completed 37.6 KiB/105.3 KiB (165.2 KiB/s) with 96 file(s) remainingCompleted 37.8 KiB/105.3 KiB (139.9 KiB/s) with 96 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1351896.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1351896.txt
+Completed 37.8 KiB/105.3 KiB (139.9 KiB/s) with 95 file(s) remainingCompleted 37.8 KiB/105.3 KiB (128.3 KiB/s) with 95 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1363776.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1363776.txt
+Completed 37.8 KiB/105.3 KiB (128.3 KiB/s) with 94 file(s) remainingCompleted 37.9 KiB/105.3 KiB (118.0 KiB/s) with 94 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1289969.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1289969.txt
+Completed 37.9 KiB/105.3 KiB (118.0 KiB/s) with 93 file(s) remainingCompleted 37.9 KiB/105.3 KiB (113.6 KiB/s) with 93 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/10283.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/10283.txt
+Completed 37.9 KiB/105.3 KiB (113.6 KiB/s) with 92 file(s) remainingCompleted 37.9 KiB/105.3 KiB (110.5 KiB/s) with 92 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1022479.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1022479.txt
+Completed 37.9 KiB/105.3 KiB (110.5 KiB/s) with 91 file(s) remainingCompleted 37.9 KiB/105.3 KiB (109.8 KiB/s) with 91 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1229586.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1229586.txt
+Completed 37.9 KiB/105.3 KiB (109.8 KiB/s) with 90 file(s) remainingCompleted 37.9 KiB/105.3 KiB (109.2 KiB/s) with 90 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1015482.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1015482.txt
+Completed 37.9 KiB/105.3 KiB (109.2 KiB/s) with 89 file(s) remainingCompleted 38.0 KiB/105.3 KiB (108.6 KiB/s) with 89 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1083119.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1083119.txt
+Completed 38.0 KiB/105.3 KiB (108.6 KiB/s) with 88 file(s) remainingCompleted 38.0 KiB/105.3 KiB (106.9 KiB/s) with 88 file(s) remainingCompleted 38.0 KiB/105.3 KiB (105.7 KiB/s) with 88 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1148920.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1148920.txt
+Completed 38.0 KiB/105.3 KiB (105.7 KiB/s) with 87 file(s) remainingCompleted 38.0 KiB/105.3 KiB (105.3 KiB/s) with 87 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1125186.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1125186.txt
+Completed 38.0 KiB/105.3 KiB (105.3 KiB/s) with 86 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/11908.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/11908.txt
+Completed 38.0 KiB/105.3 KiB (105.3 KiB/s) with 85 file(s) remainingCompleted 38.2 KiB/105.3 KiB (105.0 KiB/s) with 85 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1375109.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1375109.txt
+Completed 38.2 KiB/105.3 KiB (105.0 KiB/s) with 84 file(s) remainingCompleted 38.3 KiB/105.3 KiB (103.5 KiB/s) with 84 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1085262.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1085262.txt
+Completed 38.3 KiB/105.3 KiB (103.5 KiB/s) with 83 file(s) remainingCompleted 38.3 KiB/105.3 KiB (101.8 KiB/s) with 83 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1379480.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1379480.txt
+Completed 38.3 KiB/105.3 KiB (101.8 KiB/s) with 82 file(s) remainingCompleted 38.3 KiB/105.3 KiB (93.7 KiB/s) with 82 file(s) remaining upload: data/qa/ocr_pilot_v2/qwen/165078.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/165078.txt
+Completed 38.3 KiB/105.3 KiB (93.7 KiB/s) with 81 file(s) remainingCompleted 38.3 KiB/105.3 KiB (92.3 KiB/s) with 81 file(s) remainingCompleted 38.4 KiB/105.3 KiB (92.3 KiB/s) with 81 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1405670.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1405670.txt
+Completed 38.4 KiB/105.3 KiB (92.3 KiB/s) with 80 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/156252.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/156252.txt
+Completed 38.4 KiB/105.3 KiB (92.3 KiB/s) with 79 file(s) remainingCompleted 38.4 KiB/105.3 KiB (91.7 KiB/s) with 79 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/15056.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/15056.txt
+Completed 38.4 KiB/105.3 KiB (91.7 KiB/s) with 78 file(s) remainingCompleted 41.4 KiB/105.3 KiB (98.4 KiB/s) with 78 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1483743.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1483743.txt
+Completed 41.4 KiB/105.3 KiB (98.4 KiB/s) with 77 file(s) remainingCompleted 41.4 KiB/105.3 KiB (98.1 KiB/s) with 77 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1541944.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1541944.txt
+Completed 41.4 KiB/105.3 KiB (98.1 KiB/s) with 76 file(s) remainingCompleted 41.4 KiB/105.3 KiB (97.6 KiB/s) with 76 file(s) remainingCompleted 41.6 KiB/105.3 KiB (98.0 KiB/s) with 76 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1718150.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1718150.txt
+Completed 41.6 KiB/105.3 KiB (98.0 KiB/s) with 75 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1578643.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1578643.txt
+Completed 41.6 KiB/105.3 KiB (98.0 KiB/s) with 74 file(s) remainingCompleted 41.6 KiB/105.3 KiB (97.2 KiB/s) with 74 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1483020.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1483020.txt
+Completed 41.6 KiB/105.3 KiB (97.2 KiB/s) with 73 file(s) remainingCompleted 41.7 KiB/105.3 KiB (95.4 KiB/s) with 73 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/207475.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/207475.txt
+Completed 41.7 KiB/105.3 KiB (95.4 KiB/s) with 72 file(s) remainingCompleted 43.4 KiB/105.3 KiB (96.9 KiB/s) with 72 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/212973.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/212973.txt
+Completed 43.4 KiB/105.3 KiB (96.9 KiB/s) with 71 file(s) remainingCompleted 43.5 KiB/105.3 KiB (96.6 KiB/s) with 71 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/225048.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/225048.txt
+Completed 43.5 KiB/105.3 KiB (96.6 KiB/s) with 70 file(s) remainingCompleted 43.5 KiB/105.3 KiB (96.2 KiB/s) with 70 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/233194.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/233194.txt
+Completed 43.5 KiB/105.3 KiB (96.2 KiB/s) with 69 file(s) remainingCompleted 43.5 KiB/105.3 KiB (95.6 KiB/s) with 69 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/259675.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/259675.txt
+Completed 43.5 KiB/105.3 KiB (95.6 KiB/s) with 68 file(s) remainingCompleted 43.5 KiB/105.3 KiB (94.5 KiB/s) with 68 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1397562.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1397562.txt
+Completed 43.5 KiB/105.3 KiB (94.5 KiB/s) with 67 file(s) remainingCompleted 43.5 KiB/105.3 KiB (94.2 KiB/s) with 67 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/278267.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/278267.txt
+Completed 43.5 KiB/105.3 KiB (94.2 KiB/s) with 66 file(s) remainingCompleted 43.5 KiB/105.3 KiB (93.3 KiB/s) with 66 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/28265.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/28265.txt
+Completed 43.5 KiB/105.3 KiB (93.3 KiB/s) with 65 file(s) remainingCompleted 43.5 KiB/105.3 KiB (93.0 KiB/s) with 65 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/23532.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/23532.txt
+Completed 43.5 KiB/105.3 KiB (93.0 KiB/s) with 64 file(s) remainingCompleted 43.8 KiB/105.3 KiB (92.0 KiB/s) with 64 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/28419.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/28419.txt
+Completed 43.8 KiB/105.3 KiB (92.0 KiB/s) with 63 file(s) remainingCompleted 43.8 KiB/105.3 KiB (91.4 KiB/s) with 63 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/26921.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/26921.txt
+Completed 43.8 KiB/105.3 KiB (91.4 KiB/s) with 62 file(s) remainingCompleted 43.8 KiB/105.3 KiB (87.5 KiB/s) with 62 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/30833.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/30833.txt
+Completed 43.8 KiB/105.3 KiB (87.5 KiB/s) with 61 file(s) remainingCompleted 43.8 KiB/105.3 KiB (86.6 KiB/s) with 61 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1463113.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1463113.txt
+Completed 43.8 KiB/105.3 KiB (86.6 KiB/s) with 60 file(s) remainingCompleted 43.9 KiB/105.3 KiB (86.3 KiB/s) with 60 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/300156.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/300156.txt
+Completed 43.9 KiB/105.3 KiB (86.3 KiB/s) with 59 file(s) remainingCompleted 43.9 KiB/105.3 KiB (86.0 KiB/s) with 59 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/336254.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/336254.txt
+Completed 43.9 KiB/105.3 KiB (86.0 KiB/s) with 58 file(s) remainingCompleted 43.9 KiB/105.3 KiB (85.4 KiB/s) with 58 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1475231.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1475231.txt
+Completed 43.9 KiB/105.3 KiB (85.4 KiB/s) with 57 file(s) remainingCompleted 43.9 KiB/105.3 KiB (85.0 KiB/s) with 57 file(s) remainingCompleted 43.9 KiB/105.3 KiB (85.0 KiB/s) with 57 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/31012.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/31012.txt
+Completed 43.9 KiB/105.3 KiB (85.0 KiB/s) with 56 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/286452.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/286452.txt
+Completed 43.9 KiB/105.3 KiB (85.0 KiB/s) with 55 file(s) remainingCompleted 43.9 KiB/105.3 KiB (82.7 KiB/s) with 55 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/302019.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/302019.txt
+Completed 43.9 KiB/105.3 KiB (82.7 KiB/s) with 54 file(s) remainingCompleted 43.9 KiB/105.3 KiB (81.9 KiB/s) with 54 file(s) remainingCompleted 44.0 KiB/105.3 KiB (80.5 KiB/s) with 54 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1441287.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1441287.txt
+Completed 44.0 KiB/105.3 KiB (80.5 KiB/s) with 53 file(s) remainingCompleted 44.0 KiB/105.3 KiB (78.7 KiB/s) with 53 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/362776.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/362776.txt
+Completed 44.0 KiB/105.3 KiB (78.7 KiB/s) with 52 file(s) remainingCompleted 44.1 KiB/105.3 KiB (78.7 KiB/s) with 52 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/1443966.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/1443966.txt
+Completed 44.1 KiB/105.3 KiB (78.7 KiB/s) with 51 file(s) remainingCompleted 44.1 KiB/105.3 KiB (78.4 KiB/s) with 51 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/3104.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/3104.txt
+Completed 44.1 KiB/105.3 KiB (78.4 KiB/s) with 50 file(s) remainingCompleted 44.1 KiB/105.3 KiB (78.2 KiB/s) with 50 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/35073.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/35073.txt
+Completed 44.1 KiB/105.3 KiB (78.2 KiB/s) with 49 file(s) remainingCompleted 44.1 KiB/105.3 KiB (78.0 KiB/s) with 49 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/36992.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/36992.txt
+Completed 44.1 KiB/105.3 KiB (78.0 KiB/s) with 48 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/343674.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/343674.txt
+Completed 44.1 KiB/105.3 KiB (78.0 KiB/s) with 47 file(s) remainingCompleted 44.1 KiB/105.3 KiB (77.7 KiB/s) with 47 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/399172.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/399172.txt
+Completed 44.1 KiB/105.3 KiB (77.7 KiB/s) with 46 file(s) remainingCompleted 44.2 KiB/105.3 KiB (75.0 KiB/s) with 46 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/356486.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/356486.txt
+Completed 44.2 KiB/105.3 KiB (75.0 KiB/s) with 45 file(s) remainingCompleted 44.3 KiB/105.3 KiB (73.0 KiB/s) with 45 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/48800.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/48800.txt
+Completed 44.3 KiB/105.3 KiB (73.0 KiB/s) with 44 file(s) remainingCompleted 44.3 KiB/105.3 KiB (71.9 KiB/s) with 44 file(s) remainingCompleted 44.5 KiB/105.3 KiB (72.1 KiB/s) with 44 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/384756.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/384756.txt
+Completed 44.5 KiB/105.3 KiB (72.1 KiB/s) with 43 file(s) remainingCompleted 44.5 KiB/105.3 KiB (71.9 KiB/s) with 43 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/43274.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/43274.txt
+Completed 44.5 KiB/105.3 KiB (71.9 KiB/s) with 42 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/487439.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/487439.txt
+Completed 44.5 KiB/105.3 KiB (71.9 KiB/s) with 41 file(s) remainingCompleted 44.5 KiB/105.3 KiB (71.6 KiB/s) with 41 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/45551.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/45551.txt
+Completed 44.5 KiB/105.3 KiB (71.6 KiB/s) with 40 file(s) remainingCompleted 44.5 KiB/105.3 KiB (71.3 KiB/s) with 40 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/491649.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/491649.txt
+Completed 44.5 KiB/105.3 KiB (71.3 KiB/s) with 39 file(s) remainingCompleted 44.6 KiB/105.3 KiB (71.3 KiB/s) with 39 file(s) remainingCompleted 45.0 KiB/105.3 KiB (71.8 KiB/s) with 39 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/387034.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/387034.txt
+Completed 45.0 KiB/105.3 KiB (71.8 KiB/s) with 38 file(s) remainingCompleted 45.1 KiB/105.3 KiB (71.8 KiB/s) with 38 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/472015.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/472015.txt
+Completed 45.1 KiB/105.3 KiB (71.8 KiB/s) with 37 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/484509.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/484509.txt
+Completed 45.1 KiB/105.3 KiB (71.8 KiB/s) with 36 file(s) remainingCompleted 45.1 KiB/105.3 KiB (71.5 KiB/s) with 36 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/505063.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/505063.txt
+Completed 45.1 KiB/105.3 KiB (71.5 KiB/s) with 35 file(s) remainingCompleted 45.1 KiB/105.3 KiB (69.5 KiB/s) with 35 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/64524.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/64524.txt
+Completed 45.1 KiB/105.3 KiB (69.5 KiB/s) with 34 file(s) remainingCompleted 45.1 KiB/105.3 KiB (69.3 KiB/s) with 34 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/53553.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/53553.txt
+Completed 45.1 KiB/105.3 KiB (69.3 KiB/s) with 33 file(s) remainingCompleted 45.1 KiB/105.3 KiB (69.1 KiB/s) with 33 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/547055.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/547055.txt
+Completed 45.1 KiB/105.3 KiB (69.1 KiB/s) with 32 file(s) remainingCompleted 45.2 KiB/105.3 KiB (68.9 KiB/s) with 32 file(s) remainingCompleted 45.2 KiB/105.3 KiB (68.9 KiB/s) with 32 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/653537.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/653537.txt
+Completed 45.2 KiB/105.3 KiB (68.9 KiB/s) with 31 file(s) remainingCompleted 45.3 KiB/105.3 KiB (68.9 KiB/s) with 31 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/748589.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/748589.txt
+Completed 45.3 KiB/105.3 KiB (68.9 KiB/s) with 30 file(s) remainingCompleted 45.3 KiB/105.3 KiB (68.7 KiB/s) with 30 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/743757.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/743757.txt
+Completed 45.3 KiB/105.3 KiB (68.7 KiB/s) with 29 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/652004.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/652004.txt
+Completed 45.3 KiB/105.3 KiB (68.7 KiB/s) with 28 file(s) remainingCompleted 45.3 KiB/105.3 KiB (68.4 KiB/s) with 28 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/636515.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/636515.txt
+Completed 45.3 KiB/105.3 KiB (68.4 KiB/s) with 27 file(s) remainingCompleted 45.6 KiB/105.3 KiB (68.5 KiB/s) with 27 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/682809.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/682809.txt
+Completed 45.6 KiB/105.3 KiB (68.5 KiB/s) with 26 file(s) remainingCompleted 45.6 KiB/105.3 KiB (68.3 KiB/s) with 26 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/748251.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/748251.txt
+Completed 45.6 KiB/105.3 KiB (68.3 KiB/s) with 25 file(s) remainingCompleted 45.6 KiB/105.3 KiB (66.7 KiB/s) with 25 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/77677.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/77677.txt
+Completed 45.6 KiB/105.3 KiB (66.7 KiB/s) with 24 file(s) remainingCompleted 45.7 KiB/105.3 KiB (66.7 KiB/s) with 24 file(s) remainingCompleted 45.8 KiB/105.3 KiB (66.7 KiB/s) with 24 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/772603.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/772603.txt
+Completed 45.8 KiB/105.3 KiB (66.7 KiB/s) with 23 file(s) remainingCompleted 45.8 KiB/105.3 KiB (66.6 KiB/s) with 23 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/836924.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/836924.txt
+Completed 45.8 KiB/105.3 KiB (66.6 KiB/s) with 22 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/854417.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/854417.txt
+Completed 45.8 KiB/105.3 KiB (66.6 KiB/s) with 21 file(s) remainingCompleted 45.8 KiB/105.3 KiB (66.2 KiB/s) with 21 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/77399.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/77399.txt
+Completed 45.8 KiB/105.3 KiB (66.2 KiB/s) with 20 file(s) remainingCompleted 45.8 KiB/105.3 KiB (66.1 KiB/s) with 20 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/796250.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/796250.txt
+Completed 45.8 KiB/105.3 KiB (66.1 KiB/s) with 19 file(s) remainingCompleted 45.9 KiB/105.3 KiB (66.0 KiB/s) with 19 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/861413.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/861413.txt
+Completed 45.9 KiB/105.3 KiB (66.0 KiB/s) with 18 file(s) remainingCompleted 46.0 KiB/105.3 KiB (65.9 KiB/s) with 18 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/802851.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/802851.txt
+Completed 46.0 KiB/105.3 KiB (65.9 KiB/s) with 17 file(s) remainingCompleted 46.0 KiB/105.3 KiB (65.8 KiB/s) with 17 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/77050.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/77050.txt
+Completed 46.0 KiB/105.3 KiB (65.8 KiB/s) with 16 file(s) remainingCompleted 46.1 KiB/105.3 KiB (64.0 KiB/s) with 16 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/86687.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/86687.txt
+Completed 46.1 KiB/105.3 KiB (64.0 KiB/s) with 15 file(s) remainingCompleted 46.1 KiB/105.3 KiB (63.9 KiB/s) with 15 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/931049.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/931049.txt
+Completed 46.1 KiB/105.3 KiB (63.9 KiB/s) with 14 file(s) remainingCompleted 46.1 KiB/105.3 KiB (63.7 KiB/s) with 14 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/88410.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/88410.txt
+Completed 46.1 KiB/105.3 KiB (63.7 KiB/s) with 13 file(s) remainingCompleted 46.2 KiB/105.3 KiB (63.6 KiB/s) with 13 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/918096.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/918096.txt
+Completed 46.2 KiB/105.3 KiB (63.6 KiB/s) with 12 file(s) remainingCompleted 46.2 KiB/105.3 KiB (63.5 KiB/s) with 12 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/863406.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/863406.txt
+Completed 46.2 KiB/105.3 KiB (63.5 KiB/s) with 11 file(s) remainingCompleted 46.2 KiB/105.3 KiB (63.3 KiB/s) with 11 file(s) remainingCompleted 46.2 KiB/105.3 KiB (63.3 KiB/s) with 11 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/931940.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/931940.txt
+Completed 46.2 KiB/105.3 KiB (63.3 KiB/s) with 10 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/94910.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/94910.txt
+Completed 46.2 KiB/105.3 KiB (63.3 KiB/s) with 9 file(s) remainingCompleted 46.2 KiB/105.3 KiB (63.2 KiB/s) with 9 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/974046.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/974046.txt
+Completed 46.2 KiB/105.3 KiB (63.2 KiB/s) with 8 file(s) remainingCompleted 46.3 KiB/105.3 KiB (63.1 KiB/s) with 8 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/949486.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/949486.txt
+Completed 46.3 KiB/105.3 KiB (63.1 KiB/s) with 7 file(s) remainingCompleted 46.3 KiB/105.3 KiB (61.9 KiB/s) with 7 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/940187.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/940187.txt
+Completed 46.3 KiB/105.3 KiB (61.9 KiB/s) with 6 file(s) remainingCompleted 46.3 KiB/105.3 KiB (61.7 KiB/s) with 6 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/976209.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/976209.txt
+Completed 46.3 KiB/105.3 KiB (61.7 KiB/s) with 5 file(s) remainingCompleted 46.3 KiB/105.3 KiB (61.7 KiB/s) with 5 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/988142.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/988142.txt
+Completed 46.3 KiB/105.3 KiB (61.7 KiB/s) with 4 file(s) remainingCompleted 46.4 KiB/105.3 KiB (60.9 KiB/s) with 4 file(s) remainingupload: data/qa/ocr_pilot_v2/qwen/972244.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/qwen/972244.txt
+Completed 46.4 KiB/105.3 KiB (60.9 KiB/s) with 3 file(s) remainingCompleted 101.9 KiB/105.3 KiB (133.7 KiB/s) with 3 file(s) remainingupload: data/qa/ocr_pilot_v2/results.csv to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/results.csv
+Completed 101.9 KiB/105.3 KiB (133.7 KiB/s) with 2 file(s) remainingCompleted 102.6 KiB/105.3 KiB (132.4 KiB/s) with 2 file(s) remainingupload: data/qa/ocr_pilot_v2/sample_ids.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/sample_ids.txt
+Completed 102.6 KiB/105.3 KiB (132.4 KiB/s) with 1 file(s) remainingCompleted 105.3 KiB/105.3 KiB (131.9 KiB/s) with 1 file(s) remainingupload: data/qa/ocr_pilot_v2/sample_meta.csv to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/sample_meta.csv
+[checkpoint] synced after qwen
+--- run model=deepseek Wed Jul 29 16:07:26 UTC 2026 ---
+pinning transformers==4.46.3 for DeepSeek-OCR
+sample n=100 → data/qa/ocr_pilot_v2/sample_ids.txt
+     id                                               title  year
+ 484509                                         Just Spooks  1925
+1261561                                    The Monkey's Paw  1923
+ 362776                                  Ghost Town Frolics  1938
+  26921                     The Mystery of the Mary Celeste  1935
+ 212973                                Gildersleeve's Ghost  1944
+  48800                                         The Unknown  1946
+  35073                       The Beast from 20,000 Fathoms  1953
+ 836924                                         Roh Membela  1955
+   3104                          Frankenstein Created Woman  1967
+  64524                                           Nightmare  1964
+  77399                              Incense for the Damned  1971
+  30833                                   Drive-In Massacre  1976
+ 399172                                  Lipstick and Blood  1984
+1015482                                 Kiss of the Serpent  1988
+  10283    Friday the 13th Part VIII: Jason Takes Manhattan  1989
+  88410                                         Beyond Evil  1980
+  86687                                        Severed Ties  1992
+ 336254                                            Downtime  1995
+  36992                                              Shakma  1990
+  43274                                     Tower of Terror  1997
+  15056                        The Curse of King Tut's Tomb  2006
+  23532                           How to Be a Serial Killer  2009
+  31012                                            Cerberus  2005
+  45551                                        Surveillance  2006
+ 156252                                              Phobic  2002
+ 743757                            Blood Orgy of the Damned  2007
+  11908                                             Hatchet  2006
+  28265                                 Lovesick: Sick Love  2004
+  28419                                         Hellbreeder  2004
+  53553                                            The Glow  2002
+  77050                                            Theodore  2009
+ 278267                                       The Dead Walk  2008
+ 165078                                      Legend of Hell  2012
+ 225048                                          Evangeline  2013
+ 233194                                       8 Butterflies  2010
+ 286452                                       Varsity Blood  2014
+ 300156                  The Interrogation of Cheryl Cooper  2014
+ 302019                                           Crow Hand  2014
+ 387034                                         Nasty Nancy  2010
+ 491649                                               Larry  2017
+ 505063                          Await Further Instructions  2018
+ 547055                                           Threshold  2016
+ 636515                                       Hidden Mother  2019
+ 653537                                            Whispers  2019
+ 772603                                               Money  2017
+ 974046                              House of White Spiders  2010
+ 976209                                     Midnight Thirst  2016
+  77677                                             Escapee  2011
+  94910                                          Magnificat  2011
+ 207475                                The Ouija Experiment  2011
+ 259675                                   Belly of the Wolf  2013
+ 343674                                       Gerald's Game  2017
+ 356486                                      Lumberjack Man  2015
+ 384756                                               Rabid  2019
+ 472015                                 Hunting for Shadows  2016
+ 487439                                                Itch  2017
+ 682809                                     Under the Table  2011
+ 748251                                     Vamp Bikers Dos  2015
+ 861413                                          A Dream...  2012
+ 940187                                      THE INQUISTION  2019
+ 972244                                     Darkness of Day  2010
+ 748589 Housesitter: The Night They Saved Siegfried's Brain  2020
+ 796250                                         Confinement  2022
+ 802851                                             Charles  2022
+ 854417                                              Bearry  2021
+ 863406                                       The Blue Rose  2024
+ 918096              Hemet, or the Landlady Don't Drink Tea  2024
+ 931049                                    Beware the Woods  2022
+1022479                                     You're Melting!  2022
+1083119                                 The Lost Chronicles  2023
+1125186                                      Home Education  2023
+1193824                                         Rabbit Trap  2025
+1289969                          The Battle of Grovers Mill  2024
+1298819                               Clickbait: Unfollowed  2024
+1307154                                    Sinister Surgeon  2024
+1375109                                    Darby After Dark  2024
+1397562                                              Coreys  2024
+1441287                                         House Rules  2024
+1443966                               How Was Your Weekend?  2025
+1475231                                            Bonehead  2025
+1718150                                              Curfew  2025
+ 652004                             The Wolf of Snow Hollow  2020
+ 931940                                             The Fix  2024
+ 949486                                               Doors  2020
+ 988142                           The Five Fingers of a Dog  2022
+1085262                                           Our House  2023
+1148920                                            Trial 22  2023
+1229586                                             Stutter  2024
+1273536                      Theoretical: The Invisible Man  2024
+1294319                                       Shades of Red  2024
+1346645                                                Lupo  2024
+1351896                                               Sally  2024
+1363776                                           Paralysis  2024
+1379480                                   Oliver's Basement  2024
+1405670                                             xOxExFx  2024
+1463113                                                Bone  2023
+1483020                                        Camp Baloney  2025
+1483743                                  up here, disappear  2025
+1541944                                       A Hollow Tree  2023
+1578643                                           Cymophane  2024
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+device=cuda
+append-results: kept 400 rows for models outside ['deepseek']
+
+=== model=deepseek device=cuda n=100 ===
+/opt/pytorch/lib/python3.13/site-packages/transformers/utils/hub.py:128: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+The cache for model files in Transformers v4.22.0 has been updated. Migrating your old cache. This is a one-time only operation. You can interrupt this and resume the migration later on by calling `transformers.utils.move_cache()`.
+0it [00:00, ?it/s]0it [00:00, ?it/s]
+A new version of the following files was downloaded from https://huggingface.co/deepseek-ai/DeepSeek-OCR:
+- configuration_deepseek_v2.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+A new version of the following files was downloaded from https://huggingface.co/deepseek-ai/DeepSeek-OCR:
+- modeling_deepseekv2.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+A new version of the following files was downloaded from https://huggingface.co/deepseek-ai/DeepSeek-OCR:
+- conversation.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+A new version of the following files was downloaded from https://huggingface.co/deepseek-ai/DeepSeek-OCR:
+- deepencoder.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+A new version of the following files was downloaded from https://huggingface.co/deepseek-ai/DeepSeek-OCR:
+- modeling_deepseekocr.py
+- configuration_deepseek_v2.py
+- modeling_deepseekv2.py
+- conversation.py
+- deepencoder.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+You are using a model of type deepseek_vl_v2 to instantiate a model of type DeepseekOCR. This is not supported for all configurations of models and can yield errors.
+A new version of the following files was downloaded from https://huggingface.co/deepseek-ai/DeepSeek-OCR:
+- modeling_deepseekocr.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+Downloading shards:   0%|          | 0/1 [00:00<?, ?it/s]Downloading shards: 100%|██████████| 1/1 [00:57<00:00, 57.73s/it]Downloading shards: 100%|██████████| 1/1 [00:57<00:00, 57.73s/it]
+A new version of the following files was downloaded from https://huggingface.co/deepseek-ai/DeepSeek-OCR:
+- modeling_deepseekocr.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+Downloading shards:   0%|          | 0/1 [00:00<?, ?it/s]Downloading shards: 100%|██████████| 1/1 [00:00<00:00, 7269.16it/s]
+Some weights of DeepseekOCRForCausalLM were not initialized from the model checkpoint at deepseek-ai/DeepSeek-OCR and are newly initialized: ['model.vision_model.embeddings.position_ids']
+You should probably TRAIN this model on a down-stream task to be able to use it for predictions and inference.
+  deepseek loaded: deepseek-ai/DeepSeek-OCR
+/opt/pytorch/lib/python3.13/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+The `seen_tokens` attribute is deprecated and will be removed in v4.41. Use the `cache_position` model input instead.
+`get_max_cache()` is deprecated for all Cache classes. Use `get_max_cache_shape()` instead. Calling `get_max_cache()` will raise error from v4.48
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+The attention layers in this model are transitioning from computing the RoPE embeddings internally through `position_ids` (2D tensor with the indexes of the tokens), to using externally computed `position_embeddings` (Tuple of tensors, containing cos and sin). In v4.46 `position_ids` will be removed and `position_embeddings` will be mandatory.
+  id=484509 status=ok chars=133 overlap=1.0 6.628s
+/opt/pytorch/lib/python3.13/site-packages/transformers/generation/configuration_utils.py:590: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.0` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1261561 status=ok chars=229 overlap=1.0 2.646s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=362776 status=ok chars=70 overlap=1.0 1.869s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=26921 status=ok chars=33 overlap=1.0 1.483s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=212973 status=ok chars=244 overlap=0.0 3.378s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=48800 status=ok chars=175 overlap=1.0 3.034s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=35073 status=ok chars=38 overlap=0.8333 1.415s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=836924 status=ok chars=39 overlap=1.0 1.478s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=3104 status=ok chars=28 overlap=1.0 1.265s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=64524 status=ok chars=9 overlap=1.0 1.051s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=77399 status=ok chars=13 overlap=0.0 1.116s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=30833 status=ok chars=19 overlap=1.0 1.189s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=399172 status=ok chars=18 overlap=0.6667 1.108s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1015482 status=ok chars=45 overlap=0.0 1.412s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+PATCHES:  torch.Size([6, 100, 1280])
+=====================
+  id=10283 status=ok chars=39 overlap=0.75 3.07s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=88410 status=ok chars=13 overlap=1.0 1.125s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=86687 status=ok chars=61 overlap=1.0 1.599s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+PATCHES:  torch.Size([6, 100, 1280])
+=====================
+  id=336254 status=ok chars=8 overlap=1.0 2.353s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=36992 status=ok chars=8 overlap=0.0 1.059s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=43274 status=ok chars=25 overlap=1.0 1.314s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=15056 status=ok chars=30 overlap=1.0 1.483s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+PATCHES:  torch.Size([6, 100, 1280])
+=====================
+  id=23532 status=ok chars=29 overlap=1.0 2.695s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+PATCHES:  torch.Size([6, 100, 1280])
+=====================
+  id=31012 status=ok chars=8 overlap=1.0 2.387s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+PATCHES:  torch.Size([6, 100, 1280])
+=====================
+  id=45551 status=ok chars=12 overlap=1.0 2.603s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=156252 status=ok chars=6 overlap=1.0 1.021s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=743757 status=ok chars=85 overlap=0.8 1.885s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+PATCHES:  torch.Size([6, 100, 1280])
+=====================
+  id=11908 status=ok chars=7 overlap=1.0 2.39s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=28265 status=ok chars=19 overlap=0.3333 1.237s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+PATCHES:  torch.Size([6, 100, 1280])
+=====================
+  id=28419 status=ok chars=430 overlap=1.0 8.702s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=53553 status=ok chars=10 overlap=1.0 1.062s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=77050 status=ok chars=83 overlap=1.0 2.104s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=278267 status=ok chars=3096 overlap=1.0 38.417s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=165078 status=ok chars=252 overlap=0.3333 4.201s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=225048 status=ok chars=46 overlap=1.0 1.565s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=233194 status=ok chars=719 overlap=0.0 14.17s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=286452 status=ok chars=15 overlap=0.0 1.166s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=300156 status=ok chars=88 overlap=1.0 2.154s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=302019 status=ok chars=38 overlap=0.0 2.269s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+PATCHES:  torch.Size([6, 100, 1280])
+=====================
+  id=387034 status=ok chars=398 overlap=1.0 8.575s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=491649 status=ok chars=5 overlap=1.0 0.977s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=505063 status=ok chars=26 overlap=1.0 1.24s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=547055 status=ok chars=9 overlap=1.0 1.058s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=636515 status=ok chars=39 overlap=1.0 1.458s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=653537 status=ok chars=5 overlap=0.0 1.012s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=772603 status=ok chars=233 overlap=1.0 4.407s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=974046 status=ok chars=150 overlap=1.0 2.543s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=976209 status=ok chars=111 overlap=0.5 2.566s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=77677 status=ok chars=7 overlap=1.0 1.019s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=94910 status=ok chars=10 overlap=1.0 1.093s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=207475 status=ok chars=55 overlap=1.0 1.669s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=259675 status=ok chars=225 overlap=1.0 4.338s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=343674 status=ok chars=15 overlap=1.0 1.128s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=356486 status=ok chars=14 overlap=1.0 1.091s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+PATCHES:  torch.Size([6, 100, 1280])
+=====================
+  id=384756 status=ok chars=63 overlap=0.0 3.023s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=472015 status=ok chars=117 overlap=0.6667 2.718s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=487439 status=ok chars=538 overlap=1.0 8.971s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=682809 status=ok chars=583 overlap=1.0 8.975s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=748251 status=ok chars=17 overlap=0.6667 1.124s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=861413 status=ok chars=397 overlap=1.0 7.707s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=940187 status=ok chars=63 overlap=0.0 1.816s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=972244 status=ok chars=584 overlap=1.0 9.632s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=748589 status=ok chars=361 overlap=1.0 5.901s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+PATCHES:  torch.Size([6, 100, 1280])
+=====================
+  id=796250 status=ok chars=312 overlap=1.0 6.727s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=802851 status=ok chars=48 overlap=1.0 1.596s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=854417 status=ok chars=31 overlap=1.0 1.348s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=863406 status=ok chars=17 overlap=0.6667 1.165s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=918096 status=ok chars=47 overlap=1.0 1.524s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=931049 status=ok chars=180 overlap=0.6667 2.76s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+PATCHES:  torch.Size([6, 100, 1280])
+=====================
+  id=1022479 status=ok chars=22 overlap=0.0 2.718s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1083119 status=ok chars=23 overlap=1.0 1.244s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1125186 status=ok chars=78 overlap=1.0 1.937s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1193824 status=ok chars=11 overlap=1.0 1.013s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1289969 status=ok chars=319 overlap=0.6 4.951s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1298819 status=ok chars=22 overlap=1.0 1.243s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1307154 status=ok chars=17 overlap=0.5 1.166s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1375109 status=ok chars=1110 overlap=1.0 17.173s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1397562 status=ok chars=6 overlap=1.0 1.015s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1441287 status=ok chars=61 overlap=1.0 1.745s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1443966 status=ok chars=137 overlap=1.0 2.881s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1475231 status=ok chars=151 overlap=1.0 2.818s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1718150 status=ok chars=275 overlap=1.0 4.676s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=652004 status=ok chars=23 overlap=1.0 1.088s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=931940 status=ok chars=7 overlap=1.0 1.019s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=949486 status=ok chars=359 overlap=1.0 5.861s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+PATCHES:  torch.Size([6, 100, 1280])
+=====================
+  id=988142 status=ok chars=27 overlap=1.0 2.81s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1085262 status=ok chars=45 overlap=1.0 1.6s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1148920 status=ok chars=38 overlap=0.5 1.564s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1229586 status=ok chars=7 overlap=1.0 1.018s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1273536 status=ok chars=18 overlap=0.5 1.055s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1294319 status=ok chars=13 overlap=1.0 1.059s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1346645 status=ok chars=4 overlap=1.0 1.022s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1351896 status=ok chars=205 overlap=1.0 2.819s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1363776 status=ok chars=9 overlap=1.0 1.017s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1379480 status=ok chars=17 overlap=1.0 1.055s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1405670 status=ok chars=22 overlap=0.0 1.093s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1463113 status=ok chars=4 overlap=1.0 0.984s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1483020 status=ok chars=14 overlap=1.0 1.167s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1483743 status=ok chars=122 overlap=0.6667 2.571s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1541944 status=ok chars=13 overlap=1.0 1.022s
+=====================
+BASE:  torch.Size([1, 256, 1280])
+NO PATCHES
+=====================
+  id=1578643 status=ok chars=37 overlap=0.0 1.453s
+
+LISTO → data/qa/ocr_pilot_v2/results.csv (500 rows)
+restoring transformers>=4.51.0 after deepseek
+model=deepseek exit=0
+Completed 22 Bytes/~2.5 KiB (562 Bytes/s) with ~26 file(s) remaining (calculating...)upload: data/qa/ocr_pilot_v2/deepseek/1022479.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1022479.txt
+Completed 22 Bytes/~2.5 KiB (562 Bytes/s) with ~25 file(s) remaining (calculating...)Completed 251 Bytes/~102.6 KiB (3.1 KiB/s) with ~99 file(s) remaining (calculating...)upload: data/qa/ocr_pilot_v2/deepseek/1261561.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1261561.txt
+Completed 251 Bytes/~102.6 KiB (3.1 KiB/s) with ~98 file(s) remaining (calculating...)Completed 269 Bytes/~102.7 KiB (2.5 KiB/s) with ~99 file(s) remaining (calculating...)upload: data/qa/ocr_pilot_v2/deepseek/1273536.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1273536.txt
+Completed 269 Bytes/~102.7 KiB (2.5 KiB/s) with ~98 file(s) remaining (calculating...)Completed 588 Bytes/181.6 KiB (3.5 KiB/s) with 101 file(s) remaining                  upload: data/qa/ocr_pilot_v2/deepseek/1289969.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1289969.txt
+Completed 588 Bytes/181.6 KiB (3.5 KiB/s) with 100 file(s) remainingCompleted 601 Bytes/181.6 KiB (3.1 KiB/s) with 100 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/1294319.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1294319.txt
+Completed 601 Bytes/181.6 KiB (3.1 KiB/s) with 99 file(s) remainingCompleted 623 Bytes/181.6 KiB (2.9 KiB/s) with 99 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/1298819.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1298819.txt
+Completed 623 Bytes/181.6 KiB (2.9 KiB/s) with 98 file(s) remainingCompleted 640 Bytes/181.6 KiB (2.7 KiB/s) with 98 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/1307154.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1307154.txt
+Completed 640 Bytes/181.6 KiB (2.7 KiB/s) with 97 file(s) remainingCompleted 644 Bytes/181.6 KiB (2.4 KiB/s) with 97 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/1346645.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1346645.txt
+Completed 644 Bytes/181.6 KiB (2.4 KiB/s) with 96 file(s) remainingCompleted 855 Bytes/181.6 KiB (2.8 KiB/s) with 96 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/1351896.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1351896.txt
+Completed 855 Bytes/181.6 KiB (2.8 KiB/s) with 95 file(s) remainingCompleted 864 Bytes/181.6 KiB (2.6 KiB/s) with 95 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/1363776.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1363776.txt
+Completed 864 Bytes/181.6 KiB (2.6 KiB/s) with 94 file(s) remainingCompleted 887 Bytes/181.6 KiB (2.5 KiB/s) with 94 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/1083119.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1083119.txt
+Completed 887 Bytes/181.6 KiB (2.5 KiB/s) with 93 file(s) remainingCompleted 894 Bytes/181.6 KiB (2.5 KiB/s) with 93 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/11908.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/11908.txt
+Completed 894 Bytes/181.6 KiB (2.5 KiB/s) with 92 file(s) remainingCompleted 939 Bytes/181.6 KiB (2.6 KiB/s) with 92 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/1015482.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1015482.txt
+Completed 939 Bytes/181.6 KiB (2.6 KiB/s) with 91 file(s) remainingCompleted 978 Bytes/181.6 KiB (2.7 KiB/s) with 91 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/10283.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/10283.txt
+Completed 978 Bytes/181.6 KiB (2.7 KiB/s) with 90 file(s) remainingCompleted 1016 Bytes/181.6 KiB (2.8 KiB/s) with 90 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/1148920.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1148920.txt
+Completed 1016 Bytes/181.6 KiB (2.8 KiB/s) with 89 file(s) remainingCompleted 2.1 KiB/181.6 KiB (5.9 KiB/s) with 89 file(s) remaining   Completed 2.1 KiB/181.6 KiB (6.0 KiB/s) with 89 file(s) remaining   upload: data/qa/ocr_pilot_v2/deepseek/1085262.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1085262.txt
+Completed 2.1 KiB/181.6 KiB (6.0 KiB/s) with 88 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/1375109.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1375109.txt
+Completed 2.1 KiB/181.6 KiB (6.0 KiB/s) with 87 file(s) remainingCompleted 2.1 KiB/181.6 KiB (5.6 KiB/s) with 87 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/1229586.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1229586.txt
+Completed 2.1 KiB/181.6 KiB (5.6 KiB/s) with 86 file(s) remainingCompleted 2.1 KiB/181.6 KiB (5.6 KiB/s) with 86 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/1379480.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1379480.txt
+Completed 2.1 KiB/181.6 KiB (5.6 KiB/s) with 85 file(s) remainingCompleted 2.2 KiB/181.6 KiB (5.7 KiB/s) with 85 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/1441287.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1441287.txt
+Completed 2.2 KiB/181.6 KiB (5.7 KiB/s) with 84 file(s) remainingCompleted 2.2 KiB/181.6 KiB (5.7 KiB/s) with 84 file(s) remainingCompleted 2.2 KiB/181.6 KiB (5.7 KiB/s) with 84 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/1397562.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1397562.txt
+Completed 2.2 KiB/181.6 KiB (5.7 KiB/s) with 83 file(s) remainingCompleted 2.4 KiB/181.6 KiB (6.0 KiB/s) with 83 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/1443966.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1443966.txt
+Completed 2.4 KiB/181.6 KiB (6.0 KiB/s) with 82 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/1405670.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1405670.txt
+Completed 2.4 KiB/181.6 KiB (6.0 KiB/s) with 81 file(s) remainingCompleted 2.4 KiB/181.6 KiB (6.0 KiB/s) with 81 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/1193824.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1193824.txt
+Completed 2.4 KiB/181.6 KiB (6.0 KiB/s) with 80 file(s) remainingCompleted 2.5 KiB/181.6 KiB (6.2 KiB/s) with 80 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/1475231.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1475231.txt
+Completed 2.5 KiB/181.6 KiB (6.2 KiB/s) with 79 file(s) remainingCompleted 2.6 KiB/181.6 KiB (6.2 KiB/s) with 79 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/207475.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/207475.txt
+Completed 2.6 KiB/181.6 KiB (6.2 KiB/s) with 78 file(s) remainingCompleted 2.7 KiB/181.6 KiB (6.4 KiB/s) with 78 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/1483743.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1483743.txt
+Completed 2.7 KiB/181.6 KiB (6.4 KiB/s) with 77 file(s) remainingCompleted 2.7 KiB/181.6 KiB (6.5 KiB/s) with 77 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/15056.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/15056.txt
+Completed 2.7 KiB/181.6 KiB (6.5 KiB/s) with 76 file(s) remainingCompleted 2.7 KiB/181.6 KiB (6.5 KiB/s) with 76 file(s) remainingCompleted 2.8 KiB/181.6 KiB (6.6 KiB/s) with 76 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/1125186.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1125186.txt
+Completed 2.8 KiB/181.6 KiB (6.6 KiB/s) with 75 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/1483020.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1483020.txt
+Completed 2.8 KiB/181.6 KiB (6.6 KiB/s) with 74 file(s) remainingCompleted 2.9 KiB/181.6 KiB (6.6 KiB/s) with 74 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/225048.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/225048.txt
+Completed 2.9 KiB/181.6 KiB (6.6 KiB/s) with 73 file(s) remainingCompleted 3.1 KiB/181.6 KiB (7.2 KiB/s) with 73 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/1718150.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1718150.txt
+Completed 3.1 KiB/181.6 KiB (7.2 KiB/s) with 72 file(s) remainingCompleted 3.4 KiB/181.6 KiB (7.7 KiB/s) with 72 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/212973.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/212973.txt
+Completed 3.4 KiB/181.6 KiB (7.7 KiB/s) with 71 file(s) remainingCompleted 3.4 KiB/181.6 KiB (7.6 KiB/s) with 71 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/1463113.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1463113.txt
+Completed 3.4 KiB/181.6 KiB (7.6 KiB/s) with 70 file(s) remainingCompleted 4.1 KiB/181.6 KiB (8.7 KiB/s) with 70 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/233194.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/233194.txt
+Completed 4.1 KiB/181.6 KiB (8.7 KiB/s) with 69 file(s) remainingCompleted 4.1 KiB/181.6 KiB (8.7 KiB/s) with 69 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/23532.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/23532.txt
+Completed 4.1 KiB/181.6 KiB (8.7 KiB/s) with 68 file(s) remainingCompleted 4.1 KiB/181.6 KiB (8.6 KiB/s) with 68 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/26921.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/26921.txt
+Completed 4.1 KiB/181.6 KiB (8.6 KiB/s) with 67 file(s) remainingCompleted 4.2 KiB/181.6 KiB (8.6 KiB/s) with 67 file(s) remainingCompleted 4.3 KiB/181.6 KiB (8.8 KiB/s) with 67 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/302019.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/302019.txt
+Completed 4.3 KiB/181.6 KiB (8.8 KiB/s) with 66 file(s) remainingCompleted 4.3 KiB/181.6 KiB (8.8 KiB/s) with 66 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/286452.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/286452.txt
+Completed 4.3 KiB/181.6 KiB (8.8 KiB/s) with 65 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/28265.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/28265.txt
+Completed 4.3 KiB/181.6 KiB (8.8 KiB/s) with 64 file(s) remainingCompleted 4.5 KiB/181.6 KiB (9.1 KiB/s) with 64 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/259675.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/259675.txt
+Completed 4.5 KiB/181.6 KiB (9.1 KiB/s) with 63 file(s) remainingCompleted 7.5 KiB/181.6 KiB (15.1 KiB/s) with 63 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/278267.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/278267.txt
+Completed 7.5 KiB/181.6 KiB (15.1 KiB/s) with 62 file(s) remainingCompleted 8.0 KiB/181.6 KiB (16.0 KiB/s) with 62 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/28419.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/28419.txt
+Completed 8.0 KiB/181.6 KiB (16.0 KiB/s) with 61 file(s) remainingCompleted 8.1 KiB/181.6 KiB (16.1 KiB/s) with 61 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/300156.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/300156.txt
+Completed 8.1 KiB/181.6 KiB (16.1 KiB/s) with 60 file(s) remainingCompleted 8.1 KiB/181.6 KiB (15.4 KiB/s) with 60 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/3104.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/3104.txt
+Completed 8.1 KiB/181.6 KiB (15.4 KiB/s) with 59 file(s) remainingCompleted 8.1 KiB/181.6 KiB (15.5 KiB/s) with 59 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/384756.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/384756.txt
+Completed 8.1 KiB/181.6 KiB (15.5 KiB/s) with 58 file(s) remainingCompleted 8.1 KiB/181.6 KiB (15.4 KiB/s) with 58 file(s) remainingCompleted 8.2 KiB/181.6 KiB (15.4 KiB/s) with 58 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/30833.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/30833.txt
+Completed 8.2 KiB/181.6 KiB (15.4 KiB/s) with 57 file(s) remainingCompleted 8.2 KiB/181.6 KiB (15.4 KiB/s) with 57 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/36992.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/36992.txt
+Completed 8.2 KiB/181.6 KiB (15.4 KiB/s) with 56 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/336254.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/336254.txt
+Completed 8.2 KiB/181.6 KiB (15.4 KiB/s) with 55 file(s) remainingCompleted 8.2 KiB/181.6 KiB (15.2 KiB/s) with 55 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/356486.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/356486.txt
+Completed 8.2 KiB/181.6 KiB (15.2 KiB/s) with 54 file(s) remainingCompleted 8.2 KiB/181.6 KiB (15.2 KiB/s) with 54 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/31012.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/31012.txt
+Completed 8.2 KiB/181.6 KiB (15.2 KiB/s) with 53 file(s) remainingCompleted 8.2 KiB/181.6 KiB (14.9 KiB/s) with 53 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/343674.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/343674.txt
+Completed 8.2 KiB/181.6 KiB (14.9 KiB/s) with 52 file(s) remainingCompleted 8.2 KiB/181.6 KiB (14.7 KiB/s) with 52 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/35073.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/35073.txt
+Completed 8.2 KiB/181.6 KiB (14.7 KiB/s) with 51 file(s) remainingCompleted 8.3 KiB/181.6 KiB (14.4 KiB/s) with 51 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/43274.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/43274.txt
+Completed 8.3 KiB/181.6 KiB (14.4 KiB/s) with 50 file(s) remainingCompleted 8.3 KiB/181.6 KiB (14.1 KiB/s) with 50 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/156252.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/156252.txt
+Completed 8.3 KiB/181.6 KiB (14.1 KiB/s) with 49 file(s) remainingCompleted 8.4 KiB/181.6 KiB (14.1 KiB/s) with 49 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/472015.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/472015.txt
+Completed 8.4 KiB/181.6 KiB (14.1 KiB/s) with 48 file(s) remainingCompleted 8.4 KiB/181.6 KiB (14.0 KiB/s) with 48 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/1541944.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1541944.txt
+Completed 8.4 KiB/181.6 KiB (14.0 KiB/s) with 47 file(s) remainingCompleted 8.4 KiB/181.6 KiB (14.1 KiB/s) with 47 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/1578643.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/1578643.txt
+Completed 8.4 KiB/181.6 KiB (14.1 KiB/s) with 46 file(s) remainingCompleted 8.5 KiB/181.6 KiB (14.0 KiB/s) with 46 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/45551.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/45551.txt
+Completed 8.5 KiB/181.6 KiB (14.0 KiB/s) with 45 file(s) remainingCompleted 8.8 KiB/181.6 KiB (14.6 KiB/s) with 45 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/387034.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/387034.txt
+Completed 8.8 KiB/181.6 KiB (14.6 KiB/s) with 44 file(s) remainingCompleted 8.9 KiB/181.6 KiB (14.4 KiB/s) with 44 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/399172.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/399172.txt
+Completed 8.9 KiB/181.6 KiB (14.4 KiB/s) with 43 file(s) remainingCompleted 9.4 KiB/181.6 KiB (15.2 KiB/s) with 43 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/487439.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/487439.txt
+Completed 9.4 KiB/181.6 KiB (15.2 KiB/s) with 42 file(s) remainingCompleted 9.5 KiB/181.6 KiB (15.3 KiB/s) with 42 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/362776.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/362776.txt
+Completed 9.5 KiB/181.6 KiB (15.3 KiB/s) with 41 file(s) remainingCompleted 9.6 KiB/181.6 KiB (14.9 KiB/s) with 41 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/484509.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/484509.txt
+Completed 9.6 KiB/181.6 KiB (14.9 KiB/s) with 40 file(s) remainingCompleted 9.6 KiB/181.6 KiB (14.9 KiB/s) with 40 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/53553.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/53553.txt
+Completed 9.6 KiB/181.6 KiB (14.9 KiB/s) with 39 file(s) remainingCompleted 9.6 KiB/181.6 KiB (14.7 KiB/s) with 39 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/547055.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/547055.txt
+Completed 9.6 KiB/181.6 KiB (14.7 KiB/s) with 38 file(s) remainingCompleted 9.6 KiB/181.6 KiB (14.7 KiB/s) with 38 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/505063.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/505063.txt
+Completed 9.6 KiB/181.6 KiB (14.7 KiB/s) with 37 file(s) remainingCompleted 9.6 KiB/181.6 KiB (14.7 KiB/s) with 37 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/491649.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/491649.txt
+Completed 9.6 KiB/181.6 KiB (14.7 KiB/s) with 36 file(s) remainingCompleted 9.6 KiB/181.6 KiB (14.6 KiB/s) with 36 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/64524.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/64524.txt
+Completed 9.6 KiB/181.6 KiB (14.6 KiB/s) with 35 file(s) remainingCompleted 9.7 KiB/181.6 KiB (14.6 KiB/s) with 35 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/636515.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/636515.txt
+Completed 9.7 KiB/181.6 KiB (14.6 KiB/s) with 34 file(s) remainingCompleted 9.9 KiB/181.6 KiB (14.8 KiB/s) with 34 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/48800.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/48800.txt
+Completed 9.9 KiB/181.6 KiB (14.8 KiB/s) with 33 file(s) remainingCompleted 10.1 KiB/181.6 KiB (15.0 KiB/s) with 33 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/165078.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/165078.txt
+Completed 10.1 KiB/181.6 KiB (15.0 KiB/s) with 32 file(s) remainingCompleted 10.1 KiB/181.6 KiB (15.0 KiB/s) with 32 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/653537.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/653537.txt
+Completed 10.1 KiB/181.6 KiB (15.0 KiB/s) with 31 file(s) remainingCompleted 10.7 KiB/181.6 KiB (15.7 KiB/s) with 31 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/682809.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/682809.txt
+Completed 10.7 KiB/181.6 KiB (15.7 KiB/s) with 30 file(s) remainingCompleted 10.7 KiB/181.6 KiB (15.7 KiB/s) with 30 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/652004.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/652004.txt
+Completed 10.7 KiB/181.6 KiB (15.7 KiB/s) with 29 file(s) remainingCompleted 10.8 KiB/181.6 KiB (15.4 KiB/s) with 29 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/743757.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/743757.txt
+Completed 10.8 KiB/181.6 KiB (15.4 KiB/s) with 28 file(s) remainingCompleted 10.8 KiB/181.6 KiB (15.4 KiB/s) with 28 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/77399.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/77399.txt
+Completed 10.8 KiB/181.6 KiB (15.4 KiB/s) with 27 file(s) remainingCompleted 10.8 KiB/181.6 KiB (15.4 KiB/s) with 27 file(s) remainingCompleted 10.9 KiB/181.6 KiB (15.5 KiB/s) with 27 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/77050.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/77050.txt
+Completed 10.9 KiB/181.6 KiB (15.5 KiB/s) with 26 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/802851.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/802851.txt
+Completed 10.9 KiB/181.6 KiB (15.5 KiB/s) with 25 file(s) remainingCompleted 10.9 KiB/181.6 KiB (15.4 KiB/s) with 25 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/748251.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/748251.txt
+Completed 10.9 KiB/181.6 KiB (15.4 KiB/s) with 24 file(s) remainingCompleted 11.2 KiB/181.6 KiB (15.8 KiB/s) with 24 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/796250.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/796250.txt
+Completed 11.2 KiB/181.6 KiB (15.8 KiB/s) with 23 file(s) remainingCompleted 11.2 KiB/181.6 KiB (15.6 KiB/s) with 23 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/77677.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/77677.txt
+Completed 11.2 KiB/181.6 KiB (15.6 KiB/s) with 22 file(s) remainingCompleted 11.6 KiB/181.6 KiB (16.1 KiB/s) with 22 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/748589.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/748589.txt
+Completed 11.6 KiB/181.6 KiB (16.1 KiB/s) with 21 file(s) remainingCompleted 11.8 KiB/181.6 KiB (16.3 KiB/s) with 21 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/772603.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/772603.txt
+Completed 11.8 KiB/181.6 KiB (16.3 KiB/s) with 20 file(s) remainingCompleted 11.9 KiB/181.6 KiB (16.3 KiB/s) with 20 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/836924.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/836924.txt
+Completed 11.9 KiB/181.6 KiB (16.3 KiB/s) with 19 file(s) remainingCompleted 11.9 KiB/181.6 KiB (15.8 KiB/s) with 19 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/863406.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/863406.txt
+Completed 11.9 KiB/181.6 KiB (15.8 KiB/s) with 18 file(s) remainingCompleted 11.9 KiB/181.6 KiB (15.8 KiB/s) with 18 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/88410.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/88410.txt
+Completed 11.9 KiB/181.6 KiB (15.8 KiB/s) with 17 file(s) remainingCompleted 12.0 KiB/181.6 KiB (15.8 KiB/s) with 17 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/86687.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/86687.txt
+Completed 12.0 KiB/181.6 KiB (15.8 KiB/s) with 16 file(s) remainingCompleted 12.0 KiB/181.6 KiB (15.8 KiB/s) with 16 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/854417.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/854417.txt
+Completed 12.0 KiB/181.6 KiB (15.8 KiB/s) with 15 file(s) remainingCompleted 12.0 KiB/181.6 KiB (15.8 KiB/s) with 15 file(s) remainingCompleted 12.1 KiB/181.6 KiB (15.7 KiB/s) with 15 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/94910.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/94910.txt
+Completed 12.1 KiB/181.6 KiB (15.7 KiB/s) with 14 file(s) remainingCompleted 12.5 KiB/181.6 KiB (16.4 KiB/s) with 14 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/940187.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/940187.txt
+Completed 12.5 KiB/181.6 KiB (16.4 KiB/s) with 13 file(s) remainingCompleted 12.5 KiB/181.6 KiB (16.1 KiB/s) with 13 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/918096.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/918096.txt
+Completed 12.5 KiB/181.6 KiB (16.1 KiB/s) with 12 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/861413.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/861413.txt
+Completed 12.5 KiB/181.6 KiB (16.1 KiB/s) with 11 file(s) remainingCompleted 12.7 KiB/181.6 KiB (16.1 KiB/s) with 11 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/931049.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/931049.txt
+Completed 12.7 KiB/181.6 KiB (16.1 KiB/s) with 10 file(s) remainingCompleted 12.7 KiB/181.6 KiB (15.8 KiB/s) with 10 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/988142.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/988142.txt
+Completed 12.7 KiB/181.6 KiB (15.8 KiB/s) with 9 file(s) remainingCompleted 13.3 KiB/181.6 KiB (16.4 KiB/s) with 9 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/972244.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/972244.txt
+Completed 13.3 KiB/181.6 KiB (16.4 KiB/s) with 8 file(s) remainingCompleted 13.4 KiB/181.6 KiB (16.5 KiB/s) with 8 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/976209.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/976209.txt
+Completed 13.4 KiB/181.6 KiB (16.5 KiB/s) with 7 file(s) remainingCompleted 13.7 KiB/181.6 KiB (16.9 KiB/s) with 7 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/949486.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/949486.txt
+Completed 13.7 KiB/181.6 KiB (16.9 KiB/s) with 6 file(s) remainingCompleted 14.4 KiB/181.6 KiB (17.7 KiB/s) with 6 file(s) remainingupload: data/qa/ocr_pilot_v2/sample_ids.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/sample_ids.txt
+Completed 14.4 KiB/181.6 KiB (17.7 KiB/s) with 5 file(s) remainingCompleted 17.2 KiB/181.6 KiB (21.0 KiB/s) with 5 file(s) remainingupload: data/qa/ocr_pilot_v2/sample_meta.csv to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/sample_meta.csv
+Completed 17.2 KiB/181.6 KiB (21.0 KiB/s) with 4 file(s) remainingCompleted 17.3 KiB/181.6 KiB (21.1 KiB/s) with 4 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/974046.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/974046.txt
+Completed 17.3 KiB/181.6 KiB (21.1 KiB/s) with 3 file(s) remainingCompleted 92.8 KiB/181.6 KiB (113.2 KiB/s) with 3 file(s) remainingupload: data/qa/ocr_pilot_v2/results.csv to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/results.csv
+Completed 92.8 KiB/181.6 KiB (113.2 KiB/s) with 2 file(s) remainingCompleted 181.6 KiB/181.6 KiB (220.2 KiB/s) with 2 file(s) remainingupload: data/qa/ocr_pilot_v2/ocr_pilot_v2_aws.log to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/ocr_pilot_v2_aws.log
+Completed 181.6 KiB/181.6 KiB (220.2 KiB/s) with 1 file(s) remainingCompleted 181.6 KiB/181.6 KiB (210.9 KiB/s) with 1 file(s) remainingupload: data/qa/ocr_pilot_v2/deepseek/931940.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/deepseek/931940.txt
+[checkpoint] synced after deepseek
+--- run model=paddle Wed Jul 29 16:14:01 UTC 2026 ---
+sample n=100 → data/qa/ocr_pilot_v2/sample_ids.txt
+     id                                               title  year
+ 484509                                         Just Spooks  1925
+1261561                                    The Monkey's Paw  1923
+ 362776                                  Ghost Town Frolics  1938
+  26921                     The Mystery of the Mary Celeste  1935
+ 212973                                Gildersleeve's Ghost  1944
+  48800                                         The Unknown  1946
+  35073                       The Beast from 20,000 Fathoms  1953
+ 836924                                         Roh Membela  1955
+   3104                          Frankenstein Created Woman  1967
+  64524                                           Nightmare  1964
+  77399                              Incense for the Damned  1971
+  30833                                   Drive-In Massacre  1976
+ 399172                                  Lipstick and Blood  1984
+1015482                                 Kiss of the Serpent  1988
+  10283    Friday the 13th Part VIII: Jason Takes Manhattan  1989
+  88410                                         Beyond Evil  1980
+  86687                                        Severed Ties  1992
+ 336254                                            Downtime  1995
+  36992                                              Shakma  1990
+  43274                                     Tower of Terror  1997
+  15056                        The Curse of King Tut's Tomb  2006
+  23532                           How to Be a Serial Killer  2009
+  31012                                            Cerberus  2005
+  45551                                        Surveillance  2006
+ 156252                                              Phobic  2002
+ 743757                            Blood Orgy of the Damned  2007
+  11908                                             Hatchet  2006
+  28265                                 Lovesick: Sick Love  2004
+  28419                                         Hellbreeder  2004
+  53553                                            The Glow  2002
+  77050                                            Theodore  2009
+ 278267                                       The Dead Walk  2008
+ 165078                                      Legend of Hell  2012
+ 225048                                          Evangeline  2013
+ 233194                                       8 Butterflies  2010
+ 286452                                       Varsity Blood  2014
+ 300156                  The Interrogation of Cheryl Cooper  2014
+ 302019                                           Crow Hand  2014
+ 387034                                         Nasty Nancy  2010
+ 491649                                               Larry  2017
+ 505063                          Await Further Instructions  2018
+ 547055                                           Threshold  2016
+ 636515                                       Hidden Mother  2019
+ 653537                                            Whispers  2019
+ 772603                                               Money  2017
+ 974046                              House of White Spiders  2010
+ 976209                                     Midnight Thirst  2016
+  77677                                             Escapee  2011
+  94910                                          Magnificat  2011
+ 207475                                The Ouija Experiment  2011
+ 259675                                   Belly of the Wolf  2013
+ 343674                                       Gerald's Game  2017
+ 356486                                      Lumberjack Man  2015
+ 384756                                               Rabid  2019
+ 472015                                 Hunting for Shadows  2016
+ 487439                                                Itch  2017
+ 682809                                     Under the Table  2011
+ 748251                                     Vamp Bikers Dos  2015
+ 861413                                          A Dream...  2012
+ 940187                                      THE INQUISTION  2019
+ 972244                                     Darkness of Day  2010
+ 748589 Housesitter: The Night They Saved Siegfried's Brain  2020
+ 796250                                         Confinement  2022
+ 802851                                             Charles  2022
+ 854417                                              Bearry  2021
+ 863406                                       The Blue Rose  2024
+ 918096              Hemet, or the Landlady Don't Drink Tea  2024
+ 931049                                    Beware the Woods  2022
+1022479                                     You're Melting!  2022
+1083119                                 The Lost Chronicles  2023
+1125186                                      Home Education  2023
+1193824                                         Rabbit Trap  2025
+1289969                          The Battle of Grovers Mill  2024
+1298819                               Clickbait: Unfollowed  2024
+1307154                                    Sinister Surgeon  2024
+1375109                                    Darby After Dark  2024
+1397562                                              Coreys  2024
+1441287                                         House Rules  2024
+1443966                               How Was Your Weekend?  2025
+1475231                                            Bonehead  2025
+1718150                                              Curfew  2025
+ 652004                             The Wolf of Snow Hollow  2020
+ 931940                                             The Fix  2024
+ 949486                                               Doors  2020
+ 988142                           The Five Fingers of a Dog  2022
+1085262                                           Our House  2023
+1148920                                            Trial 22  2023
+1229586                                             Stutter  2024
+1273536                      Theoretical: The Invisible Man  2024
+1294319                                       Shades of Red  2024
+1346645                                                Lupo  2024
+1351896                                               Sally  2024
+1363776                                           Paralysis  2024
+1379480                                   Oliver's Basement  2024
+1405670                                             xOxExFx  2024
+1463113                                                Bone  2023
+1483020                                        Camp Baloney  2025
+1483743                                  up here, disappear  2025
+1541944                                       A Hollow Tree  2023
+1578643                                           Cymophane  2024
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+device=cuda
+append-results: kept 500 rows for models outside ['paddle']
+
+=== model=paddle device=cuda n=100 ===
+  paddle: ROPE_INIT_FUNCTIONS['default'] ← linear
+  paddle: ACT2FN['default'] ← silu/gelu
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] A new version of the following files was downloaded from https://huggingface.co/PaddlePaddle/PaddleOCR-VL:
+- configuration_paddleocr_vl.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+/opt/pytorch/lib/python3.13/site-packages/transformers/modeling_rope_utils.py:1036: FutureWarning: `rope_config_validation` is deprecated and has been removed. Its functionality has been moved to RotaryEmbeddingConfigMixin.validate_rope method. PreTrainedConfig inherits this class, so please call self.validate_rope() instead. Also, make sure to use the new rope_parameters syntax. You can call self.standardize_rope_params() in the meantime.
+  warnings.warn(
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section'}
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section'}
+[transformers] Model config: image_token_id must be `None` or an integer within the vocabulary (between 0 and 31999), got 101304. This may result in unexpected behavior.
+[transformers] Model config: video_token_id must be `None` or an integer within the vocabulary (between 0 and 31999), got 101305. This may result in unexpected behavior.
+[transformers] Model config: vision_start_token_id must be `None` or an integer within the vocabulary (between 0 and 31999), got 101306. This may result in unexpected behavior.
+[transformers] A new version of the following files was downloaded from https://huggingface.co/PaddlePaddle/PaddleOCR-VL:
+- modeling_paddleocr_vl.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+[transformers] The `check_model_inputs` decorator is deprecated in favor of `merge_with_config_defaults`.
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section'}
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section'}
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section'}
+Loading weights:   0%|          | 0/608 [00:00<?, ?it/s]Loading weights:  11%|█▏        | 69/608 [00:00<00:00, 686.66it/s]Loading weights:  37%|███▋      | 227/608 [00:00<00:00, 1195.57it/s]Loading weights:  69%|██████▉   | 418/608 [00:00<00:00, 1500.85it/s]Loading weights:  99%|█████████▊| 599/608 [00:00<00:00, 1616.02it/s]Loading weights: 100%|██████████| 608/608 [00:00<00:00, 1488.26it/s]
+  paddle loaded via PaddleOCRVLForConditionalGeneration cfg=False: PaddlePaddle/PaddleOCR-VL
+[transformers] A new version of the following files was downloaded from https://huggingface.co/PaddlePaddle/PaddleOCR-VL:
+- processing_paddleocr_vl.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+[transformers] `PaddleOCRVLProcessor` defines `image_processor_class = 'AutoImageProcessor'`, which is deprecated. Register the correct mapping in `AutoImageProcessor` instead.
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section'}
+[transformers] Unrecognized keys in `rope_parameters` for 'rope_type'='default': {'mrope_section'}
+  id=484509 status=ok chars=117 overlap=1.0 15.981s
+  id=1261561 status=ok chars=194 overlap=0.6667 17.349s
+  id=362776 status=ok chars=55 overlap=1.0 8.85s
+  id=26921 status=ok chars=31 overlap=1.0 5.233s
+  id=212973 status=ok chars=219 overlap=0.0 30.536s
+  id=48800 status=ok chars=134 overlap=1.0 21.161s
+  id=35073 status=ok chars=24 overlap=0.5 6.583s
+  id=836924 status=ok chars=35 overlap=1.0 7.893s
+  id=3104 status=ok chars=26 overlap=1.0 4.833s
+  id=64524 status=ok chars=9 overlap=1.0 2.208s
+  id=77399 status=ok chars=13 overlap=0.0 3.074s
+  id=30833 status=ok chars=17 overlap=1.0 3.516s
+  id=399172 status=ok chars=18 overlap=1.0 2.2s
+  id=1015482 status=ok chars=22 overlap=0.0 3.951s
+  id=10283 status=ok chars=44 overlap=0.625 26.269s
+  id=88410 status=ok chars=11 overlap=1.0 2.641s
+  id=86687 status=ok chars=57 overlap=0.5 9.75s
+  id=336254 status=ok chars=8 overlap=1.0 3.441s
+  id=36992 status=ok chars=7 overlap=1.0 2.208s
+  id=43274 status=ok chars=15 overlap=1.0 2.203s
+  id=15056 status=ok chars=28 overlap=1.0 6.145s
+  id=23532 status=ok chars=25 overlap=1.0 11.404s
+  id=31012 status=ok chars=8 overlap=1.0 4.575s
+  id=45551 status=ok chars=12 overlap=1.0 5.712s
+  id=156252 status=ok chars=6 overlap=1.0 2.201s
+  id=743757 status=ok chars=85 overlap=0.8 12.957s
+  id=11908 status=ok chars=7 overlap=1.0 4.573s
+  id=28265 status=ok chars=17 overlap=0.3333 3.959s
+  id=28419 status=ok chars=352 overlap=1.0 165.595s
+  id=53553 status=ok chars=8 overlap=1.0 1.768s
+  id=77050 status=ok chars=73 overlap=1.0 13.781s
+  id=278267 status=ok chars=2181 overlap=0.3333 597.387s
+  id=165078 status=ok chars=185 overlap=0.3333 31.529s
+  id=225048 status=ok chars=41 overlap=1.0 7.3s
+  id=233194 status=ok chars=1795 overlap=0.0 559.354s
+  id=286452 status=ok chars=13 overlap=1.0 3.517s
+  id=300156 status=ok chars=75 overlap=1.0 13.623s
+  id=302019 status=ok chars=11 overlap=0.0 2.643s
+  id=387034 status=ok chars=298 overlap=1.0 1111.456s
+  id=491649 status=ok chars=5 overlap=1.0 0.896s
+  id=505063 status=ok chars=26 overlap=1.0 3.963s
+  id=547055 status=ok chars=9 overlap=1.0 0.888s
+  id=636515 status=ok chars=13 overlap=1.0 2.648s
+  id=653537 status=ok chars=1 overlap=0.0 1.769s
+  id=772603 status=ok chars=164 overlap=1.0 33.761s
+  id=974046 status=ok chars=36 overlap=1.0 4.839s
+  id=976209 status=ok chars=98 overlap=1.0 18.53s
+  id=77677 status=ok chars=7 overlap=1.0 1.77s
+  id=94910 status=ok chars=10 overlap=1.0 2.21s
+  id=207475 status=ok chars=31 overlap=0.0 4.831s
+  id=259675 status=ok chars=2049 overlap=1.0 560.031s
+  id=343674 status=ok chars=13 overlap=1.0 3.083s
+  id=356486 status=ok chars=14 overlap=1.0 3.076s
+  id=384756 status=ok chars=51 overlap=1.0 22.059s
+  id=472015 status=ok chars=81 overlap=0.0 15.605s
+  id=487439 status=ok chars=2310 overlap=1.0 597.673s
+  id=682809 status=ok chars=364 overlap=1.0 69.582s
+  id=748251 status=ok chars=11 overlap=0.6667 2.209s
+  id=861413 status=ok chars=45 overlap=0.0 4.401s
+  id=940187 status=ok chars=8 overlap=0.0 2.208s
+  id=972244 status=ok chars=276 overlap=1.0 52.181s
+  id=748589 status=ok chars=374 overlap=1.0 74.824s
+  id=796250 status=ok chars=11 overlap=1.0 4.587s
+  id=802851 status=ok chars=45 overlap=1.0 10.105s
+  id=854417 status=ok chars=29 overlap=1.0 5.709s
+  id=863406 status=ok chars=13 overlap=1.0 2.645s
+  id=918096 status=ok chars=38 overlap=1.0 7.474s
+  id=931049 status=ok chars=125 overlap=1.0 18.718s
+  id=1022479 status=ok chars=16 overlap=0.0 10.286s
+  id=1083119 status=ok chars=19 overlap=1.0 4.408s
+  id=1125186 status=ok chars=33 overlap=0.0 7.033s
+  id=1193824 status=ok chars=11 overlap=1.0 1.768s
+  id=1289969 status=ok chars=142 overlap=1.0 23.631s
+  id=1298819 status=ok chars=20 overlap=1.0 3.08s
+  id=1307154 status=ok chars=16 overlap=0.5 3.516s
+  id=1375109 status=ok chars=28 overlap=0.0 3.96s
+  id=1397562 status=ok chars=6 overlap=1.0 1.333s
+  id=1441287 status=ok chars=40 overlap=0.0 7.471s
+  id=1443966 status=ok chars=96 overlap=1.0 16.762s
+  id=1475231 status=ok chars=108 overlap=0.0 16.312s
+  id=1718150 status=ok chars=2563 overlap=1.0 596.655s
+  id=652004 status=ok chars=25 overlap=0.6 4.398s
+  id=931940 status=ok chars=7 overlap=1.0 1.325s
+  id=949486 status=ok chars=342 overlap=1.0 67.091s
+  id=988142 status=ok chars=25 overlap=1.0 10.764s
+  id=1085262 status=ok chars=39 overlap=1.0 8.328s
+  id=1148920 status=ok chars=389 overlap=1.0 45.249s
+  id=1229586 status=ok chars=7 overlap=1.0 1.634s
+  id=1273536 status=ok chars=17 overlap=0.75 2.202s
+  id=1294319 status=ok chars=10 overlap=0.6667 1.764s
+  id=1346645 status=ok chars=4 overlap=1.0 1.765s
+  id=1351896 status=ok chars=199 overlap=0.0 31.04s
+  id=1363776 status=ok chars=9 overlap=1.0 2.034s
+  id=1379480 status=ok chars=17 overlap=1.0 3.08s
+  id=1405670 status=ok chars=22 overlap=0.0 3.517s
+  id=1463113 status=ok chars=4 overlap=1.0 1.228s
+  id=1483020 status=ok chars=12 overlap=1.0 2.642s
+  id=1483743 status=ok chars=3071 overlap=0.6667 560.124s
+  id=1541944 status=ok chars=13 overlap=1.0 2.202s
+  id=1578643 status=ok chars=34 overlap=1.0 7.023s
+
+LISTO → data/qa/ocr_pilot_v2/results.csv (600 rows)
+model=paddle exit=0
+Completed 130.2 KiB/~144.2 KiB (2.8 MiB/s) with ~50 file(s) remaining (calculating...)upload: data/qa/ocr_pilot_v2/ocr_pilot_v2_aws.log to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/ocr_pilot_v2_aws.log
+Completed 130.2 KiB/~144.2 KiB (2.8 MiB/s) with ~49 file(s) remaining (calculating...)Completed 130.2 KiB/~149.7 KiB (1.5 MiB/s) with ~100 file(s) remaining (calculating...)upload: data/qa/ocr_pilot_v2/paddle/1229586.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1229586.txt
+Completed 130.2 KiB/~149.7 KiB (1.5 MiB/s) with ~99 file(s) remaining (calculating...)Completed 130.4 KiB/254.1 KiB (952.4 KiB/s) with 102 file(s) remaining                upload: data/qa/ocr_pilot_v2/paddle/1261561.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1261561.txt
+Completed 130.4 KiB/254.1 KiB (952.4 KiB/s) with 101 file(s) remainingCompleted 130.5 KiB/254.1 KiB (811.9 KiB/s) with 101 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/1273536.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1273536.txt
+Completed 130.5 KiB/254.1 KiB (811.9 KiB/s) with 100 file(s) remainingCompleted 130.5 KiB/254.1 KiB (697.3 KiB/s) with 100 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/1294319.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1294319.txt
+Completed 130.5 KiB/254.1 KiB (697.3 KiB/s) with 99 file(s) remainingCompleted 130.6 KiB/254.1 KiB (625.4 KiB/s) with 99 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/1289969.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1289969.txt
+Completed 130.6 KiB/254.1 KiB (625.4 KiB/s) with 98 file(s) remainingCompleted 130.6 KiB/254.1 KiB (568.5 KiB/s) with 98 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/1298819.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1298819.txt
+Completed 130.6 KiB/254.1 KiB (568.5 KiB/s) with 97 file(s) remainingCompleted 130.6 KiB/254.1 KiB (518.7 KiB/s) with 97 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/1307154.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1307154.txt
+Completed 130.6 KiB/254.1 KiB (518.7 KiB/s) with 96 file(s) remainingCompleted 130.6 KiB/254.1 KiB (472.9 KiB/s) with 96 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/1346645.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1346645.txt
+Completed 130.6 KiB/254.1 KiB (472.9 KiB/s) with 95 file(s) remainingCompleted 130.8 KiB/254.1 KiB (424.9 KiB/s) with 95 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/1351896.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1351896.txt
+Completed 130.8 KiB/254.1 KiB (424.9 KiB/s) with 94 file(s) remainingCompleted 130.9 KiB/254.1 KiB (395.8 KiB/s) with 94 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/1015482.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1015482.txt
+Completed 130.9 KiB/254.1 KiB (395.8 KiB/s) with 93 file(s) remainingCompleted 130.9 KiB/254.1 KiB (393.6 KiB/s) with 93 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/1022479.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1022479.txt
+Completed 130.9 KiB/254.1 KiB (393.6 KiB/s) with 92 file(s) remainingCompleted 130.9 KiB/254.1 KiB (390.8 KiB/s) with 92 file(s) remainingCompleted 130.9 KiB/254.1 KiB (390.0 KiB/s) with 92 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/1363776.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1363776.txt
+Completed 130.9 KiB/254.1 KiB (390.0 KiB/s) with 91 file(s) remainingCompleted 130.9 KiB/254.1 KiB (387.6 KiB/s) with 91 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/11908.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/11908.txt
+Completed 130.9 KiB/254.1 KiB (387.6 KiB/s) with 90 file(s) remainingCompleted 131.3 KiB/254.1 KiB (386.3 KiB/s) with 90 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/1148920.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1148920.txt
+Completed 131.3 KiB/254.1 KiB (386.3 KiB/s) with 89 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/1083119.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1083119.txt
+Completed 131.3 KiB/254.1 KiB (386.3 KiB/s) with 88 file(s) remainingCompleted 131.3 KiB/254.1 KiB (383.0 KiB/s) with 88 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/1125186.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1125186.txt
+Completed 131.3 KiB/254.1 KiB (383.0 KiB/s) with 87 file(s) remainingCompleted 131.3 KiB/254.1 KiB (381.0 KiB/s) with 87 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/1193824.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1193824.txt
+Completed 131.3 KiB/254.1 KiB (381.0 KiB/s) with 86 file(s) remainingCompleted 131.4 KiB/254.1 KiB (378.8 KiB/s) with 86 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/10283.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/10283.txt
+Completed 131.4 KiB/254.1 KiB (378.8 KiB/s) with 85 file(s) remainingCompleted 131.4 KiB/254.1 KiB (369.9 KiB/s) with 85 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/1085262.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1085262.txt
+Completed 131.4 KiB/254.1 KiB (369.9 KiB/s) with 84 file(s) remainingCompleted 131.5 KiB/254.1 KiB (357.2 KiB/s) with 84 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/1441287.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1441287.txt
+Completed 131.5 KiB/254.1 KiB (357.2 KiB/s) with 83 file(s) remainingCompleted 131.5 KiB/254.1 KiB (355.5 KiB/s) with 83 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/1379480.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1379480.txt
+Completed 131.5 KiB/254.1 KiB (355.5 KiB/s) with 82 file(s) remainingCompleted 131.5 KiB/254.1 KiB (353.3 KiB/s) with 82 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/1397562.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1397562.txt
+Completed 131.5 KiB/254.1 KiB (353.3 KiB/s) with 81 file(s) remainingCompleted 131.5 KiB/254.1 KiB (351.5 KiB/s) with 81 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/1405670.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1405670.txt
+Completed 131.5 KiB/254.1 KiB (351.5 KiB/s) with 80 file(s) remainingCompleted 131.5 KiB/254.1 KiB (349.5 KiB/s) with 80 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/1483020.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1483020.txt
+Completed 131.5 KiB/254.1 KiB (349.5 KiB/s) with 79 file(s) remainingCompleted 131.6 KiB/254.1 KiB (348.2 KiB/s) with 79 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/1443966.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1443966.txt
+Completed 131.6 KiB/254.1 KiB (348.2 KiB/s) with 78 file(s) remainingCompleted 131.6 KiB/254.1 KiB (346.3 KiB/s) with 78 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/1463113.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1463113.txt
+Completed 131.6 KiB/254.1 KiB (346.3 KiB/s) with 77 file(s) remainingCompleted 131.7 KiB/254.1 KiB (345.1 KiB/s) with 77 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/1475231.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1475231.txt
+Completed 131.7 KiB/254.1 KiB (345.1 KiB/s) with 76 file(s) remainingCompleted 131.7 KiB/254.1 KiB (336.3 KiB/s) with 76 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/1375109.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1375109.txt
+Completed 131.7 KiB/254.1 KiB (336.3 KiB/s) with 75 file(s) remainingCompleted 134.7 KiB/254.1 KiB (342.0 KiB/s) with 75 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/1483743.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1483743.txt
+Completed 134.7 KiB/254.1 KiB (342.0 KiB/s) with 74 file(s) remainingCompleted 134.8 KiB/254.1 KiB (327.0 KiB/s) with 74 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/207475.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/207475.txt
+Completed 134.8 KiB/254.1 KiB (327.0 KiB/s) with 73 file(s) remainingCompleted 134.8 KiB/254.1 KiB (325.5 KiB/s) with 73 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/15056.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/15056.txt
+Completed 134.8 KiB/254.1 KiB (325.5 KiB/s) with 72 file(s) remainingCompleted 137.3 KiB/254.1 KiB (329.8 KiB/s) with 72 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/1718150.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1718150.txt
+Completed 137.3 KiB/254.1 KiB (329.8 KiB/s) with 71 file(s) remainingCompleted 137.3 KiB/254.1 KiB (328.6 KiB/s) with 71 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/156252.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/156252.txt
+Completed 137.3 KiB/254.1 KiB (328.6 KiB/s) with 70 file(s) remainingCompleted 137.3 KiB/254.1 KiB (325.9 KiB/s) with 70 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/1541944.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1541944.txt
+Completed 137.3 KiB/254.1 KiB (325.9 KiB/s) with 69 file(s) remainingCompleted 137.5 KiB/254.1 KiB (324.8 KiB/s) with 69 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/165078.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/165078.txt
+Completed 137.5 KiB/254.1 KiB (324.8 KiB/s) with 68 file(s) remainingCompleted 139.2 KiB/254.1 KiB (327.7 KiB/s) with 68 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/233194.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/233194.txt
+Completed 139.2 KiB/254.1 KiB (327.7 KiB/s) with 67 file(s) remainingCompleted 139.3 KiB/254.1 KiB (321.0 KiB/s) with 67 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/1578643.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/1578643.txt
+Completed 139.3 KiB/254.1 KiB (321.0 KiB/s) with 66 file(s) remainingCompleted 139.5 KiB/254.1 KiB (320.3 KiB/s) with 66 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/212973.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/212973.txt
+Completed 139.5 KiB/254.1 KiB (320.3 KiB/s) with 65 file(s) remainingCompleted 141.5 KiB/254.1 KiB (317.2 KiB/s) with 65 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/259675.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/259675.txt
+Completed 141.5 KiB/254.1 KiB (317.2 KiB/s) with 64 file(s) remainingCompleted 141.5 KiB/254.1 KiB (305.1 KiB/s) with 64 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/28265.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/28265.txt
+Completed 141.5 KiB/254.1 KiB (305.1 KiB/s) with 63 file(s) remainingCompleted 141.5 KiB/254.1 KiB (303.8 KiB/s) with 63 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/286452.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/286452.txt
+Completed 141.5 KiB/254.1 KiB (303.8 KiB/s) with 62 file(s) remainingCompleted 141.6 KiB/254.1 KiB (302.5 KiB/s) with 62 file(s) remainingCompleted 143.7 KiB/254.1 KiB (306.6 KiB/s) with 62 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/278267.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/278267.txt
+Completed 143.7 KiB/254.1 KiB (306.6 KiB/s) with 61 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/225048.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/225048.txt
+Completed 143.7 KiB/254.1 KiB (306.6 KiB/s) with 60 file(s) remainingCompleted 143.7 KiB/254.1 KiB (304.6 KiB/s) with 60 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/26921.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/26921.txt
+Completed 143.7 KiB/254.1 KiB (304.6 KiB/s) with 59 file(s) remainingCompleted 143.8 KiB/254.1 KiB (303.6 KiB/s) with 59 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/23532.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/23532.txt
+Completed 143.8 KiB/254.1 KiB (303.6 KiB/s) with 58 file(s) remainingCompleted 143.8 KiB/254.1 KiB (297.8 KiB/s) with 58 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/302019.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/302019.txt
+Completed 143.8 KiB/254.1 KiB (297.8 KiB/s) with 57 file(s) remainingCompleted 143.8 KiB/254.1 KiB (296.8 KiB/s) with 57 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/300156.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/300156.txt
+Completed 143.8 KiB/254.1 KiB (296.8 KiB/s) with 56 file(s) remainingCompleted 143.9 KiB/254.1 KiB (289.9 KiB/s) with 56 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/30833.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/30833.txt
+Completed 143.9 KiB/254.1 KiB (289.9 KiB/s) with 55 file(s) remainingCompleted 143.9 KiB/254.1 KiB (277.0 KiB/s) with 55 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/336254.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/336254.txt
+Completed 143.9 KiB/254.1 KiB (277.0 KiB/s) with 54 file(s) remainingCompleted 143.9 KiB/254.1 KiB (275.8 KiB/s) with 54 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/43274.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/43274.txt
+Completed 143.9 KiB/254.1 KiB (275.8 KiB/s) with 53 file(s) remainingCompleted 143.9 KiB/254.1 KiB (274.5 KiB/s) with 53 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/35073.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/35073.txt
+Completed 143.9 KiB/254.1 KiB (274.5 KiB/s) with 52 file(s) remainingCompleted 143.9 KiB/254.1 KiB (274.1 KiB/s) with 52 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/45551.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/45551.txt
+Completed 143.9 KiB/254.1 KiB (274.1 KiB/s) with 51 file(s) remainingCompleted 143.9 KiB/254.1 KiB (272.8 KiB/s) with 51 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/31012.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/31012.txt
+Completed 143.9 KiB/254.1 KiB (272.8 KiB/s) with 50 file(s) remainingCompleted 144.0 KiB/254.1 KiB (272.1 KiB/s) with 50 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/384756.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/384756.txt
+Completed 144.0 KiB/254.1 KiB (272.1 KiB/s) with 49 file(s) remainingCompleted 144.0 KiB/254.1 KiB (269.3 KiB/s) with 49 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/343674.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/343674.txt
+Completed 144.0 KiB/254.1 KiB (269.3 KiB/s) with 48 file(s) remainingCompleted 144.3 KiB/254.1 KiB (268.9 KiB/s) with 48 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/28419.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/28419.txt
+Completed 144.3 KiB/254.1 KiB (268.9 KiB/s) with 47 file(s) remainingCompleted 144.4 KiB/254.1 KiB (268.2 KiB/s) with 47 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/3104.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/3104.txt
+Completed 144.4 KiB/254.1 KiB (268.2 KiB/s) with 46 file(s) remainingCompleted 144.4 KiB/254.1 KiB (262.3 KiB/s) with 46 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/399172.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/399172.txt
+Completed 144.4 KiB/254.1 KiB (262.3 KiB/s) with 45 file(s) remainingCompleted 144.4 KiB/254.1 KiB (258.9 KiB/s) with 45 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/356486.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/356486.txt
+Completed 144.4 KiB/254.1 KiB (258.9 KiB/s) with 44 file(s) remainingCompleted 144.4 KiB/254.1 KiB (255.5 KiB/s) with 44 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/505063.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/505063.txt
+Completed 144.4 KiB/254.1 KiB (255.5 KiB/s) with 43 file(s) remainingCompleted 144.4 KiB/254.1 KiB (253.0 KiB/s) with 43 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/36992.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/36992.txt
+Completed 144.4 KiB/254.1 KiB (253.0 KiB/s) with 42 file(s) remainingCompleted 144.5 KiB/254.1 KiB (252.3 KiB/s) with 42 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/48800.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/48800.txt
+Completed 144.5 KiB/254.1 KiB (252.3 KiB/s) with 41 file(s) remainingCompleted 144.5 KiB/254.1 KiB (251.5 KiB/s) with 41 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/491649.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/491649.txt
+Completed 144.5 KiB/254.1 KiB (251.5 KiB/s) with 40 file(s) remainingCompleted 144.7 KiB/254.1 KiB (251.0 KiB/s) with 40 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/484509.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/484509.txt
+Completed 144.7 KiB/254.1 KiB (251.0 KiB/s) with 39 file(s) remainingCompleted 144.7 KiB/254.1 KiB (250.5 KiB/s) with 39 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/472015.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/472015.txt
+Completed 144.7 KiB/254.1 KiB (250.5 KiB/s) with 38 file(s) remainingCompleted 144.8 KiB/254.1 KiB (247.6 KiB/s) with 38 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/362776.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/362776.txt
+Completed 144.8 KiB/254.1 KiB (247.6 KiB/s) with 37 file(s) remainingCompleted 147.1 KiB/254.1 KiB (249.3 KiB/s) with 37 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/487439.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/487439.txt
+Completed 147.1 KiB/254.1 KiB (249.3 KiB/s) with 36 file(s) remainingCompleted 147.1 KiB/254.1 KiB (246.3 KiB/s) with 36 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/53553.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/53553.txt
+Completed 147.1 KiB/254.1 KiB (246.3 KiB/s) with 35 file(s) remainingCompleted 147.1 KiB/254.1 KiB (241.0 KiB/s) with 35 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/64524.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/64524.txt
+Completed 147.1 KiB/254.1 KiB (241.0 KiB/s) with 34 file(s) remainingCompleted 147.4 KiB/254.1 KiB (238.9 KiB/s) with 34 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/387034.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/387034.txt
+Completed 147.4 KiB/254.1 KiB (238.9 KiB/s) with 33 file(s) remainingCompleted 147.4 KiB/254.1 KiB (238.2 KiB/s) with 33 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/652004.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/652004.txt
+Completed 147.4 KiB/254.1 KiB (238.2 KiB/s) with 32 file(s) remainingCompleted 147.4 KiB/254.1 KiB (237.4 KiB/s) with 32 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/636515.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/636515.txt
+Completed 147.4 KiB/254.1 KiB (237.4 KiB/s) with 31 file(s) remainingCompleted 147.5 KiB/254.1 KiB (236.3 KiB/s) with 31 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/743757.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/743757.txt
+Completed 147.5 KiB/254.1 KiB (236.3 KiB/s) with 30 file(s) remainingCompleted 147.5 KiB/254.1 KiB (235.4 KiB/s) with 30 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/547055.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/547055.txt
+Completed 147.5 KiB/254.1 KiB (235.4 KiB/s) with 29 file(s) remainingCompleted 147.5 KiB/254.1 KiB (234.3 KiB/s) with 29 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/748251.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/748251.txt
+Completed 147.5 KiB/254.1 KiB (234.3 KiB/s) with 28 file(s) remainingCompleted 147.5 KiB/254.1 KiB (233.3 KiB/s) with 28 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/653537.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/653537.txt
+Completed 147.5 KiB/254.1 KiB (233.3 KiB/s) with 27 file(s) remainingCompleted 147.9 KiB/254.1 KiB (230.6 KiB/s) with 27 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/682809.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/682809.txt
+Completed 147.9 KiB/254.1 KiB (230.6 KiB/s) with 26 file(s) remainingCompleted 148.2 KiB/254.1 KiB (230.5 KiB/s) with 26 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/748589.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/748589.txt
+Completed 148.2 KiB/254.1 KiB (230.5 KiB/s) with 25 file(s) remainingCompleted 148.2 KiB/254.1 KiB (229.8 KiB/s) with 25 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/77677.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/77677.txt
+Completed 148.2 KiB/254.1 KiB (229.8 KiB/s) with 24 file(s) remainingCompleted 148.3 KiB/254.1 KiB (227.1 KiB/s) with 24 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/77050.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/77050.txt
+Completed 148.3 KiB/254.1 KiB (227.1 KiB/s) with 23 file(s) remainingCompleted 148.5 KiB/254.1 KiB (226.1 KiB/s) with 23 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/772603.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/772603.txt
+Completed 148.5 KiB/254.1 KiB (226.1 KiB/s) with 22 file(s) remainingCompleted 148.5 KiB/254.1 KiB (221.0 KiB/s) with 22 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/88410.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/88410.txt
+Completed 148.5 KiB/254.1 KiB (221.0 KiB/s) with 21 file(s) remainingCompleted 148.5 KiB/254.1 KiB (219.7 KiB/s) with 21 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/77399.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/77399.txt
+Completed 148.5 KiB/254.1 KiB (219.7 KiB/s) with 20 file(s) remainingCompleted 148.5 KiB/254.1 KiB (218.8 KiB/s) with 20 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/796250.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/796250.txt
+Completed 148.5 KiB/254.1 KiB (218.8 KiB/s) with 19 file(s) remainingCompleted 148.6 KiB/254.1 KiB (218.3 KiB/s) with 19 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/861413.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/861413.txt
+Completed 148.6 KiB/254.1 KiB (218.3 KiB/s) with 18 file(s) remainingCompleted 148.6 KiB/254.1 KiB (215.3 KiB/s) with 18 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/931940.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/931940.txt
+Completed 148.6 KiB/254.1 KiB (215.3 KiB/s) with 17 file(s) remainingCompleted 148.6 KiB/254.1 KiB (214.8 KiB/s) with 17 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/854417.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/854417.txt
+Completed 148.6 KiB/254.1 KiB (214.8 KiB/s) with 16 file(s) remainingCompleted 148.6 KiB/254.1 KiB (214.3 KiB/s) with 16 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/940187.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/940187.txt
+Completed 148.6 KiB/254.1 KiB (214.3 KiB/s) with 15 file(s) remainingCompleted 148.6 KiB/254.1 KiB (210.5 KiB/s) with 15 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/918096.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/918096.txt
+Completed 148.6 KiB/254.1 KiB (210.5 KiB/s) with 14 file(s) remainingCompleted 148.7 KiB/254.1 KiB (209.9 KiB/s) with 14 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/802851.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/802851.txt
+Completed 148.7 KiB/254.1 KiB (209.9 KiB/s) with 13 file(s) remainingCompleted 148.7 KiB/254.1 KiB (203.9 KiB/s) with 13 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/863406.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/863406.txt
+Completed 148.7 KiB/254.1 KiB (203.9 KiB/s) with 12 file(s) remainingCompleted 148.7 KiB/254.1 KiB (203.5 KiB/s) with 12 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/836924.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/836924.txt
+Completed 148.7 KiB/254.1 KiB (203.5 KiB/s) with 11 file(s) remainingCompleted 148.8 KiB/254.1 KiB (203.2 KiB/s) with 11 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/931049.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/931049.txt
+Completed 148.8 KiB/254.1 KiB (203.2 KiB/s) with 10 file(s) remainingCompleted 148.9 KiB/254.1 KiB (202.8 KiB/s) with 10 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/974046.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/974046.txt
+Completed 148.9 KiB/254.1 KiB (202.8 KiB/s) with 9 file(s) remainingCompleted 149.2 KiB/254.1 KiB (202.2 KiB/s) with 9 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/949486.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/949486.txt
+Completed 149.2 KiB/254.1 KiB (202.2 KiB/s) with 8 file(s) remainingCompleted 149.5 KiB/254.1 KiB (202.4 KiB/s) with 8 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/972244.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/972244.txt
+Completed 149.5 KiB/254.1 KiB (202.4 KiB/s) with 7 file(s) remainingCompleted 149.5 KiB/254.1 KiB (202.2 KiB/s) with 7 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/86687.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/86687.txt
+Completed 149.5 KiB/254.1 KiB (202.2 KiB/s) with 6 file(s) remainingCompleted 149.6 KiB/254.1 KiB (201.9 KiB/s) with 6 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/988142.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/988142.txt
+Completed 149.6 KiB/254.1 KiB (201.9 KiB/s) with 5 file(s) remainingCompleted 149.7 KiB/254.1 KiB (201.6 KiB/s) with 5 file(s) remainingCompleted 149.7 KiB/254.1 KiB (201.5 KiB/s) with 5 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/94910.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/94910.txt
+Completed 149.7 KiB/254.1 KiB (201.5 KiB/s) with 4 file(s) remainingupload: data/qa/ocr_pilot_v2/paddle/976209.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/paddle/976209.txt
+Completed 149.7 KiB/254.1 KiB (201.5 KiB/s) with 3 file(s) remainingCompleted 152.4 KiB/254.1 KiB (199.3 KiB/s) with 3 file(s) remainingupload: data/qa/ocr_pilot_v2/sample_meta.csv to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/sample_meta.csv
+Completed 152.4 KiB/254.1 KiB (199.3 KiB/s) with 2 file(s) remainingCompleted 153.1 KiB/254.1 KiB (198.7 KiB/s) with 2 file(s) remainingupload: data/qa/ocr_pilot_v2/sample_ids.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/sample_ids.txt
+Completed 153.1 KiB/254.1 KiB (198.7 KiB/s) with 1 file(s) remainingCompleted 254.1 KiB/254.1 KiB (313.6 KiB/s) with 1 file(s) remainingupload: data/qa/ocr_pilot_v2/results.csv to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/results.csv
+[checkpoint] synced after paddle
+--- run model=qianfan Wed Jul 29 17:50:20 UTC 2026 ---
+sample n=100 → data/qa/ocr_pilot_v2/sample_ids.txt
+     id                                               title  year
+ 484509                                         Just Spooks  1925
+1261561                                    The Monkey's Paw  1923
+ 362776                                  Ghost Town Frolics  1938
+  26921                     The Mystery of the Mary Celeste  1935
+ 212973                                Gildersleeve's Ghost  1944
+  48800                                         The Unknown  1946
+  35073                       The Beast from 20,000 Fathoms  1953
+ 836924                                         Roh Membela  1955
+   3104                          Frankenstein Created Woman  1967
+  64524                                           Nightmare  1964
+  77399                              Incense for the Damned  1971
+  30833                                   Drive-In Massacre  1976
+ 399172                                  Lipstick and Blood  1984
+1015482                                 Kiss of the Serpent  1988
+  10283    Friday the 13th Part VIII: Jason Takes Manhattan  1989
+  88410                                         Beyond Evil  1980
+  86687                                        Severed Ties  1992
+ 336254                                            Downtime  1995
+  36992                                              Shakma  1990
+  43274                                     Tower of Terror  1997
+  15056                        The Curse of King Tut's Tomb  2006
+  23532                           How to Be a Serial Killer  2009
+  31012                                            Cerberus  2005
+  45551                                        Surveillance  2006
+ 156252                                              Phobic  2002
+ 743757                            Blood Orgy of the Damned  2007
+  11908                                             Hatchet  2006
+  28265                                 Lovesick: Sick Love  2004
+  28419                                         Hellbreeder  2004
+  53553                                            The Glow  2002
+  77050                                            Theodore  2009
+ 278267                                       The Dead Walk  2008
+ 165078                                      Legend of Hell  2012
+ 225048                                          Evangeline  2013
+ 233194                                       8 Butterflies  2010
+ 286452                                       Varsity Blood  2014
+ 300156                  The Interrogation of Cheryl Cooper  2014
+ 302019                                           Crow Hand  2014
+ 387034                                         Nasty Nancy  2010
+ 491649                                               Larry  2017
+ 505063                          Await Further Instructions  2018
+ 547055                                           Threshold  2016
+ 636515                                       Hidden Mother  2019
+ 653537                                            Whispers  2019
+ 772603                                               Money  2017
+ 974046                              House of White Spiders  2010
+ 976209                                     Midnight Thirst  2016
+  77677                                             Escapee  2011
+  94910                                          Magnificat  2011
+ 207475                                The Ouija Experiment  2011
+ 259675                                   Belly of the Wolf  2013
+ 343674                                       Gerald's Game  2017
+ 356486                                      Lumberjack Man  2015
+ 384756                                               Rabid  2019
+ 472015                                 Hunting for Shadows  2016
+ 487439                                                Itch  2017
+ 682809                                     Under the Table  2011
+ 748251                                     Vamp Bikers Dos  2015
+ 861413                                          A Dream...  2012
+ 940187                                      THE INQUISTION  2019
+ 972244                                     Darkness of Day  2010
+ 748589 Housesitter: The Night They Saved Siegfried's Brain  2020
+ 796250                                         Confinement  2022
+ 802851                                             Charles  2022
+ 854417                                              Bearry  2021
+ 863406                                       The Blue Rose  2024
+ 918096              Hemet, or the Landlady Don't Drink Tea  2024
+ 931049                                    Beware the Woods  2022
+1022479                                     You're Melting!  2022
+1083119                                 The Lost Chronicles  2023
+1125186                                      Home Education  2023
+1193824                                         Rabbit Trap  2025
+1289969                          The Battle of Grovers Mill  2024
+1298819                               Clickbait: Unfollowed  2024
+1307154                                    Sinister Surgeon  2024
+1375109                                    Darby After Dark  2024
+1397562                                              Coreys  2024
+1441287                                         House Rules  2024
+1443966                               How Was Your Weekend?  2025
+1475231                                            Bonehead  2025
+1718150                                              Curfew  2025
+ 652004                             The Wolf of Snow Hollow  2020
+ 931940                                             The Fix  2024
+ 949486                                               Doors  2020
+ 988142                           The Five Fingers of a Dog  2022
+1085262                                           Our House  2023
+1148920                                            Trial 22  2023
+1229586                                             Stutter  2024
+1273536                      Theoretical: The Invisible Man  2024
+1294319                                       Shades of Red  2024
+1346645                                                Lupo  2024
+1351896                                               Sally  2024
+1363776                                           Paralysis  2024
+1379480                                   Oliver's Basement  2024
+1405670                                             xOxExFx  2024
+1463113                                                Bone  2023
+1483020                                        Camp Baloney  2025
+1483743                                  up here, disappear  2025
+1541944                                       A Hollow Tree  2023
+1578643                                           Cymophane  2024
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+device=cuda
+append-results: kept 600 rows for models outside ['qianfan']
+
+=== model=qianfan device=cuda n=100 ===
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]/opt/pytorch/lib/python3.13/site-packages/huggingface_hub/file_download.py:744: UserWarning: Not enough free disk space to download the file. The expected file size is: 4503.79 MB. The target location /home/ubuntu/.cache/huggingface/hub/models--baidu--Qianfan-OCR/blobs only has 462.07 MB free disk space.
+  warnings.warn(
+/opt/pytorch/lib/python3.13/site-packages/huggingface_hub/file_download.py:744: UserWarning: Not enough free disk space to download the file. The expected file size is: 4979.12 MB. The target location /home/ubuntu/.cache/huggingface/hub/models--baidu--Qianfan-OCR/blobs only has 462.07 MB free disk space.
+  warnings.warn(
+/opt/pytorch/lib/python3.13/site-packages/huggingface_hub/file_download.py:744: UserWarning: Not enough free disk space to download the file. The expected file size is: 4503.79 MB. The target location /home/ubuntu/.cache/huggingface/hub/models--baidu--Qianfan-OCR/blobs only has 462.05 MB free disk space.
+  warnings.warn(
+Fetching 2 files:   0%|          | 0/2 [00:06<?, ?it/s]
+load_error: Unrecognized configuration class <class 'transformers.models.qianfan_ocr.configuration_qianfan_ocr.QianfanOCRConfig'> for this kind of AutoModel: AutoModelForCausalLM.
+Model type should be one of GPT2Config, AfmoeConfig, ApertusConfig, ArceeConfig, AriaTextConfig, BambaConfig, BartConfig, BertConfig, BertGenerationConfig, BigBirdConfig, BigBirdPegasusConfig, BioGptConfig, BitNetConfig, BlenderbotConfig, BlenderbotSmallConfig, BloomConfig, BltConfig, CamembertConfig, CodeGenConfig, CohereConfig, Cohere2Config, Cohere2MoeConfig, CpmAntConfig, CTRLConfig, CwmConfig, Data2VecTextConfig, DbrxConfig, DeepseekV2Config, DeepseekV3Config, DeepseekV32Config, DeepseekV4Config, DiffLlamaConfig, DogeConfig, Dots1Config, ElectraConfig, Emu3Config, ErnieConfig, Ernie4_5Config, Ernie4_5_MoeConfig, Exaone4Config, ExaoneMoeConfig, FalconConfig, FalconH1Config, FalconMambaConfig, FlexOlmoConfig, FuyuConfig, GemmaConfig, Gemma2Config, Gemma3Config, Gemma3TextConfig, Gemma3nConfig, Gemma3nTextConfig, Gemma4Config, Gemma4AssistantConfig, Gemma4TextConfig, Gemma4UnifiedConfig, Gemma4UnifiedAssistantConfig, Gemma4UnifiedTextConfig, GitConfig, GlmConfig, Glm4Config, Glm4MoeConfig, Glm4MoeLiteConfig, GlmMoeDsaConfig, GotOcr2Config, GPT2Config, GPTBigCodeConfig, GPTNeoConfig, GPTNeoXConfig, GPTNeoXJapaneseConfig, GptOssConfig, GPTJConfig, GraniteConfig, GraniteMoeConfig, GraniteMoeHybridConfig, GraniteMoeSharedConfig, HeliumConfig, HrmTextConfig, HunYuanDenseV1Config, HunYuanMoEV1Config, HYV3Config, HyperCLOVAXConfig, InklingTextConfig, Jais2Config, JambaConfig, JetMoeConfig, LagunaConfig, Lfm2Config, Lfm2MoeConfig, LlamaConfig, Llama4Config, Llama4TextConfig, LongcatFlashConfig, MambaConfig, Mamba2Config, MarianConfig, MBartConfig, MegatronBertConfig, MellumConfig, MiMoV2FlashConfig, MiniCPM3Config, MiniMaxConfig, MiniMaxM2Config, MiniMaxM3VLTextConfig, MinistralConfig, Ministral3Config, MistralConfig, MixtralConfig, MllamaConfig, ModernBertDecoderConfig, MoshiConfig, MptConfig, MusicgenConfig, MusicgenMelodyConfig, MvpConfig, NanoChatConfig, NemotronConfig, NemotronHConfig, OlmoConfig, Olmo2Config, Olmo3Config, OlmoHybridConfig, OlmoeConfig, OpenAIGPTConfig, OPTConfig, PegasusConfig, PersimmonConfig, PhiConfig, Phi3Config, Phi4MultimodalConfig, PhimoeConfig, PLBartConfig, ProphetNetConfig, Qwen2Config, Qwen2MoeConfig, Qwen3Config, Qwen3_5Config, Qwen3_5MoeConfig, Qwen3_5MoeTextConfig, Qwen3_5TextConfig, Qwen3MoeConfig, Qwen3NextConfig, RecurrentGemmaConfig, ReformerConfig, RemBertConfig, RobertaConfig, RobertaPreLayerNormConfig, RoCBertConfig, RoFormerConfig, RwkvConfig, SeedOssConfig, SmolLM3Config, SolarOpenConfig, StableLmConfig, Starcoder2Config, TrOCRConfig, VaultGemmaConfig, WhisperConfig, XGLMConfig, XLMConfig, XLMRobertaConfig, XLMRobertaXLConfig, XLNetConfig, xLSTMConfig, XmodConfig, YoutuConfig, ZambaConfig, Zamba2Config, ZayaConfig.
+Traceback (most recent call last):
+  File "/home/ubuntu/aof/pipeline/pilot_ocr_models.py", line 429, in __init__
+    self.model = AutoModelForImageTextToText.from_pretrained(hf_id, **kwargs)
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/models/auto/auto_factory.py", line 402, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/modeling_utils.py", line 4355, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path=pretrained_model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/modeling_utils.py", line 814, in _get_resolved_checkpoint_files
+    checkpoint_files, sharded_metadata = get_checkpoint_shard_files(
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/utils/hub.py", line 894, in get_checkpoint_shard_files
+    cached_filenames = cached_files(
+        pretrained_model_name_or_path,
+    ...<10 lines>...
+        tqdm_class=tqdm_class,
+    )
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/utils/hub.py", line 527, in cached_files
+    raise e
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/utils/hub.py", line 452, in cached_files
+    snapshot_download(
+    ~~~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<9 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/pytorch/lib/python3.13/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/huggingface_hub/_snapshot_download.py", line 514, in snapshot_download
+    hf_thread_map(
+    ~~~~~~~~~~~~~^
+        _inner_hf_hub_download,
+        ^^^^^^^^^^^^^^^^^^^^^^^
+    ...<3 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/pytorch/lib/python3.13/site-packages/huggingface_hub/utils/tqdm.py", line 441, in hf_thread_map
+    results[future_to_index[future]] = future.result()
+                                       ~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/concurrent/futures/_base.py", line 453, in result
+    return self.__get_result()
+           ~~~~~~~~~~~~~~~~~^^
+  File "/usr/lib/python3.13/concurrent/futures/_base.py", line 402, in __get_result
+    raise self._exception
+  File "/usr/lib/python3.13/concurrent/futures/thread.py", line 59, in run
+    result = self.fn(*self.args, **self.kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/huggingface_hub/_snapshot_download.py", line 494, in _inner_hf_hub_download
+    hf_hub_download(  # type: ignore
+    ~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+        repo_id,
+        ^^^^^^^^
+    ...<14 lines>...
+        dry_run=dry_run,
+        ^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/pytorch/lib/python3.13/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/huggingface_hub/file_download.py", line 1013, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<15 lines>...
+        dry_run=dry_run,
+    )
+  File "/opt/pytorch/lib/python3.13/site-packages/huggingface_hub/file_download.py", line 1241, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        incomplete_path=Path(blob_path + ".incomplete"),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/pytorch/lib/python3.13/site-packages/huggingface_hub/file_download.py", line 1925, in _download_to_tmp_and_move
+    xet_get(
+    ~~~~~~~^
+        incomplete_path=tmp_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/pytorch/lib/python3.13/site-packages/huggingface_hub/file_download.py", line 563, in xet_get
+    with session.new_file_download_group(
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        token_refresh_url=xet_file_data.refresh_route,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        progress_callback=progress.update_progress,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as group:
+    ^
+RuntimeError: Task error: File reconstruction error: Internal Writer Error: Background writer channel closed
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/aof/pipeline/pilot_ocr_models.py", line 839, in run_model_on_sample
+    runner = build_runner(key, device)
+  File "/home/ubuntu/aof/pipeline/pilot_ocr_models.py", line 820, in build_runner
+    return ChatVlRunner(
+        "qianfan",
+    ...<2 lines>...
+        "Extract all visible text from this movie poster as plain text.",
+    )
+  File "/home/ubuntu/aof/pipeline/pilot_ocr_models.py", line 434, in __init__
+    self.model = AutoModelForCausalLM.from_pretrained(hf_id, **kwargs)
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/models/auto/auto_factory.py", line 405, in from_pretrained
+    raise ValueError(
+    ...<2 lines>...
+    )
+ValueError: Unrecognized configuration class <class 'transformers.models.qianfan_ocr.configuration_qianfan_ocr.QianfanOCRConfig'> for this kind of AutoModel: AutoModelForCausalLM.
+Model type should be one of GPT2Config, AfmoeConfig, ApertusConfig, ArceeConfig, AriaTextConfig, BambaConfig, BartConfig, BertConfig, BertGenerationConfig, BigBirdConfig, BigBirdPegasusConfig, BioGptConfig, BitNetConfig, BlenderbotConfig, BlenderbotSmallConfig, BloomConfig, BltConfig, CamembertConfig, CodeGenConfig, CohereConfig, Cohere2Config, Cohere2MoeConfig, CpmAntConfig, CTRLConfig, CwmConfig, Data2VecTextConfig, DbrxConfig, DeepseekV2Config, DeepseekV3Config, DeepseekV32Config, DeepseekV4Config, DiffLlamaConfig, DogeConfig, Dots1Config, ElectraConfig, Emu3Config, ErnieConfig, Ernie4_5Config, Ernie4_5_MoeConfig, Exaone4Config, ExaoneMoeConfig, FalconConfig, FalconH1Config, FalconMambaConfig, FlexOlmoConfig, FuyuConfig, GemmaConfig, Gemma2Config, Gemma3Config, Gemma3TextConfig, Gemma3nConfig, Gemma3nTextConfig, Gemma4Config, Gemma4AssistantConfig, Gemma4TextConfig, Gemma4UnifiedConfig, Gemma4UnifiedAssistantConfig, Gemma4UnifiedTextConfig, GitConfig, GlmConfig, Glm4Config, Glm4MoeConfig, Glm4MoeLiteConfig, GlmMoeDsaConfig, GotOcr2Config, GPT2Config, GPTBigCodeConfig, GPTNeoConfig, GPTNeoXConfig, GPTNeoXJapaneseConfig, GptOssConfig, GPTJConfig, GraniteConfig, GraniteMoeConfig, GraniteMoeHybridConfig, GraniteMoeSharedConfig, HeliumConfig, HrmTextConfig, HunYuanDenseV1Config, HunYuanMoEV1Config, HYV3Config, HyperCLOVAXConfig, InklingTextConfig, Jais2Config, JambaConfig, JetMoeConfig, LagunaConfig, Lfm2Config, Lfm2MoeConfig, LlamaConfig, Llama4Config, Llama4TextConfig, LongcatFlashConfig, MambaConfig, Mamba2Config, MarianConfig, MBartConfig, MegatronBertConfig, MellumConfig, MiMoV2FlashConfig, MiniCPM3Config, MiniMaxConfig, MiniMaxM2Config, MiniMaxM3VLTextConfig, MinistralConfig, Ministral3Config, MistralConfig, MixtralConfig, MllamaConfig, ModernBertDecoderConfig, MoshiConfig, MptConfig, MusicgenConfig, MusicgenMelodyConfig, MvpConfig, NanoChatConfig, NemotronConfig, NemotronHConfig, OlmoConfig, Olmo2Config, Olmo3Config, OlmoHybridConfig, OlmoeConfig, OpenAIGPTConfig, OPTConfig, PegasusConfig, PersimmonConfig, PhiConfig, Phi3Config, Phi4MultimodalConfig, PhimoeConfig, PLBartConfig, ProphetNetConfig, Qwen2Config, Qwen2MoeConfig, Qwen3Config, Qwen3_5Config, Qwen3_5MoeConfig, Qwen3_5MoeTextConfig, Qwen3_5TextConfig, Qwen3MoeConfig, Qwen3NextConfig, RecurrentGemmaConfig, ReformerConfig, RemBertConfig, RobertaConfig, RobertaPreLayerNormConfig, RoCBertConfig, RoFormerConfig, RwkvConfig, SeedOssConfig, SmolLM3Config, SolarOpenConfig, StableLmConfig, Starcoder2Config, TrOCRConfig, VaultGemmaConfig, WhisperConfig, XGLMConfig, XLMConfig, XLMRobertaConfig, XLMRobertaXLConfig, XLNetConfig, xLSTMConfig, XmodConfig, YoutuConfig, ZambaConfig, Zamba2Config, ZayaConfig.
+
+LISTO → data/qa/ocr_pilot_v2/results.csv (700 rows)
+model=qianfan exit=0
+Completed 176.3 KiB/~176.3 KiB (3.0 MiB/s) with ~1 file(s) remaining (calculating...)upload: data/qa/ocr_pilot_v2/ocr_pilot_v2_aws.log to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/ocr_pilot_v2_aws.log
+Completed 176.3 KiB/~176.3 KiB (3.0 MiB/s) with ~0 file(s) remaining (calculating...)Completed 331.2 KiB/334.6 KiB (2.3 MiB/s) with 3 file(s) remaining                   upload: data/qa/ocr_pilot_v2/results.csv to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/results.csv
+Completed 331.2 KiB/334.6 KiB (2.3 MiB/s) with 2 file(s) remainingCompleted 331.9 KiB/334.6 KiB (1.8 MiB/s) with 2 file(s) remainingupload: data/qa/ocr_pilot_v2/sample_ids.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/sample_ids.txt
+Completed 331.9 KiB/334.6 KiB (1.8 MiB/s) with 1 file(s) remainingCompleted 334.6 KiB/334.6 KiB (1.7 MiB/s) with 1 file(s) remainingupload: data/qa/ocr_pilot_v2/sample_meta.csv to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/sample_meta.csv
+[checkpoint] synced after qianfan
+--- run model=got Wed Jul 29 17:50:38 UTC 2026 ---
+sample n=100 → data/qa/ocr_pilot_v2/sample_ids.txt
+     id                                               title  year
+ 484509                                         Just Spooks  1925
+1261561                                    The Monkey's Paw  1923
+ 362776                                  Ghost Town Frolics  1938
+  26921                     The Mystery of the Mary Celeste  1935
+ 212973                                Gildersleeve's Ghost  1944
+  48800                                         The Unknown  1946
+  35073                       The Beast from 20,000 Fathoms  1953
+ 836924                                         Roh Membela  1955
+   3104                          Frankenstein Created Woman  1967
+  64524                                           Nightmare  1964
+  77399                              Incense for the Damned  1971
+  30833                                   Drive-In Massacre  1976
+ 399172                                  Lipstick and Blood  1984
+1015482                                 Kiss of the Serpent  1988
+  10283    Friday the 13th Part VIII: Jason Takes Manhattan  1989
+  88410                                         Beyond Evil  1980
+  86687                                        Severed Ties  1992
+ 336254                                            Downtime  1995
+  36992                                              Shakma  1990
+  43274                                     Tower of Terror  1997
+  15056                        The Curse of King Tut's Tomb  2006
+  23532                           How to Be a Serial Killer  2009
+  31012                                            Cerberus  2005
+  45551                                        Surveillance  2006
+ 156252                                              Phobic  2002
+ 743757                            Blood Orgy of the Damned  2007
+  11908                                             Hatchet  2006
+  28265                                 Lovesick: Sick Love  2004
+  28419                                         Hellbreeder  2004
+  53553                                            The Glow  2002
+  77050                                            Theodore  2009
+ 278267                                       The Dead Walk  2008
+ 165078                                      Legend of Hell  2012
+ 225048                                          Evangeline  2013
+ 233194                                       8 Butterflies  2010
+ 286452                                       Varsity Blood  2014
+ 300156                  The Interrogation of Cheryl Cooper  2014
+ 302019                                           Crow Hand  2014
+ 387034                                         Nasty Nancy  2010
+ 491649                                               Larry  2017
+ 505063                          Await Further Instructions  2018
+ 547055                                           Threshold  2016
+ 636515                                       Hidden Mother  2019
+ 653537                                            Whispers  2019
+ 772603                                               Money  2017
+ 974046                              House of White Spiders  2010
+ 976209                                     Midnight Thirst  2016
+  77677                                             Escapee  2011
+  94910                                          Magnificat  2011
+ 207475                                The Ouija Experiment  2011
+ 259675                                   Belly of the Wolf  2013
+ 343674                                       Gerald's Game  2017
+ 356486                                      Lumberjack Man  2015
+ 384756                                               Rabid  2019
+ 472015                                 Hunting for Shadows  2016
+ 487439                                                Itch  2017
+ 682809                                     Under the Table  2011
+ 748251                                     Vamp Bikers Dos  2015
+ 861413                                          A Dream...  2012
+ 940187                                      THE INQUISTION  2019
+ 972244                                     Darkness of Day  2010
+ 748589 Housesitter: The Night They Saved Siegfried's Brain  2020
+ 796250                                         Confinement  2022
+ 802851                                             Charles  2022
+ 854417                                              Bearry  2021
+ 863406                                       The Blue Rose  2024
+ 918096              Hemet, or the Landlady Don't Drink Tea  2024
+ 931049                                    Beware the Woods  2022
+1022479                                     You're Melting!  2022
+1083119                                 The Lost Chronicles  2023
+1125186                                      Home Education  2023
+1193824                                         Rabbit Trap  2025
+1289969                          The Battle of Grovers Mill  2024
+1298819                               Clickbait: Unfollowed  2024
+1307154                                    Sinister Surgeon  2024
+1375109                                    Darby After Dark  2024
+1397562                                              Coreys  2024
+1441287                                         House Rules  2024
+1443966                               How Was Your Weekend?  2025
+1475231                                            Bonehead  2025
+1718150                                              Curfew  2025
+ 652004                             The Wolf of Snow Hollow  2020
+ 931940                                             The Fix  2024
+ 949486                                               Doors  2020
+ 988142                           The Five Fingers of a Dog  2022
+1085262                                           Our House  2023
+1148920                                            Trial 22  2023
+1229586                                             Stutter  2024
+1273536                      Theoretical: The Invisible Man  2024
+1294319                                       Shades of Red  2024
+1346645                                                Lupo  2024
+1351896                                               Sally  2024
+1363776                                           Paralysis  2024
+1379480                                   Oliver's Basement  2024
+1405670                                             xOxExFx  2024
+1463113                                                Bone  2023
+1483020                                        Camp Baloney  2025
+1483743                                  up here, disappear  2025
+1541944                                       A Hollow Tree  2023
+1578643                                           Cymophane  2024
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+device=cuda
+append-results: kept 700 rows for models outside ['got']
+
+=== model=got device=cuda n=100 ===
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] `torch_dtype` is deprecated! Use `dtype` instead!
+/opt/pytorch/lib/python3.13/site-packages/huggingface_hub/file_download.py:744: UserWarning: Not enough free disk space to download the file. The expected file size is: 1121.11 MB. The target location /home/ubuntu/.cache/huggingface/hub/models--stepfun-ai--GOT-OCR-2.0-hf/blobs only has 461.75 MB free disk space.
+  warnings.warn(
+load_error: Can't load the model for 'stepfun-ai/GOT-OCR-2.0-hf'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'stepfun-ai/GOT-OCR-2.0-hf' is the correct path to a directory containing a file named pytorch_model.bin.
+Traceback (most recent call last):
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/modeling_utils.py", line 695, in _get_resolved_checkpoint_files
+    resolved_archive_file = cached_file(pretrained_model_name_or_path, filename, **cached_file_kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/utils/hub.py", line 293, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/utils/hub.py", line 527, in cached_files
+    raise e
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/utils/hub.py", line 437, in cached_files
+    hf_hub_download(
+    ~~~~~~~~~~~~~~~^
+        path_or_repo_id,
+        ^^^^^^^^^^^^^^^^
+    ...<10 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/pytorch/lib/python3.13/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/huggingface_hub/file_download.py", line 1013, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+        # Destination
+    ...<15 lines>...
+        dry_run=dry_run,
+    )
+  File "/opt/pytorch/lib/python3.13/site-packages/huggingface_hub/file_download.py", line 1241, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+    ~~~~~~~~~~~~~~~~~~~~~~~~~^
+        incomplete_path=Path(blob_path + ".incomplete"),
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<8 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/pytorch/lib/python3.13/site-packages/huggingface_hub/file_download.py", line 1925, in _download_to_tmp_and_move
+    xet_get(
+    ~~~~~~~^
+        incomplete_path=tmp_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<4 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/pytorch/lib/python3.13/site-packages/huggingface_hub/file_download.py", line 563, in xet_get
+    with session.new_file_download_group(
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        token_refresh_url=xet_file_data.refresh_route,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<2 lines>...
+        progress_callback=progress.update_progress,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ) as group:
+    ^
+RuntimeError: Task error: File reconstruction error: IO Error: No space left on device (os error 28)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/home/ubuntu/aof/pipeline/pilot_ocr_models.py", line 839, in run_model_on_sample
+    runner = build_runner(key, device)
+  File "/home/ubuntu/aof/pipeline/pilot_ocr_models.py", line 814, in build_runner
+    return GotRunner(device)
+  File "/home/ubuntu/aof/pipeline/pilot_ocr_models.py", line 207, in __init__
+    self.model = AutoModelForImageTextToText.from_pretrained(self.hf_id, **kwargs)
+                 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/models/auto/auto_factory.py", line 402, in from_pretrained
+    return model_class.from_pretrained(
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path, *model_args, config=config, **hub_kwargs, **kwargs
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/modeling_utils.py", line 4355, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+                                         ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~^
+        pretrained_model_name_or_path=pretrained_model_name_or_path,
+        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+    ...<7 lines>...
+        tqdm_class=tqdm_class,
+        ^^^^^^^^^^^^^^^^^^^^^^
+    )
+    ^
+  File "/opt/pytorch/lib/python3.13/site-packages/transformers/modeling_utils.py", line 775, in _get_resolved_checkpoint_files
+    raise OSError(
+    ...<4 lines>...
+    ) from e
+OSError: Can't load the model for 'stepfun-ai/GOT-OCR-2.0-hf'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'stepfun-ai/GOT-OCR-2.0-hf' is the correct path to a directory containing a file named pytorch_model.bin.
+
+LISTO → data/qa/ocr_pilot_v2/results.csv (800 rows)
+model=got exit=0
+Completed 189.6 KiB/~189.6 KiB (5.4 MiB/s) with ~1 file(s) remaining (calculating...)upload: data/qa/ocr_pilot_v2/ocr_pilot_v2_aws.log to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/ocr_pilot_v2_aws.log
+Completed 189.6 KiB/~189.6 KiB (5.4 MiB/s) with ~0 file(s) remaining (calculating...)Completed 380.6 KiB/384.0 KiB (2.9 MiB/s) with 3 file(s) remaining                   upload: data/qa/ocr_pilot_v2/results.csv to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/results.csv
+Completed 380.6 KiB/384.0 KiB (2.9 MiB/s) with 2 file(s) remainingCompleted 381.3 KiB/384.0 KiB (2.0 MiB/s) with 2 file(s) remainingupload: data/qa/ocr_pilot_v2/sample_ids.txt to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/sample_ids.txt
+Completed 381.3 KiB/384.0 KiB (2.0 MiB/s) with 1 file(s) remainingCompleted 384.0 KiB/384.0 KiB (2.0 MiB/s) with 1 file(s) remainingupload: data/qa/ocr_pilot_v2/sample_meta.csv to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/sample_meta.csv
+[checkpoint] synced after got
+Completed 35 Bytes/35 Bytes (476 Bytes/s) with 1 file(s) remainingupload: data/qa/ocr_pilot_v2/DONE to s3://aof-owlv2-102516364259/ocr_pilot_v2/results/DONE

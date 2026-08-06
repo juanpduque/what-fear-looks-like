@@ -1,0 +1,43 @@
+{
+  "title_text": "From the Depths: The Story of the USS Kerenza",
+  "credits_text": "Al Vargas presents A film by Andre Black & Lorenzo Lenz",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "mysterious",
+    "haunting",
+    "submarine",
+    "historical",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "submarine",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A black-and-white poster shows a submarine emerging from dark waters with two figures, one monstrous, standing on its deck."
+}

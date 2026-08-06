@@ -1,0 +1,43 @@
+{
+  "title_text": "THE HAUNTING OF THE HEIL HOUSE",
+  "credits_text": "Michael York, Andrew Bowen, Claudia Christian, Henry James",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Michael York BEST ACTOR The Yves Montand Film Festival",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "dread",
+    "haunting",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "lightning",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring a green-faced man with a ghostly apparition and a haunted house, promoting a horror film."
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "PANDEMIC UNDEAD",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "apocalyptic",
+    "intense",
+    "survival",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "weapon",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.75
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.85,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.75,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and horror elements including monstrous creatures and weapon use.",
+  "description": "A poster shows two hazmat-suited individuals holding guns amidst explosions, with a monstrous, zombie-like face looming in the background."
+}

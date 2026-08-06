@@ -1,0 +1,42 @@
+{
+  "title_text": "PORKCHOP II: RISE OF THE RIND",
+  "credits_text": "LET THE SLAUGHTER BEGIN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gruesome",
+    "violent",
+    "horror",
+    "intense",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.95,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore.",
+  "description": "A poster featuring a grotesque, stitched-together face with visible blood and wounds, overlaid with a knife graphic and bold red title text."
+}

@@ -1,0 +1,36 @@
+{
+  "title_text": "MAD IN ITALY",
+  "credits_text": "WRITTEN AND DIRECTED BY PAOLO FAZZINI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WITNESS THE BIRTH OF A NEW SERIAL KILLER INSPIRED BY TRUE EVENTS",
+  "mood": [
+    "dread",
+    "psychological",
+    "thriller",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster hints at violent themes related to a serial killer narrative.",
+  "description": "The poster features a close-up of a distressed face with a blurred background, accompanied by bold title text and credits."
+}

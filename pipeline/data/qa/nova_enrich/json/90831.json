@@ -1,0 +1,43 @@
+{
+  "title_text": "LOCUSTS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "apocalyptic",
+    "dread",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "explosion",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense imagery of explosion and swarming insects, may be disturbing.",
+  "description": "A dramatic poster shows a massive explosion with swarms of locusts in the foreground and aircraft overhead, set against a rural landscape."
+}

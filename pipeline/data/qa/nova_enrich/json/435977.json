@@ -1,0 +1,48 @@
+{
+  "title_text": "LE SYNDROME EDGAR POE",
+  "credits_text": "A.K. INTERNATIONAL presents \"EDGAR ALLAN POE SYNDROME\" CHRISTOPHER NEX, ELYSINE CHARLET, BRIGITTE BONCHEM GERARD STUR et QUENTIN PARENTS",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "dramatic",
+    "mysterious",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "gothic",
+      "conf": 0.9
+    },
+    {
+      "name": "horror",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.2,
+  "person": 0.9,
+  "animal": 0.1,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A collage-style poster features dramatic figures and Edgar Allan Poe's portrait, evoking a gothic horror theme with dark, intense imagery."
+}

@@ -1,0 +1,63 @@
+{
+  "launched_at": "2026-08-04T00:16:55Z",
+  "status": "running",
+  "instance_id": "i-0c9df56ab11bf8b4b",
+  "public_ip": "54.161.189.193",
+  "instance_type": "c5.xlarge",
+  "ami": "ami-052355af2a014bd2c",
+  "name_tag": "wflike-community-72k",
+  "bucket": "sagemaker-studio-a5572760",
+  "prefix": "wflike-community-72k",
+  "s3_root": "s3://sagemaker-studio-a5572760/wflike-community-72k/",
+  "aws_profile": "sandbox",
+  "region": "us-east-1",
+  "iam_profile": "wflike-ec2-train",
+  "protect_instances": [
+    "i-0d70c936e1e39759b",
+    "i-0f04b405308589396"
+  ],
+  "skip": {
+    "skip_labels": 45279,
+    "built_at": "2026-08-04T00:15:14Z",
+    "from_main": 45254,
+    "from_sidecar": 7475,
+    "note": "pre-relaunch overlap guard"
+  },
+  "pipeline": [
+    "enumerate TMDB horror (year-sharded Discover) \u2192 results/tmdb_horror_ids.csv",
+    "download posters with poster_path \u2192 posters/{id}.jpg on S3 (skip existing)",
+    "Rekognition Labels+IP+Mod+Faces for ids not in skip_labels",
+    "Rekognition DetectText for ids not in skip_detecttext"
+  ],
+  "outputs": {
+    "ids": "s3://sagemaker-studio-a5572760/wflike-community-72k/results/tmdb_horror_ids.csv",
+    "posters": "s3://sagemaker-studio-a5572760/wflike-community-72k/posters/",
+    "labels": "s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv",
+    "detecttext": "s3://sagemaker-studio-a5572760/wflike-community-72k/results/detecttext_community_72k.csv",
+    "progress": "s3://sagemaker-studio-a5572760/wflike-community-72k/results/PROGRESS.json",
+    "log": "s3://sagemaker-studio-a5572760/wflike-community-72k/results/community_72k_aws.log",
+    "done": "s3://sagemaker-studio-a5572760/wflike-community-72k/results/DONE"
+  },
+  "cost_eta": {
+    "target_ids": 72531,
+    "est_labels_todo": 24526,
+    "est_detecttext_todo": 65277,
+    "est_cost_usd_labels": 73.58,
+    "est_cost_usd_detecttext": 65.28,
+    "est_cost_usd_total_rek": 138.86,
+    "est_hours_enumerate": 1.5,
+    "est_hours_download": 2.0,
+    "est_hours_labels": 2.3,
+    "est_hours_detecttext": 3.6,
+    "est_hours_total": 9.4,
+    "sandbox_warning": "Full Labels suite on ~72k is ~$200\u2013270 if nothing skipped; with skip_labels=45279 remaining Labels\u2248$74. Ephemeral workshop sandbox may die before finish \u2014 S3 checkpoints are resume-safe; re-launch same PREFIX."
+  },
+  "monitor": [
+    "AWS_PROFILE=sandbox aws s3 cp s3://sagemaker-studio-a5572760/wflike-community-72k/results/PROGRESS.json -",
+    "AWS_PROFILE=sandbox aws s3 cp s3://sagemaker-studio-a5572760/wflike-community-72k/results/community_72k_aws.log - | tail -40",
+    "AWS_PROFILE=sandbox aws ec2 describe-instances --instance-ids i-0c9df56ab11bf8b4b --query 'Reservations[0].Instances[0].State.Name'"
+  ],
+  "pull_later": "AWS_PROFILE=sandbox bash pipeline/aws/pull_community_72k.sh",
+  "no_local_posters": true,
+  "note": "No mass poster download to Mac. Artifacts live on S3 until user pulls."
+}

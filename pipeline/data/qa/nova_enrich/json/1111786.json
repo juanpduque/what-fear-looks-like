@@ -1,0 +1,46 @@
+{
+  "title_text": "プロフィル魔歴影",
+  "credits_text": "影の主",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "本当にあって。本当の悪術を想したいまなたね",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "violent",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "skull",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and violent imagery.",
+  "description": "A dark, gory poster featuring a monstrous, blood-stained face with Japanese text overlaying a red, violent background."
+}

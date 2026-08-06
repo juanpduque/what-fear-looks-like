@@ -1,0 +1,45 @@
+{
+  "title_text": "THE TERMINATORS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "dystopian",
+    "sci-fi",
+    "action",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "robot",
+      "conf": 0.95
+    },
+    {
+      "name": "crowd",
+      "conf": 0.85
+    },
+    {
+      "name": "sci-fi",
+      "conf": 0.9
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts intense action and potential violence involving robotic figures.",
+  "description": "A poster shows a central robot with glowing eyes, surrounded by identical robots against a backdrop of a futuristic city and a planet in space."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "RED WOODS",
+  "credits_text": "THEIR FOOTAGE WILL TELL HIS STORY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "mystery",
+    "suspense",
+    "haunting",
+    "forest",
+    "isolated"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man holds a camera in front of an eerie, abandoned house in a dense forest, suggesting a mysterious or horror-themed narrative."
+}

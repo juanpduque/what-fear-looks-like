@@ -1,0 +1,40 @@
+{
+  "title_text": "CRIME TIME",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horrific",
+    "disturbing",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "eyes",
+      "conf": 0.95
+    },
+    {
+      "name": "text",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features disturbing imagery of eyes and partial faces, suggesting psychological horror themes.",
+  "description": "A poster shows a tray filled with multiple eyes and the text 'CRIME TIME' below, with partial faces in the background."
+}

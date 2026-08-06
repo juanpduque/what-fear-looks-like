@@ -1,0 +1,42 @@
+{
+  "title_text": "NURSIE",
+  "credits_text": "\"Incredible camera work and direction\" - Leo Venuti\nC. THOMAS HOWELL, SARAH BUCHANAN, DAVID PEELE, JULIA FRANK, LISA LOE, JOAN GIBSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NURSIE IS LOSING HER PATIENTS",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "camp",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster hints at potential violence and gore through its design and tagline.",
+  "description": "A dark, eerie poster features a shadowy figure and bold red text, with a tagline suggesting horror themes."
+}

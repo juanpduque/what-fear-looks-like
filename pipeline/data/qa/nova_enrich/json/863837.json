@@ -1,0 +1,44 @@
+{
+  "title_text": "水仙宫",
+  "credits_text": "今日上线",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "YOUKU 《网络室厅》",
+  "mood": [
+    "mysterious",
+    "haunting",
+    "ethereal",
+    "melancholic",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "water",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a woman gazing at a spectral figure in a dimly lit, traditional setting with water and lanterns."
+}

@@ -1,0 +1,38 @@
+{
+  "title_text": "THE TREPIDATION DEADEST NIGHT",
+  "credits_text": "EVERY PROPHECY HAS A FINAL BREATH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TB PRODUCTIONS",
+  "mood": [
+    "dread",
+    "suspense",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic poster features intense characters and a dark, stormy background with bold red text and a tagline."
+}

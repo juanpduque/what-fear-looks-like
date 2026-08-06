@@ -1,0 +1,48 @@
+{
+  "title_text": "切身二上罪子心",
+  "credits_text": "主演主引就就是你在工业地的工人家庭。主演主引是你在工业地的工人家庭。",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "工人家庭。主演主引是你在工业地的工人家庭。",
+  "mood": [
+    "horror",
+    "thriller",
+    "violent",
+    "psychological",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and suggestive imagery.",
+  "description": "A vintage horror poster features a large axe, a distressed woman, and bold Chinese text, with a collage of smaller scenes below."
+}

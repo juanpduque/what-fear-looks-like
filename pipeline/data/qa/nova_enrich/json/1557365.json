@@ -1,0 +1,41 @@
+{
+  "title_text": "LA ARAÑA GIGANTE DE DOS CABEZAS ESCAPE FUEGO",
+  "credits_text": "Aurora Navarrete Dirección, Óscar Navarro Asistente de dirección, Juan Marsan Producción, Teodoro Vázquez Director de fotografía, Fernando Soria Asistente de fotografía, Paula Castañeda Directora de arte, Carlos López Asistente de sonido, Naniés Mediu Directora de arte, Paula Castañeda Asistente de sonido, Gustavo S. Sáenz Editor",
+  "languages": [
+    "es"
+  ],
+  "other_text": "FUNDACIÓN EN CORTO·C, Giff, 16° RALLY UNIVERSITARIO, 7°S",
+  "mood": [
+    "horror",
+    "action",
+    "thriller",
+    "sci-fi",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 1.0
+    },
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 1.0
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.8,
+  "animal": 1.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense horror elements and implied violence.",
+  "description": "A poster shows a giant two-headed spider with flames for legs chasing two people through a cityscape."
+}

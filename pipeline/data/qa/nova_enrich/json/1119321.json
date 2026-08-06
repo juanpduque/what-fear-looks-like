@@ -1,0 +1,45 @@
+{
+  "title_text": "РАСЧЕПЛЕННЫЕ ДУШИ",
+  "credits_text": "Лесников Сергей Евгений Ковтун",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MediaMir ПРЕДСТАВЛЯЕТ RASSCHEPLEHIE DUSHI ВНИМАНИЕ! НЕФОРМАЛЬНАЯ ПЯТНИЦА! СЦЕНЫ ИЗ ФИЛЬМА!",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.4,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and themes of violence and horror.",
+  "description": "A poster featuring a menacing face with blood and text in Russian, promoting a horror film titled 'Rasscheplenie Dushi'."
+}

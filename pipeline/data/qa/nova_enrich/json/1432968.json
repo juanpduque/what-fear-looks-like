@@ -1,0 +1,37 @@
+{
+  "title_text": "The FunRoom",
+  "credits_text": "a film by Jim DeVault\nStacy Wall - Eddie Allen - Kris Storey - Ed Fontaine",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Eddie likes to play with girls. He does bad things to them.",
+  "mood": [
+    "disturbing",
+    "thriller",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "sexual",
+    "violence"
+  ],
+  "moderation_notes": "The poster implies potential sexual and violent content.",
+  "description": "The poster shows a partially visible person lying down with a tagline about disturbing behavior, suggesting a thriller or psychological horror theme."
+}

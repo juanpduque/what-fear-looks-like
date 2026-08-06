@@ -1,0 +1,43 @@
+{
+  "title_text": "SCREAMITYVILLE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A Frightseeing Tour",
+  "mood": [
+    "gothic",
+    "eerie",
+    "haunting",
+    "supernatural",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "house",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.4,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, eerie poster features a glowing skull with smoke, set against a haunted house backdrop under a stormy sky."
+}

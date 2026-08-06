@@ -1,0 +1,45 @@
+{
+  "title_text": "NINJA ZOMBIES",
+  "credits_text": "A Noah Cooper film",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Ninja Zombies Will Make Sushi Out of YOU! - Dread Central\nwww.ninjazombiesfilm.com\nBEST INDIEFILM Winner 2011\nBEST INDIEFILM Nominee 2011\nACTION FILM OF THE YEAR Nominee 2011\nBEST SPECIAL EFFECTS Nominee 2011",
+  "mood": [
+    "action",
+    "horror",
+    "zombie",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "zombie",
+      "conf": 0.9
+    },
+    {
+      "name": "ninja",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.5,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and horror elements.",
+  "description": "Poster features a masked ninja with flames, three characters, and bold title text. Highlights awards and nominations for indie and action films."
+}

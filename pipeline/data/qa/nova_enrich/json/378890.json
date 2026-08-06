@@ -1,0 +1,46 @@
+{
+  "title_text": "死亡是这里3",
+  "credits_text": "Death is Here 3",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "2014年4月 甘井由美主演 及川大治导演",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "dread",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic supernatural horror elements and mild violence.",
+  "description": "Four students in school uniforms are connected by ghostly hands around a table in a dimly lit room, with a floating figure above."
+}

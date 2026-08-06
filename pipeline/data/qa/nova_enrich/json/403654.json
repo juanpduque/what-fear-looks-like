@@ -1,0 +1,44 @@
+{
+  "title_text": "鬼子",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "dread",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "A collage of frightened faces with a fiery background, suggesting a horror theme involving supernatural elements."
+}

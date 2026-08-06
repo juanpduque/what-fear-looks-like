@@ -1,0 +1,42 @@
+{
+  "title_text": "WATCED",
+  "credits_text": "THE DISCOVERY OF A LIFETIME COULD DESTROY MANKIND",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "sci-fi",
+    "dramatic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.95,
+  "person": 0.6,
+  "animal": 0.95,
+  "blood_gore": 0.4,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains intense action and potential gore from dinosaur attacks.",
+  "description": "A poster shows a large dinosaur roaring over soldiers amidst a volcanic eruption, with dramatic lighting and action-packed visuals."
+}

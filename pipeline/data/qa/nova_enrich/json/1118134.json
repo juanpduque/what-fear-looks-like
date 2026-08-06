@@ -1,0 +1,40 @@
+{
+  "title_text": "DEEP SEA RESCUE",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "action",
+    "sci-fi",
+    "adventure",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.8
+    },
+    {
+      "name": "water",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.1,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A submarine crew faces a giant sea creature in a deep-sea rescue mission, with intense underwater action and tension."
+}

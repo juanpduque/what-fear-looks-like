@@ -1,0 +1,42 @@
+{
+  "title_text": "SPICE BOYZ",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "violent",
+    "raw",
+    "aggressive",
+    "chaotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    },
+    {
+      "name": "creature",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.9,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; may be disturbing to some viewers.",
+  "description": "A person wearing a fur mask holds a weapon, with visible blood and an aggressive expression, suggesting a violent or horror theme."
+}

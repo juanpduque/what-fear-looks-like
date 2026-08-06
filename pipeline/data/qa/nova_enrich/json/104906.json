@@ -1,0 +1,40 @@
+{
+  "title_text": "The Night of the Scorpion",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "(La casa de las muertas vivientes)",
+  "mood": [
+    "gothic",
+    "eerie",
+    "horror",
+    "mysterious",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.1,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic poster features a distressed woman with a shattered glass overlay and a gloved hand holding a weapon, evoking a gothic horror atmosphere."
+}

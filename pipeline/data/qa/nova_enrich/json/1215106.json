@@ -1,0 +1,49 @@
+{
+  "title_text": "KOGAJOAK VILLAGE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "horror",
+    "survival",
+    "forest",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.3,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror elements.",
+  "description": "A group of people defend themselves against monstrous creatures in a foggy forest village setting."
+}

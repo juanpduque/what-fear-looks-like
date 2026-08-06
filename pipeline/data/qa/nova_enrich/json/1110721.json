@@ -1,0 +1,42 @@
+{
+  "title_text": "呪怨4",
+  "credits_text": "放映作品 未来企画・東映ビデオ",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "13連発!! 恐怖の呪怨... 恐怖の呪怨が再び...",
+  "mood": [
+    "horror",
+    "supernatural",
+    "psychological",
+    "disturbing",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.1,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains disturbing imagery and themes of supernatural horror.",
+  "description": "A poster featuring a distorted, eerie face with Japanese text indicating the fourth installment in the Ju-On series."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "CARNIPELLIS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "surreal",
+    "disturbing",
+    "biological",
+    "experimental"
+  ],
+  "fear_labels": [
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "biological",
+      "conf": 0.85
+    },
+    {
+      "name": "surreal",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.1,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic biological imagery that may disturb some viewers.",
+  "description": "A close-up of a grotesque, organic mass inside a glass container, overlaid with the bold text CARNIPELLIS against a black background."
+}

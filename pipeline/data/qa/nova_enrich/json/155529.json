@@ -1,0 +1,33 @@
+{
+  "title_text": "甲鉄戦隊",
+  "credits_text": "野の英雄",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "日本テレビシステム21 制作・著作",
+  "mood": [
+    "action",
+    "fantasy",
+    "heroic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.95,
+  "person": 0.6,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A vibrant poster features multiple armored heroes and menacing creatures in dynamic combat poses, showcasing intense action and fantasy elements."
+}

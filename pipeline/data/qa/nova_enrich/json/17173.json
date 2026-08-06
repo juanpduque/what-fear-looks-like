@@ -1,0 +1,46 @@
+{
+  "title_text": "KIBAKICHI",
+  "credits_text": "RYUJI HARADA MIKI TANAKA MUBU NAKAYAMA",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "WHEN MONSTERS NEED TO HUNT THE SKY WILL SPLIT, AND ETERNAL DARKNESS WILL COVER THE EARTH.",
+  "mood": [
+    "dark",
+    "fantasy",
+    "action",
+    "mythical",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and monstrous imagery.",
+  "description": "A poster shows a cloaked figure holding a weapon against a menacing monster and a skull, with dramatic lighting and dark tones."
+}

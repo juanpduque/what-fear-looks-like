@@ -1,0 +1,40 @@
+{
+  "title_text": "KILLER CROCODILE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "horror",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.9,
+  "animal": 1.0,
+  "blood_gore": 0.7,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and potential gore from the crocodile attack scene.",
+  "description": "A man is being attacked by a large crocodile with an open mouth. The poster features bold title text 'KILLER CROCODILE' in yellow and red."
+}

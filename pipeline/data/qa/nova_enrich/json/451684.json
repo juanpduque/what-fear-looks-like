@@ -1,0 +1,39 @@
+{
+  "title_text": "紫魔議",
+  "credits_text": "影集子 影集子 影集子",
+  "languages": [
+    "zh"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gothic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and ghostly imagery.",
+  "description": "A vintage horror poster features a distressed woman, a ghostly figure, and other characters against a red and green background with bold Chinese text."
+}

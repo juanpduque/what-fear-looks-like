@@ -1,0 +1,35 @@
+{
+  "title_text": "OCUPADO",
+  "credits_text": "A horror by Mel Turnage",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Barricade the doors. Try as hard as you can. You're still trapped inside.",
+  "mood": [
+    "claustrophobic",
+    "tense",
+    "desperate",
+    "confining",
+    "horrific"
+  ],
+  "fear_labels": [
+    {
+      "name": "trapped",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark poster with bold green text reading 'OCUPADO' and a message about being trapped inside, authored by Mel Turnage."
+}

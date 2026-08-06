@@ -1,0 +1,44 @@
+{
+  "title_text": "FACES OF DYING IV",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WARNING: If the brutal and graphic depiction of actual death is upsetting to you, please do not view this film.",
+  "mood": [
+    "gothic",
+    "dread",
+    "horrific"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "death",
+      "conf": 0.95
+    },
+    {
+      "name": "skeleton",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic depictions of death and violence.",
+  "description": "A poster featuring a skeletal figure with glowing eyes, surrounded by skulls and bones, with a warning about graphic content."
+}

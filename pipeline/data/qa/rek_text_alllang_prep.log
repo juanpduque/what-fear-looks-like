@@ -1,0 +1,33 @@
+ALLLANG_PREP_START Mon Aug  3 10:35:29 -05 2026
+horror=49,960 detecttext_done=37,829 gap=13,579
+local=10,298 need_download=563 no_path=2,718
+resolving poster_path via TMDB API for 2,718…
+  path resolve 200/2718 resolved=116
+  path resolve 400/2718 resolved=200
+  path resolve 600/2718 resolved=277
+  path resolve 800/2718 resolved=355
+  path resolve 1000/2718 resolved=446
+  path resolve 1200/2718 resolved=503
+  path resolve 1400/2718 resolved=561
+  path resolve 1600/2718 resolved=607
+  path resolve 1800/2718 resolved=650
+  path resolve 2000/2718 resolved=687
+  path resolve 2200/2718 resolved=720
+  path resolve 2400/2718 resolved=720
+  path resolve 2600/2718 resolved=720
+  path resolve 2718/2718 resolved=722
+path resolve done resolved=722 still_no_path=1,996
+downloading 1,285 posters → /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/posters workers=16
+  dl 200/1285 ok=200 fail=0 17.3/s
+  dl 400/1285 ok=400 fail=0 18.3/s
+  dl 600/1285 ok=600 fail=0 19.4/s
+  dl 800/1285 ok=800 fail=0 21.1/s
+  dl 1000/1285 ok=1000 fail=0 22.7/s
+  dl 1200/1285 ok=1200 fail=0 24.0/s
+  dl 1285/1285 ok=1285 fail=0 24.4/s
+download done ok=1285 fail=0
+wrote /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/rek_text_alllang_ids.txt n=11,583
+wrote /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/rek_text_alllang_manifest.csv n=13,579
+skipped_no_poster=1,996
+ALLLANG_PREP_END exit=0 Mon Aug  3 10:38:02 -05 2026
+ALLLANG_REK_START n=   11583 Mon Aug  3 10:38:02 -05 2026

@@ -1,0 +1,45 @@
+{
+  "title_text": "HARBINGER DOWN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "isolated",
+    "cold",
+    "suspenseful",
+    "desolate",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ice",
+      "conf": 0.95
+    },
+    {
+      "name": "ship",
+      "conf": 0.85
+    },
+    {
+      "name": "loneliness",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A lone figure walks on icy terrain toward a large ship under a dark, stormy sky, evoking isolation and suspense."
+}

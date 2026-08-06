@@ -1,0 +1,42 @@
+{
+  "title_text": "The Haunted",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "eerie",
+    "supernatural",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.95
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "storm",
+      "conf": 0.75
+    },
+    {
+      "name": "lightning",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, imposing house stands under a stormy sky with lightning striking nearby, evoking a gothic and supernatural atmosphere."
+}

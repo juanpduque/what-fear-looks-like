@@ -1,0 +1,49 @@
+{
+  "title_text": "ROADSIDE",
+  "credits_text": "\"HIGHLY UNNERVING... TAUT AND FILLED WITH SUSPENSE.\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FROM THE DIRECTOR OF CONTRACTED",
+  "mood": [
+    "tense",
+    "suspenseful",
+    "dark",
+    "gritty",
+    "anxious"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a tense atmosphere.",
+  "description": "A man stands over a fallen figure on a road at night, holding a rifle, with bullet holes in the background and a reflective windshield view."
+}

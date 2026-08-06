@@ -1,0 +1,43 @@
+{
+  "title_text": "CROCODILE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "danger",
+      "conf": 0.85
+    },
+    {
+      "name": "fear",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 1.0,
+  "animal": 1.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts a threatening crocodile and a frightened person, suggesting potential violence.",
+  "description": "A woman runs in fear as a large crocodile looms overhead, with smoke and plants in the background."
+}

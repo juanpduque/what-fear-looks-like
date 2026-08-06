@@ -1,0 +1,45 @@
+{
+  "title_text": "EL DESVIO",
+  "credits_text": "PACTO INCUMPLIDO",
+  "languages": [
+    "es"
+  ],
+  "other_text": "PELICULA DE TERROR DOMINICANA",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "mysterious",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "fire",
+      "conf": 0.75
+    },
+    {
+      "name": "haunted",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and ghostly imagery.",
+  "description": "A poster shows a dark, eerie scene with a silhouette behind an open gate against a red, fiery background and a full moon."
+}

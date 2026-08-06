@@ -1,0 +1,43 @@
+{
+  "title_text": "30 MILES FROM NOWHERE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "eerie",
+    "mysterious",
+    "haunting",
+    "foreboding",
+    "isolated"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "crows",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.8,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A lone figure approaches a dimly lit cabin in a dense, foggy forest, surrounded by crows, evoking a sense of isolation and impending dread."
+}

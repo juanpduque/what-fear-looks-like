@@ -1,0 +1,43 @@
+{
+  "title_text": "THE HOUSE OF VIOLENT DESIRE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "eerie",
+    "psychological",
+    "erotic",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and suggestive themes.",
+  "description": "A poster features a haunted house with a woman's face partially visible, showing blood and chains, evoking a dark, psychological horror theme."
+}

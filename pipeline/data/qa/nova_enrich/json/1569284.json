@@ -1,0 +1,40 @@
+{
+  "title_text": "FRIDAY NIGHT DEATH SLOT",
+  "credits_text": "ON FRIDAY NIGHT THE SHOW'S OVER. IT'S ALIVE.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TELEVISION GUIDE, THE SWED SHOW, LONG RUNNING SO-CALLED \"CULT\" SHOW, THE SWED SHOW, IT'S ALIVE.",
+  "mood": [
+    "dread",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and implied violence.",
+  "description": "A poster shows a newspaper with a headline, a bloody razor, and text reading 'Friday Night Death Slot.' The mood is dark and threatening."
+}

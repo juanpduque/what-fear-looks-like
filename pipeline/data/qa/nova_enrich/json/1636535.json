@@ -1,0 +1,41 @@
+{
+  "title_text": "WEREWOLF WITH UZI",
+  "credits_text": "DIRECTED by Mikkel 'The Swede' Nord MUSIC by Kurt Von Bartolmeusten SOUND DESIGN by Max Grundtück CAST Jacques Di Coupd Caino Hall Mikkel Coupd Rainer Jarng Jürgen Kase-Lary Dina Wiener Theo Essen Sladdy Diamond",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SUPER REEL Films Presents",
+  "mood": [
+    "intense",
+    "action",
+    "horror",
+    "thriller",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.6,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A dark red poster features bold white and red text advertising a film titled 'Werewolf with Uzi,' listing credits and a warning label."
+}

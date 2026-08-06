@@ -1,0 +1,40 @@
+{
+  "title_text": "MAKDEEP",
+  "credits_text": "The web of the witch",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "supernatural",
+    "gothic",
+    "mysterious",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "witch",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and a menacing witch figure.",
+  "description": "Poster features a menacing green witch with sharp teeth and three children, titled 'MAKDEEP: The web of the witch.'"
+}

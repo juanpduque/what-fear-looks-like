@@ -1,0 +1,39 @@
+{
+  "title_text": "THE SHADOW",
+  "credits_text": "BLACKOUT PRODUCTIONS PRESENTS A FILM BY SEAN HELLENO STARRING KATE ELIZABETH JEN AND JIM UNKENITH MUSIC BY BEN DONALDSON EDITED BY VICTORIA KILLINGSWORTH PRODUCTION DESIGNER REBECCA HIRST DIRECTED BY KEVIN KELLY PHOTOGRAPHY KONRAD NESTLER PRODUCED BY REBECCA HIRST AND SEAN HELLENO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AUDIOCHEMISTRY",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery",
+    "haunting",
+    "noir"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A vintage-style poster for a film titled 'The Shadow,' featuring two figures in a dark, eerie setting with a vinyl record in the background."
+}

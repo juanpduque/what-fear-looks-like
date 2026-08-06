@@ -1,0 +1,44 @@
+{
+  "title_text": "Bloody Mary 3D",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "erotic",
+    "horror",
+    "dramatic",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, partial nudity, and sexual elements.",
+  "description": "A woman with red hair holds a bloody knife, standing in a room with blood splattered on her body and lingerie."
+}

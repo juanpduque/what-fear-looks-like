@@ -1,0 +1,37 @@
+{
+  "title_text": "TITANS OF DESTRUCTION",
+  "credits_text": "THE EVOLUTION OF GIANT MONSTER MOVIES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "fantasy",
+    "adventure",
+    "epic",
+    "thrilling"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.4,
+  "animal": 0.8,
+  "blood_gore": 0.1,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and action elements typical of monster films.",
+  "description": "The poster features multiple giant monsters and a person in a blue suit amidst fiery explosions, promoting a film about the evolution of giant monster movies."
+}

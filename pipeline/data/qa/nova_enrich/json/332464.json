@@ -1,0 +1,42 @@
+{
+  "title_text": "SCREAM MACHINE",
+  "credits_text": "UNRATED",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A TOTAL NON-STOP GORY, GOOD TIME... MALEVOLENT MAGAZINE. FIVE BLOODY TWISTED TALES",
+  "mood": [
+    "horror",
+    "gory",
+    "intense",
+    "thriller",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.4,
+  "person": 0.5,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gory imagery.",
+  "description": "Poster features a vintage film projector with reels, fiery background, and bold red text reading 'SCREAM MACHINE UNRATED' and 'FIVE BLOODY TWISTED TALES.'"
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "KEMBALI ANAK IBIS",
+  "credits_text": "AUGI SEDARYONO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COMING SOON",
+  "mood": [
+    "eerie",
+    "haunting",
+    "gothic",
+    "mysterious",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood, suitable for mature audiences.",
+  "description": "A ghostly figure swings on a swing in a dark forest, with eerie text overlay indicating a horror theme."
+}

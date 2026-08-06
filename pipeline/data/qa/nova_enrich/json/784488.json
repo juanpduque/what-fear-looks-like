@@ -1,0 +1,43 @@
+{
+  "title_text": "PATIENT ZERO",
+  "credits_text": "FACELIFTS, AND... BOOB JOBS AND... ZOMBIES!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A TEAM PRODUCTIONS PRESENTS",
+  "mood": [
+    "camp",
+    "erotic",
+    "horror",
+    "zombie",
+    "grotesque"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.5,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "A poster shows a woman in green underwear amidst zombies, with blood splatters and silhouettes in the background."
+}

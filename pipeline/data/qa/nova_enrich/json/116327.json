@@ -1,0 +1,41 @@
+{
+  "title_text": "HOW TO MAKE A MONSTER",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "camp",
+    "gothic",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.6,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.5,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "Contains mild sexual suggestiveness and implied violence.",
+  "description": "A vibrant red poster features a monstrous face with sharp teeth and a dagger, alongside a distressed woman lying on the ground."
+}

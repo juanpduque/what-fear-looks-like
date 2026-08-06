@@ -1,0 +1,45 @@
+{
+  "title_text": "EXO-STER",
+  "credits_text": "et KAID TSUKA, CAROL HASHIDA, KAZUKI TAMAGUCHI, AKIRA MIIAKA, KAIO KAKEASHI et SHINPEI BABA, une film de SHIGERU KOBAYASHI et HIROAKI TAKAHASHI",
+  "languages": [
+    "en",
+    "ja",
+    "fr"
+  ],
+  "other_text": "L'ÉCOLE MAUDITE",
+  "mood": [
+    "erotic",
+    "horror",
+    "sci-fi",
+    "camp",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.7,
+  "sensitive": [
+    "nudity",
+    "sexual",
+    "violence"
+  ],
+  "moderation_notes": "Contains nudity and implied violence.",
+  "description": "A poster features a woman bound and a monstrous creature, with bold Japanese and English text, suggesting horror and sci-fi themes."
+}

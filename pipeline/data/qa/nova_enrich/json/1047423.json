@@ -1,0 +1,49 @@
+{
+  "title_text": "CREATURE OF THE MIST",
+  "credits_text": "PRAY FOR CLEAR SKIES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "fantasy",
+    "epic",
+    "mythic",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 1.0
+    },
+    {
+      "name": "creature",
+      "conf": 1.0
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 1.0,
+  "person": 0.4,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery with a monstrous creature.",
+  "description": "A poster shows a massive, terrifying creature emerging from mist with two figures facing it, one holding a weapon."
+}

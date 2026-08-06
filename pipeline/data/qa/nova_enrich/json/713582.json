@@ -1,0 +1,49 @@
+{
+  "title_text": "ANGRY ASIAN MURDER HORNETS",
+  "credits_text": "FROM THE CREATORS OF SEQUINS AND MICROWAVE MASSACRE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THIS STING WILL BE YOUR LAST!",
+  "mood": [
+    "action",
+    "horror",
+    "sci-fi",
+    "thriller",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.3,
+  "animal": 0.95,
+  "blood_gore": 0.2,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and intense action scenes.",
+  "description": "A poster shows giant hornets attacking a city with fire and chaos, featuring bold title text and dramatic artwork."
+}

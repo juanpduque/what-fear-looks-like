@@ -1,0 +1,421 @@
+sample n=100 from data/qa/ocr_pilot_v2/sample_ids.txt
+     id                                               title  year
+ 484509                                         Just Spooks  1925
+1261561                                    The Monkey's Paw  1923
+ 362776                                  Ghost Town Frolics  1938
+  26921                     The Mystery of the Mary Celeste  1935
+ 212973                                Gildersleeve's Ghost  1944
+  48800                                         The Unknown  1946
+  35073                       The Beast from 20,000 Fathoms  1953
+ 836924                                         Roh Membela  1955
+   3104                          Frankenstein Created Woman  1967
+  64524                                           Nightmare  1964
+  77399                              Incense for the Damned  1971
+  30833                                   Drive-In Massacre  1976
+ 399172                                  Lipstick and Blood  1984
+1015482                                 Kiss of the Serpent  1988
+  10283    Friday the 13th Part VIII: Jason Takes Manhattan  1989
+  88410                                         Beyond Evil  1980
+  86687                                        Severed Ties  1992
+ 336254                                            Downtime  1995
+  36992                                              Shakma  1990
+  43274                                     Tower of Terror  1997
+  15056                        The Curse of King Tut's Tomb  2006
+  23532                           How to Be a Serial Killer  2009
+  31012                                            Cerberus  2005
+  45551                                        Surveillance  2006
+ 156252                                              Phobic  2002
+ 743757                            Blood Orgy of the Damned  2007
+  11908                                             Hatchet  2006
+  28265                                 Lovesick: Sick Love  2004
+  28419                                         Hellbreeder  2004
+  53553                                            The Glow  2002
+  77050                                            Theodore  2009
+ 278267                                       The Dead Walk  2008
+ 165078                                      Legend of Hell  2012
+ 225048                                          Evangeline  2013
+ 233194                                       8 Butterflies  2010
+ 286452                                       Varsity Blood  2014
+ 300156                  The Interrogation of Cheryl Cooper  2014
+ 302019                                           Crow Hand  2014
+ 387034                                         Nasty Nancy  2010
+ 491649                                               Larry  2017
+ 505063                          Await Further Instructions  2018
+ 547055                                           Threshold  2016
+ 636515                                       Hidden Mother  2019
+ 653537                                            Whispers  2019
+ 772603                                               Money  2017
+ 974046                              House of White Spiders  2010
+ 976209                                     Midnight Thirst  2016
+  77677                                             Escapee  2011
+  94910                                          Magnificat  2011
+ 207475                                The Ouija Experiment  2011
+ 259675                                   Belly of the Wolf  2013
+ 343674                                       Gerald's Game  2017
+ 356486                                      Lumberjack Man  2015
+ 384756                                               Rabid  2019
+ 472015                                 Hunting for Shadows  2016
+ 487439                                                Itch  2017
+ 682809                                     Under the Table  2011
+ 748251                                     Vamp Bikers Dos  2015
+ 861413                                          A Dream...  2012
+ 940187                                      THE INQUISTION  2019
+ 972244                                     Darkness of Day  2010
+ 748589 Housesitter: The Night They Saved Siegfried's Brain  2020
+ 796250                                         Confinement  2022
+ 802851                                             Charles  2022
+ 854417                                              Bearry  2021
+ 863406                                       The Blue Rose  2024
+ 918096              Hemet, or the Landlady Don't Drink Tea  2024
+ 931049                                    Beware the Woods  2022
+1022479                                     You're Melting!  2022
+1083119                                 The Lost Chronicles  2023
+1125186                                      Home Education  2023
+1193824                                         Rabbit Trap  2025
+1289969                          The Battle of Grovers Mill  2024
+1298819                               Clickbait: Unfollowed  2024
+1307154                                    Sinister Surgeon  2024
+1375109                                    Darby After Dark  2024
+1397562                                              Coreys  2024
+1441287                                         House Rules  2024
+1443966                               How Was Your Weekend?  2025
+1475231                                            Bonehead  2025
+1718150                                              Curfew  2025
+ 652004                             The Wolf of Snow Hollow  2020
+ 931940                                             The Fix  2024
+ 949486                                               Doors  2020
+ 988142                           The Five Fingers of a Dog  2022
+1085262                                           Our House  2023
+1148920                                            Trial 22  2023
+1229586                                             Stutter  2024
+1273536                      Theoretical: The Invisible Man  2024
+1294319                                       Shades of Red  2024
+1346645                                                Lupo  2024
+1351896                                               Sally  2024
+1363776                                           Paralysis  2024
+1379480                                   Oliver's Basement  2024
+1405670                                             xOxExFx  2024
+1463113                                                Bone  2023
+1483020                                        Camp Baloney  2025
+1483743                                  up here, disappear  2025
+1541944                                       A Hollow Tree  2023
+1578643                                           Cymophane  2024
+
+=== model=easyocr (from poster_ocr.csv) n=100 ===
+  id=484509 status=ok chars=111 overlap=1.0 0.0s
+  id=1261561 status=ok chars=173 overlap=0.3333 0.0s
+  id=362776 status=ok chars=54 overlap=0.3333 0.0s
+  id=26921 status=ok chars=31 overlap=0.6 0.0s
+  id=212973 status=ok chars=134 overlap=0.0 0.0s
+  id=48800 status=ok chars=134 overlap=1.0 0.0s
+  id=35073 status=ok chars=25 overlap=0.5 0.0s
+  id=836924 status=ok chars=33 overlap=1.0 0.0s
+  id=3104 status=ok chars=22 overlap=0.0 0.0s
+  id=64524 status=ok chars=9 overlap=0.0 0.0s
+  id=77399 status=ok chars=12 overlap=0.0 0.0s
+  id=30833 status=ok chars=16 overlap=0.0 0.0s
+  id=399172 status=ok chars=16 overlap=0.0 0.0s
+  id=1015482 status=ok chars=37 overlap=0.0 0.0s
+  id=10283 status=ok chars=35 overlap=0.375 0.0s
+  id=88410 status=ok chars=4 overlap=0.0 0.0s
+  id=86687 status=ok chars=54 overlap=0.5 0.0s
+  id=336254 status=ok chars=8 overlap=1.0 0.0s
+  id=36992 status=ok chars=7 overlap=0.0 0.0s
+  id=43274 status=ok chars=14 overlap=0.3333 0.0s
+  id=15056 status=ok chars=27 overlap=0.8333 0.0s
+  id=23532 status=ok chars=25 overlap=0.8 0.0s
+  id=31012 status=ok chars=12 overlap=0.0 0.0s
+  id=45551 status=ok chars=21 overlap=0.0 0.0s
+  id=156252 status=ok chars=6 overlap=1.0 0.0s
+  id=743757 status=ok chars=67 overlap=0.0 0.0s
+  id=11908 status=ok chars=7 overlap=1.0 0.0s
+  id=28265 status=ok chars=17 overlap=0.3333 0.0s
+  id=28419 status=ok chars=283 overlap=1.0 0.0s
+  id=53553 status=ok chars=8 overlap=0.5 0.0s
+  id=77050 status=ok chars=74 overlap=1.0 0.0s
+  id=278267 status=missing chars=0 overlap=0.0 0.0s
+  id=165078 status=ok chars=113 overlap=0.3333 0.0s
+  id=225048 status=ok chars=40 overlap=1.0 0.0s
+  id=233194 status=ok chars=43 overlap=0.0 0.0s
+  id=286452 status=ok chars=13 overlap=0.5 0.0s
+  id=300156 status=ok chars=75 overlap=0.6 0.0s
+  id=302019 status=ok chars=8 overlap=0.0 0.0s
+  id=387034 status=ok chars=245 overlap=0.5 0.0s
+  id=491649 status=ok chars=5 overlap=1.0 0.0s
+  id=505063 status=ok chars=27 overlap=0.6667 0.0s
+  id=547055 status=ok chars=9 overlap=1.0 0.0s
+  id=636515 status=ok chars=32 overlap=1.0 0.0s
+  id=653537 status=ok chars=4 overlap=0.0 0.0s
+  id=772603 status=ok chars=127 overlap=1.0 0.0s
+  id=974046 status=ok chars=106 overlap=0.0 0.0s
+  id=976209 status=ok chars=67 overlap=0.0 0.0s
+  id=77677 status=ok chars=7 overlap=1.0 0.0s
+  id=94910 status=ok chars=10 overlap=0.0 0.0s
+  id=207475 status=ok chars=40 overlap=0.0 0.0s
+  id=259675 status=ok chars=90 overlap=0.5 0.0s
+  id=343674 status=ok chars=13 overlap=1.0 0.0s
+  id=356486 status=ok chars=14 overlap=1.0 0.0s
+  id=384756 status=ok chars=21 overlap=1.0 0.0s
+  id=472015 status=ok chars=86 overlap=0.0 0.0s
+  id=487439 status=ok chars=124 overlap=0.0 0.0s
+  id=682809 status=ok chars=121 overlap=1.0 0.0s
+  id=748251 status=ok chars=17 overlap=0.6667 0.0s
+  id=861413 status=ok chars=78 overlap=0.0 0.0s
+  id=940187 status=ok chars=48 overlap=0.0 0.0s
+  id=972244 status=ok chars=74 overlap=0.6667 0.0s
+  id=748589 status=ok chars=229 overlap=1.0 0.0s
+  id=796250 status=ok chars=219 overlap=1.0 0.0s
+  id=802851 status=ok chars=36 overlap=1.0 0.0s
+  id=854417 status=ok chars=22 overlap=1.0 0.0s
+  id=863406 status=ok chars=11 overlap=0.3333 0.0s
+  id=918096 status=ok chars=32 overlap=0.1429 0.0s
+  id=931049 status=ok chars=114 overlap=0.3333 0.0s
+  id=1022479 status=ok chars=8 overlap=0.0 0.0s
+  id=1083119 status=ok chars=19 overlap=1.0 0.0s
+  id=1125186 status=ok chars=67 overlap=1.0 0.0s
+  id=1193824 status=ok chars=11 overlap=0.5 0.0s
+  id=1289969 status=ok chars=135 overlap=0.4 0.0s
+  id=1298819 status=ok chars=29 overlap=0.5 0.0s
+  id=1307154 status=ok chars=11 overlap=0.0 0.0s
+  id=1375109 status=ok chars=39 overlap=0.3333 0.0s
+  id=1397562 status=ok chars=6 overlap=1.0 0.0s
+  id=1441287 status=ok chars=43 overlap=0.0 0.0s
+  id=1443966 status=ok chars=66 overlap=1.0 0.0s
+  id=1475231 status=ok chars=123 overlap=1.0 0.0s
+  id=1718150 status=ok chars=254 overlap=1.0 0.0s
+  id=652004 status=ok chars=16 overlap=0.0 0.0s
+  id=931940 status=ok chars=7 overlap=1.0 0.0s
+  id=949486 status=ok chars=228 overlap=1.0 0.0s
+  id=988142 status=ok chars=25 overlap=0.6 0.0s
+  id=1085262 status=ok chars=19 overlap=1.0 0.0s
+  id=1148920 status=ok chars=103 overlap=0.0 0.0s
+  id=1229586 status=ok chars=13 overlap=0.0 0.0s
+  id=1273536 status=ok chars=19 overlap=0.0 0.0s
+  id=1294319 status=ok chars=14 overlap=0.0 0.0s
+  id=1346645 status=ok chars=4 overlap=0.0 0.0s
+  id=1351896 status=ok chars=137 overlap=1.0 0.0s
+  id=1363776 status=ok chars=9 overlap=1.0 0.0s
+  id=1379480 status=ok chars=17 overlap=1.0 0.0s
+  id=1405670 status=ok chars=29 overlap=0.0 0.0s
+  id=1463113 status=ok chars=4 overlap=1.0 0.0s
+  id=1483020 status=ok chars=12 overlap=1.0 0.0s
+  id=1483743 status=ok chars=47 overlap=0.6667 0.0s
+  id=1541944 status=ok chars=13 overlap=1.0 0.0s
+  id=1578643 status=ok chars=34 overlap=0.0 0.0s
+
+=== model=rekognition region=us-east-1 n=100 ===
+  id=484509 status=ok chars=117 overlap=1.0 1.257s
+  id=1261561 status=ok chars=244 overlap=1.0 0.81s
+  id=362776 status=ok chars=55 overlap=1.0 0.588s
+  id=26921 status=ok chars=31 overlap=1.0 0.498s
+  id=212973 status=ok chars=240 overlap=0.5 0.864s
+  id=48800 status=ok chars=151 overlap=1.0 0.778s
+  id=35073 status=ok chars=35 overlap=1.0 0.721s
+  id=836924 status=ok chars=37 overlap=1.0 0.536s
+  id=3104 status=ok chars=26 overlap=1.0 0.786s
+  id=64524 status=ok chars=9 overlap=1.0 0.554s
+  id=77399 status=ok chars=14 overlap=0.0 0.505s
+  id=30833 status=ok chars=17 overlap=1.0 0.524s
+  id=399172 status=ok chars=21 overlap=1.0 0.486s
+  id=1015482 status=ok chars=42 overlap=0.0 0.796s
+  id=10283 status=ok chars=43 overlap=0.75 0.554s
+  id=88410 status=ok chars=11 overlap=1.0 0.653s
+  id=86687 status=ok chars=58 overlap=1.0 0.716s
+  id=336254 status=ok chars=8 overlap=1.0 0.744s
+  id=36992 status=ok chars=7 overlap=1.0 0.784s
+  id=43274 status=ok chars=15 overlap=1.0 0.521s
+  id=15056 status=ok chars=28 overlap=1.0 0.838s
+  id=23532 status=ok chars=25 overlap=1.0 0.619s
+  id=31012 status=ok chars=8 overlap=1.0 0.587s
+  id=45551 status=ok chars=48 overlap=1.0 0.578s
+  id=156252 status=ok chars=6 overlap=1.0 0.575s
+  id=743757 status=ok chars=84 overlap=0.8 1.069s
+  id=11908 status=ok chars=7 overlap=1.0 0.542s
+  id=28265 status=ok chars=17 overlap=0.3333 0.554s
+  id=28419 status=ok chars=400 overlap=1.0 1.243s
+  id=53553 status=ok chars=8 overlap=1.0 0.507s
+  id=77050 status=ok chars=73 overlap=1.0 0.572s
+  id=278267 status=ok chars=422 overlap=1.0 1.111s
+  id=165078 status=ok chars=213 overlap=0.3333 0.923s
+  id=225048 status=ok chars=42 overlap=1.0 0.577s
+  id=233194 status=ok chars=188 overlap=0.0 0.944s
+  id=286452 status=ok chars=13 overlap=1.0 0.676s
+  id=300156 status=ok chars=75 overlap=1.0 0.616s
+  id=302019 status=ok chars=14 overlap=0.5 0.532s
+  id=387034 status=ok chars=375 overlap=1.0 1.428s
+  id=491649 status=ok chars=6 overlap=0.0 0.721s
+  id=505063 status=ok chars=26 overlap=1.0 0.537s
+  id=547055 status=ok chars=9 overlap=1.0 0.548s
+  id=636515 status=ok chars=32 overlap=1.0 0.606s
+  id=653537 status=ok chars=0 overlap=0.0 0.552s
+  id=772603 status=ok chars=200 overlap=1.0 0.923s
+  id=974046 status=ok chars=127 overlap=1.0 0.704s
+  id=976209 status=ok chars=95 overlap=0.0 0.845s
+  id=77677 status=ok chars=7 overlap=1.0 0.464s
+  id=94910 status=ok chars=10 overlap=1.0 0.564s
+  id=207475 status=ok chars=60 overlap=0.6667 0.502s
+  id=259675 status=ok chars=233 overlap=1.0 0.795s
+  id=343674 status=ok chars=13 overlap=1.0 0.576s
+  id=356486 status=ok chars=14 overlap=1.0 0.527s
+  id=384756 status=ok chars=54 overlap=1.0 0.481s
+  id=472015 status=ok chars=97 overlap=0.3333 0.665s
+  id=487439 status=ok chars=613 overlap=1.0 1.229s
+  id=682809 status=ok chars=534 overlap=1.0 1.134s
+  id=748251 status=ok chars=15 overlap=1.0 0.597s
+  id=861413 status=ok chars=257 overlap=1.0 0.999s
+  id=940187 status=ok chars=50 overlap=0.0 0.563s
+  id=972244 status=ok chars=386 overlap=1.0 0.942s
+  id=748589 status=ok chars=398 overlap=1.0 0.811s
+  id=796250 status=ok chars=296 overlap=1.0 0.892s
+  id=802851 status=ok chars=53 overlap=1.0 0.714s
+  id=854417 status=ok chars=29 overlap=1.0 0.653s
+  id=863406 status=ok chars=27 overlap=1.0 0.457s
+  id=918096 status=ok chars=40 overlap=0.8571 0.505s
+  id=931049 status=ok chars=138 overlap=1.0 0.59s
+  id=1022479 status=ok chars=35 overlap=1.0 0.94s
+  id=1083119 status=ok chars=19 overlap=1.0 0.451s
+  id=1125186 status=ok chars=67 overlap=1.0 0.556s
+  id=1193824 status=ok chars=11 overlap=1.0 0.562s
+  id=1289969 status=ok chars=252 overlap=0.8 0.818s
+  id=1298819 status=ok chars=20 overlap=1.0 0.629s
+  id=1307154 status=ok chars=16 overlap=0.5 0.513s
+  id=1375109 status=ok chars=293 overlap=1.0 1.084s
+  id=1397562 status=ok chars=6 overlap=1.0 0.477s
+  id=1441287 status=ok chars=52 overlap=1.0 0.512s
+  id=1443966 status=ok chars=110 overlap=1.0 0.536s
+  id=1475231 status=ok chars=283 overlap=0.0 1.485s
+  id=1718150 status=ok chars=525 overlap=1.0 1.368s
+  id=652004 status=ok chars=23 overlap=1.0 0.543s
+  id=931940 status=ok chars=11 overlap=1.0 0.717s
+  id=949486 status=ok chars=281 overlap=1.0 1.0s
+  id=988142 status=ok chars=25 overlap=1.0 0.47s
+  id=1085262 status=ok chars=39 overlap=1.0 0.483s
+  id=1148920 status=ok chars=323 overlap=0.5 0.907s
+  id=1229586 status=ok chars=7 overlap=1.0 0.588s
+  id=1273536 status=ok chars=29 overlap=1.0 0.58s
+  id=1294319 status=ok chars=13 overlap=1.0 0.712s
+  id=1346645 status=ok chars=4 overlap=1.0 0.538s
+  id=1351896 status=ok chars=185 overlap=1.0 0.79s
+  id=1363776 status=ok chars=9 overlap=1.0 0.589s
+  id=1379480 status=ok chars=17 overlap=1.0 0.769s
+  id=1405670 status=ok chars=33 overlap=0.0 0.48s
+  id=1463113 status=ok chars=4 overlap=1.0 0.64s
+  id=1483020 status=ok chars=26 overlap=1.0 0.706s
+  id=1483743 status=ok chars=225 overlap=1.0 0.909s
+  id=1541944 status=ok chars=13 overlap=1.0 0.477s
+  id=1578643 status=ok chars=34 overlap=0.0 0.6s
+
+=== model=google project=playground-ia-502703 n=100 ===
+  id=484509 status=ok chars=117 overlap=1.0 0.617s
+  id=1261561 status=ok chars=232 overlap=1.0 0.36s
+  id=362776 status=ok chars=60 overlap=1.0 0.313s
+  id=26921 status=ok chars=31 overlap=1.0 0.358s
+  id=212973 status=ok chars=212 overlap=0.0 0.441s
+  id=48800 status=ok chars=141 overlap=1.0 0.354s
+  id=35073 status=ok chars=30 overlap=1.0 0.377s
+  id=836924 status=ok chars=34 overlap=1.0 0.286s
+  id=3104 status=ok chars=26 overlap=1.0 0.303s
+  id=64524 status=ok chars=9 overlap=1.0 0.246s
+  id=77399 status=ok chars=13 overlap=0.0 0.316s
+  id=30833 status=ok chars=17 overlap=1.0 0.347s
+  id=399172 status=ok chars=18 overlap=1.0 0.32s
+  id=1015482 status=ok chars=42 overlap=0.0 0.333s
+  id=10283 status=ok chars=39 overlap=0.625 0.416s
+  id=88410 status=ok chars=11 overlap=1.0 0.335s
+  id=86687 status=ok chars=58 overlap=1.0 0.341s
+  id=336254 status=ok chars=8 overlap=1.0 0.349s
+  id=36992 status=ok chars=6 overlap=1.0 0.391s
+  id=43274 status=ok chars=15 overlap=1.0 0.277s
+  id=15056 status=ok chars=28 overlap=1.0 0.402s
+  id=23532 status=ok chars=25 overlap=1.0 0.493s
+  id=31012 status=ok chars=8 overlap=1.0 0.421s
+  id=45551 status=ok chars=46 overlap=1.0 0.475s
+  id=156252 status=ok chars=6 overlap=1.0 0.384s
+  id=743757 status=ok chars=83 overlap=0.6 0.359s
+  id=11908 status=ok chars=7 overlap=1.0 0.305s
+  id=28265 status=ok chars=17 overlap=0.3333 0.239s
+  id=28419 status=ok chars=336 overlap=1.0 0.453s
+  id=53553 status=ok chars=8 overlap=1.0 0.507s
+  id=77050 status=ok chars=73 overlap=1.0 0.31s
+  id=278267 status=ok chars=103 overlap=1.0 0.444s
+  id=165078 status=ok chars=209 overlap=0.6667 0.428s
+  id=225048 status=ok chars=42 overlap=1.0 0.278s
+  id=233194 status=ok chars=139 overlap=0.0 0.373s
+  id=286452 status=ok chars=13 overlap=1.0 0.322s
+  id=300156 status=ok chars=71 overlap=0.8 0.299s
+  id=302019 status=ok chars=12 overlap=1.0 0.298s
+  id=387034 status=ok chars=356 overlap=1.0 0.511s
+  id=491649 status=ok chars=5 overlap=1.0 0.317s
+  id=505063 status=ok chars=26 overlap=1.0 0.324s
+  id=547055 status=ok chars=9 overlap=1.0 0.389s
+  id=636515 status=ok chars=32 overlap=1.0 0.327s
+  id=653537 status=ok chars=8 overlap=1.0 0.297s
+  id=772603 status=ok chars=189 overlap=1.0 0.593s
+  id=974046 status=ok chars=127 overlap=1.0 0.298s
+  id=976209 status=ok chars=89 overlap=1.0 0.265s
+  id=77677 status=ok chars=7 overlap=1.0 0.235s
+  id=94910 status=ok chars=10 overlap=1.0 0.358s
+  id=207475 status=ok chars=58 overlap=0.6667 0.244s
+  id=259675 status=ok chars=181 overlap=1.0 0.35s
+  id=343674 status=ok chars=15 overlap=1.0 0.272s
+  id=356486 status=ok chars=14 overlap=1.0 0.314s
+  id=384756 status=ok chars=53 overlap=1.0 0.345s
+  id=472015 status=ok chars=97 overlap=0.6667 0.309s
+  id=487439 status=ok chars=597 overlap=1.0 0.299s
+  id=682809 status=ok chars=463 overlap=1.0 0.428s
+  id=748251 status=ok chars=15 overlap=1.0 0.259s
+  id=861413 status=ok chars=148 overlap=1.0 0.29s
+  id=940187 status=ok chars=51 overlap=0.0 0.255s
+  id=972244 status=ok chars=376 overlap=1.0 0.312s
+  id=748589 status=ok chars=348 overlap=1.0 1.109s
+  id=796250 status=ok chars=311 overlap=1.0 0.371s
+  id=802851 status=ok chars=49 overlap=1.0 0.266s
+  id=854417 status=ok chars=29 overlap=1.0 0.378s
+  id=863406 status=ok chars=13 overlap=0.6667 0.322s
+  id=918096 status=ok chars=38 overlap=1.0 0.334s
+  id=931049 status=ok chars=129 overlap=0.3333 0.409s
+  id=1022479 status=ok chars=42 overlap=0.0 0.438s
+  id=1083119 status=ok chars=19 overlap=1.0 0.296s
+  id=1125186 status=ok chars=67 overlap=1.0 0.361s
+  id=1193824 status=ok chars=11 overlap=1.0 0.28s
+  id=1289969 status=ok chars=179 overlap=1.0 0.489s
+  id=1298819 status=ok chars=20 overlap=1.0 0.315s
+  id=1307154 status=ok chars=16 overlap=1.0 0.293s
+  id=1375109 status=ok chars=284 overlap=1.0 0.348s
+  id=1397562 status=ok chars=6 overlap=1.0 0.23s
+  id=1441287 status=ok chars=52 overlap=0.5 0.332s
+  id=1443966 status=ok chars=117 overlap=1.0 0.269s
+  id=1475231 status=ok chars=142 overlap=1.0 0.331s
+  id=1718150 status=ok chars=608 overlap=1.0 0.419s
+  id=652004 status=ok chars=23 overlap=1.0 0.213s
+  id=931940 status=ok chars=14 overlap=1.0 0.254s
+  id=949486 status=ok chars=260 overlap=1.0 0.336s
+  id=988142 status=ok chars=25 overlap=1.0 0.321s
+  id=1085262 status=ok chars=39 overlap=1.0 0.298s
+  id=1148920 status=ok chars=221 overlap=1.0 0.303s
+  id=1229586 status=ok chars=16 overlap=1.0 0.254s
+  id=1273536 status=ok chars=29 overlap=1.0 0.217s
+  id=1294319 status=ok chars=13 overlap=1.0 0.273s
+  id=1346645 status=ok chars=4 overlap=1.0 0.257s
+  id=1351896 status=ok chars=182 overlap=1.0 0.292s
+  id=1363776 status=ok chars=15 overlap=1.0 0.306s
+  id=1379480 status=ok chars=17 overlap=1.0 0.228s
+  id=1405670 status=ok chars=35 overlap=0.0 0.248s
+  id=1463113 status=ok chars=4 overlap=1.0 0.285s
+  id=1483020 status=ok chars=29 overlap=1.0 0.238s
+  id=1483743 status=ok chars=134 overlap=1.0 0.378s
+  id=1541944 status=ok chars=13 overlap=1.0 0.224s
+  id=1578643 status=ok chars=34 overlap=1.0 0.233s
+
+LISTO → data/qa/ocr_pilot_v2/results.csv (300 rows)
+
+=== comparison (mean title_overlap / chars / latency; ok rate) ===
+      model   n  ok  ok_pct  mean_overlap  mean_overlap_all  mean_chars  mean_latency_s
+     google 100 100   100.0        0.8886            0.8886        88.6           0.342
+rekognition 100 100   100.0        0.8487            0.8487       100.4           0.707
+    easyocr 100  99    99.0        0.5120            0.5068        54.1           0.000
+
+Ranking by mean title_overlap (all rows):
+   1. google        overlap=0.8886  ok=100/100  chars≈88.6  latency≈0.342s
+   2. rekognition   overlap=0.8487  ok=100/100  chars≈100.4  latency≈0.707s
+   3. easyocr       overlap=0.5068  ok=99/100  chars≈54.1  latency≈0.0s

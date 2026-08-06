@@ -1,0 +1,43 @@
+{
+  "title_text": "THE WOODS",
+  "credits_text": "LACHLAN RECK ELIZA JANE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "In the early 1990s, a young couple and their child will face their worst nightmare... In an ancient forest, three friends set out on a weekend hike, but what they find is not what they expected... whatever has taken the children, we are all doomed.",
+  "mood": [
+    "dread",
+    "gothic",
+    "mystery",
+    "haunting",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "noose",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A misty forest scene with a noose hanging from a tree, featuring the title 'THE WOODS' and author names Lachlan Reck and Eliza Jane."
+}

@@ -1,0 +1,51 @@
+{
+  "title_text": "L'ISOLA DEI RESUSCITATI MORTI",
+  "credits_text": "",
+  "languages": [
+    "it"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "survival",
+    "apocalyptic",
+    "tense",
+    "dystopian"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.85
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.8,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.75,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "A vibrant poster features multiple distressed individuals against a fiery background, with bold red text and a dramatic, chaotic atmosphere."
+}

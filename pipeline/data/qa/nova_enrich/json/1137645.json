@@ -1,0 +1,46 @@
+{
+  "title_text": "엘리",
+  "credits_text": "전호청 위전호 가전원",
+  "languages": [
+    "ko"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "haunting",
+    "psychological",
+    "eerie",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and themes of horror and psychological distress.",
+  "description": "A poster features a ghostly figure with long hair and a pale face, overlaid with Korean text, evoking a haunting and disturbing atmosphere."
+}

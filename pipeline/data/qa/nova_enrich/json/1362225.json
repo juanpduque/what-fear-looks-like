@@ -1,0 +1,46 @@
+{
+  "title_text": "FUSSILET",
+  "credits_text": "ÜÇa Mâm És - Çiğde\nMEİLİ ASLAN • CENĞIZHAN ALPHAN • YALİN TARHAN • ELENUR SAKAL • UTKU ARSLAN • SENÄ YİLDİZ\nÖMER GÜNEY • MÜSÄ ÇİÇEK • NİHAN HADİCI • ÖGAN SEİYOLCU • AMIRALI GÖRÇAN ZADEH\nMERT GÖLER • DİDEM GUNGORİ • BURAK ARIKOY • TAŞK ASILATAY • ÖMER FARUK ÖZDEMİR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BASILICA HARKA DAVET BATILDA İSRAR EDENLERIN UYARILMASI\n27 EYLÜL'DE SİNEMALARDA",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "terror",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "fire",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and occult themes.",
+  "description": "A poster shows a screaming face with a dark house and silhouettes in the background, indicating a horror film."
+}

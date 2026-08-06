@@ -1,0 +1,36 @@
+{
+  "title_text": "EN LAS VENAS DE SANTANA",
+  "credits_text": "ROLLI ROMERO, GABI QUIÑONES, LEON CACERES, JAVIER ANCALLE",
+  "languages": [
+    "es"
+  ],
+  "other_text": "NEMFIUS FILMS PRESENTA",
+  "mood": [
+    "gothic",
+    "dread",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and a threatening silhouette.",
+  "description": "Movie poster features a dark silhouette in a doorway with dripping red blood, set against a gothic background with title and cast names."
+}

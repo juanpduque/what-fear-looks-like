@@ -1,0 +1,41 @@
+{
+  "title_text": "HELLBOY",
+  "credits_text": "THE CROOKED MAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "intense",
+    "dramatic",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and intense imagery.",
+  "description": "A muscular man stands in a fiery, hellish landscape with a determined expression, wearing a leather jacket and a helmet-like headpiece."
+}

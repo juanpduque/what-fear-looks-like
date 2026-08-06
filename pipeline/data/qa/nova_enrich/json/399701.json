@@ -1,0 +1,40 @@
+{
+  "title_text": "",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "torture",
+      "conf": 0.9
+    },
+    {
+      "name": "pain",
+      "conf": 0.85
+    },
+    {
+      "name": "anguish",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "torture"
+  ],
+  "moderation_notes": "Contains graphic depiction of torture and implied violence.",
+  "description": "A black-and-white image shows a distressed person lying down with a hand gripping a cylindrical object near their face, evoking themes of torture and psychological distress."
+}

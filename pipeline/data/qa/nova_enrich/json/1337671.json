@@ -1,0 +1,39 @@
+{
+  "title_text": "MANSECT",
+  "credits_text": "A SUPER 8 SPECIAL EFFECTS FANTASY BY XENOFAUNA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "surreal",
+    "fantasy",
+    "disturbing",
+    "monstrous",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.1,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic poster features a monstrous, multi-eyed creature looming over a distressed young woman in a surreal, black-and-white style."
+}

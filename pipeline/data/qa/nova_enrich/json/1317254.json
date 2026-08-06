@@ -1,0 +1,43 @@
+{
+  "title_text": "A LITTLE MONSTER MOVIE",
+  "credits_text": "A VINCENT TANG SHORT FILM STARRING CONNOR MCBRIDE, DEBBIE MCGUIRE... CATHRYN ZAMBRZYCKA... JORDAN BUTTERILL... VINCENT TANG... DEBBIE MCGUIRE... VINCENT TANG... VINCENT TANG WINNIPEG FILM GROUP SHORTIEZ",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "eerie",
+    "mysterious",
+    "haunting",
+    "forest",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.5
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A black-and-white poster featuring a foggy forest scene with the title 'A Little Monster Movie' prominently displayed."
+}

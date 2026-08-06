@@ -1,0 +1,41 @@
+{
+  "title_text": "高雅武影事件",
+  "credits_text": "武影事件年份20",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "一小的世界、就是一小的武影。……就是你在吃害的时候、就是你在吃害的时候。",
+  "mood": [
+    "gothic",
+    "mystery",
+    "horror",
+    "noir"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild violent imagery and occult themes.",
+  "description": "A man in a hat and coat holds a device, surrounded by bookshelves, with Japanese text overlay indicating a horror theme."
+}

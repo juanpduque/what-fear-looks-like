@@ -1,0 +1,44 @@
+{
+  "title_text": "Night of the Zombies",
+  "credits_text": "Cert. X.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Wherever zombies go, a grisly trail of terror and murder follows. So watch out because... YOU COULD BE NEXT...",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.85,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.75,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery including zombies and implied violence.",
+  "description": "Vintage horror poster features two soldiers with skull masks holding guns, with a close-up of a zombie's face in the corner."
+}

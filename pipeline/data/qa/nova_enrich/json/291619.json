@@ -1,0 +1,39 @@
+{
+  "title_text": "The Fearmaker",
+  "credits_text": "Starring Katy Jurado, Paul Picerni Produced by Sam Katzman Directed by Edward L. Cahn Released by Columbia Pictures",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WHEN DOES FEAR TURN INTO MADNESS? ...ASK SARAH!",
+  "mood": [
+    "horror",
+    "thriller",
+    "psychological",
+    "intense",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A vintage horror movie poster features three snarling dog faces against a red radial background with bold title text and credits."
+}

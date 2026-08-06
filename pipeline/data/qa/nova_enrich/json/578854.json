@@ -1,0 +1,49 @@
+{
+  "title_text": "SATU SURO",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "dread",
+    "haunting",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    },
+    {
+      "name": "forest",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.7,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and a ghostly atmosphere, but no explicit violence or nudity.",
+  "description": "A woman with horns stands in a dark forest under a full moon, accompanied by shadowy figures and a creature."
+}

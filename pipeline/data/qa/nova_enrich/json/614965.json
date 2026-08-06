@@ -1,0 +1,40 @@
+{
+  "title_text": "CIN DERESİ MÜŞFER",
+  "credits_text": "BMS FILMA BÜLÜK ÇELİK SUNAR MC FILM",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "YUNUS EMRE ÖZCAN KEMAL GÖKÇE GÖKÇE TÜRKAY ANCA YAZAR ATATURK AYDIN ATATURK DURAN ÇEŞME ŞAHİN YÜKSEK ÇELİK EMEL GÜNEŞ İHSAN EMRE ÖZCAN EYLEM ŞENEL ZELAL ÇELİK MEHMET GÜNGÖR",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and a disturbing facial expression suggesting horror themes.",
+  "description": "A poster features a close-up of a terrified face with blood, set against a dark, textured background with Turkish text."
+}

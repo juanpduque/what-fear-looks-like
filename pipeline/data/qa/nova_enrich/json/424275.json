@@ -1,0 +1,41 @@
+{
+  "title_text": "BRIDE-ZOMBIE",
+  "credits_text": "TERROR VISIONS: DAYVELLER & ROB REIDS \"BRIDE ZOMBIE\" — DAVID VAN DE WEYER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "camp",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "zombie",
+      "conf": 0.95
+    },
+    {
+      "name": "gun",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.4,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery with a zombie theme.",
+  "description": "A poster features a zombie bride in a wedding dress holding a gun, with a man aiming at her against a red background."
+}

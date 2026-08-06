@@ -1,0 +1,42 @@
+{
+  "title_text": "Vampire Journals",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "dark",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.5,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains occult imagery and implied violence.",
+  "description": "A weathered book with a skull and dagger design, titled 'Vampire Journals,' set against a dark background."
+}

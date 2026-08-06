@@ -1,0 +1,41 @@
+{
+  "title_text": "LA FEMME VAMPIR",
+  "credits_text": "JOE ESTEVEZ, LENAYA QUIGLEY, ROBERT Z'DAR, WRITTEN, PRODUCED, DIRECTED ALEXANDER ALCARESE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE LOST GIRL",
+  "mood": [
+    "gothic",
+    "erotic",
+    "surreal",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "vampire",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains suggestive imagery and themes of vampirism.",
+  "description": "Movie poster features a dark, stylized image of a woman with dramatic lighting, overlaid with bold red text and credits."
+}

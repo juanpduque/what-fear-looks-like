@@ -1,0 +1,45 @@
+{
+  "title_text": "ゾンビ",
+  "credits_text": "吸血鬼人チューバクラの逆襲",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "日本語地の結と語言のスポット！そして大都会の結でじそかに言られる都市後護を送た！！",
+  "mood": [
+    "dread",
+    "horror",
+    "gothic",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and monstrous creatures.",
+  "description": "A dark poster features a menacing creature with sharp teeth and glowing eyes, overlaid with Japanese text and a dramatic title."
+}

@@ -1,0 +1,44 @@
+{
+  "title_text": "THE LEGEND TRIP",
+  "credits_text": "MARK METCALF, BEN KEEPERS, TOM LODEWYCK, JAMIE BILKE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery including blood and a monstrous figure.",
+  "description": "A dark, eerie poster features a monstrous figure with bloodied hands looming over a dilapidated house, evoking a sense of horror and dread."
+}

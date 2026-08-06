@@ -1,0 +1,42 @@
+{
+  "title_text": "SLASHER SESSIONS",
+  "credits_text": "GRACIOUS MONSTERS PRESENTS SLASHER SESSIONS STARRING MEG M. RALPH JEFF STEELE - RACHEL RYU - JULIAN JACKSON - HAWK YOUNKINS WITH OLIVIA GAIZUTIS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A HORROR COMEDY ABOUT HEALING\nEMOTIONS CAN BE KILLER",
+  "mood": [
+    "horror",
+    "comedy",
+    "dark humor",
+    "psychological",
+    "satirical"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.4,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements and blood splatter imagery.",
+  "description": "Poster features six individuals in a dark setting with a red splatter design; text highlights horror comedy themes and festival accolades."
+}

@@ -1,0 +1,49 @@
+{
+  "title_text": "GHOSTKEEPERS",
+  "credits_text": "WELCOME TO THE HOUSE WHERE EVIL WAS BORN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"REAL CHILLS\" - FANGORIA",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "mystery",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and supernatural horror elements.",
+  "description": "A dark, intense poster features a close-up of a man's face with eerie lighting, a haunted house in the background, and a tagline about evil origins."
+}

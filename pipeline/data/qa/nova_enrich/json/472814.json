@@ -1,0 +1,38 @@
+{
+  "title_text": "DEVIANCE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "disturbing",
+    "claustrophobic",
+    "psychological",
+    "gritty"
+  ],
+  "fear_labels": [
+    {
+      "name": "cage",
+      "conf": 0.9
+    },
+    {
+      "name": "confinement",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A distressed man lies in a cage, with the bold title 'DEVIANCE' superimposed over an intense background scene."
+}

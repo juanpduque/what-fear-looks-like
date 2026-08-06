@@ -1,0 +1,42 @@
+{
+  "title_text": "CROOKED MAN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "eerie",
+    "mysterious",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "umbrella",
+      "conf": 0.6
+    },
+    {
+      "name": "moon",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A shadowy figure holding an umbrella stands against a full moon backdrop, evoking a gothic and eerie atmosphere."
+}

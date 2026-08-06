@@ -1,0 +1,50 @@
+{
+  "title_text": "BAMBI",
+  "credits_text": "THE RECKONING",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "dark",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "forest",
+      "conf": 0.75
+    },
+    {
+      "name": "moon",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.65
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.95,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and dark, monstrous imagery.",
+  "description": "A fierce, monstrous creature with antlers roars against a dark, moonlit forest background, with fiery embers floating around."
+}

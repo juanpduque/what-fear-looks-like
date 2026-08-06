@@ -1,0 +1,45 @@
+{
+  "title_text": "THE INEVITABLE",
+  "credits_text": "DIRECTED BY MOHSEN FARAJOLLAHI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Never rush while escaping your nightmares",
+  "mood": [
+    "dread",
+    "claustrophobic",
+    "psychological",
+    "suspenseful",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "maze",
+      "conf": 0.85
+    },
+    {
+      "name": "noose",
+      "conf": 0.75
+    },
+    {
+      "name": "trapped",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.1,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied threat of violence via noose imagery.",
+  "description": "A 3D maze-like building is shown with a noose above, suggesting entrapment and impending danger."
+}

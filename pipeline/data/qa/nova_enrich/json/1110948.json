@@ -1,0 +1,47 @@
+{
+  "title_text": "プラジェクト シャツイン",
+  "credits_text": "エラブィンジャード",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "結影家庭 依影小席",
+  "mood": [
+    "dread",
+    "gothic",
+    "eerie",
+    "psychological",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic blood and horror themes.",
+  "description": "A close-up of a distressed face with blood, overlaid with Japanese text, set against a dark background featuring a shadowy figure and a building."
+}

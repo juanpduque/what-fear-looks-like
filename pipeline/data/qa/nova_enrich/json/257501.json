@@ -1,0 +1,35 @@
+{
+  "title_text": "SHAOLIN VS VAMPIRE",
+  "credits_text": "Gordon Liu",
+  "languages": [
+    "en"
+  ],
+  "other_text": "We give you THE classics! RARESCOPE From the star of the 36th Chamber of Shaolin!",
+  "mood": [
+    "action",
+    "fantasy",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror elements.",
+  "description": "A poster featuring a martial artist facing off against a vampire, with dynamic action poses and a fiery background."
+}

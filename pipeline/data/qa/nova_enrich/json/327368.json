@@ -1,0 +1,37 @@
+{
+  "title_text": "CRAZY MURDER",
+  "credits_text": "A FILM BY DOUG GERBER & CALEB PENNYPACKER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "psychological",
+    "thriller",
+    "disturbing",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster implies themes of violence and psychological disturbance.",
+  "description": "A dark poster with a central face surrounded by repeated 'murder' text, titled 'CRAZY MURDER' by Doug Gerber & Caleb Pennypacker."
+}

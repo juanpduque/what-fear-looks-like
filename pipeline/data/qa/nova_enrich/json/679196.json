@@ -1,0 +1,45 @@
+{
+  "title_text": "対学学校 対学リバイド",
+  "credits_text": "ディレクタース・スクト 成力 主演 不当影員 不影員 不影員 不影員 不影員",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "恐魔する気と正する左 ディスカース・スクト",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "Poster features students and a ghostly figure with a knife, suggesting a horror theme in a school setting."
+}

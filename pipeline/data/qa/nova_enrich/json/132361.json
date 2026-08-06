@@ -1,0 +1,49 @@
+{
+  "title_text": "EVIL",
+  "credits_text": "in the woods",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "surreal",
+    "fantasy",
+    "horror",
+    "grotesque",
+    "mystical"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult and grotesque imagery, but no explicit violence or sexual content.",
+  "description": "A vibrant poster features surreal, monstrous figures surrounding a central glowing orb, with bold text reading 'EVIL in the woods.'"
+}

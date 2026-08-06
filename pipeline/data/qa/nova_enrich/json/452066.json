@@ -1,0 +1,46 @@
+{
+  "title_text": "Silo Killer",
+  "credits_text": "Brandon Malone, Katie Carroll, Brian Reid",
+  "languages": [
+    "en"
+  ],
+  "other_text": "It's Harvest Time!",
+  "mood": [
+    "horror",
+    "thriller",
+    "gritty",
+    "disturbing",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A poster shows an elderly man holding an axe with blood on his face and beard, with industrial structures in the background."
+}

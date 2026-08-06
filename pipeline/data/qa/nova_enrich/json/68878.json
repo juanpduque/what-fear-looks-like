@@ -1,0 +1,50 @@
+{
+  "title_text": "ZOMBIE DIARIES 2: WORLD OF THE DEAD",
+  "credits_text": "\"A SLAUGHTERHOUSE OF HORROR, BLOODY AND TERRIFYING\" - by Ben Ketai",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "apocalyptic",
+    "intense",
+    "survival",
+    "gritty"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.8
+    },
+    {
+      "name": "zombie",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.95,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore, suitable for mature audiences.",
+  "description": "A woman holds a rifle in a post-apocalyptic city with zombies and fire in the background."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "THE GHOST LIGHT",
+  "credits_text": "WRITTEN & DIRECTED BY NICK BURCHARDT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "LIFE IS BUT A STAGE...",
+  "mood": [
+    "mysterious",
+    "haunting",
+    "gothic",
+    "introspective",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a woman with glasses in a dimly lit room, illuminated by a green lamp, with the title 'The Ghost Light' prominently displayed."
+}

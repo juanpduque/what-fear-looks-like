@@ -1,0 +1,44 @@
+{
+  "title_text": "GARDEN OF THE DEAD",
+  "credits_text": "DEATH WAS THE ONLY LIVING THING...",
+  "languages": [
+    "en"
+  ],
+  "other_text": "filmed in DEAD color, PG PARENTAL GUIDANCE SUGGESTED",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "cemetery",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.6,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains themes of death and horror, suitable for mature audiences.",
+  "description": "A poster shows a zombie-like figure emerging from a grave with a group of people fleeing in a cemetery, evoking a horror atmosphere."
+}

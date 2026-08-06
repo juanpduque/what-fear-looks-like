@@ -1,0 +1,49 @@
+{
+  "title_text": "LILITH'S HELL",
+  "credits_text": "UN FILM DI VINCENZO PETRALO\nMARCIA COUTURE, ERIC ROULETTE, MANUELA VERGARA, LEIZEL DAVIS, STEVEN PALMER, CHRISTIAN LO MONACO, RECARDO TINN, GIANFRANCO TARIFA, MARIELE ROSSINI, ERICA CHOE, MARCO CASANOVA, MARCELA LORENZO, MARCELO MENDOZA, MARIELE ROSSINI, DAVIDE LOMBARDO, VALENTINA VINCI, LEANDRO GOMEZ RUIZ, FRANCESCA MENDOZA",
+  "languages": [
+    "en",
+    "it"
+  ],
+  "other_text": "NON PROVATE A GUARDARE NEGLI OCCHI.\nUNEARTHED FILMS",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "occult",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "occult",
+    "blood",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic imagery, occult themes, and mild sexual references.",
+  "description": "A dark, red-tinted poster features a central, monstrous face surrounded by numerous smaller faces, with bold title text and credits."
+}

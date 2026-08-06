@@ -1,0 +1,51 @@
+{
+  "title_text": "KLOWN KAMP MASSACRE",
+  "credits_text": "INTRODUCING THE KLOWN KAMP MASSACRE STARRING LIZ RENAYEL & JIM KELLY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BRING OUT THE CLOWNS.",
+  "mood": [
+    "horror",
+    "camp",
+    "violent",
+    "grotesque",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "A poster shows a woman in a pink outfit amidst clowns and blood, with a large knife and a menacing clown in the background."
+}

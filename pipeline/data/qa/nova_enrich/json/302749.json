@@ -1,0 +1,42 @@
+{
+  "title_text": "DIE SCHWARZE SPINNE",
+  "credits_text": "Ein Film von Mark M. Rissi\nPeter Ehrlich\nHenrik Rhyn\nBeatrice Kessler\nWalo Luond\nSigfrid Steiner\nPeter Schenner\nHanna Schaurung",
+  "languages": [
+    "de"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "spider",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.95,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark poster features a spider web background with a central female figure and bold title text, evoking a gothic horror atmosphere."
+}

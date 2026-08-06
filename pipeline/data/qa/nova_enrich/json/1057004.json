@@ -1,0 +1,46 @@
+{
+  "title_text": "VUZBEL",
+  "credits_text": "\"7 BÜYÜK GÜNAH\" SENARYO-YÖNETMEN FATIH GÜLAYDIN YAPIM APOLLON FILM",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "\"BU BÜYÜKÜ GÜNLER ARACIİYLA HARUT VE MARUTTAN ÖGRENDILER...\"",
+  "mood": [
+    "gothic",
+    "dread",
+    "horror",
+    "gothic",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and a monstrous figure.",
+  "description": "A poster features a monstrous, bloodied figure in front of a large, eerie house with the title \"VUZBEL\" prominently displayed."
+}

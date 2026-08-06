@@ -1,0 +1,44 @@
+{
+  "title_text": "PARANOIA",
+  "credits_text": "¿CANSADO DE SENTIRTE SOLO?",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "anxious",
+    "haunting",
+    "psychological",
+    "disturbing",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "text",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A black poster features a white, eerie monster face with glowing eyes and the word 'PARANOIA' above it, accompanied by a tagline."
+}

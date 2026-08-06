@@ -1,0 +1,35 @@
+{
+  "title_text": "CORBIN NASH",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.4,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild violent imagery with a weapon; no explicit gore or nudity.",
+  "description": "A man holds a large sword, flanked by several individuals in a dark, dramatic setting."
+}

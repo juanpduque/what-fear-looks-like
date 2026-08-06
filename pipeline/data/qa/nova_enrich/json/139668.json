@@ -1,0 +1,42 @@
+{
+  "title_text": "ATTITUDE FOR DESTRUCTION",
+  "credits_text": "A FORD AUSTIN FILM\nSTARRING: IRAN PERERA & DAVID STONE\nSTORY BY: DAVID STONE & IRAN PERERA\nDIRECTED BY: DAVID STONE\nPRODUCED BY: IRAN PERERA & DAVID STONE\nEXECUTIVE PRODUCER: KATHLEEN FORD AUSTIN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ROCK 'N' ROLL, BLOOD, CUTS AND SLITS",
+  "mood": [
+    "aggressive",
+    "rebel",
+    "punk",
+    "violent",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A poster features a skull-wearing rebel holding a gun, surrounded by roses and dripping blood, with bold red and black typography."
+}

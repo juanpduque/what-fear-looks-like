@@ -1,0 +1,49 @@
+{
+  "title_text": "NAZI OVERLORD",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "war",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains themes of war, occult imagery, and implied violence.",
+  "description": "Three soldiers advance toward a haunted castle with a ghostly skull in the background, suggesting a blend of war and horror themes."
+}

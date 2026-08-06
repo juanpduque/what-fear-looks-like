@@ -1,0 +1,45 @@
+{
+  "title_text": "ZOMBIE FIGHT CLUB",
+  "credits_text": "ANDY ON JESSICA C MICHAEL WONG",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOU ONLY DIE TWICE.",
+  "mood": [
+    "action",
+    "horror",
+    "thriller",
+    "gritty",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and zombie imagery.",
+  "description": "A woman with dual swords faces a horde of zombies in a dramatic action-horror poster."
+}

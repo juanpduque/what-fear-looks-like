@@ -1,0 +1,40 @@
+{
+  "title_text": "ARBOR DAY",
+  "credits_text": "Johnny would die for his environment... Now he's going to make you do the same.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FROM GRUNDY NATION FILMS",
+  "mood": [
+    "horror",
+    "dark humor",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "tree",
+      "conf": 0.8
+    },
+    {
+      "name": "hand",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and violent imagery.",
+  "description": "A poster shows a hand emerging from a potted tree with blood, titled 'Arbor Day' and a tagline about environmental vengeance."
+}

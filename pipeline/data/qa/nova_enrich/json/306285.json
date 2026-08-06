@@ -1,0 +1,46 @@
+{
+  "title_text": "ZOMBIE ISLE",
+  "credits_text": "WELCOME TO THE JUNGLE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "action",
+    "survival",
+    "thriller",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "zombie",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "nudity"
+  ],
+  "moderation_notes": "Contains partial nudity and implied violence.",
+  "description": "A poster shows a group of people facing zombies on a tropical island, with a dominant figure in denim shorts at the top."
+}

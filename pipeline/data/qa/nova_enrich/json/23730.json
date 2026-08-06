@@ -1,0 +1,39 @@
+{
+  "title_text": "C.H.U.D.",
+  "credits_text": "(Cannibalistic, Humanoid, Underground, Dwellers.)",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dystopian",
+    "horror",
+    "sci-fi",
+    "apocalyptic",
+    "urban"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a cityscape at dusk with a large, menacing creature emerging from underground near a crashed vehicle."
+}

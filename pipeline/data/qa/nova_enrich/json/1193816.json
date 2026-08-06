@@ -1,0 +1,41 @@
+{
+  "title_text": "HANGMAN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Nicholas hasn't taken his medication...",
+  "mood": [
+    "tense",
+    "suspenseful",
+    "disturbing",
+    "psychological",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "text",
+      "conf": 0.8
+    },
+    {
+      "name": "noose",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "self-harm"
+  ],
+  "moderation_notes": "The poster implies potential self-harm due to the noose imagery and the tagline about medication.",
+  "description": "An aerial view of a forest with a noose hanging from a tree and a small house nearby, accompanied by the title 'HANGMAN' and a disturbing tagline."
+}

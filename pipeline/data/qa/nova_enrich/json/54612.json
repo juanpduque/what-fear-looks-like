@@ -1,0 +1,46 @@
+{
+  "title_text": "SUTURES",
+  "credits_text": "ANDREW PRINE JASON LONDON CARLOS LAUCHI ALLISON LANGE KATE FRENCH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BLACK MARKET BODY PARTS.",
+  "mood": [
+    "dread",
+    "disturbing",
+    "medical horror",
+    "gritty",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "medical",
+      "conf": 0.9
+    },
+    {
+      "name": "body_parts",
+      "conf": 0.85
+    },
+    {
+      "name": "surgery",
+      "conf": 0.8
+    },
+    {
+      "name": "horror",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic medical imagery and themes of body part manipulation.",
+  "description": "A poster shows a person lying on a table with exposed body parts, observed by a masked figure in a sterile environment."
+}

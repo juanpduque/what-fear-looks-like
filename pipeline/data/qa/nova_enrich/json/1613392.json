@@ -1,0 +1,39 @@
+{
+  "title_text": "THE MASSACRE OF HOUSE TOWN",
+  "credits_text": "RTVG PRODUCTION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests violent themes related to the title.",
+  "description": "A dark, shadowy scene with faint figures and bold red text reading 'THE MASSACRE OF HOUSE TOWN' by RTVG PRODUCTION."
+}

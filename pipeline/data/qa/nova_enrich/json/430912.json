@@ -1,0 +1,46 @@
+{
+  "title_text": "ESCAPE FROM CANNIBAL FARM",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "horror",
+    "tense",
+    "gritty",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "chainsaw",
+      "conf": 0.9
+    },
+    {
+      "name": "chains",
+      "conf": 0.8
+    },
+    {
+      "name": "prisoner",
+      "conf": 0.7
+    },
+    {
+      "name": "cannibal",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes, suitable for mature audiences.",
+  "description": "A distressed person holds a chainsaw while bound with chains, set against a dark, ominous background."
+}

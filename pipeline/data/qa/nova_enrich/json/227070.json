@@ -1,0 +1,45 @@
+{
+  "title_text": "GHOSTLIGHT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "haunting",
+    "eerie",
+    "mysterious",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "",
+  "description": "A gothic poster featuring a glowing skull and two faces superimposed over an old castle, with the title 'GHOSTLIGHT' prominently displayed at the top."
+}

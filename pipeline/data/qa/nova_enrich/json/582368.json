@@ -1,0 +1,51 @@
+{
+  "title_text": "AFTERMIDNIGHT",
+  "credits_text": "OTTO RINTOCCI DI PURO TERRORE!",
+  "languages": [
+    "en",
+    "it"
+  ],
+  "other_text": "DEMENTI CORE PRODUCTION MOONLUM LEGACY PRODUCTION",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "camp",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "crowd",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and blood; suitable for mature audiences.",
+  "description": "A horror movie poster featuring a group of terrified individuals surrounded by monstrous figures, with bold red text and a dark, eerie atmosphere."
+}

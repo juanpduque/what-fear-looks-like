@@ -1,0 +1,45 @@
+{
+  "title_text": "学校の武絶 4",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "こんなしだけど、あなたは、こんなしだけですか？",
+  "mood": [
+    "eerie",
+    "haunting",
+    "psychological",
+    "gothic",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains themes of psychological horror and occult imagery.",
+  "description": "A dark poster features four ghostly faces with a central hand reaching out, set against a shadowy background with Japanese text."
+}

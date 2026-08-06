@@ -1,0 +1,41 @@
+{
+  "title_text": "AXE",
+  "credits_text": "Jason London Darlena Tejeiro Andrea Boart",
+  "languages": [
+    "en"
+  ],
+  "other_text": "2 Women on the run. 1 Serial Killer on the loose.",
+  "mood": [
+    "intense",
+    "thriller",
+    "suspense",
+    "action",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "axe",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense violence and weapon imagery.",
+  "description": "Movie poster features three individuals with an axe in the background, suggesting a thriller or horror theme."
+}

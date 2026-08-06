@@ -1,0 +1,46 @@
+{
+  "title_text": "2016 SLAUGHTER",
+  "credits_text": "",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "violent",
+    "horror",
+    "gory",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.95,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.8,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster features a menacing dog holding a bloody chainsaw, with splattered red liquid and bold Japanese and English text."
+}

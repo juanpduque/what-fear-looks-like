@@ -1,0 +1,46 @@
+{
+  "title_text": "HAVAS İLM-İCİN",
+  "credits_text": "18 AĞUSTOS'TA SİNEMALARDA",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "YASANMIŞ, GERÇEK BİR İHİKAYE",
+  "mood": [
+    "dread",
+    "horror",
+    "gothic",
+    "violent",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster features a monstrous, fiery figure with bloodied hands and an open mouth, set against a dark, fiery background."
+}

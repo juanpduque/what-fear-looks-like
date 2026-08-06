@@ -1,0 +1,42 @@
+{
+  "title_text": "CRAWLER",
+  "credits_text": "a film by sv bell",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FIFTY TONS OF TERROR",
+  "mood": [
+    "horror",
+    "thriller",
+    "survival",
+    "dread",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and horror elements; mild sexual suggestion in attire.",
+  "description": "A poster shows a terrified woman and a man facing monstrous crawlers emerging from a truck, with bold title and tagline."
+}

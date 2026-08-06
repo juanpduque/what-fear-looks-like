@@ -1,0 +1,41 @@
+{
+  "title_text": "Lynx",
+  "credits_text": "A Film By Ha Myung1\nWhenever Studio",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "other_text": "BIFAN",
+  "mood": [
+    "intense",
+    "action",
+    "suspenseful",
+    "military"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "helicopter",
+      "conf": 0.8
+    },
+    {
+      "name": "helmet",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence through military imagery and weapon depiction.",
+  "description": "A soldier holds a gun with helicopters overhead in a dramatic, intense scene."
+}

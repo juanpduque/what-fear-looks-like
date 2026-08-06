@@ -1,0 +1,46 @@
+{
+  "title_text": "IFRİTİN MÜHRÜ",
+  "credits_text": "ÖYUNCULAR: TÜLAY BULUT, METİN KEÇECİ, ZÜLFÜ HAMİT ALTİN, LEVENT CAKIR, ECE BAYKAL\nİSMAİL YILMAZ, MUSA SEZGİN, YILMAZ CALMAN, FATOS SEZER, TÜBĐE YİLDİRİM KOORDİNATİR: MUSA SEZGİN YÖNETMEN: ZÜLFÜ HAMİT ALTİN\nMAKYOZ: GAYE SALOĞ GENEL SANAT YÖNETMENİ: GÖKHAN ALTİN SENARYO: ZÜLFÜ HAMİT ALTİN",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "VE ENNEHU KANE RİCALİN MİNEL İNSI YEĐZÜNE Bİ RİCALİN MİNEL CİNNİ FE ZÇADUHUM REHEKA(REHEKAN).\nİLANİ KAN RAKAMINA ÇALİN YÖNLÜN BİRİLÜN MİNEL ÇİNNİ FE ZÇADUHUM REHEKA(REHEKAN)",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "intense",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "monster",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and horror imagery.",
+  "description": "A poster features a menacing figure with pale skin, red tears, and a wide, bloodied grin, set against a dark background with Turkish text."
+}

@@ -1,0 +1,43 @@
+{
+  "title_text": "INVASION",
+  "credits_text": "GWENDAL HUETTE MALO BIHAN EWEN FLOC'H  CRYNN GOURVES TRISTAN BOUCHER JEROME THOMAS MALO BIHAN PAUL ALVAREZ",
+  "languages": [
+    "en"
+  ],
+  "other_text": "UN FILM DE",
+  "mood": [
+    "dread",
+    "sci-fi",
+    "horror",
+    "alien",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "alien",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a hooded alien figure with glowing eyes and the bold title 'INVASION' in red text, suggesting a sci-fi horror theme."
+}

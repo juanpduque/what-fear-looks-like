@@ -1,0 +1,44 @@
+{
+  "title_text": "จันเหตร์ กันปุกต่ง",
+  "credits_text": "หนังเป็นสุด จัน จันลิงการการ",
+  "languages": [
+    "th"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "suspense",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and ghostly imagery.",
+  "description": "A vintage Thai horror poster features a man and woman in distress, surrounded by ghostly figures and eerie forest scenery."
+}

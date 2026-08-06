@@ -1,0 +1,38 @@
+{
+  "title_text": "GRAVE SHIVERS",
+  "credits_text": "BRENT SIMS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SOME HEROES ARE MACHINE WASHABLE\nOCTOBER 31",
+  "mood": [
+    "eerie",
+    "creepy",
+    "suspenseful",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a large, eerie creature towering over a teddy bear in a dimly lit hallway, with the title 'Grave Shivers' and release date October 31."
+}

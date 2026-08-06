@@ -1,0 +1,36 @@
+{
+  "title_text": "TORMENT II",
+  "credits_text": "HER NAME WAS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AGONY",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic facial distortion and implied violence.",
+  "description": "A poster featuring a distorted, menacing face with visible stitches and scars, set against a dark background."
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "冻殺心器",
+  "credits_text": "出珠人：黄小小女子",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "2016.4.22 空年三年",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "eerie",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "occult",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    },
+    {
+      "name": "skull",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult imagery and implied violence.",
+  "description": "A poster shows a red chest with a ghostly hand emerging, set in a dimly lit, eerie room with occult symbols and a shadowy figure in the background."
+}

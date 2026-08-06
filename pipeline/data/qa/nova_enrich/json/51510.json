@@ -1,0 +1,43 @@
+{
+  "title_text": "BIKER ZOMBIES",
+  "credits_text": "Evil Never Looked So Bad",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FROM DETROIT",
+  "mood": [
+    "horror",
+    "action",
+    "post-apocalyptic",
+    "dark",
+    "gritty"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.8
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster shows three bikers riding motorcycles through a city at night, with a zombie-like appearance and a fiery sky in the background."
+}

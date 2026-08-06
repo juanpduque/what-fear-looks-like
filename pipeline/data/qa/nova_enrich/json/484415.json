@@ -1,0 +1,51 @@
+{
+  "title_text": "HOTEL INFERNO II",
+  "credits_text": "THE CATHEDRAL OF PAIN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NECROSTORM",
+  "mood": [
+    "gothic",
+    "dread",
+    "horror",
+    "dark",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    },
+    {
+      "name": "fire",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and occult themes.",
+  "description": "A dark, intense poster featuring a monstrous creature with horns and a crown, surrounded by figures in a fiery, infernal setting."
+}

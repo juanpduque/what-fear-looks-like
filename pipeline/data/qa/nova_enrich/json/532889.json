@@ -1,0 +1,36 @@
+{
+  "title_text": "TERROR ON THE OVERLOAD",
+  "credits_text": "FOUR TWISTED TALES OF HORROR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TALES FROM SATAN'S TRUCKSTOP",
+  "mood": [
+    "dread",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "vehicle",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.3
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and blood-like imagery.",
+  "description": "A poster shows a speeding truck with blood splatters and bold red text reading 'TERROR ON THE OVERLOAD' and 'FOUR TWISTED TALES OF HORROR.'"
+}

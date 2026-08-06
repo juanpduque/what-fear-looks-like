@@ -1,0 +1,49 @@
+{
+  "title_text": "DREAMLAND AWAITS",
+  "credits_text": "NICKOLA HACKEBERG",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IN THE HOUSE OF NIGHTMARES, EVERY INSTRUCTION IS A STEP CLOSER TO SAVING HIS FAMILY... OR LOSING HIMSELF",
+  "mood": [
+    "dread",
+    "surreal",
+    "gothic",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A poster featuring a dark, eerie house with multiple faces and a central figure holding a flashlight, suggesting a psychological horror theme."
+}

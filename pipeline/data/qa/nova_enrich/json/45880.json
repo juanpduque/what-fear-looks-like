@@ -1,0 +1,41 @@
+{
+  "title_text": "SATURDAY THE 14TH STRIKES BACK",
+  "credits_text": "One Hell of a Party!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WARNING: This Movie Starts Where The Others Chicken Out!",
+  "mood": [
+    "camp",
+    "horror",
+    "comedy",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements and monstrous creatures.",
+  "description": "A poster features a chaotic scene with a man surrounded by grotesque monsters and creatures, with bold red and black text."
+}

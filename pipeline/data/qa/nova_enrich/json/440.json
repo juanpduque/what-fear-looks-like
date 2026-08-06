@@ -1,0 +1,45 @@
+{
+  "title_text": "ALIENS VS PREDATOR REQUIEM",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "action-packed",
+    "sci-fi",
+    "thriller",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 1.0
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 1.0
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 1.0,
+  "person": 0.6,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and sci-fi violence themes.",
+  "description": "The poster features two large alien creatures facing off, with two humans holding weapons in the foreground, set against a dark, urban backdrop."
+}

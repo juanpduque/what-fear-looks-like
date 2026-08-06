@@ -1,0 +1,48 @@
+{
+  "title_text": "CARNIFEX",
+  "credits_text": "RICARDO DE MANCHE... [full cast and crew list]",
+  "languages": [
+    "en",
+    "nl"
+  ],
+  "other_text": "Een hilarische horror-komedie!",
+  "mood": [
+    "horror",
+    "comedy",
+    "grotesque",
+    "camp",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    },
+    {
+      "name": "monster",
+      "conf": 0.75
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.75,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.85,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "Poster features a group of people in a gory, chaotic scene with a central figure holding a severed limb, suggesting horror and dark comedy themes."
+}

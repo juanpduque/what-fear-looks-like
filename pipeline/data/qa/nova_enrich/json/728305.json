@@ -1,0 +1,40 @@
+{
+  "title_text": "THE LAST FIVE DAYS",
+  "credits_text": "CURIOSITY KILLS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "suspense",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and a knife, suggesting violent themes.",
+  "description": "A dark poster features a close-up of a person's face with a large knife dripping blood above the title 'The Last Five Days' and the tagline 'Curiosity Kills.'"
+}

@@ -1,0 +1,43 @@
+{
+  "title_text": "Fear and Love: The Story of THE EXORCIST",
+  "credits_text": "A DOCUMENTARY BY JOHN LARKIN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "mysterious",
+    "haunting",
+    "dramatic",
+    "historical"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "crowd",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster features a collage of faces with a shadowy figure in the background, titled 'Fear and Love: The Story of THE EXORCIST' by John Larkin."
+}

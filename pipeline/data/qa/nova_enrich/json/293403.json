@@ -1,0 +1,40 @@
+{
+  "title_text": "NIGHT OF VAMPYRMANIA",
+  "credits_text": "RICHARD J. THOMSON, GUY EMANUEL, NOEL NICOLE R., LUC CENDRELL, ARIC VIDAL, ROBERT VAPIN, JEAN-MARIE AUDIER, FRANÇOISE BOURGOIN, FRANÇOISE NADDEGE BEAUSSON, AURÉLIE DENIZOT",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "other_text": "\"LA COMÉDIE GORE LA PLUS DÉLIRANTE DE L'ANNÉE !\"",
+  "mood": [
+    "camp",
+    "horror",
+    "comedy",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.1,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster features four individuals in dramatic poses against a dark background with a large yellow moon. Text highlights comedic horror theme."
+}

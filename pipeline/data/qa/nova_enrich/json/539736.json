@@ -1,0 +1,43 @@
+{
+  "title_text": "MONTRÉAL DEAD END",
+  "credits_text": "Une anthologie fantastique racontée par 18 réalisateurs, 60 comédiens et 100 techniciens",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "other_text": "UNE MÉTROPOLE. AUCUNE ISSUE.",
+  "mood": [
+    "dread",
+    "apocalyptic",
+    "surreal",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a monstrous, ghostly face emerging from a fiery rift in a city street, with traffic lights and urban structures in the background."
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "MUCK",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "dread",
+    "gothic",
+    "gritty",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "horror",
+      "conf": 0.95
+    },
+    {
+      "name": "gothic",
+      "conf": 0.85
+    },
+    {
+      "name": "disturbing",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and disturbing visuals.",
+  "description": "A distressed person emerges from a dark, muddy environment with an intense, screaming expression. The title 'MUCK' is prominently displayed in bold red letters."
+}

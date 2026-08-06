@@ -1,0 +1,45 @@
+{
+  "title_text": "2021",
+  "credits_text": "مسرحق الميحي المكانية",
+  "languages": [
+    "ar"
+  ],
+  "other_text": "طلع حسر طاعي الاقتصي مسرع السلام ناقش على الزيلة",
+  "mood": [
+    "horror",
+    "zombie",
+    "action",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "zombie",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    },
+    {
+      "name": "crowd",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A group of diverse characters, some in zombie-like states, pose aggressively in an urban setting with Arabic text and a dramatic 2021 title."
+}

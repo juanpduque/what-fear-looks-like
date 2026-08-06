@@ -1,0 +1,39 @@
+{
+  "title_text": "THE MISSOURI STRAIN",
+  "credits_text": "FREDERICK GOVE OLIVER GASSO KARLA WILLIAMS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THEY SAID THE WORLD WOULD END IN 2012. THEY DIDN'T SAY WE WOULD BE RESPONSIBLE. NO PLACE IS SAFE",
+  "mood": [
+    "dread",
+    "suspense",
+    "apocalyptic",
+    "forest",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man and woman stand protectively over a child in a dark forest, with a glowing light behind them and ominous text overlay."
+}

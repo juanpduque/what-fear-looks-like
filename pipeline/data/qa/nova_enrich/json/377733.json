@@ -1,0 +1,46 @@
+{
+  "title_text": "APARTMEN",
+  "credits_text": "DI PAWAGAM 31 DESEMBER",
+  "languages": [
+    "id"
+  ],
+  "other_text": "KAMAL ADI NADIA NASUTION BIL AZALI KAU TAKAN TINGGAL LEBIH DARIPADA 14 HARI...",
+  "mood": [
+    "dread",
+    "gothic",
+    "haunting",
+    "eerie",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and a ghostly figure, indicating potential distress.",
+  "description": "A poster shows a ghostly figure in a blood-stained dress standing in a dilapidated room with broken windows and cobwebs."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "Si Comel",
+  "credits_text": "Lenny Marlina, Hendrá Cipta, Amalia Hady, Muni Cader, Mansyuriyah, Tan Tien Dih, Muwarman Cader, Amir Samusi",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EGA Scope, EGA Scope Cast & Crew, P.T. Empac Gaduh Film",
+  "mood": [
+    "horror",
+    "thriller",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.7,
+  "blood_gore": 0.5,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and monstrous elements.",
+  "description": "A dramatic horror poster features a woman holding a snake, with a monstrous face and another woman's face in the background."
+}

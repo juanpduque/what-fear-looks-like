@@ -1,0 +1,45 @@
+{
+  "title_text": "СОБАГ",
+  "credits_text": "АЙМШГИЙН УРАН САЙХАНЫ КИНО",
+  "languages": [
+    "en"
+  ],
+  "other_text": "2023/10/27",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "terrifying"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.75
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.75,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and violent themes.",
+  "description": "A poster features two ghostly figures in a dark red background, one holding a weapon, with bold Cyrillic text and a release date."
+}

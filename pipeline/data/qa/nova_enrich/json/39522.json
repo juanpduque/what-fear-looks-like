@@ -1,0 +1,46 @@
+{
+  "title_text": "MEGAPIRANHA",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "horror",
+    "sci-fi",
+    "adventure"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    },
+    {
+      "name": "creature",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.95,
+  "blood_gore": 0.6,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore involving monstrous creatures.",
+  "description": "A poster shows a giant piranha attacking a submarine in a stormy sea, with other sea creatures nearby."
+}

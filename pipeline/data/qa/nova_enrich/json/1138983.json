@@ -1,0 +1,50 @@
+{
+  "title_text": "トラッカー SOLID",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "Jホラー映画を再現！長山安一の進行!面物害影の進行!上等欄年年間シャンニング",
+  "mood": [
+    "horror",
+    "gothic",
+    "violent",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.8,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A horror movie poster featuring a monstrous face with blood, surrounded by disturbing images and Japanese text."
+}

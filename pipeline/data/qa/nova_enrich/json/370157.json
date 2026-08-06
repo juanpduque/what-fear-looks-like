@@ -1,0 +1,47 @@
+{
+  "title_text": "EL IMPERIO DE DRACULA",
+  "credits_text": "Director FEDERICO CURIEL\nUNIVERSO FILMS\nCast: ERIC DEL CASTILLO, LUCHA VILLA, GESAR DEL CAMPO, ETHEL GARRILIO, FERNANDO OSES, VICTOR ALCOCER, MARIO OREA",
+  "languages": [
+    "es"
+  ],
+  "other_text": "COLUMBIA",
+  "mood": [
+    "gothic",
+    "horror",
+    "dramatic",
+    "erotic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence and partial nudity.",
+  "description": "A man in a tuxedo holds a woman with blood on her chest, set against a gothic backdrop."
+}

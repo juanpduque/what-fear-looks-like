@@ -1,0 +1,49 @@
+{
+  "title_text": "DAY OF RECKONING",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "apocalyptic",
+    "intense",
+    "action",
+    "sci-fi"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    },
+    {
+      "name": "cityscape",
+      "conf": 0.8
+    },
+    {
+      "name": "chaos",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.3,
+  "animal": 0.8,
+  "blood_gore": 0.2,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and implied violence.",
+  "description": "A large, menacing creature looms over a burning city with birds scattering. The title \"Day of Reckoning\" is prominently displayed."
+}

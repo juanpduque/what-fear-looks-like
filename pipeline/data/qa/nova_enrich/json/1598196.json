@@ -1,0 +1,40 @@
+{
+  "title_text": "ANGELO COVEIRO",
+  "credits_text": "RENATO TURNES EM",
+  "languages": [
+    "pt"
+  ],
+  "other_text": "VINIL FILMES APRESENTA",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and mild horror elements.",
+  "description": "A horror movie poster featuring a ghostly figure and a frightened woman, with additional cast images and a dark, eerie background."
+}

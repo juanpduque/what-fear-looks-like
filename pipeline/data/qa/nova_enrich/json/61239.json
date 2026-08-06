@@ -1,0 +1,45 @@
+{
+  "title_text": "ISLE OF THE DAMNED!",
+  "credits_text": "Savage cruelty was their culture... Human flesh was their food!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE 1980 CULT CLASSIC... FOR THE FIRST TIME IN NORTH AMERICA!\nBANNED IN 492 COUNTRIES!",
+  "mood": [
+    "horror",
+    "camp",
+    "grotesque",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and monstrous imagery.",
+  "description": "A poster features a monstrous creature holding a severed head, surrounded by terrified people and a man with a gun, with bold red text and warnings of banned status."
+}

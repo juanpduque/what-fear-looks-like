@@ -1,0 +1,45 @@
+{
+  "title_text": "CHRISTMAS ZOMBIES",
+  "credits_text": "WRIGHT FAMILY FILMS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DOWNTOWN",
+  "mood": [
+    "camp",
+    "horror",
+    "holiday",
+    "action",
+    "comedy"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery with space rays and weapons.",
+  "description": "Poster features a group of people in festive attire with weapons, set against a snowy town backdrop with a castle and Christmas decorations."
+}

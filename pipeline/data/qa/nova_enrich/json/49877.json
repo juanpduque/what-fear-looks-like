@@ -1,0 +1,40 @@
+{
+  "title_text": "LOCUSTS",
+  "credits_text": "THE 8TH PLAGUE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "apocalyptic",
+    "dread",
+    "survival",
+    "chaos"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts a chaotic scene with swarms of locusts, suggesting potential violence and destruction.",
+  "description": "A man stands in front of a police car surrounded by swarming locusts under a dark sky, evoking a sense of impending doom and chaos."
+}

@@ -1,0 +1,44 @@
+{
+  "title_text": "DON'T OPEN THE DOOR",
+  "credits_text": "DIRECTOR/PRODUCER S.F. BROWN RIGG",
+  "languages": [
+    "en"
+  ],
+  "other_text": "There Was Nowhere to Hide from Fear... or Death\nAfter 13 Years She Returned Home to a House of TERROR!",
+  "mood": [
+    "dread",
+    "terror",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood splatter imagery.",
+  "description": "A red-tinted poster features bold white text and a shadowy figure reaching for a door, evoking suspense and terror."
+}

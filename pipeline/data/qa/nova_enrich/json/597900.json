@@ -1,0 +1,46 @@
+{
+  "title_text": "HIGH MOON",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "violent",
+    "post-apocalyptic",
+    "survival",
+    "dystopian"
+  ],
+  "fear_labels": [
+    {
+      "name": "axe",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A man in a cowboy hat holds an axe against a red background with a house in the distance."
+}

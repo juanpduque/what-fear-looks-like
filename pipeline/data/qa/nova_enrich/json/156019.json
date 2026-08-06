@@ -1,0 +1,47 @@
+{
+  "title_text": "STILL SCREAMING",
+  "credits_text": "THE ULTIMATE SCARY MOVIE RETROSPECTIVE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "retro",
+    "gothic",
+    "camp",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and partial nudity.",
+  "description": "Poster features a ghostly figure looming over four characters, with blood drips and dramatic expressions, promoting a horror retrospective."
+}

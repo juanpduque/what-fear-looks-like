@@ -1,0 +1,39 @@
+{
+  "title_text": "BLOOD MONEY 2",
+  "credits_text": "HORROR NIGERIAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MOVIE",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "bird",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and supernatural themes.",
+  "description": "A poster features a man with bird-like wings, a ghostly figure, and a coffin, suggesting horror themes."
+}

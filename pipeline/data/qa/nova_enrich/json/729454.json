@@ -1,0 +1,50 @@
+{
+  "title_text": "DON'T F*** IN THE WOODS 2",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PINE",
+  "mood": [
+    "horror",
+    "thriller",
+    "gruesome",
+    "intense",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.3,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.9,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences only.",
+  "description": "A group of people face horror in a forest, with one holding a chainsaw and others showing fear and injury."
+}

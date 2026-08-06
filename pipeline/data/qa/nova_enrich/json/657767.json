@@ -1,0 +1,46 @@
+{
+  "title_text": "Ze Zombie",
+  "credits_text": "August 2013",
+  "languages": [
+    "en"
+  ],
+  "other_text": "puts the dead against the queer in a struggle for survival!",
+  "mood": [
+    "horror",
+    "survival",
+    "apocalyptic",
+    "dark humor",
+    "zombie"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and horror themes.",
+  "description": "A poster for the movie Ze Zombie features a central zombie character with blood on their face, surrounded by four smaller images of other characters."
+}

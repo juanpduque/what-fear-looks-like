@@ -1,0 +1,252 @@
+candidates=218 mode=browser/selenium (min_votes=0, src=data/qa/imdb_poster_browser_todo.csv, force=True)
+Starting headed Chrome (Selenium)…
+  Chrome profile=/tmp/wflike-imdb-poster-chrome-61k03js3
+  1/218 MISS 3408 tt0402861 TimeoutException: Message: timeout: Timed out receiving message from renderer: 45.000
+  (Session info: chrome=151.0.7922.71)
+Stacktrace:
+#0 0x5e5d452ec83a <unknown>
+#1 0x5e5d44c5ffc9 <unknown>
+#2 0x5e5d44c47a2f <unknown>
+#3 0x5e5d44c476a6 <unknown>
+#4 0x5e5d44c45288 <unknown>
+#5 0x5e5d44c45c0f <unknown>
+#6 0x5e5d44c54d70 <unknown>
+#7 0x5e5d44c6ed37 <unknown>
+#8 0x5e5d44c7670b <unknown>
+#9 0x5e5d44c46369 <unknown>
+#10 0x5e5d44c6ea92 <unknown>
+#11 0x5e5d44cfe066 <unknown>
+#12 0x5e5d44ca8d32 <unknown>
+#13 0x5e5d44ca9bb1 <unknown>
+#14 0x5e5d452b1bc0 <unknown>
+#15 0x5e5d452b023a <unknown>
+#16 0x5e5d4529ac65 <unknown>
+#17 0x5e5d452b0efa <unknown>
+#18 0x5e5d45282b60 <unknown>
+#19 0x5e5d452d8218 <unknown>
+#20 0x5e5d452d83b5 <unknown>
+#21 0x5e5d452eb3ee <unknown>
+#22 0x7a33efc9cb84 <unknown>
+#23 0x7a33efd29d6c <unknown>
+
+  2/218 OK 3414 tt0463798 votes=0 via og:image
+  3/218 OK 43280 tt0330002 votes=0 via og:image
+  4/218 OK 80737 tt1347137 votes=0 via og:image
+  5/218 OK 108641 tt1521700 votes=0 via og:image
+  6/218 OK 185295 tt1587307 votes=0 via og:image
+  7/218 OK 212017 tt9383554 votes=0 via og:image
+  8/218 OK 220775 tt0135070 votes=0 via og:image
+  9/218 OK 226767 tt1358922 votes=0 via og:image
+  10/218 OK 239215 tt38510966 votes=0 via og:image
+  11/218 OK 253755 tt3369776 votes=0 via og:image
+  12/218 OK 267078 tt3922110 votes=0 via og:image
+  13/218 OK 280670 tt1345500 votes=0 via og:image
+  14/218 OK 283224 tt2265162 votes=0 via og:image
+  15/218 OK 287644 tt2396888 votes=0 via og:image
+  16/218 OK 291031 tt1831802 votes=0 via og:image
+  17/218 OK 292601 tt0481010 votes=0 via og:image
+  18/218 OK 292720 tt3058430 votes=0 via og:image
+  19/218 OK 302289 tt3780366 votes=0 via og:image
+  20/218 OK 302618 tt4149612 votes=0 via og:image
+  21/218 OK 303772 tt0352330 votes=0 via og:image
+  22/218 OK 312756 tt3574242 votes=0 via og:image
+  23/218 OK 314234 tt0196150 votes=0 via og:image
+  24/218 OK 317982 tt0353340 votes=0 via og:image
+  25/218 OK 322046 tt3143288 votes=0 via og:image
+  26/218 OK 322403 tt0317585 votes=0 via og:image
+  27/218 OK 325618 tt4237900 votes=0 via og:image
+  28/218 OK 325837 tt0834065 votes=0 via og:image
+  29/218 OK 326012 tt2286560 votes=0 via og:image
+  30/218 OK 333436 tt22779902 votes=0 via og:image
+  31/218 OK 337072 tt0273495 votes=0 via og:image
+  32/218 OK 339661 tt4620154 votes=0 via og:image
+  33/218 OK 341732 tt1756530 votes=0 via og:image
+  34/218 OK 342435 tt37541576 votes=0 via og:image
+  35/218 OK 348154 tt0499179 votes=0 via og:image
+  36/218 OK 348164 tt1865507 votes=0 via og:image
+  37/218 OK 352325 tt2017496 votes=0 via og:image
+  38/218 OK 365840 tt4603658 votes=0 via og:image
+  39/218 OK 370564 tt1733677 votes=0 via og:image
+  40/218 OK 371875 tt1826776 votes=0 via og:image
+  41/218 OK 372827 tt0999925 votes=0 via og:image
+  42/218 OK 379313 tt4949708 votes=0 via og:image
+  43/218 OK 379859 tt4456430 votes=0 via og:image
+  44/218 OK 383570 tt3859336 votes=0 via og:image
+  45/218 OK 393206 tt5205600 votes=0 via og:image
+  46/218 OK 393208 tt5554084 votes=0 via og:image
+  47/218 OK 406849 tt1485691 votes=0 via og:image
+  48/218 OK 407593 tt5850420 votes=0 via og:image
+  49/218 OK 408088 tt0182527 votes=0 via og:image
+  50/218 OK 418406 tt1756642 votes=0 via og:image
+  51/218 OK 419525 tt6022812 votes=0 via og:image
+  52/218 OK 421565 tt6147376 votes=0 via og:image
+  53/218 OK 423579 tt0992919 votes=0 via og:image
+  54/218 OK 423666 tt5774244 votes=0 via og:image
+  55/218 OK 427765 tt5498508 votes=0 via og:image
+  56/218 OK 442029 tt4491478 votes=0 via og:image
+  57/218 OK 450230 tt5235520 votes=0 via og:image
+  58/218 OK 464389 tt0238863 votes=0 via og:image
+  59/218 OK 468421 tt1525834 votes=0 via og:image
+  60/218 OK 473963 tt0425649 votes=0 via og:image
+  61/218 OK 481889 tt7546864 votes=0 via og:image
+  62/218 OK 490126 tt0318755 votes=0 via og:image
+  63/218 OK 491516 tt1524093 votes=0 via og:image
+  64/218 OK 497521 tt1733473 votes=0 via og:image
+  65/218 OK 497637 tt0934539 votes=0 via og:image
+  66/218 OK 499497 tt7573742 votes=0 via og:image
+  67/218 OK 509101 tt3301148 votes=0 via og:image
+  68/218 OK 512304 tt0044341 votes=0 via og:image
+  69/218 OK 521393 tt0305563 votes=0 via og:image
+  70/218 OK 526877 tt5587776 votes=0 via og:image
+  71/218 OK 537963 tt5168436 votes=0 via og:image
+  72/218 OK 548725 tt1992111 votes=0 via og:image
+  73/218 OK 549466 tt6268244 votes=0 via og:image
+  74/218 OK 551074 tt8924108 votes=0 via og:image
+  75/218 OK 552338 tt5486670 votes=0 via og:image
+  76/218 OK 558087 tt8877056 votes=0 via og:image
+  77/218 OK 564825 tt0198739 votes=0 via og:image
+  78/218 OK 580279 tt0402129 votes=0 via og:image
+  79/218 OK 582889 tt11542394 votes=0 via og:image
+  80/218 OK 609581 tt5923772 votes=0 via og:image
+  81/218 OK 616801 tt10504248 votes=0 via og:image
+  82/218 OK 641382 tt7071262 votes=0 via og:image
+  83/218 OK 642100 tt1432051 votes=0 via og:image
+  84/218 OK 643969 tt1395256 votes=0 via og:image
+  85/218 OK 658503 tt2397518 votes=0 via og:image
+  86/218 OK 658642 tt10948116 votes=0 via og:image
+  87/218 OK 659415 tt1905090 votes=0 via og:image
+  88/218 OK 659416 tt1905029 votes=0 via og:image
+  89/218 OK 666883 tt0440710 votes=0 via og:image
+  90/218 OK 679865 tt0139132 votes=0 via og:image
+  91/218 OK 689688 tt4958712 votes=0 via og:image
+  92/218 OK 693066 tt0349843 votes=0 via og:image
+  93/218 OK 694481 tt29728894 votes=0 via og:image
+  94/218 OK 695183 tt0207342 votes=0 via og:image
+  95/218 OK 695647 tt4515694 votes=0 via og:image
+  96/218 OK 699008 tt1112103 votes=0 via og:image
+  97/218 OK 701727 tt9266508 votes=0 via og:image
+  98/218 OK 706483 tt0238280 votes=0 via og:image
+  99/218 OK 706486 tt0238281 votes=0 via og:image
+  100/218 OK 708455 tt0100358 votes=0 via og:image
+  101/218 OK 708660 tt12070450 votes=0 via og:image
+  102/218 OK 709805 tt0250126 votes=0 via og:image
+  103/218 OK 709987 tt10601780 votes=0 via og:image
+  104/218 OK 721825 tt12644780 votes=0 via og:image
+  105/218 OK 724162 tt0152169 votes=0 via og:image
+  106/218 OK 726040 tt0392555 votes=0 via og:image
+  107/218 OK 727577 tt12767484 votes=0 via og:image
+  108/218 OK 729873 tt1334508 votes=0 via og:image
+  109/218 OK 730159 tt1972593 votes=0 via og:image
+  110/218 OK 730161 tt3072416 votes=0 via og:image
+  111/218 OK 734637 tt12282604 votes=0 via og:image
+  112/218 OK 742538 tt8341906 votes=0 via og:image
+  113/218 OK 744404 tt0439218 votes=0 via og:image
+  114/218 OK 744410 tt0431273 votes=0 via og:image
+  115/218 OK 744423 tt0437970 votes=0 via og:image
+  116/218 OK 744430 tt0439245 votes=0 via og:image
+  117/218 OK 744534 tt0844359 votes=0 via og:image
+  118/218 OK 744774 tt0373299 votes=0 via og:image
+  119/218 OK 745657 tt1809334 votes=0 via og:image
+  120/218 OK 746245 tt1391097 votes=0 via og:image
+  121/218 OK 751372 tt7251778 votes=0 via og:image
+  122/218 OK 752694 tt2508968 votes=0 via og:image
+  123/218 OK 755795 tt11995908 votes=0 via og:image
+  124/218 OK 755878 tt1754732 votes=0 via og:image
+  125/218 OK 758802 tt4219470 votes=0 via og:image
+  126/218 OK 763014 tt3514662 votes=0 via og:image
+  127/218 OK 765199 tt2514208 votes=0 via og:image
+  128/218 OK 766326 tt2408242 votes=0 via og:image
+  129/218 OK 769391 tt3393640 votes=0 via og:image
+  130/218 OK 773108 tt0806085 votes=0 via og:image
+  131/218 OK 773568 tt0139033 votes=0 via og:image
+  132/218 OK 777488 tt0192635 votes=0 via og:image
+  133/218 OK 779655 tt4493790 votes=0 via og:image
+  134/218 OK 792543 tt3844442 votes=0 via og:image
+  135/218 OK 796066 tt0426512 votes=0 via og:image
+  136/218 OK 796165 tt13796130 votes=0 via og:image
+  137/218 OK 800453 tt12734942 votes=0 via og:image
+  138/218 OK 803429 tt32740897 votes=0 via og:image
+  139/218 OK 804617 tt1568303 votes=0 via og:image
+  140/218 OK 809673 tt7108182 votes=0 via og:image
+  141/218 OK 811751 tt12879086 votes=0 via og:image
+  142/218 OK 816915 tt14460086 votes=0 via og:image
+  143/218 OK 827994 tt7574282 votes=0 via og:image
+  144/218 OK 839394 tt14735180 votes=0 via og:image
+  145/218 OK 840885 tt41274716 votes=0 via og:image
+  146/218 OK 841655 tt4312850 votes=0 via og:image
+  147/218 OK 843939 tt2486438 votes=0 via og:image
+  148/218 OK 848787 tt15181404 votes=0 via og:image
+  149/218 OK 853602 tt13154474 votes=0 via og:image
+  150/218 OK 854818 tt1705076 votes=0 via og:image
+  151/218 OK 856056 tt8959094 votes=0 via og:image
+  152/218 OK 856864 tt0294927 votes=0 via og:image
+  153/218 OK 858487 tt15181388 votes=0 via og:image
+  154/218 OK 861199 tt14922156 votes=0 via og:image
+  155/218 OK 862720 tt1961574 votes=0 via og:image
+  156/218 OK 863779 tt0195950 votes=0 via og:image
+  157/218 OK 877759 tt8099196 votes=0 via og:image
+  158/218 OK 882438 tt1340693 votes=0 via og:image
+  159/218 OK 885117 tt0117892 votes=0 via og:image
+  160/218 OK 889423 tt6594714 votes=0 via og:image
+  161/218 OK 889927 tt10981326 votes=0 via og:image
+  162/218 OK 892700 tt5235486 votes=0 via og:image
+  163/218 OK 896663 tt1576697 votes=0 via og:image
+  164/218 OK 904417 tt1506451 votes=0 via og:image
+  165/218 OK 904471 tt16260150 votes=0 via og:image
+  166/218 OK 911931 tt1548979 votes=0 via og:image
+  167/218 OK 931312 tt12970066 votes=0 via og:image
+  168/218 OK 931313 tt15834358 votes=0 via og:image
+  169/218 OK 931348 tt18924150 votes=0 via og:image
+  170/218 OK 934729 tt18548106 votes=0 via og:image
+  171/218 OK 938145 tt0774092 votes=0 via og:image
+  172/218 OK 938156 tt16117188 votes=0 via og:image
+  173/218 OK 947065 tt14397252 votes=0 via og:image
+  174/218 OK 947933 tt0314305 votes=0 via og:image
+  175/218 OK 949733 tt4905608 votes=0 via og:image
+  176/218 OK 954177 tt38949300 votes=0 via og:image
+  177/218 OK 955336 tt0440998 votes=0 via og:image
+  178/218 OK 969757 tt15702016 votes=0 via og:image
+  179/218 OK 975512 tt1347127 votes=0 via og:image
+  180/218 OK 977062 tt0876263 votes=0 via og:image
+  181/218 OK 978673 tt2906736 votes=0 via og:image
+  182/218 OK 986437 tt21028888 votes=0 via og:image
+  183/218 OK 994008 tt15847428 votes=0 via og:image
+  184/218 OK 996851 tt0200872 votes=0 via og:image
+  185/218 OK 1001433 tt21307324 votes=0 via og:image
+  186/218 OK 1017821 tt0102345 votes=0 via og:image
+  187/218 OK 1118513 tt27663106 votes=0 via og:image
+  188/218 OK 1137121 tt29541568 votes=0 via og:image
+  189/218 OK 1152336 tt19225924 votes=0 via og:image
+  190/218 OK 1179635 tt29189684 votes=0 via og:image
+  191/218 OK 1184902 tt31726705 votes=0 via og:image
+  192/218 OK 1190712 tt29485626 votes=0 via og:image
+  193/218 OK 1206636 tt11487742 votes=0 via img
+  194/218 OK 1259424 tt29943081 votes=0 via og:image
+  195/218 OK 1262389 tt31077860 votes=0 via og:image
+  196/218 OK 1275648 tt34376464 votes=0 via og:image
+  197/218 OK 1318154 tt31149574 votes=0 via og:image
+  198/218 OK 1337295 tt19386928 votes=0 via og:image
+  199/218 OK 1362425 tt35099423 votes=0 via og:image
+  200/218 OK 1370430 tt38994717 votes=0 via og:image
+  201/218 OK 1384299 tt36637192 votes=0 via og:image
+  202/218 OK 1405687 tt33267310 votes=0 via og:image
+  203/218 OK 1418314 tt35431418 votes=0 via og:image
+  204/218 OK 1430450 tt35671925 votes=0 via og:image
+  205/218 OK 1438152 tt34143884 votes=0 via og:image
+  206/218 OK 1459122 tt42695518 votes=0 via og:image
+  207/218 OK 1463368 tt4282828 votes=0 via og:image
+  208/218 OK 1484499 tt36457703 votes=0 via og:image
+  209/218 OK 1503405 tt34382736 votes=0 via og:image
+  210/218 OK 1557147 tt38210278 votes=0 via og:image
+  211/218 OK 1566810 tt37302995 votes=0 via og:image
+  212/218 OK 1592780 tt39100724 votes=0 via og:image
+  213/218 OK 1631971 tt2365975 votes=0 via og:image
+  214/218 OK 1637806 tt38455756 votes=0 via og:image
+  215/218 OK 1641390 tt35540723 votes=0 via og:image
+  216/218 OK 1646028 tt36759444 votes=0 via og:image
+  217/218 OK 1661211 tt28492372 votes=0 via og:image
+  218/218 OK 1724548 tt36375186 votes=0 via og:image
+
+=== IMDb POSTER ===
+hits=1,239 miss=582 local_ids=217 → imdb_poster_ids.csv
+next: python3 analyze_color_ids.py --ids-file data/imdb_poster_ids.csv

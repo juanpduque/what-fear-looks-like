@@ -1,0 +1,46 @@
+{
+  "title_text": "DAEMON RUNNER",
+  "credits_text": "\"GHOST BUSTERS MEETS THE MATRIX!\" - JUNKE$",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "sci-fi",
+    "horror",
+    "thriller",
+    "fantasy"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild violence and horror elements.",
+  "description": "A poster shows a group of armored individuals confronting a large, menacing creature in a dark, electric environment."
+}

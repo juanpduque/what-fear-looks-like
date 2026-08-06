@@ -1,0 +1,45 @@
+{
+  "title_text": "MONSTER ON A PLANE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "horror",
+    "thriller",
+    "dread",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "airplane",
+      "conf": 0.8
+    },
+    {
+      "name": "danger",
+      "conf": 0.85
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and danger.",
+  "description": "A dramatic poster shows an airplane flying above jagged teeth-like structures with a stormy sky and fiery glow in the background."
+}

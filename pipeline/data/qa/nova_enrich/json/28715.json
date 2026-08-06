@@ -1,0 +1,45 @@
+{
+  "title_text": "MAD HOUSE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "camp",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "spider",
+      "conf": 0.85
+    },
+    {
+      "name": "house",
+      "conf": 0.75
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.7,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror elements including a skull and spider, but no explicit violence or gore.",
+  "description": "A vintage horror poster features a man in a hat, a screaming woman, a skull with a spider, and a haunted house, evoking a gothic and surreal atmosphere."
+}

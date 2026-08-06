@@ -1,0 +1,45 @@
+{
+  "title_text": "事悪の女",
+  "credits_text": "ディスクバジョーン",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "年代 2016年初発声",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and themes of horror.",
+  "description": "A poster features a shadowy figure in red against a cracked wall, with Japanese text and blood splatters, evoking a horror theme."
+}

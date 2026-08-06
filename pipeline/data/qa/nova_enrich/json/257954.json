@@ -1,0 +1,46 @@
+{
+  "title_text": "BEDROOM 2 BATH",
+  "credits_text": "MICHELE HICKS ANDREW W. WALKER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COMING SOON",
+  "mood": [
+    "dread",
+    "gothic",
+    "haunting",
+    "eerie",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood, suggesting horror themes.",
+  "description": "A shadowy figure stands by a window in a dilapidated room, with a crib and scattered dolls, evoking a haunting atmosphere."
+}

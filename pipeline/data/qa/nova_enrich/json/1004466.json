@@ -1,0 +1,43 @@
+{
+  "title_text": "HEADLESS HORSEMAN",
+  "credits_text": "A DARK HERO IS BORN!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "horror",
+    "supernatural",
+    "intense",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a motorcyclist riding through flames with a carved pumpkin beside them, titled 'Headless Horseman' and tagged 'A Dark Hero Is Born!'."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "FAITHFUL WITNESS IN THE MIDDLE",
+  "credits_text": "EXECUTIVE PRODUCERS: RABBITS FOOT LLC PRESENTS A PRODUCTION WITH: STARRING SHERMANE COWANS, DARYL HEDRICK, MATT GONZALEZ, STEFFANIE ZUDEK, COLE TURNER, FRANK CORONA, JOSHUA HARRIS, VICTOR NORCIA, JANE LAURIE, REYONNE RUSELL & SHAWN BURNS. WRITTEN BY LINDY SMITH & NAKEYAH DAE. DIRECTED BY KRAN STELLA LAURIE & NAKEYAH DAE.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Late night trips aren't corny... They're deadly.",
+  "mood": [
+    "dread",
+    "gothic",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and potential gore.",
+  "description": "A masked figure holds an axe in a dark forest setting, with bold red text for the title and credits."
+}

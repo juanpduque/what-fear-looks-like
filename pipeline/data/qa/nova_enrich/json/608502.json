@@ -1,0 +1,38 @@
+{
+  "title_text": "The Lurker",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "dramatic",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "mask",
+      "conf": 0.85
+    },
+    {
+      "name": "theater",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a hooded figure with a beak-like mask and the title 'The Lurker' against red curtains, with a smaller figure standing in front."
+}

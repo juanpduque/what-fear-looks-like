@@ -1,0 +1,41 @@
+{
+  "title_text": "DERICO1938",
+  "credits_text": "UN FILM DIRETTO DA ALEX LUCCHESI\nFOTOGRAFIA DI A. CHERUBINI C. DALDOSS E R. RICCI\nMUSICHE DI A.A. FUSARO D.PISTOCCHI P.MANZI D.MICHELOTTI A.LUCATTI G.LEONCINI DUNWICH MOTEL\nCON A. LUCCHESI A. CHERUBINI F. MELIS C. DALDOSS F. MARIOTTI R.J. BURTON M. ROVER A. BATTI C. CIRRI E. KRILOV A. MARCONCINI I. KING S. COLOMBINI A. MARCIANO G. PERTILE Z. ZANGHELINI J. DELLAMARIA S. DEGASPERI N. PETRACCHI A. BARZOCCHINI D. CORRADINI E. LUCCHESI D. CANCILA G. SANTIN I. MONFARDINI F. BOCCACCI E. PASQUALINI E CON LE VOCI DI L. GHIGNONE R. LOMBARDO L. CORETI M. DUCCESCHI F. PEZZOLI A. MALAGOLI V. BACCELLI G. FAVILLA\nPRODOTTORI ESECUTIVI CARLO E CAMILLA DALDOSS ALEX LUCCHESI ALESSIO CHERUBINI VALERIO ZANGHELINI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FALANGE OPLITA PRESENTA",
+  "mood": [
+    "gothic",
+    "noir",
+    "historical",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "blood"
+  ],
+  "moderation_notes": "Contains mild violence and blood imagery.",
+  "description": "A gothic-style poster features a group of characters in a tense scene, framed by ornate dark borders, suggesting a historical thriller with elements of horror."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "NASTY NANCY",
+  "credits_text": "THE SCHOOL... IS OVER! CASTRUM FILMS PRODUCTION A FILM BY SANDI MANCE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NASTY NANCY",
+  "mood": [
+    "horror",
+    "violent",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; may be disturbing.",
+  "description": "Poster features a distressed woman with blood on her face alongside a splattered red background and bold title text."
+}

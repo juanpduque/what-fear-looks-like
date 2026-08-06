@@ -1,0 +1,45 @@
+{
+  "title_text": "HALLOWEEN MASSACRE",
+  "credits_text": "Written and Directed by VERA\nProduced by VERA PICTURES\nNever Bully Again",
+  "languages": [
+    "en"
+  ],
+  "other_text": "2024",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller",
+    "horror",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests themes of violence and horror, with intense imagery that may be disturbing to some viewers.",
+  "description": "A dark, shadowy figure looms over a group of costumed characters, with bold red text reading 'HALLOWEEN MASSACRE' and the year '2024.'"
+}

@@ -1,0 +1,44 @@
+{
+  "title_text": "有鬼住隔壁",
+  "credits_text": "My Neighbours are Phantoms\n陳百強 Chewing Man",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "金牌電影公司有限公司 Golden Screen Movies Ltd.",
+  "mood": [
+    "supernatural",
+    "horror",
+    "suspense",
+    "gothic",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A group of people are shown in a dark, eerie setting with ghostly figures in the background, suggesting a supernatural horror theme."
+}

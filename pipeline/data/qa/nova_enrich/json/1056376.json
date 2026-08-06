@@ -1,0 +1,38 @@
+{
+  "title_text": "SPILLING BLOOD",
+  "credits_text": "Family Is Everything!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "JUNKYARD CINEMA & BUSTED GLASS ENTERTAINMENT Present...",
+  "mood": [
+    "intense",
+    "thriller",
+    "dramatic",
+    "dark",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster suggests intense violence and gore.",
+  "description": "A hooded figure is shown in a dark setting with bold red text reading 'Spilling Blood' and a tagline 'Family Is Everything!'"
+}

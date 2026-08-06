@@ -1,0 +1,164 @@
+{
+  "ts": "2026-08-02T23:18:39",
+  "ok_unique": 6581,
+  "corpus_total": 37829,
+  "coverage_pct": 17.4,
+  "mean_latency_s": 8.65,
+  "signals": {
+    "weapon_ge_0.5_pct": 18.0,
+    "monster_ge_0.5_pct": 41.1,
+    "blood_gore_ge_0.5_pct": 19.7,
+    "violence_ge_0.5_pct": 30.7,
+    "person_ge_0.5_pct": 84.0,
+    "mean_weapon": 0.169,
+    "mean_monster": 0.363,
+    "mean_blood_gore": 0.178,
+    "mean_violence": 0.278
+  },
+  "top_languages": [
+    [
+      "en",
+      6536
+    ],
+    [
+      "es",
+      22
+    ],
+    [
+      "fr",
+      13
+    ],
+    [
+      "it",
+      11
+    ],
+    [
+      "de",
+      10
+    ],
+    [
+      "ja",
+      10
+    ],
+    [
+      "nl",
+      6
+    ],
+    [
+      "zh",
+      6
+    ],
+    [
+      "pt",
+      3
+    ],
+    [
+      "id",
+      2
+    ]
+  ],
+  "top_moods": [
+    [
+      "gothic",
+      2882
+    ],
+    [
+      "dread",
+      2257
+    ],
+    [
+      "horror",
+      2064
+    ],
+    [
+      "thriller",
+      1411
+    ],
+    [
+      "surreal",
+      1224
+    ],
+    [
+      "camp",
+      1146
+    ],
+    [
+      "intense",
+      1134
+    ],
+    [
+      "mysterious",
+      1086
+    ],
+    [
+      "psychological",
+      890
+    ],
+    [
+      "erotic",
+      853
+    ],
+    [
+      "haunting",
+      788
+    ],
+    [
+      "suspense",
+      780
+    ],
+    [
+      "dramatic",
+      710
+    ],
+    [
+      "action",
+      603
+    ],
+    [
+      "supernatural",
+      594
+    ]
+  ],
+  "examples": [
+    {
+      "id": "10987",
+      "title": "Halloween: The Curse of Michael Myers",
+      "year": "1995",
+      "title_text": "HALLOWEEN",
+      "mood": "dread|suspense|terror",
+      "description": "A dark poster features a close-up of a masked face with a knife, promoting the horror film 'Halloween: The Curse of Michael Myers.'"
+    },
+    {
+      "id": "25018",
+      "title": "Leatherface: The Texas Chainsaw Massacre III",
+      "year": "1990",
+      "title_text": "THE TEXAS CHAINSAW MASSACRE III LEATHERFACE",
+      "mood": "dread|terror|gruesome|intense|violent",
+      "description": "A poster features a menacing figure holding a chainsaw with fiery red hair against a dark background, promoting the horror film 'Leatherface"
+    },
+    {
+      "id": "94874",
+      "title": "Savage Weekend",
+      "year": "1979",
+      "title_text": "Savage Weekend",
+      "mood": "dark|intense|horror|thriller|gothic",
+      "description": "A skeletal figure holding a scythe appears against a dark background with bold red text reading 'Savage Weekend.'"
+    },
+    {
+      "id": "1693",
+      "title": "Monster Man",
+      "year": "2003",
+      "title_text": "MONSTER MAN",
+      "mood": "dread|horror|gothic",
+      "description": "A poster shows a monstrous, disfigured face with sharp metal protrusions and a large knife, evoking a horror theme."
+    },
+    {
+      "id": "10283",
+      "title": "Friday the 13th Part VIII: Jason Takes Manhattan",
+      "year": "1989",
+      "title_text": "FRIDAY THE 13TH VIII",
+      "mood": "dread|terror|suspense",
+      "description": "A poster features a masked figure with a knife against a cityscape backdrop, promoting the horror film 'Friday the 13th VIII: Jason Takes Ma"
+    }
+  ]
+}

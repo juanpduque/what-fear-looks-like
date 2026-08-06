@@ -1,0 +1,39 @@
+{
+  "title_text": "NEVERMORE",
+  "credits_text": "TRES PESADONES UM DELIRIO DE EDGAR ALLAN POE",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dark",
+    "mysterious",
+    "eerie",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and dark themes.",
+  "description": "A dark poster featuring a blood-stained surface with the title 'NEVERMORE' and a subtitle in Spanish, evoking a gothic and eerie atmosphere."
+}

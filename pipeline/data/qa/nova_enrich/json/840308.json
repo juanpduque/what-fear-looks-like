@@ -1,0 +1,49 @@
+{
+  "title_text": "ヨムのブジキ",
+  "credits_text": "まんとしなった！",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "一紀影広対にフイルムさんでスパース・フィルムの新届、結届",
+  "mood": [
+    "horrific",
+    "supernatural",
+    "gothic",
+    "disturbing",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "crowd",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains intense supernatural horror imagery and disturbing facial expressions.",
+  "description": "A poster featuring numerous ghostly faces and a central intense gaze, with bold Japanese text and a dark, eerie atmosphere."
+}

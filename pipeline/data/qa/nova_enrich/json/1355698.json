@@ -1,0 +1,42 @@
+{
+  "title_text": "空姐大战怪兽",
+  "credits_text": "SCOTT ALLEN 导演作品",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "STEWARDESS VS MONSTERS",
+  "mood": [
+    "action",
+    "horror",
+    "camp",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "sexual",
+    "violence"
+  ],
+  "moderation_notes": "Contains suggestive attire and implied violent themes.",
+  "description": "A nurse in a revealing uniform stands defiantly on an airplane amidst stormy skies, holding a syringe, with a ghostly figure in the background."
+}

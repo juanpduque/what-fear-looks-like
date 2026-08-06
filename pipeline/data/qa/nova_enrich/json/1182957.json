@@ -1,0 +1,47 @@
+{
+  "title_text": "オンリュー",
+  "credits_text": "NEXTACY presents Azusa Takishima in \"ONRYOU-the imprecation\" Ami Sakurai, Tetsuhiko Sai, Yoshino Matsuzawa, Hitoaki Matsuzawa, Kasumi Takahashi",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "男性引びする女の失い おきれだう",
+  "mood": [
+    "dread",
+    "gothic",
+    "eerie",
+    "psychological",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic blood splatters and supernatural horror themes.",
+  "description": "A woman faces a menacing ghostly figure with blood splatters in a dark setting, suggesting a horror film."
+}

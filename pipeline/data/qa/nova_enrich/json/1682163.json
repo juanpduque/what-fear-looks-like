@@ -1,0 +1,42 @@
+{
+  "title_text": "HISTORIAS MACABRAS",
+  "credits_text": "VOLUMES A TEMER VOTO DE LAS PEINAS DE PUSHE",
+  "languages": [
+    "es"
+  ],
+  "other_text": "SE LLEVA EL CREADOR DE COU SYRREZ",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "macabre",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and macabre imagery.",
+  "description": "A dark poster features a menacing skull with red accents and bold red text reading 'HISTORIAS MACABRAS' against a black background."
+}

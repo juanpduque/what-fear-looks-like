@@ -1,0 +1,43 @@
+{
+  "title_text": "MONSTER GRIZZLY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "dangerous",
+    "wild",
+    "action",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "animal",
+      "conf": 0.9
+    },
+    {
+      "name": "danger",
+      "conf": 0.85
+    },
+    {
+      "name": "wilderness",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 1.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A fierce grizzly bear roars aggressively with smoke and debris around it, featuring bold title text below."
+}

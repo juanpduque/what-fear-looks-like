@@ -1,0 +1,46 @@
+{
+  "title_text": "Dark Legacy",
+  "credits_text": "NICO SENTNER'S\nHEIKO HERFURTH\nSABINE FIRIT\nMARIO GRÜNEWALD\nLINDA BEHRENS\nNICO SENTNER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Manche Erbschaft sollte man besser ausschlagen.\nGENERATION X GROUP FILM- & MEDIENPRODUKTION ZEIGT EINE NICO SENTNER PRODUKTION EINE KOTLER / SCHMIDT PRODUKTION EINE NICO SENTNER FILM\nKAMERA MARCO DÜSTERHOFT SCHNITT DIRK FUHLERT C-TON MARCO PÖBEL & MICHAEL HOFFMANN SOUNDMIXUNG MARCO DÜSTERHOFT\nMUSIK ANDREAS SCHUMANN DIGITALE EFFEKTE PATRICK MÜLLER KINO-TALER MARCO DÜSTERHOFT CO-PRODUZENTEN ROBERT KOTLER & MICHAEL SCHMIDT\nAUTOR & PRODUEZENT NICO SENTNER REGE NICO SENTNER",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "mystery",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes; suitable for mature audiences.",
+  "description": "A masked figure holds a knife in front of a dark, stormy house. The poster features bold yellow text and a dramatic, gothic atmosphere."
+}

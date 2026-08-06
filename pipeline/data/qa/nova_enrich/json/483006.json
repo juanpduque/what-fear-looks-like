@@ -1,0 +1,47 @@
+{
+  "title_text": "ALIENS: ZONE OF SILENCE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOU ARE NOT ALONE.",
+  "mood": [
+    "mysterious",
+    "suspenseful",
+    "isolated",
+    "cosmic",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "alien",
+      "conf": 0.6
+    },
+    {
+      "name": "night",
+      "conf": 0.8
+    },
+    {
+      "name": "tent",
+      "conf": 0.5
+    },
+    {
+      "name": "cosmic",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.6,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A tent sits under a dark sky with a bright light above, suggesting an alien encounter in a remote, silent zone."
+}

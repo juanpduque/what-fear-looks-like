@@ -1,0 +1,35 @@
+{
+  "title_text": "FACE-LESS",
+  "credits_text": "A MCKIRMISH STUDIOS FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DANIEL HOUSE, CORRIN GORRION, RYAN DAYSON",
+  "mood": [
+    "mystery",
+    "suspense",
+    "psychological",
+    "intimate",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows three men in a dimly lit hallway, with one man adjusting another's tie, suggesting a tense and mysterious atmosphere."
+}

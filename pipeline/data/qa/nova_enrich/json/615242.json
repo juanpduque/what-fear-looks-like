@@ -1,0 +1,45 @@
+{
+  "title_text": "UNLEASHING THE DEMONS",
+  "credits_text": "EXPENDABLE FILMS PRESENTS A CALLUM ANDRE JONES PRODUCTION VOLLET SHAW, KIERON MISTON, RAVEN GENSEN, CALLUM ANDRE JONES, LAURA CALDER, AND JANE SMITH DIRECTOR RAVEN GENSEN WRITERS RAVEN GENSEN AND CALLUM ANDRE JONES MUSIC CRAWFORD BRODIES STARRING CALLUM ANDRE JONES, VOLLET SHAW, AND RAVEN GENSEN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "intense",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and intense imagery.",
+  "description": "A poster features three characters against a dark, stormy backdrop with a towering building and a demonic figure looming above."
+}

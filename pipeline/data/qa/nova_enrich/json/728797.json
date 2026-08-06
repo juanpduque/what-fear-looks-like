@@ -1,0 +1,43 @@
+{
+  "title_text": "DARK STORIES",
+  "credits_text": "KRISTIANNA LOVEN MICHELLE RYAN DOMINIQUE PINON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MONSTERS ARE NOT ALWAYS IN YOUR HEAD",
+  "mood": [
+    "gothic",
+    "dread",
+    "mysterious",
+    "haunting",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows two figures in a dimly lit, eerie room; one seated and the other facing away, with a haunting atmosphere."
+}

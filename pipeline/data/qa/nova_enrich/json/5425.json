@@ -1,0 +1,47 @@
+{
+  "title_text": "BEYOND THE DARKNESS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "fire",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic imagery and partial nudity.",
+  "description": "A poster shows a monstrous face with a gash, a woman in a field, and a haunted house under a fiery sky."
+}

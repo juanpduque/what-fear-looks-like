@@ -1,0 +1,40 @@
+{
+  "title_text": "鬼醫院 鬼醫院",
+  "credits_text": "OCEAN SHORE VIDEOS UNITED",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "GHOST'S HOSPITAL",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and mild horror elements.",
+  "description": "Movie poster features three individuals in a spooky hospital setting with Chinese text and ghostly imagery."
+}

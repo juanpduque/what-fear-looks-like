@@ -1,0 +1,46 @@
+{
+  "title_text": "THE TRIANGLE",
+  "credits_text": "LIVE AS ONE. DIE AS ONE.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "occult",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.5,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult",
+    "gore"
+  ],
+  "moderation_notes": "Contains occult imagery, blood-like stains, and a skull, suggesting horror themes.",
+  "description": "A poster shows a skeletal structure with a skull, surrounded by shadowy figures against a red background, with the title 'THE TRIANGLE' and the tagline 'LIVE AS ONE. DIE AS ONE.'"
+}

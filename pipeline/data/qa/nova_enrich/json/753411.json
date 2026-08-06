@@ -1,0 +1,40 @@
+{
+  "title_text": "The Cremation Station",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "10 Years in the Making From the Depths of Kentucky",
+  "mood": [
+    "camp",
+    "horror",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and horror elements.",
+  "description": "A poster features a group of characters with a skull, blood splatters, and a title referencing a cremation station in Kentucky."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "HATCHETMAN",
+  "credits_text": "AMERICAN CINEMA INTERNATIONAL \"SOMETHING'S GOT AN AXE TO GRIND\" STARRING: MATTHEW R. WARREN, PAUL M. HUGHES, RENEE ROSE KETTER, GERALDINE CHANDLER, ROBERT HOFFMAN, STEVEN L. JOHNS, ROBERT H. HOFFMAN, MATTHEW R. WARREN, PAUL M. HUGHES, RENEE ROSE KETTER, GERALDINE CHANDLER, ROBERT HOFFMAN, STEVEN L. JOHNS, ROBERT H. HOFFMAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SOMEOONE'S GOT AN AXE TO GRIND!",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "axe",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the axe reference and dramatic imagery.",
+  "description": "The poster features a dark silhouette in a doorway above a close-up of a distressed woman's face, with bold title text and a tagline."
+}

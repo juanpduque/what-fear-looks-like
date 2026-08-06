@@ -1,0 +1,50 @@
+{
+  "title_text": "ԲԱՐԱԿԱՆԻ",
+  "credits_text": "",
+  "languages": [
+    "hy"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "psychological",
+    "suspense",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "weapon",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.5,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and disturbing imagery.",
+  "description": "A group of people trapped inside a confined space with eerie, monstrous figures and signs of violence."
+}

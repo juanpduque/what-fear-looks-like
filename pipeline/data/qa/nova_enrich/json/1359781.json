@@ -1,0 +1,40 @@
+{
+  "title_text": "THE PAIN OF CREATION",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "noose",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "self-harm"
+  ],
+  "moderation_notes": "Contains imagery of a noose and a distressed individual, suggesting themes of self-harm and violence.",
+  "description": "A man stands in a dimly lit room with a noose in the foreground, overlaid with a ghostly face and the title 'The Pain of Creation.'"
+}

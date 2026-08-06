@@ -1,0 +1,45 @@
+{
+  "title_text": "MURDER MOTEL",
+  "credits_text": "Starring ROBYN MILLAN DEREK FRANCIS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CHECK IN AND CHECK OUT THE TERROR! VHS.COM/VIDEO",
+  "mood": [
+    "horror",
+    "thriller",
+    "gothic",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A vintage VHS cover for a horror film titled 'Murder Motel,' featuring a dramatic scene of a person holding a knife over another, with bold red and black typography."
+}

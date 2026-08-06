@@ -1,0 +1,42 @@
+{
+  "title_text": "THE ISLAND",
+  "credits_text": "父作主:张幻尔年子",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "黄年子",
+  "mood": [
+    "dread",
+    "psychological",
+    "disturbing",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; disturbing imagery.",
+  "description": "A poster shows a bound figure with blood splatters and metal rods piercing through, set against a yellow background with bold red Chinese characters."
+}

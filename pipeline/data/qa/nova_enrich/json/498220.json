@@ -1,0 +1,46 @@
+{
+  "title_text": "NIGHTMARE SYMPHONY",
+  "credits_text": "FULCI LIVES!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WORLD Film Festival (WRFF) Los Angeles 2020, BUFFALO Dreams Film Festival 2020, ISCHIA FILMFEST 2020",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "violent",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A poster features a monstrous, armored figure with exposed chest and blood, set against a dark background with intense eyes."
+}

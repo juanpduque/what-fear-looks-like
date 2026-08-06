@@ -1,0 +1,49 @@
+{
+  "title_text": "DARKEST HOUR",
+  "credits_text": "FEATURING... DREIGHTON THE REAPER AND BABES!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MAYHEW HOUSE PICTURES PRESENTS THIS WEEKEND 14 PEOPLE WILL FACE THEIR VOLUME 1 ISSUE 1",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "moon",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.3,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild horror themes and implied violence.",
+  "description": "A vintage horror movie poster featuring a large skull moon, three characters, and a forest of houses with the tagline 'READY TO DIE!'"
+}

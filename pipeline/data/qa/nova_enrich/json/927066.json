@@ -1,0 +1,43 @@
+{
+  "title_text": "ZANIM WSTANIESZ",
+  "credits_text": "FILM BY DOMINIK KRZESZEWSKI & ELHńSZ KUSZ",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TV BMO",
+  "mood": [
+    "gothic",
+    "dread",
+    "mysterious",
+    "haunting",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "dark",
+      "conf": 0.95
+    },
+    {
+      "name": "mystery",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, eerie poster featuring a shadowy figure and a ghostly face, set against a night sky with a bare tree."
+}

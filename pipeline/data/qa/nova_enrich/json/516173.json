@@ -1,0 +1,46 @@
+{
+  "title_text": "LE MONTAGNE DELLA FOLLIA",
+  "credits_text": "A film by Michele Batticelli based on a work by H.P. Lovecraft",
+  "languages": [
+    "en",
+    "it"
+  ],
+  "other_text": "At The Mountains Of Madness",
+  "mood": [
+    "mysterious",
+    "haunting",
+    "cosmic horror",
+    "exploration",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.4,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied cosmic horror and psychological tension; no explicit violence or gore.",
+  "description": "A poster shows a green, tentacle-like creature with red orbs against a snowy, mountainous backdrop, with two silhouetted figures holding a tool."
+}

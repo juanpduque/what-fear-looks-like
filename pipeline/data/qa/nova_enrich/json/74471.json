@@ -1,0 +1,50 @@
+{
+  "title_text": "THE DEAD",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "apocalyptic",
+    "post-apocalyptic",
+    "survival",
+    "horror",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.95
+    },
+    {
+      "name": "zombie",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.6,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore, suitable for mature audiences.",
+  "description": "A post-apocalyptic scene shows two soldiers walking through a destroyed landscape with a large, decaying creature nearby."
+}

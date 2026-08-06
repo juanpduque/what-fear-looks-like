@@ -1,0 +1,40 @@
+{
+  "title_text": "KYMAP",
+  "credits_text": "WILLIAM H. MASON & GUYE ROHAN PERFETTI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "RESTRICTED BLOOD GORE VIOLENT GORE LANGUAGE",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.6,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A dark poster features a dripping red title with a gloved hand holding a weapon against a black background, illuminated by a bright light."
+}

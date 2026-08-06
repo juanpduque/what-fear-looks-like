@@ -1,0 +1,46 @@
+{
+  "title_text": "PLATOON OF THE DEAD",
+  "credits_text": "\"LREM IPSUM DOLORS SIT AMET\" - SOURCE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE ULTIMATE AXIS OF EVIL...DEAD",
+  "mood": [
+    "dread",
+    "horror",
+    "intense",
+    "gritty",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including blood and implied violence.",
+  "description": "A poster featuring a monstrous face with intense eyes, soldiers in silhouette, and bold red text, suggesting a horror theme."
+}

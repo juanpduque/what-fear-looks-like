@@ -1,0 +1,47 @@
+{
+  "title_text": "THE SPIDER LABYRINTH",
+  "credits_text": "starring TONIO CERVI, ALICE VERGANI, MARGHERITA VON KRAUSS, CLAUDIA ROLAND, VINCENZO SPALLUTO, MARGHERITA AUCHETTI, music by FRANCO MUSZATI edited by SERGIOR MONTAGNER produced by TONIO CERVI directed by GIANNI AMICI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THERE IS NO GREATER TERROR THAN THE FEAR THAT PARALYZES THE SPIDER'S PREY.",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "mysterious",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "spider",
+      "conf": 0.95
+    },
+    {
+      "name": "labyrinth",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.9,
+  "animal": 1.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring a large spider in the center with multiple terrified faces in the background, set against a dark, eerie backdrop with a web design."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "PASSWORD",
+  "credits_text": "a film by Gianni Petrizzo",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DAS RÄTSEL",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "eerie",
+    "thriller",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A gothic castle looms over a dark landscape with a shadowy figure and a cryptic title, suggesting mystery and suspense."
+}

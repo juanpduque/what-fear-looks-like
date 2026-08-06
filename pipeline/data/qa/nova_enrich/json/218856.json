@@ -1,0 +1,44 @@
+{
+  "title_text": "HOUSE GORY",
+  "credits_text": "A shocking tale of torture and horror",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "erotic",
+    "surreal",
+    "gothic",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "torture",
+      "conf": 0.9
+    },
+    {
+      "name": "horror",
+      "conf": 0.95
+    },
+    {
+      "name": "erotic",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.9,
+  "sexual_content": 0.7,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, nudity, and sexual themes.",
+  "description": "Movie poster features three individuals in dramatic poses with intense expressions; one holds a weapon, another is semi-nude, and the setting suggests horror and torture themes."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "THE GATES OF HELL",
+  "credits_text": "INSPIRED BY ACTUAL EVENTS\nMICHAEL PICCIRILLI SAMANTHA NOBLE CHRISTIEN CLARK STEVEN BRENNAN TOMLINSON ANYA ECKSTEIN\nDirected by GARY W. ALLEN\nProduced by DAVID ROZEN\nWritten by GARY W. ALLEN & DAVID ROZEN\nExecutive Produced by MICHAEL HOUSE\n\nRAPI-FARE\nCASCADE FILMS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EVIL BREEDS BEYOND...",
+  "mood": [
+    "gothic",
+    "dread",
+    "occult",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult themes and implied violence.",
+  "description": "A dark poster features a menacing, skull-like face with intense eyes and a crown, set against a black background with bold title text."
+}

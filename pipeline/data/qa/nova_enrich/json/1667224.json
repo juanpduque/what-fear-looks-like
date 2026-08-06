@@ -1,0 +1,41 @@
+{
+  "title_text": "CLOWNS",
+  "credits_text": "ROTEIRO E DIREÇÃO NANDO RODRIGUES PRODUÇÃO NANDO RODRIGUES RENATA ABREU GUSTAVO DEZEN PRODUÇÃO NANDO RODRIGUES ASSISTENTE RENATA ABREU DIREÇÃO DE GUSTAVO DEZEN DIREÇÃO RENATA ABREU CAPA/CRÉDITOS REBECA GONÇALVES MAKING LUCAS FELJO FELIPE PAIXÃO ELENCO ALLAN GONÇALVES FELIPE PAIXÃO RAUL RODRIGUES CAIO FERREIRA RENATA ABREU MATHEUS PALMA ALINE ARAUJO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "RACIO CINANDO FILMES APRESENTA 2019",
+  "mood": [
+    "horror",
+    "thriller",
+    "dark",
+    "intense",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes with masked figures.",
+  "description": "A dark poster features four menacing clown-like figures against a night backdrop, with bold green text reading \"CLOWNS\" and production credits listed below."
+}

@@ -1,0 +1,38 @@
+{
+  "title_text": "A COLD DAY IN HELL",
+  "credits_text": "William Lee Joe Estevez",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "action",
+    "gritty",
+    "dramatic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and some blood, but no explicit sexual content.",
+  "description": "A muscular man holds a sword amidst flames, with a suited man in the background, suggesting an intense action scene."
+}

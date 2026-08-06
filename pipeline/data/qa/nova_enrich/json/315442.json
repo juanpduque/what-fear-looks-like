@@ -1,0 +1,46 @@
+{
+  "title_text": "Makhluk Dari Kubur",
+  "credits_text": "Yenny Farida, Leca Anggraeni, H. Bokir, Rina Nasim",
+  "languages": [
+    "id"
+  ],
+  "other_text": "Nyelik",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "supernatural",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and monstrous creatures.",
+  "description": "A horror movie poster featuring a group of terrified individuals facing a monstrous creature with blood on its face in a dark, eerie setting."
+}

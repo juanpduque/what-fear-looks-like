@@ -1,0 +1,45 @@
+{
+  "title_text": "BIGFOOT EXORCIST",
+  "credits_text": "The Devil's Beast",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gothic",
+    "camp",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains violent imagery and occult themes.",
+  "description": "A poster shows a nun holding a cross facing a monstrous red creature with sharp teeth. The title 'Bigfoot Exorcist' is prominently displayed above."
+}

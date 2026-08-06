@@ -1,0 +1,42 @@
+{
+  "title_text": "A CAPITAL DOS MORTOS: MUNDO MORTO",
+  "credits_text": "TIAGO BELOTTI apresenta - A CAPITAL DOS MORTOS 2: MUNDO MORTO\n Roteiro e Direção TIAGO BELOTTI Produtor TIAGO ESMERALDO Consultor Criativo e Coprodutor RODRIGO HUACHA Diretora de Fotografia GABRIELA CERQUEIRA Assistente de Direção HUGO CASARISI Elenco LORENA ALOL, GUSTAVO SERRATE, JESSICA VERGARA, MARIA GOMEZ, MORGANA SANTOS, KATYA CAMA, NOBUKI KAHI, ANA FLAVIA GARCIA, JOSE DE CAMPOS, RENATA HELENA Equipe de Produção ISABELLE ESMERALDO, JÓSÉ RICARDO, SAMUEL MANGUERRA, ROBERTO ITAMAR, SANTIAGO GAMA, ADILIO GOMES, NEI THOMAS, JESSICA SOUSA, JANETH TORIBIO, DEBORA BINHA, NATAN RAMOS, KELLEN CRISTINA, GABRIEL RC., LEONARDO PANZERA, GASTÃO CARED, ERDMAN CORREIA, GABRIELA MIRANDA, ANDRESA DEBESSA Chefe de Maquiagem MARILANA ELISA Equipe de Maquiagem MARÍ CAMPELLO, JO WELASCO, YOHANNA JAPIASSU, SAMANTHA MAGNO, NANY NERY, NILMAR PAULO, ELISA OLIVEIRA, HERMES BARRETO Cartaz CLAUDIO DELAMARE MARINHO",
+  "languages": [
+    "pt"
+  ],
+  "other_text": "",
+  "mood": [
+    "dark",
+    "intense",
+    "post-apocalyptic",
+    "survival",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and gore, suitable for mature audiences.",
+  "description": "A collage-style poster features various intense scenes and characters, suggesting a dark, post-apocalyptic thriller."
+}

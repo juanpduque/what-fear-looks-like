@@ -1,0 +1,42 @@
+{
+  "title_text": "THE MISSING",
+  "credits_text": "RITZ AZUL JOSEPH MARCO MILES OCAMPO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AN OFFICIAL ENTRY TO THE 2020 METRO MANILA FILM FESTIVAL EASY FERRIER",
+  "mood": [
+    "tense",
+    "suspenseful",
+    "gothic",
+    "mystery",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and possible gore.",
+  "description": "A poster shows three individuals in a tense, dark setting with a ghostly figure in the foreground, suggesting a horror or thriller theme."
+}

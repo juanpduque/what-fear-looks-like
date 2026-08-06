@@ -1,0 +1,41 @@
+{
+  "title_text": "THE HANDSAW MURDER",
+  "credits_text": "THE RETURN OF THE HANDSAW KILLER\nRTVG PRODUCTION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "suspense",
+    "terror",
+    "gothic",
+    "forest"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster implies potential violence through its ominous setting and title.",
+  "description": "A masked figure runs through a dark forest in a tense, eerie setting, with bold red and white text overlay indicating a horror theme."
+}

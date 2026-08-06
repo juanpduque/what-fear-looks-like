@@ -1,0 +1,40 @@
+{
+  "title_text": "ROOMS",
+  "credits_text": "FOR OUR IST S",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "eerie",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied blood splatters and a tense atmosphere.",
+  "description": "A poster featuring a close-up of a woman's face and three figures in a dimly lit hallway, with bold red text reading 'ROOMS' and a tagline."
+}

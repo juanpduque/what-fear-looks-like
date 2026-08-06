@@ -1,0 +1,42 @@
+{
+  "title_text": "BLIND BEAST vs KILLER DWARF",
+  "credits_text": "LEGENDARY DIRECTOR TERUO ISHII'S FINAL DISTURBING MASTERPIECE!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Panik House Entertainment",
+  "mood": [
+    "dread",
+    "surreal",
+    "eerie",
+    "disturbing",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "nudity"
+  ],
+  "moderation_notes": "Contains disturbing imagery and partial nudity.",
+  "description": "A dark poster features a screaming face in red, surrounded by shadowy figures and the bold title 'BLIND BEAST vs KILLER DWARF'."
+}

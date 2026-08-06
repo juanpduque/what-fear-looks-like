@@ -1,0 +1,46 @@
+{
+  "title_text": "Refractions",
+  "credits_text": "VINCENTE RUBINI UN FILM DE MIA KINSEY HAMID BAILLON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "KINSEY HAMID FILM \"REFRACTIONS\" AVEC VINCENTE RUBINI ET MIA BAILLON AIDE REALISATION BRIAN MURD SANTIAGO ODOEMENE MUSIQUE PAR \"M A S K\" SON GABRIELE MESCHI MAQUILLAGE CONAN EL QUAKLY ANGELINA SOLIDA LIZEA MORIN PHOTOGRAPHIE LIV GUNNARSON",
+  "mood": [
+    "gothic",
+    "psychological",
+    "disturbing",
+    "mystery",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.0,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic depictions of blood and violence.",
+  "description": "A dark, collage-style poster features sketches of human anatomy, faces, and violent imagery, with the title \"Refractions\" prominently displayed."
+}

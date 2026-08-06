@@ -1,0 +1,44 @@
+{
+  "title_text": "BABY DOLL",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "doll",
+      "conf": 0.95
+    },
+    {
+      "name": "haunting",
+      "conf": 0.9
+    },
+    {
+      "name": "abandoned",
+      "conf": 0.85
+    },
+    {
+      "name": "creepy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains disturbing imagery of damaged dolls and a haunting atmosphere.",
+  "description": "A poster shows a damaged doll with a creepy expression, seated in a dimly lit, abandoned room with other unsettling dolls nearby."
+}

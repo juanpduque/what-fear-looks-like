@@ -1,0 +1,45 @@
+{
+  "title_text": "ОБРАТНАЯ СТОРОНА",
+  "credits_text": "РЕЖИССЕР: ВИКТОР ЛЕБЕДЕВ",
+  "languages": [
+    "ru"
+  ],
+  "other_text": "ЭТОТ РАЙОН УБЬЁТ ТЕБЯ...",
+  "mood": [
+    "dread",
+    "gothic",
+    "haunting",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatters and a menacing ghostly figure.",
+  "description": "A poster shows a ghostly skull with blood splatters over a street scene, featuring Russian text and a dark, eerie atmosphere."
+}

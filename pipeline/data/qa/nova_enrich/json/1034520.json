@@ -1,0 +1,35 @@
+{
+  "title_text": "JIM'S ROOM",
+  "credits_text": "MICHAEL MASURKEVITCH\nZAC KING",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FROM THE MIND OF A KILLER",
+  "mood": [
+    "intense",
+    "psychological",
+    "disturbing",
+    "thriller",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring a close-up of a man's face with a distressed expression, overlaid with the title 'JIM'S ROOM' and credits."
+}

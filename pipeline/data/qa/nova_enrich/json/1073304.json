@@ -1,0 +1,43 @@
+{
+  "title_text": "SMOOTH",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "disturbing",
+    "violent",
+    "gory",
+    "erotic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    },
+    {
+      "name": "erotic",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 1.0,
+  "violence": 1.0,
+  "sexual_content": 0.8,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and sexual content.",
+  "description": "A disturbing poster showing a person with bloodied hands and severe injuries, accompanied by the bold text 'SMOOTH.' The imagery is graphic and unsettling."
+}

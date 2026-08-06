@@ -1,0 +1,47 @@
+{
+  "title_text": "SEYTANIN KITABI",
+  "credits_text": "Jön-i cühaşe\n19 HAZIRAN'DA SİNEMALARDA",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "ENGİN YÜKSEL, RÜYA YÜRÜTEN, CEMRE ÖZĞUL\nYAZAR VE YİNETMEN: OKAN ÇEŞEN",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "intense",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.75,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic imagery of a monstrous skull with blood and intense horror elements.",
+  "description": "A poster featuring a monstrous skull with sharp teeth and blood, set against a dark background, promoting a horror film titled 'SEYTANIN KITABI' releasing on June 19."
+}

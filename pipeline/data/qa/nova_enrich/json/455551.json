@@ -1,0 +1,42 @@
+{
+  "title_text": "THE RECALL",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "mysterious",
+    "haunting",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.6,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark forest scene with abandoned cars, shadowy figures, and an eerie light beam, suggesting a suspenseful and supernatural atmosphere."
+}

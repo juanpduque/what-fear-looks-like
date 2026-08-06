@@ -1,0 +1,36 @@
+{
+  "title_text": "SUICIDE_CLIP_01",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "self-harm",
+    "violence"
+  ],
+  "moderation_notes": "Contains implied self-harm and violent imagery.",
+  "description": "A dark silhouette of a person hanging from a noose, with a chair below, set against a dark background with bold red text at the top."
+}

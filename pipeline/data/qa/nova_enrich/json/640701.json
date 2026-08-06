@@ -1,0 +1,40 @@
+{
+  "title_text": "The portrait",
+  "credits_text": "A FILM BY PAULO ARAÚJO",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "IN COMPETITION MOTELX LISBON INTERNATIONAL FILM FESTIVAL 2018 SELEÇÃO OFICIAL HORROR",
+  "mood": [
+    "gothic",
+    "haunting",
+    "mysterious",
+    "eerie",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A woman in Victorian attire stands in a dark setting with shadowy figures in the background, suggesting a gothic horror theme."
+}

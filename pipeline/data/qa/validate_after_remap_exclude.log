@@ -1,0 +1,30 @@
+validate_corpus — layers=[1, 3]  data=/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data
+
+=== CAPA 1 (fail hard) ===
+[ok]   membresia: 0 leaks / 11,091 excluded ids
+[ok]   years ok (undated/9999=332)
+[ok]   attributes.csv: 37,831 alineado
+[ok]   faces_v2.csv: 37,831 alineado
+[ok]   census.csv: 37,831 alineado
+[ok]   typography.csv: 37,831 alineado
+[ok]   medium.csv: 37,831 alineado
+[ok]   segmentation.csv: 37,831 alineado
+[ok]   clip_embeddings.npz: 37,831 alineado
+[ok]   series.js n=37,831
+[ok]   lookup.js n=37,831
+[ok]   explorer.js n=37,831
+[ok]   texto front n=37,831 alineado (index/i18n/README)
+[ok]   JPG locales: 37,831 presentes, legibles y portrait
+[ok]   CAPA 1 PASS — corpus n=37,831
+
+=== CAPA 3 (artwork, soft) ===
+[warn] capa 3: 1,476/37,831 sin poster_path → data/qa/missing_poster_path.csv
+[warn] capa 3: drift cache — checked=36,355 mismatch=0 errors=530 → data/qa/poster_path_mismatch.csv
+[info] capa 3: drift solo cubre 36,355/37,831 (recorre validate_poster_paths.py para refrescar)
+[ok]   capa 3: 0 landscape en corpus
+[info] capa 3: quarantine dir tiene 409 jpg (informativo)
+
+=== RESUMEN ===
+capa 1: PASS
+soft warns: 2
+LISTO.

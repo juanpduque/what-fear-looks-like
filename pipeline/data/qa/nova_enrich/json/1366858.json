@@ -1,0 +1,38 @@
+{
+  "title_text": "HOLON",
+  "credits_text": "",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "other_text": "HORROR BE KIND REWIND",
+  "mood": [
+    "sci-fi",
+    "action",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "helmet",
+      "conf": 0.9
+    },
+    {
+      "name": "robot",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.2,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Movie poster features a group of characters, including a man in a helmet and a robot, with intense expressions and action poses against a dark background."
+}

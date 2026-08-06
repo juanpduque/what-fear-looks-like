@@ -1,0 +1,42 @@
+{
+  "title_text": "S&MAN",
+  "credits_text": "[SANDMAN]",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "erotic",
+    "mysterious",
+    "haunting",
+    "psychological",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.8,
+  "sensitive": [
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains partial nudity and suggestive imagery.",
+  "description": "A poster shows a woman from behind near a window with a shadowy figure visible through the glass, accompanied by bold red text reading 'S&MAN [SANDMAN]'."
+}

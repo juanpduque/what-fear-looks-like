@@ -1,0 +1,38 @@
+{
+  "title_text": "PRUITT & IGOE",
+  "credits_text": "This Ain't Elm Street",
+  "languages": [
+    "en"
+  ],
+  "other_text": "OFFICIAL SELECTION SCREAMFEST HORROR FILM FESTIVAL 2022",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, moody poster features two shadowy figures against a blue-tinted background with text indicating a horror film festival selection."
+}

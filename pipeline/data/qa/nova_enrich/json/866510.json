@@ -1,0 +1,51 @@
+{
+  "title_text": "OUJIA HOSTS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "haunting",
+    "supernatural",
+    "dread",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains occult imagery and implied violence/gore.",
+  "description": "A poster shows a woman kneeling over an Ouija board in a dimly lit, eerie setting with candles and a ghostly atmosphere."
+}

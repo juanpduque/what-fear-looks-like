@@ -1,0 +1,46 @@
+{
+  "title_text": "DANTE'S INFERNO",
+  "credits_text": "AN ANIMATED EPIC",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "epic",
+    "dark",
+    "mythic"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains dark, gothic imagery and implied violence.",
+  "description": "A muscular armored figure holds a large weapon against a dark, infernal backdrop with dramatic lighting and ominous text."
+}

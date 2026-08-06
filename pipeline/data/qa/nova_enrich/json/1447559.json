@@ -1,0 +1,39 @@
+{
+  "title_text": "BAD KAROKEE",
+  "credits_text": "LEXI UNDERWOOD CASE WALKER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE HITS KEEP ON KILLING",
+  "mood": [
+    "thriller",
+    "horror",
+    "suspense",
+    "dramatic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "lightning",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A group of people stand in front of a fiery background with lightning effects, suggesting a thriller or horror theme."
+}

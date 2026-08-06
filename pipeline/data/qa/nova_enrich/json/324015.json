@@ -1,0 +1,42 @@
+{
+  "title_text": "The Death of ALICE BLUE",
+  "credits_text": "Part I: The Bloodsucking Vampires of Advertising\nAnd You Thought You Had a Dead-End Job",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"A NON-SENSATIONAL VAMPIRE TALE LIKE NO OTHER...\" \n\"ALICE BLUE IS A ROARING SUCCESS IN A BARREL!\" \n\"ALICE BLUE IS MORE COMEDY THAN PERFORMANCE ART...\" \n\"...A TRIUMPHANT, UNFORGETTABLE, FUNNY, PULL-YOUR-MOUTH-OFF, DEAD-SEAT!\"",
+  "mood": [
+    "gothic",
+    "surreal",
+    "camp",
+    "dark humor",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "Contains mild suggestive imagery and dark humor.",
+  "description": "Poster features a stylized portrait of a woman with dark makeup and bold red lips, set against a dark, moody background with text overlays."
+}

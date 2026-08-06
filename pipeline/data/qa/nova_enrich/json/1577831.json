@@ -1,0 +1,50 @@
+{
+  "title_text": "CLEAVER MAXIMUM CLEAVAGE",
+  "credits_text": "FROM THE STUDIO THAT BROUGHT YOU SLASHER HOUSE SEND DOWN THE CLOWNS HBFilms MYCHO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "violent",
+    "gory",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    },
+    {
+      "name": "house",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A horror movie poster featuring a woman in an orange jumpsuit with blood stains, surrounded by clowns holding weapons in a dark industrial setting."
+}

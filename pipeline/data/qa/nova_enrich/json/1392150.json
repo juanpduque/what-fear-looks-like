@@ -1,0 +1,40 @@
+{
+  "title_text": "The sound of Death",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.85
+    },
+    {
+      "name": "ghost",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and implied violence.",
+  "description": "A dark, textured skull with a glowing cross and fiery accents, accompanied by bold red text reading 'The sound of Death.'"
+}

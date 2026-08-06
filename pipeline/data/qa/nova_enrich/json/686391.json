@@ -1,0 +1,47 @@
+{
+  "title_text": "PORTAE INFERNALES",
+  "credits_text": "HELMUT BERGER, ERWIN LEDER, JACKIE WULF, KRISTINA STAFFA, ALEXANDER DONESCH",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "other_text": "DREI TONE ZUR HÖLLE",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "psychological",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.3,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult themes and implied violence.",
+  "description": "A man holds a gun in a dark setting with chains and a hooded figure, suggesting a horror or thriller theme."
+}

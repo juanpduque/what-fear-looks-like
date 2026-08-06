@@ -1,0 +1,41 @@
+{
+  "title_text": "DRAGON FURY",
+  "credits_text": "WRATH OF FIRE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "epic",
+    "fantasy",
+    "intense",
+    "dramatic",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "dragon",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 1.0,
+  "person": 0.7,
+  "animal": 1.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and fire imagery, but no explicit violence or gore.",
+  "description": "A dragon breathing fire over a burning landscape with a lone figure in the foreground."
+}

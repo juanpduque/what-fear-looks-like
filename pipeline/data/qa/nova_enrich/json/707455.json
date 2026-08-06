@@ -1,0 +1,50 @@
+{
+  "title_text": "TERROR IN WOODS CREEK",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FEAR THE DRIFTER",
+  "mood": [
+    "dread",
+    "forest",
+    "survival",
+    "horror",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A masked figure holds an axe in a forest setting, with a tent visible in the background, suggesting a survival horror theme."
+}

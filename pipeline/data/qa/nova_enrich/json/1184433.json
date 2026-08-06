@@ -1,0 +1,44 @@
+{
+  "title_text": "FINAL CUT",
+  "credits_text": "PRESENTS A FILM BY TERENCE MUNCY STARRING THE GOREGIOUS GIRLS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MAX COLBERTSON MISS KUTTE MIKE HEAD LIZ STILETTO WARBRANCH PRODUCTIONS AND TRUE TO A EMPIRE",
+  "mood": [
+    "horror",
+    "erotic",
+    "camp",
+    "violent",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.7,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "Movie poster features a demonic figure with horns and chains, surrounded by women in revealing attire, with blood splatters and a dramatic title."
+}

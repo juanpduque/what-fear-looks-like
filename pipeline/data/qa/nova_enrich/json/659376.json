@@ -1,0 +1,45 @@
+{
+  "title_text": "V-MONSTER",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "ビーモンスター ビーモンスター ビーモンスター ビーモンスター",
+  "mood": [
+    "action",
+    "horror",
+    "sci-fi",
+    "thriller",
+    "fantasy"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.1,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and monster themes.",
+  "description": "A vibrant poster features multiple characters and monsters with bold Japanese text, suggesting an action-horror theme."
+}

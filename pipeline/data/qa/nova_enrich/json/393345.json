@@ -1,0 +1,46 @@
+{
+  "title_text": "CULT OF CHUCKY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Good Guys",
+  "mood": [
+    "dread",
+    "horror",
+    "psychological",
+    "gothic",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.4
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "A doll stands holding a syringe in a sterile room, with two bodies on gurneys behind it."
+}

@@ -1,0 +1,49 @@
+{
+  "title_text": "EL CASTILLO DE LOS MONSTRUOS",
+  "credits_text": "\"CLAVIDAZO\" EVANGELINA ELIZONDO",
+  "languages": [
+    "es"
+  ],
+  "other_text": "PRODUCCIONES OSTINATOS, S.A. J. JURADO\nDISTRIBUIDORA NEGRETE, S.A.",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "surreal",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.1,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A vintage horror poster features a group of terrified people facing monstrous creatures in a dark, gothic castle setting with dramatic artwork."
+}

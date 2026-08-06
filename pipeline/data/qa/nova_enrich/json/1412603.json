@@ -1,0 +1,45 @@
+{
+  "title_text": "GET OUT ALIVE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "You are what it eats. OFFICIAL SELECTION SCREAMCON",
+  "mood": [
+    "dread",
+    "thriller",
+    "survival",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood, suggesting horror themes.",
+  "description": "A man holds a gun in front of a barn with a moonlit sky; two people stand nearby. The poster features bold red text and a tagline."
+}

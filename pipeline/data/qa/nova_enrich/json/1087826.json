@@ -1,0 +1,49 @@
+{
+  "title_text": "STDemon",
+  "credits_text": "AMANDA PARTS PETEREC PRESENTS THE DARLING ANGELA STARRING NICK MERCER, JENNIFER NICHOLS, ERIC SHAPIRO, RACHEL HOFFMAN, JOSHUA HOFFMAN, ERIN SHAPIRO, LISA HOFFMAN, JESSICA HOFFMAN, JUSTIN BENNETT, HEATHER ADAMS, RACHEL ADAMS, JESSICA BENNETT PRODUCED BY LISA HOFFMAN & PETEREC RATION WRITTEN BY LISA HOFFMAN & PETEREC RATION DIRECTED BY PETEREC RATION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HE'S COMING FOR YOU!",
+  "mood": [
+    "dread",
+    "terror",
+    "horror",
+    "suspense",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A dark poster features a man with glasses holding a knife, with a ghostly hand reaching out and bold text reading 'HE'S COMING FOR YOU!' and 'STDemon.'"
+}

@@ -1,0 +1,43 @@
+{
+  "title_text": "VISITANTE DE INVIERNO",
+  "credits_text": "SANDRA BALLESTEROS DIEGO ALONSO ANA CUERDO CATALINA ARTIUS ARIEL STATIARI ARTEMIO ESPINOZA ROY SERRANO PETE NOVA ALESSANDRO PASCUCCI EFECTO FINAL ANNA MARIA RAMIREZ ANNA MARIA CASTILLANO JORGE VERAIS QUINNY ORIZON SERGIO ESQUENZIA",
+  "languages": [
+    "es"
+  ],
+  "other_text": "EL MIEDO NO ES UN JUEGO",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "mystery",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "winter",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a woman with a hood and a shadowy figure in a snowy forest, with the title 'Visitante de Invierno' and tagline 'El Miedo No Es Un Juego.'"
+}

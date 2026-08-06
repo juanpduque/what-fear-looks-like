@@ -1,0 +1,43 @@
+{
+  "title_text": "WAKE THE DEAD",
+  "credits_text": "SOME THINGS SHOULD NEVER BE UNEARTHED",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "text",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains violent imagery and horror themes.",
+  "description": "A man in a gas mask holds a large knife in a dark, eerie workshop setting with spooky elements like skulls and ghostly figures."
+}

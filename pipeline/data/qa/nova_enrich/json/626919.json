@@ -1,0 +1,49 @@
+{
+  "title_text": "KABUS",
+  "credits_text": "Bir Medyum Günündön",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "30 MARTTA SINEMALARDA",
+  "mood": [
+    "gothic",
+    "dread",
+    "mysterious",
+    "haunting",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "occult",
+      "conf": 0.75
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.1,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and ghostly imagery.",
+  "description": "Poster features five hooded figures against a dark, eerie forest backdrop with the title 'KABUS' prominently displayed."
+}

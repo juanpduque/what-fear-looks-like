@@ -1,0 +1,41 @@
+{
+  "title_text": "EYE INFECTION",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "October 24th",
+  "mood": [
+    "dread",
+    "horror",
+    "apocalyptic",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "infection",
+      "conf": 0.8
+    },
+    {
+      "name": "zombie",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and disturbing imagery.",
+  "description": "A woman with a pale, zombie-like appearance stands against a concrete wall, with the title 'EYE INFECTION' and release date 'October 24th' displayed."
+}

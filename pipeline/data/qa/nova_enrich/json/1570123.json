@@ -1,0 +1,43 @@
+{
+  "title_text": "SCREAM A LITTLE DREAM",
+  "credits_text": "A FILM BY T.J. MOORE\nMEGAN MAGEE • JULIE MCNAMARA • MEAGHAN BLOOM FLUITT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "30",
+  "mood": [
+    "horror",
+    "surreal",
+    "psychological",
+    "disturbing",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a woman in a theater with a ghostly hand reaching toward her, surrounded by an eerie red glow and smoke."
+}

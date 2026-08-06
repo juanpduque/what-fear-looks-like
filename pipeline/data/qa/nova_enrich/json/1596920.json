@@ -1,0 +1,46 @@
+{
+  "title_text": "LIVE OR DIE",
+  "credits_text": "MANIAC21 PICTURES PRESENTS A MANUEL URBANECK FILM \"LIVE OR LET DIE\" STARRING JAN BOHLENSCHMIDT STEVEN MOOERS LUKAS TRITSCHER SOPHIE SIENER DANIEL SCHERER HEIKE URBANECK NICOLE BAUER AND MARTINA HENKE VOICE-OVER PEER BLANK MUSIC SUPERVISOR MANUEL URBANECK VOICE RECORDING TIM SOMMER WRITTEN BY MANUEL URBANECK AND JAN BOHLENSCHMIDT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"HE WHO FIGHTS MONSTERS, BECOME A MONSTER\" WINNER BEST SPECIAL EFFECTS MAD TOWN HORROR WISCONSIN USA WINNER BEST NUTILATION SCENE Vienna Fright Nights 2015 Official Selection OFFICIAL SELECTION LA MEKO FILM FESTIVAL OFFICIAL SELECTION 2015 TAMPA BAY FLORIDA FILM FEST OFFICIAL SELECTION 2015 INDIGO FILM FEST OFFICIAL SELECTION 2015 CRE MANIACS FILM FEST 2015 FACEBOOK.COM/LIVEORLETIEDIE",
+  "mood": [
+    "horror",
+    "thriller",
+    "action",
+    "dramatic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and intense violence.",
+  "description": "A poster for the horror film \"Live or Die\" featuring a man holding a gun surrounded by monstrous figures with the tagline \"He who fights monsters, become a monster.\""
+}

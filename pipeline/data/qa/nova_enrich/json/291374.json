@@ -1,0 +1,46 @@
+{
+  "title_text": "SLEDGE",
+  "credits_text": "DUSTIN BOWMAN STEPHANIE TUPPER KRISTIAN HANSON RACHEL CORNELL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"This is honestly one of the best slashers I have seen in recent years.\" - Marc Beyer, Horror Society \"Prepare for a comic Sledge-Hammer to the brain!\" - Paul Metcalf, Proof of Lackofun HE DIDN'T DROWN, HE DIDN'T BURN, HE'S JUST A PSYCHO WITH A SLEDGEHAMMER",
+  "mood": [
+    "dread",
+    "intense",
+    "violent",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intended for mature audiences.",
+  "description": "Poster features a large red skull with eyes and a sledgehammer, with a shadowy figure in the background and taglines."
+}

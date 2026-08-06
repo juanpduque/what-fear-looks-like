@@ -1,0 +1,45 @@
+{
+  "title_text": "女高生VS悪霊チェーンソー",
+  "credits_text": "主演: 水上あゆ",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "新感覚ホラー",
+  "mood": [
+    "horror",
+    "action",
+    "camp",
+    "violent",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains violent imagery and weapon use.",
+  "description": "Poster features three schoolgirls wielding chainsaws against a monstrous creature amidst flames and destruction."
+}

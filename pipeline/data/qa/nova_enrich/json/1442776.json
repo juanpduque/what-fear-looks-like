@@ -1,0 +1,44 @@
+{
+  "title_text": "美黄皮",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "fantasy",
+    "adventure",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "water",
+      "conf": 0.85
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action sequences and monster attacks.",
+  "description": "A poster shows two massive monsters battling amidst a stormy landscape, with two people in the foreground looking alarmed."
+}

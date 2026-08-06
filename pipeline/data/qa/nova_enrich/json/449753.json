@@ -1,0 +1,39 @@
+{
+  "title_text": "HUMAN ZOO",
+  "credits_text": "ESCAPE IS NOT AN OPTION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "claustrophobic",
+    "horrific",
+    "desperate",
+    "oppressive"
+  ],
+  "fear_labels": [
+    {
+      "name": "crowd",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "confinement",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a group of terrified people inside a confined space viewed through a circular window, with the title 'HUMAN ZOO' and the tagline 'ESCAPE IS NOT AN OPTION.'"
+}

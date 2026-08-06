@@ -1,0 +1,40 @@
+{
+  "title_text": "No Place Like HOME",
+  "credits_text": "A great place to visit, but you won't survive long enough to live there.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 1.0
+    },
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and violent imagery.",
+  "description": "A poster shows a bloody knife with a skull design, accompanied by red splatters and a dramatic tagline."
+}

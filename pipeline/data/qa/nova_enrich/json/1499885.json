@@ -1,0 +1,51 @@
+{
+  "title_text": "THE RED BOOK OF RITUAL",
+  "credits_text": "GATES OF HELL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "occult",
+    "dread",
+    "mysterious",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains occult themes, blood, and a demonic figure.",
+  "description": "A woman with dark makeup holds a book titled 'The Red Book of Ritual,' with a demonic figure looming behind her in a dark setting."
+}

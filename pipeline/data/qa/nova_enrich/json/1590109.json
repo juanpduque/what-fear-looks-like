@@ -1,0 +1,46 @@
+{
+  "title_text": "ANGRY AND MOIST AN UNDEAD CHRONICLE",
+  "credits_text": "\"This is a zombie film I haven't seen.\" - Roger Ebert",
+  "languages": [
+    "en"
+  ],
+  "other_text": "20TH ANNIVERSARY EDITION",
+  "mood": [
+    "horror",
+    "camp",
+    "dark humor",
+    "grotesque",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and blood.",
+  "description": "Poster features five characters in a zombie setting with bold green and red colors, a syringe, and a tagline praising the film."
+}

@@ -1,0 +1,44 @@
+{
+  "title_text": "DEMON MESSENGER",
+  "credits_text": "PRAY HIS MESSAGE IS NOT FOR YOU\nZAMBRONICK PRESENTS A FILM BY DOSE IN ASSOCIATION WITH WOLBMAN PRODUCTIONS \"DEMON MESSENGER\"\nDAVIDO ANDY HORWITZ ANTHONY MESSESMITH MIKE AGRES DAVE BAER KENDRA BAKER TINA KALADA LORI STONE SCOTT THOMPSON EDWARD RICE BRIAN CALAHAN MIKE RON CHAMBERLAIN ORIGINAL SOUNDTRACK BY THOMAS PHIPPS KEVIN LYNCH JASON NAYOR RASHID RAHMAN DIRECTED BY DOSE PRODUCED BY DOUG RUSH JODY RUSH JIM DEMURO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror elements and occult themes.",
+  "description": "A poster shows a terrified woman on the ground with a monstrous, hairy creature looming over her in a dark forest setting."
+}

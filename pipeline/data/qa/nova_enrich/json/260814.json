@@ -1,0 +1,40 @@
+{
+  "title_text": "FEAR, INC.",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HOW SCARED DO YOU WANT TO BE? 516-900-FEAR #HOWSCARED",
+  "mood": [
+    "intense",
+    "suspenseful",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and a disturbing visual of a severed hand.",
+  "description": "A poster shows a severed hand holding a card with the number 516-900-FEAR, accompanied by the title 'FEAR, INC.' and a tagline."
+}

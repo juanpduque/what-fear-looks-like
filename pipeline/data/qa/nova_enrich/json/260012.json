@@ -1,0 +1,43 @@
+{
+  "title_text": "MAN HUNTING",
+  "credits_text": "",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "other_text": "狩人の女を殺すな",
+  "mood": [
+    "intense",
+    "survival",
+    "action",
+    "thriller",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "water",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A woman stands in a river, covered in blood, holding a spear, with a rugged, snowy landscape in the background."
+}

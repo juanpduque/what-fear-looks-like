@@ -1,0 +1,42 @@
+{
+  "title_text": "PHIL HERMAN'S UNEARTHED",
+  "credits_text": "FROM THE MAKERS OF I SLAY ON CHRISTMAS\nCHRISTOPHER KAHLER II IN\nA FILM BY\nMARCELO FABANI - DEREK BRAASCH - JAMES PANETTA - WILL DEVOKEES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.4,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man in dark clothing holds a lantern and shovel against a foggy, eerie forest backdrop. The poster advertises a horror film."
+}

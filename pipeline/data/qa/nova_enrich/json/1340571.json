@@ -1,0 +1,47 @@
+{
+  "title_text": "LORD OF WOLVES",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "OF",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "noir",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "night",
+      "conf": 0.9
+    },
+    {
+      "name": "cityscape",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.3,
+  "animal": 1.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a menacing wolf with glowing red eyes against a moonlit cityscape, with three silhouetted figures walking below."
+}

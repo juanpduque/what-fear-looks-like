@@ -1,0 +1,46 @@
+{
+  "title_text": "DRACULA",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "2012 3D",
+  "mood": [
+    "gothic",
+    "dread",
+    "mysterious",
+    "dark",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "nudity"
+  ],
+  "moderation_notes": "The poster features partial male nudity and suggests violent themes.",
+  "description": "A muscular man with dark hair and a sinister grin stands in a dark forest, wearing a red-lined cape. The title \"DRACULA\" is prominently displayed in red text."
+}

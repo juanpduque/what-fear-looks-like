@@ -1,0 +1,37 @@
+{
+  "title_text": "BROADCAST DEAD",
+  "credits_text": "NO SIGNAL NO CHANCE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "action",
+    "survival",
+    "dystopian",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and implied violence.",
+  "description": "A group of soldiers stands in a rainy urban setting with helicopters overhead, emphasizing a tense, post-apocalyptic atmosphere."
+}

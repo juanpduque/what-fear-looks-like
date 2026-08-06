@@ -1,0 +1,43 @@
+{
+  "title_text": "GHOST VOYAGE",
+  "credits_text": "STARRING ANTONIO SABATO JR., DEANNA RUSSO, CARY-HIRODI TAGAWA; MUSIC BY JEFFREY BEACH & PHILLIP ISENBERG; PRODUCED BY JEFFREY BEACH & PHILLIP J. ISENBERG; DIRECTED BY JAMES O'BRODO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THEY ARE DYING TO GET OFF!",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "tense",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "water",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, eerie poster features a ghostly face and a ship on stormy waters, with bold yellow title text and dramatic red credits."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "ROBOSHARK",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "sci-fi",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "explosion",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and explosive visuals.",
+  "description": "A poster shows a robotic shark emerging from debris with an aggressive stance against a stormy backdrop."
+}

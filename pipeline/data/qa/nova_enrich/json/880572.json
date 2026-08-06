@@ -1,0 +1,42 @@
+{
+  "title_text": "ZTV SYMPATHY FOR THE DEVIL",
+  "credits_text": "Mitch Obstanski, Daniel Sullivan, Thomas Colentina, Cheyenne Obstanski, Macallister Byrd, Ernie German, Teresa Navarro, Colleen Carey, Molly Kinley Ratermann",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SHE DIES FOR YOUR SINS",
+  "mood": [
+    "intense",
+    "thriller",
+    "horror",
+    "dark",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "crowd",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild violent imagery and gory elements.",
+  "description": "The poster features a group of characters with intense expressions, highlighting the title \"ZTV Sympathy for the Devil\" and a tagline \"She Dies for Your Sins\"."
+}

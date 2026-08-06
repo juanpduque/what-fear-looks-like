@@ -1,0 +1,39 @@
+{
+  "title_text": "小马进道“彩物”将将",
+  "credits_text": "",
+  "languages": [
+    "zh"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "horror",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action sequences and monstrous creatures.",
+  "description": "A group of characters face off against large, menacing monsters in a chaotic battle scene."
+}

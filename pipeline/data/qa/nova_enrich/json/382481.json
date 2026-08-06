@@ -1,0 +1,46 @@
+{
+  "title_text": "狂暴车队",
+  "credits_text": "4月17日 方志强",
+  "languages": [
+    "zh"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "intense",
+    "chaotic",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; disturbing imagery.",
+  "description": "A poster features a terrified woman amidst shattered glass and a chaotic car scene, with bold red Chinese text and a release date."
+}

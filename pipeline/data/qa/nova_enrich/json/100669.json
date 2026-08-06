@@ -1,0 +1,45 @@
+{
+  "title_text": "SHARK SWARM",
+  "credits_text": "DARYL HANNAN, JOHN SCHNEIDER, ARMAND MURRAY AND ABRAHAM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FEAR TRAVELS IN PACKS...",
+  "mood": [
+    "terror",
+    "suspense",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "shark",
+      "conf": 1.0
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.3,
+  "animal": 1.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic depictions of violence and blood due to shark attack scenes.",
+  "description": "A dramatic poster shows a massive shark attacking a person in the ocean, with blood and other sharks visible in the background."
+}

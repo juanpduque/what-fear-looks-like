@@ -1,0 +1,48 @@
+{
+  "title_text": "EL CAMPO SANGRIENTO",
+  "credits_text": "La historia de un crimen",
+  "languages": [
+    "es"
+  ],
+  "other_text": "CINELEBU 2020, Festival de San Sebastián 2020, Festival de Venecia 2020",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "scissors",
+      "conf": 0.8
+    },
+    {
+      "name": "saw",
+      "conf": 0.8
+    },
+    {
+      "name": "axe",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster suggests intense violence and graphic content through imagery and text.",
+  "description": "A red background features white tools like a knife, scissors, saw, and axe with bold yellow and white title text."
+}

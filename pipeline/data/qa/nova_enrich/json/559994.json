@@ -1,0 +1,45 @@
+{
+  "title_text": "WATCH IF YOU DARE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "psychological",
+    "suspense",
+    "supernatural",
+    "terrifying"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "eye",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features intense, horror-themed imagery that may be unsettling to some viewers.",
+  "description": "A dark, eerie poster showing a monstrous face with a single large eye and the title 'WATCH IF YOU DARE' prominently displayed."
+}

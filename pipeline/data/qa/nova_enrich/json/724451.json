@@ -1,0 +1,40 @@
+{
+  "title_text": "HALLOWEEN AWAKENING",
+  "credits_text": "\"The Legacy of Michael Myers\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FUZZ ON THE LENS PRODUCTIONS PRESENTS\nOFFICIAL SELECTION VANCOUVER INTERNATIONAL FILM FESTIVAL 2012\n10.31.12\nFUZZONTHELENS.COM",
+  "mood": [
+    "dread",
+    "gothic",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and gore through visual elements.",
+  "description": "A poster features a dark silhouette holding a knife against a cityscape, with the title 'Halloween Awakening' and festival selection details."
+}

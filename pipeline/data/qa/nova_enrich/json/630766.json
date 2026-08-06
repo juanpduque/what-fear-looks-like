@@ -1,0 +1,49 @@
+{
+  "title_text": "A NIGHT OF HORROR",
+  "credits_text": "NIGHTMARE RADIO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ON AIR",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "haunting",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.65
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and ghostly figures, but no explicit violence or gore.",
+  "description": "A poster features a man in a striped shirt behind a microphone, surrounded by eerie, ghostly figures in a red-lit environment."
+}

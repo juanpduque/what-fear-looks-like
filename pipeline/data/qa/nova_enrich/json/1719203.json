@@ -1,0 +1,42 @@
+{
+  "title_text": "PONT RAVAUD",
+  "credits_text": "UN FILM REALISÉ PAR LA TIPIACK TEAM",
+  "languages": [
+    "fr"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "abandoned",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "abandoned",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood-like drips and a dark, abandoned setting.",
+  "description": "A poster shows the title \"PONT RAVAUD\" in red, dripping letters on a decayed wall in an abandoned setting."
+}

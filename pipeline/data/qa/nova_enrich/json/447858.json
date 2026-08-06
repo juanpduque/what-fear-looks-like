@@ -1,0 +1,45 @@
+{
+  "title_text": "",
+  "credits_text": "BASED ON THE ART OF CREG \"CRAOLA\" SIMKINS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CAUTION: contains graphic violence and disturbing imagery. STARRING SHANNON SMITH AS PRINCESS ELISABETH, JESSICA JONES AS JANE LOVETT, AND A JAY LENO AS THE MONSTER. DIRECTED BY JIM SIMPSON. PRODUCED BY JIM SIMPSON AND LISA M. WOLF. EXECUTIVE PRODUCED BY JIM SIMPSON AND HAROLD P. LEVIN.",
+  "mood": [
+    "dread",
+    "surreal",
+    "gothic",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and disturbing imagery.",
+  "description": "A stylized poster features a monstrous, gaping maw with sharp teeth and claws, showcasing surreal and disturbing artwork inspired by Greg \"Craola\" Simkins."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "VANITY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FABRIZIO SPURIO'S",
+  "mood": [
+    "gothic",
+    "dread",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and a monstrous figure.",
+  "description": "A horror poster features a masked figure looming over a fallen victim, with bold red dripping text reading 'VANITY' and the creator's name above."
+}

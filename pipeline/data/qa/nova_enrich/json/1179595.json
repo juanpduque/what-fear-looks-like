@@ -1,0 +1,46 @@
+{
+  "title_text": "THE SMELL OF BLOOD",
+  "credits_text": "WRITER AND DIRECTOR ALI REZA SHAH HOSSEINI\n\nIraj Abedini\nAraz Naderi\nBarana Lotfi\nEbrahim Najj\nPourya Asghari\nMaryam Parvandi\nShakhoor Kheyri\nMehdad Ghaffari\nAvin Mohammadi\nHooman Khodaei\nOmid Reza Akbari\nMarzieh Soofvand\nAmir Ali Gholipour\nMaryam Feyzollahzadeh\nAli Reza Shah Hosseini",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YEKAN TASVIR TEHRAN PRESENTS\nPRODUCER: YEKAN TASVIR TEHRAN | EXECUTIVE PRODUCER: MOHAMMAD REZA YEKANI | CO-PRODUCER: OMID REZA AKBARI | INVESTOR: BARANA ACTING SCHOOL | DIRECTOR OF PHOTOGRAPHY: AMIRHOSSEIN HAMIDZADEH\nDIRECTOR'S 1ST ASSISTANT: MAHSA HATAMI | EDIT: ALIREZA SHAH HOSSEINI | SOUND: ERFAN REZAEI | SOUND MIX: MAJID KHORASANI | PRODUCTION MANAGER: HOOMAN KHODAEI | MAKEUP: RADIN BANIHASHEMI\nCOSTUME DESIGNER: AMIR ALI GHOLIPOUR | MUSIC: JAHANBAKSH YAZDANI | SCRIPT SUPERVISION: MAHSA DOUSTARI | STILL PHOTO: ABBAS TAHAEI | PRODUCTION ASSISTANT: JALAL SHERAFATMAND | POSTER DESIGNER: FARID BARARI\n75 MIN | 2023 | IRAN",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.75,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intended for mature audiences.",
+  "description": "A dark forest scene shows a person holding a bloody axe, with bodies lying on the ground, suggesting a horror thriller."
+}

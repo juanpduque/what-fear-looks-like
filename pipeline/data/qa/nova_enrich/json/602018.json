@@ -1,0 +1,44 @@
+{
+  "title_text": "ХАЙ ТРАЙТЕР",
+  "credits_text": "ГЕОРГИЙ ВИШИН СЕРГЕЙ ШАКУТОВ АЛЕКСАНДР ПЕСКОВ",
+  "languages": [
+    "ru"
+  ],
+  "other_text": "ИЗРАИЛЬ",
+  "mood": [
+    "surreal",
+    "psychological",
+    "disturbing",
+    "controversial"
+  ],
+  "fear_labels": [
+    {
+      "name": "puppet",
+      "conf": 0.9
+    },
+    {
+      "name": "control",
+      "conf": 0.85
+    },
+    {
+      "name": "alien",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains disturbing imagery of a puppet-like figure and themes of control, potentially unsettling.",
+  "description": "A poster featuring a puppet-like figure controlled by strings, with a dark, surreal atmosphere and Russian text."
+}

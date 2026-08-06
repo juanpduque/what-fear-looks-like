@@ -1,0 +1,33 @@
+{
+  "title_text": "THE AMATEUR MONSTER MOVIE",
+  "credits_text": "A FILM BY KYLE RICHARDS\nCHRIS OUCHIE\nKYLE RICHARDS\nSAMANTHA GOETZ\nSTEVE GOLLA\nSTEPHEN KIMBLE\nCHARLES RAMSEY\nKING'S TOWER PRODUCTIONS PRESENTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "camp",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.3
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster features a group of people with a man holding a rifle, set against a bold red background with title and credits prominently displayed."
+}

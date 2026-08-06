@@ -1,0 +1,45 @@
+{
+  "title_text": "ザイトージャンプルース・ステートージャンプルース 13本 21",
+  "credits_text": "\\u7b54\\u8a18 \\u6728\\u5f53 \\文",
+  "other_text": "当時をするようにした。あの対象にも",
+  "moderation_notes": "Contains occult themes and haunting imagery.",
+  "description": "A dark poster features a ghostly silhouette and intense text, suggesting a psychological horror theme.",
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "languages": [
+    "ja"
+  ],
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "haunting",
+    "surreal"
+  ],
+  "sensitive": [
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    }
+  ]
+}

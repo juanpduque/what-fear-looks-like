@@ -1,0 +1,38 @@
+{
+  "title_text": "FACES OF SCHLOCK",
+  "credits_text": "STARRING RUBY LAROCCA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BOOBS and BLOOD EDITION\nWARNING! DANGEROUSLY DEPRAVED",
+  "mood": [
+    "violent",
+    "camp",
+    "erotic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, partial nudity, and sexual themes.",
+  "description": "A poster features a woman holding an axe, with bold red and black text and a warning label."
+}

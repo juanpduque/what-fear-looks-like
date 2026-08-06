@@ -1,0 +1,42 @@
+{
+  "title_text": "볼새사바스님의 자주",
+  "credits_text": "최도 지번 보르는 기에",
+  "languages": [
+    "ko"
+  ],
+  "other_text": "여기..누구 있어?",
+  "mood": [
+    "thriller",
+    "suspense",
+    "psychological",
+    "mystery",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild blood and disturbing imagery.",
+  "description": "A Korean thriller poster featuring intense facial expressions of multiple characters, with bold Korean text and a dark, suspenseful atmosphere."
+}

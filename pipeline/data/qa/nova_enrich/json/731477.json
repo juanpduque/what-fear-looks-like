@@ -1,0 +1,50 @@
+{
+  "title_text": "THE BEAST BENEATH",
+  "credits_text": "A 2000 YEAR OLD BEAST AWAKENED TO KILL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "fantasy",
+    "action",
+    "thriller",
+    "sci-fi"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "danger",
+      "conf": 0.85
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.75
+    },
+    {
+      "name": "text",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "Contains mild sexual suggestion and violent themes.",
+  "description": "A woman is trapped by a giant tentacle-like creature in a desert landscape, with bold title text and a dramatic tagline."
+}

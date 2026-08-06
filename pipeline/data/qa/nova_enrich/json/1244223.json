@@ -1,0 +1,41 @@
+{
+  "title_text": "BAD BEN 14 FRANKENSTEIN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Gamazon 11",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "gothic",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.5,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and horror themes.",
+  "description": "A poster shows a hand dripping blood from a box labeled 'Gamazon 11' with the title 'BAD BEN 14 FRANKENSTEIN' above."
+}

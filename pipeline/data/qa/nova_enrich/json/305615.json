@@ -1,0 +1,39 @@
+{
+  "title_text": "INTERIOR",
+  "credits_text": "DON'T KNOW THE WAY OUT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ENTER AT YOUR OWN RISK",
+  "mood": [
+    "surreal",
+    "psychological",
+    "disturbing",
+    "intense",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "surreal",
+      "conf": 0.8
+    },
+    {
+      "name": "psychological",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, intense poster featuring a central face surrounded by glowing concentric circles against a red background, with bold title text at the top."
+}

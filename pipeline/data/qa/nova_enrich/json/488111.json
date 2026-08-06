@@ -1,0 +1,47 @@
+{
+  "title_text": "JILL",
+  "credits_text": "© LÚCIDO PÉREZ © ROSARIO ROSAS © GONZALO GRANADO © DANIEL RAMIREZ © JAVIER CARRIÓ © JAVIER ALONSO © MARCELO MUSA © JOSÉ MARÍA MASCAREÑO © DAVID GONZÁLEZ © DAVID GONZÁLEZ © MARC MARTÍNEZ",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "DEL HEFLID",
+  "mood": [
+    "horror",
+    "erotic",
+    "gothic",
+    "camp",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.8,
+  "sensitive": [
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains erotic and occult themes with implied violence.",
+  "description": "Movie poster features two women in revealing outfits, one holding a mask, with a dramatic red background and intense expressions."
+}

@@ -1,0 +1,49 @@
+{
+  "title_text": "CURSE OF THE WITCHING TREE",
+  "credits_text": "A FILM BY JAMES CROW",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EVIL NEVER DIES",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "dread",
+    "haunting",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "tree",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.7,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and eerie imagery.",
+  "description": "A poster shows a bare tree with crows, two children holding hands, and a menacing face with red eyes against a yellow background."
+}

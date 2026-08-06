@@ -1,0 +1,46 @@
+{
+  "title_text": "கண்ன்னுலி கேல்வேதுக்கு",
+  "credits_text": "V.ரூட்ரிக்ரித்ரு",
+  "languages": [
+    "ta"
+  ],
+  "other_text": "அலிக்ஸ் குறுடிகள் குருதிகள்",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "occult",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.5,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult imagery and implied violence.",
+  "description": "A man sits on a throne surrounded by skeletal figures, with a menacing face above him and Tamil text prominently displayed."
+}

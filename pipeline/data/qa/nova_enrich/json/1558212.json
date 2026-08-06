@@ -1,0 +1,36 @@
+{
+  "title_text": "OS MIOLOS DA BOA",
+  "credits_text": "um filme de PETTER BAIESTORF\nestrelado por JOSÉ PIGNAT e HELENO COLPANI\ntrilha sonora LUCAS ROSSETTI som E.B. TONIOLLI maquiagens BARBI CAUZZI\nEdição e Direção de Fotografia PETTER BAIESTORF Produção BARBI CAUZZI e PETTER BAIESTORF\nProdução Executiva, Roteiro e Direção PETTER BAIESTORF",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PETTER BAIESTORF PRODUÇÕES apresenta",
+  "mood": [
+    "violent",
+    "gory",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; may be disturbing to some viewers.",
+  "description": "A poster shows a graphic scene of a person being struck with a large, bloodied object, featuring bold title text and production credits."
+}

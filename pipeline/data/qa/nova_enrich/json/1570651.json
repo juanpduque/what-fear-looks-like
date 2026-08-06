@@ -1,0 +1,40 @@
+{
+  "title_text": "HOUSE PARTY",
+  "credits_text": "Lucas Cunningham's",
+  "languages": [
+    "en"
+  ],
+  "other_text": "You're invited. Coming Summer of 2026",
+  "mood": [
+    "thriller",
+    "horror",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "knife",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatter and a knife, indicating potential violence and gore.",
+  "description": "A poster advertises a movie titled 'House Party' with a silhouette of a hand holding a knife against a splattered red background, indicating a thriller or horror theme."
+}

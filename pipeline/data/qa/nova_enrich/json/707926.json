@@ -1,0 +1,47 @@
+{
+  "title_text": "LA TERRIBLE BESTIA SANGRIENTA",
+  "credits_text": "Vulture Entertainment presenta:",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "other_text": "!SI TAL!",
+  "mood": [
+    "horror",
+    "violent",
+    "gory",
+    "intense",
+    "threatening"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster features a monstrous gorilla with red eyes, bared teeth, and blood on its hands and chest, with bold Spanish text."
+}

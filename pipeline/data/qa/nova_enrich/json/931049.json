@@ -1,0 +1,38 @@
+{
+  "title_text": "BEWARE THE WOODS",
+  "credits_text": "Carlos Leos Ronna Burrows Emily Lauziere Written, Produced & Directed by Tanner McCarr",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BE SCARED BE AFRAID",
+  "mood": [
+    "dread",
+    "gothic",
+    "forest",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring an elderly woman with white hair against a red background, with forest imagery and bold red text warning of the woods."
+}

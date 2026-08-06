@@ -1,0 +1,41 @@
+{
+  "title_text": "VILLAY",
+  "credits_text": "Yönetmen - Senarist - Görüntü Yönetmeni Soner Acar",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Kurgusu - Montaj - Ses - Renklendirme : Adnan Kerıman Öymençülçar : Aydın Sıdal - Taner Karamıhmanoğlu - Gölçin Özlen Can Av - Engin Alkan - Köbra Tutac - Erdem Çatakhas - Yılmaz Emre Yıldız - Hüseyin Salas - Salıhan Acar - Soner Acar Yapımısı : Oktay Arabaçı",
+  "mood": [
+    "dread",
+    "gothic",
+    "forest",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatters and a dark, eerie forest setting.",
+  "description": "A poster shows a dark, foggy forest with large red splatters resembling blood and the title \"VILLAY\" prominently displayed."
+}

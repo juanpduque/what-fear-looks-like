@@ -1,0 +1,46 @@
+{
+  "title_text": "NOBODY GETS OUT ALIVE",
+  "credits_text": "JEN DANCE CHRIS READY BRIAN GALLAGHER CLINT HOWARD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "gritty",
+    "claustrophobic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "chains",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.1,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery including skulls and chains, suggesting potential violence and gore.",
+  "description": "A man stands with his back to the viewer in a dimly lit room filled with skulls and chains, suggesting a horror theme."
+}

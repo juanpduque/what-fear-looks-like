@@ -1,0 +1,41 @@
+{
+  "title_text": "ANTIDOTE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "surreal",
+    "eerie",
+    "disturbing",
+    "medical",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "medical",
+      "conf": 0.9
+    },
+    {
+      "name": "liquid",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "nudity"
+  ],
+  "moderation_notes": "The poster features partial nudity within a surreal medical context.",
+  "description": "A medical professional stands behind a large syringe containing a liquid with a nude figure submerged inside, suggesting a surreal and disturbing theme."
+}

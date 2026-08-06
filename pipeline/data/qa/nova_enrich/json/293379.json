@@ -1,0 +1,43 @@
+{
+  "title_text": "AFTERMATH",
+  "credits_text": "NUR DIE STÄRKSTEN ÜBERLEBEN",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "other_text": "DIE TOTEN ERHEBEN SICH, DE WELT GENT ZUGRUNDE. IHRE GESCHICHTE BEGINNT.",
+  "mood": [
+    "dread",
+    "apocalyptic",
+    "survival",
+    "gritty",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A poster shows a decaying, bloodied hand emerging from the ground with the title 'AFTERMATH' and a tagline about survival in a post-apocalyptic world."
+}

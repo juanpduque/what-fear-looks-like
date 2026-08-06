@@ -1,0 +1,45 @@
+{
+  "title_text": "強言の雑地",
+  "credits_text": "男男女女学員",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "放軽！結軽の心着スポット Sacred place Boso peninsula of legend",
+  "mood": [
+    "dread",
+    "mystery",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "tunnel",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.5,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and implied supernatural horror themes.",
+  "description": "Movie poster features a man aiming a gun, hands reaching from a wall, a tunnel, and Japanese text. The mood is eerie and suspenseful."
+}

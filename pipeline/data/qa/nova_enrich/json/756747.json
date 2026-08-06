@@ -1,0 +1,47 @@
+{
+  "title_text": "CREEPSHOW",
+  "credits_text": "ANIMATED SPECIAL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Strange, Eerie, Terrifying! CREEPSHOW The Original TV Special That Never Dies!",
+  "mood": [
+    "gothic",
+    "horror",
+    "spooky",
+    "creepy",
+    "macabre"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.7,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a zombie-like figure holding a pumpkin and a book titled 'Creepshow,' with bats and a dark, eerie background."
+}

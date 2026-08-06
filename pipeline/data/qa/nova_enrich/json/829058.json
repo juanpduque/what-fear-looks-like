@@ -1,0 +1,40 @@
+{
+  "title_text": "JABANG MAYIT",
+  "credits_text": "SALVITA DE CORTE CORNELIO SUNNY KARINA SALIM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ISMAIL BASSETH",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and gore.",
+  "description": "A horror poster featuring a gruesome, bloodied figure with long hair, set against a dark, eerie background."
+}

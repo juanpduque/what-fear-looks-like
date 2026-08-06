@@ -1,0 +1,50 @@
+{
+  "title_text": "MASS HYSTERIA",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SOME THINGS NEVER CHANGE.\nENTERING SALEM",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "tense",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "occult",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult imagery and implied violence.",
+  "description": "A poster shows a group of people in a dark, fiery setting with occult symbols, suggesting a supernatural horror theme."
+}

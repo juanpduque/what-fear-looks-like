@@ -1,0 +1,45 @@
+{
+  "title_text": "THE ZOMBINATOR",
+  "credits_text": "A SERGIO MYERS MOVIE\nIT STARTED AS A DOCUMENTARY...",
+  "languages": [
+    "en"
+  ],
+  "other_text": "JOSEPH AVIEL\nPATRICK KLUPFINK",
+  "mood": [
+    "action",
+    "horror",
+    "camp",
+    "sci-fi"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.5
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and horror elements.",
+  "description": "A man in a leather jacket holds a weapon against a city backdrop with zombies in the foreground."
+}

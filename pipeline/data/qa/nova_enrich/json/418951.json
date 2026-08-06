@@ -1,0 +1,46 @@
+{
+  "title_text": "BERADAK DALAM KUBUR (BURIAL IN THE GRAVE)",
+  "credits_text": "SUZANNA MIEKE WIDAYA DICKY SUPRAPTO AMI PRIJONG SOFIA AMAND AZWAR NOOR DEDDY MUDIR DORIS RANDRIO SUHEIMI KAIS ROBBY HART F.X. SUTONO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "70B",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "mystery",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.6,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and violent themes.",
+  "description": "A horror movie poster featuring intense facial expressions, blood, and dramatic lighting, with a group of people in a tense scene."
+}

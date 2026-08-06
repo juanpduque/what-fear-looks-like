@@ -1,0 +1,42 @@
+{
+  "title_text": "Bad Ghost",
+  "credits_text": "A Nightmare Journey Into Madness",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Dead Men Don't Chase Young Girls!",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "surreal",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and blood.",
+  "description": "A horror poster featuring a distressed, green-skinned man with an open mouth, blood dripping from the title text."
+}

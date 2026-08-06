@@ -1,0 +1,42 @@
+{
+  "title_text": "LA NOCHE DEL CHIHUAHUA",
+  "credits_text": "Benjamin Rojas y Guillermo Grillo",
+  "languages": [
+    "es"
+  ],
+  "other_text": "Una velada llena de hombres lobo, vampiros, exorcistas y exnovias. Con Salvo Talvo, José Ivanochko, Ines Palomeque y la participación especial de Graciela Stefani. www.lanochedelchihuahua.com producida por financiamiento colectivo (crowdfunding)",
+  "mood": [
+    "gothic",
+    "surreal",
+    "camp",
+    "erotic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "occult",
+    "sexual"
+  ],
+  "moderation_notes": "Contains suggestive themes and occult references.",
+  "description": "Poster features five individuals against a dark background with a full moon, promoting a horror film about werewolves, vampires, and exorcists."
+}

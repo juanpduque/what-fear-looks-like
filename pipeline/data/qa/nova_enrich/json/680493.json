@@ -1,0 +1,43 @@
+{
+  "title_text": "RETURN TO SILENT HILL",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Welcome to Silent Hill",
+  "mood": [
+    "dread",
+    "gothic",
+    "haunting",
+    "mysterious",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "haunting",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A lone figure stands on a misty road approaching a sign welcoming visitors to Silent Hill, evoking a haunting and eerie atmosphere."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "MANEATER",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "terrifying",
+    "dangerous",
+    "wild",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    },
+    {
+      "name": "animal",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.1,
+  "animal": 0.95,
+  "blood_gore": 0.8,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, depicting a dangerous animal attack.",
+  "description": "A fierce tiger roars aggressively with blood splattered on the ground, suggesting a violent encounter in a jungle setting."
+}

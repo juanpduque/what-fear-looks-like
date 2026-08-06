@@ -1,0 +1,47 @@
+{
+  "title_text": "LIVING HELL",
+  "credits_text": "A JAPANESE CHAINSAW MASSACRE",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "SPECIAL EDITION, ORIGINAL UNCUT VERSION, SUBVERSIVE, SAIKO",
+  "mood": [
+    "dread",
+    "horror",
+    "violent",
+    "gothic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.3,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 1.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intended for mature audiences.",
+  "description": "A dramatic poster features a distressed person amidst gory elements, with bold red text and Japanese characters, suggesting intense horror themes."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "THE HOUSE THAT CRIED BLOOD",
+  "credits_text": "And tonight it's been expecting you...",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Fifty years ago this house was the scene of unspeakable horrors.",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "mystery",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "ghost",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and gore references in the tagline and visual elements.",
+  "description": "A dark, eerie house stands under a starry night sky with red stains resembling blood on its facade, suggesting a horror theme."
+}

@@ -1,0 +1,47 @@
+{
+  "title_text": "THE BEAST OF RIVERSIDE HOLLOW",
+  "credits_text": "WITH JOHN WILLIAMS \"STEVE WOOD\" GARY ANTHONY RODGERS SARAH ENGLAND JAMES WALSH RICHIE ROSS NOBLE JOHNNY VEGAS BILLY COOK... ALEX DRAPER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BOLT YOUR DOORS AND PRAY",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "rural",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a menacing wolf's face against a night sky with a full moon, rural houses, and a warning tagline."
+}

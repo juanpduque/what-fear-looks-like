@@ -1,0 +1,40 @@
+{
+  "title_text": "山鬼事件 ALL MOUNTAIN INCIDENT",
+  "credits_text": "写定/王子飞 饰",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "改编自白灵生山血月份的真实事件",
+  "mood": [
+    "dread",
+    "gothic",
+    "mystery",
+    "haunting",
+    "forest"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "text",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A young man stands alone in a dark, foggy forest with twisted trees, reflecting in a still pool of water."
+}

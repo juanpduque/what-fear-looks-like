@@ -1,0 +1,46 @@
+{
+  "title_text": "Savage Weekend",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dark",
+    "intense",
+    "horror",
+    "thriller",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 1.0
+    },
+    {
+      "name": "scythe",
+      "conf": 1.0
+    },
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains intense horror imagery with a skeletal figure and weapon, may be disturbing to some audiences.",
+  "description": "A skeletal figure holding a scythe appears against a dark background with bold red text reading 'Savage Weekend.'"
+}

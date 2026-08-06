@@ -1,0 +1,48 @@
+{
+  "title_text": "ZOMBI RITUAL †",
+  "credits_text": "EIN FILM VON ALEXANDER FRANZ UND THOMAS HERR",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "other_text": "POSTMORTEM PRODUCTIONS SPECIAL APPEARANCE",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "gritty",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "skull",
+      "conf": 0.75
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic gore and occult themes.",
+  "description": "A poster featuring a decayed, zombie-like face with visible wounds and blood, set against a dark background with bold red and blue text."
+}

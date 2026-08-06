@@ -1,0 +1,48 @@
+{
+  "title_text": "DIGEST",
+  "credits_text": "THERE'S NO WRONG WAY TO EAT...",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Jason Impey Film",
+  "mood": [
+    "horrific",
+    "disturbing",
+    "gothic",
+    "surreal",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "nudity",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    },
+    {
+      "name": "gothic",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.6,
+  "sexual_content": 0.7,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic nudity, blood, and disturbing imagery.",
+  "description": "A poster shows a nude, bloodied figure lying on a surface with the title 'DIGEST' and a disturbing tagline."
+}

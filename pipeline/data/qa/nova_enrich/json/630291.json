@@ -1,0 +1,42 @@
+{
+  "title_text": "VHS NASTY",
+  "credits_text": "VEGA PICTURES AND SCHLOCK FILMS PRESENT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "1991",
+  "mood": [
+    "horror",
+    "camp",
+    "surreal",
+    "grotesque"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "nudity",
+    "sexual",
+    "violence"
+  ],
+  "moderation_notes": "Contains partial nudity and suggestive imagery.",
+  "description": "A vintage VHS cover featuring multiple grotesque faces and a central nude figure, with bold text reading 'VHS NASTY' and production credits."
+}

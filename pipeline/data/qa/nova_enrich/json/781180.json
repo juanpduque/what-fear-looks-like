@@ -1,0 +1,46 @@
+{
+  "title_text": "ZOMBIE WARRIORS",
+  "credits_text": "STERLING PRODUCTIONS PRESENTS\nWRITER/PRODUCER/DIRECTOR STERLING JOHNSTON\nCAST: JAMES WARRIORS, HAROLD SUZ, GARY MALCOLM, KRISTIN LORA, TARA HAYES, DEVIN CAMPBELL, MARIA HASSARD, SAM LAMBERT, LISA EDWARDS, DAVE GAMBLE, CAROLINE BOSSIER, NATHANIEL BOSSIER, JOHNNY LEE, JASON LAMBERT, CATHY STERLING, JANE MARVIN, JON MARVIN\nWritten by MICHAEL BERNARDINI, STERLING JOHNSTON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "www.sterlingproductions.ca",
+  "mood": [
+    "horror",
+    "action",
+    "survival",
+    "post-apocalyptic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "water",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore, suitable for mature audiences.",
+  "description": "Poster features a zombie's face and four people in a boat on a lake, promoting the horror film 'Zombie Warriors'."
+}

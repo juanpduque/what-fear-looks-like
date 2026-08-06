@@ -1,0 +1,40 @@
+{
+  "title_text": "ATOMIK CIRCUS",
+  "credits_text": "vanessa paradis jason flemyng jocelyn boerchte jean-pierre marielle",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "other_text": "un film réalisé par les frères poiraud LE 21 JUILLET 2000",
+  "mood": [
+    "post-apocalyptic",
+    "sci-fi",
+    "action",
+    "surreal",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.4
+    },
+    {
+      "name": "fire",
+      "conf": 0.3
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a woman in boots with mechanical claws against a fiery background, featuring cast names and release date."
+}

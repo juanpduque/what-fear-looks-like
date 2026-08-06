@@ -1,0 +1,40 @@
+{
+  "title_text": "ON THE ROAD",
+  "credits_text": "FILM BY ANDREI EGOROV STARRING NIKITA PROTKO, ANDREI EGOROV AND ILYA ALEKSEYEVICh OPERATORS JEvgeni VILKEl ANDREI EGOROV AND ALJAKSANDR SHYB EKA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CHOOSE THE WAY",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of a monstrous creature and implied violence.",
+  "description": "A dark poster features a monstrous face with intense eyes and a car on a red-lit road, suggesting a horror theme."
+}

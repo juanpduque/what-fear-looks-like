@@ -1,0 +1,46 @@
+{
+  "title_text": "MORS OMNIA SOLVIT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CORPUS CRISTI SALVA ME",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "cross",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and occult imagery.",
+  "description": "A poster depicts a crucified, bloodied figure surrounded by three individuals, one holding a large cleaver, with skulls and occult symbols in the background."
+}

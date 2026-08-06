@@ -1,0 +1,40 @@
+{
+  "title_text": "KILLERVISION",
+  "credits_text": "DAMIEN E. LIPP SUSIE KAZDA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HE WANTS THEM DEAD. HE WANTS ALL OF THEM DEAD.",
+  "mood": [
+    "dread",
+    "thriller",
+    "psychological horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatter and intense violent themes.",
+  "description": "A dark poster features a blurred figure with a splattered red background, accompanied by bold title text and dramatic taglines."
+}

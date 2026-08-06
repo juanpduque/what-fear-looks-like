@@ -1,0 +1,46 @@
+{
+  "title_text": "KAMPUNG ZOMBIE",
+  "credits_text": "EL JAJALUDIN RUMI, KAXEL MATTHEW THOMAS, LUTKHA SURY, KIA POETRI, ALI MENSAN. A FILM BY SILLY CHRISTIAN. DI BIDSKOP 19 MARET",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "zombie",
+    "terrifying",
+    "gothic",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore, suitable for mature audiences.",
+  "description": "A poster featuring a zombie-like figure in a conical hat with a decayed face, surrounded by other zombie figures in a dark, eerie setting."
+}

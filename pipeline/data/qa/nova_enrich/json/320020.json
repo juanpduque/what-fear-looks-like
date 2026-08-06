@@ -1,0 +1,40 @@
+{
+  "title_text": "PANICO",
+  "credits_text": "ANA MARTIN Y JOAQUIN CORDERO",
+  "languages": [
+    "es"
+  ],
+  "other_text": "ESOX",
+  "mood": [
+    "horror",
+    "thriller",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "cross",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a knife; no explicit gore or nudity.",
+  "description": "A dramatic poster shows a man holding a knife to a woman's throat with a dark, eerie background and a cross visible."
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "DEADLY DAYLIGHT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NOT EVERYONE SURVIVES",
+  "mood": [
+    "dread",
+    "survival",
+    "apocalyptic",
+    "post-apocalyptic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    },
+    {
+      "name": "weapon",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.5,
+  "monster": 0.6,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A group of survivors navigate a dark, post-apocalyptic forest with a menacing figure looming over them."
+}

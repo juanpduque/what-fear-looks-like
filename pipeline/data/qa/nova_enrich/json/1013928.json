@@ -1,0 +1,42 @@
+{
+  "title_text": "OTAIN",
+  "credits_text": "VERBY PALWINTA MAXIME BOUTIER NIKITA MIRZANI ROY MARTEN ERLIN SARINTAN SEYO RUMAMBIE NADHA HIOLA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DWISETYO PRODUCTION PRESENTS COMING SOON",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A woman stands holding a hammer in front of a door splattered with blood, with a fallen figure nearby, suggesting a horror theme."
+}

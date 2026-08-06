@@ -1,0 +1,41 @@
+{
+  "title_text": "PUPPET MASTER 4",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "fantasy",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains horror elements including monstrous puppets and implied violence.",
+  "description": "Poster features a group of animated puppets and a central menacing figure against a dark background, suggesting a horror theme."
+}

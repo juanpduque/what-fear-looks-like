@@ -1,0 +1,43 @@
+{
+  "title_text": "The Great American SNUFF FILM",
+  "credits_text": "A SEAN TRETT film MIKE MARSH RYAN HUTMAN MELINDA LORENZ HOLLIE TAVERNIER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "The shocking new film based on the crimes of WILLIAM ALLEN GRONE",
+  "mood": [
+    "dread",
+    "shock",
+    "disturbing",
+    "violent",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence and partial nudity.",
+  "description": "A poster shows a distressed woman with blood on her face and tape over her mouth, with a hand gripping her hair. The title and credits are displayed prominently."
+}

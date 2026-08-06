@@ -1,0 +1,43 @@
+{
+  "title_text": "DARK LULLABIES",
+  "credits_text": "AN ANTHOLOGY FILM PRESENTED BY MICHAEL COLUOMBE. WRITTEN BY BRANTLEY BROWN & DAVE BEATTY, KENNY KURTZMAN & MICHAEL COLUOMBE. PRODUCED BY MICHAEL COLUOMBE, STEVEN NEEL & LUPA RIGBY. DIRECTED BY MICHAEL COLUOMBE.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE HUDSON STUDIO",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "haunting",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, shadowy poster features a large, stylized head with multiple faces and figures superimposed, evoking a gothic and surreal atmosphere."
+}

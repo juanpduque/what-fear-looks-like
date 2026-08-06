@@ -1,0 +1,14 @@
+{
+  "bucket": "sagemaker-studio-a5572760",
+  "prefix": "wflike-custom-labels/medium",
+  "region": "us-east-1",
+  "n_gold": 421,
+  "n_train": 315,
+  "n_test": 106,
+  "uploaded": 421,
+  "miss_jpg": 0,
+  "logreg_macro_f1": 0.5134641986693894,
+  "train_manifest": "s3://sagemaker-studio-a5572760/wflike-custom-labels/medium/train.manifest",
+  "test_manifest": "s3://sagemaker-studio-a5572760/wflike-custom-labels/medium/test.manifest",
+  "prepared_at": "2026-08-04T01:32:47.000Z"
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "MIMESIS NIGHT OF THE LIVING DEAD",
+  "credits_text": "Why watch a horror movie when you can live one?",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "surreal",
+    "psychological",
+    "gothic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains intense horror imagery and implied violence.",
+  "description": "A dramatic poster featuring a large skull with embedded scenes of people in distress, promoting a psychological horror film."
+}

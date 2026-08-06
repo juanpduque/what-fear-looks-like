@@ -1,0 +1,40 @@
+{
+  "title_text": "DETRÁS DE LA PUERTA",
+  "credits_text": "UN CORTOMETRAJE DE ANDRÉS BORGHI DIRECTOR DE ALEXIA",
+  "languages": [
+    "es"
+  ],
+  "other_text": "CLAUDIO SALAS FLORENCIA ANSOLO PABLO FUERTO GERMAN BAUDINO \"DETRÁS DE LA PUERTA\" MATÍAS HERRERA ANTE MAE BEMDOR CARLOS BORGHI FERNANDO RIGERO \"LA GENTE\" NUBIOLA MATÍAS SALINAS MENTAY Y F. ANDRÉS BORGHI MATÍAS SALINAS ANTONIO J. JUAN LUCA BORGHI ANDRÉS BORGHI",
+  "mood": [
+    "dread",
+    "suspense",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "door",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and suggests violent themes.",
+  "description": "A poster features a man framed within a circular design resembling a door, with red splatters resembling blood around him."
+}

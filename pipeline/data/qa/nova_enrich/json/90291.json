@@ -1,0 +1,46 @@
+{
+  "title_text": "STALKER",
+  "credits_text": "\"ERIE AND GRIPPING\" ADAM KELLY - ANITECOOLNEWS.COM \"DELICIOUSLY NASTY\" DAVID HAYLES - FILM FABLES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SCREEN MEDIA DARKSIDE THE DARKSIDE",
+  "mood": [
+    "gothic",
+    "dread",
+    "psychological",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.2,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A woman in a white dress with blood on her hands holds a knife, standing in front of a haunted house with crows."
+}

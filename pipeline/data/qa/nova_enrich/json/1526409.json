@@ -1,0 +1,42 @@
+{
+  "title_text": "SAFE INSIDE 2",
+  "credits_text": "A JASON PAUL COLLUM SURPRISE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WHY SCREAM FOR HELP WHEN NO ONE'S ALIVE?",
+  "mood": [
+    "horror",
+    "thriller",
+    "suspense",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and violent imagery.",
+  "description": "A man in a white tank top with a graphic design stands with outstretched arms, surrounded by a dark background and bold red text."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "BLOOD FREAK",
+  "credits_text": "A DRACULA... ON DRUGS !!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SEE... A MAN BECOME MUTANT BEFORE YOUR VERY EYES! REAL... THE WICKED QUEEN OF TANKED BLOOD! TASTE... THE SPICED JUICE OF A MONSTER!! WITNESS A HORROR MOST FOUL!!",
+  "mood": [
+    "horror",
+    "camp",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and themes of mutation and violence.",
+  "description": "A poster shows a man carrying a woman with a monstrous face, set against a dark background with bold red text."
+}

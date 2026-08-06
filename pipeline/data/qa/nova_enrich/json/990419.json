@@ -1,0 +1,36 @@
+{
+  "title_text": "ELICIT",
+  "credits_text": "TAI ANDERSON TARNESHA SMALL JOSHUA L EADY TAYARIS M WILSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Lock The Door. PRETEND You Are Safe.",
+  "mood": [
+    "thriller",
+    "suspense",
+    "intense",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the knife and intense expressions.",
+  "description": "A poster features two intense individuals, one holding a knife, with a suburban house in the background and the title 'ELICIT.'"
+}

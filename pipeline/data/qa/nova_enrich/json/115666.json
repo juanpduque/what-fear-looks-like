@@ -1,0 +1,50 @@
+{
+  "title_text": "nightmare on the 13th floor",
+  "credits_text": "Scream bloody murders While you still can.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "thriller",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "axe",
+      "conf": 0.85
+    },
+    {
+      "name": "monster",
+      "conf": 0.75
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "text",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.85,
+  "monster": 0.75,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and horror themes.",
+  "description": "A poster features a shadowy figure holding an axe in front of a red portal, with two bat-like creatures above and bold title text."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "PLANKENSTEIN",
+  "credits_text": "A KILLER SURF MOVIE! STARRING: DIQ DIAMOND, SHANE CHISUM, AMY JENNINGS, ROBERT MACLEERAN, FROGGIE PRODUCTIONS, JENNY PETERS, WES CORZINA, OWEN EDDY, ROGGERO BATTERA, JOE YEDEE, DIQ DIAMOND, WRITTEN AND DIRECTED BY NANCY DEKLOZANE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BENEVOLENT RENEGADE PRODUCTIONS IN ASSOCIATION WITH CINETHESIA FACTORY PRESENTS",
+  "mood": [
+    "camp",
+    "horror",
+    "surfing",
+    "comedy",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "Movie poster features a screaming woman with blood on her chest next to a surfboard with a monster face, set against a stormy beach scene."
+}

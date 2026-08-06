@@ -1,0 +1,34 @@
+{
+  "title_text": "TEXT",
+  "credits_text": "HANNA HALL JANE COMPTON KAYLYN BORGEN MIKE KAISER JOEL GEIST",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DARE TO RETRIEVE IT? YOUR MESSAGE COULD BE FATAL",
+  "mood": [
+    "thriller",
+    "suspense",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Movie poster features four actors above a distressed person with text warning about retrieving messages."
+}

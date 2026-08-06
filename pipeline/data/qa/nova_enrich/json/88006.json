@@ -1,0 +1,46 @@
+{
+  "title_text": "GRAVEYARD ALIVE",
+  "credits_text": "Directed by ELZA REPART Starring ARINE DAY-JOLES VIVI GEHRMANN SANDRA SLAM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"A ten of Foni!\" \"Entertaining and amusing... you won't mind it taking a bite out of your time!\" Film Threat! \"Cleverly made... terrific looking pic.\" Variety \"SHE'S A MAN EATER!\" \"A Zombie Nurse In Love\"",
+  "mood": [
+    "camp",
+    "horror",
+    "comedy",
+    "erotic",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore, mild sexual innuendo.",
+  "description": "Poster features a nurse holding a meat grinder with blood, titled 'Graveyard Alive: A Zombie Nurse In Love.'"
+}

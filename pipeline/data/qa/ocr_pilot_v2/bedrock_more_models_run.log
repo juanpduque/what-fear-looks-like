@@ -1,0 +1,518 @@
+sample n=100 from /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/ocr_pilot_v2/sample_ids.txt
+models: ['pixtral', 'nova-pro', 'llama4-scout']
+loaded 1100 prior rows from /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/ocr_pilot_v2/results.csv
+
+=== model=pixtral bedrock=us.mistral.pixtral-large-2502-v1:0 region=us-east-1 n=100 ===
+  [1/100] id=484509 status=ok chars=118 overlap=1.0 3.352s
+  [2/100] id=1261561 status=ok chars=193 overlap=1.0 1.329s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [3/100] id=362776 status=ok chars=54 overlap=0.6667 28.205s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [4/100] id=26921 status=ok chars=31 overlap=1.0 30.425s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [5/100] id=212973 status=ok chars=238 overlap=1.0 30.066s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [6/100] id=48800 status=ok chars=151 overlap=1.0 28.983s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [7/100] id=35073 status=ok chars=31 overlap=1.0 29.288s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [8/100] id=836924 status=ok chars=35 overlap=1.0 30.889s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [9/100] id=3104 status=ok chars=26 overlap=1.0 31.982s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 8.0s (attempt 3/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [10/100] id=64524 status=ok chars=9 overlap=1.0 32.052s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [11/100] id=77399 status=ok chars=13 overlap=0.0 27.962s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [12/100] id=30833 status=ok chars=17 overlap=1.0 27.634s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [13/100] id=399172 status=ok chars=18 overlap=1.0 31.474s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [14/100] id=1015482 status=ok chars=41 overlap=0.0 28.273s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [15/100] id=10283 status=ok chars=42 overlap=0.875 30.237s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [16/100] id=88410 status=ok chars=11 overlap=1.0 33.619s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 8.0s (attempt 3/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [17/100] id=86687 status=ok chars=58 overlap=1.0 32.834s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [18/100] id=336254 status=ok chars=8 overlap=1.0 25.184s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [19/100] id=36992 status=ok chars=7 overlap=1.0 29.667s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [20/100] id=43274 status=ok chars=15 overlap=1.0 29.615s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [21/100] id=15056 status=ok chars=28 overlap=1.0 29.884s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [22/100] id=23532 status=ok chars=25 overlap=1.0 33.484s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [23/100] id=31012 status=ok chars=8 overlap=1.0 24.676s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 8.0s (attempt 3/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [24/100] id=45551 status=ok chars=45 overlap=1.0 30.392s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [25/100] id=156252 status=ok chars=6 overlap=1.0 31.889s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [26/100] id=743757 status=ok chars=84 overlap=1.0 29.835s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [27/100] id=11908 status=ok chars=7 overlap=1.0 28.999s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [28/100] id=28265 status=ok chars=17 overlap=0.3333 35.031s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [29/100] id=28419 status=ok chars=355 overlap=1.0 25.853s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [30/100] id=53553 status=ok chars=8 overlap=1.0 32.087s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [31/100] id=77050 status=ok chars=76 overlap=1.0 26.17s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [32/100] id=278267 status=ok chars=553 overlap=1.0 34.945s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [33/100] id=165078 status=ok chars=209 overlap=1.0 26.627s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [34/100] id=225048 status=ok chars=41 overlap=1.0 29.157s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 8.0s (attempt 3/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [35/100] id=233194 status=ok chars=249 overlap=1.0 33.229s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [36/100] id=286452 status=ok chars=13 overlap=1.0 28.481s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [37/100] id=300156 status=ok chars=78 overlap=1.0 27.314s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 8.0s (attempt 3/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [38/100] id=302019 status=ok chars=12 overlap=1.0 34.15s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [39/100] id=387034 status=ok chars=387 overlap=1.0 29.954s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [40/100] id=491649 status=ok chars=5 overlap=1.0 26.588s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [41/100] id=505063 status=ok chars=26 overlap=1.0 31.545s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [42/100] id=547055 status=ok chars=9 overlap=1.0 28.646s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 8.0s (attempt 3/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [43/100] id=636515 status=ok chars=32 overlap=1.0 33.028s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [44/100] id=653537 status=ok chars=8 overlap=1.0 27.101s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [45/100] id=772603 status=ok chars=186 overlap=1.0 34.524s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [46/100] id=974046 status=ok chars=128 overlap=1.0 26.082s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [47/100] id=976209 status=ok chars=100 overlap=0.0 29.062s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [48/100] id=77677 status=ok chars=7 overlap=1.0 29.0s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [49/100] id=94910 status=ok chars=10 overlap=1.0 32.605s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [50/100] id=207475 status=ok chars=53 overlap=1.0 29.421s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [51/100] id=259675 status=ok chars=196 overlap=1.0 29.548s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 8.0s (attempt 3/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [52/100] id=343674 status=ok chars=13 overlap=1.0 33.401s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [53/100] id=356486 status=ok chars=14 overlap=1.0 25.316s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [54/100] id=384756 status=ok chars=51 overlap=1.0 31.052s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [55/100] id=472015 status=ok chars=104 overlap=1.0 29.47s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [56/100] id=487439 status=ok chars=466 overlap=1.0 33.867s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [57/100] id=682809 status=ok chars=599 overlap=1.0 37.504s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [58/100] id=748251 status=ok chars=15 overlap=1.0 20.465s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [59/100] id=861413 status=ok chars=281 overlap=1.0 29.939s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [60/100] id=940187 status=ok chars=55 overlap=0.0 27.483s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [61/100] id=972244 status=ok chars=330 overlap=1.0 30.865s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [62/100] id=748589 status=ok chars=418 overlap=1.0 32.781s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [63/100] id=796250 status=ok chars=337 overlap=1.0 28.837s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [64/100] id=802851 status=ok chars=43 overlap=1.0 27.375s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [65/100] id=854417 status=ok chars=29 overlap=1.0 30.267s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [66/100] id=863406 status=ok chars=13 overlap=1.0 30.733s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 8.0s (attempt 3/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [67/100] id=918096 status=ok chars=38 overlap=1.0 33.247s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [68/100] id=931049 status=ok chars=130 overlap=1.0 25.921s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 8.0s (attempt 3/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [69/100] id=1022479 status=ok chars=35 overlap=1.0 35.683s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [70/100] id=1083119 status=ok chars=19 overlap=1.0 25.471s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [71/100] id=1125186 status=ok chars=68 overlap=1.0 35.009s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [72/100] id=1193824 status=ok chars=11 overlap=1.0 25.278s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [73/100] id=1289969 status=ok chars=288 overlap=1.0 29.068s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [74/100] id=1298819 status=ok chars=20 overlap=1.0 32.498s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 8.0s (attempt 3/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [75/100] id=1307154 status=ok chars=16 overlap=1.0 33.893s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [76/100] id=1375109 status=ok chars=344 overlap=1.0 25.101s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [77/100] id=1397562 status=ok chars=6 overlap=1.0 28.179s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 8.0s (attempt 3/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [78/100] id=1441287 status=ok chars=52 overlap=1.0 33.727s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [79/100] id=1443966 status=ok chars=136 overlap=1.0 30.146s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [80/100] id=1475231 status=ok chars=89 overlap=1.0 28.686s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [81/100] id=1718150 status=ok chars=1040 overlap=1.0 29.926s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [82/100] id=652004 status=ok chars=23 overlap=1.0 27.429s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [83/100] id=931940 status=ok chars=7 overlap=1.0 30.117s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [84/100] id=949486 status=ok chars=307 overlap=1.0 34.149s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [85/100] id=988142 status=ok chars=25 overlap=1.0 25.219s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 8.0s (attempt 3/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [86/100] id=1085262 status=ok chars=40 overlap=1.0 35.505s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [87/100] id=1148920 status=ok chars=569 overlap=1.0 28.777s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [88/100] id=1229586 status=ok chars=7 overlap=1.0 26.799s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [89/100] id=1273536 status=ok chars=29 overlap=1.0 28.245s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [90/100] id=1294319 status=ok chars=13 overlap=1.0 32.216s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [91/100] id=1346645 status=ok chars=4 overlap=1.0 27.925s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [92/100] id=1351896 status=ok chars=226 overlap=1.0 30.204s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 8.0s (attempt 3/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [93/100] id=1363776 status=ok chars=9 overlap=1.0 32.332s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 8.0s (attempt 3/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [94/100] id=1379480 status=ok chars=17 overlap=1.0 31.876s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [95/100] id=1405670 status=ok chars=22 overlap=0.0 24.385s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [96/100] id=1463113 status=ok chars=4 overlap=1.0 30.482s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 8.0s (attempt 3/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [97/100] id=1483020 status=ok chars=12 overlap=1.0 36.924s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [98/100] id=1483743 status=ok chars=559 overlap=1.0 26.473s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 8.0s (attempt 3/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [99/100] id=1541944 status=ok chars=13 overlap=1.0 30.827s
+    throttle/backoff 2.0s (attempt 1/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+    throttle/backoff 4.0s (attempt 2/8): An error occurred (ThrottlingException) when calling the Converse operation (reached max retries: 4): Too many requests, please wait before trying again.
+  [100/100] id=1578643 status=ok chars=34 overlap=1.0 26.334s
+
+=== model=nova-pro bedrock=us.amazon.nova-pro-v1:0 region=us-east-1 n=100 ===
+  [1/100] id=484509 status=ok chars=117 overlap=1.0 1.134s
+  [2/100] id=1261561 status=ok chars=246 overlap=1.0 1.191s
+  [3/100] id=362776 status=ok chars=55 overlap=1.0 1.066s
+  [4/100] id=26921 status=ok chars=31 overlap=1.0 1.264s
+  [5/100] id=212973 status=ok chars=232 overlap=1.0 1.357s
+  [6/100] id=48800 status=ok chars=150 overlap=1.0 1.09s
+  [7/100] id=35073 status=ok chars=31 overlap=1.0 0.972s
+  [8/100] id=836924 status=ok chars=35 overlap=0.5 1.132s
+  [9/100] id=3104 status=ok chars=26 overlap=1.0 0.937s
+  [10/100] id=64524 status=ok chars=9 overlap=1.0 1.002s
+  [11/100] id=77399 status=ok chars=13 overlap=0.0 0.892s
+  [12/100] id=30833 status=ok chars=17 overlap=1.0 1.032s
+  [13/100] id=399172 status=ok chars=20 overlap=1.0 0.881s
+  [14/100] id=1015482 status=ok chars=42 overlap=0.0 1.631s
+  [15/100] id=10283 status=ok chars=42 overlap=0.875 0.944s
+  [16/100] id=88410 status=ok chars=11 overlap=1.0 0.883s
+  [17/100] id=86687 status=ok chars=58 overlap=1.0 1.107s
+  [18/100] id=336254 status=ok chars=8 overlap=1.0 1.091s
+  [19/100] id=36992 status=ok chars=7 overlap=1.0 1.169s
+  [20/100] id=43274 status=ok chars=15 overlap=1.0 0.929s
+  [21/100] id=15056 status=ok chars=28 overlap=1.0 1.429s
+  [22/100] id=23532 status=ok chars=25 overlap=1.0 1.096s
+  [23/100] id=31012 status=ok chars=8 overlap=1.0 0.921s
+  [24/100] id=45551 status=ok chars=49 overlap=1.0 1.238s
+  [25/100] id=156252 status=ok chars=6 overlap=1.0 0.94s
+  [26/100] id=743757 status=ok chars=86 overlap=0.8 1.205s
+  [27/100] id=11908 status=ok chars=7 overlap=1.0 0.747s
+  [28/100] id=28265 status=ok chars=17 overlap=0.3333 1.001s
+  [29/100] id=28419 status=ok chars=349 overlap=1.0 2.247s
+  [30/100] id=53553 status=ok chars=8 overlap=1.0 1.036s
+  [31/100] id=77050 status=ok chars=73 overlap=1.0 0.903s
+  [32/100] id=278267 status=ok chars=408 overlap=1.0 1.649s
+  [33/100] id=165078 status=ok chars=214 overlap=1.0 1.604s
+  [34/100] id=225048 status=ok chars=42 overlap=1.0 1.011s
+  [35/100] id=233194 status=ok chars=223 overlap=1.0 2.182s
+  [36/100] id=286452 status=ok chars=13 overlap=0.5 1.078s
+  [37/100] id=300156 status=ok chars=75 overlap=1.0 1.179s
+  [38/100] id=302019 status=ok chars=12 overlap=0.5 0.954s
+  [39/100] id=387034 status=ok chars=370 overlap=1.0 2.233s
+  [40/100] id=491649 status=ok chars=5 overlap=1.0 0.88s
+  [41/100] id=505063 status=ok chars=26 overlap=1.0 0.887s
+  [42/100] id=547055 status=ok chars=9 overlap=1.0 0.883s
+  [43/100] id=636515 status=ok chars=32 overlap=1.0 1.186s
+  [44/100] id=653537 status=ok chars=7 overlap=0.0 0.869s
+  [45/100] id=772603 status=ok chars=190 overlap=1.0 1.297s
+  [46/100] id=974046 status=ok chars=127 overlap=1.0 1.506s
+  [47/100] id=976209 status=ok chars=97 overlap=1.0 1.234s
+  [48/100] id=77677 status=ok chars=7 overlap=1.0 0.866s
+  [49/100] id=94910 status=ok chars=10 overlap=1.0 1.285s
+  [50/100] id=207475 status=ok chars=53 overlap=0.6667 0.986s
+  [51/100] id=259675 status=ok chars=186 overlap=1.0 1.078s
+  [52/100] id=343674 status=ok chars=13 overlap=1.0 0.777s
+  [53/100] id=356486 status=ok chars=14 overlap=1.0 0.801s
+  [54/100] id=384756 status=ok chars=54 overlap=0.0 0.992s
+  [55/100] id=472015 status=ok chars=101 overlap=1.0 1.052s
+  [56/100] id=487439 status=ok chars=648 overlap=1.0 2.876s
+  [57/100] id=682809 status=ok chars=507 overlap=1.0 2.009s
+  [58/100] id=748251 status=ok chars=15 overlap=1.0 0.734s
+  [59/100] id=861413 status=ok chars=109 overlap=0.0 0.978s
+  [60/100] id=940187 status=ok chars=51 overlap=0.0 0.897s
+  [61/100] id=972244 status=ok chars=459 overlap=1.0 1.999s
+  [62/100] id=748589 status=ok chars=322 overlap=1.0 1.93s
+  [63/100] id=796250 status=ok chars=310 overlap=1.0 1.771s
+  [64/100] id=802851 status=ok chars=49 overlap=1.0 1.462s
+  [65/100] id=854417 status=ok chars=29 overlap=1.0 0.967s
+  [66/100] id=863406 status=ok chars=13 overlap=1.0 1.716s
+  [67/100] id=918096 status=ok chars=38 overlap=0.8571 1.18s
+  [68/100] id=931049 status=ok chars=127 overlap=0.6667 1.637s
+  [69/100] id=1022479 status=ok chars=34 overlap=0.3333 1.882s
+  [70/100] id=1083119 status=ok chars=19 overlap=1.0 1.697s
+  [71/100] id=1125186 status=ok chars=67 overlap=1.0 1.74s
+  [72/100] id=1193824 status=ok chars=11 overlap=1.0 0.822s
+  [73/100] id=1289969 status=ok chars=271 overlap=1.0 1.839s
+  [74/100] id=1298819 status=ok chars=20 overlap=1.0 1.01s
+  [75/100] id=1307154 status=ok chars=16 overlap=1.0 0.766s
+  [76/100] id=1375109 status=ok chars=326 overlap=1.0 1.759s
+  [77/100] id=1397562 status=ok chars=6 overlap=1.0 1.075s
+  [78/100] id=1441287 status=ok chars=52 overlap=1.0 1.945s
+  [79/100] id=1443966 status=ok chars=135 overlap=1.0 1.449s
+  [80/100] id=1475231 status=ok chars=139 overlap=1.0 1.153s
+  [81/100] id=1718150 status=ok chars=373 overlap=1.0 2.001s
+  [82/100] id=652004 status=ok chars=23 overlap=1.0 0.993s
+  [83/100] id=931940 status=ok chars=17 overlap=1.0 0.965s
+  [84/100] id=949486 status=ok chars=260 overlap=1.0 2.089s
+  [85/100] id=988142 status=ok chars=25 overlap=1.0 1.055s
+  [86/100] id=1085262 status=ok chars=39 overlap=1.0 0.892s
+  [87/100] id=1148920 status=ok chars=139 overlap=0.5 1.494s
+  [88/100] id=1229586 status=ok chars=7 overlap=1.0 0.853s
+  [89/100] id=1273536 status=ok chars=29 overlap=1.0 0.931s
+  [90/100] id=1294319 status=ok chars=13 overlap=1.0 0.927s
+  [91/100] id=1346645 status=ok chars=4 overlap=1.0 0.814s
+  [92/100] id=1351896 status=ok chars=193 overlap=1.0 1.212s
+  [93/100] id=1363776 status=ok chars=9 overlap=1.0 0.778s
+  [94/100] id=1379480 status=ok chars=17 overlap=1.0 0.749s
+  [95/100] id=1405670 status=ok chars=30 overlap=0.0 0.826s
+  [96/100] id=1463113 status=ok chars=4 overlap=1.0 0.852s
+  [97/100] id=1483020 status=ok chars=8874 overlap=1.0 18.44s
+  [98/100] id=1483743 status=ok chars=127 overlap=1.0 1.048s
+  [99/100] id=1541944 status=ok chars=13 overlap=1.0 0.883s
+  [100/100] id=1578643 status=ok chars=34 overlap=0.0 0.925s
+
+=== model=llama4-scout bedrock=us.meta.llama4-scout-17b-instruct-v1:0 region=us-east-1 n=100 ===
+  [1/100] id=484509 status=ok chars=117 overlap=1.0 0.886s
+  [2/100] id=1261561 status=ok chars=233 overlap=1.0 0.906s
+  [3/100] id=362776 status=ok chars=55 overlap=1.0 0.666s
+  [4/100] id=26921 status=ok chars=31 overlap=1.0 0.601s
+  [5/100] id=212973 status=ok chars=228 overlap=1.0 1.258s
+  [6/100] id=48800 status=ok chars=150 overlap=1.0 0.947s
+  [7/100] id=35073 status=ok chars=29 overlap=1.0 0.78s
+  [8/100] id=836924 status=ok chars=37 overlap=1.0 0.75s
+  [9/100] id=3104 status=ok chars=26 overlap=1.0 0.456s
+  [10/100] id=64524 status=ok chars=9 overlap=1.0 0.579s
+  [11/100] id=77399 status=ok chars=13 overlap=0.0 0.599s
+  [12/100] id=30833 status=ok chars=17 overlap=1.0 0.633s
+  [13/100] id=399172 status=ok chars=18 overlap=1.0 0.657s
+  [14/100] id=1015482 status=ok chars=42 overlap=0.0 1.127s
+  [15/100] id=10283 status=ok chars=37 overlap=0.75 0.727s
+  [16/100] id=88410 status=ok chars=11 overlap=1.0 0.57s
+  [17/100] id=86687 status=ok chars=58 overlap=1.0 0.699s
+  [18/100] id=336254 status=ok chars=8 overlap=1.0 0.601s
+  [19/100] id=36992 status=ok chars=7 overlap=1.0 0.536s
+  [20/100] id=43274 status=ok chars=15 overlap=1.0 0.518s
+  [21/100] id=15056 status=ok chars=28 overlap=1.0 0.634s
+  [22/100] id=23532 status=ok chars=25 overlap=1.0 0.914s
+  [23/100] id=31012 status=ok chars=8 overlap=1.0 0.682s
+  [24/100] id=45551 status=ok chars=36 overlap=1.0 0.658s
+  [25/100] id=156252 status=ok chars=6 overlap=1.0 0.532s
+  [26/100] id=743757 status=ok chars=85 overlap=1.0 0.894s
+  [27/100] id=11908 status=ok chars=7 overlap=1.0 0.582s
+  [28/100] id=28265 status=ok chars=17 overlap=0.3333 0.578s
+  [29/100] id=28419 status=ok chars=352 overlap=1.0 1.535s
+  [30/100] id=53553 status=ok chars=8 overlap=1.0 0.659s
+  [31/100] id=77050 status=ok chars=73 overlap=1.0 0.687s
+  [32/100] id=278267 status=ok chars=624 overlap=1.0 2.394s
+  [33/100] id=165078 status=ok chars=205 overlap=1.0 1.281s
+  [34/100] id=225048 status=ok chars=41 overlap=1.0 0.62s
+  [35/100] id=233194 status=ok chars=28 overlap=0.0 0.59s
+  [36/100] id=286452 status=ok chars=13 overlap=1.0 0.641s
+  [37/100] id=300156 status=ok chars=75 overlap=1.0 0.619s
+  [38/100] id=302019 status=ok chars=12 overlap=1.0 0.449s
+  [39/100] id=387034 status=ok chars=392 overlap=1.0 1.989s
+  [40/100] id=491649 status=ok chars=5 overlap=1.0 0.656s
+  [41/100] id=505063 status=ok chars=26 overlap=1.0 0.598s
+  [42/100] id=547055 status=ok chars=9 overlap=1.0 0.565s
+  [43/100] id=636515 status=ok chars=32 overlap=1.0 0.668s
+  [44/100] id=653537 status=ok chars=7 overlap=0.0 0.482s
+  [45/100] id=772603 status=ok chars=182 overlap=1.0 1.216s
+  [46/100] id=974046 status=ok chars=127 overlap=1.0 0.58s
+  [47/100] id=976209 status=ok chars=97 overlap=1.0 0.643s
+  [48/100] id=77677 status=ok chars=7 overlap=1.0 0.545s
+  [49/100] id=94910 status=ok chars=10 overlap=1.0 0.54s
+  [50/100] id=207475 status=ok chars=52 overlap=1.0 0.635s
+  [51/100] id=259675 status=ok chars=189 overlap=1.0 1.106s
+  [52/100] id=343674 status=ok chars=13 overlap=1.0 0.618s
+  [53/100] id=356486 status=ok chars=14 overlap=1.0 0.575s
+  [54/100] id=384756 status=ok chars=51 overlap=1.0 0.612s
+  [55/100] id=472015 status=ok chars=101 overlap=1.0 0.924s
+  [56/100] id=487439 status=ok chars=391 overlap=1.0 1.819s
+  [57/100] id=682809 status=ok chars=392 overlap=1.0 1.892s
+  [58/100] id=748251 status=ok chars=15 overlap=1.0 0.492s
+  [59/100] id=861413 status=ok chars=296 overlap=1.0 1.216s
+  [60/100] id=940187 status=ok chars=51 overlap=0.0 0.748s
+  [61/100] id=972244 status=ok chars=243 overlap=1.0 1.125s
+  [62/100] id=748589 status=ok chars=377 overlap=1.0 1.928s
+  [63/100] id=796250 status=ok chars=319 overlap=1.0 1.287s
+  [64/100] id=802851 status=ok chars=44 overlap=1.0 0.751s
+  [65/100] id=854417 status=ok chars=31 overlap=1.0 0.742s
+  [66/100] id=863406 status=ok chars=13 overlap=1.0 0.603s
+  [67/100] id=918096 status=ok chars=38 overlap=1.0 0.699s
+  [68/100] id=931049 status=ok chars=124 overlap=1.0 0.982s
+  [69/100] id=1022479 status=ok chars=33 overlap=1.0 0.572s
+  [70/100] id=1083119 status=ok chars=19 overlap=1.0 0.636s
+  [71/100] id=1125186 status=ok chars=67 overlap=1.0 0.789s
+  [72/100] id=1193824 status=ok chars=11 overlap=1.0 0.573s
+  [73/100] id=1289969 status=ok chars=220 overlap=1.0 1.111s
+  [74/100] id=1298819 status=ok chars=20 overlap=1.0 0.706s
+  [75/100] id=1307154 status=ok chars=16 overlap=1.0 0.535s
+  [76/100] id=1375109 status=ok chars=45 overlap=1.0 1.067s
+  [77/100] id=1397562 status=ok chars=6 overlap=1.0 0.469s
+  [78/100] id=1441287 status=ok chars=52 overlap=1.0 0.788s
+  [79/100] id=1443966 status=ok chars=111 overlap=1.0 0.8s
+  [80/100] id=1475231 status=ok chars=123 overlap=1.0 0.81s
+  [81/100] id=1718150 status=ok chars=781 overlap=1.0 2.225s
+  [82/100] id=652004 status=ok chars=23 overlap=1.0 0.594s
+  [83/100] id=931940 status=ok chars=18 overlap=1.0 0.621s
+  [84/100] id=949486 status=ok chars=313 overlap=1.0 1.388s
+  [85/100] id=988142 status=ok chars=25 overlap=1.0 0.581s
+  [86/100] id=1085262 status=ok chars=39 overlap=1.0 0.5s
+  [87/100] id=1148920 status=ok chars=157 overlap=1.0 1.022s
+  [88/100] id=1229586 status=ok chars=7 overlap=1.0 0.492s
+  [89/100] id=1273536 status=ok chars=29 overlap=1.0 0.571s
+  [90/100] id=1294319 status=ok chars=13 overlap=1.0 0.395s
+  [91/100] id=1346645 status=ok chars=4 overlap=1.0 0.575s
+  [92/100] id=1351896 status=ok chars=201 overlap=1.0 1.17s
+  [93/100] id=1363776 status=ok chars=9 overlap=1.0 0.436s
+  [94/100] id=1379480 status=ok chars=17 overlap=1.0 0.494s
+  [95/100] id=1405670 status=ok chars=22 overlap=0.0 0.466s
+  [96/100] id=1463113 status=ok chars=4 overlap=1.0 0.899s
+  [97/100] id=1483020 status=ok chars=12 overlap=1.0 0.588s
+  [98/100] id=1483743 status=ok chars=94 overlap=1.0 0.763s
+  [99/100] id=1541944 status=ok chars=13 overlap=1.0 0.522s
+  [100/100] id=1578643 status=ok chars=34 overlap=1.0 0.641s
+  pixtral: 100/100 ok
+  nova-pro: 100/100 ok
+  llama4-scout: 100/100 ok
+
+LISTO → /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/ocr_pilot_v2/results.csv (1400 rows)

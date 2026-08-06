@@ -1,0 +1,45 @@
+{
+  "title_text": "Castle Ghosts",
+  "credits_text": "INTRODUCED BY ROBERT HARDY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THREE DISC BOX SET DISCOVERY CHANNEL OF ENGLAND + SCOTLAND + WALES + IRELAND DELTA DVD VIDEO",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "haunting",
+    "historical",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "castle",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains themes of ghosts and the supernatural, but no explicit violence or gore.",
+  "description": "A DVD cover featuring a dark, illuminated castle with ghostly figures and a moonlit night sky, introducing a series on haunted locations across the UK."
+}

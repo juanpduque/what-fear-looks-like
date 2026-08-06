@@ -1,0 +1,43 @@
+{
+  "title_text": "GODZILLA",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "apocalyptic",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 1.0
+    },
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "explosion",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and destructive imagery.",
+  "description": "A large, reptilian monster stands amidst a city with a massive explosion behind it, while smaller figures flee in panic."
+}

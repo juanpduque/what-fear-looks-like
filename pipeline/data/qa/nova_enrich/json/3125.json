@@ -1,0 +1,44 @@
+{
+  "title_text": "DRACULA VS. FRANKENSTEIN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "dramatic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 1.0
+    },
+    {
+      "name": "creature",
+      "conf": 1.0
+    },
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense and violent imagery typical of horror genre.",
+  "description": "A dramatic poster shows Dracula and Frankenstein in a fierce battle amidst flames and lightning, highlighting their monstrous features and intense confrontation."
+}

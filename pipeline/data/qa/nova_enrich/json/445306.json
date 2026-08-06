@@ -1,0 +1,39 @@
+{
+  "title_text": "MONSTERS ANONYMOUS",
+  "credits_text": "HALLOWEEN 2016\nMULTIMATH HATS PRODUCTIONS PRESENTS TONY MARTIN DIRECTS \"MONSTERS ANONYMOUS\" STARRING BEN SCHLEIFEL JOE RODGE ERIC STEVES VALERIE QUEENS HUNTY HUNT MARTIN OLAFF DYLAN CROOKETT OLIVIA MOMMINS GABBRIELLE MCAFFEE MARIS EVANS FILIPOVIC ALONG WITH TOMMY MARTIN JOE RODGE MARTIN DYLAN CROOKETT TOMMY MARTIN GABBRIELLE MCAFFEE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SHARING IS SCARY",
+  "mood": [
+    "horror",
+    "anxiety",
+    "mystery",
+    "psychological",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster features six masked or disguised individuals with obscured faces, promoting a horror film titled Monsters Anonymous from Halloween 2016."
+}

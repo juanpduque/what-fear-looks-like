@@ -1,0 +1,42 @@
+{
+  "title_text": "FINDING GRASSMAN",
+  "credits_text": "Cliff Cash, Bryan Kruse, Tori Ahr, Inner Demon Studios",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WHEN HUNTING LOCAL LEGENDS, YOU MAY REGRET WHAT YOU FIND!",
+  "mood": [
+    "mystery",
+    "horror",
+    "forest",
+    "legend",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatter and violent imagery.",
+  "description": "A poster shows a tree trunk with carved text and a blood splatter, set in a forest, featuring the title and credits."
+}

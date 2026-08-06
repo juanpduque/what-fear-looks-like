@@ -1,0 +1,39 @@
+{
+  "title_text": "",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "#ChadGetsTheAxe",
+  "mood": [
+    "thriller",
+    "dark humor",
+    "satirical"
+  ],
+  "fear_labels": [
+    {
+      "name": "axe",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence with an axe and a ghostly figure.",
+  "description": "A poster shows a group of young people with a hooded figure holding an axe, accompanied by the text '#ChadGetsTheAxe' on a red background."
+}

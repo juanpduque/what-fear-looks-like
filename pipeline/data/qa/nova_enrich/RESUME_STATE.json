@@ -1,0 +1,9 @@
+{
+  "updated_at": "2026-07-31T16:57:45",
+  "ok_unique": 774,
+  "csv": "/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/nova_enrich/nova_enrich.csv",
+  "json_dir": "/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/nova_enrich/json",
+  "backup": "/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/nova_enrich/nova_enrich.csv.bak_dedupe_20260731_165745",
+  "resume_cmd": "export AWS_PROFILE=sandbox AWS_DEFAULT_REGION=us-west-2\ncd pipeline\npython3 -u nova_poster_enrich.py --workers 3 --min-interval 0.55 --save-every 1 --flush-seconds 30",
+  "note": "Todo es local. Al abrir otro sandbox, reusa el mismo CSV/JSON; el script salta status=ok."
+}

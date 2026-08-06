@@ -1,0 +1,50 @@
+{
+  "title_text": "THE BUTCHER III",
+  "credits_text": "EN FILM VON MALK UDE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Zombies im Blutrausch",
+  "mood": [
+    "horror",
+    "gory",
+    "violent",
+    "terrifying",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore, suitable for mature audiences only.",
+  "description": "A horror poster featuring a person holding a chainsaw with blood, alongside a screaming figure in the background."
+}

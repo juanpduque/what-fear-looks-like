@@ -1,0 +1,43 @@
+{
+  "title_text": "GUINEA PIG",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "結身の実験",
+  "mood": [
+    "horrific",
+    "gruesome",
+    "disturbing",
+    "extreme",
+    "shock"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.95,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains extreme graphic violence and disturbing imagery.",
+  "description": "A disturbing poster showing a person trapped with multiple hands gripping them, surrounded by graphic blood and gore."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "QUARTO LEVEL 1",
+  "credits_text": "DIREÇÃO PABLO LOUREIROS\nKAVKY BRITO VASMIN SANT'ANNA RODRIGO DORADO VITO GIUSEPPE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ANIMAL FILMS MISC. LEVANTE II \"\" PABLO LOUREIROS ANDRÉ DUS GLENDY \"\" VITOR ALCANTARA\nRODRIGO RANWREIRE PABLO LOUREIROS CHRISTIAN FELIPE NIGUEL FELDER ADRIANO PAULO MIGUEL HOLER TALDO LOUREIROS\nROBERTO DONATELLA CASO ALVES ALCANTARA ROBERTO DONATELLA CASO ALVES ALCANTARA",
+  "mood": [
+    "suspense",
+    "thriller",
+    "mystery",
+    "psychological",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man and a woman are shown in a dark, neon-lit setting, with the woman holding a flashlight and looking alarmed."
+}

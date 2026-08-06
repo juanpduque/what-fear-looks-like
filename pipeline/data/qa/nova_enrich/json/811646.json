@@ -1,0 +1,44 @@
+{
+  "title_text": "SALTWATER",
+  "credits_text": "THE BATTLE FOR RAMBEE ISLAND",
+  "languages": [
+    "en"
+  ],
+  "other_text": "INSPIRED BY ACTUAL EVENTS JAMES MEETS JUNGLE SOLDIERS",
+  "mood": [
+    "action",
+    "adventure",
+    "thriller",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.9,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and intense action scenes.",
+  "description": "A poster shows a large crocodile in a dense jungle with soldiers in the water below, titled 'Saltwater: The Battle for Rambee Island.'"
+}

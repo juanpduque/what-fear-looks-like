@@ -1,0 +1,48 @@
+{
+  "title_text": "MY STEPDAD'S A FREAKIN' VAMPIRE!",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SOMETIMES STEPDADS CAN BE A PAIN IN THE NECK.",
+  "mood": [
+    "horror",
+    "camp",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and horror themes.",
+  "description": "A man with vampire fangs stands in front of a haunted house, with a tagline about stepdads."
+}

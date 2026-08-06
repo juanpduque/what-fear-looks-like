@@ -1,0 +1,47 @@
+{
+  "title_text": "VAMPIRES FOREVER",
+  "credits_text": "A Fake West Documentary\nThe Real West Production Inc. and Jeter West Productions Inc. Presenting: VAMPIRES FOREVER, starring: MONSTER CULPA, FASHION, and the absurd appeal of the vampire. A bloody tale told with the actual stars of the vampire.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A Fake West Documentary",
+  "mood": [
+    "gothic",
+    "camp",
+    "erotic",
+    "surreal",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.5,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and suggestive themes.",
+  "description": "A vintage-style poster for \"VAMPIRES FOREVER\" features a dramatic woman with fangs against a cityscape backdrop, with bold red and black typography."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "SETAN BUDEG",
+  "credits_text": "DEWI PERSIK SAIPUL JAMIL UJE AULIA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FROM THE PRODUCERS OF THE PACOLIC PRIMAYE 3D TISEN",
+  "mood": [
+    "dread",
+    "gothic",
+    "eerie",
+    "psychological",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "knife",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, may be disturbing.",
+  "description": "A poster shows a woman with long hair facing away, blood on her back, and a knife on a table, suggesting horror themes."
+}

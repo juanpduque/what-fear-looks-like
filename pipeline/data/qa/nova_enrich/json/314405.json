@@ -1,0 +1,46 @@
+{
+  "title_text": "TALE OF TALES",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "fantasy",
+    "erotic",
+    "surreal",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.3
+    },
+    {
+      "name": "monster",
+      "conf": 0.4
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    },
+    {
+      "name": "castle",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.4,
+  "person": 1.0,
+  "animal": 0.2,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains partial nudity and suggestive imagery.",
+  "description": "A gothic fantasy poster featuring a central figure in a red gown surrounded by characters in a medieval setting with a castle in the background."
+}

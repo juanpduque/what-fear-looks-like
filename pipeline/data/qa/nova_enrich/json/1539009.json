@@ -1,0 +1,46 @@
+{
+  "title_text": "EPaKTUba THE LAKE",
+  "credits_text": "Director of Photography: Chetan Yumnam, Music: Alvina G, Writer: Jason M",
+  "languages": [
+    "en"
+  ],
+  "other_text": "You are not The",
+  "mood": [
+    "horror",
+    "thriller",
+    "supernatural",
+    "intense",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.5,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild violence and gore, suitable for mature audiences.",
+  "description": "A poster featuring intense characters and a stormy lake, suggesting a horror thriller with supernatural elements."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "TWICE THE THRILLS! THE CHILLS!!",
+  "credits_text": "GLOVED MURDERESS and OCCULT UNRATED\nJenni Caroline / Breana Mitchell / Lynn Brockman\nRichard Edwin Stirpling Jr.\nJenni Caroline / Mike Moshman / Joseph Cash\nDanielle Brookshire",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SHOCKING!\nAn American city terrorized by a crazed maniac!\nBANNED FROM THEATERS!\nFREE SCREENING AT THE BOURBON THEATRE 0 ST.\nWEDNESDAY, JULY 30TH 6-9PM AGES 18+\nNature Audiences Only",
+  "mood": [
+    "gothic",
+    "horror",
+    "camp",
+    "thriller",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "occult",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 0.6,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult imagery and implied violence.",
+  "description": "Vintage-style poster advertising two horror films, featuring dramatic imagery of a skull and flames, with bold typography and warnings about banned content."
+}

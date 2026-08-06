@@ -1,0 +1,41 @@
+{
+  "title_text": "魂美女子第2届",
+  "credits_text": "SCARE 2 DIE!",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "日本文不认识系系不完整的字布。年份不明的女子在黑色平面上打开左右的盖影。应用地时于4月13日日期。",
+  "mood": [
+    "horror",
+    "psychological",
+    "disturbing",
+    "gothic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features intense and disturbing imagery that may be unsettling to some viewers.",
+  "description": "A poster shows a young woman in a red coat with a shocked expression, surrounded by screaming faces. The title is in Japanese, and the design is dark and intense."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "THE LAST EXIT",
+  "credits_text": "DEREK MAKI CHRISTINA RONDANO N VIGEL TAYLOR ANDREW SHANLEY JENNIFER NILES NEW BLOOD PRODUCTIONS & BOOMMASTERS PICTURES PRESENT \"THE LAST EXIT\" STARRING DEREK MAKI CHRISTINA RONDANO N VIGEL TAYLOR ANDREW SHANLEY JENNIFER NILES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE ONLY THING WORSE THAN GETTING LOST... IS BEING FOUND",
+  "mood": [
+    "dread",
+    "surreal",
+    "psychological",
+    "gothic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and graphic elements.",
+  "description": "A poster features a woman facing a shadowy, monstrous figure with blood splatters. The title \"The Last Exit\" is prominently displayed."
+}

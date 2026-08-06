@@ -1,0 +1,47 @@
+{
+  "title_text": "AEGRI SOMNIA",
+  "credits_text": "A SICK MAN'S DREAMS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE WOUND WILL RELIEVE THE PRESSURE",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "psychological",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "self-harm"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and a disturbing silhouette, suggesting themes of self-harm and psychological distress.",
+  "description": "A dark, gothic poster features a shadowy figure with blood running down their back, set against a grim background with stark text."
+}

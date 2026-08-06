@@ -1,0 +1,45 @@
+{
+  "title_text": "THE NIGHT GOD SCREAMED",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "psychological",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features intense horror imagery and a monstrous creature, but does not depict explicit violence or gore.",
+  "description": "A vibrant yellow poster displays a collage of dramatic scenes including a screaming woman, a masked monster, and a man in distress, evoking a classic horror atmosphere."
+}

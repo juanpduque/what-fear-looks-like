@@ -1,0 +1,50 @@
+{
+  "title_text": "CAMP BLOOD",
+  "credits_text": "BRIDE OF BLOOD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CAMP",
+  "mood": [
+    "horror",
+    "thriller",
+    "forest",
+    "intense",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.5,
+  "violence": 0.7,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements and implied violence.",
+  "description": "A horror poster featuring a screaming woman and a masked figure with a chainsaw in a dark forest setting near a house."
+}

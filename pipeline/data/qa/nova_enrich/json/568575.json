@@ -1,0 +1,44 @@
+{
+  "title_text": "MONSTERS ON MAIN ST.",
+  "credits_text": "BRAD LEYON ROBERT Z'DAR MARTIN KLEEBA TODD BRIDGES MASON HEIDGER INTRODUCING HEIDGER NOT RATED",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MORE THAN THE GAS PRICES WILL KILL YOU ON MAIN STREET A BRAD LEOLYON FILM \"MONSTERS ON MAIN STREET\" BRAD LEOLYON ROBERT Z'DAR MARTIN KLEEBA GEOFFREY MASON HEIDGER EARLE CAMERON DANIEL A. BROWN JOSHUA COLEMAN JASON PATRICK KELLY JOSHUA MERRITT NICHOLAS MACKPECK DAVID R. WHITE LANCE LEBLANC & I COMING SOON",
+  "mood": [
+    "dread",
+    "suspense",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "street",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence and horror themes.",
+  "description": "A poster for the film 'Monsters on Main St.' shows a dark street scene with silhouetted figures and a tilted street sign."
+}

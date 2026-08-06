@@ -1,0 +1,47 @@
+{
+  "title_text": "LA SOMBRA DE NADIE",
+  "credits_text": "UN FILM DE PABLO MALO",
+  "languages": [
+    "es"
+  ],
+  "other_text": "HAY COSAS QUE LA MUERTE NO CAMBIA",
+  "mood": [
+    "gothic",
+    "dread",
+    "mysterious",
+    "haunting",
+    "somber"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "cross",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "haunting",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows two silhouetted figures in a dark, eerie forest with a cross and sparse trees, evoking a gothic and haunting atmosphere."
+}

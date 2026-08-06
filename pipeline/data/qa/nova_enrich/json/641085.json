@@ -1,0 +1,46 @@
+{
+  "title_text": "DRAKULA CINTA",
+  "credits_text": "NIKITA MIRZANI, FIVÉ KI KUSUMA, TORANO MARGENS, RONNY DOZER, DEWI SILVA, CARDI, IRAN GUNARDO, JAMES KIAN, RAHMAN RAHMAN, TARAKA LICHEL, ROSSY MARAKET",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AKSEL PUTRA KUSUMA",
+  "mood": [
+    "gothic",
+    "horror",
+    "romantic",
+    "dramatic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "forest",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.1,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror elements and occult themes.",
+  "description": "A poster featuring a man facing a monstrous, vampiric figure with sharp fangs, set against a dark, eerie background with a woman in the distance."
+}

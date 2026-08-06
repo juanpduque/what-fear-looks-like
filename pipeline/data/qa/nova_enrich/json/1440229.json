@@ -1,0 +1,39 @@
+{
+  "title_text": "THE PHANTOM TAPE",
+  "credits_text": "TRISTAN LEROUX SERIO RUSSSELL DUNCAN TWILLET",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PLAY ME",
+  "mood": [
+    "horror",
+    "thriller",
+    "psychological",
+    "suspense",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A VHS tape cover featuring a person holding a tape labeled 'PLAY ME' with a smoky background and three smaller images below."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "GAUTa NI DRAKULA",
+  "credits_text": "STARRING MATIMIMAN CRUZ, PABO ZAPATA, ANGGE MAURICIO CO-STARRING NICK D'CAMPO, NEISON ESPARZA AND JESS SANTOS NARLINA STORY SCREENPLAY: CARLOS TREY EMPYREO MUSIC: TONNY MARCELINO PABLO VERGAARA DIRECTION: LOUIS SAN JUAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FGO FILM PRODUCTIONS THE COMPANY THAT GAVE YOU MARILOU VER VINA MORENA VICKY SANDOVAL EDDIE GARCIA FIGHTFULLY FUNNY! THE MOST HAIR-RAISING HORROR FASCIC YOU'LL SCREAM WITH LAUGHTER! STARRING PANCHITO PUGAK I JERRY PONS",
+  "mood": [
+    "camp",
+    "gothic",
+    "humorous",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A vintage horror-comedy poster features a man in a Dracula costume holding a dagger, surrounded by frightened people, with bold title and cast details."
+}

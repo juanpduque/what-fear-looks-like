@@ -1,0 +1,46 @@
+{
+  "title_text": "DEAD/2",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "正影にあった欄影 欄影 最高魔害影片",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "supernatural",
+    "terror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and disturbing themes.",
+  "description": "A poster featuring a menacing, ghostly figure with sharp claws and a twisted expression, set against a dark, industrial background."
+}

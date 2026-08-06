@@ -1,0 +1,37 @@
+{
+  "title_text": "SHERLOCK HOLMES",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "mysterious",
+    "action",
+    "historical",
+    "fantasy",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild action and fantasy violence.",
+  "description": "Poster features Sherlock Holmes with a T-Rex and pterosaur in a cityscape with Big Ben and explosions."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "MACABRE",
+  "credits_text": "EL SECRETO ESTÁ EN LA CARNE\nA FILM BY RODRIGO CARO",
+  "languages": [
+    "es"
+  ],
+  "other_text": "EXHUMED MOVIES AND CINERASURA PRESENT \"RODRIGO'S FILMS PRODUCTION\" \"MACABRE\"\nA FILM BY RODRIGO CARO\nCREDITS LIST\nDIRECTED BY RODRIGO CARO",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; may be disturbing to some viewers.",
+  "description": "A horror film poster featuring a screaming face trapped under a glass dome with a hand gripping it, overlaid with bold red text and credits."
+}

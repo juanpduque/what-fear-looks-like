@@ -1,0 +1,46 @@
+{
+  "title_text": "The Woodland Haunting 2",
+  "credits_text": "\"Very unique slice of horror that does something great! What fun I got to see the sequel!\" - Jim Burgerstein, Hollywood Reporter\n\nComing Soon",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Join the growing masses who have decided to make The Woodland Haunting series a part of their Halloween. Arrive at a party, this hot new sequel is coming soon!",
+  "mood": [
+    "horror",
+    "thriller",
+    "supernatural",
+    "gothic",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror elements and occult themes.",
+  "description": "A poster for a horror film featuring a central figure with a red glow, surrounded by smaller images and text promoting the sequel."
+}

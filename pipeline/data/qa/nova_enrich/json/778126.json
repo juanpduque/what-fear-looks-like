@@ -1,0 +1,42 @@
+{
+  "title_text": "THE MONSTER",
+  "credits_text": "A Bloody Love Story\nSTARRING RICHARD O'BRIEN, ROSEMARIE DEWITT, JAMES O'BRIEN, JAMES WENNER PRODUCTION \"THE MONSTER\"\nWRITERS: ROSALIND REEF, JENNIFER ANNE SHIVDASANI, SPENCER IRWIN, SCHNORRAND, CATHERINE VONDRAS\nVONDRAS, ROSALIND REEF, JENNIFER ANNE SHIVDASANI, SPENCER IRWIN, SCHNORRAND, JAMES WENNER\nPRODUCER: JAMES WENNER, KATHRYN VASSLE\nDIRECTOR: JAMES WENNER\nADDITIONAL CAST: ROSS LYNCH, DANIEL KALISZAS, JAMES WENNER, KATHRYN VASSLE, BOB POPE, JOHN P. TURNER\nA FILM LONDON PRODUCTION PRESENTED BY BOB POPE\nA NETWORK\nFILM LONDON PRESENTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FILM LONDON PRESENTS",
+  "mood": [
+    "gothic",
+    "horror",
+    "romantic",
+    "dramatic",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.3,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild suggestions of violence and gore, typical for horror genre.",
+  "description": "Poster features a man with a monstrous, pale face and sharp teeth against a dark background, with bold red and blue text."
+}

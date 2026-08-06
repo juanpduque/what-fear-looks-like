@@ -1,0 +1,43 @@
+{
+  "title_text": "GANGS OF THE DEAD",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DIE HARD OR...ROT",
+  "mood": [
+    "gritty",
+    "post-apocalyptic",
+    "action",
+    "horror",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "zombie",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "Poster shows four individuals in a post-apocalyptic setting with bloodstains, one holding a gun, and urban ruins in the background."
+}

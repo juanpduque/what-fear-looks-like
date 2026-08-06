@@ -1,0 +1,46 @@
+{
+  "title_text": "HELLBILLY HOLLOW",
+  "credits_text": "STARRING RORY DEIMER & KEVIN WAYNE PRODUCED BY FILM FARM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "camp",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster suggests potential violence and gore through its dark, horror-themed imagery.",
+  "description": "A man stands beside a monstrous, ghostly face with a carnival tent in the background. The poster is dark and ominous, suggesting a horror theme."
+}

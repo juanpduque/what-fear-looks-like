@@ -1,0 +1,50 @@
+{
+  "title_text": "ERREMENTARI",
+  "credits_text": "the blacksmith and the devil",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "dark",
+    "mystical",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "crowd",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.1,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult imagery and implied violence.",
+  "description": "A dark, gothic poster features a blacksmith surrounded by flames and shadowy figures, with a devil-like creature looming above."
+}

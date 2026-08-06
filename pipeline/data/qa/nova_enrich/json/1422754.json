@@ -1,0 +1,43 @@
+{
+  "title_text": "THE MALICIOUS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WE'RE ALL AFRAID IN HERE",
+  "mood": [
+    "gothic",
+    "psychological",
+    "eerie",
+    "disturbing",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "mirror",
+      "conf": 0.8
+    },
+    {
+      "name": "haunting",
+      "conf": 0.7
+    },
+    {
+      "name": "gothic",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A woman stands in front of a mirror, her reflection showing a distorted image, evoking a gothic and psychological horror atmosphere."
+}

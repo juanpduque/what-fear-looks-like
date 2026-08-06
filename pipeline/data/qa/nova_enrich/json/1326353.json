@@ -1,0 +1,49 @@
+{
+  "title_text": "",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "KING KONG, DRACULA, FRANKENSTEIN, VAN HELSING, DRACULA, KING KONG, DRACULA, VAN HELSING, KING KONG, DRACULA, VAN HELSING",
+  "mood": [
+    "gothic",
+    "nostalgic",
+    "haunted",
+    "creepy",
+    "nostalgic"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    },
+    {
+      "name": "occult",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult and horror-themed imagery, but no explicit violence, gore, or sexual content.",
+  "description": "A cozy, dimly lit room filled with horror memorabilia, including framed pictures, dolls, and a vintage TV showing a ghostly scene. A person lies on the floor sketching."
+}

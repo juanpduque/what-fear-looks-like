@@ -1,0 +1,36 @@
+{
+  "title_text": "END CALL",
+  "credits_text": "YURIA HAGA · SHUN KOBAYASHI · TASUKU NAGAOKA\nFROM THE EXECUTIVE PRODUCER OF APARTMENT 1303",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE LAST CALL YOU EVER MAKE",
+  "mood": [
+    "thriller",
+    "suspense",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.3
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild suggestion of blood; no explicit violence or sexual content visible.",
+  "description": "Movie poster features four women in a tense setting with the title 'END CALL' prominently displayed above them."
+}

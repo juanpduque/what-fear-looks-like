@@ -1,0 +1,51 @@
+{
+  "title_text": "CAEDES",
+  "credits_text": "BERNHARD BOZINA LENA BAADER BURAĆ ARKOVIĐ TORIAS LICHT FLORIAN SIMBECK",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "other_text": "\"DER BESTE DEUTSCHE ZOMBIE-SPLATTER ALLER ZEITEN!\" MOVIESTAR UNCUT EDITION DIE LICHTUNG DES TODES FSK 18",
+  "mood": [
+    "dread",
+    "survival",
+    "horror",
+    "gritty",
+    "post-apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A group of survivors wield axes in a dark forest, facing zombies in a post-apocalyptic setting."
+}

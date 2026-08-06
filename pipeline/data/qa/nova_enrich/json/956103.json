@@ -1,0 +1,39 @@
+{
+  "title_text": "மல புடிக்கம்",
+  "credits_text": "",
+  "languages": [
+    "ta"
+  ],
+  "other_text": "",
+  "mood": [
+    "mysterious",
+    "occult",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.9
+    },
+    {
+      "name": "snake",
+      "conf": 0.95
+    },
+    {
+      "name": "book",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.95,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and a snake, which may be unsettling to some viewers.",
+  "description": "A large, ornate book is coiled with a red and black snake, set against an ancient, mystical background with glowing moonlight."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "the HALFWAY HOUSE",
+  "credits_text": "\"This movie has the goods! ... to sit up and shout about\" - Eric Campos, Scream Threat\n\"Plenty of blood, filming, and body parts\" - Stacy Lane Wilson, Horror Drive-in\n\"Good old-fashioned explorations turn into lands of terror\" - John Lands, director",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Between our world... and theirs!",
+  "mood": [
+    "gothic",
+    "horror",
+    "thriller",
+    "supernatural",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "Poster features a nun, three people, and a monstrous creature with sharp teeth and an intense gaze."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "HALLOWEEN Night",
+  "credits_text": "CHMIELEK FILMS PRESENTS A SHORT HORROR FILM WITH JOANNA MAJ MIKOLAJ LIPCZYSKI MICHALINA BLICHAŃSKA KLAUD MATSANEK JAKUB UŹKORONIS JAKUB CHMIELEWSKI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CUKIEREK ALBO PSIKUS",
+  "mood": [
+    "dread",
+    "suspense",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood imagery.",
+  "description": "A poster for a horror film titled 'Halloween Night' featuring a shadowy figure and a distressed woman, with a bloodstained handprint."
+}

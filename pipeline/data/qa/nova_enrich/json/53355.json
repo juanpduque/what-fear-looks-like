@@ -1,0 +1,39 @@
+{
+  "title_text": "NIGHTMARE AT NOON",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "explosion",
+      "conf": 0.8
+    },
+    {
+      "name": "action",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains depictions of firearms and explosions, suggesting action/violence themes.",
+  "description": "The poster shows three men with guns amidst an explosion, with a helicopter overhead, suggesting an action-packed thriller."
+}

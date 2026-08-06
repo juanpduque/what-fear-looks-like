@@ -1,0 +1,37 @@
+{
+  "title_text": "Maniac Killer",
+  "credits_text": "Eine abgefahrene Action-Splatter-Komödie von Jöchen Taubert",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "other_text": "ASTRO RECYCLER EDITION",
+  "mood": [
+    "violent",
+    "camp",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and weapon imagery.",
+  "description": "A man holds a chainsaw in front of a car, with bold title text and tagline below."
+}

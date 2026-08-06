@@ -1,0 +1,44 @@
+{
+  "title_text": "保安！左間学 2",
+  "credits_text": "水山影席子 結影影席、三山アロン・本平子",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "結安のことを学びてきたちは正示ですか？",
+  "mood": [
+    "dread",
+    "thriller",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatters and intense horror imagery.",
+  "description": "A poster features a close-up of a terrified eye with blood splatters, overlaid with Japanese text and burnt photographs of landscapes."
+}

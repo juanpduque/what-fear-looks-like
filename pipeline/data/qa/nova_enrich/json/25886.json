@@ -1,0 +1,49 @@
+{
+  "title_text": "GRAVEYARD DISTURBANCE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "supernatural",
+    "gothic",
+    "dread",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "tower",
+      "conf": 0.7
+    },
+    {
+      "name": "cemetery",
+      "conf": 0.85
+    },
+    {
+      "name": "storm",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and ghostly imagery.",
+  "description": "A poster shows four people fleeing through a stormy cemetery with a tower and ghostly figures in the background."
+}

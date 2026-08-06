@@ -1,0 +1,46 @@
+{
+  "title_text": "EL CHUPACABRAS",
+  "credits_text": "",
+  "languages": [
+    "es"
+  ],
+  "other_text": "JOSÉ JIMÉNEZ MIGUEL ÁNGEL GARCÍA & MARC SÁIZ",
+  "mood": [
+    "horror",
+    "fantasy",
+    "supernatural",
+    "thriller",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery including blood and a monstrous creature.",
+  "description": "Movie poster features three men with a monstrous creature and skull imagery, suggesting horror and supernatural themes."
+}

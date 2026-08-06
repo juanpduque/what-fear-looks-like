@@ -1,0 +1,40 @@
+{
+  "title_text": "FEAR FILES",
+  "credits_text": "COLUMBUS SHORT ROBIN GIVENS LYNN WHITFIELD SEAN BLAKEMORE EVA MARCILLE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FRIDAY THE 13TH ON TV ONE DON'T WATCH ALONE PREMERING FRIDAY MARCH 13 8/7c TVONE",
+  "mood": [
+    "dread",
+    "suspense",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild suggestions of violence through visual design.",
+  "description": "Poster features fragmented faces and bold text for a horror anthology series premiere on TV One."
+}

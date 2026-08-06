@@ -1,0 +1,39 @@
+{
+  "title_text": "CURSE OF MESOPOTAMIA",
+  "credits_text": "A FILM BY LAUAND OMAR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "REMEMBER WHO YOU WERE. REMEMBER WHAT YOU DID",
+  "mood": [
+    "mysterious",
+    "haunting",
+    "historical",
+    "supernatural",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "The poster features a large, eerie skull with three individuals surrounding it, set against a dark, textured background with cryptic text."
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "THE CANNIBAL COP",
+  "credits_text": "DICK JOHNSON & TOMMYGUN VS. THE CANNIBAL COP\nBASED ON A TRUE STORY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOU HAVE THE RIGHT TO REMAIN DELICIOUS.\n\"IT'S A PRODUCTIONS & 27THREE PRODUCTIONS PRESENTS... DICK JOHNSON & TOMMYGUN IN THE CANNIBAL COP\"\n\"BASED ON A TRUE STORY... JOHN PENYA XAL SANCHEZ, DANNY HICKS DEBBIE RODRIGUEZ\"\n\"FILMED IN THE AIR-LIKE TOWN OF KILL HOLE, THE STATE OF TEXAS. STARRING DICK JOHNSON & TOMMYGUN\"",
+  "mood": [
+    "horror",
+    "gritty",
+    "violent",
+    "dark",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore, suitable for mature audiences only.",
+  "description": "A poster features a grotesque, monstrous skull with sharp teeth and green eyes, set against a dark blue background with bold red and white text."
+}

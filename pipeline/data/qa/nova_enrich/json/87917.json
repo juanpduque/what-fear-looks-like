@@ -1,0 +1,46 @@
+{
+  "title_text": "VACACIONES DEL TERROR 2",
+  "credits_text": "PEDRO FERNÁNDEZ TATIANA JOAQUÍN CORREDO",
+  "languages": [
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "intense",
+    "dramatic",
+    "scary"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "mountain",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and intense horror elements.",
+  "description": "The poster features a menacing face emerging from a fiery mountain, with bold red and black text for the title and credits."
+}

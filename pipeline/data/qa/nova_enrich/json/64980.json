@@ -1,0 +1,45 @@
+{
+  "title_text": "赤んぼおばけ",
+  "credits_text": "YUDAI YAMAGUCHI FILM FROM THE SCREENPLAY BY KAZUO UMEZZ",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "赤んぼおばけ ばあさんとおばけの呪い",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "eerie",
+    "haunting",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "haunting",
+      "conf": 0.85
+    },
+    {
+      "name": "occult",
+      "conf": 0.75
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "",
+  "description": "A woman holds a baby in a dark, eerie setting with ghostly figures and a haunted house in the background."
+}

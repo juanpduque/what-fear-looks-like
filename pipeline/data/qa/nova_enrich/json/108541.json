@@ -1,0 +1,41 @@
+{
+  "title_text": "Cowboy Killer",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dark",
+    "violent",
+    "mysterious",
+    "western",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the presence of guns and intense imagery.",
+  "description": "A man in a cowboy hat holds two revolvers, with an eerie eye in the background and bold red text reading 'Cowboy Killer.'"
+}

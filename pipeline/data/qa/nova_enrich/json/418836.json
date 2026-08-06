@@ -1,0 +1,47 @@
+{
+  "title_text": "EL HOMBRE QUE VOLVIÓ DE LA MUERTE",
+  "credits_text": "Pol-ka Producciones",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "other_text": "Se acerca la venganza. It's payback time.",
+  "mood": [
+    "gothic",
+    "thriller",
+    "supernatural",
+    "revenge",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and violent themes.",
+  "description": "Poster features three characters with a central masked figure holding a skull, set against a dark, eerie background with red splatters."
+}

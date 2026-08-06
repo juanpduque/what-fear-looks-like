@@ -1,0 +1,39 @@
+{
+  "title_text": "RISU-UKKO",
+  "credits_text": "SASU KERMAN ELOKUVA\nJARMO ROOTSALAINEN\nMC RAAKA PEE\nHARRI LOIVA\nLINDA TURUNEN\nINI VARPULA\nTOMI TURUNEN\nESA KAUHAUNEN\nSASU KERMAN\nHEIDI KOMULAINEN",
+  "languages": [
+    "fi"
+  ],
+  "other_text": "KÄSIKIRJOITUS, OHJUS, LEINKAUS: SASU KERMAN\nPAHUVARAJÄ & VALAISU PETTERI PELTONIEMI \"MUSIIKI KREUTZ DEWALD & HARRI LOIVA\nLAVASTUS & PUUVUSTUS KATRINA KERMAN, VIRPI KILPELÄINEN JA PIRJO LUOSTARINEN\nTUOTANTOPÄÄLIKKÖ ANTI SYRJÄLÄINEN \"2. KUVAAJA LASSI PUURUNEN\n3. KUVAAJA PEKKA PIRINEN \" ÄNITYS MIKKO PERHMAN \" MIKSAUS & FOLEY SASU KERMAN\nTUOTANTO SASU KERMAN & PETRI KEKKÄLÄINEN \" KUVAUSSIHTEERI SATU BRIGATTI\nRAHOITUS TUUSNIEMEN KYLÄ RY & TUUSNIEMEN KUNTA",
+  "mood": [
+    "horror",
+    "forest",
+    "monstrous",
+    "intense",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A black-and-white poster features a hairy, monstrous creature in a forest with cast names listed below."
+}

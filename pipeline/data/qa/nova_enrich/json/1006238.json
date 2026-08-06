@@ -1,0 +1,46 @@
+{
+  "title_text": "HA NON ! MAIS SI",
+  "credits_text": "ÉCRIT ET RÉALISÉ PAR FÉLIX MOUILLARD\nSCHAYDRE DELOREIX\nSÉBASTIEN PEULAIN\nAURÉLIE DELGENCOURT\nASSISTANT RÉALISATEUR\nGEST LUCAS",
+  "languages": [
+    "fr"
+  ],
+  "other_text": "MOVIE MOON PRODUCTION",
+  "mood": [
+    "gothic",
+    "dread",
+    "mysterious",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "scythe",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "dark",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a shadowy figure holding a large scythe against a dark, misty background with French text."
+}

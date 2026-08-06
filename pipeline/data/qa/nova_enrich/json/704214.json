@@ -1,0 +1,46 @@
+{
+  "title_text": "EL CUCO IS HUNGRY",
+  "credits_text": "A TEENAGE HORROR FILM DIRECTED BY ALBERTO MARIN IN 2018. STARRING MARIA GARCIA, ANTONIO RAMIREZ, AND JAVIER LOPEZ.",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "haunting",
+    "mythic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "The poster features a monstrous, horned creature with a dark, eerie aesthetic, suggesting occult or horror themes.",
+  "description": "A dark poster shows a monstrous, horned creature with glowing eyes and the bold title 'EL CUCO IS HUNGRY' in yellow text."
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "MONSTER MACHINE",
+  "credits_text": "HIGHWAY PRODUCTIONS PRESENTS THE DAVID ROBERTSON PICTURE \"MONSTER MACHINE\" DIRECTED BY ANDREW VAN DER MERWE STARRING ANDREW VAN DER MERWE, ANDREW ROBERTSON, GERRY LANGENBERG, AND VAN SANTANA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gothic",
+    "surreal",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "house",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.65
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "monster"
+  ],
+  "moderation_notes": "Contains horror elements and implied violence.",
+  "description": "A poster features two characters facing monstrous creatures emerging from a dilapidated building, with bold orange and green colors."
+}

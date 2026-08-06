@@ -1,0 +1,42 @@
+{
+  "title_text": "ED GEIN",
+  "credits_text": "THE BUTCHER OF PLAINFIELD\nKAINE HOODNER\nMICHAEL BERRYMAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"THE NOTORIOUS SERIAL KILLER WHO INSPIRED PSYCHO AND THE TEXAS CHAINSAW MASSACRE\" STARRING KAINE HOODNER FROM QUARTERLY",
+  "mood": [
+    "gothic",
+    "dread",
+    "psychological horror",
+    "disturbing",
+    "gritty"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains disturbing imagery and themes of violence and horror.",
+  "description": "A poster featuring a close-up of a disturbing, disfigured face with intense eyes, accompanied by bold title text and credits."
+}

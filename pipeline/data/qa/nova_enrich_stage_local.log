@@ -1,0 +1,17 @@
+=== stage nova enrich → s3://sagemaker-studio-a5572760/wflike-nova-enrich/cloud ===
+done_ok=37829 todo=11730 local_jpg_png=49571
+wrote /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/nova_enrich/cloud_stage/todo_ids.json
+--- upload state ---
+--- upload pending posters (symlink farm + sync) ---
+  links 5000/11730
+  links 10000/11730
+links ready linked=11730 png_converted=0 missing=0
+poster sync finished
+remote_poster_objects 11730
+=== stage complete → s3://sagemaker-studio-a5572760/wflike-nova-enrich/cloud ===
+                           PRE posters/
+2026-08-04 12:00:51      81255 manifest.txt
+2026-08-04 12:00:00   15523498 nova_enrich.csv
+2026-08-04 12:00:31    7453076 posters.csv
+2026-08-04 12:00:43    3278779 posters_meta.json
+2026-08-04 12:00:40      92985 todo_ids.json

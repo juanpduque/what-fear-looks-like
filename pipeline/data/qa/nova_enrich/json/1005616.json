@@ -1,0 +1,44 @@
+{
+  "title_text": "残花の少女",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "お姉さん、殺してください…",
+  "mood": [
+    "gothic",
+    "eerie",
+    "psychological",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and eerie imagery.",
+  "description": "A poster featuring a central young woman surrounded by various faces, with Japanese text and a dark, gothic atmosphere."
+}

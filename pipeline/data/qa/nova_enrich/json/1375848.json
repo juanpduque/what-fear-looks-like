@@ -1,0 +1,49 @@
+{
+  "title_text": "THE RED MASK",
+  "credits_text": "NEVER KILL A CLASSIC.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "VHS",
+  "mood": [
+    "horror",
+    "psychological",
+    "gothic",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "mask",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    },
+    {
+      "name": "forest",
+      "conf": 0.5
+    },
+    {
+      "name": "blood",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood-like imagery from the mask.",
+  "description": "A woman holds a VHS tape titled 'The Red Mask,' featuring a red mask with a silhouette and a haunted forest background."
+}

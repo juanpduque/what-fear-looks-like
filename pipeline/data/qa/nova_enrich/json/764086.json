@@ -1,0 +1,40 @@
+{
+  "title_text": "MASKING THRESHOLD",
+  "credits_text": "\"ONE OF THE BEST HORROR FILMS OF THE YEAR.\" - Film Inquiry\nA FILM BY JOHANNES GRENDARTHNER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PARANORMAL",
+  "mood": [
+    "dread",
+    "surreal",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and a knife, suggesting violent themes.",
+  "description": "The poster features a large pair of scissors cutting through a stylized human ear with blood, accompanied by bold red text and a tagline."
+}

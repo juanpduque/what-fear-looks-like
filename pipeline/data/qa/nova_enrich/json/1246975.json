@@ -1,0 +1,39 @@
+{
+  "title_text": "The Tell-Tale Heart",
+  "credits_text": "\"Can you hear it beating, the noise... that tells all?\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "psychological horror",
+    "intense",
+    "disturbing",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    "blood",
+    {
+      "name": "eye",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and disturbing imagery.",
+  "description": "A close-up of a terrified face with a large, detailed eye dominates the poster for 'The Tell-Tale Heart.' The tagline hints at psychological horror."
+}

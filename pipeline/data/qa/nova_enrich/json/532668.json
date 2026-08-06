@@ -1,0 +1,45 @@
+{
+  "title_text": "THE NEXT KILL",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COMING SOON\n@THENEXTKILL THESTRILL.COM",
+  "mood": [
+    "intense",
+    "violent",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violent imagery and blood.",
+  "description": "A poster featuring a large red monster with sharp teeth and a person holding guns, with bold white text reading 'THE NEXT KILL' and 'COMING SOON.'"
+}

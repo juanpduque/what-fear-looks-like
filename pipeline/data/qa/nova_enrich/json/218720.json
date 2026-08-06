@@ -1,0 +1,47 @@
+{
+  "title_text": "HELL'S TOMB",
+  "credits_text": "YOU'LL WISH YOU HADN'T OPENED IT\nTHE WENTWORTH FILM GROUP PRESENTS... NEIL A. WENTWORTH... NATALIE STONE ERIC CRISCARA SARA BARNEY JAMES BELLIE FRANZIE JANE ANDREWS DAVID PAUL DOHN SCOTT MATRICK JEFF SWEET MIKE BUTTERWORTH COLIN FRANZIE RACHEL A. NELSON HILL R. A. WENTWORTH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "© 2008 The Wentworth Film Group, Inc.",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "dark",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, textured background features a menacing creature with sharp teeth and claws, with bold red title text and cast credits."
+}

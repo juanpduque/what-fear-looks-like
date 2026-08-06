@@ -1,0 +1,46 @@
+{
+  "title_text": "CRAWLER",
+  "credits_text": "DEATH HAS ARRIVED FROM THE STARS... starring DARLA ALBORCZYK, JUSTIN TIMPANE DANIEL ROSS, JAMES KEEGAN, JOE SORRELLS, GEORGE STOVER DONNIKARL RICHARD DYSZEL, DON LEIFERT, AYO OYEBODE, JIM HIPPE AND JOKI KLAUS, CLAIRE VAN NESS, MITCH GARRY, SCENARIO BY JIM HIPPE, GEORGE STOVER SPECIAL VISUAL EFFECTS BY MIKE DOKER, MUSICAL SCORE BY JIM HIPPE, PRODUCED BY DON DORLER, CINEMATOGRAPHY BY JOE RIPPLE, SPECIAL EFFECTS BY STEVE PAYNE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "sci-fi",
+    "horror",
+    "suspense",
+    "cosmic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and horror elements.",
+  "description": "Poster features a group of people facing a large, menacing alien creature with glowing eyes against a dark, cosmic background."
+}

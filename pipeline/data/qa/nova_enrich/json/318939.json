@@ -1,0 +1,50 @@
+{
+  "title_text": "MGA ALAMAT NG SANDAIGDIG",
+  "credits_text": "A DZAQ RADIO SERIAL WITH AN ALL-STAR CAST",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SUPERSHOCKING, SPINE-CHILLING HORROR LEGENDS; MARIA CORAZON'S; 4 STORIES, 4 DIRECTORS; DEC. 28 TO JAN. 8; RELEASED THRU CENTER FILM EXCHANGE",
+  "mood": [
+    "gothic",
+    "dread",
+    "horror",
+    "spine-chilling",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "skull",
+      "conf": 0.75
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.1,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and implied violence.",
+  "description": "A vintage horror poster featuring eerie figures and a dramatic title, promoting a radio serial with an all-star cast."
+}

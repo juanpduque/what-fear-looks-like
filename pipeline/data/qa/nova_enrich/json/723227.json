@@ -1,0 +1,44 @@
+{
+  "title_text": "PANIC ROOM",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "パニックルーム",
+  "mood": [
+    "dread",
+    "suspense",
+    "thriller",
+    "psychological",
+    "claustrophobic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "A distorted, grotesque figure with exposed flesh and blood stands prominently, evoking horror and suspense."
+}

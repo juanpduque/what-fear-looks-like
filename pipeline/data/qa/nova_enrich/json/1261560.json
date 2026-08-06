@@ -1,0 +1,42 @@
+{
+  "title_text": "AXEGRINDER 7",
+  "credits_text": "NEW BLOOD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE TRUE STORY THAT SHOCKED THE COUNTRY IS BACK",
+  "mood": [
+    "dread",
+    "gothic",
+    "violent",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.95,
+  "monster": 0.0,
+  "person": 0.4,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A poster shows a gloved hand gripping an axe with blood on it, accompanied by bold red text and a dark background."
+}

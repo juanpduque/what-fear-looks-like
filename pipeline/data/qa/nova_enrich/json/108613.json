@@ -1,0 +1,47 @@
+{
+  "title_text": "生死凶灵 NIGHTMARE",
+  "credits_text": "周冬雨 吴映洁 刘雨欣 刘子光 方力申",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "2011年度最受欢迎恐怖电影 (中国版) “好恐怖”",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "supernatural",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror elements and occult themes.",
+  "description": "A poster features a young woman with long black hair in a haunting pose, with eerie text overlay and a ghostly atmosphere."
+}

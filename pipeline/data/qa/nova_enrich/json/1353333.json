@@ -1,0 +1,45 @@
+{
+  "title_text": "MOUSEBOAT MASSACRE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "dread",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.95
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; may be disturbing to some viewers.",
+  "description": "A poster shows a person hanging from a boat with blood splattered around, featuring a masked figure on the boat and dramatic lighting."
+}

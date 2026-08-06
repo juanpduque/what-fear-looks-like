@@ -1,0 +1,41 @@
+{
+  "title_text": "TERROR EN LOS BARRIOS",
+  "credits_text": "RENE ALMADA, LORENZO & MONTECLARO, GRACE RENAT, NORMA LAZAREN, JULIO AUGURIO, JULIO ALBAMA, LYNDA MA ROSA, CLAUDIA GUZMAN, VICTOR ALCOBA, AL COSTER, DELIA MACANA",
+  "languages": [
+    "es"
+  ],
+  "other_text": "LOS BARON DE APODACA",
+  "mood": [
+    "dread",
+    "thriller",
+    "crime",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and a skull, suggesting violent themes.",
+  "description": "A vibrant red poster features a central skull with blood dripping, surrounded by various actors' faces and the title \"TERROR EN LOS BARRIOS\"."
+}

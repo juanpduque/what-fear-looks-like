@@ -1,0 +1,41 @@
+{
+  "title_text": "HUNTER X",
+  "credits_text": "JUSTICE IS SERVED",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "intense",
+    "gritty",
+    "violent",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 1.0
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "mask",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts violent themes with weapons and fire.",
+  "description": "A masked figure holds an axe and knife in a fiery, industrial setting, with the tagline 'JUSTICE IS SERVED.'"
+}

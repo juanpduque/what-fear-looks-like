@@ -1,0 +1,46 @@
+{
+  "title_text": "BLOODY GLAMPING",
+  "credits_text": "CAST: MARTHA LLAMAS, ANTONIO CALCAÑO, OSWALDO MARÍN DEL CAMPO, ERÍKA GOYOTE, VALERIA FARRERA, ELÍSA HOYO. PRODUCTION: MARTHA LLAMAS, YANNIC SOLÍS. MUSIC: DMITRI DUDIN / EDUARDO DOMÍNGUEZ. REALIZATION: YANNIC SOLÍS, VICKY AP, JHOVANI COAUTTL, RICARDO MONTOYA.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ÓPERA CINEMA PRESENTA",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "surreal",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "A dramatic poster features a central figure with outstretched arms, surrounded by running silhouettes against a red background, suggesting a horror theme."
+}

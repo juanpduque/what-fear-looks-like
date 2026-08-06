@@ -1,0 +1,38 @@
+{
+  "title_text": "REVELATION",
+  "credits_text": "Jeff Fahey Nick Mancuso Carol Alt",
+  "languages": [
+    "en"
+  ],
+  "other_text": "From The Producers of Left Behind: The Movie ...the Book has been opened Beyond hope, beyond doubt, beyond fear, only faith survives.",
+  "mood": [
+    "dramatic",
+    "intense",
+    "mysterious",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Movie poster features intense faces of three individuals with fiery background and dramatic tagline."
+}

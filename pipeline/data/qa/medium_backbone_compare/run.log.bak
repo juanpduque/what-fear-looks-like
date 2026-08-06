@@ -1,0 +1,32 @@
+gold=421 split train=315 test=106 all=421 counts={'photo': 111, 'painted': 188, 'composite': 122} device=mps
+=== CLIP ViT-B baseline (clip_embeddings.npz) ===
+[clip_vitb_logreg] macro_f1=0.5135 train=313 test=105 dim=512 miss_tr=2 miss_te=1
+              precision    recall  f1-score   support
+
+     painted       0.67      0.68      0.67        47
+       photo       0.50      0.37      0.43        27
+   composite       0.41      0.48      0.44        31
+
+    accuracy                           0.54       105
+   macro avg       0.52      0.51      0.51       105
+weighted avg       0.55      0.54      0.54       105
+
+=== OpenCLIP ViT-L-14 / openai ===
+gold=421 split train=315 test=106 all=421 counts={'photo': 111, 'painted': 188, 'composite': 122} device=mps
+=== CLIP ViT-B baseline (clip_embeddings.npz) ===
+[clip_vitb_logreg] macro_f1=0.5135 train=313 test=105 dim=512 miss_tr=2 miss_te=1
+              precision    recall  f1-score   support
+
+     painted       0.67      0.68      0.67        47
+       photo       0.50      0.37      0.43        27
+   composite       0.41      0.48      0.44        31
+
+    accuracy                           0.54       105
+   macro avg       0.52      0.51      0.51       105
+weighted avg       0.55      0.54      0.54       105
+
+=== OpenCLIP ViT-L-14 / openai ===
+loading open_clip ViT-L-14//Users/juanpabloduque/.cache/clip/ViT-L-14.pt on mps…
+/Users/juanpabloduque/miniforge3/lib/python3.10/site-packages/torch/serialization.py:1328: UserWarning: 'torch.load' received a zip file that looks like a TorchScript archive dispatching to 'torch.jit.load' (call 'torch.jit.load' directly to silence this warning)
+  warnings.warn(
+  ViT-L-14 8/421 elapsed=13.6s

@@ -1,0 +1,46 @@
+{
+  "title_text": "山民久安III THE WICKER GHOST III THE POSSESSION",
+  "credits_text": "父作 BATMAN HUNG 影主 GIGI LAI 影主 CHEUNG TAT MING 影主 GRACE LAM",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "",
+  "mood": [
+    "supernatural",
+    "gothic",
+    "haunting",
+    "mysterious",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and ghostly imagery.",
+  "description": "The poster features three ghostly faces emerging from a large skull, with Chinese and English text indicating the title and cast."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "SILVER SCREEN SUICIDE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "haunting",
+    "mysterious",
+    "eerie",
+    "lonely",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "darkness",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "self-harm"
+  ],
+  "moderation_notes": "The poster references the concept of suicide in its title, which may be sensitive to some audiences.",
+  "description": "A solitary figure stands in a dark setting with a faint, glowing light above, evoking a haunting and eerie atmosphere."
+}

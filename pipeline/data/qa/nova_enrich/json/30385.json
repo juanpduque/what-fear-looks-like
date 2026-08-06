@@ -1,0 +1,46 @@
+{
+  "title_text": "CHAINSAW SALLY",
+  "credits_text": "GUNNAR HANSEN APRIL MONIQUE BURRIL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Killing Is In Her Blood \"...Destined To Become A Cult Classic...\" —Film Threat",
+  "mood": [
+    "horror",
+    "intense",
+    "violent",
+    "gothic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A horror poster featuring a woman with braided hair holding a chainsaw, with intense and violent imagery."
+}

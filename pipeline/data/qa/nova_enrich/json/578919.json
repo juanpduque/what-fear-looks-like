@@ -1,0 +1,45 @@
+{
+  "title_text": "SHRIEK OF THE LYCANTHROPE",
+  "credits_text": "WRITTEN BY KEITH MATTURRO DIRECTED BY JOHN SCHAPPERT STARRING DEBBIE ROCHON TINA KRAUSE ANTHONY INGOGLIA JONATHAN FABER JONATHAN MANKUTA PATRICK TIERNEY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WHEN THE MOON RISES... THE TERROR BEGINS.",
+  "mood": [
+    "gothic",
+    "horror",
+    "supernatural",
+    "dread",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.5
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.8,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and horror themes.",
+  "description": "A horror movie poster featuring a menacing werewolf and a group of people, set against a dark, moonlit background with a castle and a cross."
+}

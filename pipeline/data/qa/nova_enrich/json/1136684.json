@@ -1,0 +1,47 @@
+{
+  "title_text": "NAKED ZOMBIE GIRL IS BACK!",
+  "credits_text": "A Rickety Bird Film\nSTARRING: MOLLY QUINNETT II, CARTER II, MARIE II, BOBBY II, ALLY II, POLLYNICIA II, TRUDY II, JESSICA II, RICKY II, LISA II, NICKY II, MIKE II, JENNY II, AMY II, RACHEL II, LISA II, LANSEN II\nWRITTEN AND DIRECTED BY RICKETY BIRD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "camp",
+    "horror",
+    "action",
+    "violent",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "A woman holds a chainsaw with blood splattered on her and the title \"NAKED ZOMBIE GIRL IS BACK!\" prominently displayed."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "ASTRAL SEYAHAT",
+  "credits_text": "Yönetmen: Hasan Özkalp",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "31 Mayıs'ta sinemalarda",
+  "mood": [
+    "dread",
+    "supernatural",
+    "gothic",
+    "haunting",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "",
+  "description": "A poster features a distressed woman with long black hair against a dark, cosmic background, promoting the horror film \"Astral Seyahat\" releasing on May 31."
+}

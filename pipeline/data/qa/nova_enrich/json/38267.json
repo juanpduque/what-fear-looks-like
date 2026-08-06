@@ -1,0 +1,43 @@
+{
+  "title_text": "WAR-GODS OF THE DEEP",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "sci-fi",
+    "adventure",
+    "fantasy",
+    "mythic",
+    "epic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows four characters above an underwater city with futuristic architecture and alien creatures, suggesting a sci-fi adventure."
+}

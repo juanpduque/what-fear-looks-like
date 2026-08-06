@@ -1,0 +1,45 @@
+{
+  "title_text": "JUDAS GHOST",
+  "credits_text": "FROM NEW YORK TIMES BEST-SELLING AUTHOR SIMON R. GREEN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BE CAREFUL WHAT YOU HUNT FOR",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "haunting",
+    "dark",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.6,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and a mysterious, potentially supernatural setting.",
+  "description": "A man in a hat approaches a gated mansion at night, with crows flying nearby and a pentagram on the wall."
+}

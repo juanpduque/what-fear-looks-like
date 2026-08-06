@@ -1,0 +1,41 @@
+{
+  "title_text": "FREAK OUT",
+  "credits_text": "ITAY ZVOLON KYE KORABELNIKOV OFFER RUTHENBERG",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "war",
+    "action",
+    "gritty",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "gun",
+      "conf": 0.8
+    },
+    {
+      "name": "axe",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and war-related imagery.",
+  "description": "A soldier stands on a battlefield holding a rifle and an axe, with a war-torn landscape in the background."
+}

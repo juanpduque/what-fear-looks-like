@@ -1,0 +1,45 @@
+{
+  "title_text": "HYDRA",
+  "credits_text": "MONSTER FROM THE DEEP",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "sci-fi",
+    "action",
+    "thriller",
+    "fantasy"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.4,
+  "animal": 0.9,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and monstrous imagery.",
+  "description": "A poster featuring a large, menacing green monster with a single large eye and sharp teeth, with a person trapped in its mouth against a dark background."
+}

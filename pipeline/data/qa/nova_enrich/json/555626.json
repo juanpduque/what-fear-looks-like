@@ -1,0 +1,45 @@
+{
+  "title_text": "Death Has No Season",
+  "credits_text": "A new film by Coco Roy\nOriginal score by Missionary Work",
+  "languages": [
+    "en"
+  ],
+  "other_text": "For some, the end is just the beginning...",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "haunting",
+    "dramatic",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "occult",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and ghostly figures, but no explicit violence or gore.",
+  "description": "A poster shows robed figures with skull masks and scythes against a snowy backdrop, with a tagline and film credits."
+}

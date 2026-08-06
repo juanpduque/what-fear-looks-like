@@ -19,7 +19,7 @@ cd site && python3 -m http.server 8765
 | **Hero** | 0–22% | Caja cerrada ¾ — se lee como VHS (spine + face) |
 | **Read** | 22–45% | Frente + OCR bbox · HALLOWEEN conf 0.98 |
 | **Measure** | 45–72% | Peel ordenado: faces 0 → 87% dark → symmetry 0.93 |
-| **Archive** | 72–100% | Tapa abre suave (`lidPivot`); cassette dentro + ficha; knife 0.95 |
+| **Archive** | 72–100% | Tapa abre suave (`lidPivot`); render de cinta VHS dentro; knife 0.95 |
 
 Sin explode caótico. Una capa dominante a la vez.
 

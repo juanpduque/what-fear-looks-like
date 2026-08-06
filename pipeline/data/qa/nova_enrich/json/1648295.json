@@ -1,0 +1,35 @@
+{
+  "title_text": "The Statement of Randolph Carter",
+  "credits_text": "A short, silent film based on the story by H.P. Lovecraft",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Spooky Ventures",
+  "mood": [
+    "gothic",
+    "mystery",
+    "haunting",
+    "silent",
+    "classic"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A black poster features a portrait of a man with text describing a silent film adaptation of an H.P. Lovecraft story."
+}

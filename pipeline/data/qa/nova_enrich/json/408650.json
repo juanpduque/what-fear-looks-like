@@ -1,0 +1,37 @@
+{
+  "title_text": "CREEPORIA",
+  "credits_text": "The world's first comedy-horror soap opera!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "camp",
+    "surreal",
+    "comedy-horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.1,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster features a central monstrous figure surrounded by eerie characters and the tagline 'The world's first comedy-horror soap opera!'"
+}

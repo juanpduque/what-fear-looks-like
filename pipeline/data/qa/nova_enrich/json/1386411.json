@@ -1,0 +1,50 @@
+{
+  "title_text": "SPLATTERFEST EXHUMED",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SCARE",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "gory",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and gory elements.",
+  "description": "A poster shows a haunted mansion with a full moon, featuring several gory, monstrous figures in front."
+}

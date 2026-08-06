@@ -1,0 +1,38 @@
+{
+  "title_text": "HE WATCHES",
+  "credits_text": "WRITTEN & DIRECTED BY JOSHUA CONKEL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BROOKLYN NY FILM FESTIVAL AWARD WINNER",
+  "mood": [
+    "tense",
+    "suspenseful",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man stands in a dark room with a red hue, with a shadowy figure visible through a doorway behind him. The title \"HE WATCHES\" is prominently displayed at the bottom."
+}

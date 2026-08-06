@@ -1,0 +1,42 @@
+{
+  "title_text": "ZOMBIE HONEYMOON",
+  "credits_text": "UNTIL DEATH DO US PART",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"GAVE ME NIGHTMARES AND MADE ME WAKE UP SCREAMING.\" -Ken Russell",
+  "mood": [
+    "romantic",
+    "horror",
+    "camp",
+    "dark",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.1,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and implied violence.",
+  "description": "Poster shows a black hearse with \"JUST MARRIED\" written on it, set against a fiery red sky, with the tagline \"UNTIL DEATH DO US PART.\""
+}

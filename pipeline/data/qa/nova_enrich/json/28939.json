@@ -1,0 +1,50 @@
+{
+  "title_text": "ARMY OF THE DEAD",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "action",
+    "horror",
+    "post-apocalyptic",
+    "gritty"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "skull",
+      "conf": 0.85
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and horror elements.",
+  "description": "A poster shows a skeletal soldier holding a machine gun amidst smoke and fire, with other zombie figures in the background."
+}

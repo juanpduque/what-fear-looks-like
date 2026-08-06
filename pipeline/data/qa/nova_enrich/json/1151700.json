@@ -1,0 +1,50 @@
+{
+  "title_text": "VHS VIOLENCE II: VHS AND KILL",
+  "credits_text": "TWO TIMES THE TERROR!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FROM THE CREATORS OF GRINDEXPLOITATION\nHORROR\nUNRATED",
+  "mood": [
+    "dread",
+    "terror",
+    "gritty",
+    "violent",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "fire",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.2,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intended for mature audiences.",
+  "description": "A hooded figure with a skull face stands in front of a screen showing blood and a handprint, with bold horror-themed text overlay."
+}

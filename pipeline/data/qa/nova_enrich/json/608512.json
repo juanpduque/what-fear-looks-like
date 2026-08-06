@@ -1,0 +1,46 @@
+{
+  "title_text": "CLOWN MOTEL",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MOTEL",
+  "mood": [
+    "dread",
+    "horror",
+    "creepy",
+    "sinister",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster features graphic horror elements including a monstrous clown and a decayed figure, suggesting potential violence and gore.",
+  "description": "A poster shows a menacing clown holding keys in front of a dilapidated motel sign, with a decayed figure in the background."
+}

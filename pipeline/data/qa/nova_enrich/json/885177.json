@@ -1,0 +1,42 @@
+{
+  "title_text": "毒美人",
+  "credits_text": "导演: 赵小红 制片: 李伟",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "6月3日16:00 优衣库网首播",
+  "mood": [
+    "gothic",
+    "erotic",
+    "surreal",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains suggestive imagery and blood-like elements.",
+  "description": "A dark poster features a solitary figure against a stormy backdrop with red, flowing smoke and bold Chinese text."
+}

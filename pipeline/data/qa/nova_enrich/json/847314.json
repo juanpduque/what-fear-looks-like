@@ -1,0 +1,50 @@
+{
+  "title_text": "HACKSAW",
+  "credits_text": "His Name Is Dilon / His Name Is Mason / And He Lives In Hell! \n\nTOBY JOHANSEN\n\nDOCUMENARY OF A PSYCHO KILLER\n\nDORY PUMPKIN presents / STORY JOHANSEN film\n\nFeaturing: TOBY JOHANSEN, DONALD JOHANSEN, NICK JOHANSEN, RACHEL JOHANSEN, ALISA GLASS, DENISE VANCE, ACE DONALDSON, JOSHUA JOHANSEN, DANTE MUSA, OLIVER JOHANSEN, NICK JOHANSEN, TREVOR TOM, SHELBY NATIVE DANCE\n\nMusical Score by: NICK JOHANSEN\n\nWritten & Directed by: TOBY JOHANSEN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "go@pumpkincoreizhao72@ yahoo.com / www.robeserven.probabcd.com",
+  "mood": [
+    "horror",
+    "psychological",
+    "violent",
+    "disturbing",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and disturbing imagery.",
+  "description": "A poster features a horror-themed illustration with a monstrous figure holding a weapon, accompanied by bold red text and credits for a documentary film."
+}

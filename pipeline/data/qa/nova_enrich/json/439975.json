@@ -1,0 +1,46 @@
+{
+  "title_text": "ANGER OF THE DEAD",
+  "credits_text": "Written and directed by Francesco Picone. Starring Alex Lucchesi, Serena Biancheri, Federico Mariotti, Alessio Cherubini, and Beatrice Baldachini. Produced by Francesco Picone.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SmallMovie Presents. Special Make-Up Carlo Diamantini. Effects Alessio Barzocchi. Assistant Simone Lagi. KSF Riccardo Jacono.",
+  "mood": [
+    "dread",
+    "survival",
+    "apocalyptic",
+    "zombie",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and zombie imagery.",
+  "description": "A poster for a horror film featuring a group of people facing zombies, with a central figure on a motorcycle amidst a chaotic battle."
+}

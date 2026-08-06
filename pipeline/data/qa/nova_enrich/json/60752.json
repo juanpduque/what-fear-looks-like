@@ -1,0 +1,46 @@
+{
+  "title_text": "FISTFUL OF BRAINS",
+  "credits_text": "\"Fistful of Brains is a great new entry into the zombie western genre.\" - Rotten Tomatoes\n\nA CHRISTINE FERRIS FILM\n\nJACQUELINE MARTINI\nCONRAD OSBORNE\nDARRELL PARKER\nEDWARD WARNER\nCHUCK WILLIAMS\n\n© 2010 Dark House Productions, LLC All Rights Reserved",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PAINT THE TOWN RED...",
+  "mood": [
+    "horror",
+    "zombie",
+    "western",
+    "dark",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore.",
+  "description": "Movie poster features a zombie woman with blood on her face, standing in front of a moonlit night scene with three people in the background."
+}

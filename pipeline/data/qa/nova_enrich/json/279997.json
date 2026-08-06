@@ -1,0 +1,50 @@
+{
+  "title_text": "I SURVIVED A ZOMBIE HOLOCAUST",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Reign of the Dead",
+  "mood": [
+    "horror",
+    "action",
+    "survival",
+    "apocalyptic",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "crowd",
+      "conf": 0.5
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster featuring a group of survivors facing zombies, with a central character holding a weapon and a chaotic battle scene in the background."
+}

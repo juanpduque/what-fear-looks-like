@@ -1,0 +1,41 @@
+{
+  "title_text": "WRONG PLACE WRONG TIME",
+  "credits_text": "HELL IS ABOUT TO BE UNLEASHED",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "intense",
+    "suspenseful",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "action",
+      "conf": 0.8
+    },
+    {
+      "name": "explosion",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action sequences and weapon imagery.",
+  "description": "A group of individuals, some in tactical gear, stand in front of an explosion, with the title 'Wrong Place Wrong Time' prominently displayed."
+}

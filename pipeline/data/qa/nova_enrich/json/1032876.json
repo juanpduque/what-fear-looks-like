@@ -1,0 +1,39 @@
+{
+  "title_text": "Cryptid",
+  "credits_text": "an animal rumored to exist but never proven",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "mysterious",
+    "eerie",
+    "haunting",
+    "foreboding",
+    "enigmatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "text",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark forest scene with faint lights and the title 'Cryptid' overlaid, evoking mystery and the unknown."
+}

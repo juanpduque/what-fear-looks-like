@@ -1,0 +1,40 @@
+{
+  "title_text": "THE AGFA HORROR TRAILER SHOW",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AGFA",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "A poster featuring a demonic figure with horns and fangs, set against a dark, surreal background, promoting a horror trailer show."
+}

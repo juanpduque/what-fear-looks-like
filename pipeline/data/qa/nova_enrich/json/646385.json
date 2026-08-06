@@ -1,0 +1,45 @@
+{
+  "title_text": "SCREAM",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WOODSBORO",
+  "mood": [
+    "suspense",
+    "horror",
+    "thriller",
+    "mystery",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.85
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense horror themes and implied violence.",
+  "description": "Poster features a group of people with a large ghostly skull behind them, set against a dark, eerie backdrop with a suburban house and police car in the distance."
+}

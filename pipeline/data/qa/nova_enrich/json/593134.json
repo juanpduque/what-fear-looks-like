@@ -1,0 +1,40 @@
+{
+  "title_text": "SHUTTER AND SCREAM",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "VHSCOLLECTOR.COM",
+  "mood": [
+    "horror",
+    "thriller",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "camera",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and suggests violent themes.",
+  "description": "A hand holding a camera with blood dripping from it, featuring a masked face in the viewfinder. The title 'Shutter and Scream' is prominently displayed."
+}

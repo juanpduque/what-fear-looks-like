@@ -1,0 +1,39 @@
+{
+  "title_text": "DO NOT REPLY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "anxiety",
+    "suspense",
+    "terror"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 1.0
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "robot",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster implies potential violence through the distressed woman and menacing robot imagery.",
+  "description": "A smartphone screen displays a distressed woman covered by a menacing robot with red eyes. The text 'DO NOT REPLY' is prominently shown in red."
+}

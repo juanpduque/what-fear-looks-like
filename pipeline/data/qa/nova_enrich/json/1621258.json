@@ -1,0 +1,46 @@
+{
+  "title_text": "FINAL BRICK IN THE WALL",
+  "credits_text": "A DESCENT INTO MADNESS BY ROB CEUS AND INGE VANLEENE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NATURAL BORN KILLERS MEETS TEXAS CHAINSAW MASSACRE MEETS GREGG ARAKI FROM THE DOLLAR STORE",
+  "mood": [
+    "horrific",
+    "intense",
+    "disturbing",
+    "psychological",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    },
+    {
+      "name": "monster",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.5,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences only.",
+  "description": "A poster featuring a bearded man with sunglasses, blood dripping from his face, and intense, fiery background. The title and tagline are prominently displayed."
+}

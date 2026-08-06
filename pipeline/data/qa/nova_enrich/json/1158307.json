@@ -1,0 +1,39 @@
+{
+  "title_text": "LA BRUJA EL FINAL",
+  "credits_text": "UNA PELICULA DE JOENDRY MOREL GARCIA",
+  "languages": [
+    "es"
+  ],
+  "other_text": "TERROR Y SUSPENSO\nADA ROJAS\n3",
+  "mood": [
+    "gothic",
+    "suspense",
+    "terror"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and ghostly imagery.",
+  "description": "A ghostly figure stands in a dense forest, with dramatic red and black typography overlaying the scene."
+}

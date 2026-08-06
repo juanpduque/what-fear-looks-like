@@ -1,0 +1,42 @@
+{
+  "title_text": "ALYCE KILLS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dramatic",
+    "thriller",
+    "dark",
+    "intense",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster depicts potential violence and blood, suggesting mature themes.",
+  "description": "A woman stands on a rooftop overlooking a cityscape, holding a weapon with blood on it. The poster has a dark, intense atmosphere."
+}

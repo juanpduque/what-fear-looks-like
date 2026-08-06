@@ -1,0 +1,41 @@
+{
+  "title_text": "RIVER OF DARKNESS",
+  "credits_text": "STARRING ICONS OF WRESTLING KURT ANGLE KEVIN NASH PSYCHO SID VICIOUS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE HUNT IS ON",
+  "mood": [
+    "action",
+    "thriller",
+    "intense",
+    "suspenseful",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and weapon imagery.",
+  "description": "A man in tactical gear holds a rifle, with a dark, imposing figure in the background and a boat on a river."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "武子体身全屋",
+  "credits_text": "主傶できるもの。ミシルととも。テレビジョンストリース。",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "全総影品全屋。デビストリース。",
+  "mood": [
+    "dread",
+    "gothic",
+    "violent",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.2,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intended for mature audiences.",
+  "description": "A Japanese horror DVD cover featuring a masked figure with bloodied hands, intense facial expression, and Japanese text overlay."
+}

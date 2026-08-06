@@ -1,0 +1,45 @@
+{
+  "title_text": "VICENTE NA CIDADE FANTASTMA",
+  "credits_text": "UM FILME DE FLAVIO CARNIELLI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "POLICIA MUNICIPAL",
+  "mood": [
+    "surreal",
+    "gothic",
+    "eerie",
+    "haunting",
+    "fantasy"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "ghost",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and unsettling facial expressions; no explicit violence or nudity.",
+  "description": "A vibrant red poster features multiple eerie faces and the title 'Vicente na Cidade Fantasma' by Flavio Carnielli, suggesting a surreal, gothic horror theme."
+}

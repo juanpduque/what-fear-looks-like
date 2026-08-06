@@ -1,0 +1,40 @@
+{
+  "title_text": "DRIP",
+  "credits_text": "ELLE HARRIS YULIA NAPIER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Music by OLIMPIA HENNION Cinematography by ROBERT MONROE Film Editing by SUSAN FENTON Produced and Written by SUSAN FENTON Produced and Designed by LISA MANGANESE",
+  "mood": [
+    "anxious",
+    "suspenseful",
+    "gothic",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "sexual"
+  ],
+  "moderation_notes": "Mild sexual suggestion due to the woman's attire and pose.",
+  "description": "A woman in a gray top stands in a dimly lit room, reaching for a door handle, suggesting tension and suspense."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "MEMÓRIAS DO MEDO",
+  "credits_text": "",
+  "languages": [
+    "pt"
+  ],
+  "other_text": "OP+",
+  "mood": [
+    "eerie",
+    "haunting",
+    "mysterious",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and ghostly imagery.",
+  "description": "A dark, eerie poster features a shadowy figure under a full moon with glowing text reading 'Memórias do Medo' and 'OP+' above."
+}

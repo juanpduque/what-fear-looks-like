@@ -1,0 +1,39 @@
+{
+  "title_text": "TERROR OF THE BUNNYMAN",
+  "credits_text": "HE NEVER STOPS.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DECEMBER 25",
+  "mood": [
+    "horror",
+    "thriller",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 1.0,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the horror theme and menacing expression.",
+  "description": "A person in a bunny mask peeks from behind a door with a menacing expression, with bold red text reading 'TERROR OF THE BUNNYMAN' and the release date December 25."
+}

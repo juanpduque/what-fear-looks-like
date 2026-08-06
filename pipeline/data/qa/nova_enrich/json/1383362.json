@@ -1,0 +1,37 @@
+{
+  "title_text": "SWITCHBLADE HOLIDAY",
+  "credits_text": "STEVEN ARIEFZ'S CAREN SCHROEDER HAVON BARAKA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EVERY HOLIDAY IS AT RISK.",
+  "mood": [
+    "thriller",
+    "suspense",
+    "holiday",
+    "dark",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the presence of a switchblade and intense expressions.",
+  "description": "A poster features two individuals with a switchblade knife, set against a dark background with bold red text reading 'SWITCHBLADE HOLIDAY.'"
+}

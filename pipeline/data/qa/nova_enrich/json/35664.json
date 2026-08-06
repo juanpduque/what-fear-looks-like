@@ -1,0 +1,42 @@
+{
+  "title_text": "THE ALPHA INCIDENT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "sci-fi",
+    "dystopia",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "brain",
+      "conf": 0.8
+    },
+    {
+      "name": "hands",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.1,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of a human brain and blood, suggesting violence and horror themes.",
+  "description": "A poster shows two hands cradling a human brain with blood, titled 'The Alpha Incident,' featuring a group of people below."
+}

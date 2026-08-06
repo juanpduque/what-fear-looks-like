@@ -1,0 +1,43 @@
+{
+  "title_text": "She + Demons of the Black Sun",
+  "credits_text": "ISABELLE STEPHEN MELANTHIA BLACKTHORNE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WRECK-BEACH INTERNATIONAL FILM FESTIVAL BEST HORROR 2000 \"...rough, violent, sexually charged, bloody and twisted...\" bumscorner.com",
+  "mood": [
+    "dark",
+    "intense",
+    "violent",
+    "erotic",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.6,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.5,
+  "violence": 0.7,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains violent and sexually charged imagery, suitable for mature audiences.",
+  "description": "A poster featuring a close-up of a menacing face and a woman holding a weapon, with bold title text and festival accolades."
+}

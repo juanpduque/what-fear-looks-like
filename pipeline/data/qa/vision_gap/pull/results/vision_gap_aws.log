@@ -1,0 +1,2311 @@
+=== vision_gap_chain start Wed Aug  5 14:02:50 UTC 2026 ===
+{
+    "UserId": "AROAYIJ24UMDFGSQJEH54:i-0b9c0b1f39d7c1f1c",
+    "Account": "567596065542",
+    "Arn": "arn:aws:sts::567596065542:assumed-role/wflike-ec2-role/i-0b9c0b1f39d7c1f1c"
+}
+--- apt/pip (retry + regional mirror on 503) ---
+Hit:1 http://security.ubuntu.com/ubuntu noble-security InRelease
+Hit:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble InRelease
+Hit:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:4 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-backports InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+python3-pip is already the newest version (24.0+dfsg-1ubuntu1.3).
+python3-venv is already the newest version (3.12.3-0ubuntu2.1).
+libglib2.0-0t64 is already the newest version (2.80.0-6ubuntu3.8).
+libglib2.0-0t64 set to manually installed.
+curl is already the newest version (8.5.0-2ubuntu10.11).
+ca-certificates is already the newest version (20260601~24.04.1).
+The following additional packages will be installed:
+  libdrm-intel1 libgbm1 libgl1-mesa-dri libglvnd0 libglx-mesa0 libglx0
+  libllvm20 libpciaccess0 libvulkan1 libwayland-client0 libx11-xcb1
+  libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-randr0 libxcb-shm0
+  libxcb-sync1 libxcb-xfixes0 libxshmfence1 libxxf86vm1 mesa-libgallium
+  mesa-vulkan-drivers
+The following NEW packages will be installed:
+  libdrm-intel1 libgbm1 libgl1 libgl1-mesa-dri libglvnd0 libglx-mesa0 libglx0
+  libllvm20 libpciaccess0 libvulkan1 libwayland-client0 libx11-xcb1
+  libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-randr0 libxcb-shm0
+  libxcb-sync1 libxcb-xfixes0 libxshmfence1 libxxf86vm1 mesa-libgallium
+  mesa-vulkan-drivers
+0 upgraded, 23 newly installed, 0 to remove and 35 not upgraded.
+Need to get 59.6 MB of archives.
+After this operation, 289 MB of additional disk space will be used.
+Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libpciaccess0 amd64 0.17-3ubuntu0.24.04.2 [18.9 kB]
+Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libdrm-intel1 amd64 2.4.125-1ubuntu0.1~24.04.2 [63.9 kB]
+Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libllvm20 amd64 1:20.1.2-0ubuntu1~24.04.3 [30.6 MB]
+Get:4 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libx11-xcb1 amd64 2:1.8.7-1build1 [7800 B]
+Get:5 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libxcb-dri3-0 amd64 1.15-1ubuntu2 [7142 B]
+Get:6 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libxcb-present0 amd64 1.15-1ubuntu2 [5676 B]
+Get:7 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libxcb-randr0 amd64 1.15-1ubuntu2 [17.9 kB]
+Get:8 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libxcb-sync1 amd64 1.15-1ubuntu2 [9312 B]
+Get:9 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libxcb-xfixes0 amd64 1.15-1ubuntu2 [10.2 kB]
+Get:10 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libxshmfence1 amd64 1.3-1build5 [4764 B]
+Get:11 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 mesa-libgallium amd64 25.2.8-0ubuntu0.24.04.2 [10.8 MB]
+Get:12 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libgbm1 amd64 25.2.8-0ubuntu0.24.04.2 [34.2 kB]
+Get:13 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libvulkan1 amd64 1.3.275.0-1build1 [142 kB]
+Get:14 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libgl1-mesa-dri amd64 25.2.8-0ubuntu0.24.04.2 [37.9 kB]
+Get:15 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libxcb-glx0 amd64 1.15-1ubuntu2 [24.8 kB]
+Get:16 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libxcb-shm0 amd64 1.15-1ubuntu2 [5756 B]
+Get:17 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libxxf86vm1 amd64 1:1.1.4-1build4 [9282 B]
+Get:18 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libglx-mesa0 amd64 25.2.8-0ubuntu0.24.04.2 [110 kB]
+Get:19 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libwayland-client0 amd64 1.22.0-2.1build1 [26.4 kB]
+Get:20 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 mesa-vulkan-drivers amd64 25.2.8-0ubuntu0.24.04.2 [17.5 MB]
+Ign:21 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libglvnd0 amd64 1.7.0-1build1
+Get:22 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libglx0 amd64 1.7.0-1build1 [38.6 kB]
+Get:23 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libgl1 amd64 1.7.0-1build1 [102 kB]
+Get:21 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libglvnd0 amd64 1.7.0-1build1 [69.6 kB]
+dpkg-preconfigure: unable to re-open stdin: No such file or directory
+Fetched 59.6 MB in 6min 41s (149 kB/s)
+Selecting previously unselected package libpciaccess0:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 88044 files and directories currently installed.)
+Preparing to unpack .../00-libpciaccess0_0.17-3ubuntu0.24.04.2_amd64.deb ...
+Unpacking libpciaccess0:amd64 (0.17-3ubuntu0.24.04.2) ...
+Selecting previously unselected package libdrm-intel1:amd64.
+Preparing to unpack .../01-libdrm-intel1_2.4.125-1ubuntu0.1~24.04.2_amd64.deb ...
+Unpacking libdrm-intel1:amd64 (2.4.125-1ubuntu0.1~24.04.2) ...
+Selecting previously unselected package libllvm20:amd64.
+Preparing to unpack .../02-libllvm20_1%3a20.1.2-0ubuntu1~24.04.3_amd64.deb ...
+Unpacking libllvm20:amd64 (1:20.1.2-0ubuntu1~24.04.3) ...
+Selecting previously unselected package libx11-xcb1:amd64.
+Preparing to unpack .../03-libx11-xcb1_2%3a1.8.7-1build1_amd64.deb ...
+Unpacking libx11-xcb1:amd64 (2:1.8.7-1build1) ...
+Selecting previously unselected package libxcb-dri3-0:amd64.
+Preparing to unpack .../04-libxcb-dri3-0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-dri3-0:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-present0:amd64.
+Preparing to unpack .../05-libxcb-present0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-present0:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-randr0:amd64.
+Preparing to unpack .../06-libxcb-randr0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-randr0:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-sync1:amd64.
+Preparing to unpack .../07-libxcb-sync1_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-sync1:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-xfixes0:amd64.
+Preparing to unpack .../08-libxcb-xfixes0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-xfixes0:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxshmfence1:amd64.
+Preparing to unpack .../09-libxshmfence1_1.3-1build5_amd64.deb ...
+Unpacking libxshmfence1:amd64 (1.3-1build5) ...
+Selecting previously unselected package mesa-libgallium:amd64.
+Preparing to unpack .../10-mesa-libgallium_25.2.8-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking mesa-libgallium:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Selecting previously unselected package libgbm1:amd64.
+Preparing to unpack .../11-libgbm1_25.2.8-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking libgbm1:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Selecting previously unselected package libvulkan1:amd64.
+Preparing to unpack .../12-libvulkan1_1.3.275.0-1build1_amd64.deb ...
+Unpacking libvulkan1:amd64 (1.3.275.0-1build1) ...
+Selecting previously unselected package libgl1-mesa-dri:amd64.
+Preparing to unpack .../13-libgl1-mesa-dri_25.2.8-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking libgl1-mesa-dri:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Selecting previously unselected package libxcb-glx0:amd64.
+Preparing to unpack .../14-libxcb-glx0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-glx0:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-shm0:amd64.
+Preparing to unpack .../15-libxcb-shm0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-shm0:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxxf86vm1:amd64.
+Preparing to unpack .../16-libxxf86vm1_1%3a1.1.4-1build4_amd64.deb ...
+Unpacking libxxf86vm1:amd64 (1:1.1.4-1build4) ...
+Selecting previously unselected package libglx-mesa0:amd64.
+Preparing to unpack .../17-libglx-mesa0_25.2.8-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking libglx-mesa0:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Selecting previously unselected package libwayland-client0:amd64.
+Preparing to unpack .../18-libwayland-client0_1.22.0-2.1build1_amd64.deb ...
+Unpacking libwayland-client0:amd64 (1.22.0-2.1build1) ...
+Selecting previously unselected package mesa-vulkan-drivers:amd64.
+Preparing to unpack .../19-mesa-vulkan-drivers_25.2.8-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking mesa-vulkan-drivers:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Selecting previously unselected package libglvnd0:amd64.
+Preparing to unpack .../20-libglvnd0_1.7.0-1build1_amd64.deb ...
+Unpacking libglvnd0:amd64 (1.7.0-1build1) ...
+Selecting previously unselected package libglx0:amd64.
+Preparing to unpack .../21-libglx0_1.7.0-1build1_amd64.deb ...
+Unpacking libglx0:amd64 (1.7.0-1build1) ...
+Selecting previously unselected package libgl1:amd64.
+Preparing to unpack .../22-libgl1_1.7.0-1build1_amd64.deb ...
+Unpacking libgl1:amd64 (1.7.0-1build1) ...
+Setting up libxcb-dri3-0:amd64 (1.15-1ubuntu2) ...
+Setting up libx11-xcb1:amd64 (2:1.8.7-1build1) ...
+Setting up libpciaccess0:amd64 (0.17-3ubuntu0.24.04.2) ...
+Setting up libxcb-xfixes0:amd64 (1.15-1ubuntu2) ...
+Setting up libglvnd0:amd64 (1.7.0-1build1) ...
+Setting up libxcb-glx0:amd64 (1.15-1ubuntu2) ...
+Setting up libdrm-intel1:amd64 (2.4.125-1ubuntu0.1~24.04.2) ...
+Setting up libxcb-shm0:amd64 (1.15-1ubuntu2) ...
+Setting up libxxf86vm1:amd64 (1:1.1.4-1build4) ...
+Setting up libxcb-present0:amd64 (1.15-1ubuntu2) ...
+Setting up libxcb-sync1:amd64 (1.15-1ubuntu2) ...
+Setting up libllvm20:amd64 (1:20.1.2-0ubuntu1~24.04.3) ...
+Setting up libvulkan1:amd64 (1.3.275.0-1build1) ...
+Setting up libxshmfence1:amd64 (1.3-1build5) ...
+Setting up libxcb-randr0:amd64 (1.15-1ubuntu2) ...
+Setting up libwayland-client0:amd64 (1.22.0-2.1build1) ...
+Setting up mesa-vulkan-drivers:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Setting up mesa-libgallium:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Setting up libgbm1:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Setting up libgl1-mesa-dri:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Setting up libglx-mesa0:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Setting up libglx0:amd64 (1.7.0-1build1) ...
+Setting up libgl1:amd64 (1.7.0-1build1) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.8) ...
+
+Running kernel seems to be up-to-date.
+
+Restarting services...
+
+Service restarts being deferred:
+ systemctl restart cloud-final.service
+ /etc/needrestart/restart.d/dbus.service
+ systemctl restart getty@tty1.service
+ systemctl restart networkd-dispatcher.service
+ systemctl restart serial-getty@ttyS0.service
+ systemctl restart systemd-logind.service
+ systemctl restart unattended-upgrades.service
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+cuda False torch 2.13.0+cpu
+--- download TODO posters ---
+todo=27359 already=0 need=27359
+  fetch 500/27359 ok=500 miss=0
+  fetch 1000/27359 ok=1000 miss=0
+  fetch 1500/27359 ok=1500 miss=0
+  fetch 2000/27359 ok=2000 miss=0
+  fetch 2500/27359 ok=2500 miss=0
+  fetch 3000/27359 ok=3000 miss=0
+  fetch 3500/27359 ok=3500 miss=0
+  fetch 4000/27359 ok=4000 miss=0
+  fetch 4500/27359 ok=4500 miss=0
+  fetch 5000/27359 ok=5000 miss=0
+  fetch 5500/27359 ok=5500 miss=0
+  fetch 6000/27359 ok=6000 miss=0
+  fetch 6500/27359 ok=6500 miss=0
+  fetch 7000/27359 ok=7000 miss=0
+  fetch 7500/27359 ok=7500 miss=0
+  fetch 8000/27359 ok=8000 miss=0
+  fetch 8500/27359 ok=8500 miss=0
+  fetch 9000/27359 ok=9000 miss=0
+  fetch 9500/27359 ok=9500 miss=0
+  fetch 10000/27359 ok=10000 miss=0
+  fetch 10500/27359 ok=10500 miss=0
+  fetch 11000/27359 ok=11000 miss=0
+  fetch 11500/27359 ok=11500 miss=0
+  fetch 12000/27359 ok=12000 miss=0
+  fetch 12500/27359 ok=12500 miss=0
+  fetch 13000/27359 ok=13000 miss=0
+  fetch 13500/27359 ok=13500 miss=0
+  fetch 14000/27359 ok=14000 miss=0
+  fetch 14500/27359 ok=14500 miss=0
+  fetch 15000/27359 ok=15000 miss=0
+  fetch 15500/27359 ok=15500 miss=0
+  fetch 16000/27359 ok=16000 miss=0
+  fetch 16500/27359 ok=16500 miss=0
+  fetch 17000/27359 ok=17000 miss=0
+  fetch 17500/27359 ok=17500 miss=0
+  fetch 18000/27359 ok=18000 miss=0
+  fetch 18500/27359 ok=18500 miss=0
+  fetch 19000/27359 ok=19000 miss=0
+  fetch 19500/27359 ok=19500 miss=0
+  fetch 20000/27359 ok=20000 miss=0
+  fetch 20500/27359 ok=20500 miss=0
+  fetch 21000/27359 ok=21000 miss=0
+  fetch 21500/27359 ok=21500 miss=0
+  fetch 22000/27359 ok=22000 miss=0
+  fetch 22500/27359 ok=22500 miss=0
+  fetch 23000/27359 ok=23000 miss=0
+  fetch 23500/27359 ok=23500 miss=0
+  fetch 24000/27359 ok=24000 miss=0
+  fetch 24500/27359 ok=24500 miss=0
+  fetch 25000/27359 ok=25000 miss=0
+  fetch 25500/27359 ok=25500 miss=0
+  fetch 26000/27359 ok=26000 miss=0
+  fetch 26500/27359 ok=26500 miss=0
+  fetch 27000/27359 ok=27000 miss=0
+  fetch 27359/27359 ok=27359 miss=0
+LISTO posters_on_disk=27359 fetch_ok=27359 fetch_miss=0
+{"ts": "2026-08-05T14:31:26Z", "phase": "download_posters", "faces_v2": 37842, "attributes": 37842, "segmentation": 37842, "medium": 37842, "census": 37842, "typography": 37842, "clip_embeddings": 37842, "posters_on_disk": 27359}
+--- faces_v2 ---
+seeded faces_v2_partial.csv from faces_v2.csv 37842
+[ WARN:0@0.235] global net_impl_backend.cpp:345 setPreferableTarget Targets are not supported by the new graph engine for now
+pendientes: 27,359/65,201
+  checkpoint +500 (38,342/65,201) 40/s
+  checkpoint +500 (38,842/65,201) 22/s
+  checkpoint +500 (39,342/65,201) 15/s
+  checkpoint +500 (39,842/65,201) 12/s
+  checkpoint +500 (40,342/65,201) 10/s
+  checkpoint +500 (40,842/65,201) 9/s
+  checkpoint +500 (41,342/65,201) 8/s
+  checkpoint +500 (41,842/65,201) 7/s
+  checkpoint +500 (42,342/65,201) 6/s
+  checkpoint +500 (42,842/65,201) 6/s
+  checkpoint +500 (43,342/65,201) 5/s
+  checkpoint +500 (43,842/65,201) 5/s
+  checkpoint +500 (44,342/65,201) 4/s
+  checkpoint +500 (44,842/65,201) 4/s
+  checkpoint +500 (45,342/65,201) 4/s
+  checkpoint +500 (45,842/65,201) 4/s
+  checkpoint +500 (46,342/65,201) 3/s
+  checkpoint +500 (46,842/65,201) 3/s
+  checkpoint +500 (47,342/65,201) 3/s
+  checkpoint +500 (47,842/65,201) 3/s
+  checkpoint +500 (48,342/65,201) 3/s
+  checkpoint +500 (48,842/65,201) 3/s
+  checkpoint +500 (49,342/65,201) 3/s
+{"ts": "2026-08-05T14:34:45Z", "phase": "sync", "faces_v2": 49342, "attributes": 37842, "segmentation": 37842, "medium": 37842, "census": 37842, "typography": 37842, "clip_embeddings": 37842, "posters_on_disk": 27359}
+  checkpoint +500 (49,842/65,201) 2/s
+  checkpoint +500 (50,342/65,201) 2/s
+  checkpoint +500 (50,842/65,201) 2/s
+  checkpoint +500 (51,342/65,201) 2/s
+  checkpoint +500 (51,842/65,201) 2/s
+  checkpoint +500 (52,342/65,201) 2/s
+  checkpoint +500 (52,842/65,201) 2/s
+  checkpoint +500 (53,342/65,201) 2/s
+  checkpoint +500 (53,842/65,201) 2/s
+  checkpoint +500 (54,342/65,201) 2/s
+  checkpoint +500 (54,842/65,201) 2/s
+  checkpoint +500 (55,342/65,201) 2/s
+  checkpoint +500 (55,842/65,201) 2/s
+  checkpoint +500 (56,342/65,201) 2/s
+  checkpoint +500 (56,842/65,201) 2/s
+  checkpoint +500 (57,342/65,201) 2/s
+  checkpoint +500 (57,842/65,201) 1/s
+  checkpoint +500 (58,342/65,201) 1/s
+  checkpoint +500 (58,842/65,201) 1/s
+  checkpoint +500 (59,342/65,201) 1/s
+  checkpoint +500 (59,842/65,201) 1/s
+  checkpoint +500 (60,342/65,201) 1/s
+{"ts": "2026-08-05T14:38:04Z", "phase": "sync", "faces_v2": 60342, "attributes": 37842, "segmentation": 37842, "medium": 37842, "census": 37842, "typography": 37842, "clip_embeddings": 37842, "posters_on_disk": 27359}
+  checkpoint +500 (60,842/65,201) 1/s
+  checkpoint +500 (61,342/65,201) 1/s
+  checkpoint +500 (61,842/65,201) 1/s
+  checkpoint +500 (62,342/65,201) 1/s
+  checkpoint +500 (62,842/65,201) 1/s
+  checkpoint +500 (63,342/65,201) 1/s
+  checkpoint +500 (63,842/65,201) 1/s
+  checkpoint +500 (64,342/65,201) 1/s
+  checkpoint +500 (64,842/65,201) 1/s
+total: 65,201/65,201 | 1/s
+
+=== YuNet POR DECADA ===
+            n  mean_faces  pct_with_face  face_area
+decade                                             
+1890       16       0.500          0.375      0.004
+1900       44       0.455          0.318      0.005
+1910      129       0.992          0.628      0.026
+1920      147       1.102          0.605      0.037
+1930      232       1.440          0.655      0.062
+1940      260       2.254          0.831      0.076
+1950      488       1.932          0.766      0.053
+1960     1163       1.660          0.674      0.053
+1970     2144       1.409          0.648      0.054
+1980     3055       1.522          0.640      0.054
+1990     3647       1.496          0.653      0.068
+2000     7738       1.325          0.570      0.070
+2010    18794       1.117          0.510      0.055
+2020    26067       0.984          0.466      0.052
+con face_boxes: 34,039/65,201
+
+=== YuNet POR DECADA ===
+            n  mean_faces  pct_with_face  face_area
+decade                                             
+1890       16       0.500          0.375      0.004
+1900       44       0.455          0.318      0.005
+1910      129       0.992          0.628      0.026
+1920      147       1.102          0.605      0.037
+1930      232       1.440          0.655      0.062
+1940      260       2.254          0.831      0.076
+1950      488       1.932          0.766      0.053
+1960     1163       1.660          0.674      0.053
+1970     2144       1.409          0.648      0.054
+1980     3055       1.522          0.640      0.054
+1990     3647       1.496          0.653      0.068
+2000     7738       1.325          0.570      0.070
+2010    18794       1.117          0.510      0.055
+2020    26067       0.984          0.466      0.052
+con face_boxes: 34,039/65,201
+faces_v2 forced finalize 65201
+{"ts": "2026-08-05T14:39:47Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 37842, "medium": 37842, "census": 37842, "typography": 37842, "clip_embeddings": 37842, "posters_on_disk": 27359}
+--- attributes (multi_analyze) ---
+seeded attributes_partial.csv from attributes.csv 37842
+pending: 27,359 / 65,201
+{"ts": "2026-08-05T14:41:23Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 37842, "medium": 37842, "census": 37842, "typography": 37842, "clip_embeddings": 37842, "posters_on_disk": 27359}
+{"ts": "2026-08-05T14:44:41Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 37842, "medium": 37842, "census": 37842, "typography": 37842, "clip_embeddings": 37842, "posters_on_disk": 27359}
+{"ts": "2026-08-05T14:47:59Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 37842, "medium": 37842, "census": 37842, "typography": 37842, "clip_embeddings": 37842, "posters_on_disk": 27359}
+skipped miss=0 fail=27359
+  523: AttributeError: module 'cv2' has no attribute 'saliency'
+  572: AttributeError: module 'cv2' has no attribute 'saliency'
+  793: AttributeError: module 'cv2' has no attribute 'saliency'
+  827: AttributeError: module 'cv2' has no attribute 'saliency'
+  919: AttributeError: module 'cv2' has no attribute 'saliency'
+  1255: AttributeError: module 'cv2' has no attribute 'saliency'
+  1256: AttributeError: module 'cv2' has no attribute 'saliency'
+  1433: AttributeError: module 'cv2' has no attribute 'saliency'
+checkpoint covers 37,842/65,201
+not finalizing yet — need 27359 more
+attributes published 37842
+{"ts": "2026-08-05T14:50:13Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 37842, "medium": 37842, "census": 37842, "typography": 37842, "clip_embeddings": 37842, "posters_on_disk": 27359}
+--- clip_embed ---
+device: cpu
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/ubuntu/aof/.venv-vision/lib/python3.12/site-packages/open_clip/factory.py:450: UserWarning: QuickGELU mismatch between final model config (quick_gelu=False) and pretrained tag 'openai' (quick_gelu=True).
+  warnings.warn(
+sembrando desde clip_embeddings.npz: 37,842 ya embebidos
+pending embed: 27,359
+  38,418/65,201 (22/s)
+{"ts": "2026-08-05T14:51:19Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 37842, "medium": 37842, "census": 37842, "typography": 37842, "clip_embeddings": 38418, "posters_on_disk": 27359}
+  39,698/65,201 (24/s)
+  40,978/65,201 (26/s)
+  42,258/65,201 (27/s)
+  43,538/65,201 (27/s)
+{"ts": "2026-08-05T14:54:39Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 37842, "medium": 37842, "census": 37842, "typography": 37842, "clip_embeddings": 43538, "posters_on_disk": 27359}
+  44,818/65,201 (28/s)
+  46,098/65,201 (28/s)
+  47,378/65,201 (27/s)
+  48,658/65,201 (27/s)
+  49,938/65,201 (27/s)
+{"ts": "2026-08-05T14:57:58Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 37842, "medium": 37842, "census": 37842, "typography": 37842, "clip_embeddings": 49938, "posters_on_disk": 27359}
+  51,218/65,201 (27/s)
+  52,498/65,201 (27/s)
+  53,778/65,201 (26/s)
+{"ts": "2026-08-05T15:01:18Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 37842, "medium": 37842, "census": 37842, "typography": 37842, "clip_embeddings": 53778, "posters_on_disk": 27359}
+  55,058/65,201 (26/s)
+  56,338/65,201 (26/s)
+  57,618/65,201 (26/s)
+/home/ubuntu/aof/.venv-vision/lib/python3.12/site-packages/PIL/Image.py:3578: DecompressionBombWarning: Image size (97200000 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+  58,898/65,201 (26/s)
+/home/ubuntu/aof/.venv-vision/lib/python3.12/site-packages/PIL/Image.py:3578: DecompressionBombWarning: Image size (99878400 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+{"ts": "2026-08-05T15:04:38Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 37842, "medium": 37842, "census": 37842, "typography": 37842, "clip_embeddings": 58898, "posters_on_disk": 27359}
+  60,178/65,201 (25/s)
+  61,458/65,201 (25/s)
+  62,738/65,201 (25/s)
+{"ts": "2026-08-05T15:07:57Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 37842, "medium": 37842, "census": 37842, "typography": 37842, "clip_embeddings": 62738, "posters_on_disk": 27359}
+  64,018/65,201 (24/s)
+LISTO: 65,201 embeddings -> /home/ubuntu/aof/pipeline/data/clip_embeddings.npz
+{"ts": "2026-08-05T15:09:42Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 37842, "medium": 37842, "census": 37842, "typography": 37842, "clip_embeddings": 65201, "posters_on_disk": 27359}
+--- census / typography / medium ---
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+WARNING:huggingface_hub.utils._http:Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+/home/ubuntu/aof/.venv-vision/lib/python3.12/site-packages/open_clip/factory.py:450: UserWarning: QuickGELU mismatch between final model config (quick_gelu=False) and pretrained tag 'openai' (quick_gelu=True).
+  warnings.warn(
+/home/ubuntu/aof/pipeline/clip_census.py:144: Pandas4Warning: Starting with pandas version 4.0 all arguments of sum will be keyword-only.
+  .pipe(lambda x: x.div(x.sum(1), axis=0)).round(4))
+=== TOP CRIATURA POR DECADA (excl. none/uncertain) ===
+1890: ghost 18.8% · skeleton 12.5% · bird 6.2%
+1900: ghost 13.6% · doll 9.1% · demon 6.8%
+1910: witch 7.0% · ghost 5.4% · snake 2.3%
+1920: ghost 5.4% · werewolf 2.7% · doll 2.0%
+1930: doll 3.9% · werewolf 3.5% · skeleton 3.0%
+1940: ghost 5.0% · werewolf 3.5% · skeleton 3.1%
+1950: werewolf 3.5% · giant_monster 2.7% · skeleton 2.5%
+1960: vampire 2.9% · witch 2.8% · skeleton 2.6%
+1970: witch 5.2% · demon 3.1% · skeleton 3.1%
+1980: witch 2.7% · masked_killer 2.6% · skeleton 2.6%
+1990: witch 3.0% · vampire 2.8% · masked_killer 2.8%
+2000: zombie 4.7% · demon 3.5% · ghost 3.4%
+2010: zombie 4.3% · ghost 3.5% · demon 2.8%
+2020: ghost 4.8% · demon 2.5% · masked_killer 2.1%
+
+=== % con criatura / % con animal ===
+        creature  animal
+decade                  
+1890       0.438   0.062
+1900       0.318   0.000
+1910       0.225   0.054
+1920       0.190   0.014
+1930       0.198   0.013
+1940       0.242   0.027
+1950       0.223   0.033
+1960       0.208   0.024
+1970       0.268   0.036
+1980       0.227   0.026
+1990       0.243   0.027
+2000       0.264   0.021
+2010       0.242   0.018
+2020       0.219   0.023
+/home/ubuntu/aof/.venv-vision/lib/python3.12/site-packages/open_clip/factory.py:450: UserWarning: QuickGELU mismatch between final model config (quick_gelu=False) and pretrained tag 'openai' (quick_gelu=True).
+  warnings.warn(
+/home/ubuntu/aof/pipeline/clip_typography_axis.py:136: Pandas4Warning: Starting with pandas version 4.0 all arguments of sum will be keyword-only.
+  share = sh.div(sh.sum(1), axis=0).round(4)
+/home/ubuntu/aof/pipeline/clip_typography_axis.py:138: Pandas4Warning: Starting with pandas version 4.0 all arguments of sum will be keyword-only.
+  n = sh.sum(1)
+=== SHARE DE REGISTRO TIPOGRAFICO POR DECADA ===
+dec         ornate  decorative    standard       clean     minimal      mean      n
+1920         51.7%       25.2%       11.6%        7.5%        4.1%   +0.0165    147
+1930         57.3%       20.7%        9.5%        8.6%        3.9%   +0.0180    232
+1940         66.5%       18.1%        7.3%        6.2%        1.9%   +0.0200    260
+1950         63.7%       20.1%        6.3%        6.3%        3.5%   +0.0194    488
+1960         48.9%       20.7%       13.2%        9.8%        7.4%   +0.0151   1163
+1970         38.5%       25.1%       15.3%       11.6%        9.5%   +0.0127   2144
+1980         40.8%       25.0%       16.3%       11.3%        6.6%   +0.0137   3055
+1990         32.5%       24.9%       18.8%       14.5%        9.3%   +0.0107   3647
+2000         20.7%       25.3%       23.2%       18.3%       12.6%   +0.0072   7738
+2010         16.0%       20.4%       21.8%       21.8%       20.0%   +0.0042  18794
+2020         14.1%       16.6%       19.7%       22.7%       26.9%   +0.0021  26067
+
+Pearson(decada, mean_axis) = -0.918
+device: cpu
+/home/ubuntu/aof/.venv-vision/lib/python3.12/site-packages/open_clip/factory.py:450: UserWarning: QuickGELU mismatch between final model config (quick_gelu=False) and pretrained tag 'openai' (quick_gelu=True).
+  warnings.warn(
+resumiendo medium: 37,842 done, 27,359 pending
+  1280/27359
+{"ts": "2026-08-05T15:11:16Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 37842, "medium": 37842, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  2560/27359
+  3840/27359
+  5120/27359
+  6400/27359
+  7680/27359
+{"ts": "2026-08-05T15:14:35Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 37842, "medium": 37842, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  8960/27359
+  10240/27359
+  11520/27359
+  12800/27359
+{"ts": "2026-08-05T15:17:53Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 37842, "medium": 37842, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  14080/27359
+  15360/27359
+  16640/27359
+  17920/27359
+{"ts": "2026-08-05T15:21:12Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 37842, "medium": 37842, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  19200/27359
+  20480/27359
+/home/ubuntu/aof/.venv-vision/lib/python3.12/site-packages/PIL/Image.py:3578: DecompressionBombWarning: Image size (97200000 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+/home/ubuntu/aof/.venv-vision/lib/python3.12/site-packages/PIL/Image.py:3578: DecompressionBombWarning: Image size (99878400 pixels) exceeds limit of 89478485 pixels, could be decompression bomb DOS attack.
+  warnings.warn(
+  21760/27359
+{"ts": "2026-08-05T15:24:31Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 37842, "medium": 37842, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  23040/27359
+  24320/27359
+  25600/27359
+{"ts": "2026-08-05T15:27:49Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 37842, "medium": 37842, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  26880/27359
+
+% ilustrado por lustro (5yr rolling):
+year
+1900     4.0
+1905    16.7
+1910    33.6
+1915    31.6
+1920    53.7
+1925    52.3
+1930    50.2
+1935    55.3
+1940    50.1
+1945    68.2
+1950    38.5
+1955    55.3
+1960    50.1
+1965    50.7
+1970    43.3
+1975    43.2
+1980    38.7
+1985    36.5
+1990    28.7
+1995    19.3
+2000    10.9
+2005    10.1
+2010    10.5
+2015    12.3
+2020    13.0
+2025    12.7
+
+CRUCE 50% (muerte del póster pintado): 1897
+check Creepshow (1982): p_painted=0.48
+check The Evil Dead (1981): p_painted=0.62
+check Scream (1949): p_painted=0.92
+check Hereditary (2018): p_painted=0.01
+{"ts": "2026-08-05T15:28:32Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 37842, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+--- segmentation ---
+seeded segmentation_partial.csv from segmentation.csv 37842
+pending: 27,359 / 65,201
+loading models (SegFormer-b0, Minc-Materials-23, CLIP ViT-B-32)...
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/208 [00:00<?, ?it/s]Loading weights: 100%|██████████| 208/208 [00:00<00:00, 8710.39it/s]
+[transformers] Model config: bos_token_id must be `None` or an integer within the vocabulary (between 0 and 31999), got 49406. This may result in unexpected behavior.
+[transformers] Model config: eos_token_id must be `None` or an integer within the vocabulary (between 0 and 31999), got 49407. This may result in unexpected behavior.
+Loading weights:   0%|          | 0/210 [00:00<?, ?it/s]Loading weights: 100%|██████████| 210/210 [00:00<00:00, 8335.81it/s]
+  16/27,359 | 3.03/s
+  32/27,359 | 3.12/s
+  48/27,359 | 3.16/s
+  64/27,359 | 3.16/s
+  80/27,359 | 3.17/s
+  96/27,359 | 3.15/s
+  112/27,359 | 3.09/s
+  128/27,359 | 3.12/s
+  144/27,359 | 3.14/s
+  160/27,359 | 3.11/s
+  176/27,359 | 3.13/s
+  192/27,359 | 3.13/s
+  208/27,359 | 3.14/s
+  224/27,359 | 3.13/s
+  240/27,359 | 3.14/s
+  256/27,359 | 3.14/s
+  272/27,359 | 3.15/s
+  288/27,359 | 3.17/s
+  304/27,359 | 3.16/s
+  320/27,359 | 3.18/s
+  336/27,359 | 3.17/s
+  352/27,359 | 3.15/s
+  368/27,359 | 3.09/s
+  384/27,359 | 3.02/s
+  400/27,359 | 2.95/s
+{"ts": "2026-08-05T15:31:18Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 38242, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  416/27,359 | 2.92/s
+  432/27,359 | 2.93/s
+  448/27,359 | 2.94/s
+  464/27,359 | 2.95/s
+  480/27,359 | 2.97/s
+  496/27,359 | 2.96/s
+  512/27,359 | 2.97/s
+  528/27,359 | 2.98/s
+  544/27,359 | 3.00/s
+  560/27,359 | 3.01/s
+  576/27,359 | 3.02/s
+  592/27,359 | 3.03/s
+  608/27,359 | 3.03/s
+  624/27,359 | 3.03/s
+  640/27,359 | 3.04/s
+  656/27,359 | 3.04/s
+  672/27,359 | 3.05/s
+  688/27,359 | 3.05/s
+  704/27,359 | 3.06/s
+  720/27,359 | 3.06/s
+  736/27,359 | 3.07/s
+  752/27,359 | 3.07/s
+  768/27,359 | 3.07/s
+  784/27,359 | 3.08/s
+  800/27,359 | 3.07/s
+  816/27,359 | 3.08/s
+  832/27,359 | 3.08/s
+  848/27,359 | 3.09/s
+  864/27,359 | 3.10/s
+  880/27,359 | 3.10/s
+  896/27,359 | 3.10/s
+  912/27,359 | 3.10/s
+  928/27,359 | 3.11/s
+  944/27,359 | 3.11/s
+  960/27,359 | 3.11/s
+  976/27,359 | 3.12/s
+  992/27,359 | 3.12/s
+  1,008/27,359 | 3.10/s
+  1,024/27,359 | 3.08/s
+  1,040/27,359 | 3.06/s
+{"ts": "2026-08-05T15:34:48Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 38882, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  1,056/27,359 | 3.03/s
+  1,072/27,359 | 3.03/s
+  1,088/27,359 | 3.03/s
+  1,104/27,359 | 3.04/s
+  1,120/27,359 | 3.04/s
+  1,136/27,359 | 3.04/s
+  1,152/27,359 | 3.05/s
+  1,168/27,359 | 3.05/s
+  1,184/27,359 | 3.05/s
+  1,200/27,359 | 3.06/s
+  1,216/27,359 | 3.06/s
+  1,232/27,359 | 3.06/s
+  1,248/27,359 | 3.07/s
+  1,264/27,359 | 3.07/s
+  1,280/27,359 | 3.07/s
+  1,296/27,359 | 3.07/s
+  1,312/27,359 | 3.07/s
+  1,328/27,359 | 3.08/s
+  1,344/27,359 | 3.08/s
+  1,360/27,359 | 3.08/s
+  1,376/27,359 | 3.09/s
+  1,392/27,359 | 3.09/s
+  1,408/27,359 | 3.09/s
+  1,424/27,359 | 3.09/s
+  1,440/27,359 | 3.10/s
+  1,456/27,359 | 3.10/s
+  1,472/27,359 | 3.10/s
+  1,488/27,359 | 3.10/s
+  1,504/27,359 | 3.11/s
+  1,520/27,359 | 3.10/s
+  1,536/27,359 | 3.11/s
+  1,552/27,359 | 3.11/s
+  1,568/27,359 | 3.11/s
+  1,584/27,359 | 3.11/s
+  1,600/27,359 | 3.11/s
+  1,616/27,359 | 3.12/s
+  1,632/27,359 | 3.12/s
+  1,648/27,359 | 3.12/s
+  1,664/27,359 | 3.11/s
+  1,680/27,359 | 3.10/s
+  1,696/27,359 | 3.08/s
+{"ts": "2026-08-05T15:38:18Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 39522, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  1,712/27,359 | 3.07/s
+  1,728/27,359 | 3.07/s
+  1,744/27,359 | 3.07/s
+  1,760/27,359 | 3.07/s
+  1,776/27,359 | 3.07/s
+  1,792/27,359 | 3.07/s
+  1,808/27,359 | 3.07/s
+  1,824/27,359 | 3.07/s
+  1,840/27,359 | 3.08/s
+  1,856/27,359 | 3.08/s
+  1,872/27,359 | 3.08/s
+  1,888/27,359 | 3.08/s
+  1,904/27,359 | 3.08/s
+  1,920/27,359 | 3.09/s
+  1,936/27,359 | 3.09/s
+  1,952/27,359 | 3.09/s
+  1,968/27,359 | 3.09/s
+  1,984/27,359 | 3.09/s
+  2,000/27,359 | 3.09/s
+  2,016/27,359 | 3.10/s
+  2,032/27,359 | 3.10/s
+  2,048/27,359 | 3.10/s
+  2,064/27,359 | 3.11/s
+  2,080/27,359 | 3.11/s
+  2,096/27,359 | 3.11/s
+  2,112/27,359 | 3.11/s
+  2,128/27,359 | 3.11/s
+  2,144/27,359 | 3.12/s
+  2,160/27,359 | 3.12/s
+  2,176/27,359 | 3.12/s
+  2,192/27,359 | 3.12/s
+  2,208/27,359 | 3.12/s
+  2,224/27,359 | 3.12/s
+  2,240/27,359 | 3.13/s
+  2,256/27,359 | 3.13/s
+  2,272/27,359 | 3.13/s
+  2,288/27,359 | 3.13/s
+  2,304/27,359 | 3.13/s
+  2,320/27,359 | 3.13/s
+  2,336/27,359 | 3.12/s
+  2,352/27,359 | 3.11/s
+  2,368/27,359 | 3.10/s
+{"ts": "2026-08-05T15:41:47Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 40162, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  2,384/27,359 | 3.09/s
+  2,400/27,359 | 3.09/s
+  2,416/27,359 | 3.09/s
+  2,432/27,359 | 3.10/s
+  2,448/27,359 | 3.10/s
+  2,464/27,359 | 3.10/s
+  2,480/27,359 | 3.10/s
+  2,496/27,359 | 3.10/s
+  2,512/27,359 | 3.10/s
+  2,528/27,359 | 3.10/s
+  2,544/27,359 | 3.11/s
+  2,560/27,359 | 3.11/s
+  2,576/27,359 | 3.11/s
+  2,592/27,359 | 3.11/s
+  2,608/27,359 | 3.11/s
+  2,624/27,359 | 3.11/s
+  2,640/27,359 | 3.11/s
+  2,656/27,359 | 3.12/s
+  2,672/27,359 | 3.12/s
+  2,688/27,359 | 3.12/s
+  2,704/27,359 | 3.12/s
+  2,720/27,359 | 3.12/s
+  2,736/27,359 | 3.12/s
+  2,752/27,359 | 3.12/s
+  2,768/27,359 | 3.13/s
+  2,784/27,359 | 3.13/s
+  2,800/27,359 | 3.13/s
+  2,816/27,359 | 3.13/s
+  2,832/27,359 | 3.13/s
+  2,848/27,359 | 3.13/s
+  2,864/27,359 | 3.13/s
+  2,880/27,359 | 3.13/s
+  2,896/27,359 | 3.13/s
+  2,912/27,359 | 3.14/s
+  2,928/27,359 | 3.14/s
+  2,944/27,359 | 3.14/s
+  2,960/27,359 | 3.14/s
+  2,976/27,359 | 3.14/s
+  2,992/27,359 | 3.13/s
+  3,008/27,359 | 3.13/s
+  3,024/27,359 | 3.12/s
+{"ts": "2026-08-05T15:45:17Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 40802, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  3,040/27,359 | 3.11/s
+  3,056/27,359 | 3.11/s
+  3,072/27,359 | 3.11/s
+  3,088/27,359 | 3.11/s
+  3,104/27,359 | 3.11/s
+  3,120/27,359 | 3.11/s
+  3,136/27,359 | 3.12/s
+  3,152/27,359 | 3.12/s
+  3,168/27,359 | 3.12/s
+  3,184/27,359 | 3.12/s
+  3,200/27,359 | 3.12/s
+  3,216/27,359 | 3.12/s
+  3,232/27,359 | 3.12/s
+  3,248/27,359 | 3.12/s
+  3,264/27,359 | 3.13/s
+  3,280/27,359 | 3.13/s
+  3,296/27,359 | 3.13/s
+  3,312/27,359 | 3.13/s
+  3,328/27,359 | 3.13/s
+  3,344/27,359 | 3.13/s
+  3,360/27,359 | 3.13/s
+  3,376/27,359 | 3.13/s
+  3,392/27,359 | 3.13/s
+  3,408/27,359 | 3.13/s
+  3,424/27,359 | 3.13/s
+  3,440/27,359 | 3.14/s
+  3,456/27,359 | 3.14/s
+  3,472/27,359 | 3.14/s
+  3,488/27,359 | 3.14/s
+  3,504/27,359 | 3.14/s
+  3,520/27,359 | 3.14/s
+  3,536/27,359 | 3.14/s
+  3,552/27,359 | 3.14/s
+  3,568/27,359 | 3.15/s
+  3,584/27,359 | 3.15/s
+  3,600/27,359 | 3.15/s
+  3,616/27,359 | 3.15/s
+  3,632/27,359 | 3.15/s
+  3,648/27,359 | 3.15/s
+  3,664/27,359 | 3.15/s
+  3,680/27,359 | 3.14/s
+  3,696/27,359 | 3.13/s
+{"ts": "2026-08-05T15:48:47Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 41522, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  3,712/27,359 | 3.13/s
+  3,728/27,359 | 3.13/s
+  3,744/27,359 | 3.13/s
+  3,760/27,359 | 3.13/s
+  3,776/27,359 | 3.13/s
+  3,792/27,359 | 3.13/s
+  3,808/27,359 | 3.13/s
+  3,824/27,359 | 3.13/s
+  3,840/27,359 | 3.13/s
+  3,856/27,359 | 3.13/s
+  3,872/27,359 | 3.13/s
+  3,888/27,359 | 3.13/s
+  3,904/27,359 | 3.13/s
+  3,920/27,359 | 3.13/s
+  3,936/27,359 | 3.14/s
+  3,952/27,359 | 3.14/s
+  3,968/27,359 | 3.14/s
+  3,984/27,359 | 3.14/s
+  4,000/27,359 | 3.14/s
+  4,016/27,359 | 3.14/s
+  4,032/27,359 | 3.14/s
+  4,048/27,359 | 3.14/s
+  4,064/27,359 | 3.14/s
+  4,080/27,359 | 3.14/s
+  4,096/27,359 | 3.14/s
+  4,112/27,359 | 3.14/s
+  4,128/27,359 | 3.14/s
+  4,144/27,359 | 3.14/s
+  4,160/27,359 | 3.14/s
+  4,176/27,359 | 3.14/s
+  4,192/27,359 | 3.15/s
+  4,208/27,359 | 3.15/s
+  4,224/27,359 | 3.15/s
+  4,240/27,359 | 3.15/s
+  4,256/27,359 | 3.15/s
+  4,272/27,359 | 3.15/s
+  4,288/27,359 | 3.15/s
+  4,304/27,359 | 3.15/s
+  4,320/27,359 | 3.15/s
+  4,336/27,359 | 3.15/s
+  4,352/27,359 | 3.14/s
+  4,368/27,359 | 3.14/s
+{"ts": "2026-08-05T15:52:18Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 42162, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  4,384/27,359 | 3.13/s
+  4,400/27,359 | 3.13/s
+  4,416/27,359 | 3.13/s
+  4,432/27,359 | 3.13/s
+  4,448/27,359 | 3.13/s
+  4,464/27,359 | 3.14/s
+  4,480/27,359 | 3.14/s
+  4,496/27,359 | 3.14/s
+  4,512/27,359 | 3.14/s
+  4,528/27,359 | 3.14/s
+  4,544/27,359 | 3.14/s
+  4,560/27,359 | 3.14/s
+  4,576/27,359 | 3.14/s
+  4,592/27,359 | 3.14/s
+  4,608/27,359 | 3.14/s
+  4,624/27,359 | 3.14/s
+  4,640/27,359 | 3.14/s
+  4,656/27,359 | 3.14/s
+  4,672/27,359 | 3.14/s
+  4,688/27,359 | 3.14/s
+  4,704/27,359 | 3.15/s
+  4,720/27,359 | 3.15/s
+  4,736/27,359 | 3.15/s
+  4,752/27,359 | 3.15/s
+  4,768/27,359 | 3.15/s
+  4,784/27,359 | 3.15/s
+  4,800/27,359 | 3.15/s
+  4,816/27,359 | 3.15/s
+  4,832/27,359 | 3.15/s
+  4,848/27,359 | 3.15/s
+  4,864/27,359 | 3.15/s
+  4,880/27,359 | 3.15/s
+  4,896/27,359 | 3.15/s
+  4,912/27,359 | 3.15/s
+  4,928/27,359 | 3.15/s
+  4,944/27,359 | 3.15/s
+  4,960/27,359 | 3.15/s
+  4,976/27,359 | 3.15/s
+  4,992/27,359 | 3.15/s
+  5,008/27,359 | 3.15/s
+  5,024/27,359 | 3.14/s
+  5,040/27,359 | 3.14/s
+{"ts": "2026-08-05T15:55:49Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 42882, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  5,056/27,359 | 3.14/s
+  5,072/27,359 | 3.14/s
+  5,088/27,359 | 3.14/s
+  5,104/27,359 | 3.14/s
+  5,120/27,359 | 3.14/s
+  5,136/27,359 | 3.14/s
+  5,152/27,359 | 3.14/s
+  5,168/27,359 | 3.14/s
+  5,184/27,359 | 3.14/s
+  5,200/27,359 | 3.14/s
+  5,216/27,359 | 3.14/s
+  5,232/27,359 | 3.14/s
+  5,248/27,359 | 3.14/s
+  5,264/27,359 | 3.14/s
+  5,280/27,359 | 3.14/s
+  5,296/27,359 | 3.15/s
+  5,312/27,359 | 3.15/s
+  5,328/27,359 | 3.15/s
+  5,344/27,359 | 3.15/s
+  5,360/27,359 | 3.15/s
+  5,376/27,359 | 3.15/s
+  5,392/27,359 | 3.15/s
+  5,408/27,359 | 3.15/s
+  5,424/27,359 | 3.15/s
+  5,440/27,359 | 3.15/s
+  5,456/27,359 | 3.15/s
+  5,472/27,359 | 3.15/s
+  5,488/27,359 | 3.15/s
+  5,504/27,359 | 3.15/s
+  5,520/27,359 | 3.15/s
+  5,536/27,359 | 3.15/s
+  5,552/27,359 | 3.15/s
+  5,568/27,359 | 3.16/s
+  5,584/27,359 | 3.16/s
+  5,600/27,359 | 3.16/s
+  5,616/27,359 | 3.16/s
+  5,632/27,359 | 3.16/s
+  5,648/27,359 | 3.16/s
+  5,664/27,359 | 3.16/s
+  5,680/27,359 | 3.15/s
+  5,696/27,359 | 3.15/s
+  5,712/27,359 | 3.14/s
+{"ts": "2026-08-05T15:59:19Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 43522, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  5,728/27,359 | 3.14/s
+  5,744/27,359 | 3.14/s
+  5,760/27,359 | 3.14/s
+  5,776/27,359 | 3.14/s
+  5,792/27,359 | 3.14/s
+  5,808/27,359 | 3.15/s
+  5,824/27,359 | 3.15/s
+  5,840/27,359 | 3.15/s
+  5,856/27,359 | 3.15/s
+  5,872/27,359 | 3.15/s
+  5,888/27,359 | 3.15/s
+  5,904/27,359 | 3.15/s
+  5,920/27,359 | 3.15/s
+  5,936/27,359 | 3.15/s
+  5,952/27,359 | 3.15/s
+  5,968/27,359 | 3.15/s
+  5,984/27,359 | 3.15/s
+  6,000/27,359 | 3.15/s
+  6,016/27,359 | 3.15/s
+  6,032/27,359 | 3.15/s
+  6,048/27,359 | 3.15/s
+  6,064/27,359 | 3.15/s
+  6,080/27,359 | 3.16/s
+  6,096/27,359 | 3.16/s
+  6,112/27,359 | 3.16/s
+  6,128/27,359 | 3.16/s
+  6,144/27,359 | 3.16/s
+  6,160/27,359 | 3.16/s
+  6,176/27,359 | 3.16/s
+  6,192/27,359 | 3.16/s
+  6,208/27,359 | 3.16/s
+  6,224/27,359 | 3.16/s
+  6,240/27,359 | 3.16/s
+  6,256/27,359 | 3.16/s
+  6,272/27,359 | 3.16/s
+  6,288/27,359 | 3.16/s
+  6,304/27,359 | 3.16/s
+  6,320/27,359 | 3.16/s
+  6,336/27,359 | 3.16/s
+  6,352/27,359 | 3.16/s
+  6,368/27,359 | 3.15/s
+  6,384/27,359 | 3.15/s
+{"ts": "2026-08-05T16:02:50Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 44162, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  6,400/27,359 | 3.15/s
+  6,416/27,359 | 3.15/s
+  6,432/27,359 | 3.15/s
+  6,448/27,359 | 3.15/s
+  6,464/27,359 | 3.15/s
+  6,480/27,359 | 3.15/s
+  6,496/27,359 | 3.15/s
+  6,512/27,359 | 3.15/s
+  6,528/27,359 | 3.15/s
+  6,544/27,359 | 3.15/s
+  6,560/27,359 | 3.15/s
+  6,576/27,359 | 3.15/s
+  6,592/27,359 | 3.15/s
+  6,608/27,359 | 3.15/s
+  6,624/27,359 | 3.15/s
+  6,640/27,359 | 3.16/s
+  6,656/27,359 | 3.16/s
+  6,672/27,359 | 3.16/s
+  6,688/27,359 | 3.16/s
+  6,704/27,359 | 3.16/s
+  6,720/27,359 | 3.16/s
+  6,736/27,359 | 3.16/s
+  6,752/27,359 | 3.16/s
+  6,768/27,359 | 3.16/s
+  6,784/27,359 | 3.16/s
+  6,800/27,359 | 3.16/s
+  6,816/27,359 | 3.16/s
+  6,832/27,359 | 3.16/s
+  6,848/27,359 | 3.16/s
+  6,864/27,359 | 3.16/s
+  6,880/27,359 | 3.16/s
+  6,896/27,359 | 3.16/s
+  6,912/27,359 | 3.16/s
+  6,928/27,359 | 3.16/s
+  6,944/27,359 | 3.16/s
+  6,960/27,359 | 3.16/s
+  6,976/27,359 | 3.16/s
+  6,992/27,359 | 3.16/s
+  7,008/27,359 | 3.16/s
+  7,024/27,359 | 3.16/s
+  7,040/27,359 | 3.16/s
+  7,056/27,359 | 3.15/s
+{"ts": "2026-08-05T16:06:20Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 44882, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  7,072/27,359 | 3.15/s
+  7,088/27,359 | 3.15/s
+  7,104/27,359 | 3.15/s
+  7,120/27,359 | 3.15/s
+  7,136/27,359 | 3.15/s
+  7,152/27,359 | 3.15/s
+  7,168/27,359 | 3.15/s
+  7,184/27,359 | 3.15/s
+  7,200/27,359 | 3.15/s
+  7,216/27,359 | 3.15/s
+  7,232/27,359 | 3.16/s
+  7,248/27,359 | 3.16/s
+  7,264/27,359 | 3.16/s
+  7,280/27,359 | 3.16/s
+  7,296/27,359 | 3.16/s
+  7,312/27,359 | 3.16/s
+  7,328/27,359 | 3.16/s
+  7,344/27,359 | 3.16/s
+  7,360/27,359 | 3.16/s
+  7,376/27,359 | 3.16/s
+  7,392/27,359 | 3.16/s
+  7,408/27,359 | 3.16/s
+  7,424/27,359 | 3.16/s
+  7,440/27,359 | 3.16/s
+  7,456/27,359 | 3.16/s
+  7,472/27,359 | 3.16/s
+  7,488/27,359 | 3.16/s
+  7,504/27,359 | 3.16/s
+  7,520/27,359 | 3.16/s
+  7,536/27,359 | 3.16/s
+  7,552/27,359 | 3.16/s
+  7,568/27,359 | 3.16/s
+  7,584/27,359 | 3.16/s
+  7,600/27,359 | 3.16/s
+  7,616/27,359 | 3.16/s
+  7,632/27,359 | 3.17/s
+  7,648/27,359 | 3.17/s
+  7,664/27,359 | 3.17/s
+  7,680/27,359 | 3.16/s
+  7,696/27,359 | 3.16/s
+  7,712/27,359 | 3.16/s
+{"ts": "2026-08-05T16:09:50Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 45522, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  7,728/27,359 | 3.15/s
+  7,744/27,359 | 3.15/s
+  7,760/27,359 | 3.15/s
+  7,776/27,359 | 3.15/s
+  7,792/27,359 | 3.15/s
+  7,808/27,359 | 3.15/s
+  7,824/27,359 | 3.15/s
+  7,840/27,359 | 3.15/s
+  7,856/27,359 | 3.15/s
+  7,872/27,359 | 3.15/s
+  7,888/27,359 | 3.15/s
+  7,904/27,359 | 3.15/s
+  7,920/27,359 | 3.16/s
+  7,936/27,359 | 3.16/s
+  7,952/27,359 | 3.16/s
+  7,968/27,359 | 3.16/s
+  7,984/27,359 | 3.16/s
+  8,000/27,359 | 3.16/s
+  8,016/27,359 | 3.16/s
+  8,032/27,359 | 3.16/s
+  8,048/27,359 | 3.16/s
+  8,064/27,359 | 3.16/s
+  8,080/27,359 | 3.16/s
+  8,096/27,359 | 3.16/s
+  8,112/27,359 | 3.16/s
+  8,128/27,359 | 3.16/s
+  8,144/27,359 | 3.16/s
+  8,160/27,359 | 3.16/s
+  8,176/27,359 | 3.16/s
+  8,192/27,359 | 3.16/s
+  8,208/27,359 | 3.16/s
+  8,224/27,359 | 3.16/s
+  8,240/27,359 | 3.16/s
+  8,256/27,359 | 3.16/s
+  8,272/27,359 | 3.16/s
+  8,288/27,359 | 3.16/s
+  8,304/27,359 | 3.16/s
+  8,320/27,359 | 3.16/s
+  8,336/27,359 | 3.16/s
+  8,352/27,359 | 3.16/s
+  8,368/27,359 | 3.15/s
+{"ts": "2026-08-05T16:13:19Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 46162, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  8,384/27,359 | 3.15/s
+  8,400/27,359 | 3.15/s
+  8,416/27,359 | 3.15/s
+  8,432/27,359 | 3.15/s
+  8,448/27,359 | 3.15/s
+  8,464/27,359 | 3.15/s
+  8,480/27,359 | 3.15/s
+  8,496/27,359 | 3.15/s
+  8,512/27,359 | 3.15/s
+  8,528/27,359 | 3.15/s
+  8,544/27,359 | 3.15/s
+  8,560/27,359 | 3.15/s
+  8,576/27,359 | 3.15/s
+  8,592/27,359 | 3.15/s
+  8,608/27,359 | 3.15/s
+  8,624/27,359 | 3.15/s
+  8,640/27,359 | 3.15/s
+  8,656/27,359 | 3.15/s
+  8,672/27,359 | 3.15/s
+  8,688/27,359 | 3.15/s
+  8,704/27,359 | 3.15/s
+  8,720/27,359 | 3.15/s
+  8,736/27,359 | 3.16/s
+  8,752/27,359 | 3.15/s
+  8,768/27,359 | 3.16/s
+  8,784/27,359 | 3.16/s
+  8,800/27,359 | 3.16/s
+  8,816/27,359 | 3.16/s
+  8,832/27,359 | 3.16/s
+  8,848/27,359 | 3.16/s
+  8,864/27,359 | 3.16/s
+  8,880/27,359 | 3.16/s
+  8,896/27,359 | 3.16/s
+  8,912/27,359 | 3.16/s
+  8,928/27,359 | 3.16/s
+  8,944/27,359 | 3.16/s
+  8,960/27,359 | 3.16/s
+  8,976/27,359 | 3.16/s
+  8,992/27,359 | 3.16/s
+  9,008/27,359 | 3.15/s
+  9,024/27,359 | 3.15/s
+{"ts": "2026-08-05T16:16:49Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 46802, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  9,040/27,359 | 3.15/s
+  9,056/27,359 | 3.15/s
+  9,072/27,359 | 3.15/s
+  9,088/27,359 | 3.15/s
+  9,104/27,359 | 3.15/s
+  9,120/27,359 | 3.15/s
+  9,136/27,359 | 3.15/s
+  9,152/27,359 | 3.15/s
+  9,168/27,359 | 3.15/s
+  9,184/27,359 | 3.15/s
+  9,200/27,359 | 3.15/s
+  9,216/27,359 | 3.15/s
+  9,232/27,359 | 3.15/s
+  9,248/27,359 | 3.15/s
+  9,264/27,359 | 3.15/s
+  9,280/27,359 | 3.15/s
+  9,296/27,359 | 3.15/s
+  9,312/27,359 | 3.15/s
+  9,328/27,359 | 3.15/s
+  9,344/27,359 | 3.15/s
+  9,360/27,359 | 3.15/s
+  9,376/27,359 | 3.15/s
+  9,392/27,359 | 3.15/s
+  9,408/27,359 | 3.16/s
+  9,424/27,359 | 3.16/s
+  9,440/27,359 | 3.16/s
+  9,456/27,359 | 3.16/s
+  9,472/27,359 | 3.16/s
+  9,488/27,359 | 3.16/s
+  9,504/27,359 | 3.16/s
+  9,520/27,359 | 3.16/s
+  9,536/27,359 | 3.16/s
+  9,552/27,359 | 3.16/s
+  9,568/27,359 | 3.16/s
+  9,584/27,359 | 3.16/s
+  9,600/27,359 | 3.16/s
+  9,616/27,359 | 3.16/s
+  9,632/27,359 | 3.16/s
+  9,648/27,359 | 3.16/s
+  9,664/27,359 | 3.16/s
+  9,680/27,359 | 3.15/s
+  9,696/27,359 | 3.15/s
+{"ts": "2026-08-05T16:20:19Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 47522, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  9,712/27,359 | 3.15/s
+  9,728/27,359 | 3.15/s
+  9,744/27,359 | 3.15/s
+  9,760/27,359 | 3.15/s
+  9,776/27,359 | 3.15/s
+  9,792/27,359 | 3.15/s
+  9,808/27,359 | 3.15/s
+  9,824/27,359 | 3.15/s
+  9,840/27,359 | 3.15/s
+  9,856/27,359 | 3.15/s
+  9,872/27,359 | 3.15/s
+  9,888/27,359 | 3.15/s
+  9,904/27,359 | 3.15/s
+  9,920/27,359 | 3.15/s
+  9,936/27,359 | 3.15/s
+  9,952/27,359 | 3.15/s
+  9,968/27,359 | 3.15/s
+  9,984/27,359 | 3.15/s
+  10,000/27,359 | 3.15/s
+  10,016/27,359 | 3.15/s
+  10,032/27,359 | 3.15/s
+  10,048/27,359 | 3.15/s
+  10,064/27,359 | 3.15/s
+  10,080/27,359 | 3.16/s
+  10,096/27,359 | 3.16/s
+  10,112/27,359 | 3.16/s
+  10,128/27,359 | 3.16/s
+  10,144/27,359 | 3.16/s
+  10,160/27,359 | 3.16/s
+  10,176/27,359 | 3.16/s
+  10,192/27,359 | 3.16/s
+  10,208/27,359 | 3.16/s
+  10,224/27,359 | 3.16/s
+  10,240/27,359 | 3.16/s
+  10,256/27,359 | 3.16/s
+  10,272/27,359 | 3.16/s
+  10,288/27,359 | 3.16/s
+  10,304/27,359 | 3.16/s
+  10,320/27,359 | 3.15/s
+  10,336/27,359 | 3.15/s
+{"ts": "2026-08-05T16:23:48Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 48162, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  10,352/27,359 | 3.15/s
+  10,368/27,359 | 3.15/s
+  10,384/27,359 | 3.15/s
+  10,400/27,359 | 3.15/s
+  10,416/27,359 | 3.15/s
+  10,432/27,359 | 3.15/s
+  10,448/27,359 | 3.15/s
+  10,464/27,359 | 3.15/s
+  10,480/27,359 | 3.15/s
+  10,496/27,359 | 3.15/s
+  10,512/27,359 | 3.15/s
+  10,528/27,359 | 3.15/s
+  10,544/27,359 | 3.15/s
+  10,560/27,359 | 3.15/s
+  10,576/27,359 | 3.15/s
+  10,592/27,359 | 3.15/s
+  10,608/27,359 | 3.15/s
+  10,624/27,359 | 3.15/s
+  10,640/27,359 | 3.15/s
+  10,656/27,359 | 3.15/s
+  10,672/27,359 | 3.15/s
+  10,688/27,359 | 3.15/s
+  10,704/27,359 | 3.15/s
+  10,720/27,359 | 3.15/s
+  10,736/27,359 | 3.15/s
+  10,752/27,359 | 3.15/s
+  10,768/27,359 | 3.15/s
+  10,784/27,359 | 3.15/s
+  10,800/27,359 | 3.15/s
+  10,816/27,359 | 3.15/s
+  10,832/27,359 | 3.15/s
+  10,848/27,359 | 3.15/s
+  10,864/27,359 | 3.15/s
+  10,880/27,359 | 3.15/s
+  10,896/27,359 | 3.15/s
+  10,912/27,359 | 3.15/s
+  10,928/27,359 | 3.15/s
+  10,944/27,359 | 3.15/s
+  10,960/27,359 | 3.15/s
+  10,976/27,359 | 3.15/s
+  10,992/27,359 | 3.15/s
+{"ts": "2026-08-05T16:27:18Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 48802, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  11,008/27,359 | 3.14/s
+  11,024/27,359 | 3.14/s
+  11,040/27,359 | 3.14/s
+  11,056/27,359 | 3.14/s
+  11,072/27,359 | 3.14/s
+  11,088/27,359 | 3.14/s
+  11,104/27,359 | 3.14/s
+  11,120/27,359 | 3.14/s
+  11,136/27,359 | 3.14/s
+  11,152/27,359 | 3.14/s
+  11,168/27,359 | 3.14/s
+  11,184/27,359 | 3.15/s
+  11,200/27,359 | 3.15/s
+  11,216/27,359 | 3.15/s
+  11,232/27,359 | 3.15/s
+  11,248/27,359 | 3.15/s
+  11,264/27,359 | 3.15/s
+  11,280/27,359 | 3.15/s
+  11,296/27,359 | 3.15/s
+  11,312/27,359 | 3.15/s
+  11,328/27,359 | 3.15/s
+  11,344/27,359 | 3.15/s
+  11,360/27,359 | 3.15/s
+  11,376/27,359 | 3.15/s
+  11,392/27,359 | 3.15/s
+  11,408/27,359 | 3.15/s
+  11,424/27,359 | 3.15/s
+  11,440/27,359 | 3.15/s
+  11,456/27,359 | 3.15/s
+  11,472/27,359 | 3.15/s
+  11,488/27,359 | 3.15/s
+  11,504/27,359 | 3.15/s
+  11,520/27,359 | 3.15/s
+  11,536/27,359 | 3.15/s
+  11,552/27,359 | 3.15/s
+  11,568/27,359 | 3.15/s
+  11,584/27,359 | 3.15/s
+  11,600/27,359 | 3.15/s
+  11,616/27,359 | 3.15/s
+  11,632/27,359 | 3.15/s
+  11,648/27,359 | 3.15/s
+{"ts": "2026-08-05T16:30:49Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 49442, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  11,664/27,359 | 3.14/s
+  11,680/27,359 | 3.14/s
+  11,696/27,359 | 3.14/s
+  11,712/27,359 | 3.14/s
+  11,728/27,359 | 3.14/s
+  11,744/27,359 | 3.14/s
+  11,760/27,359 | 3.14/s
+  11,776/27,359 | 3.14/s
+  11,792/27,359 | 3.14/s
+  11,808/27,359 | 3.14/s
+  11,824/27,359 | 3.15/s
+  11,840/27,359 | 3.15/s
+  11,856/27,359 | 3.15/s
+  11,872/27,359 | 3.15/s
+  11,888/27,359 | 3.15/s
+  11,904/27,359 | 3.15/s
+  11,920/27,359 | 3.15/s
+  11,936/27,359 | 3.15/s
+  11,952/27,359 | 3.15/s
+  11,968/27,359 | 3.14/s
+  11,984/27,359 | 3.14/s
+  12,000/27,359 | 3.15/s
+  12,016/27,359 | 3.15/s
+  12,032/27,359 | 3.15/s
+  12,048/27,359 | 3.15/s
+  12,064/27,359 | 3.15/s
+  12,080/27,359 | 3.15/s
+  12,096/27,359 | 3.15/s
+  12,112/27,359 | 3.15/s
+  12,128/27,359 | 3.15/s
+  12,144/27,359 | 3.15/s
+  12,160/27,359 | 3.15/s
+  12,176/27,359 | 3.15/s
+  12,192/27,359 | 3.15/s
+  12,208/27,359 | 3.15/s
+  12,224/27,359 | 3.15/s
+  12,240/27,359 | 3.15/s
+  12,256/27,359 | 3.14/s
+  12,272/27,359 | 3.14/s
+  12,288/27,359 | 3.14/s
+{"ts": "2026-08-05T16:34:19Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 50082, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  12,304/27,359 | 3.14/s
+  12,320/27,359 | 3.14/s
+  12,336/27,359 | 3.14/s
+  12,352/27,359 | 3.14/s
+  12,368/27,359 | 3.14/s
+  12,384/27,359 | 3.14/s
+  12,400/27,359 | 3.14/s
+  12,416/27,359 | 3.14/s
+  12,432/27,359 | 3.14/s
+  12,448/27,359 | 3.14/s
+  12,464/27,359 | 3.14/s
+  12,480/27,359 | 3.14/s
+  12,496/27,359 | 3.14/s
+  12,512/27,359 | 3.14/s
+  12,528/27,359 | 3.14/s
+  12,544/27,359 | 3.14/s
+  12,560/27,359 | 3.14/s
+  12,576/27,359 | 3.14/s
+  12,592/27,359 | 3.14/s
+  12,608/27,359 | 3.14/s
+  12,624/27,359 | 3.14/s
+  12,640/27,359 | 3.14/s
+  12,656/27,359 | 3.14/s
+  12,672/27,359 | 3.14/s
+  12,688/27,359 | 3.14/s
+  12,704/27,359 | 3.14/s
+  12,720/27,359 | 3.14/s
+  12,736/27,359 | 3.14/s
+  12,752/27,359 | 3.14/s
+  12,768/27,359 | 3.14/s
+  12,784/27,359 | 3.14/s
+  12,800/27,359 | 3.14/s
+  12,816/27,359 | 3.14/s
+  12,832/27,359 | 3.14/s
+  12,848/27,359 | 3.14/s
+  12,864/27,359 | 3.14/s
+  12,880/27,359 | 3.14/s
+  12,896/27,359 | 3.14/s
+  12,912/27,359 | 3.14/s
+  12,928/27,359 | 3.14/s
+  12,944/27,359 | 3.14/s
+{"ts": "2026-08-05T16:37:49Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 50722, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  12,960/27,359 | 3.14/s
+  12,976/27,359 | 3.14/s
+  12,992/27,359 | 3.14/s
+  13,008/27,359 | 3.14/s
+  13,024/27,359 | 3.14/s
+  13,040/27,359 | 3.14/s
+  13,056/27,359 | 3.14/s
+  13,072/27,359 | 3.14/s
+  13,088/27,359 | 3.14/s
+  13,104/27,359 | 3.14/s
+  13,120/27,359 | 3.14/s
+  13,136/27,359 | 3.14/s
+  13,152/27,359 | 3.14/s
+  13,168/27,359 | 3.14/s
+  13,184/27,359 | 3.14/s
+  13,200/27,359 | 3.14/s
+  13,216/27,359 | 3.14/s
+  13,232/27,359 | 3.14/s
+  13,248/27,359 | 3.14/s
+  13,264/27,359 | 3.14/s
+  13,280/27,359 | 3.14/s
+  13,296/27,359 | 3.14/s
+  13,312/27,359 | 3.14/s
+  13,328/27,359 | 3.14/s
+  13,344/27,359 | 3.14/s
+  13,360/27,359 | 3.14/s
+  13,376/27,359 | 3.14/s
+  13,392/27,359 | 3.14/s
+  13,408/27,359 | 3.14/s
+  13,424/27,359 | 3.14/s
+  13,440/27,359 | 3.14/s
+  13,456/27,359 | 3.14/s
+  13,472/27,359 | 3.14/s
+  13,488/27,359 | 3.14/s
+  13,504/27,359 | 3.14/s
+  13,520/27,359 | 3.14/s
+  13,536/27,359 | 3.14/s
+  13,552/27,359 | 3.14/s
+  13,568/27,359 | 3.14/s
+  13,584/27,359 | 3.14/s
+  13,600/27,359 | 3.14/s
+{"ts": "2026-08-05T16:41:19Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 51442, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  13,616/27,359 | 3.14/s
+  13,632/27,359 | 3.14/s
+  13,648/27,359 | 3.14/s
+  13,664/27,359 | 3.14/s
+  13,680/27,359 | 3.14/s
+  13,696/27,359 | 3.14/s
+  13,712/27,359 | 3.14/s
+  13,728/27,359 | 3.14/s
+  13,744/27,359 | 3.14/s
+  13,760/27,359 | 3.14/s
+  13,776/27,359 | 3.14/s
+  13,792/27,359 | 3.14/s
+  13,808/27,359 | 3.14/s
+  13,824/27,359 | 3.14/s
+  13,840/27,359 | 3.14/s
+  13,856/27,359 | 3.14/s
+  13,872/27,359 | 3.14/s
+  13,888/27,359 | 3.14/s
+  13,904/27,359 | 3.14/s
+  13,920/27,359 | 3.14/s
+  13,936/27,359 | 3.14/s
+  13,952/27,359 | 3.14/s
+  13,968/27,359 | 3.14/s
+  13,984/27,359 | 3.14/s
+  14,000/27,359 | 3.14/s
+  14,016/27,359 | 3.14/s
+  14,032/27,359 | 3.14/s
+  14,048/27,359 | 3.14/s
+  14,064/27,359 | 3.14/s
+  14,080/27,359 | 3.14/s
+  14,096/27,359 | 3.14/s
+  14,112/27,359 | 3.14/s
+  14,128/27,359 | 3.14/s
+  14,144/27,359 | 3.14/s
+  14,160/27,359 | 3.14/s
+  14,176/27,359 | 3.14/s
+  14,192/27,359 | 3.14/s
+  14,208/27,359 | 3.14/s
+  14,224/27,359 | 3.14/s
+  14,240/27,359 | 3.14/s
+  14,256/27,359 | 3.14/s
+{"ts": "2026-08-05T16:44:48Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 52082, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  14,272/27,359 | 3.13/s
+  14,288/27,359 | 3.13/s
+  14,304/27,359 | 3.13/s
+  14,320/27,359 | 3.13/s
+  14,336/27,359 | 3.13/s
+  14,352/27,359 | 3.14/s
+  14,368/27,359 | 3.14/s
+  14,384/27,359 | 3.14/s
+  14,400/27,359 | 3.14/s
+  14,416/27,359 | 3.14/s
+  14,432/27,359 | 3.14/s
+  14,448/27,359 | 3.14/s
+  14,464/27,359 | 3.14/s
+  14,480/27,359 | 3.14/s
+  14,496/27,359 | 3.14/s
+  14,512/27,359 | 3.14/s
+  14,528/27,359 | 3.14/s
+  14,544/27,359 | 3.14/s
+  14,560/27,359 | 3.14/s
+  14,576/27,359 | 3.14/s
+  14,592/27,359 | 3.14/s
+  14,608/27,359 | 3.14/s
+  14,624/27,359 | 3.14/s
+  14,640/27,359 | 3.14/s
+  14,656/27,359 | 3.14/s
+  14,672/27,359 | 3.14/s
+  14,688/27,359 | 3.14/s
+  14,704/27,359 | 3.14/s
+  14,720/27,359 | 3.14/s
+  14,736/27,359 | 3.14/s
+  14,752/27,359 | 3.14/s
+  14,768/27,359 | 3.14/s
+  14,784/27,359 | 3.14/s
+  14,800/27,359 | 3.14/s
+  14,816/27,359 | 3.14/s
+  14,832/27,359 | 3.14/s
+  14,848/27,359 | 3.14/s
+  14,864/27,359 | 3.14/s
+  14,880/27,359 | 3.14/s
+  14,896/27,359 | 3.14/s
+{"ts": "2026-08-05T16:48:18Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 52722, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  14,912/27,359 | 3.13/s
+  14,928/27,359 | 3.13/s
+  14,944/27,359 | 3.13/s
+  14,960/27,359 | 3.13/s
+  14,976/27,359 | 3.13/s
+  14,992/27,359 | 3.13/s
+  15,008/27,359 | 3.13/s
+  15,024/27,359 | 3.13/s
+  15,040/27,359 | 3.13/s
+  15,056/27,359 | 3.13/s
+  15,072/27,359 | 3.13/s
+  15,088/27,359 | 3.13/s
+  15,104/27,359 | 3.13/s
+  15,120/27,359 | 3.13/s
+  15,136/27,359 | 3.14/s
+  15,152/27,359 | 3.14/s
+  15,168/27,359 | 3.14/s
+  15,184/27,359 | 3.14/s
+  15,200/27,359 | 3.14/s
+  15,216/27,359 | 3.14/s
+  15,232/27,359 | 3.14/s
+  15,248/27,359 | 3.14/s
+  15,264/27,359 | 3.14/s
+  15,280/27,359 | 3.14/s
+  15,296/27,359 | 3.14/s
+  15,312/27,359 | 3.14/s
+  15,328/27,359 | 3.14/s
+  15,344/27,359 | 3.14/s
+  15,360/27,359 | 3.14/s
+  15,376/27,359 | 3.14/s
+  15,392/27,359 | 3.14/s
+  15,408/27,359 | 3.14/s
+  15,424/27,359 | 3.14/s
+  15,440/27,359 | 3.14/s
+  15,456/27,359 | 3.14/s
+  15,472/27,359 | 3.14/s
+  15,488/27,359 | 3.14/s
+  15,504/27,359 | 3.14/s
+  15,520/27,359 | 3.14/s
+  15,536/27,359 | 3.13/s
+  15,552/27,359 | 3.13/s
+{"ts": "2026-08-05T16:51:48Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 53362, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  15,568/27,359 | 3.13/s
+  15,584/27,359 | 3.13/s
+  15,600/27,359 | 3.13/s
+  15,616/27,359 | 3.13/s
+  15,632/27,359 | 3.13/s
+  15,648/27,359 | 3.13/s
+  15,664/27,359 | 3.13/s
+  15,680/27,359 | 3.13/s
+  15,696/27,359 | 3.13/s
+  15,712/27,359 | 3.13/s
+  15,728/27,359 | 3.13/s
+  15,744/27,359 | 3.13/s
+  15,760/27,359 | 3.13/s
+  15,776/27,359 | 3.13/s
+  15,792/27,359 | 3.13/s
+  15,808/27,359 | 3.13/s
+  15,824/27,359 | 3.13/s
+  15,840/27,359 | 3.13/s
+  15,856/27,359 | 3.13/s
+  15,872/27,359 | 3.13/s
+  15,888/27,359 | 3.13/s
+  15,904/27,359 | 3.13/s
+  15,920/27,359 | 3.13/s
+  15,936/27,359 | 3.13/s
+  15,952/27,359 | 3.13/s
+  15,968/27,359 | 3.13/s
+  15,984/27,359 | 3.13/s
+  16,000/27,359 | 3.13/s
+  16,016/27,359 | 3.13/s
+  16,032/27,359 | 3.13/s
+  16,048/27,359 | 3.13/s
+  16,064/27,359 | 3.14/s
+  16,080/27,359 | 3.14/s
+  16,096/27,359 | 3.14/s
+  16,112/27,359 | 3.14/s
+  16,128/27,359 | 3.14/s
+  16,144/27,359 | 3.14/s
+  16,160/27,359 | 3.14/s
+  16,176/27,359 | 3.13/s
+  16,192/27,359 | 3.13/s
+{"ts": "2026-08-05T16:55:17Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 54002, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  16,208/27,359 | 3.13/s
+  16,224/27,359 | 3.13/s
+  16,240/27,359 | 3.13/s
+  16,256/27,359 | 3.13/s
+  16,272/27,359 | 3.13/s
+  16,288/27,359 | 3.13/s
+  16,304/27,359 | 3.13/s
+  16,320/27,359 | 3.13/s
+  16,336/27,359 | 3.13/s
+  16,352/27,359 | 3.13/s
+  16,368/27,359 | 3.13/s
+  16,384/27,359 | 3.13/s
+  16,400/27,359 | 3.13/s
+  16,416/27,359 | 3.13/s
+  16,432/27,359 | 3.13/s
+  16,448/27,359 | 3.13/s
+  16,464/27,359 | 3.13/s
+  16,480/27,359 | 3.13/s
+  16,496/27,359 | 3.13/s
+  16,512/27,359 | 3.13/s
+  16,528/27,359 | 3.13/s
+  16,544/27,359 | 3.13/s
+  16,560/27,359 | 3.13/s
+  16,576/27,359 | 3.13/s
+  16,592/27,359 | 3.13/s
+  16,608/27,359 | 3.13/s
+  16,624/27,359 | 3.13/s
+  16,640/27,359 | 3.13/s
+  16,656/27,359 | 3.13/s
+  16,672/27,359 | 3.13/s
+  16,688/27,359 | 3.13/s
+  16,704/27,359 | 3.13/s
+  16,720/27,359 | 3.13/s
+  16,736/27,359 | 3.13/s
+  16,752/27,359 | 3.14/s
+  16,768/27,359 | 3.14/s
+  16,784/27,359 | 3.14/s
+  16,800/27,359 | 3.14/s
+  16,816/27,359 | 3.13/s
+  16,832/27,359 | 3.13/s
+  16,848/27,359 | 3.13/s
+{"ts": "2026-08-05T16:58:45Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 54642, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  16,864/27,359 | 3.13/s
+  16,880/27,359 | 3.13/s
+  16,896/27,359 | 3.13/s
+  16,912/27,359 | 3.13/s
+  16,928/27,359 | 3.13/s
+  16,944/27,359 | 3.13/s
+  16,960/27,359 | 3.13/s
+  16,976/27,359 | 3.13/s
+  16,992/27,359 | 3.13/s
+  17,008/27,359 | 3.13/s
+  17,024/27,359 | 3.13/s
+  17,040/27,359 | 3.13/s
+  17,056/27,359 | 3.13/s
+  17,072/27,359 | 3.13/s
+  17,088/27,359 | 3.13/s
+  17,104/27,359 | 3.13/s
+  17,120/27,359 | 3.13/s
+  17,136/27,359 | 3.13/s
+  17,152/27,359 | 3.13/s
+  17,168/27,359 | 3.13/s
+  17,184/27,359 | 3.13/s
+  17,200/27,359 | 3.13/s
+  17,216/27,359 | 3.13/s
+  17,232/27,359 | 3.13/s
+  17,248/27,359 | 3.13/s
+  17,264/27,359 | 3.13/s
+  17,280/27,359 | 3.13/s
+  17,296/27,359 | 3.13/s
+  17,312/27,359 | 3.13/s
+  17,328/27,359 | 3.13/s
+  17,344/27,359 | 3.13/s
+  17,360/27,359 | 3.13/s
+  17,376/27,359 | 3.13/s
+  17,392/27,359 | 3.13/s
+  17,408/27,359 | 3.13/s
+  17,424/27,359 | 3.13/s
+  17,440/27,359 | 3.13/s
+  17,456/27,359 | 3.13/s
+  17,472/27,359 | 3.13/s
+  17,488/27,359 | 3.13/s
+{"ts": "2026-08-05T17:02:15Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 55282, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  17,504/27,359 | 3.13/s
+  17,520/27,359 | 3.13/s
+  17,536/27,359 | 3.13/s
+  17,552/27,359 | 3.13/s
+  17,568/27,359 | 3.13/s
+  17,584/27,359 | 3.13/s
+  17,600/27,359 | 3.13/s
+  17,616/27,359 | 3.13/s
+  17,632/27,359 | 3.13/s
+  17,648/27,359 | 3.13/s
+  17,664/27,359 | 3.13/s
+  17,680/27,359 | 3.13/s
+  17,696/27,359 | 3.13/s
+  17,712/27,359 | 3.13/s
+  17,728/27,359 | 3.13/s
+  17,744/27,359 | 3.13/s
+  17,760/27,359 | 3.13/s
+  17,776/27,359 | 3.13/s
+  17,792/27,359 | 3.13/s
+  17,808/27,359 | 3.13/s
+  17,824/27,359 | 3.13/s
+  17,840/27,359 | 3.13/s
+  17,856/27,359 | 3.13/s
+  17,872/27,359 | 3.13/s
+  17,888/27,359 | 3.13/s
+  17,904/27,359 | 3.13/s
+  17,920/27,359 | 3.13/s
+  17,936/27,359 | 3.13/s
+  17,952/27,359 | 3.13/s
+  17,968/27,359 | 3.13/s
+  17,984/27,359 | 3.13/s
+  18,000/27,359 | 3.13/s
+  18,016/27,359 | 3.13/s
+  18,032/27,359 | 3.13/s
+  18,048/27,359 | 3.13/s
+  18,064/27,359 | 3.13/s
+  18,080/27,359 | 3.13/s
+  18,096/27,359 | 3.13/s
+  18,112/27,359 | 3.13/s
+  18,128/27,359 | 3.13/s
+{"ts": "2026-08-05T17:05:45Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 55922, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  18,144/27,359 | 3.13/s
+  18,160/27,359 | 3.13/s
+  18,176/27,359 | 3.13/s
+  18,192/27,359 | 3.13/s
+  18,208/27,359 | 3.13/s
+  18,224/27,359 | 3.13/s
+  18,240/27,359 | 3.13/s
+  18,256/27,359 | 3.13/s
+  18,272/27,359 | 3.13/s
+  18,288/27,359 | 3.13/s
+  18,304/27,359 | 3.13/s
+  18,320/27,359 | 3.13/s
+  18,336/27,359 | 3.13/s
+  18,352/27,359 | 3.13/s
+  18,368/27,359 | 3.13/s
+  18,384/27,359 | 3.13/s
+  18,400/27,359 | 3.13/s
+  18,416/27,359 | 3.13/s
+  18,432/27,359 | 3.13/s
+  18,448/27,359 | 3.13/s
+  18,464/27,359 | 3.13/s
+  18,480/27,359 | 3.13/s
+  18,496/27,359 | 3.13/s
+  18,512/27,359 | 3.13/s
+  18,528/27,359 | 3.13/s
+  18,544/27,359 | 3.13/s
+  18,560/27,359 | 3.13/s
+  18,576/27,359 | 3.13/s
+  18,592/27,359 | 3.13/s
+  18,608/27,359 | 3.13/s
+  18,624/27,359 | 3.13/s
+  18,640/27,359 | 3.13/s
+  18,656/27,359 | 3.13/s
+  18,672/27,359 | 3.13/s
+  18,688/27,359 | 3.13/s
+  18,704/27,359 | 3.13/s
+  18,720/27,359 | 3.13/s
+  18,736/27,359 | 3.13/s
+  18,752/27,359 | 3.13/s
+  18,768/27,359 | 3.13/s
+  18,784/27,359 | 3.13/s
+  18,800/27,359 | 3.13/s
+  18,816/27,359 | 3.13/s
+{"ts": "2026-08-05T17:09:15Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 56642, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  18,832/27,359 | 3.13/s
+  18,848/27,359 | 3.13/s
+  18,864/27,359 | 3.13/s
+  18,880/27,359 | 3.13/s
+  18,896/27,359 | 3.13/s
+  18,912/27,359 | 3.13/s
+  18,928/27,359 | 3.13/s
+  18,944/27,359 | 3.13/s
+  18,960/27,359 | 3.13/s
+  18,976/27,359 | 3.13/s
+  18,992/27,359 | 3.13/s
+  19,008/27,359 | 3.13/s
+  19,024/27,359 | 3.13/s
+  19,040/27,359 | 3.13/s
+  19,056/27,359 | 3.13/s
+  19,072/27,359 | 3.13/s
+  19,088/27,359 | 3.13/s
+  19,104/27,359 | 3.13/s
+  19,120/27,359 | 3.13/s
+  19,136/27,359 | 3.13/s
+  19,152/27,359 | 3.13/s
+  19,168/27,359 | 3.13/s
+  19,184/27,359 | 3.13/s
+  19,200/27,359 | 3.13/s
+  19,216/27,359 | 3.13/s
+  19,232/27,359 | 3.13/s
+  19,248/27,359 | 3.13/s
+  19,264/27,359 | 3.13/s
+  19,280/27,359 | 3.13/s
+  19,296/27,359 | 3.13/s
+  19,312/27,359 | 3.13/s
+  19,328/27,359 | 3.13/s
+  19,344/27,359 | 3.13/s
+  19,360/27,359 | 3.13/s
+  19,376/27,359 | 3.14/s
+  19,392/27,359 | 3.13/s
+  19,408/27,359 | 3.13/s
+  19,424/27,359 | 3.13/s
+  19,440/27,359 | 3.13/s
+  19,456/27,359 | 3.13/s
+  19,472/27,359 | 3.13/s
+{"ts": "2026-08-05T17:12:44Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 57282, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  19,488/27,359 | 3.13/s
+  19,504/27,359 | 3.13/s
+  19,520/27,359 | 3.13/s
+  19,536/27,359 | 3.13/s
+  19,552/27,359 | 3.13/s
+  19,568/27,359 | 3.13/s
+  19,584/27,359 | 3.13/s
+  19,600/27,359 | 3.13/s
+  19,616/27,359 | 3.13/s
+  19,632/27,359 | 3.13/s
+  19,648/27,359 | 3.13/s
+  19,664/27,359 | 3.13/s
+  19,680/27,359 | 3.13/s
+  19,696/27,359 | 3.13/s
+  19,712/27,359 | 3.13/s
+  19,728/27,359 | 3.13/s
+  19,744/27,359 | 3.13/s
+  19,760/27,359 | 3.13/s
+  19,776/27,359 | 3.13/s
+  19,792/27,359 | 3.13/s
+  19,808/27,359 | 3.13/s
+  19,824/27,359 | 3.13/s
+  19,840/27,359 | 3.13/s
+  19,856/27,359 | 3.13/s
+  19,872/27,359 | 3.13/s
+  19,888/27,359 | 3.13/s
+  19,904/27,359 | 3.13/s
+  19,920/27,359 | 3.13/s
+  19,936/27,359 | 3.13/s
+  19,952/27,359 | 3.13/s
+  19,968/27,359 | 3.13/s
+  19,984/27,359 | 3.13/s
+  20,000/27,359 | 3.13/s
+  20,016/27,359 | 3.13/s
+  20,032/27,359 | 3.13/s
+  20,048/27,359 | 3.13/s
+  20,064/27,359 | 3.13/s
+  20,080/27,359 | 3.13/s
+  20,096/27,359 | 3.13/s
+  20,112/27,359 | 3.13/s
+  20,128/27,359 | 3.13/s
+{"ts": "2026-08-05T17:16:15Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 57922, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  20,144/27,359 | 3.13/s
+  20,160/27,359 | 3.13/s
+  20,176/27,359 | 3.13/s
+  20,192/27,359 | 3.13/s
+  20,208/27,359 | 3.13/s
+  20,224/27,359 | 3.13/s
+  20,240/27,359 | 3.13/s
+  20,256/27,359 | 3.13/s
+  20,272/27,359 | 3.13/s
+  20,288/27,359 | 3.13/s
+  20,304/27,359 | 3.13/s
+  20,320/27,359 | 3.13/s
+  20,336/27,359 | 3.13/s
+  20,352/27,359 | 3.13/s
+  20,368/27,359 | 3.13/s
+  20,384/27,359 | 3.13/s
+  20,400/27,359 | 3.13/s
+  20,416/27,359 | 3.13/s
+  20,432/27,359 | 3.13/s
+  20,448/27,359 | 3.13/s
+  20,464/27,359 | 3.13/s
+  20,480/27,359 | 3.13/s
+  20,496/27,359 | 3.13/s
+  20,512/27,359 | 3.13/s
+  20,528/27,359 | 3.13/s
+  20,544/27,359 | 3.13/s
+  20,560/27,359 | 3.13/s
+  20,576/27,359 | 3.13/s
+  20,592/27,359 | 3.13/s
+  20,608/27,359 | 3.13/s
+  20,624/27,359 | 3.13/s
+  20,640/27,359 | 3.13/s
+  20,656/27,359 | 3.13/s
+  20,672/27,359 | 3.13/s
+  20,688/27,359 | 3.13/s
+  20,704/27,359 | 3.13/s
+  20,720/27,359 | 3.13/s
+  20,736/27,359 | 3.13/s
+  20,752/27,359 | 3.13/s
+  20,768/27,359 | 3.13/s
+{"ts": "2026-08-05T17:19:45Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 58562, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  20,784/27,359 | 3.13/s
+  20,800/27,359 | 3.13/s
+  20,816/27,359 | 3.13/s
+  20,832/27,359 | 3.13/s
+  20,848/27,359 | 3.13/s
+  20,864/27,359 | 3.13/s
+  20,880/27,359 | 3.13/s
+  20,896/27,359 | 3.13/s
+  20,912/27,359 | 3.13/s
+  20,928/27,359 | 3.13/s
+  20,944/27,359 | 3.13/s
+  20,960/27,359 | 3.13/s
+  20,976/27,359 | 3.13/s
+  20,992/27,359 | 3.13/s
+  21,008/27,359 | 3.13/s
+  21,024/27,359 | 3.13/s
+  21,040/27,359 | 3.13/s
+  21,056/27,359 | 3.13/s
+  21,072/27,359 | 3.13/s
+  21,088/27,359 | 3.13/s
+  21,104/27,359 | 3.13/s
+  21,120/27,359 | 3.13/s
+  21,136/27,359 | 3.13/s
+  21,152/27,359 | 3.13/s
+  21,168/27,359 | 3.13/s
+  21,184/27,359 | 3.13/s
+  21,200/27,359 | 3.13/s
+  21,216/27,359 | 3.13/s
+  21,232/27,359 | 3.13/s
+  21,248/27,359 | 3.13/s
+  21,264/27,359 | 3.13/s
+  21,280/27,359 | 3.13/s
+  21,296/27,359 | 3.13/s
+  21,312/27,359 | 3.13/s
+  21,328/27,359 | 3.13/s
+  21,344/27,359 | 3.12/s
+  21,360/27,359 | 3.12/s
+  21,376/27,359 | 3.12/s
+{"ts": "2026-08-05T17:23:12Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 59202, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  21,392/27,359 | 3.12/s
+  21,408/27,359 | 3.12/s
+  21,424/27,359 | 3.12/s
+  21,440/27,359 | 3.12/s
+  21,456/27,359 | 3.12/s
+  21,472/27,359 | 3.12/s
+  21,488/27,359 | 3.12/s
+  21,504/27,359 | 3.12/s
+  21,520/27,359 | 3.12/s
+  21,536/27,359 | 3.12/s
+  21,552/27,359 | 3.12/s
+  21,568/27,359 | 3.12/s
+  21,584/27,359 | 3.12/s
+  21,600/27,359 | 3.12/s
+  21,616/27,359 | 3.12/s
+  21,632/27,359 | 3.12/s
+  21,648/27,359 | 3.12/s
+  21,664/27,359 | 3.12/s
+  21,680/27,359 | 3.12/s
+  21,696/27,359 | 3.12/s
+  21,712/27,359 | 3.12/s
+  21,728/27,359 | 3.12/s
+  21,744/27,359 | 3.12/s
+  21,760/27,359 | 3.12/s
+  21,776/27,359 | 3.12/s
+  21,792/27,359 | 3.12/s
+  21,808/27,359 | 3.12/s
+  21,824/27,359 | 3.12/s
+  21,840/27,359 | 3.12/s
+  21,856/27,359 | 3.12/s
+  21,872/27,359 | 3.12/s
+  21,888/27,359 | 3.12/s
+  21,904/27,359 | 3.12/s
+  21,920/27,359 | 3.12/s
+  21,936/27,359 | 3.12/s
+  21,952/27,359 | 3.12/s
+  21,968/27,359 | 3.11/s
+{"ts": "2026-08-05T17:26:41Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 59762, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  21,984/27,359 | 3.11/s
+  22,000/27,359 | 3.11/s
+  22,016/27,359 | 3.11/s
+  22,032/27,359 | 3.11/s
+  22,048/27,359 | 3.11/s
+  22,064/27,359 | 3.11/s
+  22,080/27,359 | 3.11/s
+  22,096/27,359 | 3.11/s
+  22,112/27,359 | 3.11/s
+  22,128/27,359 | 3.11/s
+  22,144/27,359 | 3.11/s
+  22,160/27,359 | 3.11/s
+  22,176/27,359 | 3.11/s
+  22,192/27,359 | 3.11/s
+  22,208/27,359 | 3.11/s
+  22,224/27,359 | 3.11/s
+  22,240/27,359 | 3.11/s
+  22,256/27,359 | 3.11/s
+  22,272/27,359 | 3.11/s
+  22,288/27,359 | 3.11/s
+  22,304/27,359 | 3.11/s
+  22,320/27,359 | 3.11/s
+  22,336/27,359 | 3.11/s
+  22,352/27,359 | 3.11/s
+  22,368/27,359 | 3.11/s
+  22,384/27,359 | 3.11/s
+  22,400/27,359 | 3.11/s
+  22,416/27,359 | 3.11/s
+  22,432/27,359 | 3.11/s
+  22,448/27,359 | 3.11/s
+  22,464/27,359 | 3.11/s
+  22,480/27,359 | 3.11/s
+  22,496/27,359 | 3.11/s
+  22,512/27,359 | 3.11/s
+  22,528/27,359 | 3.11/s
+  22,544/27,359 | 3.11/s
+  22,560/27,359 | 3.11/s
+  22,576/27,359 | 3.11/s
+  22,592/27,359 | 3.11/s
+{"ts": "2026-08-05T17:30:10Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 60402, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  22,608/27,359 | 3.11/s
+  22,624/27,359 | 3.11/s
+  22,640/27,359 | 3.11/s
+  22,656/27,359 | 3.11/s
+  22,672/27,359 | 3.11/s
+  22,688/27,359 | 3.11/s
+  22,704/27,359 | 3.11/s
+  22,720/27,359 | 3.11/s
+  22,736/27,359 | 3.11/s
+  22,752/27,359 | 3.11/s
+  22,768/27,359 | 3.11/s
+  22,784/27,359 | 3.11/s
+  22,800/27,359 | 3.11/s
+  22,816/27,359 | 3.11/s
+  22,832/27,359 | 3.11/s
+  22,848/27,359 | 3.11/s
+  22,864/27,359 | 3.11/s
+  22,880/27,359 | 3.11/s
+  22,896/27,359 | 3.11/s
+  22,912/27,359 | 3.11/s
+  22,928/27,359 | 3.11/s
+  22,944/27,359 | 3.11/s
+  22,960/27,359 | 3.11/s
+  22,976/27,359 | 3.11/s
+  22,992/27,359 | 3.11/s
+  23,008/27,359 | 3.11/s
+  23,024/27,359 | 3.11/s
+  23,040/27,359 | 3.11/s
+  23,056/27,359 | 3.11/s
+  23,072/27,359 | 3.11/s
+  23,088/27,359 | 3.11/s
+  23,104/27,359 | 3.11/s
+  23,120/27,359 | 3.11/s
+  23,136/27,359 | 3.11/s
+  23,152/27,359 | 3.11/s
+  23,168/27,359 | 3.11/s
+  23,184/27,359 | 3.11/s
+  23,200/27,359 | 3.11/s
+  23,216/27,359 | 3.10/s
+{"ts": "2026-08-05T17:33:39Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 61042, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  23,232/27,359 | 3.10/s
+  23,248/27,359 | 3.10/s
+  23,264/27,359 | 3.10/s
+  23,280/27,359 | 3.10/s
+  23,296/27,359 | 3.10/s
+  23,312/27,359 | 3.10/s
+  23,328/27,359 | 3.10/s
+  23,344/27,359 | 3.10/s
+  23,360/27,359 | 3.11/s
+  23,376/27,359 | 3.11/s
+  23,392/27,359 | 3.11/s
+  23,408/27,359 | 3.11/s
+  23,424/27,359 | 3.11/s
+  23,440/27,359 | 3.11/s
+  23,456/27,359 | 3.11/s
+  23,472/27,359 | 3.11/s
+  23,488/27,359 | 3.11/s
+  23,504/27,359 | 3.11/s
+  23,520/27,359 | 3.11/s
+  23,536/27,359 | 3.11/s
+  23,552/27,359 | 3.11/s
+  23,568/27,359 | 3.11/s
+  23,584/27,359 | 3.11/s
+  23,600/27,359 | 3.11/s
+  23,616/27,359 | 3.11/s
+  23,632/27,359 | 3.11/s
+  23,648/27,359 | 3.11/s
+  23,664/27,359 | 3.11/s
+  23,680/27,359 | 3.11/s
+  23,696/27,359 | 3.11/s
+  23,712/27,359 | 3.11/s
+  23,728/27,359 | 3.11/s
+  23,744/27,359 | 3.11/s
+  23,760/27,359 | 3.11/s
+  23,776/27,359 | 3.11/s
+  23,792/27,359 | 3.11/s
+  23,808/27,359 | 3.10/s
+  23,824/27,359 | 3.10/s
+  23,840/27,359 | 3.10/s
+{"ts": "2026-08-05T17:37:08Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 61602, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  23,856/27,359 | 3.10/s
+  23,872/27,359 | 3.10/s
+  23,888/27,359 | 3.10/s
+  23,904/27,359 | 3.10/s
+  23,920/27,359 | 3.10/s
+  23,936/27,359 | 3.10/s
+  23,952/27,359 | 3.10/s
+  23,968/27,359 | 3.10/s
+  23,984/27,359 | 3.10/s
+  24,000/27,359 | 3.10/s
+  24,016/27,359 | 3.10/s
+  24,032/27,359 | 3.10/s
+  24,048/27,359 | 3.10/s
+  24,064/27,359 | 3.10/s
+  24,080/27,359 | 3.10/s
+  24,096/27,359 | 3.10/s
+  24,112/27,359 | 3.10/s
+  24,128/27,359 | 3.10/s
+  24,144/27,359 | 3.10/s
+  24,160/27,359 | 3.10/s
+  24,176/27,359 | 3.10/s
+  24,192/27,359 | 3.10/s
+  24,208/27,359 | 3.10/s
+  24,224/27,359 | 3.10/s
+  24,240/27,359 | 3.10/s
+  24,256/27,359 | 3.10/s
+  24,272/27,359 | 3.10/s
+  24,288/27,359 | 3.10/s
+  24,304/27,359 | 3.10/s
+  24,320/27,359 | 3.10/s
+  24,336/27,359 | 3.10/s
+  24,352/27,359 | 3.10/s
+  24,368/27,359 | 3.10/s
+  24,384/27,359 | 3.10/s
+  24,400/27,359 | 3.10/s
+  24,416/27,359 | 3.10/s
+  24,432/27,359 | 3.10/s
+  24,448/27,359 | 3.10/s
+  24,464/27,359 | 3.10/s
+{"ts": "2026-08-05T17:40:37Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 62242, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  24,480/27,359 | 3.10/s
+  24,496/27,359 | 3.10/s
+  24,512/27,359 | 3.10/s
+  24,528/27,359 | 3.10/s
+  24,544/27,359 | 3.10/s
+  24,560/27,359 | 3.10/s
+  24,576/27,359 | 3.10/s
+  24,592/27,359 | 3.10/s
+  24,608/27,359 | 3.10/s
+  24,624/27,359 | 3.10/s
+  24,640/27,359 | 3.10/s
+  24,656/27,359 | 3.10/s
+  24,672/27,359 | 3.10/s
+  24,688/27,359 | 3.10/s
+  24,704/27,359 | 3.10/s
+  24,720/27,359 | 3.10/s
+  24,736/27,359 | 3.10/s
+  24,752/27,359 | 3.10/s
+  24,768/27,359 | 3.10/s
+  24,784/27,359 | 3.10/s
+  24,800/27,359 | 3.10/s
+  24,816/27,359 | 3.10/s
+  24,832/27,359 | 3.10/s
+  24,848/27,359 | 3.10/s
+  24,864/27,359 | 3.10/s
+  24,880/27,359 | 3.10/s
+  24,896/27,359 | 3.10/s
+  24,912/27,359 | 3.10/s
+  24,928/27,359 | 3.10/s
+  24,944/27,359 | 3.10/s
+  24,960/27,359 | 3.10/s
+  24,976/27,359 | 3.10/s
+  24,992/27,359 | 3.10/s
+  25,008/27,359 | 3.10/s
+  25,024/27,359 | 3.10/s
+  25,040/27,359 | 3.10/s
+  25,056/27,359 | 3.09/s
+{"ts": "2026-08-05T17:44:06Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 62882, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  25,072/27,359 | 3.09/s
+  25,088/27,359 | 3.09/s
+  25,104/27,359 | 3.09/s
+  25,120/27,359 | 3.09/s
+  25,136/27,359 | 3.09/s
+  25,152/27,359 | 3.09/s
+  25,168/27,359 | 3.09/s
+  25,184/27,359 | 3.09/s
+  25,200/27,359 | 3.09/s
+  25,216/27,359 | 3.09/s
+  25,232/27,359 | 3.09/s
+  25,248/27,359 | 3.09/s
+  25,264/27,359 | 3.09/s
+  25,280/27,359 | 3.09/s
+  25,296/27,359 | 3.09/s
+  25,312/27,359 | 3.09/s
+  25,328/27,359 | 3.09/s
+  25,344/27,359 | 3.09/s
+  25,360/27,359 | 3.09/s
+  25,376/27,359 | 3.09/s
+  25,392/27,359 | 3.09/s
+  25,408/27,359 | 3.09/s
+  25,424/27,359 | 3.09/s
+  25,440/27,359 | 3.09/s
+  25,456/27,359 | 3.09/s
+  25,472/27,359 | 3.09/s
+  25,488/27,359 | 3.09/s
+  25,504/27,359 | 3.09/s
+  25,520/27,359 | 3.09/s
+  25,536/27,359 | 3.09/s
+  25,552/27,359 | 3.09/s
+  25,568/27,359 | 3.09/s
+  25,584/27,359 | 3.09/s
+  25,600/27,359 | 3.09/s
+  25,616/27,359 | 3.09/s
+  25,632/27,359 | 3.09/s
+  25,648/27,359 | 3.09/s
+  25,664/27,359 | 3.09/s
+  25,680/27,359 | 3.09/s
+{"ts": "2026-08-05T17:47:35Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 63522, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  25,696/27,359 | 3.09/s
+  25,712/27,359 | 3.09/s
+  25,728/27,359 | 3.09/s
+  25,744/27,359 | 3.09/s
+  25,760/27,359 | 3.09/s
+  25,776/27,359 | 3.09/s
+  25,792/27,359 | 3.09/s
+  25,808/27,359 | 3.09/s
+  25,824/27,359 | 3.09/s
+  25,840/27,359 | 3.09/s
+  25,856/27,359 | 3.09/s
+  25,872/27,359 | 3.09/s
+  25,888/27,359 | 3.09/s
+  25,904/27,359 | 3.09/s
+  25,920/27,359 | 3.09/s
+  25,936/27,359 | 3.09/s
+  25,952/27,359 | 3.09/s
+  25,968/27,359 | 3.09/s
+  25,984/27,359 | 3.09/s
+  26,000/27,359 | 3.09/s
+  26,016/27,359 | 3.09/s
+  26,032/27,359 | 3.09/s
+  26,048/27,359 | 3.09/s
+  26,064/27,359 | 3.09/s
+  26,080/27,359 | 3.09/s
+  26,096/27,359 | 3.09/s
+  26,112/27,359 | 3.09/s
+  26,128/27,359 | 3.09/s
+  26,144/27,359 | 3.09/s
+  26,160/27,359 | 3.09/s
+  26,176/27,359 | 3.09/s
+  26,192/27,359 | 3.09/s
+  26,208/27,359 | 3.09/s
+  26,224/27,359 | 3.09/s
+  26,240/27,359 | 3.09/s
+  26,256/27,359 | 3.09/s
+  26,272/27,359 | 3.09/s
+  26,288/27,359 | 3.09/s
+  26,304/27,359 | 3.09/s
+{"ts": "2026-08-05T17:51:06Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 64082, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  26,320/27,359 | 3.09/s
+  26,336/27,359 | 3.09/s
+  26,352/27,359 | 3.09/s
+  26,368/27,359 | 3.09/s
+  26,384/27,359 | 3.09/s
+  26,400/27,359 | 3.09/s
+  26,416/27,359 | 3.09/s
+  26,432/27,359 | 3.09/s
+  26,448/27,359 | 3.09/s
+  26,464/27,359 | 3.09/s
+  26,480/27,359 | 3.09/s
+  26,496/27,359 | 3.09/s
+  26,512/27,359 | 3.09/s
+  26,528/27,359 | 3.09/s
+  26,544/27,359 | 3.09/s
+  26,560/27,359 | 3.09/s
+  26,576/27,359 | 3.09/s
+  26,592/27,359 | 3.09/s
+  26,608/27,359 | 3.09/s
+  26,624/27,359 | 3.09/s
+  26,640/27,359 | 3.09/s
+  26,656/27,359 | 3.09/s
+  26,672/27,359 | 3.09/s
+  26,688/27,359 | 3.09/s
+  26,704/27,359 | 3.09/s
+  26,720/27,359 | 3.09/s
+  26,736/27,359 | 3.09/s
+  26,752/27,359 | 3.09/s
+  26,768/27,359 | 3.09/s
+  26,784/27,359 | 3.09/s
+  26,800/27,359 | 3.09/s
+  26,816/27,359 | 3.09/s
+  26,832/27,359 | 3.09/s
+  26,848/27,359 | 3.09/s
+  26,864/27,359 | 3.09/s
+  26,880/27,359 | 3.09/s
+  26,896/27,359 | 3.09/s
+  26,912/27,359 | 3.08/s
+  26,928/27,359 | 3.08/s
+{"ts": "2026-08-05T17:54:35Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 64722, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+  26,944/27,359 | 3.08/s
+  26,960/27,359 | 3.08/s
+  26,976/27,359 | 3.08/s
+  26,992/27,359 | 3.08/s
+  27,008/27,359 | 3.08/s
+  27,024/27,359 | 3.08/s
+  27,040/27,359 | 3.08/s
+  27,056/27,359 | 3.08/s
+  27,072/27,359 | 3.08/s
+  27,088/27,359 | 3.08/s
+  27,104/27,359 | 3.08/s
+  27,120/27,359 | 3.08/s
+  27,136/27,359 | 3.08/s
+  27,152/27,359 | 3.08/s
+  27,168/27,359 | 3.08/s
+  27,184/27,359 | 3.08/s
+  27,200/27,359 | 3.08/s
+  27,216/27,359 | 3.08/s
+  27,232/27,359 | 3.08/s
+  27,248/27,359 | 3.08/s
+  27,264/27,359 | 3.08/s
+  27,280/27,359 | 3.08/s
+  27,296/27,359 | 3.08/s
+  27,312/27,359 | 3.08/s
+  27,328/27,359 | 3.08/s
+  27,344/27,359 | 3.08/s
+  27,359/27,359 | 3.08/s
+
+batch: 27,359 | total: 65,201/65,201 | 3.08/s
+
+=== TOP 5 CLASES POR DECADA (de lo procesado hasta ahora) ===
+1890: ade_wall 50.1% · clip_bone_skull 29.7% · minc_other 23.4% · minc_wallpaper 15.6% · clip_water 15.6%
+1900: ade_wall 47.7% · clip_bone_skull 23.3% · clip_weapon 17.1% · minc_wallpaper 16.5% · minc_other 15.9%
+1910: ade_wall 40.3% · minc_wallpaper 31.8% · clip_bone_skull 25.2% · clip_weapon 19.4% · clip_shadow 13.6%
+1920: ade_wall 36.0% · clip_bone_skull 23.0% · minc_wallpaper 21.9% · clip_shadow 19.1% · clip_weapon 15.7%
+1930: ade_wall 37.6% · minc_plastic 23.2% · clip_shadow 21.1% · minc_wallpaper 20.4% · ade_person 19.8%
+1940: ade_wall 31.7% · ade_person 28.7% · minc_plastic 28.3% · clip_shadow 18.6% · clip_weapon 18.6%
+1950: ade_wall 33.0% · minc_plastic 24.7% · clip_weapon 24.7% · ade_person 21.5% · minc_wallpaper 15.7%
+1960: ade_wall 35.1% · minc_plastic 26.5% · clip_weapon 20.8% · ade_person 17.2% · clip_shadow 16.2%
+1970: ade_wall 34.3% · minc_plastic 27.6% · ade_person 19.4% · clip_weapon 19.4% · clip_blood 19.1%
+1980: minc_plastic 32.1% · ade_wall 31.7% · ade_person 22.4% · clip_weapon 18.9% · clip_blood 16.6%
+1990: ade_wall 32.4% · minc_plastic 31.3% · ade_person 24.5% · clip_blood 20.7% · clip_weapon 15.7%
+2000: ade_wall 32.1% · minc_plastic 26.2% · clip_blood 25.7% · ade_person 22.2% · minc_hair 16.2%
+2010: ade_wall 34.4% · minc_plastic 26.0% · clip_blood 25.3% · ade_person 19.0% · clip_shadow 15.4%
+2020: ade_wall 34.8% · minc_plastic 27.5% · clip_blood 22.2% · ade_person 18.2% · minc_hair 14.6%
+segmentation published 65201
+{"ts": "2026-08-05T17:57:19Z", "phase": "sync", "faces_v2": 65201, "attributes": 37842, "segmentation": 65201, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}
+Completed 33 Bytes/33 Bytes (415 Bytes/s) with 1 file(s) remainingupload: data/qa/vision_gap/DONE to s3://sagemaker-studio-a5572760/wflike-vision-gap/results/DONE
+{"ts": "2026-08-05T17:57:39Z", "phase": "done", "faces_v2": 65201, "attributes": 37842, "segmentation": 65201, "medium": 65201, "census": 65201, "typography": 65201, "clip_embeddings": 65201, "posters_on_disk": 27359}

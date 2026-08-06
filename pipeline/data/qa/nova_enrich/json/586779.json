@@ -1,0 +1,46 @@
+{
+  "title_text": "THE GRAVE DIGGER",
+  "credits_text": "FILM BY JERE CAMPBELL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BOX US FEATURE: TALES FROM BEYOND THE GRAVE",
+  "mood": [
+    "gothic",
+    "horror",
+    "surreal",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains suggestive imagery and occult themes.",
+  "description": "A colorful poster features multiple characters, including a central skull and eerie figures, with bold typography and a dark, gothic aesthetic."
+}

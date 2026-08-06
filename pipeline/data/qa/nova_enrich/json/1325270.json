@@ -1,0 +1,45 @@
+{
+  "title_text": "THE HEAD INCIDENT",
+  "credits_text": "A psychological thriller starring KIRK HART. KEVIN ETZIN, JOHN DEPAULLE, ALEX YURDAKUK Assistant crew JOE MOROTTO and BRIAN DENK",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "surreal",
+    "psychological",
+    "gothic",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "psychological",
+      "conf": 0.8
+    },
+    {
+      "name": "disturbing",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains disturbing imagery and psychological themes.",
+  "description": "A black-and-white poster features a grotesque, exaggerated face with wide eyes and a menacing grin, looming over two smaller figures in a coffin-like structure."
+}

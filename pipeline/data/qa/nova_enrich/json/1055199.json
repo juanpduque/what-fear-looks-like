@@ -1,0 +1,42 @@
+{
+  "title_text": "麻心音物",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "音物結届 11 歳影結届 7 歳影結届 3 歳影結届 2 歳影結届 1 歳影結届 4 歳影結届 5 歳影結届 6 歳影結届 8 歳影結届 9 歳影結届 10",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "psychological",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and horror imagery.",
+  "description": "A poster featuring a horror-themed title in Japanese with a central image of a distressed face covered in blood, surrounded by smaller circular images of other faces."
+}

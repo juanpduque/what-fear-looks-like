@@ -1,0 +1,45 @@
+{
+  "title_text": "FLU BIRDS",
+  "credits_text": "If They Fly You Die",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "bird",
+      "conf": 0.9
+    },
+    {
+      "name": "eye",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and a dismembered eye, suggesting violence and horror themes.",
+  "description": "A poster shows a bird holding a severed eye with blood, against a dark, ominous sky with other birds flying."
+}

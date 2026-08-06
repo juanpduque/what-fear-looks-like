@@ -1,0 +1,46 @@
+{
+  "title_text": "GAME CHANGER: THE LEGACY OF SAW",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "psychological",
+    "intense",
+    "disturbing",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "mechanical",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains intense and disturbing imagery, suggesting graphic violence and psychological horror.",
+  "description": "A black and white poster features a distressed face trapped in mechanical restraints with a shadowy figure in the background. The title \"GAME CHANGER: THE LEGACY OF SAW\" is prominently displayed."
+}

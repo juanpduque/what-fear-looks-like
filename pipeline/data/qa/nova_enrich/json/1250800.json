@@ -1,0 +1,45 @@
+{
+  "title_text": "THEY ARE WATCHING",
+  "credits_text": "KEEGAN MACY J. M. STELLY JARED BANKENS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BEWARE THE DARK WEB",
+  "mood": [
+    "dread",
+    "suspense",
+    "thriller",
+    "tech-horror",
+    "paranoia"
+  ],
+  "fear_labels": [
+    {
+      "name": "tech-horror",
+      "conf": 0.9
+    },
+    {
+      "name": "paranoia",
+      "conf": 0.85
+    },
+    {
+      "name": "surveillance",
+      "conf": 0.8
+    },
+    {
+      "name": "dark-web",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features disturbing imagery of tools and wires, suggesting themes of surveillance and psychological tension.",
+  "description": "A dark, gritty poster shows a tray filled with various tools and wires, hinting at a suspenseful, tech-horror theme."
+}

@@ -1,0 +1,43 @@
+{
+  "title_text": "GuZo",
+  "credits_text": "御子息ななみ",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "ホラー・スリラー・アクションに迫る7",
+  "mood": [
+    "horror",
+    "thriller",
+    "violent",
+    "erotic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    },
+    {
+      "name": "erotic",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and sexual content.",
+  "description": "A vibrant poster features a central figure in a red dress, surrounded by smaller images of people and scenes of violence and horror."
+}

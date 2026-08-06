@@ -1,0 +1,42 @@
+{
+  "title_text": "FRIGHT RIDE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HAIR RAISER",
+  "mood": [
+    "gothic",
+    "camp",
+    "spooky",
+    "humorous"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster advertises a 'Fright Ride' with animated monsters and a skull, set against a gothic backdrop."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "STRINGS",
+  "credits_text": "ASHTON HUNT CALYPSO LEWIS COCO JONES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"SUSCEPTIBLE CREATURE\" \"FELIX MILLER\" \"JULIAN CARSON\" \"EMILY KELLY\" \"JAMES KELLY\" \"ASHLEY LORCHARD\" \"RICK VANDERBOS\" \"SARA WOLFE\" \"REBECCA BAKER\" \"CLAIRE PARRISH\" \"CARLA BARNUM\" \"DANIEL COLLINS\" \"LISA DUFFY\" \"ALEX LAYFLER\" \"MIRANDA LEE PETERS\" \"CLAIRE VAN MAR\" \"ALEX ALLEN\" \"LISA BROWDERMAN\" \"JULIAN KELLY\"",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild graphic imagery and themes of horror.",
+  "description": "A horror movie poster featuring a distorted, eerie face with blue eyes and red lips, suspended by strings against a dark background."
+}

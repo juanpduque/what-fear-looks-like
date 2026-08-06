@@ -1,0 +1,46 @@
+{
+  "title_text": "RACHNO TERROR",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HORROR DO FUTURO CANIBAL PROD.",
+  "mood": [
+    "dread",
+    "sci-fi",
+    "horror",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "spider",
+      "conf": 0.95
+    },
+    {
+      "name": "ghost",
+      "conf": 0.3
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.4,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a large spider monster against a night sky with two human faces at the bottom, suggesting a horror theme."
+}

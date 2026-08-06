@@ -1,0 +1,45 @@
+{
+  "title_text": "THE CANDLELIGHT WITCH",
+  "credits_text": "They killed her only child, they should have killed her too. For if you light three candles, The Candelight Witch comes for you.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "supernatural",
+    "dread",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and a monstrous character, but no explicit violence or gore.",
+  "description": "A poster features a green-faced witch holding candles with flames, set against a dark background with a tagline about vengeance."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "THE SURRENDER",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "blood"
+  ],
+  "moderation_notes": "Contains occult imagery and stylized blood drips, but no explicit violence or nudity.",
+  "description": "A dark poster shows two central figures on a platform surrounded by shadowy silhouettes, with red drips and candles creating an eerie, gothic atmosphere."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "MÚSICA PARA ELEGIDOS",
+  "credits_text": "UN CORTOMETRAJE DE NICOLÁS AMELIO-ORTIZ",
+  "languages": [
+    "es"
+  ],
+  "other_text": "JOSÉ MARÍA RICO, RITA GÓMEZ, BÁRBARA GONZÁLEZ, CARMEN GONZÁLEZ, MARÍA SANTIAGO VIL FRANZISKA RINKE, DIEGO RIVERO, LUIS GONZÁLEZ, MARÍA JOSÉ ARTE",
+  "mood": [
+    "gothic",
+    "surreal",
+    "haunting",
+    "mysterious",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "gothic",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied blood and a haunting, eerie atmosphere.",
+  "description": "A poster featuring a woman with long hair and a haunting expression, overlaid with text in Spanish."
+}

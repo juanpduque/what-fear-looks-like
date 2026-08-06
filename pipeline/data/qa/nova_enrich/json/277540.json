@@ -1,0 +1,46 @@
+{
+  "title_text": "CANNIBAL FLESH RIPT!",
+  "credits_text": "A GRIS GRIMLY FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WILL NOTHING SATISFY THEIR TASTE FOR THE DEAD?",
+  "mood": [
+    "gritty",
+    "violent",
+    "horror",
+    "cannibal",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.95
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.95,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gory imagery.",
+  "description": "A poster featuring a woman with a skull design confronting a monstrous figure amidst chaotic, gory scenes."
+}

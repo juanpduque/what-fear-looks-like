@@ -1,0 +1,42 @@
+{
+  "title_text": "MUCHA SANGRE",
+  "credits_text": "Producer: Luis Ferrando - Isona Passola\nDirector: Pepe de las Heras\nCast: Pepe de las Heras, Ramón Heres, Jacinto del Toro, Julio Compo, Ismael Sandoval",
+  "languages": [
+    "es"
+  ],
+  "other_text": "DO NOT LOOSE YOUR HEAD",
+  "mood": [
+    "intense",
+    "violent",
+    "thriller",
+    "action",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A dramatic poster features a man holding two guns with a menacing background and bold red text."
+}

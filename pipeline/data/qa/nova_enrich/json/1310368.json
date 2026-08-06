@@ -1,0 +1,38 @@
+{
+  "title_text": "STRAWBERRY SPRING",
+  "credits_text": "a film by Scott Crain",
+  "languages": [
+    "en"
+  ],
+  "other_text": "based on the short story by Stephen King",
+  "mood": [
+    "mysterious",
+    "eerie",
+    "haunting",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.1,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, misty forest scene with a faint silhouette in the distance, evoking a mysterious and haunting atmosphere."
+}

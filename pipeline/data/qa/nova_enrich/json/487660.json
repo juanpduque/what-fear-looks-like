@@ -1,0 +1,49 @@
+{
+  "title_text": "Tarnation",
+  "credits_text": "CAST: ERIN LORIE, EMMA WILSON, DANA SPARKS, JANE BRADLEY, ALICE WALTERSON DIRECTOR: SCOTT MCINTYRE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "surreal",
+    "gothic",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.4,
+  "violence": 0.6,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and violent themes.",
+  "description": "A woman stands defiantly in front of a haunted house surrounded by eerie figures and monstrous creatures in a dark, forested setting."
+}

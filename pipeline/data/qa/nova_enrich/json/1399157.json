@@ -1,0 +1,42 @@
+{
+  "title_text": "กันเหล็อนไฟล์จัด",
+  "credits_text": "",
+  "languages": [
+    "th"
+  ],
+  "other_text": "กันดีบัน โลย กันดีบันหมาพี่งกันดีบันหมาพี่งกันดีบัน กันเพิดวาม และ จารราง ไม่งกันดีบัน ไม่งกันดีบัน พีวาม และ เพมนี้",
+  "mood": [
+    "horror",
+    "terror",
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "crowd",
+      "conf": 0.85
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.85
+}

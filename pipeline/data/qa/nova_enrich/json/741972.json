@@ -1,0 +1,46 @@
+{
+  "title_text": "ANTIHESE",
+  "credits_text": "EIN FILM VON JONAS SOMMER UND THOMAS BINDER",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "surreal",
+    "mysterious",
+    "haunting",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.9
+    },
+    {
+      "name": "gothic",
+      "conf": 0.85
+    },
+    {
+      "name": "haunting",
+      "conf": 0.8
+    },
+    {
+      "name": "mysterious",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and a haunting atmosphere.",
+  "description": "A poster features a goat's head on a desk with a typewriter, candle, and open book under a moonlit night sky."
+}

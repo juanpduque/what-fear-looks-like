@@ -1,0 +1,46 @@
+{
+  "title_text": "PRANK WEEK",
+  "credits_text": "Manny Velazquez's Film Studies",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CRIME SCENE-DO NOT ENTER\nA MANNY VELAZQUEZ FILM",
+  "mood": [
+    "horror",
+    "thriller",
+    "prank",
+    "suspense",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including blood and violent imagery.",
+  "description": "A horror-themed poster featuring a skull holding a bloody cleaver, a mansion with crime scene tape, and bold red text reading 'PRANK WEEK.'"
+}

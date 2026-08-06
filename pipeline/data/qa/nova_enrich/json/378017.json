@@ -1,0 +1,50 @@
+{
+  "title_text": "THE BARN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "supernatural",
+    "dread",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.85,
+  "person": 0.6,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including monstrous figures and implied violence.",
+  "description": "A group sits near a burning barn with monstrous, skull-faced figures looming above, creating a terrifying atmosphere."
+}

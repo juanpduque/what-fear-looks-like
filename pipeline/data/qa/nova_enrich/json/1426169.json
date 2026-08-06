@@ -1,0 +1,41 @@
+{
+  "title_text": "DISTORTED BLUE HALF",
+  "credits_text": "QUINNBLISSMER'S LOCK UP",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EXTENDED CUT",
+  "mood": [
+    "surreal",
+    "disturbing",
+    "psychological",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "eyes",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and intense, disturbing visuals.",
+  "description": "The poster features a surreal, distorted image of red, eye-like structures against a blue background with bold text."
+}

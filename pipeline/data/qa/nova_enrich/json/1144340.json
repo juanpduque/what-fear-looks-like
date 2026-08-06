@@ -1,0 +1,40 @@
+{
+  "title_text": "DOLLFACE",
+  "credits_text": "TERROR ON ROUTE NINE\nMORBID OFFERINGS PRESENTS DOLLFACE: TERROR ON ROUTE NINE... JEFF GRESHAM\nSTARRING: C.J. SIBLEY JAMES TREICK SUZIE SUGG... TRINA ENLOE CHRISTOPHER SUGG JUNIOR ALANIS JON THOMPSON... EDDIE BLAKE\nDIRECTED BY: BRANDON PARMLEY\nPRODUCED BY: HELENE WEATHERFIELD\nWRITTEN BY: JEFF GRESHAM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "terror",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster featuring a grotesque, blood-smeared face with the title 'DOLLFACE' and credits for a horror film."
+}

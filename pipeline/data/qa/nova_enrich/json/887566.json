@@ -1,0 +1,43 @@
+{
+  "title_text": "PSYCHO",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Premiere Kinovorstellung am 10. Oktober 1960 im Astoria Erster Teil des 25-jährigen Jubiläums-Films von Alfred Hitchcock",
+  "mood": [
+    "psychological",
+    "thriller",
+    "gothic",
+    "dread",
+    "classic"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A black and white poster features a screaming face and a house, with bold text reading 'PSYCHO' and additional German release details."
+}

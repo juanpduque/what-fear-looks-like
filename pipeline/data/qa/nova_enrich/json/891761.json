@@ -1,0 +1,47 @@
+{
+  "title_text": "SPRITE FRIGHT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NOT ALL MUSHROOMS ARE FUN GUYS.",
+  "mood": [
+    "fantasy",
+    "horror",
+    "adventure",
+    "mysterious",
+    "forest"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A group of animated characters stands in a dark forest, illuminated by a glowing light, with a title 'Sprite Fright' prominently displayed."
+}

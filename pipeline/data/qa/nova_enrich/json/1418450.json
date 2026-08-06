@@ -1,0 +1,36 @@
+{
+  "title_text": "GPK",
+  "credits_text": "FROM THE STUDIO BEHIND MONSTER NEXT DOOR CHAINED BOX AND THE CALL. Purgatory Pictures PRESENTS A MATT SHAW FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PURGATORY",
+  "mood": [
+    "thriller",
+    "horror",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster suggests potential violence and gore due to the knife imagery.",
+  "description": "A movie poster features a camera with a knife in its screen, bold red lettering for the title GPK, and credits for Purgatory Pictures and director Matt Shaw."
+}

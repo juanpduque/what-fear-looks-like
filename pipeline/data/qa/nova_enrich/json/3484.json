@@ -1,0 +1,38 @@
+{
+  "title_text": "The MASK OF FU MANCHU",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "camp",
+    "mysterious",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "mask",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.4,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.2,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A woman in a red dress stands defiantly with a determined expression, while a masked green figure looms behind her, holding a thin object."
+}

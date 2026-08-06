@@ -1,0 +1,43 @@
+{
+  "title_text": "ROTTEN SHADOWS",
+  "credits_text": "HE SAW IT IN HIS DREAMS... BUT NOW HE'LL ONLY SEE IT IN HIS NIGHTMARES! STARRING DRAVEN FORD A GHOUL CAPONE PICTURES PRODUCTION DIRECTED BY ROBERT STERNKOPF WITH SKYLA SMITH NICOLAS NIPP AND ROBERT TAYLOR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "noir",
+    "mysterious",
+    "haunting",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A stylized poster features a man in a fedora and trench coat, with shadowy figures and a haunted house in the background."
+}

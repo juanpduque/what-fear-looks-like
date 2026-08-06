@@ -1,0 +1,40 @@
+{
+  "title_text": "GEIMU",
+  "credits_text": "A VIRTUAL FILM BY DORIAN GOTO STONE\nAIMI SEKIGUCHI KATSUYUKI MIYAKE",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "WHEN AI GETS MEDIEVAL ON YOU\nAWARD WINNER Japan Indie Film Festival 2019\nAWARD WINNER OKC Independent Film Festival 2019\nOFFICIAL SELECTION VIVE FLAVOURS Film Festival 2019\nOFFICIAL SELECTION VIVE MONDE Film Festival 2019\nBREAK HAVC HORROR FILM FESTIVAL 2019\nVIRTUAL REALITY STEREOSCOPIC 3D AMBISONIC AUDIO\n@GEIMUVR\nWWW.GEIMUVR.COM",
+  "mood": [
+    "sci-fi",
+    "medieval",
+    "surreal",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster features a stylized skull with glowing eyes and a face, overlaid with text and awards, suggesting a virtual reality horror film."
+}

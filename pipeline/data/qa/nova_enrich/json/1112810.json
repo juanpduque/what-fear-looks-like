@@ -1,0 +1,41 @@
+{
+  "title_text": "SLAYER",
+  "credits_text": "CAST JAROSLAV PÍČKA PETR TROJANEK PETR NOVAK JAKUB VOLÁNEK VOJTĚCH MORÁVEK ONDŘEJ VODA JOSEF BEROUSEK VLADIMÍR PAŠAK AS BIG DADDY VAMPIRE STUNT COORDINATOR LIBOR VRBA SR. ONDŘEJ VODA RIGGING ZDENEK GLOSER SOUND TOMÁŠ HAJEK DIMITRI KANJUKA SFX VÁCLAV VANĚČEK MICHAEL CARSKA TITLES MARTIN ERTL PRODUCED BY LIBOR VRBA JR. DIRECTOR OF PHOTOGRAPHY ŠTĚPÁN RADINA WRITTEN & DIRECTED BY DIMITRI KANJUKA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "II. Pražská šermírna presents",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "vampire",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains themes of horror and occult, with potential for violence.",
+  "description": "A man holding a lantern stands in a dark, blue-lit corridor. The poster advertises a horror film titled 'Slayer.'"
+}

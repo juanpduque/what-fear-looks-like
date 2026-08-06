@@ -1,0 +1,42 @@
+{
+  "title_text": "EL MONSTRUO RESUCITADO",
+  "credits_text": "MIROSLAVA NAVARRO JOSÉ LINARES RIVAS como DR. CRIMEN FERNANDO WAGNER ALBERTO MARISCAL ESTEFAN BERNE CHANO URUETA VICTOR HERBER FEDERICO RUIZ DINO MAURI",
+  "languages": [
+    "es"
+  ],
+  "other_text": "INTERNACIONAL CINEMATOGRAFICA",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic poster features a monstrous face, a skull, and a woman, set against a dark, gothic castle backdrop under a full moon."
+}

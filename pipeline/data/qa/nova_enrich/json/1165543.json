@@ -1,0 +1,42 @@
+{
+  "title_text": "SPOOKTACULAR!",
+  "credits_text": "Behind the Screams of America's Original Horror Theme Park",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FROM EXECUTIVE PRODUCER TOM SAVINI",
+  "mood": [
+    "gothic",
+    "haunting",
+    "mysterious",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "crowd",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man in a cape stands in front of a haunted house with a full moon and a spooky atmosphere."
+}

@@ -1,0 +1,37 @@
+{
+  "title_text": "HOME INVASION",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Thomas Segsworth Presents\nFamily is not the only thing ... it's everything!",
+  "mood": [
+    "tense",
+    "suspenseful",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dimly lit poster features a man in a white tank top with bold text reading 'HOME INVASION' and a tagline about family."
+}

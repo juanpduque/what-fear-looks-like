@@ -1,0 +1,37 @@
+{
+  "title_text": "HOUNDED",
+  "credits_text": "SAMANTHA BOND JAMES LANCE NICK MORAN JAMES FAULKNER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HUNTING SEASON IS OPEN",
+  "mood": [
+    "intense",
+    "thriller",
+    "action",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.3,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "Three individuals stand in a field with weapons, blood on their clothing, and a manor in the background."
+}

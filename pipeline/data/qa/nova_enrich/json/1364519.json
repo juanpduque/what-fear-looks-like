@@ -1,0 +1,40 @@
+{
+  "title_text": "LINDA LA BELLE-MÈRE",
+  "credits_text": "UN FILM DE Toucher Velours AVEC: MARION LIMOSIN ALBAN FEVRE",
+  "languages": [
+    "fr"
+  ],
+  "other_text": "ROMANCE",
+  "mood": [
+    "gothic",
+    "eerie",
+    "mysterious",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "",
+  "description": "Movie poster features a woman inside an ornate box with eerie lighting and a skull, suggesting a gothic horror theme."
+}

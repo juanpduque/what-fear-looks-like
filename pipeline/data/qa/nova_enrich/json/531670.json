@@ -1,0 +1,43 @@
+{
+  "title_text": "BLACK ROOM",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "結言体的間",
+  "mood": [
+    "dread",
+    "gothic",
+    "erotic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "chains",
+      "conf": 0.8
+    },
+    {
+      "name": "prison",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and suggestive content.",
+  "description": "A man in chains stands over a woman in a blood-stained dress inside a prison-like room."
+}

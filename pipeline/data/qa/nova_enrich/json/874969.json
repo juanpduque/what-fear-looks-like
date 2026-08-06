@@ -1,0 +1,44 @@
+{
+  "title_text": "THE DECAPITATOR",
+  "credits_text": "REVENGE IS NOTHING TO LOSE YOUR HEAD OVER.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "terror",
+    "gothic",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts graphic violence and a weapon, indicating potential disturbing content.",
+  "description": "A masked figure holds an axe over a pile of rocks in a dark forest, with bold red text reading 'The Decapitator.'"
+}

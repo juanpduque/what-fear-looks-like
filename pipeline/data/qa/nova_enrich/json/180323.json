@@ -1,0 +1,47 @@
+{
+  "title_text": "BATH SALT ZOMBIES",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DRUGS SEX & CANNIBALISM",
+  "mood": [
+    "horror",
+    "camp",
+    "erotic",
+    "violent",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.4,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and sexual content.",
+  "description": "A poster features a group of people, including a zombie, in a chaotic scene with weapons and intense expressions."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "SPIRIT",
+  "credits_text": "ST. LINDSAY PICTURES PRESENT'S A MARK WAGNER FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EVEN THE PURE WILL DIE",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "dramatic",
+    "intense",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark poster features a woman and a monstrous figure with glowing eyes, separated by a burst of light, with dramatic text overlay."
+}

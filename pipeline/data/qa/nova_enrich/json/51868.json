@@ -1,0 +1,46 @@
+{
+  "title_text": "SHAOLIN EVIL VS DEAD",
+  "credits_text": "FROM THE STAR OF KILL BILL 1 AND 2! GORDON LIU",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EVERYBODY IS ZOMBIE FIGHTING!",
+  "mood": [
+    "action",
+    "horror",
+    "martial arts",
+    "camp",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "zombie",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and horror elements.",
+  "description": "The poster features a group of martial artists facing a large, menacing creature with lightning effects in the background."
+}

@@ -1,0 +1,75 @@
+{
+  "status": "pause_cleared_local_done",
+  "strategy": "PAUSE_LABELS cleared after local enrich DONE; fresh skip uploaded; worker resumed labels",
+  "bucket": "sagemaker-studio-a5572760",
+  "prefix": "wflike-community-72k",
+  "instance_id": "i-0c9df56ab11bf8b4b",
+  "protect_instances": [
+    "i-00bbaab197dd951d5",
+    "i-0d70c936e1e39759b",
+    "i-0f04b405308589396",
+    "i-0b9777ca835a6d5ab"
+  ],
+  "pause": "cleared",
+  "pause_key": "s3://sagemaker-studio-a5572760/wflike-community-72k/results/PAUSE_LABELS",
+  "pause_object_present": false,
+  "skip": {
+    "skip_labels": 49556,
+    "from_main": 49556,
+    "from_sidecar": 11727,
+    "built_at": "2026-08-04T00:51:49Z",
+    "note": "final skip after local enrich DONE \u2014 main\u222asidecar"
+  },
+  "local_enrich": {
+    "pid": 4903,
+    "alive": false,
+    "sidecar_rows": 11727,
+    "log_tail": "LISTO ok=0 err=3 elapsed=0.6m (0.00/s) main=49556 \u2192 data/qa/rekognition_community_enrich.csv",
+    "done": true,
+    "main_rows": 49556
+  },
+  "progress": {
+    "phase": "labels",
+    "status": "running",
+    "done_batch": 475,
+    "todo": 15642,
+    "ok": 0,
+    "err": 475,
+    "total_rows": 475,
+    "rate_per_s": 24.801,
+    "ts": "2026-08-04T00:52:35Z",
+    "bucket": "sagemaker-studio-a5572760",
+    "prefix": "wflike-community-72k"
+  },
+  "actions": [
+    {
+      "rebuild_skip": 49556,
+      "at": "2026-08-04T00:51:49Z"
+    },
+    {
+      "upload_skip": true,
+      "at": "2026-08-04T00:52:38Z"
+    },
+    {
+      "clear_pause": "cleared_after_local_done",
+      "at": "2026-08-04T00:52:38Z"
+    },
+    {
+      "confirm": "labels/running",
+      "at": "2026-08-04T00:52:38Z"
+    }
+  ],
+  "worker_features": [
+    "wait_if_pause_labels",
+    "refresh_skip_from_s3"
+  ],
+  "note": "OWL CPU i-0b9777ca835a6d5ab left untouched; no GPU OWL started",
+  "updated_at": "2026-08-04T00:53:20Z",
+  "labels_alert": {
+    "ok": 0,
+    "err_growing": true,
+    "error": "AccessDeniedException DetectLabels \u2014 role wflike-ec2-role/i-0c9df56ab11bf8b4b not authorized",
+    "note": "pause cleared and labels phase running, but Rekognition API denied; needs IAM fix before useful progress",
+    "observed_at": "2026-08-04T00:53:20Z"
+  }
+}

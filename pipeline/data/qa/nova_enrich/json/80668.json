@@ -1,0 +1,47 @@
+{
+  "title_text": "SCARAB",
+  "credits_text": "A magical experiment turns into a nightmare of killings and blackmail at the hands of a mad sorcerer. ROBERT GINTY RIP TORN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gothic",
+    "surreal",
+    "dread",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "occult",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.7,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "nudity",
+    "occult"
+  ],
+  "moderation_notes": "Contains partial nudity, violent imagery, and occult themes.",
+  "description": "A dramatic poster features a central female figure with a demonic figure above, a man on a motorcycle, and dark, fiery backgrounds, evoking horror and occult themes."
+}

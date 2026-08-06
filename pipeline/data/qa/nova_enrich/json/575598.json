@@ -1,0 +1,43 @@
+{
+  "title_text": "BLOODROME",
+  "credits_text": "Real wrist cutting Movie",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "NOT SAFE FOR WORK, THE ACIS WHICH ARE DEPICTED IN THIS FILM WERE DONE FOR REAL. アート・リゾーム",
+  "mood": [
+    "dread",
+    "disturbing",
+    "gothic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "wound",
+      "conf": 0.85
+    },
+    {
+      "name": "self-harm",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "self-harm"
+  ],
+  "moderation_notes": "Contains graphic depictions of self-harm and blood; not suitable for all audiences.",
+  "description": "A young girl in a wheelchair with long black hair and a blood-stained dress sits in a room with a bloody handprint on a canvas behind her."
+}

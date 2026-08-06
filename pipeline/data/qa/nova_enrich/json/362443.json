@@ -1,0 +1,43 @@
+{
+  "title_text": "FANGONE!",
+  "credits_text": "Starring BRIAN PAPANDREA & EMILY HILBORN SHERMAN, with NATHAN RUMLER, MARCUS KOCH, ABBOTT NOELAN, ASHLEY CHRONOWSKI, KOCH, special make-up effects by ANGELINA LIGE, special hair/dressing by JAMES BELL, additional make-up effects by BRIAN KILBY, director of photography by NATHAN RUMLER, produced by BRIAN KILBY & BRIAN PAPANDREA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Written by NATHAN RUMLER, directed by BRIAN PAPANDREA",
+  "mood": [
+    "violent",
+    "gothic",
+    "erotic",
+    "surreal",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "A colorful, chaotic poster features multiple characters amidst splattered blood and dramatic expressions, suggesting a violent, surreal narrative."
+}

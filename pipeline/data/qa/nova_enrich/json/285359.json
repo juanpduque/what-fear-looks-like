@@ -1,0 +1,43 @@
+{
+  "title_text": "A HORA DO MEDO",
+  "credits_text": "MARIE WICHENING ALBERT KAFULINSKI FRANCISCO CAVALCANTI",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "other_text": "PLATEA FIME SUPREME PODEROSOS QUE O DIANO... ELS SÃO CAPAZES DE TUO! CUIDADO... EXISTEM MUITOS MOTIVOS PARA VOCÊ MORRER DE MEDO.",
+  "mood": [
+    "horror",
+    "thriller",
+    "suspense",
+    "psychological",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild graphic violence and blood.",
+  "description": "Poster features a man and a screaming child with a shadowy figure and a church in the background, evoking horror and suspense."
+}

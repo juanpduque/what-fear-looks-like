@@ -1,0 +1,41 @@
+{
+  "title_text": "the 7th Hunt",
+  "credits_text": "a film by JD Cohen",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FIVE VICTIMS FIVE KILLERS ONE AIM... TO SURVIVE",
+  "mood": [
+    "dread",
+    "intense",
+    "survival",
+    "thriller",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild violent themes suggested by the poster's intense imagery and tagline.",
+  "description": "A distressed person is shown in chains against a dark, industrial background with a small building in the distance."
+}

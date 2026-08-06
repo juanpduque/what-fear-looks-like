@@ -1,0 +1,45 @@
+{
+  "title_text": "KHOONI PED",
+  "credits_text": "Produced & Director : JAGDISH GAUTAM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "रक्त पेड",
+  "mood": [
+    "gothic",
+    "horror",
+    "supernatural",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and mild horror imagery.",
+  "description": "A poster featuring a young woman and a ghostly figure with a large open mouth, promoting a horror film titled 'KHOONI PED'."
+}

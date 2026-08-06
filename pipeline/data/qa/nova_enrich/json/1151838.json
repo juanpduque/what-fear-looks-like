@@ -1,0 +1,46 @@
+{
+  "title_text": "SEYTAN GEÇİDİ",
+  "credits_text": "EN HARA\nyapımcısı: HAKAN YUSUFOĞULLARI MESUT ERBAS\nyönetmen: ONUR ALDOĞAN vıx aktör: MERT KOSE görüntü çözümü: MUSTAFA KOSE\nsenarist: URAŞ ZAFER ÖZDEMİR uşaklık yapımı: SEMHA GÜLAŞ\nHAKAN YUSUFOĞULLARI YASEMİN YILDIRIM TAYFUN TURHAN İRMAK KARAKUÇ\nBURAK RUKUŞFULLARI MELIKE DEĞIRMENCI ERKUT TOPRAİ EROL ÖZDEMİR",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "YÖNETMEN ONUR ALDOĞAN\n7 ARALIK'TA SİNEMALARDA\nCINEMAÖON\nMCFILM",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "intense",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.75,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster features a grotesque, monstrous face with exposed teeth and blood, set against a dark, red background with web-like patterns."
+}

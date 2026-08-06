@@ -1,0 +1,44 @@
+{
+  "title_text": "古荔酒店 The Fortune Hotel",
+  "credits_text": "Directed by Stephen Tsui; Starring: Zhou Xun, Huang Xiaoming, Sun Li, Huang Bo, Li Chen, Le Yu Fang",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "In Cinemas 29 October",
+  "mood": [
+    "mystery",
+    "gothic",
+    "suspense",
+    "psychological",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "haunted_house",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    },
+    {
+      "name": "text_heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster for a psychological horror film featuring four characters in a dark, eerie setting with a haunted hotel theme."
+}

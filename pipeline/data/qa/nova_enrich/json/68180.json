@@ -1,0 +1,40 @@
+{
+  "title_text": "I, ZOMBIE",
+  "credits_text": "\"GEORGE ROMERO MEETS KEN LOACH\" - MI SIMPSON, BRITISH HORROR REVIVAL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AN ANDREW PARKINSON FILM",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of a decayed, monstrous face with visible blood and gore.",
+  "description": "The poster features a close-up of a decayed, monstrous face with visible blood and gore, promoting the film 'I, Zombie' directed by Andrew Parkinson."
+}

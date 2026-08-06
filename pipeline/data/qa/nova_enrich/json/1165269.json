@@ -1,0 +1,42 @@
+{
+  "title_text": "CURSE OF THE VORDEGO",
+  "credits_text": "LLOYD KAUFMAN AND MICHAEL HERZ A TROMAR TEAM PRODUCTION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Welcome TO TROMAVILLE KILLIN' CAPITOL OF THE WORLD EST. 2085",
+  "mood": [
+    "horror",
+    "camp",
+    "surreal",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.4,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A colorful poster features a monstrous creature and several characters in a forested area with tents and a sign welcoming to Tromaville."
+}

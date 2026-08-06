@@ -1,0 +1,46 @@
+{
+  "title_text": "TERATOMORPH",
+  "credits_text": "A FILM BY JOE MEREDITH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horrific",
+    "gothic",
+    "surreal",
+    "dread",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.1,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of monstrous creatures and blood, potentially disturbing to some viewers.",
+  "description": "The poster features a grotesque, monstrous face with eerie blue lighting, accompanied by smaller images of disturbing creatures and body parts."
+}

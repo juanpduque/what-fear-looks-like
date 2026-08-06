@@ -1,0 +1,49 @@
+{
+  "title_text": "THE LEGEND OF HALLOWEEN JACK",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "eerie",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "scythe",
+      "conf": 0.95
+    },
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "halloween",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.95,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence through weapon and monster imagery.",
+  "description": "A spooky poster features a masked figure holding a large scythe amidst pumpkins and a dark forest, evoking a Halloween horror theme."
+}

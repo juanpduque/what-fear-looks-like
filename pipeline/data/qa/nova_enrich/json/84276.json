@@ -1,0 +1,42 @@
+{
+  "title_text": "LAS VEGAS BLOOD BATH",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FREE TRICK LAS VEGAS NIGHT",
+  "mood": [
+    "horror",
+    "thriller",
+    "gritty",
+    "intense",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster features intense imagery with implied violence and blood, potentially disturbing to some viewers.",
+  "description": "A poster showing a close-up of a person's face with intense eyes, overlaid with a night scene of Las Vegas and bold red text reading 'BLOOD BATH.'"
+}

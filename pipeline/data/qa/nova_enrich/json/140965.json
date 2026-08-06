@@ -1,0 +1,41 @@
+{
+  "title_text": "THE WAILER III",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A new beginning\nLa Llorona III",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "haunting",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and ghostly imagery.",
+  "description": "A dark, eerie poster featuring a ghostly face with glowing eyes and the title 'The Wailer III' over a cemetery backdrop."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "見のテレブ2",
+  "credits_text": "結払権により学ばれた離離の見物事",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "DVD VIDEO",
+  "mood": [
+    "melancholy",
+    "haunting",
+    "eerie",
+    "abandoned",
+    "nostalgic"
+  ],
+  "fear_labels": [
+    {
+      "name": "abandoned",
+      "conf": 0.9
+    },
+    {
+      "name": "haunting",
+      "conf": 0.85
+    },
+    {
+      "name": "melancholy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A child sits alone in front of an abandoned, decaying carousel under a stormy sky, evoking a sense of loneliness and eerie nostalgia."
+}

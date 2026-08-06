@@ -1,0 +1,46 @@
+{
+  "title_text": "BANANA SEAT BLOOD BATH",
+  "credits_text": "VIDEO McNICKATIE ... LIKE MONICK SEAN BLOOMBERG ... MIKE WENGER RICHARD MICHAEL ... AI JENKINS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "OFFICIAL SELECTION: 15th KIFF 15 NOV 4-15 NOV COMPETITIVE; OFFICIAL SELECTION: 2015 HAMILTON FILM FESTIVAL; OFFICIAL SELECTION: 2015 VIDEOJUN FESTIVAL; OFFICIAL SELECTION: 2015 KENYA FILM FESTIVAL; \"a horror reinvention [...] that works beautifully\" - INDIEWIRE by TREY RILEY",
+  "mood": [
+    "violent",
+    "dark",
+    "gritty",
+    "thriller",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; suitable for mature audiences.",
+  "description": "Poster shows a masked figure on a bike holding a knife with blood dripping, promoting the film \"Banana Seat Blood Bath\"."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "FRUIT HEAD",
+  "credits_text": "Bradley Whitford\nChester Collins",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Revenge is a dish best served fruity.",
+  "mood": [
+    "surreal",
+    "dark",
+    "psychological",
+    "disturbing",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man sits inside a giant, stylized strawberry with a menacing expression, against a red background."
+}

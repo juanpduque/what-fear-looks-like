@@ -1,0 +1,40 @@
+{
+  "title_text": "BASURA",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "chaotic",
+    "dark",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "violence",
+      "conf": 0.9
+    },
+    {
+      "name": "chaos",
+      "conf": 0.85
+    },
+    {
+      "name": "darkness",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.1,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense and violent imagery.",
+  "description": "A dramatic black-and-white poster titled 'BASURA' features chaotic scenes of struggle and conflict among figures amidst debris."
+}

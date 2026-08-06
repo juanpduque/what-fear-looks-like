@@ -1,0 +1,51 @@
+{
+  "title_text": "BLOOD OF DRACULA'S CASTLE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "camp",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "castle",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "occult",
+    "erotic"
+  ],
+  "moderation_notes": "Contains suggestive imagery and implied violence typical of vintage horror.",
+  "description": "Vintage horror poster featuring dramatic faces, a castle, and gothic elements, with bold red text reading 'BLOOD OF DRACULA'S CASTLE.'"
+}

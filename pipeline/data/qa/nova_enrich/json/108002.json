@@ -1,0 +1,46 @@
+{
+  "title_text": "KILLER BEES",
+  "credits_text": "SWITCHBLADE PICTURES PRESENTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "UNRATED LIMITED EDITION",
+  "mood": [
+    "horror",
+    "thriller",
+    "action",
+    "suspense",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "horror",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.95,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains intense horror imagery with monstrous bees and implied violence.",
+  "description": "A dramatic poster features a close-up of an eye surrounded by aggressive, large bees, with bold title text and limited edition label."
+}

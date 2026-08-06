@@ -1,0 +1,46 @@
+{
+  "title_text": "QUEENS VS ZOMBIES",
+  "credits_text": "UM FILME DE DANILO MORALES FROM OUTER SPACE",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "other_text": "",
+  "mood": [
+    "sci-fi",
+    "horror",
+    "action",
+    "apocalyptic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "alien",
+      "conf": 0.8
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.7
+    },
+    {
+      "name": "sci-fi",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A poster features a glowing alien figure beneath a UFO, with bold text reading 'Queens vs Zombies' and 'From Outer Space.'"
+}

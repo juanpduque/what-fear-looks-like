@@ -1,0 +1,46 @@
+{
+  "title_text": "THE MOVIE",
+  "credits_text": "黄田小鳥 結の僕器然",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "黄田小鳥 結の僕器然",
+  "mood": [
+    "gothic",
+    "haunting",
+    "eerie",
+    "mysterious",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "haunting",
+      "conf": 0.85
+    },
+    {
+      "name": "gothic",
+      "conf": 0.8
+    },
+    {
+      "name": "mystery",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and ghostly imagery.",
+  "description": "A DVD cover featuring hands reaching toward a gothic gate with Japanese and English text, suggesting a supernatural horror theme."
+}

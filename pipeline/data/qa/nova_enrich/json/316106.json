@@ -1,0 +1,46 @@
+{
+  "title_text": "BACK FROM THE DEAD",
+  "credits_text": "starring TIM ABOS, GENEVIEVE GORDY, CHRIS SMITH, SYBIL RITTIG, JOHN NIVENELOS, JOSEPHINE LEE, directed by NICKY TOMALONIS, produced by ANGELA FRANCA ALVAREZ and MARK TOMALONIS, production design by TONY FRANCIS, makeup by TONY FRANCIS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PSYCHOPATHE ET CANNIBALE, IL REVIENT DE L'ENFER PLUS AFFAME QUE JAMAIS !",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "violent",
+    "gory"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A horror poster features a man with blood on his face and hands, holding a severed head, with bold red lettering for the title."
+}

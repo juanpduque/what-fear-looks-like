@@ -1,0 +1,36 @@
+{
+  "title_text": "PELT",
+  "credits_text": "YOU WERE WARNED!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WIDESCREEN\nWINNER OUTSTANDING BIG BEAR HORROR FILM FESTIVAL\nWINNER AUDIENCE CHOICE BIG BEAR HORROR FILM FESTIVAL",
+  "mood": [
+    "intense",
+    "suspenseful",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "Movie poster features three women with intense expressions, overlaid with bold red title \"PELT\" and tagline \"YOU WERE WARNED!\"."
+}

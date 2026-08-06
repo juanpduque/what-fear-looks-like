@@ -1,0 +1,46 @@
+{
+  "title_text": "ZOMBIE WITH A SHOTGUN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "horror",
+    "violent",
+    "intense",
+    "zombie"
+  ],
+  "fear_labels": [
+    {
+      "name": "zombie",
+      "conf": 0.95
+    },
+    {
+      "name": "shotgun",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.75
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore with zombie imagery.",
+  "description": "A man fights zombies with a shotgun in a dramatic, action-packed scene filled with intense combat and horror elements."
+}

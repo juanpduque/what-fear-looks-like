@@ -1,0 +1,40 @@
+{
+  "title_text": "어우의 기상히",
+  "credits_text": "사용자 수선, 수선, 수선, 수선",
+  "languages": [
+    "ko"
+  ],
+  "other_text": "상수사 수선, 수선, 수선, 수선 사용자 수선, 수선, 수선, 수선 사용자 수선, 수선, 수선, 수선 사용자 수선, 수선, 수선, 수선",
+  "mood": [
+    "horror",
+    "action",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster features a large, menacing crocodile attacking people in a chaotic scene with dramatic red text at the bottom."
+}

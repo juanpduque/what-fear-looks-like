@@ -1,0 +1,44 @@
+{
+  "title_text": "RED MIDNIGHT",
+  "credits_text": "Joseph Zaso, Jasi Cotton Lanier, Ray Schwez - Brian Michael Finn - Giovanna Pascucci",
+  "languages": [
+    "en"
+  ],
+  "other_text": "The clock is ticking. And the damned are waiting. For you...",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and implied supernatural horror.",
+  "description": "A poster featuring a broken clock, ghostly figures, and dramatic red lighting, suggesting a supernatural horror theme."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "巡子魔",
+  "credits_text": "第2集",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "巡子魔小話、巡子魔小話、巡子魔小話",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and ghostly figures.",
+  "description": "A horror poster featuring a ghostly figure with elongated limbs and bloodied textures, set against a dark, eerie background."
+}

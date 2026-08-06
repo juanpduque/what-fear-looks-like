@@ -1,0 +1,42 @@
+{
+  "title_text": "VIRAL",
+  "credits_text": "\"YOU'RE GOING TO BE FAMOUS\" ALFILM \"A CHUNG TRIAL\" \"ROGER LEE\" \"AUTUMN HOFFMAN\" \"JACQUELINE LEE\" \"THERESA BONCH\" \"DENNER PASC\" \"JULIANNE BIANCHI\" \"ROGER LEE\" \"AUTUMN HOFFMAN\" \"JACQUELINE LEE\" \"THERESA BONCH\" \"DENNER PASC\" \"JULIANNE BIANCHI\" \"ROGER LEE\" \"SUSY S. CRANE\" \"J. CHUNG\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "horror",
+    "suspense",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood, suitable for mature audiences.",
+  "description": "Poster shows four individuals with pale, blood-streaked faces, standing in a dark setting with a smartphone screen framing them."
+}

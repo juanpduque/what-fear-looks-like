@@ -1,0 +1,45 @@
+{
+  "title_text": "THE THING",
+  "credits_text": "JOHN CARPENTER'S",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ARROW VIDEO",
+  "mood": [
+    "dread",
+    "suspense",
+    "isolation",
+    "sci-fi",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.5
+    },
+    {
+      "name": "forest",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster implies potential violence and horror themes.",
+  "description": "A dark, eerie poster featuring a starry sky, a glowing light, and a cracked path leading into a shadowy landscape."
+}

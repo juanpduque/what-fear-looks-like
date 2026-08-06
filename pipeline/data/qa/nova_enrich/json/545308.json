@@ -1,0 +1,41 @@
+{
+  "title_text": "FAR FROM THE APPLE TREE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "surreal",
+    "gothic",
+    "eerie",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "occult",
+    "nudity"
+  ],
+  "moderation_notes": "Contains partial nudity and occult imagery.",
+  "description": "A stylized poster features three women in a surreal, eerie setting with film reels and ghostly elements."
+}

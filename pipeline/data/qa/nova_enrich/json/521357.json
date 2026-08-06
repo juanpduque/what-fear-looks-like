@@ -1,0 +1,49 @@
+{
+  "title_text": "Living Nightmare",
+  "credits_text": "A chilling tale of terror",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "terrifying",
+    "haunting",
+    "eerie",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "cemetery",
+      "conf": 0.85
+    },
+    {
+      "name": "church",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and ghostly imagery.",
+  "description": "A ghostly figure hovers over a cemetery with a church in the background, evoking a haunting and terrifying atmosphere."
+}

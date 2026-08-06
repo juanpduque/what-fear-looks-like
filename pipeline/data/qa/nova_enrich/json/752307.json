@@ -1,0 +1,40 @@
+{
+  "title_text": "BLOOD from STONE",
+  "credits_text": "GENIE RYAN, VALIA KAPETANIDIS, GABRIELLA TURA, NIKITA KIRIKOVA, ERIC CUTTI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"A GENRE-DEFYING VAMPIRE FILM\" \"GET READY FOR THE VAMPIRES FILM THAT IS SURE TO LEAVE YOU... DROPPED\" \"A MODERN VAMPIRE TALE ADULTS NOTHING LIKE ANYTHING YOU'VE SEEN OR READ\"",
+  "mood": [
+    "gothic",
+    "dramatic",
+    "mysterious",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "The poster hints at occult themes and potential violence, but no explicit content is shown.",
+  "description": "A poster features a woman and a man in dark clothing against a red background, with bold title text and taglines."
+}

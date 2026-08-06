@@ -1,0 +1,43 @@
+{
+  "title_text": "LA MÁQUINA DEL DIABLO",
+  "credits_text": "...deja que se le ne de sangre. UNA PELÍCULA DE EDÉN MARTÍNEZ JÓZEL GALICIA, ERNESTO GALINAS, JULIA ROBLES, RUGO VERLOZ, FUENTES VALDEZ, EVA GARCÍA, GUILLERMO ZAPATA, CLAUDIO SOLS, MARTÍN LETCHIPS, CARLO RAMÍREZ, ROSALÍNA LÓPEZ",
+  "languages": [
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "erotic",
+    "surreal",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.5,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence, blood, and suggestive imagery.",
+  "description": "A dramatic poster features a distressed woman and a man in a tense, eerie setting, with bold Spanish text overlay."
+}

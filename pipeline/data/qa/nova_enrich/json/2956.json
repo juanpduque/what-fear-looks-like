@@ -1,0 +1,39 @@
+{
+  "title_text": "HOMUNCULUS",
+  "credits_text": "I. TEIL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DER KUNSTLERE NEUNTE",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and monstrous creatures.",
+  "description": "A dramatic poster features a man surrounded by grotesque, multi-limbed creatures with a dark, intense background."
+}

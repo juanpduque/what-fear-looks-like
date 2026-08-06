@@ -1,0 +1,37 @@
+{
+  "title_text": "OFFLINE VALLEY",
+  "credits_text": "Claire and David needed a weekend getaway... away from the city... away from technology... away from social networks... They\\'ll probably end up dead.",
+  "other_text": "",
+  "moderation_notes": "",
+  "description": "A dark poster shows five tense figures above a crowd, with a large metal object looming, suggesting a horror or thriller theme.",
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "languages": [
+    "en"
+  ],
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "sensitive": [],
+  "fear_labels": [
+    {
+      "name": "crowd",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ]
+}

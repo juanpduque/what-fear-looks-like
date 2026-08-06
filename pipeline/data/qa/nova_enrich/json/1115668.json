@@ -1,0 +1,47 @@
+{
+  "title_text": "LUGINA e DJALIT",
+  "credits_text": "NJE FILM NGA EROYS KETA",
+  "languages": [
+    "en",
+    "sq"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "survival",
+    "post-apocalyptic",
+    "gruesome",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.1,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A group of survivors faces a monstrous creature in a post-apocalyptic setting, with intense and gruesome imagery."
+}

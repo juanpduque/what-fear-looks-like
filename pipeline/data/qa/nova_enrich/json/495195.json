@@ -1,0 +1,47 @@
+{
+  "title_text": "残血",
+  "credits_text": "人间日报 新华传媒有限公司",
+  "languages": [
+    "zh"
+  ],
+  "other_text": "暗血血谷",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery",
+    "supernatural",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and occult themes.",
+  "description": "A group of young women and a man stand around a table with a metallic bowl, with one man reaching into it. The poster features bold red text and a gothic atmosphere."
+}

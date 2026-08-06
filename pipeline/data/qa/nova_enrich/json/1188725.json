@@ -1,0 +1,40 @@
+{
+  "title_text": "ORGANIK HORRIBILIS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "RARE CINEMA\n- LE CAUCHEMAR COMMENCE",
+  "mood": [
+    "surreal",
+    "disturbing",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of a monstrous, bloodied infant figure.",
+  "description": "The poster features a distorted, bloodied infant held by a gloved hand, with bold, stylized text and a dark background."
+}

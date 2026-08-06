@@ -1,0 +1,45 @@
+{
+  "title_text": "MR. STITCH",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "You Reap What You Sew",
+  "mood": [
+    "horror",
+    "sci-fi",
+    "suspense",
+    "gothic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "medical",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild horror elements and medical imagery.",
+  "description": "Poster features a surgeon and a monstrous figure with the title 'MR. STITCH' and tagline 'You Reap What You Sew.'"
+}

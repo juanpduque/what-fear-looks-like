@@ -1,0 +1,46 @@
+{
+  "title_text": "LIGHT OF BLOOD",
+  "credits_text": "\"Mind-Nova\" - Marcus Roch 1980 Paris Film\n\"It gets better every time you watch it\" — Shelby McIntyre (Flye, Bloody Bloody Bible Lady)\nSuper Soldier... Bloodthirsty Werewolf... or BOTH?!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gothic",
+    "camp",
+    "dread",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.1,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and horror themes.",
+  "description": "A poster features a menacing werewolf with dripping red text reading \"LIGHT OF BLOOD\" above. Quotes and credits surround the central image."
+}

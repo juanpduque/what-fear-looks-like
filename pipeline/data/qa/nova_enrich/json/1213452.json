@@ -1,0 +1,45 @@
+{
+  "title_text": "GRAVERAIZER",
+  "credits_text": "JITO STUDIOS PRESENTS A JORGE GONZALEZ FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "R.I.P.",
+  "mood": [
+    "gothic",
+    "horror",
+    "dark",
+    "macabre",
+    "creepy"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "cross",
+      "conf": 0.9
+    },
+    {
+      "name": "grave",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "gore"
+  ],
+  "moderation_notes": "Contains stylized blood drips and graveyard imagery.",
+  "description": "Poster features two men in front of a large cross with a graveyard background, titled 'Graveraiser' by Jito Studios."
+}

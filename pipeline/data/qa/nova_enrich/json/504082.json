@@ -1,0 +1,39 @@
+{
+  "title_text": "AXE IN THE FACE",
+  "credits_text": "ANDREW NOA KC DYAN LIAM WRIGHT BASS CHOPIN LA RAY GUISE VVEKER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IT'S ALL FUN AND GAMES UNTIL SOMEONE GETS AN",
+  "mood": [
+    "horror",
+    "thriller",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the axe imagery.",
+  "description": "A dark poster features a silhouette holding an axe against a house backdrop with bold, stylized text reading 'AXE IN THE FACE.'"
+}

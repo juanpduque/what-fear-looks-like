@@ -1,0 +1,39 @@
+{
+  "title_text": "TAR",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HOLLYWOOD",
+  "mood": [
+    "thriller",
+    "psychological",
+    "suspense",
+    "mystery",
+    "drama"
+  ],
+  "fear_labels": [
+    {
+      "name": "creature",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A group of people stands in front of a cityscape with a large, menacing creature above them. The title 'TAR' is prominently displayed at the bottom."
+}

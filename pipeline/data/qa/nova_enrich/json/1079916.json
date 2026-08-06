@@ -1,0 +1,45 @@
+{
+  "title_text": "TREPIDITY",
+  "credits_text": "DAVID SCHLECHTER, MAGDALENA CONWAY, BETTINA METZ, PAIGE BOURNE, ASHLEY HEFFNER, MIRANDA ALUPATICK, JUDE YANO, HEATHER HARLOW, ROY HEFNER, STEVIE HENSMAN, EMMA HERTZLE, DERICK RUEY, TONY PARSONS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NOWHERE TO RUN. NOWHERE TO HIDE. NO ONE TO TRUST.",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "haunting",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "haunting",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and eerie imagery.",
+  "description": "A red barn and silo under a dark, smoky sky with a full moon, suggesting a haunted or supernatural setting."
+}

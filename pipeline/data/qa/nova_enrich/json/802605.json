@@ -1,0 +1,41 @@
+{
+  "title_text": "REVENGE OF THE DEVIL BAT",
+  "credits_text": "CONRAD BROOKS • DICK DYSZEL KRIS YEAWORTH • GEORGE STOVER • TINA KRAUSE RUBY LaROCCA • ROCHELLE DAVIS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "OF THE",
+  "mood": [
+    "camp",
+    "horror",
+    "retro",
+    "thriller",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.9,
+  "blood_gore": 0.1,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A vintage-style poster features a large bat attacking a man, with a woman and another man in the background, and bold red and yellow text."
+}

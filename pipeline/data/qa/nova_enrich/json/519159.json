@@ -1,0 +1,45 @@
+{
+  "title_text": "VIOLENCE VOYAGER",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "surreal",
+    "disturbing",
+    "sci-fi",
+    "psychological",
+    "dystopian"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains disturbing imagery and implied violence.",
+  "description": "A surreal poster features a monstrous, multi-eyed creature and two children in a chaotic, fiery setting with bold red text reading 'VIOLENCE VOYAGER.'"
+}

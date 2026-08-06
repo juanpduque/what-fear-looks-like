@@ -1,0 +1,33 @@
+{
+  "source": "pipeline/data/imdb_selenium_features_hits.csv",
+  "target": "pipeline/data/horror_movies.csv",
+  "backup": "pipeline/data/horror_movies.csv.bak_before_imdb_features_20260804T021747Z",
+  "match_filter": "year_director",
+  "n_hits": 19,
+  "n_updated": 19,
+  "n_skipped_nonempty": 0,
+  "n_missing": 0,
+  "ids": [
+    "103708",
+    "268758",
+    "362702",
+    "478818",
+    "558482",
+    "690085",
+    "923855",
+    "1019581",
+    "1160618",
+    "1198618",
+    "1225091",
+    "1336344",
+    "1337800",
+    "1357778",
+    "1365229",
+    "1400005",
+    "1511111",
+    "1555096",
+    "1730682"
+  ],
+  "skipped_nonempty": [],
+  "applied_at_utc": "20260804T021747Z"
+}

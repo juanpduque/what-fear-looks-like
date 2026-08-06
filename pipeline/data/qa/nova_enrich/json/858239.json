@@ -1,0 +1,46 @@
+{
+  "title_text": "THE HOUSE THAT BLEEDS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THIS HOUSE IS NOT A HOME\n2021",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "mystery",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "gothic",
+      "conf": 0.7
+    },
+    {
+      "name": "text",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and themes of horror.",
+  "description": "A dark, gothic house looms over a forest with bold red text reading 'The House That Bleeds' and a tagline 'This House Is Not A Home.'"
+}

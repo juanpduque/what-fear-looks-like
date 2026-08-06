@@ -1,0 +1,49 @@
+{
+  "title_text": "DRACULA",
+  "credits_text": "THE DARK PRINCE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "dark",
+    "mysterious",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "castle",
+      "conf": 0.75
+    },
+    {
+      "name": "bat",
+      "conf": 0.7
+    },
+    {
+      "name": "moon",
+      "conf": 0.65
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.6,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and dark imagery, but no explicit violence or sexual content.",
+  "description": "A dramatic poster features a long-haired man with intense eyes, surrounded by characters and bats against a moonlit castle backdrop."
+}

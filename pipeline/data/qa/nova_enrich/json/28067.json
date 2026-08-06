@@ -1,0 +1,57 @@
+{
+  "title_text": "THE GHOST GALLEON",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "supernatural",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.95
+    },
+    {
+      "name": "skull",
+      "conf": 0.85
+    },
+    {
+      "name": "water",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.65
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult and ghostly imagery, but no explicit violence or sexual content.",
+  "description": "A group of ghostly figures stand near a ruined ship under a full moon, creating an eerie and haunting atmosphere."
+}

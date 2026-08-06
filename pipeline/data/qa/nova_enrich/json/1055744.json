@@ -1,0 +1,44 @@
+{
+  "title_text": "鬼笑心 吠え笑い",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "実録！叫ばれた妖女事件 11本",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.75,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A horror poster featuring a ghostly face with blood, Japanese text, and three smaller inset images of eerie figures."
+}

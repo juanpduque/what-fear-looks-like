@@ -1,0 +1,38 @@
+{
+  "title_text": "A QUIET PLACE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "suspenseful",
+    "claustrophobic",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silence",
+      "conf": 0.9
+    },
+    {
+      "name": "claustrophobia",
+      "conf": 0.8
+    },
+    {
+      "name": "isolation",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A person lies in a bathtub inside a dimly lit, tense room, with the title 'A Quiet Place' displayed at the bottom."
+}

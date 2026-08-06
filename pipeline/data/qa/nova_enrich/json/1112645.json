@@ -1,0 +1,42 @@
+{
+  "title_text": "MEAT YOUR MAKER",
+  "credits_text": "CRYPT TASTE FEB 2019",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MOUSING FARMS",
+  "mood": [
+    "horror",
+    "violent",
+    "gory",
+    "thriller",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.95
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.7,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.95,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences only.",
+  "description": "A poster features a bloody axe and sword crossed over a green monster with the text 'Meat Your Maker' and 'Crypt Taste Feb 2019.'"
+}

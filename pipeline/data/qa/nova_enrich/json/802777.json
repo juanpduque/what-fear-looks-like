@@ -1,0 +1,47 @@
+{
+  "title_text": "THE GHOSTS OF BORLEY RECTORY",
+  "credits_text": "BASED ON BRITAIN'S MOST HAUNTED TRUE HOUSE\nJULIAN SANDS COLIN BAKER TOYA WILLCOX CHRISTOPHER ELLISON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SOME MYSTERIES ARE BEST LEFT BURIED",
+  "mood": [
+    "gothic",
+    "haunting",
+    "mysterious",
+    "eerie",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "haunted_house",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "crows",
+      "conf": 0.8
+    },
+    {
+      "name": "cemetery",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.8,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a haunted rectory at night with crows and a dark, eerie atmosphere, featuring the title and cast names."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "PADRE ARMADILLO III CONTRA LA POSESIÓN SATÁNICA",
+  "credits_text": "VICTOR VILLEGAS HUGO ORTIZ",
+  "languages": [
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gothic",
+    "supernatural",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "occult",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and mild violent imagery.",
+  "description": "A priest confronts a possessed individual in a dark setting, with dramatic and horror-themed artwork."
+}

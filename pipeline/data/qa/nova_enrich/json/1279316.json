@@ -1,0 +1,40 @@
+{
+  "title_text": "イヅル",
+  "credits_text": "結引 木田 \text{文}",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "心の影の影物を消す。年齢 13 年 40 月",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains disturbing imagery and themes of horror and occult.",
+  "description": "A poster featuring a ghostly figure with intense eyes and Japanese text, suggesting a horror theme."
+}

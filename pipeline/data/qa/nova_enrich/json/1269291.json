@@ -1,0 +1,51 @@
+{
+  "title_text": "死霊のスクリーン32",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "14発る！無法影像・ステードを持つものを一届に！",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "haunting",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic imagery of a monstrous figure with blood and a disturbing atmosphere.",
+  "description": "A poster features a large, eerie figure with blood on its face surrounded by shadowy figures in a dark setting."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "THE TERROR FACTOR",
+  "credits_text": "A GARRY MEDEROS FLICK PRESENTS JOHN SYLVA NINA RUSIN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SCREENED AT ROCK AND SHOCK FESTIVAL 2008 & 2008 FRIGHT NIGHT FILM FESTIVAL WINNER \"BEST LOCAL FILM\" RJ INTERNATIONAL HORROR FILM FESTIVAL",
+  "mood": [
+    "dread",
+    "suspense",
+    "horror",
+    "gothic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatters and implied violence.",
+  "description": "A dark poster features a hooded figure in a green-lit hallway with red blood splatters, promoting the horror film \"The Terror Factor.\""
+}

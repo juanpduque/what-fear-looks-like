@@ -1,0 +1,46 @@
+{
+  "title_text": "THE DEAD INSIDE",
+  "credits_text": "\"POST-ROMERO PACKED WITH PUNCH\" RUPERT WYATT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "OFFICIAL SELECTION LONDON FILM FESTIVAL GET OUT BEFORE THEY GET IN",
+  "mood": [
+    "dread",
+    "apocalyptic",
+    "survival",
+    "horror",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.1,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and horror elements.",
+  "description": "A group of survivors navigate a zombie-infested urban landscape amidst flames and destruction."
+}

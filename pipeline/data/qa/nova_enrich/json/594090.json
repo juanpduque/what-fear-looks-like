@@ -1,0 +1,46 @@
+{
+  "title_text": "SLAUGHTER DRIVE",
+  "credits_text": "No one stays alive on... RYAN LINNER, NICK GONZALEZ, BLAKE O'DONNELL, BENJAMIN ADAMS, JOSHUA ADAMS, JOSHUA ADAMS, NICK GONZALEZ, BLAKE O'DONNELL, BENJAMIN ADAMS, JOSHUA ADAMS, RYAN LINNER, NICK GONZALEZ, BLAKE O'DONNELL, BENJAMIN ADAMS, JOSHUA ADAMS, RYAN LINNER, NICK GONZALEZ, BLAKE O'DONNELL, BENJAMIN ADAMS, JOSHUA ADAMS, 5FO FILMS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "psychological",
+    "suspense",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "text",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intended for mature audiences.",
+  "description": "A poster shows a large axe with blood, a man holding a camera, and three men in front of a suburban house under a full moon."
+}

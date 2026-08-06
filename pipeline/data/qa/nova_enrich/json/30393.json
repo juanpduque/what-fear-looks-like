@@ -1,0 +1,46 @@
+{
+  "title_text": "HELL-EPHONE",
+  "credits_text": "IT'S FOR YOU...",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ZP INTERNATIONAL PRESENTS",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "supernatural",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror themes and occult imagery.",
+  "description": "A poster shows a hand gripping a rotary phone with a skull design, set against a dark, eerie graveyard backdrop."
+}

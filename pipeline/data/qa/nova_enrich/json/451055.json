@@ -1,0 +1,41 @@
+{
+  "title_text": "the Slaughter",
+  "credits_text": "Directed by Michael Findlay\nStarring Mirtha Massa\nwith George Villanova, and Xanthe Ellis",
+  "languages": [
+    "en"
+  ],
+  "other_text": "They were led by a man... A man called Satan who needed blood to ride.",
+  "mood": [
+    "violent",
+    "thriller",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "The poster suggests themes of violence and possible sexual content.",
+  "description": "A poster shows a motorcycle with two riders and a woman in the background, with bold red text and a tagline about a man named Satan."
+}

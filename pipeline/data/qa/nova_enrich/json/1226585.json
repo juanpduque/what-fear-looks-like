@@ -1,0 +1,40 @@
+{
+  "title_text": "GODZILLA: RESURRECTION",
+  "credits_text": "A TAKASHI MURATA FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Witness the resurrection of a legend.",
+  "mood": [
+    "epic",
+    "dramatic",
+    "intense",
+    "action-packed"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 1.0
+    },
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 1.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violent action and destructive imagery.",
+  "description": "A dramatic poster features a towering Godzilla amidst flames and ruins, with a small group of figures in the foreground."
+}

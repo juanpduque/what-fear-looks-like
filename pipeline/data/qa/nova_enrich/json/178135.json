@@ -1,0 +1,50 @@
+{
+  "title_text": "DROPPING EVIL",
+  "credits_text": "ARMIN SHIMERMAN TIFFANY SHEFIS EDWIN NEAL FRED WILLIAMSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TAKE YOUR LAST TRIP",
+  "mood": [
+    "horror",
+    "thriller",
+    "supernatural",
+    "intense",
+    "chaotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    },
+    {
+      "name": "fire",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains intense horror imagery and implied violence.",
+  "description": "A poster shows a monstrous green figure holding an axe, with three terrified people fleeing. The background features a fiery, eerie landscape and a triangular structure."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "TREE/GORE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horrific",
+    "gruesome",
+    "disturbing",
+    "medical",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.95
+    },
+    {
+      "name": "surgery",
+      "conf": 0.85
+    },
+    {
+      "name": "gore",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains extreme graphic surgical imagery and blood; may be disturbing to viewers.",
+  "description": "A poster shows a surgeon operating on a grotesque, monstrous face with exposed tissue and blood."
+}

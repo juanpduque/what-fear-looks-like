@@ -1,0 +1,45 @@
+{
+  "title_text": "PARANORMAL ACTIVITY 2",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "1:41:19 AM NRSRY-6",
+  "mood": [
+    "dread",
+    "suspense",
+    "haunting",
+    "nightmarish",
+    "claustrophobic"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "haunted_house",
+      "conf": 0.9
+    },
+    {
+      "name": "shadow",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.3,
+  "animal": 0.4,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied supernatural threats and eerie atmosphere; no explicit violence or gore.",
+  "description": "A dimly lit room with a child near a crib, shadowy figures moving in the background, creating a suspenseful and haunted atmosphere."
+}

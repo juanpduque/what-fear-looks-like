@@ -1,0 +1,46 @@
+{
+  "title_text": "FAMINE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THIRTY STUDENTS. TWENTY-FOUR HOURS. ZERO SURVIVORS.",
+  "mood": [
+    "dread",
+    "horror",
+    "gritty",
+    "disturbing",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A poster features a menacing figure holding a hammer against a dark background with bold red text reading 'FAMINE' and a tagline about students and survivors."
+}

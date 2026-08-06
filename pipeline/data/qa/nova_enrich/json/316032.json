@@ -1,0 +1,47 @@
+{
+  "title_text": "귀신",
+  "credits_text": "김대성, 이은우, 유인정, 이예지",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "other_text": "정신의 여름신장을 파악지르\n여구의사랑, 여구의떡, 여구의뽕수!\n제작: 한건진\n제작: 진인수\nEvil Under the Moon",
+  "mood": [
+    "horror",
+    "gothic",
+    "supernatural",
+    "dread",
+    "gory"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and a monstrous creature.",
+  "description": "A poster features a ghostly figure with long white hair and exposed flesh, dripping blood, against a dark background."
+}

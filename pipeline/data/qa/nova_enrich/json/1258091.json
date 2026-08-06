@@ -1,0 +1,42 @@
+{
+  "title_text": "Der Menschenschlag",
+  "credits_text": "",
+  "languages": [
+    "de"
+  ],
+  "other_text": "fils de l'Homme\nIm Folterkeller der geschändeter Frauen\nDIESER FILM IST an WIDERWÄRTIGKEIT KAUM ZU ÜBERBIETEN",
+  "mood": [
+    "dread",
+    "gothic",
+    "erotic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.7,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence and sexual content.",
+  "description": "A dark, gory poster features a distressed face with blood, overlaid with bold German text about torture and abuse."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "The Ascension",
+  "credits_text": "ROBERT STOCK, WILLIAM GOME, JIM REYNOLDS, DAVE MARTINEZ, BARBARA VERGARA, ROBERT STOCK",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.5
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and mild violent imagery.",
+  "description": "Poster features a hooded figure with intense expression, surrounded by various scenes including urban landscapes and dramatic close-ups."
+}

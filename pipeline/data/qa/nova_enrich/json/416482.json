@@ -1,0 +1,49 @@
+{
+  "title_text": "ASTRO-ZOMBIES",
+  "credits_text": "TED V. MIKELS'",
+  "languages": [
+    "en"
+  ],
+  "other_text": "M4: INVADERS FROM CYBERSPACE\nMUTANT HORDES SENT TO ANNIHILATE MANKIND!",
+  "mood": [
+    "sci-fi",
+    "action",
+    "horror",
+    "apocalyptic",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "cityscape",
+      "conf": 0.7
+    },
+    {
+      "name": "cyborg",
+      "conf": 0.85
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and apocalyptic themes.",
+  "description": "Poster features a cyborg with red eyes against a city backdrop with explosions and laser beams, promoting the sci-fi horror film Astro-Zombies."
+}

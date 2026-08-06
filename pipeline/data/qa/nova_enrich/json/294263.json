@@ -1,0 +1,50 @@
+{
+  "title_text": "BONG GO KILLER CLOWN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOU'LL DIE LAUGHING",
+  "mood": [
+    "horror",
+    "comedy",
+    "grotesque",
+    "camp",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "weapon",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.75
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.85,
+  "monster": 0.7,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.75,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore with a menacing clown character.",
+  "description": "A poster features a menacing clown with a bloody knife, accompanied by bold red text reading 'BONG GO KILLER CLOWN' and a tagline 'YOU'LL DIE LAUGHING.'"
+}

@@ -1,0 +1,79 @@
+{
+  "model": "dinov2_base_logreg",
+  "n_train": 315,
+  "n_test": 106,
+  "n_missing_train": 0,
+  "n_missing_test": 0,
+  "missing_train_ids": [],
+  "missing_test_ids": [],
+  "emb_dim": 768,
+  "train_seconds": 2.122,
+  "macro_f1_test": 0.4744405138240754,
+  "report": {
+    "painted": {
+      "precision": 0.6590909090909091,
+      "recall": 0.6170212765957447,
+      "f1-score": 0.6373626373626373,
+      "support": 47.0
+    },
+    "photo": {
+      "precision": 0.45,
+      "recall": 0.32142857142857145,
+      "f1-score": 0.375,
+      "support": 28.0
+    },
+    "composite": {
+      "precision": 0.35714285714285715,
+      "recall": 0.4838709677419355,
+      "f1-score": 0.410958904109589,
+      "support": 31.0
+    },
+    "accuracy": 0.5,
+    "macro avg": {
+      "precision": 0.48874458874458876,
+      "recall": 0.4741069385887506,
+      "f1-score": 0.4744405138240754,
+      "support": 106.0
+    },
+    "weighted avg": {
+      "precision": 0.5155537858368047,
+      "recall": 0.5,
+      "f1-score": 0.5018468866362379,
+      "support": 106.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      29,
+      6,
+      12
+    ],
+    [
+      4,
+      9,
+      15
+    ],
+    [
+      11,
+      5,
+      15
+    ]
+  ],
+  "classes": [
+    "painted",
+    "photo",
+    "composite"
+  ],
+  "class_counts_train": {
+    "painted": 141,
+    "photo": 83,
+    "composite": 91
+  },
+  "class_counts_test": {
+    "photo": 28,
+    "composite": 31,
+    "painted": 47
+  },
+  "C": 2.0,
+  "seed": 42
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "鬼眼",
+  "credits_text": "",
+  "languages": [
+    "zh"
+  ],
+  "other_text": "6月29日 于好看影上映",
+  "mood": [
+    "horror",
+    "psychological",
+    "gothic",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "eye",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and intense horror themes.",
+  "description": "A poster features a close-up of a terrifying eye and lips with blood, overlaid with bold Chinese characters and release date."
+}

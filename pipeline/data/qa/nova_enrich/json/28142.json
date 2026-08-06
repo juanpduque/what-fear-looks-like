@@ -1,0 +1,44 @@
+{
+  "title_text": "GLASS TRAP",
+  "credits_text": "C. THOMAS HOWELL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THERE'S NO ESCAPE",
+  "mood": [
+    "tense",
+    "claustrophobic",
+    "suspenseful",
+    "dystopian"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "trapped",
+      "conf": 0.8
+    },
+    {
+      "name": "insect",
+      "conf": 0.95
+    },
+    {
+      "name": "claustrophobia",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.95,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features a large, menacing ant-like creature, suggesting potential violence and claustrophobia.",
+  "description": "The poster shows a close-up of a large, aggressive ant-like creature with the title 'GLASS TRAP' and the tagline 'THERE'S NO ESCAPE.'"
+}

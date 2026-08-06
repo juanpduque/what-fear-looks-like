@@ -1,0 +1,49 @@
+{
+  "title_text": "ARACHNOQUAKE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "apocalyptic",
+    "dread",
+    "horror",
+    "disaster",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "disaster",
+      "conf": 0.85
+    },
+    {
+      "name": "cityscape",
+      "conf": 0.75
+    },
+    {
+      "name": "spider",
+      "conf": 0.95
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense horror imagery with large spiders and a destroyed cityscape.",
+  "description": "A city skyline at sunset with large cracks in the ground, giant spiders emerging, and stormy skies."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "THE FUN PARK",
+  "credits_text": "it happened. Only one will survive a night in",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FUN PARK",
+  "mood": [
+    "horror",
+    "thriller",
+    "suspense",
+    "dread",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains horror elements and implied violence.",
+  "description": "A poster features a menacing clown with a sinister grin, pointing aggressively. The background shows a fun park with dim lighting and eerie ambiance."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "SIS-TER",
+  "credits_text": "A GOKHAN TOKA FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "2023\nTHIS FILM IS CURSED",
+  "mood": [
+    "surreal",
+    "disturbing",
+    "body-horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "body-horror",
+      "conf": 0.9
+    },
+    {
+      "name": "medical",
+      "conf": 0.8
+    },
+    {
+      "name": "anatomical",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "body-horror",
+    "medical"
+  ],
+  "moderation_notes": "Contains graphic anatomical imagery and disturbing themes.",
+  "description": "A poster shows a stylized anatomical figure inside a transparent box, with bold text reading 'SIS-TER' and production details."
+}

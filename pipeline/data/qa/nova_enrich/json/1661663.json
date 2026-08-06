@@ -1,0 +1,46 @@
+{
+  "title_text": "KHEXPA THE HUNT",
+  "credits_text": "A FILM BY SANGAY JAMTSHO & TEAM\nSTARRING KUENZANG NOBS, JAMYANG TEMPA, NAMGYEL DORJI, SABINA SUBBA, KINLEY BIDHA, DECHEN DORJI, ANGAY ZAM, SONAM KINLEY YOEZER, DORJI WANGDI, EDITED BY SANGAY JAMTSHO, PRODUCTION DESIGNER YESHI KONG, COLORIST & VFX SANGAY JAMTSHO, MAKE UP KENCHO LHAMO, DORJI WANGMO, DIRECTOR OF PHOTOGRAPHY SANGAY JAMTSHO\nPRODUCTION MANAGER KARMA JIGS LIGHT AND GRIBS KARMA JIGS, KINGA THINLEY, SCREENPLAY SONAM ZANGMO, SANGAY JAMTSHO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "RELEASING ON MARCH 28",
+  "mood": [
+    "intense",
+    "terrifying",
+    "dark",
+    "violent",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.5,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and disturbing imagery.",
+  "description": "A poster shows a muscular figure with a grotesque mask holding a large knife in a dimly lit setting, promoting the film 'Khexpa The Hunt' releasing on March 28."
+}

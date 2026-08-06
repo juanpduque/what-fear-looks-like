@@ -1,0 +1,46 @@
+{
+  "title_text": "EAT THE RICH THE CANNIBAL MURDERS",
+  "credits_text": "A RON ATKINS FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THIS FILM CONTAINS SCENES THAT MAY BE DISTURBING TO SOME AUDIENCES. OFFENSIVE, GORY, AND EXPLICITLY VIOLENT CONTENT IS SHOWN. VIEWER DISCRETION IS ADVISED. This film is presented uncensored.",
+  "mood": [
+    "violent",
+    "cannibal",
+    "horror",
+    "dark",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.95
+    },
+    {
+      "name": "cannibal",
+      "conf": 0.85
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.95,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gory content.",
+  "description": "Movie poster features three individuals in a dark, fiery setting with blood and weapons, promoting a cannibal horror film."
+}

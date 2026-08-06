@@ -1,0 +1,42 @@
+{
+  "title_text": "DEATH OF THE VIRGIN",
+  "credits_text": "THOU SHALT NOT...",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "eerie",
+    "mysterious",
+    "religious",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "religious",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "occult",
+    "sexual"
+  ],
+  "moderation_notes": "Contains suggestive imagery and religious themes that may be sensitive to some audiences.",
+  "description": "A poster featuring a close-up of a woman's face with closed eyes and a cross necklace, overlaid with bold red text reading 'DEATH OF THE VIRGIN' and the tagline 'THOU SHALT NOT...'."
+}

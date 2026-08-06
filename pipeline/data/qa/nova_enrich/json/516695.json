@@ -1,0 +1,46 @@
+{
+  "title_text": "CAMP HIDEAWAY MASSACRE",
+  "credits_text": "STARRING TINA KRAUSE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BIZ ENTERTAINMENT PRESENTS",
+  "mood": [
+    "horror",
+    "thriller",
+    "forest",
+    "survival",
+    "terror"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.6,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A horror movie poster featuring a forest scene with characters in distress, blood splatters, and a title indicating a massacre."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "15 MINUTES OF HORROR",
+  "credits_text": "NYX PRESENTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and themes of horror.",
+  "description": "A dark, stylized poster featuring a menacing figure with intricate headgear and a shadowy face, promoting a horror anthology titled '15 Minutes of Horror' by NYX."
+}

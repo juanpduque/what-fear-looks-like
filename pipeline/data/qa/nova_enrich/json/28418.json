@@ -1,0 +1,40 @@
+{
+  "title_text": "DARKHUNTERS",
+  "credits_text": "JOHANNES ROBERTS'S DARKHUNTERS\n\nDANIEL RADCLIFFE SUSAN PATTERSON DAN VAN HUSSEN JESSE JAMES\n\n\"GOD ALWAYS OFFERS A CHOICE. ONLY SOMETIMES IT DOESN'T SEEM MUCH LIKE A CHOICE AT ALL.\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A TERRIFYING NEW SUPERNATURAL THRILLER",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.6,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and supernatural themes.",
+  "description": "Poster features a dark, intense face with a sword, promoting a supernatural thriller titled 'Darkhunters' by Johannes Roberts."
+}

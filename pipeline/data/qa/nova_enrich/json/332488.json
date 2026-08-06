@@ -1,0 +1,46 @@
+{
+  "title_text": "ZOMBIE RESURRECTION",
+  "credits_text": "\"A TRULY SICK ZOMBIE FLICK\" \"FULL OF GRAISLY HUMOUR\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PREY FOR SALVATION",
+  "mood": [
+    "horror",
+    "dark humor",
+    "apocalyptic",
+    "gritty",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore, suitable for mature audiences.",
+  "description": "A zombie stands over a crowd with outstretched arms, surrounded by decaying figures in a post-apocalyptic setting."
+}

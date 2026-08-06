@@ -1,0 +1,44 @@
+{
+  "title_text": "DEATH O'LANTERN II",
+  "credits_text": "STARRING CANOACE PATTERSON PAUL ORVILLE FRANCINE MITCHELL JAMAL MCQUAID SUZANNE SAINT STAGLIOTTI DUTCH HOGAN PONCHO D. ROCK ROXANNE PRIMPINGTON MUSIC BY CHAN WALRUS BUNNION CUNT MOSFERATU BEEF TRIMMINGS VIDEOGRAPHY BY MICHAEL J. SHAKES SPECIAL EFFECTS BY DARKMAGICFX EXECUTIVE PRODUCED BY MISTER E WRITTEN AND DIRECTED BY RUDY BELLAFONTE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HE'S BACK FOR A SECOND HELPING OF HUMAN PIE",
+  "mood": [
+    "dread",
+    "camp",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore.",
+  "description": "A poster shows a masked figure holding a severed hand and a cleaver, with a tagline about returning for more human pie."
+}

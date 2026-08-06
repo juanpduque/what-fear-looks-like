@@ -1,0 +1,38 @@
+{
+  "title_text": "SIGNAL 100",
+  "credits_text": "ATTENDANCE COMPULSORY SUICIDAL GAME LET'S BEGIN!",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "IN CINEMAS MARCH 26",
+  "mood": [
+    "anxious",
+    "disturbing",
+    "psychological",
+    "suspenseful",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "crowd",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "self-harm"
+  ],
+  "moderation_notes": "The poster hints at themes of self-harm and psychological distress.",
+  "description": "A collage of students with a central figure, overlaid with bold text announcing a disturbing game. The vibrant pink background contrasts with serious themes."
+}

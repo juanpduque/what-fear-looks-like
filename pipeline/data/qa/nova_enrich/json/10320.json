@@ -1,0 +1,40 @@
+{
+  "title_text": "the ring two",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "eerie",
+    "haunting",
+    "mysterious",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains supernatural horror themes and a ghostly figure.",
+  "description": "A poster shows a shadowy figure with long hair sitting in a chair, illuminated by a faint blue glow, with the title 'The Ring Two' above."
+}

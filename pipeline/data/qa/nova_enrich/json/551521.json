@@ -1,0 +1,49 @@
+{
+  "title_text": "THE EYESLICER HALLOWEEN SPECIAL",
+  "credits_text": "WILLIAM COON DIGITAL NATIVE MC CARTER JOHN CARPENTER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A DOZEN SPINE-TINGLING SEGMENTS OF AVANTE-GARD SURREALIST TERROR. ONLY IN THEATERS AND ON LIMITED-EDITION VHS THIS OCTOBER.",
+  "mood": [
+    "surreal",
+    "gothic",
+    "creepy",
+    "macabre",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "eye",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and surreal horror themes.",
+  "description": "Poster features a large eye, ghostly figures, and eerie characters with bold red and black colors, promoting a Halloween special anthology."
+}

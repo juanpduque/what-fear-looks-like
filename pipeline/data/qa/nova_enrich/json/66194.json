@@ -1,0 +1,45 @@
+{
+  "title_text": "DEADTIME STORIES",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "dread",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "book",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "blood",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.4,
+  "person": 0.2,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult imagery and implied violence.",
+  "description": "A large, old book titled 'DEADTIME STORIES' is shown with smoke and blood dripping from it, held by a clawed hand."
+}

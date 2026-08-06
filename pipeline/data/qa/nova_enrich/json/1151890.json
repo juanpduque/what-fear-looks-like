@@ -1,0 +1,40 @@
+{
+  "title_text": "MEERUH",
+  "credits_text": "\"VAHŞETI ÇIN\"\nYönetmen İlker tuncay\nOyuncular: Gökçen derbeder, Berk güldoğan, Yavuz gümrükçü, zülfü Hamit altın, Enes Alet, Zekai YılmazTürk\nKurgu: Arya Azad Afiş Tasarım: Arya Azad\nMix Mastering: Mustafa Aydın",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Chanter Films\nARIA FILMS",
+  "mood": [
+    "dread",
+    "gothic",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood, suitable for mature audiences.",
+  "description": "A dark, intense poster features a close-up of a distressed face partially obscured by hair, with bold red lettering and a tagline."
+}

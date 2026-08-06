@@ -1,0 +1,36 @@
+{
+  "title_text": "CONTE CRUEL",
+  "credits_text": "PHILIPPE JUBIEN MICHEL BÉNARD JEAN-YVES LISSONNET STEPHANE BLANCO GILLES NIVEAU PATRICE CARDINEAU PASCAL FONTENEAU YANNICK AGUIS SOT WALID HADDAD KAMILIA MAAMRI STEEVE N'G UEMA PIERRE-HENRI SIMON ALICE MAINARD MESSI LOUIS",
+  "languages": [
+    "fr"
+  ],
+  "other_text": "UN COURT MÉTRAGE DE HUGUES GUÉGUEN UN DIMANCHE À LA CHASSE UNE PRODUCTION PIGOUILLE PROD AVEC LA PARTICIPATION DU CRAB ET DE LITTEUL BOB",
+  "mood": [
+    "dark",
+    "violent",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatters and implied violence.",
+  "description": "A poster shows an elderly man in a field with blood splatters, holding a rifle, with bold red text reading 'CONTE CRUEL.'"
+}

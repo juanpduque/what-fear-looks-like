@@ -1,0 +1,40 @@
+{
+  "title_text": "THE FURIES",
+  "credits_text": "CRISTI CONSTANTINOU MAXIME MATSER MILOSLISCA EUSON YASMINE ESSÉD MARIE PIERRE ROGER CONSTANDINO ASBIA GRECOR GIORGIO TEKERA KATEL BENZ ABIBU LILIANE GONNIN LÉA RICKER LÉA MARTIN GEOFFREY MORAEL ANNE MARIE FRANKLIN WILSON III THEA MARTI ANNE MARIE FRANKLIN WILSON III JOSEPH CARTY RIVE MAZOURO BREAKING WOOD FILMS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "thriller",
+    "suspenseful",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features a gun and suggests potential violence.",
+  "description": "A dark red poster shows a man holding a gun and three silhouetted figures walking away, with bold white text reading 'THE FURIES.'"
+}

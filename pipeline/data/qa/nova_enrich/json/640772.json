@@ -1,0 +1,50 @@
+{
+  "title_text": "HATE'S HAUNTED SLAY RIDE",
+  "credits_text": "A Warren E. Disbrow Film",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NOW ON DVD! VISIT US AT OUR OFFICIAL WEB SITE: WWW.WARRENE.DISBROW.COM",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "violent",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "axe",
+      "conf": 0.8
+    },
+    {
+      "name": "cemetery",
+      "conf": 0.7
+    },
+    {
+      "name": "moon",
+      "conf": 0.6
+    },
+    {
+      "name": "haunting",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains violent imagery and occult themes.",
+  "description": "A poster shows a masked figure holding an axe against a red moonlit cemetery background with the title 'Hate's Haunted Slay Ride.'"
+}

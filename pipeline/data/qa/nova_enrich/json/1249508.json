@@ -1,0 +1,42 @@
+{
+  "title_text": "GRIZZLY NIGHT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thrilling",
+    "suspenseful",
+    "dangerous",
+    "wilderness"
+  ],
+  "fear_labels": [
+    {
+      "name": "bear",
+      "conf": 0.95
+    },
+    {
+      "name": "danger",
+      "conf": 0.85
+    },
+    {
+      "name": "wilderness",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 1.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A large bear roars aggressively with its mouth open wide, set against a reflective lake and forest background."
+}

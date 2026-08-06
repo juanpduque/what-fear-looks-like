@@ -1,0 +1,38 @@
+{
+  "title_text": "From Hell It Came",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "camp",
+    "horror",
+    "surreal",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.85
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.1,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A vintage horror poster shows a monstrous creature emerging from flames with a woman clinging to it, and a group of men facing the threat."
+}

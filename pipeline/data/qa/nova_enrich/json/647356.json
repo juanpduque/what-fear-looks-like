@@ -1,0 +1,50 @@
+{
+  "title_text": "KAFAN SUNDEL BOLONG",
+  "credits_text": "AZIZ GAGAP ARUMI BACHSHIN ANDREANO PHILIP DHAMIN SEGAR",
+  "languages": [
+    "id"
+  ],
+  "other_text": "Saat bolongnya terbuka... la siap mereggut nya wa...",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "supernatural",
+    "terrifying"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.85,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A horror poster featuring a zombie-like figure with exposed organs and a wolf in the background under a full moon."
+}

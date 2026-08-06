@@ -1,0 +1,47 @@
+{
+  "title_text": "BLODSPAR",
+  "credits_text": "IRONMAN FILM GROUP presents a film by JOHN MARTIN\nHARDY GRAFSTROM - GLENN WADDELL - ANGELICA LINDFORS\nMOA JOHANSSON - MARIA OSTLUND - NUTELL SUROE - MOA WESTMAN\nalso starring EVE SPARKS - MIA GREEN - NYJANNANNA ROUGH\nProduced by SAM SPARKOW\nScreenplay by LARS HENNING",
+  "languages": [
+    "en"
+  ],
+  "other_text": "When you scream it's too late!",
+  "mood": [
+    "horror",
+    "violent",
+    "gory",
+    "thriller",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "A poster shows a screaming woman holding a chainsaw, with blood splatters and a bold title \"BLODSPAR\" at the bottom."
+}

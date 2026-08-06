@@ -1,0 +1,39 @@
+{
+  "title_text": "THE CREATURE BELOW",
+  "credits_text": "IN THE DEPTHS OF OUR OCEANS, SOMETHING HAS AWAKENED",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "sci-fi",
+    "dread",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.1,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A woman stands in shallow water facing a giant, multi-tentacled sea monster with sharp teeth emerging from the depths."
+}

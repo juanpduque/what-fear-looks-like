@@ -1,0 +1,51 @@
+{
+  "title_text": "Tainted Milk",
+  "credits_text": "Draconian Films Presents \"Tainted Milk\" Joshua Greene Ruby LaRocca Joey Smack Victor Bonacore Passenger Of Shit C1B2 ScreamerClauz & Brandon Slagle's Eye Written, Directed, Scored & Animated By ScreamerClauz",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "surreal",
+    "gothic",
+    "violent",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic violence and occult imagery.",
+  "description": "A poster shows a bloodied person with outstretched arms, surrounded by feathers and a dark forest, with a crucified figure above a moonlit globe."
+}

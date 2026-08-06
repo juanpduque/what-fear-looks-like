@@ -1,0 +1,45 @@
+{
+  "title_text": "ZähäR",
+  "credits_text": "BELMA MAMATİ UMİT ACAR MEŞUT ĞEDİKOĞLU",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SERiNiN İLK FiLMi CİN AHA LİŞİ 26 NİSAN'DA SiNE MALARDA",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "snake",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.7,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic imagery and occult themes.",
+  "description": "A poster features a menacing face with a snake coiled around it, set against a dark, eerie background with text in multiple languages."
+}

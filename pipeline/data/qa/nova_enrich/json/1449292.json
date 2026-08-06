@@ -1,0 +1,45 @@
+{
+  "title_text": "ZİRİCİN 2",
+  "credits_text": "YAZAN VE YÖNETEN BURAK KUÇUK",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ZEBUN'UN YAPIMİCİSINDAN GERÇEK BİR ÇİN VAKASI 3 KASIM'DA SİNEMALARDA",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild violent imagery and occult themes.",
+  "description": "A poster features a menacing creature with glowing eyes and fiery background, promoting the horror film 'ZİRİCİN 2' releasing in November."
+}

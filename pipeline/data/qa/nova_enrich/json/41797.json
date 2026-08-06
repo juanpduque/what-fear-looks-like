@@ -1,0 +1,40 @@
+{
+  "title_text": "HISTERIA",
+  "credits_text": "JIMMY JAE BY JESSICA LEE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "18th December 2008",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and disturbing imagery.",
+  "description": "A distressed woman screams with a crowd in the background, set against a dark, red-tinted backdrop."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "EL MONSTRUO",
+  "credits_text": "un cortometraje de GERARD NOGUEIRA",
+  "languages": [
+    "es"
+  ],
+  "other_text": "LA TINA SOJAT",
+  "mood": [
+    "tense",
+    "forest",
+    "survival",
+    "mystery",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man carries a child through a dense, shadowy forest in a tense and mysterious atmosphere."
+}

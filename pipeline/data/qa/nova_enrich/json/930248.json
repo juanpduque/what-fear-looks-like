@@ -1,0 +1,48 @@
+{
+  "title_text": "FIND",
+  "credits_text": "ディレクター：弁木弁木気子 スツァード：弁木弁木気子 ストリーター：弁木弁木気子 イラスト：弁木弁木気子 アスサース：弁木弁木気子 インストラム：弁木弁木気子",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "放出日：2024年三月九日",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and implied horror themes.",
+  "description": "A group of people confront a monstrous figure in a dark, eerie setting, with intense and haunting visuals."
+}

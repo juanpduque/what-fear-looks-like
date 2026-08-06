@@ -1,0 +1,47 @@
+{
+  "title_text": "PREY. KILL.. FUCK. REPEAT.",
+  "credits_text": "CAST: LEA THOMPSON, CARYL YIAD, ERIC LENKREZ, CARY ATKINS, JANA JOCKUS, DYLAN KIRKMAN, SAMPO MARJOMAAKI, ANNA SUNNIKAS, CRISTINA LAURENT, MIKE SOURNEN, TOMMI TUUSKI, JANI KORHONEN, JUSSI KORHONEN, INTI KORHONEN, SONJA KORHONEN, LAURA KALLIO, MARIA LOKKALA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DON'T GO IN THE WOODS... ALONE!!",
+  "mood": [
+    "dread",
+    "terror",
+    "psychological",
+    "violent",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and suggestive language.",
+  "description": "A poster features a distressed blonde woman with blood on her face, set against a dark forest background, with bold, aggressive text overlay."
+}

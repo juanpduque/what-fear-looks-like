@@ -1,0 +1,51 @@
+{
+  "title_text": "Unburied Tales",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "eerie",
+    "haunting",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "cemetery",
+      "conf": 0.9
+    },
+    {
+      "name": "hand",
+      "conf": 0.85
+    },
+    {
+      "name": "moon",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic blood and eerie supernatural imagery.",
+  "description": "A poster shows a hand emerging from a coffin with blood, set against a dark cemetery under a full moon."
+}

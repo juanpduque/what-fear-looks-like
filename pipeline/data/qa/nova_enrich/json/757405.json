@@ -1,0 +1,50 @@
+{
+  "title_text": "THE BURNING",
+  "credits_text": "BLOOD 'N' FIRE MEMORIES WITH TOM SAVINI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MAKING",
+  "mood": [
+    "horror",
+    "thriller",
+    "intense",
+    "violent",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A dramatic poster features a cloaked figure holding crossed knives with blood dripping, set against a forest backdrop with red-tinted water and small boats."
+}

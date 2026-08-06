@@ -1,0 +1,50 @@
+{
+  "title_text": "TUSUK JELANGKUNG",
+  "credits_text": "A FILM BY ERNO ARNAZA\nNINA KOKOK, RAYN WHAYA, ANYA GERALDINE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "OF LUBANG BUAYA\n6 DESEMBER 2018\nMAX",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "haunting",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster shows a ghostly figure trapped in a wooden frame with bloodied hands, set against a dark, watery background."
+}

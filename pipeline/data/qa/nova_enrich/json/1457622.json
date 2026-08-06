@@ -1,0 +1,44 @@
+{
+  "title_text": "MIMIC",
+  "credits_text": "STARRING WILLIAM PETERSEN, MARIE RICHARDSON, KATHLEEN RENOIR, JANE LYNCH, JOSH CHARBONNEAU, JASON ACUNA, JANE ANDERSON, YVETTE BROWN, JOSHUA COX, ANGELA GOMEZ, MARIA HERNANDEZ, RITA LITTLE, JANE McCORMICK, JANE MORTON, JANE NELSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Welcome home...",
+  "mood": [
+    "horror",
+    "dread",
+    "suspense",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror elements.",
+  "description": "A woman holds a knife while facing a monstrous creature with a skull-like face in a red-lit background."
+}

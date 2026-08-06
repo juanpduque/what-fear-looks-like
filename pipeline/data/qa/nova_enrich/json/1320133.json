@@ -1,0 +1,37 @@
+{
+  "title_text": "NÃO SAIA",
+  "credits_text": "UM FILME DE GUSTAVO TENÓRIO",
+  "languages": [
+    "pt"
+  ],
+  "other_text": "",
+  "mood": [
+    "suspense",
+    "claustrophobic",
+    "ominous"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "elevator",
+      "conf": 0.95
+    },
+    {
+      "name": "darkness",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, empty elevator with a shadowy figure in the distance, featuring the title 'NÃO SAIA' and director credit."
+}

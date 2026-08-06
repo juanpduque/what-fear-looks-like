@@ -1,0 +1,44 @@
+{
+  "title_text": "THE HORROR NETWORK",
+  "credits_text": "CREATED BY BRIAN DURTON & DOUGLAS CONNER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IT'S PRIME TIME FOR EVIL.",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and monstrous creatures.",
+  "description": "A poster features a monstrous, decayed creature with outstretched arms in a dark, eerie setting, accompanied by a smaller, similarly grotesque figure."
+}

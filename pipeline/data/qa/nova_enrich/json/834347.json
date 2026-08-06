@@ -1,0 +1,42 @@
+{
+  "title_text": "WIRED SHUT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "suspenseful",
+    "haunting",
+    "paranormal"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.6,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A woman is partially obscured behind barbed wire with a house in the background, suggesting confinement and suspense."
+}

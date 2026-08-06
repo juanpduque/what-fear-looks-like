@@ -1,0 +1,42 @@
+{
+  "title_text": "COLD BLOODED",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "[REC]",
+  "mood": [
+    "intense",
+    "action",
+    "fantasy",
+    "violent",
+    "dystopian"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A muscular monster looms over fallen humans against a fiery background, with sparks and smoke adding intensity."
+}

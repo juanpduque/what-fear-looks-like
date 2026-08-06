@@ -1,0 +1,40 @@
+{
+  "title_text": "The SPIDER WOMAN STRIKES BACK",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "noir",
+    "suspense",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "spider",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "sexual"
+  ],
+  "moderation_notes": "Contains mild sexual suggestiveness and horror themes.",
+  "description": "A vintage movie poster features a dramatic scene with a woman in a red dress, a menacing man, and a title overlay reading 'The Spider Woman Strikes Back.'"
+}

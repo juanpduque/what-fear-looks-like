@@ -1,0 +1,42 @@
+{
+  "title_text": "THE GAINESVILLE RIPPER",
+  "credits_text": "A FEATURE HORROR FILM BASED ON THE TRUE STORY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AUGUST 29TH 7:30PM 2010 GAINESVILLE FLORIDA CAST AND CREW IN ATTENDANCE Q&A AFTER SHOWING",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller",
+    "psychological",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intended for mature audiences.",
+  "description": "A horror film poster featuring a close-up of a man with blood on his face and the title 'The Gainesville Ripper' prominently displayed."
+}

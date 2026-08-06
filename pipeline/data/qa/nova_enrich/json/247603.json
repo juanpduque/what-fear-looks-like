@@ -1,0 +1,50 @@
+{
+  "title_text": "CITY OF ROTT 2",
+  "credits_text": "ANIMATED ZOMBIE ACTION MOVIE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "horror",
+    "action",
+    "apocalyptic",
+    "gritty"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    },
+    {
+      "name": "zombie",
+      "conf": 0.95
+    },
+    {
+      "name": "action",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore typical of zombie horror genre.",
+  "description": "Poster shows a group of zombies surrounding a person in a wheelchair, with intense and grim expressions, indicating a horror theme."
+}

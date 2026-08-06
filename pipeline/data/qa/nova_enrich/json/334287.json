@@ -1,0 +1,37 @@
+{
+  "title_text": "The Return กลับมา",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "th"
+  ],
+  "other_text": "สวันการเล่น เล่น",
+  "mood": [
+    "horror",
+    "thriller",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "Movie poster features intense faces of characters with a dark, eerie background, suggesting horror themes."
+}

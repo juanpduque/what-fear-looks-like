@@ -1,0 +1,40 @@
+{
+  "title_text": "AMY",
+  "credits_text": "JESSICA DIGIOVANNI KURT PETERSON CHRISTOPHER ATKINS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SHE CAN SEE THE POSSESSED",
+  "mood": [
+    "gothic",
+    "occult",
+    "dread",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult symbols and themes of possession.",
+  "description": "A woman sits bound in a chair against a wall adorned with occult symbols, under dim lighting with string lights above."
+}

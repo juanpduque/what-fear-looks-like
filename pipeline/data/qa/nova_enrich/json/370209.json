@@ -1,0 +1,46 @@
+{
+  "title_text": "HOMICIDAL MANIAC",
+  "credits_text": "\"Cheap and trashy, the way SOV horror ought to be!\" - Film Bizarro\nThe First Movie from the \"Mad Genius\" JOHANN TETREULT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HORROR SLEAZE",
+  "mood": [
+    "camp",
+    "trashy",
+    "horror",
+    "violent",
+    "grotesque"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gory imagery.",
+  "description": "The poster features a large, intense face with glasses and several distressed figures, promoting a low-budget horror film."
+}

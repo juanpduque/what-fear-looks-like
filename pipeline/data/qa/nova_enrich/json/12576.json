@@ -1,0 +1,45 @@
+{
+  "title_text": "DEATHWATCH",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "gritty",
+    "war",
+    "psychological",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "war",
+      "conf": 0.9
+    },
+    {
+      "name": "psychological",
+      "conf": 0.8
+    },
+    {
+      "name": "survival",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster includes intense imagery and themes of war and psychological tension.",
+  "description": "The poster features five men with a dramatic, intense background, suggesting themes of war and survival."
+}

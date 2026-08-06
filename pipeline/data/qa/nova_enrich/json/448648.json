@@ -1,0 +1,43 @@
+{
+  "title_text": "鬼面傳說",
+  "credits_text": "葉偉豪/簡立傑/葉偉豪/葉偉豪/王家良",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "supernatural",
+    "intense",
+    "mysterious",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a masked figure with an open mouth against a dark, fiery background, with bold Chinese characters and credits listed."
+}

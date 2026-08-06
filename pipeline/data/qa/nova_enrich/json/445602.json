@@ -1,0 +1,45 @@
+{
+  "title_text": "THE RAKING",
+  "credits_text": "STAY IN THE LIGHT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features a monstrous creature with sharp claws, suggesting potential violence.",
+  "description": "A poster shows a menacing creature with sharp claws and a fierce expression, with the title 'THE RAKING' and tagline 'STAY IN THE LIGHT' displayed."
+}

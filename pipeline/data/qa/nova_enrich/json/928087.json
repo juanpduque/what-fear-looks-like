@@ -1,0 +1,42 @@
+{
+  "title_text": "ALL DRESSED IN WHITE",
+  "credits_text": "'Til Death Do Us Part",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SILENT STUDIOS PRODUCTIONS PRESENT\nFILMING SOON",
+  "mood": [
+    "gothic",
+    "dread",
+    "horror",
+    "gory",
+    "macabre"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore.",
+  "description": "A zombie-like figure with exposed ribs and blood stains stands against a dark background, with the title \"All Dressed in White\" prominently displayed."
+}

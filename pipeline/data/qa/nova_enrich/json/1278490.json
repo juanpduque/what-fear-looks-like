@@ -1,0 +1,41 @@
+{
+  "title_text": "THE NIGHT BEFORE HALLOWEEN",
+  "credits_text": "THE NIGHTMARE NEVER ENDS.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DIRECTED BY KYLE NEWMAN SCREENPLAY BY JULIA AMARA PRODUCER JORDAN DUNNAN CINEMATOGRAPHY BY JESSICA RIVERA EDITING BY LISA HILL A DRAMA QUEENS PRODUCTION",
+  "mood": [
+    "dread",
+    "suspense",
+    "horror",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and mild gore through visual elements.",
+  "description": "A person wearing a glowing mask holds a large knife against a dark background with the title 'The Night Before Halloween' prominently displayed."
+}

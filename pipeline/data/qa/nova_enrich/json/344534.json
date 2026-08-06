@@ -1,0 +1,38 @@
+{
+  "title_text": "THE ANATOMIST",
+  "credits_text": "ALASTAIR SIM\nGEORGE COLE\nMICHAEL RIPPER\nJILL BENNETT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MEET BURKE AND HARE... THEY GO BY MANY NAMES... GRAVE ROBBERS. BODY SNATCHERS. RESURRECTIONISTS. STACK 'EM UP MEN. MURDERERS.",
+  "mood": [
+    "gothic",
+    "dread",
+    "historical",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "grave",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster features intense faces of three actors against a dark background with cemetery imagery, suggesting a gothic, historical thriller."
+}

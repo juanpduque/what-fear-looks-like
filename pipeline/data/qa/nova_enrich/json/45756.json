@@ -1,0 +1,49 @@
+{
+  "title_text": "SAINT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "mysterious",
+    "dark",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "occult",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "moon",
+      "conf": 0.9
+    },
+    {
+      "name": "horse",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.8,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and a dark, gothic atmosphere.",
+  "description": "A cloaked figure rides a horse under a full moon, holding a staff with a curved blade, set against a snowy, red-lit cityscape."
+}

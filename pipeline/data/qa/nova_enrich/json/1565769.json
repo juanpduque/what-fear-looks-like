@@ -1,0 +1,38 @@
+{
+  "title_text": "शमशान",
+  "credits_text": "निर्देशक : आर. के. लखा\nनिरीका : के. सी. भारदवाज",
+  "languages": [
+    "en"
+  ],
+  "other_text": "आगरीकी सवस्नी हंंई फांसलन पत्र",
+  "mood": [
+    "horror",
+    "gothic",
+    "supernatural",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Movie poster features multiple characters including a central female figure with a monstrous, grotesque face overlay, suggesting horror themes."
+}

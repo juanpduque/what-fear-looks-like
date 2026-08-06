@@ -1,0 +1,46 @@
+{
+  "title_text": "THE HOUND OF HANNIBAL",
+  "credits_text": "AN AMERICAN WEREWOLF\nA DOCUMENTARY OF SMALL TOWN TERROR\nPRODUCED BY CONFUSION FILMS\nSUMMER 2020",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "terror",
+    "horror",
+    "thriller",
+    "gothic",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.8,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood, suitable for mature audiences.",
+  "description": "A poster for a documentary titled 'The Hound of Hannibal,' featuring a man facing a menacing werewolf with a dark, horror-themed design."
+}

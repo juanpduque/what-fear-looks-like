@@ -1,0 +1,46 @@
+{
+  "title_text": "TALES FROM THE GRAVE",
+  "credits_text": "4 HEART-STOPPING TALES OF PURE HORROR!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EVIL GETS UNEARTHED...",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "macabre",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "grave",
+      "conf": 0.95
+    },
+    {
+      "name": "horror",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and themes of death.",
+  "description": "A poster featuring a zombie emerging from a grave with a skull face, set against a cemetery backdrop, promoting a horror anthology."
+}

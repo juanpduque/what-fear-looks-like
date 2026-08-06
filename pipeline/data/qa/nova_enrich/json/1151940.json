@@ -1,0 +1,40 @@
+{
+  "title_text": "FABRİKA",
+  "credits_text": "ÖLÜM HERKESİ AYNI İŞTAHLA YUTAR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MUHAMMET KİNİK, TOLGA BENGÜ, HAKAN ALAGOĞ, ÖZCAN YİĞİT, SECİL GÜLEN KOMİ",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "weapon",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.4,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.9,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster shows a ram's head impaled on a fence with blood, and a shadowy figure holding an axe in the background."
+}

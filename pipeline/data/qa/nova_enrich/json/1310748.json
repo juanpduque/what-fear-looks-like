@@ -1,0 +1,41 @@
+{
+  "title_text": "THE BOOGEYMAN",
+  "credits_text": "BASED ON THE SHORT STORY BY STEPHEN KING\nA MANDO FRANCO FILM\nPRODUCED BY KELLY KEAMP AND JOHN KLOPPING\nWRITTEN FOR THE SCREEN BY MANDO FRANCO\nDIRECTED BY MANDO FRANCO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOU CAN'T HIDE",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.2,
+  "animal": 0.0,
+  "blood_gore": 0.5,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and themes of horror and violence.",
+  "description": "A poster shows a monstrous, dismembered hand hanging in a dimly lit room, with a shadowy figure nearby. The title 'The Boogeyman' is prominently displayed."
+}

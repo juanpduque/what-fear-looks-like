@@ -1,0 +1,42 @@
+{
+  "title_text": "魔のテイファイ ベスト・オフ・ベスト",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "dark",
+    "intense",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.3,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.5,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and dark themes.",
+  "description": "A collage of horror-themed images forms a circular pattern, with bold red Japanese text at the center indicating a compilation of the best horror films."
+}

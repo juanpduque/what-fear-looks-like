@@ -1,0 +1,36 @@
+{
+  "title_text": "UNDER PARIS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "suspenseful",
+    "action",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "shark",
+      "conf": 0.95
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.95,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action involving a large shark threatening people.",
+  "description": "A large shark swims aggressively towards people in the water near a crowded dock, creating a tense and dangerous atmosphere."
+}

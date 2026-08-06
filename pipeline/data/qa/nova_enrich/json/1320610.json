@@ -1,0 +1,49 @@
+{
+  "title_text": "Zombies",
+  "credits_text": "They are the living dead, soulless bodies that come from beyond the grave",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HISTORY DVD VIDEO",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "haunting",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild horror themes and references to the undead.",
+  "description": "A dark, eerie poster featuring silhouettes of figures near a barren tree, with a foggy, ghostly atmosphere and the title 'Zombies.'"
+}

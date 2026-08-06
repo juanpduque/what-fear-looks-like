@@ -1,0 +1,42 @@
+{
+  "title_text": "BLADE OF THE VAMPIRE",
+  "credits_text": "MICHAEL TAGGERT ROD KOCH JULIE TOLLE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "The thirst never stops.",
+  "mood": [
+    "gothic",
+    "horror",
+    "dramatic",
+    "intense",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.3
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "A close-up of a vampire's face with sharp fangs and intense eyes, set against a dark red background with dramatic text."
+}

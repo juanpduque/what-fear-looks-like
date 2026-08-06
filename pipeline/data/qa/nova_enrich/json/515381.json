@@ -1,0 +1,42 @@
+{
+  "title_text": "Dr. Shock's GRIINDHOUSE OF HORRORS",
+  "credits_text": "DOUGLAS AGOSTI KIM LEWINSKI DENNIS STAPLES KARL D. BEATTY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"GENUINELY SKIN-CRAWLING AND HAND OVER THE EYES GROSS\" - CHRISTOPHER BORRELL, THE BLADE \"MIDNIGHT RELEASE\" DR. SHOCK IS BACK!",
+  "mood": [
+    "camp",
+    "grotesque",
+    "horror",
+    "satirical",
+    "shock"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and mild violence.",
+  "description": "Poster features a central horror character with exaggerated features, surrounded by smaller images of grotesque figures and text promoting the film."
+}

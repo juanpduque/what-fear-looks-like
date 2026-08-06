@@ -1,0 +1,39 @@
+{
+  "title_text": "MEGA APE",
+  "credits_text": "TOM SIZEMORE BAI LING MEL NOVAK",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "adventure",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "ape",
+      "conf": 0.95
+    },
+    {
+      "name": "helicopter",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and action elements.",
+  "description": "A large gorilla roars aggressively with helicopters and a burning city in the background, featuring actors' names at the top."
+}

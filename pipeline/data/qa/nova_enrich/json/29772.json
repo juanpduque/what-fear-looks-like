@@ -1,0 +1,46 @@
+{
+  "title_text": "BLOODTHIRSTY CANNIBAL DEMONS",
+  "credits_text": "RAMPAGING BEASTS WITH A HUNGER FOR HUMAN FLESH!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "carnival",
+    "grotesque",
+    "violent",
+    "chaotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences only.",
+  "description": "Poster features four grotesque characters with bloodied faces and intense expressions, promoting a horror film titled 'Bloodthirsty Cannibal Demons.'"
+}

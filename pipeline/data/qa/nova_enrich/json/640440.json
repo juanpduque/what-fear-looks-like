@@ -1,0 +1,41 @@
+{
+  "title_text": "O Coração Revelador",
+  "credits_text": "um filme de São José Correia",
+  "languages": [
+    "pt"
+  ],
+  "other_text": "Quando o mal vive dentro de ti, o mundo inteiro não te deixa dormir.",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and disturbing imagery.",
+  "description": "A poster features a person with long dark hair and a sinister smile, forming a heart shape with red hands, with blood on their face."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "The House That Drips Blood",
+  "credits_text": "Tommy Wiseau in Alex",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Every house has at least one story...",
+  "mood": [
+    "gothic",
+    "dread",
+    "eerie",
+    "mystery",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring a close-up of a face above a dark house with the title 'The House That Drips Blood' and the actor Tommy Wiseau."
+}

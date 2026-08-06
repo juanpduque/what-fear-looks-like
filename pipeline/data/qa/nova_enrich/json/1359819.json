@@ -1,0 +1,41 @@
+{
+  "title_text": "A LOIRA DO BANHEIRO",
+  "credits_text": "DE JOEL CAETANO",
+  "languages": [
+    "pt"
+  ],
+  "other_text": "AS FÁBULAS NEGRAS APRESENTA",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "gritty"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and gore.",
+  "description": "A horror poster features a zombie-like figure with long hair and tattered clothing, standing in a dark setting with bloodstains."
+}

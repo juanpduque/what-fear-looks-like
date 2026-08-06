@@ -1,0 +1,42 @@
+{
+  "title_text": "BÜYÜ3",
+  "credits_text": "SON AYIN",
+  "languages": [
+    "en",
+    "tr",
+    "ar"
+  ],
+  "other_text": "TÜRKİYE'NİN İLK KORKU FİLMİ \"GERİ DÖNDÜ\" الفيل الأول للرعب في تركيا \n3 NİŞAN'DA SİNEMALARDA",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains horror elements including implied violence and occult imagery.",
+  "description": "Movie poster shows two terrified individuals in a dark, fiery setting with intense expressions, suggesting a horror theme."
+}

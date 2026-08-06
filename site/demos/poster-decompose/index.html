@@ -80,15 +80,33 @@ body{
   position:fixed;inset:0;z-index:2;pointer-events:none;
 }
 .ov{
-  position:absolute;opacity:0;transition:opacity .28s ease;
+  position:absolute;opacity:0;visibility:hidden;
+  transition:opacity .55s ease;
   pointer-events:none;
 }
-.ov.on{opacity:1}
+.ov.on{opacity:1;visibility:visible}
+/* Never paint inactive shells */
+.ov:not(.on){
+  opacity:0 !important;visibility:hidden !important;
+  width:0 !important;height:0 !important;
+  left:auto !important;top:auto !important;
+  transform:none !important;
+  background:transparent !important;box-shadow:none !important;
+  overflow:hidden !important;
+}
+.ov-box[hidden],
+.ov-chip[hidden],
+.ov-label[hidden],
+.ov-chip:empty,
+.ov-label:empty{
+  display:none !important;
+}
 .ov-bbox .ov-box,
 .ov-faces .ov-box{
   display:block;width:100%;height:100%;
   border:1.5px solid var(--crt);
   box-shadow:0 0 0 1px rgba(0,0,0,.5), inset 0 0 20px rgba(107,143,113,.08);
+  box-sizing:border-box;
 }
 .ov-faces .ov-box{
   border-style:dashed;
@@ -101,16 +119,14 @@ body{
   white-space:nowrap;
 }
 .ov-symmetry{
-  background:linear-gradient(180deg, rgba(201,162,39,.95), rgba(201,162,39,.2));
+  background:linear-gradient(90deg, rgba(201,162,39,.15), rgba(201,162,39,.95), rgba(201,162,39,.15));
   box-shadow:0 0 12px rgba(201,162,39,.35);
+  border-radius:1px;
 }
 .ov-symmetry .ov-label{
-  left:8px;top:0;color:var(--amber);
+  left:8px;top:-22px;color:var(--amber);
+  transform:none;
 }
-.ov-chip{
-  transform:translateY(-50%);
-}
-.ov-chip span.ov-chip,
 span.ov-chip{
   display:inline-block;
   font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;
@@ -121,6 +137,89 @@ span.ov-chip{
   text-shadow:0 1px 2px #000;
   white-space:nowrap;
 }
+
+/* Palette: numbered handles on cover (swatch strip lives in beat copy) */
+.ov-palette{
+  left:0;top:0;width:0;height:0;overflow:visible;
+}
+.ov-palette.on{
+  /* keep zero box so handles/cue position in viewport coords */
+  width:0 !important;height:0 !important;overflow:visible !important;
+}
+.ov-palette .ov-box{display:none !important}
+.pal-cue[hidden]{display:none !important}
+.pal-cue{
+  position:absolute;z-index:2;
+  font-family:var(--mono);font-size:9px;letter-spacing:.18em;text-transform:uppercase;
+  color:var(--ink);background:rgba(12,10,8,.88);
+  border:1px solid rgba(201,162,39,.55);
+  padding:6px 10px;white-space:nowrap;
+  box-shadow:0 4px 18px rgba(0,0,0,.45);
+}
+.pal-handle{
+  position:absolute;z-index:3;
+  width:30px;height:30px;margin:-15px 0 0 -15px;
+  border-radius:50%;
+  display:grid;place-items:center;
+  font-family:var(--mono);font-size:12px;font-weight:700;
+  /* background + color set inline from sample hex */
+  border:2px solid rgba(255,255,255,.92);
+  box-shadow:0 0 0 1.5px rgba(10,8,6,.55), 0 4px 14px rgba(0,0,0,.55);
+  pointer-events:none;
+}
+/* Swatch cards under sticky left copy (beside VHS) */
+.beat-pal-panel.pal-panel{
+  position:relative;z-index:1;
+  display:flex;gap:8px;align-items:stretch;
+  margin-top:18px;width:100%;max-width:100%;
+  padding:10px;border-radius:14px;
+  background:rgba(14,11,9,.88);
+  border:1px solid rgba(201,162,39,.28);
+  box-shadow:0 10px 36px rgba(0,0,0,.55);
+  backdrop-filter:blur(6px);
+  box-sizing:border-box;
+}
+.pal-swatch{
+  flex:1;min-width:0;
+  border-radius:10px;padding:10px 10px 12px;
+  min-height:88px;
+  display:flex;flex-direction:column;justify-content:flex-start;gap:2px;
+  box-shadow:inset 0 0 0 1px rgba(0,0,0,.25);
+  position:relative;
+}
+.pal-swatch .ps-n{
+  position:absolute;top:8px;right:8px;
+  width:18px;height:18px;border-radius:50%;
+  display:grid;place-items:center;
+  font-family:var(--mono);font-size:10px;font-weight:600;
+  background:rgba(0,0,0,.28);border:1px solid rgba(255,255,255,.2);
+}
+.pal-swatch .ps-hex{
+  font-family:var(--mono);font-size:12px;font-weight:600;letter-spacing:.04em;
+}
+.pal-swatch .ps-oklch-label{
+  font-family:var(--mono);font-size:8px;letter-spacing:.16em;text-transform:uppercase;
+  opacity:.72;margin-top:6px;
+}
+.pal-swatch .ps-oklch{
+  font-family:var(--mono);font-size:11px;font-weight:500;letter-spacing:.02em;
+  opacity:.92;
+}
+.pal-swatch .ps-role{
+  font-family:var(--mono);font-size:8px;letter-spacing:.14em;text-transform:uppercase;
+  opacity:.65;margin-top:auto;padding-top:6px;
+}
+
+/* Diagonals: X guide over cover AABB */
+.ov-diagonals .ov-box{display:none}
+.ov-diagonals .diag-line{
+  position:absolute;left:0;top:0;height:2px;
+  background:linear-gradient(90deg, rgba(212,85,10,.15), rgba(201,162,39,.95), rgba(183,28,28,.2));
+  box-shadow:0 0 10px rgba(201,162,39,.4);
+  transform-origin:0 50%;
+  pointer-events:none;
+}
+.ov-diagonals .ov-label{color:var(--amber)}
 
 #metric-counter{
   position:fixed;z-index:4;pointer-events:none;
@@ -201,17 +300,22 @@ span.ov-chip{
 
 #scroll-track{position:relative;z-index:2;pointer-events:none}
 .beat{
-  min-height:135vh;
-  display:flex;align-items:flex-end;
-  padding:clamp(18px,4vw,48px);
-  padding-bottom:clamp(96px,15vh,150px);
-  opacity:0;
-  transition:opacity .4s ease;
-}
-.beat.active{opacity:1}
-.beat-inner{
-  max-width:min(480px,92vw);
+  min-height:150vh;
+  display:flex;align-items:flex-start;
+  padding:clamp(110px,18vh,160px) clamp(18px,4vw,48px) clamp(56px,10vh,120px);
+  opacity:1;
   pointer-events:none;
+  overflow:visible;
+}
+.beat-inner{
+  max-width:min(440px,92vw);
+  pointer-events:none;
+  /* Hold copy in view for the whole beat runway (overlay mid-beat stays readable) */
+  position:sticky;
+  top:clamp(100px,14vh,136px);
+  align-self:flex-start;
+  opacity:0;
+  will-change:opacity;
 }
 .beat[data-id="hero"] .beat-inner{
   max-width:min(560px,94vw);
@@ -227,9 +331,11 @@ span.ov-chip{
 }
 .beat-title{
   font-family:var(--display);font-size:clamp(44px,10vw,96px);
-  line-height:.9;letter-spacing:.02em;text-transform:uppercase;
+  line-height:1.02;letter-spacing:.02em;text-transform:uppercase;
   color:var(--ink);
   text-shadow:0 2px 0 #000, 0 0 36px rgba(212,85,10,.18);
+  padding-top:0.06em;
+  overflow:visible;
 }
 .beat[data-id="hero"] .beat-title{
   font-size:clamp(58px,13vw,128px);
@@ -274,8 +380,9 @@ span.ov-chip{
 @media(max-width:720px){
   .brand img{height:22px}
   .brand-meta{display:none}
-  .beat{align-items:flex-end;padding-bottom:120px}
-  .beat-title{font-size:clamp(40px,13vw,68px)}
+  .beat{align-items:flex-start;padding-top:120px;padding-bottom:110px;min-height:145vh}
+  .beat-inner{top:108px}
+  .beat-title{font-size:clamp(40px,13vw,68px);line-height:1.04}
   .beat-body{font-size:14px;max-width:28em}
   .tape-stamp{font-size:8px;max-width:46vw;text-align:right}
   #metric-counter{
@@ -283,18 +390,32 @@ span.ov-chip{
   }
   .ov-label{font-size:9px}
   .nav-links #btn-mute{padding:6px 8px}
+  .pal-handle{width:26px;height:26px;margin:-13px 0 0 -13px;font-size:11px}
+  .beat-pal-panel.pal-panel{
+    gap:6px;padding:8px;border-radius:10px;
+    margin-top:14px;
+    flex-wrap:wrap;
+  }
+  .beat-pal-panel .pal-swatch{
+    flex:1 1 calc(33.333% - 6px);
+    min-width:calc(30% - 4px);
+    max-width:calc(50% - 4px);
+    min-height:68px;padding:8px 6px 10px;border-radius:8px;
+  }
+  .pal-swatch .ps-hex{font-size:9px}
+  .pal-swatch .ps-oklch{font-size:9px}
+  .pal-swatch .ps-oklch-label,.pal-swatch .ps-role{font-size:7px}
+  .pal-swatch .ps-n{width:15px;height:15px;font-size:8px;top:5px;right:5px}
+  .pal-cue{font-size:8px;padding:5px 8px}
 }
 @media(min-width:900px){
-  .beat{align-items:center;padding-left:clamp(28px,5vw,72px)}
-  .beat-inner{transform:translateY(-3vh)}
-  /* Keep copy clear of the box on the right */
-  .beat-inner{margin-right:min(42vw,520px)}
+  .beat{align-items:flex-start;padding-left:clamp(28px,5vw,72px)}
+  .beat-inner{transform:none;margin-right:min(36vw,420px);max-width:34rem}
 }
 @media(prefers-reduced-motion:reduce){
   .fx-grain{animation:none}
   .scroll-cue{animation:none}
   #loader .pulse{animation:none}
-  .beat{transition:none}
   .ov{transition:none}
 }
 </style>

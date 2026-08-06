@@ -1,0 +1,49 @@
+{
+  "title_text": "MASK of the EVIL APPARITION",
+  "credits_text": "A NEW SHORT FILM BY ALEX PROYAS FEAR THYSELF RONNIE FELDMAN EVELYN DIXON ALEX GORAND KLEUT JOHANNA VAN DER LINDEN LISA VAN DER LINDEN IN ASSOCIATION WITH THE HERMETRIC FOUNDATION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "psychological",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and supernatural horror elements.",
+  "description": "A poster features a young girl looking upward with shadowy figures in the background and bold red text reading 'Mask of the Evil Apparition.'"
+}

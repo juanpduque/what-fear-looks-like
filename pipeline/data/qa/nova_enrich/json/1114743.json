@@ -1,0 +1,45 @@
+{
+  "title_text": "THE CURSE OF THE CLOWN MOTEL",
+  "credits_text": "RANDY COUTURE TOBIN BELL JULIANA DESTEFANO GUESTS CHECK IN... BUT THEY DON'T CHECK OUT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FROM THE EXECUTIVE PRODUCER OF THE HURRICANE HEIST",
+  "mood": [
+    "horror",
+    "thriller",
+    "suspense",
+    "creepy",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "clown",
+      "conf": 0.95
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "Poster features a group of people facing a menacing clown with a police car and motel in the background."
+}

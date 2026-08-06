@@ -1,0 +1,43 @@
+{
+  "title_text": "THE ELEVATOR GAME",
+  "credits_text": "A FILM BY LÉON PYETTE JESSE MARCINIAK SHINOBU TANIZOE IAN LEE THE GARDNER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NO ONE WINS",
+  "mood": [
+    "suspense",
+    "psychological",
+    "claustrophobic",
+    "mysterious",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "elevator",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "claustrophobia",
+      "conf": 0.8
+    },
+    {
+      "name": "psychological",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a young woman standing in a dimly lit elevator with a red glow, suggesting suspense and psychological tension."
+}

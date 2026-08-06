@@ -1,0 +1,42 @@
+{
+  "title_text": "Human Antfarm",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horrific",
+    "disturbing",
+    "surreal",
+    "body horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "spiders",
+      "conf": 0.8
+    },
+    {
+      "name": "body horror",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.3,
+  "blood_gore": 0.95,
+  "violence": 0.9,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "A poster shows two women in lingerie covered in fake blood and spider imagery, with the title 'Human Antfarm' prominently displayed."
+}

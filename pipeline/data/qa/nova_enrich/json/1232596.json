@@ -1,0 +1,40 @@
+{
+  "title_text": "KTHAI",
+  "credits_text": "WRITTEN AND DIRECTED BY RHYS MILLINGTON\nBETHAN PORTER, LINUS DAYKIN-AYRES, BRENDO FORECCHI, HALLE PARKER & SAM BOSWORTH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "If you let it in, no one will know what happened to you.",
+  "mood": [
+    "dread",
+    "gothic",
+    "erotic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "sexual"
+  ],
+  "moderation_notes": "The poster implies potential sexual content through its mood and tagline.",
+  "description": "A dark, shadowy figure stands in a doorway with dim red lighting, suggesting a horror or thriller theme."
+}

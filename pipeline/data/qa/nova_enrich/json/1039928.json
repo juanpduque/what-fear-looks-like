@@ -1,0 +1,45 @@
+{
+  "title_text": "LONDON after MIDNIGHT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "surreal",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "occult",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and a monstrous creature; no explicit violence or nudity.",
+  "description": "A poster features a monstrous, horned creature with a fierce expression and the title 'LONDON after MIDNIGHT' prominently displayed below."
+}

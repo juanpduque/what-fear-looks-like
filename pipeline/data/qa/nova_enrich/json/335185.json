@@ -1,0 +1,40 @@
+{
+  "title_text": "EQUINOX",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "fantasy",
+    "surreal",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "nudity"
+  ],
+  "moderation_notes": "The poster includes partial nudity and a monstrous creature.",
+  "description": "A muscular blue monster looms over two naked individuals in a forest setting, with bold red title text reading 'EQUINOX.'"
+}

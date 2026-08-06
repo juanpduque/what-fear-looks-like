@@ -1,0 +1,40 @@
+{
+  "title_text": "リメーチ 悪影！ ビジョンスポット",
+  "credits_text": "",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "other_text": "あなたの心に対してありません。",
+  "mood": [
+    "surreal",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and disturbing imagery.",
+  "description": "A collage-style poster features bold Japanese text, a stylized map of Japan, and fragmented scenes of people and buildings."
+}

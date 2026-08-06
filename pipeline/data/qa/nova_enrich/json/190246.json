@@ -1,0 +1,46 @@
+{
+  "title_text": "DEAD MAN'S LAKE",
+  "credits_text": "Written by ANTHONY MELTON & CHRIS GOREY Directed by DAVID PAWLAK STARRING HOLLY WILLIAMS, CHRIS GOREY, NATALIE GIBBINS, GARRIE HENDERSON, JAMES RAMSAY, SARAH JANE HOSKINS, BENJAMIN SMITH, JANE SMITH, LUCINETTE SMITH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "It was supposed to be a fun weekend at Dodman's Lake...",
+  "mood": [
+    "horror",
+    "thriller",
+    "suspense",
+    "dread",
+    "forest"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "Poster shows a zombie-like creature looming over two people near a lake, with a forest backdrop and dramatic sunset."
+}

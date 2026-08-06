@@ -1,0 +1,41 @@
+{
+  "title_text": "DECEPTION",
+  "credits_text": "A FILM BY Vitaly Versace\n\nALEXANDRA ERIKSSON MIKESH MARIE ROCKI DUCHARME DANIEL MESSIER ANELIA DYOUOLGEROVA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"SUPERMODELS AND SERIAL KILLER\"\n\nV\nBUY IT ON BLU-RAY HD-DEF AND DVD SEPTEMBER 20",
+  "mood": [
+    "thriller",
+    "mystery",
+    "suspense",
+    "psychological",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a knife; suitable for mature audiences.",
+  "description": "A dark poster features a close-up of a person's face with a knife, promoting the thriller film 'Deception' directed by Vitaly Versace."
+}

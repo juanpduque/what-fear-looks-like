@@ -1,0 +1,46 @@
+{
+  "title_text": "The Christmas Season Massacre",
+  "credits_text": "\"WARNING: NOT TO BE SEEN SOBER\" - Burnout Central",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Twas the night before Christmas... and everyone's DEAD.",
+  "mood": [
+    "horror",
+    "camp",
+    "dark humor",
+    "violent",
+    "gory"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.9
+    },
+    {
+      "name": "gore",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.95,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore, not suitable for all audiences.",
+  "description": "A poster for a horror film featuring a wreath with a severed hand and a gory, festive theme."
+}

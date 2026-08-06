@@ -1,0 +1,50 @@
+{
+  "title_text": "BADGER!",
+  "credits_text": "NEVDE FILMS AND DWITER PRESENTS\n\"WE'LL GET YOU, FANS... GIVE 'EM STUCKY NAKED MINIFIGURIZED TARGET\" - HARRY BARRON\n\"BADGER!\" STARRING SALLY GILL, CALVIN BASSARD, BASTARD COLLINS\n\"BADGER!\" REALITY WILSON, THORNDALE REASON, WIL HAIT, STEPHANY WILKINSON\n\"BADGER!\" SCOTT WILSON, BARRY WILKINSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"A HELLISH CROSSBREED BETWEEN 'DOG SOLDIERS' AND 'BASIL BRUSH'\" - NEVODGYS",
+  "mood": [
+    "horror",
+    "thriller",
+    "dark",
+    "intense",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.6,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "Movie poster features a man and woman in a dark forest setting with intense expressions; title \"BADGER!\" prominently displayed."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "MOTHER",
+  "credits_text": "...A BOY'S BEST FRIEND...",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "psychological",
+    "supernatural",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of a skull and blood, suggesting horror themes.",
+  "description": "A poster featuring a skull with a human face, framed in dark tones, with the title 'MOTHER' and the tagline '...A BOY'S BEST FRIEND...'."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "BADOET",
+  "credits_text": "DANIEL TOPIN CHRISTOPHER REUBY RATU YELLA AURELIE MEURETSE TIARA WISMANE RONNY LAMBOK MARCEL CHANDRAKUSUMA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "JATANG MEMBAWA TAWAK PULANG MEMBAWA NYA WAK",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and implied violence.",
+  "description": "A poster features a menacing clown with long hair and a sinister grin, surrounded by a group of terrified individuals against a dark background."
+}

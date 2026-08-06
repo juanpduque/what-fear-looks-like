@@ -1,0 +1,42 @@
+{
+  "title_text": "Not Found",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "清間長山 2",
+  "mood": [
+    "horror",
+    "psychological",
+    "disturbing",
+    "intense",
+    "chaotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense and disturbing imagery that may be unsettling.",
+  "description": "A collage of terrified faces forms the background of this horror movie poster titled \"Not Found,\" with bold red and white text overlay."
+}

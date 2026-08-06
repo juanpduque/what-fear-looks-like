@@ -1,0 +1,43 @@
+{
+  "title_text": "CALL CENTER",
+  "credits_text": "UM FILME DE ROGÉRIO BOO\nLEONA CAVALLI\nMARCOS OLIVEIRA\nJOSÉ RUBENS CHACHA\nGRACE GIANOUKAS\nFERRUGEM\nCAROLINA STOFELLA\nDARWIN DEMARCH\nWILSON ANTUNES\nISABEAU CHRISTINE\nARITANA MARONI\nRITA CADILLAC",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "other_text": "WORLD PREMIERE FANTASPOA 2025\nPRODUCÇÃO\nAPOIO\nTaBOO FILMS\nQUADROPENIA films\nSTAMINA\nCLUBE DO CASTING\nPENISBREAKS\nBREAK AUDIO\ngooe\nAHEAD\nBRASILIANO\nmonstercam",
+  "mood": [
+    "horror",
+    "thriller",
+    "psychological",
+    "disturbing",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and violent imagery.",
+  "description": "A poster for the film 'Call Center' features a distressed man with blood on his hand and face, set against a stylized background with cast names listed below."
+}

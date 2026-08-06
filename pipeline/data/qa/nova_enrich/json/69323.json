@@ -1,0 +1,40 @@
+{
+  "title_text": "Street Tales of Terror",
+  "credits_text": "A Film by J.D. Hawkins & Corry Shields\nA Twisted Trilogy of Terror",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DIRECTOR'S CHOICE Horror Dance Festival\nBEST FEATURE World Cinema\nBEST ACTOR World Cinema",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and gory imagery.",
+  "description": "The poster features a large skull with faces superimposed over it, set against a dark, eerie background with text overlays."
+}

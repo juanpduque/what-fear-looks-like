@@ -1,0 +1,51 @@
+{
+  "title_text": "Bloodgeoned",
+  "credits_text": "Brett Hutt, Gary Houston, Rick Komench, Marisol Dugas",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DREAMS CAN KILL",
+  "mood": [
+    "gothic",
+    "dread",
+    "horror",
+    "dark",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic violence and occult imagery.",
+  "description": "A poster shows a young person holding a weapon with blood, facing a ghostly figure in a gothic setting."
+}

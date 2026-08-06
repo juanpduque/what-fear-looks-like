@@ -1,0 +1,39 @@
+{
+  "title_text": "GENIE IN A BARREL",
+  "credits_text": "ANATASIA VICEKOVA IN MARIA BENEVESI VESEL VIKTOR ABRAMOV A SHORT FILM BY ALVIN SOPRANO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "mysterious",
+    "eerie",
+    "dark",
+    "suspenseful",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "barrel",
+      "conf": 0.95
+    },
+    {
+      "name": "eyes",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, eerie poster features a large barrel with glowing eyes peeking out, set against a shadowy background."
+}

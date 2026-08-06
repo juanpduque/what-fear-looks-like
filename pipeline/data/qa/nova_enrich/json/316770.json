@@ -1,0 +1,49 @@
+{
+  "title_text": "វង្កោយអន្ទុរ",
+  "credits_text": "",
+  "languages": [
+    "km"
+  ],
+  "other_text": "សិច្ចភាពអន្ទុរ និង សិច្ចភាពស្ម័គ្រចិត្ត",
+  "mood": [
+    "horror",
+    "supernatural",
+    "suspense",
+    "chaotic",
+    "terrifying"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "forest",
+      "conf": 0.65
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains supernatural horror themes and mild suggestive imagery.",
+  "description": "A group of people in distress are surrounded by ghostly figures in a dark, eerie forest setting."
+}

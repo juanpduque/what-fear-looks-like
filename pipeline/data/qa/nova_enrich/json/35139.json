@@ -1,0 +1,40 @@
+{
+  "title_text": "TEENAGERS FROM OUTER SPACE",
+  "credits_text": "STARRING DAVID LOVE DAWN ANDERSON HARVEY B. DUNN BRYAN GRANT TOM LOCKYEAR WRITTEN PRODUCED AND DIRECTED BY TOM GRAEFF DISTRIBUTED BY WARNER BROS.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THRILL-CRAZED SPACE KIDS BLASTING THE FLESH OFF HUMANS!",
+  "mood": [
+    "camp",
+    "sci-fi",
+    "action",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and suggestive poses.",
+  "description": "Vintage movie poster featuring dramatic scenes of teens battling a skeletal creature in a sci-fi horror setting."
+}

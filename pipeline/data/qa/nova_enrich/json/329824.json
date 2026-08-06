@@ -1,0 +1,51 @@
+{
+  "title_text": "EBOLA ZOMBIES",
+  "credits_text": "ONCE THEY GET IN, THEY DON'T GET OUT!",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "apocalyptic",
+    "intense",
+    "survival",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "zombie",
+      "conf": 0.95
+    },
+    {
+      "name": "gun",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.9
+    },
+    {
+      "name": "biohazard",
+      "conf": 0.85
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and horror elements.",
+  "description": "A soldier aims a gun amidst a zombie-infested city with a biohazard sign and chaotic crowd in the background."
+}

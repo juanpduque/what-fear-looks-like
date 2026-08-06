@@ -1,0 +1,46 @@
+{
+  "title_text": "GIMME SKELTER",
+  "credits_text": "\"A low-budget masterpiece.\" -Theron Neel, ScreamFi.net\n\"A fine example of how imaginative a genre film can be.\" GIMME SKELTER has thrills, chills, and slaughterhouse kills. -Axel Howerton, EyeCraveDVD.com",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WINNER\nBest Feature Film\nThe Houston Film Festival\nWINNER\nBest Feature Film\nThe Houston Film Festival",
+  "mood": [
+    "thriller",
+    "horror",
+    "intense",
+    "gritty",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "thriller",
+      "conf": 0.9
+    },
+    {
+      "name": "horror",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.2,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and gore as suggested by the horror genre and taglines.",
+  "description": "The poster features a fiery, intense background with a partial face and bold title text, emphasizing a horror-thriller atmosphere."
+}

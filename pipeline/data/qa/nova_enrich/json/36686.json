@@ -1,0 +1,42 @@
+{
+  "title_text": "THE TOMB",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "erotic",
+    "dramatic",
+    "mysterious",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "erotic"
+  ],
+  "moderation_notes": "Contains suggestive imagery and implied violence.",
+  "description": "A dramatic poster features three characters, with a central woman holding a dagger, set against a dark, fiery background with a tomb-like structure."
+}

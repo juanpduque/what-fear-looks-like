@@ -1,0 +1,41 @@
+{
+  "title_text": "THE QUIET",
+  "credits_text": "JEQUREY SLATON MARIANA PARMA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A MATEO MÁRQUEZ FILM",
+  "mood": [
+    "mysterious",
+    "haunting",
+    "intimate",
+    "quiet",
+    "atmospheric"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A dark, atmospheric poster shows a house at night with warm lights glowing through windows, evoking mystery and quiet tension."
+}

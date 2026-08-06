@@ -1,0 +1,50 @@
+{
+  "title_text": "CRACKHOUSE OF THE DEAD",
+  "credits_text": "CHRIS LOVE STEVE CREST JASON TOLER MIKE DAVIS JUI NURI PETER TINY LIL'D-ASIA JACK NAPIER LAURIE DAVIS REBANY WILKINS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SUNRAYZ INTERNATIONAL FILMS A MOVIE BY JASON TOLER WRITTEN BY JASON TOLER & REBANY WILKINS PRODUCED BY MIKE DAVIS JAMES MANNER KENNETH RAYBURN CHRIS LOVE STEVE CREST JASON TOLER MIKE DAVIS NURI PETER TINY LIL'D-ASIA JACK NAPIER LAURIE DAVIS IAN WILKINS WAYNE KELLY JASON TOLER SCOTT BROWN MICHELE PATTERSON MUSIC BY PETER TINY LIL'D-ASIA & VISION PRODUCTIONS",
+  "mood": [
+    "horror",
+    "thriller",
+    "supernatural",
+    "gritty",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including blood and violent imagery.",
+  "description": "A horror movie poster featuring multiple characters and a haunted house, with intense and eerie visuals."
+}

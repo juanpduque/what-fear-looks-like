@@ -1,0 +1,52 @@
+{
+  "title_text": "SON EFSUN",
+  "credits_text": "OYUNCULAR: DENİZ ERİNG, ZEHRA FATMA KIZIL, MURAT DURAN, ÖZE SOYAL GÜLAY TAN YÖNETMEN: RAZIYE SULTAN SENARIST: RAZIYE SULTAN YAPIN: GRIS PRODUCTİON",
+  "languages": [
+    "en",
+    "tr"
+  ],
+  "other_text": "VE KUL RABBI EÜZU BÐKE MİN HEMEZATİŞ SEYATİN وقل زيب أغوار ريق مزرات القيامين",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "supernatural",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and a monstrous skull face.",
+  "description": "A poster featuring a menacing, decayed skull face with sharp teeth and blood, overlaid with Turkish and English text, suggesting a horror theme."
+}

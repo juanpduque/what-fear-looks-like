@@ -1,0 +1,46 @@
+{
+  "title_text": "EAT MY GUTS",
+  "credits_text": "A FILM BY ALEX WESLEY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ZOMBIES",
+  "mood": [
+    "horror",
+    "gruesome",
+    "disturbing",
+    "violent",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "zombie",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore, suitable for mature audiences only.",
+  "description": "Poster features disturbing imagery including a masked face, rotting teeth, and raw flesh, with bold red text reading 'ZOMBIES' and 'EAT MY GUTS' by Alex Wesley."
+}

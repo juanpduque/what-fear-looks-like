@@ -1,0 +1,45 @@
+{
+  "title_text": "SCARE PACKAGE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ONE TIME THE WOODS, COLD OPEN, SCARE PACKAGE, VHS, M.I.S.T.E.R., HYPORBO, COLD OPEN, THE WOODS, SCARE PACKAGE",
+  "mood": [
+    "gothic",
+    "horror",
+    "creepy",
+    "mysterious",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and monstrous imagery.",
+  "description": "A poster shows a skeletal hand holding a VHS tape labeled 'SCARE PACKAGE' against a dark, eerie background with other VHS tapes visible."
+}

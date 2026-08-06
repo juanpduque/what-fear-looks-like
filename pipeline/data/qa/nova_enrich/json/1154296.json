@@ -1,0 +1,46 @@
+{
+  "title_text": "PARIUSS",
+  "credits_text": "A GUERRILLA METROPOLITANA FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "UNCUT\nWARNING: The following film contains material that may be harmful or traumatizing to some audiences. It may also contain potentially graphic depictions for those with pre-existing triggers. ISSUER IS STRONGLY ADVISED",
+  "mood": [
+    "gothic",
+    "surreal",
+    "eerie",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "portrait",
+      "conf": 0.8
+    },
+    {
+      "name": "mask",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and disturbing themes; viewer discretion advised.",
+  "description": "Poster features a framed portrait of a woman with a masked figure and dripping red text, evoking a gothic and surreal atmosphere."
+}

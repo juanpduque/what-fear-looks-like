@@ -1,0 +1,51 @@
+{
+  "title_text": "자상색색 내일색색",
+  "credits_text": "THE NICKLESS NUN",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "other_text": "사상이 여러부과 손음이 많는 교수의 장을 연 이 여러부 강방 만자 무밀고 비밀이는데요.",
+  "mood": [
+    "gothic",
+    "horror",
+    "supernatural",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains violent imagery and occult themes.",
+  "description": "A nun holds two knives against a dark background with ghostly figures and dramatic lighting."
+}

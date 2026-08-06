@@ -1,0 +1,46 @@
+{
+  "title_text": "BLACK SWARM",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gritty",
+    "violent",
+    "disturbing",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    },
+    {
+      "name": "creature",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.95,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore with insects attacking a human figure.",
+  "description": "A graphic poster shows a person covered in bees and wasps with severe injuries, emphasizing horror and violence."
+}

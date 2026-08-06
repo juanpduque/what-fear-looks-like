@@ -1,0 +1,45 @@
+{
+  "title_text": "日本心結引品",
+  "credits_text": "あなたの軽にも幸子をする！本当に絶い心結スポット",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "日本心結を絶した心結スポット！スポット・アンサーブル・アクション・ストリーマーしくあり！",
+  "mood": [
+    "dread",
+    "psychological",
+    "thriller",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and intense psychological themes.",
+  "description": "A poster featuring a close-up of a distressed face with blood splatters and Japanese text, suggesting a psychological thriller."
+}

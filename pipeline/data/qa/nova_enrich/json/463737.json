@@ -1,0 +1,46 @@
+{
+  "title_text": "GRANNY OF THE DEAD",
+  "credits_text": "SHE CAME WITH FALSE TEETH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BROUGHT TO YOU BY THE DIRECTOR OF SHARKNADO",
+  "mood": [
+    "horror",
+    "zombie",
+    "dark",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and gore.",
+  "description": "A poster features an elderly woman with a zombie-like appearance, screaming with visible blood on her face, set against a dark, eerie background."
+}

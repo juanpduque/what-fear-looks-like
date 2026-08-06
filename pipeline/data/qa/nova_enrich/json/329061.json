@@ -1,0 +1,42 @@
+{
+  "title_text": "teeth",
+  "credits_text": "a film by daniel gray tom brown featuring the voice of richard c. grant",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Official Selection 2008 SUNDANCE BLACKLIST ROLLBOOKS... [truncated for brevity]",
+  "mood": [
+    "horror",
+    "dark humor",
+    "body horror",
+    "psychological thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.4
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.6,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains implied violence and sexual themes, suitable for mature audiences.",
+  "description": "Movie poster for 'Teeth' featuring a gloved hand reaching toward a mouth with teeth, nails, and other objects scattered around."
+}

@@ -1,0 +1,49 @@
+{
+  "title_text": "BALANAR",
+  "credits_text": "A film by LUKA BURSAČ",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MASHINA ZEC",
+  "mood": [
+    "gothic",
+    "surreal",
+    "haunting",
+    "mystical",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "fire",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and a ghostly, skeletal theme.",
+  "description": "A poster features a young girl with braided hair against a fiery red background, overlaid with a glowing skeletal chest and eerie lighting."
+}

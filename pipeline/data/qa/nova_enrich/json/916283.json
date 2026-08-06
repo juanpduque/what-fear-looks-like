@@ -1,0 +1,43 @@
+{
+  "title_text": "DIE SCHWARZE SPINNE",
+  "credits_text": "LILITH STANGENBERG, MARCUS SIGNER, NURIT HIRSCHFELD, ANATOLE TAUBMAN, EIN FILM VON MARKUS FISCHER",
+  "languages": [
+    "de"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dark",
+    "mysterious",
+    "fantasy",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "castle",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.2,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic poster features a hooded figure with outstretched wings, surrounded by characters in a dark, medieval setting with a castle and forest backdrop."
+}

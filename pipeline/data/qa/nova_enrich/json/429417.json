@@ -1,0 +1,43 @@
+{
+  "title_text": "GHOST STORIES",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "suspenseful",
+    "haunting",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "haunting",
+      "conf": 0.85
+    },
+    {
+      "name": "mystery",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Four men stand in front of a dark, eerie background with ghostly silhouettes and a title reading 'GHOST STORIES' in bold red letters."
+}

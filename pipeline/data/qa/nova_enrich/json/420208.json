@@ -1,0 +1,41 @@
+{
+  "title_text": "MISTERI DARI GUNUNG MERAPI",
+  "credits_text": "FENDY PRADANA, IDA SHARIA, JASHA, FARIDA LANCER, YANITA, BARBARA YUNITA, YANTO, PLEASTICA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BIOGESIC, DECOLGEN, BEJAS SANT KEPALA, PERDANA FILMS, MEMPERSENJATKAN",
+  "mood": [
+    "horror",
+    "mystery",
+    "supernatural",
+    "thriller",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and mild horror elements.",
+  "description": "A poster featuring a muscular man in traditional attire, with a skull and ghostly figures, promoting a horror film titled 'Misteri dari Gunung Merapi.'"
+}

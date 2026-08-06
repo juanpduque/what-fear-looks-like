@@ -1,0 +1,62 @@
+{
+  "started": "2026-08-03T22:50:47.523746+00:00",
+  "finished": "2026-08-03T22:59:32.667256+00:00",
+  "source_focus": "omdb_runtime_with_tt_residual",
+  "omdb_available": true,
+  "attempted": {
+    "with_tt": 411,
+    "without_tt": 273,
+    "total": 684
+  },
+  "attempted_with_tt": 411,
+  "filled": 0,
+  "filled_by_source": {},
+  "still_zero": 684,
+  "still_zero_with_tt": 411,
+  "still_zero_without_tt": 273,
+  "inventory_before": {
+    "posters": 37842,
+    "horror_movies": 49960,
+    "intersection": 36394,
+    "zero_runtime": 684,
+    "zero_en": 633,
+    "with_tt": 411,
+    "with_tt_en": 372,
+    "without_tt": 273,
+    "without_tt_en": 261
+  },
+  "inventory_after": {
+    "posters": 37842,
+    "horror_movies": 49960,
+    "intersection": 36394,
+    "zero_runtime": 684,
+    "zero_en": 633,
+    "with_tt": 411,
+    "with_tt_en": 372,
+    "without_tt": 273,
+    "without_tt_en": 261
+  },
+  "horror_movies_updates": {
+    "runtime_updated": 0,
+    "imdb_updated": 0,
+    "appended": 0
+  },
+  "paths": {
+    "fills": "/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/runtime_residual_fill/fills.csv",
+    "still_zero": "/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/runtime_residual_fill/still_zero.csv",
+    "backup": null,
+    "out_dir": "/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/runtime_residual_fill"
+  },
+  "blockers": [
+    "TMDB_API_KEY missing \u2014 skipped TMDB fallback"
+  ],
+  "omdb_probe": {
+    "probed": 411,
+    "has_positive_runtime": 0,
+    "runtime_na_or_empty": 175,
+    "response_false": 236,
+    "exception": 0,
+    "diag_path": "data/qa/runtime_residual_fill/omdb_probe_diag.json"
+  },
+  "note": "OMDb-only residual pass completed with network. API key valid (known title returns Runtime). Residual with-tt titles overwhelmingly return Runtime N/A in OMDb \u2014 same gap as IMDb title.basics. without_tt not re-attempted (skip-suggest/wikidata/tmdb)."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "Sanguijuelas",
+  "credits_text": "ÉSTERA CORP / MAKILA PROJECT PRESENTAN\n\nÉSTERA CORP EN ASOCIACIÓN CON MAKILA PROJECT PRESENTAN: DANIEL MONTAÑO, DANA BORJA, CHANCARÓ RÚIZ, HOZ, MELÉNDEZ, NÁN MORALES, PACO MUEJTE, ISABEL ORTIZA, DAVIDO CARÉ, LUIS BLANCO, ALEJANDRO MONTAÑO VI, NORA SANDERS, AMANCIO OSCAR INZUNZA, VICTOR CORTES, CLAUDIA VISUAL\n\nDIRECCIÓN: RICARDO CARREÑO\n\nPRODUCTOR: IMAR PÉREZ\n\nDIRECCIÓN DE FOTOGRAFÍA: GABRIELA CORTES\n\nDIRECCIÓN DE ARTE: ALEJANDRO MONTAÑO ARION SOTO PAULA RÍA\n\nDIRECCIÓN DE MONTAJE: ABRAHAM SÁNCHEZ",
+  "languages": [
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "violent",
+    "dark",
+    "gory"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster depicts a group of armored figures battling monstrous creatures under a dark, ominous sky, with intense action and blood visible."
+}

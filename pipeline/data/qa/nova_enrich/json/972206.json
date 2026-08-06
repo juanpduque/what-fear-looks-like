@@ -1,0 +1,45 @@
+{
+  "title_text": "OAK",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Beware the touch of the mighty oak and the secrets that lie within. For legend tells of a deadly curse and the terror set to begin. COMING SOON",
+  "mood": [
+    "mysterious",
+    "eerie",
+    "foreboding",
+    "haunting",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "tree",
+      "conf": 0.95
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "The poster hints at occult themes and potential supernatural horror.",
+  "description": "A poster shows a large, ominous tree under a full moon with five silhouetted figures in front of it, set in a dark forest."
+}

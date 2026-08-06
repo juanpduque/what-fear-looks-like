@@ -1,0 +1,42 @@
+{
+  "title_text": "THE CRANOPHAGE",
+  "credits_text": "A FILM BY PATRICK POULIN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ROMY SURPREANT, EMILIE HELLMAN, EVGENY PETUKHOVNOV",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "dark",
+    "horrific"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and occult themes.",
+  "description": "A poster featuring a large, menacing skull with spider-like legs and vibrant red accents, with bold white text overlay."
+}

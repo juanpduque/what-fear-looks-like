@@ -1,0 +1,43 @@
+{
+  "title_text": "FIELD OF SCREAMS",
+  "credits_text": "A FILM BY ALIX MORD & EVAN RUNKLE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "disturbing",
+    "creepy",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "scarecrow",
+      "conf": 0.95
+    },
+    {
+      "name": "field",
+      "conf": 0.8
+    },
+    {
+      "name": "rural",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A scarecrow holding a pitchfork is featured on a movie poster titled 'Field of Screams,' suggesting a horror theme set in a rural field."
+}

@@ -1,0 +1,44 @@
+{
+  "title_text": "SAKOB",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE SNAKE GIRL HORROR NIGERIA MOVIE",
+  "mood": [
+    "horror",
+    "camp",
+    "surreal",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "snake",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.95,
+  "blood_gore": 0.1,
+  "violence": 0.4,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and a monstrous snake.",
+  "description": "A poster shows a woman with a snake emerging from her mouth, alongside two men and a skull, suggesting a horror theme."
+}

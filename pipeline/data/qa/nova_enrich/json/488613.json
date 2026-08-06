@@ -1,0 +1,42 @@
+{
+  "title_text": "RAAKAVEDOS 2",
+  "credits_text": "ASEMAAHTI: ELMA ELMO RAUTEN, MARKKAVEDOS II: ROOLIAS VILMA KINNARINEN, JOSKA SEKILÄ ELMÖ ELMO RAUTIO, VILMA ELMO RAUTIO, JA KASPER JÖTTÖS JA JARKKO ELMO RAUTIO",
+  "languages": [
+    "fi"
+  ],
+  "other_text": "ET OLE NÄHNYT VIELÄ KAIKKEA!",
+  "mood": [
+    "dread",
+    "gothic",
+    "violent",
+    "disturbing",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; disturbing imagery.",
+  "description": "A poster shows a close-up of a person with severe facial injuries and stitches, overlaid with Finnish text and a title."
+}

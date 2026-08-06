@@ -1,0 +1,48 @@
+{
+  "title_text": "BUNNYMAN SLAUGHTER",
+  "credits_text": "LORE MICHELI ANDRES R RAMOS JASMINE MARTINEZ",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Because the Bunny Man can",
+  "mood": [
+    "dread",
+    "gothic",
+    "terror"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "blood",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.5,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and horror elements.",
+  "description": "A poster features a masked figure holding a large knife with a rabbit logo, set against a dark forest background."
+}

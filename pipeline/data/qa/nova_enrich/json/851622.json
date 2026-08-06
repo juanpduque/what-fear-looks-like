@@ -1,0 +1,46 @@
+{
+  "title_text": "DARK RITUAL",
+  "credits_text": "NATALI JONES, LISA WILCOX, DEBBIE ROCHN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SUMMON THE MADNESS",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "terror",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult themes and implied violence.",
+  "description": "A hooded figure holds an axe over a house with an octopus emerging, suggesting a horror theme."
+}

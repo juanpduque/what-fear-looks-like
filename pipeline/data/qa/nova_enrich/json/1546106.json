@@ -1,0 +1,50 @@
+{
+  "title_text": "THE BEAST INSIDE",
+  "credits_text": "JARRED MAUCH • LIAM GAMBLE • ANTONIA JANZ • ROBIN ROYCE QUEERE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MAGUS LOWE PRESENTS A NOEL STREET PRODUCTION",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "psychological",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and violent themes.",
+  "description": "A man stands in a doorway surrounded by monstrous figures and flames, with a tagline and cast names above."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "POCONG 2",
+  "credits_text": "RUDI SOEDJAWO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Jelai mengeram cari POCONG yang alarag bukan",
+  "mood": [
+    "horror",
+    "supernatural",
+    "tense",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains horror themes and potential violence.",
+  "description": "A poster shows a ghostly figure in a forest setting with the title 'POCONG 2' and a tagline below."
+}

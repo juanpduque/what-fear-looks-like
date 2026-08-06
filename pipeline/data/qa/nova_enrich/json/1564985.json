@@ -1,0 +1,46 @@
+{
+  "title_text": "Polyp's Feast",
+  "credits_text": "Directed By Patrick Kyle Belmonte\nDARQ STUDIOS Presents",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Playtime is over. It's feasting time!",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "camp",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A puppet-like creature holds a bloody knife against a dark background with red splatters, suggesting a horror theme."
+}

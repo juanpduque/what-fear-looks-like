@@ -1,0 +1,41 @@
+{
+  "title_text": "MY WIFE IS A VAMPIRE",
+  "credits_text": "IT COULD HAPPEN TO YOU\n\nA MARKING MOVIES PRODUCTION\n\nSTARRING: MORGAN HAYES, JAMES PAUL MARTIN, KRISTEN BAUM\n\nCINEMATOGRAPHY BY PETER GRIFFIN MUSIC BY PETER WILSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ALL TOO GOOD",
+  "mood": [
+    "camp",
+    "gothic",
+    "surreal",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "occult",
+    "sexual"
+  ],
+  "moderation_notes": "Contains suggestive themes and occult imagery.",
+  "description": "A colorful mural-style poster features a central female figure in a white dress surrounded by various characters and fiery elements, with bold text reading \"My Wife Is a Vampire.\""
+}

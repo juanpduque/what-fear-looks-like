@@ -1,0 +1,41 @@
+{
+  "title_text": "No Witnesses",
+  "credits_text": "A Film by Robert Roweth. Starring Jack McAlpine, Robert Roweth, Jimmy McAlpine, and others. Produced by Robert Roweth.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "One brutal home invasion\nfive grisly murders\ntwo detectives",
+  "mood": [
+    "tense",
+    "gritty",
+    "suspenseful",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster hints at violent and disturbing themes, including murder and home invasion.",
+  "description": "The poster features fragmented images of faces and text, with a dark, tense atmosphere suggesting a brutal home invasion and murder mystery."
+}

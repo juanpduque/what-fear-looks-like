@@ -1,0 +1,42 @@
+{
+  "title_text": "死人形の裏側",
+  "credits_text": "監督：吉田大八/脚本：吉田大八/主演：山本未來/音楽：遠藤利明/エンディングテーマ：中島美嘉「この世の果て」",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "カルト映画",
+  "mood": [
+    "gothic",
+    "eerie",
+    "psychological",
+    "disturbing",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "gothic",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and disturbing themes.",
+  "description": "A poster featuring a distressed woman with dark makeup and a haunting expression, set against a deep purple background."
+}

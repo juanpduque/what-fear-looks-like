@@ -1,0 +1,41 @@
+{
+  "title_text": "DEAD MAN TELLS HIS OWN TALE",
+  "credits_text": "PLAYING WITH WOMEN IS SO DANGEROUS.. DIEGO GENTILE EMILIA ATTIAS DAMIAN DREEZIK MORO ANCHILEZ A FILM BY FABIAN FORTE WRITTEN BY NICOLÁS BRITOS & FABIAN FORTE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COMING SOON ONLY IN THEATERS",
+  "mood": [
+    "gothic",
+    "surreal",
+    "eerie",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "The poster hints at occult themes and mild sexual undertones, but no explicit content is visible.",
+  "description": "A group of people stand in a misty forest with a central figure, surrounded by dark, eerie imagery and text."
+}

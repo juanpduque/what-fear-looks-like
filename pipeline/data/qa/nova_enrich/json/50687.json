@@ -1,0 +1,35 @@
+{
+  "title_text": "MANIAC COP 3",
+  "credits_text": "BADGE OF SILENCE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOU TAKE ME... OR I TAKE YOU",
+  "mood": [
+    "action",
+    "thriller",
+    "crime",
+    "gritty",
+    "urban"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A police officer holds a badge in a cityscape backdrop, with a shadowy figure in the distance."
+}

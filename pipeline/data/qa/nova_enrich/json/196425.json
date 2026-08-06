@@ -1,0 +1,46 @@
+{
+  "title_text": "GOTHMINISTER UTOPIA",
+  "credits_text": "AFM RECORDS presents a PHANTASM FILMS production: a DANIEL WILLIAMS film BURN ALEXANDER BREM KETTUNEN CHRISTIAN SVENDSEN GLENN T NILSEN CHRISTE PERSON STIG EGGEBO CHRISTEN INGER ULVEN BERNERTSEN music by GOTTHARD director of photography TOBI SCHEIDE special makeup effects FIE BARNE JOHNSEN edited by PATRICK BERNERDT produced by BURN ALEXANDER BREM directed by DANIEL WILLIAMS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "dark",
+    "violent",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A man with sharp claws and a torn face, blood splattered, in a dark, gothic setting."
+}

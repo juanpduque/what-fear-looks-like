@@ -1,0 +1,41 @@
+{
+  "title_text": "MONSTER MADNESS",
+  "credits_text": "THE GOLDEN AGE OF THE HORROR FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "camp",
+    "gothic",
+    "classic",
+    "humor",
+    "nostalgic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.95,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A vibrant poster featuring various classic horror characters, including a gorilla and a mummy, with bold title text and a tagline."
+}

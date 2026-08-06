@@ -1,0 +1,43 @@
+{
+  "title_text": "THE UNKNOWN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SPS CINEMA GRINDHOUSE\nWHAT YOU DON'T KNOW CAN KILL YOU!!",
+  "mood": [
+    "horror",
+    "thriller",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "axe",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A poster features a man with a menacing expression, an axe, and two smaller figures, with bold red text and a dramatic layout."
+}

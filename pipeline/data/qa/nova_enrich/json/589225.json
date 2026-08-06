@@ -1,0 +1,43 @@
+{
+  "title_text": "ผีซ่า มิสเตอร์ซี่ซ่า",
+  "credits_text": "",
+  "languages": [
+    "th"
+  ],
+  "other_text": "ภาพยนตร์ไทย",
+  "mood": [
+    "fantasy",
+    "horror",
+    "mysterious",
+    "supernatural",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "ghost",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Two girls stand on a rooftop overlooking a cityscape with a large red moon and a menacing creature above them."
+}

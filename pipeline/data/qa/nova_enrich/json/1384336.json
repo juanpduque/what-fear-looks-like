@@ -1,0 +1,50 @@
+{
+  "title_text": "ANOTHER CABIN IN THE WOODS",
+  "credits_text": "MOVIE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FROM ONE OF THE GUYS WHO BROUGHT YOU THE HELL HOUSE LLC FRANCHISE... NO NOT HIM, THE OTHER ONE.",
+  "mood": [
+    "horror",
+    "thriller",
+    "suspense",
+    "cabin",
+    "forest"
+  ],
+  "fear_labels": [
+    {
+      "name": "axe",
+      "conf": 0.9
+    },
+    {
+      "name": "cabin",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A group of people stand in front of a cabin with an axe embedded in a tree stump, suggesting a horror theme."
+}

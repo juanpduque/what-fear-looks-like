@@ -1,0 +1,46 @@
+{
+  "title_text": "IN THE LAND OF THE CANNIBALS",
+  "credits_text": "A Film By Vincent Dawn",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CAPTURED! TORTURED! EATEN ALIVE!",
+  "mood": [
+    "horror",
+    "thriller",
+    "survival",
+    "jungle",
+    "cannibal"
+  ],
+  "fear_labels": [
+    {
+      "name": "cannibal",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and cannibal themes.",
+  "description": "A poster shows a distressed woman tied up in a jungle setting with a large figure looming over her, suggesting a horror theme."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "BLIND GHOST",
+  "credits_text": "ALIX VILLARET LINDSAY SIERA CASEY GRAF JEREMIAH BENJAMIN TIM DAX",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE MURDERER",
+  "mood": [
+    "mystery",
+    "thriller",
+    "psychological",
+    "suspense",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "murderer",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.3,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and suspenseful themes.",
+  "description": "A woman with sunglasses stands central, surrounded by faces and question marks, with a red, eerie background suggesting a thriller or horror theme."
+}

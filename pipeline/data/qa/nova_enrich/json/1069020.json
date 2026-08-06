@@ -1,0 +1,44 @@
+{
+  "title_text": "SOL CAMPING",
+  "credits_text": "술경 수망",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "other_text": "호차 오셨 이어?",
+  "mood": [
+    "mystery",
+    "suspense",
+    "outdoor",
+    "night",
+    "isolated"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "night",
+      "conf": 0.9
+    },
+    {
+      "name": "tent",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster for the film 'SOL CAMPING' features a dark starry sky, a glowing tent, and three partial faces, suggesting a mysterious outdoor setting."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "THE CARS THAT EAT PEOPLE",
+  "credits_text": "JOHN MELLEN * TERRY CAMILLERI * KEVIN MILES * PETER WEIR * HAL & JIM MCELROY * BRUCE SMEATON PANAVISION * EASTMANCOLOR FROM NEW LINE CINEMA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "They run on blood.",
+  "mood": [
+    "camp",
+    "horror",
+    "satirical",
+    "violent",
+    "grotesque"
+  ],
+  "fear_labels": [
+    {
+      "name": "vehicle",
+      "conf": 0.95
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gory imagery.",
+  "description": "A poster shows a man being attacked by a spiky, monstrous car with sharp teeth and glowing eyes, with bold red text reading \"THE CARS THAT EAT PEOPLE\"."
+}

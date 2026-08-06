@@ -1,0 +1,46 @@
+{
+  "title_text": "THE SAW NEVER STOPS.",
+  "credits_text": "THE CHICKEN RUN\nA TEXAS CHAINSAW MASSACRE SHORT FILM\nSTARRING MELANIE LANKA AND FEATURING TWO ISSUES IN THE DARK\nPRESENTED BY EGAN PRODUCTIONS IN ASSOCIATION WITH ZAY DAY'S MATTERY OF LEATHER ACE PARTICIPATION SHORT FILM WRITTEN AND DIRECTED BY GARY V. LUNCINIC\nEXECUTIVE PRODUCER MATT RENZES AND PRODUCED BY GARY V. LUNCINIC AND JIM PENSOL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "horror",
+    "gritty",
+    "intense",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster shows a person holding a chainsaw with a distressed expression, accompanied by bold text and credits for a horror short film."
+}

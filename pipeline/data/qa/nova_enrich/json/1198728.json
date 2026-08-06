@@ -1,0 +1,42 @@
+{
+  "title_text": "Anomaly",
+  "credits_text": "a film directed by Sam Prim & Michael Bajet\nJAOOB SAM HELE NATALIE SAULS PRIM GARNER JORNEY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COMING SOON THIS SUMMER, TWO FRIENDS FIND THEMSELVES DYING OF BOREDOM AND DECIDE TO HANGOUT WITH THEIR FRIENDS WHEN THE DAY TAKES A TURN FOR THE WORSE. THESE FOUR TEENS DISCOVER AN UNEXPECTED, MALEVOLENT CONSCIOUSNESS LIKE NO OTHER WITH.",
+  "mood": [
+    "psychological",
+    "thriller",
+    "disturbing",
+    "suspense",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster hints at psychological horror and potential violence, but no explicit content is shown.",
+  "description": "A hand holds a smartphone displaying fragmented images against a red background, with the title 'Anomaly' and director credits prominently displayed."
+}

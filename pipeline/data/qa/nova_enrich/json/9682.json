@@ -1,0 +1,45 @@
+{
+  "title_text": "PULSE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "horror",
+    "claustrophobic",
+    "chaotic",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "crowd",
+      "conf": 0.95
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts intense, horror-themed imagery with implied violence.",
+  "description": "A person is embraced by shadowy, claw-like figures against a dark, chaotic background, with the title 'PULSE' displayed at the bottom."
+}

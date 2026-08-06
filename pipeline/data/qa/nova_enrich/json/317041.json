@@ -1,0 +1,44 @@
+{
+  "title_text": "DARK NIGHT OF THE SOUL SPECIAL EDITION",
+  "credits_text": "The controversial avant-garde occult film! A psychological thriller starring Alan O'Neil as 'Children Shouldn't Play With Dead People.'",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WARNING: THIS FILM CONTAINS SCENES OF SEXUALITY, GORE, AND EXTREME OCCULT SHOCKING SCENES! VIEWER DISCRETION IS ADVISED!",
+  "mood": [
+    "gothic",
+    "occult",
+    "controversial",
+    "psychological",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.9
+    },
+    {
+      "name": "gothic",
+      "conf": 0.85
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.5,
+  "sensitive": [
+    "occult",
+    "sexual",
+    "violence",
+    "nudity"
+  ],
+  "moderation_notes": "Contains occult themes, sexual content, and graphic imagery.",
+  "description": "Poster features four characters in dark, occult-themed attire with bold title text and warning labels."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "DO NOT WATCH THIS FILM",
+  "credits_text": "INTRODUCING SELECTIONS FROM A SERIES PRESENTED BY MAIMS CARROLL. WRITTEN BY MAIMS CARROLL. BROADCASTING AFTERCARE PRODUCTIONS PRESENTS MAIMS CARROLL NOT TO WATCH THIS FILM PRODUCED BY MAIMS CARROLL ALBAHIZA ROSE & BEN HERRING - DIRECTED BY MAIMS CARROLL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DO WE EVER LISTEN?",
+  "mood": [
+    "dread",
+    "surreal",
+    "psychological",
+    "disturbing",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and psychological themes.",
+  "description": "A poster features a central figure with intense eyes, surrounded by dark, abstract patterns and a prominent skull above. Text warns viewers not to watch the film."
+}

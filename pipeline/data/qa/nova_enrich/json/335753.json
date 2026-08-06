@@ -1,0 +1,49 @@
+{
+  "title_text": "THE AMITYVILLE PLAYHOUSE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CLOSED",
+  "mood": [
+    "gothic",
+    "haunting",
+    "eerie",
+    "dread",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "haunted_house",
+      "conf": 0.95
+    },
+    {
+      "name": "crows",
+      "conf": 0.85
+    },
+    {
+      "name": "abandoned",
+      "conf": 0.9
+    },
+    {
+      "name": "moonlight",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.85,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "",
+  "description": "A poster shows an abandoned playhouse with crows flying around under a full moon, evoking a haunted and eerie atmosphere."
+}

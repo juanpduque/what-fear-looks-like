@@ -1,0 +1,38 @@
+{
+  "title_text": "鬼眼狂殺",
+  "credits_text": "",
+  "languages": [
+    "zh"
+  ],
+  "other_text": "左頁 李立群 余安安 右頁 李立群 余安安",
+  "mood": [
+    "horror",
+    "gothic",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    "monster",
+    {
+      "name": "eye",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains intense horror themes and psychological tension.",
+  "description": "A poster featuring intense faces and an eerie eye, suggesting a horror film with psychological themes."
+}

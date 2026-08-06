@@ -1,0 +1,39 @@
+{
+  "title_text": "Day of the Dead",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Every dog has its dead.",
+  "mood": [
+    "apocalyptic",
+    "dystopian",
+    "grim",
+    "desolate",
+    "post-apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "apocalypse",
+      "conf": 0.9
+    },
+    {
+      "name": "desolation",
+      "conf": 0.95
+    },
+    {
+      "name": "text",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 1.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows three dogs resting on a cracked sidewalk in front of a ruined cityscape with smoke and debris in the background."
+}

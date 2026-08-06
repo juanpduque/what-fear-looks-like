@@ -1,0 +1,46 @@
+{
+  "title_text": "PSYCHOPATH",
+  "credits_text": "GEO SEO PRODUCTIONS HOUSE ARREST ENTERTAINMENT PROBIE FILMS JORDAN E. GARNER MARKUS K. SPENCER LIZ KITTREDGE SHALENE NESPEREZ JORDAN E. GARNER MARKUS K. SPENCER LIZ KITTREDGE GABRIELLA L. CORBETT JORDAN E. GARNER MARKUS K. SPENCER LIZY GARNER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BCP 9CP INVOL LIMS",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "thriller",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and a disturbing facial expression, suggesting intense psychological horror.",
+  "description": "A dark, intense poster featuring a masked figure with bloodied features against a stormy backdrop, with bold title text and credits."
+}

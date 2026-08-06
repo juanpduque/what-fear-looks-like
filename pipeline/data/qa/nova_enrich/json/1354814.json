@@ -1,0 +1,47 @@
+{
+  "title_text": "Girls Just Wanna Have Kill",
+  "credits_text": "BEI NAGAE KADOKI SHOUD CHARLIE JURI ISHIIJIMA IEMIKA AIKA KADUN MATSUMOTO MISAKI FUKATSU YUKI NISHIGUCHI TOMO HATANO TOMOKO KATAYAMA TAKAYUKI NIBARA TOKYO UNIVERSITY OF AGRICULTURE YUSAKU SORAN",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "violent",
+    "gothic",
+    "camp",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A horror poster featuring a central female figure with a wild red hairstyle and pale makeup, surrounded by silhouettes and splattered blood against a red background."
+}

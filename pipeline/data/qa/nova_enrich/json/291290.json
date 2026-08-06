@@ -1,0 +1,38 @@
+{
+  "title_text": "SUBMERGED",
+  "credits_text": "You can't scream and hold your breath at the same time.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "suspenseful",
+    "claustrophobic",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a ghostly handprint on a foggy window with the title 'SUBMERGED' and a tagline about screaming and holding breath."
+}

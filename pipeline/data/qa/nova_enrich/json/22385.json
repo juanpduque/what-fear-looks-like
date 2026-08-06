@@ -1,0 +1,43 @@
+{
+  "title_text": "SAVAGE HARVEST",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "First, they prey on human fear... then they feed on it!",
+  "mood": [
+    "horror",
+    "thriller",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "fear",
+      "conf": 0.8
+    },
+    {
+      "name": "danger",
+      "conf": 0.85
+    },
+    {
+      "name": "attack",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.95,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and intense fear themes.",
+  "description": "A woman screams in terror as a large lion roars aggressively towards her. The background shows a burning building and other lions."
+}

@@ -1,0 +1,43 @@
+{
+  "title_text": "The Beast of Bray Road",
+  "credits_text": "A Leigh Scott Film",
+  "languages": [
+    "en"
+  ],
+  "other_text": "For years an unidentified creature haunted the backwoods of Walworth County. Then one night, it came to town.",
+  "mood": [
+    "horror",
+    "thriller",
+    "mystery",
+    "suspense",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Movie poster features a menacing creature with glowing eyes against a dark forest backdrop, with text about an unidentified creature haunting a town."
+}

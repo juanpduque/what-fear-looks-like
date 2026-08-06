@@ -1,0 +1,43 @@
+{
+  "title_text": "FLICKER",
+  "credits_text": "NATASHA BELISLE NICK VAN DINTHER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PAUL LEI FILMS DAVID WINTER NICK VAN DINTHER NATASHA BELISLE NICK VAN DINTHER JESSICA LEMKE DAVID MESSINA JESSICA LEMKE SAMANTHA WONG CLAIRE CONSTANTIN NICK VAN DINTHER JESSICA LEMKE DAVID MESSINA NATASHA BELISLE SAMANTHA WONG DAVID WINTER DAVID KOCHER",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "mystery",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "darkness",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark poster features a woman holding a flashlight in a shadowy setting, with dim lighting and an eerie atmosphere."
+}

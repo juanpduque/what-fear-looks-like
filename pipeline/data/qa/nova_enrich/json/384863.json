@@ -1,0 +1,41 @@
+{
+  "title_text": "BAD MOON RISING",
+  "credits_text": "STARRING ERIC REDDING, NATHAN EDWARDS, JESSICA LAMASSU, JAMES HAMILTON, STUART STUART PRODUCTION DESIGNER SCOTT HAMILTON, DIRECTED BY SCOTT HAMILTON, WRITTEN BY SCOTT HAMILTON, PRODUCED BY STUART STUART",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IT'S GONNA BE ONE HELL OF A NIGHT...",
+  "mood": [
+    "dread",
+    "horror",
+    "suspense",
+    "thriller",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features a menacing werewolf and a distressed man, suggesting potential violence.",
+  "description": "A poster shows a man sitting in fear next to a large, snarling werewolf with the tagline 'It's gonna be one hell of a night...' above."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "猫病5ジャルジャル",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "怪談の最恐体験 \"寝て消に頭を打たれるな\"",
+  "mood": [
+    "eerie",
+    "gothic",
+    "psychological",
+    "haunting",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.5,
+  "animal": 0.9,
+  "blood_gore": 0.6,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood, suggesting horror themes.",
+  "description": "A poster shows a shadowy cat silhouette over a woman in bed with blood stains, evoking a haunting and disturbing atmosphere."
+}

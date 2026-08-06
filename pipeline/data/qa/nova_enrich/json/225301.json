@@ -1,0 +1,42 @@
+{
+  "title_text": "OUTPOST 11",
+  "credits_text": "\"AN INTENSE ATMOSPHERIC CHILLER!\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MADNESS INSIDE TERROR OUTSIDE",
+  "mood": [
+    "tense",
+    "chilling",
+    "survival",
+    "post-apocalyptic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.3
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild violence and blood imagery.",
+  "description": "A lone figure in heavy gear stands in a snowy landscape, holding a rifle, with a dramatic and intense atmosphere."
+}

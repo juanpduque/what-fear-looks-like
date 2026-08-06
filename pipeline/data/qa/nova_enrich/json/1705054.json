@@ -1,0 +1,36 @@
+{
+  "title_text": "NOT AN EXIT",
+  "credits_text": "AN ANDREW BOLES FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COMING SOON",
+  "mood": [
+    "dread",
+    "psychological",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and suggests violence.",
+  "description": "A poster shows a masked figure and a person with blood on their face, with bold red text reading 'NOT AN EXIT' and 'AN ANDREW BOLES FILM.'"
+}

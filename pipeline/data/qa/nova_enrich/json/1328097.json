@@ -1,0 +1,40 @@
+{
+  "title_text": "SARCOMATOUS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "gore",
+      "conf": 0.85
+    },
+    {
+      "name": "monster",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic depictions of blood and gore, suitable for mature audiences.",
+  "description": "A dark, red-tinted poster featuring a monstrous, fleshy form with the bold title 'SARCOMATOUS' overlaid in red text."
+}

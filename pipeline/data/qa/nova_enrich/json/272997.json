@@ -1,0 +1,42 @@
+{
+  "title_text": "DON'T FALL ASLEEP",
+  "credits_text": "Where did jealous Izzy go... now that she is dead?",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DAVE FLANAGAN PRESENTS A MICHAEL ROSEN PRODUCTION \"DON'T FALL ASLEEP\" STARRING CAMERON MANSEL ANNA REEDBESS DAVE O'BRIEN KELLY KELLY AND MIKE SHAW DIRECTED BY JOHN HOPKINS WRITTEN BY JOHN HOPKINS & MIKE SHAW EXECUTIVE PRODUCER KEVIN CLEVETT PRODUCED BY MIKE SHAW & STEVEN J. ROTH",
+  "mood": [
+    "gothic",
+    "dread",
+    "psychological",
+    "eerie",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and violent imagery.",
+  "description": "A poster shows two women, one with blood on her hands, and a shadowy figure in the background with the title \"Don't Fall Asleep.\""
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "BOTTOM FEEDER",
+  "credits_text": "TOM SIZEMORE IN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "UNRATED\nEVIL LIES BENEATH THE SURFACE",
+  "mood": [
+    "horror",
+    "gritty",
+    "intense",
+    "violent",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    },
+    {
+      "name": "creature",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.8,
+  "blood_gore": 0.85,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore, suitable for mature audiences only.",
+  "description": "A horror movie poster featuring a monstrous creature and a victim, with bold text and a dark, intense atmosphere."
+}

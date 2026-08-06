@@ -1,0 +1,47 @@
+{
+  "title_text": "THE HAND",
+  "credits_text": "Director CHOI YUN-HO LEE JAE WON PARK SANG-WOOK JEONG SEO-HA",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "other_text": "ATTACK OF THE THINGS",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "psychological",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and a monstrous hand.",
+  "description": "A poster shows a monstrous hand dripping blood, with three distressed people in the background. The title \"THE HAND\" is prominently displayed."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "ENTITY PROJECT",
+  "credits_text": "PRODUCED BY OCEANS FILMWORKS SCREENPLAY BY JANDE PERCEM VALENTINA ESPINOZ CAROLINA LEVI GIA MAUBECK TALISHA ESPINOZ CAROLINA JANDE PERCEM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "RECENTLY REVEALED FOOTAGE OF A GIRLS-ONLY TRIP TO THE FORMER HOME OF EXORCISTS IN UPSTATE NEW YORK",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery",
+    "haunting",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "The poster hints at occult themes and potential supernatural horror.",
+  "description": "A dark poster features a bald man in clerical attire with a serious expression, set against a haunted house backdrop in a forest."
+}

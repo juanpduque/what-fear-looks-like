@@ -1,0 +1,39 @@
+{
+  "title_text": "DEAD SILENCE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "suspense",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silence",
+      "conf": 0.8
+    },
+    {
+      "name": "doll",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features a creepy doll with a sinister expression, suggesting potential violence.",
+  "description": "A close-up of a creepy doll with wide green eyes and a finger to its lips, accompanied by the title 'DEAD SILENCE' at the bottom."
+}

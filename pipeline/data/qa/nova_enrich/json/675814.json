@@ -1,0 +1,42 @@
+{
+  "title_text": "APPETITE FOR SIN",
+  "credits_text": "MISSY SAHAGUN, RICKY HERRERA, EVA HAMILTON, JOE CASTRO, DEVANNY PINNY\nMATTHEW VINALA PRESENTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HE SHOULDN'T HAVE GONE TRICK OR TREATING!",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "eerie",
+    "sinister"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and suggestive themes.",
+  "description": "A poster featuring a skull with a pumpkin-like face against a red background, with bold white text reading 'APPETITE FOR SIN' and additional cast and tagline details."
+}

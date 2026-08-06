@@ -1,0 +1,40 @@
+{
+  "title_text": "THE LOBSTER",
+  "credits_text": "DAVID RED NELSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "The poster features a stylized pink lobster with a human face, surrounded by abstract shapes and figures.",
+  "mood": [
+    "surreal",
+    "dystopian",
+    "absurd",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    },
+    {
+      "name": "surreal",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.3,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A vibrant pink poster depicts a stylized lobster with a human face, set against abstract shapes and figures."
+}

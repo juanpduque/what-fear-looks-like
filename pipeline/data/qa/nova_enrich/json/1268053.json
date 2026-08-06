@@ -1,0 +1,50 @@
+{
+  "title_text": "WINNIE THE POOH",
+  "credits_text": "BLOOD AND HONEY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "READY FOR ANOTHER STAB AT REVENGE",
+  "mood": [
+    "gothic",
+    "dread",
+    "horror",
+    "dark",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "chains",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.6,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A dark, eerie poster features a skull trapped in chains with shadowy figures in a haunted forest background."
+}

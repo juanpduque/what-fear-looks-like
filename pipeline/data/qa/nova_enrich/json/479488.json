@@ -1,0 +1,38 @@
+{
+  "title_text": "SPLATTER",
+  "credits_text": "ROGER CORMAN PRESENTS\nFIVE CAME TO HEAR THE WILL YOU DECIDE WHO LIVES OR DIES!\nDIRECTED BY JOE DANTE\nSTARRING COREY FELDMAN\nWRITTEN BY RICHARD CHRISTIAN MATHESON\nPRESENTED BY NETFLIX",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "violent",
+    "thriller",
+    "horror",
+    "camp",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "Movie poster features a man standing over a woman lying in a pool of blood, with bold title and credits."
+}

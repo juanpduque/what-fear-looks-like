@@ -1,0 +1,46 @@
+{
+  "title_text": "BLOODY BLACKSMITH",
+  "credits_text": "NICK MANCUSO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MEDIEVAL TO THE BONE",
+  "mood": [
+    "gothic",
+    "dark",
+    "medieval",
+    "horror",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "skeleton",
+      "conf": 0.7
+    },
+    {
+      "name": "text",
+      "conf": 1.0
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.6,
+  "person": 0.5,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains dark themes, skeletal imagery, and implied violence.",
+  "description": "A dark, medieval-themed poster features a blacksmith at work amidst skulls and flames, with a gothic, eerie atmosphere."
+}

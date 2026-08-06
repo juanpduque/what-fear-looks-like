@@ -1,0 +1,46 @@
+{
+  "title_text": "RESURRECTING TOMBSTONE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "O.K. CORRAL",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "gritty",
+    "macabre"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of a decayed figure and mild gory elements.",
+  "description": "A decayed figure in a hat emerges from the ground with a skeletal hand, set against a fiery red background with a tombstone sign reading 'O.K. CORRAL.'"
+}

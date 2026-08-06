@@ -1,0 +1,44 @@
+{
+  "title_text": "NGỘI NHắ BẠI ÁNH",
+  "credits_text": "NGÔ THÁNH VẠN, HOÀNG SỐN, NSÚT, ĐÀO BÁ SỐN, MẠC CAN, BÚI CHÍ VINH",
+  "languages": [
+    "vi"
+  ],
+  "other_text": "Southern Bank",
+  "mood": [
+    "eerie",
+    "haunting",
+    "gothic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and mild psychological horror elements.",
+  "description": "A poster features a woman's intense gaze with a ghostly silhouette behind her, overlaid with bold red Vietnamese text."
+}

@@ -1,0 +1,49 @@
+{
+  "title_text": "BEYOND THE DUNWICH HORROR",
+  "credits_text": "H.P. LOVECRAFT'S",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "occult",
+    "supernatural",
+    "terrifying"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "occult",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.65
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and monstrous creatures, but no explicit violence or gore.",
+  "description": "A woman kneels in front of a large skull with glowing eyes, surrounded by tentacle-like creatures and candles, evoking a gothic horror atmosphere."
+}

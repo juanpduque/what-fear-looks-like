@@ -1,0 +1,45 @@
+{
+  "title_text": "เรื่องผีได้",
+  "credits_text": "Haunted Tales",
+  "languages": [
+    "th"
+  ],
+  "other_text": "11 มกราคม 2564 ในโรงภาพยนตร์",
+  "mood": [
+    "mysterious",
+    "suspenseful",
+    "haunting",
+    "gothic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains themes of haunting and occult, may be unsettling for some audiences.",
+  "description": "A Thai movie poster featuring four characters with a dark, eerie atmosphere, suggesting themes of haunting and the supernatural."
+}

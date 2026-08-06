@@ -1,0 +1,40 @@
+{
+  "title_text": "WEASELS RIP MY FLESH",
+  "credits_text": "A Nathan Schiff Film",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "camp",
+    "horror",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.8,
+  "blood_gore": 0.1,
+  "violence": 0.3,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "sexual",
+    "violence"
+  ],
+  "moderation_notes": "Contains mild sexual suggestiveness and implied violence.",
+  "description": "A woman in a red top screams as monsters surround her under a full moon, with bold red and purple text overlay."
+}

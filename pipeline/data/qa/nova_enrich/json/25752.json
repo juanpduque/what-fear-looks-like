@@ -1,0 +1,45 @@
+{
+  "title_text": "CHILDREN OF CORN 666",
+  "credits_text": "ISAAC'S RETURN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "supernatural",
+    "gothic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "scythe",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult themes and implied violence.",
+  "description": "A poster featuring a man in a hat with a scythe against a dark, stormy cornfield background, titled 'Children of Corn 666: Isaac's Return.'"
+}

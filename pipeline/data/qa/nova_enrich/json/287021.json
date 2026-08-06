@@ -1,0 +1,44 @@
+{
+  "title_text": "DIE B-QUE",
+  "credits_text": "25TH ANNIVERSARY SPECIAL EDITION STARRING SWEET WINE LILES GOODWICK MOSER LAFONTANE DEREX SCHMIT TODD CASSEY MIKE BRUNSON WILLIAM DE RITIS VON THE MARLOCK CHAN CLAY WILLIAM MERRITT PRODUCED BY JACKSON FURLEY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HORROR 1990 BANNED! IN 13 COUNTRIES THE MOST CONTROVERSIAL MOVIE OF THE 80'S! WARLOCK HOME VIDEO",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and violent themes.",
+  "description": "A horror movie poster featuring a monstrous face and a severed head, with bold red text and a dark, eerie background."
+}

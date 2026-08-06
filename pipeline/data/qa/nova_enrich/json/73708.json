@@ -1,0 +1,47 @@
+{
+  "title_text": "HELL TARGET",
+  "credits_text": "SF PSYCHO HORROR ANIMATION",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "SFディターブルスコーン\n安武結",
+  "mood": [
+    "dread",
+    "surreal",
+    "psychological",
+    "action",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.5,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains intense horror elements and violent imagery.",
+  "description": "A dramatic poster features a fiery, monstrous figure with a skull-like face, wielding a weapon against a dark background, evoking intense horror and action."
+}

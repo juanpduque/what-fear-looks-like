@@ -1,0 +1,46 @@
+{
+  "title_text": "ក្ងៃម្រេះៃក",
+  "credits_text": "GOLDEN TOWN FILM CO., LTD.",
+  "languages": [
+    "en",
+    "km"
+  ],
+  "other_text": "ក្ងៃម្រេះៃក",
+  "mood": [
+    "gothic",
+    "horror",
+    "fantasy",
+    "dramatic",
+    "mystical"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and monstrous creatures.",
+  "description": "A poster features a monstrous creature with multiple faces, surrounded by characters in dramatic poses against a fiery background."
+}

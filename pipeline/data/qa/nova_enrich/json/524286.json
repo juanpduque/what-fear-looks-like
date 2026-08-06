@@ -1,0 +1,46 @@
+{
+  "title_text": "PARANORMAL EVIL",
+  "credits_text": "EVIL LIES WITHIN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"..CREEPY. AN UNRELENTING NIGHTMARE\" HORROR SOCIETY",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "suspense",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood, suitable for mature audiences.",
+  "description": "A dark poster features intense faces split by a red line, with a woman in a tub and a ghostly figure, evoking horror and suspense."
+}

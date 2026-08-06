@@ -1,0 +1,46 @@
+{
+  "title_text": "CADAVERELLA",
+  "credits_text": "Megan Goddard, Ryan Seymour, Kieran Hunter, Santiago Vasquez",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Places to go... People to kill. \"A Violent Head-smashing Fun\" - Joe Bob Briggs, The Zombie Review. Grand Jury Prize Winner, Fantastic Fest. Official Selection, The Zombie Film Festival.",
+  "mood": [
+    "gothic",
+    "horror",
+    "violent",
+    "dark",
+    "macabre"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    },
+    {
+      "name": "forest",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "The poster features a pale, zombie-like woman with dark makeup and a haunting expression, set against a dark, eerie background with trees and a moonlit night."
+}

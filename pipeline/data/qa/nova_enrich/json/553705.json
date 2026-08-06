@@ -1,0 +1,39 @@
+{
+  "title_text": "CREATURE IN THE WOODS",
+  "credits_text": "THE HUNTERS BECOME THE HUNTED",
+  "languages": [
+    "en"
+  ],
+  "other_text": "REC: 00:00:19:20",
+  "mood": [
+    "horror",
+    "suspense",
+    "forest",
+    "creature",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "creature",
+      "conf": 0.95
+    },
+    {
+      "name": "forest",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a large, shadowy creature in a forest setting with the title 'CREATURE IN THE WOODS' and the tagline 'THE HUNTERS BECOME THE HUNTED.'"
+}

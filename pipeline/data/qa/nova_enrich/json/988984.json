@@ -1,0 +1,43 @@
+{
+  "title_text": "PANGKHA",
+  "credits_text": "A Film by RAHAT RAHMAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "axiata originals",
+  "mood": [
+    "dread",
+    "gothic",
+    "eerie",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, with partial nudity.",
+  "description": "A woman lies on a bed covered in blood, with a distressed expression, in a gritty, horror-themed setting."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "Texas Zombie Wars",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "El Paso Outpost",
+  "mood": [
+    "apocalyptic",
+    "gritty",
+    "survival",
+    "post-apocalyptic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, depicting a zombie apocalypse scenario.",
+  "description": "A poster shows an aged man with severe injuries and a helicopter overhead in a desert landscape, titled 'Texas Zombie Wars' with the subtitle 'El Paso Outpost.'"
+}

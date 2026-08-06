@@ -1,0 +1,49 @@
+{
+  "title_text": "abandoned souls",
+  "credits_text": "allen BERGERON alden SIMKO vicki RIVARD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "The missing don't want to be found.",
+  "mood": [
+    "gothic",
+    "haunting",
+    "mysterious",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains themes of the occult and ghostly apparitions.",
+  "description": "A dark poster features two intense faces and a ghostly figure in a forest setting, with the title 'Abandoned Souls' and a tagline."
+}

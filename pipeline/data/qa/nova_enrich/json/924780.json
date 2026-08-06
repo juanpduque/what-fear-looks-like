@@ -1,0 +1,50 @@
+{
+  "title_text": "NIGHT OF THE DEVIL",
+  "credits_text": "SAMANTHA CARLSON CARLOS LOPEZ REBEKAH BRADSHAW RYAN BECKER SCOTT WILLIAMS RICHARD OLIVER ALICE McCORMICK ALEXANDER JANSEN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DEATH IS NOT THE WORST EVIL",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "dread",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult imagery and mild violent suggestions.",
+  "description": "A poster features a group of people with a central skull, a ghostly figure, and a red moon in a dark forest setting."
+}

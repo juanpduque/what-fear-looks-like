@@ -1,0 +1,51 @@
+{
+  "title_text": "THE BOOK OF THE DEAD",
+  "credits_text": "MATTEO ACCARDO, MATTEO AVANZATI, BIANCA LUCA, PERNINA, DAVID WHITE, MARCO RISTORI, LUCA BONI, MARIO MAZZUCCHELLI, VALENTINA CAU, \"MATTIA SARÀO\", STEFANO ANTONUCCI, TOMMASO BENEDETTI, NICCOLÒ SARÀO, CARLO DIAMANTINI, LUCA BONI, LUCIANO MANCINI, SONIA RAVEGNANI, \"MATTIA SARÀO\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "S",
+  "mood": [
+    "horror",
+    "fantasy",
+    "supernatural",
+    "dark humor",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    },
+    {
+      "name": "skull",
+      "conf": 0.5
+    },
+    {
+      "name": "house",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic violence and occult imagery.",
+  "description": "A colorful poster features a demonic figure, several characters, and a vintage car, suggesting a horror-fantasy theme."
+}

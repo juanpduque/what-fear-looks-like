@@ -1,0 +1,51 @@
+{
+  "title_text": "DARK",
+  "credits_text": "",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "other_text": "クリスマスプロジェクト アドルトアニメーションオフホラア!!",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "occult",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "horror"
+  ],
+  "moderation_notes": "Contains occult and horror themes, but no explicit violence or sexual content.",
+  "description": "Poster features a young girl with blue hair holding a cross, surrounded by dark, monstrous figures and a gothic castle backdrop."
+}

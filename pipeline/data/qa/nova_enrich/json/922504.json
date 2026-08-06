@@ -1,0 +1,43 @@
+{
+  "title_text": "BLIGHT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WE'VE BEEN HERE BEFORE",
+  "mood": [
+    "gothic",
+    "haunting",
+    "eerie",
+    "mystery",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "crowd",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A chalk-drawn poster features a haunted house and a group of people with eerie expressions, with the title 'BLIGHT' and the tagline 'WE'VE BEEN HERE BEFORE.'"
+}

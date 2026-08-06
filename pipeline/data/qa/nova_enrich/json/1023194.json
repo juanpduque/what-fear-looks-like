@@ -1,0 +1,45 @@
+{
+  "title_text": "JENELUTMAN",
+  "credits_text": "dan Keinginan Mertua Jaharam\npersembahan Berak Brothers",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Nol Derajat film presents",
+  "mood": [
+    "horror",
+    "supernatural",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror elements and occult themes.",
+  "description": "Movie poster features a menacing figure with bat-like wings, surrounded by characters in a fiery setting, suggesting supernatural horror themes."
+}

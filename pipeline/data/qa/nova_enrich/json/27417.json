@@ -1,0 +1,54 @@
+{
+  "title_text": "THE ROOST",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "supernatural",
+    "terrifying"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.88
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.7,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains intense horror themes and supernatural imagery.",
+  "description": "A man with outstretched hands looms over four silhouetted figures in front of a barn, surrounded by bats in a dark, eerie setting."
+}

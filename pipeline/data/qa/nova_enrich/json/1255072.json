@@ -1,0 +1,40 @@
+{
+  "title_text": "魔の心続ブック",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "受言!!",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains disturbing imagery and occult themes.",
+  "description": "A poster shows a decayed face with eerie text and a shadowy tomb-like structure, evoking horror and dread."
+}

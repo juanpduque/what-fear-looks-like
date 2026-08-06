@@ -1,0 +1,43 @@
+{
+  "title_text": "WRATH OF THORN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FROM THE STUDIO THAT BROUGHT YOU SLASHER HOUSE\nPREPARE TO FEEL... HIS WRATH\nMYCHO",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "intense",
+    "ominous"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "storm",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, stormy poster features a shadowy figure with a menacing face and the title 'Wrath of Thorn' in bold green letters."
+}

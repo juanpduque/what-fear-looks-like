@@ -1,0 +1,45 @@
+{
+  "title_text": "PANDEMONIC",
+  "credits_text": "The movie that doesn't exist\nIn this chaos a world made of survival is never quite extinct.\nVHS NTSC\nSUNRISE FILM\n21",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IO GALE CHRISTINA LINDBERG TOM SAVINI MATTHEW KAREBDAS",
+  "mood": [
+    "apocalyptic",
+    "action",
+    "sci-fi",
+    "post-apocalyptic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "gas_mask",
+      "conf": 0.95
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and post-apocalyptic themes.",
+  "description": "A muscular figure in a gas mask wields a sword amidst a fiery, chaotic backdrop with other characters in a dystopian setting."
+}

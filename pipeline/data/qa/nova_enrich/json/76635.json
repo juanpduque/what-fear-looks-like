@@ -1,0 +1,49 @@
+{
+  "title_text": "BATTLE: NEW YORK DAY II",
+  "credits_text": "FROM THE PRODUCERS OF \"PANDORA MACHINE\" AND \"CLONE HUNTER\" TINA TANZER NATHANIEL CASSIDY DANIEL LANE KATHLEEN KWAN DANIELLE J. HERRRY MADUKA STEADY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AN ALIEN INVASION THAT ATTENDS THE EXTINCTION OF MANKIND A SMALL GROUP OF REBELS MANAGES TO ELUDE THE INVADERS",
+  "mood": [
+    "action",
+    "sci-fi",
+    "dystopia",
+    "apocalyptic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "alien",
+      "conf": 0.9
+    },
+    {
+      "name": "invasion",
+      "conf": 0.85
+    },
+    {
+      "name": "cityscape",
+      "conf": 0.8
+    },
+    {
+      "name": "explosion",
+      "conf": 0.75
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.2,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and apocalyptic themes.",
+  "description": "Movie poster shows a cityscape with alien spacecraft and explosions, featuring the title \"Battle: New York Day II\" and cast credits."
+}

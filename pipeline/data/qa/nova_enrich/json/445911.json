@@ -1,0 +1,47 @@
+{
+  "title_text": "THE CHAINSAW SALESMAN SHOW",
+  "credits_text": "DIRECTED BY JIMMYO BURRIL STARRING APRIL MONIQUE BURRIL \"TWISTED, WICKED, GORY AND INGENIOUS.\" HORROR NEWS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TROMA PRESENTS A HERSCHELL GORDON LEWIS PRESENTATION SEASON ONE 11 PACKED-UP EPISODES",
+  "mood": [
+    "camp",
+    "horror",
+    "satirical",
+    "grotesque",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "chainsaw",
+      "conf": 0.95
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.95,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and suggestive imagery.",
+  "description": "A poster features a woman holding a chainsaw with blood splatters, promoting a horror comedy series titled \"The Chainsaw Salesman Show.\""
+}

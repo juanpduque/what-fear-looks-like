@@ -1,0 +1,50 @@
+{
+  "title_text": "Night of the Living Dead! Origins",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "when there is no more room in hell...",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "gritty",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and gore.",
+  "description": "A poster features a zombie-like figure against a red cityscape with bold text reading 'Night of the Living Dead! Origins.'"
+}

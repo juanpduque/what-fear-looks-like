@@ -1,0 +1,42 @@
+{
+  "title_text": "Stay",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Out Now on YouTube",
+  "mood": [
+    "horrific",
+    "disturbing",
+    "gothic",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "monster",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.75,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore.",
+  "description": "A disturbing poster featuring a grotesque, bloodied face with the text 'Stay' and 'Out Now on YouTube.'"
+}

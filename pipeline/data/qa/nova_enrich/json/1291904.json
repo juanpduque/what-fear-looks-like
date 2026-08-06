@@ -1,0 +1,44 @@
+{
+  "title_text": "MOUSE OF HORRORS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Welcome to the Sideshow",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the weapon and eerie atmosphere.",
+  "description": "A masked figure holds a knife in front of a dark carnival backdrop with a Ferris wheel and Christmas lights."
+}

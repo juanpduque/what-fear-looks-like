@@ -1,0 +1,46 @@
+{
+  "title_text": "BAD KARMA",
+  "credits_text": "THEY'LL SUCK YOUR CORPSE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gritty",
+    "violent",
+    "dark",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore with a monstrous skull imagery.",
+  "description": "A poster featuring a monstrous skull with sharp teeth and blood, with bold green text reading 'BAD KARMA' and a tagline above."
+}

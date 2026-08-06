@@ -1,0 +1,40 @@
+{
+  "title_text": "SILENT HILL REQUIEM",
+  "credits_text": "OLWEN DAVIES SAM SWAISBURY RAPETH MORGAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "17.11.17 SOME PARTS OF THIS FILM MAYBE CONSIDERED VIOLENT OR HAUEL",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Poster hints at potential violence; no explicit content shown.",
+  "description": "A black-and-white poster features a woman with a serious expression, with the title 'SILENT HILL REQUIEM' and release date below."
+}

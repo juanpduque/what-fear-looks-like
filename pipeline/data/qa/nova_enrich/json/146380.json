@@ -1,0 +1,46 @@
+{
+  "title_text": "THE LEGEND OF BLOODY JACK",
+  "credits_text": "BASED ON THE TERRIFYING TRUE EVENTS BEHIND AMERICA'S SCARIEST CAMPFIRE TALE.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "UNRATED DIRECTOR'S CUT",
+  "mood": [
+    "horror",
+    "terror",
+    "forest",
+    "campfire",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "axe",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.5,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and horror elements.",
+  "description": "A man stands with an axe over a distressed figure in a fiery forest, suggesting a horror theme based on a campfire tale."
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "HOOD VAMPS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gothic",
+    "camp",
+    "supernatural",
+    "urban"
+  ],
+  "fear_labels": [
+    {
+      "name": "vampire",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "blood",
+      "conf": 0.5
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.3,
+  "blood_gore": 0.4,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror themes and occult imagery.",
+  "description": "A poster featuring an angry woman with fangs against a cityscape under a full moon with bats, titled 'HOOD VAMPS.'"
+}

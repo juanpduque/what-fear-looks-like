@@ -1,0 +1,44 @@
+{
+  "title_text": "皇素結子",
+  "credits_text": "第8雑 安布員像",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "就はビデン 小女を影える大小の女性を影える、大小の女性を影える。",
+  "mood": [
+    "fantasy",
+    "action",
+    "supernatural",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "fantasy",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and supernatural themes.",
+  "description": "A vibrant poster features a central female figure surrounded by fantastical, ethereal beings in a dynamic, action-packed scene."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "Alakazah",
+  "credits_text": "",
+  "languages": [
+    "es"
+  ],
+  "other_text": "Una Serie de Dinah Morales",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "horror",
+    "family",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "cross",
+      "conf": 0.5
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and mild horror elements.",
+  "description": "A family stands together holding books against a dark, eerie background with bats and crosses, suggesting a supernatural horror theme."
+}

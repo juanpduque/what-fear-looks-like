@@ -1,0 +1,45 @@
+{
+  "title_text": "AL FILO DEL TERROR",
+  "credits_text": "FERNANDO ALMADA • LINA SANTOS WELTY BARRON • ROBERTO CABRERA • KARLA TAVERA LINA SANTOS",
+  "languages": [
+    "es"
+  ],
+  "other_text": "VIVENCIA AMERICANA",
+  "mood": [
+    "horror",
+    "thriller",
+    "suspense",
+    "psychological",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A man holds an axe in a tense scene surrounded by clowns and eerie figures, suggesting a horror thriller."
+}

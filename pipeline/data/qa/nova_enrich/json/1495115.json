@@ -1,0 +1,45 @@
+{
+  "title_text": "I KNOW WHAT YOU DID LAST CHRISTMAS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SOMEONE IS REMOVING THESE FRIENDS FROM THE NAUGHTY LIST... FOREVER",
+  "mood": [
+    "dread",
+    "suspense",
+    "thriller",
+    "holiday horror",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "text",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.2,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild suggestion of violence through the tagline and visual elements.",
+  "description": "A poster features three characters in front of a house with a shadowy figure holding a weapon, evoking a suspenseful holiday horror theme."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "화장지 전쟁",
+  "credits_text": "신동엽 지니기 전영미",
+  "languages": [
+    "ko"
+  ],
+  "other_text": "2000년, 한국의 소설화된 '전쟁'을 연출",
+  "mood": [
+    "gothic",
+    "mystery",
+    "haunting",
+    "dark",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a young boy with a serious expression against a dimly lit traditional house background, suggesting a gothic or psychological theme."
+}

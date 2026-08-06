@@ -1,0 +1,50 @@
+{
+  "title_text": "THE KILLING OF SATAN",
+  "credits_text": "starring RAMON REVILLA ELIZABETH OROPESA GEORGE ESTRÉGAN CHARLIE DAVAO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WHAT POWER SHOULD A MAN POSSESS TO CHALLENGE THE PRINCE OF DARKNESS?",
+  "mood": [
+    "gothic",
+    "horror",
+    "dramatic",
+    "intense",
+    "fantasy"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "devil",
+      "conf": 0.95
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "occult",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.4,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult themes and implied violence.",
+  "description": "A man battles a demonic figure and a woman in a dark, gothic setting, with dramatic artwork and intense mood."
+}

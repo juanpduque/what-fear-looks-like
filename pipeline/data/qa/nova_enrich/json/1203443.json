@@ -1,0 +1,38 @@
+{
+  "title_text": "THE MASKED MONSTER",
+  "credits_text": "A FILM BY SYEYOUNG PARK",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "other_text": "Locarno Film Festival PARDI DI DOMANI OFFICIAL SELECTION",
+  "mood": [
+    "mysterious",
+    "intense",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A black-and-white poster features a close-up of a masked figure with a haunting expression, promoting the film 'The Masked Monster' by Syeyoung Park."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "KATDAN",
+  "credits_text": "STRANGE STORIES OF JAPANESE GHOSTS\n\na film by Yves Montmayeur\nBeall Productions 2023",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "supernatural",
+    "eerie",
+    "haunting",
+    "mysterious",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild suggestions of violence and occult themes.",
+  "description": "Poster features a ghostly figure with white hair and dramatic poses, surrounded by close-ups of various characters' faces, indicating a supernatural horror theme."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "It Knows You're Alone",
+  "credits_text": "A Chris Alexander Film",
+  "languages": [
+    "en"
+  ],
+  "other_text": "It's awake. It's hungry.",
+  "mood": [
+    "eerie",
+    "psychological",
+    "suspenseful",
+    "haunting",
+    "isolated"
+  ],
+  "fear_labels": [
+    {
+      "name": "isolation",
+      "conf": 0.9
+    },
+    {
+      "name": "psychological_threat",
+      "conf": 0.85
+    },
+    {
+      "name": "text_heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "sexual"
+  ],
+  "moderation_notes": "Contains mild sexual undertones through pose and attire.",
+  "description": "A woman lies partially clothed with hands gently touching her face, set against a dark background with dramatic lighting and text overlay."
+}

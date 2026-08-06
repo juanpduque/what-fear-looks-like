@@ -1,0 +1,44 @@
+{
+  "title_text": "SILENT DEATH",
+  "credits_text": "STARRING FREDA JAMES * DAVID ARTS * REIMA Production R RESTRICTED DOYLE TAYLOR * CHRIS CHRISTIAN Executive Producers JOE SOLLAZZO Director VAUGHN CHRISTION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "LAST \"ONE DOWN\" TWO TO GO\" DAY EXTERMINATOR \"FORCE FIVE\" NEWARK Market 3-5030 PARAMOUNT TOM'W A REIMA Production Copyright 1983 FC TOTAL COLOR",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and horror themes.",
+  "description": "A vintage movie poster features a skull-wearing figure holding a large axe, facing a man, with bold title \"SILENT DEATH\" and additional film credits."
+}

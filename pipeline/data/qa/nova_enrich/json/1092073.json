@@ -1,0 +1,46 @@
+{
+  "title_text": "THE HAUNTING AT SAINT JOSEPH'S",
+  "credits_text": "SOME THINGS SHOULD STAY BURIED",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "terrifying",
+    "haunting",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "haunting",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and gore, suggesting intense horror themes.",
+  "description": "A close-up of a terrified, blood-streaked face with a haunting expression, promoting the film 'The Haunting at Saint Joseph's.'"
+}

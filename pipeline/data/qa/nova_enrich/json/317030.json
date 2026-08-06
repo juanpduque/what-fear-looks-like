@@ -1,0 +1,40 @@
+{
+  "title_text": "DEADLY SCAVENGERS",
+  "credits_text": "STREET ENTERTAINMENT Present STARRING JEAN ELLA, EVA O'DESNA, HEATHER BRANCH, MARK SHADY, MELANIE MCGUIRE, JOHN AGEE, JIMMY AGEE, RANDY SULLIVAN, RICKY FORD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "VISIT STREET ENTERTAINMENT",
+  "mood": [
+    "horror",
+    "sci-fi",
+    "camp",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.7,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild horror elements and implied violence.",
+  "description": "The poster features a monstrous creature with large eyes and sharp teeth, alongside a woman and several insects, promoting the sci-fi horror film \"Deadly Scavengers\"."
+}

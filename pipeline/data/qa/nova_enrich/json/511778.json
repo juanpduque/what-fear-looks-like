@@ -1,0 +1,50 @@
+{
+  "title_text": "SHED OF THE DEAD",
+  "credits_text": "KANE HODDER BILL MOSELEY MICHAEL BERRYMAN BRIAN BLESSED EMILY BOOTH DREW COLLINGHAM FILM 7DM STUDIOS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NONE SHALL PASS",
+  "mood": [
+    "horror",
+    "zombie",
+    "apocalyptic",
+    "intense",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.95
+    },
+    {
+      "name": "zombie",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.75
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.65
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.75,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore, suitable for mature audiences.",
+  "description": "A weathered shed stands prominently with a sign reading 'None Shall Pass,' surrounded by zombies and flames, indicating a horror theme."
+}

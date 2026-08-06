@@ -1,0 +1,45 @@
+{
+  "title_text": "RUMPELSTILTSKIN",
+  "credits_text": "ONE NAME, ONE CURSE.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "fantasy",
+    "dark",
+    "mythic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "text",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and a monstrous creature; no explicit violence or gore.",
+  "description": "A dark, monstrous creature with sharp teeth and claws is shown holding a weapon against a gothic background, with the title 'Rumpelstiltskin' prominently displayed."
+}

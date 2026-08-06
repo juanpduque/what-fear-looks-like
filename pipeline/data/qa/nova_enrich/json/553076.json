@@ -1,0 +1,44 @@
+{
+  "title_text": "PARANORMAL HIGHWAY",
+  "credits_text": "THE END OF THE ROAD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SCHOOL BUS",
+  "mood": [
+    "dread",
+    "suspense",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "vehicle",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.5,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and a possible supernatural entity.",
+  "description": "A school bus on a dark road with eerie lighting, featuring a ghostly hand and the title 'Paranormal Highway: The End of the Road.'"
+}

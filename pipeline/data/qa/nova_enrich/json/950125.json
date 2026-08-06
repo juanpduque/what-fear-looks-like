@@ -1,0 +1,38 @@
+{
+  "title_text": "VENUS",
+  "credits_text": "UNA PELÍCULA DE JAUME BALAGUERO ESTER EXPÓSITO",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "THE FEAR COLLECTION ÁLEX DE LA IGLESIA PRESENTA PRÓXIMAMENTE EN CINES",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.85,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic blood and suggestive imagery.",
+  "description": "A woman with bloodstained clothing stands against a dark background, with intense, eerie lighting."
+}

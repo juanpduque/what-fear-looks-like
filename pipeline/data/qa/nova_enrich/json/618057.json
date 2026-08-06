@@ -1,0 +1,46 @@
+{
+  "title_text": "JESSIE'S SUPER NORMAL REGULAR AVERAGE DAY",
+  "credits_text": "MOSTLY HARMLESS PICTURES / JESSIE'S SUPER NORMAL REGULAR AVERAGE DAY / ELLIE CHURCH, ALISON WILLIE, AUDREY TONKLA, HAYDEN ROBERTS, JORDAN HOFFMAN, JESSIE CHURCH, NICKY HAYDEN, ROBERT ALVAREZ / WRITTEN AND DIRECTED BY KRISTEN WILLIAMS / PRODUCED BY ELLIE CHURCH, KRISTEN WILLIAMS, NICKY HAYDEN, JORDAN HOFFMAN, JESSIE CHURCH, ALISON WILLIE, AUDREY TONKLA, HAYDEN ROBERTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "1. FIND GOD 2. KILL GOD 3. PARTY!",
+  "mood": [
+    "dark humor",
+    "surreal",
+    "camp",
+    "violent",
+    "absurd"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "Contains implied violence and mild sexual themes.",
+  "description": "Poster features five characters in a surreal setting with bold text and chaotic imagery, including a chainsaw and masked figures."
+}

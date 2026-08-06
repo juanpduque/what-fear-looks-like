@@ -1,0 +1,49 @@
+{
+  "title_text": "HOUSE OF THE GORGON",
+  "credits_text": "A COONEY FILM PRODUCTION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "From across the centuries... a curse that never ends....IT WILL PETRIFY YOU!",
+  "mood": [
+    "gothic",
+    "horror",
+    "dramatic",
+    "mysterious",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "gothic",
+      "conf": 0.85
+    },
+    {
+      "name": "curse",
+      "conf": 0.75
+    },
+    {
+      "name": "petrification",
+      "conf": 0.7
+    },
+    {
+      "name": "haunting",
+      "conf": 0.65
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and eerie imagery, but no explicit violence or sexual content.",
+  "description": "A vintage-style poster features five characters with a gothic castle in the background under a full moon, promoting a horror film titled 'House of the Gorgon.'"
+}

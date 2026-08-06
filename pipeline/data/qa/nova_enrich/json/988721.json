@@ -1,0 +1,39 @@
+{
+  "title_text": "여러원",
+  "credits_text": "A FILM BY SONG WONCHAN PARK CHOONG-GWAN NOAH OH HYEUN HA SAN MIJ KAMUNII KIM GWANG-SEOP",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "eerie",
+    "haunting",
+    "mysterious",
+    "gothic",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, eerie poster features a shadowy figure walking down a long corridor with five faces at the bottom and Korean text at the top."
+}

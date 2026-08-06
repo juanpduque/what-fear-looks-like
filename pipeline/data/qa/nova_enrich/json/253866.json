@@ -1,0 +1,45 @@
+{
+  "title_text": "HYSTERICAL PSYCHO",
+  "credits_text": "A DAN FOGLER FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PSYCHOS HAVE ALL THE FUN. PULL MY FINGER",
+  "mood": [
+    "camp",
+    "horror",
+    "comedy",
+    "supernatural",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and dark humor; no explicit gore or nudity.",
+  "description": "Poster shows hands making gestures with a shovel and text, set against a moonlit forest background with a distant house."
+}

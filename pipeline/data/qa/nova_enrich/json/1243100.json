@@ -1,0 +1,41 @@
+{
+  "title_text": "DALEFACE",
+  "credits_text": "DAVE JAMESON JASON HAYES MAX SOLIZ A SHORT FILM BY MATT GREEN AND MATT LOMO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "GOT ANIMAL ENTERTAINMENT PRESENTS",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dark",
+    "mysterious",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "smoke",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A dark, smoky silhouette of a man in a hat is central to the poster, with bold typography for the title and credits."
+}

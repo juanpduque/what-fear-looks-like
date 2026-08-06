@@ -1,0 +1,39 @@
+{
+  "title_text": "PSYCHO",
+  "credits_text": "STORM CHASER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "mysterious",
+    "stormy",
+    "suspenseful",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "storm",
+      "conf": 0.9
+    },
+    {
+      "name": "rain",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man in a yellow hooded jacket stands in heavy rain, with the title 'PSYCHO' and subtitle 'STORM CHASER' displayed prominently."
+}

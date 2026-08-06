@@ -1,0 +1,39 @@
+{
+  "title_text": "DON'T LOOK UP",
+  "credits_text": "A MURDER OF KROW PRODUCTION • CELESTE MARTINEZ, DREA HOFFMAN \"DON'T LOOK UP\" • NANCE NICKELS, BRIAN AUGUSTINE, WES CAFFER, JEREMY KERR • RITOKO IWAMOTO, JOYKO REY DAO, CATHERINE HYEN KIM, RITOKO IWAMOTO • A MURDER OF KROW PRODUCTION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ALWAYS KEEP YOUR EYES OPEN",
+  "mood": [
+    "dread",
+    "suspense",
+    "psychological",
+    "mystery",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark poster features a woman looking upwards with a train in the background, promoting the thriller film \"Don't Look Up.\""
+}

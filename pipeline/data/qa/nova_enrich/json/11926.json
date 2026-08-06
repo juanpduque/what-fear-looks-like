@@ -1,0 +1,46 @@
+{
+  "title_text": "THE VANGUARD",
+  "credits_text": "\"ONE OF THE MOST REFRESHING ZOMBIE FILMS TO SHOW ITS FACE IN A LONG WHILE\" - READER'S CHOICE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IN THE WAR BETWEEN MEN AND THE SAVAGES, HE WILL DECIDE WHO SURVIVES",
+  "mood": [
+    "dread",
+    "gritty",
+    "survival",
+    "post-apocalyptic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "zombie",
+      "conf": 0.6
+    },
+    {
+      "name": "war",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.6,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and post-apocalyptic themes.",
+  "description": "A man stands with an axe in a desolate landscape, with other figures and destroyed vehicles in the background under a stormy sky."
+}

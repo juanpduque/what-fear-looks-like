@@ -1,0 +1,42 @@
+{
+  "title_text": "LA ISLA DE LAS MUÑECAS",
+  "credits_text": "JAVIER PONCE ELENA DEL RIO ALEJANDRO TOMASSI DAYANA VELVER ISAURA ESPINOZA SERGIO REYNOSO GERARDO MURGUIA PATRICIO JOSÉ KAREN MARTI ASTI RIVAS",
+  "languages": [
+    "es"
+  ],
+  "other_text": "LE GRAND FILMS PRESENTA",
+  "mood": [
+    "eerie",
+    "haunting",
+    "gothic",
+    "psychological",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains disturbing imagery and themes of horror.",
+  "description": "A poster features a ghostly child with dark hair and pale skin, set against a shadowy forest background, evoking a haunting and eerie atmosphere."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "the curse",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.7,
+  "blood_gore": 0.4,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "blood"
+  ],
+  "moderation_notes": "Contains mild blood imagery and a monstrous creature.",
+  "description": "A poster features a pale person with red lips and a wolf-like creature, set against a dark background with the title 'the curse' in red."
+}

@@ -1,0 +1,31 @@
+{
+  "primary_cloud": "pixtral",
+  "primary_mean_hard12": 0.8009,
+  "recipe": "full-frame poster, no crop, OCR/extract-all-text prompt",
+  "best_oss_hard": "gemma4-31b-hard",
+  "reason": "mayor mean_overlap en hard12 entre cloud (0.8009)",
+  "do_not": [
+    "aggressive text crop",
+    "PP-OCRv6 as primary",
+    "homolog as main lever"
+  ],
+  "hard_n": 9,
+  "hard_ids": [
+    10283,
+    26921,
+    28265,
+    233194,
+    286452,
+    653537,
+    1405670,
+    1483743,
+    1578643
+  ],
+  "title_overrides": {
+    "77399": "Blood Suckers",
+    "940187": "INQUISITION"
+  },
+  "exclude_ids": [
+    1015482
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "SLASHER",
+  "credits_text": "A FRANK MONTAG FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "violent",
+    "horror",
+    "intense",
+    "gory",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "chainsaw",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.5,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A woman holds a chainsaw with a skull-like figure in the background, covered in blood."
+}

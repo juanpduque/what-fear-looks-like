@@ -1,0 +1,38 @@
+{
+  "title_text": "鬼身",
+  "credits_text": "大野好美作画・松田健次原作",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "死を待つ Vol.3「アシタに消えたアタシたち」",
+  "mood": [
+    "gothic",
+    "haunting",
+    "mystery",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring a dimly lit path with shadowy figures and Japanese text, suggesting a gothic horror theme."
+}

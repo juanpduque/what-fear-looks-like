@@ -1,0 +1,48 @@
+{
+  "title_text": "HELL'S GATE",
+  "credits_text": "WELCOME TO HELL UNCUT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"Über Jahre schlägt er mit von Freitag, der 13., Nightmare on Elm Street und Halloween!\"",
+  "mood": [
+    "dread",
+    "gothic",
+    "terror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A horror poster featuring a monstrous figure, a bloody chainsaw, and a dark, eerie setting with a man facing danger."
+}

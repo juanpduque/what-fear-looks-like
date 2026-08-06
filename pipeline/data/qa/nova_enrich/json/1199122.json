@@ -1,0 +1,41 @@
+{
+  "title_text": "怪しき話",
+  "credits_text": "第二夜 仮題",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "ほどうにあった",
+  "mood": [
+    "eerie",
+    "haunting",
+    "mysterious",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and eerie imagery.",
+  "description": "A close-up of a ghostly face with dark eyes and a hollow expression against a dark background, with Japanese text overlay."
+}

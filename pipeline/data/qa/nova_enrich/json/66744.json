@@ -1,0 +1,46 @@
+{
+  "title_text": "GARO",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "<SPECIAL> ~BEAST OF THE DEMON NIGHT~",
+  "mood": [
+    "gothic",
+    "fantasy",
+    "action",
+    "dramatic",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and supernatural themes.",
+  "description": "A dramatic poster featuring characters in elaborate costumes with a central figure holding a sword, surrounded by mythical creatures and Japanese text."
+}

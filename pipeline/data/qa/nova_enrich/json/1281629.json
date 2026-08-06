@@ -1,0 +1,40 @@
+{
+  "title_text": "TROUBLE FOLLOWS",
+  "credits_text": "A FILM BY MICHAEL HORN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DIE",
+  "mood": [
+    "dread",
+    "suspense",
+    "thriller",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 1.0
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a knife, suggesting potential for graphic content.",
+  "description": "A dark, eerie poster shows a shadowy figure approaching a house with a large knife in the foreground."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "ZORR",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "post-apocalyptic",
+    "intense",
+    "survival",
+    "chaotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.4
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.3
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and post-apocalyptic themes.",
+  "description": "A group of survivors fight through a chaotic city overrun with zombies, wielding weapons in a desperate struggle for survival."
+}

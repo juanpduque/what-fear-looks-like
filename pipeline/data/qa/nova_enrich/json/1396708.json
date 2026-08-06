@@ -1,0 +1,41 @@
+{
+  "title_text": "最現心間影話 クリブスター",
+  "credits_text": "by クリブスター",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "影像の面はない",
+  "mood": [
+    "dread",
+    "suspense",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild violent imagery and blood, suitable for mature audiences.",
+  "description": "A collage poster featuring intense faces, a map, and eerie scenes, promoting a psychological thriller film."
+}

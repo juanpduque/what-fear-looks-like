@@ -1,0 +1,46 @@
+{
+  "title_text": "METAMORPHOSIS",
+  "credits_text": "UNS MONSTER IN DIR",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and monstrous imagery.",
+  "description": "A poster shows a man with a monstrous, tentacled creature and a woman amidst blood splatters, evoking a dark, surreal horror theme."
+}

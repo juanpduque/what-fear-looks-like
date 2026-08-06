@@ -1,0 +1,43 @@
+{
+  "title_text": "EL TEATRO DEL HORROR",
+  "credits_text": "RAFAEL SANCHEZ NAVARRO, ADALBERTO MARTINEZ, MARIA REBECA, ANDRES BONFIGLIO, GEORGE SAMANO, PEDRO GALINDO III",
+  "languages": [
+    "es"
+  ],
+  "other_text": "Una Produccion de SANTIAGO GALINDO Y EDITORES GALINDO P. S.A. DE C.V., Un Programa de PEDRO GALINDO",
+  "mood": [
+    "gothic",
+    "horror",
+    "dramatic",
+    "intense",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring a central, eerie figure surrounded by characters, with fiery red accents and dramatic expressions, promoting a horror-themed production."
+}

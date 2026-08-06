@@ -1,0 +1,47 @@
+{
+  "title_text": "GRAND GUIGNOL MADNESS",
+  "credits_text": "Show your fear\n\nFRANCESCO ROSI\n\nDAVIDE PESCA\n\nMARIO MERLI\n\nGIORGIO CAPITANIO\n\nPAOLO SAVI\n\nROBERTO CAPUTO\n\nFRANCESCO ROSI\n\nMARIO MERLI\n\nGIORGIO CAPITANIO\n\nPAOLO SAVI\n\nROBERTO CAPUTO\n\nFRANCESCO ROSI\n\nMARIO MERLI\n\nGIORGIO CAPITANIO\n\nPAOLO SAVI\n\nROBERTO CAPUTO",
+  "languages": [
+    "en",
+    "it"
+  ],
+  "other_text": "Benvenuti al teatro... della sofferenza!",
+  "mood": [
+    "gothic",
+    "horror",
+    "camp",
+    "theatrical",
+    "grotesque"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and blood.",
+  "description": "A poster features a monstrous, skull-faced figure in a theatrical setting, with bold red text and dramatic curtains in the background."
+}

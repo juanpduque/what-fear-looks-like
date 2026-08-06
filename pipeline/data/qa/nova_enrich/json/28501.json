@@ -1,0 +1,45 @@
+{
+  "title_text": "THE PIT AND THE PENDULUM",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "horror",
+    "dark",
+    "macabre"
+  ],
+  "fear_labels": [
+    {
+      "name": "pendulum",
+      "conf": 0.95
+    },
+    {
+      "name": "torture",
+      "conf": 0.85
+    },
+    {
+      "name": "gothic",
+      "conf": 0.8
+    },
+    {
+      "name": "dark",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains graphic depictions of torture and violence.",
+  "description": "A vintage horror poster shows a woman in period clothing beside a large pendulum above a man, with dark, gothic tones and dramatic lighting."
+}

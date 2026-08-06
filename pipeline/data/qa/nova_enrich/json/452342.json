@@ -1,0 +1,43 @@
+{
+  "title_text": "سيدار خوان",
+  "credits_text": "مسرح للممتازن معزي العبادي و معزي علي و معزي محمد و معزي محمد و معزي محمد",
+  "languages": [
+    "ar"
+  ],
+  "other_text": "معزي العبادي و معزي علي و معزي محمد و معزي محمد و معزي محمد",
+  "mood": [
+    "gothic",
+    "dread",
+    "psychological",
+    "haunting",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a close-up of a man's face with a shadowy figure in the background, accompanied by Arabic text and several smaller faces arranged below."
+}

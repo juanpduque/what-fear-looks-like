@@ -1,0 +1,45 @@
+{
+  "title_text": "HOUSE ON HAUNTED HILL",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Mild suggestive imagery and implied occult themes.",
+  "description": "A poster shows a group of people under a large, eerie handprint with the title 'House on Haunted Hill' prominently displayed."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "SHAKMA!",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "terrifying",
+    "intense",
+    "violent",
+    "horror",
+    "mythic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "violence",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.1,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense and violent imagery, suitable for mature audiences.",
+  "description": "A close-up of a fierce, monstrous gorilla with sharp teeth and glowing red eyes, roaring aggressively against a dark background."
+}

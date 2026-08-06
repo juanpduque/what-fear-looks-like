@@ -1,0 +1,50 @@
+{
+  "title_text": "TREASURE CHEST OF HORRORS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FOUR NEVER BEFORE SEEN HORROR FILMS GUARANTEED TO RATTLE YOUR BONES.",
+  "mood": [
+    "dread",
+    "gothic",
+    "terrifying",
+    "haunting",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "skeleton",
+      "conf": 0.7
+    },
+    {
+      "name": "gate",
+      "conf": 0.6
+    },
+    {
+      "name": "forest",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 0.6,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore.",
+  "description": "A poster shows a dark, eerie gate with a treasure chest and a skeleton, surrounded by blood and horror elements."
+}

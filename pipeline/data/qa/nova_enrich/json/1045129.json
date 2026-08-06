@@ -1,0 +1,45 @@
+{
+  "title_text": "Damned Supper",
+  "credits_text": "by Arid Hansen",
+  "languages": [
+    "en"
+  ],
+  "other_text": "She thought she'd be dining with romance little did she know that...a Hell of an Invitation",
+  "mood": [
+    "gothic",
+    "eerie",
+    "mysterious",
+    "haunting",
+    "romantic"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "candle",
+      "conf": 0.7
+    },
+    {
+      "name": "mirror",
+      "conf": 0.8
+    },
+    {
+      "name": "gothic",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and eerie atmosphere.",
+  "description": "A woman in a red dress stands near a candlelit table, gazing into a mirror that reflects a shadowy figure."
+}

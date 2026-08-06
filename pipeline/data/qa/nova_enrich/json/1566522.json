@@ -1,0 +1,44 @@
+{
+  "title_text": "THE CREATURE",
+  "credits_text": "A SERBIAN DIGIROLOMO FILM SEBA PRODUCTIONS PRESENTS JACK HOGAN JAMES FUSCO ANNA MARTINENKO SEBASTIAN DIGIROLOMO ALEX NACHMAN ARIEL NAGELMAN PAOLO PECE JESSICA SIBBIANI DIGIROLOMO ROMANCEK IGOR MARC CADOV SERGIAN DIGIROLOMO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IT WALKS IT HIDES IT HAUNTS",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied horror elements and mild gore suggestions.",
+  "description": "A dark poster features a monstrous hand gripping a door frame with a haunting face partially visible behind it, overlaid with bold red text."
+}

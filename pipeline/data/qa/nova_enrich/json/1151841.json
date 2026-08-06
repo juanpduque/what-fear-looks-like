@@ -1,0 +1,50 @@
+{
+  "title_text": "GÄR",
+  "credits_text": "Yapımcı: Karem HEZER, Yazar: Aziz ÖZÜYSAL",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "HER CANLI CENNETİ ARZU EDER AMA BİR ENGEL SİZİ ARAŞTA BIRAľIRSAľ! HEZER YAPİN",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "forest",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and blood-like elements.",
+  "description": "A dark, eerie poster features a ghostly figure in a forest with outstretched hand and bold red text reading 'GÄR'."
+}

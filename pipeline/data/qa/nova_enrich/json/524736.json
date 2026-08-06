@@ -1,0 +1,48 @@
+{
+  "title_text": "KUNTILANAK",
+  "credits_text": "LEBARAN 2018",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SING JAT SING YELAMA",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "haunting",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "occult",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult",
+    "blood",
+    "ghost"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and occult themes.",
+  "description": "A woman faces a supernatural entity in a dark, ornate mirror with bloodstains, set against a gothic background."
+}

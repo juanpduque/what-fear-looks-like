@@ -1,0 +1,35 @@
+{
+  "title_text": "Guns of El Chupacabra",
+  "credits_text": "One Space Sheriff, One Blood Thirsty Monster, And One Million Bullets\nScott Shaw, Julie Strain, Kevin Eastman, Robert Z'Dar, Joe Estevez, Conrad Brooks",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "sci-fi",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts a man holding a gun, suggesting potential violence.",
+  "description": "A man in sunglasses holds a gun against a desert backdrop. The title and credits are displayed prominently."
+}

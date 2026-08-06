@@ -1,0 +1,18 @@
+model,n,n_ok,ok_rate,mean_overlap,std_overlap,overlap_ci95_lo,overlap_ci95_hi,mean_fuzzy,title_hit_rate,mean_chars,mean_latency_s,cost_note
+gpt4o,100,100,1.0,0.9371,0.2317,0.8883,0.9788,0.5973,0.95,101.9,1.464,~$0.01–0.05/img (OpenAI gpt-4o vision detail=high; ~$2.50/1M in + $10/1M out; rough)
+gemini-flash,100,100,1.0,0.9354,0.2354,0.8887,0.9788,0.5868,0.93,152.7,2.541,"~$0.0005–0.002/img (Vertex gemini-2.5-flash vision, thinkingBudget=0; rough)"
+nova-pro,100,100,1.0,0.8753,0.2953,0.8153,0.9299,0.581,0.88,181.1,1.39,"~$0.001–0.01/img (Bedrock Nova Pro vision, rough; first-party credits)"
+nova-lite,100,100,1.0,0.8951,0.279,0.8404,0.9451,0.5769,0.91,266.8,1.389,"~$0.0001–0.001/img (Bedrock Nova Lite vision, rough; first-party credits)"
+nova-2-lite,100,100,1.0,0.9157,0.2663,0.8625,0.9634,0.5931,0.94,185.1,2.096,"~$0.0001–0.001/img (Bedrock Nova 2 Lite vision, rough; first-party credits)"
+pixtral,100,100,1.0,0.9387,0.2291,0.89,0.9788,0.6045,0.95,110.6,29.398,"~$0.001–0.01/img (Bedrock Pixtral Large vision, rough)"
+llama4-scout,100,100,1.0,0.9308,0.2468,0.8833,0.9775,0.611,0.95,89.7,0.805,"~$0.0005–0.005/img (Bedrock Llama 4 Scout vision, rough)"
+qwen,100,100,1.0,0.9045,0.277,0.8492,0.952,0.7301,0.93,90.5,2.676,HF self-host on GPU EC2 (g4dn time)
+google,100,100,1.0,0.8886,0.2786,0.8335,0.9373,0.5962,0.84,88.6,0.342,"~$0.0015/img (Vision TEXT_DETECTION, rough)"
+qianfan,100,0,0.0,0.0,0.0,0.0,0.0,,,,,HF self-host on GPU EC2 (g4dn time; larger VRAM risk)
+paddle,100,100,1.0,0.7694,0.3842,0.6907,0.8362,0.6057,0.8,198.8,57.253,HF self-host on GPU EC2 (g4dn time)
+rekognition,100,100,1.0,0.8487,0.3229,0.7772,0.9067,0.5777,0.8,100.4,0.707,"~$0.0015/img (DetectText, rough)"
+ppocr,100,100,1.0,0.5859,0.4403,0.5027,0.6663,0.5719,0.62,47.4,2.206,local CPU/self-host (EC2 time if remote)
+deepseek,100,100,1.0,0.8065,0.3496,0.7377,0.8744,0.5841,0.81,141.0,3.061,HF self-host on GPU EC2 (g4dn time)
+got,100,0,0.0,0.0,0.0,0.0,0.0,,,,,HF self-host on GPU EC2 (g4dn time)
+easyocr,100,99,0.99,0.5068,0.4339,0.4141,0.5918,0.5337,0.5253,54.1,0.0,cached corpus OCR (no incremental API cost)
+florence,100,100,1.0,0.3736,0.43,0.2979,0.4566,0.6115,0.85,70.3,2.594,local/self-host (EC2 or laptop GPU/MPS time)

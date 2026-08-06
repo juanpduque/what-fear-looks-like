@@ -1,0 +1,45 @@
+{
+  "title_text": "MORBID Stories",
+  "credits_text": "AVAIL ENTERTAINMENT presents",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE END OF THE WORLD HAS A NEW HORRIFIC BEGINNING",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild violent imagery and occult themes.",
+  "description": "A poster featuring a distressed woman with ghostly figures and text reading 'MORBID Stories' and 'The end of the world has a new horrific beginning.'"
+}

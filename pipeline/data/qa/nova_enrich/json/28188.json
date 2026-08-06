@@ -1,0 +1,46 @@
+{
+  "title_text": "SWAMP ZOMBIES",
+  "credits_text": "Brian Heefron, Jasmin St. Claire, Dan Severn, Pamela Sutch",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Raised from the dead... Engineered to kill... ...Dying to eat.",
+  "mood": [
+    "horror",
+    "thriller",
+    "survival",
+    "gruesome",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "zombie",
+      "conf": 0.95
+    },
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.85
+    },
+    {
+      "name": "text",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and themes of violence and gore.",
+  "description": "A poster featuring a zombie's skull face emerging from swampy terrain with text and credits overlaying the image."
+}

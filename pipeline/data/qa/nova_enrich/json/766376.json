@@ -1,0 +1,40 @@
+{
+  "title_text": "",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ZOOM.MOV The leaked call you weren't supposed to see.",
+  "mood": [
+    "tense",
+    "suspenseful",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "leak",
+      "conf": 0.9
+    },
+    {
+      "name": "privacy",
+      "conf": 0.85
+    },
+    {
+      "name": "surveillance",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "privacy",
+    "leak"
+  ],
+  "moderation_notes": "The poster references a leaked private call, which may be sensitive due to privacy concerns.",
+  "description": "A collage of faces from a video call with a highlighted folder labeled 'ZOOM.MOV' and a warning about a leaked call."
+}

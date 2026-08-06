@@ -1,0 +1,48 @@
+{
+  "title_text": "A PAIXÃO DOS MORTOS",
+  "credits_text": "Gisele Ferran, Elío Copini em UM curta de GISELE FERRAN COFFIN SOUZA",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "other_text": "OS MORTOS SÓ QUERIAM UMA BOA FARRA! ZOMBIES NAKED WORMS EATING WORMS GORE HORROR SLATTER THE SON OF THE DEAD",
+  "mood": [
+    "horror",
+    "camp",
+    "grotesque",
+    "violent",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    },
+    {
+      "name": "nudity",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "A horror poster featuring a distressed woman holding a severed limb, with a bloody hand and a doll in the background."
+}

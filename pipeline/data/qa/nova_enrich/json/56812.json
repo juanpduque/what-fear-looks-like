@@ -1,0 +1,41 @@
+{
+  "title_text": "THE LAST CIRCUS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dark",
+    "violent",
+    "surreal",
+    "gothic",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "circus",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features graphic weapon imagery and intense facial expressions suggesting potential violence.",
+  "description": "Movie poster shows a woman holding a gun, a clown with a menacing expression, and another clown in elaborate costume. The title 'The Last Circus' is prominently displayed at the top."
+}

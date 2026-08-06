@@ -1,0 +1,39 @@
+{
+  "title_text": "GRAVE TALES",
+  "credits_text": "FGS Productions",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Four horror stories told at the graveside in this portmanteau film",
+  "mood": [
+    "gothic",
+    "horror",
+    "macabre",
+    "camp",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "grave",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster features an elderly man in a graveyard with the title 'Grave Tales' and four smaller horror story thumbnails."
+}

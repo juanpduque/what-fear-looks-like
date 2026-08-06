@@ -1,0 +1,46 @@
+{
+  "title_text": "SEYLAN OYUNU",
+  "credits_text": "KARANLIKTAN KORKMAK MIYAZIR? \n\nTüzük Eşliç / Nezih Eşliç / İsmail Kıran / Murat İnançık \n\nÇEVREDE YAŞAN ÇOK ÇOK ÇOK ÇOK ÇOK ÇOK ÇOK ÇOK ÇOK ÇOK",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "dread",
+    "gothic",
+    "supernatural",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and horror imagery.",
+  "description": "A poster featuring a screaming face with bloodied hands, evoking horror and dread."
+}

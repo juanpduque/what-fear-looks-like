@@ -1,0 +1,41 @@
+{
+  "title_text": "心続ドキスメント",
+  "credits_text": "電脇しはならない 音続武間影!",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "DEEP RED",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and intense horror themes.",
+  "description": "A poster featuring a close-up of a terrified face with blood, overlaid with bold Japanese text and a smaller inset image of a person screaming behind a window."
+}

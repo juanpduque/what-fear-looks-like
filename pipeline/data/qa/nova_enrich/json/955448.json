@@ -1,0 +1,42 @@
+{
+  "title_text": "ATTACK OF THE GIANT MONSTERS",
+  "credits_text": "DIRECTED BY KEN TURNER EDITED BY BERNARD JOAQUIN COMPOSED BY LOUIS NORRIS MUSIC BY ANDREW MORROW VOICE ACTORS CARLOS VERGARA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WINNER 2016 OFFICIAL SELECTION SUNDANCE FILM FESTIVAL",
+  "mood": [
+    "gothic",
+    "surreal",
+    "camp",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A stylized black-and-white poster features a cityscape under a full moon with giant monsters and spooky elements."
+}

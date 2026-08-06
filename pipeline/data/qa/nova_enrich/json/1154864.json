@@ -1,0 +1,46 @@
+{
+  "title_text": "CURSED",
+  "credits_text": "DIRECTED BY CARLOS MARBÁN\nSENDIN FILMS AND RED OWL PRESENTS \"CURSED\"\nDANIELA CASAS, HAIZEA CARREÑEDO, NÓCAS CASAS, LAIA NÚÑEZ, ROXANA VISÁN\nPRODUCED BY CARLOS MARBÁN AND ISRAEL FRUTOS\nEXECUTIVE PRODUCER: CARLOS MARBÁN\nMUSIC BY: ADRIÁ ACKER, GUILLERMO HEREDERO, PEDRO CEDENILLA\nEFFECTS: ARÁN GASPÁR\nCINEMATOGRAPHER: CARLOS MARBÁN\nWRITTEN AND DIRECTED BY: CARLOS MARBÁN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SITGES BRIGADOON 2023\nSELECCIÓN OFICIAL HORROR FEST 2023\nTERROR en la Bahía Film Fest 2023",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "haunting",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and monstrous creatures.",
+  "description": "A young girl stands amidst zombies in a dark forest, her dress stained with blood, suggesting a horror theme."
+}

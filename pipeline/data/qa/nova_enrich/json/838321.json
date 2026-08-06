@@ -1,0 +1,36 @@
+{
+  "title_text": "BEDTIME NAVIGATION",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Hard Rock Cafe",
+  "mood": [
+    "intense",
+    "disturbing",
+    "psychological",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features a young person holding a gun, suggesting potential violence.",
+  "description": "A collage-style poster shows a young person holding a gun, with various scenes including a forest, a beach, and a person lying in bed."
+}

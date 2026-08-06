@@ -1,0 +1,42 @@
+{
+  "title_text": "KIKI MEETS THE VAMPIRES",
+  "credits_text": "starring in... a film by Joey Skidmore",
+  "languages": [
+    "en"
+  ],
+  "other_text": "LBE FOSSOYEURS",
+  "mood": [
+    "camp",
+    "erotic",
+    "horror",
+    "comedy",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains partial nudity and sexual themes.",
+  "description": "Poster features a group of people, including vampires, with bold red text and a playful, campy horror theme."
+}

@@ -1,0 +1,47 @@
+{
+  "title_text": "ESCAPE ROOM",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "suspenseful",
+    "claustrophobic",
+    "mysterious",
+    "anxious"
+  ],
+  "fear_labels": [
+    {
+      "name": "confinement",
+      "conf": 0.9
+    },
+    {
+      "name": "mechanical",
+      "conf": 0.8
+    },
+    {
+      "name": "panic",
+      "conf": 0.7
+    },
+    {
+      "name": "locked_door",
+      "conf": 0.85
+    },
+    {
+      "name": "industrial",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A woman kneels in front of a large, locked door in an industrial setting, with a tense and anxious atmosphere."
+}

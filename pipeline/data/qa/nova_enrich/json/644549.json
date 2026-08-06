@@ -1,0 +1,39 @@
+{
+  "title_text": "KIDS IN CARS",
+  "credits_text": "GETTING KILLED BY CREATURES\nan infiniti film",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Monday, October 28th\nProduced as a Part of The Short Film Project",
+  "mood": [
+    "dread",
+    "suspense",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests themes of violence and horror involving creatures.",
+  "description": "A black and white poster shows the backseat of a car with bold text reading 'KIDS IN CARS' and a tagline 'GETTING KILLED BY CREATURES.'"
+}

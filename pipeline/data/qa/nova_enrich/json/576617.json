@@ -1,0 +1,39 @@
+{
+  "title_text": "THE ISLAND OF GIANT INSECTS",
+  "credits_text": "©Yasutaka Fujimi, REDICE (AKITASHOTEN) / KyotoRetro Project",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "左軽左室",
+  "mood": [
+    "tense",
+    "action",
+    "survival",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.95,
+  "animal": 0.1,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A group of characters faces giant insects on an island, with intense expressions and a dramatic background."
+}

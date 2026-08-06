@@ -1,0 +1,43 @@
+{
+  "title_text": "TREAT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "spooky",
+    "halloween",
+    "eerie",
+    "mysterious",
+    "intimidating"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "skull",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.65
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, eerie poster featuring a menacing, stylized face with glowing eyes and jagged teeth, accompanied by the word 'TREAT' in bold letters."
+}

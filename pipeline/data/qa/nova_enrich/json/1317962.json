@@ -1,0 +1,40 @@
+{
+  "title_text": "كتة وارياعيات",
+  "credits_text": "حسن فوزي متجروه علاء الارمونة تيبالتاجز",
+  "languages": [
+    "ar"
+  ],
+  "other_text": "الجزء الثاني مسرح مسماعي الجوهري مسماعي الحولي مسماعي المدافعي مسماعي المدافعي مسماعي المدافعي مسماعي المدافعي",
+  "mood": [
+    "thriller",
+    "suspense",
+    "psychological",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "sexual"
+  ],
+  "moderation_notes": "Mild sexual suggestiveness in pose and attire.",
+  "description": "Movie poster features intense facial expressions and dramatic poses of four characters against a dark background with bold Arabic text."
+}

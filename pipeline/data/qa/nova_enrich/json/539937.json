@@ -1,0 +1,44 @@
+{
+  "title_text": "THE NEITHER HORROR COLLECTION",
+  "credits_text": "FULCO LORENZO & MARC VAN UCHELEN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BLOODY MARY",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.5,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore.",
+  "description": "A dark poster features a grotesque, multi-tentacled creature with blood and a skull-like object, evoking horror and dread."
+}

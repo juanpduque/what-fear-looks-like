@@ -1,0 +1,46 @@
+{
+  "title_text": "ÂU LẠ XÁC SÔNG",
+  "credits_text": "",
+  "languages": [
+    "vi"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "apocalyptic",
+    "survival",
+    "chaotic",
+    "desperate"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.95
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A group of terrified people flee through a burning field, surrounded by chaos and flames, in a post-apocalyptic setting."
+}

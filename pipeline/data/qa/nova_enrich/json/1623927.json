@@ -1,0 +1,42 @@
+{
+  "title_text": "GRANNY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IMMORTAL DANGER",
+  "mood": [
+    "gothic",
+    "dread",
+    "suspense",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.2,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster for the film 'Granny' features a group of characters in a dark, eerie forest setting with a central ghostly figure holding a lantern."
+}

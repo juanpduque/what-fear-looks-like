@@ -1,0 +1,47 @@
+{
+  "title_text": "DICKRIPPER",
+  "credits_text": "SEN GEORGE AND MICHAEL CAU'S",
+  "languages": [
+    "en"
+  ],
+  "other_text": "GRIP ON TO THE ONE YOU LOVE BEFORE SHE TEARS IT AWAY...",
+  "mood": [
+    "dread",
+    "gothic",
+    "erotic",
+    "violent",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence and sexual themes.",
+  "description": "A red poster features a stylized face with chains and splattered blood, with bold title and tagline text."
+}

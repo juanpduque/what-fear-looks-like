@@ -1,0 +1,50 @@
+{
+  "title_text": "VAMP BIKERS",
+  "credits_text": "SUMMER 2013",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WHAT HAPPENS WHEN A BUNCH OF VAMPIRES MOVE INTO AN ABANDONED FACTORY IN A TOWN RUN BY BIKERS SOMEWHERE IN THE FUTURE?",
+  "mood": [
+    "gothic",
+    "horror",
+    "dark",
+    "gritty",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and horror elements.",
+  "description": "Poster features intense faces, a factory backdrop, and a tagline about vampires and bikers, set against a dark, fiery sky."
+}

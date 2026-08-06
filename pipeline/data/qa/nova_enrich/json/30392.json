@@ -1,0 +1,45 @@
+{
+  "title_text": "DARK HARVEST 3",
+  "credits_text": "SCARECROW",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THIS SEASON. HE TAKES HIS FINAL BOUNTY",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "horror",
+    "ominous"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains horror themes and implied violence.",
+  "description": "A hooded figure holds a pitchfork and a skull, standing in a cornfield with dark, eerie lighting."
+}

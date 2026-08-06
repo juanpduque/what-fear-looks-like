@@ -1,0 +1,44 @@
+{
+  "title_text": "GRAVEYARD OF THE DEAD",
+  "credits_text": "STARRING ELISE McNOUGHT • JULIAN SANTOS • ALBERT GAMMOND RAQUEL EZPELETER • THAIS BUFORN • RICK GOMANS JAMES BLOND • ANTHONY GUMMER • JOSEPH TERUEL aka EL RETORNO DE LOS TEMPLARIOS A SMFAMA FILMS PRESENTATION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FOR MATURE VIEWERS ONLY",
+  "mood": [
+    "gothic",
+    "dread",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including blood and violent imagery.",
+  "description": "A hooded skeletal figure holding a sword is featured on a poster titled 'Graveyard of the Dead,' with a warning for mature viewers."
+}

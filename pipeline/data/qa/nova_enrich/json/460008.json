@@ -1,0 +1,49 @@
+{
+  "title_text": "NEPHILIM",
+  "credits_text": "THE INVASION BEGINS WITH DEMON POSSESSION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "sci-fi",
+    "action",
+    "apocalyptic",
+    "dramatic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    },
+    {
+      "name": "crowd",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and action elements.",
+  "description": "A dramatic sci-fi poster featuring a futuristic city, a soldier with a weapon, and a group of people running towards a body of water."
+}

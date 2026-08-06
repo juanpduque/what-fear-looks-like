@@ -45,6 +45,15 @@ def metric(name, cols):
 
 # ============================= METRICS =====================================
 
+def _mser_regions(gray):
+    """MSER regions across OpenCV builds (tuple vs regions-only)."""
+    mser = cv2.MSER_create(delta=5, min_area=15, max_area=2000)
+    out = mser.detectRegions(gray)
+    regions = out[0] if isinstance(out, (tuple, list)) else out
+    if regions is None:
+        return []
+    return regions
+
 def _mser_text_boxes(gray):
     """Filtered MSER glyph candidates: small-to-medium, wider than tall or
     roughly square. Heuristic, not OCR: trend-comparable across eras, not
@@ -54,11 +63,15 @@ def _mser_text_boxes(gray):
     TMDB title match). Billboard glyphs often exceed these caps; mid-sheet
     texture fools MSER into false title boxes.
     """
-    mser = cv2.MSER_create(delta=5, min_area=15, max_area=2000)
-    regions, _ = mser.detectRegions(gray)
+    regions = _mser_regions(gray)
     H, W = gray.shape
     boxes = []
     for pts in regions:
+        pts = np.asarray(pts)
+        if pts.ndim == 1:
+            if pts.size < 2:
+                continue
+            pts = pts.reshape(-1, 2)
         x, y, w, h = cv2.boundingRect(pts.reshape(-1, 1, 2))
         ar = w / max(h, 1)
         # text-ish: small-to-medium, wider than tall or roughly square glyphs
@@ -191,8 +204,17 @@ def aesthetic(bgr, gray):
 
     balance = -1.0
     sal = cv2.saliency.StaticSaliencySpectralResidual_create()
-    ok, smap = sal.computeSaliency(gray)
-    if ok:
+    sout = sal.computeSaliency(gray)
+    # Some builds return (ok, map); others return the map only.
+    if isinstance(sout, (tuple, list)):
+        if len(sout) >= 2:
+            ok, smap = bool(sout[0]), sout[1]
+        else:
+            ok, smap = True, sout[0]
+    else:
+        ok, smap = sout is not None, sout
+    if ok and smap is not None:
+        smap = np.asarray(smap)
         tot = smap.sum() + 1e-9
         ys, xs = np.indices(smap.shape)
         cy = float((ys * smap).sum() / tot) / H
@@ -249,7 +271,9 @@ def diagonal_pyramid(bgr, gray):
                              minLineLength=min_len, maxLineGap=6)
     diag_len = total_len = 0.0
     if lines is not None:
-        for x1, y1, x2, y2 in lines[:, 0]:
+        # OpenCV may return (N,1,4) or (N,4); lines[:,0] on (N,4) yields
+        # int32 scalars → TypeError on "for x1,y1,x2,y2 in ...".
+        for x1, y1, x2, y2 in np.asarray(lines).reshape(-1, 4):
             length = float(np.hypot(x2 - x1, y2 - y1))
             ang = abs(np.degrees(np.arctan2(y2 - y1, x2 - x1))) % 180
             ang = min(ang, 180 - ang)  # 0=horizontal, 90=vertical
@@ -308,12 +332,13 @@ def main():
         existing["id"] = existing["id"].astype(int)
         if all(c in existing.columns for c in needed_cols):
             done = set(existing.loc[existing[needed_cols].notna().all(axis=1), "id"].astype(int))
+    n_done_start = len(done)
     todo = meta[~meta.id.isin(done)]
     print(f"pending: {len(todo):,} / {len(meta):,}", flush=True)
 
     t_start = time.time()
     t_batch, rows = t_start, []
-    n_miss = n_fail = 0
+    n_miss = n_fail = n_ok = 0
     fail_examples = []
     for pid, yr in zip(todo.id.tolist(), todo.year.tolist()):
         if args.budget and time.time() - t_start > args.budget:
@@ -336,6 +361,7 @@ def main():
             for fn in fns.values():
                 row.update(fn(bgr, gray))
             rows.append(row)
+            n_ok += 1
         except Exception as e:
             n_fail += 1
             if len(fail_examples) < 8:
@@ -387,6 +413,12 @@ def main():
     if CHECKPOINT.exists():
         covered = pd.read_csv(CHECKPOINT)["id"].nunique()
     print(f"checkpoint covers {covered:,}/{len(meta):,}", flush=True)
+    # Systemic API bugs (e.g. Hough/MSER unpack TypeError) must not look like success.
+    if n_fail >= 50 and n_fail >= max(n_ok, 1) * 5:
+        raise SystemExit(
+            f"FATAL: multi_analyze fail rate too high ok={n_ok} fail={n_fail} "
+            f"miss={n_miss} (start_done={n_done_start})"
+        )
 
     if covered >= len(meta) or (args.sample and covered >= len(meta)):
         d = pd.read_csv(CHECKPOINT).drop_duplicates("id")

@@ -1,0 +1,39 @@
+{
+  "title_text": "OBSCURIDADE",
+  "credits_text": "DIREÇÃO GERAL GABRIEL KACOWICZ ATUAÇÃO RAFA BERNARDI",
+  "languages": [
+    "pt"
+  ],
+  "other_text": "APENAS UM FOTOFILME",
+  "mood": [
+    "dread",
+    "suspense",
+    "mystery",
+    "psychological",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "shadow",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A woman with long hair stands in a dimly lit hallway, her back to the viewer, reaching out with one hand against a wall."
+}

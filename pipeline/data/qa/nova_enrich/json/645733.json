@@ -1,0 +1,51 @@
+{
+  "title_text": "DEEP SHOCK",
+  "credits_text": "DAVIDE MELINI FILM\n\nDon't run away... Don't scream... PRAY TO DIE!!",
+  "languages": [
+    "en",
+    "it"
+  ],
+  "other_text": "From the director of the BAFTA Award-winning short film In Memory\n\n(AFA) (LAFA) (ROME)\n\nAmazon Prime",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "dread",
+    "psychological",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "water",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult imagery and mild violent suggestions.",
+  "description": "A horror movie poster featuring three ghostly figures against a fiery background, with dramatic text and a tagline warning viewers."
+}

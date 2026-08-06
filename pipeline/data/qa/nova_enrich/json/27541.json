@@ -1,0 +1,39 @@
+{
+  "title_text": "Red Lips",
+  "credits_text": "Maria Ortiz Debbie Rochon",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Eat the Living",
+  "mood": [
+    "horror",
+    "erotic",
+    "gothic",
+    "camp",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.5,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and suggestive themes.",
+  "description": "A poster featuring a close-up of a person holding a bloody fork with the title 'Red Lips' and tagline 'Eat the Living.'"
+}

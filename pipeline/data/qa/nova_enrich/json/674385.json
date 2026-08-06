@@ -1,0 +1,45 @@
+{
+  "title_text": "VIRUS",
+  "credits_text": "Hali Budakova, Michael Segal, Vison Spaqi, Rimi Beqiri, a film by DEMIZIANO BELV AUX CRISTOPHARO screenplay Antonio Tentori freely inspired by H. P. Lovecraft",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FILMON AGGUARDI presents",
+  "mood": [
+    "dread",
+    "surreal",
+    "gothic",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "eye",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.6,
+  "person": 0.0,
+  "animal": 0.3,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and gore imagery.",
+  "description": "A close-up of an eye with visible blood and a fly, suggesting horror and dread."
+}

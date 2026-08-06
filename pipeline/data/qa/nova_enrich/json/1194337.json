@@ -1,0 +1,42 @@
+{
+  "title_text": "Dデイブ・ド",
+  "credits_text": "武室にカント武律武律",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "面後なる新たけなし言音音質組繁！ 面後や図理物を消失しるが多の顔質がら",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "psychological",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intended for mature audiences.",
+  "description": "A poster features a young woman in traditional attire holding a mask with blood, set against a dark background with Japanese text."
+}

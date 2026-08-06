@@ -1,0 +1,39 @@
+{
+  "title_text": "LOOK AT ME",
+  "credits_text": "THE HANGED WOMAN\nHER LOVE WILL DEVOUR YOUR SOUL\nA HORROR FILM BY MIGUEL ÁNGEL LAMATA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AMAYA SALAMANCA\nEDUARDO NORIEGA",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "psychological",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, hooded woman with intense eyes is featured on a movie poster titled 'Look at Me,' promoting a horror film."
+}

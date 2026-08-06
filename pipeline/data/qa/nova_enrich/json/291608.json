@@ -1,0 +1,39 @@
+{
+  "title_text": "FARM",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WHEN YOU'VE SURVIVED THE END OF THE WORLD HOW CAN YOU EXPECT THERE TO BE ANY FUTURE.",
+  "mood": [
+    "apocalyptic",
+    "desolate",
+    "survival",
+    "melancholic",
+    "hopeful"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.8
+    },
+    {
+      "name": "desolation",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man walks away from the viewer into a dark, foggy landscape with the word 'FARM' above him."
+}

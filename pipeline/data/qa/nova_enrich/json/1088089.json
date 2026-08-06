@@ -1,0 +1,46 @@
+{
+  "title_text": "À MEIA-NOITE LACRAREI MEU TIO",
+  "credits_text": "Queime no inferno, patriota\nO nascimento de um novo género\nPATRIOSPLOITATION\num filme de JONATHAN RODRIGUES\nBATATA FILMES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Participação especial de HAMMETT KADU BRAUN RIDRE CHULAQ AIRTON BRATZ CARLI BORTOLANZA E. B. TONIOLLI REGINA WALGER",
+  "mood": [
+    "dark",
+    "satirical",
+    "violent",
+    "political",
+    "grotesque"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.2,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore imagery.",
+  "description": "Movie poster features a collage of people with a central masked figure holding a weapon, surrounded by skulls and text about political satire."
+}

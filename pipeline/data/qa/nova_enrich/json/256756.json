@@ -1,0 +1,39 @@
+{
+  "title_text": "PURGATORIO",
+  "credits_text": "OONA CHAPLIN",
+  "languages": [
+    "es"
+  ],
+  "other_text": "TU MIEDO ES LA PUERTA",
+  "mood": [
+    "dread",
+    "psychological",
+    "gothic",
+    "intense",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, fragmented poster features a woman's face with geometric overlays and the title 'PURGATORIO' in bold letters."
+}

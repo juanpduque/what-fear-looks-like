@@ -1,0 +1,43 @@
+{
+  "title_text": "DEEP SLEEP",
+  "credits_text": "You'll Wake Up Screaming\nSTIGES\n2013\nGIANTE MERSBACH FILMS\nPAOLO SANDOVAL\nLUCIANO GATTI\nMARCELO PLAZA\nGERARDO MORBIDO\nPUERTO RICO\nHUMBERTO ONSAI\nAURORA",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "WINNER INTERNATIONAL FESTIVAL OF HORROR",
+  "mood": [
+    "gothic",
+    "erotic",
+    "psychological",
+    "surreal",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "knife",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "Contains suggestive imagery and implied violence.",
+  "description": "A poster featuring a close-up of a woman's face with a knife near her eye, promoting the horror film 'Deep Sleep' from 2013."
+}

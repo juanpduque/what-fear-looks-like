@@ -1,0 +1,39 @@
+{
+  "title_text": "RED WEREWOLF HUNTER",
+  "credits_text": "FELICIA DAY KAVAN SMITH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "supernatural",
+    "dark",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A woman with a rifle stands between two men in a dark forest, suggesting an action-packed supernatural thriller."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "THE HILLS HAVE EYES",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "survival",
+    "horror",
+    "desolate",
+    "tense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "desolation",
+      "conf": 0.7
+    },
+    {
+      "name": "survival",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "nudity"
+  ],
+  "moderation_notes": "Contains partial nudity and implied violence.",
+  "description": "A rugged man with a fierce expression stands against a stark desert landscape, with a caravan visible in the distance."
+}

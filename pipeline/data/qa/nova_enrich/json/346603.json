@@ -1,0 +1,46 @@
+{
+  "title_text": "QUIET NIGHTS OF BLOOD AND PAIN",
+  "credits_text": "AN ANDREW COPP MOTION PICTURE\nWITH AMANDA LETOLETTE, LOREN S. GOINS AND RAY FREEMAN\nCREG NICHOLS, KRISTIE COX, HENRIQUE COUTO ... NIC PESANTE\nMUSIC BY CANNED MONSTER AND ANDREW COPP\nPRODUCED BY JASON COWIE AND ANDREW COPPETTE\nWRITTEN AND DIRECTED BY ANDREW COPP",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HE'S BACK FROM THE WAR, BUT HE CAN'T STOP KILLING!",
+  "mood": [
+    "violent",
+    "disturbing",
+    "psychological",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; may be disturbing to some viewers.",
+  "description": "A man with a knife stands against an American flag background, screaming with blood on his face. The poster advertises a horror film titled 'Quiet Nights of Blood and Pain.'"
+}

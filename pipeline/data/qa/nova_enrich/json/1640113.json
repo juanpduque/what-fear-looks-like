@@ -1,0 +1,40 @@
+{
+  "title_text": "YET ANOTHER INDIE HORROR FILM",
+  "credits_text": "BETH METCALF CHLOE LUTZ MORRIGAN MILAM OLIVIA TRACY DELIAH HEFNER STEVE HERMANN ANN MYRNA JAYLEE HEIN JOE ROSING DAVID KROSTAL JAYME SCHMITT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AUSTRALIAN PRODUCTIONS \"YET ANOTHER INDIE HORROR FILM\" STEVE HERMANN STEVE HERMANN STEVE HERMANN EDWARD GRANT STEVE HERMANN",
+  "mood": [
+    "dread",
+    "gritty",
+    "intense",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "mask",
+      "conf": 0.8
+    },
+    {
+      "name": "industrial",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster implies potential violence due to the axe and masked figure.",
+  "description": "A masked figure holds an axe in an industrial setting, with bold red and black typography for the title and cast names."
+}

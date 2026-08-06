@@ -1,0 +1,46 @@
+{
+  "title_text": "LA LLORONA",
+  "credits_text": "\"THE WAILER\" THROUGH THE NIGHT SHE HOWLS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "supernatural",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "water",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "The poster features intense imagery that may be disturbing due to its supernatural and eerie themes.",
+  "description": "A close-up of a haunting face with glowing eyes and dark tears, set against a dark background, with the title and tagline displayed below."
+}

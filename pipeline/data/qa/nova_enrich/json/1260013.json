@@ -1,0 +1,42 @@
+{
+  "title_text": "GRANNY'S REVENGE",
+  "credits_text": "A FILM BY LAMPROS KORDOLAITIS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "surreal",
+    "camp",
+    "horror",
+    "grotesque"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.3,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic imagery and suggestive elements.",
+  "description": "A surreal poster features a grotesque, multi-eyed blue creature with exaggerated features, set against a vibrant blue background with inset images of violent and natural scenes."
+}

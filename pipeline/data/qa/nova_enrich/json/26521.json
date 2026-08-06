@@ -1,0 +1,43 @@
+{
+  "title_text": "SEXY KILLER",
+  "credits_text": "\"HANNIBAL LECTOR MEETS PARIS HILTON IN A CROWD-PLEASING CANDY-COATED ZOMBIE SLASHER\" ALAN JONES - FRIGHTFEST",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOU'LL DIE FOR HER... 18",
+  "mood": [
+    "erotic",
+    "horror",
+    "camp",
+    "violent",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "zombie",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.5,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and suggestive content.",
+  "description": "A woman holds two guns with zombies in the background; the title and tagline are prominently displayed."
+}

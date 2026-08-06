@@ -1,0 +1,46 @@
+{
+  "title_text": "DISPENSARY OF DEATH",
+  "credits_text": "GAUDIO FILMS PRESENTS \"DISPENSARY OF DEATH\" STARRING KIRK STEELE MARIE BRANGAN LEVI BRANT JACK WALSH PRODUCED BY PETER EVANS DIRECTED BY SANDY HARRIS WRITTEN BY TONY MORRIS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Aches, pains and half-eaten brains...",
+  "mood": [
+    "horror",
+    "thriller",
+    "violent",
+    "disturbing",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, may be disturbing to some viewers.",
+  "description": "A man and a woman hold a gun amidst a chaotic scene with blood splatters and other figures in the background."
+}

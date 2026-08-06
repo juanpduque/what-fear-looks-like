@@ -1,0 +1,39 @@
+{
+  "title_text": "CÁMARA 4",
+  "credits_text": "FILMADAS POR SUS PROPIAS VÍCTIMAS",
+  "languages": [
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "suspense",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "mask",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster implies potential violence through its dark and ominous imagery.",
+  "description": "A dark poster features a hooded figure with a mask against a black background, with bold yellow text reading 'CÁMARA 4' and a tagline below."
+}

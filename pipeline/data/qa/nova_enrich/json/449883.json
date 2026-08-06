@@ -1,0 +1,50 @@
+{
+  "title_text": "Camp Blood 666",
+  "credits_text": "BEWARE... THE CLOWN STRIKES AGAIN! STARRING: STERLING ERMERT, TIM MCKUSICK, TIM KRAUSS, GEORGE STOVER, DAVE FERRIE, JULIE ANN RAMBOLD, JAY LEE LEWIS, DAVID R. STERN, MONTE EDWARDS, TED MCKUSICK, JAMES HUNTER, EDWARD X. YOUNG",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "terror",
+    "psychological",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including blood and violent imagery.",
+  "description": "A horror movie poster featuring a menacing clown, a bloody knife, and terrified people in a forest setting under a fiery sky."
+}

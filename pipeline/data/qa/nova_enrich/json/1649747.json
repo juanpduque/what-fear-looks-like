@@ -1,0 +1,53 @@
+{
+  "title_text": "MARRIAGE BITES",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "comedy",
+    "gothic",
+    "supernatural",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "crowd",
+      "conf": 0.5
+    },
+    {
+      "name": "forest",
+      "conf": 0.4
+    },
+    {
+      "name": "house",
+      "conf": 0.3
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.1,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild horror themes with implied violence; no explicit gore or nudity.",
+  "description": "A group of people, including a couple, stand in front of a dark, eerie background with a full moon and bats, suggesting a horror-comedy theme."
+}

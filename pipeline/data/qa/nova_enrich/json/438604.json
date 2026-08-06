@@ -1,0 +1,43 @@
+{
+  "title_text": "VARAN",
+  "credits_text": "DIRECTED BY INOSHIRO HONDA DIRECTOR OF SPECIAL EFFECTS EIJI TSUBURAYA PRODUCED BY TOHO CO., LTD.",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "THE WORLD IS AMAZED BY GOZILLA AND BASAN BUT WILL BE KNOCKED FOR A GHOUL BY VARAN",
+  "mood": [
+    "dread",
+    "surreal",
+    "gothic",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a large, menacing creature looming over a crowd with dramatic lighting and bold red text reading \"VARAN\"."
+}

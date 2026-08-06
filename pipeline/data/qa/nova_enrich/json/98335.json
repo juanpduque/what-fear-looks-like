@@ -1,0 +1,47 @@
+{
+  "title_text": "MUSALLAT",
+  "credits_text": "2 ARALIĞTA SİNEMALARDA",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "ONLAR UNUTMAZ VAZGEÇMEZ PİSİNİ BIRAKMAZ",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "mysterious",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and occult imagery.",
+  "description": "A poster featuring a distressed young woman with blood splatters, surrounded by ghostly figures in a dark, eerie setting."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "BLACK WATER",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "horror",
+    "survival",
+    "dangerous",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.3
+    },
+    {
+      "name": "violence",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.9,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and potential gore from the crocodile attack.",
+  "description": "A distressed woman stands in murky water facing a large crocodile, evoking tension and survival themes."
+}

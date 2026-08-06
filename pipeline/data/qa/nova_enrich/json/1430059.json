@@ -1,0 +1,42 @@
+{
+  "title_text": "THE JU-ON",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "魔子第三届 MOVIE",
+  "mood": [
+    "haunting",
+    "eerie",
+    "supernatural",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains supernatural horror themes and ghostly imagery.",
+  "description": "A poster shows a ghostly figure in a white dress standing in a dark, foggy forest with Japanese and English text overlay."
+}

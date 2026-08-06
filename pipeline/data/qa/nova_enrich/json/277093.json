@@ -1,0 +1,39 @@
+{
+  "title_text": "the horror vault",
+  "credits_text": "CETS PRODUCTIONS PRESENTS THE HORROR VAULT STARRING LAKE ROSS, BREE SHERWOOD, JORDAN ROSS, NICKY LEE, ERIN MAY, ERIC BENSON, RICKY SMITH, BRAD NELSON, DARRICK BATES, RICKY FULL GLEGG, STEVE HART, DANE RAGEL, GREGOR THEATER, ALICE HUNT, AUDREY HENDERSON, MIKE JOHNSON, EILEEN AMSTONG, MATT HAYES, JOSH WINTERS, AND PAUL DEWAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WWW.THEHORRORVAULT.NET",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "suspense",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark poster features intense eyes, a shadowy figure, and bold title 'The Horror Vault' with cast and production credits."
+}

@@ -1,0 +1,22 @@
+=== preflight: running instances (will not terminate any) ===
+i-07b62870cc441c343	wflike-vision-gap	c5.9xlarge
+--- stage code + ENV ---
+Completed 205 Bytes/205 Bytes (395 Bytes/s) with 1 file(s) remainingupload: ../../../../../tmp/nova_enrich_ENV to s3://sagemaker-studio-a5572760/wflike-nova-enrich/gap20k/ENV
+Completed 5.5 KiB/5.5 KiB (9.4 KiB/s) with 1 file(s) remainingupload: aws/nova_enrich_ec2_chain.sh to s3://sagemaker-studio-a5572760/wflike-nova-enrich/gap20k/code/aws/nova_enrich_ec2_chain.sh
+Completed 2.5 KiB/2.5 KiB (5.0 KiB/s) with 1 file(s) remainingupload: aws/nova_enrich_ec2_userdata.sh to s3://sagemaker-studio-a5572760/wflike-nova-enrich/gap20k/code/aws/nova_enrich_ec2_userdata.sh
+Completed 25.8 KiB/25.8 KiB (48.8 KiB/s) with 1 file(s) remainingupload: ./nova_poster_enrich.py to s3://sagemaker-studio-a5572760/wflike-nova-enrich/gap20k/code/nova_poster_enrich.py
+=== launch nova enrich EC2 ===
+bucket=s3://sagemaker-studio-a5572760/wflike-nova-enrich/gap20k/ type=t3.large ami=ami-052355af2a014bd2c
+sg=sg-0476343904a08eb4a subnet=subnet-08e655e74d8823aac profile=wflike-ec2-train Name=wflike-nova-gap20k
+WORKERS=4 MIN_INTERVAL=0.55 LIMIT=0 BEDROCK_REGION=us-east-1
+i-047a025dc09a7b79a
+instance=i-047a025dc09a7b79a
+waiting for running…
+54.144.116.93
+LISTO — IID=i-047a025dc09a7b79a IP=54.144.116.93 Name=wflike-nova-gap20k
+Monitor:  aws s3 ls s3://sagemaker-studio-a5572760/wflike-nova-enrich/gap20k/results/
+Log:      aws s3 cp s3://sagemaker-studio-a5572760/wflike-nova-enrich/gap20k/results/nova_enrich_ec2.log -
+Progress: aws s3 cp s3://sagemaker-studio-a5572760/wflike-nova-enrich/gap20k/progress_cloud.json -
+Pull:     bash pipeline/aws/pull_nova_enrich_cloud.sh
+(instance self-terminates when chain finishes)
+chain finishes)

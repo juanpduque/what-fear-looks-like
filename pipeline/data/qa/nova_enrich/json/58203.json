@@ -1,0 +1,35 @@
+{
+  "title_text": "BLACK JOURNAL",
+  "credits_text": "Shelley WINTERS, Max VON SIDOW, Laura ANTONELLI, Renato POZZETTO. Un film de Mauro BOLOGNINI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dramatic",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence and psychological tension.",
+  "description": "The poster features a dramatic scene with three characters, one holding a weapon, against a fiery background with dripping water effects."
+}

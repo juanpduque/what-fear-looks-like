@@ -1,0 +1,35 @@
+{
+  "title_text": "DEEP BLUE SEA 2",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "action",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "shark",
+      "conf": 0.95
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.95,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense shark attack imagery which may be disturbing to some viewers.",
+  "description": "A woman swims underwater surrounded by large sharks, with the title 'Deep Water Sea 2' prominently displayed above."
+}

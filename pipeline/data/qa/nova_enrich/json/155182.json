@@ -1,0 +1,50 @@
+{
+  "title_text": "OVERTIME",
+  "credits_text": "AL SNOW JOHN WELLS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Guns, Girls, Aliens, Zombies...Cake! Working late was never this brutal!",
+  "mood": [
+    "horror",
+    "action",
+    "comedy",
+    "thriller",
+    "zombie"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "knife",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.95,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.75,
+  "violence": 0.85,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore, suitable for mature audiences.",
+  "description": "Movie poster features intense action with guns, knives, and zombie-like creatures. Characters display shocked expressions amidst chaotic scenes."
+}

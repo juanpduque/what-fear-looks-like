@@ -1,0 +1,48 @@
+{
+  "title_text": "SELAMAT HARL JAY!",
+  "credits_text": "ZALIF SIDIK, ISSEY FAZILISHAM, JANNA NICK, SALIY NATS ZAINI, DANIAL ZAINI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DIREKTOR TS. A. RAJAK H.I. PRODUKEN AZHARI MUHAMMAD ISSEY LANKAAN DATO PROFESOR DR. MUHAMMAD HAFIZ RAHMAN",
+  "mood": [
+    "horror",
+    "thriller",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and horror elements.",
+  "description": "Movie poster features five characters with a monstrous creature in the background, knives, and fiery elements, suggesting a horror theme."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "RESIDENT EVIL RED FALLS",
+  "credits_text": "STUDIO C | OCT 6 | 7PM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A STRIKE TO BURN PRODUCTION",
+  "mood": [
+    "dread",
+    "suspense",
+    "horror",
+    "apocalyptic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A silhouette of a man stands in front of a screen showing panicked, bloodied people reaching out. The title 'RESIDENT EVIL RED FALLS' is prominently displayed below."
+}

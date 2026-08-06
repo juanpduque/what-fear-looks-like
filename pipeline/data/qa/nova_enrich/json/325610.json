@@ -1,0 +1,45 @@
+{
+  "title_text": "THE HOUSE ON CUCKOO LANE",
+  "credits_text": "DAVID HINDS JAMIE RICHARDSON LAURA HINDS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BE CAREFUL WHAT YOU WATCH",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.6,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and implied violence.",
+  "description": "A poster shows a rabbit-headed figure in front of a haunted house with blood on the ground, evoking a gothic horror atmosphere."
+}

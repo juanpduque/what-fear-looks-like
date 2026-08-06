@@ -1,0 +1,41 @@
+{
+  "title_text": "누료건개술\nGEO-LOBOTOMY",
+  "credits_text": "A Film by Kim Sun, Kim Oak",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "other_text": "이바로드 DVD 바서지발 보도모드",
+  "mood": [
+    "dread",
+    "surreal",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of a brain and implied violence.",
+  "description": "A dark poster features a shadowy figure holding a brain, with bold Korean and English titles and a disturbing, horror-themed aesthetic."
+}

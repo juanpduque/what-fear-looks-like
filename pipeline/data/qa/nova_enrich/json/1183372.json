@@ -1,0 +1,33 @@
+{
+  "title_text": "ACTION",
+  "credits_text": "Mia Custer, Justin Isenberg, Chanda Rawlings",
+  "languages": [
+    "en"
+  ],
+  "other_text": "The Making of, Making Movies Is a Killer Time",
+  "mood": [
+    "intense",
+    "thriller",
+    "dark",
+    "action",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence through the depiction of a gun.",
+  "description": "A poster features a woman in a dark jacket with a hand holding a gun, set against a city backdrop with text overlays."
+}

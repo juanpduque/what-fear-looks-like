@@ -1,0 +1,46 @@
+{
+  "title_text": "CATCH OF THE DAY",
+  "credits_text": "A JAMES BALSAMO FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "...SOMETIMES THE HERO IS A FLUKE!",
+  "mood": [
+    "action",
+    "horror",
+    "camp",
+    "erotic",
+    "adventure"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.8
+    },
+    {
+      "name": "gun",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "nudity"
+  ],
+  "moderation_notes": "Contains mild nudity and violent imagery.",
+  "description": "A man and woman fight through a jungle filled with monstrous creatures and skulls, with the man holding a gun."
+}

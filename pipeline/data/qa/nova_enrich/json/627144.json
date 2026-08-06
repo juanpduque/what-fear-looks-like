@@ -1,0 +1,49 @@
+{
+  "title_text": "SHEITAN",
+  "credits_text": "A MUSLIM HORROR WHICH THEY WILL NEVER SHOW YOU\nFAITH PICTURES INC. IMRAAN GALANI\nALI C PRESENTS RAAZ-E-\nA SAMEER KHAN MOVIE",
+  "languages": [
+    "en",
+    "hi",
+    "ur"
+  ],
+  "other_text": "Z MUSIC COMPANY\nZ\nMUSIC COMPANY\nFAI II\nDTS HD\nMaster Audio\nTHX\nf /SheitaanTheMovie",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "intense",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "occult",
+    "nudity"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes, with partial nudity visible on the poster.",
+  "description": "Poster features a muscular figure with clawed hands and a ghostly face, set against a dark red background, promoting a horror film titled 'Sheitaan.'"
+}

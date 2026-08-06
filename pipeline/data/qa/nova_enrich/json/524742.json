@@ -1,0 +1,44 @@
+{
+  "title_text": "ZETA",
+  "credits_text": "SWAN STUDIO PRESENTS A FILM BY AMAR ESHWAR CUT MINI JEFF SMITH DIMAS ADITYA EDO BORNE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WHEN THE DEAD AWAKEN",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "Poster features intense faces and a crowd of figures, suggesting a horror theme with a title 'ZETA' and tagline 'When the Dead Awaken.'"
+}

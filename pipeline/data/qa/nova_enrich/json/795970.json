@@ -1,0 +1,44 @@
+{
+  "title_text": "HELENA",
+  "credits_text": "PRODUCIONES GÉMINIS - ANNA GONZÁLEZ - JAVIER CONDELLU - CLAUDIO MARTÍNEZ - DIEGO DOLAN - ALEJANDRO CASTILLO - CRISTINA FRANZ - EMMA VALENTINA ATKALIA - IVÁN CAMPOS - JOSÉ MANUEL GARCÍA - MARTA GARCÍA - RAMOS GONZÁLEZ INSA",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "SITGES 2019",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "haunting",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.85
+    },
+    {
+      "name": "ghost",
+      "conf": 0.75
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, atmospheric poster features a shadowy figure dragging a body through a forest at night, with a glowing orange light in the background."
+}

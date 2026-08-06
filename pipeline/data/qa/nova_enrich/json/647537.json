@@ -1,0 +1,40 @@
+{
+  "title_text": "VAMP",
+  "credits_text": "中村美里主演作品",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "映画 \"ヴァンプ\" 2019年公開",
+  "mood": [
+    "gothic",
+    "erotic",
+    "horror",
+    "dramatic",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic blood and suggestive imagery.",
+  "description": "A poster featuring a woman with blood on her face and lips, suggesting a gothic horror theme."
+}

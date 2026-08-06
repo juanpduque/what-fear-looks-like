@@ -1,0 +1,46 @@
+{
+  "title_text": "道情情心罪",
+  "credits_text": "組 市 住 言",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "VTR of the Ban on broadcast 放进罪平 VTR",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "mystery",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes, with graphic blood splatters.",
+  "description": "A ghostly figure with long white hair appears against a dark background, overlaid with bold red Chinese characters and a tagline."
+}

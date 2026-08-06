@@ -1,0 +1,36 @@
+{
+  "title_text": "VIOLENCIA",
+  "credits_text": "UN MICROMETRAJE DE BEN BRAVO D",
+  "languages": [
+    "es"
+  ],
+  "other_text": "José Medina Samira Martínez Tomás Maureira",
+  "mood": [
+    "anxious",
+    "intense",
+    "dramatic",
+    "ominous"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "hands",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts intense and potentially disturbing imagery related to violence.",
+  "description": "A dark red background features a silhouette of a person with hands raised, overshadowed by large, menacing hands."
+}

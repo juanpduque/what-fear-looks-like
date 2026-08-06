@@ -1,0 +1,40 @@
+{
+  "title_text": "SURVIVAL",
+  "credits_text": "JOE FRANCIS VANELLE VIC.AVILES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "6 COLLEGE KIDS. 2 PSYCHOTIC SIBLINGS. 1 CHANCE OF ESCAPE.",
+  "mood": [
+    "dread",
+    "suspense",
+    "terror"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.95,
+  "monster": 0.0,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and a knife, indicating potential gore.",
+  "description": "A distressed woman holds a large knife close to her face with a blurred background showing a bloody hand."
+}

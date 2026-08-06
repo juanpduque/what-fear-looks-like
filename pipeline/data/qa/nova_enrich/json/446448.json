@@ -1,0 +1,50 @@
+{
+  "title_text": "PSYCHON INVADERS",
+  "credits_text": "THEY ARE EVERYWHERE\n\nAMELL ENTERTAINMENT PRESENTS\nVICTORIA DE MARIE RINALDI JANE CAMERON JIMMY DIXON JOVA VINCENT R. BLANCHE MICHAEL SCHWARTZ ALAN M. ODOM JEFF LERL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "camp",
+    "sci-fi",
+    "action",
+    "paranoia",
+    "retro"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.5
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.5,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "Contains mild sexual suggestiveness and action-oriented violence.",
+  "description": "A woman holds a gun facing two large alien monsters with explosions in the background, cityscape visible behind them."
+}

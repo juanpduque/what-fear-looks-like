@@ -1,0 +1,46 @@
+{
+  "title_text": "GUESS WHAT HAPPENED TO COUNT DRACULA",
+  "credits_text": "MERRICK DES ROBERTS - CLAUDIA BARRON - JOHN LANDON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TRIP INTO A NIGHTMARE A GHASTLY TERRORAMA SEE IT WITH SOMEONE YOU TRUST. COLOR",
+  "mood": [
+    "gothic",
+    "camp",
+    "erotic",
+    "surreal",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild sexual suggestiveness and occult themes.",
+  "description": "Vintage poster features a man in cape and a woman in a suggestive pose with a moonlit background, promoting a horror film."
+}

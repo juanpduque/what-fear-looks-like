@@ -1,0 +1,40 @@
+{
+  "title_text": "RISE OF THE UNDEAD",
+  "credits_text": " Flee or face the creature inside",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild suggestions of violence and blood.",
+  "description": "A close-up of a person with pale skin and green eyes against a dark background, with the title 'Rise of the Undead' prominently displayed above."
+}

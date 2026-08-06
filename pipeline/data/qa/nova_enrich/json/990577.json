@@ -1,0 +1,50 @@
+{
+  "title_text": "I WAS A TEENAGE GOREHOUND",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AN ANTHOLOGY WITH GUTS",
+  "mood": [
+    "horror",
+    "dark",
+    "gothic",
+    "macabre",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery including monsters, skulls, and blood.",
+  "description": "A poster features a young boy surrounded by monstrous creatures and skulls, with bold red and black colors and horror-themed text."
+}

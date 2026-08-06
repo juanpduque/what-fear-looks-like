@@ -1,0 +1,50 @@
+{
+  "title_text": "ATTACK OF THE FLESH DEVOURING SPACE WORMS FROM OUTER SPACE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THEY CAME FROM BEYOND THE STARS... TO FEED ON HUMAN FLESH! NO MERCY! NO ESCAPE! NO CHANCE OF SURVIVAL! SCREAMING! GORE! AND SLIMY TERROR! SHOT ON VIDEO IN BLOODY COLOR! IT WILL EAT YOU ALIVE! WARNING! CONTAINS GRAPHIC VIOLENCE AND GORE. NOT RECOMMENDED FOR CHILDREN.",
+  "mood": [
+    "horror",
+    "sci-fi",
+    "action",
+    "thriller",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 1.0
+    },
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 1.0
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.95,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore; not suitable for children.",
+  "description": "A poster depicts terrified humans surrounded by monstrous space worms with sharp teeth, emphasizing survival against extraterrestrial threats."
+}

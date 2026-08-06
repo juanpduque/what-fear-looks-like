@@ -1,0 +1,40 @@
+{
+  "title_text": "",
+  "credits_text": "",
+  "languages": [],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "haunting",
+    "eerie",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood-like stains and a distressed appearance, suggesting horror themes.",
+  "description": "A person with long, dark hair and a pale face stands against a dark background, their clothing and face smeared with dark, blood-like stains, evoking a haunting and disturbing atmosphere."
+}

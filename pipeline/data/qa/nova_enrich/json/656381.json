@@ -1,0 +1,46 @@
+{
+  "title_text": "Fury",
+  "credits_text": "Not Your Parent's Black Horror Movie",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Winner! Award Winner! Award Winner! Award Winner! Award Winner!",
+  "mood": [
+    "intense",
+    "gothic",
+    "dread",
+    "violent",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.2,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A dramatic poster features a close-up of an intense eye and bold red text reading 'Fury,' with award-winning accolades at the top."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "TALES OF FRANKENSTEIN",
+  "credits_text": "A GRUESOME STORIES SPANNING A CENTURY AN ALL STAR CAST IN CLASSIC FRANKENSTEIN TRADITIONS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE 200 YEAR ANNIVERSARY OF THE FRANKENSTEIN STORY",
+  "mood": [
+    "gothic",
+    "camp",
+    "eerie",
+    "dramatic",
+    "classic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "nudity"
+  ],
+  "moderation_notes": "Contains partial nudity and mild horror elements.",
+  "description": "Poster features a central monster figure with a group of characters, including a partially nude woman, set against a dark, stormy background."
+}

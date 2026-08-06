@@ -1,0 +1,44 @@
+{
+  "title_text": "GURU THE MAD MONK",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "camp",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "bat",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.4,
+  "person": 0.9,
+  "animal": 0.4,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and mild suggestive elements.",
+  "description": "A dramatic poster features a monk, a woman, and a man in a tense scene with bats and a skull, evoking a gothic horror atmosphere."
+}

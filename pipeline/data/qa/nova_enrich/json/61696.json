@@ -1,0 +1,47 @@
+{
+  "title_text": "VIOLENT SHIT 4.0",
+  "credits_text": "KARL THE BUTCHER VS. AXE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Mit den Stars aus der Independent-Szene",
+  "mood": [
+    "violent",
+    "gritty",
+    "surreal",
+    "dark",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "A poster featuring a fiery, chaotic scene with a central figure holding a weapon, surrounded by fallen bodies and intense flames."
+}

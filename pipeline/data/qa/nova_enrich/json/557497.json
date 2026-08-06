@@ -1,0 +1,47 @@
+{
+  "title_text": "AN BEANSHI",
+  "credits_text": "A DELTIC DEMON MEDIA PRODUCTION STARRING TAYLOR J. HART / NICKI A. HART / JENNA M. HART / DARK COMEDY / GORE / GAME / SPYREN / LISA TRIBBLE DIRECTED BY SPYREN GOREY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WHEN YOU REALIZE SHE IS ALREADY TOO LATE",
+  "mood": [
+    "gothic",
+    "erotic",
+    "surreal",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.4,
+  "violence": 0.3,
+  "sexual_content": 0.5,
+  "sensitive": [
+    "violence",
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains suggestive imagery and implied violence.",
+  "description": "A stylized poster features a central female figure with dark makeup and intense expression, surrounded by eerie, monstrous figures against a red background."
+}

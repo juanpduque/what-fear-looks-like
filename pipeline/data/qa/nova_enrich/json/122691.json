@@ -1,0 +1,46 @@
+{
+  "title_text": "KIDS GET DEAD",
+  "credits_text": "Leah Rudick, Meghan Miller, Kevin Shea, Eric Carper, Andrew Waffenschmidt",
+  "languages": [
+    "en"
+  ],
+  "other_text": "KIDS GO TO THE WOODS...",
+  "mood": [
+    "dread",
+    "thriller",
+    "horror",
+    "forest",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "gothic",
+      "conf": 0.8
+    },
+    {
+      "name": "dread",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.6,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A masked figure stands over a fallen person in a dark forest, with a tagline and credits displayed."
+}

@@ -1,0 +1,51 @@
+{
+  "title_text": "Death by Dialogue",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "occult",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "book",
+      "conf": 0.8
+    },
+    {
+      "name": "candle",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "occult",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult",
+    "blood",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and occult themes.",
+  "description": "A dark figure holds a dagger over an open, blood-stained book with candles and a graveyard in the background."
+}

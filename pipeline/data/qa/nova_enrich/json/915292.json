@@ -1,0 +1,39 @@
+{
+  "title_text": "CUPCAKE",
+  "credits_text": "A FILM BY ROBYN AUGUST",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "eerie",
+    "haunting",
+    "disturbing",
+    "surreal",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A shadowy figure and a smaller companion walk down a red-lit corridor, evoking a haunting and eerie atmosphere."
+}

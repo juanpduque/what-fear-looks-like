@@ -1,0 +1,45 @@
+{
+  "title_text": "PRETTY IN RED",
+  "credits_text": "A FILM BY TY METCALFE\nTANGELO FILMS PRESENTS \"PRETTY IN RED\"\nMUSIC BY WESTON WILSON AND TORRANCE KLEIN SONG BY VIRTUAL NOBODIES EDITED BY EVAN O'NEAL PRODUCED BY TY METCALFE\nANNIE METCALFE EVAN O'NEAL SFX MAKEUP HANNAH MALLAM ASSISTANT DIRECTOR MARK JANAVELE DIRECTOR OF PHOTOGRAPHY TY METCALFE\nWRITTEN AND DIRECTED BY TY METCALFE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "gothic",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.4,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "Poster shows three women in distress, a knife dripping blood, and a haunted house under a full moon."
+}

@@ -1,0 +1,43 @@
+{
+  "title_text": "ITCH",
+  "credits_text": "A SHORT FILM BY MATT COOHRAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DWF-LA",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and disturbing imagery.",
+  "description": "A dark, fiery forest scene with a knife-wielding hand and a shadowy figure, suggesting horror and suspense."
+}

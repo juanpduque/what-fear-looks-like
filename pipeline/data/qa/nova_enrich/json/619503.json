@@ -1,0 +1,42 @@
+{
+  "title_text": "METAL NOIR",
+  "credits_text": "David R. Williams",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SPECIAL LIMITED EDITION\nA Lost Shot On Video Shocker From 1990",
+  "mood": [
+    "gritty",
+    "horror",
+    "sci-fi",
+    "noir",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.3,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intended for mature audiences.",
+  "description": "A poster for the 1990 film 'Metal Noir' features three distressed individuals with bloodied faces, set against a dark, intense background."
+}

@@ -1,0 +1,44 @@
+{
+  "title_text": "THE DEVIL'S PLAYGROUND",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HELL",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "hell",
+      "conf": 0.9
+    },
+    {
+      "name": "eyes",
+      "conf": 0.8
+    },
+    {
+      "name": "tower",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.3,
+  "person": 0.2,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and implied violence.",
+  "description": "A dark, red-tinted poster shows a towering, spiky structure labeled 'HELL' with glowing eyes and flames, titled 'THE DEVIL'S PLAYGROUND.'"
+}

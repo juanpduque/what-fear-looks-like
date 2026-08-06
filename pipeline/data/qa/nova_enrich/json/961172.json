@@ -1,0 +1,46 @@
+{
+  "title_text": "CABIN FEVER",
+  "credits_text": "TERRIL IN THE FLESH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"An unbelievable, absolutely scary blast. I loved it\" - Fox Atlantis",
+  "mood": [
+    "dread",
+    "terror",
+    "survival",
+    "isolation",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and gore themes.",
+  "description": "A dark red-tinted poster shows a cabin in a forest with a shadowy figure, evoking horror and isolation."
+}

@@ -1,0 +1,44 @@
+{
+  "title_text": "CRYING BITCH",
+  "credits_text": "\"THAT BITCH HAD SOME CTHULHU EYES\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "surreal",
+    "camp",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.4,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and mild horror elements.",
+  "description": "A dark, fiery poster featuring multiple intense faces and the title \"CRYING BITCH\" with a tagline referencing Cthulhu eyes."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "GHOST ROADS",
+  "credits_text": "A JAPANESE ROCK'N'ROLL GHOST STORY",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "What would you trade for fame? Devil",
+  "mood": [
+    "gothic",
+    "horror",
+    "noir",
+    "mysterious",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A red poster features a man in a hat and tie, with three figures superimposed, and bold white text reading \"GHOST ROADS.\""
+}

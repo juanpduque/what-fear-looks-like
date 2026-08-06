@@ -1,0 +1,39 @@
+{
+  "title_text": "THE CHAIR",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CONDEMNED FOR ETERNITY... HE'S BURNING FOR REVENGE.",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "electricity",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense horror themes and implied violence.",
+  "description": "A poster shows a ghostly figure seated in an electric chair with blue lightning effects, suggesting themes of eternal punishment and revenge."
+}

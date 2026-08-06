@@ -1,0 +1,35 @@
+{
+  "title_text": "BASIC SLAUGHTER",
+  "credits_text": "No Icon. No Novelty. No Big Twist. Just...",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Dark Mullet Cinema Presents",
+  "mood": [
+    "dread",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests violent themes with a silhouette holding a weapon.",
+  "description": "A dark silhouette stands in a red doorway with a weapon, accompanied by bold text introducing the film \"Basic Slaughter.\""
+}

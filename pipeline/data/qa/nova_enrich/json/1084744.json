@@ -1,0 +1,45 @@
+{
+  "title_text": "TENBATSU",
+  "credits_text": "田田田子 結影結 小少平民 黄影結子 山海大 小子平郎 陳田田田結 山海木子 日本年年結",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "女女女かちの止中がとだまする影片の\"影帰\"プラージーをいすうえん。レンブを尽わば害えて。",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "staircase",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A poster shows a shadowy figure dragging another person down a staircase in a dimly lit building, with Japanese text and a title."
+}

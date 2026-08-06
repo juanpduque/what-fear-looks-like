@@ -1,0 +1,41 @@
+{
+  "launched_at": "2026-08-03T23:12:42.126950+00:00",
+  "mode": "features",
+  "prefix": "wflike-imdb-features-residual",
+  "bucket": "sagemaker-studio-a5572760",
+  "region": "us-east-1",
+  "aws_profile": "sandbox",
+  "instance_id": "i-0f04b405308589396",
+  "public_ip": "100.27.28.79",
+  "instance_type": "t3.large",
+  "name_tag": "wflike-imdb-features-residual",
+  "n_ids": 273,
+  "ids_file": "pipeline/data/qa/runtime_residual_fill/need_imdb_features_ids.csv",
+  "staged_suggest_miss": "pipeline/data/qa/runtime_residual_fill/imdb_suggest_features_miss_residual.csv",
+  "s3_stage": "s3://sagemaker-studio-a5572760/wflike-imdb-features-residual/",
+  "s3_results": "s3://sagemaker-studio-a5572760/wflike-imdb-features-residual/results/",
+  "s3_input_miss": "s3://sagemaker-studio-a5572760/wflike-imdb-features-residual/input/imdb_suggest_features_miss.csv",
+  "delay": 1.4,
+  "limit": 0,
+  "note": "Relaunch after AWS CLI v2 userdata fix; reuse prior S3 staging (273 without_tt). Failed prior IID i-02419ca815e2376e3 terminated.",
+  "prior_failed_instance": "i-02419ca815e2376e3",
+  "userdata_fix": "ensure_aws_cli AWS CLI v2 before sts/s3",
+  "staging_reused": true,
+  "posters_ec2_left_running": [
+    {
+      "instance_id": "i-0d70c936e1e39759b",
+      "public_ip": "18.206.125.253",
+      "name": "wflike-imdb-posters",
+      "prefix": "wflike-imdb-selenium"
+    }
+  ],
+  "monitor": "AWS_PROFILE=sandbox aws s3 ls s3://sagemaker-studio-a5572760/wflike-imdb-features-residual/results/",
+  "pull_command": "AWS_PROFILE=sandbox PREFIX=wflike-imdb-features-residual bash pipeline/aws/pull_imdb_selenium.sh",
+  "local_fill_summary": {
+    "filled": 97,
+    "still_zero_total": 685,
+    "with_tt": 412,
+    "without_tt": 273,
+    "omdb_skipped": true
+  }
+}

@@ -1,0 +1,38 @@
+{
+  "title_text": "DON'T RUN",
+  "credits_text": "a horror short film by Jesse Pray",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "suspense",
+    "terror",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "darkness",
+      "conf": 0.85
+    },
+    {
+      "name": "forest",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, eerie poster features a solitary silhouette against a night sky with bold red text reading 'DON'T RUN' and a credit line below."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "WICCA JEZABEL",
+  "credits_text": "Ún FILME DE ALAN GODINA",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "ZURI AZUL",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "haunting",
+    "mysterious",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and ghostly imagery.",
+  "description": "A silhouette stands before a glowing, ghostly figure in a dark forest, with fiery light illuminating the scene."
+}

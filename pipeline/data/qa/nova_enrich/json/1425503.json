@@ -1,0 +1,34 @@
+{
+  "title_text": "it needs eyes",
+  "credits_text": "FORMULABLE FILM FLAMES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOU'RE NOT SAFE JUST BECAUSE YOU'RE WATCHING",
+  "mood": [
+    "psychological",
+    "suspense",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    "text-heavy",
+    {
+      "name": "eye",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A close-up of an eye with a ghostly image superimposed, accompanied by the title 'it needs eyes' and a tagline about surveillance."
+}

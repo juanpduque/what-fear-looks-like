@@ -1,0 +1,40 @@
+{
+  "title_text": "MIDNIGHT GARAGE",
+  "credits_text": "主演: Alex Fong, Yoon So-yi, Gordon Lam, Tse Kwan Ho",
+  "languages": [
+    "en"
+  ],
+  "other_text": "4月3日 重见天日",
+  "mood": [
+    "dread",
+    "suspense",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatters and violent imagery.",
+  "description": "A poster shows a van with blood splatters and ghostly silhouettes on the rear window, promoting a horror film titled 'MIDNIGHT GARAGE'."
+}

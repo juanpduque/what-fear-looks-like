@@ -1,0 +1,46 @@
+{
+  "title_text": "SLAUGHTERHOUSE RULEZ",
+  "credits_text": "Asa Butterfield, Finn Cole, Hermione Corfield, Michael Sheen, Nick Frost, Simon Pegg",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BLOODIU MAXIMUS HELLIUS",
+  "mood": [
+    "gothic",
+    "camp",
+    "humorous",
+    "supernatural",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.5
+    },
+    {
+      "name": "monster",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.5,
+  "monster": 0.4,
+  "person": 1.0,
+  "animal": 0.2,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatters and implied violence.",
+  "description": "Group of teens and adults stand in front of a haunted house with blood splatters around, suggesting a supernatural horror theme."
+}

@@ -1,0 +1,38 @@
+{
+  "title_text": "THE STANMORE INCIDENT",
+  "credits_text": "RAE SKERRETT MABEL LEWIS JACOB ANGELL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SHARED BEAR",
+  "mood": [
+    "mysterious",
+    "tense",
+    "gothic",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Three individuals stand in a dark, misty forest under a bright light, with a title overlay suggesting a suspenseful or horror theme."
+}

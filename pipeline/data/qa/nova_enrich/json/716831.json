@@ -1,0 +1,39 @@
+{
+  "title_text": "LAND SHARK",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AND YOU THOUGHT IT WAS SAFE ON LAND...",
+  "mood": [
+    "action",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.95,
+  "blood_gore": 0.2,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and implied violence.",
+  "description": "A poster shows a giant shark attacking a city with people fleeing. The title \"LAND SHARK\" is prominently displayed."
+}

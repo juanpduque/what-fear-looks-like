@@ -1,0 +1,39 @@
+{
+  "title_text": "麻歴 11",
+  "credits_text": "実話・消側客影主引",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "心軽を持つ、心軽を消す。心軽は不実にならない！",
+  "mood": [
+    "gothic",
+    "eerie",
+    "mystery",
+    "psychological",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, atmospheric poster features a woman in a hat and a shadowy figure, with Japanese text overlaying a moody background."
+}

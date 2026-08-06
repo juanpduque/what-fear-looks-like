@@ -1,0 +1,42 @@
+{
+  "title_text": "SEVERANCE MOUNTAIN",
+  "credits_text": "A FILM BY ETHAN D HENRY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE SCARIEST MONSTERS ARE THE HUMAN KIND",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "intense",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatters and intense imagery.",
+  "description": "A poster features a distressed woman with long hair and bloodstained face against a dark, splattered background, with bold title text."
+}

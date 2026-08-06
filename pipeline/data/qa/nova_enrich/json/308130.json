@@ -1,0 +1,49 @@
+{
+  "title_text": "FREAK SHOW DOUBLE FEATURE",
+  "credits_text": "GYPSY VAMPIRE 3 FREAKY VAMPIRE A CONRAD BROOKS FILM TRANSYLVANIA POLICE MONSTER SQUAD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A SIDE-SHOW OF TERROR GHOULS GONE WILD!",
+  "mood": [
+    "camp",
+    "horror",
+    "fantasy",
+    "comedy",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A double feature poster showcasing two horror-comedy films with eerie characters and a police car, blending campy and gothic elements."
+}

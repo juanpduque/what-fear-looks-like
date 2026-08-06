@@ -1,0 +1,39 @@
+{
+  "title_text": "THE NOCTURNAL VISITOR",
+  "credits_text": "A FILM BY FRANK DURBIN. BASED ON TRUE EVENTS.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "I SEE YOU. SOON THEY WILL TOO.",
+  "mood": [
+    "haunting",
+    "disturbing",
+    "psychological",
+    "suspenseful",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man with a distorted face is shown in a dark, eerie setting, with text indicating a found footage horror story based on true events."
+}

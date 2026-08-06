@@ -1,0 +1,42 @@
+{
+  "title_text": "LE CHATEAU HANTÉ",
+  "credits_text": "CINÉMA Gaithé",
+  "languages": [
+    "fr"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "fantasy",
+    "mysterious",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "castle",
+      "conf": 0.9
+    },
+    {
+      "name": "fantasy",
+      "conf": 0.85
+    },
+    {
+      "name": "knight",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.6,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster depicts a gothic scene with a knight, a damsel, and mythical creatures near an ornate gate in a haunted castle."
+}

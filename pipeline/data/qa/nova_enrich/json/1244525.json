@@ -1,0 +1,42 @@
+{
+  "title_text": "DUSK",
+  "credits_text": "THE FALL OF A REBEL ANGEL. A TRISTAN BARR FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COMING SOON",
+  "mood": [
+    "dark",
+    "mysterious",
+    "gothic",
+    "intense",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "wings",
+      "conf": 0.9
+    },
+    {
+      "name": "gun",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.4,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatters and intense imagery.",
+  "description": "A man with dark wings stands against a dark background, holding a gun with blood splatters around him."
+}

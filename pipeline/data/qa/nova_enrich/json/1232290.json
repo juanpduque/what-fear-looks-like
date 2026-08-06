@@ -1,0 +1,49 @@
+{
+  "title_text": "結吃生",
+  "credits_text": "影布打子",
+  "languages": [
+    "zh"
+  ],
+  "other_text": "",
+  "mood": [
+    "supernatural",
+    "horror",
+    "gothic",
+    "mysterious",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.85,
+  "person": 0.9,
+  "animal": 0.6,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and mild horror elements.",
+  "description": "A boy and a girl face supernatural creatures in a dark, eerie environment filled with skulls and flickering lights."
+}

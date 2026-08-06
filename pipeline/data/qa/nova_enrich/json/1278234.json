@@ -1,0 +1,40 @@
+{
+  "title_text": "CURSED IN BAMA",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "camp",
+    "surreal",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.1,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "nudity"
+  ],
+  "moderation_notes": "Mild nudity present in poster artwork.",
+  "description": "A stylized poster features multiple characters with intense expressions, including a central figure holding a weapon, set against a dark background."
+}

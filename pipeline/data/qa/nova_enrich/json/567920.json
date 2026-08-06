@@ -1,0 +1,49 @@
+{
+  "title_text": "HALLOWEEN HORROR TALES",
+  "credits_text": "BLOODY STORIES OF THE NOCTURNE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "eerie",
+    "haunting",
+    "mysterious",
+    "spooky"
+  ],
+  "fear_labels": [
+    {
+      "name": "witch",
+      "conf": 0.9
+    },
+    {
+      "name": "haunted",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "pumpkin",
+      "conf": 0.6
+    },
+    {
+      "name": "night",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.2,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "sexual"
+  ],
+  "moderation_notes": "Mild sexual suggestion due to partial nudity.",
+  "description": "A witch with red hair sits amidst glowing pumpkins in a dark, eerie forest setting under a full moon."
+}

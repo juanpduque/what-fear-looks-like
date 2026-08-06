@@ -1,0 +1,39 @@
+{
+  "title_text": "GETAWAY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A VACATION TO DIE FOR",
+  "mood": [
+    "dread",
+    "suspense",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "trap",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster implies potential violence through the trap imagery.",
+  "description": "A poster shows a red house suspended above sharp teeth with a chain, set against a forest backdrop, titled 'GETAWAY' with the tagline 'A VACATION TO DIE FOR.'"
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "THERE'S SOMETHING IN THE SHADOWS",
+  "credits_text": "Written and Directed by John Williams Produced by John Williams and David M. Harris Starring John Saxon and Darwin J. Stewart",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IF YOU GO DOWN TO THE WOODS TODAY",
+  "mood": [
+    "mysterious",
+    "foreboding",
+    "suspenseful",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, eerie poster featuring a shadowy figure in a forest with glowing eyes and the title 'There's Something in the Shadows.'"
+}

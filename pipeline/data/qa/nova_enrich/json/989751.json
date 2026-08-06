@@ -1,0 +1,41 @@
+{
+  "title_text": "MEAT",
+  "credits_text": "A REER CONNORS FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THIS TIME HE'S GOING IN RAW!",
+  "mood": [
+    "violent",
+    "intense",
+    "raw",
+    "gritty",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests intense and violent themes.",
+  "description": "The poster features a group of people in a gritty, action-packed setting with bold red and black colors, highlighting the title 'MEAT' and a tagline."
+}

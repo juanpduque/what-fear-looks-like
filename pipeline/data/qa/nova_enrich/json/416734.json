@@ -1,0 +1,50 @@
+{
+  "title_text": "IN THE WOODS",
+  "credits_text": "STARRING ROBBIE STECCE, SATE BATAGHARO, CHRISTINA MARKS, WILL FINIAN, WRITTEN AND DIRECTED BY RUBEN RODRIGUEZ, PRODUCED BY RENE' EVANS AND ROSA ESPINOSA, MUSIC COMPOSED BY JOSEP SLOVSKY, SPECIAL EFFECTS MAKEUP BY MARIA LAPONTE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "They All Die... COMING SOON",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "forest",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and themes of violence.",
+  "description": "A horror movie poster featuring a dark forest scene with a skull and red-tinted trees, promoting the film \"In the Woods\"."
+}

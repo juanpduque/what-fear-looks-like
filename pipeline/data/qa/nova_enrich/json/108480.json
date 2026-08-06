@@ -1,0 +1,43 @@
+{
+  "title_text": "FROST",
+  "credits_text": "Written by MARCELO CASTRO Directed by LUIS RENJIFO Starring MARCELO CASTRO, VANESA RUIZ, DIEGO LORENZO, IVAN LOPEZ, MARIA LOPEZ, ALEJANDRO GOMEZ, MARIA GOMEZ, DIEGO LOPEZ, MARCELO CASTRO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "eerie",
+    "psychological",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence and partial nudity.",
+  "description": "A poster shows a close-up of a menacing eye and a woman in a dimly lit room with a large knife, suggesting horror and suspense."
+}

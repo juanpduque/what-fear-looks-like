@@ -1,0 +1,37 @@
+{
+  "title_text": "BLAME BLAME BLAME",
+  "credits_text": "A FILM BY AWW RATHA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HORROR COMEDY\n7SENSE\nDECEMBER 26 2019",
+  "mood": [
+    "anxious",
+    "suspenseful",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.2,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A group of people in a boat on a dark river, with intense expressions and a creepy atmosphere, suggesting a horror comedy theme."
+}

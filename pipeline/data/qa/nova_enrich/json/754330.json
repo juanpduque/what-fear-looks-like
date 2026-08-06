@@ -1,0 +1,39 @@
+{
+  "title_text": "THE FOLLOWER THE SLENDER MAN DOCUMENTARY",
+  "credits_text": "CLINICS UNIVERSITY OF SOUTH AUSTRALIA PRESENTS ERIC EAZEMACKA, NOLASSA JANE PERKINS, DAVID CAVADAR, TYLER SELLICK, PROJECT SUPERVISOR: KATHRYN MCGOWAN AND ROSSEN KOSTADINOV, DIRECTOR OF PHOTOGRAPHY: JAYE LASHLEY, PRODUCED BY: GORDAN SMITH, WRITTEN AND DIRECTED BY: TONY GORDALE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "New Hope Film Festival",
+  "mood": [
+    "mystery",
+    "suspense",
+    "psychological",
+    "documentary",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster features four individuals with a central shadowy figure, accompanied by bold title text and festival branding."
+}

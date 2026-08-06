@@ -1,0 +1,38 @@
+{
+  "title_text": "CHERNOBYL",
+  "credits_text": "DEN SISTA IVÅRASET",
+  "languages": [
+    "en",
+    "sv"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "surreal",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "radiation",
+      "conf": 0.9
+    },
+    {
+      "name": "cat",
+      "conf": 0.8
+    },
+    {
+      "name": "smoking",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 1.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A stylized orange cat with green eyes stands against a dark background, with smoke rising behind it. The text 'CHERNOBYL' and 'DEN SISTA IVÅRASET' appears prominently."
+}

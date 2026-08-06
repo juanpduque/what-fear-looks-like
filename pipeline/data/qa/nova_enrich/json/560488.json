@@ -1,0 +1,35 @@
+{
+  "title_text": "魔子",
+  "credits_text": "MONSTER 黄金市 完进作品 传宝保容 力着急打",
+  "languages": [
+    "en"
+  ],
+  "other_text": "藇宝学VIP小室",
+  "mood": [
+    "action",
+    "horror",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and horror elements with implied violence.",
+  "description": "A poster shows a monstrous creature looming over a vehicle with several people standing on it, suggesting an impending confrontation."
+}

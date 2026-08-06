@@ -1,0 +1,49 @@
+{
+  "title_text": "LSD E Angre Frankenstein",
+  "credits_text": "Un Film de German Magarinos",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "Gorevision Films\nUn Viaje Infernal hacia la Nada",
+  "mood": [
+    "surreal",
+    "gothic",
+    "erotic",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.6,
+  "sexual_content": 0.5,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and suggestive themes.",
+  "description": "Poster features a stylized face with green eyes holding a red object, overlaid with bold red and black text against a dark background."
+}

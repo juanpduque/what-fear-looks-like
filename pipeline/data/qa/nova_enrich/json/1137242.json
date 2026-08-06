@@ -1,0 +1,45 @@
+{
+  "title_text": "APEX 2 PREDATORS THE SPAWNING",
+  "credits_text": "HORROR FROM THE HEAVENS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "action",
+    "thriller",
+    "dramatic",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "shark",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.95,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and horror elements with sharks as primary threats.",
+  "description": "Movie poster shows two women on a boat facing giant sharks in a stormy sea, with dramatic lightning and intense expressions."
+}

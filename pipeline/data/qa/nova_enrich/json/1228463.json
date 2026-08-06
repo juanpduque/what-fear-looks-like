@@ -1,0 +1,37 @@
+{
+  "title_text": "BEHIND THE CAMERA",
+  "credits_text": "A FILM BY CHRISTIAN BYRD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AN AGITATED DIRECTOR AND THREE FRIENDS ATTEMPT TO MAKE A 40-MINUTE HORROR FILM ON THE NIGHT OF THE OSCARS; HOWEVER, THEY ARE CONTINUOUSLY INTERRUPTED BY A MYSTERIOUS FIGURE THAT CAN ONLY BE OBSERVED THROUGH THEIR CAMERAS.\nSHOOT A MOVIE DURING THE OSCARS 2023",
+  "mood": [
+    "suspense",
+    "mystery",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "camera",
+      "conf": 0.9
+    },
+    {
+      "name": "night",
+      "conf": 0.8
+    },
+    {
+      "name": "mystery",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster shows a man standing in a dark park at night with text about a film titled Behind the Camera by Christian Byrd."
+}

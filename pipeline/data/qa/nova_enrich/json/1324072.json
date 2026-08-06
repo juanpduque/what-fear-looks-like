@@ -1,0 +1,39 @@
+{
+  "title_text": "A MALDIÇÃO DE ROMANOVA",
+  "credits_text": "",
+  "languages": [
+    "pt"
+  ],
+  "other_text": "© Lanterna de Pedra Filmes",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a menacing atmosphere.",
+  "description": "A man holds an axe in front of a large, eerie face, suggesting a horror theme."
+}

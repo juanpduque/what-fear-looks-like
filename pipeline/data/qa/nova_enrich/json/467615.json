@@ -1,0 +1,47 @@
+{
+  "title_text": "THE CURSE OF BUCKOUT ROAD",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WELCOME TO WHITE PLAINS",
+  "mood": [
+    "eerie",
+    "haunting",
+    "mysterious",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "forest",
+      "conf": 0.75
+    },
+    {
+      "name": "night",
+      "conf": 0.9
+    },
+    {
+      "name": "text",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A ghostly figure in a tattered gown holds a lantern on a dark, empty road under a streetlamp, with a sign reading 'WELCOME TO WHITE PLAINS' in the background."
+}

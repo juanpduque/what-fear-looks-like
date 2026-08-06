@@ -1,0 +1,42 @@
+{
+  "title_text": "BLOOD DRIVE",
+  "credits_text": "MIDNIGHT GRINDHOUSE PRESENTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "June 14 on the Syfy Cable Channel",
+  "mood": [
+    "action",
+    "sci-fi",
+    "post-apocalyptic",
+    "gritty",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "vehicle",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "Contains mild violence and suggestive imagery.",
+  "description": "Poster features a group of characters in a desert setting with a vintage car, hinting at a post-apocalyptic sci-fi thriller."
+}

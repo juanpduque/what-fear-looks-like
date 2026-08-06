@@ -1,0 +1,46 @@
+{
+  "title_text": "THE BUTCHER",
+  "credits_text": "WRITTEN AND DIRECTED BY MICHAEL MOUTSATSOS\nCAST: MARIA OLSEN, NOEL JASON SCOTT, SAM MASON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DINNER TO BE SERVED",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "gritty",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster shows a butcher holding a knife amidst zombies, with a dark, eerie atmosphere and text indicating a horror theme."
+}

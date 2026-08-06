@@ -1,0 +1,40 @@
+{
+  "title_text": "Serial Killing 101",
+  "credits_text": "Justin Urich, Thomas Haden Church, Lisa Loeb",
+  "languages": [
+    "en"
+  ],
+  "other_text": "School Is Hell. And It Just Got A Lot Worse",
+  "mood": [
+    "dread",
+    "thriller",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, may be disturbing.",
+  "description": "A poster shows a knife piercing an apple with text overlay 'Serial Killing 101' and credits above."
+}

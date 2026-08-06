@@ -1,0 +1,46 @@
+{
+  "title_text": "HUMAN CATTLE",
+  "credits_text": "\"BUCKLE IN FOR A FULL THROTTLE BALLS-OUT MIND-WRECKER!\" - CHRIS ALEXANDER CHUCKVILLYDRAB.COM FROM THE DERANGED MINDS OF THE BUTCHER SHOP FX STUDIO AND RABIDOG FILMS JUST WHEN YOU THOUGHT IT WAS SAFE TO GO BACK INTO THE AMAZON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "action",
+    "thriller",
+    "camp",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "violence",
+      "conf": 0.75
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and horror elements.",
+  "description": "Poster features a screaming woman, a large dinosaur, and a muscular man in a jungle setting, promoting a horror film titled 'Human Cattle.'"
+}

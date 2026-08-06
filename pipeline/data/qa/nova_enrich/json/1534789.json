@@ -1,0 +1,48 @@
+{
+  "title_text": "HORROR SPELL",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "spooky",
+    "mysterious",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "book",
+      "conf": 0.6
+    },
+    {
+      "name": "candle",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and spooky imagery, but no explicit violence or gore.",
+  "description": "A poster features a whimsical horror theme with a jack-o'-lantern-headed figure, flames, candles, and a group of women in dark attire, evoking a mystical and eerie atmosphere."
+}

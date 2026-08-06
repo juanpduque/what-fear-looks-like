@@ -1,0 +1,43 @@
+{
+  "title_text": "CHILLS DOWN YOUR SPINE",
+  "credits_text": "A HORROR ANTHOLOGY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Twice the thrills... Twice the kills... Twice the chills... Chom Your Spine!",
+  "mood": [
+    "camp",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.3,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and mild horror themes.",
+  "description": "A horror anthology Blu-ray cover featuring multiple characters in eerie settings, including skulls and ghostly figures."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "LA PATAJOLA",
+  "credits_text": "",
+  "languages": [
+    "es"
+  ],
+  "other_text": "A LOS INFIELES SE LOS LLEVA",
+  "mood": [
+    "gothic",
+    "dread",
+    "mysterious",
+    "haunting",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and a mysterious, potentially supernatural figure.",
+  "description": "A mysterious figure with long hair and a skull-like object walks through a foggy forest, evoking a gothic and haunting atmosphere."
+}

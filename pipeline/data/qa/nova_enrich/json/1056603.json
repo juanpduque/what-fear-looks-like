@@ -1,0 +1,38 @@
+{
+  "title_text": "心霊写真部",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "やがて見つかる… 収集された現像写真、",
+  "mood": [
+    "eerie",
+    "mystery",
+    "haunting",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, eerie poster shows a shadowy figure in a train station with Japanese text overlay, evoking a haunting and mysterious atmosphere."
+}

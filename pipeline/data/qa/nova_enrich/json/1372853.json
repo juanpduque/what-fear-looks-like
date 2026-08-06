@@ -1,0 +1,45 @@
+{
+  "title_text": "A TASTE OF FLESH",
+  "credits_text": "A GORE - GORE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TWICE THE TERROR DOUBLE THE DANGER",
+  "mood": [
+    "horror",
+    "camp",
+    "surreal",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, with some suggestive imagery.",
+  "description": "Poster features two panels with a man holding a gun and a mummy, accompanied by bold red and yellow text."
+}

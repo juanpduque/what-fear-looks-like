@@ -1,0 +1,41 @@
+{
+  "title_text": "THE SKULL MAN",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "間の安子",
+  "mood": [
+    "gothic",
+    "dark",
+    "mysterious",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains dark and intense imagery suggestive of violence.",
+  "description": "A dark, stylized poster featuring bold red Japanese text and English subtitle 'The Skull Man,' with a shadowy figure in the background."
+}

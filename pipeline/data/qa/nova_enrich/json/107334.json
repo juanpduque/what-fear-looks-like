@@ -1,0 +1,46 @@
+{
+  "title_text": "NIGHT OF THE TEMPLAR",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE",
+  "mood": [
+    "gothic",
+    "historical",
+    "mysterious",
+    "action",
+    "drama"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "castle",
+      "conf": 0.8
+    },
+    {
+      "name": "knight",
+      "conf": 0.7
+    },
+    {
+      "name": "moon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild violence and blood imagery.",
+  "description": "Poster features a knight with a sword, surrounded by five faces, a castle, and a full moon in the background."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "EVIL FEED",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "aggressive",
+    "violent",
+    "disturbing",
+    "intense",
+    "threatening"
+  ],
+  "fear_labels": [
+    {
+      "name": "mask",
+      "conf": 0.9
+    },
+    {
+      "name": "text",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "axe",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violent imagery and disturbing themes.",
+  "description": "A person wearing a pig mask holds an axe against a red splattered background with bold text 'EVIL FEED.'"
+}

@@ -1,0 +1,51 @@
+{
+  "title_text": "BRIMSTONE INCORPORATED",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Three tales of terror worth the price of your soul!",
+  "mood": [
+    "terror",
+    "gothic",
+    "dread",
+    "supernatural",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic horror imagery including blood and monstrous creatures.",
+  "description": "A horror movie poster featuring a monstrous creature, terrified people, and a man holding a candle in a dark setting."
+}

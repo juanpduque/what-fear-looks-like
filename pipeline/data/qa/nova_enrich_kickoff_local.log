@@ -1,0 +1,3 @@
+=== kickoff self-chain from cursor=0 ===
+
+An error occurred (AccessDeniedException) when calling the Invoke operation: User: arn:aws:sts::567596065542:assumed-role/WSParticipantRole/Participant is not authorized to perform: lambda:InvokeFunction on resource: arn:aws:lambda:us-west-2:567596065542:function:nova-enrich-orchestrator with an explicit deny in a service control policy: arn:aws:organizations::815824707124:policy/o-zmgfflmzo8/service_control_policy/p-mjewvsbq

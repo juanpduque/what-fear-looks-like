@@ -1,0 +1,39 @@
+{
+  "title_text": "CURED",
+  "credits_text": "MICHAEL BERMAN SCOTT TAYLOR CAMERON HALLAND WRITTEN BY MICHAEL BERMAN DIRECTED BY MICHAEL GAYEEN ORIGINAL MUSIC BY ALIS O'COHRAN SPECIAL EFFECTS MAKE UP AND VISUAL EFFECTS BY GARYS PRODUCED BY EPIC ENGLAND & JESSE BURNS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE DOCTOR WILL SEE YOU NOW!",
+  "mood": [
+    "horror",
+    "psychological",
+    "disturbing",
+    "suspenseful",
+    "medical"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "medical",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A black and white poster features two faces, one monstrous and one medical, with bold title 'CURED' and credits below."
+}

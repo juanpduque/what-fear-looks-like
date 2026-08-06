@@ -1,0 +1,45 @@
+{
+  "title_text": "コラゴニスタール",
+  "credits_text": "水平から言く無合のヤビー！",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "実地現体に減つく強間の実認結果！",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes; mild blood-like imagery present.",
+  "description": "A DVD cover shows a eerie forest scene with a distorted face on a TV screen, featuring Japanese text and a horror theme."
+}

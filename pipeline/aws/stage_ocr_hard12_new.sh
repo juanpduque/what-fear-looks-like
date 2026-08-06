@@ -1,0 +1,84 @@
+#!/bin/bash
+# Stage hard-set posters + code for GLM-OCR / Unlimited-OCR / DeepSeek-OCR-2.
+# Reuses ocr_qwen_hard sample ids / poster_sources (homolog > original_up > original > w342).
+#
+# Usage:
+#   bash aws/stage_ocr_hard12_new.sh
+#   MODELS=glm,unlimited,deepseek2 bash aws/stage_ocr_hard12_new.sh
+set -euo pipefail
+export AWS_DEFAULT_REGION="${AWS_DEFAULT_REGION:-us-east-1}"
+export AWS_EC2_METADATA_DISABLED=true
+unset HTTP_PROXY HTTPS_PROXY ALL_PROXY http_proxy https_proxy all_proxy
+BUCKET="${BUCKET:-aof-owlv2-102516364259}"
+PREFIX="${PREFIX:-ocr_hard12_new}"
+SRC_PREFIX="${SRC_PREFIX:-ocr_qwen_hard}"
+MAX_N="${MAX_N:-120}"
+PIPE="$(cd "$(dirname "$0")/.." && pwd)"
+cd "$PIPE"
+
+echo "=== stage_${PREFIX} → s3://$BUCKET/${PREFIX}/ ==="
+
+mkdir -p "data/qa/${PREFIX}"
+
+if [ ! -f "data/qa/${SRC_PREFIX}/sample_ids.txt" ]; then
+  echo "ERROR: missing data/qa/${SRC_PREFIX}/sample_ids.txt"; exit 1
+fi
+cp -f "data/qa/${SRC_PREFIX}/sample_ids.txt" "data/qa/${PREFIX}/sample_ids.txt"
+[ -f "data/qa/${SRC_PREFIX}/sample_meta.csv" ] && \
+  cp -f "data/qa/${SRC_PREFIX}/sample_meta.csv" "data/qa/${PREFIX}/sample_meta.csv"
+[ -f "data/qa/${SRC_PREFIX}/poster_sources.csv" ] && \
+  cp -f "data/qa/${SRC_PREFIX}/poster_sources.csv" "data/qa/${PREFIX}/poster_sources.csv"
+
+N_LOCAL=$(wc -l < "data/qa/${PREFIX}/sample_ids.txt" | tr -d ' ')
+if [ "$N_LOCAL" -gt "$MAX_N" ]; then
+  echo "ERROR: sample has $N_LOCAL ids — refuse >$MAX_N"; exit 1
+fi
+if [ "$N_LOCAL" -ne 12 ]; then
+  echo "WARNING: expected 12 hard ids, got $N_LOCAL"
+fi
+if [ "$N_LOCAL" -lt 1 ]; then
+  echo "ERROR: empty sample_ids.txt"; exit 1
+fi
+echo "sample_n=$N_LOCAL (hard12_new from ${SRC_PREFIX})"
+
+STAGE="data/qa/_${PREFIX}_stage"
+rm -rf "$STAGE"
+mkdir -p "$STAGE/code" "$STAGE/posters" "$STAGE/qa"
+
+cp -f pilot_ocr_models.py "$STAGE/code/pilot_ocr_models.py"
+cp -f ocr_metrics.py "$STAGE/code/ocr_metrics.py"
+cp -f aws/ocr_hard12_new_chain.sh "$STAGE/code/ocr_hard12_new_chain.sh"
+cp -f aws/ocr_hard12_new_userdata.sh "$STAGE/code/ocr_hard12_new_userdata.sh"
+
+export PREFIX BUCKET MAX_N
+python3 aws/_stage_ocr_qwen_hard_posters.py
+
+cp -f "data/qa/${PREFIX}/sample_ids.txt" "$STAGE/qa/sample_ids.txt"
+[ -f "data/qa/${PREFIX}/sample_meta.csv" ] && \
+  cp -f "data/qa/${PREFIX}/sample_meta.csv" "$STAGE/qa/sample_meta.csv"
+[ -f "data/qa/${PREFIX}/poster_sources.csv" ] && \
+  cp -f "data/qa/${PREFIX}/poster_sources.csv" "$STAGE/qa/poster_sources.csv"
+
+N_LOCAL=$(wc -l < "data/qa/${PREFIX}/sample_ids.txt" | tr -d ' ')
+echo "final sample_n=$N_LOCAL"
+echo "jpg count: $(ls "$STAGE/posters"/*.jpg 2>/dev/null | wc -l | tr -d ' ')"
+
+echo "--- upload code + ids + subset posters.csv ---"
+aws s3 cp "$STAGE/code/pilot_ocr_models.py" "s3://${BUCKET}/${PREFIX}/code/pilot_ocr_models.py"
+aws s3 cp "$STAGE/code/ocr_metrics.py" "s3://${BUCKET}/${PREFIX}/code/ocr_metrics.py"
+aws s3 cp "$STAGE/code/ocr_hard12_new_chain.sh" "s3://${BUCKET}/${PREFIX}/code/ocr_hard12_new_chain.sh"
+aws s3 cp "$STAGE/code/ocr_hard12_new_userdata.sh" "s3://${BUCKET}/${PREFIX}/code/ocr_hard12_new_userdata.sh"
+aws s3 cp "$STAGE/qa/sample_ids.txt" "s3://${BUCKET}/${PREFIX}/sample_ids.txt"
+aws s3 cp "$STAGE/posters.csv" "s3://${BUCKET}/${PREFIX}/posters.csv"
+[ -f "$STAGE/qa/sample_meta.csv" ] && aws s3 cp "$STAGE/qa/sample_meta.csv" "s3://${BUCKET}/${PREFIX}/sample_meta.csv"
+[ -f "$STAGE/qa/poster_sources.csv" ] && aws s3 cp "$STAGE/qa/poster_sources.csv" "s3://${BUCKET}/${PREFIX}/poster_sources.csv"
+
+MODELS="${MODELS:-glm,unlimited,deepseek2}"
+printf '%s\n' "$MODELS" | aws s3 cp - "s3://${BUCKET}/${PREFIX}/MODELS"
+echo "staged MODELS=$MODELS"
+
+echo "--- sync sampled posters only ---"
+aws s3 sync "$STAGE/posters/" "s3://${BUCKET}/${PREFIX}/posters/" --size-only
+
+echo "LISTO — s3://${BUCKET}/${PREFIX}/"
+echo "Siguiente: MODELS=$MODELS bash aws/launch_ocr_hard12_new.sh"

@@ -1,0 +1,39 @@
+{
+  "title_text": "BOOGIEMAN",
+  "credits_text": "CULLEN STUDIOS PRESENTS BOOGIEMAN STARRING KEN TIGNOR JOHN MURRAY PATRICK O'BRIEN CHARLES CULLEN SPECIAL EFFECTS CHARLES CULLEN CINEMATOGRAPHY WHOEVER WAS AVAILABLE EDITED BY CHARLES CULLEN JEFF WILLIS STEVE HOBBS SCENE BY CHARLES CULLEN ADDITIONAL MUSIC BY SOUND IDEAS JEFF MAIDEN ANIMATION ED GENDRON NANCY BAGATO PRODUCED WRITTEN AND DIRECTED BY CHARLES CULLEN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Axes... Machetes... Knives... Gasoline... Crayons... If he can find it, He'll Kill you with it!!",
+  "mood": [
+    "dread",
+    "terror",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains violent imagery and threatening text.",
+  "description": "A vintage-style horror poster for 'Boogieman' featuring a shadowy figure and an axe, with bold red lettering and a warning tagline."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "CREATURE OF DARKNESS",
+  "credits_text": "Devon SAWA, Sanoe LAKE, Matthew LAWRENCE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PRAY FOR DAY",
+  "mood": [
+    "horror",
+    "suspense",
+    "thriller",
+    "dread",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Movie poster features three actors with a large, menacing creature in the background. The title \"Creature of Darkness\" is prominently displayed."
+}

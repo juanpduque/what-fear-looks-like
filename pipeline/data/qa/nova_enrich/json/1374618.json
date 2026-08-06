@@ -1,0 +1,43 @@
+{
+  "title_text": "FEAR BOOK",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "2023.01.20 Бүх кино театруудаар",
+  "mood": [
+    "mysterious",
+    "suspenseful",
+    "haunting",
+    "forest",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.3,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A group of people stands in a foggy forest with an eerie atmosphere, suggesting a supernatural or horror theme."
+}

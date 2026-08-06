@@ -1,0 +1,46 @@
+{
+  "title_text": "DARKNESS",
+  "credits_text": "LEIF JONKER'S THE ULTIMATE IN VAMPIRE SPLATTER!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WHEN VAMPIRES WALK THE EARTH EVEN THE DEAD WILL SCREAM",
+  "mood": [
+    "horror",
+    "gothic",
+    "violent",
+    "dramatic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.95
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster featuring a blood-covered man with a dramatic expression, promoting a vampire horror film titled 'Darkness'."
+}

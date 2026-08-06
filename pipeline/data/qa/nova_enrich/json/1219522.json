@@ -1,0 +1,41 @@
+{
+  "title_text": "TENEMENT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ARE YOU WAITING FOR YOU",
+  "mood": [
+    "tense",
+    "gritty",
+    "desperate",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.5
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.5,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood, suggesting a tense survival scenario.",
+  "description": "A man and a woman stand in a dimly lit, graffiti-covered room, with the man holding a weapon. The atmosphere is tense and gritty, suggesting a survival scenario."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "魔魔無身 DX",
+  "credits_text": "結組の史場結",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "死为しければ不欲気",
+  "mood": [
+    "dread",
+    "horror",
+    "psychological",
+    "disturbing",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and disturbing imagery.",
+  "description": "A horror DVD cover featuring a distorted, screaming face amidst scattered pills and bloodstains, with bold red Japanese text."
+}

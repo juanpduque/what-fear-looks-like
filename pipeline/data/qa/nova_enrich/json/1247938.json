@@ -1,0 +1,45 @@
+{
+  "title_text": "魔絵 2",
+  "credits_text": "七十四の電機電影",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "150分の大バリーム受絶!左魔絵図の強定止!!結影",
+  "mood": [
+    "horror",
+    "gothic",
+    "violent",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and implied violence.",
+  "description": "Poster features a dark, masked figure with glowing green eyes and sharp teeth, set against a gritty background with bold Japanese text."
+}

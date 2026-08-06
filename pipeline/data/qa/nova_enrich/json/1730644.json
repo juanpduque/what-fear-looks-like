@@ -1,0 +1,42 @@
+{
+  "title_text": "DECEIT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE STORY OF A MURDERER",
+  "mood": [
+    "dread",
+    "thriller",
+    "mystery",
+    "gothic",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and suggests violent themes.",
+  "description": "A hooded figure stands in a dark forest, their white hoodie splattered with red blood, with bold red text reading 'DECEIT' above."
+}

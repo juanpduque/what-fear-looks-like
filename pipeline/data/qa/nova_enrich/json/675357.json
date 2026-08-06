@@ -1,0 +1,50 @@
+{
+  "title_text": "MANIA",
+  "credits_text": "EIN FILM VON ALEXANDER FRANZ & THOMAS HERR",
+  "languages": [
+    "de"
+  ],
+  "other_text": "POSTMORTEM PRODUCTIONS ZEIGT SIE WOLLTEN SPASS... DOCH SIE FANDEN DAS GRAUEN. IN FRANKEN WALDERN LAUERT DER TOD! RIS YOUR GUTS OUT IN NOVEMBER 2017",
+  "mood": [
+    "gothic",
+    "dread",
+    "horror",
+    "violent",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "mask",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    },
+    {
+      "name": "forest",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intended for mature audiences.",
+  "description": "A masked figure holds a scythe against a dark background with a house and forest in the distance, featuring bold red text and a dramatic moonlit scene."
+}

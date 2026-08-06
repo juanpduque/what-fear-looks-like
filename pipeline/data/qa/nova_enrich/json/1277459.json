@@ -1,0 +1,41 @@
+{
+  "title_text": "Blutkreatur von jenseits des Grabes!",
+  "credits_text": "",
+  "languages": [
+    "de"
+  ],
+  "other_text": "ES IST FÜRM VON ROTT FÜSER UND GEEN CRAM",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied horror themes and occult references.",
+  "description": "A poster features a dark, intense face with wild hair above the title, surrounded by distressed figures in a dramatic scene."
+}

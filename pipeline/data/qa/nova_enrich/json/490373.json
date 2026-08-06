@@ -1,0 +1,40 @@
+{
+  "title_text": "MUNAFIK",
+  "credits_text": "NİÇEMET BERK SANÇIZ DOĞMAZ",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "3 NISANDA SINEMALARDA\nm5",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.1,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains intense red imagery suggestive of blood and a dark, eerie atmosphere.",
+  "description": "A dark poster features a shadowy figure in a red-lit forest with bold title 'MUNAFIK' at the bottom."
+}

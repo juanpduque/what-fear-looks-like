@@ -1,0 +1,35 @@
+{
+  "title_text": "RATTLED",
+  "credits_text": "WILLIAM KATZ",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "suspense",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "snake",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense horror elements and implied violence.",
+  "description": "The poster shows a man and a woman with a rattlesnake between them, suggesting a tense, horror-filled scenario."
+}

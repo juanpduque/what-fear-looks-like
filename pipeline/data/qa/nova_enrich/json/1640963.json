@@ -1,0 +1,40 @@
+{
+  "title_text": "EXPERIMENT 101",
+  "credits_text": "A MOVIE MADNESS FILM DIRECTED BY PAWEŁ ZIOLKOWSKI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "The footage survived, they didn't",
+  "mood": [
+    "dread",
+    "suspense",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A poster shows three figures in a dark room, one holding a gun, facing a person with blood on their back."
+}

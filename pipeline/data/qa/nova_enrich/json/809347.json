@@ -1,0 +1,50 @@
+{
+  "title_text": "THE HAUNTING OF HELL HOLE MINE",
+  "credits_text": "TOM SIZEMORE TINY LISTER SALLY MIRKLAND RUDY YOUNGBLOOD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SOME EVIL CAN'T STAY BURIED",
+  "mood": [
+    "dread",
+    "gothic",
+    "terrifying",
+    "haunting",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "haunting",
+      "conf": 0.9
+    },
+    {
+      "name": "mine",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains themes of violence and occult horror.",
+  "description": "A man stands in a fiery, hellish landscape with a menacing expression, promoting a horror film titled 'The Haunting of Hell Hole Mine.'"
+}

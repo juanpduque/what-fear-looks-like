@@ -1,0 +1,42 @@
+{
+  "title_text": "Hollywood Vampyr",
+  "credits_text": "Trevor Goddard, Nora Zimmett, Muse Watson",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Celebrate Life's Certainty... DEATH BASED ON A SERIES OF TRUE EVENTS",
+  "mood": [
+    "gothic",
+    "horror",
+    "mysterious",
+    "dramatic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.3,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild violent and occult themes.",
+  "description": "A man with dark makeup and a woman with red lips are featured on a movie poster titled 'Hollywood Vampyr,' suggesting a gothic horror theme."
+}

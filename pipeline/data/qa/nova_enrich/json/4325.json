@@ -1,0 +1,40 @@
+{
+  "title_text": "Parapsycho",
+  "credits_text": "William Berger Marisa Mell Mathieu Carrière",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "other_text": "SPEKTRUM DER ANGST",
+  "mood": [
+    "psychological",
+    "thriller",
+    "suspense",
+    "mystery",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring a smiling woman with a dark, shadowy figure behind her, titled 'Parapsycho' with German subtitle 'Spektrum der Angst.'"
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "LE DÉTRAQUR DE LOBÉ",
+  "credits_text": "PRESENTED BY : NEC PICTURES ENTERTAINMENT\nSIMON ENGOLO - ANNE TIENTCHEU - FAGNIA ORNELLA - TRÉSOR TAMBOULA - MBENDE JESS POUDJEU LOANNA - KENGNE PAVEL - KAMWA ISIDORE - CED MBELLA - NGOUNE GUY AFAGNIGNI SOLEIL - DEBA LORAINE - YONTA BRENDA - EMMA WONDJA - FOYA CYNTHIA",
+  "languages": [
+    "fr"
+  ],
+  "other_text": "LA MORT N'EST PAS LA PIRE CHOSE DE LA VIE. LE PIRE, C'EST CE QUI MEURT EN NOUS QUAND ON VIT\nAVANT PREMIERE CE 20-AOUT-2021 AU CINEMA EDEN DE DOUA",
+  "mood": [
+    "intense",
+    "dramatic",
+    "forest",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence through the weapon and intense action pose.",
+  "description": "A man in rugged clothing wields a large knife in a dense forest, suggesting an action or thriller theme."
+}

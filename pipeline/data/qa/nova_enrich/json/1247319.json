@@ -1,0 +1,41 @@
+{
+  "title_text": "高組影片届影片届",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "宝宝の赤護路道 30属",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains horror themes and mild violence.",
+  "description": "A DVD cover featuring two ghostly figures in a dark, eerie setting with Japanese text overlay indicating a horror anthology."
+}

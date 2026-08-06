@@ -1,0 +1,39 @@
+{
+  "title_text": "From Beyond The Grave",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Terror to delight worshippers of the Macabre.",
+  "mood": [
+    "gothic",
+    "surreal",
+    "macabre"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 1.0
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and a stylized skull, but no explicit violence or gore.",
+  "description": "A stylized skull with bat wings and a crown sits atop a grassy mound, with a bat flying nearby and dramatic text overlay."
+}

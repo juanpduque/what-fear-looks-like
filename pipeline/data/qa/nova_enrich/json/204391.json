@@ -1,0 +1,46 @@
+{
+  "title_text": "ゾンビデオ",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "悪の女王・ゾンビ・ビデオ",
+  "mood": [
+    "horror",
+    "camp",
+    "erotic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.5,
+  "sensitive": [
+    "violence",
+    "sexual",
+    "nudity"
+  ],
+  "moderation_notes": "Contains mild violence and sexual content, suitable for mature audiences.",
+  "description": "A vibrant poster features a group of people, including a central woman in a red top, with bold Japanese text and a horror theme."
+}

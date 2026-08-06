@@ -1,0 +1,43 @@
+{
+  "title_text": "The Wolf Man",
+  "credits_text": "with CLAUDE RAINS WARREN WILLIAM RALPH BELLAMY PATRIC KNOWLES BELA LUGOSI MARIA OUSPENSKAYA EVELYN ANKERS LON CHANEY as \"The Wolf Man\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "mysterious",
+    "dramatic",
+    "classic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "forest",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A vintage movie poster features a menacing wolf-like creature with a human face, set against a dark, eerie landscape with a lone tree."
+}

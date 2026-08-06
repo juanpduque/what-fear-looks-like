@@ -1,0 +1,48 @@
+{
+  "title_text": "EL ZEBIR",
+  "credits_text": "KORKULARINIZ HIÇ BITMEYECEK\nYÖNETMEN SINAN UZUN",
+  "languages": [
+    "en",
+    "tr",
+    "ar"
+  ],
+  "other_text": "لعنيت",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "eerie",
+    "terrifying"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and horror imagery.",
+  "description": "A horror movie poster features a terrified woman in a blood-stained wedding dress with a shadowy figure behind her."
+}

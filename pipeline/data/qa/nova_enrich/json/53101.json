@@ -1,0 +1,45 @@
+{
+  "title_text": "MANBORG",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "sci-fi",
+    "post-apocalyptic",
+    "intense",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.95
+    },
+    {
+      "name": "explosion",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and violent imagery, including explosions and a monstrous creature.",
+  "description": "A muscular man in futuristic armor stands defiantly amidst a fiery explosion, with a monstrous face looming behind him and several figures in the background."
+}

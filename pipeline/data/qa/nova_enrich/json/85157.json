@@ -1,0 +1,40 @@
+{
+  "title_text": "OPEN HOUSE",
+  "credits_text": "SANDY COBE PRESENTS JOSETTE BOTTOMS, ADRIENNE BARBEAU \"OPEN HOUSE\" RUDY RAMOS, MARY STAYN, SCOTT THOMPSON BAKER JAG KOWALSKI, ROBERT HAYES, NAOMI SHOHAN VICTORIA RICE, DAVID ROSENBERG SANDY COBE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SANDY COBE PRESENTS",
+  "mood": [
+    "horror",
+    "thriller",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and suggestive themes.",
+  "description": "A poster features a large syringe dripping blood over a house, with a woman in the background and bold red and blue colors."
+}

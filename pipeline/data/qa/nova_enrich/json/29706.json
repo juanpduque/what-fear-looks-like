@@ -1,0 +1,46 @@
+{
+  "title_text": "HUNTING GROUNDS",
+  "credits_text": "AN ERIC BILODEAU FILM\nBeware Of Your Instinct\nThe Animal Lurks Inside\nFICTIS PRODUCTIONS AND TEAM HX PRESENTS ERIC BILODEAU \"HUNTING GROUNDS\" PATRICE LEBLANC, PATRICK BABY, MARIE-ÈVE LEMAIRE, LUC RIVARD, ÉMILE GILBERT-GASSON, VALÉRIE TREMBLAY, LOUIS AMOIT, FRANÇOIS SOUCY, MUSCI BY LUC TREMBLAY, ADDITIONAL MUSIC BY YURDIY, HUGO BASS, RAY ARBY, DIRECTOR OF PHOTOGRAPHY ERIC BILODEAU, ASSISTANT DIRECTOR SIMON BOVIN, EDITORS ERIC BILODEAU/KAEP BY OLIVER XAVIER, TEXA FX GROUP ART DIRECTOR ÉRIC BILODEAU, ADDITIONAL ART DIRECTOR SHAWN-OLIVER WOODWARD, VISUAL EFFECTS BY FICTIS PRODUCTIONS SCREENPLAY BY JONATHAN GAGNE, ÉRIC BILODEAU DIRECTED BY ÉRIC BILODEAU",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "other_text": "TEXA BC VideomaLise ASSUR FICTIS PRODUCTIONS",
+  "mood": [
+    "dread",
+    "survival",
+    "apocalyptic",
+    "horror",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "crowd",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "moon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense and violent imagery, suitable for mature audiences.",
+  "description": "A group stands atop a pile of skulls under a large moon, surrounded by a dense crowd, with a tagline warning of instinct and lurking danger."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "BLOOD VOW",
+  "credits_text": "JAKE BOWMAN JESSICA WILLIS GERALD CRUM KURT KISER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PASS THIS CUP FROM ME",
+  "mood": [
+    "gothic",
+    "dread",
+    "mysterious",
+    "haunting",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and a dark, gothic atmosphere.",
+  "description": "A hooded figure stands before a gated entrance, holding a chalice, with a gothic house and cross in the background."
+}

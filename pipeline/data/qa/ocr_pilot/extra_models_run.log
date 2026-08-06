@@ -1,0 +1,112 @@
+sample n=20 from /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/ocr_pilot/sample_ids.txt
+     id                         title  year
+1586019                      The Cure  2013
+1247719            Fries on the Grass  2024
+ 337558 Witchdoctor of the Livingdead  1986
+ 779247                          Hell  2018
+1280376              The Spider's Web  1912
+ 440085                 KL24: Zombies  2017
+ 763975            Mark of the Damned  2006
+ 621486                       Bite Me  2010
+ 565608       Attack of the Tromaggot  2010
+ 832310                      Verrückt  2021
+ 770632                         Alone  2020
+ 609245      Luminous Void: Docudrama  2019
+ 873668                Are You Ready?  2021
+ 993921                     Let Me Go  2021
+ 484627                  He Will Call  2017
+ 484394                    Door Light  2017
+1020266                           III  2021
+ 522987                   Inside Evil  2017
+ 818442                 The Immigrant  1986
+1046326                     Searchers  2023
+kept 160 prior rows for models outside ['ppocr', 'florence']
+
+=== model=ppocr (classic PaddleOCR) n=20 ===
+  init PaddleOCR lang=en use_angle_cls/textline_ori use_gpu=False
+/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/pilot_ocr_extra_models.py:453: DeprecationWarning: The parameter `use_angle_cls` has been deprecated and will be removed in the future. Please use `use_textline_orientation` instead.
+  return PaddleOCR(**kwargs)
+/Users/juanpabloduque/miniforge3/lib/python3.10/site-packages/paddle/utils/cpp_extension/extension_utils.py:712: UserWarning: No ccache found. Please be aware that recompiling all source files may be required. You can download and install ccache from: https://github.com/ccache/ccache/blob/master/doc/INSTALL.md
+  warnings.warn(warning_message)
+[32mCreating model: ('PP-LCNet_x1_0_doc_ori', None, None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `/Users/juanpabloduque/.paddlex/official_models/PP-LCNet_x1_0_doc_ori`.[0m
+[32mCreating model: ('UVDoc', None, None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `/Users/juanpabloduque/.paddlex/official_models/UVDoc`.[0m
+[32mCreating model: ('PP-LCNet_x1_0_textline_ori', None, None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `/Users/juanpabloduque/.paddlex/official_models/PP-LCNet_x1_0_textline_ori`.[0m
+[32mCreating model: ('PP-OCRv6_medium_det', None, None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `/Users/juanpabloduque/.paddlex/official_models/PP-OCRv6_medium_det`.[0m
+[32mCreating model: ('PP-OCRv6_medium_rec', None, None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `/Users/juanpabloduque/.paddlex/official_models/PP-OCRv6_medium_rec`.[0m
+  id=1586019 status=ok chars=16 overlap=1.0 2.275s
+  id=1247719 status=ok chars=69 overlap=0.0 2.559s
+  id=337558 status=ok chars=152 overlap=0.75 5.215s
+  id=779247 status=ok chars=4 overlap=0.0 1.086s
+  id=1280376 status=ok chars=108 overlap=1.0 4.342s
+  id=440085 status=ok chars=12 overlap=1.0 1.265s
+  id=763975 status=ok chars=198 overlap=0.25 5.683s
+  id=621486 status=ok chars=39 overlap=0.5 2.476s
+  id=565608 status=ok chars=14 overlap=0.0 1.885s
+  id=832310 status=ok chars=10 overlap=1.0 1.057s
+  id=770632 status=ok chars=1 overlap=0.0 1.377s
+  id=609245 status=ok chars=0 overlap=0.0 1.031s
+  id=873668 status=ok chars=0 overlap=0.0 1.022s
+  id=993921 status=ok chars=0 overlap=0.0 1.009s
+  id=484627 status=ok chars=1 overlap=0.0 1.084s
+  id=484394 status=ok chars=0 overlap=0.0 1.03s
+  id=1020266 status=ok chars=3 overlap=1.0 1.097s
+  id=522987 status=ok chars=10 overlap=0.5 1.284s
+  id=818442 status=ok chars=0 overlap=0.0 1.564s
+  id=1046326 status=ok chars=9 overlap=1.0 3.244s
+
+=== model=florence device=mps n=20 ===
+  loading Florence-2 florence-community/Florence-2-base on mps dtype=torch.float32
+Loading weights:   0%|          | 0/665 [00:00<?, ?it/s]Loading weights:   9%|▉         | 63/665 [00:00<00:01, 559.63it/s]Loading weights:  18%|█▊        | 119/665 [00:00<00:01, 325.28it/s]Loading weights:  29%|██▉       | 196/665 [00:00<00:01, 434.03it/s]Loading weights:  37%|███▋      | 245/665 [00:00<00:00, 436.75it/s]Loading weights:  44%|████▍     | 293/665 [00:01<00:02, 161.18it/s]Loading weights: 100%|██████████| 665/665 [00:01<00:00, 509.74it/s]
+  loaded florence-community/Florence-2-base
+  id=1586019 status=ok chars=19 overlap=0.0 5.774s
+  id=1247719 status=ok chars=69 overlap=0.0 2.835s
+  id=337558 status=ok chars=231 overlap=0.0 6.637s
+  id=779247 status=ok chars=29 overlap=0.0 1.549s
+  id=1280376 status=ok chars=168 overlap=0.0 3.177s
+  id=440085 status=ok chars=14 overlap=0.5 1.563s
+  id=763975 status=ok chars=372 overlap=0.75 22.746s
+  id=621486 status=ok chars=41 overlap=0.0 8.904s
+  id=565608 status=ok chars=21 overlap=0.0 6.336s
+  id=832310 status=ok chars=10 overlap=1.0 7.819s
+  id=770632 status=ok chars=1 overlap=0.0 6.282s
+  id=609245 status=ok chars=20 overlap=0.0 1.779s
+  id=873668 status=ok chars=8 overlap=0.0 1.194s
+  id=993921 status=ok chars=1 overlap=0.0 0.942s
+  id=484627 status=ok chars=8 overlap=0.0 1.512s
+  id=484394 status=ok chars=1 overlap=0.0 1.21s
+  id=1020266 status=ok chars=3 overlap=1.0 1.174s
+  id=522987 status=ok chars=11 overlap=1.0 1.032s
+  id=818442 status=ok chars=1 overlap=0.0 0.988s
+  id=1046326 status=ok chars=9 overlap=1.0 1.057s
+
+LISTO → /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/ocr_pilot/results.csv (200 rows)
+
+=== comparison (mean title_overlap / chars / latency; ok rate) ===
+      model  n  ok  ok_pct  mean_overlap  mean_overlap_all  mean_chars  mean_latency_s
+       qwen 20  20   100.0        0.6375            0.6375        39.2           2.146
+     google 20  20   100.0        0.5500            0.5500        67.5           0.384
+    qianfan 20  20   100.0        0.5375            0.5375        66.8          10.769
+     paddle 20  20   100.0        0.4500            0.4500       114.0          40.381
+rekognition 20  20   100.0        0.4250            0.4250        84.2           0.653
+      ppocr 20  20   100.0        0.4000            0.4000        32.3           2.079
+   deepseek 20  20   100.0        0.3875            0.3875       693.0           7.348
+        got 20  20   100.0        0.3125            0.3125        24.6           2.428
+    easyocr 20  13    65.0        0.4038            0.2625        60.9           0.000
+   florence 20  20   100.0        0.2625            0.2625        51.9           4.225
+
+Ranking by mean title_overlap (all rows):
+   1. qwen          overlap=0.6375  ok=20/20  chars≈39.2  latency≈2.146s
+   2. google        overlap=0.5500  ok=20/20  chars≈67.5  latency≈0.384s
+   3. qianfan       overlap=0.5375  ok=20/20  chars≈66.8  latency≈10.769s
+   4. paddle        overlap=0.4500  ok=20/20  chars≈114.0  latency≈40.381s
+   5. rekognition   overlap=0.4250  ok=20/20  chars≈84.2  latency≈0.653s
+   6. ppocr         overlap=0.4000  ok=20/20  chars≈32.3  latency≈2.079s
+   7. deepseek      overlap=0.3875  ok=20/20  chars≈693.0  latency≈7.348s
+   8. got           overlap=0.3125  ok=20/20  chars≈24.6  latency≈2.428s
+   9. easyocr       overlap=0.2625  ok=13/20  chars≈60.9  latency≈0.0s
+  10. florence      overlap=0.2625  ok=20/20  chars≈51.9  latency≈4.225s

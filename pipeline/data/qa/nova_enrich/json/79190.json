@@ -1,0 +1,44 @@
+{
+  "title_text": "JABBERWOCK",
+  "credits_text": "DRAGON SIEGE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "epic",
+    "fantasy",
+    "intense",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "battle",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense battle scenes and a large dragon, suggesting potential violence.",
+  "description": "A man faces a massive dragon in a fiery battlefield, wielding a sword, with a city in ruins behind them."
+}

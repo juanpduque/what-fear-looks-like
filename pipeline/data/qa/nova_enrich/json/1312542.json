@@ -1,0 +1,39 @@
+{
+  "title_text": "One For The Road",
+  "credits_text": "a film by SARAH LEIGH Based upon a short story by Stephen King",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "mysterious",
+    "eerie",
+    "haunting",
+    "suspenseful",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.4
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.3
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, foggy forest scene with a car on a snowy road, featuring the title 'One For The Road' and credits."
+}

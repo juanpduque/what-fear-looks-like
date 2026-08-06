@@ -1,0 +1,50 @@
+{
+  "title_text": "ECHOES OF DREAD",
+  "credits_text": "FILM DECAYS. EVIL DOESN'T. STARRING: ERIN COLEMAN, NICK MERCER, AUSTIN HARRIS, MAGGIE BAKER, MIKE HAYES, JOSH CLARKMAN & FRANCESCA MORRIS. DIRECTED BY: PAUL C. RICE & MARK RICE. WRITTEN BY: ERIN COLEMAN & BRENNAN KEDER. PRODUCED BY: NICK MERCER, AUSTIN HARRIS, MAGGIE BAKER, MIKE HAYES, JOSH CLARKMAN & FRANCESCA MORRIS. EXECUTIVE PRODUCER: ERIN COLEMAN. MUSIC BY: ERIN COLEMAN. CINEMATOGRAPHY BY: PAUL C. RICE. EDITED BY: MARK RICE. PRODUCTION DESIGN BY: ERIN COLEMAN. COSTUME DESIGN BY: BRENNAN KEDER. SOUND DESIGN BY: ERIN COLEMAN. VISUAL EFFECTS BY: MARK RICE. SPECIAL EFFECTS BY: ERIN COLEMAN. MAKEUP & PROSTHETICS BY: BRENNAN KEDER. POST-PRODUCTION SUPERVISOR: ERIN COLEMAN. PUBLICITY BY: MARK RICE. MARKETING BY: ERIN COLEMAN. DISTRIBUTION BY: CAGE FILMS.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FILM DECAYS. EVIL DOESN'T.",
+  "mood": [
+    "dread",
+    "horror",
+    "suspense",
+    "claustrophobic",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "tunnel",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and implied violence.",
+  "description": "A woman with a flashlight explores a dark tunnel, facing eerie, grotesque figures emerging from the walls."
+}

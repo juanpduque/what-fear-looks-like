@@ -1,0 +1,45 @@
+{
+  "title_text": "MR. JINGLES",
+  "credits_text": "HE'S HERE... WITH AN AXE TO GRIND.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "dark",
+    "sinister",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains violent imagery and a monstrous character.",
+  "description": "A poster features a menacing, colorful monster with sharp teeth and glowing eyes, accompanied by bold red text stating 'HE'S HERE... WITH AN AXE TO GRIND.'"
+}

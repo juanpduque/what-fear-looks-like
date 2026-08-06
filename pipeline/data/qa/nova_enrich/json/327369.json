@@ -1,0 +1,42 @@
+{
+  "title_text": "pig pen",
+  "credits_text": "A RUNAWAY RETURNS FOR REVENGE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dark",
+    "gritty",
+    "revenge",
+    "intense",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and themes of revenge.",
+  "description": "A dark poster features a stylized red face with blood dripping, and a small figure on a skateboard below."
+}

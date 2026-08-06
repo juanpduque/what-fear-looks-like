@@ -1,0 +1,40 @@
+{
+  "title_text": "大雪怪",
+  "credits_text": "SNOW MONSTER",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "BEIJING",
+  "mood": [
+    "fantasy",
+    "horror",
+    "mythical",
+    "intense",
+    "epic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.95,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A fierce, large creature towers over a woman in traditional attire holding a staff, set against a dramatic, icy backdrop."
+}

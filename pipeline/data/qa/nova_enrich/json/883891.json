@@ -1,0 +1,46 @@
+{
+  "title_text": "SAW",
+  "credits_text": "EVERY PIECE HAS A PUZZLE.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "psychological",
+    "thriller",
+    "disturbing",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "gore",
+      "conf": 0.85
+    },
+    {
+      "name": "puzzle",
+      "conf": 0.7
+    },
+    {
+      "name": "text",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore.",
+  "description": "A poster showing a severed, decaying hand with blood splatters against a white background, with the title 'SAW' prominently displayed."
+}

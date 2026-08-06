@@ -1,0 +1,36 @@
+{
+  "title_text": "IMMERSION",
+  "credits_text": "LILOU BUCHART UGO MERLIER AVEC ALIX VANDENBROUCK ELISE ROGIEN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "suspenseful",
+    "dark",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence through the presence of a gun and a masked figure.",
+  "description": "A poster shows a masked figure in a dark setting with a hand holding a gun, suggesting a tense and suspenseful atmosphere."
+}

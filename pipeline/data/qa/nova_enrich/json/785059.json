@@ -1,0 +1,35 @@
+{
+  "title_text": "RED LIGHT",
+  "credits_text": "TED RAIMI BRIAN KRAUSE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "RULE NUMBER ONE: NO SCREAMING.",
+  "mood": [
+    "intense",
+    "thriller",
+    "suspenseful",
+    "dark",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man with a serious expression is featured prominently against a dark red background, with bold red text reading \"RED LIGHT\" and additional credits above."
+}

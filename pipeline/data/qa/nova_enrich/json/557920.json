@@ -1,0 +1,46 @@
+{
+  "title_text": "Elves",
+  "credits_text": "HE'S BACK AND HE BROUGHT SOME FRIENDS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A B C",
+  "mood": [
+    "horror",
+    "dark humor",
+    "violent",
+    "creepy",
+    "fantasy"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster shows three elf-like creatures in green outfits, one holding a large knife with blood on it, standing amidst toys and a red truck."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "不得事 你被火锁",
+  "credits_text": "影车/影立 王极洗 WANG SHENGJIE",
+  "languages": [
+    "zh"
+  ],
+  "other_text": "不得事与你被火锁 不得事与你被火锁 不得事与你被火锁",
+  "mood": [
+    "gothic",
+    "eerie",
+    "haunting",
+    "mysterious",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult imagery and mild violent undertones.",
+  "description": "A gothic-themed poster features a woman in traditional attire surrounded by shadowy figures and candles, evoking a haunting and mysterious atmosphere."
+}

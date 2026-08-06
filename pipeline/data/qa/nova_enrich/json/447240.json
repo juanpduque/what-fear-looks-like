@@ -1,0 +1,46 @@
+{
+  "title_text": "鬼差女",
+  "credits_text": "導演:江志強 出演:方正、許榮志、林子強、余安安、陳家麗、林子強、余安安、陳家麗",
+  "languages": [
+    "zh"
+  ],
+  "other_text": "SHOCKING! 血腥白骨女！\n\n恐怖到極致！\n\n你敢看嗎？",
+  "mood": [
+    "horror",
+    "gothic",
+    "supernatural",
+    "dread",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery including blood and a monstrous skull.",
+  "description": "A poster featuring a skull with sharp teeth and a woman with long hair, set against a dark, eerie background with Chinese text."
+}

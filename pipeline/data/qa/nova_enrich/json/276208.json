@@ -1,0 +1,49 @@
+{
+  "title_text": "SKINWALKER",
+  "credits_text": "CURSE OF THE SHAMAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "supernatural",
+    "terrifying",
+    "mystical",
+    "forest",
+    "mythic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and a monstrous creature; no explicit violence or gore.",
+  "description": "A poster shows a menacing creature with sharp teeth and glowing eyes, with a person near a campfire in a dark forest."
+}

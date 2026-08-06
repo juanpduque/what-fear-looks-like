@@ -1,0 +1,41 @@
+{
+  "title_text": "DAWN OF THE DEAD",
+  "credits_text": "PENNY J BOND LUKE W PICK ANDY STARKS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE GREATEST STORY EVER TOLD. WITH ZOMBIES. PROBABLY.",
+  "mood": [
+    "horror",
+    "thriller",
+    "post-apocalyptic",
+    "suspense",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A poster shows a woman holding a phone with a dark, eerie background. Bold red text reads 'DAWN OF THE DEAD' with additional taglines and cast names."
+}

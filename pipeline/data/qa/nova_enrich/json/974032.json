@@ -1,0 +1,44 @@
+{
+  "title_text": "鬼玩子",
+  "credits_text": "Haven Wong VS Zoona",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "狂暴之城",
+  "mood": [
+    "action",
+    "horror",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and weapon imagery.",
+  "description": "A poster featuring a bald man with intense eyes, surrounded by characters holding weapons in an action-horror setting."
+}

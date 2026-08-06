@@ -78,4 +78,7 @@ fi
 
 echo "GitHub Pages (after push): https://juanpduque.github.io/what-fear-looks-like/jobs-dashboard/"
 echo "file:// fallback: file://$ROOT/site/jobs-dashboard/index.html"
+echo "Docs: $ROOT/docs/JOBS_DASHBOARD.md"
 echo "Stop: kill \$(cat $PIDF); kill \$(cat $HTTP_PIDF 2>/dev/null) 2>/dev/null || true"
+# Tip: if launched from an agent sandbox that reaps children, run this script
+# from Terminal.app / iTerm so the poller survives after the chat ends.

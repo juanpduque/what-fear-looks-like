@@ -1,0 +1,47 @@
+{
+  "title_text": "METEMPSYCHOSIS",
+  "credits_text": "JOSHUA HASTINGS PRODUCTION MARK WILLIAMS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "haunting",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and a skeletal figure, suggesting occult themes.",
+  "description": "A dark poster features a skull with blood dripping, flanked by a man with a long beard and a woman, with bold red title text."
+}

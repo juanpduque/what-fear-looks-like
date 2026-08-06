@@ -1,0 +1,47 @@
+{
+  "title_text": "LOST MEDIA",
+  "credits_text": "DIRECTED BY SHAWN C. PHILLIPS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Some movies were never meant to be found!",
+  "mood": [
+    "horror",
+    "thriller",
+    "mystery",
+    "supernatural",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a woman holding a microphone in front of a monstrous creature with multiple limbs, surrounded by people and eerie forest scenery."
+}

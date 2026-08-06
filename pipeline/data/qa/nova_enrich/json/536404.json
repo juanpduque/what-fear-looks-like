@@ -1,0 +1,43 @@
+{
+  "title_text": "WOLF",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "suspense",
+    "haunting",
+    "foreboding",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.5
+    },
+    {
+      "name": "monster",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.4,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark forest scene with a solitary figure standing in the distance, illuminated by a faint light, evoking a sense of mystery and dread."
+}

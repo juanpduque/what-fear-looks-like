@@ -1,0 +1,50 @@
+{
+  "title_text": "GRAVE MISTAKES",
+  "credits_text": "DIRECTED BY NICK WRIGHT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SOME SECRETS SHOULD STAY BURIED.",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery",
+    "haunting",
+    "somber"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "grave",
+      "conf": 0.95
+    },
+    {
+      "name": "cemetery",
+      "conf": 0.95
+    },
+    {
+      "name": "shadow",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and a dark, ominous atmosphere.",
+  "description": "A man stands alone in a foggy cemetery under a stormy sky, with a large shadowy figure and dripping red behind him."
+}

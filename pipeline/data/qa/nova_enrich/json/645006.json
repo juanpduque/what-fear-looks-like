@@ -1,0 +1,42 @@
+{
+  "title_text": "ANGRIFF DER DEICHZOMBIES",
+  "credits_text": "VON FILM VON ANDRE VOSS",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "other_text": "TOXIC FILTH VIDEO\nDACHLAND PICTURES PRÄSENTIERT\n2004\nINCLUSIVE AXE KILLER UND VSM - VIERLÄNDER SCHRUFFEL MASSACRE",
+  "mood": [
+    "horror",
+    "zombie",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "zombie",
+      "conf": 0.9
+    },
+    {
+      "name": "graveyard",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements and implied violence.",
+  "description": "Poster shows a man in a forested area with a tombstone, featuring bold horror-themed text and a zombie theme."
+}

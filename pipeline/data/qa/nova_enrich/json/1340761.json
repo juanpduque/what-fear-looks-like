@@ -1,0 +1,44 @@
+{
+  "title_text": "DOLL UNDER THE STAIRS",
+  "credits_text": "WHERE EVIL LIVES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "doll",
+      "conf": 0.95
+    },
+    {
+      "name": "knife",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.75
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.85,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.75,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A creepy doll with a knife stands against a dark background, with bold red text reading 'DOLL UNDER THE STAIRS' and the tagline 'WHERE EVIL LIVES.'"
+}

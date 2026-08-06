@@ -1,0 +1,42 @@
+{
+  "title_text": "ASFIXIA",
+  "credits_text": "Ten cuidado a quién intentas matar...",
+  "languages": [
+    "es"
+  ],
+  "other_text": "Cine Maldito Festival (Madrid, Spain) 2012, Knokke Island Film Festival (Knokke, Belgium) 2012, Festival of Fantastic Films (Manchester, UK) 2012",
+  "mood": [
+    "dread",
+    "gothic",
+    "erotic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence and sexual content.",
+  "description": "A dark, eerie poster features a shrouded figure with a haunting face, suggesting themes of horror and suspense."
+}

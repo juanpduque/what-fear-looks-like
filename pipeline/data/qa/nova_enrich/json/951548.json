@@ -1,0 +1,45 @@
+{
+  "title_text": "ZOMBIERCALYPSE",
+  "credits_text": "WHEN THERE'S NO MORE BEER IN THE BOTTLE THE DEAD WILL WALK THE EARTH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BEST FL STUDIOS PRESENTS JIM AAA DIR JEFF ALLEN",
+  "mood": [
+    "dread",
+    "apocalyptic",
+    "violent",
+    "gritty"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.95,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A man in red zombie-like makeup holds guns amidst a ruined landscape, with a tagline about the apocalypse."
+}

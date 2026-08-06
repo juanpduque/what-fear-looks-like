@@ -1,0 +1,45 @@
+{
+  "title_text": "VAMPIRES Suck",
+  "credits_text": "A FORBIDDEN LOVE STORY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "romantic",
+    "horror",
+    "dark",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "forest",
+      "conf": 0.75
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.9,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains mild romantic and occult themes, but no explicit violence or gore.",
+  "description": "A poster featuring a wolf and a vampire facing each other with the title 'VAMPIRES Suck' and tagline 'A FORBIDDEN LOVE STORY' in a dark forest setting."
+}

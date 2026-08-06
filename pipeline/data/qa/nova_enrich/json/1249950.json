@@ -1,0 +1,51 @@
+{
+  "title_text": "妖怪心霊体験",
+  "credits_text": "〜身近にある心霊現象〜 公演隊",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "",
+  "mood": [
+    "supernatural",
+    "haunting",
+    "eerie",
+    "disturbing",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.65
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains disturbing imagery and themes of supernatural horror.",
+  "description": "A poster featuring four ghostly, eerie children in school uniforms with haunting expressions, set against a dark, shadowy background."
+}

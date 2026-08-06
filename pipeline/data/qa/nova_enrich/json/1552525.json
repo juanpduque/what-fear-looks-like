@@ -1,0 +1,43 @@
+{
+  "title_text": "THE RAVEN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "dark",
+    "eerie",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "shadow",
+      "conf": 0.85
+    },
+    {
+      "name": "gothic",
+      "conf": 0.8
+    },
+    {
+      "name": "mystery",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.7,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark silhouette stands before a glowing red raven shape against a black background, with bold red title text above."
+}

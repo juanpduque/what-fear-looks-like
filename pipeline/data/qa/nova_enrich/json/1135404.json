@@ -1,0 +1,43 @@
+{
+  "title_text": "THE GAME OF KILLING",
+  "credits_text": "又名:人民殺比",
+  "languages": [
+    "en"
+  ],
+  "other_text": "大消消比",
+  "mood": [
+    "horror",
+    "suspense",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A poster featuring intense faces and a glowing ghostly figure, suggesting a psychological horror theme."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "AFTER SCHOOL: HORROR 2",
+  "credits_text": "BIO PICTURES presents CASSANDRA RANDY DHEVIN MICHELLE Berawal dari keisongan. Akhirnya mereka menjadi...",
+  "languages": [
+    "en"
+  ],
+  "other_text": "GARANG MENARIK!",
+  "mood": [
+    "dread",
+    "suspense",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    },
+    {
+      "name": "face",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "Poster shows three teens in a tense, horror-themed setting with one holding a weapon and blood visible."
+}

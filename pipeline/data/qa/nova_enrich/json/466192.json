@@ -1,0 +1,49 @@
+{
+  "title_text": "MACABRE AT LIGHTHOUSE LAKE",
+  "credits_text": "A FILM BY KEVIN HERDOG",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "mysterious",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    },
+    {
+      "name": "lighthouse",
+      "conf": 0.9
+    },
+    {
+      "name": "darkness",
+      "conf": 0.8
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and dark imagery.",
+  "description": "A dark, eerie poster features a lighthouse on a frozen landscape under a black moon, with swirling dark patterns in the sky."
+}

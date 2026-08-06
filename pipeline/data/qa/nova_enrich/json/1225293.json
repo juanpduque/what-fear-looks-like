@@ -1,0 +1,39 @@
+{
+  "title_text": "HOT SPRING SHARK ATTACK",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "shark",
+      "conf": 1.0
+    },
+    {
+      "name": "attack",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and implied violence involving a shark attack.",
+  "description": "A poster shows a giant shark attacking near a waterfall with a person leaping away and a small dog nearby."
+}

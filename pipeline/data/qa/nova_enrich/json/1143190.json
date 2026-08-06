@@ -1,0 +1,46 @@
+{
+  "title_text": "FEAR THE NIGHT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "suspenseful",
+    "dark",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.3
+    },
+    {
+      "name": "night",
+      "conf": 0.95
+    },
+    {
+      "name": "text",
+      "conf": 1.0
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild blood and weapon imagery, suggesting potential violence.",
+  "description": "A woman with blonde hair stands in a dark setting, wearing a damaged shirt with the title 'FEAR THE NIGHT' printed on it, holding a weapon."
+}

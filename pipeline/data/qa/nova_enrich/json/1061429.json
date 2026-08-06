@@ -1,0 +1,43 @@
+{
+  "title_text": "COPLEY AN AMERICAN FAIRYTALE",
+  "credits_text": "DAVID SULLIVAN HEATHER PIKAS KEN ARNOLD JOHNNY ALONSO KEVIN JIGGETTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SOMETIMES THE LINES BETWEEN THE LIVING AND THE DEAD BLUR.",
+  "mood": [
+    "mysterious",
+    "haunting",
+    "supernatural",
+    "gothic",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring a close-up of a smiling face with a dimly lit house in the background, titled 'Copley: An American Fairytale.'"
+}

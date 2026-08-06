@@ -1,0 +1,42 @@
+{
+  "title_text": "EXTINCTION",
+  "credits_text": "SEGMENT FROM ZOMBIE WARS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A SELECT STORM PRODUCTIONS",
+  "mood": [
+    "dread",
+    "apocalyptic",
+    "sci-fi",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring a skull with a woman in a helmet superimposed over it, with bold red text reading 'EXTINCTION' and a tagline 'SEGMENT FROM ZOMBIE WARS.'"
+}

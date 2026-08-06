@@ -1,0 +1,50 @@
+{
+  "title_text": "THE PIGMAN MURDERS",
+  "credits_text": "\"Deliverance Meets Blair Witch.\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SEVEN FRIENDS NO WITNESSES",
+  "mood": [
+    "horror",
+    "thriller",
+    "forest",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A horror poster featuring a monstrous pigman holding a knife in a dark forest, with bloodstains on his clothes and jeans."
+}

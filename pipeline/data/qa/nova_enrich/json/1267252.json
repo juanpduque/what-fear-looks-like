@@ -1,0 +1,50 @@
+{
+  "title_text": "GORE GUYLES 2",
+  "credits_text": "Marco Calleri Ryan Greenacre Sebastien Croteau",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Blood, Guts, Gore, and Brutality. Uncle Vicious is Back. BRAIN DAMAGE FILMS",
+  "mood": [
+    "gothic",
+    "horror",
+    "violent",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore imagery.",
+  "description": "A poster featuring a monstrous, demonic face with sharp teeth and a dark, eerie background, promoting the horror film 'Gore Gyles 2'."
+}

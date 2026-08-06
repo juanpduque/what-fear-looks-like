@@ -1,0 +1,42 @@
+{
+  "title_text": "THE BUSINESSMAN",
+  "credits_text": "\"His Business Is KILLING... And Business Is GOOD!\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "crime",
+    "thriller",
+    "dark",
+    "intense",
+    "gritty"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "text",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A man in a suit holds a knife with blood, standing in an urban setting with a tagline about killing and business."
+}

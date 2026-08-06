@@ -1,0 +1,45 @@
+{
+  "title_text": "WHEN PUPPETS & DOLLS ATTACK",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PUPPET",
+  "mood": [
+    "horror",
+    "thriller",
+    "dark humor",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.6,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and monstrous imagery.",
+  "description": "A poster featuring various creepy puppets and dolls with menacing expressions, one holding a revolver, set against a dark red background."
+}

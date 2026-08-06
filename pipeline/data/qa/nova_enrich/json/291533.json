@@ -1,0 +1,39 @@
+{
+  "title_text": "WASTELAND",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "post-apocalyptic",
+    "gritty",
+    "survival",
+    "desolate",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "apocalypse",
+      "conf": 0.9
+    },
+    {
+      "name": "ruins",
+      "conf": 0.95
+    },
+    {
+      "name": "desolation",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man stands in a ruined cityscape, wearing rugged clothing and carrying tools, suggesting a post-apocalyptic survival scenario."
+}

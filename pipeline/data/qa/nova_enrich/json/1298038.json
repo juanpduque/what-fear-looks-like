@@ -1,0 +1,40 @@
+{
+  "title_text": "VIRGO",
+  "credits_text": "INEZ MICAELLA ANDERSSON • EMILIE LIHAY • VICTOR IVAN • ALMA WESTERLUND WILMA G. SAND • KARL HAPPMANN foo REEDLUND • KJELLING JAKOB EKVALL Kompositore JOAKIM MARTINSSON • JAKOB EKVALL Läs ANDREAS LÅOS Kostym STELLA NYSTROM Scenograf JESPER JÜNGERMARK • LÖJ ANDREAS MASSON Producent JAKOB EKVALL • EISA RANTANEN foo OLIVER GUERPILLON Manus & Reg JAKOB EKVALL Producer av LYKANTROP & FOX IN THE SNOW med stöd av GÖTEBORGS STAD Distribution NJUTFILMS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "LYKANTROP Fox in the Snow®",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "occult",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and suggestive themes.",
+  "description": "A striking red poster features a central figure holding a weapon, with a smaller figure in a red dress, evoking a gothic and occult atmosphere."
+}

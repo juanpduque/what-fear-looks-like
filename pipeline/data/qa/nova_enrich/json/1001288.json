@@ -1,0 +1,42 @@
+{
+  "title_text": "VADE RETRO",
+  "credits_text": "UNE COLÉDIE HORRIFIQUE D'ANTONIN PEREJAIKO\nESJÉBAN PASCAL JAGNAJI YOLÈNE GONÇRAND CÉLINE FUHRER EVA RAMI SÉBASTIEN CHASSAGNE ALMA JODOROWSKY YULIYA ABISS FRANCIS CONVERT ATHAYA MOKONZI FRED TOUCH MAO TAO PASCAL LEGITIMUS ARIELLE DOMBASLE PHILIPPE DUQUESNE",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "other_text": "ACQUA ALTA À PANTHE DISTRIBUTION PRÉSIDENT",
+  "mood": [
+    "gothic",
+    "camp",
+    "surreal",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including blood and monstrous creatures.",
+  "description": "A group of characters stands near a coffin surrounded by carnivorous plants, with a volcano erupting in the background."
+}

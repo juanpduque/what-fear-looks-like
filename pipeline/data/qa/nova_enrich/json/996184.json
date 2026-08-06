@@ -1,0 +1,45 @@
+{
+  "title_text": "The Golem",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "haunting",
+    "dark",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "golem",
+      "conf": 0.9
+    },
+    {
+      "name": "occult",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and a mysterious, potentially supernatural figure.",
+  "description": "A shadowy figure stands in front of a dark background with the title 'The Golem' prominently displayed above."
+}

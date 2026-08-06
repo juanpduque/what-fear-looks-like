@@ -1,0 +1,40 @@
+{
+  "title_text": "LOS INOCENTES",
+  "credits_text": "UNA PELÍCULA DE MAURICIO BRUNETTI",
+  "languages": [
+    "es"
+  ],
+  "other_text": "SON HOMBRES QUE NO LLEVARÁN SUS ESPACIOS A PRESENCIARLOS SIN SILENCIOS",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild violent imagery suggested by fire and intense facial expressions.",
+  "description": "A collage-style poster features intense faces and a central fiery scene, suggesting a gothic horror theme."
+}

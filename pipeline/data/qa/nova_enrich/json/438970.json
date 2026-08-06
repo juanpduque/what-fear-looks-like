@@ -1,0 +1,46 @@
+{
+  "title_text": "SHARKNADO 5",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "GLOBAL SWARMING",
+  "mood": [
+    "action",
+    "disaster",
+    "thriller",
+    "sci-fi",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "water",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.1,
+  "animal": 0.95,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains intense action sequences and mild gore.",
+  "description": "Poster shows sharks attacking iconic landmarks amidst fire and chaos, with bold title 'SHARKNADO 5' at the top."
+}

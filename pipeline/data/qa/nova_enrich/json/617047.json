@@ -1,0 +1,42 @@
+{
+  "title_text": "VLOG VAMPIRE",
+  "credits_text": "EL CASO DE LIDIA TORRES",
+  "languages": [
+    "es"
+  ],
+  "other_text": "PRODUCCIÓN EJECUTIVA: ISTMO PRODUCCIONES LEGIONDEURIX Y PERISCÓPIA AUDIVISUAL GÚIA Y DIRECCIÓN: MAYEN BRIEN, PRODUCCIÓN: RODRIGO LÓPEZ, FOTOGRAFÍA: JULIO BUCHEROSTRO SONIDO DIRECTO: EMILIO RAMOS, ARTE: ENTRUYA FADON Y ZEUARDO CASTRO MAQUILLAJE: DIANA LÓPEZ, POSTPRODUCCIÓN: ISIDOR IS DÁTIZ, EDICIÓN: RODRIGO LÓPEZ",
+  "mood": [
+    "gothic",
+    "dread",
+    "horror",
+    "dark",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and horror elements.",
+  "description": "A dark, intense poster features a close-up of a distressed woman with blood near her mouth, titled \"VLOG VAMPIRE: EL CASO DE LIDIA TORRES\"."
+}

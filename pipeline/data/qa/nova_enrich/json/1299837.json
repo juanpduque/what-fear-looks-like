@@ -1,0 +1,48 @@
+{
+  "title_text": "ВИЦА МДЗИЦКА",
+  "credits_text": "",
+  "languages": [
+    "ru"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "haunting",
+    "mysterious",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "tower",
+      "conf": 0.8
+    },
+    {
+      "name": "moon",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.2,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and eerie atmosphere, but no explicit violence or gore.",
+  "description": "A dark silhouette of a tower looms against a red moonlit sky with crows, featuring a small figure near the base and bold red Cyrillic text."
+}

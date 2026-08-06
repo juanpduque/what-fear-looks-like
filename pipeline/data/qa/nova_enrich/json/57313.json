@@ -1,0 +1,43 @@
+{
+  "title_text": "8213: GACY HOUSE",
+  "credits_text": "IN 2004, A FILM CREW SET OUT TO FIND THE GHOST OF JOHN WAYNE GACY. THEY DID.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ME SCENE: DO NOT CROSS. CRIME SCENE. DO NOT CROSS. CRIME SCENE. DO NOT CROSS. OFFICIAL CRIME SCENE FOOTAGE PROPERTY OF THE CHICAGO POLICE DEPT.",
+  "mood": [
+    "haunting",
+    "mystery",
+    "thriller",
+    "supernatural",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.95
+    },
+    {
+      "name": "crime_scene",
+      "conf": 0.85
+    },
+    {
+      "name": "text_heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster shows a house labeled '8213: GACY HOUSE' with crime scene tape and text about finding John Wayne Gacy's ghost."
+}

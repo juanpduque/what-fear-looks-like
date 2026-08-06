@@ -1,0 +1,38 @@
+{
+  "title_text": "SPIDER IN THE CUPBOARD",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "suspense",
+    "horror",
+    "claustrophobic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "claustrophobia",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A woman peers through a narrow gap in a wall, her expression tense and wary, suggesting a sense of hidden danger or surveillance."
+}

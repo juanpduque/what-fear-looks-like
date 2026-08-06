@@ -1,0 +1,47 @@
+{
+  "title_text": "NIGHTMARE IN ARGUS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "eerie",
+    "haunting",
+    "mysterious",
+    "foreboding",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.5
+    },
+    {
+      "name": "forest",
+      "conf": 0.4
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.3
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dimly lit trailer under a stormy night sky with a full moon, casting long shadows on a gravel surface."
+}

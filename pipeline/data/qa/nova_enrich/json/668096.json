@@ -1,0 +1,39 @@
+{
+  "title_text": "정포의자차",
+  "credits_text": "",
+  "languages": [
+    "ko"
+  ],
+  "other_text": "그건이 사람지만 보는 동이 지장되는거",
+  "mood": [
+    "mysterious",
+    "haunting",
+    "noir",
+    "suspenseful",
+    "urban"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A solitary figure stands in a dimly lit urban street at night, with a mysterious and haunting atmosphere."
+}

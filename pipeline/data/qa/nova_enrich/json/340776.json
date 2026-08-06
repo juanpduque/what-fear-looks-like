@@ -1,0 +1,39 @@
+{
+  "title_text": "BIGFOOT THE MOVIE",
+  "credits_text": "SMALL TOWN. BIG PROBLEM.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thrilling",
+    "mysterious",
+    "adventure",
+    "forest",
+    "creature"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a large, hairy creature with a fierce expression against a snowy forest backdrop, with bold red title text reading 'BIGFOOT THE MOVIE.'"
+}

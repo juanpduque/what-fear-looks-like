@@ -1,0 +1,45 @@
+{
+  "title_text": "INHUMANOIDS",
+  "credits_text": "THE EVIL THAT LIES WITHIN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "intense",
+    "apocalyptic",
+    "fantasy",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and monstrous imagery, but no explicit violence or gore.",
+  "description": "A poster shows a large, menacing creature emerging from flames with shattered rocks around it, titled 'Inhumanoids: The Evil That Lies Within.'"
+}

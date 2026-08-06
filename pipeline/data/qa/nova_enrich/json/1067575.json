@@ -1,0 +1,42 @@
+{
+  "title_text": "COMING ATTRACTIONS",
+  "credits_text": "Featuring Bonus Films SCHLOCK O' RAMA! TRAILERSPLOITATION!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MADNESS, TORTURE AND MUTILATION BEYOND YOUR WILDEST IMAGINATION! You have to see it to believe it! PREVIEWS OF HORROR, GRIFFHOUSE, CORE FILM TRAILERS FROM THE UNDERGROUND",
+  "mood": [
+    "horror",
+    "camp",
+    "gritty",
+    "intense",
+    "provocative"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.6,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.5,
+  "violence": 0.7,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and disturbing imagery.",
+  "description": "A collage-style poster features intense horror imagery, including weapons, distressed faces, and bold red text promoting a series of underground horror trailers."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "400 WAYS TO KILL A VAMPIRE",
+  "credits_text": "EVEN THE DEAD KNOW FEAR\nPRODUCED BY ADRENALIN PRODUCTIONS PRODUCERS BILL MULLIGAN AND CHRISTINE PARKER DIRECTOR CHRISTINE PARKER WRITER BILL MULLIGAN CINEMATOGRAPHER ALAN WATKINS STARRING BILL MULLIGAN MICHAEL RAY WILLIAMS MINA EDGERTON AND AMBER TEACHEY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Adrenalin Productions",
+  "mood": [
+    "gothic",
+    "horror",
+    "dark",
+    "intense",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.5,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and horror themes.",
+  "description": "A poster features a man in a hat holding a weapon and a woman in a gothic dress, with bold title text and credits."
+}

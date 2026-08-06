@@ -1,0 +1,42 @@
+{
+  "title_text": "DEADASH",
+  "credits_text": "THIS JOB WILL KILL YOU",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A FILM BY DEVAN SCHOLEN STARRING: DEVAN SCHOLEN - MARIA OLSEN - STEF BEATON EDITED BY: JUSTIN JONES COSTUME DESIGNER: BRIAN HURD PRODUCTION DESIGN: OLIVER BOON WRITTEN BY: DANIEL ROWITZ SOUND DESIGN: SCOTT SEAGREN",
+  "mood": [
+    "thriller",
+    "horror",
+    "dramatic",
+    "intense",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intended for mature audiences.",
+  "description": "A poster shows a bloody hand holding a bag with a silhouette of a person in the background and the title \"DEADASH\" prominently displayed."
+}

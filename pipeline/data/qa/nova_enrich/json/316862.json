@@ -1,0 +1,46 @@
+{
+  "title_text": "27 HORAS CON LA MUERTE",
+  "credits_text": "IVONNE MARITZA GOMEZ, JARIO PINELA TELEZ",
+  "languages": [
+    "es"
+  ],
+  "other_text": "UNA ESCALOFRIANTE SOCIEDAD CON LA MUERTE!",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "psychological",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and occult themes.",
+  "description": "A poster features a skeletal figure holding a scythe and a terrified woman, with dramatic text overlay."
+}

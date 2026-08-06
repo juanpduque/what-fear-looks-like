@@ -1,0 +1,50 @@
+{
+  "title_text": "SWAMP FREAK",
+  "credits_text": "HELENE UDY FELISSA ROSE LESLEH O'DONALDSON MY BLOODY VALENTINE SLEEPYHALL CAMP HAPPY BIRTHDAY TO ME",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FREAK OF NATURE",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "camp",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "water",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.6,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and implied violence.",
+  "description": "A poster shows a dark, eerie swamp setting with a large building and a silhouette of a person walking towards it, featuring bold red text and a mysterious atmosphere."
+}

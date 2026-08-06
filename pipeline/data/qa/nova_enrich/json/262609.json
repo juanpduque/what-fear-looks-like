@@ -1,0 +1,39 @@
+{
+  "title_text": "ASTRO-ZOMBIES",
+  "credits_text": "M3: DONNA CLOTTON... GARY LESTER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ESCAPE OF THE MUTANT CLONES\nTheir demented brains lead them to kill, kill, kill!",
+  "mood": [
+    "camp",
+    "sci-fi",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.3
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violent themes and monstrous imagery.",
+  "description": "A man stands in front of a large skull with a sword, with bold title text and tagline about mutant clones and zombies."
+}

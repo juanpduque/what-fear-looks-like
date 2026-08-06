@@ -1,0 +1,341 @@
+sample n=100 from data/qa/ocr_pilot_v2/sample_ids.txt
+     id                                               title  year
+ 484509                                         Just Spooks  1925
+1261561                                    The Monkey's Paw  1923
+ 362776                                  Ghost Town Frolics  1938
+  26921                     The Mystery of the Mary Celeste  1935
+ 212973                                Gildersleeve's Ghost  1944
+  48800                                         The Unknown  1946
+  35073                       The Beast from 20,000 Fathoms  1953
+ 836924                                         Roh Membela  1955
+   3104                          Frankenstein Created Woman  1967
+  64524                                           Nightmare  1964
+  77399                              Incense for the Damned  1971
+  30833                                   Drive-In Massacre  1976
+ 399172                                  Lipstick and Blood  1984
+1015482                                 Kiss of the Serpent  1988
+  10283    Friday the 13th Part VIII: Jason Takes Manhattan  1989
+  88410                                         Beyond Evil  1980
+  86687                                        Severed Ties  1992
+ 336254                                            Downtime  1995
+  36992                                              Shakma  1990
+  43274                                     Tower of Terror  1997
+  15056                        The Curse of King Tut's Tomb  2006
+  23532                           How to Be a Serial Killer  2009
+  31012                                            Cerberus  2005
+  45551                                        Surveillance  2006
+ 156252                                              Phobic  2002
+ 743757                            Blood Orgy of the Damned  2007
+  11908                                             Hatchet  2006
+  28265                                 Lovesick: Sick Love  2004
+  28419                                         Hellbreeder  2004
+  53553                                            The Glow  2002
+  77050                                            Theodore  2009
+ 278267                                       The Dead Walk  2008
+ 165078                                      Legend of Hell  2012
+ 225048                                          Evangeline  2013
+ 233194                                       8 Butterflies  2010
+ 286452                                       Varsity Blood  2014
+ 300156                  The Interrogation of Cheryl Cooper  2014
+ 302019                                           Crow Hand  2014
+ 387034                                         Nasty Nancy  2010
+ 491649                                               Larry  2017
+ 505063                          Await Further Instructions  2018
+ 547055                                           Threshold  2016
+ 636515                                       Hidden Mother  2019
+ 653537                                            Whispers  2019
+ 772603                                               Money  2017
+ 974046                              House of White Spiders  2010
+ 976209                                     Midnight Thirst  2016
+  77677                                             Escapee  2011
+  94910                                          Magnificat  2011
+ 207475                                The Ouija Experiment  2011
+ 259675                                   Belly of the Wolf  2013
+ 343674                                       Gerald's Game  2017
+ 356486                                      Lumberjack Man  2015
+ 384756                                               Rabid  2019
+ 472015                                 Hunting for Shadows  2016
+ 487439                                                Itch  2017
+ 682809                                     Under the Table  2011
+ 748251                                     Vamp Bikers Dos  2015
+ 861413                                          A Dream...  2012
+ 940187                                      THE INQUISTION  2019
+ 972244                                     Darkness of Day  2010
+ 748589 Housesitter: The Night They Saved Siegfried's Brain  2020
+ 796250                                         Confinement  2022
+ 802851                                             Charles  2022
+ 854417                                              Bearry  2021
+ 863406                                       The Blue Rose  2024
+ 918096              Hemet, or the Landlady Don't Drink Tea  2024
+ 931049                                    Beware the Woods  2022
+1022479                                     You're Melting!  2022
+1083119                                 The Lost Chronicles  2023
+1125186                                      Home Education  2023
+1193824                                         Rabbit Trap  2025
+1289969                          The Battle of Grovers Mill  2024
+1298819                               Clickbait: Unfollowed  2024
+1307154                                    Sinister Surgeon  2024
+1375109                                    Darby After Dark  2024
+1397562                                              Coreys  2024
+1441287                                         House Rules  2024
+1443966                               How Was Your Weekend?  2025
+1475231                                            Bonehead  2025
+1718150                                              Curfew  2025
+ 652004                             The Wolf of Snow Hollow  2020
+ 931940                                             The Fix  2024
+ 949486                                               Doors  2020
+ 988142                           The Five Fingers of a Dog  2022
+1085262                                           Our House  2023
+1148920                                            Trial 22  2023
+1229586                                             Stutter  2024
+1273536                      Theoretical: The Invisible Man  2024
+1294319                                       Shades of Red  2024
+1346645                                                Lupo  2024
+1351896                                               Sally  2024
+1363776                                           Paralysis  2024
+1379480                                   Oliver's Basement  2024
+1405670                                             xOxExFx  2024
+1463113                                                Bone  2023
+1483020                                        Camp Baloney  2025
+1483743                                  up here, disappear  2025
+1541944                                       A Hollow Tree  2023
+1578643                                           Cymophane  2024
+kept 300 prior rows for models outside ['florence', 'ppocr']
+
+=== model=florence device=mps n=100 ===
+  loading Florence-2 florence-community/Florence-2-base on mps dtype=torch.float32
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/665 [00:00<?, ?it/s]Loading weights:  14%|█▍        | 93/665 [00:00<00:00, 796.95it/s]Loading weights:  27%|██▋       | 180/665 [00:00<00:00, 829.64it/s]Loading weights:  40%|███▉      | 264/665 [00:00<00:01, 241.63it/s]Loading weights: 100%|██████████| 665/665 [00:00<00:00, 727.55it/s]
+  loaded florence-community/Florence-2-base
+  id=484509 status=ok chars=110 overlap=0.0 4.212s
+  id=1261561 status=ok chars=193 overlap=0.3333 4.155s
+  id=362776 status=ok chars=48 overlap=0.3333 1.989s
+  id=26921 status=ok chars=30 overlap=0.8 1.517s
+  id=212973 status=ok chars=213 overlap=0.0 4.972s
+  id=48800 status=ok chars=129 overlap=0.5 3.28s
+  id=35073 status=ok chars=20 overlap=0.0 1.451s
+  id=836924 status=ok chars=35 overlap=1.0 1.662s
+  id=3104 status=ok chars=25 overlap=0.3333 1.427s
+  id=64524 status=ok chars=9 overlap=1.0 1.16s
+  id=77399 status=ok chars=13 overlap=0.0 1.2s
+  id=30833 status=ok chars=13 overlap=0.0 1.231s
+  id=399172 status=ok chars=18 overlap=1.0 1.263s
+  id=1015482 status=ok chars=38 overlap=0.0 1.696s
+  id=10283 status=ok chars=36 overlap=0.5 1.756s
+  id=88410 status=ok chars=10 overlap=0.0 1.339s
+  id=86687 status=ok chars=55 overlap=0.5 1.822s
+  id=336254 status=ok chars=8 overlap=1.0 1.186s
+  id=36992 status=ok chars=7 overlap=1.0 1.109s
+  id=43274 status=ok chars=13 overlap=0.0 1.191s
+  id=15056 status=ok chars=27 overlap=0.6667 1.571s
+  id=23532 status=ok chars=23 overlap=0.6 1.309s
+  id=31012 status=ok chars=8 overlap=1.0 1.342s
+  id=45551 status=ok chars=35 overlap=0.0 1.67s
+  id=156252 status=ok chars=6 overlap=1.0 1.17s
+  id=743757 status=ok chars=81 overlap=0.2 2.218s
+  id=11908 status=ok chars=7 overlap=1.0 1.213s
+  id=28265 status=ok chars=16 overlap=0.0 1.349s
+  id=28419 status=ok chars=306 overlap=1.0 8.848s
+  id=53553 status=ok chars=7 overlap=0.0 1.28s
+  id=77050 status=ok chars=69 overlap=0.0 2.313s
+  id=278267 status=ok chars=34 overlap=0.0 1.996s
+  id=165078 status=ok chars=178 overlap=0.3333 4.086s
+  id=225048 status=ok chars=39 overlap=0.0 1.808s
+  id=233194 status=ok chars=27 overlap=0.0 1.545s
+  id=286452 status=ok chars=12 overlap=0.0 1.234s
+  id=300156 status=ok chars=69 overlap=0.0 2.179s
+  id=302019 status=ok chars=11 overlap=0.5 1.327s
+  id=387034 status=ok chars=326 overlap=0.0 7.477s
+  id=491649 status=ok chars=5 overlap=1.0 1.192s
+  id=505063 status=ok chars=25 overlap=0.3333 1.587s
+  id=547055 status=ok chars=9 overlap=1.0 1.231s
+  id=636515 status=ok chars=29 overlap=0.0 1.646s
+  id=653537 status=ok chars=1 overlap=0.0 1.049s
+  id=772603 status=ok chars=179 overlap=0.0 4.627s
+  id=974046 status=ok chars=117 overlap=0.0 2.776s
+  id=976209 status=ok chars=82 overlap=0.0 3.001s
+  id=77677 status=ok chars=7 overlap=1.0 1.275s
+  id=94910 status=ok chars=10 overlap=1.0 1.342s
+  id=207475 status=ok chars=45 overlap=0.0 1.855s
+  id=259675 status=ok chars=177 overlap=0.0 4.838s
+  id=343674 status=ok chars=12 overlap=0.5 1.435s
+  id=356486 status=ok chars=14 overlap=1.0 1.221s
+  id=384756 status=ok chars=49 overlap=0.0 1.89s
+  id=472015 status=ok chars=91 overlap=0.0 3.621s
+  id=487439 status=ok chars=360 overlap=0.0 13.076s
+  id=682809 status=ok chars=423 overlap=1.0 9.875s
+  id=748251 status=ok chars=14 overlap=0.3333 1.372s
+  id=861413 status=ok chars=111 overlap=1.0 2.76s
+  id=940187 status=ok chars=50 overlap=0.0 2.468s
+  id=972244 status=ok chars=306 overlap=0.3333 7.173s
+  id=748589 status=ok chars=318 overlap=1.0 7.201s
+  id=796250 status=ok chars=277 overlap=0.0 6.554s
+  id=802851 status=ok chars=42 overlap=0.0 2.029s
+  id=854417 status=ok chars=28 overlap=1.0 1.627s
+  id=863406 status=ok chars=8 overlap=0.0 1.262s
+  id=918096 status=ok chars=34 overlap=0.1429 2.061s
+  id=931049 status=ok chars=120 overlap=0.0 2.869s
+  id=1022479 status=ok chars=13 overlap=0.0 1.95s
+  id=1083119 status=ok chars=17 overlap=0.0 1.472s
+  id=1125186 status=ok chars=62 overlap=0.0 2.442s
+  id=1193824 status=ok chars=10 overlap=0.0 1.756s
+  id=1289969 status=ok chars=149 overlap=0.0 3.89s
+  id=1298819 status=ok chars=19 overlap=0.0 1.601s
+  id=1307154 status=ok chars=16 overlap=1.0 1.309s
+  id=1375109 status=ok chars=48 overlap=0.0 1.825s
+  id=1397562 status=ok chars=6 overlap=1.0 1.274s
+  id=1441287 status=ok chars=43 overlap=0.0 2.284s
+  id=1443966 status=ok chars=91 overlap=0.0 3.125s
+  id=1475231 status=ok chars=116 overlap=0.0 2.995s
+  id=1718150 status=ok chars=394 overlap=0.0 10.207s
+  id=652004 status=ok chars=22 overlap=0.6 1.588s
+  id=931940 status=ok chars=15 overlap=0.5 1.412s
+  id=949486 status=ok chars=265 overlap=1.0 7.128s
+  id=988142 status=ok chars=24 overlap=0.6 1.866s
+  id=1085262 status=ok chars=36 overlap=0.0 1.766s
+  id=1148920 status=ok chars=130 overlap=0.5 3.928s
+  id=1229586 status=ok chars=7 overlap=1.0 1.501s
+  id=1273536 status=ok chars=28 overlap=0.25 2.05s
+  id=1294319 status=ok chars=9 overlap=0.0 1.461s
+  id=1346645 status=ok chars=4 overlap=1.0 1.507s
+  id=1351896 status=ok chars=72 overlap=0.0 4.595s
+  id=1363776 status=ok chars=9 overlap=1.0 1.637s
+  id=1379480 status=ok chars=17 overlap=1.0 1.416s
+  id=1405670 status=ok chars=22 overlap=0.0 1.591s
+  id=1463113 status=ok chars=4 overlap=1.0 1.385s
+  id=1483020 status=ok chars=11 overlap=0.0 1.667s
+  id=1483743 status=ok chars=82 overlap=0.6667 2.887s
+  id=1541944 status=ok chars=13 overlap=1.0 1.418s
+  id=1578643 status=ok chars=32 overlap=0.0 2.032s
+
+=== model=ppocr (classic PaddleOCR) n=100 ===
+  init PaddleOCR lang=en use_angle_cls/textline_ori use_gpu=False
+/Users/juanpabloduque/miniforge3/lib/python3.10/site-packages/paddle/utils/cpp_extension/extension_utils.py:712: UserWarning: No ccache found. Please be aware that recompiling all source files may be required. You can download and install ccache from: https://github.com/ccache/ccache/blob/master/doc/INSTALL.md
+  warnings.warn(warning_message)
+[32mCreating model: ('PP-LCNet_x1_0_doc_ori', None, None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `/Users/juanpabloduque/.paddlex/official_models/PP-LCNet_x1_0_doc_ori`.[0m
+[32mCreating model: ('UVDoc', None, None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `/Users/juanpabloduque/.paddlex/official_models/UVDoc`.[0m
+[32mCreating model: ('PP-LCNet_x1_0_textline_ori', None, None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `/Users/juanpabloduque/.paddlex/official_models/PP-LCNet_x1_0_textline_ori`.[0m
+[32mCreating model: ('PP-OCRv6_medium_det', None, None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `/Users/juanpabloduque/.paddlex/official_models/PP-OCRv6_medium_det`.[0m
+[32mCreating model: ('PP-OCRv6_medium_rec', None, None)[0m
+[32mModel files already exist. Using cached files. To redownload, please delete the directory manually: `/Users/juanpabloduque/.paddlex/official_models/PP-OCRv6_medium_rec`.[0m
+  id=484509 status=ok chars=107 overlap=1.0 2.897s
+  id=1261561 status=ok chars=181 overlap=1.0 4.229s
+  id=362776 status=ok chars=42 overlap=0.0 2.682s
+  id=26921 status=ok chars=30 overlap=0.8 1.671s
+  id=212973 status=ok chars=104 overlap=0.0 2.903s
+  id=48800 status=ok chars=115 overlap=0.0 2.981s
+  id=35073 status=ok chars=24 overlap=0.6667 1.779s
+  id=836924 status=ok chars=33 overlap=1.0 1.85s
+  id=3104 status=ok chars=26 overlap=1.0 1.41s
+  id=64524 status=ok chars=9 overlap=1.0 1.109s
+  id=77399 status=ok chars=11 overlap=0.0 1.54s
+  id=30833 status=ok chars=16 overlap=0.0 1.478s
+  id=399172 status=ok chars=15 overlap=0.3333 1.138s
+  id=1015482 status=ok chars=42 overlap=0.0 1.913s
+  id=10283 status=ok chars=33 overlap=0.25 2.577s
+  id=88410 status=ok chars=4 overlap=0.5 1.129s
+  id=86687 status=ok chars=7 overlap=0.5 1.182s
+  id=336254 status=ok chars=8 overlap=1.0 1.961s
+  id=36992 status=ok chars=7 overlap=1.0 1.471s
+  id=43274 status=ok chars=14 overlap=0.3333 1.448s
+  id=15056 status=ok chars=0 overlap=0.0 1.191s
+  id=23532 status=ok chars=25 overlap=1.0 2.392s
+  id=31012 status=ok chars=8 overlap=1.0 1.899s
+  id=45551 status=ok chars=12 overlap=0.0 1.934s
+  id=156252 status=ok chars=6 overlap=1.0 1.134s
+  id=743757 status=ok chars=26 overlap=0.0 3.25s
+  id=11908 status=ok chars=7 overlap=1.0 1.976s
+  id=28265 status=ok chars=17 overlap=0.3333 1.411s
+  id=28419 status=ok chars=111 overlap=1.0 4.356s
+  id=53553 status=ok chars=8 overlap=1.0 1.511s
+  id=77050 status=ok chars=72 overlap=1.0 3.489s
+  id=278267 status=ok chars=0 overlap=0.0 1.049s
+  id=165078 status=ok chars=161 overlap=0.3333 4.363s
+  id=225048 status=ok chars=15 overlap=0.0 1.664s
+  id=233194 status=ok chars=5 overlap=0.0 1.808s
+  id=286452 status=ok chars=13 overlap=1.0 1.407s
+  id=300156 status=ok chars=69 overlap=0.8 2.704s
+  id=302019 status=ok chars=12 overlap=1.0 1.077s
+  id=387034 status=ok chars=65 overlap=0.0 7.766s
+  id=491649 status=ok chars=1 overlap=0.0 1.125s
+  id=505063 status=ok chars=25 overlap=0.3333 1.608s
+  id=547055 status=ok chars=9 overlap=1.0 1.425s
+  id=636515 status=ok chars=32 overlap=1.0 1.806s
+  id=653537 status=ok chars=0 overlap=0.0 1.05s
+  id=772603 status=ok chars=125 overlap=1.0 4.605s
+  id=974046 status=ok chars=125 overlap=1.0 3.476s
+  id=976209 status=ok chars=64 overlap=0.0 2.237s
+  id=77677 status=ok chars=7 overlap=1.0 1.164s
+  id=94910 status=ok chars=10 overlap=1.0 1.132s
+  id=207475 status=ok chars=13 overlap=0.0 1.514s
+  id=259675 status=ok chars=15 overlap=0.5 2.406s
+  id=343674 status=ok chars=14 overlap=0.5 1.856s
+  id=356486 status=ok chars=14 overlap=1.0 1.132s
+  id=384756 status=ok chars=5 overlap=1.0 2.056s
+  id=472015 status=ok chars=100 overlap=0.6667 3.028s
+  id=487439 status=ok chars=279 overlap=1.0 5.461s
+  id=682809 status=ok chars=128 overlap=1.0 2.896s
+  id=748251 status=ok chars=9 overlap=0.0 1.622s
+  id=861413 status=ok chars=63 overlap=0.0 2.106s
+  id=940187 status=ok chars=11 overlap=0.0 2.348s
+  id=972244 status=ok chars=78 overlap=0.6667 2.01s
+  id=748589 status=ok chars=221 overlap=1.0 3.845s
+  id=796250 status=ok chars=199 overlap=1.0 4.738s
+  id=802851 status=ok chars=43 overlap=1.0 1.755s
+  id=854417 status=ok chars=29 overlap=1.0 1.477s
+  id=863406 status=ok chars=13 overlap=1.0 1.631s
+  id=918096 status=ok chars=15 overlap=0.2857 1.59s
+  id=931049 status=ok chars=127 overlap=1.0 2.714s
+  id=1022479 status=ok chars=12 overlap=0.0 2.052s
+  id=1083119 status=ok chars=19 overlap=1.0 1.907s
+  id=1125186 status=ok chars=66 overlap=1.0 2.948s
+  id=1193824 status=ok chars=11 overlap=1.0 1.442s
+  id=1289969 status=ok chars=141 overlap=0.6 3.83s
+  id=1298819 status=ok chars=19 overlap=0.5 1.728s
+  id=1307154 status=ok chars=14 overlap=0.0 1.156s
+  id=1375109 status=ok chars=68 overlap=0.3333 3.621s
+  id=1397562 status=ok chars=5 overlap=0.0 1.292s
+  id=1441287 status=ok chars=1 overlap=0.0 1.126s
+  id=1443966 status=ok chars=96 overlap=1.0 3.231s
+  id=1475231 status=ok chars=120 overlap=0.0 5.702s
+  id=1718150 status=ok chars=268 overlap=1.0 5.23s
+  id=652004 status=ok chars=23 overlap=0.6 1.507s
+  id=931940 status=ok chars=14 overlap=0.0 1.432s
+  id=949486 status=ok chars=219 overlap=1.0 4.52s
+  id=988142 status=ok chars=25 overlap=1.0 2.162s
+  id=1085262 status=ok chars=39 overlap=1.0 2.05s
+  id=1148920 status=ok chars=91 overlap=0.0 2.851s
+  id=1229586 status=ok chars=8 overlap=0.0 1.36s
+  id=1273536 status=ok chars=29 overlap=0.75 1.548s
+  id=1294319 status=ok chars=10 overlap=0.6667 1.447s
+  id=1346645 status=ok chars=4 overlap=1.0 1.131s
+  id=1351896 status=ok chars=74 overlap=1.0 2.15s
+  id=1363776 status=ok chars=9 overlap=1.0 1.065s
+  id=1379480 status=ok chars=17 overlap=1.0 1.21s
+  id=1405670 status=ok chars=29 overlap=0.0 1.633s
+  id=1463113 status=ok chars=4 overlap=1.0 1.086s
+  id=1483020 status=ok chars=16 overlap=1.0 1.867s
+  id=1483743 status=ok chars=40 overlap=0.3333 2.368s
+  id=1541944 status=ok chars=13 overlap=1.0 1.203s
+  id=1578643 status=ok chars=5 overlap=0.0 1.163s
+
+LISTO → data/qa/ocr_pilot_v2/results.csv (500 rows)
+
+=== comparison (mean title_overlap / chars / latency; ok rate) ===
+      model   n  ok  ok_pct  mean_overlap  mean_overlap_all  mean_chars  mean_latency_s
+     google 100 100   100.0        0.8886            0.8886        88.6           0.342
+rekognition 100 100   100.0        0.8487            0.8487       100.4           0.707
+      ppocr 100 100   100.0        0.5859            0.5859        47.4           2.206
+    easyocr 100  99    99.0        0.5120            0.5068        54.1           0.000
+   florence 100 100   100.0        0.3736            0.3736        70.3           2.594
+
+Ranking by mean title_overlap (all rows):
+   1. google        overlap=0.8886  ok=100/100  chars≈88.6  latency≈0.342s
+   2. rekognition   overlap=0.8487  ok=100/100  chars≈100.4  latency≈0.707s
+   3. ppocr         overlap=0.5859  ok=100/100  chars≈47.4  latency≈2.206s
+   4. easyocr       overlap=0.5068  ok=99/100  chars≈54.1  latency≈0.0s
+   5. florence      overlap=0.3736  ok=100/100  chars≈70.3  latency≈2.594s

@@ -1,0 +1,46 @@
+{
+  "title_text": "WITCHDOCTOR OF THE LIVING DEAD",
+  "credits_text": "Directed by Charles O'Bonochon; starring Larz Thomas, St. Mary Williams, Enochode Joe Lavonde Garuba",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ENONCHONG O'REILLY Cinema Productions Presents; ESTREMO 26 Octubre; GOOD VS EVIL; SHOCKING!",
+  "mood": [
+    "horror",
+    "gothic",
+    "supernatural",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and occult themes.",
+  "description": "A collage-style poster featuring eerie faces, a crucifix, and bold title text for a horror film."
+}

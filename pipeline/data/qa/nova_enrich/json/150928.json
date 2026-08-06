@@ -1,0 +1,39 @@
+{
+  "title_text": "THE LIGHTS",
+  "credits_text": "KERI WALMIR JOE ESTEZ DEREK LEE NIXON OSCAR JUSTIN CATHY BAIRON ELIZABETH JAEQUI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WIDESCREEN",
+  "mood": [
+    "eerie",
+    "haunting",
+    "isolated",
+    "mysterious",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a person in a field with a rustic house in the background, evoking a mysterious and eerie atmosphere."
+}

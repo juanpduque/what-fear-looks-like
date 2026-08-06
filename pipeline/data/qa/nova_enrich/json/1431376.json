@@ -1,0 +1,39 @@
+{
+  "title_text": "KING JEFF'S TROUBLESHOOTERS",
+  "credits_text": "KING JEFF GORIO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TWO AGENTS. FIVE ROBOTS. ONE HELL OF A DAY.",
+  "mood": [
+    "action",
+    "sci-fi",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "robot",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts action-oriented violence with space rays and robots.",
+  "description": "The poster features two men in futuristic gear holding guns, with a menacing robot in the background and bold title text."
+}

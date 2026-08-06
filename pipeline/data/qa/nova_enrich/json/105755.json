@@ -1,0 +1,45 @@
+{
+  "title_text": "幽幻道士",
+  "credits_text": "",
+  "languages": [
+    "zh"
+  ],
+  "other_text": "",
+  "mood": [
+    "fantasy",
+    "horror",
+    "comedy",
+    "supernatural",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and supernatural themes.",
+  "description": "A collage-style poster features various characters, including masked figures and ghosts, promoting a Chinese fantasy-horror film."
+}

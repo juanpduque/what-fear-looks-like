@@ -1,0 +1,44 @@
+{
+  "title_text": "FOREST OF DEATH",
+  "credits_text": "A PANG BROTHERS FILM FROM THE CREATORS OF THE EYE & BANGKOK DANGEROUS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CROSS DO NOT CROSS DO NOT CR",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains intense horror imagery and occult themes.",
+  "description": "A poster featuring eerie hands with skulls, a distressed face, and caution tape reading 'DO NOT CROSS', promoting a horror film."
+}

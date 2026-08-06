@@ -1,0 +1,43 @@
+{
+  "title_text": "魔害影片",
+  "credits_text": "心電ミステリーファイル The Movie is Infected Ju-Lei",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "other_text": "本当の魔害が消罪してしまうじゃな。。正上元連言不作©。",
+  "mood": [
+    "dread",
+    "surreal",
+    "psychological",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a person with glowing hands reaching out, accompanied by Japanese and English text indicating a horror theme."
+}

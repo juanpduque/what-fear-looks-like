@@ -1,0 +1,45 @@
+{
+  "title_text": "魔のフォルムスポーク",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "右麗!!",
+  "mood": [
+    "dread",
+    "horror",
+    "gothic",
+    "tense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and gore.",
+  "description": "A poster features a zombie-like figure with decayed features against a dark urban backdrop, accompanied by Japanese text and a DVD logo."
+}

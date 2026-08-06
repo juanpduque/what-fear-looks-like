@@ -1,0 +1,47 @@
+{
+  "title_text": "CONJURE K",
+  "credits_text": "COME FOR THE HEXES, STAY FOR THE BOOS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FROM THE STUDIO THAT BROUGHT YOU THE INVOKING",
+  "mood": [
+    "horror",
+    "supernatural",
+    "gothic",
+    "dread",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and occult themes.",
+  "description": "A poster featuring a monstrous, open-mouthed face with sharp teeth and visible blood, promoting the horror film 'Conjure K.'"
+}

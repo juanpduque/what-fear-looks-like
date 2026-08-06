@@ -1,0 +1,43 @@
+{
+  "title_text": "GRIZZLY PEAK",
+  "credits_text": "CARY ELWEZ, HOLLY HUNTER, BILL SKARSGÅRD, BENJAMIN WALKER, NICK GONZALEZ, JESSICA HENWICK, DANNY GLOVER, GIG SUAREZ, SPOOKY MADISON, MARCALETTER BYRD, HALEY BISHOP",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"YOU'LL SEE WHY THEY CALL IT GRIZZLY PEAK\" \"A PANDA ET\" \"dir. CARTER LANTERMAN\" \"written by TREY WILLIAMS\" \"with JONAH HILL, ELEANOR COLEMAN, BENJAMIN WALKER, JESSICA HENWICK, DANNY GLOVER, GIG SUAREZ, SPOOKY MADISON, MARCALETTER BYRD, HALEY BISHOP\"",
+  "mood": [
+    "thriller",
+    "mystery",
+    "suspense",
+    "horror",
+    "drama"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster features a group of characters in a dark, forested setting with a fiery glow in the background, suggesting a thriller or horror theme."
+}

@@ -1,0 +1,38 @@
+{
+  "title_text": "THE WARNING",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "suspense",
+    "mystery",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "corridor",
+      "conf": 0.8
+    },
+    {
+      "name": "eye_view",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A close-up of an eye looking down a dimly lit corridor where a shadowy figure stands, evoking suspense and mystery."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "EL CANIBAL",
+  "credits_text": "con Germán De Silva\ny la actuación de\nRaúl Kreig y Facundo Suárez\nNarrador: Alberto Ajaka",
+  "languages": [
+    "es"
+  ],
+  "other_text": "Producción: Paula V. Rodríguez | Director de Fotografía: Lautaro Martinez | Director de sonido: Ariel Leandro Gazpoz | Directora de Arte: Victoria Sáez | Jefa de Producción: Fernanda G. Rocca Lada | Asistente de Dirección: Lautaro Gabriel Perín | Música Original: Mauricio Bernal | Gaffer / colorista: Maximiliano Wendler | Vestuarista: Luz Marina García Rossi | Asistente de vestuario: Victoria Borghini | “Electro”: Claudio Perín | Asistente de Cámara: Juan Gervasoni | Microfonista: Agustín Pagluca | Investigación documental: Alan Valsangiácomo | Maquillaje y FX: Marcelo Benitez | Montaje: Baltasar Albretch, Gastón Del Porto | Motion Graphic: Lucio Azcurrain | Asistente de montaje: Marcos Martínez | Foto Fija: Emiliano Ricco\n\nGuíon y Dirección: Baltasar Albretch - Gastón Del Porto\n\nFondo Nacional de las Artes\nInstituto Nacional de Cine y Artes Audiovisuales\n\nEspacio Santafesino\nLuz Marina García Rossi",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A poster for the film 'El Canibal' featuring a close-up of a masked figure holding a bloody knife, with credits and production details listed below."
+}

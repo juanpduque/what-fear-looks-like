@@ -1,0 +1,43 @@
+{
+  "title_text": "GHOST MANSION",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WELCOME TO THE HAUNTED MANSION",
+  "mood": [
+    "gothic",
+    "eerie",
+    "haunted",
+    "mysterious",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.95
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "red-light",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.2,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, towering mansion with glowing red lights and a solitary figure stands in front, evoking a haunted atmosphere."
+}

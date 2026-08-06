@@ -1,0 +1,46 @@
+{
+  "title_text": "PLANCHETYPE",
+  "credits_text": "GOODBYE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WINNER Sound Design 2015, WINNER Original Song 2015",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dark",
+    "mysterious",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic skull imagery and implied violence.",
+  "description": "A dark poster features a central face with tentacle-like appendages, a skull at the bottom, and award text at the top."
+}

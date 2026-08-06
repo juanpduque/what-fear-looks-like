@@ -1,0 +1,47 @@
+{
+  "title_text": "疯狂医院",
+  "credits_text": "2019年3月22日上映 刘建国",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "中国电影一级保护 旨在治疗疯子",
+  "mood": [
+    "dread",
+    "psychological",
+    "suspense",
+    "gothic",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "hospital",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and disturbing imagery.",
+  "description": "A group of people surround a man holding a bouquet with blood, suggesting a psychological horror theme in a hospital setting."
+}

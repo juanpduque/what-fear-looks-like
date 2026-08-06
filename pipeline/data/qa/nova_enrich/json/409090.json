@@ -1,0 +1,45 @@
+{
+  "title_text": "SATANAS DE TODOS LOS HORRORES",
+  "credits_text": "ENRIQUE LIZALDE\nDE ALLAN POE\nENRIQUE ROCHA CARLOS LOPEZ MOCTEZUMA ILLYA SHANELL\nDirección JULIAN SOLER\nConducción ALFREDO RUANOVA\nA COLORES",
+  "languages": [
+    "es"
+  ],
+  "other_text": "MACHO",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic weapon imagery and occult themes.",
+  "description": "A horror movie poster features a young woman in a nightgown next to a large axe and a demonic face with flames in the background."
+}

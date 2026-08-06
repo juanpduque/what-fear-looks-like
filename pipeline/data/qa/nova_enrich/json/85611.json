@@ -1,0 +1,40 @@
+{
+  "title_text": "THE STRANGLERS OF BOMBAY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "drama",
+    "historical",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "strangulation",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and partial nudity.",
+  "description": "A man strangles a woman in traditional Indian attire, with a chaotic background of people and fire."
+}

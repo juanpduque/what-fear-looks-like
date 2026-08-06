@@ -1,0 +1,38 @@
+{
+  "title_text": "PREY",
+  "credits_text": "Evan Jones-Hazeldine Mangaux West",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A HOFFMANN WEST FILM",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man stands in a dark forest with a large, menacing mask above him. The poster has a gothic, surreal atmosphere."
+}

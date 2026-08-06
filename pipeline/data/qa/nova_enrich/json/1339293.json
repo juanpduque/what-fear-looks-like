@@ -1,0 +1,43 @@
+{
+  "title_text": "HOUSE ON GHOST HILL ROAD",
+  "credits_text": "A FILM BY D.A. BUSH AND TED NAPPI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ANDY HOROWITZ, PAUL JUSER, DOMINIQUE LAZAROS, TONY YAIKO, DENNIS SKOGFELDT, AMARA KOPAKOVA, MARK DICKINSON, BRIAN CURTIS",
+  "mood": [
+    "gothic",
+    "haunting",
+    "mysterious",
+    "eerie",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a haunted house on a hill under a full moon, with a dark forest in the background and eerie yellow text."
+}

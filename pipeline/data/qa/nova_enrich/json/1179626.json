@@ -1,0 +1,38 @@
+{
+  "title_text": "Roadkill Moon",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dark",
+    "mysterious",
+    "eerie",
+    "lonely"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "night",
+      "conf": 0.9
+    },
+    {
+      "name": "loneliness",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark poster shows a lone figure sitting under a bright moon, with minimal visible details in the night setting."
+}

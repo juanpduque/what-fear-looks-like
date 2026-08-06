@@ -1,0 +1,38 @@
+{
+  "title_text": "THE THETA GIRL",
+  "credits_text": "SHE BROUGHT THE PILLS. HE BROUGHT THE KILLS.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "psychological",
+    "intense",
+    "suspenseful",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "nudity"
+  ],
+  "moderation_notes": "Contains implied violence and partial nudity.",
+  "description": "A poster features a woman holding a rifle with several characters, including a bald man with a red face and a nude figure, against a bright yellow background."
+}

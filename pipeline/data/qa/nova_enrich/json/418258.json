@@ -1,0 +1,46 @@
+{
+  "title_text": "CURSE OF THE SWAMP CREATURE",
+  "credits_text": "IN DIRE STRAIT'S PRODUCTIONS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A DESERTED ISLAND! MANEATING CANNIBALS! HELPLESS VICTIMS! DEADLY QUICKSAND! INHUMAN CREATURES!",
+  "mood": [
+    "horror",
+    "thriller",
+    "survival",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.95
+    },
+    {
+      "name": "water",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild gore and violent themes.",
+  "description": "A distressed woman emerges from murky water on a poster advertising a horror film titled 'Curse of the Swamp Creature.' The design includes bold, dramatic text and a stark green background."
+}

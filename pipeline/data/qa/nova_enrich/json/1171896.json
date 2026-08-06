@@ -1,0 +1,50 @@
+{
+  "title_text": "DOGMAN TERRITORY",
+  "credits_text": "WERWOLVES IN THE LAND BETWEEN THE LAKES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SMALL TOWN MONSTERS PRESENTS",
+  "mood": [
+    "horror",
+    "supernatural",
+    "dark",
+    "foreboding",
+    "mythic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of a monstrous creature with exposed internal organs and blood.",
+  "description": "A poster features a menacing werewolf with exposed internal organs against a dark, moonlit landscape, with bold red and white text."
+}

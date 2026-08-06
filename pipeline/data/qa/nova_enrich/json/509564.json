@@ -1,0 +1,50 @@
+{
+  "title_text": "THE DEMONIC DOLL",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horrific",
+    "eerie",
+    "gothic",
+    "supernatural",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "doll",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.3
+    },
+    {
+      "name": "gothic",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains disturbing imagery of a damaged doll with blood-like markings and an intense, eerie atmosphere.",
+  "description": "A damaged doll with a cracked face and glowing red eye is featured prominently against a dark background, with the title 'The Demonic Doll' displayed below."
+}

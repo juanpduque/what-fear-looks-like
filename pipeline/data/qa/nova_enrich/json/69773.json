@@ -1,0 +1,43 @@
+{
+  "title_text": "RETURN IN RED",
+  "credits_text": "a film by TYLER HARPE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SCREAM ALL YOU WANT, NO ONE WILL HEAR.",
+  "mood": [
+    "dread",
+    "desolate",
+    "apocalyptic",
+    "tense",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "biohazard",
+      "conf": 0.9
+    },
+    {
+      "name": "abandoned",
+      "conf": 0.8
+    },
+    {
+      "name": "rural",
+      "conf": 0.7
+    },
+    {
+      "name": "haunting",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A desolate rural scene with a barn, windmill, and van under a biohazard symbol, evoking a tense, apocalyptic atmosphere."
+}

@@ -1,0 +1,16 @@
+{
+  "ts": "2026-08-05T19:58:17Z",
+  "universe_source": "faces_v2 \u222a posters_extended",
+  "n_universe": 65201,
+  "n_faces_v2": 65201,
+  "n_posters_extended": 65201,
+  "n_catalog_ids": 35998,
+  "n_canonical_ids": 35945,
+  "n_covered_union": 35998,
+  "n_todo": 29204,
+  "n_in_catalog_not_canonical": 53,
+  "n_in_canonical_not_catalog": 0,
+  "todo_ids_txt": "data/qa/multi_poster_gap/todo_ids.txt",
+  "todo_ids_csv": "data/qa/multi_poster_gap/todo_ids.csv",
+  "note": "Gap = extended corpus minus multi_poster catalog\u222acanonical. Discover resumes via seeded catalog."
+}

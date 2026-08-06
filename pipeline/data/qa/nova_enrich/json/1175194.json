@@ -1,0 +1,44 @@
+{
+  "title_text": "THEY'RE REAL",
+  "credits_text": "A SHORT FILM BY JACK KIERSKI\nDIANA GARLE VALERIA DI BARBO ALBERTO PEREZ-CROSSLAND VANESSA LOTEJO MICHAEL GONZALEZ MATTHEW ROBAYO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "suspense",
+    "psychological horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A dark poster shows a gloved hand holding a knife with blood, set against a nighttime house backdrop. The title \"THEY'RE REAL\" is prominently displayed."
+}

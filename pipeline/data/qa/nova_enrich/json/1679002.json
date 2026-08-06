@@ -1,0 +1,45 @@
+{
+  "title_text": "KILLER CAR!!!",
+  "credits_text": "A FILM BY HAYDEN BUHLER\nMEGAN WILLIAMSON I MARY GARLITZ I CAMBRIA HARRIS\nI COLE BUHLER I RILEY MOORE I HAZEL MOORE I",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BUHLER PRODUCTIONS PRESENTS...",
+  "mood": [
+    "dread",
+    "thriller",
+    "horror",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "vehicle",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "water",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and suggests violent themes.",
+  "description": "The poster shows a dark scene with red eyes glowing in the night, blood dripping from the top, and the title \"KILLER CAR!!!\" prominently displayed."
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "GRIZZLY RAMPAGE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "horror",
+    "survival",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.4,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.95,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, depicting a dangerous bear attack scenario.",
+  "description": "A poster shows a fierce grizzly bear with blood around its mouth, while three people flee in fear amidst a forest fire at night."
+}

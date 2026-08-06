@@ -1,0 +1,42 @@
+{
+  "title_text": "Halloween is KILLING ME",
+  "credits_text": "Directed by CarsonO'Brien",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BOO! Candy young and sweet! NOPE! SATAN CAN'T EAT MEAT CAH! OH MY GOD!",
+  "mood": [
+    "humorous",
+    "spooky",
+    "chaotic",
+    "playful"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    },
+    {
+      "name": "skull",
+      "conf": 0.5
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.4,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A colorful, hand-drawn poster features a cartoon character surrounded by Halloween-themed doodles and text, with a playful and chaotic aesthetic."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "EL DÍA TRAJO LA OSCURIDAD",
+  "credits_text": "UNA PELÍCULA DE MARTÍN DESÁLOV MORA RECALDE ROMINA PAULA",
+  "languages": [
+    "es"
+  ],
+  "other_text": "SERIES REALES CO-PRODUCCIÓN NOVIEMBRE 2017",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "haunting",
+    "forest"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "haunting",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "A poster shows a shadowy figure in a dark forest with a person standing in the foreground, evoking a gothic and haunting atmosphere."
+}

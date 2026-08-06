@@ -1,0 +1,39 @@
+{
+  "title_text": "screams. laughs. blood. love",
+  "credits_text": "un film di michele caprioli.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "dark",
+    "emotional",
+    "mysterious",
+    "romantic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.6,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "blood",
+    "sexual"
+  ],
+  "moderation_notes": "Contains implied violence and blood, with potential sexual undertones.",
+  "description": "A dark, red-tinted poster featuring a close-up face with the words 'screams. laughs. blood. love' and director credit."
+}

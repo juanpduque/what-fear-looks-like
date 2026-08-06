@@ -1,0 +1,43 @@
+{
+  "title_text": "PARTS",
+  "credits_text": "The CLONUS HORROR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EYES, FINGERS, KIDNEYS",
+  "mood": [
+    "horror",
+    "sci-fi",
+    "body horror",
+    "dystopia",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "body horror",
+      "conf": 0.9
+    },
+    {
+      "name": "medical",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains partial nudity and implied violence related to medical horror themes.",
+  "description": "A woman lies under a bright light in a medical setting with body parts labeled nearby, suggesting a horror theme involving cloning or body horror."
+}

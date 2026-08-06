@@ -1,0 +1,38 @@
+{
+  "title_text": "笑面",
+  "credits_text": "第3回大阪アジアン映画祭出品作品",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "10月23日全国公開",
+  "mood": [
+    "surreal",
+    "eerie",
+    "disturbing",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "circus",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a large, grotesque clown face with a child standing in front of a circus tent backdrop under a cloudy sky."
+}

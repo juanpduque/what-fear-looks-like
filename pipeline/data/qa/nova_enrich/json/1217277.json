@@ -1,0 +1,45 @@
+{
+  "title_text": "モルプェン武",
+  "credits_text": "モルフェン武 ディレクター: イージー・コースケイチ",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "、女のまさしいリバルを思うように、モルフェン武。",
+  "mood": [
+    "eerie",
+    "haunting",
+    "gothic",
+    "psychological",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and ghostly imagery.",
+  "description": "A ghostly figure in a white dress stands in a dark setting, with a group of concerned individuals below. The poster has a dark, eerie atmosphere."
+}

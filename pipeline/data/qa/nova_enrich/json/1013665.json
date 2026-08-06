@@ -1,0 +1,45 @@
+{
+  "title_text": "DÃO ĐỒC ĐÁC",
+  "credits_text": "TÚ MÀU THIÊN LINH CÁI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "dread",
+    "mystical",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "occult",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.1,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and a monstrous creature; no explicit violence or gore.",
+  "description": "A group of people stands around a central figure in a ritualistic setting with candles and a monstrous creature looming above."
+}

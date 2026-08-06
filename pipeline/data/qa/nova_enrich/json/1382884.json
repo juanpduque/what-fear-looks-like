@@ -1,0 +1,39 @@
+{
+  "title_text": "LUMBERJACK",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "foreboding",
+    "tense",
+    "survival",
+    "forest",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "axe",
+      "conf": 0.95
+    },
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.95,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows two hikers in a dark forest with a large axe looming above them, evoking a sense of impending danger."
+}

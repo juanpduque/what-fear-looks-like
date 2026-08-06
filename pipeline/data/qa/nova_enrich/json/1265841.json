@@ -1,0 +1,45 @@
+{
+  "title_text": "VOODOO DEVIL DRUMS",
+  "credits_text": "SHE WAS DOOMED TO DIE! TODY PICTURES CO. PRESENTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SEE-- FOR THE FIRST TIME-- THE VIRGIN DANCE OF DEATH! THE ALTAR OF SKULLS! THE WALKING DEAD! STRANGE SECRETS never before REVEALED!",
+  "mood": [
+    "gothic",
+    "horror",
+    "mystery",
+    "occult",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and dramatic imagery, but no explicit violence or sexual content.",
+  "description": "A vintage horror poster featuring a man in a hat, a skull, and dramatic text about voodoo and devil drums."
+}

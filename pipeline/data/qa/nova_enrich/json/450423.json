@@ -1,0 +1,40 @@
+{
+  "title_text": "人身妖怪",
+  "credits_text": "徐少強",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "大國電影公司 出品 大國電影公司 發行",
+  "mood": [
+    "horror",
+    "erotic",
+    "surreal",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.1,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "sexual"
+  ],
+  "moderation_notes": "Contains suggestive imagery and partial nudity.",
+  "description": "A vibrant poster features a man embracing a woman, with a monstrous creature and scattered tiles in the background, suggesting a horror and erotic theme."
+}

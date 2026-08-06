@@ -1,0 +1,45 @@
+{
+  "title_text": "SHEETS OF GORE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HORROR HBO MAX",
+  "mood": [
+    "horror",
+    "camp",
+    "surreal",
+    "grotesque"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with monstrous creatures and implied violence.",
+  "description": "A poster features a central monstrous figure with long hair and fangs, surrounded by eerie creatures and bold red text reading 'Sheets of Gore.' The style is vibrant and surreal."
+}

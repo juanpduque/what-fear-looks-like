@@ -1,0 +1,42 @@
+{
+  "title_text": "鬼死カメラ",
+  "credits_text": "深夜の魔境 監督 服部良太",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "不気味な死体と監視カメラが織りなす、奇妙な物語が今、始まる！",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "camera",
+      "conf": 0.9
+    },
+    {
+      "name": "crow",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.3,
+  "person": 0.1,
+  "animal": 0.8,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring a crow perched on a surveillance camera with dark, eerie cityscape and Japanese text."
+}

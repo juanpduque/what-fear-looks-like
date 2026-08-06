@@ -1,0 +1,49 @@
+{
+  "title_text": "INFECTED",
+  "credits_text": "THE DARKEST DAY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "gritty",
+    "apocalyptic",
+    "action",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "soldier",
+      "conf": 0.95
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.85
+    },
+    {
+      "name": "war",
+      "conf": 0.8
+    },
+    {
+      "name": "danger",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts soldiers in a war-torn setting, suggesting potential violence.",
+  "description": "A group of soldiers stand in a desolate landscape under a stormy sky, with the title 'INFECTED' prominently displayed."
+}

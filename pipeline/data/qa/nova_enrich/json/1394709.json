@@ -1,0 +1,40 @@
+{
+  "title_text": "A NEW TASTE",
+  "credits_text": "JACK BROOKS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A tale of the world's tiniest cannibal... GWS",
+  "mood": [
+    "dark humor",
+    "surreal",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "cannibal",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of cannibalism and blood.",
+  "description": "A small pink creature peeks over a surface with raw meat below, accompanied by bold text introducing a darkly humorous tale."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "EXORCIST MARTYRS",
+  "credits_text": "A MIKE FLANAGAN FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COMING SOON",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "intense",
+    "ominous"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    },
+    {
+      "name": "occult",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult themes and implied violence.",
+  "description": "A poster shows a man with red eyes and a hand reaching towards a door with a glowing cross, titled 'Exorcist Martyrs' by Mike Flanagan, coming soon."
+}

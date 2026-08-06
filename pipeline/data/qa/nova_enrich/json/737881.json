@@ -1,0 +1,42 @@
+{
+  "title_text": "BLOOD COVE 2",
+  "credits_text": "LLOYD KAUFMAN AUTUMN HALL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "RETURN OF THE SKULL",
+  "mood": [
+    "horror",
+    "thriller",
+    "gothic",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including blood and a skull.",
+  "description": "A woman with long hair appears frightened, with a skeletal figure holding a pitchfork in the background. The title \"Blood Cove 2: Return of the Skull\" is displayed prominently."
+}

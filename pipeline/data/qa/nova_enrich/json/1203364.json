@@ -1,0 +1,44 @@
+{
+  "title_text": "NIGHTMARE STATION",
+  "credits_text": "VIOLENT LIGHT FILMS PRESENTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "surreal",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic gore and disturbing imagery.",
+  "description": "A poster features a grotesque, zombie-like creature with exposed flesh and bones, set against a dark, industrial background with bold red text reading 'NIGHTMARE STATION.'"
+}

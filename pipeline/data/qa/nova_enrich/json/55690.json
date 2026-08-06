@@ -1,0 +1,43 @@
+{
+  "title_text": "FUTURE-KILL",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "sci-fi",
+    "action",
+    "cyberpunk",
+    "dystopia",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "cyborg",
+      "conf": 0.85
+    },
+    {
+      "name": "mechanical",
+      "conf": 0.8
+    },
+    {
+      "name": "futuristic",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.1,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A close-up of a futuristic, armored figure with sharp metallic claws and a sleek helmet, set against a dark, industrial background."
+}

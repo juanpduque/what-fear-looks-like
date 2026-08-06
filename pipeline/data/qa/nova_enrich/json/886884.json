@@ -1,0 +1,42 @@
+{
+  "title_text": "THE ULTIMATE UNDERGROUND AMATEUR SLAUGHTERFEST OF DEATH",
+  "credits_text": "AKA TITULAR OVERKILL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "the world's bloodiest mixtape has arrived... 77 minutes of non-stop splatter and tunes...",
+  "mood": [
+    "violent",
+    "gruesome",
+    "intense",
+    "chaotic",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.3,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.95,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains extreme graphic violence and gore.",
+  "description": "A red, grunge-style poster with bold white text and chaotic imagery, promoting a violent mixtape titled 'The Ultimate Underground Amateur Slaughterfest of Death.'"
+}

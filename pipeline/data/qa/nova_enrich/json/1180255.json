@@ -1,0 +1,42 @@
+{
+  "title_text": "Coffintooth",
+  "credits_text": "OLD SCHOOL TERROR IS HERE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FROM THE CREATOR OF BENEATH THE OLD DARK HOUSE & BLOODY BALLET",
+  "mood": [
+    "gothic",
+    "horror",
+    "camp",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and implied violence.",
+  "description": "A poster features a monstrous, hairy creature in a red coat with the title 'Coffintooth' prominently displayed."
+}

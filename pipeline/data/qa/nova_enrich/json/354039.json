@@ -1,0 +1,39 @@
+{
+  "title_text": "ALIEN HUNGER",
+  "credits_text": "AN EDDIE CONNA FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOU ARE WHO YOU EAT",
+  "mood": [
+    "dread",
+    "surreal",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests themes of violence and horror.",
+  "description": "A dark, green-tinted poster features a shadowy figure with clawed hands, promoting the film 'Alien Hunger' with the tagline 'You Are Who You Eat.'"
+}

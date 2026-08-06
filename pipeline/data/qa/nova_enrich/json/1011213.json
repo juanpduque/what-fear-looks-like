@@ -1,0 +1,46 @@
+{
+  "title_text": "Human Zoo: Feast in the Forest",
+  "credits_text": "JEFF ALPERT FRANK VOLPE NICK BRENNAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IT'S HUNTING SEASON",
+  "mood": [
+    "horror",
+    "thriller",
+    "forest",
+    "intense",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.95
+    },
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "text",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.1,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains violent and gory imagery.",
+  "description": "A poster shows a skull engulfed in flames with a forest background and the title 'Human Zoo: Feast in the Forest.'"
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "COMBUST!",
+  "credits_text": "PART TWO OF THE MOVIE STARRING DRICK DUSTERBUFF & CAROLINA LARSEN THE UNHOLY COMBUSTION A MOVIE BY THE SCRAGGER WRITTEN BY MR. SCRAGGER A 1972",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A KID AND HIS CAR... A WOMAN AND HER MOTORCYCLE... A BIKER GANG ON THE HUNT FOR HUMAN FLESH!",
+  "mood": [
+    "action",
+    "thriller",
+    "violent",
+    "gritty",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster depicts graphic violence and weapon use, which may be disturbing to some viewers.",
+  "description": "A poster for the movie 'COMBUST!' shows a man holding a large knife with a fiery background and bold text detailing the film's themes and cast."
+}

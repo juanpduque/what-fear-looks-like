@@ -1,0 +1,47 @@
+{
+  "title_text": "THE FINAL MANIAC",
+  "credits_text": "Watch the Full-Frontal Slaughter!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "1069",
+  "mood": [
+    "horror",
+    "erotic",
+    "violent",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "nudity",
+      "conf": 0.85
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.85,
+  "sensitive": [
+    "violence",
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains explicit nudity and violent imagery.",
+  "description": "A poster shows a nude woman standing in a forest with a chainsaw at her feet, promoting a horror film titled 'The Final Maniac.'"
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "BEACH MASSACRE AT KILL DEVIL HILLS",
+  "credits_text": "YARA PARKER PRINCE DANA ROY HUEY BOWSA DORLING SARAH FRENCH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"LOADED WITH LADIES AND NAVY MEN\" \"NIGHTMARES BEGIN IN THE SHALLOWS\"",
+  "mood": [
+    "horror",
+    "thriller",
+    "summer",
+    "violent",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    "monster",
+    {
+      "name": "violence",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.3,
+  "blood_gore": 0.7,
+  "violence": 0.9,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "blood",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence and partial nudity.",
+  "description": "A woman in a bikini stands in shallow water with a bloody arm, overlooking a beach scene with ominous text and a drowned figure nearby."
+}

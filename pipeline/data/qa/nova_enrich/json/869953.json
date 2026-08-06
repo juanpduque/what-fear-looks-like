@@ -1,0 +1,40 @@
+{
+  "title_text": "Gummam Qatil",
+  "credits_text": "written, produced & directed by HARINAM SINGH music S. PRAKASH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ULTRA H. S. FILMS presents",
+  "mood": [
+    "horror",
+    "erotic",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains partial nudity and suggestive imagery.",
+  "description": "Movie poster features a large, menacing skull with two women in revealing outfits, one holding a weapon."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "DARK PRINCE",
+  "credits_text": "THE TRUE STORY OF DRACULA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dramatic",
+    "mysterious",
+    "historical",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic poster features intense faces of characters with a dark, gothic aesthetic, highlighting the title \"Dark Prince: The True Story of Dracula\"."
+}

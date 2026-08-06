@@ -1,0 +1,42 @@
+{
+  "title_text": "KISS THE VAMPIRE",
+  "credits_text": "DANIEL GOOBARD KATHRINE DAVIES COSTA MANDYLOR GARY DANIELS MATTHIAS NIDES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A Taste For Blood... And A Search For Immortality!",
+  "mood": [
+    "gothic",
+    "dread",
+    "erotic",
+    "mysterious",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "occult",
+    "erotic"
+  ],
+  "moderation_notes": "Contains suggestive imagery and themes of vampirism.",
+  "description": "A poster features a close-up of a vampire's face with red eyes and lips, set against a dark forest background with silhouettes of people."
+}

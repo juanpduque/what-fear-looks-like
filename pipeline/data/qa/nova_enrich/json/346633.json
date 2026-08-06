@@ -1,0 +1,40 @@
+{
+  "title_text": "FANGORIA BLOOD DRIVE",
+  "credits_text": "hosted by ROB ZOMBIE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AMERICA'S BEST SHORT HORROR FILMS\nincludes over ONE HOUR of exclusive behind-the-scenes footage with Clive Barker, Stan Winston",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and blood.",
+  "description": "Poster features a horror-themed title with a blood-smeared face, a silhouette, and a close-up of a hand holding a severed limb."
+}

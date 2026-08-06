@@ -1,0 +1,39 @@
+{
+  "title_text": "WHAT LIES WATCHING",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "suspense",
+    "mystery",
+    "dark",
+    "lonely",
+    "uneasy"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "shadow",
+      "conf": 0.85
+    },
+    {
+      "name": "text",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A lone figure stands with their back to the viewer against a green wall, with the title 'What Lies Watching' overlaid in white text."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "THE PENNY DREADFUL PICTURE SHOW",
+  "credits_text": "THE UNDEAD MOVIE PARTY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "camp",
+    "horror",
+    "theatrical",
+    "macabre"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.2,
+  "blood_gore": 0.1,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a woman in a vintage dress holding a doll, with a backdrop of eerie faces and the title 'The Penny Dreadful Picture Show.'"
+}

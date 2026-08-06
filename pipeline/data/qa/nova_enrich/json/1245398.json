@@ -1,0 +1,37 @@
+{
+  "title_text": "TRUE FEAR",
+  "credits_text": "FEAR WILL FIND YOU",
+  "languages": [
+    "en"
+  ],
+  "other_text": "LIVE CAMERA 2",
+  "mood": [
+    "dread",
+    "suspense",
+    "psychological horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring two intense faces with a tagline 'FEAR WILL FIND YOU' and a live camera feed overlay, suggesting psychological horror."
+}

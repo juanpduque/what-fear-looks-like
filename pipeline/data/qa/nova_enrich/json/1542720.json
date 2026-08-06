@@ -1,0 +1,39 @@
+{
+  "title_text": "Wisp",
+  "credits_text": "The Annapolis Valley Incident\n\nDream Front Entertainment Inc.\nwww.dreamfrontent.com\nwww.species99.com",
+  "languages": [
+    "en"
+  ],
+  "other_text": "don't follow the lights",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.6,
+  "person": 0.5,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and eerie forest imagery.",
+  "description": "A poster for the film 'Wisp' features a dark forest scene with a blurred figure and text overlays, evoking a gothic and dread-filled atmosphere."
+}

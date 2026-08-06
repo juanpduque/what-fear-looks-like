@@ -1,0 +1,43 @@
+{
+  "title_text": "トリツキ",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "あたしたち、今、霊にやられちゅ...",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "crowd",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and disturbing imagery.",
+  "description": "A dark poster featuring multiple ghostly faces with the Japanese title \"トリツキ\" and a tagline in Japanese."
+}

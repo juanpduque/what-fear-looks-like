@@ -1,0 +1,49 @@
+{
+  "title_text": "The VEIL",
+  "credits_text": "SEAN O'BRIEN REBEKAH KENNEDY DIRECTED BY CAMERON RUSE & KYLE P. ANDREWS WRITTEN BY CAMERON RUSE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "OFFICIAL SELECTION FILMFRONTIERS 2023",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "haunting",
+    "eerie",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "",
+  "description": "A poster features a candle burning in front of a house with two faces, one young and one old, set against a dark, forested background."
+}

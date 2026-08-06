@@ -1,0 +1,45 @@
+{
+  "title_text": "THE MASKS THAT WEAR",
+  "credits_text": "The Masque Files Present: Joey Snack Ruby Lafcoona Victor Bonocore Eddie Bonocore & Passenger of Shit CJ2 Jay Longo Written by: Director: Sponsored by Screamerz",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "surreal",
+    "eerie",
+    "psychological",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and unsettling facial expressions; no explicit violence or nudity.",
+  "description": "A poster shows a group of masked figures in a dimly lit room with eerie faces and unsettling expressions, suggesting a gothic and psychological horror theme."
+}

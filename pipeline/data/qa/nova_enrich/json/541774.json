@@ -1,0 +1,40 @@
+{
+  "title_text": "益結〤405",
+  "credits_text": "フタションが死の主項",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "間屋影",
+  "mood": [
+    "horror",
+    "suspense",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood, suitable for mature audiences.",
+  "description": "A poster features a young woman with a distressed expression, overlaid with a close-up of a menacing eye and bold Japanese text."
+}

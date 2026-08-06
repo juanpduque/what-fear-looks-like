@@ -1,0 +1,49 @@
+{
+  "title_text": "TUMBAL THE RITUAL",
+  "credits_text": "CÉSAR RAMÍREZ",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NSI",
+  "mood": [
+    "gothic",
+    "dread",
+    "occult",
+    "surreal",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and a monstrous figure, but no explicit violence or gore.",
+  "description": "A dark, eerie poster features a central female face with a monstrous, multi-eyed entity above, set against twisted branches and shadowy trees."
+}

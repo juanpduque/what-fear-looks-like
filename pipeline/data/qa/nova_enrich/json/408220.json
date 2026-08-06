@@ -1,0 +1,40 @@
+{
+  "title_text": "JUSTICE LEAGUE DARK",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "intense",
+    "heroic"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.8
+    },
+    {
+      "name": "heroic",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.2,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.4,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and intense expressions, but no explicit violence or nudity.",
+  "description": "A poster featuring a group of superheroes in a dark, gothic setting, with intense expressions and mystical energy surrounding them."
+}

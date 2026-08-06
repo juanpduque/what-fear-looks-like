@@ -1,0 +1,46 @@
+{
+  "title_text": "SPLATTER BEACH",
+  "credits_text": "Date. Mate. Mutillate.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ERIN BROWN ERIKA SMITH CAMP MOTION PICTURES",
+  "mood": [
+    "horror",
+    "camp",
+    "violent",
+    "gory",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore.",
+  "description": "A horror movie poster featuring a screaming woman and a monstrous creature amidst splattered blood on a beach."
+}

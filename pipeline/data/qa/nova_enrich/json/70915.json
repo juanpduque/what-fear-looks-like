@@ -1,0 +1,36 @@
+{
+  "title_text": "RESERVEDEX",
+  "credits_text": "É KÉTI WANG, DANIEL DAHL, STINE KRÅBOL, TRÉNDY MESSAU MELOSAYE VINTER HAHLVØD, KÉTI WANG, KÉTI WANG, KÉTI WANG STINE KRÅBOL, KÉTI WANG, KÉTI WANG, DANIEL DAHL, EVA GAUSTIN, YVONNE PATRIDGE RAYMOND HAUGLAND, KÉTI WANG DANIEL DAHL STINE KRÅBOL, KÉTI WANG",
+  "languages": [
+    "en"
+  ],
+  "other_text": "3F presenteret en Kenny Wang-film Enhver som bevitter en ulykke har plikt til å hjælpe",
+  "mood": [
+    "thriller",
+    "horror",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "nudity"
+  ],
+  "moderation_notes": "Mild nudity and implied violence from the chainsaw.",
+  "description": "A woman stands on a road holding a chainsaw, with a forested background and bold title text overlay."
+}

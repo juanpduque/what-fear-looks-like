@@ -1,0 +1,42 @@
+{
+  "title_text": "BRAINDEAD",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "grotesque",
+    "surreal",
+    "camp",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of a skull emerging from exaggerated lips, suggesting horror and gore.",
+  "description": "A person with exaggerated lips holds a skull, with intense wide eyes and bold red text reading 'BRAINDEAD' below."
+}

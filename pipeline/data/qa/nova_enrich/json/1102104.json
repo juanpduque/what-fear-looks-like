@@ -1,0 +1,42 @@
+{
+  "title_text": "BIOHAZARD SUBEXECUTION",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "バイオハラッドショーショーショーショーでは、スピードアクティングですか?",
+  "mood": [
+    "intense",
+    "action",
+    "thriller",
+    "dystopian",
+    "gritty"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violent action and weapon imagery.",
+  "description": "A dramatic poster shows a city street at sunset with armed figures and a central action scene, featuring bold red text and Japanese characters."
+}

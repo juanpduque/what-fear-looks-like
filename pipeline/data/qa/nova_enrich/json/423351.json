@@ -1,0 +1,44 @@
+{
+  "title_text": "メダラス",
+  "credits_text": "洗丽証のボラー魔影",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "surreal",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and monstrous creatures.",
+  "description": "A poster features a man in dark clothing superimposed over a gothic house with a skull and a blue monster, evoking a horror theme."
+}

@@ -1,0 +1,34 @@
+{
+  "title_text": "MAUT KI RAAT",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "ur"
+  ],
+  "other_text": "SACH ARTS",
+  "mood": [
+    "thriller",
+    "horror",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.1,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Movie poster features a group of people with a monstrous creature in the background, suggesting a horror thriller theme."
+}

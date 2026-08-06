@@ -1,0 +1,42 @@
+{
+  "title_text": "THE TORTURER",
+  "credits_text": "Un film de LAMBERTO BAVA",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "other_text": "Le retour de fils prédit, LAMBERTO BAVA",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "disturbing",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "chains",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests intense psychological horror and potential violence.",
+  "description": "A close-up of a distressed face with chains in the background, titled 'The Torturer' directed by Lamberto Bava."
+}

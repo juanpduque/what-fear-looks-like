@@ -1,0 +1,40 @@
+{
+  "title_text": "BIENVENIDOS AL HORROR",
+  "credits_text": "MARÍANA ESNOZ - CRISTIÁN STEVENSON - EZQUEL CAMPA - JUAN CARLOS BENZ LEANDRO COCCARO - ANNA CARINA - JULIO PALLERO - AGUSTINA FORTUNATO GUION MARÍANO CATTANEO - CAMARA YONACIO CERVIO - MÚSICA WALTER FARBÁN SETZ EDICIÓN MARÍANO CATTANEO - DIRECCIÓN DE FOTOGRAFÍA ALEJANDRO MAX PARISE DIRECCIÓN Y PRODUCCIÓN MARÍANO CATTANEO YONACIO CERVIO",
+  "languages": [
+    "es"
+  ],
+  "other_text": "KANDAR PRODUCCIONES",
+  "mood": [
+    "dread",
+    "gothic",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A distressed woman stands tied to a chair with a menacing hand reaching toward her, set against a dark, gritty background."
+}

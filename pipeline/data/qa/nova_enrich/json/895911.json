@@ -1,0 +1,43 @@
+{
+  "title_text": "SOMBRA DO MAR",
+  "credits_text": "DIRIGIDO POR SÉRGIO PEREDA\n\nGUN JUAN MOREIRA ALEXANDRA TEIXEIRA / PRODUÇÃO CENTRO DE CINEMA DE CASCAIS\n\nDIREÇÃO DE ROTEIRO: ANDRÉS G. CHELIO / ROTEIRO: VICTOR ALEIXANDRE SANCHEZ / SNOW DE PEREZ / MIGUEL ABEL GARCIA VILLA LÓPEZ\n\nMONTADOR: MARTA NAVARRO / MÚSICA: MARTA TEIXEIRA DE PEREZ / ADRIÁN J. ALVAREZ",
+  "languages": [
+    "es"
+  ],
+  "other_text": "MILO TABOADA ROSNIA CASTRO FERNANDO RIVAS",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "haunting",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "shadow",
+      "conf": 0.95
+    },
+    {
+      "name": "water",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, shadowy figure looms over a small, central silhouette against a deep red background, evoking a sense of mystery and dread."
+}

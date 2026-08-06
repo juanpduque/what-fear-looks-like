@@ -1,0 +1,44 @@
+{
+  "title_text": "จี่เลนไทยไทยก่อน THE HOUSE",
+  "credits_text": "กับการไฟล์การเห็นเว็บไทยไทยก่อน © 2023 SASTRA CO. LTD ALL RIGHTS RESERVED.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SASTRA FILM inspired by love",
+  "mood": [
+    "horror",
+    "suspense",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A poster shows a woman facing a monstrous, bloodied figure in a dark setting, with the title 'The House' prominently displayed."
+}

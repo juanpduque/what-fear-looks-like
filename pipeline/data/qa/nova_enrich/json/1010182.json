@@ -1,0 +1,43 @@
+{
+  "title_text": "REFÚGIO",
+  "credits_text": "BERNARDO FASCETTI MARINA WILSON RÔMULO SOUZA E SÃO SANTOS CAROL DUARTE",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "mysterious",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood imagery.",
+  "description": "A shadowy figure stands in a dark, desolate setting with blood dripping from the title text, suggesting horror themes."
+}

@@ -1,0 +1,51 @@
+{
+  "title_text": "電物屋的飛",
+  "credits_text": "OPPEKIZAKAMORI SANPEIKIKAN",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "DVD VIDEO DIGITAL PROJECT",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "supernatural",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic imagery and disturbing themes.",
+  "description": "A collage-style poster featuring eerie faces, ghostly figures, and Japanese text, suggesting a horror film with supernatural elements."
+}

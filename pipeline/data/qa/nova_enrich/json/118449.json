@@ -1,0 +1,46 @@
+{
+  "title_text": "TIED IN BLOOD",
+  "credits_text": "A BONE CHILLING GHOST STORY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CHEMICAL BURN ENTERTAINMENT PRESENTS\nUNTIL THE DEAD REST NEITHER WILL THE LIVING",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "haunting",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild suggestions of violence and gore through visual themes.",
+  "description": "A poster featuring a ghostly face with red eyes and a cracked texture, overlaying an old house in a dark, eerie setting."
+}

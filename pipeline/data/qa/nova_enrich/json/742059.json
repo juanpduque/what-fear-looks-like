@@ -1,0 +1,42 @@
+{
+  "title_text": "КУКОЛЬНИК",
+  "credits_text": "",
+  "languages": [
+    "ru"
+  ],
+  "other_text": "",
+  "mood": [
+    "eerie",
+    "gothic",
+    "surreal",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "doll",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.0,
+  "animal": 0.1,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A creepy doll with glowing eyes sits on a wooden plank against a stormy sky, with a bird perched above and Russian text above it."
+}
