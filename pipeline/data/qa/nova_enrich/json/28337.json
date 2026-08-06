@@ -1,0 +1,44 @@
+{
+  "title_text": "Cannibal Hookers",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WARNING: THIS MOVIE CONTAINS GRAPHIC VIOLENCE AND SEXUAL ACTIVITY",
+  "mood": [
+    "erotic",
+    "horror",
+    "camp",
+    "violent",
+    "grotesque"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.95
+    },
+    {
+      "name": "nudity",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.95,
+  "sexual_content": 0.85,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, gore, and explicit sexual content.",
+  "description": "A poster shows a topless woman holding a weapon above a mutilated body, with blood splattered around."
+}

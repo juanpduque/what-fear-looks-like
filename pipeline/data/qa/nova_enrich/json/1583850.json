@@ -1,0 +1,37 @@
+{
+  "title_text": "RED HORROR",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NON È PIÚ CAMBIARE...",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark poster features a shadowy figure and a stone building at night, with bold red text reading \"RED HORROR\"."
+}

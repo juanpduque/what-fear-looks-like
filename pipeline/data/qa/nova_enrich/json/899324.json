@@ -1,0 +1,42 @@
+{
+  "title_text": "TAPE HEAD",
+  "credits_text": "DUSTIN MATTSON CHRIS DANIEL MICHAEL EDSTROM DILLON WEEKS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HORROR",
+  "mood": [
+    "intense",
+    "gritty",
+    "post-apocalyptic",
+    "thriller",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster includes mild graphic elements and violent themes.",
+  "description": "A gritty poster features a distressed man with a bandaged face, wearing overalls, standing over a DJ turntable with a horror label."
+}

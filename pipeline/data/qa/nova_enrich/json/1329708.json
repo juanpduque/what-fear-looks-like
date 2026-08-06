@@ -1,0 +1,50 @@
+{
+  "title_text": "КИШКА НАРУЖУ 3 ПРАВОСУДИЕ ЗМЕРА",
+  "credits_text": "Режиссер: В.МУРЗИКОВ\nОператор: А.РОДКОВ\nКомозиторы: Ю.АНДРЕЕВ, И.ВЕЛОВ, И.ФЕРОН\nХудожники: К.АЛКИНИЕВА, М.МАСЛОВСКАЯ\nВ главных ролях: А.МОЛОЧКОВА, В.МУРЗИКОВ\nВ ролях: Д.КАЗАРИНА, Л.УСИН, Д.УДИН, С.КУРИНЦЕВА, М.АГРАПОВА, О.СТОЛЕРОВ, С.УРУЖИКОВ, О.ДОЛЕДЬКОВ, А.КРУТИКОВ, М.КРЕМЕХОВИНА, М.ВЕЛОВ",
+  "languages": [
+    "ru"
+  ],
+  "other_text": "прос вещ!",
+  "mood": [
+    "apocalyptic",
+    "dystopian",
+    "violent",
+    "survival",
+    "post-apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.3
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.2,
+  "blood_gore": 0.4,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and post-apocalyptic themes.",
+  "description": "A poster shows a giant figure in a gas mask amidst chaos, with survivors and masked figures in a ruined city."
+}

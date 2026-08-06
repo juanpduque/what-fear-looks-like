@@ -1,0 +1,43 @@
+{
+  "title_text": "318",
+  "credits_text": "Vintage Image presents \"318\" - GERT RASSMUSSEN - RANDALL ROSE with JEFFE OFFENBAUER, CLAUS REINMÜLLER, OLE WINNERS, CLAUS ROLD, NIKOLAS THORFF JENSEN, JENS PETER LARSEN, REINHOLD REHNOLD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DON'T GO IN.",
+  "mood": [
+    "dread",
+    "suspense",
+    "claustrophobic",
+    "mystery",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "claustrophobia",
+      "conf": 0.8
+    },
+    {
+      "name": "darkness",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, eerie poster shows a lone figure walking down a dimly lit tunnel with bright lights ahead, accompanied by the title \"318\" and a warning."
+}

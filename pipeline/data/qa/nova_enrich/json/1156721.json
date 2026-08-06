@@ -1,0 +1,38 @@
+{
+  "title_text": "//:CURSE",
+  "credits_text": "SAMUEL L. JACKSON STARRING... DAVE ATTENBOROUGH DIRECTED BY... THE PRODUCERS INCLUDE...",
+  "languages": [
+    "en"
+  ],
+  "other_text": "horror runs deep",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A shadowy figure sits at a desk with a computer against a deep red background, with the title \"//:CURSE\" prominently displayed."
+}

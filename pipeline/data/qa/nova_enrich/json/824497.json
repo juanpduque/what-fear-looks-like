@@ -1,0 +1,35 @@
+{
+  "title_text": "MANIACURE",
+  "credits_text": "A FILM BY KOLYA BURDETINY AND JULIA NELNIK",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dark",
+    "mysterious",
+    "intimate",
+    "psychological",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.3,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, intimate poster features a shadowy figure with a blurred face, evoking mystery and psychological tension."
+}

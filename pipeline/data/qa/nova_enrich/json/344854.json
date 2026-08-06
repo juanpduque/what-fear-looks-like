@@ -1,0 +1,46 @@
+{
+  "title_text": "THE PACK",
+  "credits_text": "NO BARK, ALL BITE.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "dangerous",
+    "threatening",
+    "wild",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 1.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and a menacing creature.",
+  "description": "A poster featuring a fierce black wolf with bared teeth and dripping blood, with bold red text reading 'THE PACK' and the tagline 'NO BARK, ALL BITE.'"
+}

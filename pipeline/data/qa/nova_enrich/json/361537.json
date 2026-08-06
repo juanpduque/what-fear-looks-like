@@ -1,0 +1,47 @@
+{
+  "title_text": "BLOOD CURSE",
+  "credits_text": "THE HAUNTING OF ALICIA STONE\nSTARRING MELISSA HOLLETT, RILEY HEAD, LLOYD KAUFMAN\nMUSIC BY RUSTY COOPER, KERIN KELLY, JENNIFER RICE\nDIRECTED BY KERON KELLY\nCOMING SOON\nSUPPORTED BY SHOCKER FILMS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "supernatural",
+    "terrifying"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "haunting",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and themes of violence and occult.",
+  "description": "A dark, eerie poster features a distorted face with blood splatters, promoting the horror film 'Blood Curse: The Haunting of Alicia Stone.'"
+}

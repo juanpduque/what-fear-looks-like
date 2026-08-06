@@ -1,0 +1,33 @@
+{
+  "title_text": "จันเรี มังเครด",
+  "credits_text": "หนังสวาสองสมาชิกเพียง สั่วว่าน พันดีดี จระ จันสารา ฐันสิกต์ จันเพลิม จัน เพลิม",
+  "languages": [
+    "th"
+  ],
+  "other_text": "กันพัน ระพิก จันเรี ระพิก จันเรี ระพิก จันเรี ระพิก",
+  "mood": [
+    "horror",
+    "thriller",
+    "classic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0
+}

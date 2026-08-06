@@ -1,0 +1,39 @@
+{
+  "title_text": "SAFE INSIDE",
+  "credits_text": "CHRIS HARDER BRIANNE STEVENS and JUDITH O'DEA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "or is he?",
+  "mood": [
+    "suspense",
+    "mystery",
+    "gothic",
+    "haunting",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dimly lit poster shows a person standing in a doorway of an old house with the title 'SAFE INSIDE' prominently displayed above."
+}

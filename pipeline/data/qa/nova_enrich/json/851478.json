@@ -1,0 +1,49 @@
+{
+  "title_text": "結のビッチ",
+  "credits_text": "まさしてあった！",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "ファイル・ステージアにももける、結の影片の影片",
+  "mood": [
+    "gothic",
+    "eerie",
+    "haunting",
+    "mysterious",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "candle",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    },
+    {
+      "name": "occult",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and ghostly themes.",
+  "description": "A young girl in traditional attire stands before candles with an eerie background, suggesting a supernatural or ghostly theme."
+}

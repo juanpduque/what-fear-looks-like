@@ -1,0 +1,50 @@
+{
+  "title_text": "A VERY FLATTENED CHRISTMAS",
+  "credits_text": "KEY TAWN TOOTHMAN, TREVOR DAY PICTURES PRESENT \"A VERY FLATTENED CHRISTMAS\" ALSO STARRING BECKIE BEANE, KAEMIK MCNEALESS, SHAWNNA BERRY, AND MARK ANDERSON WRITTEN BY SHAWN WALLACE DIRECTED BY SHAWN WALLACE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DEPENDENT ALO",
+  "mood": [
+    "humorous",
+    "horror",
+    "festive",
+    "absurd",
+    "dark comedy"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.8,
+  "blood_gore": 0.6,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild violence and blood, suitable for mature audiences.",
+  "description": "A festive horror poster featuring a monstrous creature holding a bloody shovel, surrounded by terrified people in a snowy forest setting."
+}

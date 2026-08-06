@@ -1,0 +1,50 @@
+{
+  "title_text": "MEANBOAT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HE'S GOT THE WHEEL AND HE'S TAKING YOU TO HELL",
+  "mood": [
+    "horror",
+    "violent",
+    "dark",
+    "threatening",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "knife",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A masked figure holds a bloody knife against a full moon backdrop with a skull at the bottom."
+}

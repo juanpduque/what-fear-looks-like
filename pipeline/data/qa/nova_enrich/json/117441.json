@@ -1,0 +1,41 @@
+{
+  "title_text": "LA MALÉDICTION DE BELPHÉGOR",
+  "credits_text": "RAYMOND SOUPLEX, PAUL GUERS, UN FILM DE GEORGES COMBRET ET JEAN MALEY",
+  "languages": [
+    "fr"
+  ],
+  "other_text": "LA PEUR A UN NOM",
+  "mood": [
+    "gothic",
+    "horror",
+    "supernatural",
+    "dramatic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and intense imagery.",
+  "description": "A poster features a menacing red-faced figure with glowing eyes and outstretched hands, with a man falling in the background, set against a blue and red backdrop."
+}

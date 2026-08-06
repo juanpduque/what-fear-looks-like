@@ -1,0 +1,42 @@
+{
+  "title_text": "HABLANDO CON EXTRANOÑOS",
+  "credits_text": "¿Sabías que los muertos dictan nuestros sueños?\nGIGI SAUL GUERRERO\nEUGENIO RUBIO\nYAGO ANDREU SANDOVAL\nUNA PELÍCULA DE ADRIÁN GARCÍA BOGLIANO",
+  "languages": [
+    "es"
+  ],
+  "other_text": "PRÓXIMAMENTE EN CINES",
+  "mood": [
+    "horrific",
+    "disturbing",
+    "psychological",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic injury and disturbing imagery.",
+  "description": "A distressed woman with a mutilated face is shown in a dark, intense scene from the horror film 'Hablando con Extraños.'"
+}

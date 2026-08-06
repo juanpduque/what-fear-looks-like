@@ -1,0 +1,46 @@
+{
+  "title_text": "ZOMBIES OF THE LIVING DEAD",
+  "credits_text": "CHRISTIAN ACKERMAN FILM FestCast PRODUCTIONS presents STARRING JOSH MENY JOHANNA CIAMPA JESSE HEAD CHEYENNE ADAMSON DANIELLE ACKERMAN APRIL DEFF TIMOTHY DEFF WALT SEVOGNA MATEO MELLEM TIMOTHY JAKVO CHAD ACKERMAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CHRISTIAN ACKERMAN FASTCASTPRODUCTIONS.COM",
+  "mood": [
+    "horror",
+    "zombie",
+    "apocalyptic",
+    "intense",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "zombie",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster featuring a man pointing forward with zombies in the background, blood splatters, and a green handprint on a mirror."
+}

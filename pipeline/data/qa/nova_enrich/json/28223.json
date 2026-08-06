@@ -1,0 +1,42 @@
+{
+  "title_text": "CREEPOZOIDS",
+  "credits_text": "A FILM BY DAVID DECOTEAU",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOUR FLESH WILL CRAWL RIGHT OFF YOUR BONES!",
+  "mood": [
+    "horror",
+    "camp",
+    "erotic",
+    "action",
+    "sci-fi"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.7,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "Contains mild sexual suggestiveness and implied violence.",
+  "description": "A poster shows a muscular man confronting a large, monstrous creature with sharp teeth, while a woman is in distress and another lies on the ground."
+}

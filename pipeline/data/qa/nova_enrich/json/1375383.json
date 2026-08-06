@@ -1,0 +1,46 @@
+{
+  "title_text": "黄师大屋师子屋师",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "屋师大屋师子屋师",
+  "mood": [
+    "dread",
+    "gothic",
+    "haunting",
+    "desolate",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatter and implied violence.",
+  "description": "A dark, dilapidated hallway with cracked floors and peeling walls, featuring a partially visible face and dripping red text overlay."
+}

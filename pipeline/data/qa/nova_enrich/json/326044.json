@@ -1,0 +1,45 @@
+{
+  "title_text": "TALES OF TERROR FROM TOKYO AND ALL OVER JAPAN VOLUME ONE",
+  "credits_text": "FROM TAKASHI SHIMIZU DIRECTOR OF \"THE GRUDGE\" & NORIO TSURUTA DIRECTOR OF \"RING 0\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "eerie",
+    "haunting",
+    "psychological",
+    "supernatural",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild disturbing imagery and psychological horror themes.",
+  "description": "A close-up of a pale, eerie face with dark eyes dominates the poster, accompanied by text credits and a dark, shadowy background."
+}

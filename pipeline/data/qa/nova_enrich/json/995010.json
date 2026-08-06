@@ -1,0 +1,40 @@
+{
+  "title_text": "ՀԱՄՈՐԴԵՍԻ",
+  "credits_text": "",
+  "languages": [
+    "hy"
+  ],
+  "other_text": "Հարան գորոր",
+  "mood": [
+    "gothic",
+    "dramatic",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "blood"
+  ],
+  "moderation_notes": "Contains mild blood and violent themes",
+  "description": "A poster featuring three men in dramatic makeup with a dark, moonlit background. The central figure has a pale face with red lips and dark eyes, while the others display intense expressions."
+}

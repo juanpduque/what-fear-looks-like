@@ -1,0 +1,49 @@
+{
+  "title_text": "WEREWOLF CASTLE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "mysterious",
+    "supernatural",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "castle",
+      "conf": 0.8
+    },
+    {
+      "name": "wolf",
+      "conf": 0.8
+    },
+    {
+      "name": "moon",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.8,
+  "person": 0.8,
+  "animal": 0.8,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery with skulls and a threatening silhouette.",
+  "description": "A man sits with wolves in front of a castle under a full moon, with a shadowy werewolf figure looming above."
+}

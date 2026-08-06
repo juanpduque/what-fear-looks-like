@@ -1,0 +1,44 @@
+{
+  "title_text": "POOHNIVERSE",
+  "credits_text": "MONSTERS ASSEMBLE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dark",
+    "fantasy",
+    "surreal",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.8,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild violent imagery present with fantasy monsters and weapons.",
+  "description": "A poster features a bear holding an axe, a deer-like creature, and a masked figure in a dark, forested setting."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "EL SENTIDO DEL MIEDO",
+  "credits_text": "JAVIER DIMENT PRESENTA A LUIS LIEBRONSKI ES EL SENTIDO DEL MIEDO CON LUIS ARANOSKY REBECA KOHEN TOMÁS CAZARES HEBE LOPE JOSE MENBREZ",
+  "languages": [
+    "es"
+  ],
+  "other_text": "PRODUCUCCIÓN SILVIA BELLEDEERE GUIN JAVIER DIMENT GERMAN VAL MARTIN BLOUSSON ATE SANDRA VURCICVICH MARCILALE Y FR ANDY LOUND FOTOGRAFIA LUIS ARANCIBIA VETARNO GABRIELA CONZALES CANALA DIRECCIÓN Y EDICIÓN JAVIER DIMENT",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood-like imagery.",
+  "description": "A dark, textured poster features bold white text reading \"EL SENTIDO DEL MIEDO\" over a grungy background with faint red stains resembling blood."
+}

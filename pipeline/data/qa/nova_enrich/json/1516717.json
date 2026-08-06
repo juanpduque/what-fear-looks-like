@@ -1,0 +1,40 @@
+{
+  "title_text": "THE ROWS",
+  "credits_text": "YOU'LL NEVER LEAVE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COMING SOON",
+  "mood": [
+    "dread",
+    "suspense",
+    "horror",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.4,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild hints of potential violence; no explicit content shown.",
+  "description": "A poster shows a group of masked figures in a cornfield with a young girl peering through stalks, evoking a sense of dread and suspense."
+}

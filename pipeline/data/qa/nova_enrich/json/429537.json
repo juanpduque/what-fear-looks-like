@@ -1,0 +1,47 @@
+{
+  "title_text": "Raven's Hollow",
+  "credits_text": "DAREDEVIL FILMS PRESENTS A DARKHOUSE PRODUCTION OF A COLIN CLARKE FILM STARRING THE VOICES OF STEPHANIE FAX, CAVIS PHILLIPS, ANDREW KALAFIS, ANIMATION BY COLIN CLARKE, MUSIC BY ANDREW KALAFIS, A COLIN CLARKE PRODUCTION, WRITTEN BY MAC PACIFIK ANIMATION & COLIN CLARKE, PRODUCED BY COLIN CLARKE, DIRECTED BY COLIN CLARKE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FROM THE MAKER OF FRANKENSTEIN VS THE WOLFMAN, SOMETHING'S ALIVE! TRICK OR TREAT...",
+  "mood": [
+    "gothic",
+    "eerie",
+    "haunting",
+    "supernatural",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark poster features a child with a skeleton costume in a cornfield, with a shadowy figure holding a scythe in the background."
+}

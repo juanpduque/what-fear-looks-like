@@ -1,0 +1,39 @@
+{
+  "title_text": "WOLF TOWN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "dangerous",
+    "wild",
+    "survival",
+    "threatening"
+  ],
+  "fear_labels": [
+    {
+      "name": "wolf",
+      "conf": 1.0
+    },
+    {
+      "name": "danger",
+      "conf": 0.9
+    },
+    {
+      "name": "threat",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 1.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring a fierce wolf in the foreground with a pack chasing in the background, set against a stormy, urban landscape."
+}

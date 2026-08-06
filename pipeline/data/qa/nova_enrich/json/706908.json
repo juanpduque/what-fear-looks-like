@@ -1,0 +1,49 @@
+{
+  "title_text": "MISSING IN GREENWOOD",
+  "credits_text": "PREPARE TO DIE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "mystery",
+    "suspense",
+    "horror",
+    "forest",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "knife",
+      "conf": 0.7
+    },
+    {
+      "name": "hooded",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the presence of a knife and a threatening silhouette.",
+  "description": "A hooded figure holds a knife in a dark, eerie forest. The title 'MISSING IN GREENWOOD' and tagline 'PREPARE TO DIE' are displayed prominently."
+}

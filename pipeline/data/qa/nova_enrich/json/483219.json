@@ -1,0 +1,49 @@
+{
+  "title_text": "OUIJA",
+  "credits_text": "BLOOD RITUAL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SPREAD THE GOSPEL",
+  "mood": [
+    "gothic",
+    "dread",
+    "occult",
+    "supernatural",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.95
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "occult",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and a menacing supernatural figure.",
+  "description": "A poster features a large, eerie skull with glowing eyes above the word 'OUIJA' and the subtitle 'BLOOD RITUAL.' A woman in a white dress stands in a dark setting."
+}

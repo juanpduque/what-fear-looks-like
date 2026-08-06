@@ -1,0 +1,46 @@
+{
+  "title_text": "DEATH FACTORY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "dark",
+    "intense",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "gothic",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and a monstrous face, suitable for mature audiences.",
+  "description": "A dramatic poster featuring a monstrous face with sharp teeth and claws, set against a dark background with bold text reading 'DEATH FACTORY.'"
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "ATTACK OF THE THANKSGIVING VAMPIRE",
+  "credits_text": "An early student MICHAEL BELLAMY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"If Zombie Vampires took over, you'd be dead by the time of the Pilgrims. However, would it still be Thanksgiving?\" Speech would be cold.",
+  "mood": [
+    "humorous",
+    "camp",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A cartoon-style poster depicts a vampire attacking a Thanksgiving scene with a tennis racket as a weapon, featuring humorous and surreal elements."
+}

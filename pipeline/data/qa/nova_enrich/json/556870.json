@@ -1,0 +1,42 @@
+{
+  "title_text": "WEIRD FICTION",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HORROR\nFOUR TALES OF TRUE TERROR!\nMIDNIGHT HALLOWEEN SPECIAL!",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, eerie poster featuring distorted faces and a green \"HORROR\" badge, promoting a midnight Halloween special of weird fiction tales."
+}

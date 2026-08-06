@@ -1,0 +1,50 @@
+{
+  "title_text": "THE KILLAGE",
+  "credits_text": "STARRING RITARAYMAN DRYSDAHL, JOHNSTON THEODOSIUS, LISS THOMAS HALL, DANIEL JOHNSTON, MARK JOHNSION, LUANIE JOE BAUER, EDITED BY JOE BAUER, DIRECTED BY JOE BAUER, DOMINIC CRISCO, DAVID LAZAR, PRODUCED BY RITA KARTMANN & JOE BAUER, WRITTEN BY DAVID LAZAR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Archery, Skip-ropes, Campfires, Murder, Orienteering, Whoa - back up.",
+  "mood": [
+    "dread",
+    "terror",
+    "horror",
+    "thriller",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "night",
+      "conf": 0.7
+    },
+    {
+      "name": "text",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster shows a large axe embedded in a tree trunk with blood splatter, set against a dark jungle backdrop at night."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "SLEEPWALKER",
+  "credits_text": "\"IT'S TIME TO WAKE UP\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "mysterious",
+    "introspective",
+    "haunting",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man sits up in bed under dim lighting, with the title 'SLEEPWALKER' and tagline 'IT'S TIME TO WAKE UP' displayed prominently."
+}

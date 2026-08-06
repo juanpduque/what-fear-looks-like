@@ -1,0 +1,42 @@
+{
+  "title_text": "ZİFIR-PAZAP",
+  "credits_text": "7 EYLÜL'DE SİNEMALARDA",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "MALATYALI DUYUNGULARIN YER ALDIĞI FİLİM",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "psychological",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and graphic imagery.",
+  "description": "A dramatic poster features a group of intense faces surrounding a floating island with a large knife piercing through it, suggesting a psychological horror theme."
+}

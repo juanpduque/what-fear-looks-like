@@ -1,0 +1,34 @@
+=== PUSH+PULL Mon Aug  3 10:43:34 -05 2026 ===
+PUSH ok nova_enrich/nova_enrich.csv ( 7646180 bytes)
+PUSH ok nova_enrich/nova_enrich.log ( 3921348 bytes)
+PUSH ok nova_enrich/progress.json (     376 bytes)
+PUSH ok nova_enrich/RESUME.txt (     997 bytes)
+PUSH ok textract/poster_ocr_textract.csv ( 4253961 bytes)
+PUSH ok textract/poster_ocr_textract_partial.csv ( 4253961 bytes)
+PUSH ok extra/poster_ocr_rek_text.csv ( 5129149 bytes)
+PUSH ok extra/poster_ocr_rek_text_partial.csv ( 5129149 bytes)
+PUSH ok extra/poster_ocr_rek_text_alllang_partial.csv (  733998 bytes)
+SKIP missing data/poster_ocr_rek_text_alllang.csv
+PUSH ok extra/rek_text_alllang_ids.txt (   80155 bytes)
+PUSH ok extra/rek_text_alllang_manifest.csv (  615133 bytes)
+PUSH ok extra/ocr_comprehend.csv ( 7116526 bytes)
+PUSH ok extra/ocr_comprehend_partial.csv ( 7116526 bytes)
+PUSH ok extra/nova_qa_sample.csv (  458697 bytes)
+PUSH ok extra/nova_qa_sample.jsonl (  572924 bytes)
+PUSH ok extra/poster_ocr_easyocr.csv ( 3031411 bytes)
+Syncing nova json → S3…
+PUSH json done
+PUSH ok nova_enrich/snapshots/nova_enrich_20260803_104431.csv ( 7723408 bytes)
+PUSH ok extra/snapshots/ocr_comprehend_20260803_104431.csv ( 7116526 bytes)
+PUSH ok extra/snapshots/poster_ocr_rek_text_alllang_partial_20260803_104431.csv (  833718 bytes)
+=== PULL mirror → data/qa/wflike_backup_local/20260803 ===
+PULL done Mon Aug  3 10:49:46 -05 2026
+mirror files=18,923 bytes=132,103,088 (132.1 MB)
+  nova_enrich/nova_enrich.csv: OK 8003723
+  textract/poster_ocr_textract.csv: OK 4253961
+  extra/poster_ocr_rek_text.csv: OK 5129149
+  extra/ocr_comprehend.csv: OK 7116526
+  extra/nova_qa_sample.csv: OK 458697
+  extra/poster_ocr_rek_text_alllang_partial.csv: OK 733998
+  nova json mirrored: 18,892
+=== DONE Mon Aug  3 10:49:47 -05 2026 ===

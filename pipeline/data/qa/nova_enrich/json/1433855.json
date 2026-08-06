@@ -1,0 +1,43 @@
+{
+  "title_text": "THE NIGHT SIDE",
+  "credits_text": "ISABELLA WHIPPLE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A SOME DUDE PRODUCTION\nMONZA FILM FESTIVAL OFFICIAL SELECTION\n2024 CHICAGO HORROR FILM FESTIVAL OFFICIAL SELECTION\n2025 MILWAUKEE HORROR FILM FESTIVAL OFFICIAL SELECTION",
+  "mood": [
+    "dread",
+    "gothic",
+    "mystery",
+    "suspense",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "night",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A solitary figure stands in a snowy forest at night, facing away from the viewer, with festival selection logos and the title 'The Night Side' displayed."
+}

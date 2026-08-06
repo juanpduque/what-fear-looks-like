@@ -1,0 +1,49 @@
+{
+  "title_text": "THE FINAL NIGHT AND DAY",
+  "credits_text": "LIVE. DIE. FIGHT.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "dark",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "cemetery",
+      "conf": 0.85
+    },
+    {
+      "name": "moon",
+      "conf": 0.75
+    },
+    {
+      "name": "hand",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains eerie and potentially disturbing imagery related to horror themes.",
+  "description": "A poster shows a zombie hand reaching upward against a dark, moonlit cemetery backdrop with silhouettes of people and graves."
+}

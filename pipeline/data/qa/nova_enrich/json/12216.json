@@ -1,0 +1,40 @@
+{
+  "title_text": "THE PORTAL",
+  "credits_text": "MICHAEL MAIDEN MICHAEL MUIHNEY ZENNA ZABLOCKI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and a ghostly silhouette, but no explicit violence or gore.",
+  "description": "A dark, framed portrait shows a ghostly hand reaching out from a shadowy background, with the title 'THE PORTAL' displayed below."
+}

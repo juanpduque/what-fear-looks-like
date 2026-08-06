@@ -1,0 +1,39 @@
+{
+  "title_text": "MONSTROS",
+  "credits_text": "UM FILME DE CARLOS CALIKA",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "other_text": "OFFICIAL SELECTION FIXION FEST 2023, OFFICIAL SELECTION MOTELX 2023, OFFICIAL SELECTION The Hollywood Guerrilla Film Festival 2023, OFFICIAL SELECTION RANDFILMFEST 2023, OFFICIAL SELECTION ONED art/experimental film festival 2023, OFFICIAL SELECTION HULDRA 2023, SELEÇÃO OFICIAL MACHICURTAS 2023, COMPETITION MÉlanges d'argent 2023",
+  "mood": [
+    "mysterious",
+    "forest",
+    "dinner",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A black-and-white poster shows five people seated around a long table in a dense forest, with the title \"MONSTROS\" prominently displayed."
+}

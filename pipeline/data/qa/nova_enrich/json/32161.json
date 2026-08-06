@@ -1,0 +1,46 @@
+{
+  "title_text": "CELLO",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "eerie",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "bound_object",
+      "conf": 0.95
+    },
+    {
+      "name": "horror",
+      "conf": 0.95
+    },
+    {
+      "name": "psychological_thriller",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and violent imagery.",
+  "description": "A young woman sits beside a bound, bloody object against a dark blue backdrop, evoking horror and psychological tension."
+}

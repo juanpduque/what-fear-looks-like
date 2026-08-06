@@ -1,0 +1,113 @@
+ids=14384 paths_lookup=47200 out=/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/posters_original s3=s3://aof-owlv2-102516364259/posters_original/
+  download 200/14384 ok=23 exists=177 miss=0 1s
+  download 400/14384 ok=223 exists=177 miss=0 7s
+  download 600/14384 ok=423 exists=177 miss=0 12s
+(eval):3: command not found: setsid
+ids=14384 paths_lookup=47200 out=/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/posters_original s3=s3://aof-owlv2-102516364259/posters_original/
+  download 500/14384 ok=0 exists=500 miss=0 0s
+  download 1000/14384 ok=392 exists=608 miss=0 14s
+  download 1500/14384 ok=892 exists=608 miss=0 38s
+  download 2000/14384 ok=1392 exists=608 miss=0 73s
+  download 2500/14384 ok=1892 exists=608 miss=0 103s
+  download 3000/14384 ok=2391 exists=608 miss=1 127s
+  download 3500/14384 ok=2891 exists=608 miss=1 149s
+  download 4000/14384 ok=3391 exists=608 miss=1 175s
+  download 4500/14384 ok=3891 exists=608 miss=1 227s
+  download 5000/14384 ok=4391 exists=608 miss=1 262s
+  download 5500/14384 ok=4891 exists=608 miss=1 305s
+  download 6000/14384 ok=5391 exists=608 miss=1 324s
+  download 6500/14384 ok=5891 exists=608 miss=1 350s
+  download 7000/14384 ok=6391 exists=608 miss=1 376s
+  download 7500/14384 ok=6891 exists=608 miss=1 406s
+  download 8000/14384 ok=7391 exists=608 miss=1 429s
+  download 8500/14384 ok=7891 exists=608 miss=1 457s
+  download 9000/14384 ok=8391 exists=608 miss=1 481s
+  download 9500/14384 ok=8891 exists=608 miss=1 508s
+  download 10000/14384 ok=9391 exists=608 miss=1 540s
+  download 10500/14384 ok=9891 exists=608 miss=1 571s
+  download 11000/14384 ok=10391 exists=608 miss=1 602s
+  download 11500/14384 ok=10891 exists=608 miss=1 633s
+  download 12000/14384 ok=11391 exists=608 miss=1 663s
+  download 12500/14384 ok=11891 exists=608 miss=1 695s
+  download 13000/14384 ok=12391 exists=608 miss=1 725s
+  download 13500/14384 ok=12891 exists=608 miss=1 754s
+  download 14000/14384 ok=13391 exists=608 miss=1 785s
+  download 14384/14384 ok=13775 exists=608 miss=1 813s
+upload n=14383 → s3://aof-owlv2-102516364259/posters_original/
+  upload 200/14383 ok=200 fail=0 57s
+  upload 400/14383 ok=400 fail=0 108s
+  upload 600/14383 ok=600 fail=0 159s
+  upload 800/14383 ok=800 fail=0 210s
+  upload 1000/14383 ok=1000 fail=0 262s
+  upload 1200/14383 ok=1200 fail=0 335s
+  upload 1400/14383 ok=1400 fail=0 383s
+  upload 1600/14383 ok=1600 fail=0 435s
+  upload 1800/14383 ok=1800 fail=0 490s
+  upload 2000/14383 ok=2000 fail=0 541s
+  upload 2200/14383 ok=2200 fail=0 588s
+  upload 2400/14383 ok=2400 fail=0 640s
+  upload 2600/14383 ok=2600 fail=0 689s
+  upload 2800/14383 ok=2800 fail=0 743s
+  upload 3000/14383 ok=3000 fail=0 794s
+  upload 3200/14383 ok=3200 fail=0 840s
+  upload 3400/14383 ok=3400 fail=0 886s
+  upload 3600/14383 ok=3600 fail=0 931s
+  upload 3800/14383 ok=3800 fail=0 982s
+  upload 4000/14383 ok=4000 fail=0 1041s
+  upload 4200/14383 ok=4200 fail=0 1093s
+  upload 4400/14383 ok=4400 fail=0 1152s
+  upload 4600/14383 ok=4600 fail=0 1206s
+  upload 4800/14383 ok=4800 fail=0 1272s
+  upload 5000/14383 ok=5000 fail=0 1338s
+  upload 5200/14383 ok=5200 fail=0 1412s
+  upload 5400/14383 ok=5400 fail=0 1483s
+  upload 5600/14383 ok=5600 fail=0 1543s
+  upload 5800/14383 ok=5800 fail=0 1594s
+  upload 6000/14383 ok=6000 fail=0 1644s
+  upload 6200/14383 ok=6200 fail=0 1716s
+  upload 6400/14383 ok=6400 fail=0 1774s
+  upload 6600/14383 ok=6600 fail=0 1833s
+  upload 6800/14383 ok=6800 fail=0 1891s
+  upload 7000/14383 ok=7000 fail=0 1942s
+  upload 7200/14383 ok=7200 fail=0 1996s
+  upload 7400/14383 ok=7400 fail=0 2048s
+  upload 7600/14383 ok=7600 fail=0 2101s
+  upload 7800/14383 ok=7800 fail=0 2157s
+  upload 8000/14383 ok=8000 fail=0 2209s
+  upload 8200/14383 ok=8200 fail=0 2264s
+  upload 8400/14383 ok=8400 fail=0 2321s
+  upload 8600/14383 ok=8600 fail=0 2372s
+  upload 8800/14383 ok=8800 fail=0 2424s
+  upload 9000/14383 ok=9000 fail=0 2479s
+  upload 9200/14383 ok=9200 fail=0 2530s
+  upload 9400/14383 ok=9400 fail=0 2590s
+  upload 9600/14383 ok=9600 fail=0 2644s
+  upload 9800/14383 ok=9800 fail=0 2698s
+  upload 10000/14383 ok=10000 fail=0 2756s
+  upload 10200/14383 ok=10200 fail=0 2811s
+  upload 10400/14383 ok=10400 fail=0 2867s
+  upload 10600/14383 ok=10600 fail=0 2923s
+  upload 10800/14383 ok=10800 fail=0 2975s
+  upload 11000/14383 ok=11000 fail=0 3031s
+  upload 11200/14383 ok=11200 fail=0 3086s
+  upload 11400/14383 ok=11400 fail=0 3140s
+  upload 11600/14383 ok=11600 fail=0 3194s
+  upload 11800/14383 ok=11800 fail=0 3247s
+  upload 12000/14383 ok=12000 fail=0 3300s
+  upload 12200/14383 ok=12200 fail=0 3354s
+  upload 12400/14383 ok=12400 fail=0 3407s
+  upload 12600/14383 ok=12600 fail=0 3463s
+  upload 12800/14383 ok=12800 fail=0 3517s
+  upload 13000/14383 ok=13000 fail=0 3575s
+  upload 13200/14383 ok=13200 fail=0 3633s
+  upload 13400/14383 ok=13400 fail=0 3687s
+  upload 13600/14383 ok=13600 fail=0 3741s
+  upload 13800/14383 ok=13800 fail=0 3794s
+  upload 14000/14383 ok=14000 fail=0 3851s
+  upload 14200/14383 ok=14200 fail=0 3907s
+  upload 14383/14383 ok=14383 fail=0 3958s
+LISTO ok=13775 exists=608 miss=1 uploaded=14383 up_fail=0
+  local=/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/posters_original
+  s3=s3://aof-owlv2-102516364259/posters_original/
+  manifest=/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/posters_original_manifest.csv
+  miss=/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/posters_original_miss.csv

@@ -1,0 +1,40 @@
+{
+  "title_text": "DAUGHTER OF THE DARK",
+  "credits_text": "A FILM BY TYLER KING",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "The poster suggests occult themes and a haunting atmosphere.",
+  "description": "A dark silhouette of a figure looms over a small child in a stark, minimalist design, evoking a gothic and haunting mood."
+}

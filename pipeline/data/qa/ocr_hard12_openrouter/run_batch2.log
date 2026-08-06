@@ -1,0 +1,58 @@
+sample n=12 from /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/ocr_qwen_hard/sample_ids.txt
+posters_dir=/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/_ocr_hard12_new_stage/posters
+out_dir=/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/ocr_hard12_openrouter
+models=['gemini25', 'qwen3vl32', 'gemma31']
+OPENROUTER_API_KEY=set (value not logged)
+
+=== key=gemini25 result=gemini-2.5-flash-or-hard api=google/gemini-2.5-flash n=12 posters=/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/_ocr_hard12_new_stage/posters ===
+  [1/12] id=10283 status=ok chars=42 overlap=0.875 2.465s tok=1841
+  [2/12] id=26921 status=ok chars=31 overlap=1.0 1.405s tok=1834
+  [3/12] id=28265 status=ok chars=17 overlap=0.3333 1.39s tok=1828
+  [4/12] id=77399 status=ok chars=13 overlap=0.0 1.334s tok=1828
+  [5/12] id=233194 status=ok chars=271 overlap=1.0 1.718s tok=1397
+  [6/12] id=286452 status=ok chars=13 overlap=1.0 1.555s tok=1829
+  [7/12] id=653537 status=ok chars=6 overlap=0.0 2.243s tok=1827
+  [8/12] id=940187 status=ok chars=50 overlap=0.0 1.518s tok=1842
+  [9/12] id=1015482 status=ok chars=41 overlap=0.0 1.385s tok=1838
+  [10/12] id=1405670 status=ok chars=22 overlap=0.0 1.191s tok=1828
+  [11/12] id=1483743 status=ok chars=169 overlap=1.0 1.643s tok=1370
+  [12/12] id=1578643 status=ok chars=34 overlap=1.0 1.075s tok=1836
+  gemini-2.5-flash-or-hard: this_run ok=12 err=0 tok=21098
+
+=== key=qwen3vl32 result=qwen3-vl-32b-hard api=qwen/qwen3-vl-32b-instruct n=12 posters=/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/_ocr_hard12_new_stage/posters ===
+  [1/12] id=10283 status=ok chars=47 overlap=0.875 1.482s tok=418
+  [2/12] id=26921 status=ok chars=31 overlap=1.0 1.466s tok=1496
+  [3/12] id=28265 status=ok chars=17 overlap=0.3333 1.524s tok=1493
+  [4/12] id=77399 status=ok chars=13 overlap=0.0 1.164s tok=1490
+  [5/12] id=233194 status=ok chars=266 overlap=1.0 2.25s tok=299
+  [6/12] id=286452 status=ok chars=13 overlap=1.0 1.463s tok=1491
+  [7/12] id=653537 status=ok chars=39 overlap=0.0 1.661s tok=1494
+  [8/12] id=940187 status=ok chars=62 overlap=0.0 1.034s tok=227
+  [9/12] id=1015482 status=ok chars=42 overlap=0.0 1.386s tok=1500
+  [10/12] id=1405670 status=ok chars=32 overlap=0.0 0.889s tok=218
+  [11/12] id=1483743 status=ok chars=277 overlap=1.0 2.534s tok=276
+  [12/12] id=1578643 status=ok chars=36 overlap=1.0 0.763s tok=219
+  qwen3-vl-32b-hard: this_run ok=12 err=0 tok=10621
+
+=== key=gemma31 result=gemma4-31b-hard api=google/gemma-4-31b-it n=12 posters=/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/_ocr_hard12_new_stage/posters ===
+  [1/12] id=10283 status=ok chars=42 overlap=0.875 0.7s tok=310
+  [2/12] id=26921 status=ok chars=31 overlap=1.0 4.152s tok=303
+  [3/12] id=28265 status=ok chars=18 overlap=1.0 2.257s tok=168
+  [4/12] id=77399 status=ok chars=13 overlap=0.0 2.983s tok=298
+  [5/12] id=233194 status=ok chars=271 overlap=1.0 2.306s tok=391
+  [6/12] id=286452 status=ok chars=13 overlap=1.0 3.621s tok=299
+  [7/12] id=653537 status=ok chars=8 overlap=1.0 2.829s tok=296
+  [8/12] id=940187 status=ok chars=53 overlap=0.0 2.529s tok=312
+  [9/12] id=1015482 status=ok chars=42 overlap=0.0 3.865s tok=306
+  [10/12] id=1405670 status=ok chars=22 overlap=0.0 5.077s tok=298
+  [11/12] id=1483743 status=ok chars=742 overlap=1.0 16.288s tok=541
+  [12/12] id=1578643 status=ok chars=34 overlap=1.0 2.081s tok=306
+  gemma4-31b-hard: this_run ok=12 err=0 tok=3828
+final sidecar merge → 60 rows into /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/ocr_hard12_openrouter/results.csv
+  gemini-2.5-flash-or-hard: 12/12 ok mean_overlap=0.5174
+  qwen3-vl-32b-hard: 12/12 ok mean_overlap=0.5174
+  gemma4-31b-hard: 12/12 ok mean_overlap=0.6562
+
+LISTO → /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/ocr_hard12_openrouter/results.csv (60 rows)
+sidecar → /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/ocr_hard12_openrouter/openrouter_sidecar.csv
+usage → /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/ocr_hard12_openrouter/openrouter_usage.csv

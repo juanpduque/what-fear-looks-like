@@ -1,0 +1,41 @@
+{
+  "title_text": "CONJURING THE CULT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "occult",
+    "mysterious",
+    "haunting",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and silhouettes of figures, may be unsettling.",
+  "description": "A poster shows five cloaked figures standing within a large red circle against a dark background, with the title 'Conjuring the Cult' displayed below."
+}

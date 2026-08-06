@@ -1,0 +1,41 @@
+{
+  "title_text": "SİCCİN 3",
+  "credits_text": "CURMU ASK",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "psychological",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror elements and psychological tension.",
+  "description": "A man and a woman with a ghostly appearance stand side by side in front of an old house, suggesting a supernatural horror theme."
+}

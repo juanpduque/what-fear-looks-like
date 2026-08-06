@@ -1,0 +1,51 @@
+{
+  "title_text": "SLAUGHTER HOUSE",
+  "credits_text": "SLUMBER PARTY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "erotic",
+    "gothic",
+    "camp",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.7,
+  "sensitive": [
+    "nudity",
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains partial nudity and suggestive imagery, suitable for mature audiences.",
+  "description": "A horror poster featuring four women surrounded by monstrous creatures and skulls, with bold, stylized text reading 'Slaughter House' and 'Slumber Party.'"
+}

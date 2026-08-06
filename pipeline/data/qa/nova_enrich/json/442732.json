@@ -1,0 +1,40 @@
+{
+  "title_text": "BIG DOG",
+  "credits_text": "A SHORT FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FILM LONDON and the SHORTS FILM FUND present a film by JAMIE WHITBY & JAMIE GYNGELL CONOR MCCARRON ORII SHUKA GREG KOLPAKCHI SIODHAN MC SWEENEY \"BIG DOG\" DIRECTED BY JAMES BLANN with EMILY BROCKMANN NEIL JOHNSON CHRISTOPHER SARANTIS ELIZABETH EL-KAOHI BROWN BARBARA ELUM JACK MCGINITY EXECUTIVE PRODUCERS FEDERICO PIRZIO-BIROLI PETE SHUTTLEWORTH PRODUCED BY ARCHIE JOHNSTON STEWART WRITTEN & DIRECTED BY JAMIE WHITBY & JAMIE GYNGELL",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 1.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and a menacing dog, suggesting potential violence.",
+  "description": "Poster features a large black dog with blood dripping from its mouth against a pink sky background, with bold title text above."
+}

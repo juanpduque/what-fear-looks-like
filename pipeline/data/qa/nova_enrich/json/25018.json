@@ -1,0 +1,42 @@
+{
+  "title_text": "THE TEXAS CHAINSAW MASSACRE III LEATHERFACE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "The Saw is Failin",
+  "mood": [
+    "dread",
+    "terror",
+    "gruesome",
+    "intense",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and horror elements.",
+  "description": "A poster features a menacing figure holding a chainsaw with fiery red hair against a dark background, promoting the horror film 'Leatherface.'"
+}

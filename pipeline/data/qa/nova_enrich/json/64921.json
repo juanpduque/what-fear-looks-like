@@ -1,0 +1,47 @@
+{
+  "title_text": "THE KILLER EYE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "surreal",
+    "eerie",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "eye",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "monster",
+      "conf": 0.75
+    },
+    {
+      "name": "horror",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.7,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and partial nudity.",
+  "description": "A woman lies next to a giant, grotesque eye with blood-like tendrils against a cityscape backdrop at night."
+}

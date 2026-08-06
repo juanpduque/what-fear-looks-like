@@ -1,0 +1,50 @@
+{
+  "title_text": "CİNHAR",
+  "credits_text": "YAZAN / YÖNETEN ÖZGUŞ AKBAŞ ÖTÜNCÜLAR SÜDE NUR BALCİ ZEYNEP KIVANÇ RECEP ÖZDEMİR SANAT YÖNETMENİ SERKAN TABAN UŞLUĞLİCİ YAPIMCI TAMAY ESİNTİMUR KURGU ALP MERT DOĞUÇÜ AŞI TASARIM SERKAN TABAN GÖRÜNTÜ YÖNETMENİ EMRULLAH KAYMAZ YAPIMCI DMC-MOVIE-RETROPRO",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "ASLA YALNIZ YATAMAYACAKSİNIZ ! 28 KASIM'DA SADEÇE SİNEMALARDA",
+  "mood": [
+    "gothic",
+    "dread",
+    "horror",
+    "supernatural",
+    "gloom"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and a monstrous creature.",
+  "description": "A horror movie poster features a monstrous creature with sharp teeth and bloodied face against a dark, stormy backdrop with silhouettes and a distant lantern."
+}

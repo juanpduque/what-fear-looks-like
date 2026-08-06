@@ -1,0 +1,43 @@
+{
+  "title_text": "DRACULA UNTOLD",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dramatic",
+    "dark",
+    "epic",
+    "mythic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "castle",
+      "conf": 0.7
+    },
+    {
+      "name": "crow",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 1.0,
+  "animal": 0.4,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man stands with bat wings spread, overlooking a battlefield with a gothic castle in the background under a dark sky."
+}

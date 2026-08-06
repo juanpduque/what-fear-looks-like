@@ -1,0 +1,41 @@
+{
+  "title_text": "KISS MY AXE",
+  "credits_text": "SLUNKFILMS PRESENTERAR KISS MY AXE EN FILM AV OSCAR BURFIT MED OLIVER FRANSSON JONATHAN SAND KALLE BERGLUND FOTO & KLIPPNING OSCAR BURFIT LUD KALLE BERGLUND MANUS G REEZ OSCAR BURFIT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "violent",
+    "forest",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "axe",
+      "conf": 0.95
+    },
+    {
+      "name": "forest",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.95,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features a large axe and suggests violent themes.",
+  "description": "A bold red poster with a large axe and the text \"KISS MY AXE\" over a shadowy figure in a forest."
+}

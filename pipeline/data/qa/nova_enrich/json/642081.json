@@ -1,0 +1,42 @@
+{
+  "title_text": "THE BURNINGMOORE INCIDENT",
+  "credits_text": "WHIRLWIND PICTURES PRESENTS A FIRES AT MIDNIGHT FILMS PRODUCTION WRITTEN AND DIRECTED BY TONY GUIDA AND LISA G. WEYS JAMES A. GOLETTI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller",
+    "mystery",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood, suitable for mature audiences.",
+  "description": "A dimly lit room with a large axe leaning against a wall, suggesting a horror theme."
+}

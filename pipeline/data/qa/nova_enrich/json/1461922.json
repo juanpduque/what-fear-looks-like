@@ -1,0 +1,42 @@
+{
+  "title_text": "UNCANNY VALLEY",
+  "credits_text": "A film by Diego Pino",
+  "languages": [
+    "en"
+  ],
+  "other_text": "The monster is in the details.",
+  "mood": [
+    "mysterious",
+    "eerie",
+    "foreboding",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a shadowy figure with large bat-like wings over a campfire in a forest, with the tagline 'The monster is in the details.'"
+}

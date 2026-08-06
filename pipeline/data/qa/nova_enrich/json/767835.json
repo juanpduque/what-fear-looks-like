@@ -1,0 +1,39 @@
+{
+  "title_text": "THE NEXT ROOM",
+  "credits_text": "A Film by Kenneth Livsvold",
+  "languages": [
+    "en"
+  ],
+  "other_text": "LOOK IF YOU DARE.",
+  "mood": [
+    "mysterious",
+    "eerie",
+    "haunting",
+    "suspenseful",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, eerie poster features a dimly lit house with a single glowing window against a night sky, accompanied by the text 'LOOK IF YOU DARE.'"
+}

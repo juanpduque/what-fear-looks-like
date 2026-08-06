@@ -1,0 +1,37 @@
+{
+  "title_text": "THE MONSTER MAN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Two humans... Two Billion aliens... Whose side are you on?",
+  "mood": [
+    "action",
+    "sci-fi",
+    "fantasy",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "Contains mild violence and suggestive imagery.",
+  "description": "Poster features a woman holding a gun, with a man in dark clothing and another person in the background. Text highlights a conflict between humans and aliens."
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "COPE",
+  "credits_text": "A Ronald Jerry Thriller\nRachel Pinto Robert Allen Dave Weinand Krystal Sullivan\n\"Blood flows, people die!\"\nBRAINDAMAGE FILMS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "An emotional thrill-ride filled with violence and gore!",
+  "mood": [
+    "dread",
+    "gothic",
+    "violent",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.9
+    },
+    {
+      "name": "gore",
+      "conf": 0.85
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "crow",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.9,
+  "blood_gore": 0.85,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore.",
+  "description": "A poster shows a large black crow perched on a bloody, dismembered head with snowy background and tagline."
+}

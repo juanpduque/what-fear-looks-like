@@ -1,0 +1,41 @@
+{
+  "title_text": "DIARY OF NIGHTMARES",
+  "credits_text": "Written and Directed by LUC BERNIER\nALSO STARRING: SUSANNE LEBLANC, GREGORY LAMARQUE, SERGE LEBLANC, LAURA GIRAUD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "OBSESSION",
+  "mood": [
+    "gothic",
+    "eerie",
+    "psychological",
+    "haunting",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "sexual"
+  ],
+  "moderation_notes": "Mild sexual undertones suggested by the woman's attire and pose.",
+  "description": "A poster features a woman in a dark green dress with long hair, set against a blurred natural background, with additional images and text below."
+}

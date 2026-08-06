@@ -1,0 +1,44 @@
+{
+  "title_text": "SEASON OF THE HUNTED",
+  "credits_text": "MUSE WATSON TIMOTHY GIBBS MATTHEW COSLES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ARE YOU GAME?",
+  "mood": [
+    "tense",
+    "suspenseful",
+    "foreboding",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "moon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.3,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a threatening atmosphere.",
+  "description": "A man holds a large knife facing a moonlit path where two silhouetted figures approach with flashlights."
+}

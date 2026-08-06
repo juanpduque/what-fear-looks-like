@@ -1,0 +1,37 @@
+{
+  "title_text": "Carnival Evil",
+  "credits_text": "Written by Craig Drew & Dave Earl Entertainment Directed by Paul Ragsdale Executive Producer Ray Sorvino & Jim Rosenbaum Produced by James Murray, Robert McCaskill, David L. Wolper, James O'Barr, David M. Rosenbaum, David M. Rosenbaum, James O'Barr Produced by Hassan S. Vascari Special Sound Design by Carl Lampo Production Designer Donald K. Sparr Photography & Directed by Dave Earl",
+  "languages": [
+    "en"
+  ],
+  "other_text": "the ride of your life ends here",
+  "mood": [
+    "dread",
+    "thriller",
+    "horror",
+    "gritty",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and weapon imagery.",
+  "description": "A poster shows a hand gripping a weapon behind a chain-link fence, with a woman standing nearby and the title 'Carnival Evil' prominently displayed."
+}

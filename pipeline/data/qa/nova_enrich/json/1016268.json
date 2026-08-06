@@ -1,0 +1,38 @@
+{
+  "title_text": "CATNADO",
+  "credits_text": "IT'S A CAT-ASTROPHE!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "humor",
+    "fantasy",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "disaster",
+      "conf": 0.8
+    },
+    {
+      "name": "cat",
+      "conf": 0.9
+    },
+    {
+      "name": "storm",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows cats in a stormy, chaotic scene with the title 'CATNADO' and the tagline 'IT'S A CAT-ASTROPHE!'"
+}

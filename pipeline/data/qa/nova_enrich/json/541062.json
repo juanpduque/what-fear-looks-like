@@ -1,0 +1,50 @@
+{
+  "title_text": "FEAR THE FOREST",
+  "credits_text": "RADIANT PICTURES ENTERTAINMENT Matthew Bora Anna Kendrick Vera Van Guard",
+  "languages": [
+    "en"
+  ],
+  "other_text": "The legend lives... UNRATED DIRECTOR'S CUT",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "terror",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.75
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.75,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore.",
+  "description": "A horror movie poster featuring a dark forest scene with a monstrous, injured figure lying on the ground, evoking dread and terror."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "THE MACHINE GIRL",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "sci-fi",
+    "post-apocalyptic",
+    "rebel",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "cityscape",
+      "conf": 0.7
+    },
+    {
+      "name": "storm",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and blood-like stains on clothing.",
+  "description": "A young woman stands confidently on a rock, holding a large mechanical weapon, with a stormy cityscape in the background."
+}

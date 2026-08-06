@@ -1,0 +1,39 @@
+{
+  "title_text": "LAST SHARK",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "fantasy",
+    "sci-fi"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "city",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.1,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and monster violence.",
+  "description": "A poster shows a man battling a giant shark and a dinosaur over a cityscape with dramatic red lighting."
+}

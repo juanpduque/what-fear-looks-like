@@ -1,0 +1,42 @@
+{
+  "title_text": "DITCH DAY MASSACRE",
+  "credits_text": "CUTTING CLASS HAS NEVER BEEN BLOODIER!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "violent",
+    "camp",
+    "horror",
+    "teen",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.9,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intended for mature audiences.",
+  "description": "Poster shows two girls holding axes in a school hallway with a shadowy figure ahead; text highlights a bloody theme."
+}

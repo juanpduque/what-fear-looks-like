@@ -1,0 +1,35 @@
+{
+  "title_text": "HUNTING",
+  "credits_text": "SOME GAMES CAN COST YOU YOUR LIFE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "thriller",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "knife",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the knife and intense mood.",
+  "description": "A dark silhouette holds a knife against a red background with the title 'HUNTING' and a tagline below."
+}

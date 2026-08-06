@@ -1,0 +1,46 @@
+{
+  "title_text": "AVENTURA SANGRIENTA",
+  "credits_text": "AMERICAN CONDORS * GRUPO DEDALO PRESENTAN / UNA PELÍCULA DE JOAQUÍN VALENTINO \"AVENTURA SANGRIENTA\" CON KAROLY BASEDAN PAUL PINELLO MIRIAN SÁLVEDA Y LUIS RONQUILLO / DIRECCIÓN DE FOTOGRAFÍA OSCAR CATACORA * DÚLIO PALOMINO / DIRECTOR DE SONIDO ALBERTO FLORES / PRODUCCIÓN GENERAL ELIDA HEREDIA",
+  "languages": [
+    "es"
+  ],
+  "other_text": "\"NO QUERÍA HERIRLOS, SOLO QUERÍA MATARLOS\" ESTRENO 24 DE AGOSTO",
+  "mood": [
+    "horror",
+    "thriller",
+    "forest",
+    "violent",
+    "gory"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster shows a large axe with bloodied hands gripping it, set against a foggy forest with two silhouetted figures running away."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "BELOW THE BRANCHES",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NO ONE'S COMING.",
+  "mood": [
+    "dread",
+    "surreal",
+    "gothic",
+    "forest",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.6,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and implied horror themes.",
+  "description": "A poster shows a red, stylized apple with a knife stuck in it against a dense green forest background, with bold text reading 'BELOW THE BRANCHES' and a tagline 'NO ONE'S COMING.'"
+}

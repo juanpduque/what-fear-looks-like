@@ -1,0 +1,39 @@
+{
+  "title_text": "PARAMOUNT -- TODAY",
+  "credits_text": "The Most Amazing Newspaper Romance Ever Filmed MARSHALL NEILAN'S Mastodonic Mobilization of Motion Picture Marvels \"GO AND GET IT\" Featuring Wesley Barry (Freckles), Agnes Ayres, Bull Montana and an All-Star Cast",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WHAT IS IT? MAN, BEAST OR DEVIL? Shiver with the multitude at the terrible combat between this gigantic brute and the dauntless World War Veteran. Not since the days of Roman Gladiators has such an exhibition been staged.",
+  "mood": [
+    "dramatic",
+    "historical",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "combat",
+      "conf": 0.7
+    },
+    {
+      "name": "brute",
+      "conf": 0.6
+    },
+    {
+      "name": "war",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster hints at intense combat and historical war themes, but no explicit violence or gore is depicted.",
+  "description": "A vintage movie poster advertises \"Go and Get It\" featuring Wesley Barry and others, depicting a man in a dramatic pose with bold text and historical combat themes."
+}

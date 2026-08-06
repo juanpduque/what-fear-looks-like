@@ -1,0 +1,50 @@
+{
+  "title_text": "GHOST OF THE VAMPIRES",
+  "credits_text": "Starring AMALIA FUENTES EDDIE GARCIA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CREATURES OF EVIL... .DRAINING THE BLOOD OF THE INNOCENT in color",
+  "mood": [
+    "gothic",
+    "horror",
+    "camp",
+    "dread",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "vampire",
+      "conf": 0.85
+    },
+    {
+      "name": "creature",
+      "conf": 0.75
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 1.0,
+  "animal": 0.3,
+  "blood_gore": 0.4,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "A colorful poster features a man with a shocked expression, a coffin, and bats, promoting a horror film titled 'Ghost of the Vampires.'"
+}

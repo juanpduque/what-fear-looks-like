@@ -1,0 +1,40 @@
+{
+  "title_text": "ТРИ",
+  "credits_text": "",
+  "languages": [
+    "ru"
+  ],
+  "other_text": "\"ЧЕМ БЛИЖЕ КО ДНУ ОКЕАНА, ТЕМ ОН ТЕМНЕЕ\"",
+  "mood": [
+    "gothic",
+    "dread",
+    "mysterious",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and symbolic imagery.",
+  "description": "A poster features a woman with red hair and a serious expression, overlaid with a thorny branch and Russian text."
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "HOME SWEET HOME",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "REBIRTH",
+  "mood": [
+    "dread",
+    "horror",
+    "gritty",
+    "apocalyptic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "fire",
+      "conf": 0.75
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including monstrous creatures and blood.",
+  "description": "A poster features a grotesque, zombie-like creature with fiery accents and the title 'Home Sweet Home' prominently displayed."
+}

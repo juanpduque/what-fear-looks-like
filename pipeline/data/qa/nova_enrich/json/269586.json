@@ -1,0 +1,39 @@
+{
+  "title_text": "BRAINJACKED",
+  "credits_text": "FROM THE PRODUCERS OF HERSCHELL GORDON LEWIS'S THE UH-OH! SHOW",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DRILL THE BRAIN...COMMAND THE MIND...CONTROL THE WORLD",
+  "mood": [
+    "sci-fi",
+    "thriller",
+    "psychological",
+    "action",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "brain",
+      "conf": 0.9
+    },
+    {
+      "name": "control",
+      "conf": 0.8
+    },
+    {
+      "name": "psychological",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.1,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic poster features intense characters and a large drill, suggesting themes of mind control and psychological tension."
+}

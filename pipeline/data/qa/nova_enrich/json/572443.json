@@ -1,0 +1,41 @@
+{
+  "title_text": "THE HAUNTING OF MOLLY BANNISTER",
+  "credits_text": "\"A KILLER COMBINATION OF \"CARRIE\" MEETS \"CHILD'S PLAY\"\" MORBIDLY BEAUTIFUL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "I HAVE DONE UNSPEAKABLE THINGS",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "mysterious",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "ghost",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent themes suggested by the tagline and eerie atmosphere.",
+  "description": "A poster shows a young girl standing in front of an old, ominous house with a dark, stormy sky."
+}

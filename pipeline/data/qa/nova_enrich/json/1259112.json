@@ -1,0 +1,42 @@
+{
+  "title_text": "THE GREED THE GRUDGE & THE GHOST",
+  "credits_text": "PARTHY SINH GOH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MONEY IS EVERYTHING",
+  "mood": [
+    "horror",
+    "gothic",
+    "psychological",
+    "thriller",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and violent imagery.",
+  "description": "A man with blood on his face is shown in front of a bright yellow background with bold text and a briefcase."
+}

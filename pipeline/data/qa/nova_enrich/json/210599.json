@@ -1,0 +1,39 @@
+{
+  "title_text": "KILLER BEES",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "horror",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "bee",
+      "conf": 0.9
+    },
+    {
+      "name": "attack",
+      "conf": 0.8
+    },
+    {
+      "name": "danger",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.3,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence involving bees.",
+  "description": "The poster features bold red text 'KILLER BEES' with images of bees and a person in distress, suggesting a horror or thriller theme."
+}

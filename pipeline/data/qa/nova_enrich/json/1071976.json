@@ -1,0 +1,49 @@
+{
+  "title_text": "ICE STORM",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NORTH CAROLINA",
+  "mood": [
+    "intense",
+    "chaotic",
+    "apocalyptic",
+    "dramatic",
+    "tense"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    },
+    {
+      "name": "helicopter",
+      "conf": 0.6
+    },
+    {
+      "name": "storm",
+      "conf": 0.9
+    },
+    {
+      "name": "explosion",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.2,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery from explosions and destruction.",
+  "description": "A dramatic poster shows a cityscape engulfed in snow and chaos with helicopters overhead, explosions, and destroyed buildings under an icy storm."
+}

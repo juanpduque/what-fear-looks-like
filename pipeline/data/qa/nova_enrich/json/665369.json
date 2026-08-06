@@ -1,0 +1,46 @@
+{
+  "title_text": "得在江湿小屋\nLOST IN THE CAVE DWETTING",
+  "credits_text": "无法宝师主演师 12月7日",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "suspense",
+    "mystery",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "cave",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror elements and occult themes.",
+  "description": "Four individuals stand in a dimly lit cave with skulls and eerie lighting, suggesting a horror or suspense theme."
+}

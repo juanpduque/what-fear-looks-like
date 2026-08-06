@@ -1,0 +1,41 @@
+{
+  "title_text": "魔絵5",
+  "credits_text": "13个の身がわれた教育弱間",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "結屋合選です。",
+  "mood": [
+    "dread",
+    "horror",
+    "psychological",
+    "disturbing",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "",
+  "description": "A poster featuring a close-up of a terrified face with wide eyes and an open mouth, accompanied by bold Japanese text and a tagline."
+}

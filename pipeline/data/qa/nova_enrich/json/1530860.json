@@ -1,0 +1,29 @@
+{
+  "title_text": "ПРЕСМЫКАЮЩИЕСЯ",
+  "credits_text": "В РОЛЯХ: ЕВГЕНИЙ ЦЫГАНОВ, ВИКТОРИЯ ИСКАКОВА, ГАЕВ КУЛАКОВ РЕЖИССЕР; ЕТОР ГРУШИН, ОПЕРАТОР: АНАСТАСИЯ ЩЕНВАЛДА, ГЕНЕРАЛЬНЫЙ ПРОДЮСЕР: ВИКТОРИЯ ПЕЧЕНКИНА",
+  "languages": [
+    "ru"
+  ],
+  "other_text": "ДЛЯ ЗРИТЕЛЕЙ ДОСТИГШИХ ВОЗРАСТА 18 ЛЕТ",
+  "mood": [
+    "intense",
+    "disturbing",
+    "psychological",
+    "gothic",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "disturbing",
+      "conf": 0.8
+    }
+  ]
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "THE FAIRFIELD FOUR",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THEY THOUGHT IT WAS A MYTH. NOW, THEY WILL FOREVER BE KNOWN AS...",
+  "mood": [
+    "dread",
+    "gothic",
+    "mystery",
+    "supernatural",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.6,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, red-tinted poster features a shadowy silhouette with sharp teeth against a textured background, with bold white title text."
+}

@@ -1,0 +1,36 @@
+{
+  "title_text": "FOUND FOOTAGE 3D",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SHUDDER",
+  "mood": [
+    "surreal",
+    "disturbing",
+    "psychological",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.5,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and disturbing imagery.",
+  "description": "A close-up of a man's face with exaggerated features, showing two smaller images of people holding weapons in the corners."
+}

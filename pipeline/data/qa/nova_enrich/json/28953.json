@@ -1,0 +1,46 @@
+{
+  "title_text": "SILENT VENGEANCE",
+  "credits_text": "BRIAN RAMME",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CHAI HER",
+  "mood": [
+    "dread",
+    "intense",
+    "dark",
+    "violent",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and weapon imagery.",
+  "description": "A dark, masked figure holds a large knife against a red background with silhouettes of a crowd and text overlay."
+}

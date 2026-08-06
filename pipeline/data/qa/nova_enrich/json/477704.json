@@ -1,0 +1,48 @@
+{
+  "title_text": "CRUSTACEAN",
+  "credits_text": "HE CLAWED HIS WAY TO THE TOP!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "UNRATED DIRECTOR'S CUT CONTAINS NUDITY, PROFANITY, AND EXTREME GORE\nCo-Produced By DAVID FRIEMAN The Lord of the Flies Meets The Texas Chainsaw Massacre",
+  "mood": [
+    "camp",
+    "erotic",
+    "horror",
+    "surreal",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.4,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.5,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains nudity, profanity, and extreme gore.",
+  "description": "Movie poster features a man with a clawed hand, a blonde woman, and several other characters around a carnival and a bus, with bold red and blue colors."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "GARY AND WANG VS THE ZOMBIES",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "horror",
+    "comedy"
+  ],
+  "fear_labels": [
+    {
+      "name": "zombie",
+      "conf": 0.95
+    },
+    {
+      "name": "weapon",
+      "conf": 0.85
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.85,
+  "monster": 0.95,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and zombie imagery.",
+  "description": "Two men wield weapons against zombies in a dark, tense setting with a car in the background."
+}

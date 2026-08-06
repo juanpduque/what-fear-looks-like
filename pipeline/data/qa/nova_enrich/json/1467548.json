@@ -1,0 +1,50 @@
+{
+  "title_text": "DESERT FIENDS 2",
+  "credits_text": "A FILM BY SHAWN C. PHILLIPS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "post-apocalyptic",
+    "gritty",
+    "survival",
+    "dystopian"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "radiation",
+      "conf": 0.8
+    },
+    {
+      "name": "desert",
+      "conf": 0.7
+    },
+    {
+      "name": "zombie",
+      "conf": 0.85
+    },
+    {
+      "name": "hand",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including a zombie-like creature and radiation symbolism.",
+  "description": "The poster shows a zombie emerging from a glowing barrel in a desert landscape, with a hand making a peace sign above it."
+}

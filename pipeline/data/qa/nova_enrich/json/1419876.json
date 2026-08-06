@@ -1,0 +1,42 @@
+{
+  "title_text": "DISCO TOID",
+  "credits_text": "A Lemos for Friends & He's Passed Production",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Are you afraid of bugs?",
+  "mood": [
+    "horrific",
+    "creepy",
+    "disturbing",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "bug",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A black poster features a large, creepy bug silhouette and bold, distorted text reading 'DISCO TOID' with a tagline below."
+}

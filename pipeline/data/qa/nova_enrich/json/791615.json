@@ -1,0 +1,41 @@
+{
+  "title_text": "REEL KILLZ",
+  "credits_text": "starring APRIL HARTMAN, TAYLOR HALL, ROBERT SALUGTER, KETZ ABITZ, JAMES HALL, JOHN DICKSON, ZANE DICKSON, JOSHUA HERRERA, JOSHUA HERRERA, and ROBERT SALUGTER; directed by TRAVIS TRAVISO; written and produced by JOSHUA HERRERA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Don't worry... we're just making a movie.",
+  "mood": [
+    "thriller",
+    "dark humor",
+    "satirical",
+    "mystery",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "mask",
+      "conf": 0.7
+    },
+    {
+      "name": "director",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild implied violence through the knife and director's pose.",
+  "description": "A poster shows a director reclining with a knife, a mask nearby, and text indicating a film production setting."
+}

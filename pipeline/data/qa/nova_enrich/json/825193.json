@@ -1,0 +1,46 @@
+{
+  "title_text": "Phyme Jays",
+  "credits_text": "Written and Directed by J. Starr",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Death-Hop hop Style",
+  "mood": [
+    "dread",
+    "gritty",
+    "urban",
+    "thriller",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A hooded figure holds a bloody knife against a dark urban backdrop, with bold red text overlay."
+}

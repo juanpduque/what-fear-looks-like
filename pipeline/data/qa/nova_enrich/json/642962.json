@@ -1,0 +1,44 @@
+{
+  "title_text": "鬼故事 恶灵来了",
+  "credits_text": "吴家丽 钱小美 陈子健 一触即死",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "鬼故事 恶灵来了",
+  "mood": [
+    "horror",
+    "supernatural",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains supernatural horror themes and implied violence.",
+  "description": "A poster featuring a screaming face and group of people with Chinese text, suggesting a supernatural horror theme."
+}

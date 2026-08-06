@@ -1,0 +1,46 @@
+{
+  "title_text": "2025",
+  "credits_text": "BLOOD, WHITE & BLUE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THIS IS NOT A TEST. GOD HELP YOU BASTARDS",
+  "mood": [
+    "action",
+    "horror",
+    "satirical",
+    "violent",
+    "dystopian"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and weapon imagery.",
+  "description": "A poster featuring masked characters with weapons against a fiery cityscape, promoting a 2025 release titled 'Blood, White & Blue'."
+}

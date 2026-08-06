@@ -1,0 +1,42 @@
+{
+  "title_text": "PAKU",
+  "credits_text": "Aisah Ilias, Johan Asari, Bila Sentra, Merdau Seram",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DIPAWAGAM 12.12.13, KENANGAN DARURAT MENJADI KEJARAN, DOLBY",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "intense",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and violent imagery.",
+  "description": "A horror movie poster featuring a woman with a clawed hand dripping blood, set against a dark background with bold red text."
+}

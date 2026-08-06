@@ -1,0 +1,37 @@
+{
+  "title_text": "ELLIOT",
+  "credits_text": "Un film de Rafael Condessa",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HD",
+  "mood": [
+    "dark",
+    "psychological",
+    "intense",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood, may be disturbing.",
+  "description": "A dark poster features a stylized, blood-smeared face with bold red text reading 'ELLIOT' and a small tree graphic below."
+}

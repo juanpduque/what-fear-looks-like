@@ -1,0 +1,46 @@
+{
+  "title_text": "THE ANCESTRAL",
+  "credits_text": "FROM LE-VAN KIET, THE DIRECTOR OF FURIE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE HOUR IS COMING\n2021\nV",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "intense",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "A woman faces a menacing creature in a dark, eerie setting, with dramatic lighting and intense expressions."
+}

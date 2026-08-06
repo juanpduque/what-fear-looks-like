@@ -1,0 +1,42 @@
+{
+  "title_text": "REGISTROS FATAIS",
+  "credits_text": "CRIADO POR: LAZARO HAHN DENISON MOLINA HUGO HAIZER",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "other_text": "ASSASSINATOS PERFORAÇÕES DECAPITACAO MORTES QUEIMADO-VIVO LINCHAMENTO ATROPELEMENTO TORTURAS ESTUPRO BRIGAS VIOLENCIA MATANCA ACIDENTES AUTOFLAGELACAO ARTE TRASH PRODUÇÕES",
+  "mood": [
+    "dread",
+    "violent",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.95,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and suggestive imagery.",
+  "description": "A DVD cover featuring a burnt, charred figure with visible blood and flames, listing various violent acts and crimes."
+}

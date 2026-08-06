@@ -1,0 +1,40 @@
+{
+  "title_text": "கரதிகள்",
+  "credits_text": "OBEY THE RULES, YOU MISS THE FUN\nWRITTEN & DIRECTION KUMARESH KUMAR\nPRODUCED M.L.R. VYSUKI\nMEDIA CREATIONS",
+  "languages": [
+    "en",
+    "ta"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.7
+    },
+    {
+      "name": "knife",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains action-oriented violence with weapons.",
+  "description": "A group of individuals pose dynamically with weapons against a dramatic backdrop featuring smoke and fire, suggesting an action thriller."
+}

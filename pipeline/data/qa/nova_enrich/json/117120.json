@@ -1,0 +1,42 @@
+{
+  "title_text": "The Facility",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ProSyntex™ Pharmaceuticals Sample: Pro9 Trial: 1 WARNING: Side effects may be fatal 5ml",
+  "mood": [
+    "dread",
+    "suspense",
+    "horror",
+    "gothic",
+    "claustrophobic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "hospital",
+      "conf": 0.95
+    },
+    {
+      "name": "haunting",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and violent imagery.",
+  "description": "A woman in medical scrubs runs down a blood-stained hospital corridor, suggesting a horror theme."
+}

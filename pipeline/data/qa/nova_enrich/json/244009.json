@@ -1,0 +1,41 @@
+{
+  "title_text": "INVOCATION",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "surreal",
+    "disturbing",
+    "gothic",
+    "body horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "body horror",
+      "conf": 0.95
+    },
+    {
+      "name": "surreal",
+      "conf": 0.9
+    },
+    {
+      "name": "disturbing",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "body horror",
+    "violence"
+  ],
+  "moderation_notes": "Contains graphic body horror imagery and disturbing visual elements.",
+  "description": "A vintage camera fused with organic, fleshy growths forms the central image, accompanied by the title 'INVOCATION' and a red heartbeat line."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "Grimm Fairy Tales",
+  "credits_text": "SCHNEEP • BRUSHA • HEDSKO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ANIMATED ONE-SHOT",
+  "mood": [
+    "fantasy",
+    "dark",
+    "epic",
+    "heroic",
+    "mythic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.4,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "sexual"
+  ],
+  "moderation_notes": "Mild sexual content present in character attire.",
+  "description": "A poster featuring a central female hero with a sword, flanked by various characters including a demon and a dwarf, set against a dark, fantastical background."
+}

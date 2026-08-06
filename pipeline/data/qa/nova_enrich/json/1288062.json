@@ -1,0 +1,44 @@
+{
+  "title_text": "CHAMADO",
+  "credits_text": "A FILM BY TULIO BEAT\nGIOVANI GOMES | EDUARDA MACEDO | CARLOS RAUL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Experience the graphic reality of DEATH, close-up... WARNING! This feature contains graphic depictions of autopsies, dismemberment, physical cruelty, human combustion and electrocution. It should not be viewed by children, the elderly, or the squeamish. (THE CALL, 2023)",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic depictions of violence and gore; not suitable for children or sensitive viewers.",
+  "description": "A horror movie poster featuring a close-up of an eye and a dripping red title, with a warning about graphic content."
+}

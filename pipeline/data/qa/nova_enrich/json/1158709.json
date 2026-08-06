@@ -1,0 +1,43 @@
+{
+  "title_text": "SHARK EXORCIST 2",
+  "credits_text": "UNHOLY WATERS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "horror",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.9,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and horror elements, including a monstrous shark and fiery scenes.",
+  "description": "A man faces a giant, fiery shark emerging from water with an open mouth, while a helicopter flies overhead in a dramatic scene."
+}

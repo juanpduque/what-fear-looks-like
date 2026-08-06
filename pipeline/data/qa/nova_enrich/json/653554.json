@@ -1,0 +1,45 @@
+{
+  "title_text": "PHONOMANIE",
+  "credits_text": "Vertraut Du deinen Fraunden?",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HOUSE OF HORRORS",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "dark",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "knife",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and dark themes.",
+  "description": "A hooded figure stands amidst rocky terrain, holding a large knife, with eerie text overlaying a dark, moody background."
+}

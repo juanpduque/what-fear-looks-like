@@ -1,0 +1,49 @@
+{
+  "title_text": "バフラの雑大屋",
+  "credits_text": "消失!!雑火工技大屋",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "雑家家店って、きんなでうちらグラングルー",
+  "mood": [
+    "horror",
+    "fantasy",
+    "gothic",
+    "dramatic",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and monstrous creatures.",
+  "description": "A group of characters face various monsters and a dark figure in a gothic setting, with intense expressions and dramatic lighting."
+}

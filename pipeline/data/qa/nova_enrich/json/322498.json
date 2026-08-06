@@ -1,0 +1,40 @@
+{
+  "title_text": "괴물",
+  "credits_text": "Resurrection of the Butterfly",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "other_text": "새벽투데이, 런 하위저장",
+  "mood": [
+    "gothic",
+    "eerie",
+    "psychological",
+    "mysterious",
+    "intimate"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.2,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features two women in close proximity with intense expressions, overlaid with Korean text and a gothic aesthetic."
+}

@@ -1,0 +1,44 @@
+{
+  "title_text": "MOTHER DIED",
+  "credits_text": "believe in survival.\n\nSUSAN ALEXANDER BLUNT GUYE IN ASSOCIATION WITH WILLIAM M. KENT FOX\nJUDY COX LAURIE METCALF FREDDIE JONES ROBERT FORSTEN\nCAROL COX JAMES WHITMORE JR. KATHLEEN BYRNE\nANDREW MARTIN ANTHONY MELTON JOE ALLEN MORGAN\nNEIL GORDON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"SHE DIED THIS MORNING. IT'S BETTER THIS WAY. THERE'S NO MORE FEAR.\"",
+  "mood": [
+    "dread",
+    "terror",
+    "psychological horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intended for mature audiences.",
+  "description": "A young woman sits holding a bloody knife, with text indicating a tragic event. The poster conveys a sense of horror and dread."
+}

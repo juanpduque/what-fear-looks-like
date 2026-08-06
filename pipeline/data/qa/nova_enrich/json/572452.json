@@ -1,0 +1,49 @@
+{
+  "title_text": "DONA OLDINA VAI ÀS COMPRAS",
+  "credits_text": "ESTRELANDO OLDINA DO MONTE E NEUSA GUERRA COM DANIELA MONTEIRO, RODRIGO GUERRA E GRANDE ELENCO PRODUÇÃO DE FILIPE M. GUERRA E DANIELA MONTEIRO ESCRITIO POR DIRIGO POR DANIELA MONTEIRO",
+  "languages": [
+    "pt"
+  ],
+  "other_text": "NEUROLOGIAS PRODUÇÕES ARTÍSTICAS APRESENTA",
+  "mood": [
+    "apocalyptic",
+    "dystopian",
+    "horror",
+    "survival",
+    "tense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    },
+    {
+      "name": "gas_mask",
+      "conf": 0.8
+    },
+    {
+      "name": "zombie",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and zombie imagery.",
+  "description": "A person in a hazmat suit holds a gun amidst zombies. The poster features bold text and a dark, urban setting."
+}

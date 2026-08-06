@@ -1,0 +1,51 @@
+{
+  "title_text": "GRIMEWAYVE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "action",
+    "post-apocalyptic",
+    "violent",
+    "gritty"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.85
+    },
+    {
+      "name": "monster",
+      "conf": 0.75
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "A gritty horror poster featuring a group of characters amidst flames, with one holding a severed head and another a gun, suggesting a violent, post-apocalyptic setting."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "KULYAS",
+  "credits_text": "YÖNETMEN YUNUS SEVİK ÇEKEN ADAM",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "ÇİN KABILEŞİN LANETİ BEDELSİZ KALMAYACAK! LANETİN BEDELİ",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "haunting",
+    "occult",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and dramatic lighting; no explicit violence or gore.",
+  "description": "A poster features a close-up of an intense eye and four silhouetted figures around a burning fire, with occult symbols and dramatic text."
+}

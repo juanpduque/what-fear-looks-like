@@ -1,0 +1,43 @@
+{
+  "title_text": "MURDER DRONE",
+  "credits_text": "STOP SCREAMING, KEEP SKATING",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AN INSTANT CULT CLASSIC\nBROKESHEMP.NET",
+  "mood": [
+    "horror",
+    "action",
+    "camp",
+    "violent",
+    "edgy"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "A poster features a group of punk-inspired characters with roller skates, blood, and weapons, promoting a horror-action film titled 'Murder Drone.'"
+}

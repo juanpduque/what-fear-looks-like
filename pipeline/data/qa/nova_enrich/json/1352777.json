@@ -1,0 +1,39 @@
+{
+  "title_text": "THE HUNT",
+  "credits_text": "A FILM PRODUCTION IN ASSOCIATION WITH STUDIO CANAL AND BLUMHOUSE PRODUCTIONS \"THE HUNT\" STARRING HOLLY HUNTER, RICHARD GERE, ETHAN HOUCK, WAYNE PERE, EMILY RATAJKOWSKI, JANE ADAMS, ALFIE ALLEN, JESSICA HENWICK, STEVEN MERRITT, JANE ADAMS, ALFIE ALLEN, JESSICA HENWICK, STEVEN MERRITT, WAYNE PERE, ETHAN HOUCK, RICHARD GERE, HOLLY HUNTER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "#THEHUNT",
+  "mood": [
+    "tense",
+    "suspenseful",
+    "forest",
+    "survival",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.3
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A lone figure stands in a dense forest, holding a bag, with tall trees and misty atmosphere creating a suspenseful mood."
+}

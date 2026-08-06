@@ -1,0 +1,45 @@
+{
+  "title_text": "Brujas",
+  "credits_text": "DIRECCIÓN: ARGENTINA: RUTH GÓMEZ, CARLOS LASSO, HORACIO FLORENTIN. URUGUAY: GABRIEL DÍAZ Y MARCELO FABANI. CHILE: DEBORAH ARAYA. PRODUCCIÓN GENERAL E IDEA ORIGINAL: RUTH GÓMEZ. POSTER: STRIKE MONTALBANO.",
+  "languages": [
+    "es"
+  ],
+  "other_text": "ELLAS CRUZARÁN EL UMBRAL",
+  "mood": [
+    "gothic",
+    "eerie",
+    "supernatural",
+    "haunting",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "",
+  "description": "A poster featuring a central woman surrounded by shadowy figures, with a skull and red smoke, titled 'Brujas'."
+}

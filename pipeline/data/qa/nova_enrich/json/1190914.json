@@ -1,0 +1,53 @@
+{
+  "title_text": "BLUTREICH",
+  "credits_text": "",
+  "languages": [
+    "de"
+  ],
+  "other_text": "Kapitel III, Imaginel, Traum, Reise zum Bösen, Entfesselung, Vorsicht!",
+  "mood": [
+    "gothic",
+    "surreal",
+    "haunting",
+    "mystical",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "occult",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.2,
+  "person": 0.9,
+  "animal": 0.4,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and haunting themes, but no explicit violence or sexual content.",
+  "description": "A gothic illustration features shadowy figures, a burning tree, and eerie landscapes, evoking a mystical and haunting atmosphere."
+}

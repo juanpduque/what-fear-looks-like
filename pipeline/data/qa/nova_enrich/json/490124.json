@@ -1,0 +1,42 @@
+{
+  "title_text": "SOLVED",
+  "credits_text": "\"A PUZZLING MOVIE.\" \"GENUINELY SOMETHING I HAD NEVER SEEN BEFORE.\" \"TOO WEIRD AND VIOLENT.\" \"CHILLING.\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"FEAR HAS SIX SIDES\" \n\"TRIANGLE WEST FILMS\" \n\"SOLVED\" written & directed by MICHAEL KARTLELLY \n\"STARRING\" STEPHEN MCKENZIE, TERRI AND FEYER, KATHLEEN KOSAR, AND NICKOLAS RUSSEN \n\"SPECIAL THANKS TO\" JIM JOHNSON, JENNIFER BATES, \"PRESENTS\" MARIE LAUTENHEIMER",
+  "mood": [
+    "psychological",
+    "thriller",
+    "mystery",
+    "suspense",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "puzzle",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "Poster features a red and green Rubik's Cube with blood splatters, surrounded by festival awards and taglines."
+}

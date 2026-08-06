@@ -1,0 +1,46 @@
+{
+  "title_text": "El Chupacabra",
+  "credits_text": "Starring Treach",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "REAL TERROR IS HERE! A NEW SPECIES HAS EVOLVED",
+  "mood": [
+    "horror",
+    "terror",
+    "supernatural",
+    "thriller",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains horror themes and monstrous imagery.",
+  "description": "The poster features a monstrous creature emerging from torn newspaper with bold red text and a tagline about terror."
+}

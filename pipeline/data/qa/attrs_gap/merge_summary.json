@@ -1,0 +1,15 @@
+{
+  "ts_utc": "20260805T234909Z",
+  "backup": "data/qa/attrs_gap/bak_before_merge_20260805T234909Z",
+  "n_attributes": 65201,
+  "n_faces": 65201,
+  "n_added_vs_prior_37842": 27359,
+  "covers_faces": true,
+  "gate": {
+    "ts": "2026-08-05T20:48:36Z",
+    "n_attributes": 65201,
+    "n_faces": 65201,
+    "threshold_note": "pass if n_attrs>=65000 or n_attrs>=n_faces",
+    "ok": true
+  }
+}

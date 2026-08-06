@@ -1,0 +1,40 @@
+{
+  "title_text": "結死カメラ16",
+  "credits_text": "慕結の心結、都資教教師",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "間死止気 世界に止まる対象を止みていきるとこうに、世界は止まる。世界の止まを止みていきるとこうに、世界は止まる。",
+  "mood": [
+    "dread",
+    "suspense",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied psychological horror and mild violent themes.",
+  "description": "A poster shows a gloved hand holding a smartphone displaying a ghostly image, with dark urban scenery and ominous text."
+}

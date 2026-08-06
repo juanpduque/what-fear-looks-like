@@ -1,0 +1,132 @@
+INVENTORY {"posters": 37842, "horror_movies": 49960, "intersection": 36394, "zero_runtime": 782, "zero_en": 714, "with_tt": 478, "with_tt_en": 422, "without_tt": 304, "without_tt_en": 292}
+
+=== Phase A: with_tt n=478 ===
+basics lookup 478 …
+basics filled=1 remaining=477
+OMDb skipped (no OMDB_API_KEY)
+Wikidata P2047 for 477 …
+  wikidata imdb duration 80/477 hits=0
+  wikidata imdb duration 160/477 hits=1
+  wikidata imdb duration 240/477 hits=1
+  wikidata imdb duration 320/477 hits=1
+  wikidata imdb duration 400/477 hits=2
+  wikidata imdb duration 477/477 hits=5
+wikidata remaining=472
+TMDB runtime for 472 with-tt …
+  tmdb 50/472 filled=7
+  tmdb 100/472 filled=14
+  tmdb 150/472 filled=22
+  tmdb 200/472 filled=29
+  tmdb 250/472 filled=35
+  tmdb 300/472 filled=44
+  tmdb 350/472 filled=55
+  tmdb 400/472 filled=60
+  tmdb 450/472 filled=72
+  tmdb 472/472 filled=74
+
+=== Phase B: without_tt n=304 ===
+Wikidata by TMDB for 304 …
+  wikidata tmdb 80/304 rows=2
+  wikidata tmdb 160/304 rows=4
+  wikidata tmdb 240/304 rows=4
+  wikidata tmdb 304/304 rows=4
+after wikidata-tmdb remaining=304
+IMDb suggest for 304 …
+  suggest OK 1316489 tt33071156 'Dreams of the Dead' (movie_exact_year)
+  suggest OK 1450683 tt3608918 'Azzurrina' (movie_exact_year)
+  suggest OK 1190330 tt29561875 'Haunted Stories And Tales Of Horror' (movie_exact_year)
+  suggest MISS 1191920 'The Red Mirror' 2023 no_title_year_match
+  suggest OK 801773 tt4151128 'Vampire in Union City' (movie_exact_year)
+  suggest progress 40/304 hits=4
+  suggest OK 414431 tt6350392 'The Cutting Room Floor' (movie_exact_year)
+  suggest MISS 680379 'CLAPTRAP' 2020 no_title_year_match
+  suggest OK 1340898 tt33572282 'Mariara' (movie_exact_year)
+  suggest OK 30479 tt3429884 'Always Midnight' (movie_exact_year)
+  suggest OK 1474675 tt16113974 'MEAT' (movie_exact_year)
+  suggest MISS 1084232 'Man of the House' 2023 no_title_year_match
+  suggest OK 954659 tt19783330 'Oma the Demonic' (movie_exact_year)
+  suggest progress 80/304 hits=9
+  suggest OK 301431 tt3583694 'Vampire Sunrise' (movie_exact_year)
+  suggest OK 959767 tt20595798 'Buyut' (movie_exact_year)
+  suggest MISS 703882 'Il Volto della Follia' 2018 no_title_year_match
+  suggest OK 968017 tt29613390 'A Deer in the Woods' (movie_exact_year)
+  suggest OK 1366858 tt26624134 'H010N' (movie_exact_year)
+  suggest progress 120/304 hits=13
+  suggest MISS 1500401 'To Kill or be Killed' 2025 no_title_year_match
+  suggest OK 1240638 tt31183307 'The Girl 2' (movie_exact_year)
+  suggest OK 329412 tt9473050 'The House Behind the Wall' (movie_exact_year)
+  suggest OK 1249380 tt30834369 'Zhowtime Presents: Siren Stories' (movie_exact_year)
+  suggest OK 988192 tt21370240 'Wanalathi' (movie_exact_year)
+  suggest 150/304 ERR 857334 suggest_err_HTTPError
+  suggest OK 1514587 tt37600045 'The Haunting of Heather Black' (movie_exact_year)
+  suggest progress 160/304 hits=18
+  suggest MISS 736308 'Alien: Covenant - Prologue: The Secrets of David’s Lab' 2017 no_title_year_match
+  suggest OK 1398146 tt34901815 "Mommy's Perfect Match" (movie_exact_year)
+  suggest MISS 745047 'Static Tears' 2020 no_title_year_match
+  suggest progress 200/304 hits=19
+  suggest OK 1402706 tt35028032 "Screw Year's Eve" (movie_exact_year)
+  suggest OK 1143868 tt27042848 'Maximum Strollerdrive' (movie_exact_year)
+  suggest MISS 1019951 'WUURM' 2022 no_title_year_match
+  suggest OK 1284070 tt14187562 'Camp Smokey' (movie_exact_year)
+  suggest OK 1546390 tt26229334 'Beverly Hills Massacre' (movie_exact_year)
+  suggest progress 240/304 hits=23
+  suggest OK 1549668 tt33365145 'Bait' (movie_exact_year)
+  suggest OK 1288932 tt32916229 'Lockdown' (movie_exact_year)
+  suggest MISS 1027859 'The Hidden' 2021 no_title_year_match
+  suggest OK 900352 tt8733858 'Hatch: Found Footage' (movie_exact_year)
+  suggest OK 640775 tt37801105 'Redbox Killer' (movie_exact_year)
+  suggest MISS 1296316 "The Wasp's Nest" 2024 no_title_year_match
+  suggest progress 280/304 hits=27
+  suggest OK 521485 tt34378764 'Madman 2' (movie_exact_year)
+  suggest OK 521563 tt26242668 'Twisted Tales 2' (movie_exact_year)
+  suggest MISS 915572 'Violations' 1986 no_title_year_match
+  wikidata imdb duration 14/14 hits=0
+after suggest remaining=289 hits=29
+TMDB fallback for 289 no-tt …
+  tmdb-no-tt 50/289
+  tmdb-no-tt 100/289
+  tmdb-no-tt 150/289
+  tmdb-no-tt 200/289
+  tmdb-no-tt 250/289
+  tmdb-no-tt 289/289
+backup → /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/runtime_residual_fill/horror_movies.bak_20260803T220941Z.csv
+sidecar updated (+29 tt)
+horror_movies: runtime_updated=97 imdb_updated=29 appended=0
+
+=== DONE ===
+{
+  "filled": 97,
+  "still_zero": 685,
+  "filled_by_source": {
+    "imdb_basics": 1,
+    "wikidata_p2047": 5,
+    "tmdb": 76,
+    "imdb_basics_after_suggest": 15
+  },
+  "tt_newly_matched": 29,
+  "inventory_before": {
+    "posters": 37842,
+    "horror_movies": 49960,
+    "intersection": 36394,
+    "zero_runtime": 782,
+    "zero_en": 714,
+    "with_tt": 478,
+    "with_tt_en": 422,
+    "without_tt": 304,
+    "without_tt_en": 292
+  },
+  "inventory_after": {
+    "posters": 37842,
+    "horror_movies": 49960,
+    "intersection": 36394,
+    "zero_runtime": 685,
+    "zero_en": 634,
+    "with_tt": 412,
+    "with_tt_en": 373,
+    "without_tt": 273,
+    "without_tt_en": 261
+  },
+  "blockers": [
+    "OMDB_API_KEY missing \u2014 skipped OMDb Runtime path"
+  ]
+}

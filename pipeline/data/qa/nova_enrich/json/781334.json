@@ -1,0 +1,46 @@
+{
+  "title_text": "NOT FOR THE FAINT OF HEART",
+  "credits_text": "FORBIDDEN FILMS & THEIR FANS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FROM THE CREATOR OF DIRECT-TO-VIDEO AND STALE POPCORN & STICKY FLOORS ADULTS ONLY 18+ 506-B 506 20 27",
+  "mood": [
+    "horror",
+    "camp",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.5,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic blood and suggestive imagery.",
+  "description": "A horror movie poster featuring a monstrous, bloody creature with a fiery background and bold red text."
+}

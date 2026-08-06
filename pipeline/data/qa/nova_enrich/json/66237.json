@@ -1,0 +1,35 @@
+{
+  "title_text": "NO TIME TO FEAR",
+  "credits_text": "JAMES DEBELLO, LOUIS HANDYLOR, FRANCESCA CECIL, DANIEL KOUNTZ",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"The most frightening thing about turning a new leaf is discovering death is just around the corner\" \"The independent film making trend lived here. Not fine for a vampire flick, entertaining, but not so much.\" - James O'Barr",
+  "mood": [
+    "dread",
+    "suspense",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild suggestion of violence through weapon and tense atmosphere.",
+  "description": "A man in a hoodie walks forward holding a weapon, with dramatic text and quotes emphasizing fear and suspense."
+}

@@ -1,0 +1,44 @@
+{
+  "title_text": "Santa Claus vs. The Zombies",
+  "credits_text": "ONLY SANTA CAN SAVE YOU NOW!!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "camp",
+    "horror",
+    "humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "zombie",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic zombie imagery and implied violence.",
+  "description": "A poster shows Santa Claus surrounded by zombies with bold red text reading 'Santa Claus vs. The Zombies' and 'ONLY SANTA CAN SAVE YOU NOW!!'"
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "THE WELDER",
+  "credits_text": "VINCENT DE PAUL, CAMILA RODRIGUEZ, ROE DUNKLEY, A FILM BY DAVID LIZ",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CUT. WELD. STITCH. REPEAT!",
+  "mood": [
+    "intense",
+    "gritty",
+    "horrific",
+    "violent",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A poster shows a welder's mask with a monstrous face inside, surrounded by sparks and blood, suggesting a horror theme."
+}

@@ -1,0 +1,38 @@
+{
+  "title_text": "BUTCHER BOB",
+  "credits_text": "YOU CAN RUN BUT YOU WILL DIE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THEY THOUGHT MOUNTAIN HIKING WAS SAFE...THEY THOUGHT WRONG\nA STAN STOKES FILM",
+  "mood": [
+    "dread",
+    "suspense",
+    "forest",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, moody poster features a silhouette running through a dense forest with bold red text and a tagline."
+}

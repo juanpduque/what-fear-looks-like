@@ -1,0 +1,41 @@
+{
+  "title_text": "トリプルX",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "消少さんの左を導える害害の害害。害害の害害。",
+  "mood": [
+    "dread",
+    "horror",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; disturbing imagery.",
+  "description": "A poster shows a distressed person with hands covering their face, blood visible, and Japanese text indicating horror themes."
+}

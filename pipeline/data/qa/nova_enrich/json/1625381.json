@@ -1,0 +1,46 @@
+{
+  "title_text": "HEART EYES II",
+  "credits_text": "You're gonna wish you were single.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COMING SOON",
+  "mood": [
+    "thriller",
+    "horror",
+    "psychological",
+    "suspense",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "text",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.95,
+  "monster": 0.0,
+  "person": 0.85,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A gloved hand holds a large knife against a masked face with heart-shaped eyes, set against shattered glass. The poster advertises an upcoming thriller titled 'Heart Eyes II.'"
+}

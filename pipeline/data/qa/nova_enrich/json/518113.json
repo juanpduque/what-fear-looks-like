@@ -1,0 +1,45 @@
+{
+  "title_text": "DEAD BY MIDNIGHT",
+  "credits_text": "STALES OF TERROR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "VHS FORMAT, HI-FI STEREO, $19.99, 11 PM CENTRAL, BEAKING SMILES CHUBBY, 13WK 24H",
+  "mood": [
+    "gothic",
+    "dread",
+    "camp",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A VHS tape cover featuring a close-up of a menacing face and a group of characters, with an axe and eerie text."
+}

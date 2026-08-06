@@ -1,0 +1,42 @@
+{
+  "title_text": "Hillbilly Cannibal Bloodline",
+  "credits_text": "A Film by Joseph Thomas",
+  "languages": [
+    "en"
+  ],
+  "other_text": "They Live...For Your Death!",
+  "mood": [
+    "horror",
+    "carnage",
+    "gruesome",
+    "violent",
+    "psychopathic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 1.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences only.",
+  "description": "A poster features a man and a cat with bloodied faces, promoting a horror film titled 'Hillbilly Cannibal Bloodline'."
+}

@@ -1,0 +1,51 @@
+{
+  "title_text": "魔われた女の物質",
+  "credits_text": "結子アミリカリア 群帰いチャンネル 作法しタレナー",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "逃れられない悪謝の間武!!",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "eerie",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and themes of horror.",
+  "description": "A poster features a distressed woman with a ghostly, dripping symbol over her face against a dark, twisted background, suggesting supernatural horror."
+}

@@ -1,0 +1,38 @@
+{
+  "title_text": "SANTO",
+  "credits_text": "CONTRA LA HIJA DE FRANKENSTEIN",
+  "languages": [
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "camp",
+    "horror",
+    "action",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A muscular man hangs from chains against a dark background with a bright yellow sun, with text indicating a horror film title and subtitle."
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "INFERNUM",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WHO YOU HEAR WILL KILL YOU",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "haunting",
+    "desolate"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.95
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.9
+    },
+    {
+      "name": "storm",
+      "conf": 0.85
+    },
+    {
+      "name": "abandoned",
+      "conf": 0.8
+    },
+    {
+      "name": "horror",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains horror themes and mild violent imagery.",
+  "description": "A weathered train under stormy skies with ghostly figures peering from broken windows, evoking a haunting and desolate atmosphere."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "THE SEAMSTRESS",
+  "credits_text": "LANCE HENRIKSEN KAILEE SEE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A MILLION WAYS TO DIE... THIS IS THE WORST",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    },
+    {
+      "name": "gothic",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and violence.",
+  "description": "A poster showing a decaying, blood-stained hand with needles piercing it, accompanied by the title and author names."
+}

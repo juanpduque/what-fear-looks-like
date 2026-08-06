@@ -1,0 +1,41 @@
+{
+  "title_text": "MONSTRO LEGUME DO ESPAÇO",
+  "credits_text": "CANIBAL FILMES apresenta",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "other_text": "TERROR GORE MONSTROS Clássico do Show-On Video Brasileiro!",
+  "mood": [
+    "camp",
+    "sci-fi",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and graphic imagery.",
+  "description": "Vibrant poster features a green monster with various horror scenes and text overlays against a starry background."
+}

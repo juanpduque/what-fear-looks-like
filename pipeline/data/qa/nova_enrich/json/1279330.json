@@ -1,0 +1,46 @@
+{
+  "title_text": "Vūジラル 262",
+  "credits_text": "答記 木毛上",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "TVアニメーション・ブストライ! 無法影咳の影咳届を消す 無法影咳の影咳届を消す 34鐘",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "psychological",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied horror themes and occult imagery.",
+  "description": "A poster features distorted faces and Japanese text, suggesting a horror anime series with a dark, surreal atmosphere."
+}

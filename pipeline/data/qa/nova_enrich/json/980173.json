@@ -1,0 +1,40 @@
+{
+  "title_text": "DINOSAUR HOTEL",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOU CAN CHECK-IN, BUT DON'T EXPECT TO CHECK-OUT",
+  "mood": [
+    "action",
+    "adventure",
+    "thriller",
+    "sci-fi"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.1,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and destruction.",
+  "description": "A poster shows a T-Rex roaring over a burning city with cars and buildings in the background."
+}

@@ -1,0 +1,47 @@
+{
+  "title_text": "Du Domine Satanae",
+  "credits_text": "Stefan Schanda Mulier Sine Nomine",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Cerebral Film presents",
+  "mood": [
+    "gothic",
+    "occult",
+    "dread",
+    "dark",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains occult imagery and implied violence.",
+  "description": "A dark poster features a skull with candles, a bloody hand, and occult text, suggesting a gothic horror theme."
+}

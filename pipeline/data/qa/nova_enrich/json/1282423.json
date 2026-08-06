@@ -1,0 +1,43 @@
+{
+  "title_text": "JINN",
+  "credits_text": "A FILM BY HAMID BAIG\nA CURRANT NOIR STUDIOS PRODUCTION\nPRODUCED BY HAMID BAIG DIRECTED BY DEEPAK BISHT AADIB ALI MUSIC BY JOURAKH SAIN SYED HIBA EDITED BY HAMID BAIG\nCAST: NASEER MANJARY AMIT SOURABH RAHAT SAIMA HUMER AISHA FARAD KHAN HAMID BAIG ONEUP STUDIOS PVT. LTD. DESIGNED BY MONU MAKEUP ARTIST HIMANSHU JOSHI ART DIRECTOR DEEPAK BISHT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "suspense",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A group of people stands in front of a haunted house under a dark, starry sky with a looming ghostly figure above them."
+}

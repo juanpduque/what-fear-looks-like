@@ -1,0 +1,39 @@
+{
+  "title_text": "O HOMEM DA MEIA-NOITE",
+  "credits_text": "",
+  "languages": [
+    "pt"
+  ],
+  "other_text": "",
+  "mood": [
+    "eerie",
+    "suspenseful",
+    "haunting",
+    "gothic",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark silhouette stands in a doorway with eerie text overlay, creating a suspenseful and haunting atmosphere in a dimly lit room."
+}

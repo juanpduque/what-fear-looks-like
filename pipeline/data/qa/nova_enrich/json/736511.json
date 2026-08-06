@@ -1,0 +1,45 @@
+{
+  "title_text": "ZCOAT",
+  "credits_text": "FIRST BLEAT\nA GRACCHI STUDIO PRESENTATION\nDIRECTED BY POLEN JOLIVET, PRODUCE WORKTAP, ALEXANDRE DORELLY, LAURENT MEUS\nWRITERS: MARCUS PROENSA, BERTRAND LEFEBVRE, JAAK KORNET\nSOUND DESIGN BY THIERRY MEYERMAN, MATTHEW UNTERBERG",
+  "languages": [
+    "en"
+  ],
+  "other_text": "OCEANE WEYER HUGUES HAUSMAN SIMON D'AMAMME",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "occult",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and a monstrous creature; no explicit violence or gore.",
+  "description": "A dark, horned creature looms over a dilapidated house under a starry night sky, with bold red and blue typography for the title."
+}

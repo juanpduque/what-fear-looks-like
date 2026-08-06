@@ -1,0 +1,50 @@
+{
+  "title_text": "ZOMBIE DRIFTWOOD",
+  "credits_text": "\"THE FUNNIEST ZOMBIE MOVIE SINCE SHAUN OF THE DEAD...\" ROCK EXPRESS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "15",
+  "mood": [
+    "camp",
+    "horror",
+    "humor",
+    "survival",
+    "apocalypse"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "water",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and implied violence.",
+  "description": "A poster shows zombies in water with a house in the background under a full moon, promoting a comedic zombie movie."
+}

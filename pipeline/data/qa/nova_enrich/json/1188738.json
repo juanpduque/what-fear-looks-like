@@ -1,0 +1,40 @@
+{
+  "title_text": "THE WEED HACKER MASSACRE",
+  "credits_text": "ALLEN DANZIGER'S",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gritty",
+    "disturbing",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests graphic horror themes and potential violence.",
+  "description": "A dark, gritty poster features a distorted, monstrous face emerging from a circular frame, with bold, stylized text for the title and director's name."
+}

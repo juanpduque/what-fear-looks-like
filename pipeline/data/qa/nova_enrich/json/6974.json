@@ -1,0 +1,43 @@
+{
+  "title_text": "THE ANGRY RED PLANET",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "sci-fi",
+    "adventure",
+    "classic",
+    "alien",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "space",
+      "conf": 0.8
+    },
+    {
+      "name": "alien",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A vintage sci-fi poster shows a group of people facing a green alien creature on a red planet, with space rays and dramatic artwork."
+}

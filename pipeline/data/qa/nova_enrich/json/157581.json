@@ -1,0 +1,42 @@
+{
+  "title_text": "BEAST",
+  "credits_text": "T.V. LAVIN TARA LYNN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A MONSTER AMONG MEN \"A powerful psychological horror film!!!\" —HORROR TIMES",
+  "mood": [
+    "intense",
+    "psychological",
+    "horror",
+    "dread",
+    "terrifying"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of a monstrous creature with blood, suggesting intense horror themes.",
+  "description": "A poster featuring a monstrous creature with sharp teeth and intense eyes, with bold red and black text reading 'BEAST' and a tagline."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "THE BLUE HOLE",
+  "credits_text": "SHARKY VICE... TREMO LO PICTURES... DAVE CASTELLONE, JOE WYNKOOP, MICHELLE DIGGS, PHIL HERMAN, AMANDA MCCANN, MATT KANE, LAURIA MCCATHERINE WYNKOOP, JOE HERMAN, JUDY BASTIAN, TREMO LO, MATT KANE, DAVID CASTELLONE, MATTHEW WALLNER, MATTHEW WALLNER, MATTHEW WALLNER, MATTHEW WALLNER, DAVE CASTELLONE, LAURIA MCCATHERINE, MATTHEW WALLNER, DAVE CASTELLONE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Deep in the New Jersey Pine Barrens is a place where devils dance and killers roam...",
+  "mood": [
+    "thriller",
+    "horror",
+    "psychological",
+    "mystery",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "Mild suggestive imagery and implied violence.",
+  "description": "Movie poster features a group of people in a forest setting with a central intense female character and dramatic text overlay."
+}

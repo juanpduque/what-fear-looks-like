@@ -1,0 +1,47 @@
+{
+  "title_text": "BLEEDERS",
+  "credits_text": "Allison Chains • D. Will • MacArthur Buondonna • Carsan T. Morrissey • MATRIARCH films",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DR ZUK YOUR FILL",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "surreal",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.2,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and occult themes.",
+  "description": "A dramatic poster features a hand gripping a cylindrical object, overlaid with bold, stylized text and a skull emblem, evoking horror and gothic themes."
+}

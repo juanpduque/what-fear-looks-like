@@ -1,0 +1,46 @@
+{
+  "title_text": "PRESAGIO",
+  "credits_text": "UNA PELÍCULA DE MATÍAS SALINAS",
+  "languages": [
+    "es"
+  ],
+  "other_text": "ENTRE DOS PREDADORES UNO ES LA PRESA\nGANADORA MEJOR PELÍCULA FANTASÍA LATINOAMERICANA NOCTURNAL (ESPAÑA)\nSELECCIÓN OFICIAL MORBIDO FILM FEST (MÉXICO)\nSELECCIÓN OFICIAL SOUTH AFRICAN HORRORFEST (SUDÁFRICA)\nSELECCIÓN OFICIAL BUENOS AIRES ROJO SANRE (ARGENTINA)\nFESTIVAL INTERNACIONAL DEL NUEVO CINE LATINOAMERICANO LA HABANA (CUBA)",
+  "mood": [
+    "gothic",
+    "dread",
+    "psychological",
+    "surreal",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and psychological horror elements.",
+  "description": "A man with blood dripping from his mouth stands in a dark forest, with a shadowy figure in the background and scattered papers on the ground."
+}

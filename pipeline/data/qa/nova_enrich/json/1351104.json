@@ -1,0 +1,46 @@
+{
+  "title_text": "PONTIANAK 200°C",
+  "credits_text": "AYA AMIRUDDIN, DOTTIE, ROPIE, ZIANAZAIN, NIEZAM ZAIDI, WANNS AHMAD, MALIA BABY, APICH LO\nSEBUA ILM SERAM KOMEDI\nARAHAN SHUHAIMI LUA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DI PAWAGAM 5 SEPTEMBER 2024",
+  "mood": [
+    "horror",
+    "comedy",
+    "supernatural",
+    "gothic",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror elements and supernatural themes.",
+  "description": "Poster features a group of characters facing two menacing ghostly figures in a dark, eerie forest setting."
+}

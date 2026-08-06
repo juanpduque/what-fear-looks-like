@@ -1,0 +1,46 @@
+{
+  "title_text": "BEAST",
+  "credits_text": "LOOM\n\nLOREN SCHEUNEMANN MICHAEL SCHNEIDER PAUL SCHNEIDER SOPHIE LEITZ PETER SCHNEIDER\n\nKATJA SCHNEIDER MARCUS SCHNEIDER\n\nANDREAS SCHNEIDER & SUSANNE SCHNEIDER\n\nPRODUCED BY KLAUS SCHNEIDER\n\nDIRECTED BY STEFAN SCHNEIDER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "REST",
+  "mood": [
+    "horror",
+    "fantasy",
+    "gothic",
+    "surreal",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.75,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements and implied violence.",
+  "description": "A poster features a monstrous red claw and two people in a dark, eerie setting, suggesting a horror theme."
+}

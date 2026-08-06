@@ -1,0 +1,42 @@
+{
+  "title_text": "死亡の貨車",
+  "credits_text": "DEATH WAGON",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "other_text": "悪魔の血を吸う女が…出没する日本唯一の「死の貨車」",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intended for mature audiences.",
+  "description": "A poster shows a woman holding a bloody knife with a distressed expression, set against a dark background with Japanese and English text."
+}

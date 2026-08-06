@@ -1,0 +1,47 @@
+{
+  "title_text": "THE LAST GATEWAY",
+  "credits_text": "A FILM BY DEMIAN RUGNA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE HELL IS CLOSE\nEXTREMELY",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "intense",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "cross",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic blood and violent imagery, suitable for mature audiences.",
+  "description": "A dark, gritty poster featuring a bloody cross and skulls, with bold red and black text announcing the film's title and director."
+}

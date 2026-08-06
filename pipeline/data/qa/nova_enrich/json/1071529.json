@@ -1,0 +1,41 @@
+{
+  "title_text": "DEATH DREAM",
+  "credits_text": "Bob Clark HORROR COLLECTION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CHILDREN SHOULDN'T PLAY WITH DEAD THINGS! Black Christmas",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and disturbing facial expressions.",
+  "description": "A vintage horror poster features two menacing faces with a central vertical blood drip, promoting the film 'Death Dream' directed by Bob Clark."
+}

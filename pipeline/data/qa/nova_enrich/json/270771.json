@@ -1,0 +1,41 @@
+{
+  "title_text": "THE LAST SURVIVORS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "post-apocalyptic",
+    "action",
+    "survival",
+    "intense",
+    "desolate"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "axe",
+      "conf": 0.8
+    },
+    {
+      "name": "desert",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence through weapon use and post-apocalyptic setting.",
+  "description": "A woman wields an axe and sword in a desert landscape, surrounded by armed survivors in a post-apocalyptic setting."
+}

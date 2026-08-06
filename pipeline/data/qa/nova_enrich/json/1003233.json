@@ -1,0 +1,46 @@
+{
+  "title_text": "THINGS 666",
+  "credits_text": "STERLING ENTERTAINMENT HOME VIDEO HORROR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "something crawls to the surface...something is watching...something wants you dead!",
+  "mood": [
+    "horror",
+    "dread",
+    "gothic",
+    "supernatural",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery including blood and monstrous creatures.",
+  "description": "A woman holds a knife facing a grotesque, monstrous figure with a doll-like face, set against a dark, red background with bold title text."
+}

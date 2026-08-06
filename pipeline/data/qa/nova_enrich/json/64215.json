@@ -1,0 +1,43 @@
+{
+  "title_text": "LADDLAND",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "haunting",
+    "gothic",
+    "eerie",
+    "desolate",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "haunted",
+      "conf": 0.85
+    },
+    {
+      "name": "abandoned",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.8,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A ghostly figure stands in an abandoned street with a cat beside them, under an overcast sky, evoking a haunting atmosphere."
+}

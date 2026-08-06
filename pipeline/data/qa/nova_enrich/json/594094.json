@@ -1,0 +1,46 @@
+{
+  "title_text": "DEATH O'LANTERN THE REMAKE",
+  "credits_text": "STARRING CANDICE BERNARD, JIMMY DIXON, JANE FAST HAMMETTER, SPYMAN, JACKSON, JAMES O'LANTERN, AND ALFREDO BARCLAY. PRODUCED BY BUCKS OF EVIL PEOPLE PRODUCED AND WRITTEN BY JIM ARCHITECT. MUSIC BY JACKSON AND THE DEAD FORTUNES. PHOTOGRAPHY BY QUITER ROONEY & STEAM KING.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "JUAN ARCHITECT'S WARNING! WARLOCK HOME VIDEO",
+  "mood": [
+    "horror",
+    "gothic",
+    "camp",
+    "thriller",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains horror themes and mild violent imagery.",
+  "description": "Movie poster features a masked figure holding a weapon, with a skull logo and dramatic red and blue color scheme."
+}

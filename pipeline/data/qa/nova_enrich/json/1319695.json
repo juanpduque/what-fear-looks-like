@@ -1,0 +1,46 @@
+{
+  "title_text": "魔権の武屋",
+  "credits_text": "ディレクター:シャントラー ストリー:タケシー ステー:イジリアンシャンスインストラーション",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "ステー:イジリアンシャンスインストラーション ディレクター:シャントラー",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "supernatural",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intense horror imagery.",
+  "description": "A poster features a screaming, monstrous face with blood, overlaid with bold Japanese text and credits for a horror film."
+}

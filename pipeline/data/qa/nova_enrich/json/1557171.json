@@ -1,0 +1,46 @@
+{
+  "title_text": "TATLETALE",
+  "credits_text": "A Film by Eric Albert Branstrom",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "haunting",
+    "mysterious",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.95
+    },
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "text",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and themes of horror.",
+  "description": "A black-and-white poster shows a church surrounded by a forest with dripping red liquid at the bottom, titled 'TATLETALE' by Eric Albert Branstrom."
+}

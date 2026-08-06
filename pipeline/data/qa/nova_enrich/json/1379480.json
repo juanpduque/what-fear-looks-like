@@ -1,0 +1,42 @@
+{
+  "title_text": "Oliver's Basement",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "mystery",
+    "suspense",
+    "dark",
+    "claustrophobic"
+  ],
+  "fear_labels": [
+    {
+      "name": "basement",
+      "conf": 0.8
+    },
+    {
+      "name": "night",
+      "conf": 0.7
+    },
+    {
+      "name": "fence",
+      "conf": 0.6
+    },
+    {
+      "name": "staircase",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dimly lit image shows a fenced staircase leading to a basement with the text 'Oliver's Basement' overlaid."
+}

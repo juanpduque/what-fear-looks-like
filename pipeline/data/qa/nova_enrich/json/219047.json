@@ -1,0 +1,46 @@
+{
+  "title_text": "WITCH HUNTER",
+  "credits_text": "A True Story",
+  "languages": [
+    "en"
+  ],
+  "other_text": "No One Gets Out... ALIVE!",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "supernatural",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains intense horror themes and occult imagery.",
+  "description": "A poster featuring a menacing creature with glowing red eyes and sharp teeth, set against a dark forest background with bold red text reading 'WITCH HUNTER' and a tagline 'No One Gets Out... ALIVE!'."
+}

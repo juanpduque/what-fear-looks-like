@@ -1,0 +1,39 @@
+{
+  "title_text": "DON'T LOOK THE SCREEN",
+  "credits_text": "A FILM BY Stefan Thien\nChristina Robbert Norbert Eggers Welp Kai van Gobbert Katharina Trämpck Bernd Thomas",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Ostfriesland Film Studio GmbH",
+  "mood": [
+    "mysterious",
+    "eerie",
+    "forest",
+    "night",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "night",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, moody poster featuring a forest scene at night with the title \"DON'T LOOK THE SCREEN\" prominently displayed."
+}

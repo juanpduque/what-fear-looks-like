@@ -1,0 +1,41 @@
+{
+  "title_text": "ANGEL OF DEATH",
+  "credits_text": "A JOHNMARK TRIPLETT FILM with KYLA BRUCKNAN, BRANDON AUTRAGUEL, JOHNMARK TRIPLETT as \"MIKE\" and JOHNATHAN TRIPLETT as \"JIMMY\" also ALAN HUNT, TAMARA TARONE, DAMIEN HEDGESCOTT, JOSH KUPPENHEIMER, SANDRA YOUNG, JOHNMARK TRIPLETT as \"MIKE\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DAMIEN HEDGESCOTT STUART BRAZELL KATE YOUNG",
+  "mood": [
+    "intense",
+    "dark",
+    "action",
+    "thriller",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "mask",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the masked figure and weapon.",
+  "description": "A masked figure in tactical gear holds a weapon, with bold red and black text overlay naming the film and cast."
+}

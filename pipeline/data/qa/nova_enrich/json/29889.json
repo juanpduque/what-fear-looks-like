@@ -1,0 +1,44 @@
+{
+  "title_text": "SILENT VENOM",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "dramatic",
+    "threatening",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "snake",
+      "conf": 0.95
+    },
+    {
+      "name": "weapon",
+      "conf": 0.85
+    },
+    {
+      "name": "danger",
+      "conf": 0.9
+    },
+    {
+      "name": "storm",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.85,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.95,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features a large snake coiled around a sword, suggesting potential violence.",
+  "description": "A dramatic poster shows a large snake coiled around a sword emerging from water under a stormy sky, with bold red title text above."
+}

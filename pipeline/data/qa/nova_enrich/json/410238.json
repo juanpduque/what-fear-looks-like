@@ -1,0 +1,39 @@
+{
+  "title_text": "TEAR US APART",
+  "credits_text": "ELISA REDDING SEAN BARTLETT A FILM BY DEVIN CLARK",
+  "languages": [
+    "en"
+  ],
+  "other_text": "GUILT IS ONLY THE BEGINNING.",
+  "mood": [
+    "melancholy",
+    "haunting",
+    "mysterious",
+    "emotional",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a woman's face partially obscured by trees in a snowy forest, with the title 'TEAR US APART' prominently displayed."
+}

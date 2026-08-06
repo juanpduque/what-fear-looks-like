@@ -1,0 +1,45 @@
+{
+  "title_text": "SOLDIER OF WAR",
+  "credits_text": "HOW DO YOU FIGHT THE UNDEAD?",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "gritty",
+    "post-apocalyptic",
+    "survival",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and implied violence, suitable for mature audiences.",
+  "description": "A soldier holds a rifle in a war-torn setting with tanks and other soldiers in the background, featuring a tagline about fighting the undead."
+}

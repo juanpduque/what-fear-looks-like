@@ -1,0 +1,47 @@
+{
+  "title_text": "Nosteratu",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FUKUBARUKI",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "eerie",
+    "macabre"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "gothic",
+      "conf": 0.9
+    },
+    {
+      "name": "haunting",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic blood and a haunting, gothic aesthetic.",
+  "description": "A dramatic poster features a pale woman with blood on her face and hands, set against a dark red background, evoking a gothic horror theme."
+}

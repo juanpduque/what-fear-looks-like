@@ -1,0 +1,54 @@
+{
+  "title_text": "สยามผี",
+  "credits_text": "4 กินยายเปี๋ย ในโรงพยาบาล",
+  "languages": [
+    "th"
+  ],
+  "other_text": "ปีมีต ตัว สวามี",
+  "mood": [
+    "horror",
+    "supernatural",
+    "thriller",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic horror elements and occult imagery.",
+  "description": "A group of people confront a ghostly figure in a dark cemetery setting, with candles and eerie atmosphere."
+}

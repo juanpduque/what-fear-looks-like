@@ -1,0 +1,41 @@
+{
+  "title_text": "BLOOD & RUST",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Backbone City Limits",
+  "mood": [
+    "intense",
+    "gritty",
+    "thriller",
+    "action",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and intense imagery.",
+  "description": "A poster features three men, two holding guns, with a shadowy figure ahead. The background is red with eerie eyes, suggesting a tense, action-packed thriller."
+}

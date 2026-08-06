@@ -1,0 +1,42 @@
+{
+  "title_text": "VAMPIRE HUNTER D",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "fantasy",
+    "dark",
+    "mysterious",
+    "romantic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild sexual undertones and occult themes.",
+  "description": "A stylized poster features a woman and a cloaked figure against a dark background, with bold red lettering spelling out 'VAMPIRE HUNTER D.'"
+}

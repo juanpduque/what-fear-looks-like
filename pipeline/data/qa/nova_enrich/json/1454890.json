@@ -1,0 +1,45 @@
+{
+  "title_text": "BLOOD STREET",
+  "credits_text": "INTRODUCING OLIVIA GIRL AN WITH FINAL GIRL STARRING SHENNAZ AUSTRIA SAMB MORICA HART COLIN LUNG NURMI KENNEDY O HOBB HANCIA COWAN CARI CHEVAS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PHASE 3 FILMS PRESENTS",
+  "mood": [
+    "gothic",
+    "dread",
+    "horror",
+    "thriller",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild horror elements and implied violence.",
+  "description": "Poster shows a group of people in front of a dark house at night, with a masked figure and dramatic lighting."
+}

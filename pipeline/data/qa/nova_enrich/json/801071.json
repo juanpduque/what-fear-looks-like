@@ -1,0 +1,42 @@
+{
+  "title_text": "JACK IN THE BOX 2",
+  "credits_text": "AWAKENING",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "terrifying",
+    "eerie",
+    "psychological",
+    "disturbing",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and disturbing imagery.",
+  "description": "A poster featuring a terrifying clown with blood on its face, set in a dark, eerie environment, promoting the sequel 'Jack in the Box 2: Awakening.'"
+}

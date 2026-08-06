@@ -1,0 +1,42 @@
+{
+  "title_text": "The Next Victim",
+  "credits_text": "Starring CARROLL BAKER T.P. McKENNA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THRILLER VIDEO",
+  "mood": [
+    "horror",
+    "thriller",
+    "suspense",
+    "dramatic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "Contains implied violence and mild sexual suggestiveness.",
+  "description": "A dramatic poster features a woman with long hair, large scissors looming over her, and a skull logo above the title."
+}

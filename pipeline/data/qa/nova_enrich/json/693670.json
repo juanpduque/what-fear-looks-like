@@ -1,0 +1,40 @@
+{
+  "title_text": "THE SPOOKY PUMPKIN",
+  "credits_text": "HARRISON WINT • LINDSAY RAMSH • MEAGAN TAYLOR • LAKE LINDLER Music by KYLE AKERS • Produced by JORDAN BRISTOW Directed by BLAKE HUNTER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "JED WOLF FILM present 18+",
+  "mood": [
+    "spooky",
+    "horror",
+    "fantasy",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "pumpkin",
+      "conf": 0.9
+    },
+    {
+      "name": "horror",
+      "conf": 0.8
+    },
+    {
+      "name": "spooky",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.4,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild violence suggested by imagery; no explicit gore or nudity visible.",
+  "description": "A colorful poster features a group of people in a spooky setting with a prominent pumpkin, suggesting a horror or fantasy theme."
+}

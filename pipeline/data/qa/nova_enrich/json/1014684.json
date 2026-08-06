@@ -1,0 +1,45 @@
+{
+  "title_text": "RISE OF THE CARRIERS",
+  "credits_text": "Joe Cullen Billy Dunston A Holy Sheet Production",
+  "languages": [
+    "en"
+  ],
+  "other_text": "We're gonna end up like the rest of these frybrains!",
+  "mood": [
+    "apocalyptic",
+    "dystopian",
+    "anxious",
+    "survival",
+    "grim"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence through weapons and threatening figures.",
+  "description": "The poster shows two men holding weapons with a group of shadowy figures in the background under a stormy sky."
+}

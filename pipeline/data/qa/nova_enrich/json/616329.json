@@ -1,0 +1,39 @@
+{
+  "title_text": "WILD BOAR",
+  "credits_text": "AUGIE DUKE, DANIEL ROEBUCK, JEREMIAH SIMBORN, MICHAEL REED, JIM NIEL, NANCY ROSALZUM, THE HUNTERS, BARNEY BURMAN'S WILD BOAR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IMPATIENT MONSTERS PRESENTS IN ASSOCIATION WITH STUDIO BF2",
+  "mood": [
+    "gritty",
+    "survival",
+    "post-apocalyptic",
+    "intense",
+    "desolate"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A rugged, humanoid creature stands with weapons against a fiery, mountainous backdrop, suggesting a survival or post-apocalyptic theme."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "野女狼",
+  "credits_text": "林在玉 陳美玲",
+  "languages": [
+    "zh"
+  ],
+  "other_text": "母夜叉来了女生是大狼是女？她是女狼？\n林在玉 陳美玲\n台灣電影公司",
+  "mood": [
+    "horror",
+    "gothic",
+    "erotic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.4,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "occult",
+    "sexual"
+  ],
+  "moderation_notes": "Contains suggestive imagery and occult themes.",
+  "description": "A poster features a distressed woman with wild hair, a wolf silhouette, and dramatic text, suggesting a horror theme."
+}

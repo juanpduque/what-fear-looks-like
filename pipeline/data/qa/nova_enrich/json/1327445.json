@@ -1,0 +1,44 @@
+{
+  "title_text": "UN CUENTO DE PESCADORES",
+  "credits_text": "LA MALDICIÓN DE LA MIRINGUA",
+  "languages": [
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and monstrous fish-like creatures.",
+  "description": "A girl is surrounded by grotesque, fish-like creatures with bloodied faces in a dark, aquatic setting."
+}

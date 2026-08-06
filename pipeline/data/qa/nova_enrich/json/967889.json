@@ -1,0 +1,47 @@
+{
+  "title_text": "ANGEL CITY HORROR",
+  "credits_text": "CHRISTOPHER MATTHEW COOKE SAUKI KATZ CALEB HARRIS SARAH NICKLIN PATRICK JOSEPH REESER MATTHEW McWILLIAMS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HOLLYWOOD",
+  "mood": [
+    "gothic",
+    "noir",
+    "surreal",
+    "dread",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic blood and suggestive imagery.",
+  "description": "A vintage-style poster features a monstrous face dripping blood, two men in suits, and eerie, gothic artwork."
+}

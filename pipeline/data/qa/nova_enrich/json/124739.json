@@ -1,0 +1,39 @@
+{
+  "title_text": "\"ZOMBIES FROM OUTER SPACE\"",
+  "credits_text": "MARTIN FELDMEYER \"FEAR-U-VU PRODUCTION\" JEFF CONGAS \"STEPHEN FOSTER\" FLORIA KIM \"BEVERLY BLISS\" THE METERS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SIE KOMMEN NICHT IN TRIEDEN! COLOR DYNAMITE RUMBLE",
+  "mood": [
+    "camp",
+    "sci-fi",
+    "horror",
+    "retro",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Vintage movie poster featuring a large zombie creature and two people, with bold green and red text advertising \"Zombies from Outer Space.\""
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "The Frankenstein Monster Project",
+  "credits_text": "Nothing in the Light Films presents BRANCA DRACULA, RACHEL O'CONNOR, JEFF JENNER, JENNIFER JACOBS, GINGER KOCH, KIRSTEN TEMPLE and STEVEN CLAUS. Directed by STEVEN AGUILERA.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "In October of 1894 three students disappeared in the woods near Transylvania, Romania while shooting a documentary. A year later their footage was found.",
+  "mood": [
+    "gothic",
+    "mystery",
+    "historical",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "historical",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A black-and-white poster features three individuals in early 20th-century attire, with one holding a vintage camera, set against a dark forest backdrop."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "LEGEND OF THE BOG",
+  "credits_text": "VINNIE JONES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BODIES BURIED FOR ETERNITY... UNTIL NOW",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller",
+    "mystery",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests themes of violence and horror, with a man holding a gun and skulls in the background.",
+  "description": "A man holds a gun with a serious expression, set against a dark, eerie forest with hanging skulls."
+}

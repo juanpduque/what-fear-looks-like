@@ -1,0 +1,44 @@
+{
+  "title_text": "THE VAMPIRE CONSPIRACY",
+  "credits_text": "The Women Are Digital but the Sex is Real!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "erotic",
+    "horror",
+    "camp",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "vampire",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.8,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and sexual content.",
+  "description": "A dramatic poster features a woman with blonde hair and another with dark hair, one showing bite marks and blood, with a syringe in the background."
+}

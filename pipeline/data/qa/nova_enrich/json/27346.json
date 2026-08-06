@@ -1,0 +1,41 @@
+{
+  "title_text": "MANIAC",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "I",
+  "mood": [
+    "horror",
+    "psychological",
+    "disturbing",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.95
+    },
+    {
+      "name": "violence",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 1.0,
+  "violence": 1.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; may be disturbing to some viewers.",
+  "description": "A man holds a severed blonde hair and a knife, standing in a pool of blood, with the title 'MANIAC' prominently displayed."
+}

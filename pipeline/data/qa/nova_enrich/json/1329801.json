@@ -1,0 +1,43 @@
+{
+  "title_text": "LANDLORD",
+  "credits_text": "A FILM BY REMINGTON SMITH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "VAMPIRE-OWNED SINCE 1902\nCOMING SOON\nLANDLORDFILM.COM",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "paranormal",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.6,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster features a large, menacing face with red eyes and fangs, two small silhouettes in front of a building, and promotional text."
+}

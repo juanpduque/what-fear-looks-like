@@ -1,0 +1,43 @@
+{
+  "title_text": "YARASALARIN İSTİLASI",
+  "credits_text": "ARS YAPIM VE TUĞÇA ARAS\nERCAN KOÇ, HANDA ARAS, AHMET YILDIR, NESRİN URAL, EKİN AKKAŞ, SENAZ AĞIRBAŞ, SABRİ ELBİNTLİ, EZEL AĞAÇOĞLU, NESLİHAN GÜLÇE, KAŞAR SAHİN, SAHİR BAĞCI, MUHAMET ARSLAN, YALÇIN ÖNER, GANI RÜZGAR SAVATA, NESLİHAN AÇAR",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "BİR GANI RÜZGAR SAVATA FİLMİ\nDEĞİRMEJ",
+  "mood": [
+    "dramatic",
+    "intense",
+    "gritty",
+    "action",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "rain",
+      "conf": 0.9
+    },
+    {
+      "name": "moon",
+      "conf": 0.7
+    },
+    {
+      "name": "storm",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A gritty poster shows a man in a stormy setting with dramatic lighting, suggesting an intense survival or action theme."
+}

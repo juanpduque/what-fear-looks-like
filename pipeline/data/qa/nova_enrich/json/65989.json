@@ -1,0 +1,43 @@
+{
+  "title_text": "COLD SWEAT",
+  "credits_text": "A Film by Adrian Gar-Cra Bogliano",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ANY DROP COULD BE YOUR LAST",
+  "mood": [
+    "horror",
+    "thriller",
+    "psychological",
+    "intense",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic blood and suggestive imagery.",
+  "description": "Poster features a screaming face with dripping blood, flanked by two intense faces and a partially visible body, evoking horror and thriller themes."
+}

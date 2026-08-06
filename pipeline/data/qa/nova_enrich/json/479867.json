@@ -1,0 +1,40 @@
+{
+  "title_text": "NIGHTWALKERS",
+  "credits_text": "Featuring Horror Scream Queen Dave Steim",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PUMPKIN HOLLOW",
+  "mood": [
+    "horror",
+    "camp",
+    "gothic",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A horror movie poster featuring a woman with dark makeup and a green-skinned creature, with smoky background and bold red title."
+}

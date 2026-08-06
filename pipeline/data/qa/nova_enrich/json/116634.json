@@ -1,0 +1,37 @@
+{
+  "title_text": "鬼話さかし",
+  "credits_text": "原作・脚本・監督：宮崎雅文\n主演：三上博史",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "「おばけがし」の映画化です。",
+  "mood": [
+    "mystery",
+    "psychological",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring a group of people with a central female figure, set against a dark red background, suggesting a psychological thriller."
+}

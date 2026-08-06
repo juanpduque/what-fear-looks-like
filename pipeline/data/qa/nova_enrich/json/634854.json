@@ -1,0 +1,43 @@
+{
+  "title_text": "Gryphon Animó",
+  "credits_text": "A film about will",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ATLANTA Film Festival 2019, VOID, WINNER RSFFAC AWARD, THE MACACS FILMS 2020",
+  "mood": [
+    "fantasy",
+    "adventure",
+    "mystery",
+    "sci-fi",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.5
+    },
+    {
+      "name": "house",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 0.2,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "The poster shows a lone figure atop a stone structure, overlooking a dark, eerie landscape with a large, moon-like face in the sky."
+}

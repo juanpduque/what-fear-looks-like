@@ -1,0 +1,47 @@
+{
+  "title_text": "鬼玩人",
+  "credits_text": "GHOST CARRIER'S",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "2017.1.6 上映",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "psychological",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and horror themes.",
+  "description": "A poster shows a distressed woman with blood on her face, held by a shadowy figure, with a worried man in the background."
+}

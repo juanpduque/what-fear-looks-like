@@ -1,0 +1,35 @@
+{
+  "title_text": "RUN, GIRL, RUN!",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A STANDARD DEFINITION FILM",
+  "mood": [
+    "action",
+    "thriller",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the weapon and action-oriented imagery.",
+  "description": "The poster features two individuals, one holding a rifle, with a house in the background and the title 'RUN, GIRL, RUN!' prominently displayed."
+}

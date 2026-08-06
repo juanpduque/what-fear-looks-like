@@ -1,0 +1,46 @@
+{
+  "title_text": "AMITYVILLE HEX",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horrific",
+    "sci-fi",
+    "dystopian",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "technology",
+      "conf": 0.85
+    },
+    {
+      "name": "horror",
+      "conf": 0.8
+    },
+    {
+      "name": "cyborg",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains intense horror themes and mild violent imagery.",
+  "description": "A poster featuring a cyborg with a screaming face, surrounded by intricate mechanical wires and red lighting, evoking a sci-fi horror atmosphere."
+}

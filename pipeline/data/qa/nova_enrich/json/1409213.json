@@ -1,0 +1,46 @@
+{
+  "title_text": "CROTH 2",
+  "credits_text": "directed by Siade Wilson\nAHMET KARTAL WILLIAM CONNOR ANGELA DEL REINO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "romantic",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including blood and a skull motif.",
+  "description": "A man with long hair embraces a woman with a skull face, set against a fiery red background. The title 'CROTH 2' is prominently displayed."
+}

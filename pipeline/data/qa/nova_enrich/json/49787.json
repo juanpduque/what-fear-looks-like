@@ -1,0 +1,35 @@
+{
+  "title_text": "THE REEF",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "dangerous",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "shark",
+      "conf": 0.95
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.95,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts a threatening shark and a person in distress, suggesting potential violence.",
+  "description": "A person swims in the ocean with a large shark fin visible behind them, creating a tense and dangerous atmosphere."
+}

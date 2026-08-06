@@ -1,0 +1,45 @@
+{
+  "title_text": "WYRMWOOD",
+  "credits_text": "FUNT ROAST OF THE WALKING DEAD!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TV COMING SOON",
+  "mood": [
+    "post-apocalyptic",
+    "gritty",
+    "humorous",
+    "survival",
+    "dystopian"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.9
+    },
+    {
+      "name": "crisis",
+      "conf": 0.7
+    },
+    {
+      "name": "survival",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild violent themes suggested by post-apocalyptic setting.",
+  "description": "A poster shows a man in protective gear and a woman in a cage, with bold red text reading 'Wyrmwood TV' and 'Coming Soon.'"
+}

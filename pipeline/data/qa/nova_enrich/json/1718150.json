@@ -1,0 +1,42 @@
+{
+  "title_text": "CURFEW",
+  "credits_text": "DIRECTED BY JULIAN MEANS\nSTARRING ALEVIS VANLEUVEN SYDNEY LOVERING CHUCK GRIFFITH KATIE GRIFFITH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IS THIS CREATURE REAL?\nCREATURE SIGHTINGS IN COLDBROOK!\nATTENTION PLEASE STAY OUT OF THE WOODS\nTOWN CURFEW AT 9:00PM UNTIL FURTHER NOTICE\nTHE COLDBROOK TIMES\nBOOK AN AD!\nOn May 10th, residents of Coldbrook reported seeing a strange creature in the woods. Some say they have seen it more than once. A local school bell rings at dusk to signal when the streets are safe to travel. A curfew has been imposed. The creature is said to attack anyone who defies the rules.",
+  "mood": [
+    "suspense",
+    "horror",
+    "mystery",
+    "anxiety"
+  ],
+  "fear_labels": [
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.1,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A vintage-style poster advertises a movie titled 'Curfew,' featuring a shadowy creature and urgent warnings about staying out of the woods after dark."
+}

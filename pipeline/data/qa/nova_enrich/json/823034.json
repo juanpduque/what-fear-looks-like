@@ -1,0 +1,41 @@
+{
+  "title_text": "SCHIZOPHRENIC",
+  "credits_text": "I love trouble... I stranger...",
+  "languages": [
+    "en"
+  ],
+  "other_text": "7 tracks",
+  "mood": [
+    "dread",
+    "psychological",
+    "thriller",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A poster for the film 'Schizophrenic' featuring a knife, blood splatters, and a shadowy figure against a dark background."
+}

@@ -1,0 +1,37 @@
+{
+  "title_text": "BEWARE THE LAKE",
+  "credits_text": "ANJA KNEBEL AUDREY WALTERS and JONATHAN LIPNICKI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THERE ARE SECRETS IN THE WATER",
+  "mood": [
+    "eerie",
+    "mysterious",
+    "haunting",
+    "thriller",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "nudity"
+  ],
+  "moderation_notes": "Mild partial nudity visible in the poster.",
+  "description": "A woman in a white bikini stands underwater surrounded by skulls, with ominous text warning of secrets in the water."
+}

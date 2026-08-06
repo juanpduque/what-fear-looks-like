@@ -1,0 +1,40 @@
+{
+  "title_text": "RAZORTOOTH",
+  "credits_text": "FROM A PRODUCER OF THE DEVIL'S REJECTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "water",
+      "conf": 0.85
+    },
+    {
+      "name": "violence",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains intense action and implied violence.",
+  "description": "A man struggles against a large, sharp-toothed creature in turbulent water, with dramatic, suspenseful imagery."
+}

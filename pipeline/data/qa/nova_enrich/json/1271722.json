@@ -1,0 +1,50 @@
+{
+  "title_text": "ウルラの正面",
+  "credits_text": "相本:日本学子 署:三也安子 / 署引:安子張人",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "日本の顔片には、あることがある。これは、これを見てみてください。",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "supernatural",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and disturbing imagery.",
+  "description": "A poster shows a terrified face with blood and hands gripping it, alongside children in a dark setting, suggesting horror themes."
+}

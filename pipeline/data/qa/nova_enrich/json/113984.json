@@ -1,0 +1,44 @@
+{
+  "title_text": "LIZARD BOY",
+  "credits_text": "That thing is my son!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "horror",
+    "fantasy",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "text",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.3,
+  "animal": 0.9,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense horror imagery with a monstrous creature and implied violence.",
+  "description": "A poster features a menacing lizard-like creature with sharp teeth and claws, with the text 'That thing is my son!' and the title 'LIZARD BOY' prominently displayed."
+}

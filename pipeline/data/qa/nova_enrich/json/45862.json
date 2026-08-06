@@ -1,0 +1,42 @@
+{
+  "title_text": "HANGMAN'S CURSE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "suspenseful",
+    "haunting",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "noose",
+      "conf": 0.8
+    },
+    {
+      "name": "haunting",
+      "conf": 0.7
+    },
+    {
+      "name": "gothic",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A shadowy figure runs down a dimly lit hallway towards a noose, with a large building in the background under a greenish hue."
+}

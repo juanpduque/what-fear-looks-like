@@ -1,0 +1,39 @@
+{
+  "title_text": "THE MAN WITH THE SYNTHETIC BRAIN",
+  "credits_text": "starring JOHN CARRADINE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "sci-fi",
+    "thriller",
+    "psychological",
+    "suspense",
+    "dystopia"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic poster features a man with a synthetic brain device, a woman in distress, and a man holding a gun, suggesting a sci-fi thriller."
+}

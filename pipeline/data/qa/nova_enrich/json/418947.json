@@ -1,0 +1,46 @@
+{
+  "title_text": "THE BIG F",
+  "credits_text": "SQUATCH OUT, MAN!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "action",
+    "thriller",
+    "survival",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "forest",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.9,
+  "person": 0.3,
+  "animal": 0.1,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster features a snowy forest scene with a monstrous creature and bold red text reading 'THE BIG F' and 'SQUATCH OUT, MAN!'"
+}

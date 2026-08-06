@@ -1,0 +1,41 @@
+{
+  "title_text": "KRACKERS",
+  "credits_text": "TARA SHIKMEY MAE BURRUS MILES MCLEOD JENNA HOFFMAN WRITTEN AND DIRECTED BY ERIC SHIKMEY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE SADIST OF PENNSYLVANIA MAN'S ESCAPE BY THE TOWN YOU'LL INFECT IT TO TELL ITS TRUE BURN!",
+  "mood": [
+    "horror",
+    "thriller",
+    "psychological",
+    "disturbing",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "horror",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.4,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and disturbing imagery.",
+  "description": "A horror movie poster featuring four individuals with intense expressions, set against a cracked background, with bold red and black typography."
+}

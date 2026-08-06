@@ -1,0 +1,39 @@
+{
+  "title_text": "RAVING MANIACS",
+  "credits_text": "Patrick Cohen Emily Morettini Richard Griffin",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Their ECSTASY is your AGONY",
+  "mood": [
+    "intense",
+    "disturbing",
+    "psychological",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster features a man with a skull mask holding pills, with a club scene in the background and tagline text."
+}

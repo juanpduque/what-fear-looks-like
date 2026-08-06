@@ -1,0 +1,44 @@
+{
+  "title_text": "PHOBIA",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horrific",
+    "disturbing",
+    "anxiety-inducing"
+  ],
+  "fear_labels": [
+    {
+      "name": "spiders",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "horror",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.95,
+  "blood_gore": 0.85,
+  "violence": 0.75,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of spiders and blood, potentially disturbing to some viewers.",
+  "description": "A close-up of a terrified face with spiders crawling around the eyes and blood, accompanied by the title 'PHOBIA'."
+}

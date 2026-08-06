@@ -1,0 +1,43 @@
+{
+  "title_text": "BEHIND YOU 2",
+  "credits_text": "TAMA PRAMUDYA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IMAX",
+  "mood": [
+    "eerie",
+    "haunting",
+    "gothic",
+    "mysterious",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "haunted",
+      "conf": 0.85
+    },
+    {
+      "name": "shadow",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows three children in a dimly lit, red-hued room with a ghostly figure behind them, suggesting a horror theme."
+}

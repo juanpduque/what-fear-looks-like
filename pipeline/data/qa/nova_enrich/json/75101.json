@@ -1,0 +1,42 @@
+{
+  "title_text": "REDVICTORIA",
+  "credits_text": "ARIANNE MARTIN ANTHONY BROWNRIGG EDWARD LANDERS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "a movie of horrific proportions\nFinding your muse, can be murder.",
+  "mood": [
+    "gothic",
+    "erotic",
+    "horror",
+    "dramatic",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "eye",
+      "conf": 0.9
+    },
+    {
+      "name": "heart",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "sexual",
+    "violence"
+  ],
+  "moderation_notes": "Contains suggestive imagery and mild violent hints.",
+  "description": "A woman holds a pen with an eye on it near her chest, featuring a heart mark and red lace detailing, with a dramatic and horror-themed poster design."
+}

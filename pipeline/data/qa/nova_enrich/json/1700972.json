@@ -1,0 +1,49 @@
+{
+  "title_text": "DON'T BULLY ME",
+  "credits_text": "BADEA PRODUCTION PRESENTS A FILM BY PHEARIN SUM \"DON'T BULLY ME\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "28.05.2026",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "eerie",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "scythe",
+      "conf": 0.7
+    },
+    {
+      "name": "spiders",
+      "conf": 0.6
+    },
+    {
+      "name": "candle",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.6,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and spooky themes.",
+  "description": "A hooded figure holding a scythe stands in a dimly lit, eerie corridor surrounded by candles and spiders, with a release date displayed."
+}

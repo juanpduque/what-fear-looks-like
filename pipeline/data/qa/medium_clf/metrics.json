@@ -1,0 +1,71 @@
+{
+  "n_labeled_usable": 292,
+  "n_missing_emb": 3,
+  "missing_emb_ids": [
+    337937,
+    959307,
+    993119
+  ],
+  "train_size": 219,
+  "test_size": 0.25,
+  "train_seconds": 0.092,
+  "macro_f1_test": 0.4851877952653146,
+  "report": {
+    "painted": {
+      "precision": 0.6444444444444445,
+      "recall": 0.7073170731707317,
+      "f1-score": 0.6744186046511628,
+      "support": 41.0
+    },
+    "photo": {
+      "precision": 0.5714285714285714,
+      "recall": 0.42105263157894735,
+      "f1-score": 0.48484848484848486,
+      "support": 19.0
+    },
+    "composite": {
+      "precision": 0.2857142857142857,
+      "recall": 0.3076923076923077,
+      "f1-score": 0.2962962962962963,
+      "support": 13.0
+    },
+    "accuracy": 0.5616438356164384,
+    "macro avg": {
+      "precision": 0.5005291005291005,
+      "recall": 0.4786873374806622,
+      "f1-score": 0.4851877952653146,
+      "support": 73.0
+    },
+    "weighted avg": {
+      "precision": 0.5615568601869971,
+      "recall": 0.5616438356164384,
+      "f1-score": 0.5577415870502841,
+      "support": 73.0
+    }
+  },
+  "confusion_matrix": [
+    [
+      29,
+      5,
+      7
+    ],
+    [
+      8,
+      8,
+      3
+    ],
+    [
+      8,
+      1,
+      4
+    ]
+  ],
+  "classes": [
+    "painted",
+    "photo",
+    "composite"
+  ],
+  "model": "clip512_logreg_balanced",
+  "seed": 42,
+  "C": 2.0
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "HIS NAME WAS JASON",
+  "credits_text": "A DAVE BROWN FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A FRIDAY THE 13TH FAN FILM",
+  "mood": [
+    "dread",
+    "terror",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "eye",
+      "conf": 0.85
+    },
+    {
+      "name": "horror",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains horror elements and implied violence.",
+  "description": "A poster shows a torn burlap texture with a single, eerie eye peering through a hole, introducing a fan film titled 'His Name Was Jason.'"
+}

@@ -1,0 +1,48 @@
+{
+  "title_text": "VOODOO SWAMP",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "GUNGA DEN COLOR FULLSCREEN MONO 70 MINUTES",
+  "mood": [
+    "horror",
+    "camp",
+    "supernatural",
+    "thriller",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    },
+    {
+      "name": "forest",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, occult themes, and partial nudity.",
+  "description": "A collage-style poster for 'Voodoo Swamp' features various intense scenes including a man in a suit, a woman, and graphic violence, suggesting a horror theme."
+}

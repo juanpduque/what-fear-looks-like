@@ -1,0 +1,38 @@
+{
+  "title_text": "OUT OF BOUNDS",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "other_text": "ILS NE DEVAIENT PAS ÉTRE ICI... DISPONIBLE LE 29 JUILLET SUR YOUTUBE",
+  "mood": [
+    "dread",
+    "suspense",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, eerie poster features a ghostly, translucent figure with a fractured appearance, set against a shadowy background, suggesting a supernatural horror theme."
+}

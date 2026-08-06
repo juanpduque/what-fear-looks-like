@@ -1,0 +1,47 @@
+{
+  "title_text": "CURSE OF KASHIMA",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "高気屋席主引歌为いちゃんの大屋席です。",
+  "mood": [
+    "dread",
+    "horror",
+    "gothic",
+    "gritty",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, depicting a monstrous, decayed figure.",
+  "description": "A decayed, monstrous figure crawls on a desolate street at night, with blood splatters and eerie lighting."
+}

@@ -1,0 +1,36 @@
+{
+  "title_text": "JERSEY SHORE SHARK ATTACK",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "camp",
+    "humor",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "shark",
+      "conf": 0.95
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.95,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violent threat from sharks; mild sexual suggestion from woman's attire.",
+  "description": "A woman lounges on an inflatable float above a large shark in a poster titled 'Jersey Shore Shark Attack.'"
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "VICTIM NO MORE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "They were warned... They were doomed. But on this Friday the 13th... The Body Count Must End. A 40 year reign of terror. FALL 2020",
+  "mood": [
+    "dread",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood imagery.",
+  "description": "A dark poster features a shadowy figure holding a weapon, with text about ending a reign of terror on Friday the 13th."
+}

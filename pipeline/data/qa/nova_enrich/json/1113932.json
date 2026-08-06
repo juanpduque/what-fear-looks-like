@@ -1,0 +1,39 @@
+{
+  "title_text": "海象",
+  "credits_text": "The Sea Monster",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "action",
+    "fantasy"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "sea",
+      "conf": 0.9
+    },
+    {
+      "name": "danger",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and monster violence.",
+  "description": "A dramatic poster shows a monstrous sea creature attacking a ship, with a lone figure defending against the threat amidst turbulent waters."
+}

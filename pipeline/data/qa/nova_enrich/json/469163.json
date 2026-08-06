@@ -1,0 +1,43 @@
+{
+  "title_text": "HELP ME",
+  "credits_text": "JULIET ROSS\nLAURA LEE JACKSON AS LENA\nJAMES CARTER AS TOM\nJULIET ROSS AS AGNES\nJULIET ROSS PRODUCTIONS\nPRESENT A JULIET ROSS FILM\nWRITTEN AND DIRECTED BY JULIET ROSS\nA JULIET ROSS PRODUCTION\nIN ASSOCIATION WITH SPARK HOUSE FILMS\nAND THE SALEM FILM FESTIVAL\n2017",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "haunting",
+    "psychological",
+    "disturbing",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A black-and-white poster features three figures: a woman, an old woman, and a person lying down, with the bold text \"HELP ME\" at the bottom."
+}

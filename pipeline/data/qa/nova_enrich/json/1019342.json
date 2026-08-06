@@ -1,0 +1,42 @@
+{
+  "title_text": "THE MERMAID",
+  "credits_text": "YONI KEYMAN ASHLEY BELOAT HAYLEY SEAT AI ALEX MAGANA FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ALM PICTURE",
+  "mood": [
+    "horror",
+    "thriller",
+    "fantasy",
+    "dystopia",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster features a disturbing mermaid with sharp teeth, suggesting potential horror themes.",
+  "description": "A woman with sharp teeth and a fierce expression emerges from a pool, with the title 'The Mermaid' prominently displayed."
+}

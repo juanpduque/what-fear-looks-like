@@ -1,0 +1,41 @@
+{
+  "title_text": "Blood Of Drago",
+  "credits_text": "BRY LAMBERT ALI ROQUEJOME JOHNSON DENA DEJOURNE BRICLEEN HART WHITE IVARS VOLETTE CLINT JOHNSON VITA VINCENT LUNA PRODUCED BY LORER BRONDMAN WRITTEN BY TRUT-SON HOLIDAY WILL ETHER & RUDY CABRAL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IN HIS QUEST FOR REVENGE, LUKA BECOMES A RELUCTANT SAVIOR",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.4,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood; suitable for mature audiences.",
+  "description": "A dark poster features a shadowy figure with intense eyes and a dramatic red title, suggesting a gothic horror theme."
+}

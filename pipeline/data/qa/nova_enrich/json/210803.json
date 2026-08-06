@@ -1,0 +1,42 @@
+{
+  "title_text": "วัวซุ่มป่า",
+  "credits_text": "",
+  "languages": [
+    "th"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "foreboding",
+    "survival",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A group of people stands in front of a large, menacing figure in a forest setting, evoking tension and survival themes."
+}

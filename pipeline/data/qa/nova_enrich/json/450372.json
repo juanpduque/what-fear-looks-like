@@ -1,0 +1,46 @@
+{
+  "title_text": "Worst Teens",
+  "credits_text": "From the Legendary creator of Witchboard, House of Freaks, Satan's Slave & Terror David McGillivray's",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Are you prepared to face yours?",
+  "mood": [
+    "gothic",
+    "horror",
+    "camp",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult themes and mild violent imagery.",
+  "description": "A collage-style poster features multiple characters in eerie poses, with a central figure in formal attire holding a cane, set against a dark, horror-themed background."
+}

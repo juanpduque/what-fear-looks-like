@@ -1,0 +1,45 @@
+{
+  "title_text": "武幕死魔音電55",
+  "credits_text": "武幕死魔音電55",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "結影影子就は人でなく、子女の死体です！",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A man in a lab coat examines a coffin with a pinned corpse inside, featuring Japanese text and a DVD label."
+}

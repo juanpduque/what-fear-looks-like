@@ -1,0 +1,33 @@
+{
+  "title_text": "HIGHWAY TO HELL",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NOT ALL PSYCHOPATHS ARE CREATED EQUAL",
+  "mood": [
+    "dread",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A shadowy figure stands on a dark road holding a hook, with a car light in the background and bold title text."
+}

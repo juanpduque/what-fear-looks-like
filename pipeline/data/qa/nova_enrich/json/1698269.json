@@ -1,0 +1,42 @@
+{
+  "title_text": "CARNE DELLA MIA CARNE",
+  "credits_text": "DARIO ARGENTO PRESENTA\nEMMEGI PRODUCTION\nGABRIELE ALTOBELLI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "violent",
+    "gory",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intended for mature audiences.",
+  "description": "A poster shows a woman with long black hair, blood dripping from her mouth and face, suggesting a violent or horror theme."
+}

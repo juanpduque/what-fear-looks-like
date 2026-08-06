@@ -1,0 +1,44 @@
+{
+  "title_text": "武女小電僖3",
+  "credits_text": "被影 石大洗集影系 (TVトネション・プルレイトライト2013「被影」)",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "設えの前、武女小電は影されるけど、影されないけど、影されるようにあるけど、影されないようにある。",
+  "mood": [
+    "gothic",
+    "dread",
+    "psychological",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A DVD cover features a masked figure holding a knife, with Japanese text overlay indicating a horror theme."
+}

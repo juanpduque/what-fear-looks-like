@@ -1,0 +1,43 @@
+{
+  "title_text": "HORROR CASTLE",
+  "credits_text": "WOMEN'S VIRTUES MADE HIM A KILLER! STARRING ROSSANA PODESTA GEORGE RIVIERE CHRISTOPHER LEE Directed by: ANTHONY DAWSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MARCO VICARIO presents:",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "mystery",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "castle",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic poster features a monstrous figure looming over a castle with bold red and black colors and dramatic text."
+}

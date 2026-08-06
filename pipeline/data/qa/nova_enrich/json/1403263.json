@@ -1,0 +1,36 @@
+{
+  "title_text": "REROUTING...",
+  "credits_text": "DIRECTED BY DANIEL CIMINI & KEVIN SAVO\nKEVIN SAVO SCOTT HAGOOD OLIVIA JANE MARCUS 'RAGEN' GREEN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THINK BEFORE REQUESTING A RIDE.",
+  "mood": [
+    "thriller",
+    "suspense",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A poster shows a bloody arm emerging from a car with a cracked phone and the title 'Rerouting...' and a warning tagline."
+}

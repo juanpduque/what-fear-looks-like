@@ -1,0 +1,36 @@
+{
+  "title_text": "蟑螂",
+  "credits_text": "中文影片",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "百発万発映画社 昭和49年",
+  "mood": [
+    "dread",
+    "erotic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.7,
+  "sensitive": [
+    "sexual",
+    "violence"
+  ],
+  "moderation_notes": "Contains implied sexual content and disturbing imagery of creatures.",
+  "description": "A poster features a distressed woman with large, crawling creatures on her chest against a torn background."
+}

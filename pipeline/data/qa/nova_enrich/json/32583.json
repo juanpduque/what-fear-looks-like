@@ -1,0 +1,46 @@
+{
+  "title_text": "ZOMBIE TOWN",
+  "credits_text": "THERE'S NO PLACE LIKE HOME",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "apocalyptic",
+    "desolate",
+    "survival",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.95,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and gore through the depiction of a zombie and an axe.",
+  "description": "A decayed zombie stands holding an axe in a desolate town with dilapidated buildings under an overcast sky."
+}

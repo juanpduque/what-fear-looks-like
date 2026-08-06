@@ -1,0 +1,46 @@
+{
+  "title_text": "REVENGE IN THE HOUSE OF LISHER",
+  "credits_text": "DIRECTED BY JESUS FRANCO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BLACK HOUSE",
+  "mood": [
+    "gothic",
+    "horror",
+    "psychological",
+    "dread",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.5,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "erotic"
+  ],
+  "moderation_notes": "Contains mild violence and suggestive imagery.",
+  "description": "A horror poster features a distressed woman, a armored figure, and a bloody scene, suggesting a gothic revenge thriller."
+}

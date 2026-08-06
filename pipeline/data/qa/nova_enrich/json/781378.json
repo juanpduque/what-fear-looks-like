@@ -1,0 +1,42 @@
+{
+  "title_text": "HIS NAME'S CLOWNFACE",
+  "credits_text": "SAM QUAGLIANA, SAMANTHA HOFF\n\nMUSIC BY LILERIA\nCASTING CONSULTANT: SUSAN WOLAN\nFILMED & EDITED BY: CHRIS HOFF\nEXECUTIVE PRODUCERS: ALLE HOFF, MATER, JOHN WOLAN\nPRODUCER: NICOLE SPEER\nWRITERS: SAMANTHA HOFF, SAM QUAGLIANA\nMUSICAL DIRECTOR: JASON BALL\nROB BECK\n\nMUSICAL CONSULTANT: PATRICIA WOLAN\nA FILMETTE BY: CHRIS HOFF\nPRODUCTION DESIGN: JENNIFER WAKEMAN\nMAKE UP ARTIST: I. BARKS\n\nWRITTEN AND DIRECTED BY: CHRIS HOFF",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FURTHER PRODUCTIONS PRESENTS",
+  "mood": [
+    "horror",
+    "thriller",
+    "psychological",
+    "disturbing",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and disturbing imagery.",
+  "description": "A poster features a man in a clown mask holding a weapon, with bold red and black text reading 'His Name's Clownface.'"
+}

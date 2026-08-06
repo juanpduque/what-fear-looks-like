@@ -1,0 +1,38 @@
+{
+  "title_text": "GO TO SLEEP.",
+  "credits_text": "CHRIS VANDER KAAY \"GO TO SLEEP\" KATHLEEN KILLIAN FERNANDEZ, DAN SCULLY, EVAN SAN MARTIN. PRODUCED BY CHRIS VANDER KAAY & STEVEN ESPINOZA. WRITTEN BY CHRIS VANDER KAAY & STEVEN ESPINOZA. DIRECTED BY STEVEN ESPINOZA.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "While I was asleep, my security camera caught this. What do I do?",
+  "mood": [
+    "suspense",
+    "thriller",
+    "mystery",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "security_camera",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster showing a shadowy figure behind a red-lit door with blinds, suggesting a suspenseful or horror theme."
+}

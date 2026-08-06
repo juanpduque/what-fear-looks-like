@@ -1,0 +1,46 @@
+{
+  "title_text": "PARADISE LOST",
+  "credits_text": "A FILM BY LABROS KORBOLEMIS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "surreal",
+    "disturbing",
+    "grotesque",
+    "fantasy",
+    "nightmarish"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "grotesque",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.1,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains disturbing and grotesque imagery that may be unsettling to some viewers.",
+  "description": "The poster features surreal, grotesque creatures with exaggerated facial features against a vibrant red background, with bold title text at the bottom."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "JEFFERSON",
+  "credits_text": "This July 4th will be your last.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CRYPT PRESENT",
+  "mood": [
+    "horror",
+    "thriller",
+    "violent",
+    "disturbing",
+    "gory"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A man with a distressed face stands in front of an American flag with splattered blood and the title 'JEFFERSON' above him."
+}

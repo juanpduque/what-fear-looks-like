@@ -1,0 +1,46 @@
+{
+  "title_text": "WHERE THE DEVIL DWELLS",
+  "credits_text": "WALTER PENA DAVID O'HARA ANTHONY LEET ALBEN RABEN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOU FEAR WHAT IS ALREADY INSIDE YOU",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "supernatural",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and intense psychological themes.",
+  "description": "A dark poster features a close-up of a man's face with a fiery, blood-like shape above it, accompanied by bold title text and credits."
+}

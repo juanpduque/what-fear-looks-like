@@ -1,0 +1,41 @@
+{
+  "title_text": "Das Verlangen der Maria D",
+  "credits_text": "Resthauer Menschlichkeit",
+  "languages": [
+    "de"
+  ],
+  "other_text": "ein double feature von Marion Doko",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult imagery and implied violence.",
+  "description": "A gothic poster features a central skull with candles, surrounded by eerie figures and abstract shapes, suggesting a dark, surreal theme."
+}

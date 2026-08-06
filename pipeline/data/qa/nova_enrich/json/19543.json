@@ -1,0 +1,35 @@
+{
+  "title_text": "ANACONDAS: TRAIL OF BLOOD",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.9,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and threat of danger from large snakes.",
+  "description": "Poster shows three people in a jungle setting, with a large green anaconda in the background. The title 'Anacondas: Trail of Blood' is prominently displayed at the top."
+}

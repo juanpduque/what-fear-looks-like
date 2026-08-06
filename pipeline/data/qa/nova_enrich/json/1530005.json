@@ -1,0 +1,46 @@
+{
+  "title_text": "ROTTEN HAND",
+  "credits_text": "A FILM BY VINICIUS J. SANTOS\nSpecial Appearances PATTY FANG PETTER BAIESTORE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DANILO ROGEL MICHELLE PALMA MAYCON GUEDES GUILHERME MENDICELLI JÚLIO SANTOS MELKIDES DINIZ TOM GOMES JOICE REIS NATALIA SILVEIRA",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "supernatural",
+    "gritty"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including blood and a monstrous hand.",
+  "description": "A poster featuring a decaying, green hand with smoke rising from it, promoting the film 'Rotten Hand'."
+}

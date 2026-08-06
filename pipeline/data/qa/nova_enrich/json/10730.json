@@ -1,0 +1,38 @@
+{
+  "title_text": "King Kong",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "adventure",
+    "fantasy",
+    "drama",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "helicopter",
+      "conf": 0.7
+    },
+    {
+      "name": "explosion",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 1.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A giant gorilla stands on a skyscraper, holding debris, with helicopters and a cityscape in the background."
+}

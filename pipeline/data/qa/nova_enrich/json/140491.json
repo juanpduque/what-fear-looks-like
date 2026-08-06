@@ -1,0 +1,45 @@
+{
+  "title_text": "ALIENATE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "sci-fi",
+    "thriller",
+    "dystopia",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "explosion",
+      "conf": 0.85
+    },
+    {
+      "name": "cityscape",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.3,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action sequences and explosions, but no explicit gore or sexual content.",
+  "description": "A soldier aims a rifle from a helicopter over a city under attack, with explosions and aircraft in the background."
+}

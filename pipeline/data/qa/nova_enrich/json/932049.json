@@ -1,0 +1,39 @@
+{
+  "title_text": "КОБЗАР 2015",
+  "credits_text": "ФІЛЬМ СТВОРЕНО ЗА ПІДТРИМКУ ДЕРЖАВНОГО АГЕНТСТВА УКРАЇНИ З ПІТАНЬ КІНО НЕБЕСЬКЕЙ УКР АНІМА СТУДІЇ АНІМАЦІЇ \"1933\"",
+  "languages": [
+    "en",
+    "uk"
+  ],
+  "other_text": "",
+  "mood": [
+    "dramatic",
+    "historical",
+    "gothic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "horse",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.5,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.8,
+  "blood_gore": 0.0,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic poster features a dark, intense scene with a large crow, warriors, and a dramatic landscape, promoting the film \"Kobzar 2015\"."
+}

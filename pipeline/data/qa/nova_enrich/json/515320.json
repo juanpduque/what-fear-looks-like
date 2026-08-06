@@ -1,0 +1,43 @@
+{
+  "title_text": "ANIMAL AMONG US",
+  "credits_text": "HOLLOW TREE PRODUCTIONS/ MR. LOU PRODUCTIONS PRESENTS \"ANIMAL AMONG US\" STARRING SCOTT SLATER, LARSA CLYMER, CHRISTINA MOORE, DANIELS, DANIEL CONTRERAS, CHRISTINE ZALL, DONALD CHRYSTIAN, ANTHONY QUINTEREZ, JESSICA HOFFMAN, JOSHUA HOFFMAN, JORDAN QUINN, MICHAEL RUFF, JOSHUA RUFF, MICHAEL RUFF, ZOE KONG, JOSHUA RUFF, JORDAN QUINN, MICHAEL RUFF, JOSHUA RUFF, AMONG YOU SOON PRODUCER JOSHUA RUFF DIRECTED BY JOSHUA RUFF",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THIS IS A STORY ABOUT A MONSTER",
+  "mood": [
+    "dread",
+    "suspense",
+    "horror",
+    "mystery",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.1,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A group of people stand in a dark forest, facing a large, menacing creature with sharp claws and teeth, near a small house."
+}

@@ -1,0 +1,37 @@
+{
+  "title_text": "The Antwerp Killer",
+  "credits_text": "MARITA PRAET PETER BEAUFORT",
+  "languages": [
+    "en",
+    "nl"
+  ],
+  "other_text": "IN EEN FILM VAN LUC VELDEMAN PRODUCTIE LAURA FILM REGIE LUC VELDEMAN FOTOGRAFIE WIM DOLFIJN MUZIEK RUDI VAN RYCK MONTAGE FEZUL CORÇU NET TOEN U DACHT DAT ANTWERPEN VEILIG WAS...",
+  "mood": [
+    "intense",
+    "thriller",
+    "action",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and weapon imagery.",
+  "description": "A dramatic poster features a man holding a gun, with a cityscape in the background and bold red text reading 'The Antwerp Killer.'"
+}

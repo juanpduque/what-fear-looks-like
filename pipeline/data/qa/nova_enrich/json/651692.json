@@ -1,0 +1,45 @@
+{
+  "title_text": "VIRTUAL DEATH MATCH",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IN THIS GAME, YOU ONLY GET ONE LIFE",
+  "mood": [
+    "intense",
+    "action",
+    "horror",
+    "sci-fi",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "text",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A man plays a virtual reality game surrounded by ghostly and monstrous figures, with weapons visible in the background."
+}

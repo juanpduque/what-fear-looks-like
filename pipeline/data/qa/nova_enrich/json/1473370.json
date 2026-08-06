@@ -1,0 +1,42 @@
+{
+  "title_text": "ERIE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Not all stories are worth telling.",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "thriller",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "camera",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and a distressed female figure, indicating potential violence and gore.",
+  "description": "A distressed woman with blood on her face is shown with a vintage camera, suggesting a horror or thriller theme."
+}

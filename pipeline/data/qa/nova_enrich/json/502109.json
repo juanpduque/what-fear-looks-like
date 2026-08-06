@@ -1,0 +1,43 @@
+{
+  "title_text": "AIR DISTURBANCE",
+  "credits_text": "FASTEN YOUR SEAT BELT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "suspense",
+    "claustrophobic",
+    "haunting",
+    "uncanny"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.95
+    },
+    {
+      "name": "claustrophobia",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.1,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A ghostly figure stands in an aisle of an airplane with passengers seated, creating a suspenseful and eerie atmosphere."
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "LA LEYENDA DE LAS MOMIAS DE GUANAJUATO",
+  "credits_text": "ANIMA",
+  "languages": [
+    "es"
+  ],
+  "other_text": "PRÓXIMAMENTE",
+  "mood": [
+    "fantasy",
+    "horror",
+    "adventure",
+    "gothic",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "creature",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.4,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror elements and occult themes.",
+  "description": "Poster features animated characters in a dark, eerie setting with skeletal figures and a spooky atmosphere, suggesting a horror-adventure theme."
+}

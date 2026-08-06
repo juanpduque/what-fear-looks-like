@@ -1,0 +1,45 @@
+{
+  "title_text": "ЖАКДА СТРАСТИ",
+  "credits_text": "Анастасия Вертинская Юрий Костяневский Ульяна Малышевская Геннадий Уфлянд Виктор Рохо Владимир Шевченко Юрий Олеша",
+  "languages": [
+    "ru"
+  ],
+  "other_text": "ФИЛЬМ АЛЕКСАНДРА ПРИНОСОВА ПО РОМАНУ ВСЕВОЛОДА ОБОЯ",
+  "mood": [
+    "gothic",
+    "dramatic",
+    "psychological",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "blood"
+  ],
+  "moderation_notes": "Contains a small depiction of blood dripping from a hand, suggesting mild violence.",
+  "description": "A black-and-white poster features a woman in an oval frame with a shadowy figure beside her, blood dripping from a hand, and Russian text above and below."
+}

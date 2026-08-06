@@ -1,0 +1,46 @@
+{
+  "title_text": "THE RAVEN",
+  "credits_text": "EDGAR ALLEN POE'S",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ONCE UPON A MIDNIGHT DREAM",
+  "mood": [
+    "gothic",
+    "dread",
+    "mysterious",
+    "haunting",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "raven",
+      "conf": 0.95
+    },
+    {
+      "name": "gothic",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and violent imagery.",
+  "description": "A dark, gothic poster featuring a raven with a bloodied eye and ornate jewelry, evoking a haunting and eerie atmosphere."
+}

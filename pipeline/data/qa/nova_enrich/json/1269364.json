@@ -1,0 +1,40 @@
+{
+  "title_text": "30年目2012",
+  "credits_text": "最恐恐怖",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "死霊館 判例集",
+  "mood": [
+    "dread",
+    "psychological",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror elements and occult themes.",
+  "description": "A poster featuring a distressed young girl with a ghostly figure and multiple CDs, promoting a horror anthology titled '30年目2012'."
+}

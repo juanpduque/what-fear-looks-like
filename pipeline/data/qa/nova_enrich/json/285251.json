@@ -1,0 +1,39 @@
+{
+  "title_text": "THE EYE OF MENW",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "For those who seek out the dark eye...",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and a monstrous skull face.",
+  "description": "A poster features a large, eerie skull with a single eye and a woman holding a weapon, set against a dark background with bold red text."
+}

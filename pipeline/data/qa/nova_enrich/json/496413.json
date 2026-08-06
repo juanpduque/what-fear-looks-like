@@ -1,0 +1,46 @@
+{
+  "title_text": "CHUDAIL",
+  "credits_text": "PRODUCED & DIRECTED BY J. NEELAM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "KUNWARI",
+  "mood": [
+    "horror",
+    "gothic",
+    "supernatural",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild violent imagery and occult themes.",
+  "description": "A horror movie poster featuring a central ghostly figure with an open mouth, surrounded by intense faces and fiery backgrounds, set against a dark, eerie atmosphere."
+}

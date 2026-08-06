@@ -1,0 +1,44 @@
+{
+  "title_text": "BUTCHERS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BOOK TWO: RAGHORN THE THICK CONTINUUM",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A large axe rests on a tree stump in a dark forest, with text overlay indicating the title and subtitle of a book."
+}

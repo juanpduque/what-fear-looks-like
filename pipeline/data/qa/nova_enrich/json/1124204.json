@@ -1,0 +1,40 @@
+{
+  "title_text": "2ねん目のい",
+  "credits_text": "新傷強正影室",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "不影させないまんをとめて",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "A woman stands defiantly against a shadowy, menacing figure with a mask-like face, set against a dark, textured background."
+}

@@ -1,0 +1,51 @@
+{
+  "title_text": "Night of the Vamp Frías",
+  "credits_text": "VINCENT PRUDENTE PRESENTS MARIA RAZE PRODUCTION A CARYL ZEE STUDIO FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WITH THE STARS OF THE HIT TV SERIES THE VAMPIRE DIARIES",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "supernatural",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "house",
+      "conf": 0.65
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.1,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a skeletal hand reaching from a grave, a looming skull in the background, and a dark, eerie forest under a full moon."
+}

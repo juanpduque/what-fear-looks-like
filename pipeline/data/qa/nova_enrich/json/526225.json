@@ -1,0 +1,49 @@
+{
+  "title_text": "GATES OF DARKNESS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "mysterious",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "cross",
+      "conf": 0.8
+    },
+    {
+      "name": "church",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.3,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and skulls, may be unsettling.",
+  "description": "A gothic poster shows a grand church gate with skulls, fire, and an ominous eye above, titled 'Gates of Darkness.'"
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "NIGHT SILENCE",
+  "credits_text": "A FILM BY BARTOSZ M. KOWALSKI FROM THE DIRECTOR OF PLAYGROUND NOBODY SLEEPS IN THE WOODS TONIGHT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DON'T LET THEM ENTER YOUR DREAMS",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "mysterious",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied horror elements and silhouettes suggesting supernatural threats.",
+  "description": "A poster shows a grand house at dusk with shadowy figures and eerie silhouettes, suggesting a horror theme."
+}

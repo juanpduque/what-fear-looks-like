@@ -1,0 +1,45 @@
+{
+  "title_text": "BOY EATS GIRL",
+  "credits_text": "This zombie loves his girlfriend for her brains.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TELEPHONE",
+  "mood": [
+    "horror",
+    "romantic",
+    "dark humor",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "zombie",
+      "conf": 0.9
+    },
+    {
+      "name": "knife",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent themes and zombie imagery.",
+  "description": "A man sits on a red telephone booth holding a knife and fork, surrounded by zombie hands reaching upward against a dark, moonlit sky."
+}

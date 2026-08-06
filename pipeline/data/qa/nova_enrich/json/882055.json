@@ -1,0 +1,39 @@
+{
+  "title_text": "THE HAUNTED HIGHWAY",
+  "credits_text": "A NIGEL BACH FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BAD BEN 7\nTom has a new job...",
+  "mood": [
+    "haunting",
+    "mystery",
+    "thriller",
+    "dark",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "vehicle",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark poster shows a man driving a car with text overlay 'Tom has a new job...' and the title 'The Haunted Highway.'"
+}

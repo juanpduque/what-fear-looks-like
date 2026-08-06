@@ -1,0 +1,46 @@
+{
+  "title_text": "Last House On Hell Street",
+  "credits_text": "LEAH SCHUMACHER SCHMACK VIRGIN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Where the nightmares of the mind and the flesh collide.",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "surreal",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A poster shows a bloody face with a hammer, a dilapidated house, and stormy skies, suggesting horror and violence."
+}

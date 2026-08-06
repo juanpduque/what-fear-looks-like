@@ -1,0 +1,44 @@
+{
+  "title_text": "OPEN DOWN CRESCENDO",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dramatic",
+    "intense",
+    "mysterious",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.5,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense imagery with fire and skulls, suggesting potential violence.",
+  "description": "A vibrant poster features a group of characters amidst flames, with skulls and a ghostly figure in the background, suggesting a dramatic and intense atmosphere."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "FOLLOW THE WHITE RABBIT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "psychological",
+    "mysterious",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "rabbit",
+      "conf": 0.9
+    },
+    {
+      "name": "knife",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.8,
+  "blood_gore": 0.5,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and graphic elements.",
+  "description": "Poster features four women with a shadowy rabbit figure above them, one holding a knife, with bold red and white text reading 'FOLLOW THE WHITE RABBIT.'"
+}

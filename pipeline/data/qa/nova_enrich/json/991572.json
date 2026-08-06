@@ -1,0 +1,46 @@
+{
+  "title_text": "中心生物",
+  "credits_text": "義山丽不 山果彩 子議地 法繁大 平幻子",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "デーブストリー ビデオ",
+  "mood": [
+    "gothic",
+    "eerie",
+    "haunting",
+    "psychological",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and themes of horror.",
+  "description": "A poster features a shadowy figure in a red dress against a dark red background, with Japanese text and a DVD logo."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "ZOMBIE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BE SAN FRANCISCO",
+  "mood": [
+    "dread",
+    "apocalyptic",
+    "survival",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "biohazard",
+      "conf": 0.8
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic biohazard symbols and implied violence.",
+  "description": "A poster featuring a green gas mask with biohazard symbols and the word ZOMBIE in bold red letters."
+}

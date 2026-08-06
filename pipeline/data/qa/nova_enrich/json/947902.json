@@ -1,0 +1,43 @@
+{
+  "title_text": "DITCHED",
+  "credits_text": "WRITTEN AND DIRECTED BY SLOAN TORRIE\nSIMON VALENTINA JANE WARD, SAMANTHA A. CAMP, JAMES M. HOFFMAN, NICKY L. HOFFMAN, JESSICA L. LARSEN, MICHAEL STEWART\nPRODUCED BY JENNIFER M. LARSEN, MICHAEL STEWART",
+  "languages": [
+    "en"
+  ],
+  "other_text": "READY OR NOT... HERE THEY COME",
+  "mood": [
+    "dread",
+    "suspense",
+    "gothic",
+    "isolated",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A solitary figure stands on a dark road facing a parked van, with tall grass on either side and a shadowy silhouette cast on the ground."
+}

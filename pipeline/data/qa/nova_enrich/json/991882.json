@@ -1,0 +1,46 @@
+{
+  "title_text": "WHAT HAPPENED TO THE OTHERS",
+  "credits_text": "\"SUPER CREEPY\" TRACE THORNTON BLOODY DISASTROUS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AFTER 50 YEARS... FEAR COMES HOME",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "haunting",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "A man with antlers and a young girl stand in front of a lit candle, evoking a gothic, supernatural atmosphere."
+}

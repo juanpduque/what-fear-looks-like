@@ -1,0 +1,38 @@
+{
+  "title_text": "S4",
+  "credits_text": "THE ALIENS ARE COMING...AND THIS TIME, THEY WANT OUR MARINES!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "OUTCAST THEATRE PRODUCTIONS AND MERCENARY FILMS PRESENT",
+  "mood": [
+    "sci-fi",
+    "action",
+    "thriller",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "alien",
+      "conf": 0.9
+    },
+    {
+      "name": "military",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.1,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster for the film S4 featuring bold white text against a dark background with a dramatic tagline about aliens targeting marines."
+}

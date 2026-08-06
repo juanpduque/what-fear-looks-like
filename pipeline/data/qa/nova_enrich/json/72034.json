@@ -1,0 +1,39 @@
+{
+  "title_text": "THE MUMMY'S KISS",
+  "credits_text": "Mia Zottoli APRIL FLOWERS Regina Russell KATIE LOHMANN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BEWARE THESE LIPS!",
+  "mood": [
+    "gothic",
+    "erotic",
+    "horror",
+    "mystical",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.7,
+  "sensitive": [
+    "nudity",
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains partial nudity and suggestive imagery.",
+  "description": "A dramatic poster features a woman with a seductive expression, a monstrous mummy, and partial nudity, suggesting a gothic horror theme."
+}

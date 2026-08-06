@@ -1,0 +1,46 @@
+{
+  "title_text": "ШИНЕ ЯРТОЦИ",
+  "credits_text": "УРАН БУТАЗДИН НАГЗАД",
+  "languages": [
+    "en"
+  ],
+  "other_text": "АИМ ШИТИН КИНО",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "syringe",
+      "conf": 0.8
+    },
+    {
+      "name": "hospital",
+      "conf": 0.7
+    },
+    {
+      "name": "confinement",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and violent imagery.",
+  "description": "A poster shows a person in a wheelchair restrained with blood splatters, a syringe, and a shadowy figure in a hospital corridor."
+}

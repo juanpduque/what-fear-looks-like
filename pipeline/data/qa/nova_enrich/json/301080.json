@@ -1,0 +1,41 @@
+{
+  "title_text": "101ST: A-COMPANY",
+  "credits_text": "GET READY TO RAISE HELL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "action",
+    "war",
+    "dramatic",
+    "historical"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense war imagery and violent themes.",
+  "description": "A soldier holds a gun amidst skulls and flags, with a fiery background, promoting a war-themed action movie."
+}

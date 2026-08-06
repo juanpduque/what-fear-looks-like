@@ -1,0 +1,46 @@
+{
+  "title_text": "ZUHUR CİNN-İ AYİN",
+  "credits_text": "YAZAN & YÖNETEN MERT UZUNMEHMET\nSİNEM YALÇİN EFEKÄN GÜNER SEMA AYDİN ONUR KAYA ZEHRÄ SAÇLI VE BARBAROS ANDIÇ\nONUR KAYA / GÖKMEN ALP ALİ GÜRSÜ APOLLON FILM / YALNIZCA İŞİK YAPIM\nETKİN ALMİNA ERTÜRK / FERHAT BARAN BOZ / ÜMİT TABAK / GÖKHAN CALTEKIN\nİLAYDA KARA YAREN YILMAZ ÖMER SANDİKCİ HALUK DENİZ AYDİN\nALPCAN KABALAR CAN FELSEN ENES UÇAR FAYSAL KARATAN\nMERT UZUNMEHMET YİĞİT ALI SENER GÖKMEN ALP",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "13 EKİM'DE SİNEMALARDA \"SİZİ YALNIZCA İMANİNİZ KURTARABİLİR\"",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "supernatural",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and a monstrous face.",
+  "description": "A poster features a close-up of a monstrous face with sharp teeth and blood, promoting a horror film titled 'ZUHUR CİNN-İ AYİN' releasing on October 13."
+}

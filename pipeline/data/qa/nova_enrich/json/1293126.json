@@ -1,0 +1,40 @@
+{
+  "title_text": "KILLER CLOWNS",
+  "credits_text": "YOU'LL LAUGH TILL YOU DIE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A FASCINATING HISTORY OF THE PAINTED MANIACS THAT CREEP US OUT! - STEVE BATES",
+  "mood": [
+    "horror",
+    "camp",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "Poster features a menacing clown with blood on its face and a knife, promoting a documentary about killer clowns."
+}

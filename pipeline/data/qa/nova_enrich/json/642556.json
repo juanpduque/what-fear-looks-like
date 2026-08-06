@@ -1,0 +1,42 @@
+{
+  "title_text": "Book Of 1000 Deaths",
+  "credits_text": "Misti Dawn, Kelly V. Dolan, Desiree Villabolos, Film Written By Andrei Dante",
+  "languages": [
+    "en"
+  ],
+  "other_text": "100 stories. One book. The endings can be deadly...",
+  "mood": [
+    "horror",
+    "gothic",
+    "violent",
+    "dark",
+    "macabre"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A poster featuring a woman with blood on her face and a title 'Book Of 1000 Deaths' alongside credits for writers and actors."
+}

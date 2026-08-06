@@ -1,0 +1,42 @@
+{
+  "title_text": "AFTER EFFECT",
+  "credits_text": "\"THE WALKING DEAD\" MEETS \"28 DAYS LATER\" DANIEL BALDWIN JOHN TURK MIKE MCNAMARA LILY REX TUCKIE WHITE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "GOVERN PRES VOLUME 1000ML",
+  "mood": [
+    "dread",
+    "apocalyptic",
+    "survival",
+    "horror",
+    "gritty"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and a decayed hand, suggesting violence and horror themes.",
+  "description": "A decayed hand grips an IV bag labeled 'After Effect,' with text referencing 'The Walking Dead' and '28 Days Later.' The poster has a dark, gritty aesthetic."
+}

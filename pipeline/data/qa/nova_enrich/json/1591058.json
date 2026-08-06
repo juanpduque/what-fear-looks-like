@@ -1,0 +1,42 @@
+{
+  "title_text": "ESCAPE TO HELL",
+  "credits_text": "STARRING BART WOODRIDGE ALYSSA WEXLER ANDREW GORDON DIRECTED BY JASON MCDANIEL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EVIL NEVER FORGETS",
+  "mood": [
+    "gothic",
+    "dread",
+    "horror",
+    "dark",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.3
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains intense horror themes and implied violence.",
+  "description": "A young woman in a red cloak stands defiantly before a menacing ghostly figure with red eyes, set against a dark, ominous background."
+}

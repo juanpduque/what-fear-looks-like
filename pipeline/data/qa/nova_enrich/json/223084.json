@@ -1,0 +1,45 @@
+{
+  "title_text": "HORROR DOUBLE FEATURE",
+  "credits_text": "A CONRAD BROOKS FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "INVASION OF THE REPTOIDS\nZombie on the Loose\nTrapped in a World of Horror!!\nAlien Army Invades Earth!",
+  "mood": [
+    "dread",
+    "camp",
+    "sci-fi",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and graphic imagery typical of low-budget horror films.",
+  "description": "A double feature horror poster featuring a green reptilian creature and a zombie, with bold, stylized text and dramatic lighting."
+}

@@ -1,0 +1,47 @@
+{
+  "title_text": "QUEEN DRACULA",
+  "credits_text": "DEATH IS THE ONLY WAY OUT OF HER FATAL EMBRACE.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "erotic",
+    "dread",
+    "surreal",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.5,
+  "sensitive": [
+    "violence",
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains suggestive imagery and themes of horror and violence.",
+  "description": "A poster for 'Queen Dracula' features a central female vampire with three other characters, set against a dark, smoky background with a tagline about fatal embrace."
+}

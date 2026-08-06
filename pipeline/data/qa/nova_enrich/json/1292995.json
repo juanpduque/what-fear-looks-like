@@ -1,0 +1,46 @@
+{
+  "title_text": "カイジノイ屋",
+  "credits_text": "ステーシャージャンル・カティーノフィルム、10届結屋",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "デビド・ビデオ",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "supernatural",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains intense horror themes and supernatural imagery.",
+  "description": "A poster featuring intense, screaming faces with Japanese text, suggesting a horror film about haunted houses."
+}

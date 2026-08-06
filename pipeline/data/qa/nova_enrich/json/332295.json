@@ -1,0 +1,41 @@
+{
+  "title_text": "Il Mondo Perduto",
+  "credits_text": "Derlorene Welt\nAN ARTHOUSE HORROR FILM BY COSMOTROPIA DE XAM",
+  "languages": [
+    "it"
+  ],
+  "other_text": "SHIVABEL • KYRA • THEO TETRAGRAMMATON",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild violence and gore suggestions.",
+  "description": "A poster shows a person submerged in water with a distorted face, overlaid with bold red Italian text and credits."
+}

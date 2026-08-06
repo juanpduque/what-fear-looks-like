@@ -1,0 +1,41 @@
+{
+  "title_text": "TRiLS NO ONE",
+  "credits_text": "I have no mouth And I must scream\nVINCENT VALENTINO • JASON MARSHALL \"MONSTER POOL CHAMPION\" DIRECTED BY RANDY SMITH • ISABEL ESTABROOK USA • MELISSA DOLETTER • MARK ADRIE SUSTAR • JULIAN BATES-VERGETTE • AND WRAP AROUND • VINCENT VALENTINO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CHAPTER 4 TECHNOLOGY",
+  "mood": [
+    "dread",
+    "surreal",
+    "disturbing",
+    "psychological",
+    "sci-fi"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains disturbing imagery and psychological horror themes.",
+  "description": "The poster features a distorted, screaming face with mechanical elements, overlaid with bold red text and credits for a psychological horror film."
+}

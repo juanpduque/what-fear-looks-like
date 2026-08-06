@@ -1,0 +1,43 @@
+{
+  "title_text": "WHEN THE LIGHTS GO OUT",
+  "credits_text": "Directed by JONAS TRUJMANAS\nCast: AGNE TOMAS, VICTORIA VULPAS, VYTAUTAS RAJAMONAVICIUS\nProduced by GABRIELE SURBITE & ROKAS PERKONYTĖ",
+  "languages": [
+    "en",
+    "lt"
+  ],
+  "other_text": "\"When the lights go out, something comes out\" - a co-production by JONAS TRUJMANAS",
+  "mood": [
+    "gothic",
+    "eerie",
+    "haunting",
+    "mysterious",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "darkness",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Mild blood and potential violence suggested by the poster.",
+  "description": "A dark, moody poster features a close-up of a distressed face with visible scratches against a black background, with the title \"When the Lights Go Out\" prominently displayed."
+}

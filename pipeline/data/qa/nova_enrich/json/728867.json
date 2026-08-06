@@ -1,0 +1,40 @@
+{
+  "title_text": "LAGO MALDITO",
+  "credits_text": "IVAN CARDOSO",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "other_text": "STARK TERROR! ADDED THRILLS! QUOTIDIANOS KODAK'S",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "mystery",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a ghostly figure pushing a woman in a wheelchair through an iron gate, with bold horror-themed text and a gothic atmosphere."
+}

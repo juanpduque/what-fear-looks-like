@@ -1,0 +1,47 @@
+{
+  "title_text": "Hard Rock Zombies",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WE TRUST",
+  "mood": [
+    "horror",
+    "punk",
+    "apocalyptic",
+    "dark",
+    "edgy"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "zombie",
+      "conf": 0.85
+    },
+    {
+      "name": "guitar",
+      "conf": 0.75
+    },
+    {
+      "name": "graveyard",
+      "conf": 0.7
+    },
+    {
+      "name": "text",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.85,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring a zombie holding a red electric guitar, with skulls and a graveyard in the background, titled 'Hard Rock Zombies.'"
+}

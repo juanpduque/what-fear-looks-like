@@ -1,0 +1,49 @@
+{
+  "title_text": "POKUPOKU",
+  "credits_text": "presents",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "HOTEL",
+  "mood": [
+    "surreal",
+    "gothic",
+    "haunting",
+    "fantasy",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "house",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult and ghostly imagery, but no explicit violence or sexual content.",
+  "description": "A surreal poster features a towering, monstrous hotel with ghostly figures and eerie, colorful surroundings."
+}

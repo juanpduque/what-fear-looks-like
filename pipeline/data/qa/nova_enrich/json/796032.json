@@ -1,0 +1,46 @@
+{
+  "title_text": "FRIDAY THE 13TH AGAIN",
+  "credits_text": "FROM AWARD WINNING WRITER/DIRECTOR HANK BRAXTON BRAXTONFILM PRESENTS A HANK BRAXTON FILM FROM THE ETHAN AGAIN STARRING ANTHONY FELIX DAN EPPA RODDY COLLIAN WEBBER AND DAVID LIAN JASON VOOREES EDITED BY BRAD HUSTON DIRECTED BY HANK BRAXTON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WINNER! MANIA FEST FRIDAY THE 13TH CAT UP TO LIFE CERT SEPP-4/85",
+  "mood": [
+    "dread",
+    "terror",
+    "suspense",
+    "forest",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A masked figure stands in a forest with autumn foliage, promoting the horror film 'Friday the 13th Again'."
+}

@@ -1,0 +1,37 @@
+{
+  "title_text": "Lo",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Love is real",
+  "mood": [
+    "gothic",
+    "surreal",
+    "melancholic",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.1,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and a skeletal figure.",
+  "description": "A skeletal figure holds a heart pierced by an arrow, with blood dripping against a dark background."
+}

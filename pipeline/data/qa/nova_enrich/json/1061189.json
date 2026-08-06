@@ -1,0 +1,52 @@
+{
+  "title_text": "UNDEAD CEMETERY",
+  "credits_text": "STARRING SASA HANDA DIRECTED BY DAISUKE YAMANOUCHI PRODUCED BY YOSHINORI TAKAZAWA",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "結結「よみかけり山」 結結とグルーを違えたエロデイストリー。 銀用男だけを止め!",
+  "mood": [
+    "dread",
+    "gothic",
+    "erotic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "cemetery",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic horror elements including blood, violence, and suggestive content.",
+  "description": "A woman lies in a graveyard surrounded by zombies; eerie atmosphere with dark lighting and fog."
+}

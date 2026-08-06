@@ -1,0 +1,38 @@
+{
+  "title_text": "LOST RANGER",
+  "credits_text": "BILLY BURKE",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "other_text": "IL Y A EU UNE INFECTION. PUIS LA DÉVASTATION.",
+  "mood": [
+    "post-apocalyptic",
+    "action",
+    "survival",
+    "intense",
+    "desolate"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.8,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and post-apocalyptic themes.",
+  "description": "A man stands in a ruined city at sunset, holding a rifle with a dog beside him, suggesting a post-apocalyptic survival scenario."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "GYO",
+  "credits_text": "TOKYO FISH ATTACK!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "apocalyptic",
+    "horror",
+    "survival",
+    "dystopian",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "crowd",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts a post-apocalyptic scenario with monstrous fish creatures, suggesting potential violence.",
+  "description": "A lone figure stands atop a pile of fish-like creatures in a ruined cityscape under a dark sky."
+}

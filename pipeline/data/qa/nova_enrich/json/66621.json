@@ -1,0 +1,45 @@
+{
+  "title_text": "LA MAIN ROUGE DU DIABLE",
+  "credits_text": "",
+  "languages": [
+    "fr"
+  ],
+  "other_text": "DVD",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "haunting",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "hand",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and a monstrous hand, may be unsettling.",
+  "description": "A poster shows a large, red, monstrous hand reaching out against a dark background with silhouettes of people below."
+}

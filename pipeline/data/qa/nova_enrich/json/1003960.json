@@ -1,0 +1,46 @@
+{
+  "title_text": "HAUNTED EVIL DEAD",
+  "credits_text": "PRODUCED BY DAVID LILLEBLAD DHANANJAY GALANI PRESENTED BY SONNY LAGUNA DIRECTED BY TOMMY WIKLUND",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "other_text": "STOCKHOLM SYNDROME FILM RAVEN BANNER ENTERTAINMENT \"RAW, GRITTY A FINE AND TERRIFIC DISPLAY OF THE MODERN HORROR MOVIE\"",
+  "mood": [
+    "dread",
+    "gothic",
+    "intense",
+    "haunting",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "chains",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and implied horror elements.",
+  "description": "A dark poster features a chained figure with a haunting face, promoting the horror film 'Haunted Evil Dead' directed by Tommy Wiklund."
+}

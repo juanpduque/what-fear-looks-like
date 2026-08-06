@@ -1,0 +1,46 @@
+{
+  "title_text": "LAKE OF SHADOWS",
+  "credits_text": "Robert LaSardo, Felissa Rose, McKayla Aaron",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE LEGEND OF AVOCADO LAKE",
+  "mood": [
+    "horror",
+    "supernatural",
+    "thriller",
+    "mystery",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "water",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and implied violence.",
+  "description": "A poster featuring a group of people with a monstrous creature emerging from dark water, set against a night sky."
+}

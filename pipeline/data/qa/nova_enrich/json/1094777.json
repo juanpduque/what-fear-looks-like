@@ -1,0 +1,41 @@
+{
+  "title_text": "TEENAGE VAMPIRE II",
+  "credits_text": "AN AARON LEE LOPEZ FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MUTT PRODUCTIONS PRESENTS AARON LEE LOPEZ",
+  "mood": [
+    "camp",
+    "horror",
+    "teen",
+    "vampire",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "vampire",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild horror themes and implied violence.",
+  "description": "Poster features a group of teens with a central vampire character, set against a vibrant purple background, promoting a teen horror film."
+}

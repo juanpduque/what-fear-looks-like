@@ -1,0 +1,46 @@
+{
+  "title_text": "RAWMOUTH",
+  "credits_text": "UPSTATE PICTURES, CLARK STUDIOS, FRANCO & BILLY \"RAWMOUTH\" ROGER CLARK, JIM SANTANELLO, PETER BLOMQUIST, JEFF WIENS PETER ROHAN JEFF WIENS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Open wide.",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "dark",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster features graphic imagery and themes of horror and violence.",
+  "description": "A dark poster featuring a menacing black creature with glowing eyes and the title \"RAWMOUTH\" prominently displayed above."
+}

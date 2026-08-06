@@ -1,0 +1,37 @@
+{
+  "title_text": "HANGMAN",
+  "credits_text": "\"HANGMAN\" starring PEGGY PEACOCK with DANIEL SUNSHY LINDSEY COREY ROBERT MELMAN WAYNE EDORON SHARON SHORT - WRITTEN AND DIRECTED BY JOHN SHAPIRO - PRODUCED BY DAVID ONIELLA - EXECUTIVE PRODUCER BARNETT SHAPIRO - MUSIC BY PATRICK McKILLOP",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE PUNISHMENT WILL OUTWEIGH THE CRIME",
+  "mood": [
+    "intense",
+    "gritty",
+    "action",
+    "thriller",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts a violent theme with a man holding a gun and a cityscape in the background.",
+  "description": "A man stands in front of a cityscape at sunset, holding a rifle, with bold red and white text overlay."
+}

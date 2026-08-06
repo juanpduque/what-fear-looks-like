@@ -1,0 +1,43 @@
+{
+  "title_text": "EL RETORNO DE LOS VAMPIROS",
+  "credits_text": "SIMON ANDREU • MARTA MONTERREY GUILLERMO MENDEZ • SUSAN TAFF Dirigida por JOSE MARÍA ZABALZA",
+  "languages": [
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "supernatural",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.7,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man stands in front of a monstrous vampire face with a bat in the background, set against a moonlit graveyard."
+}

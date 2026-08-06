@@ -1,0 +1,38 @@
+{
+  "title_text": "The History That Haunts Us",
+  "credits_text": "A CREIGHTON HOBBS FILM PRODUCED BY CREIGHTON FILMS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COPYRIGHT 2023 CREIGHTON HOBBS",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring a hand gripping a hammer against a red moon background, with bold red text reading 'The History That Haunts Us.'"
+}

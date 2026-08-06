@@ -1,0 +1,45 @@
+{
+  "title_text": "AXEM",
+  "credits_text": "It Was Supposed To Be A Weekend Get-Away Until The Horror Began!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A Michael Murphy Film",
+  "mood": [
+    "dread",
+    "gothic",
+    "terror",
+    "forest",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts a violent weapon and a menacing face, suggesting potential graphic horror themes.",
+  "description": "A poster shows an axe embedded in wood with a menacing face and eerie forest background, titled 'AXEM'."
+}

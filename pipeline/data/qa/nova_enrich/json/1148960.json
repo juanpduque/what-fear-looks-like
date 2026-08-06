@@ -1,0 +1,46 @@
+{
+  "title_text": "SUSUK",
+  "credits_text": "KUTUKAN KECANTIKAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "VISINEMA",
+  "mood": [
+    "gothic",
+    "horror",
+    "eerie",
+    "supernatural",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "mirror",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror elements and occult themes.",
+  "description": "A woman stands in front of an ornate mirror, with ghostly figures and a decayed creature nearby, suggesting a supernatural horror theme."
+}

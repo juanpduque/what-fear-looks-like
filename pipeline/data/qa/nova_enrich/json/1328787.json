@@ -1,0 +1,43 @@
+{
+  "title_text": "TROPICAL MONSTERS",
+  "credits_text": "BLACKSTONE FILMS presents \"TROPICAL MONSTERS\" PIERRE ERDEL with KAÏNA RAMBANA NELLA ALEXANDRE CARBON DAVID ERDEL MILIEU VIKRAM KÉVIN PIERRE ERDEL PÉRE BAIRES GEANSTRA DURABLE MARIE VIGNAUD THOMAS ATTILAS FREDDY LEBEN GEOFFREY SAKTIN BENOIT D'PAOLO BACIR SAKET MARINE NEVE CHRISTOPHE ROBERT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "mysterious",
+    "eerie",
+    "haunting",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "water",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, moody poster features a shadowy face emerging from turbulent water, with bold red title text reading \"TROPICAL MONSTERS\" and a list of credits below."
+}

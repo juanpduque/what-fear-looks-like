@@ -1,0 +1,389 @@
+=== attrs_gap_chain start Wed Aug  5 19:53:39 UTC 2026 ===
+{
+    "UserId": "AROAYIJ24UMDFGSQJEH54:i-0df34af493e304af7",
+    "Account": "567596065542",
+    "Arn": "arn:aws:sts::567596065542:assumed-role/wflike-ec2-role/i-0df34af493e304af7"
+}
+--- apt/pip (retry + regional mirror on 503) ---
+Hit:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble InRelease
+Hit:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates InRelease
+Hit:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-backports InRelease
+Hit:4 http://security.ubuntu.com/ubuntu noble-security InRelease
+Reading package lists...
+Reading package lists...
+Building dependency tree...
+Reading state information...
+python3-pip is already the newest version (24.0+dfsg-1ubuntu1.3).
+python3-venv is already the newest version (3.12.3-0ubuntu2.1).
+libglib2.0-0t64 is already the newest version (2.80.0-6ubuntu3.8).
+libglib2.0-0t64 set to manually installed.
+curl is already the newest version (8.5.0-2ubuntu10.11).
+ca-certificates is already the newest version (20260601~24.04.1).
+The following additional packages will be installed:
+  libdrm-intel1 libgbm1 libgl1-mesa-dri libglvnd0 libglx-mesa0 libglx0
+  libllvm20 libpciaccess0 libvulkan1 libwayland-client0 libx11-xcb1
+  libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-randr0 libxcb-shm0
+  libxcb-sync1 libxcb-xfixes0 libxshmfence1 libxxf86vm1 mesa-libgallium
+  mesa-vulkan-drivers
+The following NEW packages will be installed:
+  libdrm-intel1 libgbm1 libgl1 libgl1-mesa-dri libglvnd0 libglx-mesa0 libglx0
+  libllvm20 libpciaccess0 libvulkan1 libwayland-client0 libx11-xcb1
+  libxcb-dri3-0 libxcb-glx0 libxcb-present0 libxcb-randr0 libxcb-shm0
+  libxcb-sync1 libxcb-xfixes0 libxshmfence1 libxxf86vm1 mesa-libgallium
+  mesa-vulkan-drivers
+0 upgraded, 23 newly installed, 0 to remove and 35 not upgraded.
+Need to get 59.6 MB of archives.
+After this operation, 289 MB of additional disk space will be used.
+Get:1 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libpciaccess0 amd64 0.17-3ubuntu0.24.04.2 [18.9 kB]
+Get:2 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libdrm-intel1 amd64 2.4.125-1ubuntu0.1~24.04.2 [63.9 kB]
+Get:3 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libllvm20 amd64 1:20.1.2-0ubuntu1~24.04.3 [30.6 MB]
+Get:4 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libx11-xcb1 amd64 2:1.8.7-1build1 [7800 B]
+Get:5 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libxcb-dri3-0 amd64 1.15-1ubuntu2 [7142 B]
+Get:6 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libxcb-present0 amd64 1.15-1ubuntu2 [5676 B]
+Get:7 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libxcb-randr0 amd64 1.15-1ubuntu2 [17.9 kB]
+Get:8 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libxcb-sync1 amd64 1.15-1ubuntu2 [9312 B]
+Get:9 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libxcb-xfixes0 amd64 1.15-1ubuntu2 [10.2 kB]
+Get:10 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libxshmfence1 amd64 1.3-1build5 [4764 B]
+Get:11 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 mesa-libgallium amd64 25.2.8-0ubuntu0.24.04.2 [10.8 MB]
+Get:12 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libgbm1 amd64 25.2.8-0ubuntu0.24.04.2 [34.2 kB]
+Get:13 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libvulkan1 amd64 1.3.275.0-1build1 [142 kB]
+Get:14 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libgl1-mesa-dri amd64 25.2.8-0ubuntu0.24.04.2 [37.9 kB]
+Get:15 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libxcb-glx0 amd64 1.15-1ubuntu2 [24.8 kB]
+Get:16 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libxcb-shm0 amd64 1.15-1ubuntu2 [5756 B]
+Get:17 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libxxf86vm1 amd64 1:1.1.4-1build4 [9282 B]
+Get:18 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 libglx-mesa0 amd64 25.2.8-0ubuntu0.24.04.2 [110 kB]
+Get:19 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libwayland-client0 amd64 1.22.0-2.1build1 [26.4 kB]
+Get:20 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble-updates/main amd64 mesa-vulkan-drivers amd64 25.2.8-0ubuntu0.24.04.2 [17.5 MB]
+Get:21 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libglvnd0 amd64 1.7.0-1build1 [69.6 kB]
+Get:22 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libglx0 amd64 1.7.0-1build1 [38.6 kB]
+Get:23 http://us-east-1.ec2.archive.ubuntu.com/ubuntu noble/main amd64 libgl1 amd64 1.7.0-1build1 [102 kB]
+dpkg-preconfigure: unable to re-open stdin: No such file or directory
+Fetched 59.6 MB in 2s (31.5 MB/s)
+Selecting previously unselected package libpciaccess0:amd64.
+(Reading database ... (Reading database ... 5%(Reading database ... 10%(Reading database ... 15%(Reading database ... 20%(Reading database ... 25%(Reading database ... 30%(Reading database ... 35%(Reading database ... 40%(Reading database ... 45%(Reading database ... 50%(Reading database ... 55%(Reading database ... 60%(Reading database ... 65%(Reading database ... 70%(Reading database ... 75%(Reading database ... 80%(Reading database ... 85%(Reading database ... 90%(Reading database ... 95%(Reading database ... 100%(Reading database ... 88044 files and directories currently installed.)
+Preparing to unpack .../00-libpciaccess0_0.17-3ubuntu0.24.04.2_amd64.deb ...
+Unpacking libpciaccess0:amd64 (0.17-3ubuntu0.24.04.2) ...
+Selecting previously unselected package libdrm-intel1:amd64.
+Preparing to unpack .../01-libdrm-intel1_2.4.125-1ubuntu0.1~24.04.2_amd64.deb ...
+Unpacking libdrm-intel1:amd64 (2.4.125-1ubuntu0.1~24.04.2) ...
+Selecting previously unselected package libllvm20:amd64.
+Preparing to unpack .../02-libllvm20_1%3a20.1.2-0ubuntu1~24.04.3_amd64.deb ...
+Unpacking libllvm20:amd64 (1:20.1.2-0ubuntu1~24.04.3) ...
+Selecting previously unselected package libx11-xcb1:amd64.
+Preparing to unpack .../03-libx11-xcb1_2%3a1.8.7-1build1_amd64.deb ...
+Unpacking libx11-xcb1:amd64 (2:1.8.7-1build1) ...
+Selecting previously unselected package libxcb-dri3-0:amd64.
+Preparing to unpack .../04-libxcb-dri3-0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-dri3-0:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-present0:amd64.
+Preparing to unpack .../05-libxcb-present0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-present0:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-randr0:amd64.
+Preparing to unpack .../06-libxcb-randr0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-randr0:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-sync1:amd64.
+Preparing to unpack .../07-libxcb-sync1_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-sync1:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-xfixes0:amd64.
+Preparing to unpack .../08-libxcb-xfixes0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-xfixes0:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxshmfence1:amd64.
+Preparing to unpack .../09-libxshmfence1_1.3-1build5_amd64.deb ...
+Unpacking libxshmfence1:amd64 (1.3-1build5) ...
+Selecting previously unselected package mesa-libgallium:amd64.
+Preparing to unpack .../10-mesa-libgallium_25.2.8-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking mesa-libgallium:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Selecting previously unselected package libgbm1:amd64.
+Preparing to unpack .../11-libgbm1_25.2.8-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking libgbm1:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Selecting previously unselected package libvulkan1:amd64.
+Preparing to unpack .../12-libvulkan1_1.3.275.0-1build1_amd64.deb ...
+Unpacking libvulkan1:amd64 (1.3.275.0-1build1) ...
+Selecting previously unselected package libgl1-mesa-dri:amd64.
+Preparing to unpack .../13-libgl1-mesa-dri_25.2.8-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking libgl1-mesa-dri:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Selecting previously unselected package libxcb-glx0:amd64.
+Preparing to unpack .../14-libxcb-glx0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-glx0:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxcb-shm0:amd64.
+Preparing to unpack .../15-libxcb-shm0_1.15-1ubuntu2_amd64.deb ...
+Unpacking libxcb-shm0:amd64 (1.15-1ubuntu2) ...
+Selecting previously unselected package libxxf86vm1:amd64.
+Preparing to unpack .../16-libxxf86vm1_1%3a1.1.4-1build4_amd64.deb ...
+Unpacking libxxf86vm1:amd64 (1:1.1.4-1build4) ...
+Selecting previously unselected package libglx-mesa0:amd64.
+Preparing to unpack .../17-libglx-mesa0_25.2.8-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking libglx-mesa0:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Selecting previously unselected package libwayland-client0:amd64.
+Preparing to unpack .../18-libwayland-client0_1.22.0-2.1build1_amd64.deb ...
+Unpacking libwayland-client0:amd64 (1.22.0-2.1build1) ...
+Selecting previously unselected package mesa-vulkan-drivers:amd64.
+Preparing to unpack .../19-mesa-vulkan-drivers_25.2.8-0ubuntu0.24.04.2_amd64.deb ...
+Unpacking mesa-vulkan-drivers:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Selecting previously unselected package libglvnd0:amd64.
+Preparing to unpack .../20-libglvnd0_1.7.0-1build1_amd64.deb ...
+Unpacking libglvnd0:amd64 (1.7.0-1build1) ...
+Selecting previously unselected package libglx0:amd64.
+Preparing to unpack .../21-libglx0_1.7.0-1build1_amd64.deb ...
+Unpacking libglx0:amd64 (1.7.0-1build1) ...
+Selecting previously unselected package libgl1:amd64.
+Preparing to unpack .../22-libgl1_1.7.0-1build1_amd64.deb ...
+Unpacking libgl1:amd64 (1.7.0-1build1) ...
+Setting up libxcb-dri3-0:amd64 (1.15-1ubuntu2) ...
+Setting up libx11-xcb1:amd64 (2:1.8.7-1build1) ...
+Setting up libpciaccess0:amd64 (0.17-3ubuntu0.24.04.2) ...
+Setting up libxcb-xfixes0:amd64 (1.15-1ubuntu2) ...
+Setting up libglvnd0:amd64 (1.7.0-1build1) ...
+Setting up libxcb-glx0:amd64 (1.15-1ubuntu2) ...
+Setting up libdrm-intel1:amd64 (2.4.125-1ubuntu0.1~24.04.2) ...
+Setting up libxcb-shm0:amd64 (1.15-1ubuntu2) ...
+Setting up libxxf86vm1:amd64 (1:1.1.4-1build4) ...
+Setting up libxcb-present0:amd64 (1.15-1ubuntu2) ...
+Setting up libxcb-sync1:amd64 (1.15-1ubuntu2) ...
+Setting up libllvm20:amd64 (1:20.1.2-0ubuntu1~24.04.3) ...
+Setting up libvulkan1:amd64 (1.3.275.0-1build1) ...
+Setting up libxshmfence1:amd64 (1.3-1build5) ...
+Setting up libxcb-randr0:amd64 (1.15-1ubuntu2) ...
+Setting up libwayland-client0:amd64 (1.22.0-2.1build1) ...
+Setting up mesa-vulkan-drivers:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Setting up mesa-libgallium:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Setting up libgbm1:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Setting up libgl1-mesa-dri:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Setting up libglx-mesa0:amd64 (25.2.8-0ubuntu0.24.04.2) ...
+Setting up libglx0:amd64 (1.7.0-1build1) ...
+Setting up libgl1:amd64 (1.7.0-1build1) ...
+Processing triggers for libc-bin (2.39-0ubuntu8.8) ...
+
+Running kernel seems to be up-to-date.
+
+Restarting services...
+
+Service restarts being deferred:
+ systemctl restart cloud-final.service
+ /etc/needrestart/restart.d/dbus.service
+ systemctl restart getty@tty1.service
+ systemctl restart networkd-dispatcher.service
+ systemctl restart serial-getty@ttyS0.service
+ systemctl restart systemd-logind.service
+ systemctl restart unattended-upgrades.service
+
+No containers need to be restarted.
+
+No user sessions are running outdated binaries.
+
+No VM guests are running outdated hypervisor (qemu) binaries on this host.
+--- assert cv2.saliency ---
+cv2 5.0.0
+OK cv2.saliency.StaticSaliencySpectralResidual_create()
+--- smoke: composition+typography+all metrics (catch OpenCV unpack) ---
+smoke synthetic image
+  OK metric=composition keys=['complexity', 'mass_x', 'mass_y', 'neg_space', 'symmetry']
+  OK metric=typography keys=['text_area', 'text_regions', 'text_y']
+  OK metric=grid keys=['align_score', 'n_blocks', 'thirds_dist']
+  OK metric=aesthetic keys=['balance', 'harmony']
+  OK metric=diagonal keys=['diagonal_score', 'pyramid_shift']
+  OK hough_reshape=N,1,4
+  OK hough_reshape=N,4
+OK smoke multi_analyze metrics
+union attributes_partial 37873
+--- download missing attribute posters ---
+gap from faces−attrs: faces=65201 attrs=37873 need=27328
+todo=27328 already=0 need_download=27328
+  fetch 500/27328 ok=500 miss=0
+  fetch 1000/27328 ok=1000 miss=0
+  fetch 1500/27328 ok=1500 miss=0
+  fetch 2000/27328 ok=2000 miss=0
+  fetch 2500/27328 ok=2500 miss=0
+  fetch 3000/27328 ok=3000 miss=0
+  fetch 3500/27328 ok=3500 miss=0
+  fetch 4000/27328 ok=4000 miss=0
+  fetch 4500/27328 ok=4500 miss=0
+  fetch 5000/27328 ok=5000 miss=0
+  fetch 5500/27328 ok=5500 miss=0
+  fetch 6000/27328 ok=6000 miss=0
+  fetch 6500/27328 ok=6500 miss=0
+  fetch 7000/27328 ok=7000 miss=0
+  fetch 7500/27328 ok=7500 miss=0
+  fetch 8000/27328 ok=8000 miss=0
+  fetch 8500/27328 ok=8500 miss=0
+  fetch 9000/27328 ok=9000 miss=0
+  fetch 9500/27328 ok=9500 miss=0
+  fetch 10000/27328 ok=10000 miss=0
+  fetch 10500/27328 ok=10500 miss=0
+  fetch 11000/27328 ok=11000 miss=0
+  fetch 11500/27328 ok=11500 miss=0
+  fetch 12000/27328 ok=12000 miss=0
+  fetch 12500/27328 ok=12500 miss=0
+  fetch 13000/27328 ok=13000 miss=0
+  fetch 13500/27328 ok=13500 miss=0
+  fetch 14000/27328 ok=14000 miss=0
+  fetch 14500/27328 ok=14500 miss=0
+  fetch 15000/27328 ok=15000 miss=0
+  fetch 15500/27328 ok=15500 miss=0
+  fetch 16000/27328 ok=16000 miss=0
+  fetch 16500/27328 ok=16500 miss=0
+  fetch 17000/27328 ok=17000 miss=0
+  fetch 17500/27328 ok=17500 miss=0
+  fetch 18000/27328 ok=18000 miss=0
+  fetch 18500/27328 ok=18500 miss=0
+  fetch 19000/27328 ok=19000 miss=0
+  fetch 19500/27328 ok=19500 miss=0
+  fetch 20000/27328 ok=20000 miss=0
+  fetch 20500/27328 ok=20500 miss=0
+  fetch 21000/27328 ok=21000 miss=0
+  fetch 21500/27328 ok=21500 miss=0
+  fetch 22000/27328 ok=22000 miss=0
+  fetch 22500/27328 ok=22500 miss=0
+  fetch 23000/27328 ok=23000 miss=0
+  fetch 23500/27328 ok=23500 miss=0
+  fetch 24000/27328 ok=24000 miss=0
+  fetch 24500/27328 ok=24500 miss=0
+  fetch 25000/27328 ok=25000 miss=0
+  fetch 25500/27328 ok=25500 miss=0
+  fetch 26000/27328 ok=26000 miss=0
+  fetch 26500/27328 ok=26500 miss=0
+  fetch 27000/27328 ok=27000 miss=0
+  fetch 27328/27328 ok=27328 miss=0
+LISTO posters_on_disk=27328 fetch_ok=27328 fetch_miss=0
+{"ts": "2026-08-05T20:33:53Z", "phase": "download_posters", "attributes": 37873, "faces_v2": 65201, "posters_on_disk": 27328}
+--- attributes (multi_analyze) — fail hard ---
+pending: 27,328 / 65,201
+  checkpoint +250 (38,123/65,201) 25/s
+  checkpoint +250 (38,373/65,201) 26/s
+  checkpoint +250 (38,623/65,201) 29/s
+  checkpoint +250 (38,873/65,201) 27/s
+  checkpoint +250 (39,123/65,201) 30/s
+  checkpoint +250 (39,373/65,201) 31/s
+  checkpoint +250 (39,623/65,201) 31/s
+  checkpoint +250 (39,873/65,201) 31/s
+  checkpoint +250 (40,123/65,201) 35/s
+  checkpoint +250 (40,373/65,201) 34/s
+  checkpoint +250 (40,623/65,201) 32/s
+  checkpoint +250 (40,873/65,201) 33/s
+  checkpoint +250 (41,123/65,201) 34/s
+  checkpoint +250 (41,373/65,201) 32/s
+  checkpoint +250 (41,623/65,201) 34/s
+  checkpoint +250 (41,873/65,201) 33/s
+  checkpoint +250 (42,123/65,201) 30/s
+  checkpoint +250 (42,373/65,201) 34/s
+  checkpoint +250 (42,623/65,201) 33/s
+  checkpoint +250 (42,873/65,201) 33/s
+  checkpoint +250 (43,123/65,201) 34/s
+  checkpoint +250 (43,373/65,201) 34/s
+  checkpoint +250 (43,623/65,201) 35/s
+{"ts": "2026-08-05T20:37:00Z", "phase": "sync", "attributes": 43623, "faces_v2": 65201, "posters_on_disk": 27328}
+  checkpoint +250 (43,873/65,201) 32/s
+  checkpoint +250 (44,123/65,201) 34/s
+  checkpoint +250 (44,373/65,201) 35/s
+  checkpoint +250 (44,623/65,201) 34/s
+  checkpoint +250 (44,873/65,201) 33/s
+  checkpoint +250 (45,123/65,201) 35/s
+  checkpoint +250 (45,373/65,201) 32/s
+  checkpoint +250 (45,623/65,201) 34/s
+  checkpoint +250 (45,873/65,201) 32/s
+  checkpoint +250 (46,123/65,201) 32/s
+  checkpoint +250 (46,373/65,201) 31/s
+  checkpoint +250 (46,623/65,201) 30/s
+  checkpoint +250 (46,873/65,201) 34/s
+  checkpoint +250 (47,123/65,201) 35/s
+  checkpoint +250 (47,373/65,201) 31/s
+  checkpoint +250 (47,623/65,201) 35/s
+  checkpoint +250 (47,873/65,201) 32/s
+  checkpoint +250 (48,123/65,201) 34/s
+  checkpoint +250 (48,373/65,201) 32/s
+  checkpoint +250 (48,623/65,201) 34/s
+  checkpoint +250 (48,873/65,201) 33/s
+  checkpoint +250 (49,123/65,201) 35/s
+  checkpoint +250 (49,373/65,201) 35/s
+  checkpoint +250 (49,623/65,201) 31/s
+{"ts": "2026-08-05T20:40:06Z", "phase": "sync", "attributes": 49623, "faces_v2": 65201, "posters_on_disk": 27328}
+  checkpoint +250 (49,873/65,201) 30/s
+  checkpoint +250 (50,123/65,201) 31/s
+  checkpoint +250 (50,373/65,201) 32/s
+  checkpoint +250 (50,623/65,201) 32/s
+  checkpoint +250 (50,873/65,201) 33/s
+  checkpoint +250 (51,123/65,201) 36/s
+  checkpoint +250 (51,373/65,201) 34/s
+  checkpoint +250 (51,623/65,201) 32/s
+  checkpoint +250 (51,873/65,201) 33/s
+  checkpoint +250 (52,123/65,201) 34/s
+  checkpoint +250 (52,373/65,201) 32/s
+  checkpoint +250 (52,623/65,201) 33/s
+  checkpoint +250 (52,873/65,201) 32/s
+  checkpoint +250 (53,123/65,201) 32/s
+  checkpoint +250 (53,373/65,201) 33/s
+  checkpoint +250 (53,623/65,201) 29/s
+  checkpoint +250 (53,873/65,201) 33/s
+  checkpoint +250 (54,123/65,201) 34/s
+  checkpoint +250 (54,373/65,201) 31/s
+  checkpoint +250 (54,623/65,201) 33/s
+  checkpoint +250 (54,873/65,201) 29/s
+  checkpoint +250 (55,123/65,201) 33/s
+  checkpoint +250 (55,373/65,201) 32/s
+  checkpoint +250 (55,623/65,201) 36/s
+{"ts": "2026-08-05T20:43:13Z", "phase": "sync", "attributes": 12770, "faces_v2": 65201, "posters_on_disk": 27328}
+  checkpoint +250 (55,873/65,201) 30/s
+  checkpoint +250 (56,123/65,201) 33/s
+  checkpoint +250 (56,373/65,201) 35/s
+  checkpoint +250 (56,623/65,201) 35/s
+  checkpoint +250 (56,873/65,201) 30/s
+  checkpoint +250 (57,123/65,201) 37/s
+  checkpoint +250 (57,373/65,201) 29/s
+  checkpoint +250 (57,623/65,201) 26/s
+  checkpoint +250 (57,873/65,201) 30/s
+  checkpoint +250 (58,123/65,201) 32/s
+  checkpoint +250 (58,373/65,201) 32/s
+  checkpoint +250 (58,623/65,201) 27/s
+  checkpoint +250 (58,873/65,201) 31/s
+  checkpoint +250 (59,123/65,201) 29/s
+  checkpoint +250 (59,373/65,201) 28/s
+  checkpoint +250 (59,623/65,201) 26/s
+  checkpoint +250 (59,873/65,201) 24/s
+  checkpoint +250 (60,123/65,201) 30/s
+  checkpoint +250 (60,373/65,201) 29/s
+  checkpoint +250 (60,623/65,201) 30/s
+  checkpoint +250 (60,873/65,201) 28/s
+  checkpoint +250 (61,123/65,201) 31/s
+  checkpoint +250 (61,373/65,201) 29/s
+{"ts": "2026-08-05T20:46:20Z", "phase": "sync", "attributes": 61373, "faces_v2": 65201, "posters_on_disk": 27328}
+  checkpoint +250 (61,623/65,201) 29/s
+  checkpoint +250 (61,873/65,201) 31/s
+  checkpoint +250 (62,123/65,201) 31/s
+  checkpoint +250 (62,373/65,201) 29/s
+  checkpoint +250 (62,623/65,201) 30/s
+  checkpoint +250 (62,873/65,201) 28/s
+  checkpoint +250 (63,123/65,201) 30/s
+  checkpoint +250 (63,373/65,201) 30/s
+  checkpoint +250 (63,623/65,201) 31/s
+  checkpoint +250 (63,873/65,201) 30/s
+  checkpoint +250 (64,123/65,201) 31/s
+  checkpoint +250 (64,373/65,201) 31/s
+  checkpoint +250 (64,623/65,201) 29/s
+  checkpoint +250 (64,873/65,201) 31/s
+  checkpoint +250 (65,123/65,201) 30/s
+checkpoint covers 65,201/65,201
+
+=== BY DECADE ===
+        symmetry  neg_space  complexity  mass_y  mass_x  text_area  text_y  text_regions  text_x  text_top  text_w  text_h  align_score  thirds_dist  n_blocks  balance  harmony  diagonal_score  pyramid_shift      n
+decade                                                                                                                                                                                                                
+1890      0.8811     0.3709      0.1350  0.4645  0.4889     0.0992  0.3394      100.0000     NaN       NaN     NaN     NaN       0.0725       0.2115    8.1875   0.0856   0.9012          0.1732        -0.0332     16
+1900      0.8527     0.2770      0.1510  0.4842  0.4936     0.1273  0.5120      102.8182     NaN       NaN     NaN     NaN       0.0534       0.2070   10.8636   0.0666   0.9266          0.2484        -0.0132     44
+1910      0.8395     0.2126      0.1698  0.5038  0.4992     0.1613  0.4901      202.8992     NaN       NaN     NaN     NaN       0.0542       0.2278    9.7364   0.0713   0.9123          0.2381         0.0175    129
+1920      0.8051     0.2381      0.1590  0.5060  0.4959     0.2647  0.5014      385.7755 -1.0000   -1.0000 -1.0000 -1.0000       0.0686       0.2276    7.8027   0.0792   0.9183          0.2690         0.0160    147
+1930      0.7936     0.2220      0.1645  0.5007  0.4965     0.3088  0.4980      422.7802 -1.0000   -1.0000 -1.0000 -1.0000       0.0677       0.2316    7.6638   0.0672   0.9185          0.2862         0.0007    232
+1940      0.7636     0.2007      0.1686  0.5060  0.4930     0.3217  0.5040      426.2885 -1.0000   -1.0000 -1.0000 -1.0000       0.0681       0.2329    7.5038   0.0704   0.9165          0.3227         0.0028    260
+1950      0.7697     0.1876      0.1908  0.5083  0.4958     0.2303  0.4983      265.6393 -0.6739   -0.5991 -0.4843 -0.6300       0.0553       0.2308   10.5820   0.0687   0.9130          0.3121         0.0022    488
+1960      0.7903     0.2627      0.1679  0.5100  0.4968     0.1897  0.5012      210.6294 -0.7894   -0.7287 -0.6507 -0.7650       0.0619       0.2255    9.7446   0.0715   0.9151          0.2937         0.0012   1163
+1970      0.8089     0.2810      0.1605  0.5068  0.4964     0.1792  0.4991      196.8881 -0.8119   -0.7535 -0.7021 -0.8000       0.0637       0.2225    9.2542   0.0770   0.9168          0.2877         0.0039   2144
+1980      0.8187     0.2487      0.1604  0.5040  0.4967     0.1861  0.4941      193.7728 -0.7623   -0.6923 -0.6209 -0.7439       0.0632       0.2247    9.4049   0.0804   0.9166          0.2825         0.0065   3055
+1990      0.8181     0.2363      0.1583  0.5038  0.4971     0.1778  0.4944      194.4439 -0.7951   -0.7318 -0.6653 -0.7774       0.0585       0.2265   10.0960   0.0803   0.9160          0.2678         0.0029   3647
+2000      0.8229     0.2427      0.1609  0.5016  0.4969     0.1867  0.4931      219.8493 -0.7703   -0.7110 -0.6185 -0.7510       0.0606       0.2264    9.7768   0.0865   0.9161          0.2680        -0.0024   7738
+2010      0.8481     0.2646      0.1520  0.5096  0.4982     0.1614  0.4913      184.7656 -0.8323   -0.7851 -0.7249 -0.8190       0.0652       0.2249    9.3900   0.0881   0.9155          0.2482        -0.0026  18794
+2020      0.8697     0.3037      0.1312  0.5122  0.4977     0.1346  0.4820      153.7182 -0.8908   -0.8522 -0.8253 -0.8836       0.0756       0.2218    8.4823   0.0941   0.9158          0.2280        -0.0011  26067
+wrote /home/ubuntu/aof/pipeline/data/attributes.csv (65201 rows)
+attributes published 65201 nunique 65201
+{"ts": "2026-08-05T20:48:33Z", "phase": "sync", "attributes": 65201, "faces_v2": 65201, "posters_on_disk": 27328}
+{"ts": "2026-08-05T20:48:36Z", "n_attributes": 65201, "n_faces": 65201, "threshold_note": "pass if n_attrs>=65000 or n_attrs>=n_faces", "ok": true}
+Completed 32 Bytes/32 Bytes (422 Bytes/s) with 1 file(s) remainingupload: data/qa/attrs_gap/DONE to s3://sagemaker-studio-a5572760/wflike-attrs-gap/results/DONE
+Completed 160 Bytes/160 Bytes (2.2 KiB/s) with 1 file(s) remainingupload: data/qa/attrs_gap/GATE.json to s3://sagemaker-studio-a5572760/wflike-attrs-gap/results/GATE.json
+{"ts": "2026-08-05T20:48:41Z", "phase": "gate", "attributes": 65201, "faces_v2": 65201, "posters_on_disk": 27328}

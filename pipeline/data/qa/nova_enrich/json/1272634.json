@@ -1,0 +1,45 @@
+{
+  "title_text": "THE MASSACRE ON HALLOWEEN NIGHT",
+  "credits_text": "A HUGO RODRIGUEZ FILM\nSTARRING PEDRO MENDOZA, SAMANTHA HOLLAND, SCARLETT HOOTON, YVONNE TOVAR, MARC FOSTER, AARON BARBERA\nASSISTANT ALYSSA RENEE\nDIRECTOR ALYSSA RENEE\nWRITERS DAVID CANTU, IVAN GUARDADO, JESUS GARCIA, RAY-LIN FRANCOIS, KALEB PHOENIX\nEDITOR JUAN D ZAVALETA\nCOMPOSER DAVID J WILLOX\nVALLEYENTERTAINMENT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TRICK OR TREAT\nThis is my Halloween Costume",
+  "mood": [
+    "horror",
+    "thriller",
+    "suspense",
+    "gothic",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A poster for a horror film featuring five characters in a dark forest setting with a menacing figure behind them."
+}

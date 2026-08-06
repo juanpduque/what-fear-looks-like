@@ -1,0 +1,50 @@
+{
+  "title_text": "SKINNY PUPPY",
+  "credits_text": "Too Dark Park Backing Film",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dark",
+    "surreal",
+    "gothic",
+    "intense",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains disturbing imagery and occult themes.",
+  "description": "The poster features a dark, surreal scene with monstrous creatures and skeletal figures against a blue background, promoting the film 'Skinny Puppy: Too Dark Park Backing Film.'"
+}

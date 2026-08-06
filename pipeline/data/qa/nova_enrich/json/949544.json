@@ -1,0 +1,46 @@
+{
+  "title_text": "DEBBIE DOES DEMONS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "erotic",
+    "camp",
+    "supernatural",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "demon",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.7,
+  "sensitive": [
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains erotic and occult themes, mild violence.",
+  "description": "A poster features two women, one in a hood, with demonic imagery and a skull in the background, suggesting horror and erotic themes."
+}

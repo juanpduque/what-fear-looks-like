@@ -1,0 +1,44 @@
+{
+  "title_text": "THE HOUSE THAT ZOMBIES BUILT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IN PRE-PRODUCTION",
+  "mood": [
+    "horror",
+    "apocalyptic",
+    "dread",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A poster shows a dilapidated house surrounded by zombies under a fiery sky, with the title 'The House That Zombies Built' prominently displayed."
+}

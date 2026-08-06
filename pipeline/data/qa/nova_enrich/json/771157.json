@@ -1,0 +1,45 @@
+{
+  "title_text": "PARANORMAL DOORWAYS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE PORTAL HAS BEEN OPENED",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "haunting",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "door",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and mild horror imagery.",
+  "description": "A woman with glowing eyes reaches out from a fiery doorway, with the text 'Paranormal Doorways' and 'The Portal Has Been Opened' displayed."
+}

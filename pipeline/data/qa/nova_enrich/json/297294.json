@@ -1,0 +1,46 @@
+{
+  "title_text": "THE LOST TAPE",
+  "credits_text": "PRODUCER ASHOK KUMAR BAPHNA WRITTEN AND DIRECTED RAKSHIT DAHIYA Co PRODUCER SURESH CHITALNIA CINEMATOGRAPHER DHAVAL GANBOTE MANOJ NANDWANA & JAI VIRATRA ENTERTAINMENT LTD'S RELEASE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Come ye Children, I'll teach you the fear of the LORD.",
+  "mood": [
+    "dread",
+    "gothic",
+    "mystery",
+    "thriller",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and implied violence.",
+  "description": "A poster shows a shadowy figure in a dark forest with a pair of feet marked as 'The Lost Tape,' featuring blood and a tag."
+}

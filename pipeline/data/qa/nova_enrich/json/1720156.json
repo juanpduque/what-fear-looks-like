@@ -1,0 +1,47 @@
+{
+  "title_text": "GHOST COUNTRY",
+  "credits_text": "A mockumentary horror feature inspired by first-hand accounts.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AM 12:18:46 OCT 26 2022 Some stories refuse to stay buried.",
+  "mood": [
+    "haunting",
+    "mysterious",
+    "eerie",
+    "supernatural",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "house",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man with a backpack and camera faces ghostly figures in a dark forest near a house under a full moon."
+}

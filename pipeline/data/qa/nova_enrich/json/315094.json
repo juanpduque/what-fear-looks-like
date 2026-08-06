@@ -1,0 +1,42 @@
+{
+  "title_text": "HONEYMOON OF TERROR!",
+  "credits_text": "A NIGHT OF ECSTASY... THEN...A NIGHTMARE NEVER TO BE FORGOTTEN! A DARING SHOCKER! DIRECTED BY PETER PERRY A SONNEY PRODUCTION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dramatic",
+    "thriller",
+    "intense",
+    "suspenseful",
+    "shocking"
+  ],
+  "fear_labels": [
+    {
+      "name": "terror",
+      "conf": 0.9
+    },
+    {
+      "name": "nightmare",
+      "conf": 0.85
+    },
+    {
+      "name": "shock",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "The poster depicts intense and potentially disturbing imagery involving implied violence and sexual tension.",
+  "description": "A vintage movie poster shows a man gripping a distressed woman, with bold red and blue text advertising a thriller titled 'HONEYMOON OF TERROR!'"
+}

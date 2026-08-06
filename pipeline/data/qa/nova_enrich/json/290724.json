@@ -1,0 +1,42 @@
+{
+  "title_text": "BIGFOOT WARS",
+  "credits_text": "E. THOMAS HOWELL JUDD NELSON HOLT BOGGS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "LOCK AND LOAD! IT'S GOING TO GET HAIRY.",
+  "mood": [
+    "action",
+    "horror",
+    "fantasy",
+    "adventure",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.1,
+  "animal": 0.9,
+  "blood_gore": 0.4,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and creature imagery.",
+  "description": "Movie poster features large, hairy creatures in a forest setting with bold red title text and tagline."
+}

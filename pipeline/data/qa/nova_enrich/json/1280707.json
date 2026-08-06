@@ -1,0 +1,42 @@
+{
+  "title_text": "KNOCK KNOCK KNOCK",
+  "credits_text": "TOM BELL, KIELL SMITH-BYNDE AND PAUL FLANNERY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BILL KELLY SMITH-BYNDE PAUL FLANNERY KNOCK KNOCK KNOCK\n\nSTARRING TOM BELL KIELL SMITH-BYNDE PAUL FLANNERY\n\nWRITERS BENJAMIN CLEAVER TOM BELL GERMAN CLEAVER\n\nDIRECTOR PAUL MCCARTNEY",
+  "mood": [
+    "psychological",
+    "suspense",
+    "disturbing",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "casket",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man sits facing a large wooden casket with smoke and an intense face looming behind it."
+}

@@ -1,0 +1,44 @@
+{
+  "title_text": "LIMAR",
+  "credits_text": "Bryan Carvalho, Luis Delgado, Francisco Miranda",
+  "languages": [
+    "en"
+  ],
+  "other_text": "INstituto do Cinema e do Audiovisual, UBCINEMA produções",
+  "mood": [
+    "dark",
+    "gothic",
+    "violent",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.95
+    },
+    {
+      "name": "chains",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and dark imagery.",
+  "description": "A hooded figure with a skull face holds a weapon against a dark background, suggesting a violent or horror theme."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "DEATH OF A CLOWN",
+  "credits_text": "A FRANK DUFF HORNE FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COPYRIGHT 2017 BY COUNTERPART ENTERTAINMENT. ALL RIGHTS RESERVED.",
+  "mood": [
+    "dread",
+    "thriller",
+    "horror",
+    "gothic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "clown",
+      "conf": 0.95
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes with a menacing clown figure.",
+  "description": "Poster features a menacing clown holding a weapon, with five distressed individuals in the background, set against a dark, eerie backdrop."
+}

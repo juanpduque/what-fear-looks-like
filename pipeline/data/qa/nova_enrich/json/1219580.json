@@ -1,0 +1,39 @@
+{
+  "title_text": "FEAR",
+  "credits_text": "a spooky flick by MADHU",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "spooky",
+    "intense",
+    "mystery",
+    "suspense",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text",
+      "conf": 0.85
+    },
+    {
+      "name": "atmosphere",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A close-up of an intense, shadowy face with dramatic lighting, accompanied by the title 'FEAR' and a tagline."
+}

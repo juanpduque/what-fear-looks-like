@@ -1,0 +1,37 @@
+[18:32:34] chain=52265 py=52282 log=4143 partial=3519261 | {"phase":"alllang_detecttext","status":"running","ts":"2026-08-04T23:26:29Z"} |   2300/15642 id=940233 src=detecttext sent=NEUTRAL 9.2/s
+[18:36:34] chain=52265 py=52282 log=4143 partial=3519261 | {"phase":"alllang_detecttext","status":"running","ts":"2026-08-04T23:26:29Z"} |   2300/15642 id=940233 src=detecttext sent=NEUTRAL 9.2/s
+[18:40:34] chain=52265 py=52282 log=4143 partial=3519261 | {"phase":"alllang_detecttext","status":"running","ts":"2026-08-04T23:26:29Z"} |   2300/15642 id=940233 src=detecttext sent=NEUTRAL 9.2/s
+[18:44:34] chain=DEAD py=DEAD log=4812 partial=3519261 | {"phase":"alllang_detecttext","status":"running","ts":"2026-08-04T23:26:29Z"} | step alllang_detecttext exit=1
+[18:44:34] PROCESSES DEAD without done — check errors
+=== monitor v2 start 2026-08-05T00:16:14Z ===
+[19:16:14] chain=DEAD py=DEAD free=10Gi | {"phase":"alllang_detecttext","status":"running","ts":"2026-08-05T00:15:49Z"} |   checkpoint → ocr_comprehend_alllang_partial.csv (23,269)
+[19:16:14] DEAD without done
+=== monitor v3 start 2026-08-05T00:20:17Z ===
+[19:20:17] chain=55053 py=55077 free=10Gi | {"phase":"alllang_detecttext","status":"running","ts":"2026-08-05T00:19:36Z"} |   checkpoint → ocr_comprehend_alllang_partial.csv (23,769)
+[19:20:17] chain finished in terminal
+started_at: 2026-08-05T00:19:35.693Z
+running_for_ms: 40011    
+---
+=== comprehend fullset START 2026-08-05T00:19:36Z workers=8 ===
+--- alllang_detecttext ---
+=== monitor v4 (no false DONE) 2026-08-05T00:26:59Z ===
+[19:26:59] nchain=3 npy=2 chain=56246 py=56298 free=10Gi | {"phase":"alllang_detecttext","status":"running","ts":"2026-08-05T00:26:36Z"} |   250/9242 id=1220821 src=detecttext sent=NEUTRAL 14.6/s
+=== monitor v4 (no false DONE) 2026-08-05T00:27:36Z ===
+[19:27:36] nchain=5 npy=4 chain=56246 py=56298 free=10Gi | {"phase":"alllang_detecttext","status":"running","ts":"2026-08-05T00:26:36Z"} |   checkpoint → ocr_comprehend_alllang_partial.csv (30,269)
+[19:30:59] nchain=5 npy=4 chain=56246 py=56298 free=10Gi | {"phase":"alllang_detecttext","status":"running","ts":"2026-08-05T00:26:36Z"} |   3100/9242 id=1323103 src=detecttext sent=NEUTRAL 12.1/s
+[19:31:37] nchain=5 npy=4 chain=56246 py=56298 free=10Gi | {"phase":"alllang_detecttext","status":"running","ts":"2026-08-05T00:26:36Z"} |   checkpoint → ocr_comprehend_alllang_partial.csv (33,269)
+[19:35:00] nchain=5 npy=4 chain=56246 py=56298 free=10Gi | {"phase":"alllang_detecttext","status":"running","ts":"2026-08-05T00:26:36Z"} |   6950/9242 id=1574798 src=detecttext sent=NEUTRAL 14.0/s
+[19:35:38] nchain=5 npy=4 chain=56246 py=56298 free=10Gi | {"phase":"alllang_detecttext","status":"running","ts":"2026-08-05T00:26:36Z"} |   7550/9242 id=1620283 src=detecttext sent=NEUTRAL 14.1/s
+[19:39:00] nchain=5 npy=4 chain=56246 py=56391 free=9.4Gi | {"phase":"essay_detecttext","status":"running","ts":"2026-08-05T00:37:44Z"} |   500/37892 id=10513 src=detecttext sent=NEGATIVE 7.4/s
+[19:39:38] nchain=5 npy=4 chain=56246 py=56391 free=9.4Gi | {"phase":"essay_detecttext","status":"running","ts":"2026-08-05T00:37:44Z"} |   checkpoint → ocr_comprehend_partial.csv (50,234)
+[19:43:01] nchain=5 npy=4 chain=56246 py=56391 free=11Gi | {"phase":"essay_detecttext","status":"running","ts":"2026-08-05T00:37:44Z"} |   3950/37892 id=64524 src=detecttext sent=NEGATIVE 12.9/s
+[19:43:40] nchain=5 npy=4 chain=56246 py=56391 free=11Gi | {"phase":"essay_detecttext","status":"running","ts":"2026-08-05T00:37:44Z"} |   4600/37892 id=83414 src=detecttext sent=NEUTRAL 13.3/s
+[19:47:01] nchain=3 npy=3 chain=56391 py=56391 free=10Gi | {"phase":"essay_detecttext","status":"running","ts":"2026-08-05T00:37:44Z"} |   6550/37892 id=149806 src=detecttext sent=NEGATIVE 13.5/s
+[19:47:40] nchain=3 npy=3 chain=56391 py=56391 free=10Gi | {"phase":"essay_detecttext","status":"running","ts":"2026-08-05T00:37:44Z"} |   6550/37892 id=149806 src=detecttext sent=NEGATIVE 13.5/s
+[19:51:01] nchain=3 npy=3 chain=56391 py=56391 free=10Gi | {"phase":"essay_detecttext","status":"running","ts":"2026-08-05T00:37:44Z"} |   6550/37892 id=149806 src=detecttext sent=NEGATIVE 13.5/s
+[19:51:40] nchain=3 npy=3 chain=56391 py=56391 free=10Gi | {"phase":"essay_detecttext","status":"running","ts":"2026-08-05T00:37:44Z"} |   6550/37892 id=149806 src=detecttext sent=NEGATIVE 13.5/s
+[19:55:01] nchain=1 npy=1 chain=56637 py=56637 free=10Gi | {"phase":"essay_detecttext","status":"running","ts":"2026-08-05T00:37:44Z"} |   6550/37892 id=149806 src=detecttext sent=NEGATIVE 13.5/s
+[19:55:40] nchain=1 npy=1 chain=56409 py=56409 free=10Gi | {"phase":"essay_detecttext","status":"running","ts":"2026-08-05T00:37:44Z"} |   6550/37892 id=149806 src=detecttext sent=NEGATIVE 13.5/s
+[19:59:01] nchain=1 npy=1 chain=56637 py=56637 free=10Gi | {"phase":"essay_detecttext","status":"running","ts":"2026-08-05T00:37:44Z"} |   6550/37892 id=149806 src=detecttext sent=NEGATIVE 13.5/s
+[19:59:41] nchain=1 npy=1 chain=56409 py=56409 free=10Gi | {"phase":"essay_detecttext","status":"running","ts":"2026-08-05T00:37:44Z"} |   6550/37892 id=149806 src=detecttext sent=NEGATIVE 13.5/s
+[22:34:27] COMPREHEND DONE n=113550

@@ -1,0 +1,38 @@
+{
+  "title_text": "Frankenstein's Creature",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "dramatic",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "creature",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic poster featuring a monstrous green-faced creature surrounded by distressed characters, evoking classic horror themes."
+}

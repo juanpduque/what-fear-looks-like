@@ -1,0 +1,28 @@
+QA_PIXTRAL_SCOUT_START Mon Aug  3 10:31:25 -05 2026
+QA sample n_posters=119 jobs=238 models=['pixtral', 'llama4-scout'] workers=3
+  10/238 ok=10 err=0 id=85051 model=llama4-scout risk=low_signal 9s
+  20/238 ok=20 err=0 id=94841 model=llama4-scout risk=low_signal 17s
+  30/238 ok=30 err=0 id=40761 model=pixtral risk=ok 25s
+  40/238 ok=40 err=0 id=49810 model=pixtral risk=ok 31s
+  50/238 ok=50 err=0 id=272423 model=pixtral risk=ok 40s
+  60/238 ok=60 err=0 id=43613 model=pixtral risk=ok 47s
+  70/238 ok=70 err=0 id=42462 model=pixtral risk=ok 55s
+  80/238 ok=80 err=0 id=1090184 model=llama4-scout risk=low_signal 63s
+  90/238 ok=90 err=0 id=1077097 model=llama4-scout risk=low_signal 76s
+  100/238 ok=100 err=0 id=1694687 model=llama4-scout risk=low_signal 92s
+  110/238 ok=110 err=0 id=144351 model=llama4-scout risk=low_signal 107s
+  120/238 ok=120 err=0 id=43650 model=llama4-scout risk=low_signal 121s
+  130/238 ok=130 err=0 id=141390 model=llama4-scout risk=low_signal 137s
+  140/238 ok=140 err=0 id=242358 model=llama4-scout risk=low_signal 152s
+  150/238 ok=150 err=0 id=1575013 model=llama4-scout risk=low_signal 167s
+  160/238 ok=160 err=0 id=28426 model=llama4-scout risk=low_signal 182s
+  170/238 ok=170 err=0 id=1129093 model=llama4-scout risk=low_signal 197s
+  180/238 ok=180 err=0 id=200872 model=llama4-scout risk=low_signal 212s
+  190/238 ok=190 err=0 id=329289 model=llama4-scout risk=low_signal 227s
+  200/238 ok=200 err=0 id=918615 model=llama4-scout risk=low_signal 242s
+  210/238 ok=210 err=0 id=455141 model=llama4-scout risk=low_signal 256s
+  220/238 ok=220 err=0 id=1380088 model=llama4-scout risk=low_signal 271s
+  230/238 ok=230 err=0 id=24075 model=llama4-scout risk=low_signal 288s
+  238/238 ok=238 err=0 id=212391 model=pixtral risk=ok 303s
+done → /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/nova_qa_sample.csv ok=238 err=0
+QA_PIXTRAL_SCOUT_END exit=0 Mon Aug  3 10:36:31 -05 2026

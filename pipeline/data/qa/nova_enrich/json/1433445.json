@@ -1,0 +1,36 @@
+{
+  "title_text": "BLOODY REVENGE",
+  "credits_text": "Another run-of-the-mill slasher film",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Fabricio J. Osuna",
+  "mood": [
+    "dread",
+    "violent",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 1.0
+    },
+    {
+      "name": "blood",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A poster featuring a bloody saw and the title 'Bloody Revenge' by Fabricio J. Osuna, indicating a slasher film."
+}

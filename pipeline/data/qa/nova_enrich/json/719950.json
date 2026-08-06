@@ -1,0 +1,39 @@
+{
+  "title_text": "STOP IT, YOU'RE KILLING ME",
+  "credits_text": "STARRING ZANIE FORMAN, JESSICA RICKWITH, JAMES BLACK & MICHAEL TOFF",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Waxan Entertainment Presents",
+  "mood": [
+    "horror",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains disturbing imagery and themes of psychological horror.",
+  "description": "A poster featuring multiple distorted faces with the title 'STOP IT, YOU'RE KILLING ME' prominently displayed."
+}

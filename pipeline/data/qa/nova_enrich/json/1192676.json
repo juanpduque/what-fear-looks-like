@@ -1,0 +1,40 @@
+{
+  "title_text": "Dracula",
+  "credits_text": "The Monster",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "erotic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "erotic",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "erotic"
+  ],
+  "moderation_notes": "Contains suggestive imagery and themes of horror.",
+  "description": "A dark, blurred poster features the title 'Dracula' and the tagline 'The Monster' in bold yellow text against a shadowy background."
+}

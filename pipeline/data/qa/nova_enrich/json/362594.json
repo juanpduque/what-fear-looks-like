@@ -1,0 +1,50 @@
+{
+  "title_text": "DEATH O'LANTERN",
+  "credits_text": "HE'S HUNGRY...FOR HUMAN PIE! 25TH ANNIVERSARY SPECIAL EDITION MUSIC FROM CUBE RADIKILL SUZANNE WALCKER TOBE LOEBE LUCIUS HOGAN INCLUDES HIT MUSIC FROM THE WARLOCK SQUALL CUBE SQUIRRELED VASE TONGUE - DARK SPELL DIRECTED BY RUDY BELLE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BANNED! IN 11 COUNTRIES! Full Movie Not Shown In Over 3,000 Theatres Nationwide! WARLOCK HOME VIDEO",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "camp",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "knife",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "house",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "A horror movie poster features a menacing pumpkin head and a screaming figure with a knife, promoting the 25th anniversary edition of 'Death O'Lantern'."
+}

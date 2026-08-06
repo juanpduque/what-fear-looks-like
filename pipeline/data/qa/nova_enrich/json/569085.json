@@ -1,0 +1,46 @@
+{
+  "title_text": "CLOWNESPLOTATION",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BODEBAG FILMS AND TRASH ARTS PRESENTS",
+  "mood": [
+    "surreal",
+    "disturbing",
+    "grotesque",
+    "camp",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "grotesque",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic and disturbing imagery, including blood and a monstrous clown face.",
+  "description": "A stylized poster features a grotesque, monstrous clown face with vibrant red and yellow colors, accompanied by bold text."
+}

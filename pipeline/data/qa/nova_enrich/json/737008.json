@@ -1,0 +1,44 @@
+{
+  "title_text": "JAMU TAK",
+  "credits_text": "DI PAWAGAM 27 OGOS 2020",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MELEZAT SUMBAK",
+  "mood": [
+    "horror",
+    "thriller",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and implied violence.",
+  "description": "A group of people are shown in a tense, horror-themed setting with a monstrous figure looming in the background."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "DEATHGASM",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "metal",
+    "dark",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "guitar",
+      "conf": 0.8
+    },
+    {
+      "name": "bat",
+      "conf": 0.7
+    },
+    {
+      "name": "demon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.4,
+  "blood_gore": 0.2,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and demonic themes.",
+  "description": "A poster featuring a band with a demonic figure, a guitarist, and a woman, set against a dark, gothic background with bold red accents."
+}

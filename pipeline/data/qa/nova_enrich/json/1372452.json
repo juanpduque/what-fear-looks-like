@@ -1,0 +1,51 @@
+{
+  "title_text": "EL JACHO",
+  "credits_text": "UNA LEYENDA PUERTORRIQUEÑA",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "Winner LUSCA 2023, Panic Fest 2023, Screamfest 2023, Morbo Fest 2023, PHL Arts & Film Festival 2023, etc.",
+  "mood": [
+    "gothic",
+    "horror",
+    "supernatural",
+    "dread",
+    "folklore"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and horror elements typical of slasher films.",
+  "description": "A poster features a monstrous figure holding a weapon, standing in a dark forest near a house, with eerie lighting and dramatic shadows."
+}

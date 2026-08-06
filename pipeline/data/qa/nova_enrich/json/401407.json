@@ -1,0 +1,41 @@
+{
+  "title_text": "HOUSE of STRAW",
+  "credits_text": "Little pig, little pig, let me out. 'HOUSE OF STRAW' starring: Liz Beckham, Jason Newman, Joseph Carlock. Directed by Richard Renninger. Written by Kyle Bogart.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "erotic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.1,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "The poster features partial nudity and suggestive imagery.",
+  "description": "A red background poster for the film 'House of Straw' shows a shadowy figure and the tagline 'Little pig, little pig, let me out.'"
+}

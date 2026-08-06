@@ -1,0 +1,41 @@
+{
+  "title_text": "Mad Monster Party",
+  "credits_text": "A Rankin/Bass Production Boris Karloff and Phylis Diller",
+  "languages": [
+    "en"
+  ],
+  "other_text": "It's The Silliest Party of the Year... and you're all invited! SEE FRANKENSTEIN SEE THE CREATOR SEE THE INVISIBLE MAN SEE THE WOLF MAN SEE THE MONSTER SEE THE INVISIBLE GIRL SEE THE INVISIBLE BOY SEE THE INVISIBLE KING SEE THE INVISIBLE HE HAS BOY PRODUCTION SAT. SUN. MON. TUE. WED. THU. FRI. SAT.",
+  "mood": [
+    "camp",
+    "humorous",
+    "fantasy",
+    "retro",
+    "whimsical"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "Vibrant poster features cartoonish monsters and characters at a lively party, with Boris Karloff and Phylis Diller billed prominently."
+}

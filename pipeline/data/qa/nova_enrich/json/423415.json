@@ -1,0 +1,45 @@
+{
+  "title_text": "RED EYE",
+  "credits_text": "HE WANTS TO SEE YOUR INSIDES.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "dread",
+    "suspense",
+    "forest"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "text",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a threatening tone.",
+  "description": "A poster shows two silhouetted figures in a red-lit forest with the title 'RED EYE' and the tagline 'HE WANTS TO SEE YOUR INSIDES.'"
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "AMERIKAN VIOLENCE",
+  "credits_text": "AN MG KELLY FILM\nDIVAIDI STUDIOS PRESENTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NO ONE IN THE CITY GONNA KILL LIKE US",
+  "mood": [
+    "aggressive",
+    "threatening",
+    "intense",
+    "violent",
+    "anarchic"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "mask",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts violent themes and aggressive imagery.",
+  "description": "Poster shows four masked individuals, one holding a large axe, with bold red and black text reading 'AMERIKAN VIOLENCE.'"
+}

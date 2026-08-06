@@ -1,0 +1,46 @@
+{
+  "title_text": "THE DOG FROM A GRAVEYARD",
+  "credits_text": "written and directed by ALAN RUTHERFORD; director of photography ERIC HOVENECK produced by ROSS ORNOSTATE; special effects by ROSS ORNOSTATE; original music by BEN JAMES; edited by CASEY STUBBS; original score by ALIVE ENDINGS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NOT RATED - CONTAINS GRAPHIC VIOLENCE FOR MATURE AUDIENCES ONLY",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "haunting",
+    "macabre"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.9,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic violence and occult imagery.",
+  "description": "A poster features a large wolf's face with a graveyard scene and people in the background, titled 'The Dog From a Graveyard.'"
+}

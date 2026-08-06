@@ -1,0 +1,42 @@
+{
+  "title_text": "SANDÉKALA ENITURHT",
+  "credits_text": "WRITTEN AND DIRECTED BY: IOAN TIMIRAS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "RUMUS MAJE RENT",
+  "mood": [
+    "mysterious",
+    "haunting",
+    "forest",
+    "ritualistic"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "ritual",
+      "conf": 0.8
+    },
+    {
+      "name": "mask",
+      "conf": 0.7
+    },
+    {
+      "name": "text",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a masked figure in a dark forest setting with ritualistic elements and text overlay."
+}

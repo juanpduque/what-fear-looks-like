@@ -1,0 +1,35 @@
+{
+  "title_text": "D-TOX",
+  "credits_text": "From The Director of I Know What You Did Last Summer\nSYLVESTER STALLONE\nSurvival is a killer.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "UNIVERSAL PICTURES PRESENTS IN ASSOCIATION WITH \"KE MEDIEN\" CAPELLA II \"D-TOX\" TOM BERENGER CHARLES GUTTON SEAN PATRICK FLANERY DINA MEyer ROBERT PATRICK ROBERT GUSKY VANCE POLLY WALKER JEFFREY WRIGHT AND KRIS KRISTOFFERSON JOHN POWELL KEVIN KING \"STEVE MIRVICH\" COURTNEY WOSSNER AND \"BEAN\" SEAN SEMLER ABC MONEY \"RICK\" STONE \"JIM\" GOLDSIE A UNIVERSAL RELEASE",
+  "mood": [
+    "intense",
+    "suspenseful",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.3
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a firearm.",
+  "description": "A man points a gun with a fiery background, forest silhouette, and tagline \"Survival is a killer.\""
+}

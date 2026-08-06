@@ -1,0 +1,45 @@
+{
+  "title_text": "NECROMAN",
+  "credits_text": "Written & Directed by STEVEN ARM\n\nFEATURING: HELEN HUNT, NICK GULARDO, LISA MARIE, JESSICA LOWE, SUSAN GIBSON, JOSHUA HARTNETT, DARRICK ROSENBERG, ERIN DUNNE, JOSHUA GIBSON, NICK GULARDO, LISA MARIE, JESSICA LOWE, SUSAN GIBSON, JOSHUA HARTNETT, DARRICK ROSENBERG, ERIN DUNNE, STEVEN ARM, HELEN HUNT\n\nA LITTLE DRAMA\nMORE FEAR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EVIL IS NOT EVIL BY NATURE... BIG THINGS COME FROM SMALL THINGS",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "occult",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "A dark poster features a woman with long blonde hair and a knife, with smoky, ghostly elements and dramatic text."
+}

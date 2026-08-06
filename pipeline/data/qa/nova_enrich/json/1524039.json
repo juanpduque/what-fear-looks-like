@@ -1,0 +1,45 @@
+{
+  "title_text": "สาสัยงานสารง",
+  "credits_text": "RATHEAN SUM RAMAYANI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "31.07.2025",
+  "mood": [
+    "gothic",
+    "haunting",
+    "mysterious",
+    "dark",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.2,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and eerie atmosphere, but no explicit violence or sexual content.",
+  "description": "A woman stands in a dimly lit, haunted setting surrounded by skulls and occult symbols, suggesting a gothic horror theme."
+}

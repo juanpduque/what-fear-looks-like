@@ -1,0 +1,46 @@
+{
+  "title_text": "CREEPS",
+  "credits_text": "LAS VEGAS ATTACK\nKING SPIDER VS. THE MECHA-DESTRUCTOR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "sci-fi",
+    "horror",
+    "camp",
+    "fantasy"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic action and implied violence.",
+  "description": "Movie poster shows a giant spider battling a robotic figure amidst flames and cityscape ruins in Las Vegas."
+}

@@ -1,0 +1,37 @@
+{
+  "title_text": "THE ZAA",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "suspense",
+    "medical horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "medical",
+      "conf": 0.9
+    },
+    {
+      "name": "injection",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A close-up of a person wearing protective gear with a syringe filled with red liquid prominently displayed, suggesting a medical horror theme."
+}

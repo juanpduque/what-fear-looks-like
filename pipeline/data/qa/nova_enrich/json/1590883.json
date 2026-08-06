@@ -1,0 +1,39 @@
+{
+  "title_text": "Silence of the Night",
+  "credits_text": "A FILM BY PRABHASWARA DEVMINA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"Every night, I close my eyes and enter a world of monsters. It's always the same. Always terrifying.\"",
+  "mood": [
+    "dread",
+    "haunting",
+    "psychological",
+    "disturbing",
+    "nightmarish"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A distressed girl covers her face against a dark background with shattered glass overlays, suggesting a haunting or psychological horror theme."
+}

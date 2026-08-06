@@ -1,0 +1,39 @@
+{
+  "title_text": "GRINDHOUSE",
+  "credits_text": "A film by Austin Mitrione\nAlicia McDonald, Jessie D, Dylan Perez, Taylor Frisco",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"IT'S EXACTLY WHAT YOU THINK IT IS.\"\nRESTRICTED R RATED\nRETRO DREAM FILMS",
+  "mood": [
+    "gritty",
+    "retro",
+    "thriller",
+    "suspense",
+    "noir"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Movie poster for 'Grindhouse' featuring four characters against a dark, eerie background with a retro aesthetic."
+}

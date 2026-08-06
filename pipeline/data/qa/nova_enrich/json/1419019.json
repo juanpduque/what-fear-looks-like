@@ -1,0 +1,41 @@
+{
+  "title_text": "สมาที่เจิงจันที่",
+  "credits_text": "อันไปต์ อัวระงก / อัวโหมด / อัวที่นัง",
+  "languages": [
+    "th"
+  ],
+  "other_text": "13 THIRTEEN STUDIO",
+  "mood": [
+    "tense",
+    "action",
+    "suspense",
+    "forest",
+    "adventure"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "tiger",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.7,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violent action and weapon imagery.",
+  "description": "Four men in tactical gear hold weapons in a dense forest, with a menacing tiger in the background."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "ELLIOT'S CRADLE",
+  "credits_text": "DANIELLE ALEXANDER MS.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DON'T TURN AROUND",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood, suitable for mature audiences.",
+  "description": "A close-up of a woman's face with blood near her eye, accompanied by a shadowy, clawed hand and the title 'Elliot's Cradle.'"
+}

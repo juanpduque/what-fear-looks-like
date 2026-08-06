@@ -1,0 +1,47 @@
+{
+  "title_text": "SUPER Z",
+  "credits_text": "JOAN LOBERDEAU JULIEN COURBET FABIEN AIA LAURENCE MESZAROSAN AUDREY HENNEBERT FLORENCE PRESTIA JO BONNET",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "other_text": "IL NY A PLUS DE LUMIÈRE !",
+  "mood": [
+    "action",
+    "horror",
+    "comedy",
+    "violent",
+    "zombie"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster featuring a group of characters with intense expressions, blood splatters, and a weapon, promoting a horror-comedy film titled 'Super Z'."
+}

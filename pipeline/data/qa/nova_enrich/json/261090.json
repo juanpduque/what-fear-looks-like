@@ -1,0 +1,42 @@
+{
+  "title_text": "CANNIBALLISTIC!",
+  "credits_text": "\"a wickedly subversive tale packed with blood-soaked laughs and amusing characters\" --Zeta Digital Shock Cinema",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"Fine performances, strong direction, effective music and a smart, tongue-in-cheek script make Cannibalistica no-budget winner ... check it out\" --Nina T. Lee, Rue Morgue\n\n\"Will was a vegetarian pacifist trying to forget his flesh-eating past. But when the citizens of this small town pushed him too far, he went---\"",
+  "mood": [
+    "camp",
+    "dark humor",
+    "subversive",
+    "violent",
+    "satirical"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intended for mature audiences.",
+  "description": "Poster features a man in a leather jacket with sunglasses, set against a dark background, promoting a dark comedy titled 'Cannibalistic!'."
+}

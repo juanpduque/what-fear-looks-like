@@ -1,0 +1,46 @@
+{
+  "title_text": "The Black Sun Snuff Dolls",
+  "credits_text": "Nut-Wombat Studios presents an Indie Horror Film starring the Nut-Wombat Crew and some Special Guests written and directed by Ocelot-767 & Kockman",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "eerie",
+    "disturbing",
+    "macabre"
+  ],
+  "fear_labels": [
+    {
+      "name": "doll",
+      "conf": 0.9
+    },
+    {
+      "name": "gothic",
+      "conf": 0.8
+    },
+    {
+      "name": "horror",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror themes and occult imagery.",
+  "description": "A woman in vintage attire holds a doll with a creepy expression, set against a dark, ornate background, suggesting a horror theme."
+}

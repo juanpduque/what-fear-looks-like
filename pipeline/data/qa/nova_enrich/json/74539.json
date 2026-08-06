@@ -1,0 +1,45 @@
+{
+  "title_text": "KILLER MOUNTAIN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "adventure",
+    "danger",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "danger",
+      "conf": 0.9
+    },
+    {
+      "name": "helicopter",
+      "conf": 0.7
+    },
+    {
+      "name": "mountain",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.95,
+  "blood_gore": 0.1,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied danger and potential violence due to the presence of a large dinosaur and action elements.",
+  "description": "A poster shows a person climbing near a massive, open-mouthed dinosaur with a helicopter in the background, suggesting an action-packed adventure."
+}

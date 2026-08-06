@@ -1,0 +1,41 @@
+{
+  "title_text": "TSUNAMI SHARKS",
+  "credits_text": "THESE SHARKS ARE PAINTING THE TOWN RED TONIGHT!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TAXI",
+  "mood": [
+    "action",
+    "thriller",
+    "horror",
+    "disaster",
+    "sci-fi"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.95
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and implied violence involving sharks.",
+  "description": "A person stands on a flooded taxi as a giant shark emerges from turbulent waters in a cityscape."
+}

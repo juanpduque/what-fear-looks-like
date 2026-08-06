@@ -1,0 +1,40 @@
+{
+  "title_text": "GRAINES",
+  "credits_text": "UN FILM DE HERVE FREIBURGER",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "other_text": "LES FILMS DE TONNERRE SYNOVIE PRÉSENTENT",
+  "mood": [
+    "surreal",
+    "haunting",
+    "mysterious",
+    "disturbing",
+    "symbolic"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a fragmented, shadowy figure surrounded by branches, with the title 'GRAINES' prominently displayed below."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "MURDERFEST",
+  "credits_text": "A TIM HANNIGAN FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Five Live Streaming Serial Killers. Ten Unsuspecting Victims. One Sick And Twisted Competition. LIVE STREAMING DEATH www.lakeshorepictures.com",
+  "mood": [
+    "horror",
+    "thriller",
+    "psychological",
+    "suspense",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "mask",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.5,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and disturbing imagery.",
+  "description": "Poster features four masked figures in a dark forest setting with bold red text advertising a horror film titled 'Murderfest' by Tim Hannigan."
+}

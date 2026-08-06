@@ -1,0 +1,46 @@
+{
+  "title_text": "WORLD OF THE LIVING DEAD",
+  "credits_text": "GSI ERNETA JOE TRACKEY JASON HARPER STEPHEN LEE STEPHEN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FSH 18",
+  "mood": [
+    "apocalyptic",
+    "horror",
+    "survival",
+    "dread",
+    "desolation"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.5,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes; no explicit gore or nudity visible.",
+  "description": "A post-apocalyptic scene with a raised hand reaching from the ground, cars on a deserted road, and a city skyline in the background."
+}

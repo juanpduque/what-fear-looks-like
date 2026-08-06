@@ -1,0 +1,43 @@
+{
+  "title_text": "A CREATURE IS STIRRING",
+  "credits_text": "'Tis the Season...to SCREAM!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "This Christmas...",
+  "mood": [
+    "holiday",
+    "horror",
+    "creepy",
+    "festive",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "horror",
+      "conf": 0.85
+    },
+    {
+      "name": "holiday",
+      "conf": 0.75
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A creepy nutcracker with a menacing expression and festive holiday decorations in the background."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "MERAZIK",
+  "credits_text": "NU BY TSAQIF",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE FIRST POSSESSOR",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic violence and occult imagery.",
+  "description": "A dramatic poster features a dark, intense face with blood and occult symbols, titled 'MERAZIK' and subtitled 'THE FIRST POSSESSOR.'"
+}

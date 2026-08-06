@@ -1,0 +1,41 @@
+{
+  "title_text": "DIKE JAR ZOMBIE",
+  "credits_text": "YANG MERINDUKAN KEHANGATAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "cameo project",
+  "mood": [
+    "horror",
+    "thriller",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "zombie",
+      "conf": 0.95
+    },
+    {
+      "name": "hallway",
+      "conf": 0.8
+    },
+    {
+      "name": "panic",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man stands in a dimly lit hallway with a shocked expression, suggesting a horror theme involving zombies."
+}

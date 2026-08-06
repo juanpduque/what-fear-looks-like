@@ -1,0 +1,46 @@
+{
+  "title_text": "EL-DECUR",
+  "credits_text": "SUARE FILM · FATIH KINAÇI NASIMÇA TÜYEN AYRAľ MENÇI DİLARA EMDECER MERVE CEYLAN ATALAN TÜRKÇE AÇADİ ISMAIL ÇELEBİ KORO KORAY EBRAHIM ÇEYLAN ÇUKUR ÇAĞAR BURCU ARİ SANAT YÖNETMENİ ÇAĞAR BAHÇELİ SANAT YÖNETMENİ ÇORAN KARAMAN YAPIM YÖNETMENİ YİLMAZ YAN ÇİĞAN ARİ",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "KARANLIK ÇOKTÜÇÜNDE GÜNEŞ HİÇ DOĞMAYACAK 26 TEMMUZ'DA SINEMALARDA",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "surreal",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and a monstrous face.",
+  "description": "A poster shows a distorted, screaming face with blood against a dark forest background, with Turkish text and release date."
+}

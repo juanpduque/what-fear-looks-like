@@ -1,0 +1,43 @@
+{
+  "title_text": "HUMAN EXPERIMENTS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "prison",
+      "conf": 0.9
+    },
+    {
+      "name": "experiment",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "creature",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.5,
+  "person": 1.0,
+  "animal": 0.4,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and disturbing imagery.",
+  "description": "A dramatic poster shows a distressed woman behind bars, a man in a suit, and a person holding a gun, with a scorpion on the ground."
+}

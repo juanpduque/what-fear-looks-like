@@ -1,0 +1,43 @@
+{
+  "title_text": "THE ROOM",
+  "credits_text": "\"--should be seen by anyone calling themselves a horror fan\" - ROLLER FILM TIMES\n\"--a gazillion times more effective, as a horror and a drama, than anything in Gliger Saup\" - AMANDA KEITH, PILAR CASSON\n\"--the future of horror is secure!\" ARROW IN THE HEAD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "claustrophobic",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "claustrophobia",
+      "conf": 0.9
+    },
+    {
+      "name": "psychological",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "darkness",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dimly lit room with a single figure sitting on the floor, illuminated by a single light source, creating an eerie and oppressive atmosphere."
+}

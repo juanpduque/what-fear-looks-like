@@ -1,0 +1,45 @@
+{
+  "title_text": "間機 10",
+  "credits_text": "真話ニューサン消水、消水平客伝",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "影片の実際を悪して言える！",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "A dark, eerie poster features a ghostly face and Japanese text, suggesting a horror film with psychological suspense."
+}

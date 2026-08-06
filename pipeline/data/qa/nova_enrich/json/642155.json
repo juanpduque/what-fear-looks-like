@@ -1,0 +1,51 @@
+{
+  "title_text": "NECROPHAGIA",
+  "credits_text": "THROUGH THE EYES OF THE DEAD UNCUT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "occult",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "occult",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with occult themes and implied violence.",
+  "description": "A horror poster featuring a monstrous face, flames, and robed figures surrounding a central figure in a dark, fiery setting."
+}

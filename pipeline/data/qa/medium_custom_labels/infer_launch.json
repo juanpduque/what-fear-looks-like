@@ -1,0 +1,23 @@
+{
+  "launched_at": "2026-08-05T13:43:09Z",
+  "instance_id": "i-0d280ed45c9a33f04",
+  "public_ip": "34.230.72.225",
+  "name": "wflike-custom-labels-infer",
+  "n_ids": 65201,
+  "ids_source": "posters_extended",
+  "version_arn": "arn:aws:rekognition:us-east-1:567596065542:project/wflike-medium-clf/version/v202608040132/1785807179332",
+  "min_inference_units": 1,
+  "workers": 8,
+  "min_interval": 0.05,
+  "limit": 0,
+  "poster_s3": "s3://sagemaker-studio-a5572760/wflike-community-72k/posters/",
+  "results_s3": "s3://sagemaker-studio-a5572760/wflike-custom-labels/infer/results/",
+  "local_csv": "data/qa/medium_custom_labels/infer_full.csv",
+  "protect_left_running": ["i-07b62870cc441c343", "i-0ed17614a9172bf6c"],
+  "monitor": {
+    "progress": "aws s3 cp s3://sagemaker-studio-a5572760/wflike-custom-labels/infer/results/progress.json -",
+    "log": "aws s3 cp s3://sagemaker-studio-a5572760/wflike-custom-labels/infer/results/infer_ec2.log -",
+    "model": "aws rekognition describe-project-versions --project-arn arn:aws:rekognition:us-east-1:567596065542:project/wflike-medium-clf/1785807168455 --version-names v202608040132 --query 'ProjectVersionDescriptions[0].Status' --output text"
+  },
+  "cost_note": "Custom Labels inference units ~$4/hr/IU while RUNNING; stop on DONE. DetectCustomLabels per image extra. ETA ~ few hours at ~5-15 img/s depending on IU+workers."
+}

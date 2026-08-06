@@ -1,0 +1,128 @@
+=== ocr_kimi_hard_chain start Fri Jul 31 02:39:42 UTC 2026 ===
+using python from /opt/pytorch/bin
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+mlflow 3.14.0 requires pandas<3, but you have pandas 3.0.5 which is incompatible.
+sagemaker-core 2.17.0 requires protobuf<7.0.0,>=3.12, but you have protobuf 7.35.1 which is incompatible.
+numba 0.66.0 requires numpy<2.5,>=1.22, but you have numpy 2.5.1 which is incompatible.
+databricks-sdk 0.122.0 requires protobuf!=5.26.*,!=5.27.*,!=5.28.*,!=5.29.0,!=5.29.1,!=5.29.2,!=5.29.3,!=5.29.4,!=6.30.0,!=6.30.1,!=6.31.0,<7.0,>=4.25.8, but you have protobuf 7.35.1 which is incompatible.
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+torch 2.13.0+cu130 cuda True
+gpu NVIDIA A10G vram_gb 23.7
+Completed 84 Bytes/84 Bytes (1.4 KiB/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_kimi_hard/sample_ids.txt to data/qa/ocr_kimi_hard/sample_ids.txt
+Completed 2.5 KiB/2.5 KiB (39.4 KiB/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_kimi_hard/posters.csv to data/posters.csv
+Completed 12.3 KiB/2.2 MiB (44.4 KiB/s) with 12 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_kimi_hard/posters/1405670.jpg to data/posters_hard/1405670.jpg
+Completed 12.3 KiB/2.2 MiB (44.4 KiB/s) with 11 file(s) remainingCompleted 62.0 KiB/2.2 MiB (202.3 KiB/s) with 11 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_kimi_hard/posters/233194.jpg to data/posters_hard/233194.jpg
+Completed 62.0 KiB/2.2 MiB (202.3 KiB/s) with 10 file(s) remainingCompleted 318.0 KiB/2.2 MiB (978.8 KiB/s) with 10 file(s) remainingCompleted 477.1 KiB/2.2 MiB (1.4 MiB/s) with 10 file(s) remaining  download: s3://aof-owlv2-102516364259/ocr_kimi_hard/posters/286452.jpg to data/posters_hard/286452.jpg
+Completed 477.1 KiB/2.2 MiB (1.4 MiB/s) with 9 file(s) remainingCompleted 526.3 KiB/2.2 MiB (1.5 MiB/s) with 9 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_kimi_hard/posters/1483743.jpg to data/posters_hard/1483743.jpg
+Completed 526.3 KiB/2.2 MiB (1.5 MiB/s) with 8 file(s) remainingCompleted 547.3 KiB/2.2 MiB (1.6 MiB/s) with 8 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_kimi_hard/posters/1578643.jpg to data/posters_hard/1578643.jpg
+Completed 547.3 KiB/2.2 MiB (1.6 MiB/s) with 7 file(s) remainingCompleted 803.3 KiB/2.2 MiB (2.3 MiB/s) with 7 file(s) remainingCompleted 829.4 KiB/2.2 MiB (2.3 MiB/s) with 7 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_kimi_hard/posters/940187.jpg to data/posters_hard/940187.jpg
+Completed 829.4 KiB/2.2 MiB (2.3 MiB/s) with 6 file(s) remainingCompleted 965.3 KiB/2.2 MiB (2.7 MiB/s) with 6 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_kimi_hard/posters/653537.jpg to data/posters_hard/653537.jpg
+Completed 965.3 KiB/2.2 MiB (2.7 MiB/s) with 5 file(s) remainingCompleted 1.2 MiB/2.2 MiB (3.4 MiB/s) with 5 file(s) remaining  Completed 1.3 MiB/2.2 MiB (3.7 MiB/s) with 5 file(s) remaining  download: s3://aof-owlv2-102516364259/ocr_kimi_hard/posters/1015482.jpg to data/posters_hard/1015482.jpg
+Completed 1.3 MiB/2.2 MiB (3.7 MiB/s) with 4 file(s) remainingCompleted 1.4 MiB/2.2 MiB (3.9 MiB/s) with 4 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_kimi_hard/posters/10283.jpg to data/posters_hard/10283.jpg
+Completed 1.4 MiB/2.2 MiB (3.9 MiB/s) with 3 file(s) remainingCompleted 1.6 MiB/2.2 MiB (4.6 MiB/s) with 3 file(s) remainingCompleted 1.9 MiB/2.2 MiB (5.3 MiB/s) with 3 file(s) remainingCompleted 1.9 MiB/2.2 MiB (5.3 MiB/s) with 3 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_kimi_hard/posters/77399.jpg to data/posters_hard/77399.jpg
+Completed 1.9 MiB/2.2 MiB (5.3 MiB/s) with 2 file(s) remainingCompleted 2.0 MiB/2.2 MiB (5.5 MiB/s) with 2 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_kimi_hard/posters/26921.jpg to data/posters_hard/26921.jpg
+Completed 2.0 MiB/2.2 MiB (5.5 MiB/s) with 1 file(s) remainingCompleted 2.2 MiB/2.2 MiB (6.1 MiB/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_kimi_hard/posters/28265.jpg to data/posters_hard/28265.jpg
+Completed 393 Bytes/393 Bytes (7.2 KiB/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_kimi_hard/sample_meta.csv to data/qa/ocr_kimi_hard/sample_meta.csv
+Completed 442 Bytes/442 Bytes (6.7 KiB/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_kimi_hard/poster_sources.csv to data/qa/ocr_kimi_hard/poster_sources.csv
+local hard posters: 12
+--- verify S3 write ---
+Completed 29 Bytes/29 Bytes (442 Bytes/s) with 1 file(s) remainingupload: data/qa/ocr_kimi_hard/OCR_PILOT_S3_PROBE to s3://aof-owlv2-102516364259/ocr_kimi_hard/results/OCR_PILOT_S3_PROBE
+S3 write OK (SYNC_SECS=120)
+Completed 5 Bytes/5 Bytes (81 Bytes/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_kimi_hard/MODELS to ../../../../tmp/ocr_kimi_hard_MODELS
+MODELS from S3: kimi
+MODELS=kimi N=12 KIMI_LOAD=4bit KIMI_HF_ID=moonshotai/Kimi-VL-A3B-Instruct
+periodic sync pid=2001 every 120s
+--- disk before kimi ---
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root       193G   16G  178G   8% /
+/dev/root       193G   16G  178G   8% /
+--- run model=kimi result=kimi-vl-hard Fri Jul 31 02:41:19 UTC 2026 ---
+sample n=12 → data/qa/ocr_kimi_hard/sample_ids.txt
+posters_dir=data/posters_hard
+result_model alias: kimi → kimi-vl-hard
+     id                                            title  year
+  10283 Friday the 13th Part VIII: Jason Takes Manhattan  1989
+  26921                  The Mystery of the Mary Celeste  1935
+  28265                              Lovesick: Sick Love  2004
+  77399                           Incense for the Damned  1971
+ 233194                                    8 Butterflies  2010
+ 286452                                    Varsity Blood  2014
+ 653537                                         Whispers  2019
+ 940187                                   THE INQUISTION  2019
+1015482                              Kiss of the Serpent  1988
+1405670                                          xOxExFx  2024
+1483743                               up here, disappear  2025
+1578643                                        Cymophane  2024
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+device=cuda
+
+=== model=kimi result_model=kimi-vl-hard device=cuda n=12 posters=data/posters_hard ===
+/opt/pytorch/lib/python3.13/site-packages/transformers/utils/hub.py:105: FutureWarning: Using `TRANSFORMERS_CACHE` is deprecated and will be removed in v5 of Transformers. Use `HF_HOME` instead.
+  warnings.warn(
+A new version of the following files was downloaded from https://huggingface.co/moonshotai/Kimi-VL-A3B-Instruct:
+- configuration_kimi_vl.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+A new version of the following files was downloaded from https://huggingface.co/moonshotai/Kimi-VL-A3B-Instruct:
+- modeling_kimi_vl.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+Fetching 7 files:   0%|          | 0/7 [00:00<?, ?it/s][periodic-sync 02:43:19] → s3://aof-owlv2-102516364259/ocr_kimi_hard/results/
+Completed 7.7 KiB/8.6 KiB (248.3 KiB/s) with 4 file(s) remainingupload: data/qa/ocr_kimi_hard/ocr_kimi_hard_aws.log to s3://aof-owlv2-102516364259/ocr_kimi_hard/results/ocr_kimi_hard_aws.log
+Completed 7.7 KiB/8.6 KiB (248.3 KiB/s) with 3 file(s) remainingCompleted 8.1 KiB/8.6 KiB (70.3 KiB/s) with 3 file(s) remaining upload: data/qa/ocr_kimi_hard/sample_meta.csv to s3://aof-owlv2-102516364259/ocr_kimi_hard/results/sample_meta.csv
+Completed 8.1 KiB/8.6 KiB (70.3 KiB/s) with 2 file(s) remainingCompleted 8.2 KiB/8.6 KiB (70.2 KiB/s) with 2 file(s) remainingupload: data/qa/ocr_kimi_hard/sample_ids.txt to s3://aof-owlv2-102516364259/ocr_kimi_hard/results/sample_ids.txt
+Completed 8.2 KiB/8.6 KiB (70.2 KiB/s) with 1 file(s) remainingCompleted 8.6 KiB/8.6 KiB (72.1 KiB/s) with 1 file(s) remainingupload: data/qa/ocr_kimi_hard/poster_sources.csv to s3://aof-owlv2-102516364259/ocr_kimi_hard/results/poster_sources.csv
+[periodic-sync 02:45:20] → s3://aof-owlv2-102516364259/ocr_kimi_hard/results/
+Completed 8.7 KiB/8.7 KiB (245.2 KiB/s) with 1 file(s) remainingupload: data/qa/ocr_kimi_hard/ocr_kimi_hard_aws.log to s3://aof-owlv2-102516364259/ocr_kimi_hard/results/ocr_kimi_hard_aws.log
+Fetching 7 files:  14%|█▍        | 1/7 [04:14<25:25, 254.18s/it]Fetching 7 files:  29%|██▊       | 2/7 [04:18<08:56, 107.36s/it]Fetching 7 files: 100%|██████████| 7/7 [04:18<00:00, 36.97s/it] 
+Loading checkpoint shards:   0%|          | 0/7 [00:00<?, ?it/s]Loading checkpoint shards:  14%|█▍        | 1/7 [00:12<01:16, 12.77s/it]Loading checkpoint shards:  29%|██▊       | 2/7 [00:20<00:49,  9.90s/it]Loading checkpoint shards:  43%|████▎     | 3/7 [00:34<00:47, 11.82s/it]Loading checkpoint shards:  57%|█████▋    | 4/7 [00:42<00:30, 10.21s/it]Loading checkpoint shards:  71%|███████▏  | 5/7 [00:55<00:22, 11.32s/it][periodic-sync 02:47:21] → s3://aof-owlv2-102516364259/ocr_kimi_hard/results/
+Completed 9.7 KiB/9.7 KiB (303.0 KiB/s) with 1 file(s) remainingupload: data/qa/ocr_kimi_hard/ocr_kimi_hard_aws.log to s3://aof-owlv2-102516364259/ocr_kimi_hard/results/ocr_kimi_hard_aws.log
+Loading checkpoint shards:  86%|████████▌ | 6/7 [01:12<00:12, 12.99s/it]Loading checkpoint shards: 100%|██████████| 7/7 [01:29<00:00, 14.34s/it]Loading checkpoint shards: 100%|██████████| 7/7 [01:29<00:00, 12.74s/it]
+A new version of the following files was downloaded from https://huggingface.co/moonshotai/Kimi-VL-A3B-Instruct:
+- configuration_kimi_vl.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+A new version of the following files was downloaded from https://huggingface.co/moonshotai/Kimi-VL-A3B-Instruct:
+- processing_kimi_vl.py
+. Make sure to double-check they do not contain any added malicious code. To avoid downloading new versions of the code file, you can pin a revision.
+  kimi loaded: moonshotai/Kimi-VL-A3B-Instruct mode=4bit
+/opt/pytorch/lib/python3.13/site-packages/transformers/generation/configuration_utils.py:631: UserWarning: `do_sample` is set to `False`. However, `temperature` is set to `0.2` -- this flag is only used in sample-based generation modes. You should set `do_sample=True` or unset `temperature`.
+  warnings.warn(
+  id=10283 status=ok chars=37 overlap=0.75 7.437s
+  id=26921 status=ok chars=31 overlap=1.0 3.369s
+  id=28265 status=ok chars=17 overlap=0.3333 3.191s
+  id=77399 status=ok chars=13 overlap=0.0 2.887s
+/opt/pytorch/lib/python3.13/site-packages/bitsandbytes/backends/cuda/ops.py:944: UserWarning: inner dimension (4304) is not aligned for fast kernel with blocksize=64, falling back to slower implementation.
+  warn(
+  id=233194 status=ok chars=29 overlap=1.0 2.622s
+  id=286452 status=ok chars=13 overlap=1.0 2.957s
+  id=653537 status=ok chars=7 overlap=0.0 2.769s
+  id=940187 status=ok chars=8 overlap=0.0 1.634s
+  id=1015482 status=ok chars=22 overlap=0.0 3.158s
+[periodic-sync 02:49:21] → s3://aof-owlv2-102516364259/ocr_kimi_hard/results/
+Completed 22 Bytes/12.8 KiB (738 Bytes/s) with 11 file(s) remainingupload: data/qa/ocr_kimi_hard/kimi-vl-hard/1015482.txt to s3://aof-owlv2-102516364259/ocr_kimi_hard/results/kimi-vl-hard/1015482.txt
+Completed 22 Bytes/12.8 KiB (738 Bytes/s) with 10 file(s) remainingCompleted 850 Bytes/12.8 KiB (9.3 KiB/s) with 10 file(s) remaining upload: data/qa/ocr_kimi_hard/results.csv to s3://aof-owlv2-102516364259/ocr_kimi_hard/results/results.csv
+Completed 850 Bytes/12.8 KiB (9.3 KiB/s) with 9 file(s) remainingCompleted 867 Bytes/12.8 KiB (3.4 KiB/s) with 9 file(s) remainingupload: data/qa/ocr_kimi_hard/kimi-vl-hard/28265.txt to s3://aof-owlv2-102516364259/ocr_kimi_hard/results/kimi-vl-hard/28265.txt
+Completed 867 Bytes/12.8 KiB (3.4 KiB/s) with 8 file(s) remainingCompleted 880 Bytes/12.8 KiB (3.4 KiB/s) with 8 file(s) remainingupload: data/qa/ocr_kimi_hard/kimi-vl-hard/286452.txt to s3://aof-owlv2-102516364259/ocr_kimi_hard/results/kimi-vl-hard/286452.txt
+Completed 880 Bytes/12.8 KiB (3.4 KiB/s) with 7 file(s) remainingCompleted 917 Bytes/12.8 KiB (3.5 KiB/s) with 7 file(s) remainingupload: data/qa/ocr_kimi_hard/kimi-vl-hard/10283.txt to s3://aof-owlv2-102516364259/ocr_kimi_hard/results/kimi-vl-hard/10283.txt
+Completed 917 Bytes/12.8 KiB (3.5 KiB/s) with 6 file(s) remainingCompleted 930 Bytes/12.8 KiB (3.5 KiB/s) with 6 file(s) remainingupload: data/qa/ocr_kimi_hard/kimi-vl-hard/77399.txt to s3://aof-owlv2-102516364259/ocr_kimi_hard/results/kimi-vl-hard/77399.txt
+Completed 930 Bytes/12.8 KiB (3.5 KiB/s) with 5 file(s) remainingCompleted 959 Bytes/12.8 KiB (3.6 KiB/s) with 5 file(s) remainingupload: data/qa/ocr_kimi_hard/kimi-vl-hard/233194.txt to s3://aof-owlv2-102516364259/ocr_kimi_hard/results/kimi-vl-hard/233194.txt
+Completed 959 Bytes/12.8 KiB (3.6 KiB/s) with 4 file(s) remainingCompleted 966 Bytes/12.8 KiB (3.7 KiB/s) with 4 file(s) remainingupload: data/qa/ocr_kimi_hard/kimi-vl-hard/653537.txt to s3://aof-owlv2-102516364259/ocr_kimi_hard/results/kimi-vl-hard/653537.txt
+Completed 966 Bytes/12.8 KiB (3.7 KiB/s) with 3 file(s) remainingCompleted 997 Bytes/12.8 KiB (3.8 KiB/s) with 3 file(s) remainingupload: data/qa/ocr_kimi_hard/kimi-vl-hard/26921.txt to s3://aof-owlv2-102516364259/ocr_kimi_hard/results/kimi-vl-hard/26921.txt
+Completed 997 Bytes/12.8 KiB (3.8 KiB/s) with 2 file(s) remainingCompleted 12.8 KiB/12.8 KiB (48.8 KiB/s) with 2 file(s) remainingupload: data/qa/ocr_kimi_hard/ocr_kimi_hard_aws.log to s3://aof-owlv2-102516364259/ocr_kimi_hard/results/ocr_kimi_hard_aws.log
+Completed 12.8 KiB/12.8 KiB (48.8 KiB/s) with 1 file(s) remainingCompleted 12.8 KiB/12.8 KiB (48.3 KiB/s) with 1 file(s) remainingupload: data/qa/ocr_kimi_hard/kimi-vl-hard/940187.txt to s3://aof-owlv2-102516364259/ocr_kimi_hard/results/kimi-vl-hard/940187.txt
+  id=1405670 status=ok chars=2047 overlap=0.0 135.643s
+[periodic-sync 02:51:22] → s3://aof-owlv2-102516364259/ocr_kimi_hard/results/
+Completed 2.0 KiB/19.5 KiB (84.9 KiB/s) with 3 file(s) remainingupload: data/qa/ocr_kimi_hard/kimi-vl-hard/1405670.txt to s3://aof-owlv2-102516364259/ocr_kimi_hard/results/kimi-vl-hard/1405670.txt
+Completed 2.0 KiB/19.5 KiB (84.9 KiB/s) with 2 file(s) remainingCompleted 4.9 KiB/19.5 KiB (54.7 KiB/s) with 2 file(s) remainingupload: data/qa/ocr_kimi_hard/results.csv to s3://aof-owlv2-102516364259/ocr_kimi_hard/results/results.csv
+Completed 4.9 KiB/19.5 KiB (54.7 KiB/s) with 1 file(s) remainingCompleted 19.5 KiB/19.5 KiB (195.2 KiB/s) with 1 file(s) remainingupload: data/qa/ocr_kimi_hard/ocr_kimi_hard_aws.log to s3://aof-owlv2-102516364259/ocr_kimi_hard/results/ocr_kimi_hard_aws.log
+  id=1483743 status=ok chars=3071 overlap=0.6667 134.614s
+  id=1578643 status=ok chars=34 overlap=1.0 2.919s
+
+LISTO → data/qa/ocr_kimi_hard/results.csv (12 rows)
+model=kimi result=kimi-vl-hard exit=0
+Completed 3.0 KiB/24.6 KiB (77.7 KiB/s) with 4 file(s) remainingupload: data/qa/ocr_kimi_hard/kimi-vl-hard/1483743.txt to s3://aof-owlv2-102516364259/ocr_kimi_hard/results/kimi-vl-hard/1483743.txt
+Completed 3.0 KiB/24.6 KiB (77.7 KiB/s) with 3 file(s) remainingCompleted 3.0 KiB/24.6 KiB (27.4 KiB/s) with 3 file(s) remainingupload: data/qa/ocr_kimi_hard/kimi-vl-hard/1578643.txt to s3://aof-owlv2-102516364259/ocr_kimi_hard/results/kimi-vl-hard/1578643.txt
+Completed 3.0 KiB/24.6 KiB (27.4 KiB/s) with 2 file(s) remainingCompleted 18.6 KiB/24.6 KiB (156.9 KiB/s) with 2 file(s) remainingupload: data/qa/ocr_kimi_hard/ocr_kimi_hard_aws.log to s3://aof-owlv2-102516364259/ocr_kimi_hard/results/ocr_kimi_hard_aws.log
+Completed 18.6 KiB/24.6 KiB (156.9 KiB/s) with 1 file(s) remainingCompleted 24.6 KiB/24.6 KiB (191.5 KiB/s) with 1 file(s) remainingupload: data/qa/ocr_kimi_hard/results.csv to s3://aof-owlv2-102516364259/ocr_kimi_hard/results/results.csv
+[checkpoint] synced after kimi / kimi-vl-hard
+Completed 36 Bytes/36 Bytes (531 Bytes/s) with 1 file(s) remainingupload: data/qa/ocr_kimi_hard/DONE to s3://aof-owlv2-102516364259/ocr_kimi_hard/results/DONE

@@ -1,0 +1,37 @@
+{
+  "title_text": "SAVAGE COUNTY",
+  "credits_text": "SENIOR YEAR IS MURDER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MTV NEW MEDIA PRESENTS",
+  "mood": [
+    "intense",
+    "thriller",
+    "dramatic",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "The poster hints at potential violence and mild sexual content.",
+  "description": "The poster features intense faces of four individuals with bold title text and a tagline, suggesting a dramatic thriller."
+}

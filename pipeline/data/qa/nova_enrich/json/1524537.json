@@ -1,0 +1,35 @@
+{
+  "title_text": "ฉากกาลันต์",
+  "credits_text": "My father died in October",
+  "languages": [
+    "en",
+    "th"
+  ],
+  "other_text": "A film by Buaraya Kamon",
+  "mood": [
+    "melancholic",
+    "haunting",
+    "mysterious",
+    "introspective"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "light",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A black-and-white poster features a shadowy figure illuminated by a bright light, with Thai and English text."
+}

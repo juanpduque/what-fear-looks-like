@@ -1,0 +1,41 @@
+{
+  "title_text": "1990 #ijo",
+  "credits_text": "Wenny Rosaline • Yan Bastian YURIKE • LUCY SUBARDJO • TANAKA ATIN MARTINO • INTAN FULY Sutardara DASRI YACOB Kamera SUTARDJO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "surreal",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror elements.",
+  "description": "A poster features a dark, eerie scene with a central figure in white, surrounded by shadowy figures and a menacing wolf-like creature."
+}

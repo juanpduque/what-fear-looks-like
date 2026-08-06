@@ -1,0 +1,45 @@
+{
+  "title_text": "INFECTION: THE INVASION BEGINS",
+  "credits_text": "Don't look to the skies... the invaders are inside us!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "sci-fi",
+    "body horror",
+    "apocalyptic",
+    "paranoid"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains graphic imagery of a monstrous creature emerging from a human face, potentially disturbing.",
+  "description": "A poster shows a person with a grotesque, multi-tentacled creature bursting from their mouth against a dark background."
+}

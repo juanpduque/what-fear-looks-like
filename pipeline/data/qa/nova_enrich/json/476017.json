@@ -1,0 +1,46 @@
+{
+  "title_text": "MIRRORED",
+  "credits_text": "A FILM BY RYAN SHOVEY AARON JAY ROME DAVID COLAN AND BRYAN MORDECHA JACKSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CREEPY/COOL PICTURES PRESENTS A NICOLE BIRD PRODUCTION PRESENTS AT THE SCREAMFEST HORROR FILM FESTIVAL 2015",
+  "mood": [
+    "horror",
+    "psychological",
+    "gothic",
+    "disturbing",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and disturbing visuals.",
+  "description": "A man stands in a doorway facing two monstrous hands reaching toward him, with a dark, eerie background."
+}

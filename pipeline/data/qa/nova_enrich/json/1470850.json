@@ -1,0 +1,42 @@
+{
+  "title_text": "IDEIAS HORROROSAS SÃO LINDAS",
+  "credits_text": "UN FILME DE LAURA MOURA DE ANDRADE, PETTER BAIESTORE, JULIANA HOFFMANN BORDES, REBECCA CAPOZZI, BARBI CAUZZI, BRAUN RIDRE CHULAĆ, ALEX DOMBROVA, ELDER GUSMÃO, KADU HAMMETT, LUCIANO IRRTHUM, PEDRO H. LORETO, LUCIANO DE MIRANDA, BOGOMIL OVOŠ, TED RAFAEL, TAÍNA REI, JONATHAN RODRIGUES, EDGAR SOARES, FABIANO SOARES, DANIELA TAVORA, E.B. TONIOLI, VINI TRASH, JUDAS VANIR & KEISY YAMAKI",
+  "languages": [
+    "pt"
+  ],
+  "other_text": "",
+  "mood": [
+    "surreal",
+    "dark humor",
+    "grotesque",
+    "absurd",
+    "edgy"
+  ],
+  "fear_labels": [
+    {
+      "name": "grotesque",
+      "conf": 0.9
+    },
+    {
+      "name": "absurd",
+      "conf": 0.85
+    },
+    {
+      "name": "humor",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.2,
+  "person": 0.8,
+  "animal": 0.1,
+  "blood_gore": 0.4,
+  "violence": 0.3,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic and disturbing imagery with implied violence and gore.",
+  "description": "The poster features surreal, grotesque illustrations including body parts, food, and chaotic elements, with hands holding utensils near a plate with a dismembered figure."
+}

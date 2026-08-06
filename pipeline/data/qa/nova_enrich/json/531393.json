@@ -1,0 +1,40 @@
+{
+  "title_text": "THE GIRL IN THE BASEMENT",
+  "credits_text": "A horrifying new thriller, from PROJECT GREENLIGHT's Kyle Rankin and Efram Potelle.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "'A CULT CLASSIC' - Portland Herald",
+  "mood": [
+    "dread",
+    "suspense",
+    "confinement",
+    "psychological horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "confinement",
+      "conf": 0.95
+    },
+    {
+      "name": "staircase",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster implies psychological horror and confinement, but does not depict explicit violence or gore.",
+  "description": "A poster shows a bound person on stairs with a shadowy figure above, titled 'The Girl in the Basement,' labeled a cult classic."
+}

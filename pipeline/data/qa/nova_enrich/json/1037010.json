@@ -1,0 +1,35 @@
+{
+  "title_text": "KILLERKUSCHELTIERE 2",
+  "credits_text": "Thomas Schweer Christoph Konrad Till Martinsen Ein Film von Boris Bürgel",
+  "languages": [
+    "de"
+  ],
+  "other_text": "ANGRIFF DER JÄGERZOMBIES inkl. KILLER-KUSCHEL-TIERE 1 und TELEFON",
+  "mood": [
+    "action",
+    "horror",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violent action with guns.",
+  "description": "Movie poster shows three men aiming guns, with a house in the background. Title and credits are displayed prominently."
+}

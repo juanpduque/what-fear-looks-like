@@ -1,0 +1,39 @@
+{
+  "title_text": "Frend",
+  "credits_text": "GREEN BAND PRODUCTIONS \"GOOD MILK FILM\" ALEN TOBIN & SAM SALENKA TIM JUX ... ALEX TOBIN & SAM SALENKA LUCAS WILLIAMS JORIS CARLEST ... DAN CROOK",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FRIENDS ARE FOR THE TAKING",
+  "mood": [
+    "surreal",
+    "disturbing",
+    "dark",
+    "psychological",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.5,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a large, eerie skull face with the title \"Frend\" above it, and a small figure in the background holding a stick."
+}

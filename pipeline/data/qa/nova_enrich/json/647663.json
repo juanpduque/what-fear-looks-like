@@ -1,0 +1,45 @@
+{
+  "title_text": "VESANICA",
+  "credits_text": "Producida, Escrita y Dirigida por LUCAS GUTIERREZ",
+  "languages": [
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "eerie",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and potentially disturbing imagery.",
+  "description": "A dark, eerie poster features a haunted house with ghostly figures and intense facial expressions, suggesting a supernatural horror theme."
+}

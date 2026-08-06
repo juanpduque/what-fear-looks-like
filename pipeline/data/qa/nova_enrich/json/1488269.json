@@ -1,0 +1,45 @@
+{
+  "title_text": "BACKLASH",
+  "credits_text": "It's Not a Game Anymore",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "action",
+    "thriller",
+    "gritty",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "mask",
+      "conf": 0.8
+    },
+    {
+      "name": "broken_window",
+      "conf": 0.7
+    },
+    {
+      "name": "helmet",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and intense action themes.",
+  "description": "A poster shows a masked figure holding a gun next to a distressed woman, with shattered glass in the background."
+}

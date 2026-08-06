@@ -1,0 +1,42 @@
+{
+  "title_text": "CAT PEOPLE",
+  "credits_text": "SIMONE SIMON KENT SMITH TOM CONWAY JANE RANDOLPH JACK HOLT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SHE WAS MARKED WITH THE CURSE OF THOSE WHO SLINK AND COURT AND KILL BY NIGHT!",
+  "mood": [
+    "gothic",
+    "horror",
+    "noir",
+    "suspense",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.9,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror themes and suggestive imagery.",
+  "description": "A vintage movie poster features a woman in a red dress with a large black cat, hinting at transformation and danger."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "DARK WOODS",
+  "credits_text": "JACOB D. BERLINGHOFF A JAKE RAMIREZ FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "It's dark... It's quiet... And you're all alone. Or are you?",
+  "mood": [
+    "dread",
+    "suspense",
+    "gothic",
+    "forest",
+    "lonely"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "text",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.95,
+  "monster": 0.0,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster implies potential violence through the large knife and ominous text.",
+  "description": "A dark forest scene features a shadowy figure and a large knife, with eerie text suggesting isolation and danger."
+}

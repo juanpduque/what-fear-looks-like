@@ -1,0 +1,45 @@
+{
+  "title_text": "MEGA SCORPIONS",
+  "credits_text": "WE'RE SCREWED!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "sci-fi",
+    "thriller",
+    "dystopia",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    },
+    {
+      "name": "cityscape",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.95,
+  "blood_gore": 0.1,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and action themes.",
+  "description": "A poster shows giant scorpions attacking a city with helicopters overhead, featuring bold title text and a dramatic tagline."
+}

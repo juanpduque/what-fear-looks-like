@@ -1,0 +1,37 @@
+{
+  "title_text": "线索",
+  "credits_text": "THE ROPE COSE",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "8.24-8.26 北京首演 8.31上映 东方电影频道",
+  "mood": [
+    "dread",
+    "gothic",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "suicide",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "self-harm"
+  ],
+  "moderation_notes": "Contains imagery of suicide and potential self-harm themes.",
+  "description": "A dark poster features a noose with smoke, bold red Chinese characters, and English title 'The Rope Close' against a gloomy background."
+}

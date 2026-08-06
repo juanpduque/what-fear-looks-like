@@ -1,0 +1,36 @@
+{
+  "title_text": "",
+  "credits_text": "Told In Grey",
+  "languages": [
+    "en"
+  ],
+  "other_text": "The repeated phrase \"in grey\" is written across the image, accompanied by a stylized handprint with red stains resembling blood.",
+  "mood": [
+    "haunting",
+    "disturbing",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster contains graphic red stains resembling blood and disturbing text repetition.",
+  "description": "A red background features a handprint with red stains and repeated text 'in grey,' creating a haunting and disturbing visual."
+}

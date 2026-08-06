@@ -1,0 +1,38 @@
+{
+  "title_text": "THE FACE OF FEAR",
+  "credits_text": "LEE HORSLEY PAM DAWBER DEAN KOONTZ",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Their lives are hanging by a thread... forty stories above the street. And a madman is trying to shoot them down.",
+  "mood": [
+    "suspense",
+    "thriller",
+    "dread",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "suspense",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man and a woman cling together in fear as a title card looms over them, suggesting danger and suspense."
+}

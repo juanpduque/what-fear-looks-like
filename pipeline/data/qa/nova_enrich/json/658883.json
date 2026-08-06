@@ -1,0 +1,35 @@
+{
+  "title_text": "BAD TO THE JONES",
+  "credits_text": "ZOMBIES ARE NOW THE HUNTED",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "post-apocalyptic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts action and potential violence, including weapons and a zombie theme.",
+  "description": "The poster features two men holding guns in a post-apocalyptic setting with smoke and a cross in the background."
+}

@@ -1,0 +1,47 @@
+{
+  "title_text": "鬼吹灯",
+  "credits_text": "GHOST LAMP",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "2016.12.2 无人生还",
+  "mood": [
+    "gothic",
+    "haunting",
+    "mystery",
+    "supernatural",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "A poster shows a man with vines entwined around his face against a dark, forested background, suggesting a supernatural horror theme."
+}

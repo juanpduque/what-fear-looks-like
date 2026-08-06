@@ -1,0 +1,45 @@
+{
+  "title_text": "PENGANTIN MALAM",
+  "credits_text": "Nora Danish, Farid Kamil, Nina Iskandar",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Kita tunjuk jadi akademi, DE PANAKAR 19 JUN 2014",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "eerie",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and mild horror elements.",
+  "description": "A poster for a horror film featuring a ghostly figure and a couple, with dark, eerie visuals and text indicating a supernatural theme."
+}

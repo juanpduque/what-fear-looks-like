@@ -1,0 +1,41 @@
+{
+  "title_text": "ヨリ仕的の影質殺組",
+  "credits_text": "宝結!! はんとしたう",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "8",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains horror themes and mild violent imagery.",
+  "description": "A poster featuring eerie faces and ghostly figures in a dark, red-tinted setting, suggesting a horror theme."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "BLOODSTREAM",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Heart Stopping!",
+  "mood": [
+    "horror",
+    "gothic",
+    "surreal",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "medical",
+      "conf": 0.8
+    },
+    {
+      "name": "heart",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic medical imagery and partial nudity.",
+  "description": "A poster shows a person lying on a table with medical tubes attached, a heart displayed prominently, and a medical professional nearby. The title 'BLOODSTREAM' is displayed at the top."
+}

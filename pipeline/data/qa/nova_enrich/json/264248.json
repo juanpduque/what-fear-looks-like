@@ -1,0 +1,47 @@
+{
+  "title_text": "The Knight Chills",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "GAME MASTER HANDBOOK",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "haunting",
+    "fantasy",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "knight",
+      "conf": 0.95
+    },
+    {
+      "name": "fantasy",
+      "conf": 0.85
+    },
+    {
+      "name": "gothic",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.2,
+  "person": 0.4,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring a knight in dark armor against a purple, eerie background with a graveyard and a game master handbook visible."
+}

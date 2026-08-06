@@ -1,0 +1,45 @@
+{
+  "title_text": "WEAK IN THE KNEES",
+  "credits_text": "THE STORY OF A MASKED KILLER WHO WAS EVENTUALLY FEARED BY ALL\nTHE STARRING PRODUCTION ... SEAN TOPIER ... CLEVELAND HELMES ...",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "thriller",
+    "mystery",
+    "suspense",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "mask",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster implies potential violence through its dark, ominous imagery and tagline.",
+  "description": "A masked figure stands in a dark forest, holding a weapon, with a dramatic and ominous atmosphere."
+}

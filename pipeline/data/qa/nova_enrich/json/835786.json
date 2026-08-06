@@ -1,0 +1,39 @@
+{
+  "title_text": "E魔",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "sci-fi",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.85
+    },
+    {
+      "name": "weapon",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains violent action and monster imagery.",
+  "description": "A poster shows soldiers in a vehicle battling a large, menacing creature in a post-apocalyptic setting."
+}

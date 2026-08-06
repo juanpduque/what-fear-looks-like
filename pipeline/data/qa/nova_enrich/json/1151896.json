@@ -1,0 +1,46 @@
+{
+  "title_text": "CİNNİ NAZAR",
+  "credits_text": "YÖNETMEN: TAYFUN CAN DEMİRTAS\nHAKAN FİDAN GÜLAY ÖZYİLDİZ SAVAŞ ÖZKUL SARA ÖZYİLDİZ ERKAN EROL SEÇİL ALTINTAŞ ALİ BEYAT FATMA YİLDIRIM FUAT BAŞARILI YELİZ FİDAN HATICE ZELAL ATEŞ TESLİME SULEK SES ISRAľIL ASLAN MÜZİK/SFX OZĞUR SAYAR YAPIM AMİRİ EMRE GÖKBERK KAYADIBI YAPIM SKYPIÇ FILM GENEL SANAT YÖNETMENİ SAHAVET AHSEN KAÇULU SENARYO TAYFUN CAN DEMİRTAS VFX BACKGROUNDS FILM",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "işan mı daha kötü yoksa Sevtan mı?",
+  "mood": [
+    "horror",
+    "supernatural",
+    "gothic",
+    "dread",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and a monstrous face.",
+  "description": "A dark poster features a monstrous face with blood and intense eyes, overlaid with bold red and white text in Turkish."
+}

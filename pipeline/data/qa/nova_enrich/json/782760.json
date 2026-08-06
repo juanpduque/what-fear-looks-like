@@ -1,0 +1,49 @@
+{
+  "title_text": "COVID-21",
+  "credits_text": "LETHAL VIRUS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FEAR IS CONTAGIOUS",
+  "mood": [
+    "dread",
+    "suspense",
+    "apocalyptic",
+    "intense",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "virus",
+      "conf": 0.9
+    },
+    {
+      "name": "mask",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.8
+    },
+    {
+      "name": "danger",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and intense apocalyptic themes.",
+  "description": "A soldier in protective gear holds a rifle, with a cityscape and helicopters in the background, and the title 'COVID-21: Lethal Virus' prominently displayed."
+}

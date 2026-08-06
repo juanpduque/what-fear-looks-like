@@ -1,0 +1,42 @@
+{
+  "title_text": "HUNGERFORD",
+  "credits_text": "NO MATTER WHAT HAPPENS... WE FILM EVERYTHING",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PLAY",
+  "mood": [
+    "horror",
+    "thriller",
+    "dystopia",
+    "survival",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and horror elements.",
+  "description": "A distressed person stands near a wrecked car with a large insect-like creature looming above, set against a stormy backdrop."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "Mutation Massacre",
+  "credits_text": "A DEREK BRAASCH FILM STARRING PAMELA BENDER JOE DBARTOLO MATT PENDER NINA TRADER JAMIE COTE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DIRECTOR OF PHOTOGRAPHY AND EDITING: IGOR CZAA SCENE BY BRIAN BROOSOG WRITTEN AND DIRECTED BY DEREK BRAASCH SPECIAL EFFECTS BY BENJAMIN FREASER",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "surreal",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A horror movie poster features a distressed woman covered in blood in a forest setting, with bold red text reading 'Mutation Massacre.'"
+}

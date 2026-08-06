@@ -1,0 +1,40 @@
+{
+  "title_text": "PSYCHIC",
+  "credits_text": "DEATH LIVES... IN THE SHADOWS OF YOUR MIND.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "surreal",
+    "gothic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and psychological horror elements.",
+  "description": "A dark poster features a ghostly face with the title 'PSYCHIC' and the tagline 'DEATH LIVES... IN THE SHADOWS OF YOUR MIND.'"
+}

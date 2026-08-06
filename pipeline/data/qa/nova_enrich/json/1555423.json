@@ -1,0 +1,41 @@
+{
+  "title_text": "BLOOD BATH",
+  "credits_text": "starring HOWIE PYRO • JARED R. McKINLEY • MIKE HOWLETT LISA PETRUCCI • RAVIN WONG • GIOVANNI DOMINICE Directed by JASON WILLIS • Psychedelic Music by MATT RENDON • A HEY RUBE PRODUCTION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A HORRIFYING TALE OF AN LSD TRIP WHERE REALITY AND DREAMS MELT INTO A NIGHTMARE OF GRUESOME TERROR! in BLOOD-CURDLING COLOR TALES OF EERIE PUBLICATIONS WARNING: THIS IS A REAL SHOCKER THAT WILL CURDLE THE CORE OF YOUR BLOODY NERVE CENTERS AND LEAVE YOU LIMP!",
+  "mood": [
+    "dread",
+    "surreal",
+    "camp",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.1,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and intense violence.",
+  "description": "A vintage horror poster features a screaming skull and a terrified person amidst splattered blood, promoting a psychedelic horror film titled 'Blood Bath.'"
+}

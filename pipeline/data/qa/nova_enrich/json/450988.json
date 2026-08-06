@@ -1,0 +1,48 @@
+{
+  "title_text": "MAUVAISES TÊTES",
+  "credits_text": "A SHORT FILM WRITTEN AND DIRECTED BY REBEKAH FIESCHI with ALICE DESSANT LINDSAY RAYAN JOE ZASO DARIO DIAKOFF",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "other_text": "\"Love can make you lose your head\"",
+  "mood": [
+    "gothic",
+    "surreal",
+    "erotic",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.5,
+  "sensitive": [
+    "violence",
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and sexual themes, suitable for mature audiences.",
+  "description": "Poster features a grotesque puppet face and a decayed figure against a dark, eerie background with a cemetery scene below."
+}

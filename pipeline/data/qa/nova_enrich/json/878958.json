@@ -1,0 +1,42 @@
+{
+  "title_text": "OUIJA JAPAN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WELCOME TO THE GAME",
+  "mood": [
+    "thriller",
+    "horror",
+    "mystery",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "occult",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult",
+    "blood"
+  ],
+  "moderation_notes": "Contains graphic violence and occult themes.",
+  "description": "Poster shows a gloved hand writing on paper with a gun and scattered bullets, blood splatters, and the title 'OUIJA JAPAN.'"
+}

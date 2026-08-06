@@ -1,0 +1,46 @@
+{
+  "title_text": "SOUTHERN NIGHTMARE",
+  "credits_text": "TWO WOMEN ON A ROAD TRIP TO HELL, CAPTURED, ENSLAVED AND SUBJECTED TO UNSPEAKABLE DEGRADATION IN...",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gritty",
+    "thriller",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.5
+    },
+    {
+      "name": "blood",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and disturbing imagery.",
+  "description": "A poster shows three women and a man in a tense scene, with a house and vehicles in the background, suggesting a thriller or horror theme."
+}

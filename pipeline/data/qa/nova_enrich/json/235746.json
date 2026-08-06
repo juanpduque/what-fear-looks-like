@@ -1,0 +1,43 @@
+{
+  "title_text": "SUCKER THE VAMPIRE",
+  "credits_text": "featuring music by BLUE MEANIES - AGENT ORANGE - GROOVIE CHOULIES THE H.K.T. EXPERIENCE - MAXIMUM GAMMA THE MOC STUNT TEAM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IT'S TIME TO RAISE THE STAKES! INCLUDES \"THE BEST INTERACTIVITY\" \"The Interactive Tour Test\" \"The Interactive Tour Test\" ...AND LOTS MORE!",
+  "mood": [
+    "horror",
+    "camp",
+    "erotic",
+    "gothic",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild violence, blood, and occult themes.",
+  "description": "Movie poster features a vampire couple with bold red text and taglines, highlighting interactive elements and music credits."
+}

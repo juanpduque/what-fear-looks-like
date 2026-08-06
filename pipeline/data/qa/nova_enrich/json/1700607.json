@@ -1,0 +1,40 @@
+{
+  "title_text": "MORTAL SENSATION",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Best Experimental CCRI Film Festival 2026 / Best Cinematography CCRI Film Festival 2026",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and gory imagery.",
+  "description": "A close-up of a face partially obscured by dark, leafy branches, with red-tinted lighting and festival awards displayed at the bottom."
+}

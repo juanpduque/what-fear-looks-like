@@ -1,0 +1,45 @@
+{
+  "title_text": "HORRORS OF WAR",
+  "credits_text": "STARRING DENNIE BROWN, SEAN MCGINTY, JAMES BALDWIN, JR., JOHN PETER STEVENSON, GREG SCOTT, PAUL CARRETT, PRODUCED BY TIM BALDWIN AND JOHN PETER STEVENSON, DIRECTED BY JOHN PETER STEVENSON AND ROSS CARRETT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "OFFICIAL SELECTION CHICAGO INTERNATIONAL FILM FESTIVAL, WINNER COLUMBIA RIVER INTERNATIONAL FILM FESTIVAL, WINNER NEW YORK INTERNATIONAL FILM FESTIVAL, OFFICIAL SELECTION SAN FRANCISCO INTERNATIONAL FILM FESTIVAL",
+  "mood": [
+    "dread",
+    "intense",
+    "historical",
+    "war",
+    "gritty"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    },
+    {
+      "name": "flag",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense war imagery and depictions of violence.",
+  "description": "A poster showing soldiers marching with flags amid war-torn ruins, featuring a stern officer in the foreground."
+}

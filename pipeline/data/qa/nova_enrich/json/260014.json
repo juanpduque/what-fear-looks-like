@@ -1,0 +1,45 @@
+{
+  "title_text": "アンビリバボ レディファイト",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "長みを顔がたたしてる、席の影にある女の形を表している。デイバストラップでのファイルスターバリです。",
+  "mood": [
+    "horror",
+    "violent",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.85,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; suitable for mature audiences.",
+  "description": "A woman is tied to a tree with arrows piercing her body, surrounded by a forest. The poster features Japanese text and a horror theme."
+}

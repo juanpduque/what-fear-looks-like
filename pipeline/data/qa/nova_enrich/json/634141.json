@@ -1,0 +1,47 @@
+{
+  "title_text": "La Dama del Bosque Maldito",
+  "credits_text": "LADY OF THE DAMNED FOREST",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "other_text": "UNA PRODUCCIÓN LA KATANA FILMS",
+  "mood": [
+    "gothic",
+    "eerie",
+    "supernatural",
+    "haunting",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult themes and mild violent imagery.",
+  "description": "A dark, gothic poster featuring a ghostly figure and five individuals in a forest setting, evoking a supernatural and eerie atmosphere."
+}

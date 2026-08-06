@@ -1,0 +1,37 @@
+{
+  "title_text": "L.T.'S THEORY OF PETS",
+  "credits_text": "Based On The Short Story By Stephen King",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Based On The Short Story By Stephen King",
+  "mood": [
+    "thriller",
+    "psychological",
+    "disturbing",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and a knife, suggesting potential violence.",
+  "description": "The poster features two silhouetted figures facing opposite directions with a large knife between them, blood splattered on the knife, and the title 'L.T.'s Theory of Pets' prominently displayed."
+}

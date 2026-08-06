@@ -1,0 +1,42 @@
+{
+  "title_text": "CANNIBAL CLAUS",
+  "credits_text": "Bob Glazer is",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOU'RE ONLY AS GOOD AS YOU TASTE\nLIMITED EDITION\nTHE DELUXE BOX SET",
+  "mood": [
+    "camp",
+    "horror",
+    "dark humor",
+    "festive",
+    "grotesque"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore.",
+  "description": "A poster shows a monstrous Santa Claus holding a bloody organ, with festive lights and a tagline."
+}

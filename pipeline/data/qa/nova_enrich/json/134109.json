@@ -1,0 +1,42 @@
+{
+  "title_text": "LA MANSION de Las 7 MOMIAS",
+  "credits_text": "",
+  "languages": [
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "camp",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.3,
+  "sexual_content": 0.1,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A colorful poster features masked heroes and terrified victims around a central ghostly figure, suggesting a horror film set in an eerie mansion."
+}

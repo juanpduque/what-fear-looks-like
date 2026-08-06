@@ -1,0 +1,42 @@
+{
+  "title_text": "LES DEMONS DE LA CAVE",
+  "credits_text": "un film de Yoann MALNATI",
+  "languages": [
+    "fr"
+  ],
+  "other_text": "MALNASKI PRODUCTION présente\nune seule issue : la mort !",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "dark",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "dark",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains intense horror themes and occult imagery.",
+  "description": "A dark red poster features a cluster of skulls and bold text introducing a horror film titled 'Les Demons de la Cave' directed by Yoann Malnati."
+}

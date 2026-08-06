@@ -1,0 +1,41 @@
+{
+  "title_text": "LA CÁRCEL MALDITA",
+  "credits_text": "",
+  "languages": [
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "disturbing",
+    "haunting",
+    "gothic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "prison",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests psychological tension and possible violence, but no explicit gore or nudity is visible.",
+  "description": "A poster for 'La Cárcel Maldita' shows a dark prison corridor with a shadowy figure and intense facial expressions, evoking a tense and disturbing atmosphere."
+}

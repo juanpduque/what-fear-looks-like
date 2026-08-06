@@ -1,0 +1,43 @@
+{
+  "title_text": "MUERTE TALES OF HORROR",
+  "credits_text": "FEATURING VAMPIRES, WITCHES, THE POSSESSED; MEET EL CUCUY",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "NIGHT CREATURE PRODUCTIONS and MEDIA PRESENTS; WINNER STUFF; CREA FICK NIGHT CREATURE PRODUCTIONS A MEDIA; PRESENTS",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "terrifying",
+    "dark",
+    "macabre"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and occult themes.",
+  "description": "A horror anthology poster featuring a menacing face, with titles and tags for vampires, witches, and the possessed."
+}

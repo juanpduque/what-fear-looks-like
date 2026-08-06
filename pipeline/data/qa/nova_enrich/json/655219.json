@@ -1,0 +1,43 @@
+{
+  "title_text": "A GHOST STORY",
+  "credits_text": "DOUGLAS HENSHALL SUSAN HILL'S THE SMALL HAND",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "haunting",
+    "melancholic",
+    "mysterious",
+    "eerie",
+    "lonely"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "water",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man stands in front of an old, eerie house at night, with a ghostly silhouette reflected on the ground."
+}

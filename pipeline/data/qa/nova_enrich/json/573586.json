@@ -1,0 +1,47 @@
+{
+  "title_text": "Regnum der Teufel",
+  "credits_text": "",
+  "languages": [
+    "de"
+  ],
+  "other_text": "UNCUT ungeschnitten, DIRECTORI",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "supernatural",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including skulls, fire, and implied violence.",
+  "description": "A poster features a man facing a spectral figure holding a scythe, with inset images of fire and a severed hand, evoking a dark, gothic horror theme."
+}

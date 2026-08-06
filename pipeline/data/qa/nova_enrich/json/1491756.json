@@ -1,0 +1,49 @@
+{
+  "title_text": "ANACONDAS",
+  "credits_text": "FROM DIRECTOR RUI CONSTANTINO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SILENT SCREAM",
+  "mood": [
+    "thrilling",
+    "dangerous",
+    "jungle",
+    "action",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "snake",
+      "conf": 0.95
+    },
+    {
+      "name": "danger",
+      "conf": 0.85
+    },
+    {
+      "name": "jungle",
+      "conf": 0.8
+    },
+    {
+      "name": "attack",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.95,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts a dramatic scene of a man being attacked by a large anaconda, suggesting potential violence.",
+  "description": "A man struggles against a giant anaconda in a dense jungle, with other people visible in the background."
+}

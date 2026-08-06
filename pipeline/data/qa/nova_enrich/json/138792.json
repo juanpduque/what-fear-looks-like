@@ -1,0 +1,47 @@
+{
+  "title_text": "MOLD!",
+  "credits_text": "A HORRIFYING NEW FILM FROM PRESCOTT COWIE. STARRING EMMA ROSE WELCHING, MICHAEL HAYES, JOSHUA HENDERSON, ERIN HAYES, CARRIE GENTLE, WALTER JAMES, JORDAN HUFFMAN, NICK MISERERE, DAVID PRINCE, JOSHUA HENDERSON, DANCE FORREST.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THIS ISN'T SCIENCE... IT'S MURDER! BEST SHORT FILM BEST FEATURE",
+  "mood": [
+    "horror",
+    "gothic",
+    "surreal",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "Poster features multiple characters in a horror setting with blood, grotesque faces, and a central figure with green mold growth. Text highlights the film's title and cast."
+}

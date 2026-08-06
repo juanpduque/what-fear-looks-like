@@ -1,0 +1,37 @@
+{
+  "title_text": "Violent Justice",
+  "credits_text": "A Film by Jeff Profft",
+  "languages": [
+    "en"
+  ],
+  "other_text": "POLICE",
+  "mood": [
+    "intense",
+    "action",
+    "thriller",
+    "gritty",
+    "revenge"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "axe",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts violent themes with weapons and suggests intense action.",
+  "description": "The poster shows a red police vest with a gun and axe, titled 'Violent Justice' by Jeff Profft."
+}

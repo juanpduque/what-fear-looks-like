@@ -1,0 +1,52 @@
+{
+  "title_text": "FORGOTTEN SCARES",
+  "credits_text": "AN IN-DEPTH LOOK AT FLESHHORROR CINEMA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "surreal",
+    "erotic",
+    "camp",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic horror imagery, partial nudity, and violent themes.",
+  "description": "A poster featuring various horror characters and creatures surrounding a central figure, with bold red text reading 'FORGOTTEN SCARES' and a tagline below."
+}

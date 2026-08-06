@@ -1,0 +1,41 @@
+{
+  "title_text": "โหดขี้หนี้",
+  "credits_text": "",
+  "languages": [
+    "th"
+  ],
+  "other_text": "ความโหดที่ไม่จบสิ้น ต้องการความโหดที่จบสิ้น ต้องการความโหดที่จบสิ้น",
+  "mood": [
+    "thriller",
+    "horror",
+    "intense",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and intense expressions suggesting violence.",
+  "description": "A Thai horror thriller poster featuring three intense characters with dramatic expressions and a blood splatter design."
+}

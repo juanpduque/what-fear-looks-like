@@ -1,0 +1,41 @@
+{
+  "title_text": "Buzzsaw",
+  "credits_text": "Before You Die... You Hear The Buzz",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SRS EXTREME",
+  "mood": [
+    "intense",
+    "terrifying",
+    "violent",
+    "chaotic",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "saw",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.95,
+  "monster": 0.0,
+  "person": 0.85,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense and violent imagery with a saw and a distressed face.",
+  "description": "A poster featuring a distressed face partially obscured by a saw blade, with bold red and black text reading 'Buzzsaw' and a tagline."
+}

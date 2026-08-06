@@ -1,0 +1,41 @@
+{
+  "title_text": "the MAN the SCARECROW",
+  "credits_text": "written by BENJAMIN KAPLAN JACOB MATTHEWS KELLY KELLER JANA KESSLER produced by ALEXANDRA KAPLAN JESSICA KAPLAN STEVEN SCHNEIDER GRIFFIN QUIST directed by ALEXANDRA KAPLAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AIRI",
+  "mood": [
+    "gothic",
+    "surreal",
+    "melancholy",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and themes of violence.",
+  "description": "A man with a heart-shaped blood stain stands next to a scarecrow in front of a house, with autumn leaves in the background."
+}

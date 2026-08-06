@@ -1,0 +1,43 @@
+{
+  "title_text": "LOVE IN THE TIME OF MONSTERS",
+  "credits_text": "DOUG JONES KANE HODDER HEATHER RAE YOUNG AND MICHAEL MCSHANE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WE ALL LOVE FAMILY VACATIONS",
+  "mood": [
+    "horror",
+    "fantasy",
+    "comedy",
+    "thriller",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "forest",
+      "conf": 0.85
+    },
+    {
+      "name": "creature",
+      "conf": 0.8
+    },
+    {
+      "name": "lightning",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster features three humans and three large, hairy monsters in a dark forest setting with lightning, suggesting a horror-comedy theme."
+}

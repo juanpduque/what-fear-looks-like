@@ -1,0 +1,46 @@
+{
+  "title_text": "FOR LOVE OF ZOMBIES",
+  "credits_text": "LITTLE RED WAGON FILMS PRESENTS FOR LOVE OF ZOMBIES STARRING: SARAH ALBERTSON, RYAN BURNETT, ANSLEY DUNBAR, TEDDY WYCZEK CO-PRODUCER: BUDDY BLANKENSHIP, LEON CRONICK, RYAN MORRIS, BOB DIMENSION, EMILY DIPRIMIO ANNA-MARIE KERSTETTER, LEAF HONACKER, DANGER DOBSON, MATT SHELL, FRANK WYCZEK EXECUTIVE PRODUCER: DOUG COSTA, MARY IANNACONE, ELISHA JACHETTI, TEDDY WYCZEK SPECIAL EFFECTS MAKE-UP: MIRANDA E. LAIELLI PRODUCTION MANAGER: HEATHER FELMY MUSIC: MATT LOHE SOUND ENGINEER AND ASSISTANT DIRECTOR: TIMOTHY SIMERS WRITTEN AND DIRECTED BY: BON DIPRIMIO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "LITTLE RED WAGON FILMS",
+  "mood": [
+    "horror",
+    "comedy",
+    "zombie",
+    "camp",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "Poster shows four individuals covered in blood, fleeing through a crowd of zombies. Title and credits are prominently displayed."
+}

@@ -1,0 +1,44 @@
+{
+  "title_text": "He Never Left",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MOTEL",
+  "mood": [
+    "dread",
+    "terror",
+    "suspense",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains violent imagery with a knife and a masked figure, suggesting horror themes.",
+  "description": "A poster shows a masked figure holding a knife against a motel backdrop under a full moon, evoking a horror atmosphere."
+}

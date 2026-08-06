@@ -1,0 +1,46 @@
+{
+  "title_text": "GLAW",
+  "credits_text": "Mix by Studio des aviateurs\nOriginal Score by David Robson\nVoices by Victoria Mackay, Roberto Jolliffe and Mark Kaczmarek\nAyooub Marianne Chloé Lucas Thomas Melissa Dylan Alizée Florian Chaibi Dautheville Ferrus Ferrer Petroni Saba Sayagh Valenzuela Wagner",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Ecole Supérieure des Métiers Artistiques Montpellier France 2023",
+  "mood": [
+    "suspense",
+    "horror",
+    "thriller",
+    "mystery",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood-like imagery.",
+  "description": "A poster features four characters against a moonlit forest backdrop, with a central figure in a dark mask and the title \"GLAW\" in bold red letters."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "THE WITCH",
+  "credits_text": "A JAMES BALSAMO FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "supernatural",
+    "gothic",
+    "eerie",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "nudity",
+    "occult"
+  ],
+  "moderation_notes": "Contains partial nudity and occult themes.",
+  "description": "A poster features a skeletal figure with a wide-brimmed hat, a man holding a rifle, and two women in revealing attire, set against a dark, eerie background."
+}

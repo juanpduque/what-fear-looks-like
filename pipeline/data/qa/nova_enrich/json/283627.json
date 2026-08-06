@@ -1,0 +1,38 @@
+{
+  "title_text": "THE FORGOTTEN WELLS",
+  "credits_text": "MAGNUS CEDERBLAD GARETH HUNT CAMILLA LUNDEN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "mysterious",
+    "sci-fi",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "water",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic poster features a muscular man pointing forward, a woman with a serious expression, and two silhouetted figures in a watery environment."
+}

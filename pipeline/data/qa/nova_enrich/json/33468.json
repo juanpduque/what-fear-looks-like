@@ -1,0 +1,47 @@
+{
+  "title_text": "THE BRAIN THAT WOULDN'T DIE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "sci-fi",
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "experiment",
+      "conf": 0.85
+    },
+    {
+      "name": "mad_scientist",
+      "conf": 0.75
+    },
+    {
+      "name": "body_part",
+      "conf": 0.7
+    },
+    {
+      "name": "trauma",
+      "conf": 0.65
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic poster shows a woman in a lab setting with a preserved brain in a container, evoking a horror and sci-fi theme."
+}

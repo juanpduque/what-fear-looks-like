@@ -1,0 +1,42 @@
+{
+  "title_text": "SLASH FM",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ON AIR",
+  "mood": [
+    "horror",
+    "thriller",
+    "intense",
+    "gothic",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and horror elements.",
+  "description": "A poster for 'SLASH FM' featuring a hand gripping a microphone with dripping blood against a dark background, with 'ON AIR' text at the top."
+}

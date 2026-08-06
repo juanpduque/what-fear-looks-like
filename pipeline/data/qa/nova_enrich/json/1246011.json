@@ -1,0 +1,46 @@
+{
+  "title_text": "THE HAIRPIN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IN CINEMA 15.02.2024",
+  "mood": [
+    "horror",
+    "supernatural",
+    "gothic",
+    "dread",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic horror elements and occult themes.",
+  "description": "A family stands in fear facing a menacing figure in a dark, eerie setting, with bloodstains and a supernatural atmosphere."
+}

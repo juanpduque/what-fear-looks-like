@@ -1,0 +1,48 @@
+{
+  "title_text": "VAMPIRE CIRCUS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "camp",
+    "surreal",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.4,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.5,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic horror elements, partial nudity, and occult imagery.",
+  "description": "A vibrant poster features a screaming man, a woman in a corset, and various eerie figures against a dark, bloody background with bold red and black text reading 'VAMPIRE CIRCUS.'"
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "NIGHT OF THE DEAD",
+  "credits_text": "FROM MASTER OF HORROR ERIC FORSBERG",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"More Shocking Than Re-Animator!\" \nTHEY ARE LIVING, BUT THEY ARE NOT ALIVE",
+  "mood": [
+    "dread",
+    "horror",
+    "gothic",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and themes of horror and violence.",
+  "description": "A close-up of an eye with a syringe piercing it, accompanied by bold title text and horror-themed taglines."
+}

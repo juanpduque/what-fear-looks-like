@@ -1,0 +1,47 @@
+{
+  "title_text": "EXORCIST VENGEANCE",
+  "credits_text": "ROBERT BRONZI SARAH ALEXANDRA MARKS STEVE BERKOFF",
+  "languages": [
+    "en"
+  ],
+  "other_text": "GOD HELP HER EVERYONE",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "intense",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic violence and occult themes.",
+  "description": "A poster shows a distressed woman in a haunted setting with the title 'Exorcist Vengeance' and cast names listed below."
+}

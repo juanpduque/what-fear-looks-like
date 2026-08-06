@@ -1,0 +1,45 @@
+{
+  "title_text": "DANGEROUS GAME",
+  "credits_text": "THE LEGACY MURDERS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "mystery",
+    "suspense",
+    "rainy",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "rain",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the presence of a large knife and intense expressions.",
+  "description": "A poster featuring four individuals with a large knife in the foreground, set against a rainy night with houses in the background."
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "DEAD FURY",
+  "credits_text": "FROM THE CREATOR OF CITY OF ROTT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "UNRATED ANIMATED HORROR\nUNEARTHED FILMS",
+  "mood": [
+    "horror",
+    "violent",
+    "dark",
+    "intense",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.9,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore.",
+  "description": "A young man holds a weapon amidst a horde of monstrous creatures in a dark, horror-filled setting."
+}

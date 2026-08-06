@@ -1,0 +1,39 @@
+{
+  "title_text": "MONSTER TAPES",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EXPERIMENT",
+  "mood": [
+    "horror",
+    "thriller",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.4,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the horror theme and monstrous imagery.",
+  "description": "A dark poster features a monstrous creature, a helicopter, and the title 'Monster Tapes' with a VHS tape labeled 'Experiment.'"
+}

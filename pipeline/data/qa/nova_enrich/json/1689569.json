@@ -1,0 +1,46 @@
+{
+  "title_text": "KYLGOR IN THE GRISLY ABYSS",
+  "credits_text": "KATE HUDSON, TYLER PERRY, TED BAKER, JANE DOE, JOHN SMITH, MIKE JONES, JESSICA LEE, DANIELLE ADAMS, NICKY WILSON, SAM ANTHONY, LISA JOHNSON, DAVID MARTIN, JAMES CARTER, LUCY THOMPSON, EMILY DAVIS, MARK WILSON, SARAH JOHNSON, ALEX THOMPSON, EMILY DAVIS, MARK WILSON, SARAH JOHNSON, ALEX THOMPSON, EMILY DAVIS, MARK WILSON, SARAH JOHNSON, ALEX THOMPSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "camp",
+    "surreal",
+    "grotesque",
+    "fantasy",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.1,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic and grotesque imagery, suitable for mature audiences.",
+  "description": "The poster features a chaotic assembly of bizarre, monstrous creatures with the bold title \"KYLGOR IN THE GRISLY ABYSS\" prominently displayed."
+}

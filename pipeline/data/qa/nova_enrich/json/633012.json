@@ -1,0 +1,39 @@
+{
+  "title_text": "ゴジラ",
+  "credits_text": "主演: 小林 昭二 / 出演: 岡田 裕介 / 音楽: 宇野 功 / 監督: 中野 昭雄 / 製作: 東宝 / 配給: 東宝 / SF・A",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "20周年記念!! 巨大怪獣ゴジラ!!!",
+  "mood": [
+    "dread",
+    "action",
+    "sci-fi"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and monster destruction.",
+  "description": "Movie poster features Godzilla towering over characters amidst lightning and fire, with bold Japanese text and credits."
+}

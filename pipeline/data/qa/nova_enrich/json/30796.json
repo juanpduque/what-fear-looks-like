@@ -1,0 +1,45 @@
+{
+  "title_text": "Rest Pieces",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "R.I.P.",
+  "mood": [
+    "horror",
+    "violent",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A man with a grotesque, bloody face reaches out aggressively over a tombstone labeled 'R.I.P. Rest Pieces' in a dark, horror-themed setting."
+}

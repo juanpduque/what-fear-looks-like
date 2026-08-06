@@ -1,0 +1,38 @@
+{
+  "title_text": "IGOR UNPLUGGED! THE MUSICAL",
+  "credits_text": "LEX PARRY ROLAND STONE AND JORDAN B FRAZIER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A LAB MAPE PRODUCTION With apologies to Mary Shelley",
+  "mood": [
+    "gothic",
+    "camp",
+    "humorous",
+    "fantasy"
+  ],
+  "fear_labels": [
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster for the musical 'Igor Unplugged!' features a green, monstrous creature with a sword against a gothic cityscape at night."
+}

@@ -1,0 +1,49 @@
+{
+  "title_text": "MESSENGER OF WRATH",
+  "credits_text": "SHADY DAWN PICTURES PRESENTS... RYAN CALLAWAY\nMADELINE LUPT MELISSA MALONE TESSANY WRIGHT CARMINE GORZADINI HAYLEY RYAN\nKATE GRAY HIRAM ORTIZ GONZALEZ MESSENGER OF WRATH TOBYERZ PJCT RICE WAYNE CALLAWAY RYAN CALLAWAY GOTTIN SCHREIBER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "If you do evil, be afraid...",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller",
+    "suspense",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "mask",
+      "conf": 0.9
+    },
+    {
+      "name": "bat",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a threatening atmosphere.",
+  "description": "Poster features three individuals with a masked figure holding a bat, set against a dark, smoky forest background."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "Geometria",
+  "credits_text": "A Guillermo del Toro Film",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "surreal",
+    "gothic",
+    "mysterious",
+    "haunting",
+    "dreamlike"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A surreal, gothic poster featuring a ghostly figure in a dark, dreamlike setting with vibrant red and blue lighting."
+}

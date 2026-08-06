@@ -1,0 +1,41 @@
+{
+  "title_text": "DESERT OF DEATH",
+  "credits_text": "The lucky ones will be slaughtered first.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "survival",
+    "dread",
+    "desolate"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a monstrous creature.",
+  "description": "A poster shows four people facing a large, menacing monster with sharp teeth in a desert setting."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "SCREAM RETURNS",
+  "credits_text": "UN FILM DE JAÉ CLOPES",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "other_text": "LE 2 NOVEMBRE MAJESTIC BASILLE PARISIE",
+  "mood": [
+    "dread",
+    "suspense",
+    "thriller",
+    "mystery",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "Poster features a group of people facing a shadowy figure with a mask, set against a dark background with a lit candle."
+}

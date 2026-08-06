@@ -1,0 +1,42 @@
+{
+  "title_text": "PIGS!",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CAFE",
+  "mood": [
+    "horror",
+    "thriller",
+    "camp",
+    "grotesque"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.9,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic imagery of monstrous pigs and partial nudity.",
+  "description": "A man stands over a group of monstrous pigs attacking a woman, with bold red text reading 'PIGS!' and a cafe sign in the background."
+}

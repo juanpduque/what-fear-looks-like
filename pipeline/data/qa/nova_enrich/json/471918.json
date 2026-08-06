@@ -1,0 +1,47 @@
+{
+  "title_text": "DEATH ACADEMY",
+  "credits_text": "\"En splatterfilm Slasher som förverkligats av Nordlands svar på Dario Argento\" - EikaMedia",
+  "languages": [
+    "en",
+    "sv"
+  ],
+  "other_text": "DANIEL LEHMUSSAARI COLLECTION\nEXTREME 2 DISC LIMITED EDITION\nSICK FILMS",
+  "mood": [
+    "dread",
+    "gothic",
+    "violent",
+    "dark",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A dark poster features a hooded figure with a bloody face holding an axe, set against a black background with bold red and white text."
+}

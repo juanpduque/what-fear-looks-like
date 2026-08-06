@@ -1,0 +1,50 @@
+{
+  "title_text": "THE WRITER",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HOUSE OF THE ROTTING FLESH - ACT I",
+  "mood": [
+    "gothic",
+    "horror",
+    "supernatural",
+    "dread",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "book",
+      "conf": 0.95
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.6,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult imagery and mild violent undertones.",
+  "description": "A man in vintage attire stands before a flaming book, surrounded by ghostly hands and rats, evoking a gothic horror theme."
+}

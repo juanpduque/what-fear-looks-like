@@ -1,0 +1,42 @@
+{
+  "title_text": "BLOOD TOTEM",
+  "credits_text": "DEATH IS NOT THE END",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "violent",
+    "post-apocalyptic",
+    "action",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains intense violence and graphic imagery.",
+  "description": "A man in a cowboy hat holds two revolvers against a fiery, skull-filled background with the tagline 'DEATH IS NOT THE END.'"
+}

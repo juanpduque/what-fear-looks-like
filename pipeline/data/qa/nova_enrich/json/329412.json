@@ -1,0 +1,43 @@
+{
+  "title_text": "THE HOUSE BEHIND THE WALL",
+  "credits_text": "JOSH HASSEN IRENN O'NEILLAN LIXI LIU SPICE LITTLE JOHN LENZER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "College friends rented a house. They should have stayed on campus.",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "mystery",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.3
+    },
+    {
+      "name": "forest",
+      "conf": 0.4
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, eerie poster shows an old house with a twisted tree, ominous lighting, and a stormy sky, suggesting a horror theme."
+}

@@ -1,0 +1,43 @@
+{
+  "title_text": "CLAW 2",
+  "credits_text": "STERLING ENTERTAINMENT PRESENT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BLOOD LEGACY",
+  "mood": [
+    "horror",
+    "violent",
+    "gory",
+    "intense",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    },
+    {
+      "name": "gore",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.9,
+  "sexual_content": 0.7,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "Poster features two individuals with masks and blood, and a central figure holding a whip in an industrial setting."
+}

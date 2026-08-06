@@ -1,0 +1,38 @@
+{
+  "title_text": "BURIED ALIVE",
+  "credits_text": "Jill Blum, Grayson Cravidic, Bill Morgan, Paul Eberhardt Film",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Save Your Breath",
+  "mood": [
+    "dread",
+    "suspense",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "grave",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man stands over a grave under a dark sky, with a tagline and cast credits displayed."
+}

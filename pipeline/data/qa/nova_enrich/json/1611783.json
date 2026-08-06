@@ -1,0 +1,50 @@
+{
+  "title_text": "FRIDAY THE 13TH",
+  "credits_text": "STARRING AMY LETCHER * ROB ZORBO * DAVID KOWALSKY * KEVIN BAKER * ERIC ANDERSON * CHRISY MOLATTA * WILLIAMSON * CHRIS HANCER * TONY TIMMON * DORIS ARONSON * Directed by: ALAN MYERS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOU'RE GOING TO COME, BUT YOU MAY NEVER LEAVE.",
+  "mood": [
+    "horror",
+    "thriller",
+    "camp",
+    "suspense",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    },
+    {
+      "name": "forest",
+      "conf": 0.5
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "nudity"
+  ],
+  "moderation_notes": "Contains implied violence and partial nudity.",
+  "description": "Poster features a group of people facing a large, menacing figure holding a weapon, set against a dark forest backdrop with a house visible."
+}

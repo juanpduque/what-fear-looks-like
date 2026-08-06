@@ -1,0 +1,39 @@
+{
+  "title_text": "HOWL AT THE DEAD",
+  "credits_text": "A SHORT FILM BY GREGG BISHOP",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EXECUTIVE PRODUCERS: TYLER HILL, JENNA BISHOP, KELLY BISHOP, JOSHUA LEE, SPENCER DAVIS, CHARLIE LAUGHLIN, NATHANIEL WILSON, RILEY HILL; ASSOCIATE PRODUCERS: LANCE HUNT, NICKY BISHOP, JOSHUA LEE; PRODUCED BY: GREGG BISHOP, LANCE HUNT, NICKY BISHOP, JOSHUA LEE; WRITTEN BY: GREGG BISHOP; DIRECTED BY: GREGG BISHOP",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "mystery",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "night",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a silhouette of a dog facing a dark, eerie house at night with glowing windows."
+}

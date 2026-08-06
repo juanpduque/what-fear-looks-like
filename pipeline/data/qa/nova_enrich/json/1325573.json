@@ -1,0 +1,45 @@
+{
+  "title_text": "PATER NOSTER",
+  "credits_text": "AND THE MISSION OF LIGHT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "haunting",
+    "mystical",
+    "religious",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "crowd",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.3
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and mild blood-like drips; otherwise non-explicit.",
+  "description": "A poster features a ghostly figure with flowers on its face and six women surrounding it, evoking a mystical and religious atmosphere."
+}

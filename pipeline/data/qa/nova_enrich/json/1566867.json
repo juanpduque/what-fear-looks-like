@@ -1,0 +1,43 @@
+{
+  "title_text": "Sacra Vittima",
+  "credits_text": "\"SACRA VITTIMA\" diretto da DANILO GRECO prodotto da FOLCO GRECO, FABIO GRECO con SAMIRA BARLETTA, FRANCESCO BRASCHI, FABRIZIO LA MONICA, DAVID WHITE, FRANCESCA ANTONUCCI, GIULIA DI GEROLAMO, MARTINA MARTINO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Un Cortometraggio di: Danilo Greco",
+  "mood": [
+    "gothic",
+    "surreal",
+    "haunting",
+    "mysterious",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "shadow",
+      "conf": 0.85
+    },
+    {
+      "name": "moon",
+      "conf": 0.75
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows two figures walking through a dark landscape under a full moon, with silhouettes of birds and trees in the background."
+}

@@ -1,0 +1,49 @@
+{
+  "title_text": "死霊の着物39",
+  "credits_text": "坂本美由",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "子鬼は死んだ！怪しげな着物に包まれた女が、恐怖的な怪物を呼び出す！",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "eerie",
+    "haunting",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and supernatural horror imagery.",
+  "description": "A poster features eerie masked figures and a large moth-like creature in a dark forest setting, suggesting supernatural horror."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "La Marca de la Muerte",
+  "credits_text": "FERNANDO CASANOVA y SONIA FURIÓ\nDIRECTOR: Fernando Cortés\nArgumento: Fernando Ungain\nPRODUCCIÓN: Alfredo Ripstein Jr.",
+  "languages": [
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "dramatic",
+    "intense",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.1,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic horror poster featuring a menacing figure with a syringe, a screaming woman, and a monstrous green face in the background."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "좀비스",
+  "credits_text": "김혜경 각본, 김희재 연출",
+  "languages": [
+    "ko"
+  ],
+  "other_text": "뒤에는 손가락 발톱으로 지친 자리마다, \"뒤에 있는 자만 보게 하지 마라\"",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and horror imagery.",
+  "description": "A poster features a woman with long hair, pale skin, and red eyes, with visible scratches and blood on her face."
+}

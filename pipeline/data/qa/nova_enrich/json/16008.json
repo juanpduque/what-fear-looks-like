@@ -1,0 +1,46 @@
+{
+  "title_text": "ROOM 205",
+  "credits_text": "\"A FAST-PACED SUPERNATURAL TEEN SLASHER\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE MAKERS OF 30 DAYS OF NIGHT AND THE GRUDGE PRESENT GHOST HOUSE UNDERGROUND",
+  "mood": [
+    "supernatural",
+    "teen",
+    "slasher",
+    "horror",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and suggestive imagery.",
+  "description": "The poster features a dark, eerie scene with a prominent skull and the title \"ROOM 205\" overlaid on a ghostly background."
+}

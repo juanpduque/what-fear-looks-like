@@ -1,0 +1,50 @@
+{
+  "title_text": "IT THIRSTS FOR BLOOD",
+  "credits_text": "LOOKIT PRODUCTIONS PRESENTS \"KEVIN KITTLE'S IT THIRSTS FOR BLOOD\" ANGELA MARIA DUARTE LAUREN PITTS MICHELLE KITTLE JENNIFER SWISH WRITTEN BY KEVIN KITTLE \"FROM A STORY BY JAKE BALDWIN\" PRODUCED BY LAUREN PITTS & BRENDAN KITTLE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "violent",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    },
+    {
+      "name": "forest",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.6,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster features a shadowy figure holding an axe against a dark, wooded background with bold red text reading \"IT THIRSTS FOR BLOOD\"."
+}

@@ -1,0 +1,47 @@
+{
+  "title_text": "SARA",
+  "credits_text": "FROM HORROR WRITER & DIRECTOR RAKEEM LAWRENCE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SEE HER TWICE YOU DIE IN A MIRROR NEAR YOU SO",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "eerie",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic blood and gore, suggesting violent and occult themes.",
+  "description": "A dark, ornate poster features a skull with blood, overlaid with bold red text and a gothic aesthetic."
+}

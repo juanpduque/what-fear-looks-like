@@ -1,0 +1,49 @@
+{
+  "title_text": "VANITYVILLE MASSACRE",
+  "credits_text": "KULTMEDIA presents 'VanityVille Massacre' starring Alison Davis, Isabel Larsen, Angie Chang, Stephanie Primmern, Molly Nyrman, Livia Polak, Kenny Sansoucie. Score by Brendan Read. Directed by MSTR SIRM. Executive Producers: Nico Gianuzzi & Donna Reed. Music by EU6C & H-Bugged. Produced by Logo Inc. & Getz Co.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "I, A WORLD OBSESSED WITH BEAUTY. FOUR UNSUSPECTING GIRLS. WILL PAY THE ULTIMATE PRICE FOR THEIR SINS",
+  "mood": [
+    "gothic",
+    "dread",
+    "erotic",
+    "surreal",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity",
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and sexual themes.",
+  "description": "Poster shows a dark, gothic mansion with blood splatters and text about a massacre involving four girls."
+}

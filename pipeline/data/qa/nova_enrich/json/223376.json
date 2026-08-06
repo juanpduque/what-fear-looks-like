@@ -1,0 +1,42 @@
+{
+  "title_text": "BURNDOWN",
+  "credits_text": "PETER FIRTH CATHY MORIARTY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MYSTERY. MURDER. MELTDOWN.",
+  "mood": [
+    "tense",
+    "suspenseful",
+    "dramatic",
+    "catastrophic"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "nuclear",
+      "conf": 0.8
+    },
+    {
+      "name": "mystery",
+      "conf": 0.7
+    },
+    {
+      "name": "eyes",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring intense eyes above a cityscape with a nuclear plant on fire, suggesting themes of mystery, murder, and disaster."
+}

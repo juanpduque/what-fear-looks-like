@@ -1,0 +1,43 @@
+{
+  "title_text": "MAUT KI HAVELI",
+  "credits_text": "PRODUCED BY RAMESH K. DOSHI WRITTEN & DIRECTED BY A. RAJA",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "other_text": "हाथ की हवेली",
+  "mood": [
+    "gothic",
+    "erotic",
+    "horror",
+    "camp",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.7,
+  "sensitive": [
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains partial nudity and suggestive imagery.",
+  "description": "A horror film poster featuring a monstrous face, a reclining woman in a floral dress, and several characters in a dark, eerie setting with crosses and knives."
+}

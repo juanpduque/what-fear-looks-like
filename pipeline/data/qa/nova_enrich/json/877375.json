@@ -1,0 +1,46 @@
+{
+  "title_text": "PANDORA",
+  "credits_text": "PHILIP BROADBENT DAVID McGILLAND",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"WE SUMMON OUR OWN DEMONS\" \"HELLRAISER meets REGULUS! A DREAM\" aliorfilm.film",
+  "mood": [
+    "gothic",
+    "surreal",
+    "eerie",
+    "haunting",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult themes and mild violent imagery.",
+  "description": "Poster features four eerie female figures with ghostly appearances, set against a dark background with dripping paint effects."
+}

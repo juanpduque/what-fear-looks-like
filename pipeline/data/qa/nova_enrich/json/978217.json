@@ -1,0 +1,42 @@
+{
+  "title_text": "GELİN",
+  "credits_text": "'HERKES KENDİ KARANLİĞINİN ESİDİR' IREM KÖK NECLA KONDA BERKAY BERKMEN ALP TAŞ DILAN URAL TOLUAY YERLİZ ALI ZEYNİ CANLI FENTEM IRİK SINAN KAYABAŞİ TOĞRAY DÖKMEŞEN BEKA EMİR ERKAN KORKMAZ KEMAL KORKMAZ FATIH IRIS BERKAY BERKMEN KEVINÇE CANLI FENTEM IRİK EMİR ERKAN KORKMAZ FATIH IRIS",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "YÖNETMEN BERKAY BERKMEN 28 OCAK'TA SİNEMALARDA IREM KÖK NECLA KONDA BERKAY BERKMEN ALP TAŞ DILAN URAL TOLUAY YERLİZ ALI ZEYNİ CANLI FENTEM IRİK SINAN KAYABAŞİ TOĞRAY DÖKMEŞEN BEKA EMİR ERKAN KORKMAZ KEMAL KORKMAZ FATIH IRIS BERKAY BERKMEN KEVINÇE CANLI FENTEM IRİK EMİR ERKAN KORKMAZ FATIH IRIS ÖNERLİK VESAYATİ OKTAY AKŞİSİ KE KREM INCI ÖZEL FREKANS STUDYO",
+  "mood": [
+    "gothic",
+    "eerie",
+    "haunting",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and disturbing themes.",
+  "description": "A woman in a white dress sits amidst animal remains in a dark setting, with text overlay indicating a psychological horror film."
+}

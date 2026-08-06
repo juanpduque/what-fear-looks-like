@@ -1,0 +1,40 @@
+{
+  "title_text": "Hail Mary, full of RAGE!",
+  "credits_text": "FOUNTAIN AND THE VENGEANCE NUN WHO WOULDN'T DIE\nMONSTER KID PRODUCTIONS\nSTARRING MALLORY DANIELLE, JAMES DEAN, LOUIS O'BRIEN, ANDREW KLEIN, COODY BRINER\nDIRECTED BY JAMES DEAN\nWRITTEN BY JAMES DEAN\nORIGINAL MUSIC BY VAN BRINER\nPHOTOGRAPHY BY ANDREW KLEIN\nEDITED BY VAN BRINER AND JAMES DEAN\nSCORE BY ALICE COLLINS\nSUPERVISED BY H.E.P. ARTISTY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THIS SISTER IS ONE MEAN MOTHER!",
+  "mood": [
+    "violent",
+    "dark",
+    "rebellious",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.5
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests intense and violent themes.",
+  "description": "A poster featuring a group of characters, including a central figure holding a weapon, with bold text and dramatic imagery."
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "THE RULE OF THREE",
+  "credits_text": "\"STARRING SUSAN LYNCH\" \"WRITTEN AND DIRECTED BY JOSHUA JOHNSON\" \"PRODUCED BY JOSHUA JOHNSON\" \"EXECUTIVE PRODUCER BRUCE COVETT\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COMING SOON TO ALIBI",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "horror",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "axe",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.6,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A horror poster featuring a central figure holding an axe, surrounded by ghostly faces and skulls, with a dark, eerie background."
+}

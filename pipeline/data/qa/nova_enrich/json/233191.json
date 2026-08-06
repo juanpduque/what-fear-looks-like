@@ -1,0 +1,40 @@
+{
+  "title_text": "ZOMBIES",
+  "credits_text": "Jonathan Williams, Craig Bowen, Eric Tunic",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Angellic faces. Immortal hate. No one is safe. \"The first in boy meets boy horror\" - Boston Phoenix",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "sexual"
+  ],
+  "moderation_notes": "Contains mild sexual innuendo in tagline.",
+  "description": "A dark poster features a close-up of a man's face with the title \"ZOMBIES\" prominently displayed above."
+}

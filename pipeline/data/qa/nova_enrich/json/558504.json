@@ -1,0 +1,47 @@
+{
+  "title_text": "Opera Mortem",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dark",
+    "mysterious",
+    "haunting",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 1.0
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "occult",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.0,
+  "animal": 0.8,
+  "blood_gore": 0.8,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains occult imagery, blood, and a skull, which may be sensitive to some audiences.",
+  "description": "A dark, gothic poster featuring a skull with a pentagram and dripping blood, accompanied by moths and the title 'Opera Mortem'."
+}

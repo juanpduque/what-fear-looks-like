@@ -1,0 +1,43 @@
+{
+  "title_text": "KHONI DRACULA",
+  "credits_text": "WRITTEN, PRODUCED & DIRECTED BY HARANAM SINGH AMAR AMIT CINEMATOGRAPHY NANDAL CHOWDHARY",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "other_text": "H.S. FILMS PRESENTS",
+  "mood": [
+    "gothic",
+    "horror",
+    "dramatic",
+    "intense",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.5,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild violence and occult themes typical of horror genre.",
+  "description": "Poster features a dramatic close-up of a vampire with fangs, surrounded by characters in tense poses, set against a cross backdrop."
+}

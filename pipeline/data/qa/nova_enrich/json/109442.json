@@ -1,0 +1,42 @@
+{
+  "title_text": "THE TRICK OR TREATERS",
+  "credits_text": "A FILM BY MIKE CHESTER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TERROR HAS A SWEET TOOTH",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "camp",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "horror",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and horror imagery.",
+  "description": "A poster featuring a distorted, blood-smeared face with intense eyes, overlaid with bold red text and a tagline."
+}

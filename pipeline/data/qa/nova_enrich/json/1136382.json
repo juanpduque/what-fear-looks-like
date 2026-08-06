@@ -1,0 +1,42 @@
+{
+  "title_text": "MOON GHOST",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THOUSANDS OF YEARS AGO, IT DEVOURED THE ENTIRE LUNAR CIVILIZATION BEFORE BEING IMPRISONED BY THE LAST MOON WIZARDS. NOW, IT'S FREE... IT'S ON ITS WAY TO EARTH, AND IT'S STILL SUPER HUNGRY.",
+  "mood": [
+    "horror",
+    "sci-fi",
+    "thriller",
+    "fantasy",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and implied violence.",
+  "description": "A poster shows a woman holding a green orb with a large, cracked moon in the background, featuring bold red text and a horror theme."
+}

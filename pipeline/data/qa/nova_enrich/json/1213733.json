@@ -1,0 +1,41 @@
+{
+  "title_text": "Slaughter Massacre",
+  "credits_text": "ABIX PRODUCTIONS presents \"SLAUGHTER MASSACRE\" a new LAWRENCE GREYFUSS RENEE ALBRECHT AMBER BRAY ARIEL KRAZ FERNANDEZ EMMETT HOLLAHAN CHRIS ZENO JENNIFER ANDERSON CHRISTINA PEREZ SULLIVAN SAM McKEARNEY DAN ABRANY MATT SASSO MUSIC BY SAM SPRAUGU",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Some call it a Slaughter Massacre. Others call it a You be the judge",
+  "mood": [
+    "dread",
+    "thriller",
+    "psychological",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, may be disturbing to some viewers.",
+  "description": "A dark poster features a woman in a white shirt with a large knife and the title \"Slaughter Massacre\" prominently displayed."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "SOMETHING OF MINE",
+  "credits_text": "It's his.\nThey took it.\nHe wants it back.\nSome stones are better left unturned.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "In Vivid Color UNRATED",
+  "mood": [
+    "horror",
+    "thriller",
+    "supernatural",
+    "psychological",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "graveyard",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild violent imagery implied by the characters' expressions and posture.",
+  "description": "Poster shows three distressed individuals with one restrained, set against a graveyard backdrop with bold, colorful title text."
+}

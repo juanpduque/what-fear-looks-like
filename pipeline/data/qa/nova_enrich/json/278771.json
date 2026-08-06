@@ -1,0 +1,36 @@
+{
+  "title_text": "INFLICTION",
+  "credits_text": "Jack Thomas Smith Presents",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Some sins can never be erased. IN 2011, TWO BROTHERS DOCUMENTED THEIR MURDER SPIRE IN NORTH CAROLINA. THIS IS THE ACTUAL ASSEMBLED FOOTAGE.",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.2,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster hints at violent and gory themes related to murder documentation.",
+  "description": "A poster shows a framed family photo above an open suitcase with cameras, suggesting a documentary about a murder spree."
+}

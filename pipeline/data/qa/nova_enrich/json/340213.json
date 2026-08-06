@@ -1,0 +1,45 @@
+{
+  "title_text": "DARKEST DAY",
+  "credits_text": "PRAY FOR NIGHT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "apocalyptic",
+    "action",
+    "horror",
+    "survival",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and horror elements, including fire and potential violence.",
+  "description": "A man and woman stand amidst flames holding a gun, with zombies and helicopters in the background, suggesting a post-apocalyptic survival scenario."
+}

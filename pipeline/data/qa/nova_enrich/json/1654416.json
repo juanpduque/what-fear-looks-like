@@ -1,0 +1,44 @@
+{
+  "title_text": "Prey",
+  "credits_text": "Written and Directed by Ron F. Tham",
+  "languages": [
+    "en"
+  ],
+  "other_text": "They are no longer the forest. The Coraz... I spill my tears from a life... They are no longer the forest.",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "",
+  "description": "A poster shows a tattooed face with an eye, set against handwritten text and a small house with a red door."
+}

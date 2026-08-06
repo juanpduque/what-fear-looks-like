@@ -1,0 +1,38 @@
+{
+  "title_text": "BIGFOOT",
+  "credits_text": "PAUL LOGAN DIANNA RENEE ASHTON LEIGH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CADDO LAKE DRAWBRIDGE THE HUNT FOR SKOOKUM",
+  "mood": [
+    "adventure",
+    "thriller",
+    "forest",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.3
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man stands in front of a large, menacing Bigfoot creature near a lake, with a sign reading 'Caddo Lake Drawbridge' and a small boat in the water."
+}

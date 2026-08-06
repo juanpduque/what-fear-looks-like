@@ -1,0 +1,41 @@
+{
+  "title_text": "SARAJANA",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Kota Ghaib",
+  "mood": [
+    "tense",
+    "mysterious",
+    "post-apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.5
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "crowd",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.5,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A group of people, including a central female figure, stand in a flooded urban landscape with a mysterious floating structure above them."
+}

@@ -1,0 +1,38 @@
+{
+  "title_text": "De Indringer",
+  "credits_text": "Koen De Bouw, Els Dottermans, Filip Peeters, Axel Daeseleire, Marieke Neuville, Vic De Wachter, Sien Eggers, Lanna Fleeraeckers, Stephan De Groof, Nathalie Laroche, Gaëlle De Caestecker, Steven Van Laere, Joris Brouwers, Agnes Van Natacha Francone, Steve Van Cleemput, Eric Wirix",
+  "languages": [
+    "en",
+    "nl"
+  ],
+  "other_text": "Een film van Frank Van Mechelen",
+  "mood": [
+    "tense",
+    "suspenseful",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "train",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Movie poster features three characters with a train track and a dark, intense atmosphere."
+}

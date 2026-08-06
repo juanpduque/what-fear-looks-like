@@ -1,0 +1,39 @@
+{
+  "title_text": "PAUL IN DUNE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "surreal",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "skull",
+      "conf": 0.3
+    },
+    {
+      "name": "fire",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.95,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains violent imagery and monstrous creature.",
+  "description": "A poster shows a monstrous creature towering over a ruined landscape with two small figures in the foreground, evoking a sense of dread and apocalypse."
+}

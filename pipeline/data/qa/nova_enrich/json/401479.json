@@ -1,0 +1,44 @@
+{
+  "title_text": "The VEAR Infection",
+  "credits_text": "After Vince Films Presents... STARRING ANDREW GARRELLA, CHRISTOPHER SCANDAL, JESSICA BATES, NICK MERCER, COLBY RANG, GUY SHAW, JOE HOFFMAN, JAMES McCORMICK, DENNIS GARY, ERIN ANTONIO & ERICO GREEO... DIRECTED BY VINCE RANG... WRITTEN BY VINCE RANG & JOE HOFFMAN... PRODUCED BY VINCE RANG & JOE HOFFMAN... EXECUTIVE PRODUCER DENNIS GARY... MUSIC BY VINCE RANG... 2011",
+  "languages": [
+    "en"
+  ],
+  "other_text": "If The World Ended Tomorrow, Are You Sure You'd Want To Survive?",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster shows a zombie-like figure holding a weapon, with a distressed person in the background and a tagline about survival."
+}

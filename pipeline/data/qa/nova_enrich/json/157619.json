@@ -1,0 +1,38 @@
+{
+  "title_text": "THE DINNER PARTY",
+  "credits_text": "\"A BRILLIANT PSYCHOLOGICAL THRILLER\" FILMINK MAGAZINE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "INSPIRED BY TRUE EVENTS",
+  "mood": [
+    "tense",
+    "disturbing",
+    "psychological",
+    "thriller",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, depicting a disturbing scenario.",
+  "description": "A dinner table setting with a person, blood, a gun, and scattered items, suggesting a violent psychological thriller."
+}

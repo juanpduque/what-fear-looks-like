@@ -1,0 +1,45 @@
+{
+  "title_text": "MARK OF THE ASTRO-ZOMBIES",
+  "credits_text": "Ted V. Mikels",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SEE: MACHTE-CREATING MONSTERS WILLIE PANIC IN THE STREETS! SEE: ALIEN ABDUCTORS! SEE: HAPLESS HUMANS! SEE: THE ULTIMATE BATTLE FOR THE FATE OF MANKIND!",
+  "mood": [
+    "camp",
+    "sci-fi",
+    "horror",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "zombie",
+      "conf": 0.85
+    },
+    {
+      "name": "alien",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "Contains mild sexual suggestiveness and implied violence.",
+  "description": "A poster features a hooded zombie-like figure holding a woman, with bold text advertising various sci-fi horror elements."
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "Flammendorf (PYROMANIAC)",
+  "credits_text": "Dmitryazh Cutrepbor's",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Retro Gold 63\nIndependent Awards 2014\nSince 1994",
+  "mood": [
+    "horror",
+    "surreal",
+    "violent",
+    "gothic",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.9,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster features a man in a helmet spraying fire at a monstrous, skull-faced figure amidst flames and charred bodies."
+}

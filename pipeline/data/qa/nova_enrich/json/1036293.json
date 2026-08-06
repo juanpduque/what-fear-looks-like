@@ -1,0 +1,39 @@
+{
+  "title_text": "THE UNINTENDED SEQUEL",
+  "credits_text": "A FILM BY DONOVAN HARROW From the Creators of THE HOUSE THAT EVIL BUILT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "We're making a movie. WANT to be in it? COMING SPRING 2022",
+  "mood": [
+    "horror",
+    "thriller",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "Poster features a masked figure holding an axe with several distressed individuals in the background, promoting a horror sequel film."
+}

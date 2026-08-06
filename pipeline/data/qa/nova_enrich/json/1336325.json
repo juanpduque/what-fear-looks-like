@@ -1,0 +1,43 @@
+{
+  "title_text": "LEVEO",
+  "credits_text": "[FIEBRE]\nPROTAGONIZADO POR BRENDAN EGAN\nCOMO EL HOMBRE QUE QUIERE SACARSE EL OJO CON UN LÁPIZ\nESCRITO Y DIRIGIDO POR TOMÁS ORREGO",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "HOMBRE, LÁPIZ, OJO, TELÉFONO\nDEDICADO A LOS ETERNOS SONÁDORES QUE SE NIEGAN A CRECER.",
+  "mood": [
+    "intense",
+    "disturbing",
+    "psychological",
+    "dark",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and themes of violence and self-harm.",
+  "description": "A dark, intense poster featuring a close-up of a distressed face with dripping text overlay, suggesting themes of violence and psychological turmoil."
+}

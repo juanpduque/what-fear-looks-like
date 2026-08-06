@@ -1,0 +1,38 @@
+{
+  "title_text": "MORMO",
+  "credits_text": "ITS NAME WAS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CAM 7.1/ws",
+  "mood": [
+    "eerie",
+    "suspenseful",
+    "haunting",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a shadowy figure behind a curtain with text reading 'ITS NAME WAS MORMO,' creating a spooky atmosphere."
+}

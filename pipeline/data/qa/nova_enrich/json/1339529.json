@@ -1,0 +1,36 @@
+{
+  "title_text": "Popsy",
+  "credits_text": "STEPHEN KING",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DAMAGE REPORT FORM\n\nRETURN OF RENTAL\n\nTICK NO DAMAGE\n\nDESCRIPTION OF DAMAGE\n\nTIPS:\n\n1 SCRATCH\n\n2 DENT\n\n3 CHIP\n\n4 CRACK\n\n5 BURN\n\n6 TEAR\n\n7 MISSING\n\nADDITIONAL INFORMATION\n\nDATE RETURNED",
+  "mood": [
+    "gothic",
+    "mystery",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains a small bloodstain, suggesting potential violence or injury.",
+  "description": "A poster for the film 'Popsy' by Stephen King, featuring a damage report form with sketches of a van and handwritten notes, including a red bloodstain."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "CALL OF THE DEAD",
+  "credits_text": "SAMEER TECKCHANDANI'S CALL OF THE DEAD \"TU MADRE TE LLAMA\" SAMER TECKCHANDANI PRESENTS CALL OF THE DEAD \"TU MADRE TE LLAMA\" DIRECTED BY MARTA C. OLMEDA MARIA RUIZ SUSANA ORTIZ RUBEN BAUTISTA BENI PINEDA ANA SAAVEDRA PAOLA GARCIA MARICARMEN FERNANDEZ",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "(TU MADRE TE LLAMA)",
+  "mood": [
+    "dread",
+    "horror",
+    "suspense",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including blood and ghostly imagery.",
+  "description": "A woman is shown in distress, surrounded by ghostly hands, with the title \"Call of the Dead\" prominently displayed."
+}

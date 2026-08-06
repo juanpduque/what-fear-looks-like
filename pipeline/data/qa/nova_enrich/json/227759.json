@@ -1,0 +1,43 @@
+{
+  "title_text": "PURE BLOOD",
+  "credits_text": "A FILM BY KEN KAPLAN\nVAMPIRE LUST FOR THE MASTER RACE!\nLUCIO FULCI WINNER OF THE AWARD AT FANTASIA FESTIVAL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "LUCIO KRAUSMAN AND MICHAEL HERZ PRESENT A TROMA TEAM RELEASE\n\"Pure Blood finds the vampire theme heading into new territories.\" - All Movie Guide\nOFFICIAL SELECTION OF THE SITGES FT LAUDERDALE AND CORONADO FILM FESTIVALS\nBONUS: BEHIND THE SCENES DOCUMENTARY AND LOTS MORE!",
+  "mood": [
+    "erotic",
+    "camp",
+    "horror",
+    "vampire",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "vampire",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "erotic",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.7,
+  "sensitive": [
+    "sexual",
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains erotic imagery and suggestive themes.",
+  "description": "Movie poster features a smiling woman with a syringe, highlighting themes of vampirism and erotic horror."
+}

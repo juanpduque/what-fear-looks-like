@@ -1,0 +1,45 @@
+{
+  "title_text": "REVIVED",
+  "credits_text": "PRODUCED AND DIRECTED BY CHRIS ESCORREGA WRITTEN BY THOMAS PETAHTEGOOSE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EVIL HAS REGAINED CONSCIOUSNESS",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "haunting",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and supernatural horror elements.",
+  "description": "A poster shows a haunted house with a ghostly face and stormy sky, titled 'Revived' with tagline 'Evil Has Regained Consciousness.'"
+}

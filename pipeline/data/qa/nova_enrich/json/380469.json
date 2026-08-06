@@ -1,0 +1,42 @@
+{
+  "title_text": "FRIGHTMARES",
+  "credits_text": "WORSE THAN YOUR WORST NIGHTMARES. CAST: John Hurt Ron Berglas Edward Hardwicke Lewis Fiener Kevin Parker",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AVR 1-60",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man sits in a chair holding a cigarette, with a menacing green monster looming behind him. The poster features bold, colorful text and a dramatic, eerie atmosphere."
+}

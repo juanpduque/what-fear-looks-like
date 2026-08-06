@@ -1,0 +1,42 @@
+{
+  "title_text": "AN OCCASION OF SIN",
+  "credits_text": "QUEENWASP PRODUCTIONS presents a FILM by VAMPA \"AN OCCASION OF SIN\" starring DYLAN HART, LISA BARRETT, JOSIE STEC, M. ROBERT MOORE, SALVADOR NICHINECK and MARA POWELL as \"ALICIA\" written & directed by VAMPA DELOMBRA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Vampire's Vistas:",
+  "mood": [
+    "gothic",
+    "dread",
+    "eerie",
+    "dark",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; suitable for mature audiences.",
+  "description": "A dark poster features two characters, one with blood on their face and glasses, set against a shadowy background with bold yellow and white text."
+}

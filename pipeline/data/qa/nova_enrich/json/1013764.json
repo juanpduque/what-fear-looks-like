@@ -1,0 +1,35 @@
+{
+  "title_text": "Lewizia",
+  "credits_text": "VERENA KONIE TSCHE MARTIN WALDE A FILM BY OLAF ITTENBACH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dramatic",
+    "historical",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "soldier",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence through weapon imagery and historical military context.",
+  "description": "A dramatic poster features three characters in a tense, smoky setting with a soldier holding a gun, suggesting a historical or war-themed narrative."
+}

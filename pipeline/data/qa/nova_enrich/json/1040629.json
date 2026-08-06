@@ -1,0 +1,49 @@
+{
+  "title_text": "THE COPY-WRITER",
+  "credits_text": "STARRING TONY WILSON & NIKI JOHNSON WRITTEN & DIRECTED BY IAN BARKER PRODUCED BY KAREN SIMPSON EXECUTIVE PRODUCERS: GRAHAM DOWNS & CHRISTINE PARKER SPECIAL THANKS TO LENA JEPSON SAN JUAN DE GUERRA & DANIELLE RUTTER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "INSPIRED BY THE WORKS OF H.P. LOVECRAFT",
+  "mood": [
+    "gothic",
+    "dread",
+    "psychological",
+    "supernatural",
+    "tense"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "occult",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.3,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and intense imagery.",
+  "description": "A dark poster features three individuals with candles, one screaming, against a shadowy background, evoking a gothic horror atmosphere."
+}

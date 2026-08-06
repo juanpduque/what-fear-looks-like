@@ -1,0 +1,46 @@
+{
+  "title_text": "CİNAZABI",
+  "credits_text": "YAZAN VE YÖNETEN ONUR ALDOGAN\nYAPIMCI H.HAKAN EREN & ONUR ALDOGAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "OKTAK YAPIMCI ONN GLOBAL INC & ONN Medya Türkiye YAPIM KORDENATİRİ DURSUN DEİRMEĞMEZ YAPIM AMİRİ FİKRET AKKAYA SANAT YÖNETMENİ GÖKHAN OZAN DEMIRTAŞ GÖRÜNTÜ YAPIM AMİRİ ONUR ALDOGAN SET AMİRİ MUSTAFA PEHLIVAN SEVILMIS ONUR ALDOGAN EDITING BES DIZAYN COLARTIST CENGIZ YILMAZ MAYKİYOR ZEYNEP YILMAZ ONUR ALDOGAN CATERING ERCAN OZKAYA CAST DIREKTORİ PINAR TANK",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "violent",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster featuring a zombie-like figure with exposed flesh and blood, set against a dark, eerie background."
+}

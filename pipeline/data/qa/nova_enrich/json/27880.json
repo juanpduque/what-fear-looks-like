@@ -1,0 +1,50 @@
+{
+  "title_text": "RIKA",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "リカ・バージング・ステート・ステートステート",
+  "mood": [
+    "horror",
+    "supernatural",
+    "teen",
+    "violent",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster features a group of teens and monsters, with a central female character holding a sword amidst a chaotic, horror-filled scene."
+}

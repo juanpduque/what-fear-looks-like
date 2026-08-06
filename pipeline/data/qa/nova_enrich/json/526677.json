@@ -1,0 +1,47 @@
+{
+  "title_text": "",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "口裂女",
+  "mood": [
+    "horrific",
+    "gothic",
+    "psychological",
+    "disturbing",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic violence and disturbing imagery.",
+  "description": "A woman with exposed internal organs stands amidst dark, twisting tendrils, with Japanese text on the right side."
+}

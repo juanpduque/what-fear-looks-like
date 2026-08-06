@@ -1,0 +1,45 @@
+{
+  "title_text": "JURASSIC CITY",
+  "credits_text": "THROWING L.A. BACK TO THE STONE AGES.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "sci-fi",
+    "thriller",
+    "dystopia",
+    "apocalypse"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "cityscape",
+      "conf": 0.8
+    },
+    {
+      "name": "helicopter",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and destructive scenes involving a large dinosaur.",
+  "description": "A large dinosaur roars over a city skyline with smoke and explosions in the background, with a helicopter flying nearby."
+}

@@ -1,0 +1,36 @@
+{
+  "title_text": "ABDUCTED",
+  "credits_text": "SCOUT TAYLOR-COMPTON DANIEL JOSEPH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HE WILL DO WHATEVER IT TAKES TO SAVE HIS DAUGHTER",
+  "mood": [
+    "intense",
+    "action",
+    "suspense",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "helicopter",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action sequences and implied violence.",
+  "description": "A man aims a gun with determination; scenes include a woman and a helicopter, suggesting a high-stakes rescue mission."
+}

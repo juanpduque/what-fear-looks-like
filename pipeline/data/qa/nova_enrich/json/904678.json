@@ -1,0 +1,42 @@
+{
+  "title_text": "MAGGOT FARMERS",
+  "credits_text": "WRITTEN AND DIRECTED BY WOLLEY KEMERY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "RUN. SCREAM. HIDE. DIE!",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a ghostly, skeletal figure with flowing hair and a menacing expression, set against a dark background with bold white text."
+}

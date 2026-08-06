@@ -1,0 +1,42 @@
+{
+  "title_text": "THE BLOOD THINGS",
+  "credits_text": "INTRODUCING ADDISON MCCRAY AS EDMA A FILM BY ADRIAN ROMAN NEADOWMOSS ENTERTAINMENT IN ASSOCIATION WITH RESPIRATION FILMS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "The Sound You Hear Is Deception",
+  "mood": [
+    "horror",
+    "suspense",
+    "dread",
+    "gothic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and implied violence.",
+  "description": "A woman with a shocked expression is central in a dark, blue-tinted setting, with text indicating a horror film title and credits."
+}

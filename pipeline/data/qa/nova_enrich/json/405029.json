@@ -1,0 +1,47 @@
+{
+  "title_text": "SAAMRI",
+  "credits_text": "TULSI RAMSAY & SHYAM RAMSAY DIRECTED BY TULSI RAMSAY & SHYAM RAMSAY MUSIC TULSI RAMSAY TULSI & SHYAM RAMSAY SPECIAL PRODUCER BAPPI LAHRI GANGU RAMSAY DUY ACHRA & ASHOK KHUSHALANI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "3-D",
+  "mood": [
+    "horror",
+    "thriller",
+    "eerie",
+    "psychological",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "blood",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic imagery and suggestive content.",
+  "description": "A poster features a monstrous face, a woman in distress, and a couple in a dramatic pose, promoting a 3-D horror film."
+}

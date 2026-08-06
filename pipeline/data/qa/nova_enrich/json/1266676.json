@@ -1,0 +1,41 @@
+{
+  "title_text": "STROKEN",
+  "credits_text": "A SHANNON YOUNG FILM\nTYLER YOUNG SIMON BERMAN STEPHANIE MESHAN KELLY MICHAEL PASCOE TOM MC CATHIE\nHYBRID FILMS PRESENTS ASSOCIATION FIRESTONE ENTERTAINMENT PROGRAM SERVICES PRODUCER MODDER/YOUNG/WALKER PRODUCTION EXECUTIVE PRODUCER RANALD MACLURKIN EDDIE ROB EDDIE ROB ROY TANZIA DE ROSS PAUL MOORE STEVEN BURGES YOUNG PRODUCER BRIAN WALKER WRITTEN AND DIRECTED BY SHANNON YOUNG",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "thriller",
+    "suspense",
+    "post-apocalyptic",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "mask",
+      "conf": 0.8
+    },
+    {
+      "name": "threatening",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a threatening atmosphere.",
+  "description": "A woman in a leather jacket holds a gun, surrounded by tense characters in a dark, smoky setting."
+}

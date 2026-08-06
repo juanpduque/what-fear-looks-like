@@ -1,0 +1,43 @@
+{
+  "title_text": "SUPER HOST",
+  "credits_text": "A COOL ADULTS PRODUCTION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "They left, It stayed.",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "psychological",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark poster features a monstrous face with an open mouth, framed by red vertical lights against a cracked background."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "SAN AGEP",
+  "credits_text": "Starring Debbie Rockan",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Don't Let Her Out After Dark!",
+  "mood": [
+    "intense",
+    "horror",
+    "menacing",
+    "dark",
+    "threatening"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.1,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring a menacing creature with sharp teeth and glowing eyes, with bold red text and a tagline warning."
+}

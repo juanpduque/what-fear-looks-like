@@ -1,0 +1,47 @@
+{
+  "title_text": "黑人在黑",
+  "credits_text": "编辑 云安安 开开成比",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "GET IN THE DARK",
+  "mood": [
+    "gothic",
+    "occult",
+    "dread",
+    "mystery",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult imagery and implied ritualistic violence.",
+  "description": "A group of masked figures surrounds a bound person in a dimly lit ritualistic setting, evoking themes of occult mystery and dread."
+}

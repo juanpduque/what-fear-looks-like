@@ -1,0 +1,45 @@
+{
+  "title_text": "INSIDIAE NEMORIS",
+  "credits_text": "TRAPPOLA IN FONDO AL BOSCO\nun film di SALVATORE VITIELLO\ncon FRANCESCO BISCONE, RIMI BEQIRI, ELISA BETTI",
+  "languages": [
+    "it"
+  ],
+  "other_text": "CNE",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery",
+    "forest",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "axe",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster hints at potential violence due to the axe and shadowy setting.",
+  "description": "A poster shows a dark forest scene with an axe embedded in a tree trunk and a shadowy figure holding a rifle in the background."
+}

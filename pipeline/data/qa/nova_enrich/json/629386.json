@@ -1,0 +1,47 @@
+{
+  "title_text": "KILLER BABES AND THE FRIGHTENING FILM FIASCO",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NOT FOR RENT",
+  "mood": [
+    "horror",
+    "camp",
+    "gothic",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "knife",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, partial nudity, and sexualized imagery.",
+  "description": "A horror poster features a woman with a skull mask holding a knife, blood on her chest, and a haunted mansion in the background."
+}

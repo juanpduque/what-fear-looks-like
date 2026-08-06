@@ -1,0 +1,38 @@
+{
+  "title_text": "I Know What You Did Last Winter",
+  "credits_text": "A flashing blade cutting down the run. A film by Eliezer Fabri",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "suspense",
+    "cold",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blade",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster features four close-up faces and a skier against a snowy mountain backdrop with bold red and blue text."
+}

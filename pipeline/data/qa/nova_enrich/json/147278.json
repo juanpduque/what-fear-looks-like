@@ -1,0 +1,42 @@
+{
+  "title_text": "THE CHOSEN ONE",
+  "credits_text": "A FILM BY THEODORE COLLATOS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"The Chosen One challenges traditional notions of horror movies.\" - Catherine Falby, The Advocate",
+  "mood": [
+    "gothic",
+    "horror",
+    "mysterious",
+    "dark",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "cross",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and violent themes.",
+  "description": "A dark, gothic poster featuring a large ornate cross with a bloody handprint and silhouette, promoting a horror film."
+}

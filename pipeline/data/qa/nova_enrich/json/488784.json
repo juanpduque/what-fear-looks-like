@@ -1,0 +1,46 @@
+{
+  "title_text": "PROFANADORES",
+  "credits_text": "",
+  "languages": [
+    "es"
+  ],
+  "other_text": "THE BEST INFORMATION EVER",
+  "mood": [
+    "action",
+    "thriller",
+    "dark",
+    "gritty",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "cemetery",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "Poster features men with guns in a dark, gritty setting with a cemetery backdrop and splattered blood."
+}

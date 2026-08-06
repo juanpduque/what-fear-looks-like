@@ -1,0 +1,46 @@
+{
+  "title_text": "REBOUND",
+  "credits_text": "SHE WANTED A NEW LIFE... SHE FOUND A NIGHTMARE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "thriller",
+    "suspense",
+    "gritty",
+    "desperate"
+  ],
+  "fear_labels": [
+    {
+      "name": "prison",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intense and disturbing imagery.",
+  "description": "A distressed woman sits behind bars, blood on her hands, with a tense and gritty atmosphere."
+}

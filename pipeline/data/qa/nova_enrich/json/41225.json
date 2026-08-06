@@ -1,0 +1,41 @@
+{
+  "title_text": "SPIRITS OF THE DEAD",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "surreal",
+    "eerie",
+    "mysterious",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "candle",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "nudity"
+  ],
+  "moderation_notes": "The poster features partial nudity and a suggestive pose.",
+  "description": "A woman in a cloak holds a candle against a pink background with multiple faces. The title 'SPIRITS OF THE DEAD' is displayed prominently."
+}

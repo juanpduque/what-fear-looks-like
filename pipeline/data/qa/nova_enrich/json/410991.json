@@ -1,0 +1,47 @@
+{
+  "title_text": "MERRY LITTLE CHRISTMAS",
+  "credits_text": "JAN CORNET JAVIER BOTET JACOB TORRES LILIAN MARTIN",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "MACARENA GOMEZ BLANCA RAVERA EL INFIERNO ESTÁ EN CASA",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "gory",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A person holds a wooden plank over their head with blood visible, set against a dark, broken glass background with text overlay."
+}

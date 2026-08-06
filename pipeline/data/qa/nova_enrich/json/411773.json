@@ -1,0 +1,42 @@
+{
+  "title_text": "AQUALORIUS!",
+  "credits_text": "Directed by NIKOLAJ JARP\nAUGUST IGOR SYDENIOUK EGHOLM JONAIAN TULESTED SARA NYBO VINTHER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A SHORT FILM THAT SHOULD BE A FULL LENGTH MOTION PICTURE.\nSomething has been waiting in the depths... waiting for the right moment to kill.",
+  "mood": [
+    "dread",
+    "suspense",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a masked figure behind bars with three concerned individuals, hinting at a suspenseful horror film set underwater."
+}

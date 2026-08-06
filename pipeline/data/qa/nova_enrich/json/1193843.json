@@ -1,0 +1,48 @@
+{
+  "title_text": "THE 鬼霊映像",
+  "credits_text": "ひばりプロダクション",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "恐怖体験 2",
+  "mood": [
+    "horror",
+    "supernatural",
+    "gothic",
+    "dread",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.9,
+  "person": 0.4,
+  "animal": 0.8,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic violence and occult imagery.",
+  "description": "A horror poster featuring crows, a ritualistic altar, and disturbing imagery, suggesting supernatural and violent themes."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "Intima",
+  "credits_text": "Gustavo Galuppo Alives",
+  "languages": [
+    "es"
+  ],
+  "other_text": "Proyecto \"Phantasmorasi\"",
+  "mood": [
+    "gothic",
+    "surreal",
+    "haunting",
+    "eerie",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A haunting poster features a ghostly figure in a dark, eerie setting with a monstrous, shadowy presence, evoking a gothic and surreal atmosphere."
+}

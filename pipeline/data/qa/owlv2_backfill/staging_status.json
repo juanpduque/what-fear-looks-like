@@ -1,0 +1,12 @@
+{
+  "updated_at": "2026-08-04T00:45:09Z",
+  "status": "running_gpu",
+  "instance_id": "i-0a00e332be6ececd2",
+  "bucket": "aof-owlv2-102516364259",
+  "prefix": "wflike-owlv2-backfill",
+  "planned_compute": "gpu",
+  "planned_instance_type": "g4dn.xlarge",
+  "gpu": true,
+  "aws_profile": "default",
+  "note": "Sandbox G/VT quota=0; running on aof account. See launch.json"
+}

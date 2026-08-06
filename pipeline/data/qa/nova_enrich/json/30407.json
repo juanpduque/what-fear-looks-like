@@ -1,0 +1,46 @@
+{
+  "title_text": "SHADOWS IN THE CITY",
+  "credits_text": "A FILM BY ARI ROUSSIMOFF\nStarring CRAIG SMITH BRUCE BYRON VALERIE CARIS TAYLOR MEAD BRINKE STEVENS NICK ZEDD KEMBRA PFAHLER ANNIE SPRINKLE JOE COLEMAN EMILE deANTONIO JACK SMITH\nExecutive Producer JOHN FORGIONE Production Manager ROY SUNDANCE\nAssociate Producer ROBERT PERLON L.SAMUEL SHAW\nPRODUCED BY JIM GRIB DIRECTED and WRITTEN by ARI ROUSSIMOFF",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "erotic",
+    "surreal",
+    "camp",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "crowd",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains erotic and occult themes, mild implied violence.",
+  "description": "A stylized poster features a chaotic crowd with grotesque faces and a central figure, promoting a film titled 'Shadows in the City' by Ari Roussimoff."
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "心像哥絶 民電結大",
+  "credits_text": "放軽心像絶電結 33就",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "心像哥絶、民電結大、放軽心像絶電結 33就、得軽！僷かれた放軽哥絶電結",
+  "mood": [
+    "horror",
+    "psychological",
+    "supernatural",
+    "disturbing",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.65
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.1,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and occult themes.",
+  "description": "A poster featuring eerie faces and blood splatters, promoting a psychological horror anthology titled 'Heart Image Horror: Ghost Whisperer Great' with 33 episodes."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "THE FORLORNED",
+  "credits_text": "BASED ON THE NOVEL BY ANGELA J. TOWNSEND",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WHAT'S DONE IN THE DARK WILL BE BROUGHT TO THE LIGHT",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery",
+    "haunting",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "lighthouse",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "storm",
+      "conf": 0.8
+    },
+    {
+      "name": "darkness",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood imagery.",
+  "description": "A dark, stormy scene features a lighthouse with a streak of red resembling blood running down its side, evoking a gothic and haunting atmosphere."
+}

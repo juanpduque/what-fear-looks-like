@@ -1,0 +1,44 @@
+{
+  "title_text": "EARTH DAY",
+  "credits_text": "a film by Mister Ooh-La-La",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FORGET THE WHALES... DON'T WORRY ABOUT THE TREES... JUST SAVE YOURSELF! TAKE OFF YOUR SHIRT FOR GLOBAL WARMING! \"It's a sparkly blast of horror movie love from a true believer!\" Dennis Cozzalio, True Grit House \"Earth Day takes all the normal horror conventions and uses them in a great way!\" Sion Molton, Rogue Cinema",
+  "mood": [
+    "camp",
+    "satirical",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "nudity",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.8,
+  "sensitive": [
+    "nudity",
+    "violence"
+  ],
+  "moderation_notes": "Contains partial female nudity and mild violent imagery.",
+  "description": "Poster shows a topless woman holding a knife in a forest, with three people holding a sign about global warming."
+}

@@ -1,0 +1,44 @@
+{
+  "title_text": "DEATH WHISPERER 3",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "action",
+    "suspense",
+    "forest"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.8
+    },
+    {
+      "name": "bow",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "forest",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence through weapon use.",
+  "description": "A group of six individuals, armed with guns and a bow, stand alert in a dark forest, ready for action."
+}

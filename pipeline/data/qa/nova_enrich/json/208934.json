@@ -1,0 +1,40 @@
+{
+  "title_text": "RAZOR'S RING",
+  "credits_text": "CASEY WAYNE, ANNIE SCOTT ROGERS, PAUL SCHILENS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WRONG PLACE, WRONG TIME",
+  "mood": [
+    "dread",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; may be disturbing to some viewers.",
+  "description": "A man with blood on his back sits in a forest, chained, with a victim lying beside him. The poster features bold red text and a dark, eerie atmosphere."
+}

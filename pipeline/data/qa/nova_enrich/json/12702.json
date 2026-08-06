@@ -1,0 +1,49 @@
+{
+  "title_text": "CRITTERS 3",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "sci-fi",
+    "thriller",
+    "dystopian",
+    "nightmarish"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "night",
+      "conf": 0.85
+    },
+    {
+      "name": "cityscape",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features a monstrous creature with sharp teeth, suggesting potential violence.",
+  "description": "A poster shows a monstrous creature with sharp teeth in front of a city skyline at night, with the title 'CRITTERS 3' prominently displayed."
+}

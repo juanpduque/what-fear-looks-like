@@ -1,0 +1,3 @@
+comprehend start todo=3 workers=2 empty_only=False out=ocr_comprehend_alllang.csv
+  3/3 id=2956 src=detecttext sent=NEGATIVE 2.4/s
+done → data/ocr_comprehend_alllang.csv n=23,169

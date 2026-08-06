@@ -1,0 +1,46 @@
+{
+  "title_text": "PUNK ROCK HOLIDAY 2",
+  "credits_text": "PUNKS NOT DEAD... IT'S JUST LOST ITS HEAD!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "VICTOR'S INCLUDE: THE ADVANTAGES BOUNDING SOULS THE CASUALTIES MY CHEMICAL ROMANCE THE PLANET SMASHERS RICKY RIVIERE RIVERBOAT GAMBLERS RIVER CITY REBELS SHIRAGIRI SUGARCULT TEENAGE HARLETS AND MORE",
+  "mood": [
+    "violent",
+    "horror",
+    "punk",
+    "chaotic",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "crowd",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.4,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A chaotic poster features a central figure wielding a sword amidst a screaming crowd, with bold red and black text and a full moon backdrop."
+}

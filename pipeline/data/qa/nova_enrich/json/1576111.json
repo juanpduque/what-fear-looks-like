@@ -1,0 +1,39 @@
+{
+  "title_text": "ZOMBIGONE",
+  "credits_text": "DIRECTED BY ELLIOTT BYRD\nNATALIE AUANDEE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "zombie",
+    "thriller",
+    "dystopia",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a woman holding another with red hair, with a title 'ZOMBIGONE' and director's name above."
+}

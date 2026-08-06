@@ -1,0 +1,46 @@
+{
+  "title_text": "FRANKENSTEIN REBORN",
+  "credits_text": "BORN FROM THE FLESH OF CORPSES AND THE MIND OF A MADMAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ALEIGH SCOTT FILM",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "dark",
+    "horrific"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic and disturbing imagery suggestive of horror themes.",
+  "description": "The poster features a dark, distorted face with glowing eyes against a shadowy background, titled 'Frankenstein Reborn' with a tagline below."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "SESSIZ OL",
+  "credits_text": "SAMET ÇAKIRTAŞ",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "AKIN AYRAĞ SENGEL KAYA CANLIŞ ARAN KAYA TOLGA POŞTA UŞEN GÜMÜŞ ÇAŞ SENÜRÜ SAİD BOĞEL RAHIM ERDEMIR TİMUR ALKAN GÜRBAN ÇAVCI ÇAĞER KEMALTEPE MEHMET ZEYNEP ÇAKIRTAŞ MEHMET ÇAKIRTAŞ MEHMET ÇAKIRTAŞ",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and violent imagery.",
+  "description": "A poster shows a close-up of a hand gripping a surface with blood splatters and a partial face visible in the background."
+}

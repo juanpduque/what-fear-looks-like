@@ -1,0 +1,41 @@
+{
+  "title_text": "Haunting Villisca",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "mystery",
+    "haunting",
+    "noir"
+  ],
+  "fear_labels": [
+    {
+      "name": "haunting",
+      "conf": 0.9
+    },
+    {
+      "name": "mystery",
+      "conf": 0.8
+    },
+    {
+      "name": "gothic",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood-like stains; may be disturbing to some viewers.",
+  "description": "A man in a suit stands in a dark alley holding a hat, with a red stain on the ground and a title overlay reading 'Haunting Villisca.'"
+}

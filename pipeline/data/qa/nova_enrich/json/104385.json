@@ -1,0 +1,40 @@
+{
+  "title_text": "Blood Bath",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 1.0
+    },
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of a skull with blood and a weapon, indicating strong violent themes.",
+  "description": "A golden skull floats in a pool of red liquid with a sword piercing through it. The title 'Blood Bath' is displayed prominently above."
+}

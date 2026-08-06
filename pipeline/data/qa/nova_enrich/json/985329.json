@@ -1,0 +1,42 @@
+{
+  "title_text": "HUNTING SEASON",
+  "credits_text": "\"A ghastly orgy of sadistic violence\" -The Hartford Courant\n\"Gritty & Real\" -Travis Stevens, Imagination Worldwide LLC\n\"Brutal & Intense\" -Ted Goghegan, Producer of BARRI-CADE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NATHAN WRANN'S",
+  "mood": [
+    "violent",
+    "gritty",
+    "intense",
+    "brutal",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "violence",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.95,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic depictions of violence and blood.",
+  "description": "Movie poster features bold red text and an image of a person with visible blood, emphasizing intense and brutal themes."
+}

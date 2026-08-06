@@ -1,0 +1,46 @@
+{
+  "title_text": "ON GALLOWS HILL",
+  "credits_text": "SORRY... YOU'RE JUST NOT MY BLOOD TYPE...",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "eerie",
+    "haunting",
+    "macabre"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "gallows",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "haunted",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and themes of violence.",
+  "description": "A poster features a hanging figure with dripping red liquid against a dark, moonlit cityscape, with bold red text reading 'ON GALLOWS HILL.'"
+}

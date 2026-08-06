@@ -1,0 +1,39 @@
+{
+  "title_text": "MARTILLO",
+  "credits_text": "AJ ALCANDRA PARODY AND BEN SUTTA FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FANTASIA OFFICIAL SELECTION 2024",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and a menacing figure.",
+  "description": "A poster features a young girl facing a large, winged monster with outstretched claws, set against a dark red background."
+}

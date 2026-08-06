@@ -1,0 +1,42 @@
+{
+  "title_text": "FUNNY MOVIE",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "other_text": "BISS ZUR GROßEN PAUSE Das Highschool Vampir Grusical",
+  "mood": [
+    "camp",
+    "humor",
+    "horror",
+    "parody",
+    "vampire"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "Poster features a group of people with exaggerated expressions, combining humor and horror themes, suggesting a comedic vampire high school story."
+}

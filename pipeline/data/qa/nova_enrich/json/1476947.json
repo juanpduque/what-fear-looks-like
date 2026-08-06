@@ -1,0 +1,46 @@
+{
+  "title_text": "THE DEVIL'S HACKSAW",
+  "credits_text": "A RYAN CAVALLINE FILM\nLEGEND HUNTER'S FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "No one is safe from the wrath of a madman...",
+  "mood": [
+    "dread",
+    "horror",
+    "gothic",
+    "violent",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; disturbing imagery.",
+  "description": "A man with a mask and gloves holds a bloody saw, with text indicating a horror film titled 'The Devil's Hacksaw.'"
+}

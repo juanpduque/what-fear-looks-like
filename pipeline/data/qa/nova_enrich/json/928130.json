@@ -1,0 +1,40 @@
+{
+  "title_text": "SCHOOL HALL SLAUGHTER",
+  "credits_text": "NO ONE GETS OUT OF DETENTION... ALIVE!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "18 VHS",
+  "mood": [
+    "horror",
+    "thriller",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and a weapon, suitable for mature audiences.",
+  "description": "A VHS cover featuring a shadowy figure holding a knife in a dimly lit hallway, with bold red text and a warning tagline."
+}

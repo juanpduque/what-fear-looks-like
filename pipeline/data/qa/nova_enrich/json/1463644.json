@@ -1,0 +1,46 @@
+{
+  "title_text": "VIPER VISIONZ",
+  "credits_text": "by Colin H. Miller",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MELS",
+  "mood": [
+    "horror",
+    "grunge",
+    "surreal",
+    "dark",
+    "edgy"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, with horror themes.",
+  "description": "A woman with a bloody face stands central, surrounded by cartoonish monsters and the title \"VIPER VISIONZ\" at the top."
+}

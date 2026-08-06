@@ -1,0 +1,39 @@
+{
+  "title_text": "ESTIGMA DE TERROR",
+  "credits_text": "",
+  "languages": [
+    "es"
+  ],
+  "other_text": "EL ACONTO Y LA DISTANCIA NO DETUVIERON A LA BESTIA INTERIOR",
+  "mood": [
+    "gothic",
+    "dread",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and intense expressions of fear.",
+  "description": "A black-and-white poster shows a terrified woman above three men; one holds a cross, suggesting a horror theme with occult elements."
+}

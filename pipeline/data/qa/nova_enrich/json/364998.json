@@ -1,0 +1,50 @@
+{
+  "title_text": "CRYPTiC",
+  "credits_text": "\"LOCK STOCK\" meets \"TRUEBLOOD\" \n ED STOPPARD DAN FEUERHEGEL VAS BLACKWOOD ROBERT GLENISTER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "thriller",
+    "supernatural",
+    "mystery",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.5
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.1,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild violent and occult themes.",
+  "description": "A group of characters stands in a dark setting with a central figure in a suit. The poster features a gothic, supernatural theme with eerie imagery and text overlays."
+}

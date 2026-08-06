@@ -1,0 +1,39 @@
+{
+  "title_text": "KAW",
+  "credits_text": "OBJECTS ARE CLOSER AND MORE TERRIFYING THAN THEY APPEAR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "suspense",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied threat and horror elements.",
+  "description": "A poster shows a large bird of prey with a stormy background, the title \"KAW\" in red, and a reflection of two people in a car mirror with a warning text."
+}

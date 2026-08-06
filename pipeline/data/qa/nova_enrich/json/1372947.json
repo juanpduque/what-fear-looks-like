@@ -1,0 +1,39 @@
+{
+  "title_text": "SOMETHING IN THE WATER",
+  "credits_text": "FEAR-FINDING NEW DEPTHS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "horror",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    {
+      "name": "shark",
+      "conf": 0.95
+    },
+    {
+      "name": "danger",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.95,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense imagery of a shark attack, which may be disturbing to some viewers.",
+  "description": "A woman is perched on the open mouth of a large shark underwater, with the title 'Something in the Water' displayed below."
+}

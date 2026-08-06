@@ -1,0 +1,45 @@
+{
+  "title_text": "THE BOONIES",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "suspense",
+    "foreboding",
+    "isolated",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "axe",
+      "conf": 0.95
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.95,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the axe and tense atmosphere.",
+  "description": "A group of teens walks toward a dimly lit cabin in a dark forest, with an axe prominently displayed in the foreground."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "鬼咬",
+  "credits_text": "",
+  "languages": [
+    "zh"
+  ],
+  "other_text": "誰殺：金成玉\n殺手！\n狂徒！\n殺手！\n殺手！",
+  "mood": [
+    "action",
+    "thriller",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "Movie poster features intense action scenes with a woman holding a large knife and a man in a fight stance, surrounded by dramatic text in Chinese."
+}

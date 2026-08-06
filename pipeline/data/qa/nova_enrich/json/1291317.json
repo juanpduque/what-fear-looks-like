@@ -1,0 +1,46 @@
+{
+  "title_text": "悪住心謝間側回",
+  "credits_text": "最後に消在する残歌！",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "年歳分間形弱残歌影片全届影片です。影片です。あるだけですか？。一分間弱残歌影片ですか？。一分間弱残歌影片ですか？",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "intense",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster features a ghostly figure with a menacing expression, set against a dark, eerie background with Japanese text and a red number '2'."
+}

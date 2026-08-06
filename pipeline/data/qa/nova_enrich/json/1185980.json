@@ -1,0 +1,42 @@
+{
+  "title_text": "",
+  "credits_text": "",
+  "languages": [],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "surreal",
+    "terrifying"
+  ],
+  "fear_labels": [
+    {
+      "name": "snake",
+      "conf": 0.95
+    },
+    {
+      "name": "danger",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 1.0,
+  "animal": 1.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic depiction of a person potentially attacked by a large snake in a forest setting.",
+  "description": "A person lies motionless in a muddy forest surrounded by leaves, with a large snake nearby, suggesting a dangerous encounter."
+}

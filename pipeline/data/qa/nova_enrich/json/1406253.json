@@ -1,0 +1,50 @@
+{
+  "title_text": "DEVOUR",
+  "credits_text": "A SCOTT R. HANSEN FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NO LIGHT SHALL SAVE US. COMING 2025",
+  "mood": [
+    "horror",
+    "surreal",
+    "gothic",
+    "dread",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    },
+    {
+      "name": "forest",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.2,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains horror elements and occult themes.",
+  "description": "A group of people surround a burning vehicle on a dark road, with intense expressions and fiery backdrop."
+}

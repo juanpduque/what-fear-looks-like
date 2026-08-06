@@ -1,0 +1,42 @@
+{
+  "title_text": "VAMPIRE NIGHT",
+  "credits_text": "A film by Jason Stephens",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FEAR THE NIGHT!",
+  "mood": [
+    "gothic",
+    "erotic",
+    "dread",
+    "camp",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "vampire",
+      "conf": 0.9
+    },
+    {
+      "name": "night",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.7,
+  "sensitive": [
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains partial nudity and suggestive poses.",
+  "description": "Poster features a dramatic scene with a woman embracing a man, with two men in the background and a fiery sky above."
+}

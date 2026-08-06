@@ -1,0 +1,38 @@
+{
+  "title_text": "BAD vs WORSE",
+  "credits_text": "\"This is One Fight You Will Want to See.\" - Horror Society",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THIEVES ARE BAD. SERIAL KILLERS ARE WORSE.",
+  "mood": [
+    "intense",
+    "violent",
+    "thriller",
+    "action",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster features graphic violence and weapon imagery.",
+  "description": "A man holds a chainsaw in a tense pose, with bold red text and a dramatic tagline."
+}

@@ -1,0 +1,38 @@
+{
+  "title_text": "SNARL",
+  "credits_text": "ESCAPE RUN HUNT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "suspenseful",
+    "foreboding",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, eerie forest scene with bare trees under a cloudy sky, featuring bold white text reading 'SNARL' and a tagline 'ESCAPE RUN HUNT.'"
+}

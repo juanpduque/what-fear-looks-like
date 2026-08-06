@@ -1,0 +1,46 @@
+{
+  "title_text": "LA FORÊT DES DÉMONS",
+  "credits_text": "NICOLAS BICKEL MEHDI BOCCARD FLORIZA DE FREITAS UN FILM DE JEAN-CLEMENT GUNTER",
+  "languages": [
+    "fr"
+  ],
+  "other_text": "Vous y avez tellement cru que c'est arrive !",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "terrifying",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult themes and mild violent imagery.",
+  "description": "A dark, eerie poster featuring a menacing demonic face with glowing eyes, set against a shadowy background, promoting a horror film."
+}

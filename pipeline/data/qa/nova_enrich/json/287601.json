@@ -1,0 +1,46 @@
+{
+  "title_text": "HOUSE OF THE HILL",
+  "credits_text": "FEATURING REAL FOOTAGE OF SERIAL KILLER LEONARD LAKE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BASED ON THE SHOCKING TRUE STORY\nNO ONE GETS OUT ALIVE",
+  "mood": [
+    "dread",
+    "gothic",
+    "terror",
+    "gritty",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "chains",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; disturbing imagery.",
+  "description": "A distressed woman with blood on her shirt raises her arms while chained in front of a haunted house, with dramatic text overlay."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "SURVIVING EVIDENCE",
+  "credits_text": "Directed by Avishai Weinberger\nStarring Daniel Bodehm, Ida Stein, Gabe Korn, Shimi Savitt, Alex Weider, Ennis Bashe, Sara Weintrob\nYOU CAN HIDE BUT YOU CAN'T RUN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EXIT",
+  "mood": [
+    "tense",
+    "suspenseful",
+    "mystery",
+    "thriller",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster hints at potential violence and gore through dark imagery and blood splatters.",
+  "description": "The poster features a collage of intense facial close-ups, dark tones, and the tagline 'YOU CAN HIDE BUT YOU CAN'T RUN,' suggesting a thriller or horror theme."
+}

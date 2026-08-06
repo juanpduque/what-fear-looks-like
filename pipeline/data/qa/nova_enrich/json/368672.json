@@ -1,0 +1,39 @@
+{
+  "title_text": "青蛇傳",
+  "credits_text": "Lam Ching Yin, Lee Lai Chun, Lee Kar Sing",
+  "languages": [
+    "en"
+  ],
+  "other_text": "The Musical Vampire",
+  "mood": [
+    "fantasy",
+    "horror",
+    "musical",
+    "camp",
+    "mystical"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring a dramatic character with sharp claws and traditional Chinese attire, surrounded by musical elements and other characters in a mystical setting."
+}

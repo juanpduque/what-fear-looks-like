@@ -1,0 +1,49 @@
+{
+  "title_text": "DECAY「デイケイプスパイン0」 PERSON",
+  "credits_text": "ASUKA SHIBU\nYOUI UNNO·TSUBAKI ISHIHARA·KOKOMI MIKAMI·HIMEKA HIMEJIMA·RIN MIYATA·RYO WASHIMI·CHIIHIR×ASAKAWA·SHYOTA MASE·KO KATO·HIROSHI GUNJI\nSpecial modeling: YOSHINARI DOHI·VFX: MIYUKI WAKAMATSU·Ending song: KOKORONOKOE/KANO\nProducer: HIROSHI HAMADA·Production: ORUSU SOUFUTO HANBAI·project: NO!film",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "やちてく世界の本で",
+  "mood": [
+    "horror",
+    "erotic",
+    "violent",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, nudity, and sexual themes.",
+  "description": "A poster shows a nude woman with a bow and arrows amidst monstrous hands, with bold red and orange text and splattered blood."
+}

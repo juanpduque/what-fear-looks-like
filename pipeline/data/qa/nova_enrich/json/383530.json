@@ -1,0 +1,44 @@
+{
+  "title_text": "KADOKAWA MYSTERY & HORROR TALES VOL. 3",
+  "credits_text": "Ghost House, The Whisper Tree, World of Infinity",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "KADOKAWA OF \"TUNG,\" \"DARK WATER,\" AND \"JU-ON THE CRUDGE\" INVITES YOU TO 3 STRANGE AND CHILLING STORIES FROM ANOTHER WORLD. GLOBAL FRIGHT CINEMA",
+  "mood": [
+    "mystery",
+    "horror",
+    "supernatural",
+    "suspense",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.3,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A DVD cover featuring a dark silhouette against a mysterious background with Japanese and English text, promoting three horror stories."
+}

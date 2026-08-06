@@ -1,0 +1,42 @@
+{
+  "title_text": "STIFF",
+  "credits_text": "Bill Scott & Lulu Berton\nA film by Mike McGowan & Jim Towns\nCINEMA EPOCH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"I want you to help me die...\"",
+  "mood": [
+    "dark",
+    "disturbing",
+    "psychological",
+    "thriller",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "suicide",
+      "conf": 0.9
+    },
+    {
+      "name": "hanging",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "self-harm",
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts themes of suicide and potential violence.",
+  "description": "A woman stands over a man on the ground with a noose above her head. The poster features bold text and a dark background."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "Frankenstein",
+  "credits_text": "FRANKYBONES AS VICTOR LAPHOSIS ISTHUS LAPPOSH AS THE MONSTER TOTTIE AS ELIZABETH A FILM BY VAVILINA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THEATRE DES VAMPIRES SUNDAY 10.12 8PM EST FTO-GIO",
+  "mood": [
+    "gothic",
+    "camp",
+    "horror",
+    "theatrical",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster for a theatrical production of Frankenstein featuring a green monster with glowing eyes and a scientist over a table with a body."
+}

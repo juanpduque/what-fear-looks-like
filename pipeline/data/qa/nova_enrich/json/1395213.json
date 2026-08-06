@@ -1,0 +1,42 @@
+{
+  "title_text": "MÜhREZ 4",
+  "credits_text": "\"Onu bir kez çağırdın, şimdi asla gitmeyecek.\"\nYÖNETMEN KEMAL DANACI\nMİL YAPİM SUNAR \"MÜhREZ 4\" FILMI\nOYUNCULAR:\nEROL SERTEL - BLİGİN METİN YAYDIR - RABİA ÖZKAN - GÜLÇİN GÜRBÜZ - AYGİR KUZUÇU\nYEŞİM PINAR - MURAT YILMAZ - DİOLUAY DİLÇİ - ENGİN YILMAZ\nYARDİMCI YÖNETMEN EROL SERTEL - SANAT YÖNETMEN ATKAN ÇİKEK - SEŞ TEKNİKEN HİLLİ IBRAHİM DANACI MAYİZ LİVA NUR İSK SEÇ MEHMET ALİ DANACI KAMERAMAN ERDEM TAŞÇİ - FİŞ YEŞİM PINAR - SEŞ TASARIMI & MİKSAİCEM BATU ALTINTAŞ\nGÖRÜNTÜ YÖNETMEN ALİ ASLAN KURĞİ ONUR ÖZKAN - SENARYO KEMAL DANACI ONUR ÖZKAN & HÜSEYİN ÇAĞLAR HOBEK",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "SERİNİN BEKLENEN FİLMİ!",
+  "mood": [
+    "intense",
+    "dramatic",
+    "thriller",
+    "gothic",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and intense facial expressions suggesting violence.",
+  "description": "Movie poster features a dramatic close-up of a person with blood"
+}

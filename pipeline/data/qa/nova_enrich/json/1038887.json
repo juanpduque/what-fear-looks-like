@@ -1,0 +1,44 @@
+{
+  "title_text": "Les Dents de la Maison",
+  "credits_text": "\"SO SMALL, YET SO POWERFUL\" MIKE PETERSON HADRIEN BIRTH AUSTIN GASS NAYDEN IOROV MERLIN AS \"THE SHAPE\" CLAWING SOON",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "other_text": "CATS AREN'T ALL EVIL, BUT THIS ONE IS.",
+  "mood": [
+    "gothic",
+    "horror",
+    "thriller",
+    "dark",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.3,
+  "animal": 0.95,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a menacing black cat with glowing eyes and bold French title, suggesting a horror theme."
+}

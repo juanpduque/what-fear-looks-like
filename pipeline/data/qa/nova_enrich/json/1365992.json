@@ -1,0 +1,50 @@
+{
+  "title_text": "FUN HOUSE",
+  "credits_text": "クラス クリストラルス",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "リバーシュートアインスティラル、スティルス、ストリームショート、ストリームショートメディアル、ファーススケーンスタームサービス",
+  "mood": [
+    "horror",
+    "suspense",
+    "psychological",
+    "teen",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "crowd",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood-like stains; suitable for mature audiences.",
+  "description": "Poster shows seven teens in front of a dimly lit house with eerie red faces and splatters, suggesting a horror theme."
+}

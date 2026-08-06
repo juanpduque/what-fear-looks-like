@@ -1,0 +1,36 @@
+{
+  "title_text": "ALIVE",
+  "credits_text": "A FILM BY RYUTA KITAMURA",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "other_text": "極限生還をめざせ! グリフィン・サバイバル・プロジェクト 制作:松下2分社 制作・配給:松竹",
+  "mood": [
+    "intense",
+    "action",
+    "sci-fi",
+    "suspense",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic poster features a silhouette of a person in action pose against a dark green background with Japanese and English text."
+}

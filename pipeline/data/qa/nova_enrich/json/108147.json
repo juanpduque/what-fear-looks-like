@@ -1,0 +1,40 @@
+{
+  "title_text": "RISE OF THE ANIMALS",
+  "credits_text": "MAN VS. BEAST GREG HOOLE MOTT ADAM SCHONBERG CHRIS WOJC",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "Movie poster features two people holding guns, with wild animals including a squirrel with an eye and a deer in the foreground."
+}

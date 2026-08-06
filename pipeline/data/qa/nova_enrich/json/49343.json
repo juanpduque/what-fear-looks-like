@@ -1,0 +1,49 @@
+{
+  "title_text": "DREAM DEMON",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "surreal",
+    "gothic",
+    "haunting",
+    "mysterious",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "water",
+      "conf": 0.5
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult and psychological horror themes.",
+  "description": "A surreal poster features a central figure with closed eyes and wires attached, surrounded by ghostly faces and a wolf, evoking a haunting, psychological atmosphere."
+}

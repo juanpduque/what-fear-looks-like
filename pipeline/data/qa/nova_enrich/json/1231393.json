@@ -1,0 +1,45 @@
+{
+  "title_text": "THE HOUSE ON TEDDY BEAR",
+  "credits_text": "CYRIE BESSEY & ANDREA DUNDANVILLE \"THE HOUSE ON TEDDY BEAR\" A RIVEMED FILMS FILM \"KRISTEN MARTIN ZACK CUTTLE CYIRIE BESSEY ANDREA DUNDANVILLE KELLER CHOSER GRANT THE OPHILUS \"BEN FELIPE MORA\" CLAUDE BESSEY \"ALICE\" KRISTEN MARTIN \"JULIA\" ANDREA DUNDANVILLE \"CHRISTINE\" FELIPE MORA \"JIMMY\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A TWISTED TALE OF TERROR. COMING SOON",
+  "mood": [
+    "dread",
+    "terror",
+    "gothic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 0.0,
+  "animal": 0.8,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster features a menacing teddy bear holding a knife with blood on its face, set against a dark background with bold red text."
+}

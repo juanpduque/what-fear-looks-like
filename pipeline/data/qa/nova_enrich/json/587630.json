@@ -1,0 +1,51 @@
+{
+  "title_text": "HELL'S GARDEN",
+  "credits_text": "DIRECTED BY SAM ASHURST STARRING KATIE SHERIDAN NICK HELM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "occult",
+    "surreal",
+    "dread",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "occult_symbol",
+      "conf": 0.85
+    },
+    {
+      "name": "creature",
+      "conf": 0.75
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.55
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 0.0,
+  "animal": 0.6,
+  "blood_gore": 0.4,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains occult symbols and implied violence; may be disturbing to some audiences.",
+  "description": "The poster features bold green text 'HELL'S GARDEN' surrounded by occult symbols, skulls, and dark creatures, creating a gothic and eerie atmosphere."
+}

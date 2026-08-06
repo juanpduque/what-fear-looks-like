@@ -1,0 +1,41 @@
+{
+  "title_text": "TRANSMISSION FROM HELL",
+  "credits_text": "AN AMERICAN GORY PRODUCTION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.4,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains disturbing imagery and themes of horror.",
+  "description": "A poster shows a glitching smartphone screen with a ghostly face, titled 'Transmission from Hell' by an American Gory Production."
+}

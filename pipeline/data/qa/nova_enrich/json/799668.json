@@ -1,0 +1,45 @@
+{
+  "title_text": "직업",
+  "credits_text": "",
+  "languages": [
+    "ko"
+  ],
+  "other_text": "뒤로 돌아가는 길은 없다",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "haunting",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and ghostly imagery.",
+  "description": "A man stands in front of a dark, eerie doorway with ghostly hands reaching out, suggesting a haunting or psychological thriller."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "ZOMBIE A-HOLE",
+  "credits_text": "DUSTIN MILLS PRESENTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"DOES A FINE JOB OF BLENDING ITS WIDE VARIETY OF INGREDIENTS, FROM HUMOR TO GORE TO SLEAZE TO ACTION.\" -ERIC STAHL, FEARNET\nUNSTOPPABLE. UNRELENTING. UNDEAD.",
+  "mood": [
+    "dark",
+    "humorous",
+    "violent",
+    "camp",
+    "satirical"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild violent and gory imagery.",
+  "description": "A poster features a menacing zombie face and a silhouette of a man holding a gun against a red background with vertical stripes."
+}

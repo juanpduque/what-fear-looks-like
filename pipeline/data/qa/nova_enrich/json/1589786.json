@@ -1,0 +1,42 @@
+{
+  "title_text": "DOCTORS ORDERS",
+  "credits_text": "DESTROY IT. RIP IT. STAB IT. WRITTEN BY FRANK HAGAN AND EVAN CASEY DIRECTED BY FRANK HAGAN STARRING EVAN CASEY, JOY WORTHY, LISA MORRIS, RACHEL TONER, JENNIFER DRAKE, SHANNON DAVEY, MARIE HOFFMAN, LEON MORRIS, ELIZABETH HOFFMAN, JESSICA STEVENSON, RYAN DAVEY, JESSICA STEVENSON, RACHEL TONER, LISA MORRIS, LEON MORRIS.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "violent",
+    "disturbing",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A poster features a woman in a lab coat with blood splatters, surrounded by red stains and scattered papers, promoting a horror film."
+}

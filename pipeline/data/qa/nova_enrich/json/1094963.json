@@ -1,0 +1,44 @@
+{
+  "title_text": "THE OMICRON KILLER",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "VICTOR\nSUSCEPTIBLES\n1999-2020",
+  "mood": [
+    "dread",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "gun",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and horror elements.",
+  "description": "A poster featuring a masked figure with a skull design, surrounded by various characters in a dark, urban setting with a tombstone and dramatic red lighting."
+}

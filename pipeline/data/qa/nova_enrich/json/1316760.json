@@ -1,0 +1,40 @@
+{
+  "title_text": "RESIDENT EVIL THE FINAL CHAPTER",
+  "credits_text": "MILLA JOVOVICH ALI LARTNER ... PAUL W.S. ANDERSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EVIL COMES HOME",
+  "mood": [
+    "action",
+    "thriller",
+    "sci-fi",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "action",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.4,
+  "blood_gore": 0.2,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains action violence and weapon imagery.",
+  "description": "Movie poster features a woman in tactical gear holding guns, with cityscape and action scenes in the background."
+}

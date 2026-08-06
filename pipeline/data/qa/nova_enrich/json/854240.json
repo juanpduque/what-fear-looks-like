@@ -1,0 +1,45 @@
+{
+  "title_text": "HEAD HUNTED",
+  "credits_text": "Doreck Hoffman, Wendy Walker, Maria Stephens, Cassy Ellison, a Troy McGatlin film",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WHAT GOES AROUND COMES AROUND, You're Next",
+  "mood": [
+    "dread",
+    "thriller",
+    "psychological",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A poster shows a hooded figure holding a knife with dripping red paint resembling blood, set against a dark, eerie background with bold text."
+}

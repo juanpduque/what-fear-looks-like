@@ -1,0 +1,49 @@
+{
+  "title_text": "YOLO THE HORROR",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MOVIE OCTOBER 31",
+  "mood": [
+    "camp",
+    "horror",
+    "humor",
+    "fantasy",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.1,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery with monsters and creatures.",
+  "description": "Poster shows two men holding items amidst rising monsters, with a dramatic sunset background and bold title text."
+}

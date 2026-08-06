@@ -1,0 +1,50 @@
+{
+  "title_text": "KINGDOM COME",
+  "credits_text": "THEY ARE COMING FOR YOUR SOUL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "apocalyptic",
+    "horror",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "ghost",
+      "conf": 0.75
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult imagery and a monstrous creature; mild implied violence.",
+  "description": "A poster shows a demonic figure with bat wings and sharp teeth, set against a dark, gothic background with a cross in the distance."
+}

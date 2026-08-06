@@ -1,0 +1,38 @@
+{
+  "title_text": "NOITES EM ILARO",
+  "credits_text": "UM FILME DE ELVIS ALVES\nÉRICLES CARMO\nALÉXIA SCLON\nRAFAEL RODRIGUES\nWALLACE DOUGLAS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FILME DE CONCLUSAÇÃO DO EXTENSIVO EM AUDIVISUAL DA ESCOLA DE CULTURA E ARTES DO CENTRO CULTURAL DO BOM JARDIM\nREALIZAÇÃO\nFECOPO\nINSTITUTO DRAGO DOMAR\nCEARÁ\nCINE INSTITUTE\nPORTO QUARTEIRA\nAPOIO",
+  "mood": [
+    "mystery",
+    "suspense",
+    "dark",
+    "intimate"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark poster features a silhouette against a red background with the title 'NOITES EM ILARO' and credits for a film directed by Elvis Alves."
+}

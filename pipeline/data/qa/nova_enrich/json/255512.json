@@ -1,0 +1,45 @@
+{
+  "title_text": "NOT HUMAN",
+  "credits_text": "ADAM R. STEIGERT\nRICHARD SATTERWHITE\nJASON JOHN BEEBE\nSARA MANZELLA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE LAST STAND",
+  "mood": [
+    "action",
+    "sci-fi",
+    "apocalyptic",
+    "dramatic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "alien",
+      "conf": 0.8
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and action elements.",
+  "description": "A muscular man holds a rifle, facing a burning city with a UFO overhead. The poster features dramatic lighting and smoke-filled skies."
+}

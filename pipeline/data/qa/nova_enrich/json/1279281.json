@@ -1,0 +1,42 @@
+{
+  "title_text": "テレビジー・26",
+  "credits_text": "\\u66f8\\u7b46 \\u6728\\u5f53 \\文",
+  "other_text": "親影された室に。。テレビジースリースの最近工作！",
+  "moderation_notes": "Contains intense horror imagery and occult themes.",
+  "description": "A poster featuring a monstrous creature with horns and a fierce expression, overlaid with bold Japanese text and additional credits.",
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "languages": [
+    "ja"
+  ],
+  "mood": [
+    "dread",
+    "horror",
+    "supernatural",
+    "gothic",
+    "intense"
+  ],
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ]
+}

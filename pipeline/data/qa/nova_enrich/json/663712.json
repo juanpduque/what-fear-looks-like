@@ -1,0 +1,50 @@
+{
+  "title_text": "TERRIFIER 2",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FUNHOUSE",
+  "mood": [
+    "horrific",
+    "gothic",
+    "surreal",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and disturbing imagery.",
+  "description": "A poster features a monstrous figure with a fiery arm, a screaming face, and a woman amidst flames and skulls, with a funhouse in the background."
+}

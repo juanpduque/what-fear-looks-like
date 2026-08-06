@@ -1,0 +1,43 @@
+{
+  "title_text": "MORGANA",
+  "credits_text": "MELIKIAN ARAGON CASTILLO TOVAR ADAME TOUSSAINT BECKER",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "EN ESTE PUEBLO HAY FANTASMAS\nUNA LEYENDA DE TERROR",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "water",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A woman sits on a dock overlooking dark water, with a ghostly figure in the background and misty atmosphere."
+}

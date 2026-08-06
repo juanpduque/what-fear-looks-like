@@ -1,0 +1,39 @@
+{
+  "title_text": "THEY CAME FROM BEYOND SPACE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "sci-fi",
+    "action",
+    "camp",
+    "retro",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "space",
+      "conf": 0.95
+    },
+    {
+      "name": "alien",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.1,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A retro sci-fi poster shows three armored figures facing a fiery cosmic explosion, with a planet and stars in the background."
+}

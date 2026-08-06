@@ -1,0 +1,35 @@
+{
+  "title_text": "O CASEIRO",
+  "credits_text": "Gabriel Noro Kadu Lorenzo Drekner Juan M. Bopp Pechetto",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "crime",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied threat of violence with a knife.",
+  "description": "Three men stand in front of a dilapidated building; one holds a knife, another a flashlight, and the third a phone, suggesting a tense or criminal scenario."
+}

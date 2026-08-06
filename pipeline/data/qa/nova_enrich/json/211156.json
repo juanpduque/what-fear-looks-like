@@ -1,0 +1,49 @@
+{
+  "title_text": "EXITUS II: HOUSE OF PAIN",
+  "credits_text": "RENÉ PORNERO VIA MAGIC EIN FILM VON ANDREAS BETHMANN",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "other_text": "SCHREIEN HÖREN DICH NUR DIE TOTEN!",
+  "mood": [
+    "gothic",
+    "erotic",
+    "surreal",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.6,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.5,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and suggestive imagery.",
+  "description": "A horror movie poster featuring dark, gory imagery with multiple figures and intense text overlays, suggesting themes of occult and violence."
+}

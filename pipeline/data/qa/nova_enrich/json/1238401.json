@@ -1,0 +1,37 @@
+{
+  "title_text": "A CRIAÇÃO DE FRANKENSTEIN",
+  "credits_text": "Direção e Roteiro PEDRO HENRIQUE LORETO a LUP FILMES orgulhosamente apresenta... estrelando ANA JULIA LORETO JOÃO VICTOR LORETO MURILO CERENTINI GUILHERME OLIVEIRA YURI VENTURA BIANCA SANTOS EVELIN DA ROSA ISABELLY MARIAH MANUELA NUNES e VINICIUS DOS SANTOS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "inspirado no clássico livro de MARY SHELLEY",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark poster features a man in a light shirt holding a shadowy figure, with credits and title for a Frankenstein adaptation."
+}

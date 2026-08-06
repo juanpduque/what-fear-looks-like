@@ -1,0 +1,42 @@
+{
+  "title_text": "ROAD TO RED",
+  "credits_text": "SEAN GRAY CHRIS GLASSMAN MICHAEL BUFFO AMANDA IRVING JEREMY GORMAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SKATE OR DIE",
+  "mood": [
+    "dread",
+    "intense",
+    "gritty",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A man stands atop a pile of skulls and bones against a stormy backdrop, with bold red text reading 'ROAD TO RED' and the tagline 'SKATE OR DIE.'"
+}

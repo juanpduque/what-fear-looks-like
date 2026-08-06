@@ -1,0 +1,39 @@
+{
+  "title_text": "EMELIE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "doll",
+      "conf": 0.85
+    },
+    {
+      "name": "tears",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features a disturbing doll and a distressed woman, suggesting psychological horror themes.",
+  "description": "A woman with tears on her face holds a damaged doll. The title 'EMELIE' is displayed at the top in bold red letters."
+}

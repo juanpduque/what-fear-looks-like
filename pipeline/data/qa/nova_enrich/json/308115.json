@@ -1,0 +1,49 @@
+{
+  "title_text": "CITY OF THE VAMPIRES",
+  "credits_text": "AS SAM HELLING WALKS THROUGH THE CITY OF DEATH, HE SHALL TEAR NO EVIL.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HORROR H-FI SERIES SRS",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A man battles a vampire in a neon-lit cityscape, surrounded by flames and dark figures."
+}

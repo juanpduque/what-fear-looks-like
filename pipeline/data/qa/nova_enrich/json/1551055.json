@@ -1,0 +1,38 @@
+{
+  "title_text": "UMA",
+  "credits_text": "無証認的影色生物",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "other_text": "紮電雅小家！！",
+  "mood": [
+    "mysterious",
+    "horror",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.1,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic poster featuring a menacing creature's face with bold Japanese and English text, suggesting a horror or thriller theme."
+}

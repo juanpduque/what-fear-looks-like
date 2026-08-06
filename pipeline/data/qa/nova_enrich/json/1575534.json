@@ -1,0 +1,46 @@
+{
+  "title_text": "THE OBSERVANCE",
+  "credits_text": "KATE DAILEY WITH ALEC JAMES TED RAIMI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WE'RE PRAYING FOR YOU",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "intense",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult themes and implied violence.",
+  "description": "A dark figure with horns holds a scythe against a moonlit backdrop, with bold red title text and tagline."
+}

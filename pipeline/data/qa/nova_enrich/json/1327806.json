@@ -1,0 +1,44 @@
+{
+  "title_text": "SCREATURE",
+  "credits_text": "JAKE C YOUNG BILL 'SUPERSTAR' DUNDEE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "2020",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and horror elements.",
+  "description": "A man with fiery hair and a knife stands against a forest backdrop, with the title 'SCREATURE' prominently displayed."
+}

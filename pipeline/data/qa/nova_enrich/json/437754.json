@@ -1,0 +1,42 @@
+{
+  "title_text": "EXTREME JUKEBOX",
+  "credits_text": "UN FILM DI ALBERTO BOGO! CON LA PARTECIPAZIONE DI ELISABETTA LOI PINO SCOTTO TREVOR SADIST WINNER SPECIAL AWARD PARMA INTERNATIONAL MUSIC FILM FESTIVAL 2013",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DUBLE PRODUCTIONS presenta \"EXTREME JUKEBOX\" un film di ALBERTO BOGO con ALESSIO CHERUBINI ELISABETTA LOI PAOLO PEDERZINI IRENE VILLA ALEX LUCCHESI e la partecipazione MAURIZIO LASTRICO e PINO SCOTTO",
+  "mood": [
+    "horror",
+    "dark",
+    "violent",
+    "grunge",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.6,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intended for mature audiences.",
+  "description": "Poster features a guitarist with a grotesque mask holding a bloody axe, alongside cast members and festival awards."
+}

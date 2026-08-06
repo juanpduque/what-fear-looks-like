@@ -1,0 +1,51 @@
+{
+  "title_text": "BIKER WARRIOR BABE ZOMBIE BABIES FROM HELL",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "15",
+  "mood": [
+    "action",
+    "horror",
+    "post-apocalyptic",
+    "gritty",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "skull",
+      "conf": 0.5
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "A biker woman holds a weapon amidst fallen zombies and motorcycles in a dark, post-apocalyptic setting."
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "LET US IN!",
+  "credits_text": "WRITTEN & DIRECTED BY: ANTHONY MORAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FOR GOD'S SAKE... INDEPENDENT AMERICAN PRODUCTIONS presents",
+  "mood": [
+    "horror",
+    "thriller",
+    "dread",
+    "intense",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "fire",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and horror elements.",
+  "description": "A poster shows three masked figures holding guns in front of a house with the title \"LET US IN!\" prominently displayed."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "THE VOID CAT",
+  "credits_text": "CONNOR FLYNN, NICH WRIGHT, JACK MACZELLAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ZERO BUDGET HORROR GOODNESS ONLY ALTERED CORTEX DESIGN COULD PRESENT! FEATURING THE MUSIC OF ONEBOUND STREAMING SOON! OFFICIAL SELECTION FLICKRFAIR 2021 KAJU FILM FESTIVAL BEST SHORT FILM 2021",
+  "mood": [
+    "horror",
+    "thriller",
+    "psychological",
+    "disturbing",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster features a man holding a gun with intense expression, accompanied by bold red text and festival accolades."
+}

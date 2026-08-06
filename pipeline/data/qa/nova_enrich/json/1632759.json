@@ -1,0 +1,44 @@
+{
+  "title_text": "CREATURE OF THE PINES",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "LIBRARY ISSUES IN PINE AREA FOUND SEARCH CONTINUES FOR THE MISSING MAKERS OF PINE HOLLOW YOURS LEGALLY ENFORCED",
+  "mood": [
+    "mystery",
+    "horror",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatters and ominous imagery suggesting horror themes.",
+  "description": "A poster titled 'Creature of the Pines' features photographs pinned with red string, showing bloodstains and forest scenes, evoking a mysterious and horror-filled atmosphere."
+}

@@ -1,0 +1,47 @@
+{
+  "title_text": "TILL SUNSET",
+  "credits_text": "A DAVID WOODS FILM\n\nFLYING LICE PRODUCTIONS PRESENTS A DAVID WOODS FILM TILL SUNSET\n\nSEANNE SWEENEY REBECCA DACHER GWYNNA WOODS FRANK JACKERMAN RUSS MICHAEL CORBAN ALI GIBSON ALISON JEANNE CLARK KATHRYN ALIREN JOANNE E ADAMS GEORGE SANDER KISNELL CASSIE WRIGHT BRADLEY NICOLE JONES\n\nDIRECTOR OF PHOTOGRAPHY JOE KING MUSIC BY JAKE BARBER EDITED BY JEANNE CLARKELOT WRITTEN BY DAVID WOODS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Stay Out Of The Shadows",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "tense",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.85
+    },
+    {
+      "name": "shadow",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, eerie poster features two silhouetted figures in a forest setting with a glowing sunset and a skull on the ground."
+}

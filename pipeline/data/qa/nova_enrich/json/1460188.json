@@ -1,0 +1,44 @@
+{
+  "title_text": "DEEMAK",
+  "credits_text": "SYED MURAD ALI & WAH WAH PRODUCTIONS PRESENT A RAFAY RASHDI FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "M RADHAVILLA ENTERTAINMENT GEO FILMS",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "occult",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.8,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and monstrous creatures; no explicit violence or gore.",
+  "description": "A group of people with elongated, grotesque faces sit in a dark, cobweb-filled room, evoking a haunting and surreal atmosphere."
+}

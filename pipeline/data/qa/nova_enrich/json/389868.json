@@ -1,0 +1,50 @@
+{
+  "title_text": "SEOUL STATION",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "apocalyptic",
+    "horror",
+    "chaotic",
+    "desperate",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "crowd",
+      "conf": 0.9
+    },
+    {
+      "name": "zombie",
+      "conf": 0.85
+    },
+    {
+      "name": "violence",
+      "conf": 0.75
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "fire",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, depicting a zombie apocalypse scenario.",
+  "description": "Poster shows a chaotic crowd of zombies in Seoul with intense, fiery visuals; title 'SEOUL STATION' dominates the center."
+}

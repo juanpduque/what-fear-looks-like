@@ -1,0 +1,46 @@
+{
+  "title_text": "DAS WIENER KETTENSAGENMASSAKER",
+  "credits_text": "",
+  "languages": [
+    "de"
+  ],
+  "other_text": "",
+  "mood": [
+    "gruesome",
+    "horror",
+    "violent",
+    "disturbing",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "chainsaw",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.95
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.95,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences only.",
+  "description": "A person wearing a mask holds a chainsaw over a body in a forest, with visible blood and gore."
+}

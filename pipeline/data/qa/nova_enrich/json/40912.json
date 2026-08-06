@@ -1,0 +1,47 @@
+{
+  "title_text": "MANIACS",
+  "credits_text": "FIELD OF SCREAMS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "2001",
+  "mood": [
+    "horror",
+    "camp",
+    "erotic",
+    "violent",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence and suggestive imagery.",
+  "description": "Movie poster features three women in revealing outfits and a man holding a weapon, with bold red text and a dramatic, horror-themed design."
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "HANNAS 2",
+  "credits_text": "MARI FİLM... HANNAS 2° ALİ ÖZÜK SENOL İLECEĞN ÖZİURK TAYFU SAY HASAN BALLIKTAŞ BENGÜNER YILMAZ OKTAY ARABACI ÇEMRE YILMAZ ZAľFER GÜNEĞ MEHMET ALI TUGAY ÇAĞER ÇAŞAR MURAT ÇİŞER GÖKHAN ARI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"BU VEŞVEŞECİ SEYİTAN, GEREK CİNDEN, GEREK INSANDIR\" (NAS,114/6)",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "eerie",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.3,
+  "blood_gore": 0.4,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror elements and occult themes.",
+  "description": "A haunting poster features a ghostly face in a dark forest with a dilapidated house and bats, promoting the film 'Hannas 2.'"
+}

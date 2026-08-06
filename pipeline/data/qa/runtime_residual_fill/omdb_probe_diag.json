@@ -1,0 +1,73 @@
+{
+  "probed": 411,
+  "counts": {
+    "runtime_na_or_empty": 175,
+    "response_false": 236,
+    "err:Error getting data.": 4,
+    "err:Request limit reached!": 232
+  },
+  "positive_runtime_n": 0,
+  "examples": {
+    "N/A": [
+      {
+        "id": "7866",
+        "tt": "tt0493126",
+        "Runtime": "N/A",
+        "Title": "Faustrecht"
+      },
+      {
+        "id": "28242",
+        "tt": "tt0902355",
+        "Runtime": "N/A",
+        "Title": "Zombie Hunters"
+      },
+      {
+        "id": "28960",
+        "tt": "tt0298548",
+        "Runtime": "N/A",
+        "Title": "Shadow of the Demon"
+      },
+      {
+        "id": "29508",
+        "tt": "tt0450410",
+        "Runtime": "N/A",
+        "Title": "Dead Things"
+      },
+      {
+        "id": "30405",
+        "tt": "tt0365782",
+        "Runtime": "N/A",
+        "Title": "Space Psychos 4"
+      }
+    ],
+    "False": [
+      {
+        "id": "421506",
+        "tt": "tt21610234",
+        "error": "Error getting data."
+      },
+      {
+        "id": "507582",
+        "tt": "tt8059694",
+        "error": "Error getting data."
+      },
+      {
+        "id": "596696",
+        "tt": "tt22801786",
+        "error": "Error getting data."
+      },
+      {
+        "id": "624146",
+        "tt": "tt10084700",
+        "error": "Error getting data."
+      },
+      {
+        "id": "802067",
+        "tt": "tt7154870",
+        "error": "Request limit reached!"
+      }
+    ],
+    "other": [],
+    "has_runtime": []
+  }
+}

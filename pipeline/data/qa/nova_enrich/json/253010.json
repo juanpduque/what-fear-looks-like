@@ -1,0 +1,41 @@
+{
+  "title_text": "Malcolm",
+  "credits_text": "an AARON B KOONTZ film",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HITCHELL RAD and DETECTIVE DESLOY and introducing DAVID MATTHEW as COLE STELIAN RICHLER SAN OFFICER SLACK",
+  "mood": [
+    "horror",
+    "thriller",
+    "dread",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.95
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "violence",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.95,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A horror poster shows a man screaming in front of a shark with blood splattered on the floor and walls."
+}

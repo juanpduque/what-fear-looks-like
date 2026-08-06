@@ -1,0 +1,36 @@
+{
+  "title_text": "Bucket",
+  "credits_text": "A Short Film By SEAN W. MANGAN\nGAVIN FERGUSON RICHARD MASON PATRICIA MCBRIDE DEMETRIOU",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NORTH AMERICAN INDEPENDENT FILM FESTIVAL 2017 Fake Film Fest 2017",
+  "mood": [
+    "dread",
+    "surreal",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.9,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and disturbing silhouettes.",
+  "description": "Pink poster features silhouettes of dogs and cats with dripping red paint resembling blood, and a shadowy figure walking a dog."
+}

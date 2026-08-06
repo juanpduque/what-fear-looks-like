@@ -1,0 +1,44 @@
+{
+  "title_text": "THE SCOUT",
+  "credits_text": "LIGHTS, CAMERA, DEATH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "REC",
+  "mood": [
+    "dread",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "weapon",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A hooded figure with a skull mask stands in a fiery hallway, holding a weapon, with the title 'The Scout' prominently displayed."
+}

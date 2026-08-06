@@ -1,0 +1,39 @@
+{
+  "title_text": "THE ASTRONAUT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "isolated",
+    "claustrophobic",
+    "sci-fi",
+    "suspense",
+    "desolate"
+  ],
+  "fear_labels": [
+    {
+      "name": "space",
+      "conf": 0.9
+    },
+    {
+      "name": "claustrophobia",
+      "conf": 0.8
+    },
+    {
+      "name": "isolation",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A close-up of a young boy in a damaged astronaut helmet, set against a dark, cosmic background, suggesting isolation and tension."
+}

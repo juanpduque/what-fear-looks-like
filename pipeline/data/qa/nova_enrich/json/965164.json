@@ -1,0 +1,40 @@
+{
+  "title_text": "Down To The Bone",
+  "credits_text": "A Film By Peter Ahern",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Things were better 10 minutes ago...",
+  "mood": [
+    "dread",
+    "surreal",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.7,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A red, monstrous figure stands in a bathroom holding a toilet paper roll, with a cat nearby and blood on the floor."
+}

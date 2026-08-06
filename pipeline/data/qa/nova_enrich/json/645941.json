@@ -1,0 +1,46 @@
+{
+  "title_text": "MR. TRICKER'S TREAT",
+  "credits_text": "MICHAEL SERRATO CARRIE SEIM JAMES MARKIDIS PATRICK LOGOTHETTI DIRECTED BY MIKE KOCHANSKY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IT'S TIME TO DECORATE",
+  "mood": [
+    "gothic",
+    "horror",
+    "spooky",
+    "macabre",
+    "festive"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "gravestone",
+      "conf": 0.95
+    },
+    {
+      "name": "pumpkin",
+      "conf": 0.8
+    },
+    {
+      "name": "noose",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror elements including a noose and a skull, but no explicit violence or gore.",
+  "description": "A poster features a gravestone with \"R.I.P.\" text, a noose, a pumpkin, and a skull, promoting the movie \"Mr. Tricker's Treat\"."
+}

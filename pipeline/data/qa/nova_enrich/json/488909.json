@@ -1,0 +1,50 @@
+{
+  "title_text": "黄心吃人",
+  "credits_text": "王王影影 美美 美影影 美美",
+  "languages": [
+    "zh"
+  ],
+  "other_text": "武不为人地住",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "supernatural",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild violent imagery and occult themes.",
+  "description": "A poster shows a ghostly figure in a forest with three people, skulls, and eerie text, suggesting a supernatural horror theme."
+}

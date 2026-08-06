@@ -1,0 +1,50 @@
+{
+  "title_text": "死霊の着物37",
+  "credits_text": "坂本美由",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "月刊「怪談」掲載！",
+  "mood": [
+    "horror",
+    "supernatural",
+    "gothic",
+    "dread",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.7,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster features a woman holding a skull, a cat, and a child with a bloody arm, evoking a supernatural horror theme."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "กิ๊บดี้",
+  "credits_text": "ชาละวาดี  สกุลพงษ์ พงษ์ประยูร",
+  "languages": [
+    "th"
+  ],
+  "other_text": "ภาพยนตร์ไทย  สร้างจากนิยายของ นายชาละวาดี",
+  "mood": [
+    "action",
+    "horror",
+    "fantasy",
+    "supernatural",
+    "drama"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "monster"
+  ],
+  "moderation_notes": "Contains violent and supernatural elements with a monster theme.",
+  "description": "A Thai movie poster featuring a central shirtless man surrounded by characters, with a fiery demon-like figure in the background."
+}

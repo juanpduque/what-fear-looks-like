@@ -1,0 +1,50 @@
+{
+  "title_text": "The Legend Of The 7 Golden Vampires",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "action",
+    "fantasy",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "vampire",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    },
+    {
+      "name": "blood",
+      "conf": 0.5
+    },
+    {
+      "name": "forest",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.6,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and horror elements, suitable for mature audiences.",
+  "description": "A group of characters, including a central female warrior, confront vampires in a dark, forested setting with a dramatic, gothic atmosphere."
+}

@@ -1,0 +1,18 @@
+labeled=295 usable=292 missing_emb=3 class_counts={'photo': 76, 'painted': 164, 'composite': 52}
+wrote /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_clf/split.csv train=219 test=73
+/Users/juanpabloduque/miniforge3/lib/python3.10/site-packages/sklearn/linear_model/_logistic.py:1247: FutureWarning: 'multi_class' was deprecated in version 1.5 and will be removed in 1.7. From then on, it will always use 'multinomial'. Leave it to its default value to avoid this warning.
+  warnings.warn(
+test macro_f1=0.485 train_s=0.09
+              precision    recall  f1-score   support
+
+     painted       0.64      0.71      0.67        41
+       photo       0.57      0.42      0.48        19
+   composite       0.29      0.31      0.30        13
+
+    accuracy                           0.56        73
+   macro avg       0.50      0.48      0.49        73
+weighted avg       0.56      0.56      0.56        73
+
+wrote /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_clf/model.joblib
+predicting full corpus n=37,829…
+wrote /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/medium_pred.csv n=37,829 pred_s=0.5 pred_counts={'composite': 8156, 'painted': 12488, 'photo': 17185}

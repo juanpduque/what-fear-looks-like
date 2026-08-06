@@ -1,0 +1,42 @@
+{
+  "title_text": "INSECTED",
+  "credits_text": "A FILM BY JESS HUDAK\nAN SVA ORIGINAL\nPresents INSECTED\nCreated by JESS HUDAK\nStarring DESDAMONA PERSEPHONE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BEAUTY IS WITHIN THE EYE OF THE BEHOLDER",
+  "mood": [
+    "dread",
+    "surreal",
+    "gothic",
+    "eerie",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and a disturbing facial expression.",
+  "description": "A poster featuring a distorted, eerie face with blood and vegetation, titled 'INSECTED' by Jess Hudak."
+}

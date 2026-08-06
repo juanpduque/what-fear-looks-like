@@ -1,0 +1,35 @@
+{
+  "title_text": "The Knot",
+  "credits_text": "Directed by Colleen Schaudt",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A psychological thriller about one woman's perspective on the pursuit of happiness",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "dark",
+    "psychological",
+    "intimate"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "shadow",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.8,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, moody poster featuring a shadowy silhouette of a cat and a tagline about happiness, with a stark contrast of light and dark tones."
+}

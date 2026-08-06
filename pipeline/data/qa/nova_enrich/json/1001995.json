@@ -1,0 +1,45 @@
+{
+  "title_text": "两魔中",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "エイジニウ",
+  "mood": [
+    "gothic",
+    "horror",
+    "supernatural",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic horror elements and occult themes.",
+  "description": "A poster featuring a woman with long nails and a man in a tense pose, set against a dark, eerie background with ghostly figures."
+}

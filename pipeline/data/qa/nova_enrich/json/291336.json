@@ -1,0 +1,47 @@
+{
+  "title_text": "HONEYSPIDER",
+  "credits_text": "LET THE BLOOD OF THE DEAD INSIDE.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "occult",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult_symbol",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "knife",
+      "conf": 0.6
+    },
+    {
+      "name": "text",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains occult symbolism and implied violence with blood splatters.",
+  "description": "A pumpkin with a glowing occult symbol is central, surrounded by scattered weapons and blood, with dripping text reading 'HONEYSPIDER' above."
+}

@@ -1,0 +1,38 @@
+{
+  "title_text": "AMAZING WORLD OF GHOSTS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NEW MOVIE-TV PREMIERE! WELCOME TO THE WORLD BEYOND THE GRAVE COLOR TONIGHT 00PM XXTV CHANNEL XX",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "haunting",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A black-and-white poster features a haunting face with a rose and bold title text, promoting a ghostly theme."
+}

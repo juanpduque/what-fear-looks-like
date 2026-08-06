@@ -1,0 +1,45 @@
+{
+  "title_text": "JEZABEL",
+  "credits_text": "UM FILME DE DÁNILO MORALLES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SELEÇÃO OFICIAL MONSTER 2026 PSÍQUICO PRODUÇÕES APRESENTA EM BREVE",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including blood and monstrous imagery.",
+  "description": "A dark poster features a menacing face with horns and a stylized green monster skull, set against a black background with bold red and green text."
+}

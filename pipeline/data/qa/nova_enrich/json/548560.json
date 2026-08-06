@@ -1,0 +1,41 @@
+{
+  "title_text": "SOMETHING DARK",
+  "credits_text": "4 DEADLY STORIES OF PURE MADNESS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FROM BUFFALO NICKEL PRODUCTIONS & NIGHTMARE KNETS COMING TO YOU 2008",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "horrific"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and themes of violence.",
+  "description": "A poster features a grotesque, skeletal creature with a menacing expression, overlaid with bold red text reading 'SOMETHING DARK' and a tagline."
+}

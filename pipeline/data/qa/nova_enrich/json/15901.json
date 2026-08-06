@@ -1,0 +1,45 @@
+{
+  "title_text": "FACES OF DEATH III",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "macabre"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 1.0
+    },
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "skeleton",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery including skulls and skeletal figures.",
+  "description": "The poster features a menacing skull with glowing eyes and sharp teeth, wearing a dark hood, alongside a smaller skeleton figure against a dark purple background."
+}

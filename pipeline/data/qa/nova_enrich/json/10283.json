@@ -1,0 +1,43 @@
+{
+  "title_text": "FRIDAY THE 13TH VIII",
+  "credits_text": "JASON TAKES MANHATTAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "terror",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "weapon",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "cityscape",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and violent themes.",
+  "description": "A poster features a masked figure with a knife against a cityscape backdrop, promoting the horror film 'Friday the 13th VIII: Jason Takes Manhattan.'"
+}

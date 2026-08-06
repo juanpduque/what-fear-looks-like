@@ -1,0 +1,45 @@
+{
+  "title_text": "THE WILD MON",
+  "credits_text": "MICHAEL PARE LAUREN GRANDALL SEAN MICHAEL GLORIA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SOME SPECIES WERE MEANT TO GO EXTINCT.",
+  "mood": [
+    "horror",
+    "thriller",
+    "survival",
+    "dystopian",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense horror elements and implied violence.",
+  "description": "A poster featuring a large, menacing creature with a fierce expression, accompanied by bold white text and a dramatic red background."
+}

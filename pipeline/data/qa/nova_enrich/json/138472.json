@@ -1,0 +1,44 @@
+{
+  "title_text": "鬼気",
+  "credits_text": "井上真人 第一回監督作品",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "作者・水木しげるの未発表作品を基に、井上真人が描く新たな怪談！",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and ghostly imagery.",
+  "description": "A dark, eerie poster features a young boy and ghostly figures against a cracked wall with Japanese text."
+}

@@ -1,0 +1,48 @@
+{
+  "title_text": "HALLOWEEN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "We Kill Strokes Again",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains intense horror imagery with occult themes and implied violence.",
+  "description": "A silhouette stands before a fiery, monstrous skull face with multiple embedded faces, set against a burning background with a house visible."
+}

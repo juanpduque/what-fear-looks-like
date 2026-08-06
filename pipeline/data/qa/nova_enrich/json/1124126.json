@@ -1,0 +1,43 @@
+{
+  "title_text": "Not Found",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "清都動問 スタックテニイョン ベスト・セリーズン 9",
+  "mood": [
+    "horror",
+    "psychological",
+    "disturbing",
+    "paranormal",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.1,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild graphic imagery and disturbing facial expressions.",
+  "description": "A collage of terrified faces with torn edges, overlaid with bold red and white text reading 'Not Found' and Japanese characters."
+}

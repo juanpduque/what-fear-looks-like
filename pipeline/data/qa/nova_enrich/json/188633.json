@@ -1,0 +1,45 @@
+{
+  "title_text": "Sembunyi: Amukan Azal",
+  "credits_text": "SHARNAZ AHMAD REMY ISHAK DIANA DANIELLE UMIE ADA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MEMBURI ANDA DI PAWAGAM 26 DES 2015",
+  "mood": [
+    "horror",
+    "suspense",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror elements and occult themes.",
+  "description": "A group of people stand in a dark forest, facing a ghostly figure. The poster features dramatic lighting and a suspenseful atmosphere."
+}

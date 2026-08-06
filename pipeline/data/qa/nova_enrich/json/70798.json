@@ -1,0 +1,42 @@
+{
+  "title_text": "MONSTER K STRIKES BACK",
+  "credits_text": "ATTACK THE G8 SUMMIT!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "sci-fi",
+    "satirical",
+    "comedy"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "explosion",
+      "conf": 0.85
+    },
+    {
+      "name": "helicopter",
+      "conf": 0.75
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a large monster attacking a golden statue with explosions and military aircraft in the background, with a group of people in front."
+}

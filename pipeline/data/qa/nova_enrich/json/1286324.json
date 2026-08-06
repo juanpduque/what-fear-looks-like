@@ -1,0 +1,47 @@
+{
+  "title_text": "黑素的影底子",
+  "credits_text": "中中影应理女孩生 中心应理女孩生 OL",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "中中影应理女孩生 中心应理女孩生 OL",
+  "mood": [
+    "dread",
+    "gothic",
+    "eerie",
+    "psychological",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic blood splatters and a ghostly figure, suggesting horror themes.",
+  "description": "A poster features a shadowy figure in red against a blood-splattered background with Japanese text."
+}

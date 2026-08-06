@@ -1,0 +1,40 @@
+{
+  "title_text": "HETEROGENEOUS",
+  "credits_text": "Director Zhou Yifan Screenwriter Jiang Runting Zhou Yifan Oscar Tong ZZZ PRODUCTION TEAM Black and white print studio",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"DON'T MISS THIS MOVIE\"",
+  "mood": [
+    "dread",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A horror movie poster featuring a monstrous face, two individuals, and a handgun, with dramatic red text and a warning tagline."
+}

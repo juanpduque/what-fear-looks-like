@@ -1,0 +1,36 @@
+{
+  "title_text": "DIY",
+  "credits_text": "A Tony Gardner Film",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Damon Herriman, Claire Lovering, Alexander England",
+  "mood": [
+    "thriller",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and potential violence.",
+  "description": "Poster features large, bold letters spelling \"DIY\" with a central bloodied object resembling a torn piece of fabric or paper."
+}

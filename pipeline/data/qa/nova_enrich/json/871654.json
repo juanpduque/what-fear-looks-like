@@ -1,0 +1,39 @@
+{
+  "title_text": "MYSTIC CROSSING",
+  "credits_text": "LEE MC CONNELL GARY GATLIN JESSICA HALEWOOD GARY GATLIN KERI MCCORMICK MARISSA KREE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "mike gc productions and m&z films presents",
+  "mood": [
+    "horror",
+    "supernatural",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.6,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and mild horror elements.",
+  "description": "Poster features a group of people with a central eerie face, suggesting a supernatural horror theme."
+}

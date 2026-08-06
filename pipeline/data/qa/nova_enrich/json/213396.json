@@ -1,0 +1,39 @@
+{
+  "title_text": "POLYMORPH",
+  "credits_text": "UN FILM DI J.R. BOOKWALTER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"SCI-FI A UN BASSO BUDGET DA GRANDE DIVERTIMENTO!\" INDE FILM CARE REVIEWS \"I VOLTI DELLA PAURA SONO INNUMEREVOLI...\" \"...MÈ IL PIÙ MORALE E QUELLO CHE NON CONOSCI!\"",
+  "mood": [
+    "sci-fi",
+    "action",
+    "thriller",
+    "dark",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.6,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a man with glowing eyes holding a globe, surrounded by weapons and electric energy, with bold title and tagline text."
+}

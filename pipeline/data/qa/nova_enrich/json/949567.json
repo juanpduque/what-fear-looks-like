@@ -1,0 +1,47 @@
+{
+  "title_text": "THE EXORCISM OF HANNAH STEVENSON",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BE CAREFUL WHO YOU LET IN",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "psychological",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic violence and occult themes.",
+  "description": "A distressed woman with long hair stands in a hospital hallway, covered in blood, with a warning tagline below."
+}

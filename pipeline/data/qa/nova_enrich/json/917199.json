@@ -1,0 +1,46 @@
+{
+  "title_text": "A TOWN FULL OF GHOSTS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SALOON",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "haunting",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatter and intense horror themes.",
+  "description": "A poster shows a haunted saloon with a ghostly face and blood splatter, evoking a spooky, supernatural atmosphere."
+}

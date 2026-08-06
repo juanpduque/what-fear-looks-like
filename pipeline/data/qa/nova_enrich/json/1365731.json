@@ -1,0 +1,47 @@
+{
+  "title_text": "The Brides of Dracula",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "erotic",
+    "horror",
+    "dramatic",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "nudity",
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains partial nudity and occult imagery.",
+  "description": "A gothic horror poster featuring three women with dark, elaborate makeup and attire, surrounded by ornate, macabre designs and skulls."
+}

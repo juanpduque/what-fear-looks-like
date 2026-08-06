@@ -1,0 +1,37 @@
+{
+  "title_text": "The Hound of the Baskervilles",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "mystery",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "dog",
+      "conf": 0.95
+    },
+    {
+      "name": "gothic",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.95,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man in formal attire faces a large, menacing hound in a dramatic poster for 'The Hound of the Baskervilles.'"
+}

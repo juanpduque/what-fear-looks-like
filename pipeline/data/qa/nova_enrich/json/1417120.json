@@ -1,0 +1,42 @@
+{
+  "title_text": "DEADLINE",
+  "credits_text": "A GENIE ESSER FILM / STARRING JESSICA COX, GUY GANASSER, JAMES COX, LEONARDO DI LORENZO, THOMAS FRANCESCHI, MARIE HARRY, STACEY ESPARZA, LOU D'ALBANESE, GILL HUNT, TYLER HUNT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SURVIVOR SERVICES WILL NOW TAKE YOUR CALL",
+  "mood": [
+    "dread",
+    "suspense",
+    "thriller",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and disturbing imagery.",
+  "description": "A dark, stylized poster featuring a close-up of a person's face with a red biohazard symbol overlay and dramatic text."
+}

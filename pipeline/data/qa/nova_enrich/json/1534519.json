@@ -1,0 +1,39 @@
+{
+  "title_text": "WATCH ME BURN",
+  "credits_text": "Directed By Sofia Sputti",
+  "languages": [
+    "en"
+  ],
+  "other_text": "The National Film and Television School Presents",
+  "mood": [
+    "dramatic",
+    "intense",
+    "mysterious",
+    "dark",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "shadow",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A minimalist poster features bold red text 'WATCH ME BURN' against a dark background with a solitary figure standing on a path."
+}

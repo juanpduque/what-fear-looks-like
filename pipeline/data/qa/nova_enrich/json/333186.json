@@ -1,0 +1,42 @@
+{
+  "title_text": "REVELAÇÕES DE UM CINEASTA CANIBAL",
+  "credits_text": "TIAGO FERRI OLIVEIRA, KIKA BENOTTI, MAYRA MARGOT ALARCÓN\nProdução executiva: HERMANN PIDNER\nDireção de Fotografia: MARCELO CASTANHEIRA",
+  "languages": [
+    "pt"
+  ],
+  "other_text": "FÁBULAS NEGRAS PRODUÇÕES ARTISTICAS apresenta: Um filme de RODRIGO ARAÚJO",
+  "mood": [
+    "intense",
+    "disturbing",
+    "psychological",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and disturbing themes.",
+  "description": "A poster featuring a close-up of a person with a distorted face and blood, holding a camera, with bold title text and credits."
+}

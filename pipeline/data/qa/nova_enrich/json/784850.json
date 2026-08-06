@@ -1,0 +1,42 @@
+{
+  "title_text": "NOCTOPIA",
+  "credits_text": "A SHORT FILM BY XANDER WAGNER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "UNBIND YOUR BODY. UNWIND YOUR MIND. DISCLAIMER: This may cause anxiety, visions, or even death. This is not suitable for children. If you have a heart condition, please see your doctor before using this application. Your security, safety, and personal safety are not guaranteed.",
+  "mood": [
+    "mysterious",
+    "meditative",
+    "psychological",
+    "sci-fi",
+    "contemplative"
+  ],
+  "fear_labels": [
+    {
+      "name": "anxiety",
+      "conf": 0.8
+    },
+    {
+      "name": "visions",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "anxiety",
+    "visions"
+  ],
+  "moderation_notes": "The poster suggests potential psychological distress and may not be suitable for sensitive audiences.",
+  "description": "A poster features a silhouette meditating with headphones against a teal circular background, with text about unbounding the body and mind."
+}

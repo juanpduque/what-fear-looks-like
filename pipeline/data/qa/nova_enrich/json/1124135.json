@@ -1,0 +1,43 @@
+{
+  "title_text": "Not Found",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "スタップでもす ヘスト・セリアーション 12",
+  "mood": [
+    "horror",
+    "psychological",
+    "disturbing",
+    "paranormal",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains disturbing imagery and implied violence.",
+  "description": "A poster featuring multiple terrified faces with a torn, distressed design, promoting a horror anthology titled 'Not Found' in English and Japanese."
+}

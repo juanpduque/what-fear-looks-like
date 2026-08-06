@@ -1,0 +1,50 @@
+{
+  "title_text": "UNDEAD",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "apocalyptic",
+    "intense",
+    "survival",
+    "dystopia",
+    "post-apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "gas_mask",
+      "conf": 0.8
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.7
+    },
+    {
+      "name": "survival",
+      "conf": 0.7
+    },
+    {
+      "name": "zombie",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.6,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and post-apocalyptic themes.",
+  "description": "A person in a gas mask holds a large weapon against a dark, textured background with the word 'UNDEAD' prominently displayed."
+}

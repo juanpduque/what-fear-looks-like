@@ -1,0 +1,45 @@
+{
+  "title_text": "ART OF SILENT HILL",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DVD VIDEO",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.6,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "A stylized poster featuring fragmented imagery of weapons, a shadowy figure, and abstract shapes, evoking a dark, gothic atmosphere."
+}

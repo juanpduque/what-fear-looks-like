@@ -1,0 +1,44 @@
+{
+  "title_text": "GOREGRIND 2",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WILD EYE RAW & EXTREME UNRATED",
+  "mood": [
+    "violent",
+    "gruesome",
+    "extreme",
+    "horror",
+    "shock"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.4,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.9,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains extreme graphic violence, gore, and partial nudity.",
+  "description": "A woman holds a severed head amidst blood, with bold text overlay indicating a horror theme."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "PARANOIA TAPES: URBAN LEGEND",
+  "credits_text": "JACK HUNTER'S",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A TERRIFYING SHORT WITHIN THE PARANOIA TAPES MOVIE UNIVERSE",
+  "mood": [
+    "terrifying",
+    "paranoid",
+    "dark",
+    "intense",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.95
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and a menacing skull, suggesting horror themes.",
+  "description": "The poster features a menacing purple skull with glowing eyes and sharp teeth against a dark, cosmic background, with bold text overlay."
+}

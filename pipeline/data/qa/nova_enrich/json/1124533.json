@@ -1,0 +1,43 @@
+{
+  "title_text": "HEL SING",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE MONSTER KILLER",
+  "mood": [
+    "sci-fi",
+    "action",
+    "dramatic",
+    "intense",
+    "futuristic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    },
+    {
+      "name": "space",
+      "conf": 0.9
+    },
+    {
+      "name": "astronaut",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A lone astronaut stands on a rocky surface with futuristic spacecraft and explosions in the background, suggesting a sci-fi action theme."
+}

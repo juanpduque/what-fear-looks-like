@@ -1,0 +1,60 @@
+{
+  "ts_utc": "2026-08-03T23:09:30Z",
+  "job": "imdb-selenium-posters",
+  "fix": "aws CLI missing on Ubuntu 24.04 AMI — userdata failed ~2min after boot with `aws: command not found`; idle zombies, no S3 results",
+  "fix": "imdb_selenium_userdata.sh now installs AWS CLI v2 before any aws sts/s3 calls; chain.sh asserts aws on PATH (/usr/local/bin)",
+  "terminated_failed": [
+    {
+      "instance_id": "i-0c2ac4828a56abb25",
+      "name": "wflike-imdb-posters",
+      "reason": "confirmed aws: command not found"
+    },
+    {
+      "instance_id": "i-09c9263d65e9372c5",
+      "name": "wflike-imdb-selenium",
+      "reason": "confirmed aws: command not found"
+    },
+    {
+      "instance_id": "i-02419ca815e2376e3",
+      "name": "wflike-imdb-features-residual",
+      "reason": "same aws: command not found — terminated; needs relaunch with fixed userdata"
+    }
+  ],
+  "relaunch_posters": {
+    "instance_id": "i-0d70c936e1e39759b",
+    "public_ip": "18.206.125.253",
+    "name_tag": "wflike-imdb-posters",
+    "prefix": "wflike-imdb-selenium",
+    "bucket": "sagemaker-studio-a5572760",
+    "mode": "posters",
+    "region": "us-east-1",
+    "profile": "sandbox",
+    "instance_type": "t3.large",
+    "ami": "ami-052355af2a014bd2c",
+    "iam_profile": "wflike-ec2-train",
+    "todo_file": "data/qa/_poster_funnel_audit/B_imdb_scrap_browser_retry.csv",
+    "todo_rows_incl_header": 219,
+    "todo_ids_approx": 218,
+    "delay": 1.2,
+    "userdata_healthy": true,
+    "scrape_started": true,
+    "scrape_note": "candidates=218 browser/Playwright headed; early rows logged MISS status=202 (IMDb block) — monitor hit rate; separate from userdata fix",
+    "health_evidence": [
+      "aws cli installed: aws-cli/2.36.15",
+      "sts assumed-role/wflike-ec2-role",
+      "pull code + chain OK",
+      "imdb_selenium_chain MODE=posters",
+      "install Google Chrome",
+      "start Xvfb on :99",
+      "run MODE=posters",
+      "candidates=218 mode=browser/Playwright"
+    ],
+    "monitor": "aws s3 ls s3://sagemaker-studio-a5572760/wflike-imdb-selenium/results/",
+    "pull": "bash pipeline/aws/pull_imdb_selenium.sh"
+  },
+  "pending_relaunch": {
+    "job": "wflike-imdb-features-residual",
+    "prefix": "wflike-imdb-features-residual",
+    "note": "Same userdata fix applies. Stage MODE=features with FEATURES_IDS_FILE residual todo, then launch with PREFIX=wflike-imdb-features-residual NAME_TAG=wflike-imdb-features-residual. Staged code/input already on S3 under that prefix; re-stage to refresh fixed userdata/chain before launch."
+  }
+}

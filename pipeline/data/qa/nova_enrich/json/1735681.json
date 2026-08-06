@@ -1,0 +1,43 @@
+{
+  "title_text": "LA LEYENDA DEL SOMBRERÓN",
+  "credits_text": "hagas lo que hagas, no escuches",
+  "languages": [
+    "es"
+  ],
+  "other_text": "CURAS SIN LUZ 4K ULTRA HD",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "haunting",
+    "dark",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a shadowy figure and a young girl in a dark setting, with eerie text and a haunting atmosphere."
+}

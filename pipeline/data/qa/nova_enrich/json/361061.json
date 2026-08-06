@@ -1,0 +1,41 @@
+{
+  "title_text": "JELANGKUNG",
+  "credits_text": "A JAVIER PASCUAL FILM STARRING JOSÉ RAMIREZ, MARIA ANTONIETTA ALONSO, DAVID PASCUAL, AND JAVIER PASCUAL. PRODUCED BY RAFAEL PASCUAL. DIRECTED BY JAVIER PASCUAL.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "datang tak dijepret pulang tak tanda.",
+  "mood": [
+    "horror",
+    "suspense",
+    "thriller",
+    "dark",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild horror themes and ghostly imagery.",
+  "description": "Poster shows four individuals in a dark setting with a ghostly figure and the title 'JELANGKUNG' prominently displayed."
+}

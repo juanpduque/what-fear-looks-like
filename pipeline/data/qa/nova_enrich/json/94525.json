@@ -1,0 +1,36 @@
+{
+  "title_text": "A PAGE of MADNESS",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "狂った一頁",
+  "mood": [
+    "gothic",
+    "psychological",
+    "haunting",
+    "disturbing",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark hallway with two silhouetted figures facing each other, one near a barred gate, under dim lighting."
+}

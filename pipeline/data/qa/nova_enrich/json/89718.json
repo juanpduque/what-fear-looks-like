@@ -1,0 +1,35 @@
+{
+  "title_text": "COPPERHEAD THE SNAKE MOVIE",
+  "credits_text": "your screams fall on deaf ears",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "action",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "snake",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a snake, which may be distressing to some viewers.",
+  "description": "Poster features a man with glasses holding a rifle next to a large snake, with a car in the background and bold title text."
+}

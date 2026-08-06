@@ -1,0 +1,44 @@
+{
+  "title_text": "BROKEN SWORDS",
+  "credits_text": "STARRING JULIAN JENET, GINA FULLERDOME, ELLE VOGAN, JESSE BEETLE, PHOTOGRAPHER CARRIE JAPMAN, ASSISTANT DIRECTOR OLIVIA QUINN, EDITED BY PAUL GROOM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MACARA PRODUCTIONS IN ASSOCIATION WITH TEE'S FILM PRODUCTIONS AND MAKE UP EFFECTS BY DARKWICK STUDIOS LTD.",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.4,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and intense visual elements.",
+  "description": "A dramatic poster features a central figure amidst flames, surrounded by dark, menacing faces and occult symbols."
+}

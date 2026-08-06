@@ -1,0 +1,39 @@
+{
+  "title_text": "DON'T SLEEP",
+  "credits_text": "UN CORTOMETRAJE DE SERGIO MORCILLO",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "EN ESTA FAMILIA NO HAY CENSURA",
+  "mood": [
+    "gothic",
+    "erotic",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and suggestive content.",
+  "description": "A woman in a corset sits with blood on her face and hands, holding a weapon, against a dark background with bold red text."
+}

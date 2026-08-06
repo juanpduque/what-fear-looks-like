@@ -1,0 +1,41 @@
+{
+  "title_text": "ЖЕСТЬ",
+  "credits_text": "В СЕЗОНЕ КИНОТЕАТРОВ С 23 МАРТА",
+  "languages": [
+    "ru"
+  ],
+  "other_text": "АХА НЕТ КРОМЕ ТОГО НЕ ГЛАДОМ",
+  "mood": [
+    "intense",
+    "survival",
+    "post-apocalyptic",
+    "gritty",
+    "desolate"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.4,
+  "blood_gore": 0.2,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and intense survival themes.",
+  "description": "A woman stands prominently in a dark, forested setting with a horse in the background, surrounded by other characters in a post-apocalyptic atmosphere."
+}

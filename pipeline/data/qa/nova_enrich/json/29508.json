@@ -1,0 +1,45 @@
+{
+  "title_text": "DEAD THINGS",
+  "credits_text": "BRINKIE STEVENS FELISSA ROSE - JOE ESTEVEZ REGGIE BANNISTER - DERON MILLER LYNN LOWRY - SEAN O'BANNON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "GALLOWS HILL PRODUCTIONS PRESENTS",
+  "mood": [
+    "horror",
+    "thriller",
+    "intense",
+    "dramatic",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    },
+    {
+      "name": "weapon",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.5,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and intense expressions.",
+  "description": "A poster for the film 'Dead Things' featuring intense faces of actors surrounded by fiery elements and a central figure with glowing eyes."
+}

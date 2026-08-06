@@ -1,0 +1,39 @@
+{
+  "title_text": "FORECLOSURE",
+  "credits_text": "STEPHANIE GONZALEZ GERTRUDE REDFORD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EVERY HOME HAS SECRETS",
+  "mood": [
+    "tense",
+    "mystery",
+    "suspense",
+    "gothic",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man and a woman are featured on a movie poster with a dark, moody atmosphere. The background shows a house with a lit window, suggesting suspense and mystery."
+}

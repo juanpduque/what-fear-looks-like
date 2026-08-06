@@ -1,0 +1,42 @@
+{
+  "title_text": "An Eye for an AI",
+  "credits_text": "a Film by Flynn Reardon",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horrific",
+    "sci-fi",
+    "disturbing",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.5,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of a dismembered creature with visible blood and gore.",
+  "description": "A poster shows hands holding a grotesque, dismembered creature with multiple eyes, set against a dark blue background with the title 'An Eye for an AI' prominently displayed."
+}

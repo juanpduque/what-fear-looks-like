@@ -1,0 +1,46 @@
+{
+  "title_text": "A Corpse for Christmas",
+  "credits_text": "a film by BREVICE LONGO\n\nA CORPSE FOR CHRISTMAS... KASPER MEINHOLD, NICOLE NEGRO, ISAH SALIS, CHRISTINE JESSADY, ANGEL TORRES, LAND, THE VOLTAIRIAN, THE REDBIRD, NICK HUSSEY, JOSHUA SMITH, JOSHUA SMITH, CHARLES LUNG, BREVICE LONGO, MICHAEL DRANONGO, BREVICE LONGO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "camp",
+    "holiday"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.75,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including monstrous creatures and blood.",
+  "description": "A poster features a monstrous, bearded figure holding a severed head with a festive, eerie atmosphere."
+}

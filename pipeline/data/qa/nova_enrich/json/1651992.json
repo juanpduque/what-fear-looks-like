@@ -1,0 +1,40 @@
+{
+  "title_text": "HATERNET",
+  "credits_text": "MARTINA OLSEN STEVEN BRUCE ANA REVERT AITIANA BATRES HÉCTOR COZALÓ GABRIEL GIL MARÍA MACINA SERGIO ABREU NUNO COELHO ASTRID ELJONS ALEX NEOT CÉSAR DE LAZARÁPICA JIMENA DORCA JOAQUÍN PARDO HAMZA EL HANNOUTI REPARS CARME ARBONA DIRECCIÓN DE FOTOGRAFÍA BEATRY SANCHEZ PÁDEZ DIRECCIÓN DE DISEÑO DIEGO GUALINO SALVA LOPEZ ALEXANDRO GANDARILLAS DIRECCIÓN DE DISEÑO DANIEL VONJAS ALUMNES DEL INSTITUTO DE GINE ASTURIAS JUAN FERNÁNDEZ MEDINA GÁRMAN ROBERTO GARCÍA PRODUCCIÓN EXECUTIVA CARINA PARADILLA PRODUCCIÓN TERESA HYMAN ELISA PUERTO AUREL",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "RAVENWOOD FILM FESTIVAL",
+  "mood": [
+    "disturbing",
+    "psychological",
+    "thriller",
+    "distorted",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "distortion",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a distorted, multi-faced figure with intense eyes and a screaming mouth, overlaid with fragmented images and bold red text reading \"HATERNET\"."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "MUTAZOMBIE INVASIÓN",
+  "credits_text": "UNA PELÍCULA DE MARCELO LEGUIZA",
+  "languages": [
+    "es"
+  ],
+  "other_text": "YO SOY FAN DE RE-ANIMATOR PRESENTA PUNK CINEMATOGRÁFICO GRANDHOUSE COYOTE YOUT ZOMBIE ARRESTRINGS",
+  "mood": [
+    "horror",
+    "punk",
+    "zombie",
+    "apocalyptic",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements and violent imagery.",
+  "description": "A dark, neon-green poster features silhouetted figures and bold text announcing a zombie invasion film."
+}

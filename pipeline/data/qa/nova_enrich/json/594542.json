@@ -1,0 +1,40 @@
+{
+  "title_text": "MANGO PULO",
+  "credits_text": "WELCOME TO HELL\n\nA FILM BY US PRODUCTION\n\nPRODUCED BY MICHAEL KIMBREW AND MARIOUS TURNER\n\nALISON LUCCI MICHAEL KIMBREW\n\nYARON LEVY KURT OLDMAN ANDREW GORMAY RICE CHART MICHAEL DINIZ\n\nWILLIAM L. JOHNSON EDDIE GONES JENNIA FREEDRIDE JULIAN VANDEER CRISTINA MEROSA AND GA GALLINI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "forest",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.2,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster implies potential violence due to the knife and dark atmosphere.",
+  "description": "A black and white poster shows a hand holding a knife against a dark forest background with the title 'Mango Pulo' and tagline 'Welcome to Hell.'"
+}

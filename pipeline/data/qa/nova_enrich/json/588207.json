@@ -1,0 +1,38 @@
+{
+  "title_text": "ALIEN",
+  "credits_text": "CONTAINMENT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "sci-fi",
+    "suspenseful",
+    "cosmic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "space",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster showing a view of a planet from space with a large spaceship overhead and the title 'ALIEN CONTAINMENT' displayed prominently."
+}

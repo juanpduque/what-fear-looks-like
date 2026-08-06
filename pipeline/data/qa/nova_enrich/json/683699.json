@@ -1,0 +1,38 @@
+{
+  "title_text": "able",
+  "credits_text": "When the virus comes death will be the least of your worries",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Official Selection Sitges Film Festival 2008",
+  "mood": [
+    "dread",
+    "apocalyptic",
+    "disturbing",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "virus",
+      "conf": 0.9
+    },
+    {
+      "name": "death",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a close-up of a person with a hand holding a pipe near their face, with bold red text reading 'able' and a tagline about a virus."
+}

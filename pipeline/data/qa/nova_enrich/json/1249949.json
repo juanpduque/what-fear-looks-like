@@ -1,0 +1,41 @@
+{
+  "title_text": "妖怪心霊映像",
+  "credits_text": "一身にまある心霊映像～四",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "",
+  "mood": [
+    "haunting",
+    "eerie",
+    "gothic",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.85
+    },
+    {
+      "name": "house",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild supernatural horror imagery and implied violence.",
+  "description": "A ghostly figure in a school uniform stands in front of a dilapidated building under red lighting, evoking a haunting atmosphere."
+}

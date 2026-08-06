@@ -1,0 +1,42 @@
+MAVERICK_START Mon Aug  3 11:03:06 -05 2026
+QA sample n_posters=380 jobs=380 models=['llama4-maverick'] workers=2 out=data/qa/nova_qa_maverick.csv
+  10/380 ok=10 err=0 id=633130 model=llama4-maverick risk=ok 6s
+  20/380 ok=20 err=0 id=482591 model=llama4-maverick risk=ok 11s
+  30/380 ok=30 err=0 id=167828 model=llama4-maverick risk=ok 16s
+  40/380 ok=39 err=1 id=1218776 model=llama4-maverick risk=ok 21s
+  50/380 ok=49 err=1 id=48221 model=llama4-maverick risk=ok 26s
+  60/380 ok=59 err=1 id=1149695 model=llama4-maverick risk=ok 30s
+  70/380 ok=69 err=1 id=576322 model=llama4-maverick risk=ok 35s
+  80/380 ok=79 err=1 id=16591 model=llama4-maverick risk=ok 40s
+  90/380 ok=89 err=1 id=400777 model=llama4-maverick risk=ok 45s
+  100/380 ok=99 err=1 id=1456146 model=llama4-maverick risk=ok 51s
+  110/380 ok=109 err=1 id=1077097 model=llama4-maverick risk=ok 56s
+  120/380 ok=119 err=1 id=657625 model=llama4-maverick risk=ok 61s
+  130/380 ok=129 err=1 id=580690 model=llama4-maverick risk=ok 66s
+  140/380 ok=139 err=1 id=779621 model=llama4-maverick risk=ok 78s
+  150/380 ok=149 err=1 id=264246 model=llama4-maverick risk=ok 94s
+  160/380 ok=159 err=1 id=63333 model=llama4-maverick risk=ok 100s
+  170/380 ok=169 err=1 id=30992 model=llama4-maverick risk=ok 105s
+  180/380 ok=179 err=1 id=40091 model=llama4-maverick risk=ok 111s
+  190/380 ok=189 err=1 id=85206 model=llama4-maverick risk=ok 116s
+  200/380 ok=199 err=1 id=195539 model=llama4-maverick risk=ok 122s
+  210/380 ok=209 err=1 id=27084 model=llama4-maverick risk=ok 127s
+  220/380 ok=219 err=1 id=520618 model=llama4-maverick risk=ok 138s
+  230/380 ok=229 err=1 id=485743 model=llama4-maverick risk=ok 143s
+  240/380 ok=239 err=1 id=27361 model=llama4-maverick risk=ok 148s
+  250/380 ok=249 err=1 id=33475 model=llama4-maverick risk=ok 153s
+  260/380 ok=259 err=1 id=328240 model=llama4-maverick risk=ok 157s
+  270/380 ok=269 err=1 id=103600 model=llama4-maverick risk=ok 162s
+  280/380 ok=279 err=1 id=475053 model=llama4-maverick risk=ok 167s
+  290/380 ok=289 err=1 id=28380 model=llama4-maverick risk=ok 171s
+  300/380 ok=299 err=1 id=295138 model=llama4-maverick risk=ok 177s
+  310/380 ok=309 err=1 id=18851 model=llama4-maverick risk=ok 182s
+  320/380 ok=319 err=1 id=896628 model=llama4-maverick risk=ok 193s
+  330/380 ok=329 err=1 id=16093 model=llama4-maverick risk=ok 201s
+  340/380 ok=339 err=1 id=42729 model=llama4-maverick risk=ok 207s
+  350/380 ok=349 err=1 id=212391 model=llama4-maverick risk=ok 212s
+  360/380 ok=359 err=1 id=130046 model=llama4-maverick risk=ok 218s
+  370/380 ok=369 err=1 id=105408 model=llama4-maverick risk=ok 223s
+  380/380 ok=379 err=1 id=422649 model=llama4-maverick risk=ok 228s
+done → data/qa/nova_qa_maverick.csv ok=379 err=1
+MAVERICK_END exit=0 Mon Aug  3 11:06:55 -05 2026

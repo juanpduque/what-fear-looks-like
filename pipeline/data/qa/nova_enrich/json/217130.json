@@ -1,0 +1,36 @@
+{
+  "title_text": "THE LONG ISLAND SERIAL KILLER",
+  "credits_text": "INSPIRED BY THE TRUE UNSOLVED CASE OF THE GILGO BEACH MURDERS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "mystery",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "Contains implied violence and partial nudity.",
+  "description": "A poster shows a woman lying on a beach with a city skyline in the background, titled 'The Long Island Serial Killer' inspired by true unsolved murders."
+}

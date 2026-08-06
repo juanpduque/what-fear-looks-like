@@ -1,0 +1,46 @@
+{
+  "title_text": "FOLLOWED HOME",
+  "credits_text": "A FILM BY JOMARIN J. PALMA\nWHAT DO YOU DO, WHEN EVIL KNOWS WHERE YOU LIVE?",
+  "languages": [
+    "en"
+  ],
+  "other_text": "OFFICIAL SELECTION DEAD HOBBY FILM FESTIVAL OFFICIAL SELECTION SHOCKER FEST",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A poster features a screaming woman and a shadowy figure with a knife dripping blood against a dark background."
+}

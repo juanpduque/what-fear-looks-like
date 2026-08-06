@@ -1,0 +1,41 @@
+{
+  "title_text": "The Monster",
+  "credits_text": "Written and directed by Nell Stevens Produced by Nell Stevens, Ryan Husk, and Vanessa Zavela",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Aaron Bradshaw Brian Ramirez Erikka Als",
+  "mood": [
+    "dread",
+    "suspense",
+    "psychological",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood, suggesting mature themes.",
+  "description": "A dark blue poster features a partially obscured face with the title 'The Monster' in bold white letters, hinting at suspense and horror."
+}

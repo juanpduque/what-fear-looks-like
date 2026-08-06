@@ -1,0 +1,50 @@
+{
+  "title_text": "BREAKDOWN LANE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IT'S TIME TO KICK SOME ZOMBIE ASS!",
+  "mood": [
+    "action",
+    "horror",
+    "survival",
+    "intense",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A woman stands on a car roof, surrounded by zombies, holding a weapon, with a stormy sky in the background."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "VACACIONES SANGRIENTAS",
+  "credits_text": "Con PAUL LEONARDO CORNEJO, JUAN ALONSO DELVA SALAZAR, XAVIER MONTAÑO, DINA PEREZ DE JORGE, ALBERTO CANCO Y CARLOS MUNGUIA. Producción de JORGE ALBERTO CHERNO. DIRECCIÓN DE AUDIO MONTI",
+  "languages": [
+    "es"
+  ],
+  "other_text": "VIDEO PRODUCCIONES DE TIJUANA, S.A. DE C.V.Y QNAC PRODUCCIONES PRESENTAN! Calderón! EL ARTISTA COMEDIA MALTA. ES PUEBLO APRENDIZADO DE LA QUERIDA ROBERTTA.",
+  "mood": [
+    "violent",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster depicts graphic violence and blood, indicating strong horror themes.",
+  "description": "A man in a fur coat holds a weapon, with a graphic design featuring bold red text and intense imagery."
+}

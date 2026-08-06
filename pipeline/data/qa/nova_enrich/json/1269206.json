@@ -1,0 +1,50 @@
+{
+  "title_text": "魔員声影 76",
+  "credits_text": "魔員員結",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "生消在中、魔員声影結 10 years",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "violent",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster features a ghostly figure holding a sword, with a distressed person reaching out amidst dark, eerie imagery."
+}

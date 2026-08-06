@@ -1,0 +1,42 @@
+{
+  "title_text": "THE DEVIL'S WORK",
+  "credits_text": "CASSANDRA KANE, LUCA SARDELIS, USULA DRAHOWSKY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HELL BATH NO FURY LIKE A SISTER SCORNED",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "dark",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and occult themes.",
+  "description": "A woman with red hair stands in front of a dark background with metal blades behind her, with bold red text reading 'THE DEVIL'S WORK.'"
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "IL MESSAGGIO",
+  "credits_text": "Regia Daniel Scano\nDIEGO-DIEGO DAVID-ANDREA VERONICA-VERONICA BAMBIKA-MICAELA BARISTA-MARCELLO BARISTA-PIER PAOLO MOSTRO-DANIELO UN RIGRAZIAMENTO SPECIALE ALLA DIGIT ALL DI SANNA MANFREDI",
+  "languages": [
+    "it"
+  ],
+  "other_text": "LUOGHI DI RIPRESA OLBIA MUSICHE SCENOGRAFIA SOGGETTO PRODUTTORE D.S FILM MONTAGGIO DANIEL SCANO",
+  "mood": [
+    "mystery",
+    "thriller",
+    "dark",
+    "intense",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark poster featuring a close-up of a man's intense face with bold title text and credits listed below."
+}

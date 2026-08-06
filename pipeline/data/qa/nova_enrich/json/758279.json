@@ -1,0 +1,46 @@
+{
+  "title_text": "REBIRTH",
+  "credits_text": "ROGER CONNERS ASWAN HARRIS RACHEL ANDERSON ALVIN HUDSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WHEN NIGHT FALLS, THEY WILL RISE",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "supernatural",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of a monstrous hand and blood, suggesting horror themes.",
+  "description": "The poster features a monstrous, bloodied hand rising from darkness with the title 'REBIRTH' and cast names above."
+}

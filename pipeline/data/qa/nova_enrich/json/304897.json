@@ -1,0 +1,47 @@
+{
+  "title_text": "THE REGENERATED MAN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SCIENCE CREATED IT CAN ANYTHING STOP IT?",
+  "mood": [
+    "horror",
+    "sci-fi",
+    "camp",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "electricity",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.75,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic blood and implied sexual content.",
+  "description": "A horror poster shows a monstrous, regenerated man holding a terrified woman amidst electric sparks in a cluttered room."
+}

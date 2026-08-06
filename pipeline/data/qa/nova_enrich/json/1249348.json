@@ -1,0 +1,39 @@
+{
+  "title_text": "BEAST OF PREY",
+  "credits_text": "JOHN P. COX MARCUS DEMBINSKI GREGORY ELEK a/k/a GREGORY ELEK THOMAS ROBERT JAMES R. TOM ZAVERNIK JACK McGUIRE story by LOUIS DEMBINSKI MARCUS DEMBINSKI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "suspenseful",
+    "dark",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "shadow",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A green poster features bold black text reading \"BEAST OF PREY\" with a shadowy silhouette of a person against a dark backdrop."
+}

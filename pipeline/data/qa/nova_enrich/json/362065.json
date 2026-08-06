@@ -1,0 +1,45 @@
+{
+  "title_text": "FIRE CITY",
+  "credits_text": "END OF DAYS The Battle for the Earth Has Begun",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "fantasy",
+    "action",
+    "dramatic",
+    "epic"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and fantasy elements with implied violence.",
+  "description": "A poster features a man with devil-like horns holding a gun, a woman in tactical gear, and a green monster, set against flames and a cityscape."
+}

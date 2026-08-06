@@ -1,0 +1,50 @@
+{
+  "title_text": "BLOOD SHED",
+  "credits_text": "WITH THE TURN OF A KEY, THEY UNLEASHED HELL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "GABRIEL BYRNE, VAL KILMER, DORIE BARRETT, CHAD MICHAEL COLLINS, ERIN COLEMAN, ISSIE DIBB",
+  "mood": [
+    "horror",
+    "dread",
+    "gothic",
+    "intense",
+    "terrifying"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "lock",
+      "conf": 0.85
+    },
+    {
+      "name": "chain",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and intense violence.",
+  "description": "A horror movie poster featuring a zombie-like figure with chains and a lock, with intense red and orange colors."
+}

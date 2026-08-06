@@ -1,0 +1,41 @@
+{
+  "title_text": "THE HAUNTED CASTLE",
+  "credits_text": "a film by GEORGES MÉLIÈS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "fantasy",
+    "mysterious",
+    "haunted",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "haunted",
+      "conf": 0.9
+    },
+    {
+      "name": "castle",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A black-and-white poster shows a person in period clothing running through a dimly lit castle corridor, evoking a haunted atmosphere."
+}

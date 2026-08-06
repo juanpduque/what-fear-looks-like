@@ -1,0 +1,45 @@
+{
+  "title_text": "MAKE ME SHUDDER II",
+  "credits_text": "MOR NAK HORROR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "in cinemas 5 July",
+  "mood": [
+    "horror",
+    "supernatural",
+    "terrifying",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains supernatural horror themes and implied violence.",
+  "description": "A woman sits surrounded by terrified people under a full moon, with a rustic village in the background."
+}

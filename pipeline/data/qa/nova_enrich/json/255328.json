@@ -1,0 +1,46 @@
+{
+  "title_text": "Harvesters",
+  "credits_text": "An action-packed thriller from Producer Don Dohler and Director Joe Ripple",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Meet the Peelmans, a family very close to your heart... and every other organ in your body!",
+  "mood": [
+    "thriller",
+    "horror",
+    "dark humor",
+    "violent",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "Poster features five individuals with weapons and blood, promoting a horror thriller film titled 'Harvesters'."
+}

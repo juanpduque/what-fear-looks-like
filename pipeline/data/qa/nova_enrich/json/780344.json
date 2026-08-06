@@ -1,0 +1,45 @@
+{
+  "title_text": "HANTU MERAH CASABLANCA",
+  "credits_text": "HENKY KURNIAWAN, VITALIA SESTIA, ROCKY JEFF, EVA ASMARANI, ELI RIZKA AMOR, GUNTUR NUGRAHAI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IN CINEMAS 23 OCTOBER 2014",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "haunting",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.2,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and ghostly imagery.",
+  "description": "A poster features a woman in a red dress surrounded by terrified faces against a dark forest backdrop with a full moon."
+}

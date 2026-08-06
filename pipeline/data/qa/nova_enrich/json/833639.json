@@ -1,0 +1,47 @@
+{
+  "title_text": "JACK O LANTERN",
+  "credits_text": "HAUNT YOUR SCREEN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THIS HALLOWEEN, SPOOK YOUR NEIGHBORS.",
+  "mood": [
+    "spooky",
+    "haunting",
+    "mysterious",
+    "autumnal",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "haunting",
+      "conf": 0.9
+    },
+    {
+      "name": "spooky",
+      "conf": 0.95
+    },
+    {
+      "name": "halloween",
+      "conf": 0.95
+    },
+    {
+      "name": "pumpkin",
+      "conf": 0.95
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A glowing jack-o'-lantern sits among pumpkins in a dark, eerie forest setting with a haunting tagline."
+}

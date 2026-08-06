@@ -1,0 +1,33 @@
+{
+  "title_text": "DOGMAN",
+  "credits_text": "A FILM BY RICHARD BRAUER\nLARRY JOE CAMPBELL MARIANN MAYBERRY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PEOPLE SEE THINGS...",
+  "mood": [
+    "thriller",
+    "horror",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Movie poster features three people in a jungle setting with a menacing creature in the background. The title 'DOGMAN' is prominently displayed."
+}

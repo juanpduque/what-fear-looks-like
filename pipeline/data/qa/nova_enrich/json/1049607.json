@@ -1,0 +1,46 @@
+{
+  "title_text": "PIGMAN",
+  "credits_text": "THIS BLOODY PIGGY SLAYED AT HOME",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BASED ON REAL LIFE EVENTS",
+  "mood": [
+    "dread",
+    "gothic",
+    "violent",
+    "disturbing",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.1,
+  "blood_gore": 0.8,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and disturbing imagery.",
+  "description": "A poster shows a monstrous figure with chains, titled 'Pigman,' based on real-life events, with a tagline about bloody violence."
+}

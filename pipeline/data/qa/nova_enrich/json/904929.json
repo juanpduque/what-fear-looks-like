@@ -1,0 +1,41 @@
+{
+  "title_text": "FACES OF DYING III",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE DYING COLLECTION\nTHE FINAL ASSAULT!\nWARNING: If the brutal and graphic depiction of actual death is upsetting to you, please do not view this film.",
+  "mood": [
+    "dread",
+    "gritty",
+    "disturbing",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.95,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic depictions of death and violence; viewer discretion strongly advised.",
+  "description": "A poster featuring a menacing skull with glowing eyes and the title 'Faces of Dying III,' warning of graphic content."
+}

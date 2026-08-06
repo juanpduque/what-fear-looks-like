@@ -1,0 +1,40 @@
+{
+  "title_text": "心霊写真26",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "死を招く心霊写真があなたを殺す",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatters and ominous imagery suggesting horror themes.",
+  "description": "A poster featuring a tiled wall with a shadowy handprint and red blood splatters, overlaid with Japanese text."
+}

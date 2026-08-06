@@ -1,0 +1,41 @@
+{
+  "title_text": "ALIEN APOCALYPSE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "apocalyptic",
+    "action",
+    "sci-fi",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and apocalyptic imagery, but no explicit violence or gore.",
+  "description": "A man stands holding a weapon against a fiery cityscape with the title 'ALIEN APOCALYPSE' above him."
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "HELLIRISER",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "haunting",
+    "terrifying"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "cemetery",
+      "conf": 0.75
+    },
+    {
+      "name": "hand",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains intense horror elements including fire and a monstrous hand.",
+  "description": "A poster showing a large, fiery hand emerging from a dark, eerie cemetery with a wrought iron gate in the foreground."
+}

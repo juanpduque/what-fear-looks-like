@@ -1,0 +1,47 @@
+{
+  "title_text": "魔魔魔魔",
+  "credits_text": "水比 平田 男男女女 男男女女 水比女女 平田女女 水比女女 平田女女 水比女女 平田女女",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "RETURN OF THE DEMON",
+  "mood": [
+    "horror",
+    "supernatural",
+    "gothic",
+    "intense",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.1,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains intense horror imagery and occult themes.",
+  "description": "A vibrant poster features multiple intense faces and figures, with bold red Chinese characters and English subtitle 'Return of the Demon.'"
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "CATCALL",
+  "credits_text": "CRAZY ALL OUT FUCKING MADNESS INSANITY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "violent",
+    "grotesque",
+    "intense",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.95
+    },
+    {
+      "name": "violence",
+      "conf": 0.9
+    },
+    {
+      "name": "gore",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.7,
+  "blood_gore": 0.95,
+  "violence": 0.9,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, may be disturbing to some viewers.",
+  "description": "A poster showing a person with blood splattered on them, accompanied by bold, dripping text reading 'CATCALL' and a tagline."
+}

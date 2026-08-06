@@ -1,0 +1,40 @@
+{
+  "title_text": "CROCODILE FURY",
+  "credits_text": "NIK ROSEBUD JUBY CALDER JIM BROWN JOE KELLY BOB STELLMAN JAN PETERSON DANNY PARKER BOB BARNES TOMAS TANG DALLIE YEUNG TOMAS TANG TED KINGSBROOK",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A MYTH OF REAL TERROR",
+  "mood": [
+    "action",
+    "adventure",
+    "thriller",
+    "drama"
+  ],
+  "fear_labels": [
+    {
+      "name": "crocodile",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "water",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and intense action scenes.",
+  "description": "A muscular man battles a large crocodile in a dramatic scene with a helicopter overhead and a gun in hand."
+}

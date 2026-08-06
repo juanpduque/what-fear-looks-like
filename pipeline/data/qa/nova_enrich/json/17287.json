@@ -1,0 +1,45 @@
+{
+  "title_text": "POULTRYGEIST",
+  "credits_text": "NIGHT OF THE CHICKEN DEAD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "camp",
+    "grotesque",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore with horror themes.",
+  "description": "A poster featuring a skull with a chicken monster emerging, surrounded by weapons and blood, titled 'Poultrygeist: Night of the Chicken Dead.'"
+}

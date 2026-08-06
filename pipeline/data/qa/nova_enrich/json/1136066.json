@@ -1,0 +1,46 @@
+{
+  "title_text": "監死カメラ8",
+  "credits_text": "恐怖の心霊・怪奇映像集",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "見ているは霊者の理由! はんざいに映った!",
+  "mood": [
+    "dread",
+    "suspense",
+    "supernatural",
+    "psychological",
+    "urban"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "camera",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.3,
+  "animal": 0.4,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains supernatural horror themes and mild violent imagery.",
+  "description": "A poster shows a cityscape with a camera displaying a ghostly face, crows flying, and Japanese text indicating a supernatural horror anthology."
+}

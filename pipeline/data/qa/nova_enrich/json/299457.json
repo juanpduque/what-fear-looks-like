@@ -1,0 +1,37 @@
+{
+  "title_text": "怪物大戦争",
+  "credits_text": "三木隆三原作・脚本・監督 斎藤武男 一連の怪獣映画で初登場 大怪獣ゴジラの初代主演作品",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "fantasy",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A vintage Japanese movie poster featuring a dramatic scene with a monster and characters, highlighting a classic kaiju film."
+}

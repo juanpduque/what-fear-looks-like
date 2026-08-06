@@ -1,0 +1,42 @@
+{
+  "title_text": "Goosebumps",
+  "credits_text": "Something's waiting in the dark.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "STAY OUT OF THE BASEMENT",
+  "mood": [
+    "spooky",
+    "mysterious",
+    "gothic",
+    "creepy"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a tree-like creature in a lab setting with eerie text and a warning to stay out of the basement."
+}

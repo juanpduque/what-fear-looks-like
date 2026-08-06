@@ -1,0 +1,40 @@
+{
+  "title_text": "FRAGILE",
+  "credits_text": "SOJI MASAKI KENJI SUZUMURA ANONSHINA DAIGOO GAWA",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "MURALEOMUE",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and monstrous creatures.",
+  "description": "A poster featuring a group of characters in dark, eerie settings with a central figure holding a weapon, suggesting a horror or thriller theme."
+}

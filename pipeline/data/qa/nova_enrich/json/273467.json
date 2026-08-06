@@ -1,0 +1,42 @@
+{
+  "title_text": "GOAL OF THE DEAD",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "LORIT 9",
+  "mood": [
+    "intense",
+    "action",
+    "post-apocalyptic",
+    "thriller",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and post-apocalyptic themes.",
+  "description": "A soccer player stands with his back to the viewer amidst a chaotic, fiery battlefield filled with fallen figures and smoke."
+}

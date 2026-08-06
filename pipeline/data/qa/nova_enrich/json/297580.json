@@ -1,0 +1,44 @@
+{
+  "title_text": "DAY OF THE MUMMY",
+  "credits_text": "DANNY GLOVER WILLIAM MCNAMARA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AN ANCIENT EVIL HAS BEEN UNLEASHED",
+  "mood": [
+    "action",
+    "horror",
+    "thriller",
+    "adventure"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "gun",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.2,
+  "blood_gore": 0.1,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror elements.",
+  "description": "A poster shows a menacing mummy with two protagonists holding guns, set against a desert backdrop with pyramids and vehicles."
+}

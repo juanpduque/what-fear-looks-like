@@ -1,0 +1,38 @@
+{
+  "title_text": "ON PAPER",
+  "credits_text": "a film directed by Amanda Njole",
+  "languages": [
+    "en"
+  ],
+  "other_text": "every story leaves a body",
+  "mood": [
+    "dramatic",
+    "intense",
+    "mysterious",
+    "dark",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and suggests violence.",
+  "description": "A poster shows a man in a tank top with blood on his chest, standing in front of a hooded figure against a red background with scattered letters."
+}

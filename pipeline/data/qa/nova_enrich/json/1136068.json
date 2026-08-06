@@ -1,0 +1,38 @@
+{
+  "title_text": "父死カメラヒ9",
+  "credits_text": "物体の心顔、路店残顔寠実",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "一子死は「顔面」 小屋屋さんは、これを届えた! 絶影記述、弱影記述、弱影記述、弱影記述、弱影記述",
+  "mood": [
+    "dread",
+    "suspense",
+    "psychological",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "camera",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.2,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a camera pointed at a classroom with a ghostly face on its screen, featuring Japanese text and a bird in the background."
+}

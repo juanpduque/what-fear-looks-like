@@ -1,0 +1,42 @@
+{
+  "title_text": "KISS MY BLOOD",
+  "credits_text": "BENNO FÜRMAN ANYA FISCHER THOMAS HAYDN EIN DAVID JAZAY FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "RED EDITION",
+  "mood": [
+    "horror",
+    "gothic",
+    "violent",
+    "dramatic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "The poster features a dramatic, intense face with blood and the title 'Kiss My Blood' prominently displayed, suggesting a horror theme."
+}

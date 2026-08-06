@@ -1,0 +1,40 @@
+{
+  "title_text": "SLASHER",
+  "credits_text": "Producción: SÉBA JOSÉ. Dir.: José IBAÑEZ. Tecnico de sonido: IVAN QUINTANA. Director de arte: IVÁN CASTILLO. Asistente de dirección: IVÁN VILCHEZ, IVÁN CASTILLO. Edición: IVÁN VILCHEZ, IVÁN CASTILLO. Sonido: JOSÉ RAMOS. Asistente de producción: IVÁN CASTILLO, ALEJANDRO GARCÍA. Música: PABLO NUNES. Cinematografía: ALEJANDRO RAMOS.",
+  "languages": [
+    "es"
+  ],
+  "other_text": "CADA LEYENDA TIENE SU ORÍGEN",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and themes of violence.",
+  "description": "A close-up of a monstrous, red, textured face with two large eyes and the title 'SLASHER' prominently displayed."
+}

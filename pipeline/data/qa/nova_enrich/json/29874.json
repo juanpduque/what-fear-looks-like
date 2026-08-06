@@ -1,0 +1,47 @@
+{
+  "title_text": "DRACULA",
+  "credits_text": "FABIÁN Silvia Manriquez Magda Guzmán en la DINASTIA",
+  "languages": [
+    "es"
+  ],
+  "other_text": "\"Después de tres siglos de sueno Dracula regresa excluido y recorre la noche en busca de mujeres... hombres... lo que sea\"",
+  "mood": [
+    "gothic",
+    "erotic",
+    "horror",
+    "camp",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "nudity",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence, partial nudity, and occult themes.",
+  "description": "A dramatic poster features a monstrous face with fangs, a partially draped woman, and text about Dracula's return. The design is gothic and horror-themed."
+}

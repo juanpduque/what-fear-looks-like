@@ -1,0 +1,45 @@
+{
+  "title_text": "BEAUTIFUL PEOPLE",
+  "credits_text": "Written and Directed by James O'Barr. Starring: Giancarlo Esposito, Thomas Haden Church, Kate Hudson, Michael Madsen, Andrea Riseborough, Alex Pettyfer, Timothy Olyphant, Topher Grace, Olivia Wilde, and Noah Segan.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "psychological",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and a monstrous creature.",
+  "description": "A group of people stands in front of a dark house under a stormy sky, with a monstrous figure looming above them."
+}

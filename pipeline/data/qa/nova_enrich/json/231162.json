@@ -1,0 +1,44 @@
+{
+  "title_text": "TAG DER TEUFEL",
+  "credits_text": "ILLUSIONS UNLTD. FILMS / TIGERLINE FILMPRODUKTION\nCHRISTINE DUNE, MONICA BACI, ROBERT CLEANER, ALEXANDER E. FENNON, THOMAS WEISENGRUBER, WERNER WULZ, DIANE LÜBBERT, VOLKMAR GEIBLINGER, TOM NORBERT PECZEL, STEFAN PECZELT\nJAVIER VOLKMAR GEIBLINGER UND NORBERT PECZEL\nMANNFRED LESSL\nELMAR WEISSMANN UND STEFAN PECZELT",
+  "languages": [
+    "de"
+  ],
+  "other_text": "DER ERSTE PERCHTEN-HORROR-THRILLER\n\"Michael Myers trifft auf den Perchtenlaut\" DVD-FORUM.AT\n\"Technisch anspruchsvoll und spannend\" DEADLINE MAGAZIN",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "monster",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.95,
+  "monster": 0.75,
+  "person": 0.6,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A horror thriller poster featuring a gloved hand holding a bloody knife against a dark background, with German text and credits."
+}

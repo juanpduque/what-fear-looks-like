@@ -1,0 +1,40 @@
+{
+  "title_text": "MİHREZ 2",
+  "credits_text": "CİN PADİŞAHİ",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "HER GÜNAHIN BİR BEDELİ VARDIR\n7 EKİM'DE SİNEMALARDA",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and injury imagery.",
+  "description": "A close-up of a distressed person with bloodied hands against a shattered glass background, featuring Turkish text and a title."
+}

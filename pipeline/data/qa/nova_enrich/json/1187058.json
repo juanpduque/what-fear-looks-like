@@ -1,0 +1,39 @@
+{
+  "title_text": "MUVLONA",
+  "credits_text": "DIRECTED BY ADITYA SARPOTDAR PRODUCED BY DINESH VIJAN & AMAR KAUSHIK A MADDOCK FILMS PRODUCTION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DINESH VIJAN PRESENTS MÄDDOC FILMS IN CINEMAS 7TH JUN",
+  "mood": [
+    "horror",
+    "thriller",
+    "forest",
+    "supernatural",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows two people and a monstrous creature in a forest setting, with a title 'MUVLONA' and release date."
+}

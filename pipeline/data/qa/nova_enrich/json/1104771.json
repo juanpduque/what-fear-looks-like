@@ -1,0 +1,39 @@
+{
+  "title_text": "MY HOUSE",
+  "credits_text": "FRANCIS MAGEE MIRREN MACK AKI OMOSHAYBI MICHELLE COLLINS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "suspense",
+    "thriller",
+    "psychological",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A woman holds a device in front of her face, with a shadowy figure behind her. The title 'MY HOUSE' is prominently displayed in red."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "KILLER NURSE",
+  "credits_text": "FROM THE DIRECTOR OF THE BOOGEYMAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BIOHAZARD",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "biohazard",
+      "conf": 0.9
+    },
+    {
+      "name": "wheelchair",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild suggestion of violence through imagery and title.",
+  "description": "A poster shows a man pushing a wheelchair with a biohazard symbol in the background, titled 'Killer Nurse' and referencing the director of 'The Boogeyman.'"
+}

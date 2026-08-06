@@ -1,0 +1,47 @@
+{
+  "title_text": "FACE OF TERROR",
+  "credits_text": "WITH LISA GAYE AND VIRGILIO TEXERA JACK MILES PRODUCED BY WILLIAM HOLE JR. SCREEN PLAY BY MONICE MANNING",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WOMAN'S FLESH...KILLER'S SOUL! FEMALE...YES! BUT...IS SHE WOMAN...OR INHUMAN, BLOOD-MAD BEAST? S.E.E.",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "camp",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.6,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and suggestive themes.",
+  "description": "A vintage horror movie poster featuring a dramatic close-up of a man with long hair and a stern expression, overlaid with bold red text and a handprint."
+}

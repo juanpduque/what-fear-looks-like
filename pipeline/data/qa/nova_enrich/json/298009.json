@@ -1,0 +1,49 @@
+{
+  "title_text": "IRON WOLF",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IT LURKS IN THE DARKNESS... ...ONLY TO RETURN AGAIN",
+  "mood": [
+    "intense",
+    "thriller",
+    "action",
+    "mystery",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features intense imagery and suggests potential violence.",
+  "description": "The poster shows a fierce wolf with three soldiers in a dark forest, with bold red text and a dramatic tagline."
+}

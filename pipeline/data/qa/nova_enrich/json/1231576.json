@@ -1,0 +1,41 @@
+{
+  "title_text": "MasterChat",
+  "credits_text": "ESTRELANDO AMANDA RAMOS E SERGIO SILVA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ROTEIRO E DIREÇÃO AMANDA RAMOS FOTOGRAFIA LUDMYLLA BOMFIM PRODUÇÃO YURI FÉLIX CARACTERIZAÇÃO HERICK JOÃO EDIÇÃO E MONTAGEM SERGIO SILVA E AMANDA RAMOS",
+  "mood": [
+    "horror",
+    "supernatural",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "eye",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.5,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied horror elements and blood splatters.",
+  "description": "A bowl of instant noodles with an eerie eye floating in it, set against a dark, ornate background with shadowy hands."
+}

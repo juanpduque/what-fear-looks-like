@@ -1,0 +1,41 @@
+{
+  "title_text": "A PRELUDE TO FEAR",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "eerie",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "chains",
+      "conf": 0.9
+    },
+    {
+      "name": "bound_woman",
+      "conf": 0.85
+    },
+    {
+      "name": "text_heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "Contains implied violence and suggestive imagery due to bound woman and chains.",
+  "description": "A dark poster shows a bound woman in red with chains in the background, titled 'A Prelude to Fear.' The mood is ominous and suspenseful."
+}

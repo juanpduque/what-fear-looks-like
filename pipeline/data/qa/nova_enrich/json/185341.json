@@ -1,0 +1,49 @@
+{
+  "title_text": "LOREC APOCALYPSE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "4",
+  "mood": [
+    "dread",
+    "apocalyptic",
+    "survival",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A woman holds a weapon near a damaged ship in a stormy sea, with blood on her clothes."
+}

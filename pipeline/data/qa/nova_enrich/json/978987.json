@@ -1,0 +1,47 @@
+{
+  "title_text": "BILLIE THE KID",
+  "credits_text": "OLIVIA HSU, ZION MONROE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "VAMPIRES OF THE WILD WEST",
+  "mood": [
+    "dark",
+    "western",
+    "gothic",
+    "mysterious",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "vampire",
+      "conf": 0.7
+    },
+    {
+      "name": "horse",
+      "conf": 0.6
+    },
+    {
+      "name": "moon",
+      "conf": 0.8
+    },
+    {
+      "name": "cattle",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.6,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features two characters in a wild west setting with a large moon and a cowboy hat, one holding a revolver."
+}

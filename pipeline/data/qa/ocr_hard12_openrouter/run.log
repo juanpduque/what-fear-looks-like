@@ -1,0 +1,42 @@
+sample n=12 from /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/ocr_qwen_hard/sample_ids.txt
+posters_dir=/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/_ocr_hard12_new_stage/posters
+out_dir=/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/ocr_hard12_openrouter
+models=['gemma', 'omni']
+OPENROUTER_API_KEY=set (value not logged)
+
+=== key=gemma result=gemma4-26b-free-hard api=google/gemma-4-26b-a4b-it:free n=12 posters=/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/_ocr_hard12_new_stage/posters ===
+  skip 1 already-ok ids
+  [1/11] id=26921 status=ok chars=31 overlap=1.0 7.091s tok=323
+  [2/11] id=28265 status=ok chars=17 overlap=0.3333 7.075s tok=320
+  [3/11] id=77399 status=ok chars=13 overlap=0.0 8.133s tok=318
+  [4/11] id=233194 status=ok chars=342 overlap=1.0 13.526s tok=424
+  [5/11] id=286452 status=ok chars=13 overlap=1.0 4.899s tok=319
+  [6/11] id=653537 status=ok chars=7 overlap=0.0 6.558s tok=316
+  [7/11] id=940187 status=ok chars=66 overlap=0.0 9.687s tok=335
+  [8/11] id=1015482 status=ok chars=42 overlap=0.0 8.072s tok=327
+  [9/11] id=1405670 status=ok chars=22 overlap=0.0 2.579s tok=318
+  [10/11] id=1483743 status=ok chars=157 overlap=1.0 11.56s tok=370
+  [11/11] id=1578643 status=ok chars=34 overlap=1.0 4.129s tok=326
+  gemma4-26b-free-hard: this_run ok=11 err=0 tok=3696
+
+=== key=omni result=nemotron-omni-free-hard api=nvidia/nemotron-3-nano-omni-30b-a3b-reasoning:free n=12 posters=/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/_ocr_hard12_new_stage/posters ===
+  [1/12] id=10283 status=ok chars=42 overlap=0.875 3.828s tok=746
+  [2/12] id=26921 status=ok chars=31 overlap=1.0 1.638s tok=1651
+  [3/12] id=28265 status=ok chars=17 overlap=0.3333 1.655s tok=1698
+  [4/12] id=77399 status=ok chars=13 overlap=0.0 1.317s tok=1615
+  [5/12] id=233194 status=ok chars=278 overlap=1.0 43.18s tok=8811
+  [6/12] id=286452 status=ok chars=13 overlap=1.0 2.29s tok=1616
+  [7/12] id=653537 status=ok chars=12 overlap=0.0 2.25s tok=1645
+  [8/12] id=940187 status=ok chars=52 overlap=0.0 5.424s tok=1341
+  [9/12] id=1015482 status=ok chars=42 overlap=0.0 2.602s tok=1743
+  [10/12] id=1405670 status=ok chars=98725 overlap=0.0 219.535s tok=33084
+  [11/12] id=1483743 status=ok chars=50857 overlap=1.0 186.626s tok=16731
+  [12/12] id=1578643 status=ok chars=33 overlap=0.0 5.98s tok=1266
+  nemotron-omni-free-hard: this_run ok=12 err=0 tok=71947
+final sidecar merge → 24 rows into /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/ocr_hard12_openrouter/results.csv
+  gemma4-26b-free-hard: 12/12 ok mean_overlap=0.5174
+  nemotron-omni-free-hard: 12/12 ok mean_overlap=0.434
+
+LISTO → /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/ocr_hard12_openrouter/results.csv (24 rows)
+sidecar → /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/ocr_hard12_openrouter/openrouter_sidecar.csv
+usage → /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/ocr_hard12_openrouter/openrouter_usage.csv

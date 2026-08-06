@@ -1,0 +1,41 @@
+{
+  "title_text": "RING",
+  "credits_text": "original novel by Koji Suzuki, adapted by Hiroshi Takahashi, music by Takada Haru",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "psychological",
+    "supernatural",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "",
+  "description": "The poster features a large skull with Japanese text, suggesting a horror theme with psychological and supernatural elements."
+}

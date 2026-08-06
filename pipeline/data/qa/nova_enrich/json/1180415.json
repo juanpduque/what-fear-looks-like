@@ -1,0 +1,38 @@
+{
+  "title_text": "รังทา-พัง",
+  "credits_text": "กันที่ประการหลังดีกันเทองเว็บได้ จักิวเพินไลน์",
+  "languages": [
+    "th"
+  ],
+  "other_text": "วีง",
+  "mood": [
+    "horror",
+    "fantasy",
+    "mythic",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a menacing figure with sharp teeth and a crown, alongside warriors holding spears against a dramatic mountain backdrop."
+}

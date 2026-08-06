@@ -1,0 +1,36 @@
+{
+  "title_text": "BWA KAYBO",
+  "credits_text": "PRÉSENTE UN FILM DE FRÉDÉRIC L. TESSONNEAU",
+  "languages": [
+    "fr"
+  ],
+  "other_text": "KÉ Toujou Ni Moun A Ka Fofo",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.1,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood-like text and a partial face, suggesting violent themes.",
+  "description": "A poster featuring a partially visible face behind a wooden surface with red, splattered text reading \"BWA KAYBO\" and a rosary."
+}

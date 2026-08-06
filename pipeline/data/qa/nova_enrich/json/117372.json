@@ -1,0 +1,44 @@
+{
+  "title_text": "MEMORIAL DAY",
+  "credits_text": "THERESE FRETWELL MARCOS GABRIEL JASMINE TRICE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Pray for this weekend to be over.",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a weapon.",
+  "description": "A poster shows a close-up of an eye and a shadowy figure holding a knife in a dark forest setting."
+}

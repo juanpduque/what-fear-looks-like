@@ -1,0 +1,50 @@
+{
+  "title_text": "SPRING OF THE BRAINLESS",
+  "credits_text": "AN AMERICAN APOCALYPSE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "apocalyptic",
+    "chaotic",
+    "disturbing",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.85
+    },
+    {
+      "name": "violence",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.95,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and disturbing imagery.",
+  "description": "A group of zombie-like figures with aggressive expressions and bloodied hands against a fiery background, with bold title text overlay."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "Duncan Cunningham's FORESIGHT KILLER INSTINCT",
+  "credits_text": "Duncan Cunningham",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"The Wicked Must Be Slain\"",
+  "mood": [
+    "gothic",
+    "thriller",
+    "horror",
+    "dread",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.2,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A hooded figure stands prominently in front of a group of terrified people, with a dark, ominous atmosphere."
+}

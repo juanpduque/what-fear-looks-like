@@ -1,0 +1,50 @@
+{
+  "title_text": "KAAL TRICHORI",
+  "credits_text": "WRITTEN & DIRECTED BY NITIN VAIDYA\nBGM AMAR MOHILE\nPRODUCED BY SHIRISH VAIDYA | NITIN GHATALIA | MANSUKH TALSANIYA\nCAST: ARBAZ KHAN | RITUPURNA SENGUPTA | ADITYA SRIVASTAVA | MAHESH MANUREKAR | RAJESH SHARMA | MUGDHA GODSE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FEAR HAS A DATE AND IT'S COMING\nSOME MYTHS ARE REAL",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "mysterious",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "fire",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "A dark, eerie poster features a shadowy figure against a haunted mansion backdrop with red lighting and ominous text."
+}

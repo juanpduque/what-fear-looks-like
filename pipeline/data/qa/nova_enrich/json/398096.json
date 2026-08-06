@@ -1,0 +1,49 @@
+{
+  "title_text": "FRESHWATER",
+  "credits_text": "JOE LANDO ZOE BELL AMY PAFFRATH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Be afraid of what you can't see",
+  "mood": [
+    "thriller",
+    "horror",
+    "suspense",
+    "danger",
+    "anxiety"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "danger",
+      "conf": 0.8
+    },
+    {
+      "name": "threat",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.3,
+  "animal": 0.95,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts a large, menacing crocodile, suggesting potential violence.",
+  "description": "A poster shows a large crocodile emerging from water with a dramatic sunset background and three actors' names above."
+}

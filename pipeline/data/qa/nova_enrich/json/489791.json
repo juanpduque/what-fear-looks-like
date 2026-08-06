@@ -1,0 +1,41 @@
+{
+  "title_text": "A BOY'S LIFE",
+  "credits_text": "A FILM BY ELIAS BENAVIDEZ",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BELIEVING IS SEEING",
+  "mood": [
+    "mysterious",
+    "haunting",
+    "suspenseful",
+    "emotional",
+    "introspective"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "shadow",
+      "conf": 0.8
+    },
+    {
+      "name": "door",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A silhouette of a boy holding a teddy bear stands in a doorway, illuminated by a bright light, with a dark, mysterious atmosphere."
+}

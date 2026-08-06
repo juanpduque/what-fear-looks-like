@@ -1,0 +1,47 @@
+{
+  "title_text": "SCREAMWALKERS",
+  "credits_text": "YOU'RE GONNA NEED MORE THAN NINE LIVES.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COMING SOON",
+  "mood": [
+    "horror",
+    "supernatural",
+    "gothic",
+    "dread",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "forest",
+      "conf": 0.75
+    },
+    {
+      "name": "graveyard",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.65
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A horror poster featuring a masked figure, a ghostly figure, and two people in a spooky graveyard setting under a full moon."
+}

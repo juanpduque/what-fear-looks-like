@@ -1,0 +1,45 @@
+{
+  "title_text": "COLONY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SECURITY",
+  "mood": [
+    "dread",
+    "apocalyptic",
+    "survival",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.1,
+  "monster": 0.95,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore from zombie attacks.",
+  "description": "A group of survivors faces a horde of zombies in a dark, tense setting, with the title 'COLONY' prominently displayed above them."
+}

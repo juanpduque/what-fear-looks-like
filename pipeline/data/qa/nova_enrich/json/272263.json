@@ -1,0 +1,45 @@
+{
+  "title_text": "THE LAST LIGHT",
+  "credits_text": "AN IRISH GHOST STORY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "'THE SCARIEST FILM SINCE THE BLAIR WITCH!' FRANCIS BORGIA BELAY TELEGRAPH",
+  "mood": [
+    "gothic",
+    "eerie",
+    "haunting",
+    "mysterious",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.95
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains themes of the occult and ghostly apparitions.",
+  "description": "A dark, eerie poster features a haunted house with a ghostly skull overlay, set against a foggy, twisted forest background."
+}

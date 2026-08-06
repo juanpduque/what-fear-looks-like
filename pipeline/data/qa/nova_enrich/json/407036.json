@@ -1,0 +1,42 @@
+{
+  "title_text": "ON THE BRAIN",
+  "credits_text": "SOMETHING'S IN MY HEAD.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "psychological",
+    "horror",
+    "disturbing",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster features disturbing imagery and a tagline suggesting psychological horror.",
+  "description": "A poster shows a menacing, grotesque face with the title 'ON THE BRAIN' and the tagline 'SOMETHING'S IN MY HEAD.' A person crouches in fear on a dark street."
+}

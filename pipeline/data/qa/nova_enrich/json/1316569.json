@@ -1,0 +1,42 @@
+{
+  "title_text": "GRUESOME TWOSOME",
+  "credits_text": "A MOVIE BY MERCEDES & MOSES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "RIP 1912-1942, RIP 817-1904, RIP 1912-1942",
+  "mood": [
+    "camp",
+    "gothic",
+    "surreal",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "blood",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.3,
+  "person": 1.0,
+  "animal": 0.2,
+  "blood_gore": 0.4,
+  "violence": 0.3,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "nudity",
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains nudity and occult imagery.",
+  "description": "Poster shows a cartoonish graveyard scene with two partially nude figures and tombstones, titled 'Gruesome Twosome' by Mercedes & Moses."
+}

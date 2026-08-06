@@ -1,0 +1,44 @@
+{
+  "title_text": "YAKAZA",
+  "credits_text": "İKİTAB-I ÇİN'İN YÖNETMENİ HAKAN AYDIN'DAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "18 MART'TA SINEMALARDA\nUşkuılarınız Haram Olacak\nZEBİRLİ KABİLE\nسيكون نومك حراما\nYAPIMCI/YÖNETMEN\nHAKAN AYDIN",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.1,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains horror elements and implied violence.",
+  "description": "A dark, eerie poster features a monstrous figure and a distressed person against a haunted house backdrop."
+}

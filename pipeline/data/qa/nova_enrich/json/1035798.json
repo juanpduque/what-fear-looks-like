@@ -1,0 +1,40 @@
+{
+  "title_text": "THE NIGHT STALKER",
+  "credits_text": "NIGHTMARE RADIO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ON AIR",
+  "mood": [
+    "dread",
+    "suspense",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster implies potential violence due to the axe and tense atmosphere.",
+  "description": "A man stands in a dimly lit hallway holding an axe, facing away from the viewer with an 'ON AIR' sign above."
+}

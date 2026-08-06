@@ -1,0 +1,43 @@
+{
+  "title_text": "MONSTER MANIA",
+  "credits_text": "SPINE TINGLING HIGHLIGHTS OF THE CLASSIC SCI-FI & HORROR FILMS!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE THING, WAR OF THE WORLDS, FRANKENSTEIN, THE MUMMY'S CURSE, KING KONG, INVASION OF THE BODY SNATCHERS, THE VAMPIRE WARS, THE MUMMY, THE WOLF MAN, THE INVISIBLE MAN, THE WAR OF THE WORLDS, THE MUMMY'S CURSE, THE MUMMY, THE WOLF MAN, THE INVISIBLE MAN, THE VAMPIRE WARS, THE MUMMY'S CURSE, THE MUMMY, THE WOLF MAN, THE INVISIBLE MAN, THE VAMPIRE WARS, THE MUMMY'S CURSE",
+  "mood": [
+    "camp",
+    "nostalgic",
+    "gothic",
+    "thrilling",
+    "classic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.2,
+  "blood_gore": 0.1,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A collage poster featuring classic sci-fi and horror film titles with vibrant, retro artwork and bold typography."
+}

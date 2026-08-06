@@ -1,0 +1,42 @@
+{
+  "title_text": "BRUNO DIAZ",
+  "credits_text": "GUILLERMO BENÍTEZ, MAXIMILIANO IBÁÑEZ, IVÁN MINICELLI, NICOLÁS MOYANO, LUCAS AMOR",
+  "languages": [
+    "es"
+  ],
+  "other_text": "CICLA PRESENTA",
+  "mood": [
+    "intense",
+    "thriller",
+    "gritty",
+    "action",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A man holds a gun with red, claw-like hands gripping his chest, suggesting intense action and thriller elements."
+}

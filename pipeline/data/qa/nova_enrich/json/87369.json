@@ -1,0 +1,45 @@
+{
+  "title_text": "Devil's Express",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SUBWAY",
+  "mood": [
+    "action",
+    "horror",
+    "fantasy",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "monster"
+  ],
+  "moderation_notes": "Contains graphic horror elements and violent imagery.",
+  "description": "A vibrant poster features multiple characters, including a muscular man, a skull-headed figure, and a demonic face, set against a fiery background with action poses and dramatic expressions."
+}

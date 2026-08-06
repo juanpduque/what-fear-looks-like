@@ -1,0 +1,50 @@
+{
+  "title_text": "BLOOD OATH",
+  "credits_text": "Teresa Graves, Tina Krause, Directed by David Buchert, Lloyd Kaufman and Michael Herz present a Troma Team Release, The most fun I've had watching kids get chopped up - DeadCentral.com",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "violent",
+    "gothic",
+    "camp",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intended for mature audiences.",
+  "description": "A woman holds a large axe in front of a dark forest background with a house visible; the poster advertises a horror film titled 'Blood Oath.'"
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "LILITH'S AWAKENING",
+  "credits_text": "A FILM BY MONICA DEMES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SOMETIMES I'M AFRAID OF WHAT I DESIRE",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "haunting",
+    "intense",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A black and white poster features a woman with intense eyes and a shadowy background, with bats and the tagline 'Sometimes I'm afraid of what I desire.'"
+}

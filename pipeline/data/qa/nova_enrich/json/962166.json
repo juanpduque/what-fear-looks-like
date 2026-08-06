@@ -1,0 +1,49 @@
+{
+  "title_text": "黄的魔子",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "Devil Crow; 王齐师子; 很家师子; 很家师子小师子; 很家师子小师子小师子; 很家师子小师子小师子小师子",
+  "mood": [
+    "gothic",
+    "horror",
+    "fantasy",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "ghost",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "crow",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.7,
+  "blood_gore": 0.0,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense horror themes and violent imagery.",
+  "description": "A poster features a man facing a large, menacing green monster with glowing eyes and crows. The background includes a monk and a crowd, suggesting an action-horror theme."
+}

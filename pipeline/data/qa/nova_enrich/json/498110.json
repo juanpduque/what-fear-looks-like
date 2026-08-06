@@ -1,0 +1,45 @@
+{
+  "title_text": "MASKS",
+  "credits_text": "ROBERT LOMBARDI SCOTT PELLET AND WENDELL RAULSON JR. IF CHARLES A CHRISTMAN II CHARLES A CHRISTMAN II ANDREW BEDNICK KENELL RAULSON JR. SCOTT PELLET FEATURING PEARL GORILLA GREY GERACE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DAVOYZENENEMS",
+  "mood": [
+    "horror",
+    "thriller",
+    "psychological",
+    "supernatural",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains disturbing imagery and themes of horror.",
+  "description": "The poster features a large, menacing skull with masks and a group of people, set against a dark background with a house in the distance."
+}

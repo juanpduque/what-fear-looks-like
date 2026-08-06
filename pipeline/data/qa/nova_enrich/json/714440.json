@@ -1,0 +1,40 @@
+{
+  "title_text": "LEVANDE SKUGGRIK DÖD",
+  "credits_text": "En film av Jonathan Norberg",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Martin Bild, Jenny Hutton",
+  "mood": [
+    "dread",
+    "horror",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatter and intense horror imagery.",
+  "description": "A poster features two central figures surrounded by a chaotic crowd against a splattered red background, suggesting a horror theme."
+}

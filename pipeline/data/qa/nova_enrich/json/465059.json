@@ -1,0 +1,46 @@
+{
+  "title_text": " Haunted Sisters ",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "中国电影电视剧创作公司出品 2017年7月 发行上映",
+  "mood": [
+    "gothic",
+    "haunting",
+    "mystery",
+    "psychological",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and subtle hints of violence.",
+  "description": "A poster features two women in a dimly lit room; one holds a smoky object, suggesting supernatural elements and mystery."
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "THE MISSING",
+  "credits_text": "超精影应 \"\" 美小彩\" \"\" 美小文\" 重师大演案 9月9日 重发应面",
+  "languages": [
+    "en"
+  ],
+  "other_text": "超经影应 \"美小彩\" \"美小文\" 重师大演案 9月9日 重发应面 THE RETURN OF FAMOUS'S MOVIE STARS: SHI XIAOLONG, HAO SHAOWEN! COMING SOON!",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "suspense",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.8,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery including blood and a ghostly figure.",
+  "description": "A poster shows a ghostly woman with green eyes and a black cat, set against a dark, eerie background with blood splatters."
+}

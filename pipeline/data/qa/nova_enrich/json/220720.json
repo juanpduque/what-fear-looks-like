@@ -1,0 +1,41 @@
+{
+  "title_text": "ZOMBIE X'S",
+  "credits_text": "\"EQUAL PARTS SHAUN OF THE DEAD, THE HANGOVER AND A SOUPCON OF SCOTT PILGRIM\" - FILM THREAT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BREAKING UP JUST GOT HARDER TO DO",
+  "mood": [
+    "humorous",
+    "apocalyptic",
+    "camp",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild gore and violent themes.",
+  "description": "Poster shows a group of friends facing zombies, with one holding a rifle and another a can, set against a backdrop of undead figures."
+}

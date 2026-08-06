@@ -1,0 +1,47 @@
+{
+  "title_text": "ECHOES FROM THE GRAVE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "1 CD",
+  "mood": [
+    "gothic",
+    "dread",
+    "macabre",
+    "ominous",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "grave",
+      "conf": 0.85
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic blood and gore imagery, suitable for mature audiences.",
+  "description": "A dark poster features a raven perched on a bloody skull in a cemetery, with ominous text reading 'Echoes from the Grave.'"
+}

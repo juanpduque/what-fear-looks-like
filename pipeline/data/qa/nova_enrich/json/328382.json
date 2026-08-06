@@ -1,0 +1,44 @@
+{
+  "title_text": "FANGORIA BLOOD DRIVE II",
+  "credits_text": "Hosted By MISTRESS JULIYA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AMERICA'S BEST SHORT HORROR FILMS",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "camp",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.4,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.5,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic horror imagery, nudity, and sexual themes.",
+  "description": "Poster features a woman restrained on a table with blood dripping, alongside horror-themed images and hosted by Mistress Juliya."
+}

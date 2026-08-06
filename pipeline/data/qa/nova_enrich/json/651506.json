@@ -1,0 +1,46 @@
+{
+  "title_text": "LAST CHRISTMAS",
+  "credits_text": "INSEN JUL UTEN MASKERT SERIEMORDERE",
+  "languages": [
+    "en",
+    "da"
+  ],
+  "other_text": "Bloody Funny Something you'd say Hugeless simple and Hugeless Dragon",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller",
+    "holiday",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A dark, gothic poster features a masked figure with antlers holding a weapon, surrounded by frightened people in a stone-walled setting."
+}

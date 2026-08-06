@@ -1,0 +1,43 @@
+{
+  "title_text": "CONFINED",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "claustrophobic",
+    "anxious",
+    "disturbing",
+    "psychological",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "confinement",
+      "conf": 0.85
+    },
+    {
+      "name": "glass",
+      "conf": 0.75
+    },
+    {
+      "name": "shattered",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A close-up of a terrified person behind shattered glass, with the title 'CONFINED' displayed at the bottom."
+}

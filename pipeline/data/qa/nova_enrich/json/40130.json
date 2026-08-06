@@ -1,0 +1,36 @@
+{
+  "title_text": "THE RED QUEEN KILLS SEVEN TIMES",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "thriller",
+    "fantasy",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.3,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster implies potential violence through the title and dramatic imagery.",
+  "description": "A woman in a red cloak stands over a blonde woman, suggesting a thriller or fantasy theme."
+}

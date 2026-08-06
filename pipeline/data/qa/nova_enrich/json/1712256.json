@@ -1,0 +1,42 @@
+{
+  "title_text": "SLEEP AWAY CAMP III",
+  "credits_text": "TEENAGE WASTELAND",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SLASHER CLASSICS COLLECTION",
+  "mood": [
+    "horror",
+    "thriller",
+    "camp",
+    "dread",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, with mild sexual undertones.",
+  "description": "A woman holds a knife with a severed head attached, wearing a black tank top with bold yellow text in a forest setting."
+}

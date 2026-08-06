@@ -1,0 +1,42 @@
+{
+  "title_text": "SILENT HALLS",
+  "credits_text": "A FILM BY CUK FILMMAKING CLUB",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COMING TO THEATRES OCTOBER 30 \"SHHH... THE NIGHT HAS EYES, AND SILENCE HAS A SCREAM.\" CUK FILMMAKING CLUB PRODUCTIONS",
+  "mood": [
+    "dread",
+    "suspense",
+    "gothic",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a masked figure in front of a stormy building with lightning, promoting the film 'Silent Halls' releasing October 30."
+}

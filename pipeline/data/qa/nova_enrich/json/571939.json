@@ -1,0 +1,42 @@
+{
+  "title_text": "VIDEO KILLER",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PRESS PLAY...AND PRAY",
+  "mood": [
+    "horror",
+    "thriller",
+    "violent",
+    "disturbing",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; disturbing imagery.",
+  "description": "A poster featuring a screaming face with bloodied hands holding a mask, titled 'VIDEO KILLER' with a warning tagline."
+}

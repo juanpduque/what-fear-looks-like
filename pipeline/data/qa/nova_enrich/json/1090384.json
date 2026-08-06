@@ -1,0 +1,45 @@
+{
+  "title_text": "Zombie Apocalypse Infected.",
+  "credits_text": "Directed by JABED SANDLER, ABEL TAFFEL, CASEY GRAZ; Produced by KAT FAIRWAY, FRANCIS CRONIN, JABED SANDLER; Starring KAT FAIRWAY, FRANCIS CRONIN, JABED SANDLER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "apocalyptic",
+    "dread",
+    "survival",
+    "horror",
+    "desolate"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.8
+    },
+    {
+      "name": "hand",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts a post-apocalyptic setting with implied violence and horror themes.",
+  "description": "A poster shows four silhouetted figures against a fiery, desolate cityscape with a large, outstretched hand and the title 'Zombie Apocalypse Infected.'"
+}

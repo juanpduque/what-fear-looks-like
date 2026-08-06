@@ -1,0 +1,46 @@
+{
+  "title_text": "XXX",
+  "credits_text": "ディジタルコメディアルステアトラストライパ1 4",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "これがつかった心腕動画",
+  "mood": [
+    "dread",
+    "horror",
+    "psychological",
+    "gothic",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and disturbing themes.",
+  "description": "A dark poster features a shadowy figure in a corridor surrounded by ghostly hands and blood splatters, with bold Japanese text overlay."
+}

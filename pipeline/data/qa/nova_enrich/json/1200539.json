@@ -1,0 +1,43 @@
+{
+  "title_text": "HAUNTED MOUNTAINS THE YELLOW TABOO",
+  "credits_text": "STARRING JASPER LIU ANGELA YUEN CO-STARRING TSAO YU-NING SPARK CHEN BUIBUI CHEN WU KUNDA SPECIAL APPEARANCE BRUCE CHIU",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Don't ever follow IT.",
+  "mood": [
+    "mysterious",
+    "eerie",
+    "haunting",
+    "foreboding",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows three characters facing a hooded figure in a dark, tangled forest, with eerie lighting and a warning tagline."
+}

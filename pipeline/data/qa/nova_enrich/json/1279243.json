@@ -1,0 +1,45 @@
+{
+  "title_text": "ユウイジラインジャンール 13十五",
+  "credits_text": "書仲 木平 \text{文}",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "テレビジョンステージョンストリース! この子はあなたを害しません。あなたは、この子を害しません。",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "psychological",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and ghostly imagery.",
+  "description": "A dark poster features a ghostly silhouette and a menacing face with Japanese text, suggesting a supernatural horror theme."
+}

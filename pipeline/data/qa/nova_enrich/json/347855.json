@@ -1,0 +1,49 @@
+{
+  "title_text": "THE GATEWAY",
+  "credits_text": "THE PORTAL TO HELL HAS BEEN OPENED.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "haunting",
+    "terrifying"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "portal",
+      "conf": 0.85
+    },
+    {
+      "name": "haunting",
+      "conf": 0.8
+    },
+    {
+      "name": "bathroom",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains supernatural horror themes and ghostly imagery.",
+  "description": "A poster shows a bathroom with a broken wall revealing ghostly figures emerging from a portal, with a bathtub in the foreground."
+}

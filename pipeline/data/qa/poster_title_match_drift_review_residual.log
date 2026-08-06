@@ -1,0 +1,119 @@
+DRIFT_RESIDUAL_START Mon Aug  3 17:32:34 -05 2026
+cmd: --min-chars 0 --extra 2616 --model nova-lite --workers 6 --region us-east-1
+suspects_pool min_chars>=0: 8208
+extend extra=2616 prior_done=5659 new_sample=2616
+model=nova-lite workers=6 todo=2616
+suspects_pool min_chars>=0: 8208
+extend extra=2616 prior_done=5659 new_sample=2616
+model=nova-lite workers=6 todo=2616
+[25/2616] ok=25 err=0 rate=2.60/s id=741174 verdict=match
+DRIFT_BG_START Mon Aug  3 17:38:26 -05 2026
+suspects_pool min_chars>=0: 8208
+extend extra=2616 prior_done=5684 new_sample=2591
+model=nova-lite workers=6 todo=2591
+[25/2591] ok=25 err=0 rate=2.60/s id=56180 verdict=match
+[50/2591] ok=50 err=0 rate=3.06/s id=642975 verdict=match
+[75/2591] ok=75 err=0 rate=3.31/s id=195165 verdict=match
+[100/2591] ok=100 err=0 rate=3.45/s id=1447251 verdict=match
+[125/2591] ok=125 err=0 rate=3.53/s id=1355019 verdict=match
+[150/2591] ok=150 err=0 rate=3.58/s id=904267 verdict=match
+[175/2591] ok=175 err=0 rate=3.64/s id=729882 verdict=match
+[200/2591] ok=200 err=0 rate=3.63/s id=531807 verdict=match
+[225/2591] ok=225 err=0 rate=3.66/s id=451705 verdict=match
+[250/2591] ok=250 err=0 rate=3.68/s id=1339166 verdict=match
+[275/2591] ok=275 err=0 rate=3.68/s id=85154 verdict=match
+[300/2591] ok=300 err=0 rate=3.71/s id=1128300 verdict=match
+[325/2591] ok=325 err=0 rate=3.73/s id=747424 verdict=match
+[350/2591] ok=350 err=0 rate=3.71/s id=566849 verdict=match
+[375/2591] ok=375 err=0 rate=3.68/s id=1429438 verdict=uncertain
+[400/2591] ok=400 err=0 rate=3.66/s id=649019 verdict=match
+[425/2591] ok=425 err=0 rate=3.62/s id=317979 verdict=match
+[450/2591] ok=450 err=0 rate=3.63/s id=1323488 verdict=match
+[475/2591] ok=475 err=0 rate=3.61/s id=1669923 verdict=uncertain
+[500/2591] ok=500 err=0 rate=3.60/s id=1634927 verdict=match
+[525/2591] ok=525 err=0 rate=3.60/s id=988619 verdict=match
+[550/2591] ok=550 err=0 rate=3.55/s id=687886 verdict=match
+[575/2591] ok=575 err=0 rate=3.56/s id=1620985 verdict=match
+[600/2591] ok=600 err=0 rate=3.56/s id=2675 verdict=match
+[625/2591] ok=625 err=0 rate=3.56/s id=444193 verdict=match
+[650/2591] ok=650 err=0 rate=3.54/s id=187010 verdict=match
+[675/2591] ok=675 err=0 rate=3.54/s id=1477328 verdict=match
+[700/2591] ok=700 err=0 rate=3.54/s id=194120 verdict=match
+[725/2591] ok=725 err=0 rate=3.55/s id=298389 verdict=match
+[750/2591] ok=750 err=0 rate=3.55/s id=315355 verdict=match
+[775/2591] ok=775 err=0 rate=3.54/s id=4365 verdict=match
+[800/2591] ok=800 err=0 rate=3.51/s id=44214 verdict=match
+[825/2591] ok=825 err=0 rate=3.51/s id=1184506 verdict=match
+[850/2591] ok=850 err=0 rate=3.51/s id=194166 verdict=match
+[875/2591] ok=875 err=0 rate=3.49/s id=36209 verdict=match
+[900/2591] ok=900 err=0 rate=3.50/s id=1518467 verdict=uncertain
+[925/2591] ok=925 err=0 rate=3.49/s id=814084 verdict=match
+[950/2591] ok=950 err=0 rate=3.51/s id=1077284 verdict=match
+[975/2591] ok=975 err=0 rate=3.51/s id=302801 verdict=match
+[1000/2591] ok=1000 err=0 rate=3.49/s id=1335896 verdict=match
+[1025/2591] ok=1025 err=0 rate=3.48/s id=639783 verdict=match
+[1050/2591] ok=1050 err=0 rate=3.48/s id=1442816 verdict=match
+[1075/2591] ok=1075 err=0 rate=3.48/s id=446266 verdict=match
+[1100/2591] ok=1100 err=0 rate=3.46/s id=318631 verdict=match
+[1125/2591] ok=1125 err=0 rate=3.44/s id=463561 verdict=match
+[1150/2591] ok=1150 err=0 rate=3.45/s id=814112 verdict=match
+[1175/2591] ok=1175 err=0 rate=3.45/s id=44796 verdict=match
+[1200/2591] ok=1200 err=0 rate=3.45/s id=303468 verdict=match
+[1225/2591] ok=1225 err=0 rate=3.44/s id=543768 verdict=match
+[1250/2591] ok=1250 err=0 rate=3.42/s id=287446 verdict=mismatch
+[1275/2591] ok=1275 err=0 rate=3.42/s id=587786 verdict=match
+[1300/2591] ok=1300 err=0 rate=3.41/s id=111590 verdict=match
+[1325/2591] ok=1325 err=0 rate=3.42/s id=644748 verdict=match
+[1350/2591] ok=1350 err=0 rate=3.43/s id=1336501 verdict=mismatch
+[1375/2591] ok=1375 err=0 rate=3.44/s id=1536556 verdict=uncertain
+[1400/2591] ok=1400 err=0 rate=3.41/s id=763080 verdict=match
+[1425/2591] ok=1425 err=0 rate=3.41/s id=278438 verdict=uncertain
+[1450/2591] ok=1450 err=0 rate=3.42/s id=86278 verdict=match
+[1475/2591] ok=1475 err=0 rate=3.43/s id=1479804 verdict=match
+[1500/2591] ok=1500 err=0 rate=3.44/s id=1464366 verdict=match
+[1525/2591] ok=1525 err=0 rate=3.43/s id=403587 verdict=match
+[1550/2591] ok=1550 err=0 rate=3.43/s id=1650534 verdict=match
+[1575/2591] ok=1575 err=0 rate=3.43/s id=166931 verdict=match
+[1600/2591] ok=1600 err=0 rate=3.42/s id=976121 verdict=match
+[1625/2591] ok=1625 err=0 rate=3.41/s id=465410 verdict=match
+[1650/2591] ok=1650 err=0 rate=3.41/s id=1143330 verdict=match
+[1675/2591] ok=1675 err=0 rate=3.42/s id=696053 verdict=match
+[1700/2591] ok=1700 err=0 rate=3.42/s id=222641 verdict=match
+[1725/2591] ok=1725 err=0 rate=3.42/s id=157421 verdict=match
+[1750/2591] ok=1750 err=0 rate=3.43/s id=1703554 verdict=match
+[1775/2591] ok=1775 err=0 rate=3.43/s id=92380 verdict=mismatch
+[1800/2591] ok=1800 err=0 rate=3.44/s id=1036814 verdict=match
+[1825/2591] ok=1825 err=0 rate=3.44/s id=20216 verdict=match
+[1850/2591] ok=1850 err=0 rate=3.43/s id=1008637 verdict=match
+[1875/2591] ok=1875 err=0 rate=3.44/s id=40474 verdict=match
+[1900/2591] ok=1900 err=0 rate=3.44/s id=1143342 verdict=match
+[1925/2591] ok=1925 err=0 rate=3.44/s id=422514 verdict=match
+[1950/2591] ok=1950 err=0 rate=3.44/s id=1637574 verdict=match
+[1975/2591] ok=1975 err=0 rate=3.44/s id=631933 verdict=match
+[2000/2591] ok=2000 err=0 rate=3.44/s id=634926 verdict=match
+[2025/2591] ok=2025 err=0 rate=3.45/s id=252422 verdict=match
+[2050/2591] ok=2050 err=0 rate=3.45/s id=483291 verdict=match
+[2075/2591] ok=2075 err=0 rate=3.46/s id=1474649 verdict=match
+[2100/2591] ok=2100 err=0 rate=3.44/s id=1124918 verdict=match
+[2125/2591] ok=2125 err=0 rate=3.44/s id=54398 verdict=match
+[2150/2591] ok=2150 err=0 rate=3.44/s id=107781 verdict=match
+[2175/2591] ok=2175 err=0 rate=3.42/s id=225449 verdict=match
+[2200/2591] ok=2200 err=0 rate=3.42/s id=774469 verdict=match
+[2225/2591] ok=2225 err=0 rate=3.41/s id=388579 verdict=match
+[2250/2591] ok=2250 err=0 rate=3.41/s id=859804 verdict=match
+[2275/2591] ok=2275 err=0 rate=3.40/s id=1600609 verdict=match
+[2300/2591] ok=2300 err=0 rate=3.40/s id=10336 verdict=match
+[2325/2591] ok=2325 err=0 rate=3.40/s id=774149 verdict=match
+[2350/2591] ok=2350 err=0 rate=3.39/s id=646385 verdict=match
+[2375/2591] ok=2375 err=0 rate=3.39/s id=592276 verdict=match
+[2400/2591] ok=2400 err=0 rate=3.38/s id=1616194 verdict=match
+[2425/2591] ok=2425 err=0 rate=3.37/s id=1318031 verdict=mismatch
+[2450/2591] ok=2450 err=0 rate=3.34/s id=851509 verdict=match
+[2475/2591] ok=2475 err=0 rate=3.33/s id=38330 verdict=match
+[2500/2591] ok=2500 err=0 rate=3.31/s id=1502234 verdict=match
+[2525/2591] ok=2525 err=0 rate=3.31/s id=230564 verdict=match
+[2550/2591] ok=2550 err=0 rate=3.30/s id=400150 verdict=match
+[2575/2591] ok=2575 err=0 rate=3.26/s id=216183 verdict=match
+[2591/2591] ok=2591 err=0 rate=3.24/s id=881828 verdict=match
+LISTO n_ok=8275 err=0 verdicts={'match': 7456, 'mismatch': 547, 'uncertain': 272} elapsed=13.4m → /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/poster_title_match_drift_review.csv
+DRIFT_BG_END exit=0 Mon Aug  3 17:52:00 -05 2026

@@ -1,0 +1,50 @@
+{
+  "title_text": "BLOODWOOD CANNIBALS",
+  "credits_text": "BEING LOST IS THE LEAST OF YOUR PROBLEMS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "survival",
+    "forest",
+    "cannibal",
+    "terror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    },
+    {
+      "name": "cannibal",
+      "conf": 0.8
+    },
+    {
+      "name": "text",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.3,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intended for mature audiences.",
+  "description": "A man covered in blood stands in a forest holding a weapon, with a severed head nearby. The poster advertises a horror film titled 'Bloodwood Cannibals.'"
+}

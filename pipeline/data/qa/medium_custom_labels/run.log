@@ -1,0 +1,106 @@
+START 2026-08-04T01:30:51Z
+gold usable: 421 {'photo': 111, 'painted': 188, 'composite': 122}
+/Users/juanpabloduque/miniforge3/lib/python3.10/site-packages/sklearn/linear_model/_logistic.py:1247: FutureWarning: 'multi_class' was deprecated in version 1.5 and will be removed in 1.7. From then on, it will always use 'multinomial'. Leave it to its default value to avoid this warning.
+  warnings.warn(
+LogReg macro-F1 test=0.5135
+upload images → s3://sagemaker-studio-a5572760/wflike-custom-labels/medium/images/ (421)
+  uploaded 50/421
+  uploaded 100/421
+  uploaded 150/421
+  uploaded 200/421
+  uploaded 250/421
+  uploaded 300/421
+  uploaded 350/421
+  uploaded 400/421
+uploaded=421 miss=0
+create/find project wflike-medium-clf
+project=arn:aws:rekognition:us-east-1:567596065542:project/wflike-medium-clf/1785807168455
+datasets train=arn:aws:rekognition:us-east-1:567596065542:project/wflike-medium-clf/dataset/train/1785807168558 test=arn:aws:rekognition:us-east-1:567596065542:project/wflike-medium-clf/dataset/test/1785807168858
+  dataset TRAIN status=CREATE_IN_PROGRESS
+  dataset TRAIN status=CREATE_COMPLETE
+  dataset TEST status=CREATE_COMPLETE
+start training version=v202608040132
+TRAINING started → arn:aws:rekognition:us-east-1:567596065542:project/wflike-medium-clf/version/v202608040132/1785807179332
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+POLL_WAIT_START 2026-08-04T01:34:53Z pid=15476
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+status=TRAINING_IN_PROGRESS msg=The model is being trained.
+Traceback (most recent call last):
+  File "/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/aws_custom_labels_medium.py", line 439, in <module>
+    raise SystemExit(main())
+  File "/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/aws_custom_labels_medium.py", line 423, in main
+    poll(args)
+  File "/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/aws_custom_labels_medium.py", line 357, in poll
+    desc = client.describe_project_versions(
+  File "/Users/juanpabloduque/miniforge3/lib/python3.10/site-packages/botocore/client.py", line 606, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/juanpabloduque/miniforge3/lib/python3.10/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/juanpabloduque/miniforge3/lib/python3.10/site-packages/botocore/client.py", line 1094, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the DescribeProjectVersions operation: The security token included in the request is expired
+EXIT  2026-08-04T02:00:12Z
+Traceback (most recent call last):
+  File "/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/aws_custom_labels_medium.py", line 439, in <module>
+    raise SystemExit(main())
+  File "/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/aws_custom_labels_medium.py", line 434, in main
+    poll(args)
+  File "/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/aws_custom_labels_medium.py", line 357, in poll
+    desc = client.describe_project_versions(
+  File "/Users/juanpabloduque/miniforge3/lib/python3.10/site-packages/botocore/client.py", line 606, in _api_call
+    return self._make_api_call(operation_name, kwargs)
+  File "/Users/juanpabloduque/miniforge3/lib/python3.10/site-packages/botocore/context.py", line 123, in wrapper
+    return func(*args, **kwargs)
+  File "/Users/juanpabloduque/miniforge3/lib/python3.10/site-packages/botocore/client.py", line 1094, in _make_api_call
+    raise error_class(parsed_response, operation_name)
+botocore.exceptions.ClientError: An error occurred (ExpiredTokenException) when calling the DescribeProjectVersions operation: The security token included in the request is expired
+MANUAL_DESCRIBE_SKIPPED 2026-08-04T02:05:49Z reason=ExpiredTokenException sandbox profile; prior status=TRAINING_IN_PROGRESS version=v202608040132; no CreateProjectVersion attempted

@@ -1,0 +1,41 @@
+{
+  "title_text": "LIWANAG sa DILIM",
+  "credits_text": "Directed by RICHARD V. SOMES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DANTE SIVERIO, ERNESTO WILAC, SONSHINE CHICO, LEONARDO ALONZO, MARIE JOSE, JAKE VANGAS, DEA DINENE",
+  "mood": [
+    "mysterious",
+    "haunting",
+    "forest",
+    "supernatural",
+    "emotional"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A group of four people stand in a dense forest, with a shadowy figure in the background, suggesting a supernatural or horror theme."
+}

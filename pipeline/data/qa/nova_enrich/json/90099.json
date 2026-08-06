@@ -1,0 +1,45 @@
+{
+  "title_text": "COKE-MET ZOMBIE CHEF FROM HELL",
+  "credits_text": "DINING OUT CAN BE A PERMANENT EXPERIENCE!! HE HAS GOOD REASON TO KEEP HIS SAUCES SECRET!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "100 VIOLENT RATE",
+  "mood": [
+    "horror",
+    "camp",
+    "grotesque",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "zombie",
+      "conf": 0.8
+    },
+    {
+      "name": "knife",
+      "conf": 0.95
+    },
+    {
+      "name": "gore",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 1.0,
+  "violence": 1.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore.",
+  "description": "A horror movie poster featuring a severed hand holding a cleaver, surrounded by blood, apples, and a tagline about a zombie chef."
+}

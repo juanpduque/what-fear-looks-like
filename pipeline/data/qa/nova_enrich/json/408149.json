@@ -1,0 +1,46 @@
+{
+  "title_text": "ISLE OF THE DEAD",
+  "credits_text": "THEY'RE MORE THAN DEAD!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "horror",
+    "survival",
+    "apocalyptic",
+    "tense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of a monstrous hand and implied violence.",
+  "description": "A large, decaying hand emerges from water with chains, set against a stormy sea and jungle backdrop, with dramatic text overlay."
+}

@@ -1,0 +1,38 @@
+{
+  "title_text": "serum",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "suspense",
+    "medical",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "medical",
+      "conf": 0.9
+    },
+    {
+      "name": "syringe",
+      "conf": 0.8
+    },
+    {
+      "name": "glove",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A gloved hand holds a syringe labeled 'serum' against a plain background, suggesting a medical or thriller theme."
+}

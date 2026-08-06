@@ -1,0 +1,39 @@
+{
+  "title_text": "ASEDIO",
+  "credits_text": "CARLA PANDOLFI, CARLOS KASSAR, LUIGI GRASSO, GERMAN RODRIGUEZ, SABRINA MÁCCHI",
+  "languages": [
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery",
+    "thriller",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "mask",
+      "conf": 0.85
+    },
+    {
+      "name": "dark",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.2,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a person in dark clothing and a plague doctor mask holding a rat, with a dark, ominous background."
+}

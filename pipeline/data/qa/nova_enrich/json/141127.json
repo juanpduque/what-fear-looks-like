@@ -1,0 +1,42 @@
+{
+  "title_text": "DOCTOR DRACULA",
+  "credits_text": "JOHN CARRADINE • DONALD BARRETT • LARRY HANKIN GEOFFREY LAND • SUSAN MYERS • REGINA CARROLL ADOLPH CEJKA • ALAN J. MARTEE • ROBERT IVANOVICH • JOHNNY RICE Produced by BERNARD COHEN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "He leads the way to the Torment of the UNDEAD",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A vintage horror movie poster featuring dramatic faces and the title \"Doctor Dracula\" with cast and production credits listed below."
+}

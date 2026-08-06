@@ -1,0 +1,446 @@
+=== ocr_qwen_hard_crop_chain start Fri Jul 31 02:11:05 UTC 2026 ===
+using python from /opt/pytorch/bin
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+mlflow 3.14.0 requires pandas<3, but you have pandas 3.0.5 which is incompatible.
+sagemaker-core 2.17.0 requires protobuf<7.0.0,>=3.12, but you have protobuf 7.35.1 which is incompatible.
+numba 0.66.0 requires numpy<2.5,>=1.22, but you have numpy 2.5.1 which is incompatible.
+databricks-sdk 0.122.0 requires protobuf!=5.26.*,!=5.27.*,!=5.28.*,!=5.29.0,!=5.29.1,!=5.29.2,!=5.29.3,!=5.29.4,!=6.30.0,!=6.30.1,!=6.31.0,<7.0,>=4.25.8, but you have protobuf 7.35.1 which is incompatible.
+--- install paddleocr (det) ---
+ERROR: pip's dependency resolver does not currently take into account all the packages that are installed. This behaviour is the source of the following dependency conflicts.
+mlflow 3.14.0 requires pandas<3, but you have pandas 3.0.5 which is incompatible.
+sagemaker-core 2.17.0 requires protobuf<7.0.0,>=3.12, but you have protobuf 7.35.1 which is incompatible.
+paddleocr pip exit=0
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+torch 2.13.0+cu130 cuda True
+gpu Tesla T4 vram_gb 15.6
+Completed 84 Bytes/84 Bytes (1.2 KiB/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/sample_ids.txt to data/qa/ocr_qwen_hard_crop/sample_ids.txt
+Completed 2.5 KiB/2.5 KiB (36.3 KiB/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/posters.csv to data/posters.csv
+Completed 49.3 KiB/2.2 MiB (148.9 KiB/s) with 12 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/posters/1483743.jpg to data/posters_hard/1483743.jpg
+Completed 49.3 KiB/2.2 MiB (148.9 KiB/s) with 11 file(s) remainingCompleted 70.3 KiB/2.2 MiB (206.0 KiB/s) with 11 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/posters/1578643.jpg to data/posters_hard/1578643.jpg
+Completed 70.3 KiB/2.2 MiB (206.0 KiB/s) with 10 file(s) remainingCompleted 119.9 KiB/2.2 MiB (349.5 KiB/s) with 10 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/posters/233194.jpg to data/posters_hard/233194.jpg
+Completed 119.9 KiB/2.2 MiB (349.5 KiB/s) with 9 file(s) remainingCompleted 204.4 KiB/2.2 MiB (584.7 KiB/s) with 9 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/posters/10283.jpg to data/posters_hard/10283.jpg
+Completed 204.4 KiB/2.2 MiB (584.7 KiB/s) with 8 file(s) remainingCompleted 216.8 KiB/2.2 MiB (600.9 KiB/s) with 8 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/posters/1405670.jpg to data/posters_hard/1405670.jpg
+Completed 216.8 KiB/2.2 MiB (600.9 KiB/s) with 7 file(s) remainingCompleted 472.8 KiB/2.2 MiB (1.2 MiB/s) with 7 file(s) remaining  Completed 586.4 KiB/2.2 MiB (1.5 MiB/s) with 7 file(s) remaining  download: s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/posters/1015482.jpg to data/posters_hard/1015482.jpg
+Completed 586.4 KiB/2.2 MiB (1.5 MiB/s) with 6 file(s) remainingCompleted 842.4 KiB/2.2 MiB (2.1 MiB/s) with 6 file(s) remainingCompleted 1.1 MiB/2.2 MiB (2.7 MiB/s) with 6 file(s) remaining  Completed 1.2 MiB/2.2 MiB (3.0 MiB/s) with 6 file(s) remaining  download: s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/posters/26921.jpg to data/posters_hard/26921.jpg
+Completed 1.2 MiB/2.2 MiB (3.0 MiB/s) with 5 file(s) remainingCompleted 1.3 MiB/2.2 MiB (3.4 MiB/s) with 5 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/posters/286452.jpg to data/posters_hard/286452.jpg
+Completed 1.3 MiB/2.2 MiB (3.4 MiB/s) with 4 file(s) remainingCompleted 1.4 MiB/2.2 MiB (3.4 MiB/s) with 4 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/posters/940187.jpg to data/posters_hard/940187.jpg
+Completed 1.4 MiB/2.2 MiB (3.4 MiB/s) with 3 file(s) remainingCompleted 1.6 MiB/2.2 MiB (4.0 MiB/s) with 3 file(s) remainingCompleted 1.7 MiB/2.2 MiB (4.2 MiB/s) with 3 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/posters/653537.jpg to data/posters_hard/653537.jpg
+Completed 1.7 MiB/2.2 MiB (4.2 MiB/s) with 2 file(s) remainingCompleted 2.0 MiB/2.2 MiB (4.7 MiB/s) with 2 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/posters/28265.jpg to data/posters_hard/28265.jpg
+Completed 2.0 MiB/2.2 MiB (4.7 MiB/s) with 1 file(s) remainingCompleted 2.2 MiB/2.2 MiB (4.8 MiB/s) with 1 file(s) remainingCompleted 2.2 MiB/2.2 MiB (4.8 MiB/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/posters/77399.jpg to data/posters_hard/77399.jpg
+Completed 393 Bytes/393 Bytes (5.5 KiB/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/sample_meta.csv to data/qa/ocr_qwen_hard_crop/sample_meta.csv
+Completed 442 Bytes/442 Bytes (6.0 KiB/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/poster_sources.csv to data/qa/ocr_qwen_hard_crop/poster_sources.csv
+local hard posters: 12
+--- verify S3 write ---
+Completed 29 Bytes/29 Bytes (436 Bytes/s) with 1 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/OCR_PILOT_S3_PROBE to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/OCR_PILOT_S3_PROBE
+S3 write OK (SYNC_SECS=120)
+Completed 11 Bytes/11 Bytes (169 Bytes/s) with 1 file(s) remainingdownload: s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/MODELS to ../../../../tmp/ocr_qwen_hard_crop_MODELS
+MODELS from S3: qwen,qwen7
+MODELS=qwen,qwen7 N=12
+periodic sync pid=1830 every 120s
+--- text det → crop Fri Jul 31 02:13:37 UTC 2026 ---
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+/opt/pytorch/lib/python3.13/site-packages/paddle/utils/cpp_extension/extension_utils.py:712: UserWarning: No ccache found. Please be aware that recompiling all source files may be required. You can download and install ccache from: https://github.com/ccache/ccache/blob/master/doc/INSTALL.md
+  warnings.warn(warning_message)
+[33mConnectivity check to the model hoster has been skipped because `PADDLE_PDX_DISABLE_MODEL_SOURCE_CHECK` is enabled.[0m
+[32mUsing official model (PP-OCRv6_medium_det), the model files will be automatically downloaded and saved in `/home/ubuntu/.paddlex/official_models/PP-OCRv6_medium_det`.[0m
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files:  80%|████████  | 4/5 [00:00<00:00, 30.03it/s]Fetching 5 files: 100%|██████████| 5/5 [00:01<00:00,  4.82it/s]
+  paddle: TextDetection() OK
+  id=10283 FAIL error: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at /paddle/paddle/fluid/framework/new_executor/instruction/onednn/onednn_instruction.cc:116)
+
+Traceback (most recent call last):
+  File "/home/ubuntu/aof/pipeline/crop_posters_text_det.py", line 348, in main
+    boxes = _detect_paddle(detector, mode, src)
+  File "/home/ubuntu/aof/pipeline/crop_posters_text_det.py", line 137, in _detect_paddle
+    result = eng.predict(path)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddleocr/_models/base.py", line 57, in predict
+    result = list(self.predict_iter(*args, **kwargs))
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/predictors/base_predictor.py", line 117, in __call__
+    yield from self.apply(input, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/predictors/base_predictor.py", line 140, in apply
+    pred = self.process(batch_data, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/text_detection/predictor.py", line 145, in process
+    batch_preds = self.runner(x=x)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/runners/paddle_static/runner.py", line 297, in __call__
+    pred = self.infer(x)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/runners/paddle_static/runner.py", line 265, in __call__
+    self.predictor.run()
+    ~~~~~~~~~~~~~~~~~~^^
+NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at /paddle/paddle/fluid/framework/new_executor/instruction/onednn/onednn_instruction.cc:116)
+
+  id=26921 FAIL error: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at /paddle/paddle/fluid/framework/new_executor/instruction/onednn/onednn_instruction.cc:116)
+
+Traceback (most recent call last):
+  File "/home/ubuntu/aof/pipeline/crop_posters_text_det.py", line 348, in main
+    boxes = _detect_paddle(detector, mode, src)
+  File "/home/ubuntu/aof/pipeline/crop_posters_text_det.py", line 137, in _detect_paddle
+    result = eng.predict(path)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddleocr/_models/base.py", line 57, in predict
+    result = list(self.predict_iter(*args, **kwargs))
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/predictors/base_predictor.py", line 117, in __call__
+    yield from self.apply(input, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/predictors/base_predictor.py", line 140, in apply
+    pred = self.process(batch_data, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/text_detection/predictor.py", line 145, in process
+    batch_preds = self.runner(x=x)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/runners/paddle_static/runner.py", line 297, in __call__
+    pred = self.infer(x)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/runners/paddle_static/runner.py", line 265, in __call__
+    self.predictor.run()
+    ~~~~~~~~~~~~~~~~~~^^
+NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at /paddle/paddle/fluid/framework/new_executor/instruction/onednn/onednn_instruction.cc:116)
+
+  id=28265 FAIL error: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at /paddle/paddle/fluid/framework/new_executor/instruction/onednn/onednn_instruction.cc:116)
+
+Traceback (most recent call last):
+  File "/home/ubuntu/aof/pipeline/crop_posters_text_det.py", line 348, in main
+    boxes = _detect_paddle(detector, mode, src)
+  File "/home/ubuntu/aof/pipeline/crop_posters_text_det.py", line 137, in _detect_paddle
+    result = eng.predict(path)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddleocr/_models/base.py", line 57, in predict
+    result = list(self.predict_iter(*args, **kwargs))
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/predictors/base_predictor.py", line 117, in __call__
+    yield from self.apply(input, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/predictors/base_predictor.py", line 140, in apply
+    pred = self.process(batch_data, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/text_detection/predictor.py", line 145, in process
+    batch_preds = self.runner(x=x)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/runners/paddle_static/runner.py", line 297, in __call__
+    pred = self.infer(x)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/runners/paddle_static/runner.py", line 265, in __call__
+    self.predictor.run()
+    ~~~~~~~~~~~~~~~~~~^^
+NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at /paddle/paddle/fluid/framework/new_executor/instruction/onednn/onednn_instruction.cc:116)
+
+  id=77399 FAIL error: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at /paddle/paddle/fluid/framework/new_executor/instruction/onednn/onednn_instruction.cc:116)
+
+Traceback (most recent call last):
+  File "/home/ubuntu/aof/pipeline/crop_posters_text_det.py", line 348, in main
+    boxes = _detect_paddle(detector, mode, src)
+  File "/home/ubuntu/aof/pipeline/crop_posters_text_det.py", line 137, in _detect_paddle
+    result = eng.predict(path)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddleocr/_models/base.py", line 57, in predict
+    result = list(self.predict_iter(*args, **kwargs))
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/predictors/base_predictor.py", line 117, in __call__
+    yield from self.apply(input, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/predictors/base_predictor.py", line 140, in apply
+    pred = self.process(batch_data, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/text_detection/predictor.py", line 145, in process
+    batch_preds = self.runner(x=x)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/runners/paddle_static/runner.py", line 297, in __call__
+    pred = self.infer(x)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/runners/paddle_static/runner.py", line 265, in __call__
+    self.predictor.run()
+    ~~~~~~~~~~~~~~~~~~^^
+NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at /paddle/paddle/fluid/framework/new_executor/instruction/onednn/onednn_instruction.cc:116)
+
+  id=233194 FAIL error: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at /paddle/paddle/fluid/framework/new_executor/instruction/onednn/onednn_instruction.cc:116)
+
+Traceback (most recent call last):
+  File "/home/ubuntu/aof/pipeline/crop_posters_text_det.py", line 348, in main
+    boxes = _detect_paddle(detector, mode, src)
+  File "/home/ubuntu/aof/pipeline/crop_posters_text_det.py", line 137, in _detect_paddle
+    result = eng.predict(path)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddleocr/_models/base.py", line 57, in predict
+    result = list(self.predict_iter(*args, **kwargs))
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/predictors/base_predictor.py", line 117, in __call__
+    yield from self.apply(input, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/predictors/base_predictor.py", line 140, in apply
+    pred = self.process(batch_data, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/text_detection/predictor.py", line 145, in process
+    batch_preds = self.runner(x=x)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/runners/paddle_static/runner.py", line 297, in __call__
+    pred = self.infer(x)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/runners/paddle_static/runner.py", line 265, in __call__
+    self.predictor.run()
+    ~~~~~~~~~~~~~~~~~~^^
+NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at /paddle/paddle/fluid/framework/new_executor/instruction/onednn/onednn_instruction.cc:116)
+
+  id=286452 FAIL error: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at /paddle/paddle/fluid/framework/new_executor/instruction/onednn/onednn_instruction.cc:116)
+
+Traceback (most recent call last):
+  File "/home/ubuntu/aof/pipeline/crop_posters_text_det.py", line 348, in main
+    boxes = _detect_paddle(detector, mode, src)
+  File "/home/ubuntu/aof/pipeline/crop_posters_text_det.py", line 137, in _detect_paddle
+    result = eng.predict(path)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddleocr/_models/base.py", line 57, in predict
+    result = list(self.predict_iter(*args, **kwargs))
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/predictors/base_predictor.py", line 117, in __call__
+    yield from self.apply(input, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/predictors/base_predictor.py", line 140, in apply
+    pred = self.process(batch_data, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/text_detection/predictor.py", line 145, in process
+    batch_preds = self.runner(x=x)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/runners/paddle_static/runner.py", line 297, in __call__
+    pred = self.infer(x)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/runners/paddle_static/runner.py", line 265, in __call__
+    self.predictor.run()
+    ~~~~~~~~~~~~~~~~~~^^
+NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at /paddle/paddle/fluid/framework/new_executor/instruction/onednn/onednn_instruction.cc:116)
+
+  id=653537 FAIL error: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at /paddle/paddle/fluid/framework/new_executor/instruction/onednn/onednn_instruction.cc:116)
+
+Traceback (most recent call last):
+  File "/home/ubuntu/aof/pipeline/crop_posters_text_det.py", line 348, in main
+    boxes = _detect_paddle(detector, mode, src)
+  File "/home/ubuntu/aof/pipeline/crop_posters_text_det.py", line 137, in _detect_paddle
+    result = eng.predict(path)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddleocr/_models/base.py", line 57, in predict
+    result = list(self.predict_iter(*args, **kwargs))
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/predictors/base_predictor.py", line 117, in __call__
+    yield from self.apply(input, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/predictors/base_predictor.py", line 140, in apply
+    pred = self.process(batch_data, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/text_detection/predictor.py", line 145, in process
+    batch_preds = self.runner(x=x)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/runners/paddle_static/runner.py", line 297, in __call__
+    pred = self.infer(x)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/runners/paddle_static/runner.py", line 265, in __call__
+    self.predictor.run()
+    ~~~~~~~~~~~~~~~~~~^^
+NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at /paddle/paddle/fluid/framework/new_executor/instruction/onednn/onednn_instruction.cc:116)
+
+  id=940187 FAIL error: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at /paddle/paddle/fluid/framework/new_executor/instruction/onednn/onednn_instruction.cc:116)
+
+Traceback (most recent call last):
+  File "/home/ubuntu/aof/pipeline/crop_posters_text_det.py", line 348, in main
+    boxes = _detect_paddle(detector, mode, src)
+  File "/home/ubuntu/aof/pipeline/crop_posters_text_det.py", line 137, in _detect_paddle
+    result = eng.predict(path)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddleocr/_models/base.py", line 57, in predict
+    result = list(self.predict_iter(*args, **kwargs))
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/predictors/base_predictor.py", line 117, in __call__
+    yield from self.apply(input, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/predictors/base_predictor.py", line 140, in apply
+    pred = self.process(batch_data, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/text_detection/predictor.py", line 145, in process
+    batch_preds = self.runner(x=x)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/runners/paddle_static/runner.py", line 297, in __call__
+    pred = self.infer(x)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/runners/paddle_static/runner.py", line 265, in __call__
+    self.predictor.run()
+    ~~~~~~~~~~~~~~~~~~^^
+NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at /paddle/paddle/fluid/framework/new_executor/instruction/onednn/onednn_instruction.cc:116)
+
+  id=1015482 FAIL error: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at /paddle/paddle/fluid/framework/new_executor/instruction/onednn/onednn_instruction.cc:116)
+
+Traceback (most recent call last):
+  File "/home/ubuntu/aof/pipeline/crop_posters_text_det.py", line 348, in main
+    boxes = _detect_paddle(detector, mode, src)
+  File "/home/ubuntu/aof/pipeline/crop_posters_text_det.py", line 137, in _detect_paddle
+    result = eng.predict(path)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddleocr/_models/base.py", line 57, in predict
+    result = list(self.predict_iter(*args, **kwargs))
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/predictors/base_predictor.py", line 117, in __call__
+    yield from self.apply(input, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/predictors/base_predictor.py", line 140, in apply
+    pred = self.process(batch_data, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/text_detection/predictor.py", line 145, in process
+    batch_preds = self.runner(x=x)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/runners/paddle_static/runner.py", line 297, in __call__
+    pred = self.infer(x)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/runners/paddle_static/runner.py", line 265, in __call__
+    self.predictor.run()
+    ~~~~~~~~~~~~~~~~~~^^
+NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at /paddle/paddle/fluid/framework/new_executor/instruction/onednn/onednn_instruction.cc:116)
+
+  id=1405670 FAIL error: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at /paddle/paddle/fluid/framework/new_executor/instruction/onednn/onednn_instruction.cc:116)
+
+Traceback (most recent call last):
+  File "/home/ubuntu/aof/pipeline/crop_posters_text_det.py", line 348, in main
+    boxes = _detect_paddle(detector, mode, src)
+  File "/home/ubuntu/aof/pipeline/crop_posters_text_det.py", line 137, in _detect_paddle
+    result = eng.predict(path)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddleocr/_models/base.py", line 57, in predict
+    result = list(self.predict_iter(*args, **kwargs))
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/predictors/base_predictor.py", line 117, in __call__
+    yield from self.apply(input, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/predictors/base_predictor.py", line 140, in apply
+    pred = self.process(batch_data, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/text_detection/predictor.py", line 145, in process
+    batch_preds = self.runner(x=x)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/runners/paddle_static/runner.py", line 297, in __call__
+    pred = self.infer(x)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/runners/paddle_static/runner.py", line 265, in __call__
+    self.predictor.run()
+    ~~~~~~~~~~~~~~~~~~^^
+NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at /paddle/paddle/fluid/framework/new_executor/instruction/onednn/onednn_instruction.cc:116)
+
+  id=1483743 FAIL error: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at /paddle/paddle/fluid/framework/new_executor/instruction/onednn/onednn_instruction.cc:116)
+
+Traceback (most recent call last):
+  File "/home/ubuntu/aof/pipeline/crop_posters_text_det.py", line 348, in main
+    boxes = _detect_paddle(detector, mode, src)
+  File "/home/ubuntu/aof/pipeline/crop_posters_text_det.py", line 137, in _detect_paddle
+    result = eng.predict(path)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddleocr/_models/base.py", line 57, in predict
+    result = list(self.predict_iter(*args, **kwargs))
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/predictors/base_predictor.py", line 117, in __call__
+    yield from self.apply(input, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/predictors/base_predictor.py", line 140, in apply
+    pred = self.process(batch_data, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/text_detection/predictor.py", line 145, in process
+    batch_preds = self.runner(x=x)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/runners/paddle_static/runner.py", line 297, in __call__
+    pred = self.infer(x)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/runners/paddle_static/runner.py", line 265, in __call__
+    self.predictor.run()
+    ~~~~~~~~~~~~~~~~~~^^
+NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at /paddle/paddle/fluid/framework/new_executor/instruction/onednn/onednn_instruction.cc:116)
+
+  id=1578643 FAIL error: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at /paddle/paddle/fluid/framework/new_executor/instruction/onednn/onednn_instruction.cc:116)
+
+Traceback (most recent call last):
+  File "/home/ubuntu/aof/pipeline/crop_posters_text_det.py", line 348, in main
+    boxes = _detect_paddle(detector, mode, src)
+  File "/home/ubuntu/aof/pipeline/crop_posters_text_det.py", line 137, in _detect_paddle
+    result = eng.predict(path)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddleocr/_models/base.py", line 57, in predict
+    result = list(self.predict_iter(*args, **kwargs))
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/predictors/base_predictor.py", line 117, in __call__
+    yield from self.apply(input, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/predictors/base_predictor.py", line 140, in apply
+    pred = self.process(batch_data, **kwargs)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/text_detection/predictor.py", line 145, in process
+    batch_preds = self.runner(x=x)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/runners/paddle_static/runner.py", line 297, in __call__
+    pred = self.infer(x)
+  File "/opt/pytorch/lib/python3.13/site-packages/paddlex/inference/models/runners/paddle_static/runner.py", line 265, in __call__
+    self.predictor.run()
+    ~~~~~~~~~~~~~~~~~~^^
+NotImplementedError: (Unimplemented) ConvertPirAttribute2RuntimeAttribute not support [pir::ArrayAttribute<pir::DoubleAttribute>]  (at /paddle/paddle/fluid/framework/new_executor/instruction/onednn/onednn_instruction.cc:116)
+
+{"backend": "paddle:text_detection", "n_ids": 12, "n_real_crops": 0, "n_full_fallback": 12, "margin": 0.1}
+wrote data/qa/ocr_qwen_hard_crop/bboxes.csv crops→data/qa/ocr_qwen_hard_crop/crops
+crop_posters_text_det exit=0
+crops ready: 12
+{
+  "backend": "paddle:text_detection",
+  "n_ids": 12,
+  "n_real_crops": 0,
+  "n_full_fallback": 12,
+  "margin": 0.1
+}
+Completed 3.4 KiB/2.2 MiB (94.8 KiB/s) with 18 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/bboxes.csv to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/bboxes.csv
+Completed 3.4 KiB/2.2 MiB (94.8 KiB/s) with 17 file(s) remainingCompleted 395.3 KiB/2.2 MiB (8.4 MiB/s) with 17 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/crops/653537.jpg to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/crops/653537.jpg
+Completed 395.3 KiB/2.2 MiB (8.4 MiB/s) with 16 file(s) remainingCompleted 662.0 KiB/2.2 MiB (7.5 MiB/s) with 16 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/crops/77399.jpg to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/crops/77399.jpg
+Completed 662.0 KiB/2.2 MiB (7.5 MiB/s) with 15 file(s) remainingCompleted 688.1 KiB/2.2 MiB (4.9 MiB/s) with 15 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/crops/940187.jpg to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/crops/940187.jpg
+Completed 688.1 KiB/2.2 MiB (4.9 MiB/s) with 14 file(s) remainingCompleted 715.7 KiB/2.2 MiB (4.3 MiB/s) with 14 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/ocr_qwen_hard_crop_aws.log to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/ocr_qwen_hard_crop_aws.log
+Completed 715.7 KiB/2.2 MiB (4.3 MiB/s) with 13 file(s) remainingCompleted 715.8 KiB/2.2 MiB (3.8 MiB/s) with 13 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/det_meta.json to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/det_meta.json
+Completed 715.8 KiB/2.2 MiB (3.8 MiB/s) with 12 file(s) remainingCompleted 716.2 KiB/2.2 MiB (3.3 MiB/s) with 12 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/poster_sources.csv to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/poster_sources.csv
+Completed 716.2 KiB/2.2 MiB (3.3 MiB/s) with 11 file(s) remainingCompleted 716.3 KiB/2.2 MiB (3.0 MiB/s) with 11 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/sample_ids.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/sample_ids.txt
+Completed 716.3 KiB/2.2 MiB (3.0 MiB/s) with 10 file(s) remainingCompleted 716.7 KiB/2.2 MiB (2.5 MiB/s) with 10 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/sample_meta.csv to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/sample_meta.csv
+Completed 716.7 KiB/2.2 MiB (2.5 MiB/s) with 9 file(s) remainingCompleted 1.1 MiB/2.2 MiB (3.6 MiB/s) with 9 file(s) remaining  Completed 1.5 MiB/2.2 MiB (4.7 MiB/s) with 9 file(s) remaining  Completed 1.8 MiB/2.2 MiB (5.8 MiB/s) with 9 file(s) remaining  Completed 1.8 MiB/2.2 MiB (5.6 MiB/s) with 9 file(s) remaining  upload: data/qa/ocr_qwen_hard_crop/crops/1405670.jpg to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/crops/1405670.jpg
+Completed 1.8 MiB/2.2 MiB (5.6 MiB/s) with 8 file(s) remainingCompleted 1.9 MiB/2.2 MiB (5.6 MiB/s) with 8 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/crops/1578643.jpg to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/crops/1578643.jpg
+Completed 1.9 MiB/2.2 MiB (5.6 MiB/s) with 7 file(s) remainingCompleted 1.9 MiB/2.2 MiB (5.9 MiB/s) with 7 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/crops/10283.jpg to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/crops/10283.jpg
+Completed 1.9 MiB/2.2 MiB (5.9 MiB/s) with 6 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/crops/286452.jpg to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/crops/286452.jpg
+Completed 1.9 MiB/2.2 MiB (5.9 MiB/s) with 5 file(s) remainingCompleted 2.0 MiB/2.2 MiB (5.9 MiB/s) with 5 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/crops/1483743.jpg to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/crops/1483743.jpg
+Completed 2.0 MiB/2.2 MiB (5.9 MiB/s) with 4 file(s) remainingCompleted 2.0 MiB/2.2 MiB (6.0 MiB/s) with 4 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/crops/233194.jpg to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/crops/233194.jpg
+Completed 2.0 MiB/2.2 MiB (6.0 MiB/s) with 3 file(s) remainingCompleted 2.2 MiB/2.2 MiB (6.3 MiB/s) with 3 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/crops/28265.jpg to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/crops/28265.jpg
+Completed 2.2 MiB/2.2 MiB (6.3 MiB/s) with 2 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/crops/26921.jpg to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/crops/26921.jpg
+Completed 2.2 MiB/2.2 MiB (6.3 MiB/s) with 1 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/crops/1015482.jpg to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/crops/1015482.jpg
+[checkpoint] synced after det/crop
+--- disk before qwen ---
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root       193G   18G  176G   9% /
+/dev/root       193G   18G  176G   9% /
+--- run model=qwen result=qwen2b-crop on crops Fri Jul 31 02:14:21 UTC 2026 ---
+sample n=12 → data/qa/ocr_qwen_hard_crop/sample_ids.txt
+posters_dir=data/qa/ocr_qwen_hard_crop/crops
+result_model alias: qwen → qwen2b-crop
+     id                                            title  year
+  10283 Friday the 13th Part VIII: Jason Takes Manhattan  1989
+  26921                  The Mystery of the Mary Celeste  1935
+  28265                              Lovesick: Sick Love  2004
+  77399                           Incense for the Damned  1971
+ 233194                                    8 Butterflies  2010
+ 286452                                    Varsity Blood  2014
+ 653537                                         Whispers  2019
+ 940187                                   THE INQUISTION  2019
+1015482                              Kiss of the Serpent  1988
+1405670                                          xOxExFx  2024
+1483743                               up here, disappear  2025
+1578643                                        Cymophane  2024
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+device=cuda
+
+=== model=qwen result_model=qwen2b-crop device=cuda n=12 posters=data/qa/ocr_qwen_hard_crop/crops ===
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 2 files:   0%|          | 0/2 [00:00<?, ?it/s]Fetching 2 files:  50%|█████     | 1/2 [00:08<00:08,  8.15s/it]Fetching 2 files: 100%|██████████| 2/2 [00:36<00:00, 20.21s/it]Fetching 2 files: 100%|██████████| 2/2 [00:36<00:00, 18.40s/it]
+Loading weights:   0%|          | 0/729 [00:00<?, ?it/s]Loading weights:   5%|▌         | 39/729 [00:00<00:01, 370.90it/s]Loading weights:  13%|█▎        | 92/729 [00:00<00:01, 457.93it/s]Loading weights:  20%|██        | 149/729 [00:00<00:01, 500.52it/s]Loading weights:  29%|██▊       | 208/729 [00:00<00:00, 531.81it/s]Loading weights:  37%|███▋      | 267/729 [00:00<00:00, 536.85it/s]Loading weights:  45%|████▍     | 327/729 [00:00<00:00, 542.38it/s]Loading weights:  61%|██████▏   | 448/729 [00:00<00:00, 751.56it/s]Loading weights:  77%|███████▋  | 563/729 [00:00<00:00, 874.84it/s]Loading weights:  94%|█████████▎| 682/729 [00:00<00:00, 966.81it/s]Loading weights: 100%|██████████| 729/729 [00:00<00:00, 745.31it/s]
+  qwen loaded: Qwen/Qwen2-VL-2B-Instruct mode=bf16
+  id=10283 status=ok chars=37 overlap=0.75 10.176s
+  id=26921 status=ok chars=31 overlap=1.0 14.088s
+[periodic-sync 02:15:37] → s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/
+Completed 35.2 KiB/36.0 KiB (212.1 KiB/s) with 6 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/ocr_qwen_hard_crop_aws.log to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/ocr_qwen_hard_crop_aws.log
+Completed 35.2 KiB/36.0 KiB (212.1 KiB/s) with 5 file(s) remainingCompleted 35.2 KiB/36.0 KiB (172.6 KiB/s) with 5 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/sample_ids.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/sample_ids.txt
+Completed 35.2 KiB/36.0 KiB (172.6 KiB/s) with 4 file(s) remainingCompleted 35.3 KiB/36.0 KiB (168.9 KiB/s) with 4 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen2b-crop/26921.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen2b-crop/26921.txt
+Completed 35.3 KiB/36.0 KiB (168.9 KiB/s) with 3 file(s) remainingCompleted 35.3 KiB/36.0 KiB (168.5 KiB/s) with 3 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen2b-crop/10283.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen2b-crop/10283.txt
+Completed 35.3 KiB/36.0 KiB (168.5 KiB/s) with 2 file(s) remainingCompleted 35.6 KiB/36.0 KiB (163.7 KiB/s) with 2 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/results.csv to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/results.csv
+Completed 35.6 KiB/36.0 KiB (163.7 KiB/s) with 1 file(s) remainingCompleted 36.0 KiB/36.0 KiB (165.0 KiB/s) with 1 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/sample_meta.csv to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/sample_meta.csv
+  id=28265 status=ok chars=19 overlap=0.6667 14.03s
+  id=77399 status=ok chars=13 overlap=0.0 13.848s
+  id=233194 status=ok chars=12 overlap=0.0 1.035s
+  id=286452 status=ok chars=12 overlap=0.5 13.876s
+  id=653537 status=ok chars=6 overlap=0.0 13.838s
+  id=940187 status=ok chars=11 overlap=0.0 0.997s
+  id=1015482 status=ok chars=22 overlap=0.0 14.166s
+  id=1405670 status=ok chars=22 overlap=0.0 1.071s
+  id=1483743 status=ok chars=3071 overlap=0.6667 41.802s
+  id=1578643 status=ok chars=24 overlap=0.0 1.195s
+
+LISTO → data/qa/ocr_qwen_hard_crop/results.csv (12 rows)
+model=qwen result=qwen2b-crop exit=0
+Completed 37.2 KiB/44.7 KiB (513.3 KiB/s) with 12 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/ocr_qwen_hard_crop_aws.log to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/ocr_qwen_hard_crop_aws.log
+Completed 37.2 KiB/44.7 KiB (513.3 KiB/s) with 11 file(s) remainingCompleted 37.2 KiB/44.7 KiB (388.7 KiB/s) with 11 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen2b-crop/940187.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen2b-crop/940187.txt
+Completed 37.2 KiB/44.7 KiB (388.7 KiB/s) with 10 file(s) remainingCompleted 41.6 KiB/44.7 KiB (338.2 KiB/s) with 10 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/results.csv to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/results.csv
+Completed 41.6 KiB/44.7 KiB (338.2 KiB/s) with 9 file(s) remainingCompleted 41.6 KiB/44.7 KiB (139.3 KiB/s) with 9 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen2b-crop/1405670.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen2b-crop/1405670.txt
+Completed 41.6 KiB/44.7 KiB (139.3 KiB/s) with 8 file(s) remainingCompleted 41.6 KiB/44.7 KiB (137.5 KiB/s) with 8 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen2b-crop/1578643.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen2b-crop/1578643.txt
+Completed 41.6 KiB/44.7 KiB (137.5 KiB/s) with 7 file(s) remainingCompleted 41.7 KiB/44.7 KiB (137.4 KiB/s) with 7 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen2b-crop/1015482.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen2b-crop/1015482.txt
+Completed 41.7 KiB/44.7 KiB (137.4 KiB/s) with 6 file(s) remainingCompleted 41.7 KiB/44.7 KiB (137.2 KiB/s) with 6 file(s) remainingCompleted 41.7 KiB/44.7 KiB (137.0 KiB/s) with 6 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen2b-crop/77399.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen2b-crop/77399.txt
+Completed 41.7 KiB/44.7 KiB (137.0 KiB/s) with 5 file(s) remainingCompleted 41.7 KiB/44.7 KiB (136.8 KiB/s) with 5 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen2b-crop/233194.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen2b-crop/233194.txt
+Completed 41.7 KiB/44.7 KiB (136.8 KiB/s) with 4 file(s) remainingCompleted 41.7 KiB/44.7 KiB (136.6 KiB/s) with 4 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen2b-crop/653537.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen2b-crop/653537.txt
+Completed 41.7 KiB/44.7 KiB (136.6 KiB/s) with 3 file(s) remainingCompleted 41.7 KiB/44.7 KiB (134.4 KiB/s) with 3 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen2b-crop/286452.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen2b-crop/286452.txt
+Completed 41.7 KiB/44.7 KiB (134.4 KiB/s) with 2 file(s) remainingCompleted 44.7 KiB/44.7 KiB (143.8 KiB/s) with 2 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen2b-crop/1483743.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen2b-crop/1483743.txt
+Completed 44.7 KiB/44.7 KiB (143.8 KiB/s) with 1 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/qwen2b-crop/28265.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/qwen2b-crop/28265.txt
+[checkpoint] synced after qwen / qwen2b-crop
+--- clearing HF cache under /home/ubuntu/.cache/huggingface ---
+4.2G	/home/ubuntu/.cache/huggingface/hub
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root       193G   18G  176G   9% /
+/dev/root       193G   18G  176G   9% /
+--- disk before qwen7 ---
+Filesystem      Size  Used Avail Use% Mounted on
+/dev/root       193G   18G  176G   9% /
+/dev/root       193G   18G  176G   9% /
+--- run model=qwen7 result=qwen7b-crop on crops Fri Jul 31 02:17:33 UTC 2026 ---
+sample n=12 → data/qa/ocr_qwen_hard_crop/sample_ids.txt
+posters_dir=data/qa/ocr_qwen_hard_crop/crops
+result_model alias: qwen7 → qwen7b-crop
+     id                                            title  year
+  10283 Friday the 13th Part VIII: Jason Takes Manhattan  1989
+  26921                  The Mystery of the Mary Celeste  1935
+  28265                              Lovesick: Sick Love  2004
+  77399                           Incense for the Damned  1971
+ 233194                                    8 Butterflies  2010
+ 286452                                    Varsity Blood  2014
+ 653537                                         Whispers  2019
+ 940187                                   THE INQUISTION  2019
+1015482                              Kiss of the Serpent  1988
+1405670                                          xOxExFx  2024
+1483743                               up here, disappear  2025
+1578643                                        Cymophane  2024
+/opt/pytorch/lib/python3.13/site-packages/torch/cuda/__init__.py:64: FutureWarning: The pynvml package is deprecated. Please install nvidia-ml-py instead. If you did not install pynvml directly, please report this to the maintainers of the package that installed pynvml for you.
+  import pynvml  # type: ignore[import]
+device=cuda
+append-results: kept 12 rows for models outside ['qwen7b-crop']
+
+=== model=qwen7 result_model=qwen7b-crop device=cuda n=12 posters=data/qa/ocr_qwen_hard_crop/crops ===
+[periodic-sync 02:17:37] → s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/
+Completed 42.4 KiB/42.8 KiB (941.7 KiB/s) with 3 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/ocr_qwen_hard_crop_aws.log to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/ocr_qwen_hard_crop_aws.log
+Completed 42.4 KiB/42.8 KiB (941.7 KiB/s) with 2 file(s) remainingCompleted 42.5 KiB/42.8 KiB (375.5 KiB/s) with 2 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/sample_ids.txt to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/sample_ids.txt
+Completed 42.5 KiB/42.8 KiB (375.5 KiB/s) with 1 file(s) remainingCompleted 42.8 KiB/42.8 KiB (360.1 KiB/s) with 1 file(s) remainingupload: data/qa/ocr_qwen_hard_crop/sample_meta.csv to s3://aof-owlv2-102516364259/ocr_qwen_hard_crop/results/sample_meta.csv
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Fetching 5 files:   0%|          | 0/5 [00:00<?, ?it/s]Fetching 5 files:  20%|██        | 1/5 [00:22<01:29, 22.41s/it]

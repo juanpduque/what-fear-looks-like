@@ -1,0 +1,40 @@
+{
+  "title_text": "HORROR HIGH",
+  "credits_text": "MISS THE BELL GO STRAIGHT TO HELL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "terrifying"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and a monstrous creature, indicating potential for intense horror themes.",
+  "description": "A poster features a grotesque monster with sharp teeth and red eyes in a dilapidated room, with the title 'Horror High' and tagline 'Miss the Bell Go Straight to Hell.'"
+}

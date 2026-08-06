@@ -1,0 +1,46 @@
+{
+  "title_text": "BADASS BUMPY",
+  "credits_text": "PRODUCED BY DAVID BLACK DIRECTED BY GERARDO CHIERCHIA STARRING ANASTASIA C. KOULOUKAS AND DAVID BLACK",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"No Rhyme No Reason No Chance\"",
+  "mood": [
+    "horror",
+    "gritty",
+    "violent",
+    "surreal",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "The poster features a monstrous, grotesque face with sharp teeth and claws, set against a dark, urban backdrop with bold yellow text reading \"BADASS BUMPY\"."
+}

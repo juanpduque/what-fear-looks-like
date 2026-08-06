@@ -1,0 +1,39 @@
+{
+  "title_text": "IT'S IN THE BLOOD",
+  "credits_text": "LANCE HENRIKSEN SEAN ELLIOT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOU CAN'T ESCAPE THE WILDERNESS WITHIN.",
+  "mood": [
+    "tense",
+    "gothic",
+    "survival",
+    "thriller",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man in a hat holds a shotgun in a dark, eerie forest setting, with a tagline about escaping inner wilderness."
+}

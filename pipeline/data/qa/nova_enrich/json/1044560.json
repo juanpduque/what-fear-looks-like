@@ -1,0 +1,37 @@
+{
+  "title_text": "BIGFOOT KILLS",
+  "credits_text": "A TRUE CRIME DOCUMENTARY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "suspense",
+    "mystery",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and graphic imagery.",
+  "description": "A dark poster features a shadowy figure with red streaks resembling blood against a black background, titled 'BIGFOOT KILLS: A TRUE CRIME DOCUMENTARY.'"
+}

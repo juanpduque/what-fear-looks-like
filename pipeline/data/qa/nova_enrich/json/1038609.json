@@ -1,0 +1,40 @@
+{
+  "title_text": "THE BEST HALLOWEEN EVER!",
+  "credits_text": "SUNDANCE ENTERTAINMENT \"GRIMMY\" DAVE PRODUCTIONS with COLLEEN THOMAS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AWARDS: \"BEST HORROR\" HOUSTON FILM CRITICS SOCIETY 2014",
+  "mood": [
+    "dread",
+    "camp",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and violent imagery.",
+  "description": "A poster features a menacing yellow mask with horns and blood splatters against a dark background, promoting a horror film."
+}

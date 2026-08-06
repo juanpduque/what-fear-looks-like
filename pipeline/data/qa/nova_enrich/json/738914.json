@@ -1,0 +1,43 @@
+{
+  "title_text": "PSYCHOVISION",
+  "credits_text": "never before have you seen an eye get revenge!! a film by AL PASSERI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CINEMAGIC presents EYE CLINIC",
+  "mood": [
+    "surreal",
+    "psychological",
+    "horror",
+    "disturbing",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "eye",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring a close-up of an eye with a face inside the pupil, surrounded by electric effects, and text promoting the film 'Psychovision.'"
+}

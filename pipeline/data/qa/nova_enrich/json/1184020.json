@@ -1,0 +1,41 @@
+{
+  "title_text": "DRY",
+  "credits_text": "A JOSH BAKER FILM\nCHEVY KNIGHT\nNICK SAMSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ADDICTION IS A BEAST",
+  "mood": [
+    "gritty",
+    "despairing",
+    "raw",
+    "intense",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "addiction",
+      "conf": 0.9
+    },
+    {
+      "name": "despair",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "self-harm"
+  ],
+  "moderation_notes": "The poster implies themes of addiction and self-harm through its visual and textual elements.",
+  "description": "A poster shows a disheveled person lying on the floor with the bold title 'DRY' and the tagline 'ADDICTION IS A BEAST.' The setting appears bleak and somber."
+}

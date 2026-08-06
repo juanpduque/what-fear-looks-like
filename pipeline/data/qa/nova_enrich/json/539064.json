@@ -1,0 +1,50 @@
+{
+  "title_text": "ZOMBIE WORLD",
+  "credits_text": "THE DEAD HAVE RISEN. AGAIN.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "apocalyptic",
+    "dread",
+    "survival",
+    "horror",
+    "despair"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "crowd",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.85
+    },
+    {
+      "name": "decay",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and gore through imagery of zombies and a post-apocalyptic setting.",
+  "description": "A lone figure stands atop rubble overlooking a horde of zombies in a ruined cityscape under a stormy sky."
+}

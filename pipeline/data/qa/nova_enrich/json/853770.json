@@ -1,0 +1,42 @@
+{
+  "title_text": "ISOLATION",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dystopian",
+    "apocalyptic",
+    "tense",
+    "isolated",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "cityscape",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "blood",
+    "violence"
+  ],
+  "moderation_notes": "Contains stylized blood imagery and a tense, isolated atmosphere.",
+  "description": "A lone figure stands atop a hill overlooking a city with a large pile of red, blood-like shapes in the foreground under a stormy sky."
+}

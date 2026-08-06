@@ -1,0 +1,46 @@
+{
+  "title_text": "RIP. / VIOLENT INSTINCT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "INDIE HORROR DOUBLE FEATURE",
+  "mood": [
+    "dread",
+    "gritty",
+    "violent",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; suitable for mature audiences.",
+  "description": "A double feature horror poster featuring intense imagery of violence, blood, and disturbing faces, promoting two indie horror films."
+}

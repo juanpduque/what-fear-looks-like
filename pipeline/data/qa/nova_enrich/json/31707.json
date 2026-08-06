@@ -1,0 +1,44 @@
+{
+  "title_text": "DAWN OF THE LIVING DEAD",
+  "credits_text": "DAVID HEAVENER TODD BRIDGES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"Equal parts terror and humor make for a lot of fun\" - Knight Rider Newspapers \"The first 'Living Dead' film for the entire family: zombie parents, zombie kids and even a zombie baby!\" - Premiere",
+  "mood": [
+    "horror",
+    "camp",
+    "family-friendly"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and some blood, suitable for general audiences with parental guidance.",
+  "description": "Poster features a zombie woman with others in a post-apocalyptic setting, promoting a family-friendly horror film."
+}

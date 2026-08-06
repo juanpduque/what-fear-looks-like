@@ -1,0 +1,49 @@
+{
+  "title_text": "RABIDS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CAMP RASENHE",
+  "mood": [
+    "horror",
+    "dread",
+    "chaotic",
+    "surreal",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.2,
+  "animal": 0.9,
+  "blood_gore": 0.1,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense horror imagery with monstrous creatures and implied violence.",
+  "description": "A poster depicts multiple monstrous rabbits with sharp teeth and red eyes, surrounded by tendrils, with a shadowy figure in the background and bold text reading 'RABIDS'."
+}

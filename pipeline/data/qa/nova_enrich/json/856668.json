@@ -1,0 +1,50 @@
+{
+  "title_text": "FLESHER",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EVERGREEN MOTEL\nDON'T LET HIM GET UNDER YOUR SKIN!",
+  "mood": [
+    "horror",
+    "thriller",
+    "psychological",
+    "violent",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.6,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; disturbing imagery.",
+  "description": "A horror movie poster featuring a man holding a bloody knife, a terrified woman, and a monstrous creature emerging from water."
+}

@@ -1,0 +1,49 @@
+{
+  "title_text": "3 KILLER PIGS",
+  "credits_text": "a Thomas J. Churchill film",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FROM THE PRODUCERS & DIRECTOR OF BIG FREAKING RAT AND THE AMITYVILLE TRILOGY. ...THESE 3 LITTLE PIGGIES...CAME HOME.",
+  "mood": [
+    "horror",
+    "supernatural",
+    "gothic",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "Poster shows three pig-like creatures in a dark, eerie setting with a house and full moon in the background."
+}

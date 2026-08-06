@@ -1,0 +1,39 @@
+{
+  "title_text": "HORDASALVAJE",
+  "credits_text": "DRACMA PRODUCCIONES INDEPENDIENTES UNA PELICULA DE GERMAN FAVIER",
+  "languages": [
+    "es"
+  ],
+  "other_text": "HAY VILLANOS HAY HEROES HAY ZOMBIES",
+  "mood": [
+    "action",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "zombie",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and implied violence.",
+  "description": "Movie poster features intense characters holding guns with dramatic expressions, promoting a thriller-horror film titled 'Hordasalvaje'."
+}

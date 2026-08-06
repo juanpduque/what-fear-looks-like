@@ -1,0 +1,46 @@
+{
+  "title_text": "DEDEMIT",
+  "credits_text": "DIKUT MAKHLUK HALUS\nIKRAM NOER, FILDAH BURHAN, NURFADILLAH HANIFAH, OKI DG MABONE\nA FILM BY HENDRA SIRAJUDDIN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DI BIOSKOP 4 MEI 2023",
+  "mood": [
+    "eerie",
+    "supernatural",
+    "haunting",
+    "gothic",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.1,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild blood and supernatural horror themes.",
+  "description": "A poster shows a ghostly figure in a forest with a bloodied hand holding a pendant, hinting at supernatural horror."
+}

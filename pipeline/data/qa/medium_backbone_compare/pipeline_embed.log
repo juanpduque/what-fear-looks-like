@@ -1,0 +1,406 @@
+==== 2026-08-04T00:55:54Z start embed pipeline ====
+vitl cache=0 todo=421 device=cpu
+/Users/juanpabloduque/miniforge3/lib/python3.10/site-packages/torch/serialization.py:1328: UserWarning: 'torch.load' received a zip file that looks like a TorchScript archive dispatching to 'torch.jit.load' (call 'torch.jit.load' directly to silence this warning)
+  warnings.warn(
+vitl 10/421 total=10 elapsed=14.9s
+Traceback (most recent call last):
+  File "/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/embed_medium_backbone.py", line 235, in <module>
+    raise SystemExit(main())
+  File "/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/embed_medium_backbone.py", line 198, in main
+    embed_vitl(ids, CACHE_DIR / "openclip_vitl14_openai.npz", args.save_every)
+  File "/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/embed_medium_backbone.py", line 116, in embed_vitl
+    save_cache(cache, by)
+  File "/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/embed_medium_backbone.py", line 67, in save_cache
+    tmp.replace(path)
+  File "/Users/juanpabloduque/miniforge3/lib/python3.10/pathlib.py", line 1247, in replace
+    self._accessor.replace(self, target)
+FileNotFoundError: [Errno 2] No such file or directory: '/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz.tmp' -> '/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz'
+==== 2026-08-04T00:57:43Z start embed pipeline ====
+vitl cache=10 todo=411 device=cpu
+/Users/juanpabloduque/miniforge3/lib/python3.10/site-packages/torch/serialization.py:1328: UserWarning: 'torch.load' received a zip file that looks like a TorchScript archive dispatching to 'torch.jit.load' (call 'torch.jit.load' directly to silence this warning)
+  warnings.warn(
+vitl 10/411 total=20 elapsed=15.5s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=20
+==== 2026-08-04T01:09:06Z start embed pipeline ====
+==== 2026-08-04T01:12:16Z resume agent start ====
+==== 2026-08-04T01:12:16Z start embed pipeline ====
+vitl cache=30 todo=391 device=cpu
+/Users/juanpabloduque/miniforge3/lib/python3.10/site-packages/torch/serialization.py:1328: UserWarning: 'torch.load' received a zip file that looks like a TorchScript archive dispatching to 'torch.jit.load' (call 'torch.jit.load' directly to silence this warning)
+  warnings.warn(
+vitl 10/391 total=40 elapsed=18.2s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=40
+vitl 20/391 total=50 elapsed=40.6s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=50
+vitl 30/391 total=60 elapsed=59.4s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=60
+vitl 40/391 total=70 elapsed=74.7s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=70
+vitl 50/391 total=80 elapsed=91.4s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=80
+vitl 60/391 total=90 elapsed=109.7s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=90
+vitl 70/391 total=100 elapsed=129.0s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=100
+vitl 80/391 total=110 elapsed=148.8s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=110
+==== 2026-08-04T01:27:50Z resume agent start (cache n=110) ====
+==== 2026-08-04T01:27:50Z start embed pipeline ====
+==== 2026-08-04T01:32:31Z resume detached start (cache n=110) ====
+==== 2026-08-04T01:32:31Z start embed pipeline ====
+vitl cache=110 todo=311 device=cpu
+/Users/juanpabloduque/miniforge3/lib/python3.10/site-packages/torch/serialization.py:1328: UserWarning: 'torch.load' received a zip file that looks like a TorchScript archive dispatching to 'torch.jit.load' (call 'torch.jit.load' directly to silence this warning)
+  warnings.warn(
+vitl 10/311 total=120 elapsed=21.9s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=120
+vitl 20/311 total=130 elapsed=53.1s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=130
+vitl 30/311 total=140 elapsed=96.5s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=140
+vitl 40/311 total=150 elapsed=137.1s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=150
+vitl 50/311 total=160 elapsed=170.5s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=160
+vitl 60/311 total=170 elapsed=189.5s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=170
+vitl 70/311 total=180 elapsed=207.3s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=180
+vitl 80/311 total=190 elapsed=235.1s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=190
+vitl 90/311 total=200 elapsed=254.2s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=200
+vitl 100/311 total=210 elapsed=269.2s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=210
+vitl 110/311 total=220 elapsed=281.4s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=220
+vitl 120/311 total=230 elapsed=294.8s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=230
+vitl 130/311 total=240 elapsed=311.5s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=240
+vitl 140/311 total=250 elapsed=324.0s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=250
+vitl 150/311 total=260 elapsed=335.3s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=260
+vitl 160/311 total=270 elapsed=346.5s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=270
+vitl 170/311 total=280 elapsed=358.2s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=280
+vitl 180/311 total=290 elapsed=369.0s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=290
+vitl 190/311 total=300 elapsed=380.9s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=300
+vitl 200/311 total=310 elapsed=393.2s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=310
+vitl 210/311 total=320 elapsed=405.7s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=320
+vitl 220/311 total=330 elapsed=439.4s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=330
+vitl 230/311 total=340 elapsed=467.8s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=340
+vitl 240/311 total=350 elapsed=510.5s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=350
+vitl 250/311 total=360 elapsed=531.2s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=360
+vitl 260/311 total=370 elapsed=548.5s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=370
+vitl 270/311 total=380 elapsed=563.5s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=380
+vitl 280/311 total=390 elapsed=574.5s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=390
+vitl 290/311 total=400 elapsed=593.2s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=400
+vitl 300/311 total=410 elapsed=607.7s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=410
+vitl 310/311 total=420 elapsed=640.7s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/openclip_vitl14_openai.npz n=420
+vitl 311/311 total=421 elapsed=644.9s
+done vitl n=421
+siglip-so400m model=google/siglip-so400m-patch14-384 cache=0 todo=421 device=cpu
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] Model config: bos_token_id must be `None` or an integer within the vocabulary (between 0 and 31999), got 49406. This may result in unexpected behavior.
+[transformers] Model config: eos_token_id must be `None` or an integer within the vocabulary (between 0 and 31999), got 49407. This may result in unexpected behavior.
+Loading weights:   0%|          | 0/888 [00:00<?, ?it/s]Loading weights:  27%|██▋       | 238/888 [00:00<00:00, 2372.46it/s]Loading weights: 100%|██████████| 888/888 [00:00<00:00, 4934.60it/s]
+fail 985: AttributeError: 'BaseModelOutputWithPooling' object has no attribute 'norm'
+fail 1702: AttributeError: 'BaseModelOutputWithPooling' object has no attribute 'norm'
+fail 2151: AttributeError: 'BaseModelOutputWithPooling' object has no attribute 'norm'
+fail 3127: AttributeError: 'BaseModelOutputWithPooling' object has no attribute 'norm'
+fail 3164: AttributeError: 'BaseModelOutputWithPooling' object has no attribute 'norm'
+fail 3208: AttributeError: 'BaseModelOutputWithPooling' object has no attribute 'norm'
+fail 6114: AttributeError: 'BaseModelOutputWithPooling' object has no attribute 'norm'
+fail 6552: AttributeError: 'BaseModelOutputWithPooling' object has no attribute 'norm'
+fail 7340: AttributeError: 'BaseModelOutputWithPooling' object has no attribute 'norm'
+fail 7392: AttributeError: 'BaseModelOutputWithPooling' object has no attribute 'norm'
+/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/run_medium_backbone_pipeline.sh: line 27: 17128 Terminated: 15          python3 -u embed_medium_backbone.py --backbone siglip-so400m --save-every 10
+siglip-so400m failed; trying siglip-base
+/Users/juanpabloduque/miniforge3/lib/python3.10/multiprocessing/resource_tracker.py:224: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '
+siglip-base model=google/siglip-base-patch16-224 cache=0 todo=421 device=cpu
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+[transformers] Model config: bos_token_id must be `None` or an integer within the vocabulary (between 0 and 31999), got 49406. This may result in unexpected behavior.
+[transformers] Model config: eos_token_id must be `None` or an integer within the vocabulary (between 0 and 31999), got 49407. This may result in unexpected behavior.
+Loading weights:   0%|          | 0/408 [00:00<?, ?it/s]Loading weights: 100%|██████████| 408/408 [00:00<00:00, 4208.40it/s]
+siglip-base 10/421 total=10 elapsed=4.9s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=10
+siglip-base 20/421 total=20 elapsed=9.3s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=20
+siglip-base 30/421 total=30 elapsed=14.4s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=30
+siglip-base 40/421 total=40 elapsed=18.9s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=40
+siglip-base 50/421 total=50 elapsed=23.2s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=50
+siglip-base 60/421 total=60 elapsed=28.2s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=60
+siglip-base 70/421 total=70 elapsed=35.4s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=70
+siglip-base 80/421 total=80 elapsed=42.3s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=80
+siglip-base 90/421 total=90 elapsed=47.0s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=90
+siglip-base 100/421 total=100 elapsed=51.8s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=100
+siglip-base 110/421 total=110 elapsed=57.0s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=110
+siglip-base 120/421 total=120 elapsed=63.1s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=120
+siglip-base 130/421 total=130 elapsed=73.2s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=130
+siglip-base 140/421 total=140 elapsed=79.1s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=140
+siglip-base 150/421 total=150 elapsed=84.8s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=150
+siglip-base 160/421 total=160 elapsed=90.3s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=160
+siglip-base 170/421 total=170 elapsed=96.7s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=170
+siglip-base 180/421 total=180 elapsed=101.4s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=180
+siglip-base 190/421 total=190 elapsed=105.7s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=190
+siglip-base 200/421 total=200 elapsed=109.9s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=200
+siglip-base 210/421 total=210 elapsed=115.2s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=210
+siglip-base 220/421 total=220 elapsed=122.5s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=220
+siglip-base 230/421 total=230 elapsed=130.4s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=230
+siglip-base 240/421 total=240 elapsed=138.0s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=240
+siglip-base 250/421 total=250 elapsed=144.8s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=250
+siglip-base 260/421 total=260 elapsed=154.5s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=260
+siglip-base 270/421 total=270 elapsed=163.5s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=270
+siglip-base 280/421 total=280 elapsed=180.7s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=280
+siglip-base 290/421 total=290 elapsed=204.5s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=290
+siglip-base 300/421 total=300 elapsed=212.2s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=300
+siglip-base 310/421 total=310 elapsed=224.3s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=310
+siglip-base 320/421 total=320 elapsed=232.5s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=320
+siglip-base 330/421 total=330 elapsed=247.3s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=330
+siglip-base 340/421 total=340 elapsed=253.5s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=340
+siglip-base 350/421 total=350 elapsed=261.5s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=350
+siglip-base 360/421 total=360 elapsed=270.7s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=360
+siglip-base 370/421 total=370 elapsed=278.6s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=370
+siglip-base 380/421 total=380 elapsed=286.3s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=380
+siglip-base 390/421 total=390 elapsed=293.5s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=390
+siglip-base 400/421 total=400 elapsed=301.1s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=400
+siglip-base 410/421 total=410 elapsed=313.0s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=410
+siglip-base 420/421 total=420 elapsed=320.7s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/siglip_base.npz n=420
+siglip-base 421/421 total=421 elapsed=324.7s
+done siglip-base n=421
+dinov2-base model=facebook/dinov2-base cache=0 todo=421 device=cpu
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Loading weights:   0%|          | 0/223 [00:00<?, ?it/s]Loading weights: 100%|██████████| 223/223 [00:00<00:00, 12124.31it/s]
+dinov2-base 10/421 total=10 elapsed=5.7s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=10
+dinov2-base 20/421 total=20 elapsed=10.6s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=20
+dinov2-base 30/421 total=30 elapsed=18.6s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=30
+dinov2-base 40/421 total=40 elapsed=27.0s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=40
+dinov2-base 50/421 total=50 elapsed=34.9s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=50
+dinov2-base 60/421 total=60 elapsed=41.1s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=60
+dinov2-base 70/421 total=70 elapsed=47.8s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=70
+dinov2-base 80/421 total=80 elapsed=67.9s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=80
+dinov2-base 90/421 total=90 elapsed=84.2s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=90
+dinov2-base 100/421 total=100 elapsed=89.9s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=100
+dinov2-base 110/421 total=110 elapsed=95.3s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=110
+dinov2-base 120/421 total=120 elapsed=100.4s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=120
+dinov2-base 130/421 total=130 elapsed=106.3s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=130
+dinov2-base 140/421 total=140 elapsed=113.5s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=140
+dinov2-base 150/421 total=150 elapsed=126.1s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=150
+dinov2-base 160/421 total=160 elapsed=134.8s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=160
+dinov2-base 170/421 total=170 elapsed=148.4s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=170
+dinov2-base 180/421 total=180 elapsed=164.0s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=180
+dinov2-base 190/421 total=190 elapsed=177.2s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=190
+dinov2-base 200/421 total=200 elapsed=187.6s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=200
+dinov2-base 210/421 total=210 elapsed=193.8s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=210
+dinov2-base 220/421 total=220 elapsed=201.2s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=220
+dinov2-base 230/421 total=230 elapsed=209.9s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=230
+dinov2-base 240/421 total=240 elapsed=218.3s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=240
+dinov2-base 250/421 total=250 elapsed=226.3s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=250
+dinov2-base 260/421 total=260 elapsed=238.9s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=260
+dinov2-base 270/421 total=270 elapsed=248.1s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=270
+dinov2-base 280/421 total=280 elapsed=255.6s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=280
+dinov2-base 290/421 total=290 elapsed=263.0s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=290
+dinov2-base 300/421 total=300 elapsed=265.8s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=300
+dinov2-base 310/421 total=310 elapsed=268.4s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=310
+dinov2-base 320/421 total=320 elapsed=270.7s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=320
+dinov2-base 330/421 total=330 elapsed=273.1s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=330
+dinov2-base 340/421 total=340 elapsed=275.9s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=340
+dinov2-base 350/421 total=350 elapsed=278.0s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=350
+dinov2-base 360/421 total=360 elapsed=279.9s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=360
+dinov2-base 370/421 total=370 elapsed=282.1s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=370
+dinov2-base 380/421 total=380 elapsed=284.6s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=380
+dinov2-base 390/421 total=390 elapsed=287.0s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=390
+dinov2-base 400/421 total=400 elapsed=289.3s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=400
+dinov2-base 410/421 total=410 elapsed=292.2s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=410
+dinov2-base 420/421 total=420 elapsed=294.9s
+checkpoint /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_siglip/dinov2_base.npz n=420
+dinov2-base 421/421 total=421 elapsed=295.6s
+done dinov2-base n=421 fail=0
+dinov2-large model=facebook/dinov2-large cache=0 todo=421 device=cpu
+Warning: You are sending unauthenticated requests to the HF Hub. Please set a HF_TOKEN to enable higher rate limits and faster downloads.
+Traceback (most recent call last):
+  File "/Users/juanpabloduque/miniforge3/lib/python3.10/site-packages/transformers/modeling_utils.py", line 682, in _get_resolved_checkpoint_files
+    resolved_archive_file = cached_file(pretrained_model_name_or_path, filename, **cached_file_kwargs)
+  File "/Users/juanpabloduque/miniforge3/lib/python3.10/site-packages/transformers/utils/hub.py", line 293, in cached_file
+    file = cached_files(path_or_repo_id=path_or_repo_id, filenames=[filename], **kwargs)
+  File "/Users/juanpabloduque/miniforge3/lib/python3.10/site-packages/transformers/utils/hub.py", line 527, in cached_files
+    raise e
+  File "/Users/juanpabloduque/miniforge3/lib/python3.10/site-packages/transformers/utils/hub.py", line 437, in cached_files
+    hf_hub_download(
+  File "/Users/juanpabloduque/miniforge3/lib/python3.10/site-packages/huggingface_hub/utils/_validators.py", line 88, in _inner_fn
+    return fn(*args, **kwargs)
+  File "/Users/juanpabloduque/miniforge3/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1013, in hf_hub_download
+    return _hf_hub_download_to_cache_dir(
+  File "/Users/juanpabloduque/miniforge3/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1236, in _hf_hub_download_to_cache_dir
+    _download_to_tmp_and_move(
+  File "/Users/juanpabloduque/miniforge3/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 1920, in _download_to_tmp_and_move
+    xet_get(
+  File "/Users/juanpabloduque/miniforge3/lib/python3.10/site-packages/huggingface_hub/file_download.py", line 563, in xet_get
+    with session.new_file_download_group(
+RuntimeError: Task error: File reconstruction error: IO Error: No space left on device (os error 28)
+
+The above exception was the direct cause of the following exception:
+
+Traceback (most recent call last):
+  File "/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/embed_medium_backbone.py", line 298, in <module>
+    raise SystemExit(main())
+  File "/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/embed_medium_backbone.py", line 287, in main
+    embed_hf_vision(
+  File "/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/embed_medium_backbone.py", line 211, in embed_hf_vision
+    model = AutoModel.from_pretrained(model_id).to(device).eval()
+  File "/Users/juanpabloduque/miniforge3/lib/python3.10/site-packages/transformers/models/auto/auto_factory.py", line 402, in from_pretrained
+    return model_class.from_pretrained(
+  File "/Users/juanpabloduque/miniforge3/lib/python3.10/site-packages/transformers/modeling_utils.py", line 4267, in from_pretrained
+    checkpoint_files, sharded_metadata = _get_resolved_checkpoint_files(
+  File "/Users/juanpabloduque/miniforge3/lib/python3.10/site-packages/transformers/modeling_utils.py", line 762, in _get_resolved_checkpoint_files
+    raise OSError(
+OSError: Can't load the model for 'facebook/dinov2-large'. If you were trying to load it from 'https://huggingface.co/models', make sure you don't have a local directory with the same name. Otherwise, make sure 'facebook/dinov2-large' is the correct path to a directory containing a file named pytorch_model.bin.
+gold=421 split train=315 test=106 all=421 counts={'photo': 111, 'painted': 188, 'composite': 122} device=cpu from_cache=True
+=== CLIP ViT-B baseline (clip_embeddings.npz) ===
+[clip_vitb_logreg] macro_f1=0.5135 train=313 test=105 dim=512 miss_tr=2 miss_te=1
+              precision    recall  f1-score   support
+
+     painted       0.67      0.68      0.67        47
+       photo       0.50      0.37      0.43        27
+   composite       0.41      0.48      0.44        31
+
+    accuracy                           0.54       105
+   macro avg       0.52      0.51      0.51       105
+weighted avg       0.55      0.54      0.54       105
+
+=== OpenCLIP ViT-L-14 / openai ===
+[openclip_vitl14_openai_logreg] macro_f1=0.5623 train=315 test=106 dim=768 miss_tr=0 miss_te=0
+              precision    recall  f1-score   support
+
+     painted       0.82      0.68      0.74        47
+       photo       0.43      0.43      0.43        28
+   composite       0.46      0.58      0.51        31
+
+    accuracy                           0.58       106
+   macro avg       0.57      0.56      0.56       106
+weighted avg       0.61      0.58      0.59       106
+
+=== SigLIP ===
+[siglip_base_logreg] macro_f1=0.5905 train=315 test=106 dim=768 miss_tr=0 miss_te=0
+              precision    recall  f1-score   support
+
+     painted       0.77      0.72      0.75        47
+       photo       0.52      0.50      0.51        28
+   composite       0.49      0.55      0.52        31
+
+    accuracy                           0.61       106
+   macro avg       0.59      0.59      0.59       106
+weighted avg       0.62      0.61      0.62       106
+
+=== DINOv2 (best_new=0.5905 baseline=0.5135+0.03) ===
+[dinov2_base_logreg] macro_f1=0.4744 train=315 test=106 dim=768 miss_tr=0 miss_te=0
+              precision    recall  f1-score   support
+
+     painted       0.66      0.62      0.64        47
+       photo       0.45      0.32      0.38        28
+   composite       0.36      0.48      0.41        31
+
+    accuracy                           0.50       106
+   macro avg       0.49      0.47      0.47       106
+weighted avg       0.52      0.50      0.50       106
+
+wrote /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_backbone_compare/compare_f1.json
+WINNER=siglip_base F1=0.5905 baseline=0.5135 lift=+0.0770 clear_win=True
+==== 2026-08-04T02:18:55Z done ====

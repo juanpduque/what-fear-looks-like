@@ -1,0 +1,41 @@
+{
+  "title_text": "SERIAL KILLER",
+  "credits_text": "Ryan Cavalline film\nA walk in the mind of a SERIAL KILLER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "psychological",
+    "thriller",
+    "disturbing",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster implies psychological horror and themes of violence.",
+  "description": "The poster features bold red text reading 'SERIAL KILLER' with a shadowy figure and a partial face in the background, suggesting a psychological thriller."
+}

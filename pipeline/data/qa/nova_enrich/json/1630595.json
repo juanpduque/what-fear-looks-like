@@ -1,0 +1,43 @@
+{
+  "title_text": "MICHAEL VS JASON",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "youtube.com/radicaltalent",
+  "mood": [
+    "dread",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 1.0
+    },
+    {
+      "name": "weapon",
+      "conf": 1.0
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 1.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense horror themes and implied violence.",
+  "description": "A poster featuring two horror icons facing each other, one holding a large knife, with dark, smoky background."
+}

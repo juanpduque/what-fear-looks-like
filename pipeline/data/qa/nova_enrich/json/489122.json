@@ -1,0 +1,45 @@
+{
+  "title_text": "NOWHERE",
+  "credits_text": "MUSIC & SOUND DESIGN BY JIM MERRITT EDITED BY DAREN BALDWIN DIRECTOR OF PHOTOGRAPHY NATE HILL EXECUTIVE PRODUCER JENNIFER LEEZ PEZ GROSE TRAVIS NE HILL PRODUCED BY KIRK & ANNE PRISTEN & DIRECTED BY JIM PEZ",
+  "languages": [
+    "en"
+  ],
+  "other_text": "You don't find them... they find you!",
+  "mood": [
+    "dread",
+    "gothic",
+    "forest",
+    "silhouette",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "text",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence through weapon imagery.",
+  "description": "A dark forest scene with a shadowy figure holding a large axe, accompanied by ominous text."
+}

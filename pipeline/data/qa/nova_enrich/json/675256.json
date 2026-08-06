@@ -1,0 +1,42 @@
+{
+  "title_text": "CLOWN DOLL",
+  "credits_text": "HE'LL LOVE YOU TO DEATH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "terrifying",
+    "disturbing",
+    "psychological horror",
+    "gothic",
+    "creepy"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains disturbing imagery of a monstrous clown with blood-like markings.",
+  "description": "A poster featuring a terrifying, decayed clown with red eyes and a bloody nose, with the tagline 'HE'LL LOVE YOU TO DEATH.'"
+}

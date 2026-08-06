@@ -1,0 +1,45 @@
+{
+  "title_text": "ATTACK OF THE PIG-ZOMBIES!",
+  "credits_text": "MICHEL ACCHILI PIERLUIGI DEZZA MATTIA UBERTI ANDREA DI BONO RICCARDO RUSSO RICK HARBY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NOBODY PIGS FOREVER.",
+  "mood": [
+    "action",
+    "horror",
+    "zombie",
+    "violent",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "zombie",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains violent imagery and zombie themes.",
+  "description": "Poster shows a group of armed individuals facing a masked figure with pig-like features, set against a rustic backdrop."
+}

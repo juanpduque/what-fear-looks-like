@@ -1,0 +1,41 @@
+{
+  "title_text": "FINLEY",
+  "credits_text": "A J. ZACHARY FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PRACTICE MAKES PERFECT...",
+  "mood": [
+    "horror",
+    "thriller",
+    "psychological",
+    "disturbing",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and disturbing imagery.",
+  "description": "A poster features a creepy, animated face holding a knife with bold red text reading 'FINLEY' and a tagline 'PRACTICE MAKES PERFECT...'."
+}

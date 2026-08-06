@@ -1,0 +1,40 @@
+{
+  "title_text": "BLOODY CREEK",
+  "credits_text": "WHO WILL SURVIVE THE STALKER IN THE WOODS?",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "stalker",
+      "conf": 0.9
+    },
+    {
+      "name": "woods",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and implies violent themes.",
+  "description": "A young woman lies on the ground with a bloodstain on her shirt, with bold red text reading 'BLOODY CREEK' and a tagline asking who will survive the stalker in the woods."
+}

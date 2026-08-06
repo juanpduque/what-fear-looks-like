@@ -1,0 +1,35 @@
+{
+  "title_text": "MONTRAK",
+  "credits_text": "EIN STEFAN SCHREIBER FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "fantasy",
+    "dramatic",
+    "intense",
+    "heroic"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.3,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A group of characters stands in front of a fiery background, with a central hero holding a glowing weapon and others in various poses."
+}

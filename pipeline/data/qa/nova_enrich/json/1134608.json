@@ -1,0 +1,44 @@
+{
+  "title_text": "魔絵",
+  "credits_text": "法診出夫丽い〓1〳1え結",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "影片の内では、不欲の影片を引いています。これは、影片の内での影片を引いています。",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and monstrous features.",
+  "description": "A poster features a close-up of a monstrous, decayed face with sharp teeth and clawed hands against a dark background."
+}

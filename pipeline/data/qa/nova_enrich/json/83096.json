@@ -1,0 +1,43 @@
+{
+  "title_text": "GANJA & HESS",
+  "credits_text": "Written & Directed by BILL GUNN Starring DUANE JONES • MARLENE CLARK Produced by CHIZ SCHULTZ Music Composed & Performed by SAM WAYMON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "'A blood-soaked masterpiece. One of the most profound, surreal and horrifying love stories ever made.' - Complex",
+  "mood": [
+    "surreal",
+    "erotic",
+    "psychological",
+    "dramatic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.3,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "blood",
+    "sexual"
+  ],
+  "moderation_notes": "Contains implied violence and sexual themes.",
+  "description": "Poster features two silhouetted figures embracing with a knife between them, set against a vibrant, abstract background with bold text and credits."
+}

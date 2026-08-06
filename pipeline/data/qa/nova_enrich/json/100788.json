@@ -1,0 +1,39 @@
+{
+  "title_text": "a cold night's death",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "suspense",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "helicopter",
+      "conf": 0.8
+    },
+    {
+      "name": "gorilla",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.8,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a threatening gorilla.",
+  "description": "A man holds a gun, with a roaring gorilla and a helicopter in the background, suggesting a tense, action-packed scenario."
+}

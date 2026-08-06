@@ -1,0 +1,39 @@
+{
+  "title_text": "GO AWAY",
+  "credits_text": "THOM MATHEWS TUESDAY KNIGHT FELISSA ROSE ROBERT MUKES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "3 INTRUDERS, 4 HOURS, 3 FLOORS, 2 EXITS, 1 PROBLEM.",
+  "mood": [
+    "dread",
+    "suspense",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains horror themes and implied violence.",
+  "description": "A dark poster features a masked figure and four hooded individuals with colorful masks, set against a haunted house backdrop."
+}

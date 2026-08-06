@@ -1,0 +1,44 @@
+{
+  "title_text": "FATALITIES AND PHANTASMS",
+  "credits_text": "A DENNIS SMITHERS JR. FILM\nSTARRING STEPHEN MARTIN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THERE IS NO FORGIVENESS FOR SOME TRESPASSES\nVIDEO NASTY\nRETOOLATION GRIMHOUSE HORROR",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.5,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild horror themes and ghostly imagery.",
+  "description": "A poster featuring a ghostly face emerging from a dark forest, with a reaching hand and ominous text."
+}

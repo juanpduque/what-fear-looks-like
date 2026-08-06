@@ -1,0 +1,39 @@
+{
+  "title_text": "WAR OF THE COLOSSAL BEAST",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dramatic",
+    "intense",
+    "propaganda"
+  ],
+  "fear_labels": [
+    {
+      "name": "war",
+      "conf": 0.9
+    },
+    {
+      "name": "tank",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense war imagery and implied violence.",
+  "description": "A muscular man holds a tank tread above his head with people clinging to it, while soldiers and tanks are shown below in a dramatic, propaganda-style poster."
+}

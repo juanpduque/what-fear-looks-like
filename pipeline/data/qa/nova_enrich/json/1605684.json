@@ -1,0 +1,44 @@
+{
+  "title_text": "ЧУДЫ",
+  "credits_text": "ТАКСИ жЕНЕ 46 ТУН ФИЛЬМДЕРИН АВТОРЛАРЫНАН",
+  "languages": [
+    "en"
+  ],
+  "other_text": "В КИНО 8 ЯНВАРЯ КИНОДА КАНТАР",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "chains",
+      "conf": 0.9
+    },
+    {
+      "name": "wound",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intense horror themes.",
+  "description": "A distressed woman with chains and wounds stares from a prison-like setting, with a gritty, horror-themed poster design."
+}

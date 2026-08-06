@@ -1,0 +1,38 @@
+{
+  "title_text": "Frankenstein 2000",
+  "credits_text": "A FILM BY JOE D'AMATO\nStarring: Donald O'Brien, Cynthia Monteale...",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NO FEAR VIDEO presents:",
+  "mood": [
+    "gothic",
+    "sci-fi",
+    "horror",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic poster featuring a close-up of a man's face with stitches and scars, promoting the film 'Frankenstein 2000' directed by Joe D'Amato."
+}

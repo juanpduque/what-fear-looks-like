@@ -1,0 +1,51 @@
+{
+  "title_text": "BODY COUNT",
+  "credits_text": "MALVOLIA THE QUEEN OF SCREAMS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COMING SOON",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "erotic",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "occult",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "occult",
+    "sexual"
+  ],
+  "moderation_notes": "Contains suggestive imagery and occult themes, mild violence.",
+  "description": "A gothic horror poster features a woman holding skulls against a moonlit, eerie background with skeletal figures."
+}

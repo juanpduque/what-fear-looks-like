@@ -1,0 +1,46 @@
+{
+  "title_text": "CYBOLICA",
+  "credits_text": "AN ALEX GREENLEE FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "OFFICIAL DUST SELECTION",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "sci-fi",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and a monstrous hand.",
+  "description": "Poster shows a monstrous green hand reaching through a barred window with blood stains, titled 'CYBOLICA' by Alex Greenlee."
+}

@@ -1,0 +1,38 @@
+{
+  "title_text": "PATIENT SEVEN",
+  "credits_text": "TRY TO REMAIN CALM.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "suspense",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and implied violence.",
+  "description": "A poster showing a pair of blood-stained hands bound together with a tagline 'TRY TO REMAIN CALM.' The title 'PATIENT SEVEN' is prominently displayed at the top."
+}

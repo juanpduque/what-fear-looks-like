@@ -1,0 +1,40 @@
+{
+  "title_text": "KAAL",
+  "credits_text": "YASH DATTA'S KAAL\nA WILSON LOUIS FILM\nJAYANTLAL GADA PRESENTS\nFIRST EVER DAY HORROR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HAUNTING BEGINS DEC 17\nJAYANTLAL GADA PRESENTS A YASH DATTA PRODUCTION BEYOND DREAMS ENTERTAINMENT LIMITED IN ASSOCIATION WITH THE THAKUR GADA, VIKRAM KUSHAL, RAJIV PATNAIK, RAJIV PATNAIK, MANOJ SIKKA AND AVINASH WALLAJE, AJEET PUSHPANK GADA, WILSON LOUIS",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "A dramatic poster features a dark, intense face with a shadowy figure holding a scythe against a fiery background, promoting a horror film titled 'KAAL'."
+}

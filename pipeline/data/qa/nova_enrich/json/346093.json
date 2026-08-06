@@ -1,0 +1,38 @@
+{
+  "title_text": "KILLERSAURUS",
+  "credits_text": "PART HUMAN. PART DINOSAUR. ALL SOLDIER.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "action",
+    "sci-fi",
+    "dystopia",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.6,
+  "animal": 0.95,
+  "blood_gore": 0.4,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains intense action and implied violence with a dinosaur and soldiers.",
+  "description": "A poster shows a chained T-Rex in an industrial setting with two soldiers nearby, highlighting themes of human and dinosaur conflict."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "BLOOD TRAIL",
+  "credits_text": "You CANNOT RUN. You CANNOT HIDE. HE is HUNTING YOU.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "thriller",
+    "suspense",
+    "dark",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "text",
+      "conf": 0.8
+    },
+    {
+      "name": "handprint",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and intense thriller themes.",
+  "description": "A dark, textured poster features a large, bloody handprint with the title 'BLOOD TRAIL' and a chilling tagline."
+}

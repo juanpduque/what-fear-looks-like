@@ -1,0 +1,38 @@
+{
+  "title_text": "COUPLE IN THE WOODS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HAUNTED HOUSE MOVIES",
+  "mood": [
+    "dread",
+    "suspense",
+    "forest",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A group of people stands in a dark forest with intense expressions; the title \"COUPLE IN THE WOODS\" is prominently displayed."
+}

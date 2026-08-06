@@ -1,0 +1,33 @@
+{
+  "title_text": "Verge of Darkness",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Who killed Derek Frey?\nWas it Colonel Mustard with the wrench in the kitchen?\nWas it Miss Scarlet with the revolver in the conservatory?\nOr was it Ed Mount with the Volvo station wagon on Route 322?",
+  "mood": [
+    "mystery",
+    "suspense",
+    "classic"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.3
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster for 'Verge of Darkness' features three suspects with clues, each accompanied by a question about their involvement in a murder."
+}

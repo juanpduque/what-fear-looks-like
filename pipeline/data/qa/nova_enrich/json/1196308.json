@@ -1,0 +1,37 @@
+{
+  "title_text": "LAVA",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "sci-fi",
+    "post-apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "lava",
+      "conf": 0.9
+    },
+    {
+      "name": "volcano",
+      "conf": 0.85
+    },
+    {
+      "name": "explosion",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Two animated characters stand in front of a volcanic eruption, each holding a device, with a cityscape in the background under a dramatic sky."
+}

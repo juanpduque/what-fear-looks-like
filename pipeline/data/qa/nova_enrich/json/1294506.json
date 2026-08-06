@@ -1,0 +1,36 @@
+{
+  "title_text": "A TASTE OF FEAR",
+  "credits_text": "RETURN OF THE CLEVELAND TORSO KILLER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HE'S BACK...",
+  "mood": [
+    "dread",
+    "thriller",
+    "mystery",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster implies violent themes related to a historical serial killer.",
+  "description": "A poster shows a person in a dark setting with a shadowy figure holding a weapon, titled 'A Taste of Fear: Return of the Cleveland Torso Killer.'"
+}

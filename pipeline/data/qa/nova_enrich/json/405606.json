@@ -1,0 +1,38 @@
+{
+  "title_text": "LAST HALLOWEEN",
+  "credits_text": "A JOHN STEWART MULLER FILM\nLESLIE ANDREWS\nKIT WILLIAMSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "gothic",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "halloween",
+      "conf": 0.9
+    },
+    {
+      "name": "pumpkin",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "The poster features bold white text reading \"LAST HALLOWEEN\" with a carved pumpkin face below, and credits for a film directed by John Stewart Muller."
+}

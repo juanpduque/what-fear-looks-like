@@ -1,0 +1,47 @@
+{
+  "title_text": "DEAD RESET",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "sci-fi",
+    "horror",
+    "apocalyptic",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.65
+    },
+    {
+      "name": "sci-fi",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man holds a glowing object amidst tentacle-like creatures in a dark, eerie setting, suggesting a sci-fi horror theme."
+}

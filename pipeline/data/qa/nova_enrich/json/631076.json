@@ -1,0 +1,40 @@
+{
+  "title_text": "Blutwache - Die Rückkehr des Dämons -",
+  "credits_text": "Ein Film von Jochen Stephan\nSpaltack Pictures präsentiert\nSascha Balermann\nVera Kosier\nJan Blietz\nKatja Dietrich\nNatasha Kohler\nPhilipp Harr",
+  "languages": [
+    "de"
+  ],
+  "other_text": "Strenges Jugendverbot !!\nEin Film der die Grenzen überschreitet... DVD",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.6,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intended for mature audiences.",
+  "description": "A horror movie poster featuring a bloody hand gripping a chainsaw, with dark, dramatic text overlay."
+}

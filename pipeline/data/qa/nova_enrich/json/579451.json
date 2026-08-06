@@ -1,0 +1,49 @@
+{
+  "title_text": "SIR-AYET",
+  "credits_text": "YAZAN & YÖNETMEN ONUR ALDOĞAN\nSAKİN CAĞIRAYİNİ AZAPLARI BETERİR.\n× SUBAT'TA SINEMALARDA",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "ENİS KIRANİM\nÇEKİM",
+  "mood": [
+    "dread",
+    "horror",
+    "apocalyptic",
+    "intense",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "",
+  "description": "A fiery, monstrous face dominates the poster with a house and forest in the background under a dramatic sky."
+}

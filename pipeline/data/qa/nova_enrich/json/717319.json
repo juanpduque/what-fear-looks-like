@@ -1,0 +1,43 @@
+{
+  "title_text": "MERMAID ISLE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "fantasy",
+    "thriller",
+    "erotic",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.7,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.5,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, partial nudity, and sexual undertones.",
+  "description": "A poster shows a woman in a bikini standing on a beach with a mermaid underwater holding a severed head, a shark nearby, and a rocky island in the background."
+}

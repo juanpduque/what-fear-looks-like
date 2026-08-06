@@ -1,0 +1,42 @@
+{
+  "title_text": "The Evil Clergyman",
+  "credits_text": "H.P. Lovecraft's",
+  "languages": [
+    "en"
+  ],
+  "other_text": "GEONMASTER II ver's Nightmare TRANCER THE RETURN OF JACK",
+  "mood": [
+    "horror",
+    "surreal",
+    "gothic",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "A fiery background features a monstrous figure with multiple faces and weapons, alongside distressed characters in a surreal horror setting."
+}

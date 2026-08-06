@@ -1,0 +1,46 @@
+{
+  "title_text": "DEAD WEDDING",
+  "credits_text": "HAPPILY NEVER AFTER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "dramatic",
+    "intense",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, with a dramatic and intense atmosphere.",
+  "description": "A woman in a wedding dress holds a gun amidst flames and skulls, with bold red text reading 'DEAD WEDDING' and the tagline 'HAPPILY NEVER AFTER.'"
+}

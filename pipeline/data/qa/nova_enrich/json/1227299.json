@@ -1,0 +1,45 @@
+{
+  "title_text": "MARK OF THE WEREBEARD",
+  "credits_text": "Written by: Eric Mertz, Produced by: Poetic Justice Films, Directed by: Eric Mertz, Starring: Eric Mertz, John Doe, Jane Smith, Mark Johnson",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "supernatural",
+    "thriller",
+    "dark",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.1,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild horror elements and supernatural themes.",
+  "description": "A poster featuring four characters facing a menacing, glowing monster with a beard. The title \"Mark of the Werebeard\" is prominently displayed at the bottom."
+}

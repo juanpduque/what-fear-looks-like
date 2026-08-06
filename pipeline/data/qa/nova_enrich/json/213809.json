@@ -1,0 +1,42 @@
+{
+  "title_text": "MAYHEM MOTEL",
+  "credits_text": "Get ready for the most disturbing night of your life!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "VACANCY\nKAYLE KEMPTER\nMATT BIANCANELLO\nLOSANE SCARPARIA\nEMMA BERKCOITZ\nDELANE LANGLEY\n\"Mayhem Motel is the kinda place that David Lynch never decided to create some time ago...\"\n\"These may be the most obnoxious, disgusting people ever to be seen in one place at one time...\"\n-Kim Unholy Alliance\n-Joe Bob Briggs & Movie Guide",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "disturbing",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    "monster",
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.3,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster hints at disturbing and possibly violent themes.",
+  "description": "A dark, eerie poster for 'Mayhem Motel' featuring a neon sign and a desolate motel scene, promising a disturbing night."
+}

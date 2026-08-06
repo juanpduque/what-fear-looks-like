@@ -1,0 +1,42 @@
+{
+  "title_text": "鬼新生",
+  "credits_text": "THE POSSESSED",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "你會會看！\n金牌電影\n金牌娛樂\n王晶",
+  "mood": [
+    "horror",
+    "comedy",
+    "supernatural",
+    "camp",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and supernatural themes.",
+  "description": "Movie poster features a couple in wedding attire with a group of people, one holding a large knife, suggesting horror and comedy themes."
+}

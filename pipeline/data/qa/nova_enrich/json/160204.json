@@ -1,0 +1,40 @@
+{
+  "title_text": "TRACES OF DEATH",
+  "credits_text": "Back In Action!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "skeleton",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic depictions of blood and a skeleton, indicating potential for horror and violence.",
+  "description": "A poster featuring a skeletal figure with dripping red blood against a dark, eerie background, with the title 'Traces of Death' prominently displayed."
+}

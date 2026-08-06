@@ -1,0 +1,39 @@
+{
+  "title_text": "THE COLD DARK",
+  "credits_text": "JUKKA MIKKOLA ILSECA WOLFF PAUL D. SAVAGE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THEY CAN HEAR YOU",
+  "mood": [
+    "dread",
+    "suspense",
+    "horror",
+    "isolated",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.6,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a person in a dark forest with a large, ominous figure in the background and the tagline 'THEY CAN HEAR YOU.'"
+}

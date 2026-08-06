@@ -1,0 +1,42 @@
+{
+  "title_text": "KILLER KABABE",
+  "credits_text": "\"IN VISION PICTURES PRESENTS...\" \"STARRING BRUCE CAMPBELL, MIKE JOSSEN, JOE BEED, SETH KEITH, SCOTT KELLER, KABABE KABABE\" \"DIRECTED BY MICHAEL J. DOTSON\" \"WRITING CREDITS: MIKE JOSSEN, JOE BEED, SETH KEITH, SCOTT KELLER, JASON MASARSTROM\" \"ALSO STARRING MICHELLE ROBBINS\" \"BASED ON THE ORIGINAL PICTURE BY MICHAEL J. DOTSON\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOU'LL NEVER BE-LEAF IT. WARNING: CONTAINS GORE AND VIOLENT IMAGES.",
+  "mood": [
+    "camp",
+    "action",
+    "sci-fi",
+    "comedy",
+    "retro"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore.",
+  "description": "A retro-style poster features three men in colorful outfits facing green monsters, with one holding a gun and another a sword, set against a cityscape with flames."
+}

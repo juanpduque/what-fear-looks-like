@@ -1,0 +1,45 @@
+{
+  "title_text": "THE CATHER",
+  "credits_text": "A FILM BY L. BORDEA ROSSETTI WITH BUTTERFLY QUANTANERA, DAVID L. ROSSETTI, DEV'S JENGEZ, LUZ MOLODOWSKY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MUSIC BY L. BORDEA ROSSETTI & LEAL BARBOSO",
+  "mood": [
+    "horrific",
+    "surreal",
+    "disturbing",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.4,
+  "blood_gore": 0.85,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and disturbing imagery.",
+  "description": "A surreal horror poster featuring grotesque figures, blood, and a monstrous face emerging from a train, evoking a disturbing and violent atmosphere."
+}

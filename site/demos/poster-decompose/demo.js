@@ -1,21 +1,22 @@
 /**
- * VHS Decompose — Halloween (948) · contest pass
- * Clamshell hinged lid · Media box art · 4-act scroll · anchored overlays
+ * VHS Decompose — Halloween (948) · teachable cloud pass
+ * Cover = poster.jpg (flat corpus art). Never map VHS box photos as albedo.
+ * Beats: Hero → OCR → Faces → Palette → Symmetry → Diagonals → Blood → Knife → Archive.
  */
 import * as THREE from 'three';
+import { GLTFLoader } from './GLTFLoader.js';
 
 const reducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
 const isMobile =
   window.matchMedia('(max-width: 720px)').matches ||
   (navigator.maxTouchPoints > 0 && window.innerWidth < 900);
 
-/** Large rental clamshell — cover plane matches Media art aspect (616×1024). */
-const MEDIA_ASPECT = 616 / 1024; // ~0.6016 — printed sleeve, not stretched
-const BOX_H = 3.32;
-const BEZEL = 0.055; // thin frame — Media art is nearly full-bleed
-const COVER_H = BOX_H - BEZEL * 2;
-const COVER_W = COVER_H * MEDIA_ASPECT;
-const BOX_W = COVER_W + BEZEL * 2;
+/** Box geometry — COVER aspect comes from loaded poster.jpg (not hardcoded). */
+let BOX_H = 3.32;
+let BEZEL = 0.055;
+let COVER_H = BOX_H - BEZEL * 2;
+let COVER_W = COVER_H * (2 / 3);
+let BOX_W = COVER_W + BEZEL * 2;
 const BOX_D = 0.54;
 const WALL = 0.052;
 
@@ -36,7 +37,7 @@ const el = {
 let metricsData = null;
 let beatEls = [];
 let activeBeat = -1;
-let usingMediaCover = false;
+let posterAspect = 2 / 3;
 
 let renderer, scene, camera, clock;
 let vhsGroup, baseShell, lidPivot, lidContent, interiorGroup, layerGroup;
@@ -49,7 +50,7 @@ let scrollProgress = 0;
 let targetProgress = 0;
 let plasticNoiseMap = null;
 let audioCtl = null;
-let coverAnchor = null; // Object3D at cover center for projection
+let coverAnchor = null;
 let overlayNodes = {};
 
 function lerp(a, b, t) {
@@ -64,6 +65,15 @@ function smoothstep(e0, e1, x) {
 }
 function remap(p, a, b) {
   return smoothstep(a, b, p);
+}
+
+function setCoverAspect(aspect) {
+  posterAspect = aspect;
+  BOX_H = 3.32;
+  BEZEL = 0.055;
+  COVER_H = BOX_H - BEZEL * 2;
+  COVER_W = COVER_H * posterAspect;
+  BOX_W = COVER_W + BEZEL * 2;
 }
 
 async function boot() {
@@ -99,25 +109,34 @@ function buildScrollBeats(data) {
     section.dataset.act = String(beat.act || 1);
     section.dataset.index = String(i);
     section.setAttribute('aria-label', `${beat.kicker}: ${beat.title}`);
-    const swatches = beat.swatches
-      ? `<div class="beat-swatches">${beat.swatches
-          .map((c) => `<i style="background:${c}" title="${c}"></i>`)
-          .join('')}</div>`
-      : '';
+    // Runway proportional to beat.progress span so sticky copy tracks p ranges
+    const [pa, pb] = beat.progress;
+    const span = Math.max(0.08, pb - pa);
+    const hold = 1.15 + span * 2.4; // ~1.7–1.85vh typical; longer beats get more scroll
+    section.style.minHeight = `${hold * 100}vh`;
+    // Palette: full swatch cards under sticky copy (not under the poster)
+    const palettePanel =
+      beat.overlay && beat.overlay.type === 'palette'
+        ? `<div class="pal-panel beat-pal-panel">${buildPaletteSwatchesHtml(beat.overlay.samples || [])}</div>`
+        : '';
+    const swatches =
+      !palettePanel && beat.swatches
+        ? `<div class="beat-swatches">${beat.swatches
+            .map((c) => `<i style="background:${c}" title="${c}"></i>`)
+            .join('')}</div>`
+        : '';
     const cue =
       beat.id === 'hero'
         ? `<p class="scroll-cue">${escapeHtml(beat.cue || 'SCROLL')} <span aria-hidden="true">↓</span></p>`
         : '';
-    const actTag =
-      beat.act === 1 || beat.act === 2 || beat.act === 4
-        ? `<div class="beat-act">Acto ${['', 'I', 'II', 'III', 'IV'][beat.act]}</div>`
-        : '';
+    const actTag = `<div class="beat-act">Acto ${['', 'I', 'II', 'III', 'IV'][beat.act] || beat.act}</div>`;
     section.innerHTML = `
       <div class="beat-inner">
         ${actTag}
         <div class="beat-kicker">${escapeHtml(beat.kicker)}</div>
         <h2 class="beat-title">${escapeHtml(beat.title)}</h2>
         <p class="beat-body">${escapeHtml(beat.body)}</p>
+        ${palettePanel}
         ${swatches}
         ${cue}
       </div>
@@ -127,6 +146,81 @@ function buildScrollBeats(data) {
   });
 }
 
+function parseHex(hex) {
+  const h = String(hex || '').replace('#', '');
+  if (h.length !== 6) return { r: 0, g: 0, b: 0 };
+  return {
+    r: parseInt(h.slice(0, 2), 16) / 255,
+    g: parseInt(h.slice(2, 4), 16) / 255,
+    b: parseInt(h.slice(4, 6), 16) / 255,
+  };
+}
+
+/** sRGB hex → OKLCH (approx, no deps). Returns {L,C,H, light}. */
+function hexToOklch(hex) {
+  const { r: rs, g: gs, b: bs } = parseHex(hex);
+  const lin = (c) => (c <= 0.04045 ? c / 12.92 : ((c + 0.055) / 1.055) ** 2.4);
+  const r = lin(rs);
+  const g = lin(gs);
+  const b = lin(bs);
+  const l = 0.4122214708 * r + 0.5363325363 * g + 0.0514459929 * b;
+  const m = 0.2119034982 * r + 0.6806995451 * g + 0.1073969566 * b;
+  const s = 0.0883024619 * r + 0.2817188376 * g + 0.6299787005 * b;
+  const l_ = Math.cbrt(l);
+  const m_ = Math.cbrt(m);
+  const s_ = Math.cbrt(s);
+  const L = 0.2104542553 * l_ + 0.793617785 * m_ - 0.0040720468 * s_;
+  const a = 1.9779984951 * l_ - 2.428592205 * m_ + 0.4505937099 * s_;
+  const bb = 0.0259040371 * l_ + 0.7827717662 * m_ - 0.808675766 * s_;
+  const C = Math.sqrt(a * a + bb * bb);
+  let H = (Math.atan2(bb, a) * 180) / Math.PI;
+  if (H < 0) H += 360;
+  return {
+    L: Math.round(L * 100),
+    C: Math.round(C * 1000) / 1000,
+    H: Math.round(H),
+    light: L > 0.62,
+  };
+}
+
+function buildPaletteSwatchesHtml(samples) {
+  return samples
+    .map((s) => {
+      const ok = hexToOklch(s.hex);
+      const ink = ok.light ? '#0a0806' : '#f0e6d4';
+      return `<div class="pal-swatch" data-n="${s.n}" style="background:${escapeHtml(s.hex)};color:${ink}">
+        <span class="ps-n">${s.n}</span>
+        <span class="ps-hex">${escapeHtml(s.hex.toUpperCase())}</span>
+        <span class="ps-oklch-label">OKLCH</span>
+        <span class="ps-oklch">${ok.L} ${ok.C.toFixed(3)} ${ok.H}</span>
+        <span class="ps-role">${escapeHtml(s.role || '')}</span>
+      </div>`;
+    })
+    .join('');
+}
+
+function buildPaletteOverlayHtml(def) {
+  const samples = def.samples || [];
+  // Handles only on the cover — filled with sample hex (swatch strip lives in beat copy)
+  const handles = samples
+    .map((s) => {
+      const ok = hexToOklch(s.hex);
+      const ink = ok.light ? '#0a0806' : '#f0e6d4';
+      return `<div class="pal-handle" data-n="${s.n}" aria-hidden="true" style="background:${escapeHtml(s.hex)};color:${ink}">${s.n}</div>`;
+    })
+    .join('');
+  const cue = escapeHtml(def.cue || 'HANDLES · SAMPLE COLORS');
+  return `<span class="ov-box" hidden></span>
+    <div class="pal-cue">${cue}</div>
+    ${handles}
+    <span class="ov-label" hidden>${escapeHtml(def.label || '')}</span>`;
+}
+
+function buildDiagonalsOverlayHtml(def) {
+  const lines = (def.lines || []).map(() => `<div class="diag-line" aria-hidden="true"></div>`).join('');
+  return `<span class="ov-box" hidden></span>${lines}<span class="ov-label">${escapeHtml(def.label || '')}</span>`;
+}
+
 function buildOverlayDom(data) {
   if (!el.overlays) return;
   el.overlays.innerHTML = '';
@@ -134,26 +228,20 @@ function buildOverlayDom(data) {
   data.beats.forEach((beat) => {
     if (!beat.overlay) return;
     const node = document.createElement('div');
-    node.className = `ov ov-${beat.overlay.type}`;
+    node.className = 'ov';
     node.dataset.beat = beat.id;
     node.setAttribute('aria-hidden', 'true');
-    if (beat.overlay.type === 'bbox' || beat.overlay.type === 'faces') {
-      node.innerHTML = `<span class="ov-box"></span><span class="ov-label">${escapeHtml(beat.overlay.label || '')}</span>`;
-    } else if (beat.overlay.type === 'symmetry') {
-      node.innerHTML = `<span class="ov-axis"></span><span class="ov-label">${escapeHtml(beat.overlay.label || '')}</span>`;
-    } else if (beat.overlay.type === 'palette') {
-      const sw = (beat.swatches || []).map((c) => `<i style="background:${c}"></i>`).join('');
-      node.innerHTML = `<span class="ov-label">${escapeHtml(beat.overlay.label || '')}</span><div class="ov-swatches">${sw}</div>`;
-    } else if (beat.overlay.type === 'heatmap') {
-      node.innerHTML = `<span class="ov-label">${escapeHtml(beat.overlay.label || '')}</span>`;
-    } else if (beat.overlay.type === 'tags') {
-      const tags = (beat.overlay.tags || [])
-        .map((t) => `<em>${escapeHtml(t)}</em>`)
-        .join('');
-      node.innerHTML = `<div class="ov-tags">${tags}</div>`;
+    if (beat.overlay.type === 'palette') {
+      node.innerHTML = buildPaletteOverlayHtml(beat.overlay);
+    } else if (beat.overlay.type === 'diagonals') {
+      node.innerHTML = buildDiagonalsOverlayHtml(beat.overlay);
+    } else {
+      // Chip/label start empty+hidden — CSS :empty / [hidden]!important prevents empty black shells
+      node.innerHTML =
+        `<span class="ov-box" hidden></span><span class="ov-chip" hidden></span><span class="ov-label" hidden></span>`;
     }
     el.overlays.appendChild(node);
-    overlayNodes[beat.id] = { el: node, def: beat.overlay };
+    overlayNodes[beat.id] = { el: node, def: beat.overlay || null };
   });
 }
 
@@ -167,15 +255,9 @@ function loadImage(url) {
   });
 }
 
+/** Always poster.jpg — vhs_reference*.png are mood board only. */
 async function resolveCoverImage() {
-  try {
-    const img = await loadImage('./vhs_reference.png');
-    usingMediaCover = true;
-    return img;
-  } catch {
-    usingMediaCover = false;
-    return loadImage('./poster.jpg');
-  }
+  return loadImage('./poster.jpg');
 }
 
 function makeCanvasTexture(draw, w = 512, h = 768) {
@@ -215,7 +297,6 @@ function makeNoiseMap(size = isMobile ? 128 : 256) {
   return tex;
 }
 
-/** Soft studio cubemap → PMREM for clearcoat plastic. */
 function buildEnvMap() {
   const pmrem = new THREE.PMREMGenerator(renderer);
   const envScene = new THREE.Scene();
@@ -230,13 +311,11 @@ function buildEnvMap() {
   g.addColorStop(1, '#060504');
   ctx.fillStyle = g;
   ctx.fillRect(0, 0, 512, 256);
-  // Warm key lobe
   const key = ctx.createRadialGradient(360, 70, 10, 360, 70, 160);
   key.addColorStop(0, 'rgba(255,180,100,0.55)');
   key.addColorStop(1, 'rgba(255,180,100,0)');
   ctx.fillStyle = key;
   ctx.fillRect(0, 0, 512, 256);
-  // Blood rim lobe
   const rim = ctx.createRadialGradient(80, 120, 8, 80, 120, 120);
   rim.addColorStop(0, 'rgba(160,30,20,0.35)');
   rim.addColorStop(1, 'rgba(160,30,20,0)');
@@ -251,103 +330,23 @@ function buildEnvMap() {
   return rt.texture;
 }
 
-function applyWearOverlay(ctx, w, h, opts = {}) {
-  const {
-    yellow = 0.06,
-    scuff = true,
-    crease = false,
-    sticker = false,
-    edgeDark = 0.2,
-    cardboard = true,
-  } = opts;
-
+/** Subtle shell wear only — never on the artwork face. */
+function applyShellWear(ctx, w, h, opts = {}) {
+  const { yellow = 0.04, edgeDark = 0.14 } = opts;
   if (yellow > 0) {
     ctx.fillStyle = `rgba(170,130,55,${yellow})`;
     ctx.fillRect(0, 0, w, h);
   }
-
-  if (scuff) {
-    const eg = ctx.createLinearGradient(0, 0, w * 0.1, 0);
-    eg.addColorStop(0, `rgba(0,0,0,${edgeDark})`);
-    eg.addColorStop(1, 'rgba(0,0,0,0)');
-    ctx.fillStyle = eg;
-    ctx.fillRect(0, 0, w * 0.12, h);
-
-    const eg2 = ctx.createLinearGradient(w, 0, w * 0.9, 0);
-    eg2.addColorStop(0, `rgba(0,0,0,${edgeDark * 0.65})`);
-    eg2.addColorStop(1, 'rgba(0,0,0,0)');
-    ctx.fillStyle = eg2;
-    ctx.fillRect(w * 0.88, 0, w * 0.12, h);
-
-    const top = ctx.createLinearGradient(0, 0, 0, h * 0.07);
-    top.addColorStop(0, 'rgba(255,255,255,0.07)');
-    top.addColorStop(1, 'rgba(0,0,0,0)');
-    ctx.fillStyle = top;
-    ctx.fillRect(0, 0, w, h * 0.09);
-
-    ctx.strokeStyle = 'rgba(220,200,170,0.1)';
-    ctx.lineWidth = 1.4;
-    for (let i = 0; i < 16; i++) {
-      const x = Math.random() * w;
-      const y = Math.random() * h;
-      ctx.beginPath();
-      ctx.moveTo(x, y);
-      ctx.lineTo(x + 10 + Math.random() * 36, y + (Math.random() - 0.5) * 5);
-      ctx.stroke();
-    }
-  }
-
-  // Media-style cardboard blowouts on edges
-  if (cardboard) {
-    ctx.fillStyle = 'rgba(246,237,216,0.55)';
-    for (let i = 0; i < 28; i++) {
-      const side = Math.random() < 0.55 ? 0 : 1;
-      const x = side ? w - Math.random() * 14 : Math.random() * 14;
-      const y = Math.random() * h;
-      ctx.globalAlpha = 0.35 + Math.random() * 0.45;
-      ctx.beginPath();
-      ctx.ellipse(x, y, 2 + Math.random() * 8, 3 + Math.random() * 14, 0, 0, Math.PI * 2);
-      ctx.fill();
-    }
-    ctx.globalAlpha = 0.75;
-    ctx.beginPath();
-    ctx.moveTo(0, h);
-    ctx.lineTo(0, h - 48);
-    ctx.quadraticCurveTo(18, h - 8, 62, h);
-    ctx.closePath();
-    ctx.fill();
-    ctx.globalAlpha = 1;
-  }
-
-  if (crease) {
-    const cg = ctx.createLinearGradient(w * 0.42, 0, w * 0.58, 0);
-    cg.addColorStop(0, 'rgba(0,0,0,0)');
-    cg.addColorStop(0.45, 'rgba(0,0,0,0.26)');
-    cg.addColorStop(0.55, 'rgba(255,255,255,0.05)');
-    cg.addColorStop(1, 'rgba(0,0,0,0)');
-    ctx.fillStyle = cg;
-    ctx.fillRect(w * 0.4, 0, w * 0.2, h);
-  }
-
-  if (sticker) {
-    const sx = w * 0.64;
-    const sy = h * 0.1;
-    const sw = w * 0.26;
-    const sh = h * 0.08;
-    ctx.fillStyle = 'rgba(232,220,200,0.2)';
-    ctx.fillRect(sx, sy, sw, sh);
-    ctx.strokeStyle = 'rgba(183,28,28,0.4)';
-    ctx.lineWidth = 2;
-    ctx.strokeRect(sx + 3, sy + 3, sw - 6, sh - 6);
-    ctx.fillStyle = 'rgba(183,28,28,0.5)';
-    ctx.font = `600 ${Math.max(10, sh * 0.3)}px "IBM Plex Mono", monospace`;
-    ctx.textAlign = 'center';
-    ctx.fillText('RENTAL', sx + sw / 2, sy + sh * 0.48);
-    ctx.fillStyle = 'rgba(20,16,12,0.45)';
-    ctx.font = `${Math.max(8, sh * 0.22)}px "IBM Plex Mono", monospace`;
-    ctx.fillText('948 · DUE', sx + sw / 2, sy + sh * 0.78);
-    ctx.textAlign = 'left';
-  }
+  const eg = ctx.createLinearGradient(0, 0, w * 0.08, 0);
+  eg.addColorStop(0, `rgba(0,0,0,${edgeDark})`);
+  eg.addColorStop(1, 'rgba(0,0,0,0)');
+  ctx.fillStyle = eg;
+  ctx.fillRect(0, 0, w * 0.1, h);
+  const eg2 = ctx.createLinearGradient(w, 0, w * 0.92, 0);
+  eg2.addColorStop(0, `rgba(0,0,0,${edgeDark * 0.55})`);
+  eg2.addColorStop(1, 'rgba(0,0,0,0)');
+  ctx.fillStyle = eg2;
+  ctx.fillRect(w * 0.9, 0, w * 0.1, h);
 }
 
 function drawSpine(ctx, w, h, title, year) {
@@ -373,7 +372,7 @@ function drawSpine(ctx, w, h, title, year) {
   ctx.fillText(title.toUpperCase(), 0, 36);
   ctx.fillStyle = 'rgba(138,127,110,0.9)';
   ctx.font = '13px "IBM Plex Mono", monospace';
-  ctx.fillText('MEDIA HOME ENTERTAINMENT', 0, 72);
+  ctx.fillText('SP · HI-FI · RENTAL', 0, 72);
   ctx.restore();
 
   ctx.fillStyle = '#e8dcc8';
@@ -387,7 +386,39 @@ function drawSpine(ctx, w, h, title, year) {
   ctx.strokeStyle = 'rgba(201,162,39,.35)';
   ctx.lineWidth = 2;
   ctx.strokeRect(6, 6, w - 12, h - 12);
-  applyWearOverlay(ctx, w, h, { yellow: 0.05, scuff: true, crease: true, cardboard: true, edgeDark: 0.28 });
+  applyShellWear(ctx, w, h, { yellow: 0.035, edgeDark: 0.2 });
+}
+
+function wrapText(ctx, text, x, y, maxW, lineH) {
+  const words = String(text).split(' ');
+  let line = '';
+  let yy = y;
+  for (const word of words) {
+    const test = line ? `${line} ${word}` : word;
+    if (ctx.measureText(test).width > maxW && line) {
+      ctx.fillText(line, x, yy);
+      line = word;
+      yy += lineH;
+    } else {
+      line = test;
+    }
+  }
+  if (line) ctx.fillText(line, x, yy);
+}
+
+function drawBarcode(ctx, x, y, w, h) {
+  ctx.fillStyle = '#e8dcc8';
+  ctx.fillRect(x, y, w, h);
+  let px = x + 5;
+  const end = x + w - 5;
+  while (px < end) {
+    const bw = 1 + Math.floor(Math.random() * 3);
+    if (Math.random() > 0.35) {
+      ctx.fillStyle = '#0a0806';
+      ctx.fillRect(px, y + 3, bw, h - 6);
+    }
+    px += bw + 1;
+  }
 }
 
 function drawBack(ctx, w, h, data) {
@@ -427,7 +458,7 @@ function drawBack(ctx, w, h, data) {
   ctx.font = '12px "IBM Plex Mono", monospace';
   [
     'On Halloween night in Haddonfield, the shape returns.',
-    'This sleeve is the sales pitch the corpus measured:',
+    'Flat sleeve art from the corpus — measured, not photographed.',
   ].forEach((line, i) => ctx.fillText(line, 48, 170 + i * 18));
 
   ctx.fillStyle = '#8a7f6e';
@@ -471,41 +502,9 @@ function drawBack(ctx, w, h, data) {
 
   ctx.fillStyle = '#6b8f71';
   ctx.font = '12px "IBM Plex Mono", monospace';
-  ctx.fillText('VHS · NTSC · MEDIA RENTAL SLEEVE', 48, h - 56);
+  ctx.fillText('VHS · NTSC · CORPUS SLEEVE', 48, h - 56);
 
-  applyWearOverlay(ctx, w, h, { yellow: 0.055, scuff: true, sticker: true, cardboard: true });
-}
-
-function wrapText(ctx, text, x, y, maxW, lineH) {
-  const words = String(text).split(' ');
-  let line = '';
-  let yy = y;
-  for (const word of words) {
-    const test = line ? `${line} ${word}` : word;
-    if (ctx.measureText(test).width > maxW && line) {
-      ctx.fillText(line, x, yy);
-      line = word;
-      yy += lineH;
-    } else {
-      line = test;
-    }
-  }
-  if (line) ctx.fillText(line, x, yy);
-}
-
-function drawBarcode(ctx, x, y, w, h) {
-  ctx.fillStyle = '#e8dcc8';
-  ctx.fillRect(x, y, w, h);
-  let px = x + 5;
-  const end = x + w - 5;
-  while (px < end) {
-    const bw = 1 + Math.floor(Math.random() * 3);
-    if (Math.random() > 0.35) {
-      ctx.fillStyle = '#0a0806';
-      ctx.fillRect(px, y + 3, bw, h - 6);
-    }
-    px += bw + 1;
-  }
+  applyShellWear(ctx, w, h, { yellow: 0.04, edgeDark: 0.16 });
 }
 
 function drawTopEdge(ctx, w, h) {
@@ -522,17 +521,16 @@ function drawTopEdge(ctx, w, h) {
   ctx.fillStyle = '#8a7f6e';
   ctx.font = '13px "IBM Plex Mono", monospace';
   ctx.fillText('SP · HI-FI', w * 0.7, h * 0.62);
-  applyWearOverlay(ctx, w, h, { yellow: 0.04, scuff: true, cardboard: false, edgeDark: 0.12 });
+  applyShellWear(ctx, w, h, { yellow: 0.03, edgeDark: 0.1 });
 }
 
 /**
- * Cover texture at native aspect — never stretch Media art into a wider plane.
- * Mild contrast lift only (no yellow wash / sheen that muddies oranges).
+ * Cover = flat poster art only. No cardboard blowouts / wear on the artwork.
+ * Mild contrast lift so oranges read under product lighting.
  */
-function drawCoverWear(img) {
+function drawCoverClean(img) {
   const srcW = img.naturalWidth || img.width;
   const srcH = img.naturalHeight || img.height;
-  // Keep native pixels; max edge 1024 for GPU
   const scale = Math.min(1, 1024 / Math.max(srcW, srcH));
   const w = Math.round(srcW * scale);
   const h = Math.round(srcH * scale);
@@ -544,39 +542,20 @@ function drawCoverWear(img) {
   ctx.imageSmoothingQuality = 'high';
   ctx.drawImage(img, 0, 0, w, h);
 
-  if (usingMediaCover) {
-    // Gentle punch: lift mids slightly so pumpkin orange + title whites pop
-    const id = ctx.getImageData(0, 0, w, h);
-    const d = id.data;
-    for (let i = 0; i < d.length; i += 4) {
-      let r = d[i];
-      let g = d[i + 1];
-      let b = d[i + 2];
-      // Soft contrast around midtones
-      r = clamp((r - 128) * 1.08 + 128 + 6, 0, 255);
-      g = clamp((g - 128) * 1.06 + 128 + 4, 0, 255);
-      b = clamp((b - 128) * 1.04 + 128 + 2, 0, 255);
-      // Warm orange bias on saturated warm pixels (pumpkin)
-      const warm = Math.max(0, r - b) * Math.max(0, g - b * 0.5);
-      if (warm > 20) {
-        const t = clamp(warm / 180, 0, 1) * 0.12;
-        r = Math.min(255, r + t * 28);
-        g = Math.min(255, g + t * 10);
-      }
-      d[i] = r;
-      d[i + 1] = g;
-      d[i + 2] = b;
-    }
-    ctx.putImageData(id, 0, 0);
-  } else {
-    applyWearOverlay(ctx, w, h, {
-      yellow: 0.04,
-      scuff: true,
-      sticker: true,
-      cardboard: true,
-      edgeDark: 0.14,
-    });
+  const id = ctx.getImageData(0, 0, w, h);
+  const d = id.data;
+  for (let i = 0; i < d.length; i += 4) {
+    let r = d[i];
+    let g = d[i + 1];
+    let b = d[i + 2];
+    r = clamp((r - 128) * 1.06 + 128 + 4, 0, 255);
+    g = clamp((g - 128) * 1.04 + 128 + 3, 0, 255);
+    b = clamp((b - 128) * 1.02 + 128 + 1, 0, 255);
+    d[i] = r;
+    d[i + 1] = g;
+    d[i + 2] = b;
   }
+  ctx.putImageData(id, 0, 0);
 
   const tex = new THREE.CanvasTexture(c);
   tex.colorSpace = THREE.SRGBColorSpace;
@@ -592,10 +571,16 @@ function rawNum(key, fallback = 0) {
   return r[key] != null ? r[key] : fallback;
 }
 
+/**
+ * Analysis layers: visual tint only — numbers live in DOM overlays / counter,
+ * not baked as huge glyphs on the canvas.
+ */
 function posterToLayerTexture(img, mode) {
-  // Same aspect as cover plane (Media 616∶1024) — no UV stretch vs printed face
-  const w = usingMediaCover ? 616 : 512;
-  const h = usingMediaCover ? 1024 : 768;
+  const srcW = img.naturalWidth || img.width;
+  const srcH = img.naturalHeight || img.height;
+  const scale = Math.min(1, 768 / Math.max(srcW, srcH));
+  const w = Math.round(srcW * scale);
+  const h = Math.round(srcH * scale);
   const c = document.createElement('canvas');
   c.width = w;
   c.height = h;
@@ -603,34 +588,19 @@ function posterToLayerTexture(img, mode) {
   ctx.drawImage(img, 0, 0, w, h);
   const imageData = ctx.getImageData(0, 0, w, h);
   const d = imageData.data;
-  const dark = rawNum('dark_share', 0.87);
-  const sym = rawNum('symmetry', 0.93);
-  const blood = rawNum('nova_blood', 0.85);
-  const knife = rawNum('nova_knife', 0.95);
-  const ocr = rawNum('ocr_conf', 0.98);
-  const faces = rawNum('faces', 0);
 
   if (mode === 'ocr') {
     for (let i = 0; i < d.length; i += 4) {
       const y = Math.floor(i / 4 / w);
-      // Media title band is TOP; poster.jpg title was bottom — prefer Media
-      const inTitle = usingMediaCover
-        ? y > h * 0.03 && y < h * 0.15
-        : y > h * 0.78 && y < h * 0.96;
-      const f = inTitle ? 1.15 : 0.18;
+      // Theatrical poster title sits near bottom
+      const inTitle = y > h * 0.78 && y < h * 0.96;
+      const f = inTitle ? 1.12 : 0.22;
       d[i] *= f;
       d[i + 1] *= f;
       d[i + 2] *= f;
-      d[i + 3] = inTitle ? 235 : 90;
+      d[i + 3] = inTitle ? 230 : 85;
     }
     ctx.putImageData(imageData, 0, 0);
-    const bx = usingMediaCover ? [0.08, 0.03, 0.84, 0.12] : [0.08, 0.8, 0.84, 0.14];
-    ctx.strokeStyle = 'rgba(107,143,113,.95)';
-    ctx.lineWidth = 3;
-    ctx.strokeRect(w * bx[0], h * bx[1], w * bx[2], h * bx[3]);
-    ctx.fillStyle = 'rgba(107,143,113,.95)';
-    ctx.font = '700 20px "IBM Plex Mono", monospace';
-    ctx.fillText(`OCR ${ocr.toFixed(2)} · HALLOWEEN`, w * bx[0] + 6, h * bx[1] - 10);
   } else if (mode === 'faces') {
     for (let i = 0; i < d.length; i += 4) {
       const r = d[i];
@@ -641,50 +611,17 @@ function posterToLayerTexture(img, mode) {
       d[i] = edge ? 35 : lum * 0.1;
       d[i + 1] = edge ? 190 : lum * 0.16;
       d[i + 2] = edge ? 145 : lum * 0.2;
-      d[i + 3] = edge ? 220 : 65;
+      d[i + 3] = edge ? 200 : 55;
     }
     ctx.putImageData(imageData, 0, 0);
-    ctx.strokeStyle = 'rgba(107,200,170,.28)';
-    ctx.lineWidth = 1;
-    for (let gx = 0; gx < w; gx += 40) {
-      ctx.beginPath();
-      ctx.moveTo(gx, 0);
-      ctx.lineTo(gx, h);
-      ctx.stroke();
-    }
-    for (let gy = 0; gy < h; gy += 40) {
-      ctx.beginPath();
-      ctx.moveTo(0, gy);
-      ctx.lineTo(w, gy);
-      ctx.stroke();
-    }
-    // Scan region over artwork (no face found)
-    ctx.strokeStyle = 'rgba(107,200,170,.9)';
-    ctx.lineWidth = 3;
-    ctx.setLineDash([8, 6]);
-    ctx.strokeRect(w * 0.22, h * 0.22, w * 0.56, h * 0.42);
-    ctx.setLineDash([]);
-    ctx.fillStyle = 'rgba(107,200,170,.95)';
-    ctx.font = '700 24px "IBM Plex Mono", monospace';
-    ctx.fillText(`YuNet · ${faces} FACES`, w * 0.22, h * 0.2);
   } else if (mode === 'colors') {
     for (let i = 0; i < d.length; i += 4) {
-      d[i] = Math.min(255, d[i] * 1.3);
-      d[i + 1] = d[i + 1] * 0.75;
-      d[i + 2] = d[i + 2] * 0.58;
-      d[i + 3] = 210;
+      d[i] = Math.min(255, d[i] * 1.25);
+      d[i + 1] = d[i + 1] * 0.72;
+      d[i + 2] = d[i + 2] * 0.55;
+      d[i + 3] = 200;
     }
     ctx.putImageData(imageData, 0, 0);
-    const sw = ['#070101', '#370f0e', '#711910', '#c53c0d', '#d5bda2'];
-    sw.forEach((hex, i) => {
-      ctx.fillStyle = hex;
-      ctx.fillRect(20 + i * 48, h - 72, 40, 40);
-      ctx.strokeStyle = 'rgba(232,220,200,.3)';
-      ctx.strokeRect(20 + i * 48, h - 72, 40, 40);
-    });
-    ctx.fillStyle = 'rgba(232,220,200,.92)';
-    ctx.font = '700 20px "IBM Plex Mono", monospace';
-    ctx.fillText(`${(dark * 100).toFixed(0)}% DARK · bri ${rawNum('brightness', 8.1).toFixed(1)}`, 20, h - 84);
   } else if (mode === 'symmetry') {
     const copy = new Uint8ClampedArray(d);
     for (let y = 0; y < h; y++) {
@@ -696,22 +633,13 @@ function posterToLayerTexture(img, mode) {
           d[i] = Math.min(255, copy[mi] * 0.42 + 95);
           d[i + 1] = Math.min(255, copy[mi + 1] * 0.42 + 65);
           d[i + 2] = Math.min(255, copy[mi + 2] * 0.32 + 28);
-          d[i + 3] = 185;
+          d[i + 3] = 175;
         } else {
-          d[i + 3] = 215;
+          d[i + 3] = 205;
         }
       }
     }
     ctx.putImageData(imageData, 0, 0);
-    ctx.strokeStyle = 'rgba(201,162,39,.95)';
-    ctx.lineWidth = 3;
-    ctx.beginPath();
-    ctx.moveTo(w / 2, 0);
-    ctx.lineTo(w / 2, h);
-    ctx.stroke();
-    ctx.fillStyle = 'rgba(201,162,39,.95)';
-    ctx.font = '700 22px "IBM Plex Mono", monospace';
-    ctx.fillText(`SYMMETRY ${sym.toFixed(2)}`, w * 0.52 + 10, 36);
   } else if (mode === 'blood') {
     for (let i = 0; i < d.length; i += 4) {
       const r = d[i];
@@ -723,28 +651,29 @@ function posterToLayerTexture(img, mode) {
       d[i] = Math.min(255, r * 0.28 + heat * 255);
       d[i + 1] = g * 0.1 + heat * 40;
       d[i + 2] = b * 0.06;
-      d[i + 3] = 45 + heat * 210;
+      d[i + 3] = 40 + heat * 200;
     }
     ctx.putImageData(imageData, 0, 0);
-    ctx.fillStyle = 'rgba(183,28,28,.95)';
-    ctx.font = '700 22px "IBM Plex Mono", monospace';
-    ctx.fillText(`NOVA BLOOD ${blood.toFixed(2)}`, 18, 34);
-    ctx.fillText(`KNIFE ${knife.toFixed(2)}`, 18, 62);
-  } else if (mode === 'medium') {
+  } else if (mode === 'diagonals') {
+    // Dim cover + draw X guides (visual for diagonal_score)
     for (let i = 0; i < d.length; i += 4) {
-      const lum = 0.2126 * d[i] + 0.7152 * d[i + 1] + 0.0722 * d[i + 2];
-      d[i] = lum;
-      d[i + 1] = lum * 0.94;
-      d[i + 2] = lum * 0.78;
-      d[i + 3] = lum > 85 ? 210 : 30;
+      d[i] = d[i] * 0.35;
+      d[i + 1] = d[i + 1] * 0.32;
+      d[i + 2] = d[i + 2] * 0.28;
+      d[i + 3] = 160;
     }
     ctx.putImageData(imageData, 0, 0);
-    ctx.fillStyle = 'rgba(232,220,200,.92)';
-    ctx.font = '700 20px "IBM Plex Mono", monospace';
-    ctx.fillText('PHOTOGRAPHIC · DECORATIVE', 16, 32);
-    ctx.fillStyle = 'rgba(183,28,28,.85)';
-    ctx.font = '16px "IBM Plex Mono", monospace';
-    ctx.fillText('dread · suspense · terror', 16, 58);
+    ctx.strokeStyle = 'rgba(201,162,39,0.85)';
+    ctx.lineWidth = Math.max(2, w * 0.006);
+    ctx.beginPath();
+    ctx.moveTo(w * 0.06, h * 0.06);
+    ctx.lineTo(w * 0.94, h * 0.94);
+    ctx.moveTo(w * 0.94, h * 0.06);
+    ctx.lineTo(w * 0.06, h * 0.94);
+    ctx.stroke();
+    ctx.strokeStyle = 'rgba(183,28,28,0.45)';
+    ctx.lineWidth = Math.max(1, w * 0.003);
+    ctx.stroke();
   } else {
     ctx.putImageData(imageData, 0, 0);
   }
@@ -756,24 +685,26 @@ function posterToLayerTexture(img, mode) {
 }
 
 function makePlasticMat(color = 0x1a1714, opts = {}) {
+  const opacity = opts.opacity ?? 1;
   return new THREE.MeshStandardMaterial({
     color,
     roughness: opts.roughness ?? 0.82,
     metalness: opts.metalness ?? 0.06,
     roughnessMap: opts.roughnessMap ?? plasticNoiseMap,
     envMapIntensity: opts.envMapIntensity ?? 0.55,
-    transparent: true,
-    opacity: 1,
+    // Opaque by default — transparent:true at opacity 1 causes sorting flicker
+    transparent: opts.transparent ?? opacity < 1,
+    opacity,
     side: opts.side ?? THREE.FrontSide,
   });
 }
 
 function makeCoverMat(map) {
-  // Unlit + no tone-map crush → Media oranges/whites match the reference file
+  // Opaque cover — never see-through; interior cassette only appears when lid opens
   return new THREE.MeshBasicMaterial({
     map,
     color: 0xffffff,
-    transparent: true,
+    transparent: false,
     opacity: 1,
     depthWrite: true,
     toneMapped: false,
@@ -792,7 +723,6 @@ function makePrintMat(map) {
   });
 }
 
-/** Base shell: back, walls, tray cavity — no front (lid owns front). */
 function buildBaseShell(spineTex, backTex, topTex) {
   const g = new THREE.Group();
   g.name = 'baseShell';
@@ -846,7 +776,6 @@ function buildBaseShell(spineTex, backTex, topTex) {
   bottom.receiveShadow = true;
   g.add(bottom);
 
-  // Inner cavity lining (reads as hollow when lid opens)
   const liner = new THREE.Mesh(
     new THREE.BoxGeometry(BOX_W - WALL * 2.2, BOX_H - WALL * 2.2, 0.02),
     makePlasticMat(0x080705, { roughness: 0.95, envMapIntensity: 0.2 }),
@@ -854,7 +783,6 @@ function buildBaseShell(spineTex, backTex, topTex) {
   liner.position.z = -BOX_D / 2 + WALL + 0.03;
   g.add(liner);
 
-  // Hinge ridge detail on spine edge
   const hinge = new THREE.Mesh(
     new THREE.BoxGeometry(0.03, BOX_H * 0.92, 0.04),
     makePlasticMat(0x0c0a08, { roughness: 0.7, metalness: 0.15 }),
@@ -865,11 +793,9 @@ function buildBaseShell(spineTex, backTex, topTex) {
   return g;
 }
 
-/** Front lid: bezel frame — cover sits flush with front face (no deep recess parallax). */
 function buildLidFrame() {
   const g = new THREE.Group();
   g.name = 'lidFrame';
-  // Flat frame coplanar with cover — thin Z so edges don't create false trapezoid
   const bezelDepth = 0.028;
   const bezelZ = BOX_D / 2 - bezelDepth / 2;
   const bezelMat = makePlasticMat(0x161210, { roughness: 0.72, envMapIntensity: 0.7 });
@@ -890,7 +816,534 @@ function buildLidFrame() {
   return g;
 }
 
-function buildInterior() {
+function makeCassetteShellTex() {
+  return makeCanvasTexture((ctx, cw, ch) => {
+    ctx.fillStyle = '#161412';
+    ctx.fillRect(0, 0, cw, ch);
+    // Fine stipple / cross-hatch like matte VHS plastic
+    for (let i = 0; i < 9000; i++) {
+      const x = Math.random() * cw;
+      const y = Math.random() * ch;
+      const v = 14 + Math.random() * 28;
+      ctx.fillStyle = `rgb(${v},${v - 1},${v - 2})`;
+      ctx.fillRect(x, y, 1.2, 1.2);
+    }
+    for (let y = 0; y < ch; y += 3) {
+      ctx.fillStyle = `rgba(0,0,0,${0.04 + (y % 6 === 0 ? 0.03 : 0)})`;
+      ctx.fillRect(0, y, cw, 1);
+    }
+    // Soft edge vignette so the face reads as a raised panel
+    const g = ctx.createRadialGradient(cw / 2, ch / 2, ch * 0.2, cw / 2, ch / 2, ch * 0.72);
+    g.addColorStop(0, 'rgba(40,36,32,0)');
+    g.addColorStop(1, 'rgba(0,0,0,0.35)');
+    ctx.fillStyle = g;
+    ctx.fillRect(0, 0, cw, ch);
+  }, 512, 288);
+}
+
+function makeCassetteLabelTex() {
+  return makeCanvasTexture((ctx, cw, ch) => {
+    ctx.fillStyle = '#0a0a0a';
+    ctx.fillRect(0, 0, cw, ch);
+    // Paper grain
+    for (let i = 0; i < 1200; i++) {
+      const n = 8 + Math.random() * 18;
+      ctx.fillStyle = `rgba(${n},${n},${n},0.5)`;
+      ctx.fillRect(Math.random() * cw, Math.random() * ch, 1.5, 1.5);
+    }
+    // Vertical tracking cue (left)
+    ctx.save();
+    ctx.translate(22, ch / 2);
+    ctx.rotate(-Math.PI / 2);
+    ctx.fillStyle = '#d8d4cc';
+    ctx.font = '600 11px "IBM Plex Mono", monospace';
+    ctx.textAlign = 'center';
+    ctx.fillText('FOR CLEANER PICTURE, ADJUST TRACKING', 0, 0);
+    ctx.restore();
+
+    ctx.fillStyle = '#f2eee6';
+    ctx.font = '700 36px "Bebas Neue", Impact, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('HALLOWEEN', cw * 0.55, ch * 0.28);
+    ctx.font = '600 18px "Bebas Neue", Impact, sans-serif';
+    ctx.fillStyle = '#e4e0d8';
+    ctx.fillText('SPECIAL EDITION', cw * 0.55, ch * 0.48);
+
+    ctx.fillStyle = '#b8b0a4';
+    ctx.font = '12px "IBM Plex Mono", monospace';
+    ctx.fillText('Cat. No. SV10272  ·  1978', cw * 0.55, ch * 0.68);
+
+    // Tiny legal lines
+    ctx.fillStyle = '#6a6660';
+    ctx.font = '7px "IBM Plex Mono", monospace';
+    [
+      'Licensed for private home exhibition only.',
+      'All rights reserved. Unauthorized duplication prohibited.',
+    ].forEach((line, i) => ctx.fillText(line, cw * 0.55, ch * 0.82 + i * 10));
+  }, 512, 320);
+}
+
+function makeCassetteFlapTex() {
+  return makeCanvasTexture((ctx, cw, ch) => {
+    ctx.fillStyle = '#12100e';
+    ctx.fillRect(0, 0, cw, ch);
+    for (let i = 0; i < 2000; i++) {
+      const v = 16 + Math.random() * 22;
+      ctx.fillStyle = `rgb(${v},${v - 1},${v - 2})`;
+      ctx.fillRect(Math.random() * cw, Math.random() * ch, 1, 1);
+    }
+    // Embossed cue text
+    ctx.fillStyle = 'rgba(55,52,48,0.95)';
+    ctx.font = '600 22px "IBM Plex Mono", monospace';
+    ctx.textAlign = 'left';
+    ctx.textBaseline = 'middle';
+    ctx.fillText('→  insert this side into recorder', 28, ch * 0.38);
+    ctx.font = '14px "IBM Plex Mono", monospace';
+    ctx.fillStyle = 'rgba(48,45,42,0.9)';
+    ctx.fillText('do not touch the tape inside', 48, ch * 0.68);
+
+    // VHS badge
+    ctx.strokeStyle = 'rgba(70,66,60,0.95)';
+    ctx.lineWidth = 2;
+    ctx.strokeRect(cw - 110, ch * 0.28, 78, ch * 0.44);
+    ctx.fillStyle = 'rgba(72,68,62,0.95)';
+    ctx.font = '700 26px "Bebas Neue", Impact, sans-serif';
+    ctx.textAlign = 'center';
+    ctx.fillText('VHS', cw - 71, ch * 0.55);
+  }, 768, 128);
+}
+
+function buildCassetteMesh() {
+  // Classic VHS ~187 × 103 × 25 mm — landscape in open clamshell, label toward +Z (out).
+  // Group is rotated 180° about Z at placement so the door/flap edge matches the tray.
+  const casW = (BOX_W - WALL * 2.5) * 0.93;
+  const casH = casW * (103 / 187);
+  const casD = Math.min(0.195, casW * 0.115);
+  const frontZ = casD / 2;
+  const eps = 0.004;
+
+  const cassette = new THREE.Group();
+  cassette.name = 'cassette';
+  cassette.userData.casH = casH;
+  cassette.userData.baseZ = -BOX_D / 2 + WALL + casD / 2 + 0.025;
+  cassette.userData.baseRotZ = Math.PI;
+
+  const shellMap = makeCassetteShellTex();
+  const shellMat = new THREE.MeshStandardMaterial({
+    color: 0x1a1816,
+    map: shellMap,
+    roughness: 0.92,
+    metalness: 0.04,
+    roughnessMap: plasticNoiseMap,
+    envMapIntensity: 0.55,
+  });
+  const darkWellMat = makePlasticMat(0x050504, { roughness: 0.96, envMapIntensity: 0.15 });
+  const seamMat = makePlasticMat(0x0a0908, { roughness: 0.7, metalness: 0.08, envMapIntensity: 0.4 });
+
+  // Main body — thick shell with stippled matte faces
+  const shell = new THREE.Mesh(new THREE.BoxGeometry(casW, casH, casD), shellMat);
+  shell.castShadow = true;
+  shell.receiveShadow = true;
+  cassette.add(shell);
+
+  // Side panels slightly darker so the shell reads as assembled halves
+  const sideSkin = makePlasticMat(0x10100e, { roughness: 0.9, envMapIntensity: 0.45 });
+  sideSkin.polygonOffset = true;
+  sideSkin.polygonOffsetFactor = -1;
+  sideSkin.polygonOffsetUnits = -1;
+  [-1, 1].forEach((side) => {
+    const panel = new THREE.Mesh(
+      new THREE.PlaneGeometry(casD * 0.96, casH * 0.96),
+      sideSkin,
+    );
+    panel.rotation.y = side > 0 ? Math.PI / 2 : -Math.PI / 2;
+    panel.position.x = side * (casW / 2 + eps);
+    cassette.add(panel);
+  });
+
+  // Bevel lip around front face
+  const lipMat = makePlasticMat(0x22201c, { roughness: 0.72, envMapIntensity: 0.65 });
+  const lipT = 0.022;
+  const lipZ = frontZ + eps;
+  [
+    { w: casW, h: lipT, x: 0, y: casH / 2 - lipT / 2 },
+    { w: casW, h: lipT, x: 0, y: -casH / 2 + lipT / 2 },
+    { w: lipT, h: casH - lipT * 2, x: -casW / 2 + lipT / 2, y: 0 },
+    { w: lipT, h: casH - lipT * 2, x: casW / 2 - lipT / 2, y: 0 },
+  ].forEach((p) => {
+    const m = new THREE.Mesh(new THREE.BoxGeometry(p.w, p.h, 0.01), lipMat);
+    m.position.set(p.x, p.y, lipZ);
+    cassette.add(m);
+  });
+
+  // Mid-shell seam (two halves) — inset so it never coplanar-fights the shell faces
+  const seam = new THREE.Mesh(
+    new THREE.BoxGeometry(casW * 0.998, casH * 0.998, 0.006),
+    seamMat,
+  );
+  cassette.add(seam);
+
+  // --- Window + label layout: reel | label | reel (classic VHS face) ---
+  const winR = casH * 0.235;
+  const reelSep = casW * 0.31;
+  const winY = casH * 0.08;
+  const labelW = casW * 0.26;
+  const labelH = casH * 0.48;
+
+  // Recessed label well — sunk clearly below the shell face
+  const labelWell = new THREE.Mesh(
+    new THREE.BoxGeometry(labelW + 0.03, labelH + 0.03, 0.028),
+    darkWellMat,
+  );
+  labelWell.position.set(0, winY, frontZ - 0.016);
+  cassette.add(labelWell);
+
+  const labelTex = makeCassetteLabelTex();
+  const label = new THREE.Mesh(
+    new THREE.PlaneGeometry(labelW, labelH),
+    new THREE.MeshStandardMaterial({
+      map: labelTex,
+      roughness: 0.78,
+      metalness: 0.0,
+      envMapIntensity: 0.25,
+      polygonOffset: true,
+      polygonOffsetFactor: -1,
+      polygonOffsetUnits: -1,
+    }),
+  );
+  label.position.set(0, winY, frontZ + eps * 2);
+  cassette.add(label);
+
+  // White hub + dark magnetic tape packs (one fuller) — matte to avoid breathe shimmer
+  const hubWhite = makePlasticMat(0xe8e4dc, {
+    roughness: 0.62,
+    metalness: 0.04,
+    envMapIntensity: 0.35,
+  });
+  const hubCore = makePlasticMat(0xc8c2b6, { roughness: 0.55, metalness: 0.06, envMapIntensity: 0.3 });
+  const tapeMat = new THREE.MeshStandardMaterial({
+    color: 0x1a1816,
+    roughness: 0.55,
+    metalness: 0.08,
+    envMapIntensity: 0.35,
+  });
+  const tapeMatDeep = new THREE.MeshStandardMaterial({
+    color: 0x0c0b0a,
+    roughness: 0.5,
+    metalness: 0.1,
+    envMapIntensity: 0.4,
+  });
+  // Opaque tinted window — transparent glass + DoubleSide caused sorting flicker
+  const glassMat = new THREE.MeshStandardMaterial({
+    color: 0x1a2830,
+    roughness: 0.22,
+    metalness: 0.05,
+    envMapIntensity: 0.45,
+    transparent: false,
+    opacity: 1,
+  });
+
+  const segs = isMobile ? 20 : 36;
+
+  function addReelWindow(side, fullness) {
+    const x = side * reelSep;
+    const g = new THREE.Group();
+    g.position.set(x, winY, 0);
+
+    // Circular well recess (sits in the front face)
+    const well = new THREE.Mesh(
+      new THREE.CylinderGeometry(winR + 0.02, winR + 0.016, 0.036, segs),
+      darkWellMat,
+    );
+    well.rotation.x = Math.PI / 2;
+    well.position.z = frontZ - 0.006;
+    g.add(well);
+
+    // Inner cavity floor
+    const floor = new THREE.Mesh(
+      new THREE.CircleGeometry(winR + 0.008, segs),
+      makePlasticMat(0x080706, { roughness: 0.9 }),
+    );
+    floor.position.z = frontZ - 0.02;
+    g.add(floor);
+
+    // Wound magnetic tape disk
+    const tapeOuter = winR * (0.4 + fullness * 0.52);
+    const tapeInner = winR * 0.2;
+
+    // White spool flange (more visible when tape is low)
+    const flange = new THREE.Mesh(
+      new THREE.CylinderGeometry(winR * 0.55, winR * 0.55, 0.01, segs),
+      hubWhite,
+    );
+    flange.rotation.x = Math.PI / 2;
+    flange.position.z = frontZ - 0.014;
+    g.add(flange);
+
+    const tape = new THREE.Mesh(
+      new THREE.CylinderGeometry(tapeOuter, tapeOuter, 0.028, segs),
+      fullness > 0.55 ? tapeMatDeep : tapeMat,
+    );
+    tape.rotation.x = Math.PI / 2;
+    tape.position.z = frontZ - 0.008;
+    tape.castShadow = true;
+    g.add(tape);
+
+    // Concentric tape rings for wind — kept below glass, clear of coplanar faces
+    for (let i = 0; i < 3; i++) {
+      const t = i / 3;
+      const r = tapeInner + (tapeOuter - tapeInner) * (0.35 + t * 0.55);
+      if (r >= tapeOuter * 0.98) continue;
+      const ring = new THREE.Mesh(
+        new THREE.TorusGeometry(r, 0.0035, 6, segs),
+        i % 2 ? tapeMat : tapeMatDeep,
+      );
+      ring.position.z = frontZ - 0.002 - i * 0.0015;
+      g.add(ring);
+    }
+
+    // White reel hub with gear teeth
+    const hubR = winR * 0.2;
+    const hub = new THREE.Mesh(
+      new THREE.CylinderGeometry(hubR, hubR, 0.036, 16),
+      hubWhite,
+    );
+    hub.rotation.x = Math.PI / 2;
+    hub.position.z = frontZ + 0.002;
+    hub.castShadow = true;
+    g.add(hub);
+
+    const core = new THREE.Mesh(
+      new THREE.CylinderGeometry(hubR * 0.35, hubR * 0.35, 0.04, 10),
+      hubCore,
+    );
+    core.rotation.x = Math.PI / 2;
+    core.position.z = frontZ + 0.006;
+    g.add(core);
+
+    // Drive teeth around hub
+    const toothN = 8;
+    for (let i = 0; i < toothN; i++) {
+      const a = (i / toothN) * Math.PI * 2;
+      const tooth = new THREE.Mesh(
+        new THREE.BoxGeometry(hubR * 0.28, hubR * 0.55, 0.012),
+        hubWhite,
+      );
+      tooth.position.set(
+        Math.cos(a) * hubR * 0.72,
+        Math.sin(a) * hubR * 0.72,
+        frontZ + 0.01,
+      );
+      tooth.rotation.z = a;
+      g.add(tooth);
+    }
+
+    // Spoke webs
+    for (let i = 0; i < 6; i++) {
+      const a = (i / 6) * Math.PI * 2 + 0.2;
+      const spoke = new THREE.Mesh(
+        new THREE.BoxGeometry(hubR * 0.16, hubR * 1.1, 0.008),
+        hubCore,
+      );
+      spoke.position.set(
+        Math.cos(a) * hubR * 0.45,
+        Math.sin(a) * hubR * 0.45,
+        frontZ + 0.012,
+      );
+      spoke.rotation.z = a;
+      g.add(spoke);
+    }
+
+    // Window frame lip (ring)
+    const rim = new THREE.Mesh(
+      new THREE.TorusGeometry(winR + 0.012, 0.011, 8, segs),
+      makePlasticMat(0x0e0c0a, { roughness: 0.65, envMapIntensity: 0.55 }),
+    );
+    rim.position.z = frontZ + eps * 2;
+    g.add(rim);
+
+    // Tinted glass (opaque — no transparent sorting flicker)
+    const glass = new THREE.Mesh(new THREE.CircleGeometry(winR, segs), glassMat);
+    glass.position.z = frontZ + eps * 3.5;
+    g.add(glass);
+
+    cassette.add(g);
+  }
+
+  addReelWindow(-1, 0.92); // full supply reel
+  addReelWindow(1, 0.22); // nearly empty take-up
+
+  // Tape path between reels (visible dark ribbon under label bottom)
+  const path = new THREE.Mesh(
+    new THREE.BoxGeometry(reelSep * 2 - winR * 0.6, 0.018, 0.01),
+    tapeMatDeep,
+  );
+  path.position.set(0, winY - winR * 0.72, frontZ + eps);
+  cassette.add(path);
+
+  // Front protective flap / door along the long (bottom) edge
+  const flapH = casH * 0.16;
+  const flapTex = makeCassetteFlapTex();
+  const flapBody = new THREE.Mesh(
+    new THREE.BoxGeometry(casW * 0.96, flapH, casD * 0.42),
+    makePlasticMat(0x171512, { roughness: 0.85, envMapIntensity: 0.5 }),
+  );
+  flapBody.position.set(0, -casH / 2 + flapH / 2 + 0.008, frontZ - casD * 0.08);
+  flapBody.castShadow = true;
+  cassette.add(flapBody);
+
+  const flapFace = new THREE.Mesh(
+    new THREE.PlaneGeometry(casW * 0.94, flapH * 0.88),
+    new THREE.MeshStandardMaterial({
+      map: flapTex,
+      roughness: 0.82,
+      metalness: 0.03,
+      envMapIntensity: 0.4,
+      polygonOffset: true,
+      polygonOffsetFactor: -1,
+      polygonOffsetUnits: -1,
+    }),
+  );
+  flapFace.position.set(0, -casH / 2 + flapH / 2 + 0.008, frontZ + eps * 2.5);
+  cassette.add(flapFace);
+
+  // Hinge groove above flap
+  const hingeGroove = new THREE.Mesh(
+    new THREE.BoxGeometry(casW * 0.92, 0.012, 0.01),
+    seamMat,
+  );
+  hingeGroove.position.set(0, -casH / 2 + flapH + 0.02, frontZ + eps);
+  cassette.add(hingeGroove);
+
+  // Write-protect notch
+  const notch = new THREE.Mesh(
+    new THREE.BoxGeometry(0.04, casH * 0.1, casD * 0.35),
+    darkWellMat,
+  );
+  notch.position.set(casW / 2 - 0.01, -casH * 0.18, -casD * 0.05);
+  cassette.add(notch);
+
+  // Corner screws + locator holes
+  const screwMat = makePlasticMat(0x3a3630, { roughness: 0.5, metalness: 0.25, envMapIntensity: 0.45 });
+  const screwHead = makePlasticMat(0x2a2622, { roughness: 0.55, metalness: 0.2 });
+  [
+    [-casW * 0.44, casH * 0.38],
+    [casW * 0.44, casH * 0.38],
+    [-casW * 0.44, -casH * 0.22],
+    [casW * 0.44, -casH * 0.22],
+  ].forEach(([x, y]) => {
+    const recess = new THREE.Mesh(
+      new THREE.CylinderGeometry(0.028, 0.028, 0.01, 12),
+      darkWellMat,
+    );
+    recess.rotation.x = Math.PI / 2;
+    recess.position.set(x, y, frontZ - 0.002);
+    cassette.add(recess);
+
+    const screw = new THREE.Mesh(
+      new THREE.CylinderGeometry(0.016, 0.016, 0.012, 10),
+      screwMat,
+    );
+    screw.rotation.x = Math.PI / 2;
+    screw.position.set(x, y, frontZ + eps);
+    cassette.add(screw);
+
+    // Phillips slot
+    const slot = new THREE.Mesh(
+      new THREE.BoxGeometry(0.02, 0.004, 0.004),
+      screwHead,
+    );
+    slot.position.set(x, y, frontZ + eps * 2.5);
+    cassette.add(slot);
+  });
+
+  // Small locator / mold holes near label
+  [-1, 1].forEach((side) => {
+    const hole = new THREE.Mesh(
+      new THREE.CylinderGeometry(0.012, 0.012, 0.01, 8),
+      darkWellMat,
+    );
+    hole.rotation.x = Math.PI / 2;
+    hole.position.set(side * labelW * 0.62, winY + labelH * 0.42, frontZ - 0.002);
+    cassette.add(hole);
+  });
+
+  return cassette;
+}
+
+/**
+ * Load authored VHS tape GLB into a Group named 'cassette'.
+ * Fits uniformly into the portrait clamshell tray; returns null on failure (procedural fallback).
+ *
+ * vhs_tape.glb (Sketchfab “VHS”) native axes ≈ X long · Y thin · Z face-height.
+ * Portrait tray: long axis along tray height (Y), short along width (X), label toward lid (+Z).
+ * Old vhs_cassette.glb was a Y-tall BOX — do not use it as the tape.
+ */
+async function loadCassetteGlb() {
+  try {
+    const loader = new GLTFLoader();
+    // GLB embeds textures; resource path covers any relative external refs
+    loader.setPath('./assets/');
+    loader.setResourcePath('./assets/');
+    const gltf = await loader.loadAsync('vhs_tape.glb');
+
+    const cassette = new THREE.Group();
+    cassette.name = 'cassette';
+
+    const model = gltf.scene;
+    cassette.add(model);
+
+    cassette.traverse((obj) => {
+      if (obj.isMesh) {
+        obj.castShadow = true;
+        obj.receiveShadow = true;
+      }
+    });
+
+    // Face-up (Rx) then yaw in tray (Rz): long → Y, short → X, thin → +Z (label to lid).
+    // Use quaternions — Euler XYZ (π/2,0,π/2) gimbal-swaps long onto Z.
+    const qx = new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(1, 0, 0), Math.PI / 2);
+    const qz = new THREE.Quaternion().setFromAxisAngle(new THREE.Vector3(0, 0, 1), Math.PI / 2);
+    model.quaternion.copy(qz).multiply(qx);
+
+    const box = new THREE.Box3().setFromObject(model);
+    const center = box.getCenter(new THREE.Vector3());
+    const size = box.getSize(new THREE.Vector3());
+    model.position.sub(center);
+
+    box.setFromObject(model);
+    box.getSize(size);
+
+    const trayW = BOX_W - WALL * 2.5;
+    const trayH = BOX_H - WALL * 2.5;
+    // Interior depth ≈ BOX_D − 2·WALL; leave a thin clearance so 88% height fit isn't crushed.
+    const maxD = Math.max(0.12, BOX_D - WALL * 2 - 0.02);
+    // Primary fit: long axis fills ~88% of tray height; clamp to width + depth.
+    let s = (trayH * 0.88) / Math.max(size.y, 1e-6);
+    if (size.x * s > trayW * 0.92) s = (trayW * 0.92) / Math.max(size.x, 1e-6);
+    if (size.z * s > maxD) s = Math.min(s, maxD / Math.max(size.z, 1e-6));
+    cassette.scale.setScalar(s);
+
+    box.setFromObject(cassette);
+    box.getSize(size);
+    const casD = size.z;
+
+    cassette.userData.casH = size.y;
+    cassette.userData.baseZ = -BOX_D / 2 + WALL + casD / 2 + 0.025;
+    cassette.userData.baseRotX = 0;
+    cassette.userData.baseRotY = 0;
+    cassette.userData.baseRotZ = 0;
+    cassette.userData.fromGlb = true;
+
+    return cassette;
+  } catch (err) {
+    console.warn('[poster-decompose] vhs_tape.glb failed, using procedural cassette', err);
+    return null;
+  }
+}
+
+async function buildInterior() {
   const g = new THREE.Group();
   g.name = 'interior';
 
@@ -902,112 +1355,17 @@ function buildInterior() {
   tray.receiveShadow = true;
   g.add(tray);
 
-  const casW = (BOX_W - WALL * 2.5) * 0.86;
-  const casH = casW * 0.62;
-  const casD = 0.11;
-  const cassette = new THREE.Mesh(
-    new THREE.BoxGeometry(casW, casH, casD),
-    makePlasticMat(0x1c1a18, { roughness: 0.72 }),
+  // Cassette INSIDE the shell — GLB first, procedural fallback
+  const cassette = (await loadCassetteGlb()) || buildCassetteMesh();
+  cassette.position.set(0, -0.06, cassette.userData.baseZ);
+  cassette.rotation.set(
+    cassette.userData.baseRotX ?? 0,
+    cassette.userData.baseRotY ?? 0,
+    cassette.userData.baseRotZ ?? Math.PI,
   );
-  cassette.position.set(0, -0.12, -BOX_D / 2 + WALL + 0.11);
-  cassette.castShadow = true;
-  cassette.name = 'cassette';
+  cassette.visible = false;
+  cassette.userData.shown = false;
   g.add(cassette);
-
-  const labelTex = makeCanvasTexture((ctx, cw, ch) => {
-    ctx.fillStyle = '#2a2218';
-    ctx.fillRect(0, 0, cw, ch);
-    ctx.fillStyle = '#c9a227';
-    ctx.font = '700 46px "Bebas Neue", Impact, sans-serif';
-    ctx.textAlign = 'center';
-    ctx.fillText('HALLOWEEN', cw / 2, ch * 0.4);
-    ctx.fillStyle = '#8a7f6e';
-    ctx.font = '20px "IBM Plex Mono", monospace';
-    ctx.fillText('1978 · SP · 948', cw / 2, ch * 0.7);
-  }, 512, 128);
-  const label = new THREE.Mesh(
-    new THREE.PlaneGeometry(casW * 0.7, casH * 0.2),
-    new THREE.MeshStandardMaterial({ map: labelTex, roughness: 0.5, metalness: 0.04 }),
-  );
-  label.position.set(0, casH * 0.28, casD / 2 + 0.001);
-  cassette.add(label);
-
-  const winW = casW * 0.52;
-  const winH = casH * 0.36;
-  const window = new THREE.Mesh(
-    new THREE.BoxGeometry(winW, winH, 0.018),
-    new THREE.MeshPhysicalMaterial({
-      color: 0x1e2830,
-      roughness: 0.2,
-      metalness: 0.08,
-      transparent: true,
-      opacity: 0.4,
-      clearcoat: 0.6,
-      clearcoatRoughness: 0.25,
-      depthWrite: false,
-    }),
-  );
-  window.position.set(0, -casH * 0.12, casD / 2 + 0.002);
-  cassette.add(window);
-
-  const reelMat = makePlasticMat(0x2a2622, { roughness: 0.6 });
-  const hubMat = makePlasticMat(0x0c0a08);
-  const reelR = winH * 0.3;
-  [-0.2, 0.2].forEach((ox) => {
-    const reel = new THREE.Mesh(new THREE.CylinderGeometry(reelR, reelR, 0.022, 28), reelMat);
-    reel.rotation.x = Math.PI / 2;
-    reel.position.set(ox * winW, -casH * 0.12, casD / 2 + 0.012);
-    cassette.add(reel);
-    const hub = new THREE.Mesh(
-      new THREE.CylinderGeometry(reelR * 0.26, reelR * 0.26, 0.028, 10),
-      hubMat,
-    );
-    hub.rotation.x = Math.PI / 2;
-    hub.position.copy(reel.position);
-    hub.position.z += 0.002;
-    cassette.add(hub);
-  });
-
-  const band = new THREE.Mesh(
-    new THREE.BoxGeometry(winW * 0.88, reelR * 0.32, 0.006),
-    makePlasticMat(0x0a0806, { roughness: 0.9 }),
-  );
-  band.position.set(0, -casH * 0.12, casD / 2 + 0.016);
-  cassette.add(band);
-
-  // Archive card stub behind cassette (visible when open)
-  const cardTex = makeCanvasTexture((ctx, cw, ch) => {
-    ctx.fillStyle = '#1a1612';
-    ctx.fillRect(0, 0, cw, ch);
-    ctx.strokeStyle = '#c9a227';
-    ctx.strokeRect(12, 12, cw - 24, ch - 24);
-    ctx.fillStyle = '#e8dcc8';
-    ctx.font = '700 36px "Bebas Neue", Impact, sans-serif';
-    ctx.fillText('CORPUS FICHA 948', 28, 70);
-    ctx.fillStyle = '#8a7f6e';
-    ctx.font = '18px "IBM Plex Mono", monospace';
-    const lines = [
-      `sym ${rawNum('symmetry').toFixed(3)}`,
-      `dark ${(rawNum('dark_share') * 100).toFixed(1)}%`,
-      `faces ${rawNum('faces')} · blood ${rawNum('nova_blood')}`,
-      `knife ${rawNum('nova_knife')} · OCR ${rawNum('ocr_conf').toFixed(2)}`,
-      `creature ${metricsData.raw.creature} ${rawNum('creature_score').toFixed(2)}`,
-    ];
-    lines.forEach((t, i) => ctx.fillText(t, 28, 120 + i * 36));
-  }, 512, 640);
-  const card = new THREE.Mesh(
-    new THREE.PlaneGeometry(casW * 0.92, casH * 1.15),
-    new THREE.MeshStandardMaterial({
-      map: cardTex,
-      roughness: 0.75,
-      metalness: 0.02,
-      transparent: true,
-      opacity: 0.95,
-    }),
-  );
-  card.position.set(0.08, 0.35, -BOX_D / 2 + WALL + 0.08);
-  card.name = 'archiveCard';
-  g.add(card);
 
   return g;
 }
@@ -1085,6 +1443,9 @@ function initAudioStub() {
 
 async function initThree() {
   const img = await resolveCoverImage();
+  const srcW = img.naturalWidth || img.width;
+  const srcH = img.naturalHeight || img.height;
+  setCoverAspect(srcW / srcH);
   plasticNoiseMap = makeNoiseMap();
 
   renderer = new THREE.WebGLRenderer({
@@ -1092,13 +1453,12 @@ async function initThree() {
     alpha: true,
     powerPreference: 'high-performance',
   });
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, isMobile ? 1.4 : 2));
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, isMobile ? 1.25 : 2));
   renderer.setSize(window.innerWidth, window.innerHeight);
   renderer.setClearColor(0x000000, 0);
   renderer.outputColorSpace = THREE.SRGBColorSpace;
-  // Neutral preserves orange/white better than ACES (less crush)
   renderer.toneMapping = THREE.NeutralToneMapping;
-  renderer.toneMappingExposure = 1.65;
+  renderer.toneMappingExposure = 1.55;
   renderer.shadowMap.enabled = !isMobile;
   renderer.shadowMap.type = THREE.PCFSoftShadowMap;
   el.stage.appendChild(renderer.domElement);
@@ -1107,17 +1467,13 @@ async function initThree() {
   scene.fog = new THREE.FogExp2(0x0a0806, 0.012);
   scene.environment = buildEnvMap();
 
-  // Longer lens → less foreshortening on the printed face
   camera = new THREE.PerspectiveCamera(26, window.innerWidth / window.innerHeight, 0.1, 80);
   camera.position.set(0.12, 0.06, 7.8);
 
-  const amb = new THREE.AmbientLight(0x5a4a40, 1.05);
-  scene.add(amb);
+  scene.add(new THREE.AmbientLight(0x6a5a50, 1.15));
+  scene.add(new THREE.HemisphereLight(0xfff2e0, 0x1a120e, 0.95));
 
-  const hemi = new THREE.HemisphereLight(0xfff2e0, 0x1a120e, 0.85);
-  scene.add(hemi);
-
-  keyLight = new THREE.DirectionalLight(0xfff5ea, 2.8);
+  keyLight = new THREE.DirectionalLight(0xfff5ea, 2.75);
   keyLight.position.set(2.2, 3.6, 6.2);
   keyLight.castShadow = !isMobile;
   if (keyLight.castShadow) {
@@ -1132,37 +1488,55 @@ async function initThree() {
   }
   scene.add(keyLight);
 
-  // Strong front fill — cover plane gets even illumination in ¾
-  const frontFill = new THREE.DirectionalLight(0xffffff, 1.35);
+  const frontFill = new THREE.DirectionalLight(0xffffff, 1.45);
   frontFill.position.set(0.2, 1.0, 7.0);
   scene.add(frontFill);
 
-  rimLight = new THREE.PointLight(0xe03828, 48, 20, 2);
+  // Soft fill into the open clamshell so black cassette plastic keeps edge definition
+  const interiorFill = new THREE.PointLight(0xffe8d0, 14, 8, 2);
+  interiorFill.position.set(0.15, 0.35, 1.1);
+  scene.add(interiorFill);
+
+  rimLight = new THREE.PointLight(0xe03828, 42, 20, 2);
   rimLight.position.set(-4.0, 1.8, 3.0);
   scene.add(rimLight);
 
-  const fill = new THREE.PointLight(0xffd090, 20, 18, 2);
+  const fill = new THREE.PointLight(0xffd090, 22, 18, 2);
   fill.position.set(3.2, -0.8, 4.0);
   scene.add(fill);
 
-  const bounce = new THREE.DirectionalLight(0x6a5848, 0.7);
+  const bounce = new THREE.DirectionalLight(0x6a5848, 0.8);
   bounce.position.set(-1.2, -3.2, 1.2);
   scene.add(bounce);
 
-  // Soft floor for real shadows
   floor = new THREE.Mesh(
     new THREE.PlaneGeometry(18, 18),
-    new THREE.ShadowMaterial({ opacity: 0.35 }),
+    new THREE.ShadowMaterial({ opacity: 0.38 }),
   );
   floor.rotation.x = -Math.PI / 2;
   floor.position.y = -BOX_H / 2 - 0.04;
   floor.receiveShadow = true;
   scene.add(floor);
 
+  // Dark floor disk (atmosphere under product)
+  const darkFloor = new THREE.Mesh(
+    new THREE.CircleGeometry(4.2, 48),
+    new THREE.MeshStandardMaterial({
+      color: 0x060504,
+      roughness: 0.95,
+      metalness: 0.02,
+      transparent: true,
+      opacity: 0.85,
+    }),
+  );
+  darkFloor.rotation.x = -Math.PI / 2;
+  darkFloor.position.y = -BOX_H / 2 - 0.038;
+  darkFloor.receiveShadow = true;
+  scene.add(darkFloor);
+
   vhsGroup = new THREE.Group();
   vhsGroup.name = 'vhs';
 
-  // Hinged lid: pivot at left (spine) edge
   lidPivot = new THREE.Group();
   lidPivot.name = 'lidPivot';
   lidPivot.position.set(-BOX_W / 2, 0, 0);
@@ -1189,24 +1563,23 @@ async function initThree() {
   const topTex = makeCanvasTexture((ctx, w, h) => drawTopEdge(ctx, w, h), 512, 128);
 
   baseShell.add(buildBaseShell(spineTex, backTex, topTex));
-  interiorGroup.add(buildInterior());
+  interiorGroup.add(await buildInterior());
   lidContent.add(buildLidFrame());
 
   contactShadow = buildContactShadow();
   vhsGroup.add(contactShadow);
 
-  const coverTex = drawCoverWear(img);
-  // Cover flush with bezel front face — same Z family, tiny epsilon in front of frame back
+  const coverTex = drawCoverClean(img);
   const frontZ = BOX_D / 2 - 0.001;
 
   const layerDefs = [
     { key: 'cover', mode: 'poster', z: frontZ, opacity: 1 },
-    { key: 'ocr', mode: 'ocr', z: frontZ + 0.01, opacity: 0 },
-    { key: 'faces', mode: 'faces', z: frontZ + 0.02, opacity: 0 },
-    { key: 'colors', mode: 'colors', z: frontZ + 0.03, opacity: 0 },
-    { key: 'symmetry', mode: 'symmetry', z: frontZ + 0.04, opacity: 0 },
-    { key: 'blood', mode: 'blood', z: frontZ + 0.05, opacity: 0 },
-    { key: 'medium', mode: 'medium', z: frontZ + 0.06, opacity: 0 },
+    { key: 'ocr', mode: 'ocr', z: frontZ + 0.008, opacity: 0 },
+    { key: 'faces', mode: 'faces', z: frontZ + 0.016, opacity: 0 },
+    { key: 'colors', mode: 'colors', z: frontZ + 0.024, opacity: 0 },
+    { key: 'symmetry', mode: 'symmetry', z: frontZ + 0.032, opacity: 0 },
+    { key: 'diagonals', mode: 'diagonals', z: frontZ + 0.036, opacity: 0 },
+    { key: 'blood', mode: 'blood', z: frontZ + 0.04, opacity: 0 },
   ];
 
   for (const def of layerDefs) {
@@ -1218,10 +1591,10 @@ async function initThree() {
             map: tex,
             transparent: true,
             opacity: def.opacity,
-            roughness: 0.4,
+            roughness: 0.45,
             metalness: 0.03,
             depthWrite: false,
-            envMapIntensity: 0.25,
+            envMapIntensity: 0.2,
           });
     const mesh = new THREE.Mesh(new THREE.PlaneGeometry(COVER_W, COVER_H), mat);
     mesh.position.z = def.z;
@@ -1233,7 +1606,6 @@ async function initThree() {
   }
   lidContent.add(layerGroup);
 
-  // Anchor for screen-space overlays (cover center)
   coverAnchor = new THREE.Object3D();
   coverAnchor.position.set(0, 0, frontZ);
   lidContent.add(coverAnchor);
@@ -1241,19 +1613,18 @@ async function initThree() {
   dust = buildDust();
   scene.add(dust);
 
-  // Hero ¾ — spine readable, cover plane nearly upright (minimal roll)
-  vhsGroup.rotation.set(-0.1, -0.52, 0.015);
-  vhsGroup.position.set(isMobile ? 0 : 0.5, 0.04, 0);
-  vhsGroup.scale.setScalar(isMobile ? 0.9 : 1.06);
+  // Hero ¾ — smaller so copy + overlays stay readable
+  vhsGroup.rotation.set(-0.08, -0.58, 0.02);
+  vhsGroup.position.set(isMobile ? 0 : 0.72, 0.02, 0);
+  vhsGroup.scale.setScalar(isMobile ? 0.58 : 0.68);
 
   if (el.tapeStamp) {
-    const cov = usingMediaCover ? 'Media box art' : 'poster.jpg';
-    el.tapeStamp.textContent = `${metricsData.title} · ${metricsData.year} · ${cov}`;
+    el.tapeStamp.textContent = `${metricsData.title} · ${metricsData.year} · poster.jpg`;
   }
 }
 
 function buildDust() {
-  const n = isMobile ? 48 : 140;
+  const n = isMobile ? 36 : 100;
   const pos = new Float32Array(n * 3);
   for (let i = 0; i < n; i++) {
     pos[i * 3] = (Math.random() - 0.5) * 12;
@@ -1264,11 +1635,11 @@ function buildDust() {
   geo.setAttribute('position', new THREE.BufferAttribute(pos, 3));
   const mat = new THREE.PointsMaterial({
     color: 0xd4550a,
-    size: 0.026,
+    size: 0.024,
     transparent: true,
-    opacity: 0.22,
+    opacity: 0.12,
     depthWrite: false,
-    blending: THREE.AdditiveBlending,
+    blending: THREE.NormalBlending,
   });
   return new THREE.Points(geo, mat);
 }
@@ -1289,216 +1660,514 @@ function setLayerOpacity(key, opacity) {
   mesh.visible = mesh.material.opacity > 0.02;
 }
 
-function setGroupOpacity(group, opacity) {
-  group.traverse((obj) => {
-    if (obj.isMesh && obj.material) {
-      const mats = Array.isArray(obj.material) ? obj.material : [obj.material];
-      for (const m of mats) {
-        if (m && 'opacity' in m) {
-          m.transparent = true;
-          m.opacity = opacity;
-        }
-      }
-    }
-  });
-}
-
 function worldToScreen(v3) {
   const v = v3.clone().project(camera);
+  const canvas = renderer.domElement;
+  const rect = canvas.getBoundingClientRect();
   return {
-    x: (v.x * 0.5 + 0.5) * window.innerWidth,
-    y: (-v.y * 0.5 + 0.5) * window.innerHeight,
+    x: (v.x * 0.5 + 0.5) * rect.width + rect.left,
+    y: (-v.y * 0.5 + 0.5) * rect.height + rect.top,
     visible: v.z > -1 && v.z < 1,
   };
 }
 
+/** UV on cover plane → world (u,v in 0–1, v grows downward). */
+function coverUvToWorld(u, v, target) {
+  const cover = layers.cover;
+  if (!cover) {
+    target.set(0, 0, 0);
+    return target;
+  }
+  const x = (u - 0.5) * COVER_W;
+  const y = (0.5 - v) * COVER_H;
+  const z = 0.025;
+  return target.set(x, y, z).applyMatrix4(cover.matrixWorld);
+}
+
+function screenAabbFromUvs(uvs) {
+  let minX = Infinity;
+  let minY = Infinity;
+  let maxX = -Infinity;
+  let maxY = -Infinity;
+  const tmp = new THREE.Vector3();
+  for (const [u, v] of uvs) {
+    coverUvToWorld(u, v, tmp);
+    const s = worldToScreen(tmp);
+    minX = Math.min(minX, s.x);
+    minY = Math.min(minY, s.y);
+    maxX = Math.max(maxX, s.x);
+    maxY = Math.max(maxY, s.y);
+  }
+  return { left: minX, top: minY, width: Math.max(2, maxX - minX), height: Math.max(2, maxY - minY) };
+}
+
+function overlayLabelText(def) {
+  return String((def && def.label) || '').trim();
+}
+
+/** True when an overlay has something worth painting (no empty shells). */
+function overlayHasContent(def) {
+  if (!def || !def.type) return false;
+  const label = overlayLabelText(def);
+  if (def.type === 'palette') {
+    return (def.samples && def.samples.length > 0) || !!(def.cue && String(def.cue).trim());
+  }
+  if (def.type === 'diagonals') {
+    return (def.lines && def.lines.length > 0) || !!label;
+  }
+  if (def.type === 'chip') return !!label;
+  if (def.type === 'faces') {
+    // Prefer hide empty face bbox when zero detections (copy/counter carry the "0")
+    const n = metricsData && metricsData.raw ? Number(metricsData.raw.faces) : NaN;
+    if (Number.isFinite(n) && n <= 0) return false;
+    return !!label;
+  }
+  if (def.type === 'bbox' || def.type === 'symmetry') return !!label;
+  return !!label;
+}
+
+function deactivateOverlayNode(node) {
+  if (!node) return;
+  node.className = 'ov';
+  node.style.opacity = '0';
+  node.style.visibility = 'hidden';
+  node.style.left = '';
+  node.style.top = '';
+  node.style.width = '';
+  node.style.height = '';
+  node.style.transform = '';
+  node.style.transformOrigin = '';
+  node.querySelectorAll('.ov-box, .ov-chip, .ov-label').forEach((child) => {
+    child.hidden = true;
+    if (child.classList.contains('ov-chip') || child.classList.contains('ov-label')) {
+      child.textContent = '';
+    }
+  });
+}
+
+function activeOverlayDef(beatId, p) {
+  if (!metricsData) return null;
+  const beat = metricsData.beats.find((b) => b.id === beatId);
+  if (!beat || !beat.overlay) return null;
+  // Hold overlay only while this beat owns progress (no stacking)
+  const [a, b] = beat.progress;
+  if (p < a || p >= b) return null;
+  if (!overlayHasContent(beat.overlay)) return null;
+  return beat.overlay;
+}
+
+/** DOM overlay fade: long lead on beat copy, then reveal mid-beat. */
+function overlayRevealAmount(beatId, p) {
+  if (!metricsData) return 0;
+  const beat = metricsData.beats.find((b) => b.id === beatId);
+  if (!beat || !beat.overlay) return 0;
+  const [a, b] = beat.progress;
+  if (p < a || p >= b) return 0;
+  return smoothstep(0.38, 0.58, beatLocalT(beatId, p));
+}
+
+function beatLocalT(beatId, p) {
+  if (!metricsData) return 0;
+  const beat = metricsData.beats.find((b) => b.id === beatId);
+  if (!beat) return 0;
+  const [a, b] = beat.progress;
+  return clamp((p - a) / Math.max(1e-6, b - a), 0, 1);
+}
+
+/**
+ * Soft crossfade for left copy: hold through overlay reveal (~0.42–0.62 localT),
+ * fade only in the last ~12% / first ~10% of each beat's progress range.
+ */
+function beatCopyOpacity(beat, p) {
+  const [a, bEnd] = beat.progress;
+  const span = Math.max(1e-6, bEnd - a);
+  const t = (p - a) / span;
+  if (t <= -0.05 || t >= 1.05) return 0;
+  // Soft edges slightly past neighbors for a brief crossfade
+  const fadeIn = smoothstep(-0.02, 0.1, t);
+  const fadeOut = 1 - smoothstep(0.88, 1.02, t);
+  return clamp(fadeIn * fadeOut, 0, 1);
+}
+
 function updateOverlays(p, beatId) {
-  if (!el.overlays || !coverAnchor) return;
+  if (!el.overlays || !layers.cover) return;
   const tmpA = new THREE.Vector3();
   const tmpB = new THREE.Vector3();
 
+  // Matrices must be current — overlays run before renderer.render()
+  camera.updateMatrixWorld(true);
+  layers.cover.updateWorldMatrix(true, false);
+
+  const liveDef = activeOverlayDef(beatId, p);
+  const overlayReveal = overlayRevealAmount(beatId, p);
+
   Object.keys(overlayNodes).forEach((id) => {
-    const { el: node, def } = overlayNodes[id];
-    const active = id === beatId;
-    const opacity = active ? 1 : 0;
-    node.style.opacity = String(opacity);
-    node.classList.toggle('on', active);
-    if (!active) return;
+    const { el: node } = overlayNodes[id];
+    const def = id === beatId ? liveDef : null;
+    const active = !!(def && id === beatId && overlayHasContent(def));
+    if (!active || !def || overlayReveal <= 0.02) {
+      deactivateOverlayNode(node);
+      return;
+    }
 
-    // Position relative to cover corners
-    const lidWorld = new THREE.Matrix4();
-    lidContent.updateWorldMatrix(true, false);
-    lidWorld.copy(lidContent.matrixWorld);
+    const boxEl = node.querySelector('.ov-box');
+    const chipEl = node.querySelector('.ov-chip');
+    const labelEl = node.querySelector('.ov-label');
+    const label = overlayLabelText(def);
+    node.className = `ov ov-${def.type} on`;
+    node.style.opacity = String(overlayReveal);
+    node.style.visibility = 'visible';
+    node.style.transform = '';
+    node.style.left = '';
+    node.style.top = '';
+    node.style.width = '';
+    node.style.height = '';
+    node.style.transformOrigin = '';
 
-    const toWorld = (u, v, target) => {
-      const x = (u - 0.5) * COVER_W;
-      const y = (0.5 - v) * COVER_H;
-      const z = layers.cover.userData.baseZ + 0.02;
-      target.set(x, y, z).applyMatrix4(lidWorld);
-      return target;
-    };
+    // Default: hide chrome; each type opts in
+    if (boxEl) boxEl.hidden = true;
+    if (chipEl) {
+      chipEl.hidden = true;
+      chipEl.textContent = '';
+    }
+    if (labelEl) {
+      labelEl.hidden = true;
+      labelEl.textContent = '';
+    }
 
-    if (def.type === 'bbox' || def.type === 'faces') {
-      const uv = def.uv || [0.1, 0.1, 0.3, 0.2];
-      toWorld(uv[0], uv[1], tmpA);
-      toWorld(uv[0] + uv[2], uv[1] + uv[3], tmpB);
+    if (def.type === 'palette') {
+      const samples = def.samples || [];
+      const handles = node.querySelectorAll('.pal-handle');
+      handles.forEach((h, i) => {
+        const s = samples[i];
+        if (!s) {
+          h.style.display = 'none';
+          return;
+        }
+        h.style.display = '';
+        coverUvToWorld(s.uv[0], s.uv[1], tmpA);
+        const scr = worldToScreen(tmpA);
+        h.style.left = `${scr.x}px`;
+        h.style.top = `${scr.y}px`;
+        const ok = hexToOklch(s.hex);
+        h.style.background = s.hex;
+        h.style.color = ok.light ? '#0a0806' : '#f0e6d4';
+      });
+      // Cover AABB → cue top-right only (swatch panel is in left copy column)
+      const coverBox = screenAabbFromUvs([
+        [0.02, 0.02],
+        [0.98, 0.02],
+        [0.02, 0.98],
+        [0.98, 0.98],
+      ]);
+      const cue = node.querySelector('.pal-cue');
+      if (cue) {
+        const cueText = String(def.cue || '').trim();
+        if (!cueText) {
+          cue.hidden = true;
+          cue.textContent = '';
+        } else {
+          cue.hidden = false;
+          cue.textContent = cueText;
+          cue.style.left = `${coverBox.left + coverBox.width - 8}px`;
+          cue.style.top = `${coverBox.top + 8}px`;
+          cue.style.transform = 'translateX(-100%)';
+        }
+      }
+      return;
+    }
+
+    if (def.type === 'diagonals') {
+      if (labelEl) {
+        if (label) {
+          labelEl.hidden = false;
+          labelEl.textContent = label;
+        } else {
+          labelEl.hidden = true;
+          labelEl.textContent = '';
+        }
+      }
+      const lines = def.lines || [];
+      const lineEls = node.querySelectorAll('.diag-line');
+      // Container origin at cover top-left for label placement
+      const coverBox = screenAabbFromUvs([
+        [0.02, 0.02],
+        [0.98, 0.02],
+        [0.02, 0.98],
+        [0.98, 0.98],
+      ]);
+      node.style.left = `${coverBox.left}px`;
+      node.style.top = `${coverBox.top}px`;
+      node.style.width = `${coverBox.width}px`;
+      node.style.height = `${coverBox.height}px`;
+      lineEls.forEach((lineEl, i) => {
+        const ln = lines[i];
+        if (!ln) {
+          lineEl.style.display = 'none';
+          return;
+        }
+        lineEl.style.display = 'block';
+        coverUvToWorld(ln.from[0], ln.from[1], tmpA);
+        coverUvToWorld(ln.to[0], ln.to[1], tmpB);
+        const a = worldToScreen(tmpA);
+        const b = worldToScreen(tmpB);
+        const dx = b.x - a.x;
+        const dy = b.y - a.y;
+        const len = Math.hypot(dx, dy) || 2;
+        const angle = (Math.atan2(dy, dx) * 180) / Math.PI;
+        lineEl.style.left = `${a.x - coverBox.left}px`;
+        lineEl.style.top = `${a.y - coverBox.top}px`;
+        lineEl.style.width = `${len}px`;
+        lineEl.style.transform = `rotate(${angle}deg)`;
+      });
+      return;
+    }
+
+    if (def.type === 'chip') {
+      if (!label || !chipEl) {
+        deactivateOverlayNode(node);
+        return;
+      }
+      chipEl.hidden = false;
+      chipEl.textContent = label;
+      const cu = def.uv ? def.uv[0] : 0.9;
+      const cv = def.uv ? def.uv[1] : 0.14;
+      coverUvToWorld(cu, cv, tmpA);
       const a = worldToScreen(tmpA);
-      const b = worldToScreen(tmpB);
-      const left = Math.min(a.x, b.x);
-      const top = Math.min(a.y, b.y);
-      const width = Math.abs(b.x - a.x);
-      const height = Math.abs(b.y - a.y);
-      node.style.left = `${left}px`;
-      node.style.top = `${top}px`;
-      node.style.width = `${width}px`;
-      node.style.height = `${height}px`;
-    } else if (def.type === 'symmetry') {
-      const axis = def.axis != null ? def.axis : 0.5;
-      toWorld(axis, 0.05, tmpA);
-      toWorld(axis, 0.95, tmpB);
-      const a = worldToScreen(tmpA);
-      const b = worldToScreen(tmpB);
-      node.style.left = `${a.x}px`;
-      node.style.top = `${Math.min(a.y, b.y)}px`;
-      node.style.width = '2px';
-      node.style.height = `${Math.abs(b.y - a.y)}px`;
-    } else {
-      // Floating label near right edge of cover
-      toWorld(0.92, 0.18, tmpA);
-      const a = worldToScreen(tmpA);
-      node.style.left = `${a.x + 12}px`;
+      node.style.left = `${a.x + 10}px`;
       node.style.top = `${a.y}px`;
       node.style.width = 'auto';
       node.style.height = 'auto';
+      node.style.transform = 'translateY(-50%)';
+      return;
+    }
+
+    if (def.type === 'faces') {
+      const nFaces =
+        metricsData && metricsData.raw ? Number(metricsData.raw.faces) : NaN;
+      // Hide empty face bbox when zero detections — copy/counter already say "0 faces"
+      if (Number.isFinite(nFaces) && nFaces <= 0) {
+        deactivateOverlayNode(node);
+        return;
+      }
+    }
+
+    // bbox / faces / symmetry — require a label so we never paint a naked shell
+    if (!label) {
+      deactivateOverlayNode(node);
+      return;
+    }
+    if (labelEl) {
+      labelEl.hidden = false;
+      labelEl.textContent = label;
+    }
+
+    if (def.type === 'bbox' || def.type === 'faces') {
+      if (boxEl) boxEl.hidden = false;
+      const uv = def.uv || [0.1, 0.1, 0.3, 0.2];
+      const [u0, v0, uw, vh] = uv;
+      if (!(uw > 0 && vh > 0)) {
+        deactivateOverlayNode(node);
+        return;
+      }
+      const box = screenAabbFromUvs([
+        [u0, v0],
+        [u0 + uw, v0],
+        [u0, v0 + vh],
+        [u0 + uw, v0 + vh],
+      ]);
+      if (box.width < 4 || box.height < 4) {
+        deactivateOverlayNode(node);
+        return;
+      }
+      node.style.left = `${box.left}px`;
+      node.style.top = `${box.top}px`;
+      node.style.width = `${box.width}px`;
+      node.style.height = `${box.height}px`;
+    } else if (def.type === 'symmetry') {
+      const axis = def.axis != null ? def.axis : 0.5;
+      coverUvToWorld(axis, 0.06, tmpA);
+      coverUvToWorld(axis, 0.94, tmpB);
+      const a = worldToScreen(tmpA);
+      const b = worldToScreen(tmpB);
+      const dx = b.x - a.x;
+      const dy = b.y - a.y;
+      const len = Math.hypot(dx, dy) || 2;
+      const angle = (Math.atan2(dy, dx) * 180) / Math.PI;
+      node.style.left = `${a.x}px`;
+      node.style.top = `${a.y}px`;
+      node.style.width = `${len}px`;
+      node.style.height = '2px';
+      node.style.transformOrigin = '0 50%';
+      node.style.transform = `rotate(${angle}deg)`;
+    } else {
+      deactivateOverlayNode(node);
     }
   });
 
-  // Metric counter HUD
   if (el.counter && metricsData) {
     const beat = metricsData.beats.find((b) => b.id === beatId);
     const raw = metricsData.raw;
     let html = '';
-    if (beat && beat.metricKey === 'ocr') {
-      html = `<b>OCR</b> ${(raw.ocr_conf * 100).toFixed(1)}%`;
-    } else if (beat && beat.metricKey === 'faces') {
-      html = `<b>FACES</b> ${raw.faces}`;
-    } else if (beat && beat.metricKey === 'colors') {
-      html = `<b>DARK</b> ${(raw.dark_share * 100).toFixed(0)}%`;
-    } else if (beat && beat.metricKey === 'symmetry') {
-      html = `<b>SYM</b> ${raw.symmetry.toFixed(3)}`;
-    } else if (beat && beat.metricKey === 'blood') {
-      html = `<b>KNIFE</b> ${raw.nova_knife.toFixed(2)}`;
-    } else if (beat && beat.metricKey === 'medium') {
-      html = `<b>PAINT</b> ${raw.p_painted.toFixed(2)}`;
-    } else if (beat && beat.metricKey === 'census') {
-      html = `<b>CREATURE</b> ${raw.creature_score.toFixed(2)}`;
-    }
+    const key = beat && beat.metricKey;
+    if (key === 'ocr') html = `<b>OCR</b> ${(raw.ocr_conf * 100).toFixed(1)}%`;
+    else if (key === 'faces')
+      html = `<b>FACES</b> ${raw.faces} · <b>CRT</b> ${Number(raw.creature_score).toFixed(2)}`;
+    else if (key === 'colors') html = `<b>DARK</b> ${(raw.dark_share * 100).toFixed(0)}%`;
+    else if (key === 'symmetry') html = `<b>SYM</b> ${Number(raw.symmetry).toFixed(2)}`;
+    else if (key === 'diagonals')
+      html = `<b>DIAG</b> ${Number(raw.diagonal_score).toFixed(2)}`;
+    else if (key === 'blood') html = `<b>BLOOD</b> ${Number(raw.nova_blood).toFixed(2)}`;
+    else if (key === 'knife') html = `<b>KNIFE</b> ${Number(raw.nova_knife).toFixed(2)}`;
+    else if (key === 'archive') html = `<b>TAPE</b> ${metricsData.id}`;
     el.counter.innerHTML = html;
-    el.counter.style.opacity = html ? '1' : '0';
+    const showCounter = html && beatLocalT(beatId, p) > 0.38;
+    el.counter.style.opacity = showCounter
+      ? String(smoothstep(0.38, 0.55, beatLocalT(beatId, p)))
+      : '0';
   }
 }
 
 /**
- * 4-act choreography:
- * I  hero ¾  (0–0.12)
- * II face-on (0.12–0.22)
- * III peel one layer/beat (0.22–0.82)
- * IV apertura / archivo (0.82–1) — hinged open, not explode
+ * Beat choreography (progress 0–1):
+ * 1 Hero ¾ closed        (0–0.12)
+ * 2 Read face-on + OCR   (0.12–0.26)
+ * 3 Faces / creature     (0.26–0.38)
+ * 4 Palette              (0.38–0.52)
+ * 5 Symmetry             (0.52–0.64)
+ * 6 Diagonals            (0.64–0.74)
+ * 7 Blood                (0.74–0.82)
+ * 8 Knife (cover closed) (0.82–0.90)
+ * 9 Archive soft lid     (0.90–1)
  */
 function updateScene(p) {
   const t = clock.elapsedTime;
-  const breathe = reducedMotion ? 0 : Math.sin(t * 0.65) * 0.014;
 
-  const faceOn = remap(p, 0.1, 0.2);
-  const peelZone = remap(p, 0.22, 0.8);
-  const open = remap(p, 0.8, 0.96);
+  const faceOn = remap(p, 0.13, 0.24);
+  // Hold face-on through knife; lid open only on final archive beat
+  const measureZone = remap(p, 0.28, 0.88);
+  const open = remap(p, 0.90, 0.98);
 
-  const rotY = lerp(-0.52, -0.015, faceOn) + peelZone * 0.03 + open * -0.1;
-  const rotX = lerp(-0.1, -0.008, faceOn) + peelZone * -0.02 + open * -0.05;
-  const rotZ = lerp(0.015, 0.0, faceOn) + open * 0.02;
+  // Soft idle motion; dampen when open so cassette plastics don't shimmer
+  const breathe =
+    reducedMotion ? 0 : Math.sin(t * 0.55) * 0.012 * (1 - open * 0.85);
 
-  vhsGroup.rotation.set(rotX + breathe, rotY, rotZ + breathe * 0.25);
+  const rotY = lerp(-0.58, -0.012, faceOn) + measureZone * 0.02 + open * -0.18;
+  const rotX = lerp(-0.08, -0.006, faceOn) + measureZone * -0.015 + open * -0.06;
+  const rotZ = lerp(0.02, 0.0, faceOn) + open * 0.02;
 
+  vhsGroup.rotation.set(rotX + breathe, rotY, rotZ + breathe * 0.2);
+
+  // Keep box on the right (desktop) so left copy + overlays stay clear
   const posX =
-    lerp(isMobile ? 0 : 0.5, isMobile ? 0 : -0.02, faceOn) +
-    peelZone * (isMobile ? 0 : -0.16) +
-    open * (isMobile ? 0 : 0.12);
-  const posY = lerp(0.04, 0.02, faceOn) + open * 0.06;
-  const posZ = lerp(0, 0.32, faceOn) - peelZone * 0.1 - open * 0.28;
+    lerp(isMobile ? 0 : 0.72, isMobile ? 0 : 0.55, faceOn) +
+    measureZone * (isMobile ? 0 : 0.06) +
+    open * (isMobile ? 0.04 : 0.12);
+  const posY = lerp(0.02, 0.0, faceOn) + open * 0.03;
+  const posZ = lerp(0, 0.18, faceOn) - measureZone * 0.04 - open * 0.1;
   vhsGroup.position.set(posX, posY + breathe, posZ);
 
-  const baseScale = isMobile ? 0.9 : 1.06;
-  const scale = baseScale * lerp(1, 1.05, faceOn) * lerp(1, 0.94, open);
+  const baseScale = isMobile ? 0.58 : 0.68;
+  // Slightly smaller when face-on / measuring so overlays fit the cover
+  const scale = baseScale * lerp(1, 0.92, faceOn) * lerp(1, 0.9, measureZone) * lerp(1, 0.95, open);
   vhsGroup.scale.setScalar(scale);
 
-  // --- Lid apertura (hinged) ---
-  const openAngle = open * (isMobile ? -1.05 : -1.25); // radians ~72–72°
+  // Soft hinged lid — swings open to reveal cassette tape inside (no explode / no ficha)
+  const openAngle = open * (isMobile ? -1.15 : -1.45);
   lidPivot.rotation.y = openAngle;
 
-  // Interior / archive card emphasis on open
-  const card = interiorGroup.getObjectByName('archiveCard');
-  if (card) {
-    card.material.opacity = lerp(0.15, 0.95, open);
-    card.position.x = lerp(0.08, 0.35, open);
-    card.position.z = lerp(-BOX_D / 2 + WALL + 0.08, 0.15, open);
-    card.rotation.y = open * -0.15;
+  const cassette = interiorGroup.getObjectByName('cassette');
+  if (cassette) {
+    // Hysteresis: once the lid starts opening, keep cassette visible (no flash at threshold)
+    if (open > 0.04) cassette.userData.shown = true;
+    if (open < 0.005) cassette.userData.shown = false;
+    cassette.visible = !!cassette.userData.shown;
+    const baseZ = cassette.userData.baseZ ?? -BOX_D / 2 + WALL + 0.1;
+    cassette.position.z = lerp(baseZ, baseZ + 0.06, open);
+    cassette.position.y = lerp(-0.06, 0.02, open);
+    const baseRotX = cassette.userData.baseRotX ?? 0;
+    const baseRotY = cassette.userData.baseRotY ?? 0;
+    const baseRotZ = cassette.userData.baseRotZ ?? Math.PI;
+    // Gentle lift only — avoid aggressive tilt (z-fighting with tray)
+    cassette.rotation.set(baseRotX + open * -0.012, baseRotY, baseRotZ);
   }
 
   if (contactShadow) {
-    contactShadow.material.opacity = lerp(0.9, 0.45, open);
+    contactShadow.material.opacity = lerp(0.9, 0.55, open);
     contactShadow.scale.set(lerp(1, 1.25, open), 1, lerp(1, 1.1, open));
   }
 
-  // --- Layer peel: one beat at a time, gentle lift (not chaos) ---
-  const layerKeys = ['ocr', 'faces', 'colors', 'symmetry', 'blood', 'medium'];
-  const windows = {
-    ocr: [0.22, 0.32],
-    faces: [0.32, 0.42],
-    colors: [0.42, 0.52],
-    symmetry: [0.52, 0.62],
-    blood: [0.62, 0.72],
-    medium: [0.72, 0.82],
-  };
-
-  setLayerOpacity('cover', lerp(1, 0.55, peelZone) * lerp(1, 0.35, open));
-
-  layerKeys.forEach((key, idx) => {
-    const [a, b] = windows[key];
-    const mid = (a + b) / 2;
-    const on = smoothstep(a, a + 0.025, p) * (1 - smoothstep(b - 0.02, b + 0.01, p));
-    // Soft residual after each beat during peel
-    const residual = smoothstep(a, mid, p) * (1 - open) * 0.08;
-    setLayerOpacity(key, Math.max(on, residual) * (1 - open * 0.85));
-
-    const mesh = layers[key];
-    if (!mesh) return;
-    const lift = on * 0.55;
-    // Gentle peel toward camera + slight offset per layer — orderly, not explode
-    const side = idx % 2 === 0 ? -1 : 1;
-    mesh.position.x = side * lift * 0.12 + open * (0.55 + idx * 0.28);
-    mesh.position.y = lift * 0.08 + open * (0.35 - idx * 0.12);
-    mesh.position.z = mesh.userData.baseZ + lift * 0.35 + open * (0.4 + idx * 0.08);
-    mesh.rotation.z = side * lift * 0.04 + open * side * 0.06;
-    mesh.rotation.y = open * side * 0.12;
-  });
-
-  // Cover settles into archivo fan
-  if (layers.cover) {
-    layers.cover.position.x = open * 0.25;
-    layers.cover.position.y = open * 0.2;
-    layers.cover.position.z = layers.cover.userData.baseZ + open * 0.25;
-    layers.cover.rotation.y = open * 0.08;
+  if (dust) {
+    dust.material.opacity = lerp(0.12, 0.02, open);
+    dust.visible = dust.material.opacity > 0.01;
   }
 
-  const camZ = lerp(7.8, 6.5, faceOn) - peelZone * 0.12 + open * 0.45;
-  const camX =
-    lerp(0.12, -0.02, faceOn) + (reducedMotion ? 0 : Math.sin(t * 0.1) * 0.025) + open * 0.2;
-  const camY = 0.05 + (reducedMotion ? 0 : Math.cos(t * 0.09) * 0.02) + open * 0.07;
-  camera.position.set(camX, camY, camZ);
-  camera.lookAt(vhsGroup.position.x * 0.2, vhsGroup.position.y * 0.1, open * 0.12);
+  // --- Layer choreography: one metric layer at a time ---
+  // Keep cover fully opaque through Read→Knife; only the hinged lid reveals interior
+  setLayerOpacity('cover', 1);
 
-  if (keyLight) keyLight.intensity = lerp(2.8, 2.2, open);
-  if (rimLight) rimLight.intensity = lerp(48, 30, faceOn) + open * 12;
+  // Read: OCR tint after copy settles (read 0.12–0.26)
+  const ocrOn = smoothstep(0.18, 0.22, p) * (1 - smoothstep(0.24, 0.28, p));
+  setLayerOpacity('ocr', ocrOn);
+
+  // Each measure layer: delay so sticky copy leads, then fade before next beat.
+  // No colors peel during palette — only numbered handles + left-rail swatches.
+  const peelWindows = [
+    { key: 'faces', a: 0.3, b: 0.375 },
+    { key: 'symmetry', a: 0.56, b: 0.635 },
+    { key: 'diagonals', a: 0.675, b: 0.735 },
+    { key: 'blood', a: 0.765, b: 0.815 },
+  ];
+  // Force palette-era peels off (OCR / faces / colors) so nothing tints the cover
+  setLayerOpacity('colors', 0);
+  if (layers.colors) {
+    layers.colors.position.set(0, 0, layers.colors.userData.baseZ);
+    layers.colors.rotation.set(0, 0, 0);
+  }
+  peelWindows.forEach(({ key, a, b }) => {
+    const on = smoothstep(a, a + 0.02, p) * (1 - smoothstep(b - 0.015, b, p));
+    setLayerOpacity(key, on * (1 - open));
+    const mesh = layers[key];
+    if (!mesh) return;
+    const lift = on * 0.028;
+    mesh.position.x = 0;
+    mesh.position.y = lift * 0.02;
+    mesh.position.z = mesh.userData.baseZ + lift;
+    mesh.rotation.z = 0;
+    mesh.rotation.y = 0;
+  });
+
+  // Soft residual tint during knife (cover still closed); fades as lid opens
+  if (p >= 0.82 && p < 0.90) {
+    setLayerOpacity('blood', smoothstep(0.82, 0.86, p) * (1 - smoothstep(0.875, 0.90, p)) * 0.22);
+    if (layers.blood) {
+      layers.blood.position.set(0, 0, layers.blood.userData.baseZ + 0.01);
+      layers.blood.rotation.set(0, 0, 0);
+    }
+  } else if (p >= 0.90) {
+    setLayerOpacity('blood', smoothstep(0.90, 0.94, p) * (1 - open * 0.45) * 0.18);
+    if (layers.blood) {
+      layers.blood.position.set(0, 0, layers.blood.userData.baseZ + 0.01);
+      layers.blood.rotation.set(0, 0, 0);
+    }
+  }
+
+  // Keep cover on the lid — no fly-away / no fan
+  if (layers.cover) {
+    layers.cover.position.set(0, 0, layers.cover.userData.baseZ);
+    layers.cover.rotation.set(0, 0, 0);
+  }
+
+  const camZ = lerp(8.4, 7.2, faceOn) - measureZone * 0.05 + open * 0.45;
+  const camX =
+    lerp(0.18, 0.08, faceOn) + (reducedMotion ? 0 : Math.sin(t * 0.08) * 0.015) + open * 0.28;
+  const camY = 0.04 + (reducedMotion ? 0 : Math.cos(t * 0.07) * 0.012) + open * 0.06;
+  camera.position.set(camX, camY, camZ);
+  camera.lookAt(vhsGroup.position.x * 0.35, vhsGroup.position.y * 0.08, open * 0.04);
+  camera.updateMatrixWorld(true);
+
+  if (keyLight) keyLight.intensity = lerp(2.6, 2.1, open);
+  if (rimLight) rimLight.intensity = lerp(42, 28, faceOn) + open * 10;
 
   el.bar.style.width = `${(p * 100).toFixed(1)}%`;
   updateActiveBeat(p);
@@ -1512,19 +2181,24 @@ function updateActiveBeat(p) {
     if (p >= a && p < bEnd) idx = i;
     if (p >= 0.999 && i === metricsData.beats.length - 1) idx = i;
   });
+
+  beatEls.forEach((sec, i) => {
+    const beat = metricsData.beats[i];
+    const op = beatCopyOpacity(beat, p);
+    const inner = sec.querySelector('.beat-inner');
+    if (inner) inner.style.opacity = String(op);
+    sec.classList.toggle('active', i === idx);
+  });
+
   if (idx !== activeBeat) {
     activeBeat = idx;
-    beatEls.forEach((sec, i) => sec.classList.toggle('active', i === idx));
     const beat = metricsData.beats[idx];
-    const actMeta = (metricsData.acts || []).find((a) => a.id === ['hero', 'face', 'peel', 'archivo'][beat.act - 1]) ||
-      (metricsData.acts || []).find((a) => p >= a.range[0] && p < a.range[1]);
     el.beatLabel.textContent = `TRACK ${String(idx + 1).padStart(2, '0')} · ${beat.kicker}`;
     if (el.actLabel) {
       const act = metricsData.acts && metricsData.acts[beat.act - 1];
       el.actLabel.textContent = act ? act.label : `Acto ${beat.act}`;
     }
-    const cov = usingMediaCover ? 'Media' : 'poster';
-    el.tapeStamp.textContent = `${metricsData.title} · ${metricsData.year} · id ${metricsData.id} · ${cov}`;
+    el.tapeStamp.textContent = `${metricsData.title} · ${metricsData.year} · id ${metricsData.id} · poster.jpg`;
   }
   const beat = metricsData.beats[activeBeat];
   updateOverlays(p, beat ? beat.id : null);
@@ -1532,10 +2206,10 @@ function updateActiveBeat(p) {
 
 function tick() {
   const dt = Math.min(clock.getDelta(), 0.05);
-  const lag = reducedMotion ? 1 : isMobile ? 0.2 : 0.11;
+  const lag = reducedMotion ? 1 : isMobile ? 0.16 : 0.075;
   scrollProgress = lerp(scrollProgress, targetProgress, 1 - Math.pow(1 - lag, dt * 60));
   updateScene(scrollProgress);
-  if (dust) dust.rotation.y = clock.elapsedTime * 0.028;
+  if (dust) dust.rotation.y = clock.elapsedTime * 0.022;
   renderer.render(scene, camera);
 }
 
@@ -1544,7 +2218,7 @@ function onResize() {
   camera.aspect = window.innerWidth / window.innerHeight;
   camera.updateProjectionMatrix();
   renderer.setSize(window.innerWidth, window.innerHeight);
-  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, isMobile ? 1.4 : 2));
+  renderer.setPixelRatio(Math.min(window.devicePixelRatio || 1, isMobile ? 1.25 : 2));
   const max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
   targetProgress = clamp(window.scrollY / max, 0, 1);
   scrollProgress = targetProgress;

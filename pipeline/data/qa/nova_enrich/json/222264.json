@@ -1,0 +1,50 @@
+{
+  "title_text": "PARANORMAL ASYLUM",
+  "credits_text": "THE REVENGE OF TYPHOID MARY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "haunting",
+    "eerie",
+    "terrifying"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "asylum",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.5,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild blood and gore, and themes of horror and violence.",
+  "description": "A ghostly figure in a tattered white dress stands in a dark, eerie asylum setting with bloodstains on the floor."
+}

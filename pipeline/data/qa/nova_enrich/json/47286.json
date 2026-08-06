@@ -1,0 +1,41 @@
+{
+  "title_text": "COOL AIR",
+  "credits_text": "H. P. LOVECRAFT'S JACK DONNER, BRYAN MOORE, VERA LOCKWOOD, DUKE FLYSWATTER, RON FORD DIRECTOR OF PHOTOGRAPHY MICHAEL BRATKOWSKI EDITOR SAM OLDHAM MUSIC STEVEN YEAMAN BASED ON THE SHORT STORY BY H.P. LOVECRAFT SCREENPLAY BY BRYAN MOORE PRODUCED AND DIRECTED BY BRYAN MOORE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "mystery",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and ghostly imagery.",
+  "description": "A man types at a desk with a ghostly, monstrous face looming behind him, set against swirling dark clouds."
+}

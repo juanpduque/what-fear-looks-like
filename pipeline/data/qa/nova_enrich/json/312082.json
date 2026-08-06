@@ -1,0 +1,39 @@
+{
+  "title_text": "ENEMY UNSEEN",
+  "credits_text": "SOMEWHERE IN THE DARKNESS THE PREDATOR WAITS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NOVA VIDEO",
+  "mood": [
+    "action",
+    "thriller",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and weapon imagery.",
+  "description": "A man holds a rifle with skulls in the background, accompanied by other armed figures and dramatic text."
+}

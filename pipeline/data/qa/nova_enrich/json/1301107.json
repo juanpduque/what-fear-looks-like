@@ -1,0 +1,42 @@
+{
+  "title_text": "HORRORABLE WOMEN",
+  "credits_text": "Director and Producer: Cindy Sanabria\nAssociate Producer: Thomas James Ludena\nEditor: Gabriel Cynbalista\nMusic: Randry Arza\nCast: Amy Crabtree, Salmina Cooper, Rabia Stiliati, Crystal Courtr, Jennifer Valdez, Sarah Agnes Church",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DIRECTOR",
+  "mood": [
+    "gothic",
+    "eerie",
+    "psychological",
+    "disturbing",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and disturbing imagery.",
+  "description": "A collage of five women's faces with eerie expressions, some showing blood, arranged in a grid pattern with the title 'HORRORABLE WOMEN' prominently displayed."
+}

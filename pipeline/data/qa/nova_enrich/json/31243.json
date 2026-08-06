@@ -1,0 +1,39 @@
+{
+  "title_text": "ROBOT VS. THE AZTEC MUMMY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "camp",
+    "sci-fi",
+    "horror",
+    "retro",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "robot",
+      "conf": 0.95
+    },
+    {
+      "name": "mummy",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.1,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Vintage poster features a robot, a mummy, and a woman in a dramatic confrontation, evoking classic sci-fi and horror themes."
+}

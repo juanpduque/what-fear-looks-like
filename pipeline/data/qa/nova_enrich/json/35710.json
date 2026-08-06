@@ -1,0 +1,39 @@
+{
+  "title_text": "SNAKES ON A TRAIN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "913",
+  "mood": [
+    "thriller",
+    "horror",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "snake",
+      "conf": 1.0
+    },
+    {
+      "name": "train",
+      "conf": 0.9
+    },
+    {
+      "name": "danger",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 1.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense horror elements with a large snake threatening a train.",
+  "description": "A poster shows a large snake attacking a train with its mouth open wide, set against a fiery background."
+}

@@ -1,0 +1,48 @@
+{
+  "title_text": "GRINDSPOLIATION",
+  "credits_text": "REVENGE OF THE SCHLOCK",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ART BY JOSH STIPPLE MARSH STUDIOS",
+  "mood": [
+    "horror",
+    "grotesque",
+    "surreal",
+    "violent",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, gore, and partial nudity.",
+  "description": "A horror poster features a monstrous blue creature with multiple limbs attacking two women in a dark forest setting."
+}

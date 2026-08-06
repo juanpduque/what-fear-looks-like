@@ -1,0 +1,8 @@
+export BUCKET=sagemaker-studio-a5572760
+export PREFIX=wflike-community-72k
+export AWS_DEFAULT_REGION=us-east-1
+export DOWNLOAD_WORKERS=24
+export REK_WORKERS=10
+export MIN_INTERVAL=0.04
+export SAVE_EVERY=25
+export SYNC_SECS=120

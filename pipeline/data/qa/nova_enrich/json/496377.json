@@ -1,0 +1,51 @@
+{
+  "title_text": "AAKRI RAAT",
+  "credits_text": "A BIG SANDHYA MEHRA, SUDHIR DALVI, MUKESH KHANNA",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "other_text": "अाखरी रात",
+  "mood": [
+    "horror",
+    "gothic",
+    "supernatural",
+    "dread",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "blood",
+      "conf": 0.55
+    }
+  ],
+  "weapon": 0.1,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and implied violence.",
+  "description": "Poster features a group of people with a monstrous creature and eerie background, suggesting a horror theme."
+}

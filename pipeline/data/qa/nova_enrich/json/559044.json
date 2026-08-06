@@ -1,0 +1,45 @@
+{
+  "title_text": "ПОЙМАТЬ ВЕДЬМУ",
+  "credits_text": "",
+  "languages": [
+    "ru"
+  ],
+  "other_text": "",
+  "mood": [
+    "supernatural",
+    "haunting",
+    "mysterious",
+    "dark",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and a ghostly figure.",
+  "description": "A dark, blurred figure with flowing hair is captured mid-motion against a shadowy forest background, with Russian text above."
+}

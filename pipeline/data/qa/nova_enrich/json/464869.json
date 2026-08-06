@@ -1,0 +1,43 @@
+{
+  "title_text": "STRANGERS WITHIN",
+  "credits_text": "THEY'RE CLOSER THAN YOU THINK",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COMING SOON",
+  "mood": [
+    "suspense",
+    "mystery",
+    "thriller",
+    "dark",
+    "anxious"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "night",
+      "conf": 0.95
+    },
+    {
+      "name": "lonely",
+      "conf": 0.85
+    },
+    {
+      "name": "uncanny",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dimly lit poster shows two silhouetted figures near a bus stop at night, with the title 'Strangers Within' and a tagline."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "BIG BAD VS MONSTER THE ULTIMATE BATTLE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "fantasy",
+    "sci-fi",
+    "camp",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.1,
+  "animal": 0.8,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violent conflict between monsters and creatures.",
+  "description": "Movie poster features a large snake, dinosaur, panther, and flames with bold red text reading \"BIG BAD VS MONSTER THE ULTIMATE BATTLE.\""
+}

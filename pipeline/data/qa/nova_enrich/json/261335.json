@@ -1,0 +1,49 @@
+{
+  "title_text": "MORTAL REMAINS",
+  "credits_text": "Starring WILLIAM SMITH LEE AXE SANDRA SANTANA BIZAN NEVIN RITCHIE STEVEN G. KNOBL Starred in \"The Night Evelyn Came Out of the Grave\" by JEFFREY COMBS Directed by KARL M. SCHNEIDER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WHO WILL SURVIVE WHEN THE HORROR IS UNLEASHED?",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.85
+    },
+    {
+      "name": "ghost",
+      "conf": 0.75
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.65
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic horror imagery including skulls, fire, and implied violence.",
+  "description": "A poster features a central fiery figure with large eyes, surrounded by skulls and a ghostly hand holding a weapon, with dramatic red and black colors."
+}

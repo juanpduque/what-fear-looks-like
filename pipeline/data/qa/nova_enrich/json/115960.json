@@ -1,0 +1,41 @@
+{
+  "title_text": "怪物",
+  "credits_text": "黄秋生 刘美玲",
+  "languages": [
+    "zh"
+  ],
+  "other_text": "一夜之间，王小强的世界发生了巨大变化，他的女友突然变成了恐怖的怪物！ 10月7日周四上映",
+  "mood": [
+    "horror",
+    "dread",
+    "gothic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, depicting a horror scenario.",
+  "description": "A poster shows a man with a bloody face and a terrified woman, promoting a horror film titled \"Monster\" releasing on October 7th."
+}

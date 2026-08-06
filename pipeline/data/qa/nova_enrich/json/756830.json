@@ -1,0 +1,42 @@
+{
+  "title_text": "WARM BLOOD",
+  "credits_text": "MICK J. HINES, ESPEN HILLER, ROLAND MOLLE, CHARLES VAN BELL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "thriller",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatters and intense imagery.",
+  "description": "A poster featuring the title \"WARM BLOOD\" in red splatter font over a wall with photographs and bloodstains."
+}

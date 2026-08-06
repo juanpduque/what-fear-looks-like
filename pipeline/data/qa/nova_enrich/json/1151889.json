@@ -1,0 +1,41 @@
+{
+  "title_text": "MUSFER",
+  "credits_text": "ŞEN KABILESİ",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YÖNETMEN: MASSIMO MANICED, YARDIMCI YÖNETMEN: AHMET SAHIN, YAPIMCI: ÇENES ÇELIK AFİŞ TASARIM: ARYA RIZAD, MÜZIK: YE KURGU: ARYA RIZAD ENĞN KAHYR: ZÜLFÜ HAMIT ALTI, MÜRAH DURAN, ZEKÄ YILMAZÖTURK MAKEUP: EBRAĞ GÜRBÜZLİK, SEÇ SEFFI MUSTAFA AK GÖRÜNTÜ YÖNETMENİ: KADIR GÖRKEN",
+  "mood": [
+    "dread",
+    "gothic",
+    "violent",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A poster shows a distressed man with blood on his face and arm, suggesting a horror theme."
+}

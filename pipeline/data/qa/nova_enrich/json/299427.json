@@ -1,0 +1,37 @@
+{
+  "title_text": "鬼畜花子傳",
+  "credits_text": "主演 大川久子 IIIII 宇野重吉",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "其他文字包括發行商信息和電影類型標籤",
+  "mood": [
+    "gothic",
+    "eerie",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.8,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A vintage movie poster features a woman in traditional attire with a menacing blue cat-like creature looming behind her, evoking a gothic and eerie atmosphere."
+}

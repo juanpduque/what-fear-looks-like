@@ -1,0 +1,45 @@
+{
+  "title_text": "THE RIZEN",
+  "credits_text": "THE GOVERNMENT'S DARKEST SECRETS HAVE JUST ESCAPED",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "monster"
+  ],
+  "moderation_notes": "Contains horror elements including monstrous creatures and implied violence.",
+  "description": "A poster shows three zombie-like figures emerging from a cave with a dilapidated building in the background under a stormy sky."
+}

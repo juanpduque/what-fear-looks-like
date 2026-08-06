@@ -1,0 +1,46 @@
+{
+  "title_text": "LONG LIVE THE DEAD",
+  "credits_text": "STEPHANIE DANIELSON AMDY EYRAM CHRISTINE HALEBMAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A ZOMBIE ANTHOLOGY",
+  "mood": [
+    "horror",
+    "zombie",
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery including blood and gore.",
+  "description": "A poster featuring a zombie-like figure with pale skin and red eyes, with bold red text reading 'LONG LIVE THE DEAD' and 'A ZOMBIE ANTHOLOGY.'"
+}

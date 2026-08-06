@@ -1,0 +1,52 @@
+{
+  "bucket": "sagemaker-studio-a5572760",
+  "prefix": "wflike-custom-labels/medium",
+  "region": "us-east-1",
+  "n_gold": 421,
+  "n_train": 315,
+  "n_test": 106,
+  "uploaded": 421,
+  "miss_jpg": 0,
+  "logreg_macro_f1": 0.5134641986693894,
+  "train_manifest": "s3://sagemaker-studio-a5572760/wflike-custom-labels/medium/train.manifest",
+  "test_manifest": "s3://sagemaker-studio-a5572760/wflike-custom-labels/medium/test.manifest",
+  "prepared_at": "2026-08-04T01:32:47.000Z",
+  "project_arn": "arn:aws:rekognition:us-east-1:567596065542:project/wflike-medium-clf/1785807168455",
+  "project_name": "wflike-medium-clf",
+  "train_dataset_arn": "arn:aws:rekognition:us-east-1:567596065542:project/wflike-medium-clf/dataset/train/1785807168558",
+  "test_dataset_arn": "arn:aws:rekognition:us-east-1:567596065542:project/wflike-medium-clf/dataset/test/1785807168858",
+  "version_name": "v202608040132",
+  "version_arn": "arn:aws:rekognition:us-east-1:567596065542:project/wflike-medium-clf/version/v202608040132/1785807179332",
+  "training_started_at": "2026-08-04T01:32:59.000Z",
+  "status": "STOPPED",
+  "status_message": "Model STOPPED after idle billing recovery; StartProjectVersion deferred to EC2 chain.",
+  "custom_labels_f1": 0.645,
+  "training_completed_reported_at": "2026-08-04T11:54:00Z",
+  "source": "cloud_agent_report_2026-08-04",
+  "inference": {
+    "launched_at": "2026-08-05T03:14:20Z",
+    "instance_id": "i-0dc931ddfbb749134",
+    "name": "wflike-custom-labels-infer",
+    "n_ids": 65201,
+    "ids_source": "posters_extended",
+    "min_inference_units": 1,
+    "results_s3": "s3://sagemaker-studio-a5572760/wflike-custom-labels/infer/results/",
+    "local_csv": "pipeline/data/qa/medium_custom_labels/infer_full.csv",
+    "stop_model_on_done": true,
+    "start_model_at_launch": false
+  },
+  "stopped_at": "2026-08-05T03:14:20Z",
+  "recovery": {
+    "terminated": [
+      "i-07b62870cc441c343",
+      "i-0ed17614a9172bf6c",
+      "i-08115119185977ef4"
+    ],
+    "relaunched": {
+      "vision_gap": "i-09b28cbb8d70cb032",
+      "nova_gap20k": "i-013b1b5f7946af48a",
+      "custom_labels_infer": "i-0dc931ddfbb749134"
+    },
+    "note": "CL model started from EC2 chain only when ready to DetectCustomLabels"
+  }
+}

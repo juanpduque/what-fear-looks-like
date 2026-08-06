@@ -1,0 +1,42 @@
+{
+  "title_text": "AXECUTIONER",
+  "credits_text": "DRUNK BY BEER. DEAD BY AXE.\nJUKO RAITAINEN, SAMPA RATTU, JARO MALBERG and VESA SILVANEN as a hobo executive producers, VESA SILVANEN JUKO RAITAINEN SAMPA RATTU written by, and JARO MALBERG",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AXE! BLOOD! GORE! BEER! \"AXECUTIONER cured my anal warts\" - Lloyd Kaufman President of Troma Entertainment Center of the TOXIC AVENGER",
+  "mood": [
+    "violent",
+    "gruesome",
+    "satirical",
+    "horror",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "axe",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 0.5,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; may be disturbing to some audiences.",
+  "description": "A poster features a large axe dripping blood, with a hooded figure and bold red text reading \"AXECUTIONER. DRUNK BY BEER. DEAD BY AXE.\""
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "HELLO",
+  "credits_text": "TV JONES FILMS, A CENTURY ROAD ENTERTAINMENT PRESENTATION \"HELLO\" LAURIE CATHERINE WINKEL, CULLEMAN CRENSHAW, TISHA SHART DONAHUE, RICHARD LANE, KYLE KELLY, JAKE JACKSON, JOSHUA TYDES, ROSS DAMON JONES, AND THE GREENS \"MIKE KEPNER\" WITH TYLER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Would you answer the door?",
+  "mood": [
+    "suspense",
+    "mystery",
+    "thriller",
+    "psychological",
+    "claustrophobic"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A black-and-white poster shows a lone figure standing in a dimly lit hallway, with the title \"HELLO\" prominently displayed below."
+}

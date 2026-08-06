@@ -1,0 +1,46 @@
+{
+  "title_text": "TRAPPED ALIVE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "OSBOURN18",
+  "mood": [
+    "horror",
+    "gothic",
+    "eerie",
+    "dread",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "cage",
+      "conf": 0.8
+    },
+    {
+      "name": "text",
+      "conf": 1.0
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "sexual",
+    "violence"
+  ],
+  "moderation_notes": "Contains partial nudity and implied threat, may not be suitable for all audiences.",
+  "description": "A woman in lingerie is trapped in a dark, cage-like setting with a monstrous, hairy creature looming over her, creating a tense and eerie atmosphere."
+}

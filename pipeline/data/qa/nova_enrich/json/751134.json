@@ -1,0 +1,45 @@
+{
+  "title_text": "DEAD UNDEAD",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FOUR TEENAGERS, ONE BEAST OF HELLFIRE... PLACE YOUR BETS",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "dark",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 0.5,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features intense and dark imagery, suggesting potential violence.",
+  "description": "A dramatic poster shows a large sword held by a shadowy figure with a tagline about teenagers and a beast of hellfire."
+}

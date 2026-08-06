@@ -1,0 +1,37 @@
+{
+  "title_text": "死神女士",
+  "credits_text": "李雪健+廖碧儿",
+  "languages": [
+    "zh"
+  ],
+  "other_text": "中国电影集团公司出品",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring a close-up of a woman's face with intense eyes, overlaid text, and a shadowy figure in the background."
+}

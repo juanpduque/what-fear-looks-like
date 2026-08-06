@@ -1,0 +1,35 @@
+{
+  "title_text": "FORTRESS",
+  "credits_text": "RACHEL WARD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A teacher and her class kidnapped. A whole town held to ransom. The terror began the day Santa came to call.",
+  "mood": [
+    "thriller",
+    "suspense",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "threatening_face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a threatening scenario.",
+  "description": "A woman holds a gun while standing in front of a group of people, with a menacing Santa Claus figure in the background."
+}

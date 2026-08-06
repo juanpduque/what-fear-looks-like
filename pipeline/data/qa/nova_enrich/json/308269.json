@@ -1,0 +1,41 @@
+{
+  "title_text": "CORE QUEBEC",
+  "credits_text": "A GREEN LAKE FILM MYTHIC STARS AMY WALLING THE VANCIAN THOMAS CRAWFORD KATE ELSE KOREY DANIEL ROBBIE PRICE CRAIG BUCKLE STONE JIMMY LEE FOREST TIMMER JIMMY LEE FOREST TIMMER JEAN BENOIT LAUDEN JEAN BENOIT LAUDEN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "thriller",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A poster shows a person holding an axe over a red-stained ground in a forest, with bold text reading 'CORE QUEBEC.'"
+}

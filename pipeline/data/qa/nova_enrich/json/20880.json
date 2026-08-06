@@ -1,0 +1,44 @@
+{
+  "title_text": "MIDNIGHT CHRONICLES",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "epic",
+    "fantasy",
+    "dramatic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "dragon",
+      "conf": 0.95
+    },
+    {
+      "name": "battle",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.1,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense battle scenes and dragon imagery, suggesting potential violence.",
+  "description": "A dragon soars over a burning city with soldiers below, featuring bold title text 'MIDNIGHT CHRONICLES.'"
+}

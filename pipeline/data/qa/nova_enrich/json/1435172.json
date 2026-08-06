@@ -1,0 +1,41 @@
+{
+  "title_text": "THE DEMONESS",
+  "credits_text": "ANDREW STUART\n\"In an era of Art the Clown, where violence can catch for the sake of it, sometimes mayhem can scratch an itch something more cerebral can't satisfy.\" DOUGLAS DAVIDSON, CRITICS' CHOICE ASSOCIATION\n\"Offers a mix of chills, chuckles and mayhem\" TERRY SHERWOOD, BLOODY FLICKS\nPHIL WHEAT, NERDLY\n\"WINNER BEST HORROR FILM\" FANTASIA FEST",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "camp",
+    "satirical",
+    "gothic",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild horror themes and implied violence.",
+  "description": "Poster features a woman in a red outfit with a demonic expression, overlaid with critical quotes and festival awards."
+}

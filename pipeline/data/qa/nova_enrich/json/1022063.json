@@ -1,0 +1,43 @@
+{
+  "title_text": "捕鬼",
+  "credits_text": "A Film by Feng Yi",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Capture Ghosts",
+  "mood": [
+    "mysterious",
+    "haunting",
+    "eerie",
+    "dark",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "dark",
+      "conf": 0.9
+    },
+    {
+      "name": "mystery",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, eerie poster shows two silhouetted figures in a night setting with a title 'Capture Ghosts' and director credit."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "Deadly Love poem",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "romantic",
+    "gothic",
+    "haunting",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "mirror",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "blood",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and blood-like stains, suggesting mature themes.",
+  "description": "A woman in a red dress with a flower crown stands in front of a broken mirror, with a shadowy figure behind her. The poster has a dark, gothic aesthetic."
+}

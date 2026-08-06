@@ -1,0 +1,42 @@
+{
+  "title_text": "Death Hospital",
+  "credits_text": "SOVIA\nDIANA RADNAI\nVERA HUEBNER\nTHOMAS HARBORT",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "other_text": "Du solltest nicht töten...",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "hospital",
+      "conf": 0.95
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and implied violence.",
+  "description": "A poster shows a hospital room with a blood-stained operating table and medical equipment, suggesting a horror theme."
+}

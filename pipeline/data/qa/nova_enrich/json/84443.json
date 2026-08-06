@@ -1,0 +1,43 @@
+{
+  "title_text": "Day X",
+  "credits_text": "THE END IS NEARER THAN YOU THINK.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "apocalyptic",
+    "dystopic",
+    "anxious",
+    "intense",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "gas_mask",
+      "conf": 0.95
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.85
+    },
+    {
+      "name": "distress",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring a close-up of a person wearing a gas mask with intense, screaming faces reflected in the lenses. The title 'Day X' looms above with a dramatic tagline."
+}

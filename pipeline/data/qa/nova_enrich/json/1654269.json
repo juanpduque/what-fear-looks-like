@@ -1,0 +1,39 @@
+{
+  "title_text": "the SPIDER",
+  "credits_text": "A HORROR SPIDER-MAN FAN FILM BY ANDY CHEN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CHANDLER RIGGS",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller",
+    "suspense",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "spider",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark silhouette of a man faces forward against a red, smoky cityscape with a large spider graphic below the title."
+}

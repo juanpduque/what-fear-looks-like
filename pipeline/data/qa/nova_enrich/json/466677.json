@@ -1,0 +1,49 @@
+{
+  "title_text": "VAMPIRE WARS",
+  "credits_text": "LINCOLN'S ARMY BATTLES THE UNDEAD.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dramatic",
+    "historical",
+    "fantasy",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "battle",
+      "conf": 0.7
+    },
+    {
+      "name": "historical",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and monstrous imagery.",
+  "description": "A dramatic poster features a woman with an American flag design on her face, a shadowy figure, and a battlefield scene, suggesting a historical vampire conflict."
+}

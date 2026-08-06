@@ -1,0 +1,47 @@
+{
+  "title_text": "ATTACK OF THE ADULT BABIES",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horrific",
+    "surreal",
+    "disturbing",
+    "camp",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic imagery, nudity, and disturbing themes.",
+  "description": "A poster features a large red silhouette of a woman with a small, bald man in the foreground. The title \"Attack of the Adult Babies\" is prominently displayed."
+}

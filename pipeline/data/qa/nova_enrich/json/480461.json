@@ -1,0 +1,50 @@
+{
+  "title_text": "LOS RESUCITADOS",
+  "credits_text": "UN FILME DE ARTURO DE BOBADILLA\nPAUL NASCHY\nANTONIO MAYANS\nTONI VILARIÑO\nMANUEL VILARIÑO\nSANTIAGO SECOERA",
+  "languages": [
+    "es"
+  ],
+  "other_text": "INSPIRADO EN LEYENDAS DE GUSTAVO ADOLFO BÉCQUER Y OTROS MISTERIOS",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "mystery",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains dark themes and mild violent imagery.",
+  "description": "A poster features a skeletal figure holding a scythe against a red background, with cast names and the title 'Los Resucitados' prominently displayed."
+}

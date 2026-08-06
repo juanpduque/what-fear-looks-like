@@ -1,0 +1,45 @@
+{
+  "title_text": "BLESSED ARE THE CHILDREN",
+  "credits_text": "KALEY BALL, KENI BOUNDS, ARIAN THIGPEN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THEY WILL BE AVENGED",
+  "mood": [
+    "gothic",
+    "dread",
+    "eerie",
+    "haunting",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "haunting",
+      "conf": 0.9
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and eerie imagery.",
+  "description": "A poster shows a dark pram with a shadowy figure emerging, set in a gloomy, abandoned room with large windows."
+}

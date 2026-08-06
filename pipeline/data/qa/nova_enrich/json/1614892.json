@@ -1,0 +1,35 @@
+{
+  "title_text": "",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "The Rexburg Psycho 2",
+  "mood": [
+    "intense",
+    "threatening",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violent themes due to weapon and masked figure.",
+  "description": "A person wearing a white mask holds a chainsaw in a bathroom, with text overlay reading 'The Rexburg Psycho 2.'"
+}

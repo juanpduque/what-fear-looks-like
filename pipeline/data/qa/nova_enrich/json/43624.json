@@ -1,0 +1,45 @@
+{
+  "title_text": "BANS HEE!!!",
+  "credits_text": "BY THE TIME YOU HEAR IT... YOU'RE ALREADY DEAD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SYNTHETIC CINEMA INTERNATIONAL",
+  "mood": [
+    "horror",
+    "dread",
+    "gothic",
+    "surreal",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features a monstrous creature and a tagline suggesting horror themes.",
+  "description": "A poster shows a menacing, multi-eyed monster with three small figures in front, under a dark, dramatic sky."
+}

@@ -1,0 +1,37 @@
+{
+  "title_text": "THE NOISY NEIGHBOUR MASSACRE",
+  "credits_text": "COMING SOON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "intense",
+    "dramatic",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the chainsaw and intense imagery.",
+  "description": "A poster featuring a person holding a chainsaw with bold red and white text reading 'THE NOISY NEIGHBOUR MASSACRE' and 'COMING SOON.'"
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "Fallen Soldiers",
+  "credits_text": "THE WALKING DEAD MEETS SHARP",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FROM THE BLOODIED BATTLEFIELDS A NEW HORROR IS BORN! 18",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "violent",
+    "historical"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.85,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore, suitable for mature audiences.",
+  "description": "A zombie in a red military uniform crouches amidst a battlefield with soldiers in the background, blood splattered around."
+}

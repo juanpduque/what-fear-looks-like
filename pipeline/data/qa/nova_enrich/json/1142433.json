@@ -1,0 +1,44 @@
+{
+  "title_text": "ПОСЛЕДНЕЕ ЛЕТО ГОРОД ЗОМБИ",
+  "credits_text": "ФИЛЬМ ВИКТОРА МУРЗИКОВА КОРИЙ КИРЕЕВ АЛЕКСАНДР РОЖКОВ МАРИЯ ЗУБОВА",
+  "languages": [
+    "ru"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "dystopian",
+    "post-apocalyptic",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.8
+    },
+    {
+      "name": "zombie",
+      "conf": 0.7
+    },
+    {
+      "name": "cityscape",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and post-apocalyptic themes.",
+  "description": "A man holds a gun over a cityscape with other faces superimposed behind him. The title \"Last Summer City of Zombies\" is prominently displayed."
+}

@@ -1,0 +1,47 @@
+{
+  "title_text": "NECROPATH",
+  "credits_text": "KAMIKAZE DOOFT, CAVJO INDUSTRIAL, JOSHUA REALE, NATHAN FALORDE, CASEY KAZMIERCZAK, GEOFFREY ORCOWSKI, JOSHUA REALE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EVEN A PANDEMIC CAN'T KILL AN ADDICTION",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "dark",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic imagery and themes of addiction and occult horror.",
+  "description": "A dark, stylized poster features a central figure with a skull-like face against a cityscape backdrop, with bold red text and dramatic lighting."
+}

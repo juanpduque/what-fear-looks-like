@@ -1,0 +1,50 @@
+{
+  "title_text": "BLOOD DINER",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EAT",
+  "mood": [
+    "gothic",
+    "horror",
+    "noir",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "text",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "ghost",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of a knife and implied violence.",
+  "description": "A neon sign reading 'BLOOD DINER' with a knife graphic, set against a dark, eerie night scene with a haunted diner."
+}

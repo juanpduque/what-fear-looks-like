@@ -1,0 +1,44 @@
+{
+  "title_text": "世終来の現れより 魔影",
+  "credits_text": "BROADWAY INC. PRESENTS A YOSHIHIRO NAKAMURA FILM\nMAOKO MATSUYAMA KENJI IKEMURA, AYUME SIGIMOTO... ASAMI ICHIMURA\nNAGORIE MATSUYAMA KENJI IKEMURA, AUTHOR OF PHOTOGRAPHY BY KENJI IKEMURA\nWRITTEN BY YOSHIHIRO NAKAMURA DIRECTED BY YOSHIHIRO NAKAMURA",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "世終来の現れより 魔影",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "water",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and ghostly imagery.",
+  "description": "A dark, eerie poster features a shadowy figure against a turbulent blue background with Japanese text overlay, evoking a gothic horror atmosphere."
+}

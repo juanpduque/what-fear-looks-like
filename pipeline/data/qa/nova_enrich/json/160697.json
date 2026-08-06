@@ -1,0 +1,44 @@
+{
+  "title_text": "TASMANIAN DEVILS",
+  "credits_text": "KENNETH MITCHELL DANICA MCKELLER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE HUNT HAS BEGUN...",
+  "mood": [
+    "action",
+    "thriller",
+    "adventure",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "text",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.9,
+  "person": 0.3,
+  "animal": 0.1,
+  "blood_gore": 0.0,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the action-packed scene and the presence of a monster.",
+  "description": "A military vehicle drives through a muddy terrain with a large, menacing creature in the background, set against a forested landscape under a cloudy sky."
+}

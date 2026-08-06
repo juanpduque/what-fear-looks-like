@@ -1,0 +1,45 @@
+{
+  "title_text": "MIMICRY FREAKS",
+  "credits_text": "A SEVICE FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Scare me to see the HELL",
+  "mood": [
+    "horror",
+    "forest",
+    "survival",
+    "terror",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "text",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A poster shows a person in a forested area with a menacing expression, surrounded by tall trees and dramatic text."
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "DEMONFIGHTER",
+  "credits_text": "DIRECTED BY DAVID ESPINOSA PRODUCED BY CRAIG AHERNS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "gothic",
+    "supernatural",
+    "dramatic",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "cross",
+      "conf": 0.7
+    },
+    {
+      "name": "storm",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains intense and dark themes with possible occult references.",
+  "description": "A hooded figure stands against a stormy cityscape with a glowing cross above, suggesting a supernatural or action-packed narrative."
+}

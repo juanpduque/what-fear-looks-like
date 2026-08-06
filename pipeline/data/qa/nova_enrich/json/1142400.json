@@ -1,0 +1,40 @@
+{
+  "title_text": "RESIDENT HORROR",
+  "credits_text": "X-STRIKE STUDIOS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "survival",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "crowd",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and gore through visual elements.",
+  "description": "A group of people appear distressed in a dark setting with a bold red title overlay. The artwork suggests a horror theme with intense expressions and a dramatic atmosphere."
+}

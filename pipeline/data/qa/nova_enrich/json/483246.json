@@ -1,0 +1,41 @@
+{
+  "title_text": "THE BREEDER",
+  "credits_text": "HE JUST WANTS THE BEST FOR HER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "eerie",
+    "disturbing",
+    "psychological horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "confinement",
+      "conf": 0.9
+    },
+    {
+      "name": "psychological horror",
+      "conf": 0.85
+    },
+    {
+      "name": "disturbing",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.3,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "sexual",
+    "violence"
+  ],
+  "moderation_notes": "Contains suggestive imagery and implied violence.",
+  "description": "A woman is restrained in a chair, wearing minimal clothing, with a tagline suggesting disturbing themes."
+}

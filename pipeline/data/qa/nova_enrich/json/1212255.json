@@ -1,0 +1,41 @@
+{
+  "title_text": "FINGER FOOD",
+  "credits_text": "HENRY SHARPLES\nLLOYD LOVELL\nAN UNTITLED STUDIOS PRODUCTION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "erotic"
+  ],
+  "moderation_notes": "Contains suggestive imagery and implied violence.",
+  "description": "The poster features stark black-and-white images of intense faces and a hammer, with bold title text and credits."
+}

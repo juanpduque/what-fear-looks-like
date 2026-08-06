@@ -1,0 +1,42 @@
+{
+  "title_text": "RESTITUTION",
+  "credits_text": "A FILM BY DANNY BRAVEN\nCOEL MAHAL JONATHAN SHORES JAMES BLACK CHRIS GANN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EVERYONE HAS TO FACE THEIR DEMONS",
+  "mood": [
+    "intense",
+    "thriller",
+    "psychological",
+    "dramatic",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.95,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and a knife, suggesting violent themes.",
+  "description": "Movie poster features intense faces flanking a large knife with blood drips, titled 'Restitution' and credits a film by Danny Braven."
+}

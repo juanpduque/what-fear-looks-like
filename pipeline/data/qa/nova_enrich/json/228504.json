@@ -1,0 +1,43 @@
+{
+  "title_text": "DANCE MACABRE",
+  "credits_text": "VINK PICTURES. WHO STARTLED THE WORLD WITH PANDORA. NOW BRINGS YOU THE ULTIMATE EXPERIENCE IN HORROR:",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CAUTION: This film is unsuitable for children under 12 and contains scenes which may offend some members of the public.",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "eerie",
+    "macabre"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "graveyard",
+      "conf": 0.85
+    },
+    {
+      "name": "ghost",
+      "conf": 0.75
+    },
+    {
+      "name": "shadow",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A stylized poster features a dark silhouette against a graveyard backdrop with bold yellow text announcing \"Dance Macabre\" by Vink Pictures."
+}

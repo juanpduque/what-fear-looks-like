@@ -1,0 +1,48 @@
+{
+  "title_text": "DOLLY DEADLY",
+  "credits_text": "ALL DOLLIED UP AND READY TO KILL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TERRA ROSEN",
+  "mood": [
+    "horror",
+    "camp",
+    "erotic",
+    "violent",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "doll",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.7,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, partial nudity, and sexualized imagery.",
+  "description": "A poster features four characters, including a central doll with long blue hair, set against a fiery red background with blood splatters and intense expressions."
+}

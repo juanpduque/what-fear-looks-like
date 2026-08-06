@@ -1,0 +1,42 @@
+{
+  "title_text": "TERROR EN EL TREN DE LA MEDIANOCHE",
+  "credits_text": "RAFAEL HERNANDEZ MARY PAZ JONDAL PEPE RIESGO DIRECTOR MANUEL IGLESIAS ACADEMY PICTURES INTERNATIONAL",
+  "languages": [
+    "es"
+  ],
+  "other_text": "NADIE PUEDE ESCAPAR AL...",
+  "mood": [
+    "dread",
+    "suspense",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "train",
+      "conf": 0.8
+    },
+    {
+      "name": "eyes",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic poster features a close-up of intense eyes with a train emerging from the center, suggesting suspense and horror."
+}

@@ -1,0 +1,47 @@
+{
+  "title_text": "SYMBOLICUS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "VOLUME I",
+  "mood": [
+    "surreal",
+    "erotic",
+    "gothic",
+    "dystopic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.1,
+  "monster": 0.3,
+  "person": 0.95,
+  "animal": 0.1,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "nudity",
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains partial nudity and suggestive imagery.",
+  "description": "A chaotic collage of diverse characters and surreal imagery, featuring partial nudity and intense expressions, with bold text overlay."
+}

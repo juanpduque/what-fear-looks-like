@@ -1,0 +1,50 @@
+{
+  "title_text": "FRIGHTWORLD",
+  "credits_text": "YOU WILL KNOW FEAR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WILD EYE RAW & EXTREME UNRATED",
+  "mood": [
+    "dread",
+    "horror",
+    "gothic",
+    "violent",
+    "terrifying"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.95,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences only.",
+  "description": "A horror poster featuring a monstrous, blood-covered figure with a fierce expression, set against a dark carnival backdrop."
+}

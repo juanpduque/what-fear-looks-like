@@ -1,0 +1,35 @@
+{
+  "title_text": "SHARK",
+  "credits_text": "ATTACK IN THE MEDITERRANEAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "action",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "shark",
+      "conf": 0.95
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.95,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and potential mild sexual suggestion due to swimwear.",
+  "description": "A woman in a red bikini swims near a large shark with an open mouth, bubbles around her, suggesting an impending attack in the Mediterranean."
+}

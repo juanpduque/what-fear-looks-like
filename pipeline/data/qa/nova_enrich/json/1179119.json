@@ -1,0 +1,45 @@
+{
+  "title_text": "The Abandoned",
+  "credits_text": "Matthew A. Peters Film",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Creepers.....",
+  "mood": [
+    "dread",
+    "suspense",
+    "horror",
+    "gothic",
+    "desolate"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "desolation",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests themes of horror and desolation, but does not depict explicit violence or gore.",
+  "description": "A poster shows six silhouetted figures against a dark, snowy background with the title 'The Abandoned' and the tagline 'Creepers.....'"
+}

@@ -1,0 +1,43 @@
+{
+  "title_text": "ジバケテニショウ",
+  "credits_text": "From the book \"THE HORROR!\" written by KAZZ UMEZU",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "SpFX(実用化)",
+  "mood": [
+    "horror",
+    "psychological",
+    "intense",
+    "dramatic",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and disturbing themes.",
+  "description": "A dramatic poster features a central female figure holding a grotesque object, with additional characters and intense Japanese text."
+}

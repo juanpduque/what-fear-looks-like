@@ -1,0 +1,37 @@
+{
+  "title_text": "DUCK!",
+  "credits_text": "The Carbine High Massacre\nDIRECTED BY WILLIAM HELLFIRE & JOEY SMACK",
+  "languages": [
+    "en"
+  ],
+  "other_text": "The controversial film that landed its filmmakers in jail",
+  "mood": [
+    "intense",
+    "thriller",
+    "controversial",
+    "dark",
+    "gritty"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster implies violent themes related to a massacre.",
+  "description": "Movie poster features two men holding weapons against a red background with bold typography. The title 'DUCK!' is prominently displayed."
+}

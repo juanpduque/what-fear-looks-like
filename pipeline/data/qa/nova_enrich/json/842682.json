@@ -1,0 +1,41 @@
+{
+  "title_text": "RISE & SHINE",
+  "credits_text": "un film de ARNAUD BAUR DAMIEN MAZZA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IMAGINASTUDIO presents",
+  "mood": [
+    "dramatic",
+    "intense",
+    "post-apocalyptic",
+    "hopeful",
+    "romantic"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A couple holds hands against a dramatic sunset backdrop with smoke and a damaged vehicle nearby, suggesting a post-apocalyptic setting."
+}

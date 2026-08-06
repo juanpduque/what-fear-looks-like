@@ -1,0 +1,45 @@
+{
+  "title_text": "RESIDENT EVIL THE FINAL CHAPTER",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "apocalyptic",
+    "intense",
+    "dramatic",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.7
+    },
+    {
+      "name": "ruin",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and apocalyptic themes.",
+  "description": "A woman holds a gun amidst rubble and fire in a destroyed city, with skyscrapers in the background."
+}

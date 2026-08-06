@@ -1,0 +1,47 @@
+{
+  "title_text": "Camp Blood 5",
+  "credits_text": "STARRING: STERLING ENTWISLE, LYND STRAHAN, BLAIR KERCHING, CAMP BLOOD: 5 DIRECTED BY: BRANDON COLEMAN, STARRING: STERLING ENTWISLE, COLLEEN STRAHAN, DANIEL STERLING, MAGGIE DOUGLAS, RACHEL MILL, JOHNNY C. PHILLIPS, BRETT MITCHELL, DANIEL STERLING, RACHEL MILL, JOHNNY C. PHILLIPS, BRETT MITCHELL, JUSTIN FERGUSON, KYLE SLACK",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CLOWNS KICK ASS!",
+  "mood": [
+    "horror",
+    "camp",
+    "violent",
+    "grotesque",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "Poster features a monstrous clown holding a large knife, with three women in revealing outfits in front of a dark, eerie background."
+}

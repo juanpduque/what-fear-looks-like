@@ -1,0 +1,46 @@
+{
+  "title_text": "หมอขี้ผึ้ง",
+  "credits_text": "WOLF",
+  "languages": [
+    "en",
+    "th"
+  ],
+  "other_text": "อดีตของหมอขี้ผึ้ง เกิดจากความโกรธและความโกรธของเขาที่ทำให้เขากลายเป็นหมอขี้ผึ้งที่อันตราย ทำให้เขาต้องต่อสู้กับความโกรธของเขาเพื่อกลับสู่ความเป็นมนุษย์อีกครั้ง",
+  "mood": [
+    "horror",
+    "fantasy",
+    "action",
+    "mythic",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.1,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and a monstrous creature.",
+  "description": "Movie poster features a werewolf-like creature, a woman with a gun, and several characters against a dramatic sunset backdrop."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "BUS STOP",
+  "credits_text": "A FILM BY ZORA CIELE ANRI\nYOUR LAST DESTINATION\nPRESENTED BY LE SUC PRODUCTIONS\nJESSE AGUERO, DAVE BATES, ROBBER REYES\nASSOCIATE PRODUCER: ELIZABETH PRATT, EXECUTIVE PRODUCER: JAMES VEIGA\nMUSIC BY JAMES COLON\nWRITTEN AND DIRECTED BY ZORA CIELE ANRI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "LE SUC PRODUCTIONS PRESENTS",
+  "mood": [
+    "dread",
+    "suspense",
+    "mystery",
+    "dark",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark poster features a silhouette of a man facing a dimly lit bus stop at night, with bold yellow text reading \"BUS STOP\" and credits below."
+}

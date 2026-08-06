@@ -1,0 +1,42 @@
+{
+  "title_text": "RUMAH KALIBURANG",
+  "credits_text": "DWI SASONO & DONDI ADRIAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YANG DATANG TAK BISA PULANG",
+  "mood": [
+    "eerie",
+    "haunting",
+    "suspenseful",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "fire",
+      "conf": 0.75
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A group of people stands in front of a dilapidated house at night, with candles and a dark, eerie atmosphere."
+}

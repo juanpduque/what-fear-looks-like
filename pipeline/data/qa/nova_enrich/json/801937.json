@@ -1,0 +1,45 @@
+{
+  "title_text": "SILENT NIGHT, DEADLY NIGHT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "holiday",
+    "horror",
+    "suspense",
+    "dark",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "christmas",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.1,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the axe and the ominous stance of the figure.",
+  "description": "A Santa Claus figure holds an axe outside a decorated house on a snowy night, with a Christmas tree and lights visible."
+}

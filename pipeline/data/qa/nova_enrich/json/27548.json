@@ -1,0 +1,47 @@
+{
+  "title_text": "SLIME CITY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A HORROR FILM WITH GUTS",
+  "mood": [
+    "horror",
+    "camp",
+    "grotesque",
+    "sci-fi",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "cityscape",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic horror elements and partial nudity.",
+  "description": "A man with slime dripping from his hand stands in a cityscape, with a woman in the background. The poster advertises a horror film titled 'Slime City.'"
+}

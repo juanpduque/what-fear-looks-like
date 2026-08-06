@@ -1,0 +1,37 @@
+{
+  "title_text": "DER TOTENHÜGEL",
+  "credits_text": "Ein Film von Andreas Behmann.",
+  "languages": [
+    "de"
+  ],
+  "other_text": "Die Auferstehung des Grauens",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains intense horror imagery and themes of death and resurrection.",
+  "description": "The poster features a menacing skull and a distorted face against a dark background, with bold German text indicating the title and director."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "RAGE BIT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SCREAMBOX",
+  "mood": [
+    "intense",
+    "chaotic",
+    "violent",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts intense and violent imagery, suggesting potential distress.",
+  "description": "A stylized poster features multiple characters in a chaotic, intense scene with bold text reading 'RAGE BIT' and 'SCREAMBOX' at the bottom."
+}

@@ -1,0 +1,47 @@
+{
+  "title_text": "ANOITE DA LUA DE SANGUE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Humberto Aguero",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "eerie",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.3,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence",
+    "blood"
+  ],
+  "moderation_notes": "Contains occult imagery and implied violence.",
+  "description": "A dark, eerie poster features a red moon and twisted trees with a shadowy figure perched on a branch, evoking a gothic and supernatural atmosphere."
+}

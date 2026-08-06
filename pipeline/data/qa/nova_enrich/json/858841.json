@@ -1,0 +1,46 @@
+{
+  "title_text": "CUDDLEZ",
+  "credits_text": "WHO'S GONIA CUDDLE YOU WHEN YOU'RE DEAD..?",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HUG ME",
+  "mood": [
+    "violent",
+    "dark",
+    "humorous",
+    "grotesque",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A bear-like creature holds a sword with blood on its chest and arm, with bold red text overlay."
+}

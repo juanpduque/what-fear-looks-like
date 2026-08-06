@@ -1,0 +1,45 @@
+{
+  "title_text": "THEATRE OF THE DEAD",
+  "credits_text": "COMING SOON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "There are worse things than being torn apart by critics...",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A woman holds a large axe amidst a group of zombies in a dark setting, with bold red and black typography for the title."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "ONCE UPON A KILLING TIME",
+  "credits_text": "LAURENE LANDAN\nRONALD A. BLACK BLAZE HOLMAN ROBERT SPARKS\nMICHAEL MCINTYRE LES FUCAR CELE BRUCE SHANNON BURKETT\nPRESENT\nA MICHAEL MOUTATARAS FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WELCOME TO OUR CLUBHOUSE",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "camp",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Mild hints of violence and gore; no explicit content.",
+  "description": "A poster features a dramatic, skull-faced figure with disco ball ears, set against a dark background with bold typography."
+}

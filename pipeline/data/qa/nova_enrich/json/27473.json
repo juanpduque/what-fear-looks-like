@@ -1,0 +1,45 @@
+{
+  "title_text": "Exterminator CITY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DVD",
+  "mood": [
+    "dystopian",
+    "action",
+    "sci-fi",
+    "gritty",
+    "post-apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.95
+    },
+    {
+      "name": "mechanical",
+      "conf": 0.85
+    },
+    {
+      "name": "cityscape",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.1,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild violent themes suggested by the poster's design.",
+  "description": "A poster featuring a large, mechanical skull with a cityscape in the background and two men in the foreground."
+}

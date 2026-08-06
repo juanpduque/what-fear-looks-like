@@ -1,0 +1,42 @@
+{
+  "title_text": "DEAD LUCKY",
+  "credits_text": "WRITTEN AND DIRECTED BY VADIM KULIKIN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE PERFECT KILLERS JUST MET THEIR MATCH...",
+  "mood": [
+    "horror",
+    "thriller",
+    "gothic",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A woman with blood on her face stands in a dimly lit room, holding a microphone, with a tagline above her."
+}

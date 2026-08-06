@@ -1,0 +1,41 @@
+{
+  "title_text": "DAMNATIONLAND",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "The Way Life Should BLEED\nOctober 27th at the State Theatre",
+  "mood": [
+    "horror",
+    "gothic",
+    "surreal",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and implied violence.",
+  "description": "A poster features a monstrous creature with antlers watching a film in a forest setting under a red moon."
+}

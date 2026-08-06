@@ -1,0 +1,46 @@
+{
+  "title_text": "FEAST FOR THE BEAST",
+  "credits_text": "IT'S FEEDING TIME!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE BRIT SPLOITATION COLLECTION REMASTERED DEFINITIVE EDITION",
+  "mood": [
+    "horror",
+    "intense",
+    "gothic",
+    "violent",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and violent themes.",
+  "description": "A dark, intense poster featuring a monstrous creature with glowing red eyes and bold red text, promoting a horror film titled 'Feast for the Beast.'"
+}

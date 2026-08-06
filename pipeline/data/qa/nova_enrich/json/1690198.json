@@ -1,0 +1,35 @@
+{
+  "title_text": "A MENINA E A FACA",
+  "credits_text": "LUIS BUÑUEL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"OBRA PRIMA DO CINEMA EXPERIMENTAL MODERNO\"",
+  "mood": [
+    "dread",
+    "surreal",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a knife graphic.",
+  "description": "A black poster features bold white text and a red knife graphic, with a white silhouette of a person lying down."
+}

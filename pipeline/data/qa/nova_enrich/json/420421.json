@@ -1,0 +1,46 @@
+{
+  "title_text": "MUNECO VIVIENTE",
+  "credits_text": "SPROUS TOME, BENJAMIN FOGEL, BRUNO GOMEZ, SHARLET CRUZES, EMILIO ZETTES",
+  "languages": [
+    "es"
+  ],
+  "other_text": "UNA PELICULA \"FATO IN CASA\" DE CONTENI BROS, Y ESTE TROC...",
+  "mood": [
+    "horror",
+    "zombie",
+    "thriller",
+    "action",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and horror elements, suitable for mature audiences.",
+  "description": "A group of people faces a menacing, shadowy figure in a fiery, chaotic setting, suggesting a horror or thriller theme."
+}

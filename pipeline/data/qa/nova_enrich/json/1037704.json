@@ -1,0 +1,47 @@
+{
+  "title_text": "中海の女子",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "ディネムの女子は認めるか？ あげられた女子の影さまじよう",
+  "mood": [
+    "dread",
+    "gothic",
+    "eerie",
+    "psychological",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic blood and implied violence; may be disturbing.",
+  "description": "A poster shows a ghostly figure in a prison cell with blood splatters, viewed through bars by a shadowy figure."
+}

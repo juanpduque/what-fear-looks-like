@@ -1,0 +1,40 @@
+{
+  "title_text": "FATAL EXPEDITION",
+  "credits_text": "WHEN THE DEAD TAKE REVENGE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Produced by PRODUKSI SENI DUAPULUH DUAPULUH SDN BHD\nSALES by HOUSE OF FILM in Suite XXX",
+  "mood": [
+    "thrilling",
+    "dangerous",
+    "mysterious",
+    "adventurous"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "water",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violent themes and potential monster encounters.",
+  "description": "A group navigates a river in a dense jungle, facing an unseen threat in a mysterious environment."
+}

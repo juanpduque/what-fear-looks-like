@@ -1,0 +1,40 @@
+{
+  "title_text": "MONKEY BOY",
+  "credits_text": "There are no Bloodless Fairy Tales",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BY AWARD WINNING DIRECTOR\nCINEMATED BY ANTAHSA\nCINEMATED BY IMAGINE\nCINEMATED BY PRODUCTION",
+  "mood": [
+    "action",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "monkey",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.95,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "Poster features a man holding a gun, a monkey, and a distressed woman with blood splatters, suggesting an action-horror theme."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "HINDSIGHT",
+  "credits_text": "NEW LINE CINEMA AND NEW LINE INTERNATIONAL AND VIA FILMS PRESENTS THIS IS A NEW LINE FILM. DO NOT READ THE BOOK! JOSE RAMIREZ AND ELLEN BURSTEIN DIRECTED BY PETER DEMANDINGO. WRITTEN BY MIKE DONOVAN. BASED ON THE NOVEL BY IRIS DONOVAN. PRODUCED BY DANIEL MICHAEL, TAMARA SEAS, TOM WALLER. MUSIC BY NOMA RALEYS. PRODUCED BY SETH GROSSMAN.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "suspense",
+    "thriller",
+    "psychological",
+    "mystery",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.3
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense psychological thriller elements and a prominent knife, suggesting potential violence.",
+  "description": "Movie poster features intense faces, a large knife, and an ultrasound image, suggesting a psychological thriller."
+}

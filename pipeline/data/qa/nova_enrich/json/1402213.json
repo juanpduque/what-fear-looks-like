@@ -1,0 +1,43 @@
+{
+  "title_text": "PHANTOMS OF THE FOG",
+  "credits_text": "RYAN FARGO, TERRY REILLY, KEREN LYNN, cinematography by FRANCO MARASCHINO, soundtrack by LUCIA COSCARELLA and LUCA COSCARELLA, starring THE FOG, written & directed by C.M. LAZAR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FILMIRACLE PRODUCTIONS PRESENTS",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "haunting",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring a menacing, skull-like face with the title \"Phantoms of the Fog\" and credits for the film."
+}

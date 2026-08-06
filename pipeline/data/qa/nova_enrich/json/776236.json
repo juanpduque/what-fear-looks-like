@@ -1,0 +1,46 @@
+{
+  "title_text": "PHOBIC",
+  "credits_text": "SAMUEL GOLDBERG FILMS STORLAND JACOBY RAYE RENOVO TEJAM BEVERIDGE CINDERELLY \"PHOBIC\" JEN BERGERCA LARRY DE BARRELL ROBERT JASON JORDAN JORDAN MORSE TIM CHRISTENSEN JASON RIVYLES BRAD CHRISTENSEN \"PHOBIC\" CLAIRE JOSSIE MATTHEW AUSTIN BUTLER RICK WHEELAND",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WHAT ARE YOU AFRAID OF?",
+  "mood": [
+    "dread",
+    "psychological",
+    "intense",
+    "disturbing",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "eyes",
+      "conf": 0.85
+    },
+    {
+      "name": "horror",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and intense horror themes.",
+  "description": "A red poster features a central face with dripping blood and large eyes, overlaid with the title \"PHOBIC\" and a tagline asking \"What are you afraid of?\""
+}

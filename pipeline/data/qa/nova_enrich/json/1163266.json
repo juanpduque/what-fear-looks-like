@@ -1,0 +1,46 @@
+{
+  "title_text": "CRITTERS",
+  "credits_text": "All You Can Eat",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ROBBIE LOPEZ FILM",
+  "mood": [
+    "action",
+    "horror",
+    "sci-fi",
+    "camp",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.1,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains intense action sequences and monstrous creatures.",
+  "description": "A masked hero battles giant monsters in a cityscape, with explosions and chaos surrounding the confrontation."
+}

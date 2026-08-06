@@ -1,0 +1,43 @@
+{
+  "title_text": "Nightmare",
+  "credits_text": "RETURN TO ELM STREET",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"I AT YOU SAVED. DOESN'T MEAN IT'S OVER.\"",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "suspense",
+    "classic"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A stylized poster features a man in formal wear with a knife, accompanied by three individuals and dramatic smoke effects."
+}

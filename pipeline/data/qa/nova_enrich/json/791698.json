@@ -1,0 +1,47 @@
+{
+  "title_text": "ULTRA VIOLENT QUEER THUNG FU SCI-FI BLOOD SOAKED REVENGE KILLER RIDE WITH ZOMBIES!",
+  "credits_text": "Written and Directed by ROBBIE NOVAK Produced by ROBBIE NOVAK and ANTHONY GEORGE Produced by JAMES HARRISON Executive Produced by BEN SMITH",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "主父 YOSHI",
+  "mood": [
+    "violent",
+    "action",
+    "horror",
+    "revenge",
+    "zombie"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "zombie",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.95,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster features a group of characters in a violent, action-packed scene with zombies and blood, set against a dark urban backdrop."
+}

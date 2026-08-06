@@ -1,0 +1,48 @@
+{
+  "title_text": "EVULTWINZ",
+  "credits_text": "WRITTEN AND DIRECTED BY MERCEDES THE MUSE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "2020",
+  "mood": [
+    "grotesque",
+    "surreal",
+    "dark humor",
+    "chaotic",
+    "satirical"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.85,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, nudity, and sexual content.",
+  "description": "A chaotic poster features grotesque, shirtless figures amidst skulls and blood, with bold, stylized text and a chaotic crowd."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "CONSUME",
+  "credits_text": "DIRECTED BY SARAH GARCIA STARRING DERKA GARCIA AND JAY COLON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster suggests themes of violence and gore through its dark, intense imagery and red splatter effects.",
+  "description": "A dark poster features a green bottle with a shadowy figure inside, overlaid with bold red text reading 'CONSUME' and credits."
+}

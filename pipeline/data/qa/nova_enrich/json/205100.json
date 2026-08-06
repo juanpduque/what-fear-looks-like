@@ -1,0 +1,44 @@
+{
+  "title_text": "BASEMENT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "384M IN 5MIN 14:19 CH1 CH2 SO 99 00 5900K 1/8 FE2.9",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.3,
+  "person": 0.2,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and violent imagery.",
+  "description": "A poster showing a distorted TV screen with a skull and blood splatters, titled 'BASEMENT' in red letters."
+}

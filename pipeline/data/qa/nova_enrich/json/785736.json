@@ -1,0 +1,46 @@
+{
+  "title_text": "HASFALMETŽÖK",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "János Károlyi",
+  "mood": [
+    "gothic",
+    "fantasy",
+    "dark",
+    "violent",
+    "mythic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains violent imagery and occult themes.",
+  "description": "Poster features two men in dark attire holding weapons, with a skull and intense red background, suggesting a gothic horror theme."
+}

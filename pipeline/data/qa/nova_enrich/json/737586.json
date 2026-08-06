@@ -1,0 +1,50 @@
+{
+  "title_text": "THE TREES HAVE EYES",
+  "credits_text": "TONY MORAN TIMOTHY PATRICK QUILL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THESE WOODS WILL LEAVE YOU HOLLOW",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "terrifying",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "skull",
+      "conf": 0.75
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.65
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.75,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "A dark forest scene with twisted trees, shadowy figures, and skulls at the base, evoking a haunting and terrifying atmosphere."
+}

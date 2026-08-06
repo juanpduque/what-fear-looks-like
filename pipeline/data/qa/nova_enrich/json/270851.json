@@ -1,0 +1,35 @@
+{
+  "title_text": "BLOOD LAKE",
+  "credits_text": "ATTACK OF THE KILLER LAMPREYS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "LIFEGUARD",
+  "mood": [
+    "thriller",
+    "horror",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violent themes related to monster attacks.",
+  "description": "Two men in lifeguard uniforms stand near a lake with a blue canopy, with bold title text overlay indicating a horror theme."
+}

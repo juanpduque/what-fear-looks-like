@@ -1,0 +1,42 @@
+{
+  "title_text": "FOUND FOOTAGE OF FEAR",
+  "credits_text": "DEATH AWAITS YOU IN THE FINAL FRAME!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "suspense",
+    "terror",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and disturbing imagery.",
+  "description": "A poster featuring a dark, shadowy figure with a hand reaching out, overlaid with bold red and white text reading 'FOUND FOOTAGE OF FEAR' and a tagline."
+}

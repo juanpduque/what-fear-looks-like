@@ -1,0 +1,44 @@
+{
+  "title_text": "JACK THE REAPER",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "RIDE AT YOUR OWN RISK",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "scythe",
+      "conf": 0.95
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "storm",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features a menacing figure with a scythe in a stormy setting, suggesting potential violence.",
+  "description": "A hooded figure holds a large scythe against a stormy backdrop with a carnival in the distance."
+}

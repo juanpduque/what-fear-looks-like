@@ -1,0 +1,49 @@
+{
+  "title_text": "結尽の心結間間",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "面絶を持つ人さまだちやんと、心結間間の心結を導う。【心結間間】、【結尽の心結間間】。",
+  "mood": [
+    "dread",
+    "psychological",
+    "supernatural",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and themes of horror and psychological distress.",
+  "description": "A Japanese horror DVD cover featuring a screaming face on a TV screen with hands reaching out, overlaid with bold Japanese text and splattered red paint."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "Get Drunk, Get Dumb, Get Dead",
+  "credits_text": "NOURIE PICTURES \"AFTER LITTLE ARTISANAL WINE... MARKUS BALDWIN, JULIE MITCHELL \"GET DEAD\" MARKUS BALDWIN, JASON DELOUIS, SHELBY ANN HARRISON, SHELBY MITTLE MORGAN TURNER, MARKUS BALDWIN, JEREMY GILSON, JULIE MITCHELL JEREMY GILSON, BROWN \"MARKUS BALDWIN\" JEREMY GILSON, JULIE MITCHELL MARKUS BALDWIN \"MARKUS BALDWIN\" JULIE MITCHELL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "www.getdeadthemovie.com",
+  "mood": [
+    "violent",
+    "gory",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; may be disturbing to some viewers.",
+  "description": "Movie poster shows six individuals with blood around them, with bold red text reading \"Get Drunk, Get Dumb, Get Dead\"."
+}

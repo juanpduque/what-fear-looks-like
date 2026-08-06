@@ -1,0 +1,42 @@
+{
+  "title_text": "リッチ・ビカール・クラブ",
+  "credits_text": "原作：小林靖子 / 監督：中村義洋",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "2.13 Road Show / 2.14 一般公開 / \"愛しき貴女の愛しき残骸\"",
+  "mood": [
+    "gothic",
+    "erotic",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic blood and suggestive imagery.",
+  "description": "Poster features a group of formally dressed individuals with a central figure surrounded by red splatters, set against a diamond-patterned background."
+}

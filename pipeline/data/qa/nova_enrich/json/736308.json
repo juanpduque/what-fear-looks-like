@@ -1,0 +1,39 @@
+{
+  "title_text": "ALIEN COVENANT",
+  "credits_text": "PROLOGUE THE SECRETS OF DAVID'S LAB",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "mysterious",
+    "sci-fi",
+    "gothic",
+    "dark",
+    "industrial"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.6,
+  "person": 0.2,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, industrial lab filled with strange artifacts and skeletal remains, featuring the title 'Alien Covenant: Prologue The Secrets of David's Lab.'"
+}

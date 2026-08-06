@@ -1,0 +1,300 @@
+==== START REK 20260805T231520Z n=     303 ====
+want=303 todo=303 done_skip=0 workers=8 sidecar=data/qa/rekognition_imdb_poster_gap.csv merge_main=True
+[10/303] ok=10 err=0 3.30/s | 139791 'The Thirteenth Day of Chri' top='Head'
+[20/303] ok=20 err=0 4.35/s | 232022 'Home Sweet Home' top='T-Shirt'
+[30/303] ok=30 err=0 4.97/s | 295220 'Mothman' top='Vegetation'
+[40/303] ok=40 err=0 5.13/s | 332769 'Abused' top='Head'
+[50/303] ok=50 err=0 5.27/s | 353038 '' top='Head'
+checkpoint ok=50 → data/qa/rekognition_imdb_poster_gap.csv
+[60/303] ok=60 err=0 5.16/s | 366296 'This Is How You Haunt Your' top='Coat'
+[70/303] ok=70 err=0 5.29/s | 397167 'Peter Coukis: Gimoire' top='Finger'
+[80/303] ok=80 err=0 5.46/s | 424594 'Dolls' top='Adult'
+[90/303] ok=90 err=0 5.47/s | 502923 "Don't Run" top='Grove'
+[100/303] ok=100 err=0 5.57/s | 659788 '' top='Head'
+checkpoint ok=100 → data/qa/rekognition_imdb_poster_gap.csv
+[110/303] ok=110 err=0 5.55/s | 743305 '' top='Head'
+[120/303] ok=120 err=0 5.68/s | 784577 'Moonlight Sonata' top='Face'
+[130/303] ok=130 err=0 5.70/s | 823849 'Roller Girl' top='Face'
+[140/303] ok=140 err=0 5.79/s | 880650 'From the Woods to the Cosm' top='Outdoors'
+[150/303] ok=150 err=0 5.75/s | 1007132 'Stained' top='Text'
+checkpoint ok=150 → data/qa/rekognition_imdb_poster_gap.csv
+[160/303] ok=160 err=0 5.76/s | 1070006 '' top='Face'
+[170/303] ok=170 err=0 5.81/s | 1130453 '' top='Advertisement'
+[180/303] ok=180 err=0 5.83/s | 1252059 'Ash Wednesday' top='Head'
+[190/303] ok=190 err=0 5.85/s | 1274809 '' top='Grove'
+[200/303] ok=200 err=0 5.87/s | 1304712 '' top='Adult'
+checkpoint ok=200 → data/qa/rekognition_imdb_poster_gap.csv
+[210/303] ok=210 err=0 5.83/s | 1317083 '' top='Indoors'
+[220/303] ok=220 err=0 5.85/s | 1356797 '' top='Vegetation'
+[230/303] ok=230 err=0 5.85/s | 1371856 '' top='Face'
+[240/303] ok=240 err=0 5.82/s | 1408859 '' top='Contact Lens'
+[250/303] ok=250 err=0 5.84/s | 1422967 '' top='Person'
+checkpoint ok=250 → data/qa/rekognition_imdb_poster_gap.csv
+[260/303] ok=260 err=0 5.77/s | 1507997 '' top='Head'
+[270/303] ok=270 err=0 5.79/s | 1581602 '' top='Person'
+[280/303] ok=280 err=0 5.76/s | 1590984 '' top='Text'
+[290/303] ok=290 err=0 5.76/s | 1660589 'Nick the Killer' top='Face'
+[300/303] ok=300 err=0 5.81/s | 1701101 '' top='Photography'
+checkpoint ok=300 → data/qa/rekognition_imdb_poster_gap.csv
+[303/303] ok=303 err=0 5.65/s | 1733835 'Mooseman' top='Handwriting'
+LISTO ok=303 err=0 elapsed=0.9m (5.49/s) main=65500 → data/qa/rekognition_imdb_poster_gap.csv
+==== END REK 20260805T231617Z exit= ====
+==== START NOVA 20260805T231617Z ====
+2026-08-05 18:16:18 start n_todo=303 done=65201 workers=8 min_interval=0.35s save_every=5 flush_seconds=30.0 model=us.amazon.nova-2-lite-v1:0 mode=lambda:poster-ocr-bedrock region=us-west-2 out=/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/nova_enrich/nova_enrich.csv
+2026-08-05 18:16:19 [1/303] id=95698 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=1 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:19 [2/303] id=29711 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=2 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:20 [3/303] id=4230 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=3 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:20 [4/303] id=120913 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=4 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:20 [5/303] id=101364 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=5 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:21 [6/303] id=27823 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=6 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:21 [7/303] id=77851 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=7 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:21 [8/303] id=69958 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=8 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:22 [9/303] id=130016 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=9 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:22 [10/303] id=139791 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=10 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:22 [11/303] id=150906 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=11 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:23 [12/303] id=152032 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=12 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:23 [13/303] id=161852 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=13 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:23 [14/303] id=166544 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=14 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:24 [15/303] id=199105 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=15 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:24 [16/303] id=211238 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=16 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:24 [17/303] id=212858 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=17 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:25 [18/303] id=213130 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=18 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:25 [19/303] id=223051 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=19 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:25 [20/303] id=225498 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=20 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:26 [21/303] id=230004 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=21 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:26 [22/303] id=232022 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=22 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:26 [23/303] id=255789 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=23 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:27 [24/303] id=274257 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=24 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:27 [25/303] id=284309 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=25 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:27 [26/303] id=285156 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=26 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:28 [27/303] id=287650 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=27 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:28 [28/303] id=288275 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=28 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:29 [29/303] id=294949 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=29 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:29 [30/303] id=295220 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=30 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:29 [31/303] id=295806 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=31 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:30 [32/303] id=295974 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=32 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:30 [33/303] id=300608 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=33 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:30 [34/303] id=308131 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=34 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:31 [35/303] id=309068 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=35 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:31 [36/303] id=315123 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=36 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:31 [37/303] id=330317 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=37 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:32 [38/303] id=330946 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=38 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:32 [39/303] id=332764 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=39 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:32 [40/303] id=332769 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=40 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:33 [41/303] id=333347 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=41 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:33 [42/303] id=333395 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=42 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:33 [43/303] id=334715 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=43 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:34 [44/303] id=335220 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=44 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:34 [45/303] id=335772 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=45 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:34 [46/303] id=341733 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=46 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:35 [47/303] id=346346 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=47 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:35 [48/303] id=347679 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=48 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:36 [49/303] id=348761 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=49 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:36 [50/303] id=348924 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=50 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:36 [51/303] id=352823 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=51 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:37 [52/303] id=353038 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=52 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:37 [53/303] id=353862 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=53 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:37 [54/303] id=353940 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=54 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:38 [55/303] id=363459 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=55 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:38 [56/303] id=364308 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=56 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:38 [57/303] id=364400 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=57 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:39 [58/303] id=364759 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=58 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:39 [59/303] id=366096 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=59 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:39 [60/303] id=366296 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=60 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:40 [61/303] id=377567 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=61 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:40 [62/303] id=379098 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=62 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:41 [63/303] id=382275 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=63 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:41 [64/303] id=386867 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=64 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:41 [65/303] id=392048 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=65 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:41 [66/303] id=393148 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=66 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:42 [67/303] id=395380 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=67 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:42 [68/303] id=396822 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=68 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:43 [69/303] id=397167 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=69 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:43 [70/303] id=404193 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=70 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:43 [71/303] id=404963 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=71 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:44 [72/303] id=405205 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=72 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:44 [73/303] id=406717 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=73 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:44 [74/303] id=412273 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=74 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:45 [75/303] id=417025 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=75 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:45 [76/303] id=419777 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=76 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:45 [77/303] id=420773 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=77 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:46 [78/303] id=422427 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=78 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:46 [79/303] id=423658 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=79 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:46 [80/303] id=424031 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=80 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:47 [81/303] id=424594 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=81 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:47 [82/303] id=429021 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=82 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:47 [83/303] id=431215 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=83 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:48 [84/303] id=436118 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=84 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:48 [85/303] id=437931 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=85 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:48 [86/303] id=438470 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=86 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:49 [87/303] id=445671 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=87 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:49 [88/303] id=460876 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=88 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:50 [89/303] id=467438 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=89 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:50 [90/303] id=494618 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=90 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:50 [91/303] id=502923 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=91 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:51 [92/303] id=522806 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=92 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:51 [93/303] id=554075 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=93 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:51 [94/303] id=563085 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=94 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:52 [95/303] id=567501 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=95 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:52 [96/303] id=606638 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=96 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:53 [97/303] id=577919 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=97 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:53 [98/303] id=632205 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=98 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:53 [99/303] id=659788 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=99 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:53 [100/303] id=676735 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=100 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:54 [101/303] id=689132 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=101 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:54 [102/303] id=697404 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=102 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:54 [103/303] id=699633 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=103 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:55 [104/303] id=716472 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=104 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:55 [105/303] id=724484 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=105 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:56 [106/303] id=732675 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=106 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:56 [107/303] id=733638 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=107 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:56 [108/303] id=738583 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=108 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:57 [109/303] id=740686 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=109 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:57 [110/303] id=743305 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=110 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:58 [111/303] id=744442 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=111 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:58 [112/303] id=744405 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=112 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:58 [113/303] id=746173 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=113 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:58 [114/303] id=751197 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=114 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:59 [115/303] id=752473 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=115 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:59 [116/303] id=752763 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=116 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:16:59 [117/303] id=754905 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=117 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:00 [118/303] id=757707 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=118 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:00 [119/303] id=765847 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=119 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:00 [120/303] id=766506 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=120 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:01 [121/303] id=784577 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=121 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:01 [122/303] id=785148 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=122 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:01 [123/303] id=785154 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=123 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:02 [124/303] id=785160 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=124 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:02 [125/303] id=809645 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=125 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:02 [126/303] id=811734 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=126 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:03 [127/303] id=813852 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=127 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:03 [128/303] id=814895 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=128 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:04 [129/303] id=815072 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=129 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:04 [130/303] id=823849 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=130 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:04 [131/303] id=825741 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=131 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:05 [132/303] id=842135 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=132 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:05 [133/303] id=845020 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=133 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:05 [134/303] id=852766 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=134 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:06 [135/303] id=860721 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=135 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:06 [136/303] id=878413 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=136 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:06 [137/303] id=854746 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=137 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:07 [138/303] id=880650 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=138 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:07 [139/303] id=880557 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=139 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:07 [140/303] id=883316 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=140 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:08 [141/303] id=884996 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=141 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:08 [142/303] id=887347 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=142 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:08 [143/303] id=888997 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=143 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:09 [144/303] id=898349 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=144 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:09 [145/303] id=896192 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=145 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:09 [146/303] id=928119 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=146 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:10 [147/303] id=949942 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=147 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:10 [148/303] id=951571 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=148 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:11 [149/303] id=977073 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=149 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:11 [150/303] id=977683 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=150 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:11 [151/303] id=998395 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=151 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:12 [152/303] id=1007132 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=152 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:12 [153/303] id=1007147 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=153 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:12 [154/303] id=1010429 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=154 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:13 [155/303] id=1015309 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=155 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:13 [156/303] id=1022947 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=156 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:13 [157/303] id=1027816 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=157 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:14 [158/303] id=1043925 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=158 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:14 [159/303] id=1048352 status=error: ClientError: An error occurred (AccessDeniedException) when calling the I ok=0 err=159 rate=0.00/s eta=0.00h desc=''
+2026-08-05 18:17:14 signal 15 received — flushing local checkpoint
+2026-08-05 18:17:14 LISTO ok=0 err=159 elapsed=0.9m → /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/nova_enrich/nova_enrich.csv
+==== START NOVA DIRECT 20260805T231737Z ====
+2026-08-05 18:17:38 start n_todo=302 done=65202 workers=6 min_interval=0.3s save_every=5 flush_seconds=30.0 model=us.amazon.nova-2-lite-v1:0 mode=direct region=us-west-2 out=/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/nova_enrich/nova_enrich.csv
+2026-08-05 18:17:42 checkpoint flushed ok_batch=5 ok_run=5 → nova_enrich.csv
+2026-08-05 18:17:43 checkpoint flushed ok_batch=5 ok_run=10 → nova_enrich.csv
+2026-08-05 18:17:43 [10/302] id=150906 status=ok ok=10 err=0 rate=1.90/s eta=0.04h desc="A close-up black and white image of a dog's face, showing in"
+2026-08-05 18:17:45 checkpoint flushed ok_batch=5 ok_run=15 → nova_enrich.csv
+2026-08-05 18:17:47 checkpoint flushed ok_batch=5 ok_run=20 → nova_enrich.csv
+2026-08-05 18:17:47 [20/302] id=230004 status=ok ok=20 err=0 rate=2.38/s eta=0.03h desc="A black background with bold red text reading 'VOD' and the "
+2026-08-05 18:17:48 checkpoint flushed ok_batch=5 ok_run=25 → nova_enrich.csv
+2026-08-05 18:17:50 checkpoint flushed ok_batch=5 ok_run=30 → nova_enrich.csv
+2026-08-05 18:17:50 [30/302] id=295220 status=ok ok=30 err=0 rate=2.63/s eta=0.03h desc='A dark, eerie forest scene features a towering, shadowy crea'
+2026-08-05 18:17:51 checkpoint flushed ok_batch=5 ok_run=35 → nova_enrich.csv
+2026-08-05 18:17:53 checkpoint flushed ok_batch=5 ok_run=40 → nova_enrich.csv
+2026-08-05 18:17:53 [40/302] id=332769 status=ok ok=40 err=0 rate=2.77/s eta=0.03h desc='A close-up of a person holding a phone, with another individ'
+2026-08-05 18:17:55 checkpoint flushed ok_batch=5 ok_run=45 → nova_enrich.csv
+2026-08-05 18:17:56 checkpoint flushed ok_batch=5 ok_run=50 → nova_enrich.csv
+2026-08-05 18:17:56 [50/302] id=353038 status=ok ok=50 err=0 rate=2.79/s eta=0.03h desc='A close-up of a person with light streaming through, creatin'
+2026-08-05 18:17:58 checkpoint flushed ok_batch=5 ok_run=55 → nova_enrich.csv
+2026-08-05 18:17:59 checkpoint flushed ok_batch=5 ok_run=60 → nova_enrich.csv
+2026-08-05 18:17:59 [60/302] id=379098 status=ok ok=60 err=0 rate=2.82/s eta=0.02h desc='Two individuals celebrate with drinks in a festive setting, '
+2026-08-05 18:18:01 checkpoint flushed ok_batch=5 ok_run=65 → nova_enrich.csv
+2026-08-05 18:18:02 checkpoint flushed ok_batch=5 ok_run=70 → nova_enrich.csv
+2026-08-05 18:18:02 [70/302] id=405205 status=ok ok=70 err=0 rate=2.89/s eta=0.02h desc='Two men sit in a dimly lit room, one holding a book and the '
+2026-08-05 18:18:04 checkpoint flushed ok_batch=5 ok_run=75 → nova_enrich.csv
+2026-08-05 18:18:06 checkpoint flushed ok_batch=5 ok_run=80 → nova_enrich.csv
+2026-08-05 18:18:06 [80/302] id=424594 status=ok ok=80 err=0 rate=2.92/s eta=0.02h desc="A close-up of a doll's face with eerie eyes, accompanied by "
+2026-08-05 18:18:08 checkpoint flushed ok_batch=5 ok_run=85 → nova_enrich.csv
+2026-08-05 18:18:10 checkpoint flushed ok_batch=5 ok_run=90 → nova_enrich.csv
+2026-08-05 18:18:10 [90/302] id=554075 status=ok ok=90 err=0 rate=2.86/s eta=0.02h desc='Two women are seated closely together in a dimly lit room, o'
+2026-08-05 18:18:12 checkpoint flushed ok_batch=5 ok_run=95 → nova_enrich.csv
+2026-08-05 18:18:13 checkpoint flushed ok_batch=5 ok_run=100 → nova_enrich.csv
+2026-08-05 18:18:13 [100/302] id=689132 status=ok ok=100 err=0 rate=2.87/s eta=0.02h desc='A shirtless man lies relaxed in a warmly lit room with float'
+2026-08-05 18:18:15 checkpoint flushed ok_batch=5 ok_run=105 → nova_enrich.csv
+2026-08-05 18:18:16 checkpoint flushed ok_batch=5 ok_run=110 → nova_enrich.csv
+2026-08-05 18:18:16 [110/302] id=744405 status=ok ok=110 err=0 rate=2.89/s eta=0.02h desc='A man with a shocked expression stands in a forest, his wide'
+2026-08-05 18:18:17 checkpoint flushed ok_batch=5 ok_run=115 → nova_enrich.csv
+2026-08-05 18:18:19 checkpoint flushed ok_batch=5 ok_run=120 → nova_enrich.csv
+2026-08-05 18:18:19 [120/302] id=784577 status=ok ok=120 err=0 rate=2.93/s eta=0.02h desc='A close-up of a person with blood-streaked face against a da'
+2026-08-05 18:18:22 checkpoint flushed ok_batch=5 ok_run=125 → nova_enrich.csv
+2026-08-05 18:18:23 checkpoint flushed ok_batch=5 ok_run=130 → nova_enrich.csv
+2026-08-05 18:18:23 [130/302] id=842135 status=ok ok=130 err=0 rate=2.88/s eta=0.02h desc='A person with clown-like makeup stands in front of neon ligh'
+2026-08-05 18:18:25 checkpoint flushed ok_batch=5 ok_run=135 → nova_enrich.csv
+2026-08-05 18:18:27 checkpoint flushed ok_batch=5 ok_run=140 → nova_enrich.csv
+2026-08-05 18:18:27 [140/302] id=884996 status=ok ok=140 err=0 rate=2.87/s eta=0.02h desc='A shadowy figure stands in front of a display of wigs and ma'
+2026-08-05 18:18:29 checkpoint flushed ok_batch=5 ok_run=145 → nova_enrich.csv
+2026-08-05 18:18:31 checkpoint flushed ok_batch=5 ok_run=150 → nova_enrich.csv
+2026-08-05 18:18:31 [150/302] id=998395 status=ok ok=150 err=0 rate=2.87/s eta=0.01h desc='A man and a woman stand in a tense conversation in an elegan'
+2026-08-05 18:18:32 checkpoint flushed ok_batch=5 ok_run=155 → nova_enrich.csv
+2026-08-05 18:18:34 checkpoint flushed ok_batch=5 ok_run=160 → nova_enrich.csv
+2026-08-05 18:18:34 [160/302] id=1058085 status=ok ok=160 err=0 rate=2.87/s eta=0.01h desc='A woman with curly hair stands in front of a mirror, holding'
+2026-08-05 18:18:35 checkpoint flushed ok_batch=5 ok_run=165 → nova_enrich.csv
+2026-08-05 18:18:37 checkpoint flushed ok_batch=5 ok_run=170 → nova_enrich.csv
+2026-08-05 18:18:37 [170/302] id=1135261 status=ok ok=170 err=0 rate=2.88/s eta=0.01h desc='A close-up view of a vintage cassette tape inside a player, '
+2026-08-05 18:18:39 checkpoint flushed ok_batch=5 ok_run=175 → nova_enrich.csv
+2026-08-05 18:18:40 checkpoint flushed ok_batch=5 ok_run=180 → nova_enrich.csv
+2026-08-05 18:18:40 [180/302] id=1253363 status=ok ok=180 err=0 rate=2.90/s eta=0.01h desc='A group of people stand in a field, each wearing unique mask'
+2026-08-05 18:18:42 checkpoint flushed ok_batch=5 ok_run=185 → nova_enrich.csv
+2026-08-05 18:18:44 checkpoint flushed ok_batch=5 ok_run=190 → nova_enrich.csv
+2026-08-05 18:18:44 [190/302] id=1274813 status=ok ok=190 err=0 rate=2.91/s eta=0.01h desc='A person is seen climbing among trees in a forest, with thei'
+2026-08-05 18:18:45 checkpoint flushed ok_batch=5 ok_run=195 → nova_enrich.csv
+2026-08-05 18:18:47 checkpoint flushed ok_batch=5 ok_run=200 → nova_enrich.csv
+2026-08-05 18:18:47 [200/302] id=1309181 status=ok ok=200 err=0 rate=2.92/s eta=0.01h desc='Two individuals are engaged in a physical struggle outdoors,'
+2026-08-05 18:18:48 checkpoint flushed ok_batch=5 ok_run=205 → nova_enrich.csv
+2026-08-05 18:18:50 checkpoint flushed ok_batch=5 ok_run=210 → nova_enrich.csv
+2026-08-05 18:18:50 [210/302] id=1318302 status=ok ok=210 err=0 rate=2.93/s eta=0.01h desc='A vintage RCA television set with wooden casing, featuring d'
+2026-08-05 18:18:52 checkpoint flushed ok_batch=5 ok_run=215 → nova_enrich.csv
+2026-08-05 18:18:53 checkpoint flushed ok_batch=5 ok_run=220 → nova_enrich.csv
+2026-08-05 18:18:53 [220/302] id=1365986 status=ok ok=220 err=0 rate=2.94/s eta=0.01h desc='A poster featuring a stylized skull and a colorful, pixelate'
+2026-08-05 18:18:55 checkpoint flushed ok_batch=5 ok_run=225 → nova_enrich.csv
+2026-08-05 18:18:57 checkpoint flushed ok_batch=5 ok_run=230 → nova_enrich.csv
+2026-08-05 18:18:57 [230/302] id=1372001 status=ok ok=230 err=0 rate=2.92/s eta=0.01h desc='A man stands in a cemetery holding a sword, with tombstones '
+2026-08-05 18:18:59 checkpoint flushed ok_batch=5 ok_run=235 → nova_enrich.csv
+2026-08-05 18:19:00 checkpoint flushed ok_batch=5 ok_run=240 → nova_enrich.csv
+2026-08-05 18:19:00 [240/302] id=1404680 status=ok ok=240 err=0 rate=2.95/s eta=0.01h desc='A dimly lit room shows a person lying on the floor near a co'
+2026-08-05 18:19:03 checkpoint flushed ok_batch=5 ok_run=245 → nova_enrich.csv
+2026-08-05 18:19:04 checkpoint flushed ok_batch=5 ok_run=250 → nova_enrich.csv
+2026-08-05 18:19:04 [250/302] id=1433235 status=ok ok=250 err=0 rate=2.91/s eta=0.00h desc='A woman stands in a dark forest with a ghostly figure behind'
+2026-08-05 18:19:05 checkpoint flushed ok_batch=5 ok_run=255 → nova_enrich.csv
+2026-08-05 18:19:08 checkpoint flushed ok_batch=5 ok_run=260 → nova_enrich.csv
+2026-08-05 18:19:08 [260/302] id=1479157 status=ok ok=260 err=0 rate=2.90/s eta=0.00h desc='A pink poster features dramatic text about a Texas killing s'
+2026-08-05 18:19:09 checkpoint flushed ok_batch=5 ok_run=265 → nova_enrich.csv
+2026-08-05 18:19:11 checkpoint flushed ok_batch=5 ok_run=270 → nova_enrich.csv
+2026-08-05 18:19:11 [270/302] id=1575865 status=ok ok=270 err=0 rate=2.91/s eta=0.00h desc='A large, eerie hotel building with a dark, stormy sky. Text '
+2026-08-05 18:19:13 checkpoint flushed ok_batch=5 ok_run=275 → nova_enrich.csv
+2026-08-05 18:19:15 checkpoint flushed ok_batch=5 ok_run=280 → nova_enrich.csv
+2026-08-05 18:19:15 [280/302] id=1654295 status=ok ok=280 err=0 rate=2.91/s eta=0.00h desc="A poster featuring bold yellow text reading 'THE HORROR HALL"
+2026-08-05 18:19:15 checkpoint flushed ok_batch=5 ok_run=285 → nova_enrich.csv
+2026-08-05 18:19:17 checkpoint flushed ok_batch=5 ok_run=290 → nova_enrich.csv
+2026-08-05 18:19:17 [290/302] id=1662060 status=ok ok=290 err=0 rate=2.93/s eta=0.00h desc="A red background with black splatters and the title 'ickman'"
+2026-08-05 18:19:19 checkpoint flushed ok_batch=5 ok_run=295 → nova_enrich.csv
+2026-08-05 18:19:20 checkpoint flushed ok_batch=5 ok_run=300 → nova_enrich.csv
+2026-08-05 18:19:20 [300/302] id=1726191 status=ok ok=300 err=0 rate=2.94/s eta=0.00h desc='A blurred, abstract red shape dominates a dark background wi'
+2026-08-05 18:19:21 [302/302] id=1726033 status=ok ok=302 err=0 rate=2.95/s eta=0.00h desc='A black-and-white poster shows a house with a person partial'
+2026-08-05 18:19:21 checkpoint flushed ok_batch=2 ok_run=302 → nova_enrich.csv
+2026-08-05 18:19:21 LISTO ok=302 err=0 elapsed=1.7m → /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/nova_enrich/nova_enrich.csv
+==== END NOVA DIRECT 20260805T231921Z exit= ====

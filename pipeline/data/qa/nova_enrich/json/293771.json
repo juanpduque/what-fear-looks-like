@@ -1,0 +1,45 @@
+{
+  "title_text": "DEAD RISING",
+  "credits_text": "WATCHTOWER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TOURIST",
+  "mood": [
+    "action",
+    "post-apocalyptic",
+    "intense",
+    "survival",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.6,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and post-apocalyptic themes.",
+  "description": "A group of characters stand together with weapons against a backdrop of a burning city and a zombie crowd."
+}

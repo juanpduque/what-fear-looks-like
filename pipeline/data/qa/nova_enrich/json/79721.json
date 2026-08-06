@@ -1,0 +1,45 @@
+{
+  "title_text": "EXTINCTION",
+  "credits_text": "DANIEL BADER LUISE BAHR JERRY COYLE LEE RYCHTER TOBIAS KAY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AT THE DUSH OF MAN... ONLY THE STRONG SURVIVE DEAD",
+  "mood": [
+    "apocalyptic",
+    "dystopia",
+    "survival",
+    "horror",
+    "post-apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and post-apocalyptic themes.",
+  "description": "A man stands on a rooftop overlooking a desolate city filled with zombies. The poster features a dark, ominous atmosphere with a tagline about survival."
+}

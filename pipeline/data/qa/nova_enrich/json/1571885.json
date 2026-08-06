@@ -1,0 +1,38 @@
+{
+  "title_text": "THE CANARIES",
+  "credits_text": "Dan Lipsher, Zach Betta, a Rikard Rodin film",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "suspenseful",
+    "mystery",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "hazard_suit",
+      "conf": 0.9
+    },
+    {
+      "name": "flashlight",
+      "conf": 0.8
+    },
+    {
+      "name": "enclosed_space",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Two individuals in hazmat suits stand in a dimly lit room, illuminating a glass container with a flashlight. The scene suggests a tense, mysterious atmosphere."
+}

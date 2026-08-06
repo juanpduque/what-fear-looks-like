@@ -1,0 +1,42 @@
+{
+  "title_text": "La Morte Amoureuse",
+  "credits_text": "Avec Luc Pilon, Virginie Dubois, Pierre Mailloux, Denise Bouchard et Jérôme Ricard. UN FILM DE ALAIN VÉZINA",
+  "languages": [
+    "fr"
+  ],
+  "other_text": "«...Le résultat est surprenant! Les effets spéciales sont très efficaces et les créatures plus vraies que nature...\\n- Marie Larouche, LE SOLEIL»",
+  "mood": [
+    "gothic",
+    "erotic",
+    "surreal",
+    "dread",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "erotic",
+    "occult"
+  ],
+  "moderation_notes": "Contains erotic and occult themes, mild blood and haunting imagery.",
+  "description": "Movie poster features a close-up of a woman's face with intense eyes and dark makeup, overlaid with French text and cast names."
+}

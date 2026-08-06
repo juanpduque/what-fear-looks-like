@@ -1,0 +1,35 @@
+{
+  "title_text": "TARGETS",
+  "credits_text": "KILLS SIX MARK",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "target",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster implies potential violence through the target imagery and text.",
+  "description": "A bold red poster features a split image of a man's face and a target, with large white text reading 'TARGETS' and a smaller tagline 'KILLS SIX MARK.'"
+}

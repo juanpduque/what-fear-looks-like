@@ -1,0 +1,43 @@
+{
+  "title_text": "SCRAPBOOK",
+  "credits_text": "a movie by ERIC STANZE\nEMILY HAACK\nTOMMY BIONDO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TRUE HORROR IS SIMPLY WHAT ONE HUMAN BEING CAN DO TO ANOTHER.\nBEST INDEPENDENT FILM OF THE YEAR -Rue Morgue Magazine - 2001 Year End List\nWARNING: INTENDED FOR ADULT VIEWERS ONLY. CONTAINS EXTREMELY DISTURBING MATERIAL.",
+  "mood": [
+    "dread",
+    "disturbing",
+    "psychological",
+    "violent",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains graphic violence and nudity; intended for adult audiences only.",
+  "description": "A collage-style poster features distressed images of people, blood, and text, promoting a horror film titled 'Scrapbook'."
+}

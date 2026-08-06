@@ -1,0 +1,42 @@
+{
+  "title_text": "DEAD BEFORE DAWN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "5, APHS",
+  "mood": [
+    "horror",
+    "comedy",
+    "zombie",
+    "teen",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "zombie",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild violence and gore, suitable for mature audiences.",
+  "description": "A group of teens stand in a cemetery, holding weapons, with a zombie-like figure among them, suggesting a horror-comedy theme."
+}

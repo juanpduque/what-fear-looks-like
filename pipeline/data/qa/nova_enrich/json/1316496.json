@@ -1,0 +1,45 @@
+{
+  "title_text": "NARCO SHARKS",
+  "credits_text": "RICKY VALENTE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FROM THE TROUBLED MIND THAT BROUGHT YOU THE BELOVED CULT CLASSIC COMES THE FAR SUPERIOR SEQUEL... BIGGER. BETTER. SHARKIER.",
+  "mood": [
+    "action",
+    "sci-fi",
+    "horror",
+    "camp",
+    "satirical"
+  ],
+  "fear_labels": [
+    {
+      "name": "shark",
+      "conf": 0.95
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "sci-fi",
+      "conf": 0.7
+    },
+    {
+      "name": "horror",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A man holds a gun facing a giant shark with robotic elements, accompanied by other characters in a dynamic, action-packed scene."
+}

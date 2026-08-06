@@ -1,0 +1,38 @@
+{
+  "ts_utc": "20260805T231205Z",
+  "retry_n": 38,
+  "hits": [
+    {
+      "id": "1473792",
+      "imdb_id": "Dollar Store Killers",
+      "title": "2025",
+      "sidecar": "tt33083538"
+    },
+    {
+      "id": "1536383",
+      "imdb_id": "tt31322095",
+      "title": "The Veiled Abyss",
+      "sidecar": "tt31322095"
+    },
+    {
+      "id": "1555576",
+      "imdb_id": "tt36484338",
+      "title": "Spite",
+      "sidecar": "tt36484338"
+    },
+    {
+      "id": "1691931",
+      "imdb_id": "tt43645326",
+      "title": "LAKESVILLE MOVIE",
+      "sidecar": "tt43645326"
+    }
+  ],
+  "n_hits": 4,
+  "n_miss": 34,
+  "miss_breakdown": {
+    "director_mismatch": 16,
+    "year_mismatch": 12,
+    "no_directors_on_page": 6
+  },
+  "timeouts_cleared": true
+}

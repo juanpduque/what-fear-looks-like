@@ -1,0 +1,46 @@
+{
+  "title_text": "CHILDREN OF CAMP BLOOD",
+  "credits_text": "BEWARE!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THERE IS ONLY ONE CAMP BLOOD!",
+  "mood": [
+    "horror",
+    "terror",
+    "menace",
+    "nightmare",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "text",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and implied violence.",
+  "description": "A poster features a menacing clown with grotesque children around a fire, with bold red text warning of camp blood."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "THE HANGMAN",
+  "credits_text": "CINE SUSO TIM SAGE CARLO BERKA LARS GUDMAN JASPER JANSEN MIAU MIAU TIM SACE LARS GELLEN GUNDR FRANKEN REIN KEIJ KOO VINCENT KUNISS MARTIEN CLEIJERS WERDEN DAMEN MELISSA BREUER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery",
+    "thriller",
+    "noir"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "noose",
+      "conf": 0.95
+    },
+    {
+      "name": "knife",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a noose, suggesting potential self-harm themes.",
+  "description": "A dark poster shows a hooded figure holding a knife in front of a haunted house with a noose hanging above."
+}

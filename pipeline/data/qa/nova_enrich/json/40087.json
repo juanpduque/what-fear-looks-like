@@ -1,0 +1,37 @@
+{
+  "title_text": "CHEERLEADER CAMP",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CHEERLEADERS",
+  "mood": [
+    "horror",
+    "camp",
+    "comedy",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood, with a horror-comedy tone.",
+  "description": "A cheerleader in a revealing outfit leaps with pom-poms against a night sky, with other characters and a barn in the background."
+}

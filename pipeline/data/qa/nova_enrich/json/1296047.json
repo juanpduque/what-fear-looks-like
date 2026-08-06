@@ -1,0 +1,49 @@
+{
+  "title_text": "A NIGHTMARE ON BEZ STREET",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BEZ'S",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "ghost",
+      "conf": 0.75
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.65
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including monstrous creatures and implied violence.",
+  "description": "A witch stands amidst a crowd of grotesque monsters, holding a sign, with eerie green lighting and dark, twisted figures surrounding her."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "PERFECT HORROR",
+  "credits_text": "A Film By",
+  "languages": [
+    "en"
+  ],
+  "other_text": "REC",
+  "mood": [
+    "dread",
+    "eerie",
+    "suspenseful",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, eerie poster features a smartphone displaying a ghostly face, with a shadowy figure in the background and the title 'PERFECT HORROR' prominently displayed."
+}

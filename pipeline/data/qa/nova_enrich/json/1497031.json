@@ -1,0 +1,42 @@
+{
+  "title_text": "RETURN TO BLOODY CREEK!",
+  "credits_text": "THE KILLINGS HAVE BEGUN AGAIN! LAURA CIGLIO DEBBIE G KYLA DOMINIQUE JASON POLLOCK JACQUELINE CHE BRANDON E BROOKS JOHN COULTER JULIE SEDEL MARCIE WEBBER DIOMIRA KEANE RICHARD BULL NATALIA JABLOKOV",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SOUTH JERSEY FILMS",
+  "mood": [
+    "thriller",
+    "horror",
+    "mystery",
+    "suspense",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    },
+    {
+      "name": "thriller",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; suitable for mature audiences.",
+  "description": "A woman lies on the ground surrounded by leaves, with a dramatic title and cast list overlaying the image."
+}

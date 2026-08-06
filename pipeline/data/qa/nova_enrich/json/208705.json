@@ -1,0 +1,46 @@
+{
+  "title_text": "PRIMITIVE",
+  "credits_text": "MATT O'NEIL KRISTIN LORENZ JEFF RYAN AND REGIE BANNISTER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IT WILL RIP YOU TO PIECES",
+  "mood": [
+    "dread",
+    "terror",
+    "violent",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A poster featuring a menacing, monstrous face with sharp teeth and blood, accompanied by bold red text and a tagline."
+}

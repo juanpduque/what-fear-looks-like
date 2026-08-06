@@ -1,0 +1,40 @@
+{
+  "title_text": "BUGGY TRAILS",
+  "credits_text": "SOME PATHS DON'T LEAD YOU OUT.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SPEED LIMIT 25",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of a decayed figure with visible blood and gore.",
+  "description": "A decayed figure stands on a dark road at night, wearing a blue shirt and black apron, with visible blood and a sign reading 'Speed Limit 25.'"
+}

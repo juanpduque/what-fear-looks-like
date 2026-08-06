@@ -1,0 +1,45 @@
+{
+  "title_text": "STREETS OF THE DEAD",
+  "credits_text": "KELLY REITER KAITLYN DIAS NICOLE CINAGLIA FELISSA ROSE JARED RIVET",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A ROBBIE DIAS FILM",
+  "mood": [
+    "apocalyptic",
+    "horror",
+    "post-apocalyptic",
+    "survival",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the apocalyptic setting and post-apocalyptic themes.",
+  "description": "A poster showing a woman walking through a desolate urban landscape under a red sky with a fiery explosion in the background."
+}

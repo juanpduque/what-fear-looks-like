@@ -1,0 +1,42 @@
+{
+  "title_text": "結紙結紙",
+  "credits_text": "結紙結紙",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "記言結紙に消えた実家",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "disturbing",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic depictions of blood and implied violence.",
+  "description": "A poster shows a pair of blood-stained feet dangling above a red pool, with Japanese text overlaying a dark, gritty background."
+}

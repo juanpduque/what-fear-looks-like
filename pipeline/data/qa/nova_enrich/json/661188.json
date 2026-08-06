@@ -1,0 +1,47 @@
+{
+  "title_text": "THE CAMP BLOOD COLLECTION",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CAMP BLOOD 8\nHORROR",
+  "mood": [
+    "horror",
+    "terror",
+    "suspense",
+    "dread",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "horror",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic horror elements and mild sexual suggestiveness.",
+  "description": "A horror poster shows a terrified woman facing a monstrous clown holding a weapon, with a pumpkin and eerie lighting in the background."
+}

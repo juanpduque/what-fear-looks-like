@@ -1,0 +1,46 @@
+{
+  "title_text": "Contos da Morte",
+  "credits_text": "Vinicius J. Santos, Rodrigo Doming, Jesse Baiano, Caike Lopes, Ulysses de Motta, Kimo Zingerman, Ivo Costa, Thiago Maynes, Júlio Heme, Helvico Parente, Bruno Bonetti, Ana Rosmanay",
+  "languages": [
+    "pt"
+  ],
+  "other_text": "12 CINERASTAS SE UNEM EM BUSCA DO VERDADEIRO TERROR",
+  "mood": [
+    "gothic",
+    "horror",
+    "dark",
+    "macabre",
+    "sinister"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains dark and macabre imagery, including a skull and ghostly figure, suggesting horror themes.",
+  "description": "A poster featuring a dark, skeletal figure holding a film reel with bold red and black colors, promoting a horror anthology film."
+}

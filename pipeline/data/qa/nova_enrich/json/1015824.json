@@ -1,0 +1,45 @@
+{
+  "title_text": "LA CEREMONIA",
+  "credits_text": "ISABELA RUIZ-DÍAZ ISAAC ABRAHAM BEATRIZ GARCÍA CARLOS MORET JOSÉ ANTONIO QUINTANA ANNA CRISTINA DE PARADO LA CEREMONIA ZOE GARCÍA GARCÍA ALEJANDRA QUINTANA CRISTINA CORRALINA ZOE GARCÍA GARCÍA RICARDO FERNÁNDEZ JAVIER BERROJAL ZOE GARCÍA GARCÍA BERNARDO BERRUJO",
+  "languages": [
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "occult",
+    "surreal",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "occult",
+      "conf": 0.8
+    },
+    {
+      "name": "gothic",
+      "conf": 0.7
+    },
+    {
+      "name": "dread",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and a demonic figure, but no explicit violence or gore.",
+  "description": "A dark poster features a demonic face with horns against a starry night sky, with the title 'LA CEREMONIA' and cast credits."
+}

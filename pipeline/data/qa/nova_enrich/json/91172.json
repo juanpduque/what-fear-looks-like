@@ -1,0 +1,39 @@
+{
+  "title_text": "FREAKSHOW",
+  "credits_text": "BRIGHTSTAR FILMS presents \"FREAKSHOW\" starring AUDREY LANDERS, PETE PETER, WILL KORBUT, DAN GALLAGER, DEAN RICHARD-WIANKO, GORDON J. SMITH, CLYDE DEGRANO, GILLES CORBEY, BOB FARMER, STEVE SURGIK, ANTHONY KRAEMERTHER, CONSTANTINO MAGNATTA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "So deadly, it may be the last movie you ever see.",
+  "mood": [
+    "dread",
+    "camp",
+    "gothic",
+    "erotic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.2,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A woman stands on a fire escape against a dark, eerie cityscape at night, with dramatic lighting and a tagline above the title."
+}

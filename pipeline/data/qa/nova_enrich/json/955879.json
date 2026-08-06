@@ -1,0 +1,46 @@
+{
+  "title_text": "MONSTER ATTACK",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "锁干视频 VIP 锁干视频网站 VIP两号精选",
+  "mood": [
+    "action",
+    "horror",
+    "adventure",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.95,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic depictions of monsters and mild violence.",
+  "description": "A poster shows three people facing large, menacing dinosaurs in a dense jungle, with dramatic lighting and intense expressions."
+}

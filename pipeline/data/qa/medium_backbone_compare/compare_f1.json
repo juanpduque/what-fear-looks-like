@@ -1,0 +1,81 @@
+{
+  "gold_n": 421,
+  "n_train": 315,
+  "n_test": 106,
+  "split_csv": "/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_custom_labels/split.csv",
+  "gold_csv": "/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/medium_custom_labels/gold_merged.csv",
+  "seed": 42,
+  "C": 2.0,
+  "delta_threshold": 0.03,
+  "device": "cpu",
+  "baseline_macro_f1": 0.5134641986693894,
+  "winner": "siglip_base",
+  "winner_macro_f1": 0.5904983904983905,
+  "clear_win_vs_baseline": true,
+  "lift_vs_baseline": 0.077,
+  "ranked": [
+    {
+      "model": "siglip_base",
+      "macro_f1_test": 0.5904983904983905
+    },
+    {
+      "model": "openclip_vitl14",
+      "macro_f1_test": 0.5623477297895902
+    },
+    {
+      "model": "clip_vitb",
+      "macro_f1_test": 0.5134641986693894
+    },
+    {
+      "model": "dinov2_base",
+      "macro_f1_test": 0.4744405138240754
+    }
+  ],
+  "per_model": {
+    "clip_vitb": {
+      "macro_f1_test": 0.5134641986693894,
+      "emb_dim": 512,
+      "n_train": 313,
+      "n_test": 105,
+      "per_class_f1": {
+        "painted": 0.6736842105263158,
+        "photo": 0.425531914893617,
+        "composite": 0.4411764705882353
+      }
+    },
+    "openclip_vitl14": {
+      "macro_f1_test": 0.5623477297895902,
+      "emb_dim": 768,
+      "n_train": 315,
+      "n_test": 106,
+      "per_class_f1": {
+        "painted": 0.7441860465116279,
+        "photo": 0.42857142857142855,
+        "composite": 0.5142857142857142
+      }
+    },
+    "siglip_base": {
+      "macro_f1_test": 0.5904983904983905,
+      "emb_dim": 768,
+      "n_train": 315,
+      "n_test": 106,
+      "per_class_f1": {
+        "painted": 0.7472527472527473,
+        "photo": 0.509090909090909,
+        "composite": 0.5151515151515151
+      }
+    },
+    "dinov2_base": {
+      "macro_f1_test": 0.4744405138240754,
+      "emb_dim": 768,
+      "n_train": 315,
+      "n_test": 106,
+      "per_class_f1": {
+        "painted": 0.6373626373626373,
+        "photo": 0.375,
+        "composite": 0.410958904109589
+      }
+    }
+  },
+  "note_full_corpus": "Do NOT overwrite medium_pred.csv unless clear win. To re-embed full corpus after a win: reuse embed_open_clip/embed_dinov2 over all poster ids, then fit LogReg on gold train and predict."
+}

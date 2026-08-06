@@ -1,0 +1,39 @@
+{
+  "title_text": "THE CURSE OF THE FOLD",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ARE YOU READY FOR YOUR FATE?",
+  "mood": [
+    "mysterious",
+    "intense",
+    "foreboding",
+    "psychological",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A black-and-white poster features a group of people with intense expressions, overlaid by a large, shadowy face and the title \"The Curse of the Fold\"."
+}

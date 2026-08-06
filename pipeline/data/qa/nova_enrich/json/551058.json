@@ -1,0 +1,41 @@
+{
+  "title_text": "COSMETICA TERROR",
+  "credits_text": "ROSA ROMAN CAROLINA SORE ALEX CANIDO MARA CORONCHINO AND PEREZINA INMACULADA PEREZ SUSANNE GARCIA JUAN SOTO RAFAEL GOMEZ JORGE LOPEZ JEP PEREZ SONIA GONZALEZ ANTONIO CRUZ JENARO GOMEZ PABLO LINARES MARIA CORONCHINO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HALLOWEEN",
+  "mood": [
+    "camp",
+    "horror",
+    "comedy",
+    "grotesque",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.4,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "sexual"
+  ],
+  "moderation_notes": "Mild sexual innuendo present in poster art.",
+  "description": "A colorful poster features multiple exaggerated faces with horror and comedy themes, set against a green Halloween backdrop."
+}

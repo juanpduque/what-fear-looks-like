@@ -1,0 +1,42 @@
+{
+  "title_text": "LA HERENCIA DE LA LLORONA",
+  "credits_text": "UN FILM DE MAURICIO MAGDALENO",
+  "languages": [
+    "es"
+  ],
+  "other_text": "PAQUITA DE RONDA JUAN JOSE MARTINEZ DOLORES TINOCO",
+  "mood": [
+    "gothic",
+    "eerie",
+    "haunting",
+    "mysterious",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "blood"
+  ],
+  "moderation_notes": "Contains mild blood imagery and dramatic, eerie atmosphere.",
+  "description": "A dramatic poster features a woman in a wedding veil with dark makeup and blood near her mouth, accompanied by text and other characters in the background."
+}

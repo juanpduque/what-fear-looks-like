@@ -1,0 +1,42 @@
+{
+  "title_text": "colour from the dark",
+  "credits_text": "A film by Ivan Zuccon\nBased on \"The Colour Out of Space\" by H.P. Lovecraft",
+  "languages": [
+    "en"
+  ],
+  "other_text": "It Sucks Your Life Out\nWinner Best Feature Film\nDebbie Rochon Michael Segal Marysia Kay",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic imagery and occult themes.",
+  "description": "A poster features a distorted face with blood and a dark, eerie background, promoting a horror film based on H.P. Lovecraft's work."
+}

@@ -1,0 +1,112 @@
+sample n=100 from /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/ocr_pilot_v2/sample_ids.txt
+models: ['gemini-flash']
+project=playground-ia-502703 location=us-central1
+
+=== model=gemini-flash vertex=gemini-2.5-flash project=playground-ia-502703 location=us-central1 n=100 ===
+  seeded 1 rows from existing .txt into sidecar
+  skip 2 already-ok ids
+  [1/98] id=362776 status=ok chars=55 overlap=1.0 3.17s
+  [2/98] id=26921 status=ok chars=31 overlap=1.0 1.497s
+  [3/98] id=212973 status=ok chars=250 overlap=1.0 1.963s
+  [4/98] id=48800 status=ok chars=150 overlap=1.0 1.629s
+  [5/98] id=35073 status=ok chars=30 overlap=1.0 1.531s
+  [6/98] id=836924 status=ok chars=35 overlap=1.0 4.615s
+  [7/98] id=3104 status=ok chars=26 overlap=1.0 1.476s
+  [8/98] id=64524 status=ok chars=9 overlap=1.0 1.143s
+  [9/98] id=77399 status=ok chars=13 overlap=0.0 1.412s
+  [10/98] id=30833 status=ok chars=17 overlap=1.0 1.594s
+  [11/98] id=399172 status=ok chars=18 overlap=1.0 1.239s
+  [12/98] id=1015482 status=ok chars=42 overlap=0.0 1.293s
+  [13/98] id=10283 status=ok chars=42 overlap=0.875 1.669s
+  [14/98] id=88410 status=ok chars=11 overlap=1.0 2.549s
+  [15/98] id=86687 status=ok chars=58 overlap=1.0 3.462s
+  [16/98] id=336254 status=ok chars=8 overlap=1.0 1.478s
+  [17/98] id=36992 status=ok chars=7 overlap=1.0 3.584s
+  [18/98] id=43274 status=ok chars=15 overlap=1.0 4.376s
+  [19/98] id=15056 status=ok chars=28 overlap=1.0 1.107s
+  [20/98] id=23532 status=ok chars=25 overlap=1.0 1.583s
+  [21/98] id=31012 status=ok chars=8 overlap=1.0 1.271s
+  [22/98] id=45551 status=ok chars=94 overlap=1.0 3.879s
+  [23/98] id=156252 status=ok chars=6 overlap=1.0 0.984s
+  [24/98] id=743757 status=ok chars=85 overlap=1.0 1.446s
+  [25/98] id=11908 status=ok chars=7 overlap=1.0 1.085s
+  [26/98] id=28265 status=ok chars=17 overlap=0.3333 1.096s
+  [27/98] id=28419 status=ok chars=517 overlap=1.0 2.286s
+  [28/98] id=53553 status=ok chars=8 overlap=1.0 1.237s
+  [29/98] id=77050 status=ok chars=73 overlap=1.0 1.259s
+  [30/98] id=278267 status=ok chars=681 overlap=1.0 2.245s
+  [31/98] id=165078 status=ok chars=221 overlap=1.0 1.676s
+  [32/98] id=225048 status=ok chars=42 overlap=1.0 1.523s
+  [33/98] id=233194 status=ok chars=269 overlap=1.0 2.478s
+  [34/98] id=286452 status=ok chars=13 overlap=1.0 1.495s
+  [35/98] id=300156 status=ok chars=75 overlap=1.0 1.586s
+  [36/98] id=302019 status=ok chars=12 overlap=1.0 1.225s
+  [37/98] id=387034 status=ok chars=372 overlap=1.0 2.285s
+  [38/98] id=491649 status=ok chars=5 overlap=1.0 1.818s
+  [39/98] id=505063 status=ok chars=26 overlap=1.0 1.752s
+  [40/98] id=547055 status=ok chars=9 overlap=1.0 1.956s
+  [41/98] id=636515 status=ok chars=32 overlap=1.0 5.483s
+  [42/98] id=653537 status=ok chars=10 overlap=0.0 3.065s
+  [43/98] id=772603 status=ok chars=208 overlap=1.0 2.475s
+  [44/98] id=974046 status=ok chars=127 overlap=1.0 2.121s
+  [45/98] id=976209 status=ok chars=97 overlap=1.0 2.257s
+  [46/98] id=77677 status=ok chars=7 overlap=1.0 1.873s
+  [47/98] id=94910 status=ok chars=10 overlap=1.0 1.964s
+  [48/98] id=207475 status=ok chars=52 overlap=1.0 2.098s
+  [49/98] id=259675 status=ok chars=187 overlap=1.0 2.314s
+  [50/98] id=343674 status=ok chars=13 overlap=1.0 2.227s
+  [51/98] id=356486 status=ok chars=14 overlap=1.0 1.098s
+  [52/98] id=384756 status=ok chars=56 overlap=1.0 2.251s
+  [53/98] id=472015 status=ok chars=101 overlap=1.0 2.256s
+  [54/98] id=487439 status=ok chars=624 overlap=1.0 3.278s
+  [55/98] id=682809 status=ok chars=632 overlap=1.0 4.264s
+  [56/98] id=748251 status=ok chars=15 overlap=1.0 2.684s
+  [57/98] id=861413 status=ok chars=436 overlap=1.0 2.765s
+  [58/98] id=940187 status=ok chars=50 overlap=0.0 2.011s
+  [59/98] id=972244 status=ok chars=468 overlap=1.0 2.605s
+  [60/98] id=748589 status=ok chars=455 overlap=1.0 4.08s
+  [61/98] id=796250 status=ok chars=312 overlap=1.0 3.573s
+  [62/98] id=802851 status=ok chars=44 overlap=1.0 2.061s
+  [63/98] id=854417 status=ok chars=29 overlap=1.0 2.232s
+  [64/98] id=863406 status=ok chars=13 overlap=1.0 1.969s
+  [65/98] id=918096 status=ok chars=38 overlap=1.0 2.488s
+  [66/98] id=931049 status=ok chars=152 overlap=1.0 2.225s
+  [67/98] id=1022479 status=ok chars=36 overlap=1.0 2.354s
+  [68/98] id=1083119 status=ok chars=19 overlap=1.0 2.319s
+  [69/98] id=1125186 status=ok chars=67 overlap=1.0 2.433s
+  [70/98] id=1193824 status=ok chars=11 overlap=1.0 4.117s
+  [71/98] id=1289969 status=ok chars=303 overlap=1.0 5.704s
+  [72/98] id=1298819 status=ok chars=20 overlap=1.0 2.205s
+  [73/98] id=1307154 status=ok chars=16 overlap=1.0 13.81s
+  [74/98] id=1375109 status=ok chars=460 overlap=1.0 4.099s
+  [75/98] id=1397562 status=ok chars=6 overlap=1.0 8.556s
+  [76/98] id=1441287 status=ok chars=52 overlap=1.0 2.278s
+  [77/98] id=1443966 status=ok chars=137 overlap=1.0 2.22s
+  [78/98] id=1475231 status=ok chars=445 overlap=1.0 2.983s
+  [79/98] id=1718150 status=ok chars=976 overlap=1.0 3.756s
+  [80/98] id=652004 status=ok chars=23 overlap=1.0 2.119s
+  [81/98] id=931940 status=ok chars=18 overlap=1.0 2.095s
+  [82/98] id=949486 status=ok chars=362 overlap=1.0 3.104s
+  [83/98] id=988142 status=ok chars=25 overlap=1.0 2.223s
+  [84/98] id=1085262 status=ok chars=39 overlap=1.0 1.923s
+  [85/98] id=1148920 status=ok chars=442 overlap=1.0 2.698s
+  [86/98] id=1229586 status=ok chars=7 overlap=1.0 2.982s
+  [87/98] id=1273536 status=ok chars=29 overlap=1.0 1.928s
+  [88/98] id=1294319 status=ok chars=13 overlap=1.0 2.463s
+  [89/98] id=1346645 status=ok chars=4 overlap=1.0 3.177s
+  [90/98] id=1351896 status=ok chars=194 overlap=1.0 2.244s
+  [91/98] id=1363776 status=ok chars=9 overlap=1.0 1.967s
+  [92/98] id=1379480 status=ok chars=17 overlap=1.0 2.017s
+  [93/98] id=1405670 status=ok chars=22 overlap=0.0 2.01s
+  [94/98] id=1463113 status=ok chars=4 overlap=1.0 1.091s
+  [95/98] id=1483020 status=ok chars=12 overlap=1.0 1.571s
+  [96/98] id=1483743 status=ok chars=3492 overlap=0.3333 10.364s
+  [97/98] id=1541944 status=ok chars=13 overlap=1.0 1.962s
+  [98/98] id=1578643 status=ok chars=34 overlap=1.0 2.326s
+final sidecar merge → 100 gemini rows into /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/ocr_pilot_v2/results.csv
+  gemini-flash: 100/100 ok
+
+LISTO → /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/ocr_pilot_v2/results.csv (1254 rows)
+sidecar → /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/ocr_pilot_v2/gemini_flash_sidecar.csv
+EXIT:0
+DONE

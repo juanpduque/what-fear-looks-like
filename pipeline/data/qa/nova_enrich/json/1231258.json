@@ -1,0 +1,42 @@
+{
+  "title_text": "SHRIEK",
+  "credits_text": "NOBODY WILL HEAR YOUR SCREAMS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "terror",
+    "horror",
+    "intense",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "horror",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and a terrifying facial expression, indicating potential distress.",
+  "description": "A close-up of a terrified face with an open mouth showing blood, accompanied by the title 'SHRIEK' and the tagline 'NOBODY WILL HEAR YOUR SCREAMS.'"
+}

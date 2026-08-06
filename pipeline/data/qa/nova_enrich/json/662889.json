@@ -1,0 +1,45 @@
+{
+  "title_text": "GERİ DÖNDÜ",
+  "credits_text": "ÇAĞRI TOZLU SEVİN FATMA ÇIÇEK GÖZCAN KOC, BRANIM VELMAZ, BELEMAN YUNAL, İBRAHİM ÖZCAN, ŞENAY ÖZDEN, TAYFUN SÖZ, SAKÇAK KARAMATAR",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "O GELDİĞİNDE KAÇAMAZSIN",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "mystery",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "haunted",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains supernatural horror themes and mild blood implications.",
+  "description": "A ghostly figure stands in a dark forest with a small house nearby, evoking a haunting and eerie atmosphere."
+}

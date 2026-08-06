@@ -1,0 +1,41 @@
+{
+  "title_text": "CRISPY'S CURSE",
+  "credits_text": "HE'LL HAVE YOU IN STITCHES!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "terrifying",
+    "sinister",
+    "macabre",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "clown",
+      "conf": 0.95
+    },
+    {
+      "name": "threatening",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features a menacing clown with a threatening expression, suggesting potential violence.",
+  "description": "A poster shows a menacing clown with a red nose and a threatening expression, pointing a finger upward with bold red text reading 'CRISPY'S CURSE' and a tagline below."
+}

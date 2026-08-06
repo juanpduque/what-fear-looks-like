@@ -1,0 +1,45 @@
+{
+  "title_text": "DYING TIME",
+  "credits_text": "A TIME FOR MURDER... A TIME FOR REVENGE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery",
+    "revenge",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "gun",
+      "conf": 0.7
+    },
+    {
+      "name": "cemetery",
+      "conf": 0.8
+    },
+    {
+      "name": "mystery",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster implies themes of violence and revenge, but no explicit graphic content is shown.",
+  "description": "A shadowy figure stands in a misty cemetery holding a gun, with dark, atmospheric lighting and a title overlay."
+}

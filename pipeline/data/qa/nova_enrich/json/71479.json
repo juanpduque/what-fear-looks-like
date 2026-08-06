@@ -1,0 +1,45 @@
+{
+  "title_text": "WE'RE WOLVES",
+  "credits_text": "IT'S IN THE BLOOD...",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ONE BITE IS ENOUGH",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "intense",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.3,
+  "animal": 0.1,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests themes of violence and horror related to werewolves.",
+  "description": "A poster featuring a close-up of a menacing face with glowing eyes, a lone figure against a moonlit backdrop, and the tagline 'IT'S IN THE BLOOD...'."
+}

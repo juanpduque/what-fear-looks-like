@@ -1,0 +1,47 @@
+{
+  "title_text": "FEAR OF THE WOODS",
+  "credits_text": "A TITUS PALAD FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "isolated",
+    "foreboding",
+    "cold",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "snow",
+      "conf": 0.85
+    },
+    {
+      "name": "loneliness",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A lone figure stands in a snowy forest, holding a rifle, with dense trees and a misty background creating an eerie atmosphere."
+}

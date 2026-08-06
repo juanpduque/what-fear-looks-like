@@ -1,0 +1,42 @@
+{
+  "title_text": "LES LETTRES DE L'ANGOISSE",
+  "credits_text": "ANTONY PAZZONA PRESENTE LES LETTRES DE L'ANGOISSE UN FILM REALISE PAR ALEXANDRA MINEN GILLUSZİ PROJEKTVENTILO RESERVOIR VLC",
+  "languages": [
+    "fr"
+  ],
+  "other_text": "26 LETTRES I 26 VIDEASTES I 26 PEURS",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "eerie",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatters and intense psychological horror elements.",
+  "description": "A dark, gritty poster features a shadowy figure in a narrow corridor with splattered red text, suggesting a psychological horror theme."
+}

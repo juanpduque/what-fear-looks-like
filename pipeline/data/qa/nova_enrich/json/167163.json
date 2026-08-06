@@ -1,0 +1,49 @@
+{
+  "title_text": "精索魔肉女子尽武屋",
+  "credits_text": "ASIAN TRASH CINEMA PRESENTA",
+  "languages": [
+    "en",
+    "es",
+    "ja"
+  ],
+  "other_text": "ZATOCH ZOMBIE! HORROR! VIOLENCIA! SEXO!",
+  "mood": [
+    "horror",
+    "erotic",
+    "violent",
+    "camp",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.5
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.6,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.5,
+  "violence": 0.8,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "sexual",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence, sexual content, and blood/gore.",
+  "description": "A collage poster features multiple characters in dramatic poses, with bold Japanese and English text overlay, suggesting horror and erotic themes."
+}

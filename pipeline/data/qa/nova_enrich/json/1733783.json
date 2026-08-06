@@ -1,0 +1,40 @@
+{
+  "title_text": "GIANTE CROCODILE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BLOODY DESTROYER",
+  "mood": [
+    "horror",
+    "action",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.95,
+  "blood_gore": 0.85,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intended for mature audiences.",
+  "description": "Poster features a giant crocodile attacking humans with graphic violence and blood, emphasizing horror and action themes."
+}

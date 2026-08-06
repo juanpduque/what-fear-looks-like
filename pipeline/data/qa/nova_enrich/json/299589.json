@@ -1,0 +1,43 @@
+{
+  "title_text": "CROAKER",
+  "credits_text": "A RIBBITING TALE CREEPY, CRAWLING, CREATURE FUN!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"KEEP 'EM COOKIN'\" and \"TO A MORE THROWBACK AGE OF MONSTER MOVIES, CROAKER IS A LOT OF FUN.\" - MARILYN MILLER, ALITY NEWS",
+  "mood": [
+    "creepy",
+    "camp",
+    "fun",
+    "horror",
+    "creature"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "The poster features a dark, green-hued forest scene with silhouettes of people and a large, menacing creature. Bold orange text reads \"CROAKER\" with a playful tagline below."
+}

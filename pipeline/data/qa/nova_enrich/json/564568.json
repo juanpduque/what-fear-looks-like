@@ -1,0 +1,40 @@
+{
+  "title_text": "DOSES OF HORROR",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "GET YOUR FIX",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "medical",
+      "conf": 0.8
+    },
+    {
+      "name": "injection",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and medical imagery that may disturb some viewers.",
+  "description": "A poster shows a bloody syringe with the text 'DOSES OF HORROR' and 'GET YOUR FIX' above a tray of medical instruments."
+}

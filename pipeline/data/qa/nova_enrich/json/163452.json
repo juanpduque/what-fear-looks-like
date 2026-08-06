@@ -1,0 +1,44 @@
+{
+  "title_text": "HOLOCAUST",
+  "credits_text": "con: WILLIAM BERGER-TINA AUMONT ELISABETH TULIN-ANDRES RESINO-DAY FISHER Regia: Angel Jonathen",
+  "languages": [
+    "en",
+    "it"
+  ],
+  "other_text": "ìricordi, i deliri, la vendetta (parte seconda) Eastmancolor - Schermo panoramico Colore Staco Film Produzione: Lux Europea - Roma",
+  "mood": [
+    "dread",
+    "erotic",
+    "historical",
+    "intense",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.3
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    },
+    {
+      "name": "historical",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.7,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence and partial nudity, reflecting intense historical themes.",
+  "description": "A dramatic poster featuring a central figure in revealing attire, surrounded by military personnel and scenes of violence, with bold title \"HOLOCAUST\"."
+}

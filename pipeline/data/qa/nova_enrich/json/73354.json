@@ -1,0 +1,39 @@
+{
+  "title_text": "PHOBIA",
+  "credits_text": "A terrifying psychological thriller.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "psychological",
+    "thriller",
+    "dread",
+    "surreal",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "psychological",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring a dark silhouette with a fragmented head containing various disturbing imagery, labeled as a psychological thriller."
+}

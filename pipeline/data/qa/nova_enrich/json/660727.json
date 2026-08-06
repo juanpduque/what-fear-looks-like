@@ -1,0 +1,45 @@
+{
+  "title_text": "DEATH RIDER IN THE HOUSE OF VAMPIRES",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "erotic",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "vampire",
+      "conf": 0.95
+    },
+    {
+      "name": "horse",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.95,
+  "animal": 0.8,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains partial nudity and suggestive imagery.",
+  "description": "A dramatic poster features a group of characters, including a vampire with fangs, set against a dark, stormy background with two riders on horses."
+}

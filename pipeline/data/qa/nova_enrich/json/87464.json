@@ -1,0 +1,45 @@
+{
+  "title_text": "PIRANHA, PIRANHA",
+  "credits_text": "WILLIAM SMITH PETER BROWN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "They Thought this Would be a Walk in the Park!",
+  "mood": [
+    "thriller",
+    "horror",
+    "action",
+    "suspense",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.1,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "Movie poster features intense faces and silhouettes with a dramatic tagline, suggesting a thriller or horror theme."
+}

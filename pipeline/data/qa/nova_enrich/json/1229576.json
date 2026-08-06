@@ -1,0 +1,42 @@
+{
+  "title_text": "GACY",
+  "credits_text": "SERIAL KILLER NEXT DOOR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BASED ON THE TRUE STORY",
+  "mood": [
+    "dread",
+    "disturbing",
+    "psychological",
+    "thriller",
+    "true crime"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and disturbing imagery related to true crime.",
+  "description": "A person dressed as a clown with bloodstained clothing sits on a wooden chair, with bold text overlay indicating a true crime story."
+}

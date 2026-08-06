@@ -1,0 +1,50 @@
+{
+  "title_text": "心続ドキュメント きまよう顔組 消使世界!",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "DEEP RED",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "psychological",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "forest",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains intense horror imagery and psychological themes.",
+  "description": "A poster features a menacing face with wide eyes and a small girl in fear, set against a dark forest background."
+}

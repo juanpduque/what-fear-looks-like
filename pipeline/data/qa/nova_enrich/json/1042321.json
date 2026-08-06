@@ -1,0 +1,39 @@
+{
+  "title_text": "RYAN'S HOUSE ENDS",
+  "credits_text": "All Good Things Must Come To An END!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SHANE'S HOUSE PRODUCING PRESENTS A FILM BY LIAM FLYNN RITA KENTON IN \"RYAN'S HOUSE\" WITH SCOTT REGAN SUSAN RACCO, JIM TALBOT AS \"THE SHAMPOO\" PRODUCER IS LISA TALBOT WITH SCOTT REGAN, SUSAN RACCO, AND RITA KENTON DIRECTOR OF PHOTOGRAPHY CHRIS KENDRICK EDITING CAMERON LOWEN STEVEN",
+  "mood": [
+    "dread",
+    "thriller",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features a knife piercing a man's face, suggesting violent themes.",
+  "description": "A poster shows a knife piercing a man's face with bold text reading \"Ryan's House Ends\" and a tagline."
+}

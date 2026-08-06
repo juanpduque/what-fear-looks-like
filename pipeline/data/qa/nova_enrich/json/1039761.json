@@ -1,0 +1,40 @@
+{
+  "title_text": "TRAP HOUSE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "gritty",
+    "dangerous",
+    "action-packed"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "mask",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence through the intense imagery and weapon presence.",
+  "description": "A poster featuring two men in a gritty, urban setting; one holds a gun, the other wears a gas mask, with bold red text reading 'TRAP HOUSE.'"
+}

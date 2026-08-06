@@ -1,0 +1,46 @@
+{
+  "title_text": "TURBO ZOMBI",
+  "credits_text": "TAMpons OF THE DEAD\n\nMICHAEL RACKENTZ, TASSO MINTOPOLOS, CHRISTIAN WITTE, THOMAS RECHTER, MARTIN HENTSCHEL, THOMAS SCHNEIDER, ADELE ZAUER, RENÉE KÖNIG, K.V.A.\n\nJOCHEN TAUBERT & CHRISTIAN WITTE\n\nproduziert von G.W. Film Medien Verleih",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "other_text": "Dein Schüpfer lässt blutig grüßen in:\n\nVORSICHT: MEGAB\n\nDer Horror-Comedy-Hit des Jahres!",
+  "mood": [
+    "camp",
+    "horror-comedy",
+    "grotesque",
+    "satirical"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.3,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild violent and gory imagery typical of horror-comedy genre.",
+  "description": "Poster features a central grotesque character surrounded by various people, with bold title and tagline emphasizing horror-comedy theme."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "ALIEN 3000",
+  "credits_text": "A NEW BREED OF PREDATOR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "sci-fi",
+    "horror",
+    "intense",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.1,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains intense horror elements and implied violence.",
+  "description": "A dark, menacing alien creature looms over a shadowy environment, with icy textures and dramatic lighting enhancing the horror atmosphere."
+}

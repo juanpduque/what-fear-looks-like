@@ -1,0 +1,43 @@
+{
+  "title_text": "SEAGULL",
+  "credits_text": "Gabriella Sheppard, Adrian Radcliffe, Jessica Hynes",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Some Secrets Are Worse Than Others",
+  "mood": [
+    "dread",
+    "gothic",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the weapon and intense mood.",
+  "description": "A woman stands on a rocky shore holding a weapon, with a stormy sea and seagull in the background."
+}

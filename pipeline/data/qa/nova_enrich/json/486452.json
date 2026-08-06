@@ -1,0 +1,43 @@
+{
+  "title_text": "CONDUIT",
+  "credits_text": "A TIM GOREEZE FILM\nCAA PICTURES PRESENTS TIM GOREEZE CONDUT MAT ALBA ALICE JOE DOANING TYLER TOBIN NEVE D'ANDREO MARIE MALAVASI BONNIE FLYNN BERNICE BARNICK ADAM BONAN RACHEL HESSLEIN DAVID BARNARD GARY REED MATI REINE NATHAN MALAVASI\nWRITERS TIM GOREEZE MATI REINE NATHAN MALAVASI\nDIRECTOR TIM GOREEZE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DON'T BELIEVE EVERYTHING YOU SEE...",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "mystery",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark poster features a shadowy figure holding a glowing object, with the title 'CONDUIT' and credits listed below."
+}

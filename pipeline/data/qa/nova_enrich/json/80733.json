@@ -1,0 +1,45 @@
+{
+  "title_text": "THE 13TH SIGN",
+  "credits_text": "NADIA BRAND ERIC COLVIN JONATHAN COOTE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THERE IS A PLACE WHERE EVIL LIVES.",
+  "mood": [
+    "dread",
+    "supernatural",
+    "intense",
+    "apocalyptic",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and intense imagery.",
+  "description": "A fiery, intense poster featuring a screaming face and a shadowy figure, with bold title and tagline."
+}

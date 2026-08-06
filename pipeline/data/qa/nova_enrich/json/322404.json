@@ -1,0 +1,43 @@
+{
+  "title_text": "드라큘라의 부활 Dracula Rises From Coffin",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "other_text": "구독사람에게 근리된 경기는 구독사람의 근리를 많우는 것이라고 하는 경기를 만들어보요.",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A vintage horror poster features dramatic faces and a coffin, promoting the film \"Dracula Rises From Coffin\" with intense, gothic visuals."
+}

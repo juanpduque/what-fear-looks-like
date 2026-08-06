@@ -1,0 +1,41 @@
+{
+  "title_text": "Chiller 13",
+  "credits_text": "The Decade's Scariest Movie Moments",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WILL YOUR FAVORITE MAKE THE CUT? FRIDAY, DEC 17 8P ET A CHILLER ORIGINAL SPECIAL WORLD TELEVISION PREMIERE ASSOCIATED TELEVISION INTERNATIONAL",
+  "mood": [
+    "dread",
+    "suspense",
+    "psychological",
+    "thriller",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild suggestions of violence through imagery; no explicit content shown.",
+  "description": "Poster features dramatic faces and silhouettes with bold text announcing a special movie countdown event."
+}

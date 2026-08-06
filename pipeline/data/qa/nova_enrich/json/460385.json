@@ -1,0 +1,39 @@
+{
+  "title_text": "LE NOSFERAT",
+  "credits_text": "SCENARIO ET DIRECTION MICHELEN (MARCEL KAZNOVSKI)",
+  "languages": [
+    "fr"
+  ],
+  "other_text": "THEATRE DE POCHE THEATRE EXPERIMENTAL DE BELGIQUE",
+  "mood": [
+    "gothic",
+    "dread",
+    "noir"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and implied violence.",
+  "description": "A poster for 'Le Nosferat' features a shadowy figure in a cloak with a dagger, set against a stark red background."
+}

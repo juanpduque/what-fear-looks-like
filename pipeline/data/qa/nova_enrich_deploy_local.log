@@ -1,0 +1,4 @@
+role=arn:aws:iam::567596065542:role/cfn-LambdaExecutionRole-pAlxm8rizxkY bucket=sagemaker-studio-a5572760 prefix=wflike-nova-enrich/cloud
+creating poster-ocr-bedrock
+
+An error occurred (AccessDeniedException) when calling the CreateFunction operation: User: arn:aws:sts::567596065542:assumed-role/WSParticipantRole/Participant is not authorized to perform: lambda:CreateFunction on resource: arn:aws:lambda:us-west-2:567596065542:function:poster-ocr-bedrock with an explicit deny in a service control policy: arn:aws:organizations::815824707124:policy/o-zmgfflmzo8/service_control_policy/p-mjewvsbq

@@ -1,0 +1,48 @@
+{
+  "title_text": "BLOOD COVE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "erotic",
+    "gothic",
+    "violent",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "knife",
+      "conf": 0.85
+    },
+    {
+      "name": "nudity",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.85,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.7,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "A poster shows a skeletal figure holding a large knife over a reclining nude woman, with dripping red text reading 'BLOOD COVE' against a dark background."
+}

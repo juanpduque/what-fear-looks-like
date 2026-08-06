@@ -1,0 +1,47 @@
+{
+  "title_text": "魔結結影",
+  "credits_text": "a chain of curses",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "episode:5 会魔 episode:6 赤回回",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "intense",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and themes of supernatural curse.",
+  "description": "A horror DVD cover featuring a terrified woman with long black hair, surrounded by ghostly figures and red, eerie lighting."
+}

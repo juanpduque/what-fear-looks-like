@@ -1,0 +1,44 @@
+{
+  "title_text": "EATEN ALIVE!",
+  "credits_text": "THE RISE AND FALL OF THE ITALIAN CANNIBAL FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "gothic",
+    "surreal",
+    "erotic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "crowd",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.5,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic imagery, nudity, and violent themes.",
+  "description": "A poster featuring a colorful skull filled with various figures, with bold text reading 'EATEN ALIVE!' and a subtitle below."
+}

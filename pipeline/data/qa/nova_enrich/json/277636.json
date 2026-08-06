@@ -1,0 +1,50 @@
+{
+  "title_text": "AS FABULAS NEGRAS",
+  "credits_text": "",
+  "languages": [
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "eerie",
+    "haunting",
+    "dark",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.65
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.4,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult imagery and mild violent suggestions.",
+  "description": "A dark, gothic poster features a haunted castle, ghostly figures, and four children walking through a twisted forest."
+}

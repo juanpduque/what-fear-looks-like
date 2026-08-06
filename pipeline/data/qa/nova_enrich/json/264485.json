@@ -1,0 +1,39 @@
+{
+  "title_text": "SyNeViR",
+  "credits_text": "ALEXANDER V. WACHENING PRODUCTION STUDIO PRESENTS ALEKSANDR V. WACHENING, MIIA SATARAYEVA, OSKOR BOYKOVA, VIKTORIA MESHCHANKO, ALEKSEI LAMENTYUK, ROMAN GOLUBOV, ALEKSANDR KOROTKOV, ZORYANA GORENKO, VLADIMIR HOPKOV, MARKOVA, GENNADIY SEMENCHENKO, TATIANA SEMENCHENKO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THERE IS SOMEONE... IN THE WOODS OCTOBER 2012",
+  "mood": [
+    "mysterious",
+    "foreboding",
+    "haunting",
+    "suspenseful",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows two individuals in a dark, forested landscape with a lake, featuring bold, stylized text and a tagline about someone in the woods."
+}

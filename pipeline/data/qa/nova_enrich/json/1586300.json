@@ -1,0 +1,47 @@
+{
+  "title_text": "FIELD OF FEARS",
+  "credits_text": "The Haunting of Randolph County Asylum",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "haunting",
+    "eerie",
+    "mystery",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "asylum",
+      "conf": 0.9
+    },
+    {
+      "name": "haunting",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "house",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A young girl stands in front of an old, red asylum building surrounded by bare trees under a cloudy sky."
+}

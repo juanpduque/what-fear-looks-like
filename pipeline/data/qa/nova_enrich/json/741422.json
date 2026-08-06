@@ -1,0 +1,49 @@
+{
+  "title_text": "FRAMES OF FEAR III",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IT'S STILL NOT SAFE TO USE THE VCR",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.75,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and a monstrous creature.",
+  "description": "A hooded figure with a grotesque face and a long red tongue emerges from darkness, with bold title text overlay."
+}

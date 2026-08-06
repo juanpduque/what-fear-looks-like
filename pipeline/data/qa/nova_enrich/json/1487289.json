@@ -1,0 +1,44 @@
+{
+  "title_text": "ZOMBIELAND",
+  "credits_text": "WRITTEN & DIRECTED BY THAPAR PRODUCED BY NEERAJ RUHIL & SUBHAV SHARMA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "2032 ਦຕ ਹบਂਂਂਟੇ ਮੂਂਂਿ ਪਯਪੀ ਅਰ ਮਨਿਜਿ",
+  "mood": [
+    "action",
+    "horror",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and horror elements.",
+  "description": "A man and a child fight through a horde of zombies in a chaotic urban setting, with intense action and horror elements."
+}

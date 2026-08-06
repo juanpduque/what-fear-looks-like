@@ -1,0 +1,45 @@
+{
+  "title_text": "DEMONS",
+  "credits_text": "A FILM BY DANIEL HUI YANG YANXUAN VICKI GLEN GOEI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "surreal",
+    "dread",
+    "gothic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence and horror themes.",
+  "description": "A poster featuring a shadowy figure surrounded by multiple weapons, with bold red text reading 'DEMONS' and credits below."
+}

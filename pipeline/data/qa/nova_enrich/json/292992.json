@@ -1,0 +1,41 @@
+{
+  "title_text": "CRAZED",
+  "credits_text": "CLEANING UP THE CITY ONE BODY AT A TIME.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "violent",
+    "intense",
+    "gritty"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.8
+    },
+    {
+      "name": "knife",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts intense action and violence with weapons.",
+  "description": "The poster features a group of intense characters with weapons, including guns and knives, set against a dark background with bold red text reading 'CRAZED.'"
+}

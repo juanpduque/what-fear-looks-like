@@ -1,0 +1,35 @@
+{
+  "title_text": "ASALTO VIOLENTO",
+  "credits_text": "TRAUMATIZED",
+  "languages": [
+    "en"
+  ],
+  "other_text": "The gun used was found under the mat",
+  "mood": [
+    "intense",
+    "dramatic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violent themes and intense imagery.",
+  "description": "A close-up of a man's face with fiery red tones, overlaid with bold red text reading 'ASALTO VIOLENTO' and 'TRAUMATIZED.'"
+}

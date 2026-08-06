@@ -1,0 +1,42 @@
+{
+  "title_text": "BACK ROAD",
+  "credits_text": "DREW PIZZO'S",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A DEGENERATE MASTERPIECE\nKILLING GONE COUNTRY\n2018",
+  "mood": [
+    "violent",
+    "gritty",
+    "thriller",
+    "dark",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatters and violent imagery.",
+  "description": "A weathered wooden background with red splatters and hands, featuring bold red and black typography for a gritty, violent aesthetic."
+}

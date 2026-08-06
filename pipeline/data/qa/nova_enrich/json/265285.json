@@ -1,0 +1,40 @@
+{
+  "title_text": "ROZENKAVALIER",
+  "credits_text": "ESTHER SCHWEINS",
+  "languages": [
+    "de"
+  ],
+  "other_text": "EIN GRAUSAMES KINDERSPIEL EIN STRENGES RITUAL EINE TODSICHERE SACHE DER TOD IST DIE LETZTE KONSEQUENZ DEUTSCHLAND HAT SEINEN SKANDAL EINE BITTERE ENDZIVISION WIE SIE DIE DEUTSCHE FILMKUNST NIE GESEHEN HAT",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "ritual",
+      "conf": 0.8
+    },
+    {
+      "name": "death",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster suggests themes of violence and death, potentially disturbing to some audiences.",
+  "description": "A dramatic poster featuring a masked woman and a distressed child, with intense text overlays indicating a grim narrative."
+}

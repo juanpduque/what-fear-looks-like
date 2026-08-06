@@ -1,0 +1,46 @@
+{
+  "title_text": "DEAD MEN WALKING",
+  "credits_text": "A Maximum Security Prison—Thousands of Infected Inmates—Only One Way Out.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "horror",
+    "apocalyptic",
+    "tense",
+    "desperate"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "prison",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes, with a zombie-like figure and a prison setting.",
+  "description": "A poster shows a zombie-like face beside a prison, with bold red text reading 'DEAD MEN WALKING' and a tagline about infected inmates."
+}

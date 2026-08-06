@@ -1,0 +1,45 @@
+{
+  "title_text": "DARKEST NIGHT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MENU",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery",
+    "haunting",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "ghost",
+      "conf": 0.75
+    },
+    {
+      "name": "occult",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and potentially frightening imagery.",
+  "description": "A poster shows hooded figures on a screen with a dark, stormy background and an old mansion, evoking a gothic horror atmosphere."
+}

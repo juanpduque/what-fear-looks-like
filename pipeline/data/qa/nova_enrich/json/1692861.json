@@ -1,0 +1,43 @@
+{
+  "title_text": "PYRE",
+  "credits_text": "A FILM BY DYLAN MILLER\nTARA KAYE BURGH WILL R. MULLER MILA ROSE ETHAN KONNER POST",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FEAR FUELS THE FLAMES OF JUDGMENT",
+  "mood": [
+    "intense",
+    "dramatic",
+    "horrific",
+    "mysterious",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.5
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark poster featuring a fiery background with silhouettes of people and the bold title \"PYRE\" at the top."
+}

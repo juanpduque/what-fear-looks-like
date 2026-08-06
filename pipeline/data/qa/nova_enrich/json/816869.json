@@ -1,0 +1,47 @@
+{
+  "title_text": "谁在镜中",
+  "credits_text": "WHO IN THE MIRROR",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "中国 郑正影业",
+  "mood": [
+    "gothic",
+    "eerie",
+    "psychological",
+    "mysterious",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "mirror",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.1,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "occult",
+    "nudity"
+  ],
+  "moderation_notes": "Mild suggestive imagery and occult themes present.",
+  "description": "Poster features two women with long black hair, one partially obscured, against a dark background with Chinese and English text."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "MERMAID KILLER",
+  "credits_text": "SCREENPLAY BY ISRAEL GONZALEZ AND JOEL CORDOVA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "gore",
+    "erotic"
+  ],
+  "moderation_notes": "Contains graphic imagery and suggestive themes.",
+  "description": "A dark, eerie poster features a monstrous, skeletal face with sharp teeth and a shadowy figure, evoking horror and dread."
+}

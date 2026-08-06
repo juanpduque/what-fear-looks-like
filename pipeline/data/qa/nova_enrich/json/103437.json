@@ -1,0 +1,40 @@
+{
+  "title_text": "SCARE CROW GONE WILD",
+  "credits_text": "HE'S THE DEATH OF THE PARTY!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "camp",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "nudity"
+  ],
+  "moderation_notes": "Contains mild nudity and implied violence.",
+  "description": "A horror poster features a monstrous creature holding a large knife, with a woman in a bikini standing nearby on a beach at night."
+}

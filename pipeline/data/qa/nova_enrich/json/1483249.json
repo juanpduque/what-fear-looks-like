@@ -1,0 +1,46 @@
+{
+  "title_text": "Home of the Witch",
+  "credits_text": "TWAI FILMS & SASCHA PRODUCTIONS PRESENTS HOME OF THE WITCH\nSABRINA ARNDS MANOSHI TRISH OSMOND KLAUS THIEL KLAUS THEIL KLAUS THEIL JASE HIDALGO\nSPECIAL EFFECTS BY PHILIPP HATHGEBER\nDIRECTED BY MARCO SCHULTE\nDIRECTED BY OLAF KUZNIAR\nWRITTEN BY MICHAEL KOIZLOWSKI\nSCREENPLAY SASCHA GOLDBACH & SABRINA ARNDS\nPRODUCED BY SABRINA ARNDS\nEXECUTIVE PRODUCER SASCHA GOLDBACH\nBASED ON THE H.P. LOVECRAFT NOVEL BY\n",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "other_text": "Zur Hexenstunde",
+  "mood": [
+    "gothic",
+    "horror",
+    "supernatural",
+    "dark",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and monstrous imagery.",
+  "description": "A woman stands defiantly in front of a haunted house with eerie figures looming behind her, suggesting a supernatural horror theme."
+}

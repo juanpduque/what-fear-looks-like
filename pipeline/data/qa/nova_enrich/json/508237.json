@@ -1,0 +1,46 @@
+{
+  "title_text": "SURGERY",
+  "credits_text": "THE DOCTOR WILL SEE YOU NOW\nNICHOLAS HOLLAND, JULIE LEE, LANA RENNER, SARAH CLEMENS\nWritten and Directed by GEORGE SAMUEL\nProduced by SARAH LIMA, ANNA HOFFMAN, NICKY SAMUEL, ANNA CLEMENS\nExecutive Producers: JOSHUA ROSS, NICKY SAMUEL, ANNA CLEMENS\nA THE COLLEVISE ENTERTAINMENT PRODUCTION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "disturbing",
+    "medical horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "medical",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic medical imagery and disturbing visuals.",
+  "description": "A poster featuring four individuals with intense expressions, one with visible blood and wounds, suggesting a medical horror theme."
+}

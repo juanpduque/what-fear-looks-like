@@ -1,0 +1,41 @@
+{
+  "title_text": "黄美美的美美",
+  "credits_text": "黄美美的美美",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "黄美美的美美 美美美的美美 黄美美的美美",
+  "mood": [
+    "horror",
+    "violent",
+    "gothic",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.85,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; suitable for mature audiences.",
+  "description": "A poster featuring a group of individuals in a dark, intense setting with visible blood and dramatic expressions, suggesting a horror theme."
+}

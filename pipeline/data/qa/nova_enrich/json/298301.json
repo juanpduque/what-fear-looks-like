@@ -1,0 +1,46 @@
+{
+  "title_text": "THE DARKNESS WITHIN",
+  "credits_text": "DICK HAMMOND ATLEX 16 MM PORTALIA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EVER HAD THE FEELING YOU WERE BEING WATCHED?",
+  "mood": [
+    "dread",
+    "psychological",
+    "suspense",
+    "paranormal",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild blood imagery and themes of being watched, suggesting psychological horror.",
+  "description": "A poster shows a close-up of a person peering through a window with blood splatters on the glass and the title 'The Darkness Within.'"
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "DEJAR LA PIEL",
+  "credits_text": "GRUPO 42 E INCA present \"DEJAR LA PIEL\" con PAULA ROZENWURCEL, ELEONORA DE RUEDA, CAMILO VACARELLI. PRODUCCIÓN UMA CORENGIA. ASISTENTE DE DIRECCIÓN TEO ALAZRAQUI. GUIÓN DE SANTIAGO GARCÍA NÚÑEZ. DIRECCIÓN DE FOTOGRAFÍA FABRICIO CHIARELLA. DIRECCIÓN DE ARTE MICAELA GARCÍA. DIRECCIÓN DE SONIDO MARTÍN FUENTES. MONTAJE GABRIEL GONZÁLEZ MONASTERIOS. MÚSICA DE MARTÍN FUENTES DIRIGIDA POR MANUEL BOETTO",
+  "languages": [
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood imagery.",
+  "description": "A dark poster features a close-up of a person with intense red lighting, suggesting a horror or thriller theme."
+}

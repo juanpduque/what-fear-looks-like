@@ -1,0 +1,51 @@
+{
+  "title_text": "FATALKISS",
+  "credits_text": "a Film by Jeff Rector",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Love. Deception. Vampirism.\nget blood?\n\"One of the best indie's we've ever seen\" - LA Weekly",
+  "mood": [
+    "gothic",
+    "horror",
+    "erotic",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "castle",
+      "conf": 0.7
+    },
+    {
+      "name": "moon",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "occult",
+    "sexual"
+  ],
+  "moderation_notes": "Contains suggestive themes and mild horror elements.",
+  "description": "A gothic horror poster featuring a menacing face with red eyes, a castle, and a full moon, promoting the film 'Fatalkiss' by Jeff Rector."
+}

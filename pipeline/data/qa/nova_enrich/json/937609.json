@@ -1,0 +1,40 @@
+{
+  "title_text": "GIRLS NIGHT 2",
+  "credits_text": "From Writer & Director David Tekiera Comes the Second Chapter of the Award Winning Short GIRLS NIGHT MARINA DE SOUSA VINCENT CONTY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EVILsmiles again",
+  "mood": [
+    "dread",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.2,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and implied violence.",
+  "description": "Poster shows a pair of scissors with blood against a dark forest background, featuring bold title text and credits."
+}

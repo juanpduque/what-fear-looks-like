@@ -1,0 +1,45 @@
+{
+  "title_text": "DANTE FALLS",
+  "credits_text": "DANTE CHUNG | JESTEN MARC ONDRO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TRICKY FICHEURÉ | NOËL SCHUMER",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.6,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and monstrous elements.",
+  "description": "A poster features a menacing creature with red eyes and dripping mouth, with shadowy figures running in the foreground against a dark red background."
+}

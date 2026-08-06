@@ -1,0 +1,45 @@
+{
+  "title_text": "XXX",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "消間の間負絶物",
+  "mood": [
+    "horror",
+    "violent",
+    "gothic",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A dark poster features a shadowy figure with outstretched hands, surrounded by graphic imagery and Japanese text, suggesting a horror theme."
+}

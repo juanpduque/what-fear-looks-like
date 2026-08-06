@@ -1,0 +1,43 @@
+{
+  "title_text": "EXTINCTION",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "post-apocalyptic",
+    "tense",
+    "survival",
+    "desolate",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.5
+    },
+    {
+      "name": "fire",
+      "conf": 0.4
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.3
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man stands in a snowy, post-apocalyptic landscape with a gun, facing a large, damaged structure as others move in the background."
+}

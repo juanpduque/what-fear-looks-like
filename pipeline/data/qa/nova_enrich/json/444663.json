@@ -1,0 +1,45 @@
+{
+  "title_text": "DEBBIE DOES DAMNATION",
+  "credits_text": "A black and white super-8 film by ERIC BRUMMER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ETERNAL DARKNESS Has just been TAKEN OVER!!! Who gives A DAMN?! ADULTS ONLY!!",
+  "mood": [
+    "dread",
+    "camp",
+    "gothic",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.5,
+  "sensitive": [
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains suggestive and occult imagery, mild violence.",
+  "description": "A vintage horror poster featuring a large skull and shadowy figures, promoting a black-and-white super-8 film with adult themes."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "JURASSIC THUNDER",
+  "credits_text": "ULTIMATE HUNTER, ULTIMATE WEAPON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "adventure",
+    "sci-fi",
+    "thrilling",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 1.0
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action sequences and implied violence.",
+  "description": "A poster features a large dinosaur roaring with helicopters and another dinosaur in the foreground, set against a cityscape with explosions."
+}

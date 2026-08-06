@@ -1,0 +1,37 @@
+{
+  "title_text": "MEATHOOK MASSACRE",
+  "credits_text": "A DUSTIN FERGUSON FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SHOT ON VHS",
+  "mood": [
+    "dread",
+    "gritty",
+    "violent",
+    "retro"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster suggests graphic violence and gore.",
+  "description": "A red-tinted poster features bold title text and a meat hook graphic, indicating a violent horror theme shot on VHS."
+}

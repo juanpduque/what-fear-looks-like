@@ -1,0 +1,47 @@
+{
+  "title_text": "HAUNTING",
+  "credits_text": "A HAUNTING IN CONNECTICUT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Not All Spirits Who Wander Are Lost\nBASED ON TRUE EVENTS",
+  "mood": [
+    "eerie",
+    "haunting",
+    "mysterious",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "haunting",
+      "conf": 0.95
+    },
+    {
+      "name": "mystery",
+      "conf": 0.85
+    },
+    {
+      "name": "rural",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.1,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, moody poster shows a lone figure in a field under an ominous sky, with bold text reading 'Haunting' and 'A Haunting in Connecticut.'"
+}

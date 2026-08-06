@@ -1,0 +1,44 @@
+{
+  "title_text": "SARS vs. ZOMBIES",
+  "credits_text": "Starring: Samuel Leong, Chung Li, Jack Chan, Cash Lee, Anna Chan",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Zombies or us, Who are more Deadly?",
+  "mood": [
+    "action",
+    "horror",
+    "thriller",
+    "sci-fi"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and horror themes.",
+  "description": "A poster featuring action stars and a cityscape, promoting a film about a battle between SARS and zombies."
+}

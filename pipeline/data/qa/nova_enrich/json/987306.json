@@ -1,0 +1,43 @@
+{
+  "title_text": "ULTIMATE KILL 4 ZOMBIES 2: ZOMBIE ALIEN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "sci-fi",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "zombie",
+      "conf": 0.85
+    },
+    {
+      "name": "alien",
+      "conf": 0.75
+    },
+    {
+      "name": "spider",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.4,
+  "blood_gore": 0.2,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent themes and horror elements.",
+  "description": "A collage poster features a zombie, a spider, and a person in a costume, promoting a sci-fi horror film titled 'Ultimate Kill 4 Zombies 2: Zombie Alien.'"
+}

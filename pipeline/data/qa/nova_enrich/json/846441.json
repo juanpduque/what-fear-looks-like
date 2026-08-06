@@ -1,0 +1,45 @@
+{
+  "title_text": "HEIR",
+  "credits_text": "THE PEN IS MIGHTIER THAN THE SWORD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HBFF",
+  "mood": [
+    "gothic",
+    "dread",
+    "suspense",
+    "thriller",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "mask",
+      "conf": 0.95
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a threatening weapon.",
+  "description": "A poster shows a masked figure with a large dagger piercing through it, standing in front of a house under dark skies."
+}

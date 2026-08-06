@@ -1,0 +1,50 @@
+{
+  "title_text": "MONDO SHOCK",
+  "credits_text": "PART IV: AMERICA BLOOD & GUTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ENTERTAINMENT",
+  "mood": [
+    "dread",
+    "apocalyptic",
+    "gritty",
+    "dystopian",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "guts",
+      "conf": 0.7
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.9
+    },
+    {
+      "name": "statue",
+      "conf": 0.95
+    },
+    {
+      "name": "cityscape",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery suggesting violence and gore.",
+  "description": "A poster shows the Statue of Liberty holding a book amidst a dark, stormy cityscape with the title 'MONDO SHOCK PART IV: AMERICA BLOOD & GUTS' prominently displayed."
+}

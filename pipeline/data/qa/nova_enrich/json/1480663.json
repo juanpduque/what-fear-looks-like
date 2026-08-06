@@ -1,0 +1,42 @@
+{
+  "title_text": "DEVIL MAKES THREE",
+  "credits_text": "FROM DIRECTOR LOGAN CHARRON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A HAUNTING TALE FROM DARK RIVER STUDIOS",
+  "mood": [
+    "gothic",
+    "horror",
+    "dark",
+    "grunge",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and implied violence.",
+  "description": "A poster shows a zombie-like figure holding a guitar with a cross symbol, in a dark, eerie setting."
+}

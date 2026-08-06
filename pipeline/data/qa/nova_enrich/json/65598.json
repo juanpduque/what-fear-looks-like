@@ -1,0 +1,42 @@
+{
+  "title_text": "ZOMBIE LOVE",
+  "credits_text": "HE WILL STEAL YOUR HEART IF HE DOESN'T EAT IT FIRST!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "romantic",
+    "horror",
+    "camp",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.1,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A stylized poster features a zombie silhouette standing over a crowd with bold red text reading 'ZOMBIE LOVE' and a tagline about stealing hearts."
+}

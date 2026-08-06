@@ -1,0 +1,46 @@
+{
+  "title_text": "POODLE'S. CHAINSAW MURDERS",
+  "credits_text": "THEY WON'T HEAR YOU SCREAM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A FILM BY JOSUÉ FIALLO © Copyrights Josué Fiallo 2024",
+  "mood": [
+    "dread",
+    "terror",
+    "gothic",
+    "violent",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "chainsaw",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "prison",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.95,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A woman is chained and sitting in a dimly lit room with a large chainsaw nearby, suggesting a horror theme."
+}

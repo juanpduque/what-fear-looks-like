@@ -1,0 +1,37 @@
+{
+  "title_text": "CHOMP",
+  "credits_text": "BRIAN STUART PRODUCTIONS PRESENTS A SPARKY FILMS PRODUCTION \"CHOMP\" CRICKET GRISSON LISA FREEMAN PAMELA BROWN BESCIN STUART SMITH MIKE CANE EVAN KRAUSE MICHAEL SCOTT JOSH ASHCRAFT DIRECTED BY PETER STRAHAN WRITTEN BY PETER STRAHAN AND MICHAEL SCOTT STARRING PAMELA BROWN AND CRICKET GRISSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NOTE WITH TERMINAL",
+  "mood": [
+    "thriller",
+    "sci-fi",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a woman holding a device with a TV screen showing her face. The title \"CHOMP\" is prominently displayed at the top."
+}

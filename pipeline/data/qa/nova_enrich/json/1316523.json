@@ -1,0 +1,37 @@
+{
+  "title_text": "Happy Anniversary",
+  "credits_text": "A FILM BY WILHELM MÜLLER\nJUDITH ETZELSTORFER\nSTEFAN SCHANDA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Bloody Horror International Film Festival 2019 Finalist\n15 Second Horror Film Challenge 2019 Selected\nZapped Film Festival 2020 Selected",
+  "mood": [
+    "gothic",
+    "eerie",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "candle",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A woman sits at a table with candles and wine, with text indicating a film title and festival selections."
+}

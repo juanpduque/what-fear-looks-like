@@ -1,0 +1,47 @@
+{
+  "title_text": "THE DEVIL BELOW",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "suspenseful",
+    "dangerous",
+    "mysterious",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "cave",
+      "conf": 0.8
+    },
+    {
+      "name": "danger",
+      "conf": 0.85
+    },
+    {
+      "name": "climbing",
+      "conf": 0.7
+    },
+    {
+      "name": "text",
+      "conf": 1.0
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A group of five people are shown in a tense pose near a cave entrance, with a large, menacing clawed creature visible in the foreground."
+}

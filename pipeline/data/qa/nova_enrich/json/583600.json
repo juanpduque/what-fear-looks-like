@@ -1,0 +1,43 @@
+{
+  "title_text": "KAIN KAFAN HITAM",
+  "credits_text": "MAXIME BOUTIER, HAICO VAN DER VEKEN, SHANDY WILLIAM, CLAUDY PUTRI, AJUN PERWIRA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "LINGKAR FILM presents YUCHESTRA BAYU/ADJI JOSINE SCHUTTER 14 FEBRUARI 2019",
+  "mood": [
+    "dread",
+    "gothic",
+    "haunting",
+    "eerie",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, eerie poster features a shadowy, outstretched figure in a confined space, suggesting horror and suspense."
+}

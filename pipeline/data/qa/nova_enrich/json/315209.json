@@ -1,0 +1,41 @@
+{
+  "title_text": "VIDEOCLUB",
+  "credits_text": "Una película de PABLO ILLANES",
+  "languages": [
+    "es"
+  ],
+  "other_text": "EN EL ALMANECER DE LOS ZOMBIES... ESTE SERÁ EL ÚLTIMO REFUGIO. ESTRENO 30 DE ENERO VHS 90'S",
+  "mood": [
+    "apocalyptic",
+    "horror",
+    "romantic",
+    "survival",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "zombie",
+      "conf": 0.9
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.8
+    },
+    {
+      "name": "romance",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and zombie themes.",
+  "description": "Poster features a couple embracing amidst a group of survivors in a post-apocalyptic setting, with a focus on zombies and survival."
+}

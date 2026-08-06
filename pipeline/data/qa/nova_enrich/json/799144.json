@@ -1,0 +1,46 @@
+{
+  "title_text": "THE LAST RETREAT",
+  "credits_text": "CELUM BECKETT FRANKIE YATES MIKEY STUART PAGAN HOLLIS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SCREAM CAMP DENISE DEAD",
+  "mood": [
+    "dread",
+    "gothic",
+    "suspense",
+    "haunting",
+    "desolate"
+  ],
+  "fear_labels": [
+    {
+      "name": "suicide",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "self-harm"
+  ],
+  "moderation_notes": "Contains themes of suicide and violence.",
+  "description": "A dark poster shows a noose hanging over a cabin with dim lights, evoking a suspenseful and gothic atmosphere."
+}

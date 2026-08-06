@@ -1,0 +1,39 @@
+{
+  "title_text": "妖怪大戦争",
+  "credits_text": "監督：田中徳次",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "日本怪談映画史上最大の戦い！怪談映画史上最大の戦い！",
+  "mood": [
+    "gothic",
+    "horror",
+    "fantasy",
+    "camp",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A vintage Japanese horror poster featuring a fierce creature and a terrified woman, with bold red and green text overlaying the image."
+}

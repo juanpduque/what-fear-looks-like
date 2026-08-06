@@ -1,0 +1,41 @@
+{
+  "title_text": "\"THE LAST FLESH AND BLOOD SHOW\"",
+  "credits_text": "STEHIE ULM • JACK FARRELL • TARYN HIPP BECCA SAVANA • MEGAN MCINTYRE • LINA PEARSON Directed by SCOUT TAFOYA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Passion electrifying every inch of the screen! MORE TERROR THAN YOUR HEART CAN STAND! See the undead rip into the hopes of young lovers!",
+  "mood": [
+    "horror",
+    "gothic",
+    "dramatic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A vintage-style poster features a dramatic scene with a knife and text promoting a horror film titled \"The Last Flesh and Blood Show\"."
+}

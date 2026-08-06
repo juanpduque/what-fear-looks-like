@@ -1,0 +1,43 @@
+{
+  "title_text": "BANNISTER DOLL HEIST",
+  "credits_text": "FROM THE STUDIO THAT BROUGHT YOU SLASHER HOUSE\nHBFilms\nMYCHO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THEY THOUGHT THIS JOB WOULD BE CHILDREN'S PLAY.",
+  "mood": [
+    "thriller",
+    "horror",
+    "noir",
+    "gritty",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "doll",
+      "conf": 0.9
+    },
+    {
+      "name": "mask",
+      "conf": 0.8
+    },
+    {
+      "name": "heist",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A group of masked individuals stand in a dimly lit alley, with one holding a large box and another a doll, suggesting a heist theme."
+}

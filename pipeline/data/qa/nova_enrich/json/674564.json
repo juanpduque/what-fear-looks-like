@@ -1,0 +1,43 @@
+{
+  "title_text": "THE DEEP ONES",
+  "credits_text": "H.P. LOVECRAFT'S",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "cosmic horror",
+    "oceanic dread",
+    "surreal",
+    "gothic",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "text",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.3,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows bare feet surrounded by tentacled creatures against a deep green background, with bold white text reading 'H.P. LOVECRAFT'S THE DEEP ONES.'"
+}

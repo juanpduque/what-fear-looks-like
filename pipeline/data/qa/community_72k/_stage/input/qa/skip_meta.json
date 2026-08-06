@@ -1,0 +1,5 @@
+{
+  "skip_labels": 40729,
+  "skip_detecttext": 49462,
+  "note": "EC2 skips these for Labels/DetectText; still enumerates full TMDB set and downloads missing posters to S3 only"
+}

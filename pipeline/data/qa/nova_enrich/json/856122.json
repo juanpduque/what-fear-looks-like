@@ -1,0 +1,42 @@
+{
+  "title_text": "THE RED ROOM",
+  "credits_text": "A SNEAKY FROG PRODUCTIONS PRESENTS: VINCETITI LITTLE, KATIE SCHWARTZ, ROSIE DARCH, DAN NIER, DORISHE DERAKHSHANI, DIANNE KATE ROBERTS, WRITTEN BY ROSIE DARCHANIE DERAKHSHANI, DIEDA SCHWARTZ, DIRECTED BY VINCETITI LITTLE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SCORE BY KENAN HUSSE; DIRECTOR OF PHOTOGRAPHY: JAKUB KWALEC",
+  "mood": [
+    "intense",
+    "psychological",
+    "disturbing",
+    "suspenseful",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "The poster hints at psychological horror and occult themes, with subtle violent imagery.",
+  "description": "Poster features two people with raised hands against a backdrop of red symbols and text, suggesting psychological horror."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "WHAT LIES WITHIN THE DARKNESS",
+  "credits_text": "A FILM WRITTEN AND DIRECTED BY MARC CHINDEMI STARRING DOUGLAS GODINO KYLE RAPPAPORT CHRISTIAN CACERES PRODUCTION ASSISTANT JIMMY TAFURI DIRECTOR OF PHOTOGRAPHY MARC CHINDEMI FILM EDITOR MARC CHINDEMI MUSIC/SOUND MARC CHINDEMI SPECIAL MAKEUP FX DOUGLAS GODINO PRODUCED BY MARC CHINDEMI KYLE RAPPAPORT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IMAGE THREE PRODUCTIONS",
+  "mood": [
+    "dread",
+    "suspense",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the weapon and intense expressions.",
+  "description": "A poster shows a man holding a weapon with a menacing expression, overlaid with bold text and credits for a film."
+}

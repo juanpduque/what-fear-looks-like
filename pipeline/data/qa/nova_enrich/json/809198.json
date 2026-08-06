@@ -1,0 +1,41 @@
+{
+  "title_text": "MADE VICIOUS",
+  "credits_text": "JAM MONK STARS: MICHAEL PEREZ, IVAN STOKES, LARRY BASS, NICK MERCER, JANE JOHNSON, LUKE STONE, SAMANTHA JANE PODE PRODUCED BY: DAVE PINGO, MIKE COREY DIRECTED BY: JOSH ANDERSON EXECUTIVE PRODUCER: JAMES CRENSHAW",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "intense",
+    "suspenseful",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A shadowy figure stands in a pool of red smoke, holding a cane, with dramatic lighting and a dark background."
+}

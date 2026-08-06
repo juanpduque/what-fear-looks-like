@@ -1,0 +1,44 @@
+{
+  "title_text": "THIS GOES BEYOND THE CASTING COUCH!",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "VIOLATED\nA film by Jason Impey",
+  "mood": [
+    "dread",
+    "erotic",
+    "gritty",
+    "disturbing",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "nudity",
+      "conf": 0.95
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.95,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic nudity, blood, and implied violence.",
+  "description": "A distressed, partially nude woman stands in a grimy setting, covered in blood, holding a weapon, with bold red text overlay reading 'VIOLATED.'"
+}

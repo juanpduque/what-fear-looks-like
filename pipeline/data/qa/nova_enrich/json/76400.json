@@ -1,0 +1,42 @@
+{
+  "title_text": "Pig",
+  "credits_text": "\"The most violent and graphically disturbing film ever made. It should cure you.\" - Joe Bob Briggs",
+  "languages": [
+    "en"
+  ],
+  "other_text": "oink!",
+  "mood": [
+    "gory",
+    "disturbing",
+    "violent",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    },
+    {
+      "name": "gore",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains extreme graphic violence and gore.",
+  "description": "A poster features a hanging, bloody pig with the text \"Pig oink!\" and a disturbing quote about violence."
+}

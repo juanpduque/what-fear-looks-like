@@ -1,0 +1,39 @@
+{
+  "title_text": "HALLOWEEN",
+  "credits_text": "THE CURSE OF MICHAEL MYERS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "suspense",
+    "terror"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense horror imagery and implied violence.",
+  "description": "A dark poster features a close-up of a masked face with a knife, promoting the horror film 'Halloween: The Curse of Michael Myers.'"
+}

@@ -1,0 +1,47 @@
+{
+  "title_text": "DIÁRIO DE UM EXORCISTA ZERO",
+  "credits_text": "",
+  "languages": [
+    "pt"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "haunting",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "occult",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic supernatural horror elements and implied violence.",
+  "description": "A dramatic poster shows a priest holding a bible beside a possessed figure with outstretched arms, evoking a dark, gothic horror atmosphere."
+}

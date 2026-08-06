@@ -1,0 +1,41 @@
+{
+  "title_text": "Darling",
+  "credits_text": "A FILM BY MICKEY KEATING",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"A CREEPING HALLUCINATORY NIGHTMARE\" DREAD CENTRAL\n\"AN ABSOLUTE MASTERPIECE\" ICONS OF FRIGHT\n\"STYLISHLY AUDACIOUS\" HOLLYWOOD REPORTER",
+  "mood": [
+    "dread",
+    "surreal",
+    "gothic",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.95,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "Contains suggestive imagery and implied violence.",
+  "description": "A dark silhouette holds a knife against a purple background with dramatic quotes above the title."
+}

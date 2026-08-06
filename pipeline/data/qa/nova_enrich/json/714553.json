@@ -1,0 +1,45 @@
+{
+  "title_text": "ATTACK OF THE ZOMBIE KNIGHTS",
+  "credits_text": "BORIS ROSENBERGER INGO LEE TONY CAUFIELD ANJA KIMMELMANN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BY GERD RICHTER FILM",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "knight",
+      "conf": 0.9
+    },
+    {
+      "name": "zombie",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore.",
+  "description": "A knight in dark armor stands over a pile of zombies, holding a sword against a stormy backdrop."
+}

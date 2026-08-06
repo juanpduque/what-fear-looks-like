@@ -1,0 +1,41 @@
+{
+  "title_text": "PLANET OF THE SHARKS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "dangerous",
+    "thrilling",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "shark",
+      "conf": 0.95
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.1,
+  "animal": 0.95,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of sharks and blood, indicating potential for intense and violent content.",
+  "description": "A dramatic poster shows numerous sharks surrounding a small island with a lone figure standing atop it, amidst turbulent waters stained red."
+}

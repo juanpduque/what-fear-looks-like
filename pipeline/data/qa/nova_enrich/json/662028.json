@@ -1,0 +1,46 @@
+{
+  "title_text": "鬼骨诅",
+  "credits_text": "周冬雨 刘海然",
+  "languages": [
+    "zh"
+  ],
+  "other_text": "11月22日 伦理惊悚",
+  "mood": [
+    "gothic",
+    "dread",
+    "psychological",
+    "supernatural",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and supernatural themes.",
+  "description": "A poster featuring two individuals with cracked faces, one submerged in water, suggesting a supernatural horror theme."
+}

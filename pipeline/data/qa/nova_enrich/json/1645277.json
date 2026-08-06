@@ -1,0 +1,40 @@
+{
+  "title_text": "KAGOL",
+  "credits_text": "LARASANA PICTURE PRESENT A FICTION FILM \"KAGOL\" Producer GABRIELA TALENTANIA Director RAIS AKBAR 1st. Assistant Director REVANDI DESTA 2nd Assistant Director NOVAL AURIL ALFARREL Script Writer ARINA CHUURIYYAH Director Of Photography ZULFIKRI EFERENDI Soundman DAMASUS PIJAR Gaffer GIA PRAKASA Art Director NAJLA KAMILIA Make up & Wardrobe SYARIFAH MUDA'IM, ARINA CHUURIYYAH Editor FIERI DWIYADI FATHONI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Support by: [list of logos]",
+  "mood": [
+    "horror",
+    "thriller",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and implied violence.",
+  "description": "Movie poster features three characters in a forest setting with a ghostly figure behind them. The title \"KAGOL\" is prominently displayed in green text."
+}

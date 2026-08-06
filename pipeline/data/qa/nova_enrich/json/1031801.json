@@ -1,0 +1,37 @@
+{
+  "title_text": "CARNIVAL",
+  "credits_text": "CASA DE CINEMA DE PORTUGAL",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "other_text": "CASA DE CINEMA DE PORTUGAL",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.7,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and violent themes.",
+  "description": "A dark poster featuring a fierce tiger face with bold red text reading 'CARNIVAL' against a black background."
+}

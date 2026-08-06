@@ -1,0 +1,39 @@
+{
+  "title_text": "SEABORNE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TWO-THOUSAND METERS... BELOW SEA LEVEL... SOMETHING IS COMING...",
+  "mood": [
+    "mysterious",
+    "foreboding",
+    "tense",
+    "haunting",
+    "isolated"
+  ],
+  "fear_labels": [
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.4
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, moody poster featuring a distant house on a hill above a body of water, with ominous text hinting at danger below sea level."
+}

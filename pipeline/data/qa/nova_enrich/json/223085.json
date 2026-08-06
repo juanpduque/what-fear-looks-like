@@ -1,0 +1,35 @@
+{
+  "title_text": "HOGMAUL",
+  "credits_text": "THE LEGEND OF ABRAMS COUNTY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"A CRUPY, HELACIOUS AND BLOCD SOAKED REMAKE OF IT'S MONSTER FUL\" Delorey Burke film director",
+  "mood": [
+    "gothic",
+    "dread",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence through weapon imagery and dark atmosphere.",
+  "description": "A dark silhouette holds a large hammer against a textured background, with bold red title text and a tagline below."
+}

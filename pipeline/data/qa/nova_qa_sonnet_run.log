@@ -1,0 +1,42 @@
+SONNET_START Mon Aug  3 11:03:07 -05 2026
+QA sample n_posters=380 jobs=380 models=['claude-sonnet'] workers=2 out=data/qa/nova_qa_sonnet.csv
+  10/380 ok=10 err=0 id=633130 model=claude-sonnet risk=ok 30s
+  20/380 ok=20 err=0 id=755349 model=claude-sonnet risk=ok 56s
+  30/380 ok=30 err=0 id=225549 model=claude-sonnet risk=ok 94s
+  40/380 ok=40 err=0 id=1218776 model=claude-sonnet risk=hallucination 120s
+  50/380 ok=50 err=0 id=48221 model=claude-sonnet risk=ok 153s
+  60/380 ok=60 err=0 id=1149695 model=claude-sonnet risk=ok 180s
+  70/380 ok=70 err=0 id=576322 model=claude-sonnet risk=ok 210s
+  80/380 ok=80 err=0 id=16591 model=claude-sonnet risk=ok 236s
+  90/380 ok=90 err=0 id=400777 model=claude-sonnet risk=ok 263s
+  100/380 ok=100 err=0 id=160203 model=claude-sonnet risk=ok 289s
+  110/380 ok=110 err=0 id=1077097 model=claude-sonnet risk=ok 315s
+  120/380 ok=120 err=0 id=657625 model=claude-sonnet risk=low_signal 340s
+  130/380 ok=130 err=0 id=580690 model=claude-sonnet risk=ok 367s
+  140/380 ok=140 err=0 id=42689 model=claude-sonnet risk=ok 395s
+  150/380 ok=150 err=0 id=264246 model=claude-sonnet risk=ok 423s
+  160/380 ok=160 err=0 id=63333 model=claude-sonnet risk=ok 449s
+  170/380 ok=170 err=0 id=30992 model=claude-sonnet risk=ok 475s
+  180/380 ok=180 err=0 id=40091 model=claude-sonnet risk=ok 502s
+  190/380 ok=190 err=0 id=85206 model=claude-sonnet risk=ok 526s
+  200/380 ok=200 err=0 id=195539 model=claude-sonnet risk=ok 553s
+  210/380 ok=210 err=0 id=27084 model=claude-sonnet risk=ok 578s
+  220/380 ok=220 err=0 id=520618 model=claude-sonnet risk=ok 606s
+  230/380 ok=230 err=0 id=1301365 model=claude-sonnet risk=ok 631s
+  240/380 ok=240 err=0 id=27361 model=claude-sonnet risk=ok 656s
+  250/380 ok=250 err=0 id=77319 model=claude-sonnet risk=ok 683s
+  260/380 ok=260 err=0 id=328240 model=claude-sonnet risk=ok 712s
+  270/380 ok=270 err=0 id=4232 model=claude-sonnet risk=ok 739s
+  280/380 ok=280 err=0 id=475053 model=claude-sonnet risk=ok 766s
+  290/380 ok=290 err=0 id=28380 model=claude-sonnet risk=ok 792s
+  300/380 ok=300 err=0 id=322410 model=claude-sonnet risk=ok 819s
+  310/380 ok=310 err=0 id=18851 model=claude-sonnet risk=ok 847s
+  320/380 ok=320 err=0 id=329977 model=claude-sonnet risk=ok 873s
+  330/380 ok=330 err=0 id=16093 model=claude-sonnet risk=ok 899s
+  340/380 ok=340 err=0 id=42729 model=claude-sonnet risk=ok 927s
+  350/380 ok=350 err=0 id=212391 model=claude-sonnet risk=ok 958s
+  360/380 ok=360 err=0 id=130046 model=claude-sonnet risk=ok 987s
+  370/380 ok=370 err=0 id=105408 model=claude-sonnet risk=ok 1014s
+  380/380 ok=380 err=0 id=422649 model=claude-sonnet risk=hallucination 1042s
+done → data/qa/nova_qa_sonnet.csv ok=380 err=0
+SONNET_END exit=0 Mon Aug  3 11:20:30 -05 2026

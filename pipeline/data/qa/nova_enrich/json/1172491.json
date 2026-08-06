@@ -1,0 +1,46 @@
+{
+  "title_text": "SKINNY PUPPY",
+  "credits_text": "LAST RIGHTS BACKING FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dystopian",
+    "surreal",
+    "gothic",
+    "dark",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.1,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult imagery and potential violence.",
+  "description": "A dark, surreal poster featuring distorted figures, skulls, and a dystopian landscape with vivid colors and intense imagery."
+}

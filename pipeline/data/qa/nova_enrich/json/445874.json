@@ -1,0 +1,42 @@
+{
+  "title_text": "MY UNCLE JOHN IS A ZOMBIE!",
+  "credits_text": "WRITTEN & DIRECTED BY JOHN RUSSO CO-DIRECTED BY ROBERT LUCAS PRODUCED BY ROBERT LUCAS GARY LEE VINCENT DEBRA REGIN SAM CHEN RUSSELL STEINER GEORGE KOSANA DANIELLE SAUS FRENCH CROSBY SPENCER TAYLOR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "camp",
+    "erotic",
+    "horror",
+    "comedy",
+    "zombie"
+  ],
+  "fear_labels": [
+    {
+      "name": "zombie",
+      "conf": 0.9
+    },
+    {
+      "name": "gun",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "sexual",
+    "violence"
+  ],
+  "moderation_notes": "Contains mild sexual content and suggestive imagery.",
+  "description": "A poster shows a police officer, a zombie, and a woman with guns, with a tombstone in the background."
+}

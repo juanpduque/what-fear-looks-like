@@ -1,0 +1,40 @@
+{
+  "title_text": "DEATH RANCH",
+  "credits_text": "THIS SWINE WILL MAKE YOU SQUEAL\nCLOSE CALL PRODUCTIONS AND 1/2 PRODUCTIONS PRESENTS \"DEATH RANCH\"\nSTARRING DEANNA GOMEZ JOEY BENI JULIA CARLAND PATRICK PETERSON AND RICK REISCHMAN\nPRODUCED BY CHRIS WARREN JOHN BLINGOE AND CHRIS FRINT MUSIC BY FRANK BORMANI\nWRITTEN BY JOHN BLINGOE DIRECTED BY CHRIS FRINT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gritty",
+    "intense",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence through its intense imagery and tagline.",
+  "description": "A gritty poster for \"Death Ranch\" features a shadowy figure and intense faces, with bold red lettering and a distressed background."
+}

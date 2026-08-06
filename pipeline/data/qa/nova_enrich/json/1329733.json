@@ -1,0 +1,40 @@
+{
+  "title_text": "КИШКА НАРУЖУ!",
+  "credits_text": "СИНДРОМ САДИЗМА",
+  "languages": [
+    "ru"
+  ],
+  "other_text": "БУРЯЩЕГО НЕТ... СПАСАЙ НАСТОЯЩЕЕ",
+  "mood": [
+    "dystopian",
+    "apocalyptic",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "gas_mask",
+      "conf": 0.9
+    },
+    {
+      "name": "cityscape",
+      "conf": 0.8
+    },
+    {
+      "name": "text_heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild graphic imagery and disturbing themes.",
+  "description": "A poster shows a person in a gas mask amidst a ruined cityscape with Cyrillic text, evoking a dystopian and disturbing atmosphere."
+}

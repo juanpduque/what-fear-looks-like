@@ -1,0 +1,47 @@
+{
+  "title_text": "XXX",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "最強の女性を殺うもの。女性の心に殺うもの。女性の身に殺うもの。",
+  "mood": [
+    "dread",
+    "terror",
+    "psychological",
+    "disturbing",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and suggestive imagery.",
+  "description": "A distressed woman covers her face while a shadowy figure grips a door with sharp objects protruding from it, accompanied by Japanese text."
+}

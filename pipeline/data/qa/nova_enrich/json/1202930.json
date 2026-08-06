@@ -1,0 +1,51 @@
+{
+  "title_text": "TOCANA アライヴ vol.3",
+  "credits_text": "結結!! TOCANA教授結結答子",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "結結!! びとに魔!! 心に轻ける 結結残害",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "supernatural",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and horror themes.",
+  "description": "A dark, eerie poster features a ghostly figure with blood splatters and Japanese text, evoking a supernatural horror theme."
+}

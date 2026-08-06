@@ -1,0 +1,50 @@
+{
+  "title_text": "アードバイング ファイル 公市屋屋の 消消屋屋女",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "ACVK-2001 ¥7,140 (正常) ¥6,800 (常店)",
+  "mood": [
+    "horror",
+    "surreal",
+    "eerie",
+    "fantasy",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains disturbing imagery and mild sexual undertones.",
+  "description": "VHS cover features multiple anime characters in a horror setting with monsters and eerie landscapes."
+}

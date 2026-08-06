@@ -1,0 +1,46 @@
+{
+  "title_text": "A SLAM GHOST STORY",
+  "credits_text": "CYNTHIA ROTH ROCK",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MYTHICAL. MAGICAL. MURDEROUS.",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "dread",
+    "dark",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and ghostly themes.",
+  "description": "A dark silhouette wields a sword against a full moon, with eerie text overlay on a gothic background."
+}

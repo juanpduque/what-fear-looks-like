@@ -1,0 +1,43 @@
+{
+  "title_text": "THE SMILING MAN",
+  "credits_text": "\"Creepy with a capital C.\" - FilmPulse.net\nA short horror film by A.J. Briones\nABBI CHALLY • STRANGE DAVE • MELISSA CHALLY\nWritten by THE SMILING MAN\nProduced by TEFFT SMITH • A.J. BRIONES • NATHAN HOPKINS\nDirected by A.J. BRIONES\nPhotography by MILA DE ROCHEFORT\nMusic Composed and Conducted by VIVIEN VILLANI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "VHS",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "disturbing",
+    "creepy"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "The poster features a dark, eerie image of a hand and a blurred face, with bold red and white text announcing the title and credits."
+}

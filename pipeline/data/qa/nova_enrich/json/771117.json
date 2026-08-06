@@ -1,0 +1,46 @@
+{
+  "title_text": "THE LOCALS",
+  "credits_text": "WITH JENNY PINN MATTHEW LANDON ANGELINA ARMADA ANGIE SAVAGE GREGORY HAYES TANYA VANCE YOUNG LAURENCE FIER CRESTON RACHEL GURR BRIAN HARTMAN JOSHUA HARTMAN JENNIFER HARTMAN JOSHUA HARTMAN JOSHUA HARTMAN BEN WATTS JAMES RICHARDS JAMES GILLESPIE AND JODI BRETTIN & DIRECTED BY J.R. ANTHONY FELIERA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NO PASSENGER WILL BE TURNED AWAY",
+  "mood": [
+    "dread",
+    "thriller",
+    "horror",
+    "intense",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster shows a large figure holding a bloody axe over a woman in a dark, moonlit setting with a chilling atmosphere."
+}

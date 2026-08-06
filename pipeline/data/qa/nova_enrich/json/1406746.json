@@ -1,0 +1,41 @@
+{
+  "title_text": "EL CALL CENTER DE LOS MUERTOS",
+  "credits_text": "SEBASTIAN DÍNEIRO (MAXIMO) MATIAS BIANCO (XUXA) EMILIANO PALOTICO (VLADIMIR) JEAN CARLOS VELEZ (CHARLIE FLOW) FEDERICO SORIA (BERNARDO) NEIL GUERRERO (QUIQUE WILLIAMS) DIRECTOR: MATIAS BIANCO PRODUCTORES: DAMIAN SARANDESES - GERMAN SULLIVAN",
+  "languages": [
+    "es"
+  ],
+  "other_text": "dead fish presenta Films",
+  "mood": [
+    "violent",
+    "thriller",
+    "action",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "gun",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster for a film featuring a central character with blood on his shirt holding a gun, surrounded by other characters in a gritty, action-packed setting."
+}

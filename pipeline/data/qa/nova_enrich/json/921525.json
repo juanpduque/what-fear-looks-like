@@ -1,0 +1,43 @@
+{
+  "title_text": "HAUNT",
+  "credits_text": "STARRING: CARLY SMITH MARK COVAN MATHEW HERMAN ALEXANDER CROW STEFANI LEHTO MARC SEDAKA KRISTA THOMAS-SCOTT NIKI NOLAN MARIAH REALI ASIA COLEMAN YUAN XIAO NIKI BORIN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AMERICAN FILM INSTITUTE CONSERVATORY PRESENTS A KLUCK UP PRODUCTION",
+  "mood": [
+    "eerie",
+    "psychological",
+    "supernatural",
+    "disturbing",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a person standing in front of a large, menacing red mouth with swirling eyes, set against a red and white striped background."
+}

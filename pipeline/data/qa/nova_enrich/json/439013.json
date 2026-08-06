@@ -1,0 +1,48 @@
+{
+  "title_text": "DEEP WEB XXX",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE ENCHANTED ARCHITECT AND TRASH ARTS PRESENTS",
+  "mood": [
+    "horrific",
+    "surreal",
+    "disturbing",
+    "gothic",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.5,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.7,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, sexual themes, and occult imagery.",
+  "description": "A horror poster features a man restraining another, surrounded by grotesque figures and blood, with intense red and green lighting."
+}

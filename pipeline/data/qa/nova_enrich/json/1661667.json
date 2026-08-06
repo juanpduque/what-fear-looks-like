@@ -1,0 +1,46 @@
+{
+  "title_text": "GALENVA",
+  "credits_text": "Bhutanese first psychological thriller filled with suspense. DIRECTED BY TSHERING NAMGYEL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DUH - NXT ENTERTAINMENT CapCut",
+  "mood": [
+    "suspense",
+    "psychological",
+    "thriller",
+    "forest",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and implied violence, suitable for mature audiences.",
+  "description": "A poster shows a group of people fleeing through a dark forest with a monstrous figure looming behind them, titled 'GALENVA'."
+}

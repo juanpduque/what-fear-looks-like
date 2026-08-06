@@ -1,0 +1,45 @@
+{
+  "title_text": "JOKER'S POLTERGEIST",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE AURORA MASSACRE",
+  "mood": [
+    "dread",
+    "surreal",
+    "gothic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains intense imagery of fire and weapon, suggesting violent and occult themes.",
+  "description": "A man stands amidst flames holding a gun, with a pentagram beneath him, suggesting a violent, occult-themed scenario."
+}

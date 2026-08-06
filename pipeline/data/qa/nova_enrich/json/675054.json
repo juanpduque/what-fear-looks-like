@@ -1,0 +1,47 @@
+{
+  "title_text": "MEX ZOMBIES",
+  "credits_text": "ALV, YA ESTÁN EN MÉXICO",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "BIFFF INTERNATIONAL FILM FESTIVAL",
+  "mood": [
+    "action",
+    "horror",
+    "post-apocalyptic",
+    "adventure",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "dog",
+      "conf": 0.7
+    },
+    {
+      "name": "cityscape",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.7,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild violence and gore, suitable for mature audiences.",
+  "description": "A group of young adults stand together in a post-apocalyptic city with weapons and a dog, ready for action against zombies."
+}

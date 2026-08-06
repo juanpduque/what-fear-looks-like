@@ -1,0 +1,45 @@
+{
+  "title_text": "MAHAL",
+  "credits_text": "CREATIVEGRAPHICFILMS PRESENTING",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BY R. NANDAL DIRECTED BY AKAND PRASAD MUSIC SUNIL",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and monstrous elements.",
+  "description": "A horror movie poster featuring a monstrous, grotesque face with blood and lightning, alongside partial figures and dramatic text."
+}

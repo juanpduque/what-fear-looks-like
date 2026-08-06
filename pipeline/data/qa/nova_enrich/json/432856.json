@@ -1,0 +1,40 @@
+{
+  "title_text": "FLORA MUERTE",
+  "credits_text": "CARMEN SALINAS - GILBERTO TRUJILLO - ALMA DELFINA CON EL RÓGER - ARTURO VÁSQUEZ",
+  "languages": [
+    "es"
+  ],
+  "other_text": "PANDILLEROS\n\nPRESIDIDA POR: VALENTÍN TRUJILLO\n\nREALIZADA POR: ISMAEL RODRÍGUEZ JR.\n\nPRODUCCIÓN: RODRÍGUEZ",
+  "mood": [
+    "violent",
+    "thriller",
+    "action",
+    "drama"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts a skull and suggests violent themes, but no explicit gore or nudity is visible.",
+  "description": "The poster features a large skull with smoke, surrounded by characters and weapons, indicating a violent thriller."
+}

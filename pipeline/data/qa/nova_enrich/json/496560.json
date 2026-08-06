@@ -1,0 +1,41 @@
+{
+  "title_text": "MAUT KI DAKSHAT",
+  "credits_text": "A FILM BY J. NEELAM GO PRODUCER SIMRAN GUPTA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CAPTAIN 55",
+  "mood": [
+    "horror",
+    "thriller",
+    "camp",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.3,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "sexual",
+    "violence"
+  ],
+  "moderation_notes": "Contains mild sexual suggestiveness and implied violence.",
+  "description": "Poster features a monstrous green face with sharp teeth, surrounded by several characters in dramatic poses, including a woman in a revealing outfit."
+}

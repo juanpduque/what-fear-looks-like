@@ -1,0 +1,45 @@
+{
+  "title_text": "Psycho Pike",
+  "credits_text": "WATER WOLF PRODUCTIONS presents a CHRIS POSCHUM \"PSYCHO PIKE\" starring DOUG MATTER, WAYNE MUMAW, CAROL SCHELLENBERG, DAWN TOODY and JOHNSON MCGRAW featuring RED FERNER executive producer JOSEPH MONRO starring DAVID CAPPELLI and KELLY BOOTY music by MARTIN CANADIAN and THOMAS WINTER with CAROLINE LARGER as photographer. Written by JOHN MORAN and CHRIS POSCHUM and directed by CHRIS POSCHUM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "The Fish With Attitude!",
+  "mood": [
+    "thriller",
+    "horror",
+    "psychological",
+    "surreal",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "psychological",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.4,
+  "person": 0.5,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence and psychological horror themes.",
+  "description": "A dark poster features bold red text \"Psycho Pike\" with a shadowy hand and a lake scene, hinting at a thriller or horror film."
+}

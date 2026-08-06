@@ -1,0 +1,45 @@
+{
+  "title_text": "Supermac's",
+  "credits_text": "Just talkin' about... An Ultra Violent Classic From Charles Guiley",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SUB ROSA STUDIOS",
+  "mood": [
+    "camp",
+    "horror",
+    "comedy",
+    "violent",
+    "quirky"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.4,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.5,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests violent themes and may include graphic content.",
+  "description": "The poster features various characters, including a skull-faced figure, a clown, and a man in a suit, with bold pink text and a vintage car, suggesting a campy horror-comedy."
+}

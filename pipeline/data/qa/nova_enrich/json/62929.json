@@ -1,0 +1,50 @@
+{
+  "title_text": "EL CASTILLO DE LAS MOMIAS DE GUANAJUATO",
+  "credits_text": "SUPERZAN BLUE ANGEL TIBURCIO ZULEMAS AIAD EN EASTMAN COLOR",
+  "languages": [
+    "es"
+  ],
+  "other_text": "OBLICEONES BLANCAS CHEZ A Preciado",
+  "mood": [
+    "gothic",
+    "horror",
+    "camp",
+    "erotic",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "mummy",
+      "conf": 0.85
+    },
+    {
+      "name": "castle",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "nudity",
+    "occult"
+  ],
+  "moderation_notes": "Contains partial nudity and occult imagery.",
+  "description": "A colorful poster features a castle, mummies, and characters in dramatic poses, blending horror and erotic themes."
+}

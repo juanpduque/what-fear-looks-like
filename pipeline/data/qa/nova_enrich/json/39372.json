@@ -1,0 +1,44 @@
+{
+  "title_text": "GREEN EYED MONSTER",
+  "credits_text": "IT WILL CONSUME YOU",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WATCH THE MOVIE WIN THE MONEY",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and gore, suitable for mature audiences.",
+  "description": "A poster featuring a close-up of a green-eyed monster with a tagline 'It Will Consume You' and a forest background."
+}

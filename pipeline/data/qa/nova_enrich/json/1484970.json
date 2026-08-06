@@ -1,0 +1,46 @@
+{
+  "title_text": "Darkness: 70s",
+  "credits_text": "IN SEARCH OF JOURNEY INTO ICONIC 70s HORROR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WICKED HOUSE NOW PLAYING \"THE EXORCIST\" HOLLYWOOD AMITYVILLE HORROR \"THE OMEN\" BIACUET TEXAS CHAIN SAW MASSACRE DANNI BY THE DEAD NEW YORK POST ANOTHER NECKTIE STRANGLING",
+  "mood": [
+    "gothic",
+    "retro",
+    "horror",
+    "camp",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains horror themes and occult references.",
+  "description": "A poster featuring a skull-masked figure holding a red object, with a retro theater marquee advertising classic horror films and a newspaper headline."
+}

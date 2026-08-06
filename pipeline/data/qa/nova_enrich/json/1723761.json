@@ -1,0 +1,39 @@
+{
+  "title_text": "SURVIVE",
+  "credits_text": "A FILM BY DREW UNDERWOOD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ALONE. STARVING. FORCED TO...",
+  "mood": [
+    "survival",
+    "tense",
+    "isolated",
+    "forest",
+    "desperate"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "survival",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.0,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A lone figure stands in a dense, foggy forest holding a bow, with the title 'Survive' prominently displayed."
+}

@@ -1,0 +1,38 @@
+{
+  "title_text": "CHRYSALIS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "The Rest Are Dead",
+  "mood": [
+    "post-apocalyptic",
+    "desolate",
+    "survival",
+    "grim",
+    "dystopian"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and themes of violence and decay.",
+  "description": "A poster shows two individuals walking through a ruined urban area with debris and graffiti, hinting at a post-apocalyptic setting."
+}

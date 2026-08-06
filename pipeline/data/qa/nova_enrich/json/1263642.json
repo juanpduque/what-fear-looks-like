@@ -1,0 +1,47 @@
+{
+  "title_text": "TERROR RE-ANIMATOR",
+  "credits_text": "Papajuta Pictures presenta una producción de DINAMITA FILMS TERROR RE-ANIMATOR con VIOLET LUGOSI MIKE PARACA PACO LEE Guion y Dirección P. SAELOR",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "action",
+    "sci-fi",
+    "dark",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and horror elements.",
+  "description": "A comic-style poster features a group of characters, including zombies and a woman holding a syringe, set against a dark, industrial background."
+}

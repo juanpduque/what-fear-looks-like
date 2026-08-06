@@ -1,0 +1,42 @@
+{
+  "title_text": "HATE THYSELF",
+  "credits_text": "A FILM BY SHIVAN MAKER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE REAL DEMONS LIVE INSIDE US",
+  "mood": [
+    "dread",
+    "psychological",
+    "intense",
+    "disturbing",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.1,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and a disturbing facial expression.",
+  "description": "A poster featuring a central, distorted face with blood splatter and the title 'HATE THYSELF' prominently displayed."
+}

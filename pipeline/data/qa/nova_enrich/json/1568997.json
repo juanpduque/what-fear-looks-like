@@ -1,0 +1,43 @@
+{
+  "title_text": "Red Velvet.",
+  "credits_text": "THE RED VELVET PICTURES ... FERNANDO BORGES, MARIA JOSÉ CABRAL, MARIA AREZA, CARLA ALMEIDA, LUIS CASTRO LEANDRO SANDO, JOÃO PEDRO ADOLFO, MARIA JOÃO CABRAL, MARIA AREZA, CARLA ALMEIDA, LUIS CASTRO LEANDRO SANDO",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "MUCHOS GÉNEROS, CUATRO HISTORIAS, UN MISMO PASTEL",
+  "mood": [
+    "surreal",
+    "eerie",
+    "gothic",
+    "erotic",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "cake",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild violent imagery with a knife and suggestive themes.",
+  "description": "Poster shows a large knife piercing a colorful cake with vibrant, surreal background and cast images below."
+}

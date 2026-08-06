@@ -1,0 +1,39 @@
+{
+  "title_text": "REPTISAURUS",
+  "credits_text": "GIL GERARD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "sci-fi",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.85
+    },
+    {
+      "name": "fire",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains action violence with space rays and a monster.",
+  "description": "A large dinosaur attacks fighter jets against a stormy backdrop, with explosions and lightning in the background."
+}

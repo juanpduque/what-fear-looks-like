@@ -1,0 +1,49 @@
+{
+  "title_text": "PULAU MAKAN ORANG",
+  "credits_text": "Amanda Amry, Tunku Hanis, Wan Raja, Mirza Aziz, Penampilan Khaz Azhan Rani Faradhiya",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PISARI PICTURES",
+  "mood": [
+    "horror",
+    "thriller",
+    "mystery",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and a monstrous creature.",
+  "description": "A poster shows a group of people on a boat near a forested island with a monstrous creature emerging from the water, surrounded by blood."
+}

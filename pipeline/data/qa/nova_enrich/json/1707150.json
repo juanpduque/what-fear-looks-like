@@ -1,0 +1,41 @@
+{
+  "title_text": "VIRJCO",
+  "credits_text": "RODRIGO VALENTI PRESENTA\nDIRIGIDO POR JANA CRUZ",
+  "languages": [
+    "es"
+  ],
+  "other_text": "LABORATORIO JUDICIAL ANO 1923",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    },
+    {
+      "name": "gothic",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A dark poster features a bound, injured figure with visible blood against a shadowy background, with bold title text and credits overlay."
+}

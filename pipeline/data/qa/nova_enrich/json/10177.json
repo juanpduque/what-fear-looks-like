@@ -1,0 +1,41 @@
+{
+  "title_text": "EVIL ALIENS",
+  "credits_text": "A FILM BY JAKE WEST",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"Maniacally raunchy and completely awesome!\" - Wendy Ide, The Stranger\n\"A Fantastic Audience Movie!\" - Joshua Oppenheimer, The Guardian\n\"Hysterically Entertaining!\" - David Hughes, Empire\n\"It had me clapping my hands in childlike glee!\" - Scott Weinberg, Joblo\n\"A Must-See!\" - Fantastic Fun!\nThey're all here to stand between us and the Evil Aliens. Pray that's enough.",
+  "mood": [
+    "camp",
+    "action",
+    "sci-fi",
+    "humor",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild violence suggested by the poster imagery.",
+  "description": "Poster features a group of people facing an alien threat, with bold title and taglines emphasizing humor and action."
+}

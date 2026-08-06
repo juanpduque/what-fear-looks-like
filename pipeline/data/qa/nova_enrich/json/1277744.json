@@ -1,0 +1,40 @@
+{
+  "title_text": "BORN DEAD // DEAD AGAIN",
+  "credits_text": "KID ATARI\nMANUEL TEICHERT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ORIGINAL MOVIE SOUNDTRACK\nYOUR LABEL HERE\nCASSETTE TAPE\nANALOG AUDIO",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and themes of violence and horror.",
+  "description": "A poster featuring a hooded, zombie-like figure with a cracked texture background, promoting the soundtrack for \"Born Dead // Dead Again\" by Kid Atari and Manuel Teichert."
+}

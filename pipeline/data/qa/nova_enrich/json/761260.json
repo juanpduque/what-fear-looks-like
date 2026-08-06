@@ -1,0 +1,46 @@
+{
+  "title_text": "DEATHBOARD",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AB CHIKL\nMNO PQRSTUVWXYZ\n1234567890\nGoodbye",
+  "mood": [
+    "terrifying",
+    "supernatural",
+    "intense",
+    "chaotic",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains intense horror elements and occult themes.",
+  "description": "A woman with long black hair screams as flames engulf her, reaching out above a wooden board with cryptic text."
+}

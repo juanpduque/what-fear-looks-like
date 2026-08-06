@@ -1,0 +1,41 @@
+{
+  "title_text": "The Violent Homicidal Serial Killer Rape",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "disturbing",
+    "violent",
+    "gothic",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.9,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "Contains disturbing imagery and themes of violence and sexual aggression.",
+  "description": "A dark purple poster features stark white line drawings of two figures, one with a skull-like face and the other with disheveled hair, accompanied by bold, unsettling text."
+}

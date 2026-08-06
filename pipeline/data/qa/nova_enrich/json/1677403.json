@@ -1,0 +1,40 @@
+{
+  "title_text": "CİNNET-Î SİRRA",
+  "credits_text": "DİLAY KONUK, KENANZE KAPLAN, ADA MURAL, KUTAY KOC",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "YAKINDA SİNEMALARDA MOVİFİRE",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including blood and intense facial expressions.",
+  "description": "A man with a terrified expression and a woman with a distressed look appear on a dark, eerie poster for a horror film."
+}

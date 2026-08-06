@@ -1,0 +1,41 @@
+{
+  "title_text": "NOCHE DE PAZ NOCHE DE MUERTE!X",
+  "credits_text": "Un Film de Sean S. Cunnington",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "Victor Melman en: PROHIBIDO DECIR CERDO",
+  "mood": [
+    "horror",
+    "camp",
+    "satirical"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.8,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and violent themes.",
+  "description": "Movie poster features a monstrous creature and several characters, with bold red text and a filmstrip border design."
+}

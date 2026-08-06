@@ -1,0 +1,46 @@
+{
+  "title_text": "Root of Darkness",
+  "credits_text": "GUSTAV LJUNGDHAL'S\nWHEN THE FOREST TURNS EVIL\nEVERY KNIGHT NEEDS A SHOTGUN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WINNER OUTSTANDING INTERNATIONAL ROOT OF DARKNESS FILM AWARD LOS ANGELES ACADEMY - SWEDEN SUMMER 2017 BUT CANNES 2017",
+  "mood": [
+    "gothic",
+    "horror",
+    "action",
+    "fantasy",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and horror elements.",
+  "description": "A poster features a monstrous, skeletal figure holding a weapon against a red and yellow background with bold title and tagline text."
+}

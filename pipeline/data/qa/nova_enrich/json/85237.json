@@ -1,0 +1,45 @@
+{
+  "title_text": "The Vampire",
+  "credits_text": "Starring JOHN BEAL - COLEEN GRAY - KENNETH TOBY - with DABBS GREER. Story and Screenplay by PAT FIELDER - Directed by PAUL LANDRES. Produced by ARTHUR GARDNER and JULES V. LEVI - Released thru UNITED ARTISTS.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A NEW KIND OF KILLER TO STALK THE SCREEN! if it claws... it drains blood!",
+  "mood": [
+    "gothic",
+    "horror",
+    "dramatic",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror themes and implied violence.",
+  "description": "Vintage movie poster featuring a man with a monstrous face looming over a frightened woman, with dramatic text and additional characters in the background."
+}

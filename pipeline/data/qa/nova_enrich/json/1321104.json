@@ -1,0 +1,50 @@
+{
+  "title_text": "VELHAN",
+  "credits_text": "\"VELHAN\" ÖZÜNCÜLÜ AR BEZA MUTLU - DENEM FEDAL - ASLIHAN ZAFER - MERT SENOL - MUHAMMED FİNDİCAK",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ALEM - I CIN'DEN GELEN CINLERIN ATEŞIYDI BU !",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "intense",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains intense horror elements including fire, skulls, and ghostly figures.",
+  "description": "A fiery, monstrous face dominates the poster with dark, smoky silhouettes and skulls in the background, suggesting a horror theme."
+}

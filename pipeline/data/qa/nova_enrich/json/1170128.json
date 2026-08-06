@@ -1,0 +1,51 @@
+{
+  "title_text": "THE MONKEY'S PAW",
+  "credits_text": "STARRING ROBERT STEWART, JOSH ROSENBERG, SPENCE MATT KNUDSON PRODUCED BY RICKY LEWIS, JR. A NATALIE LEVINE FILM SCREENPLAY BY RICKY LEWIS, JR.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BE CAREFUL WHAT YOU WISH FOR",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "mystery",
+    "dread",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    },
+    {
+      "name": "forest",
+      "conf": 0.5
+    },
+    {
+      "name": "house",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, eerie poster features a ghostly skull and four concerned individuals against a gloomy, wooded background with a distant chapel."
+}

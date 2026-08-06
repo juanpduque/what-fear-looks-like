@@ -1,0 +1,47 @@
+{
+  "title_text": "第三个室",
+  "credits_text": "主演应答中的一个室居了一个女子的生命。主演应第三个室的个人在地居中打成了个女子的生命。",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "今天，你无存可置我上了应第三个室的个人在地居中打成了个女子的生命。",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "mystery",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild blood imagery and psychological horror themes.",
+  "description": "A poster shows two intense faces with a tear and a ruined house, suggesting psychological horror and mystery."
+}

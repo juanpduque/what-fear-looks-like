@@ -1,0 +1,46 @@
+{
+  "title_text": "ACID PIT STOP",
+  "credits_text": "SENT SOULS PRODUCTIONS FREESPOITE MEDIA LAKE THE STUDIO JASON WRIGHT JEFF ZELLER JENNIFER VOSS CALUM MCGURE MEGAN JONES HAY HILLMAN JOE WEIER RICKY LEE HENDERSON SHAYNA SPENCER VALENTINE KRISPY RICHARDSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SILENT SOULS PRODUCTIONS PRESENTS A LAKE THE STUDIO PRESENT",
+  "mood": [
+    "horror",
+    "surreal",
+    "grotesque",
+    "post-apocalyptic",
+    "dark comedy"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.95
+    },
+    {
+      "name": "weapon",
+      "conf": 0.3
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and mild suggestive content.",
+  "description": "A poster featuring a chaotic crowd of grotesque, zombie-like figures with intense expressions, set against a dark, eerie background."
+}

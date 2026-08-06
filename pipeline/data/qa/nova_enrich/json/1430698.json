@@ -1,0 +1,35 @@
+{
+  "title_text": "THE BAY",
+  "credits_text": "WELCOME TO PARADISE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "horror",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential for graphic violence involving marine creatures.",
+  "description": "A poster shows two people in the water with large fish nearby, with a scenic island backdrop and the title 'The Bay' prominently displayed."
+}

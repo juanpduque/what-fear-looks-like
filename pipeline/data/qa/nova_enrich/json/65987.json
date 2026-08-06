@@ -1,0 +1,46 @@
+{
+  "title_text": "女子の左手女子の右手",
+  "credits_text": "小当女子左手女子左手女子左手女子左手",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "女子の左手女子左手女子左手女子左手",
+  "mood": [
+    "eerie",
+    "gothic",
+    "psychological",
+    "supernatural",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild violence and occult themes.",
+  "description": "A woman with long red hair is shown with clawed hands gripping her face, accompanied by Japanese text and a menacing figure in the background."
+}

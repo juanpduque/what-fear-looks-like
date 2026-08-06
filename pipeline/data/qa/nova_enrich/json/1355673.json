@@ -1,0 +1,37 @@
+{
+  "title_text": "SI TÚ ME DICES VEN",
+  "credits_text": "ALICIA MEDEA LUIS BAUTISTA",
+  "languages": [
+    "es"
+  ],
+  "other_text": "LOS MONSTROS NO SE ESCONDEN BAJO LA CAMA, SINO EN TU MENTE MARZO 2015",
+  "mood": [
+    "suspense",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dimly lit room features a man facing a shadowy figure, with text indicating a psychological thriller releasing in March 2015."
+}

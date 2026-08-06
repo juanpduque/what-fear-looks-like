@@ -1,0 +1,38 @@
+{
+  "title_text": "A NIGHT STORY",
+  "credits_text": "an horror shortfilm by adrien caulier",
+  "languages": [
+    "en"
+  ],
+  "other_text": "what happens when you sleep?",
+  "mood": [
+    "mysterious",
+    "eerie",
+    "haunting",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "night",
+      "conf": 0.9
+    },
+    {
+      "name": "moon",
+      "conf": 0.8
+    },
+    {
+      "name": "darkness",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, atmospheric poster featuring a glowing moon partially obscured by clouds with text hinting at a horror theme."
+}

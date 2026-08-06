@@ -1,0 +1,49 @@
+{
+  "title_text": "DORMS OF DEATH",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "7",
+  "mood": [
+    "gothic",
+    "dread",
+    "horror",
+    "mysterious",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.95
+    },
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains violent imagery with a hooded figure holding a knife and a skull face.",
+  "description": "A hooded figure with a skull face holds a large knife in front of an old, gothic mansion during a stormy night."
+}

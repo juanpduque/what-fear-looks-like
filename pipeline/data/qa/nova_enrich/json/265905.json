@@ -1,0 +1,49 @@
+{
+  "title_text": "MOLLY CROW",
+  "credits_text": "VENGEANCE NEVER DIES\nDIRECTOR WILKES\nASSISTANT SYRES\nPRODUCER NIKE\nEXECUTIVE PRODUCER MOHAMED ALI\nCAST: LAURA RANDLE CONDE GEORGE NEWTON MIKE GAIGER SAMRA ALI NILES RODZEWICZ",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "supernatural",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    },
+    {
+      "name": "forest",
+      "conf": 0.5
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and supernatural horror elements.",
+  "description": "A young girl stands in a dark, eerie alley with bats flying overhead, suggesting a supernatural horror theme."
+}

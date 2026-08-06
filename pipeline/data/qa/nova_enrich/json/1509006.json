@@ -1,0 +1,46 @@
+{
+  "title_text": "CHECKOUT",
+  "credits_text": "She's out for bargains. He's out for blood.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HITS THE BIG SCREEN AT THE 2023 SAN FRANCISCO INTERNATIONAL FILM FESTIVAL. WRITTEN AND DIRECTED BY ALICE WINTER. STARRING EMILY STONE, JAMES CARTER, LUCY BENNETT. PRODUCED BY JANE DOE FILMS IN ASSOCIATION WITH RED VISION.",
+  "mood": [
+    "horror",
+    "comedy",
+    "surreal",
+    "camp",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.4,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster shows a woman in a leopard-print hat and a man with a zombie-like face in a supermarket, with chaotic scenes and a tagline about bargains and blood."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "Midnight Lace",
+  "credits_text": "Mary Crosby in Midnight Lace. A classic suspense thriller. Celeste Holm Gary Frank. A-52 TV Guide Premiere Movie! NBC PROUD AS A PEACOCK.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "O'Connor story dramatized by Neil. She Shot J.R. Now Who's Trying To Kill Her? 9:00PM 5,6",
+  "mood": [
+    "suspense",
+    "thriller",
+    "mystery",
+    "anxiety",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A vintage movie poster features a woman with dark hair and a man in the background, promoting the suspense thriller 'Midnight Lace' airing at 9:00 PM on channels 5 and 6."
+}

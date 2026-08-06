@@ -1,0 +1,39 @@
+{
+  "title_text": "SKYHIGH",
+  "credits_text": "A FILM BY RYUEI KITAMURA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BETWEEN HEAVEN AND HELL YOU WILL FIND THE WAY",
+  "mood": [
+    "mystical",
+    "dramatic",
+    "intense",
+    "supernatural",
+    "contemplative"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.3
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A woman stands dramatically against a stormy sky with vibrant colors, pointing forward with one hand, suggesting a journey between heaven and hell."
+}

@@ -1,0 +1,47 @@
+{
+  "title_text": "EARLY MORNING CALM",
+  "credits_text": "A Movie by Brian Dorton",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Nothing Can Prepare You for the Terror in the",
+  "mood": [
+    "surreal",
+    "disturbing",
+    "psychological",
+    "horrific",
+    "distorted"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.85,
+  "person": 0.95,
+  "animal": 0.6,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains graphic imagery, partial nudity, and disturbing themes.",
+  "description": "The poster features a chaotic collage of distorted faces and creatures with a central screaming figure, evoking horror and surrealism."
+}

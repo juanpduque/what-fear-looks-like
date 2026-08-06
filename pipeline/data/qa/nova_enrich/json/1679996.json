@@ -1,0 +1,46 @@
+{
+  "title_text": "ATAQUE GENIZA",
+  "credits_text": "EL ASADITO DE LOS MUERTOS VIVOS",
+  "languages": [
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gruesome",
+    "violent",
+    "dark",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "gore",
+      "conf": 0.85
+    },
+    {
+      "name": "violence",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.95,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore with disturbing imagery.",
+  "description": "A poster shows a person holding a knife and fork over a bowl of dismembered body parts, with bold red text reading 'ATAQUE GENIZA' and a tagline below."
+}

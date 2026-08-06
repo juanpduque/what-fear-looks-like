@@ -1,0 +1,50 @@
+{
+  "title_text": "EASTER CASKET",
+  "credits_text": "...something you're not going to want to miss.\" -Just In News \"This is must-see cinema\" -couchtater.com",
+  "languages": [
+    "en"
+  ],
+  "other_text": "JOSH EAL ERIN R. RYAN PETER COTTONTAIL",
+  "mood": [
+    "gothic",
+    "horror",
+    "dramatic",
+    "intense",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains intense imagery and themes of violence and occult elements.",
+  "description": "A dramatic poster features a man holding a sword, surrounded by intense figures and fiery backgrounds, with bold red text reading 'EASTER CASKET.'"
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "SKULZ",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HOTEL",
+  "mood": [
+    "horror",
+    "surreal",
+    "grotesque",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "grotesque",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic and grotesque imagery with implied violence and blood.",
+  "description": "A colorful poster features a man with glasses and tie, surrounded by zombie-like figures with decayed faces and exposed flesh, with the word \"SKULZ\" prominently displayed."
+}

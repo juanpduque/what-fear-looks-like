@@ -1,0 +1,46 @@
+{
+  "title_text": "鬼子母神",
+  "credits_text": "BUNSHINSABA VS SADAKO",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "中国电影艺术展一览",
+  "mood": [
+    "horror",
+    "supernatural",
+    "gothic",
+    "dread",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains horror themes and implied violence.",
+  "description": "A poster features two women in a dark, eerie setting, one with long hair and a menacing expression, suggesting a supernatural horror theme."
+}

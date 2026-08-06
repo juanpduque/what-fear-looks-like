@@ -1,0 +1,45 @@
+{
+  "title_text": "弥次郎",
+  "credits_text": "MIDORU KO Donsai yo! Ketsuraku eiga MIDORU KO Donsai yo! Ketsuraku eiga",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "MIDORU KO Donsai yo! Ketsuraku eiga",
+  "mood": [
+    "surreal",
+    "gothic",
+    "dark",
+    "fantasy",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    },
+    {
+      "name": "house",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.7,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and monstrous creatures.",
+  "description": "A surreal, gothic poster features a central figure holding a monstrous creature amidst a chaotic, dark urban setting with eerie architectural details."
+}

@@ -1,0 +1,51 @@
+{
+  "title_text": "ERO TOMANIAC",
+  "credits_text": "AN ANIMATED HORROR FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HOLLYWOOD",
+  "mood": [
+    "erotic",
+    "horror",
+    "surreal",
+    "gothic",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.7,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.9,
+  "sensitive": [
+    "violence",
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic violence, sexual themes, and occult imagery.",
+  "description": "An animated horror poster features a cat-eared woman with a knife, a screaming cat, and a graveyard under a full moon."
+}

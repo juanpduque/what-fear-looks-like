@@ -1,0 +1,36 @@
+{
+  "title_text": "DRONE",
+  "credits_text": "A FILM BY ROBERT DUNCAN STARRING ROBIN HELLER & JAKE MCGARRY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TUNE IN TO FEARS FREQUENCY",
+  "mood": [
+    "dread",
+    "surreal",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains disturbing imagery and implied violence.",
+  "description": "A poster featuring a close-up of a damaged ear with the title \"DRONE\" prominently displayed in red text."
+}

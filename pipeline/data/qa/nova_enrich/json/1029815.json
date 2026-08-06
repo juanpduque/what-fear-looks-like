@@ -1,0 +1,46 @@
+{
+  "title_text": "ZOMBIE METEOR",
+  "credits_text": "- The Movie - PARAMOTION FILMS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "We were ready for the arrival of a meteorite\nNot for this...",
+  "mood": [
+    "dread",
+    "sci-fi",
+    "horror",
+    "apocalyptic",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "space",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements and violent imagery.",
+  "description": "A movie poster shows astronauts in space surrounded by zombie-like creatures, with a dramatic view of Earth below."
+}

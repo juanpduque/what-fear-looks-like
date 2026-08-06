@@ -1,0 +1,41 @@
+{
+  "title_text": "Processing",
+  "credits_text": "Hearts & Number Ten",
+  "languages": [
+    "en"
+  ],
+  "other_text": "The truth won't always set you free. FEEDING SOON",
+  "mood": [
+    "gothic",
+    "surreal",
+    "eerie",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "gothic",
+      "conf": 0.8
+    },
+    {
+      "name": "surreal",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic, disturbing imagery of blood and organic matter.",
+  "description": "A dark poster features a stained-glass window with red, fleshy patterns and the title 'Processing' below."
+}

@@ -1,0 +1,51 @@
+{
+  "title_text": "Kettensägen Zombies Redux",
+  "credits_text": "THE ULTIMATE DIRECTOR'S CUT",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "other_text": "Der Name ist Programm, alles andere ist Nebensache. Kritisches Erstlingswerk! ASTRO-Approved!!! Selbstironisch, brutal und durchgeknallt! MATRIARCHENTOD TEIL DES FUNDAMENTS VOM UNDERGROUND! MAREES GAUER",
+  "mood": [
+    "horror",
+    "violent",
+    "gothic",
+    "intense",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and horror elements.",
+  "description": "A poster features a dark silhouette holding a chainsaw against a forest backdrop, with bold red text and horror-themed accolades."
+}

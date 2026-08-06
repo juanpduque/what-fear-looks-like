@@ -1,0 +1,31 @@
+{
+  "ts": "20260804T231638Z",
+  "merges": [
+    {
+      "detecttext": {
+        "target": "data/poster_ocr_rek_text_alllang.csv",
+        "backup": "data/poster_ocr_rek_text_alllang.csv.bak_pre_72k_merge_20260804T231638Z",
+        "dt72_rows": 15645,
+        "allang_before": 11583,
+        "allang_after": 27228,
+        "added": 15645,
+        "skipped_already_in_allang": 0,
+        "skipped_in_essay_master": 0,
+        "detecttext_union_before": 49462,
+        "detecttext_union_after": 65107
+      }
+    },
+    {
+      "rekognition": {
+        "target": "data/rekognition.csv",
+        "backup": "data/rekognition.csv.bak_pre_72k_merge_20260804T231638Z",
+        "rek72_rows": 15642,
+        "main_before": 49556,
+        "main_after": 65197,
+        "added": 15641,
+        "skipped_already_in_main": 0,
+        "skipped_err_or_empty": 1
+      }
+    }
+  ]
+}

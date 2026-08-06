@@ -1,0 +1,14 @@
+{
+  "ts_utc": "2026-08-03T23:09:30Z",
+  "summary": "Fixed AWS CLI in imdb selenium userdata; terminated 3 failed idle instances; relaunched MODE=posters healthy",
+  "new_instance_id": "i-0d70c936e1e39759b",
+  "public_ip": "18.206.125.253",
+  "prefix": "wflike-imdb-selenium",
+  "userdata_healthy": true,
+  "features_residual": {
+    "terminated": "i-02419ca815e2376e3",
+    "needs_relaunch": true,
+    "prefix": "wflike-imdb-features-residual"
+  },
+  "full_report": "../imdb_posters_relaunch.json"
+}

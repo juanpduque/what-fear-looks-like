@@ -1,0 +1,42 @@
+{
+  "title_text": "BURP",
+  "credits_text": "PRESENTE >> ERNESTO GARCIA - CONCHI CUELLO - PONOLO V. JAVIER MANGEL - JOAN LORENZO CUELLO - MIRALES - JOSE LORENZO GUION & FOTOGRAFIA SERGIO BLASCO MUSICA & FX TECNICAS DE SONIDO V. DISCORDE & ISAAC MERINO BLANCO INGENIERO DE SONIDO EDUARDO JOANES",
+  "languages": [
+    "es"
+  ],
+  "other_text": "A llegado el dia en el que la basura y la podredumbre humana se comera todo",
+  "mood": [
+    "horrific",
+    "grotesque",
+    "disturbing",
+    "violent",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore.",
+  "description": "A poster shows a grotesque, bloodied face with outstretched hands, accompanied by Spanish text and credits for a film titled 'BURP.'"
+}

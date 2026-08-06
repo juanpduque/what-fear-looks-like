@@ -1,0 +1,41 @@
+{
+  "title_text": "วาดิบวังศ์กุม",
+  "credits_text": "THOSE THAT FOLLOW",
+  "languages": [
+    "en",
+    "th"
+  ],
+  "other_text": "สำหรับ iPhone 13 Pro และรุ่นใหม่ขึ้นไป",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "mask",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "occult",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and a menacing mask; no explicit violence or nudity.",
+  "description": "A dark poster features a person wearing an ornate, menacing mask with horns and sharp teeth, set against a shadowy background."
+}

@@ -1,0 +1,37 @@
+{
+  "title_text": "RAZOR EATERS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BASED ON A SHOCKING TRUE STORY THE FILM THAT LAUNCHED A POLICE INVESTIGATION ORGANIZE TRAUMATIZE IMMORTALIZE",
+  "mood": [
+    "intense",
+    "gritty",
+    "thriller",
+    "crime",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the presence of a gun and intense imagery.",
+  "description": "A poster shows a group of people with a central figure wearing a shirt that reads 'RAZOR EATERS,' featuring a gun and intense expressions."
+}

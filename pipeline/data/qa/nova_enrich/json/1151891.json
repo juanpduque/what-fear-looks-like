@@ -1,0 +1,41 @@
+{
+  "title_text": "MARiC",
+  "credits_text": "BÜLENT ÇELİK - DUYGU YİLDİRİN - ERDEM DELİBAS - MİRAC KAYA - AZİZ DEMİR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "„ŞEYTAN VE KABILESİ, SİZİN ONLARI GÖREMEYECEĞINIZ YERDEN SİZİ GÖRÜRLER (A'RAF:39:27)”",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "haunting",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and a monstrous creature; no explicit violence or gore.",
+  "description": "A dark, intense poster features a menacing creature with glowing eyes and the bold red title 'MARiC' below."
+}

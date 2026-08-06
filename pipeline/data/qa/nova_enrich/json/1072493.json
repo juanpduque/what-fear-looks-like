@@ -1,0 +1,47 @@
+{
+  "title_text": "E-San Zombie",
+  "credits_text": "วิมบรดหนัง",
+  "languages": [
+    "en",
+    "th"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "zombie",
+    "fun",
+    "camp",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "zombie",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.75,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic zombie imagery and blood.",
+  "description": "A group of people dressed as zombies pose together with bloodstained faces, conveying a fun yet horror-themed atmosphere."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "ECHOED BLOOD",
+  "credits_text": "WRITTEN AND DIRECTED BY BRADLEY WHITFIELD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IT'LL BE FUN!",
+  "mood": [
+    "horror",
+    "thriller",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and implied violence.",
+  "description": "The poster features a stylized green, monstrous face with red eyes and the bold title 'ECHOED BLOOD' in distressed lettering."
+}

@@ -1,0 +1,51 @@
+{
+  "title_text": "ПОЛИЦЕЙСКИЙ УЧАСТОК С ПРИВЕДЕНИЯМИ",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "ru"
+  ],
+  "other_text": "ПЕРЕВОД НЕ УМИРАЕТ ОБА АЧЕВ",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery",
+    "supernatural",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.3,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild violent and occult imagery.",
+  "description": "A poster features a woman and a ghostly figure with skulls, a crow, and a dark building labeled 'POLICE,' suggesting a supernatural thriller."
+}

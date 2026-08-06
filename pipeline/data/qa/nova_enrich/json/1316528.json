@@ -1,0 +1,43 @@
+{
+  "title_text": "CALLOUS",
+  "credits_text": "A FILM BY WILHELM MÜLLER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "erotic",
+    "violent",
+    "dark",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "violence",
+    "sexual",
+    "blood"
+  ],
+  "moderation_notes": "Contains graphic violence and sexual themes.",
+  "description": "A dark poster featuring a person holding a weapon, with intense red and black colors and the title 'CALLOUS' prominently displayed."
+}

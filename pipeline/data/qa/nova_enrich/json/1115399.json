@@ -1,0 +1,40 @@
+{
+  "title_text": "飯絵事",
+  "credits_text": "TV版出材シリーズ",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "本影的女子だ。ダビド・ビデオ。最新の女子の失理を話す。とのテキストがあります。テレビジーのテキストもあります。",
+  "mood": [
+    "supernatural",
+    "haunting",
+    "mystery",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains supernatural themes and ghostly imagery.",
+  "description": "A DVD cover features a ghostly figure on a screen with Japanese text and traditional shrine elements in the background."
+}

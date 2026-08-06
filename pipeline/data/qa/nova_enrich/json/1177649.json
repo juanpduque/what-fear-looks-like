@@ -1,0 +1,39 @@
+{
+  "title_text": "FRIENDS FOREVER",
+  "credits_text": "DIRECTED BY THOMAS ANGILETTI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ALYSON FILMS PRESENTS",
+  "mood": [
+    "mysterious",
+    "eerie",
+    "isolated",
+    "haunting",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A rustic house surrounded by tall trees with a windmill nearby, depicted in a hand-drawn style on a weathered background."
+}

@@ -1,0 +1,47 @@
+{
+  "title_text": "RETURN TO THE DARK HOUSE OF MYSTERY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A LIVING NIGHTMARE!",
+  "mood": [
+    "horror",
+    "gothic",
+    "camp",
+    "dread",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A vintage-style poster features a green monster with a house in the background and a group of terrified people."
+}

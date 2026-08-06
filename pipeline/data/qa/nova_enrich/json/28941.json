@@ -1,0 +1,49 @@
+{
+  "title_text": "CHOPPING MALL",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Park Plaza Mall",
+  "mood": [
+    "horror",
+    "thriller",
+    "satirical",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including monstrous creatures and implied violence.",
+  "description": "A red shopping bag labeled 'Park Plaza Mall' is torn open, revealing a monstrous hand and face. The title 'CHOPPING MALL' is displayed in dripping red text below."
+}

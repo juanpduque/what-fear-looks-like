@@ -1,0 +1,41 @@
+{
+  "title_text": "EVIL IN THE TIME OF HEROES",
+  "credits_text": "BILLY ZANE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "fantasy",
+    "epic",
+    "mythic",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.3,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild violence depicted with sword and crowd.",
+  "description": "A man kneels holding a sword, with a bearded man in the background and a crowd of zombies. The title 'Evil in the Time of Heroes' is prominently displayed."
+}

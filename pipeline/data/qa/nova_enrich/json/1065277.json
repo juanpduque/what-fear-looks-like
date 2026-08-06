@@ -1,0 +1,43 @@
+{
+  "title_text": "MAD CATS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.1,
+  "person": 0.95,
+  "animal": 0.2,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains action violence and intense expressions.",
+  "description": "A dynamic poster features multiple characters in intense poses, with one holding a gun and another a large axe, set against a fiery background."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "TL-2 LA FELICIDAD ES UNA LEYENDA URBANA",
+  "credits_text": "Una comedia de: TETSUO LUMIERE",
+  "languages": [
+    "es"
+  ],
+  "other_text": "Él está dispuesto a vender su alma al Diablo para filmar su película de platillos voladores... pero el Diablo no acepta baratijas.",
+  "mood": [
+    "sci-fi",
+    "comedy",
+    "action",
+    "satirical",
+    "urban"
+  ],
+  "fear_labels": [
+    {
+      "name": "vehicle",
+      "conf": 0.8
+    },
+    {
+      "name": "explosion",
+      "conf": 0.7
+    },
+    {
+      "name": "cityscape",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster shows a cityscape with a flying saucer firing a beam at a monument, accompanied by an explosion. Text promotes a comedy by Tetsuo Lumiere."
+}

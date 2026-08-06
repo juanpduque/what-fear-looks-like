@@ -1,0 +1,38 @@
+{
+  "title_text": "Goosebumps",
+  "credits_text": "Phantom of the Auditorium",
+  "languages": [
+    "en"
+  ],
+  "other_text": "He's out to stop the show... for good!",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "suspenseful",
+    "theatrical"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a cloaked figure with a mask against a red curtain, with the title 'Goosebumps' and subtitle 'Phantom of the Auditorium.'"
+}

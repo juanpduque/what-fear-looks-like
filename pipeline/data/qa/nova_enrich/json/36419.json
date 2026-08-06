@@ -1,0 +1,42 @@
+{
+  "title_text": "AFTER.LIFE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "eerie",
+    "psychological",
+    "suspenseful",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "The poster includes mild suggestive imagery and a weapon, but no explicit violence or gore.",
+  "description": "The poster features four individuals in a dimly lit setting, with one holding a syringe and another lying on a table, evoking a gothic and suspenseful atmosphere."
+}

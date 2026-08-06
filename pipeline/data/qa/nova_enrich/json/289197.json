@@ -1,0 +1,41 @@
+{
+  "title_text": "NECROFILIA",
+  "credits_text": "",
+  "languages": [
+    "es"
+  ],
+  "other_text": "EL HORROR TIENE UNA NUEVA DIMENSIÓN\nREAL 3D",
+  "mood": [
+    "gothic",
+    "mystery",
+    "thriller",
+    "dark",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "knife",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and implied violence.",
+  "description": "A shadowy figure in a trench coat and hat holds a knife against a foggy, ghostly background with the title 'NECROFILIA' prominently displayed."
+}

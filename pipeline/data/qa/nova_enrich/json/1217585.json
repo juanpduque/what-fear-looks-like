@@ -1,0 +1,45 @@
+{
+  "title_text": "OUTBREAK",
+  "credits_text": "BILLY BURKE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IT STARTS AS AN INFECTION. IT ENDS IN DEVASTATION.",
+  "mood": [
+    "apocalyptic",
+    "tense",
+    "desperate",
+    "survival",
+    "dystopia"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.95
+    },
+    {
+      "name": "destruction",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.8,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and post-apocalyptic destruction.",
+  "description": "A man stands in a ruined city with a rifle and dog, facing a burning building under a stormy sky."
+}

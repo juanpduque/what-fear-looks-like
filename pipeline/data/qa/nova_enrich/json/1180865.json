@@ -1,0 +1,46 @@
+{
+  "title_text": "ARWAH",
+  "credits_text": "JOSHUA SUHERMAN, ANNETTE EDOARDA, IRSYADILLAH, NAURA HAKIM, SARAH BEATRIX, EGI FEEDLY, ROWIENA UMBOH, JULIAN KUNTO, NATASCHA GERMANIA, FERRY SALIM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BANGUN PAGI PICTURES & DRIAS FILM PRODUCTION PRESENTS FROM EXECUTIVE PRODUCER JONATHAN HM 3 JULY 2025",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "horror",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and a monstrous creature.",
+  "description": "A horror movie poster featuring a suspended, grotesque figure with a doll-like face against a dark red background, with bold red title text and cast credits."
+}

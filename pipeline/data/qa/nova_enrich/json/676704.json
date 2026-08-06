@@ -1,0 +1,42 @@
+{
+  "title_text": "KILL OR BE KILLED",
+  "credits_text": "AN INDEPENDENT TEEN HORROR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IT'S NOT OVER UNTIL EVERYONE'S CAUGHT",
+  "mood": [
+    "dread",
+    "intense",
+    "psychological",
+    "thriller",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and intense horror themes.",
+  "description": "A poster featuring a close-up of a terrified face split into sections, with bold red text reading \"KILL OR BE KILLED\" and a tagline below."
+}

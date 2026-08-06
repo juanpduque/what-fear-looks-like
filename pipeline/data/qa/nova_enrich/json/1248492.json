@@ -1,0 +1,41 @@
+{
+  "title_text": "ONE FOR THE ROAD",
+  "credits_text": "a short film by Kyle Moody",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "dread",
+    "gothic",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.3
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains horror elements and implied violence.",
+  "description": "A poster featuring a menacing blue-skinned creature with red eyes and sharp teeth, with bold red text reading 'ONE FOR THE ROAD' and a credit line below."
+}

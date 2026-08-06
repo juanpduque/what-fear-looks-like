@@ -1,0 +1,39 @@
+{
+  "title_text": "ファイントステーション",
+  "credits_text": "雑心罪な事事",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "DVD VIDEO",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild horror imagery and implied violence.",
+  "description": "A poster features a creepy, cracked-faced creature with long hair against a red background, with Japanese text overlay."
+}

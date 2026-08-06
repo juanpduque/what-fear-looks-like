@@ -1,0 +1,39 @@
+{
+  "title_text": "SALVAGE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "disturbing",
+    "psychological",
+    "tense",
+    "distorted",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "distortion",
+      "conf": 0.85
+    },
+    {
+      "name": "broken_glass",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a distorted face with broken glass overlay and the title 'SALVAGE' at the bottom."
+}

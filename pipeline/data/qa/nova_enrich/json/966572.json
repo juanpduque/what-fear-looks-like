@@ -1,0 +1,51 @@
+{
+  "title_text": "INSETO",
+  "credits_text": "ALEXANDRE ACCORSI VITOR FRAGA",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "other_text": "FAN TAIXI INDIA FANTASTIC 2023 OFFICIAL SELECTION KOLOBAN OFFICIAL SELECTION ROTERDE ORDEADE JULIUS PRUDICH PRODUÇÃO A MELINA DIREÇÃO DE FOTOGRAFIA FRANÇESCA CANTO DIREÇÃO DE ARTE MARCELO LIMA DESENHO DE SOM MARCELO LIMA MONTAGEM ASSUNÇÃO NEVES DE CASTO THALIA GONÇALVES ASSISTENTE DE DIREÇÃO MARCELO LIMA ASSISTENTE DE ROTEIRO MARCELO LIMA ASSISTENTE DE PRODUÇÃO MARCELO LIMA ASSISTENTE DE ELENCO MARCELO LIMA ASSISTENTE DE MAQUINARIA MARCELO LIMA ASSISTENTE DE ELENCO MARCELO LIMA",
+  "mood": [
+    "horrific",
+    "gothic",
+    "surreal",
+    "disturbing",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of a monstrous insect and blood, suitable for mature audiences.",
+  "description": "The poster features a large, grotesque insect with a human brain inside, set against a dark background with festival selections and credits."
+}

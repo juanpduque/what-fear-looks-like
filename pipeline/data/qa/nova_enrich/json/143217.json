@@ -1,0 +1,41 @@
+{
+  "title_text": "The Haunted Cop Shop",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "黄家店就是魔店：家店开心影映就是魔店",
+  "mood": [
+    "horror",
+    "comedy",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.4,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatter and a skull symbol, suggesting mild horror themes.",
+  "description": "Poster shows police officers with a haunted shop theme, featuring bold red Chinese characters and a dripping blood design."
+}

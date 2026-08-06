@@ -1,0 +1,45 @@
+{
+  "title_text": "",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "M",
+  "mood": [
+    "post-apocalyptic",
+    "hopeful",
+    "desolate",
+    "journey",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "crow",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "explosion",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.8,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild post-apocalyptic violence imagery.",
+  "description": "Two figures walk along train tracks towards a bright light amidst a ruined city, with birds flying overhead and shadowy silhouettes in the background."
+}

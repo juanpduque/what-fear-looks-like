@@ -1,0 +1,33 @@
+{
+  "title_text": "ELLIOT",
+  "credits_text": "A FILM BY CRAIG JACOBSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "sci-fi",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A stylized poster features a dramatic silhouette of a person holding a weapon against a dark background, with bold red text reading 'ELLIOT' and 'A FILM BY CRAIG JACOBSON.'"
+}

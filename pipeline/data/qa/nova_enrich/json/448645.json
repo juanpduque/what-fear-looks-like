@@ -1,0 +1,38 @@
+{
+  "title_text": "Nightmare from Snake",
+  "credits_text": "KAY HOI WONG HUI",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "鸡龙下吃人",
+  "mood": [
+    "erotic",
+    "horror",
+    "camp",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.95,
+  "blood_gore": 0.1,
+  "violence": 0.3,
+  "sexual_content": 0.7,
+  "sensitive": [
+    "sexual",
+    "nudity"
+  ],
+  "moderation_notes": "Contains partial nudity and suggestive imagery.",
+  "description": "Movie poster features a large snake-like creature and three individuals in a dramatic, horror-themed setting."
+}

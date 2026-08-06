@@ -1,0 +1,38 @@
+{
+  "title_text": "MAN-HORSE",
+  "credits_text": "A KIERAN PERSAUD FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "surreal",
+    "dark",
+    "disturbing",
+    "camp",
+    "quirky"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.9,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster includes graphic imagery of blood and a disturbing silhouette, suggesting potential violence and gore.",
+  "description": "A stylized poster features a silhouette of a man with a horse's head holding an axe against a red background with a large sun."
+}

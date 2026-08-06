@@ -1,0 +1,46 @@
+{
+  "title_text": "AMICUS HOUSE OF HORROR",
+  "credits_text": "A HISTORY OF ENGLAND'S GROUNDBREAKING STUDIO OF TERROR!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "camp",
+    "terrifying",
+    "classic",
+    "macabre"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.5,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild violent imagery and gory elements typical of horror genre.",
+  "description": "Poster features multiple characters in a horror theme, including a central monstrous figure and a tagline about a groundbreaking studio of terror."
+}

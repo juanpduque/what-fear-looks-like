@@ -1,0 +1,46 @@
+{
+  "title_text": "APOCALIPZE",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "other_text": "NINGUÊM PODE PARAR O FIM DO MUNDO",
+  "mood": [
+    "apocalyptic",
+    "dystopic",
+    "survival",
+    "post-apocalyptic",
+    "tense"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "gas_mask",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and post-apocalyptic themes.",
+  "description": "A poster featuring a gas mask with a reflective surface showing silhouettes of people in a red-lit environment, with bold title text and a Portuguese tagline."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "ANCIENT EVIL: Moon's Blood",
+  "credits_text": "BJ WHIMPEY KYMBERLY COPPARD SHAWN GORDON MICHAEL RATHBURN and RYAN MCDONALD as DETECTIVE CHAZ",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Fear...isn't the only thing he can smell.",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "blood",
+    "monster"
+  ],
+  "moderation_notes": "Contains graphic horror elements including monstrous creatures and implied violence.",
+  "description": "A dark poster features a menacing creature with an open mouth and the title 'Ancient Evil: Moon's Blood' prominently displayed."
+}

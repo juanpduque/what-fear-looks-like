@@ -1,0 +1,47 @@
+{
+  "title_text": "下底的室子",
+  "credits_text": "2016.3.11 中国大市小市小市商业商会",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "主应容包 3届影片",
+  "mood": [
+    "gothic",
+    "eerie",
+    "psychological",
+    "supernatural",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild violent imagery and occult themes.",
+  "description": "A woman lies in bed with a ghostly figure nearby; text and eerie visuals suggest a supernatural horror theme."
+}

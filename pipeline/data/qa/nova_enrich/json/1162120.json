@@ -1,0 +1,46 @@
+{
+  "title_text": "VICIO",
+  "credits_text": "Una llamada que despertará leones\n\nDirector: Álvaro Paramo\n\nCast: Álvaro Paramo, Ludmila Arrabato, Bel-Oreste, Mimo, Raf, Brenda, Ringo, Taka\n\nProductor: Fakin\n\nProducción: Vicio",
+  "languages": [
+    "es"
+  ],
+  "other_text": "edición: Álvaro Paramo\n\nNarrador: Álvaro Paramo\n\nMásica: Manuel Gámez\n\nMaquillaje: Olvia Lázaro Bérreo",
+  "mood": [
+    "horror",
+    "thriller",
+    "intense",
+    "disturbing",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "The poster features a group of intense faces with a central title \"VICIO\" and tagline in Spanish, suggesting a horror or thriller theme."
+}

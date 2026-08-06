@@ -1,0 +1,44 @@
+{
+  "title_text": "ZIMBLES",
+  "credits_text": "MICHEL KUNZE STEFAN PIECZYK ROBERT LORENZ KATHI LORENZ JULIAN ARISO FRANZISKA BOCKLUY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Leider haben wir den Film nicht gesehen... er ist zu Explizit. Kurt und Kollege",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "mask",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A masked figure holds a weapon against a dark background, with bold red text and credits overlaying the image."
+}

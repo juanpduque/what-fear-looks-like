@@ -1,0 +1,44 @@
+{
+  "title_text": "山田さん",
+  "credits_text": "製作：東映",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "山田さん",
+  "mood": [
+    "camp",
+    "fantasy",
+    "comedy",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A vibrant poster featuring a diverse cast of characters, including monsters and humans, with bold Japanese text and a whimsical, fantastical atmosphere."
+}

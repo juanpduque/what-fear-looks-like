@@ -1,0 +1,45 @@
+{
+  "title_text": "ДОМОЙ!",
+  "credits_text": "ян Цапник Алиса Мазурина Юлия Авт",
+  "languages": [
+    "ru"
+  ],
+  "other_text": "ЧТО ОПАСНЕЕ: ВИРУС ИЛИ СЕМЬЯ? фильм Ольги Гедич",
+  "mood": [
+    "suspense",
+    "family",
+    "holiday",
+    "mystery",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "family",
+      "conf": 0.8
+    },
+    {
+      "name": "holiday",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A poster features three individuals in a snowy setting with a house in the background, promoting a film titled 'Home!' with a tagline questioning virus versus family dangers."
+}

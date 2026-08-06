@@ -1,0 +1,45 @@
+{
+  "title_text": "DEADLY ENDINGS",
+  "credits_text": "RICHARD HARLOST'S",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A HORROR ANTHOLOGY",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "crowd",
+      "conf": 0.75
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.8,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and occult themes.",
+  "description": "A horror anthology poster featuring multiple characters, including a central demonic figure, surrounded by skulls and eerie faces."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "ZOMBACTER",
+  "credits_text": "DEATH SPIRAL PRODUCTIONS PRESENTS\n\nDEATH SPIRAL PRODUCTIONS\n\nA FILM BY DEAN SEAR DIEBERG\n\nSTARRING ERIC CRICKY BROOK VAN FLEW\n\nCREDITS: STEVE BORSCH, MIKE WALTERS, KAREN PFEIFFER, JENNIFER RUTH, ALISON PRATT, PETER ARTHUR GUY\n\nSTARRING: STEVE BORSCH AND GINGER HOUSE III\n\nCOMING SOON\n\nWRITER/DIRECTOR: DEAN SEAR DIEBERG\n\nPRODUCER: RITA DENNA GREEN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SOMETHING NEW IS TOP OF THE FOOD CHAIN\n\nCENTER CITY CONTAGION",
+  "mood": [
+    "horror",
+    "thriller",
+    "zombie",
+    "suspense",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster for the horror film 'Zombacter' shows a woman holding a gun, facing a zombie-like figure with blood on his face."
+}

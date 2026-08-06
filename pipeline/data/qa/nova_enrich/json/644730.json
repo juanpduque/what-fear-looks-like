@@ -1,0 +1,50 @@
+{
+  "title_text": "RESTRICTED AREA",
+  "credits_text": "RANDY WAYNE ROSS BRITZ SHAWN C. PHILLIPS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THIS IS A DEAD END",
+  "mood": [
+    "dread",
+    "horror",
+    "mystery",
+    "suspense",
+    "forest"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "tent",
+      "conf": 0.85
+    },
+    {
+      "name": "sign",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and implied violence.",
+  "description": "A horror poster shows a dark forest with a tent, a shadowy figure, and a sign reading 'This is a Dead End,' with eerie eyes in the background."
+}

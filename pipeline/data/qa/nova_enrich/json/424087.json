@@ -1,0 +1,45 @@
+{
+  "title_text": "LOS DEMONIOS DEL DESIERTO",
+  "credits_text": "MARIO ALMADA, LINA SANTOS, FERNANDO ALMADA, ALEJANDRO RÚIZ, SERGIO BUSTAMANTE",
+  "languages": [
+    "es"
+  ],
+  "other_text": "CINEMATOGRAFICA MONHOLEZ S.A. DE C.V.",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "A vintage horror poster featuring two men with intense expressions, surrounded by shadowy figures and flames, suggesting a demonic or occult theme."
+}

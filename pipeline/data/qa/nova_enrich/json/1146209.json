@@ -1,0 +1,41 @@
+{
+  "title_text": "",
+  "credits_text": "間強の主でに女は験う",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and a monstrous face, indicating potential violence and horror themes.",
+  "description": "A poster featuring a monstrous, blood-stained face with an open mouth and three frightened individuals, suggesting a horror theme."
+}

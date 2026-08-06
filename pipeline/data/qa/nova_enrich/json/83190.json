@@ -1,0 +1,42 @@
+{
+  "title_text": "DEAD BALL",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "GRAB YOUR BAT. IT'S TIME TO PLAY BALL!",
+  "mood": [
+    "action",
+    "sci-fi",
+    "thriller",
+    "post-apocalyptic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "robot",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.4,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "Contains mild sexual suggestiveness and implied violence.",
+  "description": "A poster features three characters in a fiery, post-apocalyptic setting with a large robot in the background, promoting the movie 'Dead Ball.'"
+}

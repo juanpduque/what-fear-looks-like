@@ -1,0 +1,41 @@
+{
+  "title_text": "ALTERA",
+  "credits_text": "EDOUARD MONTOUTE JONATHAN GENET AYMERIC FOUGERON",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "other_text": "POUR CELUI QUI N'EST PAS MORT, ET QUI A JAMAIS DORT, JE TROUVERAI LES TROIS PROCHAINS",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and a monstrous face, suggesting intense horror themes.",
+  "description": "A dark poster features a central, monstrous face emerging from a crack, with red blood-like substance dripping, set against a deep blue background."
+}

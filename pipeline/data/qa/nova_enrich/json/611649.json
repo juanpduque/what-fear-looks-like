@@ -1,0 +1,43 @@
+{
+  "title_text": "MISTERIO DE LA NOCHE",
+  "credits_text": "MYSTERY OF THE NIGHT",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "mystery",
+    "dark",
+    "haunting",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "dark",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and a distressed facial expression, suggesting potential violence.",
+  "description": "A dark, close-up image of a distressed face with visible blood, overlaid with the title 'MISTERIO DE LA NOCHE' and subtitle 'MYSTERY OF THE NIGHT.'"
+}

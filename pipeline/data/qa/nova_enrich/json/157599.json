@@ -1,0 +1,37 @@
+{
+  "title_text": "KILLING OBSESSION",
+  "credits_text": "JOHN SAVAGE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ONCE HE STARTED HE JUST COULDN'T STOP.",
+  "mood": [
+    "thriller",
+    "psychological",
+    "intense",
+    "disturbing",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a knife; no explicit gore or nudity.",
+  "description": "A dramatic poster features a close-up of a screaming face and a man with intense eyes, with bold red and white text reading 'KILLING OBSESSION' and 'JOHN SAVAGE.'"
+}

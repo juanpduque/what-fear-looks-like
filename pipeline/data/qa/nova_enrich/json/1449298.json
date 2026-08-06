@@ -1,0 +1,43 @@
+{
+  "title_text": "LA MALDICION DE KNOCHE",
+  "credits_text": "EN EL ÁVILA HAY MUCHOS MISTERIOS\nUN FILM DE EDUARDO A. RIVAS\nESCRITA Y DIRIGIDA POR EDUARDO A. RIVAS PRODUCCIÓN EJECUTIVA EDUARDO A. RIVAS\nPRODUCIDA POR EDUARDO A. RIVAS VLADIMIR QUINTERO DIRECCIÓN DE FOTOGRAFÍA MARIO RAMÍREZ\nMÚSICA PABLO MARTÍN EDICIÓN EDUARDO A. RIVAS",
+  "languages": [
+    "es"
+  ],
+  "other_text": "LOUIS LARRUA, ESYER VELASCO, GÉNESIS PARRA, SABRINA DEVIEZ, GUILLERMO FLORES, SAMUEL RIERA",
+  "mood": [
+    "mystery",
+    "thriller",
+    "dark",
+    "suspense",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, moody poster features six intense faces with a crumbling wall in the background, titled \"La Maldición de Knoche\" by Eduardo A. Rivas."
+}

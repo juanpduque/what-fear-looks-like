@@ -1,0 +1,37 @@
+{
+  "title_text": "Cube Zombies",
+  "credits_text": "A SHORT FILM BY KEVIN CORCORAN\nSusie Anderson, Sam Caggula, Jim Haigney, Brian Smith, David Updike",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Some nights at the office get pretty weird.",
+  "mood": [
+    "horror",
+    "thriller",
+    "sci-fi",
+    "office",
+    "zombie"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "Poster shows three individuals in an office setting with a gun and the title 'Cube Zombies,' suggesting a horror theme."
+}

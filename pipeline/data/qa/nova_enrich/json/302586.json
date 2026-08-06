@@ -1,0 +1,45 @@
+{
+  "title_text": "HINCKLEY'S DROP",
+  "credits_text": "MORGAN FLYNN ALISON MORSE DAN VOLLER DAN HALL RAY HARTLEY HINCKLEY'S DROP NICKY VINCENT ALICE FROST MICHAEL CAPPELLAN DAN HALL RAY HARTLEY JOE ROTHES DAN VOLLER RUTH RORILLA GORILLA NEL VOLLER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A HAUNTING DESCENT INTO TERROR",
+  "mood": [
+    "dread",
+    "gothic",
+    "suspense",
+    "terror",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "haunting",
+      "conf": 0.9
+    },
+    {
+      "name": "terror",
+      "conf": 0.85
+    },
+    {
+      "name": "cliff",
+      "conf": 0.75
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence through the man's intense expression and weapon.",
+  "description": "A man holds a gun on a cliff overlooking the ocean, with a haunted house in the background. The poster features a dramatic, suspenseful tone."
+}

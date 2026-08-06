@@ -1,0 +1,46 @@
+{
+  "title_text": "METELETSA",
+  "credits_text": "WINTER OF THE DEAD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "RUSSIAN ZOMBIE - SENSELESS AND MERCILESS",
+  "mood": [
+    "dread",
+    "apocalyptic",
+    "survival",
+    "horror",
+    "despair"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A group of survivors navigate a zombie apocalypse in a bleak, snowy landscape, with a dark and ominous atmosphere."
+}

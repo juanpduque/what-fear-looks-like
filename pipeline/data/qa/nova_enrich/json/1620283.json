@@ -1,0 +1,46 @@
+{
+  "title_text": "AfterSchool Shadow",
+  "credits_text": "成美結の平校生",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "少女はまた得らない。少女の想が、想謝だということ。 あの女のお家はどこなんだう？",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "supernatural",
+    "teen"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and mild horror imagery.",
+  "description": "A poster featuring intense faces and ghostly imagery, promoting a Japanese horror film titled 'AfterSchool Shadow' with bilingual text."
+}

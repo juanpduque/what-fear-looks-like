@@ -1,0 +1,42 @@
+{
+  "title_text": "THE HOUSE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "VICTIM AFTER VICTIM HAS ENTERED...",
+  "mood": [
+    "dread",
+    "gothic",
+    "haunting",
+    "mystery",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild suggestions of violence and blood.",
+  "description": "A dark, eerie house stands prominently in the foreground with a haunting close-up of a face in the background, suggesting a horror theme."
+}

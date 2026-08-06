@@ -1,0 +1,49 @@
+{
+  "title_text": "MANGUE NEGRO",
+  "credits_text": "UM FILME DE ROBERTO AGÃO",
+  "languages": [
+    "pt"
+  ],
+  "other_text": "A DECOMPOSIÇÃO É O INEVITÁVEL",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.75
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster shows a decaying house with a group of zombie-like figures, one holding an axe, evoking a horror atmosphere."
+}

@@ -1,0 +1,4 @@
+2026-08-05 18:17:25 start n_todo=1 done=0 workers=1 min_interval=0.2s save_every=1 flush_seconds=30.0 model=us.amazon.nova-2-lite-v1:0 mode=direct region=us-west-2 out=/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/nova_enrich/nova_enrich.csv
+2026-08-05 18:17:28 checkpoint flushed ok_batch=1 ok_run=1 → nova_enrich.csv
+2026-08-05 18:17:28 [1/1] id=4230 status=ok ok=1 err=0 rate=0.43/s eta=0.00h desc='Two men in dark uniforms face each other in a tense confront'
+2026-08-05 18:17:28 LISTO ok=1 err=0 elapsed=0.0m → /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/nova_enrich/nova_enrich.csv

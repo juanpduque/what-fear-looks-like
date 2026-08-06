@@ -1,0 +1,44 @@
+{
+  "title_text": "CODENAME: YIN / YANG",
+  "credits_text": "BOBBLE PRODUCTIONS PRÆSENTERER: EN PENSTOF / ANDERSEN FILM. PRODUCERET AF: BO MØRCK PENSTOF OG HENRIK ANDERSEN. MED: LINE PENSTOF, SABINE LOURING, BO MØRCK PENSTOF, ANDERS V. E. ERIKSEN, MF. MUSIK: DENNIS HANSEN. SPECIAL EFFECTS: AMOS TX & JAKOB TOLSTRUP. SKREVET OG INSTRUEERT AF: BO MØRCK PENSTOF & HENRIK ANDERSEN.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THERE'S SOMETHING ROTTEN IN THE STATE OF DENMARK...",
+  "mood": [
+    "action",
+    "thriller",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.8
+    },
+    {
+      "name": "knife",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "crowd",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "Poster features two women holding weapons, one with a rifle and the other with a sword, against a backdrop of a crowd and blood splatters."
+}

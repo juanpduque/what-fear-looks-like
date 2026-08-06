@@ -1,0 +1,46 @@
+{
+  "title_text": "PORKCHOP",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PARTYING, MAYHEM AND GORE...80s STYLE\nIT'S STILL NOT SAFE TO GO BACK IN THE WOODS",
+  "mood": [
+    "violent",
+    "gruesome",
+    "horror",
+    "dark",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 0.0,
+  "animal": 0.8,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore imagery.",
+  "description": "A poster features a monstrous pig-like creature holding a chainsaw in a forest setting, with bold red text and a warning tagline."
+}

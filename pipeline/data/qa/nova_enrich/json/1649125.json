@@ -1,0 +1,45 @@
+{
+  "title_text": "MY NEIGHBOR IS A WITCH",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SCHOOL BUS",
+  "mood": [
+    "supernatural",
+    "suspense",
+    "teen",
+    "horror",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and mild suspenseful imagery.",
+  "description": "Poster shows a school bus with four teens inside, and two mysterious figures behind them in a dark forest setting."
+}

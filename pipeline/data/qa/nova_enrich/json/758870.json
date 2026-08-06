@@ -1,0 +1,41 @@
+{
+  "title_text": "13往生",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "特急殺人鬼",
+  "mood": [
+    "horrific",
+    "gory",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.95
+    },
+    {
+      "name": "gore",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.95,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains graphic violence and nudity.",
+  "description": "A poster shows a graphic image of a mutilated torso with severe wounds and blood, accompanied by Japanese text."
+}

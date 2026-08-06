@@ -1,0 +1,45 @@
+{
+  "title_text": "MONSTERS CRASH THE PAJAMA PARTY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WE DARE YOU TO SIT THRU IT ALL! HORROR SHOW ALIVE! HORRIFYING! BLOOD CURLING! BEWARE! THEY MIGHT GET YOU! REAL GONE! IT IS TOPS! SPOOK SHOW SPECTACULAR",
+  "mood": [
+    "camp",
+    "horror",
+    "spooky",
+    "entertaining",
+    "retro"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "Vintage horror poster featuring monsters, ghosts, and bold red text advertising a spooky show."
+}

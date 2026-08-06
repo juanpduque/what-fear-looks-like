@@ -1,0 +1,42 @@
+{
+  "title_text": "THE DAY OF THE DEAD",
+  "credits_text": "A RICARDO ISLAS FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THEY ALWAYS COME BACK ON THEIR DAY",
+  "mood": [
+    "dread",
+    "horror",
+    "gothic",
+    "intense",
+    "terrifying"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "Poster features three terrified individuals with blood on their faces, with intense expressions and dramatic text overlay."
+}

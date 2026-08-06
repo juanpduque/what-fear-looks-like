@@ -1,0 +1,44 @@
+{
+  "title_text": "ANOTHER WOLFCOP",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BOOZE 'N' BOOBS",
+  "mood": [
+    "action",
+    "comedy",
+    "surreal",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent imagery and suggestive elements.",
+  "description": "The poster features a chaotic scene with a central wolf-like character holding guns, surrounded by armed individuals amidst flames and destruction."
+}

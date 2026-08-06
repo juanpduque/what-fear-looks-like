@@ -1,0 +1,41 @@
+{
+  "title_text": "LE TRAIN FANTÔME",
+  "credits_text": "THE GHOST TRAIN",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "other_text": "RAUL COLIN",
+  "mood": [
+    "mysterious",
+    "surreal",
+    "haunting",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "train",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A stylized poster features a silhouette of a conductor beside a train, with muted colors and a haunting atmosphere."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "SNOW VALLEY",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ARE YOU HERE TO SAVE ME?",
+  "mood": [
+    "tense",
+    "mysterious",
+    "suspenseful",
+    "cold",
+    "isolated"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "gun",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A group of people stand in a snowy landscape with a distant house, one holding a gun, and a shadowy figure in the foreground."
+}

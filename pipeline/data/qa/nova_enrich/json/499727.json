@@ -1,0 +1,46 @@
+{
+  "title_text": "CHUDAIL NO. 1",
+  "credits_text": "WELL MAKERS FILMS\nPRODUCED BY CHANDU SHARMA & M.M.R.\nMUSIC GULAM ALI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ULTRA",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "camp",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and blood.",
+  "description": "A vibrant poster features intense facial expressions and bold text, promoting a horror film titled 'Chudail No. 1' with dramatic, eerie visuals."
+}

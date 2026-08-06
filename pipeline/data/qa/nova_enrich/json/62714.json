@@ -1,0 +1,46 @@
+{
+  "title_text": "THE ZOMBIE FARM",
+  "credits_text": "JOHANNA CETANO ROWANSKY MONIZAL KUDTAN ZUMBA MONTELLOS RHINO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SOME THINGS ARE WORSE THAN DEATH",
+  "mood": [
+    "dread",
+    "horror",
+    "gritty",
+    "intense",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore, suitable for mature audiences.",
+  "description": "A man with zombie-like features peers through a wooden barrier, with the title \"The Zombie Farm\" prominently displayed above."
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "DEADHOUSE",
+  "credits_text": "Pablo Macho Maysonet IV'S",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WIDESCREEN, Bringing back the BLOODSHED! UNRATED",
+  "mood": [
+    "horror",
+    "gothic",
+    "violent",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "knife",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; intended for mature audiences.",
+  "description": "A horror poster featuring a monstrous face with a skull design holding a bloody knife, with bold title text and tagline."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "実録 刺客",
+  "credits_text": "一流配役 アクション",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "実録 刺客!!",
+  "mood": [
+    "violent",
+    "thriller",
+    "crime",
+    "action",
+    "drama"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and graphic imagery.",
+  "description": "A dark, gritty poster featuring a close-up of a man's face and a shadowy figure, with bold red Japanese text and a DVD logo."
+}

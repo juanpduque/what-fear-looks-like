@@ -1,0 +1,44 @@
+{
+  "title_text": "",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "悪魔のいけにえ",
+  "mood": [
+    "surreal",
+    "gothic",
+    "dread",
+    "fantasy"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.1,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and monstrous creatures.",
+  "description": "A dramatic poster features a man surrounded by surreal, monstrous creatures and dark, eerie imagery, evoking a gothic and occult atmosphere."
+}

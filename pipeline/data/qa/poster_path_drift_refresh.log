@@ -1,0 +1,92 @@
+mode=api check=36460 corpus_with_path=36460 missing_path=1476
+500/36460 42.7/s
+1000/36460 43.2/s
+1500/36460 42.6/s
+2000/36460 41.8/s
+2500/36460 41.6/s
+3000/36460 41.3/s
+3500/36460 41.1/s
+4000/36460 40.7/s
+4500/36460 40.3/s
+5000/36460 40.4/s
+5500/36460 40.3/s
+6000/36460 40.2/s
+6500/36460 39.7/s
+7000/36460 39.2/s
+7500/36460 38.7/s
+8000/36460 38.5/s
+8500/36460 38.1/s
+9000/36460 37.8/s
+9500/36460 37.7/s
+10000/36460 37.5/s
+10500/36460 37.0/s
+11000/36460 36.7/s
+11500/36460 36.6/s
+12000/36460 36.6/s
+12500/36460 36.5/s
+13000/36460 36.4/s
+13500/36460 36.4/s
+14000/36460 36.4/s
+14500/36460 36.4/s
+15000/36460 36.3/s
+15500/36460 36.3/s
+16000/36460 36.3/s
+16500/36460 36.2/s
+17000/36460 36.2/s
+17500/36460 36.1/s
+18000/36460 36.0/s
+18500/36460 36.0/s
+19000/36460 35.9/s
+19500/36460 35.9/s
+20000/36460 35.9/s
+20500/36460 35.7/s
+21000/36460 35.7/s
+21500/36460 35.6/s
+22000/36460 35.6/s
+22500/36460 35.6/s
+23000/36460 35.6/s
+23500/36460 35.6/s
+24000/36460 35.6/s
+24500/36460 35.6/s
+25000/36460 35.6/s
+25500/36460 35.6/s
+26000/36460 35.5/s
+26500/36460 35.4/s
+27000/36460 35.4/s
+27500/36460 35.5/s
+28000/36460 35.4/s
+28500/36460 35.4/s
+29000/36460 35.4/s
+29500/36460 35.3/s
+30000/36460 35.3/s
+30500/36460 35.3/s
+31000/36460 35.3/s
+31500/36460 35.3/s
+32000/36460 35.4/s
+32500/36460 35.4/s
+33000/36460 35.3/s
+33500/36460 35.3/s
+34000/36460 35.3/s
+34500/36460 35.3/s
+35000/36460 35.4/s
+35500/36460 35.5/s
+36000/36460 35.5/s
+36460/36460 35.6/s
+=== FINAL ===
+checked=36460 match=35787 mismatch=38 errors=635
+mismatch among ok: 38/35825 = 0.11%
+extrapolated on 36,460 with path: ~39
+also missing frozen path in horror_movies: 1476
+wrote /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/poster_path_drift.csv
+  214 Saw III (2006) /9pWlgGYoPb0QPOsQTjfDmwMdBc6.jpg -> /4iO9n24Rb10peXV0JH2EldIOrAp.jpg
+  24740 The Entity (1982) /e6fsd6zSJDPaFP4xWAtMkHJOkXU.jpg -> /k1cJOFM644cS3qzpZMECZnrVRMt.jpg
+  26925 The Man They Could Not Hang (1939) /ml0Tp8tATpvLnPVZ4ibP1mwNxOb.jpg -> /oR03TUMEd5bnnAMnOEGcVoLcGSN.jpg
+  27825 Bad Girls from Mars (1990) /SWH6Hqu2hPaBBnIHtHbfTCsQQ0.jpg -> /zte0GjaLFDcINqccRN0OKhn3vTZ.jpg
+  56026 The Rising Dead (2007) /n63gjhS6yaBCvj6yWWq4IAvnwRe.jpg -> /5Zlz9TRc7hjyyUzO1qI6x4xyplf.jpg
+  63512 Murders in the Rue Morgue (1971) /jsOsvrO0Xd1Ir79C2cHDl6X17xU.jpg -> /ngM9dFQ7Y5F3WuPHpHylYdpMj3u.jpg
+  74321 Planet of the Vampire Women (2011) /nK5za8AVqW4NOwrr7hzKvTfYZtT.jpg -> /mRnL3TgBPb8JvlPtCL8iUahLEvv.jpg
+  82972 Curio (2010) /pFupZQWYGKBaMg9dZhcfj88BZ4A.jpg -> /fLD3a9bc24ioDcPb2VVwat9HO00.jpg
+  83413 Blood Freak (1972) /8RT4fMJNidP8mBoM4j3lVubpR6z.jpg -> /yxEtPupFdVMLPPgt8NMpRE7mwmQ.jpg
+  203039 Snake Club: Revenge of the Snake Woman (2013) /tELhDQGweL3B1KBJMuZyqpwreET.jpg -> /gGSVmsXoNrll8nqIg0554jfYRx0.jpg
+  205769 Flesh Eaters from Outer Space (1989) /iuD4RXlpWT7xc1N9KzZgStE3DcJ.jpg -> /gvYdhHnjPWQ7KnkSAh4UW7q4ml2.jpg
+  288588 Valerie on the Stairs (2006) /idb6B3qe5x1XtNifjB62nuC1Ser.jpg -> /aCSQvxWLs0KTPYYP8ocQoKGVH1Z.jpg

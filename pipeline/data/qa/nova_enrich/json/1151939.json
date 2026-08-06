@@ -1,0 +1,40 @@
+{
+  "title_text": "GASP",
+  "credits_text": "NERGIS ODZAK SERCAN BOZTEPE BEYZA NUR ÖNİŞPİR MERT ERKAYA BURAK ALOĞLU TUĞÇE DEMİR SES TUNCAY AYVAZ İŞİK SEHİ YILDIRAY ALKİN SANAT YÖNETMEN HALİDUN AKSKAL GORUNTU YÖNETMEN MALİK EJDER SENTÜRK EDİTÖRMOHSEN RABİEİ MAKAYI DERYA KARAMAN YATIRIMCI AMİR AMİRZA DEH UYGULAYICI YAPIMCI HAMDI BOR YAPIMCILER SHOHREH TAĞHİPOR-AMİR AMİRZA DEH SENARİST VE YÖNETMEN MOHSEN RABİEİ",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and a monstrous face.",
+  "description": "A poster featuring a menacing, blood-streaked face with intense eyes, overlaid with bold red text reading \"GASP\"."
+}

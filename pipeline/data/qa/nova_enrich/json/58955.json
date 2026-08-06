@@ -1,0 +1,46 @@
+{
+  "title_text": "AVIA VAMPIRE HUNTER",
+  "credits_text": "EVIL HAS SOMETHING TO FEAR.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DVD",
+  "mood": [
+    "gothic",
+    "horror",
+    "fantasy",
+    "action",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.1,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains horror themes and implied violence.",
+  "description": "A woman in red stands defiantly against a backdrop of monstrous creatures, holding a weapon, with bold title text overlay."
+}

@@ -1,0 +1,49 @@
+{
+  "title_text": "GMOD PARANORMAL",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "There are things in this world. we may not understand",
+  "mood": [
+    "mysterious",
+    "eerie",
+    "paranormal",
+    "suspenseful",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "night",
+      "conf": 0.95
+    },
+    {
+      "name": "text",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.8,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and paranormal themes.",
+  "description": "A poster shows three characters facing a large, menacing orange cat holding a chainsaw under a dark moonlit forest."
+}

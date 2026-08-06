@@ -1,0 +1,45 @@
+{
+  "title_text": "DEVIL'S DYNAMITE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "explosive",
+    "intense",
+    "adventure"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "explosion",
+      "conf": 0.8
+    },
+    {
+      "name": "helicopter",
+      "conf": 0.7
+    },
+    {
+      "name": "action",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains action-oriented violence and explosive scenes.",
+  "description": "A dramatic poster shows a helicopter crashing amidst explosions, with masked figures holding guns in a chaotic battle scene."
+}

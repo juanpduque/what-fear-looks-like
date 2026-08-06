@@ -1,0 +1,40 @@
+{
+  "title_text": "BLOODY EVIL",
+  "credits_text": "STARRING JAKE MEYERS, CHRIS SEVER FRED PERRY, EMILY BURR WRITTEN & DIRECTED BY CHRIS SEVER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.2,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster suggests themes of violence and gore due to its dark imagery and title.",
+  "description": "A dark poster features a masked figure with a skull design and bold red text reading 'BLOODY EVIL,' listing cast and director credits below."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "DAMA BRANCA",
+  "credits_text": "A FILM BY PANTA MOSLEH\nPK STUDIOS PRODUCTIONS\nJULIA REUNS, PANTA MOSLEH, COREY WOODS, KATE NICOLE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DON'T STOP HER CAT\nIF YOU STOP... DON'T GET OUT",
+  "mood": [
+    "thriller",
+    "suspense",
+    "dark",
+    "intense",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "vehicle",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster features a dark, gritty aesthetic with a central title and images of people in tense scenarios, suggesting a thriller or suspense film."
+}

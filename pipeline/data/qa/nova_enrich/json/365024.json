@@ -1,0 +1,37 @@
+{
+  "title_text": "HELLY HELL",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "dark",
+    "violent",
+    "dystopian",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense violent imagery and weapon depiction.",
+  "description": "A poster featuring a gloved hand holding a gun and rosary beads, with a desolate industrial background and bold red text reading 'HELLY HELL.'"
+}

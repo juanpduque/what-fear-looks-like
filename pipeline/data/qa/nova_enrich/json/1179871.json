@@ -1,0 +1,46 @@
+{
+  "title_text": "Start Young",
+  "credits_text": "A Film By Olaf Ittenbach\nBLACK HOLE FILMPRODUCTIONS & IN CIPHER PRESENT\nA FILM BY OLAF ITTENBACH\nARVED JUNGEIM WALTRAUT BORCHMANN JAYMES BUTLER DANIEL FAUST SARA AL ZHAIRI DIRECTOR OF PHOTOGRAPHY: CHRISTIAN KITSCHA BYK\nSPECIAL MAKEUP AND CREATURE EFFECTS: OLAF ITTENBACH SEX MAKEUP: STEFANIA RUSSO / FRANZISKA HAUTMANN CAFFER: SASCHA HOFFMANN\nSEX: CHRISTIAN BIERLING MUSIC: ANGELICA MILLER LOCATION MANAGER: DANIEL TRANKI EXECUTIVE PRODUCER: CHRISTIAN KITSCHA\nCO-PRODUCER: MIKO BRUNST / BJÖRN SCHABER / DEJO WEIGERT FILM WRITER PRODUCER DIRECTOR: OLAF ITTENBACH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "...Er verachtet euch alle",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "eerie",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.4,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "Contains implied violence and mild sexual references.",
+  "description": "A hooded figure holds a weapon in a foggy forest, with shadowy figures and a large face in the background."
+}

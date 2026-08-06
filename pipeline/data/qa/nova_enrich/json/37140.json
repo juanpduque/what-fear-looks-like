@@ -1,0 +1,42 @@
+{
+  "title_text": "naked",
+  "credits_text": "Sean Cis\nPaula Molins\nKassie Steiger",
+  "languages": [
+    "en"
+  ],
+  "other_text": "beneath the water\nlights, camera, murder.",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "A dark, red-tinted poster features a shadowy figure in a coffin-like frame with blood splatters and the title 'naked' prominently displayed."
+}

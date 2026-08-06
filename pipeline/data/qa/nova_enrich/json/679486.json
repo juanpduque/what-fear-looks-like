@@ -1,0 +1,35 @@
+{
+  "title_text": "Muertes Violenta",
+  "credits_text": "",
+  "languages": [
+    "es"
+  ],
+  "other_text": "UNA GRAN PELICULA DEL CINE MEXICANO",
+  "mood": [
+    "action",
+    "thriller",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "helicopter",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and implied violence.",
+  "description": "Vivid poster features two men with guns, a helicopter, and bold red text against a fiery background."
+}

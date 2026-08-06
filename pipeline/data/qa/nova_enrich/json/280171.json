@@ -1,0 +1,41 @@
+{
+  "title_text": "EAT ME!",
+  "credits_text": "JUN NAITO IVY HONG ELIZABETH LEE CHESLEY CALLOWAY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SOMETIMES YOU GET THE MUNCHIES... SOMETIMES THEY GET YOU! WARNING: This movie contains pot smoking, warm beer, undead hunky-panky radioactive brain basting, zombie bagging, flesh eating, blood drooling, and a heartbreaking testament to the human spirit. Also, some jokes.",
+  "mood": [
+    "horror",
+    "comedy",
+    "camp",
+    "grotesque"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "zombie",
+      "conf": 0.6
+    },
+    {
+      "name": "weapon",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, mild sexual references.",
+  "description": "Poster shows four individuals with guitars and an American flag, with bold red text reading 'EAT ME!' and a warning about graphic content."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "サムライドストリーム 4",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "大長影選店にすごいちゃんだけど世界に止まれた大小子や人だけの心正心心だけどいいように!!",
+  "mood": [
+    "dread",
+    "horror",
+    "violent",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster features a menacing creature with long black hair and a grotesque face, set against a red and white splattered background."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "PSYCHOMANTEUM",
+  "credits_text": "David Gibson Lisa Sposato Rebecca Hodgson Michael Donaldson A FILM BY DIRECTOR SAMUEL ARMSTRONG",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COMING SOON",
+  "mood": [
+    "gothic",
+    "surreal",
+    "eerie",
+    "haunting",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "gothic",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, eerie poster features a shadowy face in a mirror frame, with credits and a 'COMING SOON' tagline."
+}

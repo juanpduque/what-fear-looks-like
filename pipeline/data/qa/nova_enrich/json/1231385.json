@@ -1,0 +1,35 @@
+{
+  "title_text": "I SMELL A MOUSE",
+  "credits_text": "A FILM BY IITI YLI-HARJA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WRITTEN & DIRECTED BY: IITI YLI-HARJA\nSET DESIGN, CINEMATOGRAPHY & ANIMATION: IITI YLI-HARJA\nPEKKA HARKONEN EDITING: LYDIA MAKIPAA\nSOUND DESIGN: VILLE-MATTI KOSKINEN\nMUSIC: VILLE-MATTI KOSKINEN\nIITI YLI-HARJA GRAPHIC DESIGN: NOORA FEDERLEY\nPOST-PRODUCTION: TOAST PRODUCTION\nGONA SAARI / ILLUME OY\nFUNDING: FINNISH FILM FOUNDATION / EERO TAMMI\nAVEX / MIIKO PELTONEN IN COOPERATION WITH: YLE / SARI VOLANEN\nFEATURING: ABDIRAHMAN A BILE, RONJA STANLEY, PEKKA POUTA",
+  "mood": [
+    "creepy",
+    "disturbing",
+    "surreal",
+    "dark",
+    "anxious"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a creepy, distorted face holding a can labeled 'TURBO KILL 3000' with green smoke emanating from it."
+}

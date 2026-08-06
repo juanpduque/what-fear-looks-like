@@ -1,0 +1,36 @@
+{
+  "launched_at": "2026-08-05T19:52:49Z",
+  "instance_id": "i-0df34af493e304af7",
+  "public_ip": "54.196.54.152",
+  "instance_type": "c5.4xlarge",
+  "ami": "ami-052355af2a014bd2c",
+  "name_tag": "wflike-attrs-gap",
+  "bucket": "sagemaker-studio-a5572760",
+  "prefix": "wflike-attrs-gap",
+  "region": "us-east-1",
+  "iam_profile": "wflike-ec2-train",
+  "volume_gb": 100,
+  "n_todo": 27328,
+  "posters_csv_staged": "data/qa/vision_gap/pull/results/posters.csv",
+  "poster_src": "s3://sagemaker-studio-a5572760/wflike-community-72k/posters",
+  "vision_gap_posters": "s3://sagemaker-studio-a5572760/wflike-vision-gap/input/posters",
+  "pipelines": [
+    "attributes"
+  ],
+  "saliency_fix": "opencv-contrib + HoughLinesP reshape(-1,4) + defensive MSER/saliency unpack + smoke metrics",
+  "eta_note": "Attrs-only ~27k on c5.4xlarge: download ~15-30m + analyze ~2-4h (rough). Hough unpack TypeError fixed.",
+  "monitor": {
+    "progress": "aws s3 cp s3://sagemaker-studio-a5572760/wflike-attrs-gap/results/PROGRESS.json -",
+    "log": "aws s3 cp s3://sagemaker-studio-a5572760/wflike-attrs-gap/results/attrs_gap_aws.log -",
+    "ls": "aws s3 ls s3://sagemaker-studio-a5572760/wflike-attrs-gap/results/",
+    "gate": "aws s3 cp s3://sagemaker-studio-a5572760/wflike-attrs-gap/results/GATE.json -"
+  },
+  "protect_names": [
+    "wflike-imdb-posters",
+    "wflike-imdb-selenium",
+    "wflike-owlv2-backfill",
+    "wflike-community-72k",
+    "wflike-nova-enrich",
+    "wflike-vision-gap"
+  ]
+}

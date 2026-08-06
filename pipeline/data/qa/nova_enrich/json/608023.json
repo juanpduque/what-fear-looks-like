@@ -1,0 +1,41 @@
+{
+  "title_text": "STREET VIEW",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ステリートビュー",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "haunting",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "haunting",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild suggestions of violence and psychological distress.",
+  "description": "A dark, eerie poster features three distressed women in a confined space, with a close-up of a woman's face and the title 'STREET VIEW' prominently displayed."
+}

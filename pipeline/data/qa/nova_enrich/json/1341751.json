@@ -1,0 +1,42 @@
+{
+  "title_text": "UNLEASHED",
+  "credits_text": "a film by Darren Shapiro",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Some pets should never be let loose... BITE ME PRODUCTIONS PRESENTS",
+  "mood": [
+    "horror",
+    "thriller",
+    "erotic",
+    "camp",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.6,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "sexual",
+    "violence"
+  ],
+  "moderation_notes": "Contains mild sexual suggestiveness and implied violence.",
+  "description": "Movie poster shows a man and woman in an intimate pose with a large, menacing creature nearby. The title 'UNLEASHED' is prominently displayed."
+}

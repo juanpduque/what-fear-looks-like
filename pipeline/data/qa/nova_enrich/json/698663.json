@@ -1,0 +1,40 @@
+{
+  "title_text": "MASSACRE THE LEGEND OF PIGMAN",
+  "credits_text": "FEATURING MUSIC BY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HOLLAND RD",
+  "mood": [
+    "gothic",
+    "dread",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A poster shows a dark, eerie scene with a skull and a silhouette near a sign reading 'HOLLAND RD,' suggesting a horror theme."
+}

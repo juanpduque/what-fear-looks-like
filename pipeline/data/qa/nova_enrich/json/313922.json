@@ -1,0 +1,42 @@
+{
+  "title_text": "GREEN ROOM",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BAND MEMBER ONLY",
+  "mood": [
+    "tense",
+    "gritty",
+    "violent",
+    "claustrophobic",
+    "desperate"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, may be disturbing.",
+  "description": "A silhouette of a distressed person holding a large knife in a dimly lit, green-tinted room with a sign reading 'BAND MEMBER ONLY.'"
+}

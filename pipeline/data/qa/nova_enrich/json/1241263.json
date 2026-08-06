@@ -1,0 +1,39 @@
+{
+  "title_text": "Podèt",
+  "credits_text": "un film di Piero Galli\ncon: Kurys Vasco, Alessandro Noci, Alessandro Rampinelli, Andy Barba, Anna Manenti, Armando Vitolo, Davide L'Omino, Elisa Peroni, Fausto Bonomeiti, Michele Falschieri, Roberto Bianco, Sara Fiamme...",
+  "languages": [
+    "it"
+  ],
+  "other_text": "dal registro di Gay Holocaust, Monde Gabber e Danke schön Hitler...",
+  "mood": [
+    "dramatic",
+    "historical",
+    "political"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A poster shows a silhouette holding a large knife in front of a domed building, with bold red text and additional credits listed below."
+}

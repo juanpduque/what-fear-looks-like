@@ -1,0 +1,50 @@
+{
+  "title_text": "VS THE DEAD",
+  "credits_text": "A FILM BY PHIL PATTISON AND JEFF BECKMAN STARRING DAVE MONTOUR, JAMES BRIDGES, CHRIS WALICKI, BRETT HAWLEY WITH PHIL PATTISON, JEFF BECKMAN SPECIAL EFFECTS MAKEUP ARTIST DEN GARRIES PRODUCED BY RABIDOG FILMS WRITTEN AND DIRECTED BY PHIL PATTISON AND JEFF BECKMAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "RABIDOG FILMS PRESENTS",
+  "mood": [
+    "horror",
+    "zombie",
+    "thriller",
+    "intense",
+    "gory"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore, suitable for mature audiences.",
+  "description": "Poster features a dark hallway with zombies and a title 'VS THE DEAD,' highlighting horror and gore themes."
+}

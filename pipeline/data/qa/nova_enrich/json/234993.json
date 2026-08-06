@@ -1,0 +1,42 @@
+{
+  "title_text": "7TH DAY",
+  "credits_text": "DIR: WI FLYNN... STARRING: SAM GIEGEL, MICHAEL BRECHER, JOSH BASSINGER, DAY GIBB... PRODUCED BY: RACHEL KAZER, MARK LEVINE, JASON MARK COLLINSIVE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"YOU'LL NEED A LONG BATH TO WASH OFF ALL THE GORE IN THIS FILM... A SERIOUS TEST OF PALS FOR FANS OF TRUE CRIME\"",
+  "mood": [
+    "intense",
+    "psychological",
+    "thriller",
+    "disturbing",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; may be disturbing to some viewers.",
+  "description": "A dramatic poster features a man in sunglasses with bold red text reading \"7TH DAY\" and taglines about gore and true crime."
+}

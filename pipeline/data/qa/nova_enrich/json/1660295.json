@@ -1,0 +1,38 @@
+{
+  "title_text": "DANSE MACABRE",
+  "credits_text": "A FILM BY HISKO HULSING",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ANNE CY 2026 OFFICIAL SELECTION",
+  "mood": [
+    "gothic",
+    "dramatic",
+    "epic",
+    "somber"
+  ],
+  "fear_labels": [
+    {
+      "name": "crowd",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "dramatic",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic poster shows a grand structure with red curtains and a crowd of armored figures, evoking an epic and somber atmosphere."
+}

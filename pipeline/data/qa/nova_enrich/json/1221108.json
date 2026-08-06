@@ -1,0 +1,51 @@
+{
+  "title_text": "CAMP BLOOD",
+  "credits_text": "ANIMATED",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A NEW CHAPTER AND A NEW LEVEL OF HORROR",
+  "mood": [
+    "horror",
+    "thriller",
+    "camp",
+    "gothic",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.9,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "Poster features a group of people with a menacing clown holding a bloody knife, set against a forest backdrop with intense, dramatic lighting."
+}

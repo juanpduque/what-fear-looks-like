@@ -1,0 +1,42 @@
+{
+  "title_text": "BATTLE OF THE BONE",
+  "credits_text": "A GEORGE CLARKE FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"BLOODY KICK-ASS\" -GOREZONE\nTHE GREATEST IRISH MARTIAL ARTS ZOMBIE MOVIE EVER MADE! -MINE LEEDER IMPACT MAGAZINE\n18",
+  "mood": [
+    "violent",
+    "gruesome",
+    "action",
+    "horror",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "zombie",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.9,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore.",
+  "description": "Movie poster features a wounded person with exposed bones and severe injuries, set against a dark, red background with bold title text."
+}

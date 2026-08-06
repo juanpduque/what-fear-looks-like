@@ -1,0 +1,40 @@
+{
+  "title_text": "BLOOD WIDOW",
+  "credits_text": "STARRING DANIELLE LILLEY A JEREMIAH BUCKHALT FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DIE IN SILENCE",
+  "mood": [
+    "gothic",
+    "dread",
+    "intense",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "chains",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and dark themes.",
+  "description": "A masked figure in dark clothing holds two swords, standing amidst chains in an industrial setting."
+}

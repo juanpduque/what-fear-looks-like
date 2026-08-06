@@ -1,0 +1,46 @@
+{
+  "title_text": "EXPEDIENTE 212",
+  "credits_text": "ARCHIVO FANTASMA\n\nMARIAS ROLON, CANDELA SANDOVAL, TOMAS LANDEIRA, MATIAS MINO, JAZMIN ACUNA",
+  "languages": [
+    "es"
+  ],
+  "other_text": "ELLA LA VENDERA POR SUS MARAVILLOSOS ARTE, MIRA A ELLOS\n\nPROXIMAMENTE\n\nANU 3 Arte y cine\n\nEstreno Garaje Cultural de la universidad",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "haunting",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror elements and occult themes.",
+  "description": "A poster features two individuals in front of a haunted house with eerie lighting and text indicating a supernatural mystery."
+}

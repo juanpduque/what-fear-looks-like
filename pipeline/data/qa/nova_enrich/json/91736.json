@@ -1,0 +1,35 @@
+{
+  "title_text": "OCTAMAN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "camp",
+    "sci-fi"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "sexual"
+  ],
+  "moderation_notes": "Mild sexual content due to revealing clothing of the female character.",
+  "description": "A poster shows a monstrous green creature looming over a terrified woman holding a gun and a man with a rifle, set in a jungle-like environment."
+}

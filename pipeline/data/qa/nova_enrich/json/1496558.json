@@ -1,0 +1,40 @@
+{
+  "title_text": "CARNIV",
+  "credits_text": "LOONA ISTORE. ALICE TERMIN. POLINA MOSKALION. CLARA-MARIE KONTZ. ANNA GALONIER.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CHARLOTTE ZABORNY NOUR LAFOND",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood-like imagery.",
+  "description": "A dark red poster features a shadowy figure with hands raised, accompanied by bold, dripping text and names of contributors."
+}

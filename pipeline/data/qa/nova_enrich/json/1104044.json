@@ -1,0 +1,40 @@
+{
+  "title_text": "I SPILL YOUR CUTS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "VOTE",
+  "mood": [
+    "violent",
+    "satirical",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    },
+    {
+      "name": "political satire",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.4,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, intended as political satire.",
+  "description": "A poster shows two figures, one in a suit and the other masked, holding weapons amidst a cityscape with blood and a 'VOTE' sign."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "LYNCH MOB",
+  "credits_text": "\"If You See Only One Mafia, Cannibal, Zombie Horror Film This Year... Make Sure It's LYNCH MOB!\" \"They Used \"REAL Blood!\" - The New York Post\" Starring: ERIN DRAKE, JENNIFER L. HARRIS, MICHAEL C. REED, RICKY TUCKER Directed By: FRANK D. ROSSI Produced By: SCOTT J. CURTIS, JOHN GREENBERG, BRUCE D. ROSSI, CHARLIE D. ROSSI, SCOTT SIMMER Executive Producers: SCOTT SIMMER, SCOTT J. CURTIS, JOHN GREENBERG, BRUCE D. ROSSI, CHARLIE D. ROSSI, SCOTT SIMMER, FRANK D. ROSSI, ERIN DRAKE, JENNIFER L. HARRIS, MICHAEL C. REED, RICKY TUCKER, R.P. SMITH A First Run Features Production in Association with Sun Times, Inc. & R.P. SMITH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"REAL Blood!\" - The New York Post",
+  "mood": [
+    "violent",
+    "thriller",
+    "horror",
+    "camp",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "Poster features a woman holding a knife over a fallen man, with a sunset backdrop and text promoting the film \"LYNCH MOB\"."
+}

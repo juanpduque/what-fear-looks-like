@@ -1,0 +1,38 @@
+{
+  "title_text": "STALKER",
+  "credits_text": "A FILM BY DAVID CHOLEWA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EVIL HAS MANY FACES",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A close-up of a woman's face with intense eyes, overlaid with bold title text and a tagline, suggesting a psychological horror theme."
+}

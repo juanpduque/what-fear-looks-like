@@ -1,0 +1,49 @@
+{
+  "title_text": "HAPPY HORROR DAYS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ALL YOUR FAVORITE HOLIDAYS... WITH A BLOODY TWIST",
+  "mood": [
+    "gory",
+    "humorous",
+    "spooky",
+    "festive"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.6,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and violent imagery.",
+  "description": "A calendar-style poster for 'Happy Horror Days' features various holidays with horror themes, including a screaming nurse and gory elements."
+}

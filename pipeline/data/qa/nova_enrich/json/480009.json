@@ -1,0 +1,46 @@
+{
+  "title_text": "GUNUNG BAWAKARAENG",
+  "credits_text": "SEBAB ESOK ADALAH MISTERI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "19 OKTOBER 2017\n\nSENA PRODUCTION\n\nME\n\nExpedisi Dimulati",
+  "mood": [
+    "horror",
+    "mystery",
+    "supernatural",
+    "dread",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "tree",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror elements and occult themes.",
+  "description": "A poster featuring a large, eerie face with glowing eyes and a group of people silhouetted against a dark background, promoting a horror film."
+}

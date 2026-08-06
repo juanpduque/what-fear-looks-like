@@ -1,0 +1,43 @@
+{
+  "title_text": "TERROR TRAIN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "S.P.D. HOMAGE TO THE VERY BEST",
+  "mood": [
+    "thriller",
+    "suspense",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    },
+    {
+      "name": "fire",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features a violent theme with a knife and implied danger.",
+  "description": "A masked figure holds a knife above a burning train, with a crowd in the background and bold red title text."
+}

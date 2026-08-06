@@ -1,0 +1,76 @@
+{
+  "launched_at": "2026-08-05T20:02:03Z",
+  "instance_id": "i-0794c5b3a5e83da84",
+  "public_ip": "18.212.71.89",
+  "instance_type": "c5.4xlarge",
+  "ami": "ami-052355af2a014bd2c",
+  "name_tag": "wflike-multi-poster-gap",
+  "bucket": "sagemaker-studio-a5572760",
+  "prefix": "wflike-multi-poster-gap",
+  "region": "us-east-1",
+  "iam_profile": "wflike-ec2-train",
+  "volume_gb": 150,
+  "n_todo": 29204,
+  "tmdb_key_status": "from_env",
+  "posters_csv_staged": "data/qa/vision_gap/posters_extended.csv",
+  "poster_src": "s3://sagemaker-studio-a5572760/wflike-community-72k/posters",
+  "vision_gap_posters": "s3://sagemaker-studio-a5572760/wflike-vision-gap/input/posters",
+  "gap": {
+    "ts": "2026-08-05T19:58:17Z",
+    "universe_source": "faces_v2 \u222a posters_extended",
+    "n_universe": 65201,
+    "n_faces_v2": 65201,
+    "n_posters_extended": 65201,
+    "n_catalog_ids": 35998,
+    "n_canonical_ids": 35945,
+    "n_covered_union": 35998,
+    "n_todo": 29204,
+    "n_in_catalog_not_canonical": 53,
+    "n_in_canonical_not_catalog": 0,
+    "todo_ids_txt": "data/qa/multi_poster_gap/todo_ids.txt",
+    "todo_ids_csv": "data/qa/multi_poster_gap/todo_ids.csv",
+    "note": "Gap = extended corpus minus multi_poster catalog\u222acanonical. Discover resumes via seeded catalog."
+  },
+  "phases": [
+    "discover",
+    "download",
+    "embed(merge)",
+    "select",
+    "report",
+    "ocr_score(ge2 gap)",
+    "apply_swaps=DEFERRED"
+  ],
+  "reused": [
+    "multi_poster_pipeline.py",
+    "score_multi_poster_variants_ocr.py",
+    "local multi_poster_{catalog,canonical,clusters,embeddings}",
+    "AMI/VPC/IAM from launch_attrs_gap / launch_vision_gap",
+    "TMDB key pattern from community_72k",
+    "does NOT touch clip_embeddings.npz single-poster corpus"
+  ],
+  "new": [
+    "launch_multi_poster_gap.sh",
+    "multi_poster_gap_chain.sh",
+    "multi_poster_gap_userdata.sh",
+    "data/qa/multi_poster_gap/*",
+    "discover --ids-file"
+  ],
+  "eta_note": "c5.4xlarge CPU ~29k gap: discover ~1.5-3h, download ~1-2h, CLIP embed merge ~2-5h, select ~min, OCR ge2 subset ~0.5-2h. Total rough ETA 6-12h. Volume 150GB for posters_multi.",
+  "monitor": {
+    "progress": "AWS_PROFILE=sandbox aws s3 cp s3://sagemaker-studio-a5572760/wflike-multi-poster-gap/results/PROGRESS.json -",
+    "log": "AWS_PROFILE=sandbox aws s3 cp s3://sagemaker-studio-a5572760/wflike-multi-poster-gap/results/multi_poster_gap_aws.log -",
+    "ls": "AWS_PROFILE=sandbox aws s3 ls s3://sagemaker-studio-a5572760/wflike-multi-poster-gap/results/",
+    "done": "AWS_PROFILE=sandbox aws s3 cp s3://sagemaker-studio-a5572760/wflike-multi-poster-gap/results/DONE -",
+    "ssh": "ssh -o StrictHostKeyChecking=no ubuntu@18.212.71.89  # if key configured"
+  },
+  "protect_names": [
+    "wflike-imdb-posters",
+    "wflike-imdb-selenium",
+    "wflike-owlv2-backfill",
+    "wflike-community-72k",
+    "wflike-nova-enrich",
+    "wflike-vision-gap",
+    "wflike-attrs-gap"
+  ],
+  "protect_instance": "i-0df34af493e304af7"
+}

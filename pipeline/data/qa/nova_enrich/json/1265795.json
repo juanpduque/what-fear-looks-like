@@ -1,0 +1,40 @@
+{
+  "title_text": "FREE MAN",
+  "credits_text": "开始开始 开始开始 开始开始 开始开始 开始开始 开始开始 开始开始 开始开始",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "3月28日上网",
+  "mood": [
+    "action",
+    "sci-fi",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action sequences and monstrous creatures.",
+  "description": "A poster shows a group of people battling large, menacing monsters in a chaotic urban setting."
+}

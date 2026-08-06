@@ -1,0 +1,45 @@
+{
+  "title_text": "STAN HELSING",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "VARDET",
+  "mood": [
+    "camp",
+    "horror",
+    "comedy",
+    "supernatural",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    },
+    {
+      "name": "creature",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.1,
+  "blood_gore": 0.1,
+  "violence": 0.3,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and mild horror elements.",
+  "description": "A group of diverse characters, including a man in a red hat and a woman in a blue dress, pose dramatically against a dark, eerie background with ghostly figures and a floating superhero."
+}

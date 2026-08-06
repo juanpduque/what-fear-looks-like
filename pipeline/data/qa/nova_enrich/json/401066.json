@@ -1,0 +1,40 @@
+{
+  "title_text": "THE HUNTED",
+  "credits_text": "NEW LINE STUDIOS AND RAMPANT FILMS present A ROBERT CAPLIN FILM THE HUNTED starring ROBERT CAPLIN, MONIQUE CUNNINGHAM, ANTHONY BELONOS, DAVID GERO, CARY KASER, SCOTTY CAPLIN, TYLER VAN DER KAMP, RORY KELLY, ANDREW CHAPIN, LISA CHAPIN produced by JESSICA GILL directed by photography A.J. FERRANDO and JESSICA GILL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Hollywood",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and weapon imagery.",
+  "description": "A man and woman hold swords in a dark setting, with a stuffed animal and shadowy figures in the background."
+}

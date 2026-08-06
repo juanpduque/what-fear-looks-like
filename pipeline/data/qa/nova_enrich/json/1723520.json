@@ -1,0 +1,44 @@
+{
+  "title_text": "KLOZA",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FRANKA KOS, LOVRO KOPJAR, LUKA KORPAR, MARGARETA PISKAC, BOJAN RAOS, BERNARD PINTAREC",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "graveyard",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A man stands on a hill with a knife dripping blood, overlooking a graveyard with crosses and a leafless tree against a red sky."
+}

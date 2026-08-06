@@ -1,0 +1,38 @@
+{
+  "title_text": "HALO",
+  "credits_text": "THE MONA LISA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "343",
+  "mood": [
+    "intense",
+    "gritty",
+    "action",
+    "sci-fi",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and graphic elements.",
+  "description": "A muscular figure is depicted in a dynamic pose against a dark, textured background with the title 'HALO' and subtitle 'THE MONA LISA' prominently displayed."
+}

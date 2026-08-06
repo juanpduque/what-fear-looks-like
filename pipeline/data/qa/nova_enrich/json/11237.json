@@ -1,0 +1,37 @@
+{
+  "title_text": "ANACONDAS",
+  "credits_text": "THE HUNT FOR THE BLOOD ORCHID",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "adventure",
+    "thriller",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A group of people wade through a river, facing a large anaconda in a jungle setting, with a rifle held by one individual."
+}

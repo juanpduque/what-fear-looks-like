@@ -1,0 +1,39 @@
+{
+  "title_text": "KNIFE",
+  "credits_text": "UN FILM DE FROLLIOT ET LOUIS F.",
+  "languages": [
+    "fr"
+  ],
+  "other_text": "VOUS N'ÊTES JAMAIS EN SÉCURITÉ",
+  "mood": [
+    "dread",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 1.0
+    },
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains graphic weapon imagery and implied violence.",
+  "description": "A metallic poster features a screaming ghost with crossed knives and French text, suggesting a horror film."
+}

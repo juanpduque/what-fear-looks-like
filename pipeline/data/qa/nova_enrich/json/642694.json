@@ -1,0 +1,42 @@
+{
+  "title_text": "DEMENTED",
+  "credits_text": "A NIGEL HARTWELL FILM FEATURING ROSE ARIE, LEEMAN, DAKOTA HOUSE, ANGELINA LOVE, O'LEARY BINS, AND GRET HART",
+  "languages": [
+    "en"
+  ],
+  "other_text": "LIFE RUNS AT 24 FRAMES PER SECOND... BUT SO DOES DEATH",
+  "mood": [
+    "intense",
+    "thriller",
+    "action",
+    "dramatic",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "gun",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "Contains mild suggestive imagery and intense action themes.",
+  "description": "A poster featuring a masked figure holding a gun, surrounded by five characters against a fiery background with a skull design."
+}

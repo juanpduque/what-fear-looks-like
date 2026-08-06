@@ -1,0 +1,44 @@
+{
+  "title_text": "ПРИЗРАКИ ЯКУТСКА",
+  "credits_text": "",
+  "languages": [
+    "ru"
+  ],
+  "other_text": "",
+  "mood": [
+    "supernatural",
+    "tense",
+    "haunting",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and a menacing monster figure.",
+  "description": "A poster shows three people facing a large, menacing demon with horns and claws, set against a dark, eerie background."
+}

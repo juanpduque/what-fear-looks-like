@@ -1,0 +1,46 @@
+{
+  "title_text": "FIRE WORMS",
+  "credits_text": "ITD PRODUCTION\nBILLY ST. JOHN • MAUREEN RICHART • GREG WOLCZYNSKI • GEORGE EEBERTH\nWRITTEN & DIRECTED BY WILLIAM NELSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PROPERTY OF ME",
+  "mood": [
+    "horror",
+    "gritty",
+    "post-apocalyptic",
+    "survival",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and gore, disturbing imagery.",
+  "description": "A horror movie poster featuring a gruesome, bloodied face with the title \"FIRE WORMS\" in bold green letters, set against a gritty, industrial background."
+}

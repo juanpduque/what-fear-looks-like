@@ -1,0 +1,46 @@
+{
+  "title_text": "FOG 2",
+  "credits_text": "REVENGE OF THE EXECUTED",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FSK 16",
+  "mood": [
+    "gothic",
+    "eerie",
+    "violent",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence and partial nudity.",
+  "description": "A dramatic poster features a skull-faced figure holding a large knife, with a woman in a yellow dress and a shadowy figure in the background."
+}

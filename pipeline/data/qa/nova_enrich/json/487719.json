@@ -1,0 +1,46 @@
+{
+  "title_text": "BLOOD CHILD",
+  "credits_text": "a Film By Jennifer Phillips",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Some Bonds Can Never Be Broken",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "disturbing",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains disturbing imagery and themes of violence and horror.",
+  "description": "A poster shows a young girl in a red dress standing in front of a menacing face, with text indicating a true story."
+}

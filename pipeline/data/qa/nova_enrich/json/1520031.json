@@ -1,0 +1,38 @@
+{
+  "title_text": "The Silhouette",
+  "credits_text": "A SELF-MADE MAN FILMS A FILM BY OLDRICH WERNER \"THE SILHOUETTE\" STARRING MARIA'S MARIUS'S PIERRE LAGANA AND CORRADO NOZZA, WITH TANIA FERNANDEZ DIRECTOR OF PHOTOGRAPHY MARIA'S LAGANA MUSIC BY JAMES CASSELLI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "COMING SOON",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark poster features a terrified face emerging from a shadowy silhouette against a red-tinted background, with bold red text reading \"The Silhouette\"."
+}

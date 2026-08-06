@@ -1,0 +1,50 @@
+{
+  "title_text": "PLAGUEPITS THE TORTURE DEAD",
+  "credits_text": "NICHOLAS VINCE BILL HUTCHENS A PETER THORNDYKE FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "If you're lucky, they'll only EAT you!",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "occult",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.1,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic violence and occult imagery.",
+  "description": "A poster featuring a group of terrified individuals surrounded by monstrous, grotesque figures with a central altar, evoking horror and dread."
+}

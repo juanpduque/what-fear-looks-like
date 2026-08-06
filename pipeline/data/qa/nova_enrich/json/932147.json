@@ -1,0 +1,45 @@
+{
+  "title_text": "UNA PELÍCULA DE ZOMBIES",
+  "credits_text": "PEDRO RUMINOT SERGIO FREIRE JAVERA CONDADOR BOTIJA FOX JAVERA AGÜEVEDO RICARDO MIRHANE PANCHO SAKSEVORA",
+  "languages": [
+    "es"
+  ],
+  "other_text": "ESTRENO 13 DE ENERO EN PUNTO TICKET nano",
+  "mood": [
+    "horror",
+    "zombie",
+    "thriller",
+    "suspense",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "zombie",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    },
+    {
+      "name": "moon",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "Poster features a group of people in a dark, eerie setting with a large moon and a rifle, promoting a zombie film."
+}

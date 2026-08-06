@@ -1,0 +1,50 @@
+{
+  "title_text": "FINAL SUMMER",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "In 1991 Camp Silverlake opened for the FINAL time.",
+  "mood": [
+    "horror",
+    "thriller",
+    "dread",
+    "gothic",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and violent imagery.",
+  "description": "A poster shows a skull-faced figure holding a weapon with blood dripping, set against a moonlit forest background with camp structures visible."
+}

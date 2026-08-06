@@ -1,0 +1,49 @@
+{
+  "title_text": "FUTURE FEAR",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "apocalyptic",
+    "action",
+    "sci-fi",
+    "dystopia",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "fire",
+      "conf": 0.85
+    },
+    {
+      "name": "weapon",
+      "conf": 0.75
+    },
+    {
+      "name": "crowd",
+      "conf": 0.65
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.55
+    }
+  ],
+  "weapon": 0.75,
+  "monster": 0.95,
+  "person": 0.85,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and potential violence.",
+  "description": "A soldier faces a giant spider monster in a dystopian city with flames and other soldiers in the background."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "THE HUNTER'S BALLAD",
+  "credits_text": "DIRECTED BY EVIAN PENG",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"AOLTS SAN GES\"",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.6,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a menacing atmosphere.",
+  "description": "A dark, moody poster features a shadowy figure holding a weapon against a stormy background with an eerie face looming above."
+}

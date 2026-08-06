@@ -1,0 +1,40 @@
+{
+  "title_text": "In the Darkness of Night",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "mysterious",
+    "lonely",
+    "haunting",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.3
+    },
+    {
+      "name": "night",
+      "conf": 0.9
+    },
+    {
+      "name": "road",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A dark, empty road stretches into the night under a starry sky, evoking a sense of solitude and mystery."
+}

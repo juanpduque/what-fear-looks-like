@@ -1,0 +1,50 @@
+{
+  "title_text": "পুতিলিতি পুতিলিতি Pvt. Ltd.",
+  "credits_text": "পেরিয়ার ভিত্রা স্রিমান স্রিমান স্রিমান স্রিমান",
+  "languages": [
+    "bn"
+  ],
+  "other_text": "পেরিয়ার ভিত্রা বালে বালে",
+  "mood": [
+    "gothic",
+    "horror",
+    "supernatural",
+    "dramatic",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "coffin",
+      "conf": 0.95
+    },
+    {
+      "name": "haunting",
+      "conf": 0.85
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.1,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult themes and mild violent imagery.",
+  "description": "A poster shows four people in coffins with a ghostly hand emerging, set against a dark, eerie background with gothic elements."
+}

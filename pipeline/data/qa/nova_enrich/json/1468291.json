@@ -1,0 +1,41 @@
+{
+  "title_text": "THE JINN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE PET",
+  "mood": [
+    "supernatural",
+    "horror",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "forest",
+      "conf": 0.75
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man stands in front of a menacing, supernatural creature with glowing red eyes in a dark, eerie forest setting."
+}

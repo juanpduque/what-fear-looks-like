@@ -1,0 +1,43 @@
+{
+  "title_text": "REQUIEM PSYCHE",
+  "credits_text": "EVERY DREAM IS DEATH WITH AN ENCORE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MORE'S\nFOR THE\nFUTURE\nTHE PAST\nTHE NOW\nTHE\nGUN",
+  "mood": [
+    "dark",
+    "psychological",
+    "disturbing",
+    "surreal",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "psychological",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "self-harm"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and themes of self-harm.",
+  "description": "A stylized poster features a man falling into a large red blood splatter, with a pill bottle and a watch nearby, accompanied by dramatic text."
+}

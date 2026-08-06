@@ -1,0 +1,50 @@
+{
+  "title_text": "HERMAN2.0",
+  "credits_text": "A SPLATTERBROTHERS PRODUCTION STARRING ASIA CLARK, CHRISTIAN DELA CRUZ CHANTELLE JOHNSON, CARRIE LEE, ALAN BAKER DIRECTED BY THE SPLATTERBROTHERS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "thriller",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "knife",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.5,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and implied violence.",
+  "description": "Poster features two figures in a dark, eerie forest setting with a large, monstrous figure looming behind a smaller character holding a knife."
+}

@@ -1,0 +1,27 @@
+ACCEPT to migrate: 34
+will migrate: 34
+posters: downloaded=34 reused_local=0 fail=0
+rewriting CSV/NPZ ids…
+  posters.csv: 34
+  attributes.csv: 34
+  attributes_partial.csv: 34
+  faces_v2.csv: 34
+  faces_v2_partial.csv: 34
+  census.csv: 34
+  typography.csv: 34
+  medium.csv: 34
+  segmentation.csv: 34
+  segmentation_partial.csv: 34
+  rekognition.csv: 34
+  title_boxes_rekognition.csv: 33
+  clip_embeddings.npz: 34
+/Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/apply_tmdb_remap_migrate.py:149: DtypeWarning: Columns (16) have mixed types. Specify dtype option on import or set low_memory=False.
+  d = pd.read_csv(path)
+  horror_movies.csv: migrated 33 ids
+  imdb_ids.csv: moved 34
+  poster_paths_backfill: upserted 34
+  poster_path_drift: migrated 34 rows
+pruned remap backlog −34
+wrote /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/tmdb_remap_high_migrated.csv
+next: python3 reanalyze_poster_ids.py --ids-file data/qa/tmdb_remap_high_migrated.csv
+      (usa columna new_id — o regenera ids-file)

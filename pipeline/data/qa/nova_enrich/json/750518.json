@@ -1,0 +1,41 @@
+{
+  "title_text": "DESOLATION",
+  "credits_text": "A film by Martin Sonntag",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "blood",
+    "gothic"
+  ],
+  "moderation_notes": "Contains stylized blood imagery and a haunting silhouette.",
+  "description": "A dark silhouette with red, cracked textures against a black background, titled 'DESOLATION' by Martin Sonntag."
+}

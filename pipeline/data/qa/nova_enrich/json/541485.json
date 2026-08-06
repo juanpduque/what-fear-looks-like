@@ -1,0 +1,51 @@
+{
+  "title_text": "不有黄子",
+  "credits_text": "ZOMBIES VS THE LUCKY EXORCIST",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "P13",
+  "mood": [
+    "horror",
+    "action",
+    "supernatural",
+    "camp",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains violent and occult themes, suitable for mature audiences.",
+  "description": "A poster featuring a central figure holding a glowing weapon, surrounded by eerie faces and a full moon, with bold Chinese and English titles."
+}

@@ -1,0 +1,43 @@
+{
+  "title_text": "THE PUMPKIN MAN 3",
+  "credits_text": "NAUTICAL FILMS PRESENTS... JEFF RHODES, MICHAEL KERR, JUDGE FLORES, RYAN SHEETS, BEN CARTER, RYAN SHEETS, JEFF RHODES, MICHAEL KERR, JUDGE FLORES, KAELA MAPLES, BOSS GARRETT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "RUN AS FAST AS YOU CAN\nAPRIL 28TH",
+  "mood": [
+    "horror",
+    "thriller",
+    "suspense",
+    "creepy",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark poster features two menacing figures, one with a pumpkin head and another with a clown mask, against a black background with bold orange text reading \"The Pumpkin Man 3.\""
+}

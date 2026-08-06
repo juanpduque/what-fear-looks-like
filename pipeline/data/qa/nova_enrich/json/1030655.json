@@ -1,0 +1,42 @@
+{
+  "title_text": "ELLIOT",
+  "credits_text": "Travis Darker",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Honor Film Festival 2021 Winner, Finalist Books & Blood 2020 \"Both...schizophrenic and controlled...a brutal, bloody good time.\" -Jerry Sampson, Finalist Hollywood HorrorFest 2020, Official Selection New Wave Short Film Fest 2020, Finalist Florence Film Awards 2020, Bronze Award Best Film, Best Feature Hollywood HorrorFest 2020, Best Feature Hollywood HorrorFest 2020, On the Basement Floor",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and intense horror themes.",
+  "description": "A dark, smoky poster for the film 'ELLIOT' featuring bold typography, a skull, and multiple award seals, suggesting a psychological horror theme."
+}

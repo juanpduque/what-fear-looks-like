@@ -1,0 +1,38 @@
+{
+  "title_text": "小小さん",
+  "credits_text": "プロデュションショーノの反対形あー",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "対象にはんなのか？ 平米な対対でする魔的の事事！",
+  "mood": [
+    "gothic",
+    "mystery",
+    "supernatural",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A collage-style poster features multiple characters in dramatic poses, with Japanese text overlay and a central ghostly figure. The mood is eerie and suspenseful."
+}

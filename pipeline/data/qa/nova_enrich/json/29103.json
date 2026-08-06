@@ -1,0 +1,38 @@
+{
+  "title_text": "THE SADIST",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "psychological",
+    "disturbing",
+    "noir",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "sexual",
+    "violence"
+  ],
+  "moderation_notes": "The poster contains suggestive imagery and implies potential violence.",
+  "description": "A dark silhouette with a masked face looms over a distressed woman, accompanied by a man in a leather jacket, suggesting a thriller or psychological horror theme."
+}

@@ -1,0 +1,47 @@
+{
+  "title_text": "STRANGER THINGS",
+  "credits_text": "HALLOWEEN HORROR NIGHTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "eerie",
+    "mysterious",
+    "haunting",
+    "nostalgic",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "spider",
+      "conf": 0.8
+    },
+    {
+      "name": "haunted",
+      "conf": 0.7
+    },
+    {
+      "name": "shadow",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.7,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A black-and-white poster features a shadowy figure and a spider, with the title 'Stranger Things' and 'Halloween Horror Nights' text."
+}

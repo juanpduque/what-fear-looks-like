@@ -1,0 +1,44 @@
+{
+  "title_text": "THANKSKILLING 3",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CHAN CARVE",
+  "mood": [
+    "horror",
+    "camp",
+    "surreal",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.1,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains horror elements and implied violence.",
+  "description": "Vibrant poster features a monstrous creature and group of characters against a dark, eerie background with bold red title text."
+}

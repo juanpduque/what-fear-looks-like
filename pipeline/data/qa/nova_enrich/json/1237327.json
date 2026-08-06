@@ -1,0 +1,35 @@
+{
+  "title_text": "DOWN",
+  "credits_text": "WRITTEN BY BOB ROGERS DIRECTED BY ANTONY SMITH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE FIRST FILM FROM \"IT'S MY SHOUT\"",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery",
+    "haunting",
+    "forest"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.1,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, eerie forest scene with sparse trees and a faint silhouette, suggesting a gothic and haunting atmosphere."
+}

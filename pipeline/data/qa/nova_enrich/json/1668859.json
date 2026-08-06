@@ -1,0 +1,43 @@
+{
+  "title_text": "It's a Wonderful Night of the Living Dead",
+  "credits_text": "BILL BROTHERS... \"IT'S WONDERFUL NIGHT OF THE LIVING DEAD\"... JAMES O'ARTHUR RAY... JEROME SMITH... MARIA... JAMES STEWART... JOHN CARPENTER... JANE IRWIN... JIM BELL... ANGIE KELLY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Marino's",
+  "mood": [
+    "camp",
+    "horror",
+    "humor",
+    "classic",
+    "retro"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "house",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A group of people stands under a full moon with a zombie in the foreground, promoting a retro horror film."
+}

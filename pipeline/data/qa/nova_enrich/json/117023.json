@@ -1,0 +1,46 @@
+{
+  "title_text": "SHARKMAN",
+  "credits_text": "A NEW BREED OF PREDATOR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "terrifying",
+    "action-packed",
+    "sci-fi",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of a monstrous creature with visible blood and gore.",
+  "description": "A poster featuring a menacing blue-skinned creature with sharp teeth and blood around its mouth, titled 'SHARKMAN: A NEW BREED OF PREDATOR.'"
+}

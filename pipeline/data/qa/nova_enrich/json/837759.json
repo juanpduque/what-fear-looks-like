@@ -1,0 +1,37 @@
+{
+  "title_text": "日本言語",
+  "credits_text": "カブの言語スリーズ II",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "言語の守を持つ人、女、子の家庭の家庭を持つ人、女、子の家庭",
+  "mood": [
+    "eerie",
+    "mysterious",
+    "haunting",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild blood imagery and a haunting facial expression.",
+  "description": "A poster features a stylized mask with a smiling face and dripping red liquid, overlaid with Japanese text."
+}

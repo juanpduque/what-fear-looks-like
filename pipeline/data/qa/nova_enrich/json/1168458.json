@@ -1,0 +1,44 @@
+{
+  "title_text": "THE DIRECTOR'S CUT",
+  "credits_text": "A Film by Steven Arges. Come hang out and solve a murder mystery.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Movies. Mary Jane. Serial Killers. Who is the foup?",
+  "mood": [
+    "mystery",
+    "thriller",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "knife",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "Poster features a skull with a knife embedded in it, blood dripping, and five people superimposed over the skull. Title and tagline are prominently displayed."
+}

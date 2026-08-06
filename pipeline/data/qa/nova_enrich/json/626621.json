@@ -1,0 +1,46 @@
+{
+  "title_text": "The Dance of Death",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "erotic",
+    "macabre",
+    "surreal",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "skeleton",
+      "conf": 0.95
+    },
+    {
+      "name": "death",
+      "conf": 0.9
+    },
+    {
+      "name": "haunting",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "Contains symbolic depictions of death and suggestive imagery, but no explicit violence or nudity.",
+  "description": "A skeletal figure dances closely with a woman in an elegant dress against a dark, eerie background, evoking themes of mortality and passion."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "Bad Risk",
+  "credits_text": "A FILM BY DIRK VAN EEXLEN AND JAN DE JUNGE \"RISK\" SAMUEL ZEGERS, LARS KRUINER, JAN DE JUNGE, STEFE VERHAAL, DANIEL VAN ETEN, ROY DE NUS, ANNER VAN LOON, JULIAN VAN EKEREN, WILLIAM VAN NEUMEUW, KELLY KANEENG, BENTJE VAN DER HOUWEN, GERT VAN LEEUWEN PRODUCED BY JAN DE JUNGE \"THE\" DIRK VAN EEXLEN \"THE\" DIRK VAN EEXLEN & JAN DE JUNGE DIRECTED BY DIRK VAN EEXLEN",
+  "languages": [
+    "en",
+    "nl"
+  ],
+  "other_text": "WELKOM OP HET FEEST DANKSCOPE PRODUCTIONS PRESENTS COMING SOON @DANKSCOPEFILMS WWW.DANKSCOPE.COM",
+  "mood": [
+    "thriller",
+    "horror",
+    "suspense",
+    "party",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild suggestion of violence through knife imagery; no explicit gore or nudity shown.",
+  "description": "Poster features a hooded figure holding a knife over a Risk game board with a crowd of concerned faces in the background."
+}

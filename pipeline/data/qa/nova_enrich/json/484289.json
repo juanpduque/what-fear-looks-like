@@ -1,0 +1,47 @@
+{
+  "title_text": "CORAÇÃO DAS TREVAS",
+  "credits_text": "Coffin Joe's Heart of Darkness",
+  "languages": [
+    "en",
+    "pt"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.2,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains occult imagery and implied violence.",
+  "description": "A poster features a man with long hair and a beard making a peace sign, with two smaller figures below, a helicopter, and a stylized heart with blood."
+}

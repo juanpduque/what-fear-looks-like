@@ -1,0 +1,38 @@
+{
+  "title_text": "S.O.S. INVASION",
+  "credits_text": "JACK TAYLOR DIANA SOREL Director: SILVIO F. BALBURNA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EAST-MAN",
+  "mood": [
+    "sci-fi",
+    "thriller",
+    "alien",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "alien",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.6,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a large red alien craft hovering above a dark landscape with smaller crafts in the sky and a shadowy figure running below."
+}

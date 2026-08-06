@@ -1,0 +1,45 @@
+{
+  "title_text": "ショート プレス",
+  "credits_text": "結いレー・ダイジではスカールダイ",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "結いレー・ダイジではスカールダイ",
+  "mood": [
+    "dread",
+    "surreal",
+    "gothic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "tree",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.1,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult imagery.",
+  "description": "A poster featuring a tree with multiple eyes and faces, blood splatters, and Japanese text, suggesting a horror theme."
+}

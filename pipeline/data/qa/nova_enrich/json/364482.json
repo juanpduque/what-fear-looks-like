@@ -1,0 +1,42 @@
+{
+  "title_text": "BONIATO",
+  "credits_text": "THE AMERICAN DREAM IS THE SUM OF ITS PARTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "sundance",
+  "mood": [
+    "dark",
+    "mysterious",
+    "haunting",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "cave",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "The poster includes subtle hints of blood and potential violence, but no explicit content is shown.",
+  "description": "A shadowy figure stands in a dark cave with faint light, surrounded by scattered bodies, evoking a mysterious and haunting atmosphere."
+}

@@ -1,0 +1,45 @@
+{
+  "title_text": "HAN+U AMBULANCE SUZZANNA RETURNS",
+  "credits_text": "INDIKA ENTERTAINMENT PRESENTS SHANKAR RS PRODUCTION A KOYA PAGUADO PRODUCTION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "KISAH NYATA",
+  "mood": [
+    "horror",
+    "suspense",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements and implied violence.",
+  "description": "Movie poster features a horror theme with a monstrous face, an ambulance, and a distressed woman inside the vehicle."
+}

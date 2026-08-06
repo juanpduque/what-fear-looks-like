@@ -1,0 +1,46 @@
+{
+  "title_text": "魔皮声影 64",
+  "credits_text": "主演",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "全国から消費された言葉を引いて、子の害を持つ女士やっぱんしだ! 64選",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "mystery",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatters and intense psychological horror elements.",
+  "description": "A dark poster features a distressed woman and a sinister figure with Japanese text, blood splatters, and a haunting atmosphere."
+}

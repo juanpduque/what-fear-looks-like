@@ -1,0 +1,38 @@
+{
+  "title_text": "鬼神",
+  "credits_text": "",
+  "languages": [
+    "zh"
+  ],
+  "other_text": "",
+  "mood": [
+    "fantasy",
+    "epic",
+    "mythical",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "dragon",
+      "conf": 0.85
+    },
+    {
+      "name": "mythical_creature",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.7,
+  "blood_gore": 0.2,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic poster features heroes battling mythical creatures under a full moon, with intense action and fantasy elements."
+}

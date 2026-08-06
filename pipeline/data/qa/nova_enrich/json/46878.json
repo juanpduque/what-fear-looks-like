@@ -1,0 +1,40 @@
+{
+  "title_text": "THE SWARM",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "apocalyptic",
+    "disaster",
+    "action",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "disaster",
+      "conf": 0.85
+    },
+    {
+      "name": "chaos",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.1,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild action and disaster themes, no explicit violence or gore.",
+  "description": "Movie poster shows a burning skyscraper with people fleeing amidst smoke and flames, suggesting a disaster scenario."
+}

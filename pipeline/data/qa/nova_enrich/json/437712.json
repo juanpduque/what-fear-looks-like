@@ -1,0 +1,45 @@
+{
+  "title_text": "BFM",
+  "credits_text": "NEW IMAGE ENTERTAINMENT PRESENTS A RYAN NICHOLSON FILM\nTHEY WERE WARNED. NOW THEY'RE SCREWED.\nBIG FUCKING MONSTER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Ryan Nicholson, Hayden Paloschi, Kayla Thomas, Glenn Hoffmann, Damien Sean LaFountaine, Milbury Ziko, Terry Paich, Lucy MacDonald, Rob Guthrie, Ana Paola Dominguez, Nora Van D, Kendra Fenner, Boca A. Abu, Havana Guppy, Anneliese Washington, Mary Calloway, Gary Starkwell, Jerrod Downey, Stacey Stewart, Matt Leaf, Matt O'Marney, Ryan Craig, Philip Granger, Bob Joes, Jessica Martin, Ryan Nicholson & Michelle Grady",
+  "mood": [
+    "dread",
+    "terror",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "forest",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.75
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and violent themes.",
+  "description": "A poster features a monstrous creature with horns and sharp teeth against a dark forest backdrop, with bold red text reading \"BFM\" and the tagline \"They were warned. Now they're screwed.\""
+}

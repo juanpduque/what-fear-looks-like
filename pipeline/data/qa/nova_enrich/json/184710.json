@@ -1,0 +1,49 @@
+{
+  "title_text": "QUARANTINE LA",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BIOHAZARD ZONE",
+  "mood": [
+    "tense",
+    "apocalyptic",
+    "action",
+    "survival",
+    "dystopian"
+  ],
+  "fear_labels": [
+    {
+      "name": "biohazard",
+      "conf": 0.9
+    },
+    {
+      "name": "helicopter",
+      "conf": 0.8
+    },
+    {
+      "name": "soldier",
+      "conf": 0.7
+    },
+    {
+      "name": "cityscape",
+      "conf": 0.7
+    },
+    {
+      "name": "danger",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and military themes.",
+  "description": "A soldier stands in a dystopian city with helicopters overhead and a biohazard symbol, suggesting a post-apocalyptic scenario."
+}

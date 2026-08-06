@@ -1,0 +1,42 @@
+{
+  "title_text": "THE MUMMY'S TOMB",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "camp",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "mummy",
+      "conf": 0.95
+    },
+    {
+      "name": "tomb",
+      "conf": 0.85
+    },
+    {
+      "name": "gothic",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a mummy emerging from a tomb with a woman draped over it, while two men look on in fear against a fiery red background."
+}

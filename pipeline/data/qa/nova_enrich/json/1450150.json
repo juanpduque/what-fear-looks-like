@@ -1,0 +1,38 @@
+{
+  "title_text": "THE EMPTY ROOM",
+  "credits_text": "A FILM BY ETHAN HUNT\nMAYA MORALES\nJORDAN GEIGER\nETHAN HUNT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOU'RE NOT ALONE IN THIS ROOM",
+  "mood": [
+    "anxious",
+    "suspenseful",
+    "claustrophobic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A woman stands in a dimly lit room, facing the viewer with a serious expression, suggesting tension and isolation."
+}

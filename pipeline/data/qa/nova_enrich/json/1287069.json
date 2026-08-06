@@ -1,0 +1,42 @@
+{
+  "title_text": "UFO・UMA",
+  "credits_text": "銀電置連 20軽線",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "結織! 大尋がつて見たことの物や大小なる無体体と生物 連絶の結織化項",
+  "mood": [
+    "horror",
+    "sci-fi",
+    "supernatural",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and horror themes.",
+  "description": "A poster featuring a monstrous face, UFO imagery, and Japanese text, suggesting a horror sci-fi theme."
+}

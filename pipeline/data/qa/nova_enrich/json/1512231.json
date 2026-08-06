@@ -1,0 +1,39 @@
+{
+  "title_text": "The Thing in the Coffin",
+  "credits_text": "A film by Péter Lichter\nBased on Bram Stoker's Dracula\nMusic and sound design by Bence Kovács-Vajda\nAdditional music by Anna Bölöni",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "eerie",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "blood",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and suggestive imagery.",
+  "description": "A dark red, textured background with a faint silhouette, suggesting a gothic horror theme."
+}

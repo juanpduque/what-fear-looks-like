@@ -1,0 +1,37 @@
+{
+  "title_text": "KUBOT",
+  "credits_text": "THE ASWANG CHRONICLES 2",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "fantasy",
+    "intense",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts intense action scenes with potential violence.",
+  "description": "The poster features a group of characters, including a central figure holding a gun, set against an urban backdrop with dramatic lighting."
+}

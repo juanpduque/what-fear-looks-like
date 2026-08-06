@@ -1,0 +1,45 @@
+{
+  "title_text": "RODAN",
+  "credits_text": "THE KING BROTHERS present a TOHO production DGA print by TECHNICOLOR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THUNDERING OUT OF UNKNOWN SKIES-- The Super-Sonic Hell-Creature No Weapon Could Destroy! THE FLYING MONSTER... Speeded and meeting level heads! hurting in 500 feet across the atmosphere! menacing jet! Tech scientists! giant grip!",
+  "mood": [
+    "dread",
+    "camp",
+    "sci-fi",
+    "action",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.6,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild action/violence imagery typical of 1950s sci-fi films.",
+  "description": "A poster shows a large flying monster attacking tanks and people, with bold red and blue typography and dramatic taglines."
+}

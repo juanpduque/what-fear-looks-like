@@ -1,0 +1,45 @@
+{
+  "title_text": "疯狂蛛",
+  "credits_text": "CRAZY SPIDER",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "horror",
+    "fantasy",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "spider",
+      "conf": 0.85
+    },
+    {
+      "name": "danger",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.9,
+  "blood_gore": 0.2,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and horror elements, including monstrous creatures and implied violence.",
+  "description": "A poster features a giant, menacing spider-like monster towering over two human figures in a dark, cave-like environment."
+}

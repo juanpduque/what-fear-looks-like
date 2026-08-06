@@ -1,0 +1,46 @@
+{
+  "title_text": "L'ULTIMA VENDETTA",
+  "credits_text": "A FILM BY KEMAN POLTEVINT KANG HAN AHSENGIN BAZMA NAJEM LANA GERMAN LORENZ LEE SHELBY RUGG THAO PUSTEVITO CHRISTIANO MITCHELL JUANNE SMITH WILLIAMS",
+  "languages": [
+    "en",
+    "it"
+  ],
+  "other_text": "2024",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster shows two figures with distorted faces holding a trident in a field, with a house on a hill in the background."
+}

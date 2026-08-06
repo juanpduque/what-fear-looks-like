@@ -1,0 +1,50 @@
+{
+  "title_text": "REAL MONSTERS",
+  "credits_text": "CREATURES. GHOSTS AND DEMONS FROM HELL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "intense",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "demon",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains intense imagery of a demonic figure with blood-like markings, suggesting themes of violence and the occult.",
+  "description": "A poster featuring a menacing demonic face with horns and sharp teeth, set against a dark, fiery background with bold red text reading 'REAL MONSTERS' and a tagline."
+}

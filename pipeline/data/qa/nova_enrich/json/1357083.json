@@ -1,0 +1,50 @@
+{
+  "title_text": "VIDEO SHOP GATES OF HELL",
+  "credits_text": "A VIDEO SHOP PRODUCTION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "LAST REVENGE",
+  "mood": [
+    "horror",
+    "camp",
+    "gothic",
+    "surreal",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "creature",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.5,
+  "sensitive": [
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains suggestive imagery and occult themes.",
+  "description": "A vibrant poster features eerie faces, flames, and two women in revealing attire, promoting a horror film titled 'Video Shop Gates of Hell.'"
+}

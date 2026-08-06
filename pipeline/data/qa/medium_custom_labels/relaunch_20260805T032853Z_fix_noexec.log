@@ -1,0 +1,26 @@
+=== preflight: running instances (will not terminate) ===
+i-06cd66f041ccc1b73	wflike-vision-gap	c5.9xlarge
+i-0e91d3872dbf3d22a	wflike-nova-enrich-gap20k	t3.large
+wrote 65201 ids from posters_extended → data/qa/medium_custom_labels/infer_ids.txt
+infer_ids=65201 source=posters_extended
+model_status_at_launch=STOPPED (StartProjectVersion deferred to EC2 chain unless START_MODEL_AT_LAUNCH=1)
+--- stage code + ENV + ids ---
+Completed 541 Bytes/541 Bytes (1.2 KiB/s) with 1 file(s) remainingupload: ../../../../../tmp/cl_infer_ENV to s3://sagemaker-studio-a5572760/wflike-custom-labels/infer/ENV
+Completed 465.9 KiB/465.9 KiB (1.0 MiB/s) with 1 file(s) remainingupload: data/qa/medium_custom_labels/infer_ids.txt to s3://sagemaker-studio-a5572760/wflike-custom-labels/infer/infer_ids.txt
+Completed 5.9 KiB/5.9 KiB (11.7 KiB/s) with 1 file(s) remainingupload: aws/custom_labels_infer_chain.sh to s3://sagemaker-studio-a5572760/wflike-custom-labels/infer/code/aws/custom_labels_infer_chain.sh
+Completed 4.5 KiB/4.5 KiB (10.9 KiB/s) with 1 file(s) remainingupload: aws/custom_labels_infer_userdata.sh to s3://sagemaker-studio-a5572760/wflike-custom-labels/infer/code/aws/custom_labels_infer_userdata.sh
+Completed 12.4 KiB/12.4 KiB (29.6 KiB/s) with 1 file(s) remainingupload: ./aws_custom_labels_infer.py to s3://sagemaker-studio-a5572760/wflike-custom-labels/infer/code/aws_custom_labels_infer.py
+=== launch custom_labels_infer ===
+bucket=s3://sagemaker-studio-a5572760/wflike-custom-labels/infer/ type=t3.large ami=ami-052355af2a014bd2c
+sg=sg-0476343904a08eb4a subnet=subnet-08e655e74d8823aac profile=wflike-ec2-train Name=wflike-custom-labels-infer
+N_IDS=65201 WORKERS=8 MIN_INTERVAL=0.05 LIMIT=0 MIN_IU=1
+NOTE: Custom Labels ~$4/hr/IU while RUNNING + per-image DetectCustomLabels
+i-0a075ed00ff82fea0
+instance=i-0a075ed00ff82fea0
+52.87.208.69
+Completed 1.3 KiB/1.3 KiB (2.8 KiB/s) with 1 file(s) remainingupload: data/qa/medium_custom_labels/infer_launch.json to s3://sagemaker-studio-a5572760/wflike-custom-labels/infer/results/launch.json
+LISTO — IID=i-0a075ed00ff82fea0 IP=52.87.208.69 Name=wflike-custom-labels-infer n_ids=65201
+Monitor progress: aws s3 cp s3://sagemaker-studio-a5572760/wflike-custom-labels/infer/results/progress.json -
+Monitor log:      aws s3 cp s3://sagemaker-studio-a5572760/wflike-custom-labels/infer/results/infer_ec2.log -
+Model status:     aws rekognition describe-project-versions --project-arn arn:aws:rekognition:us-east-1:567596065542:project/wflike-medium-clf/1785807168455 --version-names v202608040132 --query 'ProjectVersionDescriptions[0].Status' --output text
+(instance self-terminates when chain finishes; model stopped if STOP_MODEL_ON_DONE=1)

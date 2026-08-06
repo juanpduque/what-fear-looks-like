@@ -1,0 +1,39 @@
+{
+  "title_text": "STALKED",
+  "credits_text": "LET THE HARVEST BEGIN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "suspense",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "scythe",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.95,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence through weapon imagery.",
+  "description": "A dark poster shows a silhouette holding a large scythe against a stormy field background with the title 'STALKED' prominently displayed."
+}

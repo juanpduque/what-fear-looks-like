@@ -1,0 +1,37 @@
+{
+  "title_text": "The Crimes of the Black Cat",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "POLITI",
+  "mood": [
+    "thriller",
+    "noir",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "cat",
+      "conf": 0.9
+    },
+    {
+      "name": "knife",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic poster features a black cat with intense eyes and several distressed faces, with a knife visible near the bottom."
+}

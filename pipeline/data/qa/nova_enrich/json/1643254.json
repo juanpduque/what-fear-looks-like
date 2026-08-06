@@ -1,0 +1,47 @@
+{
+  "title_text": "THE CURSE OF BLACK POND",
+  "credits_text": "A FILM BY RUI CONSTANTINO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "once you enter, you will never leave.\nCOMING SOON",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery",
+    "haunting",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.85
+    },
+    {
+      "name": "ghost",
+      "conf": 0.75
+    },
+    {
+      "name": "water",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.65
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A haunting poster shows a cloaked figure emerging from dark water near a mansion under a full moon, with eerie forest surroundings."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "ZOMBIE RAMPAGE 2",
+  "credits_text": "TODD SHEETS PRESENTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WILD EYE RAW & EXTREME UNRATED",
+  "mood": [
+    "horror",
+    "violent",
+    "gruesome",
+    "intense",
+    "chaotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "violence",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.95,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains extreme graphic violence and gore.",
+  "description": "A poster featuring a zombie with bloodied hands and face, promoting a horror film titled 'Zombie Rampage 2.'"
+}

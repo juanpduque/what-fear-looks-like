@@ -1,0 +1,5 @@
+want=2 todo=2 done_skip=0 workers=2 sidecar=data/qa/rekognition_community_enrich.csv merge_main=True
+fail 572: EndpointConnectionError: Could not connect to the endpoint URL: "https://rekognition.us-east-1.amazonaws.com/"
+fail 523: EndpointConnectionError: Could not connect to the endpoint URL: "https://rekognition.us-east-1.amazonaws.com/"
+[2/2] ok=0 err=2 0.00/s | 523 '' top=''
+LISTO ok=0 err=2 elapsed=1.0m (0.00/s) main=37829 → data/qa/rekognition_community_enrich.csv

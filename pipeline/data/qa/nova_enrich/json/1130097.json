@@ -1,0 +1,42 @@
+{
+  "title_text": "ALL YOUR FRIENDS ARE DEAD",
+  "credits_text": "A FILM BY RICKY GLORE AND NICHOLAS HIANCE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "STARRING RICKY GLORE, ELIZEN FERNANDEZ, JESSIE MORTON, NICKY EVANS, JESSIE MITCHELL, JASON IRVILL, BREANON BRADSHAW, JASON FIREBAND, ALICE McCORMICK, NICHOLAS HIANCE, JASON EVANS, JASON IRVILL, Produced by RICKY GLORE, NICHOLAS HIANCE, STEVEN HARRIS, STEPHANIE GASSUE, PETER BEATTY, GARY THORNTON, Executive Produced by CHRIS CHURCH, Directed by RICKY GLORE and NICHOLAS HIANCE, Screenplay by RICKY GLORE and NICHOLAS HIANCE",
+  "mood": [
+    "horror",
+    "thriller",
+    "dark humor",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and disturbing imagery.",
+  "description": "Poster features multiple faces with a large knife, promoting a horror film titled 'All Your Friends Are Dead' directed by Ricky Glore and Nicholas Hiance."
+}

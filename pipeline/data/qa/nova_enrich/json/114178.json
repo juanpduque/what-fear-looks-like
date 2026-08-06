@@ -1,0 +1,45 @@
+{
+  "title_text": "SEA OF DUST",
+  "credits_text": "TERROR. TORTURE. EVIL. Love hurts. So does this motion picture. Written by Paul Ekins. Directed by Paul Ekins. Starring: Sam Neill, Kelly Reilly, and Iain Glen. Produced by Paul Ekins. Executive Producers: David S. Goyer, Stephen Norrington, and others.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "R rating. \"Do see this motion picture.\"",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "psychological",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense horror themes and implied violence.",
+  "description": "A dramatic poster features multiple characters with intense expressions, highlighting themes of terror and torture in a dark, eerie setting."
+}

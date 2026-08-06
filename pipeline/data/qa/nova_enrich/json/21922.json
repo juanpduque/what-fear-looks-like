@@ -1,0 +1,42 @@
+{
+  "title_text": "SEA BEAST",
+  "credits_text": "MIRIAM MCDONALD CORIN NEMEC DANIEL WISLER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IT'S A FRENZIED FRENZY!",
+  "mood": [
+    "horror",
+    "thriller",
+    "action",
+    "adventure",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 1.0,
+  "animal": 1.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "nudity"
+  ],
+  "moderation_notes": "Contains partial nudity and intense creature violence.",
+  "description": "A woman in a bikini stands in water surrounded by menacing sea creatures, with a dramatic and ominous atmosphere."
+}

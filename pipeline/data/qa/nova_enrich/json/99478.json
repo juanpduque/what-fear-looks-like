@@ -1,0 +1,41 @@
+{
+  "title_text": "I AM ZOZO",
+  "credits_text": "WILL I DIE?",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YES NO",
+  "mood": [
+    "gothic",
+    "psychological",
+    "disturbing",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild blood splatters and disturbing imagery.",
+  "description": "A poster shows a distressed face peering through torn wood with the text 'I AM ZOZO' and 'WILL I DIE?' prominently displayed."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "GOBLIN CREEK",
+  "credits_text": "COREY CANNON RYAN E. JOHNSON BARRELL HAIN RACHEL G. WHITTLE TOM ZEMBROO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "survival",
+    "horror",
+    "gothic",
+    "tense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "water",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "monster"
+  ],
+  "moderation_notes": "Contains implied violence and monstrous creatures.",
+  "description": "A group of people stand together in a dark, eerie setting with goblins and a stormy background, suggesting a survival horror theme."
+}

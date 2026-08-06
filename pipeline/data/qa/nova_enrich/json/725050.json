@@ -1,0 +1,46 @@
+{
+  "title_text": "追缉女鬼",
+  "credits_text": "STALKING VAMPIRE",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "YouTube Originals",
+  "mood": [
+    "horror",
+    "comedy",
+    "supernatural",
+    "thriller",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A group of people stands together with a crowd of pale, reaching hands in the foreground. The poster features bold text and a horror-comedy theme."
+}

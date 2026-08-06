@@ -1,0 +1,42 @@
+{
+  "title_text": "KARATE GHOST",
+  "credits_text": "A BOBBY CANFIELD FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "JAMES BALSAMO PRESENTS",
+  "mood": [
+    "camp",
+    "horror",
+    "action",
+    "supernatural",
+    "retro"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.85
+    },
+    {
+      "name": "creature",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and implied violence.",
+  "description": "A comic-style poster features a zombie-like character in karate attire with lightning effects, holding a mask, suggesting a horror-comedy theme."
+}

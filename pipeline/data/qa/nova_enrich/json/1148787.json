@@ -1,0 +1,40 @@
+{
+  "title_text": "THE EYE",
+  "credits_text": "OCAM ORTIZ",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SYNODROME PICTURES PRESENTS A NETFLIX ORIGINAL HOME PRODUCTION OF A NIGHT LOOKS FILM PRODUCTION IN ASSOCIATION WITH RED PRODUCTIONS AND PIONEER MEDIA. STARRING VANNA MARCOTTIGLIO, JOE RED EMERSON, RALPH STENNER, JANE STONE, MATT MANOFREDO, JOSHUA JONES, DAVID HARRIS, JENNIFER HARRIS, MATTHEW FRANK, AUSTIN JENNINGS. PRODUCED BY JUSTINA J. MARTELL AND MATT MANOFREDO.",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "eye",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and themes of horror.",
+  "description": "A close-up of an eye with red blood dripping from the lashes, featuring the title 'THE EYE' and the name 'OCAM ORTIZ' at the top."
+}

@@ -1,0 +1,47 @@
+{
+  "title_text": "\"the gamma people\"",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Y",
+  "mood": [
+    "sci-fi",
+    "thriller",
+    "dystopia",
+    "psychological",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "radiation",
+      "conf": 0.8
+    },
+    {
+      "name": "alien",
+      "conf": 0.7
+    },
+    {
+      "name": "experiment",
+      "conf": 0.6
+    },
+    {
+      "name": "mask",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A vintage sci-fi poster features two masked figures and a couple embracing, with bold red lettering reading \"the gamma people\"."
+}

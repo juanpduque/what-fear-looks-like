@@ -1,0 +1,45 @@
+{
+  "title_text": "শপুনেরছোর",
+  "credits_text": "A FILM BY TANEEM RAHMAN ANGSHU\nTAKE KHAN FILM PRODUCTION",
+  "languages": [
+    "en",
+    "bn"
+  ],
+  "other_text": "SHOPNERGHOR",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and subtle horror elements.",
+  "description": "Poster features four individuals in a dark, eerie setting with a glowing green light and Bengali text, suggesting a supernatural horror theme."
+}

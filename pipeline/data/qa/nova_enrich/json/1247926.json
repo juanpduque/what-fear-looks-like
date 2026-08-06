@@ -1,0 +1,40 @@
+{
+  "title_text": "魔魔",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "悪全工作一對、13歳の身ばれた残肉話話 vol.4",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and disturbing imagery.",
+  "description": "A poster features a grotesque, monstrous face with blood and decay, overlaid with bold Japanese text and a DVD logo."
+}

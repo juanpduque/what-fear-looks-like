@@ -1,0 +1,46 @@
+{
+  "title_text": "THIS IS CHUCK",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "fantasy",
+    "chaotic",
+    "fantastical",
+    "aggressive"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "monster"
+  ],
+  "moderation_notes": "Contains violent and monstrous imagery, suitable for mature audiences.",
+  "description": "A vibrant poster features a group of fantastical, monstrous characters against a cosmic backdrop, with bold, stylized text reading 'THIS IS CHUCK.'"
+}

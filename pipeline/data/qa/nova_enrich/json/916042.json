@@ -1,0 +1,46 @@
+{
+  "title_text": "呪いの動物園",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "心霊体験",
+  "mood": [
+    "horror",
+    "supernatural",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.4,
+  "animal": 0.6,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic horror imagery including blood and monstrous figures.",
+  "description": "A Japanese horror poster featuring a gruesome creature, a voodoo doll, and a forest setting, with bold red and black text."
+}

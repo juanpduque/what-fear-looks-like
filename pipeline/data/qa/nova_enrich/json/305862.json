@@ -1,0 +1,39 @@
+{
+  "title_text": "HOUSE OF MIRRORS",
+  "credits_text": "JOSETTE PACINO XU RAZER BRIAN NEIL HOFF",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SOMETIMES THERAPY DOESN'T WORK FOR EVERYONE WIDESCREEN",
+  "mood": [
+    "psychological",
+    "disturbing",
+    "gothic",
+    "surreal",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "mirror",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring a distorted clown face reflected in shattered glass, with bold red and black typography and a tagline about therapy."
+}

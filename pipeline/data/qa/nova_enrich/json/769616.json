@@ -1,0 +1,46 @@
+{
+  "title_text": "Vork and the Beast",
+  "credits_text": "\"Non c'è più posto per gli uomini nella terra della bestia\"",
+  "languages": [
+    "en",
+    "it"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "fantasy",
+    "dark",
+    "mythic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.8,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild suggestion of violence through facial injuries and ominous tone.",
+  "description": "A bearded man in armor stands before a shadowy beast in a dark, eerie forest setting."
+}

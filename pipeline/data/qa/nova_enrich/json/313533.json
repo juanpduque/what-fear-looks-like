@@ -1,0 +1,46 @@
+{
+  "title_text": "THE MOTHERTOWN",
+  "credits_text": "STARRING: MARK RATHBONE PETE BENNETT DANIEL ALEXANDER KIRK WILKINSON STEVEN BROWNSHILL ANTHONY WEBSTER CARL WHARTON CRAIG GALLIMORE SOPHIE ELSBY WENDY DYER MAX VAN DER KRAAN WRITTEN AND DIRECTED BY JOHN WILLIAMS COMING SPRING 2014",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CERAMICA",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "supernatural",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "crowd",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.3,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatter and implied violence.",
+  "description": "A poster shows a gothic town hall under a full moon with crows, blood splatter, and a crowd, suggesting a horror theme."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "LA CUEVA",
+  "credits_text": "SE HABLA TODO. QUIERO QUE SE GRABARON POR QUÉ HICIMOS ESTO",
+  "languages": [
+    "es"
+  ],
+  "other_text": "CUIDADO!",
+  "mood": [
+    "dread",
+    "survival",
+    "post-apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "water",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic injuries and a distressed individual, indicating potential violence and gore.",
+  "description": "A distressed individual with visible injuries and a dirty face is shown against a blurred background, with bold Spanish text overlay."
+}

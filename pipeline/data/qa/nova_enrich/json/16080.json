@@ -1,0 +1,40 @@
+{
+  "title_text": "CRAZY EIGHTS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CB",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "hospital",
+      "conf": 0.8
+    },
+    {
+      "name": "zombie",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and gore imagery.",
+  "description": "A person stands in a dimly lit hospital corridor, covered in blood and wearing a tattered robe."
+}

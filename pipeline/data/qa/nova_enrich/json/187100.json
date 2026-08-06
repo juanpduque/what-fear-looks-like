@@ -1,0 +1,38 @@
+{
+  "title_text": "FINDERS KEEPERS",
+  "credits_text": "FEATURING WOODWARD JR. NIGHT COVINGTON MICHAEL BACHELOR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE ROOT OF ALL EVIL UNRATED COMING SOON",
+  "mood": [
+    "dread",
+    "thriller",
+    "gritty",
+    "intense",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A man with a gun and blood on his face is featured on a movie poster titled 'Finders Keepers,' with additional cast and release information."
+}

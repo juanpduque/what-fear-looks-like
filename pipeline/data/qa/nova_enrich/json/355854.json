@@ -1,0 +1,46 @@
+{
+  "title_text": "MUTANT MAN",
+  "credits_text": "HE'D LOVE TO HAVE YOU... FOR DINNER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THERE'S A CREATURE THAT LIVES IN THE BASEMENT EVERY NIGHT HE RISES A NEW WHEN PRETTY YOUNG GIRLS COME TO VISIT HE TURNS THEM INTO BEEF STEW",
+  "mood": [
+    "horror",
+    "thriller",
+    "gothic",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "Contains implied violence and sexual themes.",
+  "description": "A poster features a green, monstrous face with a skull design and text about a creature that turns young girls into beef stew."
+}

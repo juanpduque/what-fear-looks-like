@@ -1,0 +1,43 @@
+{
+  "title_text": "CAMPGROUND THE REQUEL",
+  "credits_text": "ROMAN JOSSART'S",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE CAMPGROUND REOPENS REVISITS REIMAGINES",
+  "mood": [
+    "dread",
+    "suspense",
+    "horror",
+    "forest",
+    "night"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.3,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows a dark forest scene with silhouettes of people around a campfire under a full moon, suggesting a horror theme."
+}

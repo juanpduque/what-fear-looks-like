@@ -1,0 +1,40 @@
+{
+  "title_text": "DARK STORIES",
+  "credits_text": "Tales From Beyond The Grave",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DVD",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and themes of horror.",
+  "description": "A close-up of a disturbing, decayed face with yellow teeth and dark eyes, set against a dark background, with the title 'Dark Stories' prominently displayed."
+}

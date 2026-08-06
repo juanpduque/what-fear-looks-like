@@ -1,0 +1,45 @@
+{
+  "title_text": "鬼のドジ Ver.X.4",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "得んに欲だった！",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "horror",
+    "dark",
+    "mystical"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "occult",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and supernatural themes.",
+  "description": "A poster featuring a ghostly figure in traditional attire, surrounded by Japanese text and mystical symbols in a dark, eerie setting."
+}

@@ -1,0 +1,44 @@
+{
+  "title_text": "NUN WITH A CHAINSAW",
+  "credits_text": "A Bob Geva film",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Lynn Allen, Katie Paschalidis, Natalie Espinosa",
+  "mood": [
+    "horror",
+    "camp",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "nun",
+      "conf": 0.7
+    },
+    {
+      "name": "chainsaw",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the chainsaw and horror theme.",
+  "description": "A poster shows a nun holding a chainsaw in a dimly lit setting, with a shadowy figure in the background."
+}

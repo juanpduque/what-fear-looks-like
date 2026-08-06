@@ -1,0 +1,41 @@
+{
+  "title_text": "CÂEBERRUH",
+  "credits_text": "BAZEN ÖLÜM SİZE YAKİNİŞİR\nBAZEN SİZ ONİ\nYAPIMCI\nZEKİ SİNCAR & ADEMSİNCAR\nERKAN ÇELİK HÜLYA DİKEN BARİŞ BAKTAŞ OĞUZ ÖZTAS MERİÇ AKAY ESMANUR AYDEMİR",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "SENARYO & YÖKETMEN BUGRA KEKİK",
+  "mood": [
+    "dread",
+    "terror",
+    "forest",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.1,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains horror themes and implied violence.",
+  "description": "A group of people walk through a dark forest with a menacing face looming above them, suggesting a horror film."
+}

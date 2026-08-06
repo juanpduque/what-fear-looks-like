@@ -1,0 +1,51 @@
+{
+  "title_text": "Lo Siniestro",
+  "credits_text": "Luis Ziemrowski, Paula Siero, Carlos Echevarria, con la participación especial de Laura Bove",
+  "languages": [
+    "es"
+  ],
+  "other_text": "¿ES AQUELLO QUEDEBIENDO PERMANECER OCULTO SE MANIFESTADO?",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "mystery",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "occult",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and occult themes.",
+  "description": "A poster featuring intense eyes, a haunted house, and blood dripping from the eyes, suggesting a supernatural horror theme."
+}

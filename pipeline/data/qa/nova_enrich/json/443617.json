@@ -1,0 +1,43 @@
+{
+  "title_text": "CONFESSIONS OF A HOMICIDAL PROSTITUTE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "violent",
+    "erotic",
+    "gritty",
+    "thriller",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    },
+    {
+      "name": "erotic",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.9,
+  "sexual_content": 0.7,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and sexual themes.",
+  "description": "A poster featuring a woman in a revealing outfit with a cityscape background, overlaid with red splatters resembling blood and the title text prominently displayed."
+}

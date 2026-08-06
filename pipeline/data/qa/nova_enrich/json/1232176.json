@@ -1,0 +1,50 @@
+{
+  "title_text": "恐魔女",
+  "credits_text": "地下に尽がる悪気の大大小屋",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "山鳥石小屋軽し 打止の家",
+  "mood": [
+    "gothic",
+    "haunting",
+    "surreal",
+    "dread",
+    "melancholy"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.85
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.1,
+  "monster": 0.85,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult imagery and implied violence.",
+  "description": "Collage poster features eerie scenes of ghostly figures, flames, and haunting architecture, centered around a woman and child in a dimly lit room."
+}

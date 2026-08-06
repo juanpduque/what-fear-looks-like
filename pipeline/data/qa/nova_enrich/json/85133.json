@@ -1,0 +1,46 @@
+{
+  "title_text": "ZOMBIE APOCALYPSE: REDEMPTION",
+  "credits_text": "JOHNNY GEL JOSEPH SCOTT ANTHONY FRED WILLIAMSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "action",
+    "post-apocalyptic",
+    "thriller",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.5,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and horror elements.",
+  "description": "Movie poster features four characters holding guns, with a zombie's face in the foreground and fiery background."
+}

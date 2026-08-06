@@ -1,0 +1,42 @@
+{
+  "title_text": "怪談お化け猫",
+  "credits_text": "青山良美主演 高見明男監督",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "X級 18禁",
+  "mood": [
+    "eerie",
+    "gothic",
+    "supernatural",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A vintage Japanese horror poster features a fierce cat and a woman in traditional attire, with bold red and blue colors and Japanese text."
+}

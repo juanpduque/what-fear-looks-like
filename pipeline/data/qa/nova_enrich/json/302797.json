@@ -1,0 +1,39 @@
+{
+  "title_text": "ENCOUNTERS",
+  "credits_text": "A FILM BY ANDERS J. BUKH THE WOODS HAVE A SECRET ENCOUNTERS.OK",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE KOMPANY ENTERTAINMENT",
+  "mood": [
+    "mysterious",
+    "eerie",
+    "foreboding",
+    "haunting",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "light",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.2,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, foggy forest scene with a glowing red light and a solitary figure in the distance, evoking mystery and suspense."
+}

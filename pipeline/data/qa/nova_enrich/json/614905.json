@@ -1,0 +1,45 @@
+{
+  "title_text": "BHOOT CHATURDASHI",
+  "credits_text": "DIRECTED BY SHAMIK CHAKRABORTY MAHAIR BHALUNIA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "haunting",
+    "suspenseful",
+    "disturbing",
+    "psychological",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains themes of supernatural horror and psychological distress.",
+  "description": "The poster features four intense faces with a shattered glass overlay, suggesting a supernatural horror theme."
+}

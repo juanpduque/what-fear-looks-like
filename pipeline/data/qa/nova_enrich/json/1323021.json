@@ -1,0 +1,41 @@
+{
+  "title_text": "DIE LAUGHING",
+  "credits_text": "PRODUCED BY HAUNTED MIND PRODUCTIONS A FILM BY RAIZ MOSIER STARRING ANDIE SEYM AND CASSIDY MCCARTHY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "APRIL 4TH 2025",
+  "mood": [
+    "horror",
+    "thriller",
+    "dark humor",
+    "psychological",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features a menacing clown holding a knife, suggesting potential violence.",
+  "description": "A poster shows a menacing clown with red hair and a knife, set against a dark background with bold title text."
+}

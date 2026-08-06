@@ -1,0 +1,46 @@
+{
+  "title_text": "Slasher Manor Part II",
+  "credits_text": "JAVIER CENA & JESSICA JAMES SCENES BY NATHAN MITCHELL, DAVE McCORMICK & TREVOR McCORMICK. MUSIC BY BASHIR AHMED & BRETT McCORMICK. PRODUCED BY JESSICA JAMES & JAVIER CENA. DIRECTED BY JAVIER CENA.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NR",
+  "mood": [
+    "horror",
+    "thriller",
+    "gothic",
+    "dread",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster shows a group of people facing a man holding a pitchfork, with a haunted house and full moon in the background."
+}

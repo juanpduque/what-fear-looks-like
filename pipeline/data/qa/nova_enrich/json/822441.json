@@ -1,0 +1,43 @@
+{
+  "title_text": "ReVisitant",
+  "credits_text": "USA ENTITIES: TROY YOUNG, AMY SMITH, DAWN GANER, MARKY SMITH \"REVISITANT\" WITH EMILY BATES, BRADLEY SMITH, RACHEL SMITH, LEE JOHNSON, JEN BRONKOWSKI, STEVEN SMITH, JENNIFER SMITH, STEVEN DI MICCO, JEN BRONKOWSKI PRODUCED BY JEN BRONKOWSKI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IT'S NOT THE HOUSE THAT'S HAUNTED",
+  "mood": [
+    "gothic",
+    "eerie",
+    "haunting",
+    "mysterious",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "haunted_house",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text_heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a young woman with long blonde hair in a vintage dress, set against a dark, red background with ghostly silhouettes and the title \"ReVisitant\"."
+}

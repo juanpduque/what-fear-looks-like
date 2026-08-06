@@ -1,0 +1,41 @@
+{
+  "title_text": "DEVILMAN MEMORIAL",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "fantasy",
+    "action",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "nudity"
+  ],
+  "moderation_notes": "Contains intense action scenes and partial nudity.",
+  "description": "A muscular blue-skinned character stands amidst fiery chaos with monstrous creatures nearby, showcasing intense action and partial nudity."
+}

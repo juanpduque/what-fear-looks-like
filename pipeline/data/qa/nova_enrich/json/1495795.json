@@ -1,0 +1,44 @@
+{
+  "title_text": "怪談",
+  "credits_text": "Featuring MIKA SHIRAHAMA, Directed by OLIVER ASADI",
+  "languages": [
+    "ja",
+    "en"
+  ],
+  "other_text": "NEKOMATA KODAK FILM CERO",
+  "mood": [
+    "gothic",
+    "eerie",
+    "haunting",
+    "mysterious",
+    "forest"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.1,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A black-and-white poster features a dense forest with Japanese text and credits for a film directed by Oliver Asadi."
+}

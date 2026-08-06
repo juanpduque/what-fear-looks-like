@@ -1,0 +1,46 @@
+{
+  "title_text": "GINGERDEAD MAN 2",
+  "credits_text": "THE PASSION OF THE CRUST",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BAD YEAST SHALL RISE AGAIN!",
+  "mood": [
+    "horror",
+    "dark humor",
+    "gothic",
+    "camp",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    },
+    {
+      "name": "monster",
+      "conf": 0.75
+    },
+    {
+      "name": "creature",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore, suitable for mature audiences only.",
+  "description": "A grotesque, animated gingerbread man is crucified with visible blood and injuries, set against a dark, aged background."
+}

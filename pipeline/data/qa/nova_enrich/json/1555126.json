@@ -1,0 +1,43 @@
+{
+  "title_text": "CRISTAL SANGRE & AZÚCAR",
+  "credits_text": "Crystal: blood & sugar\nUn cortometraje de: Marcos Munoz Flores\nLuz Zavala Paulina Gil Noé Botello Bárbara Zarate",
+  "languages": [
+    "es",
+    "en"
+  ],
+  "other_text": "\"Una valiente manufactura y una cruenta narrativa que mezcla la ciencia ficción y el horror\" - STUFF MX\nPremio VAS A OTRAS SELECCIÓN ORIGINAL\nANIMAL FILM FEST MMXIX\nPremio STUFF MX CORTOMETRAJE DE FICCIÓN 2019\nMayor cortometraje\nLos Angeles FilmFest\nLA QUINTA EDICIÓN\nFENACIC 2018\n12 Months Film Fest\nMONTREAL INTERNATIONALE",
+  "mood": [
+    "gothic",
+    "horror",
+    "sci-fi",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and graphic imagery.",
+  "description": "Poster features fragmented glass design with faces and text promoting the film \"Cristal Sangre & Azúcar\" directed by Marcos Munoz Flores."
+}

@@ -1,0 +1,44 @@
+{
+  "title_text": "#SLAUGHTER HOUSE",
+  "credits_text": "THERE'S NO PLACE LIKE HOME",
+  "languages": [
+    "en"
+  ],
+  "other_text": "OCTOBER 2018",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and implied violence.",
+  "description": "A poster features a person holding a large hook with a distorted face and the title \"#SLAUGHTER HOUSE\" and tagline \"THERE'S NO PLACE LIKE HOME\"."
+}

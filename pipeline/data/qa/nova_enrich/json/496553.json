@@ -1,0 +1,43 @@
+{
+  "title_text": "KAFAN",
+  "credits_text": "PRODUCED BY VIRENDRA BOHRA DIRECTED BY DHIRENDRA BOHRA MUSIC ANAND MILIND LYRICS SAMEER",
+  "languages": [
+    "en",
+    "hi"
+  ],
+  "other_text": "ROOP COMBINE'S",
+  "mood": [
+    "gothic",
+    "horror",
+    "camp",
+    "eerie",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "haunted",
+      "conf": 0.85
+    },
+    {
+      "name": "occult",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "occult",
+    "sexual"
+  ],
+  "moderation_notes": "Contains mild sexual suggestiveness and occult themes.",
+  "description": "A vintage horror poster features a ghostly figure with outstretched arms, a man in distress, and a woman in traditional attire, set against a dark, eerie background with a temple."
+}

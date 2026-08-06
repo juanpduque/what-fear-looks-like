@@ -1,0 +1,40 @@
+{
+  "title_text": "LITTLE RED RIDING HOOD",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "erotic",
+    "surreal",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.8,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "sexual"
+  ],
+  "moderation_notes": "Contains suggestive imagery and partial nudity.",
+  "description": "A dramatic poster features a woman partially covered in red fabric with a wolf nearby, evoking a gothic and erotic tone."
+}

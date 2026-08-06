@@ -1,0 +1,42 @@
+{
+  "title_text": "PHILOPHOBIA",
+  "credits_text": "OR THE FEAR OF FALLING IN LOVE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "eerie",
+    "romantic",
+    "dramatic",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "wedding",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "blood"
+  ],
+  "moderation_notes": "Contains stylized blood splatters and a dramatic, eerie atmosphere.",
+  "description": "A poster features a bride silhouette with blood splatters and a man running, titled 'Philophobia: Or the Fear of Falling in Love.'"
+}

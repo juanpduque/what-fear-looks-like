@@ -1,0 +1,39 @@
+{
+  "title_text": "SHOCK! SHOCK! SHOCK!",
+  "credits_text": "ALLEN NICKSON - BRIAN PUDDY - KELLY BOYS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests violent themes due to the knife and intense facial expression.",
+  "description": "A dark poster features a man holding a knife with bold red text reading 'SHOCK! SHOCK! SHOCK!' against a black background."
+}

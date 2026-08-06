@@ -1,0 +1,35 @@
+{
+  "title_text": "РЕСПУБЛИКА Z",
+  "credits_text": "ПЕТР СЕССОНОВ ДАМИР ЗАЙЦЕВ САЙДАМ БАРЫЛ МИХАИЛ ПЕТРОВ",
+  "languages": [
+    "ru"
+  ],
+  "other_text": "START",
+  "mood": [
+    "action",
+    "thriller",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violent action with weapons.",
+  "description": "Poster features four characters in tactical gear with guns against a stormy backdrop, promoting the action thriller \"Republic Z\"."
+}

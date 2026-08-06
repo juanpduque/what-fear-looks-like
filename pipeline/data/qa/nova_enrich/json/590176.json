@@ -1,0 +1,46 @@
+{
+  "title_text": "verano sangriento",
+  "credits_text": "GILBERTO TRUJILLO ELEAZAR GARCIA Jr. RAUL TRUJILLO STEPHANIE SALAS MARCOS DE ANDA GRACIELA VILLAREAL MÚSICA: EDGAR SOSA FOTOGRAFIA: JOSÉ LUIS VERA ARGUMENTO Y DIRECCIÓN: JORGE MANRIQUE MEXCINEMA VIDEO DE MÉXICO S.A. DE C.V.",
+  "languages": [
+    "es"
+  ],
+  "other_text": "LOS CONOCIDOS TERRIBLES VAMPIROS DE SAN JUAN DE LAS TRUNDAS!",
+  "mood": [
+    "horror",
+    "gothic",
+    "supernatural",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains horror themes and implied violence.",
+  "description": "A woman stands in front of a house with a shadowy figure and a monstrous creature in the background, suggesting a horror theme."
+}

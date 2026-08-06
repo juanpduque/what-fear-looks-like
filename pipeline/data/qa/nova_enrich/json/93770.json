@@ -1,0 +1,47 @@
+{
+  "title_text": "SAVAGE MAN SAVAGE BEAST",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TOO VIOLENT TO BE SHOWN ANYWHERE ELSE IN THE WORLD. EVERYTHING YOU SEE IS REAL! SEE A MAN TORN APART AND EATEN ALIVE BY LIONS WHILE HIS FAMILY WATCHES IN HORROR. SEE BIZARRE SEXUAL PERVERSIONS. BEYOND YOUR WILDEST FANTASIES. SEE BOUNTY HUNTERS CASTRATE, MUTILATE AND RAPE THEIR PRISONERS. SEE TEENAGE KILLERS MASSACRE AND EAT THEIR FATHER'S CORPSES.",
+  "mood": [
+    "violent",
+    "shocking",
+    "exploitative",
+    "taboo",
+    "provocative"
+  ],
+  "fear_labels": [
+    {
+      "name": "violence",
+      "conf": 0.95
+    },
+    {
+      "name": "sexual",
+      "conf": 0.85
+    },
+    {
+      "name": "horror",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.7,
+  "animal": 0.3,
+  "blood_gore": 0.6,
+  "violence": 0.95,
+  "sexual_content": 0.85,
+  "sensitive": [
+    "violence",
+    "sexual",
+    "nudity"
+  ],
+  "moderation_notes": "Contains graphic violence and explicit sexual content; not suitable for minors.",
+  "description": "A lurid poster featuring intense, graphic imagery and sensationalized text promoting a controversial film."
+}

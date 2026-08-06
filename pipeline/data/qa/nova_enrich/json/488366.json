@@ -1,0 +1,46 @@
+{
+  "title_text": "6:66PM",
+  "credits_text": "EVIL HAS AN HOUR TO KILL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "supernatural",
+    "intense",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.2,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A group of people stand in front of a dark, ominous house with a clock showing 6:66 PM, with one person holding a weapon and blood visible on their clothing."
+}

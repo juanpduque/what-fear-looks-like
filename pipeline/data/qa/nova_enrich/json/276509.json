@@ -1,0 +1,39 @@
+{
+  "title_text": "A Gun in the House",
+  "credits_text": "Sally Struthers",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Did She Have the Right to Protect Herself... Right to the Law?",
+  "mood": [
+    "tense",
+    "suspenseful",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts a woman holding a gun, suggesting potential violence.",
+  "description": "A woman holds a gun in front of a house with a dramatic sky. The title and tagline question self-defense rights."
+}

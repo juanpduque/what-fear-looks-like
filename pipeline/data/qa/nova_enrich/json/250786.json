@@ -1,0 +1,39 @@
+{
+  "title_text": "กาลวิ",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "วาคตีดีด กรดสุดีด อังค้าบัด พิวสุดีดด พิวสุดีดด",
+  "mood": [
+    "action",
+    "adventure",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.9,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a large crocodile.",
+  "description": "A man and woman confront a large crocodile in a jungle setting, with other characters visible in the background."
+}

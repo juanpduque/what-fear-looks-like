@@ -1,0 +1,46 @@
+{
+  "title_text": "ZombieXtreme",
+  "credits_text": "JULIÁN LARA'S\nA DEADHUNTER NEVER RESTS\nEVIL NIGHT PRODUCTIONS PRESENTS A FILM BY JULIÁN LARA \"ZOMBIE XTREME\"\nFEATURING MARY PAIN FRANCISCO J. EXPO... [truncated for brevity]",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WWW.JULIANLARA.COM READ DEADHUNTER THE COMIC @50K",
+  "mood": [
+    "action",
+    "horror",
+    "thriller",
+    "dark",
+    "gritty"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    },
+    {
+      "name": "face",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and horror elements typical of zombie genre.",
+  "description": "A man stands on a rooftop holding a gun with a zombie clown nearby, set against a full moon backdrop."
+}

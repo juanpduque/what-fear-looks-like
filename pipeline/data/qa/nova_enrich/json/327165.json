@@ -1,0 +1,42 @@
+{
+  "title_text": "KILLER KART",
+  "credits_text": "COLLEGE OF MOTION PICTURE ARTS, \"KILLER KART,\" CHRISTINE PORRIZQUI, RAY BOYCOARD #DANIEL MOLERET, \"TERMINAL BLEVINS, ALBRETT DALEY\" #JON KAUSE, \"AUDREY ARBANK,\" JAMES J. STENEY FLORIDA STATE UNIVERSITY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DON'T PUSH IT",
+  "mood": [
+    "horror",
+    "thriller",
+    "violent",
+    "disturbing",
+    "gory"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.8
+    },
+    {
+      "name": "text",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic depictions of blood and implied violence.",
+  "description": "A poster shows a shopping cart with red splatters resembling blood, titled \"Killer Kart\" with a warning \"Don't Push It.\""
+}

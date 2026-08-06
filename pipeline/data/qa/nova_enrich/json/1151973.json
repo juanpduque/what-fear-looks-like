@@ -1,0 +1,43 @@
+{
+  "title_text": "TABA HOKA STORIES FROM THE DEAD",
+  "credits_text": "DIRECTOR AND EDITOR DD KINLEY PRODUCER AND STORY DORJI WANGCHUK ... ROLLING IMAGE PICTURES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ORJIGS PRODUCTION",
+  "mood": [
+    "dread",
+    "gothic",
+    "mystery",
+    "haunting",
+    "foreboding"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    },
+    {
+      "name": "knife",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A solitary figure stands in front of a car with headlights on, holding a knife in a foggy, eerie forest setting."
+}

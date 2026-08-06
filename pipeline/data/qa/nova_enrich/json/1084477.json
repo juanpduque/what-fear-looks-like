@@ -1,0 +1,40 @@
+{
+  "title_text": "死屋",
+  "credits_text": "消滅31",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "残された者への告白",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.5,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "blood"
+  ],
+  "moderation_notes": "Contains implied violence and blood imagery.",
+  "description": "A poster shows a helmet with eyes, a pouring bottle, and Japanese text indicating a gothic horror theme."
+}

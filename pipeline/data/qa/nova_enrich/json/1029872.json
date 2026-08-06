@@ -1,0 +1,40 @@
+{
+  "title_text": "NÃO VAI LÁ FORA",
+  "credits_text": "UM FILME DE GESTÃO AGUIAR",
+  "languages": [
+    "pt"
+  ],
+  "other_text": "BRASIL AGUIAR VERGUEIRO",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.95,
+  "monster": 0.0,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and a knife, indicating potential violence and gore.",
+  "description": "A poster shows a large knife with red blood splatter and text in Portuguese, suggesting a horror or thriller theme."
+}

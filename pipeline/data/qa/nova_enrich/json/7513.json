@@ -1,0 +1,46 @@
+{
+  "title_text": "GHOST TRAIN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NCJ",
+  "mood": [
+    "eerie",
+    "haunting",
+    "mysterious",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and violent imagery.",
+  "description": "A dark poster features a ghostly hand reaching towards a woman's face with blood and eerie lighting, titled 'GHOST TRAIN.'"
+}

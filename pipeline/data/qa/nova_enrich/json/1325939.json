@@ -1,0 +1,46 @@
+{
+  "title_text": "BLOOD / STREAM",
+  "credits_text": "FROM THE PRODUCERS OF \"CLOWNFACE\" BODY HORROR MEETS FOLK HORROR IN THE DIGITAL AGE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "surreal",
+    "gothic",
+    "digital",
+    "folk horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.5,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A collage of intense, distorted images with the title \"BLOOD / STREAM\" prominently displayed, suggesting a blend of body and folk horror in a digital setting."
+}

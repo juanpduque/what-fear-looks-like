@@ -1,0 +1,47 @@
+{
+  "title_text": "屠鬼營",
+  "credits_text": "Vampire Settle-on Police Camp",
+  "languages": [
+    "en",
+    "zh"
+  ],
+  "other_text": "鬼片大王 北一家血魔現身 血魔現身大戰鬼片大王",
+  "mood": [
+    "horror",
+    "gothic",
+    "supernatural",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror elements and occult themes.",
+  "description": "The poster features a menacing green monster with sharp teeth, flanked by three characters in dramatic poses, set against a dark background with bold Chinese and English text."
+}

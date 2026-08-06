@@ -1,0 +1,38 @@
+{
+  "title_text": "히어로 HERO",
+  "credits_text": "",
+  "languages": [
+    "ko"
+  ],
+  "other_text": "여자들 진짜 무섭다 이재식상을 기대해봐!",
+  "mood": [
+    "intense",
+    "suspenseful",
+    "psychological",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic poster featuring intense close-ups of four individuals with a gothic house in the background, suggesting a psychological thriller."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "FURRY NIGHTS",
+  "credits_text": "A J. ZACHARY FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "They're coming FUR you!",
+  "mood": [
+    "horror",
+    "thriller",
+    "supernatural",
+    "dark humor",
+    "creepy"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.95,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood, suitable for mature audiences.",
+  "description": "Poster shows three anthropomorphic animal characters against a moonlit background, with a tagline warning of their arrival."
+}

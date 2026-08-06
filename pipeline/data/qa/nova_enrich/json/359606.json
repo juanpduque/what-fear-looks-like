@@ -1,0 +1,43 @@
+{
+  "title_text": "BABY DID A BAT BAY THING",
+  "credits_text": "THE WORLD MAY HAVE ENDED, BUT THE FUN HAS ONLY JUST BEGUN\nMATT RAGAN, NICK GASS, JENNA MARIE BASS, MATTHEW R. GOODMAN, NICK KOSSA, JENNY MCCORMICK, JORDAN PRATT, NICKY SMITH, JORDAN ELIOT, NICKY SMITH, JORDAN PRATT, JENNA MARIE BASS, MATTHEW R. GOODMAN, MATT RAGAN, STUART SIMPSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "LAST ART!",
+  "mood": [
+    "camp",
+    "horror-comedy",
+    "post-apocalyptic",
+    "action",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster shows two characters in front of a car, one holding a rifle, with bats and text indicating a horror-comedy theme."
+}

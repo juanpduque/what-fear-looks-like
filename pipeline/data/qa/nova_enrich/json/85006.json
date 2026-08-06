@@ -1,0 +1,40 @@
+{
+  "title_text": "HORROR HOUSE on highway 5",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "suspense",
+    "gothic",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "sexual"
+  ],
+  "moderation_notes": "The poster includes suggestive imagery of a woman in a compromising position.",
+  "description": "A vintage horror poster shows a distressed woman on the ground with a looming figure above her, set against a dark house on a highway."
+}

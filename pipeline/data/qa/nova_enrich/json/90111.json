@@ -1,0 +1,39 @@
+{
+  "title_text": "El hombre y el monstruo",
+  "credits_text": "Enrique Rambal, Abel Salazar, Martha Roth, Orella Guilmain, Dirigida por Rafael Baledon, Regia Films",
+  "languages": [
+    "es"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "dramatic",
+    "intense",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic horror poster featuring a monstrous, hairy creature with sharp teeth and two men, one with a stern expression."
+}

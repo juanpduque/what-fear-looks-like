@@ -1,0 +1,41 @@
+{
+  "title_text": "URBAN SCUMBEAGS VS COUNTRYSIDE ZOMBIES",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "other_text": "\"WENN ES IN DER STADT KEINEN PLATZ MEHR GIBT... ZIEHEN DIE TOTEN AUF'S LAND...\"",
+  "mood": [
+    "horror",
+    "action",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "zombie",
+      "conf": 0.95
+    },
+    {
+      "name": "hand",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic zombie imagery and implied violence.",
+  "description": "A poster featuring a decaying zombie hand with the title 'Urban Scumbeags vs Countryside Zombies' and a German tagline."
+}

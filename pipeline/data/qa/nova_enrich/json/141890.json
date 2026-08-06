@@ -1,0 +1,39 @@
+{
+  "title_text": "DEVIL SPECIES",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A mistake of experiment may transform human into devil species",
+  "mood": [
+    "horror",
+    "sci-fi",
+    "thriller",
+    "dystopia",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Movie poster features three characters in front of a monstrous, demonic face with glowing red eyes. The title \"Devil Species\" is prominently displayed."
+}

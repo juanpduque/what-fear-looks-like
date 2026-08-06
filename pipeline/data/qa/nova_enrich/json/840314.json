@@ -1,0 +1,44 @@
+{
+  "title_text": "感染列島",
+  "credits_text": "",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "第2弾",
+  "mood": [
+    "dread",
+    "apocalyptic",
+    "surreal",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "crowd",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "Poster features a group of ghostly figures with pale faces and dark clothing, set against a dark background with Japanese text."
+}

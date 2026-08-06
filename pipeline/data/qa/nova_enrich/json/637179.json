@@ -1,0 +1,46 @@
+{
+  "title_text": "MUSIC STORE MASSACRE",
+  "credits_text": "DEATH TO THOU WHO HATE\nA Film By GORDON PRICE\nSTARRING - DAVE MEADOWS - DIANE SOKOLOWICH - WENDY DILLARD BRIAN HERSEY - RYANNE LYNCH - FRED INGELS - APRYL CROWELL JEFF MOORE - JOHNNY TRASH - TIM HEALY - FRANK BLISS AND GORDON PRICE AS GRADY\nWritten and Directed by Gordon Price - Original Score by Stacey Heydon - Cinematography by Robert Solomon Edited by Gordon Price and Fred Ingels",
+  "languages": [
+    "en"
+  ],
+  "other_text": "POLICE",
+  "mood": [
+    "horror",
+    "thriller",
+    "violent",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "violence",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.2,
+  "blood_gore": 0.5,
+  "violence": 0.8,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and disturbing imagery.",
+  "description": "Poster for horror film featuring intense scenes of violence and a dramatic title, with cast and crew credits listed below."
+}

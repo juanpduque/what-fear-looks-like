@@ -1,0 +1,39 @@
+{
+  "title_text": "AMERICAN expose",
+  "credits_text": "Devin DeHaven Presents",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Absence Of Light\nWARNING: CONTAINS GRAPHIC FOOTAGE",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "graphic"
+  ],
+  "moderation_notes": "Contains graphic footage as warned on the poster.",
+  "description": "Poster shows two silhouetted figures kneeling before a glowing window in a dark, eerie landscape with a warning about graphic content."
+}

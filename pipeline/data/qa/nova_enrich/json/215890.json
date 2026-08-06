@@ -1,0 +1,39 @@
+{
+  "title_text": "DAY OF THE DEAD",
+  "credits_text": "THE LEGACY OF WORLD'S END",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "apocalyptic",
+    "horror",
+    "sci-fi",
+    "dystopia",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A bold yellow poster features large black text reading \"DAY OF THE DEAD\" with a stylized face and the tagline \"THE LEGACY OF WORLD'S END\"."
+}

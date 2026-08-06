@@ -1,0 +1,43 @@
+{
+  "title_text": "STORM CELL",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "chaotic",
+    "dangerous",
+    "thrill",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "storm",
+      "conf": 0.9
+    },
+    {
+      "name": "explosion",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    },
+    {
+      "name": "lightning",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dramatic poster shows a stormy scene with lightning, an explosion, and a vehicle on a road, suggesting intense action and danger."
+}

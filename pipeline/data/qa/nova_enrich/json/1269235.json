@@ -1,0 +1,42 @@
+{
+  "title_text": "武哥音電61",
+  "credits_text": "武哥音電",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "武哥音電就は武哥音電後10years",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic violence and occult themes.",
+  "description": "A dark, eerie poster features a ghostly figure, a crescent moon, and a shadowy hand reaching out, suggesting a supernatural horror theme."
+}

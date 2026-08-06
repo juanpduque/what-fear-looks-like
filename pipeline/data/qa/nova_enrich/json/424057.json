@@ -1,0 +1,45 @@
+{
+  "title_text": "WAR TIME",
+  "credits_text": "STARRING U.N.I.T. as seen in the BBC TV series DOCTOR WHO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "J.N.",
+  "mood": [
+    "dramatic",
+    "intense",
+    "action",
+    "historical",
+    "sci-fi"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "soldier",
+      "conf": 0.8
+    },
+    {
+      "name": "explosion",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts intense war scenes with potential violence.",
+  "description": "A dramatic poster featuring soldiers in a war-torn setting with explosions and flames, promoting the BBC series Doctor Who."
+}

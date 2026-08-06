@@ -1,0 +1,40 @@
+{
+  "title_text": "O RETRATO DO MAL",
+  "credits_text": "BASEADO NA OBRA DE JAYME CORTEZ PRUDUZIDO E DIRIGIDO POR MARCIO JR. E MARCIA DERETTI RETRATOS ADAPTADOS MARCIO JR. ANIMAÇÃO FABRÍCIO DE CASTRO DIREÇÃO DE ARTE MARCIO JR. CINÁRIO FABRÍCIO DE CASTRO JAYME CORTEZ DIREÇÃO DE ATORES MARCIO JR. ATÓRIOS DUCA RODRIGUES EVERSON CANDIDO MONTAGEM RILDO FARIAS TRILHA SONORA DENIS DE PAULA DESENHO DE SÃO THIAGO CAMARGO ASSISTENTES DE PRODUÇÃO RAFAEL FRANÇA NICOLAS DERETTI MMARTE PRODUÇÕES 2021.",
+  "languages": [
+    "pt"
+  ],
+  "other_text": "MMARTE",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.8,
+  "person": 0.6,
+  "animal": 0.1,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and monstrous imagery.",
+  "description": "A black-and-white poster features a chaotic, surreal scene with monstrous figures and dramatic text, evoking a gothic and haunting atmosphere."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "THE MANIKIN VHS",
+  "credits_text": "A RUSLAN FILMS PRODUCTION\nCAVIN R | JAYDEN A | REMY A",
+  "languages": [
+    "en"
+  ],
+  "other_text": "4-24-22 18:38:10 THURS 4",
+  "mood": [
+    "disturbing",
+    "gritty",
+    "psychological",
+    "thriller",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and disturbing visual elements.",
+  "description": "A dark poster features a stylized head with blood splatters, glitch effects, and bold text reading 'THE MANIKIN VHS' by Ruslan Films."
+}

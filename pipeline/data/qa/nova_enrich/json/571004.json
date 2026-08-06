@@ -1,0 +1,50 @@
+{
+  "title_text": "MASACRE EN TEQUES",
+  "credits_text": "OPERA PRIMA DEL CCC DIRIGIDA POR RODRIGO HERNÁNDEZ CRUZ",
+  "languages": [
+    "es"
+  ],
+  "other_text": "EL CENTRO DE CAPACITACIÓN CINEMATOGRÁFICA A.C. EL FONDO PARA LA PRODUCCIÓN CINEMATOGRÁFICA DE CALIDAD PORORINA - MÉXICO",
+  "mood": [
+    "gothic",
+    "dread",
+    "horror",
+    "gory",
+    "macabre"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    },
+    {
+      "name": "monster",
+      "conf": 0.75
+    },
+    {
+      "name": "chains",
+      "conf": 0.8
+    },
+    {
+      "name": "horror",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 0.0,
+  "animal": 0.7,
+  "blood_gore": 0.9,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gory imagery.",
+  "description": "A horror movie poster featuring suspended animal carcasses and bold red text, set in a dark, eerie environment."
+}

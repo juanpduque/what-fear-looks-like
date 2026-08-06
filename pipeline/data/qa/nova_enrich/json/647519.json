@@ -1,0 +1,46 @@
+{
+  "title_text": "HECATOMBE",
+  "credits_text": "Elenco: Fabián Pollo Moreno - Vic Cicuta - y la presentación de Javier Calderón Producción Ejecutiva: Ayelén Tossir - Dirección de Fotografía: Martín Iglesias Hillcoat - El Chicho - Federico Gaido - Arte y FX: Hugo Caçeres Dani Zalenco - María Celeste Noguera - Adela Sagna Banda sonora total: Leandro Bajar Otra inmunidia de Georgina Zanardi",
+  "languages": [
+    "es"
+  ],
+  "other_text": "POST MORTEM MIERCOLES 27/11 20:00 HS. SABADO 30/11 14:15 HS. VUELTA DE OBLIGADO 2199",
+  "mood": [
+    "horror",
+    "gothic",
+    "camp",
+    "violent",
+    "grotesque"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.75,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and grotesque creatures.",
+  "description": "Poster features a group of ghoulish characters with blood and skulls, promoting a horror event titled 'HECATOMBE' with showtimes listed."
+}

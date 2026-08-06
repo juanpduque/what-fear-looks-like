@@ -1,0 +1,39 @@
+{
+  "title_text": "METHODIC",
+  "credits_text": "A FILM BY CHRIS R. NOTARILE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NETWORKS (adjective) Definitions: Proceeding in a set, systematic pattern. Thoroughly planned.",
+  "mood": [
+    "dread",
+    "thriller",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster implies potential violence due to the weapon and ominous setting.",
+  "description": "A man stands in front of a house holding a hammer, with a dark, eerie atmosphere suggesting a thriller or horror theme."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "The Night Nurse",
+  "credits_text": "A TIM DELANEY FILM EMILY JOHNSON MITCHELL BRUN LEANNE ROBINSON NICK JORDAN ROBERTA PISEK FRANCESCA ANDERSON ELLEN TOONEY TIM DELANEY LUCAS ASSIS WILLIAM SCARLES CARAN MORIN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CANADA $9.95 US $8.95",
+  "mood": [
+    "dread",
+    "suspense",
+    "gothic",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "hallway",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood imagery.",
+  "description": "A poster shows a shadowy figure in a wheelchair down a dimly lit hospital hallway, with a large red eye in the background and the title 'The Night Nurse' prominently displayed."
+}

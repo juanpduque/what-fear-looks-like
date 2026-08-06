@@ -1,0 +1,43 @@
+{
+  "title_text": "FRANKENSTEIN",
+  "credits_text": "PATRICK BERGIN RANDY QUAID",
+  "languages": [
+    "en"
+  ],
+  "other_text": "The legend has been told... The real story is the most horrifying of all.",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "dark",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark poster features a monstrous hand and an eerie face with lightning, promoting the film 'Frankenstein' starring Patrick Bergin and Randy Quaid."
+}

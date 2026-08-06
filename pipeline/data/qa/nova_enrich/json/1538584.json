@@ -1,0 +1,41 @@
+{
+  "title_text": "Frankenstein",
+  "credits_text": "by Mary Wollstonecraft Shelley",
+  "languages": [
+    "en"
+  ],
+  "other_text": "©1978 Listening Library, Inc., Old Greenwich, Conn. 06870",
+  "mood": [
+    "gothic",
+    "haunting",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "moon",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.4,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A gothic poster features a dark silhouette against a moonlit forest, evoking mystery and haunting themes."
+}

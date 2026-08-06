@@ -1,0 +1,46 @@
+{
+  "title_text": "ZIGAR ZOMBIE",
+  "credits_text": "Una película de: ALEX QUEZADA\nFondo para el desarrollo cinematográfico\nQuevil Films\nCOPRODUCCIÓN MUNDIAL\nFX",
+  "languages": [
+    "es"
+  ],
+  "other_text": "jefe us",
+  "mood": [
+    "horror",
+    "gritty",
+    "survival",
+    "apocalyptic",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore.",
+  "description": "A poster for \"Zigar Zombie\" shows a zombie attacking a person amidst a chaotic, bloody scene with dramatic lighting and intense colors."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "SKINNED",
+  "credits_text": "A FILM BY ANDRÉ BORELLI\nWITH PABLO DIEGO GARCIA & MARCELA GIBO\nASSOCIATE EXECUTIVE PRODUCTION BY DYLAN VAN DEN BOSCH\nMOMO FOREX KIRELLOS AWAD\nSKY PICTURES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HDC",
+  "mood": [
+    "dread",
+    "psychological",
+    "disturbing",
+    "violent",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.95,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A poster features a close-up of a person with a knife dripping blood, suggesting a horror or thriller theme."
+}

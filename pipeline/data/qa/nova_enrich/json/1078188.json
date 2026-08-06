@@ -1,0 +1,45 @@
+{
+  "title_text": "FUROCIOUS",
+  "credits_text": "Eve what its worth",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "dangerous",
+    "threatening",
+    "aggressive",
+    "fierce"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "animal",
+      "conf": 0.95
+    },
+    {
+      "name": "text",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.95,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features a menacing bear silhouette with sharp teeth, suggesting potential violence.",
+  "description": "A bold red poster displays a menacing black bear silhouette with sharp teeth and the title FUROCIOUS above it."
+}

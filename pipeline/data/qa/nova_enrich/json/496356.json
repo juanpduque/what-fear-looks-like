@@ -1,0 +1,49 @@
+{
+  "title_text": "TANTRIK SHARTI",
+  "credits_text": "Written & Directed by: RAJESH GUPTA Music by: P. ARVIND",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SYNTHA CINEMA'S PRESENTS",
+  "mood": [
+    "supernatural",
+    "horror",
+    "intense",
+    "dramatic",
+    "mystical"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    },
+    {
+      "name": "lightning",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and mild horror elements.",
+  "description": "A colorful poster featuring a group of people, a large eye, and supernatural imagery, suggesting a horror or occult theme."
+}

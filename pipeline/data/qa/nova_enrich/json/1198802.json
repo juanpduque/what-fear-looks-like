@@ -1,0 +1,40 @@
+{
+  "title_text": "eccentric",
+  "credits_text": "THIS DRUG IS KILLER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "snake",
+      "conf": 0.9
+    },
+    {
+      "name": "text",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.9,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and a snake, suggesting violent themes.",
+  "description": "A poster shows a hand gripping a large snake with blood on fingers, with bold text reading 'eccentric' and the tagline 'THIS DRUG IS KILLER.'"
+}

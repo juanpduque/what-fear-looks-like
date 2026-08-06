@@ -1,0 +1,480 @@
+=== community_72k RELABELS chain start Tue Aug  4 12:17:48 UTC 2026 ===
+Completed 227 Bytes/227 Bytes (4.3 KiB/s) with 1 file(s) remainingCompleted 256.0 KiB/346.5 KiB (4.2 MiB/s) with 1 file(s) remainingCompleted 346.5 KiB/346.5 KiB (5.5 MiB/s) with 1 file(s) remainingdownload: s3://sagemaker-studio-a5572760/wflike-community-72k/input/qa/skip_labels_ids.txt to data/qa/community_72k/skip_labels_ids.txt
+Completed 256.0 KiB/3.0 MiB (1.8 MiB/s) with 1 file(s) remainingCompleted 512.0 KiB/3.0 MiB (3.6 MiB/s) with 1 file(s) remainingCompleted 768.0 KiB/3.0 MiB (5.3 MiB/s) with 1 file(s) remainingCompleted 1.0 MiB/3.0 MiB (7.0 MiB/s) with 1 file(s) remaining  Completed 1.2 MiB/3.0 MiB (8.7 MiB/s) with 1 file(s) remaining  Completed 1.5 MiB/3.0 MiB (10.3 MiB/s) with 1 file(s) remaining Completed 1.8 MiB/3.0 MiB (11.9 MiB/s) with 1 file(s) remaining Completed 2.0 MiB/3.0 MiB (13.5 MiB/s) with 1 file(s) remaining Completed 2.2 MiB/3.0 MiB (15.1 MiB/s) with 1 file(s) remaining Completed 2.5 MiB/3.0 MiB (16.7 MiB/s) with 1 file(s) remaining Completed 2.8 MiB/3.0 MiB (18.2 MiB/s) with 1 file(s) remaining Completed 3.0 MiB/3.0 MiB (19.6 MiB/s) with 1 file(s) remaining Completed 3.0 MiB/3.0 MiB (19.6 MiB/s) with 1 file(s) remaining download: s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv to data/qa/community_72k/rekognition_community_72k.csv
+Completed 17.8 KiB/16.0 MiB (168.8 KiB/s) with 1 file(s) remainingCompleted 273.8 KiB/16.0 MiB (1.6 MiB/s) with 1 file(s) remaining Completed 529.8 KiB/16.0 MiB (3.2 MiB/s) with 1 file(s) remaining Completed 785.8 KiB/16.0 MiB (4.7 MiB/s) with 1 file(s) remaining Completed 1.0 MiB/16.0 MiB (5.8 MiB/s) with 1 file(s) remaining   Completed 1.3 MiB/16.0 MiB (7.2 MiB/s) with 1 file(s) remaining   Completed 1.5 MiB/16.0 MiB (8.6 MiB/s) with 1 file(s) remaining   Completed 1.8 MiB/16.0 MiB (10.0 MiB/s) with 1 file(s) remaining  Completed 2.0 MiB/16.0 MiB (11.4 MiB/s) with 1 file(s) remaining  Completed 2.3 MiB/16.0 MiB (12.8 MiB/s) with 1 file(s) remaining  Completed 2.5 MiB/16.0 MiB (14.0 MiB/s) with 1 file(s) remaining  Completed 2.8 MiB/16.0 MiB (14.9 MiB/s) with 1 file(s) remaining  Completed 3.0 MiB/16.0 MiB (16.2 MiB/s) with 1 file(s) remaining  Completed 3.3 MiB/16.0 MiB (17.4 MiB/s) with 1 file(s) remaining  Completed 3.5 MiB/16.0 MiB (18.5 MiB/s) with 1 file(s) remaining  Completed 3.8 MiB/16.0 MiB (19.3 MiB/s) with 1 file(s) remaining  Completed 4.0 MiB/16.0 MiB (20.4 MiB/s) with 1 file(s) remaining  Completed 4.3 MiB/16.0 MiB (20.6 MiB/s) with 1 file(s) remaining  Completed 4.5 MiB/16.0 MiB (21.6 MiB/s) with 1 file(s) remaining  Completed 4.8 MiB/16.0 MiB (22.6 MiB/s) with 1 file(s) remaining  Completed 5.0 MiB/16.0 MiB (23.5 MiB/s) with 1 file(s) remaining  Completed 5.3 MiB/16.0 MiB (24.1 MiB/s) with 1 file(s) remaining  Completed 5.5 MiB/16.0 MiB (25.2 MiB/s) with 1 file(s) remaining  Completed 5.8 MiB/16.0 MiB (26.2 MiB/s) with 1 file(s) remaining  Completed 6.0 MiB/16.0 MiB (27.2 MiB/s) with 1 file(s) remaining  Completed 6.3 MiB/16.0 MiB (28.2 MiB/s) with 1 file(s) remaining  Completed 6.5 MiB/16.0 MiB (29.1 MiB/s) with 1 file(s) remaining  Completed 6.8 MiB/16.0 MiB (29.8 MiB/s) with 1 file(s) remaining  Completed 7.0 MiB/16.0 MiB (30.4 MiB/s) with 1 file(s) remaining  Completed 7.3 MiB/16.0 MiB (31.2 MiB/s) with 1 file(s) remaining  Completed 7.5 MiB/16.0 MiB (31.9 MiB/s) with 1 file(s) remaining  Completed 7.8 MiB/16.0 MiB (32.8 MiB/s) with 1 file(s) remaining  Completed 8.0 MiB/16.0 MiB (33.3 MiB/s) with 1 file(s) remaining  Completed 8.3 MiB/16.0 MiB (31.0 MiB/s) with 1 file(s) remaining  Completed 8.5 MiB/16.0 MiB (30.7 MiB/s) with 1 file(s) remaining  Completed 8.8 MiB/16.0 MiB (30.6 MiB/s) with 1 file(s) remaining  Completed 9.0 MiB/16.0 MiB (30.5 MiB/s) with 1 file(s) remaining  Completed 9.3 MiB/16.0 MiB (30.6 MiB/s) with 1 file(s) remaining  Completed 9.5 MiB/16.0 MiB (30.2 MiB/s) with 1 file(s) remaining  Completed 9.8 MiB/16.0 MiB (30.1 MiB/s) with 1 file(s) remaining  Completed 10.0 MiB/16.0 MiB (29.9 MiB/s) with 1 file(s) remaining Completed 10.3 MiB/16.0 MiB (30.0 MiB/s) with 1 file(s) remaining Completed 10.5 MiB/16.0 MiB (30.4 MiB/s) with 1 file(s) remaining Completed 10.8 MiB/16.0 MiB (30.8 MiB/s) with 1 file(s) remaining Completed 11.0 MiB/16.0 MiB (31.1 MiB/s) with 1 file(s) remaining Completed 11.3 MiB/16.0 MiB (31.5 MiB/s) with 1 file(s) remaining Completed 11.5 MiB/16.0 MiB (31.9 MiB/s) with 1 file(s) remaining Completed 11.8 MiB/16.0 MiB (32.2 MiB/s) with 1 file(s) remaining Completed 12.0 MiB/16.0 MiB (32.6 MiB/s) with 1 file(s) remaining Completed 12.3 MiB/16.0 MiB (32.9 MiB/s) with 1 file(s) remaining Completed 12.5 MiB/16.0 MiB (33.3 MiB/s) with 1 file(s) remaining Completed 12.8 MiB/16.0 MiB (33.6 MiB/s) with 1 file(s) remaining Completed 13.0 MiB/16.0 MiB (33.9 MiB/s) with 1 file(s) remaining Completed 13.3 MiB/16.0 MiB (34.2 MiB/s) with 1 file(s) remaining Completed 13.5 MiB/16.0 MiB (34.6 MiB/s) with 1 file(s) remaining Completed 13.8 MiB/16.0 MiB (34.9 MiB/s) with 1 file(s) remaining Completed 14.0 MiB/16.0 MiB (35.2 MiB/s) with 1 file(s) remaining Completed 14.3 MiB/16.0 MiB (35.6 MiB/s) with 1 file(s) remaining Completed 14.5 MiB/16.0 MiB (35.9 MiB/s) with 1 file(s) remaining Completed 14.8 MiB/16.0 MiB (36.2 MiB/s) with 1 file(s) remaining Completed 15.0 MiB/16.0 MiB (36.5 MiB/s) with 1 file(s) remaining Completed 15.3 MiB/16.0 MiB (36.9 MiB/s) with 1 file(s) remaining Completed 15.5 MiB/16.0 MiB (37.3 MiB/s) with 1 file(s) remaining Completed 15.8 MiB/16.0 MiB (37.6 MiB/s) with 1 file(s) remaining Completed 16.0 MiB/16.0 MiB (38.0 MiB/s) with 1 file(s) remaining download: s3://sagemaker-studio-a5572760/wflike-community-72k/results/tmdb_horror_ids.csv to data/qa/community_72k/tmdb_horror_ids.csv
+--- S3 write probe ---
+Completed 38 Bytes/38 Bytes (423 Bytes/s) with 1 file(s) remainingupload: data/qa/community_72k/S3_PROBE to s3://sagemaker-studio-a5572760/wflike-community-72k/results/S3_PROBE
+S3 write OK
+--- run community_72k_aws_worker --phase labels ---
+community_72k_aws_worker bucket=sagemaker-studio-a5572760 prefix=wflike-community-72k phase=labels
+ids loaded=68,011
+refreshed skip_labels from s3://sagemaker-studio-a5572760/wflike-community-72k/input/qa/skip_labels_ids.txt
+skip_labels loaded=49,556
+labels phase: skip=49,556 done=9,915 todo=5,727 workers=10
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 25/5727 ok=25 err=0 4.95/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 50/5727 ok=50 err=0 5.59/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 75/5727 ok=75 err=0 5.65/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 100/5727 ok=100 err=0 5.95/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 125/5727 ok=125 err=0 6.15/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 150/5727 ok=150 err=0 6.23/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 175/5727 ok=175 err=0 6.26/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 200/5727 ok=200 err=0 6.38/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 225/5727 ok=225 err=0 6.38/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 250/5727 ok=250 err=0 6.46/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 275/5727 ok=275 err=0 6.50/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 300/5727 ok=300 err=0 6.48/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 325/5727 ok=325 err=0 6.53/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 350/5727 ok=350 err=0 6.60/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 375/5727 ok=375 err=0 6.61/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 400/5727 ok=400 err=0 6.64/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 425/5727 ok=425 err=0 6.67/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 450/5727 ok=450 err=0 6.69/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 475/5727 ok=475 err=0 6.73/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 500/5727 ok=500 err=0 6.75/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 525/5727 ok=525 err=0 6.78/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 550/5727 ok=550 err=0 6.80/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 575/5727 ok=575 err=0 6.82/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 600/5727 ok=600 err=0 6.85/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 625/5727 ok=625 err=0 6.83/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 650/5727 ok=650 err=0 6.84/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 675/5727 ok=675 err=0 6.86/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 700/5727 ok=700 err=0 6.89/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 725/5727 ok=725 err=0 6.90/s
+[periodic-sync 12:20:00]
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 750/5727 ok=750 err=0 6.92/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 775/5727 ok=775 err=0 6.93/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 800/5727 ok=800 err=0 6.95/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 825/5727 ok=825 err=0 6.95/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 850/5727 ok=850 err=0 6.96/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 875/5727 ok=875 err=0 6.96/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 900/5727 ok=900 err=0 6.95/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 925/5727 ok=925 err=0 6.98/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 950/5727 ok=950 err=0 6.98/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 975/5727 ok=975 err=0 6.99/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1000/5727 ok=1000 err=0 6.97/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1025/5727 ok=1025 err=0 6.96/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1050/5727 ok=1050 err=0 6.98/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1075/5727 ok=1075 err=0 6.98/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1100/5727 ok=1100 err=0 7.00/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1125/5727 ok=1125 err=0 7.00/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1150/5727 ok=1150 err=0 7.00/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1175/5727 ok=1175 err=0 7.00/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1200/5727 ok=1200 err=0 7.01/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1225/5727 ok=1225 err=0 7.02/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1250/5727 ok=1250 err=0 7.03/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1275/5727 ok=1275 err=0 7.03/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1300/5727 ok=1300 err=0 7.03/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1325/5727 ok=1325 err=0 7.04/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1350/5727 ok=1350 err=0 7.04/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1375/5727 ok=1375 err=0 7.04/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1400/5727 ok=1400 err=0 7.04/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1425/5727 ok=1425 err=0 7.05/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1450/5727 ok=1450 err=0 7.06/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1475/5727 ok=1475 err=0 7.05/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1500/5727 ok=1500 err=0 7.05/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1525/5727 ok=1525 err=0 7.05/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1550/5727 ok=1550 err=0 7.06/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1575/5727 ok=1575 err=0 7.07/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1600/5727 ok=1600 err=0 7.07/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1625/5727 ok=1625 err=0 7.08/s
+[periodic-sync 12:22:02]
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1650/5727 ok=1650 err=0 7.09/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1675/5727 ok=1675 err=0 7.08/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1700/5727 ok=1700 err=0 7.10/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1725/5727 ok=1725 err=0 7.09/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1750/5727 ok=1750 err=0 7.10/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1775/5727 ok=1775 err=0 7.10/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1800/5727 ok=1800 err=0 7.10/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1825/5727 ok=1825 err=0 7.09/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1850/5727 ok=1850 err=0 7.10/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1875/5727 ok=1875 err=0 7.09/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1900/5727 ok=1900 err=0 7.09/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1925/5727 ok=1925 err=0 7.09/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1950/5727 ok=1950 err=0 7.10/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 1975/5727 ok=1975 err=0 7.11/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2000/5727 ok=2000 err=0 7.11/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2025/5727 ok=2025 err=0 7.12/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2050/5727 ok=2050 err=0 7.11/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2075/5727 ok=2075 err=0 7.10/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2100/5727 ok=2100 err=0 7.11/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2125/5727 ok=2125 err=0 7.12/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2150/5727 ok=2150 err=0 7.12/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2175/5727 ok=2175 err=0 7.13/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2200/5727 ok=2200 err=0 7.12/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2225/5727 ok=2225 err=0 7.13/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2250/5727 ok=2250 err=0 7.13/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2275/5727 ok=2275 err=0 7.13/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2300/5727 ok=2300 err=0 7.13/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2325/5727 ok=2325 err=0 7.14/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2350/5727 ok=2350 err=0 7.14/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2375/5727 ok=2375 err=0 7.14/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2400/5727 ok=2400 err=0 7.14/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2425/5727 ok=2425 err=0 7.14/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2450/5727 ok=2450 err=0 7.14/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2475/5727 ok=2475 err=0 7.14/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2500/5727 ok=2500 err=0 7.13/s
+[periodic-sync 12:24:05]
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2525/5727 ok=2525 err=0 7.14/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2550/5727 ok=2550 err=0 7.14/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2575/5727 ok=2575 err=0 7.14/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2600/5727 ok=2600 err=0 7.14/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2625/5727 ok=2625 err=0 7.14/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2650/5727 ok=2650 err=0 7.14/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2675/5727 ok=2675 err=0 7.14/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2700/5727 ok=2700 err=0 7.13/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2725/5727 ok=2725 err=0 7.12/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2750/5727 ok=2750 err=0 7.13/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2775/5727 ok=2775 err=0 7.13/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2800/5727 ok=2800 err=0 7.12/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2825/5727 ok=2825 err=0 7.13/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2850/5727 ok=2850 err=0 7.14/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2875/5727 ok=2875 err=0 7.14/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2900/5727 ok=2900 err=0 7.14/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2925/5727 ok=2925 err=0 7.14/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2950/5727 ok=2950 err=0 7.14/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 2975/5727 ok=2975 err=0 7.14/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3000/5727 ok=3000 err=0 7.15/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3025/5727 ok=3025 err=0 7.15/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3050/5727 ok=3050 err=0 7.16/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3075/5727 ok=3075 err=0 7.16/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3100/5727 ok=3100 err=0 7.17/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3125/5727 ok=3125 err=0 7.16/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3150/5727 ok=3150 err=0 7.17/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3175/5727 ok=3175 err=0 7.18/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3200/5727 ok=3200 err=0 7.17/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3225/5727 ok=3225 err=0 7.17/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3250/5727 ok=3250 err=0 7.17/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3275/5727 ok=3275 err=0 7.17/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3300/5727 ok=3300 err=0 7.17/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3325/5727 ok=3325 err=0 7.17/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3350/5727 ok=3350 err=0 7.18/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3375/5727 ok=3375 err=0 7.17/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3400/5727 ok=3400 err=0 7.17/s
+[periodic-sync 12:26:07]
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3425/5727 ok=3425 err=0 7.17/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3450/5727 ok=3450 err=0 7.17/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3475/5727 ok=3475 err=0 7.17/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3500/5727 ok=3500 err=0 7.17/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3525/5727 ok=3525 err=0 7.17/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3550/5727 ok=3550 err=0 7.17/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3575/5727 ok=3575 err=0 7.18/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3600/5727 ok=3600 err=0 7.18/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3625/5727 ok=3625 err=0 7.18/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3650/5727 ok=3650 err=0 7.18/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3675/5727 ok=3675 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3700/5727 ok=3700 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3725/5727 ok=3725 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3750/5727 ok=3750 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3775/5727 ok=3775 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3800/5727 ok=3800 err=0 7.20/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3825/5727 ok=3825 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3850/5727 ok=3850 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3875/5727 ok=3875 err=0 7.20/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3900/5727 ok=3900 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3925/5727 ok=3925 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3950/5727 ok=3950 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 3975/5727 ok=3975 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4000/5727 ok=4000 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4025/5727 ok=4025 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4050/5727 ok=4050 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4075/5727 ok=4075 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4100/5727 ok=4100 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4125/5727 ok=4125 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4150/5727 ok=4150 err=0 7.18/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4175/5727 ok=4175 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4200/5727 ok=4200 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4225/5727 ok=4225 err=0 7.18/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4250/5727 ok=4250 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4275/5727 ok=4275 err=0 7.19/s
+[periodic-sync 12:28:10]
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4300/5727 ok=4300 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4325/5727 ok=4325 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4350/5727 ok=4350 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4375/5727 ok=4375 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4400/5727 ok=4400 err=0 7.20/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4425/5727 ok=4425 err=0 7.20/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4450/5727 ok=4450 err=0 7.20/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4475/5727 ok=4475 err=0 7.20/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4500/5727 ok=4500 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4525/5727 ok=4525 err=0 7.20/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4550/5727 ok=4550 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4575/5727 ok=4575 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4600/5727 ok=4600 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4625/5727 ok=4625 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4650/5727 ok=4650 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4675/5727 ok=4675 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4700/5727 ok=4700 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4725/5727 ok=4725 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4750/5727 ok=4750 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4775/5727 ok=4775 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4800/5727 ok=4800 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4825/5727 ok=4825 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4850/5727 ok=4850 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4875/5727 ok=4875 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4900/5727 ok=4900 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4925/5727 ok=4925 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4950/5727 ok=4950 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 4975/5727 ok=4975 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5000/5727 ok=5000 err=0 7.20/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5025/5727 ok=5025 err=0 7.20/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5050/5727 ok=5050 err=0 7.20/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5075/5727 ok=5075 err=0 7.20/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5100/5727 ok=5100 err=0 7.20/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5125/5727 ok=5125 err=0 7.20/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5150/5727 ok=5150 err=0 7.20/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5175/5727 ok=5175 err=0 7.20/s
+[periodic-sync 12:30:12]
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5200/5727 ok=5200 err=0 7.20/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5225/5727 ok=5225 err=0 7.20/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5250/5727 ok=5250 err=0 7.20/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5275/5727 ok=5275 err=0 7.20/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5300/5727 ok=5300 err=0 7.20/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5325/5727 ok=5325 err=0 7.20/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5350/5727 ok=5350 err=0 7.20/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5375/5727 ok=5375 err=0 7.20/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5400/5727 ok=5400 err=0 7.20/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5425/5727 ok=5425 err=0 7.20/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5450/5727 ok=5450 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5475/5727 ok=5475 err=0 7.19/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5500/5727 ok=5500 err=0 7.18/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5525/5727 ok=5525 err=0 7.18/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5550/5727 ok=5550 err=0 7.18/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5575/5727 ok=5575 err=0 7.18/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5600/5727 ok=5600 err=0 7.18/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5625/5727 ok=5625 err=0 7.18/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5650/5727 ok=5650 err=0 7.18/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5675/5727 ok=5675 err=0 7.18/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5700/5727 ok=5700 err=0 7.18/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5725/5727 ok=5724 err=1 7.18/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv
+  labels 5727/5727 ok=5726 err=1 7.18/s
+uploaded s3://sagemaker-studio-a5572760/wflike-community-72k/results/rekognition_community_72k.csv

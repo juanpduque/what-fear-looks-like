@@ -1,0 +1,40 @@
+{
+  "title_text": "HEAD",
+  "credits_text": "A FILM BY CHASE KUCHERA\nJESIKA HAMEL\nTAI JOSEPH\nHOLDEN WORSLEY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FALL",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A poster shows a bald head with blood dripping from one eye, a knife, and a masked figure in the background."
+}

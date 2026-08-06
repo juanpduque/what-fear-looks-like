@@ -1,0 +1,42 @@
+{
+  "title_text": "내기에 자는",
+  "credits_text": "집체를 알아보는 신호들의 진금기요 근부리",
+  "languages": [
+    "ko"
+  ],
+  "other_text": "최신 신호 집실에 작업된 신호들의 진금기요 근부리",
+  "mood": [
+    "horror",
+    "thriller",
+    "psychological",
+    "disturbing",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and violent imagery.",
+  "description": "A poster shows three individuals in a tense setting with bloodstains, suggesting a horror or thriller theme."
+}

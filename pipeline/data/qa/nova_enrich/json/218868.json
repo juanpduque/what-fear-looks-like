@@ -1,0 +1,47 @@
+{
+  "title_text": "PHOBIA",
+  "credits_text": "ERICA LEERHSEN CHASE RYAN JEFFREY MATTHEW TOMPKINS JONATHAN BROOKS A JON KEYES FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "mysterious",
+    "haunting",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "bats",
+      "conf": 0.7
+    },
+    {
+      "name": "gothic",
+      "conf": 0.85
+    },
+    {
+      "name": "haunting",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.2,
+  "person": 1.0,
+  "animal": 0.4,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A woman in dark attire stands in a forest with bats nearby, her expression intense, suggesting a gothic horror theme."
+}

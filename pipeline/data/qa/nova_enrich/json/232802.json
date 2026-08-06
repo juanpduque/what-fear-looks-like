@@ -1,0 +1,46 @@
+{
+  "title_text": "TERROR AT BLACK TREE FOREST",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "mystery",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "knife",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.85,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains nudity and graphic blood splatter.",
+  "description": "A nude figure stands with their back to the viewer, holding a large knife, against a dark forest backdrop with a blood splatter."
+}

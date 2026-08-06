@@ -1,0 +1,37 @@
+{
+  "title_text": "MALDICO",
+  "credits_text": "© MALDICO FILMS MMXXV",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ESTE FILME É UMA OBRA DE FIÇÇÃO. PORÊM PESADELOS COMO ESTES SÃO RELATADOS HÁ SÉCULOS. SE VOCÊ SENTIR ALGO O OBSERVANDO ENQUANTO ASSISTE, NÃO OLHE DIRETAMENTE PARA A SOMBRA.",
+  "mood": [
+    "dread",
+    "surreal",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, red-tinted poster features a central figure with a distorted face and three shadowy figures behind, with bold title text overlay."
+}

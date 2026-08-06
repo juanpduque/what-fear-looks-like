@@ -1,0 +1,46 @@
+{
+  "title_text": "NIGHT HOWL",
+  "credits_text": "THE DARKNESS HAS BITE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "horror",
+    "terrifying",
+    "gothic",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of a monstrous creature with blood and teeth, indicating potential violence and gore.",
+  "description": "A poster shows a monstrous creature with sharp teeth and blood, with a woman facing away in the foreground and the title 'NIGHT HOWL' prominently displayed."
+}

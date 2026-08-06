@@ -1,0 +1,43 @@
+{
+  "title_text": "SEYİTAN-I RAÇİM",
+  "credits_text": "YAKINDA SİNEMALARDA",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "ONU UZAKLARDA ARAMI",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "violent",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic blood and violent imagery, suitable for mature audiences.",
+  "description": "A person with long hair screams, covered in blood against a textured wall, with Turkish text overlay indicating a horror film release."
+}

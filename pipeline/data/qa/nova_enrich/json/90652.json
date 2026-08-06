@@ -1,0 +1,35 @@
+{
+  "title_text": "DECODER",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "-40 30 20 15 10 7 6 3 0 3 6 10 +",
+  "mood": [
+    "intense",
+    "mysterious",
+    "psychological",
+    "sci-fi",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man lies unconscious under a spotlight with a speedometer-like graphic above him. The title 'DECODER' is prominently displayed at the top."
+}

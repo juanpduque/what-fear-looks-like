@@ -1,0 +1,38 @@
+{
+  "title_text": "LEAF BLOWER MASSACRE",
+  "credits_text": "EL HORROR MUERTO PICTURES PRESENTS A T-MASTY PRODUCTION OF AN ANTHONY COONEY FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WHEN AUTUMN ARRIVES, NO ONE SURVIVES! 100 GORY MINUTES OF SCREEN",
+  "mood": [
+    "horror",
+    "violent",
+    "intense",
+    "thriller",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore as suggested by the title and imagery.",
+  "description": "A poster features a masked figure holding a large weapon against a dark, forested background with bold, dramatic text."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "中夜美容室",
+  "credits_text": "MIDNIGHT COSMETIC ROOM",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "2018.11.2 钱学斌",
+  "mood": [
+    "horrific",
+    "disturbing",
+    "psychological",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and disturbing imagery.",
+  "description": "A poster shows a woman with a disfigured face holding a bloody scalpel in a dark, clinical setting."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "SCARED TO DEATH",
+  "credits_text": "FEATURING EYE SMITH AS ASSISTANT MIKE MARVICK, PEER \"SCARED TO DEATH\" MIKE MARVICK, JIM SMITH AND MIKE SMITH, NICK LORENZ AND CORY SMITH, JORDAN SEAS, JOSS CLUB AND CRAIG NEVILLE IN SCENES FROM A PHOTOGRAPH CLAYTON SMITH AND MIKE MARVICK PRODUCED BY AND DIRECTED BY MIKE MARVICK",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "terror",
+    "psychological",
+    "gothic",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 1.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 1.0,
+  "violence": 1.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences only.",
+  "description": "A poster shows a hand holding a bloody knife with a face on the blade, a TV screen displaying a horror scene, and red splatters resembling blood."
+}

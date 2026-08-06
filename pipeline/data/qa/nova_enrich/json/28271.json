@@ -1,0 +1,37 @@
+{
+  "title_text": "I DON'T WANT TO BE BORN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "disturbing",
+    "surreal",
+    "dystopian",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "sexual",
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and sexual themes through imagery of a fetus and a syringe.",
+  "description": "A stark poster features a man's face with a syringe inserted into his cheek, a small fetus clinging to the syringe, and bold red text reading 'I DON'T WANT TO BE BORN' against a black background."
+}

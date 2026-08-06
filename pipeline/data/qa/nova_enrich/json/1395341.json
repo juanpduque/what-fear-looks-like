@@ -1,0 +1,40 @@
+{
+  "title_text": "eucalyptus",
+  "credits_text": "a found footage horror short",
+  "languages": [
+    "en"
+  ],
+  "other_text": "wallace knows his brother is real... reality doesn't\nruntime 18:30\ncontains mentions of suicide\nc. 2024 baylight pictures",
+  "mood": [
+    "dread",
+    "surreal",
+    "psychological",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "self-harm"
+  ],
+  "moderation_notes": "Mentions of suicide may be sensitive to some viewers.",
+  "description": "A black-and-white poster shows a shadowy figure in a forest with text about reality and a brother."
+}

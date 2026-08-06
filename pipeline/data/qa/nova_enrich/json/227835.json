@@ -1,0 +1,41 @@
+{
+  "title_text": "JOHN JOHNSON'S SHADOW HUNTERS",
+  "credits_text": "DAVID SIMMONS TED TAYLOR LIAM SMITH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "thriller",
+    "noir",
+    "supernatural",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains intense imagery and occult symbolism.",
+  "description": "Movie poster features four men in suits with a fiery background and a central intense face. The title and credits are prominently displayed."
+}

@@ -1,0 +1,47 @@
+{
+  "title_text": "BREEDER",
+  "credits_text": "A FILM BY SAPPHIRE SANDALO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOU'LL CHANGE YOUR MIND",
+  "mood": [
+    "dread",
+    "psychological",
+    "disturbing",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult",
+    "gore"
+  ],
+  "moderation_notes": "Contains disturbing imagery and occult themes.",
+  "description": "A distressed woman is shown in front of a dark, occult background with the title 'BREEDER' prominently displayed."
+}

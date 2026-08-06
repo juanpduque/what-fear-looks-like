@@ -1,0 +1,46 @@
+{
+  "title_text": "PENANGAL",
+  "credits_text": "THE CURSE OF THE MALAYAN VAMPIRE\nDI PAWAGAN 28 NOVEMBER 2013\nFASHA SANDIYA AZRI ISKANDAR HAMI NAZERA ZUL ARIFIN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SUNLIME FILMS A FILM BY SULIE OMAI",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "mysterious",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild violent imagery and occult themes.",
+  "description": "A group of characters stands against a dark, misty background with a fiery torch, suggesting a supernatural horror theme."
+}

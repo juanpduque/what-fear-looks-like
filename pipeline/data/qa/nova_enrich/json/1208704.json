@@ -1,0 +1,46 @@
+{
+  "title_text": "Dagr",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOU ARE BUT BLOOD TO ME",
+  "mood": [
+    "dark",
+    "intense",
+    "mysterious",
+    "foreboding",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "blood"
+  ],
+  "moderation_notes": "Contains implied violence and blood imagery.",
+  "description": "A dark, intense poster features a menacing, stylized creature with sharp teeth and wings against a red background, with bold red text reading 'Dagr' and a tagline."
+}

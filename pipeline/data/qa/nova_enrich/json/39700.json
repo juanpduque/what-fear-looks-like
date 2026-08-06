@@ -1,0 +1,46 @@
+{
+  "title_text": "BLOOD MOON RISING",
+  "credits_text": "FEATURING RON JEREMY!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DINER all beef BURGERS GOOD FO",
+  "mood": [
+    "horror",
+    "action",
+    "camp",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.6,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, and partial nudity.",
+  "description": "Poster features a woman holding a gun, a zombie-like figure, and a man with goggles, set against a red moon backdrop with diner signage."
+}

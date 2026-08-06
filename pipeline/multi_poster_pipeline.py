@@ -66,8 +66,26 @@ def cmd_discover(args):
 
     meta = pd.read_csv(DATA / "posters.csv", usecols=["id", "title", "year"])
     meta["id"] = meta["id"].astype(int)
+    want: set[int] = set()
     if args.ids:
-        want = {int(x) for x in args.ids.split(",") if x.strip()}
+        want |= {int(x) for x in args.ids.split(",") if x.strip()}
+    if getattr(args, "ids_file", None):
+        p = Path(args.ids_file)
+        if not p.exists():
+            raise SystemExit(f"missing --ids-file {p}")
+        text = p.read_text(encoding="utf-8", errors="replace")
+        if p.suffix.lower() == ".csv" and "id" in text.splitlines()[0].lower():
+            want |= {
+                int(r["id"])
+                for r in csv.DictReader(p.open(encoding="utf-8", errors="replace"))
+                if (r.get("id") or "").strip()
+            }
+        else:
+            for line in text.splitlines():
+                s = line.strip().split(",")[0].strip()
+                if s.isdigit() or (s.startswith("-") and s[1:].isdigit()):
+                    want.add(int(s))
+    if want:
         meta = meta[meta.id.isin(want)]
     if args.limit:
         meta = meta.head(args.limit)
@@ -471,6 +489,7 @@ def main():
     d.add_argument("--api-key", default=os.environ.get("TMDB_API_KEY"))
     d.add_argument("--limit", type=int, default=0)
     d.add_argument("--ids", default="")
+    d.add_argument("--ids-file", default="", help="one id per line or CSV with id column")
     d.add_argument("--langs", default="en,null", help="include_image_language")
     d.add_argument("--max-list", type=int, default=20, help="cap posters listed per movie")
     d.add_argument("--sleep", type=float, default=0.035)

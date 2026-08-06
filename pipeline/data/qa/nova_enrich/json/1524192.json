@@ -1,0 +1,42 @@
+{
+  "title_text": "LANETI",
+  "credits_text": "ÖLÜ KONTESİN\nAHMET ARPACI\nÖZĞR BALAKAR | ÜzUM MAKARNALI | MEISE ERGÖN | BAHAR TUTKUMERTOĞ\nÖZĞSU TOPRAK | ÇAŞM ÇADEN LINA TAVAŞLI | ÇAŞM TOLGAHAN TAHTACI | NAĞIR BİRĞÇEN\nÖZĞM FİLM YAPIMI - ÇEŞM AHMET ARPACI | ÜzUM ÖZĞR FEVZİOĞLU - ÜzUM ÜzE ZOHRE\nMC FILM Özğm\nÜzUM FİLM",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "HER LANETİN BİR BEDELİ VARDI… BAZILARI BİN YILLIK !",
+  "mood": [
+    "gothic",
+    "dread",
+    "haunting",
+    "eerie",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild horror elements and occult themes.",
+  "description": "A poster features a pale, eerie woman with long blonde hair and a haunting expression, with a shadowy figure in the background."
+}

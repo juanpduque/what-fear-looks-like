@@ -1,0 +1,45 @@
+{
+  "title_text": "AMERICAN SCARECROW",
+  "credits_text": "EVIL IS IN SEASON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "supernatural",
+    "menacing"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "scythe",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "text",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.95,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster features a menacing scarecrow with a scythe, suggesting potential violence.",
+  "description": "A poster shows a scarecrow with a scythe and the title 'American Scarecrow' and tagline 'Evil is in Season.'"
+}

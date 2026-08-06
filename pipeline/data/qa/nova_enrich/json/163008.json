@@ -1,0 +1,41 @@
+{
+  "title_text": "DEADLY DESCENT",
+  "credits_text": "CHUCK CAMPBELL ADRIAN PAVE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "suspenseful",
+    "action",
+    "thriller",
+    "cold"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.7
+    },
+    {
+      "name": "fire",
+      "conf": 0.5
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and action elements.",
+  "description": "A group of people navigate a snowy mountain landscape, with one figure aiming a gun amidst a fiery explosion in the background."
+}

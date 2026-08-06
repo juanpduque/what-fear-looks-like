@@ -1,0 +1,46 @@
+{
+  "title_text": "CREATURE OF THE NIGHT",
+  "credits_text": "HAIF MAN HAIF WOLF ALL ANIMALS! A DIANA CURRY FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Werewolf Films are back with a vengeance... Creature of the Night Rocks! UNRATED",
+  "mood": [
+    "horror",
+    "fantasy",
+    "camp",
+    "gothic",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.7,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and mild sexual suggestions.",
+  "description": "A poster featuring a menacing werewolf with sharp teeth and glowing eyes, promoting the horror film 'Creature of the Night.'"
+}

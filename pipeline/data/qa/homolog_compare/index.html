@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Homolog QA — original vs 1000×1500</title>
+  <style>
+    :root {
+      --bg: #12100e;
+      --panel: #1c1916;
+      --ink: #f2ebe3;
+      --muted: #9a9086;
+      --line: #3a342e;
+      --accent: #c45c26;
+      --ok: #7a9e6a;
+    }
+    * { box-sizing: border-box; }
+    body {
+      margin: 0;
+      font-family: "Iowan Old Style", "Palatino Linotype", Palatino, Georgia, serif;
+      background:
+        radial-gradient(ellipse at 20% 0%, #2a221c 0%, transparent 50%),
+        var(--bg);
+      color: var(--ink);
+      min-height: 100vh;
+    }
+    header {
+      position: sticky; top: 0; z-index: 5;
+      display: flex; flex-wrap: wrap; gap: 12px 20px; align-items: center;
+      justify-content: space-between;
+      padding: 14px 22px;
+      background: rgba(18,16,14,.92);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(8px);
+    }
+    h1 {
+      margin: 0;
+      font-size: 1.15rem;
+      font-weight: 600;
+      letter-spacing: .02em;
+    }
+    h1 span { color: var(--muted); font-weight: 400; font-size: .9rem; }
+    .controls { display: flex; flex-wrap: wrap; gap: 8px; align-items: center; }
+    button, select {
+      font: inherit;
+      font-size: .9rem;
+      color: var(--ink);
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 4px;
+      padding: 8px 12px;
+      cursor: pointer;
+    }
+    button:hover { border-color: var(--accent); }
+    button:disabled { opacity: .4; cursor: default; }
+    .meta {
+      padding: 10px 22px 0;
+      color: var(--muted);
+      font-size: .92rem;
+    }
+    .meta strong { color: var(--ink); font-weight: 600; }
+    .badge {
+      display: inline-block;
+      padding: 2px 8px;
+      border-radius: 999px;
+      border: 1px solid var(--line);
+      font-size: .75rem;
+      letter-spacing: .04em;
+      text-transform: uppercase;
+    }
+    .badge.up { border-color: var(--accent); color: #e8a078; }
+    .badge.down { border-color: var(--ok); color: #a8c49a; }
+    .stage {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 18px;
+      padding: 18px 22px 40px;
+      max-width: 1400px;
+      margin: 0 auto;
+    }
+    @media (max-width: 900px) {
+      .stage { grid-template-columns: 1fr; }
+    }
+    figure {
+      margin: 0;
+      background: var(--panel);
+      border: 1px solid var(--line);
+      border-radius: 6px;
+      overflow: hidden;
+    }
+    figcaption {
+      padding: 10px 12px;
+      font-size: .85rem;
+      color: var(--muted);
+      border-bottom: 1px solid var(--line);
+      font-family: ui-sans-serif, system-ui, sans-serif;
+    }
+    figcaption b { color: var(--ink); }
+    .frame {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 70vh;
+      background: #0a0908;
+      padding: 12px;
+    }
+    .frame img {
+      max-width: 100%;
+      max-height: 72vh;
+      object-fit: contain;
+      image-rendering: auto;
+    }
+    .thumbs {
+      display: flex; gap: 8px; overflow-x: auto;
+      padding: 0 22px 24px;
+      max-width: 1400px; margin: 0 auto;
+    }
+    .thumbs button {
+      flex: 0 0 auto;
+      padding: 0;
+      width: 56px; height: 84px;
+      overflow: hidden;
+      opacity: .55;
+    }
+    .thumbs button.active { opacity: 1; outline: 2px solid var(--accent); }
+    .thumbs img { width: 100%; height: 100%; object-fit: cover; display: block; }
+    .hint {
+      max-width: 1400px; margin: 0 auto;
+      padding: 0 22px 28px;
+      color: var(--muted);
+      font-size: .85rem;
+      font-family: ui-sans-serif, system-ui, sans-serif;
+    }
+    kbd {
+      font-family: ui-monospace, monospace;
+      font-size: .8em;
+      border: 1px solid var(--line);
+      border-radius: 3px;
+      padding: 1px 5px;
+      background: var(--panel);
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Homolog QA <span>original · 1000×1500 letterbox</span></h1>
+    <div class="controls">
+      <select id="filter">
+        <option value="all">Todos</option>
+        <option value="upscaled">Solo upscaled (&lt;1000→ESRGAN)</option>
+        <option value="downscaled">Solo downscale (≥1200)</option>
+      </select>
+      <button id="prev" type="button">← Prev</button>
+      <button id="next" type="button">Next →</button>
+    </div>
+  </header>
+
+  <div class="meta" id="meta">Cargando…</div>
+
+  <div class="stage">
+    <figure>
+      <figcaption id="capOrig"><b>Original</b></figcaption>
+      <div class="frame"><img id="imgOrig" alt="original" /></div>
+    </figure>
+    <figure>
+      <figcaption id="capHom"><b>Homolog</b> 1000×1500</figcaption>
+      <div class="frame"><img id="imgHom" alt="homolog" /></div>
+    </figure>
+  </div>
+
+  <div class="thumbs" id="thumbs"></div>
+  <p class="hint">Teclas <kbd>←</kbd> <kbd>→</kbd> · servir desde <code>pipeline/data</code> con el script de abajo.</p>
+
+  <script>
+    const ORIG = "/posters_original/";
+    const HOM = "/posters_homolog/";
+    let all = [];
+    let list = [];
+    let idx = 0;
+
+    const $ = (id) => document.getElementById(id);
+
+    function render() {
+      if (!list.length) {
+        $("meta").textContent = "Sin muestras para este filtro.";
+        return;
+      }
+      idx = (idx + list.length) % list.length;
+      const s = list[idx];
+      $("meta").innerHTML =
+        `<strong>${s.title}</strong> (${s.year}) · id ${s.id} · ` +
+        `<span class="badge ${s.kind === "upscaled" ? "up" : "down"}">${s.kind}</span> · ` +
+        `original ${s.orig_w}×${s.orig_h} · ${idx + 1}/${list.length}`;
+      $("capOrig").innerHTML = `<b>Original</b> ${s.orig_w}×${s.orig_h}`;
+      $("imgOrig").src = ORIG + s.id + ".jpg";
+      $("imgHom").src = HOM + s.id + ".jpg";
+      [...document.querySelectorAll(".thumbs button")].forEach((b, i) => {
+        b.classList.toggle("active", list[i] && list[i].id === s.id);
+      });
+      $("prev").disabled = list.length < 2;
+      $("next").disabled = list.length < 2;
+    }
+
+    function applyFilter() {
+      const f = $("filter").value;
+      list = f === "all" ? all.slice() : all.filter((s) => s.kind === f);
+      idx = 0;
+      buildThumbs();
+      render();
+    }
+
+    function buildThumbs() {
+      const box = $("thumbs");
+      box.innerHTML = "";
+      list.forEach((s, i) => {
+        const b = document.createElement("button");
+        b.type = "button";
+        b.title = s.title;
+        b.innerHTML = `<img src="${HOM}${s.id}.jpg" alt="" loading="lazy" />`;
+        b.onclick = () => { idx = i; render(); };
+        box.appendChild(b);
+      });
+    }
+
+    $("prev").onclick = () => { idx--; render(); };
+    $("next").onclick = () => { idx++; render(); };
+    $("filter").onchange = applyFilter;
+    window.addEventListener("keydown", (e) => {
+      if (e.key === "ArrowLeft") { idx--; render(); }
+      if (e.key === "ArrowRight") { idx++; render(); }
+    });
+
+    fetch("/qa/homolog_compare/samples.json")
+      .then((r) => r.json())
+      .then((data) => { all = data; applyFilter(); })
+      .catch((e) => {
+        $("meta").textContent = "No se pudo cargar samples.json. ¿Servidor en pipeline/data? " + e;
+      });
+  </script>
+</body>
+</html>

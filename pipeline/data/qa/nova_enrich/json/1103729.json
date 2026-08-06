@@ -1,0 +1,45 @@
+{
+  "title_text": "地中心战斗",
+  "credits_text": "GEOCENTRIC CRISIS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "anxious",
+    "intense",
+    "chaotic",
+    "sci-fi",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.1,
+  "blood_gore": 0.1,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and implied violence.",
+  "description": "A group of people face a large, menacing creature inside a damaged vehicle, with urgency and fear evident in their expressions."
+}

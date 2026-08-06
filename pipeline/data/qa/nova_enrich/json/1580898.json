@@ -1,0 +1,42 @@
+{
+  "title_text": "CİN MEZARI",
+  "credits_text": "AST ABDULLAH KOCİ VENERA ABDULLINA IRINA MARKES SEZAY TÜTÜNCÜLER ÇAĞLAR EKSİOĞLU HASAN ÇITİL ZİSAN OZLEM AKCALI OZAN AKSU TAMER AKTULUM SERDAR DÜNVER MÜZEYEN AKTAĞ GÜRÜNTÜ YÖNETMENİ MUSTAFA KARA ÜYĞULAYICI YAPIMCI SEZAI AKTAS SES TASARIM CEM BATU ALINTAS KURGU NEV İSIK BERZAN YÜCEL SENARYO HÜSEYİN SEZAY TÜTÜNCÜLER MAKE-UP ARTIST SAMET ERDEM SES KAYITI HAKIM SOLMAZ YÖNETMEN YÜCEL KAPLAN",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "ÇAĞOĞ 21 KASIM'DA SİNEMALARDA NAZİN MEDYA",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror",
+    "intense",
+    "terrifying"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "fire",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and a monstrous face.",
+  "description": "A poster features a terrifying, monstrous face with bloodied details, set against a fiery background, promoting a horror film titled \"CİN MEZARI\" releasing on November 21."
+}

@@ -1,0 +1,47 @@
+{
+  "title_text": "THE TOMB",
+  "credits_text": "ROBERT MADISON • KASYA ZVRAKOWSKA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOU CAN'T ESCAPE YOUR DESTINY",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult",
+    "blood",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatters and occult imagery.",
+  "description": "A poster shows a face splattered with blood and a group of people around an ornate altar, suggesting a horror theme."
+}

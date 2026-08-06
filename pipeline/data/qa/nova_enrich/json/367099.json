@@ -1,0 +1,43 @@
+{
+  "title_text": "ALIEN PLATOON",
+  "credits_text": "N.M International presente \"ALIEN PLATOON\" - un film di BERT GOLDMAN con FRANK ECKLARD MICHEL FINAS JOELIN EVA SINCLAIR QUELOU PARQUE ET N.G. MONT... Realise par BERT GOLDMAN Scenario et dialogue de BERT GOLDMAN",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "other_text": "IMPITOVA BLE, IND ESTRUCT I BLE... PROGRAMME TUE RI",
+  "mood": [
+    "action",
+    "sci-fi",
+    "violent",
+    "gritty",
+    "post-apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "Poster shows a soldier holding a gun with a wounded face, alongside other armed soldiers and a damaged building in the background."
+}

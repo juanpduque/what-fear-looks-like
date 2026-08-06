@@ -1,0 +1,46 @@
+{
+  "title_text": "24 HOURS TO DIE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ONLY ONE WILL SURVIVE",
+  "mood": [
+    "dread",
+    "tense",
+    "apocalyptic",
+    "survival",
+    "gritty"
+  ],
+  "fear_labels": [
+    {
+      "name": "hazard_suit",
+      "conf": 1.0
+    },
+    {
+      "name": "chains",
+      "conf": 0.9
+    },
+    {
+      "name": "industrial_setting",
+      "conf": 0.8
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and industrial setting; no explicit gore or nudity.",
+  "description": "A person in a hazmat suit holds a hammer in a dimly lit, industrial setting with chains and debris, suggesting a survival horror theme."
+}

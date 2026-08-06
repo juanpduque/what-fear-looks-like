@@ -1,0 +1,43 @@
+{
+  "title_text": "LAST HOUSE ON CCTV",
+  "credits_text": "A SHORT FILM DIRECTED BY CRAIG ANDREW ROBERTSON, LAST HOUSE ON CCTV IS WRITTEN AND NARRATED BY LEONTRA GOMEZ. STARRING SUZIE JAMES, ALEA LAURET, JENNIFER GOMEZ, ERIC JIM PEREZ, JIM PEREZ, NISEK AIDA GOMEZ, EDIE JAMES, C.J. LAURET, PHILIPPE LEBLANC, RONALD CANFIELD, EXECUTIVE PRODUCER JIM PEREZ, PRODUCER JIM PEREZ, DIRECTED BY CRAIG ANDREW ROBERTSON, WRITTEN BY C.J. LAURET.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Uninhabited. Unfurnished. Unsafe.",
+  "mood": [
+    "dread",
+    "surreal",
+    "psychological",
+    "disturbing",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a distorted face holding scissors against a red background with multiple CCTV screens. The title \"LAST HOUSE ON CCTV\" is prominently displayed."
+}

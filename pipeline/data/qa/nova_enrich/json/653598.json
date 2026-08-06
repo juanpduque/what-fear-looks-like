@@ -1,0 +1,41 @@
+{
+  "title_text": "SPREE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "LIVE\n12:00 AM\nEnd",
+  "mood": [
+    "thriller",
+    "psychological",
+    "disturbing",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    },
+    {
+      "name": "text",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatter and implied violence.",
+  "description": "A smartphone screen displays a cracked interface with a man covered in blood, suggesting a thriller or horror theme."
+}

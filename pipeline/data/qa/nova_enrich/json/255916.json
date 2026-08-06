@@ -1,0 +1,41 @@
+{
+  "title_text": "FREAKSHOW CINEMA",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "12 HORROR FILMS\nSTEP INTO WITNESS ZOMBIE GENOCIDE IDOL OF EVIL DEMON HOLOCAUST EXORCISM THE DEAD",
+  "mood": [
+    "camp",
+    "gothic",
+    "surreal",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains horror themes and occult imagery.",
+  "description": "Vintage-style poster featuring a monstrous figure and two distressed individuals, promoting a collection of 12 horror films."
+}

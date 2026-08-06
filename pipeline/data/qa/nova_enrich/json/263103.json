@@ -1,0 +1,41 @@
+{
+  "title_text": "ZOMBIEHOOD",
+  "credits_text": "A SOLID, GRIPPING, SKILLFULLY CRAFTED ZOMBIE FEATURE\nDARKLY HUMOROUS WITTY DIALOGUE\nJAMIE SIMPSON\nBRINKVISION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "LIVING AIN'T EASY\nLIMITED EDITION",
+  "mood": [
+    "dark humor",
+    "apocalyptic",
+    "gritty",
+    "survival",
+    "post-apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.4,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild violence suggested by the poster's theme and imagery.",
+  "description": "A group of people confront zombies in an urban setting with a darkly humorous tone."
+}

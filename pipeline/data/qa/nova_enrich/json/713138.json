@@ -1,0 +1,46 @@
+{
+  "title_text": "THE NIGHT SEEKERS",
+  "credits_text": "TAMARA WHITE TANIA DREW CYNTHIA LOPEZ LIN LY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THEY LIKE IT WHEN YOU RUN",
+  "mood": [
+    "horror",
+    "thriller",
+    "suspense",
+    "forest",
+    "survival"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A horror poster featuring a terrified man covered in blood and a young girl running through a dark forest."
+}

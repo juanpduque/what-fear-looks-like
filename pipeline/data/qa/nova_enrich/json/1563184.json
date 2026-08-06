@@ -1,0 +1,41 @@
+{
+  "title_text": "FREAK SHACK",
+  "credits_text": "DOUBLE FEATURE!! FLESH HEATIN' MENACE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "grotesque",
+    "surreal",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.6,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and grotesque imagery.",
+  "description": "A black and white poster features a creepy house and a monstrous, screaming face holding a severed limb, with bold, stylized text."
+}

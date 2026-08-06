@@ -13,9 +13,11 @@ request headers:
      (``v2.sg.media-imdb.com/suggestion/t/{tt}.json``). Returns ``imageUrl``
      with a fresh hash. No page render; polite and fast.
 
-  2. **Playwright Chromium (``--browser``)** — Python's Puppeteer equivalent.
-     Full page load with viewport / locale / Sec-CH-UA. Use when the
-     suggestion API has no image, or for debugging with ``--headed``.
+  2. **Browser (``--browser``)** — headed Chrome via **Selenium** (default
+     ``--engine selenium``; same stack as ``enrich_imdb_selenium_features.py``).
+     Playwright (``--engine playwright``) is kept for local debugging but often
+     gets HTTP 202 bot interstitials on AWS IPs. Use when the suggestion API
+     has no ``imageUrl`` (obscure titles).
 
 Methodology place
 -----------------
@@ -352,7 +354,179 @@ def extract_poster_from_page(page) -> tuple[str | None, str]:
     return (prefer_large(url) if url else None), src
 
 
-def scrape_browser(
+def _page_looks_blocked(title: str, status: int | None = None) -> bool:
+    t = (title or "").strip()
+    if status == 202:
+        return True
+    return bool(
+        re.search(r"^Just a moment|^Attention Required|captcha|challenge", t, re.I)
+    )
+
+
+def build_selenium_driver(*, headless: bool = False):
+    """Headed Chrome via Selenium — same stack that works on EC2 for features."""
+    import os
+    import platform
+    import tempfile
+
+    from selenium import webdriver
+    from selenium.webdriver.chrome.options import Options
+    from selenium.webdriver.chrome.service import Service
+    from webdriver_manager.chrome import ChromeDriverManager
+
+    os.environ.setdefault("NO_PROXY", "*")
+    os.environ.setdefault("no_proxy", "*")
+
+    opts = Options()
+    if platform.system() == "Darwin":
+        chrome = "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome"
+        if Path(chrome).exists():
+            opts.binary_location = chrome
+    else:
+        for chrome in (
+            os.environ.get("CHROME_BIN") or "",
+            "/usr/bin/google-chrome-stable",
+            "/usr/bin/google-chrome",
+            "/usr/bin/chromium-browser",
+            "/usr/bin/chromium",
+        ):
+            if chrome and Path(chrome).exists():
+                opts.binary_location = chrome
+                break
+    if headless:
+        opts.add_argument("--headless=new")
+        opts.add_argument("--disable-gpu")
+        opts.add_argument("--window-size=1920,1080")
+    else:
+        opts.add_argument("--window-size=1440,900")
+        opts.add_argument("--start-maximized")
+    profile = tempfile.mkdtemp(prefix="wflike-imdb-poster-chrome-")
+    opts.add_argument(f"--user-data-dir={profile}")
+    opts.add_argument("--no-first-run")
+    opts.add_argument("--no-default-browser-check")
+    opts.add_argument("--no-sandbox")
+    opts.add_argument("--disable-dev-shm-usage")
+    opts.add_argument("--disable-blink-features=AutomationControlled")
+    opts.add_argument("--lang=en-US")
+    opts.add_argument(f"--user-agent={CHROME_UA}")
+    opts.add_experimental_option("excludeSwitches", ["enable-automation"])
+    opts.add_experimental_option("useAutomationExtension", False)
+
+    print(f"  Chrome profile={profile}", flush=True)
+    service = Service(ChromeDriverManager().install())
+    driver = webdriver.Chrome(service=service, options=opts)
+    try:
+        driver.execute_cdp_cmd(
+            "Page.addScriptToEvaluateOnNewDocument",
+            {
+                "source": (
+                    "Object.defineProperty(navigator, 'webdriver', "
+                    "{get: () => undefined});"
+                )
+            },
+        )
+    except Exception:
+        pass
+    driver.set_page_load_timeout(45)
+    return driver
+
+
+def extract_poster_selenium(driver) -> tuple[str | None, str, bool]:
+    data = driver.execute_script(
+        """
+        const title = document.title || '';
+        const blocked = /^Just a moment|^Attention Required|captcha/i.test(title)
+          || !!document.querySelector('#challenge-form, .g-recaptcha');
+        const og = document.querySelector('meta[property="og:image"]');
+        if (og && og.content && og.content.includes('media-amazon')) {
+          return {url: og.content, source: 'og:image', blocked, title};
+        }
+        const imgs = [...document.querySelectorAll('img')]
+          .map(i => ({
+            src: i.currentSrc || i.src || '',
+            w: i.naturalWidth || 0,
+          }))
+          .filter(i => i.src.includes('media-amazon.com/images'));
+        imgs.sort((a, b) => b.w - a.w);
+        if (imgs.length) return {url: imgs[0].src, source: 'img', blocked, title};
+        return {url: null, source: 'none', blocked, title};
+        """
+    ) or {}
+    url = data.get("url") or None
+    src = data.get("source") or "none"
+    blocked = bool(data.get("blocked")) or _page_looks_blocked(str(data.get("title") or ""))
+    return (prefer_large(url) if url else None), src, blocked
+
+
+def scrape_browser_selenium(
+    candidates: list[dict],
+    *,
+    delay: float,
+    jitter: float,
+    headless: bool,
+    challenge_wait_s: float,
+    max_consecutive_blocks: int,
+) -> tuple[dict[int, dict], dict[int, dict]]:
+    hits = load_csv_map(HITS)
+    miss = load_csv_map(MISS)
+    session = requests.Session()
+    session.trust_env = False
+    print("Starting headed Chrome (Selenium)…", flush=True)
+    driver = build_selenium_driver(headless=headless)
+    consecutive_blocks = 0
+    try:
+        for i, row in enumerate(candidates, 1):
+            pid, tt = int(row["id"]), row["imdb_id"]
+            poster, source, reason = None, "none", ""
+            try:
+                driver.get(f"https://www.imdb.com/title/{tt}/")
+                time.sleep(0.8)
+                poster, source, blocked = extract_poster_selenium(driver)
+                if blocked or not poster:
+                    # IMDb challenge / soft block — wait and retry once (features pattern)
+                    time.sleep(max(2.5, challenge_wait_s))
+                    poster, source, blocked = extract_poster_selenium(driver)
+                if blocked and not poster:
+                    reason = "blocked challenge/202"
+                    consecutive_blocks += 1
+                elif not poster:
+                    reason = "no-poster"
+                    consecutive_blocks = 0
+                else:
+                    consecutive_blocks = 0
+            except Exception as e:
+                reason = f"{type(e).__name__}: {e}"
+                consecutive_blocks += 1
+
+            _record(
+                session, hits, miss, row, poster, source, reason,
+                i, len(candidates),
+            )
+            if i % 10 == 0 or i == len(candidates):
+                _flush(hits, miss)
+
+            if (
+                max_consecutive_blocks > 0
+                and consecutive_blocks >= max_consecutive_blocks
+            ):
+                print(
+                    f"ABORT consecutive_blocks={consecutive_blocks} "
+                    f"at {i}/{len(candidates)} — uploading partial results",
+                    flush=True,
+                )
+                _flush(hits, miss)
+                break
+
+            time.sleep(delay + random.uniform(0, jitter))
+    finally:
+        try:
+            driver.quit()
+        except Exception:
+            pass
+    return hits, miss
+
+
+def scrape_browser_playwright(
     candidates: list[dict],
     *,
     delay: float,
@@ -360,12 +534,14 @@ def scrape_browser(
     headless: bool,
     timeout_ms: int,
     channel: str,
+    challenge_wait_s: float,
+    max_consecutive_blocks: int,
 ) -> tuple[dict[int, dict], dict[int, dict]]:
     try:
         from playwright.sync_api import sync_playwright
     except ImportError as e:
         raise SystemExit(
-            "Playwright required for --browser (Python Puppeteer).\n"
+            "Playwright required for --engine playwright.\n"
             "  pip3 install playwright && playwright install chromium\n"
             f"({e})"
         ) from e
@@ -377,6 +553,7 @@ def scrape_browser(
     if channel:
         launch_kwargs["channel"] = channel
 
+    consecutive_blocks = 0
     with sync_playwright() as p:
         browser = p.chromium.launch(**launch_kwargs)
         context = browser.new_context(
@@ -413,10 +590,45 @@ def scrape_browser(
                     pass
                 page.wait_for_timeout(500)
                 poster, source = extract_poster_from_page(page)
+                title = ""
+                try:
+                    title = page.title()
+                except Exception:
+                    pass
+                blocked = _page_looks_blocked(title, status) or (
+                    status == 202 and not poster
+                )
+                if blocked and not poster:
+                    # Wait for interstitial to clear (often never on AWS IPs)
+                    page.wait_for_timeout(int(max(2.5, challenge_wait_s) * 1000))
+                    try:
+                        page.wait_for_selector(
+                            'meta[property="og:image"], img[src*="media-amazon.com/images"]',
+                            timeout=min(timeout_ms, 20000),
+                        )
+                    except Exception:
+                        pass
+                    poster, source = extract_poster_from_page(page)
+                    try:
+                        title = page.title()
+                    except Exception:
+                        pass
+                    blocked = _page_looks_blocked(title, status) or not poster
                 if not poster:
-                    reason = f"no-poster status={status}"
+                    reason = (
+                        f"blocked challenge status={status}"
+                        if blocked
+                        else f"no-poster status={status}"
+                    )
+                    if blocked or status == 202:
+                        consecutive_blocks += 1
+                    else:
+                        consecutive_blocks = 0
+                else:
+                    consecutive_blocks = 0
             except Exception as e:
                 reason = f"{type(e).__name__}: {e}"
+                consecutive_blocks += 1
 
             _record(
                 session, hits, miss, row, poster, source, reason,
@@ -424,11 +636,60 @@ def scrape_browser(
             )
             if i % 10 == 0 or i == len(candidates):
                 _flush(hits, miss)
+
+            if (
+                max_consecutive_blocks > 0
+                and consecutive_blocks >= max_consecutive_blocks
+            ):
+                print(
+                    f"ABORT consecutive_blocks={consecutive_blocks} "
+                    f"at {i}/{len(candidates)} — uploading partial results",
+                    flush=True,
+                )
+                _flush(hits, miss)
+                break
+
             time.sleep(delay + random.uniform(0, jitter))
 
         context.close()
         browser.close()
     return hits, miss
+
+
+def scrape_browser(
+    candidates: list[dict],
+    *,
+    delay: float,
+    jitter: float,
+    headless: bool,
+    timeout_ms: int,
+    channel: str,
+    engine: str = "selenium",
+    challenge_wait_s: float = 8.0,
+    max_consecutive_blocks: int = 12,
+) -> tuple[dict[int, dict], dict[int, dict]]:
+    eng = (engine or "selenium").strip().lower()
+    if eng == "playwright":
+        return scrape_browser_playwright(
+            candidates,
+            delay=delay,
+            jitter=jitter,
+            headless=headless,
+            timeout_ms=timeout_ms,
+            channel=channel,
+            challenge_wait_s=challenge_wait_s,
+            max_consecutive_blocks=max_consecutive_blocks,
+        )
+    if eng != "selenium":
+        raise SystemExit(f"unknown --engine {engine!r} (selenium|playwright)")
+    return scrape_browser_selenium(
+        candidates,
+        delay=delay,
+        jitter=jitter,
+        headless=headless,
+        challenge_wait_s=challenge_wait_s,
+        max_consecutive_blocks=max_consecutive_blocks,
+    )
 
 
 def scrape_suggest(
@@ -547,6 +808,24 @@ def main() -> None:
         default="",
         help="Playwright channel, e.g. chrome (system Google Chrome)",
     )
+    ap.add_argument(
+        "--engine",
+        default="selenium",
+        choices=("selenium", "playwright"),
+        help="browser backend (selenium recommended on EC2; playwright often gets HTTP 202)",
+    )
+    ap.add_argument(
+        "--challenge-wait",
+        type=float,
+        default=8.0,
+        help="seconds to wait/retry when IMDb challenge/202 is detected",
+    )
+    ap.add_argument(
+        "--max-consecutive-blocks",
+        type=int,
+        default=12,
+        help="abort browser scrape after N consecutive challenge/202 misses (0=never)",
+    )
     ap.add_argument("--timeout", type=int, default=30000)
     ap.add_argument("--download-only", action="store_true")
     ap.add_argument(
@@ -585,7 +864,11 @@ def main() -> None:
         )
     if args.limit:
         candidates = candidates[: args.limit]
-    mode = "browser/Playwright" if args.browser else "suggest API"
+    mode = (
+        f"browser/{args.engine}"
+        if args.browser
+        else "suggest API"
+    )
     src = args.ids_file or f"dead+omdb_miss={args.include_omdb_miss}"
     print(
         f"candidates={len(candidates):,} mode={mode} "
@@ -606,6 +889,9 @@ def main() -> None:
             headless=not args.headed,
             timeout_ms=args.timeout,
             channel=args.channel,
+            engine=args.engine,
+            challenge_wait_s=args.challenge_wait,
+            max_consecutive_blocks=args.max_consecutive_blocks,
         )
     else:
         hits, miss = scrape_suggest(

@@ -1,0 +1,39 @@
+{
+  "title_text": "THE HAUNTED CURIOSITY SHOP",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "JOL",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and eerie atmosphere.",
+  "description": "A man stands in a doorway of a curiosity shop filled with odd artifacts and eerie decorations."
+}

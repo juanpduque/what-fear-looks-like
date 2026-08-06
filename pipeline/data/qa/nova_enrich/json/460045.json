@@ -1,0 +1,38 @@
+{
+  "title_text": "五体不具",
+  "credits_text": "人形師・人形使い・人形師・人形使い",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "映画「五体不具」",
+  "mood": [
+    "psychological",
+    "thriller",
+    "mystery",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "mask",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster featuring two individuals, one holding a cracked mask, with Japanese text overlaying a dark, moody background."
+}

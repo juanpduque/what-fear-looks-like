@@ -1,0 +1,40 @@
+{
+  "title_text": "ZONE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "2024. 10.04",
+  "mood": [
+    "dread",
+    "survival",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore from zombie imagery.",
+  "description": "A poster shows a group of survivors facing a horde of zombies, with a stark title 'ZONE' above them."
+}

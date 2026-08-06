@@ -1,0 +1,44 @@
+{
+  "title_text": "HAUNTED the Ferryman",
+  "credits_text": "A suspense thriller where a man encounters supernatural forces.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Granada Video Prism Video",
+  "mood": [
+    "gothic",
+    "suspense",
+    "supernatural",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "candle",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and a skull, suggesting supernatural themes.",
+  "description": "A man with a serious expression is featured on a poster titled 'Haunted the Ferryman,' with a small inset showing a skull and candle."
+}

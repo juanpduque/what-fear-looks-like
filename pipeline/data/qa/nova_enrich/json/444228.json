@@ -1,0 +1,45 @@
+{
+  "title_text": "うたくん 6.17",
+  "credits_text": "父家大家 中家家 中家女 中家女 中家女",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "死住をする家を引けたって、死住になったラブル",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery",
+    "supernatural",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.7,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and potentially disturbing imagery.",
+  "description": "A poster featuring a dark, intense character with a raven, surrounded by children in a night setting, with Japanese text and a haunting atmosphere."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "BERNARD T. WARDS POPCORN BAG OF TERROR",
+  "credits_text": "WRITTEN, PRODUCED AND DIRECTED BY: BRIAN EDWARD DOYLE AND KEVIN GRÓSZ",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BANANA NECKTIE PRODUCTIONS PRESENTS",
+  "mood": [
+    "camp",
+    "surreal",
+    "erotic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.2,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "sexual",
+    "violence"
+  ],
+  "moderation_notes": "Contains mild sexual suggestiveness and implied violence.",
+  "description": "Vibrant poster features a man in a suit holding popcorn, surrounded by stylized characters including a skull and a woman in a revealing outfit."
+}

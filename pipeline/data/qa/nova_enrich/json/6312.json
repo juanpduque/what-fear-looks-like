@@ -1,0 +1,46 @@
+{
+  "title_text": "Bloodhound of the Wolf",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "dark",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "gothic",
+      "conf": 0.85
+    },
+    {
+      "name": "haunting",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.6,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains dark, violent imagery and occult themes.",
+  "description": "A gothic poster features a dark, shadowy figure holding a weapon amidst flames and a guillotine, evoking a haunting and violent atmosphere."
+}

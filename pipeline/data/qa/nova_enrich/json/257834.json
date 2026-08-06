@@ -1,0 +1,40 @@
+{
+  "title_text": "AXED",
+  "credits_text": "STARRING LAZARO WIDOE, LEONIE VORBE, ARIELLE DROE, NEIL MCNABBAN, KAZUMI KAWASHIMA, STARRING SAMMY LLOYD; WRITTEN BY DANTE VIGLIORINI AND JESSICA LONG; DIRECTED BY ROBERT CLARK AND JESSICA LONG; PRODUCED BY KARL KAWASHIMA, TESS KLEIN, NAZIRIN NADIR AND JOSHULLAH; EDITED BY JESSICA LONG",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE LIVING THE INFECTED AND THE DEAD",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A poster features a large axe dripping blood with the title 'AXED' and tagline 'The Living, The Infected and the Dead.' Dark, eerie background with skeletal imagery."
+}

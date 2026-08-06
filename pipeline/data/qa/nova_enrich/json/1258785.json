@@ -1,0 +1,47 @@
+{
+  "title_text": "JACK SHIT",
+  "credits_text": "TONYA BALLMAN, MIKELA MEZRA, JONATHAN TREUER, JACOB LARSEN, KAREN YOUNG, JENNIFER CASSANDRA, CAPRICE REED, BRANDON MENTAG, NICKY NOTA, JENNIFER LARSEN, KAREN YOUNG, JENNIFER CASSANDRA, CAPRICE REED, JOHN LA BE, BRANDON MENTAG, NICKY NOTA, TONYA BALLMAN, SPENCER HUNT, JOHN LA BE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "thriller",
+    "dark humor",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.5,
+  "violence": 0.6,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic horror elements, mild sexual suggestion, and violent imagery.",
+  "description": "A horror poster features a monstrous masked figure holding a knife over a frightened young woman, set against a dark, fiery background."
+}

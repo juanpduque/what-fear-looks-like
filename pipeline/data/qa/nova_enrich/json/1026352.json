@@ -1,0 +1,42 @@
+{
+  "title_text": "LAMBCHOP",
+  "credits_text": "A BAD CASE OF STAGE FRIGHT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HUMAN CHASER FILM FEST PRESENTS\nWED OCT 23RD 7:00 PM\nTOWER THEATRE SLC $15",
+  "mood": [
+    "gothic",
+    "dread",
+    "horror",
+    "intense",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and disturbing imagery.",
+  "description": "A black and white poster features a distressed woman with long blonde hair and blood on her face, promoting the film 'LAMBCHOP'."
+}

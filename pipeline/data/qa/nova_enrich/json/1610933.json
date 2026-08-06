@@ -1,0 +1,39 @@
+{
+  "title_text": "ฟันซ้าย",
+  "credits_text": "เจมส์ดิวา พรหมพงษ์อริย์ กศพล เหมยธาร",
+  "languages": [
+    "th"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.95,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence through weapon imagery.",
+  "description": "A dark, shadowy figure grips a large knife against a smoky background, with Thai text overlay indicating a title and credits."
+}

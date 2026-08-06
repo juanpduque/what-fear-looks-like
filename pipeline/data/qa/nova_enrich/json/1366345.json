@@ -1,0 +1,35 @@
+{
+  "title_text": "ONE CALL AWAY",
+  "credits_text": "DIRECTED BY RYAN LESHOCK",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "suspenseful",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "phone",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the presence of a gun.",
+  "description": "The poster shows a distressed woman holding a phone with a gun nearby, and a red rotary phone hanging in the background."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "DEATH O'LANTERN CORN ON THE MAC-COB",
+  "credits_text": "Human Pie isn't the only Dessert... Stingy Jack is hungry for a BRIDE!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SAVINGS $9.95 $14.95 SAVE $5.00 SHOT ON VIDEO HORROR NEW RELEASE BANNED IN 665 COUNTRIES",
+  "mood": [
+    "horror",
+    "gothic",
+    "camp",
+    "supernatural",
+    "macabre"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and themes of violence.",
+  "description": "A man with a skull face holds a carved pumpkin lantern, with horror-themed text and warnings about bans in multiple countries."
+}

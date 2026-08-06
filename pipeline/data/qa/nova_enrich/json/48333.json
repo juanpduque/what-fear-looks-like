@@ -1,0 +1,46 @@
+{
+  "title_text": "HAMMERHEAD",
+  "credits_text": "JEFFREY COMBS WILLIAM FORSYTHE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HALF MAN, HALF SHARK, TOTAL TERROR",
+  "mood": [
+    "thriller",
+    "horror",
+    "action",
+    "dread",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "water",
+      "conf": 0.75
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 1.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of a monstrous creature with visible teeth and blood.",
+  "description": "Movie poster features a menacing hybrid creature with shark-like features and human eyes, set against a dark underwater background."
+}

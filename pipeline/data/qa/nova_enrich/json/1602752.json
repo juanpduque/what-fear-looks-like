@@ -1,0 +1,43 @@
+{
+  "title_text": "THE HANGED MAN",
+  "credits_text": "A Film by David Ulbrich",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "mystery",
+    "noir",
+    "haunting",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "staircase",
+      "conf": 0.7
+    },
+    {
+      "name": "mirror",
+      "conf": 0.8
+    },
+    {
+      "name": "gothic",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A black and white poster features a distorted mirror reflecting a shadowy figure on a staircase, framed by bold red borders."
+}

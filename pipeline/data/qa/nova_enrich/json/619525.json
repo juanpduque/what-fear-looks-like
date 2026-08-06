@@ -1,0 +1,47 @@
+{
+  "title_text": "UTERUS",
+  "credits_text": "MARCELUS MARQUEZ CINEMA MARCELO BASILIO LUCIO SANCHEZ GOMEZ Cryosleep Films presents MARCELO MARQUEZ CINEMA MARCELO BASILIO LUCIO SANCHEZ GOMEZ MARCELO MARQUEZ CINEMA MARCELO BASILIO LUCIO SANCHEZ GOMEZ MARCELO MARQUEZ CINEMA MARCELO BASILIO LUCIO SANCHEZ GOMEZ",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A FILM PRODUCED BY MARCELO MARQUEZ CINEMA",
+  "mood": [
+    "gothic",
+    "surreal",
+    "eerie",
+    "haunting",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "gothic",
+      "conf": 0.8
+    },
+    {
+      "name": "haunting",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "blood",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and blood, with occult themes.",
+  "description": "A dark, red-tinted poster features a shadowy, semi-transparent figure with the bold title 'UTERUS' below."
+}

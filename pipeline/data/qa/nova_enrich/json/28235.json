@@ -1,0 +1,39 @@
+{
+  "title_text": "STRAWBERRY ESTATES",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HORROR HIFI STEREO RPG FROM WIZARDS",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "axe",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the axe and ominous setting.",
+  "description": "A poster features a figure holding an axe against a stormy backdrop with a house, labeled 'Strawberry Estates' and tagged as horror."
+}

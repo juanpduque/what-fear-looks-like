@@ -1,0 +1,42 @@
+{
+  "title_text": "BURNING BRIGHT",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "tense",
+    "dramatic",
+    "intense",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "tiger",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.9,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "blood",
+    "monster"
+  ],
+  "moderation_notes": "Contains implied violence and blood, with a menacing tiger and dramatic tension.",
+  "description": "A woman and a child face a large tiger on a wooden dock, with fire and blood visible, creating a tense and dramatic atmosphere."
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "WORLD WAR DEAD",
+  "credits_text": "RAY PANITHARTI WENDY GLENN KACEY BARNFIELD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE RISE OF THE FALLEN",
+  "mood": [
+    "gritty",
+    "post-apocalyptic",
+    "intense",
+    "survival",
+    "war-torn"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "barbed_wire",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    },
+    {
+      "name": "helmet",
+      "conf": 0.7
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains intense war imagery and implied violence.",
+  "description": "A group of soldiers navigate a war-torn landscape filled with barbed wire and smoke, facing survival challenges in a post-apocalyptic setting."
+}

@@ -1,0 +1,43 @@
+{
+  "title_text": "FAST ZOMBIES WITH GUNS",
+  "credits_text": "\"FAST ZOMBIES WITH GUNS EXCELS IN THE ZOMBIE GENRE\" - MENACE SOCIETY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CHEMICAL BURN ENTERTAINMENT PRESENTS",
+  "mood": [
+    "action",
+    "horror",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and weapon use.",
+  "description": "Poster shows three characters holding guns amidst a zombie crowd in an urban setting."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "ZOMBIE COLLEGE THE 5 RULES OF LAB SAFETY",
+  "credits_text": "TIM ROSS, ANDREA LAING, ISAIAH STRATTON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BONETWORK JAMES SUTTLE, VERNON SHIDAF, DAVID GANES, ANDREW SCHULTZ, BERJAMIN GARCIA",
+  "mood": [
+    "horror",
+    "camp",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and implied violence.",
+  "description": "A woman in a lab coat and goggles holds a pipette with a zombie-like appearance, suggesting a horror comedy theme."
+}

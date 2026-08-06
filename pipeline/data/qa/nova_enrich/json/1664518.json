@@ -1,0 +1,45 @@
+{
+  "title_text": "Nightmares Unleashed 2: Joseph's Revenge",
+  "credits_text": "Ira Heiden, Lloyd Kaufman, Alisa Rose, Luke Johannessen, Jessica Lucas, Ako Caldwell, Stana Banic, Bat Tuvor, Matthew Allen Huber",
+  "languages": [
+    "en"
+  ],
+  "other_text": "The sequel to the award winning horror fantasy monster feature!",
+  "mood": [
+    "gothic",
+    "surreal",
+    "camp",
+    "dread",
+    "fantasy"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.1,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Mild violent imagery present in poster art.",
+  "description": "Poster features a group of characters including monsters and a clown, with bold title text and tagline for a horror fantasy sequel."
+}

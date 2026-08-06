@@ -1,0 +1,45 @@
+{
+  "title_text": "NECROMANCER",
+  "credits_text": "DYLAN COLE BLACK'S",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A CHILLING JOURNEY TO HELL AND BACK!",
+  "mood": [
+    "gothic",
+    "occult",
+    "dread",
+    "surreal",
+    "chilling"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and potentially disturbing imagery.",
+  "description": "A dark poster featuring a man's intense face with occult imagery and text, suggesting a chilling journey to hell."
+}

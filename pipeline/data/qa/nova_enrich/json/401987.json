@@ -1,0 +1,39 @@
+{
+  "title_text": "GUNSEYE",
+  "credits_text": "\"Not since 'The Shining' axe-wielding maniac has there been a man as terrifying...\" \n \"When your best friend turns into a compulsive monster on a bold errand with no escape\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "thriller",
+    "psychological horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and psychological horror themes.",
+  "description": "A dark poster features a silhouette leaping against a night sky with bold title text and taglines hinting at horror and betrayal."
+}

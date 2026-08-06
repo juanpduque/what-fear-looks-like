@@ -1,0 +1,42 @@
+{
+  "title_text": "ELEVATOR EXPRESS",
+  "credits_text": "Directed by Samuel Cahill and Tao Bensaou-san. Starring Ehan Calihl, Zele Bensaou-san and Samuel Cahill. Written by Samuel Cahill. Edited by Tao Bensaou-san.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Dublin International Film Festival",
+  "mood": [
+    "dread",
+    "suspense",
+    "claustrophobic",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatter and implied violence.",
+  "description": "A dark elevator scene shows a masked figure holding a weapon with red splatters on the walls, suggesting a horror thriller."
+}

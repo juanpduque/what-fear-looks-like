@@ -1,0 +1,42 @@
+{
+  "title_text": "THE HORN",
+  "credits_text": "PRODUCED BY DEPIKA KALLURACHCHI WRITTEN & DIRECTED BY SAMER S. PACKELLA MUSIC BY ROHAN DISSANAYAKE CAST: KAVINDA KAVINDU, CHANAKA GURUGANDE, ASANKA MANGI, THARAKA WICKRAMARATNE, CHANDIKA WICKRAMADASA, ROHAN PALPATTA",
+  "languages": [
+    "en",
+    "si"
+  ],
+  "other_text": "KALUARA WICKRAMADASA, ASANKA MANGI, THARAKA WICKRAMARATNE, CHANDIKA WICKRAMADASA, ROHAN PALPATTA",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains themes of occult and psychological horror; no explicit violence or gore shown.",
+  "description": "A man stands facing a bound figure in a dimly lit room, with a shadowy figure looming behind."
+}

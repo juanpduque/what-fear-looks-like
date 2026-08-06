@@ -1,0 +1,43 @@
+{
+  "title_text": "THE THING ABOUT BEECHER'S GATE",
+  "credits_text": "STARRING: MORGAN MCLEOD, CHRIS CIPRI, ALEX BRYAN; DIRECTED BY: JEREMY HERBERT & MORGAN MCLEOD; WRITTEN BY: JEREMY HERBERT; PRODUCED BY: JEREMY HERBERT & MORGAN MCLEOD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EVERY SMALL TOWN HAS ITS TRADITIONS. THIS JUST HAPPENS TO BE A ROODY ONE.",
+  "mood": [
+    "horror",
+    "thriller",
+    "mystery",
+    "suspense",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "house",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man stands in a dark forest holding an axe, with a house and red trees in the background, suggesting a horror theme."
+}

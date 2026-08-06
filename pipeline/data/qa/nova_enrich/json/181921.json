@@ -1,0 +1,45 @@
+{
+  "title_text": "WITCH'S BREW",
+  "credits_text": "Midnight Crew Studios Presents\nA Film By Chris LaMartina",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Liver Damage will be the LEAST of your Problems!",
+  "mood": [
+    "horror",
+    "camp",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.3,
+  "person": 1.0,
+  "animal": 0.1,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "Poster features multiple characters with a dark, eerie atmosphere, highlighting a knife and blood, suggesting horror themes."
+}

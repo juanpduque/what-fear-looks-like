@@ -1,0 +1,41 @@
+{
+  "title_text": "KRVAVY ROMAN",
+  "credits_text": "HRAJ: ANDŘEJ PAVELEK, JAROSLAV BRABEC, LUCKY HERTITOVÁ, VÁCLAV MAJER, VIKTOR DVOŘÁK, PAVEL SCHRÁNEK, JAROSLAV DLAVÁK, ELA BŘEZINOVÁ, VÁCLAV MATEK, VĚRA KLÁJNOVÁ, JIRKA ASTEROVÁ, KATERINA FYTRNOVÁ, JOSEF KENR, JAROSLAV BARTOŠKA, MILAN SCHRÁNEK, OTO ŠTĚNDRLE, VLASTIMIL KORČEK, BOHUMIL ADÁMEK, ADALSI MÁREK, VÁŠUT, OTO ŠTĚNDRLE",
+  "languages": [
+    "en",
+    "cs"
+  ],
+  "other_text": "ZÁBAVNÉ FÉRIE Z ODBORNÍ NĚMECHE, ALE I ZVUKOVÉHO FILMU, PLNÁ KRVE NAPETI A ŠÁSTNÝCH KONCŮ",
+  "mood": [
+    "dramatic",
+    "gothic",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A dramatic poster features a man holding a knife, with a creature in the background and several faces below. The title \"KRVÁVY ROMAN\" is prominently displayed."
+}

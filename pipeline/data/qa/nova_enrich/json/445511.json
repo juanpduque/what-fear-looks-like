@@ -1,0 +1,46 @@
+{
+  "title_text": "OMBRE",
+  "credits_text": "MONICA GUERRITORE • LOU CASTEL • LAURA BELLI • MITA MEDICI ANTONIO GUIDI • CARLO BAGNO • GIORGIO CAVEDON",
+  "languages": [
+    "en",
+    "it"
+  ],
+  "other_text": "regia di GIORGIO CAVEDON • laz. LUCIANO VITTORI",
+  "mood": [
+    "gothic",
+    "surreal",
+    "eerie",
+    "psychological",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "eyes",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and eerie visuals, but no explicit violence or sexual content.",
+  "description": "A woman in a white dress stands on a diagram with occult symbols, with two large eyes above her, suggesting a gothic horror theme."
+}

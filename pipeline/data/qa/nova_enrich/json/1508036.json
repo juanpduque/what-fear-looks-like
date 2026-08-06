@@ -1,0 +1,40 @@
+{
+  "title_text": "LNTRK",
+  "credits_text": "A FILM BY IRHAM ACHO BAHTLAR",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PRAMA GATRA FILM IN ASSOCIATION WITH RUMAH SEMUT FILM COMING SOON",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and gore imagery.",
+  "description": "A poster shows a red, rabbit-like creature with blood on its chest standing in a dimly lit, ornate hallway."
+}

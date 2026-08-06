@@ -1,0 +1,42 @@
+{
+  "title_text": "コフザ!",
+  "credits_text": "雑影山安対プールド",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "haunting",
+    "eerie",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "haunting",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatters and a suspenseful atmosphere.",
+  "description": "A dimly lit, blood-stained hallway leads to a solitary figure in red, creating an eerie and suspenseful atmosphere."
+}

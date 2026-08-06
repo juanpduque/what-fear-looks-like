@@ -1,0 +1,13 @@
+id,backend,n_boxes,x0,y0,x1,y1,img_w,img_h,strategy,status
+10283,surya,3,0,599,500,750,500,750,union_significant,ok
+26921,surya,2,176,1126,1000,1381,1000,1500,union_significant,ok
+28265,surya,1,109,77,941,382,1000,1500,union_top,ok
+77399,surya,2,0,417,1000,1046,1000,1500,union_top,ok
+233194,surya,3,36,0,305,129,342,479,union_top,ok
+286452,surya,1,0,133,1000,452,1000,1500,union_top,ok
+653537,surya,0,0,0,1000,1500,1000,1500,full_fallback_no_boxes,ok
+940187,surya,1,0,406,342,445,342,513,union_significant,ok
+1015482,surya,3,0,1157,1000,1500,1000,1500,union_significant,ok
+1405670,surya,1,78,244,249,268,342,513,union_top,ok
+1483743,surya,3,50,34,297,85,342,484,union_top,ok
+1578643,surya,2,22,0,342,512,342,513,union_top_near_full,ok

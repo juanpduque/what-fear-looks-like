@@ -1,0 +1,43 @@
+{
+  "title_text": "DRAKULA",
+  "credits_text": "Reji: MÜHTER MEHMET SİNAĞOĞLU UMİT DENİZ\nÖZEN SERMET\nBU ŞİKİLİKİLİMİR",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "ANNIE BALL ATİF KAPTAN AYFER FERAY BÜLENT ORAN CAHİT IRĞAT MUNİR CEY K.E. BARİ",
+  "mood": [
+    "gothic",
+    "dread",
+    "noir",
+    "mysterious",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A vintage movie poster features a gothic scene with a man, a woman, and a ghostly figure against a dark background with a church silhouette."
+}

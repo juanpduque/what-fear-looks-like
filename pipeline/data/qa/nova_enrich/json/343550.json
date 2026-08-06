@@ -1,0 +1,41 @@
+{
+  "title_text": "Blood Riders",
+  "credits_text": "LAUGHTERSLAUGHTER FILMS PRESENTS A LARI TERÁS FILM JAMES JOLIBARRE HOLLY RILEY KYLE CHAPPELL RICK LARSEN JENNIFER CORTE WILL HOBART KELLY JANKOWSKI RICK HINE LORI LEWIS MCCOONALD POLANSKY CORDERO CONLON BROWNLEE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE DEVIL RIDES WITH US WWW.THEDEVILRIDESWITHS.US.COM",
+  "mood": [
+    "horror",
+    "thriller",
+    "action",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "Poster shows a group of people holding weapons with a dark, intense atmosphere. Text includes the title and cast names."
+}

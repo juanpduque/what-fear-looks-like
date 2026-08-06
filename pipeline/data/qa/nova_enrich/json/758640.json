@@ -1,0 +1,35 @@
+{
+  "title_text": "RIP",
+  "credits_text": "REST IN PIECES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PISSED OFF... RIPPED OFF... ABOUT TO BE RIPPED APART!",
+  "mood": [
+    "violent",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains violent imagery and weapon depiction.",
+  "description": "Poster features a group of people with a large face in the background, holding a gun, and bold red text reading 'RIP' and 'REST IN PIECES.'"
+}

@@ -1,0 +1,44 @@
+{
+  "title_text": "Lead Me Astray",
+  "credits_text": "THE PAST DOESN'T FORGET...AND IT DOESN'T FORGIVE\nJACE PICARD ALONZO BENNISON SPENCER LUCAS WEBSTER JIM CARAG MICHAEL ASTREY TOM DANGER\n\"REVELATION MANNELL MAN\" SUE GLEA \"TAMANGERS\" JACE PICARD \"ENDERS\" AND THE ALBRAN MARAN \"TOM DANGER\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TOM DANGER'S",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "chains",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and disturbing imagery.",
+  "description": "A gritty poster features a man holding a large knife, surrounded by eerie figures and chains in an urban setting."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "TURNED",
+  "credits_text": "A FILM BY CHRIS R. NOTABLE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "VAMPIRES DON'T SPARKLE. THEY BURN!",
+  "mood": [
+    "horror",
+    "action",
+    "dark",
+    "violent",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "Poster features two men, one holding a bloody knife, with intense expressions and dark, fiery background."
+}

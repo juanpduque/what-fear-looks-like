@@ -1,0 +1,39 @@
+{
+  "title_text": "YOUR SHADOWS",
+  "credits_text": "Lewis Bryant, John Slade",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Some fears begin in your childhood, and never leave you.",
+  "mood": [
+    "gothic",
+    "dread",
+    "psychological",
+    "haunting",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.1,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A black and white poster features a shadowy forest path with a solitary figure, accompanied by the title 'YOUR SHADOWS' and credits."
+}

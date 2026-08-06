@@ -1,0 +1,40 @@
+{
+  "title_text": "DOLL KILLER",
+  "credits_text": "A JESUS SATAN FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "For every doll lies death.",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "doll",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, potentially disturbing imagery.",
+  "description": "A poster shows a doll lying in a pool of blood with a knife nearby, accompanied by bold red text reading 'DOLL KILLER' and the tagline 'For every doll lies death.'"
+}

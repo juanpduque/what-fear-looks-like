@@ -1,0 +1,39 @@
+{
+  "title_text": "RESURRECTION",
+  "credits_text": "CHRISTOPHER LAMBERT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ON THE BRINK OF GENIUS IS THE MADNESS OF A SERIAL KILLER\nBE AFRAID, FOR HE IS COMING.",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller",
+    "psychological",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark poster features a man's face partially obscured, with dramatic red lighting and bold text about a serial killer's return."
+}

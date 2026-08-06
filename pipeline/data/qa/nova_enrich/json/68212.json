@@ -1,0 +1,46 @@
+{
+  "title_text": "THE TERROR EXPERIMENT",
+  "credits_text": "KELLY GEORGE MENDELEUX\nJASON LONDON C. THOMAS HOWELL ALICIA LEIGH WILLIS LOCHLYN MUNRO ALEXANDER WENDELBACH ROBERT CAMMARINE JUDO NELSON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TERROR IS CONTAGIOUS!",
+  "mood": [
+    "horror",
+    "suspense",
+    "apocalyptic",
+    "dread",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery and violent themes.",
+  "description": "A poster for a horror film featuring a group of terrified individuals in a cityscape, with a tagline 'Terror is Contagious!'"
+}

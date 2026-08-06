@@ -1,0 +1,46 @@
+{
+  "title_text": "LANET UYANİŞ",
+  "credits_text": "",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "OYUN BAŞLIYOR, BEDELINI ÖDEMEYE HAZIR MISIN?",
+  "mood": [
+    "gothic",
+    "dread",
+    "mystery",
+    "supernatural",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and suggests violent themes.",
+  "description": "A dark poster features two intense faces with blood, set against a eerie forest backdrop, hinting at a supernatural thriller."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "TOUCH!",
+  "credits_text": "Written by M. Meany Directed by Hannah May O'Brien",
+  "languages": [
+    "en"
+  ],
+  "other_text": "VANITY PRESENTS",
+  "mood": [
+    "horror",
+    "gothic",
+    "eerie",
+    "psychological",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A woman stands in a red-lit room, her hands raised defensively, with a shadowy figure looming behind her. The poster features bold, stylized text and a dramatic, horror-themed aesthetic."
+}

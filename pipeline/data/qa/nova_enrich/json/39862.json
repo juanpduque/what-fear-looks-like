@@ -1,0 +1,39 @@
+{
+  "title_text": "Crocodile Death Swamp",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "thriller",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 1.0
+    },
+    {
+      "name": "water",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 1.0
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.0,
+  "animal": 1.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts a menacing crocodile, suggesting potential violence.",
+  "description": "A close-up of a crocodile's face with sharp teeth, set against a dark, reflective water surface with a red and blue gradient."
+}

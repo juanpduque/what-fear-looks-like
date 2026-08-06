@@ -1,0 +1,42 @@
+{
+  "title_text": "K.I.N.I.",
+  "credits_text": "HİRA KOYUNCUOGLU · ESİL ÜNÜT · MORSEN RABİE! · ARDAĞAN KATAN · MÜSLÜM SEÇİN · AĞRA ABAY · ADEM ÇETİN · RASHO KOSH · SARA NASABABİ · ÖZGE YÜKSEK · DERYA ÇETİN · EĞLA GÜMÜŞ",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "20 EYLÜL'de SİNEMALARDA",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "disturbing",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains disturbing imagery and implied violence.",
+  "description": "A dark, eerie poster features a close-up of a distressed face with blood and text overlay, suggesting a psychological horror theme."
+}

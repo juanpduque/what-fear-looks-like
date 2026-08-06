@@ -1,0 +1,50 @@
+{
+  "title_text": "CATACOMBA",
+  "credits_text": "A FILM BY LORENZO LEPORI\n\nHERE LIES\nLORENZO LEPORI\nPHILIPPE ARDI\n\nBAIONETA MOVIE PRODUCTION IN CO-PRODUCTION WITH \"NOS FILM CASTROPOLIS\" PRESENTS \"CATACOMBA\"\n\nPAOLO PESTAND\nANDREA TENENTI\nSIVIANI PIANIGIANI\nELEONORA SIOTTI\nSIMONA VANNELI\nMASSIMO MASI\nSIMONE SPADA\n\n\"L'EREDITA' LEPORI\"\nROBERTO ABRAMI\nANTONIO TENENTI\nMASSIMO MASI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "erotic",
+    "horror",
+    "surreal",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "cemetery",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "nudity",
+    "occult"
+  ],
+  "moderation_notes": "Contains partial nudity and occult themes.",
+  "description": "A woman stands in a cemetery surrounded by ghostly figures and skulls, with a dark, eerie atmosphere."
+}

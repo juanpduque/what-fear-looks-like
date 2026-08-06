@@ -1,0 +1,44 @@
+{
+  "title_text": "INVADER",
+  "credits_text": "TODD STASHWICK AMY ACKER KAREEM GRIMES AND DOUG JONES WRITTEN BY TOMMY WALKER DIRECTED BY MIKE CARON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IT'S THE MOST MURDEROUS TIME OF THE YEAR",
+  "mood": [
+    "dread",
+    "suspense",
+    "holiday horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "creature",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.5,
+  "person": 0.3,
+  "animal": 0.4,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood, suitable for mature audiences.",
+  "description": "A poster shows a snowy house inside a glass orb with a spider and blood drip, surrounded by broken candy canes."
+}

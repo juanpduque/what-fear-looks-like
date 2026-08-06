@@ -1,0 +1,42 @@
+{
+  "title_text": "SAN FRANPSYCHO",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dark",
+    "intense",
+    "urban",
+    "psychological",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "cityscape",
+      "conf": 0.8
+    },
+    {
+      "name": "tattoo",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "nudity"
+  ],
+  "moderation_notes": "The poster features a shirtless man with a knife, suggesting potential violence and partial nudity.",
+  "description": "A shirtless man with a tattoo stands by water, holding a knife, with a stormy cityscape in the background."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "TITISAN SETAN",
+  "credits_text": "from producer: RAJESH PUNABI\nBAIN WONG, WENDY WILSON, SAYOKI, ALIYAH FAIZAH, DIAN PERMATAARI, MUTHIA DATU\n8 MARCH 2018",
+  "languages": [
+    "en"
+  ],
+  "other_text": "INTERCEPT FILM CRAFT PRESENTS\n7",
+  "mood": [
+    "horror",
+    "dread",
+    "gothic",
+    "supernatural",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including blood and monstrous imagery.",
+  "description": "A poster featuring a distressed woman with clawed hands, set against a dark background, promoting the horror film 'Titisan Setan' releasing on March 8, 2018."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "IN BLOOD",
+  "credits_text": "STARRING MATTHEW SCOTT, KARYN CROZIER, DAVID KELLY, AND CHRIS SCOTT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TONIGHT, HELL RELOCATES ...TO YOUR DOORSTEP! SAT 9th JULY 7pm POP SHOP GALLERY 18-20 Corrs Lane LIVE FAST ... DIE YOUNG... OR BE EATEN BY A GOOD-LOOKING CORPSE",
+  "mood": [
+    "horror",
+    "gothic",
+    "violent",
+    "dark",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and violent themes.",
+  "description": "A horror-themed poster featuring a monstrous red face with blood splatters and bold text announcing a film screening event."
+}

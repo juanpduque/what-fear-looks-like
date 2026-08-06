@@ -1,0 +1,42 @@
+{
+  "title_text": "GROUPCHAT",
+  "credits_text": "\"IT'S JUST A BIT OF HOCUS FOCUS\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "occult",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains occult imagery and mild blood/gore.",
+  "description": "A poster features a green-faced man with long hair and a distorted expression, holding a die with blood on it. The title 'GROUPCHAT' is displayed prominently."
+}

@@ -1,0 +1,42 @@
+{
+  "title_text": "WELCOME TO THE TORTURE MUSEUM",
+  "credits_text": "GIACOMO BELLINI, BENEDETTA DEL FREO, SARA RIZZANO, GIACOMO COSTA, un film di ANDREA BACCI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "torture",
+      "conf": 0.95
+    },
+    {
+      "name": "chair",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "erotic"
+  ],
+  "moderation_notes": "Contains graphic depictions of blood and potential sexual undertones.",
+  "description": "A person sits bound on an ornate chair, hooded and bloodied, with the title 'Welcome to the Torture Museum' displayed prominently."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "HELLSPAWN",
+  "credits_text": "BRIAN BERRY SEBASTIAN DARRON A FILM BY JOHN & MARK POLONIA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "VHS SOV",
+  "mood": [
+    "horror",
+    "thriller",
+    "supernatural",
+    "intense",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests horror themes with potential for mild violence.",
+  "description": "The poster features a monstrous creature and two distressed individuals, promoting the horror film 'Hellspawn' directed by John & Mark Polonia."
+}

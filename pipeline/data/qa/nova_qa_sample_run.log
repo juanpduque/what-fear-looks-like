@@ -1,0 +1,28 @@
+QA_START Mon Aug  3 09:50:36 -05 2026
+QA sample n_posters=119 jobs=238 models=['nova-pro', 'claude-haiku'] workers=3
+  10/238 ok=10 err=0 id=174080 model=claude-haiku risk=ok 9s
+  20/238 ok=20 err=0 id=657625 model=nova-pro risk=ok 17s
+  30/238 ok=30 err=0 id=148644 model=claude-haiku risk=ok 24s
+  40/238 ok=40 err=0 id=49810 model=claude-haiku risk=ok 32s
+  50/238 ok=50 err=0 id=125294 model=nova-pro risk=ok 39s
+  60/238 ok=60 err=0 id=114013 model=claude-haiku risk=ok 47s
+  70/238 ok=70 err=0 id=42462 model=claude-haiku risk=ok 54s
+  80/238 ok=80 err=0 id=1090184 model=nova-pro risk=ok 62s
+  90/238 ok=90 err=0 id=1077097 model=nova-pro risk=ok 70s
+  100/238 ok=100 err=0 id=89662 model=claude-haiku risk=ok 77s
+  110/238 ok=110 err=0 id=144351 model=nova-pro risk=ok 84s
+  120/238 ok=120 err=0 id=11772 model=claude-haiku risk=ok 92s
+  130/238 ok=130 err=0 id=936933 model=claude-haiku risk=ok 99s
+  140/238 ok=140 err=0 id=242358 model=nova-pro risk=ok 107s
+  150/238 ok=150 err=0 id=345911 model=claude-haiku risk=ok 114s
+  160/238 ok=160 err=0 id=1083816 model=claude-haiku risk=ok 121s
+  170/238 ok=170 err=0 id=1720522 model=claude-haiku risk=ok 129s
+  180/238 ok=180 err=0 id=200872 model=nova-pro risk=ok 137s
+  190/238 ok=190 err=0 id=224615 model=claude-haiku risk=ok 145s
+  200/238 ok=200 err=0 id=918615 model=nova-pro risk=ok 153s
+  210/238 ok=210 err=0 id=455141 model=nova-pro risk=ok 162s
+  220/238 ok=220 err=0 id=1380088 model=nova-pro risk=ok 169s
+  230/238 ok=230 err=0 id=24075 model=nova-pro risk=ok 177s
+  238/238 ok=238 err=0 id=36299 model=claude-haiku risk=ok 185s
+done → /Users/juanpabloduque/Documents/what-fear-looks-like/pipeline/data/qa/nova_qa_sample.csv ok=238 err=0
+QA_END exit=0 Mon Aug  3 09:53:42 -05 2026

@@ -1,0 +1,37 @@
+{
+  "title_text": "THE NIGHT OF THE CAREGIVER",
+  "credits_text": "ALEXANDER NIVSKY PRESENTS JOE CORNET FILM EIEN DEITZ NATASIE DENISE SPIRE ANNA ORSI WITH JOE CORNET AND ERIC ROBERTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FROM THE CREATOR OF \"THE AMITYVILLE MURDER\" AND \"THE HAUNTING OF SHARON TATE\"",
+  "mood": [
+    "dread",
+    "suspense",
+    "psychological horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark poster features fragmented glass and several intense faces, suggesting a psychological horror theme."
+}

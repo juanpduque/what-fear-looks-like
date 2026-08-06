@@ -1,0 +1,43 @@
+{
+  "title_text": "ONE OF OUR OWN",
+  "credits_text": "COLUMBIA PICTURES PRESENTS A HARRICK PRODUCTION \"ONE OF OUR OWN\" STARRING MEL GIBSON, JON VOIGHT, KEVIN DUNN, MICHAEL IRBY, JASON ISBELL, JOSH HARTNETT, JIMMY SMITS, JANE ADAMS, JASON ISBELL, JOSH HARTNETT, JIMMY SMITS, JANE ADAMS, AND Others. COLUMBIA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOU CAN'T HIDE FROM YOUR PAST FOREVER",
+  "mood": [
+    "intense",
+    "suspenseful",
+    "thriller",
+    "mystery",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "moon",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features an intense older man and a shadowy figure with a weapon against a moonlit jungle backdrop."
+}

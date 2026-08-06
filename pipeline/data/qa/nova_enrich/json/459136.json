@@ -1,0 +1,41 @@
+{
+  "title_text": "THE HANGING BALLOON",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "日経三社賞ノミネート作品",
+  "mood": [
+    "gothic",
+    "eerie",
+    "psychological",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "hanging",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a hanging motif.",
+  "description": "A poster features a distressed woman with a hanging balloon and ropes, suggesting psychological horror and suspense."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "LOS CAMINANTES",
+  "credits_text": "CARLOS SISI",
+  "languages": [
+    "es"
+  ],
+  "other_text": "La pandemia no se los llevó. Los trajo de vuelta",
+  "mood": [
+    "dread",
+    "apocalyptic",
+    "horror",
+    "gritty",
+    "desperate"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A man in a suit with zombie-like features stands amidst a desolate urban setting, with text indicating a pandemic's return."
+}

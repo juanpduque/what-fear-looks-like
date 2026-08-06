@@ -1,0 +1,42 @@
+{
+  "title_text": "結心スカラム",
+  "credits_text": "結份の心間、都市教業集",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "結心スカラム! 結心スカラム",
+  "mood": [
+    "dread",
+    "psychological",
+    "suspense",
+    "mystery",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and psychological horror themes.",
+  "description": "A poster shows a hand holding a smartphone displaying a haunted hospital scene, with bloodied fingers and eerie text."
+}

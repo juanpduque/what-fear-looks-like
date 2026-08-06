@@ -1,0 +1,50 @@
+{
+  "title_text": "DISASTER L.A.",
+  "credits_text": "THE LAST ZOMBIE APOCALYPSE BEGINS HERE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Los Angeles",
+  "mood": [
+    "dread",
+    "apocalyptic",
+    "horror",
+    "survival",
+    "chaos"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.8
+    },
+    {
+      "name": "cityscape",
+      "conf": 0.85
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and gore, suitable for mature audiences.",
+  "description": "A poster featuring three zombie-like figures with a chaotic cityscape and traffic jam in the background, indicating a zombie apocalypse scenario."
+}

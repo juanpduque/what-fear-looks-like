@@ -1,0 +1,40 @@
+{
+  "title_text": "THE CHAIR",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "torture_device",
+      "conf": 0.95
+    },
+    {
+      "name": "confinement",
+      "conf": 0.85
+    },
+    {
+      "name": "haunting",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster implies themes of violence and psychological horror through the depiction of a torture chair and a distressed figure.",
+  "description": "A poster shows an old, mechanical chair with restraints and gauges, with a distressed person kneeling nearby in a dimly lit room."
+}

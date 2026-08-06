@@ -1,0 +1,47 @@
+{
+  "title_text": "GROTESK",
+  "credits_text": "DANMARKS SVAR PÅ \"PLAN 9 FROM OUTER SPACE\"",
+  "languages": [
+    "en",
+    "da"
+  ],
+  "other_text": "15",
+  "mood": [
+    "horror",
+    "sci-fi",
+    "grotesque",
+    "cosmic",
+    "zombie"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.5
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.5,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including a monstrous creature and implied violence.",
+  "description": "A poster features a green, grotesque monster holding a hammer against a cosmic backdrop with a large moon."
+}

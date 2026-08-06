@@ -1,0 +1,41 @@
+{
+  "title_text": "DERANGED",
+  "credits_text": "THE ULTIMATE HORROR COMES FROM WITHIN.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "psychological horror",
+    "disturbing",
+    "intense",
+    "distorted",
+    "nightmarish"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests psychological horror themes but does not depict explicit violence or gore.",
+  "description": "The poster features fragmented faces of women with a shadowy figure in the center, accompanied by the tagline 'The ultimate horror comes from within.'"
+}

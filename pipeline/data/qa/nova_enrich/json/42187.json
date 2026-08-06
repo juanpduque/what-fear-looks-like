@@ -1,0 +1,35 @@
+{
+  "title_text": "SHARK ATTACK 2",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "thriller",
+    "action",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "shark",
+      "conf": 0.95
+    },
+    {
+      "name": "water",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.85,
+  "animal": 0.95,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and implied violence involving a shark.",
+  "description": "A woman screams as a large shark looms over her in turbulent water, with bold title text below."
+}

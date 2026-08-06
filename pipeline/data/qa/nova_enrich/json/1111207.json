@@ -1,0 +1,46 @@
+{
+  "title_text": "小組組中屋",
+  "credits_text": "ハンディシェイク 13",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "言論を試めることができない。小組組を屋めることができない。",
+  "mood": [
+    "dread",
+    "gothic",
+    "supernatural",
+    "psychological",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and gore, suggesting intense horror themes.",
+  "description": "A dark poster features elongated, bloodied hands reaching downward with Japanese text and a dimly lit staircase in the background."
+}

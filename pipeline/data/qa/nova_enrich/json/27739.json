@@ -1,0 +1,44 @@
+{
+  "title_text": "ZOMBIE CHRONICLES",
+  "credits_text": "BEING DEAD ROTS!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "3D HORROR COLLECTION",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.75,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and gore.",
+  "description": "A poster featuring a decayed zombie with outstretched arms against a dark background, with bold title text and a tagline."
+}

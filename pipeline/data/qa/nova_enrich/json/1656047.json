@@ -1,0 +1,39 @@
+{
+  "title_text": "RESURRECTION",
+  "credits_text": "A BIOHAZARD STORY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EVIL NEVER DIES... IT EVOLVES.",
+  "mood": [
+    "action",
+    "thriller",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.8,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains action violence and a large snake.",
+  "description": "Poster features a group of armed individuals facing a large snake, with bold title and tagline."
+}

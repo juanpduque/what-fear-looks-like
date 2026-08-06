@@ -1,0 +1,114 @@
+sample n=100 from data/qa/ocr_pilot_v2/sample_ids.txt
+posters_dir=data/qa/_ocr_pilot_v2_stage/posters
+out_dir=data/qa/ocr_pilot_v2_gemma31
+models=['gemma31']
+OPENROUTER_API_KEY=set (value not logged)
+
+=== key=gemma31 result=gemma4-31b api=google/gemma-4-31b-it n=100 posters=data/qa/_ocr_pilot_v2_stage/posters ===
+  [1/100] id=484509 status=ok chars=117 overlap=1.0 1.712s tok=330
+  [2/100] id=1261561 status=ok chars=255 overlap=1.0 2.18s tok=359
+  [3/100] id=362776 status=ok chars=55 overlap=1.0 1.654s tok=325
+  [4/100] id=26921 status=ok chars=31 overlap=1.0 0.601s tok=303
+  [5/100] id=212973 status=ok chars=252 overlap=1.0 1.861s tok=364
+  [6/100] id=48800 status=ok chars=150 overlap=1.0 2.869s tok=341
+  [7/100] id=35073 status=ok chars=39 overlap=1.0 2.325s tok=309
+  [8/100] id=836924 status=ok chars=37 overlap=1.0 3.872s tok=308
+  [9/100] id=3104 status=ok chars=26 overlap=1.0 2.686s tok=300
+  [10/100] id=64524 status=ok chars=9 overlap=1.0 0.663s tok=297
+  [11/100] id=77399 status=ok chars=13 overlap=0.0 0.756s tok=300
+  [12/100] id=30833 status=ok chars=17 overlap=1.0 1.116s tok=300
+  [13/100] id=399172 status=ok chars=18 overlap=1.0 0.48s tok=299
+  [14/100] id=1015482 status=ok chars=42 overlap=0.0 1.511s tok=175
+  [15/100] id=10283 status=ok chars=42 overlap=0.875 1.16s tok=312
+  [16/100] id=88410 status=ok chars=11 overlap=1.0 0.627s tok=300
+  [17/100] id=86687 status=ok chars=58 overlap=1.0 0.785s tok=312
+  [18/100] id=336254 status=ok chars=8 overlap=1.0 0.687s tok=299
+  [19/100] id=36992 status=ok chars=7 overlap=1.0 0.482s tok=297
+  [20/100] id=43274 status=ok chars=15 overlap=1.0 1.295s tok=299
+  [21/100] id=15056 status=ok chars=28 overlap=1.0 5.868s tok=304
+  [22/100] id=23532 status=ok chars=25 overlap=1.0 1.769s tok=300
+  [23/100] id=31012 status=ok chars=8 overlap=1.0 2.523s tok=296
+  [24/100] id=45551 status=ok chars=38 overlap=1.0 12.845s tok=314
+  [25/100] id=156252 status=ok chars=6 overlap=1.0 1.313s tok=296
+  [26/100] id=743757 status=ok chars=85 overlap=1.0 1.38s tok=321
+  [27/100] id=11908 status=ok chars=7 overlap=1.0 1.384s tok=164
+  [28/100] id=28265 status=ok chars=17 overlap=0.3333 1.357s tok=168
+  [29/100] id=28419 status=ok chars=415 overlap=1.0 3.426s tok=294
+  [30/100] id=53553 status=ok chars=8 overlap=1.0 0.508s tok=298
+  [31/100] id=77050 status=ok chars=73 overlap=1.0 0.772s tok=329
+  [32/100] id=278267 status=ok chars=614 overlap=1.0 3.328s tok=442
+  [33/100] id=165078 status=ok chars=230 overlap=1.0 4.946s tok=373
+  [34/100] id=225048 status=ok chars=42 overlap=1.0 1.336s tok=313
+  [35/100] id=233194 status=ok chars=275 overlap=1.0 2.348s tok=386
+  [36/100] id=286452 status=ok chars=13 overlap=1.0 0.717s tok=299
+  [37/100] id=300156 status=ok chars=75 overlap=1.0 3.119s tok=319
+  [38/100] id=302019 status=ok chars=12 overlap=1.0 1.773s tok=297
+  [39/100] id=387034 status=ok chars=377 overlap=1.0 1.859s tok=442
+  [40/100] id=491649 status=ok chars=5 overlap=1.0 2.286s tok=294
+  [41/100] id=505063 status=ok chars=26 overlap=1.0 2.168s tok=298
+  [42/100] id=547055 status=ok chars=9 overlap=1.0 0.406s tok=296
+  [43/100] id=636515 status=ok chars=32 overlap=1.0 0.55s tok=306
+  [44/100] id=653537 status=ok chars=8 overlap=1.0 1.305s tok=296
+  [45/100] id=772603 status=ok chars=208 overlap=1.0 2.187s tok=368
+  [46/100] id=974046 status=ok chars=127 overlap=1.0 1.164s tok=331
+  [47/100] id=976209 status=ok chars=97 overlap=1.0 1.275s tok=332
+  [48/100] id=77677 status=ok chars=7 overlap=1.0 0.487s tok=295
+  [49/100] id=94910 status=ok chars=10 overlap=1.0 0.573s tok=299
+  [50/100] id=207475 status=ok chars=52 overlap=1.0 0.843s tok=311
+  [51/100] id=259675 status=ok chars=322 overlap=1.0 13.312s tok=390
+  [52/100] id=343674 status=ok chars=13 overlap=1.0 1.464s tok=298
+  [53/100] id=356486 status=ok chars=14 overlap=1.0 0.576s tok=298
+  [54/100] id=384756 status=ok chars=56 overlap=1.0 3.715s tok=318
+  [55/100] id=472015 status=ok chars=101 overlap=1.0 3.881s tok=341
+  [56/100] id=487439 status=ok chars=622 overlap=1.0 4.529s tok=494
+  [57/100] id=682809 status=ok chars=570 overlap=1.0 3.221s tok=480
+  [58/100] id=748251 status=ok chars=15 overlap=1.0 1.697s tok=299
+  [59/100] id=861413 status=ok chars=422 overlap=1.0 2.809s tok=413
+  [60/100] id=940187 status=ok chars=53 overlap=0.0 12.159s tok=314
+  [61/100] id=972244 status=ok chars=467 overlap=1.0 4.124s tok=441
+  [62/100] id=748589 status=ok chars=471 overlap=1.0 3.111s tok=304
+  [63/100] id=796250 status=ok chars=311 overlap=1.0 4.894s tok=388
+  [64/100] id=802851 status=ok chars=54 overlap=1.0 0.92s tok=313
+  [65/100] id=854417 status=ok chars=29 overlap=1.0 15.588s tok=302
+  [66/100] id=863406 status=ok chars=13 overlap=1.0 2.05s tok=296
+  [67/100] id=918096 status=ok chars=38 overlap=1.0 5.077s tok=309
+  [68/100] id=931049 status=ok chars=142 overlap=1.0 13.743s tok=345
+  [69/100] id=1022479 status=ok chars=35 overlap=1.0 1.148s tok=307
+  [70/100] id=1083119 status=ok chars=19 overlap=1.0 12.053s tok=300
+  [71/100] id=1125186 status=ok chars=67 overlap=1.0 0.825s tok=320
+  [72/100] id=1193824 status=ok chars=11 overlap=1.0 0.716s tok=297
+  [73/100] id=1289969 status=ok chars=299 overlap=1.0 4.589s tok=397
+  [74/100] id=1298819 status=ok chars=20 overlap=1.0 0.517s tok=302
+  [75/100] id=1307154 status=ok chars=16 overlap=1.0 0.91s tok=298
+  [76/100] id=1375109 status=ok chars=481 overlap=1.0 8.285s tok=440
+  [77/100] id=1397562 status=ok chars=6 overlap=1.0 0.603s tok=297
+  [78/100] id=1441287 status=ok chars=52 overlap=1.0 0.819s tok=309
+  [79/100] id=1443966 status=ok chars=137 overlap=1.0 12.724s tok=341
+  [80/100] id=1475231 status=ok chars=492 overlap=1.0 2.93s tok=435
+  [81/100] id=1718150 status=ok chars=1022 overlap=1.0 3.054s tok=568
+  [82/100] id=652004 status=ok chars=23 overlap=1.0 0.611s tok=298
+  [83/100] id=931940 status=ok chars=18 overlap=1.0 0.928s tok=297
+  [84/100] id=949486 status=ok chars=352 overlap=1.0 3.046s tok=267
+  [85/100] id=988142 status=ok chars=25 overlap=1.0 0.885s tok=307
+  [86/100] id=1085262 status=ok chars=39 overlap=1.0 1.136s tok=175
+  [87/100] id=1148920 status=ok chars=448 overlap=1.0 2.99s tok=447
+  [88/100] id=1229586 status=ok chars=7 overlap=1.0 0.741s tok=302
+  [89/100] id=1273536 status=ok chars=29 overlap=1.0 0.912s tok=299
+  [90/100] id=1294319 status=ok chars=13 overlap=1.0 0.693s tok=297
+  [91/100] id=1346645 status=ok chars=4 overlap=1.0 2.148s tok=295
+  [92/100] id=1351896 status=ok chars=202 overlap=1.0 6.142s tok=348
+  [93/100] id=1363776 status=ok chars=9 overlap=1.0 2.389s tok=302
+  [94/100] id=1379480 status=ok chars=17 overlap=1.0 3.165s tok=297
+  [95/100] id=1405670 status=ok chars=22 overlap=0.0 2.739s tok=298
+  [96/100] id=1463113 status=ok chars=4 overlap=1.0 6.848s tok=301
+  [97/100] id=1483020 status=ok chars=43 overlap=1.0 3.798s tok=309
+  [98/100] id=1483743 status=ok chars=708 overlap=1.0 24.258s tok=535
+  [99/100] id=1541944 status=ok chars=13 overlap=1.0 2.239s tok=297
+  [100/100] id=1578643 status=ok chars=34 overlap=1.0 2.748s tok=306
+  gemma4-31b: this_run ok=100 err=0 tok=32441
+final sidecar merge → 100 rows into data/qa/ocr_pilot_v2_gemma31/results.csv
+  gemma4-31b: 100/100 ok mean_overlap=0.9521
+
+LISTO → data/qa/ocr_pilot_v2_gemma31/results.csv (100 rows)
+sidecar → data/qa/ocr_pilot_v2_gemma31/openrouter_sidecar.csv
+usage → data/qa/ocr_pilot_v2_gemma31/openrouter_usage.csv

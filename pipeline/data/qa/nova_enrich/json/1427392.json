@@ -1,0 +1,43 @@
+{
+  "title_text": "SHADOWS IN THE GARDEN",
+  "credits_text": "WAYNE GRETZER'S",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"...original...atmospheric...surpasses in story and emotion over typical monster films...Highly recommended\" -CultCuts Magazine\nA re-coming of age story...",
+  "mood": [
+    "atmospheric",
+    "gothic",
+    "mysterious",
+    "haunting",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, atmospheric poster featuring a forested scene with silhouettes and eerie lighting, promoting a coming-of-age horror story."
+}

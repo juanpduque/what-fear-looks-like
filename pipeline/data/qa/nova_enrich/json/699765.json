@@ -1,0 +1,39 @@
+{
+  "title_text": "OBLATION",
+  "credits_text": "WRITTEN AND DIRECTED BY NASAN HAKANCI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "melancholy",
+    "haunting",
+    "mysterious",
+    "desolate",
+    "existential"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A lone figure walks through a barren forest with a backpack, facing shadowy silhouettes above, evoking a haunting and desolate atmosphere."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "DIE INSELDER ANGST",
+  "credits_text": "ROBERT SIGLS",
+  "languages": [
+    "en",
+    "de"
+  ],
+  "other_text": "SCHOOL'S OUT 2",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "intense",
+    "ominous"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "storm",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and intense imagery.",
+  "description": "A nun with wide eyes is set against a stormy sky with lightning, suggesting supernatural horror."
+}

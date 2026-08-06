@@ -1,0 +1,43 @@
+{
+  "title_text": "La Mujer del Rio",
+  "credits_text": "UN CORTOMETRAJE DE DARIO EQUIHUA\nPROTAGONIZADO POR CRISTIAN MUNOZ, RICARDO GONZALEZ\nMARGUILE AIE POR JARED TULAIS, JAQUELINE RAMIREZ, SONIA RAMIREZ\nPARTICIPACION ESPECIAL DE VIANNEY LOPEZ SANCHEZ, VITALINA EQUIHUA, SARA TULAIS\nNARRADO POR IMELDA AGUILERA",
+  "languages": [
+    "es"
+  ],
+  "other_text": "UNA PRODUCCIÓN DE BOT STUDIOS\nANIMAL FILM FEST\nSELECCIÓN OFICIAL 2025",
+  "mood": [
+    "mysterious",
+    "haunting",
+    "forest",
+    "gothic",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "water",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A hooded figure stands in a dense forest, with misty water reflecting the scene, suggesting a supernatural or horror theme."
+}

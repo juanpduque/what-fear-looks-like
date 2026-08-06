@@ -1,0 +1,42 @@
+{
+  "title_text": "GARROW",
+  "credits_text": "BASED ON RESURFITING TRUE EVENTS\nA FILM BY LORI KELLY-BALLEY\nSTARRING: ALAN CHRISTIANSON, MARK GILLEY, JAMES CARTER, RICHARD WOODRUFF, PHILIP PEARCE, RICK BUTTERFIELD, SHAWN MICHELE, PHILIP CARME, JUDY HONE, MICHAEL HOFFMAN, JAMES HOFFMAN, JOHN HOFFMAN, RICHARD SHAPIRO, JODY NEWELL, RICK BUTTERFIELD, SHAWN MICHELE, PHILIP CARME, JUDY HONE, MICHAEL HOFFMAN, JAMES HOFFMAN, JOHN HOFFMAN, RICHARD SHAPIRO\nCOMING SOON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ADIRONDACK FILMS PRESENTS",
+  "mood": [
+    "dread",
+    "suspense",
+    "gritty",
+    "forest",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and blood, suggesting graphic content.",
+  "description": "A man stands over a body in a dark forest, with a title and credits overlay. The scene suggests a thriller or horror theme."
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "A bruxa do cemiterío",
+  "credits_text": "Um filme de Semi Salomão",
+  "languages": [
+    "pt"
+  ],
+  "other_text": "Um filme elogiado pela crítica nacional e internacional.",
+  "mood": [
+    "gothic",
+    "horror",
+    "supernatural",
+    "dark",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    },
+    {
+      "name": "occult",
+      "conf": 0.9
+    },
+    {
+      "name": "cemetery",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.75,
+  "person": 0.6,
+  "animal": 0.0,
+  "blood_gore": 0.4,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult imagery and implied violence; suitable for mature audiences.",
+  "description": "A dark poster features a fiery, demonic face, a pentagram, and a shadowy figure in a cemetery setting, promoting a horror film."
+}

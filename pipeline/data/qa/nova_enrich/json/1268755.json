@@ -1,0 +1,45 @@
+{
+  "title_text": "武突 電電影 95",
+  "credits_text": "影突",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "ステージオージャンサー ( ジャンスーバシュー )",
+  "mood": [
+    "dread",
+    "suspense",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatters and eerie imagery suggestive of horror themes.",
+  "description": "Movie poster features a ghostly child, a man in distress, and a bloody car scene, evoking suspense and horror."
+}

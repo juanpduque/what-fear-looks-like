@@ -1,0 +1,43 @@
+{
+  "title_text": "FÉRIAS EM PÂNICO 2",
+  "credits_text": "O RECOMEÇO DA HISTÓRIA - O ÚLTIMO ATO\nCRIADOR: NICOLLAS DA COSTA CORREA\nESCRITORES: MARIA ANTÔNIA, MARIA LUIZA E NICOLLAS",
+  "languages": [
+    "pt"
+  ],
+  "other_text": "EM BREVE",
+  "mood": [
+    "horror",
+    "suspense",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "knife",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "Poster features a hooded figure with a skull mask holding a knife against a dark forest backdrop, with five young individuals below."
+}

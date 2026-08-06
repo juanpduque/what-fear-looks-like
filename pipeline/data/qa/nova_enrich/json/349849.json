@@ -1,0 +1,37 @@
+{
+  "title_text": "KRUEL",
+  "credits_text": "A ROBERT HENDERSON FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BEWARE OF THOSE YOU TRUST",
+  "mood": [
+    "dread",
+    "psychological",
+    "thriller",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild blood and a threatening atmosphere.",
+  "description": "A woman looks alarmed beside a masked figure with blood on its face. The title 'KRUEL' is prominently displayed in red."
+}

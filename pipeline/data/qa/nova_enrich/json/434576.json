@@ -1,0 +1,46 @@
+{
+  "title_text": "HAUNTED",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THERE ARE THINGS WE CAN'T CONTROL",
+  "mood": [
+    "eerie",
+    "haunting",
+    "gothic",
+    "dread",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "haunted_house",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild blood and a ghostly figure, suggesting horror themes.",
+  "description": "A young girl stands in a dimly lit, decrepit room with a haunted expression, blood on the floor, and a tagline about uncontrollable things."
+}

@@ -1,0 +1,43 @@
+{
+  "title_text": "THE RAVEN",
+  "credits_text": "WIDESCREEN EDGAR ALLAN POE'S",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE DEVIL'S EYES ARE ALWAYS WATCHING.",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "haunting",
+    "dark",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.3,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A raven perches on a hand with dark, gothic artwork and text from Edgar Allan Poe's 'The Raven.'"
+}

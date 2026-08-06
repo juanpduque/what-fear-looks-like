@@ -1,0 +1,50 @@
+{
+  "title_text": "DIE DÄMONISCHE MÖRDEROMA",
+  "credits_text": "",
+  "languages": [
+    "de"
+  ],
+  "other_text": "JAMA",
+  "mood": [
+    "horror",
+    "gothic",
+    "surreal",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.85,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A surreal horror poster featuring grotesque characters, a haunted house, and intense red hues, evoking a dark, disturbing atmosphere."
+}

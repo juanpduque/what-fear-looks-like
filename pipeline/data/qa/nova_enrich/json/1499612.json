@@ -1,0 +1,50 @@
+{
+  "title_text": "A DEVIL'S NIGHT IN DETROIT",
+  "credits_text": "CARRINGTON DEX NITI BELL VINCENT BEARINGERT BRITTANY DE LARA REWARDO BELL JR.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"NO LIVES MATTER\"",
+  "mood": [
+    "dread",
+    "gothic",
+    "thriller",
+    "horror",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A hooded figure with a skull face holds a weapon against a Detroit cityscape at dusk, with the tagline 'NO LIVES MATTER.'"
+}

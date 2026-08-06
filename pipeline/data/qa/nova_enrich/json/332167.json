@@ -1,0 +1,47 @@
+{
+  "title_text": "THE DUNWICH HORROR",
+  "credits_text": "H.P. Lovecraft",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "H.P.ラヴクラフト ザ・ウィッチ・ホラー その他の話 ウォルター・イェーツが演じるウィルマー・ウィンストンの監督による、ホラー映画の傑作。[ウィルマー・ウィンストンの監督による、H.P.ラヴクラフトの原作を基にした映画]",
+  "mood": [
+    "gothic",
+    "dread",
+    "supernatural",
+    "classic",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "Poster features a stylized face with blood splatters and Japanese text, promoting H.P. Lovecraft's \"The Dunwich Horror\" collection."
+}

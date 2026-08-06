@@ -1,0 +1,40 @@
+{
+  "title_text": "#ALIVE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "apocalyptic",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "zombie",
+      "conf": 0.85
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.1,
+  "monster": 0.95,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and zombie imagery.",
+  "description": "A man balances on a balcony holding a selfie stick, with zombies reaching up from below against a clear blue sky."
+}

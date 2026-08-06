@@ -1,0 +1,46 @@
+{
+  "title_text": "ZOMBIE BITE",
+  "credits_text": "A FILM BY KING JEFF",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ONE MAN... ONE BITE... 3 DAYS!",
+  "mood": [
+    "horror",
+    "thriller",
+    "gritty",
+    "intense",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including blood and monstrous imagery.",
+  "description": "A man holds a camera displaying a zombie's face, with a title and tagline on a gritty background."
+}

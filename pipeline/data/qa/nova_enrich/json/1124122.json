@@ -1,0 +1,42 @@
+{
+  "title_text": "Not Found",
+  "credits_text": "ベスト・セリフション",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "木端動働 スタップルによる",
+  "mood": [
+    "horror",
+    "psychological",
+    "disturbing",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains disturbing imagery and implied violence.",
+  "description": "A collage of distorted, terrified faces forms the background of a horror movie poster titled 'Not Found,' with Japanese and English text overlaid."
+}

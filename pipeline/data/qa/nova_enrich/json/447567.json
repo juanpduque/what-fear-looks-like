@@ -1,0 +1,46 @@
+{
+  "title_text": "FRANKULA",
+  "credits_text": "\"ROBBIE PIPPS / MISTY MOON / \"FRANKULA\" / DAVID BARRY DAVID MORRIS GARY MATTHEWS EMMA DARRK MARTIN RHUMAN / \"FENELLA FELDING\" / \"DAVID BARRY\" / \"STUART MORRIS\" / \"JASON READ\"",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gothic",
+    "surreal",
+    "violent",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; may be disturbing to some audiences.",
+  "description": "A stylized poster features two faces, one screaming with blood dripping, set against a dark background with bold red and yellow text reading 'FRANKULA.'"
+}

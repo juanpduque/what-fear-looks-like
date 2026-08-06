@@ -1,0 +1,42 @@
+{
+  "title_text": "ALL YOU CAN EAT",
+  "credits_text": "A TOXIC BURRITO STORY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FRIGHTENING EYEBALL PICTURES PRESENTS A MEZCAL RED FILM",
+  "mood": [
+    "camp",
+    "horror",
+    "satirical",
+    "grotesque",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "grotesque",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and a monstrous creature.",
+  "description": "A nurse smiles while holding a plate in front of a giant, grotesque mouth dripping blood."
+}

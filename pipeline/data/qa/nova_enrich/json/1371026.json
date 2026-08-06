@@ -1,0 +1,37 @@
+{
+  "title_text": "SUPAY",
+  "credits_text": "El hijo del condenado",
+  "languages": [
+    "es"
+  ],
+  "other_text": "LA PRIMERA PELÍCULA AYACUCHANA CONSIDERADA COMO LA MÁS TERRORÍFICA\nQUINCE MESES NO PUEDE NACER. PADRASTRO PROMETE A LA MADRE CRIARLO COMO A SU PROPIO HIJO. A CAUSA DEL PECADO, MALTRATO Y MARGINACIÓN SOCIAL, EL HIJO ASESINA A SANGRE FRÍA, CONVIRTIÉNDOSE EN SUPAY, EL HIJO DEL CONDENADO. A LOS NIÑOS QUE NO COMEN SU SOPA EL CULO SE LO LLEVA.",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "sexual"
+  ],
+  "moderation_notes": "Contains graphic violence and sexual references.",
+  "description": "A black-and-white poster features a monstrous face with intense eyes and text describing a terrifying story of social marginalization and violence."
+}

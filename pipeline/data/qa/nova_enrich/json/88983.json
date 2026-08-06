@@ -1,0 +1,42 @@
+{
+  "title_text": "MONDO CANNIBALE",
+  "credits_text": "un film di VINCENT DAWN\nCINDY NATIC\nANTOINE REBB",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "survival",
+    "jungle",
+    "cannibal",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and themes of violence and cannibalism.",
+  "description": "The poster features intense facial expressions and skulls, with four people in the foreground and bold red title text."
+}

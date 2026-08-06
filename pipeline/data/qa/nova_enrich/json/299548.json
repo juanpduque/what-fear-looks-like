@@ -1,0 +1,46 @@
+{
+  "title_text": "Knightmare",
+  "credits_text": "blood is thicker than friendship",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "dark",
+    "intense",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and a weapon, with a dark, intense atmosphere.",
+  "description": "A dramatic poster features a knight with a sword, a fiery background, and the tagline 'blood is thicker than friendship.'"
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "魔だれ武屋",
+  "credits_text": "実用の電機影片 30本",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "結弁の影片を引いて、人物の影片を引いて",
+  "mood": [
+    "horror",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied violence and occult themes.",
+  "description": "A Japanese horror film poster featuring a ghostly figure and a person, with bold red and green text overlay."
+}

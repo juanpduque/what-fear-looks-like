@@ -1,0 +1,45 @@
+{
+  "title_text": "CHILDREN OF DARKER DAWN",
+  "credits_text": "CATHERINE VONCLESWENZI JONATHAN ROSTELL SCOTT F. HARPER AJAY JASKIRTI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A MODERN DOOMSDAY VERSION OF \"LORD OF THE FLIES\" - ROLLIN' STONE ENTERTAINMENT MAGAZINE",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.3,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains disturbing imagery and themes of violence and horror.",
+  "description": "The poster features eerie faces behind a window with dark, greenish lighting and text describing it as a modern version of \"Lord of the Flies.\""
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "THE FINAL STORM",
+  "credits_text": "LAUREN HOLLY LUKE PERRY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dramatic",
+    "intense",
+    "apocalyptic",
+    "suspenseful",
+    "action"
+  ],
+  "fear_labels": [
+    {
+      "name": "storm",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Movie poster features three actors with a central female figure walking through a stormy landscape, indicating an intense, apocalyptic theme."
+}

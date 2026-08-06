@@ -1,0 +1,46 @@
+{
+  "title_text": "I Dare You to Open Your Eyes",
+  "credits_text": "A film by Toby Haselbauer",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HOPELESS PICTURES & WHITE LION STUDIOS PRESENTS",
+  "mood": [
+    "dread",
+    "psychological",
+    "suspense",
+    "gothic",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and disturbing imagery.",
+  "description": "Poster shows a man with blood on his face, a monstrous red eye, and three people in a snowy forest with one lying on the ground."
+}

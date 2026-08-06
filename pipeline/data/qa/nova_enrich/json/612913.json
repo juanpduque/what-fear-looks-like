@@ -1,0 +1,47 @@
+{
+  "title_text": "PESTILENZ",
+  "credits_text": "SABRINA ARNDS CHRISTINA MONI THOMAS GOERSCH\nA FILM BY THOMAS GRIESER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dread",
+    "dark",
+    "apocalyptic",
+    "horrific"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic imagery of skulls, fire, and implied violence.",
+  "description": "A dark, gothic poster features a skeletal figure holding a sword amidst flames and skulls, with bold yellow text reading 'PESTILENZ.'"
+}

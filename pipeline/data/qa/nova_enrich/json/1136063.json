@@ -1,0 +1,46 @@
+{
+  "title_text": "戦死カメラ 6",
+  "credits_text": "意乗の心続、平安武律集",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "影片は、ベントバンクステージに対して、デイタイバンステージで作成された！",
+  "mood": [
+    "dread",
+    "suspense",
+    "horror",
+    "urban",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.5,
+  "animal": 0.3,
+  "blood_gore": 0.4,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains horror themes and implied violence.",
+  "description": "A poster shows a hand holding a smartphone displaying a ghostly face, with a cityscape and crows in the background."
+}

@@ -1,0 +1,50 @@
+{
+  "title_text": "THE HEIRESS",
+  "credits_text": "LET THE FEEDING BEGIN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A JOE LUJAN FILM",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "dread",
+    "haunting",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    },
+    {
+      "name": "forest",
+      "conf": 0.75
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.85,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild violence and occult themes.",
+  "description": "A gothic horror poster featuring three characters in a dark, eerie forest setting with a ghostly figure looming above."
+}

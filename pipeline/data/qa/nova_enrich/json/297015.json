@@ -1,0 +1,37 @@
+{
+  "title_text": "THE TOUR",
+  "credits_text": "RADAR PRODUCTIONS PRESENTS TOM GORDON, JESSICA CAHILL, CATHERINE DOHR \"THE TOUR\" DANIEL RICHARD, ALEX NATHERSION, SAGAL RIDEN, AMELIE RICHARD \"ERIC ELIX\" GUY PEARSON RICHARD O. BILL ALEX MATHESSON DANIEL RICHARD",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ONCE YOU'RE IN... YOU DON'T LEAVE.",
+  "mood": [
+    "suspense",
+    "thriller",
+    "psychological horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark poster features three silhouetted figures in a tense scene with a flashlight beam, set against a shadowy house backdrop."
+}

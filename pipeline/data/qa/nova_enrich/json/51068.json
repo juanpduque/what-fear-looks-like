@@ -1,0 +1,41 @@
+{
+  "title_text": "GHOST GAME",
+  "credits_text": "OPEN AT YOUR OWN RISK.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WIN. LOSE. OR DIE.",
+  "mood": [
+    "supernatural",
+    "tense",
+    "mysterious",
+    "haunting",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains themes of supernatural horror and occult elements.",
+  "description": "A poster shows a glowing hand reaching from a dark, eerie setting with the title 'GHOST GAME' prominently displayed."
+}

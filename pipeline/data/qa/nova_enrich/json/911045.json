@@ -1,0 +1,39 @@
+{
+  "title_text": "Friends 4ever",
+  "credits_text": "SHANEDAWSONTV PRESENTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "10.29.11",
+  "mood": [
+    "horror",
+    "thriller",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "knife",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the knife and intense expressions.",
+  "description": "A poster featuring a central shadowy figure holding a knife, surrounded by terrified faces, with bold text reading 'Friends 4ever.'"
+}

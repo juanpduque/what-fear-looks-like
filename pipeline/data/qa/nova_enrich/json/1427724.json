@@ -1,0 +1,40 @@
+{
+  "title_text": "ЮНЕЙ",
+  "credits_text": "КУПИЯ ЛАРЫНДЫ БИЛЕМ",
+  "languages": [
+    "en"
+  ],
+  "other_text": "АКАН САТАЕВТЫН ФИЛЬМИ КИНОЛА КАЗАНСА В КИНО 24 ОКТЯБРЯ САТЫБАЙДЫЛЫ ЗАРИНА КАРМЕН ДАРИХА КУЛИШЕВА МЕДИНА МЫРЗАХМЕТОВА",
+  "mood": [
+    "eerie",
+    "haunting",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "blood"
+  ],
+  "moderation_notes": "Contains implied violence and blood stains on the door.",
+  "description": "A girl stands in a dimly lit hallway holding a teddy bear, with a blood-stained door behind her. The poster advertises a film titled 'ЮНЕЙ' releasing on October 24."
+}

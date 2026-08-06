@@ -1,0 +1,46 @@
+{
+  "title_text": "DELIRIOS DE UM ANORMAL",
+  "credits_text": "",
+  "languages": [
+    "pt"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "erotic",
+    "surreal",
+    "dread",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.6,
+  "sensitive": [
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied sexual content and surreal, disturbing imagery.",
+  "description": "A dark, surreal poster features a distorted face and a reclining figure, with bold pink text reading 'DELIRIOS DE UM ANORMAL.'"
+}

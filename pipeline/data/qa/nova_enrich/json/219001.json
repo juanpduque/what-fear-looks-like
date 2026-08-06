@@ -1,0 +1,46 @@
+{
+  "title_text": "FREAK",
+  "credits_text": "IF LOOKS CAN KILL, YOU'RE ALREADY DEAD!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "\"Intense and suspenseful\" - Associated Press \"Best horror film since Halloween\" - Screen with Film Festival",
+  "mood": [
+    "horror",
+    "suspense",
+    "intense",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and intense horror themes.",
+  "description": "A poster features a close-up of a monstrous, bandaged face with visible teeth and blood, accompanied by bold text and horror-themed quotes."
+}

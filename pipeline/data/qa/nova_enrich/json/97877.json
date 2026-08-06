@@ -1,0 +1,47 @@
+{
+  "title_text": "DEAD LINE",
+  "credits_text": "ILS NE SONT PLUS QUE DIX CONTRE L'ARMÉE ZOMBIES",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "other_text": "C. S. SEULS POUR ENRAVER LE FLÉAU",
+  "mood": [
+    "horror",
+    "action",
+    "post-apocalyptic",
+    "gritty",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.5,
+  "monster": 0.9,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A man stands inside a giant, decaying hand holding a gun, with a cityscape and zombies in the background."
+}

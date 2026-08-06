@@ -1,0 +1,42 @@
+{
+  "title_text": "THE STRANGERS",
+  "credits_text": "PREY AT NIGHT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "suspense",
+    "terror",
+    "psychological",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    "monster",
+    {
+      "name": "mask",
+      "conf": 0.8
+    },
+    {
+      "name": "axe",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A poster shows three masked figures holding weapons, with one holding an axe and another a knife, suggesting a horror theme."
+}

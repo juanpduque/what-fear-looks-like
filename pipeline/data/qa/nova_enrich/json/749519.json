@@ -1,0 +1,42 @@
+{
+  "title_text": "KILLER LOVE",
+  "credits_text": "A FILM PRODUCTION BY ELINOR GRAHAM, TOM MATTHEWS, HALVMA MATTHEWSSON. PROPS: PUPPY MELLOT ELIZABETH EDWARD MC DONALD. DIRECTED BY PHOTOGRAPHY: BRANDON GORDAN AND LEAN MC KENNEY. MUSIC: JESSE WEITZ.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BREAK-UPS ARE MESSY",
+  "mood": [
+    "thriller",
+    "horror",
+    "dark humor",
+    "romantic",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.3
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and potential gore.",
+  "description": "A man holds an axe over a woman in a forest at night, with a tagline reading 'Break-ups are messy.'"
+}

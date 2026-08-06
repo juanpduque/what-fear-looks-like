@@ -1,0 +1,46 @@
+{
+  "title_text": "PHASES OF DEATH",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PHASE ONE THROUGH THE CORONER'S EYES",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "gore",
+      "conf": 0.85
+    },
+    {
+      "name": "death",
+      "conf": 0.95
+    },
+    {
+      "name": "mutilation",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.95,
+  "violence": 0.9,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains graphic depictions of bodily injury and partial nudity.",
+  "description": "A poster shows a person with exposed internal organs and a blue hood, titled 'Phases of Death: Phase One Through the Coroner's Eyes.'"
+}

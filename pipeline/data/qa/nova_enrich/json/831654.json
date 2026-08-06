@@ -1,0 +1,42 @@
+{
+  "title_text": "THE SADNESS",
+  "credits_text": "Starring Jason Young • Garrison Kane • Matt Rife • Andi Matichak • Written & Directed by Matt Rife • A Co-Production of Warwick Holt Video • Warner Bros. Pictures",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WHEN HE CALLED THE REQUEST LINE FROM HELL... SHE SHOULDN'T HAVE ANSWERED!",
+  "mood": [
+    "dread",
+    "surreal",
+    "apocalyptic",
+    "disturbing",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains disturbing imagery and psychological horror themes.",
+  "description": "A poster features a monstrous red-faced figure holding a severed head, with bold red and black typography and a tagline warning of a hellish request line."
+}

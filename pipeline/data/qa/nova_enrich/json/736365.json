@@ -1,0 +1,39 @@
+{
+  "title_text": "DU SANG DANS LE POP-CORN",
+  "credits_text": "OLIVAR-FILMS present DAPHIN OLIVIER BOELLENS MARIE DEPRE MICHEL ANDRE COLETTE SODOVIE CHLOE VAN DER HUGUES BAUSMAN",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "other_text": "EN FILM ECRIT ET REALISE PAR ARNO FOUQUET",
+  "mood": [
+    "violent",
+    "satirical",
+    "dark humor",
+    "gory",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.9,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; may be disturbing to some viewers.",
+  "description": "A poster shows a pig holding a hammer amidst splattered blood, with bold red text reading 'DU SANG DANS LE POP-CORN.'"
+}

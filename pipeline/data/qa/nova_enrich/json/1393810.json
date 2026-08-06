@@ -1,0 +1,46 @@
+{
+  "title_text": "Dead Hunt",
+  "credits_text": "- chasse à l'homme - Un jeu enfantin très déplacé et mortel ! RÉALISÉ PAR ERIK BLANC STEPHANE GREFFIER AVEC JANE TERNOIR, ERIK BLANC, FRANCK BEYNA, ASHLEY LEVINDEAD, ANDERSON PFAFIRA RAMOS FRÉDÉRIC SAINTEFILE",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "other_text": "INDIE WISE (USA) 2016 Industry BOOST Competition Miami 2016 Post Mortem 2016",
+  "mood": [
+    "tense",
+    "survival",
+    "forest",
+    "thriller",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and tense survival themes.",
+  "description": "A poster for the film 'Dead Hunt' featuring intense characters in a forest setting, with a knife-wielding figure and distressed individuals."
+}

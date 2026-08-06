@@ -1,0 +1,63 @@
+{
+  "updated_at": "2026-08-04T00:09:44Z",
+  "status": "running_cpu_ec2",
+  "compute": "cpu",
+  "gpu": false,
+  "cpu_confirmed": true,
+  "torch": "2.13.0+cpu (cuda False, device_count 0)",
+  "instance_id": "i-0b9777ca835a6d5ab",
+  "public_ip": "54.152.164.51",
+  "instance_type": "c5.2xlarge",
+  "ami": "ami-052355af2a014bd2c",
+  "name_tag": "wflike-owlv2-backfill",
+  "job_tag": "owlv2-backfill-cpu",
+  "bucket": "sagemaker-studio-a5572760",
+  "prefix": "wflike-owlv2-backfill",
+  "n_ids": 19263,
+  "meta": {
+    "n_attributes": 37842,
+    "n_creature_existing": 18716,
+    "n_need": 19263,
+    "n_with_poster": 19263,
+    "n_missing_poster": 0,
+    "creature_queries": 18,
+    "weapon_queries": 12
+  },
+  "staging": {
+    "sync_finished": true,
+    "remote_posters": 19263,
+    "sync_pid_was": 87051
+  },
+  "progress_sample": {
+    "creature_delta": 50,
+    "weapon": 50,
+    "ts": "2026-08-04T00:07:33Z",
+    "device": "cpu"
+  },
+  "eta_days_rough": {
+    "optimistic": 2.7,
+    "mid": 5.6,
+    "pessimistic": 10.0
+  },
+  "eta_from_early_hours": 19.8,
+  "eta_note": "CPU confirmed (torch 2.13.0+cpu, cuda=False). Early ~3.7 s/img \u21d2 ~20h if sustained; honest band ~1\u201310 days (planning mid ~5.6d). Results checkpoint to S3 every ~3 min / 25 imgs. Merge append-only vs 18716 existing creature boxes.",
+  "protect_instances": [
+    "i-0ebdf098a8293640a",
+    "i-0d70c936e1e39759b"
+  ],
+  "note_duplicate_iid": "i-09b2695738e357e3f appeared in local files briefly; active worker is i-0b9777ca835a6d5ab",
+  "monitor": "AWS_PROFILE=sandbox aws s3 cp s3://sagemaker-studio-a5572760/wflike-owlv2-backfill/results/PROGRESS -",
+  "pull_merge": "AWS_PROFILE=sandbox bash pipeline/aws/pull_owlv2_backfill.sh",
+  "outputs": {
+    "creature_delta": "s3://sagemaker-studio-a5572760/wflike-owlv2-backfill/results/creature_boxes_delta.json",
+    "weapon_boxes": "s3://sagemaker-studio-a5572760/wflike-owlv2-backfill/results/weapon_boxes.json",
+    "progress": "s3://sagemaker-studio-a5572760/wflike-owlv2-backfill/results/PROGRESS",
+    "done": "s3://sagemaker-studio-a5572760/wflike-owlv2-backfill/results/DONE",
+    "log": "s3://sagemaker-studio-a5572760/wflike-owlv2-backfill/results/owlv2_backfill_aws.log"
+  },
+  "imdb_untouched": {
+    "instance_id": "i-0ebdf098a8293640a",
+    "name": "wflike-imdb-posters",
+    "state": "running"
+  }
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "TETSUO THE BULLET MAN",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "intense",
+    "sci-fi",
+    "action",
+    "disturbing",
+    "cyberpunk"
+  ],
+  "fear_labels": [
+    {
+      "name": "cybernetic",
+      "conf": 0.9
+    },
+    {
+      "name": "body horror",
+      "conf": 0.85
+    },
+    {
+      "name": "mechanical",
+      "conf": 0.8
+    },
+    {
+      "name": "violent",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "body horror"
+  ],
+  "moderation_notes": "Contains intense cyberpunk violence and body horror imagery.",
+  "description": "A man with a cybernetic, monstrous face screams in agony, surrounded by mechanical tendrils in a dark, dystopian setting."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "DRY BONES",
+  "credits_text": "\"CLEVER AND ORIGINAL... A LOT OF FUN\" --AUNT II COOL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "To Survive the Night, Don't Look Under the Bed!",
+  "mood": [
+    "horror",
+    "thriller",
+    "suspense",
+    "creepy",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and a monstrous creature, suitable for mature audiences.",
+  "description": "A horror movie poster featuring a monstrous, zombie-like face with blood splatters and the title \"DRY BONES\" prominently displayed."
+}

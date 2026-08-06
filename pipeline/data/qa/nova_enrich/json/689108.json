@@ -1,0 +1,46 @@
+{
+  "title_text": "CARNIVAL OF GORE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "grotesque",
+    "horror",
+    "surreal",
+    "violent",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.2,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and grotesque imagery.",
+  "description": "A stylized poster features a monstrous creature with sharp teeth and a person in a striped outfit amidst splattered colors and bold text reading 'CARNIVAL OF GORE.'"
+}

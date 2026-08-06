@@ -1,0 +1,39 @@
+{
+  "title_text": "SWAMP SHARK",
+  "credits_text": "KRISTY SWANSON D.B. SWEENEY & ROBERT DAVI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "TERROR HAS A NEW HOME",
+  "mood": [
+    "thriller",
+    "action",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "water",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and a large predatory creature.",
+  "description": "A poster shows a woman holding a weapon next to a giant shark with an open mouth, with the tagline 'Terror Has a New Home.'"
+}

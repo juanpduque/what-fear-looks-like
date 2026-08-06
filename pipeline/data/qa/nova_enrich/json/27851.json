@@ -1,0 +1,41 @@
+{
+  "title_text": "VAMPIYAZ",
+  "credits_text": "RICHARD CARROLL JR. MALIK BURKE LILA BLAKE PALMER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BROTHAZ IN BLOOD",
+  "mood": [
+    "gothic",
+    "dread",
+    "urban",
+    "supernatural",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.3,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and supernatural themes.",
+  "description": "A man with fangs is shown against a cityscape with bats and a full moon, suggesting a vampire theme."
+}

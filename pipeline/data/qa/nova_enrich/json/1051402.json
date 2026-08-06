@@ -1,0 +1,39 @@
+{
+  "title_text": "ALBERGUE ROVINOSO",
+  "credits_text": "Una película de Jaume Benedito",
+  "languages": [
+    "es"
+  ],
+  "other_text": "Desde niños nos dicen que existen los fantasmas, que los edificios viejos son el sitio perfecto para encontrarlos, que los pósters de películas no pueden contener tanta letra y que, cuando uno está a oscuras, cualquier cosa puede pasar. ¿Te atreves a cerrar los ojos?",
+  "mood": [
+    "gothic",
+    "surreal",
+    "eerie",
+    "mysterious",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.5,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark purple poster features ghostly imagery, a sheep, an eye, and cryptic text welcoming viewers to a spooky inn."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "ROADKILL",
+  "credits_text": "FEAR THE SKIES!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MANHATER SERIES",
+  "mood": [
+    "horror",
+    "thriller",
+    "dread",
+    "survival",
+    "gritty"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "violence",
+      "conf": 0.8
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood.",
+  "description": "A poster shows a monstrous winged creature looming over a terrified person with bloodied hands, set against a dark, ominous background."
+}

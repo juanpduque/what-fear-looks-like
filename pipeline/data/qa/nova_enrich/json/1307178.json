@@ -1,0 +1,49 @@
+{
+  "title_text": "THE BENCH",
+  "credits_text": "Quarantine Films Presents In Association With Magic Monkey Films / 5 Films by Sean White Jennifer White, Bruce McDonald, Chris Sommerfield, Tara Kendrick, Nikki Sills, and Carmen Pasqualicchio Music by David M. Lynch, Produced by David M. Lynch, Produced by Jennifer White, Produced by Sean White, Produced by Bruce McDonald, Produced by Chris Sommerfield, Produced by Tara Kendrick, Produced by Nikki Sills, Produced by Carmen Pasqualicchio Executive Producers: Rose Henrici & David Newman (Co-Producers), Jennifer Byrne, Chris Sommerfield, Willa Stephen White, Produced by Layla Gunning, Written & Directed by Sean White",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Over 300,000 people go missing in the UK every year. Most are never found.",
+  "mood": [
+    "dread",
+    "gothic",
+    "psychological",
+    "suspense",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "axe",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster implies potential violence due to the axe and dark atmosphere.",
+  "description": "A silhouette of a person holding an axe stands in a dark forest with a house in the background, accompanied by bold red text."
+}

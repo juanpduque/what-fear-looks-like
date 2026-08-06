@@ -1,0 +1,42 @@
+{
+  "title_text": "THE D WORD",
+  "credits_text": "A TOOTHBRAIN PRODUCTIONS FILM STARRING CHESTER QUALKENBUSH | JAMES WATJEN | MEAGHAN WATJEN DIRECTED BY JAMES WATJEN | ASSOCIATE PRODUCER HALEY BURCH | EDITOR JAMES WATJEN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dark",
+    "horrific",
+    "gothic",
+    "violent",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.5,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, may be disturbing to some viewers.",
+  "description": "A poster shows a hand holding a fork over a plate of skull-shaped pancakes, with bold red text reading \"THE D WORD\"."
+}

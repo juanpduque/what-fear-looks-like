@@ -1,0 +1,40 @@
+{
+  "title_text": "กุมาร",
+  "credits_text": "กวนมารี ฉัตรชัย ชูศรี ปรีชญา นันทกุล สร้างโดย",
+  "languages": [
+    "th"
+  ],
+  "other_text": "HAPPY DVD",
+  "mood": [
+    "thriller",
+    "horror",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and horror elements.",
+  "description": "A poster features three characters facing a large, shadowy figure with blood splatters in the background, suggesting a horror thriller."
+}

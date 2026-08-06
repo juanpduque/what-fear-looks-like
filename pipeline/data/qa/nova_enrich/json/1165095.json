@@ -1,0 +1,43 @@
+{
+  "title_text": "TRAPPED IN THE CABIN",
+  "credits_text": "TIFFANY SMITH DAVID JAMES LEWIS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FACETiME Madison # Missed FaceTime Audio Call Most FACETiME Missed FaceTime Audio Rebecca, answer your phone! Mom? Police are trying to help me locate you, but I need the address!",
+  "mood": [
+    "suspense",
+    "thriller",
+    "confinement",
+    "tech-driven",
+    "anxiety"
+  ],
+  "fear_labels": [
+    {
+      "name": "confinement",
+      "conf": 0.9
+    },
+    {
+      "name": "tech",
+      "conf": 0.8
+    },
+    {
+      "name": "suspense",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.1,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A woman stands in front of a digital background with messages on screen, suggesting a suspenseful scenario involving technology and confinement."
+}

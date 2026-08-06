@@ -1,0 +1,44 @@
+{
+  "title_text": "XAVIER",
+  "credits_text": "DEVIN LEWIS, SEA PETERS, ANDREW ATKINSON, TANESSA OAMARIS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NR",
+  "mood": [
+    "dread",
+    "gothic",
+    "forest",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "axe",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.6,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A man stands in a dark forest holding an axe, with a misty, eerie atmosphere and a title 'XAVIER' in bold red letters."
+}

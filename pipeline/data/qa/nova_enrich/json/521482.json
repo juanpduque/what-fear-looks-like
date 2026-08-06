@@ -1,0 +1,45 @@
+{
+  "title_text": "MADMAN",
+  "credits_text": "THE REAL MONSTERS ARE HUMAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WIDESCREEN",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.95
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.85
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.75,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of a monstrous skull with blood-like textures, suggesting horror themes.",
+  "description": "A poster featuring a grotesque, bloodied skull with the tagline 'The Real Monsters Are Human' and the title 'MADMAN' prominently displayed."
+}

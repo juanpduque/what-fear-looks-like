@@ -1,0 +1,42 @@
+{
+  "title_text": "Obsession",
+  "credits_text": "DON'T CLOSE YOUR EYES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SASTRA FILM\nInspired by love",
+  "mood": [
+    "gothic",
+    "dread",
+    "erotic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "violence",
+    "gore",
+    "erotic"
+  ],
+  "moderation_notes": "Contains graphic blood and suggestive imagery.",
+  "description": "A close-up of a person with long claws and pale skin, overlaid with dramatic text and a tagline."
+}

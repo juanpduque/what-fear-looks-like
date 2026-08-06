@@ -1,0 +1,42 @@
+{
+  "title_text": "ELVIRA'S MOVIE MACABRE",
+  "credits_text": "THE SATANIC RITES OF DRACULA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "PRESENTS / SHOUT! TV / THE FACTORY TV",
+  "mood": [
+    "gothic",
+    "camp",
+    "erotic",
+    "horror",
+    "satirical"
+  ],
+  "fear_labels": [
+    {
+      "name": "occult",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "occult",
+    "sexual"
+  ],
+  "moderation_notes": "Contains mild sexual suggestiveness and occult themes.",
+  "description": "A poster features Elvira with dramatic makeup and attire against a purple background, promoting 'The Satanic Rites of Dracula' on Shout! TV."
+}

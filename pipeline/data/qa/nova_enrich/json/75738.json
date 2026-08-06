@@ -1,0 +1,41 @@
+{
+  "title_text": "PSYCHO HOLIDAY",
+  "credits_text": "Six innocent people. Three brutal killers. One night of mayhem and madness you will never forget. FOR THE SAKE OF YOUR SANITY... NEVER IT HAPPENED! PRAY THAT IT NEVER HAPPENED!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WARNING! IT'S ONLY A MOVIE.",
+  "mood": [
+    "dread",
+    "camp",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "mask",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.6,
+  "violence": 0.8,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and disturbing imagery.",
+  "description": "A horror movie poster featuring a masked figure and a distressed woman, with bold red text and a warning label."
+}

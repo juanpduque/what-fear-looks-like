@@ -1,0 +1,46 @@
+{
+  "title_text": "魔生結織",
+  "credits_text": "おりかけはごよ ごりのく強結の学雑、まそまそ作成連を持つ害席",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "Vol.7",
+  "mood": [
+    "dread",
+    "gothic",
+    "haunting",
+    "eerie",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.85
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.75
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains implied supernatural horror themes and mild suggestive imagery.",
+  "description": "A poster shows a dimly lit, decaying hallway with eerie faces and Japanese text, suggesting a supernatural horror theme."
+}

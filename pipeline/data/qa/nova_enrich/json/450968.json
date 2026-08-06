@@ -1,0 +1,47 @@
+{
+  "title_text": "HOLY TERROR",
+  "credits_text": "A Film by RICH MALLEY A GREGORY HATANAKA Production",
+  "languages": [
+    "en"
+  ],
+  "other_text": "THE DEVIL IS REAL.",
+  "mood": [
+    "dread",
+    "gothic",
+    "occult",
+    "horror",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "occult",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore",
+    "occult"
+  ],
+  "moderation_notes": "Contains graphic blood and violent imagery, with occult themes.",
+  "description": "A poster featuring a distressed woman with blood on her face and hands, with bold red text reading 'HOLY TERROR' and a tagline 'THE DEVIL IS REAL.'"
+}

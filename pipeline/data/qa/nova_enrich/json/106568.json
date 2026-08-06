@@ -1,0 +1,46 @@
+{
+  "title_text": "WAR OF THE GOD MONSTERS",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "fantasy",
+    "sci-fi",
+    "epic",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 1.0
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    },
+    {
+      "name": "explosion",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 1.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense action and monster violence.",
+  "description": "A poster features a woman holding a child amidst giant monsters and a fiery explosion in a cosmic setting."
+}

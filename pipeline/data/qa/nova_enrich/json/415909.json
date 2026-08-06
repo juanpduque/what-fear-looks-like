@@ -1,0 +1,39 @@
+{
+  "title_text": "VBG Yulia Des Cura",
+  "credits_text": "A FILM BY TANYA RESZUN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A PINTOLE SIGHT CAN UNCOVER THE DARKEST SECRETS",
+  "mood": [
+    "gothic",
+    "mysterious",
+    "haunting",
+    "eerie",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "The poster features bold red text and a dark background with a central figure in a wheelchair, evoking a gothic and mysterious atmosphere."
+}

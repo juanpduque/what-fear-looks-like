@@ -1,0 +1,42 @@
+{
+  "title_text": "A FRACTURED SOUL",
+  "credits_text": "WRITTEN/DIRECTED BY DAVID CHIRAC",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dark",
+    "gothic",
+    "psychological",
+    "intense",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and intense psychological themes.",
+  "description": "A dark, moody poster features a close-up of a person with blood on their face, holding a sharp object, evoking a gothic and psychological atmosphere."
+}

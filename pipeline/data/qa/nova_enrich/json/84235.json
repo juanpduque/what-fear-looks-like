@@ -1,0 +1,45 @@
+{
+  "title_text": "THUNDER OF GIGANTIC SERPENT",
+  "credits_text": "DANNY RASBECK DEWEY BOWMONT JORGE GUTMAN PATRICK FREEBAR JOSEPH LAYBRAND CHAN STEVE LEE BLACK EAGLE LEUNG JAMES CHU RAYMOND CHENG DENNIS DEREK HANKYUNG JIMMY LEE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "IFD FILMS AND ARTI LIMITED PRESENTS A JOHMI LAI PRODUCTION",
+  "mood": [
+    "action",
+    "adventure",
+    "fantasy",
+    "camp",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "crowd",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains action violence and a large monster threat.",
+  "description": "A soldier aims a gun at a giant snake attacking a city, with explosions and crowds fleeing in the background."
+}

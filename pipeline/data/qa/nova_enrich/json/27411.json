@@ -1,0 +1,46 @@
+{
+  "title_text": "THE Dracula SAGA",
+  "credits_text": "TINA SAINT·TONY ISBERT·NARCISO IBANEZ MENTA CRISTINA SURIAN·MARIA KOSTI·HELGAJINE·J.J. PALADINO",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "dramatic",
+    "intense",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and horror imagery.",
+  "description": "A dramatic poster featuring intense faces and blood splatters, promoting the film 'The Dracula Saga' with cast names listed below."
+}

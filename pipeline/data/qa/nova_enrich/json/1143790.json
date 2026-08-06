@@ -1,0 +1,45 @@
+{
+  "title_text": "SPACE SHARKS",
+  "credits_text": "THEY DONT NEED WATER TO KILL!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "horror",
+    "sci-fi",
+    "thriller",
+    "dystopia"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "fire",
+      "conf": 0.7
+    },
+    {
+      "name": "text",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 1.0,
+  "person": 0.6,
+  "animal": 1.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains violent imagery and monstrous creatures.",
+  "description": "A poster shows a giant shark attacking creatures in a dystopian city with a UFO overhead. The title 'Space Sharks' is prominently displayed."
+}

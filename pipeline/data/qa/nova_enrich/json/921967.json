@@ -1,0 +1,45 @@
+{
+  "title_text": "TARZ",
+  "credits_text": "A film by PREETAM MUKHERJEE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Releasing on JUNE 24\nPresented by CHATTERJEE FILMS\nBook My Show\nWhite Hayes\nAnjali Jewellers\nEskirown",
+  "mood": [
+    "gothic",
+    "eerie",
+    "mysterious",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "ghost",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains mild violent and occult themes.",
+  "description": "A dark, eerie poster features a monstrous face, a full moon, and four characters, announcing the release of the film 'TARZ' on June 24."
+}

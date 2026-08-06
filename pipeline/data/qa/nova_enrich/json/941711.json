@@ -1,0 +1,44 @@
+{
+  "title_text": "GHOSTS OF HIROSHIMA",
+  "credits_text": "A BRANDON WALKER FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A MONSTER OF MAN'S OWN CREATION",
+  "mood": [
+    "haunting",
+    "somber",
+    "mysterious",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.5,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains themes of trauma and haunting, may be disturbing.",
+  "description": "A solitary figure stands amidst swirling smoke and skulls, with a house partially visible below, evoking a haunting and somber atmosphere."
+}

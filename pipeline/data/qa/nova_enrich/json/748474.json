@@ -1,0 +1,46 @@
+{
+  "title_text": "DEPRIVATION",
+  "credits_text": "Chris Foster, Silas James Rowland, Dalton Stutt, Chris Foster, Green Kamara, Mike Scavullo, Samuel Diaz",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Sleep kills.",
+  "mood": [
+    "dread",
+    "psychological",
+    "disturbing",
+    "intense",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "eye",
+      "conf": 0.95
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and disturbing themes.",
+  "description": "A close-up of a bloodshot eye with a dark, surreal cityscape reflected in the pupil, accompanied by the title 'DEPRIVATION' and cast credits."
+}

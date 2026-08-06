@@ -1,0 +1,41 @@
+{
+  "title_text": "Menessberns",
+  "credits_text": "Ariana Briljante",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Rīgas Makslas mediju tehnikums Mediju makslas nodala\nKvalifikācijas darbs video operatora specialitātē audzēknei",
+  "mood": [
+    "gothic",
+    "haunting",
+    "mysterious",
+    "eerie",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains supernatural and ghostly themes which may be unsettling.",
+  "description": "A ghostly figure stands in a dark forest, illuminated by soft light, evoking a haunting and eerie atmosphere."
+}

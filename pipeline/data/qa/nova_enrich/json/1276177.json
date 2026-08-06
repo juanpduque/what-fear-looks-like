@@ -1,0 +1,43 @@
+{
+  "title_text": "DRACULA",
+  "credits_text": "HELEN CHANDLER-DWIGHT FRYE - EDWARD VAN SLEAN - BELA LUGOSI-DAVID MANNERS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ONLY TV SHOWING\nHE WAS THE GRAND MASTER OF THE UNDEAD CREATURES OF DARKNESS!",
+  "mood": [
+    "gothic",
+    "dread",
+    "classic",
+    "horror",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A vintage poster for the TV showing of Dracula featuring two characters in dramatic poses, with bold title and credits."
+}

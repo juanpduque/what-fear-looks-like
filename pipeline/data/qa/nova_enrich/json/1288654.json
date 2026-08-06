@@ -1,0 +1,40 @@
+{
+  "title_text": "破魔 迷森事件",
+  "credits_text": "心霊写真の事件",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "26",
+  "mood": [
+    "gothic",
+    "supernatural",
+    "dread",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.1,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and subtle horror imagery.",
+  "description": "A dark poster features a ghostly face and Japanese text, suggesting a supernatural mystery with an eerie atmosphere."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "Long Dream",
+  "credits_text": "From Junji Ito, creator of TOMIE and UZUMAKI. A film by Higuchinsky",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "If you can't wake up from the nightmare, maybe you're not asleep.",
+  "mood": [
+    "surreal",
+    "dread",
+    "psychological",
+    "nightmarish",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "none"
+  ],
+  "moderation_notes": "",
+  "description": "A poster featuring a central character with blue hair surrounded by grotesque, green-faced figures. The title and tagline suggest a psychological horror theme."
+}

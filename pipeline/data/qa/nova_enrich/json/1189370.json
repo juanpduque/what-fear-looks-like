@@ -1,0 +1,33 @@
+{
+  "title_text": "SILENT THUNDER",
+  "credits_text": "A FILM BY ISAAC MEDEROS\n\nSTARRING JACK LUCARIELLI\n\nWRITTEN & DIRECTED BY ISAAC MEDEROS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NEW YORK FILM FESTIVAL 2023\n\nA LEISUREL\n2 MANKS OF DESERT\nAND A PACK OF ROBERT\nSWELLING MONSTERS\nA DIFFERENT KIND OF WESTERN",
+  "mood": [
+    "western",
+    "action",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "gun",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.6,
+  "person": 0.9,
+  "animal": 0.5,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.1,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "Poster features a group of characters including a man with a gun, a skull, and a horse-drawn carriage, suggesting a western thriller."
+}

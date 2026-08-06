@@ -1,0 +1,42 @@
+{
+  "title_text": "UNBOXING",
+  "credits_text": "A FILM BY CARLOS CALIKA",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CHOMP!",
+  "mood": [
+    "horror",
+    "violent",
+    "dark",
+    "gritty",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "shark",
+      "conf": 0.95
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.95,
+  "blood_gore": 0.9,
+  "violence": 0.85,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood, suitable for mature audiences.",
+  "description": "A poster shows two boots with shark mouths and the word 'CHOMP!' against a red splattered background, titled 'UNBOXING' by Carlos Calika."
+}

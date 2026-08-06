@@ -1,0 +1,50 @@
+{
+  "title_text": "The 7 FULL LENGTH DOCUMENTARIES FEARMAKERS",
+  "credits_text": "TOD BROWNING • JACQUES TOURNÉUR • WILLIAM CASTLE ROGER CORMAN • JACK ARNOLD • ROBERT WISE • ROLAND WEST",
+  "languages": [
+    "en"
+  ],
+  "other_text": "MASTERS OF TERROR AND SUSPENSE VOL 1",
+  "mood": [
+    "gothic",
+    "camp",
+    "dread",
+    "surreal",
+    "erotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.3,
+  "blood_gore": 0.1,
+  "violence": 0.2,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "sexual"
+  ],
+  "moderation_notes": "Contains mild suggestive imagery and horror themes.",
+  "description": "A collage poster showcasing classic horror films with dramatic artwork and titles, featuring monsters and eerie scenes."
+}

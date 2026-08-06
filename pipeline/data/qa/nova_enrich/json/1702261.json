@@ -1,0 +1,38 @@
+{
+  "title_text": "Goosebumps",
+  "credits_text": "THE CUCKOO CLOCK OF DOOM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Keep your eye on the birdie!",
+  "mood": [
+    "spooky",
+    "humorous",
+    "fantasy",
+    "suspenseful"
+  ],
+  "fear_labels": [
+    {
+      "name": "creature",
+      "conf": 0.9
+    },
+    {
+      "name": "clock",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.9,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A cartoon bird flies near a large grandfather clock on a vibrant blue background with bold yellow text reading 'Goosebumps' and a tagline."
+}

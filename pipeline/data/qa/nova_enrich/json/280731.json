@@ -1,0 +1,45 @@
+{
+  "title_text": "DESTRUCTION KINGS",
+  "credits_text": "MAN, MONKEY & MONSTER FACE OFF IN AN APOCALYPTIC SHOWDOWN!",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "apocalyptic",
+    "action",
+    "horror",
+    "camp",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "apocalyptic",
+      "conf": 0.7
+    },
+    {
+      "name": "showdown",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and monstrous imagery.",
+  "description": "Poster features three characters with intense expressions and a tagline about an apocalyptic showdown involving man, monkey, and monster."
+}

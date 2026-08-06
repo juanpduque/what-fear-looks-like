@@ -1,0 +1,45 @@
+{
+  "title_text": "HOW TO KILL A ZOMBIE",
+  "credits_text": "FREIGHT TRAIN FILMS PRESENTS \"HOW TO KILL A ZOMBIE\" BILL MCLEAN, BEN MCLEAN, HANNAH PERRY, SHERRI COLLINS DIRECTOR OF PHOTOGRAPHY ALLEN DILLINGHAM DIRECTED BY TIFF MCLEAN ASSISTANT DIRECTOR P.S. ROBERTS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "action",
+    "thriller",
+    "dark",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "zombie",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains mild violent themes and horror elements.",
+  "description": "A group of people stand together in a dark, ominous setting with a stormy sky above, promoting the horror film \"How to Kill a Zombie.\""
+}

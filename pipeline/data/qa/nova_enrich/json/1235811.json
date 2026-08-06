@@ -1,0 +1,46 @@
+{
+  "title_text": "SEYTAHIN EŞİLERİ",
+  "credits_text": "EMİRHAN TÜKEN TEÞELI, KAZIM ARSLANTAŞ, ESRA VURAL, ATİLLA KARAHAľ, CEMRE YALÇIN, CANER GÖLĞUĞLU, YAGMUR YENİCE, DERİN FILM, PUSULA FILM",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread",
+    "supernatural",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "violence",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.85,
+  "violence": 0.75,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and monstrous creatures.",
+  "description": "A poster featuring a monstrous, grotesque face with sharp teeth and blood, promoting a horror film titled 'Seytahın Eşıleri.'"
+}

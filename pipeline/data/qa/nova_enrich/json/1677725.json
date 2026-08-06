@@ -1,0 +1,43 @@
+{
+  "title_text": "THE BLACK DIAMOND FILES",
+  "credits_text": "A film by Afterlife Research",
+  "languages": [
+    "en"
+  ],
+  "other_text": "AS NIGHT SWALLOWS DAY",
+  "mood": [
+    "melancholy",
+    "mystery",
+    "haunting",
+    "gothic",
+    "atmospheric"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "water",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A solitary figure stands in a field under a stormy sky, with a dark balloon floating above, evoking a haunting and mysterious atmosphere."
+}

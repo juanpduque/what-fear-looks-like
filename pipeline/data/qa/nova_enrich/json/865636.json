@@ -1,0 +1,40 @@
+{
+  "title_text": "TENOCH",
+  "credits_text": "EN CADA VIDA HAY UN NUEVO AMANECER",
+  "languages": [
+    "en",
+    "es"
+  ],
+  "other_text": "THE ROLLY POLY 60. LICANO'S FILMS MACABRO FICH THE NIGHT BEATCO LIGHT BEATCO VAMPIRA FILMS FANTASIA FILMS",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.6,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and dark themes.",
+  "description": "A dark silhouette stands in a forest, holding a staff, with a smaller figure in the foreground. The poster features bold red and black text."
+}

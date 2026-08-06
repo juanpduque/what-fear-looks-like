@@ -1,0 +1,41 @@
+{
+  "title_text": "DARK INTRUDER",
+  "credits_text": "starring LESLIE NIELSEN • JUDI MEREDITH • MARK RICHMAN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "HE KILLED WITH THE POWER OF DEMONS a million years old ! YOU NEVER KNEW SUCH MEN EXISTED! YOU'LL BE POSSESSED BY THE",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "occult"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult",
+    "violence"
+  ],
+  "moderation_notes": "Contains occult themes and implied violence.",
+  "description": "A vintage horror poster featuring a menacing face split between human and demonic features, with bold red and black typography and dramatic taglines."
+}

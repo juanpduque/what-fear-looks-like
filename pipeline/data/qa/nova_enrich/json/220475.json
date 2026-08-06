@@ -1,0 +1,46 @@
+{
+  "title_text": "ANTOINE ET LES HEROS",
+  "credits_text": "UNE PRODUCTION LES FILMS DU REVELLON, G-TEAM ET PATRICK BAGOT UN FILM DE PATRICK BAGOT",
+  "languages": [
+    "fr"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "zombie",
+    "apocalyptic",
+    "survival",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and horror elements including zombies and blood.",
+  "description": "The poster features a group of people facing zombies in a dark, eerie setting with a central figure illuminated by green light."
+}

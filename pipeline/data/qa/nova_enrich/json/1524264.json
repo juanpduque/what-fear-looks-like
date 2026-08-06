@@ -1,0 +1,40 @@
+{
+  "title_text": "MR ANKA",
+  "credits_text": "SIMGE CAN ETHEM CAP EMRE CELIK UMUT DURMAZ MERT SENOL MELISA GÖKSU BATIR AYHİAN İZMIRLI KIMIYA SARABADANİ",
+  "languages": [
+    "tr"
+  ],
+  "other_text": "\"IBLIS ETE KEMİGE BÖRÜNDÜ\" 28 NİSAN'DA SİNEMALARDA",
+  "mood": [
+    "horror",
+    "gothic",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror imagery with blood and a monstrous face.",
+  "description": "A horror movie poster featuring a monstrous, bloodied face with the title \"MR ANKA\" and release date April 28."
+}

@@ -1,0 +1,39 @@
+{
+  "title_text": "체크인",
+  "credits_text": "살려주는 자, 살인을 꾀한다!",
+  "languages": [
+    "ko"
+  ],
+  "other_text": "주설로컬",
+  "mood": [
+    "dread",
+    "gothic",
+    "haunting",
+    "mystery",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "house",
+      "conf": 0.95
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, eerie poster shows an abandoned house with a shadowy figure standing in the doorway, evoking a sense of horror and suspense."
+}

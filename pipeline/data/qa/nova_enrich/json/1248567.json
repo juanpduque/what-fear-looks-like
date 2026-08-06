@@ -1,0 +1,46 @@
+{
+  "title_text": "Black Rose",
+  "credits_text": "VIOLETS ARE BLUE, ROSES ARE BLACK... DEATH IS A GIRL NAMED ERIN AND SHE HAS A BAT! SAWNA KELLY, SABRINA BARRETT, SHARON KELLY, DIANE BLACK, JEFF PETERSON, TARA PETERSON, MARGA HORTION",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "horror",
+    "thriller",
+    "psychological",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "bat",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; may be disturbing to some viewers.",
+  "description": "A poster shows a young woman sitting with a concerned expression, while a ghostly figure with a bat appears behind her in a dimly lit hallway."
+}

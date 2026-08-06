@@ -1,0 +1,39 @@
+{
+  "title_text": "DEATH ON SCENIC DRIVE",
+  "credits_text": "DEATH IS ON HER SIDE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SCENIC DR.",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains violent imagery and horror themes.",
+  "description": "A woman with long hair holds a large knife over her face, with a dilapidated house and street sign in the background."
+}

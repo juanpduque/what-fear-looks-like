@@ -1,0 +1,43 @@
+{
+  "title_text": "THEY CRAWL BENEATH",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "desolate",
+    "tense",
+    "foreboding",
+    "survival",
+    "apocalyptic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "desert",
+      "conf": 0.95
+    },
+    {
+      "name": "crawling",
+      "conf": 0.85
+    },
+    {
+      "name": "weapon",
+      "conf": 0.3
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A lone figure stands on cracked ground in a barren desert, holding a rifle, with the title 'They Crawl Beneath' prominently displayed."
+}

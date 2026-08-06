@@ -1,0 +1,46 @@
+{
+  "title_text": "ZOMBIE WEREWOLVES ATTACK!",
+  "credits_text": "When a pack of werewolves crashes a party, hunter becomes the main course.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ZOMBIE WEREWOLVES ATTACK! STARRING MARKO ISLAZ, GIANNA GHETI, DEREK GHEEN AND PIERRE VANCE/WILDER PRODUCER BY MARKO ISLAZ, GIANNA GHETI, DEREK GHEEN, STUART GORDON AND PIERRE VANCE/WILDER CREATIVE CONSULTANT ALEX J. LUFT/WRITTEN AND DIRECTED BY DEREK GHEEN",
+  "mood": [
+    "horror",
+    "thriller",
+    "action",
+    "suspense",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    },
+    {
+      "name": "blood",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.8,
+  "animal": 0.1,
+  "blood_gore": 0.6,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic horror elements including blood and monstrous creatures.",
+  "description": "Poster features a group of people facing a large, menacing werewolf with fangs. Text highlights a zombie werewolf attack scenario."
+}

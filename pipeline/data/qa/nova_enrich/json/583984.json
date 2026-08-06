@@ -1,0 +1,50 @@
+{
+  "title_text": "RE-ELECTED",
+  "credits_text": "A HORROR COMEDY FILM BY MAX RADBILL\nLEAFLET MCCLUGDUDY FILMS PRESENTS\nERIKA ALEXIS, GEORGE WASHINGTON, KAYVON KALIUISH, MATTHEW DEHOFF, ERIK RADBILL\nMUSIC BY CAZZ CERKEZ\nWRITTEN BY ERIC LOONEY & MAX RADBILL\nDIRECTED BY MAX RADBILL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "There's something evil in the woods. Something horrifying... Something gruesome... something...AMERICAN.\nCOMING 2020",
+  "mood": [
+    "horror",
+    "comedy",
+    "gritty",
+    "supernatural",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and disturbing imagery.",
+  "description": "Poster features a group of terrified individuals with a monstrous figure looming over them, set against a dark, moonlit forest backdrop with a house visible."
+}

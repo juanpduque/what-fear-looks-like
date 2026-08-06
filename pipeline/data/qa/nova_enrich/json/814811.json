@@ -1,0 +1,43 @@
+{
+  "title_text": "UMBRA",
+  "credits_text": "UNIVERSITY OF NORTH CAROLINA SCHOOL OF THE ARTS | UMBRA | WRITTEN BY J. LEE BARNHART | DIRECTED BY RALF PETER TOME | STARRING JOSHUA BAKER & ALISON RAMSEY | PRODUCED BY JOSHUA BAKER & ALISON RAMSEY | EDITED BY JOSHUA BAKER & ALISON RAMSEY",
+  "languages": [
+    "en"
+  ],
+  "other_text": "DO YOU EVER FEEL LONELY?",
+  "mood": [
+    "gothic",
+    "dread",
+    "surreal",
+    "psychological",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "monster",
+      "conf": 0.7
+    },
+    {
+      "name": "skull",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a man with a dark, textured face against a yellow background, with the title 'UMBRA' prominently displayed below."
+}

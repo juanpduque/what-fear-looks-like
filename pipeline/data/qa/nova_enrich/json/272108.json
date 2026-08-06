@@ -1,0 +1,41 @@
+{
+  "title_text": "ALIEN from the DARKNESS",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "WARNING! ABSOLUTELY NOT FOR CHILDREN!",
+  "mood": [
+    "sci-fi",
+    "action",
+    "suspense",
+    "dystopia",
+    "cyberpunk"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and intense sci-fi themes.",
+  "description": "A woman stands next to a large robot with a menacing alien face, set against a dark, cosmic background."
+}

@@ -1,0 +1,40 @@
+{
+  "title_text": "The Insect Woman",
+  "credits_text": "",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "other_text": "구민 집 기",
+  "mood": [
+    "surreal",
+    "gothic",
+    "eerie",
+    "haunting",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "insect",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features a woman with insect-like wings against a vibrant purple background, with bold text reading \"The Insect Woman.\""
+}

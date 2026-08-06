@@ -1,0 +1,40 @@
+{
+  "title_text": "SHARK HUNTRESS",
+  "credits_text": "KATRINA GREY DEAN ALEXANDROU JOHN BUSTER FLANO RUSSELL GEOFFREY BANKS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SHE WANTS REVENGE...IT WANTS BLOOD.",
+  "mood": [
+    "thriller",
+    "action",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "water",
+      "conf": 0.8
+    },
+    {
+      "name": "blood",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.1,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.9,
+  "blood_gore": 0.3,
+  "violence": 0.7,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "nudity"
+  ],
+  "moderation_notes": "Contains mild nudity and violent themes involving a shark.",
+  "description": "A woman stands on a dock facing a giant shark with open jaws, ready for revenge in a thrilling adventure."
+}

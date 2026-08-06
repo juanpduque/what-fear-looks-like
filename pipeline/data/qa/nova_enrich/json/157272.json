@@ -1,0 +1,49 @@
+{
+  "title_text": "BIO-DEAD",
+  "credits_text": "'A GRISLY SCI-FI HORROR FLICK... THAT WILL SATISFY FANS' GOREZONE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "12 MILLION FATALITIES IN THE ZONE. THOSE WERE THE LUCKY ONES.",
+  "mood": [
+    "gritty",
+    "sci-fi",
+    "horror",
+    "post-apocalyptic",
+    "tense"
+  ],
+  "fear_labels": [
+    {
+      "name": "mask",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.8
+    },
+    {
+      "name": "apocalypse",
+      "conf": 0.7
+    },
+    {
+      "name": "biohazard",
+      "conf": 0.85
+    },
+    {
+      "name": "soldier",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.8,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster depicts violent themes and post-apocalyptic imagery.",
+  "description": "A poster shows a group of soldiers in hazmat suits and gas masks, with one prominently in the foreground. The title 'BIO-DEAD' is displayed at the bottom."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "THE CROW",
+  "credits_text": "WICKED PRAYER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dark",
+    "mysterious",
+    "haunting",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    },
+    {
+      "name": "creature",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.3,
+  "blood_gore": 0.0,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "occult"
+  ],
+  "moderation_notes": "Contains dark, gothic imagery and themes of violence and occult.",
+  "description": "A dark poster features a dramatic close-up of a person with intense eyes and red accents, accompanied by crows and bold text reading 'THE CROW: WICKED PRAYER.'"
+}

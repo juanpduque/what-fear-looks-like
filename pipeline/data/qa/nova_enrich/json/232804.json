@@ -1,0 +1,41 @@
+{
+  "title_text": "ESCAPE TO BLACK TREE FOREST",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "ONE WAY IN. NO WAY OUT",
+  "mood": [
+    "dread",
+    "suspense",
+    "horror",
+    "forest",
+    "mystery"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "forest",
+      "conf": 0.95
+    },
+    {
+      "name": "weapon",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.6,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster suggests potential violence due to the presence of weapons and a threatening figure.",
+  "description": "A shadowy figure stands in a dark forest holding two weapons, with bold red text reading 'Escape to Black Tree Forest' and a tagline below."
+}

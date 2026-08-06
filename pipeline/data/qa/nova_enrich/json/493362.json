@@ -1,0 +1,41 @@
+{
+  "title_text": "City Horror",
+  "credits_text": "The SONG of Ho DEAD",
+  "languages": [
+    "en",
+    "ko"
+  ],
+  "other_text": "气魔影应 中文版出市系列 影应年度 影应年度 影应年度",
+  "mood": [
+    "gothic",
+    "erotic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.6,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.4,
+  "sensitive": [
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains suggestive imagery and occult themes.",
+  "description": "A poster features a woman in red with dramatic lighting, overlaid with bold Korean and English text, suggesting a gothic horror theme."
+}

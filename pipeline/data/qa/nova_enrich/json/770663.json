@@ -1,0 +1,45 @@
+{
+  "title_text": "EL SOTANO DE LAS ALMAS",
+  "credits_text": "Una Película de ERNESTO AGUILAR",
+  "languages": [
+    "es"
+  ],
+  "other_text": "Encerraron a un joven inocente. Liberaron a un monstruo.",
+  "mood": [
+    "gothic",
+    "horror",
+    "dread",
+    "surreal",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains implied violence and horror themes.",
+  "description": "A man confronts a clown-like figure in a dark setting, with a shadowy silhouette in the background, suggesting a horror theme."
+}

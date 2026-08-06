@@ -1,0 +1,34 @@
+{
+  "title_text": "GAMERA2",
+  "credits_text": "ATTACK OF LEGION",
+  "languages": [
+    "en",
+    "ja"
+  ],
+  "other_text": "外",
+  "mood": [
+    "action",
+    "sci-fi",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "creature",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.95,
+  "person": 0.1,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A poster features two large monsters, Gamera and an enemy creature, set against a dark background with bold Japanese and English text."
+}

@@ -1,0 +1,38 @@
+{
+  "title_text": "The Carrier",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "disturbing",
+    "psychological",
+    "surreal",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    "blood_gore",
+    {
+      "name": "eye",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of an eye and implied violence.",
+  "description": "A close-up of an eye with a finger pressing against it, featuring the title 'The Carrier' in stylized text."
+}

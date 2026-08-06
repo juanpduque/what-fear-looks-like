@@ -1,0 +1,40 @@
+{
+  "title_text": "THE NASAL PICKER",
+  "credits_text": "HE CHOSE HIS WEAPONS... HE SELECTED HIS VICTIMS... HE PICKED HIS NOSE...",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "horror",
+    "grotesque",
+    "dark humor"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery and violent themes.",
+  "description": "A poster featuring a man's face with exaggerated features, holding a weapon, and blood splatters, with bold, stylized text."
+}

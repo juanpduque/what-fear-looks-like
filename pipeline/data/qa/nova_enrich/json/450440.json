@@ -1,0 +1,41 @@
+{
+  "title_text": "공군치구츠",
+  "credits_text": "가운자:성신우 주어:성일화 공수업:성신우",
+  "languages": [
+    "ko"
+  ],
+  "other_text": "진짜도의 연반도의 작진도와의 내부부부의 내부부부",
+  "mood": [
+    "gothic",
+    "horror",
+    "surreal",
+    "dread",
+    "camp"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.2,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult imagery and intense facial expressions; no explicit violence or nudity.",
+  "description": "A poster features a menacing blue-faced figure with red eyes, surrounded by characters in dark costumes, with bold Korean text and occult themes."
+}

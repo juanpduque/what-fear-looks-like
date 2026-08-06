@@ -1,0 +1,42 @@
+{
+  "title_text": "TECHSAVVY",
+  "credits_text": "Some changes can't be undone.",
+  "languages": [
+    "en"
+  ],
+  "other_text": "OFFICIAL SELECTION SCREAMFEST HORROR FILM FESTIVAL 2020 OFFICIAL SELECTION POPCORN Frights FILM FESTIVAL",
+  "mood": [
+    "thriller",
+    "horror",
+    "tech",
+    "dystopia",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatter and implied violence.",
+  "description": "A poster for the film 'Techsavvy' features a laptop with a bloody screen and silhouettes of people, accompanied by festival awards and a tagline."
+}

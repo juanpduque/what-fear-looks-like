@@ -1,0 +1,42 @@
+{
+  "title_text": "GAY ZOMBIE",
+  "credits_text": "A MICHAEL SIMON FILM",
+  "languages": [
+    "en"
+  ],
+  "other_text": "LOVE MEANS NEVER HAVING TO SAY YOU'RE DEAD\nwww.GayZombie.net",
+  "mood": [
+    "camp",
+    "horror",
+    "satirical",
+    "dark humor",
+    "quirky"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and gore imagery.",
+  "description": "Poster features a man with zombie-like injuries, a smiling woman holding a gun, and a concerned-looking man, with bold red and black design elements."
+}

@@ -1,0 +1,41 @@
+{
+  "title_text": "RUN, HIDE, DIE",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "NO MERCY. NO ESCAPE.",
+  "mood": [
+    "tense",
+    "survival",
+    "horror",
+    "desperate",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.3,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "The poster implies potential violence through its intense design and warning text.",
+  "description": "A dramatic poster features bold red text reading \"RUN, HIDE, DIE\" with a shadowy figure holding an axe against a dark background."
+}

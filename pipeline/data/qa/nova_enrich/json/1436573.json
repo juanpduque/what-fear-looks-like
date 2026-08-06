@@ -1,0 +1,42 @@
+{
+  "title_text": "PROM PARTY MASSACRE",
+  "credits_text": "A NEW SLASHER MOVIE MUSICAL",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EVERYONE THINKS THEY'RE IMMORTAL ON PROM NIGHT...",
+  "mood": [
+    "horror",
+    "camp",
+    "satirical",
+    "thriller",
+    "musical"
+  ],
+  "fear_labels": [
+    {
+      "name": "knife",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "crowd",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.9,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.9,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood splatter imagery.",
+  "description": "A vibrant poster features a group of teens around a shattered disco ball with knives, blood splatters, and bold text announcing a slasher musical."
+}

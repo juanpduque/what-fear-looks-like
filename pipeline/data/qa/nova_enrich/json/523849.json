@@ -1,0 +1,43 @@
+{
+  "title_text": "THE LAST SHARKNADO: IT'S ABOUT TIME!",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "action",
+    "camp",
+    "fantasy",
+    "adventure",
+    "thriller"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "weapon",
+      "conf": 0.3
+    },
+    {
+      "name": "fire",
+      "conf": 0.4
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.2
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.7,
+  "blood_gore": 0.0,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A colorful poster features a group of characters facing a giant shark in a dramatic, action-packed scene with explosions and chaos."
+}

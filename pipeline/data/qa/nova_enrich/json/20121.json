@@ -1,0 +1,47 @@
+{
+  "title_text": "KILDOZER",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "EVERYONE KNOWS A MACHINE CANNOT KILL... EXCEPT THE MACHINE.",
+  "mood": [
+    "dystopian",
+    "apocalyptic",
+    "gritty",
+    "intense",
+    "dark"
+  ],
+  "fear_labels": [
+    {
+      "name": "vehicle",
+      "conf": 0.9
+    },
+    {
+      "name": "skull",
+      "conf": 0.7
+    },
+    {
+      "name": "graveyard",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A bulldozer plows through a graveyard with skulls and tombstones, accompanied by bold red and yellow text."
+}

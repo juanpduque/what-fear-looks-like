@@ -1,0 +1,52 @@
+{
+  "title_text": "ALUCARD",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "dramatic",
+    "mysterious",
+    "dark",
+    "intense"
+  ],
+  "fear_labels": [
+    {
+      "name": "vampire",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "knife",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "occult",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.7,
+  "monster": 0.9,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.6,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "violence",
+    "occult",
+    "blood",
+    "gothic"
+  ],
+  "moderation_notes": "Contains graphic blood and occult imagery, suitable for mature audiences.",
+  "description": "A woman with dark hair and a dagger stands against a gothic background, with blood splatters and a title 'ALUCARD' prominently displayed."
+}

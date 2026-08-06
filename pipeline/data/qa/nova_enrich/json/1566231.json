@@ -1,0 +1,38 @@
+{
+  "title_text": "FEAR IS A FLUKE",
+  "credits_text": "RAAR IS THE ROOT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "lost image productions",
+  "mood": [
+    "intense",
+    "dark",
+    "aggressive",
+    "threatening"
+  ],
+  "fear_labels": [
+    {
+      "name": "text-heavy",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, intense poster featuring bold red and black text with a menacing face partially visible in the background."
+}

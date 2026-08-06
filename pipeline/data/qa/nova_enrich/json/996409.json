@@ -1,0 +1,51 @@
+{
+  "title_text": "Elnode der Péniger",
+  "credits_text": "",
+  "languages": [
+    "de"
+  ],
+  "other_text": "Blachlava",
+  "mood": [
+    "gothic",
+    "horror",
+    "surreal",
+    "dread",
+    "eerie"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.6
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.6,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore",
+    "nudity"
+  ],
+  "moderation_notes": "Contains graphic violence, blood, partial nudity, and disturbing imagery.",
+  "description": "A horror comic cover featuring a skull, two men, and a nude woman amidst a graveyard with blood and monsters."
+}

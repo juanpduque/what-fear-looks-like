@@ -1,0 +1,42 @@
+{
+  "title_text": "JAKE'S ROAD",
+  "credits_text": "ERIC ROBERTS, PATRICK FLANAGAN, LETICIA JIMENEZ, GARRETT HINES",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FAMILY TIES CUT DEEP",
+  "mood": [
+    "thriller",
+    "drama",
+    "intense",
+    "suspense",
+    "gritty"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.4
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and implied violence.",
+  "description": "Movie poster features four individuals with a dramatic road scene, blood splatters, and intense expressions, suggesting a thriller or drama."
+}

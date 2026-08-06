@@ -1,0 +1,40 @@
+{
+  "title_text": "CREEPIE",
+  "credits_text": "A FILM BY KARNTHI PHOTIDARA\nPAN PANTHUVICHIT\nPONCHAWALAI THAWEEKARN",
+  "languages": [
+    "en"
+  ],
+  "other_text": "FEAR IS COMING",
+  "mood": [
+    "dread",
+    "surreal",
+    "gothic"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.8,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and violent imagery.",
+  "description": "A poster shows a bald figure with exaggerated features, overlaid with red splatters and the text 'FEAR IS COMING.' The title 'CREEPIE' is prominently displayed at the bottom."
+}

@@ -1,0 +1,38 @@
+{
+  "title_text": "CINEMAGIC",
+  "credits_text": "THE THING IN THE BASEMENT",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Number $1.50",
+  "mood": [
+    "horror",
+    "sci-fi",
+    "creepy",
+    "suspense"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A green-tinted poster features a menacing face with the title 'CINEMAGIC' and subtitle 'THE THING IN THE BASEMENT' in bold letters."
+}

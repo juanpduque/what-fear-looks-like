@@ -1,0 +1,42 @@
+{
+  "title_text": "A BEGINNER'S GUIDE TO SNUFF",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "REC",
+  "mood": [
+    "horror",
+    "thriller",
+    "disturbing",
+    "gritty",
+    "violent"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "violence",
+      "conf": 0.85
+    },
+    {
+      "name": "face",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.85,
+  "sexual_content": 0.1,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood; disturbing imagery.",
+  "description": "Poster shows three distressed individuals in a gritty, bloody setting with intense expressions, suggesting a horror theme."
+}

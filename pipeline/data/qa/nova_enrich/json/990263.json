@@ -1,0 +1,43 @@
+{
+  "title_text": "SOLO",
+  "credits_text": "\"SOLO\" es una película de Édgar Óscar Cuéllar, escrita por José Luis Torres y una idea de producción de Félix Castellón. Dirigida por Carlos Gutiérrez. Producción: Eliana Alvés. Dirección de arte: Sandra Rell.",
+  "languages": [
+    "es"
+  ],
+  "other_text": "LOS MONSTRUOS SE MANIFESTAN EN SOLEDAD",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "melancholy",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.8
+    },
+    {
+      "name": "haunting",
+      "conf": 0.7
+    },
+    {
+      "name": "gothic",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.5
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A man sits in a cluttered room with a lamp, surrounded by debris, with bold yellow text reading 'SOLO' above him."
+}

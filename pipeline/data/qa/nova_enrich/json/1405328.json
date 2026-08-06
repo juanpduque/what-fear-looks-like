@@ -1,0 +1,43 @@
+{
+  "title_text": "A cold dinner",
+  "credits_text": "director - Gulzhan Sitakhmetova; director of photography - Alisa Zhukova; art department - Pavel Lukovenko, Francheska Nekrasova, Ksenia Neb; make up artist - Alyona Ristic; stars - Elena Luneva, Dmitry Kantoroy",
+  "languages": [
+    "en"
+  ],
+  "other_text": "film by Gulzhan Sitakhmetova",
+  "mood": [
+    "surreal",
+    "gothic",
+    "eerie",
+    "mysterious",
+    "haunting"
+  ],
+  "fear_labels": [
+    {
+      "name": "creature",
+      "conf": 0.7
+    },
+    {
+      "name": "blood",
+      "conf": 0.5
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.7,
+  "person": 0.8,
+  "animal": 0.3,
+  "blood_gore": 0.5,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "blood",
+    "occult"
+  ],
+  "moderation_notes": "Contains symbolic blood imagery and eerie, unsettling themes.",
+  "description": "A stylized poster features a crowned figure in a cage with dripping red liquid, surrounded by beetles against a starry night sky."
+}

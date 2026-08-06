@@ -1,0 +1,50 @@
+{
+  "title_text": "SLICE 2",
+  "credits_text": "John Hitt & Adam Hirsh present A James Balsamo Film",
+  "languages": [
+    "en"
+  ],
+  "other_text": "CHILDREN OF THE COURSE",
+  "mood": [
+    "horror",
+    "fantasy",
+    "surreal",
+    "action",
+    "comedy"
+  ],
+  "fear_labels": [
+    {
+      "name": "skull",
+      "conf": 0.9
+    },
+    {
+      "name": "ghost",
+      "conf": 0.8
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.7
+    },
+    {
+      "name": "monster",
+      "conf": 0.75
+    },
+    {
+      "name": "fire",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.2,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.5,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains mild horror elements and implied violence.",
+  "description": "A vibrant poster features a skull, ghosts, and a vehicle in a chaotic scene, promoting the film \"Slice 2: Children of the Course.\""
+}

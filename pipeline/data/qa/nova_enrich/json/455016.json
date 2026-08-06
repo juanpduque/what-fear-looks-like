@@ -1,0 +1,45 @@
+{
+  "title_text": "I AM THE DOORWAY",
+  "credits_text": "A SHORT FILM BY ROBIN KASPARIK",
+  "languages": [
+    "en"
+  ],
+  "other_text": "BASED ON A STORY BY STEPHEN KING\nIAMTHEDOORWAY.COM",
+  "mood": [
+    "surreal",
+    "cosmic horror",
+    "psychological",
+    "disturbing",
+    "mysterious"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.95
+    },
+    {
+      "name": "cosmic",
+      "conf": 0.85
+    },
+    {
+      "name": "surreal",
+      "conf": 0.9
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.8,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains disturbing and surreal imagery that may be unsettling.",
+  "description": "A poster featuring a distorted, screaming face with cosmic, red tendrils against a starry background, promoting a short film based on a Stephen King story."
+}

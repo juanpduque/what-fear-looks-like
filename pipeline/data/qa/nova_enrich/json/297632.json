@@ -1,0 +1,40 @@
+{
+  "title_text": "ANTIDOTE",
+  "credits_text": "THE CURE IS THE CURSE",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "syringe",
+      "conf": 0.8
+    },
+    {
+      "name": "forest",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.0,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic imagery of blood and a syringe, suggesting horror themes.",
+  "description": "A poster shows a bloody hand holding a syringe above a glowing bottle with the title 'Antidote' and tagline 'The Cure Is The Curse' against a dark forest backdrop."
+}

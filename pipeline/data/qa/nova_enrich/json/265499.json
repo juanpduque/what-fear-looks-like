@@ -1,0 +1,46 @@
+{
+  "title_text": "ZOMBI",
+  "credits_text": "AVE PUTU SUKO, SOFI IKAN, EVANA ADIYA, ARIANA ROZA, RIZA WIYANS, VANCE RIZAL, SHELIA BALAS, USOP WICHA, DAYANA, SOEI JIKAN, AVIE, SHUQ BALAS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "SERUAN FILM ENTIT SMU IT SENI BHD ARABAN MAMAT KHALID, DI PAWAGAM 20 MARCH 2014",
+  "mood": [
+    "horror",
+    "apocalyptic",
+    "tense",
+    "survival",
+    "chaotic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.8
+    },
+    {
+      "name": "face",
+      "conf": 0.7
+    },
+    {
+      "name": "vehicle",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.95,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains implied violence and gore typical of horror genre.",
+  "description": "Movie poster features a group of people facing a zombie threat with a central male figure in red shirt. The background shows a chaotic, fiery setting."
+}

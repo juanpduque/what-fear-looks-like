@@ -1,0 +1,41 @@
+{
+  "title_text": "THE MOUTHS",
+  "credits_text": "A FILM BY TAKASHI SHIMIZU\nKEITO, TSUNA, AI YOSHIKAWA, MOMONA, SHOOT MORI, TOMOKI NISHIYAMA, TOKIO EMOTO, SHIDO NAKAMURA, RIHITO, ITAGAKI",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOUR OWN WORDS WILL KILL YOU.",
+  "mood": [
+    "dread",
+    "surreal",
+    "psychological",
+    "disturbing"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "creature",
+      "conf": 0.8
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.8,
+  "person": 0.0,
+  "animal": 0.8,
+  "blood_gore": 0.9,
+  "violence": 0.7,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood imagery and disturbing themes.",
+  "description": "A poster shows a pair of red lips with metallic insects and dripping blood, accompanied by the title and director's name."
+}

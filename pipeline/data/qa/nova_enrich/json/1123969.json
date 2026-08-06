@@ -1,0 +1,40 @@
+{
+  "title_text": "僕いつのリバスト",
+  "credits_text": "教歌部集影、消消集集集",
+  "languages": [
+    "ja"
+  ],
+  "other_text": "僕代の女チ長生たちが言った",
+  "mood": [
+    "dread",
+    "gothic",
+    "horror"
+  ],
+  "fear_labels": [
+    {
+      "name": "blood",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.7
+    },
+    {
+      "name": "house",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.3,
+  "animal": 0.0,
+  "blood_gore": 0.9,
+  "violence": 0.8,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood splatters and a disturbing silhouette, indicating strong horror themes.",
+  "description": "A dark hallway with blood splatters on a window and a shadowy figure reaching through an open door."
+}

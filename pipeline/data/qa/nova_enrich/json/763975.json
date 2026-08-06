@@ -1,0 +1,42 @@
+{
+  "title_text": "MARK OF THE DAMNED",
+  "credits_text": "8 P.M. PAINT... AN ERIC MILLER MOTION PICTURE \"MARK OF THE DAMNED\" produced by ERIC MILLER... STARRING CASEY BOLIN... JOSH KENNEY... WALKER ALLEN... ERIC MILLER... ERIC MILLER",
+  "languages": [
+    "en"
+  ],
+  "other_text": "JOURNEY BEYOND THE TRIUMPH... INTO AN UNTOUCHED WORLD... #CURDI",
+  "mood": [
+    "gothic",
+    "erotic",
+    "surreal",
+    "camp",
+    "dread"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "crowd",
+      "conf": 0.85
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.1,
+  "monster": 0.2,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.15,
+  "sexual_content": 0.3,
+  "sensitive": [
+    "sexual",
+    "occult"
+  ],
+  "moderation_notes": "Contains suggestive imagery and occult themes.",
+  "description": "A collage-style poster features multiple characters in dramatic poses, with bold red and black typography announcing the title \"Mark of the Damned.\""
+}

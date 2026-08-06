@@ -1,0 +1,46 @@
+{
+  "title_text": "GOD OF VAMPIRES",
+  "credits_text": "A ROB FITZ FILM\nDHARMA LIM\nBEN WANG\nSHYAPORN THEERAKULSIT\nMORRIS CHUNG",
+  "languages": [
+    "en"
+  ],
+  "other_text": "YOU HAVE ENTERED THE REALITY OF THE DEAD... AND I AM YOUR GOD.",
+  "mood": [
+    "gothic",
+    "dread",
+    "dark",
+    "violent",
+    "supernatural"
+  ],
+  "fear_labels": [
+    {
+      "name": "silhouette",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "weapon",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.6,
+  "monster": 0.8,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.7,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic violence and blood imagery.",
+  "description": "A dark silhouette stands against a red background with text reading 'God of Vampires,' suggesting a horror theme."
+}

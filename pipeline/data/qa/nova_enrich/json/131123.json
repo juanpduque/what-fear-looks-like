@@ -1,0 +1,39 @@
+{
+  "title_text": "GUARDIAN OF THE REALM",
+  "credits_text": "",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "dread",
+    "gothic",
+    "surreal"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "chains",
+      "conf": 0.85
+    },
+    {
+      "name": "horror",
+      "conf": 0.8
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.7,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.1,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence"
+  ],
+  "moderation_notes": "Contains intense horror imagery and implied violence.",
+  "description": "A dramatic poster featuring a distressed individual bound by chains with an intense expression, set against a dark, urban backdrop."
+}

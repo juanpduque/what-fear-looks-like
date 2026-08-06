@@ -1,0 +1,43 @@
+{
+  "title_text": "You Missed a Spot",
+  "credits_text": "Michael Lyons, Tiffany Stringer, Hap Lawrence, Noel Oken",
+  "languages": [
+    "en"
+  ],
+  "other_text": "When you're a mime... No one can hear you scream",
+  "mood": [
+    "gothic",
+    "surreal",
+    "dread",
+    "camp",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "face",
+      "conf": 0.9
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.8
+    },
+    {
+      "name": "house",
+      "conf": 0.7
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.3,
+  "monster": 0.4,
+  "person": 1.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.2,
+  "sexual_content": 0.0,
+  "sensitive": [],
+  "moderation_notes": "",
+  "description": "A dark, moody poster features a group of characters in a night setting with balloons and eerie text, suggesting a psychological horror theme."
+}

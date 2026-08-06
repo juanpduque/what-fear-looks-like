@@ -1,0 +1,40 @@
+{
+  "title_text": "THE CURSE OF ROBERT THE DOLL",
+  "credits_text": "SHOCK DOCS",
+  "languages": [
+    "en"
+  ],
+  "other_text": "",
+  "mood": [
+    "gothic",
+    "eerie",
+    "haunting",
+    "creepy"
+  ],
+  "fear_labels": [
+    {
+      "name": "doll",
+      "conf": 0.95
+    },
+    {
+      "name": "haunting",
+      "conf": 0.85
+    },
+    {
+      "name": "gothic",
+      "conf": 0.75
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and eerie imagery.",
+  "description": "A vintage-style poster features a creepy doll sitting in a wooden chair with a hat, against a dimly lit background."
+}

@@ -1,0 +1,46 @@
+{
+  "title_text": "BIG BAD",
+  "credits_text": "AINSLY BAILEY CAMERON DEANE STEWERT MADELINE THELTON",
+  "languages": [
+    "en"
+  ],
+  "other_text": "A FRIGHTENINGLY GOOD TIME",
+  "mood": [
+    "dread",
+    "suspense",
+    "horror",
+    "forest",
+    "monstrous"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.95
+    },
+    {
+      "name": "forest",
+      "conf": 0.9
+    },
+    {
+      "name": "blood",
+      "conf": 0.7
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.95,
+  "person": 0.7,
+  "animal": 0.0,
+  "blood_gore": 0.7,
+  "violence": 0.6,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "violence",
+    "gore"
+  ],
+  "moderation_notes": "Contains graphic blood and monstrous imagery.",
+  "description": "A poster shows a large, menacing creature's claw dripping blood in a dark forest, with two people in the background."
+}

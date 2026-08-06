@@ -1,0 +1,45 @@
+{
+  "title_text": "Shaitani Dracula",
+  "credits_text": "WRITTEN, PRODUCED & DIRECTED BY: HARINAM SINGH",
+  "languages": [
+    "en"
+  ],
+  "other_text": "Eagle Video CD, OK TESTED",
+  "mood": [
+    "gothic",
+    "camp",
+    "horror",
+    "supernatural",
+    "dramatic"
+  ],
+  "fear_labels": [
+    {
+      "name": "monster",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "silhouette",
+      "conf": 0.6
+    },
+    {
+      "name": "text-heavy",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.9,
+  "person": 0.9,
+  "animal": 0.0,
+  "blood_gore": 0.3,
+  "violence": 0.4,
+  "sexual_content": 0.2,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "Contains occult themes and mild horror elements.",
+  "description": "The poster features a dramatic face with sharp teeth, flanked by two women in traditional attire, with bold title text and credits."
+}

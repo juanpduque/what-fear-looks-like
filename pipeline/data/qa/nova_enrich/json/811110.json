@@ -1,0 +1,42 @@
+{
+  "title_text": "Julia",
+  "credits_text": "A FILM BY VINCENT SMITH",
+  "languages": [
+    "en",
+    "fr"
+  ],
+  "other_text": "LES FILMS DE SANDRÉE SAMARA FILM",
+  "mood": [
+    "gothic",
+    "haunting",
+    "mystery",
+    "eerie",
+    "psychological"
+  ],
+  "fear_labels": [
+    {
+      "name": "ghost",
+      "conf": 0.9
+    },
+    {
+      "name": "face",
+      "conf": 0.8
+    },
+    {
+      "name": "occult",
+      "conf": 0.7
+    }
+  ],
+  "weapon": 0.0,
+  "monster": 0.0,
+  "person": 0.0,
+  "animal": 0.0,
+  "blood_gore": 0.0,
+  "violence": 0.0,
+  "sexual_content": 0.0,
+  "sensitive": [
+    "occult"
+  ],
+  "moderation_notes": "The poster suggests occult themes and ghostly imagery, but no explicit violence or sexual content is depicted.",
+  "description": "The poster features an ornate mirror with the name 'Julia' and a ghostly face inside, set against a dark background."
+}
