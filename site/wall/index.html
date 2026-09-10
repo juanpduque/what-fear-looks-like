@@ -17,7 +17,7 @@
   --mono:'DM Mono',Menlo,monospace; --serif:'Spectral',Georgia,serif;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-html{scroll-behavior:smooth}
+html{scroll-behavior:smooth;scroll-padding-bottom:56px}
 @media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
 html,body{background:var(--bg);color:var(--bone);font-family:var(--serif);font-size:18px;line-height:1.6}
 body{overflow-x:hidden}
@@ -62,15 +62,16 @@ body.no-webgl canvas#scene{display:none}
 
 .year-rail{position:fixed;left:18px;top:50%;transform:translateY(-50%);z-index:6;display:flex;flex-direction:column;gap:8px}
 .year-rail a{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--dim);text-decoration:none;
-  padding:2px 0;border-left:1px solid transparent;padding-left:10px}
+  padding:2px 0;border-left:1px solid transparent;padding-left:10px;white-space:nowrap}
 .year-rail a[aria-current="true"]{color:var(--blood-hi);border-left-color:var(--blood-hi)}
 .year-rail a:hover{color:var(--bone)}
 
 .sec{position:relative;min-height:100vh}
-.sec-hero{min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 8vw 7vh}
-.hero-bottom{max-width:920px}
+.sec-hero{min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 7vw 5.5vh 96px}
+.hero-stage{flex:1 1 54vh;min-height:48vh;pointer-events:none}
+.hero-bottom{max-width:720px;position:relative;z-index:2}
 .kicker{font-family:var(--mono);font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--blood-hi);margin-bottom:.6em}
-h1{font-family:var(--display);font-size:clamp(64px,12vw,168px);line-height:.82;letter-spacing:.02em;font-weight:400;
+h1{font-family:var(--display);font-size:clamp(52px,8.4vw,124px);line-height:.84;letter-spacing:.02em;font-weight:400;
   color:var(--bone);text-transform:uppercase}
 h1 .blood{color:var(--blood-hi)}
 .dek{margin-top:1.1em;max-width:540px;color:var(--bone);font-size:clamp(16px,1.7vw,20px);text-shadow:0 2px 18px #0a0605}
@@ -94,6 +95,7 @@ h1 .blood{color:var(--blood-hi)}
 .era-R .era-copy{margin-left:auto}
 .era-copy h2{font-family:var(--display);font-size:clamp(42px,7vw,84px);line-height:.88;letter-spacing:.02em;
   text-transform:uppercase;margin:.15em 0 .25em;font-weight:400}
+#era-5 .era-copy h2{text-transform:none;letter-spacing:.04em}
 .era-copy .tag{font-family:var(--mono);font-size:13px;letter-spacing:.08em;color:var(--blood-hi);font-style:italic;margin-bottom:1em}
 .era-copy .body{color:var(--bone);margin-bottom:1.2em}
 .stats{list-style:none;font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--dim);display:grid;gap:6px}
@@ -167,15 +169,17 @@ h1 .blood{color:var(--blood-hi)}
   .nav-links a:not(.brand){display:none}
   .nav-links{gap:8px}
   .year-rail{left:0;right:0;top:auto;bottom:0;transform:none;flex-direction:row;justify-content:center;
-    gap:4px;padding:22px 8px 10px;background:linear-gradient(transparent,rgba(10,6,5,.92))}
+    gap:4px;padding:14px 8px 8px;background:linear-gradient(transparent,rgba(10,6,5,.94) 40%,rgba(10,6,5,.96))}
   .year-rail a{border-left:0;border-bottom:1px solid transparent;padding:6px 8px;font-size:10px}
   .year-rail a[aria-current="true"]{border-left:0;border-bottom-color:var(--blood-hi)}
-  .sec-hero{padding:0 22px 10vh}
-  h1{font-size:clamp(52px,16vw,92px)}
-  .sec-intro{padding:56vh 22px 12vh;min-height:auto}
-  .sec-era{min-height:auto;padding:56vh 22px 18vh;align-items:flex-end}
-  .era-copy{width:100%;margin:0 !important}
-  .sec-solid{padding:12vh 22px 12vh}
+  .sec-hero{padding:0 22px 88px}
+  .hero-stage{min-height:42vh;flex-basis:42vh}
+  h1{font-size:clamp(48px,14vw,84px)}
+  .sec-intro{padding:62vh 22px 12vh;min-height:auto}
+  .sec-era{min-height:auto;padding:64vh 22px 120px;align-items:flex-end}
+  .era-copy{width:100%;margin:0 !important;padding:28px 4px 28px;
+    background:linear-gradient(180deg,transparent,rgba(10,6,5,.92) 18%,var(--bg) 42%)}
+  .sec-solid{padding:12vh 22px 96px}
   .pickers{grid-template-columns:1fr;gap:12px}
   .vs{display:none}
   .cmp-row{grid-template-columns:1fr 1fr;gap:6px}
@@ -222,6 +226,7 @@ h1 .blood{color:var(--blood-hi)}
   </nav>
 
   <section class="sec sec-hero" id="hero" data-pose="hero">
+    <div class="hero-stage" aria-hidden="true"></div>
     <div class="hero-bottom">
       <p class="kicker" data-i="kicker">Un análisis de afiches</p>
       <h1 data-i-html="title">Cómo se ve<br><span class="blood">el miedo</span></h1>
@@ -515,7 +520,7 @@ h1 .blood{color:var(--blood-hi)}
   ERAS.forEach(e=>{ e.m=metricsAt(e.year); });
 
   const POSES={
-    hero:{cam:[0,0.62,6.15],look:[0,0.42,0],obj:[0,0.95,0],rot:[0,0,0],scale:0.78,wall:1,alpha:1},
+    hero:{cam:[0,0.5,6.28],look:[0,0.22,0],obj:[0,1.05,0],rot:[0,0,0],scale:0.74,wall:1,alpha:1},
     intro:{cam:[0.6,0.5,5.6],look:[0,0.1,0],obj:[0,0.1,0],rot:[0,-0.5,0],scale:0.88,wall:0.72,alpha:0.3},
     eraL:{cam:[1.5,0.32,5.1],look:[0.35,0.02,0],obj:[1.38,0,0],rot:[0,0,0],scale:1,wall:0.88,alpha:1},
     eraR:{cam:[-1.5,0.32,5.1],look:[-0.35,0.02,0],obj:[-1.38,0,0],rot:[0,0,0],scale:1,wall:0.88,alpha:1},
@@ -623,11 +628,11 @@ h1 .blood{color:var(--blood-hi)}
     };
     if(innerWidth<768){
       if(name==='eraL'||name==='eraR'){
-        p.cam=[0,0.12,5.55]; p.look=[0,-0.22,0]; p.obj=[0,-0.62,0]; p.scale=0.92;
+        p.cam=[0,0.4,5.7]; p.look=[0,0.28,0]; p.obj=[0,0.72,0]; p.scale=0.74;
       } else if(name==='hero'){
-        p.cam=[0,0.48,6.35]; p.look=[0,0.28,0]; p.obj=[0,0.72,0]; p.scale=0.68;
+        p.cam=[0,0.42,6.55]; p.look=[0,0.05,0]; p.obj=[0,0.95,0]; p.scale=0.56;
       } else if(name==='intro'){
-        p.cam=[0,0.18,5.85]; p.look=[0,-0.2,0]; p.obj=[0,-0.42,0]; p.rot=[0,-0.28,0]; p.scale=0.82;
+        p.cam=[0,0.36,5.9]; p.look=[0,0.2,0]; p.obj=[0,0.55,0]; p.rot=[0,-0.22,0]; p.scale=0.72;
       } else if(name==='metricas'){
         p.obj=[0,2.4,-0.8]; p.cam=[0,1.05,6.8];
       }
@@ -766,11 +771,7 @@ h1 .blood{color:var(--blood-hi)}
   };
 
   function canWebGL(){
-    if(typeof THREE==='undefined') return false;
-    try{
-      const c=document.createElement('canvas');
-      return !!(c.getContext('webgl')||c.getContext('experimental-webgl'));
-    }catch(e){ return false; }
+    return typeof THREE!=='undefined' && typeof WebGLRenderingContext!=='undefined';
   }
 
   let renderer, scene, camera, card, frontMat, backMat, wrapper, textures=[];
@@ -791,22 +792,28 @@ h1 .blood{color:var(--blood-hi)}
   }
 
   function makeCard(){
-    const W=1.02, H=1.53, T=0.028;
+    const W=1.02, H=1.53, T=0.032;
     const group=new THREE.Group();
     const geo=new THREE.PlaneGeometry(W,H);
-    frontMat=new THREE.MeshBasicMaterial({map:textures[0], transparent:true, opacity:1});
-    backMat=new THREE.MeshBasicMaterial({map:textures[0], transparent:true, opacity:1});
+    const matOpts={
+      map:textures[0], color:0xffffff, transparent:true, opacity:1,
+      polygonOffset:true, polygonOffsetFactor:-2, polygonOffsetUnits:-2
+    };
+    frontMat=new THREE.MeshBasicMaterial(matOpts);
+    backMat=new THREE.MeshBasicMaterial(Object.assign({}, matOpts));
     const front=new THREE.Mesh(geo, frontMat);
     const back=new THREE.Mesh(geo, backMat);
     back.rotation.y=Math.PI;
-    front.position.z=T/2;
-    back.position.z=-T/2;
+    front.position.z=T/2+0.0015;
+    back.position.z=-(T/2+0.0015);
+    /* Thin card core: slightly smaller than the planes so its front/back
+       never z-fight the artwork; only the rim shows on a 180° flip. */
     const edge=new THREE.Mesh(
-      new THREE.BoxGeometry(W,H,T),
-      new THREE.MeshBasicMaterial({color:0x2a1a10})
+      new THREE.BoxGeometry(W-0.02, H-0.02, T),
+      new THREE.MeshBasicMaterial({color:0x1a1008})
     );
     const frameMat=new THREE.MeshBasicMaterial({color:0x6b4a28});
-    const ft=0.055, fd=0.04;
+    const ft=0.055, fd=0.046;
     const mk=(w,h,x,y)=>{
       const m=new THREE.Mesh(new THREE.BoxGeometry(w,h,fd), frameMat);
       m.position.set(x,y,0); return m;
@@ -847,11 +854,15 @@ h1 .blood{color:var(--blood-hi)}
   function loadTextures(done){
     const loader=new THREE.TextureLoader();
     let left=ERAS.length;
-    textures=ERAS.map((e,i)=>{
-      const tex=loader.load(e.img, ()=>{ if(--left<=0) done(); }, undefined, ()=>{ if(--left<=0) done(); });
+    textures=ERAS.map(e=>{
+      const tex=loader.load(e.img, t=>{
+        t.colorSpace=THREE.SRGBColorSpace;
+        t.minFilter=THREE.LinearFilter;
+        if(renderer) t.anisotropy=renderer.capabilities.getMaxAnisotropy();
+        if(--left<=0 && done) done();
+      }, undefined, ()=>{ if(--left<=0 && done) done(); });
       tex.colorSpace=THREE.SRGBColorSpace;
       tex.minFilter=THREE.LinearFilter;
-      tex.anisotropy=4;
       return tex;
     });
   }
