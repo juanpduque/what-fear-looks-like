@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en" class="demo-page">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VHS Decompose — Halloween · What Fear Looks Like</title>
+<meta name="description" content="Scroll demo: one Halloween (1978) VHS sleeve, measured with real corpus metrics.">
+<meta name="theme-color" content="#07080b">
+<link rel="icon" type="image/png" href="../../assets/pa-mark.png">
+<script>
+(function(){
+  var q=new URLSearchParams(location.search);
+  var langQ=q.get('lang');
+  var s=localStorage.getItem('aof-lang');
+  var nav=(navigator.language||'en').toLowerCase();
+  var lang=(langQ==='es'||langQ==='en')?langQ:(s==='es'||s==='en')?s:(nav.indexOf('es')===0?'es':'en');
+  document.documentElement.lang=lang;
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="demo.css">
+</head>
+<body class="demo-page">
+<div id="loader" aria-live="polite">
+  <p><span class="pulse">●</span> loading Halloween 1978<br>poster.jpg · corpus metrics</p>
+</div>
+
+<div id="stage" aria-hidden="true"></div>
+<div class="fx" aria-hidden="true">
+  <div class="fx-vignette"></div>
+  <div class="fx-scan"></div>
+  <div class="fx-grain"></div>
+</div>
+<div id="overlays" aria-hidden="true"></div>
+<div id="metric-counter" aria-hidden="true"></div>
+
+<div class="chrome">
+  <header class="topbar">
+    <a class="brand" href="../../index.html#exhibit-a" data-demo-essay-link>
+      <img src="../../assets/pulp-analytics-red.png" alt="Pulp Analytics">
+      <span class="brand-meta"><span data-i18n="brand_line1">What Fear Looks Like</span><br><b data-i18n="brand_line2">demo · VHS decompose</b></span>
+    </a>
+    <nav class="nav-links">
+      <a href="../../index.html#exhibit-a" data-demo-essay-link data-i18n="back_essay">← essay</a>
+    </nav>
+  </header>
+  <footer class="hud-bottom">
+    <div class="progress-wrap">
+      <div class="act-label" id="act-label">I · Objeto</div>
+      <div class="progress-label" id="beat-label">TRACK 01</div>
+      <div class="progress" aria-hidden="true"><i id="bar"></i></div>
+    </div>
+    <div class="tape-stamp" id="tape-stamp">SP · 1978 · id 948</div>
+  </footer>
+</div>
+
+<div class="essay-outro-bar" id="essay-outro" hidden aria-hidden="true">
+  <a class="essay-outro-link" href="../../index.html#part-i" data-demo-essay-continue>Continue the full essay →</a>
+</div>
+
+<main id="scroll-track"></main>
+
+<script type="importmap">
+{
+  "imports": {
+    "three": "./three.module.js"
+  }
+}
+</script>
+<script type="module" src="./demo.js"></script>
+</body>
+</html>
