@@ -33,6 +33,8 @@ pipeline/data/qa/jobs_dashboard/
 site/jobs-dashboard/status.json
 site/jobs-dashboard/events.log
 site/jobs-dashboard/*.log
+site/node_modules/
+site/dist/
 pipeline/data/_aws_pull/
 pipeline/data/posters_multi/
 pipeline/data/creature_detect_preview/
@@ -66,3 +68,4 @@ site/tv-movie-review.html
 pipeline/data/rekognition.log
 pipeline/data/title_boxes.log
 pipeline/data/title_boxes_rekognition.log
+_site_pages/

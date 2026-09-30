@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - "site/**"
+      - "scripts/prepare-pages.sh"
       - ".github/workflows/pages.yml"
   workflow_dispatch:
 
@@ -26,12 +27,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: site/package-lock.json
       - name: Configure Pages
         uses: actions/configure-pages@v5
+      - name: Prepare deploy artifact
+        run: bash scripts/prepare-pages.sh
       - name: Upload site/
         uses: actions/upload-pages-artifact@v3
         with:
-          path: site
+          path: _site_pages
       - name: Deploy
         id: deployment
         uses: actions/deploy-pages@v4

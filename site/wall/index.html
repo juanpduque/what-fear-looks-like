@@ -1,0 +1,711 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cómo se ve el miedo — Wall cut · Pulp Analytics</title>
+<meta name="description" content="El terror no se volvió más aterrador. Bajó la voz. Un scrollytelling de 37,829 afiches de terror (1897–2028).">
+<meta name="theme-color" content="#0a0605">
+<link rel="icon" type="image/png" href="../assets/pa-mark.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://image.tmdb.org" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Mono:ital,wght@0,400;0,500;1,400&family=Spectral:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#0a0605; --bone:#efe6d8; --blood:#a4161a; --blood-hi:#e5383b;
+  --dim:#9a8f82; --display:'Bebas Neue',Impact,sans-serif;
+  --mono:'DM Mono',Menlo,monospace; --serif:'Spectral',Georgia,serif;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-bottom:56px}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+html,body{background:var(--bg);color:var(--bone);font-family:var(--serif);font-size:18px;line-height:1.6}
+body{overflow-x:hidden}
+::selection{background:var(--blood);color:#fff}
+:focus-visible{outline:2px solid var(--blood-hi);outline-offset:3px}
+
+.skip-link{position:absolute;left:12px;top:12px;z-index:30;padding:10px 14px;
+  font-family:var(--mono);font-size:12px;letter-spacing:.04em;text-decoration:none;
+  color:var(--bg);background:var(--bone);transform:translateY(-160%)}
+.skip-link:focus,.skip-link:focus-visible{transform:none}
+
+#wall-bg{position:fixed;inset:0;z-index:0;pointer-events:none;background:#0a0605 url(images/hero-wall.png) 42% 46%/cover no-repeat}
+#tint{position:fixed;inset:0;z-index:0;pointer-events:none;mix-blend-mode:overlay;opacity:.28;background:#3b4a2f}
+canvas#scene{position:fixed;inset:0;z-index:1;width:100%;height:100%;display:block;pointer-events:none}
+#poster2d{position:fixed;inset:0;z-index:1;pointer-events:none;display:none}
+#poster2d img{position:absolute;height:min(68vh,820px);width:auto;left:50%;top:10vh;transform:translateX(-50%);
+  filter:drop-shadow(0 28px 50px rgba(0,0,0,.75));opacity:1;border:10px solid #1c120c;box-shadow:0 0 0 1px #6a4e2e}
+body.no-webgl #poster2d{display:block}
+body.no-webgl canvas#scene{display:none}
+#vignette{position:fixed;inset:0;z-index:1;pointer-events:none;
+  background:radial-gradient(ellipse 72% 68% at 50% 42%, transparent 40%, rgba(10,6,5,.55) 100%)}
+#grain{position:fixed;inset:-20%;z-index:1;pointer-events:none;opacity:.11;mix-blend-mode:overlay;
+  background:url(images/grain.png) 0 0/280px 280px;animation:grain 0.45s steps(4) infinite}
+html[data-pose="evidence"] #grain{opacity:.04}
+html[data-pose="evidence"] #vignette{opacity:.7}
+html[data-pose="specimen"] #vignette{opacity:.82}
+html[data-pose="specimen"] #grain{opacity:.08}
+@keyframes grain{0%{transform:translate(0,0)}25%{transform:translate(-2%,1%)}50%{transform:translate(1%,-2%)}100%{transform:translate(-1%,2%)}}
+@media (prefers-reduced-motion:reduce){#grain{animation:none}}
+
+#ui{position:relative;z-index:2}
+
+.topnav{position:fixed;top:0;left:0;right:0;z-index:6;display:flex;align-items:center;justify-content:space-between;
+  padding:16px 22px 12px;pointer-events:none;background:linear-gradient(180deg,rgba(10,6,5,.72),transparent)}
+.topnav a,.topnav button{pointer-events:auto}
+.brand{font-family:var(--display);font-size:22px;letter-spacing:.12em;color:var(--bone);text-decoration:none}
+.brand span{color:var(--blood-hi)}
+.nav-links{display:flex;gap:18px;align-items:center;font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase}
+.nav-links a{color:var(--dim);text-decoration:none}
+.nav-links a:hover{color:var(--bone)}
+.lang-switch{display:flex;border:1px solid rgba(239,230,216,.25);margin-left:8px}
+.lang-switch button{background:transparent;border:0;color:var(--dim);font-family:var(--mono);font-size:11px;
+  letter-spacing:.12em;padding:5px 9px;cursor:pointer}
+.lang-switch button[aria-pressed="true"]{background:var(--bone);color:var(--bg)}
+
+.year-rail{position:fixed;left:18px;top:50%;transform:translateY(-50%);z-index:6;display:flex;flex-direction:column;gap:8px}
+.year-rail a{font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--dim);text-decoration:none;
+  padding:2px 0;border-left:1px solid transparent;padding-left:10px;white-space:nowrap}
+.year-rail a[aria-current="true"]{color:var(--blood-hi);border-left-color:var(--blood-hi)}
+.year-rail a:hover{color:var(--bone)}
+.year-rail .rail-era,.year-rail .rail-gap{display:none}
+.year-rail.is-eras .rail-era{display:block}
+.year-rail.is-eras .rail-gap{display:block;height:10px;margin:4px 0;border-left:1px solid rgba(239,230,216,.22);padding:0}
+
+.sec{position:relative;min-height:100vh}
+.sec-hero{min-height:100svh;display:flex;flex-direction:column;justify-content:flex-end;padding:0 7vw 6vh 96px}
+.hero-stage{flex:1 1 58vh;min-height:52vh;pointer-events:none}
+.hero-bottom{max-width:min(36vw,440px);position:relative;z-index:2}
+.kicker{font-family:var(--mono);font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--blood-hi);margin-bottom:.6em}
+h1{font-family:var(--display);font-size:clamp(42px,5.8vw,86px);line-height:.86;letter-spacing:.02em;font-weight:400;
+  color:var(--bone);text-transform:uppercase;text-shadow:0 2px 28px rgba(10,6,5,.92)}
+h1 .blood{color:var(--blood-hi)}
+.dek{margin-top:1.1em;max-width:540px;color:var(--bone);font-size:clamp(16px,1.7vw,20px);text-shadow:0 2px 18px #0a0605}
+.byline{margin-top:.8em;font-family:var(--mono);font-size:12px;color:var(--dim)}
+.byline b{color:var(--bone);font-weight:500}
+.scroll-cue{display:inline-block;margin-top:2.2em;font-family:var(--mono);font-size:12px;letter-spacing:.2em;
+  text-transform:uppercase;color:var(--bone);text-decoration:none;opacity:.8}
+.scroll-cue:hover{color:var(--blood-hi)}
+.sc-arrow{display:inline-block;margin-left:8px;animation:bob 1.6s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(6px)}}
+@media (prefers-reduced-motion:reduce){.sc-arrow{animation:none}}
+
+.sec-intro{min-height:160vh;display:flex;align-items:center;padding:12vh 8vw}
+.prose{max-width:520px;text-shadow:0 2px 22px rgba(10,6,5,.95),0 0 40px rgba(10,6,5,.7)}
+.prose p{margin:0 0 1.25em}
+.prose .drop{font-size:1.15em}
+
+.sec-era{min-height:155vh;display:flex;align-items:center;padding:10vh 7vw}
+.specimen-track{height:520vh;min-height:520vh;padding:0}
+.specimen-pin{position:sticky;top:0;height:100vh;pointer-events:none}
+.specimen-pin > *{pointer-events:auto}
+.specimen-chrome{position:absolute;top:10vh;left:96px;z-index:3;max-width:min(22vw,260px);
+  text-shadow:0 2px 24px rgba(10,6,5,.95)}
+.specimen-chrome h2{font-family:var(--display);font-size:clamp(28px,3.2vw,42px);line-height:.88;letter-spacing:.04em;
+  text-transform:uppercase;margin:.12em 0 .25em;font-weight:400}
+.specimen-hint{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);margin-top:.55em}
+.specimen-stage{position:fixed;left:0;top:0;width:420px;height:630px;z-index:2;pointer-events:none;
+  opacity:0;visibility:hidden}
+html[data-pose="specimen"] .specimen-stage{opacity:1;visibility:visible}
+.specimen-sheet{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+.spec-ov{position:absolute;inset:0;opacity:0;transition:opacity .45s ease;pointer-events:none}
+.spec-ov.on{opacity:1}
+.spec-box{position:absolute;border:1.5px dashed rgba(229,56,59,.85);border-radius:2px}
+.spec-lab{position:absolute;font-family:var(--mono);font-size:10px;letter-spacing:.1em;text-transform:uppercase;
+  background:rgba(10,6,5,.88);border:1px solid rgba(239,230,216,.28);padding:4px 8px;color:var(--bone);white-space:nowrap}
+.spec-scrim{position:absolute;left:0;right:0;bottom:0;height:72%;
+  background:linear-gradient(180deg,rgba(229,56,59,.16),transparent 18%);
+  border-top:1.5px dashed var(--blood-hi)}
+.specimen-dock{position:absolute;left:0;right:0;top:calc(100% + var(--frame,18px) + 12px);pointer-events:auto}
+.specimen-film-port{overflow:hidden;
+  -webkit-mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);
+  mask-image:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent)}
+.specimen-film{display:flex;gap:14px;will-change:transform}
+.spec-card{flex:0 0 92%;padding:8px 12px 8px;background:rgba(10,6,5,.92);
+  border-left:2px solid var(--blood);min-height:0}
+.spec-card .spec-idx{font-family:var(--mono);font-size:10px;letter-spacing:.18em;text-transform:uppercase;color:var(--blood-hi)}
+.spec-card h3{font-family:var(--display);font-size:clamp(18px,2vw,24px);line-height:.9;letter-spacing:.04em;
+  text-transform:uppercase;font-weight:400;margin:.08em 0 0}
+.spec-card .spec-val{font-family:var(--display);font-size:24px;line-height:1;color:var(--blood-hi);float:right;margin:0 0 0 .4em}
+.spec-card p.body{display:none}
+.specimen-nav{display:flex;align-items:center;justify-content:center;gap:14px;margin-top:10px;white-space:nowrap}
+.specimen-dots{display:flex;gap:8px}
+.specimen-dots button{width:8px;height:8px;padding:0;border:0;border-radius:50%;background:rgba(239,230,216,.28);cursor:pointer}
+.specimen-dots button[aria-current="true"]{background:var(--blood-hi);transform:scale(1.25)}
+@media (prefers-reduced-motion:reduce){
+  .specimen-track{height:auto;min-height:auto}
+  .specimen-pin{position:relative;height:auto;min-height:100vh;padding:12vh 7vw 10vh 96px}
+  .specimen-chrome{position:relative;top:auto;left:auto;max-width:460px;margin-bottom:18px}
+  .specimen-stage{position:relative;left:auto !important;top:auto !important;width:min(540px,100%) !important;
+    height:auto !important;opacity:1;visibility:visible;transform:none}
+  .specimen-sheet{position:relative;height:auto;min-height:0}
+  .spec-ov{display:none}
+  .specimen-dock{position:relative;top:auto;margin-top:16px}
+  .specimen-film-port{-webkit-mask-image:none;mask-image:none}
+  .specimen-film{flex-wrap:wrap;transform:none !important;gap:12px}
+  .spec-card{flex:1 1 240px}
+  .spec-card p.body{display:block;font-size:13px;line-height:1.4;color:var(--bone);margin:.25em 0 0;clear:both}
+  .specimen-nav{white-space:normal}
+}
+.era-copy{width:min(42vw,460px);text-shadow:0 2px 24px rgba(10,6,5,.95),0 0 42px rgba(10,6,5,.85)}
+.era-L .era-copy{margin-right:auto}
+.era-R .era-copy{margin-left:auto}
+.era-copy h2{font-family:var(--display);font-size:clamp(42px,7vw,84px);line-height:.88;letter-spacing:.02em;
+  text-transform:uppercase;margin:.15em 0 .25em;font-weight:400}
+#era-5 .era-copy h2{text-transform:none;letter-spacing:.04em}
+.era-copy .tag{font-family:var(--mono);font-size:13px;letter-spacing:.08em;color:var(--blood-hi);font-style:italic;margin-bottom:1em}
+.era-copy .body{color:var(--bone);margin-bottom:1.2em}
+.stats{list-style:none;font-family:var(--mono);font-size:12px;letter-spacing:.04em;color:var(--dim);display:grid;gap:6px}
+.stats b{color:var(--bone);font-weight:500}
+
+.sec-solid{background:var(--bg);min-height:auto;padding:18vh 8vw 16vh}
+.sec-solid h2{font-family:var(--display);font-size:clamp(48px,8vw,96px);line-height:.9;letter-spacing:.03em;
+  text-transform:uppercase;font-weight:400;margin:.2em 0 .6em}
+.lead{max-width:640px;margin-bottom:2.4em;color:var(--bone)}
+
+.metrics-grid{display:grid;grid-template-columns:280px 1fr;gap:48px 64px;align-items:center;max-width:1100px}
+.gauge-wrap{text-align:center}
+#gauge{width:260px;height:260px;display:block;margin:0 auto}
+.gauge-label{font-family:var(--mono);font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--dim);margin-top:8px}
+.gauge-val{font-family:var(--display);font-size:42px;line-height:1;color:var(--bone)}
+.gauge-val span{color:var(--blood-hi)}
+.bars{display:grid;gap:22px}
+.bar-row label{display:flex;justify-content:space-between;font-family:var(--mono);font-size:11px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--dim);margin-bottom:7px}
+.bar-row label b{color:var(--bone);font-weight:500}
+.track{height:8px;background:rgba(239,230,216,.08);position:relative}
+.fill{height:100%;background:var(--bone);width:0}
+.fill.blood{background:var(--blood)}
+.fill.hi{background:var(--blood-hi)}
+.swatches{display:flex;gap:10px;margin-top:8px}
+.swatch{width:46px;height:46px;border:1px solid rgba(239,230,216,.2)}
+.swatch-cap{font-family:var(--mono);font-size:10px;letter-spacing:.14em;text-transform:uppercase;color:var(--dim);margin-top:18px}
+
+.compare{max-width:820px}
+.pickers{display:grid;grid-template-columns:1fr auto 1fr;gap:16px;align-items:end;margin-bottom:28px}
+.pickers label{font-family:var(--mono);font-size:11px;letter-spacing:.16em;text-transform:uppercase;color:var(--dim);display:block;margin-bottom:8px}
+.pickers select{width:100%;background:#140c0a;color:var(--bone);border:1px solid rgba(239,230,216,.25);
+  font-family:var(--display);font-size:28px;letter-spacing:.04em;padding:10px 12px;text-transform:uppercase}
+.vs{font-family:var(--display);font-size:28px;color:var(--blood-hi);padding-bottom:8px}
+.cmp-row{display:grid;grid-template-columns:1.1fr 1fr 1fr;gap:12px;padding:14px 0;border-top:1px solid rgba(239,230,216,.12);
+  font-family:var(--mono);font-size:13px}
+.cmp-row .name{color:var(--dim);letter-spacing:.1em;text-transform:uppercase;font-size:11px;align-self:center}
+.cmp-row .val{font-family:var(--display);font-size:34px;line-height:1;letter-spacing:.02em}
+.cmp-row .val.win{color:var(--blood-hi)}
+
+.sec-close .prose{max-width:640px;margin:0 auto;text-align:center;text-shadow:none}
+.sec-close h2{margin-bottom:.5em}
+.sec-close .closing{font-size:1.15em;margin-bottom:1.2em}
+.links{margin-top:2em;font-family:var(--mono);font-size:12px;letter-spacing:.08em}
+.links a{color:var(--bone);margin:0 10px}
+.links a:hover{color:var(--blood-hi)}
+
+.wall-footer{padding:48px 24px 72px;text-align:center;font-family:var(--mono);font-size:11px;color:var(--dim);letter-spacing:.04em;
+  background:var(--bg);position:relative;z-index:2}
+.wall-footer a{color:var(--dim)}
+.tmdb{margin-top:16px;max-width:560px;margin-left:auto;margin-right:auto;line-height:1.5}
+
+#preloader{position:fixed;inset:0;z-index:20;background:#0a0605;display:grid;place-items:center;transition:opacity .7s ease}
+#preloader.gone{opacity:0;pointer-events:none}
+.film-count{width:150px;height:150px;border-radius:50%;border:2px solid var(--bone);display:grid;place-items:center;position:relative}
+.film-count::before{content:"";position:absolute;inset:-10px;border-radius:50%;border:1px dashed rgba(239,230,216,.25);
+  animation:spin 3s linear infinite}
+.film-count::after{content:"";position:absolute;inset:0;border-radius:50%;
+  background:conic-gradient(var(--blood-hi) var(--sweep,0deg), transparent 0);opacity:.35;animation:wipe 0.7s linear infinite}
+@keyframes spin{to{transform:rotate(360deg)}}
+@keyframes wipe{to{transform:rotate(360deg)}}
+@media (prefers-reduced-motion:reduce){.film-count::before,.film-count::after{animation:none}}
+#count-num{font-family:var(--display);font-size:84px;line-height:1;position:relative;z-index:1}
+
+.hud-gauge{position:fixed;right:22px;bottom:28px;z-index:6;width:148px;text-align:center;
+  pointer-events:none;opacity:0;transition:opacity .4s ease}
+.hud-gauge.is-on{opacity:1}
+.hud-gauge #gauge{width:132px;height:132px;margin:0 auto}
+.hud-gauge .gauge-val{font-size:28px}
+.hud-gauge .gauge-label{font-size:9px;letter-spacing:.14em}
+
+.sec-evidence{background:linear-gradient(90deg,rgba(10,6,5,.72) 0%,rgba(10,6,5,.55) 50%,rgba(10,6,5,.72) 100%);
+  min-height:auto;padding:16vh 7vw 14vh;position:relative;z-index:2;
+  display:flex;flex-direction:column;align-items:center}
+.chart-rail{width:min(960px,calc(100% - 8px));margin:0 auto 22px;padding:16px 20px 12px;
+  background:rgba(10,6,5,.94);border-left:2px solid var(--blood);
+  box-shadow:0 22px 54px rgba(0,0,0,.45);isolation:isolate}
+.chart-rail .chart-svg{display:block;width:100%;max-width:none;height:auto;overflow:visible}
+.chart-rail .note{margin:0 0 10px;max-width:none}
+.chart-rail .chart-legend{margin:10px 0 0;max-width:none}
+.sec-evidence .chart-svg .domain{stroke:rgba(239,230,216,.22)}
+.sec-evidence .chart-svg .tick line{stroke:rgba(239,230,216,.14)}
+.sec-evidence .chart-svg .tick text,.sec-evidence .chart-svg .axis-label{fill:var(--bone);font-family:var(--mono);font-size:12px}
+.sec-evidence .note{font-family:var(--mono);font-size:11px;letter-spacing:.04em;color:var(--dim);margin:10px 0 18px}
+.method-link{display:inline-block;margin-top:8px;font-family:var(--mono);font-size:11px;letter-spacing:.12em;
+  text-transform:uppercase;color:var(--blood-hi);text-decoration:none;align-self:center}
+.method-link:hover{color:var(--bone)}
+.hud-stats{list-style:none;display:grid;gap:8px;margin:1.2em 0 0;font-family:var(--mono);font-size:13px;color:var(--dim)}
+.hud-stats b{color:var(--bone);font-weight:500}
+
+.strip{margin-top:28px;width:min(1100px,100%);max-width:1100px}
+.strip-row{display:grid;grid-template-columns:110px repeat(6,minmax(0,1fr));gap:8px;align-items:end;margin-bottom:12px}
+.strip-tag{font-family:var(--mono);font-size:10px;letter-spacing:.12em;text-transform:uppercase;color:var(--dim);
+  display:flex;align-items:center;gap:8px}
+.strip-dot{width:8px;height:8px;border-radius:50%;flex:none}
+.strip-card{display:block;text-decoration:none;color:inherit}
+.strip-card img{width:100%;aspect-ratio:2/3;object-fit:cover;background:#140c0a;display:block;filter:saturate(.9)}
+.strip-card span{display:block;margin-top:6px;font-family:var(--mono);font-size:10px;letter-spacing:.04em;color:var(--dim);line-height:1.3}
+.strip-card b{color:var(--bone);font-weight:500}
+.strip-head{font-family:var(--mono);font-size:10px;color:var(--dim);text-align:center}
+.strip-soft{display:none}
+.strip.is-open .strip-soft{display:grid}
+.strip-more{appearance:none;background:transparent;border:1px solid rgba(239,230,216,.25);color:var(--bone);
+  font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;padding:8px 12px;cursor:pointer;margin:8px 0}
+.spark-row{display:grid;grid-template-columns:1fr 1fr;gap:24px;width:min(960px,100%);max-width:960px;margin:0 auto 8px}
+.spark-row .chart-rail{width:100%;margin-bottom:0}
+.sec-evidence h2,.sec-solid h2{text-shadow:none}
+.sec-recap{min-height:92vh}
+.chart-legend{display:flex;flex-wrap:wrap;gap:14px 22px;margin:8px 0 4px;font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--dim)}
+.chart-legend i{display:inline-block;width:18px;height:8px;margin-right:6px;vertical-align:middle}
+.chart-legend .lg-dash{background:transparent;border-top:2px dashed var(--bone);height:0;width:18px}
+
+@media(max-width:900px){
+  .metrics-grid{grid-template-columns:1fr;gap:32px}
+  .gauge-wrap{order:-1}
+  .spark-row{grid-template-columns:1fr}
+  .strip-row{grid-template-columns:repeat(3,minmax(0,1fr))}
+  .strip-tag,.strip-head{grid-column:1/-1}
+  .chart-rail{width:100%;max-width:none}
+}
+@media(max-width:768px){
+  .topnav{padding:12px 14px}
+  .nav-links a:not(.brand){display:none}
+  .nav-links{gap:8px}
+  .year-rail{left:0;right:0;top:auto;bottom:0;transform:none;flex-direction:row;justify-content:center;
+    gap:2px;padding:10px 4px 72px;background:linear-gradient(transparent,rgba(10,6,5,.94) 40%,rgba(10,6,5,.96));
+    overflow-x:auto;flex-wrap:nowrap}
+  .year-rail a{border-left:0;border-bottom:1px solid transparent;padding:6px 6px;font-size:9px}
+  .year-rail a[aria-current="true"]{border-left:0;border-bottom-color:var(--blood-hi)}
+  .year-rail.is-eras .rail-era{display:inline}
+  .year-rail.is-eras .rail-gap{display:none}
+  .hud-gauge{right:10px;bottom:88px;width:110px}
+  .hud-gauge #gauge{width:96px;height:96px}
+  .sec-hero{padding:0 22px 88px}
+  .hero-stage{min-height:42vh;flex-basis:42vh}
+  h1{font-size:clamp(44px,12vw,72px)}
+  .hero-bottom{max-width:none}
+  .sec-intro{padding:62vh 22px 12vh;min-height:auto}
+  .sec-era{min-height:auto;padding:64vh 22px 120px;align-items:flex-end}
+  .sec-recap{padding:52vh 22px 96px}
+  .era-copy{width:100%;margin:0 !important;padding:28px 4px 28px;
+    background:linear-gradient(180deg,transparent,rgba(10,6,5,.92) 18%,var(--bg) 42%)}
+  .sec-evidence{background:linear-gradient(180deg,rgba(10,6,5,.45),rgba(10,6,5,.9) 28%);padding:8vh 22px 120px}
+  .chart-rail{width:100%;max-width:none}
+  .sec-solid{padding:12vh 22px 96px}
+  .pickers{grid-template-columns:1fr;gap:12px}
+  .vs{display:none}
+  .cmp-row{grid-template-columns:1fr 1fr;gap:6px}
+  .cmp-row .name{grid-column:1/-1}
+  body.no-webgl #poster2d img{height:46vh;top:8vh}
+  .specimen-track{height:400vh;min-height:400vh}
+  .specimen-pin{padding:0}
+  .specimen-chrome{left:16px;right:16px;max-width:none;top:8vh}
+  .spec-ov{display:none}
+  .specimen-nav{white-space:normal;padding-bottom:8px}
+}
+</style>
+</head>
+<body>
+<a class="skip-link" href="#intro" data-i="skip">Saltar al contenido</a>
+
+<div id="wall-bg" aria-hidden="true"></div>
+<div id="tint" aria-hidden="true"></div>
+<canvas id="scene"></canvas>
+<div id="poster2d" aria-hidden="true"><img id="poster2d-img" alt=""></div>
+<div id="vignette" aria-hidden="true"></div>
+<div id="grain" aria-hidden="true"></div>
+
+<div id="preloader" aria-hidden="true">
+  <div class="film-count"><span id="count-num">3</span></div>
+</div>
+
+<aside class="hud-gauge" id="hud-gauge" aria-live="polite">
+  <canvas id="gauge" width="264" height="264"></canvas>
+  <div class="gauge-val"><span id="gauge-num">—</span></div>
+  <div class="gauge-label" id="gauge-label"></div>
+</aside>
+
+<div id="ui">
+  <nav class="topnav" aria-label="Principal">
+    <a class="brand" href="#hero">100×<span>MIEDO</span></a>
+    <div class="nav-links">
+      <a href="#specimen" data-i="nav_spec">espécimen</a>
+      <a href="#act-color" data-i="nav_acts">actos</a>
+      <a href="#eras" data-i="nav_eras">eras</a>
+      <a href="#cara" data-i="nav_cara">cara a cara</a>
+      <div class="lang-switch" role="group" aria-label="Idioma">
+        <button type="button" data-lang="es" aria-pressed="true">ES</button>
+        <button type="button" data-lang="en" aria-pressed="false">EN</button>
+      </div>
+    </div>
+  </nav>
+
+  <nav class="year-rail" aria-label="Actos y años">
+    <a class="rail-act" href="#specimen">1978</a>
+    <a class="rail-act" href="#act-color" data-i="rail_color">Color</a>
+    <a class="rail-act" href="#act-dark" data-i="rail_dark">Luz</a>
+    <a class="rail-act" href="#act-blood" data-i="rail_blood">Rojo</a>
+    <a class="rail-act" href="#act-faces" data-i="rail_faces">Rostro</a>
+    <a class="rail-act" href="#act-quiet" data-i="rail_quiet">Voz</a>
+    <a class="rail-act" href="#act-type" data-i="rail_type">Tipo</a>
+    <span class="rail-gap" aria-hidden="true"></span>
+    <a class="rail-era" href="#era-0">’31</a>
+    <a class="rail-era" href="#era-1">’54</a>
+    <a class="rail-era" href="#era-2">’68</a>
+    <a class="rail-era" href="#era-3">’78</a>
+    <a class="rail-era" href="#era-4">’99</a>
+    <a class="rail-era" href="#era-5">’18</a>
+  </nav>
+
+  <section class="sec sec-hero" id="hero" data-pose="hero">
+    <div class="hero-stage" aria-hidden="true"></div>
+    <div class="hero-bottom">
+      <p class="kicker" data-i="kicker">Un análisis de afiches</p>
+      <h1 data-i-html="title">Cómo se ve<br><span class="blood">el miedo</span></h1>
+      <p class="dek" data-i-html="dek">Medimos color, oscuridad, rostros y criaturas en <strong>37,829 afiches</strong> de 1897 a 2028.</p>
+      <p class="byline" data-i-html="byline">Por <b>Juan Pablo Duque</b> · Pulp Analytics · octubre 2026</p>
+      <a class="scroll-cue" href="#intro" data-i-html="scroll">Baja si te atreves <span class="sc-arrow" aria-hidden="true">↓</span></a>
+    </div>
+  </section>
+
+  <section class="sec sec-intro" id="intro" data-pose="intro" data-tex="0" data-needle="shout" data-year="1931">
+    <div class="prose">
+      <p class="drop" data-i="i1">Un día estaba en Netflix buscando una película de terror. Y algo me hizo click.</p>
+      <p data-i="i2">Los pósters se veían distintos a lo que recordaba.</p>
+      <p data-i="i3">Cuando alquilaba terror en VHS, las cajas te gritaban. Colores vivos. Caras enormes. Rojo sangre. Tenías dos segundos para decidir. El afiche era toda la venta.</p>
+      <p data-i="i4">¿Y ahora? Los nuevos se ven callados. Oscuros. A veces solo negro con una palabra. Sin caras. Sin colores. Nada que llame la atención.</p>
+      <p data-i="i5">Así que empecé a preguntarme: ¿cuándo dejó el terror de gritar?</p>
+      <p data-i-html="i6">Decidí averiguarlo. Bajé <strong>37,829 afiches de terror</strong> — desde 1897 hasta 2028 — y los medí. Lo que encontré es raro: el terror no se volvió más aterrador. Bajó la voz.</p>
+      <p class="kicker" data-i="about_k">Sobre los datos</p>
+      <p data-i-html="about_p">De los ~72,000 títulos de terror en TMDB me quedé con <strong>37,829</strong> afiches en inglés con arte usable — 1897 a 2028. Solo inglés, sin Animación, sin Música. Luego medí cada uno igual.</p>
+    </div>
+  </section>
+
+  <section class="sec specimen-track" id="specimen" data-pose="specimen" data-tex="6" data-needle="dark" data-year="1978">
+    <div class="specimen-pin">
+      <div class="specimen-chrome">
+        <p class="kicker" data-i="spec_k">El espécimen</p>
+        <h2 data-i="spec_h">Halloween, 1978</h2>
+        <p class="tag" data-i="spec_tag">Una pesadilla, medida dos veces</p>
+        <p class="specimen-hint" data-i="spec_hint">Baja — las seis medidas viven en esta hoja →</p>
+      </div>
+      <div class="specimen-stage" id="specimen-stage">
+        <div class="specimen-sheet">
+          <div class="spec-ov on" data-beat="0">
+            <span class="spec-lab" style="bottom:8%;right:6%" data-i="spec_ov1">72% negro</span>
+          </div>
+          <div class="spec-ov" data-beat="1">
+            <div class="spec-box" style="left:5%;top:2%;width:90%;height:13%"></div>
+            <div class="spec-box" style="left:42%;top:24%;width:50%;height:34%"></div>
+            <span class="spec-lab" style="top:22%;right:4%" data-i="spec_ov2">rojo sangre 11%</span>
+          </div>
+          <div class="spec-ov" data-beat="2">
+            <div class="spec-box" style="left:42%;top:24%;width:50%;height:34%"></div>
+            <span class="spec-lab" style="top:22%;right:4%" data-i="spec_ov3">0 rostros · calabaza = cráneo</span>
+          </div>
+          <div class="spec-ov" data-beat="3">
+            <span class="spec-lab" style="top:48%;left:50%;transform:translateX(-50%)" data-i="spec_ov4">½ del brillo de 1978</span>
+          </div>
+          <div class="spec-ov" data-beat="4">
+            <div class="spec-box" style="left:5%;top:2%;width:90%;height:13%"></div>
+            <span class="spec-lab" style="top:17%;left:5%" data-i="spec_ov5">una gran palabra arriba</span>
+          </div>
+          <div class="spec-ov" data-beat="5">
+            <div class="spec-box" style="left:5%;top:2%;width:90%;height:13%"></div>
+            <span class="spec-lab" style="top:17%;left:5%" data-i="spec_ov6">el nombre es el afiche</span>
+          </div>
+        </div>
+        <div class="specimen-dock">
+          <div class="specimen-film-port">
+            <div class="specimen-film" id="specimen-film">
+              <article class="spec-card" data-needle="dark" data-val="72">
+                <p class="spec-val">72%</p>
+                <p class="spec-idx" data-i="spec_b1_k">01 · Oscuridad</p>
+                <h3 data-i="spec_b1_h">Negro</h3>
+                <p class="body" data-i="spec_b1_p">Casi tres cuartos de la hoja. Un cuchillo. Una calabaza. El resto es vacío.</p>
+              </article>
+              <article class="spec-card" data-needle="blood" data-val="11">
+                <p class="spec-val">11%</p>
+                <p class="spec-idx" data-i="spec_b2_k">02 · Rojo</p>
+                <h3 data-i="spec_b2_h">Sangre como acento</h3>
+                <p class="body" data-i="spec_b2_p">No es un diluvio. Es un corte: la calabaza y el título, no el fondo.</p>
+              </article>
+              <article class="spec-card" data-needle="faces" data-val="0">
+                <p class="spec-val">0</p>
+                <p class="spec-idx" data-i="spec_b3_k">03 · Rostros</p>
+                <h3 data-i="spec_b3_h">Cero caras humanas</h3>
+                <p class="body" data-i="spec_b3_p">La calabaza se lee como cráneo. El monstruo no necesita ojos.</p>
+              </article>
+              <article class="spec-card" data-needle="bright" data-val="18">
+                <p class="spec-val">½</p>
+                <p class="spec-idx" data-i="spec_b4_k">04 · Luz</p>
+                <h3 data-i="spec_b4_h">Más oscura que su año</h3>
+                <p class="body" data-i="spec_b4_p">Menos de la mitad del brillo medio de 1978. Iba años adelantada.</p>
+              </article>
+              <article class="spec-card" data-needle="shout" data-val="34">
+                <p class="spec-val">1</p>
+                <p class="spec-idx" data-i="spec_b5_k">05 · Voz</p>
+                <h3 data-i="spec_b5_h">Una palabra arriba</h3>
+                <p class="body" data-i="spec_b5_p">HALLOWEEN a 15 metros. El estante de videoclub no perdona.</p>
+              </article>
+              <article class="spec-card" data-needle="ornate" data-val="40">
+                <p class="spec-val">Aa</p>
+                <p class="spec-idx" data-i="spec_b6_k">06 · Letraje</p>
+                <h3 data-i="spec_b6_h">El nombre es el afiche</h3>
+                <p class="body" data-i="spec_b6_p">Las mismas seis medidas del siglo, en una sola caja. Ahora sí, el río.</p>
+              </article>
+            </div>
+          </div>
+          <div class="specimen-nav">
+            <div class="specimen-dots" id="specimen-dots" role="tablist" aria-label="Medidas de Halloween"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="sec sec-era era-R" id="act-color" data-pose="eraR" data-tex="1" data-needle="dark" data-year="1954">
+    <div class="era-copy">
+      <p class="kicker" data-i="c_k">Parte I · Río de color</p>
+      <h2 data-i="c_h">El negro se tomó el afiche</h2>
+      <p class="tag" data-i="c_tag">1950s cálidos → diluvio negro</p>
+      <p class="body" data-i="c_p">En los 50 el terror era rojo, naranja, calor pulp. Luego todo se volvió negro. Los 80 tienen un destello de azul neón. No dura. Gana el negro. Los colores cálidos nunca vuelven en serio.</p>
+    </div>
+  </section>
+  <section class="sec sec-evidence" id="ev-color" data-pose="evidence" data-tex="5" data-needle="dark" data-year="2018">
+    <div class="chart-rail">
+      <p class="note" data-i="c_n">n = 37,829 · cuota media de píxeles por década</p>
+      <svg class="chart-svg" id="chart-river" viewBox="0 0 960 280" role="img" aria-label="Color river"></svg>
+      <p class="chart-legend">
+        <span><i style="background:#e02430"></i><span data-i="band_reds">Rojos</span></span>
+        <span><i style="background:#e5a00d"></i><span data-i="band_warm">Cálidos</span></span>
+        <span><i style="background:#8fb05a"></i><span data-i="band_greens">Verdes</span></span>
+        <span><i style="background:#5a9eb0"></i><span data-i="band_blues">Azules</span></span>
+        <span><i style="background:#b08ad4"></i><span data-i="band_purples">Púrpuras</span></span>
+        <span><i style="background:#6a6560"></i><span data-i="band_dark">Oscuro</span></span>
+      </p>
+    </div>
+    <div class="strip" id="strip-color">
+      <button type="button" class="strip-more" id="color-more" aria-expanded="false" data-i="c_more">Mostrar las 6 familias</button>
+    </div>
+    <a class="method-link" href="../#part-i" data-i="method">Cómo se midió →</a>
+  </section>
+
+  <section class="sec sec-era era-L" id="act-dark" data-pose="eraL" data-tex="1" data-needle="bright" data-year="1960">
+    <div class="era-copy">
+      <p class="kicker" data-i="d_k">Parte II · Oscuridad</p>
+      <h2 data-i="d_h">La luz nunca volvió</h2>
+      <p class="tag" data-i="d_tag">Una montaña, no un tobogán</p>
+      <p class="body" data-i="d_p">El brillo sube hasta un pico alrededor de 1960 — era atómica, «¡MIRA! ¡ATERRADOR!» — y después el terror baja sesenta años seguidos. Sin rebote.</p>
+    </div>
+  </section>
+  <section class="sec sec-evidence" id="ev-dark" data-pose="evidence" data-tex="5" data-needle="bright" data-year="2020">
+    <div class="chart-rail">
+      <p class="note" data-i="d_n">n = 37,829 · brillo medio L* · media móvil 5 años</p>
+      <svg class="chart-svg" id="chart-dark" viewBox="0 0 960 260" role="img"></svg>
+    </div>
+    <div class="strip" id="strip-dark"></div>
+    <a class="method-link" href="../#darkness" data-i="method">Cómo se midió →</a>
+  </section>
+
+  <section class="sec sec-era era-R" id="act-blood" data-pose="eraR" data-tex="3" data-needle="red" data-year="1978">
+    <div class="era-copy">
+      <p class="kicker" data-i="b_k">Parte III · Rojo y sangre</p>
+      <h2 data-i="b_h">El rojo llegó después de los slashers</h2>
+      <p class="tag" data-i="b_tag">El pico no es 1980</p>
+      <p class="body" data-i="b_p">Uno pensaría que los slashers son dueños del rojo. No lo son. El pico real es el giro del milenio. Y rojo no es lo mismo que sangre: después de los 80 las dos medidas se separan.</p>
+    </div>
+  </section>
+  <section class="sec sec-evidence" id="ev-blood" data-pose="evidence" data-tex="4" data-needle="blood" data-year="2000">
+    <div class="chart-rail">
+      <p class="note" data-i="b_n">Rojo-píxel vs sangre semántica CLIP · n = 37,829</p>
+      <p class="chart-legend"><span><i style="background:#a4161a"></i><span data-i="lab_pixel">Rojo-píxel</span></span>
+        <span><i class="lg-dash"></i><span data-i="lab_sem">Sangre semántica</span></span></p>
+      <svg class="chart-svg" id="chart-blood" viewBox="0 0 960 220" role="img" aria-label="Pixel red vs semantic blood"></svg>
+    </div>
+    <div class="strip" id="strip-blood"></div>
+    <a class="method-link" href="../#part-blood" data-i="method">Cómo se midió →</a>
+  </section>
+
+  <section class="sec sec-era era-L" id="act-faces" data-pose="eraL" data-tex="0" data-needle="faces" data-year="1945">
+    <div class="era-copy">
+      <p class="kicker" data-i="f_k">Parte IV · Rostros y monstruos</p>
+      <h2 data-i="f_h">El rostro se retira. El fantasma regresa.</h2>
+      <p class="tag" data-i="f_tag">1945: 87% · hoy: &lt; 50%</p>
+      <p class="body" data-i="f_p">En los 40 la mirada era casi obligatoria. Hoy menos de la mitad de las hojas tienen un rostro. El siglo empieza y termina con el fantasma. El trono del monstruo cambia de manos.</p>
+    </div>
+  </section>
+  <section class="sec sec-evidence" id="ev-faces" data-pose="evidence" data-tex="5" data-needle="faces" data-year="2018">
+    <div class="chart-rail">
+      <p class="note" data-i="f_n">YuNet · CLIP vs 18 criaturas · n = 37,829</p>
+      <svg class="chart-svg" id="chart-faces" viewBox="0 0 960 220" role="img"></svg>
+    </div>
+    <div class="chart-rail">
+      <svg class="chart-svg" id="chart-census" viewBox="0 0 960 240" role="img"></svg>
+    </div>
+    <div class="strip" id="strip-faces"></div>
+    <a class="method-link" href="../#faces" data-i="method">Cómo se midió →</a>
+  </section>
+
+  <section class="sec sec-era era-R" id="act-quiet" data-pose="eraR" data-tex="1" data-needle="shout" data-year="1955">
+    <div class="era-copy">
+      <p class="kicker" data-i="q_k">Parte V · El silencio</p>
+      <h2 data-i="q_h">El terror bajó la voz</h2>
+      <p class="tag" data-i="q_tag">Grito ~34% → ~18%</p>
+      <p class="body" data-i="q_p">Estante de los 50: letras que GRITAN a 15 metros. Miniatura de Netflix: una palabra delgada. El volumen bajó porque bajó la distancia. Debajo, dos huellas más: simetría que salta después de 2010, y composiciones que dejaron de inclinarse.</p>
+    </div>
+  </section>
+  <section class="sec sec-evidence" id="ev-quiet" data-pose="evidence" data-tex="5" data-needle="shout" data-year="2020">
+    <div class="chart-rail">
+      <p class="note" data-i="q_n">MSER cobertura similar a texto · n = 37,829</p>
+      <svg class="chart-svg" id="chart-quiet" viewBox="0 0 960 220" role="img"></svg>
+    </div>
+    <div class="spark-row">
+      <div class="chart-rail">
+        <p class="note" data-i="q_sym">Simetría espejo</p>
+        <svg class="chart-svg" id="chart-sym" viewBox="0 0 460 160" role="img"></svg>
+      </div>
+      <div class="chart-rail">
+        <p class="note" data-i="q_diag">Score diagonal</p>
+        <svg class="chart-svg" id="chart-diag" viewBox="0 0 460 160" role="img"></svg>
+      </div>
+    </div>
+    <a class="method-link" href="../#quiet" data-i="q_method">Ver cajas MSER y pliegues →</a>
+  </section>
+
+  <section class="sec sec-era era-L" id="act-type" data-pose="eraL" data-tex="0" data-needle="ornate" data-year="1940">
+    <div class="era-copy">
+      <p class="kicker" data-i="t_k">Parte VI · Letraje</p>
+      <h2 data-i="t_h">El miedo dejó de gritar su nombre</h2>
+      <p class="tag" data-i="t_tag">1940s ornate 71% → 2020s minimal 27%</p>
+      <p class="body" data-i="t_p">En los 40, letras ornamentadas de exhibición. Apenas 4% minimalistas. En los 2020 se invirtió: lo ornamentado se volvió «barato», lo minimalista «elevado».</p>
+    </div>
+  </section>
+  <section class="sec sec-evidence" id="ev-type" data-pose="evidence" data-tex="5" data-needle="ornate" data-year="2020">
+    <div class="chart-rail">
+      <p class="note" data-i="t_n">Eje ornate↔minimal CLIP · n = 37,829</p>
+      <svg class="chart-svg" id="chart-typo" viewBox="0 0 960 260" role="img"></svg>
+      <p class="chart-legend">
+        <span><i style="background:#c99a3a"></i><span data-i="typo_orn">Ornate</span></span>
+        <span><i style="background:#b5622f"></i><span data-i="typo_dec">Decorativo</span></span>
+        <span><i style="background:#8a6a63"></i><span data-i="typo_std">Estándar</span></span>
+        <span><i style="background:#6f8792"></i><span data-i="typo_clean">Limpio</span></span>
+        <span><i style="background:#cdc6b6"></i><span data-i="typo_min">Minimal</span></span>
+      </p>
+    </div>
+    <div class="strip" id="strip-type"></div>
+    <a class="method-link" href="../#typo" data-i="method">Cómo se midió →</a>
+  </section>
+
+  <div id="eras"></div>
+
+  <section class="sec sec-era sec-recap era-L" id="era-0" data-pose="eraL" data-tex="0" data-era="0" data-needle="shout" data-year="1931">
+    <div class="era-copy">
+      <p class="kicker">1931 · 1920s–30s</p>
+      <h2>THE MONSTER</h2>
+      <p class="tag">A Universal Terror</p>
+      <p class="body" data-i="e0">Retratos pintados. El monstruo era la película. Hojas oscuras, letraje ornamentado. Seis disfraces de la misma retirada.</p>
+    </div>
+  </section>
+
+  <section class="sec sec-era sec-recap era-R" id="era-1" data-pose="eraR" data-tex="1" data-era="1" data-needle="bright" data-year="1954">
+    <div class="era-copy">
+      <p class="kicker">1954 · 1940s–50s</p>
+      <h2>ATOMIC BEAST!</h2>
+      <p class="tag">SEE! the thing from beyond</p>
+      <p class="body" data-i="e1">El grito del autocinema. La era más brillante. Un rostro era casi obligatorio.</p>
+    </div>
+  </section>
+
+  <section class="sec sec-era sec-recap era-L" id="era-2" data-pose="eraL" data-tex="2" data-era="2" data-needle="shout" data-year="1968">
+    <div class="era-copy">
+      <p class="kicker">1968 · 1960s–70s</p>
+      <h2>The Dwelling</h2>
+      <p class="tag">pray it isn't true</p>
+      <p class="body" data-i="e2">El monstruo se muda a la casa de al lado. Las luces empiezan a bajar.</p>
+    </div>
+  </section>
+
+  <section class="sec sec-era sec-recap era-R" id="era-3" data-pose="eraR" data-tex="3" data-era="3" data-needle="red" data-year="1978">
+    <div class="era-copy">
+      <p class="kicker">1978 · 1980s</p>
+      <h2>SLAY RIDE</h2>
+      <p class="tag">he knows when you're alone</p>
+      <p class="body" data-i="e3">El cuchillo como logo. Guerra de estantes VHS. Los slashers no son dueños del pico del rojo.</p>
+    </div>
+  </section>
+
+  <section class="sec sec-era sec-recap era-L" id="era-4" data-pose="eraL" data-tex="4" data-era="4" data-needle="blood" data-year="1999">
+    <div class="era-copy">
+      <p class="kicker">1999 · 1990s–2000s</p>
+      <h2>CAPTIVE</h2>
+      <p class="tag">how much can you take?</p>
+      <p class="body" data-i="e4">Meta-terror. El pico de verdad del rojo. La sangre se vuelve un lenguaje.</p>
+    </div>
+  </section>
+
+  <section class="sec sec-era sec-recap era-R" id="era-5" data-pose="eraR" data-tex="5" data-era="5" data-needle="shout" data-year="2018">
+    <div class="era-copy">
+      <p class="kicker">2018 · 2010s–hoy</p>
+      <h2>the orchard</h2>
+      <p class="tag">a quiet kind of ruin</p>
+      <p class="body" data-i="e5">Terror elevado. Una palabra delgada sobre negro. El fantasma vuelve al trono.</p>
+    </div>
+  </section>
+
+  <section class="sec sec-solid" id="cara" data-pose="oculto">
+    <p class="kicker" data-i="cara_k">Dos eras, cinco medidas</p>
+    <h2 data-i="cara_h">Cara a cara</h2>
+    <p class="lead" data-i="cara_p">Elige dos años. El mayor de cada fila se pinta en rojo sangre.</p>
+    <div class="compare">
+      <div class="pickers">
+        <div>
+          <label for="pick-a" data-i="pick_a">Era A</label>
+          <select id="pick-a"></select>
+        </div>
+        <div class="vs">VS</div>
+        <div>
+          <label for="pick-b" data-i="pick_b">Era B</label>
+          <select id="pick-b"></select>
+        </div>
+      </div>
+      <div id="cmp-rows"></div>
+    </div>
+  </section>
+
+  <section class="sec sec-solid sec-close" data-pose="oculto">
+    <div class="prose">
+      <p class="kicker" data-i="close_k">Cierre</p>
+      <h2 data-i="close_h">El miedo tiene un rostro de un siglo</h2>
+      <p class="closing" data-i="close_p">Y ha estado bajando la voz desde que aprendimos a escuchar la oscuridad.</p>
+      <p data-i="close_2">Los afiches no mienten. Te cuentan todo sobre qué nos asustó, cuándo y por qué. Solo tienes que saber cómo leerlos.</p>
+      <p class="byline" data-i-html="byline">Por <b>Juan Pablo Duque</b> · Pulp Analytics · octubre 2026</p>
+      <p class="links">
+        <a href="../" data-i="link_essay">El ensayo con gráficos</a>
+        <a href="../#lookup" data-i="link_lookup">Disecciona cualquier póster</a>
+        <a href="https://github.com/juanpduque/what-fear-looks-like">GitHub</a>
+        <a href="https://medium.com/pulp-analytics">Pulp Analytics</a>
+      </p>
+    </div>
+  </section>
+
+  <footer class="wall-footer">
+    <p data-i="illust">Las ilustraciones son originales — no son afiches de estudio.</p>
+    <p class="tmdb">This product uses the TMDB API but is not endorsed or certified by TMDB. Métricas del pipeline de What Fear Looks Like (n = 37,829 afiches en inglés, TMDB, 1897–2028).</p>
+  </footer>
+</div>
+
+<script src="../data/series.js"></script>
+<script src="../data/legacy-bridge.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/d3/7.9.0/d3.min.js"></script>
+<script src="vendor/three.min.js"></script>
+<script src="wall.js?v=wall-reset1"></script>
+</body>
+</html>
