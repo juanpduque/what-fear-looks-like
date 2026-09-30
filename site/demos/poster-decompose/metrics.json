@@ -1,0 +1,375 @@
+{
+  "id": 948,
+  "title": "Halloween",
+  "year": 1978,
+  "imdb_id": "tt0077651",
+  "tagline": "The Night He Came Home!",
+  "cover": "poster.jpg",
+  "cover_label": "poster.jpg · flat corpus art (no VHS photo albedo)",
+  "acts": [
+    {
+      "id": "hero",
+      "label": "I · Hero",
+      "range": [
+        0,
+        0.12
+      ]
+    },
+    {
+      "id": "read",
+      "label": "II · Read",
+      "range": [
+        0.12,
+        0.24
+      ]
+    },
+    {
+      "id": "measure",
+      "label": "III · Measure",
+      "range": [
+        0.24,
+        0.76
+      ]
+    },
+    {
+      "id": "archive",
+      "label": "IV · Archive",
+      "range": [
+        0.76,
+        1.0
+      ]
+    }
+  ],
+  "beats": [
+    {
+      "id": "hero",
+      "act": 1,
+      "progress": [
+        0,
+        0.12
+      ],
+      "kicker": "Videoclub · aisle",
+      "title": "Halloween",
+      "body": "",
+      "cue": "SCROLL",
+      "metricKey": null
+    },
+    {
+      "id": "read",
+      "act": 2,
+      "progress": [
+        0.12,
+        0.24
+      ],
+      "kicker": "OCR · título",
+      "title": "HALLOWEEN",
+      "body": "Vista de frente. Rekognition DetectText · conf 0.98 · el título anclado en el sleeve.",
+      "metricKey": "ocr",
+      "overlay": {
+        "type": "bbox",
+        "uv": [
+          0.1,
+          0.8,
+          0.8,
+          0.13
+        ],
+        "label": "OCR 0.98 · HALLOWEEN"
+      }
+    },
+    {
+      "id": "faces",
+      "act": 3,
+      "progress": [
+        0.24,
+        0.34
+      ],
+      "kicker": "Detect · rostros",
+      "title": "0 faces",
+      "body": "YuNet faces_v2 · 0 rostros. Creature 0.35 · is_creature false. El miedo es silueta, no cara.",
+      "metricKey": "faces",
+      "overlay": {
+        "type": "faces",
+        "uv": [
+          0.2,
+          0.18,
+          0.58,
+          0.52
+        ],
+        "label": "NO FACE · CRT 0.35"
+      }
+    },
+    {
+      "id": "palette",
+      "act": 3,
+      "progress": [
+        0.34,
+        0.44
+      ],
+      "kicker": "Measure · paleta",
+      "title": "87% dark",
+      "body": "Cinco muestras del sleeve. Handles marcan cielo, sombra, calabaza y filo. Brightness 8.1 · red_share 0.16.",
+      "metricKey": "colors",
+      "overlay": {
+        "type": "palette",
+        "label": "PALETTE · DARK 87%",
+        "cue": "HANDLES · SAMPLE COLORS",
+        "samples": [
+          {
+            "n": 1,
+            "hex": "#070101",
+            "role": "sky",
+            "uv": [
+              0.16,
+              0.07
+            ]
+          },
+          {
+            "n": 2,
+            "hex": "#370f0e",
+            "role": "shadow",
+            "uv": [
+              0.8,
+              0.34
+            ]
+          },
+          {
+            "n": 3,
+            "hex": "#711910",
+            "role": "pumpkin deep",
+            "uv": [
+              0.55,
+              0.53
+            ]
+          },
+          {
+            "n": 4,
+            "hex": "#c53c0d",
+            "role": "pumpkin",
+            "uv": [
+              0.55,
+              0.36
+            ]
+          },
+          {
+            "n": 5,
+            "hex": "#d5bda2",
+            "role": "blade",
+            "uv": [
+              0.42,
+              0.2
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "symmetry",
+      "act": 3,
+      "progress": [
+        0.44,
+        0.52
+      ],
+      "kicker": "Measure · simetría",
+      "title": "0.93",
+      "body": "attributes.symmetry 0.9347 · el eje parte el cuchillo. Neg_space 0.66 · harmony 0.91.",
+      "metricKey": "symmetry",
+      "overlay": {
+        "type": "symmetry",
+        "axis": 0.5,
+        "label": "SYM 0.93"
+      }
+    },
+    {
+      "id": "diagonals",
+      "act": 3,
+      "progress": [
+        0.52,
+        0.58
+      ],
+      "kicker": "Measure · diagonales",
+      "title": "0.20",
+      "body": "diagonal_score 0.1978 · composición poco diagonal: la masa es central (cuchillo + calabaza), no en X.",
+      "metricKey": "diagonals",
+      "overlay": {
+        "type": "diagonals",
+        "label": "DIAG 0.20",
+        "lines": [
+          {
+            "from": [
+              0.08,
+              0.08
+            ],
+            "to": [
+              0.92,
+              0.92
+            ]
+          },
+          {
+            "from": [
+              0.92,
+              0.08
+            ],
+            "to": [
+              0.08,
+              0.92
+            ]
+          }
+        ]
+      }
+    },
+    {
+      "id": "blood",
+      "act": 3,
+      "progress": [
+        0.58,
+        0.65
+      ],
+      "kicker": "Measure · sangre",
+      "title": "blood 0.85",
+      "body": "Nova blood 0.85 · blood_gore 0.8 · pixel red 15.6%. El naranja del filo empuja el heat map.",
+      "metricKey": "blood",
+      "overlay": {
+        "type": "bbox",
+        "uv": [
+          0.28,
+          0.18,
+          0.44,
+          0.55
+        ],
+        "label": "BLOOD 0.85 · RED 16%"
+      }
+    },
+    {
+      "id": "knife",
+      "act": 3,
+      "progress": [
+        0.65,
+        0.76
+      ],
+      "kicker": "Climax · cuchillo",
+      "title": "knife 0.95",
+      "body": "Nova knife 0.95 · el filo anclado. Portada cerrada, de frente — la última medida de esta caja.",
+      "metricKey": "knife",
+      "overlay": {
+        "type": "chip",
+        "uv": [
+          0.58,
+          0.36
+        ],
+        "label": "KNIFE 0.95"
+      }
+    },
+    {
+      "id": "archive",
+      "act": 4,
+      "progress": [
+        0.76,
+        1.0
+      ],
+      "kicker": "Archive · caja",
+      "title": "Un objeto",
+      "body": "Las mismas medidas. Ahora, el siglo entero.",
+      "metricKey": "archive"
+    }
+  ],
+  "metrics": [
+    {
+      "key": "ocr",
+      "label": "OCR / Title",
+      "value": "HALLOWEEN",
+      "detail": "Rekognition mean conf 0.98 · 1 line · Comprehend NEUTRAL 0.98"
+    },
+    {
+      "key": "faces",
+      "label": "Faces / creature",
+      "value": "0 faces · creature 0.35",
+      "detail": "YuNet faces_v2 0 · Rekognition faces 0 · creature uncertain 0.354 · is_creature false"
+    },
+    {
+      "key": "colors",
+      "label": "Palette",
+      "value": "87% dark",
+      "detail": "brightness 8.1 · red_share 0.16 · #070101 #370f0e #711910 #c53c0d #d5bda2"
+    },
+    {
+      "key": "symmetry",
+      "label": "Symmetry",
+      "value": "0.93",
+      "detail": "attributes.symmetry 0.9347 · neg_space 0.66 · harmony 0.91"
+    },
+    {
+      "key": "diagonals",
+      "label": "Diagonals",
+      "value": "0.20",
+      "detail": "attributes.diagonal_score 0.1978 · balance 0.17 · mass central"
+    },
+    {
+      "key": "blood",
+      "label": "Blood / fear",
+      "value": "blood 0.85",
+      "detail": "Nova blood_gore 0.8 · violence 0.9 · pixel red 15.6%"
+    },
+    {
+      "key": "knife",
+      "label": "Knife",
+      "value": "knife 0.95",
+      "detail": "Nova knife 0.95 · Rekognition weapon 0.76"
+    },
+    {
+      "key": "archive",
+      "label": "Archive / cinta",
+      "value": "VHS 948",
+      "detail": "cassette tape render · mood dread · suspense · terror"
+    },
+    {
+      "key": "mood",
+      "label": "Nova mood",
+      "value": "dread · suspense · terror",
+      "detail": "Amazon Nova Lite enrich"
+    }
+  ],
+  "raw": {
+    "symmetry": 0.9347,
+    "neg_space": 0.6598,
+    "harmony": 0.9074,
+    "balance": 0.1677,
+    "diagonal_score": 0.1978,
+    "dark_share": 0.8698,
+    "red_share": 0.1555,
+    "brightness": 8.14,
+    "faces": 0,
+    "p_painted": 0.3096,
+    "typography": "decorative",
+    "creature": "uncertain",
+    "creature_score": 0.354,
+    "is_creature": false,
+    "nova_blood": 0.85,
+    "nova_blood_gore": 0.8,
+    "nova_knife": 0.95,
+    "nova_violence": 0.9,
+    "rek_weapon": 0.7556,
+    "rek_person": 0.9246,
+    "ocr_conf": 0.9837,
+    "text_area": 0.1404
+  },
+  "sources": [
+    "pipeline/data/posters.csv",
+    "pipeline/data/medium.csv",
+    "pipeline/data/faces_v2.csv",
+    "pipeline/data/typography.csv",
+    "pipeline/data/attributes.csv",
+    "pipeline/data/census.csv",
+    "pipeline/data/rekognition.csv",
+    "pipeline/data/poster_ocr_rek_text.csv",
+    "pipeline/data/qa/nova_enrich/nova_enrich.csv"
+  ],
+  "notes": {
+    "cover_rule": "Cover albedo MUST be poster.jpg (flat). vhs_reference*.png are mood board only — never mapped to the cover mesh.",
+    "cover_opacity": "Cover stays fully opaque (no measureZone translucency). Lid stays closed; cassette and VCR are not shown.",
+    "mood_board": [
+      "vhs_reference.png",
+      "vhs_reference_anniversary.png"
+    ],
+    "beat_order": "hero → OCR → faces/creature → palette → symmetry → diagonals → blood → knife climax (cover closed) → archive hold (closed sleeve + essay CTA)"
+  }
+}

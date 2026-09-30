@@ -1,0 +1,162 @@
+{
+  "meta": {
+    "title": {
+      "en": "Halloween on VHS · What Fear Looks Like",
+      "es": "Halloween en VHS · Cómo se ve el miedo"
+    },
+    "description": {
+      "en": "Scroll through one Halloween (1978) VHS case — from the video-store shelf to the real metrics on the sleeve.",
+      "es": "Recorré una caja VHS de Halloween (1978): del estante del videoclub a las métricas reales del afiche."
+    }
+  },
+  "chrome": {
+    "brand_line1": {
+      "en": "What Fear Looks Like",
+      "es": "Cómo se ve el miedo"
+    },
+    "brand_line2": {
+      "en": "Act I · one tape",
+      "es": "Acto I · una cinta"
+    },
+    "back_essay": {
+      "en": "← essay",
+      "es": "← ensayo"
+    },
+    "mute_on": {
+      "en": "No audio",
+      "es": "Sin audio"
+    },
+    "mute_off": {
+      "en": "Tape hiss on",
+      "es": "Hiss de cinta"
+    },
+    "mute_title": {
+      "en": "VHS tape hiss (off by default)",
+      "es": "Ruido de cinta VHS (apagado por defecto)"
+    },
+    "rewind": {
+      "en": "Rewind",
+      "es": "Rebobinar"
+    },
+    "track": {
+      "en": "STEP",
+      "es": "PASO"
+    },
+    "act_prefix": {
+      "en": "Act",
+      "es": "Acto"
+    },
+    "loader": {
+      "en": "loading Halloween 1978",
+      "es": "cargando Halloween 1978"
+    },
+    "error_title": {
+      "en": "Could not load this section.",
+      "es": "No se pudo cargar esta sección."
+    },
+    "error_hint": {
+      "en": "Try refreshing the page.",
+      "es": "Probá recargar la página."
+    },
+    "essay_continue": {
+      "en": "Continue the essay — 37,829 posters →",
+      "es": "Seguir el ensayo — 37,829 afiches →"
+    }
+  },
+  "acts": {
+    "hero": { "en": "I · Object", "es": "I · Objeto" },
+    "read": { "en": "II · Read", "es": "II · Leer" },
+    "measure": { "en": "III · Measure", "es": "III · Medir" },
+    "archive": { "en": "IV · Archive", "es": "IV · Archivo" }
+  },
+  "beats": {
+    "hero": {
+      "kicker": { "en": "Video store · aisle", "es": "Videoclub · pasillo" },
+      "title": { "en": "Halloween", "es": "Halloween" },
+      "body": {
+        "en": "",
+        "es": ""
+      },
+      "cue": { "en": "SCROLL", "es": "DESPLAZATE" }
+    },
+    "read": {
+      "kicker": { "en": "Text · title", "es": "Texto · título" },
+      "title": { "en": "HALLOWEEN", "es": "HALLOWEEN" },
+      "body": {
+        "en": "Front view. The title reads clear on the sleeve — confidence 98%.",
+        "es": "Vista de frente. El título se lee claro en la portada — confianza 98%."
+      },
+      "overlay_label": { "en": "TITLE · 98%", "es": "TÍTULO · 98%" }
+    },
+    "faces": {
+      "kicker": { "en": "Faces", "es": "Rostros" },
+      "title": { "en": "0 faces", "es": "0 rostros" },
+      "body": {
+        "en": "No human face detected. The threat is silhouette — a pumpkin that reads like a skull.",
+        "es": "Ningún rostro humano detectado. La amenaza es silueta — una calabaza que se lee como cráneo."
+      },
+      "overlay_label": { "en": "NO FACE", "es": "SIN ROSTRO" }
+    },
+    "palette": {
+      "kicker": { "en": "Palette", "es": "Paleta" },
+      "title": { "en": "87% dark", "es": "87% oscuro" },
+      "body": {
+        "en": "Five colors from the sleeve: night sky, shadow, pumpkin, and the blade's edge.",
+        "es": "Cinco colores de la portada: cielo nocturno, sombra, calabaza y el filo del cuchillo."
+      },
+      "overlay_label": { "en": "DARK 87%", "es": "OSCURO 87%" },
+      "overlay_cue": { "en": "SAMPLE COLORS", "es": "MUESTRAS DE COLOR" },
+      "roles": {
+        "sky": { "en": "sky", "es": "cielo" },
+        "shadow": { "en": "shadow", "es": "sombra" },
+        "pumpkin deep": { "en": "pumpkin deep", "es": "calabaza oscura" },
+        "pumpkin": { "en": "pumpkin", "es": "calabaza" },
+        "blade": { "en": "blade", "es": "filo" }
+      }
+    },
+    "symmetry": {
+      "kicker": { "en": "Symmetry", "es": "Simetría" },
+      "title": { "en": "0.93", "es": "0.93" },
+      "body": {
+        "en": "Nearly mirrored. The center line splits the knife clean down the middle.",
+        "es": "Casi un espejo. El eje central parte el cuchillo a la mitad."
+      },
+      "overlay_label": { "en": "SYM 0.93", "es": "SIM 0.93" }
+    },
+    "diagonals": {
+      "kicker": { "en": "Diagonals", "es": "Diagonales" },
+      "title": { "en": "0.20", "es": "0.20" },
+      "body": {
+        "en": "Low diagonal energy. The mass sits center — knife and pumpkin — not an X across the sheet.",
+        "es": "Poca energía diagonal. La masa está al centro — cuchillo y calabaza — no una X sobre la hoja."
+      },
+      "overlay_label": { "en": "DIAG 0.20", "es": "DIAG 0.20" }
+    },
+    "blood": {
+      "kicker": { "en": "Blood", "es": "Sangre" },
+      "title": { "en": "blood 0.85", "es": "sangre 0.85" },
+      "body": {
+        "en": "The model sees blood-like red on this sheet. About 16% of the pixels lean red — the blade's orange pushes the heat.",
+        "es": "El modelo ve rojo que parece sangre en esta hoja. Unos 16% de los píxeles tiran a rojo — el naranja del filo empuja el calor."
+      },
+      "overlay_label": { "en": "BLOOD 0.85", "es": "SANGRE 0.85" }
+    },
+    "knife": {
+      "kicker": { "en": "Climax · knife", "es": "Clímax · cuchillo" },
+      "title": { "en": "knife 0.95", "es": "cuchillo 0.95" },
+      "body": {
+        "en": "The blade is the anchor. Front view, cover closed — the last measurement on this sleeve.",
+        "es": "El filo es el ancla. De frente, portada cerrada: la última medida de esta caja."
+      },
+      "overlay_label": { "en": "KNIFE 0.95", "es": "CUCHILLO 0.95" }
+    },
+    "archive": {
+      "kicker": { "en": "Archive · sleeve", "es": "Archivo · caja" },
+      "title": { "en": "One object", "es": "Un objeto" },
+      "body": {
+        "en": "Same measurements. Now the whole century.",
+        "es": "Las mismas medidas. Ahora, el siglo entero."
+      }
+    }
+  }
+}
