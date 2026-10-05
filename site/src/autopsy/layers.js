@@ -1,4 +1,5 @@
 import { pct, num, creatureLabels, posterSrc } from '../shared/posters.js';
+import { resolveFaces, faceLab } from './faces.js';
 
 const t = (...args) =>
   typeof window.t === 'function' ? window.t(...args) : args[0];
@@ -73,9 +74,11 @@ export function creatureLabel(p, a) {
   return creatureLabels()[creature] || creature.replace(/_/g, ' ');
 }
 
-/** Pipeline title boxes missing for a few specimens; coords match the corpus JPEG. */
+/** Pipeline title boxes missing / wrong for a few specimens; coords match the corpus JPEG shown on the site. */
 const TITLE_BOX_OVERRIDE = {
   948: { tx: 0.08, tt: 0.79, tw: 0.84, th: 0.1 },
+  // OCR ran on alternate TMDB art ("DRACULA" bat banner); site shows "Horror of Dracula".
+  11868: { tx: 0.05, tt: 0.855, tw: 0.9, th: 0.085 },
 };
 
 export function titleBox(comp, tmdbId) {
@@ -112,7 +115,7 @@ export function buildLayersHtml(p, a) {
   const creature = a.creature || p[6];
   const cLabel = creatureLabel(p, a);
   const comp = a.comp || {};
-  const faces = a.faces ?? p[5];
+  const faces = resolveFaces(a, p);
   const darkPct = Math.round((a.dark || 0) * 100);
   const box = titleBox(comp, p[7]);
   const textBandStyle = box
@@ -120,11 +123,8 @@ export function buildLayersHtml(p, a) {
     : 'display:none';
   const tLabTop = box ? box.labTop : 6;
   const tLabLeft = box ? Math.max(2, box.left) : 4;
-  const faceLab =
-    faces === 1
-      ? t('lab_faces_area', { n: faces, a: pct(a.farea) })
-      : t('lab_faces_area_pl', { n: faces, a: pct(a.farea) });
-  const fboxes = Array.isArray(a.fboxes) ? a.fboxes : [];
+  const faceLabText = faceLab(a, p);
+  const fboxes = faces.fboxes;
   const faceBoxesHtml = fboxes
     .map(([x, y, w, h]) => `<div class="lk-facebox" style="${boxStyle(x, y, w, h)}"></div>`)
     .join('');
@@ -134,6 +134,8 @@ export function buildLayersHtml(p, a) {
     const labTop = Math.min(92, Math.max(2, (fy + fh) * 100 + 1.5));
     const labLeft = Math.max(2, Math.min(70, fx * 100));
     faceLabStyle = `top:${labTop.toFixed(1)}%;left:${labLeft.toFixed(1)}%`;
+  } else if (faces.n > 0 && faces.source === 'rek') {
+    faceLabStyle = 'top:8%;left:4%';
   }
   const cboxesPref = preferredCreatureBoxes(p, a);
   const creatureBoxesHtml = cboxesPref
@@ -217,7 +219,7 @@ export function buildLayersHtml(p, a) {
           <div class="lk-palfloat">${palFloat}</div>
           <div class="lk-lab" style="top:6%;left:4%">${t('lab_hue_families')}</div></div>
         <div class="lk-layer" data-layer="faces">${dimSvg('lk-mask-faces', fboxes)}${faceBoxesHtml}
-          <div class="lk-lab amber" style="${faceLabStyle}">${faceLab}</div></div>
+          <div class="lk-lab${faces.source === 'rek' ? ' amber' : ''}" style="${faceLabStyle}">${faceLabText}</div></div>
         <div class="lk-layer" data-layer="creature">${dimSvg('lk-mask-creature', creatureHoles)}${creatureBoxesHtml}${creatureLabHtml}</div>
         <div class="lk-layer" data-layer="medium">${dimSvg('lk-mask-medium', [])}
           <div class="lk-lab" style="top:8%;left:4%">${mediumLab}</div></div>
@@ -262,11 +264,17 @@ export const BEAT_LAYERS = {
   faces: ['faces'],
   letter: ['text'],
   creature: ['creature'],
-  composition: ['thirds'],
+  composition: [],
+  comp_thirds: ['thirds'],
+  comp_diag: ['diag'],
+  comp_sym: ['sym'],
+  comp_bal: ['bal'],
+  comp_neg: ['neg'],
   pose: ['pose'],
 };
 
-/** Sub-views per beat. `heat` dims the bitmap under a pixel map. */
+/** Sub-views per beat. `heat` dims the bitmap under a pixel map.
+ *  Only beats with real poster overlays get modes; label-only instruments are scroll beats. */
 export const BEAT_MODES = {
   color: [
     { id: 'palette', layers: ['palette'] },
@@ -277,25 +285,9 @@ export const BEAT_MODES = {
     { id: 'bands', layers: ['bands'] },
     { id: 'blood', layers: ['blood'], heat: true },
   ],
-  letter: [
-    { id: 'text', layers: ['text'] },
-    { id: 'medium', layers: ['medium'] },
-  ],
   creature: [
     { id: 'creature', layers: ['creature'] },
     { id: 'sem', layers: ['sem'] },
-  ],
-  composition: [
-    { id: 'thirds', layers: ['thirds'] },
-    { id: 'diag', layers: ['diag'] },
-    { id: 'sym', layers: ['sym'] },
-    { id: 'mass', layers: ['mass'] },
-    { id: 'bal', layers: ['bal'] },
-    { id: 'neg', layers: ['neg'], heat: true },
-    { id: 'pyr', layers: ['pyr'] },
-    { id: 'align', layers: ['align'] },
-    { id: 'harm', layers: ['harm'] },
-    { id: 'cx', layers: ['cx'], heat: true },
   ],
 };
 

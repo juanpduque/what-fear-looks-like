@@ -1,7 +1,7 @@
 import './autopsy.css';
 import { posterSrc, HAS_DATA } from '../shared/posters.js';
 import { buildLayersHtml, setActiveLayers, applyArtFilter, BEAT_LAYERS, BEAT_MODES, beatMode } from './layers.js';
-import { buildBeats, beatsHtml } from './beats.js';
+import { buildBeats, beatsHtml, modeBlurb } from './beats.js';
 import {
   ensureLookup,
   ensureCreatureBoxes,
@@ -121,7 +121,7 @@ function syncBeatModes() {
   const beat = beats[beatIndex];
   const mode = beat ? beatMode(beat.id, modeByBeat[beat.id]) : null;
   const { frame } = els();
-  frame?.classList.toggle('is-heat', Boolean(mode?.heat));
+  frame?.classList.toggle('is-heat', Boolean(mode?.heat || beat?.heat));
   document.querySelectorAll('.au-cmodes [data-cmode]').forEach((btn) => {
     const on = Boolean(mode && btn.dataset.cmode === mode.id && beat?.id === btn.closest('.au-beat')?.dataset.beat);
     btn.classList.toggle('is-on', on);
@@ -147,6 +147,12 @@ function applyBeat(i, { scroll } = {}) {
   setActiveLayers(ov, layers, current?.a);
   applyArtFilter(art, mode?.filter || null, current?.a);
   syncBeatModes();
+  const blurbEl = root?.querySelector(`.au-beat[data-i="${beatIndex}"] [data-mode-blurb]`);
+  if (blurbEl) {
+    const text = mode ? modeBlurb(beat.id, mode.id, current?.p, current?.a) : '';
+    blurbEl.textContent = text;
+    blurbEl.hidden = !text;
+  }
   if (label) {
     label.innerHTML = `${beat.kicker}<b>${beat.n} / ${beats.length}</b>`;
   }
