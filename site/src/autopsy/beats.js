@@ -1,5 +1,6 @@
 import { pct, num } from '../shared/format.js';
 import { BEAT_MODES, creatureLabel } from './layers.js';
+import { faceBody } from './faces.js';
 
 const t = (...args) =>
   typeof window.t === 'function' ? window.t(...args) : args[0];
@@ -12,12 +13,9 @@ function escapeHtml(s) {
     .replace(/"/g, '&quot;');
 }
 
-function poseBody(a, faces) {
+function poseBody(a) {
   const pose = a.pose;
-  if (!pose) {
-    return faces > 0 ? t('autopsy_body_pose_pending') : t('autopsy_body_pose_skip');
-  }
-  if (!pose.n) return t('autopsy_body_pose_none');
+  if (!pose?.n) return t('autopsy_body_pose_none');
   return t('autopsy_body_pose', {
     n: pose.n,
     spread: pose.spread == null ? '—' : num(pose.spread, 2),
@@ -26,16 +24,110 @@ function poseBody(a, faces) {
   });
 }
 
+/** Chapter VI intro: interpretive findings, then scroll lights each instrument. */
+function compositionBody(comp) {
+  const thirds = comp.thirds;
+  const diag = comp.diag;
+  const sym = comp.sym;
+  const bal = comp.bal;
+  const neg = comp.neg;
+
+  const thirdsRead =
+    thirds == null
+      ? t('autopsy_comp_read_na')
+      : thirds <= 0.12
+        ? t('autopsy_comp_read_thirds_near')
+        : thirds <= 0.25
+          ? t('autopsy_comp_read_thirds_mid')
+          : t('autopsy_comp_read_thirds_far');
+  const diagRead =
+    diag == null
+      ? t('autopsy_comp_read_na')
+      : diag >= 0.45
+        ? t('autopsy_comp_read_diag_high')
+        : diag >= 0.25
+          ? t('autopsy_comp_read_diag_mid')
+          : t('autopsy_comp_read_diag_low');
+  const symRead =
+    sym == null
+      ? t('autopsy_comp_read_na')
+      : sym >= 0.75
+        ? t('autopsy_comp_read_sym_high')
+        : sym >= 0.5
+          ? t('autopsy_comp_read_sym_mid')
+          : t('autopsy_comp_read_sym_low');
+  const balRead =
+    bal == null
+      ? t('autopsy_comp_read_na')
+      : bal <= 0.08
+        ? t('autopsy_comp_read_bal_center')
+        : bal <= 0.2
+          ? t('autopsy_comp_read_bal_soft')
+          : t('autopsy_comp_read_bal_off');
+  const negRead =
+    neg == null
+      ? t('autopsy_comp_read_na')
+      : neg >= 0.45
+        ? t('autopsy_comp_read_neg_high')
+        : neg >= 0.25
+          ? t('autopsy_comp_read_neg_mid')
+          : t('autopsy_comp_read_neg_low');
+
+  return t('autopsy_body_composition', {
+    thirds: thirds == null ? '—' : num(thirds, 2),
+    thirds_read: thirdsRead,
+    diag: pct(diag),
+    diag_read: diagRead,
+    sym: pct(sym),
+    sym_read: symRead,
+    bal: pct(bal),
+    bal_read: balRead,
+    neg: pct(neg),
+    neg_read: negRead,
+  });
+}
+
+/** Short “what this tab measures” blurb for the active instrument. */
+export function modeBlurb(beatId, modeId, p, a) {
+  if (!modeId || !BEAT_MODES[beatId]?.some((m) => m.id === modeId)) return '';
+  const comp = a?.comp || {};
+  const sem = a?.sem || {};
+  const vars = {
+    L: a?.L ?? p?.[4] ?? '—',
+    dark: pct(a?.dark),
+    red: pct(a?.red),
+    sat: pct(a?.sat),
+    blood: pct(sem.blood),
+    typo: a?.typo || '—',
+    taxis: a?.taxis == null ? '—' : num(a.taxis, 2),
+    txt: pct(comp.txt),
+    painted: a?.painted == null ? '—' : pct(a.painted),
+    creature: creatureLabel(p, a),
+    cscore: a?.cscore != null ? pct(a.cscore) : '—',
+    sym: pct(comp.sym),
+    neg: pct(comp.neg),
+    diag: pct(comp.diag),
+    thirds: num(comp.thirds, 2),
+    bal: pct(comp.bal),
+    pyr: num(comp.pyr, 2),
+    align: pct(comp.align),
+    harm: pct(comp.harm),
+    cx: num(comp.cx, 2),
+  };
+  const key = `autopsy_cmode_blurb_${modeId}`;
+  const out = t(key, vars);
+  return out === key ? '' : out;
+}
+
 export function buildBeats(p, a) {
   const title = p[3];
   const year = p[0];
   const id = p[7];
-  const faces = a.faces ?? p[5];
   const cLabel = creatureLabel(p, a);
   const comp = a.comp || {};
   const sem = a.sem || {};
 
-  return [
+  const list = [
     {
       id: 'object',
       tilt: 1,
@@ -61,10 +153,7 @@ export function buildBeats(p, a) {
       tilt: 0,
       kicker: t('autopsy_kicker_faces'),
       title: t('autopsy_title_faces'),
-      body:
-        faces > 0
-          ? t('autopsy_body_faces', { n: faces, a: pct(a.farea) })
-          : t('autopsy_body_faces_none'),
+      body: faceBody(a, p),
     },
     {
       id: 'letter',
@@ -96,26 +185,58 @@ export function buildBeats(p, a) {
       tilt: 0,
       kicker: t('autopsy_kicker_composition'),
       title: t('autopsy_title_composition'),
-      body: t('autopsy_body_composition', {
-        sym: pct(comp.sym),
-        neg: pct(comp.neg),
-        diag: pct(comp.diag),
-        thirds: num(comp.thirds, 2),
-        bal: pct(comp.bal),
-        pyr: num(comp.pyr, 2),
-        align: pct(comp.align),
-        harm: pct(comp.harm),
-        cx: num(comp.cx, 2),
-      }),
+      body: compositionBody(comp),
     },
     {
+      id: 'comp_thirds',
+      tilt: 0,
+      kicker: t('autopsy_kicker_comp_thirds'),
+      title: t('autopsy_title_comp_thirds'),
+      body: t('autopsy_cmode_blurb_thirds', { thirds: num(comp.thirds, 2) }),
+    },
+    {
+      id: 'comp_diag',
+      tilt: 0,
+      kicker: t('autopsy_kicker_comp_diag'),
+      title: t('autopsy_title_comp_diag'),
+      body: t('autopsy_cmode_blurb_diag', { diag: pct(comp.diag) }),
+    },
+    {
+      id: 'comp_sym',
+      tilt: 0,
+      kicker: t('autopsy_kicker_comp_sym'),
+      title: t('autopsy_title_comp_sym'),
+      body: t('autopsy_cmode_blurb_sym', { sym: pct(comp.sym) }),
+    },
+    {
+      id: 'comp_bal',
+      tilt: 0,
+      kicker: t('autopsy_kicker_comp_bal'),
+      title: t('autopsy_title_comp_bal'),
+      body: t('autopsy_cmode_blurb_bal', { bal: pct(comp.bal) }),
+    },
+    {
+      id: 'comp_neg',
+      tilt: 0,
+      kicker: t('autopsy_kicker_comp_neg'),
+      title: t('autopsy_title_comp_neg'),
+      body: t('autopsy_cmode_blurb_neg', { neg: pct(comp.neg) }),
+      heat: true,
+    },
+  ];
+
+  // Pose only when this sheet is in the ViTPose table.
+  if (a.pose) {
+    list.push({
       id: 'pose',
       tilt: 0,
       kicker: t('autopsy_kicker_pose'),
       title: t('autopsy_title_pose'),
-      body: poseBody(a, faces),
-    },
-  ].map((beat, i) => ({ ...beat, n: i + 1 }));
+      body: poseBody(a),
+    });
+  }
+
+  return list.map((beat, i) => ({ ...beat, n: i + 1 }));
 }
 
 function modesHtml(beat) {
@@ -128,7 +249,8 @@ function modesHtml(beat) {
       return `<button type="button" role="tab" data-cmode="${escapeHtml(m.id)}" aria-selected="${on ? 'true' : 'false'}" class="${on ? 'is-on' : ''}">${escapeHtml(t(`autopsy_cmode_${m.id}`))}</button>`;
     })
     .join('');
-  return `<div class="au-cmodes" role="tablist" aria-label="${aria}">${btns}</div>`;
+  return `<div class="au-cmodes" role="tablist" aria-label="${aria}">${btns}</div>
+      <p class="au-beat-mode-blurb" data-mode-blurb hidden></p>`;
 }
 
 export function beatsHtml(beats) {
