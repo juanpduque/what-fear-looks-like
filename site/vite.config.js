@@ -20,7 +20,6 @@ export default defineConfig({
         { src: 'data', dest: '.' },
         { src: 'i18n/*.js', dest: 'i18n' },
         { src: 'js', dest: '.' },
-        { src: 'wall', dest: '.' },
         {
           src: 'demos/poster-decompose/**/*',
           dest: 'demos/poster-decompose',

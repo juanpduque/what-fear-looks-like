@@ -115,6 +115,10 @@ body.au-open{overflow:hidden}
   letter-spacing:.01em;margin:0 0 12px;color:var(--ink);
 }
 .au-beat-body{font-size:17px;line-height:1.55;color:var(--ink-dim);margin:0}
+.au-beat-mode-blurb{
+  margin:12px 0 0;padding:10px 12px;border-left:2px solid var(--amber);
+  font-size:14px;line-height:1.5;color:var(--ink);background:rgba(229,160,13,.06)
+}
 .au-cmodes{display:flex;flex-wrap:wrap;gap:6px;margin:16px 0 0;pointer-events:auto}
 .au-cmodes button{
   appearance:none;border:1px solid var(--line);background:rgba(10,10,12,.72);color:var(--ink-dim);
@@ -158,6 +162,7 @@ body.au-open{overflow:hidden}
   .au-beat{min-height:72vh;align-items:flex-end;padding-bottom:12vh}
   .au-beat-inner{max-width:none;margin:0 16px;background:rgba(7,8,11,.82)}
   .au-beat-body{font-size:15px}
+  .au-beat-mode-blurb{font-size:13px;padding:8px 10px}
   .au-progress{top:12px;right:12px;font-size:10px}
   .au-hud .au-bar{top:48px;right:12px}
   .au-nav{top:12px;bottom:auto;right:12px}

@@ -1,4 +1,4 @@
-/* Anatomy of Fear — EN/ES */
+/* What Fear Looks Like — EN/ES */
 (function(){
   const STORAGE='aof-lang';
   function byId(){
@@ -30,6 +30,13 @@
   function setMeta(sel, content){
     const el=document.querySelector(sel);
     if(el) el.setAttribute('content', content);
+  }
+  function wireDemoLinks(lang){
+    document.querySelectorAll('a[href*="poster-decompose"]').forEach(a=>{
+      const u=new URL(a.getAttribute('href'), location.href);
+      u.searchParams.set('lang', lang);
+      a.setAttribute('href', u.pathname+u.search);
+    });
   }
   window.AOF_applyLang=function(lang, {persist=true, updateUrl=true}={}){
     if(lang!=='en'&&lang!=='es') lang='en';
@@ -80,6 +87,7 @@
       btn.classList.toggle('is-active', on);
     });
     document.dispatchEvent(new CustomEvent('aof:lang',{detail:{lang}}));
+    wireDemoLinks(lang);
   };
 
   const early=initialLang();
@@ -89,10 +97,9 @@
     document.querySelectorAll('[data-lang-btn]').forEach(btn=>{
       btn.addEventListener('click',()=>{
         const next=btn.getAttribute('data-lang-btn');
-        localStorage.setItem(STORAGE, next);
-        const u=new URL(location.href);
-        u.searchParams.set('lang', next);
-        location.href=u.toString();
+        const y=window.scrollY;
+        AOF_applyLang(next,{persist:true,updateUrl:true});
+        requestAnimationFrame(()=>window.scrollTo(0,y));
       });
     });
   }
