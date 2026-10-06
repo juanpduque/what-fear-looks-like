@@ -16,8 +16,8 @@
   },
   {
     "id": "hero_dek",
-    "en": "Horror got quieter. We measured color, darkness, faces, and creatures across <strong>37,829 posters</strong> from 1897 to 2028.",
-    "es": "El terror bajó la voz. Medimos color, oscuridad, rostros y criaturas en <strong>37,829 afiches</strong> de 1897 a 2028."
+    "en": "Horror got quieter. We measured color, darkness, faces, and creatures across <strong>33,619 posters</strong> from 1900 to 2026.",
+    "es": "El terror bajó la voz. Medimos color, oscuridad, rostros y criaturas en <strong>33,619 afiches</strong> de 1900 a 2026."
   },
   {
     "id": "hero_byline",
@@ -63,28 +63,120 @@
   },
   {
     "id": "intro_century",
-    "en": "I decided to find out. I pulled <strong>37,829 horror posters</strong> — from 1897 all the way to 2028 — and I measured them. Colors. How dark they are. What's on them. Everything. What I found is weird. And it's going to change how you watch horror posters forever.",
-    "es": "Decidí averiguarlo. Bajé <strong>37,829 afiches de terror</strong> — desde 1897 hasta 2028 — y los medí. Colores. Qué tan oscuros son. Qué tienen encima. Todo. Lo que encontré es raro. Y va a cambiar para siempre cómo ves los afiches de terror."
+    "en": "I decided to find out. I pulled <strong>33,619 horror posters</strong> — from 1900 all the way to 2026 — and I measured them. Colors. How dark they are. What's on them. Everything. What I found is weird. And it's going to change how you watch horror posters forever.",
+    "es": "Decidí averiguarlo. Bajé <strong>33,619 afiches de terror</strong> — desde 1900 hasta 2026 — y los medí. Colores. Qué tan oscuros son. Qué tienen encima. Todo. Lo que encontré es raro. Y va a cambiar para siempre cómo ves los afiches de terror."
+  },
+  {
+    "id": "exhibit_a_kicker",
+    "en": "Exhibit A · The instruments",
+    "es": "Anexo A · Los instrumentos"
   },
   {
     "id": "exhibit_a_title",
-    "en": "One Nightmare,<br>Six Measurements",
-    "es": "Una pesadilla,<br>seis mediciones"
+    "en": "How a Sheet<br>Is Measured",
+    "es": "Cómo se mide<br>una hoja"
   },
   {
     "id": "exhibit_a_lede",
-    "en": "Before we look at a whole century, let's take apart one poster — maybe the most copied horror one-sheet ever printed — with the same checks we run on every sheet in this story.",
-    "es": "Antes de mirar un siglo entero, abramos un solo póster — quizá el one-sheet de terror más copiado jamás impreso — con las mismas revisiones que hacemos a cada hoja de esta historia."
+    "en": "Every chart that follows is built from the same instruments. Here they are, on one poster — <em>Halloween</em> (1978). Tap a measure to see how it is built, and how to read the number.",
+    "es": "Cada gráfico que sigue se construye con los mismos instrumentos. Aquí están, sobre un afiche: <em>Halloween</em> (1978). Toca una medida para ver cómo se construye y cómo se lee el número."
+  },
+  {
+    "id": "exhibit_a_hint",
+    "en": "Tap a measure",
+    "es": "Toca una medida"
+  },
+  {
+    "id": "exhibit_a_open",
+    "en": "Open on the light table →",
+    "es": "Abrir en la mesa de luz →",
+    "aria_en": "Open Halloween (1978) on the light table",
+    "aria_es": "Abrir Halloween (1978) en la mesa de luz"
+  },
+  {
+    "id": "exhibit_how_label",
+    "en": "How it's built",
+    "es": "Cómo se construye"
+  },
+  {
+    "id": "exhibit_read_label",
+    "en": "How to read it",
+    "es": "Cómo se lee"
+  },
+  {
+    "id": "exhibit_m_dark_kicker",
+    "en": "Color · dark",
+    "es": "Color · oscuro"
+  },
+  {
+    "id": "exhibit_m_dark_value",
+    "en": "87% dark",
+    "es": "87% oscuro"
+  },
+  {
+    "id": "exhibit_m_faces_kicker",
+    "en": "Faces",
+    "es": "Rostros"
+  },
+  {
+    "id": "exhibit_m_faces_value",
+    "en": "0 faces",
+    "es": "0 rostros"
+  },
+  {
+    "id": "exhibit_m_blood_kicker",
+    "en": "Red · blood",
+    "es": "Rojo · sangre"
+  },
+  {
+    "id": "exhibit_m_blood_value",
+    "en": "16% red · blood 0",
+    "es": "16% rojo · sangre 0"
+  },
+  {
+    "id": "exhibit_m_type_kicker",
+    "en": "Lettering",
+    "es": "Letraje"
+  },
+  {
+    "id": "exhibit_m_type_value",
+    "en": "HALLOWEEN",
+    "es": "HALLOWEEN"
+  },
+  {
+    "id": "exhibit_m_sym_kicker",
+    "en": "Symmetry",
+    "es": "Simetría"
+  },
+  {
+    "id": "exhibit_m_sym_value",
+    "en": "0.93",
+    "es": "0.93"
+  },
+  {
+    "id": "exhibit_m_diag_kicker",
+    "en": "Diagonals",
+    "es": "Diagonales"
+  },
+  {
+    "id": "exhibit_m_diag_value",
+    "en": "0.20",
+    "es": "0.20"
+  },
+  {
+    "id": "exhibit_a_bridge",
+    "en": "Same instruments. Now the whole century.",
+    "es": "Los mismos instrumentos. Ahora, el siglo entero."
   },
   {
     "id": "ana_lab_dark",
-    "en": "72% black",
-    "es": "72% negro"
+    "en": "87% black",
+    "es": "87% negro"
   },
   {
     "id": "ana_lab_blood",
-    "en": "blood red: 11%",
-    "es": "rojo sangre: 11%"
+    "en": "pixel-red: 16%",
+    "es": "rojo-píxel: 16%"
   },
   {
     "id": "ana_lab_faces",
@@ -127,6 +219,20 @@
     "es": "Halloween · 1978 · la hoja que todos copiaron"
   },
   {
+    "id": "demo_vhs_cta",
+    "en": "Pull it off the shelf — interactive VHS →",
+    "es": "Sacala del estante — VHS interactivo →",
+    "aria_en": "Open the interactive Halloween VHS decompose demo",
+    "aria_es": "Abrir la demo interactiva VHS de Halloween"
+  },
+  {
+    "id": "demo_vhs_cta_now",
+    "en": "Or measure the same sheet on a VHS sleeve →",
+    "es": "O medí la misma hoja en una caja VHS →",
+    "aria_en": "Open the interactive VHS decompose demo",
+    "aria_es": "Abrir la demo interactiva de descomposición VHS"
+  },
+  {
     "id": "m1_kicker",
     "en": "Measurement 1",
     "es": "Medición 1"
@@ -158,13 +264,13 @@
   },
   {
     "id": "m2_body",
-    "en": "Halloween poster: <strong>72% black</strong>. That's almost three-quarters of the whole sheet. Just… black. One knife. One pumpkin. That's it. It was also less than half as bright as the average horror poster of 1978 — years ahead of where the genre was heading.",
-    "es": "Afiche de Halloween: <strong>72% negro</strong>. Casi tres cuartos del afiche completo. Puro… negro. Un cuchillo. Una calabaza. Eso es todo. Además, era menos de la mitad de brillante que el afiche de terror promedio de 1978 — años adelantado a donde iba el género."
+    "en": "Halloween poster: <strong>87% black</strong>. That's almost nine-tenths of the whole sheet. Just… black. One knife. One pumpkin. That's it. It was also about a quarter as bright as the average horror poster of 1978 — years ahead of where the genre was heading.",
+    "es": "Afiche de Halloween: <strong>87% negro</strong>. Casi nueve décimos del afiche completo. Puro… negro. Un cuchillo. Una calabaza. Eso es todo. Además, era más o menos una cuarta parte de brillante que el afiche de terror promedio de 1978 — años adelantado a donde iba el género."
   },
   {
     "id": "m2_stat",
-    "en": "<b>72% black</b> · darker than most of its year",
-    "es": "<b>72% negro</b> · más oscuro que casi todo su año"
+    "en": "<b>87% black</b> · darker than most of its year",
+    "es": "<b>87% negro</b> · más oscuro que casi todo su año"
   },
   {
     "id": "m3_kicker",
@@ -178,18 +284,18 @@
   },
   {
     "id": "m3_body",
-    "en": "Only about one-tenth of the poster is blood-red — and it lives in two places: the blade and the pumpkin. All the heat. One knife. One grin.",
-    "es": "Solo cerca de una décima parte del póster es rojo sangre — y vive en dos sitios: la hoja del cuchillo y la calabaza. Todo el calor. Un cuchillo. Una sonrisa."
+    "en": "About 16% of the poster is pixel-red — and it lives in two places: the blade and the pumpkin. All the heat. One knife. One grin. CLIP does not read any of it as blood.",
+    "es": "Unos 16% del póster es rojo-píxel — y vive en dos sitios: la hoja del cuchillo y la calabaza. Todo el calor. Un cuchillo. Una sonrisa. CLIP no lee nada de eso como sangre."
   },
   {
     "id": "m3_body2",
-    "en": "Later we also ask a vision model, patch by patch: does this <em>look like blood</em>? That check now runs on the full corpus (n=37,829). On this sheet we stick to the simple red count for the walkthrough — both methods meet just below, in Part III.",
-    "es": "Más adelante también le preguntamos a un modelo de visión, parche a parche: ¿esto <em>parece sangre</em>? Esa revisión ya corre sobre el corpus completo (n=37,829). En esta hoja nos quedamos con el conteo simple de rojo para el recorrido — los dos métodos se encuentran justo abajo, en la Parte III."
+    "en": "Later we also ask a vision model, patch by patch: does this <em>look like blood</em>? That check now runs on the full corpus (n=33,619). On this sheet we stick to the simple red count for the walkthrough — both methods meet just below, in Part III.",
+    "es": "Más adelante también le preguntamos a un modelo de visión, parche a parche: ¿esto <em>parece sangre</em>? Esa revisión ya corre sobre el corpus completo (n=33,619). En esta hoja nos quedamos con el conteo simple de rojo para el recorrido — los dos métodos se encuentran justo abajo, en la Parte III."
   },
   {
     "id": "m3_stat",
-    "en": "<b>11%</b> blood-red · all of it on the knife and the grin",
-    "es": "<b>11%</b> rojo sangre · todo en el cuchillo y la sonrisa"
+    "en": "<b>16%</b> pixel-red · CLIP blood 0 · Rek knife 0.85",
+    "es": "<b>16%</b> rojo-píxel · CLIP sangre 0 · Rek cuchillo 0.85"
   },
   {
     "id": "m4_kicker",
@@ -203,13 +309,13 @@
   },
   {
     "id": "m4_body",
-    "en": "Who looks back? Zero human faces. Most 1970s horror posters showed you one. The only face here is carved into a pumpkin — and the model reads that grin like a skull. Wrong species, right instinct. Michael Myers is the absence. The sheet sells dread by showing you almost no one.",
-    "es": "¿Quién te devuelve la mirada? Cero rostros humanos. La mayoría de afiches de terror de los 70 te mostraban uno. El único rostro aquí está tallado en una calabaza — y el modelo lee esa sonrisa como un cráneo. Especie equivocada, instinto acertado. Michael Myers es la ausencia. El afiche vende miedo mostrándote casi a nadie."
+    "en": "Who looks back? Zero human faces. Just over half of 1970s horror posters showed you one. The only face here is carved into a pumpkin — and the model reads that grin like a skull. Wrong species, right instinct. Michael Myers is the absence. The sheet sells dread by showing you almost no one.",
+    "es": "¿Quién te devuelve la mirada? Cero rostros humanos. Poco más de la mitad de los afiches de terror de los 70 te mostraban uno. El único rostro aquí está tallado en una calabaza — y el modelo lee esa sonrisa como un cráneo. Especie equivocada, instinto acertado. Michael Myers es la ausencia. El afiche vende miedo mostrándote casi a nadie."
   },
   {
     "id": "m4_stat",
-    "en": "<b>0</b> human faces · most posters that decade had one",
-    "es": "<b>0</b> rostros humanos · la mayoría de su década tenía uno"
+    "en": "<b>0</b> human faces · just over half that decade had one",
+    "es": "<b>0</b> rostros humanos · poco más de la mitad de su década tenía uno"
   },
   {
     "id": "m5_kicker",
@@ -258,13 +364,13 @@
   },
   {
     "id": "now_h3",
-    "en": "× 37,829",
-    "es": "× 37,829"
+    "en": "× 33,619",
+    "es": "× 33,619"
   },
   {
     "id": "now_body",
-    "en": "One poster. Six looks. We did this for every usable horror poster from 1897 to 2028. Here's what a century of fear looks like.",
-    "es": "Un póster. Seis miradas. Hicimos esto con cada póster de terror usable de 1897 a 2028. Así se ve un siglo de miedo."
+    "en": "One poster. Six looks. We did this for every usable horror poster from 1900 to 2026. Here's what a century of fear looks like.",
+    "es": "Un póster. Seis miradas. Hicimos esto con cada póster de terror usable de 1900 a 2026. Así se ve un siglo de miedo."
   },
   {
     "id": "now_stat",
@@ -293,8 +399,8 @@
   },
   {
     "id": "p1_note_n",
-    "en": "FULL CENTURY — n = 37,829 posters (TMDB), mean share per decade.",
-    "es": "SIGLO COMPLETO — n = 37,829 pósters (TMDB), cuota media por década."
+    "en": "FULL CENTURY — n = 33,619 posters (TMDB), mean share per decade.",
+    "es": "SIGLO COMPLETO — n = 33,619 pósters (TMDB), cuota media por década."
   },
   {
     "id": "p1_note_strip",
@@ -388,18 +494,18 @@
   },
   {
     "id": "p2_body",
-    "en": "It isn't a slide — it's a mountain. Shadow climbs to a daylight peak around 1960, then horror descends for sixty years straight. No rebound.",
-    "es": "No es un tobogán — es una montaña. La sombra sube hasta un pico luminoso alrededor de 1960, y después el terror baja durante sesenta años seguidos. Sin rebote."
+    "en": "It isn't a slide — it's a mountain. Shadow climbs to a daylight peak around 1970, then horror descends for fifty-odd years straight. No rebound.",
+    "es": "No es un tobogán — es una montaña. La sombra sube hasta un pico luminoso alrededor de 1970, y después el terror baja durante más de cincuenta años seguidos. Sin rebote."
   },
   {
     "id": "p2_why",
-    "en": "The 1960 peak isn't a coincidence. That was the atomic age — bright posters promised \"SEE! SHOCKING!\" alien invasions and mutant monsters, radiating Cold War panic in reds and yellows. Then Vietnam happened. Watergate happened. Horror stopped being about fantasy monsters and became about the real world. The lights dimmed. And they never came back.",
-    "es": "El pico de 1960 no es coincidencia. Era la era atómica — afiches brillantes prometían \"¡MIRA! ¡ATERRADOR!\" invasiones alienígenas y monstruos mutantes, irradiando pánico de Guerra Fría en rojos y amarillos. Después pasó Vietnam. Pasó Watergate. El terror dejó de ser sobre monstruos de fantasía y se volvió sobre el mundo real. Las luces se apagaron. Y nunca volvieron."
+    "en": "The 1970 peak isn't a coincidence. That was the tail of the atomic age — bright posters promised \"SEE! SHOCKING!\" alien invasions and mutant monsters, radiating Cold War panic in reds and yellows. Then Vietnam happened. Watergate happened. Horror stopped being about fantasy monsters and became about the real world. The lights dimmed. And they never came back.",
+    "es": "El pico de 1970 no es coincidencia. Era la cola de la era atómica — afiches brillantes prometían \"¡MIRA! ¡ATERRADOR!\" invasiones alienígenas y monstruos mutantes, irradiando pánico de Guerra Fría en rojos y amarillos. Después pasó Vietnam. Pasó Watergate. El terror dejó de ser sobre monstruos de fantasía y se volvió sobre el mundo real. Las luces se apagaron. Y nunca volvieron."
   },
   {
     "id": "p2_note_n",
-    "en": "FULL CENTURY — n = 37,829 posters (TMDB), 5-yr rolling mean.",
-    "es": "SIGLO COMPLETO — n = 37,829 pósters (TMDB), media móvil de 5 años."
+    "en": "FULL CENTURY — n = 33,619 posters (TMDB), 5-yr rolling mean.",
+    "es": "SIGLO COMPLETO — n = 33,619 pósters (TMDB), media móvil de 5 años."
   },
   {
     "id": "p2_note_strip",
@@ -438,13 +544,13 @@
   },
   {
     "id": "p3_why",
-    "en": "Why the delayed peak? The '80s slasher era was born from VHS. Over 1,700 horror films came out in that decade — posters had to scream red from a video store shelf just to compete. But by the 2000s, red had become a language. Meta-horror (<em>Scream</em>, <em>Saw</em>, <em>Final Destination</em>) used blood as an aesthetic — not a threat.",
-    "es": "¿Por qué el pico llegó tarde? La era slasher de los 80 nació del VHS. Más de 1,700 películas de terror salieron esa década — los afiches tenían que gritar rojo desde el estante del videoclub solo para competir. Pero para los 2000, el rojo ya se había vuelto un lenguaje. El meta-terror (<em>Scream</em>, <em>Saw</em>, <em>Destino Final</em>) usaba la sangre como estética — no como amenaza."
+    "en": "Why the delayed peak? The '80s slasher era was born from VHS. More than 1,300 horror films in this corpus came out in that decade — posters had to scream red from a video store shelf just to compete. But by the 2000s, red had become a language. Meta-horror (<em>Scream</em>, <em>Saw</em>, <em>Final Destination</em>) used blood as an aesthetic — not a threat.",
+    "es": "¿Por qué el pico llegó tarde? La era slasher de los 80 nació del VHS. Más de 1,300 películas de terror de este corpus salieron esa década — los afiches tenían que gritar rojo desde el estante del videoclub solo para competir. Pero para los 2000, el rojo ya se había vuelto un lenguaje. El meta-terror (<em>Scream</em>, <em>Saw</em>, <em>Destino Final</em>) usaba la sangre como estética — no como amenaza."
   },
   {
     "id": "p3_note_n",
-    "en": "FULL CENTURY — n = 37,829 posters (TMDB), 5-yr rolling mean.",
-    "es": "SIGLO COMPLETO — n = 37,829 pósters (TMDB), media móvil de 5 años."
+    "en": "FULL CENTURY — n = 33,619 posters (TMDB), 5-yr rolling mean.",
+    "es": "SIGLO COMPLETO — n = 33,619 pósters (TMDB), media móvil de 5 años."
   },
   {
     "id": "p3_note_strip",
@@ -483,8 +589,8 @@
   },
   {
     "id": "p4_vanishing",
-    "en": "<strong>The vanishing face.</strong> There's something primal about a face staring back from a poster: it tells you what to fear. In the 1940s that stare was nearly mandatory — 83% of sheets had one, the century's peak. Today, fewer than half do. Horror learned to be scarier by showing you less. What's scarier than a monster? Absence. And hiding inside the long retreat, one twist: the late '90s didn't add faces, it <em>zoomed in</em> on them. Average face size peaks in 1998 — the celebrity close-up era — at nearly twice its historic share of the sheet.",
-    "es": "<strong>La cara que desaparece.</strong> Hay algo primal en un rostro que te mira desde un afiche: te dice qué temer. En los años 40 esa mirada era casi obligatoria — el 83% de los afiches tenían una, el pico del siglo. Hoy, menos de la mitad la tienen. El terror aprendió a asustar mostrándote menos. ¿Qué es más aterrador que un monstruo? La ausencia. Y escondida dentro de esa larga retirada, un giro: los años 90 tardíos no agregaron caras, hicieron <em>zoom</em> sobre ellas. El tamaño promedio de la cara tiene su pico en 1998 — la era del primer plano de la celebridad — casi el doble de su porcentaje histórico del afiche."
+    "en": "<strong>The vanishing face.</strong> There's something primal about a face staring back from a poster: it tells you what to fear. In the 1940s that stare was nearly mandatory — 87% of sheets had one, the century's peak. The rolling curve hits 91% in 1945. Today, fewer than half do. Horror learned to be scarier by showing you less. What's scarier than a monster? Absence. And hiding inside the long retreat, one twist: the late '90s didn't add faces, it <em>zoomed in</em> on them. Average face size peaks in 1998 — the celebrity close-up era — at nearly twice its historic share of the sheet.",
+    "es": "<strong>La cara que desaparece.</strong> Hay algo primal en un rostro que te mira desde un afiche: te dice qué temer. En los años 40 esa mirada era casi obligatoria — el 87% de los afiches tenían una, el pico del siglo. La curva móvil llega al 91% en 1945. Hoy, menos de la mitad la tienen. El terror aprendió a asustar mostrándote menos. ¿Qué es más aterrador que un monstruo? La ausencia. Y escondida dentro de esa larga retirada, un giro: los años 90 tardíos no agregaron caras, hicieron <em>zoom</em> sobre ellas. El tamaño promedio de la cara tiene su pico en 1998 — la era del primer plano de la celebridad — casi el doble de su porcentaje histórico del afiche."
   },
   {
     "id": "p4_why",
@@ -493,8 +599,8 @@
   },
   {
     "id": "p4_faces_note_n",
-    "en": "FULL RUN — n = 37,829 posters (TMDB), YuNet face detection (validated against hand-checked artwork), 5-yr rolling mean. Counts are floors: small, profile, tilted, or heavily painted/illustrated faces can escape the detector.",
-    "es": "RECORRIDO COMPLETO — n = 37,829 pósters (TMDB), detección facial YuNet (validada contra arte revisado a mano), media móvil de 5 años. Los conteos son suelos: rostros pequeños, de perfil, inclinados o muy pintados/ilustrados pueden escapar al detector."
+    "en": "FULL RUN — n = 33,619 posters (TMDB), YuNet face detection (validated against hand-checked artwork), 5-yr rolling mean. Counts are floors: small, profile, tilted, or heavily painted/illustrated faces can escape the detector.",
+    "es": "RECORRIDO COMPLETO — n = 33,619 pósters (TMDB), detección facial YuNet (validada contra arte revisado a mano), media móvil de 5 años. Los conteos son suelos: rostros pequeños, de perfil, inclinados o muy pintados/ilustrados pueden escapar al detector."
   },
   {
     "id": "p4_faces_note_strip",
@@ -523,8 +629,8 @@
   },
   {
     "id": "p4_census_note_n",
-    "en": "FULL CENTURY — n = 37,829 posters, CLIP zero-shot vs 18-creature taxonomy (validated 10/10 on hand-checked artwork; labels below 0.5 confidence excluded). Shares are conservative floors; pre-1950 decades carry smaller samples.",
-    "es": "SIGLO COMPLETO — n = 37,829 pósters, CLIP zero-shot vs taxonomía de 18 criaturas (validado 10/10 en arte revisado a mano; etiquetas bajo 0.5 de confianza excluidas). Las cuotas son suelos conservadores; las décadas previas a 1950 cargan muestras más pequeñas."
+    "en": "FULL CENTURY — n = 33,619 posters, CLIP zero-shot vs 18-creature taxonomy (validated 10/10 on hand-checked artwork; labels below 0.5 confidence excluded). Shares are conservative floors; pre-1950 decades carry smaller samples.",
+    "es": "SIGLO COMPLETO — n = 33,619 pósters, CLIP zero-shot vs taxonomía de 18 criaturas (validado 10/10 en arte revisado a mano; etiquetas bajo 0.5 de confianza excluidas). Las cuotas son suelos conservadores; las décadas previas a 1950 cargan muestras más pequeñas."
   },
   {
     "id": "p4_census_note_strip",
@@ -563,8 +669,8 @@
   },
   {
     "id": "p5_quiet_note_n",
-    "en": "FULL RUN — n = 37,829 posters (TMDB), MSER text-region proxy, 5-yr rolling mean. Trend-comparable across eras; absolute level is an upper bound.",
-    "es": "RECORRIDO COMPLETO — n = 37,829 pósters (TMDB), proxy de regiones de texto MSER, media móvil de 5 años. Comparable en tendencia entre eras; el nivel absoluto es un techo."
+    "en": "FULL RUN — n = 33,619 posters (TMDB), MSER text-region proxy, 5-yr rolling mean. Trend-comparable across eras; absolute level is an upper bound.",
+    "es": "RECORRIDO COMPLETO — n = 33,619 pósters (TMDB), proxy de regiones de texto MSER, media móvil de 5 años. Comparable en tendencia entre eras; el nivel absoluto es un techo."
   },
   {
     "id": "p5_textlike_intro",
@@ -698,8 +804,8 @@
   },
   {
     "id": "stat_hitcher",
-    "en": "mirror similarity <b>0.59</b>",
-    "es": "similitud espejo <b>0.59</b>"
+    "en": "mirror similarity <b>0.60</b>",
+    "es": "similitud espejo <b>0.60</b>"
   },
   {
     "id": "fold_5",
@@ -708,8 +814,8 @@
   },
   {
     "id": "cap_ghostestate",
-    "en": "<b>Ghost Estate (2019)</b>The single lowest mirror-similarity score in the entire 37,829-poster dataset — on a poster that is, thematically, <em>about</em> a black/white split down the middle. The design quotes symmetry; the pixels don't deliver it.",
-    "es": "<b>Ghost Estate (2019)</b>La puntuación de similitud espejo más baja de todo el dataset de 37,829 pósters — en un póster que es, temáticamente, <em>sobre</em> una división blanco/negro por el medio. El diseño cita la simetría; los píxeles no la entregan."
+    "en": "<b>Ghost Estate (2019)</b>The single lowest mirror-similarity score in the entire 33,619-poster dataset — on a poster that is, thematically, <em>about</em> a black/white split down the middle. The design quotes symmetry; the pixels don't deliver it.",
+    "es": "<b>Ghost Estate (2019)</b>La puntuación de similitud espejo más baja de todo el dataset de 33,619 pósters — en un póster que es, temáticamente, <em>sobre</em> una división blanco/negro por el medio. El diseño cita la simetría; los píxeles no la entregan."
   },
   {
     "id": "stat_ghostestate",
@@ -718,8 +824,8 @@
   },
   {
     "id": "p5_sym_method_note",
-    "en": "White line = the fold the score uses. The pipeline measures per-pixel |gray − mirrored gray| at 64×96 across that midline — high scores mean the two halves nearly match; low scores mean they don't. Caveat: this is pixel-value mirror-match, not human-perceived balance — a centered subject on a split-tone background can score as \"asymmetric\" even when it reads as balanced. n = 37,829 (TMDB), full run.",
-    "es": "Línea blanca = el pliegue que usa el score. El pipeline mide por píxel |gris − gris espejado| a 64×96 a través de esa mediana — puntuaciones altas significan que las dos mitades casi coinciden; bajas, que no. Caveat: esto es coincidencia espejo de valores de píxel, no balance percibido por humanos — un sujeto centrado sobre un fondo de tono partido puede puntuar como “asimétrico” aunque se lea equilibrado. n = 37,829 (TMDB), recorrido completo."
+    "en": "White line = the fold the score uses. The pipeline measures per-pixel |gray − mirrored gray| at 64×96 across that midline — high scores mean the two halves nearly match; low scores mean they don't. Caveat: this is pixel-value mirror-match, not human-perceived balance — a centered subject on a split-tone background can score as \"asymmetric\" even when it reads as balanced. n = 33,619 (TMDB), full run.",
+    "es": "Línea blanca = el pliegue que usa el score. El pipeline mide por píxel |gris − gris espejado| a 64×96 a través de esa mediana — puntuaciones altas significan que las dos mitades casi coinciden; bajas, que no. Caveat: esto es coincidencia espejo de valores de píxel, no balance percibido por humanos — un sujeto centrado sobre un fondo de tono partido puede puntuar como “asimétrico” aunque se lea equilibrado. n = 33,619 (TMDB), recorrido completo."
   },
   {
     "id": "p5_diag_body",
@@ -728,8 +834,8 @@
   },
   {
     "id": "p5_diag_note_n",
-    "en": "FULL RUN — n = 37,829 posters, share of Hough-detected line length at a 25–65° angle, 5-yr mean. A real share of this is stylized diagonal title lettering, not only figure pose — see Sources.",
-    "es": "RECORRIDO COMPLETO — n = 37,829 pósters, cuota de longitud de líneas detectadas por Hough a un ángulo de 25–65°, media de 5 años. Una parte real de esto es letraje de título estilizado en diagonal, no solo la pose de la figura — ver Fuentes."
+    "en": "FULL RUN — n = 33,619 posters, share of Hough-detected line length at a 25–65° angle, 5-yr mean. A real share of this is stylized diagonal title lettering, not only figure pose — see Sources.",
+    "es": "RECORRIDO COMPLETO — n = 33,619 pósters, cuota de longitud de líneas detectadas por Hough a un ángulo de 25–65°, media de 5 años. Una parte real de esto es letraje de título estilizado en diagonal, no solo la pose de la figura — ver Fuentes."
   },
   {
     "id": "p5_diag_intro",
@@ -803,8 +909,8 @@
   },
   {
     "id": "p6_body",
-    "en": "Color wasn't the only language on the sheet — so was the title. And titles got quieter too. In the 1940s, <strong>63%</strong> of posters wore ornate display lettering. Barely 4% were minimal. By the 2020s that flipped — ornate down to 12%, minimal up to <strong>32%</strong>, now the single largest register. Fear stopped shouting its own name.",
-    "es": "El color no era el único lenguaje del afiche — también el título. Y los títulos también se callaron. En los años 40, el <strong>63%</strong> de los afiches tenían letras ornamentadas de exhibición. Apenas el 4% eran minimalistas. Para los 2020 eso se invirtió — ornamentado hasta 12%, minimalista hasta <strong>32%</strong>, ahora el registro más común. El terror dejó de gritar su propio nombre."
+    "en": "Color wasn't the only language on the sheet — so was the title. And titles got quieter too. In the 1940s, <strong>62%</strong> of posters wore ornate display lettering. Barely 3% were minimal. By the 2020s that flipped — ornate down to 12%, minimal up to <strong>29%</strong>, now the single largest register. Fear stopped shouting its own name.",
+    "es": "El color no era el único lenguaje del afiche — también el título. Y los títulos también se callaron. En los años 40, el <strong>62%</strong> de los afiches tenían letras ornamentadas de exhibición. Apenas el 3% eran minimalistas. Para los 2020 eso se invirtió — ornamentado hasta 12%, minimalista hasta <strong>29%</strong>, ahora el registro más común. El terror dejó de gritar su propio nombre."
   },
   {
     "id": "p6_why",
@@ -813,8 +919,8 @@
   },
   {
     "id": "p6_note_n",
-    "en": "FULL CENTURY — n = 37,829 posters (TMDB). Registers are quintiles of an ornate↔minimal typographic axis (CLIP zero-shot on the whole poster: similarity to \"ornate hand-drawn display lettering\" minus \"clean minimal type\"). Validated against hand-ranked specimens (corr 0.81); decade trend r = −0.93. This measures the <em>decorative character</em> of the title treatment, not a specific typeface — a proxy, honest about its limits: reading the exact letterforms of stylized horror titles defeats OCR and font-ID models alike.",
-    "es": "SIGLO COMPLETO — n = 37,829 pósters (TMDB). Los registros son quintiles de un eje tipográfico ornate↔minimal (CLIP zero-shot sobre el póster entero: similitud a “ornate hand-drawn display lettering” menos “clean minimal type”). Validado contra especímenes ordenados a mano (corr 0.81); tendencia por década r = −0.93. Esto mide el <em>carácter decorativo</em> del tratamiento del título, no una tipografía concreta — un proxy, honesto sobre sus límites: leer las formas exactas de títulos de terror estilizados derrota por igual a OCR y a modelos de ID de fuentes."
+    "en": "FULL CENTURY — n = 33,619 posters (TMDB). Registers are quintiles of an ornate↔minimal typographic axis (CLIP zero-shot on the whole poster: similarity to \"ornate hand-drawn display lettering\" minus \"clean minimal type\"). Validated against hand-ranked specimens (corr 0.81); decade trend r = −0.93. This measures the <em>decorative character</em> of the title treatment, not a specific typeface — a proxy, honest about its limits: reading the exact letterforms of stylized horror titles defeats OCR and font-ID models alike.",
+    "es": "SIGLO COMPLETO — n = 33,619 pósters (TMDB). Los registros son quintiles de un eje tipográfico ornate↔minimal (CLIP zero-shot sobre el póster entero: similitud a “ornate hand-drawn display lettering” menos “clean minimal type”). Validado contra especímenes ordenados a mano (corr 0.81); tendencia por década r = −0.93. Esto mide el <em>carácter decorativo</em> del tratamiento del título, no una tipografía concreta — un proxy, honesto sobre sus límites: leer las formas exactas de títulos de terror estilizados derrota por igual a OCR y a modelos de ID de fuentes."
   },
   {
     "id": "p6_tag_ornate",
@@ -853,8 +959,8 @@
   },
   {
     "id": "p7_note_n",
-    "en": "Pixel-red: FULL CENTURY, n=37,829 (TMDB). Model-detected blood: FULL RUN, n=37,829, CLIP zero-shot per 2×2 poster patch — validated against hand-inspected artwork (Jaws, Friday the 13th, Blair Witch) before trusting it. Decade means.",
-    "es": "Rojo-píxel: SIGLO COMPLETO, n=37,829 (TMDB). Sangre detectada por modelo: RECORRIDO COMPLETO, n=37,829, CLIP zero-shot por parche 2×2 del póster — validado contra arte inspeccionado a mano (Jaws, Friday the 13th, Blair Witch) antes de confiar en él. Medias por década."
+    "en": "Pixel-red: FULL CENTURY, n=33,619 (TMDB). Model-detected blood: FULL RUN, n=33,619, CLIP zero-shot per 2×2 poster patch — validated against hand-inspected artwork (Jaws, Friday the 13th, Blair Witch) before trusting it. Decade means.",
+    "es": "Rojo-píxel: SIGLO COMPLETO, n=33,619 (TMDB). Sangre detectada por modelo: RECORRIDO COMPLETO, n=33,619, CLIP zero-shot por parche 2×2 del póster — validado contra arte inspeccionado a mano (Jaws, Friday the 13th, Blair Witch) antes de confiar en él. Medias por década."
   },
   {
     "id": "p7_note_strip",
@@ -873,8 +979,8 @@
   },
   {
     "id": "p7_note_select",
-    "en": "Both rows drawn from the full-run blood model (n=37,829) as the chart above; \"blood\" = clip_blood zero-shot score. Bottom-row specimens hand-checked for literal blood — early high scores often fire on red cloth or type instead; the first cell is the earliest verified case shown (1959).",
-    "es": "Ambas filas tomadas del modelo de sangre a recorrido completo (n=37,829) del gráfico de arriba; \"sangre\" = score zero-shot clip_blood. Especímenes de la fila inferior revisados a mano en busca de sangre literal — las puntuaciones altas tempranas a menudo disparan sobre tela roja o tipografía; la primera celda es el caso verificado más temprano mostrado (1959)."
+    "en": "Both rows drawn from the full-run blood model (n=33,619) as the chart above; \"blood\" = clip_blood zero-shot score. Bottom-row specimens hand-checked for literal blood — early high scores often fire on red cloth or type instead; the first cell is the earliest verified case shown (1959).",
+    "es": "Ambas filas tomadas del modelo de sangre a recorrido completo (n=33,619) del gráfico de arriba; \"sangre\" = score zero-shot clip_blood. Especímenes de la fila inferior revisados a mano en busca de sangre literal — las puntuaciones altas tempranas a menudo disparan sobre tela roja o tipografía; la primera celda es el caso verificado más temprano mostrado (1959)."
   },
   {
     "id": "exb_title",
@@ -978,8 +1084,8 @@
   },
   {
     "id": "exb_method_note",
-    "en": "Grid & alignment via connected-component clustering of MSER text regions + gradient-magnitude contours (no LayoutParser/Detectron2 — see Sources). Balance via saliency-map centroid (OpenCV StaticSaliencySpectralResidual). Caveat: for full-bleed painted posters without one isolated figure, the \"main visual mass\" box can span nearly the whole sheet — thirds-distance then measures the whole composition's center of gravity, not one subject's placement. n = 37,829 (TMDB), full run.",
-    "es": "Rejilla y alineación vía clustering de componentes conectados de regiones de texto MSER + contornos de magnitud de gradiente (sin LayoutParser/Detectron2 — ver Fuentes). Balance vía centroide del mapa de saliencia (OpenCV StaticSaliencySpectralResidual). Caveat: en pósters pintados a sangre completa sin una figura aislada, la caja de “masa visual principal” puede abarcar casi toda la hoja — la distancia a tercios mide entonces el centro de gravedad de toda la composición, no la colocación de un sujeto. n = 37,829 (TMDB), recorrido completo."
+    "en": "Grid & alignment via connected-component clustering of MSER text regions + gradient-magnitude contours (no LayoutParser/Detectron2 — see Sources). Balance via saliency-map centroid (OpenCV StaticSaliencySpectralResidual). Caveat: for full-bleed painted posters without one isolated figure, the \"main visual mass\" box can span nearly the whole sheet — thirds-distance then measures the whole composition's center of gravity, not one subject's placement. n = 33,619 (TMDB), full run.",
+    "es": "Rejilla y alineación vía clustering de componentes conectados de regiones de texto MSER + contornos de magnitud de gradiente (sin LayoutParser/Detectron2 — ver Fuentes). Balance vía centroide del mapa de saliencia (OpenCV StaticSaliencySpectralResidual). Caveat: en pósters pintados a sangre completa sin una figura aislada, la caja de “masa visual principal” puede abarcar casi toda la hoja — la distancia a tercios mide entonces el centro de gravedad de toda la composición, no la colocación de un sujeto. n = 33,619 (TMDB), recorrido completo."
   },
   {
     "id": "pyramid_intro",
@@ -1038,8 +1144,8 @@
   },
   {
     "id": "pyramid_note",
-    "en": "Bands: energy-weighted horizontal spread of gradient magnitude per 8 vertical bins, drawn at their real measured width and position. Picked for a clean, unambiguous signal — filtered out logo-only title cards and letterboxed video-still posters, which can fake the same number without a real compositional pyramid behind it. Across the full 37,829-poster dataset this measure averages out to roughly zero by decade — top-heavy and bottom-heavy compositions largely cancel out. It's a real per-poster signature, not a century-level trend (unlike diagonal composition — see Part V).",
-    "es": "Bandas: extensión horizontal ponderada por energía de la magnitud del gradiente por 8 bins verticales, dibujadas a su ancho y posición medidos reales. Elegidas por una señal limpia e inequívoca — filtramos carteles de solo logo y pósters letterbox de fotogramas de video, que pueden falsificar el mismo número sin una pirámide composicional real detrás. En todo el dataset de 37,829 pósters esta medida promedia más o menos cero por década — las composiciones con peso arriba y abajo se cancelan en gran medida. Es una firma real por póster, no una tendencia a escala de siglo (a diferencia de la composición diagonal — ver Parte V)."
+    "en": "Bands: energy-weighted horizontal spread of gradient magnitude per 8 vertical bins, drawn at their real measured width and position. Picked for a clean, unambiguous signal — filtered out logo-only title cards and letterboxed video-still posters, which can fake the same number without a real compositional pyramid behind it. Across the full 33,619-poster dataset this measure averages out to roughly zero by decade — top-heavy and bottom-heavy compositions largely cancel out. It's a real per-poster signature, not a century-level trend (unlike diagonal composition — see Part V).",
+    "es": "Bandas: extensión horizontal ponderada por energía de la magnitud del gradiente por 8 bins verticales, dibujadas a su ancho y posición medidos reales. Elegidas por una señal limpia e inequívoca — filtramos carteles de solo logo y pósters letterbox de fotogramas de video, que pueden falsificar el mismo número sin una pirámide composicional real detrás. En todo el dataset de 33,619 pósters esta medida promedia más o menos cero por década — las composiciones con peso arriba y abajo se cancelan en gran medida. Es una firma real por póster, no una tendencia a escala de siglo (a diferencia de la composición diagonal — ver Parte V)."
   },
   {
     "id": "bridge_title",
@@ -1057,19 +1163,36 @@
     "es": "Los afiches no mienten. Te cuentan todo sobre qué nos asustó, cuándo y por qué. Solo tienes que saber cómo leerlos."
   },
   {
+    "id": "lookup_kicker",
+    "en": "Act II · Autopsy",
+    "es": "Acto II · Autopsia"
+  },
+  {
     "id": "lookup_title",
     "en": "Dissect any poster",
     "es": "Disecciona cualquier póster"
   },
   {
     "id": "lookup_body",
-    "en": "Type any title from the corpus. The panel below pulls every measurement we have for that sheet — color, faces, creature, lettering, composition, and semantic CLIP tags like blood or weapon.",
-    "es": "Escribe cualquier título del corpus. El panel de abajo trae cada medición que tenemos de esa hoja — color, rostros, criatura, letraje, composición y etiquetas semánticas CLIP como sangre o arma."
+    "en": "Click any sheet in the century above — or search a title. The one-sheet takes the light table. Scroll and the same measurements we ran on all 33,619 posters peel off in layers: color, faces, lettering, creature, composition, pose.",
+    "es": "Haz clic en cualquier hoja del siglo de arriba — o busca un título. El one-sheet entra a la mesa de luz. Al desplazarte, las mismas mediciones que corrimos en los 33,619 pósters se despegan en capas: color, rostros, letraje, criatura, composición, pose."
   },
   {
     "id": "lookup_placeholder",
-    "en": "Search a title — Halloween, Nosferatu, The Thing…",
-    "es": "Busca un título — Halloween, Nosferatu, The Thing…"
+    "en": "Search a title — Halloween, Dracula, The Thing…",
+    "es": "Busca un título — Halloween, Dracula, The Thing…"
+  },
+  {
+    "id": "autopsy_picks_label",
+    "en": "Or start with a known nightmare",
+    "es": "O empieza con una pesadilla conocida"
+  },
+  {
+    "id": "aria_lookup",
+    "aria_en": "Dissect any poster",
+    "aria_es": "Disecciona cualquier póster",
+    "en": "Dissect any poster",
+    "es": "Disecciona cualquier póster"
   },
   {
     "id": "explore_kicker",
@@ -1078,8 +1201,8 @@
   },
   {
     "id": "explore_title",
-    "en": "37,829 Nightmares",
-    "es": "37,829 pesadillas"
+    "en": "33,619 Nightmares",
+    "es": "33,619 pesadillas"
   },
   {
     "id": "explore_body",
@@ -1098,8 +1221,8 @@
   },
   {
     "id": "about_body",
-    "en": "From TMDB's ~72,000 Horror titles I kept <strong>37,829</strong> English-language posters with usable art — 1897 to 2028. Filters: English only, no Animation, no Music. No date cut. Then I measured every sheet the same way. The fine print is at the end, if you want it.",
-    "es": "De los ~72,000 títulos de terror en TMDB me quedé con <strong>37,829</strong> afiches en inglés con arte usable — 1897 a 2028. Filtros: solo inglés, sin Animación, sin Música. Sin corte por fecha. Luego medí cada uno igual. La letra chica está al final, si la quieres ver."
+    "en": "From TMDB Horror titles I kept <strong>33,619</strong> English-language posters with usable art — 1900 to 2026. Filters: already released, no adult flag, no Animation, Music, or TV Movie, plus the existing exclusion lists. Then I measured every sheet the same way. The fine print is at the end, if you want it.",
+    "es": "De los títulos de terror en TMDB me quedé con <strong>33,619</strong> afiches en inglés con arte usable — 1900 a 2026. Filtros: ya estrenadas, sin marca de adulto, sin Animación, Música ni TV Movie, más las listas de exclusión. Luego medí cada uno igual. La letra chica está al final, si la quieres ver."
   },
   {
     "id": "sources_summary",
@@ -1108,8 +1231,8 @@
   },
   {
     "id": "sources_corpus",
-    "en": "Film list and poster images from <a href=\"https://www.themoviedb.org/\">The Movie Database (TMDB)</a>: ~72,000 Horror-tagged features, of which <strong>37,829</strong> (1897–2028) English-language posters with usable artwork were analyzed — no release-year cutoff. Inclusion rule: English + usable poster; exclude Animation and Music. Excluded after review: titles genre-tagged \"Animation\" and \"Music\", plus films whose TMDB <code>original_language</code> is not English (~8,907) — non-English lettering skewed typography/OCR metrics. Also excluded: non-portrait local artwork (landscape/square, 401) and TMDB movie ids that now 404 (48). Lists in <code>pipeline/data/excluded_*.csv</code>. Kept 629 early titles missing language metadata (mostly silent-era). TMDB \"TV Movie\" telefilms are kept on purpose — single films made for television, not episodic series.",
-    "es": "Lista de películas e imágenes de afiches de <a href=\"https://www.themoviedb.org/\">The Movie Database (TMDB)</a>: ~72,000 largometrajes etiquetados Horror, de los cuales <strong>37,829</strong> (1897–2028) afiches en inglés con arte usable fueron analizados — sin corte por año de estreno. Regla de inclusión: inglés + afiche usable; excluir Animación y Música. Excluidos tras revisión: títulos con etiqueta de género \"Animation\" y \"Music\", más películas cuyo <code>original_language</code> de TMDB no es inglés (~8,907) — el letraje no inglés sesgaba tipografía/OCR —, más arte local no vertical (landscape/cuadrado, 401) e ids de película TMDB que ahora dan 404 (48). Listas en <code>pipeline/data/excluded_*.csv</code>. Se conservaron 629 títulos tempranos sin metadatos de idioma (sobre todo era muda). Los telefilmes \"TV Movie\" de TMDB se conservan a propósito — películas sueltas hechas para televisión, no series episódicas."
+    "en": "Film list and poster images from <a href=\"https://www.themoviedb.org/\">The Movie Database (TMDB)</a>. The published corpus is <strong>33,619</strong> English-language horror features, already released, with a servable poster, a valid year (1900–2026), no adult flag, and without Animation, Music, or TV Movie. Existing exclusion lists in <code>pipeline/data/excluded_*.csv</code> still apply. The id list is <code>pipeline/data/canonical_ids.txt</code> (see <code>docs/CORPUS.md</code>).",
+    "es": "Lista de películas e imágenes de afiches de <a href=\"https://www.themoviedb.org/\">The Movie Database (TMDB)</a>. El corpus publicado son <strong>33,619</strong> largometrajes de terror en inglés, ya estrenados, con póster servible, año válido (1900–2026), sin filtro de adulto, y sin Animación, Música ni TV Movie. Siguen aplicando las listas de exclusión en <code>pipeline/data/excluded_*.csv</code>. El listado de ids es <code>pipeline/data/canonical_ids.txt</code> (ver <code>docs/CORPUS.md</code>)."
   },
   {
     "id": "sources_measures",
@@ -1134,6 +1257,16 @@
     "es": "Historias de datos con dientes · medium.com/pulp-analytics"
   },
   {
+    "id": "footer_demo",
+    "en": "VHS demo · Halloween",
+    "es": "Demo VHS · Halloween"
+  },
+  {
+    "id": "footer_github",
+    "en": "Code & data on GitHub",
+    "es": "Código y datos en GitHub"
+  },
+  {
     "id": "meta_title",
     "en": "What Fear Looks Like — Pulp Analytics",
     "es": "Cómo se ve el miedo — Pulp Analytics",
@@ -1142,13 +1275,13 @@
   },
   {
     "id": "meta_description",
-    "en": "Horror didn't get scarier. It got quieter. A data analysis of 37,829 horror movie posters (1897–2028): color, darkness, faces, creatures.",
-    "es": "El terror no se volvió más aterrador. Bajó la voz. Un análisis de datos de 37,829 afiches de cine de terror (1897–2028): color, oscuridad, rostros, criaturas."
+    "en": "Horror didn't get scarier. It got quieter. A data analysis of 33,619 horror movie posters (1900–2026): color, darkness, faces, creatures.",
+    "es": "El terror no se volvió más aterrador. Bajó la voz. Un análisis de datos de 33,619 afiches de cine de terror (1900–2026): color, oscuridad, rostros, criaturas."
   },
   {
     "id": "meta_og_title",
-    "en": "What Fear Looks Like: 37,829 horror posters, measured",
-    "es": "Cómo se ve el miedo: 37,829 afiches de terror, medidos"
+    "en": "What Fear Looks Like: 33,619 horror posters, measured",
+    "es": "Cómo se ve el miedo: 33,619 afiches de terror, medidos"
   },
   {
     "id": "meta_og_description",

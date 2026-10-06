@@ -24,12 +24,16 @@ pipeline/data/*_partial.json
 
 # staging / backups / transfer tarballs (local only)
 pipeline/data/_bak_*/
+*.bak_*
+pipeline/data/site_globals_full/
+pipeline/data/qa/tmdb_details/
 pipeline/data/_*_stage/
 pipeline/data/qa/_*_stage/
 pipeline/data/qa/tmdb_api_key
 
 # jobs dashboard runtime (poller writes; live data lives on S3)
 pipeline/data/qa/jobs_dashboard/
+pipeline/data/qa/jev_pilot/posters/
 site/jobs-dashboard/status.json
 site/jobs-dashboard/events.log
 site/jobs-dashboard/*.log
@@ -68,4 +72,3 @@ site/tv-movie-review.html
 pipeline/data/rekognition.log
 pipeline/data/title_boxes.log
 pipeline/data/title_boxes_rekognition.log
-_site_pages/
