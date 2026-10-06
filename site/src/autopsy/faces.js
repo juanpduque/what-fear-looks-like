@@ -68,6 +68,19 @@ export function resolveFaces(a, p) {
   };
 }
 
+export function novaFaceCount(a) {
+  if (a?.nova_faces == null || a.nova_faces === '') return null;
+  const n = Number(a.nova_faces);
+  return Number.isFinite(n) ? n : null;
+}
+
+function novaNote(a, yunet) {
+  const nova = novaFaceCount(a);
+  if (nova == null) return '';
+  const key = nova === yunet ? 'autopsy_body_faces_nova_agree' : 'autopsy_body_faces_nova';
+  return ` ${t(key, { nova })}`;
+}
+
 export function faceBody(a, p) {
   const r = resolveFaces(a, p);
   const vars = {
@@ -76,16 +89,19 @@ export function faceBody(a, p) {
     yunet: r.yunet,
     rek: r.rek == null ? '—' : r.rek,
   };
+  let body;
   if (r.n <= 0) {
-    if (r.rek == null) return t('autopsy_body_faces_none');
-    return t('autopsy_body_faces_none_agree', vars);
+    body = r.rek == null ? t('autopsy_body_faces_none') : t('autopsy_body_faces_none_agree', vars);
+  } else if (r.source === 'rek') {
+    body = t(r.fboxes.length ? 'autopsy_body_faces_rek_box' : 'autopsy_body_faces_rek', vars);
+  } else if (!r.agreed) {
+    body = t('autopsy_body_faces_disagree', vars);
+  } else if (r.source === 'agree') {
+    body = t('autopsy_body_faces_agree', vars);
+  } else {
+    body = t('autopsy_body_faces', vars);
   }
-  if (r.source === 'rek') {
-    return t(r.fboxes.length ? 'autopsy_body_faces_rek_box' : 'autopsy_body_faces_rek', vars);
-  }
-  if (!r.agreed) return t('autopsy_body_faces_disagree', vars);
-  if (r.source === 'agree') return t('autopsy_body_faces_agree', vars);
-  return t('autopsy_body_faces', vars);
+  return body + novaNote(a, r.yunet);
 }
 
 export function faceLab(a, p) {

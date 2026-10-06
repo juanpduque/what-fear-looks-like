@@ -47,6 +47,10 @@ taxonomías (`animal` colapsado en JEV vs `shark` / `spider` / … en CLIP).
 ## QA / gold
 
 - Faces: YuNet floor documentado en el essay; gap YuNet=0∩Rek>0 es rescate UI, no essay.
+  Nova `nova_faces` (de `qa_faces.csv`) se muestra en autopsy como nota QA; no entra a `resolveFaces` ni al essay.
+- Creature census: CLIP es el dueño; Nova `nova_creature` (`qa_census.csv`) es nota QA en autopsy.
+- Typography: CLIP register es el dueño; Nova `nova_typo` (`qa_typography.csv`) es nota QA.
+- Title OCR: Nova `nova_title` / `nova_ocr` (`qa_title_ocr.csv`) es nota QA del título; no sustituye la caja de texto.
 - Creature/weapon boxes: `pipeline/qa_creature_weapon_boxes.py` + veredictos Nova.
 - JEV gold: `pipeline/data/qa/jev_pilot/gold.json` + `SUMMARY.md`.
 

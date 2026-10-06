@@ -6,8 +6,10 @@ segmentation into one id-keyed object. Run after pipeline CSVs update:
   python3 build_lookup.py
 
 Schema (LOOKUP[id]):
-  t,y,path,L,dark,sat,red,pal,bands[6],faces,farea,creature,cscore,
+  t,y,path,L,dark,sat,red,pal,bands[6],faces,farea,nova_faces?,
+  nova_creature?,nova_typo?,nova_title?,nova_ocr?,creature,cscore,
   typo,taxis,painted,comp{...},sem{...}?
+  nova_* fields are Nova Pro QA (pipeline/data/qa/qa_*.csv); display only.
 """
 from __future__ import annotations
 
@@ -52,6 +54,22 @@ def parse_list(val):
         return []
 
 
+def clip_text(val, n=48):
+    s = "" if val is None or (isinstance(val, float) and pd.isna(val)) else str(val).strip()
+    if not s:
+        return ""
+    return s if len(s) <= n else s[: n - 1] + "…"
+
+
+def load_qa_ok(path, cols):
+    if not path.exists():
+        return []
+    qa = pd.read_csv(path, usecols=cols)
+    if "status" in qa.columns:
+        qa = qa[qa["status"] == "ok"]
+    return qa.itertuples(index=False)
+
+
 def parse_boxes(raw):
     """'x,y,w,h|x,y,w,h' (normalized) -> [[x,y,w,h], ...]."""
     if raw is None or str(raw) in ("", "nan"):
@@ -80,6 +98,48 @@ def main():
     seg = pd.read_csv(DATA / "segmentation.csv").set_index("id")
     rek_path = DATA / "rekognition.csv"
     rek = pd.read_csv(rek_path).set_index("id") if rek_path.exists() else None
+    nova_faces: dict[int, int] = {}
+    for row in load_qa_ok(DATA / "qa" / "qa_faces.csv", ["id", "status", "nova_n_faces"]):
+        try:
+            nova_faces[int(row.id)] = int(float(row.nova_n_faces))
+        except (TypeError, ValueError):
+            continue
+
+    nova_creature: dict[int, str] = {}
+    for row in load_qa_ok(DATA / "qa" / "qa_census.csv", ["id", "status", "nova_label"]):
+        try:
+            pid = int(row.id)
+        except (TypeError, ValueError):
+            continue
+        lab = clip_text(row.nova_label, 32)
+        if lab:
+            nova_creature[pid] = lab
+
+    nova_typo: dict[int, str] = {}
+    for row in load_qa_ok(DATA / "qa" / "qa_typography.csv", ["id", "status", "nova_register"]):
+        try:
+            pid = int(row.id)
+        except (TypeError, ValueError):
+            continue
+        reg = clip_text(row.nova_register, 16)
+        if reg:
+            nova_typo[pid] = reg
+
+    nova_ocr: dict[int, tuple[str, str]] = {}
+    ocr_ok = {"accurate", "inaccurate", "no_title_on_poster"}
+    for row in load_qa_ok(
+        DATA / "qa" / "qa_title_ocr.csv",
+        ["id", "status", "nova_text", "verdict"],
+    ):
+        try:
+            pid = int(row.id)
+        except (TypeError, ValueError):
+            continue
+        verdict = clip_text(row.verdict, 24)
+        if verdict not in ocr_ok:
+            continue
+        nova_ocr[pid] = (clip_text(row.nova_text), verdict)
+
     rek_boxes = {}
     rek_boxes_path = DATA / "rekognition_face_boxes.csv"
     if rek_boxes_path.exists():
@@ -113,6 +173,21 @@ def main():
             "faces": int(f.n_faces) if f is not None else 0,
             "farea": r(f.face_area) if f is not None else 0,
         }
+        nf = nova_faces.get(i)
+        if nf is not None:
+            rec["nova_faces"] = nf
+        nc = nova_creature.get(i)
+        if nc is not None:
+            rec["nova_creature"] = nc
+        nt = nova_typo.get(i)
+        if nt is not None:
+            rec["nova_typo"] = nt
+        ocr = nova_ocr.get(i)
+        if ocr is not None:
+            title, verdict = ocr
+            rec["nova_ocr"] = verdict
+            if title:
+                rec["nova_title"] = title
         if f is not None:
             fboxes = parse_boxes(getattr(f, "face_boxes", None))
             if fboxes:
