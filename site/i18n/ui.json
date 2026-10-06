@@ -1023,6 +1023,10 @@
     "en": "keypoint conf. {v}",
     "es": "confianza kpt. {v}"
   },
+  "lab_pose_no_skel": {
+    "en": "skeleton not stored",
+    "es": "esqueleto no guardado"
+  },
   "autopsy_picks_label": {
     "en": "Or start with a known nightmare",
     "es": "O empieza con una pesadilla conocida"
@@ -1103,6 +1107,18 @@
     "en": "YuNet and Rekognition both saw no face ({yunet} / {rek}). The modern sheet often sells an object, a house, a shape in the dark — not a star.",
     "es": "YuNet y Rekognition no vieron rostro ({yunet} / {rek}). La hoja moderna suele vender un objeto, una casa, una forma en la oscuridad — no una estrella."
   },
+  "autopsy_body_faces_nova": {
+    "en": "Nova Pro (QA) counted {nova} — not the published count, and it draws no boxes.",
+    "es": "Nova Pro (QA) contó {nova} — no es el conteo publicado y no dibuja cajas."
+  },
+  "autopsy_body_faces_nova_agree": {
+    "en": "Nova Pro (QA) also counted {nova}.",
+    "es": "Nova Pro (QA) también contó {nova}."
+  },
+  "lab_faces_nova": {
+    "en": "Nova {n} · QA",
+    "es": "Nova {n} · QA"
+  },
   "lab_faces_rek": {
     "en": "{n} face · Rekognition (YuNet missed)",
     "es": "{n} rostro · Rekognition (YuNet no lo vio)"
@@ -1138,6 +1154,58 @@
   "autopsy_body_creature_none": {
     "en": "Nothing in the creature taxonomy cleared the confidence floor. Absence is a result — a lot of modern horror sells dread without a monster you can name.",
     "es": "Nada en la taxonomía de criaturas superó el umbral. La ausencia es un resultado: mucho terror moderno vende el miedo sin un monstruo que puedas nombrar."
+  },
+  "autopsy_body_creature_nova": {
+    "en": "Nova Pro (QA) called {c} — not the published CLIP census.",
+    "es": "Nova Pro (QA) llamó {c} — no es el censo CLIP publicado."
+  },
+  "autopsy_body_creature_nova_agree": {
+    "en": "Nova Pro (QA) also called {c}.",
+    "es": "Nova Pro (QA) también llamó {c}."
+  },
+  "lab_creature_nova": {
+    "en": "Nova {c} · QA",
+    "es": "Nova {c} · QA"
+  },
+  "autopsy_body_letter_nova": {
+    "en": "Nova Pro (QA) read the title lettering as {typo} — not the published CLIP register.",
+    "es": "Nova Pro (QA) leyó el letraje como {typo} — no es el registro CLIP publicado."
+  },
+  "autopsy_body_letter_nova_agree": {
+    "en": "Nova Pro (QA) also read the lettering as {typo}.",
+    "es": "Nova Pro (QA) también leyó el letraje como {typo}."
+  },
+  "autopsy_body_letter_nova_ocr": {
+    "en": "Nova Pro (QA) read the title as “{title}” ({verdict}).",
+    "es": "Nova Pro (QA) leyó el título como “{title}” ({verdict})."
+  },
+  "autopsy_body_letter_nova_ocr_empty": {
+    "en": "Nova Pro (QA) saw no title on the sheet ({verdict}).",
+    "es": "Nova Pro (QA) no vio título en la hoja ({verdict})."
+  },
+  "lab_letter_nova": {
+    "en": "Nova {typo} · QA",
+    "es": "Nova {typo} · QA"
+  },
+  "lab_letter_nova_ocr": {
+    "en": "Nova “{title}” · QA",
+    "es": "Nova “{title}” · QA"
+  },
+  "lab_letter_nova_ocr_empty": {
+    "en": "Nova · no title · QA",
+    "es": "Nova · sin título · QA"
+  },
+  "nova_ocr_accurate": {
+    "en": "accurate",
+    "es": "preciso"
+  },
+  "nova_ocr_inaccurate": {
+    "en": "inaccurate",
+    "es": "impreciso"
+  },
+  "nova_ocr_no_title_on_poster": {
+    "en": "no title",
+    "es": "sin título"
   },
   "autopsy_kicker_composition": {
     "en": "VI · The frame",

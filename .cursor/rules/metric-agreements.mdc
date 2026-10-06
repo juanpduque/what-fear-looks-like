@@ -9,7 +9,7 @@ Leer y respetar `docs/METRIC_AGREEMENTS.md`.
 
 Resumen operativo:
 
-- **Ensayo caras / series:** solo YuNet. Autopsy: `resolveFaces` (YuNet primario; Rek solo si YuNet=0).
-- **Ensayo criaturas:** CLIP census. Autopsy: etiqueta CLIP; cajas OWL solo si label coincide y score ≥ 0.3; sin fallback a todas las cajas.
+- **Ensayo caras / series:** solo YuNet. Autopsy: `resolveFaces` (YuNet primario; Rek solo si YuNet=0). Nova `nova_faces` es nota QA, no voto.
+- **Ensayo criaturas:** CLIP census. Autopsy: etiqueta CLIP; cajas OWL solo si label coincide y score ≥ 0.3; sin fallback a todas las cajas. Nova `nova_creature` / `nova_typo` / `nova_ocr` son notas QA.
 - **Armas:** presencia Rek `rek_weapon≥0.5` (o CLIP familia); no contar OWL crudo en essay.
 - **Pósters:** `poster_src` sidecar; nunca URLs Amazon en `poster_path` TMDB; `no_poster` fuera del sitio.

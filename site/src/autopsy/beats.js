@@ -1,6 +1,7 @@
 import { pct, num } from '../shared/format.js';
 import { BEAT_MODES, creatureLabel } from './layers.js';
 import { faceBody } from './faces.js';
+import { novaCreatureNote, novaLetterNote } from './nova.js';
 
 const t = (...args) =>
   typeof window.t === 'function' ? window.t(...args) : args[0];
@@ -160,12 +161,13 @@ export function buildBeats(p, a) {
       tilt: 0,
       kicker: t('autopsy_kicker_letter'),
       title: t('autopsy_title_letter'),
-      body: t('autopsy_body_letter', {
-        typo: a.typo || '—',
-        taxis: a.taxis == null ? '—' : num(a.taxis, 2),
-        txt: pct(comp.txt),
-        painted: a.painted == null ? '—' : pct(a.painted),
-      }),
+      body:
+        t('autopsy_body_letter', {
+          typo: a.typo || '—',
+          taxis: a.taxis == null ? '—' : num(a.taxis, 2),
+          txt: pct(comp.txt),
+          painted: a.painted == null ? '—' : pct(a.painted),
+        }) + novaLetterNote(a),
     },
     {
       id: 'creature',
@@ -173,12 +175,12 @@ export function buildBeats(p, a) {
       kicker: t('autopsy_kicker_creature'),
       title: t('autopsy_title_creature'),
       body:
-        cLabel && cLabel !== t('none_detected')
+        (cLabel && cLabel !== t('none_detected')
           ? t('autopsy_body_creature', {
               c: cLabel,
               score: a.cscore != null ? pct(a.cscore) : '—',
             })
-          : t('autopsy_body_creature_none'),
+          : t('autopsy_body_creature_none')) + novaCreatureNote(a, p),
     },
     {
       id: 'composition',
