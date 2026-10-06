@@ -1,7 +1,7 @@
 #!/usr/bin/env python3
-"""Keep front-end copy / README corpus n in sync with posters.csv.
+"""Keep front-end copy / README corpus n in sync with the canonical corpus.
 
-Canonical n = len(data/posters.csv). Copy lives in site/index.html,
+Canonical n = len(data/canonical_ids.txt) (build_corpus.py). Copy lives in site/index.html,
 site/i18n/*, and README.md as US-formatted thousands (e.g. 37,888) and
 sometimes bare (n=37888).
 
@@ -32,6 +32,9 @@ FRONT_COPY_FILES = [
     SITE / "i18n" / "content.js",
     SITE / "i18n" / "ui.json",
     SITE / "i18n" / "ui.js",
+    SITE / "src" / "charts" / "essay.js",
+    SITE / "demos" / "poster-decompose" / "i18n.json",
+    SITE / "demos" / "poster-decompose" / "README.md",
 ]
 
 # Generated data headers (n without commas).
@@ -52,15 +55,9 @@ BARE_RE_TMPL = r"(?<![~\d]){n}(?!\d)"
 
 
 def corpus_n() -> int:
-    path = DATA / "posters.csv"
-    if not path.exists():
-        raise SystemExit(f"falta {path}")
-    # cheap: count data rows
-    with path.open(encoding="utf-8", errors="replace") as f:
-        n = sum(1 for _ in f) - 1
-    if n <= 0:
-        raise SystemExit(f"{path} vacio")
-    return n
+    sys.path.insert(0, str(HERE))
+    from corpus import corpus_n as canonical_n
+    return canonical_n()
 
 
 def fmt(n: int) -> str:
@@ -208,7 +205,7 @@ def main() -> int:
     ap.add_argument("--fix", action="store_true", help="escribir reemplazos")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--from-n", type=int, default=None, help="forzar n viejo a reemplazar")
-    ap.add_argument("--n", type=int, default=None, help="forzar n canonico (default: posters.csv)")
+    ap.add_argument("--n", type=int, default=None, help="forzar n canonico (default: canonical_ids.txt)")
     args = ap.parse_args()
     n = args.n if args.n is not None else corpus_n()
     print(f"corpus n={n:,}")
