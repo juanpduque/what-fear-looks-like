@@ -67,10 +67,29 @@ def main():
             if lab:
                 creatures[pid] = lab
 
+    # Films with no art in our sources: keep marked off-site until art arrives.
+    no_poster: set[int] = set()
+    np_ids = DATA / "qa" / "no_poster" / "no_poster_ids.txt"
+    if np_ids.is_file():
+        no_poster = {
+            int(x) for x in np_ids.read_text().split() if x.strip().isdigit()
+        }
+
+    from corpus import canonical_ids
+    keep = canonical_ids()
+
     rows = []
+    seen: set[int] = set()
+    skipped_no_poster = 0
     with (DATA / "posters.csv").open(newline="") as f:
         for r in csv.DictReader(f):
             pid = int(r["id"])
+            if pid not in keep or pid in seen:
+                continue
+            seen.add(pid)
+            if pid in no_poster:
+                skipped_no_poster += 1
+                continue
             rows.append([
                 int(float(r["year"])),
                 dominant_hex(r.get("palette")),
@@ -84,11 +103,15 @@ def main():
 
     payload = json.dumps(rows, ensure_ascii=False, separators=(",", ":"))
     OUT.parent.mkdir(parents=True, exist_ok=True)
-    OUT.write_text(f"/* explorer grid n={len(rows)} */\nconst POSTERS={payload};\n")
+    note = f" (excluded no_poster={skipped_no_poster})" if skipped_no_poster else ""
+    OUT.write_text(
+        f"/* explorer grid n={len(rows)}{note} */\nconst POSTERS={payload};\n"
+    )
     with_path = sum(1 for row in rows if row[2])
     print(
         f"escrito {OUT.relative_to(ROOT.parent)} "
-        f"({len(rows):,} posters, {with_path:,} con poster_path)"
+        f"({len(rows):,} posters, {with_path:,} con poster_path"
+        f"{', excluded no_poster=' + str(skipped_no_poster) if skipped_no_poster else ''})"
     )
 
 

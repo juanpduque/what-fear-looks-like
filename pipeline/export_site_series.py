@@ -69,11 +69,20 @@ def _pts_at(roll: dict[int, float], years: list[int], rnd: int = 1):
 
 def _read_csv(name: str):
     import csv
+    from corpus import canonical_ids
     path = DATA / name
     if not path.exists():
         raise FileNotFoundError(f"falta {path}")
+    keep = canonical_ids()
+    seen: set[int] = set()
+    rows = []
     with path.open(newline="") as f:
-        return list(csv.DictReader(f))
+        for r in csv.DictReader(f):
+            pid = int(r["id"])
+            if pid in keep and pid not in seen:
+                seen.add(pid)
+                rows.append(r)
+    return rows
 
 
 def build_series() -> dict:

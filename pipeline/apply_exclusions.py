@@ -12,11 +12,10 @@ Listas actuales:
   - excluded_tmdb_remap_dup.csv — 404 remap cuyo new_id ya esta en corpus
   - excluded_tmdb_remap_tv.csv — 404 remap a TMDB tv (no movie)
 
-Tras filtrar, regenera series/explorer y alinea el n del texto front
-(README + site/i18n + index) via sync_front_n.py.
-
-No se excluyen "TV Movie" (telefilms): son peliculas unitarias para TV,
-no series; se quedan en el corpus a proposito.
+Tras filtrar, reconstruye el corpus canonico (build_corpus.py) y el sitio
+(build_site.py). El criterio publicado (incluye quitar TV Movie) vive en
+build_corpus.py / docs/CORPUS.md; para publicar basta build_site.py, sin
+mutar CSV.
 
 No re-analiza imagenes ni re-embebe nada: todas las metricas por poster ya
 existen en CSV/NPZ, esto solo filtra filas y vuelve a correr el groupby de
@@ -41,7 +40,6 @@ import pandas as pd
 
 DATA = Path(__file__).parent / "data"
 sys.path.insert(0, str(Path(__file__).parent))
-from export_site_series import export as export_site_series
 
 
 def load_exclude_ids():
@@ -83,9 +81,15 @@ def filter_npz(path, exclude_ids):
 # regeneracion de agregados -- mismo codigo que cada script fuente
 # ---------------------------------------------------------------------------
 
-def regen_yearly_and_river():
+def _restrict(d, keep):
+    if keep is not None:
+        d = d[d.id.isin(keep)]
+    return d.drop_duplicates("id").copy()
+
+
+def regen_yearly_and_river(keep=None):
     """fear_pipeline.py: yearly.json, hue_river.json, darkness_curve.png"""
-    res = pd.read_csv(DATA / "posters.csv")
+    res = _restrict(pd.read_csv(DATA / "posters.csv"), keep)
     yearly = (res.groupby("year")
                  .agg(n=("id", "count"), brightness=("brightness", "mean"),
                       dark_share=("dark_share", "mean"),
@@ -120,12 +124,12 @@ def regen_yearly_and_river():
     print("regenerado: yearly.json, hue_river.json, darkness_curve.png")
 
 
-def regen_attributes_decade():
+def regen_attributes_decade(keep=None):
     """multi_analyze.py"""
     p = DATA / "attributes.csv"
     if not p.exists() or not len(pd.read_csv(p)):
         return
-    d = pd.read_csv(p).drop_duplicates("id")
+    d = _restrict(pd.read_csv(p), keep)
     d["decade"] = (d.year // 10) * 10
     cols = [c for c in d.columns if c not in ("id", "year", "decade")]
     SENTINEL_COLS = {"align_score", "thirds_dist", "balance", "harmony"}
@@ -138,13 +142,13 @@ def regen_attributes_decade():
     print("regenerado: attributes_decade.json")
 
 
-def regen_census_decade(exclude_ids):
+def regen_census_decade(exclude_ids=frozenset(), keep=None):
     """clip_census.py -- census.csv ya viene filtrado, solo re-agrupa"""
     p = DATA / "census.csv"
     if not p.exists():
         return
     df = pd.read_csv(p)
-    df = df[~df.id.isin(exclude_ids)]
+    df = _restrict(df[~df.id.isin(exclude_ids)], keep)
     df["decade"] = (df.year // 10) * 10
     shares = (df.groupby(["decade", "label"]).size()
                 .unstack(fill_value=0)
@@ -153,14 +157,14 @@ def regen_census_decade(exclude_ids):
     print("regenerado: census_decade.json")
 
 
-def regen_typography_decade(exclude_ids):
+def regen_typography_decade(exclude_ids=frozenset(), keep=None):
     """clip_typography_axis.py"""
     p = DATA / "typography.csv"
     if not p.exists():
         return
     REGISTERS = ["ornate", "decorative", "standard", "clean", "minimal"]
     df = pd.read_csv(p)
-    df = df[~df.id.isin(exclude_ids)]
+    df = _restrict(df[~df.id.isin(exclude_ids)], keep)
     d = df[(df.year >= 1920) & (df.year <= 2029)].copy()
     d["decade"] = (d.year // 10) * 10
     sh = (d.groupby(["decade", "register"]).size().unstack(fill_value=0)
@@ -178,12 +182,12 @@ def regen_typography_decade(exclude_ids):
     print("regenerado: typography_decade.json")
 
 
-def regen_faces_decade():
+def regen_faces_decade(keep=None):
     """faces_v2.py"""
     p = DATA / "faces_v2.csv"
     if not p.exists():
         return
-    d = pd.read_csv(p).drop_duplicates("id")
+    d = _restrict(pd.read_csv(p), keep)
     d["decade"] = (d.year // 10) * 10
     agg = d.groupby("decade").agg(n=("id", "count"),
                                   mean_faces=("n_faces", "mean"),
@@ -193,12 +197,12 @@ def regen_faces_decade():
     print("regenerado: faces_v2_decade.json")
 
 
-def regen_segmentation_decade():
+def regen_segmentation_decade(keep=None):
     """segmentation.py"""
     p = DATA / "segmentation.csv"
     if not p.exists():
         return
-    d = pd.read_csv(p).drop_duplicates("id")
+    d = _restrict(pd.read_csv(p), keep)
     d["decade"] = (d.year // 10) * 10
     cols = [c for c in d.columns if c not in ("id", "year", "decade")]
     agg = d.groupby("decade")[cols].mean().round(4)
@@ -219,39 +223,12 @@ def main():
         filter_csv(DATA / name, exclude_ids)
     filter_npz(DATA / "clip_embeddings.npz", exclude_ids)
 
-    print("\nregenerando agregados...")
-    regen_yearly_and_river()
-    regen_attributes_decade()
-    regen_census_decade(exclude_ids)
-    regen_typography_decade(exclude_ids)
-    regen_faces_decade()
-    regen_segmentation_decade()
-
-    print("\nexportando series del sitio...")
-    export_site_series()
-    try:
-        from build_explorer import main as build_explorer
-        print("\nexportando explorer.js...")
-        build_explorer()
-    except Exception as e:
-        print(f"aviso: no se pudo regenerar explorer.js ({e})")
-
-    print("\nalineando n del texto front...")
-    try:
-        from sync_front_n import sync_front_n, check_front_n, corpus_n
-        n = corpus_n()
-        rep = sync_front_n(n)
-        if rep.get("changed"):
-            print(f"  sync_front_n: {rep['stale']:,} → {n:,} ({len(rep['files'])} archivos)")
-        left = check_front_n(n)
-        if left:
-            print("  aviso: texto front aun desalineado:")
-            for i in left:
-                print(f"    - {i}")
-        else:
-            print(f"  texto front n={n:,} OK")
-    except Exception as e:
-        print(f"aviso: sync_front_n fallo ({e})")
+    print("\nreconstruyendo corpus canonico y sitio...")
+    import build_corpus
+    import build_site
+    sys.argv = sys.argv[:1]
+    build_corpus.main()
+    build_site.main()
     print("\nLISTO.")
 
 

@@ -1,9 +1,9 @@
-# The Anatomy of Fear
+# What Fear Looks Like
 
 **100 years of horror movie posters, one pixel at a time.**
 A data-driven visual essay by [Pulp Analytics](https://medium.com/pulp-analytics), in the style of [The Pudding](https://pudding.cool).
 
-We analyze **37,829** horror movie posters (1897–2028) to measure how the way we sell fear has changed: color (the Darkness Curve, the Rise of Red, the Color River), faces, monsters, medium (painted vs. photographic), typography, composition/layout, aesthetics, and material/scene makeup. From the full TMDB horror corpus we exclude titles genre-tagged `Animation` and `Music`, films whose TMDB `original_language` is not English (~8,907; non-English lettering skewed typography/OCR), non-portrait local artwork (landscape/square stills or banners, 401), and titles whose TMDB movie id now returns 404 (48), plus 404 remaps that duplicate an id already in the corpus (49) or resolve only to TMDB TV (8). **TV Movies (telefilms) are kept** — they are single films made for television, not series, and still sell fear on a one-sheet. Lists in `pipeline/data/excluded_*.csv`, applied via `python3 apply_exclusions.py`.
+We analyze **33,619** English-language horror posters (1900–2026): already released, with a servable poster, no adult flag, and without Animation, Music, or TV Movie. Exclusion lists in `pipeline/data/excluded_*.csv` still apply. The published id list is `pipeline/data/canonical_ids.txt` — rebuild with `python3 pipeline/build_corpus.py && python3 pipeline/build_site.py`. See `docs/CORPUS.md`.
 
 ## Structure
 
@@ -14,7 +14,9 @@ pipeline/         Python pipeline: dataset -> posters -> metrics -> CSV/JSON
   models/         Face-detection ONNX model; CLIP weights are gitignored (auto-downloaded)
   legacy/         Superseded scripts, kept for reference
 site/             The scrollytelling page (static HTML/CSS/JS, no backend)
+  demos/poster-decompose/   Interactive VHS scroll demo (Halloween · TMDB 948)
 docs/             Strategy, essay draft & poster shortlist (Spanish/English)
+scripts/          Deploy helpers (e.g. prepare-pages.sh for GitHub Pages)
 ```
 
 ## Run the pipeline
@@ -30,7 +32,10 @@ python3 fear_pipeline.py                    # 1,000-poster validation sample
 python3 fear_pipeline.py --all              # full color pass on local posters
 # after a full run (or any metric recompute), drop Animation + Music + non-EN
 # and rebuild aggregates + site chart series:
-python3 apply_exclusions.py                 # uses data/excluded_*.csv → 37,829 (+ sync front n)
+python3 fetch_tmdb_details.py               # ficha TMDB vigente (resumable)
+python3 build_corpus.py                     # canonical_ids.txt + docs/CORPUS.md
+python3 build_site.py                       # series/explorer/lookup/copy n + invariantes
+python3 apply_exclusions.py                 # filtra CSV crudos; luego reconstruye corpus + sitio
 python3 validate_corpus.py --fix-front     # capa 1; alinea texto front/README si el n está stale
 python3 sync_front_n.py --fix              # solo reemplazar n publicado en site/i18n + index + README
 #                                     also writes ../site/data/series.js
@@ -61,7 +66,7 @@ English titles with no TMDB `poster_path` are recovered in order:
 3. **Live IMDb art** — `pull_imdb_posters.py`  
    Default: IMDb suggestion API (`v2.sg.media-imdb.com`) with desktop Chrome
    headers — same host the site search uses, returns a fresh Amazon hash.  
-   Optional `--browser`: **Playwright** (Python’s Puppeteer) for a real page
+   Optional `--browser`: **Playwright** (Python's Puppeteer) for a real page
    render when you need it.
 
 ```bash
@@ -140,7 +145,7 @@ open vocabulary (blood, smoke, bone) that neither of the above covers.
 Outputs: `segmentation.csv` (per-poster), `segmentation_decade.json` (a
 "material palette" by decade, same shape as `hue_river.json`).
 
-Ran the **full corpus** after exclusions; the site uses **n = 37,829**
+Ran the **full corpus** after exclusions; the site uses **n = 33,619**
 posters for segmentation. Validated `--validate` against 5 posters with
 manually-checked artwork (Jaws, Friday the 13th, The Blair Witch Project,
 The Evil Dead, The Thing) before trusting any of it. Real, useful signal:
@@ -168,28 +173,33 @@ smoke-testing decade-level trends before committing to that.
 
 Live essay (GitHub Pages): **https://juanpduque.github.io/what-fear-looks-like/**
 
-Deploy: pushes to `main` that touch `site/` run `.github/workflows/pages.yml`.
-Or trigger **Actions → Deploy GitHub Pages → Run workflow**.
-
+Deploy: pushes to `main` that touch `site/` run `.github/workflows/pages.yml`
+(stages `site/` via `scripts/prepare-pages.sh`, excluding dev screenshots and
+internal QA pages). Or trigger **Actions → Deploy GitHub Pages → Run workflow**.
 
 Open `site/index.html` in a browser — it's fully static, no build step.
 Prefer a local server so lazy-loaded assets resolve cleanly
 (`python3 -m http.server` from the repo root, then open `/site/`).
 
+Interactive VHS demo (Halloween): `site/demos/poster-decompose/` — respects
+`?lang=en|es` and `localStorage` key `aof-lang` from the essay.
+
 Chart series (`RIVER`, `DARK_PTS`, census, …) live in `site/data/series.js`,
 regenerated by `export_site_series.py` (also at the end of `apply_exclusions.py`).
 `site/data/explorer.js` embeds the light per-poster grid (with TMDB `poster_path`
 for CDN images) — rebuild with `python3 build_explorer.py`. The
-**Dissect any poster** search UI also needs the full analysis index:
+**Dissect any poster** search UI lazy-loads the full analysis index on first use:
 
 ```bash
 python3 pipeline/build_explorer.py  # writes site/data/explorer.js
-python3 pipeline/build_lookup.py    # writes site/data/lookup.js (~12 MB)
+python3 pipeline/build_lookup.py    # writes site/data/lookup.js (~30 MB)
 ```
 
-That lookup file is lazy-loaded on first search (or when a grid tile is clicked).
-Specimen images used in the essay live in `site/assets/posters/` (the full
-`pipeline/data/posters/` tree stays gitignored).
+That lookup file is loaded only when the user searches or opens a poster tile
+(`ensureLookup()` in `site/index.html`). Specimen images used in the essay live
+in `site/assets/posters/` (the full `pipeline/data/posters/` tree stays gitignored).
+
+Social share card: `site/assets/og-card.jpg` (1200×630).
 
 ## License
 
@@ -200,3 +210,4 @@ below.
 ## Data & credits
 
 Film data and posters from [TMDB](https://www.themoviedb.org/) (this project uses the TMDB API but is not endorsed or certified by TMDB). Base dataset: [horror-movies](https://github.com/tashapiro/horror-movies) by Tanya Shapiro (TidyTuesday 2022-11-01). Palette method adapted from ["The Colour of Horror"](https://dl.acm.org/doi/10.1145/3565516.3565523) (ACM EVMP 2022). Industry context: [Stephen Follows' Horror Movie Report](https://stephenfollows.com/p/the-horror-movie-report). Face detection: [YuNet](https://github.com/opencv/opencv_zoo/tree/main/models/face_detection_yunet) (OpenCV Zoo). Semantic chapters: [OpenAI CLIP](https://github.com/openai/CLIP) via [open_clip](https://github.com/mlfoundations/open_clip). Scene segmentation: [SegFormer](https://huggingface.co/nvidia/segformer-b0-finetuned-ade-512-512) (NVIDIA, ADE20K). Material recognition: [Minc-Materials-23](https://huggingface.co/prithivMLmods/Minc-Materials-23), in the spirit of the original [MINC](http://opensurfaces.cs.cornell.edu/publications/minc/) dataset (Bell et al., CVPR 2015).
+

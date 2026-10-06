@@ -52,8 +52,26 @@ def parse_list(val):
         return []
 
 
+def parse_boxes(raw):
+    """'x,y,w,h|x,y,w,h' (normalized) -> [[x,y,w,h], ...]."""
+    if raw is None or str(raw) in ("", "nan"):
+        return []
+    boxes = []
+    for part in str(raw).split("|"):
+        bits = part.split(",")
+        if len(bits) != 4:
+            continue
+        try:
+            boxes.append([float(b) for b in bits])
+        except ValueError:
+            continue
+    return boxes
+
+
 def main():
+    from corpus import canonical_ids
     post = pd.read_csv(DATA / "posters.csv")
+    post = post[post.id.isin(canonical_ids())].drop_duplicates("id")
     attr = pd.read_csv(DATA / "attributes.csv").set_index("id")
     faces = pd.read_csv(DATA / "faces_v2.csv").set_index("id")
     census = pd.read_csv(DATA / "census.csv").set_index("id")
@@ -62,6 +80,16 @@ def main():
     seg = pd.read_csv(DATA / "segmentation.csv").set_index("id")
     rek_path = DATA / "rekognition.csv"
     rek = pd.read_csv(rek_path).set_index("id") if rek_path.exists() else None
+    rek_boxes = {}
+    rek_boxes_path = DATA / "rekognition_face_boxes.csv"
+    if rek_boxes_path.exists():
+        rb = pd.read_csv(rek_boxes_path)
+        if "error" in rb.columns:
+            rb = rb[rb["error"].isna() | (rb["error"].astype(str) == "")]
+        for row in rb.itertuples(index=False):
+            boxes = parse_boxes(row.face_boxes)
+            if boxes:
+                rek_boxes[int(row.id)] = boxes
 
     lookup = {}
     for row in post.itertuples(index=False):
@@ -85,16 +113,8 @@ def main():
             "faces": int(f.n_faces) if f is not None else 0,
             "farea": r(f.face_area) if f is not None else 0,
         }
-        if f is not None and getattr(f, "face_boxes", None) and str(f.face_boxes) not in ("", "nan"):
-            fboxes = []
-            for part in str(f.face_boxes).split("|"):
-                bits = part.split(",")
-                if len(bits) != 4:
-                    continue
-                try:
-                    fboxes.append([float(bits[0]), float(bits[1]), float(bits[2]), float(bits[3])])
-                except ValueError:
-                    continue
+        if f is not None:
+            fboxes = parse_boxes(getattr(f, "face_boxes", None))
             if fboxes:
                 rec["fboxes"] = fboxes
         if c is not None and pd.notna(c.label) and str(c.label):
@@ -158,6 +178,9 @@ def main():
                 "bright": r(rk.rek_bright, 1),
                 "colors": str(rk.rek_colors) if pd.notna(rk.rek_colors) else "",
             }
+            rboxes = rek_boxes.get(i)
+            if rboxes:
+                rec["rek"]["fboxes"] = rboxes
         lookup[str(i)] = rec
 
     OUT.parent.mkdir(parents=True, exist_ok=True)

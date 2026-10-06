@@ -666,10 +666,10 @@ function d3Charts(){
     /* specimen strip: the most / least ornate title treatment per era (hand-verified) */
     const TS_ORNATE=[
       [15849,"The Mummy","1932"],[85498,"The Maze","1953"],[23439,"House of Usher","1960"],
-      [16281,"Creepshow","1982"],[439917,"Devil Medusa","1995"],[535412,"Arte Factum","2017"]];
+      [16281,"Creepshow","1982"],[20481,"Nightbreed","1990"],[535412,"Arte Factum","2017"]];
     const TS_MINIMAL=[
       [84713,"The Last Performance","1929"],[495447,"Whistle and I'll Come to You","1956"],[39995,"Long Weekend","1979"],
-      [46767,"In a Glass Cage","1987"],[16028,"They","2002"],[875138,"Alone","2021"]];
+      [9540,"Dead Ringers","1988"],[16028,"They","2002"],[875138,"Alone","2021"]];
     const TS_ERAS=["1930s","1950s","1960s","1980s","1990s","2010s"];
     const SIX_ERAS=["1920s–30s","1940s–50s","1960s–70s","1980s","1990s–2000s","2010s–now"];
     const tsCard=([id,t,y,extra])=>{
@@ -707,20 +707,20 @@ function d3Charts(){
     /* ---- six chart-specific specimen strips: 2 real posters per era, ----
        ---- picked from the underlying per-poster data behind each chart. ---- */
     const CR_RED=[[45803,"Svengali","1931","49%"],[329237,"Gigantis: The Fire Monster","1959","65%"],
-      [49183,"The Vengeance of Fu Manchu","1967","79%"],[10676,"Halloween III: Season of the Witch","1982","50%"],
+      [33468,"The Brain That Wouldn't Die","1962","64%"],[10676,"Halloween III: Season of the Witch","1982","50%"],
       [170,"28 Days Later","2002","86%"],[882598,"Smile","2022","85%"]];
     const CR_WARM=[[136,"Freaks","1932","84%"],[11549,"Invasion of the Body Snatchers","1956","49%"],
       [59189,"Phase IV","1974","95%"],[694,"The Shining","1980","93%"],
-      [1946,"eXistenZ","1999","73%"],[425972,"Cargo","2017","95%"]];
+      [9792,"The Hills Have Eyes","2006","84%"],[425972,"Cargo","2017","95%"]];
     const CR_GREEN=[[28046,"The Ghoul","1933","88%"],[10973,"Creature from the Black Lagoon","1954","37%"],
       [805,"Rosemary's Baby","1968","50%"],[18498,"Ghoulies","1985","48%"],
-      [38299,"The Human Centipede (First Sequence)","2009","67%"],[591275,"Fear Street: 1666","2021","45%"]];
-    const CR_BLUE=[[84712,"The Last Warning","1928","83%"],[35911,"Cult of the Cobra","1955","66%"],
+      [2212,"Nightwatch","1997","69%"],[591275,"Fear Street: 1666","2021","45%"]];
+    const CR_BLUE=[[27503,"The Unknown","1927","60%"],[35911,"Cult of the Cobra","1955","66%"],
       [578,"Jaws","1975","61%"],[1091,"The Thing","1982","77%"],
       [4970,"Gothika","2003","61%"],[332567,"The Shallows","2016","85%"]];
-    const CR_PURPLE=[[1266263,"Black Ghost","1937","61%"],[831,"This Island Earth","1955","37%"],
-      [15360,"The Night Stalker","1972","53%"],[28774,"Communion","1989","40%"],
-      [70772,"Don't Look Under the Bed","1999","54%"],[419479,"The Babysitter","2017","66%"]];
+    const CR_PURPLE=[[3575,"The Return of Doctor X","1939","38%"],[831,"This Island Earth","1955","37%"],
+      [26480,"The Legend of the 7 Golden Vampires","1974","58%"],[28774,"Communion","1989","40%"],
+      [10166,"The Witches","1990","22%"],[419479,"The Babysitter","2017","66%"]];
     const CR_BLACK=[[150196,"The Telltale Heart","1928","100%"],[11868,"Dracula","1958","75%"],
       [348,"Alien","1979","93%"],[4488,"Friday the 13th","1980","80%"],
       [565,"The Ring","2002","97%"],[310131,"The Witch","2015","93%"]];
@@ -743,45 +743,45 @@ function d3Charts(){
       });
     })();
 
-    const DK_BRIGHT=[[147087,"The Cobweb Hotel","1936","L* 82.7"],[11815,"The Fly","1958","L* 80.1"],
+    const DK_BRIGHT=[[136,"Freaks","1932","L* 72.1"],[11815,"The Fly","1958","L* 80.1"],
       [571,"The Birds","1963","L* 88.8"],[45878,"Return to Horror High","1987","L* 82.2"],
-      [883891,"The Making of Saw","2004","L* 88.0"],[416753,"Neal","2011","L* 93.9"]];
+      [214,"Saw III","2006","L* 93.2"],[416753,"Neal","2011","L* 93.9"]];
     const DK_DARK=[[31592,"The Old Dark House","1932","L* 15.4"],[11868,"Dracula","1958","L* 18.0"],
       [11586,"Exorcist II: The Heretic","1977","L* 10.1"],[9980,"Maximum Overdrive","1986","L* 10.1"],
       [4283,"Primeval","2007","L* 6.7"],[751423,"Don't Let It In","2020","L* 4.6"]];
     go('dk-bright',DK_BRIGHT); go('dk-dark',DK_DARK); goEras('dk-eras',SIX_ERAS);
 
     const RR_RED=[[45803,"Svengali","1931","46% red"],[117429,"Jack the Ripper","1959","59% red"],
-      [28532,"Castle of Blood","1964","74% red"],[10493,"Dead Calm","1989","76% red"],
-      [127642,"Feng Shui","2004","94% red"],[564446,"Hell Bound","2018","95% red"]];
-    const RR_NONE=[[39259,"Dracula","1931","0% red"],[3076,"Frankenstein Meets the Wolf Man","1943","0% red"],
+      [13549,"Burnt Offerings","1976","70% red"],[10493,"Dead Calm","1989","76% red"],
+      [1992,"Planet Terror","2007","73% red"],[564446,"Hell Bound","2018","95% red"]];
+    const RR_NONE=[[3035,"Frankenstein","1931","0% red"],[3076,"Frankenstein Meets the Wolf Man","1943","0% red"],
       [93929,"The Haunted House of Horror","1969","0% red"],[1091,"The Thing","1982","0% red"],
-      [24198,"AVH: Alien vs. Hunter","2007","0% red"],[575869,"The Yellow Night","2019","0% red"]];
+      [24198,"AVH: Alien vs. Hunter","2007","0% red"],[419430,"Get Out","2017","0% red"]];
     go('rr-red',RR_RED); go('rr-none',RR_NONE); goEras('rr-eras',SIX_ERAS);
 
-    const VF_FACE=[[653,"Nosferatu","1922","face fills 44%"],[363059,"The Fall of the House of Usher","1942","face fills 46%"],
+    const VF_FACE=[[28261,"Mad Love","1935","face fills ~100%"],[363059,"The Fall of the House of Usher","1942","face fills 46%"],
       [29748,"Taste the Blood of Dracula","1970","face fills 56%"],[29077,"The Bride","1985","face fills 93%"],
       [60086,"Babysitter Wanted","2007","face fills 98%"],[476299,"Ghostland","2018","face fills ~100%"]];
-    const VF_NOFACE=[[58129,"The Phantom Carriage","1921","0 faces"],[1678,"Godzilla","1954","0 faces"],
+    const VF_NOFACE=[[138,"Dracula","1931","0 faces"],[27130,"I Walked with a Zombie","1943","0 faces"],
       [348,"Alien","1979","0 faces"],[1091,"The Thing","1982","0 faces"],
-      [73336,"Buried Alive II","1997","0 faces"],[345940,"The Meg","2018","0 faces"]];
+      [176,"Saw","2004","0 faces"],[345940,"The Meg","2018","0 faces"]];
     go('vf-face',VF_FACE); go('vf-noface',VF_NOFACE); goEras('vf-eras',SIX_ERAS);
 
     const MC_1=[[138017,"The Ghost Walks","1934","ghost"],[18983,"Godzilla, King of the Monsters!","1956","giant monster"],
-      [156068,"Mark of the Witch","1970","witch"],[226630,"Blackout","1985","masked killer"],
+      [156068,"Mark of the Witch","1970","witch"],[9730,"Friday the 13th: The Final Chapter","1984","masked killer"],
       [11470,"Jason X","2001","masked killer"],[74915,"Episode 50","2011","ghost"]];
-    const MC_2=[[1258573,"Helgeninderne","1921","ghost"],[52199,"Invasion of the Saucer-Men","1957","alien"],
+    const MC_2=[[335512,"The Ghost Train","1931","ghost"],[52199,"Invasion of the Saucer-Men","1957","alien"],
       [72153,"Virgin Witch","1972","witch"],[88353,"Surgikill","1989","masked killer"],
       [54653,"Gangs of the Dead","2006","zombie"],[50606,"Ghosts Don't Exist","2010","ghost"]];
     go('mc-1',MC_1); go('mc-2',MC_2); goEras('mc-eras',SIX_ERAS);
 
     const TB_PIXEL=[[28439,"Murder by Television","1935","42% red · 0% blood"],[43115,"The Spider","1958","37% red · 0% blood"],
-      [49183,"The Vengeance of Fu Manchu","1967","76% red · 0% blood"],[212005,"Fleshburn","1984","58% red · 0% blood"],
+      [11449,"The Amityville Horror","1979","49% red · 0% blood"],[212005,"Fleshburn","1984","58% red · 0% blood"],
       [10065,"The Amityville Horror","2005","67% red · 0% blood"],[519418,"Witch-Hunt","2017","30% red · 0% blood"]];
     /* Hand-checked for literal blood on the sheet. Early high clip_blood
        hits often fire on red cloaks/type (Faust, Ghost Cat). No verified
        pre-1940 blood in the sample — first cell is the earliest true positive. */
-    const TB_SEMANTIC=[[141442,"The Living Coffin","1959","2% red · 50% blood"],
+    const TB_SEMANTIC=[[43109,"The Killer Shrews","1959","4% red · 50% blood"],
       [28659,"Cat Girl","1957","17% red · 75% blood"],
       [48885,"The Gruesome Twosome","1967","6% red · 75% blood"],[145850,"Dance Or Die","1987","7% red · 75% blood"],
       [9841,"Rest Stop","2006","3% red · 75% blood"],[279690,"He Never Died","2015","0% red · 75% blood"]];
@@ -811,7 +811,7 @@ function d3Charts(){
       .attr('x',x(CHART_X1)+8).attr('y',y(28.5)).text(t('all_horror'));
     svg.append('text').attr('class','line-label').attr('fill','#9a958a')
       .attr('x',x(2020)+8).attr('y',y(27.5)+16).text(t('mainstream'));
-    [[1931,t('annot_expressionist_shadow'),40.2],[1960,t('annot_atomic_daylight'),48.8],[1975,t('annot_occult_slide'),42.6],[2020,t('annot_never_came_back'),29.4]].forEach(a=>{
+    [[1930,t('annot_expressionist_shadow'),43.5],[1970,t('annot_atomic_daylight'),49.5],[1978,t('annot_occult_slide'),41.0],[2020,t('annot_never_came_back'),31.2]].forEach(a=>{
       svg.append('text').attr('class','annot').attr('text-anchor','middle')
          .attr('x',Math.min(x(a[0]),W-m.r-60)).attr('y',y(a[2])).text(a[1]);});
     const ro=mkReadout('darkness',t('hint_tap_drag_century'));
@@ -857,7 +857,7 @@ function d3Charts(){
       .attr('fill','url(#rgrad)').attr('opacity',0);
     const p=svg.append('path').datum(since1920(RED_PTS)).attr('d',line)
       .attr('fill','none').attr('stroke','#ff2634').attr('stroke-width',3).attr('stroke-linecap','round');
-    [[1930,t('annot_before_blood'),5.8],[1970,t('annot_occult_red'),13.4],[1985,t('annot_slashers_never_led'),12.8],[2005,t('annot_peak_meta_horror'),15.2]].forEach(a=>
+    [[1930,t('annot_before_blood'),6.5],[1970,t('annot_occult_red'),12.8],[1985,t('annot_slashers_never_led'),8.6],[2000,t('annot_peak_meta_horror'),14.5]].forEach(a=>
       svg.append('text').attr('class','annot').attr('text-anchor','middle').attr('x',x(a[0])).attr('y',y(a[2])).text(a[1]));
     const ro=mkReadout('red',t('hint_tap_drag_century'));
     const bis=d3.bisector(d=>d[0]).center;
@@ -880,18 +880,18 @@ function d3Charts(){
   {
     const svg=d3.select('#faces'),W=960,H=340,m={t:30,r:30,b:40,l:50};
     const x=d3.scaleLinear().domain([CHART_X0,CHART_X1]).range([m.l,W-m.r]);
-    const y=d3.scaleLinear().domain([40,90]).range([H-m.b,m.t]);
+    const y=d3.scaleLinear().domain([40,95]).range([H-m.b,m.t]);
     grid(svg,x,y,[40,50,60,70,80,90],v=>v+'%',CHART_X_TICKS);
     const line=d3.line().x(d=>x(d[0])).y(d=>y(d[1])).curve(d3.curveMonotoneX);
     const p=svg.append('path').datum(since1920(FACE_PTS)).attr('d',line)
       .attr('fill','none').attr('stroke','#e8e4da').attr('stroke-width',3).attr('stroke-linecap','round');
-    const peak=svg.append('circle').attr('cx',x(1998)).attr('cy',y(66.9)).attr('r',0).attr('fill','none')
+    const peak=svg.append('circle').attr('cx',x(1998)).attr('cy',y(62.3)).attr('r',0).attr('fill','none')
       .attr('stroke','#c1121f').attr('stroke-width',2);
-    const dot=svg.append('circle').attr('cx',x(1998)).attr('cy',y(66.9)).attr('r',0).attr('fill','#c1121f');
+    const dot=svg.append('circle').attr('cx',x(1998)).attr('cy',y(62.3)).attr('r',0).attr('fill','#c1121f');
     svg.append('text').attr('class','annot').attr('text-anchor','middle')
-      .attr('x',x(1945)).attr('y',y(88)).text(t('peak_1940s_faces'));
+      .attr('x',x(1945)).attr('y',y(90.7)-10).text(t('peak_1940s_faces'));
     svg.append('text').attr('class','annot').attr('text-anchor','middle')
-      .attr('x',x(1998)).attr('y',y(66.9)-24).text(t('faces_1998_bigger'));
+      .attr('x',x(1998)).attr('y',y(62.3)-24).text(t('faces_1998_bigger'));
     svg.append('text').attr('class','annot').attr('text-anchor','end')
       .attr('x',x(2021)).attr('y',y(45)).text(t('faces_under_half'));
     const ro=mkReadout('faces',t('hint_tap_drag_century'));
@@ -932,7 +932,7 @@ function d3Charts(){
     const p=svg.append('path').datum(since1920(TEXT_PTS)).attr('d',line)
       .attr('fill','none').attr('stroke','#e5a00d').attr('stroke-width',3).attr('stroke-linecap','round');
     svg.append('text').attr('class','annot').attr('text-anchor','middle')
-      .attr('x',x(1956)).attr('y',y(36.1)-12).attr('font-weight','bold').text(t('see_shocking'));
+      .attr('x',x(1960)).attr('y',y(34.9)-12).attr('font-weight','bold').text(t('see_shocking'));
     svg.append('text').attr('class','annot').attr('text-anchor','end')
       .attr('x',x(2026)).attr('y',y(18.0)-12).attr('opacity',.6).text(t('whisper'));
     const ro=mkReadout('quiet',t('hint_tap_drag_century'));
@@ -960,15 +960,15 @@ function d3Charts(){
     grid(svg,x,y,[0.74,0.78,0.82,0.86],v=>v.toFixed(2),CHART_X_TICKS);
     const line=d3.line().x(d=>x(d[0])).y(d=>y(d[1])).curve(d3.curveMonotoneX);
     /* mirrored ghost: same curve reflected around its final value — the medium is the message */
-    const mirror=d3.line().x(d=>x(d[0])).y(d=>y(2*0.873-d[1])).curve(d3.curveMonotoneX);
+    const mirror=d3.line().x(d=>x(d[0])).y(d=>y(2*0.872-d[1])).curve(d3.curveMonotoneX);
     const ghost=svg.append('path').datum(since1920(SYM_PTS)).attr('d',mirror)
       .attr('fill','none').attr('stroke','#e8e4da').attr('stroke-width',1.5).attr('opacity',0);
     const p=svg.append('path').datum(since1920(SYM_PTS)).attr('d',line)
       .attr('fill','none').attr('stroke','#e8e4da').attr('stroke-width',3).attr('stroke-linecap','round');
-    svg.append('line').attr('x1',x(1950)).attr('x2',x(2026)).attr('y1',y(0.873)).attr('y2',y(0.873))
+    svg.append('line').attr('x1',x(1950)).attr('x2',x(2026)).attr('y1',y(0.872)).attr('y2',y(0.872))
       .attr('class','annot-line').attr('opacity',.5);
     svg.append('text').attr('class','annot').attr('text-anchor','end')
-      .attr('x',x(2026)).attr('y',y(0.873)-8).text(t('peak_2022_symmetry'));
+      .attr('x',x(2026)).attr('y',y(0.872)-8).text(t('peak_2022_symmetry'));
     svg.append('text').attr('class','annot').attr('text-anchor','middle')
       .attr('x',x(2013)).attr('y',y(0.842)+24).text(t('elevated_leap'));
     const ro=mkReadout('symmetry',t('hint_tap_drag_century'));
@@ -1006,7 +1006,7 @@ function d3Charts(){
     const p=svg.append('path').datum(since1920(DIAG_PTS)).attr('d',line)
       .attr('fill','none').attr('stroke','#d9772e').attr('stroke-width',3).attr('stroke-linecap','round');
     svg.append('text').attr('class','annot').attr('text-anchor','middle')
-      .attr('x',x(1955)).attr('y',y(37.6)-12).text(t('atomic_pulp_peak'));
+      .attr('x',x(1945)).attr('y',y(34.9)-12).text(t('atomic_pulp_peak'));
     svg.append('text').attr('class','annot').attr('text-anchor','end')
       .attr('x',x(2026)).attr('y',y(22.2)-12).text(t('today_diagonal'));
     const ro=mkReadout('diagonal',t('hint_tap_drag_century'));
@@ -1125,9 +1125,9 @@ function d3Charts(){
     scrub=wireScrub('census',{n:since1920(CENSUS[names[0]].pts).length, start:since1920(CENSUS[names[0]].pts).length-1, show:showCensus,
       onVert:dir=>{ si=(si+dir+names.length)%names.length; showCensus(scrub.get()); }});
     /* three annotations = the bookend story + one dynasty beat */
-    [[t('census_ghosts_open'),1922,11.7,'#e8e4da','start'],
-     [t('census_killer_peaks'),1984,8.2,'#e02430','middle'],
-     [t('census_ghost_returns'),2012,6.8,'#e8e4da','end']].forEach(a=>{
+    [[t('census_ghosts_open'),1920,5.5,'#e8e4da','start'],
+     [t('census_killer_peaks'),1980,5.2,'#e02430','middle'],
+     [t('census_ghost_returns'),2020,7.2,'#e8e4da','end']].forEach(a=>{
       svg.append('text').attr('class','annot').attr('fill',a[3]).attr('text-anchor',a[4])
         .attr('x',x(a[1])).attr('y',y(a[2])).text(a[0]);});
     onEnter('census',()=>{
@@ -1216,7 +1216,7 @@ function legacyCharts(){
 /* --- darkness curve --- */
 (function(){
   const svg=document.getElementById('darkness'),W=960,H=400,m={t:30,r:30,b:40,l:50};
-  /* FULL CENTURY: mean L* per year, 5-yr rolling (n=37,829, TMDB) */
+  /* FULL CENTURY: mean L* per year, 5-yr rolling (n=33,619, TMDB) */
   const pts=since1920(DARK_PTS);
   const x=y=>m.l+(y-CHART_X0)/(CHART_X1-CHART_X0)*(W-m.l-m.r);
   const yy=v=>m.t+(52-v)/(52-25)*(H-m.t-m.b);
@@ -1230,7 +1230,7 @@ function legacyCharts(){
   const d='M'+pts.map(p=>`${x(p[0])},${yy(p[1])}`).join(' L');
   svg.appendChild(el('path',{d:d+` L${x(CHART_X1)},${yy(25)} L${x(CHART_X0)},${yy(25)} Z`,fill:'rgba(229,160,13,.08)'}));
   svg.appendChild(el('path',{d,fill:'none',stroke:'#e5a00d','stroke-width':3,'stroke-linecap':'round'}));
-  [[1930,t('annot_expressionist_shadow'),37.5,1930,39.6],[1975,t('annot_occult_slide'),45.8,1975,41.8],[1982,t('annot_slasher_black'),31,1982,37],[2020,t('annot_never_came_back'),26.5,2020,28.9]].forEach(a=>{
+  [[1930,t('annot_expressionist_shadow'),43.5,1930,41.9],[1975,t('annot_occult_slide'),47.0,1975,44.9],[1982,t('annot_slasher_black'),37.5,1982,35.2],[2020,t('annot_never_came_back'),31.2,2020,29.4]].forEach(a=>{
     svg.appendChild(el('line',{x1:x(a[3]),x2:x(a[3]),y1:yy(a[4]),y2:yy(a[2])+14,class:'annot-line'}));
     const t=el('text',{x:Math.min(x(a[3]),W-280),y:yy(a[2]),'text-anchor':'middle',class:'annot'});t.textContent=a[1];svg.appendChild(t);
   });
@@ -1239,7 +1239,7 @@ function legacyCharts(){
 /* --- rise of red --- */
 (function(){
   const svg=document.getElementById('red'),W=960,H=340,m={t:30,r:30,b:40,l:50};
-  /* FULL CENTURY: % blood-red pixels per year, 5-yr rolling (n=37,829, TMDB) */
+  /* FULL CENTURY: % blood-red pixels per year, 5-yr rolling (n=33,619, TMDB) */
   const pts=since1920(RED_PTS);
   const x=y=>m.l+(y-CHART_X0)/(CHART_X1-CHART_X0)*(W-m.l-m.r);
   const yy=v=>m.t+(15-v)/(15-0)*(H-m.t-m.b);
@@ -1253,7 +1253,7 @@ function legacyCharts(){
   const line='M'+pts.map(p=>`${x(p[0])},${yy(p[1])}`).join(' L');
   svg.appendChild(el('path',{d:line+` L${x(CHART_X1)},${yy(0)} L${x(CHART_X0)},${yy(0)} Z`,fill:'rgba(193,18,31,.35)'}));
   svg.appendChild(el('path',{d:line,fill:'none',stroke:'#c1121f','stroke-width':3,'stroke-linecap':'round'}));
-  [[1932,'Before blood: 4%',5.8,1932],[1970,'Occult red',13.4,1970],[1985,'Slashers never led',12.8,1985],[2005,'Peak: meta-horror',15.2,2005]].forEach(a=>{
+  [[1930,'Before blood: 4%',6.5,1930],[1970,'Occult red',12.8,1970],[1985,'Slashers never led',8.6,1985],[2000,'Peak: meta-horror',14.5,2000]].forEach(a=>{
     const t=el('text',{x:x(a[3]),y:yy(a[2])-8,'text-anchor':'middle',class:'annot'});t.textContent=a[1];svg.appendChild(t);
   });
 })();
@@ -1261,10 +1261,10 @@ function legacyCharts(){
 /* --- the floating head: % posters with a detectable face --- */
 (function(){
   const svg=document.getElementById('faces'),W=960,H=340,m={t:30,r:30,b:40,l:50};
-  /* FULL CENTURY: % posters with >=1 face, 5-yr rolling (n=37,829, YuNet) */
+  /* FULL CENTURY: % posters with >=1 face, 5-yr rolling (n=33,619, YuNet) */
   const pts=since1920(FACE_PTS);
   const x=y=>m.l+(y-CHART_X0)/(CHART_X1-CHART_X0)*(W-m.l-m.r);
-  const yy=v=>m.t+(90-v)/(90-40)*(H-m.t-m.b);
+  const yy=v=>m.t+(95-v)/(95-40)*(H-m.t-m.b);
   [40,50,60,70,80,90].forEach(v=>{
     svg.appendChild(el('line',{x1:m.l,x2:W-m.r,y1:yy(v),y2:yy(v),class:'axis'}));
     const t=el('text',{x:m.l-8,y:yy(v)+4,'text-anchor':'end',class:'tick-label'});t.textContent=v+'%';svg.appendChild(t);
@@ -1275,7 +1275,7 @@ function legacyCharts(){
   const line='M'+pts.map(p=>`${x(p[0])},${yy(p[1])}`).join(' L');
   svg.appendChild(el('path',{d:line+` L${x(CHART_X1)},${yy(40)} L${x(CHART_X0)},${yy(40)} Z`,fill:'rgba(232,228,218,.06)'}));
   svg.appendChild(el('path',{d:line,fill:'none',stroke:'#e8e4da','stroke-width':3,'stroke-linecap':'round'}));
-  [[1998,'1998: bigger faces',70.5,1998],[2018,'under half',46,2018]].forEach(a=>{
+  [[1945,'1945 peak: 91%',90.7,1945],[1998,'1998: bigger faces',62.3,1998],[2018,'under half',45.7,2018]].forEach(a=>{
     const t=el('text',{x:x(a[3]),y:yy(a[2])-8,'text-anchor':'middle',class:'annot'});t.textContent=a[1];svg.appendChild(t);
   });
 })();
