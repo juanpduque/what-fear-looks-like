@@ -1,8 +1,17 @@
 import { pct, num, creatureLabels, posterSrc } from '../shared/posters.js';
-import { resolveFaces, faceLab } from './faces.js';
+import { resolveFaces, faceLab, novaFaceCount } from './faces.js';
+import { formatNovaCreature, novaCreature, novaOcr, novaTitle, novaTypo } from './nova.js';
 
 const t = (...args) =>
   typeof window.t === 'function' ? window.t(...args) : args[0];
+
+function esc(s) {
+  return String(s ?? '')
+    .replace(/&/g, '&amp;')
+    .replace(/</g, '&lt;')
+    .replace(/>/g, '&gt;')
+    .replace(/"/g, '&quot;');
+}
 
 export const BAND_COLORS = ['#e02430', '#e5a00d', '#8fb05a', '#5a9eb0', '#b08ad4', '#9a958a'];
 
@@ -35,6 +44,69 @@ function boxStyle(x, y, w, h) {
   const W = Math.min(100 - L, Math.max(1, w * 100));
   const H = Math.min(100 - T, Math.max(1, h * 100));
   return `left:${L.toFixed(1)}%;top:${T.toFixed(1)}%;width:${W.toFixed(1)}%;height:${H.toFixed(1)}%`;
+}
+
+/** COCO-17 bones (ViTPose). Indices match pipeline/vitpose_dynamism_score.py. */
+const COCO_BONES = [
+  [0, 1],
+  [0, 2],
+  [1, 3],
+  [2, 4],
+  [5, 6],
+  [5, 7],
+  [7, 9],
+  [6, 8],
+  [8, 10],
+  [5, 11],
+  [6, 12],
+  [11, 12],
+  [11, 13],
+  [13, 15],
+  [12, 14],
+  [14, 16],
+];
+const KPT_MIN = 0.3;
+
+function kptVisible(kpts, i) {
+  const p = kpts[i];
+  return Array.isArray(p) && p.length >= 3 && Number(p[2]) >= KPT_MIN;
+}
+
+function kptBox(kpts) {
+  const xs = [];
+  const ys = [];
+  for (let i = 0; i < kpts.length; i++) {
+    if (!kptVisible(kpts, i)) continue;
+    xs.push(kpts[i][0]);
+    ys.push(kpts[i][1]);
+  }
+  if (!xs.length) return null;
+  const pad = 0.04;
+  const x = Math.max(0, Math.min(...xs) - pad);
+  const y = Math.max(0, Math.min(...ys) - pad);
+  const x1 = Math.min(1, Math.max(...xs) + pad);
+  const y1 = Math.min(1, Math.max(...ys) + pad);
+  return [x, y, Math.max(0.02, x1 - x), Math.max(0.02, y1 - y)];
+}
+
+/** Stick figure over the poster. Joints stay circular (HTML); bones stretch with the sheet. */
+export function skeletonHtml(kpts) {
+  if (!Array.isArray(kpts) || kpts.length < 5) return '';
+  const lines = COCO_BONES.filter(([a, b]) => kptVisible(kpts, a) && kptVisible(kpts, b))
+    .map(([a, b]) => {
+      const [x1, y1] = kpts[a];
+      const [x2, y2] = kpts[b];
+      return `<line x1="${(x1 * 100).toFixed(2)}" y1="${(y1 * 100).toFixed(2)}" x2="${(x2 * 100).toFixed(2)}" y2="${(y2 * 100).toFixed(2)}"/>`;
+    })
+    .join('');
+  const joints = kpts
+    .map((p, i) => {
+      if (!kptVisible(kpts, i)) return '';
+      return `<i class="lk-joint" style="left:${(p[0] * 100).toFixed(1)}%;top:${(p[1] * 100).toFixed(1)}%"></i>`;
+    })
+    .join('');
+  if (!lines && !joints) return '';
+  return `<svg class="lk-skeleton" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true">${lines}</svg>${joints}`;
 }
 
 function dimSvg(maskId, boxes) {
@@ -136,6 +208,11 @@ export function buildLayersHtml(p, a) {
   const tLabTop = box ? box.labTop : 6;
   const tLabLeft = box ? Math.max(2, box.left) : 4;
   const faceLabText = faceLab(a, p);
+  const novaN = novaFaceCount(a);
+  const novaLabHtml =
+    novaN == null
+      ? ''
+      : `<div class="lk-lab${novaN !== faces.yunet ? ' amber' : ''}" style="top:6%;right:4%">${t('lab_faces_nova', { n: novaN })}</div>`;
   const fboxes = faces.fboxes;
   const faceBoxesHtml = fboxes
     .map(([x, y, w, h]) => `<div class="lk-facebox" style="${boxStyle(x, y, w, h)}"></div>`)
@@ -163,6 +240,12 @@ export function buildLayersHtml(p, a) {
       return `<div class="lk-cbox" style="${boxStyle(x, y, w, h)}"><span class="lk-cbox-lab${labClass}">${lab}${sc}</span></div>`;
     })
     .join('');
+  const novaC = novaCreature(a);
+  const clipSlot = !creature || creature === 'uncertain' || creature === 'none' ? 'none' : creature;
+  const novaCreatureLabHtml =
+    novaC == null
+      ? ''
+      : `<div class="lk-lab${novaC !== clipSlot ? ' amber' : ''}" style="top:6%;left:4%">${t('lab_creature_nova', { c: formatNovaCreature(novaC) })}</div>`;
   const creatureLabHtml = cboxesPref.length
     ? `<div class="lk-lab blood" style="top:6%;right:4%">${t('lab_creature', { c: cLabel })}${a.cscore != null ? ' · ' + pct(a.cscore) : ''} · OWL</div>`
     : `<div class="lk-lab amber" style="top:45%;left:50%;transform:translate(-50%,-50%)">${t('lab_creature', { c: cLabel })}${a.cscore != null ? ' · ' + pct(a.cscore) : ''}</div>`;
@@ -173,6 +256,21 @@ export function buildLayersHtml(p, a) {
   const textLab = box
     ? t('lab_title_box_text', { v: pct(comp.txt) })
     : t('lab_textlike_pending', { v: pct(comp.txt) });
+  const novaT = novaTypo(a);
+  const novaTypoLabHtml =
+    novaT == null
+      ? ''
+      : `<div class="lk-lab${novaT !== a.typo ? ' amber' : ''}" style="top:6%;left:4%">${t('lab_letter_nova', { typo: novaT })}</div>`;
+  const novaTitleVal = novaTitle(a);
+  const novaOcrVal = novaOcr(a);
+  const novaOcrLabHtml =
+    novaOcrVal == null
+      ? ''
+      : `<div class="lk-lab${novaOcrVal !== 'accurate' ? ' amber' : ''}" style="top:6%;right:4%">${
+          novaTitleVal
+            ? t('lab_letter_nova_ocr', { title: esc(novaTitleVal) })
+            : t('lab_letter_nova_ocr_empty')
+        }</div>`;
   const sem = a.sem || {};
   const semTags = Object.entries(sem)
     .filter(([, v]) => v > 0)
@@ -193,6 +291,9 @@ export function buildLayersHtml(p, a) {
           <div class="lk-lab" style="top:16%;left:4%">${t('lab_pose_spread', { v: pose.spread == null ? '—' : num(pose.spread, 2) })}</div>
           <div class="lk-lab" style="top:24%;left:4%">${t('lab_pose_asym', { v: pose.asym == null ? '—' : num(pose.asym, 2) })}</div>
           <div class="lk-lab" style="top:32%;left:4%">${t('lab_pose_conf', { v: pose.conf == null ? '—' : pct(pose.conf) })}</div>`;
+    if (!pose.kpts) {
+      poseHtml += `<div class="lk-lab amber" style="top:40%;left:4%">${t('lab_pose_no_skel')}</div>`;
+    }
   }
 
   const titleHole = box
@@ -202,7 +303,8 @@ export function buildLayersHtml(p, a) {
     const raw = b.box || b;
     return Array.isArray(raw) ? raw : [0, 0, 0, 0];
   });
-  const poseHoles = pose?.n ? fboxes : [];
+  const poseHoles = pose?.box ? [pose.box] : pose?.kpts ? [kptBox(pose.kpts)].filter(Boolean) : [];
+  const poseSkel = pose?.kpts ? skeletonHtml(pose.kpts) : '';
 
   return `<div class="lk-ov" id="lk-ov">
         <div class="lk-layer" data-layer="L"><div class="lk-lab" style="top:6%;left:4%">L* ${a.L ?? p[4]}</div></div>
@@ -231,11 +333,13 @@ export function buildLayersHtml(p, a) {
           <div class="lk-palfloat">${palFloat}</div>
           <div class="lk-lab" style="top:6%;left:4%">${t('lab_hue_families')}</div></div>
         <div class="lk-layer" data-layer="faces">${dimSvg('lk-mask-faces', fboxes)}${faceBoxesHtml}
+          ${novaLabHtml}
           <div class="lk-lab${faces.source === 'rek' ? ' amber' : ''}" style="${faceLabStyle}">${faceLabText}</div></div>
-        <div class="lk-layer" data-layer="creature">${dimSvg('lk-mask-creature', creatureHoles)}${creatureBoxesHtml}${creatureLabHtml}</div>
+        <div class="lk-layer" data-layer="creature">${dimSvg('lk-mask-creature', creatureHoles)}${creatureBoxesHtml}${novaCreatureLabHtml}${creatureLabHtml}</div>
         <div class="lk-layer" data-layer="medium">${dimSvg('lk-mask-medium', [])}
           <div class="lk-lab" style="top:8%;left:4%">${mediumLab}</div></div>
         <div class="lk-layer" data-layer="text">${dimSvg('lk-mask-text', titleHole)}<div class="lk-textband" style="${textBandStyle}"></div>
+          ${novaTypoLabHtml}${novaOcrLabHtml}
           <div class="lk-lab blood" style="top:${tLabTop.toFixed(1)}%;left:${tLabLeft.toFixed(1)}%">${textLab}</div></div>
         <div class="lk-layer" data-layer="sym">
           <div class="lk-mirror"><img src="${posterSrc(p, 'm')}" alt=""></div>
@@ -266,7 +370,7 @@ export function buildLayersHtml(p, a) {
         <div class="lk-layer" data-layer="blood"><div class="lk-wash"></div>
           <div class="lk-lab blood" style="bottom:8%;left:4%">${t('lab_clip_blood', { v: pct(sem.blood) })}</div></div>
         <div class="lk-layer" data-layer="sem">${dimSvg('lk-mask-sem', [])}${semTags || `<div class="lk-lab amber" style="top:8%;left:4%">${t('lab_semantic_none')}</div>`}</div>
-        <div class="lk-layer" data-layer="pose">${dimSvg('lk-mask-pose', poseHoles)}${pose?.n ? faceBoxesHtml : ''}${poseHtml}</div>
+        <div class="lk-layer" data-layer="pose">${dimSvg('lk-mask-pose', poseHoles)}${poseSkel}${poseHtml}</div>
       </div>`;
 }
 
