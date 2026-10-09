@@ -1,0 +1,47 @@
+name: CI
+
+on:
+  pull_request:
+  push:
+    branches: [main]
+
+permissions:
+  contents: read
+
+jobs:
+  python:
+    name: Python — pytest + ruff
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.11"
+      - name: Install dev tooling
+        run: pip install -r pipeline/requirements-dev.txt
+      - name: Tests (stdlib-only, run from pipeline/)
+        working-directory: pipeline
+        run: python -m pytest
+      - name: Lint (ruff — advisory, does not fail the build yet)
+        working-directory: pipeline
+        run: ruff check . || true
+
+  site:
+    name: Site — eslint + prettier
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - name: Install
+        working-directory: site
+        run: npm ci
+      - name: ESLint (blocking — currently clean)
+        working-directory: site
+        run: npm run lint
+      - name: Prettier (advisory until the codebase is formatted)
+        working-directory: site
+        run: npm run format:check || true
