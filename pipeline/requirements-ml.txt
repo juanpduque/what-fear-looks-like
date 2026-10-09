@@ -1,0 +1,32 @@
+# Heavy / optional extras — only needed for specific stages. Install the core
+# first:  pip install -r pipeline/requirements.txt -r pipeline/requirements-ml.txt
+#
+# Grouped by the pipeline stage that pulls them in (see README "Run the pipeline").
+
+# --- Semantic chapters: CLIP + face detection ----------------------------
+#   clip_embed.py / clip_census.py / clip_medium.py / clip_typography_axis.py
+#   faces_v2.py / multi_analyze.py
+torch>=2.0
+open_clip_torch>=2.20
+opencv-python>=4.7
+shapely>=2.0
+
+# --- Semantic segmentation: material & scene composition -----------------
+#   segmentation.py  (SegFormer-b0, Minc-Materials-23, CLIP zero-shot)
+transformers>=4.30
+
+# --- Title bounding boxes (local OCR path) -------------------------------
+#   title_boxes.py
+easyocr>=1.7
+
+# --- AWS enrichment jobs (Rekognition / Nova / S3 backfills) -------------
+#   rekognition_enrich.py, title_boxes_rekognition.py, nova_*_enrich.py,
+#   *_backfill_s3.py, jobs_dashboard_poller.py
+boto3>=1.28
+botocore>=1.31
+
+# --- Live IMDb poster/metadata scraping (optional fallbacks) -------------
+#   pull_imdb_posters.py --browser
+playwright>=1.40
+#   enrich_imdb_selenium_features.py / resolve_imdb_ambiguous_selenium.py
+selenium>=4.10

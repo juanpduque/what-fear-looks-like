@@ -1,0 +1,28 @@
+# Ruff config for the pipeline. Lint + format, matching the existing codebase.
+#   pip install ruff
+#   ruff check pipeline/          # lint
+#   ruff format pipeline/         # format (currently check-only in CI)
+#
+# Intentionally conservative so the first adoption doesn't reformat 22k lines.
+# Expand `select` over time.
+
+target-version = "py39"
+line-length = 100
+
+extend-exclude = ["legacy", "data"]
+
+[lint]
+# Start with the high-signal, low-churn rules; grow this list deliberately.
+select = [
+    "E",   # pycodestyle errors
+    "F",   # pyflakes (undefined names, unused imports)
+    "I",   # import sorting
+    "UP",  # pyupgrade
+    "B",   # flake8-bugbear (likely bugs)
+]
+ignore = [
+    "E501",  # line length handled by the formatter, not enforced as an error yet
+]
+
+[lint.isort]
+known-first-party = ["corpus"]
