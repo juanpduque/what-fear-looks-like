@@ -112,3 +112,33 @@ site/tv-movie-review.html
 pipeline/data/rekognition.log
 pipeline/data/title_boxes.log
 pipeline/data/title_boxes_rekognition.log
+
+# Local build output and dependencies
+_site_pages/
+node_modules/
+
+# Local tooling state
+.claude/settings.local.json
+pipeline/dashboard/*.log
+pipeline/dashboard/*.pid
+pipeline/*.pt
+
+# Local poster staging, quarantines, pulls and backups (never published)
+pipeline/data/posters_*/
+pipeline/data/backups/
+pipeline/data/*_backup/
+pipeline/data/*_backup_*/
+pipeline/data/backfills_ec2_*/
+pipeline/data/imdb_datasets/
+pipeline/data/imdb_selenium_s3_pull/
+pipeline/data/s3_workshop/
+
+# QA / review pages kept local-only (removed from the repo in PR #14)
+site/comedy-review.html
+site/corpus-filter-qa.html
+site/label-qa-medium.html
+site/label-qa-typography.html
+site/ocr-title-review.html
+site/poster-drift-review.html
+site/LABEL_QA_MEDIUM.md
+site/LABEL_QA_TYPOGRAPHY.md
