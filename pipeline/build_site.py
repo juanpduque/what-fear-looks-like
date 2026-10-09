@@ -11,7 +11,6 @@ check_site_invariants.py. Raw per-poster CSVs are only read.
 from __future__ import annotations
 
 import json
-import shutil
 import sys
 from pathlib import Path
 
@@ -25,17 +24,36 @@ SITE_DATA = HERE.parent / "site" / "data"
 # Unpruned copies of id-keyed site globals that have no CSV builder here.
 GLOBAL_SRC = DATA / "site_globals_full"
 ID_GLOBALS = ["pose.js", "creature_boxes.js", "weapon_boxes.js"]
+# Globals that are a 1:1 copy of a full JSON in data/: rebuild the unpruned
+# copy from it so ids that join the corpus later still get their entries.
+JSON_SOURCES = {
+    "weapon_boxes.js": (DATA / "weapon_boxes.json", "window.WEAPON_BOXES"),
+}
+
+
+def refresh_from_json(name: str) -> None:
+    src_json, decl = JSON_SOURCES[name]
+    data = json.loads(src_json.read_text(encoding="utf-8"))
+    GLOBAL_SRC.mkdir(parents=True, exist_ok=True)
+    (GLOBAL_SRC / name).write_text(
+        f"/* {name} n={len(data)} — pipeline/data/{src_json.name} */\n"
+        f"{decl}={json.dumps(data, ensure_ascii=False, separators=(',', ':'))};\n",
+        encoding="utf-8",
+    )
 
 
 def prune_id_global(name: str, keep: frozenset[int]) -> None:
     dst = SITE_DATA / name
     src = GLOBAL_SRC / name
+    if name in JSON_SOURCES and JSON_SOURCES[name][0].exists():
+        refresh_from_json(name)
     if not src.exists():
-        if not dst.exists():
-            print(f"  aviso: falta {name}")
-            return
-        GLOBAL_SRC.mkdir(parents=True, exist_ok=True)
-        shutil.copy2(dst, src)
+        # Never seed src from dst: dst is already pruned, so the copy would
+        # freeze the old corpus and new ids would silently lose their entries.
+        raise SystemExit(
+            f"falta {src.relative_to(HERE.parent)} (copia sin podar de {name}); "
+            f"regenérala desde su script de origen"
+        )
     text = src.read_text(encoding="utf-8")
     eq = text.index("={")
     head, body = text[:eq], text[eq + 1:].rstrip().rstrip(";")
