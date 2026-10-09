@@ -3,7 +3,7 @@
 **100 years of horror movie posters, one pixel at a time.**
 A data-driven visual essay by [Pulp Analytics](https://medium.com/pulp-analytics), in the style of [The Pudding](https://pudding.cool).
 
-We analyze **33,619** English-language horror posters (1900–2026): already released, with a servable poster, no adult flag, and without Animation, Music, or TV Movie. Exclusion lists in `pipeline/data/excluded_*.csv` still apply. The published id list is `pipeline/data/canonical_ids.txt` — rebuild with `python3 pipeline/build_corpus.py && python3 pipeline/build_site.py`. See `docs/CORPUS.md`.
+We analyze **33,622** English-language horror posters (1900–2026): already released, with a servable poster, no adult flag, and without Animation, Music, or TV Movie. Exclusion lists in `pipeline/data/excluded_*.csv` still apply. The published id list is `pipeline/data/canonical_ids.txt` — rebuild with `python3 pipeline/build_corpus.py && python3 pipeline/build_site.py`. See `docs/CORPUS.md`.
 
 ## Structure
 
@@ -150,7 +150,7 @@ open vocabulary (blood, smoke, bone) that neither of the above covers.
 Outputs: `segmentation.csv` (per-poster), `segmentation_decade.json` (a
 "material palette" by decade, same shape as `hue_river.json`).
 
-Ran the **full corpus** after exclusions; the site uses **n = 33,619**
+Ran the **full corpus** after exclusions; the site uses **n = 33,622**
 posters for segmentation. Validated `--validate` against 5 posters with
 manually-checked artwork (Jaws, Friday the 13th, The Blair Witch Project,
 The Evil Dead, The Thing) before trusting any of it. Real, useful signal:
