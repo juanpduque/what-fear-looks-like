@@ -53,6 +53,57 @@ def _fuzzy_title(text: str, title: str) -> float:
     return float(min(1.0, r))
 
 
+def title_line_hits(lines: list[dict], title: str, min_match: float):
+    """DetectText lines that spell the title, as [(match, box, text)].
+
+    Letter-spaced titles ("A L I E N") come back as one line per letter, and
+    no single letter fuzzy-matches the title. When no line matches alone,
+    group lines sharing a row (left to right) and match the joined text.
+    """
+    boxed = []
+    for ln in lines:
+        box = ln.get("box") if isinstance(ln, dict) else None
+        if not isinstance(box, (list, tuple)) or len(box) < 4:
+            continue
+        try:
+            b = tuple(float(v) for v in box[:4])
+        except (TypeError, ValueError):
+            continue
+        boxed.append((b, ln.get("text") or ""))
+
+    hits = []
+    for b, text in boxed:
+        m = _fuzzy_title(text, title)
+        if m >= min_match:
+            hits.append((m, b, text))
+    if hits:
+        return hits
+
+    rows: list[list[tuple]] = []
+    for b, text in sorted(boxed, key=lambda x: x[0][1] + x[0][3] / 2):
+        cy, h = b[1] + b[3] / 2, b[3]
+        for row in rows:
+            rb = row[0][0]
+            if abs(cy - (rb[1] + rb[3] / 2)) <= 0.6 * max(h, rb[3]):
+                row.append((b, text))
+                break
+        else:
+            rows.append([(b, text)])
+    best = None
+    for row in rows:
+        if len(row) < 2:
+            continue
+        row.sort(key=lambda x: x[0][0])
+        joined = " ".join(text for _, text in row)
+        m = _fuzzy_title(joined, title)
+        if m >= min_match and (best is None or m > best[0]):
+            best = (m, row, joined)
+    if best is None:
+        return []
+    m, row, joined = best
+    return [(m, b, joined) for b, _ in row]
+
+
 def _pos_bonus(cy: float) -> float:
     if cy < 0.28 or cy > 0.72:
         return 2.2

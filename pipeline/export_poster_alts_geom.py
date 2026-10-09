@@ -17,7 +17,7 @@ import csv
 import json
 from pathlib import Path
 
-from title_boxes_rekognition import _fuzzy_title
+from title_boxes_rekognition import title_line_hits
 
 HERE = Path(__file__).resolve().parent
 QA = HERE / "data" / "qa"
@@ -202,21 +202,9 @@ def write_text(wanted: dict[str, set[str]]) -> None:
             if not isinstance(lines, list):
                 continue
             title = titles.get(pid) or ""
-            boxes = []
-            for ln in lines:
-                if not isinstance(ln, dict):
-                    continue
-                box = ln.get("box")
-                if not isinstance(box, (list, tuple)) or len(box) < 4:
-                    continue
-                if title and _fuzzy_title(ln.get("text") or "", title) < MATCH_MIN:
-                    continue
-                if not title:
-                    continue
-                try:
-                    boxes.append((float(box[0]), float(box[1]), float(box[2]), float(box[3])))
-                except (TypeError, ValueError):
-                    continue
+            if not title:
+                continue
+            boxes = [b for _, b, _ in title_line_hits(lines, title, MATCH_MIN)]
             if not boxes:
                 continue
             ink = union_box(boxes)
