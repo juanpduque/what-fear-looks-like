@@ -223,6 +223,10 @@
     "en": "wolf/dog",
     "es": "lobo/perro"
   },
+  "creature_animal": {
+    "en": "animal",
+    "es": "animal"
+  },
   "aria_river_label": {
     "en": "Hue-family share of poster pixels by decade",
     "es": "Cuota de píxeles del póster por familia de matiz, por década"
@@ -240,8 +244,8 @@
     "es": "Brillo medio del póster a lo largo del siglo"
   },
   "aria_darkness_desc": {
-    "en": "Line chart of mean L* brightness from 1925 to 2026. Brightness peaks around 1960 then falls for about sixty years.",
-    "es": "Gráfico de líneas del brillo medio L* de 1925 a 2026. El brillo llega a su pico alrededor de 1960 y luego cae unos sesenta años."
+    "en": "Line chart of mean L* brightness from 1920 to 2026. Brightness peaks around 1960 then falls for about sixty years.",
+    "es": "Gráfico de líneas del brillo medio L* de 1920 a 2026. El brillo llega a su pico alrededor de 1960 y luego cae unos sesenta años."
   },
   "table_darkness_caption": {
     "en": "Mean poster brightness (L*), 5-year rolling points",
@@ -264,8 +268,8 @@
     "es": "Cuota de píxeles rojo sangre a lo largo del tiempo"
   },
   "aria_red_desc": {
-    "en": "Line chart of blood-red pixel share from 1925 to 2026. The peak is around 2000, after the slasher era.",
-    "es": "Gráfico de líneas de la cuota de píxeles rojo sangre de 1925 a 2026. El pico está alrededor de 2000, después de la era slasher."
+    "en": "Line chart of blood-red pixel share from 1920 to 2026. The peak is around 2000, after the slasher era.",
+    "es": "Gráfico de líneas de la cuota de píxeles rojo sangre de 1920 a 2026. El pico está alrededor de 2000, después de la era slasher."
   },
   "table_red_caption": {
     "en": "Blood-red pixel share (%), 5-year rolling points",
@@ -683,6 +687,18 @@
     "en": "painted",
     "es": "pintado"
   },
+  "lookup_photo": {
+    "en": "photo",
+    "es": "foto"
+  },
+  "lookup_mixed": {
+    "en": "mixed",
+    "es": "mixto"
+  },
+  "lookup_composite": {
+    "en": "composite",
+    "es": "compuesto"
+  },
   "lookup_photo_mixed": {
     "en": "photo / mixed",
     "es": "foto / mixto"
@@ -710,6 +726,18 @@
   "lab_palette_regions": {
     "en": "k-means regions",
     "es": "regiones k-means"
+  },
+  "lab_palette_swatches": {
+    "en": "this sheet's palette · {n} swatches",
+    "es": "paleta de esta hoja · {n} muestras"
+  },
+  "lab_hue_families_top": {
+    "en": "Color River · {name} {v}",
+    "es": "Río de color · {name} {v}"
+  },
+  "lab_hue_families_bins": {
+    "en": "6 fixed bins · pixel share",
+    "es": "6 bandas fijas · cuota de píxel"
   },
   "lab_near_black_pct": {
     "en": "{n}% near-black",
@@ -739,6 +767,22 @@
     "en": "brightness heatmap · L* {L}",
     "es": "mapa de brillo · L* {L}"
   },
+  "lab_saliency": {
+    "en": "MSI-Net peak · top10 {v}",
+    "es": "pico MSI-Net · top10 {v}"
+  },
+  "lab_saliency_map": {
+    "en": "MSI-Net saliency",
+    "es": "saliencia MSI-Net"
+  },
+  "lab_saliency_pending": {
+    "en": "MSI-Net map pending",
+    "es": "mapa MSI-Net pendiente"
+  },
+  "lab_saliency_missing": {
+    "en": "No MSI-Net map for this sheet",
+    "es": "Esta hoja no tiene mapa MSI-Net"
+  },
   "autopsy_color_modes": {
     "en": "Color views",
     "es": "Vistas de color"
@@ -767,6 +811,10 @@
     "en": "Saturation",
     "es": "Saturación"
   },
+  "autopsy_cmode_saliency": {
+    "en": "Saliency",
+    "es": "Mapa de calor"
+  },
   "autopsy_cmode_bands": {
     "en": "Hue bands",
     "es": "Familias de matiz"
@@ -780,12 +828,16 @@
     "es": "Caja de título"
   },
   "autopsy_cmode_medium": {
-    "en": "Painted / photo",
-    "es": "Pintado / foto"
+    "en": "Painted / photo / composite",
+    "es": "Pintado / foto / compuesto"
   },
   "autopsy_cmode_creature": {
     "en": "Census",
     "es": "Censo"
+  },
+  "autopsy_cmode_weapon": {
+    "en": "Weapon",
+    "es": "Arma"
   },
   "autopsy_cmode_sem": {
     "en": "CLIP tags",
@@ -832,8 +884,8 @@
     "es": "Complejidad"
   },
   "autopsy_cmode_blurb_palette": {
-    "en": "Five swatches from this sheet’s k-means palette in CIELAB (saturation-weighted) — the same dominant colors that feed the Color River.",
-    "es": "Cinco muestras de la paleta k-means de esta hoja en CIELAB (ponderada por saturación): los mismos colores dominantes que alimentan el Río de color."
+    "en": "Five k-means swatches of this sheet’s ink in CIELAB (saturation-weighted). Count: {pal_n} colors. This is not the Color River — the river uses six fixed hue-family bins.",
+    "es": "Cinco muestras k-means de la tinta de esta hoja en CIELAB (ponderada por saturación). Conteo: {pal_n} colores. No es el Río de color: el río usa seis bandas fijas de familia de matiz."
   },
   "autopsy_cmode_blurb_dark": {
     "en": "Near-black pixel share: {dark}. Same Dark band as the Color River — how much of the sheet is night.",
@@ -851,9 +903,13 @@
     "en": "Mean saturation {sat}. How vivid the colors are — pulp heat vs. muted elevated sheets.",
     "es": "Saturación media {sat}. Qué tan vivos son los colores: calor pulp vs. hojas elevated apagadas."
   },
+  "autopsy_cmode_blurb_saliency": {
+    "en": "MSI-Net attention map. The hot spot is where the model looks first — not the OpenCV balance centroid, and not a Color River bin. Top-10% mass: {sal_m}.",
+    "es": "Mapa de atención MSI-Net. El punto caliente es donde mira el modelo primero: no es el centroide de balance OpenCV ni una banda del Río. Masa del 10% alto: {sal_m}."
+  },
   "autopsy_cmode_blurb_bands": {
-    "en": "Hue-family pixel shares — the six bands of the Color River, measured on this one sheet.",
-    "es": "Cuotas por familia de matiz: las seis bandas del Río de color, medidas en esta sola hoja."
+    "en": "Six Color River bins as pixel share on this sheet. Dominant family: {band} at {band_pct}. These are fixed hue buckets, not the five k-means swatches.",
+    "es": "Seis bandas del Río de color como cuota de píxel en esta hoja. Familia dominante: {band} al {band_pct}. Son cubetas fijas de matiz, no las cinco muestras k-means."
   },
   "autopsy_cmode_blurb_blood": {
     "en": "CLIP “blood” score {blood} — semantic blood, even when it isn’t pixel-red. Separate from the red mask.",
@@ -864,12 +920,16 @@
     "es": "Cobertura tipo texto {txt}; registro {typo} (eje recargado↔mínimo {taxis}). Cuánto grita la hoja su nombre."
   },
   "autopsy_cmode_blurb_medium": {
-    "en": "Painted score {painted}: how illustration-like vs. photographic the sheet reads to the model.",
-    "es": "Puntaje pintado {painted}: qué tan ilustrada vs. fotográfica se lee la hoja para el modelo."
+    "en": "Rekognition Custom Labels medium: {medium} ({conf}). CLIP illustration score {painted} is the note, not the slot.",
+    "es": "Medio Rekognition Custom Labels: {medium} ({conf}). El puntaje CLIP de ilustración {painted} es nota, no el cajón."
   },
   "autopsy_cmode_blurb_creature": {
     "en": "CLIP creature census: {creature} ({cscore}). Boxes appear when OWL-ViT found one; labels below the confidence floor are dropped.",
     "es": "Censo CLIP de criaturas: {creature} ({cscore}). Las cajas aparecen si OWL-ViT encontró una; bajo el umbral se descartan."
+  },
+  "autopsy_cmode_blurb_weapon": {
+    "en": "Rek weapon presence: {rek_w}. OWL boxes at the score floor: {w_n}. CLIP weapon family: {clip_w}. Boxes are geometry — not an essay count.",
+    "es": "Presencia Rek de arma: {rek_w}. Cajas OWL sobre el umbral: {w_n}. Familia CLIP de arma: {clip_w}. Las cajas son geometría, no un conteo del ensayo."
   },
   "autopsy_cmode_blurb_sem": {
     "en": "CLIP semantic tags on this sheet (blood, weapon, and kin) — concepts, not just hues.",
@@ -926,6 +986,26 @@
   "lab_creature": {
     "en": "creature: {c}",
     "es": "criatura: {c}"
+  },
+  "lab_weapon_owl": {
+    "en": "{n} OWL weapon box",
+    "es": "{n} caja OWL de arma"
+  },
+  "lab_weapon_rek_only": {
+    "en": "Rek weapon · no OWL box ≥ 0.3",
+    "es": "Arma Rek · sin caja OWL ≥ 0.3"
+  },
+  "lab_weapon_none": {
+    "en": "no weapon box ≥ 0.3",
+    "es": "sin caja de arma ≥ 0.3"
+  },
+  "yn_yes": {
+    "en": "yes",
+    "es": "sí"
+  },
+  "yn_no": {
+    "en": "no",
+    "es": "no"
   },
   "lab_medium_na": {
     "en": "medium n/a",
@@ -1011,6 +1091,14 @@
     "en": "{n} bodies",
     "es": "{n} cuerpos"
   },
+  "lab_pose_n_many": {
+    "en": "{n} YOLO boxes · 1 skeleton (largest)",
+    "es": "{n} cajas YOLO · 1 esqueleto (la más grande)"
+  },
+  "lab_pose_group": {
+    "en": "{n} YOLO boxes · skeleton withheld (crowd box)",
+    "es": "{n} cajas YOLO · esqueleto omitido (caja de grupo)"
+  },
   "lab_pose_spread": {
     "en": "limb spread {v}",
     "es": "apertura {v}"
@@ -1026,6 +1114,10 @@
   "lab_pose_no_skel": {
     "en": "skeleton not stored",
     "es": "esqueleto no guardado"
+  },
+  "lab_pose_low_conf": {
+    "en": "skeleton withheld · conf {v}",
+    "es": "esqueleto omitido · conf {v}"
   },
   "autopsy_picks_label": {
     "en": "Or start with a known nightmare",
@@ -1056,8 +1148,96 @@
     "es": "I · La hoja"
   },
   "autopsy_body_object": {
-    "en": "{year} · TMDB {id}. One of 33,622 one-sheets measured the same way. Scroll — the layers we ran on every poster peel off this one.",
-    "es": "{year} · TMDB {id}. Uno de 33,622 one-sheets medidos igual. Desplázate: las capas que corrimos en cada póster se despegan de este."
+    "en": "{year} · TMDB {id}. One of 33,622 one-sheets measured the same way. Medium: {medium} (Custom Labels {conf}). CLIP illustration score {painted}. Scroll — the layers we ran on every poster peel off this one.",
+    "es": "{year} · TMDB {id}. Uno de 33,622 one-sheets medidos igual. Medio: {medium} (Custom Labels {conf}). CLIP ilustración {painted}. Desplázate: las capas que corrimos en cada póster se despegan de este."
+  },
+  "autopsy_body_object_clip": {
+    "en": "{year} · TMDB {id}. One of 33,622 one-sheets measured the same way. Medium: {medium} (CLIP illustration score {painted}; Custom Labels did not cover this sheet). Scroll — the layers we ran on every poster peel off this one.",
+    "es": "{year} · TMDB {id}. Uno de 33,622 one-sheets medidos igual. Medio: {medium} (CLIP ilustración {painted}; Custom Labels no cubre esta hoja). Desplázate: las capas que corrimos en cada póster se despegan de este."
+  },
+  "autopsy_body_alts": {
+    "en": "TMDB keeps {n} distinct sheets. Select one to autopsy those pixels — color, pose, YuNet, OWL and title of that sheet.",
+    "es": "TMDB guarda {n} hojas distintas. Elige una para autopsarla: color, pose, YuNet, OWL y título de esa hoja."
+  },
+  "autopsy_alts_kicker": {
+    "en": "Other sheets",
+    "es": "Otras hojas"
+  },
+  "autopsy_alts_measured": {
+    "en": "Measured",
+    "es": "Medida"
+  },
+  "autopsy_alts_peek": {
+    "en": "This sheet — color, composition, pose, YuNet, OWL and title of these pixels.",
+    "es": "Esta hoja — color, composición, pose, YuNet, OWL y título de estos píxeles."
+  },
+  "autopsy_alts_rek_lab": {
+    "en": "Rekognition on this path",
+    "es": "Rekognition sobre esta ruta"
+  },
+  "autopsy_alts_no_geom": {
+    "en": "No YuNet/OWL/title boxes on this sheet — those belong to the measured cover.",
+    "es": "Sin cajas YuNet/OWL/título en esta hoja — esas son de la portada medida."
+  },
+  "autopsy_alts_aria": {
+    "en": "Alternative posters",
+    "es": "Pósters alternativos"
+  },
+  "autopsy_body_alts_rek": {
+    "en": "Rekognition already read {n} of these sheets — a note on that path, not boxes from the measured cover.",
+    "es": "Rekognition ya leyó {n} de estas hojas: una nota sobre esa ruta, no recuadros de la portada medida."
+  },
+  "autopsy_alts_rek_kicker": {
+    "en": "Rekognition · parallel",
+    "es": "Rekognition · paralelo"
+  },
+  "autopsy_alts_rek_measured": {
+    "en": "Measured",
+    "es": "Medida"
+  },
+  "autopsy_alts_rek_this": {
+    "en": "This sheet",
+    "es": "Esta hoja"
+  },
+  "autopsy_alts_rek_none": {
+    "en": "Rekognition did not cover this sheet.",
+    "es": "Rekognition no cubre esta hoja."
+  },
+  "autopsy_alts_rek_note": {
+    "en": "DetectLabels on this file path — not the essay stack.",
+    "es": "DetectLabels sobre esta ruta — no es el stack del ensayo."
+  },
+  "autopsy_alts_rek_person": {
+    "en": "Person",
+    "es": "Persona"
+  },
+  "autopsy_alts_rek_weapon": {
+    "en": "Weapon",
+    "es": "Arma"
+  },
+  "autopsy_alts_rek_animal": {
+    "en": "Animal",
+    "es": "Animal"
+  },
+  "autopsy_alts_rek_fire": {
+    "en": "Fire",
+    "es": "Fuego"
+  },
+  "autopsy_alts_rek_water": {
+    "en": "Water",
+    "es": "Agua"
+  },
+  "autopsy_alts_rek_silhouette": {
+    "en": "Silhouette",
+    "es": "Silueta"
+  },
+  "autopsy_alts_rek_bright": {
+    "en": "Rek brightness",
+    "es": "Brillo Rek"
+  },
+  "autopsy_alts_rek_contrast": {
+    "en": "Contrast",
+    "es": "Contraste"
   },
   "autopsy_kicker_color": {
     "en": "II · Color",
@@ -1068,8 +1248,8 @@
     "es": "Lo que admiten los píxeles"
   },
   "autopsy_body_color": {
-    "en": "Brightness L* {L}. Near-black {dark}. Pixel-red {red}. Saturation {sat}. CLIP blood {blood}. The dots sit on this sheet's k-means palette. Each tab is another instrument from the century charts.",
-    "es": "Brillo L* {L}. Casi negro {dark}. Rojo-píxel {red}. Saturación {sat}. Sangre CLIP {blood}. Los puntos se sientan sobre la paleta k-means de esta hoja. Cada pestaña es otro instrumento de los gráficos del siglo."
+    "en": "Brightness L* {L}. Near-black {dark}. Pixel-red {red}. Saturation {sat}. CLIP blood {blood}. Palette is {pal_n} k-means swatches of this sheet's ink. Hue families are the six Color River bins — here {band} leads at {band_pct}.",
+    "es": "Brillo L* {L}. Casi negro {dark}. Rojo-píxel {red}. Saturación {sat}. Sangre CLIP {blood}. La paleta son {pal_n} muestras k-means de la tinta de esta hoja. Las familias de matiz son las seis bandas del Río — aquí {band} lidera con {band_pct}."
   },
   "autopsy_kicker_faces": {
     "en": "III · Faces",
@@ -1136,24 +1316,40 @@
     "es": "El grito o el susurro"
   },
   "autopsy_body_letter": {
-    "en": "Typography register: {typo}. Ornate↔minimal axis {taxis}. Text-like area {txt}. Painted score {painted}. Mid-century sheets shouted; elevated ones barely speak.",
-    "es": "Registro tipográfico: {typo}. Eje recargado↔mínimo {taxis}. Área tipo texto {txt}. Pintado {painted}. Las hojas de mediados de siglo gritaban; las elevated apenas hablan."
+    "en": "Typography register: {typo}. Ornate↔minimal axis {taxis}. Text-like area {txt}. Mid-century sheets shouted; elevated ones barely speak.",
+    "es": "Registro tipográfico: {typo}. Eje recargado↔mínimo {taxis}. Área tipo texto {txt}. Las hojas de mediados de siglo gritaban; las elevated apenas hablan."
   },
   "autopsy_kicker_creature": {
     "en": "V · Creature",
     "es": "V · Criatura"
   },
   "autopsy_title_creature": {
-    "en": "What the model sees",
-    "es": "Lo que ve el modelo"
+    "en": "What the models see",
+    "es": "Lo que ven los modelos"
   },
   "autopsy_body_creature": {
     "en": "CLIP census: {c} ({score}). When OWL-ViT found a box, it is drawn on the sheet. Labels below the confidence floor are dropped, so this is a conservative call.",
     "es": "Censo CLIP: {c} ({score}). Si OWL-ViT encontró una caja, está dibujada en la hoja. Las etiquetas bajo el umbral se descartan: es una lectura conservadora."
   },
+  "autopsy_body_weapon": {
+    "en": "Rek weapon presence: {rek}. OWL boxes at the score floor: {n}.",
+    "es": "Presencia Rek de arma: {rek}. Cajas OWL sobre el umbral: {n}."
+  },
   "autopsy_body_creature_none": {
     "en": "Nothing in the creature taxonomy cleared the confidence floor. Absence is a result — a lot of modern horror sells dread without a monster you can name.",
     "es": "Nada en la taxonomía de criaturas superó el umbral. La ausencia es un resultado: mucho terror moderno vende el miedo sin un monstruo que puedas nombrar."
+  },
+  "autopsy_body_creature_jev": {
+    "en": "JEV typed type: {c} — not the CLIP census slot.",
+    "es": "JEV tipo tipado: {c} — no es el censo CLIP."
+  },
+  "autopsy_body_creature_jev_agree": {
+    "en": "JEV typed type also called {c}.",
+    "es": "JEV tipo tipado también llamó {c}."
+  },
+  "lab_creature_jev": {
+    "en": "JEV {c}",
+    "es": "JEV {c}"
   },
   "autopsy_body_creature_nova": {
     "en": "Nova Pro (QA) called {c} — not the published CLIP census.",
@@ -1334,6 +1530,14 @@
   "autopsy_body_pose": {
     "en": "ViTPose found {n} bodies. Limb spread {spread} — compact standing scores low; reaching or mid-stride scores high. Left/right asymmetry {asym}. Keypoint confidence {conf}.",
     "es": "ViTPose encontró {n} cuerpos. Apertura de miembros {spread}: una pose de retrato compacta puntúa bajo; alcanzar o ir a medio paso, alto. Asimetría izquierda/derecha {asym}. Confianza de keypoints {conf}."
+  },
+  "autopsy_body_pose_many": {
+    "en": "YOLO found {n} person boxes. ViTPose only ran on the largest — that is the one skeleton. Limb spread {spread}; left/right asymmetry {asym}; keypoint confidence {conf}.",
+    "es": "YOLO encontró {n} cajas de persona. ViTPose solo corrió en la más grande: ese es el único esqueleto. Apertura {spread}; asimetría izquierda/derecha {asym}; confianza de keypoints {conf}."
+  },
+  "autopsy_body_pose_group": {
+    "en": "YOLO found {n} person boxes. The largest one is a crowd blob, so the stored skeleton is not the figure you see — it is withheld. Painting every body needs a ViTPose pass on each box.",
+    "es": "YOLO encontró {n} cajas de persona. La más grande es un bloque de grupo, así que el esqueleto guardado no es la figura que se ve y se omite. Pintar cada cuerpo pide una pasada de ViTPose por caja."
   },
   "autopsy_body_pose_none": {
     "en": "The pose job ran and found no body. A face on the sheet does not always come with a readable figure.",

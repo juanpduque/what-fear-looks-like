@@ -1,6 +1,8 @@
 import { pct, num, creatureLabels, posterSrc } from '../shared/posters.js';
+import { titleInkFor } from './data.js';
 import { resolveFaces, faceLab, novaFaceCount } from './faces.js';
 import { formatNovaCreature, novaCreature, novaOcr, novaTitle, novaTypo } from './nova.js';
+import { clipToJevSlot, formatJevCreature, jevCreature, showJevCreatureLab } from './jev.js';
 
 const t = (...args) =>
   typeof window.t === 'function' ? window.t(...args) : args[0];
@@ -27,7 +29,7 @@ export function hueBands() {
   ];
 }
 
-function bandBarHtml(bands) {
+export function bandBarHtml(bands) {
   const cols = hueBands();
   return (bands || [])
     .map((v, i) => {
@@ -36,6 +38,36 @@ function bandBarHtml(bands) {
       return `<i style="width:${(v || 0) * 100}%;background:${c}" title="${name} ${pct(v)}"></i>`;
     })
     .join('');
+}
+
+/** Dominant Color River bin on this sheet (pixel share, not k-means). */
+export function topHueFamily(a) {
+  const bands = a?.bands || [];
+  const cols = hueBands();
+  const n = Math.min(bands.length, cols.length);
+  let best = 0;
+  for (let i = 1; i < n; i++) {
+    if ((bands[i] || 0) > (bands[best] || 0)) best = i;
+  }
+  return {
+    i: best,
+    name: n ? cols[best].short : '—',
+    v: n ? bands[best] || 0 : 0,
+    n: cols.length,
+  };
+}
+
+export function bandLegendHtml(bands) {
+  const cols = hueBands();
+  const top = topHueFamily({ bands });
+  return `<div class="lk-bandleg">${(bands || [])
+    .map((v, i) => {
+      const name = cols[i]?.short || '';
+      const c = cols[i]?.c || BAND_COLORS[i] || '#888';
+      const on = i === top.i ? ' is-top' : '';
+      return `<span class="${on}"><i style="background:${c}"></i>${esc(name)} ${pct(v)}</span>`;
+    })
+    .join('')}</div>`;
 }
 
 function boxStyle(x, y, w, h) {
@@ -65,11 +97,62 @@ const COCO_BONES = [
   [12, 14],
   [14, 16],
 ];
-const KPT_MIN = 0.3;
+const KPT_MIN = 0.45;
+const KPT_MIN_COUNT = 5;
+const POSE_MEAN_MIN = 0.3;
+const POSE_SPREAD_MAX = 1.5;
 
 function kptVisible(kpts, i) {
   const p = kpts[i];
   return Array.isArray(p) && p.length >= 3 && Number(p[2]) >= KPT_MIN;
+}
+
+/**
+ * Largest YOLO box on a crowd sheet is often several people glued together
+ * (Freaks 136). ViTPose then locks onto one figure inside that blob.
+ */
+export function isGroupPrimary(pose) {
+  if (!pose || (pose.n || 0) < 3) return false;
+  const box = pose.box;
+  if (!Array.isArray(box) || box.length !== 4) return false;
+  const area = box[2] * box[3];
+  if (area < 0.18) return false;
+  return pose.spread != null && pose.spread < 0.35;
+}
+
+/** Drop hallucinated figures (The Thing: mean 0.26, spread 4.6). */
+export function usableSkeleton(kpts, pose) {
+  if (!Array.isArray(kpts) || kpts.length < 5) return null;
+  const mean = pose?.conf;
+  const spread = pose?.spread;
+  if (mean != null && mean < POSE_MEAN_MIN && spread != null && spread > POSE_SPREAD_MAX) {
+    return null;
+  }
+  let n = 0;
+  for (let i = 0; i < kpts.length; i++) {
+    if (kptVisible(kpts, i)) n += 1;
+  }
+  return n >= KPT_MIN_COUNT ? kpts : null;
+}
+
+/** ViTPose sometimes remaps keypoints to the right of the YOLO person box (Exorcist 9552). */
+export function alignKeypointsToBox(kpts, box) {
+  if (!Array.isArray(kpts) || !box || box.length !== 4) return kpts;
+  const [bx, by, bw, bh] = box;
+  if (bw <= 0 || bh <= 0) return kpts;
+  const vis = [];
+  for (let i = 0; i < kpts.length; i++) {
+    if (kptVisible(kpts, i)) vis.push(kpts[i]);
+  }
+  if (vis.length < 3) return kpts;
+  const xs = vis.map((p) => p[0]).sort((a, b) => a - b);
+  const ys = vis.map((p) => p[1]).sort((a, b) => a - b);
+  const kcx = xs[Math.floor(xs.length / 2)];
+  const kcy = ys[Math.floor(ys.length / 2)];
+  if (kcx >= bx && kcx <= bx + bw && kcy >= by && kcy <= by + bh) return kpts;
+  const dx = bx + bw / 2 - kcx;
+  const dy = by + bh / 2 - kcy;
+  return kpts.map((p) => [p[0] + dx, p[1] + dy, p[2]]);
 }
 
 function kptBox(kpts) {
@@ -133,6 +216,7 @@ function massMarks(comp, { origin } = {}) {
 
 /** Min OWL box score; below this FP rate dominates (see docs/METRIC_AGREEMENTS.md). */
 const CREATURE_BOX_MIN_SCORE = 0.3;
+const WEAPON_BOX_MIN_SCORE = 0.3;
 
 /**
  * OWL boxes only when they match CLIP census label.
@@ -142,7 +226,9 @@ const CREATURE_BOX_MIN_SCORE = 0.3;
 export function preferredCreatureBoxes(p, a) {
   const creature = a.creature || p[6];
   if (!creature || creature === 'uncertain' || creature === 'none') return [];
-  const src = (window.CREATURE_BOXES && window.CREATURE_BOXES[String(p[7])]) || a.cboxes || [];
+  const src = a.geomAlt
+    ? a.cboxes || []
+    : (window.CREATURE_BOXES && window.CREATURE_BOXES[String(p[7])]) || a.cboxes || [];
   const cboxes = Array.isArray(src) ? src : [];
   if (!cboxes.length) return [];
   return cboxes.filter((b) => {
@@ -150,6 +236,58 @@ export function preferredCreatureBoxes(p, a) {
     const sc = b.score;
     return sc == null || Number(sc) >= CREATURE_BOX_MIN_SCORE;
   });
+}
+
+function formatWeaponLabel(label) {
+  return String(label || '').replace(/_/g, ' ') || t('none_detected');
+}
+
+/** Rek presence flag (rek_weapon ≥ 0.5). CLIP clip_weapon is a second family score. */
+export function rekWeaponPresent(a) {
+  return Array.isArray(a?.rek?.flags) && a.rek.flags.includes('weapon');
+}
+
+/**
+ * OWL weapon boxes at the same score floor as creatures.
+ * Presence stays Rek/CLIP — these boxes are geometry, not a count.
+ */
+export function preferredWeaponBoxes(p, a) {
+  const src = a.geomAlt
+    ? a.wboxes || []
+    : (window.WEAPON_BOXES && window.WEAPON_BOXES[String(p[7])]) || a.wboxes || [];
+  const boxes = Array.isArray(src) ? src : [];
+  return boxes.filter((b) => {
+    const sc = b.score;
+    return sc == null || Number(sc) >= WEAPON_BOX_MIN_SCORE;
+  });
+}
+
+/** CLIP p_painted → three-way medium. Same cuts as pipeline clip_medium_slot. Rescue only. */
+export function mediumSlot(painted) {
+  if (painted == null) return null;
+  const p = Number(painted);
+  if (!Number.isFinite(p)) return null;
+  if (p >= 0.6) return 'painted';
+  if (p <= 0.4) return 'photo';
+  return 'mixed';
+}
+
+/** Autopsy medium: Custom Labels owns the slot; CLIP p_painted is fallback. */
+export function resolveMedium(a) {
+  const cl = a?.medium_cl;
+  if (cl?.pred === 'painted' || cl?.pred === 'photo' || cl?.pred === 'composite') {
+    return { source: 'cl', pred: cl.pred, conf: cl.conf };
+  }
+  const slot = mediumSlot(a?.painted);
+  if (!slot) return { source: null, pred: null, conf: null };
+  return { source: 'clip', pred: slot, conf: a.painted };
+}
+
+export function mediumLabel(a) {
+  const m = resolveMedium(a);
+  if (!m.pred) return t('lab_medium_na');
+  const score = m.conf == null ? '' : ` ${pct(m.conf)}`;
+  return `${t(`lookup_${m.pred}`)}${score}`;
 }
 
 export function creatureLabel(p, a) {
@@ -163,11 +301,18 @@ const TITLE_BOX_OVERRIDE = {
   948: { tx: 0.08, tt: 0.79, tw: 0.84, th: 0.1 },
   // OCR ran on alternate TMDB art ("DRACULA" bat banner); site shows "Horror of Dracula".
   11868: { tx: 0.05, tt: 0.855, tw: 0.9, th: 0.085 },
+  // attributes/Rek title-box scored 0 (cursive around the shoe). Lines exist: Dance|or|Die.
+  145850: { tx: 0.03, tt: 0.02, tw: 0.94, th: 0.40 },
+  // Published box sat on the bottom band; site one-sheet has THE EXORCIST at the top.
+  9552: { tx: 0.06, tt: 0.015, tw: 0.88, th: 0.22 },
+  // EasyOCR/Rek kept only RETURN; HORROR HIGH is giant display type behind the figure.
+  45878: { tx: 0.04, tt: 0.19, tw: 0.7, th: 0.56 },
 };
 
 export function titleBox(comp, tmdbId) {
-  const over = TITLE_BOX_OVERRIDE[Number(tmdbId)];
-  const src = over ? { ...comp, ...over } : comp;
+  const over = tmdbId == null ? null : TITLE_BOX_OVERRIDE[Number(tmdbId)];
+  const ink = over || tmdbId == null ? null : titleInkFor(tmdbId);
+  const src = over ? { ...comp, ...over } : ink ? { ...comp, ...ink } : comp;
   const has =
     src.tt != null &&
     src.tt >= 0 &&
@@ -184,11 +329,16 @@ export function titleBox(comp, tmdbId) {
 }
 
 /** HTML for every analysis overlay. Layers stay off until setActiveLayers(). */
-export function buildLayersHtml(p, a) {
+export function buildLayersHtml(p, a, opts = {}) {
+  const sheetSrc = opts.sheetSrc || posterSrc(p, 'm');
   const bands = a.bands || [];
   const palArr = a.pal && a.pal.length ? a.pal : [p[1]];
-  const palFloat = palArr
-    .map((c) => `<span style="background:${c}" title="${c}"></span>`)
+  const topBand = topHueFamily(a);
+  const palSwatch = palArr
+    .map(
+      (c, i) =>
+        `<span title="${esc(c)}"><b>${i + 1}</b><i style="background:${c}"></i></span>`,
+    )
     .join('');
   const palHandles = palArr
     .map(
@@ -201,7 +351,7 @@ export function buildLayersHtml(p, a) {
   const comp = a.comp || {};
   const faces = resolveFaces(a, p);
   const darkPct = Math.round((a.dark || 0) * 100);
-  const box = titleBox(comp, p[7]);
+  const box = titleBox(comp, a.geomAlt ? null : p[7]);
   const textBandStyle = box
     ? `left:${box.left.toFixed(1)}%;top:${box.top.toFixed(1)}%;width:${box.width.toFixed(1)}%;height:${box.height.toFixed(1)}%;right:auto`
     : 'display:none';
@@ -242,17 +392,20 @@ export function buildLayersHtml(p, a) {
     .join('');
   const novaC = novaCreature(a);
   const clipSlot = !creature || creature === 'uncertain' || creature === 'none' ? 'none' : creature;
+  const jevC = jevCreature(a);
+  const jevSlot = clipToJevSlot(a, p);
+  const showJev = showJevCreatureLab(a, p);
+  const jevCreatureLabHtml = showJev
+    ? `<div class="lk-lab${jevC !== jevSlot ? ' amber' : ''}" style="top:6%;left:4%">${t('lab_creature_jev', { c: formatJevCreature(jevC) })}</div>`
+    : '';
   const novaCreatureLabHtml =
     novaC == null
       ? ''
-      : `<div class="lk-lab${novaC !== clipSlot ? ' amber' : ''}" style="top:6%;left:4%">${t('lab_creature_nova', { c: formatNovaCreature(novaC) })}</div>`;
+      : `<div class="lk-lab${novaC !== clipSlot ? ' amber' : ''}" style="top:${showJev ? '11' : '6'}%;left:4%">${t('lab_creature_nova', { c: formatNovaCreature(novaC) })}</div>`;
   const creatureLabHtml = cboxesPref.length
     ? `<div class="lk-lab blood" style="top:6%;right:4%">${t('lab_creature', { c: cLabel })}${a.cscore != null ? ' · ' + pct(a.cscore) : ''} · OWL</div>`
     : `<div class="lk-lab amber" style="top:45%;left:50%;transform:translate(-50%,-50%)">${t('lab_creature', { c: cLabel })}${a.cscore != null ? ' · ' + pct(a.cscore) : ''}</div>`;
-  const mediumLab =
-    a.painted == null
-      ? t('lab_medium_na')
-      : (a.painted >= 0.5 ? t('lookup_painted') + ' ' : t('lookup_photo_mixed') + ' ') + pct(a.painted);
+  const mediumLab = mediumLabel(a);
   const textLab = box
     ? t('lab_title_box_text', { v: pct(comp.txt) })
     : t('lab_textlike_pending', { v: pct(comp.txt) });
@@ -287,12 +440,23 @@ export function buildLayersHtml(p, a) {
   } else if (!pose.n) {
     poseHtml = `<div class="lk-lab amber" style="top:8%;left:4%">${t('lab_pose_none')}</div>`;
   } else {
-    poseHtml = `<div class="lk-lab amber" style="top:8%;left:4%">${t('lab_pose_n', { n: pose.n })}</div>
+    const head = isGroupPrimary(pose)
+      ? t('lab_pose_group', { n: pose.n })
+      : pose.n > 1
+        ? t('lab_pose_n_many', { n: pose.n })
+        : t('lab_pose_n', { n: pose.n });
+    poseHtml = `<div class="lk-lab amber" style="top:8%;left:4%">${head}</div>
           <div class="lk-lab" style="top:16%;left:4%">${t('lab_pose_spread', { v: pose.spread == null ? '—' : num(pose.spread, 2) })}</div>
           <div class="lk-lab" style="top:24%;left:4%">${t('lab_pose_asym', { v: pose.asym == null ? '—' : num(pose.asym, 2) })}</div>
           <div class="lk-lab" style="top:32%;left:4%">${t('lab_pose_conf', { v: pose.conf == null ? '—' : pct(pose.conf) })}</div>`;
-    if (!pose.kpts) {
+    if (isGroupPrimary(pose)) {
+      /* crowd blob — no extra low-conf line */
+    } else if (!pose.kpts) {
       poseHtml += `<div class="lk-lab amber" style="top:40%;left:4%">${t('lab_pose_no_skel')}</div>`;
+    } else if (!usableSkeleton(pose.kpts, pose)) {
+      poseHtml += `<div class="lk-lab amber" style="top:40%;left:4%">${t('lab_pose_low_conf', {
+        v: pose.conf == null ? '—' : pct(pose.conf),
+      })}</div>`;
     }
   }
 
@@ -303,16 +467,51 @@ export function buildLayersHtml(p, a) {
     const raw = b.box || b;
     return Array.isArray(raw) ? raw : [0, 0, 0, 0];
   });
-  const poseHoles = pose?.box ? [pose.box] : pose?.kpts ? [kptBox(pose.kpts)].filter(Boolean) : [];
-  const poseSkel = pose?.kpts ? skeletonHtml(pose.kpts) : '';
+  const wboxesPref = preferredWeaponBoxes(p, a);
+  const weaponBoxesHtml = wboxesPref
+    .slice(0, 3)
+    .map((b) => {
+      const raw = b.box || b;
+      const [x, y, w, h] = Array.isArray(raw) ? raw : [0, 0, 0, 0];
+      const T = Math.max(0, y * 100);
+      const lab = formatWeaponLabel(b.label);
+      const sc = b.score != null ? ` ${pct(b.score)}` : '';
+      const labClass = T < 8 ? ' topish' : '';
+      return `<div class="lk-cbox lk-wbox" style="${boxStyle(x, y, w, h)}"><span class="lk-cbox-lab${labClass}">${lab}${sc}</span></div>`;
+    })
+    .join('');
+  const weaponHoles = wboxesPref.slice(0, 3).map((b) => {
+    const raw = b.box || b;
+    return Array.isArray(raw) ? raw : [0, 0, 0, 0];
+  });
+  const rekW = rekWeaponPresent(a);
+  const clipW = a.sem?.weapon;
+  const weaponLabHtml = wboxesPref.length
+    ? `<div class="lk-lab blood" style="top:6%;right:4%">${t('lab_weapon_owl', { n: wboxesPref.length })}${rekW ? ' · Rek' : ''}</div>`
+    : `<div class="lk-lab amber" style="top:45%;left:50%;transform:translate(-50%,-50%)">${
+        rekW ? t('lab_weapon_rek_only') : t('lab_weapon_none')
+      }${clipW != null ? ` · CLIP ${pct(clipW)}` : ''}</div>`;
+  const poseKpts =
+    pose?.kpts && !isGroupPrimary(pose)
+      ? usableSkeleton(alignKeypointsToBox(pose.kpts, pose.box), pose)
+      : null;
+  const poseHoles = pose?.box
+    ? [pose.box]
+    : poseKpts
+      ? [kptBox(poseKpts)].filter(Boolean)
+      : [];
+  const poseBoxHtml = pose?.box
+    ? `<div class="lk-posebox" style="${boxStyle(pose.box[0], pose.box[1], pose.box[2], pose.box[3])}"></div>`
+    : '';
+  const poseSkel = poseKpts ? skeletonHtml(poseKpts) : '';
 
   return `<div class="lk-ov" id="lk-ov">
         <div class="lk-layer" data-layer="L"><div class="lk-lab" style="top:6%;left:4%">L* ${a.L ?? p[4]}</div></div>
         <div class="lk-layer" data-layer="palette">
           <canvas class="lk-heat lk-poster" data-heat="poster"></canvas>
           <div class="lk-handles">${palHandles}</div>
-          <div class="lk-lab" style="top:6%;left:4%">${t('lab_palette_regions')}</div>
-          <div class="lk-lab blood" style="top:6%;right:4%">${t('lab_near_black_pct', { n: darkPct })}</div>
+          <div class="lk-palswatch">${palSwatch}</div>
+          <div class="lk-lab" style="top:6%;left:4%">${t('lab_palette_swatches', { n: palArr.length })}</div>
         </div>
         <div class="lk-layer" data-layer="heat-dark">
           <canvas class="lk-heat" data-heat="dark"></canvas>
@@ -326,23 +525,30 @@ export function buildLayersHtml(p, a) {
           <canvas class="lk-heat" data-heat="L"></canvas>
           <div class="lk-lab" style="top:6%;left:4%">${t('lab_heat_L', { L: a.L ?? p[4] })}</div>
         </div>
+        <div class="lk-layer" data-layer="heat-saliency">
+          <canvas class="lk-heat" data-heat="saliency"></canvas>
+          <div class="lk-mass lk-salpeak" hidden></div>
+          <div class="lk-lab" data-sal-lab style="top:6%;left:4%">${t('lab_saliency_pending')}</div>
+        </div>
         <div class="lk-layer" data-layer="sat">
           <canvas class="lk-heat" data-heat="sat"></canvas>
           <div class="lk-lab" style="top:6%;left:4%">${t('lab_saturation', { v: pct(a.sat) })}</div></div>
         <div class="lk-layer" data-layer="bands">${dimSvg('lk-mask-bands', [])}<div class="lk-bandsov">${bandBarHtml(bands)}</div>
-          <div class="lk-palfloat">${palFloat}</div>
-          <div class="lk-lab" style="top:6%;left:4%">${t('lab_hue_families')}</div></div>
+          ${bandLegendHtml(bands)}
+          <div class="lk-lab" style="top:6%;left:4%">${t('lab_hue_families_top', { name: topBand.name, v: pct(topBand.v) })}</div>
+          <div class="lk-lab" style="top:6%;right:4%">${t('lab_hue_families_bins')}</div></div>
         <div class="lk-layer" data-layer="faces">${dimSvg('lk-mask-faces', fboxes)}${faceBoxesHtml}
           ${novaLabHtml}
           <div class="lk-lab${faces.source === 'rek' ? ' amber' : ''}" style="${faceLabStyle}">${faceLabText}</div></div>
-        <div class="lk-layer" data-layer="creature">${dimSvg('lk-mask-creature', creatureHoles)}${creatureBoxesHtml}${novaCreatureLabHtml}${creatureLabHtml}</div>
+        <div class="lk-layer" data-layer="creature">${dimSvg('lk-mask-creature', creatureHoles)}${creatureBoxesHtml}${jevCreatureLabHtml}${novaCreatureLabHtml}${creatureLabHtml}</div>
+        <div class="lk-layer" data-layer="weapon">${dimSvg('lk-mask-weapon', weaponHoles)}${weaponBoxesHtml}${weaponLabHtml}</div>
         <div class="lk-layer" data-layer="medium">${dimSvg('lk-mask-medium', [])}
           <div class="lk-lab" style="top:8%;left:4%">${mediumLab}</div></div>
         <div class="lk-layer" data-layer="text">${dimSvg('lk-mask-text', titleHole)}<div class="lk-textband" style="${textBandStyle}"></div>
           ${novaTypoLabHtml}${novaOcrLabHtml}
           <div class="lk-lab blood" style="top:${tLabTop.toFixed(1)}%;left:${tLabLeft.toFixed(1)}%">${textLab}</div></div>
         <div class="lk-layer" data-layer="sym">
-          <div class="lk-mirror"><img src="${posterSrc(p, 'm')}" alt=""></div>
+          <div class="lk-mirror"><img src="${sheetSrc}" alt=""></div>
           <div class="lk-fold"></div>
           <div class="lk-lab amber" style="top:6%;left:4%">${t('lab_symmetry', { v: pct(comp.sym) })}</div>
           <div class="lk-lab" style="top:6%;right:4%">${t('lab_symmetry_mirror')}</div></div>
@@ -370,16 +576,17 @@ export function buildLayersHtml(p, a) {
         <div class="lk-layer" data-layer="blood"><div class="lk-wash"></div>
           <div class="lk-lab blood" style="bottom:8%;left:4%">${t('lab_clip_blood', { v: pct(sem.blood) })}</div></div>
         <div class="lk-layer" data-layer="sem">${dimSvg('lk-mask-sem', [])}${semTags || `<div class="lk-lab amber" style="top:8%;left:4%">${t('lab_semantic_none')}</div>`}</div>
-        <div class="lk-layer" data-layer="pose">${dimSvg('lk-mask-pose', poseHoles)}${poseSkel}${poseHtml}</div>
+        <div class="lk-layer" data-layer="pose">${dimSvg('lk-mask-pose', poseHoles)}${poseBoxHtml}${poseSkel}${poseHtml}</div>
       </div>`;
 }
 
 export const BEAT_LAYERS = {
-  object: [],
+  object: ['medium'],
   color: ['palette'],
   faces: ['faces'],
   letter: ['text'],
   creature: ['creature'],
+  weapon: ['weapon'],
   composition: [],
   comp_thirds: ['thirds'],
   comp_diag: ['diag'],
@@ -398,11 +605,13 @@ export const BEAT_MODES = {
     { id: 'red', layers: ['heat-red'], heat: true },
     { id: 'bright', layers: ['heat-L'], heat: true },
     { id: 'sat', layers: ['sat'], heat: true },
+    { id: 'saliency', layers: ['heat-saliency'], heat: true },
     { id: 'bands', layers: ['bands'] },
     { id: 'blood', layers: ['blood'], heat: true },
   ],
   creature: [
     { id: 'creature', layers: ['creature'] },
+    { id: 'weapon', layers: ['weapon'] },
     { id: 'sem', layers: ['sem'] },
   ],
 };

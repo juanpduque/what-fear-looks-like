@@ -454,6 +454,8 @@ svg text{font-family:var(--mono)}
   font-family:var(--mono);font-size:10px;letter-spacing:.04em;white-space:nowrap;
   background:rgba(10,10,12,.92);border:1px solid var(--blood);color:var(--blood);padding:2px 6px;border-radius:2px}
 .lk-cbox-lab.topish{transform:translateY(4px)}
+.lk-wbox{border-color:var(--amber)}
+.lk-wbox .lk-cbox-lab{border-color:var(--amber);color:var(--amber)}
 .lk-palfloat{position:absolute;left:50%;bottom:8%;transform:translateX(-50%);display:flex;gap:5px}
 .lk-palfloat span{width:22px;height:22px;border-radius:50%;border:1px solid rgba(255,255,255,.35);
   box-shadow:0 2px 8px rgba(0,0,0,.5)}
