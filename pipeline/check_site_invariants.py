@@ -94,6 +94,11 @@ def main() -> int:
         extra = {int(k) for k in data} - keep
         if extra:
             errors.append(f"{name} tiene {len(extra)} ids fuera del corpus")
+        # weapon_boxes lists every scored poster (empty list = no weapon).
+        if name == "weapon_boxes.js":
+            missing = keep - {int(k) for k in data}
+            if missing:
+                errors.append(f"{name} le faltan {len(missing)} ids del corpus")
 
     for name in ("hue_river.json", "census_decade.json", "faces_v2_decade.json"):
         decs = [int(r["decade"]) for r in json.loads((DATA / name).read_text())]

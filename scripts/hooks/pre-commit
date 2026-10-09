@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+# Block commits that leave published site data out of sync with the canonical
+# corpus. Enable once per clone:  git config core.hooksPath scripts/hooks
+# Note: the check reads the working tree, not the staged snapshot.
+set -euo pipefail
+
+ROOT="$(git rev-parse --show-toplevel)"
+
+if git diff --cached --name-only | grep -qE \
+  '^(site/(data|i18n|src)/|site/index\.html|README\.md|pipeline/data/(canonical_ids\.txt|excluded_[^/]*\.csv|qa/no_poster/)|pipeline/(corpus|check_site_invariants|sync_front_n)\.py)'; then
+  python3 "$ROOT/pipeline/check_site_invariants.py" || {
+    echo "pre-commit: invariantes del sitio fallan; corre pipeline/build_site.py (o usa --no-verify)" >&2
+    exit 1
+  }
+fi

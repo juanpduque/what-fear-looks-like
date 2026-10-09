@@ -7,6 +7,11 @@ on:
       - "site/**"
       - "scripts/prepare-pages.sh"
       - ".github/workflows/pages.yml"
+      - "pipeline/data/canonical_ids.txt"
+      - "pipeline/data/excluded_*.csv"
+      - "pipeline/corpus.py"
+      - "pipeline/check_site_invariants.py"
+      - "pipeline/sync_front_n.py"
   workflow_dispatch:
 
 permissions:
@@ -27,6 +32,17 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+        with:
+          lfs: true
+      - name: Setup Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - name: Check site invariants
+        # Warn-only until main's site data is resynced with the corpus;
+        # drop continue-on-error to make it block deploys.
+        continue-on-error: true
+        run: python3 pipeline/check_site_invariants.py
       - name: Setup Node
         uses: actions/setup-node@v4
         with:
