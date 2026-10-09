@@ -12,21 +12,16 @@ echo "Building site with Vite…"
 
 cp -a "$SITE/dist/." "$OUT/"
 
-# Belt-and-suspenders: dev folders should not ship even if copied
+# Belt-and-suspenders: dev folders should not ship even if copied.
+# The QA/review pages (comedy/ocr/drift/corpus-filter/label-qa) were removed
+# from the repo; animation/tv-movie review pages remain gitignored local-only.
 rm -rf \
   "$OUT/demos/poster-decompose/_shots" \
   "$OUT/demos/poster-decompose/captures" \
   "$OUT/demos/poster-decompose-cloud" \
   "$OUT/jobs-dashboard" \
   "$OUT/animation-review.html" \
-  "$OUT/comedy-review.html" \
-  "$OUT/corpus-filter-qa.html" \
-  "$OUT/label-qa-medium.html" \
-  "$OUT/label-qa-typography.html" \
-  "$OUT/ocr-title-review.html" \
-  "$OUT/poster-drift-review.html" \
   "$OUT/tv-movie-review.html" \
-  "$OUT/LABEL_QA_MEDIUM.md" \
   "$OUT/data/weapon_boxes.js" \
   2>/dev/null || true
 
