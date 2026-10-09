@@ -22,7 +22,6 @@ rm -rf \
   "$OUT/jobs-dashboard" \
   "$OUT/animation-review.html" \
   "$OUT/tv-movie-review.html" \
-  "$OUT/data/weapon_boxes.js" \
   2>/dev/null || true
 
 echo "Pages artifact ready at $OUT ($(du -sh "$OUT" | cut -f1))"
