@@ -107,6 +107,25 @@ path above unless you're specifically extending data coverage.
   `build_label_qa_typography.py`, `build_ocr_title_review.py`,
   `build_poster_drift_review.py`.
 
+## Regenerating data
+
+Heavy derived outputs are **not** stored in git (they ballooned the history —
+`.git` had grown to ~1.4 GB from churned CSV/NPZ blobs). The published site
+serves `site/data/*.js`, so the per-poster metric CSVs are build inputs, not
+deploy artifacts. They are listed in `.gitignore`; regenerate locally:
+
+| Want | Run |
+|------|-----|
+| Color metrics (`posters.csv`, `yearly.json`) | `python3 fear_pipeline.py --all` |
+| CLIP embeddings cache (`clip_embeddings.npz`) | `python3 clip_embed.py` |
+| Semantic metric CSVs (census/medium/typography/faces/segmentation/…) | run the matching `clip_*.py` / `faces_v2.py` / `multi_analyze.py` / `segmentation.py` (see tables above) |
+| Site data (`site/data/lookup.js`, `explorer.js`, `creature_boxes.js`, `series.js`) | `python3 build_lookup.py && python3 build_explorer.py && python3 build_site.py` |
+
+`site/data/*.js` and `pipeline/data/posters.csv` **are** committed (the
+site/Pages deploy serves them). Everything else under `pipeline/data/` that is
+a large derived output is gitignored — rebuild it from the pipeline rather than
+committing it.
+
 ## Legacy
 
 Superseded scripts kept for reference live in `legacy/` — see

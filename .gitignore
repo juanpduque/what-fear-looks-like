@@ -61,6 +61,46 @@ pipeline/data/creature_detect_*
 pipeline/data/label_qa_*.csv
 pipeline/data/tv_movie_review.csv
 
+# Heavy derived metric outputs — removed from history (Fase 2, A1).
+# Regenerate with the pipeline (see pipeline/README.md "Regenerating data").
+# The published site serves site/data/*.js, so these CSV/NPZ inputs are not
+# needed in git; they only balloon the history when churned.
+pipeline/data/clip_embeddings.npz
+pipeline/data/rekognition_backup_pre_merge.csv
+pipeline/data/nova_enrich.csv
+pipeline/data/rekognition.csv
+pipeline/data/segmentation.csv
+pipeline/data/attributes.csv
+pipeline/data/census.csv
+pipeline/data/typography.csv
+pipeline/data/medium.csv
+pipeline/data/medium_pred.csv
+pipeline/data/faces_v2.csv
+pipeline/data/creature_boxes.json
+pipeline/data/detecttext_community.csv
+pipeline/data/ocr_comprehend.csv
+pipeline/data/ocr_comprehend_alllang.csv
+pipeline/data/poster_ocr_easyocr.csv
+pipeline/data/poster_ocr_rek_text.csv
+pipeline/data/poster_ocr_rek_text_alllang.csv
+pipeline/data/poster_ocr_textract.csv
+pipeline/data/poster_ocr_textract_alllang.csv
+pipeline/data/poster_path_drift.csv
+pipeline/data/horror_refresh_2023_2025.csv
+pipeline/data/multi_poster_canonical.csv
+pipeline/data/multi_poster_catalog.csv
+pipeline/data/multi_poster_clusters.csv
+pipeline/data/title_boxes_rekognition.csv
+pipeline/data/title_boxes_backfill.csv
+pipeline/data/title_boxes_vision_pilot.csv
+# QA / staging / cloud artifacts — never belong in git
+pipeline/data/qa/
+pipeline/data/community/
+pipeline/weights/
+site/wall/
+site/demos/poster-decompose/captures/
+site/demos/poster-decompose/_shots/
+
 # keep the small outputs
 !pipeline/data/yearly.json
 !pipeline/data/posters.csv
