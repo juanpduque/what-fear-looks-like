@@ -49,7 +49,7 @@ No chaotic explode. One dominant layer at a time.
 - **Rewind / Rebobinar** → top
 - **No audio / Sin audio · Hiss on** — procedural tape hiss + beat cues (muted by default; starts on user gesture)
 - **← essay** → Exhibit A in the essay (`#exhibit-a`, preserves `?lang=`)
-- **Archive beat** → link to full essay at Part I (`#part-i`, 33,619 posters)
+- **Archive beat** → link to full essay at Part I (`#part-i`, 33,622 posters)
 - Mobile: pixel ratio ≤1.25, fewer particles, no shadow map; palette swatches fixed above HUD
 - `prefers-reduced-motion`: no breathe / dry lag / no animated grain / no audio cues
 

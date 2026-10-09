@@ -1216,7 +1216,7 @@ function legacyCharts(){
 /* --- darkness curve --- */
 (function(){
   const svg=document.getElementById('darkness'),W=960,H=400,m={t:30,r:30,b:40,l:50};
-  /* FULL CENTURY: mean L* per year, 5-yr rolling (n=33,619, TMDB) */
+  /* FULL CENTURY: mean L* per year, 5-yr rolling (n=33,622, TMDB) */
   const pts=since1920(DARK_PTS);
   const x=y=>m.l+(y-CHART_X0)/(CHART_X1-CHART_X0)*(W-m.l-m.r);
   const yy=v=>m.t+(52-v)/(52-25)*(H-m.t-m.b);
@@ -1239,7 +1239,7 @@ function legacyCharts(){
 /* --- rise of red --- */
 (function(){
   const svg=document.getElementById('red'),W=960,H=340,m={t:30,r:30,b:40,l:50};
-  /* FULL CENTURY: % blood-red pixels per year, 5-yr rolling (n=33,619, TMDB) */
+  /* FULL CENTURY: % blood-red pixels per year, 5-yr rolling (n=33,622, TMDB) */
   const pts=since1920(RED_PTS);
   const x=y=>m.l+(y-CHART_X0)/(CHART_X1-CHART_X0)*(W-m.l-m.r);
   const yy=v=>m.t+(15-v)/(15-0)*(H-m.t-m.b);
@@ -1261,7 +1261,7 @@ function legacyCharts(){
 /* --- the floating head: % posters with a detectable face --- */
 (function(){
   const svg=document.getElementById('faces'),W=960,H=340,m={t:30,r:30,b:40,l:50};
-  /* FULL CENTURY: % posters with >=1 face, 5-yr rolling (n=33,619, YuNet) */
+  /* FULL CENTURY: % posters with >=1 face, 5-yr rolling (n=33,622, YuNet) */
   const pts=since1920(FACE_PTS);
   const x=y=>m.l+(y-CHART_X0)/(CHART_X1-CHART_X0)*(W-m.l-m.r);
   const yy=v=>m.t+(95-v)/(95-40)*(H-m.t-m.b);

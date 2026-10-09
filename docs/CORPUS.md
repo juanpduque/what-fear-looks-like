@@ -4,7 +4,7 @@ Criterio: **películas de terror en inglés, ya estrenadas, con póster, sin exc
 
 Fuente de verdad: `pipeline/data/canonical_ids.txt`, generado por `pipeline/build_corpus.py` a partir de metadatos TMDB vigentes (`pipeline/fetch_tmdb_details.py`). Todos los builders del sitio (`build_site.py`) filtran por este listado; los CSV crudos no se mutan.
 
-Fecha de corte: `2026-10-06` · **n = 33,619** · años 1900–2026
+Fecha de corte: `2026-10-08` · **n = 33,622** · años 1900–2026
 
 ## Embudo
 
@@ -14,12 +14,12 @@ Fecha de corte: `2026-10-06` · **n = 33,619** · años 1900–2026
 | Ficha TMDB vigente | 933 | 62,193 |
 | Género TMDB incluye Horror | 273 | 61,920 |
 | Idioma original inglés | 24,062 | 37,858 |
-| Estrenada (status Released y fecha ≤ hoy) | 532 | 37,326 |
-| Sin filtro de adulto | 18 | 37,308 |
-| Sin Animation / Music / TV Movie | 2,629 | 34,679 |
-| Fuera de listas excluded_*.csv | 312 | 34,367 |
-| Año válido | 32 | 34,335 |
-| Con póster servible | 716 | 33,619 |
+| Estrenada (status Released y fecha ≤ hoy) | 528 | 37,330 |
+| Sin filtro de adulto | 18 | 37,312 |
+| Sin Animation / Music / TV Movie | 2,630 | 34,682 |
+| Fuera de listas excluded_*.csv | 312 | 34,370 |
+| Año válido | 32 | 34,338 |
+| Con póster servible | 716 | 33,622 |
 
 Cada película cuenta solo en el primer filtro que no cumple (`pipeline/data/qa/corpus/corpus_dropped.csv`).
 
