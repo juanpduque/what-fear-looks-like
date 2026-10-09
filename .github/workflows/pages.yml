@@ -32,8 +32,19 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v4
+      # LFS holds ~46k posters + saliency maps; pulling them cold takes ~13 min.
+      # Cache .git/lfs keyed on the object list so unchanged deploys skip it,
+      # and a changed list restores the previous cache and fetches only the diff.
+      - name: List LFS objects
+        run: git lfs ls-files --long | cut -d' ' -f1 | sort > .lfs-assets-id
+      - name: Restore LFS cache
+        uses: actions/cache@v4
         with:
-          lfs: true
+          path: .git/lfs
+          key: lfs-${{ hashFiles('.lfs-assets-id') }}
+          restore-keys: lfs-
+      - name: Pull LFS objects
+        run: git -c lfs.concurrenttransfers=32 lfs pull
       - name: Setup Python
         uses: actions/setup-python@v5
         with:
