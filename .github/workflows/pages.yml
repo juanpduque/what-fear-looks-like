@@ -39,9 +39,6 @@ jobs:
         with:
           python-version: "3.12"
       - name: Check site invariants
-        # Warn-only until main's site data is resynced with the corpus;
-        # drop continue-on-error to make it block deploys.
-        continue-on-error: true
         run: python3 pipeline/check_site_invariants.py
       - name: Setup Node
         uses: actions/setup-node@v4
