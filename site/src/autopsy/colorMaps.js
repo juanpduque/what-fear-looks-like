@@ -302,7 +302,7 @@ export async function paintSaliencyFromUrl(canvas, src) {
   if (!canvas || !src) return null;
   let res;
   try {
-    res = await fetch(src, { cache: 'no-store' });
+    res = await fetch(src);
   } catch {
     return null;
   }

@@ -26,9 +26,9 @@ export function saliencyMapUrls(id, filePath) {
   if (filePath) {
     const stem = tmdbStem(filePath);
     if (!stem) return [];
-    return [siteAsset(`saliency_alts/${n}_${stem}.png`)];
+    return [siteAsset(`saliency_alts/${n}_${stem}.webp`)];
   }
-  return [siteAsset(`saliency/${n}.png`), siteAsset(`assets/saliency/${n}.png`)];
+  return [siteAsset(`saliency/${n}.webp`)];
 }
 
 let LOOKUP_P = null;

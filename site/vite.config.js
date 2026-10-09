@@ -1,37 +1,7 @@
 import { defineConfig } from 'vite';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
-import { resolve, sep } from 'node:path';
-import { createReadStream, existsSync, rmSync } from 'node:fs';
-
-const SALIENCY_MAPS = resolve(__dirname, '../pipeline/data/qa/saliency/maps');
-const SALIENCY_ALT_MAPS = resolve(__dirname, '../pipeline/data/qa/saliency_alts/maps');
-
-function saliencyFileFromUrl(url) {
-  const path = decodeURIComponent(String(url || '').split('?')[0]);
-  const alt = path.match(/\/saliency_alts\/([^/]+)\.png$/i);
-  if (alt) {
-    const name = alt[1].replace(/[^A-Za-z0-9._-]/g, '');
-    if (!name) return null;
-    return resolve(SALIENCY_ALT_MAPS, `${name}.png`);
-  }
-  const m = path.match(/\/saliency\/(\d+)\.png$/i);
-  if (m) return resolve(SALIENCY_MAPS, `${m[1]}.png`);
-  return null;
-}
-
-function serveSaliencyMaps(req, res, next) {
-  const file = saliencyFileFromUrl(req.originalUrl || req.url);
-  if (!file) return next();
-  const root = file.includes(`${sep}saliency_alts${sep}`) ? SALIENCY_ALT_MAPS : SALIENCY_MAPS;
-  if (!file.startsWith(root) || !existsSync(file)) {
-    res.statusCode = 404;
-    res.end();
-    return;
-  }
-  res.setHeader('Content-Type', 'image/png');
-  res.setHeader('Cache-Control', 'no-store');
-  createReadStream(file).pipe(res);
-}
+import { resolve } from 'node:path';
+import { rmSync } from 'node:fs';
 
 /** JS bundled by Vite — do not copy to dist. */
 const DEMO_BUNDLE_JS = new Set([
@@ -43,25 +13,13 @@ const DEMO_BUNDLE_JS = new Set([
 
 export default defineConfig({
   base: '/what-fear-looks-like/',
-  server: {
-    fs: {
-      allow: [resolve(__dirname, '..')],
-    },
-  },
   plugins: [
-    {
-      name: 'serve-saliency-maps',
-      configureServer(server) {
-        server.middlewares.use(serveSaliencyMaps);
-      },
-      configurePreviewServer(server) {
-        server.middlewares.use(serveSaliencyMaps);
-      },
-    },
     viteStaticCopy({
       targets: [
         { src: 'assets', dest: '.' },
         { src: 'data', dest: '.' },
+        { src: 'saliency', dest: '.' },
+        { src: 'saliency_alts', dest: '.' },
         { src: 'i18n/*.js', dest: 'i18n' },
         { src: 'js', dest: '.' },
         {
