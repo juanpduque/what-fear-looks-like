@@ -6,9 +6,11 @@ shows. This writes only what the autopsy requests:
 
   site/saliency/{id}.webp                 measured sheet, canonical corpus ids
   site/saliency_alts/{id}_{stem}.webp     alternates in site/data/poster_alts.json
+  site/data/saliency.json                 {id: [peak_x, peak_y, top10pct_mass]}
 
 and deletes stale .webp files there, so the folders track the corpus. Files
-are tracked with Git LFS (.gitattributes).
+are tracked with Git LFS (.gitattributes). Run build_site.py afterwards so
+lookup.js picks up the same scores (its `sal` field).
 
   python3 export_saliency_webp.py
   python3 export_saliency_webp.py --quality 80
@@ -16,6 +18,7 @@ are tracked with Git LFS (.gitattributes).
 from __future__ import annotations
 
 import argparse
+import csv
 import io
 import json
 from pathlib import Path
@@ -32,6 +35,8 @@ SITE = HERE.parent / "site"
 OUT = SITE / "saliency"
 ALT_OUT = SITE / "saliency_alts"
 ALTS_JSON = SITE / "data" / "poster_alts.json"
+SCORES = QA / "saliency" / "saliency_score.csv"
+SCORES_OUT = SITE / "data" / "saliency.json"
 
 
 def alt_stems() -> set[str]:
@@ -72,6 +77,21 @@ def sync(wanted: set[str], src_dir: Path, out_dir: Path, quality: int) -> tuple[
     return written, missing, len(stale)
 
 
+def write_scores(keep: set[str]) -> int:
+    out: dict[str, list[float]] = {}
+    with SCORES.open(newline="", encoding="utf-8") as f:
+        for r in csv.DictReader(f):
+            if r["id"] not in keep or r["id"] in out:
+                continue
+            out[r["id"]] = [
+                round(float(r["peak_x"]), 3),
+                round(float(r["peak_y"]), 3),
+                round(float(r["top10pct_mass"]), 2),
+            ]
+    SCORES_OUT.write_text(json.dumps(out, separators=(",", ":")), encoding="utf-8")
+    return len(out)
+
+
 def main() -> None:
     ap = argparse.ArgumentParser()
     ap.add_argument("--quality", type=int, default=80)
@@ -80,8 +100,10 @@ def main() -> None:
         if not d.is_dir():
             raise SystemExit(f"falta {d} — corre el pipeline de saliencia (MSI-Net)")
 
+    corpus = {str(i) for i in canonical_ids()}
+    print(f"saliency.json: {write_scores(corpus):,} ids")
     jobs = [
-        ("medidas", {str(i) for i in canonical_ids()}, MAPS, OUT),
+        ("medidas", corpus, MAPS, OUT),
         ("alternativas", alt_stems(), ALT_MAPS, ALT_OUT),
     ]
     for label, wanted, src_dir, out_dir in jobs:
