@@ -325,7 +325,11 @@ export function titleBox(comp, tmdbId) {
   const top = Math.max(0, src.tt * 100);
   const width = Math.min(100 - left, src.tw * 100);
   const height = Math.min(100 - top, src.th * 100);
-  return { left, top, width, height, labTop: Math.min(92, top + height + 1.5) };
+  // Label sits under the box, or above it when the box hugs the bottom edge
+  // (clamping it to 92% would paint it over the title itself).
+  const below = top + height + 1.5;
+  const labTop = below <= 92 ? below : Math.max(1, top - 5.5);
+  return { left, top, width, height, labTop };
 }
 
 /** HTML for every analysis overlay. Layers stay off until setActiveLayers(). */
@@ -408,7 +412,9 @@ export function buildLayersHtml(p, a, opts = {}) {
   const mediumLab = mediumLabel(a);
   const textLab = box
     ? t('lab_title_box_text', { v: pct(comp.txt) })
-    : t('lab_textlike_pending', { v: pct(comp.txt) });
+    : a.altTextless
+      ? t('lab_title_textless', { v: pct(comp.txt) })
+      : t('lab_textlike_pending', { v: pct(comp.txt) });
   const novaT = novaTypo(a);
   const novaTypoLabHtml =
     novaT == null

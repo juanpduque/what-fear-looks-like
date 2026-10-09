@@ -10,14 +10,22 @@ Writes:
   site/data/poster_alts_faces.json  {id: {path: [n, area, [[x,y,w,h], ...]]}}
   site/data/poster_alts_owl.json    {id: {path: {c:[{label,score,box}], w:[...]}}}
   site/data/poster_alts_text.json   {id: {path: [tx, tt, tw, th]}}
+
+Alternate sheets often carry another release title ("The Trollenberg
+Terror" for The Crawling Eye). When the catalog title is not found, lines are
+matched strictly against Latin-script IMDb AKAs (data/imdb_datasets/
+title.akas.tsv.gz via data/imdb_ids.csv); without those files it is skipped.
 """
 from __future__ import annotations
 
 import csv
+import gzip
 import json
+import re
+from collections import defaultdict
 from pathlib import Path
 
-from title_boxes_rekognition import title_line_hits
+from title_boxes_rekognition import aka_line_hits, title_line_hits
 
 HERE = Path(__file__).resolve().parent
 QA = HERE / "data" / "qa"
@@ -30,7 +38,10 @@ TEXT_SRC = QA / "alts_text_catalog" / "pull" / "rekognition_text_boxes_alts.csv"
 FACES_OUT = SITE_DATA / "poster_alts_faces.json"
 OWL_OUT = SITE_DATA / "poster_alts_owl.json"
 TEXT_OUT = SITE_DATA / "poster_alts_text.json"
+IMDB_IDS = HERE / "data" / "imdb_ids.csv"
+AKAS = HERE / "data" / "imdb_datasets" / "title.akas.tsv.gz"
 MATCH_MIN = 0.72
+LATIN = re.compile(r"[\x20-\x7E\u00C0-\u024F]+")
 
 
 def tmdb_path(raw: str) -> str:
@@ -177,12 +188,35 @@ def write_owl(wanted: dict[str, set[str]]) -> None:
     dump(OWL_OUT, out)
 
 
+def load_akas(keep: set[str]) -> dict[str, set[str]]:
+    """Latin-script IMDb AKAs per TMDB id (one streaming pass over the dump)."""
+    if not (IMDB_IDS.is_file() and AKAS.is_file()):
+        print(f"skip AKAs: missing {IMDB_IDS.name} or {AKAS}")
+        return {}
+    by_imdb: dict[str, str] = {}
+    with IMDB_IDS.open(encoding="utf-8", newline="") as f:
+        for r in csv.DictReader(f):
+            if r.get("id") in keep and r.get("imdb_id"):
+                by_imdb[r["imdb_id"]] = r["id"]
+    out: dict[str, set[str]] = defaultdict(set)
+    with gzip.open(AKAS, "rt", encoding="utf-8") as f:
+        next(f)
+        for line in f:
+            tconst, _, aka = line.split("\t", 3)[:3]
+            pid = by_imdb.get(tconst)
+            if pid and LATIN.fullmatch(aka):
+                out[pid].add(aka)
+    return out
+
+
 def write_text(wanted: dict[str, set[str]]) -> None:
     out: dict[str, dict] = {}
     if not TEXT_SRC.is_file():
         print(f"skip text sidecar: missing {TEXT_SRC}")
         return
     titles = load_titles(set(wanted))
+    akas = load_akas(set(wanted))
+    via_aka = 0
     with TEXT_SRC.open(encoding="utf-8", newline="") as f:
         for r in csv.DictReader(f):
             if (r.get("status") or "") != "ok":
@@ -205,12 +239,16 @@ def write_text(wanted: dict[str, set[str]]) -> None:
             if not title:
                 continue
             boxes = [b for _, b, _ in title_line_hits(lines, title, MATCH_MIN)]
+            if not boxes and akas.get(pid):
+                boxes = [b for _, b, _ in aka_line_hits(lines, akas[pid] - {title})]
+                via_aka += bool(boxes)
             if not boxes:
                 continue
             ink = union_box(boxes)
             if ink[2] <= 0 or ink[3] <= 0:
                 continue
             out.setdefault(pid, {})[fp] = ink
+    print(f"text boxes via IMDb AKA: {via_aka:,}")
     dump(TEXT_OUT, out)
 
 
