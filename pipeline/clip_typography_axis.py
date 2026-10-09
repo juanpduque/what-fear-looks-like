@@ -29,12 +29,14 @@ share de cada registro por decada -> streamgraph.
 Outputs: data/typography.csv, data/typography_decade.json
 Corre en segundos: reutiliza data/clip_embeddings.npz (no re-embebe nada).
 """
-import argparse, os
+import argparse
+import os
 from pathlib import Path
+
 import numpy as np
+import open_clip
 import pandas as pd
 import torch
-import open_clip
 
 DATA = Path(__file__).parent / "data"
 

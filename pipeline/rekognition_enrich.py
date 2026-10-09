@@ -15,7 +15,9 @@ Outputs: data/rekognition.csv
 """
 from __future__ import annotations
 
-import argparse, json, time
+import argparse
+import json
+import time
 from pathlib import Path
 
 import boto3

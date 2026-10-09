@@ -229,6 +229,7 @@ def cmd_download(args):
 def cmd_embed(args):
     import torch
     from PIL import Image
+
     import clip_embed as ce
 
     if not CATALOG.exists():

@@ -401,7 +401,7 @@ def main():
 
     elapsed = time.time() - t0
     print("\n" + "=" * 70)
-    print(f"✅ COMPLETADO")
+    print("✅ COMPLETADO")
     print(f"   Procesados: {n_new:,}")
     print(f"   Errores:    {n_errors:,}")
     print(f"   Omitidos:   {n_skip:,}")

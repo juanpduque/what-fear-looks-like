@@ -31,7 +31,12 @@ Attribution: this product uses the TMDB API but is not endorsed by TMDB.
 Outputs: data/posters.csv, data/yearly.json, data/hue_river.json (Color River),
 data/darkness_curve.png, and a Continue/Pivot verdict in the console.
 """
-import argparse, io, json, math, os, sys, time
+import argparse
+import io
+import json
+import os
+import sys
+import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 

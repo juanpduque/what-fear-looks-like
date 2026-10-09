@@ -25,7 +25,7 @@ import numpy as np
 import pandas as pd
 import requests
 
-from enrich_imdb_ids import auth_kwargs, load_sidecar, write_sidecar
+from enrich_imdb_ids import load_sidecar, write_sidecar
 
 DATA = Path(__file__).resolve().parent / "data"
 GATE = DATA / "qa" / "tmdb_remap_high_gate.csv"

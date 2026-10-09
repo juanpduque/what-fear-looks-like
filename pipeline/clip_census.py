@@ -15,10 +15,11 @@ Per-poster labels are noisy; decade-level shares are the deliverable.
 """
 import argparse
 from pathlib import Path
+
 import numpy as np
+import open_clip
 import pandas as pd
 import torch
-import open_clip
 
 
 def load_clip(device):

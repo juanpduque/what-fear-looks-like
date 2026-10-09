@@ -3,8 +3,7 @@ import { BEAT_MODES, creatureLabel } from './layers.js';
 import { faceBody } from './faces.js';
 import { novaCreatureNote, novaLetterNote } from './nova.js';
 
-const t = (...args) =>
-  typeof window.t === 'function' ? window.t(...args) : args[0];
+const t = (...args) => (typeof window.t === 'function' ? window.t(...args) : args[0]);
 
 function escapeHtml(s) {
   return String(s ?? '')

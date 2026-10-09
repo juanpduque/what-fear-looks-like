@@ -11,12 +11,13 @@ Run on your machine (downloads ~600MB model on first run):
 Outputs: data/medium.csv (per-poster), data/medium_yearly.json,
 and the 50% crossover year printed to console.
 """
-import argparse, json
+import argparse
 from pathlib import Path
+
+import open_clip
 import pandas as pd
 import torch
 from PIL import Image
-import open_clip
 
 
 def load_clip(device):

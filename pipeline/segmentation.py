@@ -52,15 +52,23 @@ Run (resumable):
 Outputs: data/segmentation.csv (per-poster % area/patches by class),
          data/segmentation_decade.json ("material palette" per decade)
 """
-import argparse, os, time, warnings
+import argparse
+import os
+import time
+import warnings
 from pathlib import Path
+
 import numpy as np
+import open_clip
 import pandas as pd
 import torch
 from PIL import Image
-import open_clip
-from transformers import (SegformerImageProcessor, SegformerForSemanticSegmentation,
-                           AutoImageProcessor, AutoModelForImageClassification)
+from transformers import (
+    AutoImageProcessor,
+    AutoModelForImageClassification,
+    SegformerForSemanticSegmentation,
+    SegformerImageProcessor,
+)
 
 warnings.filterwarnings("ignore")
 torch.set_num_threads(os.cpu_count() or 4)

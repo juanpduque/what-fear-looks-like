@@ -22,6 +22,8 @@ jobs:
       - name: Tests (stdlib-only, run from pipeline/)
         working-directory: pipeline
         run: python -m pytest
+      - name: Site data invariants (advisory until the 564 art-less posters are resolved)
+        run: python pipeline/check_site_invariants.py || true
       - name: Lint (ruff — advisory, does not fail the build yet)
         working-directory: pipeline
         run: ruff check . || true
@@ -42,6 +44,6 @@ jobs:
       - name: ESLint (blocking — currently clean)
         working-directory: site
         run: npm run lint
-      - name: Prettier (advisory until the codebase is formatted)
+      - name: Prettier (blocking)
         working-directory: site
-        run: npm run format:check || true
+        run: npm run format:check

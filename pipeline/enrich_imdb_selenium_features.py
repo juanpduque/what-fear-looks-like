@@ -28,7 +28,7 @@ from pathlib import Path
 
 import requests
 
-from enrich_imdb_ids import DATA, SIDECAR, load_sidecar, write_sidecar
+from enrich_imdb_ids import DATA, load_sidecar, write_sidecar
 from match_imdb_title_basics_features import valid_tt
 from resolve_imdb_ambiguous_selenium import (
     director_overlap,

@@ -1,7 +1,6 @@
 import { pct } from '../shared/format.js';
 
-const t = (...args) =>
-  typeof window.t === 'function' ? window.t(...args) : args[0];
+const t = (...args) => (typeof window.t === 'function' ? window.t(...args) : args[0]);
 
 /**
  * Resolve YuNet vs Rekognition face counts for the autopsy.
@@ -107,9 +106,7 @@ export function faceBody(a, p) {
 export function faceLab(a, p) {
   const r = resolveFaces(a, p);
   if (r.source === 'rek') {
-    return r.n === 1
-      ? t('lab_faces_rek', { n: r.n })
-      : t('lab_faces_rek_pl', { n: r.n });
+    return r.n === 1 ? t('lab_faces_rek', { n: r.n }) : t('lab_faces_rek_pl', { n: r.n });
   }
   if (r.n === 1) return t('lab_faces_area', { n: r.n, a: pct(r.farea) });
   return t('lab_faces_area_pl', { n: r.n, a: pct(r.farea) });

@@ -123,7 +123,7 @@ def main():
         for row in ids:
             w.writerow(row)
 
-    print(f"\n=== OMDb POSTER INGEST ===")
+    print("\n=== OMDb POSTER INGEST ===")
     print(f"downloaded ok={ok} fail={fail}")
     print(f"ids with local poster+year: {len(ids):,} → {IDS_OUT.name}")
     if fails:

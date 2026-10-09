@@ -1,6 +1,13 @@
 import './autopsy.css';
 import { posterSrc, HAS_DATA } from '../shared/posters.js';
-import { buildLayersHtml, setActiveLayers, applyArtFilter, BEAT_LAYERS, BEAT_MODES, beatMode } from './layers.js';
+import {
+  buildLayersHtml,
+  setActiveLayers,
+  applyArtFilter,
+  BEAT_LAYERS,
+  BEAT_MODES,
+  beatMode,
+} from './layers.js';
 import { buildBeats, beatsHtml, modeBlurb } from './beats.js';
 import {
   ensureLookup,
@@ -12,8 +19,7 @@ import {
 } from './data.js';
 import { analyzeFromUrl, paintHeat } from './colorMaps.js';
 
-const t = (...args) =>
-  typeof window.t === 'function' ? window.t(...args) : args[0];
+const t = (...args) => (typeof window.t === 'function' ? window.t(...args) : args[0]);
 
 let lkQ = null;
 let lkSug = null;
@@ -123,7 +129,9 @@ function syncBeatModes() {
   const { frame } = els();
   frame?.classList.toggle('is-heat', Boolean(mode?.heat || beat?.heat));
   document.querySelectorAll('.au-cmodes [data-cmode]').forEach((btn) => {
-    const on = Boolean(mode && btn.dataset.cmode === mode.id && beat?.id === btn.closest('.au-beat')?.dataset.beat);
+    const on = Boolean(
+      mode && btn.dataset.cmode === mode.id && beat?.id === btn.closest('.au-beat')?.dataset.beat,
+    );
     btn.classList.toggle('is-on', on);
     btn.setAttribute('aria-selected', on ? 'true' : 'false');
   });

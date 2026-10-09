@@ -40,1311 +40,2834 @@ let {
   POSTERS,
 } = pipelineData();
 /* ================= data & palettes ================= */
-const ERAS=[
- {name:"1920s–30s",title:"THE MONSTER",tag:"A Universal Terror",bg:"linear-gradient(160deg,#3b4a2f 0%,#6b7a3d 35%,#c9a53f 70%,#7a4a1e 100%)",ink:"#f2e6c9",pal:["#3b4a2f","#6b7a3d","#c9a53f","#7a4a1e","#1e2418"]},
- {name:"1940s–50s",title:"ATOMIC BEAST!",tag:"SEE! the thing from beyond",bg:"radial-gradient(circle at 30% 25%,#f2d13c 0%,#e07b1f 40%,#b52a1c 75%,#4a0d0d 100%)",ink:"#160a05",pal:["#f2d13c","#e07b1f","#b52a1c","#4a0d0d","#f7ecc5"]},
- {name:"1960s–70s",title:"The Dwelling",tag:"pray it isn't true",bg:"linear-gradient(180deg,#0d0d10 0%,#14141c 55%,#3d2f4f 80%,#7d6a3a 100%)",ink:"#d9d2c0",pal:["#0d0d10","#14141c","#3d2f4f","#7d6a3a","#d9d2c0"]},
- {name:"1980s",title:"SLAY RIDE",tag:"he knows when you're alone",bg:"linear-gradient(165deg,#000 0%,#0a0a0a 55%,#5c0710 78%,#c1121f 100%)",ink:"#e8e4da",pal:["#000000","#1a0507","#5c0710","#c1121f","#8a8f98"]},
- {name:"1990s–2000s",title:"CAPTIVE",tag:"how much can you take?",bg:"linear-gradient(170deg,#0b1416 0%,#12262b 45%,#2e5158 75%,#79929a 100%)",ink:"#cfe0e4",pal:["#0b1416","#12262b","#2e5158","#79929a","#3a3f3e"]},
- {name:"2010s–today",title:"the orchard",tag:"a quiet kind of ruin",bg:"linear-gradient(180deg,#ece7dd 0%,#e0d8c8 60%,#c9beab 100%)",ink:"#1c1a16",pal:["#ece7dd","#e0d8c8","#c9beab","#5a5347","#a33b2e"]}
+const ERAS = [
+  {
+    name: '1920s–30s',
+    title: 'THE MONSTER',
+    tag: 'A Universal Terror',
+    bg: 'linear-gradient(160deg,#3b4a2f 0%,#6b7a3d 35%,#c9a53f 70%,#7a4a1e 100%)',
+    ink: '#f2e6c9',
+    pal: ['#3b4a2f', '#6b7a3d', '#c9a53f', '#7a4a1e', '#1e2418'],
+  },
+  {
+    name: '1940s–50s',
+    title: 'ATOMIC BEAST!',
+    tag: 'SEE! the thing from beyond',
+    bg: 'radial-gradient(circle at 30% 25%,#f2d13c 0%,#e07b1f 40%,#b52a1c 75%,#4a0d0d 100%)',
+    ink: '#160a05',
+    pal: ['#f2d13c', '#e07b1f', '#b52a1c', '#4a0d0d', '#f7ecc5'],
+  },
+  {
+    name: '1960s–70s',
+    title: 'The Dwelling',
+    tag: "pray it isn't true",
+    bg: 'linear-gradient(180deg,#0d0d10 0%,#14141c 55%,#3d2f4f 80%,#7d6a3a 100%)',
+    ink: '#d9d2c0',
+    pal: ['#0d0d10', '#14141c', '#3d2f4f', '#7d6a3a', '#d9d2c0'],
+  },
+  {
+    name: '1980s',
+    title: 'SLAY RIDE',
+    tag: "he knows when you're alone",
+    bg: 'linear-gradient(165deg,#000 0%,#0a0a0a 55%,#5c0710 78%,#c1121f 100%)',
+    ink: '#e8e4da',
+    pal: ['#000000', '#1a0507', '#5c0710', '#c1121f', '#8a8f98'],
+  },
+  {
+    name: '1990s–2000s',
+    title: 'CAPTIVE',
+    tag: 'how much can you take?',
+    bg: 'linear-gradient(170deg,#0b1416 0%,#12262b 45%,#2e5158 75%,#79929a 100%)',
+    ink: '#cfe0e4',
+    pal: ['#0b1416', '#12262b', '#2e5158', '#79929a', '#3a3f3e'],
+  },
+  {
+    name: '2010s–today',
+    title: 'the orchard',
+    tag: 'a quiet kind of ruin',
+    bg: 'linear-gradient(180deg,#ece7dd 0%,#e0d8c8 60%,#c9beab 100%)',
+    ink: '#1c1a16',
+    pal: ['#ece7dd', '#e0d8c8', '#c9beab', '#5a5347', '#a33b2e'],
+  },
 ];
 function buildHueBands() {
   return [
- {name:t('hue_reds'),short:t('hue_reds'),c:"#e02430"},{name:t('hue_oranges_yellows'),short:t('hue_warm_short'),c:"#e5a00d"},{name:t('hue_greens'),short:t('hue_greens'),c:"#8fb05a"},
- {name:t('hue_blues'),short:t('hue_blues'),c:"#5a9eb0"},{name:t('hue_purples'),short:t('hue_purples'),c:"#b08ad4"},{name:t('hue_black_grey'),short:t('hue_dark_short'),c:"#1c1a18",label:"#d8d2c6"}
-];
+    { name: t('hue_reds'), short: t('hue_reds'), c: '#e02430' },
+    { name: t('hue_oranges_yellows'), short: t('hue_warm_short'), c: '#e5a00d' },
+    { name: t('hue_greens'), short: t('hue_greens'), c: '#8fb05a' },
+    { name: t('hue_blues'), short: t('hue_blues'), c: '#5a9eb0' },
+    { name: t('hue_purples'), short: t('hue_purples'), c: '#b08ad4' },
+    { name: t('hue_black_grey'), short: t('hue_dark_short'), c: '#1c1a18', label: '#d8d2c6' },
+  ];
 }
 function buildTypoRegs() {
   return [
- {key:"ornate",     name:t('typo_ornate_display'), short:t('typo_ornate_short'),     c:"#c99a3a"},
- {key:"decorative", name:t('typo_decorative'),     short:t('typo_decorative'), c:"#b5622f"},
- {key:"standard",   name:t('typo_standard'),       short:t('typo_standard'),   c:"#8a6a63"},
- {key:"clean",      name:t('typo_clean'),          short:t('typo_clean'),      c:"#6f8792"},
- {key:"minimal",    name:t('typo_minimal'),        short:t('typo_minimal'),    c:"#cdc6b6"}
-];
+    { key: 'ornate', name: t('typo_ornate_display'), short: t('typo_ornate_short'), c: '#c99a3a' },
+    { key: 'decorative', name: t('typo_decorative'), short: t('typo_decorative'), c: '#b5622f' },
+    { key: 'standard', name: t('typo_standard'), short: t('typo_standard'), c: '#8a6a63' },
+    { key: 'clean', name: t('typo_clean'), short: t('typo_clean'), c: '#6f8792' },
+    { key: 'minimal', name: t('typo_minimal'), short: t('typo_minimal'), c: '#cdc6b6' },
+  ];
 }
 let HUEBANDS = [];
 let TYPOREGS = [];
-function ensureChartLabels(){
-  ({ DECADES, RIVER, TYPO, BLOOD_PIXEL, BLOOD_SEMANTIC, MAIN_DEC, DARK_PTS, RED_PTS, FACE_PTS, TEXT_PTS, SYM_PTS, DIAG_PTS, CENSUS_SERIES, POSTERS } = pipelineData());
+function ensureChartLabels() {
+  ({
+    DECADES,
+    RIVER,
+    TYPO,
+    BLOOD_PIXEL,
+    BLOOD_SEMANTIC,
+    MAIN_DEC,
+    DARK_PTS,
+    RED_PTS,
+    FACE_PTS,
+    TEXT_PTS,
+    SYM_PTS,
+    DIAG_PTS,
+    CENSUS_SERIES,
+    POSTERS,
+  } = pipelineData());
   HUEBANDS = buildHueBands();
   TYPOREGS = buildTypoRegs();
   window.HUEBANDS = HUEBANDS;
 }
 /* Chart series (RIVER, TYPO, DARK_PTS, CENSUS_SERIES, …) load from data/series.js
    — generated by pipeline/export_site_series.py / apply_exclusions.py. */
-const CHART_X0=1920, CHART_X1=2028;
-const CHART_X_TICKS=[1920,1940,1960,1980,2000,2020,2028];
-const since1920=pts=>pts.filter(p=>p[0]>=CHART_X0);
+const CHART_X0 = 1920,
+  CHART_X1 = 2028;
+const CHART_X_TICKS = [1920, 1940, 1960, 1980, 2000, 2020, 2028];
+const since1920 = (pts) => pts.filter((p) => p[0] >= CHART_X0);
 
 /* Accessible chart labels + collapsible data tables (WCAG: don't rely on SVG alone) */
-function wireChartAccessibility(){
-  const esc=s=>String(s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
-  const annotate=(id,label,desc)=>{
-    const svg=document.getElementById(id);
-    if(!svg) return;
-    svg.setAttribute('role','img');
-    svg.setAttribute('aria-label',label);
-    const tid=id+'-title', did=id+'-desc';
-    svg.setAttribute('aria-labelledby',tid);
-    svg.setAttribute('aria-describedby',did);
-    if(!svg.querySelector('#'+tid)){
-      const t=document.createElementNS('http://www.w3.org/2000/svg','title');
-      t.id=tid; t.textContent=label;
-      const d=document.createElementNS('http://www.w3.org/2000/svg','desc');
-      d.id=did; d.textContent=desc;
-      svg.insertBefore(d,svg.firstChild);
-      svg.insertBefore(t,svg.firstChild);
+function wireChartAccessibility() {
+  const esc = (s) =>
+    String(s)
+      .replace(/&/g, '&amp;')
+      .replace(/</g, '&lt;')
+      .replace(/>/g, '&gt;')
+      .replace(/"/g, '&quot;');
+  const annotate = (id, label, desc) => {
+    const svg = document.getElementById(id);
+    if (!svg) return;
+    svg.setAttribute('role', 'img');
+    svg.setAttribute('aria-label', label);
+    const tid = id + '-title',
+      did = id + '-desc';
+    svg.setAttribute('aria-labelledby', tid);
+    svg.setAttribute('aria-describedby', did);
+    if (!svg.querySelector('#' + tid)) {
+      const t = document.createElementNS('http://www.w3.org/2000/svg', 'title');
+      t.id = tid;
+      t.textContent = label;
+      const d = document.createElementNS('http://www.w3.org/2000/svg', 'desc');
+      d.id = did;
+      d.textContent = desc;
+      svg.insertBefore(d, svg.firstChild);
+      svg.insertBefore(t, svg.firstChild);
     }
   };
-  const table=(id,caption,headers,rows)=>{
-    const svg=document.getElementById(id);
-    if(!svg) return;
-    const wrap=svg.closest('.chart-wrap');
-    if(!wrap||wrap.querySelector('.chart-data')) return;
-    const det=document.createElement('details');
-    det.className='chart-data';
-    const sum=document.createElement('summary');
-    sum.textContent=t('view_data_table');
-    const body=document.createElement('div');
-    body.className='chart-data-body';
-    let html=`<table><caption>${esc(caption)}</caption><thead><tr>`;
-    headers.forEach(h=>html+=`<th scope="col">${esc(h)}</th>`);
-    html+='</tr></thead><tbody>';
-    rows.forEach(r=>{
-      html+='<tr>';
-      r.forEach((c,i)=>html+=i===0?`<th scope="row">${esc(c)}</th>`:`<td>${esc(c)}</td>`);
-      html+='</tr>';
+  const table = (id, caption, headers, rows) => {
+    const svg = document.getElementById(id);
+    if (!svg) return;
+    const wrap = svg.closest('.chart-wrap');
+    if (!wrap || wrap.querySelector('.chart-data')) return;
+    const det = document.createElement('details');
+    det.className = 'chart-data';
+    const sum = document.createElement('summary');
+    sum.textContent = t('view_data_table');
+    const body = document.createElement('div');
+    body.className = 'chart-data-body';
+    let html = `<table><caption>${esc(caption)}</caption><thead><tr>`;
+    headers.forEach((h) => (html += `<th scope="col">${esc(h)}</th>`));
+    html += '</tr></thead><tbody>';
+    rows.forEach((r) => {
+      html += '<tr>';
+      r.forEach(
+        (c, i) => (html += i === 0 ? `<th scope="row">${esc(c)}</th>` : `<td>${esc(c)}</td>`),
+      );
+      html += '</tr>';
     });
-    html+='</tbody></table>';
-    body.innerHTML=html;
-    det.append(sum,body);
-    const anchor=wrap.querySelector('.chart-readout')||svg;
+    html += '</tbody></table>';
+    body.innerHTML = html;
+    det.append(sum, body);
+    const anchor = wrap.querySelector('.chart-readout') || svg;
     anchor.after(det);
   };
 
-  annotate('river',t('aria_river_label'),t('aria_river_desc'));
-  table('river',t('table_river_caption'),
-    [t('col_decade'),...HUEBANDS.map(b=>b.name)],
-    RIVER.map((r,i)=>[DECADES[i],...r.map(v=>v.toFixed(1)+'%')]));
+  annotate('river', t('aria_river_label'), t('aria_river_desc'));
+  table(
+    'river',
+    t('table_river_caption'),
+    [t('col_decade'), ...HUEBANDS.map((b) => b.name)],
+    RIVER.map((r, i) => [DECADES[i], ...r.map((v) => v.toFixed(1) + '%')]),
+  );
 
-  annotate('darkness',t('aria_darkness_label'),t('aria_darkness_desc'));
-  table('darkness',t('table_darkness_caption'),
-    [t('col_year'),t('col_all_horror_l')],
-    DARK_PTS.map(([y,v])=>[y,v.toFixed(1)]));
+  annotate('darkness', t('aria_darkness_label'), t('aria_darkness_desc'));
+  table(
+    'darkness',
+    t('table_darkness_caption'),
+    [t('col_year'), t('col_all_horror_l')],
+    DARK_PTS.map(([y, v]) => [y, v.toFixed(1)]),
+  );
 
-  annotate('red',t('aria_red_label'),t('aria_red_desc'));
-  table('red',t('table_red_caption'),
-    [t('col_year'),t('col_red_pct')],
-    RED_PTS.map(([y,v])=>[y,v.toFixed(1)+'%']));
+  annotate('red', t('aria_red_label'), t('aria_red_desc'));
+  table(
+    'red',
+    t('table_red_caption'),
+    [t('col_year'), t('col_red_pct')],
+    RED_PTS.map(([y, v]) => [y, v.toFixed(1) + '%']),
+  );
 
-  annotate('faces',t('aria_faces_label'),t('aria_faces_desc'));
-  table('faces',t('table_faces_caption'),
-    [t('col_year'),t('col_with_face_pct')],
-    FACE_PTS.map(([y,v])=>[y,v.toFixed(1)+'%']));
+  annotate('faces', t('aria_faces_label'), t('aria_faces_desc'));
+  table(
+    'faces',
+    t('table_faces_caption'),
+    [t('col_year'), t('col_with_face_pct')],
+    FACE_PTS.map(([y, v]) => [y, v.toFixed(1) + '%']),
+  );
 
-  annotate('census',t('aria_census_label'),t('aria_census_desc'));
+  annotate('census', t('aria_census_label'), t('aria_census_desc'));
   {
-    const years=[1920,1930,1940,1950,1960,1970,1980,1990,2000,2010,2020];
-    const names=Object.keys(CENSUS_SERIES);
-    table('census',t('table_census_caption'),
-      [t('col_year'),...names],
-      years.map(y=>[y,...names.map(n=>{
-        const pt=CENSUS_SERIES[n].find(p=>p[0]===y);
-        return pt?pt[1].toFixed(1)+'%':'—';
-      })]));
+    const years = [1920, 1930, 1940, 1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020];
+    const names = Object.keys(CENSUS_SERIES);
+    table(
+      'census',
+      t('table_census_caption'),
+      [t('col_year'), ...names],
+      years.map((y) => [
+        y,
+        ...names.map((n) => {
+          const pt = CENSUS_SERIES[n].find((p) => p[0] === y);
+          return pt ? pt[1].toFixed(1) + '%' : '—';
+        }),
+      ]),
+    );
   }
 
-  annotate('quiet',t('aria_quiet_label'),t('aria_quiet_desc'));
-  table('quiet',t('table_quiet_caption'),
-    [t('col_year'),t('col_textlike_pct')],
-    TEXT_PTS.map(([y,v])=>[y,v.toFixed(1)+'%']));
+  annotate('quiet', t('aria_quiet_label'), t('aria_quiet_desc'));
+  table(
+    'quiet',
+    t('table_quiet_caption'),
+    [t('col_year'), t('col_textlike_pct')],
+    TEXT_PTS.map(([y, v]) => [y, v.toFixed(1) + '%']),
+  );
 
-  annotate('symmetry',t('aria_symmetry_label'),t('aria_symmetry_desc'));
-  table('symmetry',t('table_symmetry_caption'),
-    [t('col_year'),t('col_symmetry')],
-    SYM_PTS.map(([y,v])=>[y,v.toFixed(3)]));
+  annotate('symmetry', t('aria_symmetry_label'), t('aria_symmetry_desc'));
+  table(
+    'symmetry',
+    t('table_symmetry_caption'),
+    [t('col_year'), t('col_symmetry')],
+    SYM_PTS.map(([y, v]) => [y, v.toFixed(3)]),
+  );
 
-  annotate('diagonal',t('aria_diagonal_label'),t('aria_diagonal_desc'));
-  table('diagonal',t('table_diagonal_caption'),
-    [t('col_year'),t('col_diagonal_pct')],
-    DIAG_PTS.map(([y,v])=>[y,v.toFixed(1)+'%']));
+  annotate('diagonal', t('aria_diagonal_label'), t('aria_diagonal_desc'));
+  table(
+    'diagonal',
+    t('table_diagonal_caption'),
+    [t('col_year'), t('col_diagonal_pct')],
+    DIAG_PTS.map(([y, v]) => [y, v.toFixed(1) + '%']),
+  );
 
-  annotate('typo',t('aria_typo_label'),t('aria_typo_desc'));
-  table('typo',t('table_typo_caption'),
-    [t('col_decade'),...TYPOREGS.map(r=>r.name)],
-    TYPO.map((r,i)=>[DECADES[i],...r.map(v=>(v*100).toFixed(1)+'%')]));
+  annotate('typo', t('aria_typo_label'), t('aria_typo_desc'));
+  table(
+    'typo',
+    t('table_typo_caption'),
+    [t('col_decade'), ...TYPOREGS.map((r) => r.name)],
+    TYPO.map((r, i) => [DECADES[i], ...r.map((v) => (v * 100).toFixed(1) + '%')]),
+  );
 
-  annotate('blood2',t('aria_blood2_label'),t('aria_blood2_desc'));
-  table('blood2',t('table_blood2_caption'),
-    [t('col_decade'),t('col_pixel_red_pct'),t('col_model_blood_pct')],
-    DECADES.map((d,i)=>[d,BLOOD_PIXEL[i].toFixed(1)+'%',BLOOD_SEMANTIC[i].toFixed(1)+'%']));
+  annotate('blood2', t('aria_blood2_label'), t('aria_blood2_desc'));
+  table(
+    'blood2',
+    t('table_blood2_caption'),
+    [t('col_decade'), t('col_pixel_red_pct'), t('col_model_blood_pct')],
+    DECADES.map((d, i) => [d, BLOOD_PIXEL[i].toFixed(1) + '%', BLOOD_SEMANTIC[i].toFixed(1) + '%']),
+  );
 }
 
 /* ================= hero mosaic + explorer tiles ================= */
-function tileColor(dec){ // fake era-plausible poster colors
-  const e = dec<40?1: dec<60?1: dec<80?2: dec<90?3: dec<110?4:5;
-  const p = ERAS[Math.min(e,5)].pal;
-  return p[Math.floor(Math.random()*p.length)];
+function tileColor(dec) {
+  // fake era-plausible poster colors
+  const e = dec < 40 ? 1 : dec < 60 ? 1 : dec < 80 ? 2 : dec < 90 ? 3 : dec < 110 ? 4 : 5;
+  const p = ERAS[Math.min(e, 5)].pal;
+  return p[Math.floor(Math.random() * p.length)];
 }
-function initEssayChrome(){
+function initEssayChrome() {
   ensureChartLabels();
-  const mosaic=document.getElementById('mosaic');
-  if(mosaic && !mosaic.dataset.ready){
-    mosaic.dataset.ready='1';
-    for(let i=0;i<98;i++){const d=document.createElement('div');
-      if(typeof POSTERS!=='undefined'){
-        const p=POSTERS[Math.floor(Math.random()*POSTERS.length)];
-        d.style.background=`linear-gradient(${Math.random()*360}deg,${p[1]},#0a0a0c)`;
-      }else{
-        const dec=Math.floor(Math.random()*106)+20;
-        d.style.background=`linear-gradient(${Math.random()*360}deg,${tileColor(dec)},${tileColor(dec)}dd, #0a0a0c)`;
+  const mosaic = document.getElementById('mosaic');
+  if (mosaic && !mosaic.dataset.ready) {
+    mosaic.dataset.ready = '1';
+    for (let i = 0; i < 98; i++) {
+      const d = document.createElement('div');
+      if (typeof POSTERS !== 'undefined') {
+        const p = POSTERS[Math.floor(Math.random() * POSTERS.length)];
+        d.style.background = `linear-gradient(${Math.random() * 360}deg,${p[1]},#0a0a0c)`;
+      } else {
+        const dec = Math.floor(Math.random() * 106) + 20;
+        d.style.background = `linear-gradient(${Math.random() * 360}deg,${tileColor(dec)},${tileColor(dec)}dd, #0a0a0c)`;
       }
       mosaic.appendChild(d);
     }
   }
 }
 
-function eraOfYear(y){return y<1940?0: y<1960?1: y<1980?2: y<1990?3: y<2010?4:5;}
-const IMG_S='https://image.tmdb.org/t/p/w92', IMG_L='https://image.tmdb.org/t/p/w780', IMG_M='https://image.tmdb.org/t/p/w500';
-const HAS_DATA=(typeof POSTERS!=='undefined');
-function creatureEs(){
-  return {giant_monster:t('creature_giant_monster'),masked_killer:t('creature_masked_killer'),wolf_dog:t('creature_wolf_dog')};
+function eraOfYear(y) {
+  return y < 1940 ? 0 : y < 1960 ? 1 : y < 1980 ? 2 : y < 1990 ? 3 : y < 2010 ? 4 : 5;
 }
-const POSTER_BY_ID=HAS_DATA?Object.fromEntries(POSTERS.map(p=>[p[7],p])):{};
-const SPECIMEN_PATHS={170:"/sQckQRt17VaWbo39GIu0TMOiszq.jpg",348:"/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg",377:"/wGTpGGRMZmyFCcrY2YoxVTIBlli.jpg",565:"/e2t5CKMox7tjv3iD3Ko7NdFa5lJ.jpg",571:"/z0iYrJ6GsAMP3abOha7uGMuc5kZ.jpg",578:"/lxM6kqilAdpdhqUl2biYp5frUxE.jpg",694:"/nRj5511mZdTl4saWEPoj9QroTIu.jpg",805:"/s8pdaHjxNPLXIA1WjSTWm00RJTz.jpg",831:"/2viRDpHmhzQoreZok2auLjkVbSE.jpg",948:"/qVpCaBcnjRzGL3nOPHi6Suy0sB6.jpg",1091:"/tzGY49kseSE9QAKk47uuDGwnSCu.jpg",1678:"/ixfHV61iRM4Jkgw0uI5ICtNwfmX.jpg",1946:"/kETKF0JhdTPn1knci8CAdYL0d79.jpg",3053:"/iH8Ohx97F2eIagrJGzCEraO93MN.jpg",4283:"/5ou56J8FIxbIFusR9zIA9GW7zwt.jpg",4488:"/HzrPn1gEHWixfMOvOehOTlHROo.jpg",4970:"/frSGNQcWx1ek8dCduFYCux1ho7n.jpg",9841:"/1qAQWKjfAgxQN4atIMWnssBWHOf.jpg",9980:"/cFrKCumtZMHCWwWNxgGRyaxhYu2.jpg",10065:"/4D246dpe7yy2GvHI2IbpeqkUXry.jpg",10493:"/hXpav86ZX5N1YIfVfVtzuZLNrjW.jpg",10676:"/4qDtn4RNIEY4OgitIxi3P1CtthO.jpg",10973:"/aGM3tYt0r2NO4Uc8dNEbAMhXeEk.jpg",11470:"/jrObEGWVW1XlutjYXqyyGxtTeov.jpg",11549:"/wVXt7h98sTKhLjq1TdvdGwdyJo8.jpg",11586:"/g9i3LTMYLRHvCYSKimZEfd1Vqy7.jpg",11815:"/kXdBcDh2EbgSIf4Oo1dxKapZM2f.jpg",11868:"/1L45hwUu1P4NRhbRRrE5d9oHamm.jpg",15360:"/dij60cVBL39B5t1SdGQr33APksC.jpg",16028:"/nHG0VOW6o99tP5EACtKTMADqxJQ.jpg",16281:"/4SoyTCEpsgLjX6yAyMsx3AsAyRQ.jpg",18498:"/yV8z6deULhH4oJAUj2YdhITPwfc.jpg",18983:"/19RDmhX6LtzMxv0KXXAU1IBIvvA.jpg",21588:"/cI5AV3jCuxmoQp0N7Z16SI2b7Xk.jpg",23439:"/jEzZOrGSWpl0jKOIXoY3OnEabLQ.jpg",24198:"/46whh6JCDqRFxHfKssePScUvD8D.jpg",28532:"/A17gEQk617FsLhtPyalRN885KM3.jpg",28659:"/uecOR4c3IrZ2AusokpyifrtJks9.jpg",28774:"/5WsMyE6wwY2QbM3fpAePOX3e7pZ.jpg",29077:"/a5cCwJEnVSPtTqHgIE9UxHIoWFl.jpg",29748:"/3xMrdNnyvYrdJaKq9dWJKkTHGvP.jpg",31682:"/1Tl2aeOhvUmEHSGHGH5SfmN19vQ.jpg",35911:"/ypQ7rC8lUgt9g7yAMmmfq5vx0Fo.jpg",38299:"/2tP5jkSJ8Nu3OsIQLaCEktepOLp.jpg",39995:"/p9S9UuYA4uHdoH9FecB3sU9zpfm.jpg",43115:"/4uns8WSxu9LSFv0FkJP8uv6Q5kQ.jpg",45878:"/glZ0Wz5u2Vr7TzM6Kj1f4e6EliU.jpg",46767:"/64rlKmchkFyLDh6XP2XqPHw9nPd.jpg",48885:"/eHzJBkfEV4fUVxAfspt1jOxBIc.jpg",49183:"/njSWFPeTaZYoKKeuyf1Ga6OYAuh.jpg",50606:"/mPH3YLnyU5qT7FUMd1U1wWD41Ep.jpg",52199:"/yZHinX5xzbkhXvX5t4lxKuDQEHQ.jpg",54653:"/bjVqT8XIVMTCWpSreMpH0W6Rjxi.jpg",59189:"/zeM6HitVufjH9nvWvg4MraucwzU.jpg",60086:"/7DQlbb4ax5L5NZvMjr54KOsXGyF.jpg",70772:"/zVK76DDtIKdIiRRraAVrsyek04t.jpg",72153:"/bLYZAd3yukk9HFamT16XHFrmKtw.jpg",73336:"/ztg12ZJK2Vi8tHl9vsNxFJ1hc4A.jpg",74915:"/2CafSu1hxvxLRYTiFuhA3sH0xNP.jpg",85498:"/xlfJKdjwUZNfT2QUEUv0RozVuEs.jpg",88353:"/f7IxkjIQWDiVgrUmkfA3HYljuJF.jpg",93929:"/vjpqjUYOS9Nv2nEkNuo2UoNdtPv.jpg",117429:"/fQ4xCUh2sL3B5EqTXoLHn9uAnGN.jpg",127642:"/4tSMIUeLYGQFeBnHgS7TVuYiAi0.jpg",141442:"/2oBgGXtsh2GvnBesUAqlHvf5Q7P.jpg",145850:"/2nPPxIb8Rlbwvs4HsjOmZsa2QlE.jpg",156068:"/qObcGnlli4zlCc99DpTQv95GBZy.jpg",212005:"/dRKpOGEJLLnD0QYFn8ku4DBYwGz.jpg",226630:"/y3j0wddj5U6W9ZBL8NxPQOxLgJo.jpg",279690:"/vzqwe4uuINJhbPqvlbVShBnCvHv.jpg",310131:"/zap5hpFCWSvdWSuPGAQyjUv2wAC.jpg",329237:"/6YcIEhXzMSuNdrooBUsO3mZK8rT.jpg",332567:"/42HlPJmiE6rQdtT2lYzPPMQYvqG.jpg",345940:"/xqECHNvzbDL5I3iiOVUkVPJMSbc.jpg",416753:"/gVBUEYI8eIaFZZv5BR6DPVuJZsS.jpg",419479:"/86a7GRVRCwfl7wdI4QadyvKa6Zu.jpg",425972:"/cdPSUck4tBRvRu6DFk6XciDrssn.jpg",439917:"/soP8q3FtbTseRVcJavkXDuhVFac.jpg",460458:"/7uRbWOXxpWDMtnsd2PF3clu65jc.jpg",476299:"/tt9YSQlArAj6849SQQJ5ryNgcJs.jpg",495447:"/stTZqv11cqWOZbTySSpf6ciDnr2.jpg",519418:"/pNrdzyE39G6brgCF1YmrW73aecy.jpg",535412:"/sPEh50GkEO3mTMdwn3Dz1LjEp9h.jpg",564446:"/1c9os1zQi5X0hey7J9PKGBGFYHm.jpg",575869:"/gkDW017O3DLK9vBMEcAMSunnuo9.jpg",591275:"/rmEPtz3Ufzol2VWUAZYzOFaBio3.jpg",751423:"/gTOl98Sqie5pDxomspvWLXN66BJ.jpg",875138:"/6MPBRoFpEWpohhKZqT19q62U8If.jpg",882598:"/hiaeZKzwsk4y4atFhmncO5KRxeT.jpg",883891:"/gpXdkzoens2K8VtVaMORem9f95.jpg"};
-function posterSrc(p,size){
-  const base=size==='s'?IMG_S:size==='m'?IMG_M:IMG_L;
-  if(p&&p[2]) return base+p[2];
+const IMG_S = 'https://image.tmdb.org/t/p/w92',
+  IMG_L = 'https://image.tmdb.org/t/p/w780',
+  IMG_M = 'https://image.tmdb.org/t/p/w500';
+const HAS_DATA = typeof POSTERS !== 'undefined';
+function creatureEs() {
+  return {
+    giant_monster: t('creature_giant_monster'),
+    masked_killer: t('creature_masked_killer'),
+    wolf_dog: t('creature_wolf_dog'),
+  };
+}
+const POSTER_BY_ID = HAS_DATA ? Object.fromEntries(POSTERS.map((p) => [p[7], p])) : {};
+const SPECIMEN_PATHS = {
+  170: '/sQckQRt17VaWbo39GIu0TMOiszq.jpg',
+  348: '/vfrQk5IPloGg1v9Rzbh2Eg3VGyM.jpg',
+  377: '/wGTpGGRMZmyFCcrY2YoxVTIBlli.jpg',
+  565: '/e2t5CKMox7tjv3iD3Ko7NdFa5lJ.jpg',
+  571: '/z0iYrJ6GsAMP3abOha7uGMuc5kZ.jpg',
+  578: '/lxM6kqilAdpdhqUl2biYp5frUxE.jpg',
+  694: '/nRj5511mZdTl4saWEPoj9QroTIu.jpg',
+  805: '/s8pdaHjxNPLXIA1WjSTWm00RJTz.jpg',
+  831: '/2viRDpHmhzQoreZok2auLjkVbSE.jpg',
+  948: '/qVpCaBcnjRzGL3nOPHi6Suy0sB6.jpg',
+  1091: '/tzGY49kseSE9QAKk47uuDGwnSCu.jpg',
+  1678: '/ixfHV61iRM4Jkgw0uI5ICtNwfmX.jpg',
+  1946: '/kETKF0JhdTPn1knci8CAdYL0d79.jpg',
+  3053: '/iH8Ohx97F2eIagrJGzCEraO93MN.jpg',
+  4283: '/5ou56J8FIxbIFusR9zIA9GW7zwt.jpg',
+  4488: '/HzrPn1gEHWixfMOvOehOTlHROo.jpg',
+  4970: '/frSGNQcWx1ek8dCduFYCux1ho7n.jpg',
+  9841: '/1qAQWKjfAgxQN4atIMWnssBWHOf.jpg',
+  9980: '/cFrKCumtZMHCWwWNxgGRyaxhYu2.jpg',
+  10065: '/4D246dpe7yy2GvHI2IbpeqkUXry.jpg',
+  10493: '/hXpav86ZX5N1YIfVfVtzuZLNrjW.jpg',
+  10676: '/4qDtn4RNIEY4OgitIxi3P1CtthO.jpg',
+  10973: '/aGM3tYt0r2NO4Uc8dNEbAMhXeEk.jpg',
+  11470: '/jrObEGWVW1XlutjYXqyyGxtTeov.jpg',
+  11549: '/wVXt7h98sTKhLjq1TdvdGwdyJo8.jpg',
+  11586: '/g9i3LTMYLRHvCYSKimZEfd1Vqy7.jpg',
+  11815: '/kXdBcDh2EbgSIf4Oo1dxKapZM2f.jpg',
+  11868: '/1L45hwUu1P4NRhbRRrE5d9oHamm.jpg',
+  15360: '/dij60cVBL39B5t1SdGQr33APksC.jpg',
+  16028: '/nHG0VOW6o99tP5EACtKTMADqxJQ.jpg',
+  16281: '/4SoyTCEpsgLjX6yAyMsx3AsAyRQ.jpg',
+  18498: '/yV8z6deULhH4oJAUj2YdhITPwfc.jpg',
+  18983: '/19RDmhX6LtzMxv0KXXAU1IBIvvA.jpg',
+  21588: '/cI5AV3jCuxmoQp0N7Z16SI2b7Xk.jpg',
+  23439: '/jEzZOrGSWpl0jKOIXoY3OnEabLQ.jpg',
+  24198: '/46whh6JCDqRFxHfKssePScUvD8D.jpg',
+  28532: '/A17gEQk617FsLhtPyalRN885KM3.jpg',
+  28659: '/uecOR4c3IrZ2AusokpyifrtJks9.jpg',
+  28774: '/5WsMyE6wwY2QbM3fpAePOX3e7pZ.jpg',
+  29077: '/a5cCwJEnVSPtTqHgIE9UxHIoWFl.jpg',
+  29748: '/3xMrdNnyvYrdJaKq9dWJKkTHGvP.jpg',
+  31682: '/1Tl2aeOhvUmEHSGHGH5SfmN19vQ.jpg',
+  35911: '/ypQ7rC8lUgt9g7yAMmmfq5vx0Fo.jpg',
+  38299: '/2tP5jkSJ8Nu3OsIQLaCEktepOLp.jpg',
+  39995: '/p9S9UuYA4uHdoH9FecB3sU9zpfm.jpg',
+  43115: '/4uns8WSxu9LSFv0FkJP8uv6Q5kQ.jpg',
+  45878: '/glZ0Wz5u2Vr7TzM6Kj1f4e6EliU.jpg',
+  46767: '/64rlKmchkFyLDh6XP2XqPHw9nPd.jpg',
+  48885: '/eHzJBkfEV4fUVxAfspt1jOxBIc.jpg',
+  49183: '/njSWFPeTaZYoKKeuyf1Ga6OYAuh.jpg',
+  50606: '/mPH3YLnyU5qT7FUMd1U1wWD41Ep.jpg',
+  52199: '/yZHinX5xzbkhXvX5t4lxKuDQEHQ.jpg',
+  54653: '/bjVqT8XIVMTCWpSreMpH0W6Rjxi.jpg',
+  59189: '/zeM6HitVufjH9nvWvg4MraucwzU.jpg',
+  60086: '/7DQlbb4ax5L5NZvMjr54KOsXGyF.jpg',
+  70772: '/zVK76DDtIKdIiRRraAVrsyek04t.jpg',
+  72153: '/bLYZAd3yukk9HFamT16XHFrmKtw.jpg',
+  73336: '/ztg12ZJK2Vi8tHl9vsNxFJ1hc4A.jpg',
+  74915: '/2CafSu1hxvxLRYTiFuhA3sH0xNP.jpg',
+  85498: '/xlfJKdjwUZNfT2QUEUv0RozVuEs.jpg',
+  88353: '/f7IxkjIQWDiVgrUmkfA3HYljuJF.jpg',
+  93929: '/vjpqjUYOS9Nv2nEkNuo2UoNdtPv.jpg',
+  117429: '/fQ4xCUh2sL3B5EqTXoLHn9uAnGN.jpg',
+  127642: '/4tSMIUeLYGQFeBnHgS7TVuYiAi0.jpg',
+  141442: '/2oBgGXtsh2GvnBesUAqlHvf5Q7P.jpg',
+  145850: '/2nPPxIb8Rlbwvs4HsjOmZsa2QlE.jpg',
+  156068: '/qObcGnlli4zlCc99DpTQv95GBZy.jpg',
+  212005: '/dRKpOGEJLLnD0QYFn8ku4DBYwGz.jpg',
+  226630: '/y3j0wddj5U6W9ZBL8NxPQOxLgJo.jpg',
+  279690: '/vzqwe4uuINJhbPqvlbVShBnCvHv.jpg',
+  310131: '/zap5hpFCWSvdWSuPGAQyjUv2wAC.jpg',
+  329237: '/6YcIEhXzMSuNdrooBUsO3mZK8rT.jpg',
+  332567: '/42HlPJmiE6rQdtT2lYzPPMQYvqG.jpg',
+  345940: '/xqECHNvzbDL5I3iiOVUkVPJMSbc.jpg',
+  416753: '/gVBUEYI8eIaFZZv5BR6DPVuJZsS.jpg',
+  419479: '/86a7GRVRCwfl7wdI4QadyvKa6Zu.jpg',
+  425972: '/cdPSUck4tBRvRu6DFk6XciDrssn.jpg',
+  439917: '/soP8q3FtbTseRVcJavkXDuhVFac.jpg',
+  460458: '/7uRbWOXxpWDMtnsd2PF3clu65jc.jpg',
+  476299: '/tt9YSQlArAj6849SQQJ5ryNgcJs.jpg',
+  495447: '/stTZqv11cqWOZbTySSpf6ciDnr2.jpg',
+  519418: '/pNrdzyE39G6brgCF1YmrW73aecy.jpg',
+  535412: '/sPEh50GkEO3mTMdwn3Dz1LjEp9h.jpg',
+  564446: '/1c9os1zQi5X0hey7J9PKGBGFYHm.jpg',
+  575869: '/gkDW017O3DLK9vBMEcAMSunnuo9.jpg',
+  591275: '/rmEPtz3Ufzol2VWUAZYzOFaBio3.jpg',
+  751423: '/gTOl98Sqie5pDxomspvWLXN66BJ.jpg',
+  875138: '/6MPBRoFpEWpohhKZqT19q62U8If.jpg',
+  882598: '/hiaeZKzwsk4y4atFhmncO5KRxeT.jpg',
+  883891: '/gpXdkzoens2K8VtVaMORem9f95.jpg',
+};
+function posterSrc(p, size) {
+  const base = size === 's' ? IMG_S : size === 'm' ? IMG_M : IMG_L;
+  if (p && p[2]) return base + p[2];
   // early titles missing TMDB path in explorer → local asset / specimen map
   return posterSrcById(p[7], size);
 }
 /** Prefer TMDB path from explorer/specimen map; fall back to local assets. */
-function posterSrcById(id,size){
-  const base=size==='s'?IMG_S:(size==='l'?IMG_L:IMG_M);
-  const row=POSTER_BY_ID[id];
-  if(row&&row[2]) return base+row[2];
-  if(typeof SPECIMEN_PATHS!=='undefined' && SPECIMEN_PATHS[id]) return base+SPECIMEN_PATHS[id];
-  return 'assets/posters/'+id+'.jpg';
+function posterSrcById(id, size) {
+  const base = size === 's' ? IMG_S : size === 'l' ? IMG_L : IMG_M;
+  const row = POSTER_BY_ID[id];
+  if (row && row[2]) return base + row[2];
+  if (typeof SPECIMEN_PATHS !== 'undefined' && SPECIMEN_PATHS[id]) return base + SPECIMEN_PATHS[id];
+  return 'assets/posters/' + id + '.jpg';
 }
-function pct(x){return x==null?'—':(Math.round(x*100)+'%');}
-function num(x,d=2){return x==null||x===''?'—':(+x).toFixed(d).replace(/\.?0+$/,'');}
 
 /* openPoster — wired by src/main.js when lookup module mounts */
-window.__aofPosterQueue=window.__aofPosterQueue||[];
-window.openPoster=function(p){
-  if(!p) return;
+window.__aofPosterQueue = window.__aofPosterQueue || [];
+window.openPoster = function (p) {
+  if (!p) return;
   window.__aofPosterQueue.push(p);
   window.dispatchEvent(new Event('aof:lookup-request'));
 };
 
 /* ============ explorer tiles (section hidden; Dissect search replaces it) ============ */
-const grid=document.getElementById('expgrid');
-const explorerOn=grid && !document.getElementById('explorer')?.hidden;
-if(explorerOn){
-const MAX_TILES=384;
-const expTip=document.getElementById('exp-tip');
-function renderRange(lo,hi){
-  grid.innerHTML='';
-  if(HAS_DATA){
-    const pool=POSTERS.filter(p=>p[0]>=lo&&p[0]<=hi);
-    const step=Math.max(1,Math.floor(pool.length/MAX_TILES));
-    pool.filter((_,i)=>i%step===0).slice(0,MAX_TILES).forEach(p=>{
-      const d=document.createElement('div');
-      d.style.background=p[1];
-      d.addEventListener('mouseenter',()=>{
-        d.style.backgroundImage=`url(${posterSrc(p,'s')})`;
-        d.style.backgroundSize='cover';d.style.backgroundPosition='center';
-      });
-      d.addEventListener('mousemove',ev=>{
-        const bits=[`L* ${p[4]}`, p[5]>0?`${p[5]} face${p[5]>1?'s':''}`:'no faces'];
-        if(p[6]) bits.push(creatureEs()[p[6]]||p[6]);
-        expTip.innerHTML=`<b>${p[3]}</b> (${p[0]})<br>${bits.join(' · ')}`;
-        expTip.style.opacity=1;
-        expTip.style.left=Math.min(ev.clientX+14,innerWidth-260)+'px';
-        expTip.style.top=(ev.clientY-14)+'px';
-      });
-      d.addEventListener('mouseleave',()=>{expTip.style.opacity=0;});
-      d.addEventListener('click',()=>openPoster(p));
-      grid.appendChild(d);
-    });
-  }else{
-    for(let i=0;i<MAX_TILES/4;i++){
-      const year=lo+Math.floor(Math.random()*(hi-lo+1));
-      const p=ERAS[eraOfYear(year)].pal, d=document.createElement('div');
-      d.style.background=`linear-gradient(170deg,${p[Math.floor(Math.random()*5)]},${p[Math.floor(Math.random()*5)]})`;
-      d.title=`Sample poster · ${year}`;grid.appendChild(d);
+const grid = document.getElementById('expgrid');
+const explorerOn = grid && !document.getElementById('explorer')?.hidden;
+if (explorerOn) {
+  const MAX_TILES = 384;
+  const expTip = document.getElementById('exp-tip');
+  function renderRange(lo, hi) {
+    grid.innerHTML = '';
+    if (HAS_DATA) {
+      const pool = POSTERS.filter((p) => p[0] >= lo && p[0] <= hi);
+      const step = Math.max(1, Math.floor(pool.length / MAX_TILES));
+      pool
+        .filter((_, i) => i % step === 0)
+        .slice(0, MAX_TILES)
+        .forEach((p) => {
+          const d = document.createElement('div');
+          d.style.background = p[1];
+          d.addEventListener('mouseenter', () => {
+            d.style.backgroundImage = `url(${posterSrc(p, 's')})`;
+            d.style.backgroundSize = 'cover';
+            d.style.backgroundPosition = 'center';
+          });
+          d.addEventListener('mousemove', (ev) => {
+            const bits = [
+              `L* ${p[4]}`,
+              p[5] > 0 ? `${p[5]} face${p[5] > 1 ? 's' : ''}` : 'no faces',
+            ];
+            if (p[6]) bits.push(creatureEs()[p[6]] || p[6]);
+            expTip.innerHTML = `<b>${p[3]}</b> (${p[0]})<br>${bits.join(' · ')}`;
+            expTip.style.opacity = 1;
+            expTip.style.left = Math.min(ev.clientX + 14, innerWidth - 260) + 'px';
+            expTip.style.top = ev.clientY - 14 + 'px';
+          });
+          d.addEventListener('mouseleave', () => {
+            expTip.style.opacity = 0;
+          });
+          d.addEventListener('click', () => openPoster(p));
+          grid.appendChild(d);
+        });
+    } else {
+      for (let i = 0; i < MAX_TILES / 4; i++) {
+        const year = lo + Math.floor(Math.random() * (hi - lo + 1));
+        const p = ERAS[eraOfYear(year)].pal,
+          d = document.createElement('div');
+        d.style.background = `linear-gradient(170deg,${p[Math.floor(Math.random() * 5)]},${p[Math.floor(Math.random() * 5)]})`;
+        d.title = `Sample poster · ${year}`;
+        grid.appendChild(d);
+      }
     }
   }
-}
-const rMin=document.getElementById('r-min'),rMax=document.getElementById('r-max'),
-      yMin=document.getElementById('yr-min'),yMax=document.getElementById('yr-max'),
-      fill=document.getElementById('range-fill');
-const Y0=1920,Y1=2028;
-let renderTimer=null;
-function applyRange(){
-  let lo=+rMin.value,hi=+rMax.value;
-  if(lo>hi){[lo,hi]=[hi,lo];}
-  yMin.textContent=lo;yMax.textContent=hi;
-  const span=Y1-Y0;
-  fill.style.left=((lo-Y0)/span*100)+'%';
-  fill.style.right=(100-(hi-Y0)/span*100)+'%';
-  clearTimeout(renderTimer);
-  renderTimer=setTimeout(()=>renderRange(lo,hi),120);
-}
-rMin.addEventListener('input',applyRange);
-rMax.addEventListener('input',applyRange);
-applyRange();
+  const rMin = document.getElementById('r-min'),
+    rMax = document.getElementById('r-max'),
+    yMin = document.getElementById('yr-min'),
+    yMax = document.getElementById('yr-max'),
+    fill = document.getElementById('range-fill');
+  const Y0 = 1920,
+    Y1 = 2028;
+  let renderTimer = null;
+  function applyRange() {
+    let lo = +rMin.value,
+      hi = +rMax.value;
+    if (lo > hi) {
+      [lo, hi] = [hi, lo];
+    }
+    yMin.textContent = lo;
+    yMax.textContent = hi;
+    const span = Y1 - Y0;
+    fill.style.left = ((lo - Y0) / span) * 100 + '%';
+    fill.style.right = 100 - ((hi - Y0) / span) * 100 + '%';
+    clearTimeout(renderTimer);
+    renderTimer = setTimeout(() => renderRange(lo, hi), 120);
+  }
+  rMin.addEventListener('input', applyRange);
+  rMax.addEventListener('input', applyRange);
+  applyRange();
 }
 
 /* ============ exhibit A: metric primer + compare-grid artwork ============ */
-const HALLOWEEN_TMDB='/qVpCaBcnjRzGL3nOPHi6Suy0sB6.jpg';
-(function wireExhibitPrimer(){
-  const tabs=[...document.querySelectorAll('#exhibit-a .ex-tab')];
-  const howEl=document.getElementById('ex-how');
-  const readEl=document.getElementById('ex-read');
-  if(!tabs.length||!howEl||!readEl) return;
-  const howKey={
-    dark:'exhibit_m_dark_how',
-    faces:'exhibit_m_faces_how',
-    blood:'exhibit_m_blood_how',
-    type:'exhibit_m_type_how',
-    symmetry:'exhibit_m_symmetry_how',
-    diagonals:'exhibit_m_diagonals_how',
+const HALLOWEEN_TMDB = '/qVpCaBcnjRzGL3nOPHi6Suy0sB6.jpg';
+(function wireExhibitPrimer() {
+  const tabs = [...document.querySelectorAll('#exhibit-a .ex-tab')];
+  const howEl = document.getElementById('ex-how');
+  const readEl = document.getElementById('ex-read');
+  if (!tabs.length || !howEl || !readEl) return;
+  const howKey = {
+    dark: 'exhibit_m_dark_how',
+    faces: 'exhibit_m_faces_how',
+    blood: 'exhibit_m_blood_how',
+    type: 'exhibit_m_type_how',
+    symmetry: 'exhibit_m_symmetry_how',
+    diagonals: 'exhibit_m_diagonals_how',
   };
-  const readKey={
-    dark:'exhibit_m_dark_read',
-    faces:'exhibit_m_faces_read',
-    blood:'exhibit_m_blood_read',
-    type:'exhibit_m_type_read',
-    symmetry:'exhibit_m_symmetry_read',
-    diagonals:'exhibit_m_diagonals_read',
+  const readKey = {
+    dark: 'exhibit_m_dark_read',
+    faces: 'exhibit_m_faces_read',
+    blood: 'exhibit_m_blood_read',
+    type: 'exhibit_m_type_read',
+    symmetry: 'exhibit_m_symmetry_read',
+    diagonals: 'exhibit_m_diagonals_read',
   };
-  const select=id=>{
-    tabs.forEach(btn=>{
-      const on=btn.dataset.metric===id;
-      btn.classList.toggle('is-on',on);
-      btn.setAttribute('aria-selected',on?'true':'false');
+  const select = (id) => {
+    tabs.forEach((btn) => {
+      const on = btn.dataset.metric === id;
+      btn.classList.toggle('is-on', on);
+      btn.setAttribute('aria-selected', on ? 'true' : 'false');
     });
-    document.querySelectorAll('#ex-stage .ex-ov').forEach(ov=>{
-      ov.classList.toggle('is-on',ov.dataset.ov===id);
+    document.querySelectorAll('#ex-stage .ex-ov').forEach((ov) => {
+      ov.classList.toggle('is-on', ov.dataset.ov === id);
     });
-    howEl.textContent=t(howKey[id]||'');
-    readEl.textContent=t(readKey[id]||'');
+    howEl.textContent = t(howKey[id] || '');
+    readEl.textContent = t(readKey[id] || '');
   };
-  tabs.forEach(btn=>{
-    btn.addEventListener('click',()=>select(btn.dataset.metric));
+  tabs.forEach((btn) => {
+    btn.addEventListener('click', () => select(btn.dataset.metric));
   });
-  const list=document.querySelector('#exhibit-a .ex-tabs');
-  list?.addEventListener('keydown',ev=>{
-    const i=tabs.indexOf(document.activeElement);
-    if(i<0) return;
-    let next=-1;
-    if(ev.key==='ArrowRight'||ev.key==='ArrowDown') next=(i+1)%tabs.length;
-    else if(ev.key==='ArrowLeft'||ev.key==='ArrowUp') next=(i-1+tabs.length)%tabs.length;
-    else if(ev.key==='Home') next=0;
-    else if(ev.key==='End') next=tabs.length-1;
-    if(next<0) return;
+  const list = document.querySelector('#exhibit-a .ex-tabs');
+  list?.addEventListener('keydown', (ev) => {
+    const i = tabs.indexOf(document.activeElement);
+    if (i < 0) return;
+    let next = -1;
+    if (ev.key === 'ArrowRight' || ev.key === 'ArrowDown') next = (i + 1) % tabs.length;
+    else if (ev.key === 'ArrowLeft' || ev.key === 'ArrowUp')
+      next = (i - 1 + tabs.length) % tabs.length;
+    else if (ev.key === 'Home') next = 0;
+    else if (ev.key === 'End') next = tabs.length - 1;
+    if (next < 0) return;
     ev.preventDefault();
     tabs[next].focus();
     select(tabs[next].dataset.metric);
   });
-  document.addEventListener('aof:lang',()=>{
-    const on=document.querySelector('#exhibit-a .ex-tab.is-on');
-    select(on?.dataset.metric||'dark');
+  document.addEventListener('aof:lang', () => {
+    const on = document.querySelector('#exhibit-a .ex-tab.is-on');
+    select(on?.dataset.metric || 'dark');
   });
   select('dark');
-  const exhibitHalloween=document.getElementById('ex-halloween');
-  if(exhibitHalloween){
-    exhibitHalloween.addEventListener('click',()=>{
-      const row=POSTER_BY_ID[948];
-      if(row) window.openPoster(row);
+  const exhibitHalloween = document.getElementById('ex-halloween');
+  if (exhibitHalloween) {
+    exhibitHalloween.addEventListener('click', () => {
+      const row = POSTER_BY_ID[948];
+      if (row) window.openPoster(row);
     });
   }
 })();
 
 /* ============ exhibit B: real artwork behind the compare-grid overlays ============ */
-[['cg-jaws','assets/posters/578.jpg'],
- ['cg-halloween','https://image.tmdb.org/t/p/w342'+HALLOWEEN_TMDB],
- ['cg-exorcist','assets/posters/9552.jpg'],
- ['dg-doctorx','assets/posters/3574.jpg'],
- ['dg-space','assets/posters/19483.jpg'],
- ['dg-howling','assets/posters/11298.jpg'],
- ['dg-spawn','assets/posters/10336.jpg'],
- ['dg-avp','assets/posters/395.jpg'],
- ['pg-webdeception','assets/posters/172794.jpg'],
- ['pg-chameleon','assets/posters/852202.jpg'],
- ['pg-vampirebats','assets/posters/96235.jpg'],
- ['pg-returning','assets/posters/213215.jpg'],
- ['pg-nothing','assets/posters/333817.jpg'],
- ['tx-crab','assets/posters/26946.jpg'],
- ['tx-notld','assets/posters/10331.jpg'],
- ['tx-phantasm','assets/posters/9638.jpg'],
- ['tx-scream','assets/posters/4232.jpg'],
- ['tx-midsommar','assets/posters/530385.jpg']].forEach(([id,src])=>{
-  const box=document.getElementById(id);
-  if(!box) return;
+[
+  ['cg-jaws', 'assets/posters/578.jpg'],
+  ['cg-halloween', 'https://image.tmdb.org/t/p/w342' + HALLOWEEN_TMDB],
+  ['cg-exorcist', 'assets/posters/9552.jpg'],
+  ['dg-doctorx', 'assets/posters/3574.jpg'],
+  ['dg-space', 'assets/posters/19483.jpg'],
+  ['dg-howling', 'assets/posters/11298.jpg'],
+  ['dg-spawn', 'assets/posters/10336.jpg'],
+  ['dg-avp', 'assets/posters/395.jpg'],
+  ['pg-webdeception', 'assets/posters/172794.jpg'],
+  ['pg-chameleon', 'assets/posters/852202.jpg'],
+  ['pg-vampirebats', 'assets/posters/96235.jpg'],
+  ['pg-returning', 'assets/posters/213215.jpg'],
+  ['pg-nothing', 'assets/posters/333817.jpg'],
+  ['tx-crab', 'assets/posters/26946.jpg'],
+  ['tx-notld', 'assets/posters/10331.jpg'],
+  ['tx-phantasm', 'assets/posters/9638.jpg'],
+  ['tx-scream', 'assets/posters/4232.jpg'],
+  ['tx-midsommar', 'assets/posters/530385.jpg'],
+].forEach(([id, src]) => {
+  const box = document.getElementById(id);
+  if (!box) return;
   /* paint the poster immediately — don't wait on Image.onload (crossOrigin +
      file:// or a server without CORS headers can block onload forever) */
-  box.style.backgroundImage=`url("${src}")`;
-  const m=String(src).match(/\/(\d+)\.jpg/);
-  const tmdbId=m?+m[1]:(id==='cg-halloween'?948:null);
-  if(tmdbId){
-    box.style.cursor='pointer';
-    box.setAttribute('role','button');
-    box.tabIndex=0;
-    const open=()=>{ const row=POSTER_BY_ID[tmdbId]; if(row) window.openPoster(row); };
-    box.addEventListener('click',open);
-    box.addEventListener('keydown',ev=>{ if(ev.key==='Enter'||ev.key===' '){ ev.preventDefault(); open(); } });
+  box.style.backgroundImage = `url("${src}")`;
+  const m = String(src).match(/\/(\d+)\.jpg/);
+  const tmdbId = m ? +m[1] : id === 'cg-halloween' ? 948 : null;
+  if (tmdbId) {
+    box.style.cursor = 'pointer';
+    box.setAttribute('role', 'button');
+    box.tabIndex = 0;
+    const open = () => {
+      const row = POSTER_BY_ID[tmdbId];
+      if (row) window.openPoster(row);
+    };
+    box.addEventListener('click', open);
+    box.addEventListener('keydown', (ev) => {
+      if (ev.key === 'Enter' || ev.key === ' ') {
+        ev.preventDefault();
+        open();
+      }
+    });
   }
 });
 
 /* real 8-band width profile (gradient-magnitude spread), measured per poster
    -- see multi_analyze.py's diagonal_pyramid(). left/width in % of sheet.
    red = negative shift (wide top / funnel), amber = positive (wide base / pyramid). */
-const PYRAMID_BANDS={
-  'pg-webdeception':{red:false,bands:[[0,0],[0,0],[0,0],[44.0,0.9],[20.6,50.3],[23.6,53.9],[25.3,59.0],[11.8,56.5]]},
-  'pg-chameleon':{red:false,bands:[[49.6,17.5],[46.2,23.5],[44.9,23.4],[35.7,39.2],[33.0,38.9],[5.9,68.8],[19.1,72.3],[83.9,6.7]]},
-  'pg-vampirebats':{red:true,bands:[[2.3,12.6],[19.3,55.6],[22.0,52.9],[37.8,27.9],[35.5,38.3],[0,0],[0,0],[0,0]]},
-  'pg-returning':{red:false,bands:[[0,0],[0,0],[0,0],[0,63.2],[22.4,58.0],[21.0,54.8],[28.6,56.0],[24.8,57.4]]},
-  'pg-nothing':{red:true,bands:[[22.3,55.4],[26.1,54.2],[32.8,56.1],[24.5,56.3],[26.1,52.9],[0,0],[0,0],[0,0]]}
+const PYRAMID_BANDS = {
+  'pg-webdeception': {
+    red: false,
+    bands: [
+      [0, 0],
+      [0, 0],
+      [0, 0],
+      [44.0, 0.9],
+      [20.6, 50.3],
+      [23.6, 53.9],
+      [25.3, 59.0],
+      [11.8, 56.5],
+    ],
+  },
+  'pg-chameleon': {
+    red: false,
+    bands: [
+      [49.6, 17.5],
+      [46.2, 23.5],
+      [44.9, 23.4],
+      [35.7, 39.2],
+      [33.0, 38.9],
+      [5.9, 68.8],
+      [19.1, 72.3],
+      [83.9, 6.7],
+    ],
+  },
+  'pg-vampirebats': {
+    red: true,
+    bands: [
+      [2.3, 12.6],
+      [19.3, 55.6],
+      [22.0, 52.9],
+      [37.8, 27.9],
+      [35.5, 38.3],
+      [0, 0],
+      [0, 0],
+      [0, 0],
+    ],
+  },
+  'pg-returning': {
+    red: false,
+    bands: [
+      [0, 0],
+      [0, 0],
+      [0, 0],
+      [0, 63.2],
+      [22.4, 58.0],
+      [21.0, 54.8],
+      [28.6, 56.0],
+      [24.8, 57.4],
+    ],
+  },
+  'pg-nothing': {
+    red: true,
+    bands: [
+      [22.3, 55.4],
+      [26.1, 54.2],
+      [32.8, 56.1],
+      [24.5, 56.3],
+      [26.1, 52.9],
+      [0, 0],
+      [0, 0],
+      [0, 0],
+    ],
+  },
 };
-Object.entries(PYRAMID_BANDS).forEach(([id,{red,bands}])=>{
-  const box=document.getElementById(id);
-  if(!box) return;
-  bands.forEach(([left,w],i)=>{
-    if(w<=0) return;
-    const b=document.createElement('div');
-    b.className='cg-band'+(red?' red':'');
-    b.style.left=left+'%';b.style.width=w+'%';b.style.top=(i*12.5)+'%';
+Object.entries(PYRAMID_BANDS).forEach(([id, { red, bands }]) => {
+  const box = document.getElementById(id);
+  if (!box) return;
+  bands.forEach(([left, w], i) => {
+    if (w <= 0) return;
+    const b = document.createElement('div');
+    b.className = 'cg-band' + (red ? ' red' : '');
+    b.style.left = left + '%';
+    b.style.width = w + '%';
+    b.style.top = i * 12.5 + '%';
     box.appendChild(b);
   });
 });
 
 /* ================= the page darkens as you scroll ================= */
 /* you don't just read the Darkness Curve — you feel it */
-const lerp=(a,b,t)=>Math.round(a+(b-a)*t);
-function shade(){
-  const max=document.body.scrollHeight-innerHeight;
-  const t=max>0?Math.min(1,Math.max(0,scrollY/max)):0;
-  document.documentElement.style.setProperty('--bg',
-    `rgb(${lerp(24,4,t)},${lerp(22,4,t)},${lerp(28,6,t)})`);
+const lerp = (a, b, t) => Math.round(a + (b - a) * t);
+function shade() {
+  const max = document.body.scrollHeight - innerHeight;
+  const t = max > 0 ? Math.min(1, Math.max(0, scrollY / max)) : 0;
+  document.documentElement.style.setProperty(
+    '--bg',
+    `rgb(${lerp(24, 4, t)},${lerp(22, 4, t)},${lerp(28, 6, t)})`,
+  );
 }
-addEventListener('scroll',()=>requestAnimationFrame(shade),{passive:true});
+addEventListener('scroll', () => requestAnimationFrame(shade), { passive: true });
 shade();
 
 /* ================= reveal on scroll ================= */
-const rev=new IntersectionObserver(es=>{es.forEach(en=>{if(en.isIntersecting){en.target.classList.add('on');rev.unobserve(en.target);}})},{threshold:.15});
-document.querySelectorAll('.reveal').forEach(el=>rev.observe(el));
+const rev = new IntersectionObserver(
+  (es) => {
+    es.forEach((en) => {
+      if (en.isIntersecting) {
+        en.target.classList.add('on');
+        rev.unobserve(en.target);
+      }
+    });
+  },
+  { threshold: 0.15 },
+);
+document.querySelectorAll('.reveal').forEach((el) => rev.observe(el));
 
 /* ================= charts (hand-rolled SVG) ================= */
-const NS="http://www.w3.org/2000/svg";
-function el(t,a){const n=document.createElementNS(NS,t);for(const k in a)n.setAttribute(k,a[k]);return n;}
+const NS = 'http://www.w3.org/2000/svg';
+function el(t, a) {
+  const n = document.createElementNS(NS, t);
+  for (const k in a) n.setAttribute(k, a[k]);
+  return n;
+}
 
 /* Re-translate static chart labels + idle readouts when EN↔ES toggles */
-const chartReadoutRefresh=[];
-function refreshChartI18n(){
+const chartReadoutRefresh = [];
+function refreshChartI18n() {
   ensureChartLabels();
-  document.querySelectorAll('[data-chart-t]').forEach(node=>{
-    node.textContent=t(node.getAttribute('data-chart-t'));
+  document.querySelectorAll('[data-chart-t]').forEach((node) => {
+    node.textContent = t(node.getAttribute('data-chart-t'));
   });
-  chartReadoutRefresh.forEach(fn=>fn());
-  document.querySelectorAll('.chart-data summary').forEach(node=>{
-    node.textContent=t('view_data_table');
+  chartReadoutRefresh.forEach((fn) => fn());
+  document.querySelectorAll('.chart-data summary').forEach((node) => {
+    node.textContent = t('view_data_table');
   });
 }
 document.addEventListener('aof:lang', refreshChartI18n);
 
 /* ============ D3 charts (online) — one personality per chart ============ */
-function d3Charts(){
-  const tip=d3.select('body').append('div').attr('class','tip');
-  const REDUCE=window.matchMedia('(prefers-reduced-motion: reduce)').matches;
-  const ms=d=>REDUCE?0:d;
-  const finePointer=()=>matchMedia('(hover:hover) and (pointer:fine)').matches;
-  const showTip=(html,ev)=>{
-    if(!finePointer()||!ev) return;
-    tip.style('opacity',1).html(html)
-      .style('left',Math.min(ev.clientX+14,innerWidth-260)+'px').style('top',(ev.clientY-14)+'px');
+function d3Charts() {
+  const tip = d3.select('body').append('div').attr('class', 'tip');
+  const REDUCE = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+  const ms = (d) => (REDUCE ? 0 : d);
+  const finePointer = () => matchMedia('(hover:hover) and (pointer:fine)').matches;
+  const showTip = (html, ev) => {
+    if (!finePointer() || !ev) return;
+    tip
+      .style('opacity', 1)
+      .html(html)
+      .style('left', Math.min(ev.clientX + 14, innerWidth - 260) + 'px')
+      .style('top', ev.clientY - 14 + 'px');
   };
-  const hideTip=()=>tip.style('opacity',0);
+  const hideTip = () => tip.style('opacity', 0);
   /* Sticky under-chart readout: works on tap/drag/keyboard; floating tip only on fine pointers */
-  const KB=' · ←→ when focused';
-  const mkReadout=(svgId,hintKey)=>{
-    const svgEl=document.getElementById(svgId);
-    if(!svgEl) return {set(){}, reset(){}};
-    let ro=svgEl.nextElementSibling;
-    if(!ro||!ro.classList.contains('chart-readout')){
-      ro=document.createElement('p');
-      ro.className='chart-readout';
-      ro.setAttribute('aria-live','polite');
-      svgEl.insertAdjacentElement('afterend',ro);
+  const KB = ' · ←→ when focused';
+  const mkReadout = (svgId, hintKey) => {
+    const svgEl = document.getElementById(svgId);
+    if (!svgEl) return { set() {}, reset() {} };
+    let ro = svgEl.nextElementSibling;
+    if (!ro || !ro.classList.contains('chart-readout')) {
+      ro = document.createElement('p');
+      ro.className = 'chart-readout';
+      ro.setAttribute('aria-live', 'polite');
+      svgEl.insertAdjacentElement('afterend', ro);
     }
-    const key=hintKey||'hint_tap_or_drag';
-    const idleHtml=()=>{
-      const base=t(key);
-      return base.includes('←')?base:base+KB;
+    const key = hintKey || 'hint_tap_or_drag';
+    const idleHtml = () => {
+      const base = t(key);
+      return base.includes('←') ? base : base + KB;
     };
-    ro.innerHTML=idleHtml();
-    chartReadoutRefresh.push(()=>{
-      if(!ro.classList.contains('on')) ro.innerHTML=idleHtml();
+    ro.innerHTML = idleHtml();
+    chartReadoutRefresh.push(() => {
+      if (!ro.classList.contains('on')) ro.innerHTML = idleHtml();
     });
     return {
-      set(html){ ro.innerHTML=html; ro.classList.add('on'); },
-      reset(){ ro.innerHTML=idleHtml(); ro.classList.remove('on'); }
+      set(html) {
+        ro.innerHTML = html;
+        ro.classList.add('on');
+      },
+      reset() {
+        ro.innerHTML = idleHtml();
+        ro.classList.remove('on');
+      },
     };
   };
   /* Keyboard scrubbing: focus the SVG, then ← → (Home/End). Optional ↑↓ via onVert. */
-  const wireScrub=(svgId,{n, show, start=0, onVert})=>{
-    const node=document.getElementById(svgId);
-    if(!node||!n) return {set(){}, get:()=>0};
-    node.setAttribute('tabindex','0');
-    node.setAttribute('aria-keyshortcuts', onVert?'ArrowLeft ArrowRight ArrowUp ArrowDown':'ArrowLeft ArrowRight');
-    let i=Math.max(0,Math.min(n-1,start|0));
-    const clamp=v=>Math.max(0,Math.min(n-1,v));
-    const fire=()=>show(i);
-    node.addEventListener('keydown',ev=>{
-      let handled=true;
-      if(ev.key==='ArrowRight') i=clamp(i+1);
-      else if(ev.key==='ArrowLeft') i=clamp(i-1);
-      else if(ev.key==='Home') i=0;
-      else if(ev.key==='End') i=n-1;
-      else if(onVert && (ev.key==='ArrowUp'||ev.key==='ArrowDown')){
-        onVert(ev.key==='ArrowUp'?-1:1); ev.preventDefault(); return;
-      } else handled=false;
-      if(handled){ ev.preventDefault(); fire(); }
+  const wireScrub = (svgId, { n, show, start = 0, onVert }) => {
+    const node = document.getElementById(svgId);
+    if (!node || !n) return { set() {}, get: () => 0 };
+    node.setAttribute('tabindex', '0');
+    node.setAttribute(
+      'aria-keyshortcuts',
+      onVert ? 'ArrowLeft ArrowRight ArrowUp ArrowDown' : 'ArrowLeft ArrowRight',
+    );
+    let i = Math.max(0, Math.min(n - 1, start | 0));
+    const clamp = (v) => Math.max(0, Math.min(n - 1, v));
+    const fire = () => show(i);
+    node.addEventListener('keydown', (ev) => {
+      let handled = true;
+      if (ev.key === 'ArrowRight') i = clamp(i + 1);
+      else if (ev.key === 'ArrowLeft') i = clamp(i - 1);
+      else if (ev.key === 'Home') i = 0;
+      else if (ev.key === 'End') i = n - 1;
+      else if (onVert && (ev.key === 'ArrowUp' || ev.key === 'ArrowDown')) {
+        onVert(ev.key === 'ArrowUp' ? -1 : 1);
+        ev.preventDefault();
+        return;
+      } else handled = false;
+      if (handled) {
+        ev.preventDefault();
+        fire();
+      }
     });
-    node.addEventListener('focus',fire);
-    return {set(v){i=clamp(v);}, get:()=>i, fire};
+    node.addEventListener('focus', fire);
+    return {
+      set(v) {
+        i = clamp(v);
+      },
+      get: () => i,
+      fire,
+    };
   };
-  const report=(ro,html,ev)=>{ ro.set(html); showTip(html,ev); };
-  const onEnter=(id,fn)=>{const n=document.getElementById(id);
-    const o=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){fn();o.disconnect();}}),{threshold:.35});
-    o.observe(n);};
-  const drawIn=(path,dur,keepDash)=>{
-    if(REDUCE){
-      path.attr('stroke-dashoffset',null);
-      if(keepDash!=null) path.attr('stroke-dasharray',keepDash);
-      else path.attr('stroke-dasharray',null);
+  const report = (ro, html, ev) => {
+    ro.set(html);
+    showTip(html, ev);
+  };
+  const onEnter = (id, fn) => {
+    const n = document.getElementById(id);
+    const o = new IntersectionObserver(
+      (es) =>
+        es.forEach((e) => {
+          if (e.isIntersecting) {
+            fn();
+            o.disconnect();
+          }
+        }),
+      { threshold: 0.35 },
+    );
+    o.observe(n);
+  };
+  const drawIn = (path, dur, keepDash) => {
+    if (REDUCE) {
+      path.attr('stroke-dashoffset', null);
+      if (keepDash != null) path.attr('stroke-dasharray', keepDash);
+      else path.attr('stroke-dasharray', null);
       return;
     }
-    const L=path.node().getTotalLength();
-    path.attr('stroke-dasharray',L+' '+L).attr('stroke-dashoffset',L)
-        .transition().duration(dur||1600).ease(d3.easeCubicOut).attr('stroke-dashoffset',0)
-        .on('end',()=>{
-          if(keepDash!=null) path.attr('stroke-dasharray',keepDash).attr('stroke-dashoffset',null);
-          else path.attr('stroke-dasharray',null).attr('stroke-dashoffset',null);
-        });
+    const L = path.node().getTotalLength();
+    path
+      .attr('stroke-dasharray', L + ' ' + L)
+      .attr('stroke-dashoffset', L)
+      .transition()
+      .duration(dur || 1600)
+      .ease(d3.easeCubicOut)
+      .attr('stroke-dashoffset', 0)
+      .on('end', () => {
+        if (keepDash != null)
+          path.attr('stroke-dasharray', keepDash).attr('stroke-dashoffset', null);
+        else path.attr('stroke-dasharray', null).attr('stroke-dashoffset', null);
+      });
   };
   /* Direct end labels for stacked bands / multi-series (Few/Pudding: label > legend) */
-  const placeEndLabels=(svg,items,gap=14)=>{
-    const sorted=[...items].sort((a,b)=>a.y-b.y);
-    let prev=-1e9;
-    sorted.forEach(it=>{
-      const yy=Math.max(it.y, prev+gap);
-      svg.append('text').attr('class','line-label').attr('fill',it.fill)
-        .attr('x',it.x).attr('y',yy).attr('opacity',it.opacity??1).text(it.text);
-      prev=yy;
+  const placeEndLabels = (svg, items, gap = 14) => {
+    const sorted = [...items].sort((a, b) => a.y - b.y);
+    let prev = -1e9;
+    sorted.forEach((it) => {
+      const yy = Math.max(it.y, prev + gap);
+      svg
+        .append('text')
+        .attr('class', 'line-label')
+        .attr('fill', it.fill)
+        .attr('x', it.x)
+        .attr('y', yy)
+        .attr('opacity', it.opacity ?? 1)
+        .text(it.text);
+      prev = yy;
     });
   };
-  const grid=(svg,x,y,yt,fmt,xt)=>{
-    yt.forEach(v=>{svg.append('line').attr('class','axis').attr('x1',x.range()[0]).attr('x2',x.range()[1]).attr('y1',y(v)).attr('y2',y(v));
-      svg.append('text').attr('class','tick-label').attr('x',x.range()[0]-8).attr('y',y(v)+4).attr('text-anchor','end').text(fmt(v));});
-    xt.forEach(v=>svg.append('text').attr('class','tick-label').attr('x',x(v)).attr('y',y.range()[0]+26).attr('text-anchor','middle').text(v));
+  const grid = (svg, x, y, yt, fmt, xt) => {
+    yt.forEach((v) => {
+      svg
+        .append('line')
+        .attr('class', 'axis')
+        .attr('x1', x.range()[0])
+        .attr('x2', x.range()[1])
+        .attr('y1', y(v))
+        .attr('y2', y(v));
+      svg
+        .append('text')
+        .attr('class', 'tick-label')
+        .attr('x', x.range()[0] - 8)
+        .attr('y', y(v) + 4)
+        .attr('text-anchor', 'end')
+        .text(fmt(v));
+    });
+    xt.forEach((v) =>
+      svg
+        .append('text')
+        .attr('class', 'tick-label')
+        .attr('x', x(v))
+        .attr('y', y.range()[0] + 26)
+        .attr('text-anchor', 'middle')
+        .text(v),
+    );
   };
 
   /* --- I. COLOR RIVER: Dark as a rising flood (bottom stack), hues on top --- */
   {
-    const svg=d3.select('#river'),W=960,H=380,m={t:36,r:78,b:44,l:44};
-    const data=RIVER.map(r=>Object.fromEntries(r.map((v,j)=>[j,v])));
-    const KEY_ORDER=[5,0,1,2,3,4]; /* Dark on the baseline — black takes the sheet from below */
-    const series=d3.stack().keys(KEY_ORDER).offset(d3.stackOffsetNone).order(d3.stackOrderNone)(data);
-    const x=d3.scaleLinear().domain([0,RIVER.length-1]).range([m.l,W-m.r]);
-    const y=d3.scaleLinear().domain([0,100]).range([H-m.b,m.t]);
-    svg.append('rect').attr('class','river-well')
-      .attr('x',m.l).attr('y',m.t).attr('width',W-m.l-m.r).attr('height',H-m.t-m.b);
-    [0,25,50,75,100].forEach(v=>{
-      svg.append('line').attr('class','axis').attr('x1',m.l).attr('x2',W-m.r).attr('y1',y(v)).attr('y2',y(v));
-      svg.append('text').attr('class','tick-label').attr('x',m.l-8).attr('y',y(v)+4).attr('text-anchor','end').text(v+'%');
+    const svg = d3.select('#river'),
+      W = 960,
+      H = 380,
+      m = { t: 36, r: 78, b: 44, l: 44 };
+    const data = RIVER.map((r) => Object.fromEntries(r.map((v, j) => [j, v])));
+    const KEY_ORDER = [
+      5, 0, 1, 2, 3, 4,
+    ]; /* Dark on the baseline — black takes the sheet from below */
+    const series = d3.stack().keys(KEY_ORDER).offset(d3.stackOffsetNone).order(d3.stackOrderNone)(
+      data,
+    );
+    const x = d3
+      .scaleLinear()
+      .domain([0, RIVER.length - 1])
+      .range([m.l, W - m.r]);
+    const y = d3
+      .scaleLinear()
+      .domain([0, 100])
+      .range([H - m.b, m.t]);
+    svg
+      .append('rect')
+      .attr('class', 'river-well')
+      .attr('x', m.l)
+      .attr('y', m.t)
+      .attr('width', W - m.l - m.r)
+      .attr('height', H - m.t - m.b);
+    [0, 25, 50, 75, 100].forEach((v) => {
+      svg
+        .append('line')
+        .attr('class', 'axis')
+        .attr('x1', m.l)
+        .attr('x2', W - m.r)
+        .attr('y1', y(v))
+        .attr('y2', y(v));
+      svg
+        .append('text')
+        .attr('class', 'tick-label')
+        .attr('x', m.l - 8)
+        .attr('y', y(v) + 4)
+        .attr('text-anchor', 'end')
+        .text(v + '%');
     });
-    const area=d3.area().x((d,i)=>x(i)).y0(d=>y(d[0])).y1(d=>y(d[1])).curve(d3.curveBasis);
-    const flat=d3.area().x((d,i)=>x(i)).y0(y(0)).y1(y(0)).curve(d3.curveBasis);
-    const ro=mkReadout('river','hint_river');
-    let bandKey=5; /* default: Dark — the story band */
+    const area = d3
+      .area()
+      .x((d, i) => x(i))
+      .y0((d) => y(d[0]))
+      .y1((d) => y(d[1]))
+      .curve(d3.curveBasis);
+    const flat = d3
+      .area()
+      .x((d, i) => x(i))
+      .y0(y(0))
+      .y1(y(0))
+      .curve(d3.curveBasis);
+    const ro = mkReadout('river', 'hint_river');
+    let bandKey = 5; /* default: Dark — the story band */
     let scrub;
-    const showRiver=di=>{
-      paths.attr('opacity',.28);
-      paths.filter(d=>d.key===bandKey).attr('opacity',1);
-      report(ro,`<b>${HUEBANDS[bandKey].name}</b> · ${RIVER[di][bandKey]}% ${t('readout_of_pixels')} · ${DECADES[di]}`,null);
+    const showRiver = (di) => {
+      paths.attr('opacity', 0.28);
+      paths.filter((d) => d.key === bandKey).attr('opacity', 1);
+      report(
+        ro,
+        `<b>${HUEBANDS[bandKey].name}</b> · ${RIVER[di][bandKey]}% ${t('readout_of_pixels')} · ${DECADES[di]}`,
+        null,
+      );
     };
-    const paths=svg.selectAll('.stream').data(series).join('path')
-      .attr('class','stream').attr('d',flat).attr('fill',d=>HUEBANDS[d.key].c)
-      .attr('stroke','rgba(10,10,12,.7)').attr('stroke-width',d=>d.key===5?0:.7).attr('opacity',.98)
-      .style('touch-action','none')
-      .on('pointermove pointerdown',function(ev,d){
+    const paths = svg
+      .selectAll('.stream')
+      .data(series)
+      .join('path')
+      .attr('class', 'stream')
+      .attr('d', flat)
+      .attr('fill', (d) => HUEBANDS[d.key].c)
+      .attr('stroke', 'rgba(10,10,12,.7)')
+      .attr('stroke-width', (d) => (d.key === 5 ? 0 : 0.7))
+      .attr('opacity', 0.98)
+      .style('touch-action', 'none')
+      .on('pointermove pointerdown', function (ev, d) {
         ev.preventDefault();
-        bandKey=d.key;
-        const di=Math.max(0,Math.min(RIVER.length-1,Math.round(x.invert(d3.pointer(ev,this)[0]))));
+        bandKey = d.key;
+        const di = Math.max(
+          0,
+          Math.min(RIVER.length - 1, Math.round(x.invert(d3.pointer(ev, this)[0]))),
+        );
         scrub.set(di);
-        paths.attr('opacity',.28);d3.select(this).attr('opacity',1);
-        report(ro,`<b>${HUEBANDS[d.key].name}</b> · ${RIVER[di][d.key]}% ${t('readout_of_pixels')} · ${DECADES[di]}`,ev);})
-      .on('pointerleave',()=>{paths.attr('opacity',.98);hideTip();});
-    scrub=wireScrub('river',{n:RIVER.length, start:RIVER.length-1, show:showRiver,
-      onVert:dir=>{ bandKey=(bandKey+dir+6)%6; showRiver(scrub.get()); }});
-    DECADES.forEach((dec,i)=>svg.append('text').attr('class','tick-label')
-      .attr('x',x(i)).attr('y',H-10).attr('text-anchor','middle').text(dec));
-    const last=RIVER.length-1;
-    placeEndLabels(svg, series.map(s=>{
-      const d=s[last];
-      return {x:x(last)+8, y:y((d[0]+d[1])/2)+4, text:HUEBANDS[s.key].short, fill:HUEBANDS[s.key].label||HUEBANDS[s.key].c};
-    }), 13);
-    const layerAt=(band,di)=>series.find(s=>s.key===band)?.[di];
-    const riverAnnots=[
-      {i:3, band:1, key:'annot_river_pulp', fill:'#e5a00d'},
-      {i:6, band:3, key:'annot_river_vhs', fill:'#8ec8d4'},
-      {i:9, band:5, key:'annot_river_flood', fill:'#d8d2c6'},
-    ];
-    riverAnnots.forEach((a,ai)=>{
-      const d=layerAt(a.band,a.i);
-      if(!d) return;
-      const xA=x(a.i);
-      const yBand=y((d[0]+d[1])/2);
-      const yTxt=m.t-6;
-      const xTxt=Math.max(m.l+8, Math.min(xA+(ai===2?18:-8), W-m.r-8));
-      svg.append('line').attr('class','annot-line')
-        .attr('x1',xA).attr('x2',xA).attr('y1',yBand).attr('y2',m.t+4);
-      svg.append('text').attr('class','annot').attr('fill',a.fill)
-        .attr('x',xTxt).attr('y',yTxt)
-        .attr('text-anchor',ai===0?'start':ai===2?'end':'middle')
-        .attr('data-chart-t',a.key).text(t(a.key));
+        paths.attr('opacity', 0.28);
+        d3.select(this).attr('opacity', 1);
+        report(
+          ro,
+          `<b>${HUEBANDS[d.key].name}</b> · ${RIVER[di][d.key]}% ${t('readout_of_pixels')} · ${DECADES[di]}`,
+          ev,
+        );
+      })
+      .on('pointerleave', () => {
+        paths.attr('opacity', 0.98);
+        hideTip();
+      });
+    scrub = wireScrub('river', {
+      n: RIVER.length,
+      start: RIVER.length - 1,
+      show: showRiver,
+      onVert: (dir) => {
+        bandKey = (bandKey + dir + 6) % 6;
+        showRiver(scrub.get());
+      },
     });
-    onEnter('river',()=>paths.transition().duration(ms(1400)).delay((d,i)=>ms(i*80)).ease(d3.easeCubicOut).attr('d',area));
+    DECADES.forEach((dec, i) =>
+      svg
+        .append('text')
+        .attr('class', 'tick-label')
+        .attr('x', x(i))
+        .attr('y', H - 10)
+        .attr('text-anchor', 'middle')
+        .text(dec),
+    );
+    const last = RIVER.length - 1;
+    placeEndLabels(
+      svg,
+      series.map((s) => {
+        const d = s[last];
+        return {
+          x: x(last) + 8,
+          y: y((d[0] + d[1]) / 2) + 4,
+          text: HUEBANDS[s.key].short,
+          fill: HUEBANDS[s.key].label || HUEBANDS[s.key].c,
+        };
+      }),
+      13,
+    );
+    const layerAt = (band, di) => series.find((s) => s.key === band)?.[di];
+    const riverAnnots = [
+      { i: 3, band: 1, key: 'annot_river_pulp', fill: '#e5a00d' },
+      { i: 6, band: 3, key: 'annot_river_vhs', fill: '#8ec8d4' },
+      { i: 9, band: 5, key: 'annot_river_flood', fill: '#d8d2c6' },
+    ];
+    riverAnnots.forEach((a, ai) => {
+      const d = layerAt(a.band, a.i);
+      if (!d) return;
+      const xA = x(a.i);
+      const yBand = y((d[0] + d[1]) / 2);
+      const yTxt = m.t - 6;
+      const xTxt = Math.max(m.l + 8, Math.min(xA + (ai === 2 ? 18 : -8), W - m.r - 8));
+      svg
+        .append('line')
+        .attr('class', 'annot-line')
+        .attr('x1', xA)
+        .attr('x2', xA)
+        .attr('y1', yBand)
+        .attr('y2', m.t + 4);
+      svg
+        .append('text')
+        .attr('class', 'annot')
+        .attr('fill', a.fill)
+        .attr('x', xTxt)
+        .attr('y', yTxt)
+        .attr('text-anchor', ai === 0 ? 'start' : ai === 2 ? 'end' : 'middle')
+        .attr('data-chart-t', a.key)
+        .text(t(a.key));
+    });
+    onEnter('river', () =>
+      paths
+        .transition()
+        .duration(ms(1400))
+        .delay((d, i) => ms(i * 80))
+        .ease(d3.easeCubicOut)
+        .attr('d', area),
+    );
   }
 
   /* --- VIII. THE LETTERING OF FEAR: ornate->minimal, end-labeled registers --- */
   {
-    const svg=d3.select('#typo'),W=960,H=380,m={t:28,r:92,b:44,l:20};
-    const data=TYPO.map(r=>Object.fromEntries(r.map((v,j)=>[j,v])));
+    const svg = d3.select('#typo'),
+      W = 960,
+      H = 380,
+      m = { t: 28, r: 92, b: 44, l: 20 };
+    const data = TYPO.map((r) => Object.fromEntries(r.map((v, j) => [j, v])));
     // fixed ordinal order (ornate on top -> minimal at bottom); shares already sum to 1
-    const series=d3.stack().keys(d3.range(5)).order(d3.stackOrderNone).offset(d3.stackOffsetNone)(data);
-    const x=d3.scaleLinear().domain([0,TYPO.length-1]).range([m.l,W-m.r]);
-    const y=d3.scaleLinear().domain([0,1]).range([H-m.b,m.t]);
-    const area=d3.area().x((d,i)=>x(i)).y0(d=>y(d[0])).y1(d=>y(d[1])).curve(d3.curveBasis);
-    const flat=d3.area().x((d,i)=>x(i)).y0(y(0)).y1(y(0)).curve(d3.curveBasis);
-    const ro=mkReadout('typo','hint_typo');
-    let regKey=4; /* minimal — the story end of the axis */
+    const series = d3.stack().keys(d3.range(5)).order(d3.stackOrderNone).offset(d3.stackOffsetNone)(
+      data,
+    );
+    const x = d3
+      .scaleLinear()
+      .domain([0, TYPO.length - 1])
+      .range([m.l, W - m.r]);
+    const y = d3
+      .scaleLinear()
+      .domain([0, 1])
+      .range([H - m.b, m.t]);
+    const area = d3
+      .area()
+      .x((d, i) => x(i))
+      .y0((d) => y(d[0]))
+      .y1((d) => y(d[1]))
+      .curve(d3.curveBasis);
+    const flat = d3
+      .area()
+      .x((d, i) => x(i))
+      .y0(y(0))
+      .y1(y(0))
+      .curve(d3.curveBasis);
+    const ro = mkReadout('typo', 'hint_typo');
+    let regKey = 4; /* minimal — the story end of the axis */
     let scrub;
-    const showTypo=di=>{
-      paths.attr('opacity',.22);
-      paths.filter(d=>d.key===regKey).attr('opacity',1);
-      report(ro,`<b>${TYPOREGS[regKey].name}</b> · ${(TYPO[di][regKey]*100).toFixed(1)}% ${t('readout_of_titles')} · ${DECADES[di]}`,null);
+    const showTypo = (di) => {
+      paths.attr('opacity', 0.22);
+      paths.filter((d) => d.key === regKey).attr('opacity', 1);
+      report(
+        ro,
+        `<b>${TYPOREGS[regKey].name}</b> · ${(TYPO[di][regKey] * 100).toFixed(1)}% ${t('readout_of_titles')} · ${DECADES[di]}`,
+        null,
+      );
     };
-    const paths=svg.selectAll('.stream').data(series).join('path')
-      .attr('class','stream').attr('d',flat).attr('fill',(d,i)=>TYPOREGS[d.key].c).attr('opacity',.92)
-      .style('touch-action','none')
-      .on('pointermove pointerdown',function(ev,d){
+    const paths = svg
+      .selectAll('.stream')
+      .data(series)
+      .join('path')
+      .attr('class', 'stream')
+      .attr('d', flat)
+      .attr('fill', (d) => TYPOREGS[d.key].c)
+      .attr('opacity', 0.92)
+      .style('touch-action', 'none')
+      .on('pointermove pointerdown', function (ev, d) {
         ev.preventDefault();
-        regKey=d.key;
-        const di=Math.max(0,Math.min(TYPO.length-1,Math.round(x.invert(d3.pointer(ev,this)[0]))));
+        regKey = d.key;
+        const di = Math.max(
+          0,
+          Math.min(TYPO.length - 1, Math.round(x.invert(d3.pointer(ev, this)[0]))),
+        );
         scrub.set(di);
-        paths.attr('opacity',.22);d3.select(this).attr('opacity',1);
-        report(ro,`<b>${TYPOREGS[d.key].name}</b> · ${(TYPO[di][d.key]*100).toFixed(1)}% ${t('readout_of_titles')} · ${DECADES[di]}`,ev);})
-      .on('pointerleave',()=>{paths.attr('opacity',.92);hideTip();});
-    scrub=wireScrub('typo',{n:TYPO.length, start:TYPO.length-1, show:showTypo,
-      onVert:dir=>{ regKey=(regKey+dir+5)%5; showTypo(scrub.get()); }});
-    DECADES.forEach((dec,i)=>svg.append('text').attr('class','tick-label')
-      .attr('x',x(i)).attr('y',H-10).attr('text-anchor','middle').text(dec));
+        paths.attr('opacity', 0.22);
+        d3.select(this).attr('opacity', 1);
+        report(
+          ro,
+          `<b>${TYPOREGS[d.key].name}</b> · ${(TYPO[di][d.key] * 100).toFixed(1)}% ${t('readout_of_titles')} · ${DECADES[di]}`,
+          ev,
+        );
+      })
+      .on('pointerleave', () => {
+        paths.attr('opacity', 0.92);
+        hideTip();
+      });
+    scrub = wireScrub('typo', {
+      n: TYPO.length,
+      start: TYPO.length - 1,
+      show: showTypo,
+      onVert: (dir) => {
+        regKey = (regKey + dir + 5) % 5;
+        showTypo(scrub.get());
+      },
+    });
+    DECADES.forEach((dec, i) =>
+      svg
+        .append('text')
+        .attr('class', 'tick-label')
+        .attr('x', x(i))
+        .attr('y', H - 10)
+        .attr('text-anchor', 'middle')
+        .text(dec),
+    );
     // axis orientation (not a series legend)
-    svg.append('text').attr('class','annot').attr('x',m.l).attr('y',18).attr('fill',TYPOREGS[0].c).attr('data-chart-t','annot_ornate').text(t('annot_ornate'));
-    svg.append('text').attr('class','annot').attr('text-anchor','end').attr('x',W-m.r).attr('y',18).attr('fill',TYPOREGS[4].c).attr('data-chart-t','annot_minimal').text(t('annot_minimal'));
-    const lastT=TYPO.length-1;
-    placeEndLabels(svg, series.map(s=>{
-      const d=s[lastT];
-      return {x:x(lastT)+8, y:y((d[0]+d[1])/2)+4, text:TYPOREGS[s.key].short, fill:TYPOREGS[s.key].c};
-    }), 14);
-    onEnter('typo',()=>paths.transition().duration(ms(1400)).delay((d,i)=>ms(i*90)).ease(d3.easeCubicOut).attr('d',area));
+    svg
+      .append('text')
+      .attr('class', 'annot')
+      .attr('x', m.l)
+      .attr('y', 18)
+      .attr('fill', TYPOREGS[0].c)
+      .attr('data-chart-t', 'annot_ornate')
+      .text(t('annot_ornate'));
+    svg
+      .append('text')
+      .attr('class', 'annot')
+      .attr('text-anchor', 'end')
+      .attr('x', W - m.r)
+      .attr('y', 18)
+      .attr('fill', TYPOREGS[4].c)
+      .attr('data-chart-t', 'annot_minimal')
+      .text(t('annot_minimal'));
+    const lastT = TYPO.length - 1;
+    placeEndLabels(
+      svg,
+      series.map((s) => {
+        const d = s[lastT];
+        return {
+          x: x(lastT) + 8,
+          y: y((d[0] + d[1]) / 2) + 4,
+          text: TYPOREGS[s.key].short,
+          fill: TYPOREGS[s.key].c,
+        };
+      }),
+      14,
+    );
+    onEnter('typo', () =>
+      paths
+        .transition()
+        .duration(ms(1400))
+        .delay((d, i) => ms(i * 90))
+        .ease(d3.easeCubicOut)
+        .attr('d', area),
+    );
 
     /* specimen strip: the most / least ornate title treatment per era (hand-verified) */
-    const TS_ORNATE=[
-      [15849,"The Mummy","1932"],[85498,"The Maze","1953"],[23439,"House of Usher","1960"],
-      [16281,"Creepshow","1982"],[20481,"Nightbreed","1990"],[535412,"Arte Factum","2017"]];
-    const TS_MINIMAL=[
-      [84713,"The Last Performance","1929"],[495447,"Whistle and I'll Come to You","1956"],[39995,"Long Weekend","1979"],
-      [9540,"Dead Ringers","1988"],[16028,"They","2002"],[875138,"Alone","2021"]];
-    const TS_ERAS=["1930s","1950s","1960s","1980s","1990s","2010s"];
-    const SIX_ERAS=["1920s–30s","1940s–50s","1960s–70s","1980s","1990s–2000s","2010s–now"];
-    const tsCard=([id,t,y,extra])=>{
-      const c=document.createElement('div');c.className='ts-card';
-      if(!id){
-        const ph=document.createElement('div');ph.className='ts-ph';
-        ph.textContent='—';
-        const cap=document.createElement('div');cap.className='ts-cap';
-        cap.innerHTML='<b>'+t+'</b><br>'+(extra||y||'');
-        c.append(ph,cap);
+    const TS_ORNATE = [
+      [15849, 'The Mummy', '1932'],
+      [85498, 'The Maze', '1953'],
+      [23439, 'House of Usher', '1960'],
+      [16281, 'Creepshow', '1982'],
+      [20481, 'Nightbreed', '1990'],
+      [535412, 'Arte Factum', '2017'],
+    ];
+    const TS_MINIMAL = [
+      [84713, 'The Last Performance', '1929'],
+      [495447, "Whistle and I'll Come to You", '1956'],
+      [39995, 'Long Weekend', '1979'],
+      [9540, 'Dead Ringers', '1988'],
+      [16028, 'They', '2002'],
+      [875138, 'Alone', '2021'],
+    ];
+    const TS_ERAS = ['1930s', '1950s', '1960s', '1980s', '1990s', '2010s'];
+    const SIX_ERAS = ['1920s–30s', '1940s–50s', '1960s–70s', '1980s', '1990s–2000s', '2010s–now'];
+    const tsCard = ([id, t, y, extra]) => {
+      const c = document.createElement('div');
+      c.className = 'ts-card';
+      if (!id) {
+        const ph = document.createElement('div');
+        ph.className = 'ts-ph';
+        ph.textContent = '—';
+        const cap = document.createElement('div');
+        cap.className = 'ts-cap';
+        cap.innerHTML = '<b>' + t + '</b><br>' + (extra || y || '');
+        c.append(ph, cap);
         return c;
       }
-      const im=document.createElement('img');im.loading='lazy';im.alt=t+' ('+y+')';
-      im.src=posterSrcById(id,'m');
-      im.onerror=()=>{im.style.visibility='hidden';};
-      const yr=document.createElement('span');yr.className='ts-year';yr.textContent=String(y);
-      const wrap=document.createElement('div');wrap.className='ts-thumb';
-      wrap.append(im,yr);
-      const cap=document.createElement('div');cap.className='ts-cap';
-      cap.innerHTML='<b>'+t+'</b><br>'+y+(extra?' · '+extra:'');
-      c.append(wrap,cap);
-      c.style.cursor='pointer';
-      c.setAttribute('role','button');
-      c.tabIndex=0;
-      const open=()=>{ const row=POSTER_BY_ID[id]; if(row) window.openPoster(row); };
-      c.onclick=open;
-      c.onkeydown=ev=>{ if(ev.key==='Enter'||ev.key===' '){ ev.preventDefault(); open(); } };
-      return c;};
-    const go=(sel,arr)=>{const box=document.getElementById(sel);if(box)arr.forEach(d=>box.appendChild(tsCard(d)));};
-    const goEras=(sel,eras)=>{const box=document.getElementById(sel);if(box)eras.forEach(e=>{const s=document.createElement('div');s.className='ts-era';s.textContent=e;box.appendChild(s);});};
-    go('ts-ornate',TS_ORNATE); go('ts-minimal',TS_MINIMAL);
-    const eraBox=document.getElementById('ts-eras');
-    if(eraBox)TS_ERAS.forEach(e=>{const s=document.createElement('div');s.className='ts-era';s.textContent=e;eraBox.appendChild(s);});
+      const im = document.createElement('img');
+      im.loading = 'lazy';
+      im.alt = t + ' (' + y + ')';
+      im.src = posterSrcById(id, 'm');
+      im.onerror = () => {
+        im.style.visibility = 'hidden';
+      };
+      const yr = document.createElement('span');
+      yr.className = 'ts-year';
+      yr.textContent = String(y);
+      const wrap = document.createElement('div');
+      wrap.className = 'ts-thumb';
+      wrap.append(im, yr);
+      const cap = document.createElement('div');
+      cap.className = 'ts-cap';
+      cap.innerHTML = '<b>' + t + '</b><br>' + y + (extra ? ' · ' + extra : '');
+      c.append(wrap, cap);
+      c.style.cursor = 'pointer';
+      c.setAttribute('role', 'button');
+      c.tabIndex = 0;
+      const open = () => {
+        const row = POSTER_BY_ID[id];
+        if (row) window.openPoster(row);
+      };
+      c.onclick = open;
+      c.onkeydown = (ev) => {
+        if (ev.key === 'Enter' || ev.key === ' ') {
+          ev.preventDefault();
+          open();
+        }
+      };
+      return c;
+    };
+    const go = (sel, arr) => {
+      const box = document.getElementById(sel);
+      if (box) arr.forEach((d) => box.appendChild(tsCard(d)));
+    };
+    const goEras = (sel, eras) => {
+      const box = document.getElementById(sel);
+      if (box)
+        eras.forEach((e) => {
+          const s = document.createElement('div');
+          s.className = 'ts-era';
+          s.textContent = e;
+          box.appendChild(s);
+        });
+    };
+    go('ts-ornate', TS_ORNATE);
+    go('ts-minimal', TS_MINIMAL);
+    const eraBox = document.getElementById('ts-eras');
+    if (eraBox)
+      TS_ERAS.forEach((e) => {
+        const s = document.createElement('div');
+        s.className = 'ts-era';
+        s.textContent = e;
+        eraBox.appendChild(s);
+      });
 
     /* ---- six chart-specific specimen strips: 2 real posters per era, ----
        ---- picked from the underlying per-poster data behind each chart. ---- */
-    const CR_RED=[[45803,"Svengali","1931","49%"],[329237,"Gigantis: The Fire Monster","1959","65%"],
-      [33468,"The Brain That Wouldn't Die","1962","64%"],[10676,"Halloween III: Season of the Witch","1982","50%"],
-      [170,"28 Days Later","2002","86%"],[882598,"Smile","2022","85%"]];
-    const CR_WARM=[[136,"Freaks","1932","84%"],[11549,"Invasion of the Body Snatchers","1956","49%"],
-      [59189,"Phase IV","1974","95%"],[694,"The Shining","1980","93%"],
-      [9792,"The Hills Have Eyes","2006","84%"],[425972,"Cargo","2017","95%"]];
-    const CR_GREEN=[[28046,"The Ghoul","1933","88%"],[10973,"Creature from the Black Lagoon","1954","37%"],
-      [805,"Rosemary's Baby","1968","50%"],[18498,"Ghoulies","1985","48%"],
-      [2212,"Nightwatch","1997","69%"],[591275,"Fear Street: 1666","2021","45%"]];
-    const CR_BLUE=[[27503,"The Unknown","1927","60%"],[35911,"Cult of the Cobra","1955","66%"],
-      [578,"Jaws","1975","61%"],[1091,"The Thing","1982","77%"],
-      [4970,"Gothika","2003","61%"],[332567,"The Shallows","2016","85%"]];
-    const CR_PURPLE=[[3575,"The Return of Doctor X","1939","38%"],[831,"This Island Earth","1955","37%"],
-      [26480,"The Legend of the 7 Golden Vampires","1974","58%"],[28774,"Communion","1989","40%"],
-      [10166,"The Witches","1990","22%"],[419479,"The Babysitter","2017","66%"]];
-    const CR_BLACK=[[150196,"The Telltale Heart","1928","100%"],[11868,"Dracula","1958","75%"],
-      [348,"Alien","1979","93%"],[4488,"Friday the 13th","1980","80%"],
-      [565,"The Ring","2002","97%"],[310131,"The Witch","2015","93%"]];
-    go('cr-red',CR_RED); go('cr-warm',CR_WARM); go('cr-green',CR_GREEN);
-    go('cr-blue',CR_BLUE); go('cr-purple',CR_PURPLE); go('cr-black',CR_BLACK);
-    goEras('cr-eras',SIX_ERAS);
+    const CR_RED = [
+      [45803, 'Svengali', '1931', '49%'],
+      [329237, 'Gigantis: The Fire Monster', '1959', '65%'],
+      [33468, "The Brain That Wouldn't Die", '1962', '64%'],
+      [10676, 'Halloween III: Season of the Witch', '1982', '50%'],
+      [170, '28 Days Later', '2002', '86%'],
+      [882598, 'Smile', '2022', '85%'],
+    ];
+    const CR_WARM = [
+      [136, 'Freaks', '1932', '84%'],
+      [11549, 'Invasion of the Body Snatchers', '1956', '49%'],
+      [59189, 'Phase IV', '1974', '95%'],
+      [694, 'The Shining', '1980', '93%'],
+      [9792, 'The Hills Have Eyes', '2006', '84%'],
+      [425972, 'Cargo', '2017', '95%'],
+    ];
+    const CR_GREEN = [
+      [28046, 'The Ghoul', '1933', '88%'],
+      [10973, 'Creature from the Black Lagoon', '1954', '37%'],
+      [805, "Rosemary's Baby", '1968', '50%'],
+      [18498, 'Ghoulies', '1985', '48%'],
+      [2212, 'Nightwatch', '1997', '69%'],
+      [591275, 'Fear Street: 1666', '2021', '45%'],
+    ];
+    const CR_BLUE = [
+      [27503, 'The Unknown', '1927', '60%'],
+      [35911, 'Cult of the Cobra', '1955', '66%'],
+      [578, 'Jaws', '1975', '61%'],
+      [1091, 'The Thing', '1982', '77%'],
+      [4970, 'Gothika', '2003', '61%'],
+      [332567, 'The Shallows', '2016', '85%'],
+    ];
+    const CR_PURPLE = [
+      [3575, 'The Return of Doctor X', '1939', '38%'],
+      [831, 'This Island Earth', '1955', '37%'],
+      [26480, 'The Legend of the 7 Golden Vampires', '1974', '58%'],
+      [28774, 'Communion', '1989', '40%'],
+      [10166, 'The Witches', '1990', '22%'],
+      [419479, 'The Babysitter', '2017', '66%'],
+    ];
+    const CR_BLACK = [
+      [150196, 'The Telltale Heart', '1928', '100%'],
+      [11868, 'Dracula', '1958', '75%'],
+      [348, 'Alien', '1979', '93%'],
+      [4488, 'Friday the 13th', '1980', '80%'],
+      [565, 'The Ring', '2002', '97%'],
+      [310131, 'The Witch', '2015', '93%'],
+    ];
+    go('cr-red', CR_RED);
+    go('cr-warm', CR_WARM);
+    go('cr-green', CR_GREEN);
+    go('cr-blue', CR_BLUE);
+    go('cr-purple', CR_PURPLE);
+    go('cr-black', CR_BLACK);
+    goEras('cr-eras', SIX_ERAS);
     /* Mobile Color River: expand mid bands (warm/green/blue/purple) on demand */
-    (function(){
-      const strip=document.getElementById('cr-strip');
-      const btn=document.getElementById('cr-more');
-      if(!strip||!btn) return;
-      btn.addEventListener('click',()=>{
-        const on=strip.classList.toggle('ts-expanded');
-        btn.setAttribute('aria-expanded',on?'true':'false');
-        btn.textContent=on?'Show fewer hue families':'Show all 6 hue families';
-        if(on){
-          const first=document.getElementById('cr-warm');
-          if(first){ first.scrollLeft=0; first.scrollIntoView({behavior:window.matchMedia('(prefers-reduced-motion: reduce)').matches?'auto':'smooth',block:'nearest'}); }
+    (function () {
+      const strip = document.getElementById('cr-strip');
+      const btn = document.getElementById('cr-more');
+      if (!strip || !btn) return;
+      btn.addEventListener('click', () => {
+        const on = strip.classList.toggle('ts-expanded');
+        btn.setAttribute('aria-expanded', on ? 'true' : 'false');
+        btn.textContent = on ? 'Show fewer hue families' : 'Show all 6 hue families';
+        if (on) {
+          const first = document.getElementById('cr-warm');
+          if (first) {
+            first.scrollLeft = 0;
+            first.scrollIntoView({
+              behavior: window.matchMedia('(prefers-reduced-motion: reduce)').matches
+                ? 'auto'
+                : 'smooth',
+              block: 'nearest',
+            });
+          }
         }
       });
     })();
 
-    const DK_BRIGHT=[[136,"Freaks","1932","L* 72.1"],[11815,"The Fly","1958","L* 80.1"],
-      [571,"The Birds","1963","L* 88.8"],[45878,"Return to Horror High","1987","L* 82.2"],
-      [214,"Saw III","2006","L* 93.2"],[416753,"Neal","2011","L* 93.9"]];
-    const DK_DARK=[[31592,"The Old Dark House","1932","L* 15.4"],[11868,"Dracula","1958","L* 18.0"],
-      [11586,"Exorcist II: The Heretic","1977","L* 10.1"],[9980,"Maximum Overdrive","1986","L* 10.1"],
-      [4283,"Primeval","2007","L* 6.7"],[751423,"Don't Let It In","2020","L* 4.6"]];
-    go('dk-bright',DK_BRIGHT); go('dk-dark',DK_DARK); goEras('dk-eras',SIX_ERAS);
+    const DK_BRIGHT = [
+      [136, 'Freaks', '1932', 'L* 72.1'],
+      [11815, 'The Fly', '1958', 'L* 80.1'],
+      [571, 'The Birds', '1963', 'L* 88.8'],
+      [45878, 'Return to Horror High', '1987', 'L* 82.2'],
+      [214, 'Saw III', '2006', 'L* 93.2'],
+      [416753, 'Neal', '2011', 'L* 93.9'],
+    ];
+    const DK_DARK = [
+      [31592, 'The Old Dark House', '1932', 'L* 15.4'],
+      [11868, 'Dracula', '1958', 'L* 18.0'],
+      [11586, 'Exorcist II: The Heretic', '1977', 'L* 10.1'],
+      [9980, 'Maximum Overdrive', '1986', 'L* 10.1'],
+      [4283, 'Primeval', '2007', 'L* 6.7'],
+      [751423, "Don't Let It In", '2020', 'L* 4.6'],
+    ];
+    go('dk-bright', DK_BRIGHT);
+    go('dk-dark', DK_DARK);
+    goEras('dk-eras', SIX_ERAS);
 
-    const RR_RED=[[45803,"Svengali","1931","46% red"],[117429,"Jack the Ripper","1959","59% red"],
-      [13549,"Burnt Offerings","1976","70% red"],[10493,"Dead Calm","1989","76% red"],
-      [1992,"Planet Terror","2007","73% red"],[564446,"Hell Bound","2018","95% red"]];
-    const RR_NONE=[[3035,"Frankenstein","1931","0% red"],[3076,"Frankenstein Meets the Wolf Man","1943","0% red"],
-      [93929,"The Haunted House of Horror","1969","0% red"],[1091,"The Thing","1982","0% red"],
-      [24198,"AVH: Alien vs. Hunter","2007","0% red"],[419430,"Get Out","2017","0% red"]];
-    go('rr-red',RR_RED); go('rr-none',RR_NONE); goEras('rr-eras',SIX_ERAS);
+    const RR_RED = [
+      [45803, 'Svengali', '1931', '46% red'],
+      [117429, 'Jack the Ripper', '1959', '59% red'],
+      [13549, 'Burnt Offerings', '1976', '70% red'],
+      [10493, 'Dead Calm', '1989', '76% red'],
+      [1992, 'Planet Terror', '2007', '73% red'],
+      [564446, 'Hell Bound', '2018', '95% red'],
+    ];
+    const RR_NONE = [
+      [3035, 'Frankenstein', '1931', '0% red'],
+      [3076, 'Frankenstein Meets the Wolf Man', '1943', '0% red'],
+      [93929, 'The Haunted House of Horror', '1969', '0% red'],
+      [1091, 'The Thing', '1982', '0% red'],
+      [24198, 'AVH: Alien vs. Hunter', '2007', '0% red'],
+      [419430, 'Get Out', '2017', '0% red'],
+    ];
+    go('rr-red', RR_RED);
+    go('rr-none', RR_NONE);
+    goEras('rr-eras', SIX_ERAS);
 
-    const VF_FACE=[[28261,"Mad Love","1935","face fills ~100%"],[363059,"The Fall of the House of Usher","1942","face fills 46%"],
-      [29748,"Taste the Blood of Dracula","1970","face fills 56%"],[29077,"The Bride","1985","face fills 93%"],
-      [60086,"Babysitter Wanted","2007","face fills 98%"],[476299,"Ghostland","2018","face fills ~100%"]];
-    const VF_NOFACE=[[138,"Dracula","1931","0 faces"],[27130,"I Walked with a Zombie","1943","0 faces"],
-      [348,"Alien","1979","0 faces"],[1091,"The Thing","1982","0 faces"],
-      [176,"Saw","2004","0 faces"],[345940,"The Meg","2018","0 faces"]];
-    go('vf-face',VF_FACE); go('vf-noface',VF_NOFACE); goEras('vf-eras',SIX_ERAS);
+    const VF_FACE = [
+      [28261, 'Mad Love', '1935', 'face fills ~100%'],
+      [363059, 'The Fall of the House of Usher', '1942', 'face fills 46%'],
+      [29748, 'Taste the Blood of Dracula', '1970', 'face fills 56%'],
+      [29077, 'The Bride', '1985', 'face fills 93%'],
+      [60086, 'Babysitter Wanted', '2007', 'face fills 98%'],
+      [476299, 'Ghostland', '2018', 'face fills ~100%'],
+    ];
+    const VF_NOFACE = [
+      [138, 'Dracula', '1931', '0 faces'],
+      [27130, 'I Walked with a Zombie', '1943', '0 faces'],
+      [348, 'Alien', '1979', '0 faces'],
+      [1091, 'The Thing', '1982', '0 faces'],
+      [176, 'Saw', '2004', '0 faces'],
+      [345940, 'The Meg', '2018', '0 faces'],
+    ];
+    go('vf-face', VF_FACE);
+    go('vf-noface', VF_NOFACE);
+    goEras('vf-eras', SIX_ERAS);
 
-    const MC_1=[[138017,"The Ghost Walks","1934","ghost"],[18983,"Godzilla, King of the Monsters!","1956","giant monster"],
-      [156068,"Mark of the Witch","1970","witch"],[9730,"Friday the 13th: The Final Chapter","1984","masked killer"],
-      [11470,"Jason X","2001","masked killer"],[74915,"Episode 50","2011","ghost"]];
-    const MC_2=[[335512,"The Ghost Train","1931","ghost"],[52199,"Invasion of the Saucer-Men","1957","alien"],
-      [72153,"Virgin Witch","1972","witch"],[88353,"Surgikill","1989","masked killer"],
-      [54653,"Gangs of the Dead","2006","zombie"],[50606,"Ghosts Don't Exist","2010","ghost"]];
-    go('mc-1',MC_1); go('mc-2',MC_2); goEras('mc-eras',SIX_ERAS);
+    const MC_1 = [
+      [138017, 'The Ghost Walks', '1934', 'ghost'],
+      [18983, 'Godzilla, King of the Monsters!', '1956', 'giant monster'],
+      [156068, 'Mark of the Witch', '1970', 'witch'],
+      [9730, 'Friday the 13th: The Final Chapter', '1984', 'masked killer'],
+      [11470, 'Jason X', '2001', 'masked killer'],
+      [74915, 'Episode 50', '2011', 'ghost'],
+    ];
+    const MC_2 = [
+      [335512, 'The Ghost Train', '1931', 'ghost'],
+      [52199, 'Invasion of the Saucer-Men', '1957', 'alien'],
+      [72153, 'Virgin Witch', '1972', 'witch'],
+      [88353, 'Surgikill', '1989', 'masked killer'],
+      [54653, 'Gangs of the Dead', '2006', 'zombie'],
+      [50606, "Ghosts Don't Exist", '2010', 'ghost'],
+    ];
+    go('mc-1', MC_1);
+    go('mc-2', MC_2);
+    goEras('mc-eras', SIX_ERAS);
 
-    const TB_PIXEL=[[28439,"Murder by Television","1935","42% red · 0% blood"],[43115,"The Spider","1958","37% red · 0% blood"],
-      [11449,"The Amityville Horror","1979","49% red · 0% blood"],[212005,"Fleshburn","1984","58% red · 0% blood"],
-      [10065,"The Amityville Horror","2005","67% red · 0% blood"],[519418,"Witch-Hunt","2017","30% red · 0% blood"]];
+    const TB_PIXEL = [
+      [28439, 'Murder by Television', '1935', '42% red · 0% blood'],
+      [43115, 'The Spider', '1958', '37% red · 0% blood'],
+      [11449, 'The Amityville Horror', '1979', '49% red · 0% blood'],
+      [212005, 'Fleshburn', '1984', '58% red · 0% blood'],
+      [10065, 'The Amityville Horror', '2005', '67% red · 0% blood'],
+      [519418, 'Witch-Hunt', '2017', '30% red · 0% blood'],
+    ];
     /* Hand-checked for literal blood on the sheet. Early high clip_blood
        hits often fire on red cloaks/type (Faust, Ghost Cat). No verified
        pre-1940 blood in the sample — first cell is the earliest true positive. */
-    const TB_SEMANTIC=[[43109,"The Killer Shrews","1959","4% red · 50% blood"],
-      [28659,"Cat Girl","1957","17% red · 75% blood"],
-      [48885,"The Gruesome Twosome","1967","6% red · 75% blood"],[145850,"Dance Or Die","1987","7% red · 75% blood"],
-      [9841,"Rest Stop","2006","3% red · 75% blood"],[279690,"He Never Died","2015","0% red · 75% blood"]];
-    go('tb-pixel',TB_PIXEL); go('tb-semantic',TB_SEMANTIC); goEras('tb-eras',SIX_ERAS);
+    const TB_SEMANTIC = [
+      [43109, 'The Killer Shrews', '1959', '4% red · 50% blood'],
+      [28659, 'Cat Girl', '1957', '17% red · 75% blood'],
+      [48885, 'The Gruesome Twosome', '1967', '6% red · 75% blood'],
+      [145850, 'Dance Or Die', '1987', '7% red · 75% blood'],
+      [9841, 'Rest Stop', '2006', '3% red · 75% blood'],
+      [279690, 'He Never Died', '2015', '0% red · 75% blood'],
+    ];
+    go('tb-pixel', TB_PIXEL);
+    go('tb-semantic', TB_SEMANTIC);
+    goEras('tb-eras', SIX_ERAS);
   }
 
   /* --- II. DARKNESS: two lines converge in the dark, gradient dies out --- */
   {
-    const svg=d3.select('#darkness'),W=960,H=400,m={t:30,r:170,b:40,l:50};
-    const x=d3.scaleLinear().domain([CHART_X0,CHART_X1]).range([m.l,W-m.r]);
-    const y=d3.scaleLinear().domain([24,52]).range([H-m.b,m.t]);
-    grid(svg,x,y,[25,30,35,40,45,50],v=>v,CHART_X_TICKS);
-    const gr=svg.append('defs').append('linearGradient').attr('id','dgrad')
-      .attr('x1',0).attr('y1',0).attr('x2',0).attr('y2',1);
-    gr.append('stop').attr('offset','0%').attr('stop-color','#e5a00d').attr('stop-opacity',.38);
-    gr.append('stop').attr('offset','100%').attr('stop-color','#000').attr('stop-opacity',0);
-    const line=d3.line().x(d=>x(d[0])).y(d=>y(d[1])).curve(d3.curveMonotoneX);
-    const areaP=svg.append('path').datum(since1920(DARK_PTS))
-      .attr('d',d3.area().x(d=>x(d[0])).y0(y(24)).y1(d=>y(d[1])).curve(d3.curveMonotoneX))
-      .attr('fill','url(#dgrad)').attr('opacity',0);
-    const p1=svg.append('path').datum(since1920(DARK_PTS)).attr('d',line)
-      .attr('fill','none').attr('stroke','#e5a00d').attr('stroke-width',3).attr('stroke-linecap','round');
-    const p2=svg.append('path').datum(MAIN_DEC).attr('d',line)
-      .attr('fill','none').attr('stroke','#9a958a').attr('stroke-width',2)
-      .attr('stroke-dasharray','6 5').attr('opacity',0);
-    svg.append('text').attr('class','line-label').attr('fill','#e5a00d')
-      .attr('x',x(CHART_X1)+8).attr('y',y(28.5)).text(t('all_horror'));
-    svg.append('text').attr('class','line-label').attr('fill','#9a958a')
-      .attr('x',x(2020)+8).attr('y',y(27.5)+16).text(t('mainstream'));
-    [[1930,t('annot_expressionist_shadow'),43.5],[1970,t('annot_atomic_daylight'),49.5],[1978,t('annot_occult_slide'),41.0],[2020,t('annot_never_came_back'),31.2]].forEach(a=>{
-      svg.append('text').attr('class','annot').attr('text-anchor','middle')
-         .attr('x',Math.min(x(a[0]),W-m.r-60)).attr('y',y(a[2])).text(a[1]);});
-    const ro=mkReadout('darkness',t('hint_tap_drag_century'));
-    const bis=d3.bisector(d=>d[0]).center;
-    const focus=svg.append('circle').attr('r',5).attr('fill','#e5a00d').attr('opacity',0);
-    const showDark=i=>{
-      const d=DARK_PTS[i], md=MAIN_DEC[bis(MAIN_DEC,d[0])];
-      focus.attr('cx',x(d[0])).attr('cy',y(d[1])).attr('opacity',1);
-      report(ro,`<b>${d[0]}</b> · ${t('readout_all_horror_l')} ${d[1]} · ${t('readout_mainstream_l')} (${md[0]}s) L* ${md[1]}`,null);
+    const svg = d3.select('#darkness'),
+      W = 960,
+      H = 400,
+      m = { t: 30, r: 170, b: 40, l: 50 };
+    const x = d3
+      .scaleLinear()
+      .domain([CHART_X0, CHART_X1])
+      .range([m.l, W - m.r]);
+    const y = d3
+      .scaleLinear()
+      .domain([24, 52])
+      .range([H - m.b, m.t]);
+    grid(svg, x, y, [25, 30, 35, 40, 45, 50], (v) => v, CHART_X_TICKS);
+    const gr = svg
+      .append('defs')
+      .append('linearGradient')
+      .attr('id', 'dgrad')
+      .attr('x1', 0)
+      .attr('y1', 0)
+      .attr('x2', 0)
+      .attr('y2', 1);
+    gr.append('stop').attr('offset', '0%').attr('stop-color', '#e5a00d').attr('stop-opacity', 0.38);
+    gr.append('stop').attr('offset', '100%').attr('stop-color', '#000').attr('stop-opacity', 0);
+    const line = d3
+      .line()
+      .x((d) => x(d[0]))
+      .y((d) => y(d[1]))
+      .curve(d3.curveMonotoneX);
+    const areaP = svg
+      .append('path')
+      .datum(since1920(DARK_PTS))
+      .attr(
+        'd',
+        d3
+          .area()
+          .x((d) => x(d[0]))
+          .y0(y(24))
+          .y1((d) => y(d[1]))
+          .curve(d3.curveMonotoneX),
+      )
+      .attr('fill', 'url(#dgrad)')
+      .attr('opacity', 0);
+    const p1 = svg
+      .append('path')
+      .datum(since1920(DARK_PTS))
+      .attr('d', line)
+      .attr('fill', 'none')
+      .attr('stroke', '#e5a00d')
+      .attr('stroke-width', 3)
+      .attr('stroke-linecap', 'round');
+    const p2 = svg
+      .append('path')
+      .datum(MAIN_DEC)
+      .attr('d', line)
+      .attr('fill', 'none')
+      .attr('stroke', '#9a958a')
+      .attr('stroke-width', 2)
+      .attr('stroke-dasharray', '6 5')
+      .attr('opacity', 0);
+    svg
+      .append('text')
+      .attr('class', 'line-label')
+      .attr('fill', '#e5a00d')
+      .attr('x', x(CHART_X1) + 8)
+      .attr('y', y(28.5))
+      .text(t('all_horror'));
+    svg
+      .append('text')
+      .attr('class', 'line-label')
+      .attr('fill', '#9a958a')
+      .attr('x', x(2020) + 8)
+      .attr('y', y(27.5) + 16)
+      .text(t('mainstream'));
+    [
+      [1930, t('annot_expressionist_shadow'), 43.5],
+      [1970, t('annot_atomic_daylight'), 49.5],
+      [1978, t('annot_occult_slide'), 41.0],
+      [2020, t('annot_never_came_back'), 31.2],
+    ].forEach((a) => {
+      svg
+        .append('text')
+        .attr('class', 'annot')
+        .attr('text-anchor', 'middle')
+        .attr('x', Math.min(x(a[0]), W - m.r - 60))
+        .attr('y', y(a[2]))
+        .text(a[1]);
+    });
+    const ro = mkReadout('darkness', t('hint_tap_drag_century'));
+    const bis = d3.bisector((d) => d[0]).center;
+    const focus = svg.append('circle').attr('r', 5).attr('fill', '#e5a00d').attr('opacity', 0);
+    const showDark = (i) => {
+      const d = DARK_PTS[i],
+        md = MAIN_DEC[bis(MAIN_DEC, d[0])];
+      focus.attr('cx', x(d[0])).attr('cy', y(d[1])).attr('opacity', 1);
+      report(
+        ro,
+        `<b>${d[0]}</b> · ${t('readout_all_horror_l')} ${d[1]} · ${t('readout_mainstream_l')} (${md[0]}s) L* ${md[1]}`,
+        null,
+      );
     };
-    const scrub=wireScrub('darkness',{n:DARK_PTS.length, start:DARK_PTS.length-1, show:showDark});
-    const hitDark=function(ev){
-      const year=x.invert(d3.pointer(ev,this)[0]);
-      const i=bis(DARK_PTS,year);
+    const scrub = wireScrub('darkness', {
+      n: DARK_PTS.length,
+      start: DARK_PTS.length - 1,
+      show: showDark,
+    });
+    const hitDark = function (ev) {
+      const year = x.invert(d3.pointer(ev, this)[0]);
+      const i = bis(DARK_PTS, year);
       scrub.set(i);
-      const d=DARK_PTS[i];
-      focus.attr('cx',x(d[0])).attr('cy',y(d[1])).attr('opacity',1);
-      const md=MAIN_DEC[bis(MAIN_DEC,year)];
-      report(ro,`<b>${d[0]}</b> · ${t('readout_all_horror_l')} ${d[1]} · ${t('readout_mainstream_l')} (${md[0]}s) L* ${md[1]}`,ev);
+      const d = DARK_PTS[i];
+      focus.attr('cx', x(d[0])).attr('cy', y(d[1])).attr('opacity', 1);
+      const md = MAIN_DEC[bis(MAIN_DEC, year)];
+      report(
+        ro,
+        `<b>${d[0]}</b> · ${t('readout_all_horror_l')} ${d[1]} · ${t('readout_mainstream_l')} (${md[0]}s) L* ${md[1]}`,
+        ev,
+      );
     };
-    svg.append('rect').attr('x',m.l).attr('y',m.t).attr('width',W-m.l-m.r).attr('height',H-m.t-m.b)
-      .attr('fill','transparent').style('touch-action','none')
-      .on('pointermove pointerdown',function(ev){ev.preventDefault();hitDark.call(this,ev);})
-      .on('pointerleave',()=>{focus.attr('opacity',0);hideTip();});
-    onEnter('darkness',()=>{drawIn(p1,1800);
-      areaP.transition().delay(ms(700)).duration(ms(1200)).attr('opacity',1);
-      p2.transition().delay(ms(1400)).duration(ms(900)).attr('opacity',1);});
+    svg
+      .append('rect')
+      .attr('x', m.l)
+      .attr('y', m.t)
+      .attr('width', W - m.l - m.r)
+      .attr('height', H - m.t - m.b)
+      .attr('fill', 'transparent')
+      .style('touch-action', 'none')
+      .on('pointermove pointerdown', function (ev) {
+        ev.preventDefault();
+        hitDark.call(this, ev);
+      })
+      .on('pointerleave', () => {
+        focus.attr('opacity', 0);
+        hideTip();
+      });
+    onEnter('darkness', () => {
+      drawIn(p1, 1800);
+      areaP.transition().delay(ms(700)).duration(ms(1200)).attr('opacity', 1);
+      p2.transition().delay(ms(1400)).duration(ms(900)).attr('opacity', 1);
+    });
   }
 
   /* --- III. RED: blood-gradient area --- */
   {
-    const svg=d3.select('#red'),W=960,H=340,m={t:30,r:30,b:40,l:50};
-    const x=d3.scaleLinear().domain([CHART_X0,CHART_X1]).range([m.l,W-m.r]);
-    const y=d3.scaleLinear().domain([0,15]).range([H-m.b,m.t]);
-    grid(svg,x,y,[0,5,10,15],v=>v+'%',CHART_X_TICKS);
-    const gr=svg.append('defs').append('linearGradient').attr('id','rgrad')
-      .attr('x1',0).attr('y1',0).attr('x2',0).attr('y2',1);
-    gr.append('stop').attr('offset','0%').attr('stop-color','#ff2634').attr('stop-opacity',.75);
-    gr.append('stop').attr('offset','100%').attr('stop-color','#40060b').attr('stop-opacity',.25);
-    const line=d3.line().x(d=>x(d[0])).y(d=>y(d[1])).curve(d3.curveMonotoneX);
-    const areaP=svg.append('path').datum(since1920(RED_PTS))
-      .attr('d',d3.area().x(d=>x(d[0])).y0(y(0)).y1(d=>y(d[1])).curve(d3.curveMonotoneX))
-      .attr('fill','url(#rgrad)').attr('opacity',0);
-    const p=svg.append('path').datum(since1920(RED_PTS)).attr('d',line)
-      .attr('fill','none').attr('stroke','#ff2634').attr('stroke-width',3).attr('stroke-linecap','round');
-    [[1930,t('annot_before_blood'),6.5],[1970,t('annot_occult_red'),12.8],[1985,t('annot_slashers_never_led'),8.6],[2000,t('annot_peak_meta_horror'),14.5]].forEach(a=>
-      svg.append('text').attr('class','annot').attr('text-anchor','middle').attr('x',x(a[0])).attr('y',y(a[2])).text(a[1]));
-    const ro=mkReadout('red',t('hint_tap_drag_century'));
-    const bis=d3.bisector(d=>d[0]).center;
-    const scrub=wireScrub('red',{n:RED_PTS.length, start:RED_PTS.length-1, show:i=>{
-      const d=RED_PTS[i]; report(ro,`<b>${d[0]}</b> · ${t('readout_blood_red_pixels')}: ${d[1]}%`,null);
-    }});
-    svg.append('rect').attr('x',m.l).attr('y',m.t).attr('width',W-m.l-m.r).attr('height',H-m.t-m.b).attr('fill','transparent')
-      .style('touch-action','none')
-      .on('pointermove pointerdown',function(ev){
+    const svg = d3.select('#red'),
+      W = 960,
+      H = 340,
+      m = { t: 30, r: 30, b: 40, l: 50 };
+    const x = d3
+      .scaleLinear()
+      .domain([CHART_X0, CHART_X1])
+      .range([m.l, W - m.r]);
+    const y = d3
+      .scaleLinear()
+      .domain([0, 15])
+      .range([H - m.b, m.t]);
+    grid(svg, x, y, [0, 5, 10, 15], (v) => v + '%', CHART_X_TICKS);
+    const gr = svg
+      .append('defs')
+      .append('linearGradient')
+      .attr('id', 'rgrad')
+      .attr('x1', 0)
+      .attr('y1', 0)
+      .attr('x2', 0)
+      .attr('y2', 1);
+    gr.append('stop').attr('offset', '0%').attr('stop-color', '#ff2634').attr('stop-opacity', 0.75);
+    gr.append('stop')
+      .attr('offset', '100%')
+      .attr('stop-color', '#40060b')
+      .attr('stop-opacity', 0.25);
+    const line = d3
+      .line()
+      .x((d) => x(d[0]))
+      .y((d) => y(d[1]))
+      .curve(d3.curveMonotoneX);
+    const areaP = svg
+      .append('path')
+      .datum(since1920(RED_PTS))
+      .attr(
+        'd',
+        d3
+          .area()
+          .x((d) => x(d[0]))
+          .y0(y(0))
+          .y1((d) => y(d[1]))
+          .curve(d3.curveMonotoneX),
+      )
+      .attr('fill', 'url(#rgrad)')
+      .attr('opacity', 0);
+    const p = svg
+      .append('path')
+      .datum(since1920(RED_PTS))
+      .attr('d', line)
+      .attr('fill', 'none')
+      .attr('stroke', '#ff2634')
+      .attr('stroke-width', 3)
+      .attr('stroke-linecap', 'round');
+    [
+      [1930, t('annot_before_blood'), 6.5],
+      [1970, t('annot_occult_red'), 12.8],
+      [1985, t('annot_slashers_never_led'), 8.6],
+      [2000, t('annot_peak_meta_horror'), 14.5],
+    ].forEach((a) =>
+      svg
+        .append('text')
+        .attr('class', 'annot')
+        .attr('text-anchor', 'middle')
+        .attr('x', x(a[0]))
+        .attr('y', y(a[2]))
+        .text(a[1]),
+    );
+    const ro = mkReadout('red', t('hint_tap_drag_century'));
+    const bis = d3.bisector((d) => d[0]).center;
+    const scrub = wireScrub('red', {
+      n: RED_PTS.length,
+      start: RED_PTS.length - 1,
+      show: (i) => {
+        const d = RED_PTS[i];
+        report(ro, `<b>${d[0]}</b> · ${t('readout_blood_red_pixels')}: ${d[1]}%`, null);
+      },
+    });
+    svg
+      .append('rect')
+      .attr('x', m.l)
+      .attr('y', m.t)
+      .attr('width', W - m.l - m.r)
+      .attr('height', H - m.t - m.b)
+      .attr('fill', 'transparent')
+      .style('touch-action', 'none')
+      .on('pointermove pointerdown', function (ev) {
         ev.preventDefault();
-        const i=bis(RED_PTS,x.invert(d3.pointer(ev,this)[0]));
+        const i = bis(RED_PTS, x.invert(d3.pointer(ev, this)[0]));
         scrub.set(i);
-        const d=RED_PTS[i];
-        report(ro,`<b>${d[0]}</b> · ${t('readout_blood_red_pixels')}: ${d[1]}%`,ev);})
-      .on('pointerleave',hideTip);
-    onEnter('red',()=>{drawIn(p,1600);areaP.transition().delay(ms(600)).duration(ms(1200)).attr('opacity',1);});
+        const d = RED_PTS[i];
+        report(ro, `<b>${d[0]}</b> · ${t('readout_blood_red_pixels')}: ${d[1]}%`, ev);
+      })
+      .on('pointerleave', hideTip);
+    onEnter('red', () => {
+      drawIn(p, 1600);
+      areaP.transition().delay(ms(600)).duration(ms(1200)).attr('opacity', 1);
+    });
   }
 
   /* --- V. FACES: seventy-year retreat, with the close-up twist --- */
   {
-    const svg=d3.select('#faces'),W=960,H=340,m={t:30,r:30,b:40,l:50};
-    const x=d3.scaleLinear().domain([CHART_X0,CHART_X1]).range([m.l,W-m.r]);
-    const y=d3.scaleLinear().domain([40,95]).range([H-m.b,m.t]);
-    grid(svg,x,y,[40,50,60,70,80,90],v=>v+'%',CHART_X_TICKS);
-    const line=d3.line().x(d=>x(d[0])).y(d=>y(d[1])).curve(d3.curveMonotoneX);
-    const p=svg.append('path').datum(since1920(FACE_PTS)).attr('d',line)
-      .attr('fill','none').attr('stroke','#e8e4da').attr('stroke-width',3).attr('stroke-linecap','round');
-    const peak=svg.append('circle').attr('cx',x(1998)).attr('cy',y(62.3)).attr('r',0).attr('fill','none')
-      .attr('stroke','#c1121f').attr('stroke-width',2);
-    const dot=svg.append('circle').attr('cx',x(1998)).attr('cy',y(62.3)).attr('r',0).attr('fill','#c1121f');
-    svg.append('text').attr('class','annot').attr('text-anchor','middle')
-      .attr('x',x(1945)).attr('y',y(90.7)-10).text(t('peak_1940s_faces'));
-    svg.append('text').attr('class','annot').attr('text-anchor','middle')
-      .attr('x',x(1998)).attr('y',y(62.3)-24).text(t('faces_1998_bigger'));
-    svg.append('text').attr('class','annot').attr('text-anchor','end')
-      .attr('x',x(2021)).attr('y',y(45)).text(t('faces_under_half'));
-    const ro=mkReadout('faces',t('hint_tap_drag_century'));
-    const bis=d3.bisector(d=>d[0]).center;
-    const scrub=wireScrub('faces',{n:FACE_PTS.length, start:FACE_PTS.length-1, show:i=>{
-      const d=FACE_PTS[i]; report(ro,`<b>${d[0]}</b> · ${t('readout_posters_with_face')}: ${d[1]}%`,null);
-    }});
-    svg.append('rect').attr('x',m.l).attr('y',m.t).attr('width',W-m.l-m.r).attr('height',H-m.t-m.b).attr('fill','transparent')
-      .style('touch-action','none')
-      .on('pointermove pointerdown',function(ev){
+    const svg = d3.select('#faces'),
+      W = 960,
+      H = 340,
+      m = { t: 30, r: 30, b: 40, l: 50 };
+    const x = d3
+      .scaleLinear()
+      .domain([CHART_X0, CHART_X1])
+      .range([m.l, W - m.r]);
+    const y = d3
+      .scaleLinear()
+      .domain([40, 95])
+      .range([H - m.b, m.t]);
+    grid(svg, x, y, [40, 50, 60, 70, 80, 90], (v) => v + '%', CHART_X_TICKS);
+    const line = d3
+      .line()
+      .x((d) => x(d[0]))
+      .y((d) => y(d[1]))
+      .curve(d3.curveMonotoneX);
+    const p = svg
+      .append('path')
+      .datum(since1920(FACE_PTS))
+      .attr('d', line)
+      .attr('fill', 'none')
+      .attr('stroke', '#e8e4da')
+      .attr('stroke-width', 3)
+      .attr('stroke-linecap', 'round');
+    const peak = svg
+      .append('circle')
+      .attr('cx', x(1998))
+      .attr('cy', y(62.3))
+      .attr('r', 0)
+      .attr('fill', 'none')
+      .attr('stroke', '#c1121f')
+      .attr('stroke-width', 2);
+    const dot = svg
+      .append('circle')
+      .attr('cx', x(1998))
+      .attr('cy', y(62.3))
+      .attr('r', 0)
+      .attr('fill', '#c1121f');
+    svg
+      .append('text')
+      .attr('class', 'annot')
+      .attr('text-anchor', 'middle')
+      .attr('x', x(1945))
+      .attr('y', y(90.7) - 10)
+      .text(t('peak_1940s_faces'));
+    svg
+      .append('text')
+      .attr('class', 'annot')
+      .attr('text-anchor', 'middle')
+      .attr('x', x(1998))
+      .attr('y', y(62.3) - 24)
+      .text(t('faces_1998_bigger'));
+    svg
+      .append('text')
+      .attr('class', 'annot')
+      .attr('text-anchor', 'end')
+      .attr('x', x(2021))
+      .attr('y', y(45))
+      .text(t('faces_under_half'));
+    const ro = mkReadout('faces', t('hint_tap_drag_century'));
+    const bis = d3.bisector((d) => d[0]).center;
+    const scrub = wireScrub('faces', {
+      n: FACE_PTS.length,
+      start: FACE_PTS.length - 1,
+      show: (i) => {
+        const d = FACE_PTS[i];
+        report(ro, `<b>${d[0]}</b> · ${t('readout_posters_with_face')}: ${d[1]}%`, null);
+      },
+    });
+    svg
+      .append('rect')
+      .attr('x', m.l)
+      .attr('y', m.t)
+      .attr('width', W - m.l - m.r)
+      .attr('height', H - m.t - m.b)
+      .attr('fill', 'transparent')
+      .style('touch-action', 'none')
+      .on('pointermove pointerdown', function (ev) {
         ev.preventDefault();
-        const i=bis(FACE_PTS,x.invert(d3.pointer(ev,this)[0]));
+        const i = bis(FACE_PTS, x.invert(d3.pointer(ev, this)[0]));
         scrub.set(i);
-        const d=FACE_PTS[i];
-        report(ro,`<b>${d[0]}</b> · ${t('readout_posters_with_face')}: ${d[1]}%`,ev);})
-      .on('pointerleave',hideTip);
-    const pulse=()=>peak.attr('r',5).attr('opacity',.9).transition().duration(1800).ease(d3.easeCubicOut)
-      .attr('r',22).attr('opacity',0).on('end',pulse);
-    onEnter('faces',()=>{drawIn(p,1600);dot.transition().delay(ms(1200)).duration(ms(400)).attr('r',5);
-      if(!REDUCE) setTimeout(pulse,1400);
-      else peak.attr('r',8).attr('opacity',.55);});
+        const d = FACE_PTS[i];
+        report(ro, `<b>${d[0]}</b> · ${t('readout_posters_with_face')}: ${d[1]}%`, ev);
+      })
+      .on('pointerleave', hideTip);
+    const pulse = () =>
+      peak
+        .attr('r', 5)
+        .attr('opacity', 0.9)
+        .transition()
+        .duration(1800)
+        .ease(d3.easeCubicOut)
+        .attr('r', 22)
+        .attr('opacity', 0)
+        .on('end', pulse);
+    onEnter('faces', () => {
+      drawIn(p, 1600);
+      dot.transition().delay(ms(1200)).duration(ms(400)).attr('r', 5);
+      if (!REDUCE) setTimeout(pulse, 1400);
+      else peak.attr('r', 8).attr('opacity', 0.55);
+    });
   }
 
   /* --- VI-a. THE QUIETING: text coverage fades like a dying shout --- */
   {
-    const svg=d3.select('#quiet'),W=960,H=340,m={t:30,r:30,b:40,l:50};
-    const x=d3.scaleLinear().domain([CHART_X0,CHART_X1]).range([m.l,W-m.r]);
-    const y=d3.scaleLinear().domain([15,40]).range([H-m.b,m.t]);
-    grid(svg,x,y,[15,20,25,30,35,40],v=>v+'%',CHART_X_TICKS);
-    const gr=svg.append('defs').append('linearGradient').attr('id','qgrad')
-      .attr('x1',0).attr('y1',0).attr('x2',1).attr('y2',0);
-    gr.append('stop').attr('offset','0%').attr('stop-color','#e5a00d').attr('stop-opacity',.4);
-    gr.append('stop').attr('offset','100%').attr('stop-color','#e5a00d').attr('stop-opacity',.04);
-    const line=d3.line().x(d=>x(d[0])).y(d=>y(d[1])).curve(d3.curveMonotoneX);
-    const areaP=svg.append('path').datum(since1920(TEXT_PTS))
-      .attr('d',d3.area().x(d=>x(d[0])).y0(y(15)).y1(d=>y(d[1])).curve(d3.curveMonotoneX))
-      .attr('fill','url(#qgrad)').attr('opacity',0);
-    const p=svg.append('path').datum(since1920(TEXT_PTS)).attr('d',line)
-      .attr('fill','none').attr('stroke','#e5a00d').attr('stroke-width',3).attr('stroke-linecap','round');
-    svg.append('text').attr('class','annot').attr('text-anchor','middle')
-      .attr('x',x(1960)).attr('y',y(34.9)-12).attr('font-weight','bold').text(t('see_shocking'));
-    svg.append('text').attr('class','annot').attr('text-anchor','end')
-      .attr('x',x(2026)).attr('y',y(18.0)-12).attr('opacity',.6).text(t('whisper'));
-    const ro=mkReadout('quiet',t('hint_tap_drag_century'));
-    const bis=d3.bisector(d=>d[0]).center;
-    const scrub=wireScrub('quiet',{n:TEXT_PTS.length, start:TEXT_PTS.length-1, show:i=>{
-      const d=TEXT_PTS[i]; report(ro,`<b>${d[0]}</b> · ${t('readout_textlike_coverage')}: ${d[1]}%`,null);
-    }});
-    svg.append('rect').attr('x',m.l).attr('y',m.t).attr('width',W-m.l-m.r).attr('height',H-m.t-m.b).attr('fill','transparent')
-      .style('touch-action','none')
-      .on('pointermove pointerdown',function(ev){
+    const svg = d3.select('#quiet'),
+      W = 960,
+      H = 340,
+      m = { t: 30, r: 30, b: 40, l: 50 };
+    const x = d3
+      .scaleLinear()
+      .domain([CHART_X0, CHART_X1])
+      .range([m.l, W - m.r]);
+    const y = d3
+      .scaleLinear()
+      .domain([15, 40])
+      .range([H - m.b, m.t]);
+    grid(svg, x, y, [15, 20, 25, 30, 35, 40], (v) => v + '%', CHART_X_TICKS);
+    const gr = svg
+      .append('defs')
+      .append('linearGradient')
+      .attr('id', 'qgrad')
+      .attr('x1', 0)
+      .attr('y1', 0)
+      .attr('x2', 1)
+      .attr('y2', 0);
+    gr.append('stop').attr('offset', '0%').attr('stop-color', '#e5a00d').attr('stop-opacity', 0.4);
+    gr.append('stop')
+      .attr('offset', '100%')
+      .attr('stop-color', '#e5a00d')
+      .attr('stop-opacity', 0.04);
+    const line = d3
+      .line()
+      .x((d) => x(d[0]))
+      .y((d) => y(d[1]))
+      .curve(d3.curveMonotoneX);
+    const areaP = svg
+      .append('path')
+      .datum(since1920(TEXT_PTS))
+      .attr(
+        'd',
+        d3
+          .area()
+          .x((d) => x(d[0]))
+          .y0(y(15))
+          .y1((d) => y(d[1]))
+          .curve(d3.curveMonotoneX),
+      )
+      .attr('fill', 'url(#qgrad)')
+      .attr('opacity', 0);
+    const p = svg
+      .append('path')
+      .datum(since1920(TEXT_PTS))
+      .attr('d', line)
+      .attr('fill', 'none')
+      .attr('stroke', '#e5a00d')
+      .attr('stroke-width', 3)
+      .attr('stroke-linecap', 'round');
+    svg
+      .append('text')
+      .attr('class', 'annot')
+      .attr('text-anchor', 'middle')
+      .attr('x', x(1960))
+      .attr('y', y(34.9) - 12)
+      .attr('font-weight', 'bold')
+      .text(t('see_shocking'));
+    svg
+      .append('text')
+      .attr('class', 'annot')
+      .attr('text-anchor', 'end')
+      .attr('x', x(2026))
+      .attr('y', y(18.0) - 12)
+      .attr('opacity', 0.6)
+      .text(t('whisper'));
+    const ro = mkReadout('quiet', t('hint_tap_drag_century'));
+    const bis = d3.bisector((d) => d[0]).center;
+    const scrub = wireScrub('quiet', {
+      n: TEXT_PTS.length,
+      start: TEXT_PTS.length - 1,
+      show: (i) => {
+        const d = TEXT_PTS[i];
+        report(ro, `<b>${d[0]}</b> · ${t('readout_textlike_coverage')}: ${d[1]}%`, null);
+      },
+    });
+    svg
+      .append('rect')
+      .attr('x', m.l)
+      .attr('y', m.t)
+      .attr('width', W - m.l - m.r)
+      .attr('height', H - m.t - m.b)
+      .attr('fill', 'transparent')
+      .style('touch-action', 'none')
+      .on('pointermove pointerdown', function (ev) {
         ev.preventDefault();
-        const i=bis(TEXT_PTS,x.invert(d3.pointer(ev,this)[0]));
+        const i = bis(TEXT_PTS, x.invert(d3.pointer(ev, this)[0]));
         scrub.set(i);
-        const d=TEXT_PTS[i];
-        report(ro,`<b>${d[0]}</b> · ${t('readout_textlike_coverage')}: ${d[1]}%`,ev);})
-      .on('pointerleave',hideTip);
-    onEnter('quiet',()=>{drawIn(p,1600);areaP.transition().delay(ms(600)).duration(ms(1200)).attr('opacity',1);});
+        const d = TEXT_PTS[i];
+        report(ro, `<b>${d[0]}</b> · ${t('readout_textlike_coverage')}: ${d[1]}%`, ev);
+      })
+      .on('pointerleave', hideTip);
+    onEnter('quiet', () => {
+      drawIn(p, 1600);
+      areaP.transition().delay(ms(600)).duration(ms(1200)).attr('opacity', 1);
+    });
   }
 
   /* --- VI-b. SYMMETRY: the line carries its own mirror reflection --- */
   {
-    const svg=d3.select('#symmetry'),W=960,H=340,m={t:30,r:30,b:40,l:50};
-    const x=d3.scaleLinear().domain([CHART_X0,CHART_X1]).range([m.l,W-m.r]);
-    const y=d3.scaleLinear().domain([0.73,0.89]).range([H-m.b,m.t]);
-    grid(svg,x,y,[0.74,0.78,0.82,0.86],v=>v.toFixed(2),CHART_X_TICKS);
-    const line=d3.line().x(d=>x(d[0])).y(d=>y(d[1])).curve(d3.curveMonotoneX);
+    const svg = d3.select('#symmetry'),
+      W = 960,
+      H = 340,
+      m = { t: 30, r: 30, b: 40, l: 50 };
+    const x = d3
+      .scaleLinear()
+      .domain([CHART_X0, CHART_X1])
+      .range([m.l, W - m.r]);
+    const y = d3
+      .scaleLinear()
+      .domain([0.73, 0.89])
+      .range([H - m.b, m.t]);
+    grid(svg, x, y, [0.74, 0.78, 0.82, 0.86], (v) => v.toFixed(2), CHART_X_TICKS);
+    const line = d3
+      .line()
+      .x((d) => x(d[0]))
+      .y((d) => y(d[1]))
+      .curve(d3.curveMonotoneX);
     /* mirrored ghost: same curve reflected around its final value — the medium is the message */
-    const mirror=d3.line().x(d=>x(d[0])).y(d=>y(2*0.872-d[1])).curve(d3.curveMonotoneX);
-    const ghost=svg.append('path').datum(since1920(SYM_PTS)).attr('d',mirror)
-      .attr('fill','none').attr('stroke','#e8e4da').attr('stroke-width',1.5).attr('opacity',0);
-    const p=svg.append('path').datum(since1920(SYM_PTS)).attr('d',line)
-      .attr('fill','none').attr('stroke','#e8e4da').attr('stroke-width',3).attr('stroke-linecap','round');
-    svg.append('line').attr('x1',x(1950)).attr('x2',x(2026)).attr('y1',y(0.872)).attr('y2',y(0.872))
-      .attr('class','annot-line').attr('opacity',.5);
-    svg.append('text').attr('class','annot').attr('text-anchor','end')
-      .attr('x',x(2026)).attr('y',y(0.872)-8).text(t('peak_2022_symmetry'));
-    svg.append('text').attr('class','annot').attr('text-anchor','middle')
-      .attr('x',x(2013)).attr('y',y(0.842)+24).text(t('elevated_leap'));
-    const ro=mkReadout('symmetry',t('hint_tap_drag_century'));
-    const bis=d3.bisector(d=>d[0]).center;
-    const scrub=wireScrub('symmetry',{n:SYM_PTS.length, start:SYM_PTS.length-1, show:i=>{
-      const d=SYM_PTS[i]; report(ro,`<b>${d[0]}</b> · ${t('readout_mirror_symmetry')}: ${d[1]}`,null);
-    }});
-    svg.append('rect').attr('x',m.l).attr('y',m.t).attr('width',W-m.l-m.r).attr('height',H-m.t-m.b).attr('fill','transparent')
-      .style('touch-action','none')
-      .on('pointermove pointerdown',function(ev){
+    const mirror = d3
+      .line()
+      .x((d) => x(d[0]))
+      .y((d) => y(2 * 0.872 - d[1]))
+      .curve(d3.curveMonotoneX);
+    const ghost = svg
+      .append('path')
+      .datum(since1920(SYM_PTS))
+      .attr('d', mirror)
+      .attr('fill', 'none')
+      .attr('stroke', '#e8e4da')
+      .attr('stroke-width', 1.5)
+      .attr('opacity', 0);
+    const p = svg
+      .append('path')
+      .datum(since1920(SYM_PTS))
+      .attr('d', line)
+      .attr('fill', 'none')
+      .attr('stroke', '#e8e4da')
+      .attr('stroke-width', 3)
+      .attr('stroke-linecap', 'round');
+    svg
+      .append('line')
+      .attr('x1', x(1950))
+      .attr('x2', x(2026))
+      .attr('y1', y(0.872))
+      .attr('y2', y(0.872))
+      .attr('class', 'annot-line')
+      .attr('opacity', 0.5);
+    svg
+      .append('text')
+      .attr('class', 'annot')
+      .attr('text-anchor', 'end')
+      .attr('x', x(2026))
+      .attr('y', y(0.872) - 8)
+      .text(t('peak_2022_symmetry'));
+    svg
+      .append('text')
+      .attr('class', 'annot')
+      .attr('text-anchor', 'middle')
+      .attr('x', x(2013))
+      .attr('y', y(0.842) + 24)
+      .text(t('elevated_leap'));
+    const ro = mkReadout('symmetry', t('hint_tap_drag_century'));
+    const bis = d3.bisector((d) => d[0]).center;
+    const scrub = wireScrub('symmetry', {
+      n: SYM_PTS.length,
+      start: SYM_PTS.length - 1,
+      show: (i) => {
+        const d = SYM_PTS[i];
+        report(ro, `<b>${d[0]}</b> · ${t('readout_mirror_symmetry')}: ${d[1]}`, null);
+      },
+    });
+    svg
+      .append('rect')
+      .attr('x', m.l)
+      .attr('y', m.t)
+      .attr('width', W - m.l - m.r)
+      .attr('height', H - m.t - m.b)
+      .attr('fill', 'transparent')
+      .style('touch-action', 'none')
+      .on('pointermove pointerdown', function (ev) {
         ev.preventDefault();
-        const i=bis(SYM_PTS,x.invert(d3.pointer(ev,this)[0]));
+        const i = bis(SYM_PTS, x.invert(d3.pointer(ev, this)[0]));
         scrub.set(i);
-        const d=SYM_PTS[i];
-        report(ro,`<b>${d[0]}</b> · ${t('readout_mirror_symmetry')}: ${d[1]}`,ev);})
-      .on('pointerleave',hideTip);
-    onEnter('symmetry',()=>{drawIn(p,1600);
-      ghost.transition().delay(ms(1500)).duration(ms(1200)).attr('opacity',.18);});
+        const d = SYM_PTS[i];
+        report(ro, `<b>${d[0]}</b> · ${t('readout_mirror_symmetry')}: ${d[1]}`, ev);
+      })
+      .on('pointerleave', hideTip);
+    onEnter('symmetry', () => {
+      drawIn(p, 1600);
+      ghost.transition().delay(ms(1500)).duration(ms(1200)).attr('opacity', 0.18);
+    });
   }
 
   /* --- VI-c. DIAGONAL: the poster stops leaning --- */
   {
-    const svg=d3.select('#diagonal'),W=960,H=340,m={t:30,r:30,b:40,l:50};
-    const x=d3.scaleLinear().domain([CHART_X0,CHART_X1]).range([m.l,W-m.r]);
-    const y=d3.scaleLinear().domain([20,40]).range([H-m.b,m.t]);
-    grid(svg,x,y,[20,25,30,35,40],v=>v+'%',CHART_X_TICKS);
-    const gr=svg.append('defs').append('linearGradient').attr('id','xgrad')
-      .attr('x1',0).attr('y1',0).attr('x2',1).attr('y2',0);
-    gr.append('stop').attr('offset','0%').attr('stop-color','#d9772e').attr('stop-opacity',.4);
-    gr.append('stop').attr('offset','100%').attr('stop-color','#d9772e').attr('stop-opacity',.04);
-    const line=d3.line().x(d=>x(d[0])).y(d=>y(d[1])).curve(d3.curveMonotoneX);
-    const areaP=svg.append('path').datum(since1920(DIAG_PTS))
-      .attr('d',d3.area().x(d=>x(d[0])).y0(y(20)).y1(d=>y(d[1])).curve(d3.curveMonotoneX))
-      .attr('fill','url(#xgrad)').attr('opacity',0);
-    const p=svg.append('path').datum(since1920(DIAG_PTS)).attr('d',line)
-      .attr('fill','none').attr('stroke','#d9772e').attr('stroke-width',3).attr('stroke-linecap','round');
-    svg.append('text').attr('class','annot').attr('text-anchor','middle')
-      .attr('x',x(1945)).attr('y',y(34.9)-12).text(t('atomic_pulp_peak'));
-    svg.append('text').attr('class','annot').attr('text-anchor','end')
-      .attr('x',x(2026)).attr('y',y(22.2)-12).text(t('today_diagonal'));
-    const ro=mkReadout('diagonal',t('hint_tap_drag_century'));
-    const bis=d3.bisector(d=>d[0]).center;
-    const scrub=wireScrub('diagonal',{n:DIAG_PTS.length, start:DIAG_PTS.length-1, show:i=>{
-      const d=DIAG_PTS[i]; report(ro,`<b>${d[0]}</b> · ${t('readout_diagonal_linework')}: ${d[1]}%`,null);
-    }});
-    svg.append('rect').attr('x',m.l).attr('y',m.t).attr('width',W-m.l-m.r).attr('height',H-m.t-m.b).attr('fill','transparent')
-      .style('touch-action','none')
-      .on('pointermove pointerdown',function(ev){
+    const svg = d3.select('#diagonal'),
+      W = 960,
+      H = 340,
+      m = { t: 30, r: 30, b: 40, l: 50 };
+    const x = d3
+      .scaleLinear()
+      .domain([CHART_X0, CHART_X1])
+      .range([m.l, W - m.r]);
+    const y = d3
+      .scaleLinear()
+      .domain([20, 40])
+      .range([H - m.b, m.t]);
+    grid(svg, x, y, [20, 25, 30, 35, 40], (v) => v + '%', CHART_X_TICKS);
+    const gr = svg
+      .append('defs')
+      .append('linearGradient')
+      .attr('id', 'xgrad')
+      .attr('x1', 0)
+      .attr('y1', 0)
+      .attr('x2', 1)
+      .attr('y2', 0);
+    gr.append('stop').attr('offset', '0%').attr('stop-color', '#d9772e').attr('stop-opacity', 0.4);
+    gr.append('stop')
+      .attr('offset', '100%')
+      .attr('stop-color', '#d9772e')
+      .attr('stop-opacity', 0.04);
+    const line = d3
+      .line()
+      .x((d) => x(d[0]))
+      .y((d) => y(d[1]))
+      .curve(d3.curveMonotoneX);
+    const areaP = svg
+      .append('path')
+      .datum(since1920(DIAG_PTS))
+      .attr(
+        'd',
+        d3
+          .area()
+          .x((d) => x(d[0]))
+          .y0(y(20))
+          .y1((d) => y(d[1]))
+          .curve(d3.curveMonotoneX),
+      )
+      .attr('fill', 'url(#xgrad)')
+      .attr('opacity', 0);
+    const p = svg
+      .append('path')
+      .datum(since1920(DIAG_PTS))
+      .attr('d', line)
+      .attr('fill', 'none')
+      .attr('stroke', '#d9772e')
+      .attr('stroke-width', 3)
+      .attr('stroke-linecap', 'round');
+    svg
+      .append('text')
+      .attr('class', 'annot')
+      .attr('text-anchor', 'middle')
+      .attr('x', x(1945))
+      .attr('y', y(34.9) - 12)
+      .text(t('atomic_pulp_peak'));
+    svg
+      .append('text')
+      .attr('class', 'annot')
+      .attr('text-anchor', 'end')
+      .attr('x', x(2026))
+      .attr('y', y(22.2) - 12)
+      .text(t('today_diagonal'));
+    const ro = mkReadout('diagonal', t('hint_tap_drag_century'));
+    const bis = d3.bisector((d) => d[0]).center;
+    const scrub = wireScrub('diagonal', {
+      n: DIAG_PTS.length,
+      start: DIAG_PTS.length - 1,
+      show: (i) => {
+        const d = DIAG_PTS[i];
+        report(ro, `<b>${d[0]}</b> · ${t('readout_diagonal_linework')}: ${d[1]}%`, null);
+      },
+    });
+    svg
+      .append('rect')
+      .attr('x', m.l)
+      .attr('y', m.t)
+      .attr('width', W - m.l - m.r)
+      .attr('height', H - m.t - m.b)
+      .attr('fill', 'transparent')
+      .style('touch-action', 'none')
+      .on('pointermove pointerdown', function (ev) {
         ev.preventDefault();
-        const i=bis(DIAG_PTS,x.invert(d3.pointer(ev,this)[0]));
+        const i = bis(DIAG_PTS, x.invert(d3.pointer(ev, this)[0]));
         scrub.set(i);
-        const d=DIAG_PTS[i];
-        report(ro,`<b>${d[0]}</b> · ${t('readout_diagonal_linework')}: ${d[1]}%`,ev);})
-      .on('pointerleave',hideTip);
-    onEnter('diagonal',()=>{drawIn(p,1600);areaP.transition().delay(ms(600)).duration(ms(1200)).attr('opacity',1);});
+        const d = DIAG_PTS[i];
+        report(ro, `<b>${d[0]}</b> · ${t('readout_diagonal_linework')}: ${d[1]}%`, ev);
+      })
+      .on('pointerleave', hideTip);
+    onEnter('diagonal', () => {
+      drawIn(p, 1600);
+      areaP.transition().delay(ms(600)).duration(ms(1200)).attr('opacity', 1);
+    });
   }
 
   /* --- VII. MONSTER CENSUS: ghost + killer lit; others muted until hover --- */
   {
-    const CENSUS={
-      "giant monster":{c:"#e5a00d",pts:CENSUS_SERIES["giant monster"]},
-      "vampire":{c:"#c45c6a",pts:CENSUS_SERIES.vampire},
-      "witch":{c:"#b08ad4",pts:CENSUS_SERIES.witch},
-      "masked killer":{c:"#e02430",pts:CENSUS_SERIES["masked killer"]},
-      "zombie":{c:"#8fb05a",pts:CENSUS_SERIES.zombie},
-      "ghost":{c:"#e8e4da",pts:CENSUS_SERIES.ghost}
+    const CENSUS = {
+      'giant monster': { c: '#e5a00d', pts: CENSUS_SERIES['giant monster'] },
+      vampire: { c: '#c45c6a', pts: CENSUS_SERIES.vampire },
+      witch: { c: '#b08ad4', pts: CENSUS_SERIES.witch },
+      'masked killer': { c: '#e02430', pts: CENSUS_SERIES['masked killer'] },
+      zombie: { c: '#8fb05a', pts: CENSUS_SERIES.zombie },
+      ghost: { c: '#e8e4da', pts: CENSUS_SERIES.ghost },
     };
-    const LIT=new Set(['ghost','masked killer']);
-    const baseOp=n=>LIT.has(n)?1:.16;
-    const baseW=n=>n==='ghost'?3.6:n==='masked killer'?2.8:1.5;
+    const LIT = new Set(['ghost', 'masked killer']);
+    const baseOp = (n) => (LIT.has(n) ? 1 : 0.16);
+    const baseW = (n) => (n === 'ghost' ? 3.6 : n === 'masked killer' ? 2.8 : 1.5);
     /* Redundant encoding beyond color: solid thick = ghost, dashed = killer, dotted = rest */
-    const baseDash=n=>n==='ghost'?null:n==='masked killer'?'8 5':'2 3.5';
-    const applyLine=(sel,n,w)=>{
-      sel.attr('stroke-width',w??baseW(n));
-      const d=baseDash(n);
-      if(d==null) sel.attr('stroke-dasharray',null);
-      else sel.attr('stroke-dasharray',d);
+    const baseDash = (n) => (n === 'ghost' ? null : n === 'masked killer' ? '8 5' : '2 3.5');
+    const applyLine = (sel, n, w) => {
+      sel.attr('stroke-width', w ?? baseW(n));
+      const d = baseDash(n);
+      if (d == null) sel.attr('stroke-dasharray', null);
+      else sel.attr('stroke-dasharray', d);
     };
-    const ro=mkReadout('census',t('hint_census'));
-    const svg=d3.select('#census'),W=960,H=420,m={t:30,r:150,b:40,l:50};
-    const x=d3.scaleLinear().domain([CHART_X0,CHART_X1]).range([m.l,W-m.r]);
-    const y=d3.scaleLinear().domain([0,13]).range([H-m.b,m.t]);
-    grid(svg,x,y,[0,3,6,9,12],v=>v+'%',CHART_X_TICKS);
-    const line=d3.line().x(d=>x(d[0])).y(d=>y(d[1])).curve(d3.curveMonotoneX);
-    const names=Object.keys(CENSUS);
-    const paths={}, labels={};
+    const ro = mkReadout('census', t('hint_census'));
+    const svg = d3.select('#census'),
+      W = 960,
+      H = 420,
+      m = { t: 30, r: 150, b: 40, l: 50 };
+    const x = d3
+      .scaleLinear()
+      .domain([CHART_X0, CHART_X1])
+      .range([m.l, W - m.r]);
+    const y = d3
+      .scaleLinear()
+      .domain([0, 13])
+      .range([H - m.b, m.t]);
+    grid(svg, x, y, [0, 3, 6, 9, 12], (v) => v + '%', CHART_X_TICKS);
+    const line = d3
+      .line()
+      .x((d) => x(d[0]))
+      .y((d) => y(d[1]))
+      .curve(d3.curveMonotoneX);
+    const names = Object.keys(CENSUS);
+    const paths = {},
+      labels = {};
     /* draw muted series first, lit series last (on top) */
-    [...names].sort((a,b)=>(LIT.has(a)?1:0)-(LIT.has(b)?1:0)).forEach(n=>{
-      const e=CENSUS[n];
-      const data=since1920(e.pts);
-      paths[n]=svg.append('path').datum(data).attr('d',line)
-        .attr('fill','none').attr('stroke',e.c)
-        .attr('stroke-linecap','round').attr('stroke-linejoin','round')
-        .attr('opacity',baseOp(n)).style('cursor','pointer');
-      applyLine(paths[n],n);
-      const last=data[data.length-1];
-      labels[n]=svg.append('text').attr('class','line-label').attr('fill',e.c)
-        .attr('x',x(last[0])+8).attr('y',y(last[1])+4)
-        .attr('opacity',LIT.has(n)?1:.55)
-        .attr('font-weight',LIT.has(n)?'600':'400').text(n);
-    });
+    [...names]
+      .sort((a, b) => (LIT.has(a) ? 1 : 0) - (LIT.has(b) ? 1 : 0))
+      .forEach((n) => {
+        const e = CENSUS[n];
+        const data = since1920(e.pts);
+        paths[n] = svg
+          .append('path')
+          .datum(data)
+          .attr('d', line)
+          .attr('fill', 'none')
+          .attr('stroke', e.c)
+          .attr('stroke-linecap', 'round')
+          .attr('stroke-linejoin', 'round')
+          .attr('opacity', baseOp(n))
+          .style('cursor', 'pointer');
+        applyLine(paths[n], n);
+        const last = data[data.length - 1];
+        labels[n] = svg
+          .append('text')
+          .attr('class', 'line-label')
+          .attr('fill', e.c)
+          .attr('x', x(last[0]) + 8)
+          .attr('y', y(last[1]) + 4)
+          .attr('opacity', LIT.has(n) ? 1 : 0.55)
+          .attr('font-weight', LIT.has(n) ? '600' : '400')
+          .text(n);
+      });
     {
-      const order=[...names].sort((a,b)=>+labels[a].attr('y')-+labels[b].attr('y'));
-      let prev=-1e9;
-      order.forEach(n=>{
-        const yv=Math.max(+labels[n].attr('y'), prev+15);
-        labels[n].attr('y',yv); prev=yv;
+      const order = [...names].sort((a, b) => +labels[a].attr('y') - +labels[b].attr('y'));
+      let prev = -1e9;
+      order.forEach((n) => {
+        const yv = Math.max(+labels[n].attr('y'), prev + 15);
+        labels[n].attr('y', yv);
+        prev = yv;
       });
     }
-    const focus=n=>{
-      names.forEach(k=>{
-        const on=k===n;
-        paths[k].attr('opacity',on?1:.1);
-        applyLine(paths[k],k,on?3.4:1.3);
-        labels[k].attr('opacity',on?1:.2).attr('font-weight',on?'600':'400');
+    const focus = (n) => {
+      names.forEach((k) => {
+        const on = k === n;
+        paths[k].attr('opacity', on ? 1 : 0.1);
+        applyLine(paths[k], k, on ? 3.4 : 1.3);
+        labels[k].attr('opacity', on ? 1 : 0.2).attr('font-weight', on ? '600' : '400');
       });
     };
-    const unfocus=()=>{
-      names.forEach(k=>{
-        paths[k].attr('opacity',baseOp(k));
-        applyLine(paths[k],k);
-        labels[k].attr('opacity',LIT.has(k)?1:.55).attr('font-weight',LIT.has(k)?'600':'400');
+    const unfocus = () => {
+      names.forEach((k) => {
+        paths[k].attr('opacity', baseOp(k));
+        applyLine(paths[k], k);
+        labels[k]
+          .attr('opacity', LIT.has(k) ? 1 : 0.55)
+          .attr('font-weight', LIT.has(k) ? '600' : '400');
       });
     };
-    let si=names.indexOf('ghost');
+    let si = names.indexOf('ghost');
     let scrub;
-    const showCensus=di=>{
-      const n=names[si];
-      const pts=since1920(CENSUS[n].pts);
-      const pt=pts[di];
+    const showCensus = (di) => {
+      const n = names[si];
+      const pts = since1920(CENSUS[n].pts);
+      const pt = pts[di];
       focus(n);
-      report(ro,`<b>${n}</b> · ${pt[1]}% ${t('readout_of_posters')} · ${pt[0]}s`,null);
+      report(ro, `<b>${n}</b> · ${pt[1]}% ${t('readout_of_posters')} · ${pt[0]}s`, null);
     };
-    const hitCensus=(n,ev)=>{
+    const hitCensus = (n, ev) => {
       focus(n);
-      si=names.indexOf(n);
-      const pts=since1920(CENSUS[n].pts);
-      const yr=Math.round(x.invert(d3.pointer(ev,svg.node())[0])/10)*10;
-      const decades=pts.map(p=>p[0]);
-      const nearest=decades.reduce((a,b)=>Math.abs(b-yr)<Math.abs(a-yr)?b:a);
-      const di=decades.indexOf(nearest);
+      si = names.indexOf(n);
+      const pts = since1920(CENSUS[n].pts);
+      const yr = Math.round(x.invert(d3.pointer(ev, svg.node())[0]) / 10) * 10;
+      const decades = pts.map((p) => p[0]);
+      const nearest = decades.reduce((a, b) => (Math.abs(b - yr) < Math.abs(a - yr) ? b : a));
+      const di = decades.indexOf(nearest);
       scrub.set(di);
-      const pt=pts[di];
-      report(ro,`<b>${n}</b> · ${pt?pt[1]+'% '+t('readout_of_posters')+' · '+pt[0]+'s':''}`,ev);
+      const pt = pts[di];
+      report(
+        ro,
+        `<b>${n}</b> · ${pt ? pt[1] + '% ' + t('readout_of_posters') + ' · ' + pt[0] + 's' : ''}`,
+        ev,
+      );
     };
-    names.forEach(n=>{
-      paths[n].style('touch-action','none')
-        .on('pointermove pointerdown',ev=>{ev.preventDefault();hitCensus(n,ev);})
-        .on('pointerleave',()=>{unfocus();hideTip();});
-      labels[n].style('cursor','pointer')
-        .on('pointerenter',()=>{focus(n); report(ro,`<b>${n}</b> · ←→ for a decade`,null);})
-        .on('pointerleave',unfocus);
+    names.forEach((n) => {
+      paths[n]
+        .style('touch-action', 'none')
+        .on('pointermove pointerdown', (ev) => {
+          ev.preventDefault();
+          hitCensus(n, ev);
+        })
+        .on('pointerleave', () => {
+          unfocus();
+          hideTip();
+        });
+      labels[n]
+        .style('cursor', 'pointer')
+        .on('pointerenter', () => {
+          focus(n);
+          report(ro, `<b>${n}</b> · ←→ for a decade`, null);
+        })
+        .on('pointerleave', unfocus);
     });
-    scrub=wireScrub('census',{n:since1920(CENSUS[names[0]].pts).length, start:since1920(CENSUS[names[0]].pts).length-1, show:showCensus,
-      onVert:dir=>{ si=(si+dir+names.length)%names.length; showCensus(scrub.get()); }});
+    scrub = wireScrub('census', {
+      n: since1920(CENSUS[names[0]].pts).length,
+      start: since1920(CENSUS[names[0]].pts).length - 1,
+      show: showCensus,
+      onVert: (dir) => {
+        si = (si + dir + names.length) % names.length;
+        showCensus(scrub.get());
+      },
+    });
     /* three annotations = the bookend story + one dynasty beat */
-    [[t('census_ghosts_open'),1920,5.5,'#e8e4da','start'],
-     [t('census_killer_peaks'),1980,5.2,'#e02430','middle'],
-     [t('census_ghost_returns'),2020,7.2,'#e8e4da','end']].forEach(a=>{
-      svg.append('text').attr('class','annot').attr('fill',a[3]).attr('text-anchor',a[4])
-        .attr('x',x(a[1])).attr('y',y(a[2])).text(a[0]);});
-    onEnter('census',()=>{
-      names.forEach((n,i)=>setTimeout(()=>drawIn(paths[n],1100,baseDash(n)),ms(i*120)));
+    [
+      [t('census_ghosts_open'), 1920, 5.5, '#e8e4da', 'start'],
+      [t('census_killer_peaks'), 1980, 5.2, '#e02430', 'middle'],
+      [t('census_ghost_returns'), 2020, 7.2, '#e8e4da', 'end'],
+    ].forEach((a) => {
+      svg
+        .append('text')
+        .attr('class', 'annot')
+        .attr('fill', a[3])
+        .attr('text-anchor', a[4])
+        .attr('x', x(a[1]))
+        .attr('y', y(a[2]))
+        .text(a[0]);
+    });
+    onEnter('census', () => {
+      names.forEach((n, i) => setTimeout(() => drawIn(paths[n], 1100, baseDash(n)), ms(i * 120)));
     });
   }
 
   /* --- IX. TWO KINDS OF BLOOD: pixel-red vs model-detected blood, diverging --- */
   {
-    const svg=d3.select('#blood2'),W=960,H=380,m={t:30,r:170,b:44,l:50};
-    const x=d3.scaleLinear().domain([0,DECADES.length-1]).range([m.l,W-m.r]);
-    const y=d3.scaleLinear().domain([0,30]).range([H-m.b,m.t]);
-    grid(svg,x,y,[0,10,20,30],v=>v+'%',[]);
-    DECADES.forEach((dec,i)=>svg.append('text').attr('class','tick-label')
-      .attr('x',x(i)).attr('y',H-14).attr('text-anchor','middle').text(dec));
-    const line=d3.line().x((d,i)=>x(i)).y(d=>y(d)).curve(d3.curveMonotoneX);
-    const gr=svg.append('defs').append('linearGradient').attr('id','bgrad')
-      .attr('x1',0).attr('y1',0).attr('x2',0).attr('y2',1);
-    gr.append('stop').attr('offset','0%').attr('stop-color','#c1121f').attr('stop-opacity',.35);
-    gr.append('stop').attr('offset','100%').attr('stop-color','#c1121f').attr('stop-opacity',.02);
-    const areaP=svg.append('path').datum(BLOOD_SEMANTIC)
-      .attr('d',d3.area().x((d,i)=>x(i)).y0(y(0)).y1(d=>y(d)).curve(d3.curveMonotoneX))
-      .attr('fill','url(#bgrad)').attr('opacity',0);
-    const pPixel=svg.append('path').datum(BLOOD_PIXEL).attr('d',line)
-      .attr('fill','none').attr('stroke','#9a958a').attr('stroke-width',2.5)
-      .attr('stroke-dasharray','6 5').attr('stroke-linecap','round').attr('opacity',0);
-    const pSem=svg.append('path').datum(BLOOD_SEMANTIC).attr('d',line)
-      .attr('fill','none').attr('stroke','#c1121f').attr('stroke-width',3).attr('stroke-linecap','round');
-    svg.append('text').attr('class','line-label').attr('fill','#c1121f')
-      .attr('x',x(10)+8).attr('y',y(BLOOD_SEMANTIC[10])+4).text(t('model_looks_like_blood'));
-    svg.append('text').attr('class','line-label').attr('fill','#9a958a')
-      .attr('x',x(10)+8).attr('y',y(BLOOD_PIXEL[10])+18).text(t('pixel_red_share'));
-    svg.append('text').attr('class','annot').attr('text-anchor','middle')
-      .attr('x',x(5.5)).attr('y',y(24)).text(t('slasher_boom_split'));
-    svg.append('line').attr('x1',x(5)).attr('x2',x(5)).attr('y1',y(0)).attr('y2',y(21.9))
-      .attr('class','annot-line').attr('opacity',.5);
-    const ro=mkReadout('blood2',t('hint_tap_drag_decades'));
-    const scrub=wireScrub('blood2',{n:DECADES.length, start:DECADES.length-1, show:di=>{
-      report(ro,`<b>${DECADES[di]}</b> · ${t('readout_model_blood')} ${BLOOD_SEMANTIC[di]}% · ${t('readout_pixel_red')} ${BLOOD_PIXEL[di]}%`,null);
-    }});
-    svg.append('rect').attr('x',m.l).attr('y',m.t).attr('width',W-m.l-m.r).attr('height',H-m.t-m.b)
-      .attr('fill','transparent').style('touch-action','none')
-      .on('pointermove pointerdown',function(ev){
+    const svg = d3.select('#blood2'),
+      W = 960,
+      H = 380,
+      m = { t: 30, r: 170, b: 44, l: 50 };
+    const x = d3
+      .scaleLinear()
+      .domain([0, DECADES.length - 1])
+      .range([m.l, W - m.r]);
+    const y = d3
+      .scaleLinear()
+      .domain([0, 30])
+      .range([H - m.b, m.t]);
+    grid(svg, x, y, [0, 10, 20, 30], (v) => v + '%', []);
+    DECADES.forEach((dec, i) =>
+      svg
+        .append('text')
+        .attr('class', 'tick-label')
+        .attr('x', x(i))
+        .attr('y', H - 14)
+        .attr('text-anchor', 'middle')
+        .text(dec),
+    );
+    const line = d3
+      .line()
+      .x((d, i) => x(i))
+      .y((d) => y(d))
+      .curve(d3.curveMonotoneX);
+    const gr = svg
+      .append('defs')
+      .append('linearGradient')
+      .attr('id', 'bgrad')
+      .attr('x1', 0)
+      .attr('y1', 0)
+      .attr('x2', 0)
+      .attr('y2', 1);
+    gr.append('stop').attr('offset', '0%').attr('stop-color', '#c1121f').attr('stop-opacity', 0.35);
+    gr.append('stop')
+      .attr('offset', '100%')
+      .attr('stop-color', '#c1121f')
+      .attr('stop-opacity', 0.02);
+    const areaP = svg
+      .append('path')
+      .datum(BLOOD_SEMANTIC)
+      .attr(
+        'd',
+        d3
+          .area()
+          .x((d, i) => x(i))
+          .y0(y(0))
+          .y1((d) => y(d))
+          .curve(d3.curveMonotoneX),
+      )
+      .attr('fill', 'url(#bgrad)')
+      .attr('opacity', 0);
+    const pPixel = svg
+      .append('path')
+      .datum(BLOOD_PIXEL)
+      .attr('d', line)
+      .attr('fill', 'none')
+      .attr('stroke', '#9a958a')
+      .attr('stroke-width', 2.5)
+      .attr('stroke-dasharray', '6 5')
+      .attr('stroke-linecap', 'round')
+      .attr('opacity', 0);
+    const pSem = svg
+      .append('path')
+      .datum(BLOOD_SEMANTIC)
+      .attr('d', line)
+      .attr('fill', 'none')
+      .attr('stroke', '#c1121f')
+      .attr('stroke-width', 3)
+      .attr('stroke-linecap', 'round');
+    svg
+      .append('text')
+      .attr('class', 'line-label')
+      .attr('fill', '#c1121f')
+      .attr('x', x(10) + 8)
+      .attr('y', y(BLOOD_SEMANTIC[10]) + 4)
+      .text(t('model_looks_like_blood'));
+    svg
+      .append('text')
+      .attr('class', 'line-label')
+      .attr('fill', '#9a958a')
+      .attr('x', x(10) + 8)
+      .attr('y', y(BLOOD_PIXEL[10]) + 18)
+      .text(t('pixel_red_share'));
+    svg
+      .append('text')
+      .attr('class', 'annot')
+      .attr('text-anchor', 'middle')
+      .attr('x', x(5.5))
+      .attr('y', y(24))
+      .text(t('slasher_boom_split'));
+    svg
+      .append('line')
+      .attr('x1', x(5))
+      .attr('x2', x(5))
+      .attr('y1', y(0))
+      .attr('y2', y(21.9))
+      .attr('class', 'annot-line')
+      .attr('opacity', 0.5);
+    const ro = mkReadout('blood2', t('hint_tap_drag_decades'));
+    const scrub = wireScrub('blood2', {
+      n: DECADES.length,
+      start: DECADES.length - 1,
+      show: (di) => {
+        report(
+          ro,
+          `<b>${DECADES[di]}</b> · ${t('readout_model_blood')} ${BLOOD_SEMANTIC[di]}% · ${t('readout_pixel_red')} ${BLOOD_PIXEL[di]}%`,
+          null,
+        );
+      },
+    });
+    svg
+      .append('rect')
+      .attr('x', m.l)
+      .attr('y', m.t)
+      .attr('width', W - m.l - m.r)
+      .attr('height', H - m.t - m.b)
+      .attr('fill', 'transparent')
+      .style('touch-action', 'none')
+      .on('pointermove pointerdown', function (ev) {
         ev.preventDefault();
-        const di=Math.max(0,Math.min(10,Math.round(x.invert(d3.pointer(ev,this)[0]))));
+        const di = Math.max(0, Math.min(10, Math.round(x.invert(d3.pointer(ev, this)[0]))));
         scrub.set(di);
-        report(ro,`<b>${DECADES[di]}</b> · ${t('readout_model_blood')} ${BLOOD_SEMANTIC[di]}% · ${t('readout_pixel_red')} ${BLOOD_PIXEL[di]}%`,ev);})
-      .on('pointerleave',hideTip);
-    onEnter('blood2',()=>{drawIn(pSem,1600);
-      pPixel.transition().delay(ms(1400)).duration(ms(900)).attr('opacity',1);
-      areaP.transition().delay(ms(600)).duration(ms(1200)).attr('opacity',1);});
+        report(
+          ro,
+          `<b>${DECADES[di]}</b> · ${t('readout_model_blood')} ${BLOOD_SEMANTIC[di]}% · ${t('readout_pixel_red')} ${BLOOD_PIXEL[di]}%`,
+          ev,
+        );
+      })
+      .on('pointerleave', hideTip);
+    onEnter('blood2', () => {
+      drawIn(pSem, 1600);
+      pPixel.transition().delay(ms(1400)).duration(ms(900)).attr('opacity', 1);
+      areaP.transition().delay(ms(600)).duration(ms(1200)).attr('opacity', 1);
+    });
   }
 }
 
 /* ============ legacy fallback charts (offline, no D3) ============ */
-function legacyCharts(){
-/* --- color river: stacked bars per decade + end labels --- */
-(function(){
-  const svg=document.getElementById('river'),W=960,H=380,m={t:20,r:78,b:40,l:44};
-  const bw=(W-m.l-m.r)/DECADES.length*0.72, gap=(W-m.l-m.r)/DECADES.length;
-  let lastMids=[];
-  DECADES.forEach((dec,i)=>{
-    const total=RIVER[i].reduce((a,b)=>a+b,0);
-    const mids=[];
-    const order=[5,0,1,2,3,4];
-    let y=H-m.b;
-    order.forEach(j=>{
-      const h=(H-m.t-m.b)*RIVER[i][j]/total;
-      y-=h;
-      svg.appendChild(el('rect',{x:m.l+i*gap+ (gap-bw)/2,y:y,width:bw,height:Math.max(0,h-1.5),fill:HUEBANDS[j].c,rx:1.5}));
-      mids[j]=y+h/2;
+function legacyCharts() {
+  /* --- color river: stacked bars per decade + end labels --- */
+  (function () {
+    const svg = document.getElementById('river'),
+      W = 960,
+      H = 380,
+      m = { t: 20, r: 78, b: 40, l: 44 };
+    const bw = ((W - m.l - m.r) / DECADES.length) * 0.72,
+      gap = (W - m.l - m.r) / DECADES.length;
+    let lastMids = [];
+    DECADES.forEach((dec, i) => {
+      const total = RIVER[i].reduce((a, b) => a + b, 0);
+      const mids = [];
+      const order = [5, 0, 1, 2, 3, 4];
+      let y = H - m.b;
+      order.forEach((j) => {
+        const h = ((H - m.t - m.b) * RIVER[i][j]) / total;
+        y -= h;
+        svg.appendChild(
+          el('rect', {
+            x: m.l + i * gap + (gap - bw) / 2,
+            y: y,
+            width: bw,
+            height: Math.max(0, h - 1.5),
+            fill: HUEBANDS[j].c,
+            rx: 1.5,
+          }),
+        );
+        mids[j] = y + h / 2;
+      });
+      lastMids = mids;
+      const t = el('text', {
+        x: m.l + i * gap + gap / 2,
+        y: H - 14,
+        'text-anchor': 'middle',
+        class: 'tick-label',
+      });
+      t.textContent = dec;
+      svg.appendChild(t);
     });
-    lastMids=mids;
-    const t=el('text',{x:m.l+i*gap+gap/2,y:H-14,'text-anchor':'middle',class:'tick-label'});t.textContent=dec;svg.appendChild(t);
-  });
-  const lx=m.l+(DECADES.length-1)*gap+gap/2+bw/2+10;
-  let prev=-1e9;
-  lastMids.map((my,j)=>({my,j})).sort((a,b)=>a.my-b.my).forEach(({my,j})=>{
-    const yy=Math.max(my+4, prev+13);
-    const t=el('text',{x:lx,y:yy,class:'line-label',fill:HUEBANDS[j].label||HUEBANDS[j].c});
-    t.textContent=HUEBANDS[j].short;svg.appendChild(t);
-    prev=yy;
-  });
-})();
+    const lx = m.l + (DECADES.length - 1) * gap + gap / 2 + bw / 2 + 10;
+    let prev = -1e9;
+    lastMids
+      .map((my, j) => ({ my, j }))
+      .sort((a, b) => a.my - b.my)
+      .forEach(({ my, j }) => {
+        const yy = Math.max(my + 4, prev + 13);
+        const t = el('text', {
+          x: lx,
+          y: yy,
+          class: 'line-label',
+          fill: HUEBANDS[j].label || HUEBANDS[j].c,
+        });
+        t.textContent = HUEBANDS[j].short;
+        svg.appendChild(t);
+        prev = yy;
+      });
+  })();
 
-/* --- darkness curve --- */
-(function(){
-  const svg=document.getElementById('darkness'),W=960,H=400,m={t:30,r:30,b:40,l:50};
-  /* FULL CENTURY: mean L* per year, 5-yr rolling (n=33,619, TMDB) */
-  const pts=since1920(DARK_PTS);
-  const x=y=>m.l+(y-CHART_X0)/(CHART_X1-CHART_X0)*(W-m.l-m.r);
-  const yy=v=>m.t+(52-v)/(52-25)*(H-m.t-m.b);
-  [25,30,35,40,45,50].forEach(v=>{
-    svg.appendChild(el('line',{x1:m.l,x2:W-m.r,y1:yy(v),y2:yy(v),class:'axis'}));
-    const t=el('text',{x:m.l-8,y:yy(v)+4,'text-anchor':'end',class:'tick-label'});t.textContent=v;svg.appendChild(t);
-  });
-  CHART_X_TICKS.forEach(v=>{
-    const t=el('text',{x:x(v),y:H-14,'text-anchor':'middle',class:'tick-label'});t.textContent=v;svg.appendChild(t);
-  });
-  const d='M'+pts.map(p=>`${x(p[0])},${yy(p[1])}`).join(' L');
-  svg.appendChild(el('path',{d:d+` L${x(CHART_X1)},${yy(25)} L${x(CHART_X0)},${yy(25)} Z`,fill:'rgba(229,160,13,.08)'}));
-  svg.appendChild(el('path',{d,fill:'none',stroke:'#e5a00d','stroke-width':3,'stroke-linecap':'round'}));
-  [[1930,t('annot_expressionist_shadow'),43.5,1930,41.9],[1975,t('annot_occult_slide'),47.0,1975,44.9],[1982,t('annot_slasher_black'),37.5,1982,35.2],[2020,t('annot_never_came_back'),31.2,2020,29.4]].forEach(a=>{
-    svg.appendChild(el('line',{x1:x(a[3]),x2:x(a[3]),y1:yy(a[4]),y2:yy(a[2])+14,class:'annot-line'}));
-    const t=el('text',{x:Math.min(x(a[3]),W-280),y:yy(a[2]),'text-anchor':'middle',class:'annot'});t.textContent=a[1];svg.appendChild(t);
-  });
-})();
+  /* --- darkness curve --- */
+  (function () {
+    const svg = document.getElementById('darkness'),
+      W = 960,
+      H = 400,
+      m = { t: 30, r: 30, b: 40, l: 50 };
+    /* FULL CENTURY: mean L* per year, 5-yr rolling (n=33,619, TMDB) */
+    const pts = since1920(DARK_PTS);
+    const x = (y) => m.l + ((y - CHART_X0) / (CHART_X1 - CHART_X0)) * (W - m.l - m.r);
+    const yy = (v) => m.t + ((52 - v) / (52 - 25)) * (H - m.t - m.b);
+    [25, 30, 35, 40, 45, 50].forEach((v) => {
+      svg.appendChild(el('line', { x1: m.l, x2: W - m.r, y1: yy(v), y2: yy(v), class: 'axis' }));
+      const t = el('text', { x: m.l - 8, y: yy(v) + 4, 'text-anchor': 'end', class: 'tick-label' });
+      t.textContent = v;
+      svg.appendChild(t);
+    });
+    CHART_X_TICKS.forEach((v) => {
+      const t = el('text', { x: x(v), y: H - 14, 'text-anchor': 'middle', class: 'tick-label' });
+      t.textContent = v;
+      svg.appendChild(t);
+    });
+    const d = 'M' + pts.map((p) => `${x(p[0])},${yy(p[1])}`).join(' L');
+    svg.appendChild(
+      el('path', {
+        d: d + ` L${x(CHART_X1)},${yy(25)} L${x(CHART_X0)},${yy(25)} Z`,
+        fill: 'rgba(229,160,13,.08)',
+      }),
+    );
+    svg.appendChild(
+      el('path', {
+        d,
+        fill: 'none',
+        stroke: '#e5a00d',
+        'stroke-width': 3,
+        'stroke-linecap': 'round',
+      }),
+    );
+    [
+      [1930, t('annot_expressionist_shadow'), 43.5, 1930, 41.9],
+      [1975, t('annot_occult_slide'), 47.0, 1975, 44.9],
+      [1982, t('annot_slasher_black'), 37.5, 1982, 35.2],
+      [2020, t('annot_never_came_back'), 31.2, 2020, 29.4],
+    ].forEach((a) => {
+      svg.appendChild(
+        el('line', {
+          x1: x(a[3]),
+          x2: x(a[3]),
+          y1: yy(a[4]),
+          y2: yy(a[2]) + 14,
+          class: 'annot-line',
+        }),
+      );
+      const t = el('text', {
+        x: Math.min(x(a[3]), W - 280),
+        y: yy(a[2]),
+        'text-anchor': 'middle',
+        class: 'annot',
+      });
+      t.textContent = a[1];
+      svg.appendChild(t);
+    });
+  })();
 
-/* --- rise of red --- */
-(function(){
-  const svg=document.getElementById('red'),W=960,H=340,m={t:30,r:30,b:40,l:50};
-  /* FULL CENTURY: % blood-red pixels per year, 5-yr rolling (n=33,619, TMDB) */
-  const pts=since1920(RED_PTS);
-  const x=y=>m.l+(y-CHART_X0)/(CHART_X1-CHART_X0)*(W-m.l-m.r);
-  const yy=v=>m.t+(15-v)/(15-0)*(H-m.t-m.b);
-  [0,5,10,15].forEach(v=>{
-    svg.appendChild(el('line',{x1:m.l,x2:W-m.r,y1:yy(v),y2:yy(v),class:'axis'}));
-    const t=el('text',{x:m.l-8,y:yy(v)+4,'text-anchor':'end',class:'tick-label'});t.textContent=v+'%';svg.appendChild(t);
-  });
-  CHART_X_TICKS.forEach(v=>{
-    const t=el('text',{x:x(v),y:H-14,'text-anchor':'middle',class:'tick-label'});t.textContent=v;svg.appendChild(t);
-  });
-  const line='M'+pts.map(p=>`${x(p[0])},${yy(p[1])}`).join(' L');
-  svg.appendChild(el('path',{d:line+` L${x(CHART_X1)},${yy(0)} L${x(CHART_X0)},${yy(0)} Z`,fill:'rgba(193,18,31,.35)'}));
-  svg.appendChild(el('path',{d:line,fill:'none',stroke:'#c1121f','stroke-width':3,'stroke-linecap':'round'}));
-  [[1930,'Before blood: 4%',6.5,1930],[1970,'Occult red',12.8,1970],[1985,'Slashers never led',8.6,1985],[2000,'Peak: meta-horror',14.5,2000]].forEach(a=>{
-    const t=el('text',{x:x(a[3]),y:yy(a[2])-8,'text-anchor':'middle',class:'annot'});t.textContent=a[1];svg.appendChild(t);
-  });
-})();
+  /* --- rise of red --- */
+  (function () {
+    const svg = document.getElementById('red'),
+      W = 960,
+      H = 340,
+      m = { t: 30, r: 30, b: 40, l: 50 };
+    /* FULL CENTURY: % blood-red pixels per year, 5-yr rolling (n=33,619, TMDB) */
+    const pts = since1920(RED_PTS);
+    const x = (y) => m.l + ((y - CHART_X0) / (CHART_X1 - CHART_X0)) * (W - m.l - m.r);
+    const yy = (v) => m.t + ((15 - v) / (15 - 0)) * (H - m.t - m.b);
+    [0, 5, 10, 15].forEach((v) => {
+      svg.appendChild(el('line', { x1: m.l, x2: W - m.r, y1: yy(v), y2: yy(v), class: 'axis' }));
+      const t = el('text', { x: m.l - 8, y: yy(v) + 4, 'text-anchor': 'end', class: 'tick-label' });
+      t.textContent = v + '%';
+      svg.appendChild(t);
+    });
+    CHART_X_TICKS.forEach((v) => {
+      const t = el('text', { x: x(v), y: H - 14, 'text-anchor': 'middle', class: 'tick-label' });
+      t.textContent = v;
+      svg.appendChild(t);
+    });
+    const line = 'M' + pts.map((p) => `${x(p[0])},${yy(p[1])}`).join(' L');
+    svg.appendChild(
+      el('path', {
+        d: line + ` L${x(CHART_X1)},${yy(0)} L${x(CHART_X0)},${yy(0)} Z`,
+        fill: 'rgba(193,18,31,.35)',
+      }),
+    );
+    svg.appendChild(
+      el('path', {
+        d: line,
+        fill: 'none',
+        stroke: '#c1121f',
+        'stroke-width': 3,
+        'stroke-linecap': 'round',
+      }),
+    );
+    [
+      [1930, 'Before blood: 4%', 6.5, 1930],
+      [1970, 'Occult red', 12.8, 1970],
+      [1985, 'Slashers never led', 8.6, 1985],
+      [2000, 'Peak: meta-horror', 14.5, 2000],
+    ].forEach((a) => {
+      const t = el('text', {
+        x: x(a[3]),
+        y: yy(a[2]) - 8,
+        'text-anchor': 'middle',
+        class: 'annot',
+      });
+      t.textContent = a[1];
+      svg.appendChild(t);
+    });
+  })();
 
-/* --- the floating head: % posters with a detectable face --- */
-(function(){
-  const svg=document.getElementById('faces'),W=960,H=340,m={t:30,r:30,b:40,l:50};
-  /* FULL CENTURY: % posters with >=1 face, 5-yr rolling (n=33,619, YuNet) */
-  const pts=since1920(FACE_PTS);
-  const x=y=>m.l+(y-CHART_X0)/(CHART_X1-CHART_X0)*(W-m.l-m.r);
-  const yy=v=>m.t+(95-v)/(95-40)*(H-m.t-m.b);
-  [40,50,60,70,80,90].forEach(v=>{
-    svg.appendChild(el('line',{x1:m.l,x2:W-m.r,y1:yy(v),y2:yy(v),class:'axis'}));
-    const t=el('text',{x:m.l-8,y:yy(v)+4,'text-anchor':'end',class:'tick-label'});t.textContent=v+'%';svg.appendChild(t);
-  });
-  CHART_X_TICKS.forEach(v=>{
-    const t=el('text',{x:x(v),y:H-14,'text-anchor':'middle',class:'tick-label'});t.textContent=v;svg.appendChild(t);
-  });
-  const line='M'+pts.map(p=>`${x(p[0])},${yy(p[1])}`).join(' L');
-  svg.appendChild(el('path',{d:line+` L${x(CHART_X1)},${yy(40)} L${x(CHART_X0)},${yy(40)} Z`,fill:'rgba(232,228,218,.06)'}));
-  svg.appendChild(el('path',{d:line,fill:'none',stroke:'#e8e4da','stroke-width':3,'stroke-linecap':'round'}));
-  [[1945,'1945 peak: 91%',90.7,1945],[1998,'1998: bigger faces',62.3,1998],[2018,'under half',45.7,2018]].forEach(a=>{
-    const t=el('text',{x:x(a[3]),y:yy(a[2])-8,'text-anchor':'middle',class:'annot'});t.textContent=a[1];svg.appendChild(t);
-  });
-})();
+  /* --- the floating head: % posters with a detectable face --- */
+  (function () {
+    const svg = document.getElementById('faces'),
+      W = 960,
+      H = 340,
+      m = { t: 30, r: 30, b: 40, l: 50 };
+    /* FULL CENTURY: % posters with >=1 face, 5-yr rolling (n=33,619, YuNet) */
+    const pts = since1920(FACE_PTS);
+    const x = (y) => m.l + ((y - CHART_X0) / (CHART_X1 - CHART_X0)) * (W - m.l - m.r);
+    const yy = (v) => m.t + ((95 - v) / (95 - 40)) * (H - m.t - m.b);
+    [40, 50, 60, 70, 80, 90].forEach((v) => {
+      svg.appendChild(el('line', { x1: m.l, x2: W - m.r, y1: yy(v), y2: yy(v), class: 'axis' }));
+      const t = el('text', { x: m.l - 8, y: yy(v) + 4, 'text-anchor': 'end', class: 'tick-label' });
+      t.textContent = v + '%';
+      svg.appendChild(t);
+    });
+    CHART_X_TICKS.forEach((v) => {
+      const t = el('text', { x: x(v), y: H - 14, 'text-anchor': 'middle', class: 'tick-label' });
+      t.textContent = v;
+      svg.appendChild(t);
+    });
+    const line = 'M' + pts.map((p) => `${x(p[0])},${yy(p[1])}`).join(' L');
+    svg.appendChild(
+      el('path', {
+        d: line + ` L${x(CHART_X1)},${yy(40)} L${x(CHART_X0)},${yy(40)} Z`,
+        fill: 'rgba(232,228,218,.06)',
+      }),
+    );
+    svg.appendChild(
+      el('path', {
+        d: line,
+        fill: 'none',
+        stroke: '#e8e4da',
+        'stroke-width': 3,
+        'stroke-linecap': 'round',
+      }),
+    );
+    [
+      [1945, '1945 peak: 91%', 90.7, 1945],
+      [1998, '1998: bigger faces', 62.3, 1998],
+      [2018, 'under half', 45.7, 2018],
+    ].forEach((a) => {
+      const t = el('text', {
+        x: x(a[3]),
+        y: yy(a[2]) - 8,
+        'text-anchor': 'middle',
+        class: 'annot',
+      });
+      t.textContent = a[1];
+      svg.appendChild(t);
+    });
+  })();
 
-/* --- legacy: the quieting + symmetry (static) --- */
-(function(){
-  const mk=(id,pts,dom,fmt,color)=>{
-    const svg=document.getElementById(id),W=960,H=340,m={t:30,r:30,b:40,l:50};
-    const data=since1920(pts);
-    const x=v=>m.l+(v-CHART_X0)/(CHART_X1-CHART_X0)*(W-m.l-m.r);
-    const yy=v=>m.t+(dom[1]-v)/(dom[1]-dom[0])*(H-m.t-m.b);
-    CHART_X_TICKS.forEach(v=>{
-      const t=el('text',{x:x(v),y:H-14,'text-anchor':'middle',class:'tick-label'});t.textContent=v;svg.appendChild(t);});
-    const steps=4,st=(dom[1]-dom[0])/steps;
-    for(let i=0;i<=steps;i++){const v=dom[0]+i*st;
-      svg.appendChild(el('line',{x1:m.l,x2:W-m.r,y1:yy(v),y2:yy(v),class:'axis'}));
-      const t=el('text',{x:m.l-8,y:yy(v)+4,'text-anchor':'end',class:'tick-label'});t.textContent=fmt(v);svg.appendChild(t);}
-    const d='M'+data.map(p=>`${x(p[0])},${yy(p[1])}`).join(' L');
-    svg.appendChild(el('path',{d,fill:'none',stroke:color,'stroke-width':3,'stroke-linecap':'round'}));
-  };
-  mk('quiet',TEXT_PTS,[15,40],v=>Math.round(v)+'%','#e5a00d');
-  mk('symmetry',SYM_PTS,[0.73,0.89],v=>v.toFixed(2),'#e8e4da');
-  mk('diagonal',DIAG_PTS,[20,40],v=>Math.round(v)+'%','#d9772e');
-})();
+  /* --- legacy: the quieting + symmetry (static) --- */
+  (function () {
+    const mk = (id, pts, dom, fmt, color) => {
+      const svg = document.getElementById(id),
+        W = 960,
+        H = 340,
+        m = { t: 30, r: 30, b: 40, l: 50 };
+      const data = since1920(pts);
+      const x = (v) => m.l + ((v - CHART_X0) / (CHART_X1 - CHART_X0)) * (W - m.l - m.r);
+      const yy = (v) => m.t + ((dom[1] - v) / (dom[1] - dom[0])) * (H - m.t - m.b);
+      CHART_X_TICKS.forEach((v) => {
+        const t = el('text', { x: x(v), y: H - 14, 'text-anchor': 'middle', class: 'tick-label' });
+        t.textContent = v;
+        svg.appendChild(t);
+      });
+      const steps = 4,
+        st = (dom[1] - dom[0]) / steps;
+      for (let i = 0; i <= steps; i++) {
+        const v = dom[0] + i * st;
+        svg.appendChild(el('line', { x1: m.l, x2: W - m.r, y1: yy(v), y2: yy(v), class: 'axis' }));
+        const t = el('text', {
+          x: m.l - 8,
+          y: yy(v) + 4,
+          'text-anchor': 'end',
+          class: 'tick-label',
+        });
+        t.textContent = fmt(v);
+        svg.appendChild(t);
+      }
+      const d = 'M' + data.map((p) => `${x(p[0])},${yy(p[1])}`).join(' L');
+      svg.appendChild(
+        el('path', {
+          d,
+          fill: 'none',
+          stroke: color,
+          'stroke-width': 3,
+          'stroke-linecap': 'round',
+        }),
+      );
+    };
+    mk('quiet', TEXT_PTS, [15, 40], (v) => Math.round(v) + '%', '#e5a00d');
+    mk('symmetry', SYM_PTS, [0.73, 0.89], (v) => v.toFixed(2), '#e8e4da');
+    mk('diagonal', DIAG_PTS, [20, 40], (v) => Math.round(v) + '%', '#d9772e');
+  })();
 
-/* --- legacy: monster census (ghost solid, killer dashed, rest dotted) --- */
-(function(){
-  const svg=document.getElementById('census'),W=960,H=420,m={t:30,r:150,b:40,l:50};
-  const S={
-    "giant monster":["#e5a00d",.16,1.5,'2 3.5',CENSUS_SERIES["giant monster"]],
-    "vampire":["#c45c6a",.16,1.5,'2 3.5',CENSUS_SERIES["vampire"]],
-    "witch":["#b08ad4",.16,1.5,'2 3.5',CENSUS_SERIES["witch"]],
-    "zombie":["#8fb05a",.16,1.5,'2 3.5',CENSUS_SERIES["zombie"]],
-    "masked killer":["#e02430",1,2.8,'8 5',CENSUS_SERIES["masked killer"]],
-    "ghost":["#e8e4da",1,3.6,null,CENSUS_SERIES["ghost"]]
-  };
-  const x=v=>m.l+(v-CHART_X0)/(CHART_X1-CHART_X0)*(W-m.l-m.r);
-  const yy=v=>m.t+(13-v)/13*(H-m.t-m.b);
-  [0,3,6,9,12].forEach(v=>{svg.appendChild(el('line',{x1:m.l,x2:W-m.r,y1:yy(v),y2:yy(v),class:'axis'}));
-    const t=el('text',{x:m.l-8,y:yy(v)+4,'text-anchor':'end',class:'tick-label'});t.textContent=v+'%';svg.appendChild(t);});
-  CHART_X_TICKS.forEach(v=>{const t=el('text',{x:x(v),y:H-14,'text-anchor':'middle',class:'tick-label'});t.textContent=v;svg.appendChild(t);});
-  for(const n in S){const [c,op,sw,dash,pts]=S[n];
-    const data=since1920(pts);
-    const attrs={d:'M'+data.map(p=>`${x(p[0])},${yy(p[1])}`).join(' L'),fill:'none',stroke:c,'stroke-width':sw,opacity:op,'stroke-linecap':'round'};
-    if(dash) attrs['stroke-dasharray']=dash;
-    svg.appendChild(el('path',attrs));
-    const last=data[data.length-1];
-    const t=el('text',{x:x(last[0])+8,y:yy(last[1])+4,class:'line-label',fill:c,opacity:op>0.5?1:.55});t.textContent=n;svg.appendChild(t);}
-})();
+  /* --- legacy: monster census (ghost solid, killer dashed, rest dotted) --- */
+  (function () {
+    const svg = document.getElementById('census'),
+      W = 960,
+      H = 420,
+      m = { t: 30, r: 150, b: 40, l: 50 };
+    const S = {
+      'giant monster': ['#e5a00d', 0.16, 1.5, '2 3.5', CENSUS_SERIES['giant monster']],
+      vampire: ['#c45c6a', 0.16, 1.5, '2 3.5', CENSUS_SERIES['vampire']],
+      witch: ['#b08ad4', 0.16, 1.5, '2 3.5', CENSUS_SERIES['witch']],
+      zombie: ['#8fb05a', 0.16, 1.5, '2 3.5', CENSUS_SERIES['zombie']],
+      'masked killer': ['#e02430', 1, 2.8, '8 5', CENSUS_SERIES['masked killer']],
+      ghost: ['#e8e4da', 1, 3.6, null, CENSUS_SERIES['ghost']],
+    };
+    const x = (v) => m.l + ((v - CHART_X0) / (CHART_X1 - CHART_X0)) * (W - m.l - m.r);
+    const yy = (v) => m.t + ((13 - v) / 13) * (H - m.t - m.b);
+    [0, 3, 6, 9, 12].forEach((v) => {
+      svg.appendChild(el('line', { x1: m.l, x2: W - m.r, y1: yy(v), y2: yy(v), class: 'axis' }));
+      const t = el('text', { x: m.l - 8, y: yy(v) + 4, 'text-anchor': 'end', class: 'tick-label' });
+      t.textContent = v + '%';
+      svg.appendChild(t);
+    });
+    CHART_X_TICKS.forEach((v) => {
+      const t = el('text', { x: x(v), y: H - 14, 'text-anchor': 'middle', class: 'tick-label' });
+      t.textContent = v;
+      svg.appendChild(t);
+    });
+    for (const n in S) {
+      const [c, op, sw, dash, pts] = S[n];
+      const data = since1920(pts);
+      const attrs = {
+        d: 'M' + data.map((p) => `${x(p[0])},${yy(p[1])}`).join(' L'),
+        fill: 'none',
+        stroke: c,
+        'stroke-width': sw,
+        opacity: op,
+        'stroke-linecap': 'round',
+      };
+      if (dash) attrs['stroke-dasharray'] = dash;
+      svg.appendChild(el('path', attrs));
+      const last = data[data.length - 1];
+      const t = el('text', {
+        x: x(last[0]) + 8,
+        y: yy(last[1]) + 4,
+        class: 'line-label',
+        fill: c,
+        opacity: op > 0.5 ? 1 : 0.55,
+      });
+      t.textContent = n;
+      svg.appendChild(t);
+    }
+  })();
 
-/* --- two kinds of blood: pixel-red vs model-detected blood --- */
-(function(){
-  const svg=document.getElementById('blood2'),W=960,H=380,m={t:30,r:170,b:44,l:50};
-  const x=i=>m.l+i/(DECADES.length-1)*(W-m.l-m.r);
-  const yy=v=>m.t+(30-v)/30*(H-m.t-m.b);
-  [0,10,20,30].forEach(v=>{
-    svg.appendChild(el('line',{x1:m.l,x2:W-m.r,y1:yy(v),y2:yy(v),class:'axis'}));
-    const t=el('text',{x:m.l-8,y:yy(v)+4,'text-anchor':'end',class:'tick-label'});t.textContent=v+'%';svg.appendChild(t);
-  });
-  DECADES.forEach((dec,i)=>{const t=el('text',{x:x(i),y:H-14,'text-anchor':'middle',class:'tick-label'});t.textContent=dec;svg.appendChild(t);});
-  const dPixel='M'+BLOOD_PIXEL.map((v,i)=>`${x(i)},${yy(v)}`).join(' L');
-  const dSem='M'+BLOOD_SEMANTIC.map((v,i)=>`${x(i)},${yy(v)}`).join(' L');
-  svg.appendChild(el('path',{d:dSem+` L${x(10)},${yy(0)} L${x(0)},${yy(0)} Z`,fill:'rgba(193,18,31,.18)'}));
-  svg.appendChild(el('path',{d:dPixel,fill:'none',stroke:'#9a958a','stroke-width':2.5,'stroke-dasharray':'6 5','stroke-linecap':'round'}));
-  svg.appendChild(el('path',{d:dSem,fill:'none',stroke:'#c1121f','stroke-width':3,'stroke-linecap':'round'}));
-  const lbl1=el('text',{x:x(10)+8,y:yy(BLOOD_SEMANTIC[10])+4,class:'line-label',fill:'#c1121f'});lbl1.textContent=t('model_looks_like_blood');svg.appendChild(lbl1);
-  const lbl2=el('text',{x:x(10)+8,y:yy(BLOOD_PIXEL[10])+18,class:'line-label',fill:'#9a958a'});lbl2.textContent=t('pixel_red_share');svg.appendChild(lbl2);
-  const ann=el('text',{x:x(5.5),y:yy(24),'text-anchor':'middle',class:'annot'});ann.textContent=t('slasher_boom_split');svg.appendChild(ann);
-})();
+  /* --- two kinds of blood: pixel-red vs model-detected blood --- */
+  (function () {
+    const svg = document.getElementById('blood2'),
+      W = 960,
+      H = 380,
+      m = { t: 30, r: 170, b: 44, l: 50 };
+    const x = (i) => m.l + (i / (DECADES.length - 1)) * (W - m.l - m.r);
+    const yy = (v) => m.t + ((30 - v) / 30) * (H - m.t - m.b);
+    [0, 10, 20, 30].forEach((v) => {
+      svg.appendChild(el('line', { x1: m.l, x2: W - m.r, y1: yy(v), y2: yy(v), class: 'axis' }));
+      const t = el('text', { x: m.l - 8, y: yy(v) + 4, 'text-anchor': 'end', class: 'tick-label' });
+      t.textContent = v + '%';
+      svg.appendChild(t);
+    });
+    DECADES.forEach((dec, i) => {
+      const t = el('text', { x: x(i), y: H - 14, 'text-anchor': 'middle', class: 'tick-label' });
+      t.textContent = dec;
+      svg.appendChild(t);
+    });
+    const dPixel = 'M' + BLOOD_PIXEL.map((v, i) => `${x(i)},${yy(v)}`).join(' L');
+    const dSem = 'M' + BLOOD_SEMANTIC.map((v, i) => `${x(i)},${yy(v)}`).join(' L');
+    svg.appendChild(
+      el('path', {
+        d: dSem + ` L${x(10)},${yy(0)} L${x(0)},${yy(0)} Z`,
+        fill: 'rgba(193,18,31,.18)',
+      }),
+    );
+    svg.appendChild(
+      el('path', {
+        d: dPixel,
+        fill: 'none',
+        stroke: '#9a958a',
+        'stroke-width': 2.5,
+        'stroke-dasharray': '6 5',
+        'stroke-linecap': 'round',
+      }),
+    );
+    svg.appendChild(
+      el('path', {
+        d: dSem,
+        fill: 'none',
+        stroke: '#c1121f',
+        'stroke-width': 3,
+        'stroke-linecap': 'round',
+      }),
+    );
+    const lbl1 = el('text', {
+      x: x(10) + 8,
+      y: yy(BLOOD_SEMANTIC[10]) + 4,
+      class: 'line-label',
+      fill: '#c1121f',
+    });
+    lbl1.textContent = t('model_looks_like_blood');
+    svg.appendChild(lbl1);
+    const lbl2 = el('text', {
+      x: x(10) + 8,
+      y: yy(BLOOD_PIXEL[10]) + 18,
+      class: 'line-label',
+      fill: '#9a958a',
+    });
+    lbl2.textContent = t('pixel_red_share');
+    svg.appendChild(lbl2);
+    const ann = el('text', { x: x(5.5), y: yy(24), 'text-anchor': 'middle', class: 'annot' });
+    ann.textContent = t('slasher_boom_split');
+    svg.appendChild(ann);
+  })();
 }
 
 export function initEssayCharts() {

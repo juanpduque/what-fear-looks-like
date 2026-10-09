@@ -22,6 +22,7 @@ import time
 from pathlib import Path
 
 import pandas as pd
+
 import pull_2023_2025 as base
 
 DATA = Path(__file__).resolve().parent / "data"

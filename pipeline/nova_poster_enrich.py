@@ -26,14 +26,12 @@ import signal
 import sys
 import threading
 import time
-import traceback
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 import boto3
 import pandas as pd
 from botocore.config import Config
-from botocore.exceptions import BotoCoreError, ClientError
 from PIL import Image
 
 DATA = Path(__file__).resolve().parent / "data"

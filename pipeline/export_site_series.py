@@ -69,6 +69,7 @@ def _pts_at(roll: dict[int, float], years: list[int], rnd: int = 1):
 
 def _read_csv(name: str):
     import csv
+
     from corpus import canonical_ids
     path = DATA / name
     if not path.exists():

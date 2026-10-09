@@ -25,7 +25,6 @@ Cost: ~$0.001/image (DetectText API)
 from __future__ import annotations
 
 import argparse
-import io
 import json
 import os
 import re
@@ -128,7 +127,7 @@ def locate_title(rek_client, image_bytes: bytes, title: str):
     """Find the title text box in the poster."""
     try:
         lines = detect_lines(rek_client, image_bytes)
-    except ClientError as e:
+    except ClientError:
         return None
     if not lines:
         return None
@@ -368,7 +367,7 @@ def main():
 
     elapsed = time.time() - t0
     print("\n" + "=" * 70)
-    print(f"✅ COMPLETADO")
+    print("✅ COMPLETADO")
     print(f"   Procesados:     {n_new:,}")
     print(f"   Con título:     {n_found:,} ({100*n_found/max(n_new,1):.1f}%)")
     print(f"   Sin título:     {n_new - n_found:,}")

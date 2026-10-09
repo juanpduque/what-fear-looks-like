@@ -613,7 +613,7 @@ def main() -> None:
         write_sidecar(mapping)
         print(f"Merged {len(hits)} hits into {SIDECAR}")
 
-    print(f"\n=== Summary ===")
+    print("\n=== Summary ===")
     print(f"accepted:   {len(hits)}")
     print(f"unresolved: {len(misses)}")
     if hits:

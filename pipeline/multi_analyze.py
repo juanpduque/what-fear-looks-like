@@ -23,11 +23,13 @@ Usage:
 
 Outputs: data/attributes.csv (per poster), data/attributes_decade.json
 """
-import argparse, json, time
+import argparse
+import time
 from pathlib import Path
+
+import cv2
 import numpy as np
 import pandas as pd
-import cv2
 from shapely.geometry import box as shp_box
 
 DATA = Path(__file__).parent / "data"

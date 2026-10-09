@@ -15,7 +15,9 @@ Outputs: data/title_boxes_rekognition.csv
 """
 from __future__ import annotations
 
-import argparse, re, time
+import argparse
+import re
+import time
 from difflib import SequenceMatcher
 from pathlib import Path
 

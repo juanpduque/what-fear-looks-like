@@ -438,7 +438,7 @@ def main() -> None:
         "output": str(OUT.name),
     }
     SUMMARY.write_text(json.dumps(summary, indent=2))
-    print(f"\n=== VISION OCR PILOT ===")
+    print("\n=== VISION OCR PILOT ===")
     print(f"n={summary['n']} hits={summary['hits']} ({100*summary['hit_rate']:.1f}%)")
     print(f"any OCR text={summary['any_ocr_text']} errors={summary['errors']}")
     print(f"est. cost ≈ ${summary['cost_usd_est']} (pilot within free tier → ~$0)")

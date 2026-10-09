@@ -12,17 +12,15 @@ Uses the Monster Census taxonomy as open-vocab queries. Saves:
 from __future__ import annotations
 
 import argparse
-import csv
 import json
 import random
 import time
 from collections import Counter, defaultdict
 from pathlib import Path
 
-import numpy as np
 import pandas as pd
 import torch
-from PIL import Image, ImageDraw, ImageFont
+from PIL import Image, ImageDraw
 
 DATA = Path(__file__).resolve().parent / "data"
 POSTERS = DATA / "posters"

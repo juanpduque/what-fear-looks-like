@@ -1,7 +1,6 @@
 import { creatureLabels } from '../shared/posters.js';
 
-const t = (...args) =>
-  typeof window.t === 'function' ? window.t(...args) : args[0];
+const t = (...args) => (typeof window.t === 'function' ? window.t(...args) : args[0]);
 
 export function novaStr(a, key) {
   if (a?.[key] == null || a[key] === '') return null;

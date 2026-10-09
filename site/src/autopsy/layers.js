@@ -2,8 +2,7 @@ import { pct, num, creatureLabels, posterSrc } from '../shared/posters.js';
 import { resolveFaces, faceLab, novaFaceCount } from './faces.js';
 import { formatNovaCreature, novaCreature, novaOcr, novaTitle, novaTypo } from './nova.js';
 
-const t = (...args) =>
-  typeof window.t === 'function' ? window.t(...args) : args[0];
+const t = (...args) => (typeof window.t === 'function' ? window.t(...args) : args[0]);
 
 function esc(s) {
   return String(s ?? '')
@@ -125,9 +124,7 @@ function dimSvg(maskId, boxes) {
 function massMarks(comp, { origin } = {}) {
   const mx = (comp.mx ?? 0.5) * 100;
   const my = (comp.my ?? 0.5) * 100;
-  const ring = origin
-    ? `<div class="lk-origin" title="${t('lab_geom_center')}"></div>`
-    : '';
+  const ring = origin ? `<div class="lk-origin" title="${t('lab_geom_center')}"></div>` : '';
   return `${ring}<div class="lk-mass" style="left:${mx}%;top:${my}%"></div>`;
 }
 
@@ -169,12 +166,7 @@ export function titleBox(comp, tmdbId) {
   const over = TITLE_BOX_OVERRIDE[Number(tmdbId)];
   const src = over ? { ...comp, ...over } : comp;
   const has =
-    src.tt != null &&
-    src.tt >= 0 &&
-    src.tw > 0 &&
-    src.th > 0 &&
-    src.tx != null &&
-    src.tx >= 0;
+    src.tt != null && src.tt >= 0 && src.tw > 0 && src.th > 0 && src.tx != null && src.tx >= 0;
   if (!has) return null;
   const left = Math.max(0, src.tx * 100);
   const top = Math.max(0, src.tt * 100);
@@ -187,9 +179,7 @@ export function titleBox(comp, tmdbId) {
 export function buildLayersHtml(p, a) {
   const bands = a.bands || [];
   const palArr = a.pal && a.pal.length ? a.pal : [p[1]];
-  const palFloat = palArr
-    .map((c) => `<span style="background:${c}" title="${c}"></span>`)
-    .join('');
+  const palFloat = palArr.map((c) => `<span style="background:${c}" title="${c}"></span>`).join('');
   const palHandles = palArr
     .map(
       (c, i) =>
@@ -232,7 +222,6 @@ export function buildLayersHtml(p, a) {
     .map((b) => {
       const raw = b.box || b;
       const [x, y, w, h] = Array.isArray(raw) ? raw : [0, 0, 0, 0];
-      const L = Math.max(0, x * 100);
       const T = Math.max(0, y * 100);
       const lab = creatureLabels()[b.label] || (b.label || '').replace(/_/g, ' ');
       const sc = b.score != null ? ` ${pct(b.score)}` : '';
@@ -252,7 +241,8 @@ export function buildLayersHtml(p, a) {
   const mediumLab =
     a.painted == null
       ? t('lab_medium_na')
-      : (a.painted >= 0.5 ? t('lookup_painted') + ' ' : t('lookup_photo_mixed') + ' ') + pct(a.painted);
+      : (a.painted >= 0.5 ? t('lookup_painted') + ' ' : t('lookup_photo_mixed') + ' ') +
+        pct(a.painted);
   const textLab = box
     ? t('lab_title_box_text', { v: pct(comp.txt) })
     : t('lab_textlike_pending', { v: pct(comp.txt) });
@@ -296,9 +286,7 @@ export function buildLayersHtml(p, a) {
     }
   }
 
-  const titleHole = box
-    ? [[box.left / 100, box.top / 100, box.width / 100, box.height / 100]]
-    : [];
+  const titleHole = box ? [[box.left / 100, box.top / 100, box.width / 100, box.height / 100]] : [];
   const creatureHoles = cboxesPref.slice(0, 3).map((b) => {
     const raw = b.box || b;
     return Array.isArray(raw) ? raw : [0, 0, 0, 0];
