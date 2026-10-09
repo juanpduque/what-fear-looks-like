@@ -7,9 +7,12 @@ segmentation into one id-keyed object. Run after pipeline CSVs update:
 
 Schema (LOOKUP[id]):
   t,y,path,L,dark,sat,red,pal,bands[6],faces,farea,nova_faces?,
-  nova_creature?,nova_typo?,nova_title?,nova_ocr?,creature,cscore,
+  nova_creature?,nova_typo?,nova_title?,nova_ocr?,
+  jev_creature?,jev_present?,creature,cscore,
   typo,taxis,painted,comp{...},sem{...}?
   nova_* fields are Nova Pro QA (pipeline/data/qa/qa_*.csv); display only.
+  jev_* is JEV reconciled typed type (not the CLIP census / essay owner).
+  sal? is MSI-Net peak / top10 mass (not the OpenCV balance centroid).
 """
 from __future__ import annotations
 
@@ -18,6 +21,8 @@ import json
 from pathlib import Path
 
 import pandas as pd
+
+from jev_labels import published_creatures
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
@@ -125,6 +130,29 @@ def main():
         if reg:
             nova_typo[pid] = reg
 
+    jev_map = published_creatures()
+
+    sal_map: dict[int, tuple[float, float, float]] = {}
+    for sal_path in (
+        DATA / "qa" / "saliency" / "saliency_score.csv",
+        DATA / "qa" / "saliency_score.csv",
+    ):
+        if not sal_path.exists():
+            continue
+        sal = pd.read_csv(sal_path, usecols=lambda c: c in ("id", "peak_x", "peak_y", "top10pct_mass"))
+        for row in sal.itertuples(index=False):
+            try:
+                pid = int(row.id)
+            except (TypeError, ValueError):
+                continue
+            if pid in sal_map:
+                continue
+            try:
+                sal_map[pid] = (float(row.peak_x), float(row.peak_y), float(row.top10pct_mass))
+            except (TypeError, ValueError):
+                continue
+        break
+
     nova_ocr: dict[int, tuple[str, str]] = {}
     ocr_ok = {"accurate", "inaccurate", "no_title_on_poster"}
     for row in load_qa_ok(
@@ -179,6 +207,16 @@ def main():
         nc = nova_creature.get(i)
         if nc is not None:
             rec["nova_creature"] = nc
+        jev = jev_map.get(i)
+        if jev:
+            present, ctype = jev
+            if ctype:
+                rec["jev_creature"] = ctype
+            if present:
+                rec["jev_present"] = present
+        sal = sal_map.get(i)
+        if sal:
+            rec["sal"] = {"x": r(sal[0], 3), "y": r(sal[1], 3), "m": r(sal[2], 2)}
         nt = nova_typo.get(i)
         if nt is not None:
             rec["nova_typo"] = nt

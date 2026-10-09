@@ -10,6 +10,8 @@ Leer y respetar `docs/METRIC_AGREEMENTS.md`.
 Resumen operativo:
 
 - **Ensayo caras / series:** solo YuNet. Autopsy: `resolveFaces` (YuNet primario; Rek solo si YuNet=0). Nova `nova_faces` es nota QA, no voto.
-- **Ensayo criaturas:** CLIP census. Autopsy: etiqueta CLIP; cajas OWL solo si label coincide y score ≥ 0.3; sin fallback a todas las cajas. Nova `nova_creature` / `nova_typo` / `nova_ocr` son notas QA.
-- **Armas:** presencia Rek `rek_weapon≥0.5` (o CLIP familia); no contar OWL crudo en essay.
-- **Pósters:** `poster_src` sidecar; nunca URLs Amazon en `poster_path` TMDB; `no_poster` fuera del sitio.
+- **Ensayo criaturas:** CLIP census. Autopsy: etiqueta CLIP; cajas OWL solo si label coincide y score ≥ 0.3; sin fallback a todas las cajas. Tipo tipado JEV (`jev_creature`) en autopsy, no essay. Nova `nova_creature` / `nova_typo` / `nova_ocr` son notas QA.
+- **Armas:** presencia Rek `rek_weapon≥0.5` (o CLIP familia); no contar OWL crudo en essay. Autopsy pinta cajas OWL solo si score ≥ 0.3.
+- **Pósters:** `poster_src` sidecar; nunca URLs Amazon en `poster_path` TMDB; `no_poster` fuera del sitio. Traza: `poster_bytes.csv` (`tmdb_hash` + `sha256` de los bytes). Autopsy «otras hojas»: `poster_alts.json` (reps CLIP); al seleccionar, autopsia de esa hoja (color, composición, ViTPose, MSI-Net, YuNet, OWL, título DetectText de `(id, file_path)`); sin cajas de la medida; Rek por ruta. Mapas alt `{id}_{stem}.png`. Sidecars geom: `poster_alts_faces.json`, `poster_alts_owl.json`, `poster_alts_text.json`. Medida del ensayo = `p[2]`.
+- **Color:** essay Río = 6 familias de matiz; autopsy Paleta = k-means K=5 de la hoja; no mezclar con las 6 cuotas. Autopsy mapa de calor = MSI-Net, no el centroide OpenCV de balance.
+- **Medio:** autopsy = Rekognition Custom Labels (`medium_cl`); ensayo / `painted` = CLIP `p_painted`. CLIP en autopsy es nota; si CL falta, cajón CLIP (0.6 / 0.4).

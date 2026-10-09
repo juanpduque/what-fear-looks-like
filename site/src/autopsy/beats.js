@@ -1,7 +1,9 @@
 import { pct, num } from '../shared/format.js';
-import { BEAT_MODES, creatureLabel } from './layers.js';
+import { posterAltsFor, rekAltFor } from './data.js';
+import { BEAT_MODES, creatureLabel, isGroupPrimary, resolveMedium, preferredWeaponBoxes, rekWeaponPresent, topHueFamily } from './layers.js';
 import { faceBody } from './faces.js';
 import { novaCreatureNote, novaLetterNote } from './nova.js';
+import { jevCreatureNote } from './jev.js';
 
 const t = (...args) =>
   typeof window.t === 'function' ? window.t(...args) : args[0];
@@ -14,15 +16,42 @@ function escapeHtml(s) {
     .replace(/"/g, '&quot;');
 }
 
+function mediumName(pred) {
+  return pred ? t(`lookup_${pred}`) : t('lab_medium_na');
+}
+
+function objectBody(p, a) {
+  const year = p[0];
+  const id = p[7];
+  const m = resolveMedium(a);
+  const vars = {
+    year,
+    id,
+    medium: mediumName(m.pred),
+    conf: m.conf == null ? '—' : pct(m.conf),
+    painted: a.painted == null ? '—' : pct(a.painted),
+  };
+  const alts = posterAltsFor(id);
+  const base = m.source === 'cl' ? t('autopsy_body_object', vars) : t('autopsy_body_object_clip', vars);
+  if (alts.length < 2) return base;
+  const rekN = alts.filter((row) => rekAltFor(id, row.path)).length;
+  const altsLine = t('autopsy_body_alts', { n: alts.length });
+  if (rekN < 1) return `${base} ${altsLine}`;
+  return `${base} ${altsLine} ${t('autopsy_body_alts_rek', { n: rekN })}`;
+}
+
 function poseBody(a) {
   const pose = a.pose;
   if (!pose?.n) return t('autopsy_body_pose_none');
-  return t('autopsy_body_pose', {
+  const vars = {
     n: pose.n,
     spread: pose.spread == null ? '—' : num(pose.spread, 2),
     asym: pose.asym == null ? '—' : num(pose.asym, 2),
     conf: pose.conf == null ? '—' : pct(pose.conf),
-  });
+  };
+  if (isGroupPrimary(pose)) return t('autopsy_body_pose_group', vars);
+  if (pose.n > 1) return t('autopsy_body_pose_many', vars);
+  return t('autopsy_body_pose', vars);
 }
 
 /** Chapter VI intro: interpretive findings, then scroll lights each instrument. */
@@ -93,18 +122,29 @@ export function modeBlurb(beatId, modeId, p, a) {
   if (!modeId || !BEAT_MODES[beatId]?.some((m) => m.id === modeId)) return '';
   const comp = a?.comp || {};
   const sem = a?.sem || {};
+  const topBand = topHueFamily(a);
+  const medium = resolveMedium(a);
   const vars = {
     L: a?.L ?? p?.[4] ?? '—',
     dark: pct(a?.dark),
     red: pct(a?.red),
     sat: pct(a?.sat),
+    pal_n: a?.pal?.length || 5,
+    band: topBand.name,
+    band_pct: pct(topBand.v),
     blood: pct(sem.blood),
+    sal_m: a?.sal?.m != null ? pct(a.sal.m) : '—',
     typo: a?.typo || '—',
     taxis: a?.taxis == null ? '—' : num(a.taxis, 2),
     txt: pct(comp.txt),
     painted: a?.painted == null ? '—' : pct(a.painted),
+    medium: mediumName(medium.pred),
+    conf: medium.conf == null ? '—' : pct(medium.conf),
     creature: creatureLabel(p, a),
     cscore: a?.cscore != null ? pct(a.cscore) : '—',
+    w_n: preferredWeaponBoxes(p, a).length,
+    rek_w: rekWeaponPresent(a) ? t('yn_yes') : t('yn_no'),
+    clip_w: a?.sem?.weapon != null ? pct(a.sem.weapon) : '—',
     sym: pct(comp.sym),
     neg: pct(comp.neg),
     diag: pct(comp.diag),
@@ -122,11 +162,10 @@ export function modeBlurb(beatId, modeId, p, a) {
 
 export function buildBeats(p, a) {
   const title = p[3];
-  const year = p[0];
-  const id = p[7];
   const cLabel = creatureLabel(p, a);
   const comp = a.comp || {};
   const sem = a.sem || {};
+  const topBand = topHueFamily(a);
 
   const list = [
     {
@@ -134,7 +173,7 @@ export function buildBeats(p, a) {
       tilt: 1,
       kicker: t('autopsy_kicker_object'),
       title: title,
-      body: t('autopsy_body_object', { year, id }),
+      body: objectBody(p, a),
     },
     {
       id: 'color',
@@ -147,6 +186,9 @@ export function buildBeats(p, a) {
         red: pct(a.red),
         sat: pct(a.sat),
         blood: pct(sem.blood),
+        pal_n: a.pal?.length || 5,
+        band: topBand.name,
+        band_pct: pct(topBand.v),
       }),
     },
     {
@@ -166,7 +208,6 @@ export function buildBeats(p, a) {
           typo: a.typo || '—',
           taxis: a.taxis == null ? '—' : num(a.taxis, 2),
           txt: pct(comp.txt),
-          painted: a.painted == null ? '—' : pct(a.painted),
         }) + novaLetterNote(a),
     },
     {
@@ -180,7 +221,13 @@ export function buildBeats(p, a) {
               c: cLabel,
               score: a.cscore != null ? pct(a.cscore) : '—',
             })
-          : t('autopsy_body_creature_none')) + novaCreatureNote(a, p),
+          : t('autopsy_body_creature_none')) +
+        jevCreatureNote(a, p) +
+        novaCreatureNote(a, p) +
+        ` ${t('autopsy_body_weapon', {
+          n: preferredWeaponBoxes(p, a).length,
+          rek: rekWeaponPresent(a) ? t('yn_yes') : t('yn_no'),
+        })}`,
     },
     {
       id: 'composition',
