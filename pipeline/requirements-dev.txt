@@ -1,0 +1,9 @@
+# Dev / CI tooling for the pipeline. Not needed to run the pipeline itself.
+#   pip install -r pipeline/requirements-dev.txt
+#
+# The test suite (pipeline/tests/) is standard-library only — it validates the
+# committed canonical_ids.txt + site/data/*.js, so it needs neither the core
+# nor the ML requirements.
+
+pytest>=7.4
+ruff>=0.5

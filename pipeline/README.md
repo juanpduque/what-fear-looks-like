@@ -126,6 +126,24 @@ site/Pages deploy serves them). Everything else under `pipeline/data/` that is
 a large derived output is gitignored — rebuild it from the pipeline rather than
 committing it.
 
+## Tests
+
+A lightweight pytest suite in `tests/` guards the published invariants. It is
+**standard-library only** — it validates the committed `data/canonical_ids.txt`
+and `site/data/*.js`, so it needs neither the core nor the ML requirements and
+runs in ~1.5 s.
+
+```bash
+pip install -r pipeline/requirements-dev.txt
+cd pipeline && python -m pytest
+```
+
+Covers: `corpus.py` (n, dedup, caching, expected band), `explorer.js` /
+`lookup.js` schema + corpus match, poster-globals ids ⊆ corpus, and front-end
+`n` consistency across README / index / i18n / series (via
+`sync_front_n.check_front_n`). CI (`.github/workflows/ci.yml`) runs these plus
+ESLint on every PR; ruff and Prettier run advisory-only for now.
+
 ## Legacy
 
 Superseded scripts kept for reference live in `legacy/` — see
