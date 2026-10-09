@@ -10,6 +10,7 @@ check_site_invariants.py. Raw per-poster CSVs are only read.
 """
 from __future__ import annotations
 
+import csv
 import json
 import sys
 from pathlib import Path
@@ -26,17 +27,44 @@ GLOBAL_SRC = DATA / "site_globals_full"
 ID_GLOBALS = ["pose.js", "creature_boxes.js", "weapon_boxes.js"]
 # Globals that are a 1:1 copy of a full JSON in data/: rebuild the unpruned
 # copy from it so ids that join the corpus later still get their entries.
+# OWLv2 weapon boxes are ~60% correct at the site's 0.3 score floor; Nova Pro
+# judged every corpus box (qa_creature_weapon_boxes.py), so drop the ones it
+# called false positives before publishing.
+WEAPON_QA = DATA / "qa" / "qa_creature_weapon_boxes.csv"
+
+
+def _box_key(pid: str, box) -> tuple:
+    return (pid, tuple(round(float(v), 3) for v in box))
+
+
+def drop_nova_false_positives(data: dict) -> dict:
+    if not WEAPON_QA.is_file():
+        raise SystemExit(
+            f"falta {WEAPON_QA.relative_to(HERE.parent)}: sin veredictos Nova no se "
+            f"publican cajas de armas (corre pipeline/qa_creature_weapon_boxes.py)"
+        )
+    bad = set()
+    with WEAPON_QA.open(encoding="utf-8", newline="") as f:
+        for r in csv.DictReader(f):
+            if r["kind"] == "weapon" and r["status"] == "ok" and r["verdict"] == "false_positive":
+                bad.add(_box_key(r["id"], json.loads(r["box"])))
+    out = {pid: [b for b in boxes if _box_key(pid, b["box"]) not in bad] for pid, boxes in data.items()}
+    dropped = sum(map(len, data.values())) - sum(map(len, out.values()))
+    print(f"  weapon_boxes: {dropped:,} cajas descartadas por Nova (false_positive)")
+    return out
+
+
 JSON_SOURCES = {
-    "weapon_boxes.js": (DATA / "weapon_boxes.json", "window.WEAPON_BOXES"),
+    "weapon_boxes.js": (DATA / "weapon_boxes.json", "window.WEAPON_BOXES", drop_nova_false_positives),
 }
 
 
 def refresh_from_json(name: str) -> None:
-    src_json, decl = JSON_SOURCES[name]
-    data = json.loads(src_json.read_text(encoding="utf-8"))
+    src_json, decl, clean = JSON_SOURCES[name]
+    data = clean(json.loads(src_json.read_text(encoding="utf-8")))
     GLOBAL_SRC.mkdir(parents=True, exist_ok=True)
     (GLOBAL_SRC / name).write_text(
-        f"/* {name} n={len(data)} — pipeline/data/{src_json.name} */\n"
+        f"/* {name} n={len(data)} — pipeline/data/{src_json.name}, {clean.__name__} */\n"
         f"{decl}={json.dumps(data, ensure_ascii=False, separators=(',', ':'))};\n",
         encoding="utf-8",
     )
