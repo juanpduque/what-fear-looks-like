@@ -53,13 +53,7 @@ def _fuzzy_title(text: str, title: str) -> float:
     return float(min(1.0, r))
 
 
-def title_line_hits(lines: list[dict], title: str, min_match: float):
-    """DetectText lines that spell the title, as [(match, box, text)].
-
-    Letter-spaced titles ("A L I E N") come back as one line per letter, and
-    no single letter fuzzy-matches the title. When no line matches alone,
-    group lines sharing a row (left to right) and match the joined text.
-    """
+def _boxed_lines(lines: list[dict]) -> list[tuple[tuple[float, ...], str]]:
     boxed = []
     for ln in lines:
         box = ln.get("box") if isinstance(ln, dict) else None
@@ -70,15 +64,11 @@ def title_line_hits(lines: list[dict], title: str, min_match: float):
         except (TypeError, ValueError):
             continue
         boxed.append((b, ln.get("text") or ""))
+    return boxed
 
-    hits = []
-    for b, text in boxed:
-        m = _fuzzy_title(text, title)
-        if m >= min_match:
-            hits.append((m, b, text))
-    if hits:
-        return hits
 
+def _multi_line_rows(boxed: list[tuple]) -> list[list[tuple]]:
+    """Lines sharing a text row, left to right; only rows with 2+ lines."""
     rows: list[list[tuple]] = []
     for b, text in sorted(boxed, key=lambda x: x[0][1] + x[0][3] / 2):
         cy, h = b[1] + b[3] / 2, b[3]
@@ -89,11 +79,32 @@ def title_line_hits(lines: list[dict], title: str, min_match: float):
                 break
         else:
             rows.append([(b, text)])
-    best = None
+    out = []
     for row in rows:
-        if len(row) < 2:
-            continue
-        row.sort(key=lambda x: x[0][0])
+        if len(row) >= 2:
+            row.sort(key=lambda x: x[0][0])
+            out.append(row)
+    return out
+
+
+def title_line_hits(lines: list[dict], title: str, min_match: float):
+    """DetectText lines that spell the title, as [(match, box, text)].
+
+    Letter-spaced titles ("A L I E N") come back as one line per letter, and
+    no single letter fuzzy-matches the title. When no line matches alone,
+    group lines sharing a row (left to right) and match the joined text.
+    """
+    boxed = _boxed_lines(lines)
+    hits = []
+    for b, text in boxed:
+        m = _fuzzy_title(text, title)
+        if m >= min_match:
+            hits.append((m, b, text))
+    if hits:
+        return hits
+
+    best = None
+    for row in _multi_line_rows(boxed):
         joined = " ".join(text for _, text in row)
         m = _fuzzy_title(joined, title)
         if m >= min_match and (best is None or m > best[0]):
@@ -102,6 +113,31 @@ def title_line_hits(lines: list[dict], title: str, min_match: float):
         return []
     m, row, joined = best
     return [(m, b, joined) for b, _ in row]
+
+
+def aka_line_hits(lines: list[dict], akas, min_ratio: float = 0.8):
+    """Like title_line_hits, but for alternative release titles (AKAs).
+
+    _fuzzy_title's substring bonus is too loose for long or foreign AKAs (a
+    director's name inside "Psicosis de Alfred Hitchcock" scores 0.90), so a
+    line or row must match a whole AKA by plain sequence ratio.
+    """
+    boxed = _boxed_lines(lines)
+    cands = [[bt] for bt in boxed] + _multi_line_rows(boxed)
+    best = None
+    for aka in akas:
+        target = _norm(aka)
+        if len(target) < 3:
+            continue
+        for cand in cands:
+            joined = " ".join(text for _, text in cand)
+            m = SequenceMatcher(None, _norm(joined), target).ratio()
+            if m >= min_ratio and (best is None or m > best[0]):
+                best = (m, cand, joined)
+    if best is None:
+        return []
+    m, cand, joined = best
+    return [(m, b, joined) for b, _ in cand]
 
 
 def _pos_bonus(cy: float) -> float:

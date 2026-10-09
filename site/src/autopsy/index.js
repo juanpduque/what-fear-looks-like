@@ -367,6 +367,8 @@ function viewAnalysis() {
   a.pose = pose || { n: 0 };
   a.sal = salAltFor(id, path);
   const title = textAltFor(id, path);
+  // TMDB files sheets with no language as textless art: no title to box.
+  a.altTextless = !title && posterAltsFor(id).some((row) => row.path === path && !row.iso);
   a.comp = {
     ...(compAltFor(id, path) || {}),
     tx: title ? title[0] : null,
