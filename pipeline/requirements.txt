@@ -1,0 +1,19 @@
+# Core color pipeline — the metrics the published site actually depends on.
+#   python3 fear_pipeline.py / build_corpus.py / build_site.py / export_site_series.py
+#
+# Minimum supported interpreter: Python 3.9 (the code uses PEP 585/604 generics
+# only under `from __future__ import annotations`, which is 3.9-safe).
+#
+# Pins use lower bounds (>=) rather than exact (==) so arm64/Apple-Silicon
+# wheels resolve cleanly; regenerate a locked set with `pip freeze` if you need
+# byte-for-byte reproducibility.
+#
+# Install:  pip install -r pipeline/requirements.txt
+# ML / cloud / scraping extras live in requirements-ml.txt.
+
+pandas>=1.5
+numpy>=1.23
+pillow>=9.0
+scikit-learn>=1.1
+matplotlib>=3.6
+requests>=2.28

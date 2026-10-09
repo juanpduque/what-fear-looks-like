@@ -25,9 +25,14 @@ Every script is resumable and writes into `pipeline/data/`.
 
 ### 1. Color metrics (core)
 
+Dependencies are pinned in `pipeline/requirements.txt` (core color pass) and
+`pipeline/requirements-ml.txt` (CLIP / segmentation / AWS / scraping extras).
+See `pipeline/README.md` for a script-by-script map of the canonical production
+path vs. exploratory tooling.
+
 ```bash
 cd pipeline
-pip3 install pandas numpy pillow scikit-learn matplotlib requests
+pip3 install -r requirements.txt            # core color pipeline
 python3 fear_pipeline.py                    # 1,000-poster validation sample
 python3 fear_pipeline.py --all              # full color pass on local posters
 # after a full run (or any metric recompute), drop Animation + Music + non-EN
@@ -71,7 +76,7 @@ English titles with no TMDB `poster_path` are recovered in order:
 
 ```bash
 pip3 install requests
-# optional browser fallback:
+# optional browser fallback (also in requirements-ml.txt):
 pip3 install playwright && playwright install chromium
 
 python3 pull_imdb_posters.py --min-votes 2 --limit 25
@@ -83,7 +88,7 @@ python3 analyze_color_ids.py --ids-file data/imdb_poster_ids.csv
 ### 2. Semantic chapters (CLIP + face detection)
 
 ```bash
-pip3 install torch open_clip_torch opencv-python shapely
+pip3 install -r requirements-ml.txt   # torch, open_clip, opencv, shapely, transformers, …
 python3 clip_embed.py              # embeddings cache -> clip_embeddings.npz (~20-40 min CPU)
 python3 clip_census.py             # monster census -> census.csv, census_decade.json
 python3 clip_medium.py             # painted vs. photographic -> medium.csv
