@@ -560,6 +560,7 @@ footer .logo span{color:var(--blood)}
 .studios-card-thumbs img{width:100%;aspect-ratio:2/3;object-fit:cover;display:block;background:var(--bg2)}
 .studios-card-name{font-family:var(--display);font-size:22px;line-height:1.05;text-transform:uppercase}
 .studios-card-n{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--amber)}
+.studios-cta-wrap{text-align:center}
 .studios-cta{display:inline-block;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
   color:var(--ink);text-decoration:none;border:1px solid rgba(232,228,218,.28);border-radius:2px;padding:12px 18px}
 .studios-cta:hover,.studios-cta:focus-visible{border-color:var(--amber);color:var(--amber)}
