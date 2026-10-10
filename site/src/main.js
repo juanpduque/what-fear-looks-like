@@ -9,6 +9,7 @@ import { initFlickerTitles } from './effects/flicker-titles.js';
 initFlickerTitles();
 
 import('./charts/essay.js').then(({ initEssayCharts }) => initEssayCharts());
+import('./studios-teaser.js').then(({ initStudiosTeaser }) => initStudiosTeaser());
 
 function nearViewport(el, margin = 480) {
   if (!el) return false;
