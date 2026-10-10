@@ -54,6 +54,8 @@ let savedScroll = 0;
 let colorMapsToken = 0;
 let modeByBeat = {};
 let peekPath = null;
+// Pixel stats measured in the browser for the alternate sheet on view.
+let altPixels = null;
 
 function norm(s) {
   return (s || '')
@@ -363,6 +365,16 @@ function viewAnalysis() {
     a.cboxes = owl.c;
     a.wboxes = owl.w;
   }
+  // lookup.js color numbers belong to the measured sheet: show the alternate's
+  // own pixel stats once analyzeFromUrl has them ('—' until then). CLIP blood
+  // was never scored on alternates.
+  const px = altPixels?.path === path ? altPixels : null;
+  a.L = px ? px.L : null;
+  a.dark = px ? px.dark : null;
+  a.red = px ? px.red : null;
+  a.sat = px ? px.sat : null;
+  a.bands = px ? px.bands : null;
+  a.sem = { ...(current.a.sem || {}), blood: null };
   const pose = poseAltFor(id, path);
   a.pose = pose || { n: 0 };
   a.sal = salAltFor(id, path);
@@ -420,9 +432,32 @@ function scheduleColorMaps(p, a) {
       if (token !== colorMapsToken || current?.p[7] !== p[7]) return;
       if (alt !== viewingAlt()) return;
       paintColorOverlays(maps);
-      if (viewingAlt()) applyAltPixelLabs(maps);
+      if (viewingAlt()) {
+        applyAltPixelLabs(maps);
+        altPixels = {
+          path: peekPath,
+          L: Math.round(maps.meanL || 0),
+          dark: maps.darkShare,
+          red: maps.redShare,
+          sat: maps.meanSat,
+          bands: maps.bands,
+        };
+        refreshBeatText();
+      }
     })
     .catch((err) => console.warn('[autopsy] color maps failed', err));
+}
+
+/** Re-render beat copy in place (keeps scroll/observer) after the view's numbers change. */
+function refreshBeatText() {
+  if (!current) return;
+  const fresh = buildBeats(current.p, viewAnalysis());
+  const host = els().beats;
+  fresh.forEach((beat) => {
+    const body = host?.querySelector(`.au-beat[data-beat="${beat.id}"] .au-beat-body`);
+    if (body) body.textContent = beat.body;
+  });
+  applyBeat(beatIndex);
 }
 
 function applyAltPixelLabs(maps) {
