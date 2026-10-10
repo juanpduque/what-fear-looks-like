@@ -1,0 +1,76 @@
+:root{
+  --bg:#07080b; --bg2:#101218; --ink:#e8e4da; --ink-dim:#9a958a;
+  --blood:#c1121f; --amber:#e5a00d; --line:#2a2a30;
+  --serif:'Source Serif 4',Georgia,serif;
+  --display:'Anton','Arial Narrow',Impact,sans-serif;
+  --mono:'Space Mono',Menlo,monospace;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+body{
+  background-color:var(--bg);
+  background-image:radial-gradient(ellipse 100% 85% at 50% 30%, #12161e 0%, #07080b 60%, #030408 100%);
+  color:var(--ink);font-family:var(--serif);font-size:18px;line-height:1.6;overflow-x:hidden;
+}
+::selection{background:var(--blood);color:#fff}
+a{color:var(--amber)}
+main{max-width:960px;margin:0 auto;padding:72px 24px 24px}
+
+.site-chrome{position:fixed;top:14px;right:14px;z-index:90}
+.lang-switch{display:flex;font-family:var(--mono);font-size:11px;letter-spacing:.12em;
+  border:1px solid rgba(232,228,218,.28);border-radius:2px;overflow:hidden;
+  background:rgba(10,10,12,.72);backdrop-filter:blur(8px)}
+.lang-switch button{appearance:none;border:0;background:transparent;color:var(--ink-dim);
+  padding:8px 11px;cursor:pointer;font:inherit;letter-spacing:inherit}
+.lang-switch button.is-active{background:var(--blood);color:#fff}
+.lang-switch button:hover{color:var(--ink)}
+
+.st-head{margin-bottom:48px}
+.st-back{font-family:var(--mono);font-size:12px;letter-spacing:.12em;color:var(--ink-dim);text-decoration:none}
+.st-back:hover{color:var(--amber)}
+.kicker{margin-top:28px;font-family:var(--mono);font-size:12px;letter-spacing:.25em;text-transform:uppercase;color:var(--blood)}
+h1{font-family:var(--display);font-size:clamp(48px,9vw,104px);line-height:.92;text-transform:uppercase;margin:.15em 0 .35em}
+.st-dek{max-width:680px;color:var(--ink);font-size:20px}
+.st-h2{font-family:var(--mono);font-size:12px;letter-spacing:.2em;text-transform:uppercase;color:var(--ink-dim);
+  border-bottom:1px solid var(--line);padding-bottom:10px;margin-bottom:8px}
+
+.st-list{list-style:none}
+.st-item{display:grid;grid-template-columns:44px 1fr;gap:0 18px;padding:44px 0 40px;border-bottom:1px solid var(--line)}
+.st-rank{font-family:var(--display);font-size:34px;line-height:1;color:var(--blood)}
+.st-name{font-family:var(--display);font-size:clamp(26px,4vw,38px);line-height:1;text-transform:uppercase}
+.st-stat{font-family:var(--mono);font-size:12px;line-height:1.7;color:var(--ink-dim);margin:12px 0 12px}
+.st-stat b{color:var(--amber);font-weight:700}
+.st-bar{height:6px;background:var(--line);border-radius:3px;overflow:hidden;margin-bottom:22px}
+.st-bar i{display:block;height:100%;background:var(--blood)}
+.st-bio{max-width:700px;font-size:17px;line-height:1.65;color:var(--ink)}
+.st-src{font-family:var(--mono);font-size:11px;line-height:1.8;color:var(--ink-dim);margin-top:12px}
+.st-src a{color:var(--ink-dim);white-space:nowrap}
+.st-src a:hover{color:var(--amber)}
+/* Collapsed: two full rows; the toggle reveals the rest. */
+.st-strip{--thumb:62px;--gap:10px;display:grid;grid-template-columns:repeat(auto-fill,var(--thumb));
+  grid-auto-rows:calc(var(--thumb)*1.5);gap:var(--gap);margin-top:20px;
+  /* padding-top leaves room for the hover lift inside overflow:hidden */
+  padding-top:4px;max-height:calc(var(--thumb)*3 + var(--gap) + 4px);overflow:hidden}
+.st-strip.is-open{max-height:none}
+.st-strip a{display:block;width:var(--thumb);height:100%;background:var(--bg2);border:1px solid var(--line);
+  overflow:hidden;transition:transform .15s ease,border-color .15s ease}
+.st-strip a:hover,.st-strip a:focus-visible{transform:translateY(-3px);border-color:var(--amber)}
+.st-strip img{width:100%;height:100%;object-fit:cover;display:block}
+.st-toggle{appearance:none;margin-top:16px;background:transparent;color:var(--ink);cursor:pointer;
+  font-family:var(--mono);font-size:11px;letter-spacing:.12em;text-transform:uppercase;
+  border:1px solid rgba(232,228,218,.28);border-radius:2px;padding:9px 14px}
+.st-toggle:hover,.st-toggle:focus-visible{border-color:var(--amber);color:var(--amber)}
+.st-toggle[hidden]{display:none}
+
+.st-method{margin:56px 0 24px}
+.st-method p{max-width:700px;color:var(--ink-dim);font-size:16px;margin-top:12px}
+
+footer{padding:40px 24px 60px;text-align:center;font-family:var(--mono);font-size:12px}
+footer a{color:var(--ink-dim);text-decoration:none}
+footer a:hover{color:var(--amber)}
+
+@media(max-width:560px){
+  main{padding-top:60px}
+  .st-item{grid-template-columns:30px 1fr;gap:0 12px}
+  .st-rank{font-size:26px}
+  .st-strip{--thumb:54px;--gap:8px}
+}

@@ -1240,6 +1240,21 @@
     "es": "Por cada póster extrajimos una paleta dominante de 5 colores (k-means en CIELAB, ponderada por saturación), brillo medio (L*), saturación media, cuota de píxeles casi negros, cuota de píxeles rojo sangre y distribución por familia de matiz. Conteos de rostros: las estadísticas poblacionales usan detección YuNet a la resolución de análisis (suelos — rostros pequeños, inclinados o muy estilizados pueden escapar); los conteos en especímenes individuales están verificados a mano contra el arte. Las notas de cada gráfico detallan la medida donde aparece."
   },
   {
+    "id": "studios_kicker",
+    "en": "Who designs fear",
+    "es": "Quién diseña el miedo"
+  },
+  {
+    "id": "studios_title",
+    "en": "Someone Designed Every Sheet",
+    "es": "Alguien diseñó cada hoja"
+  },
+  {
+    "id": "sources_key_art",
+    "en": "Poster-design credits from <a href=\"https://www.impawards.com/\">IMPAwards</a>, verified against each film's IMDb title (see <a href=\"studios/\">Who designs fear</a>).",
+    "es": "Créditos de diseño de pósters de <a href=\"https://www.impawards.com/\">IMPAwards</a>, verificados contra el título de IMDb de cada película (ver <a href=\"studios/\">Quién diseña el miedo</a>)."
+  },
+  {
     "id": "sources_credits",
     "en": "Base dataset by Tanya Shapiro (TidyTuesday 2022). This product uses the TMDB API but is not endorsed or certified by TMDB. Full code and data on <a href=\"https://github.com/juanpduque/what-fear-looks-like\">GitHub</a>. Industry context: Stephen Follows' <a href=\"https://stephenfollows.com/p/the-horror-movie-report\">Horror Movie Report</a>.",
     "es": "Dataset base de Tanya Shapiro (TidyTuesday 2022). Este producto usa la API de TMDB pero no está respaldado ni certificado por TMDB. Código y datos completos en <a href=\"https://github.com/juanpduque/what-fear-looks-like\">GitHub</a>. Contexto de industria: el <a href=\"https://stephenfollows.com/p/the-horror-movie-report\">Horror Movie Report</a> de Stephen Follows."
@@ -1260,6 +1275,11 @@
     "id": "footer_demo",
     "en": "VHS demo · Halloween",
     "es": "Demo VHS · Halloween"
+  },
+  {
+    "id": "footer_studios",
+    "en": "Who designs fear · key art studios",
+    "es": "Quién diseña el miedo · estudios de key art"
   },
   {
     "id": "footer_github",

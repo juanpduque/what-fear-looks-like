@@ -575,6 +575,19 @@
 
 <!-- Explorer grid retired: Dissect any poster (#lookup) is the entry point. -->
 
+<!-- ============ KEY ART STUDIOS (teaser → studios/) ============ -->
+<section class="chart-block studios-teaser" id="studios-teaser">
+  <div class="prose reveal">
+    <p class="kicker" data-i18n="studios_kicker">Who designs fear</p>
+    <h2 class="section-title" data-i18n="studios_title">Someone Designed Every Sheet</h2>
+    <p data-studios-lede></p>
+  </div>
+  <div class="studios-top" data-studios-top></div>
+  <div class="prose studios-cta-wrap">
+    <a class="studios-cta" href="studios/" data-studios-cta></a>
+  </div>
+</section>
+
 <!-- ============ BRIDGE / CODA ============ -->
 <section class="chart-block" id="bridge" style="padding-bottom:20px">
   <div class="prose reveal">
@@ -592,6 +605,7 @@
       <div class="sources-body">
         <p data-i18n="sources_corpus">Film list and poster images from <a href="https://www.themoviedb.org/">The Movie Database (TMDB)</a>. The published corpus is <strong>33,622</strong> English-language horror features, already released, with a servable poster, a valid year (1900–2026), no adult flag, and without Animation, Music, or TV Movie. Existing exclusion lists in <code>pipeline/data/excluded_*.csv</code> still apply. The id list is <code>pipeline/data/canonical_ids.txt</code> (see <code>docs/CORPUS.md</code>).</p>
         <p data-i18n="sources_measures">For each poster we extracted a 5-color dominant palette (k-means in CIELAB, saturation-weighted), mean brightness (L*), mean saturation, share of near-black pixels, share of blood-red pixels, and hue-family distribution. Face counts: population statistics use YuNet detection at analysis resolution (floors — small, tilted or heavily stylized faces can escape); the counts shown on individually displayed specimens are hand-verified against the artwork. Chart notes spell out each measure where it appears.</p>
+        <p data-i18n="sources_key_art">Poster-design credits from <a href="https://www.impawards.com/">IMPAwards</a>, verified against each film's IMDb title.</p>
         <p data-i18n="sources_credits">Base dataset by Tanya Shapiro (TidyTuesday 2022). This product uses the TMDB API but is not endorsed or certified by TMDB. Full code and data on <a href="https://github.com/juanpduque/what-fear-looks-like">GitHub</a>. Industry context: Stephen Follows' <a href="https://stephenfollows.com/p/the-horror-movie-report">Horror Movie Report</a>.</p>
       </div>
     </details>
@@ -605,6 +619,8 @@
   <p style="margin-top:8px" data-i18n="footer_tagline">Data stories with teeth · medium.com/pulp-analytics</p>
   <p class="footer-links" style="margin-top:12px;font-family:var(--mono);font-size:11px;letter-spacing:.12em">
     <a href="demos/poster-decompose/" data-i18n="footer_demo">VHS demo · Halloween</a>
+    <span aria-hidden="true"> · </span>
+    <a href="studios/" data-i18n="footer_studios">Who designs fear · key art studios</a>
     <span aria-hidden="true"> · </span>
     <a href="https://github.com/juanpduque/what-fear-looks-like" data-i18n="footer_github">Code &amp; data on GitHub</a>
   </p>

@@ -126,6 +126,7 @@ deploy artifacts. They are listed in `.gitignore`; regenerate locally:
 | Nova QA notes in the autopsy (`qa/qa_census.csv`, `qa_faces.csv`, `qa_title_ocr.csv`, `qa_typography.csv`) | `qa_census.py`, `qa_faces.py`, `qa_title_ocr.py`, `qa_typography.py` (AWS Bedrock) |
 | Medium Custom Labels (`qa/medium_custom_labels/infer_full.csv` → `medium_cl.json`) | `aws_custom_labels_infer.py` (AWS), then `export_medium_cl.py` |
 | Alternate-sheet sidecars (`site/data/poster_alts_*.json`, `site/saliency_alts/`) | per-sheet runners `yunet_alts.py`, `rekognition_text_boxes_alts.py`, `rekognition_multi_variants.py`, `multi_analyze_alts.py`, `msinet_alts.py`, `vitpose_alts.py`; then `export_poster_alts.py`, `export_poster_alts_geom.py`, `export_poster_alts_metrics.py`, `export_saliency_webp.py` |
+| Key art studios (`site/data/studios.json`, `key_art.json`) | `pull_impawards_credits.py` → `verify_impawards_credits.py --cache DIR` → `export_key_art.py` |
 
 The per-sheet and AWS runners were executed on workshop EC2/SageMaker
 accounts; most of their launch scripts are account-specific and are kept out

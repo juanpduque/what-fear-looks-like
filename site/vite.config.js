@@ -18,6 +18,7 @@ export default defineConfig({
       targets: [
         { src: 'assets', dest: '.' },
         { src: 'data', dest: '.' },
+        { src: 'studios/i18n.json', dest: 'studios' },
         { src: 'saliency', dest: '.' },
         { src: 'saliency_alts', dest: '.' },
         { src: 'i18n/*.js', dest: 'i18n' },
@@ -60,6 +61,7 @@ export default defineConfig({
       input: {
         essay: resolve(__dirname, 'index.html'),
         demo: resolve(__dirname, 'demos/poster-decompose/index.html'),
+        studios: resolve(__dirname, 'studios/index.html'),
       },
       output: {
         manualChunks(id) {

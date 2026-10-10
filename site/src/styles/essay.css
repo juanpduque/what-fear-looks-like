@@ -547,3 +547,25 @@ footer .logo span{color:var(--blood)}
 @media(max-width:520px){.site-chrome{top:10px;right:10px}
   .lang-switch{font-size:10px}
   .lang-switch button{padding:7px 9px}}
+
+/* ---------- key art studios teaser (→ studios/) ---------- */
+.studios-teaser .kicker{margin-bottom:6px}
+.studios-top{max-width:900px;margin:8px auto 28px;padding:0 24px;display:grid;
+  grid-template-columns:repeat(3,minmax(0,1fr));gap:18px}
+.studios-card{display:flex;flex-direction:column;gap:6px;padding:14px;text-decoration:none;color:var(--ink);
+  border:1px solid var(--line);border-radius:2px;background:rgba(16,18,24,.6);
+  transition:border-color .15s ease,transform .15s ease}
+.studios-card:hover,.studios-card:focus-visible{border-color:var(--amber);transform:translateY(-2px)}
+.studios-card-thumbs{display:grid;grid-template-columns:repeat(3,1fr);gap:6px;margin-bottom:8px}
+.studios-card-thumbs img{width:100%;aspect-ratio:2/3;object-fit:cover;display:block;background:var(--bg2)}
+.studios-card-name{font-family:var(--display);font-size:22px;line-height:1.05;text-transform:uppercase}
+.studios-card-n{font-family:var(--mono);font-size:11px;letter-spacing:.06em;color:var(--amber)}
+.studios-cta-wrap{text-align:center}
+.studios-cta{display:inline-block;font-family:var(--mono);font-size:12px;letter-spacing:.14em;text-transform:uppercase;
+  color:var(--ink);text-decoration:none;border:1px solid rgba(232,228,218,.28);border-radius:2px;padding:12px 18px}
+.studios-cta:hover,.studios-cta:focus-visible{border-color:var(--amber);color:var(--amber)}
+@media(max-width:640px){
+  .studios-top{grid-template-columns:1fr;gap:14px}
+  .studios-card{display:grid;grid-template-columns:120px 1fr;grid-template-rows:auto auto;column-gap:14px;align-items:end}
+  .studios-card-thumbs{grid-row:1 / span 2;margin:0}
+}

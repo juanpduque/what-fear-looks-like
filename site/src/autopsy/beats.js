@@ -1,6 +1,7 @@
 import { pct, num } from '../shared/format.js';
 import { posterAltsFor, rekAltFor } from './data.js';
 import { BEAT_MODES, creatureLabel, isGroupPrimary, resolveMedium, preferredWeaponBoxes, rekWeaponPresent, topHueFamily } from './layers.js';
+import { keyArtFor, studioSlug } from './data.js';
 import { faceBody } from './faces.js';
 import { novaCreatureNote, novaLetterNote } from './nova.js';
 import { jevCreatureNote } from './jev.js';
@@ -174,6 +175,7 @@ export function buildBeats(p, a) {
       kicker: t('autopsy_kicker_object'),
       title: title,
       body: objectBody(p, a),
+      credit: keyArtFor(p[7]),
     },
     {
       id: 'color',
@@ -302,6 +304,13 @@ function modesHtml(beat) {
       <p class="au-beat-mode-blurb" data-mode-blurb hidden></p>`;
 }
 
+function creditHtml(credit) {
+  if (!credit) return '';
+  const lang = document.documentElement.lang === 'es' ? 'es' : 'en';
+  const href = `studios/?lang=${lang}#${studioSlug(credit)}`;
+  return `<p class="au-beat-credit">${escapeHtml(t('autopsy_key_art'))} <a href="${href}">${escapeHtml(credit)}</a></p>`;
+}
+
 export function beatsHtml(beats) {
   return beats
     .map((beat, i) => {
@@ -310,6 +319,7 @@ export function beatsHtml(beats) {
           <div class="au-beat-kicker">${escapeHtml(beat.kicker)}</div>
           <h3 class="au-beat-title">${escapeHtml(beat.title)}</h3>
           <p class="au-beat-body">${escapeHtml(beat.body)}</p>
+          ${creditHtml(beat.credit)}
           ${modesHtml(beat)}
         </div>
       </section>`;

@@ -289,3 +289,7 @@ body.au-open{overflow:hidden}
 @media(prefers-reduced-motion:reduce){
   .au-frame .lk-art,.au-bar i,.lk-ov .lk-layer{transition:none}
 }
+
+.au-beat-credit{margin-top:10px;font-family:var(--mono);font-size:11px;letter-spacing:.08em;color:var(--ink-dim)}
+.au-beat-credit a{color:var(--amber);text-decoration:none;border-bottom:1px solid rgba(229,160,13,.4)}
+.au-beat-credit a:hover{border-bottom-color:var(--amber)}
