@@ -2,7 +2,6 @@
  * "Who Designs Fear": key art studios ranked by verified horror poster credits.
  * Data: ../data/studios.json (pipeline/export_key_art.py). Copy: ./i18n.json.
  */
-const STRIP_MAX = 14;
 const STORAGE = 'aof-lang';
 
 const esc = (s) =>
@@ -53,13 +52,11 @@ function render(lang, copy, data) {
         .map(([label, url]) => `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>`)
         .join(' · ');
       const strip = s.posters
-        .slice(0, STRIP_MAX)
         .map(
           ([id, title, year, path]) =>
             `<a href="../?id=${id}&lang=${lang}" title="${esc(`${title} (${year})`)}" aria-label="${esc(`${t('open_autopsy')}: ${title} (${year})`)}"><img src="${esc(posterSrc(id, path))}" alt="" loading="lazy"></a>`,
         )
         .join('');
-      const more = s.posters.length > STRIP_MAX ? `<span class="st-more">${t('more', { n: s.posters.length - STRIP_MAX })}</span>` : '';
       return `<li class="st-item" id="${slug(s.credit)}">
         <div class="st-rank">${i + 1}</div>
         <div>
@@ -68,12 +65,39 @@ function render(lang, copy, data) {
           <div class="st-bar" aria-hidden="true"><i style="width:${((100 * s.n) / top).toFixed(1)}%"></i></div>
           ${prof ? `<p class="st-bio">${esc(prof[lang] || prof.en)}</p>` : ''}
           ${links ? `<p class="st-src">${t('sources')}: ${links}</p>` : ''}
-          <div class="st-strip">${strip}${more}</div>
+          <div class="st-strip" id="strip-${i}">${strip}</div>
+          <button type="button" class="st-toggle" aria-controls="strip-${i}" aria-expanded="false" data-all="${esc(t('show_all', { n: num(s.posters.length) }))}" data-less="${esc(t('show_less'))}" hidden>${t('show_all', { n: num(s.posters.length) })}</button>
         </div>
       </li>`;
     })
     .join('');
+  wireToggles();
 }
+
+/** Show the toggle only where the collapsed strip actually hides posters. */
+function wireToggles() {
+  document.querySelectorAll('.st-toggle').forEach((btn) => {
+    const strip = document.getElementById(btn.getAttribute('aria-controls'));
+    btn.hidden = strip.scrollHeight <= strip.clientHeight + 2;
+    btn.addEventListener('click', () => {
+      const open = strip.classList.toggle('is-open');
+      btn.setAttribute('aria-expanded', open ? 'true' : 'false');
+      btn.textContent = open ? btn.dataset.less : btn.dataset.all;
+      if (!open) strip.closest('.st-item')?.scrollIntoView({ block: 'nearest' });
+    });
+  });
+}
+
+let resizeTimer = null;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(() => {
+    document.querySelectorAll('.st-toggle').forEach((btn) => {
+      const strip = document.getElementById(btn.getAttribute('aria-controls'));
+      if (!strip.classList.contains('is-open')) btn.hidden = strip.scrollHeight <= strip.clientHeight + 2;
+    });
+  }, 150);
+});
 
 async function main() {
   const [copy, data] = await Promise.all([
