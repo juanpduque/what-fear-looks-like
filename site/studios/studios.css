@@ -43,7 +43,7 @@ h1{font-family:var(--display);font-size:clamp(48px,9vw,104px);line-height:.92;te
 .st-bar i{display:block;height:100%;background:var(--blood)}
 .st-bio{max-width:700px;font-size:17px;line-height:1.65;color:var(--ink)}
 .st-src{font-family:var(--mono);font-size:11px;line-height:1.8;color:var(--ink-dim);margin-top:12px}
-.st-src a{color:var(--ink-dim)}
+.st-src a{color:var(--ink-dim);white-space:nowrap}
 .st-src a:hover{color:var(--amber)}
 /* Collapsed: two full rows; the toggle reveals the rest. */
 .st-strip{--thumb:62px;--gap:10px;display:grid;grid-template-columns:repeat(auto-fill,var(--thumb));

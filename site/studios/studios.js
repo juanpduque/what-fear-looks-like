@@ -74,15 +74,38 @@ function render(lang, copy, data) {
   wireToggles();
 }
 
-/** Show the toggle only where the collapsed strip actually hides posters. */
+/**
+ * Show the toggle only where the collapsed strip hides posters, and keep the
+ * clipped ones out of the tab order / accessibility tree until it opens.
+ */
+function syncStrip(btn) {
+  const strip = document.getElementById(btn.getAttribute('aria-controls'));
+  const open = strip.classList.contains('is-open');
+  const bottom = strip.getBoundingClientRect().bottom + 1;
+  let hiddenCount = 0;
+  [...strip.children].forEach((a) => {
+    const clipped = !open && a.getBoundingClientRect().top >= bottom - 4;
+    hiddenCount += clipped;
+    if (clipped) {
+      a.setAttribute('tabindex', '-1');
+      a.setAttribute('aria-hidden', 'true');
+    } else {
+      a.removeAttribute('tabindex');
+      a.removeAttribute('aria-hidden');
+    }
+  });
+  if (!open) btn.hidden = hiddenCount === 0;
+}
+
 function wireToggles() {
   document.querySelectorAll('.st-toggle').forEach((btn) => {
     const strip = document.getElementById(btn.getAttribute('aria-controls'));
-    btn.hidden = strip.scrollHeight <= strip.clientHeight + 2;
+    syncStrip(btn);
     btn.addEventListener('click', () => {
       const open = strip.classList.toggle('is-open');
       btn.setAttribute('aria-expanded', open ? 'true' : 'false');
       btn.textContent = open ? btn.dataset.less : btn.dataset.all;
+      syncStrip(btn);
       if (!open) strip.closest('.st-item')?.scrollIntoView({ block: 'nearest' });
     });
   });
@@ -91,12 +114,7 @@ function wireToggles() {
 let resizeTimer = null;
 window.addEventListener('resize', () => {
   clearTimeout(resizeTimer);
-  resizeTimer = setTimeout(() => {
-    document.querySelectorAll('.st-toggle').forEach((btn) => {
-      const strip = document.getElementById(btn.getAttribute('aria-controls'));
-      if (!strip.classList.contains('is-open')) btn.hidden = strip.scrollHeight <= strip.clientHeight + 2;
-    });
-  }, 150);
+  resizeTimer = setTimeout(() => document.querySelectorAll('.st-toggle').forEach(syncStrip), 150);
 });
 
 async function main() {
