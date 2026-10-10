@@ -24,6 +24,7 @@ Usage:
 Outputs: data/attributes.csv (per poster), data/attributes_decade.json
 """
 import argparse, json, time
+from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
 import numpy as np
 import pandas as pd
@@ -45,6 +46,15 @@ def metric(name, cols):
 
 # ============================= METRICS =====================================
 
+def _mser_regions(gray):
+    """MSER regions across OpenCV builds (tuple vs regions-only)."""
+    mser = cv2.MSER_create(delta=5, min_area=15, max_area=2000)
+    out = mser.detectRegions(gray)
+    regions = out[0] if isinstance(out, (tuple, list)) else out
+    if regions is None:
+        return []
+    return regions
+
 def _mser_text_boxes(gray):
     """Filtered MSER glyph candidates: small-to-medium, wider than tall or
     roughly square. Heuristic, not OCR: trend-comparable across eras, not
@@ -54,11 +64,15 @@ def _mser_text_boxes(gray):
     TMDB title match). Billboard glyphs often exceed these caps; mid-sheet
     texture fools MSER into false title boxes.
     """
-    mser = cv2.MSER_create(delta=5, min_area=15, max_area=2000)
-    regions, _ = mser.detectRegions(gray)
+    regions = _mser_regions(gray)
     H, W = gray.shape
     boxes = []
     for pts in regions:
+        pts = np.asarray(pts)
+        if pts.ndim == 1:
+            if pts.size < 2:
+                continue
+            pts = pts.reshape(-1, 2)
         x, y, w, h = cv2.boundingRect(pts.reshape(-1, 1, 2))
         ar = w / max(h, 1)
         # text-ish: small-to-medium, wider than tall or roughly square glyphs
@@ -191,8 +205,17 @@ def aesthetic(bgr, gray):
 
     balance = -1.0
     sal = cv2.saliency.StaticSaliencySpectralResidual_create()
-    ok, smap = sal.computeSaliency(gray)
-    if ok:
+    sout = sal.computeSaliency(gray)
+    # Some builds return (ok, map); others return the map only.
+    if isinstance(sout, (tuple, list)):
+        if len(sout) >= 2:
+            ok, smap = bool(sout[0]), sout[1]
+        else:
+            ok, smap = True, sout[0]
+    else:
+        ok, smap = sout is not None, sout
+    if ok and smap is not None:
+        smap = np.asarray(smap)
         tot = smap.sum() + 1e-9
         ys, xs = np.indices(smap.shape)
         cy = float((ys * smap).sum() / tot) / H
@@ -249,7 +272,9 @@ def diagonal_pyramid(bgr, gray):
                              minLineLength=min_len, maxLineGap=6)
     diag_len = total_len = 0.0
     if lines is not None:
-        for x1, y1, x2, y2 in lines[:, 0]:
+        # OpenCV may return (N,1,4) or (N,4); lines[:,0] on (N,4) yields
+        # int32 scalars → TypeError on "for x1,y1,x2,y2 in ...".
+        for x1, y1, x2, y2 in np.asarray(lines).reshape(-1, 4):
             length = float(np.hypot(x2 - x1, y2 - y1))
             ang = abs(np.degrees(np.arctan2(y2 - y1, x2 - x1))) % 180
             ang = min(ang, 180 - ang)  # 0=horizontal, 90=vertical
@@ -275,20 +300,53 @@ def diagonal_pyramid(bgr, gray):
 
 # ============================ HARNESS ======================================
 
+def _process_one(args_tuple):
+    """Top-level (picklable) worker: reads image, runs the requested metric fns.
+    Looks up REGISTRY by key inside the worker process rather than pickling
+    function objects — the module re-registers REGISTRY identically on import
+    in each subprocess."""
+    pid, path, yr, metric_keys = args_tuple
+    if not path.exists():
+        return ("miss", pid, None, None)
+    try:
+        bgr = cv2.imread(str(path))
+        if bgr is None:
+            raise RuntimeError("cv2.imread returned None")
+        h, w = bgr.shape[:2]
+        s = ANALYSIS_WIDTH / w
+        bgr = cv2.resize(bgr, (ANALYSIS_WIDTH, int(h * s)))
+        gray = cv2.cvtColor(bgr, cv2.COLOR_BGR2GRAY)
+        row = dict(id=pid, year=yr)
+        for k in metric_keys:
+            row.update(REGISTRY[k](bgr, gray))
+        return ("ok", pid, row, None)
+    except Exception as e:
+        return ("fail", pid, None, f"{pid}: {type(e).__name__}: {e}")
+
+
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--metrics", default=",".join(REGISTRY),
                     help=f"comma-separated: {','.join(REGISTRY)}")
     ap.add_argument("--sample", type=int, default=0, help="0 = all posters")
     ap.add_argument("--budget", type=float, default=0, help="seconds; 0 = no limit")
+    ap.add_argument("--meta-csv", default="", help="override id source (default posters.csv)")
+    ap.add_argument("--out", default="", help="override final_path/checkpoint (keeps corpora separate; does NOT seed from attributes.csv)")
+    ap.add_argument("--workers", type=int, default=6, help="parallel processes (CPU-bound, ~1 per core minus headroom)")
     args = ap.parse_args()
+
+    global CHECKPOINT
+    out_override = Path(args.out) if args.out else None
+    if out_override:
+        CHECKPOINT = out_override.parent / (out_override.stem + "_partial.csv")
+
     fns = {k: REGISTRY[k] for k in args.metrics.split(",")}
     # Note: this only checks that ALL requested metrics' columns are present;
     # mixing an already-finished metric with a brand-new one recomputes the
     # finished one too (wasteful but harmless) rather than partially skipping.
     needed_cols = sorted({c for k in fns for c in METRIC_COLS[k]})
 
-    meta = pd.read_csv(DATA / "posters.csv", usecols=["id", "year"])
+    meta = pd.read_csv(Path(args.meta_csv) if args.meta_csv else (DATA / "posters.csv"), usecols=["id", "year"])
     meta["id"] = meta["id"].astype(int)
     meta["year"] = meta["year"].astype(int)
     if args.sample:
@@ -298,8 +356,10 @@ def main():
     # Seed the resumable checkpoint from the published attributes.csv when
     # missing, so a single-metric re-run merges into existing columns instead
     # of replacing the whole file with only that metric's outputs.
-    final_path = DATA / "attributes.csv"
-    if not CHECKPOINT.exists() and final_path.exists():
+    # Skipped entirely when --out points elsewhere — a separate corpus must
+    # not be seeded from (or merged into) the horror attributes.csv.
+    final_path = out_override or (DATA / "attributes.csv")
+    if not out_override and not CHECKPOINT.exists() and final_path.exists():
         pd.read_csv(final_path).to_csv(CHECKPOINT, index=False)
 
     done = set()
@@ -308,62 +368,25 @@ def main():
         existing["id"] = existing["id"].astype(int)
         if all(c in existing.columns for c in needed_cols):
             done = set(existing.loc[existing[needed_cols].notna().all(axis=1), "id"].astype(int))
+    n_done_start = len(done)
     todo = meta[~meta.id.isin(done)]
-    print(f"pending: {len(todo):,} / {len(meta):,}", flush=True)
+    print(f"pending: {len(todo):,} / {len(meta):,} (workers={args.workers})", flush=True)
+
+    metric_keys = list(fns.keys())
+    jobs = [
+        (int(pid), DATA / "posters" / f"{int(pid)}.jpg", int(yr), metric_keys)
+        for pid, yr in zip(todo.id.tolist(), todo.year.tolist())
+    ]
 
     t_start = time.time()
     t_batch, rows = t_start, []
-    n_miss = n_fail = 0
+    n_miss = n_fail = n_ok = 0
     fail_examples = []
-    for pid, yr in zip(todo.id.tolist(), todo.year.tolist()):
-        if args.budget and time.time() - t_start > args.budget:
-            break
-        pid = int(pid)
-        yr = int(yr)
-        f = DATA / "posters" / f"{pid}.jpg"
-        if not f.exists():
-            n_miss += 1
-            continue
-        try:
-            bgr = cv2.imread(str(f))
-            if bgr is None:
-                raise RuntimeError("cv2.imread returned None")
-            h, w = bgr.shape[:2]
-            s = ANALYSIS_WIDTH / w
-            bgr = cv2.resize(bgr, (ANALYSIS_WIDTH, int(h * s)))
-            gray = cv2.cvtColor(bgr, cv2.COLOR_BGR2GRAY)
-            row = dict(id=pid, year=yr)
-            for fn in fns.values():
-                row.update(fn(bgr, gray))
-            rows.append(row)
-        except Exception as e:
-            n_fail += 1
-            if len(fail_examples) < 8:
-                fail_examples.append(f"{pid}: {type(e).__name__}: {e}")
-            continue
-        # periodic checkpoint so a long run is resumable
-        if len(rows) >= 250:
-            new_df = pd.DataFrame(rows).set_index("id")
-            if CHECKPOINT.exists():
-                merged = pd.read_csv(CHECKPOINT)
-                merged["id"] = merged["id"].astype(int)
-                merged = merged.set_index("id")
-                for c in new_df.columns:
-                    if c not in merged.columns:
-                        merged[c] = np.nan
-                merged.update(new_df)
-                new_ids = new_df.loc[~new_df.index.isin(merged.index)]
-                merged = pd.concat([merged, new_ids]) if len(new_ids) else merged
-            else:
-                merged = new_df
-            merged.reset_index().to_csv(CHECKPOINT, index=False)
-            done |= set(new_df.index.astype(int))
-            rate = len(rows) / max(time.time() - t_batch, 1e-9)
-            print(f"  checkpoint +{len(rows):,} ({len(done):,}/{len(meta):,}) {rate:.0f}/s",
-                  flush=True)
-            rows = []
-            t_batch = time.time()
-    if rows:
+
+    def checkpoint_flush():
+        nonlocal rows, t_batch
+        if not rows:
+            return
         new_df = pd.DataFrame(rows).set_index("id")
         if CHECKPOINT.exists():
             merged = pd.read_csv(CHECKPOINT)
@@ -378,7 +401,31 @@ def main():
         else:
             merged = new_df
         merged.reset_index().to_csv(CHECKPOINT, index=False)
-        done |= set(new_df.index.astype(int))
+        done.update(set(new_df.index.astype(int)))
+        rate = len(rows) / max(time.time() - t_batch, 1e-9)
+        print(f"  checkpoint +{len(rows):,} ({len(done):,}/{len(meta):,}) {rate:.0f}/s",
+              flush=True)
+        rows = []
+        t_batch = time.time()
+
+    with ProcessPoolExecutor(max_workers=args.workers) as ex:
+        futs = {ex.submit(_process_one, j): j for j in jobs}
+        for fut in as_completed(futs):
+            if args.budget and time.time() - t_start > args.budget:
+                break
+            status, pid, row, err = fut.result()
+            if status == "miss":
+                n_miss += 1
+            elif status == "fail":
+                n_fail += 1
+                if len(fail_examples) < 8:
+                    fail_examples.append(err)
+            else:
+                rows.append(row)
+                n_ok += 1
+            if len(rows) >= 250:
+                checkpoint_flush()
+    checkpoint_flush()
     if n_miss or n_fail:
         print(f"skipped miss={n_miss} fail={n_fail}", flush=True)
         for line in fail_examples:
@@ -387,6 +434,12 @@ def main():
     if CHECKPOINT.exists():
         covered = pd.read_csv(CHECKPOINT)["id"].nunique()
     print(f"checkpoint covers {covered:,}/{len(meta):,}", flush=True)
+    # Systemic API bugs (e.g. Hough/MSER unpack TypeError) must not look like success.
+    if n_fail >= 50 and n_fail >= max(n_ok, 1) * 5:
+        raise SystemExit(
+            f"FATAL: multi_analyze fail rate too high ok={n_ok} fail={n_fail} "
+            f"miss={n_miss} (start_done={n_done_start})"
+        )
 
     if covered >= len(meta) or (args.sample and covered >= len(meta)):
         d = pd.read_csv(CHECKPOINT).drop_duplicates("id")

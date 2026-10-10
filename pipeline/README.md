@@ -120,6 +120,16 @@ deploy artifacts. They are listed in `.gitignore`; regenerate locally:
 | CLIP embeddings cache (`clip_embeddings.npz`) | `python3 clip_embed.py` |
 | Semantic metric CSVs (census/medium/typography/faces/segmentation/…) | run the matching `clip_*.py` / `faces_v2.py` / `multi_analyze.py` / `segmentation.py` (see tables above) |
 | Site data (`site/data/lookup.js`, `explorer.js`, `creature_boxes.js`, `series.js`) | `python3 build_lookup.py && python3 build_explorer.py && python3 build_site.py` |
+| MSI-Net saliency (`qa/saliency/saliency_score.csv` + maps → `site/saliency/`, `saliency.json`) | `msinet_saliency_score.py --save-maps`, then `export_saliency_webp.py` |
+| Pose (`qa/pose_score.csv` → `pose.js`) | `vitpose_dynamism_score.py`; `export_pose_keypoints.py` adds skeletons |
+| Rekognition labels / faces (`rekognition.csv`, `rekognition_face_boxes.csv`) | `rekognition_enrich.py`, `rekognition_face_boxes_backfill.py` (AWS) |
+| Nova QA notes in the autopsy (`qa/qa_census.csv`, `qa_faces.csv`, `qa_title_ocr.csv`, `qa_typography.csv`) | `qa_census.py`, `qa_faces.py`, `qa_title_ocr.py`, `qa_typography.py` (AWS Bedrock) |
+| Medium Custom Labels (`qa/medium_custom_labels/infer_full.csv` → `medium_cl.json`) | `aws_custom_labels_infer.py` (AWS), then `export_medium_cl.py` |
+| Alternate-sheet sidecars (`site/data/poster_alts_*.json`, `site/saliency_alts/`) | per-sheet runners `yunet_alts.py`, `rekognition_text_boxes_alts.py`, `rekognition_multi_variants.py`, `multi_analyze_alts.py`, `msinet_alts.py`, `vitpose_alts.py`; then `export_poster_alts.py`, `export_poster_alts_geom.py`, `export_poster_alts_metrics.py`, `export_saliency_webp.py` |
+
+The per-sheet and AWS runners were executed on workshop EC2/SageMaker
+accounts; most of their launch scripts are account-specific and are kept out
+of this repo.
 
 `site/data/*.js` and `pipeline/data/posters.csv` **are** committed (the
 site/Pages deploy serves them). Everything else under `pipeline/data/` that is

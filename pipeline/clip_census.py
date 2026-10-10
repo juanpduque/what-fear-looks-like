@@ -102,12 +102,17 @@ def main():
     ap.add_argument("--temp", type=float, default=100.0, help="softmax temperature")
     ap.add_argument("--min-score", type=float, default=0.5,
                     help="por debajo -> 'uncertain' (los scores bajos marcan artwork ambiguo)")
+    ap.add_argument("--embeddings", default="", help="override clip_embeddings.npz")
+    ap.add_argument("--meta-csv", default="", help="override posters.csv")
+    ap.add_argument("--out", default="", help="override census.csv (keeps corpora separate)")
     args = ap.parse_args()
     device = "cuda" if torch.cuda.is_available() else "cpu"
+    out_csv = Path(args.out) if args.out else (DATA / "census.csv")
+    out_decade = out_csv.parent / (out_csv.stem + "_decade.json")
 
-    z = np.load(DATA / "clip_embeddings.npz")
+    z = np.load(Path(args.embeddings) if args.embeddings else (DATA / "clip_embeddings.npz"))
     ids, vecs = z["ids"], z["vecs"].astype(np.float32)
-    meta = pd.read_csv(DATA / "posters.csv", usecols=["id", "year", "title"])
+    meta = pd.read_csv(Path(args.meta_csv) if args.meta_csv else (DATA / "posters.csv"), usecols=["id", "year", "title"])
     protos = prototypes(device)
     labels = list(protos)
     P = np.stack([protos[l] for l in labels])          # L x 512
@@ -136,13 +141,13 @@ def main():
         print(f"VALIDACION: {ok}/{len(VALIDATION)}")
         return
 
-    df.to_csv(DATA / "census.csv", index=False)
+    df.to_csv(out_csv, index=False)
     d_dec = df[(df.year >= 1897) & (df.year <= 2030)].copy()
     d_dec["decade"] = (d_dec.year // 10) * 10
     shares = (d_dec.groupby(["decade", "label"]).size()
                 .unstack(fill_value=0)
                 .pipe(lambda x: x.div(x.sum(1), axis=0)).round(4))
-    shares.reset_index().to_json(DATA / "census_decade.json", orient="records")
+    shares.reset_index().to_json(out_decade, orient="records")
     print("=== TOP CRIATURA POR DECADA (excl. none/uncertain) ===")
     for dec, row in shares.drop(columns=[c for c in ("none","uncertain") if c in shares]).iterrows():
         top3 = row.nlargest(3)

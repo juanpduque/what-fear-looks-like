@@ -90,20 +90,25 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--validate", action="store_true")
     ap.add_argument("--nbins", type=int, default=5)
+    ap.add_argument("--embeddings", default="", help="override clip_embeddings.npz")
+    ap.add_argument("--meta-csv", default="", help="override posters.csv")
+    ap.add_argument("--out", default="", help="override typography.csv (keeps corpora separate)")
     args = ap.parse_args()
     device = "cuda" if torch.cuda.is_available() else "cpu"
+    out_csv = Path(args.out) if args.out else (DATA / "typography.csv")
+    out_decade = out_csv.parent / (out_csv.stem + "_decade.json")
 
     model = load_clip(device)
     tok = open_clip.get_tokenizer("ViT-B-32")
     ORNATE = proto(model, tok, ORNATE_PROMPTS, device)
     CLEAN = proto(model, tok, CLEAN_PROMPTS, device)
 
-    z = np.load(DATA / "clip_embeddings.npz")
+    z = np.load(Path(args.embeddings) if args.embeddings else (DATA / "clip_embeddings.npz"))
     ids = z["ids"].astype(int)
     vecs = z["vecs"].astype(np.float32)
     axis = (vecs @ ORNATE) - (vecs @ CLEAN)
     df = pd.DataFrame(dict(id=ids, axis=axis))
-    meta = pd.read_csv(DATA / "posters.csv", usecols=["id", "year", "title"])
+    meta = pd.read_csv(Path(args.meta_csv) if args.meta_csv else (DATA / "posters.csv"), usecols=["id", "year", "title"])
     df = df.merge(meta, on="id")
 
     if args.validate:
@@ -127,7 +132,7 @@ def main():
     # invertimos para que REGISTERS[0]="ornate" corresponda al axis mas alto
     b = np.digitize(df["axis"], edges[1:-1])           # 0..nbins-1, 0=minimal
     df["register"] = [REGISTERS[::-1][k] for k in b]    # reversed -> 0=ornate
-    df.to_csv(DATA / "typography.csv", index=False)
+    df.to_csv(out_csv, index=False)
 
     d = df[(df.year >= 1920) & (df.year <= 2029)].copy()
     d["decade"] = (d.year // 10) * 10
@@ -143,9 +148,8 @@ def main():
         for reg in REGISTERS:
             row[reg] = float(share.loc[dec, reg])
         out.append(row)
-    pd.Series(out).to_json(DATA / "typography_decade.json", orient="values")
     import json
-    (DATA / "typography_decade.json").write_text(json.dumps(out))
+    out_decade.write_text(json.dumps(out))
 
     print("=== SHARE DE REGISTRO TIPOGRAFICO POR DECADA ===")
     print(f'{"dec":6}' + "".join(f"{r:>12}" for r in REGISTERS) + f'{"mean":>10}{"n":>7}')

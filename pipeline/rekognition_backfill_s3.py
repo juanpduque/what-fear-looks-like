@@ -41,9 +41,9 @@ OUT = DATA / "rekognition_backfill.csv"
 CHECKPOINT = DATA / "rekognition_backfill_checkpoint.json"
 MERGED_OUT = DATA / "rekognition.csv"
 
-# S3 config
-S3_BUCKET = "sagemaker-studio-a5572760"
-S3_PREFIX = "wflike-community-72k/posters"
+# S3 config -- no cross-account default: sandbox accounts rotate, set explicitly
+S3_BUCKET = os.environ["S3_BUCKET"]
+S3_PREFIX = os.environ.get("S3_PREFIX", "wflike-community-72k/posters")
 
 # Region - use environment or default
 REGION = os.environ.get("AWS_DEFAULT_REGION", "us-east-1")  # pragma: allowlist secret

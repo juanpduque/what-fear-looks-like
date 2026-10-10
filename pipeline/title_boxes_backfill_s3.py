@@ -29,7 +29,9 @@ import io
 import json
 import os
 import re
+import threading
 import time
+from concurrent.futures import ThreadPoolExecutor, as_completed
 from difflib import SequenceMatcher
 from pathlib import Path
 
@@ -39,13 +41,14 @@ from botocore.exceptions import ClientError
 
 # Paths
 DATA = Path(__file__).parent / "data"
+POSTERS = DATA / "posters"
 OUT = DATA / "title_boxes_backfill.csv"
 CHECKPOINT = DATA / "title_boxes_backfill_checkpoint.json"
 MERGED_OUT = DATA / "title_boxes_rekognition.csv"
 
-# S3 config
-S3_BUCKET = "sagemaker-studio-a5572760"
-S3_PREFIX = "wflike-community-72k/posters"
+# S3 config -- no cross-account default: sandbox accounts rotate, set explicitly
+S3_BUCKET = os.environ["S3_BUCKET"]
+S3_PREFIX = os.environ.get("S3_PREFIX", "wflike-community-72k/posters")
 
 # Region
 REGION = os.environ.get("AWS_DEFAULT_REGION", "us-east-1")  # pragma: allowlist secret
@@ -92,13 +95,17 @@ def _s3_client():
 
 
 def download_poster_from_s3(s3, poster_id: int) -> bytes | None:
-    """Download poster from S3 Community bucket."""
+    """Local posters/ first (fast, no cross-account S3 dependency); S3 Community bucket as fallback."""
+    local = POSTERS / f"{poster_id}.jpg"
+    if local.exists() and local.stat().st_size > 2000:
+        return local.read_bytes()
     key = f"{S3_PREFIX}/{poster_id}.jpg"
     try:
         response = s3.get_object(Bucket=S3_BUCKET, Key=key)
         return response["Body"].read()
     except ClientError as e:
-        if e.response.get("Error", {}).get("Code") == "NoSuchKey":
+        code = e.response.get("Error", {}).get("Code")
+        if code in ("NoSuchKey", "AccessDenied", "403"):
             return None
         raise
 
@@ -204,18 +211,49 @@ def locate_title(rek_client, image_bytes: bytes, title: str):
     }
 
 
-def get_missing_ids() -> set[int]:
+def get_missing_ids(corpus: str = "essay") -> set[int]:
     """Get IDs that are in corpus but not in title_boxes_rekognition.csv."""
-    posters = pd.read_csv(DATA / "posters.csv")
-    corpus_ids = set(posters["id"])
-    
+    if corpus == "community":
+        community = pd.read_csv(DATA / "community" / "tmdb_horror_ids.csv")
+        corpus_ids = set(community[community["poster_path"].notna()]["id"])
+    elif corpus == "scifi":
+        scifi = pd.read_csv(DATA / "community_scifi" / "tmdb_scifi_ids.csv")
+        corpus_ids = set(scifi[scifi["poster_path"].notna()]["id"])
+    else:
+        posters = pd.read_csv(DATA / "posters.csv")
+        corpus_ids = set(posters["id"])
+
     if MERGED_OUT.exists():
         existing = pd.read_csv(MERGED_OUT)
         existing_ids = set(existing["id"])
     else:
         existing_ids = set()
-    
+
     return corpus_ids - existing_ids
+
+
+def load_meta(target_ids: set[int]) -> dict[int, dict]:
+    """Title/year lookup, essay posters.csv first then community ids as fallback."""
+    meta: dict[int, dict] = {}
+    posters = pd.read_csv(DATA / "posters.csv", usecols=["id", "title", "year"])
+    meta.update(posters[posters["id"].isin(target_ids)].set_index("id").to_dict("index"))
+    remaining = target_ids - set(meta.keys())
+    if remaining:
+        comm_path = DATA / "community" / "tmdb_horror_ids.csv"
+        if comm_path.exists():
+            community = pd.read_csv(comm_path, usecols=["id", "title", "year"])
+            meta.update(
+                community[community["id"].isin(remaining)].set_index("id").to_dict("index")
+            )
+    remaining = target_ids - set(meta.keys())
+    if remaining:
+        scifi_path = DATA / "community_scifi" / "tmdb_scifi_ids.csv"
+        if scifi_path.exists():
+            scifi = pd.read_csv(scifi_path, usecols=["id", "title", "year"])
+            meta.update(
+                scifi[scifi["id"].isin(remaining)].set_index("id").to_dict("index")
+            )
+    return meta
 
 
 def load_checkpoint() -> dict:
@@ -231,12 +269,23 @@ def save_checkpoint(checkpoint: dict):
 def main():
     ap = argparse.ArgumentParser(description="Backfill title boxes from S3")
     ap.add_argument("--ids", default="", help="Comma-separated IDs to process")
+    ap.add_argument("--corpus", choices=["essay", "community", "scifi"], default="essay",
+                     help="Target id source when --ids is not given")
     ap.add_argument("--sample", type=int, default=0, help="Process random sample of N")
+    ap.add_argument("--workers", type=int, default=1, help="Parallel S3+Rekognition workers")
     ap.add_argument("--save-every", type=int, default=50, help="Save checkpoint every N")
     ap.add_argument("--resume", action="store_true", help="Resume from checkpoint")
     ap.add_argument("--merge", action="store_true", help="Merge results into title_boxes_rekognition.csv")
     ap.add_argument("--dry-run", action="store_true", help="Show what would be processed")
+    ap.add_argument("--out", default="", help="override OUT csv (keeps corpora separate)")
+    ap.add_argument("--checkpoint", default="", help="override checkpoint json path")
     args = ap.parse_args()
+
+    global OUT, CHECKPOINT
+    if args.out:
+        OUT = Path(args.out)
+    if args.checkpoint:
+        CHECKPOINT = Path(args.checkpoint)
 
     print("=" * 70)
     print("📦 TITLE BOXES BACKFILL FROM S3")
@@ -247,8 +296,8 @@ def main():
         target_ids = {int(x.strip()) for x in args.ids.split(",") if x.strip()}
         print(f"\n📋 Processing {len(target_ids)} specified IDs")
     else:
-        print("\n📥 Fetching missing IDs...")
-        target_ids = get_missing_ids()
+        print(f"\n📥 Fetching missing IDs (corpus={args.corpus})...")
+        target_ids = get_missing_ids(args.corpus)
         print(f"   Found {len(target_ids):,} IDs without title boxes")
 
     if args.sample and len(target_ids) > args.sample:
@@ -274,9 +323,8 @@ def main():
         print("\n✅ Nothing to process!")
         return
 
-    # Get metadata (titles)
-    posters = pd.read_csv(DATA / "posters.csv", usecols=["id", "title", "year"])
-    meta = posters[posters["id"].isin(target_ids)].set_index("id").to_dict("index")
+    # Get metadata (titles) — essay posters.csv first, community ids as fallback
+    meta = load_meta(target_ids)
 
     # Initialize clients
     s3 = _s3_client()
@@ -295,26 +343,23 @@ def main():
     n_errors = 0
     n_skip = 0
 
-    print(f"\n🚀 Processing {len(target_ids):,} posters...")
+    print(f"\n🚀 Processing {len(target_ids):,} posters (workers={args.workers})...")
     print("-" * 70)
 
-    for i, pid in enumerate(sorted(target_ids)):
+    lock = threading.Lock()
+
+    def process_one(pid: int):
         pid = int(pid)
         m = meta.get(pid, {})
         title = m.get("title", "")
 
-        # Download from S3
         try:
             image_bytes = download_poster_from_s3(s3, pid)
             if image_bytes is None:
-                n_skip += 1
-                continue
+                return pid, "skip", None, title
         except Exception as e:
-            checkpoint["errors"].append({"id": pid, "error": f"s3: {e}"})
-            n_errors += 1
-            continue
+            return pid, "s3_error", str(e), title
 
-        # Locate title box
         try:
             box = locate_title(rek, image_bytes, title)
         except ClientError as e:
@@ -330,36 +375,51 @@ def main():
         except Exception:
             box = None
 
-        # Store result
-        if box is None:
-            row = dict(id=pid, text_x=-1.0, text_top=-1.0, text_w=-1.0, text_h=-1.0,
-                       ocr="", score=0.0)
-        else:
-            row = dict(id=pid, **box)
-            n_found += 1
+        return pid, "ok", box, title
 
-        rows[pid] = row
-        checkpoint["processed"].append(pid)
-        n_new += 1
+    ordered_ids = sorted(target_ids)
+    with ThreadPoolExecutor(max_workers=max(1, args.workers)) as ex:
+        futs = {ex.submit(process_one, pid): pid for pid in ordered_ids}
+        for fut in as_completed(futs):
+            pid, status, payload, title = fut.result()
 
-        # Progress
-        if n_new % 20 == 0:
-            elapsed = time.time() - t0
-            rate = n_new / max(elapsed, 0.001)
-            remaining = len(target_ids) - i - 1
-            eta = remaining / rate if rate > 0 else 0
-            found_pct = 100 * n_found / n_new if n_new > 0 else 0
-            print(
-                f"✅ {n_new:,}/{len(target_ids):,} | {pid} {title[:20]!r} | "
-                f"found={found_pct:.0f}% | {rate:.1f}/s ETA:{eta/60:.0f}m",
-                flush=True,
-            )
+            with lock:
+                if status == "skip":
+                    n_skip += 1
+                    continue
+                if status == "s3_error":
+                    checkpoint["errors"].append({"id": pid, "error": f"s3: {payload}"})
+                    n_errors += 1
+                    continue
 
-        # Checkpoint
-        if n_new % args.save_every == 0:
-            df = pd.DataFrame(rows.values())
-            df.to_csv(OUT, index=False)
-            save_checkpoint(checkpoint)
+                box = payload
+                if box is None:
+                    row = dict(id=pid, text_x=-1.0, text_top=-1.0, text_w=-1.0, text_h=-1.0,
+                               ocr="", score=0.0)
+                else:
+                    row = dict(id=pid, **box)
+                    n_found += 1
+
+                rows[pid] = row
+                checkpoint["processed"].append(pid)
+                n_new += 1
+
+                if n_new % 20 == 0:
+                    elapsed = time.time() - t0
+                    rate = n_new / max(elapsed, 0.001)
+                    remaining = len(ordered_ids) - n_new - n_skip - n_errors
+                    eta = remaining / rate if rate > 0 else 0
+                    found_pct = 100 * n_found / n_new if n_new > 0 else 0
+                    print(
+                        f"✅ {n_new:,}/{len(target_ids):,} | {pid} {title[:20]!r} | "
+                        f"found={found_pct:.0f}% | {rate:.1f}/s ETA:{eta/60:.0f}m",
+                        flush=True,
+                    )
+
+                if n_new % args.save_every == 0:
+                    df = pd.DataFrame(rows.values())
+                    df.to_csv(OUT, index=False)
+                    save_checkpoint(checkpoint)
 
     # Final save
     df = pd.DataFrame(rows.values())
