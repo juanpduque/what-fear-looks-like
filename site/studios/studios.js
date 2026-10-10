@@ -54,7 +54,7 @@ function render(lang, copy, data) {
       const strip = s.posters
         .map(
           ([id, title, year, path]) =>
-            `<a href="../?id=${id}&lang=${lang}" title="${esc(`${title} (${year})`)}" aria-label="${esc(`${t('open_autopsy')}: ${title} (${year})`)}"><img src="${esc(posterSrc(id, path))}" alt="" loading="lazy"></a>`,
+            `<a href="../?id=${id}&lang=${lang}&from=studios" title="${esc(`${title} (${year})`)}" aria-label="${esc(`${t('open_autopsy')}: ${title} (${year})`)}"><img src="${esc(posterSrc(id, path))}" alt="" loading="lazy"></a>`,
         )
         .join('');
       return `<li class="st-item" id="${slug(s.credit)}">
@@ -117,6 +117,30 @@ window.addEventListener('resize', () => {
   resizeTimer = setTimeout(() => document.querySelectorAll('.st-toggle').forEach(syncStrip), 150);
 });
 
+const SCROLL_KEY = 'aof-studios-scroll';
+
+/** Coming back from an autopsy: return to the same spot (content renders after fetch). */
+function restoreScroll() {
+  const nav = performance.getEntriesByType('navigation')[0];
+  let saved = null;
+  try {
+    saved = sessionStorage.getItem(SCROLL_KEY);
+  } catch {
+    saved = null;
+  }
+  if (nav?.type === 'back_forward' && saved != null) window.scrollTo(0, Number(saved));
+  else if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
+}
+
+document.addEventListener('click', (ev) => {
+  if (!ev.target.closest?.('.st-strip a')) return;
+  try {
+    sessionStorage.setItem(SCROLL_KEY, String(window.scrollY));
+  } catch {
+    /* private mode */
+  }
+});
+
 async function main() {
   const [copy, data] = await Promise.all([
     fetch('i18n.json').then((r) => r.json()),
@@ -125,7 +149,7 @@ async function main() {
   const q = new URLSearchParams(location.search).get('lang');
   let lang = document.documentElement.lang === 'es' || q === 'es' ? 'es' : 'en';
   render(lang, copy, data);
-  if (location.hash) document.getElementById(location.hash.slice(1))?.scrollIntoView();
+  restoreScroll();
   document.querySelectorAll('[data-lang-btn]').forEach((b) =>
     b.addEventListener('click', () => {
       lang = b.dataset.langBtn;

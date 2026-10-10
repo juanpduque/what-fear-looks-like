@@ -55,6 +55,8 @@ let savedScroll = 0;
 let colorMapsToken = 0;
 let modeByBeat = {};
 let peekPath = null;
+// Opened from another page (studios/?…&from=studios): closing returns there.
+const RETURN_TO = new URLSearchParams(location.search).get('from') === 'studios' ? 'studios' : null;
 // Pixel stats measured in the browser for the alternate sheet on view.
 let altPixels = null;
 
@@ -639,7 +641,24 @@ function enterOverlay() {
   close?.focus();
 }
 
+function returnToOrigin() {
+  const lang = document.documentElement.lang === 'es' ? 'es' : 'en';
+  let ref = null;
+  try {
+    ref = document.referrer ? new URL(document.referrer) : null;
+  } catch {
+    ref = null;
+  }
+  // Going back keeps the studios page where the reader left it.
+  if (ref && ref.origin === location.origin && ref.pathname.includes('/studios/') && history.length > 1) history.back();
+  else location.href = `studios/?lang=${lang}`;
+}
+
 export function closePoster() {
+  if (RETURN_TO) {
+    returnToOrigin();
+    return;
+  }
   unpeek();
   const { root } = els();
   io?.disconnect();
@@ -780,7 +799,9 @@ function wireNav() {
     setBeatMode(btn.dataset.cmode);
   });
   share?.addEventListener('click', async () => {
-    const url = location.href;
+    const shareUrl = new URL(location.href);
+    shareUrl.searchParams.delete('from');
+    const url = shareUrl.href;
     try {
       await navigator.clipboard.writeText(url);
       share.textContent = t('autopsy_shared');
@@ -820,8 +841,9 @@ function relabel() {
   const { share, close } = els();
   if (share) share.textContent = t('autopsy_share');
   if (close) {
-    close.textContent = t('autopsy_close');
-    close.setAttribute('aria-label', t('autopsy_close'));
+    const label = RETURN_TO ? t('autopsy_back_studios') : t('autopsy_close');
+    close.textContent = label;
+    close.setAttribute('aria-label', label);
   }
   const prev = document.getElementById('au-prev');
   const next = document.getElementById('au-next');
