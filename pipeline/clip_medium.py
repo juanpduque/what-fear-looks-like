@@ -48,7 +48,11 @@ def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--n", type=int, default=0, help="sample size (0 = all)")
     ap.add_argument("--batch", type=int, default=64)
+    ap.add_argument("--meta-csv", default="", help="override posters.csv")
+    ap.add_argument("--out", default="", help="override medium.csv (keeps corpora separate)")
     args = ap.parse_args()
+    med_path = Path(args.out) if args.out else (DATA / "medium.csv")
+    out_yearly = med_path.parent / (med_path.stem + "_yearly.json")
 
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print(f"device: {device}")
@@ -63,9 +67,8 @@ def main():
         t_photo = tf[len(PAINTED):].mean(0)
         t_painted /= t_painted.norm(); t_photo /= t_photo.norm()
 
-    meta = pd.read_csv(DATA / "posters.csv", usecols=["id", "year", "title"])
+    meta = pd.read_csv(Path(args.meta_csv) if args.meta_csv else (DATA / "posters.csv"), usecols=["id", "year", "title"])
     prev = pd.DataFrame()
-    med_path = DATA / "medium.csv"
     if med_path.exists() and not args.n:
         prev = pd.read_csv(med_path)
         done = set(prev["id"].astype(int))
@@ -109,7 +112,7 @@ def main():
         d["painted"] = (d.p_painted > 0.5).astype(int)
         if len(prev):
             d = pd.concat([prev, d], ignore_index=True).drop_duplicates("id", keep="last")
-        d.to_csv(DATA / "medium.csv", index=False)
+        d.to_csv(med_path, index=False)
     elif len(prev):
         d = prev
         print("nothing new for medium")
@@ -119,7 +122,7 @@ def main():
     yearly = (d[(d.year >= 1897) & (d.year <= 2030)]
                 .groupby("year").agg(n=("id", "count"),
                                    pct_painted=("painted", "mean")).round(4))
-    yearly.reset_index().to_json(DATA / "medium_yearly.json", orient="records")
+    yearly.reset_index().to_json(out_yearly, orient="records")
 
     roll = yearly.pct_painted.rolling(5, min_periods=3, center=True).mean()
     print("\n% ilustrado por lustro (5yr rolling):")

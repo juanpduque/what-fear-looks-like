@@ -18,6 +18,7 @@ Outputs: data/faces_v2.csv (incl. face_boxes), data/faces_v2_decade.json
 """
 import argparse
 import time
+from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
 
 import cv2
@@ -47,6 +48,23 @@ def make_detector():
             f"Modelo no encontrado: {MODEL}\nCorre el curl del docstring primero."
         )
     return cv2.FaceDetectorYN.create(str(MODEL), "", (W, W), CONF, 0.3, 5000)
+
+
+_WORKER_DET = None
+
+
+def _pool_init():
+    global _WORKER_DET
+    _WORKER_DET = make_detector()
+
+
+def _detect_one(args):
+    pid, path, yr = args
+    r = detect(_WORKER_DET, path)
+    if r is None:
+        return None
+    r.update(id=int(pid), year=int(yr))
+    return r
 
 
 def detect(det, path):
@@ -80,9 +98,11 @@ def detect(det, path):
     )
 
 
-def finalize(d: pd.DataFrame):
+def finalize(d: pd.DataFrame, out_csv: Path | None = None, out_decade: Path | None = None):
+    out_csv = out_csv or (DATA / "faces_v2.csv")
+    out_decade = out_decade or (DATA / "faces_v2_decade.json")
     d = d.drop_duplicates("id")
-    d.to_csv(DATA / "faces_v2.csv", index=False)
+    d.to_csv(out_csv, index=False)
     y = d.year.astype(int)
     d_dec = d[(y >= 1897) & (y <= 2030)].copy()
     d_dec["decade"] = (d_dec.year // 10) * 10
@@ -92,7 +112,7 @@ def finalize(d: pd.DataFrame):
         pct_with_face=("n_faces", lambda s: (s > 0).mean()),
         face_area=("face_area", "mean"),
     ).round(3)
-    agg.reset_index().to_json(DATA / "faces_v2_decade.json", orient="records")
+    agg.reset_index().to_json(out_decade, orient="records")
     print("\n=== YuNet POR DECADA ===")
     print(agg.to_string())
     with_boxes = (d["face_boxes"].fillna("").astype(str) != "").sum()
@@ -108,10 +128,21 @@ def main():
         action="store_true",
         help="Ignore checkpoint; re-detect all and write face_boxes",
     )
+    ap.add_argument("--meta-csv", default="", help="override id source (default posters.csv)")
+    ap.add_argument("--out", default="", help="override output csv (keeps corpora separate)")
+    ap.add_argument("--checkpoint", default="", help="override checkpoint path")
+    ap.add_argument("--workers", type=int, default=6, help="parallel processes (CPU-bound, ~1 per core minus headroom)")
     args = ap.parse_args()
+
+    global CHECKPOINT
+    out_csv = Path(args.out) if args.out else None
+    out_decade = (out_csv.parent / (out_csv.stem + "_decade.json")) if out_csv else None
+    if args.checkpoint:
+        CHECKPOINT = Path(args.checkpoint)
+
     det = make_detector()
 
-    meta = pd.read_csv(DATA / "posters.csv", usecols=["id", "year", "title"])
+    meta = pd.read_csv(Path(args.meta_csv) if args.meta_csv else (DATA / "posters.csv"), usecols=["id", "year", "title"])
 
     if args.validate:
         print(f'{"titulo":45} esperado detectado boxes')
@@ -137,31 +168,36 @@ def main():
 
     done = set(pd.read_csv(CHECKPOINT).id) if CHECKPOINT.exists() else set()
     todo = meta[~meta.id.isin(done)]
-    print(f"pendientes: {len(todo):,}/{len(meta):,}")
+    print(f"pendientes: {len(todo):,}/{len(meta):,} (workers={args.workers})")
     t0, rows = time.time(), []
-    for pid, yr in zip(todo.id, todo.year):
-        if args.budget and time.time() - t0 > args.budget:
-            break
-        r = detect(det, DATA / "posters" / f"{pid}.jpg")
-        if r is None:
-            continue
-        r.update(id=int(pid), year=int(yr))
-        rows.append(r)
-        if len(rows) % 500 == 0:
-            pd.DataFrame(rows).to_csv(
-                CHECKPOINT,
-                mode="a",
-                header=not CHECKPOINT.exists(),
-                index=False,
-            )
-            done |= {r["id"] for r in rows}
-            rate = len(rows) / max(time.time() - t0, 1e-9)
-            print(
-                f"  checkpoint +{len(rows):,} "
-                f"({len(done):,}/{len(meta):,}) {rate:.0f}/s",
-                flush=True,
-            )
-            rows = []
+    jobs = [(pid, DATA / "posters" / f"{pid}.jpg", yr) for pid, yr in zip(todo.id, todo.year)]
+
+    with ProcessPoolExecutor(max_workers=args.workers, initializer=_pool_init) as ex:
+        futs = {ex.submit(_detect_one, j): j for j in jobs}
+        n_seen = 0
+        for fut in as_completed(futs):
+            if args.budget and time.time() - t0 > args.budget:
+                break
+            n_seen += 1
+            r = fut.result()
+            if r is None:
+                continue
+            rows.append(r)
+            if len(rows) % 500 == 0:
+                pd.DataFrame(rows).to_csv(
+                    CHECKPOINT,
+                    mode="a",
+                    header=not CHECKPOINT.exists(),
+                    index=False,
+                )
+                done |= {r["id"] for r in rows}
+                rate = n_seen / max(time.time() - t0, 1e-9)
+                print(
+                    f"  checkpoint +{len(rows):,} "
+                    f"({len(done):,}/{len(meta):,}) {rate:.0f}/s",
+                    flush=True,
+                )
+                rows = []
     if rows:
         pd.DataFrame(rows).to_csv(
             CHECKPOINT,
@@ -176,7 +212,7 @@ def main():
     )
 
     if total >= len(meta):
-        finalize(pd.read_csv(CHECKPOINT))
+        finalize(pd.read_csv(CHECKPOINT), out_csv, out_decade)
 
 
 if __name__ == "__main__":

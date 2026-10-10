@@ -36,11 +36,22 @@ PARTIAL = DATA / "clip_embeddings_partial.npz"
 BATCH = 64
 
 def main():
+    import argparse
+    ap = argparse.ArgumentParser()
+    ap.add_argument("--meta-csv", default="", help="override id source (default posters.csv)")
+    ap.add_argument("--out", default="", help="override output npz (keeps corpora separate)")
+    args = ap.parse_args()
+
+    global OUT, PARTIAL
+    if args.out:
+        OUT = Path(args.out)
+        PARTIAL = OUT.parent / (OUT.stem + "_partial.npz")
+
     device = "cuda" if torch.cuda.is_available() else "cpu"
     print("device:", device)
     model, preprocess = load_clip(device)
 
-    meta = pd.read_csv(DATA / "posters.csv", usecols=["id", "year"])
+    meta = pd.read_csv(Path(args.meta_csv) if args.meta_csv else (DATA / "posters.csv"), usecols=["id", "year"])
     ids_done, vecs = [], []
     if PARTIAL.exists():
         z = np.load(PARTIAL)
@@ -75,7 +86,7 @@ def main():
             continue
         if len(imgs) >= BATCH:
             flush()
-            if len(ids_done) % 1280 < BATCH:
+            if len(ids_done) % 256 < BATCH:
                 rate = (len(ids_done) - n0) / (time.time() - t0)
                 print(f"  {len(ids_done):,}/{len(meta):,} ({rate:.0f}/s)", flush=True)
                 np.savez_compressed(PARTIAL, ids=np.array(ids_done),
