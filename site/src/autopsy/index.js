@@ -9,6 +9,7 @@ import {
   ensurePose,
   ensureSaliency,
   ensureTitleInk,
+  ensureKeyArt,
   ensureMediumCl,
   ensurePosterAlts,
   ensurePosterAltsRek,
@@ -671,6 +672,7 @@ export async function openPoster(p) {
       ensurePose().catch(() => ({})),
       ensureSaliency(),
       ensureTitleInk(),
+      ensureKeyArt(),
       ensureMediumCl(),
       ensurePosterAlts(),
       ensurePosterAltsRek(),
@@ -719,6 +721,7 @@ function wireSearch() {
     ensurePose().catch(() => {});
     ensureSaliency();
     ensureTitleInk();
+    ensureKeyArt();
     ensureMediumCl();
     ensurePosterAlts();
     ensurePosterAltsRek();
@@ -854,6 +857,7 @@ export function initLookup() {
     ensurePose().catch(() => {});
     ensureSaliency();
     ensureTitleInk();
+    ensureKeyArt();
     ensureMediumCl();
     ensurePosterAlts();
     ensurePosterAltsRek();

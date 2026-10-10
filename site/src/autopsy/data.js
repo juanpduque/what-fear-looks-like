@@ -135,6 +135,37 @@ export function ensureSaliency() {
   return SALIENCY_P;
 }
 
+let KEY_ART_P = null;
+/** Verified IMPAwards key art credit per id (pipeline/export_key_art.py). */
+export function ensureKeyArt() {
+  if (window.KEY_ART) return Promise.resolve(window.KEY_ART);
+  if (KEY_ART_P) return KEY_ART_P;
+  KEY_ART_P = fetch(assetUrl('data/key_art.json'))
+    .then((r) => (r.ok ? r.json() : {}))
+    .then((d) => {
+      window.KEY_ART = d || {};
+      return window.KEY_ART;
+    })
+    .catch(() => {
+      KEY_ART_P = null;
+      window.KEY_ART = window.KEY_ART || {};
+      return window.KEY_ART;
+    });
+  return KEY_ART_P;
+}
+
+export function keyArtFor(id) {
+  return (window.KEY_ART && window.KEY_ART[String(id)]) || null;
+}
+
+/** Anchor id shared with studios/studios.js. */
+export function studioSlug(credit) {
+  return String(credit || '')
+    .toLowerCase()
+    .replace(/[^a-z0-9]+/g, '-')
+    .replace(/^-|-$/g, '');
+}
+
 export function ensureTitleInk() {
   if (window.TITLE_INK) return Promise.resolve(window.TITLE_INK);
   if (TITLE_INK_P) return TITLE_INK_P;

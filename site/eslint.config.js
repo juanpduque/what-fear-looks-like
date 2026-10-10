@@ -23,7 +23,7 @@ export default [
   js.configs.recommended,
   {
     // Authored browser modules.
-    files: ['src/**/*.js'],
+    files: ['src/**/*.js', 'studios/**/*.js'],
     languageOptions: {
       ecmaVersion: 2022,
       sourceType: 'module',

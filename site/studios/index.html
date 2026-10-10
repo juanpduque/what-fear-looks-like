@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Who Designs Fear · What Fear Looks Like</title>
+<meta name="description" content="The key art agencies behind the horror posters in the corpus, from verified IMPAwards credits.">
+<meta name="theme-color" content="#07080b">
+<link rel="icon" type="image/png" href="../assets/pa-mark.png">
+<script>
+(function(){
+  var q=new URLSearchParams(location.search);
+  var langQ=q.get('lang');
+  var s=null; try{s=localStorage.getItem('aof-lang');}catch(e){}
+  var nav=(navigator.language||'en').toLowerCase();
+  var lang=(langQ==='es'||langQ==='en')?langQ:(s==='es'||s==='en')?s:(nav.indexOf('es')===0?'es':'en');
+  document.documentElement.lang=lang;
+})();
+</script>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="studios.css">
+</head>
+<body>
+<div class="site-chrome">
+  <nav class="lang-switch" aria-label="Language">
+    <button type="button" data-lang-btn="en" aria-pressed="true">EN</button>
+    <button type="button" data-lang-btn="es" aria-pressed="false">ES</button>
+  </nav>
+</div>
+
+<main id="main">
+  <header class="st-head">
+    <a class="st-back" href="../" data-i18n="back">← Back to the essay</a>
+    <p class="kicker" data-i18n="kicker">Key art studios</p>
+    <h1 data-i18n="title">Who Designs Fear</h1>
+    <p class="st-dek" data-i18n-dek></p>
+  </header>
+
+  <section aria-labelledby="st-rank-title">
+    <h2 id="st-rank-title" class="st-h2" data-i18n="rank_title">Most horror posters in the corpus</h2>
+    <ol class="st-list" id="st-list"></ol>
+  </section>
+
+  <section class="st-method" aria-labelledby="st-method-title">
+    <h2 id="st-method-title" class="st-h2" data-i18n="method_title">How the credits were checked</h2>
+    <p data-i18n="method"></p>
+  </section>
+</main>
+
+<footer>
+  <a href="../" data-i18n="back">← Back to the essay</a>
+</footer>
+
+<script type="module" src="studios.js"></script>
+</body>
+</html>
