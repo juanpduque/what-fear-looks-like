@@ -80,15 +80,16 @@ const CHART_X_TICKS=[1920,1940,1960,1980,2000,2020,2028];
 const since1920=pts=>pts.filter(p=>p[0]>=CHART_X0);
 /* Thin data before ~1960: fewer than this many posters behind a 5-yr point. */
 const FRAGILE_N=100;
-/** 95% band behind a trend line, the thin-data stretch of the line dimmed, and a note. */
-function uncertainty(svg,x,y,key,color,path){
+/** 95% band behind a trend line (bandColor when the chart's area fill shares the line's hue),
+ *  the thin-data stretch of the line dimmed, and a note. */
+function uncertainty(svg,x,y,key,color,path,bandColor=color){
   const ci=(SERIES_CI?.[key]||[]).filter(c=>c[0]>=CHART_X0);
   if(!ci.length) return null;
   const [d0,d1]=y.domain(), lo=Math.min(d0,d1), hi=Math.max(d0,d1);
   const clamp=v=>Math.max(lo,Math.min(hi,v));
   const band=svg.insert('path',()=>path.node()).datum(ci).attr('class','ci-band')
     .attr('d',d3.area().x(d=>x(d[0])).y0(d=>y(clamp(d[1]))).y1(d=>y(clamp(d[2]))).curve(d3.curveMonotoneX))
-    .attr('fill',color).attr('opacity',0);
+    .attr('fill',bandColor).attr('opacity',0);
   const fragile=ci.filter(c=>c[3]<FRAGILE_N);
   const solid=ci.find(c=>c[3]>=FRAGILE_N && c[0]>fragile[fragile.length-1]?.[0]);
   if(fragile.length&&solid){
@@ -907,7 +908,7 @@ function d3Charts(){
         const d=RED_PTS[i];
         report(ro,`<b>${d[0]}</b> · ${t('readout_blood_red_pixels')}: ${d[1]}%${ciNote('red',d[0])}`,ev);})
       .on('pointerleave',hideTip);
-    const ciBand=uncertainty(svg,x,y,'red','#ff2634',p);
+    const ciBand=uncertainty(svg,x,y,'red','#ff2634',p,'#e8e4da');
     onEnter('red',()=>{fadeBand(ciBand,ms);drawIn(p,1600);areaP.transition().delay(ms(600)).duration(ms(1200)).attr('opacity',1);});
   }
 
