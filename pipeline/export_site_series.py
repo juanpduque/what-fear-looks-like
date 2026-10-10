@@ -25,8 +25,10 @@ DECADES = [
     "1920s", "1930s", "1940s", "1950s", "1960s", "1970s",
     "1980s", "1990s", "2000s", "2010s", "2020s",
 ]
-ROLL_YEARS = list(range(1925, 2021, 5)) + [2022, 2025, 2026]
-DIAG_YEARS = list(range(1925, 2021, 5)) + [2025, 2026]
+# First sample is 1920 so line charts meet the axis / century open.
+# Trailing 5yr at 1920 uses 1916–1920 (thin, but min_periods=2).
+ROLL_YEARS = [1920] + list(range(1925, 2021, 5)) + [2022, 2025, 2026]
+DIAG_YEARS = [1920] + list(range(1925, 2021, 5)) + [2025, 2026]
 CENSUS_KEYS = {
     "giant monster": "giant_monster",
     "vampire": "vampire",
