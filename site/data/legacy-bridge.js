@@ -13,6 +13,7 @@
   if (typeof TEXT_PTS !== 'undefined') g.TEXT_PTS = TEXT_PTS;
   if (typeof SYM_PTS !== 'undefined') g.SYM_PTS = SYM_PTS;
   if (typeof DIAG_PTS !== 'undefined') g.DIAG_PTS = DIAG_PTS;
+  if (typeof SERIES_CI !== 'undefined') g.SERIES_CI = SERIES_CI;
   if (typeof CENSUS_SERIES !== 'undefined') g.CENSUS_SERIES = CENSUS_SERIES;
   if (typeof AOF_META !== 'undefined') g.AOF_META = AOF_META;
   if (typeof POSTERS !== 'undefined') g.POSTERS = POSTERS;
