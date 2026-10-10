@@ -14,6 +14,8 @@ regenere automaticamente lo que consume index.html.
 from __future__ import annotations
 
 import json
+import math
+import statistics
 from collections import defaultdict
 from pathlib import Path
 
@@ -52,6 +54,44 @@ def _yearly_mean(rows, year_key, val_fn):
             continue
         buckets[y].append(val_fn(r))
     return {y: sum(v) / len(v) for y, v in buckets.items()}
+
+
+def _yearly_buckets(rows, year_key, val_fn):
+    buckets: dict[int, list[float]] = defaultdict(list)
+    for r in rows:
+        y = int(float(r[year_key]))
+        if y < 1897 or y > 2030:  # skip undated sentinel (9999)
+            continue
+        buckets[y].append(val_fn(r))
+    return buckets
+
+
+def _trailing_ci(buckets, years, rnd: int = 1, window: int = 5, min_periods: int = 2):
+    """95% interval for each _trailing_roll point: [[year, lo, hi, n_posters], ...].
+
+    The rolling value is the mean of the window's yearly means, so its variance
+    is sum(var_y / n_y) / k^2 over the k years with posters. Years with a single
+    poster borrow the window's pooled variance. Early decades have few posters
+    per year; the essay draws this as a band so thin data is not read as trend.
+    """
+    out = []
+    for y in years:
+        if not buckets.get(y):
+            continue
+        yrs = [yy for yy in range(y - window + 1, y + 1) if buckets.get(yy)]
+        if len(yrs) < min_periods:
+            continue
+        pooled = [v for yy in yrs for v in buckets[yy]]
+        pooled_var = statistics.variance(pooled) if len(pooled) > 1 else 0.0
+        k = len(yrs)
+        est = sum(statistics.fmean(buckets[yy]) for yy in yrs) / k
+        var = sum(
+            (statistics.variance(buckets[yy]) if len(buckets[yy]) > 1 else pooled_var) / len(buckets[yy])
+            for yy in yrs
+        ) / (k * k)
+        half = 1.96 * math.sqrt(var)
+        out.append([y, round(est - half, rnd), round(est + half, rnd), len(pooled)])
+    return out
 
 
 def _trailing_roll(series: dict[int, float], window: int = 5, min_periods: int = 2):
@@ -156,6 +196,17 @@ def build_series() -> dict:
     text_y = _yearly_mean(attrs, "year", lambda r: float(r["text_area"]) * 100)
     sym_y = _yearly_mean(attrs, "year", lambda r: float(r["symmetry"]))
     diag_y = _yearly_mean(attrs, "year", lambda r: float(r["diagonal_score"]) * 100)
+    ci_src = {
+        "dark": (_yearly_buckets(posters, "year", lambda r: float(r["brightness"])), ROLL_YEARS, 1),
+        "red": (_yearly_buckets(posters, "year", lambda r: float(r["red_share"]) * 100), ROLL_YEARS, 1),
+        "face": (
+            _yearly_buckets(faces, "year", lambda r: 100.0 if int(float(r["n_faces"])) > 0 else 0.0),
+            ROLL_YEARS, 1,
+        ),
+        "text": (_yearly_buckets(attrs, "year", lambda r: float(r["text_area"]) * 100), ROLL_YEARS, 1),
+        "sym": (_yearly_buckets(attrs, "year", lambda r: float(r["symmetry"])), ROLL_YEARS, 3),
+        "diag": (_yearly_buckets(attrs, "year", lambda r: float(r["diagonal_score"]) * 100), DIAG_YEARS, 1),
+    }
 
     main_buckets: dict[int, list[float]] = defaultdict(list)
     for r in posters:
@@ -192,6 +243,7 @@ def build_series() -> dict:
         "SYM_PTS": _pts_at(_trailing_roll(sym_y), ROLL_YEARS, 3),
         "DIAG_PTS": _pts_at(_trailing_roll(diag_y), DIAG_YEARS, 1),
         "CENSUS_SERIES": census,
+        "SERIES_CI": {k: _trailing_ci(b, yrs, rnd) for k, (b, yrs, rnd) in ci_src.items()},
     }
 
 
@@ -263,6 +315,7 @@ const TEXT_PTS={_js_pts(series["TEXT_PTS"])};
 const SYM_PTS={_js_pts(series["SYM_PTS"])};
 const DIAG_PTS={_js_pts(series["DIAG_PTS"])};
 {chr(10).join(cens_lines)}
+const SERIES_CI={json.dumps(series["SERIES_CI"], separators=(",", ":"))}; /* [year, lo95, hi95, n posters] */
 const AOF_META={{n:{n},seg_n:{seg_n}}};
 """
 

@@ -18,6 +18,7 @@ function pipelineData() {
     TEXT_PTS: window.TEXT_PTS,
     SYM_PTS: window.SYM_PTS,
     DIAG_PTS: window.DIAG_PTS,
+    SERIES_CI: window.SERIES_CI,
     CENSUS_SERIES: window.CENSUS_SERIES,
     POSTERS: window.POSTERS,
   };
@@ -36,6 +37,7 @@ let {
   TEXT_PTS,
   SYM_PTS,
   DIAG_PTS,
+  SERIES_CI,
   CENSUS_SERIES,
   POSTERS,
 } = pipelineData();
@@ -76,6 +78,37 @@ function ensureChartLabels(){
 const CHART_X0=1920, CHART_X1=2028;
 const CHART_X_TICKS=[1920,1940,1960,1980,2000,2020,2028];
 const since1920=pts=>pts.filter(p=>p[0]>=CHART_X0);
+/* Thin data before ~1960: fewer than this many posters behind a 5-yr point. */
+const FRAGILE_N=100;
+/** 95% band behind a trend line, the thin-data stretch of the line dimmed, and a note. */
+function uncertainty(svg,x,y,key,color,path){
+  const ci=(SERIES_CI?.[key]||[]).filter(c=>c[0]>=CHART_X0);
+  if(!ci.length) return null;
+  const [d0,d1]=y.domain(), lo=Math.min(d0,d1), hi=Math.max(d0,d1);
+  const clamp=v=>Math.max(lo,Math.min(hi,v));
+  const band=svg.insert('path',()=>path.node()).datum(ci).attr('class','ci-band')
+    .attr('d',d3.area().x(d=>x(d[0])).y0(d=>y(clamp(d[1]))).y1(d=>y(clamp(d[2]))).curve(d3.curveMonotoneX))
+    .attr('fill',color).attr('opacity',0);
+  const fragile=ci.filter(c=>c[3]<FRAGILE_N);
+  const solid=ci.find(c=>c[3]>=FRAGILE_N && c[0]>fragile[fragile.length-1]?.[0]);
+  if(fragile.length&&solid){
+    const [r0,r1]=x.range(), at=v=>`${(100*(x(v)-r0)/(r1-r0)).toFixed(2)}%`;
+    const g=svg.append('defs').append('linearGradient').attr('id',`ci-fade-${key}`)
+      .attr('gradientUnits','userSpaceOnUse').attr('x1',r0).attr('x2',r1).attr('y1',0).attr('y2',0);
+    [[0,.4],[at(fragile[fragile.length-1][0]),.4],[at(solid[0]),1],['100%',1]].forEach(([o,a])=>
+      g.append('stop').attr('offset',o).attr('stop-color',color).attr('stop-opacity',a));
+    path.attr('stroke',`url(#ci-fade-${key})`);
+    svg.append('text').attr('class','annot thin-note').attr('text-anchor','start')
+      .attr('x',x(fragile[0][0])).attr('y',y(lo)-8).text(t('annot_thin_data'));
+  }
+  return band;
+}
+const fadeBand=(band,ms)=>band&&band.transition().delay(ms(500)).duration(ms(1200)).attr('opacity',.16);
+/** Readout suffix: the point's 95% interval and how many posters back it. */
+function ciNote(key,year){
+  const c=(SERIES_CI?.[key]||[]).find(r=>r[0]===year);
+  return c?` · ${t('readout_ci',{lo:c[1],hi:c[2],n:c[3].toLocaleString()})}`:'';
+}
 
 /* Accessible chart labels + collapsible data tables (WCAG: don't rely on SVG alone) */
 function wireChartAccessibility(){
@@ -820,7 +853,7 @@ function d3Charts(){
     const showDark=i=>{
       const d=DARK_PTS[i], md=MAIN_DEC[bis(MAIN_DEC,d[0])];
       focus.attr('cx',x(d[0])).attr('cy',y(d[1])).attr('opacity',1);
-      report(ro,`<b>${d[0]}</b> · ${t('readout_all_horror_l')} ${d[1]} · ${t('readout_mainstream_l')} (${md[0]}s) L* ${md[1]}`,null);
+      report(ro,`<b>${d[0]}</b> · ${t('readout_all_horror_l')} ${d[1]} · ${t('readout_mainstream_l')} (${md[0]}s) L* ${md[1]}${ciNote('dark',d[0])}`,null);
     };
     const scrub=wireScrub('darkness',{n:DARK_PTS.length, start:DARK_PTS.length-1, show:showDark});
     const hitDark=function(ev){
@@ -830,13 +863,14 @@ function d3Charts(){
       const d=DARK_PTS[i];
       focus.attr('cx',x(d[0])).attr('cy',y(d[1])).attr('opacity',1);
       const md=MAIN_DEC[bis(MAIN_DEC,year)];
-      report(ro,`<b>${d[0]}</b> · ${t('readout_all_horror_l')} ${d[1]} · ${t('readout_mainstream_l')} (${md[0]}s) L* ${md[1]}`,ev);
+      report(ro,`<b>${d[0]}</b> · ${t('readout_all_horror_l')} ${d[1]} · ${t('readout_mainstream_l')} (${md[0]}s) L* ${md[1]}${ciNote('dark',d[0])}`,ev);
     };
     svg.append('rect').attr('x',m.l).attr('y',m.t).attr('width',W-m.l-m.r).attr('height',H-m.t-m.b)
       .attr('fill','transparent').style('touch-action','none')
       .on('pointermove pointerdown',function(ev){ev.preventDefault();hitDark.call(this,ev);})
       .on('pointerleave',()=>{focus.attr('opacity',0);hideTip();});
-    onEnter('darkness',()=>{drawIn(p1,1800);
+    const ciBand=uncertainty(svg,x,y,'dark','#e5a00d',p1);
+    onEnter('darkness',()=>{fadeBand(ciBand,ms);drawIn(p1,1800);
       areaP.transition().delay(ms(700)).duration(ms(1200)).attr('opacity',1);
       p2.transition().delay(ms(1400)).duration(ms(900)).attr('opacity',1);});
   }
@@ -862,7 +896,7 @@ function d3Charts(){
     const ro=mkReadout('red',t('hint_tap_drag_century'));
     const bis=d3.bisector(d=>d[0]).center;
     const scrub=wireScrub('red',{n:RED_PTS.length, start:RED_PTS.length-1, show:i=>{
-      const d=RED_PTS[i]; report(ro,`<b>${d[0]}</b> · ${t('readout_blood_red_pixels')}: ${d[1]}%`,null);
+      const d=RED_PTS[i]; report(ro,`<b>${d[0]}</b> · ${t('readout_blood_red_pixels')}: ${d[1]}%${ciNote('red',d[0])}`,null);
     }});
     svg.append('rect').attr('x',m.l).attr('y',m.t).attr('width',W-m.l-m.r).attr('height',H-m.t-m.b).attr('fill','transparent')
       .style('touch-action','none')
@@ -871,9 +905,10 @@ function d3Charts(){
         const i=bis(RED_PTS,x.invert(d3.pointer(ev,this)[0]));
         scrub.set(i);
         const d=RED_PTS[i];
-        report(ro,`<b>${d[0]}</b> · ${t('readout_blood_red_pixels')}: ${d[1]}%`,ev);})
+        report(ro,`<b>${d[0]}</b> · ${t('readout_blood_red_pixels')}: ${d[1]}%${ciNote('red',d[0])}`,ev);})
       .on('pointerleave',hideTip);
-    onEnter('red',()=>{drawIn(p,1600);areaP.transition().delay(ms(600)).duration(ms(1200)).attr('opacity',1);});
+    const ciBand=uncertainty(svg,x,y,'red','#ff2634',p);
+    onEnter('red',()=>{fadeBand(ciBand,ms);drawIn(p,1600);areaP.transition().delay(ms(600)).duration(ms(1200)).attr('opacity',1);});
   }
 
   /* --- V. FACES: seventy-year retreat, with the close-up twist --- */
@@ -897,7 +932,7 @@ function d3Charts(){
     const ro=mkReadout('faces',t('hint_tap_drag_century'));
     const bis=d3.bisector(d=>d[0]).center;
     const scrub=wireScrub('faces',{n:FACE_PTS.length, start:FACE_PTS.length-1, show:i=>{
-      const d=FACE_PTS[i]; report(ro,`<b>${d[0]}</b> · ${t('readout_posters_with_face')}: ${d[1]}%`,null);
+      const d=FACE_PTS[i]; report(ro,`<b>${d[0]}</b> · ${t('readout_posters_with_face')}: ${d[1]}%${ciNote('face',d[0])}`,null);
     }});
     svg.append('rect').attr('x',m.l).attr('y',m.t).attr('width',W-m.l-m.r).attr('height',H-m.t-m.b).attr('fill','transparent')
       .style('touch-action','none')
@@ -906,11 +941,12 @@ function d3Charts(){
         const i=bis(FACE_PTS,x.invert(d3.pointer(ev,this)[0]));
         scrub.set(i);
         const d=FACE_PTS[i];
-        report(ro,`<b>${d[0]}</b> · ${t('readout_posters_with_face')}: ${d[1]}%`,ev);})
+        report(ro,`<b>${d[0]}</b> · ${t('readout_posters_with_face')}: ${d[1]}%${ciNote('face',d[0])}`,ev);})
       .on('pointerleave',hideTip);
     const pulse=()=>peak.attr('r',5).attr('opacity',.9).transition().duration(1800).ease(d3.easeCubicOut)
       .attr('r',22).attr('opacity',0).on('end',pulse);
-    onEnter('faces',()=>{drawIn(p,1600);dot.transition().delay(ms(1200)).duration(ms(400)).attr('r',5);
+    const ciBand=uncertainty(svg,x,y,'face','#e8e4da',p);
+    onEnter('faces',()=>{fadeBand(ciBand,ms);drawIn(p,1600);dot.transition().delay(ms(1200)).duration(ms(400)).attr('r',5);
       if(!REDUCE) setTimeout(pulse,1400);
       else peak.attr('r',8).attr('opacity',.55);});
   }
@@ -938,7 +974,7 @@ function d3Charts(){
     const ro=mkReadout('quiet',t('hint_tap_drag_century'));
     const bis=d3.bisector(d=>d[0]).center;
     const scrub=wireScrub('quiet',{n:TEXT_PTS.length, start:TEXT_PTS.length-1, show:i=>{
-      const d=TEXT_PTS[i]; report(ro,`<b>${d[0]}</b> · ${t('readout_textlike_coverage')}: ${d[1]}%`,null);
+      const d=TEXT_PTS[i]; report(ro,`<b>${d[0]}</b> · ${t('readout_textlike_coverage')}: ${d[1]}%${ciNote('text',d[0])}`,null);
     }});
     svg.append('rect').attr('x',m.l).attr('y',m.t).attr('width',W-m.l-m.r).attr('height',H-m.t-m.b).attr('fill','transparent')
       .style('touch-action','none')
@@ -947,9 +983,10 @@ function d3Charts(){
         const i=bis(TEXT_PTS,x.invert(d3.pointer(ev,this)[0]));
         scrub.set(i);
         const d=TEXT_PTS[i];
-        report(ro,`<b>${d[0]}</b> · ${t('readout_textlike_coverage')}: ${d[1]}%`,ev);})
+        report(ro,`<b>${d[0]}</b> · ${t('readout_textlike_coverage')}: ${d[1]}%${ciNote('text',d[0])}`,ev);})
       .on('pointerleave',hideTip);
-    onEnter('quiet',()=>{drawIn(p,1600);areaP.transition().delay(ms(600)).duration(ms(1200)).attr('opacity',1);});
+    const ciBand=uncertainty(svg,x,y,'text','#e5a00d',p);
+    onEnter('quiet',()=>{fadeBand(ciBand,ms);drawIn(p,1600);areaP.transition().delay(ms(600)).duration(ms(1200)).attr('opacity',1);});
   }
 
   /* --- VI-b. SYMMETRY: the line carries its own mirror reflection --- */
@@ -974,7 +1011,7 @@ function d3Charts(){
     const ro=mkReadout('symmetry',t('hint_tap_drag_century'));
     const bis=d3.bisector(d=>d[0]).center;
     const scrub=wireScrub('symmetry',{n:SYM_PTS.length, start:SYM_PTS.length-1, show:i=>{
-      const d=SYM_PTS[i]; report(ro,`<b>${d[0]}</b> · ${t('readout_mirror_symmetry')}: ${d[1]}`,null);
+      const d=SYM_PTS[i]; report(ro,`<b>${d[0]}</b> · ${t('readout_mirror_symmetry')}: ${d[1]}${ciNote('sym',d[0])}`,null);
     }});
     svg.append('rect').attr('x',m.l).attr('y',m.t).attr('width',W-m.l-m.r).attr('height',H-m.t-m.b).attr('fill','transparent')
       .style('touch-action','none')
@@ -983,9 +1020,10 @@ function d3Charts(){
         const i=bis(SYM_PTS,x.invert(d3.pointer(ev,this)[0]));
         scrub.set(i);
         const d=SYM_PTS[i];
-        report(ro,`<b>${d[0]}</b> · ${t('readout_mirror_symmetry')}: ${d[1]}`,ev);})
+        report(ro,`<b>${d[0]}</b> · ${t('readout_mirror_symmetry')}: ${d[1]}${ciNote('sym',d[0])}`,ev);})
       .on('pointerleave',hideTip);
-    onEnter('symmetry',()=>{drawIn(p,1600);
+    const ciBand=uncertainty(svg,x,y,'sym','#e8e4da',p);
+    onEnter('symmetry',()=>{fadeBand(ciBand,ms);drawIn(p,1600);
       ghost.transition().delay(ms(1500)).duration(ms(1200)).attr('opacity',.18);});
   }
 
@@ -1012,7 +1050,7 @@ function d3Charts(){
     const ro=mkReadout('diagonal',t('hint_tap_drag_century'));
     const bis=d3.bisector(d=>d[0]).center;
     const scrub=wireScrub('diagonal',{n:DIAG_PTS.length, start:DIAG_PTS.length-1, show:i=>{
-      const d=DIAG_PTS[i]; report(ro,`<b>${d[0]}</b> · ${t('readout_diagonal_linework')}: ${d[1]}%`,null);
+      const d=DIAG_PTS[i]; report(ro,`<b>${d[0]}</b> · ${t('readout_diagonal_linework')}: ${d[1]}%${ciNote('diag',d[0])}`,null);
     }});
     svg.append('rect').attr('x',m.l).attr('y',m.t).attr('width',W-m.l-m.r).attr('height',H-m.t-m.b).attr('fill','transparent')
       .style('touch-action','none')
@@ -1021,9 +1059,10 @@ function d3Charts(){
         const i=bis(DIAG_PTS,x.invert(d3.pointer(ev,this)[0]));
         scrub.set(i);
         const d=DIAG_PTS[i];
-        report(ro,`<b>${d[0]}</b> · ${t('readout_diagonal_linework')}: ${d[1]}%`,ev);})
+        report(ro,`<b>${d[0]}</b> · ${t('readout_diagonal_linework')}: ${d[1]}%${ciNote('diag',d[0])}`,ev);})
       .on('pointerleave',hideTip);
-    onEnter('diagonal',()=>{drawIn(p,1600);areaP.transition().delay(ms(600)).duration(ms(1200)).attr('opacity',1);});
+    const ciBand=uncertainty(svg,x,y,'diag','#d9772e',p);
+    onEnter('diagonal',()=>{fadeBand(ciBand,ms);drawIn(p,1600);areaP.transition().delay(ms(600)).duration(ms(1200)).attr('opacity',1);});
   }
 
   /* --- VII. MONSTER CENSUS: ghost + killer lit; others muted until hover --- */
