@@ -46,6 +46,8 @@ let POSTER_ALTS_COMP_P = null;
 let POSTER_ALTS_FACES_P = null;
 let POSTER_ALTS_OWL_P = null;
 let POSTER_ALTS_TEXT_P = null;
+// lookup.js sem keys (pipeline/build_lookup.py SEG_KEYS without the clip_ prefix).
+const CLIP_SEM_KEYS = ['blood', 'weapon', 'shadow', 'fire', 'bone_skull', 'smoke_fog', 'night_sky'];
 
 export function ensureCreatureBoxes() {
   if (window.CREATURE_BOXES) return Promise.resolve(window.CREATURE_BOXES);
@@ -324,6 +326,7 @@ function ensureAltJson(flag, url, cacheKey) {
 const FACES_CACHE = { p: null };
 const OWL_CACHE = { p: null };
 const TEXT_CACHE = { p: null };
+const CLIP_CACHE = { p: null };
 
 export function ensurePosterAltsFaces() {
   POSTER_ALTS_FACES_P = ensureAltJson('POSTER_ALTS_FACES', 'data/poster_alts_faces.json', FACES_CACHE);
@@ -338,6 +341,10 @@ export function ensurePosterAltsOwl() {
 export function ensurePosterAltsText() {
   POSTER_ALTS_TEXT_P = ensureAltJson('POSTER_ALTS_TEXT', 'data/poster_alts_text.json', TEXT_CACHE);
   return POSTER_ALTS_TEXT_P;
+}
+
+export function ensurePosterAltsClip() {
+  return ensureAltJson('POSTER_ALTS_CLIP', 'data/poster_alts_clip.json', CLIP_CACHE);
 }
 
 export function poseAltFor(id, path) {
@@ -402,6 +409,20 @@ export function owlAltFor(id, path) {
     c: Array.isArray(row.c) ? row.c : [],
     w: Array.isArray(row.w) ? row.w : [],
   };
+}
+
+/** Scored CLIP terms with the zeros the JSON leaves out filled back in; null when never scored. */
+export function clipSem(row) {
+  if (!row || typeof row !== 'object') return null;
+  const sem = {};
+  for (const k of CLIP_SEM_KEYS) sem[k] = row[k] ?? 0;
+  return sem;
+}
+
+/** CLIP horror-vocabulary shares for an alternate sheet; null when never scored. */
+export function clipAltFor(id, path) {
+  const bag = window.POSTER_ALTS_CLIP && window.POSTER_ALTS_CLIP[String(id)];
+  return clipSem(bag && path ? bag[path] : null);
 }
 
 export function textAltFor(id, path) {

@@ -9,7 +9,7 @@ Schema (LOOKUP[id]):
   t,y,path,L,dark,sat,red,pal,bands[6],faces,farea,nova_faces?,
   nova_creature?,nova_typo?,nova_title?,nova_ocr?,
   jev_creature?,jev_present?,creature,cscore,
-  typo,taxis,painted,comp{...},sem{...}?
+  typo,taxis,painted,comp{...},sem{...}? (sem omits terms that scored 0)
   nova_* fields are Nova Pro QA (pipeline/data/qa/qa_*.csv); display only.
   jev_* is JEV reconciled typed type (not the CLIP census / essay owner).
   sal? is MSI-Net peak / top10 mass (not the OpenCV balance centroid).
@@ -264,8 +264,8 @@ def main():
                 v = r(getattr(s, k), 2)
                 if v and v > 0:
                     sem[k.replace("clip_", "")] = v
-            if sem:
-                rec["sem"] = sem
+            # Empty when every term scored 0: tells the autopsy "0%", not "never scored".
+            rec["sem"] = sem
         if rk is not None:
             flags = []
             for key, lab in (
