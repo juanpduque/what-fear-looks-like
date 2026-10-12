@@ -16,7 +16,11 @@ export function wantsWebGL() {
 }
 
 export function createLightTable(host) {
-  const renderer = new THREE.WebGLRenderer({ antialias: true, alpha: true, powerPreference: 'low-power' });
+  const renderer = new THREE.WebGLRenderer({
+    antialias: true,
+    alpha: true,
+    powerPreference: 'low-power',
+  });
   renderer.setPixelRatio(Math.min(2, window.devicePixelRatio || 1));
   renderer.setClearColor(0x000000, 0);
   renderer.outputColorSpace = THREE.SRGBColorSpace;
@@ -49,7 +53,11 @@ export function createLightTable(host) {
   scene.add(mesh);
 
   const tableGeo = new THREE.PlaneGeometry(8, 5);
-  const tableMat = new THREE.MeshBasicMaterial({ color: 0x08090c, transparent: true, opacity: 0.0 });
+  const tableMat = new THREE.MeshBasicMaterial({
+    color: 0x08090c,
+    transparent: true,
+    opacity: 0.0,
+  });
   const table = new THREE.Mesh(tableGeo, tableMat);
   table.position.z = -0.6;
   scene.add(table);
