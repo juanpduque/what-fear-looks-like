@@ -28,7 +28,25 @@ export function saliencyMapUrls(id, filePath) {
     if (!stem) return [];
     return [siteAsset(`saliency_alts/${n}_${stem}.webp`)];
   }
+  if (isWorldPoster(n)) return [siteAsset(`saliency_world/${n}.webp`)];
   return [siteAsset(`saliency/${n}.webp`)];
+}
+
+// Non-English examples from the essay's world chart (data/world_lookup.js).
+let WORLD_BY_ID = null;
+function worldById() {
+  if (!WORLD_BY_ID && Array.isArray(window.WORLD_POSTERS)) {
+    WORLD_BY_ID = Object.fromEntries(window.WORLD_POSTERS.map((p) => [p[7], p]));
+  }
+  return WORLD_BY_ID || {};
+}
+
+export function isWorldPoster(id) {
+  return Boolean(worldById()[Number(id)]);
+}
+
+export function worldRecord(id) {
+  return (window.WORLD_LOOKUP && window.WORLD_LOOKUP[String(id)]) || null;
 }
 
 let LOOKUP_P = null;
@@ -480,7 +498,7 @@ export function poseFor(id) {
 export function findPosterById(id) {
   const n = Number(id);
   if (!Number.isFinite(n)) return null;
-  return POSTER_BY_ID[n] || POSTER_BY_ID[id] || null;
+  return POSTER_BY_ID[n] || POSTER_BY_ID[id] || worldById()[n] || null;
 }
 
 export function decadeLabel(year) {

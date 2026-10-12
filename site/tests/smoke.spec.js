@@ -47,6 +47,23 @@ test.describe('essay', () => {
   });
 });
 
+test.describe('horror around the world', () => {
+  test('draws the language chart and opens an example poster', async ({ page }) => {
+    await page.goto('?lang=en');
+    await page.locator('#world-ex').scrollIntoViewIfNeeded();
+    await expect(page.locator('#world-faces .wf-row')).toHaveCount(13);
+    await expect(page.locator('#world-ex-head')).toContainText('Japanese');
+    await page.locator('#world-ex-chips button[data-lang="ko"]').click();
+    await expect(page.locator('#world-ex-head')).toContainText('Korean');
+    await expect(page.locator('.world-ex-card')).toHaveCount(12);
+    await page.locator('.world-ex-card').first().click();
+    await expect(page.locator('.au-beat').first()).toContainText('Korean-language film', {
+      timeout: 30_000,
+    });
+    await expect(page).toHaveURL(/[?&]id=\d+/);
+  });
+});
+
 test.describe('Spanish share URL', () => {
   test('es/ carries Spanish preview tags for crawlers', async ({ request }) => {
     const html = await (await request.get('es/')).text();

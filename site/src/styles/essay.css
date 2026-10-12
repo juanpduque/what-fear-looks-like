@@ -2282,3 +2282,88 @@ footer .logo span {
     margin: 0;
   }
 }
+
+/* World chart: example posters per language (essay.js V-b) */
+.world-ex {
+  margin: 22px 0 6px;
+}
+.world-ex-head {
+  font-size: 13px;
+  color: #b9b2a4;
+  margin: 0 0 10px;
+}
+.world-ex-chips {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+.world-ex-chips button {
+  font: inherit;
+  font-size: 12px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  border: 1px solid #3a3530;
+  background: transparent;
+  color: #b9b2a4;
+  cursor: pointer;
+}
+.world-ex-chips button[aria-pressed='true'] {
+  border-color: #e5a00d;
+  color: #f2ede4;
+  background: rgba(229, 160, 13, 0.14);
+}
+.world-ex-row {
+  display: grid;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: 10px;
+}
+@media (max-width: 600px) {
+  .world-ex-row {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+.world-ex-card {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding: 0;
+  border: 0;
+  background: none;
+  color: #b9b2a4;
+  font: inherit;
+  text-align: left;
+  cursor: pointer;
+}
+.world-ex-card img {
+  width: 100%;
+  aspect-ratio: 2 / 3;
+  object-fit: cover;
+  border-radius: 3px;
+  background: #1a1a1c;
+  transition: transform 0.2s;
+}
+.world-ex-card:hover img,
+.world-ex-card:focus-visible img {
+  transform: translateY(-3px);
+}
+.world-ex-title {
+  font-size: 11px;
+  line-height: 1.3;
+}
+.world-ex-face {
+  position: absolute;
+  top: 6px;
+  left: 6px;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  padding: 2px 6px;
+  border-radius: 2px;
+  background: rgba(10, 10, 12, 0.8);
+  color: #9a958a;
+}
+.world-ex-face.has-face {
+  color: #e5a00d;
+}

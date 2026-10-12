@@ -1187,6 +1187,14 @@
     "en": "{year} · TMDB {id}. One of 33,622 one-sheets measured the same way. Medium: {medium} (CLIP illustration score {painted}; Custom Labels did not cover this sheet). Scroll — the layers we ran on every poster peel off this one.",
     "es": "{year} · TMDB {id}. Uno de 33,622 one-sheets medidos igual. Medio: {medium} (CLIP ilustración {painted}; Custom Labels no cubre esta hoja). Desplázate: las capas que corrimos en cada póster se despegan de este."
   },
+  "autopsy_body_object_world": {
+    "en": "{year} · TMDB {id}. A {lang}-language film, outside the 33,622-poster English corpus but measured the same way; where it is compared, it is against English-language horror. Medium: {medium} (Custom Labels {conf}). CLIP illustration score {painted}. Scroll — the layers we ran on every poster peel off this one.",
+    "es": "{year} · TMDB {id}. Una película en {lang}, fuera del corpus de 33,622 afiches en inglés pero medida igual; cuando se compara, es con el terror en inglés. Medio: {medium} (Custom Labels {conf}). CLIP ilustración {painted}. Desplázate: las capas que corrimos en cada póster se despegan de este."
+  },
+  "autopsy_body_object_clip_world": {
+    "en": "{year} · TMDB {id}. A {lang}-language film, outside the 33,622-poster English corpus but measured the same way; where it is compared, it is against English-language horror. Medium: {medium} (CLIP illustration score {painted}; Custom Labels did not cover this sheet). Scroll — the layers we ran on every poster peel off this one.",
+    "es": "{year} · TMDB {id}. Una película en {lang}, fuera del corpus de 33,622 afiches en inglés pero medida igual; cuando se compara, es con el terror en inglés. Medio: {medium} (CLIP ilustración {painted}; Custom Labels no cubre esta hoja). Desplázate: las capas que corrimos en cada póster se despegan de este."
+  },
   "autopsy_body_alts": {
     "en": "TMDB keeps {n} distinct sheets. Select one to autopsy those pixels — color, pose, YuNet, OWL and title of that sheet.",
     "es": "TMDB guarda {n} hojas distintas. Elige una para autopsarla: color, pose, YuNet, OWL y título de esa hoja."
@@ -1630,5 +1638,65 @@
   "exhibit_m_diagonals_read": {
     "en": "0.20 is low. Mass sits center — knife and pumpkin — not corner to corner. When diagonals surge later, the sheet is leaning.",
     "es": "0.20 es bajo. La masa está al centro — cuchillo y calabaza — no de esquina a esquina. Cuando las diagonales suban después, la hoja se está inclinando."
+  },
+  "world_axis": {
+    "en": "HORROR POSTERS WITH A FACE, 2000–2026",
+    "es": "AFICHES DE TERROR CON CARA, 2000–2026"
+  },
+  "world_ex_head": {
+    "en": "The {n} most-voted {lang} horror films on TMDB since 2000: {k} show a face. A handful, not the measure — the chart above counts every poster. Tap one to open its autopsy.",
+    "es": "Las {n} películas de terror en {lang} más votadas en TMDB desde el 2000: {k} muestran una cara. Son ejemplos, no la medida: el gráfico de arriba cuenta todos los afiches. Toca una para abrir su autopsia."
+  },
+  "world_ex_chips": {
+    "en": "Choose a language",
+    "es": "Elige un idioma"
+  },
+  "world_ex_face": {
+    "en": "Face",
+    "es": "Con cara"
+  },
+  "world_ex_noface": {
+    "en": "No face",
+    "es": "Sin cara"
+  },
+  "world_tip": {
+    "en": "<b>{lang}</b> · {n} posters · {face}% with a face (95%: {lo}–{hi})",
+    "es": "<b>{lang}</b> · {n} afiches · {face}% con cara (95%: {lo}–{hi})"
+  },
+  "aria_world_desc": {
+    "en": "Dot chart of the share of horror posters with a face by original language, 2000–2026. Asian languages sit between 64% and 79%; English, Spanish, French, German and Italian between 39% and 49%.",
+    "es": "Gráfico de puntos con la proporción de afiches de terror con cara por idioma original, 2000–2026. Los idiomas asiáticos están entre 64% y 79%; inglés, español, francés, alemán e italiano entre 39% y 49%."
+  },
+  "aria_world_label": {
+    "en": "Horror posters with a face, by language",
+    "es": "Afiches de terror con cara, por idioma"
+  },
+  "table_world_caption": {
+    "en": "Horror posters with a face by original language, 2000–2026",
+    "es": "Afiches de terror con cara por idioma original, 2000–2026"
+  },
+  "col_language": {
+    "en": "Language",
+    "es": "Idioma"
+  },
+  "col_posters": {
+    "en": "Posters",
+    "es": "Afiches"
+  },
+  "col_interval_95": {
+    "en": "95% interval",
+    "es": "Intervalo 95%"
+  },
+  "eras_axis": {
+    "en": "POSTERS WITH A FACE, BY ERA",
+    "es": "AFICHES CON CARA, POR ÉPOCA"
+  },
+  "eras_before_1980": {
+    "en": "before 1980",
+    "es": "antes de 1980"
+  },
+  "eras_tip": {
+    "en": "<b>{lang}</b> · {era} · {n} posters · {face}% with a face",
+    "es": "<b>{lang}</b> · {era} · {n} afiches · {face}% con cara"
   }
 }

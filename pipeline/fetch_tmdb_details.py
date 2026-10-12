@@ -10,6 +10,9 @@ genres (names), poster_path, title, fetched.
 Usage:
   python3 fetch_tmdb_details.py            # resume, fetch missing ids
   python3 fetch_tmdb_details.py --refresh  # refetch all
+  # other genres (genre comparison), into their own cache:
+  python3 fetch_tmdb_details.py --posters data/posters_thriller.csv data/posters_scifi.csv \
+      data/posters_mystery.csv --cache data/qa/tmdb_details/tmdb_details_genres.jsonl
 """
 
 from __future__ import annotations
@@ -46,10 +49,10 @@ def load_key() -> str:
     return ""
 
 
-def load_cache() -> dict[int, dict]:
+def load_cache(path: Path = CACHE) -> dict[int, dict]:
     out: dict[int, dict] = {}
-    if CACHE.exists():
-        for line in CACHE.open(encoding="utf-8"):
+    if path.exists():
+        for line in path.open(encoding="utf-8"):
             line = line.strip()
             if line:
                 rec = json.loads(line)
@@ -94,7 +97,12 @@ def main() -> None:
     ap.add_argument("--refresh", action="store_true")
     ap.add_argument("--workers", type=int, default=16)
     ap.add_argument("--limit", type=int, default=0)
+    ap.add_argument(
+        "--posters", type=Path, nargs="+", default=[POSTERS], help="CSV(s) with an id column"
+    )
+    ap.add_argument("--cache", type=Path, default=CACHE)
     args = ap.parse_args()
+    cache_path = args.cache
 
     key = load_key()
     if not key:
@@ -102,20 +110,21 @@ def main() -> None:
 
     ids: list[int] = []
     seen: set[int] = set()
-    with POSTERS.open(newline="", encoding="utf-8") as f:
-        for row in csv.DictReader(f):
-            try:
-                pid = int(row["id"])
-            except (KeyError, ValueError):
-                continue
-            if pid not in seen:
-                seen.add(pid)
-                ids.append(pid)
+    for posters in args.posters:
+        with posters.open(newline="", encoding="utf-8") as f:
+            for row in csv.DictReader(f):
+                try:
+                    pid = int(float(row["id"]))
+                except (KeyError, ValueError):
+                    continue
+                if pid not in seen:
+                    seen.add(pid)
+                    ids.append(pid)
 
-    OUT_DIR.mkdir(parents=True, exist_ok=True)
-    cache = {} if args.refresh else load_cache()
-    if args.refresh and CACHE.exists():
-        CACHE.unlink()
+    cache_path.parent.mkdir(parents=True, exist_ok=True)
+    cache = {} if args.refresh else load_cache(cache_path)
+    if args.refresh and cache_path.exists():
+        cache_path.unlink()
     todo = [i for i in ids if i not in cache or cache[i].get("http") == -1]
     if args.limit:
         todo = todo[: args.limit]
@@ -127,7 +136,7 @@ def main() -> None:
     session.mount("https://", adapter)
     done = 0
     t0 = time.time()
-    with CACHE.open("a", encoding="utf-8") as out, ThreadPoolExecutor(args.workers) as ex:
+    with cache_path.open("a", encoding="utf-8") as out, ThreadPoolExecutor(args.workers) as ex:
         futs = [ex.submit(fetch, session, key, pid) for pid in todo]
         for fut in as_completed(futs):
             rec = fut.result()

@@ -306,6 +306,30 @@ function wireChartAccessibility() {
     FACE_PTS.map(([y, v]) => [y, v.toFixed(1) + '%']),
   );
 
+  if (Array.isArray(window.WORLD_FACES)) {
+    annotate('world-faces', t('aria_world_label'), t('aria_world_desc'));
+    const name = (c) => {
+      try {
+        return new Intl.DisplayNames([document.documentElement.lang || 'en'], {
+          type: 'language',
+        }).of(c);
+      } catch {
+        return c;
+      }
+    };
+    table(
+      'world-faces',
+      t('table_world_caption'),
+      [t('col_language'), t('col_posters'), t('col_with_face_pct'), t('col_interval_95')],
+      window.WORLD_FACES.map((r) => [
+        name(r.lang),
+        r.n.toLocaleString('en-US'),
+        r.face.toFixed(1) + '%',
+        `${r.lo.toFixed(1)}–${r.hi.toFixed(1)}%`,
+      ]),
+    );
+  }
+
   annotate('census', t('aria_census_label'), t('aria_census_desc'));
   {
     const years = [1920, 1930, 1940, 1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020];
@@ -524,7 +548,7 @@ window.__aofPosterQueue = window.__aofPosterQueue || [];
 window.openPoster = function (p) {
   if (!p) return;
   window.__aofPosterQueue.push(p);
-  window.dispatchEvent(new Event('aof:lookup-request'));
+  document.dispatchEvent(new Event('aof:lookup-request'));
 };
 
 /* ============ explorer tiles (section hidden; Dissect search replaces it) ============ */
@@ -1967,6 +1991,329 @@ function d3Charts() {
       if (!REDUCE) setTimeout(pulse, 1400);
       else peak.attr('r', 8).attr('opacity', 0.55);
     });
+  }
+
+  /* --- V-b. FACES BY LANGUAGE: the retreat is Western; Asian horror kept the face --- */
+  if (document.getElementById('world-faces') && Array.isArray(window.WORLD_FACES)) {
+    const rows = window.WORLD_FACES;
+    const ASIA = new Set(['ja', 'zh', 'ko', 'th', 'id', 'tl']);
+    // Narrow screens get a narrower canvas so 13 labelled rows stay legible.
+    const narrow = (document.getElementById('world-faces').parentNode.clientWidth || 960) < 600;
+    const ROW = 28,
+      W = narrow ? 420 : 960,
+      m = narrow ? { t: 34, r: 44, b: 46, l: 96 } : { t: 34, r: 90, b: 46, l: 150 },
+      H = m.t + m.b + rows.length * ROW;
+    const svg = d3.select('#world-faces').attr('viewBox', `0 0 ${W} ${H}`);
+    const x = d3
+      .scaleLinear()
+      .domain([30, 90])
+      .range([m.l, W - m.r]);
+    const yRow = (i) => m.t + i * ROW + ROW / 2;
+    const color = (r) => (r.lang === 'en' ? '#c1121f' : ASIA.has(r.lang) ? '#e5a00d' : '#9a958a');
+    const langName = (code) => {
+      try {
+        return new Intl.DisplayNames([document.documentElement.lang || 'en'], {
+          type: 'language',
+        }).of(code);
+      } catch {
+        return code;
+      }
+    };
+    (narrow ? [30, 50, 70, 90] : [30, 40, 50, 60, 70, 80, 90]).forEach((v) => {
+      svg
+        .append('line')
+        .attr('class', 'axis')
+        .attr('x1', x(v))
+        .attr('x2', x(v))
+        .attr('y1', m.t - 6)
+        .attr('y2', H - m.b + 6);
+      svg
+        .append('text')
+        .attr('class', 'tick-label')
+        .attr('x', x(v))
+        .attr('y', H - m.b + 24)
+        .attr('text-anchor', 'middle')
+        .text(v + '%');
+    });
+    svg
+      .append('text')
+      .attr('class', 'tick-label')
+      .attr('x', m.l)
+      .attr('y', m.t - 14)
+      .attr('data-chart-t', 'world_axis')
+      .text(t('world_axis'));
+    const en = rows.find((r) => r.lang === 'en');
+    if (en)
+      svg
+        .append('line')
+        .attr('class', 'annot-line')
+        .attr('x1', x(en.face))
+        .attr('x2', x(en.face))
+        .attr('y1', m.t - 4)
+        .attr('y2', H - m.b + 4);
+    const labels = [];
+    const g = svg
+      .selectAll('g.wf-row')
+      .data(rows)
+      .join('g')
+      .attr('class', 'wf-row')
+      .attr('opacity', 0);
+    g.append('line')
+      .attr('x1', (r) => x(r.lo))
+      .attr('x2', (r) => x(r.hi))
+      .attr('y1', (r, i) => yRow(i))
+      .attr('y2', (r, i) => yRow(i))
+      .attr('stroke', color)
+      .attr('stroke-width', 2.5)
+      .attr('stroke-linecap', 'round')
+      .attr('opacity', 0.55);
+    g.append('circle')
+      .attr('cx', (r) => x(r.face))
+      .attr('cy', (r, i) => yRow(i))
+      .attr('r', (r) => (r.lang === 'en' ? 7 : 5.5))
+      .attr('fill', color);
+    g.each(function (r, i) {
+      const lab = d3
+        .select(this)
+        .append('text')
+        .attr('class', 'line-label')
+        .attr('x', m.l - 12)
+        .attr('y', yRow(i) + 4)
+        .attr('text-anchor', 'end')
+        .attr('fill', color(r))
+        .style('font-weight', r.lang === 'en' ? 700 : null)
+        .text(langName(r.lang));
+      labels.push([lab, r.lang]);
+      d3.select(this)
+        .append('text')
+        .attr('class', 'line-label')
+        .attr('x', x(r.hi) + 8)
+        .attr('y', yRow(i) + 4)
+        .attr('fill', color(r))
+        .text(Math.round(r.face) + '%');
+    });
+    chartReadoutRefresh.push(() => labels.forEach(([lab, code]) => lab.text(langName(code))));
+    const tipHtml = (r) =>
+      t('world_tip', {
+        lang: langName(r.lang),
+        n: r.n.toLocaleString('en-US'),
+        face: r.face.toFixed(1),
+        lo: r.lo.toFixed(1),
+        hi: r.hi.toFixed(1),
+      });
+    g.append('rect')
+      .attr('x', 0)
+      .attr('width', W)
+      .attr('y', (r, i) => yRow(i) - ROW / 2)
+      .attr('height', ROW)
+      .attr('fill', 'transparent')
+      .on('pointermove pointerdown', (ev, r) => showTip(tipHtml(r), ev))
+      .on('pointerleave', hideTip)
+      .on('click', (ev, r) => showWorldExamples(r.lang));
+    onEnter('world-faces', () => {
+      g.transition()
+        .delay((r, i) => ms(i * 70))
+        .duration(ms(500))
+        .attr('opacity', 1);
+    });
+  }
+
+  /* Example posters under the world chart: the most-voted per language since
+     2000, each opening its autopsy (data/world_lookup.js). */
+  const exHost = document.getElementById('world-ex');
+  const WORLD_ROW_BY_ID = Object.fromEntries((window.WORLD_POSTERS || []).map((p) => [p[7], p]));
+  let exLang = 'ja';
+  function showWorldExamples(lang) {
+    const ids = window.WORLD_EXAMPLES && window.WORLD_EXAMPLES[lang];
+    if (!exHost || !ids) return;
+    exLang = lang;
+    const name = new Intl.DisplayNames([document.documentElement.lang || 'en'], {
+      type: 'language',
+    }).of(lang);
+    const shown = ids.map((id) => WORLD_ROW_BY_ID[id] || POSTER_BY_ID[id]).filter(Boolean);
+    document.getElementById('world-ex-head').textContent = t('world_ex_head', {
+      lang: name,
+      n: shown.length,
+      k: shown.filter((p) => p[5] > 0).length,
+    });
+    document.querySelectorAll('#world-ex-chips button').forEach((b) => {
+      b.setAttribute('aria-pressed', String(b.dataset.lang === lang));
+    });
+    const row = document.getElementById('world-ex-row');
+    row.innerHTML = '';
+    shown.forEach((p) => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'world-ex-card';
+      btn.setAttribute('aria-label', `${p[3]} (${p[0]})`);
+      const img = document.createElement('img');
+      img.src = posterSrc(p, 'm');
+      img.alt = '';
+      img.loading = 'lazy';
+      const cap = document.createElement('span');
+      cap.className = 'world-ex-title';
+      cap.textContent = `${p[3]} · ${p[0]}`;
+      const tag = document.createElement('span');
+      tag.className = 'world-ex-face' + (p[5] > 0 ? ' has-face' : '');
+      tag.textContent = t(p[5] > 0 ? 'world_ex_face' : 'world_ex_noface');
+      btn.append(img, tag, cap);
+      btn.addEventListener('click', () => window.openPoster(p));
+      row.appendChild(btn);
+    });
+  }
+  if (exHost && window.WORLD_EXAMPLES && Array.isArray(window.WORLD_FACES)) {
+    const chips = document.getElementById('world-ex-chips');
+    const relabelChips = () => {
+      const names = new Intl.DisplayNames([document.documentElement.lang || 'en'], {
+        type: 'language',
+      });
+      chips.querySelectorAll('button').forEach((b) => (b.textContent = names.of(b.dataset.lang)));
+    };
+    window.WORLD_FACES.forEach((r) => {
+      if (!window.WORLD_EXAMPLES[r.lang]) return;
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.dataset.lang = r.lang;
+      b.addEventListener('click', () => showWorldExamples(r.lang));
+      chips.appendChild(b);
+    });
+    relabelChips();
+    showWorldExamples(exLang);
+    chartReadoutRefresh.push(() => {
+      relabelChips();
+      showWorldExamples(exLang);
+    });
+  }
+
+  /* --- V-c. FACES BY ERA: English falls, Japanese comes back, Spanish follows English --- */
+  if (document.getElementById('face-eras') && window.FACE_ERAS) {
+    const series = [
+      ['en', '#c1121f'],
+      ['es', '#9a958a'],
+      ['ja', '#e5a00d'],
+    ].filter(([code]) => window.FACE_ERAS[code]);
+    const eras = window.FACE_ERAS.en.map((e) => e[0]);
+    const narrow = (document.getElementById('face-eras').parentNode.clientWidth || 960) < 600;
+    const W = narrow ? 420 : 960,
+      H = 300,
+      m = narrow ? { t: 40, r: 96, b: 40, l: 40 } : { t: 40, r: 150, b: 40, l: 60 };
+    const svg = d3.select('#face-eras').attr('viewBox', `0 0 ${W} ${H}`);
+    const x = d3
+      .scalePoint()
+      .domain(eras)
+      .range([m.l, W - m.r])
+      .padding(0.1);
+    const y = d3
+      .scaleLinear()
+      .domain([40, 80])
+      .range([H - m.b, m.t]);
+    const eraLabel = (e) => (e === '<1980' ? t('eras_before_1980') : e);
+    const langName = (code) => {
+      try {
+        return new Intl.DisplayNames([document.documentElement.lang || 'en'], {
+          type: 'language',
+        }).of(code);
+      } catch {
+        return code;
+      }
+    };
+    [40, 50, 60, 70, 80].forEach((v) => {
+      svg
+        .append('line')
+        .attr('class', 'axis')
+        .attr('x1', m.l)
+        .attr('x2', W - m.r)
+        .attr('y1', y(v))
+        .attr('y2', y(v));
+      svg
+        .append('text')
+        .attr('class', 'tick-label')
+        .attr('x', m.l - 8)
+        .attr('y', y(v) + 4)
+        .attr('text-anchor', 'end')
+        .text(v + '%');
+    });
+    const eraTicks = eras.map((e) =>
+      svg
+        .append('text')
+        .attr('class', 'tick-label')
+        .attr('x', x(e))
+        .attr('y', H - m.b + 24)
+        .attr('text-anchor', 'middle')
+        .text(eraLabel(e)),
+    );
+    svg
+      .append('text')
+      .attr('class', 'tick-label')
+      .attr('x', m.l)
+      .attr('y', m.t - 18)
+      .attr('data-chart-t', 'eras_axis')
+      .text(t('eras_axis'));
+    const line = d3
+      .line()
+      .x((d) => x(d[0]))
+      .y((d) => y(d[2]))
+      .curve(d3.curveMonotoneX);
+    const ends = [];
+    const paths = series.map(([code, col]) => {
+      const pts = window.FACE_ERAS[code];
+      const path = svg
+        .append('path')
+        .datum(pts)
+        .attr('d', line)
+        .attr('fill', 'none')
+        .attr('stroke', col)
+        .attr('stroke-width', code === 'es' ? 2 : 3)
+        .attr('stroke-linecap', 'round');
+      svg
+        .selectAll(null)
+        .data(pts)
+        .join('circle')
+        .attr('cx', (d) => x(d[0]))
+        .attr('cy', (d) => y(d[2]))
+        .attr('r', 4)
+        .attr('fill', col)
+        .on('pointermove pointerdown', (ev, d) =>
+          showTip(
+            t('eras_tip', {
+              lang: langName(code),
+              era: eraLabel(d[0]),
+              n: d[1].toLocaleString('en-US'),
+              face: d[2].toFixed(1),
+            }),
+            ev,
+          ),
+        )
+        .on('pointerleave', hideTip);
+      const last = pts[pts.length - 1];
+      ends.push({ code, col, y: y(last[2]) + 4, v: last[2] });
+      return path;
+    });
+    const endLabels = [];
+    let prev = -1e9;
+    [...ends]
+      .sort((a, b) => a.y - b.y)
+      .forEach((it) => {
+        const yy = Math.max(it.y, prev + 14);
+        prev = yy;
+        endLabels.push([
+          svg
+            .append('text')
+            .attr('class', 'line-label')
+            .attr('x', W - m.r + 10)
+            .attr('y', yy)
+            .attr('fill', it.col)
+            .text(`${langName(it.code)} ${Math.round(it.v)}%`),
+          it,
+        ]);
+      });
+    chartReadoutRefresh.push(() => {
+      endLabels.forEach(([node, it]) => node.text(`${langName(it.code)} ${Math.round(it.v)}%`));
+      eraTicks.forEach((node, i) => node.text(eraLabel(eras[i])));
+    });
+    onEnter('face-eras', () =>
+      paths.forEach((p, i) => setTimeout(() => drawIn(p, 1400), ms(i * 250))),
+    );
   }
 
   /* --- VI-a. THE QUIETING: text coverage fades like a dying shout --- */

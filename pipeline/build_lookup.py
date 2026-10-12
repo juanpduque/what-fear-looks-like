@@ -97,11 +97,10 @@ def parse_boxes(raw):
     return boxes
 
 
-def main():
-    from corpus import canonical_ids
-
+def build_records(ids, sal_paths=None) -> dict[str, dict]:
+    """LOOKUP records for the given TMDB ids (see module docstring)."""
     post = pd.read_csv(DATA / "posters.csv")
-    post = post[post.id.isin(canonical_ids())].drop_duplicates("id")
+    post = post[post.id.isin(ids)].drop_duplicates("id")
     attr = pd.read_csv(DATA / "attributes.csv").set_index("id")
     faces = pd.read_csv(DATA / "faces_v2.csv").set_index("id")
     census = pd.read_csv(DATA / "census.csv").set_index("id")
@@ -140,7 +139,7 @@ def main():
     jev_map = published_creatures()
 
     sal_map: dict[int, tuple[float, float, float]] = {}
-    for sal_path in (
+    for sal_path in sal_paths or (
         DATA / "qa" / "saliency" / "saliency_score.csv",
         DATA / "qa" / "saliency_score.csv",
     ):
@@ -306,7 +305,13 @@ def main():
             if rboxes:
                 rec["rek"]["fboxes"] = rboxes
         lookup[str(i)] = rec
+    return lookup
 
+
+def main():
+    from corpus import canonical_ids
+
+    lookup = build_records(canonical_ids())
     OUT.parent.mkdir(parents=True, exist_ok=True)
     payload = json.dumps(lookup, ensure_ascii=False, separators=(",", ":"))
     OUT.write_text(

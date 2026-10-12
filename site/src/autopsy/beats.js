@@ -28,6 +28,16 @@ function mediumName(pred) {
   return pred ? t(`lookup_${pred}`) : t('lab_medium_na');
 }
 
+function langName(code) {
+  try {
+    return new Intl.DisplayNames([document.documentElement.lang || 'en'], { type: 'language' }).of(
+      code,
+    );
+  } catch {
+    return code;
+  }
+}
+
 function objectBody(p, a) {
   const year = p[0];
   const id = p[7];
@@ -40,8 +50,9 @@ function objectBody(p, a) {
     painted: a.painted == null ? '—' : pct(a.painted),
   };
   const alts = posterAltsFor(id);
-  const base =
-    m.source === 'cl' ? t('autopsy_body_object', vars) : t('autopsy_body_object_clip', vars);
+  const key = m.source === 'cl' ? 'autopsy_body_object' : 'autopsy_body_object_clip';
+  // World-chart examples (data/world_lookup.js) carry their language as p[8].
+  const base = p[8] ? t(`${key}_world`, { ...vars, lang: langName(p[8]) }) : t(key, vars);
   if (alts.length < 2) return base;
   const rekN = alts.filter((row) => rekAltFor(id, row.path)).length;
   const altsLine = t('autopsy_body_alts', { n: alts.length });

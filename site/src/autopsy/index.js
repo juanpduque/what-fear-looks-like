@@ -44,6 +44,7 @@ import {
   poseFor,
   saliencyFor,
   findPosterById,
+  worldRecord,
   PICK_IDS,
   saliencyMapUrls,
 } from './data.js';
@@ -739,7 +740,7 @@ export async function openPoster(p) {
       ensurePosterAltsClip(),
     ]);
     if (opening !== id) return;
-    const a = { ...(L[String(id)] || {}) };
+    const a = { ...(L[String(id)] || worldRecord(id) || {}) };
     if (a.sem) a.sem = clipSem(a.sem);
     const pose = poseFor(id);
     if (pose) a.pose = pose;
