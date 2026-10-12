@@ -548,7 +548,7 @@ window.__aofPosterQueue = window.__aofPosterQueue || [];
 window.openPoster = function (p) {
   if (!p) return;
   window.__aofPosterQueue.push(p);
-  window.dispatchEvent(new Event('aof:lookup-request'));
+  document.dispatchEvent(new Event('aof:lookup-request'));
 };
 
 /* ============ explorer tiles (section hidden; Dissect search replaces it) ============ */
@@ -2108,12 +2108,80 @@ function d3Charts() {
       .attr('height', ROW)
       .attr('fill', 'transparent')
       .on('pointermove pointerdown', (ev, r) => showTip(tipHtml(r), ev))
-      .on('pointerleave', hideTip);
+      .on('pointerleave', hideTip)
+      .on('click', (ev, r) => showWorldExamples(r.lang));
     onEnter('world-faces', () => {
       g.transition()
         .delay((r, i) => ms(i * 70))
         .duration(ms(500))
         .attr('opacity', 1);
+    });
+  }
+
+  /* Example posters under the world chart: the most-voted per language since
+     2000, each opening its autopsy (data/world_lookup.js). */
+  const exHost = document.getElementById('world-ex');
+  const WORLD_ROW_BY_ID = Object.fromEntries((window.WORLD_POSTERS || []).map((p) => [p[7], p]));
+  let exLang = 'ja';
+  function showWorldExamples(lang) {
+    const ids = window.WORLD_EXAMPLES && window.WORLD_EXAMPLES[lang];
+    if (!exHost || !ids) return;
+    exLang = lang;
+    const name = new Intl.DisplayNames([document.documentElement.lang || 'en'], {
+      type: 'language',
+    }).of(lang);
+    const shown = ids.map((id) => WORLD_ROW_BY_ID[id] || POSTER_BY_ID[id]).filter(Boolean);
+    document.getElementById('world-ex-head').textContent = t('world_ex_head', {
+      lang: name,
+      n: shown.length,
+      k: shown.filter((p) => p[5] > 0).length,
+    });
+    document.querySelectorAll('#world-ex-chips button').forEach((b) => {
+      b.setAttribute('aria-pressed', String(b.dataset.lang === lang));
+    });
+    const row = document.getElementById('world-ex-row');
+    row.innerHTML = '';
+    shown.forEach((p) => {
+      const btn = document.createElement('button');
+      btn.type = 'button';
+      btn.className = 'world-ex-card';
+      btn.setAttribute('aria-label', `${p[3]} (${p[0]})`);
+      const img = document.createElement('img');
+      img.src = posterSrc(p, 'm');
+      img.alt = '';
+      img.loading = 'lazy';
+      const cap = document.createElement('span');
+      cap.className = 'world-ex-title';
+      cap.textContent = `${p[3]} · ${p[0]}`;
+      const tag = document.createElement('span');
+      tag.className = 'world-ex-face' + (p[5] > 0 ? ' has-face' : '');
+      tag.textContent = t(p[5] > 0 ? 'world_ex_face' : 'world_ex_noface');
+      btn.append(img, tag, cap);
+      btn.addEventListener('click', () => window.openPoster(p));
+      row.appendChild(btn);
+    });
+  }
+  if (exHost && window.WORLD_EXAMPLES && Array.isArray(window.WORLD_FACES)) {
+    const chips = document.getElementById('world-ex-chips');
+    const relabelChips = () => {
+      const names = new Intl.DisplayNames([document.documentElement.lang || 'en'], {
+        type: 'language',
+      });
+      chips.querySelectorAll('button').forEach((b) => (b.textContent = names.of(b.dataset.lang)));
+    };
+    window.WORLD_FACES.forEach((r) => {
+      if (!window.WORLD_EXAMPLES[r.lang]) return;
+      const b = document.createElement('button');
+      b.type = 'button';
+      b.dataset.lang = r.lang;
+      b.addEventListener('click', () => showWorldExamples(r.lang));
+      chips.appendChild(b);
+    });
+    relabelChips();
+    showWorldExamples(exLang);
+    chartReadoutRefresh.push(() => {
+      relabelChips();
+      showWorldExamples(exLang);
     });
   }
 

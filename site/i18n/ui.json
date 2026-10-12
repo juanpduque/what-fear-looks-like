@@ -1187,6 +1187,14 @@
     "en": "{year} · TMDB {id}. One of 33,622 one-sheets measured the same way. Medium: {medium} (CLIP illustration score {painted}; Custom Labels did not cover this sheet). Scroll — the layers we ran on every poster peel off this one.",
     "es": "{year} · TMDB {id}. Uno de 33,622 one-sheets medidos igual. Medio: {medium} (CLIP ilustración {painted}; Custom Labels no cubre esta hoja). Desplázate: las capas que corrimos en cada póster se despegan de este."
   },
+  "autopsy_body_object_world": {
+    "en": "{year} · TMDB {id}. A {lang}-language film, outside the 33,622-poster English corpus but measured the same way; where it is compared, it is against English-language horror. Medium: {medium} (Custom Labels {conf}). CLIP illustration score {painted}. Scroll — the layers we ran on every poster peel off this one.",
+    "es": "{year} · TMDB {id}. Una película en {lang}, fuera del corpus de 33,622 afiches en inglés pero medida igual; cuando se compara, es con el terror en inglés. Medio: {medium} (Custom Labels {conf}). CLIP ilustración {painted}. Desplázate: las capas que corrimos en cada póster se despegan de este."
+  },
+  "autopsy_body_object_clip_world": {
+    "en": "{year} · TMDB {id}. A {lang}-language film, outside the 33,622-poster English corpus but measured the same way; where it is compared, it is against English-language horror. Medium: {medium} (CLIP illustration score {painted}; Custom Labels did not cover this sheet). Scroll — the layers we ran on every poster peel off this one.",
+    "es": "{year} · TMDB {id}. Una película en {lang}, fuera del corpus de 33,622 afiches en inglés pero medida igual; cuando se compara, es con el terror en inglés. Medio: {medium} (CLIP ilustración {painted}; Custom Labels no cubre esta hoja). Desplázate: las capas que corrimos en cada póster se despegan de este."
+  },
   "autopsy_body_alts": {
     "en": "TMDB keeps {n} distinct sheets. Select one to autopsy those pixels — color, pose, YuNet, OWL and title of that sheet.",
     "es": "TMDB guarda {n} hojas distintas. Elige una para autopsarla: color, pose, YuNet, OWL y título de esa hoja."
@@ -1634,6 +1642,22 @@
   "world_axis": {
     "en": "HORROR POSTERS WITH A FACE, 2000–2026",
     "es": "AFICHES DE TERROR CON CARA, 2000–2026"
+  },
+  "world_ex_head": {
+    "en": "The {n} most-voted {lang} horror films on TMDB since 2000: {k} show a face. A handful, not the measure — the chart above counts every poster. Tap one to open its autopsy.",
+    "es": "Las {n} películas de terror en {lang} más votadas en TMDB desde el 2000: {k} muestran una cara. Son ejemplos, no la medida: el gráfico de arriba cuenta todos los afiches. Toca una para abrir su autopsia."
+  },
+  "world_ex_chips": {
+    "en": "Choose a language",
+    "es": "Elige un idioma"
+  },
+  "world_ex_face": {
+    "en": "Face",
+    "es": "Con cara"
+  },
+  "world_ex_noface": {
+    "en": "No face",
+    "es": "Sin cara"
   },
   "world_tip": {
     "en": "<b>{lang}</b> · {n} posters · {face}% with a face (95%: {lo}–{hi})",

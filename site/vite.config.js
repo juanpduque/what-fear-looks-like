@@ -23,6 +23,7 @@ export default defineConfig({
         { src: 'studios/i18n.json', dest: 'studios' },
         { src: 'saliency', dest: '.' },
         { src: 'saliency_alts', dest: '.' },
+        { src: 'saliency_world', dest: '.' },
         { src: 'i18n/*.js', dest: 'i18n' },
         { src: 'js', dest: '.' },
         {
