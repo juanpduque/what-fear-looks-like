@@ -6,4 +6,5 @@
 # nor the ML requirements.
 
 pytest>=7.4
-ruff>=0.5
+# Pinned: lint and format are blocking in CI, and new ruff releases change the style.
+ruff==0.9.9

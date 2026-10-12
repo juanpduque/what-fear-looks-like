@@ -22,9 +22,12 @@ jobs:
       - name: Tests (stdlib-only, run from pipeline/)
         working-directory: pipeline
         run: python -m pytest
-      - name: Lint (ruff — advisory, does not fail the build yet)
+      - name: Lint (ruff)
         working-directory: pipeline
-        run: ruff check . || true
+        run: ruff check .
+      - name: Format (ruff format)
+        working-directory: pipeline
+        run: ruff format --check .
 
   site:
     name: Site — eslint + prettier
@@ -39,12 +42,12 @@ jobs:
       - name: Install
         working-directory: site
         run: npm ci
-      - name: ESLint (blocking — currently clean)
+      - name: ESLint
         working-directory: site
         run: npm run lint
-      - name: Prettier (advisory until the codebase is formatted)
+      - name: Prettier
         working-directory: site
-        run: npm run format:check || true
+        run: npm run format:check
 
   browser:
     name: Site — browser smoke tests
