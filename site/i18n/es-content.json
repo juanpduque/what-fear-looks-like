@@ -623,6 +623,16 @@
     "es": "Seleccionados por la salida de detección facial YuNet (n_faces, área del bounding box) — los close-ups mostrados ocupan más o menos de la mitad a toda la hoja. Fila de cero rostros: revisada a mano para que la hoja no tenga realmente un rostro humano legible (silueta, criatura de espaldas, huevo, luz por cabeza) — no fallos del detector en rostros pintados o inclinados, que YuNet también produce."
   },
   {
+    "id": "p4_world_body",
+    "en": "<strong>In Asia, the face stayed.</strong> It left English-language horror posters, not Asian ones. Since 2000, 49% of English-language horror posters show a face. Japanese: 66%. Thai: 79%. Spanish, French, German and Italian horror sit right next to English. And Japan never followed the fall: 72% of its posters showed a face before 1980; 69% do today.",
+    "es": "<strong>En Asia, la cara se quedó.</strong> Se fue de los afiches de terror en inglés, no de los asiáticos. Desde el 2000, el 49% de los afiches de terror en inglés muestra una cara. Los japoneses, el 66%. Los tailandeses, el 79%. El terror en español, francés, alemán e italiano queda pegado al inglés. Y Japón nunca siguió la caída: el 72% de sus afiches mostraba una cara antes de 1980; hoy, el 69%."
+  },
+  {
+    "id": "p4_world_note",
+    "en": "OTHER LANGUAGES — horror films outside the 33,622-poster English corpus, measured with the same pipeline, face detector (YuNet) and filters. Top: 4,597 posters from 2000–2026 in the 12 languages with 150+ posters; lines are 95% intervals. Bottom: every year, grouped by era (hover a point for its n). About a third are the film's English-market poster; the gap holds for both versions.",
+    "es": "OTROS IDIOMAS — películas de terror fuera del corpus en inglés de 33,622, medidas con el mismo pipeline, detector de caras (YuNet) y filtros. Arriba: 4,597 afiches de 2000–2026 en los 12 idiomas con 150+ afiches; las líneas son intervalos del 95%. Abajo: todos los años, agrupados por época (pasa el cursor por un punto para ver su n). Cerca de un tercio es el afiche del mercado en inglés; la diferencia se mantiene en ambas versiones."
+  },
+  {
     "id": "p4_census_body",
     "en": "<strong>The monster census.</strong> When the human face retreats, something else often fills the stare. We asked a vision model one question about every poster: <em>what creature is on it?</em> The answer is a dynastic succession — with one frame around it: <strong>the century begins and ends with the ghost.</strong> The chart keeps the ghost and the masked killer lit; the other thrones stay dim until you tap or hover a line.",
     "es": "<strong>El censo de monstruos.</strong> Cuando el rostro humano se retira, algo más suele llenar la mirada. Le hicimos a un modelo de visión una sola pregunta sobre cada póster: <em>¿qué criatura hay en él?</em> La respuesta es una sucesión dinástica — con un marco alrededor: <strong>el siglo empieza y termina con el fantasma.</strong> El gráfico mantiene iluminados al fantasma y al asesino enmascarado; los otros tronos quedan tenues hasta que tocas o pasas el cursor por una línea."
