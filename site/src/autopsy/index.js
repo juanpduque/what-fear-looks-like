@@ -132,6 +132,21 @@ function els() {
   };
 }
 
+/**
+ * Link to the open poster for sharing. In Spanish it goes through es/, whose
+ * static tags give link previews the Spanish card and title.
+ */
+function shareLink() {
+  const here = new URL(location.href);
+  const es = document.documentElement.lang === 'es';
+  const out = es ? new URL('es/', new URL('./', here)) : new URL(here.pathname, here);
+  here.searchParams.forEach((v, k) => {
+    if (k !== 'from' && !(es && k === 'lang')) out.searchParams.set(k, v);
+  });
+  out.hash = here.hash;
+  return out.href;
+}
+
 function setPosterUrl(id) {
   const u = new URL(location.href);
   u.searchParams.set('id', String(id));
@@ -822,9 +837,7 @@ function wireNav() {
     setBeatMode(btn.dataset.cmode);
   });
   share?.addEventListener('click', async () => {
-    const shareUrl = new URL(location.href);
-    shareUrl.searchParams.delete('from');
-    const url = shareUrl.href;
+    const url = shareLink();
     try {
       await navigator.clipboard.writeText(url);
       share.textContent = t('autopsy_shared');

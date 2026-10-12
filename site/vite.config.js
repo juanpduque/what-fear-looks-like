@@ -17,6 +17,8 @@ export default defineConfig({
     viteStaticCopy({
       targets: [
         { src: 'assets', dest: '.' },
+        // Spanish share URL: static tags for link previews, then a redirect.
+        { src: 'es', dest: '.' },
         { src: 'data', dest: '.' },
         { src: 'studios/i18n.json', dest: 'studios' },
         { src: 'saliency', dest: '.' },
