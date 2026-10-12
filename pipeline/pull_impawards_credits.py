@@ -277,12 +277,12 @@ def main():
                     )
 
     out_f.close()
-    print(f"\n=== IMPAWARDS CREDIT MATCH ===")
+    print("\n=== IMPAWARDS CREDIT MATCH ===")
     print(f"processed this run: {len(todo):,}")
     for k, v in counts.items():
         print(f"  {k}: {v:,}")
     print(f"output: {out_path}")
-    print(f"re-run this command to continue where it left off.")
+    print("re-run this command to continue where it left off.")
 
 
 if __name__ == "__main__":

@@ -9,7 +9,6 @@ from __future__ import annotations
 from datetime import date
 
 import pytest
-
 from conftest import SITE_DATA, js_payload
 
 MAX_YEAR = date.today().year

@@ -189,8 +189,8 @@ def main() -> None:
     )
     args = ap.parse_args()
 
-    from ultralytics import YOLO
     from transformers import AutoProcessor, VitPoseForPoseEstimation
+    from ultralytics import YOLO
 
     print("loading YOLOv8n (person detector)...", flush=True)
     yolo = YOLO("yolov8n.pt")

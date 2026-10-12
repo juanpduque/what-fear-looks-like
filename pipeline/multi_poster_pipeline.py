@@ -252,6 +252,7 @@ def cmd_download(args):
 def cmd_embed(args):
     import torch
     from PIL import Image
+
     import clip_embed as ce
 
     if not CATALOG.exists():
@@ -303,7 +304,7 @@ def cmd_embed(args):
         ids_done.extend(batch_keys)
         batch_imgs, batch_keys = [], []
 
-    for j, i in enumerate(todo_idx, 1):
+    for _j, i in enumerate(todo_idx, 1):
         try:
             batch_imgs.append(preprocess(Image.open(paths[i]).convert("RGB")))
             batch_keys.append(keys[i])

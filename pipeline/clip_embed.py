@@ -13,11 +13,12 @@ Output: data/clip_embeddings.npz  (ids + L2-normalized 512-d vectors, ~57MB)
 
 import time
 from pathlib import Path
+
 import numpy as np
+import open_clip
 import pandas as pd
 import torch
 from PIL import Image
-import open_clip
 
 
 def load_clip(device):
@@ -85,7 +86,7 @@ def main():
         ids_done.extend(batch_ids)
         imgs, batch_ids = [], []
 
-    for i, r in enumerate(todo.itertuples()):
+    for _i, r in enumerate(todo.itertuples()):
         f = DATA / "posters" / f"{r.id}.jpg"
         if not f.exists():
             continue

@@ -27,14 +27,12 @@ import signal
 import sys
 import threading
 import time
-import traceback
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 import boto3
 import pandas as pd
 from botocore.config import Config
-from botocore.exceptions import BotoCoreError, ClientError
 from PIL import Image
 
 DATA = Path(__file__).resolve().parent / "data"
@@ -278,8 +276,8 @@ def strip_json(text: str) -> dict:
         return _extract_partial_json(t)
     except Exception:
         if last_err:
-            raise last_err
-        raise json.JSONDecodeError("unable to parse enrich JSON", t or "", 0)
+            raise last_err from None
+        raise json.JSONDecodeError("unable to parse enrich JSON", t or "", 0) from None
 
 
 def _join_list(val) -> str:

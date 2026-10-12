@@ -27,7 +27,6 @@ Cost: ~$0.001 / image DetectFaces → ~$10.5 for full gap.
 from __future__ import annotations
 
 import argparse
-import json
 import os
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed

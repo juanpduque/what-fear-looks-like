@@ -22,7 +22,6 @@ import os
 import threading
 import time
 from concurrent.futures import ThreadPoolExecutor, as_completed
-from pathlib import Path
 
 import requests
 
@@ -30,7 +29,6 @@ from enrich_imdb_ids import (
     DATA,
     HM,
     POSTERS,
-    SIDECAR,
     auth_kwargs,
     load_sidecar,
     merge_into_horror_movies,

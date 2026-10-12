@@ -23,10 +23,9 @@ from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
 
 import boto3
+import requests
 from botocore.config import Config
 from botocore.exceptions import ClientError
-
-import requests
 
 from rekognition_enrich import ANIMAL, FIRE, PERSON, SILHOUETTE, WATER, WEAPON, _flag
 

@@ -303,7 +303,7 @@ def decade_summary(rows: dict[int, dict] | list[dict]) -> dict:
     for dec, g in sorted(by_dec.items()):
         n = len(g)
 
-        def mean_flag(key: str, thr: float) -> float:
+        def mean_flag(key: str, thr: float, g=g, n=n) -> float:
             return round(sum(1 for r in g if _as_float(r.get(key)) > thr) / n, 4)
 
         out[str(int(dec))] = {

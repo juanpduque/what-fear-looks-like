@@ -121,8 +121,8 @@ def main() -> int:
     ap.add_argument("--keep-jpg", action="store_true")
     args = ap.parse_args()
 
-    from ultralytics import YOLO
     from transformers import AutoProcessor, VitPoseForPoseEstimation
+    from ultralytics import YOLO
 
     print("loading YOLOv8n...", flush=True)
     yolo = YOLO("yolov8n.pt")

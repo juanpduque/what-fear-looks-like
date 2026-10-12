@@ -22,6 +22,7 @@ select = [
 ]
 ignore = [
     "E501",  # line length handled by the formatter, not enforced as an error yet
+    "E741",  # `l` as a short loop name is used across older scripts; style only
 ]
 
 [lint.isort]

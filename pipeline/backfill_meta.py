@@ -5,8 +5,10 @@ en horror_movies.csv — el backfill original solo las usó en memoria.
   python3 backfill_meta.py --api-key TU_KEY     (~30 segundos)
 """
 
-import argparse, time
+import argparse
+import time
 from pathlib import Path
+
 import pandas as pd
 import requests
 

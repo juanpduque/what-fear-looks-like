@@ -18,14 +18,13 @@ session):
 from __future__ import annotations
 
 import argparse
-import json
 import time
 from pathlib import Path
 
 import torch
 from PIL import Image
 
-from owlv2_creature_boxes import CREATURE_QUERIES, WEAPON_QUERIES, load_box_cache, dump_boxes_json
+from owlv2_creature_boxes import CREATURE_QUERIES, WEAPON_QUERIES, dump_boxes_json, load_box_cache
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
@@ -61,7 +60,7 @@ def main() -> None:
     )
     args = ap.parse_args()
 
-    from transformers import AutoProcessor, AutoModelForZeroShotObjectDetection
+    from transformers import AutoModelForZeroShotObjectDetection, AutoProcessor
 
     device = args.device or ("cuda" if torch.cuda.is_available() else "cpu")
     print(f"loading {MODEL_ID} on {device}…", flush=True)

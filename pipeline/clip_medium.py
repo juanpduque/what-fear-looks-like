@@ -12,12 +12,13 @@ Outputs: data/medium.csv (per-poster), data/medium_yearly.json,
 and the 50% crossover year printed to console.
 """
 
-import argparse, json
+import argparse
 from pathlib import Path
+
+import open_clip
 import pandas as pd
 import torch
 from PIL import Image
-import open_clip
 
 
 def load_clip(device):
@@ -103,7 +104,7 @@ def main():
         batch_imgs.clear()
         batch_meta.clear()
 
-    for i, r in enumerate(meta.itertuples()):
+    for _i, r in enumerate(meta.itertuples()):
         f = DATA / "posters" / f"{r.id}.jpg"
         if not f.exists():
             continue

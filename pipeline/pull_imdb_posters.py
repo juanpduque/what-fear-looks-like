@@ -397,7 +397,7 @@ def scrape_browser(
         page.set_default_timeout(timeout_ms)
 
         for i, row in enumerate(candidates, 1):
-            pid, tt = int(row["id"]), row["imdb_id"]
+            tt = row["imdb_id"]
             poster, source, reason = None, "none", ""
             try:
                 resp = page.goto(

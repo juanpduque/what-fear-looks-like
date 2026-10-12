@@ -244,7 +244,7 @@ def scrape_imdb_page(driver, tconst: str, pause: float = 1.2) -> dict:
                         directors.append(name)
         if not directors:
             # Older layout / fallback: links near "Director"
-            for a in driver.find_elements(By.CSS_SELECTOR, "a[href*='/name/nm']")[:40]:
+            for _a in driver.find_elements(By.CSS_SELECTOR, "a[href*='/name/nm']")[:40]:
                 # only if ancestor text mentions Director nearby — skip for now
                 pass
     except Exception:
@@ -601,7 +601,7 @@ def main() -> None:
         write_sidecar(mapping)
         print(f"Merged {len(hits)} hits into {SIDECAR}")
 
-    print(f"\n=== Summary ===")
+    print("\n=== Summary ===")
     print(f"accepted:   {len(hits)}")
     print(f"unresolved: {len(misses)}")
     if hits:
