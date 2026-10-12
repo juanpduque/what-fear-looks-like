@@ -9,6 +9,7 @@ weapon_boxes.js, title_ink.json, or the measured cover.
 Writes:
   site/data/poster_alts_faces.json  {id: {path: [n, area, [[x,y,w,h], ...]]}}
   site/data/poster_alts_owl.json    {id: {path: {c:[{label,score,box}], w:[...]}}}
+                                    (w: only boxes Grounding DINO agrees with)
   site/data/poster_alts_text.json   {id: {path: [tx, tt, tw, th]}}
 
 Alternate sheets often carry another release title ("The Trollenberg
@@ -35,6 +36,9 @@ POSTERS = HERE / "data" / "posters.csv"
 FACES_SRC = QA / "alts_yunet_catalog" / "pull" / "faces_alts.csv"
 OWL_SRC = QA / "alts_owl_catalog" / "pull" / "owl_alts.csv"
 TEXT_SRC = QA / "alts_text_catalog" / "pull" / "rekognition_text_boxes_alts.csv"
+# Grounding DINO weapon boxes for the same alternates (dino_alt_weapon_boxes.py).
+DINO_WEAPON_SRC = QA / "alts_dino_catalog" / "weapon_boxes_dino_alts.json"
+DINO_IOU_MIN = 0.3
 FACES_OUT = SITE_DATA / "poster_alts_faces.json"
 OWL_OUT = SITE_DATA / "poster_alts_owl.json"
 TEXT_OUT = SITE_DATA / "poster_alts_text.json"
@@ -165,11 +169,30 @@ def write_faces(wanted: dict[str, set[str]]) -> None:
     dump(FACES_OUT, out)
 
 
+def box_iou(a, b) -> float:
+    ax, ay, aw, ah = a
+    bx, by, bw, bh = b
+    ix = max(0.0, min(ax + aw, bx + bw) - max(ax, bx))
+    iy = max(0.0, min(ay + ah, by + bh) - max(ay, by))
+    inter = ix * iy
+    union = aw * ah + bw * bh - inter
+    return inter / union if union > 0 else 0.0
+
+
 def write_owl(wanted: dict[str, set[str]]) -> None:
     out: dict[str, dict] = {}
     if not OWL_SRC.is_file():
         print(f"skip owl sidecar: missing {OWL_SRC}")
         return
+    # Alternates have no Nova verdicts (measured covers do, see build_site.py):
+    # keep an OWLv2 weapon box only where Grounding DINO also boxed a weapon.
+    if not DINO_WEAPON_SRC.is_file():
+        raise SystemExit(
+            f"falta {DINO_WEAPON_SRC}: sin DINO no se publican cajas de armas de "
+            f"alternativas (corre pipeline/dino_alt_weapon_boxes.py)"
+        )
+    dino = json.loads(DINO_WEAPON_SRC.read_text(encoding="utf-8"))
+    n_weapon = n_kept = 0
     with OWL_SRC.open(encoding="utf-8", newline="") as f:
         for r in csv.DictReader(f):
             if (r.get("status") or "") != "ok":
@@ -181,10 +204,16 @@ def write_owl(wanted: dict[str, set[str]]) -> None:
             fp = tmdb_path(r.get("file_path") or "")
             if fp not in paths:
                 continue
+            weapons = parse_owl(r.get("weapon_boxes") or "")
+            dboxes = [d["box"] for d in dino.get(pid, {}).get(fp, [])]
+            agreed = [w for w in weapons if any(box_iou(w["box"], d) >= DINO_IOU_MIN for d in dboxes)]
+            n_weapon += len(weapons)
+            n_kept += len(agreed)
             out.setdefault(pid, {})[fp] = {
                 "c": parse_owl(r.get("creature_boxes") or ""),
-                "w": parse_owl(r.get("weapon_boxes") or ""),
+                "w": agreed,
             }
+    print(f"alternate weapon boxes kept with DINO agreement: {n_kept:,}/{n_weapon:,}")
     dump(OWL_OUT, out)
 
 

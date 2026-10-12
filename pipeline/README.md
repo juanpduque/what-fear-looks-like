@@ -127,6 +127,7 @@ deploy artifacts. They are listed in `.gitignore`; regenerate locally:
 | Medium Custom Labels (`qa/medium_custom_labels/infer_full.csv` → `medium_cl.json`) | `aws_custom_labels_infer.py` (AWS), then `export_medium_cl.py` |
 | Alternate-sheet sidecars (`site/data/poster_alts_*.json`, `site/saliency_alts/`) | per-sheet runners `yunet_alts.py`, `rekognition_text_boxes_alts.py`, `rekognition_multi_variants.py`, `multi_analyze_alts.py`, `msinet_alts.py`, `vitpose_alts.py`; then `export_poster_alts.py`, `export_poster_alts_geom.py`, `export_poster_alts_metrics.py`, `export_saliency_webp.py` |
 | Key art studios (`site/data/studios.json`, `key_art.json`) | `pull_impawards_credits.py` → `verify_impawards_credits.py --cache DIR` → `export_key_art.py` |
+| Weapon boxes (`weapon_boxes.json` → `weapon_boxes.js`; alternates in `poster_alts_owl.json`) | `owlv2_creature_boxes.py` (OWLv2), `qa_creature_weapon_boxes.py` (Nova QA, filters the measured covers in `build_site.py`); alternates: `owl_alts.py`, then `dino_alt_weapon_boxes.py stage` → `grounding_dino_boxes.py` → `dino_alt_weapon_boxes.py merge` (DINO agreement filter in `export_poster_alts_geom.py`) |
 
 The per-sheet and AWS runners were executed on workshop EC2/SageMaker
 accounts; most of their launch scripts are account-specific and are kept out
