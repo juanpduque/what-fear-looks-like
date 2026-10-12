@@ -142,3 +142,35 @@ site/ocr-title-review.html
 site/poster-drift-review.html
 site/LABEL_QA_MEDIUM.md
 site/LABEL_QA_TYPOGRAPHY.md
+
+# Local pipeline data that stays on disk (results of AWS / local runs, inputs
+# for re-running stages). Not needed to build the site from git: the published
+# data lives in site/data. Corpus inputs (excluded_*.csv, canonical_ids.txt)
+# stay tracked.
+pipeline/data/posters
+pipeline/data/posters_*
+pipeline/data/community_*/
+pipeline/data/*_mystery.*
+pipeline/data/*_mystery_*
+pipeline/data/*_scifi.*
+pipeline/data/*_scifi_*
+pipeline/data/*_thriller.*
+pipeline/data/*_thriller_*
+pipeline/data/*.npz
+pipeline/data/attributes_gapfill_run.csv
+pipeline/data/celebrities*.csv
+pipeline/data/cinematerial_credits.csv
+pipeline/data/creature_boxes_*.json
+pipeline/data/weapon_boxes*.json
+pipeline/data/fear_axis*
+pipeline/data/siglip_*
+pipeline/data/heritage_auctions_to_check_manually.csv
+pipeline/data/posteritati_manual_search_results.csv
+pipeline/data/impawards_*.csv
+pipeline/data/master_*.csv
+pipeline/data/poster_bytes.csv
+pipeline/data/poster_ocr.csv
+pipeline/data/poster_src.csv
+pipeline/data/rekognition_*.csv
+pipeline/data/*.lock
+pipeline/results/
