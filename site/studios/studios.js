@@ -71,6 +71,15 @@ function render(lang, copy, data) {
       </li>`;
     })
     .join('');
+  document.getElementById('st-books').innerHTML = (copy.books || [])
+    .map(
+      (bk) => `<li>
+        <a class="st-book-title" href="${esc(bk.url)}" target="_blank" rel="noopener" lang="en">${esc(bk.title)}</a>
+        <span class="st-book-meta">${esc(bk[`by_${lang}`] || bk.by)} · ${esc(bk[`pub_${lang}`] || bk.pub)}</span>
+        <p>${esc(bk[lang] || bk.en)}</p>
+      </li>`,
+    )
+    .join('');
   wireToggles();
 }
 

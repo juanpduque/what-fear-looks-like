@@ -63,6 +63,14 @@
     "show_less": {
       "en": "Show fewer",
       "es": "Ver menos"
+    },
+    "reading_title": {
+      "en": "Further reading",
+      "es": "Para leer más"
+    },
+    "reading_dek": {
+      "en": "Books on horror poster art, checked against publisher and library records. The links go to the publisher or to WorldCat, which lists libraries that hold each one.",
+      "es": "Libros sobre el arte del póster de terror, contrastados con los registros de editoriales y bibliotecas. Los enlaces van a la editorial o a WorldCat, que indica qué bibliotecas tienen cada uno."
     }
   },
   "studios": {
@@ -224,5 +232,66 @@
       "en": "Founded in 2012 by Andrew Percival after the agency Mojo closed; based at the Sunset & Gower studios, a historic Golden Age Hollywood lot. A team of 12+ designers mixing fashion photography and experimental type. North American Agency of the Year at the 2018 Promax BDA Awards.",
       "es": "Fundada en 2012 por Andrew Percival tras el cierre de la agencia Mojo; con sede en los estudios Sunset & Gower, un lote histórico de la época dorada de Hollywood. Un equipo de más de 12 diseñadores que mezcla fotografía de moda y tipografía experimental. Agencia Norteamericana del Año en los Promax BDA Awards 2018."
     }
-  }
+  },
+  "books": [
+    {
+      "title": "Film by Design: The Art of the Movie Poster",
+      "by": "Gary D. Rhodes & Robert Singer (eds.)",
+      "pub": "University Press of Mississippi, 2024",
+      "url": "https://www.upress.state.ms.us/Books/F/Film-by-Design",
+      "en": "Twelve scholarly essays that read the poster as an aesthetic object, not only as advertising, with chapters touching horror, science fiction and noir.",
+      "es": "Doce ensayos académicos que leen el póster como objeto estético y no solo como publicidad, con capítulos que tocan terror, ciencia ficción y noir."
+    },
+    {
+      "title": "The Art of Horror Movies: An Illustrated History",
+      "by": "Stephen Jones (ed.), foreword by John Landis",
+      "pub": "Applause, 2017",
+      "url": "https://search.worldcat.org/search?q=bn:9781495064845",
+      "en": "More than 600 images — posters, lobby cards, ads and original art — from the silent era onward.",
+      "es": "Más de 600 imágenes —pósters, lobby cards, publicidad y arte original— desde el cine mudo en adelante.",
+      "by_es": "Stephen Jones (ed.), prólogo de John Landis"
+    },
+    {
+      "title": "Horror Cinema",
+      "by": "Jonathan Penner & Steven Jay Schneider; Jürgen Müller & Paul Duncan (eds.)",
+      "pub": "Taschen, 2017",
+      "url": "https://www.taschen.com/en/books/film/49346/horror-cinema/",
+      "en": "640 pages in ten thematic chapters (the vampire, the haunted house, the werewolf…) plus a top-50 section with each film's poster.",
+      "es": "640 páginas en diez capítulos temáticos (el vampiro, la casa embrujada, el hombre lobo…) y una sección de las 50 mejores con el póster de cada película."
+    },
+    {
+      "title": "Horror Poster Art",
+      "by": "Tony Nourmand & Graham Marsh (eds.)",
+      "pub": "Aurum Press, 2004",
+      "url": "https://search.worldcat.org/search?q=bn:9781845130107",
+      "en": "Eight decades of posters, from Nosferatu to The Silence of the Lambs, grouped by studio and subgenre (Universal, Hammer, Japanese horror, serial killers).",
+      "es": "Ocho décadas de pósters, de Nosferatu a El silencio de los inocentes, agrupados por estudio y subgénero (Universal, Hammer, terror japonés, asesinos en serie)."
+    },
+    {
+      "title": "The Art of the B-Movie Poster",
+      "by": "Adam Newell (ed.)",
+      "pub": "Gingko Press, 2016",
+      "url": "https://search.worldcat.org/search?q=bn:9781584238034",
+      "en": "Over 1,000 exploitation and grindhouse posters from the 1940s to the 1970s, with a horror section introduced by Stephen Jones.",
+      "es": "Más de 1,000 pósters de cine de explotación y grindhouse de los años cuarenta a los setenta, con una sección de terror presentada por Stephen Jones."
+    },
+    {
+      "title": "The Art of Pulp Horror: An Illustrated History",
+      "by": "Stephen Jones (ed.), foreword by Robert Silverberg",
+      "pub": "Applause, 2020",
+      "url": "https://search.worldcat.org/search?q=bn:9781540032973",
+      "en": "More than 800 images across pulps, magazines, comics and film posters: the sensationalist tradition horror posters borrow from.",
+      "es": "Más de 800 imágenes entre pulps, revistas, cómics y pósters de cine: la tradición sensacionalista de la que bebe el póster de terror.",
+      "by_es": "Stephen Jones (ed.), prólogo de Robert Silverberg"
+    },
+    {
+      "title": "Horror Movie Posters",
+      "by": "Bruce Hershenson",
+      "pub": "1998 · The Illustrated History of Movies Through Posters",
+      "url": "https://search.worldcat.org/search?q=bn:1887893253",
+      "en": "Hundreds of posters from silent films to the late 1990s, from The Phantom of the Opera (1925) to Psycho.",
+      "es": "Cientos de pósters del cine mudo a finales de los noventa, de El fantasma de la ópera (1925) a Psicosis.",
+      "pub_es": "1998 · serie The Illustrated History of Movies Through Posters"
+    }
+  ]
 }

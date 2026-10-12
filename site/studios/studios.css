@@ -64,6 +64,14 @@ h1{font-family:var(--display);font-size:clamp(48px,9vw,104px);line-height:.92;te
 .st-method{margin:56px 0 24px}
 .st-method p{max-width:700px;color:var(--ink-dim);font-size:16px;margin-top:12px}
 
+.st-reading{margin:56px 0 24px}
+.st-reading-dek{max-width:700px;color:var(--ink-dim);font-size:16px;margin-top:12px}
+.st-books{list-style:none;margin:20px 0 0;padding:0;max-width:700px;display:grid;gap:22px}
+.st-book-title{color:var(--ink);font-style:italic;font-size:18px;text-decoration:none;border-bottom:1px solid rgba(232,228,218,.28)}
+.st-book-title:hover,.st-book-title:focus-visible{color:var(--amber);border-color:var(--amber)}
+.st-book-meta{display:block;font-family:var(--mono);font-size:12px;color:var(--ink-dim);margin-top:6px}
+.st-books p{color:var(--ink-dim);font-size:16px;margin-top:6px}
+
 footer{padding:40px 24px 60px;text-align:center;font-family:var(--mono);font-size:12px}
 footer a{color:var(--ink-dim);text-decoration:none}
 footer a:hover{color:var(--amber)}
