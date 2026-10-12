@@ -23,6 +23,7 @@ Usage:
 
 Outputs: data/attributes.csv (per poster), data/attributes_decade.json
 """
+
 import argparse, json, time
 from concurrent.futures import ProcessPoolExecutor, as_completed
 from pathlib import Path
@@ -37,14 +38,19 @@ ANALYSIS_WIDTH = 180
 
 REGISTRY = {}
 METRIC_COLS = {}
+
+
 def metric(name, cols):
     def deco(fn):
         REGISTRY[name] = fn
         METRIC_COLS[name] = list(cols)
         return fn
+
     return deco
 
+
 # ============================= METRICS =====================================
+
 
 def _mser_regions(gray):
     """MSER regions across OpenCV builds (tuple vs regions-only)."""
@@ -54,6 +60,7 @@ def _mser_regions(gray):
     if regions is None:
         return []
     return regions
+
 
 def _mser_text_boxes(gray):
     """Filtered MSER glyph candidates: small-to-medium, wider than tall or
@@ -80,23 +87,31 @@ def _mser_text_boxes(gray):
             boxes.append((x, y, w, h))
     return boxes
 
+
 @metric("composition", cols=["symmetry", "neg_space", "complexity", "mass_y", "mass_x"])
 def composition(bgr, gray):
     """Symmetry, negative space, visual complexity, center of visual mass."""
     small = cv2.resize(gray, (64, 96))
     # horizontal symmetry: 1 = perfect mirror (elevated horror loves this)
     sym = 1.0 - float(np.abs(small.astype(int) - small[:, ::-1]).mean()) / 255.0
-    gx = cv2.Sobel(gray, cv2.CV_32F, 1, 0); gy = cv2.Sobel(gray, cv2.CV_32F, 0, 1)
+    gx = cv2.Sobel(gray, cv2.CV_32F, 1, 0)
+    gy = cv2.Sobel(gray, cv2.CV_32F, 0, 1)
     mag = np.hypot(gx, gy)
-    flat = float((mag < 8).mean())                      # negative-space proxy
+    flat = float((mag < 8).mean())  # negative-space proxy
     edges = float(cv2.Canny(gray, 60, 140).mean()) / 255  # visual complexity
     # center of visual mass (where the "stuff" is), normalized 0-1
     tot = mag.sum() + 1e-9
     ys, xs = np.indices(mag.shape)
     cy = float((ys * mag).sum() / tot) / mag.shape[0]
     cx = float((xs * mag).sum() / tot) / mag.shape[1]
-    return dict(symmetry=round(sym, 4), neg_space=round(flat, 4),
-                complexity=round(edges, 4), mass_y=round(cy, 4), mass_x=round(cx, 4))
+    return dict(
+        symmetry=round(sym, 4),
+        neg_space=round(flat, 4),
+        complexity=round(edges, 4),
+        mass_y=round(cy, 4),
+        mass_x=round(cx, 4),
+    )
+
 
 @metric("typography", cols=["text_area", "text_y", "text_regions"])
 def typography(bgr, gray):
@@ -109,13 +124,16 @@ def typography(bgr, gray):
     boxes = _mser_text_boxes(gray)
     mask = np.zeros((H, W), np.uint8)
     for x, y, w, h in boxes:
-        mask[y:y + h, x:x + w] = 1
+        mask[y : y + h, x : x + w] = 1
     area = float(mask.mean())
     ys = np.where(mask.any(axis=1))[0]
-    ty = float(ys.mean() / H) if len(ys) else -1.0   # 0=top, 1=bottom
+    ty = float(ys.mean() / H) if len(ys) else -1.0  # 0=top, 1=bottom
     return dict(
-        text_area=round(area, 4), text_y=round(ty, 4), text_regions=len(boxes),
+        text_area=round(area, 4),
+        text_y=round(ty, 4),
+        text_regions=len(boxes),
     )
+
 
 @metric("grid", cols=["align_score", "thirds_dist", "n_blocks"])
 def grid_alignment(bgr, gray):
@@ -137,14 +155,15 @@ def grid_alignment(bgr, gray):
     # (roughly title/tagline/credits) via dilation + connected components.
     txt_mask = np.zeros((H, W), np.uint8)
     for x, y, w, h in _mser_text_boxes(gray):
-        txt_mask[y:y+h, x:x+w] = 1
+        txt_mask[y : y + h, x : x + w] = 1
     txt_mask = cv2.dilate(txt_mask, np.ones((5, 15), np.uint8))
     n_cc, _, stats, _ = cv2.connectedComponentsWithStats(txt_mask)
     boxes = [(x, y, x + w, y + h) for x, y, w, h, area in stats[1:] if area >= 25]
 
     # 2. dominant visual mass: same gradient-magnitude map as composition(),
     # thresholded + dilated, largest external contour by area.
-    gx = cv2.Sobel(gray, cv2.CV_32F, 1, 0); gy = cv2.Sobel(gray, cv2.CV_32F, 0, 1)
+    gx = cv2.Sobel(gray, cv2.CV_32F, 1, 0)
+    gy = cv2.Sobel(gray, cv2.CV_32F, 0, 1)
     mag = np.hypot(gx, gy)
     busy = cv2.dilate((mag > 25).astype(np.uint8), np.ones((7, 7), np.uint8))
     contours, _ = cv2.findContours(busy, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_SIMPLE)
@@ -173,7 +192,7 @@ def grid_alignment(bgr, gray):
             for k in range(3):  # edge/center/edge
                 vals = [v[k] for v in axis_vals]
                 for i, vi in enumerate(vals):
-                    others = vals[:i] + vals[i + 1:]
+                    others = vals[:i] + vals[i + 1 :]
                     dists.append(min(abs(vi - vj) for vj in others) / norm)
         align_score = round(float(np.mean(dists)), 4)
 
@@ -187,6 +206,7 @@ def grid_alignment(bgr, gray):
         thirds_dist = round(min(np.hypot(cx - px, cy - py) for px, py in pts), 4)
 
     return dict(align_score=align_score, thirds_dist=thirds_dist, n_blocks=n_blocks)
+
 
 @metric("aesthetic", cols=["balance", "harmony"])
 def aesthetic(bgr, gray):
@@ -241,6 +261,7 @@ def aesthetic(bgr, gray):
 
     return dict(balance=balance, harmony=harmony)
 
+
 @metric("diagonal", cols=["diagonal_score", "pyramid_shift"])
 def diagonal_pyramid(bgr, gray):
     """Diagonal composition and triangular/pyramid weight-shift.
@@ -268,8 +289,9 @@ def diagonal_pyramid(bgr, gray):
 
     edges = cv2.Canny(gray, 60, 140)
     min_len = int(min(H, W) * 0.12)
-    lines = cv2.HoughLinesP(edges, 1, np.pi / 180, threshold=25,
-                             minLineLength=min_len, maxLineGap=6)
+    lines = cv2.HoughLinesP(
+        edges, 1, np.pi / 180, threshold=25, minLineLength=min_len, maxLineGap=6
+    )
     diag_len = total_len = 0.0
     if lines is not None:
         # OpenCV may return (N,1,4) or (N,4); lines[:,0] on (N,4) yields
@@ -283,9 +305,11 @@ def diagonal_pyramid(bgr, gray):
                 diag_len += length
     diagonal_score = round(diag_len / total_len, 4) if total_len > 0 else 0.0
 
-    gx = cv2.Sobel(gray, cv2.CV_32F, 1, 0); gy = cv2.Sobel(gray, cv2.CV_32F, 0, 1)
+    gx = cv2.Sobel(gray, cv2.CV_32F, 1, 0)
+    gy = cv2.Sobel(gray, cv2.CV_32F, 0, 1)
     mag = np.clip(np.hypot(gx, gy) - 15, 0, None)  # suppress low-level texture noise
     xs = np.arange(W)
+
     def band_spread(y0, y1):
         band = mag[y0:y1].sum(axis=0)
         tot = band.sum()
@@ -294,11 +318,14 @@ def diagonal_pyramid(bgr, gray):
         cx = (xs * band).sum() / tot
         var = ((xs - cx) ** 2 * band).sum() / tot
         return 2 * np.sqrt(var) / W
+
     pyramid_shift = round(band_spread(2 * H // 3, H) - band_spread(0, H // 3), 4)
 
     return dict(diagonal_score=diagonal_score, pyramid_shift=pyramid_shift)
 
+
 # ============================ HARNESS ======================================
+
 
 def _process_one(args_tuple):
     """Top-level (picklable) worker: reads image, runs the requested metric fns.
@@ -326,13 +353,23 @@ def _process_one(args_tuple):
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--metrics", default=",".join(REGISTRY),
-                    help=f"comma-separated: {','.join(REGISTRY)}")
+    ap.add_argument(
+        "--metrics", default=",".join(REGISTRY), help=f"comma-separated: {','.join(REGISTRY)}"
+    )
     ap.add_argument("--sample", type=int, default=0, help="0 = all posters")
     ap.add_argument("--budget", type=float, default=0, help="seconds; 0 = no limit")
     ap.add_argument("--meta-csv", default="", help="override id source (default posters.csv)")
-    ap.add_argument("--out", default="", help="override final_path/checkpoint (keeps corpora separate; does NOT seed from attributes.csv)")
-    ap.add_argument("--workers", type=int, default=6, help="parallel processes (CPU-bound, ~1 per core minus headroom)")
+    ap.add_argument(
+        "--out",
+        default="",
+        help="override final_path/checkpoint (keeps corpora separate; does NOT seed from attributes.csv)",
+    )
+    ap.add_argument(
+        "--workers",
+        type=int,
+        default=6,
+        help="parallel processes (CPU-bound, ~1 per core minus headroom)",
+    )
     args = ap.parse_args()
 
     global CHECKPOINT
@@ -346,12 +383,15 @@ def main():
     # finished one too (wasteful but harmless) rather than partially skipping.
     needed_cols = sorted({c for k in fns for c in METRIC_COLS[k]})
 
-    meta = pd.read_csv(Path(args.meta_csv) if args.meta_csv else (DATA / "posters.csv"), usecols=["id", "year"])
+    meta = pd.read_csv(
+        Path(args.meta_csv) if args.meta_csv else (DATA / "posters.csv"), usecols=["id", "year"]
+    )
     meta["id"] = meta["id"].astype(int)
     meta["year"] = meta["year"].astype(int)
     if args.sample:
         meta = meta.groupby(meta.year // 10 * 10, group_keys=False).apply(
-            lambda g: g.sample(min(len(g), max(1, args.sample // 8)), random_state=42))
+            lambda g: g.sample(min(len(g), max(1, args.sample // 8)), random_state=42)
+        )
 
     # Seed the resumable checkpoint from the published attributes.csv when
     # missing, so a single-metric re-run merges into existing columns instead
@@ -403,8 +443,7 @@ def main():
         merged.reset_index().to_csv(CHECKPOINT, index=False)
         done.update(set(new_df.index.astype(int)))
         rate = len(rows) / max(time.time() - t_batch, 1e-9)
-        print(f"  checkpoint +{len(rows):,} ({len(done):,}/{len(meta):,}) {rate:.0f}/s",
-              flush=True)
+        print(f"  checkpoint +{len(rows):,} ({len(done):,}/{len(meta):,}) {rate:.0f}/s", flush=True)
         rows = []
         t_batch = time.time()
 
@@ -482,5 +521,7 @@ def main():
         print(f"wrote {final_path} ({len(d)} rows)", flush=True)
     else:
         print(f"not finalizing yet — need {len(meta) - covered} more", flush=True)
+
+
 if __name__ == "__main__":
     main()

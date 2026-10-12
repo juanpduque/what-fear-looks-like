@@ -11,6 +11,7 @@ data/rekognition.csv (primary corpus). Writes:
   python3 rekognition_multi_variants.py --ids-file data/qa/poster_title_mismatch_consensus.csv
   python3 rekognition_multi_variants.py --include-primary
 """
+
 from __future__ import annotations
 
 import argparse
@@ -150,7 +151,11 @@ def write_rows(path: Path, rows: dict[tuple[int, str], dict]) -> None:
 def detect_labels_props(client, path: Path, min_interval: float) -> dict:
     t0 = time.perf_counter()
     if not path.exists() or path.stat().st_size < 500:
-        return {"error": "missing_jpg", "sha256": "", "latency_s": round(time.perf_counter() - t0, 3)}
+        return {
+            "error": "missing_jpg",
+            "sha256": "",
+            "latency_s": round(time.perf_counter() - t0, 3),
+        }
     data = path.read_bytes()
     sha256 = hashlib.sha256(data).hexdigest()
     if len(data) > MAX_BYTES:
@@ -200,8 +205,7 @@ def detect_labels_props(client, path: Path, min_interval: float) -> dict:
     q = ip.get("Quality") or {}
     colors = ip.get("DominantColors") or []
     color_s = "|".join(
-        f"{c.get('HexCode', '')}:{round(float(c.get('PixelPercent', 0)), 1)}"
-        for c in colors[:5]
+        f"{c.get('HexCode', '')}:{round(float(c.get('PixelPercent', 0)), 1)}" for c in colors[:5]
     )
     label_s = "|".join(f"{n}:{c:.2f}" for n, c in labels[:10])
     top_n, top_c = (labels[0][0], labels[0][1]) if labels else ("", 0.0)
@@ -379,7 +383,7 @@ def main() -> int:
     write_rows(out_path, rows)
     log(
         f"LISTO n={len(rows)} ok_run={ok} err={err} "
-        f"elapsed={(time.time()-t0)/60:.1f}m → {out_path}"
+        f"elapsed={(time.time() - t0) / 60:.1f}m → {out_path}"
     )
     return 0
 

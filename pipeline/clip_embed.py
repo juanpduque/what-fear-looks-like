@@ -10,6 +10,7 @@ Setup + run (your machine; ~600MB model download on first run):
 
 Output: data/clip_embeddings.npz  (ids + L2-normalized 512-d vectors, ~57MB)
 """
+
 import time
 from pathlib import Path
 import numpy as np
@@ -22,6 +23,7 @@ import open_clip
 def load_clip(device):
     """HF con fallback a checkpoint local: export CLIP_CKPT=/ruta/ViT-B-32.pt"""
     import os
+
     ckpt = os.environ.get("CLIP_CKPT")
     if ckpt:
         model = open_clip.load_openai_model(ckpt, device=device)
@@ -30,13 +32,16 @@ def load_clip(device):
     m, _, pre = open_clip.create_model_and_transforms("ViT-B-32", pretrained="openai")
     return m.to(device).eval(), pre
 
+
 DATA = Path(__file__).parent / "data"
 OUT = DATA / "clip_embeddings.npz"
 PARTIAL = DATA / "clip_embeddings_partial.npz"
 BATCH = 64
 
+
 def main():
     import argparse
+
     ap = argparse.ArgumentParser()
     ap.add_argument("--meta-csv", default="", help="override id source (default posters.csv)")
     ap.add_argument("--out", default="", help="override output npz (keeps corpora separate)")
@@ -51,7 +56,9 @@ def main():
     print("device:", device)
     model, preprocess = load_clip(device)
 
-    meta = pd.read_csv(Path(args.meta_csv) if args.meta_csv else (DATA / "posters.csv"), usecols=["id", "year"])
+    meta = pd.read_csv(
+        Path(args.meta_csv) if args.meta_csv else (DATA / "posters.csv"), usecols=["id", "year"]
+    )
     ids_done, vecs = [], []
     if PARTIAL.exists():
         z = np.load(PARTIAL)
@@ -66,9 +73,11 @@ def main():
     print(f"pending embed: {len(todo):,}")
 
     t0, imgs, batch_ids, n0 = time.time(), [], [], len(ids_done)
+
     def flush():
         nonlocal imgs, batch_ids
-        if not imgs: return
+        if not imgs:
+            return
         with torch.no_grad():
             f = model.encode_image(torch.stack(imgs).to(device))
             f = f / f.norm(dim=-1, keepdim=True)
@@ -78,7 +87,8 @@ def main():
 
     for i, r in enumerate(todo.itertuples()):
         f = DATA / "posters" / f"{r.id}.jpg"
-        if not f.exists(): continue
+        if not f.exists():
+            continue
         try:
             imgs.append(preprocess(Image.open(f).convert("RGB")))
             batch_ids.append(r.id)
@@ -89,12 +99,12 @@ def main():
             if len(ids_done) % 256 < BATCH:
                 rate = (len(ids_done) - n0) / (time.time() - t0)
                 print(f"  {len(ids_done):,}/{len(meta):,} ({rate:.0f}/s)", flush=True)
-                np.savez_compressed(PARTIAL, ids=np.array(ids_done),
-                                    vecs=np.array(vecs))
+                np.savez_compressed(PARTIAL, ids=np.array(ids_done), vecs=np.array(vecs))
     flush()
     np.savez_compressed(OUT, ids=np.array(ids_done), vecs=np.array(vecs))
     PARTIAL.unlink(missing_ok=True)
     print(f"LISTO: {len(ids_done):,} embeddings -> {OUT}")
+
 
 if __name__ == "__main__":
     main()

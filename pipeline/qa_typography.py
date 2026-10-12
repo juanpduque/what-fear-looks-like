@@ -9,6 +9,7 @@ lettering style.
   python3 qa_typography.py --n 2000 --workers 12
   python3 qa_typography.py --n 999999 --workers 30   # full coverage
 """
+
 from __future__ import annotations
 
 import argparse
@@ -42,8 +43,17 @@ MAX_SIDE = 1200
 REGISTERS = ["ornate", "decorative", "standard", "clean", "minimal"]
 
 FIELDS = [
-    "id", "clip_register", "clip_axis",
-    "model", "status", "nova_register", "agree", "agree_adjacent", "reason", "latency_s", "error",
+    "id",
+    "clip_register",
+    "clip_axis",
+    "model",
+    "status",
+    "nova_register",
+    "agree",
+    "agree_adjacent",
+    "reason",
+    "latency_s",
+    "error",
 ]
 
 PROMPT = """Look at the movie TITLE LETTERING on this poster (ignore tagline/credits/small
@@ -87,11 +97,13 @@ def load_rows() -> list[dict]:
                 if pid in seen:
                     continue
                 seen.add(pid)
-                rows.append({
-                    "id": pid,
-                    "clip_register": (r.get("register") or "").strip(),
-                    "clip_axis": r.get("axis") or "0",
-                })
+                rows.append(
+                    {
+                        "id": pid,
+                        "clip_register": (r.get("register") or "").strip(),
+                        "clip_axis": r.get("axis") or "0",
+                    }
+                )
     with ThreadPoolExecutor(max_workers=64) as ex:
         exists = list(ex.map(lambda r: (POSTERS / f"{r['id']}.jpg").exists(), rows))
     rows = [r for r, ok in zip(rows, exists) if ok]
@@ -153,24 +165,40 @@ def resize_jpeg(path: Path) -> bytes:
 
 def process_one(client, r: dict, out_csv: Path) -> None:
     base = {
-        "id": r["id"], "clip_register": r["clip_register"], "clip_axis": r["clip_axis"],
-        "model": "nova-pro", "status": "error",
-        "nova_register": "", "agree": "", "agree_adjacent": "", "reason": "", "latency_s": 0.0, "error": "",
+        "id": r["id"],
+        "clip_register": r["clip_register"],
+        "clip_axis": r["clip_axis"],
+        "model": "nova-pro",
+        "status": "error",
+        "nova_register": "",
+        "agree": "",
+        "agree_adjacent": "",
+        "reason": "",
+        "latency_s": 0.0,
+        "error": "",
     }
     t0 = time.perf_counter()
     try:
         img = resize_jpeg(POSTERS / f"{r['id']}.jpg")
-        prompt = PROMPT.format(clip_register=r["clip_register"] or "standard", clip_axis=r["clip_axis"])
+        prompt = PROMPT.format(
+            clip_register=r["clip_register"] or "standard", clip_axis=r["clip_axis"]
+        )
         resp = client.converse(
             modelId=MODEL_ID,
-            messages=[{"role": "user", "content": [
-                {"image": {"format": "jpeg", "source": {"bytes": img}}},
-                {"text": prompt},
-            ]}],
+            messages=[
+                {
+                    "role": "user",
+                    "content": [
+                        {"image": {"format": "jpeg", "source": {"bytes": img}}},
+                        {"text": prompt},
+                    ],
+                }
+            ],
             inferenceConfig={"temperature": 0, "maxTokens": 200},
         )
         text = "".join(
-            b.get("text", "") for b in resp.get("output", {}).get("message", {}).get("content", [])
+            b.get("text", "")
+            for b in resp.get("output", {}).get("message", {}).get("content", [])
             if "text" in b
         ).strip()
         if text.startswith("```"):
@@ -214,7 +242,8 @@ def main() -> int:
     log(f"sample={len(sample):,} done={len(done):,} todo={len(todo):,} workers={args.workers}")
 
     client = boto3.Session(profile_name=os.environ.get("AWS_PROFILE")).client(
-        "bedrock-runtime", region_name=args.region,
+        "bedrock-runtime",
+        region_name=args.region,
         config=Config(retries={"max_attempts": 8, "mode": "adaptive"}),
     )
 
@@ -241,7 +270,9 @@ def main() -> int:
             else:
                 disagree += 1
     total = agree + adjacent + disagree
-    log(f"LISTO -> {out_csv} | exact={agree:,} ({agree/max(total,1):.1%}) adjacent={adjacent:,} disagree={disagree:,}")
+    log(
+        f"LISTO -> {out_csv} | exact={agree:,} ({agree / max(total, 1):.1%}) adjacent={adjacent:,} disagree={disagree:,}"
+    )
     return 0
 
 

@@ -7,6 +7,7 @@ Writes local JPGs + data/new_omdb_ids.csv for analyze_color_ids.py.
   python3 pull_omdb_posters.py
   python3 pull_omdb_posters.py --workers 16
 """
+
 from __future__ import annotations
 
 import argparse

@@ -12,6 +12,7 @@ Usage:
   python3 fill_runtime_imdb_basics.py
   python3 fill_runtime_imdb_basics.py --dry-run
 """
+
 from __future__ import annotations
 
 import argparse
@@ -283,11 +284,7 @@ def main() -> None:
     print(f"report → {REPORT} ({len(report_rows):,} rows)")
     print(f"status: ok={ok:,} basics_no_runtime={no_rt:,} basics_miss={no_row:,}")
 
-    short = sum(
-        1
-        for r in report_rows
-        if r["status"] == "ok" and int(r["runtime_after"]) <= 40
-    )
+    short = sum(1 for r in report_rows if r["status"] == "ok" and int(r["runtime_after"]) <= 40)
     feat = ok - short
     print(f"  ok short≤40={short:,}  features>40={feat:,}")
 
@@ -300,13 +297,8 @@ def main() -> None:
 
     # post-check coverage on posters
     hm2 = load_hm_runtime_title()
-    have = sum(
-        1 for pid in posters if pid in hm2 and hm2[pid][0] > 0
-    )
-    print(
-        f"posters with runtime>0: {have:,}/{len(posters):,} "
-        f"({100 * have / len(posters):.1f}%)"
-    )
+    have = sum(1 for pid in posters if pid in hm2 and hm2[pid][0] > 0)
+    print(f"posters with runtime>0: {have:,}/{len(posters):,} ({100 * have / len(posters):.1f}%)")
 
 
 if __name__ == "__main__":

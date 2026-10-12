@@ -12,6 +12,7 @@ Usage:
   python3 enrich_imdb_wikidata.py
   python3 enrich_imdb_wikidata.py --batch 400 --dry-run
 """
+
 from __future__ import annotations
 
 import argparse
@@ -28,8 +29,10 @@ HITS_OUT = DATA / "imdb_ids_wikidata.csv"
 
 ENDPOINT = "https://query.wikidata.org/sparql"
 UA = "AnatomyOfFear/1.0 (poster research; python-requests)"
-QUERY = "SELECT ?tmdb ?imdb WHERE {{ VALUES ?tmdb {{ {values} }} " \
-        "?f wdt:P4947 ?tmdb ; wdt:P345 ?imdb . }}"
+QUERY = (
+    "SELECT ?tmdb ?imdb WHERE {{ VALUES ?tmdb {{ {values} }} "
+    "?f wdt:P4947 ?tmdb ; wdt:P345 ?imdb . }}"
+)
 
 
 def load_sidecar() -> dict[int, str]:
@@ -145,8 +148,10 @@ def main() -> None:
         print(f"  {done}/{len(todo)} recovered={len(found):,}", flush=True)
         time.sleep(args.sleep)
 
-    print(f"\nwikidata recovered {len(found):,} / {len(todo):,} "
-          f"({100 * len(found) / max(len(todo), 1):.1f}%)")
+    print(
+        f"\nwikidata recovered {len(found):,} / {len(todo):,} "
+        f"({100 * len(found) / max(len(todo), 1):.1f}%)"
+    )
     if not found or args.dry_run:
         return
 

@@ -14,6 +14,7 @@ progress JSON + partial CSV to local OUT and optionally syncs via external chain
 Requires project version RUNNING (StartProjectVersion). Cost: inference-unit
 hours while RUNNING + per-image DetectCustomLabels.
 """
+
 from __future__ import annotations
 
 import argparse
@@ -159,10 +160,16 @@ def write_progress(path: Path, payload: dict) -> None:
 def main() -> int:
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--region", default=os.environ.get("AWS_DEFAULT_REGION", REGION))
-    ap.add_argument("--version-arn", default=os.environ.get("VERSION_ARN", ""),
-                     help="required: set --version-arn or VERSION_ARN env var")
-    ap.add_argument("--bucket", default=os.environ.get("POSTER_BUCKET", ""),
-                     help="required: set --bucket or POSTER_BUCKET env var")
+    ap.add_argument(
+        "--version-arn",
+        default=os.environ.get("VERSION_ARN", ""),
+        help="required: set --version-arn or VERSION_ARN env var",
+    )
+    ap.add_argument(
+        "--bucket",
+        default=os.environ.get("POSTER_BUCKET", ""),
+        help="required: set --bucket or POSTER_BUCKET env var",
+    )
     ap.add_argument(
         "--poster-prefix",
         default=os.environ.get("POSTER_PREFIX", ""),
@@ -187,17 +194,30 @@ def main() -> int:
     )
     ap.add_argument("--wait-seconds", type=int, default=30)
     ap.add_argument("--wait-timeout", type=int, default=3600)
-    ap.add_argument("--project-arn", default=os.environ.get("PROJECT_ARN", ""),
-                     help="required with --wait-running: set --project-arn or PROJECT_ARN env var")
+    ap.add_argument(
+        "--project-arn",
+        default=os.environ.get("PROJECT_ARN", ""),
+        help="required with --wait-running: set --project-arn or PROJECT_ARN env var",
+    )
     args = ap.parse_args()
 
-    missing = [n for n, v in (("--version-arn/VERSION_ARN", args.version_arn),
-                               ("--bucket/POSTER_BUCKET", args.bucket),
-                               ("--poster-prefix/POSTER_PREFIX", args.poster_prefix)) if not v]
+    missing = [
+        n
+        for n, v in (
+            ("--version-arn/VERSION_ARN", args.version_arn),
+            ("--bucket/POSTER_BUCKET", args.bucket),
+            ("--poster-prefix/POSTER_PREFIX", args.poster_prefix),
+        )
+        if not v
+    ]
     if missing:
-        raise SystemExit(f"missing required: {', '.join(missing)} (no cross-account default — set explicitly)")
+        raise SystemExit(
+            f"missing required: {', '.join(missing)} (no cross-account default — set explicitly)"
+        )
     if args.wait_running and not args.project_arn:
-        raise SystemExit("--wait-running requires --project-arn or PROJECT_ARN env var (no cross-account default)")
+        raise SystemExit(
+            "--wait-running requires --project-arn or PROJECT_ARN env var (no cross-account default)"
+        )
 
     out = Path(args.out)
     out.parent.mkdir(parents=True, exist_ok=True)
@@ -214,7 +234,10 @@ def main() -> int:
         f"s3://{args.bucket}/{args.poster_prefix}/ version={args.version_arn.split('/')[-2]}"
     )
 
-    cfg = Config(retries={"max_attempts": 10, "mode": "adaptive"}, max_pool_connections=max(16, args.workers * 2))
+    cfg = Config(
+        retries={"max_attempts": 10, "mode": "adaptive"},
+        max_pool_connections=max(16, args.workers * 2),
+    )
     client = boto3.client("rekognition", region_name=args.region, config=cfg)
 
     if args.wait_running:
@@ -296,7 +319,11 @@ def main() -> int:
             code = e.response.get("Error", {}).get("Code", "")
             msg = e.response.get("Error", {}).get("Message", str(e))[:240]
             # NotFound / InvalidS3Object → soft miss
-            status = "miss" if code in ("InvalidS3ObjectException", "ResourceNotFoundException") else "error"
+            status = (
+                "miss"
+                if code in ("InvalidS3ObjectException", "ResourceNotFoundException")
+                else "error"
+            )
             return {
                 "id": pid,
                 "pred": "",

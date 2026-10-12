@@ -29,6 +29,7 @@ share de cada registro por decada -> streamgraph.
 Outputs: data/typography.csv, data/typography_decade.json
 Corre en segundos: reutiliza data/clip_embeddings.npz (no re-embebe nada).
 """
+
 import argparse, os
 from pathlib import Path
 import numpy as np
@@ -57,16 +58,16 @@ REGISTERS = ["ornate", "decorative", "standard", "clean", "minimal"]
 
 # ground truth verificado a ojo: intencion en el eje (+1 ornamentado, -1 minimal, 0 medio)
 VALIDATION = [
-    (244,    "King Kong",      +1),
-    (57283,  "Haxan",          +1),
-    (3053,   "Fearless Vamp.", +1),
-    (21588,  "Cemetery Man",   +1),
-    (377,    "Nightmare Elm",   0),
-    (948,    "Halloween",      -1),
-    (48171,  "The Rite",       -1),
-    (4232,   "Scream",         -1),
-    (8461,   "Funny Games",    -1),
-    (493922, "Hereditary",     -1),
+    (244, "King Kong", +1),
+    (57283, "Haxan", +1),
+    (3053, "Fearless Vamp.", +1),
+    (21588, "Cemetery Man", +1),
+    (377, "Nightmare Elm", 0),
+    (948, "Halloween", -1),
+    (48171, "The Rite", -1),
+    (4232, "Scream", -1),
+    (8461, "Funny Games", -1),
+    (493922, "Hereditary", -1),
 ]
 
 
@@ -108,7 +109,10 @@ def main():
     vecs = z["vecs"].astype(np.float32)
     axis = (vecs @ ORNATE) - (vecs @ CLEAN)
     df = pd.DataFrame(dict(id=ids, axis=axis))
-    meta = pd.read_csv(Path(args.meta_csv) if args.meta_csv else (DATA / "posters.csv"), usecols=["id", "year", "title"])
+    meta = pd.read_csv(
+        Path(args.meta_csv) if args.meta_csv else (DATA / "posters.csv"),
+        usecols=["id", "year", "title"],
+    )
     df = df.merge(meta, on="id")
 
     if args.validate:
@@ -116,7 +120,7 @@ def main():
         sub = df[df.id.isin(want)].copy()
         sub["want"] = sub.id.map(want)
         r = np.corrcoef(sub["want"], sub["axis"])[0, 1]
-        print(f'{"film":16}{"want":6}{"axis":>10}')
+        print(f"{'film':16}{'want':6}{'axis':>10}")
         for i, name, w in VALIDATION:
             a = df[df.id == i]["axis"]
             a = float(a.iloc[0]) if len(a) else float("nan")
@@ -130,35 +134,43 @@ def main():
     edges[0], edges[-1] = -np.inf, np.inf
     # bin 0 = mas minimal (axis bajo) ... bin n-1 = mas ornamentado (axis alto)
     # invertimos para que REGISTERS[0]="ornate" corresponda al axis mas alto
-    b = np.digitize(df["axis"], edges[1:-1])           # 0..nbins-1, 0=minimal
-    df["register"] = [REGISTERS[::-1][k] for k in b]    # reversed -> 0=ornate
+    b = np.digitize(df["axis"], edges[1:-1])  # 0..nbins-1, 0=minimal
+    df["register"] = [REGISTERS[::-1][k] for k in b]  # reversed -> 0=ornate
     df.to_csv(out_csv, index=False)
 
     d = df[(df.year >= 1920) & (df.year <= 2029)].copy()
     d["decade"] = (d.year // 10) * 10
-    sh = (d.groupby(["decade", "register"]).size().unstack(fill_value=0)
-            .reindex(columns=REGISTERS, fill_value=0))
+    sh = (
+        d.groupby(["decade", "register"])
+        .size()
+        .unstack(fill_value=0)
+        .reindex(columns=REGISTERS, fill_value=0)
+    )
     share = sh.div(sh.sum(1), axis=0).round(4)
     mean_axis = d.groupby("decade")["axis"].mean().round(5)
     n = sh.sum(1)
     out = []
     for dec in share.index:
-        row = {"decade": int(dec), "n": int(n[dec]),
-               "mean_axis": float(mean_axis[dec])}
+        row = {"decade": int(dec), "n": int(n[dec]), "mean_axis": float(mean_axis[dec])}
         for reg in REGISTERS:
             row[reg] = float(share.loc[dec, reg])
         out.append(row)
     import json
+
     out_decade.write_text(json.dumps(out))
 
     print("=== SHARE DE REGISTRO TIPOGRAFICO POR DECADA ===")
-    print(f'{"dec":6}' + "".join(f"{r:>12}" for r in REGISTERS) + f'{"mean":>10}{"n":>7}')
+    print(f"{'dec':6}" + "".join(f"{r:>12}" for r in REGISTERS) + f"{'mean':>10}{'n':>7}")
     for row in out:
-        print(f'{row["decade"]:<6}' +
-              "".join(f"{row[r]*100:>11.1f}%" for r in REGISTERS) +
-              f'{row["mean_axis"]:>+10.4f}{row["n"]:>7}')
-    print(f"\nPearson(decada, mean_axis) = "
-          f'{np.corrcoef(share.index.astype(float), mean_axis.values)[0,1]:+.3f}')
+        print(
+            f"{row['decade']:<6}"
+            + "".join(f"{row[r] * 100:>11.1f}%" for r in REGISTERS)
+            + f"{row['mean_axis']:>+10.4f}{row['n']:>7}"
+        )
+    print(
+        f"\nPearson(decada, mean_axis) = "
+        f"{np.corrcoef(share.index.astype(float), mean_axis.values)[0, 1]:+.3f}"
+    )
 
 
 if __name__ == "__main__":

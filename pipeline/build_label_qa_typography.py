@@ -18,6 +18,7 @@ Writes:
   python3 build_label_qa_typography.py
   python3 build_label_qa_typography.py --n 250
 """
+
 from __future__ import annotations
 
 import argparse

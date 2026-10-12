@@ -23,6 +23,7 @@ Usage:
 
 Cost: ~$0.001 / image DetectFaces → ~$10.5 for full gap.
 """
+
 from __future__ import annotations
 
 import argparse
@@ -209,10 +210,7 @@ def main():
     buf: list[dict] = []
     ok = err = 0
     with ThreadPoolExecutor(max_workers=args.workers) as ex:
-        futs = {
-            ex.submit(detect_one, pid, local_dir=local_dir, use_s3=use_s3): pid
-            for pid in todo
-        }
+        futs = {ex.submit(detect_one, pid, local_dir=local_dir, use_s3=use_s3): pid for pid in todo}
         for n, fut in enumerate(as_completed(futs), 1):
             row = fut.result()
             buf.append(row)
@@ -226,7 +224,7 @@ def main():
                 rate = n / max(1e-6, time.time() - t0)
                 print(
                     f"[{n}/{len(todo)}] ok={ok} err={err} {rate:.1f}/s "
-                    f"eta={(len(todo)-n)/max(rate,1e-6)/60:.1f}m",
+                    f"eta={(len(todo) - n) / max(rate, 1e-6) / 60:.1f}m",
                     flush=True,
                 )
     if buf:

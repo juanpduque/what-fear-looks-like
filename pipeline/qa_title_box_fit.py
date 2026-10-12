@@ -16,6 +16,7 @@ Outputs:
   data/qa/title_box_fit.csv
   data/qa/title_box_fit_miss.csv
 """
+
 from __future__ import annotations
 
 import argparse

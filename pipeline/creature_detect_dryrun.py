@@ -9,6 +9,7 @@ Uses the Monster Census taxonomy as open-vocab queries. Saves:
   python3 creature_detect_dryrun.py
   python3 creature_detect_dryrun.py --n 100 --device mps
 """
+
 from __future__ import annotations
 
 import argparse
@@ -82,12 +83,26 @@ def sample_ids(n: int, seed: int = 42) -> list[dict]:
 
     # Prefer known validation titles when present
     wanted = [
-        ("Godzilla", 1954), ("Jaws", 1975), ("An American Werewolf in London", 1981),
-        ("Night of the Living Dead", 1968), ("Arachnophobia", 1990), ("It", 2017),
-        ("Annabelle", 2014), ("Halloween", 1978), ("The Birds", 1963), ("Get Out", 2017),
-        ("Nosferatu", 1922), ("Dracula", 1931), ("Alien", 1979), ("The Exorcist", 1973),
-        ("A Nightmare on Elm Street", 1984), ("Scream", 1996), ("The Ring", 2002),
-        ("Hereditary", 2018), ("Midsommar", 2019), ("The Witch", 2015),
+        ("Godzilla", 1954),
+        ("Jaws", 1975),
+        ("An American Werewolf in London", 1981),
+        ("Night of the Living Dead", 1968),
+        ("Arachnophobia", 1990),
+        ("It", 2017),
+        ("Annabelle", 2014),
+        ("Halloween", 1978),
+        ("The Birds", 1963),
+        ("Get Out", 2017),
+        ("Nosferatu", 1922),
+        ("Dracula", 1931),
+        ("Alien", 1979),
+        ("The Exorcist", 1973),
+        ("A Nightmare on Elm Street", 1984),
+        ("Scream", 1996),
+        ("The Ring", 2002),
+        ("Hereditary", 2018),
+        ("Midsommar", 2019),
+        ("The Witch", 2015),
     ]
     picked = []
     seen = set()
@@ -139,13 +154,15 @@ def sample_ids(n: int, seed: int = 42) -> list[dict]:
 
     out = []
     for r in picked[:n]:
-        out.append({
-            "id": int(r["id"]),
-            "title": str(r.get("title") or ""),
-            "year": int(r.get("year") or 0),
-            "census_label": str(r.get("label") or ""),
-            "census_score": float(r.get("score") or 0),
-        })
+        out.append(
+            {
+                "id": int(r["id"]),
+                "title": str(r.get("title") or ""),
+                "year": int(r.get("year") or 0),
+                "census_label": str(r.get("label") or ""),
+                "census_score": float(r.get("score") or 0),
+            }
+        )
     return out
 
 
@@ -170,11 +187,13 @@ def filter_boxes(boxes, scores, labels, w, h, min_score=0.15, max_boxes=5):
         area = xywh[2] * xywh[3]
         if area < 0.002 or area > 0.95:
             continue
-        rows.append({
-            "label": str(lab),
-            "score": round(float(score), 3),
-            "box": xywh,  # x,y,w,h normalized
-        })
+        rows.append(
+            {
+                "label": str(lab),
+                "score": round(float(score), 3),
+                "box": xywh,  # x,y,w,h normalized
+            }
+        )
     rows.sort(key=lambda r: r["score"], reverse=True)
     return rows[:max_boxes]
 
@@ -225,7 +244,10 @@ def run_owlv2(paths: list[Path], device: str, min_score: float):
             out[int(path.stem)] = []
         if i % 5 == 0 or i == len(todo):
             OUT_OWL.write_text(json.dumps({"boxes": out}, ensure_ascii=False), encoding="utf-8")
-            print(f"  owl {len(out)}/{len(paths)} (+{i}/{len(todo)}) ({(time.time()-t0)/max(i,1):.2f}s/img)", flush=True)
+            print(
+                f"  owl {len(out)}/{len(paths)} (+{i}/{len(todo)}) ({(time.time() - t0) / max(i, 1):.2f}s/img)",
+                flush=True,
+            )
     elapsed = time.time() - t0
     OUT_OWL.write_text(json.dumps({"boxes": out}, ensure_ascii=False), encoding="utf-8")
     del model
@@ -289,7 +311,10 @@ def run_grounding_dino(paths: list[Path], device: str, min_score: float):
             out[int(path.stem)] = []
         if i % 5 == 0 or i == len(todo):
             OUT_DINO.write_text(json.dumps({"boxes": out}, ensure_ascii=False), encoding="utf-8")
-            print(f"  dino {len(out)}/{len(paths)} (+{i}/{len(todo)}) ({(time.time()-t0)/max(i,1):.2f}s/img)", flush=True)
+            print(
+                f"  dino {len(out)}/{len(paths)} (+{i}/{len(todo)}) ({(time.time() - t0) / max(i, 1):.2f}s/img)",
+                flush=True,
+            )
     elapsed = time.time() - t0
     OUT_DINO.write_text(json.dumps({"boxes": out}, ensure_ascii=False), encoding="utf-8")
     del model
@@ -344,21 +369,23 @@ def summarize(sample, owl, dino):
                 box_iou_hits += 1
         census_match_owl = bool(o_top and o_top == s["census_label"])
         census_match_dino = bool(d_top and d_top == s["census_label"])
-        rows.append({
-            **s,
-            "owl_n": len(o),
-            "dino_n": len(d),
-            "owl_top": o_top or "",
-            "dino_top": d_top or "",
-            "owl_top_score": o[0]["score"] if o else "",
-            "dino_top_score": d[0]["score"] if d else "",
-            "top_agree": int(bool(o_top and d_top and o_top == d_top)),
-            "best_same_label_iou": round(best, 3) if best else "",
-            "census_match_owl": int(census_match_owl),
-            "census_match_dino": int(census_match_dino),
-            "owl_boxes": json.dumps(o),
-            "dino_boxes": json.dumps(d),
-        })
+        rows.append(
+            {
+                **s,
+                "owl_n": len(o),
+                "dino_n": len(d),
+                "owl_top": o_top or "",
+                "dino_top": d_top or "",
+                "owl_top_score": o[0]["score"] if o else "",
+                "dino_top_score": d[0]["score"] if d else "",
+                "top_agree": int(bool(o_top and d_top and o_top == d_top)),
+                "best_same_label_iou": round(best, 3) if best else "",
+                "census_match_owl": int(census_match_owl),
+                "census_match_dino": int(census_match_dino),
+                "owl_boxes": json.dumps(o),
+                "dino_boxes": json.dumps(d),
+            }
+        )
     n = len(sample)
     summary = {
         "n": n,
@@ -415,7 +442,11 @@ def write_html(rows, summary, owl_s, dino_s):
     for r in rows[:40]:
         pid = r["id"]
         prev = PREVIEW / f"{pid}.jpg"
-        img = f'<img src="../data/creature_detect_preview/{pid}.jpg" loading="lazy">' if prev.exists() else ""
+        img = (
+            f'<img src="../data/creature_detect_preview/{pid}.jpg" loading="lazy">'
+            if prev.exists()
+            else ""
+        )
         cards.append(
             f"<article><h3>{r['title']} ({r['year']})</h3>"
             f"<p>census: <b>{r['census_label']}</b> ({r['census_score']}) · "
@@ -433,15 +464,15 @@ article{{border:1px solid #2a2a30;padding:12px;border-radius:4px}}
 img{{width:100%;height:auto;display:block;margin-top:8px}}
 .k{{font-family:ui-monospace,monospace;font-size:13px;line-height:1.55}}
 </style>
-<h1>OWLv2 vs Grounding DINO — dry-run n={summary['n']}</h1>
-<pre class="k">{json.dumps({k:v for k,v in summary.items() if not isinstance(v, Counter)}, indent=2)}
+<h1>OWLv2 vs Grounding DINO — dry-run n={summary["n"]}</h1>
+<pre class="k">{json.dumps({k: v for k, v in summary.items() if not isinstance(v, Counter)}, indent=2)}
 owl_time_s={owl_s:.1f}
 dino_time_s={dino_s:.1f}
-owl_labels={dict(summary['owl_label_counts'])}
-dino_labels={dict(summary['dino_label_counts'])}
+owl_labels={dict(summary["owl_label_counts"])}
+dino_labels={dict(summary["dino_label_counts"])}
 </pre>
 <p>Amber boxes = OWLv2 · Red boxes = Grounding DINO (tiny). Queries = Monster Census taxonomy nouns.</p>
-<div class="grid">{''.join(cards)}</div>
+<div class="grid">{"".join(cards)}</div>
 """
     OUT_HTML.write_text(html, encoding="utf-8")
 

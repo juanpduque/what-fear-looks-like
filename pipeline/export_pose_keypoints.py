@@ -12,6 +12,7 @@ can draw a stick figure without knowing the original pixel size.
 
   python3 export_pose_keypoints.py
 """
+
 from __future__ import annotations
 
 import csv
@@ -80,7 +81,9 @@ def load_primary_sizes() -> dict[int, tuple[int, int]]:
     return out
 
 
-def infer_hw(pid: int, box: list[float], sizes: dict[int, tuple[int, int]], row: dict | None = None) -> tuple[float, float]:
+def infer_hw(
+    pid: int, box: list[float], sizes: dict[int, tuple[int, int]], row: dict | None = None
+) -> tuple[float, float]:
     if row:
         try:
             iw, ih = float(row.get("img_w") or 0), float(row.get("img_h") or 0)
@@ -147,6 +150,7 @@ def _row_metrics(r: dict) -> list:
         n = int(float(n))
     except (TypeError, ValueError):
         n = 0
+
     def f(key, *alts):
         for k in (key, *alts):
             v = r.get(k)
@@ -156,6 +160,7 @@ def _row_metrics(r: dict) -> list:
                 except (TypeError, ValueError):
                     return None
         return None
+
     return [
         n,
         f("kpt_bbox_area_frac", "spread"),
@@ -164,7 +169,9 @@ def _row_metrics(r: dict) -> list:
     ]
 
 
-def load_geometry(sizes: dict[int, tuple[int, int]]) -> tuple[dict[int, tuple[list, list | None]], dict[int, list]]:
+def load_geometry(
+    sizes: dict[int, tuple[int, int]],
+) -> tuple[dict[int, tuple[list, list | None]], dict[int, list]]:
     """id -> skeleton; id -> [n, spread, asym, conf] for rows missing from pose.js."""
     geom: dict[int, tuple[list, list | None]] = {}
     metrics: dict[int, list] = {}

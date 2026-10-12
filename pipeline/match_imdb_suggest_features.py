@@ -21,6 +21,7 @@ Usage:
   python3 match_imdb_suggest_features.py
   python3 match_imdb_suggest_features.py --limit 20 --dry-run
 """
+
 from __future__ import annotations
 
 import argparse
@@ -56,7 +57,9 @@ API_HEADERS = {
 
 PREFERRED_QID = frozenset({"movie", "tvMovie"})
 PREFERRED_Q = frozenset({"feature", "TV movie"})
-DEPRIORITIZED_QID = frozenset({"short", "tvEpisode", "tvSeries", "videoGame", "podcastSeries", "musicVideo"})
+DEPRIORITIZED_QID = frozenset(
+    {"short", "tvEpisode", "tvSeries", "videoGame", "podcastSeries", "musicVideo"}
+)
 
 HIT_FIELDS = [
     "id",
@@ -89,10 +92,7 @@ def suggest_title(session: requests.Session, title: str) -> list[dict]:
     if not key:
         return []
     first = key[0] if key[0].isalnum() else "0"
-    url = (
-        f"https://v2.sg.media-imdb.com/suggestion/"
-        f"{first}/{urllib.parse.quote(key)}.json"
-    )
+    url = f"https://v2.sg.media-imdb.com/suggestion/{first}/{urllib.parse.quote(key)}.json"
     last_err: Exception | None = None
     for attempt in range(5):
         try:
@@ -128,9 +128,7 @@ def title_matches(item_title: str, titles: list[str]) -> bool:
     return any(it == t.casefold().strip() for t in titles if t and t.strip())
 
 
-def safe_match(
-    titles: list[str], year: int, items: list[dict]
-) -> tuple[dict | None, str, int]:
+def safe_match(titles: list[str], year: int, items: list[dict]) -> tuple[dict | None, str, int]:
     """Return (winner, reason_if_none, n_title_year_cands).
 
     Only movie/feature + exact year. Year ±1 is left to Selenium+director.
@@ -194,9 +192,7 @@ def load_input_rows() -> list[dict]:
                         "id": pid,
                         "title": (r.get("title") or "").strip(),
                         "original_title": (
-                            (r.get("original_title") or "").strip()
-                            if has_original
-                            else ""
+                            (r.get("original_title") or "").strip() if has_original else ""
                         ),
                         "year": year,
                     }

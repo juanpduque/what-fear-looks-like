@@ -22,6 +22,7 @@ Usage:
 
 Cost: ~$0.001/image (DetectText API)
 """
+
 from __future__ import annotations
 
 import argparse
@@ -120,14 +121,16 @@ def detect_lines(rek_client, image_bytes: bytes):
         if d.get("Type") != "LINE":
             continue
         bb = d["Geometry"]["BoundingBox"]
-        lines.append({
-            "text": d.get("DetectedText", ""),
-            "conf": float(d.get("Confidence", 0)) / 100.0,
-            "x0": float(bb["Left"]),
-            "y0": float(bb["Top"]),
-            "x1": float(bb["Left"] + bb["Width"]),
-            "y1": float(bb["Top"] + bb["Height"]),
-        })
+        lines.append(
+            {
+                "text": d.get("DetectedText", ""),
+                "conf": float(d.get("Confidence", 0)) / 100.0,
+                "x0": float(bb["Left"]),
+                "y0": float(bb["Top"]),
+                "x1": float(bb["Left"] + bb["Width"]),
+                "y1": float(bb["Top"] + bb["Height"]),
+            }
+        )
     return lines
 
 
@@ -168,10 +171,13 @@ def locate_title(rek_client, image_bytes: bytes, title: str):
             cluster.append(c)
             y_mid = sum((x["y0"] + x["y1"]) * 0.5 for x in cluster) / len(cluster)
 
-    match = max(_fuzzy_title(
-        " ".join(c["text"] for c in sorted(cluster, key=lambda c: (c["y0"], c["x0"]))),
-        title,
-    ), max(c["match"] for c in cluster))
+    match = max(
+        _fuzzy_title(
+            " ".join(c["text"] for c in sorted(cluster, key=lambda c: (c["y0"], c["x0"]))),
+            title,
+        ),
+        max(c["match"] for c in cluster),
+    )
     conf = sum(c["conf"] for c in cluster) / len(cluster)
     x0 = min(c["x0"] for c in cluster)
     y0 = min(c["y0"] for c in cluster)
@@ -242,17 +248,13 @@ def load_meta(target_ids: set[int]) -> dict[int, dict]:
         comm_path = DATA / "community" / "tmdb_horror_ids.csv"
         if comm_path.exists():
             community = pd.read_csv(comm_path, usecols=["id", "title", "year"])
-            meta.update(
-                community[community["id"].isin(remaining)].set_index("id").to_dict("index")
-            )
+            meta.update(community[community["id"].isin(remaining)].set_index("id").to_dict("index"))
     remaining = target_ids - set(meta.keys())
     if remaining:
         scifi_path = DATA / "community_scifi" / "tmdb_scifi_ids.csv"
         if scifi_path.exists():
             scifi = pd.read_csv(scifi_path, usecols=["id", "title", "year"])
-            meta.update(
-                scifi[scifi["id"].isin(remaining)].set_index("id").to_dict("index")
-            )
+            meta.update(scifi[scifi["id"].isin(remaining)].set_index("id").to_dict("index"))
     return meta
 
 
@@ -269,13 +271,19 @@ def save_checkpoint(checkpoint: dict):
 def main():
     ap = argparse.ArgumentParser(description="Backfill title boxes from S3")
     ap.add_argument("--ids", default="", help="Comma-separated IDs to process")
-    ap.add_argument("--corpus", choices=["essay", "community", "scifi"], default="essay",
-                     help="Target id source when --ids is not given")
+    ap.add_argument(
+        "--corpus",
+        choices=["essay", "community", "scifi"],
+        default="essay",
+        help="Target id source when --ids is not given",
+    )
     ap.add_argument("--sample", type=int, default=0, help="Process random sample of N")
     ap.add_argument("--workers", type=int, default=1, help="Parallel S3+Rekognition workers")
     ap.add_argument("--save-every", type=int, default=50, help="Save checkpoint every N")
     ap.add_argument("--resume", action="store_true", help="Resume from checkpoint")
-    ap.add_argument("--merge", action="store_true", help="Merge results into title_boxes_rekognition.csv")
+    ap.add_argument(
+        "--merge", action="store_true", help="Merge results into title_boxes_rekognition.csv"
+    )
     ap.add_argument("--dry-run", action="store_true", help="Show what would be processed")
     ap.add_argument("--out", default="", help="override OUT csv (keeps corpora separate)")
     ap.add_argument("--checkpoint", default="", help="override checkpoint json path")
@@ -302,6 +310,7 @@ def main():
 
     if args.sample and len(target_ids) > args.sample:
         import random
+
         target_ids = set(random.sample(list(target_ids), args.sample))
         print(f"   Sampling {len(target_ids)} IDs")
 
@@ -309,7 +318,7 @@ def main():
     checkpoint = load_checkpoint() if args.resume else {"processed": [], "errors": []}
     already_done = set(checkpoint["processed"])
     target_ids = target_ids - already_done
-    
+
     if already_done:
         print(f"   Resuming: {len(already_done)} already processed, {len(target_ids)} remaining")
 
@@ -394,8 +403,15 @@ def main():
 
                 box = payload
                 if box is None:
-                    row = dict(id=pid, text_x=-1.0, text_top=-1.0, text_w=-1.0, text_h=-1.0,
-                               ocr="", score=0.0)
+                    row = dict(
+                        id=pid,
+                        text_x=-1.0,
+                        text_top=-1.0,
+                        text_w=-1.0,
+                        text_h=-1.0,
+                        ocr="",
+                        score=0.0,
+                    )
                 else:
                     row = dict(id=pid, **box)
                     n_found += 1
@@ -412,7 +428,7 @@ def main():
                     found_pct = 100 * n_found / n_new if n_new > 0 else 0
                     print(
                         f"✅ {n_new:,}/{len(target_ids):,} | {pid} {title[:20]!r} | "
-                        f"found={found_pct:.0f}% | {rate:.1f}/s ETA:{eta/60:.0f}m",
+                        f"found={found_pct:.0f}% | {rate:.1f}/s ETA:{eta / 60:.0f}m",
                         flush=True,
                     )
 
@@ -430,11 +446,11 @@ def main():
     print("\n" + "=" * 70)
     print(f"✅ COMPLETADO")
     print(f"   Procesados:     {n_new:,}")
-    print(f"   Con título:     {n_found:,} ({100*n_found/max(n_new,1):.1f}%)")
+    print(f"   Con título:     {n_found:,} ({100 * n_found / max(n_new, 1):.1f}%)")
     print(f"   Sin título:     {n_new - n_found:,}")
     print(f"   Errores:        {n_errors:,}")
     print(f"   Omitidos:       {n_skip:,}")
-    print(f"   Tiempo:         {elapsed:.1f}s ({n_new/max(elapsed,1):.1f}/s)")
+    print(f"   Tiempo:         {elapsed:.1f}s ({n_new / max(elapsed, 1):.1f}/s)")
     print(f"   Resultado:      {OUT}")
     print("=" * 70)
 

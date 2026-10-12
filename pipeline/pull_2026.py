@@ -6,6 +6,7 @@ from the analyzable set, merge into horror_movies.csv, download posters.
 
   source ~/.zshrc && python3 pull_2026.py
 """
+
 from __future__ import annotations
 
 import argparse

@@ -6,6 +6,7 @@ Default: all checked = exclude from corpus. Uncheck the ones you want to KEEP.
   python3 build_comedy_review.py
   open ../site/comedy-review.html
 """
+
 from __future__ import annotations
 
 import html
@@ -23,9 +24,15 @@ def main():
     posts = pd.read_csv(DATA / "posters.csv", usecols=["id", "title", "year"])
     hm = pd.read_csv(
         DATA / "horror_movies.csv",
-        usecols=lambda c: c in {
-            "id", "title", "release_date", "poster_path", "vote_count",
-            "popularity", "genre_names",
+        usecols=lambda c: c
+        in {
+            "id",
+            "title",
+            "release_date",
+            "poster_path",
+            "vote_count",
+            "popularity",
+            "genre_names",
         },
     )
     hm["id"] = hm["id"].astype(int)
@@ -53,7 +60,11 @@ def main():
             prev_dec = dec
         title = html.escape(str(r.title))
         genres = html.escape(str(r.genre_names or ""))
-        path = r.poster_path if isinstance(r.poster_path, str) and r.poster_path.startswith("/") else ""
+        path = (
+            r.poster_path
+            if isinstance(r.poster_path, str) and r.poster_path.startswith("/")
+            else ""
+        )
         local = POSTERS / f"{int(r.id)}.jpg"
         if path:
             img = f"https://image.tmdb.org/t/p/w342{path}"
@@ -63,7 +74,8 @@ def main():
             img = ""
         img_tag = (
             f'<img loading="lazy" src="{img}" alt="{title}">'
-            if img else '<div class="noimg">sin póster</div>'
+            if img
+            else '<div class="noimg">sin póster</div>'
         )
         votes = int(r.vote_count)
         cards.append(f"""<div class="card checked" data-id="{int(r.id)}" data-votes="{votes}" data-year="{int(r.year)}">

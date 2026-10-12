@@ -8,6 +8,7 @@ Preferred (fast, accurate):
 Fallback without key (slow, rate-limited HTML scrape):
   python3 validate_poster_paths.py --html --sample 500 --delay 2.0
 """
+
 from __future__ import annotations
 
 import argparse
@@ -178,6 +179,7 @@ def main():
     t0 = time.time()
 
     if use_api:
+
         def one(pid):
             cur, status = fetch_api(session, args.api_key, pid)
             # light throttle on 429
@@ -233,15 +235,14 @@ def main():
     print("=== FINAL ===")
     print(f"checked={len(rows)} match={m} mismatch={mm} errors={er}")
     if m + mm:
-        print(f"mismatch among ok: {mm}/{m+mm} = {100*mm/(m+mm):.2f}%")
-        print(f"extrapolated on {len(paths):,} with path: ~{int(round(len(paths)*mm/(m+mm))):,}")
+        print(f"mismatch among ok: {mm}/{m + mm} = {100 * mm / (m + mm):.2f}%")
+        print(
+            f"extrapolated on {len(paths):,} with path: ~{int(round(len(paths) * mm / (m + mm))):,}"
+        )
     print(f"also missing frozen path in horror_movies: {missing_path}")
     print(f"wrote {OUT}")
     for r in examples:
-        print(
-            f"  {r['id']} {r['title']} ({r['year']}) "
-            f"{r['stored_path']} -> {r['current_path']}"
-        )
+        print(f"  {r['id']} {r['title']} ({r['year']}) {r['stored_path']} -> {r['current_path']}")
 
 
 if __name__ == "__main__":

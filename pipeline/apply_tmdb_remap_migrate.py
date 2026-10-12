@@ -12,6 +12,7 @@ Does not re-analyze (JPG may change — run reanalyze_poster_ids.py after).
   python3 apply_tmdb_remap_migrate.py --dry-run
   python3 apply_tmdb_remap_migrate.py
 """
+
 from __future__ import annotations
 
 import argparse
@@ -67,7 +68,9 @@ def load_accepts() -> list[dict]:
                 "old_id": int(r["old_id"]),
                 "new_id": int(r["new_id"]),
                 "title": r.get("title") or "",
-                "new_poster_path": (r.get("live_new_poster") or r.get("new_poster_path") or "").strip(),
+                "new_poster_path": (
+                    r.get("live_new_poster") or r.get("new_poster_path") or ""
+                ).strip(),
                 "gate": r.get("gate") or "",
             }
         )
@@ -152,7 +155,9 @@ def update_horror_movies(mapping: dict[int, int], poster_paths: dict[int, str], 
     existing_new = set(d["id"]) & set(mapping.values())
     rows_old = d[d["id"].isin(mapping)].copy()
     if dry:
-        print(f"  horror_movies: would migrate {len(rows_old)} (skip {len(existing_new)} new already present)")
+        print(
+            f"  horror_movies: would migrate {len(rows_old)} (skip {len(existing_new)} new already present)"
+        )
         return
     # drop rows that already have new_id
     d = d[~d["id"].isin(mapping.keys())]
@@ -216,7 +221,9 @@ def update_backfill(mapping: dict[int, int], poster_paths: dict[int, str], dry: 
             w = csv.DictWriter(f, fieldnames=["id", "poster_path", "title", "year"])
             w.writeheader()
             for pid in sorted(rows):
-                w.writerow({k: rows[pid].get(k, "") for k in ["id", "poster_path", "title", "year"]})
+                w.writerow(
+                    {k: rows[pid].get(k, "") for k in ["id", "poster_path", "title", "year"]}
+                )
     print(f"  poster_paths_backfill: upserted {len(mapping)}")
 
 
@@ -348,9 +355,11 @@ def main() -> None:
                 w = csv.DictWriter(f, fieldnames=fields)
                 w.writeheader()
                 w.writerows(keep)
-            print(f"pruned remap backlog −{len(rows)-len(keep)}")
+            print(f"pruned remap backlog −{len(rows) - len(keep)}")
         print(f"wrote {log}")
-        print("next: python3 reanalyze_poster_ids.py --ids-file data/qa/tmdb_remap_high_migrated.csv")
+        print(
+            "next: python3 reanalyze_poster_ids.py --ids-file data/qa/tmdb_remap_high_migrated.csv"
+        )
         print("      (usa columna new_id — o regenera ids-file)")
     else:
         print("dry-run done")

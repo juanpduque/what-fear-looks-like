@@ -14,6 +14,7 @@ Labels (toggle, multi): other_lang | exclude_adult | exclude_quality
   python3 build_corpus_filter_qa.py
   open ../site/corpus-filter-qa.html
 """
+
 from __future__ import annotations
 
 import csv
@@ -100,8 +101,7 @@ def load_meta() -> dict[int, dict]:
             except (TypeError, ValueError):
                 votes = 0.0
             meta[pid] = {
-                "title": (r.get("title") or r.get("original_title") or "").strip()
-                or f"id {pid}",
+                "title": (r.get("title") or r.get("original_title") or "").strip() or f"id {pid}",
                 "year": year,
                 "vote_count": votes,
                 "imdb_id": (r.get("imdb_id") or "").strip(),
@@ -191,19 +191,13 @@ def build_ids() -> list[dict]:
                     pid = int(r["id"])
                 except (KeyError, TypeError, ValueError):
                     continue
-                parts = {
-                    x.strip()
-                    for x in (r.get("genre_names") or "").split(",")
-                    if x.strip()
-                }
+                parts = {x.strip() for x in (r.get("genre_names") or "").split(",") if x.strip()}
                 if parts & {"Comedy", "Music", "Animation"}:
                     genre_skip.add(pid)
     pairs = [(pid, iid) for pid, iid in pairs if pid not in genre_skip]
     # Live vote gate (in case exclusion CSV is stale)
     pairs = [
-        (pid, iid)
-        for pid, iid in pairs
-        if float(meta.get(pid, {}).get("vote_count") or 0) <= 100
+        (pid, iid) for pid, iid in pairs if float(meta.get(pid, {}).get("vote_count") or 0) <= 100
     ]
     paths = load_paths()
     rows = []
@@ -246,9 +240,7 @@ def build_ids() -> list[dict]:
                     "imdb_id": r["imdb_id"],
                 }
             )
-    print(
-        f"poster gate: with_img={len(with_img):,} no_img={len(no_img):,} → {no_out.name}"
-    )
+    print(f"poster gate: with_img={len(with_img):,} no_img={len(no_img):,} → {no_out.name}")
     return with_img
 
 
@@ -256,9 +248,7 @@ def main() -> None:
     rows = build_ids()
     SET_OUT.parent.mkdir(parents=True, exist_ok=True)
     with SET_OUT.open("w", newline="", encoding="utf-8") as f:
-        w = csv.DictWriter(
-            f, fieldnames=["id", "title", "year", "vote_count", "imdb_id"]
-        )
+        w = csv.DictWriter(f, fieldnames=["id", "title", "year", "vote_count", "imdb_id"])
         w.writeheader()
         for r in rows:
             w.writerow(
@@ -271,17 +261,12 @@ def main() -> None:
                 }
             )
 
-    payload = json.dumps(rows, ensure_ascii=False, separators=(",", ":")).replace(
-        "<", "\\u003c"
-    )
+    payload = json.dumps(rows, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
     html = HTML.replace("__N__", f"{len(rows):,}").replace("__DATA__", payload)
     OUT.parent.mkdir(parents=True, exist_ok=True)
     OUT.write_text(html, encoding="utf-8")
     with_img = sum(1 for r in rows if r["img"])
-    print(
-        f"Wrote {OUT} ({len(rows):,} cases, with_img={with_img:,}, "
-        f"ids→{SET_OUT})"
-    )
+    print(f"Wrote {OUT} ({len(rows):,} cases, with_img={with_img:,}, ids→{SET_OUT})")
 
 
 HTML = r"""<!doctype html>

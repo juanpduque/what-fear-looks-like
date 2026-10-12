@@ -16,6 +16,7 @@ Usage:
   python3 pipeline/jobs_dashboard_poller.py --once     # single tick
   bash pipeline/aws/start_jobs_dashboard.sh            # nohup + HTTP UI
 """
+
 from __future__ import annotations
 
 import argparse
@@ -347,8 +348,7 @@ def poll_owl() -> dict[str, Any]:
     elif launch:
         job["state"] = "launched"
         job["detail"] = (
-            f"iid={launch.get('instance_id')} type={launch.get('instance_type')} "
-            f"awaiting PROGRESS"
+            f"iid={launch.get('instance_id')} type={launch.get('instance_type')} awaiting PROGRESS"
         )
 
     if done:
@@ -681,7 +681,14 @@ def poll_ec2() -> list[dict[str, Any]]:
         env = os.environ.copy()
         env["AWS_PROFILE"] = profile
         env["AWS_DEFAULT_REGION"] = REGION
-        for k in ("HTTP_PROXY", "HTTPS_PROXY", "http_proxy", "https_proxy", "ALL_PROXY", "all_proxy"):
+        for k in (
+            "HTTP_PROXY",
+            "HTTPS_PROXY",
+            "http_proxy",
+            "https_proxy",
+            "ALL_PROXY",
+            "all_proxy",
+        ):
             env.pop(k, None)
         try:
             p = subprocess.run(
@@ -843,10 +850,30 @@ def sync_remote(*, skip_sync: bool) -> dict[str, Any]:
         return result
 
     targets = [
-        ("sandbox", f"s3://{SANDBOX_BUCKET}/{DASH_PREFIX}/status.json", STATUS_PATH, "application/json"),
-        ("sandbox", f"s3://{SANDBOX_BUCKET}/{DASH_PREFIX}/events.log", EVENTS_PATH, "text/plain; charset=utf-8"),
-        ("default", f"s3://{PUBLIC_BUCKET}/{DASH_PREFIX}/status.json", STATUS_PATH, "application/json"),
-        ("default", f"s3://{PUBLIC_BUCKET}/{DASH_PREFIX}/events.log", EVENTS_PATH, "text/plain; charset=utf-8"),
+        (
+            "sandbox",
+            f"s3://{SANDBOX_BUCKET}/{DASH_PREFIX}/status.json",
+            STATUS_PATH,
+            "application/json",
+        ),
+        (
+            "sandbox",
+            f"s3://{SANDBOX_BUCKET}/{DASH_PREFIX}/events.log",
+            EVENTS_PATH,
+            "text/plain; charset=utf-8",
+        ),
+        (
+            "default",
+            f"s3://{PUBLIC_BUCKET}/{DASH_PREFIX}/status.json",
+            STATUS_PATH,
+            "application/json",
+        ),
+        (
+            "default",
+            f"s3://{PUBLIC_BUCKET}/{DASH_PREFIX}/events.log",
+            EVENTS_PATH,
+            "text/plain; charset=utf-8",
+        ),
     ]
     ok_any = False
     for profile, uri, path, ctype in targets:
@@ -872,7 +899,9 @@ def main() -> int:
     ap.add_argument("--once", action="store_true", help="Single poll then exit")
     ap.add_argument("--interval", type=int, default=45, help="Seconds between polls (default 45)")
     ap.add_argument("--no-sync", action="store_true", help="Skip S3 upload of status/events")
-    ap.add_argument("--no-site-mirror", action="store_true", help="Skip copying into site/jobs-dashboard/")
+    ap.add_argument(
+        "--no-site-mirror", action="store_true", help="Skip copying into site/jobs-dashboard/"
+    )
     args = ap.parse_args()
 
     OUT.mkdir(parents=True, exist_ok=True)

@@ -13,6 +13,7 @@ Uses a candidates CSV (default: gap_en_poster_candidates.csv).
   source ~/.zshrc && python3 pull_en_poster_gap.py \\
       --candidates data/gap_en_remaining_with_poster.csv --tag en_remaining
 """
+
 from __future__ import annotations
 
 import argparse
@@ -40,13 +41,20 @@ def _year_from_row(r: dict) -> str:
 def main():
     ap = argparse.ArgumentParser()
     ap.add_argument("--api-key", default=os.environ.get("TMDB_API_KEY"))
-    ap.add_argument("--candidates", default="data/gap_en_poster_candidates.csv",
-                    help="CSV with at least id + poster_path (+ title/year optional)")
-    ap.add_argument("--tag", default="en_poster_gap",
-                    help="suffix for sidecar/progress/ids outputs")
+    ap.add_argument(
+        "--candidates",
+        default="data/gap_en_poster_candidates.csv",
+        help="CSV with at least id + poster_path (+ title/year optional)",
+    )
+    ap.add_argument(
+        "--tag", default="en_poster_gap", help="suffix for sidecar/progress/ids outputs"
+    )
     ap.add_argument("--skip-posters", action="store_true")
-    ap.add_argument("--skip-details", action="store_true",
-                    help="Use candidate rows as-is (faster); still filters Anim/Music on detail if fetched")
+    ap.add_argument(
+        "--skip-details",
+        action="store_true",
+        help="Use candidate rows as-is (faster); still filters Anim/Music on detail if fetched",
+    )
     ap.add_argument("--workers", type=int, default=24)
     ap.add_argument("--limit", type=int, default=0, help="optional cap for testing")
     args = ap.parse_args()
@@ -198,12 +206,14 @@ def main():
         pid = int(r["id"])
         if pid in existing_bf:
             continue
-        add_bf.append({
-            "id": pid,
-            "poster_path": r.get("poster_path") or "",
-            "title": r.get("title") or "",
-            "year": (r.get("release_date") or "")[:4],
-        })
+        add_bf.append(
+            {
+                "id": pid,
+                "poster_path": r.get("poster_path") or "",
+                "title": r.get("title") or "",
+                "year": (r.get("release_date") or "")[:4],
+            }
+        )
     if add_bf:
         fields = ["id", "poster_path", "title", "year"]
         # normalize old rows

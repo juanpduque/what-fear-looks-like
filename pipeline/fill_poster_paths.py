@@ -11,6 +11,7 @@ poster_path / runtime / etc. This pulls /movie/{id} for each and writes:
   TMDB_API_KEY=... python3 fill_poster_paths.py
   python3 fill_poster_paths.py --api-key YOUR_KEY
 """
+
 from __future__ import annotations
 
 import argparse
@@ -28,17 +29,32 @@ HM = DATA / "horror_movies.csv"
 POSTERS = DATA / "posters.csv"
 
 FIELDS = [
-    "id", "original_title", "title", "original_language", "overview", "tagline",
-    "release_date", "poster_path", "popularity", "vote_count", "vote_average",
-    "budget", "revenue", "runtime", "status", "adult", "backdrop_path",
-    "genre_names", "collection", "collection_name",
+    "id",
+    "original_title",
+    "title",
+    "original_language",
+    "overview",
+    "tagline",
+    "release_date",
+    "poster_path",
+    "popularity",
+    "vote_count",
+    "vote_average",
+    "budget",
+    "revenue",
+    "runtime",
+    "status",
+    "adult",
+    "backdrop_path",
+    "genre_names",
+    "collection",
+    "collection_name",
 ]
 
 
 def missing_ids() -> list[tuple[int, str, int]]:
     posts = {
-        int(r["id"]): (r["title"], int(float(r["year"])))
-        for r in csv.DictReader(POSTERS.open())
+        int(r["id"]): (r["title"], int(float(r["year"]))) for r in csv.DictReader(POSTERS.open())
     }
     have = set()
     if HM.exists():
@@ -49,11 +65,7 @@ def missing_ids() -> list[tuple[int, str, int]]:
             # treat as done only if we already have a path
             if str(r.get("poster_path") or "").startswith("/"):
                 have.add(int(r["id"]))
-    return sorted(
-        (pid, title, year)
-        for pid, (title, year) in posts.items()
-        if pid not in have
-    )
+    return sorted((pid, title, year) for pid, (title, year) in posts.items() if pid not in have)
 
 
 def fetch_movie(session: requests.Session, api_key: str, pid: int) -> dict | None:
@@ -141,6 +153,7 @@ def main():
     if not todo:
         print("nothing to do — rebuilding explorer anyway")
         from build_explorer import main as build_explorer
+
         build_explorer()
         return
 
@@ -172,10 +185,7 @@ def main():
         done[pid] = row
         fetched += 1
         if fetched % 50 == 0 or i == len(todo):
-            ok = sum(
-                1 for r in done.values()
-                if str(r.get("poster_path") or "").startswith("/")
-            )
+            ok = sum(1 for r in done.values() if str(r.get("poster_path") or "").startswith("/"))
             rate = fetched / max(time.time() - t0, 1e-6)
             print(
                 f"{i}/{len(todo)} fetched={fetched} with_path={ok} {rate:.1f}/s",
@@ -185,20 +195,19 @@ def main():
         time.sleep(args.delay)
 
     write_sidecar(done)
-    ok_rows = [
-        r for r in done.values()
-        if str(r.get("poster_path") or "").startswith("/")
-    ]
+    ok_rows = [r for r in done.values() if str(r.get("poster_path") or "").startswith("/")]
     print(f"wrote {OUT} ({len(ok_rows)}/{len(done)} with poster_path)")
     merge_into_horror_movies(list(done.values()))
 
     from build_explorer import main as build_explorer
+
     build_explorer()
 
     # report residual nulls in explorer sense
     posts = {int(r["id"]) for r in csv.DictReader(POSTERS.open())}
     have = {
-        int(r["id"]) for r in csv.DictReader(HM.open())
+        int(r["id"])
+        for r in csv.DictReader(HM.open())
         if str(r.get("poster_path") or "").startswith("/")
     }
     print(f"corpus still missing poster_path: {len(posts - have)}")

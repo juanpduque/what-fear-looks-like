@@ -6,6 +6,7 @@ Keyed by (id, file_path). Maps go to maps/{id}_{stem}.png — never maps/{id}.pn
 
   python3 msinet_alts.py --jobs-file jobs.csv --out saliency.csv --maps-dir maps
 """
+
 from __future__ import annotations
 
 import argparse
@@ -185,7 +186,9 @@ def main() -> int:
             n_ok += 1
         except Exception as e:
             n_err += 1
-            writer.writerow(empty_row(pid, fp, status="error", error=f"{type(e).__name__}: {e}"[:240]))
+            writer.writerow(
+                empty_row(pid, fp, status="error", error=f"{type(e).__name__}: {e}"[:240])
+            )
             if n_err <= 8:
                 print(f"  FAIL {pid} {fp}: {e}", flush=True)
         finally:
@@ -201,7 +204,7 @@ def main() -> int:
             eta_s = (len(todo) - n_done) / rate if rate > 0 else 0
             print(
                 f"  {n_done:,}/{len(todo):,} ok={n_ok} 404={n_404} err={n_err} "
-                f"{rate:.2f}/s eta_h={eta_s/3600:.2f}",
+                f"{rate:.2f}/s eta_h={eta_s / 3600:.2f}",
                 flush=True,
             )
     f_out.close()

@@ -17,6 +17,7 @@ Usage:
   python3 remap_tmdb_not_found.py --limit 40 --workers 8
   python3 remap_tmdb_not_found.py --ids-file data/qa/poster_path_drift_errors.csv
 """
+
 from __future__ import annotations
 
 import argparse
@@ -171,9 +172,7 @@ def title_keys(row: dict) -> set[str]:
     return keys
 
 
-def exact_candidates(
-    results: list[dict], kind: str, keys: set[str], old_id: int
-) -> list[dict]:
+def exact_candidates(results: list[dict], kind: str, keys: set[str], old_id: int) -> list[dict]:
     out = []
     seen: set[int] = set()
     for c in results:
@@ -184,9 +183,15 @@ def exact_candidates(
         if cid == old_id or cid in seen:
             continue
         if kind == "movie":
-            names = {normalize_title(c.get("title") or ""), normalize_title(c.get("original_title") or "")}
+            names = {
+                normalize_title(c.get("title") or ""),
+                normalize_title(c.get("original_title") or ""),
+            }
         else:
-            names = {normalize_title(c.get("name") or ""), normalize_title(c.get("original_name") or "")}
+            names = {
+                normalize_title(c.get("name") or ""),
+                normalize_title(c.get("original_name") or ""),
+            }
         names.discard("")
         if not (names & keys):
             continue
@@ -273,8 +278,10 @@ def score_row(
         )
         return base
 
-    if len(pool_m) > 1 or (len(pool_m) >= 1 and len(pool_t) >= 1) or (
-        len(pool_m) == 0 and len(pool_t) > 1
+    if (
+        len(pool_m) > 1
+        or (len(pool_m) >= 1 and len(pool_t) >= 1)
+        or (len(pool_m) == 0 and len(pool_t) > 1)
     ):
         base["status"] = "ambig"
         bits = []
@@ -376,7 +383,9 @@ def gather_results(
 
 
 def main() -> None:
-    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     ap.add_argument("--api-key", default=os.environ.get("TMDB_API_KEY"))
     ap.add_argument("--ids-file", type=Path, default=DEFAULT_IN)
     ap.add_argument("--out", type=Path, default=OUT)
@@ -466,9 +475,7 @@ def main() -> None:
         if results[r["old_id"]]["new_kind"] == "tv"
         and results[r["old_id"]]["status"] in ("high", "medium", "low")
     )
-    n_collision = sum(
-        1 for r in targets if results[r["old_id"]].get("in_corpus_already") == "1"
-    )
+    n_collision = sum(1 for r in targets if results[r["old_id"]].get("in_corpus_already") == "1")
     print(f"  tv remaps (any conf): {n_tv:,}")
     print(f"  new_id already in corpus: {n_collision:,}")
     print(f"wrote {args.out}")

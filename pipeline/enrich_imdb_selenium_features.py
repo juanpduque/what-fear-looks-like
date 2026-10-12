@@ -14,6 +14,7 @@ Usage:
   python3 enrich_imdb_selenium_features.py --limit 10
   python3 enrich_imdb_selenium_features.py --force   # redo prior misses
 """
+
 from __future__ import annotations
 
 import argparse
@@ -119,12 +120,7 @@ def build_driver(*, headless: bool = False):
     try:
         driver.execute_cdp_cmd(
             "Page.addScriptToEvaluateOnNewDocument",
-            {
-                "source": (
-                    "Object.defineProperty(navigator, 'webdriver', "
-                    "{get: () => undefined});"
-                )
-            },
+            {"source": ("Object.defineProperty(navigator, 'webdriver', {get: () => undefined});")},
         )
     except Exception:
         pass
@@ -137,10 +133,7 @@ def suggest_by_title(session: requests.Session, title: str) -> list[dict]:
     if not key:
         return []
     first = key[0] if key[0].isalnum() else "0"
-    url = (
-        f"https://v2.sg.media-imdb.com/suggestion/"
-        f"{first}/{urllib.parse.quote(key)}.json"
-    )
+    url = f"https://v2.sg.media-imdb.com/suggestion/{first}/{urllib.parse.quote(key)}.json"
     r = session.get(url, headers=API_HEADERS, timeout=30)
     if r.status_code != 200:
         return []
@@ -183,19 +176,11 @@ def pick_candidates(
     pool = exact_title or list(suggestions)
 
     # Prefer movies; drop clearly wrong types when alternatives exist
-    movies = [
-        c
-        for c in pool
-        if c.get("qid") in PREFERRED_QID or c.get("q") in PREFERRED_Q
-    ]
+    movies = [c for c in pool if c.get("qid") in PREFERRED_QID or c.get("q") in PREFERRED_Q]
     if movies:
         pool = movies
     else:
-        pool = [
-            c
-            for c in pool
-            if c.get("qid") not in DEPRIORITIZED_QID
-        ] or pool
+        pool = [c for c in pool if c.get("qid") not in DEPRIORITIZED_QID] or pool
 
     def rank(c: dict) -> tuple:
         y = c.get("year")
@@ -435,11 +420,7 @@ def main() -> None:
                 continue
 
             tmdb = fetch_tmdb(session, args.api_key, pid)
-            title = (
-                row.get("title")
-                or tmdb.get("title")
-                or ""
-            ).strip()
+            title = (row.get("title") or tmdb.get("title") or "").strip()
             ot = (row.get("original_title") or "").strip()
             year = row.get("year") or tmdb.get("year")
             dirs = tmdb.get("directors") or []
@@ -475,17 +456,11 @@ def main() -> None:
                     suggestions.append(c)
                 time.sleep(0.12)
 
-            cands = pick_candidates(
-                title, int(year), suggestions, max_n=args.max_candidates
-            )
+            cands = pick_candidates(title, int(year), suggestions, max_n=args.max_candidates)
             if not cands and ot and ot.casefold() != title.casefold():
-                cands = pick_candidates(
-                    ot, int(year), suggestions, max_n=args.max_candidates
-                )
+                cands = pick_candidates(ot, int(year), suggestions, max_n=args.max_candidates)
             if not cands:
-                misses.append(
-                    {**base, "reason": "no_suggest_candidates", "candidates": ""}
-                )
+                misses.append({**base, "reason": "no_suggest_candidates", "candidates": ""})
                 print(f"  {i}/{n} MISS {pid} {title!r} no_suggest", flush=True)
                 time.sleep(args.delay)
                 continue
@@ -511,9 +486,7 @@ def main() -> None:
                     last_reason = f"blocked title={status!r}"
                     time.sleep(2.5)
                     info = extract_page_meta(driver) or {}
-                    if info.get("blocked") or "Just a moment" in (
-                        info.get("statusTitle") or ""
-                    ):
+                    if info.get("blocked") or "Just a moment" in (info.get("statusTitle") or ""):
                         continue
 
                 page_year = info.get("year")
@@ -533,9 +506,7 @@ def main() -> None:
                         "match": "year_director",
                     }
                     break
-                last_reason = (
-                    f"director_mismatch page={';'.join(page_dirs)[:60]}"
-                )
+                last_reason = f"director_mismatch page={';'.join(page_dirs)[:60]}"
                 time.sleep(0.4)
 
             if accepted:

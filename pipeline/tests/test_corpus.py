@@ -1,4 +1,5 @@
 """Unit tests for corpus.py — the single source of truth for the published n."""
+
 from __future__ import annotations
 
 from pathlib import Path
@@ -25,11 +26,7 @@ def test_canonical_ids_cached():
 
 
 def test_canonical_ids_no_duplicates_in_file():
-    raw = [
-        x
-        for x in Path(corpus.CANONICAL_IDS).read_text().split()
-        if x.strip().isdigit()
-    ]
+    raw = [x for x in Path(corpus.CANONICAL_IDS).read_text().split() if x.strip().isdigit()]
     assert len(raw) == len(set(raw)), "canonical_ids.txt has duplicate ids"
 
 

@@ -7,6 +7,7 @@ measured cover.
   python3 rekognition_text_boxes_alts.py --jobs-file data/qa/alts_comp_catalog/jobs.csv \\
       --out /tmp/rekognition_text_boxes_alts.csv
 """
+
 from __future__ import annotations
 
 import argparse
@@ -152,7 +153,10 @@ def detect_text(client, data: bytes, min_interval: float) -> list:
         except ClientError as e:
             last = e
             code = e.response.get("Error", {}).get("Code", "")
-            if code in ("ThrottlingException", "ProvisionedThroughputExceededException") and attempt < 5:
+            if (
+                code in ("ThrottlingException", "ProvisionedThroughputExceededException")
+                and attempt < 5
+            ):
                 time.sleep(min(20, 1.5 * (2**attempt)))
                 continue
             raise

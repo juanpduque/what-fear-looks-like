@@ -8,6 +8,7 @@ keyed by (id, file_path). Does not touch data/attributes.csv.
   python3 multi_analyze_alts.py --jobs-file data/qa/alts_comp_catalog/jobs.csv
   python3 multi_analyze_alts.py --jobs-file jobs.csv --out /data/out/attributes_multi_variants.csv
 """
+
 from __future__ import annotations
 
 import argparse

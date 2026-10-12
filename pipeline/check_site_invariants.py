@@ -1,8 +1,9 @@
 #!/usr/bin/env python3
 """Check that every published site data file matches the canonical corpus.
 
-  python3 check_site_invariants.py   # exit 1 on any violation
+python3 check_site_invariants.py   # exit 1 on any violation
 """
+
 from __future__ import annotations
 
 import csv
@@ -113,6 +114,7 @@ def main() -> int:
             errors.append(f"essay.js cita {len(out)} películas fuera del corpus: {out}")
 
     from sync_front_n import check_front_n
+
     errors += [f"copy: {i}" for i in check_front_n(n)]
 
     stray = sorted(p.name for p in SITE_DATA.iterdir() if ".bak" in p.name)

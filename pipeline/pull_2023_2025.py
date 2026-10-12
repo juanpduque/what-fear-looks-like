@@ -9,6 +9,7 @@ posters for the analyzable newcomers.
   TMDB_API_KEY=... python3 pull_2023_2025.py
   python3 pull_2023_2025.py --api-key YOUR_KEY --skip-posters
 """
+
 from __future__ import annotations
 
 import argparse
@@ -34,10 +35,27 @@ ANIMATION, MUSIC, HORROR = 16, 10402, 27
 HEADERS = {"User-Agent": "PulpAnalytics-AnatomyOfFear/1.0-pull2023"}
 
 HM_FIELDS = [
-    "id", "imdb_id", "original_title", "title", "original_language", "overview",
-    "tagline", "release_date", "poster_path", "popularity", "vote_count",
-    "vote_average", "budget", "revenue", "runtime", "status", "adult",
-    "backdrop_path", "genre_names", "collection", "collection_name",
+    "id",
+    "imdb_id",
+    "original_title",
+    "title",
+    "original_language",
+    "overview",
+    "tagline",
+    "release_date",
+    "poster_path",
+    "popularity",
+    "vote_count",
+    "vote_average",
+    "budget",
+    "revenue",
+    "runtime",
+    "status",
+    "adult",
+    "backdrop_path",
+    "genre_names",
+    "collection",
+    "collection_name",
 ]
 
 
@@ -149,12 +167,14 @@ def append_exclusions(rows: list[dict], kind: str):
         if pid in existing:
             continue
         y = (r.get("release_date") or "")[:4]
-        add.append({
-            "id": pid,
-            "title": r.get("title") or "",
-            "year": y,
-            "genre_names": r.get("genre_names") or "",
-        })
+        add.append(
+            {
+                "id": pid,
+                "title": r.get("title") or "",
+                "year": y,
+                "genre_names": r.get("genre_names") or "",
+            }
+        )
     if not add:
         print(f"excluded_{kind}.csv: no new rows")
         return
@@ -196,11 +216,23 @@ def merge_horror_movies(new_rows: list[dict]):
                 continue
             src = by_id[pid]
             changed = False
-            for col in ("poster_path", "release_date", "title", "genre_names",
-                        "popularity", "vote_count", "vote_average", "imdb_id",
-                        "runtime", "status"):
+            for col in (
+                "poster_path",
+                "release_date",
+                "title",
+                "genre_names",
+                "popularity",
+                "vote_count",
+                "vote_average",
+                "imdb_id",
+                "runtime",
+                "status",
+            ):
                 new_v = src.get(col, "")
-                if col == "imdb_id" and (not new_v or (isinstance(row.get(col), str) and str(row.get(col)).startswith("tt"))):
+                if col == "imdb_id" and (
+                    not new_v
+                    or (isinstance(row.get(col), str) and str(row.get(col)).startswith("tt"))
+                ):
                     # keep existing tt if new empty
                     if not new_v:
                         continue

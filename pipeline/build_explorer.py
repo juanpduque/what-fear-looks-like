@@ -6,6 +6,7 @@ Schema per row (matches site/index.html):
 
   python3 build_explorer.py
 """
+
 from __future__ import annotations
 
 import ast
@@ -71,11 +72,10 @@ def main():
     no_poster: set[int] = set()
     np_ids = DATA / "qa" / "no_poster" / "no_poster_ids.txt"
     if np_ids.is_file():
-        no_poster = {
-            int(x) for x in np_ids.read_text().split() if x.strip().isdigit()
-        }
+        no_poster = {int(x) for x in np_ids.read_text().split() if x.strip().isdigit()}
 
     from corpus import canonical_ids
+
     keep = canonical_ids()
 
     rows = []
@@ -90,23 +90,23 @@ def main():
             if pid in no_poster:
                 skipped_no_poster += 1
                 continue
-            rows.append([
-                int(float(r["year"])),
-                dominant_hex(r.get("palette")),
-                paths.get(pid),
-                r.get("title") or "",
-                round(float(r["brightness"]), 1),
-                faces.get(pid, 0),
-                creatures.get(pid, ""),
-                pid,
-            ])
+            rows.append(
+                [
+                    int(float(r["year"])),
+                    dominant_hex(r.get("palette")),
+                    paths.get(pid),
+                    r.get("title") or "",
+                    round(float(r["brightness"]), 1),
+                    faces.get(pid, 0),
+                    creatures.get(pid, ""),
+                    pid,
+                ]
+            )
 
     payload = json.dumps(rows, ensure_ascii=False, separators=(",", ":"))
     OUT.parent.mkdir(parents=True, exist_ok=True)
     note = f" (excluded no_poster={skipped_no_poster})" if skipped_no_poster else ""
-    OUT.write_text(
-        f"/* explorer grid n={len(rows)}{note} */\nconst POSTERS={payload};\n"
-    )
+    OUT.write_text(f"/* explorer grid n={len(rows)}{note} */\nconst POSTERS={payload};\n")
     with_path = sum(1 for row in rows if row[2])
     print(
         f"escrito {OUT.relative_to(ROOT.parent)} "

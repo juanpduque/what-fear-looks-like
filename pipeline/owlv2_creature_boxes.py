@@ -20,6 +20,7 @@ Backfill on EC2 (append-only creature cache; weapons sidecar):
     --device cuda --creature-out data/creature_boxes_delta.json \\
     --weapon-out data/weapon_boxes.json --no-site-js
 """
+
 from __future__ import annotations
 
 import argparse
@@ -145,11 +146,13 @@ def import_dryrun() -> dict[int, list]:
         for b in boxes[:3]:
             if not isinstance(b, dict) or "box" not in b:
                 continue
-            clean.append({
-                "label": str(b.get("label") or ""),
-                "score": float(b.get("score") or 0),
-                "box": [float(x) for x in b["box"][:4]],
-            })
+            clean.append(
+                {
+                    "label": str(b.get("label") or ""),
+                    "score": float(b.get("score") or 0),
+                    "box": [float(x) for x in b["box"][:4]],
+                }
+            )
         out[int(k)] = clean
     return out
 
@@ -323,7 +326,9 @@ def run_owl(
                         [boxes[i] for i in c_idx],
                         [scores[i] for i in c_idx],
                         [labs[i] for i in c_idx],
-                        w, h, min_score=min_score,
+                        w,
+                        h,
+                        min_score=min_score,
                     )
                 if do_weapons:
                     w_idx = [i for i, lab in enumerate(labs) if lab in weapon_set]
@@ -331,7 +336,9 @@ def run_owl(
                         [boxes[i] for i in w_idx],
                         [scores[i] for i in w_idx],
                         [labs[i] for i in w_idx],
-                        w, h, min_score=min_score,
+                        w,
+                        h,
+                        min_score=min_score,
                     )
             except Exception as e:
                 print(f"  FAIL {pid}: {e}", flush=True)
@@ -380,28 +387,46 @@ def sample_ids(n: int, seed: int) -> list[int]:
 
 def main():
     ap = argparse.ArgumentParser()
-    ap.add_argument("--from-dryrun", action="store_true",
-                    help="seed site cache from creature_detect_dryrun_owl.json")
+    ap.add_argument(
+        "--from-dryrun",
+        action="store_true",
+        help="seed site cache from creature_detect_dryrun_owl.json",
+    )
     ap.add_argument("--ids", default="", help="comma-separated TMDB ids")
     ap.add_argument("--ids-file", default="", help="newline / csv-first-col list of ids")
     ap.add_argument("--n", type=int, default=0, help="stratified sample size to run")
-    ap.add_argument("--all", action="store_true",
-                    help="full analyzed corpus with local posters")
+    ap.add_argument("--all", action="store_true", help="full analyzed corpus with local posters")
     ap.add_argument("--seed", type=int, default=42)
     ap.add_argument("--device", default="auto")
     ap.add_argument("--min-score", type=float, default=0.2)
-    ap.add_argument("--export-only", action="store_true",
-                    help="rewrite .js from existing creature_boxes.json (+ weapons if present)")
-    ap.add_argument("--with-weapons", action="store_true",
-                    help="also run weapon queries; write weapon_boxes sidecar")
-    ap.add_argument("--creature-out", default=str(OUT_JSON),
-                    help="creature boxes JSON path (default data/creature_boxes.json)")
-    ap.add_argument("--weapon-out", default=str(WEAPON_JSON),
-                    help="weapon boxes JSON path (default data/weapon_boxes.json)")
-    ap.add_argument("--protect-creature-from", default="",
-                    help="JSON of existing creature boxes — never overwrite those keys")
-    ap.add_argument("--no-site-js", action="store_true",
-                    help="skip writing site/data/*.js (EC2 delta runs)")
+    ap.add_argument(
+        "--export-only",
+        action="store_true",
+        help="rewrite .js from existing creature_boxes.json (+ weapons if present)",
+    )
+    ap.add_argument(
+        "--with-weapons",
+        action="store_true",
+        help="also run weapon queries; write weapon_boxes sidecar",
+    )
+    ap.add_argument(
+        "--creature-out",
+        default=str(OUT_JSON),
+        help="creature boxes JSON path (default data/creature_boxes.json)",
+    )
+    ap.add_argument(
+        "--weapon-out",
+        default=str(WEAPON_JSON),
+        help="weapon boxes JSON path (default data/weapon_boxes.json)",
+    )
+    ap.add_argument(
+        "--protect-creature-from",
+        default="",
+        help="JSON of existing creature boxes — never overwrite those keys",
+    )
+    ap.add_argument(
+        "--no-site-js", action="store_true", help="skip writing site/data/*.js (EC2 delta runs)"
+    )
     ap.add_argument("--checkpoint-every", type=int, default=5)
     ap.add_argument("--posters-dir", default=str(POSTERS))
     args = ap.parse_args()
@@ -458,8 +483,7 @@ def main():
     if uniq:
         device = pick_device(args.device)
         if device == "mps" and len(uniq) > 500:
-            print("WARNING: MPS full-run is ~15s/img (~days). Prefer CUDA on EC2 GPU.",
-                  flush=True)
+            print("WARNING: MPS full-run is ~15s/img (~days). Prefer CUDA on EC2 GPU.", flush=True)
         weapon_cache = load_box_cache(weapon_out) if args.with_weapons else None
         creature_cache, weapon_cache = run_owl(
             uniq,

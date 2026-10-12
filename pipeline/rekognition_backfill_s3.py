@@ -22,6 +22,7 @@ Cost estimate: ~3 API calls per poster × $0.001 = ~$0.003/poster
 
 Requires: AWS credentials with Rekognition and S3 access.
 """
+
 from __future__ import annotations
 
 import argparse
@@ -50,12 +51,39 @@ REGION = os.environ.get("AWS_DEFAULT_REGION", "us-east-1")  # pragma: allowlist 
 
 # Vocabularies (same as rekognition_enrich.py)
 WEAPON = {
-    "weapon", "blade", "knife", "dagger", "sword", "gun", "handgun", "rifle",
-    "axe", "hatchet", "bow", "arrow", "spear", "mace", "chainsaw",
+    "weapon",
+    "blade",
+    "knife",
+    "dagger",
+    "sword",
+    "gun",
+    "handgun",
+    "rifle",
+    "axe",
+    "hatchet",
+    "bow",
+    "arrow",
+    "spear",
+    "mace",
+    "chainsaw",
 }
 ANIMAL = {
-    "animal", "shark", "fish", "sea life", "insect", "bird", "dog", "cat",
-    "wolf", "bear", "snake", "spider", "bat", "crow", "raven", "great white shark",
+    "animal",
+    "shark",
+    "fish",
+    "sea life",
+    "insect",
+    "bird",
+    "dog",
+    "cat",
+    "wolf",
+    "bear",
+    "snake",
+    "spider",
+    "bat",
+    "crow",
+    "raven",
+    "great white shark",
 }
 PERSON = {"person", "human", "man", "woman", "boy", "girl", "adult", "child", "face", "baby"}
 WATER = {"water", "ocean", "sea", "lake", "beach", "wave", "underwater"}
@@ -121,17 +149,13 @@ def analyze(rek_client, image_bytes: bytes) -> dict:
     q = ip.get("Quality") or {}
     colors = ip.get("DominantColors") or []
     color_s = "|".join(
-        f"{c.get('HexCode', '')}:{round(float(c.get('PixelPercent', 0)), 1)}"
-        for c in colors[:5]
+        f"{c.get('HexCode', '')}:{round(float(c.get('PixelPercent', 0)), 1)}" for c in colors[:5]
     )
     label_s = "|".join(f"{n}:{c:.2f}" for n, c in labels[:10])
 
     # 2) Moderation
     mod = rek_client.detect_moderation_labels(Image={"Bytes": image_bytes}, MinConfidence=40)
-    mods = [
-        (m["Name"], float(m["Confidence"]) / 100.0)
-        for m in mod.get("ModerationLabels", [])
-    ]
+    mods = [(m["Name"], float(m["Confidence"]) / 100.0) for m in mod.get("ModerationLabels", [])]
     mod_s = "|".join(f"{n}:{c:.2f}" for n, c in mods[:8])
 
     # 3) Faces
@@ -148,7 +172,7 @@ def analyze(rek_client, image_bytes: bytes) -> dict:
         f0 = details[0]
         emos = sorted(f0.get("Emotions") or [], key=lambda e: -e["Confidence"])
         if emos:
-            emotion = f"{emos[0]['Type']}:{emos[0]['Confidence']/100:.2f}"
+            emotion = f"{emos[0]['Type']}:{emos[0]['Confidence'] / 100:.2f}"
         gender = (f0.get("Gender") or {}).get("Value") or ""
         ar = f0.get("AgeRange") or {}
         age_lo = int(ar.get("Low", -1))
@@ -174,8 +198,13 @@ def analyze(rek_client, image_bytes: bytes) -> dict:
         rek_violence=_mod_score(mods, "Violence", "Graphic Violence"),
         rek_mod_weapons=_mod_score(mods, "Weapons"),
         rek_gore=_mod_score(
-            mods, "Visually Disturbing", "Blood & Gore", "Gore",
-            "Emaciated Bodies", "Corpses", "Hanging",
+            mods,
+            "Visually Disturbing",
+            "Blood & Gore",
+            "Gore",
+            "Emaciated Bodies",
+            "Corpses",
+            "Hanging",
         ),
         rek_n_faces=len(details),
         rek_emotion=emotion,
@@ -188,29 +217,29 @@ def analyze(rek_client, image_bytes: bytes) -> dict:
 def get_missing_ids() -> set[int]:
     """Get IDs that have posters in S3 but no Rekognition analysis."""
     s3 = _s3_client()
-    
+
     # Download manifest from S3
     manifest_key = "wflike-community-72k/results/download_manifest.csv"
     obj = s3.get_object(Bucket=S3_BUCKET, Key=manifest_key)
     manifest = pd.read_csv(io.BytesIO(obj["Body"].read()))
-    
+
     # IDs with successful downloads
     downloaded_ok = manifest[manifest["status"].isin(["ok", "exists"])]["id"]
     downloaded_ids = set(downloaded_ok)
-    
+
     # IDs with Rekognition in S3 Community job
     rek_key = "wflike-community-72k/results/rekognition_community_72k.csv"
     obj = s3.get_object(Bucket=S3_BUCKET, Key=rek_key)
     rek_community = pd.read_csv(io.BytesIO(obj["Body"].read()))
     s3_rek_ids = set(rek_community["id"])
-    
+
     # IDs with Rekognition locally
     if MERGED_OUT.exists():
         local_rek = pd.read_csv(MERGED_OUT)
         local_ids = set(local_rek["id"].unique())
     else:
         local_ids = set()
-    
+
     # Missing = downloaded but no Rekognition anywhere
     missing = downloaded_ids - s3_rek_ids - local_ids
     return missing
@@ -231,7 +260,7 @@ def save_checkpoint(checkpoint: dict):
 def get_metadata_for_ids(ids: set[int]) -> pd.DataFrame:
     """Get title/year metadata for IDs from TMDB list or posters.csv."""
     s3 = _s3_client()
-    
+
     # Try to get from tmdb_horror_ids.csv in S3
     try:
         key = "wflike-community-72k/results/tmdb_horror_ids.csv"
@@ -242,7 +271,7 @@ def get_metadata_for_ids(ids: set[int]) -> pd.DataFrame:
             return tmdb[["id", "title", "year"]]
     except Exception:
         pass
-    
+
     # Fallback: local posters.csv
     posters_path = DATA / "posters.csv"
     if posters_path.exists():
@@ -250,7 +279,7 @@ def get_metadata_for_ids(ids: set[int]) -> pd.DataFrame:
         posters = posters[posters["id"].isin(ids)]
         if len(posters) > 0:
             return posters
-    
+
     # Last resort: just IDs with empty metadata
     return pd.DataFrame({"id": list(ids), "title": "", "year": 0})
 
@@ -261,7 +290,9 @@ def main():
     ap.add_argument("--sample", type=int, default=0, help="Process random sample of N")
     ap.add_argument("--save-every", type=int, default=25, help="Save checkpoint every N")
     ap.add_argument("--resume", action="store_true", help="Resume from checkpoint")
-    ap.add_argument("--merge", action="store_true", help="Merge results into rekognition.csv at end")
+    ap.add_argument(
+        "--merge", action="store_true", help="Merge results into rekognition.csv at end"
+    )
     ap.add_argument("--dry-run", action="store_true", help="Show what would be processed")
     args = ap.parse_args()
 
@@ -280,6 +311,7 @@ def main():
 
     if args.sample and len(target_ids) > args.sample:
         import random
+
         target_ids = set(random.sample(list(target_ids), args.sample))
         print(f"   Sampling {len(target_ids)} IDs")
 
@@ -287,7 +319,7 @@ def main():
     checkpoint = load_checkpoint() if args.resume else {"processed": [], "errors": []}
     already_done = set(checkpoint["processed"])
     target_ids = target_ids - already_done
-    
+
     if already_done:
         print(f"   Resuming: {len(already_done)} already processed, {len(target_ids)} remaining")
 
@@ -304,11 +336,11 @@ def main():
     # Get metadata
     print(f"\n📋 Getting metadata for {len(target_ids):,} IDs...")
     meta = get_metadata_for_ids(target_ids)
-    
+
     # Initialize clients
     s3 = _s3_client()
     rek = _rek_client()
-    
+
     # Load existing results if any
     rows = {}
     if OUT.exists():
@@ -320,18 +352,22 @@ def main():
     n_new = 0
     n_errors = 0
     n_skip = 0
-    
+
     print(f"\n🚀 Processing {len(target_ids):,} posters...")
     print("-" * 70)
 
     for i, pid in enumerate(sorted(target_ids)):
         pid = int(pid)
-        
+
         # Get metadata
         meta_row = meta[meta["id"] == pid]
         title = str(meta_row["title"].iloc[0]) if len(meta_row) > 0 else ""
-        year = int(meta_row["year"].iloc[0]) if len(meta_row) > 0 and pd.notna(meta_row["year"].iloc[0]) else 0
-        
+        year = (
+            int(meta_row["year"].iloc[0])
+            if len(meta_row) > 0 and pd.notna(meta_row["year"].iloc[0])
+            else 0
+        )
+
         # Download from S3
         try:
             image_bytes = download_poster_from_s3(s3, pid)
@@ -350,7 +386,7 @@ def main():
         except ClientError as e:
             code = e.response.get("Error", {}).get("Code", "")
             print(f"⚠️ Rekognition {pid}: {code}", flush=True)
-            
+
             if code in ("ThrottlingException", "ProvisionedThroughputExceededException"):
                 time.sleep(2.0)
                 try:
@@ -384,7 +420,7 @@ def main():
             print(
                 f"✅ {n_new:,}/{len(target_ids):,} | {pid} {title[:25]!r} | "
                 f"top={row['rek_top']!r} weap={row['rek_weapon']:.2f} "
-                f"viol={row['rek_violence']:.2f} | {rate:.1f}/s ETA:{eta/60:.0f}m",
+                f"viol={row['rek_violence']:.2f} | {rate:.1f}/s ETA:{eta / 60:.0f}m",
                 flush=True,
             )
 
@@ -405,7 +441,7 @@ def main():
     print(f"   Procesados: {n_new:,}")
     print(f"   Errores:    {n_errors:,}")
     print(f"   Omitidos:   {n_skip:,}")
-    print(f"   Tiempo:     {elapsed:.1f}s ({n_new/max(elapsed,1):.1f}/s)")
+    print(f"   Tiempo:     {elapsed:.1f}s ({n_new / max(elapsed, 1):.1f}/s)")
     print(f"   Resultado:  {OUT}")
     print("=" * 70)
 
@@ -420,14 +456,14 @@ def merge_results():
     if not OUT.exists():
         print("   No backfill results to merge")
         return
-    
+
     backfill = pd.read_csv(OUT)
-    
+
     if MERGED_OUT.exists():
         existing = pd.read_csv(MERGED_OUT)
         existing_ids = set(existing["id"])
         new_rows = backfill[~backfill["id"].isin(existing_ids)]
-        
+
         if len(new_rows) > 0:
             merged = pd.concat([existing, new_rows], ignore_index=True)
             merged = merged.drop_duplicates(subset=["id"], keep="last")

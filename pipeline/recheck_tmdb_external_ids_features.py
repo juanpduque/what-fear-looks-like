@@ -13,6 +13,7 @@ Usage:
   TMDB_API_KEY=... python3 recheck_tmdb_external_ids_features.py
   python3 recheck_tmdb_external_ids_features.py --workers 8
 """
+
 from __future__ import annotations
 
 import argparse
@@ -80,9 +81,7 @@ def load_feature_ids() -> list[int]:
     return features
 
 
-def fetch_status(
-    session: requests.Session, api_key: str, pid: int
-) -> tuple[str, str]:
+def fetch_status(session: requests.Session, api_key: str, pid: int) -> tuple[str, str]:
     """Return (imdb_id, status) where status is found|empty|error."""
     url = EXT_URL.format(pid=pid)
     kwargs = auth_kwargs(api_key)
@@ -99,8 +98,7 @@ def fetch_status(
             return "", "error"
         if r.status_code == 401:
             raise SystemExit(
-                "TMDB 401 Unauthorized — check TMDB_API_KEY "
-                "(v3 api_key or v4 Bearer token)."
+                "TMDB 401 Unauthorized — check TMDB_API_KEY (v3 api_key or v4 Bearer token)."
             )
         if not r.ok:
             time.sleep(1 + attempt)
@@ -144,9 +142,7 @@ def main() -> None:
 
     workers = max(1, args.workers)
     session = requests.Session()
-    adapter = requests.adapters.HTTPAdapter(
-        pool_connections=workers, pool_maxsize=workers
-    )
+    adapter = requests.adapters.HTTPAdapter(pool_connections=workers, pool_maxsize=workers)
     session.mount("https://", adapter)
 
     results: dict[int, tuple[str, str]] = {}

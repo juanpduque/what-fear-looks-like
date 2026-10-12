@@ -2,6 +2,7 @@
 series.js. Reuses the real checker from sync_front_n so the test can't drift
 from the tool.
 """
+
 from __future__ import annotations
 
 from sync_front_n import check_front_n

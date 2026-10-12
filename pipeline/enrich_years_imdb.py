@@ -12,6 +12,7 @@ Usage:
   python3 enrich_years_imdb.py
   python3 enrich_years_imdb.py --limit 20 --workers 4
 """
+
 from __future__ import annotations
 
 import argparse
@@ -94,8 +95,7 @@ def main() -> None:
 
     sidecar = load_sidecar()
     undated = load_undated()
-    todo = [(pid, t, sidecar[pid]) for pid, t in undated
-            if sidecar.get(pid, "").startswith("tt")]
+    todo = [(pid, t, sidecar[pid]) for pid, t in undated if sidecar.get(pid, "").startswith("tt")]
     if args.limit:
         todo = todo[: args.limit]
     print(f"undated: {len(undated):,}  with imdb_id: {len(todo):,}")
@@ -137,10 +137,13 @@ def main() -> None:
         w.writeheader()
         w.writerows(found)
 
-    print(f"\nrecovered {len(found):,} / {len(todo):,} "
-          f"({100 * len(found) / len(todo):.1f}%) → {OUT.name}")
+    print(
+        f"\nrecovered {len(found):,} / {len(todo):,} "
+        f"({100 * len(found) / len(todo):.1f}%) → {OUT.name}"
+    )
     if found:
         from collections import Counter
+
         hist = Counter(r["year"] for r in found)
         print("years:", ", ".join(f"{y}:{n}" for y, n in sorted(hist.items())))
 

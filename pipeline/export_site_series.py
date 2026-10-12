@@ -11,6 +11,7 @@ el sitio: medias por decada y rolling trailing de 5 anos (min_periods=2).
 Tambien lo invoca apply_exclusions.py al final, para que un re-filtro
 regenere automaticamente lo que consume index.html.
 """
+
 from __future__ import annotations
 
 import json
@@ -24,8 +25,17 @@ DATA = ROOT / "data"
 OUT = ROOT.parent / "site" / "data" / "series.js"
 
 DECADES = [
-    "1920s", "1930s", "1940s", "1950s", "1960s", "1970s",
-    "1980s", "1990s", "2000s", "2010s", "2020s",
+    "1920s",
+    "1930s",
+    "1940s",
+    "1950s",
+    "1960s",
+    "1970s",
+    "1980s",
+    "1990s",
+    "2000s",
+    "2010s",
+    "2020s",
 ]
 ROLL_YEARS = list(range(1925, 2021, 5)) + [2022, 2025, 2026]
 DIAG_YEARS = list(range(1925, 2021, 5)) + [2025, 2026]
@@ -86,7 +96,8 @@ def _trailing_ci(buckets, years, rnd: int = 1, window: int = 5, min_periods: int
         k = len(yrs)
         est = sum(statistics.fmean(buckets[yy]) for yy in yrs) / k
         var = sum(
-            (statistics.variance(buckets[yy]) if len(buckets[yy]) > 1 else pooled_var) / len(buckets[yy])
+            (statistics.variance(buckets[yy]) if len(buckets[yy]) > 1 else pooled_var)
+            / len(buckets[yy])
             for yy in yrs
         ) / (k * k)
         half = 1.96 * math.sqrt(var)
@@ -110,6 +121,7 @@ def _pts_at(roll: dict[int, float], years: list[int], rnd: int = 1):
 def _read_csv(name: str):
     import csv
     from corpus import canonical_ids
+
     path = DATA / name
     if not path.exists():
         raise FileNotFoundError(f"falta {path}")
@@ -139,6 +151,7 @@ def build_series() -> dict:
     hm = DATA / "horror_movies.csv"
     if hm.exists():
         import csv
+
         with hm.open(newline="") as f:
             for r in csv.DictReader(f):
                 try:
@@ -155,23 +168,27 @@ def build_series() -> dict:
     for row in sorted(hue, key=lambda x: int(x["decade"])):
         if int(row["decade"]) not in chart_decades:
             continue
-        river.append([
-            round(float(row["band_red"]) * 100, 1),
-            round(float(row["band_warm"]) * 100, 1),
-            round(float(row["band_green"]) * 100, 1),
-            round(float(row["band_blue"]) * 100, 1),
-            round(float(row["band_purple"]) * 100, 1),
-            round(float(row["band_dark"]) * 100, 1),
-        ])
+        river.append(
+            [
+                round(float(row["band_red"]) * 100, 1),
+                round(float(row["band_warm"]) * 100, 1),
+                round(float(row["band_green"]) * 100, 1),
+                round(float(row["band_blue"]) * 100, 1),
+                round(float(row["band_purple"]) * 100, 1),
+                round(float(row["band_dark"]) * 100, 1),
+            ]
+        )
 
     typo = []
     for row in sorted(typo_d, key=lambda r: int(r["decade"])):
         if int(row["decade"]) not in chart_decades:
             continue
-        typo.append([
-            round(float(row[k]), 4)
-            for k in ("ornate", "decorative", "standard", "clean", "minimal")
-        ])
+        typo.append(
+            [
+                round(float(row[k]), 4)
+                for k in ("ornate", "decorative", "standard", "clean", "minimal")
+            ]
+        )
 
     blood_semantic = [
         round(float(row["clip_blood"]) * 100, 1)
@@ -190,7 +207,8 @@ def build_series() -> dict:
     bright = _yearly_mean(posters, "year", lambda r: float(r["brightness"]))
     red = _yearly_mean(posters, "year", lambda r: float(r["red_share"]) * 100)
     face_y = _yearly_mean(
-        faces, "year",
+        faces,
+        "year",
         lambda r: 100.0 if int(float(r["n_faces"])) > 0 else 0.0,
     )
     text_y = _yearly_mean(attrs, "year", lambda r: float(r["text_area"]) * 100)
@@ -198,14 +216,29 @@ def build_series() -> dict:
     diag_y = _yearly_mean(attrs, "year", lambda r: float(r["diagonal_score"]) * 100)
     ci_src = {
         "dark": (_yearly_buckets(posters, "year", lambda r: float(r["brightness"])), ROLL_YEARS, 1),
-        "red": (_yearly_buckets(posters, "year", lambda r: float(r["red_share"]) * 100), ROLL_YEARS, 1),
-        "face": (
-            _yearly_buckets(faces, "year", lambda r: 100.0 if int(float(r["n_faces"])) > 0 else 0.0),
-            ROLL_YEARS, 1,
+        "red": (
+            _yearly_buckets(posters, "year", lambda r: float(r["red_share"]) * 100),
+            ROLL_YEARS,
+            1,
         ),
-        "text": (_yearly_buckets(attrs, "year", lambda r: float(r["text_area"]) * 100), ROLL_YEARS, 1),
+        "face": (
+            _yearly_buckets(
+                faces, "year", lambda r: 100.0 if int(float(r["n_faces"])) > 0 else 0.0
+            ),
+            ROLL_YEARS,
+            1,
+        ),
+        "text": (
+            _yearly_buckets(attrs, "year", lambda r: float(r["text_area"]) * 100),
+            ROLL_YEARS,
+            1,
+        ),
         "sym": (_yearly_buckets(attrs, "year", lambda r: float(r["symmetry"])), ROLL_YEARS, 3),
-        "diag": (_yearly_buckets(attrs, "year", lambda r: float(r["diagonal_score"]) * 100), DIAG_YEARS, 1),
+        "diag": (
+            _yearly_buckets(attrs, "year", lambda r: float(r["diagonal_score"]) * 100),
+            DIAG_YEARS,
+            1,
+        ),
     }
 
     main_buckets: dict[int, list[float]] = defaultdict(list)
@@ -215,8 +248,7 @@ def build_series() -> dict:
         if votes.get(pid, 0) >= 100:
             main_buckets[(y // 10) * 10].append(float(r["brightness"]))
     main_dec = [
-        [d, round(sum(v) / len(v), 1)]
-        for d, v in sorted(main_buckets.items()) if d >= 1950
+        [d, round(sum(v) / len(v), 1)] for d, v in sorted(main_buckets.items()) if d >= 1950
     ]
 
     census = {}
@@ -325,10 +357,7 @@ def export(out: Path | None = None) -> Path:
     series = build_series()
     out.parent.mkdir(parents=True, exist_ok=True)
     out.write_text(render_js(series))
-    print(
-        f"escrito {out.relative_to(ROOT.parent)} "
-        f"(n={series['n']:,}, seg_n={series['seg_n']:,})"
-    )
+    print(f"escrito {out.relative_to(ROOT.parent)} (n={series['n']:,}, seg_n={series['seg_n']:,})")
     return out
 
 

@@ -18,6 +18,7 @@ Usage:
   python3 resolve_imdb_ambiguous_selenium.py --dry-run   # TMDB + table only
   python3 resolve_imdb_ambiguous_selenium.py --limit 3
 """
+
 from __future__ import annotations
 
 import argparse
@@ -91,9 +92,7 @@ def director_overlap(tmdb: list[str], imdb: list[str]) -> int:
             continue
         # last token match (e.g. "J.P. Bradham" vs "JP Bradham")
         last = nd.split()[-1] if nd.split() else ""
-        if len(last) >= 4 and any(
-            last == (x.split()[-1] if x.split() else "") for x in imdb_n
-        ):
+        if len(last) >= 4 and any(last == (x.split()[-1] if x.split() else "") for x in imdb_n):
             hits += 1
             continue
         # soft containment
@@ -179,12 +178,7 @@ def build_driver():
     try:
         driver.execute_cdp_cmd(
             "Page.addScriptToEvaluateOnNewDocument",
-            {
-                "source": (
-                    "Object.defineProperty(navigator, 'webdriver', "
-                    "{get: () => undefined});"
-                )
-            },
+            {"source": ("Object.defineProperty(navigator, 'webdriver', {get: () => undefined});")},
         )
     except Exception:
         pass
@@ -235,9 +229,10 @@ def scrape_imdb_page(driver, tconst: str, pause: float = 1.2) -> dict:
                     label = block.find_element(By.CSS_SELECTOR, "span, button, a").text
                 except Exception:
                     label = block.text[:40] if block.text else ""
-                if "director" not in (label or "").lower() and "Director" not in (
-                    block.text or ""
-                )[:80]:
+                if (
+                    "director" not in (label or "").lower()
+                    and "Director" not in (block.text or "")[:80]
+                ):
                     # check full block text starts with Director
                     bt = (block.text or "").strip()
                     if not bt.lower().startswith("director"):
@@ -249,9 +244,7 @@ def scrape_imdb_page(driver, tconst: str, pause: float = 1.2) -> dict:
                         directors.append(name)
         if not directors:
             # Older layout / fallback: links near "Director"
-            for a in driver.find_elements(
-                By.CSS_SELECTOR, "a[href*='/name/nm']"
-            )[:40]:
+            for a in driver.find_elements(By.CSS_SELECTOR, "a[href*='/name/nm']")[:40]:
                 # only if ancestor text mentions Director nearby — skip for now
                 pass
     except Exception:
@@ -432,14 +425,10 @@ def write_csv(path: Path, rows: list[dict], fieldnames: list[str]) -> None:
 def manual_table(rows_meta: list[dict]) -> None:
     """Fallback documentation when Selenium cannot start."""
     print("\n=== Manual resolution table (no accepts) ===")
-    print(
-        f"{'id':>8}  {'title':<28}  {'year':<6}  {'tmdb_dirs':<36}  candidates"
-    )
+    print(f"{'id':>8}  {'title':<28}  {'year':<6}  {'tmdb_dirs':<36}  candidates")
     for m in rows_meta:
         dirs = "; ".join(m["tmdb"].get("directors") or [])[:34]
-        cands = " | ".join(
-            f"https://www.imdb.com/title/{tt}/" for tt in m["tconsts"]
-        )
+        cands = " | ".join(f"https://www.imdb.com/title/{tt}/" for tt in m["tconsts"])
         title = (m.get("title") or "")[:26]
         year = m.get("year") or m["tmdb"].get("year") or ""
         print(f"{m['id']:>8}  {title:<28}  {str(year):<6}  {dirs:<36}  {cands}")
@@ -550,8 +539,7 @@ def main() -> None:
             winner, reason = decide_winner(scored)
             tmdb_dirs = "; ".join(tmdb.get("directors") or [])
             cand_summary = "|".join(
-                f"{c['tconst']}:{c['year'] or ''}:"
-                f"{','.join(c['directors'])}:d{c['director_hits']}"
+                f"{c['tconst']}:{c['year'] or ''}:{','.join(c['directors'])}:d{c['director_hits']}"
                 for c in scored
             )
 
@@ -626,10 +614,7 @@ def main() -> None:
     if misses:
         print("sample misses:")
         for m in misses[:5]:
-            print(
-                f"  {m['id']}  {m['title']!r}  reason={m['reason']}  "
-                f"dirs={m['director']!r}"
-            )
+            print(f"  {m['id']}  {m['title']!r}  reason={m['reason']}  dirs={m['director']!r}")
 
 
 if __name__ == "__main__":

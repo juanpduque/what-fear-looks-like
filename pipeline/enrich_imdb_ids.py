@@ -11,6 +11,7 @@ Usage:
   python3 enrich_imdb_ids.py --corpus-only   # only ids in posters.csv
   python3 enrich_imdb_ids.py --corpus-only --workers 12 --recheck-empty
 """
+
 from __future__ import annotations
 
 import argparse
@@ -80,8 +81,7 @@ def fetch_imdb_id(session: requests.Session, api_key: str, pid: int) -> str | No
             return None
         if r.status_code == 401:
             raise SystemExit(
-                "TMDB 401 Unauthorized — check TMDB_API_KEY "
-                "(v3 api_key or v4 Bearer token)."
+                "TMDB 401 Unauthorized — check TMDB_API_KEY (v3 api_key or v4 Bearer token)."
             )
         if not r.ok:
             time.sleep(1 + attempt)
@@ -220,9 +220,7 @@ def main() -> None:
 
     workers = max(1, args.workers)
     session = requests.Session()
-    adapter = requests.adapters.HTTPAdapter(
-        pool_connections=workers, pool_maxsize=workers
-    )
+    adapter = requests.adapters.HTTPAdapter(pool_connections=workers, pool_maxsize=workers)
     session.mount("https://", adapter)
     t0 = time.time()
     fetched = 0

@@ -14,6 +14,7 @@ Outputs:
   data/qa/nova_enrich/json/{id}.json
   data/qa/nova_enrich/nova_enrich.log
 """
+
 from __future__ import annotations
 
 import argparse
@@ -432,9 +433,7 @@ def write_progress(*, ok: int, err: int, completed: int, n_todo: int, done_prior
         "json_dir": str(OUT_JSON),
     }
     with _write_lock:
-        (OUT_DIR / "progress.json").write_text(
-            json.dumps(payload, indent=2), encoding="utf-8"
-        )
+        (OUT_DIR / "progress.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")
 
 
 def _is_throttle(exc: Exception) -> bool:
@@ -456,9 +455,7 @@ def invoke_one(client, lambda_name: str, model_id: str, img_bytes: bytes, fmt: s
     )
     body = json.loads(resp["Payload"].read())
     if resp.get("FunctionError"):
-        raise RuntimeError(
-            f"lambda error: {body.get('errorType')}: {body.get('errorMessage')}"
-        )
+        raise RuntimeError(f"lambda error: {body.get('errorType')}: {body.get('errorMessage')}")
     if not isinstance(body, dict) or body.get("statusCode") != 200:
         raise RuntimeError(f"bad lambda response: {body!r}"[:500])
     return body
@@ -531,9 +528,7 @@ def process_one(
                 # bump tokens on JSON retries (truncation is a common cause)
                 max_tokens = 700 if attempt == 0 else 1200
                 if direct:
-                    body = invoke_bedrock_direct(
-                        client, model_id, raw, fmt, max_tokens=max_tokens
-                    )
+                    body = invoke_bedrock_direct(client, model_id, raw, fmt, max_tokens=max_tokens)
                 else:
                     body = invoke_one(client, lambda_name, model_id, raw, fmt)
                 lat = time.perf_counter() - t0
@@ -601,7 +596,9 @@ def main() -> int:
         help="call Bedrock Converse directly (no Lambda bridge)",
     )
     ap.add_argument("--out", default="", help="override OUT_CSV (e.g. a separate corpus)")
-    ap.add_argument("--posters-dir", default="", help="override local posters dir (e.g. external drive)")
+    ap.add_argument(
+        "--posters-dir", default="", help="override local posters dir (e.g. external drive)"
+    )
     args = ap.parse_args()
 
     global OUT_CSV, OUT_JSON, LOG_PATH, POSTERS
@@ -636,8 +633,7 @@ def main() -> int:
         posters_df = pd.read_csv(POSTERS_CSV, usecols=["id", "title", "year"])
         posters_df["id"] = posters_df["id"].astype(int)
         by_csv = {
-            int(r.id): (str(r.title or ""), r.year)
-            for r in posters_df.itertuples(index=False)
+            int(r.id): (str(r.title or ""), r.year) for r in posters_df.itertuples(index=False)
         }
     elif want is None:
         raise SystemExit("missing data/posters.csv (need the CSV or --ids-file/--ids)")
@@ -760,37 +756,27 @@ def main() -> int:
                     err += 1
                     with _write_lock:
                         err_path = OUT_DIR / "nova_enrich_errors.csv"
-                        write_header = (
-                            not err_path.exists() or err_path.stat().st_size == 0
-                        )
+                        write_header = not err_path.exists() or err_path.stat().st_size == 0
                         with err_path.open("a", newline="", encoding="utf-8") as f:
-                            w = csv.DictWriter(
-                                f, fieldnames=CSV_FIELDS, extrasaction="ignore"
-                            )
+                            w = csv.DictWriter(f, fieldnames=CSV_FIELDS, extrasaction="ignore")
                             if write_header:
                                 w.writeheader()
                             w.writerow(row)
                             f.flush()
 
-                n_pending_ok = sum(
-                    1 for r in pending_box["rows"] if str(r.get("status")) == "ok"
-                )
+                n_pending_ok = sum(1 for r in pending_box["rows"] if str(r.get("status")) == "ok")
                 now = time.monotonic()
                 if n_pending_ok >= args.save_every or (now - last_flush) >= args.flush_seconds:
                     flush_pending()
                     last_flush = now
 
-                if (
-                    completed % 10 == 0
-                    or completed == n_todo
-                    or str(row.get("status")) != "ok"
-                ):
+                if completed % 10 == 0 or completed == n_todo or str(row.get("status")) != "ok":
                     elapsed = time.perf_counter() - t_run
                     rate = ok / elapsed if elapsed > 0 else 0
                     eta = (n_todo - completed) / rate if rate > 0 else 0
                     log(
                         f"[{completed}/{n_todo}] id={pid} status={row.get('status')} "
-                        f"ok={ok} err={err} rate={rate:.2f}/s eta={eta/3600:.2f}h "
+                        f"ok={ok} err={err} rate={rate:.2f}/s eta={eta / 3600:.2f}h "
                         f"desc={(row.get('description') or '')[:60]!r}"
                     )
         flush_pending()
@@ -798,10 +784,8 @@ def main() -> int:
 
     flush_pending()
     elapsed = time.perf_counter() - t_run
-    write_progress(
-        ok=ok, err=err, completed=completed, n_todo=n_todo, done_prior=len(done)
-    )
-    log(f"LISTO ok={ok} err={err} elapsed={elapsed/60:.1f}m → {OUT_CSV}")
+    write_progress(ok=ok, err=err, completed=completed, n_todo=n_todo, done_prior=len(done))
+    log(f"LISTO ok={ok} err={err} elapsed={elapsed / 60:.1f}m → {OUT_CSV}")
     return 0 if err == 0 or ok > 0 else 1
 
 

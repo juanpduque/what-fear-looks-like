@@ -11,6 +11,7 @@ via Bedrock instead of Rekognition APIs. ~18x cheaper per image.
 Requires: boto3, AWS credentials with Bedrock access.
 Outputs: data/nova_lite_enrich.csv (merged into rekognition.csv with --merge)
 """
+
 from __future__ import annotations
 
 import argparse
@@ -32,13 +33,43 @@ REK_OUT = DATA / "rekognition.csv"
 REGION = os.environ.get("AWS_DEFAULT_REGION", "us-east-1")  # pragma: allowlist secret
 
 WEAPON = {
-    "weapon", "blade", "knife", "dagger", "sword", "gun", "handgun", "rifle",
-    "axe", "hatchet", "bow", "arrow", "spear", "mace", "chainsaw", "machete",
+    "weapon",
+    "blade",
+    "knife",
+    "dagger",
+    "sword",
+    "gun",
+    "handgun",
+    "rifle",
+    "axe",
+    "hatchet",
+    "bow",
+    "arrow",
+    "spear",
+    "mace",
+    "chainsaw",
+    "machete",
 }
 ANIMAL = {
-    "animal", "shark", "fish", "sea life", "insect", "bird", "dog", "cat",
-    "wolf", "bear", "snake", "spider", "bat", "crow", "raven", "great white shark",
-    "creature", "monster", "beast",
+    "animal",
+    "shark",
+    "fish",
+    "sea life",
+    "insect",
+    "bird",
+    "dog",
+    "cat",
+    "wolf",
+    "bear",
+    "snake",
+    "spider",
+    "bat",
+    "crow",
+    "raven",
+    "great white shark",
+    "creature",
+    "monster",
+    "beast",
 }
 PERSON = {"person", "human", "man", "woman", "boy", "girl", "adult", "child", "face", "baby"}
 WATER = {"water", "ocean", "sea", "lake", "beach", "wave", "underwater"}
@@ -117,27 +148,24 @@ def analyze_with_nova(client, img_bytes: bytes) -> dict:
                     {
                         "image": {
                             "format": "jpeg",
-                            "source": {"bytes": base64.b64encode(img_bytes).decode()}
+                            "source": {"bytes": base64.b64encode(img_bytes).decode()},
                         }
                     },
-                    {"text": NOVA_PROMPT}
-                ]
+                    {"text": NOVA_PROMPT},
+                ],
             }
         ],
-        "inferenceConfig": {"maxTokens": 2048}
+        "inferenceConfig": {"maxTokens": 2048},
     }
-    
-    response = client.invoke_model(
-        modelId="amazon.nova-lite-v1:0",
-        body=json.dumps(body)
-    )
+
+    response = client.invoke_model(modelId="amazon.nova-lite-v1:0", body=json.dumps(body))
     result = json.loads(response["body"].read())
     output_text = result["output"]["message"]["content"][0]["text"]
-    
+
     # Parse JSON from response
     try:
         # Try to extract JSON if wrapped in markdown
-        json_match = re.search(r'\{[\s\S]*\}', output_text)
+        json_match = re.search(r"\{[\s\S]*\}", output_text)
         if json_match:
             return json.loads(json_match.group())
     except json.JSONDecodeError:
@@ -174,32 +202,23 @@ def nova_to_rekognition_format(nova_data: dict) -> dict:
     colors = nova_data.get("dominant_colors", [])
     faces = nova_data.get("faces", [])
     mods = nova_data.get("moderation", [])
-    
+
     # Labels string
-    label_s = "|".join(
-        f"{l.get('name', '')}:{l.get('confidence', 0):.2f}"
-        for l in labels[:10]
-    )
-    
+    label_s = "|".join(f"{l.get('name', '')}:{l.get('confidence', 0):.2f}" for l in labels[:10])
+
     # Top label
     top_n, top_c = ("", 0.0)
     if labels:
         top = labels[0]
         top_n = top.get("name", "")
         top_c = float(top.get("confidence", 0))
-    
+
     # Colors string
-    color_s = "|".join(
-        f"{c.get('hex', '#000000')}:{c.get('percent', 0):.1f}"
-        for c in colors[:5]
-    )
-    
+    color_s = "|".join(f"{c.get('hex', '#000000')}:{c.get('percent', 0):.1f}" for c in colors[:5])
+
     # Moderation string
-    mod_s = "|".join(
-        f"{m.get('name', '')}:{m.get('confidence', 0):.2f}"
-        for m in mods[:8]
-    )
-    
+    mod_s = "|".join(f"{m.get('name', '')}:{m.get('confidence', 0):.2f}" for m in mods[:8])
+
     # Face info (largest/first face)
     emotion = gender = ""
     age_lo = age_hi = -1
@@ -212,12 +231,12 @@ def nova_to_rekognition_format(nova_data: dict) -> dict:
         gender = f0.get("gender", "")
         age_lo = int(f0.get("age_low", -1))
         age_hi = int(f0.get("age_high", -1))
-    
+
     # Silhouette from labels or explicit flag
     sil_score = _flag(labels, SILHOUETTE)
     if nova_data.get("has_silhouette"):
         sil_score = max(sil_score, 0.8)
-    
+
     return {
         "rek_labels": label_s,
         "rek_top": top_n,
@@ -245,32 +264,38 @@ def nova_to_rekognition_format(nova_data: dict) -> dict:
     }
 
 
-def process_poster(client, tmdb_id: int, title: str, year: int, 
-                   poster_path: str | None, session: requests.Session = None,
-                   tmdb_key: str = None) -> dict | None:
+def process_poster(
+    client,
+    tmdb_id: int,
+    title: str,
+    year: int,
+    poster_path: str | None,
+    session: requests.Session = None,
+    tmdb_key: str = None,
+) -> dict | None:
     """Process a single poster with Nova Lite."""
     # Get poster_path if not provided
     if not poster_path and session and tmdb_key:
         poster_path = fetch_poster_path(session, tmdb_key, tmdb_id)
-    
+
     if not poster_path:
         return None
-    
+
     # Download image
     img_bytes = download_poster(poster_path, tmdb_id)
     if not img_bytes:
         return None
-    
+
     # Analyze with Nova
     try:
         nova_data = analyze_with_nova(client, img_bytes)
         if not nova_data:
             return None
-        
+
         # Convert to rekognition format
         feats = nova_to_rekognition_format(nova_data)
         return {"id": tmdb_id, "year": int(year), "title": str(title), **feats}
-    
+
     except ClientError as e:
         print(f"  Nova error {tmdb_id}: {e}")
         return None
@@ -283,16 +308,19 @@ def main():
     ap = argparse.ArgumentParser(description=__doc__)
     ap.add_argument("--ids", default="", help="comma-separated TMDB ids")
     ap.add_argument("--missing", action="store_true", help="process missing from corpus")
-    ap.add_argument("--tmdb-key", default=os.environ.get("TMDB_API_KEY"), 
-                    help="TMDB API key for fetching poster_paths")
+    ap.add_argument(
+        "--tmdb-key",
+        default=os.environ.get("TMDB_API_KEY"),
+        help="TMDB API key for fetching poster_paths",
+    )
     ap.add_argument("--save-every", type=int, default=10)
     ap.add_argument("--merge", action="store_true", help="merge results into rekognition.csv")
     ap.add_argument("--limit", type=int, default=0, help="limit number to process")
     args = ap.parse_args()
-    
+
     # Load metadata
     posters = pd.read_csv(DATA / "posters.csv", usecols=["id", "title", "year"])
-    
+
     # Load existing poster_paths
     poster_paths = {}
     for pf in ["poster_paths_backfill.csv", "horror_refresh_2026.csv"]:
@@ -303,7 +331,7 @@ def main():
                 for _, row in df.iterrows():
                     if pd.notna(row.get("poster_path")):
                         poster_paths[int(row["id"])] = row["poster_path"]
-    
+
     # Determine which IDs to process
     if args.ids:
         want = {int(x) for x in args.ids.split(",") if x.strip()}
@@ -316,39 +344,36 @@ def main():
         print(f"Found {len(meta)} missing posters")
     else:
         meta = posters
-    
+
     if args.limit > 0:
         meta = meta.head(args.limit)
-    
+
     # Load existing results
     existing = pd.read_csv(OUT) if OUT.exists() else pd.DataFrame()
     rows = {int(r["id"]): dict(r) for r in existing.to_dict("records")} if len(existing) else {}
     done = set(rows)
-    
+
     # Setup clients
     bedrock = get_bedrock_client()
     session = requests.Session() if args.tmdb_key else None
-    
+
     t0 = time.time()
     n_new = n_skip = 0
-    
+
     for r in meta.itertuples(index=False):
         pid = int(r.id)
         if pid in done:
             continue
-        
+
         poster_path = poster_paths.get(pid)
-        
+
         # Skip if no poster_path and no TMDB key
         if not poster_path and not args.tmdb_key:
             n_skip += 1
             continue
-        
-        result = process_poster(
-            bedrock, pid, r.title, r.year,
-            poster_path, session, args.tmdb_key
-        )
-        
+
+        result = process_poster(bedrock, pid, r.title, r.year, poster_path, session, args.tmdb_key)
+
         if result:
             rows[pid] = result
             n_new += 1
@@ -357,21 +382,21 @@ def main():
                 f"[{n_new}] {pid} {str(r.title)[:30]!r} "
                 f"top={result['rek_top']!r} faces={result['rek_n_faces']} "
                 f"| {rate:.2f}/s",
-                flush=True
+                flush=True,
             )
-            
+
             if n_new % args.save_every == 0:
                 df = pd.DataFrame(rows.values())
                 df.to_csv(OUT, index=False)
                 print(f"  [checkpoint] saved {len(df)} rows")
         else:
             n_skip += 1
-    
+
     # Final save
     df = pd.DataFrame(rows.values())
     df.to_csv(OUT, index=False)
-    print(f"\nWrote {OUT} ({len(df)} rows, {n_new} new, {n_skip} skipped, {time.time()-t0:.1f}s)")
-    
+    print(f"\nWrote {OUT} ({len(df)} rows, {n_new} new, {n_skip} skipped, {time.time() - t0:.1f}s)")
+
     # Merge into rekognition.csv if requested
     if args.merge and len(df) > 0:
         rek = pd.read_csv(REK_OUT) if REK_OUT.exists() else pd.DataFrame()

@@ -32,6 +32,7 @@ darkness_curve.png, attributes_decade.json, census_decade.json,
 typography_decade.json, faces_v2_decade.json, segmentation_decade.json,
 y site/data/series.js (series de graficas del ensayo).
 """
+
 import json
 import sys
 from pathlib import Path
@@ -81,6 +82,7 @@ def filter_npz(path, exclude_ids):
 # regeneracion de agregados -- mismo codigo que cada script fuente
 # ---------------------------------------------------------------------------
 
+
 def _restrict(d, keep):
     if keep is not None:
         d = d[d.id.isin(keep)]
@@ -90,34 +92,43 @@ def _restrict(d, keep):
 def regen_yearly_and_river(keep=None):
     """fear_pipeline.py: yearly.json, hue_river.json, darkness_curve.png"""
     res = _restrict(pd.read_csv(DATA / "posters.csv"), keep)
-    yearly = (res.groupby("year")
-                 .agg(n=("id", "count"), brightness=("brightness", "mean"),
-                      dark_share=("dark_share", "mean"),
-                      saturation=("saturation", "mean"),
-                      red_share=("red_share", "mean"))
-                 .round(4).reset_index())
+    yearly = (
+        res.groupby("year")
+        .agg(
+            n=("id", "count"),
+            brightness=("brightness", "mean"),
+            dark_share=("dark_share", "mean"),
+            saturation=("saturation", "mean"),
+            red_share=("red_share", "mean"),
+        )
+        .round(4)
+        .reset_index()
+    )
     yearly.to_json(DATA / "yearly.json", orient="records")
 
     res["decade"] = (res.year // 10) * 10
-    band_cols = ["band_red", "band_warm", "band_green", "band_blue",
-                 "band_purple", "band_dark"]
+    band_cols = ["band_red", "band_warm", "band_green", "band_blue", "band_purple", "band_dark"]
     river = res.groupby("decade")[band_cols].mean().round(4)
     river["n"] = res.groupby("decade").size()
     river.reset_index().to_json(DATA / "hue_river.json", orient="records")
 
     try:
         import matplotlib
+
         matplotlib.use("Agg")
         import matplotlib.pyplot as plt
+
         fig, ax = plt.subplots(figsize=(11, 5), facecolor="#0a0a0c")
         ax.set_facecolor("#0a0a0c")
         roll = yearly.set_index("year").brightness.rolling(5, min_periods=2).mean()
         ax.plot(roll.index, roll.values, color="#e5a00d", lw=2.5)
-        ax.scatter(yearly.year, yearly.brightness, s=8, color="#e5a00d", alpha=.25)
-        ax.set_title("The Darkness Curve — mean poster brightness (L*), 5yr rolling",
-                     color="#e8e4da")
+        ax.scatter(yearly.year, yearly.brightness, s=8, color="#e5a00d", alpha=0.25)
+        ax.set_title(
+            "The Darkness Curve — mean poster brightness (L*), 5yr rolling", color="#e8e4da"
+        )
         ax.tick_params(colors="#9a958a")
-        for sp in ax.spines.values(): sp.set_color("#2a2a30")
+        for sp in ax.spines.values():
+            sp.set_color("#2a2a30")
         fig.savefig(DATA / "darkness_curve.png", dpi=150, bbox_inches="tight")
     except ImportError:
         print("matplotlib no instalado -- se omite darkness_curve.png")
@@ -150,9 +161,13 @@ def regen_census_decade(exclude_ids=frozenset(), keep=None):
     df = pd.read_csv(p)
     df = _restrict(df[~df.id.isin(exclude_ids)], keep)
     df["decade"] = (df.year // 10) * 10
-    shares = (df.groupby(["decade", "label"]).size()
-                .unstack(fill_value=0)
-                .pipe(lambda x: x.div(x.sum(1), axis=0)).round(4))
+    shares = (
+        df.groupby(["decade", "label"])
+        .size()
+        .unstack(fill_value=0)
+        .pipe(lambda x: x.div(x.sum(1), axis=0))
+        .round(4)
+    )
     shares.reset_index().to_json(DATA / "census_decade.json", orient="records")
     print("regenerado: census_decade.json")
 
@@ -167,8 +182,12 @@ def regen_typography_decade(exclude_ids=frozenset(), keep=None):
     df = _restrict(df[~df.id.isin(exclude_ids)], keep)
     d = df[(df.year >= 1920) & (df.year <= 2029)].copy()
     d["decade"] = (d.year // 10) * 10
-    sh = (d.groupby(["decade", "register"]).size().unstack(fill_value=0)
-            .reindex(columns=REGISTERS, fill_value=0))
+    sh = (
+        d.groupby(["decade", "register"])
+        .size()
+        .unstack(fill_value=0)
+        .reindex(columns=REGISTERS, fill_value=0)
+    )
     share = sh.div(sh.sum(1), axis=0).round(4)
     mean_axis = d.groupby("decade")["axis"].mean().round(5)
     n = sh.sum(1)
@@ -189,10 +208,16 @@ def regen_faces_decade(keep=None):
         return
     d = _restrict(pd.read_csv(p), keep)
     d["decade"] = (d.year // 10) * 10
-    agg = d.groupby("decade").agg(n=("id", "count"),
-                                  mean_faces=("n_faces", "mean"),
-                                  pct_with_face=("n_faces", lambda s: (s > 0).mean()),
-                                  face_area=("face_area", "mean")).round(3)
+    agg = (
+        d.groupby("decade")
+        .agg(
+            n=("id", "count"),
+            mean_faces=("n_faces", "mean"),
+            pct_with_face=("n_faces", lambda s: (s > 0).mean()),
+            face_area=("face_area", "mean"),
+        )
+        .round(3)
+    )
     agg.reset_index().to_json(DATA / "faces_v2_decade.json", orient="records")
     print("regenerado: faces_v2_decade.json")
 
@@ -215,17 +240,28 @@ def main():
     exclude_ids = load_exclude_ids()
 
     print("\nfiltrando CSV/NPZ por-poster...")
-    for name in ["posters.csv", "attributes.csv", "attributes_partial.csv",
-                 "faces_v2.csv", "faces_v2_partial.csv", "census.csv",
-                 "typography.csv", "medium.csv", "segmentation.csv",
-                 "segmentation_partial.csv", "rekognition.csv",
-                 "title_boxes.csv", "title_boxes_rekognition.csv"]:
+    for name in [
+        "posters.csv",
+        "attributes.csv",
+        "attributes_partial.csv",
+        "faces_v2.csv",
+        "faces_v2_partial.csv",
+        "census.csv",
+        "typography.csv",
+        "medium.csv",
+        "segmentation.csv",
+        "segmentation_partial.csv",
+        "rekognition.csv",
+        "title_boxes.csv",
+        "title_boxes_rekognition.csv",
+    ]:
         filter_csv(DATA / name, exclude_ids)
     filter_npz(DATA / "clip_embeddings.npz", exclude_ids)
 
     print("\nreconstruyendo corpus canonico y sitio...")
     import build_corpus
     import build_site
+
     sys.argv = sys.argv[:1]
     build_corpus.main()
     build_site.main()
