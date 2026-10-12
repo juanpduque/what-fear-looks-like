@@ -30,14 +30,14 @@ CARDS = {
         "A poster analysis",
         'What <span class="fear">Fear</span><br>Looks Like',
         "<b>{n}</b> horror posters measured, {y0}–{y1}",
-        "Horror didn't get scarier. It got quieter.",
+        "In 1945, 9 in 10 had a face. Today, fewer than half.",
     ),
     "es": (
         "og-card-es.jpg",
         "Un análisis de afiches",
         'Cómo se ve<br>el <span class="fear">miedo</span>',
         "<b>{n}</b> afiches de terror, de {y0} a {y1}",
-        "El terror bajó la voz.",
+        "En 1945, 9 de cada 10 tenían cara. Hoy, menos de la mitad.",
     ),
 }
 LOGO = SITE / "assets" / "pulp-analytics-red.png"
