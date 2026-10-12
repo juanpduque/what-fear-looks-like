@@ -482,7 +482,7 @@ export function saliencyFor(id) {
 }
 
 export function poseFor(id) {
-  const row = window.POSE && window.POSE[String(id)];
+  const row = (window.POSE && window.POSE[String(id)]) || worldRecord(id)?.pose;
   if (!Array.isArray(row)) return null;
   const [n, spread, asym, conf, kpts, box] = row;
   return {
