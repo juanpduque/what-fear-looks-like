@@ -70,6 +70,7 @@ embeddings. Needs `requirements-ml.txt`.
 | `faces_v2.py` | **Canonical** face detection (YuNet) | no | `faces_v2.csv`, `faces_v2_decade.json` |
 | `multi_analyze.py` | Plugin framework: composition / typography / grid / aesthetic / diagonal | no | `attributes.csv`, `attributes_decade.json` |
 | `segmentation.py` | Material & scene segmentation (SegFormer / Minc / CLIP zero-shot) | no | `segmentation.csv`, `segmentation_decade.json` |
+| `clip_alt_semantics.py` | CLIP zero-shot part of `segmentation.py` (blood, weapon, shadow…) for alternate sheets, streamed from TMDB w500 | no | `qa/clip_sem_alts.csv`, `site/data/poster_alts_clip.json` |
 
 `multi_analyze.py` is the preferred pattern for adding a new metric group:
 each group declares its own output columns, so `--metrics grid` adds a group

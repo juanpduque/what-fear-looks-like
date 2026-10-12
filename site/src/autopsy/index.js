@@ -19,6 +19,7 @@ import {
   ensurePosterAltsFaces,
   ensurePosterAltsOwl,
   ensurePosterAltsText,
+  ensurePosterAltsClip,
   posterAltsFor,
   rekAltFor,
   poseAltFor,
@@ -27,6 +28,8 @@ import {
   facesAltFor,
   owlAltFor,
   textAltFor,
+  clipAltFor,
+  clipSem,
   mediumClFor,
   poseFor,
   saliencyFor,
@@ -369,15 +372,15 @@ function viewAnalysis() {
     a.wboxes = owl.w;
   }
   // lookup.js color numbers belong to the measured sheet: show the alternate's
-  // own pixel stats once analyzeFromUrl has them ('—' until then). CLIP blood
-  // was never scored on alternates.
+  // own pixel stats once analyzeFromUrl has them ('—' until then) and its own
+  // CLIP vocabulary scores ('—' if that sheet was never scored).
   const px = altPixels?.path === path ? altPixels : null;
   a.L = px ? px.L : null;
   a.dark = px ? px.dark : null;
   a.red = px ? px.red : null;
   a.sat = px ? px.sat : null;
   a.bands = px ? px.bands : null;
-  a.sem = { ...(current.a.sem || {}), blood: null };
+  a.sem = clipAltFor(id, path) || {};
   const pose = poseAltFor(id, path);
   a.pose = pose || { n: 0 };
   a.sal = salAltFor(id, path);
@@ -701,9 +704,11 @@ export async function openPoster(p) {
       ensurePosterAltsFaces(),
       ensurePosterAltsOwl(),
       ensurePosterAltsText(),
+      ensurePosterAltsClip(),
     ]);
     if (opening !== id) return;
     const a = { ...(L[String(id)] || {}) };
+    if (a.sem) a.sem = clipSem(a.sem);
     const pose = poseFor(id);
     if (pose) a.pose = pose;
     const sal = saliencyFor(id);
@@ -750,6 +755,7 @@ function wireSearch() {
     ensurePosterAltsFaces();
     ensurePosterAltsOwl();
     ensurePosterAltsText();
+    ensurePosterAltsClip();
     renderSuggest(searchPosters(lkQ.value.trim()));
   });
   lkQ.addEventListener('keydown', (ev) => {
