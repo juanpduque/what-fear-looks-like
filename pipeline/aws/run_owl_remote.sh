@@ -1,7 +1,7 @@
 #!/bin/bash
 set -euo pipefail
 export PATH=/opt/pytorch/bin:$PATH
-export BUCKET=aof-owlv2-102516364259
+export BUCKET="${BUCKET:?set BUCKET to the S3 bucket for this run}"
 cd ~/aof
 mkdir -p pipeline/data/posters site/data pipeline/aws
 tar -xf _owl_stage.tar

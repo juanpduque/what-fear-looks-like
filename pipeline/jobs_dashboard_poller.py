@@ -42,7 +42,7 @@ SITE_MIRROR = REPO / "site" / "jobs-dashboard"
 SANDBOX_BUCKET = "sagemaker-studio-a5572760"
 PUBLIC_BUCKET = "amaleli-website"
 DASH_PREFIX = "wflike-jobs-dashboard"
-OWL_BUCKET = "aof-owlv2-102516364259"
+OWL_BUCKET = os.environ.get("OWL_BUCKET", "")
 OWL_TARGET = 19263
 REGION = "us-east-1"
 
@@ -287,6 +287,9 @@ def poll_owl() -> dict[str, Any]:
         "weapon": None,
         "target": target,
     }
+    if not OWL_BUCKET:
+        job["error"] = "OWL_BUCKET not set"
+        return job
     profile = launch.get("aws_profile") or "default"
     text, err = s3_get_text(
         profile,

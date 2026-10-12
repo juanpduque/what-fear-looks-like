@@ -8,7 +8,7 @@
 #   pipeline/segmentation.py + deps
 set -euo pipefail
 export PATH=/opt/pytorch/bin:$PATH
-export BUCKET="${BUCKET:-aof-owlv2-102516364259}"
+export BUCKET="${BUCKET:?set BUCKET to the S3 bucket for this run}"
 export AWS_DEFAULT_REGION="${AWS_DEFAULT_REGION:-us-east-1}"
 ROOT=/home/ubuntu/aof
 PIPE=$ROOT/pipeline
