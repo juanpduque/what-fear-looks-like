@@ -36,8 +36,8 @@ CARDS = {
         "og-card-es.jpg",
         "Un análisis de afiches",
         'Cómo se ve<br>el <span class="fear">miedo</span>',
-        "<b>{n}</b> afiches de terror medidos, {y0}–{y1}",
-        "El terror no se volvió más aterrador. Bajó la voz.",
+        "<b>{n}</b> afiches de terror, de {y0} a {y1}",
+        "El terror bajó la voz.",
     ),
 }
 LOGO = SITE / "assets" / "pulp-analytics-red.png"
