@@ -40,12 +40,24 @@ export default [
   },
   {
     // Build config runs in Node (CJS-style __dirname is injected by Vite).
-    files: ['vite.config.js', 'eslint.config.js'],
+    files: ['vite.config.js', 'eslint.config.js', 'playwright.config.js'],
     languageOptions: {
       ecmaVersion: 2022,
       sourceType: 'module',
       globals: {
         ...globals.node,
+      },
+    },
+  },
+  {
+    // Playwright specs run in Node; page.evaluate() callbacks run in the browser.
+    files: ['tests/**/*.js'],
+    languageOptions: {
+      ecmaVersion: 2022,
+      sourceType: 'module',
+      globals: {
+        ...globals.node,
+        ...globals.browser,
       },
     },
   },

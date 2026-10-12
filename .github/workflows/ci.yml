@@ -45,3 +45,24 @@ jobs:
       - name: Prettier (advisory until the codebase is formatted)
         working-directory: site
         run: npm run format:check || true
+
+  browser:
+    name: Site — browser smoke tests
+    runs-on: ubuntu-latest
+    steps:
+      # No LFS: the tests must not depend on local poster files.
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: "22"
+          cache: npm
+          cache-dependency-path: site/package-lock.json
+      - name: Install
+        working-directory: site
+        run: npm ci
+      - name: Install Chromium
+        working-directory: site
+        run: npx playwright install --with-deps chromium
+      - name: Smoke tests (build + preview, then essay / autopsy / studios)
+        working-directory: site
+        run: npx playwright test
