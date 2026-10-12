@@ -1,6 +1,6 @@
 #!/bin/bash
 set -euo pipefail
-BUCKET=aof-owlv2-102516364259
+BUCKET="${BUCKET:?set BUCKET to the S3 bucket for this run}"
 DONE=/home/ubuntu/aof/pipeline/data/owlv2_DONE
 JSON=/home/ubuntu/aof/pipeline/data/creature_boxes.json
 JS=/home/ubuntu/aof/site/data/creature_boxes.js

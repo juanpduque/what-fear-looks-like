@@ -32,8 +32,8 @@ from botocore.exceptions import ClientError
 
 REGION = "us-east-1"
 # No hardcoded cross-account defaults here on purpose: this project has already moved
-# AWS sandbox accounts once this session (a prior sandbox, 567596065542, expired and
-# was replaced by 306059520258), and a baked-in ARN/bucket from a dead account fails
+# AWS sandbox accounts once already (a prior sandbox expired and was replaced), and a
+# baked-in ARN/bucket from a dead account fails
 # with a confusing "Cross account access not allowed" instead of a clear "set the env
 # var" error. VERSION_ARN / PROJECT_ARN / POSTER_BUCKET / POSTER_PREFIX must be passed
 # via --flag or env var every time.

@@ -2,7 +2,8 @@
 # cloud-init: pull seg_drift payload from S3 and run GPU segmentation chain
 exec > >(tee /home/ubuntu/seg_drift_userdata.log) 2>&1
 set -euo pipefail
-export BUCKET=aof-owlv2-102516364259
+# The launcher prepends `export BUCKET=<bucket>` to this user-data.
+export BUCKET="${BUCKET:?BUCKET not set in user-data}"
 export AWS_DEFAULT_REGION=us-east-1
 export PATH=/opt/pytorch/bin:/usr/local/bin:$PATH
 

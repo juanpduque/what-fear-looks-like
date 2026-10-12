@@ -2,7 +2,7 @@
 # Finish segmentation (SegFormer + Minc + CLIP patches) for missing posters, upload, halt.
 set -euo pipefail
 export PATH=/opt/pytorch/bin:$PATH
-export BUCKET=aof-owlv2-102516364259
+export BUCKET="${BUCKET:?set BUCKET to the S3 bucket for this run}"
 ROOT=/home/ubuntu/aof
 PIPE=$ROOT/pipeline
 LOG=$PIPE/data/segmentation_aws.log

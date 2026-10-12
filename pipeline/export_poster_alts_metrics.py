@@ -20,6 +20,7 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import os
 import subprocess
 from concurrent.futures import ThreadPoolExecutor, as_completed
 from pathlib import Path
@@ -36,7 +37,8 @@ POSE_OUT = SITE_DATA / "poster_alts_pose.json"
 SAL_OUT = SITE_DATA / "poster_alts_sal.json"
 COMP_OUT = SITE_DATA / "poster_alts_comp.json"
 MAPS_DIR = QA / "saliency_alts" / "maps"
-BUCKET = "wflike-workshop-posters-633183588025"
+# Workshop bucket holding the alternate-sheet shard results (--from-s3 / --maps).
+BUCKET = os.environ.get("ALTS_BUCKET", "")
 POSE_SHARDS = 12
 MSINET_SHARDS = 8
 
@@ -309,6 +311,8 @@ def main() -> None:
     ap.add_argument("--maps", action="store_true", help="download MSI-Net maps for poster_alts peek paths")
     ap.add_argument("--skip-merge", action="store_true")
     args = ap.parse_args()
+    if (args.from_s3 or args.maps) and not BUCKET:
+        raise SystemExit("set ALTS_BUCKET to the bucket holding the shard results")
     if args.from_s3:
         pull_shards()
     if not args.skip_merge:

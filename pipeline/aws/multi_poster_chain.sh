@@ -1,7 +1,7 @@
 #!/bin/bash
 # Multi-poster pipeline on EC2: discover → download → embed → select → S3 → halt.
 set -euo pipefail
-export BUCKET="${BUCKET:-aof-owlv2-102516364259}"
+export BUCKET="${BUCKET:?set BUCKET to the S3 bucket for this run}"
 export AWS_DEFAULT_REGION="${AWS_DEFAULT_REGION:-us-east-1}"
 ROOT=/home/ubuntu/aof
 PIPE=$ROOT/pipeline

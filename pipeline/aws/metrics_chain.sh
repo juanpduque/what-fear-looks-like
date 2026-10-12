@@ -2,7 +2,7 @@
 # After OWL finishes: extend corpus metrics for 2023–2025 newcomers, upload to S3, halt.
 set -euo pipefail
 export PATH=/opt/pytorch/bin:$PATH
-export BUCKET=aof-owlv2-102516364259
+export BUCKET="${BUCKET:?set BUCKET to the S3 bucket for this run}"
 ROOT=/home/ubuntu/aof
 PIPE=$ROOT/pipeline
 LOG=$PIPE/data/metrics_chain.log

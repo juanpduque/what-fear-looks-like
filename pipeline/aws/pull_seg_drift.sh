@@ -5,7 +5,7 @@ set -euo pipefail
 export AWS_DEFAULT_REGION="${AWS_DEFAULT_REGION:-us-east-1}"
 export AWS_EC2_METADATA_DISABLED=true
 unset HTTP_PROXY HTTPS_PROXY ALL_PROXY http_proxy https_proxy all_proxy
-BUCKET="${BUCKET:-aof-owlv2-102516364259}"
+BUCKET="${BUCKET:?set BUCKET to the S3 bucket for this run}"
 PIPE="$(cd "$(dirname "$0")/.." && pwd)"
 cd "$PIPE"
 

@@ -10,7 +10,7 @@ Default id list: data/qa/gap_yunet0_rek_faces_ids.txt (~10.5k).
 Usage:
   export AWS_PROFILE=sandbox_bedrock
   export AWS_DEFAULT_REGION=us-east-1
-  export S3_BUCKET=wflike-workshop-posters-633183588025
+  export S3_BUCKET=<poster bucket>
 
   # dry-run sample
   python3 rekognition_face_boxes_backfill.py --sample 20 --dry-run
@@ -43,7 +43,7 @@ OUT = DATA / "rekognition_face_boxes.csv"
 CHECKPOINT = DATA / "rekognition_face_boxes_checkpoint.json"
 
 REGION = os.environ.get("AWS_DEFAULT_REGION", "us-east-1")
-BUCKET = os.environ.get("S3_BUCKET", "wflike-workshop-posters-633183588025")
+BUCKET = os.environ.get("S3_BUCKET", "")
 PREFIX = os.environ.get("S3_PREFIX", "posters")
 
 
@@ -194,6 +194,8 @@ def main():
         todo = todo[: args.sample]
     local_dir = Path(args.local_dir) if args.local_dir else None
     use_s3 = not args.no_s3
+    if use_s3 and not BUCKET:
+        raise SystemExit("set S3_BUCKET (or pass --no-s3 with --local-dir)")
 
     print(f"ids={len(ids)} done={len(done)} todo={len(todo)}")
     print(f"bucket={BUCKET} prefix={PREFIX} region={REGION}")
