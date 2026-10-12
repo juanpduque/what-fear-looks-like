@@ -16,6 +16,7 @@ en --out-dir.
 
 No llama APIs: reutiliza artefactos locales (imdb_ids, drift, horror_movies, match CSVs).
 """
+
 from __future__ import annotations
 
 import argparse
@@ -55,6 +56,7 @@ class HardFail(Exception):
 # ---------------------------------------------------------------------------
 # helpers
 # ---------------------------------------------------------------------------
+
 
 def load_exclude_ids() -> set[int]:
     ids: set[int] = set()
@@ -108,6 +110,7 @@ def ok(msg: str) -> None:
 # ---------------------------------------------------------------------------
 # capa 1 — fail hard
 # ---------------------------------------------------------------------------
+
 
 def layer1(posters: pd.DataFrame) -> int:
     """Assert structural integrity. Returns corpus n. Raises HardFail."""
@@ -164,9 +167,7 @@ def layer1(posters: pd.DataFrame) -> int:
     miss = post_ids - emb_ids
     extra = emb_ids - post_ids
     if miss or extra:
-        raise HardFail(
-            f"clip_embeddings.npz: miss={len(miss):,} extra={len(extra):,}"
-        )
+        raise HardFail(f"clip_embeddings.npz: miss={len(miss):,} extra={len(extra):,}")
     ok(f"clip_embeddings.npz: {len(emb_ids):,} alineado")
 
     # published n
@@ -231,10 +232,7 @@ def layer1(posters: pd.DataFrame) -> int:
     if miss_jpg:
         raise HardFail(f"{len(miss_jpg):,} JPG faltantes (ej. {miss_jpg[:8]})")
     if corrupt:
-        raise HardFail(
-            f"{len(corrupt):,} JPG corruptos "
-            f"(ej. {corrupt[0][0]}: {corrupt[0][1]})"
-        )
+        raise HardFail(f"{len(corrupt):,} JPG corruptos (ej. {corrupt[0][0]}: {corrupt[0][1]})")
     if landscape:
         sample = landscape[:8]
         raise HardFail(
@@ -251,6 +249,7 @@ def layer1(posters: pd.DataFrame) -> int:
 # ---------------------------------------------------------------------------
 # capa 2 — identidad (soft)
 # ---------------------------------------------------------------------------
+
 
 def layer2(posters: pd.DataFrame, out_dir: Path, warnings: list[str]) -> None:
     print("\n=== CAPA 2 (identidad, soft) ===")
@@ -287,9 +286,7 @@ def layer2(posters: pd.DataFrame, out_dir: Path, warnings: list[str]) -> None:
         )
 
         # Feature backlog only (tt == imdb_id). Shorts without tt are expected noise.
-        feat_miss = missing[
-            missing["runtime"].notna() & (missing["runtime"] > SHORT_RUNTIME)
-        ]
+        feat_miss = missing[missing["runtime"].notna() & (missing["runtime"] > SHORT_RUNTIME)]
         short_miss = missing[
             missing["runtime"].notna()
             & (missing["runtime"] > 0)
@@ -306,18 +303,8 @@ def layer2(posters: pd.DataFrame, out_dir: Path, warnings: list[str]) -> None:
             short_miss[["id", "title", "year", "runtime", "imdb_id"]],
         )
 
-        n_feat = int(
-            (
-                m["runtime"].notna() & (m["runtime"] > SHORT_RUNTIME)
-            ).sum()
-        )
-        n_feat_ok = int(
-            (
-                m["tt_ok"]
-                & m["runtime"].notna()
-                & (m["runtime"] > SHORT_RUNTIME)
-            ).sum()
-        )
+        n_feat = int((m["runtime"].notna() & (m["runtime"] > SHORT_RUNTIME)).sum())
+        n_feat_ok = int((m["tt_ok"] & m["runtime"].notna() & (m["runtime"] > SHORT_RUNTIME)).sum())
         if n_feat:
             pct = 100.0 * len(feat_miss) / n_feat
             warn(
@@ -367,9 +354,7 @@ def layer2(posters: pd.DataFrame, out_dir: Path, warnings: list[str]) -> None:
     if runtime is not None:
         m = meta.merge(runtime, on="id", how="left")
         bad = m[m["runtime"].isna() | (m["runtime"] <= 0)].copy()
-        bad["runtime_status"] = np.where(
-            bad["runtime"].isna(), "missing", "zero"
-        )
+        bad["runtime_status"] = np.where(bad["runtime"].isna(), "missing", "zero")
         write_csv(
             out_dir / "runtime_missing.csv",
             bad[["id", "title", "year", "runtime", "runtime_status"]],
@@ -381,11 +366,7 @@ def layer2(posters: pd.DataFrame, out_dir: Path, warnings: list[str]) -> None:
             f"→ {out_dir / 'runtime_missing.csv'}",
             warnings,
         )
-        shorts = m[
-            m["runtime"].notna()
-            & (m["runtime"] > 0)
-            & (m["runtime"] <= SHORT_RUNTIME)
-        ]
+        shorts = m[m["runtime"].notna() & (m["runtime"] > 0) & (m["runtime"] <= SHORT_RUNTIME)]
         feats = m[m["runtime"].notna() & (m["runtime"] > SHORT_RUNTIME)]
         info(
             f"capa 2: features={len(feats):,} shorts(1–{SHORT_RUNTIME})="
@@ -408,6 +389,7 @@ def _runtime_frame() -> pd.DataFrame | None:
 # ---------------------------------------------------------------------------
 # capa 3 — artwork (soft)
 # ---------------------------------------------------------------------------
+
 
 def layer3(posters: pd.DataFrame, out_dir: Path, warnings: list[str]) -> None:
     print("\n=== CAPA 3 (artwork, soft) ===")
@@ -529,15 +511,14 @@ def layer3(posters: pd.DataFrame, out_dir: Path, warnings: list[str]) -> None:
 
     qdir = DATA / "posters_quarantine_landscape"
     if qdir.exists():
-        qids = sorted(
-            int(p.stem) for p in qdir.glob("*.jpg") if p.stem.isdigit()
-        )
+        qids = sorted(int(p.stem) for p in qdir.glob("*.jpg") if p.stem.isdigit())
         info(f"capa 3: quarantine dir tiene {len(qids)} jpg (informativo)")
 
 
 # ---------------------------------------------------------------------------
 # main
 # ---------------------------------------------------------------------------
+
 
 def parse_layers(s: str) -> set[int]:
     out: set[int] = set()
@@ -555,7 +536,9 @@ def parse_layers(s: str) -> set[int]:
 
 
 def main() -> int:
-    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     ap.add_argument(
         "--layers",
         default="1",

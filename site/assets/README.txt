@@ -16,5 +16,6 @@ VARIANTES DISPONIBLES (subidas, por si querés cambiar):
   logorojo.png         wordmark rojo sobre fondo BLANCO -> fuente de pulp-analytics-red.png
 
 IMAGEN SOCIAL:
-  og-card.jpg  (1200x630) imagen al compartir el link (og:image / twitter:image).
-               Se genera con scripts/make_og_card.py; volver a correrlo si cambia el corpus.
+  og-card.jpg     (1200x630) imagen al compartir el link en inglés (index.html).
+  og-card-es.jpg  (1200x630) versión en español (es/index.html, la URL /es/).
+                  Las dos salen de scripts/make_og_card.py; volver a correrlo si cambia el corpus.

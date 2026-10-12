@@ -16,6 +16,7 @@ Does NOT re-run vision metrics — see reanalyze_poster_ids.py.
   python3 apply_poster_primary_drift.py              # all mismatches
   python3 apply_poster_primary_drift.py --live        # re-query TMDB before apply
 """
+
 from __future__ import annotations
 
 import argparse
@@ -182,14 +183,9 @@ def apply_one(
 def update_path_tables(applied: pd.DataFrame) -> None:
     """Point horror_movies + backfill at current_path for applied ids."""
     path_map = {
-        int(r.id): str(r.current_path)
-        for r in applied.itertuples(index=False)
-        if r.status == "ok"
+        int(r.id): str(r.current_path) for r in applied.itertuples(index=False) if r.status == "ok"
     }
-    meta = {
-        int(r.id): (r.title, r.year)
-        for r in applied.itertuples(index=False)
-    }
+    meta = {int(r.id): (r.title, r.year) for r in applied.itertuples(index=False)}
     if not path_map:
         return
 
@@ -230,9 +226,7 @@ def update_path_tables(applied: pd.DataFrame) -> None:
 def update_multi_tables(applied: pd.DataFrame) -> None:
     """Mark API primary as is_primary / canonical for applied ids."""
     path_map = {
-        int(r.id): str(r.current_path)
-        for r in applied.itertuples(index=False)
-        if r.status == "ok"
+        int(r.id): str(r.current_path) for r in applied.itertuples(index=False) if r.status == "ok"
     }
     if not path_map:
         return
@@ -287,7 +281,9 @@ def update_multi_tables(applied: pd.DataFrame) -> None:
 
 
 def main():
-    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--live", action="store_true", help="re-query TMDB poster_path before apply")
@@ -331,7 +327,9 @@ def main():
     dry = (out["status"] == "dry_run").sum()
     fail = (out["status"] == "download_fail").sum()
     print(f"wrote {LOG}")
-    print(f"ok={ok:,} dry_run={dry:,} download_fail={fail:,} archived={int(out.archived_old.sum()):,}")
+    print(
+        f"ok={ok:,} dry_run={dry:,} download_fail={fail:,} archived={int(out.archived_old.sum()):,}"
+    )
 
     if args.dry_run:
         print("dry-run: no path tables updated")
@@ -344,7 +342,9 @@ def main():
     ids_path = DATA / "qa" / "primary_drift_reanalyze_ids.csv"
     applied_ok[["id", "title", "year"]].to_csv(ids_path, index=False)
     print(f"reanalyze list → {ids_path} ({len(applied_ok):,} ids)")
-    print("next: python3 reanalyze_poster_ids.py --ids-file data/qa/primary_drift_reanalyze_ids.csv")
+    print(
+        "next: python3 reanalyze_poster_ids.py --ids-file data/qa/primary_drift_reanalyze_ids.csv"
+    )
 
 
 if __name__ == "__main__":

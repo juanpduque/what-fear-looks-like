@@ -15,6 +15,7 @@ lookup.js picks up the same scores (its `sal` field).
   python3 export_saliency_webp.py
   python3 export_saliency_webp.py --quality 80
 """
+
 from __future__ import annotations
 
 import argparse

@@ -1,0 +1,8 @@
+# Formatting-only commits; skip them in git blame:
+#   git config blame.ignoreRevsFile .git-blame-ignore-revs
+# (GitHub's blame view reads this file automatically.)
+
+# ruff format over pipeline/
+61ad13845c9a64cdac125db735064f1dcddd41e8
+# Prettier over site/ JS and CSS
+ca4ef1ddb969123d4eabfd2a5d835726e0f5faee

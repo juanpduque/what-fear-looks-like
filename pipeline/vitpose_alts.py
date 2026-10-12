@@ -5,6 +5,7 @@ Keyed by (id, file_path). Does not rewrite pose_score_kpts.csv of the measured c
 
   python3 vitpose_alts.py --jobs-file data/qa/alts_comp_catalog/jobs.csv --out /tmp/pose.csv
 """
+
 from __future__ import annotations
 
 import argparse
@@ -120,8 +121,8 @@ def main() -> int:
     ap.add_argument("--keep-jpg", action="store_true")
     args = ap.parse_args()
 
-    from ultralytics import YOLO
     from transformers import AutoProcessor, VitPoseForPoseEstimation
+    from ultralytics import YOLO
 
     print("loading YOLOv8n...", flush=True)
     yolo = YOLO("yolov8n.pt")
@@ -162,8 +163,14 @@ def main() -> int:
             yres = yolo(str(dest), classes=[0], verbose=False)
             boxes = yres[0].boxes.xyxy.cpu().numpy().tolist() if yres[0].boxes is not None else []
             row = empty_row(
-                pid, fp, sha256=sha, n_persons=len(boxes), img_w=w, img_h=h,
-                status="ok", error="",
+                pid,
+                fp,
+                sha256=sha,
+                n_persons=len(boxes),
+                img_w=w,
+                img_h=h,
+                status="ok",
+                error="",
             )
             if boxes:
                 boxes.sort(key=lambda b: (b[2] - b[0]) * (b[3] - b[1]), reverse=True)
@@ -178,11 +185,13 @@ def main() -> int:
                     kpts = person["keypoints"].numpy()
                     scores = person["scores"].numpy()
                     met = compute_metrics(kpts, scores, box)
-                    packed.append({
-                        "box": [round(float(c), 1) for c in box],
-                        "keypoints": encode_kpts(kpts, scores),
-                        "metrics": met,
-                    })
+                    packed.append(
+                        {
+                            "box": [round(float(c), 1) for c in box],
+                            "keypoints": encode_kpts(kpts, scores),
+                            "metrics": met,
+                        }
+                    )
                 mets = [p["metrics"] for p in packed]
                 idx = primary_index(use, mets, w, h)
                 chosen = packed[idx]
@@ -204,7 +213,9 @@ def main() -> int:
             n_ok += 1
         except Exception as e:
             n_err += 1
-            writer.writerow(empty_row(pid, fp, status="error", error=f"{type(e).__name__}: {e}"[:240]))
+            writer.writerow(
+                empty_row(pid, fp, status="error", error=f"{type(e).__name__}: {e}"[:240])
+            )
             if n_err <= 8:
                 print(f"  FAIL {pid} {fp}: {e}", flush=True)
         finally:
@@ -222,7 +233,7 @@ def main() -> int:
                 flush=True,
             )
     f_out.close()
-    print(f"LISTO ok={n_ok} 404={n_404} err={n_err} have={len(done)+n_ok+n_404}", flush=True)
+    print(f"LISTO ok={n_ok} 404={n_404} err={n_err} have={len(done) + n_ok + n_404}", flush=True)
     if n_err >= 50 and n_err >= max(n_ok, 1) * 5:
         return 2
     return 0

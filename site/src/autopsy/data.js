@@ -329,7 +329,11 @@ const TEXT_CACHE = { p: null };
 const CLIP_CACHE = { p: null };
 
 export function ensurePosterAltsFaces() {
-  POSTER_ALTS_FACES_P = ensureAltJson('POSTER_ALTS_FACES', 'data/poster_alts_faces.json', FACES_CACHE);
+  POSTER_ALTS_FACES_P = ensureAltJson(
+    'POSTER_ALTS_FACES',
+    'data/poster_alts_faces.json',
+    FACES_CACHE,
+  );
   return POSTER_ALTS_FACES_P;
 }
 

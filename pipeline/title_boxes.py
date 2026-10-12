@@ -12,9 +12,12 @@ with a geometry fallback when recognition is messy but a title bar is obvious.
 
 Outputs: data/title_boxes.csv
 """
+
 from __future__ import annotations
 
-import argparse, re, time
+import argparse
+import re
+import time
 from difflib import SequenceMatcher
 from pathlib import Path
 
@@ -33,6 +36,7 @@ def _reader():
     global _READER
     if _READER is None:
         import easyocr
+
         _READER = easyocr.Reader(["en"], gpu=False, verbose=False)
     return _READER
 
@@ -248,10 +252,17 @@ def _dets_from_readtext(res, H, W, title):
         x0, x1 = float(min(xs)), float(max(xs))
         y0, y1 = float(min(ys)), float(max(ys))
         match = _fuzzy_title(text, title)
-        dets.append({
-            "text": text, "conf": float(conf), "match": match,
-            "x0": x0, "y0": y0, "x1": x1, "y1": y1,
-        })
+        dets.append(
+            {
+                "text": text,
+                "conf": float(conf),
+                "match": match,
+                "x0": x0,
+                "y0": y0,
+                "x1": x1,
+                "y1": y1,
+            }
+        )
     return dets
 
 
@@ -261,9 +272,7 @@ def locate_title(path: Path, title: str):
         return None
     H, W = img.shape[:2]
     reader = _reader()
-    dets = _dets_from_readtext(
-        reader.readtext(str(path), detail=1, paragraph=False), H, W, title
-    )
+    dets = _dets_from_readtext(reader.readtext(str(path), detail=1, paragraph=False), H, W, title)
     best = _best_recognition_box(dets, H, W, title)
     if best is not None and best["score"] >= 0.35:
         return best
@@ -274,18 +283,18 @@ def locate_title(path: Path, title: str):
     if best is None and (geo is None or geo["score"] < 0.8):
         hsv = cv2.cvtColor(img, cv2.COLOR_BGR2HSV)
         boost = cv2.cvtColor(
-            cv2.merge([
-                hsv[:, :, 0],
-                cv2.max(hsv[:, :, 1], 180),
-                cv2.max(hsv[:, :, 2], 160),
-            ]),
+            cv2.merge(
+                [
+                    hsv[:, :, 0],
+                    cv2.max(hsv[:, :, 1], 180),
+                    cv2.max(hsv[:, :, 2], 160),
+                ]
+            ),
             cv2.COLOR_HSV2BGR,
         )
         gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
         boost = cv2.addWeighted(boost, 0.65, cv2.cvtColor(gray, cv2.COLOR_GRAY2BGR), 0.35, 0)
-        dets2 = _dets_from_readtext(
-            reader.readtext(boost, detail=1, paragraph=False), H, W, title
-        )
+        dets2 = _dets_from_readtext(reader.readtext(boost, detail=1, paragraph=False), H, W, title)
         alt = _best_recognition_box(dets + dets2, H, W, title)
         if alt is not None and (best is None or alt["score"] > best["score"]):
             best = alt
@@ -332,16 +341,21 @@ def main():
     ap.add_argument("--merge", action="store_true")
     ap.add_argument("--lookup", action="store_true")
     ap.add_argument("--merge-only", action="store_true")
-    ap.add_argument("--retry-misses", action="store_true",
-                    help="recompute rows that currently have no title box")
-    ap.add_argument("--live-lookup", action="store_true",
-                    help="rebuild lookup.js on every checkpoint save")
+    ap.add_argument(
+        "--retry-misses",
+        action="store_true",
+        help="recompute rows that currently have no title box",
+    )
+    ap.add_argument(
+        "--live-lookup", action="store_true", help="rebuild lookup.js on every checkpoint save"
+    )
     args = ap.parse_args()
 
     if args.merge_only:
         merge_into_attributes(pd.read_csv(OUT), reset=True)
         if args.lookup:
             import build_lookup
+
             build_lookup.main()
         return
 
@@ -352,8 +366,10 @@ def main():
     elif args.sample:
         meta = meta.sample(args.sample, random_state=42)
 
-    existing = pd.read_csv(OUT) if OUT.exists() else pd.DataFrame(
-        columns=["id", "text_x", "text_top", "text_w", "text_h", "ocr", "score"]
+    existing = (
+        pd.read_csv(OUT)
+        if OUT.exists()
+        else pd.DataFrame(columns=["id", "text_x", "text_top", "text_w", "text_h", "ocr", "score"])
     )
     rows = {int(r["id"]): dict(r) for r in existing.to_dict("records")} if len(existing) else {}
 
@@ -380,8 +396,9 @@ def main():
             print(f"fail {pid}: {e}")
             box = None
         if box is None:
-            row = dict(id=pid, text_x=-1.0, text_top=-1.0, text_w=-1.0, text_h=-1.0,
-                       ocr="", score=0.0)
+            row = dict(
+                id=pid, text_x=-1.0, text_top=-1.0, text_w=-1.0, text_h=-1.0, ocr="", score=0.0
+            )
         else:
             row = dict(id=pid, **box)
         rows[pid] = row
@@ -389,15 +406,18 @@ def main():
         n_new += 1
         if n_new % 10 == 0:
             rate = n_new / max(time.time() - t0, 1e-6)
-            print(f"{n_new} new | {pid} {str(r.title)[:28]!r} -> "
-                  f"top={row['text_top']} ocr={row.get('ocr', '')!r} | {rate:.2f}/s",
-                  flush=True)
+            print(
+                f"{n_new} new | {pid} {str(r.title)[:28]!r} -> "
+                f"top={row['text_top']} ocr={row.get('ocr', '')!r} | {rate:.2f}/s",
+                flush=True,
+            )
         if n_new % args.save_every == 0:
             pd.DataFrame(rows.values()).to_csv(OUT, index=False)
             if args.merge or args.live_lookup:
                 merge_into_attributes(pd.DataFrame(rows.values()), reset=False)
             if args.live_lookup:
                 import build_lookup
+
                 build_lookup.main()
 
     pd.DataFrame(rows.values()).to_csv(OUT, index=False)
@@ -409,6 +429,7 @@ def main():
         merge_into_attributes(chunk if not full else pd.read_csv(OUT), reset=full)
     if args.lookup or args.live_lookup:
         import build_lookup
+
         build_lookup.main()
 
 

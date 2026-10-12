@@ -10,6 +10,7 @@ and writes site/ocr-title-review.html — local labeling with localStorage + CSV
 Images use absolute TMDB CDN URLs (required for GitHub Pages). Missing paths
 are backfilled via TMDB_API_KEY when available.
 """
+
 from __future__ import annotations
 
 import json
@@ -91,9 +92,7 @@ def backfill_paths(need: list[int], paths: dict[int, str]) -> int:
     filled = 0
     with requests.Session() as session:
         with ThreadPoolExecutor(max_workers=8) as pool:
-            futs = {
-                pool.submit(fetch_poster_path, session, api_key, pid): pid for pid in need
-            }
+            futs = {pool.submit(fetch_poster_path, session, api_key, pid): pid for pid in need}
             for i, fut in enumerate(as_completed(futs), 1):
                 pid = futs[fut]
                 try:
@@ -110,9 +109,7 @@ def backfill_paths(need: list[int], paths: dict[int, str]) -> int:
 
 def main() -> None:
     if not SRC.exists():
-        raise SystemExit(
-            f"falta {SRC} — regenerá el mismatch CSV desde poster_ocr.csv primero"
-        )
+        raise SystemExit(f"falta {SRC} — regenerá el mismatch CSV desde poster_ocr.csv primero")
     df = pd.read_csv(SRC)
     need_cols = {"id", "title", "year", "score", "full_ocr"}
     missing = need_cols - set(df.columns)
@@ -164,9 +161,7 @@ def main() -> None:
     # Prefer rows with images; within that, worst score first
     rows.sort(key=lambda x: (0 if x["img"] else 1, x["score"], x["year"], x["id"]))
     # Escape < so OCR never breaks </script> embedding
-    payload = json.dumps(rows, ensure_ascii=False, separators=(",", ":")).replace(
-        "<", "\\u003c"
-    )
+    payload = json.dumps(rows, ensure_ascii=False, separators=(",", ":")).replace("<", "\\u003c")
     html = HTML.replace("__N__", str(len(rows))).replace("__DATA__", payload)
     OUT.write_text(html, encoding="utf-8")
     print(

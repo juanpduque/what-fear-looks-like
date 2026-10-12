@@ -18,6 +18,7 @@ Pages and images are cached (polite: ~4 requests/s to IMPAwards).
   python3 verify_impawards_credits.py --cache /tmp/impawards_cache
 Writes data/qa/impawards_credit_verify.csv
 """
+
 from __future__ import annotations
 
 import argparse
@@ -46,8 +47,19 @@ OUT = DATA / "qa" / "impawards_credit_verify.csv"
 UA = "Mozilla/5.0 (research; what-fear-looks-like)"
 TMDB = "https://image.tmdb.org/t/p/w342"
 CLOSE_MAX = 23
-FIELDS = ["id", "title", "year", "matched_year", "designer", "impawards_url",
-          "page_imdb", "film_imdb", "dhash_dist", "verdict", "reason"]
+FIELDS = [
+    "id",
+    "title",
+    "year",
+    "matched_year",
+    "designer",
+    "impawards_url",
+    "page_imdb",
+    "film_imdb",
+    "dhash_dist",
+    "verdict",
+    "reason",
+]
 
 _lock = threading.Lock()
 _last = [0.0]
@@ -70,15 +82,19 @@ def fetch(url: str, cache: Path, polite: bool) -> bytes:
 
 
 def dhash(data: bytes, n: int = 8) -> np.ndarray:
-    g = np.asarray(Image.open(io.BytesIO(data)).convert("L").resize((n + 1, n), Image.LANCZOS), dtype=np.int16)
+    g = np.asarray(
+        Image.open(io.BytesIO(data)).convert("L").resize((n + 1, n), Image.LANCZOS), dtype=np.int16
+    )
     return (g[:, 1:] > g[:, :-1]).flatten()
 
 
 def tmdb_paths() -> dict[str, list[str]]:
     text = (SITE_DATA / "explorer.js").read_text(encoding="utf-8")
-    rows = json.loads(text[text.index("const POSTERS=") + 14:].rstrip().rstrip(";"))
+    rows = json.loads(text[text.index("const POSTERS=") + 14 :].rstrip().rstrip(";"))
     paths = {str(r[7]): [r[2]] if r[2] else [] for r in rows}
-    for pid, alts in json.loads((SITE_DATA / "poster_alts.json").read_text(encoding="utf-8")).items():
+    for pid, alts in json.loads(
+        (SITE_DATA / "poster_alts.json").read_text(encoding="utf-8")
+    ).items():
         for alt in alts:
             if alt[0] not in paths.setdefault(pid, []):
                 paths[pid].append(alt[0])
@@ -95,7 +111,8 @@ def main() -> None:
     imdb = {r["id"]: r["imdb_id"] for r in csv.DictReader(IMDB_IDS.open(encoding="utf-8"))}
     paths = tmdb_paths()
     rows = [
-        r for r in csv.DictReader(CREDITS.open(encoding="utf-8"))
+        r
+        for r in csv.DictReader(CREDITS.open(encoding="utf-8"))
         if r["id"] in keep and r["status"] == "matched" and r["poster_designer"].strip()
     ]
 
@@ -114,7 +131,9 @@ def main() -> None:
             ih = dhash(fetch(r["poster_image_urls"].split("|")[0], args.cache, polite=True))
             for p in paths.get(r["id"], []):
                 try:
-                    dist = min(dist, int((ih != dhash(fetch(TMDB + p, args.cache, polite=False))).sum()))
+                    dist = min(
+                        dist, int((ih != dhash(fetch(TMDB + p, args.cache, polite=False))).sum())
+                    )
                 except OSError:
                     continue
         except OSError:
@@ -125,7 +144,9 @@ def main() -> None:
             out["reason"] = "imdb_match" if ok else "imdb_mismatch"
         else:
             ok = dist <= CLOSE_MAX or r["year"] == r["matched_year"]
-            out["reason"] = ("image_close" if dist <= CLOSE_MAX else "year_exact") if ok else "no_evidence"
+            out["reason"] = (
+                ("image_close" if dist <= CLOSE_MAX else "year_exact") if ok else "no_evidence"
+            )
         out["verdict"] = "keep" if ok else "drop"
         return out
 

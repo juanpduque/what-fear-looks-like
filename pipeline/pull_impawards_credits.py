@@ -13,6 +13,7 @@ job can be stopped (closed laptop, etc.) and continued later in batches.
   python3 pull_impawards_credits.py --workers 6          # continue full run
   python3 pull_impawards_credits.py --rate 6              # max requests/sec
 """
+
 from __future__ import annotations
 
 import argparse
@@ -33,20 +34,35 @@ HEADERS = {
     "User-Agent": "Mozilla/5.0 (compatible; PulpAnalytics-AnatomyOfFear/1.0; +personal research)",
 }
 FIELDNAMES = [
-    "id", "title", "year", "status", "matched_year", "impawards_url",
-    "poster_designer", "poster_illustrator", "poster_image_urls",
+    "id",
+    "title",
+    "year",
+    "status",
+    "matched_year",
+    "impawards_url",
+    "poster_designer",
+    "poster_illustrator",
+    "poster_image_urls",
 ]
 
 TITLE_YEAR_RE = re.compile(r">\s*([^<>]{1,150}?)\s*\((\d{4})\)\s*<")
 # credit text is usually wrapped in a link: `Poster design by <a href=...>Name</a>`
 DESIGN_RE = re.compile(r"Poster design by\s*:?\s*(?:<a[^>]*>)?([^<]{1,100})", re.IGNORECASE)
-ILLUSTRATION_RE = re.compile(r"Poster illustration by\s*:?\s*(?:<a[^>]*>)?([^<]{1,100})", re.IGNORECASE)
+ILLUSTRATION_RE = re.compile(
+    r"Poster illustration by\s*:?\s*(?:<a[^>]*>)?([^<]{1,100})", re.IGNORECASE
+)
 POSTER_JPG_RE = re.compile(r'(?:href|src)\s*=\s*"?posters/([a-z0-9_]+\.jpg)', re.IGNORECASE)
 
 
 NUMERAL_WORDS = {
-    "2": "two", "3": "three", "4": "four", "5": "five",
-    "6": "six", "7": "seven", "8": "eight", "9": "nine",
+    "2": "two",
+    "3": "three",
+    "4": "four",
+    "5": "five",
+    "6": "six",
+    "7": "seven",
+    "8": "eight",
+    "9": "nine",
 }
 LEADING_ARTICLE_RE = re.compile(r"^(the|a|an)_")
 TRAILING_DIGIT_RE = re.compile(r"_(\d)$")
@@ -114,11 +130,21 @@ def fetch(session: requests.Session, limiter: RateLimiter, url: str):
         return None
 
 
-def match_one(session: requests.Session, limiter: RateLimiter, mid: str, title: str, year: str, year_tol: int):
+def match_one(
+    session: requests.Session, limiter: RateLimiter, mid: str, title: str, year: str, year_tol: int
+):
     slugs = slug_variants(title)
     if not slugs:
-        return {"id": mid, "title": title, "year": year, "status": "no_slug",
-                "matched_year": "", "impawards_url": "", "poster_designer": "", "poster_image_urls": ""}
+        return {
+            "id": mid,
+            "title": title,
+            "year": year,
+            "status": "no_slug",
+            "matched_year": "",
+            "impawards_url": "",
+            "poster_designer": "",
+            "poster_image_urls": "",
+        }
 
     try:
         base_year = int(float(year))
@@ -143,7 +169,11 @@ def match_one(session: requests.Session, limiter: RateLimiter, mid: str, title: 
                 page_title = m.group(1) if m else ""
                 if page_title and norm_compare(page_title) != norm_compare(title):
                     continue  # slug collision with a different film
-                if page_year and base_year is not None and abs(int(page_year) - base_year) > year_tol:
+                if (
+                    page_year
+                    and base_year is not None
+                    and abs(int(page_year) - base_year) > year_tol
+                ):
                     continue
 
                 dm = DESIGN_RE.search(html)
@@ -151,18 +181,32 @@ def match_one(session: requests.Session, limiter: RateLimiter, mid: str, title: 
                 designer = dm.group(1).strip() if dm else ""
                 illustrator = im.group(1).strip() if im else ""
                 poster_year = page_year or (str(y) if y else "")
-                posters = sorted({f"{BASE}/{poster_year}/posters/{fn}" for fn in POSTER_JPG_RE.findall(html)})
+                posters = sorted(
+                    {f"{BASE}/{poster_year}/posters/{fn}" for fn in POSTER_JPG_RE.findall(html)}
+                )
                 return {
-                    "id": mid, "title": title, "year": year, "status": "matched",
+                    "id": mid,
+                    "title": title,
+                    "year": year,
+                    "status": "matched",
                     "matched_year": page_year or (str(y) if y else ""),
-                    "impawards_url": url, "poster_designer": designer,
+                    "impawards_url": url,
+                    "poster_designer": designer,
                     "poster_illustrator": illustrator,
                     "poster_image_urls": "|".join(posters),
                 }
 
     status = "no_page" if tried_no_page else "no_slug"
-    return {"id": mid, "title": title, "year": year, "status": status,
-            "matched_year": "", "impawards_url": "", "poster_designer": "", "poster_image_urls": ""}
+    return {
+        "id": mid,
+        "title": title,
+        "year": year,
+        "status": status,
+        "matched_year": "",
+        "impawards_url": "",
+        "poster_designer": "",
+        "poster_image_urls": "",
+    }
 
 
 def main():
@@ -172,7 +216,9 @@ def main():
     ap.add_argument("--workers", type=int, default=6)
     ap.add_argument("--rate", type=float, default=6.0, help="max requests/sec across all workers")
     ap.add_argument("--year-tolerance", type=int, default=1)
-    ap.add_argument("--limit", type=int, default=0, help="process only the first N unprocessed rows")
+    ap.add_argument(
+        "--limit", type=int, default=0, help="process only the first N unprocessed rows"
+    )
     args = ap.parse_args()
 
     in_path = Path(args.input)
@@ -190,7 +236,9 @@ def main():
     if args.limit:
         todo = todo[: args.limit]
 
-    print(f"total in corpus: {len(rows):,} | already done: {len(seen):,} | to process now: {len(todo):,}")
+    print(
+        f"total in corpus: {len(rows):,} | already done: {len(seen):,} | to process now: {len(todo):,}"
+    )
     if not todo:
         print("nothing to do.")
         return
@@ -222,16 +270,19 @@ def main():
                 counts[result["status"]] = counts.get(result["status"], 0) + 1
                 done += 1
                 if done % 50 == 0 or done == len(todo):
-                    print(f"  {done}/{len(todo)} matched={counts.get('matched',0)} "
-                          f"no_page={counts.get('no_page',0)} no_slug={counts.get('no_slug',0)}", flush=True)
+                    print(
+                        f"  {done}/{len(todo)} matched={counts.get('matched', 0)} "
+                        f"no_page={counts.get('no_page', 0)} no_slug={counts.get('no_slug', 0)}",
+                        flush=True,
+                    )
 
     out_f.close()
-    print(f"\n=== IMPAWARDS CREDIT MATCH ===")
+    print("\n=== IMPAWARDS CREDIT MATCH ===")
     print(f"processed this run: {len(todo):,}")
     for k, v in counts.items():
         print(f"  {k}: {v:,}")
     print(f"output: {out_path}")
-    print(f"re-run this command to continue where it left off.")
+    print("re-run this command to continue where it left off.")
 
 
 if __name__ == "__main__":

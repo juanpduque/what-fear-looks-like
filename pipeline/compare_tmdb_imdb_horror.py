@@ -18,6 +18,7 @@ Usage:
   python3 compare_tmdb_imdb_horror.py --set en --include-shorts
   python3 compare_tmdb_imdb_horror.py --set horror_movies --out-dir data/qa
 """
+
 from __future__ import annotations
 
 import argparse
@@ -300,19 +301,13 @@ def main() -> int:
             continue
         type_counts[ib["titleType"]] += 1
         horror_flag["horror" if ib["is_horror"] else "not_horror"] += 1
-        reason = (
-            "wrong_titleType"
-            if ib["is_horror"]
-            else "not_tagged_horror"
-        )
+        reason = "wrong_titleType" if ib["is_horror"] else "not_tagged_horror"
         r.update(
             {
                 "imdb_title": ib["primaryTitle"],
                 "imdb_year": ib["startYear"] if ib["startYear"] is not None else "",
                 "imdb_titleType": ib["titleType"],
-                "imdb_runtime": (
-                    ib["runtimeMinutes"] if ib["runtimeMinutes"] is not None else ""
-                ),
+                "imdb_runtime": (ib["runtimeMinutes"] if ib["runtimeMinutes"] is not None else ""),
                 "imdb_genres": ib["genres"],
                 "reason": reason,
             }

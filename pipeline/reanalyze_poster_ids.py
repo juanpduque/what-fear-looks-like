@@ -10,6 +10,7 @@ faces / segmentation match the new primary artwork.
   python3 reanalyze_poster_ids.py --ids-file ... --only drop   # solo limpiar filas
   python3 reanalyze_poster_ids.py --ids-file ... --only run    # asumir ya dropeados
 """
+
 from __future__ import annotations
 
 import argparse
@@ -51,7 +52,9 @@ def load_ids(path: Path) -> pd.DataFrame:
     m["title"] = m["title"].fillna("").astype(str)
     missing = m[m["title"] == ""]
     if len(missing):
-        raise SystemExit(f"{len(missing)} ids no estan en posters.csv: {missing['id'].head(8).tolist()}")
+        raise SystemExit(
+            f"{len(missing)} ids no estan en posters.csv: {missing['id'].head(8).tolist()}"
+        )
     return m[["id", "title", "year"]]
 
 
@@ -159,7 +162,9 @@ def run(cmd: list[str]) -> None:
 
 
 def main():
-    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     ap.add_argument("--ids-file", required=True)
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--only", choices=["all", "drop", "run"], default="all")

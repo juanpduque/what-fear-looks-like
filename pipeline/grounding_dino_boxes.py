@@ -14,17 +14,17 @@ session):
     --creature-out data/creature_boxes_dino.json \\
     --weapon-out data/weapon_boxes_dino.json
 """
+
 from __future__ import annotations
 
 import argparse
-import json
 import time
 from pathlib import Path
 
 import torch
 from PIL import Image
 
-from owlv2_creature_boxes import CREATURE_QUERIES, WEAPON_QUERIES, load_box_cache, dump_boxes_json
+from owlv2_creature_boxes import CREATURE_QUERIES, WEAPON_QUERIES, dump_boxes_json, load_box_cache
 
 ROOT = Path(__file__).resolve().parent
 DATA = ROOT / "data"
@@ -55,10 +55,12 @@ def main() -> None:
     ap.add_argument("--text-threshold", type=float, default=0.2)
     ap.add_argument("--checkpoint-every", type=int, default=25)
     ap.add_argument("--posters-dir", default=str(POSTERS))
-    ap.add_argument("--device", default="", help="cuda / mps / cpu (default: cuda if available, else cpu)")
+    ap.add_argument(
+        "--device", default="", help="cuda / mps / cpu (default: cuda if available, else cpu)"
+    )
     args = ap.parse_args()
 
-    from transformers import AutoProcessor, AutoModelForZeroShotObjectDetection
+    from transformers import AutoModelForZeroShotObjectDetection, AutoProcessor
 
     device = args.device or ("cuda" if torch.cuda.is_available() else "cpu")
     print(f"loading {MODEL_ID} on {device}…", flush=True)
@@ -103,7 +105,10 @@ def main() -> None:
             )[0]
             boxes = results["boxes"].detach().cpu().tolist()
             scores = results["scores"].detach().cpu().tolist()
-            phrases = [str(x).strip().lower() for x in results.get("text_labels", results.get("labels", []))]
+            phrases = [
+                str(x).strip().lower()
+                for x in results.get("text_labels", results.get("labels", []))
+            ]
 
             c_rows, w_rows = [], []
             for box, score, phr in zip(boxes, scores, phrases):
@@ -146,7 +151,10 @@ def main() -> None:
             print(f"  {n:,}/{len(ids):,} rate={rate:.2f}/s err={n_err}", flush=True)
 
     checkpoint()
-    print(f"LISTO creature={len(creature_cache):,} weapon={len(weapon_cache):,} err={n_err}", flush=True)
+    print(
+        f"LISTO creature={len(creature_cache):,} weapon={len(weapon_cache):,} err={n_err}",
+        flush=True,
+    )
 
 
 if __name__ == "__main__":

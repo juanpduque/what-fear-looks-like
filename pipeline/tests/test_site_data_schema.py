@@ -3,12 +3,12 @@
 Lightweight versions of the checks in check_site_invariants.py, but asserted
 against only the files that live in git (no gitignored CSV/NPZ inputs needed).
 """
+
 from __future__ import annotations
 
 from datetime import date
 
 import pytest
-
 from conftest import SITE_DATA, js_payload
 
 MAX_YEAR = date.today().year
@@ -27,6 +27,7 @@ def lookup():
 
 
 # --- explorer.js ---------------------------------------------------------
+
 
 def test_explorer_matches_canonical(explorer, canonical):
     rows, _ = explorer
@@ -53,6 +54,7 @@ def test_explorer_years_in_range(explorer):
 
 # --- lookup.js -----------------------------------------------------------
 
+
 def test_lookup_keys_match_canonical(lookup, canonical):
     data, _ = lookup
     assert {int(k) for k in data} == canonical
@@ -64,6 +66,7 @@ def test_lookup_header_has_n(lookup, corpus_n):
 
 
 # --- globals (ids must be a subset of the corpus) ------------------------
+
 
 @pytest.mark.parametrize(
     "name,marker",
@@ -83,6 +86,7 @@ def test_global_ids_within_corpus(name, marker, canonical):
 
 
 # --- no stray backups shipped -------------------------------------------
+
 
 def test_no_backup_files_in_site_data():
     stray = sorted(p.name for p in SITE_DATA.iterdir() if ".bak" in p.name)

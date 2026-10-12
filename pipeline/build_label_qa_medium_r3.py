@@ -12,6 +12,7 @@ low-confidence. Writes:
   python3 build_label_qa_medium_r3.py
   python3 build_label_qa_medium_r3.py --n 250
 """
+
 from __future__ import annotations
 
 import argparse
@@ -153,7 +154,9 @@ def pick_sample(n: int, seed: int) -> list[dict]:
     if n_paint < 0:
         n_paint = 0
     # fill remainder from composite then photo
-    picked = by_pred["composite"][:n_comp] + by_pred["photo"][:n_photo] + by_pred["painted"][:n_paint]
+    picked = (
+        by_pred["composite"][:n_comp] + by_pred["photo"][:n_photo] + by_pred["painted"][:n_paint]
+    )
     rem = n - len(picked)
     if rem > 0:
         used = {x["id"] for x in picked}

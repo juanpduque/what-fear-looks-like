@@ -10,6 +10,7 @@ misread (false positives).
   python3 qa_faces.py --n 2000 --workers 12
   python3 qa_faces.py --n 999999 --workers 30   # full coverage
 """
+
 from __future__ import annotations
 
 import argparse
@@ -41,8 +42,16 @@ MODEL_ID = "us.amazon.nova-pro-v1:0"
 MAX_SIDE = 1200
 
 FIELDS = [
-    "id", "rek_n_faces",
-    "model", "status", "nova_n_faces", "agree_exact", "agree_bucket", "reason", "latency_s", "error",
+    "id",
+    "rek_n_faces",
+    "model",
+    "status",
+    "nova_n_faces",
+    "agree_exact",
+    "agree_bucket",
+    "reason",
+    "latency_s",
+    "error",
 ]
 
 PROMPT = """Count how many distinct human (or human-like, e.g. zombie/monster with a
@@ -156,9 +165,16 @@ def resize_jpeg(path: Path) -> bytes:
 
 def process_one(client, r: dict, out_csv: Path) -> None:
     base = {
-        "id": r["id"], "rek_n_faces": r["rek_n_faces"],
-        "model": "nova-pro", "status": "error",
-        "nova_n_faces": "", "agree_exact": "", "agree_bucket": "", "reason": "", "latency_s": 0.0, "error": "",
+        "id": r["id"],
+        "rek_n_faces": r["rek_n_faces"],
+        "model": "nova-pro",
+        "status": "error",
+        "nova_n_faces": "",
+        "agree_exact": "",
+        "agree_bucket": "",
+        "reason": "",
+        "latency_s": 0.0,
+        "error": "",
     }
     t0 = time.perf_counter()
     try:
@@ -166,14 +182,20 @@ def process_one(client, r: dict, out_csv: Path) -> None:
         prompt = PROMPT.format(rek_n=r["rek_n_faces"])
         resp = client.converse(
             modelId=MODEL_ID,
-            messages=[{"role": "user", "content": [
-                {"image": {"format": "jpeg", "source": {"bytes": img}}},
-                {"text": prompt},
-            ]}],
+            messages=[
+                {
+                    "role": "user",
+                    "content": [
+                        {"image": {"format": "jpeg", "source": {"bytes": img}}},
+                        {"text": prompt},
+                    ],
+                }
+            ],
             inferenceConfig={"temperature": 0, "maxTokens": 150},
         )
         text = "".join(
-            b.get("text", "") for b in resp.get("output", {}).get("message", {}).get("content", [])
+            b.get("text", "")
+            for b in resp.get("output", {}).get("message", {}).get("content", [])
             if "text" in b
         ).strip()
         if text.startswith("```"):
@@ -215,7 +237,8 @@ def main() -> int:
     log(f"sample={len(sample):,} done={len(done):,} todo={len(todo):,} workers={args.workers}")
 
     client = boto3.Session(profile_name=os.environ.get("AWS_PROFILE")).client(
-        "bedrock-runtime", region_name=args.region,
+        "bedrock-runtime",
+        region_name=args.region,
         config=Config(retries={"max_attempts": 8, "mode": "adaptive"}),
     )
 
@@ -242,7 +265,9 @@ def main() -> int:
             else:
                 disagree += 1
     total = exact + bucket_agree + disagree
-    log(f"LISTO -> {out_csv} | exact={exact:,} ({exact/max(total,1):.1%}) bucket_ok={bucket_agree:,} disagree={disagree:,}")
+    log(
+        f"LISTO -> {out_csv} | exact={exact:,} ({exact / max(total, 1):.1%}) bucket_ok={bucket_agree:,} disagree={disagree:,}"
+    )
     return 0
 
 

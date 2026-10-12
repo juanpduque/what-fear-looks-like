@@ -14,6 +14,7 @@ Schema (LOOKUP[id]):
   jev_* is JEV reconciled typed type (not the CLIP census / essay owner).
   sal? is MSI-Net peak / top10 mass (not the OpenCV balance centroid).
 """
+
 from __future__ import annotations
 
 import ast
@@ -29,8 +30,13 @@ DATA = ROOT / "data"
 OUT = ROOT.parent / "site" / "data" / "lookup.js"
 
 SEG_KEYS = [
-    "clip_blood", "clip_weapon", "clip_shadow", "clip_fire",
-    "clip_bone_skull", "clip_smoke_fog", "clip_night_sky",
+    "clip_blood",
+    "clip_weapon",
+    "clip_shadow",
+    "clip_fire",
+    "clip_bone_skull",
+    "clip_smoke_fog",
+    "clip_night_sky",
 ]
 BANDS = ["band_red", "band_warm", "band_green", "band_blue", "band_purple", "band_dark"]
 
@@ -93,6 +99,7 @@ def parse_boxes(raw):
 
 def main():
     from corpus import canonical_ids
+
     post = pd.read_csv(DATA / "posters.csv")
     post = post[post.id.isin(canonical_ids())].drop_duplicates("id")
     attr = pd.read_csv(DATA / "attributes.csv").set_index("id")
@@ -139,7 +146,9 @@ def main():
     ):
         if not sal_path.exists():
             continue
-        sal = pd.read_csv(sal_path, usecols=lambda c: c in ("id", "peak_x", "peak_y", "top10pct_mass"))
+        sal = pd.read_csv(
+            sal_path, usecols=lambda c: c in ("id", "peak_x", "peak_y", "top10pct_mass")
+        )
         for row in sal.itertuples(index=False):
             try:
                 pid = int(row.id)
@@ -287,7 +296,9 @@ def main():
                 "viol": r(rk.rek_violence, 2),
                 "gore": r(rk.rek_gore, 2),
                 "faces": int(rk.rek_n_faces) if pd.notna(rk.rek_n_faces) else 0,
-                "emo": str(rk.rek_emotion) if pd.notna(rk.rek_emotion) and str(rk.rek_emotion) else "",
+                "emo": str(rk.rek_emotion)
+                if pd.notna(rk.rek_emotion) and str(rk.rek_emotion)
+                else "",
                 "bright": r(rk.rek_bright, 1),
                 "colors": str(rk.rek_colors) if pd.notna(rk.rek_colors) else "",
             }
@@ -303,7 +314,7 @@ def main():
         f"window.LOOKUP={payload};\n",
         encoding="utf-8",
     )
-    print(f"Wrote {OUT} ({len(lookup)} posters, {OUT.stat().st_size/1e6:.1f} MB)")
+    print(f"Wrote {OUT} ({len(lookup)} posters, {OUT.stat().st_size / 1e6:.1f} MB)")
 
 
 if __name__ == "__main__":

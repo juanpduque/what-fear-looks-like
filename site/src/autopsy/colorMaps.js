@@ -68,7 +68,10 @@ function spreadHandles(handles) {
 }
 
 function toHex(r, g, b) {
-  const h = (n) => Math.max(0, Math.min(255, Math.round(n))).toString(16).padStart(2, '0');
+  const h = (n) =>
+    Math.max(0, Math.min(255, Math.round(n)))
+      .toString(16)
+      .padStart(2, '0');
   return `#${h(r)}${h(g)}${h(b)}`;
 }
 
@@ -332,7 +335,7 @@ export async function paintSaliencyFromUrl(canvas, src) {
       const t = data[i] / 255;
       if (data[i] > peak) {
         peak = data[i];
-        px = (n % w + 0.5) / w;
+        px = ((n % w) + 0.5) / w;
         py = (Math.floor(n / w) + 0.5) / h;
       }
       const col = heatColor(t);

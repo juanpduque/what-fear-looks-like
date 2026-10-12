@@ -24,6 +24,7 @@ Outputs:
   python3 build_corpus.py
   python3 build_corpus.py --today 2026-10-06
 """
+
 from __future__ import annotations
 
 import argparse

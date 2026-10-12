@@ -15,6 +15,7 @@ Writes:
   site/data/poster_alts_sal.json    {id: {path: [peak_x, peak_y, mean]}}
   site/data/poster_alts_comp.json   {id: {path: {sym,neg,cx,mx,my,...}}}
 """
+
 from __future__ import annotations
 
 import argparse
@@ -202,7 +203,9 @@ def normalize_pose(r: dict) -> list | None:
         for pt in kpts[:17]:
             if not isinstance(pt, list) or len(pt) < 3:
                 continue
-            nk.append([round(float(pt[0]) / iw, 3), round(float(pt[1]) / ih, 3), round(float(pt[2]), 3)])
+            nk.append(
+                [round(float(pt[0]) / iw, 3), round(float(pt[1]) / ih, 3), round(float(pt[2]), 3)]
+            )
         if len(nk) < 17:
             nk = None
     if isinstance(box, list) and len(box) == 4 and iw > 0 and ih > 0:
@@ -234,8 +237,12 @@ def write_pose(wanted: dict[str, set[str]]) -> None:
             if row is None:
                 continue
             out.setdefault(pid, {})[fp] = row
-    POSE_OUT.write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
-    print(f"wrote {POSE_OUT} films={len(out):,} paths={sum(len(v) for v in out.values()):,} bytes={POSE_OUT.stat().st_size:,}")
+    POSE_OUT.write_text(
+        json.dumps(out, ensure_ascii=False, separators=(",", ":")), encoding="utf-8"
+    )
+    print(
+        f"wrote {POSE_OUT} films={len(out):,} paths={sum(len(v) for v in out.values()):,} bytes={POSE_OUT.stat().st_size:,}"
+    )
 
 
 def write_sal(wanted: dict[str, set[str]]) -> None:
@@ -259,7 +266,9 @@ def write_sal(wanted: dict[str, set[str]]) -> None:
                 continue
             out.setdefault(pid, {})[fp] = [x, y, m]
     SAL_OUT.write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
-    print(f"wrote {SAL_OUT} films={len(out):,} paths={sum(len(v) for v in out.values()):,} bytes={SAL_OUT.stat().st_size:,}")
+    print(
+        f"wrote {SAL_OUT} films={len(out):,} paths={sum(len(v) for v in out.values()):,} bytes={SAL_OUT.stat().st_size:,}"
+    )
 
 
 def write_comp(wanted: dict[str, set[str]]) -> None:
@@ -282,8 +291,12 @@ def write_comp(wanted: dict[str, set[str]]) -> None:
             if all(v is None for v in rec.values()):
                 continue
             out.setdefault(pid, {})[fp] = rec
-    COMP_OUT.write_text(json.dumps(out, ensure_ascii=False, separators=(",", ":")), encoding="utf-8")
-    print(f"wrote {COMP_OUT} films={len(out):,} paths={sum(len(v) for v in out.values()):,} bytes={COMP_OUT.stat().st_size:,}")
+    COMP_OUT.write_text(
+        json.dumps(out, ensure_ascii=False, separators=(",", ":")), encoding="utf-8"
+    )
+    print(
+        f"wrote {COMP_OUT} films={len(out):,} paths={sum(len(v) for v in out.values()):,} bytes={COMP_OUT.stat().st_size:,}"
+    )
 
 
 def pull_maps(_wanted: dict[str, set[str]] | None = None) -> None:
@@ -307,8 +320,12 @@ def pull_maps(_wanted: dict[str, set[str]] | None = None) -> None:
 
 def main() -> None:
     ap = argparse.ArgumentParser(description=__doc__)
-    ap.add_argument("--from-s3", action="store_true", help="download shard CSVs from the workshop bucket")
-    ap.add_argument("--maps", action="store_true", help="download MSI-Net maps for poster_alts peek paths")
+    ap.add_argument(
+        "--from-s3", action="store_true", help="download shard CSVs from the workshop bucket"
+    )
+    ap.add_argument(
+        "--maps", action="store_true", help="download MSI-Net maps for poster_alts peek paths"
+    )
     ap.add_argument("--skip-merge", action="store_true")
     args = ap.parse_args()
     if (args.from_s3 or args.maps) and not BUCKET:

@@ -1,13 +1,20 @@
 import { pct, num } from '../shared/format.js';
 import { posterAltsFor, rekAltFor } from './data.js';
-import { BEAT_MODES, creatureLabel, isGroupPrimary, resolveMedium, preferredWeaponBoxes, rekWeaponPresent, topHueFamily } from './layers.js';
+import {
+  BEAT_MODES,
+  creatureLabel,
+  isGroupPrimary,
+  resolveMedium,
+  preferredWeaponBoxes,
+  rekWeaponPresent,
+  topHueFamily,
+} from './layers.js';
 import { keyArtFor, studioSlug } from './data.js';
 import { faceBody } from './faces.js';
 import { novaCreatureNote, novaLetterNote } from './nova.js';
 import { jevCreatureNote } from './jev.js';
 
-const t = (...args) =>
-  typeof window.t === 'function' ? window.t(...args) : args[0];
+const t = (...args) => (typeof window.t === 'function' ? window.t(...args) : args[0]);
 
 function escapeHtml(s) {
   return String(s ?? '')
@@ -33,7 +40,8 @@ function objectBody(p, a) {
     painted: a.painted == null ? '—' : pct(a.painted),
   };
   const alts = posterAltsFor(id);
-  const base = m.source === 'cl' ? t('autopsy_body_object', vars) : t('autopsy_body_object_clip', vars);
+  const base =
+    m.source === 'cl' ? t('autopsy_body_object', vars) : t('autopsy_body_object_clip', vars);
   if (alts.length < 2) return base;
   const rekN = alts.filter((row) => rekAltFor(id, row.path)).length;
   const altsLine = t('autopsy_body_alts', { n: alts.length });

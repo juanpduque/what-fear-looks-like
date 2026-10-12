@@ -11,6 +11,7 @@ Outputs:
   data/title_boxes_vision_pilot.csv
   data/title_boxes_vision_pilot_summary.json
 """
+
 from __future__ import annotations
 
 import argparse
@@ -100,8 +101,9 @@ def stratified_sample(meta: pd.DataFrame, n: int, seed: int = 42) -> pd.DataFram
     return sample.drop_duplicates("id").head(n)
 
 
-def vision_lines(session: requests.Session, token: str, project: str,
-                 path: Path) -> tuple[list[dict], str, int, int]:
+def vision_lines(
+    session: requests.Session, token: str, project: str, path: Path
+) -> tuple[list[dict], str, int, int]:
     """Return (word/line-like boxes normalized, full_text, W, H)."""
     raw = path.read_bytes()
     # Vision accepts larger than Rekognition; still cap insane sizes
@@ -115,10 +117,12 @@ def vision_lines(session: requests.Session, token: str, project: str,
             "x-goog-user-project": project,
         },
         json={
-            "requests": [{
-                "image": {"content": base64.b64encode(raw).decode()},
-                "features": [{"type": "TEXT_DETECTION"}],
-            }]
+            "requests": [
+                {
+                    "image": {"content": base64.b64encode(raw).decode()},
+                    "features": [{"type": "TEXT_DETECTION"}],
+                }
+            ]
         },
         timeout=60,
     )
@@ -138,9 +142,7 @@ def vision_lines(session: requests.Session, token: str, project: str,
 
     # First annotation is full text; rest are tokens/words with boxes
     full = anns[0].get("description") or ""
-    # infer image size from first poly if possible (Vision returns absolute px)
-    verts = anns[0].get("boundingPoly", {}).get("vertices") or []
-    # Better: use max x/y across all vertices as image bounds proxy
+    # Vision returns absolute px: use max x/y across all vertices as image bounds proxy
     xs, ys = [], []
     for a in anns:
         for v in a.get("boundingPoly", {}).get("vertices") or []:
@@ -165,11 +167,16 @@ def vision_lines(session: requests.Session, token: str, project: str,
         ys_ = [int(v.get("y", 0)) for v in vs]
         x0, x1 = min(xs_) / W, max(xs_) / W
         y0, y1 = min(ys_) / H, max(ys_) / H
-        lines.append({
-            "text": text,
-            "conf": 0.9,  # Vision word anns don't always expose conf here
-            "x0": x0, "y0": y0, "x1": x1, "y1": y1,
-        })
+        lines.append(
+            {
+                "text": text,
+                "conf": 0.9,  # Vision word anns don't always expose conf here
+                "x0": x0,
+                "y0": y0,
+                "x1": x1,
+                "y1": y1,
+            }
+        )
     return lines, full, W, H
 
 
@@ -219,10 +226,18 @@ def locate_title(session, token, project, path: Path, title: str):
             conf = 0.9
             score = (0.25 + 0.75 * conf) * (0.15 + 0.85 * match) * size * _pos_bonus(cy)
             score *= 1.0 + 0.08 * min(len(_norm(text)), 20)
-            cands.append({
-                "text": text, "conf": conf, "x0": x0, "y0": y0, "x1": x1, "y1": y1,
-                "match": match, "score": score,
-            })
+            cands.append(
+                {
+                    "text": text,
+                    "conf": conf,
+                    "x0": x0,
+                    "y0": y0,
+                    "x1": x1,
+                    "y1": y1,
+                    "match": match,
+                    "score": score,
+                }
+            )
 
     if not cands:
         # fall back: full text match without geometry
@@ -230,7 +245,10 @@ def locate_title(session, token, project, path: Path, title: str):
         if match < 0.55:
             return None
         return {
-            "text_x": -1.0, "text_top": -1.0, "text_w": -1.0, "text_h": -1.0,
+            "text_x": -1.0,
+            "text_top": -1.0,
+            "text_w": -1.0,
+            "text_h": -1.0,
             "ocr": full.replace("\n", " ")[:80],
             "score": round(match, 4),
             "match": round(match, 4),
@@ -336,13 +354,14 @@ def main() -> None:
             return token_holder["t"]
 
     session = requests.Session()
-    adapter = requests.adapters.HTTPAdapter(pool_connections=args.workers, pool_maxsize=args.workers)
+    adapter = requests.adapters.HTTPAdapter(
+        pool_connections=args.workers, pool_maxsize=args.workers
+    )
     session.mount("https://", adapter)
 
     sample_ids = set(sample.id.astype(int))
     rows: list[dict] = [
-        r for r in (prev.to_dict("records") if len(prev) else [])
-        if int(r["id"]) in sample_ids
+        r for r in (prev.to_dict("records") if len(prev) else []) if int(r["id"]) in sample_ids
     ]
     lock = threading.Lock()
     done = 0
@@ -354,25 +373,52 @@ def main() -> None:
         path = POSTERS / f"{pid}.jpg"
         if not path.exists():
             return {
-                "id": pid, "title": row.title, "year": int(row.year),
-                "text_x": -1.0, "text_top": -1.0, "text_w": -1.0, "text_h": -1.0,
-                "ocr": "", "score": 0.0, "match": 0.0, "full_ocr": "",
-                "n_tokens": 0, "hit": 0, "error": "missing_file",
+                "id": pid,
+                "title": row.title,
+                "year": int(row.year),
+                "text_x": -1.0,
+                "text_top": -1.0,
+                "text_w": -1.0,
+                "text_h": -1.0,
+                "ocr": "",
+                "score": 0.0,
+                "match": 0.0,
+                "full_ocr": "",
+                "n_tokens": 0,
+                "hit": 0,
+                "error": "missing_file",
             }
         try:
             box = locate_title(session, get_token(), args.project, path, str(row.title))
         except Exception as e:
             return {
-                "id": pid, "title": row.title, "year": int(row.year),
-                "text_x": -1.0, "text_top": -1.0, "text_w": -1.0, "text_h": -1.0,
-                "ocr": "", "score": 0.0, "match": 0.0, "full_ocr": "",
-                "n_tokens": 0, "hit": 0, "error": f"{type(e).__name__}: {e}",
+                "id": pid,
+                "title": row.title,
+                "year": int(row.year),
+                "text_x": -1.0,
+                "text_top": -1.0,
+                "text_w": -1.0,
+                "text_h": -1.0,
+                "ocr": "",
+                "score": 0.0,
+                "match": 0.0,
+                "full_ocr": "",
+                "n_tokens": 0,
+                "hit": 0,
+                "error": f"{type(e).__name__}: {e}",
             }
         if box is None:
             box = {
-                "text_x": -1.0, "text_top": -1.0, "text_w": -1.0, "text_h": -1.0,
-                "ocr": "", "score": 0.0, "match": 0.0, "full_ocr": "",
-                "n_tokens": 0, "hit": 0,
+                "text_x": -1.0,
+                "text_top": -1.0,
+                "text_w": -1.0,
+                "text_h": -1.0,
+                "ocr": "",
+                "score": 0.0,
+                "match": 0.0,
+                "full_ocr": "",
+                "n_tokens": 0,
+                "hit": 0,
             }
         return {"id": pid, "title": row.title, "year": int(row.year), "error": "", **box}
 
@@ -390,33 +436,36 @@ def main() -> None:
                 if done % 50 == 0 or done == total_fetch:
                     rate = done / max(time.time() - t0, 1e-6)
                     print(
-                        f"  fetch {done}/{total_fetch} total_hits≈{hits} "
-                        f"{rate:.1f}/s",
+                        f"  fetch {done}/{total_fetch} total_hits≈{hits} {rate:.1f}/s",
                         flush=True,
                     )
-                    pd.DataFrame(rows).drop_duplicates("id", keep="last").to_csv(
-                        OUT, index=False
-                    )
+                    pd.DataFrame(rows).drop_duplicates("id", keep="last").to_csv(OUT, index=False)
 
     df = pd.DataFrame(rows).sort_values("id")
     df.to_csv(OUT, index=False)
 
     # Compare vs existing attributes text_* if present
-    attr = pd.read_csv(DATA / "attributes.csv", usecols=lambda c: c in (
-        "id", "text_area", "text_x", "text_top", "text_w", "text_h"
-    ))
+    attr = pd.read_csv(
+        DATA / "attributes.csv",
+        usecols=lambda c: c in ("id", "text_area", "text_x", "text_top", "text_w", "text_h"),
+    )
     m = df.merge(attr, on="id", how="left", suffixes=("", "_attr"))
     m["decade"] = (m.year // 10) * 10
     by_dec = (
         m.groupby("decade")
-        .agg(n=("id", "count"), hit_rate=("hit", "mean"),
-             mean_match=("match", "mean"), mean_tokens=("n_tokens", "mean"))
+        .agg(
+            n=("id", "count"),
+            hit_rate=("hit", "mean"),
+            mean_match=("match", "mean"),
+            mean_tokens=("n_tokens", "mean"),
+        )
         .round(3)
         .reset_index()
     )
     has_attr_box = (
         m["text_x_attr"].fillna(-1).astype(float) >= 0
-        if "text_x_attr" in m.columns else pd.Series([False] * len(m))
+        if "text_x_attr" in m.columns
+        else pd.Series([False] * len(m))
     )
     summary = {
         "n": int(len(df)),
@@ -429,17 +478,20 @@ def main() -> None:
         # first 1000/mo free; this month already used ~500 on the first pilot
         "by_decade": by_dec.to_dict(orient="records"),
         "overlap_existing_attr_boxes": int((df.hit.astype(bool) & has_attr_box).sum())
-            if len(has_attr_box) == len(df) else None,
+        if len(has_attr_box) == len(df)
+        else None,
         "vision_hit_attr_miss": int((df.hit.astype(bool) & ~has_attr_box).sum())
-            if len(has_attr_box) == len(df) else None,
+        if len(has_attr_box) == len(df)
+        else None,
         "attr_hit_vision_miss": int((~df.hit.astype(bool) & has_attr_box).sum())
-            if len(has_attr_box) == len(df) else None,
+        if len(has_attr_box) == len(df)
+        else None,
         "project": args.project,
         "output": str(OUT.name),
     }
     SUMMARY.write_text(json.dumps(summary, indent=2))
-    print(f"\n=== VISION OCR PILOT ===")
-    print(f"n={summary['n']} hits={summary['hits']} ({100*summary['hit_rate']:.1f}%)")
+    print("\n=== VISION OCR PILOT ===")
+    print(f"n={summary['n']} hits={summary['hits']} ({100 * summary['hit_rate']:.1f}%)")
     print(f"any OCR text={summary['any_ocr_text']} errors={summary['errors']}")
     print(f"est. cost ≈ ${summary['cost_usd_est']} (pilot within free tier → ~$0)")
     print(by_dec.to_string(index=False))

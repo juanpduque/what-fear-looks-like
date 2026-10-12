@@ -12,6 +12,7 @@ Does not touch EasyOCR or Textract CSVs.
   python3 poster_ocr_rek_text.py --ids-file data/qa/rek_text_alllang_ids.txt \\
       --out data/poster_ocr_rek_text_alllang.csv --workers 12
 """
+
 from __future__ import annotations
 
 import argparse
@@ -93,6 +94,7 @@ def load_ids_file(path: Path) -> list[int]:
                     seen.add(pid)
                     ids.append(pid)
             return ids
+
         def _add(tok: str) -> None:
             tok = tok.strip()
             if not tok:
@@ -116,7 +118,11 @@ def prepare_bytes(path: Path) -> bytes:
     try:
         im = Image.open(io.BytesIO(raw))
         im.load()
-        if len(raw) <= MAX_BYTES and max(im.size) <= MAX_SIDE and path.suffix.lower() in {".jpg", ".jpeg"}:
+        if (
+            len(raw) <= MAX_BYTES
+            and max(im.size) <= MAX_SIDE
+            and path.suffix.lower() in {".jpg", ".jpeg"}
+        ):
             return raw
     except Exception:
         pass
@@ -181,7 +187,7 @@ def ocr_one(client, pid: int) -> dict:
             conf = float(d.get("Confidence") or 0) / 100.0
             confs.append(conf)
             if d.get("Type") == "LINE":
-                geo = ((d.get("Geometry") or {}).get("BoundingBox") or {})
+                geo = (d.get("Geometry") or {}).get("BoundingBox") or {}
                 top = float(geo.get("Top") or 0)
                 left = float(geo.get("Left") or 0)
                 line_items.append((top, left, t))
@@ -264,7 +270,7 @@ def main() -> int:
                 prev = (row.get("full_ocr") or "").replace("\n", " ")[:45]
                 log(
                     f"  {n}/{len(todo)} id={row['id']} lines={row.get('n_lines')} "
-                    f"err={row.get('error') or '-'} {rate:.2f}/s eta={eta/3600:.2f}h | {prev!r}"
+                    f"err={row.get('error') or '-'} {rate:.2f}/s eta={eta / 3600:.2f}h | {prev!r}"
                 )
             if n % args.save_every == 0:
                 write_rows(partial_path, rows)
@@ -272,7 +278,7 @@ def main() -> int:
 
     write_rows(partial_path, rows)
     write_rows(out_path, rows)
-    log(f"done → {out_path} n={len(rows):,} new_ok={n_ok:,} elapsed={(time.time()-t0)/60:.1f}m")
+    log(f"done → {out_path} n={len(rows):,} new_ok={n_ok:,} elapsed={(time.time() - t0) / 60:.1f}m")
     return 0
 
 

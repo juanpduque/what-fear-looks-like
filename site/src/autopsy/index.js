@@ -1,6 +1,16 @@
 import './autopsy.css';
 import { posterSrc, tmdbImg, HAS_DATA, pct } from '../shared/posters.js';
-import { buildLayersHtml, setActiveLayers, applyArtFilter, BEAT_LAYERS, BEAT_MODES, beatMode, bandBarHtml, bandLegendHtml, topHueFamily } from './layers.js';
+import {
+  buildLayersHtml,
+  setActiveLayers,
+  applyArtFilter,
+  BEAT_LAYERS,
+  BEAT_MODES,
+  beatMode,
+  bandBarHtml,
+  bandLegendHtml,
+  topHueFamily,
+} from './layers.js';
 import { buildBeats, beatsHtml, modeBlurb } from './beats.js';
 import {
   ensureLookup,
@@ -39,8 +49,7 @@ import {
 } from './data.js';
 import { analyzeFromUrl, paintHeat, paintSaliencyFromUrl } from './colorMaps.js';
 
-const t = (...args) =>
-  typeof window.t === 'function' ? window.t(...args) : args[0];
+const t = (...args) => (typeof window.t === 'function' ? window.t(...args) : args[0]);
 
 let lkQ = null;
 let lkSug = null;
@@ -123,6 +132,21 @@ function els() {
   };
 }
 
+/**
+ * Link to the open poster for sharing. In Spanish it goes through es/, whose
+ * static tags give link previews the Spanish card and title.
+ */
+function shareLink() {
+  const here = new URL(location.href);
+  const es = document.documentElement.lang === 'es';
+  const out = es ? new URL('es/', new URL('./', here)) : new URL(here.pathname, here);
+  here.searchParams.forEach((v, k) => {
+    if (k !== 'from' && !(es && k === 'lang')) out.searchParams.set(k, v);
+  });
+  out.hash = here.hash;
+  return out.href;
+}
+
 function setPosterUrl(id) {
   const u = new URL(location.href);
   u.searchParams.set('id', String(id));
@@ -182,7 +206,9 @@ function syncBeatModes() {
   const { frame } = els();
   frame?.classList.toggle('is-heat', Boolean(mode?.heat || beat?.heat));
   document.querySelectorAll('.au-cmodes [data-cmode]').forEach((btn) => {
-    const on = Boolean(mode && btn.dataset.cmode === mode.id && beat?.id === btn.closest('.au-beat')?.dataset.beat);
+    const on = Boolean(
+      mode && btn.dataset.cmode === mode.id && beat?.id === btn.closest('.au-beat')?.dataset.beat,
+    );
     btn.classList.toggle('is-on', on);
     btn.setAttribute('aria-selected', on ? 'true' : 'false');
   });
@@ -593,7 +619,7 @@ function renderAlts(p) {
       const tag = row.measured ? measuredLabel : (row.iso || '').toUpperCase();
       const hasRek = Boolean(rekAltFor(p[7], row.path));
       const cls = `${row.measured ? 'au-alt is-measured is-on' : 'au-alt'}${hasRek ? ' has-rek' : ''}`;
-      const label = row.measured ? measuredLabel : (tag || t('autopsy_alts_kicker'));
+      const label = row.measured ? measuredLabel : tag || t('autopsy_alts_kicker');
       return `<button type="button" class="${cls}" data-path="${row.path}" aria-pressed="${row.measured ? 'true' : 'false'}" aria-label="${label}" title="${label}"><img src="${tmdbImg(row.path, 's')}" alt=""><span class="au-alt-tag">${tag || '·'}</span></button>`;
     })
     .join('')}`;
@@ -653,7 +679,13 @@ function returnToOrigin() {
     ref = null;
   }
   // Going back keeps the studios page where the reader left it.
-  if (ref && ref.origin === location.origin && ref.pathname.includes('/studios/') && history.length > 1) history.back();
+  if (
+    ref &&
+    ref.origin === location.origin &&
+    ref.pathname.includes('/studios/') &&
+    history.length > 1
+  )
+    history.back();
   else location.href = `studios/?lang=${lang}`;
 }
 
@@ -805,9 +837,7 @@ function wireNav() {
     setBeatMode(btn.dataset.cmode);
   });
   share?.addEventListener('click', async () => {
-    const shareUrl = new URL(location.href);
-    shareUrl.searchParams.delete('from');
-    const url = shareUrl.href;
+    const url = shareLink();
     try {
       await navigator.clipboard.writeText(url);
       share.textContent = t('autopsy_shared');

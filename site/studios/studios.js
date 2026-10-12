@@ -5,10 +5,13 @@
 const STORAGE = 'aof-lang';
 
 const esc = (s) =>
-  String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+  String(s ?? '').replace(
+    /[&<>"']/g,
+    (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c],
+  );
 
 function fill(tpl, vars) {
-  return String(tpl).replace(/\{(\w+)\}/g, (_, k) => (vars[k] ?? `{${k}}`));
+  return String(tpl).replace(/\{(\w+)\}/g, (_, k) => vars[k] ?? `{${k}}`);
 }
 
 /** Same slug as src/autopsy/data.js studioSlug: the autopsy credit links here. */
@@ -41,7 +44,9 @@ function render(lang, copy, data) {
     b.classList.toggle('is-active', on);
     b.setAttribute('aria-pressed', on ? 'true' : 'false');
   });
-  document.querySelectorAll('a[href="../"]').forEach((a) => a.setAttribute('href', `../?lang=${lang}`));
+  document
+    .querySelectorAll('a[href="../"]')
+    .forEach((a) => a.setAttribute('href', `../?lang=${lang}`));
 
   const top = data.studios[0]?.n || 1;
   document.getElementById('st-list').innerHTML = data.studios
@@ -49,7 +54,10 @@ function render(lang, copy, data) {
       const prof = copy.studios[s.credit];
       const name = prof?.name || s.credit;
       const links = (prof?.links || [])
-        .map(([label, url]) => `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>`)
+        .map(
+          ([label, url]) =>
+            `<a href="${esc(url)}" target="_blank" rel="noopener">${esc(label)}</a>`,
+        )
         .join(' · ');
       const strip = s.posters
         .map(

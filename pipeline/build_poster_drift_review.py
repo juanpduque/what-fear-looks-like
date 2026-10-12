@@ -7,6 +7,7 @@ site/poster-drift-review.html — frozen path vs current TMDB primary.
   python3 build_poster_drift_review.py
   open ../site/poster-drift-review.html
 """
+
 from __future__ import annotations
 
 import csv
@@ -38,13 +39,15 @@ def main():
                 year = int(float(r["year"]))
             except (TypeError, ValueError):
                 year = 0
-            rows.append({
-                "id": int(r["id"]),
-                "title": r.get("title") or "",
-                "year": year,
-                "stored": r["stored_path"],
-                "current": r["current_path"],
-            })
+            rows.append(
+                {
+                    "id": int(r["id"]),
+                    "title": r.get("title") or "",
+                    "year": year,
+                    "stored": r["stored_path"],
+                    "current": r["current_path"],
+                }
+            )
 
     rows.sort(key=lambda r: (r["year"], r["title"].lower()))
     by_dec: dict[int, list] = defaultdict(list)
@@ -60,13 +63,13 @@ def main():
                 f'<article class="card" data-id="{r["id"]}">'
                 f'<div class="pair">'
                 f'<figure><img loading="lazy" src="{IMG}{html.escape(r["stored"])}" alt="">'
-                f'<figcaption>congelado</figcaption></figure>'
+                f"<figcaption>congelado</figcaption></figure>"
                 f'<figure><img loading="lazy" src="{IMG}{html.escape(r["current"])}" alt="">'
-                f'<figcaption>TMDB hoy</figcaption></figure>'
-                f'</div>'
+                f"<figcaption>TMDB hoy</figcaption></figure>"
+                f"</div>"
                 f'<div class="cap"><b>{title}</b><br>{r["year"]} · id {r["id"]}<br>'
                 f'<a href="https://www.themoviedb.org/movie/{r["id"]}" target="_blank" rel="noopener">ficha TMDB</a>'
-                f'</div></article>'
+                f"</div></article>"
             )
 
     n = len(rows)

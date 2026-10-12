@@ -5,6 +5,7 @@ Questions are independent forced-choice items about one sheet. Option count
 stays at K≤16 so the same battery can run on Visual Jev (LM-head readout).
 CLIP's 18-way census is collapsed: animals share one slot; 'none' is explicit.
 """
+
 from __future__ import annotations
 
 from typing import Any

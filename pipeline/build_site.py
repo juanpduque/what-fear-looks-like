@@ -8,6 +8,7 @@ Steps: decade aggregates → series.js → explorer.js → lookup.js →
 pose/creature/weapon box globals pruned to the corpus → front copy n →
 check_site_invariants.py. Raw per-poster CSVs are only read.
 """
+
 from __future__ import annotations
 
 import csv
@@ -48,14 +49,20 @@ def drop_nova_false_positives(data: dict) -> dict:
         for r in csv.DictReader(f):
             if r["kind"] == "weapon" and r["status"] == "ok" and r["verdict"] == "false_positive":
                 bad.add(_box_key(r["id"], json.loads(r["box"])))
-    out = {pid: [b for b in boxes if _box_key(pid, b["box"]) not in bad] for pid, boxes in data.items()}
+    out = {
+        pid: [b for b in boxes if _box_key(pid, b["box"]) not in bad] for pid, boxes in data.items()
+    }
     dropped = sum(map(len, data.values())) - sum(map(len, out.values()))
     print(f"  weapon_boxes: {dropped:,} cajas descartadas por Nova (false_positive)")
     return out
 
 
 JSON_SOURCES = {
-    "weapon_boxes.js": (DATA / "weapon_boxes.json", "window.WEAPON_BOXES", drop_nova_false_positives),
+    "weapon_boxes.js": (
+        DATA / "weapon_boxes.json",
+        "window.WEAPON_BOXES",
+        drop_nova_false_positives,
+    ),
 }
 
 
@@ -84,11 +91,11 @@ def prune_id_global(name: str, keep: frozenset[int]) -> None:
         )
     text = src.read_text(encoding="utf-8")
     eq = text.index("={")
-    head, body = text[:eq], text[eq + 1:].rstrip().rstrip(";")
+    head, body = text[:eq], text[eq + 1 :].rstrip().rstrip(";")
     data = json.loads(body)
     kept = {k: v for k, v in data.items() if k.isdigit() and int(k) in keep}
     first_nl = head.find("\n")
-    comment, decl = (head[:first_nl], head[first_nl + 1:]) if first_nl >= 0 else ("", head)
+    comment, decl = (head[:first_nl], head[first_nl + 1 :]) if first_nl >= 0 else ("", head)
     note = f"/* {name} n={len(kept)} (canonical corpus; full set in pipeline/data/site_globals_full) */"
     dst.write_text(
         f"{note}\n{decl}={json.dumps(kept, ensure_ascii=False, separators=(',', ':'))};\n",
@@ -109,6 +116,7 @@ def main() -> None:
         regen_typography_decade,
         regen_yearly_and_river,
     )
+
     print("\nagregados por decada...")
     regen_yearly_and_river(keep=keep)
     regen_attributes_decade(keep=keep)
@@ -119,14 +127,17 @@ def main() -> None:
 
     print("\nseries.js...")
     from export_site_series import export
+
     export()
 
     print("\nexplorer.js...")
     from build_explorer import main as build_explorer
+
     build_explorer()
 
     print("\nlookup.js...")
     from build_lookup import main as build_lookup
+
     build_lookup()
 
     print("\nglobals por id...")
@@ -135,6 +146,7 @@ def main() -> None:
 
     print("\nn del texto front...")
     from sync_front_n import check_front_n, sync_front_n
+
     n = len(keep)
     rep = sync_front_n(n)
     if rep.get("changed"):
@@ -144,6 +156,7 @@ def main() -> None:
 
     print("\ninvariantes...")
     from check_site_invariants import main as check
+
     if check() != 0:
         raise SystemExit(1)
 

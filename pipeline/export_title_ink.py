@@ -9,6 +9,7 @@ boxes when title_box_fit says miss/weak; specimen TITLE_BOX_OVERRIDE still wins.
 
 Writes site/data/title_ink.json  {id: [tx, tt, tw, th]}
 """
+
 from __future__ import annotations
 
 import csv

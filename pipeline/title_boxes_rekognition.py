@@ -13,9 +13,12 @@ Requires: aws configure (region us-east-1), boto3, network.
 Outputs: data/title_boxes_rekognition.csv
          (optional merge into attributes.csv text_x/top/w/h)
 """
+
 from __future__ import annotations
 
-import argparse, re, time
+import argparse
+import re
+import time
 from difflib import SequenceMatcher
 from pathlib import Path
 
@@ -164,14 +167,16 @@ def detect_lines(client, path: Path):
         if d.get("Type") != "LINE":
             continue
         bb = d["Geometry"]["BoundingBox"]
-        lines.append({
-            "text": d.get("DetectedText", ""),
-            "conf": float(d.get("Confidence", 0)) / 100.0,
-            "x0": float(bb["Left"]),
-            "y0": float(bb["Top"]),
-            "x1": float(bb["Left"] + bb["Width"]),
-            "y1": float(bb["Top"] + bb["Height"]),
-        })
+        lines.append(
+            {
+                "text": d.get("DetectedText", ""),
+                "conf": float(d.get("Confidence", 0)) / 100.0,
+                "x0": float(bb["Left"]),
+                "y0": float(bb["Top"]),
+                "x1": float(bb["Left"] + bb["Width"]),
+                "y1": float(bb["Top"] + bb["Height"]),
+            }
+        )
     return lines
 
 
@@ -209,10 +214,13 @@ def locate_title(client, path: Path, title: str):
             cluster.append(c)
             y_mid = sum((x["y0"] + x["y1"]) * 0.5 for x in cluster) / len(cluster)
 
-    match = max(_fuzzy_title(
-        " ".join(c["text"] for c in sorted(cluster, key=lambda c: (c["y0"], c["x0"]))),
-        title,
-    ), max(c["match"] for c in cluster))
+    match = max(
+        _fuzzy_title(
+            " ".join(c["text"] for c in sorted(cluster, key=lambda c: (c["y0"], c["x0"]))),
+            title,
+        ),
+        max(c["match"] for c in cluster),
+    )
     conf = sum(c["conf"] for c in cluster) / len(cluster)
     x0 = min(c["x0"] for c in cluster)
     y0 = min(c["y0"] for c in cluster)
@@ -284,6 +292,7 @@ def main():
         merge_into_attributes(pd.read_csv(OUT), reset=True)
         if args.lookup:
             import build_lookup
+
             build_lookup.main()
         return
 
@@ -294,8 +303,10 @@ def main():
     elif args.sample:
         meta = meta.sample(args.sample, random_state=42)
 
-    existing = pd.read_csv(OUT) if OUT.exists() else pd.DataFrame(
-        columns=["id", "text_x", "text_top", "text_w", "text_h", "ocr", "score"]
+    existing = (
+        pd.read_csv(OUT)
+        if OUT.exists()
+        else pd.DataFrame(columns=["id", "text_x", "text_top", "text_w", "text_h", "ocr", "score"])
     )
     rows = {int(r["id"]): dict(r) for r in existing.to_dict("records")} if len(existing) else {}
 
@@ -323,8 +334,9 @@ def main():
             print(f"fail {pid}: {e}", flush=True)
             box = None
         if box is None:
-            row = dict(id=pid, text_x=-1.0, text_top=-1.0, text_w=-1.0, text_h=-1.0,
-                       ocr="", score=0.0)
+            row = dict(
+                id=pid, text_x=-1.0, text_top=-1.0, text_w=-1.0, text_h=-1.0, ocr="", score=0.0
+            )
         else:
             row = dict(id=pid, **box)
         rows[pid] = row
@@ -332,15 +344,18 @@ def main():
         n_new += 1
         if n_new % 20 == 0:
             rate = n_new / max(time.time() - t0, 1e-6)
-            print(f"{n_new} new | {pid} {str(r.title)[:28]!r} -> "
-                  f"top={row['text_top']} ocr={row.get('ocr', '')!r} | {rate:.2f}/s",
-                  flush=True)
+            print(
+                f"{n_new} new | {pid} {str(r.title)[:28]!r} -> "
+                f"top={row['text_top']} ocr={row.get('ocr', '')!r} | {rate:.2f}/s",
+                flush=True,
+            )
         if n_new % args.save_every == 0:
             pd.DataFrame(rows.values()).to_csv(OUT, index=False)
             if args.merge or args.live_lookup:
                 merge_into_attributes(pd.DataFrame(rows.values()), reset=False)
             if args.live_lookup:
                 import build_lookup
+
                 build_lookup.main()
 
     pd.DataFrame(rows.values()).to_csv(OUT, index=False)
@@ -348,10 +363,13 @@ def main():
 
     if args.merge or args.ids or args.retry_misses:
         full = bool(args.merge and not args.ids and not args.sample and not args.retry_misses)
-        chunk = pd.DataFrame([rows[i] for i in updated]) if updated and not full else pd.read_csv(OUT)
+        chunk = (
+            pd.DataFrame([rows[i] for i in updated]) if updated and not full else pd.read_csv(OUT)
+        )
         merge_into_attributes(chunk, reset=full)
     if args.lookup or args.live_lookup:
         import build_lookup
+
         build_lookup.main()
 
 

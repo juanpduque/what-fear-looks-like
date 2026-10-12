@@ -5,6 +5,7 @@ Keyed by (id, file_path). Does not rewrite faces_v2.csv of the measured cover.
 
   python3 yunet_alts.py --jobs-file data/qa/alts_comp_catalog/jobs.csv --out /tmp/faces_alts.csv
 """
+
 from __future__ import annotations
 
 import argparse
@@ -87,7 +88,9 @@ def load_done(path: Path) -> set[tuple[int, str]]:
 
 def empty_row(pid: int, fp: str, **extra) -> dict:
     row = {k: "" for k in FIELDS}
-    row.update(id=pid, file_path=fp, tmdb_hash=tmdb_hash(fp), n_faces=0, face_area=0.0, max_conf=0.0)
+    row.update(
+        id=pid, file_path=fp, tmdb_hash=tmdb_hash(fp), n_faces=0, face_area=0.0, max_conf=0.0
+    )
     row.update(extra)
     return row
 
@@ -107,7 +110,9 @@ def detect_bytes(det, data: bytes) -> dict:
     arr = np.frombuffer(data, dtype=np.uint8)
     img = cv2.imdecode(arr, cv2.IMREAD_COLOR)
     if img is None:
-        return dict(n_faces=0, face_area=0.0, max_conf=0.0, face_boxes="", status="error", error="decode")
+        return dict(
+            n_faces=0, face_area=0.0, max_conf=0.0, face_boxes="", status="error", error="decode"
+        )
     h, w = img.shape[:2]
     s = W / w
     img = cv2.resize(img, (W, int(h * s)))

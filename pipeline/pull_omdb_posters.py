@@ -7,6 +7,7 @@ Writes local JPGs + data/new_omdb_ids.csv for analyze_color_ids.py.
   python3 pull_omdb_posters.py
   python3 pull_omdb_posters.py --workers 16
 """
+
 from __future__ import annotations
 
 import argparse
@@ -123,7 +124,7 @@ def main():
         for row in ids:
             w.writerow(row)
 
-    print(f"\n=== OMDb POSTER INGEST ===")
+    print("\n=== OMDb POSTER INGEST ===")
     print(f"downloaded ok={ok} fail={fail}")
     print(f"ids with local poster+year: {len(ids):,} → {IDS_OUT.name}")
     if fails:

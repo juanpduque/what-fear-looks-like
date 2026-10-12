@@ -17,6 +17,7 @@ Terror" for The Crawling Eye). When the catalog title is not found, lines are
 matched strictly against Latin-script IMDb AKAs (data/imdb_datasets/
 title.akas.tsv.gz via data/imdb_ids.csv); without those files it is skipped.
 """
+
 from __future__ import annotations
 
 import csv
@@ -206,7 +207,9 @@ def write_owl(wanted: dict[str, set[str]]) -> None:
                 continue
             weapons = parse_owl(r.get("weapon_boxes") or "")
             dboxes = [d["box"] for d in dino.get(pid, {}).get(fp, [])]
-            agreed = [w for w in weapons if any(box_iou(w["box"], d) >= DINO_IOU_MIN for d in dboxes)]
+            agreed = [
+                w for w in weapons if any(box_iou(w["box"], d) >= DINO_IOU_MIN for d in dboxes)
+            ]
             n_weapon += len(weapons)
             n_kept += len(agreed)
             out.setdefault(pid, {})[fp] = {

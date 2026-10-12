@@ -41,6 +41,7 @@ Usage (local smoke test):
 EC2 shard:
   python3 vitpose_dynamism_score.py --ids-file data/qa/shard.txt --out data/qa/pose_score.csv
 """
+
 from __future__ import annotations
 
 import argparse
@@ -63,8 +64,14 @@ NOSE, L_EYE, R_EYE, L_EAR, R_EAR = 0, 1, 2, 3, 4
 L_SHOULDER, R_SHOULDER, L_ELBOW, R_ELBOW = 5, 6, 7, 8
 L_WRIST, R_WRIST, L_HIP, R_HIP = 9, 10, 11, 12
 L_KNEE, R_KNEE, L_ANKLE, R_ANKLE = 13, 14, 15, 16
-LEFT_RIGHT_PAIRS = [(L_SHOULDER, R_SHOULDER), (L_ELBOW, R_ELBOW), (L_WRIST, R_WRIST),
-                    (L_HIP, R_HIP), (L_KNEE, R_KNEE), (L_ANKLE, R_ANKLE)]
+LEFT_RIGHT_PAIRS = [
+    (L_SHOULDER, R_SHOULDER),
+    (L_ELBOW, R_ELBOW),
+    (L_WRIST, R_WRIST),
+    (L_HIP, R_HIP),
+    (L_KNEE, R_KNEE),
+    (L_ANKLE, R_ANKLE),
+]
 
 KPT_CONF_THRESHOLD = 0.3
 MAX_PERSONS = 12
@@ -74,8 +81,12 @@ def load_faces() -> set[int]:
     """Union of data/faces_v2.csv + _scifi/_thriller/_mystery (non-partial),
     ids with n_faces > 0 -- see clip_face_expression.py for the original pattern."""
     ids: set[int] = set()
-    files = [DATA / "faces_v2.csv", DATA / "faces_v2_scifi.csv",
-             DATA / "faces_v2_thriller.csv", DATA / "faces_v2_mystery.csv"]
+    files = [
+        DATA / "faces_v2.csv",
+        DATA / "faces_v2_scifi.csv",
+        DATA / "faces_v2_thriller.csv",
+        DATA / "faces_v2_mystery.csv",
+    ]
     for f in files:
         if not f.exists():
             continue
@@ -92,7 +103,11 @@ def compute_metrics(keypoints: np.ndarray, scores: np.ndarray, box: list[float])
     conf_mask = scores >= KPT_CONF_THRESHOLD
     mean_conf = float(scores.mean())
     if conf_mask.sum() < 3:
-        return {"kpt_bbox_area_frac": None, "limb_asymmetry": None, "mean_kpt_confidence": round(mean_conf, 3)}
+        return {
+            "kpt_bbox_area_frac": None,
+            "limb_asymmetry": None,
+            "mean_kpt_confidence": round(mean_conf, 3),
+        }
 
     pts = keypoints[conf_mask]
     kpt_x0, kpt_y0 = pts[:, 0].min(), pts[:, 1].min()
@@ -100,9 +115,15 @@ def compute_metrics(keypoints: np.ndarray, scores: np.ndarray, box: list[float])
     kpt_bbox_area_frac = ((kpt_x1 - kpt_x0) * (kpt_y1 - kpt_y0)) / box_area
 
     torso_size = max(box_w, box_h)
-    if scores[L_SHOULDER] >= KPT_CONF_THRESHOLD and scores[R_SHOULDER] >= KPT_CONF_THRESHOLD and \
-       scores[L_HIP] >= KPT_CONF_THRESHOLD and scores[R_HIP] >= KPT_CONF_THRESHOLD:
-        center = (keypoints[L_SHOULDER] + keypoints[R_SHOULDER] + keypoints[L_HIP] + keypoints[R_HIP]) / 4
+    if (
+        scores[L_SHOULDER] >= KPT_CONF_THRESHOLD
+        and scores[R_SHOULDER] >= KPT_CONF_THRESHOLD
+        and scores[L_HIP] >= KPT_CONF_THRESHOLD
+        and scores[R_HIP] >= KPT_CONF_THRESHOLD
+    ):
+        center = (
+            keypoints[L_SHOULDER] + keypoints[R_SHOULDER] + keypoints[L_HIP] + keypoints[R_HIP]
+        ) / 4
     else:
         center = pts.mean(axis=0)
 
@@ -156,14 +177,20 @@ def main() -> None:
     ap.add_argument("--out", required=True)
     ap.add_argument("--checkpoint-every", type=int, default=50)
     ap.add_argument("--posters-dir", default=str(POSTERS))
-    ap.add_argument("--no-face-filter", action="store_true",
-                    help="process every id in --ids-file (already scoped upstream)")
-    ap.add_argument("--all-boxes", action="store_true",
-                    help="ViTPose every YOLO person (cap MAX_PERSONS); persist persons JSON")
+    ap.add_argument(
+        "--no-face-filter",
+        action="store_true",
+        help="process every id in --ids-file (already scoped upstream)",
+    )
+    ap.add_argument(
+        "--all-boxes",
+        action="store_true",
+        help="ViTPose every YOLO person (cap MAX_PERSONS); persist persons JSON",
+    )
     args = ap.parse_args()
 
-    from ultralytics import YOLO
     from transformers import AutoProcessor, VitPoseForPoseEstimation
+    from ultralytics import YOLO
 
     print("loading YOLOv8n (person detector)...", flush=True)
     yolo = YOLO("yolov8n.pt")
@@ -194,8 +221,17 @@ def main() -> None:
         print(f"resume: {len(done_ids):,} already done, {len(want_ids):,} remaining", flush=True)
 
     new_file = not out.exists()
-    fields = ["id", "n_persons", "kpt_bbox_area_frac", "limb_asymmetry", "mean_kpt_confidence",
-              "img_w", "img_h", "box", "keypoints"]
+    fields = [
+        "id",
+        "n_persons",
+        "kpt_bbox_area_frac",
+        "limb_asymmetry",
+        "mean_kpt_confidence",
+        "img_w",
+        "img_h",
+        "box",
+        "keypoints",
+    ]
     if args.all_boxes:
         fields = fields + ["persons"]
     if not new_file:
@@ -222,9 +258,17 @@ def main() -> None:
             w, h = img.size
             yres = yolo(str(p), classes=[0], verbose=False)
             boxes = yres[0].boxes.xyxy.cpu().numpy().tolist() if yres[0].boxes is not None else []
-            row = {"id": pid, "n_persons": len(boxes),
-                   "kpt_bbox_area_frac": "", "limb_asymmetry": "", "mean_kpt_confidence": "",
-                   "img_w": w, "img_h": h, "box": "", "keypoints": ""}
+            row = {
+                "id": pid,
+                "n_persons": len(boxes),
+                "kpt_bbox_area_frac": "",
+                "limb_asymmetry": "",
+                "mean_kpt_confidence": "",
+                "img_w": w,
+                "img_h": h,
+                "box": "",
+                "keypoints": "",
+            }
             if args.all_boxes:
                 row["persons"] = ""
             if boxes:
@@ -240,11 +284,13 @@ def main() -> None:
                     kpts = person["keypoints"].numpy()
                     scores = person["scores"].numpy()
                     met = compute_metrics(kpts, scores, box)
-                    packed.append({
-                        "box": [round(float(c), 1) for c in box],
-                        "keypoints": encode_kpts(kpts, scores),
-                        "metrics": met,
-                    })
+                    packed.append(
+                        {
+                            "box": [round(float(c), 1) for c in box],
+                            "keypoints": encode_kpts(kpts, scores),
+                            "metrics": met,
+                        }
+                    )
                 mets = [p["metrics"] for p in packed]
                 idx = primary_index(use, mets, w, h) if args.all_boxes else 0
                 chosen = packed[idx]
@@ -252,14 +298,17 @@ def main() -> None:
                 row["box"] = json.dumps(chosen["box"])
                 row["keypoints"] = json.dumps(chosen["keypoints"])
                 if args.all_boxes:
-                    row["persons"] = json.dumps([
-                        {
-                            "box": p["box"],
-                            "keypoints": p["keypoints"],
-                            "conf": p["metrics"].get("mean_kpt_confidence"),
-                        }
-                        for p in packed
-                    ], separators=(",", ":"))
+                    row["persons"] = json.dumps(
+                        [
+                            {
+                                "box": p["box"],
+                                "keypoints": p["keypoints"],
+                                "conf": p["metrics"].get("mean_kpt_confidence"),
+                            }
+                            for p in packed
+                        ],
+                        separators=(",", ":"),
+                    )
             writer.writerow(row)
         except Exception as e:
             n_err += 1

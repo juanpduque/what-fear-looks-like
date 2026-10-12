@@ -8,6 +8,7 @@ path.read_bytes() y se los pasan crudo a Rekognition, así que todos tienen
 el mismo riesgo latente sobre el corpus completo (posters muy pesados son
 raros pero existen). Import esta funcion en vez de repetir el fix cinco veces.
 """
+
 from __future__ import annotations
 
 import io

@@ -8,6 +8,7 @@ site/data/medium_cl.json; CLIP p_painted stays a QA note.
 
 Writes {id: [pred, conf]}  pred in painted|photo|composite
 """
+
 from __future__ import annotations
 
 import csv

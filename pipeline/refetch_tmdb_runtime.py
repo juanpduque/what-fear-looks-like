@@ -10,6 +10,7 @@ Usage:
   TMDB_API_KEY=... python3 refetch_tmdb_runtime.py
   python3 refetch_tmdb_runtime.py --workers 8
 """
+
 from __future__ import annotations
 
 import argparse
@@ -140,8 +141,7 @@ def fetch_runtime(
             return "not_found", None, ""
         if r.status_code == 401:
             raise SystemExit(
-                "TMDB 401 Unauthorized — check TMDB_API_KEY "
-                "(v3 api_key or v4 Bearer token)."
+                "TMDB 401 Unauthorized — check TMDB_API_KEY (v3 api_key or v4 Bearer token)."
             )
         if not r.ok:
             time.sleep(1 + attempt)
@@ -277,8 +277,7 @@ def main() -> None:
     if args.report_only:
         c = classify_no_tt(posters, has_tt, hm)
         print(
-            f"no_tt={c['no_tt']} short={c['short']} "
-            f"feature={c['feature']} unknown={c['unknown']}"
+            f"no_tt={c['no_tt']} short={c['short']} feature={c['feature']} unknown={c['unknown']}"
         )
         return
 
@@ -302,9 +301,7 @@ def main() -> None:
 
     workers = max(1, args.workers)
     session = requests.Session()
-    adapter = requests.adapters.HTTPAdapter(
-        pool_connections=workers, pool_maxsize=workers
-    )
+    adapter = requests.adapters.HTTPAdapter(pool_connections=workers, pool_maxsize=workers)
     session.mount("https://", adapter)
 
     report: list[dict] = []
@@ -354,13 +351,15 @@ def main() -> None:
                     nf_n += 1
                 else:
                     err_n += 1
-                report.append({
-                    "id": row["id"],
-                    "title": row["title"],
-                    "runtime_before": row["runtime_before"],
-                    "runtime_after": row["runtime_after"],
-                    "status": row["status"],
-                })
+                report.append(
+                    {
+                        "id": row["id"],
+                        "title": row["title"],
+                        "runtime_before": row["runtime_before"],
+                        "runtime_after": row["runtime_after"],
+                        "status": row["status"],
+                    }
+                )
                 if done % 200 == 0 or done == len(todo):
                     rate = done / max(time.time() - t0, 1e-6)
                     print(
@@ -372,9 +371,7 @@ def main() -> None:
 
     write_report(report)
     updated, appended = merge_runtimes(updates, titles)
-    print(
-        f"horror_movies.csv: updated_runtime={updated} appended_new={appended}"
-    )
+    print(f"horror_movies.csv: updated_runtime={updated} appended_new={appended}")
     print(f"report → {REPORT} ({len(report)} rows)")
 
     hm2 = load_hm_runtime_title()

@@ -7,6 +7,7 @@ current IMDb map (so new ids from enrich_imdb_ids.py are included).
   OMDB_API_KEY=... python3 probe_omdb_posters.py
   OMDB_API_KEY=... python3 probe_omdb_posters.py --limit 100 --refresh-stale
 """
+
 from __future__ import annotations
 
 import argparse

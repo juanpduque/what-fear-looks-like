@@ -19,6 +19,7 @@ Usage:
 Does not rewrite posters.csv until you pass --apply (copies canonical → posters/{id}.jpg
 and updates poster_paths_backfill.csv).
 """
+
 from __future__ import annotations
 
 import argparse
@@ -108,8 +109,16 @@ def cmd_discover(args):
         posters = (data.get("images") or {}).get("posters") or []
         # ensure primary is in the list even if language filter dropped it
         if prim and not any((p.get("file_path") or "") == prim for p in posters):
-            posters = [{"file_path": prim, "iso_639_1": "", "vote_average": 0,
-                        "vote_count": 0, "width": 0, "height": 0}] + list(posters)
+            posters = [
+                {
+                    "file_path": prim,
+                    "iso_639_1": "",
+                    "vote_average": 0,
+                    "vote_count": 0,
+                    "width": 0,
+                    "height": 0,
+                }
+            ] + list(posters)
         # rank by votes then average
         posters = sorted(
             posters,
@@ -127,23 +136,27 @@ def cmd_discover(args):
             fp = p.get("file_path") or ""
             if not str(fp).startswith("/"):
                 continue
-            rows_out.append({
-                "id": pid,
-                "title": r.title,
-                "year": int(r.year) if pd.notna(r.year) else "",
-                "file_path": fp,
-                "iso_639_1": p.get("iso_639_1") or "",
-                "vote_average": float(p.get("vote_average") or 0),
-                "vote_count": int(p.get("vote_count") or 0),
-                "width": int(p.get("width") or 0),
-                "height": int(p.get("height") or 0),
-                "is_primary": int(fp == prim),
-            })
+            rows_out.append(
+                {
+                    "id": pid,
+                    "title": r.title,
+                    "year": int(r.year) if pd.notna(r.year) else "",
+                    "file_path": fp,
+                    "iso_639_1": p.get("iso_639_1") or "",
+                    "vote_average": float(p.get("vote_average") or 0),
+                    "vote_count": int(p.get("vote_count") or 0),
+                    "width": int(p.get("width") or 0),
+                    "height": int(p.get("height") or 0),
+                    "is_primary": int(fp == prim),
+                }
+            )
 
         if i % 50 == 0 or i == len(todo):
             _write_catalog(rows_out)
             rate = i / max(time.time() - t0, 1e-6)
-            print(f"  discover {i}/{len(todo)} ({rate:.1f}/s) catalog={len(rows_out):,}", flush=True)
+            print(
+                f"  discover {i}/{len(todo)} ({rate:.1f}/s) catalog={len(rows_out):,}", flush=True
+            )
         time.sleep(args.sleep)
 
     _write_catalog(rows_out)
@@ -152,16 +165,26 @@ def cmd_discover(args):
         per = df.groupby("id").size()
         print("\n=== DISCOVER SUMMARY ===")
         print(f"movies: {df.id.nunique():,}  poster rows: {len(df):,}")
-        print(f"posters/movie: mean={per.mean():.2f} median={per.median():.0f} "
-              f"p90={per.quantile(0.9):.0f} max={per.max()}")
+        print(
+            f"posters/movie: mean={per.mean():.2f} median={per.median():.0f} "
+            f"p90={per.quantile(0.9):.0f} max={per.max()}"
+        )
         print(f"movies with ≥2 posters: {(per >= 2).sum():,}")
         print(f"movies with ≥5 posters: {(per >= 5).sum():,}")
 
 
 def _write_catalog(rows):
     fields = [
-        "id", "title", "year", "file_path", "iso_639_1",
-        "vote_average", "vote_count", "width", "height", "is_primary",
+        "id",
+        "title",
+        "year",
+        "file_path",
+        "iso_639_1",
+        "vote_average",
+        "vote_count",
+        "width",
+        "height",
+        "is_primary",
     ]
     with CATALOG.open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=fields)
@@ -229,6 +252,7 @@ def cmd_download(args):
 def cmd_embed(args):
     import torch
     from PIL import Image
+
     import clip_embed as ce
 
     if not CATALOG.exists():
@@ -236,9 +260,7 @@ def cmd_embed(args):
     cat = pd.read_csv(CATALOG)
     cat["id"] = cat["id"].astype(int)
     if args.max_per_id:
-        cat = cat.sort_values(
-            ["id", "vote_average", "vote_count"], ascending=[True, False, False]
-        )
+        cat = cat.sort_values(["id", "vote_average", "vote_count"], ascending=[True, False, False])
         cat = cat.groupby("id", group_keys=False).head(args.max_per_id)
 
     keys, paths = [], []
@@ -282,7 +304,7 @@ def cmd_embed(args):
         ids_done.extend(batch_keys)
         batch_imgs, batch_keys = [], []
 
-    for j, i in enumerate(todo_idx, 1):
+    for _j, i in enumerate(todo_idx, 1):
         try:
             batch_imgs.append(preprocess(Image.open(paths[i]).convert("RGB")))
             batch_keys.append(keys[i])
@@ -293,9 +315,7 @@ def cmd_embed(args):
             if len(ids_done) % 1280 < 64:
                 rate = (len(ids_done) - n0) / max(time.time() - t0, 1e-6)
                 print(f"  {len(ids_done):,} ({rate:.0f}/s)", flush=True)
-                np.savez_compressed(
-                    EMB_PARTIAL, keys=np.array(ids_done), vecs=np.array(vecs)
-                )
+                np.savez_compressed(EMB_PARTIAL, keys=np.array(ids_done), vecs=np.array(vecs))
     flush()
     np.savez_compressed(EMB, keys=np.array(ids_done), vecs=np.array(vecs))
     EMB_PARTIAL.unlink(missing_ok=True)
@@ -313,9 +333,7 @@ def cmd_select(args):
     cat = pd.read_csv(CATALOG)
     cat["id"] = cat["id"].astype(int)
     if args.max_per_id:
-        cat = cat.sort_values(
-            ["id", "vote_average", "vote_count"], ascending=[True, False, False]
-        )
+        cat = cat.sort_values(["id", "vote_average", "vote_count"], ascending=[True, False, False])
         cat = cat.groupby("id", group_keys=False).head(args.max_per_id)
 
     z = np.load(EMB)
@@ -354,9 +372,7 @@ def cmd_select(args):
         # cluster reps = first member (highest score in that cluster)
         reps = [c[0] for c in clusters]
         # canonical: prefer primary if it is a rep, else best score among reps
-        primary_reps = [
-            i for i in reps if int(getattr(items[i][0], "is_primary", 0) or 0) == 1
-        ]
+        primary_reps = [i for i in reps if int(getattr(items[i][0], "is_primary", 0) or 0) == 1]
         if primary_reps:
             best_i = primary_reps[0]
         else:
@@ -369,30 +385,34 @@ def cmd_select(args):
         for ci, c in enumerate(clusters):
             for j, ii in enumerate(c):
                 r = items[ii][0]
-                cluster_rows.append({
-                    "id": int(pid),
-                    "cluster": ci,
-                    "file_path": r.file_path,
-                    "is_rep": int(j == 0),
-                    "is_canonical": int(ii == best_i),
-                    "vote_average": r.vote_average,
-                    "vote_count": r.vote_count,
-                    "iso_639_1": r.iso_639_1,
-                })
+                cluster_rows.append(
+                    {
+                        "id": int(pid),
+                        "cluster": ci,
+                        "file_path": r.file_path,
+                        "is_rep": int(j == 0),
+                        "is_canonical": int(ii == best_i),
+                        "vote_average": r.vote_average,
+                        "vote_count": r.vote_count,
+                        "iso_639_1": r.iso_639_1,
+                    }
+                )
 
-        canon_rows.append({
-            "id": int(pid),
-            "title": best.title,
-            "year": best.year,
-            "canonical_path": best.file_path,
-            "n_posters": len(items),
-            "n_clusters": len(clusters),
-            "n_discarded_variants": n_disc,
-            "changed_from_primary": changed,
-            "iso_639_1": best.iso_639_1,
-            "vote_average": best.vote_average,
-            "vote_count": best.vote_count,
-        })
+        canon_rows.append(
+            {
+                "id": int(pid),
+                "title": best.title,
+                "year": best.year,
+                "canonical_path": best.file_path,
+                "n_posters": len(items),
+                "n_clusters": len(clusters),
+                "n_discarded_variants": n_disc,
+                "changed_from_primary": changed,
+                "iso_639_1": best.iso_639_1,
+                "vote_average": best.vote_average,
+                "vote_count": best.vote_count,
+            }
+        )
 
     pd.DataFrame(cluster_rows).to_csv(CLUSTERS, index=False)
     pdf = pd.DataFrame(canon_rows)
@@ -453,8 +473,7 @@ def cmd_report(args):
     print(f"posters considered (sum): {int(pdf.n_posters.sum()):,}")
     print(f"clusters (sum): {int(pdf.n_clusters.sum()):,}")
     print(f"discarded near-dup variants: {int(pdf.n_discarded_variants.sum()):,}")
-    print(f"kept diverse alts (clusters-1 sum): "
-          f"{int((pdf.n_clusters - 1).clip(lower=0).sum()):,}")
+    print(f"kept diverse alts (clusters-1 sum): {int((pdf.n_clusters - 1).clip(lower=0).sum()):,}")
     print(f"canonical changed from primary: {int(pdf.changed_from_primary.sum()):,}")
     print("\nposters/movie distribution:")
     print(pdf.n_posters.describe().to_string())
@@ -464,7 +483,9 @@ def cmd_report(args):
 
 
 def main():
-    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     sub = ap.add_subparsers(dest="cmd", required=True)
 
     d = sub.add_parser("discover", help="TMDB /images catalog")
@@ -490,8 +511,7 @@ def main():
     s = sub.add_parser("select", help="cluster variants + pick canonical")
     s.add_argument("--sim", type=float, default=0.96, help="cosine threshold for same variant")
     s.add_argument("--max-per-id", type=int, default=5)
-    s.add_argument("--apply", action="store_true",
-                   help="copy canonical into data/posters/{id}.jpg")
+    s.add_argument("--apply", action="store_true", help="copy canonical into data/posters/{id}.jpg")
     s.set_defaults(func=cmd_select)
 
     r = sub.add_parser("report", help="print selection stats")

@@ -8,6 +8,7 @@ attaches TMDB poster paths, and writes pipeline/qa/label-qa-medium-r2.html
   python3 build_label_qa_medium_r2.py
   open qa/label-qa-medium-r2.html
 """
+
 from __future__ import annotations
 
 import json
@@ -31,7 +32,9 @@ def main():
     paths: dict[int, str] = {}
     hm = DATA / "horror_movies.csv"
     if hm.exists():
-        for r in pd.read_csv(hm, usecols=lambda c: c in {"id", "poster_path"}).itertuples(index=False):
+        for r in pd.read_csv(hm, usecols=lambda c: c in {"id", "poster_path"}).itertuples(
+            index=False
+        ):
             p = getattr(r, "poster_path", None)
             if isinstance(p, str) and p.startswith("/"):
                 paths[int(r.id)] = p
@@ -42,22 +45,24 @@ def main():
         path = paths.get(int(r.id))
         if not path:
             missing_path += 1
-        rows.append({
-            "id": int(r.id),
-            "title": str(r.title),
-            "year": int(r.year),
-            "p": round(float(r.p_painted), 4),
-            "proposed": str(r.clip_proposed),
-            "band": str(r.band),
-            "pass1": str(r.final_label),
-            "path": path,
-        })
+        rows.append(
+            {
+                "id": int(r.id),
+                "title": str(r.title),
+                "year": int(r.year),
+                "p": round(float(r.p_painted), 4),
+                "proposed": str(r.clip_proposed),
+                "band": str(r.band),
+                "pass1": str(r.final_label),
+                "path": path,
+            }
+        )
 
     payload = json.dumps(rows, ensure_ascii=False, separators=(",", ":"))
     html = HTML_TEMPLATE.replace("__N__", str(len(rows))).replace("__DATA__", payload)
     OUT.write_text(html, encoding="utf-8")
     vc = df["final_label"].value_counts()
-    print(f"Wrote {OUT} ({len(rows)} posters, {len(rows)-missing_path} with TMDB path)")
+    print(f"Wrote {OUT} ({len(rows)} posters, {len(rows) - missing_path} with TMDB path)")
     print(vc.to_string())
 
 

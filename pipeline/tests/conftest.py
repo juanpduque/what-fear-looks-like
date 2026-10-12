@@ -6,6 +6,7 @@ pandas/torch/transformers. They validate the *committed* artifacts
 so they run in CI in milliseconds and never need the heavy, gitignored
 metric CSVs.
 """
+
 from __future__ import annotations
 
 import json

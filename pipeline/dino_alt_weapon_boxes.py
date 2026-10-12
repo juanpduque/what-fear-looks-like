@@ -20,6 +20,7 @@ maps DINO's output back:
 Writes data/qa/alts_dino_catalog/weapon_boxes_dino_alts.json
   {id: {file_path: [{label, score, box}]}}
 """
+
 from __future__ import annotations
 
 import argparse
@@ -82,13 +83,17 @@ def merge(work: Path, weapon_files: list[Path]) -> None:
 
 
 def main() -> None:
-    ap = argparse.ArgumentParser(description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter)
+    ap = argparse.ArgumentParser(
+        description=__doc__, formatter_class=argparse.RawDescriptionHelpFormatter
+    )
     sub = ap.add_subparsers(dest="cmd", required=True)
     s = sub.add_parser("stage")
     s.add_argument("--work", type=Path, required=True)
     m = sub.add_parser("merge")
     m.add_argument("--work", type=Path, required=True)
-    m.add_argument("--weapon", type=Path, nargs="+", required=True, help="DINO --weapon-out file(s)")
+    m.add_argument(
+        "--weapon", type=Path, nargs="+", required=True, help="DINO --weapon-out file(s)"
+    )
     args = ap.parse_args()
     if args.cmd == "stage":
         stage(args.work)

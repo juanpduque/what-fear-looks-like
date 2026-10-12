@@ -11,6 +11,7 @@ Usage:
   python3 fetch_tmdb_details.py            # resume, fetch missing ids
   python3 fetch_tmdb_details.py --refresh  # refetch all
 """
+
 from __future__ import annotations
 
 import argparse

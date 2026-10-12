@@ -5,7 +5,10 @@
 const t = (...args) => (typeof window.t === 'function' ? window.t(...args) : args[0]);
 const num = (n) => Number(n).toLocaleString('en-US');
 const esc = (s) =>
-  String(s ?? '').replace(/[&<>"']/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c]);
+  String(s ?? '').replace(
+    /[&<>"']/g,
+    (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;', "'": '&#39;' })[c],
+  );
 
 /** Same slug as studios/studios.js (anchor of each studio entry). */
 const slug = (credit) =>
@@ -14,7 +17,8 @@ const slug = (credit) =>
     .replace(/[^a-z0-9]+/g, '-')
     .replace(/^-|-$/g, '');
 
-const poster = (id, path) => (path ? `https://image.tmdb.org/t/p/w185${path}` : `assets/posters/${id}.jpg`);
+const poster = (id, path) =>
+  path ? `https://image.tmdb.org/t/p/w185${path}` : `assets/posters/${id}.jpg`;
 
 let data = null;
 let names = {};

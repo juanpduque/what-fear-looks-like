@@ -6,6 +6,7 @@ of the measured cover.
 
   python3 owl_alts.py --jobs-file data/qa/alts_comp_catalog/jobs.csv --out /tmp/owl_alts.csv
 """
+
 from __future__ import annotations
 
 import argparse
@@ -207,9 +208,7 @@ def main() -> int:
             inputs = {k: v.to(device) for k, v in inputs.items()}
             with torch.no_grad():
                 outputs = model(**inputs)
-            results = postprocess(
-                processor, outputs, args.min_score, h, w, device, all_labels
-            )
+            results = postprocess(processor, outputs, args.min_score, h, w, device, all_labels)
             boxes = results["boxes"].detach().cpu().tolist()
             scores = results["scores"].detach().cpu().tolist()
             if results.get("text_labels") is not None:
@@ -250,7 +249,9 @@ def main() -> int:
             n_ok += 1
         except Exception as e:
             n_err += 1
-            writer.writerow(empty_row(pid, fp, status="error", error=f"{type(e).__name__}: {e}"[:240]))
+            writer.writerow(
+                empty_row(pid, fp, status="error", error=f"{type(e).__name__}: {e}"[:240])
+            )
             if n_err <= 8:
                 print(f"  FAIL {pid} {fp}: {e}", flush=True)
         finally:

@@ -1,10 +1,9 @@
 # Ruff config for the pipeline. Lint + format, matching the existing codebase.
 #   pip install ruff
 #   ruff check pipeline/          # lint
-#   ruff format pipeline/         # format (currently check-only in CI)
+#   ruff format pipeline/         # format
 #
-# Intentionally conservative so the first adoption doesn't reformat 22k lines.
-# Expand `select` over time.
+# Both are blocking in CI. Expand `select` deliberately.
 
 target-version = "py39"
 line-length = 100
@@ -22,6 +21,7 @@ select = [
 ]
 ignore = [
     "E501",  # line length handled by the formatter, not enforced as an error yet
+    "E741",  # `l` as a short loop name is used across older scripts; style only
 ]
 
 [lint.isort]

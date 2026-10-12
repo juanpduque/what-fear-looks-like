@@ -1,5 +1,6 @@
 #!/usr/bin/env python3
-"""Render site/assets/og-card.jpg, the 1200x630 image shown when the essay is shared.
+"""Render the 1200x630 images shown when the essay is shared: site/assets/og-card.jpg
+(English, used by index.html) and og-card-es.jpg (Spanish, used by es/index.html).
 
 The poster count and year range are read from site/data/explorer.js, so rerun
 this whenever the corpus changes:
@@ -9,6 +10,7 @@ this whenever the corpus changes:
 Renders an HTML card in headless Chrome (Playwright) with the essay's fonts and
 palette; needs network for Google Fonts and the TMDB poster.
 """
+
 from __future__ import annotations
 
 import base64
@@ -21,7 +23,23 @@ from playwright.sync_api import sync_playwright
 
 ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "site"
-OUT = SITE / "assets" / "og-card.jpg"
+# Card copy per language: (output file, kicker, title HTML, count line, tagline).
+CARDS = {
+    "en": (
+        "og-card.jpg",
+        "A poster analysis",
+        'What <span class="fear">Fear</span><br>Looks Like',
+        "<b>{n}</b> horror posters measured, {y0}–{y1}",
+        "In 1945, 9 in 10 had a face. Today, fewer than half.",
+    ),
+    "es": (
+        "og-card-es.jpg",
+        "Un análisis de afiches",
+        'Cómo se ve<br>el <span class="fear">miedo</span>',
+        "<b>{n}</b> afiches de terror, de {y0} a {y1}",
+        "En 1945, 9 de cada 10 tenían cara. Hoy, menos de la mitad.",
+    ),
+}
 LOGO = SITE / "assets" / "pulp-analytics-red.png"
 # Halloween (1978), TMDB id 948 — the essay's anchor specimen.
 POSTER = "https://image.tmdb.org/t/p/w780/wijlZ3HaYMvlDTPqJoTCWKFkCPU.jpg"
@@ -36,9 +54,10 @@ def corpus_stats() -> tuple[int, int, int]:
     return n, min(years), max(years)
 
 
-def html(n: int, y0: int, y1: int) -> str:
+def html(lang: str, n: int, y0: int, y1: int) -> str:
+    _, kicker, title, count, tag = CARDS[lang]
     logo = base64.b64encode(LOGO.read_bytes()).decode()
-    return f"""<!doctype html><html><head><meta charset="utf-8">
+    return f"""<!doctype html><html lang="{lang}"><head><meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Anton&family=Source+Serif+4:ital,wght@0,400;1,400&family=Space+Mono:wght@400;700&display=block" rel="stylesheet">
 <style>
 *{{margin:0;padding:0;box-sizing:border-box}}
@@ -58,10 +77,10 @@ h1 .fear{{color:#c1121f}}
 </style></head><body><div class="card">
 <div class="poster"><img src="{POSTER}" alt=""></div>
 <div class="text">
-  <p class="kicker">A poster analysis</p>
-  <h1>What <span class="fear">Fear</span><br>Looks Like</h1>
-  <p class="dek"><b>{n:,}</b> horror posters measured, {y0}–{y1}</p>
-  <p class="tag">Horror didn't get scarier. It got quieter.</p>
+  <p class="kicker">{kicker}</p>
+  <h1>{title}</h1>
+  <p class="dek">{count.format(n=f"{n:,}", y0=y0, y1=y1)}</p>
+  <p class="tag">{tag}</p>
 </div></div>
 <img class="logo" src="data:image/png;base64,{logo}" alt="">
 </body></html>"""
@@ -69,18 +88,19 @@ h1 .fear{{color:#c1121f}}
 
 def main() -> None:
     n, y0, y1 = corpus_stats()
-    with tempfile.TemporaryDirectory() as tmp:
-        page_path = Path(tmp) / "card.html"
-        page_path.write_text(html(n, y0, y1), encoding="utf-8")
-        with sync_playwright() as p:
-            browser = p.chromium.launch(channel="chrome")
-            page = browser.new_page(viewport={"width": 1200, "height": 630})
+    with tempfile.TemporaryDirectory() as tmp, sync_playwright() as p:
+        browser = p.chromium.launch(channel="chrome")
+        page = browser.new_page(viewport={"width": 1200, "height": 630})
+        for lang, (name, *_) in CARDS.items():
+            out = SITE / "assets" / name
+            page_path = Path(tmp) / f"card-{lang}.html"
+            page_path.write_text(html(lang, n, y0, y1), encoding="utf-8")
             page.goto(page_path.as_uri(), wait_until="networkidle")
             page.evaluate("document.fonts.ready")
             page.wait_for_function("document.querySelector('.poster img').complete")
-            page.screenshot(path=str(OUT), type="jpeg", quality=88)
-            browser.close()
-    print(f"wrote {OUT} (n={n:,}, {y0}–{y1}, {OUT.stat().st_size // 1024} KB)")
+            page.screenshot(path=str(out), type="jpeg", quality=88)
+            print(f"wrote {out} (n={n:,}, {y0}–{y1}, {out.stat().st_size // 1024} KB)")
+        browser.close()
 
 
 if __name__ == "__main__":

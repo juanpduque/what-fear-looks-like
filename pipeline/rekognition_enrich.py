@@ -15,6 +15,7 @@ Requires: aws configure, boto3. Region: us-east-1.
 
 Outputs: data/rekognition.csv (and optional sidecar for parallel/resume).
 """
+
 from __future__ import annotations
 
 import argparse
@@ -66,12 +67,39 @@ FIELDS = [
 ]
 
 WEAPON = {
-    "weapon", "blade", "knife", "dagger", "sword", "gun", "handgun", "rifle",
-    "axe", "hatchet", "bow", "arrow", "spear", "mace", "chainsaw",
+    "weapon",
+    "blade",
+    "knife",
+    "dagger",
+    "sword",
+    "gun",
+    "handgun",
+    "rifle",
+    "axe",
+    "hatchet",
+    "bow",
+    "arrow",
+    "spear",
+    "mace",
+    "chainsaw",
 }
 ANIMAL = {
-    "animal", "shark", "fish", "sea life", "insect", "bird", "dog", "cat",
-    "wolf", "bear", "snake", "spider", "bat", "crow", "raven", "great white shark",
+    "animal",
+    "shark",
+    "fish",
+    "sea life",
+    "insect",
+    "bird",
+    "dog",
+    "cat",
+    "wolf",
+    "bear",
+    "snake",
+    "spider",
+    "bat",
+    "crow",
+    "raven",
+    "great white shark",
 }
 PERSON = {"person", "human", "man", "woman", "boy", "girl", "adult", "child", "face", "baby"}
 WATER = {"water", "ocean", "sea", "lake", "beach", "wave", "underwater"}
@@ -175,8 +203,7 @@ def analyze(client, path: Path, min_interval: float = 0.0) -> dict:
     q = ip.get("Quality") or {}
     colors = ip.get("DominantColors") or []
     color_s = "|".join(
-        f"{c.get('HexCode', '')}:{round(float(c.get('PixelPercent', 0)), 1)}"
-        for c in colors[:5]
+        f"{c.get('HexCode', '')}:{round(float(c.get('PixelPercent', 0)), 1)}" for c in colors[:5]
     )
     label_s = "|".join(f"{n}:{c:.2f}" for n, c in labels[:10])
 
@@ -185,10 +212,7 @@ def analyze(client, path: Path, min_interval: float = 0.0) -> dict:
         lambda: client.detect_moderation_labels(Image={"Bytes": data}, MinConfidence=40),
         min_interval,
     )
-    mods = [
-        (m["Name"], float(m["Confidence"]) / 100.0)
-        for m in mod.get("ModerationLabels", [])
-    ]
+    mods = [(m["Name"], float(m["Confidence"]) / 100.0) for m in mod.get("ModerationLabels", [])]
     mod_s = "|".join(f"{n}:{c:.2f}" for n, c in mods[:8])
 
     # 3) Faces (often empty on painted posters — still useful on photo sheets)
@@ -209,7 +233,7 @@ def analyze(client, path: Path, min_interval: float = 0.0) -> dict:
         f0 = details[0]
         emos = sorted(f0.get("Emotions") or [], key=lambda e: -e["Confidence"])
         if emos:
-            emotion = f"{emos[0]['Type']}:{emos[0]['Confidence']/100:.2f}"
+            emotion = f"{emos[0]['Type']}:{emos[0]['Confidence'] / 100:.2f}"
         gender = (f0.get("Gender") or {}).get("Value") or ""
         ar = f0.get("AgeRange") or {}
         age_lo = int(ar.get("Low", -1))
@@ -235,8 +259,13 @@ def analyze(client, path: Path, min_interval: float = 0.0) -> dict:
         rek_violence=_mod_score(mods, "Violence", "Graphic Violence"),
         rek_mod_weapons=_mod_score(mods, "Weapons"),
         rek_gore=_mod_score(
-            mods, "Visually Disturbing", "Blood & Gore", "Gore",
-            "Emaciated Bodies", "Corpses", "Hanging",
+            mods,
+            "Visually Disturbing",
+            "Blood & Gore",
+            "Gore",
+            "Emaciated Bodies",
+            "Corpses",
+            "Hanging",
         ),
         rek_n_faces=len(details),
         rek_emotion=emotion,
@@ -274,7 +303,7 @@ def decade_summary(rows: dict[int, dict] | list[dict]) -> dict:
     for dec, g in sorted(by_dec.items()):
         n = len(g)
 
-        def mean_flag(key: str, thr: float) -> float:
+        def mean_flag(key: str, thr: float, g=g, n=n) -> float:
             return round(sum(1 for r in g if _as_float(r.get(key)) > thr) / n, 4)
 
         out[str(int(dec))] = {
@@ -321,7 +350,9 @@ def load_meta_map() -> dict[int, dict]:
 def load_ids_file(path: Path) -> list[int]:
     ids: list[int] = []
     text = path.read_text(encoding="utf-8", errors="replace")
-    if path.suffix.lower() == ".csv" or (text.lstrip().startswith("id") and "," in text.split("\n", 1)[0]):
+    if path.suffix.lower() == ".csv" or (
+        text.lstrip().startswith("id") and "," in text.split("\n", 1)[0]
+    ):
         with path.open(encoding="utf-8", errors="replace") as f:
             reader = csv.DictReader(f)
             if reader.fieldnames and "id" in reader.fieldnames:
@@ -404,19 +435,29 @@ def main():
     ap.add_argument("--sample", type=int, default=0)
     ap.add_argument("--save-every", type=int, default=50)
     ap.add_argument("--workers", type=int, default=1)
-    ap.add_argument("--min-interval", type=float, default=0.05,
-                    help="min seconds between Rekognition API calls (shared)")
+    ap.add_argument(
+        "--min-interval",
+        type=float,
+        default=0.05,
+        help="min seconds between Rekognition API calls (shared)",
+    )
     ap.add_argument("--region", default=REGION)
-    ap.add_argument("--sidecar", default="",
-                    help="checkpoint CSV (resume). Empty = write only to rekognition.csv")
-    ap.add_argument("--merge-main", action="store_true",
-                    help="periodically merge sidecar successes into rekognition.csv")
+    ap.add_argument(
+        "--sidecar",
+        default="",
+        help="checkpoint CSV (resume). Empty = write only to rekognition.csv",
+    )
+    ap.add_argument(
+        "--merge-main",
+        action="store_true",
+        help="periodically merge sidecar successes into rekognition.csv",
+    )
     ap.add_argument("--limit", type=int, default=0)
-    ap.add_argument("--force", action="store_true",
-                    help="reprocess even if already in sidecar/main")
+    ap.add_argument(
+        "--force", action="store_true", help="reprocess even if already in sidecar/main"
+    )
     ap.add_argument("--live-lookup", action="store_true")
-    ap.add_argument("--merge-lookup", action="store_true",
-                    help="rebuild lookup.js at the end")
+    ap.add_argument("--merge-lookup", action="store_true", help="rebuild lookup.js at the end")
     args = ap.parse_args()
 
     meta_map = load_meta_map()
@@ -471,7 +512,7 @@ def main():
     jobs = [pid for pid, ok in zip(candidates, exists) if ok]
     workers = max(1, args.workers)
     log(
-        f"want={len(want_ids)} todo={len(jobs)} done_skip={len(want_ids)-len(jobs)} "
+        f"want={len(want_ids)} todo={len(jobs)} done_skip={len(want_ids) - len(jobs)} "
         f"workers={workers} sidecar={sidecar or '-'} merge_main={args.merge_main}"
     )
     if not jobs:
@@ -539,7 +580,7 @@ def main():
     elapsed = time.time() - t0
     rate = ok / max(elapsed, 1e-6)
     log(
-        f"LISTO ok={ok} err={err} elapsed={elapsed/60:.1f}m ({rate:.2f}/s) "
+        f"LISTO ok={ok} err={err} elapsed={elapsed / 60:.1f}m ({rate:.2f}/s) "
         f"main={len(main_rows) if args.merge_main or sidecar is None else 'n/a'} "
         f"→ {sidecar or OUT}"
     )

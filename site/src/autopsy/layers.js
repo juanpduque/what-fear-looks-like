@@ -4,8 +4,7 @@ import { resolveFaces, faceLab, novaFaceCount } from './faces.js';
 import { formatNovaCreature, novaCreature, novaOcr, novaTitle, novaTypo } from './nova.js';
 import { clipToJevSlot, formatJevCreature, jevCreature, showJevCreatureLab } from './jev.js';
 
-const t = (...args) =>
-  typeof window.t === 'function' ? window.t(...args) : args[0];
+const t = (...args) => (typeof window.t === 'function' ? window.t(...args) : args[0]);
 
 function esc(s) {
   return String(s ?? '')
@@ -208,9 +207,7 @@ function dimSvg(maskId, boxes) {
 function massMarks(comp, { origin } = {}) {
   const mx = (comp.mx ?? 0.5) * 100;
   const my = (comp.my ?? 0.5) * 100;
-  const ring = origin
-    ? `<div class="lk-origin" title="${t('lab_geom_center')}"></div>`
-    : '';
+  const ring = origin ? `<div class="lk-origin" title="${t('lab_geom_center')}"></div>` : '';
   return `${ring}<div class="lk-mass" style="left:${mx}%;top:${my}%"></div>`;
 }
 
@@ -302,7 +299,7 @@ const TITLE_BOX_OVERRIDE = {
   // OCR ran on alternate TMDB art ("DRACULA" bat banner); site shows "Horror of Dracula".
   11868: { tx: 0.05, tt: 0.855, tw: 0.9, th: 0.085 },
   // attributes/Rek title-box scored 0 (cursive around the shoe). Lines exist: Dance|or|Die.
-  145850: { tx: 0.03, tt: 0.02, tw: 0.94, th: 0.40 },
+  145850: { tx: 0.03, tt: 0.02, tw: 0.94, th: 0.4 },
   // Published box sat on the bottom band; site one-sheet has THE EXORCIST at the top.
   9552: { tx: 0.06, tt: 0.015, tw: 0.88, th: 0.22 },
   // EasyOCR/Rek kept only RETURN; HORROR HIGH is giant display type behind the figure.
@@ -314,12 +311,7 @@ export function titleBox(comp, tmdbId) {
   const ink = over || tmdbId == null ? null : titleInkFor(tmdbId);
   const src = over ? { ...comp, ...over } : ink ? { ...comp, ...ink } : comp;
   const has =
-    src.tt != null &&
-    src.tt >= 0 &&
-    src.tw > 0 &&
-    src.th > 0 &&
-    src.tx != null &&
-    src.tx >= 0;
+    src.tt != null && src.tt >= 0 && src.tw > 0 && src.th > 0 && src.tx != null && src.tx >= 0;
   if (!has) return null;
   const left = Math.max(0, src.tx * 100);
   const top = Math.max(0, src.tt * 100);
@@ -339,10 +331,7 @@ export function buildLayersHtml(p, a, opts = {}) {
   const palArr = a.pal && a.pal.length ? a.pal : [p[1]];
   const topBand = topHueFamily(a);
   const palSwatch = palArr
-    .map(
-      (c, i) =>
-        `<span title="${esc(c)}"><b>${i + 1}</b><i style="background:${c}"></i></span>`,
-    )
+    .map((c, i) => `<span title="${esc(c)}"><b>${i + 1}</b><i style="background:${c}"></i></span>`)
     .join('');
   const palHandles = palArr
     .map(
@@ -466,9 +455,7 @@ export function buildLayersHtml(p, a, opts = {}) {
     }
   }
 
-  const titleHole = box
-    ? [[box.left / 100, box.top / 100, box.width / 100, box.height / 100]]
-    : [];
+  const titleHole = box ? [[box.left / 100, box.top / 100, box.width / 100, box.height / 100]] : [];
   const creatureHoles = cboxesPref.slice(0, 3).map((b) => {
     const raw = b.box || b;
     return Array.isArray(raw) ? raw : [0, 0, 0, 0];
@@ -501,11 +488,7 @@ export function buildLayersHtml(p, a, opts = {}) {
     pose?.kpts && !isGroupPrimary(pose)
       ? usableSkeleton(alignKeypointsToBox(pose.kpts, pose.box), pose)
       : null;
-  const poseHoles = pose?.box
-    ? [pose.box]
-    : poseKpts
-      ? [kptBox(poseKpts)].filter(Boolean)
-      : [];
+  const poseHoles = pose?.box ? [pose.box] : poseKpts ? [kptBox(poseKpts)].filter(Boolean) : [];
   const poseBoxHtml = pose?.box
     ? `<div class="lk-posebox" style="${boxStyle(pose.box[0], pose.box[1], pose.box[2], pose.box[3])}"></div>`
     : '';

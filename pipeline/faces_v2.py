@@ -16,6 +16,7 @@ Run (resumable):
 
 Outputs: data/faces_v2.csv (incl. face_boxes), data/faces_v2_decade.json
 """
+
 import argparse
 import time
 from concurrent.futures import ProcessPoolExecutor, as_completed
@@ -28,8 +29,8 @@ HERE = Path(__file__).parent
 DATA = HERE / "data"
 MODEL = HERE / "models" / "face_detection_yunet_2023mar.onnx"
 CHECKPOINT = DATA / "faces_v2_partial.csv"
-W = 320                      # detection width
-CONF = 0.6                   # YuNet confidence threshold
+W = 320  # detection width
+CONF = 0.6  # YuNet confidence threshold
 
 VALIDATION = [  # (title, year, expected faces, tolerance)
     ("Resident Evil: Welcome to Raccoon City", 2021, 4, 2),
@@ -44,9 +45,7 @@ VALIDATION = [  # (title, year, expected faces, tolerance)
 
 def make_detector():
     if not MODEL.exists():
-        raise SystemExit(
-            f"Modelo no encontrado: {MODEL}\nCorre el curl del docstring primero."
-        )
+        raise SystemExit(f"Modelo no encontrado: {MODEL}\nCorre el curl del docstring primero.")
     return cv2.FaceDetectorYN.create(str(MODEL), "", (W, W), CONF, 0.3, 5000)
 
 
@@ -82,12 +81,14 @@ def detect(det, path):
     area = float(sum(f[2] * f[3] for f in faces) / (ih * iw))
     boxes = []
     for f in faces:
-        boxes.append([
-            round(float(f[0]) / iw, 4),
-            round(float(f[1]) / ih, 4),
-            round(float(f[2]) / iw, 4),
-            round(float(f[3]) / ih, 4),
-        ])
+        boxes.append(
+            [
+                round(float(f[0]) / iw, 4),
+                round(float(f[1]) / ih, 4),
+                round(float(f[2]) / iw, 4),
+                round(float(f[3]) / ih, 4),
+            ]
+        )
     boxes.sort(key=lambda b: b[2] * b[3], reverse=True)
     boxes_s = "|".join(f"{x},{y},{bw},{bh}" for x, y, bw, bh in boxes)
     return dict(
@@ -106,12 +107,16 @@ def finalize(d: pd.DataFrame, out_csv: Path | None = None, out_decade: Path | No
     y = d.year.astype(int)
     d_dec = d[(y >= 1897) & (y <= 2030)].copy()
     d_dec["decade"] = (d_dec.year // 10) * 10
-    agg = d_dec.groupby("decade").agg(
-        n=("id", "count"),
-        mean_faces=("n_faces", "mean"),
-        pct_with_face=("n_faces", lambda s: (s > 0).mean()),
-        face_area=("face_area", "mean"),
-    ).round(3)
+    agg = (
+        d_dec.groupby("decade")
+        .agg(
+            n=("id", "count"),
+            mean_faces=("n_faces", "mean"),
+            pct_with_face=("n_faces", lambda s: (s > 0).mean()),
+            face_area=("face_area", "mean"),
+        )
+        .round(3)
+    )
     agg.reset_index().to_json(out_decade, orient="records")
     print("\n=== YuNet POR DECADA ===")
     print(agg.to_string())
@@ -131,7 +136,12 @@ def main():
     ap.add_argument("--meta-csv", default="", help="override id source (default posters.csv)")
     ap.add_argument("--out", default="", help="override output csv (keeps corpora separate)")
     ap.add_argument("--checkpoint", default="", help="override checkpoint path")
-    ap.add_argument("--workers", type=int, default=6, help="parallel processes (CPU-bound, ~1 per core minus headroom)")
+    ap.add_argument(
+        "--workers",
+        type=int,
+        default=6,
+        help="parallel processes (CPU-bound, ~1 per core minus headroom)",
+    )
     args = ap.parse_args()
 
     global CHECKPOINT
@@ -142,10 +152,13 @@ def main():
 
     det = make_detector()
 
-    meta = pd.read_csv(Path(args.meta_csv) if args.meta_csv else (DATA / "posters.csv"), usecols=["id", "year", "title"])
+    meta = pd.read_csv(
+        Path(args.meta_csv) if args.meta_csv else (DATA / "posters.csv"),
+        usecols=["id", "year", "title"],
+    )
 
     if args.validate:
-        print(f'{"titulo":45} esperado detectado boxes')
+        print(f"{'titulo':45} esperado detectado boxes")
         ok = True
         for t, y, exp, tol in VALIDATION:
             row = meta[(meta.title == t) & (meta.year == y)]
@@ -155,10 +168,7 @@ def main():
             r = detect(det, DATA / "posters" / f"{int(row.iloc[0].id)}.jpg")
             flag = "OK" if abs(r["n_faces"] - exp) <= tol else "FAIL"
             ok &= flag == "OK"
-            print(
-                f'{t:45} {exp:8} {r["n_faces"]:9} {flag}  '
-                f'{r["face_boxes"][:40]}'
-            )
+            print(f"{t:45} {exp:8} {r['n_faces']:9} {flag}  {r['face_boxes'][:40]}")
         print("VALIDACION:", "PASA" if ok else "REVISAR")
         return
 
@@ -193,8 +203,7 @@ def main():
                 done |= {r["id"] for r in rows}
                 rate = n_seen / max(time.time() - t0, 1e-9)
                 print(
-                    f"  checkpoint +{len(rows):,} "
-                    f"({len(done):,}/{len(meta):,}) {rate:.0f}/s",
+                    f"  checkpoint +{len(rows):,} ({len(done):,}/{len(meta):,}) {rate:.0f}/s",
                     flush=True,
                 )
                 rows = []

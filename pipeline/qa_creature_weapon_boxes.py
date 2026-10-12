@@ -15,6 +15,7 @@ concentrate), with some high-confidence ones kept for calibration.
   python3 qa_creature_weapon_boxes.py --n 1000 --workers 12
   python3 qa_creature_weapon_boxes.py --kind weapon --n 500
 """
+
 from __future__ import annotations
 
 import argparse
@@ -42,8 +43,18 @@ MODEL_ID = "us.amazon.nova-pro-v1:0"
 MAX_SIDE = 1200
 
 FIELDS = [
-    "id", "kind", "label", "score", "box",
-    "model", "status", "verdict", "actual", "reason", "latency_s", "error",
+    "id",
+    "kind",
+    "label",
+    "score",
+    "box",
+    "model",
+    "status",
+    "verdict",
+    "actual",
+    "reason",
+    "latency_s",
+    "error",
 ]
 
 PROMPT = """A computer vision model (OWLv2, zero-shot/open-vocabulary object detection)
@@ -130,6 +141,7 @@ def draw_box(path: Path, box: list[float]) -> bytes:
     lw = max(3, int(min(w, h) * 0.006))
     draw.rectangle([x0, y0, x1, y1], outline=(255, 0, 0), width=lw)
     import io
+
     buf = io.BytesIO()
     im.save(buf, format="JPEG", quality=90)
     return buf.getvalue()
@@ -165,9 +177,18 @@ def append_jsonl(path: Path, obj: dict) -> None:
 def process_one(client, r: dict, out_csv: Path, out_jsonl: Path) -> None:
     box_str = json.dumps(r["box"])
     base = {
-        "id": r["id"], "kind": r["kind"], "label": r["label"], "score": r["score"],
-        "box": box_str, "model": "nova-pro", "status": "error",
-        "verdict": "", "actual": "", "reason": "", "latency_s": 0.0, "error": "",
+        "id": r["id"],
+        "kind": r["kind"],
+        "label": r["label"],
+        "score": r["score"],
+        "box": box_str,
+        "model": "nova-pro",
+        "status": "error",
+        "verdict": "",
+        "actual": "",
+        "reason": "",
+        "latency_s": 0.0,
+        "error": "",
     }
     t0 = time.perf_counter()
     try:
@@ -175,14 +196,20 @@ def process_one(client, r: dict, out_csv: Path, out_jsonl: Path) -> None:
         prompt = PROMPT.format(label=r["label"], score=r["score"])
         resp = client.converse(
             modelId=MODEL_ID,
-            messages=[{"role": "user", "content": [
-                {"image": {"format": "jpeg", "source": {"bytes": img}}},
-                {"text": prompt},
-            ]}],
+            messages=[
+                {
+                    "role": "user",
+                    "content": [
+                        {"image": {"format": "jpeg", "source": {"bytes": img}}},
+                        {"text": prompt},
+                    ],
+                }
+            ],
             inferenceConfig={"temperature": 0, "maxTokens": 300},
         )
         text = "".join(
-            b.get("text", "") for b in resp.get("output", {}).get("message", {}).get("content", [])
+            b.get("text", "")
+            for b in resp.get("output", {}).get("message", {}).get("content", [])
             if "text" in b
         ).strip()
         if text.startswith("```"):
@@ -197,7 +224,16 @@ def process_one(client, r: dict, out_csv: Path, out_jsonl: Path) -> None:
             reason=obj.get("reason", ""),
             latency_s=round(time.perf_counter() - t0, 3),
         )
-        append_jsonl(out_jsonl, {"id": r["id"], "kind": r["kind"], "label": r["label"], "raw": obj, "text": text[:2000]})
+        append_jsonl(
+            out_jsonl,
+            {
+                "id": r["id"],
+                "kind": r["kind"],
+                "label": r["label"],
+                "raw": obj,
+                "text": text[:2000],
+            },
+        )
     except Exception as e:
         base["error"] = f"{type(e).__name__}: {e}"[:400]
         base["latency_s"] = round(time.perf_counter() - t0, 3)
@@ -226,7 +262,8 @@ def main() -> int:
     log(f"sample={len(sample):,} done={len(done):,} todo={len(todo):,} workers={args.workers}")
 
     client = boto3.Session(profile_name=os.environ.get("AWS_PROFILE")).client(
-        "bedrock-runtime", region_name=args.region,
+        "bedrock-runtime",
+        region_name=args.region,
         config=Config(retries={"max_attempts": 8, "mode": "adaptive"}),
     )
 

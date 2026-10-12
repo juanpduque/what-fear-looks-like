@@ -7,6 +7,7 @@ with usable poster, exclude Animation/Music from the analyzable set.
   source ~/.zshrc && python3 pull_outside_dates.py
   python3 pull_outside_dates.py --api-key YOUR_KEY --skip-posters
 """
+
 from __future__ import annotations
 
 import argparse
@@ -142,6 +143,7 @@ def main():
 
     if args.from_candidates and CANDIDATES.exists():
         import pandas as pd
+
         extra = pd.read_csv(CANDIDATES)
         for _, row in extra.iterrows():
             pid = int(row["id"])
@@ -151,10 +153,14 @@ def main():
                     "title": row.get("title") or "",
                     "original_title": row.get("title") or "",
                     "original_language": row.get("original_language") or "en",
-                    "release_date": f"{int(row['year'])}-01-01" if pd.notna(row.get("year")) else "",
+                    "release_date": f"{int(row['year'])}-01-01"
+                    if pd.notna(row.get("year"))
+                    else "",
                     "poster_path": row.get("poster_path") or "",
                     "genre_ids": [
-                        int(x) for x in str(row.get("genre_ids") or "").split(",") if x.strip().isdigit()
+                        int(x)
+                        for x in str(row.get("genre_ids") or "").split(",")
+                        if x.strip().isdigit()
                     ],
                     "adult": False,
                 }
@@ -252,7 +258,11 @@ def main():
     print(f"analyzable: {len(analyzable):,}")
     print(f"new vs attributes with poster: {len(with_file):,} → {IDS_OUT.name}")
     if with_file:
-        years = sorted(int((r.get("release_date") or "0")[:4]) for r in with_file if (r.get("release_date") or "")[:4].isdigit())
+        years = sorted(
+            int((r.get("release_date") or "0")[:4])
+            for r in with_file
+            if (r.get("release_date") or "")[:4].isdigit()
+        )
         print(f"year range new: {years[0]}–{years[-1]}")
 
 

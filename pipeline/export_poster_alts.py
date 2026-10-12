@@ -13,6 +13,7 @@ and site/data/poster_alts_rek.json
   {id: {file_path: [weapon, person, animal, fire, water, sil, bright, contrast]}}
   from qa/rekognition_multi_variants.csv — DetectLabels already run on variants.
 """
+
 from __future__ import annotations
 
 import csv

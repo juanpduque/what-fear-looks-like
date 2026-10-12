@@ -5,10 +5,10 @@ Used to extend the corpus with 2023–2025 refreshes without a full re-download.
 
   python3 analyze_color_ids.py --ids-file data/new_2023_2025_ids.csv
 """
+
 from __future__ import annotations
 
 import argparse
-import io
 from pathlib import Path
 
 import numpy as np

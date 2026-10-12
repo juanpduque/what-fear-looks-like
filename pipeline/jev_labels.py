@@ -12,6 +12,7 @@ Rule (see jev_battery.reconcile_creature):
   present=no + masked_killer → no/none (Halloween knife)
   present=no + other type → yes + type (Alien egg)
 """
+
 from __future__ import annotations
 
 import json

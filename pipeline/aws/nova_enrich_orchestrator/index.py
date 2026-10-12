@@ -1,4 +1,5 @@
 """Cloud Nova enrich orchestrator: batch from S3, write rows/json, self-chain."""
+
 from __future__ import annotations
 
 import csv
@@ -237,9 +238,7 @@ def invoke_enrich(pid: int) -> dict:
     )
     body = json.loads(resp["Payload"].read())
     if resp.get("FunctionError"):
-        raise RuntimeError(
-            f"lambda error: {body.get('errorType')}: {body.get('errorMessage')}"
-        )
+        raise RuntimeError(f"lambda error: {body.get('errorType')}: {body.get('errorMessage')}")
     if not isinstance(body, dict) or body.get("statusCode") != 200:
         raise RuntimeError(f"bad lambda response: {body!r}"[:500])
     return body
@@ -258,7 +257,12 @@ def process_one(meta: dict) -> dict:
         lat = time.perf_counter() - t0
         row, data = parse_enrich(pid, title, year, body, lat)
         write_row(row, data)
-        return {"id": pid, "status": "ok", "latency_s": lat, "description": row.get("description", "")[:80]}
+        return {
+            "id": pid,
+            "status": "ok",
+            "latency_s": lat,
+            "description": row.get("description", "")[:80],
+        }
     except Exception as e:
         lat = time.perf_counter() - t0
         err = f"{type(e).__name__}: {e}"

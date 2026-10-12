@@ -10,6 +10,7 @@ Usage:
   python3 apply_year_backfill.py
   python3 apply_year_backfill.py --backfill data/years_backfill_imdb.csv
 """
+
 from __future__ import annotations
 
 import argparse
@@ -102,8 +103,7 @@ def main() -> None:
         if seen:
             print(f"  {extra.name:<28} rows={seen:>7,}  patched={patched:>4,}")
 
-    print(f"\n{'DRY RUN — nothing written' if args.dry_run else 'done'}: "
-          f"{total:,} cells patched")
+    print(f"\n{'DRY RUN — nothing written' if args.dry_run else 'done'}: {total:,} cells patched")
 
 
 if __name__ == "__main__":

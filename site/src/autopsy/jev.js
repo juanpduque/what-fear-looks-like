@@ -1,7 +1,6 @@
 import { formatNovaCreature } from './nova.js';
 
-const t = (...args) =>
-  typeof window.t === 'function' ? window.t(...args) : args[0];
+const t = (...args) => (typeof window.t === 'function' ? window.t(...args) : args[0]);
 
 const CLIP_ANIMALS = new Set(['shark', 'spider', 'snake', 'wolf_dog', 'bird', 'insect']);
 

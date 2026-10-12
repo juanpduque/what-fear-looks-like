@@ -8,8 +8,8 @@
     "preview": "vite preview --base /what-fear-looks-like/",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix",
-    "format": "prettier --write \"src/**/*.{js,css}\" \"*.{js,json}\"",
-    "format:check": "prettier --check \"src/**/*.{js,css}\" \"*.{js,json}\"",
+    "format": "prettier --write \"src/**/*.{js,css}\" \"studios/**/*.{js,css}\" \"tests/**/*.js\" \"*.{js,json}\"",
+    "format:check": "prettier --check \"src/**/*.{js,css}\" \"studios/**/*.{js,css}\" \"tests/**/*.js\" \"*.{js,json}\"",
     "test:browser": "playwright test"
   },
   "devDependencies": {

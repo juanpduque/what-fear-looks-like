@@ -8,6 +8,7 @@ independent Nova Pro judgment on the same poster.
   python3 qa_census.py --n 2000 --workers 12
   python3 qa_census.py --n 999999 --workers 30   # full coverage
 """
+
 from __future__ import annotations
 
 import argparse
@@ -39,14 +40,38 @@ MODEL_ID = "us.amazon.nova-pro-v1:0"
 MAX_SIDE = 1200
 
 CATEGORIES = [
-    "vampire", "werewolf", "zombie", "ghost", "demon", "witch", "skeleton",
-    "alien", "giant_monster", "masked_killer", "clown", "doll", "shark",
-    "spider", "snake", "wolf_dog", "bird", "insect", "none",
+    "vampire",
+    "werewolf",
+    "zombie",
+    "ghost",
+    "demon",
+    "witch",
+    "skeleton",
+    "alien",
+    "giant_monster",
+    "masked_killer",
+    "clown",
+    "doll",
+    "shark",
+    "spider",
+    "snake",
+    "wolf_dog",
+    "bird",
+    "insect",
+    "none",
 ]
 
 FIELDS = [
-    "id", "clip_label", "clip_score",
-    "model", "status", "nova_label", "agree", "reason", "latency_s", "error",
+    "id",
+    "clip_label",
+    "clip_score",
+    "model",
+    "status",
+    "nova_label",
+    "agree",
+    "reason",
+    "latency_s",
+    "error",
 ]
 
 PROMPT = """Classify the main creature/monster/threat shown on this movie poster into
@@ -91,11 +116,13 @@ def load_rows() -> list[dict]:
                 if pid in seen:
                     continue
                 seen.add(pid)
-                rows.append({
-                    "id": pid,
-                    "clip_label": (r.get("label") or "").strip(),
-                    "clip_score": r.get("score") or "0",
-                })
+                rows.append(
+                    {
+                        "id": pid,
+                        "clip_label": (r.get("label") or "").strip(),
+                        "clip_score": r.get("score") or "0",
+                    }
+                )
     with ThreadPoolExecutor(max_workers=64) as ex:
         exists = list(ex.map(lambda r: (POSTERS / f"{r['id']}.jpg").exists(), rows))
     rows = [r for r, ok in zip(rows, exists) if ok]
@@ -114,7 +141,7 @@ def pick_sample(rows: list[dict], n: int, seed: int) -> list[dict]:
         bucket = by_label[lab]
         bucket.sort(key=lambda r: float(r["clip_score"] or 0))  # low confidence first
         low = bucket[: int(per_label * 0.7)]
-        rest = bucket[int(per_label * 0.7):]
+        rest = bucket[int(per_label * 0.7) :]
         rng.shuffle(rest)
         picked.extend(low + rest[: per_label - len(low)])
     if len(picked) < n:
@@ -160,9 +187,16 @@ def resize_jpeg(path: Path) -> bytes:
 
 def process_one(client, r: dict, out_csv: Path) -> None:
     base = {
-        "id": r["id"], "clip_label": r["clip_label"], "clip_score": r["clip_score"],
-        "model": "nova-pro", "status": "error",
-        "nova_label": "", "agree": "", "reason": "", "latency_s": 0.0, "error": "",
+        "id": r["id"],
+        "clip_label": r["clip_label"],
+        "clip_score": r["clip_score"],
+        "model": "nova-pro",
+        "status": "error",
+        "nova_label": "",
+        "agree": "",
+        "reason": "",
+        "latency_s": 0.0,
+        "error": "",
     }
     t0 = time.perf_counter()
     try:
@@ -174,14 +208,20 @@ def process_one(client, r: dict, out_csv: Path) -> None:
         )
         resp = client.converse(
             modelId=MODEL_ID,
-            messages=[{"role": "user", "content": [
-                {"image": {"format": "jpeg", "source": {"bytes": img}}},
-                {"text": prompt},
-            ]}],
+            messages=[
+                {
+                    "role": "user",
+                    "content": [
+                        {"image": {"format": "jpeg", "source": {"bytes": img}}},
+                        {"text": prompt},
+                    ],
+                }
+            ],
             inferenceConfig={"temperature": 0, "maxTokens": 200},
         )
         text = "".join(
-            b.get("text", "") for b in resp.get("output", {}).get("message", {}).get("content", [])
+            b.get("text", "")
+            for b in resp.get("output", {}).get("message", {}).get("content", [])
             if "text" in b
         ).strip()
         if text.startswith("```"):
@@ -222,7 +262,8 @@ def main() -> int:
     log(f"sample={len(sample):,} done={len(done):,} todo={len(todo):,} workers={args.workers}")
 
     client = boto3.Session(profile_name=os.environ.get("AWS_PROFILE")).client(
-        "bedrock-runtime", region_name=args.region,
+        "bedrock-runtime",
+        region_name=args.region,
         config=Config(retries={"max_attempts": 8, "mode": "adaptive"}),
     )
 
@@ -246,7 +287,7 @@ def main() -> int:
             agree += a
             disagree += not a
     total = agree + disagree
-    log(f"LISTO -> {out_csv} | agree={agree:,} ({agree/max(total,1):.1%}) disagree={disagree:,}")
+    log(f"LISTO -> {out_csv} | agree={agree:,} ({agree / max(total, 1):.1%}) disagree={disagree:,}")
     return 0
 
 

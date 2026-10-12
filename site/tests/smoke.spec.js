@@ -47,6 +47,34 @@ test.describe('essay', () => {
   });
 });
 
+test.describe('Spanish share URL', () => {
+  test('es/ carries Spanish preview tags for crawlers', async ({ request }) => {
+    const html = await (await request.get('es/')).text();
+    expect(html).toContain('<meta property="og:locale" content="es_ES">');
+    expect(html).toContain('og-card-es.jpg');
+    expect(html).toContain('Cómo se ve el miedo');
+    const card = await request.get('assets/og-card-es.jpg');
+    expect(card.status()).toBe(200);
+  });
+
+  test('es/ forwards people to the essay in Spanish, keeping the poster', async ({ page }) => {
+    await page.goto('es/?id=948');
+    await expect(page).toHaveURL(/\/what-fear-looks-like\/\?id=948&lang=es/);
+    await expect(page.locator('html')).toHaveAttribute('lang', 'es');
+    await expect(page.locator('body')).toHaveClass(/au-open/);
+  });
+
+  test('the Spanish autopsy shares the es/ link', async ({ page, context }) => {
+    await context.grantPermissions(['clipboard-read', 'clipboard-write']);
+    await page.goto('?id=948&lang=es');
+    await expect(page.locator('body')).toHaveClass(/au-open/);
+    await page.locator('#au-share').click();
+    const copied = await page.evaluate(() => navigator.clipboard.readText());
+    expect(copied).toMatch(/\/what-fear-looks-like\/es\/\?id=948(#|$)/);
+    expect(copied).not.toContain('lang=');
+  });
+});
+
 test.describe('autopsy', () => {
   test('opens from a deep link, shows the beats, and closes', async ({ page }) => {
     await page.goto('?id=948&lang=es');

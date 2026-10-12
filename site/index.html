@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>What Fear Looks Like — Pulp Analytics</title>
-<meta name="description" content="Horror didn't get scarier. It got quieter. A data analysis of 33,622 horror movie posters (1900–2026): color, darkness, faces, creatures.">
+<meta name="description" content="I measured 33,622 horror posters, 1900 to 2026. Faces became scarce. Black took over the sheet. Ornate titles shrank to one thin word. Open the autopsy and check the evidence.">
 <meta name="theme-color" content="#0a0a0c">
 <meta name="aof-build" content="20260827b">
 <link rel="icon" type="image/png" href="assets/pa-mark.png">
@@ -12,15 +12,20 @@
 <link rel="preconnect" href="https://image.tmdb.org" crossorigin>
 <meta property="og:type" content="article">
 <meta property="og:site_name" content="Pulp Analytics">
+<meta property="og:locale" content="en_US">
+<meta property="og:locale:alternate" content="es_ES">
+<link rel="alternate" hreflang="en" href="https://juanpduque.github.io/what-fear-looks-like/">
+<link rel="alternate" hreflang="es" href="https://juanpduque.github.io/what-fear-looks-like/es/">
+<link rel="alternate" hreflang="x-default" href="https://juanpduque.github.io/what-fear-looks-like/">
 <meta property="og:url" content="https://juanpduque.github.io/what-fear-looks-like/">
-<meta property="og:title" content="What Fear Looks Like: 33,622 horror posters, measured">
-<meta property="og:description" content="Horror didn't get scarier. It got quieter. A century of poster data from Pulp Analytics — darkness, faces, blood, and the shout that became a whisper.">
+<meta property="og:title" content="Where did the faces go? I measured 33,622 horror posters.">
+<meta property="og:description" content="I measured 33,622 horror posters, 1900 to 2026. Faces became scarce. Black took over the sheet. Ornate titles shrank to one thin word. Open the autopsy and check the evidence.">
 <meta property="og:image" content="https://juanpduque.github.io/what-fear-looks-like/assets/og-card.jpg">
 <meta property="og:image:width" content="1200">
 <meta property="og:image:height" content="630">
 <meta name="twitter:card" content="summary_large_image">
-<meta name="twitter:title" content="What Fear Looks Like: 33,622 horror posters, measured">
-<meta name="twitter:description" content="Horror didn't get scarier. It got quieter. A century of poster data from Pulp Analytics — darkness, faces, blood, and the shout that became a whisper.">
+<meta name="twitter:title" content="Where did the faces go? I measured 33,622 horror posters.">
+<meta name="twitter:description" content="I measured 33,622 horror posters, 1900 to 2026. Faces became scarce. Black took over the sheet. Ornate titles shrank to one thin word. Open the autopsy and check the evidence.">
 <meta name="twitter:image" content="https://juanpduque.github.io/what-fear-looks-like/assets/og-card.jpg">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -43,7 +48,7 @@
     <a class="hero-brand" href="https://medium.com/pulp-analytics" aria-label="Pulp Analytics"><img src="assets/pulp-analytics-red.png" alt="Pulp Analytics"></a>
     <p class="kicker" data-i18n="hero_kicker">A Poster Analysis</p>
     <h1 data-i18n="hero_title">What <span class="fear">Fear</span><br>Looks Like</h1>
-    <p class="dek" data-i18n="hero_dek">Horror got quieter. We measured color, darkness, faces, and creatures across <strong>33,622 posters</strong> from 1900 to 2026.</p>
+    <p class="dek" data-i18n="hero_dek">Fewer faces. More black. Smaller titles. I measured color, darkness, faces, and creatures across <strong>33,622 posters</strong> from 1900 to 2026.</p>
     <p class="byline" data-i18n="hero_byline">By <b>Juan Pablo Duque</b> · October 2026 · 9 min read</p>
     <a class="scroll-cue" href="#main" aria-label="Skip hero and begin reading" data-i18n="scroll_cue">SCROLL IF YOU DARE <span class="sc-arrow" aria-hidden="true">↓</span></a>
   </div>
@@ -56,7 +61,7 @@
   <div class="prose">
     <p class="drop reveal" data-i18n="intro_drop">I was scrolling Netflix one day looking for a horror movie. And something hit me.</p>
     <p class="reveal" data-i18n="intro_diff">The posters looked different from what I remembered.</p>
-    <p class="reveal" data-i18n="intro_vhs">Back when I rented horror on VHS, the boxes screamed at you. Bright colors. Big faces. Blood red. You had two seconds to decide. The poster <em>was</em> the whole pitch.</p>
+    <p class="reveal" data-i18n="intro_vhs">Back when I rented horror on VHS, the boxes screamed at you. Bright colors. Masked killers. Blood red. You had two seconds to decide. The poster <em>was</em> the whole pitch.</p>
     <p class="reveal" data-i18n="intro_now">But now? The new sheets look quiet. Dark. Sometimes just black with one word. No faces. No colors. Nothing jumping out.</p>
     <p class="reveal" data-i18n="intro_fossils">I love horror films. I've watched them my whole life. I also love data — finding patterns in things.</p>
     <p class="reveal" data-i18n="intro_wonder">So I started wondering: when did horror stop shouting? Did the posters actually change, or is it just me? Because if they did, that meant something. It meant fear looked different now.</p>
@@ -186,7 +191,7 @@
 <section class="chart-block">
   <div class="prose reveal">
     <p class="kicker" data-i18n="p2_kicker">Part II · Darkness</p>
-    <h2 class="section-title" data-i18n="p2_title">The Light Never Came Back</h2>
+    <h2 class="section-title" data-i18n="p2_title">Posters Got Darker After 1970</h2>
     <p data-i18n="p2_hook">I expected brightness to go up and down, like a normal trend. But this wasn't normal. Horror posters got darker every single year for 60 years. Then… nothing. The light never came back.</p>
     <p data-i18n="p2_body">It isn't a slide — it's a mountain. Shadow climbs to a daylight peak around 1970, then horror descends for fifty-odd years straight. No rebound.</p>
     <p data-i18n="p2_why">The 1970 peak isn't a coincidence. That was the tail of the atomic age — bright posters promised "SEE! SHOCKING!" alien invasions and mutant monsters, radiating Cold War panic in reds and yellows. Then Vietnam happened. Watergate happened. Horror stopped being about fantasy monsters and became about the real world. The lights dimmed. And they never came back.</p>
@@ -206,7 +211,7 @@
 <section class="chart-block" style="padding-top:0" id="part-blood">
   <div class="prose reveal">
     <p class="kicker" data-i18n="p3_kicker">Part III · Red &amp; Blood</p>
-    <h2 class="section-title" data-i18n="p3_title">Red Peaked After the Slashers</h2>
+    <h2 class="section-title" data-i18n="p3_title">Red Peaked in 2000</h2>
     <p data-i18n="p3_body">You'd think the '80s slashers owned the color red. They didn't. Red is horror's signature — but its real peak isn't where you'd guess. Not the slashers. The meta-horror turn of the millennium.</p>
     <p data-i18n="p3_why">Why the delayed peak? The '80s slasher era was born from VHS. More than 1,300 horror films in this corpus came out in that decade — posters had to scream red from a video store shelf just to compete. But by the 2000s, red had become a language. Meta-horror (<em>Scream</em>, <em>Saw</em>, <em>Final Destination</em>) used blood as an aesthetic — not a threat.</p>
   </div>
@@ -222,7 +227,7 @@
 
   <div class="prose reveal" style="margin-top:70px">
     <p class="kicker" data-i18n="p7_kicker">Two Kinds of Blood</p>
-    <h2 class="section-title" data-i18n="p7_title">Blood Left the Color Behind</h2>
+    <h2 class="section-title" data-i18n="p7_title">Blood No Longer<br>Has to Be Red</h2>
     <p data-i18n="p7_body">Here's the weird part. Red and blood aren't the same thing. The chart above measured a <em>color</em>. This one measures a <em>concept</em>: does this look like blood, even if it isn't red? For fifty years the two measures move together. Then, with the slashers, they split — the color stops rising, but blood on the sheet keeps climbing for another thirty years.</p>
     <p data-i18n="p7_why">The split makes sense: after the '80s slasher explosion, blood became a symbol — not just a color. It could be black, brown, dark red, or even implied. Meta-horror posters (<em>Scream</em>, <em>Saw</em>) treated blood as a language everyone already understood. You didn't need to paint it red anymore. The audience knew.</p>
   </div>
@@ -242,8 +247,8 @@
 <section class="chart-block" style="padding-top:0">
   <div class="prose reveal">
     <p class="kicker" data-i18n="p4_kicker">Part IV · Faces &amp; Monsters</p>
-    <h2 class="section-title" data-i18n="p4_title">The Face Retreats.<br>The Ghost Returns.</h2>
-    <p data-i18n="p4_lede">There's something primal about a face staring back at you from a poster. It tells you what to fear. So I asked a simple question across the whole century: <em>who looks back from the sheet?</em> First the human face. Then the creature. Together they tell one story: horror learned to sell dread without a star close-up — while the throne of the monster kept changing hands. And the ghost bookends both ends of the timeline.</p>
+    <h2 class="section-title" data-i18n="p4_title">More Ghosts.<br>Fewer Faces.</h2>
+    <p data-i18n="p4_lede">There's something primal about a face staring back at you from a poster. It tells you what to fear. So I asked a simple question across the whole century: <em>who looks back from the sheet?</em> First the human face. Then the creature. Together they tell one story: horror learned to sell dread without a star close-up — while the throne of the monster kept changing hands. And the ghost — the most common monster from the 1920s to the '40s — is back on top today.</p>
   </div>
 
   <div class="prose reveal" style="margin-top:36px">
@@ -277,9 +282,9 @@
 <!-- ============ THE GREAT QUIETING ============ -->
 <section class="chart-block" style="padding-top:0">
   <div class="prose reveal">
-    <p class="kicker" data-i18n="p5_kicker">Part V · The Quieting</p>
-    <h2 class="section-title" data-i18n="p5_title">Horror Lowered Its Voice</h2>
-    <p data-i18n="p5_body">Picture a 1950s shelf: painted, dimensional letters SHOUTING at you. Now lean into a 2020 lobby card — one thin word on black. You have to get closer to read it. That whisper is scarier than the shout. Three quieter revolutions, measured across every poster. First: the silent-era sheets climb to the "SEE! SHOCKING!" peak of the mid-'50s — then horror spends seventy years lowering its voice, down to today's near-silent artwork.</p>
+    <p class="kicker" data-i18n="p5_kicker">Part V · Text</p>
+    <h2 class="section-title" data-i18n="p5_title">Half the Text<br>of 1960</h2>
+    <p data-i18n="p5_body">Picture a 1950s shelf: painted, dimensional letters SHOUTING at you. Now lean into a 2020 lobby card — one thin word on black. You have to get closer to read it. That whisper is scarier than the shout. Three quieter revolutions, measured across every poster. First: from the silent era through 1960, text holds at about a third of the sheet — the "SEE! SHOCKING!" years. Then horror spends sixty-odd years lowering its voice, down to 18% of the sheet today.</p>
     <p data-i18n="p5_why">The 1950s shout wasn't random — drive-in theaters were exploding. Posters had to grab you from your car window at 50 feet. By 2020, posters became thumbnails on Netflix. You browse them at arm's length, on your couch. The volume dropped because the distance did. Fear doesn't need to shout anymore. It just needs to be seen.</p>
   </div>
   <div class="chart-wrap reveal"><svg id="quiet" viewBox="0 0 960 340" width="100%"></svg>
@@ -423,7 +428,7 @@
 <section class="chart-block" style="padding-top:0">
   <div class="prose reveal">
     <p class="kicker" data-i18n="p6_kicker">Part VI · Lettering</p>
-    <h2 class="section-title" data-i18n="p6_title">Fear Stopped Shouting Its Name</h2>
+    <h2 class="section-title" data-i18n="p6_title">From Painted Letters to One Thin Word</h2>
     <p data-i18n="p6_body">Color wasn't the only language on the sheet — so was the title. And titles got quieter too. In the 1940s, <strong>62%</strong> of posters wore ornate display lettering. Barely 3% were minimal. By the 2020s that flipped — ornate down to 12%, minimal up to <strong>29%</strong>, now the single largest register. Fear stopped shouting its own name.</p>
     <p data-i18n="p6_why">The 1940s lettering was hand-painted by Universal artists like Karoly Grosz — it was craft. But by the 2010s, A24 turned typography into prestige. A single thin word on black doesn't just look modern — it says: this movie is art, not a monster movie. Ornate became "cheap." Minimal became "elevated." The letters changed because the marketing did.</p>
   </div>

@@ -18,6 +18,7 @@ Usage:
   python3 match_imdb_title_basics_features.py
   python3 match_imdb_title_basics_features.py --dry-run
 """
+
 from __future__ import annotations
 
 import argparse
@@ -169,9 +170,7 @@ def is_horror(genres: str) -> bool:
     return "Horror" in genres.split(",")
 
 
-def scan_basics(
-    basics_path: Path, needed_norms: set[str]
-) -> dict[str, list[dict]]:
+def scan_basics(basics_path: Path, needed_norms: set[str]) -> dict[str, list[dict]]:
     """Stream title.basics; collect rows whose primary/original norm is needed."""
     by_norm: dict[str, list[dict]] = defaultdict(list)
     n_rows = 0
@@ -210,20 +209,14 @@ def scan_basics(
     return by_norm
 
 
-def filter_by_year(
-    cands: list[dict], year: int | None
-) -> tuple[list[dict], str]:
+def filter_by_year(cands: list[dict], year: int | None) -> tuple[list[dict], str]:
     """Return (candidates, year_mode) where year_mode is exact|fuzzy|none|any."""
     if year is None:
         return cands, "any"
     exact = [c for c in cands if c["startYear"] == year]
     if exact:
         return exact, "exact"
-    fuzzy = [
-        c
-        for c in cands
-        if c["startYear"] is not None and abs(c["startYear"] - year) == 1
-    ]
+    fuzzy = [c for c in cands if c["startYear"] is not None and abs(c["startYear"] - year) == 1]
     if fuzzy:
         return fuzzy, "fuzzy"
     return [], "none"
@@ -365,8 +358,7 @@ def write_ambiguous(rows: list[dict]) -> None:
                     "titleTypes": "|".join(c["titleType"] for c in cs),
                     "primaryTitles": "|".join(c["primaryTitle"] for c in cs),
                     "startYears": "|".join(
-                        str(c["startYear"]) if c["startYear"] is not None else ""
-                        for c in cs
+                        str(c["startYear"]) if c["startYear"] is not None else "" for c in cs
                     ),
                     "genres_list": "|".join(c["genres"] for c in cs),
                     "year_mode": r["year_mode"],

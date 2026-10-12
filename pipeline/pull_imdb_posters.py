@@ -48,6 +48,7 @@ Outputs
   data/imdb_poster_ids.csv    id,title,year
   data/posters/{id}.jpg
 """
+
 from __future__ import annotations
 
 import argparse
@@ -396,7 +397,7 @@ def scrape_browser(
         page.set_default_timeout(timeout_ms)
 
         for i, row in enumerate(candidates, 1):
-            pid, tt = int(row["id"]), row["imdb_id"]
+            tt = row["imdb_id"]
             poster, source, reason = None, "none", ""
             try:
                 resp = page.goto(
@@ -419,8 +420,15 @@ def scrape_browser(
                 reason = f"{type(e).__name__}: {e}"
 
             _record(
-                session, hits, miss, row, poster, source, reason,
-                i, len(candidates),
+                session,
+                hits,
+                miss,
+                row,
+                poster,
+                source,
+                reason,
+                i,
+                len(candidates),
             )
             if i % 10 == 0 or i == len(candidates):
                 _flush(hits, miss)
@@ -445,8 +453,15 @@ def scrape_suggest(
         reason = "" if poster else source
         src = source if poster else "none"
         _record(
-            session, hits, miss, row, poster, src, reason,
-            i, len(candidates),
+            session,
+            hits,
+            miss,
+            row,
+            poster,
+            src,
+            reason,
+            i,
+            len(candidates),
         )
         if i % 25 == 0 or i == len(candidates):
             _flush(hits, miss)
@@ -533,8 +548,12 @@ def main() -> None:
     ap.add_argument("--limit", type=int, default=0)
     ap.add_argument("--min-votes", type=int, default=0)
     ap.add_argument("--include-omdb-miss", action="store_true")
-    ap.add_argument("--delay", type=float, default=0.35,
-                    help="base delay between titles (suggest API; raise for --browser)")
+    ap.add_argument(
+        "--delay",
+        type=float,
+        default=0.35,
+        help="base delay between titles (suggest API; raise for --browser)",
+    )
     ap.add_argument("--jitter", type=float, default=0.25)
     ap.add_argument(
         "--browser",
@@ -575,9 +594,7 @@ def main() -> None:
             ids_path = Path(__file__).resolve().parent / ids_path
         if not ids_path.exists():
             raise SystemExit(f"ids-file not found: {ids_path}")
-        candidates = collect_from_ids_file(
-            ids_path, min_votes=args.min_votes, force=args.force
-        )
+        candidates = collect_from_ids_file(ids_path, min_votes=args.min_votes, force=args.force)
     else:
         candidates = collect_candidates(
             include_omdb_miss=args.include_omdb_miss,
@@ -608,9 +625,7 @@ def main() -> None:
             channel=args.channel,
         )
     else:
-        hits, miss = scrape_suggest(
-            candidates, delay=args.delay, jitter=args.jitter
-        )
+        hits, miss = scrape_suggest(candidates, delay=args.delay, jitter=args.jitter)
 
     _flush(hits, miss)
     n = write_ids_out(hits)

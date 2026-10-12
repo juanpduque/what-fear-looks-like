@@ -11,6 +11,7 @@ sometimes bare (n=37888).
 
 Called from validate_corpus.py (--fix-front) and apply_exclusions.py.
 """
+
 from __future__ import annotations
 
 import argparse
@@ -57,6 +58,7 @@ BARE_RE_TMPL = r"(?<![~\d]){n}(?!\d)"
 def corpus_n() -> int:
     sys.path.insert(0, str(HERE))
     from corpus import corpus_n as canonical_n
+
     return canonical_n()
 
 
@@ -103,8 +105,7 @@ def check_front_n(canonical: int | None = None) -> list[str]:
         found = _iter_fmt_ns(text)
         if not found:
             issues.append(
-                f"{path.relative_to(ROOT)}: no aparece n formateado "
-                f"en banda corpus ({want})"
+                f"{path.relative_to(ROOT)}: no aparece n formateado en banda corpus ({want})"
             )
             continue
         other = sorted({v for v in found if v != n})
@@ -120,9 +121,7 @@ def check_front_n(canonical: int | None = None) -> list[str]:
     series = SITE / "data" / "series.js"
     if series.exists():
         head = "\n".join(series.read_text(encoding="utf-8").splitlines()[:8])
-        m = re.search(r"AOF_META=\{n:(\d+)", head) or re.search(
-            r"n=([\d,]+)\s+posters", head
-        )
+        m = re.search(r"AOF_META=\{n:(\d+)", head) or re.search(r"n=([\d,]+)\s+posters", head)
         if m:
             sn = int(m.group(1).replace(",", ""))
             if sn != n:
@@ -205,7 +204,9 @@ def main() -> int:
     ap.add_argument("--fix", action="store_true", help="escribir reemplazos")
     ap.add_argument("--dry-run", action="store_true")
     ap.add_argument("--from-n", type=int, default=None, help="forzar n viejo a reemplazar")
-    ap.add_argument("--n", type=int, default=None, help="forzar n canonico (default: canonical_ids.txt)")
+    ap.add_argument(
+        "--n", type=int, default=None, help="forzar n canonico (default: canonical_ids.txt)"
+    )
     args = ap.parse_args()
     n = args.n if args.n is not None else corpus_n()
     print(f"corpus n={n:,}")

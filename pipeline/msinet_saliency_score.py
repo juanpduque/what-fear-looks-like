@@ -31,6 +31,7 @@ With maps:
 EC2 shard (metrics-only, legacy):
   python3 msinet_saliency_score.py --ids-file data/qa/shard.txt --out data/qa/saliency_score.csv
 """
+
 from __future__ import annotations
 
 import argparse
@@ -205,8 +206,7 @@ def main() -> None:
             rate = n_done / max(time.time() - t0, 1e-9)
             eta_s = (len(ids) - n_done) / rate if rate > 0 else 0
             print(
-                f"  {n_done:,}/{len(ids):,} rate={rate:.2f}/s err={n_err} "
-                f"eta_h={eta_s/3600:.2f}",
+                f"  {n_done:,}/{len(ids):,} rate={rate:.2f}/s err={n_err} eta_h={eta_s / 3600:.2f}",
                 flush=True,
             )
 
