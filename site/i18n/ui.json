@@ -932,8 +932,8 @@
     "es": "Medio Rekognition Custom Labels: {medium} ({conf}). El puntaje CLIP de ilustración {painted} es nota, no el cajón."
   },
   "autopsy_cmode_blurb_creature": {
-    "en": "CLIP creature census: {creature} ({cscore}). Boxes appear when OWL-ViT found one; labels below the confidence floor are dropped.",
-    "es": "Censo CLIP de criaturas: {creature} ({cscore}). Las cajas aparecen si OWL-ViT encontró una; bajo el umbral se descartan."
+    "en": "CLIP creature census: {creature} ({cscore}). A box appears only where OWL-ViT agrees with CLIP; Nova Pro still caught 1 in 5 of those boxes framing the wrong thing.",
+    "es": "Censo CLIP de criaturas: {creature} ({cscore}). Solo aparece una caja donde OWL-ViT coincide con CLIP; aun así, Nova Pro encontró que 1 de cada 5 de esas cajas enmarca otra cosa."
   },
   "autopsy_cmode_blurb_weapon": {
     "en": "Rek weapon presence: {rek_w}. OWL boxes at the score floor: {w_n}. CLIP weapon family: {clip_w}. Boxes are geometry — not an essay count.",
@@ -1368,8 +1368,8 @@
     "es": "Lo que ven los modelos"
   },
   "autopsy_body_creature": {
-    "en": "CLIP census: {c} ({score}). When OWL-ViT found a box, it is drawn on the sheet. Labels below the confidence floor are dropped, so this is a conservative call.",
-    "es": "Censo CLIP: {c} ({score}). Si OWL-ViT encontró una caja, está dibujada en la hoja. Las etiquetas bajo el umbral se descartan: es una lectura conservadora."
+    "en": "CLIP census: {c} ({score}). Two models have to agree before a box goes on the sheet: CLIP names the creature, OWL-ViT says where it is. Even then, Nova Pro caught 1 in 5 of those boxes framing the wrong thing.",
+    "es": "Censo CLIP: {c} ({score}). Dos modelos tienen que estar de acuerdo para que una caja aparezca en la hoja: CLIP nombra la criatura y OWL-ViT dice dónde está. Aun así, Nova Pro encontró que 1 de cada 5 de esas cajas enmarca otra cosa."
   },
   "autopsy_body_weapon": {
     "en": "Rek weapon presence: {rek}. OWL boxes at the score floor: {n}.",
