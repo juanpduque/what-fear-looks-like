@@ -12,10 +12,14 @@ poster) must describe the same image as every other measure.
 
   python3 build_world_lookup.py
 
+Records also carry the layers the corpus loads from separate globals:
+cboxes (OWLv2 creature boxes, world run in WORLD_CBOXES), wboxes (OWLv2 weapon boxes minus the ones Nova
+Pro judged false positives, as build_site.py does) and pose (pose.js row).
+
 Writes:
   site/data/world_lookup.js   WORLD_EXAMPLES {lang: [id]},
                               WORLD_POSTERS  explorer rows (+ lang) for non-English ids,
-                              WORLD_LOOKUP   {id: LOOKUP record}
+                              WORLD_LOOKUP   {id: LOOKUP record + cboxes, wboxes, pose}
   site/saliency_world/{id}.webp
 """
 
@@ -27,6 +31,7 @@ from pathlib import Path
 
 from build_explorer import dominant_hex
 from build_lookup import build_records
+from build_site import GLOBAL_SRC, drop_nova_false_positives
 from corpus import canonical_ids
 from export_saliency_webp import to_webp
 from export_world_faces import comparable_non_english
@@ -38,6 +43,7 @@ OUT = SITE / "data" / "world_lookup.js"
 SAL_DIR = DATA / "qa" / "saliency_world"
 SAL_OUT = SITE / "saliency_world"
 TMDB = DATA / "qa" / "tmdb_details" / "tmdb_details.jsonl"
+WORLD_CBOXES = DATA / "qa" / "creature_boxes_world.json"
 PER_LANG = 12
 RECENT = (2000, 2026)
 
@@ -107,6 +113,23 @@ def main() -> None:
             ]
         )
     lookup = build_records(set(world_ids), sal_paths=[SAL_DIR / "saliency_score.csv"])
+    # The corpus OWLv2 run skipped these films (no local poster); the world run
+    # used the measured sheets (owlv2_creature_boxes.py --creature-out WORLD_CBOXES).
+    cboxes = json.loads((DATA / "creature_boxes.json").read_text(encoding="utf-8"))
+    cboxes.update(json.loads(WORLD_CBOXES.read_text(encoding="utf-8")))
+    wboxes = drop_nova_false_positives(
+        json.loads((DATA / "weapon_boxes.json").read_text(encoding="utf-8"))
+    )
+    pose_js = (GLOBAL_SRC / "pose.js").read_text(encoding="utf-8")
+    start = pose_js.index("window.POSE=") + len("window.POSE=")
+    pose = json.loads(pose_js[start:].rstrip().rstrip(";"))
+    for key, rec in lookup.items():
+        if cboxes.get(key):
+            rec["cboxes"] = cboxes[key]
+        if wboxes.get(key):
+            rec["wboxes"] = wboxes[key]
+        if key in pose:
+            rec["pose"] = pose[key]
 
     SAL_OUT.mkdir(parents=True, exist_ok=True)
     keep = {f"{pid}.webp" for pid in world_ids}
@@ -127,6 +150,8 @@ def main() -> None:
         encoding="utf-8",
     )
     print(f"wrote {OUT} ({OUT.stat().st_size / 1e3:.0f} kB), {len(world_ids)} saliency maps")
+    for layer in ("cboxes", "wboxes", "pose"):
+        print(f"  {layer}: {sum(layer in rec for rec in lookup.values())} of {len(lookup)}")
     for lang, ids in examples.items():
         titles = [posters[pid]["title"] for pid in ids]
         print(f"  {lang}: {', '.join(titles)}")
