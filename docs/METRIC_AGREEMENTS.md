@@ -88,6 +88,12 @@ OWL armas tiene FP ~58% en QA Nova: no contar cajas crudas.
 No usar OWL como presencia de monstruo. Al comparar CLIP ↔ JEV, mapear
 taxonomías (`animal` colapsado en JEV vs `shark` / `spider` / … en CLIP).
 
+Precisión de las cajas OWL de criatura contra Nova (`pipeline/audit_creature_boxes.py`,
+144,804 cajas juzgadas): crudas 21%; score ≥ 0.3, 30%; DINO misma etiqueta, 25%;
+etiqueta = censo, 76%; score ≥ 0.3 + censo (lo que dibuja la autopsy), **80%**.
+Comparar idiomas por criatura con el censo (`pipeline/world_creatures.py`), nunca con
+conteos de cajas OWL: en los afiches no ingleses inflan la presencia (75–88% vs 62%).
+
 ## QA / gold
 
 - Faces: YuNet floor documentado en el essay; gap YuNet=0∩Rek>0 es rescate UI, no essay.
@@ -97,6 +103,8 @@ taxonomías (`animal` colapsado en JEV vs `shark` / `spider` / … en CLIP).
 - Typography: CLIP register es el dueño; Nova `nova_typo` (`qa_typography.csv`) es nota QA.
 - Title OCR: Nova `nova_title` / `nova_ocr` (`qa_title_ocr.csv`) es nota QA del título; no sustituye la caja de texto.
 - Creature/weapon boxes: `pipeline/qa_creature_weapon_boxes.py` + veredictos Nova.
+- Título en japonés / chino / coreano / tailandés: PaddleOCR (`pipeline/paddleocr_world_titles.py`,
+  `world_title_size.py`); Rekognition DetectText solo lee alfabeto latino. Revisión a mano: 37/40.
 - JEV gold: `pipeline/data/qa/jev_pilot/gold.json` + `SUMMARY.md`.
 
 ## Cuando duden
