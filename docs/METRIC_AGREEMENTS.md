@@ -94,6 +94,24 @@ etiqueta = censo, 76%; score ≥ 0.3 + censo (lo que dibuja la autopsy), **80%**
 Comparar idiomas por criatura con el censo (`pipeline/world_creatures.py`), nunca con
 conteos de cajas OWL: en los afiches no ingleses inflan la presencia (75–88% vs 62%).
 
+## Imagen medida (registro por hash)
+
+Las métricas se guardan por id de TMDB, pero la imagen de un id puede cambiar (TMDB cambia
+la portada principal, `posters/{id}.jpg` se re-descarga). `pipeline/build_poster_images.py`
+escribe `data/poster_images.csv` (local, fuera de git): sha256 + pHash del archivo en disco
+y pHash de la ruta que muestra el sitio. Distancia pHash ≤ 10 = mismo arte.
+
+Primera corrida (2026-10-13, 42,030 películas publicadas):
+
+- Corpus en inglés: 32,938 de 33,058 comparables iguales (99.6%); 102 distintos (> 12).
+- Mundo: 6,789 iguales; 1,375 distintos. En 1,316 de ellos el archivo local es la portada
+  que TMDB muestra hoy, no la que muestra el sitio.
+- Brillo recalculado en muestras de 40: corpus 40/40 medido sobre la imagen del sitio;
+  mundo 31/40 sobre la del sitio y 9/40 sobre la de TMDB hoy (procedencia mezclada).
+
+Antes de correr una métrica sobre `posters/`, cruzar con el registro: si `phash_dist` > 10,
+el archivo no es la imagen publicada.
+
 ## QA / gold
 
 - Faces: YuNet floor documentado en el essay; gap YuNet=0∩Rek>0 es rescate UI, no essay.
