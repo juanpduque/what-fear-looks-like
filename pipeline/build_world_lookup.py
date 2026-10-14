@@ -6,9 +6,10 @@ most-voted TMDB films from 2000–2026. English examples come from the corpus,
 which the autopsy already covers. Non-English examples get the same LOOKUP
 records as the corpus (build_lookup.build_records) plus their MSI-Net map.
 
-Only films whose TMDB poster today is the sheet the pipeline measured are
-eligible: the saliency maps (data/qa/saliency_world, run on today's TMDB
-poster) must describe the same image as every other measure.
+The saliency maps (data/qa/saliency_world) are MSI-Net runs on the sheet
+the pipeline measured (horror_movies.csv poster_path), so they describe the
+same image as every other measure. The first run used TMDB's current poster;
+the 2,427 films where that differs were rerun on the measured sheet.
 
   python3 build_world_lookup.py
 
@@ -42,7 +43,6 @@ SITE = HERE.parent / "site"
 OUT = SITE / "data" / "world_lookup.js"
 SAL_DIR = DATA / "qa" / "saliency_world"
 SAL_OUT = SITE / "saliency_world"
-TMDB = DATA / "qa" / "tmdb_details" / "tmdb_details.jsonl"
 WORLD_CBOXES = DATA / "qa" / "creature_boxes_world.json"
 PER_LANG = 12
 RECENT = (2000, 2026)
@@ -59,10 +59,6 @@ def main() -> None:
     with (DATA / "horror_movies.csv").open(newline="", encoding="utf-8") as f:
         for r in csv.DictReader(f):
             movies[int(r["id"])] = r
-    current = {}
-    for line in TMDB.open(encoding="utf-8"):
-        rec = json.loads(line)
-        current[int(rec["id"])] = rec.get("poster_path")
     posters = {}
     with (DATA / "posters.csv").open(newline="", encoding="utf-8") as f:
         for r in csv.DictReader(f):
@@ -86,7 +82,7 @@ def main() -> None:
             continue
         if not RECENT[0] <= int(float(p["year"])) <= RECENT[1]:
             continue
-        if lang != "en" and (m["poster_path"] != current.get(pid) or pid not in has_map):
+        if lang != "en" and pid not in has_map:
             continue
         pool.setdefault(lang, []).append((float(m.get("vote_count") or 0), pid))
 
