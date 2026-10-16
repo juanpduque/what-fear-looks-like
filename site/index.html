@@ -545,6 +545,17 @@
   <p class="note reveal" style="max-width:1120px;margin:20px auto 0;padding:0 24px" data-i18n="pyramid_note">Bands: energy-weighted horizontal spread of gradient magnitude per 8 vertical bins, drawn at their real measured width and position. Picked for a clean, unambiguous signal — filtered out logo-only title cards and letterboxed video-still posters, which can fake the same number without a real compositional pyramid behind it. Across the full 33,622-poster dataset this measure averages out to roughly zero by decade — top-heavy and bottom-heavy compositions largely cancel out. It's a real per-poster signature, not a century-level trend (unlike diagonal composition — see Part V).</p>
 </section>
 
+<!-- ============ PART VII: IS IT JUST HORROR? ============ -->
+<section class="chart-block" style="padding-top:0" id="genres-block">
+  <div class="prose reveal">
+    <p class="kicker" data-i18n="p8_kicker">Part VII · Other Genres</p>
+    <h2 class="section-title" data-i18n="p8_title">Is It Just Horror?</h2>
+    <p data-i18n="p8_body"><strong>Partly.</strong> Text shrank on sci-fi, mystery and thriller posters too — about a fifth of the sheet today in all four. Faces fell everywhere; horror just started lower and stays lowest. Black is the one thing horror kept for itself: 51% of the sheet in the 2020s, against 40–44% in the others.</p>
+  </div>
+  <div class="chart-wrap reveal"><svg id="genres" viewBox="0 0 960 334" width="100%"></svg>
+  <p class="note" style="margin-top:10px" data-i18n="p8_note">OTHER GENRES — sci-fi (8,338), mystery (6,895) and thriller (17,646) posters measured with the same pipeline and the corpus's filters: current TMDB genre, English original language, released, no Animation, Music or TV Movie, and no Horror tag, so no film counts as both. A film can be in two of the three. Horror is the 33,622-poster corpus. Decade means, 1930–2026, decades with 100+ posters. Near-black share as in Part II, YuNet faces as in Part IV, MSER text-like coverage as in Part V.</p></div>
+</section>
+
 <!-- ============ LOOK UP A POSTER / LIGHT-TABLE AUTOPSY ============ -->
 <section class="lookup" id="lookup" data-i18n-aria="aria_lookup" aria-label="Dissect any poster">
   <div class="prose reveal au-lede">
@@ -649,6 +660,7 @@
 <script src="data/series.js?v=20260827b"></script>
 <script src="data/world.js?v=20261012"></script>
 <script src="data/world_lookup.js?v=20261012"></script>
+<script src="data/genres.js?v=20261016"></script>
 <script src="data/legacy-bridge.js?v=20260827b"></script>
 <script type="module" src="/src/main.js"></script>
 </body>

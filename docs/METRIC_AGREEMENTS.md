@@ -134,6 +134,11 @@ Re-medición de 1,440 afiches del mundo sobre la imagen restaurada:
   OWLv2 marca letras del título como flechas). Los otros 1,396 afiches no se publican con
   cajas de armas.
 
+Otros géneros (Parte VII, `export_genre_comparison.py`), revisado 2026-10-16 en muestras de
+300 por género: el archivo de `posters/` es la portada registrada en
+`community_{género}/tmdb_{género}_analysis_meta.csv` en 296–299 de 300 (pHash ≤ 10), y el
+negro recalculado en 40 por género da el valor guardado exacto (diferencia 0).
+
 ## QA / gold
 
 - Faces: YuNet floor documentado en el essay; gap YuNet=0∩Rek>0 es rescate UI, no essay.

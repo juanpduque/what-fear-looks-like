@@ -330,6 +330,34 @@ function wireChartAccessibility() {
     );
   }
 
+  if (window.GENRES) {
+    annotate('genres', t('aria_genres_label'), t('aria_genres_desc'));
+    table(
+      'genres',
+      t('table_genres_caption'),
+      [
+        t('col_genre'),
+        t('col_decade'),
+        t('col_posters'),
+        t('col_near_black_pct'),
+        t('col_with_face_pct'),
+        t('col_textlike_pct'),
+      ],
+      ['horror', 'scifi', 'mystery', 'thriller']
+        .filter((g) => window.GENRES[g])
+        .flatMap((g) =>
+          window.GENRES[g].decades.map((d) => [
+            t('genre_' + g),
+            `${d[0]}s`,
+            d[1].toLocaleString('en-US'),
+            d[2].toFixed(1) + '%',
+            d[3].toFixed(1) + '%',
+            d[4].toFixed(1) + '%',
+          ]),
+        ),
+    );
+  }
+
   annotate('census', t('aria_census_label'), t('aria_census_desc'));
   {
     const years = [1920, 1930, 1940, 1950, 1960, 1970, 1980, 1990, 2000, 2010, 2020];
@@ -2314,6 +2342,145 @@ function d3Charts() {
     onEnter('face-eras', () =>
       paths.forEach((p, i) => setTimeout(() => drawIn(p, 1400), ms(i * 250))),
     );
+  }
+
+  if (document.getElementById('genres') && window.GENRES) {
+    const series = [
+      ['scifi', '#cdc6b6'],
+      ['mystery', '#9a958a'],
+      ['thriller', '#6b6258'],
+      ['horror', '#c1121f'],
+    ].filter(([g]) => window.GENRES[g]);
+    const panels = [
+      ['dark', 2, [20, 55]],
+      ['face', 3, [40, 100]],
+      ['text', 4, [15, 40]],
+    ];
+    const narrow = (document.getElementById('genres').parentNode.clientWidth || 960) < 600;
+    const PW = narrow ? 420 : 300,
+      PH = narrow ? 230 : 300,
+      GAP = narrow ? 0 : 30,
+      m = { t: 64, r: 16, b: 36, l: 40 },
+      W = narrow ? PW : PW * 3 + GAP * 2,
+      H = narrow ? 34 + PH * 3 : 34 + PH;
+    const svg = d3.select('#genres').attr('viewBox', `0 0 ${W} ${H}`);
+    const decades = window.GENRES.horror.decades.map((d) => d[0]);
+    const decLabel = (d) => `'${String(d).slice(2)}`;
+    const legend = svg.append('g').attr('transform', 'translate(0,14)');
+    let lx = 0;
+    const legendNodes = [];
+    series.forEach(([g, col]) => {
+      legend
+        .append('line')
+        .attr('x1', lx)
+        .attr('x2', lx + 18)
+        .attr('y1', 0)
+        .attr('y2', 0)
+        .attr('stroke', col)
+        .attr('stroke-width', g === 'horror' ? 3 : 2);
+      const label = legend
+        .append('text')
+        .attr('class', 'line-label')
+        .attr('x', lx + 24)
+        .attr('y', 4)
+        .attr('fill', col)
+        .style('font-weight', g === 'horror' ? 700 : null)
+        .text(t('genre_' + g));
+      legendNodes.push([label, g]);
+      lx += 24 + label.node().getComputedTextLength() + 22;
+    });
+    const drawn = [];
+    const titles = [];
+    panels.forEach(([key, col, domain], pi) => {
+      const ox = narrow ? 0 : pi * (PW + GAP),
+        oy = narrow ? 34 + pi * PH : 34;
+      const p = svg.append('g').attr('transform', `translate(${ox},${oy})`);
+      const x = d3
+        .scalePoint()
+        .domain(decades)
+        .range([m.l, PW - m.r]);
+      const y = d3
+        .scaleLinear()
+        .domain(domain)
+        .range([PH - m.b, m.t - 24]);
+      titles.push([
+        p
+          .append('text')
+          .attr('class', 'tick-label')
+          .attr('x', m.l)
+          .attr('y', m.t - 38)
+          .text(t('genres_panel_' + key)),
+        key,
+      ]);
+      y.ticks(4).forEach((v) => {
+        p.append('line')
+          .attr('class', 'axis')
+          .attr('x1', m.l)
+          .attr('x2', PW - m.r)
+          .attr('y1', y(v))
+          .attr('y2', y(v));
+        p.append('text')
+          .attr('class', 'tick-label')
+          .attr('x', m.l - 6)
+          .attr('y', y(v) + 4)
+          .attr('text-anchor', 'end')
+          .text(v + '%');
+      });
+      decades
+        .filter((d, i) => i % 2 === 0)
+        .forEach((d) =>
+          p
+            .append('text')
+            .attr('class', 'tick-label')
+            .attr('x', x(d))
+            .attr('y', PH - m.b + 20)
+            .attr('text-anchor', 'middle')
+            .text(decLabel(d)),
+        );
+      const line = d3
+        .line()
+        .x((d) => x(d[0]))
+        .y((d) => y(d[col]))
+        .curve(d3.curveMonotoneX);
+      series.forEach(([g, color]) => {
+        const pts = window.GENRES[g].decades.filter((d) => x(d[0]) !== undefined);
+        drawn.push(
+          p
+            .append('path')
+            .datum(pts)
+            .attr('d', line)
+            .attr('fill', 'none')
+            .attr('stroke', color)
+            .attr('stroke-width', g === 'horror' ? 3 : 2)
+            .attr('stroke-linecap', 'round'),
+        );
+        p.selectAll(null)
+          .data(pts)
+          .join('circle')
+          .attr('cx', (d) => x(d[0]))
+          .attr('cy', (d) => y(d[col]))
+          .attr('r', g === 'horror' ? 3.5 : 2.5)
+          .attr('fill', color)
+          .on('pointermove pointerdown', (ev, d) =>
+            showTip(
+              t('genres_tip', {
+                genre: t('genre_' + g),
+                decade: `${d[0]}s`,
+                n: d[1].toLocaleString('en-US'),
+                measure: t('genres_panel_' + key),
+                v: d[col].toFixed(1),
+              }),
+              ev,
+            ),
+          )
+          .on('pointerleave', hideTip);
+      });
+    });
+    chartReadoutRefresh.push(() => {
+      legendNodes.forEach(([node, g]) => node.text(t('genre_' + g)));
+      titles.forEach(([node, key]) => node.text(t('genres_panel_' + key)));
+    });
+    onEnter('genres', () => drawn.forEach((p, i) => setTimeout(() => drawIn(p, 1200), ms(i * 60))));
   }
 
   /* --- VI-a. THE QUIETING: text coverage fades like a dying shout --- */
