@@ -91,3 +91,23 @@ def test_global_ids_within_corpus(name, marker, canonical):
 def test_no_backup_files_in_site_data():
     stray = sorted(p.name for p in SITE_DATA.iterdir() if ".bak" in p.name)
     assert not stray, f"backup files in site/data: {stray}"
+
+
+# --- genres.js (Part VII) -------------------------------------------------
+
+
+def test_genres_horror_is_the_corpus(corpus_n):
+    data, _ = js_payload(SITE_DATA / "genres.js", "window.GENRES=")
+    assert set(data) == {"horror", "scifi", "mystery", "thriller"}
+    assert data["horror"]["n"] == corpus_n
+
+
+def test_genres_decades_are_sane():
+    data, _ = js_payload(SITE_DATA / "genres.js", "window.GENRES=")
+    for genre, v in data.items():
+        decades = [d[0] for d in v["decades"]]
+        assert decades == sorted(decades) and decades[-1] == 2020, genre
+        for dec, n, dark, face, text in v["decades"]:
+            assert n >= 100, (genre, dec)
+            assert all(0 <= x <= 100 for x in (dark, face, text)), (genre, dec)
+        assert sum(d[1] for d in v["decades"]) <= v["n"], genre

@@ -1698,5 +1698,57 @@
   "eras_tip": {
     "en": "<b>{lang}</b> · {era} · {n} posters · {face}% with a face",
     "es": "<b>{lang}</b> · {era} · {n} afiches · {face}% con cara"
+  },
+  "genre_horror": {
+    "en": "Horror",
+    "es": "Terror"
+  },
+  "genre_scifi": {
+    "en": "Sci-fi",
+    "es": "Ciencia ficción"
+  },
+  "genre_mystery": {
+    "en": "Mystery",
+    "es": "Misterio"
+  },
+  "genre_thriller": {
+    "en": "Thriller",
+    "es": "Thriller"
+  },
+  "genres_panel_dark": {
+    "en": "NEAR-BLACK SHARE",
+    "es": "PROPORCIÓN CASI NEGRA"
+  },
+  "genres_panel_face": {
+    "en": "POSTERS WITH A FACE",
+    "es": "AFICHES CON CARA"
+  },
+  "genres_panel_text": {
+    "en": "TEXT-LIKE COVERAGE",
+    "es": "COBERTURA DE TEXTO"
+  },
+  "genres_tip": {
+    "en": "<b>{genre}</b> · {decade} · {n} posters · {measure}: {v}%",
+    "es": "<b>{genre}</b> · {decade} · {n} afiches · {measure}: {v}%"
+  },
+  "aria_genres_label": {
+    "en": "Horror against sci-fi, mystery and thriller posters, by decade",
+    "es": "Afiches de terror frente a ciencia ficción, misterio y thriller, por década"
+  },
+  "aria_genres_desc": {
+    "en": "Three line charts by decade, 1930–2026, horror against sci-fi, mystery and thriller. Near-black share: horror 51% in the 2020s, the others 40–44%. Posters with a face: horror 46%, the others 52–63%. Text-like coverage: all four between 18% and 19%.",
+    "es": "Tres gráficos de líneas por década, 1930–2026, terror frente a ciencia ficción, misterio y thriller. Proporción casi negra: terror 51% en los años 2020, los demás 40–44%. Afiches con cara: terror 46%, los demás 52–63%. Cobertura de texto: los cuatro entre 18% y 19%."
+  },
+  "table_genres_caption": {
+    "en": "Horror, sci-fi, mystery and thriller posters by decade: near-black share, posters with a face, text-like coverage",
+    "es": "Afiches de terror, ciencia ficción, misterio y thriller por década: proporción casi negra, afiches con cara, cobertura de texto"
+  },
+  "col_genre": {
+    "en": "Genre",
+    "es": "Género"
+  },
+  "col_near_black_pct": {
+    "en": "Near-black %",
+    "es": "% casi negro"
   }
 }
