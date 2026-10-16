@@ -45,6 +45,8 @@ import {
   saliencyFor,
   findPosterById,
   worldRecord,
+  worldLangOf,
+  ensureWorldLang,
   PICK_IDS,
   saliencyMapUrls,
 } from './data.js';
@@ -762,10 +764,15 @@ export async function openPoster(p) {
   }
 }
 
-function openFromQuery() {
+async function openFromQuery() {
   const id = new URLSearchParams(location.search).get('id');
   if (!id) return;
-  const p = findPosterById(id);
+  let p = findPosterById(id);
+  const lang = p ? null : worldLangOf(id);
+  if (lang) {
+    await ensureWorldLang(lang).catch(() => {});
+    p = findPosterById(id);
+  }
   if (p) openPoster(p);
 }
 

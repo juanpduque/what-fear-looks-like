@@ -32,13 +32,55 @@ export function saliencyMapUrls(id, filePath) {
   return [siteAsset(`saliency/${n}.webp`)];
 }
 
-// Non-English examples from the essay's world chart (data/world_lookup.js).
+// Non-English posters from the essay's world chart: the examples load with the
+// page (data/world_lookup.js), the rest one language at a time (data/world/{lang}.js).
 let WORLD_BY_ID = null;
+let WORLD_BY_ID_N = -1;
 function worldById() {
-  if (!WORLD_BY_ID && Array.isArray(window.WORLD_POSTERS)) {
-    WORLD_BY_ID = Object.fromEntries(window.WORLD_POSTERS.map((p) => [p[7], p]));
+  const rows = window.WORLD_POSTERS;
+  if (Array.isArray(rows) && rows.length !== WORLD_BY_ID_N) {
+    WORLD_BY_ID = Object.fromEntries(rows.map((p) => [p[7], p]));
+    WORLD_BY_ID_N = rows.length;
   }
   return WORLD_BY_ID || {};
+}
+
+/** Language of a world-chart poster (WORLD_INDEX), or null. */
+export function worldLangOf(id) {
+  const n = Number(id);
+  const index = window.WORLD_INDEX || {};
+  return Object.keys(index).find((lang) => index[lang].includes(n)) || null;
+}
+
+const WORLD_LANG_P = {};
+/** Every chart poster in one language, most-voted first; merged into WORLD_POSTERS / WORLD_LOOKUP. */
+export function ensureWorldLang(lang) {
+  if (WORLD_LANG_P[lang]) return WORLD_LANG_P[lang];
+  WORLD_LANG_P[lang] = new Promise((resolve, reject) => {
+    const s = document.createElement('script');
+    s.src = assetUrl(`data/world/${lang}.js`);
+    s.onload = () => {
+      const data = window.WORLD_LANGS && window.WORLD_LANGS[lang];
+      if (!data) {
+        delete WORLD_LANG_P[lang];
+        reject(new Error(`WORLD_LANGS.${lang} missing after load`));
+        return;
+      }
+      const have = worldById();
+      window.WORLD_POSTERS = window.WORLD_POSTERS || [];
+      data.posters.forEach((p) => {
+        if (!have[p[7]]) window.WORLD_POSTERS.push(p);
+      });
+      window.WORLD_LOOKUP = { ...data.lookup, ...(window.WORLD_LOOKUP || {}) };
+      resolve(data.posters);
+    };
+    s.onerror = () => {
+      delete WORLD_LANG_P[lang];
+      reject(new Error(`world/${lang}.js failed`));
+    };
+    document.head.appendChild(s);
+  });
+  return WORLD_LANG_P[lang];
 }
 
 export function isWorldPoster(id) {
