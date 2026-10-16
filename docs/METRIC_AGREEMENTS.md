@@ -141,7 +141,9 @@ Re-medición de 1,440 afiches del mundo sobre la imagen restaurada:
   restauradas de `world_lookup.js` se vaciaron; las detecciones nuevas están en
   `qa/weapon_boxes_world_restored_unjudged.json` hasta que Nova las juzgue (sin juicio,
   OWLv2 marca letras del título como flechas). Los otros 1,396 afiches no se publican con
-  cajas de armas.
+  cajas de armas: desde que todas las fichas del gráfico del mundo se pueden abrir
+  (`data/world/{lang}.js`), `build_world_lookup.py` descarta las cajas cuyo sha256 en
+  `metric_images.csv` no es el del archivo de hoy (81 de los 4,598).
 
 Registro por métrica (2026-10-16): `pipeline/metric_images.py` escribe
 `data/metric_images.csv` (local, fuera de git): una fila por película publicada y una

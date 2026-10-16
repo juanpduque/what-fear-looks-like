@@ -18,12 +18,13 @@ the 2,427 films where that differs were rerun on the measured sheet.
 
 Records also carry the layers the corpus loads from separate globals:
 cboxes (OWLv2 creature boxes, world run in WORLD_CBOXES), wboxes (OWLv2 weapon boxes minus the ones Nova
-Pro judged false positives, as build_site.py does) and pose (pose.js row).
+Pro judged false positives, as build_site.py does, and the ones metric_images.py
+says were measured on another file) and pose (pose.js row).
 
 Writes:
   site/data/world_lookup.js   WORLD_EXAMPLES {lang: [id]} most-voted since 2000,
                               WORLD_INDEX    {lang: [id]} every chart poster, most-voted first,
-                              WORLD_POSTERS  explorer rows (+ lang) for the examples,
+                              WORLD_POSTERS  explorer rows (+ lang, original title) for the examples,
                               WORLD_LOOKUP   {id: LOOKUP record + cboxes, wboxes, pose}
   site/data/world/{lang}.js   WORLD_LANGS[lang] = {posters, lookup} for every chart poster
   site/saliency_world/{id}.webp
@@ -35,6 +36,7 @@ import csv
 import json
 from pathlib import Path
 
+import metric_images
 from build_explorer import dominant_hex
 from build_lookup import build_records
 from build_site import GLOBAL_SRC, drop_nova_false_positives
@@ -119,7 +121,7 @@ def main() -> None:
         m, p = movies.get(pid), posters.get(pid)
         if not m or not p or not m.get("poster_path"):
             return None
-        return [
+        out = [
             int(float(p["year"])),
             dominant_hex(p.get("palette")),
             m["poster_path"],
@@ -130,6 +132,11 @@ def main() -> None:
             pid,
             langs[pid],
         ]
+        # original title, when it differs: the grid's search matches either
+        orig = (m.get("original_title") or "").strip()
+        if orig and orig != out[3]:
+            out.append(orig)
+        return out
 
     all_ids = set(world_ids).union(*chart.values())
     lookup = build_records(all_ids, sal_paths=[SAL_DIR / "saliency_score.csv"])
@@ -140,6 +147,19 @@ def main() -> None:
     wboxes = drop_nova_false_positives(
         json.loads((DATA / "weapon_boxes.json").read_text(encoding="utf-8"))
     )
+    # Weapon boxes measured on a different file than posters/ has today (the
+    # restored world posters, metric_images.py) would sit on the wrong sheet.
+    ledger = metric_images.load()
+    wrong = [
+        pid
+        for pid in all_ids
+        if wboxes.get(str(pid))
+        and ledger.get(pid, {}).get("weapon_boxes")
+        and ledger[pid]["weapon_boxes"] != metric_images.file_sha(pid)
+    ]
+    for pid in wrong:
+        wboxes.pop(str(pid))
+    print(f"  weapon boxes dropped, measured on another file: {len(wrong)}")
     pose_js = (GLOBAL_SRC / "pose.js").read_text(encoding="utf-8")
     start = pose_js.index("window.POSE=") + len("window.POSE=")
     pose = json.loads(pose_js[start:].rstrip().rstrip(";"))

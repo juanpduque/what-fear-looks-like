@@ -2224,7 +2224,10 @@ function d3Charts() {
   function renderWorldAll() {
     if (!allGrid) return;
     const q = fold(worldAll.q.trim());
-    const hits = q ? worldAll.rows.filter((p) => fold(p[3]).includes(q)) : worldAll.rows;
+    // p[9]: original title when it differs from TMDB's (build_world_lookup.py)
+    const hits = q
+      ? worldAll.rows.filter((p) => fold(`${p[3]} ${p[9] || ''}`).includes(q))
+      : worldAll.rows;
     const page = hits.slice(0, worldAll.shown);
     allGrid.innerHTML = '';
     page.forEach((p) => allGrid.appendChild(worldCard(p)));
