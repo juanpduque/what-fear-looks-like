@@ -112,6 +112,28 @@ Primera corrida (2026-10-13, 42,030 películas publicadas):
 Antes de correr una métrica sobre `posters/`, cruzar con el registro: si `phash_dist` > 10,
 el archivo no es la imagen publicada.
 
+Restauración (2026-10-14): 1,544 archivos de `posters/` se reemplazaron por la imagen que
+muestra el sitio (la vieja queda en `posters_tmdb_current/`). Después: corpus 33,057 iguales,
+1 distinto (1441305, TMDB sirve otra imagen en la misma ruta); mundo 8,408 iguales (100%).
+
+Re-medición de 1,440 afiches del mundo sobre la imagen restaurada:
+
+- Color, caras, CLIP (embeddings, censo, tipografía, medio) y atributos: valores nuevos.
+  Caras y CLIP viejos se habían medido sobre la portada equivocada (coseno CLIP viejo/nuevo
+  ~0.73 en los 1,440, contra 0.98–1.0 en afiches sin cambio). Criaturas: 321 → 289.
+- CLIP: usar los pesos openai de HF (`open_clip` ViT-B-32). `CLIP_CKPT=models/ViT-B-32.pt`
+  no reproduce el censo guardado (86.9% contra 99.9% en 60 afiches de control).
+- Segmentación (ADE / MINC / CLIP): no se reproduce con el entorno actual (19 de 20 afiches
+  de control distintos, hasta 0.5). Se dejaron los valores viejos de los 1,440 para no
+  mezclar métodos; quedan medidos sobre la imagen anterior.
+- Cajas OWLv2 de criaturas del mundo (`qa/creature_boxes_world.json`): ya estaban medidas
+  sobre la imagen del sitio (10 de 10 coinciden, IoU 0.86–0.98 en la caja principal).
+- Cajas de armas (`weapon_boxes.json`): venían de la imagen equivocada. En las 44 fichas
+  restauradas de `world_lookup.js` se vaciaron; las detecciones nuevas están en
+  `qa/weapon_boxes_world_restored_unjudged.json` hasta que Nova las juzgue (sin juicio,
+  OWLv2 marca letras del título como flechas). Los otros 1,396 afiches no se publican con
+  cajas de armas.
+
 ## QA / gold
 
 - Faces: YuNet floor documentado en el essay; gap YuNet=0∩Rek>0 es rescate UI, no essay.
