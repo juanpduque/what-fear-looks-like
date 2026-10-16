@@ -126,6 +126,13 @@ Re-medición de 1,440 afiches del mundo sobre la imagen restaurada:
 - Segmentación (ADE / MINC / CLIP): no se reproduce con el entorno actual (19 de 20 afiches
   de control distintos, hasta 0.5). Se dejaron los valores viejos de los 1,440 para no
   mezclar métodos; quedan medidos sobre la imagen anterior.
+- Cajas OWLv2 de criaturas del mundo (`qa/creature_boxes_world.json`): ya estaban medidas
+  sobre la imagen del sitio (10 de 10 coinciden, IoU 0.86–0.98 en la caja principal).
+- Cajas de armas (`weapon_boxes.json`): venían de la imagen equivocada. En las 44 fichas
+  restauradas de `world_lookup.js` se vaciaron; las detecciones nuevas están en
+  `qa/weapon_boxes_world_restored_unjudged.json` hasta que Nova las juzgue (sin juicio,
+  OWLv2 marca letras del título como flechas). Los otros 1,396 afiches no se publican con
+  cajas de armas.
 
 ## QA / gold
 
