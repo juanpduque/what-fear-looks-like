@@ -123,9 +123,18 @@ Re-medición de 1,440 afiches del mundo sobre la imagen restaurada:
   ~0.73 en los 1,440, contra 0.98–1.0 en afiches sin cambio). Criaturas: 321 → 289.
 - CLIP: usar los pesos openai de HF (`open_clip` ViT-B-32). `CLIP_CKPT=models/ViT-B-32.pt`
   no reproduce el censo guardado (86.9% contra 99.9% en 60 afiches de control).
-- Segmentación (ADE / MINC / CLIP): no se reproduce con el entorno actual (19 de 20 afiches
-  de control distintos, hasta 0.5). Se dejaron los valores viejos de los 1,440 para no
-  mezclar métodos; quedan medidos sobre la imagen anterior.
+- Segmentación (ADE / MINC / CLIP): mismo código, pero no se reproduce en otra máquina. La
+  original corrió en GPU en AWS (`aws/seg_chain.sh`, CUDA, `pip install -U` sin versiones
+  fijas); en CPU del Mac cambia la clase ganadora de algunos parches de la cuadrícula 2×2. En
+  40 afiches del corpus sin cambio de imagen: CLIP cambia en 57% (|Δ| medio 0.038, término
+  principal igual en 75%), ADE en 85% (0.006), MINC en 32% (0.008). El embedding CLIP de la
+  imagen completa tampoco se reproduce (coseno mediano 0.988), con pesos HF ni con el ckpt
+  local. Medir sobre la portada equivocada pesa más: en los 1,440, CLIP cambia en 95% (|Δ|
+  medio 0.113, término principal igual en 36%). Re-medición 2026-10-16: los 1,440 pasan a la
+  segmentación en CPU del Mac sobre la imagen restaurada (repetible: 32 de 32 idénticos).
+  Quedan medidos en otra máquina que el resto. `segmentation_decade.json` (serie del ensayo)
+  no se regeneró: el ensayo no cambia. En el sitio solo se ven en las 44 fichas
+  restauradas de `world_lookup.js` (`sem`: sangre, arma...); cambian 43.
 - Cajas OWLv2 de criaturas del mundo (`qa/creature_boxes_world.json`): ya estaban medidas
   sobre la imagen del sitio (10 de 10 coinciden, IoU 0.86–0.98 en la caja principal).
 - Cajas de armas (`weapon_boxes.json`): venían de la imagen equivocada. En las 44 fichas
