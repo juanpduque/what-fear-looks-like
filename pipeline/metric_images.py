@@ -104,13 +104,15 @@ def load() -> dict[int, dict]:
 
 
 def save(rows: dict[int, dict]) -> None:
-    tmp = OUT.with_suffix(".tmp")
+    # data/metric_images.csv is a symlink to the backup disk: write next to the target
+    out = OUT.resolve()
+    tmp = out.with_suffix(".tmp")
     with tmp.open("w", newline="", encoding="utf-8") as f:
         w = csv.DictWriter(f, fieldnames=FIELDS)
         w.writeheader()
         for pid in sorted(rows):
             w.writerow(rows[pid])
-    tmp.replace(OUT)
+    tmp.replace(out)
 
 
 def record(metric: str, ids, workers: int = 4) -> None:

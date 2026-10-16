@@ -48,3 +48,15 @@ def test_record_follows_a_replaced_file(ledger):
 def test_record_rejects_unknown_metric(ledger):
     with pytest.raises(KeyError):
         mi.record("colour", [1])
+
+
+def test_save_keeps_a_symlinked_ledger(ledger, tmp_path, monkeypatch):
+    target = tmp_path / "disk" / "metric_images.csv"
+    target.parent.mkdir()
+    mi.OUT.replace(target)
+    link = tmp_path / "link.csv"
+    link.symlink_to(target)
+    monkeypatch.setattr(mi, "OUT", link)
+    mi.record("color", [1], workers=1)
+    assert link.is_symlink()
+    assert mi.load()[1]["color"]
