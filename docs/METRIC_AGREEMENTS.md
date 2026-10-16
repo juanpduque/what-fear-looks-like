@@ -134,6 +134,22 @@ Re-medición de 1,440 afiches del mundo sobre la imagen restaurada:
   OWLv2 marca letras del título como flechas). Los otros 1,396 afiches no se publican con
   cajas de armas.
 
+Registro por métrica (2026-10-16): `pipeline/metric_images.py` escribe
+`data/metric_images.csv` (local, fuera de git): una fila por película publicada y una
+columna sha256 por métrica (color, caras, embeddings CLIP, censo, tipografía, medio,
+atributos, segmentación, Rekognition, cajas de criaturas, cajas de armas). Vacío = la
+métrica no tiene fila para esa película. Se sembró con `--seed` asumiendo que cada métrica
+se midió sobre el archivo de hoy, salvo lo que dice el manifiesto de la restauración: en los
+1,440 del mundo, segmentación y cajas de armas quedan con el sha256 del archivo viejo (las
+cajas de armas en 565 de ellos; las 44 fichas vaciadas no tienen). Esa suposición se revisó
+en muestras, no película por película. 2 películas del corpus (264880, 1007963) no tienen
+archivo en `posters/` ni métricas.
+
+Sin argumentos, el script vuelve a calcular el hash de `posters/` (unos 25 minutos en el disco
+USB) y escribe `data/qa/metric_images_stale.csv` con cada métrica medida sobre otro archivo.
+`reanalyze_poster_ids.py` actualiza el registro de las métricas que vuelve a medir. Un script
+que mida una métrica debe llamar `metric_images.record(métrica, ids)` al terminar.
+
 Otros géneros (Parte VII, `export_genre_comparison.py`), revisado 2026-10-16 en muestras de
 300 por género: el archivo de `posters/` es la portada registrada en
 `community_{género}/tmdb_{género}_analysis_meta.csv` en 296–299 de 300 (pHash ≤ 10), y el

@@ -22,6 +22,8 @@ from pathlib import Path
 import numpy as np
 import pandas as pd
 
+import metric_images
+
 HERE = Path(__file__).resolve().parent
 DATA = HERE / "data"
 POSTERS = DATA / "posters"
@@ -194,16 +196,26 @@ def main():
         tmp.parent.mkdir(parents=True, exist_ok=True)
         ids_df.to_csv(tmp, index=False)
 
-        run([sys.executable, "-u", "multi_analyze.py"])
-        run([sys.executable, "-u", "faces_v2.py"])
-        run([sys.executable, "-u", "clip_embed.py"])
-        run([sys.executable, "-u", "clip_medium.py"])
-        run([sys.executable, "-u", "clip_census.py"])
-        run([sys.executable, "-u", "clip_typography_axis.py"])
+        measured = ["color"]
+        for script, metrics in [
+            ("multi_analyze.py", ["attributes"]),
+            ("faces_v2.py", ["faces"]),
+            ("clip_embed.py", ["clip_embed"]),
+            ("clip_medium.py", ["medium"]),
+            ("clip_census.py", ["census"]),
+            ("clip_typography_axis.py", ["typography"]),
+        ]:
+            run([sys.executable, "-u", script])
+            measured += metrics
         if not args.skip_segmentation:
             run([sys.executable, "-u", "segmentation.py"])
+            measured.append("segmentation")
         else:
             print("skip segmentation")
+
+        print("\n=== RECORD measured image (metric_images.csv) ===")
+        for metric in measured:
+            metric_images.record(metric, ids)
 
         if not args.skip_export:
             print("\n=== EXPORT site series / lookup / explorer ===")
