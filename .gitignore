@@ -11,6 +11,8 @@ pipeline/data/posters/
 pipeline/data/horror_movies.csv
 # image registry (build_poster_images.py), 8 MB, rebuilt locally
 pipeline/data/poster_images.csv
+# per-metric image ledger (metric_images.py), rebuilt locally
+pipeline/data/metric_images.csv
 data/posters/
 *.pyc
 __pycache__/
