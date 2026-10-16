@@ -142,7 +142,8 @@ métrica no tiene fila para esa película. Se sembró con `--seed` asumiendo que
 se midió sobre el archivo de hoy, salvo lo que dice el manifiesto de la restauración: en los
 1,440 del mundo, segmentación y cajas de armas quedan con el sha256 del archivo viejo (las
 cajas de armas en 565 de ellos; las 44 fichas vaciadas no tienen). Esa suposición se revisó
-en muestras, no película por película. 2 películas del corpus (264880, 1007963) no tienen
+en muestras, no película por película. Después la segmentación de los 1,440 se re-midió
+(#55) y el registro se actualizó con `record`: quedan solo las 565 cajas de armas. 2 películas del corpus (264880, 1007963) no tienen
 archivo en `posters/` ni métricas.
 
 Sin argumentos, el script vuelve a calcular el hash de `posters/` (unos 25 minutos en el disco
