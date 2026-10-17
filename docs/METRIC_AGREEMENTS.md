@@ -147,10 +147,16 @@ Re-medición de 1,440 afiches del mundo sobre la imagen restaurada:
   cajas de armas: desde que todas las fichas del gráfico del mundo se pueden abrir
   (`data/world/{lang}.js`), `build_world_lookup.py` descarta las cajas cuyo sha256 en
   `metric_images.csv` no es el del archivo de hoy (81 de los 4,598).
-  Los 565 afiches con `weapon_boxes` desactualizado en `qa/metric_images_stale.csv` siguen sin
-  cajas: no hay nada que juzgar todavía, hace falta re-detectar con OWLv2
-  (`owlv2_creature_boxes.py --with-weapons`) sobre la imagen de hoy, con un control de
-  reproducibilidad antes (la GPU de AWS y la CPU del Mac no dan lo mismo), y después juzgar con Nova.
+  Los 565 afiches con `weapon_boxes` desactualizado en `qa/metric_images_stale.csv` se
+  re-detectaron el 2026-10-17 con OWLv2 sobre la imagen de hoy (Mac CPU, 10-17 s por afiche,
+  `owlv2_creature_boxes.py --with-weapons`) y Nova Pro juzgó las 731 cajas nuevas: 253 correctas,
+  471 falsos positivos, 7 dudosas (`qa/weapon_boxes_world_stale565_nova_judged.csv`; detecciones en
+  `qa/weapon_boxes_world_stale565_owlv2_cpu.json`). Solo se publican las correctas (159 afiches, 55
+  de ellos en el gráfico del mundo, con 87 cajas). Control de reproducibilidad previo, CPU del Mac
+  frente a lo medido en AWS sobre las mismas imágenes (10 afiches con cajas): 16 de 21 cajas
+  reproducidas, IoU medio 0.885, diferencia media de confianza 0.022; los fallos están pegados al
+  umbral 0.2 y hay un cambio de etiqueta (hammer a baseball_bat). `build_world_lookup.py` ya no
+  descarta ninguna caja por medirse sobre otra imagen (antes 81).
 
 Registro por métrica (2026-10-16): `pipeline/metric_images.py` escribe
 `data/metric_images.csv` (local, fuera de git): una fila por película publicada y una
