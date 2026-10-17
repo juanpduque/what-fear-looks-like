@@ -896,8 +896,8 @@
     "es": "Cinco muestras k-means de la tinta de esta hoja en CIELAB (ponderada por saturación). Conteo: {pal_n} colores. No es el Río de color: el río usa seis bandas fijas de familia de matiz."
   },
   "autopsy_cmode_blurb_dark": {
-    "en": "Near-black pixel share: {dark}. Same Dark band as the Color River — how much of the sheet is night.",
-    "es": "Cuota de píxeles casi negros: {dark}. La misma banda Dark del Río de color: cuánto de la hoja es noche."
+    "en": "Near-black pixel share: {dark} — how much of the sheet is night. The Color River's Black/Grey band is wider: it also counts grey and white.",
+    "es": "Cuota de píxeles casi negros: {dark}: cuánto de la hoja es noche. La banda Negro/Gris del Río de color es más ancha: también cuenta grises y blancos."
   },
   "autopsy_cmode_blurb_red": {
     "en": "Pixel-red share (HSV red-hue mask): {red}. Color red — not CLIP “blood.”",
@@ -1592,12 +1592,12 @@
     "es": "Hay un rostro en la hoja, pero este id aún no está en la tabla de ViTPose."
   },
   "exhibit_m_dark_how": {
-    "en": "Near-black pixel share — the same Dark band as the Color River — plus mean brightness L* in CIELAB. Five swatches are this sheet's actual k-means palette, not colors we picked.",
-    "es": "Cuota de píxeles casi negros — la misma banda Dark del Río de color — más el brillo medio L* en CIELAB. Las cinco muestras son la paleta k-means real de esta hoja, no colores que hayamos elegido."
+    "en": "Near-black pixel share (the Color River's Black/Grey band is wider: it also counts grey and white) plus mean brightness L* in CIELAB. Five swatches are this sheet's actual k-means palette, not colors we picked.",
+    "es": "Cuota de píxeles casi negros (la banda Negro/Gris del Río de color es más ancha: también cuenta grises y blancos) más el brillo medio L* en CIELAB. Las cinco muestras son la paleta k-means real de esta hoja, no colores que hayamos elegido."
   },
   "exhibit_m_dark_read": {
-    "en": "87% of this sheet is night; L* 8.1 is almost no light. When the river later turns black, and when brightness falls for sixty years, those charts are this number, 33,622 times.",
-    "es": "El 87% de esta hoja es noche; L* 8.1 es casi sin luz. Cuando el río se vuelva negro, y cuando el brillo caiga sesenta años, esos gráficos son este número, 33,622 veces."
+    "en": "87% of this sheet is night; L* 8.1 is almost no light. When the river later turns black, and when brightness falls for more than fifty years, those charts are this number, 33,622 times.",
+    "es": "El 87% de esta hoja es noche; L* 8.1 es casi sin luz. Cuando el río se vuelva negro, y cuando el brillo caiga más de cincuenta años, esos gráficos son este número, 33,622 veces."
   },
   "exhibit_m_faces_how": {
     "en": "YuNet face detector at analysis resolution. Counts are floors: small, profile, tilted, or heavily painted faces can escape. Creature scores come from a separate CLIP census (18-way); labels below 0.5 are dropped.",
