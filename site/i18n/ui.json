@@ -145,7 +145,7 @@
   },
   "readout_ci": {
     "en": "95% CI {lo}–{hi} · {n} posters",
-    "es": "IC 95 % {lo}–{hi} · {n} pósters"
+    "es": "IC 95 % {lo}–{hi} · {n} afiches"
   },
   "annot_occult_red": {
     "en": "Occult red",
@@ -237,7 +237,7 @@
   },
   "aria_river_label": {
     "en": "Hue-family share of poster pixels by decade",
-    "es": "Cuota de píxeles del póster por familia de matiz, por década"
+    "es": "Cuota de píxeles del afiche por familia de matiz, por década"
   },
   "aria_river_desc": {
     "en": "Stacked chart of six hue bands from the 1920s to the 2020s. Black and grey rise over time while warm pulp colors shrink.",
@@ -249,7 +249,7 @@
   },
   "aria_darkness_label": {
     "en": "Average poster brightness over the century",
-    "es": "Brillo medio del póster a lo largo del siglo"
+    "es": "Brillo medio del afiche a lo largo del siglo"
   },
   "aria_darkness_desc": {
     "en": "Line chart of mean L* brightness from 1920 to 2026. Brightness peaks around 1960 then falls for about sixty years.",
@@ -257,7 +257,7 @@
   },
   "table_darkness_caption": {
     "en": "Mean poster brightness (L*), 5-year rolling points",
-    "es": "Brillo medio del póster (L*), puntos de media móvil de 5 años"
+    "es": "Brillo medio del afiche (L*), puntos de media móvil de 5 años"
   },
   "col_year": {
     "en": "Year",
@@ -289,15 +289,15 @@
   },
   "aria_faces_label": {
     "en": "Share of posters with a detectable face",
-    "es": "Cuota de pósters con un rostro detectable"
+    "es": "Cuota de afiches con un rostro detectable"
   },
   "aria_faces_desc": {
     "en": "Line chart of the percentage of posters with at least one YuNet-detected face. Peaks in 1945 near 91%, then declines toward about half of posters.",
-    "es": "Gráfico de líneas del porcentaje de pósters con al menos un rostro detectado por YuNet. Pico en 1945 cerca del 91%, luego baja hacia cerca de la mitad de los pósters."
+    "es": "Gráfico de líneas del porcentaje de afiches con al menos un rostro detectado por YuNet. Pico en 1945 cerca del 91%, luego baja hacia cerca de la mitad de los afiches."
   },
   "table_faces_caption": {
     "en": "Posters with ≥1 detected face (%), 5-year rolling points",
-    "es": "Pósters con ≥1 rostro detectado (%), puntos de media móvil de 5 años"
+    "es": "Afiches con ≥1 rostro detectado (%), puntos de media móvil de 5 años"
   },
   "col_with_face_pct": {
     "en": "With face %",
@@ -305,7 +305,7 @@
   },
   "aria_census_label": {
     "en": "Creature share of posters over time",
-    "es": "Cuota de criaturas en pósters a lo largo del tiempo"
+    "es": "Cuota de criaturas en afiches a lo largo del tiempo"
   },
   "aria_census_desc": {
     "en": "Multi-line chart of CLIP creature labels. Ghosts lead from the 1920s to the 1940s and again today; masked killers peak in the 1980s.",
@@ -313,11 +313,11 @@
   },
   "table_census_caption": {
     "en": "Creature share of posters (%), by decade",
-    "es": "Cuota de criaturas en pósters (%), por década"
+    "es": "Cuota de criaturas en afiches (%), por década"
   },
   "aria_quiet_label": {
     "en": "Text-like coverage of posters over time",
-    "es": "Cobertura similar a texto de los pósters a lo largo del tiempo"
+    "es": "Cobertura similar a texto de los afiches a lo largo del tiempo"
   },
   "aria_quiet_desc": {
     "en": "Line chart of MSER text-region coverage. Peaks in the 1950s shout era, then falls toward quieter contemporary sheets.",
@@ -333,7 +333,7 @@
   },
   "aria_symmetry_label": {
     "en": "Mirror symmetry of posters over time",
-    "es": "Simetría espejo de los pósters a lo largo del tiempo"
+    "es": "Simetría espejo de los afiches a lo largo del tiempo"
   },
   "aria_symmetry_desc": {
     "en": "Line chart of left-right mirror similarity. Climbs after 2010, as it does in thriller, sci-fi and mystery posters.",
@@ -353,7 +353,7 @@
   },
   "aria_diagonal_desc": {
     "en": "Line chart of diagonal composition energy. Peaks in mid-century pulp, then declines as posters stand upright.",
-    "es": "Gráfico de líneas de la energía composicional diagonal. Pico en el pulp de mediados de siglo, luego baja a medida que los pósters se ponen derechos."
+    "es": "Gráfico de líneas de la energía composicional diagonal. Pico en el pulp de mediados de siglo, luego baja a medida que los afiches se ponen derechos."
   },
   "table_diagonal_caption": {
     "en": "Diagonal linework share (%), 5-year rolling points",
@@ -409,7 +409,7 @@
   },
   "readout_posters_with_face": {
     "en": "Posters with a face",
-    "es": "Pósters con un rostro"
+    "es": "Afiches con un rostro"
   },
   "readout_textlike_coverage": {
     "en": "Text-like coverage",
@@ -433,7 +433,7 @@
   },
   "readout_of_posters": {
     "en": "of posters",
-    "es": "de los pósters"
+    "es": "de los afiches"
   },
   "readout_model_blood": {
     "en": "Model blood",
@@ -573,7 +573,7 @@
   },
   "lookup_note_no_clip": {
     "en": "No CLIP semantic segmentation for this poster.",
-    "es": "Sin segmentación semántica CLIP para este póster."
+    "es": "Sin segmentación semántica CLIP para este afiche."
   },
   "lookup_note_rekognition": {
     "en": "Rekognition complements CLIP/YuNet: photo labels & moderation. Painted sheets often return 0 faces.",
@@ -581,7 +581,7 @@
   },
   "aria_search_title": {
     "en": "Search poster by title",
-    "es": "Buscar póster por título"
+    "es": "Buscar afiche por título"
   },
   "aria_from_year": {
     "en": "From year",
@@ -673,15 +673,15 @@
   },
   "lookup_eye_hint": {
     "en": "eye = animated preview on the poster",
-    "es": "ojo = vista previa animada en el póster"
+    "es": "ojo = vista previa animada en el afiche"
   },
   "lookup_preview_on_poster": {
     "en": "Preview on poster",
-    "es": "Vista previa en el póster"
+    "es": "Vista previa en el afiche"
   },
   "lookup_preview_metric": {
     "en": "Preview {k} on poster",
-    "es": "Vista previa de {k} en el póster"
+    "es": "Vista previa de {k} en el afiche"
   },
   "lookup_preview_bands": {
     "en": "Preview hue bands",
@@ -1037,11 +1037,11 @@
   },
   "studios_lede": {
     "en": "Almost no studio horror poster carries a signature, yet an agency designed it. Of {v} verified credits in the corpus, {a} designed {an} horror posters, {b} {bn} and {c} {cn}.",
-    "es": "Casi ningún póster de terror de estudio lleva firma, pero una agencia lo diseñó. De {v} créditos verificados en el corpus, {a} diseñó {an} pósters de terror, {b} {bn} y {c} {cn}."
+    "es": "Casi ningún afiche de terror de estudio lleva firma, pero una agencia lo diseñó. De {v} créditos verificados en el corpus, {a} diseñó {an} afiches de terror, {b} {bn} y {c} {cn}."
   },
   "studios_card_n": {
     "en": "{n} horror posters",
-    "es": "{n} pósters de terror"
+    "es": "{n} afiches de terror"
   },
   "studios_cta": {
     "en": "See all {n} studios →",
@@ -1181,19 +1181,19 @@
   },
   "autopsy_body_object": {
     "en": "{year} · TMDB {id}. One of 33,622 one-sheets measured the same way. Medium: {medium} (Custom Labels {conf}). CLIP illustration score {painted}. Scroll — the layers we ran on every poster peel off this one.",
-    "es": "{year} · TMDB {id}. Uno de 33,622 one-sheets medidos igual. Medio: {medium} (Custom Labels {conf}). CLIP ilustración {painted}. Desplázate: las capas que corrimos en cada póster se despegan de este."
+    "es": "{year} · TMDB {id}. Uno de 33,622 one-sheets medidos igual. Medio: {medium} (Custom Labels {conf}). CLIP ilustración {painted}. Desplázate: las capas que corrimos en cada afiche se despegan de este."
   },
   "autopsy_body_object_clip": {
     "en": "{year} · TMDB {id}. One of 33,622 one-sheets measured the same way. Medium: {medium} (CLIP illustration score {painted}; Custom Labels did not cover this sheet). Scroll — the layers we ran on every poster peel off this one.",
-    "es": "{year} · TMDB {id}. Uno de 33,622 one-sheets medidos igual. Medio: {medium} (CLIP ilustración {painted}; Custom Labels no cubre esta hoja). Desplázate: las capas que corrimos en cada póster se despegan de este."
+    "es": "{year} · TMDB {id}. Uno de 33,622 one-sheets medidos igual. Medio: {medium} (CLIP ilustración {painted}; Custom Labels no cubre esta hoja). Desplázate: las capas que corrimos en cada afiche se despegan de este."
   },
   "autopsy_body_object_world": {
     "en": "{year} · TMDB {id}. A {lang}-language film, outside the 33,622-poster English corpus but measured the same way; where it is compared, it is against English-language horror. Medium: {medium} (Custom Labels {conf}). CLIP illustration score {painted}. Scroll — the layers we ran on every poster peel off this one.",
-    "es": "{year} · TMDB {id}. Una película en {lang}, fuera del corpus de 33,622 afiches en inglés pero medida igual; cuando se compara, es con el terror en inglés. Medio: {medium} (Custom Labels {conf}). CLIP ilustración {painted}. Desplázate: las capas que corrimos en cada póster se despegan de este."
+    "es": "{year} · TMDB {id}. Una película en {lang}, fuera del corpus de 33,622 afiches en inglés pero medida igual; cuando se compara, es con el terror en inglés. Medio: {medium} (Custom Labels {conf}). CLIP ilustración {painted}. Desplázate: las capas que corrimos en cada afiche se despegan de este."
   },
   "autopsy_body_object_clip_world": {
     "en": "{year} · TMDB {id}. A {lang}-language film, outside the 33,622-poster English corpus but measured the same way; where it is compared, it is against English-language horror. Medium: {medium} (CLIP illustration score {painted}; Custom Labels did not cover this sheet). Scroll — the layers we ran on every poster peel off this one.",
-    "es": "{year} · TMDB {id}. Una película en {lang}, fuera del corpus de 33,622 afiches en inglés pero medida igual; cuando se compara, es con el terror en inglés. Medio: {medium} (CLIP ilustración {painted}; Custom Labels no cubre esta hoja). Desplázate: las capas que corrimos en cada póster se despegan de este."
+    "es": "{year} · TMDB {id}. Una película en {lang}, fuera del corpus de 33,622 afiches en inglés pero medida igual; cuando se compara, es con el terror en inglés. Medio: {medium} (CLIP ilustración {painted}; Custom Labels no cubre esta hoja). Desplázate: las capas que corrimos en cada afiche se despegan de este."
   },
   "autopsy_body_alts": {
     "en": "TMDB keeps {n} distinct sheets. Select one to autopsy those pixels — color, pose, YuNet, OWL and title of that sheet.",
@@ -1221,7 +1221,7 @@
   },
   "autopsy_alts_aria": {
     "en": "Alternative posters",
-    "es": "Pósters alternativos"
+    "es": "Afiches alternativos"
   },
   "autopsy_body_alts_rek": {
     "en": "Rekognition already read {n} of these sheets — a note on that path, not boxes from the measured cover.",
@@ -1453,7 +1453,7 @@
   },
   "autopsy_body_composition": {
     "en": "Findings on this sheet: thirds {thirds} — {thirds_read}; diagonals {diag} — {diag_read}; mirror-fold {sym} — {sym_read}; balance {bal} — {bal_read}; negative space {neg} — {neg_read}. Scroll the next beats to light each instrument on the poster.",
-    "es": "Hallazgos en esta hoja: tercios {thirds} — {thirds_read}; diagonales {diag} — {diag_read}; pliegue-espejo {sym} — {sym_read}; balance {bal} — {bal_read}; espacio negativo {neg} — {neg_read}. En los siguientes beats se enciende cada instrumento sobre el póster."
+    "es": "Hallazgos en esta hoja: tercios {thirds} — {thirds_read}; diagonales {diag} — {diag_read}; pliegue-espejo {sym} — {sym_read}; balance {bal} — {bal_read}; espacio negativo {neg} — {neg_read}. En los siguientes beats se enciende cada instrumento sobre el afiche."
   },
   "autopsy_comp_read_na": {
     "en": "no reading",
@@ -1612,8 +1612,8 @@
     "es": "Dos instrumentos. El rojo-píxel es una máscara HSV de matiz rojo. La sangre es CLIP zero-shot en parches 2×2: ¿esto se parece a sangre, aunque no sea rojo?"
   },
   "exhibit_m_blood_read": {
-    "en": "About 16% of pixels lean red; CLIP scores blood 0. Rekognition flags the blade as a weapon (0.85). Color, blood, and the knife can disagree. That split is Part III.",
-    "es": "Unos 16% de los píxeles tiran a rojo; CLIP marca sangre 0. Rekognition lee el filo como arma (0.85). El color, la sangre y el cuchillo pueden disentir. Esa grieta es la Parte III."
+    "en": "About 16% of pixels lean red; CLIP scores blood 0. Rekognition flags the blade as a weapon (0.85). Color, blood, and the knife can disagree. That split is Part VII.",
+    "es": "Unos 16% de los píxeles tiran a rojo; CLIP marca sangre 0. Rekognition lee el filo como arma (0.85). El color, la sangre y el cuchillo pueden disentir. Esa grieta es la Parte VII."
   },
   "exhibit_m_type_how": {
     "en": "OCR reads the title (confidence 98% here). Separately, MSER flags text-like regions — a proxy for how much of the sheet shouts, not a font ID.",
