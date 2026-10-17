@@ -1469,22 +1469,22 @@ function d3Charts() {
       [45803, 'Svengali', '1931', '49%'],
       [329237, 'Gigantis: The Fire Monster', '1959', '65%'],
       [33468, "The Brain That Wouldn't Die", '1962', '64%'],
-      [10676, 'Halloween III: Season of the Witch', '1982', '50%'],
+      [19236, 'Santa Sangre', '1989', '87%'],
       [170, '28 Days Later', '2002', '86%'],
-      [882598, 'Smile', '2022', '85%'],
+      [501170, 'Doctor Sleep', '2019', '72%'],
     ];
     const CR_WARM = [
       [136, 'Freaks', '1932', '84%'],
-      [11549, 'Invasion of the Body Snatchers', '1956', '49%'],
-      [59189, 'Phase IV', '1974', '95%'],
+      [11549, 'Invasion of the Body Snatchers', '1956', '69%'],
+      [16154, "Let's Scare Jessica to Death", '1971', '92%'],
       [694, 'The Shining', '1980', '93%'],
       [9792, 'The Hills Have Eyes', '2006', '84%'],
       [425972, 'Cargo', '2017', '95%'],
     ];
     const CR_GREEN = [
       [28046, 'The Ghoul', '1933', '88%'],
-      [10973, 'Creature from the Black Lagoon', '1954', '37%'],
-      [805, "Rosemary's Baby", '1968', '50%'],
+      [15096, '20 Million Miles to Earth', '1957', '42%'],
+      [805, "Rosemary's Baby", '1968', '65%'],
       [18498, 'Ghoulies', '1985', '48%'],
       [2212, 'Nightwatch', '1997', '69%'],
       [591275, 'Fear Street: 1666', '2021', '45%'],
@@ -1493,17 +1493,17 @@ function d3Charts() {
       [27503, 'The Unknown', '1927', '60%'],
       [35911, 'Cult of the Cobra', '1955', '66%'],
       [578, 'Jaws', '1975', '61%'],
-      [1091, 'The Thing', '1982', '77%'],
+      [377, 'A Nightmare on Elm Street', '1984', '63%'],
       [4970, 'Gothika', '2003', '61%'],
-      [332567, 'The Shallows', '2016', '85%'],
+      [332567, 'The Shallows', '2016', '59%'],
     ];
     const CR_PURPLE = [
       [3575, 'The Return of Doctor X', '1939', '38%'],
       [831, 'This Island Earth', '1955', '37%'],
       [26480, 'The Legend of the 7 Golden Vampires', '1974', '58%'],
-      [28774, 'Communion', '1989', '40%'],
+      [28774, 'Communion', '1989', '50%'],
       [10166, 'The Witches', '1990', '22%'],
-      [419479, 'The Babysitter', '2017', '66%'],
+      [419479, 'The Babysitter', '2017', '86%'],
     ];
     const CR_BLACK = [
       [150196, 'The Telltale Heart', '1928', '100%'],
