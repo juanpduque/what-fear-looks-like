@@ -1507,10 +1507,10 @@ function d3Charts() {
     ];
     const CR_BLACK = [
       [150196, 'The Telltale Heart', '1928', '100%'],
-      [11868, 'Dracula', '1958', '75%'],
+      [11868, 'Dracula', '1958', '57%'],
       [348, 'Alien', '1979', '93%'],
-      [4488, 'Friday the 13th', '1980', '80%'],
-      [565, 'The Ring', '2002', '97%'],
+      [4488, 'Friday the 13th', '1980', '82%'],
+      [11056, 'Darkness', '2002', '94%'],
       [310131, 'The Witch', '2015', '93%'],
     ];
     go('cr-red', CR_RED);
