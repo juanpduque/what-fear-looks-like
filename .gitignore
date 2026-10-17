@@ -180,3 +180,7 @@ pipeline/data/poster_src.csv
 pipeline/data/rekognition_*.csv
 pipeline/data/*.lock
 pipeline/results/
+
+# Local scratch
+.tmp_posters/
+composition-code/node_modules/
