@@ -2367,3 +2367,44 @@ footer .logo span {
 .world-ex-face.has-face {
   color: #e5a00d;
 }
+.world-all-btn,
+.world-all-more {
+  font: inherit;
+  font-size: 12px;
+  margin-top: 14px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  border: 1px solid #3a3530;
+  background: transparent;
+  color: #f2ede4;
+  cursor: pointer;
+}
+.world-all-btn:hover,
+.world-all-more:hover,
+.world-all-btn[aria-expanded='true'] {
+  border-color: #e5a00d;
+}
+.world-all {
+  margin-top: 14px;
+}
+.world-all-q {
+  width: 100%;
+  max-width: 320px;
+  box-sizing: border-box;
+  font: inherit;
+  font-size: 14px;
+  padding: 7px 10px;
+  border-radius: 3px;
+  border: 1px solid #3a3530;
+  background: #141416;
+  color: #f2ede4;
+}
+.world-all-q:focus {
+  outline: none;
+  border-color: #e5a00d;
+}
+.world-all-count {
+  font-size: 12px;
+  color: #9a958a;
+  margin: 10px 0;
+}

@@ -2147,20 +2147,41 @@ function d3Charts() {
   }
 
   /* Example posters under the world chart: the most-voted per language since
-     2000, each opening its autopsy (data/world_lookup.js). */
+     2000, each opening its autopsy (data/world_lookup.js). Below them, every
+     chart poster in that language, loaded on request (data/world/{lang}.js). */
   const exHost = document.getElementById('world-ex');
   const WORLD_ROW_BY_ID = Object.fromEntries((window.WORLD_POSTERS || []).map((p) => [p[7], p]));
+  const WORLD_ALL_PAGE = 36;
   let exLang = 'ja';
+  const worldAll = { open: false, lang: null, rows: [], q: '', shown: WORLD_ALL_PAGE };
+  const worldLangName = (lang) =>
+    new Intl.DisplayNames([document.documentElement.lang || 'en'], { type: 'language' }).of(lang);
+  function worldCard(p) {
+    const btn = document.createElement('button');
+    btn.type = 'button';
+    btn.className = 'world-ex-card';
+    btn.setAttribute('aria-label', `${p[3]} (${p[0]})`);
+    const img = document.createElement('img');
+    img.src = posterSrc(p, 'm');
+    img.alt = '';
+    img.loading = 'lazy';
+    const cap = document.createElement('span');
+    cap.className = 'world-ex-title';
+    cap.textContent = `${p[3]} · ${p[0]}`;
+    const tag = document.createElement('span');
+    tag.className = 'world-ex-face' + (p[5] > 0 ? ' has-face' : '');
+    tag.textContent = t(p[5] > 0 ? 'world_ex_face' : 'world_ex_noface');
+    btn.append(img, tag, cap);
+    btn.addEventListener('click', () => window.openPoster(p));
+    return btn;
+  }
   function showWorldExamples(lang) {
     const ids = window.WORLD_EXAMPLES && window.WORLD_EXAMPLES[lang];
     if (!exHost || !ids) return;
     exLang = lang;
-    const name = new Intl.DisplayNames([document.documentElement.lang || 'en'], {
-      type: 'language',
-    }).of(lang);
     const shown = ids.map((id) => WORLD_ROW_BY_ID[id] || POSTER_BY_ID[id]).filter(Boolean);
     document.getElementById('world-ex-head').textContent = t('world_ex_head', {
-      lang: name,
+      lang: worldLangName(lang),
       n: shown.length,
       k: shown.filter((p) => p[5] > 0).length,
     });
@@ -2169,33 +2190,104 @@ function d3Charts() {
     });
     const row = document.getElementById('world-ex-row');
     row.innerHTML = '';
-    shown.forEach((p) => {
-      const btn = document.createElement('button');
-      btn.type = 'button';
-      btn.className = 'world-ex-card';
-      btn.setAttribute('aria-label', `${p[3]} (${p[0]})`);
-      const img = document.createElement('img');
-      img.src = posterSrc(p, 'm');
-      img.alt = '';
-      img.loading = 'lazy';
-      const cap = document.createElement('span');
-      cap.className = 'world-ex-title';
-      cap.textContent = `${p[3]} · ${p[0]}`;
-      const tag = document.createElement('span');
-      tag.className = 'world-ex-face' + (p[5] > 0 ? ' has-face' : '');
-      tag.textContent = t(p[5] > 0 ? 'world_ex_face' : 'world_ex_noface');
-      btn.append(img, tag, cap);
-      btn.addEventListener('click', () => window.openPoster(p));
-      row.appendChild(btn);
+    shown.forEach((p) => row.appendChild(worldCard(p)));
+    showWorldAllButton();
+    if (worldAll.open && worldAll.lang !== lang) loadWorldAll(lang);
+  }
+
+  /* --- every chart poster in the chosen language --- */
+  const allBtn = document.getElementById('world-all-btn');
+  const allHost = document.getElementById('world-all');
+  const allQ = document.getElementById('world-all-q');
+  const allCount = document.getElementById('world-all-count');
+  const allGrid = document.getElementById('world-all-grid');
+  const allMore = document.getElementById('world-all-more');
+  const fold = (s) =>
+    String(s || '')
+      .normalize('NFD')
+      .replace(/[̀-ͯ]/g, '')
+      .toLowerCase();
+  function showWorldAllButton() {
+    const ids = window.WORLD_INDEX && window.WORLD_INDEX[exLang];
+    if (!allBtn || !ids || !ids.length) {
+      if (allBtn) allBtn.hidden = true;
+      return;
+    }
+    allBtn.hidden = false;
+    allQ.placeholder = t('world_all_search');
+    allBtn.setAttribute('aria-expanded', String(worldAll.open));
+    allBtn.textContent = t(worldAll.open ? 'world_all_close' : 'world_all_open', {
+      n: ids.length.toLocaleString(document.documentElement.lang || 'en'),
+      lang: worldLangName(exLang),
     });
   }
+  function renderWorldAll() {
+    if (!allGrid) return;
+    const q = fold(worldAll.q.trim());
+    // p[9]: original title when it differs from TMDB's (build_world_lookup.py)
+    const hits = q
+      ? worldAll.rows.filter((p) => fold(`${p[3]} ${p[9] || ''}`).includes(q))
+      : worldAll.rows;
+    const page = hits.slice(0, worldAll.shown);
+    allGrid.innerHTML = '';
+    page.forEach((p) => allGrid.appendChild(worldCard(p)));
+    const loc = document.documentElement.lang || 'en';
+    allCount.textContent = hits.length
+      ? t('world_all_count', {
+          shown: page.length.toLocaleString(loc),
+          n: hits.length.toLocaleString(loc),
+          k: hits.filter((p) => p[5] > 0).length.toLocaleString(loc),
+        })
+      : t('world_all_none', { lang: worldLangName(worldAll.lang) });
+    const left = hits.length - page.length;
+    allMore.hidden = left <= 0;
+    if (left > 0) allMore.textContent = t('world_all_more', { n: Math.min(left, WORLD_ALL_PAGE) });
+  }
+  async function loadWorldAll(lang) {
+    worldAll.lang = lang;
+    worldAll.rows = [];
+    worldAll.shown = WORLD_ALL_PAGE;
+    allGrid.innerHTML = '';
+    allMore.hidden = true;
+    allCount.textContent = t('world_all_loading');
+    try {
+      const { ensureWorldLang } = await import('../autopsy/data.js');
+      const rows = await ensureWorldLang(lang);
+      if (worldAll.lang !== lang) return;
+      worldAll.rows = rows;
+      renderWorldAll();
+    } catch (err) {
+      console.error('[world] load failed', err);
+      if (worldAll.lang !== lang) return;
+      // forget the language so closing and reopening retries
+      worldAll.lang = null;
+      allCount.textContent = t('world_all_error');
+    }
+  }
+  if (allBtn && allHost) {
+    allBtn.addEventListener('click', () => {
+      worldAll.open = !worldAll.open;
+      allHost.hidden = !worldAll.open;
+      showWorldAllButton();
+      if (worldAll.open && worldAll.lang !== exLang) loadWorldAll(exLang);
+    });
+    allQ.addEventListener('input', () => {
+      worldAll.q = allQ.value;
+      worldAll.shown = WORLD_ALL_PAGE;
+      renderWorldAll();
+    });
+    allMore.addEventListener('click', () => {
+      worldAll.shown += WORLD_ALL_PAGE;
+      renderWorldAll();
+    });
+  }
+
   if (exHost && window.WORLD_EXAMPLES && Array.isArray(window.WORLD_FACES)) {
     const chips = document.getElementById('world-ex-chips');
     const relabelChips = () => {
-      const names = new Intl.DisplayNames([document.documentElement.lang || 'en'], {
-        type: 'language',
-      });
-      chips.querySelectorAll('button').forEach((b) => (b.textContent = names.of(b.dataset.lang)));
+      chips
+        .querySelectorAll('button')
+        .forEach((b) => (b.textContent = worldLangName(b.dataset.lang)));
     };
     window.WORLD_FACES.forEach((r) => {
       if (!window.WORLD_EXAMPLES[r.lang]) return;
@@ -2210,6 +2302,7 @@ function d3Charts() {
     chartReadoutRefresh.push(() => {
       relabelChips();
       showWorldExamples(exLang);
+      if (worldAll.open && worldAll.rows.length) renderWorldAll();
     });
   }
 
