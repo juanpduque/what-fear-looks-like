@@ -139,11 +139,18 @@ Re-medición de 1,440 afiches del mundo sobre la imagen restaurada:
   sobre la imagen del sitio (10 de 10 coinciden, IoU 0.86–0.98 en la caja principal).
 - Cajas de armas (`weapon_boxes.json`): venían de la imagen equivocada. En las 44 fichas
   restauradas de `world_lookup.js` se vaciaron; las detecciones nuevas están en
-  `qa/weapon_boxes_world_restored_unjudged.json` hasta que Nova las juzgue (sin juicio,
-  OWLv2 marca letras del título como flechas). Los otros 1,396 afiches no se publican con
+  `qa/weapon_boxes_world_restored_unjudged.json`. Nova Pro las juzgó el 2026-10-17: 31 cajas
+  en 16 afiches, 14 correctas, 16 falsos positivos (letras del título leídas como flechas,
+  dedos, personas) y 1 dudosa; veredictos en `qa/weapon_boxes_world_restored_nova_judged.csv`
+  y añadidos a `qa/qa_creature_weapon_boxes.csv`. Solo se publican las 14 correctas (6 fichas:
+  6312, 10226, 96001, 185341, 464737, 499195). Los otros 1,396 afiches no se publican con
   cajas de armas: desde que todas las fichas del gráfico del mundo se pueden abrir
   (`data/world/{lang}.js`), `build_world_lookup.py` descarta las cajas cuyo sha256 en
   `metric_images.csv` no es el del archivo de hoy (81 de los 4,598).
+  Los 565 afiches con `weapon_boxes` desactualizado en `qa/metric_images_stale.csv` siguen sin
+  cajas: no hay nada que juzgar todavía, hace falta re-detectar con OWLv2
+  (`owlv2_creature_boxes.py --with-weapons`) sobre la imagen de hoy, con un control de
+  reproducibilidad antes (la GPU de AWS y la CPU del Mac no dan lo mismo), y después juzgar con Nova.
 
 Registro por métrica (2026-10-16): `pipeline/metric_images.py` escribe
 `data/metric_images.csv` (local, fuera de git): una fila por película publicada y una
