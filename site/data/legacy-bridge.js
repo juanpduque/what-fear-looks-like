@@ -16,6 +16,7 @@
   if (typeof SERIES_CI !== 'undefined') g.SERIES_CI = SERIES_CI;
   if (typeof DECADE_STATS !== 'undefined') g.DECADE_STATS = DECADE_STATS;
   if (typeof CENSUS_SERIES !== 'undefined') g.CENSUS_SERIES = CENSUS_SERIES;
+  if (typeof CENSUS_NOVA !== 'undefined') g.CENSUS_NOVA = CENSUS_NOVA;
   if (typeof AOF_META !== 'undefined') g.AOF_META = AOF_META;
   if (typeof POSTERS !== 'undefined') g.POSTERS = POSTERS;
 })();

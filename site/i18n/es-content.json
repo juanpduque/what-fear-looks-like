@@ -639,8 +639,8 @@
   },
   {
     "id": "p4_census_body",
-    "en": "<strong>The monster census.</strong> When the human face retreats, something else often fills the stare. I asked a vision model one question about every poster: <em>what creature is on it?</em> The answer is a dynastic succession — and it ends with <strong>the ghost</strong>: in the 2020s it is the most common creature on this census, 23% of the posters that carry a label, more than twice the runner-up. A second reader (Nova) ranks the masked killer first and the ghost second, so the order at the top depends on the model. Before 1950 there are too few labeled posters to name a leader (13 in the 1920s, 27 in the 1930s). The chart keeps the ghost and the masked killer lit; the other thrones stay dim until you tap or hover a line.",
-    "es": "<strong>El censo de monstruos.</strong> Cuando el rostro humano se retira, algo más suele llenar la mirada. Le hice a un modelo de visión una sola pregunta sobre cada afiche: <em>¿qué criatura hay en él?</em> La respuesta es una sucesión dinástica — y termina con <strong>el fantasma</strong>: en los 2020 es la criatura más frecuente de este censo, el 23% de los afiches que llevan etiqueta, más del doble que la segunda. Un segundo lector (Nova) pone primero al asesino enmascarado y segundo al fantasma, así que el orden en la cima depende del modelo. Antes de 1950 hay muy pocos afiches etiquetados para nombrar un líder (13 en los 20, 27 en los 30). El gráfico mantiene iluminados al fantasma y al asesino enmascarado; los otros tronos quedan tenues hasta que tocas o pasas el cursor por una línea."
+    "en": "<strong>The monster census.</strong> When the human face retreats, something else often fills the stare. I asked a vision model one question about every poster: <em>what creature is on it?</em> The answer is a dynastic succession — and it ends with <strong>the ghost</strong>: in the 2020s it is the most common creature on this census, 23% of the posters that carry a label, more than twice the runner-up. A second reader (Nova) ranks the masked killer first and the ghost second, so the order at the top depends on the model — switch the reader above the chart to see Nova's version. Nova names a creature on more posters (54% against 27%), so its shares are higher and its curves differ most in the middle decades: it finds masked killers on 23% of the 1980s posters, CLIP on 4%. Before 1950 there are too few labeled posters to name a leader (13 in the 1920s, 27 in the 1930s). The chart keeps the ghost and the masked killer lit; the other thrones stay dim until you tap or hover a line.",
+    "es": "<strong>El censo de monstruos.</strong> Cuando el rostro humano se retira, algo más suele llenar la mirada. Le hice a un modelo de visión una sola pregunta sobre cada afiche: <em>¿qué criatura hay en él?</em> La respuesta es una sucesión dinástica — y termina con <strong>el fantasma</strong>: en los 2020 es la criatura más frecuente de este censo, el 23% de los afiches que llevan etiqueta, más del doble que la segunda. Un segundo lector (Nova) pone primero al asesino enmascarado y segundo al fantasma, así que el orden en la cima depende del modelo — cambia el lector sobre el gráfico para ver la versión de Nova. Nova nombra una criatura en más afiches (54% frente a 27%), así que sus porcentajes son más altos y sus curvas difieren más en las décadas intermedias: encuentra asesinos enmascarados en el 23% de los afiches de los 80, CLIP en el 4%. Antes de 1950 hay muy pocos afiches etiquetados para nombrar un líder (13 en los 20, 27 en los 30). El gráfico mantiene iluminados al fantasma y al asesino enmascarado; los otros tronos quedan tenues hasta que tocas o pasas el cursor por una línea."
   },
   {
     "id": "p4_census_note_n",
@@ -661,6 +661,21 @@
     "id": "p4_census_note_select",
     "en": "Selected by top CLIP-classified confidence within each era's reigning label(s) named in the chart's own copy above — where two creatures co-reign or hand off mid-era, one specimen of each.",
     "es": "Seleccionados por la mayor confianza CLIP dentro de la(s) etiqueta(s) reinante(s) de cada era nombradas en el propio copy del gráfico — donde dos criaturas co-reinan o se relevan a mitad de era, un espécimen de cada una."
+  },
+  {
+    "id": "census_reader_label",
+    "en": "Read by",
+    "es": "Leído por"
+  },
+  {
+    "id": "census_reader_clip",
+    "en": "CLIP",
+    "es": "CLIP"
+  },
+  {
+    "id": "census_reader_nova",
+    "en": "Nova",
+    "es": "Nova"
   },
   {
     "id": "p5_kicker",

@@ -2412,3 +2412,38 @@ footer .logo span {
   color: #9a958a;
   margin: 10px 0;
 }
+
+/* census: which model reads the posters */
+.reader-bar {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin: 0 0 10px;
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+.reader-label {
+  color: var(--ink-dim);
+  margin-right: 4px;
+}
+.reader-bar button {
+  padding: 6px 12px;
+  font: inherit;
+  letter-spacing: inherit;
+  text-transform: inherit;
+  color: var(--amber);
+  background: transparent;
+  border: 1px solid rgba(229, 160, 13, 0.35);
+  border-radius: 2px;
+  cursor: pointer;
+}
+.reader-bar button[aria-pressed='true'] {
+  background: rgba(229, 160, 13, 0.18);
+  border-color: var(--amber);
+}
+.reader-bar button:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 3px;
+}
