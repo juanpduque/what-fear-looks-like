@@ -242,3 +242,6 @@ pipeline/upscale_posters_realesrgan.py
 # Local-only: July working drafts (pre-filter corpus), superseded by the audited essay
 docs/animation-review.md
 docs/poster-shortlist.md
+
+# OMDb is CC BY-NC: raw per-film responses stay local
+pipeline/audit_omdb/results/
