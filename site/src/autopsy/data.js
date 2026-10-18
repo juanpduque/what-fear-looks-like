@@ -92,6 +92,7 @@ export function worldRecord(id) {
 }
 
 let LOOKUP_P = null;
+let OMDB_P = null;
 let CREATURE_BOXES_P = null;
 let WEAPON_BOXES_P = null;
 let POSE_P = null;
@@ -243,6 +244,31 @@ export function ensureTitleInk() {
       return window.TITLE_INK;
     });
   return TITLE_INK_P;
+}
+
+export function ensureOmdb() {
+  if (window.OMDB) return Promise.resolve(window.OMDB);
+  if (OMDB_P) return OMDB_P;
+  OMDB_P = fetch(assetUrl('data/omdb.json'))
+    .then((r) => (r.ok ? r.json() : {}))
+    .then((d) => {
+      window.OMDB = d || {};
+      return window.OMDB;
+    })
+    .catch(() => {
+      OMDB_P = null;
+      window.OMDB = window.OMDB || {};
+      return window.OMDB;
+    });
+  return OMDB_P;
+}
+
+/** [minutes, isShort, rated, countries, languages, director, cast, released] or null. */
+export function omdbFor(id) {
+  const row = window.OMDB && window.OMDB[String(id)];
+  if (!Array.isArray(row)) return null;
+  const [minutes, short, rated, country, language, director, cast, released] = row;
+  return { minutes, short: short === 1, rated, country, language, director, cast, released };
 }
 
 export function ensureMediumCl() {

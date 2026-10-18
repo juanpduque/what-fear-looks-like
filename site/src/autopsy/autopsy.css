@@ -856,3 +856,30 @@ body.au-open {
 .au-beat-credit a:hover {
   border-bottom-color: var(--amber);
 }
+
+.au-facts {
+  display: grid;
+  grid-template-columns: max-content 1fr;
+  gap: 4px 14px;
+  margin: 14px 0 0;
+  font-size: 13px;
+  line-height: 1.45;
+}
+.au-facts dt {
+  font-family: var(--mono);
+  font-size: 11px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-dim);
+}
+.au-facts dd {
+  margin: 0;
+  color: var(--ink);
+}
+.au-facts-credit {
+  margin-top: 6px;
+  font-family: var(--mono);
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--ink-dim);
+}
