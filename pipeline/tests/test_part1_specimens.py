@@ -107,3 +107,42 @@ def test_specimens_actually_have_the_band(rows, lookup):
             if actual < MIN_SHARE:
                 weak.append(f"{name}: {title} ({year}) is only {actual}% in its band")
     assert not weak, f"weak specimens (< {MIN_SHARE}%):\n  " + "\n  ".join(weak)
+
+
+# Part VII strips: "N% red · M% blood" typed by hand against lookup.js (red share, CLIP blood score).
+BLOOD_ENTRY = re.compile(
+    r"""\[(\d+), (?:'([^']*)'|"([^"]*)"), '(\d{4})', '(\d+)% red · (\d+)% blood'\]"""
+)
+
+
+def blood_rows(js: str):
+    out = {}
+    for name in ("TB_PIXEL", "TB_SEMANTIC"):
+        block = re.search(rf"const {name} = \[(.*?)\n\s*\];", js, re.S)
+        assert block, f"{name} not found in essay.js"
+        out[name] = [
+            (int(i), t1 or t2, int(y), int(r), int(b))
+            for i, t1, t2, y, r, b in BLOOD_ENTRY.findall(block.group(1))
+        ]
+    return out
+
+
+def test_blood_captions_follow_the_data(explorer_by_id, lookup):
+    rows = blood_rows(ESSAY_JS.read_text(encoding="utf-8"))
+    assert all(len(v) == 6 for v in rows.values())
+    stale = []
+    for name, entries in rows.items():
+        for pid, title, year, red, blood in entries:
+            assert pid in explorer_by_id, f"{name}: {title} ({pid}) is not in the published corpus"
+            row = explorer_by_id[pid]
+            if (year, title) != (row[0], row[3]):
+                stale.append(f"{name}: {title} ({year}) is {row[3]} ({row[0]}) in the corpus")
+            rec = lookup[str(pid)]
+            actual_red = round(rec["red"] * 100)
+            actual_blood = round(rec["sem"].get("blood", 0) * 100)
+            if abs(actual_red - red) > TOLERANCE_POINTS or actual_blood != blood:
+                stale.append(
+                    f"{name}: {title} says {red}% red / {blood}% blood, "
+                    f"data says {actual_red}% / {actual_blood}%"
+                )
+    assert not stale, "stale captions:\n  " + "\n  ".join(stale)
