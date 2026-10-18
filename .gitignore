@@ -183,7 +183,6 @@ pipeline/results/
 
 # Local scratch
 .tmp_posters/
-composition-code/node_modules/
 
 # Local-only: account IDs, project diaries and one-off AWS launchers (never publish)
 pipeline/aws/*
@@ -239,3 +238,7 @@ pipeline/train_medium_backbone_compare.py
 pipeline/type_mix_pilot.py
 pipeline/upload_posters_by_id.py
 pipeline/upscale_posters_realesrgan.py
+
+# Local-only: July working drafts (pre-filter corpus), superseded by the audited essay
+docs/animation-review.md
+docs/poster-shortlist.md
