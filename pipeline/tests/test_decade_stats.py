@@ -90,3 +90,29 @@ def test_thin_decades_have_wider_intervals(stats):
     ci, n = stats["river"]["ci"], stats["river"]["n"]
     widths = [hi - lo for lo, hi in (row[5] for row in ci)]
     assert n[0] < n[-1] and widths[0] > 3 * widths[-1]
+
+
+def test_nova_census_intervals_bracket_the_shares(stats):
+    """The second reader of the creature census: same labels and decades, its own n and intervals."""
+    series = load("const CENSUS_NOVA=")
+    clip = load("const CENSUS_SERIES=")
+    census = stats["census"]
+    nova = census["nova"]
+    assert series.keys() == clip.keys()
+    assert len(nova["n"]) == len(census["decades"])
+    for label, pts in series.items():
+        assert [d for d, _ in pts] == census["decades"], f"{label}: decades differ from CLIP's"
+        by_decade = dict(zip(census["decades"], nova["ci"][label], strict=True))
+        for decade, value in pts:
+            assert inside(value, by_decade[decade]), (
+                f"{label} {decade}: {value} not in {by_decade[decade]}"
+            )
+
+
+def test_nova_reads_almost_every_poster(stats):
+    """Nova answers for the whole corpus, so its n is within a handful of the CLIP census n."""
+    census = stats["census"]
+    for decade, n_clip, n_nova in zip(
+        census["decades"], census["n"], census["nova"]["n"], strict=True
+    ):
+        assert n_clip - 10 <= n_nova <= n_clip, f"{decade}: CLIP {n_clip} vs Nova {n_nova}"

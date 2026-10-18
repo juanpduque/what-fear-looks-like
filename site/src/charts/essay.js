@@ -21,6 +21,7 @@ function pipelineData() {
     SERIES_CI: window.SERIES_CI,
     DECADE_STATS: window.DECADE_STATS,
     CENSUS_SERIES: window.CENSUS_SERIES,
+    CENSUS_NOVA: window.CENSUS_NOVA,
     POSTERS: window.POSTERS,
   };
 }
@@ -41,6 +42,7 @@ let {
   SERIES_CI,
   DECADE_STATS,
   CENSUS_SERIES,
+  CENSUS_NOVA,
   POSTERS,
 } = pipelineData();
 /* ================= data & palettes ================= */
@@ -130,6 +132,7 @@ function ensureChartLabels() {
     SYM_PTS,
     DIAG_PTS,
     CENSUS_SERIES,
+    CENSUS_NOVA,
     POSTERS,
   } = pipelineData());
   HUEBANDS = buildHueBands();
@@ -2947,7 +2950,20 @@ function d3Charts() {
       .scaleLinear()
       .domain([0, 13])
       .range([H - m.b, m.t]);
-    grid(svg, x, y, [0, 3, 6, 9, 12], (v) => v + '%', CHART_X_TICKS);
+    /* Two readers of the same posters: CLIP (the series above) and Nova (a second model).
+       Switching swaps the series, the y scale and the interval source. */
+    const READERS = {
+      clip: { series: CENSUS_SERIES, top: 13, ticks: [0, 3, 6, 9, 12], ci: 'ci', n: 'n' },
+      nova: { series: CENSUS_NOVA, top: 25, ticks: [0, 5, 10, 15, 20, 25], ci: 'nova', n: 'nova' },
+    };
+    let reader = 'clip';
+    const ptsOf = (n) => READERS[reader].series[n];
+    const gridG = svg.append('g');
+    const drawGrid = () => {
+      gridG.selectAll('*').remove();
+      grid(gridG, x, y, READERS[reader].ticks, (v) => v + '%', CHART_X_TICKS);
+    };
+    drawGrid();
     const line = d3
       .line()
       .x((d) => x(d[0]))
@@ -2961,7 +2977,7 @@ function d3Charts() {
       .sort((a, b) => (LIT.has(a) ? 1 : 0) - (LIT.has(b) ? 1 : 0))
       .forEach((n) => {
         const e = CENSUS[n];
-        const data = since1920(e.pts);
+        const data = since1920(ptsOf(n));
         paths[n] = svg
           .append('path')
           .datum(data)
@@ -2984,7 +3000,11 @@ function d3Charts() {
           .attr('font-weight', LIT.has(n) ? '600' : '400')
           .text(n);
       });
-    {
+    const placeLabels = () => {
+      names.forEach((n) => {
+        const pts = since1920(ptsOf(n));
+        labels[n].attr('y', y(pts[pts.length - 1][1]) + 4);
+      });
       const order = [...names].sort((a, b) => +labels[a].attr('y') - +labels[b].attr('y'));
       let prev = -1e9;
       order.forEach((n) => {
@@ -2992,7 +3012,8 @@ function d3Charts() {
         labels[n].attr('y', yv);
         prev = yv;
       });
-    }
+    };
+    placeLabels();
     const focus = (n) => {
       names.forEach((k) => {
         const on = k === n;
@@ -3013,23 +3034,29 @@ function d3Charts() {
     let si = names.indexOf('ghost');
     let scrub;
     const censusIdx = (dec) => DECADE_STATS?.census.decades.indexOf(dec) ?? -1;
-    const censusCi = (n, dec) => decadeCi(DECADE_STATS?.census.ci[n]?.[censusIdx(dec)]);
-    const censusN = (dec) => decadeN(DECADE_STATS?.census.n[censusIdx(dec)]);
+    const censusSrc = () => {
+      const c = DECADE_STATS?.census;
+      return reader === 'nova' ? c?.nova : c;
+    };
+    const censusCi = (n, dec) => decadeCi(censusSrc()?.ci[n]?.[censusIdx(dec)]);
+    const censusN = (dec) => decadeN(censusSrc()?.n[censusIdx(dec)]);
+    const readerTag = () =>
+      ` · ${t(reader === 'nova' ? 'census_reader_nova' : 'census_reader_clip')}`;
     const showCensus = (di) => {
       const n = names[si];
-      const pts = since1920(CENSUS[n].pts);
+      const pts = since1920(ptsOf(n));
       const pt = pts[di];
       focus(n);
       report(
         ro,
-        `<b>${n}</b> · ${pt[1]}%${censusCi(n, pt[0])} ${t('readout_of_posters')} · ${pt[0]}s${censusN(pt[0])}`,
+        `<b>${n}</b> · ${pt[1]}%${censusCi(n, pt[0])} ${t('readout_of_posters')} · ${pt[0]}s${censusN(pt[0])}${readerTag()}`,
         null,
       );
     };
     const hitCensus = (n, ev) => {
       focus(n);
       si = names.indexOf(n);
-      const pts = since1920(CENSUS[n].pts);
+      const pts = since1920(ptsOf(n));
       const yr = Math.round(x.invert(d3.pointer(ev, svg.node())[0]) / 10) * 10;
       const decades = pts.map((p) => p[0]);
       const nearest = decades.reduce((a, b) => (Math.abs(b - yr) < Math.abs(a - yr) ? b : a));
@@ -3038,7 +3065,7 @@ function d3Charts() {
       const pt = pts[di];
       report(
         ro,
-        `<b>${n}</b> · ${pt ? pt[1] + '%' + censusCi(n, pt[0]) + ' ' + t('readout_of_posters') + ' · ' + pt[0] + 's' + censusN(pt[0]) : ''}`,
+        `<b>${n}</b> · ${pt ? pt[1] + '%' + censusCi(n, pt[0]) + ' ' + t('readout_of_posters') + ' · ' + pt[0] + 's' + censusN(pt[0]) + readerTag() : ''}`,
         ev,
       );
     };
@@ -3062,21 +3089,22 @@ function d3Charts() {
         .on('pointerleave', unfocus);
     });
     scrub = wireScrub('census', {
-      n: since1920(CENSUS[names[0]].pts).length,
-      start: since1920(CENSUS[names[0]].pts).length - 1,
+      n: since1920(ptsOf(names[0])).length,
+      start: since1920(ptsOf(names[0])).length - 1,
       show: showCensus,
       onVert: (dir) => {
         si = (si + dir + names.length) % names.length;
         showCensus(scrub.get());
       },
     });
-    /* three annotations = the bookend story + one dynasty beat */
+    /* three annotations = the bookend story + one dynasty beat (placed on the CLIP scale) */
+    const notes = [];
     [
       [t('census_ghosts_open'), 1920, 5.5, '#e8e4da', 'start'],
       [t('census_killer_peaks'), 1980, 5.2, '#e02430', 'middle'],
       [t('census_ghost_returns'), 2020, 7.2, '#e8e4da', 'end'],
     ].forEach((a) => {
-      svg
+      const note = svg
         .append('text')
         .attr('class', 'annot')
         .attr('fill', a[3])
@@ -3084,6 +3112,31 @@ function d3Charts() {
         .attr('x', x(a[1]))
         .attr('y', y(a[2]))
         .text(a[0]);
+      notes.push(note);
+    });
+    const bar = document.getElementById('census-reader');
+    const setReader = (r) => {
+      if (r === reader) return;
+      reader = r;
+      y.domain([0, READERS[r].top]);
+      drawGrid();
+      names.forEach((n) => {
+        paths[n]
+          .datum(since1920(ptsOf(n)))
+          .transition()
+          .duration(ms(700))
+          .attr('d', line);
+      });
+      placeLabels();
+      notes.forEach((nt) => nt.attr('opacity', r === 'clip' ? 1 : 0));
+      bar?.querySelectorAll('button').forEach((b) => {
+        b.setAttribute('aria-pressed', String(b.dataset.reader === r));
+      });
+      showCensus(scrub.get());
+      unfocus();
+    };
+    bar?.querySelectorAll('button').forEach((b) => {
+      b.addEventListener('click', () => setReader(b.dataset.reader));
     });
     onEnter('census', () => {
       names.forEach((n, i) => setTimeout(() => drawIn(paths[n], 1100, baseDash(n)), ms(i * 120)));
