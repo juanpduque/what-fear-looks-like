@@ -146,3 +146,22 @@ def test_blood_captions_follow_the_data(explorer_by_id, lookup):
                     f"data says {actual_red}% / {actual_blood}%"
                 )
     assert not stale, "stale captions:\n  " + "\n  ".join(stale)
+
+
+# Specimens shown with their own overlay (pyramid, fold line) that sit outside the 33,622;
+# the essay says so next to each figure. A new id outside the corpus must be added here on purpose.
+KNOWN_OUT_OF_CORPUS = {
+    96235,
+    172794,
+    649294,
+}  # Vampire Bats, Web of Deception, History of the Occult
+
+
+def test_poster_references_are_in_the_corpus_or_declared(explorer_by_id):
+    """Every assets/posters/<id>.jpg the page points at is a corpus poster, or a declared exception."""
+    html = (ROOT / "site" / "index.html").read_text(encoding="utf-8")
+    js = ESSAY_JS.read_text(encoding="utf-8")
+    ids = {int(i) for i in re.findall(r"assets/posters/(\d+)\.jpg", html + js)}
+    stray = sorted(i for i in ids if i not in explorer_by_id and i not in KNOWN_OUT_OF_CORPUS)
+    assert not stray, f"posters outside the corpus and not declared: {stray}"
+    assert KNOWN_OUT_OF_CORPUS <= ids, "an exception is no longer used; remove it from the list"
