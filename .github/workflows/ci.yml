@@ -22,6 +22,9 @@ jobs:
       - name: Tests (stdlib-only, run from pipeline/)
         working-directory: pipeline
         run: python -m pytest
+      - name: Site data invariants (every published file matches the canonical corpus)
+        working-directory: pipeline
+        run: python check_site_invariants.py
       - name: Lint (ruff)
         working-directory: pipeline
         run: ruff check .
