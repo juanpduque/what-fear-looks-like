@@ -1942,7 +1942,7 @@ function d3Charts() {
     const peak = svg
       .append('circle')
       .attr('cx', x(1998))
-      .attr('cy', y(62.3))
+      .attr('cy', y(63.3))
       .attr('r', 0)
       .attr('fill', 'none')
       .attr('stroke', '#c1121f')
@@ -1950,7 +1950,7 @@ function d3Charts() {
     const dot = svg
       .append('circle')
       .attr('cx', x(1998))
-      .attr('cy', y(62.3))
+      .attr('cy', y(63.3))
       .attr('r', 0)
       .attr('fill', '#c1121f');
     svg
@@ -1965,7 +1965,7 @@ function d3Charts() {
       .attr('class', 'annot')
       .attr('text-anchor', 'middle')
       .attr('x', x(1998))
-      .attr('y', y(62.3) - 24)
+      .attr('y', y(63.3) - 24)
       .text(t('faces_1998_bigger'));
     svg
       .append('text')
@@ -3448,8 +3448,8 @@ function legacyCharts() {
     );
     [
       [1945, '1945 peak: 91%', 90.7, 1945],
-      [1998, '1998: bigger faces', 62.3, 1998],
-      [2018, 'under half', 45.7, 2018],
+      [1998, '1998: bigger faces', 63.3, 1998],
+      [2018, 'under half', 49.1, 2018],
     ].forEach((a) => {
       const t = el('text', {
         x: x(a[3]),
