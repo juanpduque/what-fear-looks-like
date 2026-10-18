@@ -135,6 +135,10 @@ body {
 .prose p {
   margin: 0 0 1.4em;
 }
+.prose p a {
+  color: var(--amber);
+  text-underline-offset: 3px;
+}
 .kicker {
   font-family: var(--mono);
   font-size: 12px;
