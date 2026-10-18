@@ -1,3 +1,5 @@
+> **HISTÓRICO (julio 2026).** Borrador antiguo, con 18.716 afiches y cifras que ya no valen (p. ej. el tamaño de cara de 1998 o el 83 % de caras en los 40). El texto vigente está en `site/i18n/es-content.json`; las cifras se recalculan con `pipeline/audit_essay_claims/check_figures.py`.
+
 # The Anatomy of Fear — Essay Draft
 
 > v3 — figures recalculated on the **filtered** corpus (n = **18,716** posters, 1920–2022).

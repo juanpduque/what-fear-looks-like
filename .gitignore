@@ -184,3 +184,11 @@ pipeline/results/
 # Local scratch
 .tmp_posters/
 composition-code/node_modules/
+
+# Local-only: account IDs, project diaries and one-off AWS launchers (never publish)
+pipeline/aws/*
+docs/ARTICULO_OCR_TITULOS_POSTERS.md
+docs/HISTORIAL_PROYECTO.md
+docs/RESUMEN_OCR_POSTERS.md
+pipeline/TODO_RESUME.md
+pipeline/data/*.bak-*

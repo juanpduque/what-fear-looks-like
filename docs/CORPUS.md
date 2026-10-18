@@ -41,3 +41,15 @@ Cada película cuenta solo en el primer filtro que no cumple (`pipeline/data/qa/
 - **Año válido**: año del análisis entre 1900 y el año de corte (sin 9999).
 - **Póster**: arte servible (path TMDB o asset local OMDb/actual) y fuera de `no_poster`.
 - Regenerar: `python3 pipeline/fetch_tmdb_details.py && python3 pipeline/build_corpus.py && python3 pipeline/build_site.py`.
+
+## Qué imagen es "el afiche"
+
+Cada afiche es la imagen que TMDB lista como principal en la fecha de corte, no
+necesariamente el cartel de estreno (a menudo es una reedición, un DVD o un fotograma).
+Comparado con IMPAwards sobre 903 películas de 1930–99 (`pipeline/audit_poster_provenance/`):
+mismo arte 13 %, imagen distinta 68 %. Medidos sobre los originales, los carteles son ~8 puntos
+más claros (L*), tienen 10 puntos menos de píxeles casi negros y, antes de 1950, más caras: las
+tendencias publicadas (oscurecimiento, caída de caras) quedan, si acaso, subestimadas. El
+puntaje diagonal sube ~11 puntos en TMDB pero la caída se ve en las dos fuentes. Después de
+1999 no hay originales con que comparar.
+

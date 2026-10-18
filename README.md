@@ -119,10 +119,13 @@ opposite, an inverted funnel). Validated by eye against hand-inspected
 artwork: King Kong's fanned crowd → pyramid_shift +0.06; Halloween's
 black void swallowing the bottom two-thirds → -0.37, the most inverted
 shape among the classics we checked. `diagonal_score` has a real,
-clean century-level trend (peaks in the atomic-pulp mid-1950s around
-~38% on the 5-year rolling series, ~36% as a 1950s decade mean; falls
-to ~23% by the 2020s — posters stopped leaning, same direction as the
-text-coverage and symmetry trends). `pyramid_shift`
+clean century-level trend (peaks in the atomic-pulp years — about 35% on
+the 5-year rolling series around 1945, ~33% as a decade mean from the 1940s
+to the 1960s; steps down in the '70s and falls to ~22% by the 2020s —
+posters stopped leaning, same direction as the text-coverage and symmetry
+trends). The score runs ~11 points higher on TMDB images than on
+release-year originals, evenly across decades: read it as a direction, not
+a level (`pipeline/audit_poster_provenance/`). `pyramid_shift`
 does not: it averages out to roughly zero by decade (top-heavy and
 bottom-heavy compositions cancel out) — it's a real per-poster
 signature, not a population-level trend. Caveat: a real share of what
