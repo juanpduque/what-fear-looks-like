@@ -19,6 +19,7 @@ function pipelineData() {
     SYM_PTS: window.SYM_PTS,
     DIAG_PTS: window.DIAG_PTS,
     SERIES_CI: window.SERIES_CI,
+    DECADE_STATS: window.DECADE_STATS,
     CENSUS_SERIES: window.CENSUS_SERIES,
     POSTERS: window.POSTERS,
   };
@@ -38,6 +39,7 @@ let {
   SYM_PTS,
   DIAG_PTS,
   SERIES_CI,
+  DECADE_STATS,
   CENSUS_SERIES,
   POSTERS,
 } = pipelineData();
@@ -217,6 +219,11 @@ function ciNote(key, year) {
   const c = (SERIES_CI?.[key] || []).find((r) => r[0] === year);
   return c ? ` · ${t('readout_ci', { lo: c[1], hi: c[2], n: c[3].toLocaleString() })}` : '';
 }
+
+/* "(95% CI lo–hi)" for a decade point; '' when the interval is missing (n < 2). */
+const decadeCi = (ci) =>
+  ci ? ` (${t('readout_ci_short', { lo: ci[0].toFixed(1), hi: ci[1].toFixed(1) })})` : '';
+const decadeN = (n) => (n ? ` · ${t('readout_n', { n: n.toLocaleString() })}` : '');
 
 /* Accessible chart labels + collapsible data tables (WCAG: don't rely on SVG alone) */
 function wireChartAccessibility() {
@@ -1135,7 +1142,7 @@ function d3Charts() {
       paths.filter((d) => d.key === bandKey).attr('opacity', 1);
       report(
         ro,
-        `<b>${HUEBANDS[bandKey].name}</b> · ${RIVER[di][bandKey]}% ${t('readout_of_pixels')} · ${DECADES[di]}`,
+        `<b>${HUEBANDS[bandKey].name}</b> · ${RIVER[di][bandKey]}%${decadeCi(DECADE_STATS?.river.ci[di][bandKey])} ${t('readout_of_pixels')} · ${DECADES[di]}${decadeN(DECADE_STATS?.river.n[di])}`,
         null,
       );
     };
@@ -1281,7 +1288,7 @@ function d3Charts() {
       paths.filter((d) => d.key === regKey).attr('opacity', 1);
       report(
         ro,
-        `<b>${TYPOREGS[regKey].name}</b> · ${(TYPO[di][regKey] * 100).toFixed(1)}% ${t('readout_of_titles')} · ${DECADES[di]}`,
+        `<b>${TYPOREGS[regKey].name}</b> · ${(TYPO[di][regKey] * 100).toFixed(1)}%${decadeCi(DECADE_STATS?.typo.ci[di][regKey])} ${t('readout_of_titles')} · ${DECADES[di]}${decadeN(DECADE_STATS?.typo.n[di])}`,
         null,
       );
     };
@@ -3005,12 +3012,19 @@ function d3Charts() {
     };
     let si = names.indexOf('ghost');
     let scrub;
+    const censusIdx = (dec) => DECADE_STATS?.census.decades.indexOf(dec) ?? -1;
+    const censusCi = (n, dec) => decadeCi(DECADE_STATS?.census.ci[n]?.[censusIdx(dec)]);
+    const censusN = (dec) => decadeN(DECADE_STATS?.census.n[censusIdx(dec)]);
     const showCensus = (di) => {
       const n = names[si];
       const pts = since1920(CENSUS[n].pts);
       const pt = pts[di];
       focus(n);
-      report(ro, `<b>${n}</b> · ${pt[1]}% ${t('readout_of_posters')} · ${pt[0]}s`, null);
+      report(
+        ro,
+        `<b>${n}</b> · ${pt[1]}%${censusCi(n, pt[0])} ${t('readout_of_posters')} · ${pt[0]}s${censusN(pt[0])}`,
+        null,
+      );
     };
     const hitCensus = (n, ev) => {
       focus(n);
@@ -3024,7 +3038,7 @@ function d3Charts() {
       const pt = pts[di];
       report(
         ro,
-        `<b>${n}</b> · ${pt ? pt[1] + '% ' + t('readout_of_posters') + ' · ' + pt[0] + 's' : ''}`,
+        `<b>${n}</b> · ${pt ? pt[1] + '%' + censusCi(n, pt[0]) + ' ' + t('readout_of_posters') + ' · ' + pt[0] + 's' + censusN(pt[0]) : ''}`,
         ev,
       );
     };
@@ -3186,7 +3200,7 @@ function d3Charts() {
       show: (di) => {
         report(
           ro,
-          `<b>${DECADES[di]}</b> · ${t('readout_model_blood')} ${BLOOD_SEMANTIC[di]}% · ${t('readout_pixel_red')} ${BLOOD_PIXEL[di]}%`,
+          `<b>${DECADES[di]}</b> · ${t('readout_model_blood')} ${BLOOD_SEMANTIC[di]}%${decadeCi(DECADE_STATS?.blood.ci[di])} · ${t('readout_pixel_red')} ${BLOOD_PIXEL[di]}%${decadeCi(DECADE_STATS?.river.ci[di][0])}${decadeN(DECADE_STATS?.blood.n[di])}`,
           null,
         );
       },
@@ -3205,7 +3219,7 @@ function d3Charts() {
         scrub.set(di);
         report(
           ro,
-          `<b>${DECADES[di]}</b> · ${t('readout_model_blood')} ${BLOOD_SEMANTIC[di]}% · ${t('readout_pixel_red')} ${BLOOD_PIXEL[di]}%`,
+          `<b>${DECADES[di]}</b> · ${t('readout_model_blood')} ${BLOOD_SEMANTIC[di]}%${decadeCi(DECADE_STATS?.blood.ci[di])} · ${t('readout_pixel_red')} ${BLOOD_PIXEL[di]}%${decadeCi(DECADE_STATS?.river.ci[di][0])}${decadeN(DECADE_STATS?.blood.n[di])}`,
           ev,
         );
       })

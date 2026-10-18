@@ -105,6 +105,78 @@ def _trailing_ci(buckets, years, rnd: int = 1, window: int = 5, min_periods: int
     return out
 
 
+def _wilson(k: int, n: int, z: float = 1.96):
+    """95% Wilson interval for a share k/n, in percent."""
+    if not n:
+        return None
+    p = k / n
+    d = 1 + z * z / n
+    c = (p + z * z / (2 * n)) / d
+    h = z * math.sqrt(p * (1 - p) / n + z * z / (4 * n * n)) / d
+    return [round(100 * max(0.0, c - h), 1), round(100 * min(1.0, c + h), 1)]
+
+
+def _mean_ci(values, scale: float = 100.0):
+    """95% normal interval for a mean of per-poster values, in percent."""
+    n = len(values)
+    if n < 2:
+        return None
+    m = statistics.fmean(values)
+    half = 1.96 * statistics.stdev(values) / math.sqrt(n)
+    return [round(scale * max(0.0, m - half), 1), round(scale * (m + half), 1)]
+
+
+def _by_decade(rows):
+    out: dict[int, list] = defaultdict(list)
+    for r in rows:
+        out[int(float(r["year"])) // 10 * 10].append(r)
+    return out
+
+
+def _decade_stats(posters, seg, typo_rows, census_rows, chart_decades, census_decades):
+    """Per-decade n and 95% intervals behind RIVER, TYPO, BLOOD_SEMANTIC and CENSUS_SERIES.
+
+    RIVER / BLOOD are means of per-poster values (normal interval on the mean); TYPO
+    and CENSUS are shares of posters or titles (Wilson). Every n is counted on the
+    published corpus, so it matches the *_decade.json files the series come from.
+    """
+    bands = ("band_red", "band_warm", "band_green", "band_blue", "band_purple", "band_dark")
+    registers = ("ornate", "decorative", "standard", "clean", "minimal")
+    pos, sg = _by_decade(posters), _by_decade(seg)
+    ty = _by_decade(r for r in typo_rows if 1920 <= int(float(r["year"])) <= 2029)
+    ce = _by_decade(census_rows)
+    decs = sorted(chart_decades)
+    stats = {
+        "river": {
+            "n": [len(pos[d]) for d in decs],
+            "ci": [[_mean_ci([float(r[b]) for r in pos[d]]) for b in bands] for d in decs],
+        },
+        "typo": {
+            "n": [len(ty[d]) for d in decs],
+            "ci": [
+                [_wilson(sum(r["register"] == g for r in ty[d]), len(ty[d])) for g in registers]
+                for d in decs
+            ],
+        },
+        "blood": {
+            "n": [len(sg[d]) for d in decs],
+            "ci": [_mean_ci([float(r["clip_blood"]) for r in sg[d]]) for d in decs],
+        },
+        "census": {
+            "decades": list(census_decades),
+            "n": [len(ce[d]) for d in census_decades],
+            "ci": {
+                label: [
+                    _wilson(sum(r["label"] == col for r in ce[d]), len(ce[d]))
+                    for d in census_decades
+                ]
+                for label, col in CENSUS_KEYS.items()
+            },
+        },
+    }
+    return stats
+
+
 def _trailing_roll(series: dict[int, float], window: int = 5, min_periods: int = 2):
     out = {}
     for y in sorted(series):
@@ -259,7 +331,16 @@ def build_series() -> dict:
             pts.append([int(row["decade"]), round(float(row.get(col, 0) or 0) * 100, 1)])
         census[label] = pts
 
-    seg_n = len(_read_csv("segmentation.csv")) if (DATA / "segmentation.csv").exists() else 0
+    seg_rows = _read_csv("segmentation.csv") if (DATA / "segmentation.csv").exists() else []
+    seg_n = len(seg_rows)
+    decade_stats = _decade_stats(
+        posters,
+        seg_rows,
+        _read_csv("typography.csv"),
+        _read_csv("census.csv"),
+        chart_decades,
+        sorted(int(r["decade"]) for r in cens_d),
+    )
 
     return {
         "n": len(posters),
@@ -276,6 +357,7 @@ def build_series() -> dict:
         "SYM_PTS": _pts_at(_trailing_roll(sym_y), ROLL_YEARS, 3),
         "DIAG_PTS": _pts_at(_trailing_roll(diag_y), DIAG_YEARS, 1),
         "CENSUS_SERIES": census,
+        "DECADE_STATS": decade_stats,
         "SERIES_CI": {k: _trailing_ci(b, yrs, rnd) for k, (b, yrs, rnd) in ci_src.items()},
     }
 
@@ -349,6 +431,7 @@ const SYM_PTS={_js_pts(series["SYM_PTS"])};
 const DIAG_PTS={_js_pts(series["DIAG_PTS"])};
 {chr(10).join(cens_lines)}
 const SERIES_CI={json.dumps(series["SERIES_CI"], separators=(",", ":"))}; /* [year, lo95, hi95, n posters] */
+const DECADE_STATS={json.dumps(series["DECADE_STATS"], separators=(",", ":"))}; /* per decade: n and 95% [lo,hi] behind RIVER, TYPO, BLOOD_SEMANTIC, CENSUS_SERIES */
 const AOF_META={{n:{n},seg_n:{seg_n}}};
 """
 
