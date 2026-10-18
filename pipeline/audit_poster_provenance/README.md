@@ -21,3 +21,9 @@ before 1950, more faces. Text area is about equal. The noise floor (same-artwork
 -2.3 brightness, +5.8 pp near-black. So the published trends understate the dimming and
 the shrinking of faces rather than invent them. pHash distance says "different image", not
 "later art": LLM judges of that question disagreed too much to use (kappa 0.33).
+
+4. `python3 audit_poster_provenance/diag_offset.py results/sens.jsonl results/impa_full.jsonl`
+   Is the TMDB-vs-original offset of the diagonal score constant across decades? Result
+   (2026-10-17): +9 to +12 chart points in every decade 1930-1999 (all pairs), no relation to the
+   pixel-count ratio, and the 1940-59 -> 1980-99 fall is about -5 points in both sources. IMPAwards
+   stops at 1999, so the post-1999 part of the fall has no reference.
