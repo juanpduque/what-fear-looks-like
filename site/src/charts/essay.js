@@ -574,12 +574,6 @@ function posterSrcById(id, size) {
   if (typeof SPECIMEN_PATHS !== 'undefined' && SPECIMEN_PATHS[id]) return base + SPECIMEN_PATHS[id];
   return 'assets/posters/' + id + '.jpg';
 }
-function pct(x) {
-  return x == null ? '—' : Math.round(x * 100) + '%';
-}
-function num(x, d = 2) {
-  return x == null || x === '' ? '—' : (+x).toFixed(d).replace(/\.?0+$/, '');
-}
 
 /* openPoster — wired by src/main.js when lookup module mounts */
 window.__aofPosterQueue = window.__aofPosterQueue || [];
@@ -1301,7 +1295,7 @@ function d3Charts() {
       .join('path')
       .attr('class', 'stream')
       .attr('d', flat)
-      .attr('fill', (d, i) => TYPOREGS[d.key].c)
+      .attr('fill', (d) => TYPOREGS[d.key].c)
       .attr('opacity', 0.92)
       .style('touch-action', 'none')
       .on('pointermove pointerdown', function (ev, d) {

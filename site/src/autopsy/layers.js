@@ -375,7 +375,6 @@ export function buildLayersHtml(p, a, opts = {}) {
     .map((b) => {
       const raw = b.box || b;
       const [x, y, w, h] = Array.isArray(raw) ? raw : [0, 0, 0, 0];
-      const L = Math.max(0, x * 100);
       const T = Math.max(0, y * 100);
       const lab = creatureLabels()[b.label] || (b.label || '').replace(/_/g, ' ');
       const sc = b.score != null ? ` ${pct(b.score)}` : '';

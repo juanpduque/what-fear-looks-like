@@ -94,6 +94,14 @@ etiqueta = censo, 76%; score ≥ 0.3 + censo (lo que dibuja la autopsy), **80%**
 Comparar idiomas por criatura con el censo (`pipeline/world_creatures.py`), nunca con
 conteos de cajas OWL: en los afiches no ingleses inflan la presencia (75–88% vs 62%).
 
+**Segundo lector (Nova).** El gráfico del censo del essay tiene un selector CLIP / Nova.
+Nova (`nova_creature`, de `qa_census.csv`, leído desde `site/data/lookup.js`) nombra una
+criatura en el 54 % de los afiches (CLIP, 27 %) y coincide con CLIP en el 67 % de los
+etiquetados (82 % cuando Nova nombra una). Los dos discrepan en quién encabeza los
+2010 y los 2020 (CLIP: fantasma; Nova: asesino enmascarado), así que el texto dice qué
+modelo habla. La validación de CLIP (`clip_census.py --validate`) da 9/10. Reproducir:
+`pipeline/audit_essay_claims/check_figures.py`.
+
 ## Imagen medida (registro por hash)
 
 Las métricas se guardan por id de TMDB, pero la imagen de un id puede cambiar (TMDB cambia
@@ -180,12 +188,28 @@ Otros géneros (Parte VII, `export_genre_comparison.py`), revisado 2026-10-16 en
 `community_{género}/tmdb_{género}_analysis_meta.csv` en 296–299 de 300 (pHash ≤ 10), y el
 negro recalculado en 40 por género da el valor guardado exacto (diferencia 0).
 
+## Texto (MSER) y OCR
+
+`text_area` es la unión de las cajas de candidatos a glifo MSER (`multi_analyze.py`): cuenta
+también la textura. Contra EasyOCR sobre 800 afiches (`pipeline/audit_text_measure/`) las dos
+caen hasta los 70 (el OCR casi a la mitad), pero después del 80 el OCR queda plano (9–12 %) y
+MSER sigue bajando; el acuerdo afiche por afiche es débil (Spearman 0,26) y MSER da el doble que
+el OCR. Úsese como tendencia, no como porcentaje de la hoja. El mismo afiche también cambia con
+la resolución (Midsommar: 9 % sobre la copia de 342 px del sitio, 32 % sobre la imagen medida), así
+que las cifras de las fichas del ensayo se leen sobre la copia mostrada.
+
+## Registros tipográficos
+
+Los registros (ornate … minimal) son quintiles del eje CLIP **dentro de cada archivo de
+género**: los porcentajes por registro describen al género respecto de sí mismo. Para comparar
+géneros hay que usar el eje crudo (`axis`), que sí comparte escala.
+
 ## QA / gold
 
 - Faces: YuNet floor documentado en el essay; gap YuNet=0∩Rek>0 es rescate UI, no essay.
   Nova `nova_faces` (de `qa_faces.csv`) se muestra en autopsy como nota QA; no entra a `resolveFaces` ni al essay.
 - Creature census: CLIP es el dueño; JEV `jev_creature` es el tipo tipado en autopsy (no essay).
-  Nova `nova_creature` (`qa_census.csv`) es nota QA.
+  Nova `nova_creature` (`qa_census.csv`) es nota QA en la autopsy y segundo lector en el gráfico del censo.
 - Typography: CLIP register es el dueño; Nova `nova_typo` (`qa_typography.csv`) es nota QA.
 - Title OCR: Nova `nova_title` / `nova_ocr` (`qa_title_ocr.csv`) es nota QA del título; no sustituye la caja de texto.
 - Creature/weapon boxes: `pipeline/qa_creature_weapon_boxes.py` + veredictos Nova.
