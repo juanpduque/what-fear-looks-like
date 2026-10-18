@@ -1633,10 +1633,10 @@ function d3Charts() {
 
     const TB_PIXEL = [
       [28439, 'Murder by Television', '1935', '42% red · 0% blood'],
-      [43115, 'The Spider', '1958', '37% red · 0% blood'],
+      [43115, 'Earth vs. the Spider', '1958', '37% red · 0% blood'],
       [11449, 'The Amityville Horror', '1979', '49% red · 0% blood'],
       [212005, 'Fleshburn', '1984', '58% red · 0% blood'],
-      [10065, 'The Amityville Horror', '2005', '67% red · 0% blood'],
+      [10065, 'The Amityville Horror', '2005', '66% red · 0% blood'],
       [519418, 'Witch-Hunt', '2017', '30% red · 0% blood'],
     ];
     /* Hand-checked for literal blood on the sheet. Early high clip_blood
@@ -1644,8 +1644,8 @@ function d3Charts() {
        pre-1940 blood in the sample — first cell is the earliest true positive. */
     const TB_SEMANTIC = [
       [43109, 'The Killer Shrews', '1959', '4% red · 50% blood'],
-      [28659, 'Cat Girl', '1957', '17% red · 75% blood'],
-      [48885, 'The Gruesome Twosome', '1967', '6% red · 75% blood'],
+      [252429, 'Honeymoon of Horror', '1964', '1% red · 50% blood'],
+      [81477, 'Mad Doctor of Blood Island', '1969', '6% red · 100% blood'],
       [145850, 'Dance Or Die', '1987', '7% red · 75% blood'],
       [9841, 'Rest Stop', '2006', '3% red · 75% blood'],
       [279690, 'He Never Died', '2015', '0% red · 75% blood'],
