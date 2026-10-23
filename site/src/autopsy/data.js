@@ -1,4 +1,5 @@
 import { POSTER_BY_ID } from '../shared/posters.js';
+import { useStaticData } from './remote.js';
 
 function buildVer() {
   return document.querySelector('meta[name="aof-build"]')?.content || '';
@@ -7,6 +8,11 @@ function buildVer() {
 export function assetUrl(path) {
   const v = buildVer();
   return v ? `${path}?v=${v}` : path;
+}
+
+/** Supabase mode: the row is already on window, or still empty. Do not mark the bag loaded. */
+function remoteBag(flag) {
+  return Promise.resolve(window[flag] || {});
 }
 
 export function tmdbStem(filePath) {
@@ -111,6 +117,7 @@ let POSTER_ALTS_TEXT_P = null;
 const CLIP_SEM_KEYS = ['blood', 'weapon', 'shadow', 'fire', 'bone_skull', 'smoke_fog', 'night_sky'];
 
 export function ensureCreatureBoxes() {
+  if (!useStaticData()) return remoteBag('CREATURE_BOXES');
   if (window.CREATURE_BOXES) return Promise.resolve(window.CREATURE_BOXES);
   if (CREATURE_BOXES_P) return CREATURE_BOXES_P;
   CREATURE_BOXES_P = new Promise((resolve, reject) => {
@@ -127,6 +134,7 @@ export function ensureCreatureBoxes() {
 }
 
 export function ensureWeaponBoxes() {
+  if (!useStaticData()) return remoteBag('WEAPON_BOXES');
   if (window.WEAPON_BOXES) return Promise.resolve(window.WEAPON_BOXES);
   if (WEAPON_BOXES_P) return WEAPON_BOXES_P;
   WEAPON_BOXES_P = new Promise((resolve, reject) => {
@@ -143,6 +151,7 @@ export function ensureWeaponBoxes() {
 }
 
 export function ensureLookup() {
+  if (!useStaticData()) return remoteBag('LOOKUP');
   if (window.LOOKUP) return Promise.resolve(window.LOOKUP);
   if (LOOKUP_P) return LOOKUP_P;
   LOOKUP_P = new Promise((resolve, reject) => {
@@ -166,6 +175,7 @@ export function ensureLookup() {
 }
 
 export function ensurePose() {
+  if (!useStaticData()) return remoteBag('POSE');
   if (window.POSE) return Promise.resolve(window.POSE);
   if (POSE_P) return POSE_P;
   POSE_P = new Promise((resolve, reject) => {
@@ -182,6 +192,7 @@ export function ensurePose() {
 }
 
 export function ensureSaliency() {
+  if (!useStaticData()) return remoteBag('SALIENCY');
   if (window.SALIENCY) return Promise.resolve(window.SALIENCY);
   if (SALIENCY_P) return SALIENCY_P;
   SALIENCY_P = fetch(assetUrl('data/saliency.json'))
@@ -201,6 +212,7 @@ export function ensureSaliency() {
 let KEY_ART_P = null;
 /** Verified IMPAwards key art credit per id (pipeline/export_key_art.py). */
 export function ensureKeyArt() {
+  if (!useStaticData()) return remoteBag('KEY_ART');
   if (window.KEY_ART) return Promise.resolve(window.KEY_ART);
   if (KEY_ART_P) return KEY_ART_P;
   KEY_ART_P = fetch(assetUrl('data/key_art.json'))
@@ -230,6 +242,7 @@ export function studioSlug(credit) {
 }
 
 export function ensureTitleInk() {
+  if (!useStaticData()) return remoteBag('TITLE_INK');
   if (window.TITLE_INK) return Promise.resolve(window.TITLE_INK);
   if (TITLE_INK_P) return TITLE_INK_P;
   TITLE_INK_P = fetch(assetUrl('data/title_ink.json'))
@@ -247,6 +260,7 @@ export function ensureTitleInk() {
 }
 
 export function ensureOmdb() {
+  if (!useStaticData()) return remoteBag('OMDB');
   if (window.OMDB) return Promise.resolve(window.OMDB);
   if (OMDB_P) return OMDB_P;
   OMDB_P = fetch(assetUrl('data/omdb.json'))
@@ -272,6 +286,7 @@ export function omdbFor(id) {
 }
 
 export function ensureMediumCl() {
+  if (!useStaticData()) return remoteBag('MEDIUM_CL');
   if (window.MEDIUM_CL) return Promise.resolve(window.MEDIUM_CL);
   if (MEDIUM_CL_P) return MEDIUM_CL_P;
   MEDIUM_CL_P = fetch(assetUrl('data/medium_cl.json'))
@@ -299,6 +314,7 @@ export function mediumClFor(id) {
 }
 
 export function ensurePosterAlts() {
+  if (!useStaticData()) return remoteBag('POSTER_ALTS');
   if (window.POSTER_ALTS) return Promise.resolve(window.POSTER_ALTS);
   if (POSTER_ALTS_P) return POSTER_ALTS_P;
   POSTER_ALTS_P = fetch(assetUrl('data/poster_alts.json'))
@@ -316,6 +332,7 @@ export function ensurePosterAlts() {
 }
 
 export function ensurePosterAltsRek() {
+  if (!useStaticData()) return remoteBag('POSTER_ALTS_REK');
   if (window.POSTER_ALTS_REK && Object.keys(window.POSTER_ALTS_REK).length)
     return Promise.resolve(window.POSTER_ALTS_REK);
   if (POSTER_ALTS_REK_P) return POSTER_ALTS_REK_P;
@@ -335,6 +352,7 @@ export function ensurePosterAltsRek() {
 }
 
 export function ensurePosterAltsPose() {
+  if (!useStaticData()) return remoteBag('POSTER_ALTS_POSE');
   if (window.POSTER_ALTS_POSE && Object.keys(window.POSTER_ALTS_POSE).length)
     return Promise.resolve(window.POSTER_ALTS_POSE);
   if (POSTER_ALTS_POSE_P) return POSTER_ALTS_POSE_P;
@@ -354,6 +372,7 @@ export function ensurePosterAltsPose() {
 }
 
 export function ensurePosterAltsSal() {
+  if (!useStaticData()) return remoteBag('POSTER_ALTS_SAL');
   if (window.POSTER_ALTS_SAL && Object.keys(window.POSTER_ALTS_SAL).length)
     return Promise.resolve(window.POSTER_ALTS_SAL);
   if (POSTER_ALTS_SAL_P) return POSTER_ALTS_SAL_P;
@@ -373,6 +392,7 @@ export function ensurePosterAltsSal() {
 }
 
 export function ensurePosterAltsComp() {
+  if (!useStaticData()) return remoteBag('POSTER_ALTS_COMP');
   if (window.POSTER_ALTS_COMP && Object.keys(window.POSTER_ALTS_COMP).length)
     return Promise.resolve(window.POSTER_ALTS_COMP);
   if (POSTER_ALTS_COMP_P) return POSTER_ALTS_COMP_P;
@@ -392,6 +412,7 @@ export function ensurePosterAltsComp() {
 }
 
 function ensureAltJson(flag, url, cacheKey) {
+  if (!useStaticData()) return remoteBag(flag);
   if (window[flag] && Object.keys(window[flag]).length) return Promise.resolve(window[flag]);
   if (cacheKey.p) return cacheKey.p;
   cacheKey.p = fetch(assetUrl(url))

@@ -51,6 +51,7 @@ import {
   PICK_IDS,
   saliencyMapUrls,
 } from './data.js';
+import { ensureFilm, markStaticFallback, useStaticData } from './remote.js';
 import { analyzeFromUrl, paintHeat, paintSaliencyFromUrl } from './colorMaps.js';
 
 const t = (...args) => (typeof window.t === 'function' ? window.t(...args) : args[0]);
@@ -723,6 +724,14 @@ export async function openPoster(p) {
   setStatus(t('lookup_loading_short'));
   enterOverlay();
   try {
+    if (!useStaticData()) {
+      try {
+        await ensureFilm(id);
+      } catch (err) {
+        console.error('[autopsy] supabase', err);
+        markStaticFallback();
+      }
+    }
     const [L] = await Promise.all([
       ensureLookup(),
       ensureCreatureBoxes().catch(() => ({})),
