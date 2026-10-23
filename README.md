@@ -179,9 +179,26 @@ smoke-testing decade-level trends before committing to that.
 
 ## View the site
 
-Live essay (GitHub Pages): **https://juanpduque.github.io/what-fear-looks-like/**
+Live essay (GitHub Pages, until the Netlify cutover): **https://juanpduque.github.io/what-fear-looks-like/**
 
-Deploy: pushes to `main` that touch `site/` run `.github/workflows/pages.yml`
+Netlify publishes the Vite build at the domain root (`netlify.toml`, base `/`).
+GitHub Pages keeps `/what-fear-looks-like/` via `.github/workflows/pages.yml`
+until that workflow is turned off. Set `VITE_BASE` to override either one.
+
+The essay's charts and the search catalog stay in the static build
+(`series.js`, `explorer.js`, world chart). The per-film autopsy (~70 MB) loads
+from Supabase table `poster_autopsy` when the build has `VITE_SUPABASE_URL` and
+`VITE_SUPABASE_ANON_KEY`. Without those variables the page still reads
+`site/data/`. Apply `supabase/migrations/20261018120000_poster_autopsy.sql`,
+then upload:
+
+```bash
+export SUPABASE_URL=https://YOUR_PROJECT.supabase.co
+export SUPABASE_SERVICE_ROLE_KEY=...   # local only; never the Netlify env
+python3 pipeline/export_supabase.py
+```
+
+Pages deploy: pushes to `main` that touch `site/` run `.github/workflows/pages.yml`
 (stages `site/` via `scripts/prepare-pages.sh`, excluding dev screenshots and
 internal QA pages). Or trigger **Actions → Deploy GitHub Pages → Run workflow**.
 

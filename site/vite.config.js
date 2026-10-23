@@ -1,7 +1,58 @@
 import { defineConfig } from 'vite';
 import { viteStaticCopy } from 'vite-plugin-static-copy';
 import { resolve } from 'node:path';
-import { rmSync } from 'node:fs';
+import { readdirSync, readFileSync, rmSync, statSync, writeFileSync } from 'node:fs';
+
+const PAGES_ORIGIN = 'https://juanpduque.github.io/what-fear-looks-like';
+
+/** GitHub Pages keeps the repo path. Netlify publishes at the domain root. */
+function siteBase() {
+  const fromEnv = process.env.VITE_BASE;
+  if (fromEnv) return fromEnv.endsWith('/') ? fromEnv : `${fromEnv}/`;
+  if (process.env.NETLIFY) return '/';
+  return '/what-fear-looks-like/';
+}
+
+function deployOrigin() {
+  const raw = process.env.VITE_SITE_ORIGIN || (process.env.NETLIFY ? process.env.URL : '') || '';
+  return raw.replace(/\/$/, '');
+}
+
+/** Autopsy blobs live in Supabase once the build has a project URL. */
+const AUTOPSY_BLOBS = [
+  'lookup.js',
+  'pose.js',
+  'creature_boxes.js',
+  'weapon_boxes.js',
+  'saliency.json',
+  'title_ink.json',
+  'omdb.json',
+  'medium_cl.json',
+  'key_art.json',
+  'poster_alts.json',
+  'poster_alts_rek.json',
+  'poster_alts_pose.json',
+  'poster_alts_sal.json',
+  'poster_alts_comp.json',
+  'poster_alts_faces.json',
+  'poster_alts_owl.json',
+  'poster_alts_text.json',
+  'poster_alts_clip.json',
+];
+
+function rewriteOrigins(dir, origin) {
+  for (const name of readdirSync(dir)) {
+    const path = resolve(dir, name);
+    if (statSync(path).isDirectory()) {
+      rewriteOrigins(path, origin);
+      continue;
+    }
+    if (!name.endsWith('.html')) continue;
+    const text = readFileSync(path, 'utf8');
+    if (!text.includes(PAGES_ORIGIN)) continue;
+    writeFileSync(path, text.replaceAll(PAGES_ORIGIN, origin));
+  }
+}
 
 /** JS bundled by Vite — do not copy to dist. */
 const DEMO_BUNDLE_JS = new Set([
@@ -12,7 +63,7 @@ const DEMO_BUNDLE_JS = new Set([
 ]);
 
 export default defineConfig({
-  base: '/what-fear-looks-like/',
+  base: siteBase(),
   plugins: [
     viteStaticCopy({
       targets: [
@@ -53,6 +104,15 @@ export default defineConfig({
           } catch {
             /* ignore */
           }
+        }
+        if (process.env.VITE_SUPABASE_URL) {
+          for (const file of AUTOPSY_BLOBS) {
+            rmSync(resolve(__dirname, 'dist/data', file), { force: true });
+          }
+        }
+        const origin = deployOrigin();
+        if (origin && origin !== PAGES_ORIGIN) {
+          rewriteOrigins(resolve(__dirname, 'dist'), origin);
         }
       },
     },

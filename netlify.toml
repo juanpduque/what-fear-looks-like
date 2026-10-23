@@ -1,0 +1,25 @@
+# Static essay. Chart series and the search catalog stay in the build.
+# Per-film autopsy records load from Supabase when these are set in the
+# Netlify UI (Site configuration → Environment variables):
+#   VITE_SUPABASE_URL
+#   VITE_SUPABASE_ANON_KEY
+# Optional, when link-preview cards should use a custom domain:
+#   VITE_SITE_ORIGIN=https://example.com
+
+[build]
+  base = "site"
+  command = "npm ci && npm run build"
+  publish = "dist"
+
+[build.environment]
+  NODE_VERSION = "22"
+
+[[headers]]
+  for = "/assets/*"
+  [headers.values]
+    Cache-Control = "public, max-age=31536000, immutable"
+
+[[headers]]
+  for = "/data/*"
+  [headers.values]
+    Cache-Control = "public, max-age=3600"
