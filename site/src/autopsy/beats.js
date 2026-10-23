@@ -1,5 +1,5 @@
 import { pct, num } from '../shared/format.js';
-import { posterAltsFor, rekAltFor } from './data.js';
+import { posterAltsFor, rekAltFor, omdbFor } from './data.js';
 import {
   BEAT_MODES,
   creatureLabel,
@@ -22,6 +22,33 @@ function escapeHtml(s) {
     .replace(/</g, '&lt;')
     .replace(/>/g, '&gt;')
     .replace(/"/g, '&quot;');
+}
+
+/** Film facts from OMDb for the first beat: [label, value] pairs, empty fields skipped. */
+function omdbFacts(id) {
+  const o = omdbFor(id);
+  if (!o) return [];
+  const length = o.minutes
+    ? t(o.short ? 'autopsy_fact_short_min' : 'autopsy_fact_feature_min', { n: o.minutes })
+    : o.short
+      ? t('autopsy_fact_short')
+      : '';
+  return [
+    [t('autopsy_fact_length'), length],
+    [t('autopsy_fact_rated'), o.rated],
+    [t('autopsy_fact_country'), o.country],
+    [t('autopsy_fact_language'), o.language],
+    [t('autopsy_fact_director'), o.director],
+    [t('autopsy_fact_cast'), o.cast],
+    [t('autopsy_fact_released'), o.released],
+  ].filter(([, v]) => v);
+}
+
+function factsHtml(facts) {
+  if (!facts?.length) return '';
+  const rows = facts.map(([k, v]) => `<dt>${escapeHtml(k)}</dt><dd>${escapeHtml(v)}</dd>`).join('');
+  return `<dl class="au-facts">${rows}</dl>
+          <p class="au-facts-credit">${escapeHtml(t('autopsy_facts_credit'))}</p>`;
 }
 
 function mediumName(pred) {
@@ -195,6 +222,7 @@ export function buildBeats(p, a) {
       title: title,
       body: objectBody(p, a),
       credit: keyArtFor(p[7]),
+      facts: omdbFacts(p[7]),
     },
     {
       id: 'color',
@@ -338,6 +366,7 @@ export function beatsHtml(beats) {
           <div class="au-beat-kicker">${escapeHtml(beat.kicker)}</div>
           <h3 class="au-beat-title">${escapeHtml(beat.title)}</h3>
           <p class="au-beat-body">${escapeHtml(beat.body)}</p>
+          ${factsHtml(beat.facts)}
           ${creditHtml(beat.credit)}
           ${modesHtml(beat)}
         </div>
