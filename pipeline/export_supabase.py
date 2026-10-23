@@ -92,10 +92,15 @@ def load_maps() -> dict[str, dict]:
     return maps
 
 
+def normalize_row(row: dict) -> dict:
+    return {"id": row["id"], **{column: row.get(column) for column, _ in SOURCES}}
+
+
 def upload(rows: list[dict], url: str, key: str, batch: int) -> None:
     endpoint = url.rstrip("/") + "/rest/v1/poster_autopsy?on_conflict=id"
     for start in range(0, len(rows), batch):
-        chunk = rows[start : start + batch]
+        # PostgREST bulk insert needs every object to carry the same keys.
+        chunk = [normalize_row(row) for row in rows[start : start + batch]]
         body = json.dumps(chunk, ensure_ascii=False, separators=(",", ":")).encode()
         req = urllib.request.Request(
             endpoint,
